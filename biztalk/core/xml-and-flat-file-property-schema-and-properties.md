@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6de871dedff280604a48c7e2adcd47bb6bea5d41
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b26340ca16435ba7900d2d4bc4ffb42cee803622
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37006147"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399393"
 ---
 # <a name="xml-and-flat-file-property-schema-and-properties"></a>XML とフラット ファイル プロパティ スキーマおよびプロパティ
 **http://schemas.microsoft.com/BizTalk/2003/xmlnorm-properties** 名前空間には、フラット ファイル アセンブラとフラット ファイル逆アセンブラー パイプライン コンポーネントを構成するために使用できるプロパティが含まれています。 次の表に、プロパティを示します。  
@@ -33,7 +33,7 @@ ms.locfileid: "37006147"
 |**EnvelopeSpecName**|xs:string|ドキュメントの解析またはシリアル化のために使用するエンベロープ仕様です。<br /><br /> このプロパティで指定するスキーマは、一意のターゲットの名前空間 (# root) を持つ必要があります。 同じ名前空間 (# root) を持つスキーマがあると、ドキュメント インスタンスの検証が期待どおりに機能しない場合があります。 この名前空間 (# root) は一意にする必要があります。  スキーマが同じ名前空間 (# root) を持つ必要がある場合は、それぞれのスキーマに対して別々のパイプラインを作成して XML 逆アセンブラー パイプライン コンポーネントごとに 1 つのスキーマを指定するか、XML 逆アセンブラー パイプライン コンポーネントのパラメーターとしてスキーマを指定しないで 1 つのパイプラインを使用します。  これは、ターゲットの名前空間がない場合も機能します。|  
 |**TargetCharset**|xs:string|送信メッセージのエンコードに使用する XML コンポーネントの文字セットです。|  
 |**SourceCharset**|xs:string|XML 逆アセンブラーで処理する前のドキュメントのエンコードに使用する文字セットです。|  
-|**ProcessingInstructionOption**|xs:int|送信ドキュメントへの処理命令の追加方法を指定します。 ProcessingInstructionOption の詳細については、[XML アセンブラー パイプライン コンポーネントにおける処理命令](../core/processing-instructions-in-the-xml-assembler-pipeline-component.md)を参照してください。|  
+|**ProcessingInstructionOption**|xs:int|送信ドキュメントへの処理命令の追加方法を指定します。 ProcessingInstructionOption の詳細については、次を参照してください。 [XML アセンブラー パイプライン コンポーネントにおける処理命令](../core/processing-instructions-in-the-xml-assembler-pipeline-component.md)します。|  
 |**AddXMLDeclaration**|xs:boolean|送信ドキュメントに XML 宣言を追加するかどうかを指定します。|  
 |**HeaderSpecName**|xs:string|フラット ファイル ドキュメントのヘッダーを指定します。|  
 |**TrailerSpecName**|xs:string|フラット ファイル ドキュメントのトレーラーを指定します。|  

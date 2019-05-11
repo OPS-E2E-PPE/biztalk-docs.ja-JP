@@ -1,5 +1,5 @@
 ---
-title: EANCOM |Microsoft ドキュメント
+title: EANCOM |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,19 +12,19 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1155762a509a5754f6697dc6d25289e92903f6a3
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 787036fd8d84b4df9a0be7178155bb13b9fbdc0d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26010859"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65389287"
 ---
 # <a name="eancom"></a>EANCOM
-このトピックでは、EANCOM ドキュメントと BizTalk Server でサポートされているバージョンを示します。  
+このトピックでは、EANCOM ドキュメントと BizTalk Server でサポートされているバージョンを一覧表示します。  
   
 ## <a name="eancom"></a>EANCOM  
   
-|ID|1994 (D93A)|1997 (D96A)|2002 Syntax 3 (D01B)|2002 構文 4 (D01B)|  
+|ID|1994 (D93A)|1997 (D96A)|2002 構文 3 (D01B)|2002 構文 4 (D01B)|  
 |--------|-------------------|-------------------|----------------------------|----------------------------|  
 |APERAK||![チェック マーク](../core/media/11ee8508-206f-40ef-be8a-15e90f5faf68.gif "11ee8508-206f-40ef-be8a-15e90f5faf68")|![チェック マーク](../core/media/11ee8508-206f-40ef-be8a-15e90f5faf68.gif "11ee8508-206f-40ef-be8a-15e90f5faf68")|![チェック マーク](../core/media/11ee8508-206f-40ef-be8a-15e90f5faf68.gif "11ee8508-206f-40ef-be8a-15e90f5faf68")|  
 |AUTACK||||![チェック マーク](../core/media/11ee8508-206f-40ef-be8a-15e90f5faf68.gif "11ee8508-206f-40ef-be8a-15e90f5faf68")|  
@@ -66,7 +66,7 @@ ms.locfileid: "26010859"
 |PRODAT|![チェック マーク](../core/media/11ee8508-206f-40ef-be8a-15e90f5faf68.gif "11ee8508-206f-40ef-be8a-15e90f5faf68")|![チェック マーク](../core/media/11ee8508-206f-40ef-be8a-15e90f5faf68.gif "11ee8508-206f-40ef-be8a-15e90f5faf68")|![チェック マーク](../core/media/11ee8508-206f-40ef-be8a-15e90f5faf68.gif "11ee8508-206f-40ef-be8a-15e90f5faf68")|![チェック マーク](../core/media/11ee8508-206f-40ef-be8a-15e90f5faf68.gif "11ee8508-206f-40ef-be8a-15e90f5faf68")|  
 ![チェック マーク](../core/media/11ee8508-206f-40ef-be8a-15e90f5faf68.gif "11ee8508-206f-40ef-be8a-15e90f5faf68")|![チェック マーク](../core/media/11ee8508-206f-40ef-be8a-15e90f5faf68.gif "11ee8508-206f-40ef-be8a-15e90f5faf68")|![チェック マーク](../core/media/11ee8508-206f-40ef-be8a-15e90f5faf68.gif "11ee8508-206f-40ef-be8a-15e90f5faf68")|![チェック マーク](../core/media/11ee8508-206f-40ef-be8a-15e90f5faf68.gif "11ee8508-206f-40ef-be8a-15e90f5faf68")|  
 |QALITY||![チェック マーク](../core/media/11ee8508-206f-40ef-be8a-15e90f5faf68.gif "11ee8508-206f-40ef-be8a-15e90f5faf68")|![チェック マーク](../core/media/11ee8508-206f-40ef-be8a-15e90f5faf68.gif "11ee8508-206f-40ef-be8a-15e90f5faf68")|![チェック マーク](../core/media/11ee8508-206f-40ef-be8a-15e90f5faf68.gif "11ee8508-206f-40ef-be8a-15e90f5faf68")|  
-|QUOTES|![チェック マーク](../core/media/11ee8508-206f-40ef-be8a-15e90f5faf68.gif "11ee8508-206f-40ef-be8a-15e90f5faf68")|![チェック マーク](../core/media/11ee8508-206f-40ef-be8a-15e90f5faf68.gif "11ee8508-206f-40ef-be8a-15e90f5faf68")|![チェック マーク](../core/media/11ee8508-206f-40ef-be8a-15e90f5faf68.gif "11ee8508-206f-40ef-be8a-15e90f5faf68")|![チェック マーク](../core/media/11ee8508-206f-40ef-be8a-15e90f5faf68.gif "11ee8508-206f-40ef-be8a-15e90f5faf68")|  
+|引用符|![チェック マーク](../core/media/11ee8508-206f-40ef-be8a-15e90f5faf68.gif "11ee8508-206f-40ef-be8a-15e90f5faf68")|![チェック マーク](../core/media/11ee8508-206f-40ef-be8a-15e90f5faf68.gif "11ee8508-206f-40ef-be8a-15e90f5faf68")|![チェック マーク](../core/media/11ee8508-206f-40ef-be8a-15e90f5faf68.gif "11ee8508-206f-40ef-be8a-15e90f5faf68")|![チェック マーク](../core/media/11ee8508-206f-40ef-be8a-15e90f5faf68.gif "11ee8508-206f-40ef-be8a-15e90f5faf68")|  
 |RECADV|![チェック マーク](../core/media/11ee8508-206f-40ef-be8a-15e90f5faf68.gif "11ee8508-206f-40ef-be8a-15e90f5faf68")|![チェック マーク](../core/media/11ee8508-206f-40ef-be8a-15e90f5faf68.gif "11ee8508-206f-40ef-be8a-15e90f5faf68")|![チェック マーク](../core/media/11ee8508-206f-40ef-be8a-15e90f5faf68.gif "11ee8508-206f-40ef-be8a-15e90f5faf68")|![チェック マーク](../core/media/11ee8508-206f-40ef-be8a-15e90f5faf68.gif "11ee8508-206f-40ef-be8a-15e90f5faf68")|  
 ![チェック マーク](../core/media/11ee8508-206f-40ef-be8a-15e90f5faf68.gif "11ee8508-206f-40ef-be8a-15e90f5faf68")|![チェック マーク](../core/media/11ee8508-206f-40ef-be8a-15e90f5faf68.gif "11ee8508-206f-40ef-be8a-15e90f5faf68")|![チェック マーク](../core/media/11ee8508-206f-40ef-be8a-15e90f5faf68.gif "11ee8508-206f-40ef-be8a-15e90f5faf68")|![チェック マーク](../core/media/11ee8508-206f-40ef-be8a-15e90f5faf68.gif "11ee8508-206f-40ef-be8a-15e90f5faf68")|  
 |REQOTE|![チェック マーク](../core/media/11ee8508-206f-40ef-be8a-15e90f5faf68.gif "11ee8508-206f-40ef-be8a-15e90f5faf68")|![チェック マーク](../core/media/11ee8508-206f-40ef-be8a-15e90f5faf68.gif "11ee8508-206f-40ef-be8a-15e90f5faf68")|![チェック マーク](../core/media/11ee8508-206f-40ef-be8a-15e90f5faf68.gif "11ee8508-206f-40ef-be8a-15e90f5faf68")|![チェック マーク](../core/media/11ee8508-206f-40ef-be8a-15e90f5faf68.gif "11ee8508-206f-40ef-be8a-15e90f5faf68")|  
@@ -77,9 +77,9 @@ ms.locfileid: "26010859"
 |TAXCON|![チェック マーク](../core/media/11ee8508-206f-40ef-be8a-15e90f5faf68.gif "11ee8508-206f-40ef-be8a-15e90f5faf68")|![チェック マーク](../core/media/11ee8508-206f-40ef-be8a-15e90f5faf68.gif "11ee8508-206f-40ef-be8a-15e90f5faf68")|![チェック マーク](../core/media/11ee8508-206f-40ef-be8a-15e90f5faf68.gif "11ee8508-206f-40ef-be8a-15e90f5faf68")|![チェック マーク](../core/media/11ee8508-206f-40ef-be8a-15e90f5faf68.gif "11ee8508-206f-40ef-be8a-15e90f5faf68")|  
   
 ## <a name="see-also"></a>参照  
- [X12 トランザクション セットの 100 ~ 250](../core/x12-transaction-sets-100-250.md)   
+ [X12 トランザクション セット 100-250](../core/x12-transaction-sets-100-250.md)   
  [X12 トランザクション セット 251-503](../core/x12-transaction-sets-251-503.md)   
- [X12 トランザクション セットを 504 999](../core/x12-transaction-sets-504-999.md)   
+ [X12 トランザクション セット 504-999](../core/x12-transaction-sets-504-999.md)   
  [HIPAA トランザクション セット](../core/hipaa-transaction-sets.md)   
  [EDIFACT トランザクション セット APERAK-IFTRIN](../core/edifact-transaction-sets-aperak-iftrin.md)   
  [EDIFACT トランザクション セット IFTSAI-WKGRRE](../core/edifact-transaction-sets-iftsai-wkgrre.md)

@@ -1,5 +1,5 @@
 ---
-title: EDI セキュリティに関する既知の問題 |Microsoft ドキュメント
+title: EDI セキュリティに関する既知の問題 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,53 +12,53 @@ caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9517f6c5b1aeae06b5989eef12fe269f81a27c74
-ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
+ms.openlocfilehash: e2d4afab871dc34e3249d2ea3ed7d531b18472a5
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2018
-ms.locfileid: "22262434"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65380668"
 ---
 # <a name="known-issues-with-edi-security"></a>EDI セキュリティに関する既知の問題
-このトピックでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI と AS2 ソリューションのセキュリティに関する既知の問題について説明します。  
+このトピックでは、のセキュリティに関する既知の問題を説明します。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI および AS2 ソリューション。  
   
-## <a name="biztalk-will-not-suspend-a-signed-message-from-a-party-for-which-no-certificate-is-set"></a>証明書が設定されていないパーティからの署名付きメッセージが BizTalk によって中断されない  
- [パーティのプロパティ] ページの [証明書] ノードでパーティに署名証明書が設定されていないが、そのパーティからの着信メッセージが署名付きである場合は、BizTalk Server がメッセージを中断せず、証明書の不在に基づいて例外を発行します。  
+## <a name="biztalk-will-not-suspend-a-signed-message-from-a-party-for-which-no-certificate-is-set"></a>BizTalk によってなしの証明書を設定する対象のパーティから署名付きメッセージが中断されません。  
+ BizTalk Server がメッセージを中断発展し、証明書の有無に基づいて例外をスローできません (証明書 ノードでパーティのパーティのプロパティ ページの) のパーティに対して署名証明書を設定しない場合は、そのパーティからの受信メッセージの署名.  
   
- [パーティ - AS2 メッセージの送信者] ページで受信メッセージ プロパティを上書きし、"メッセージに署名を付ける" プロパティをクリアすると、署名付き受信メッセージは停止されます。  
+ ([パーティ-AS2 メッセージの送信者] ページ)、受信メッセージのプロパティをオーバーライドして、「メッセージに署名する必要があります」プロパティをオフに、BizTalk Server は署名付き受信メッセージを中断します。  
   
-## <a name="access-to-program-files-folder-can-be-limited-to-prevent-file-tampering"></a>ファイルの改ざん防止のために、プログラム ファイル フォルダーへのアクセスが制限される場合がある  
- 認証されていないユーザーが BizTalk Server の実行可能ファイルおよび EDI スキーマを格納するプログラム ファイル フォルダーにアクセスできる場合、それらのファイルはそのようなユーザーによって変更される可能性があります。 このような脅威から保護するためには、プログラム ファイル フォルダーでアクセス制御リスト (ACL) を使用し、アクセスを、信頼されているユーザーのみに制限できます。  
+## <a name="access-to-program-files-folder-can-be-limited-to-prevent-file-tampering"></a>Program Files フォルダーへのアクセスはファイルの改ざんを防ぐために制限できます。  
+ 認証されていないユーザーに BizTalk Server 実行可能ファイルおよび EDI スキーマを含むプログラム ファイル フォルダーがある場合これらのユーザーは可能性があるこれらのファイルを変更できます。 その脅威に対する保護のため、することができますを使用して、アクセス制御リスト (Acl)、Program Files フォルダーに信頼されたユーザーへのアクセスを制限します。  
   
-## <a name="a-schema-with-a-long-field-can-be-susceptible-to-a-denial-of-service-attack"></a>文字数の多いフィールドを含むスキーマがサービス拒否の攻撃を受けやすい  
- 文字数の多いフィールドを含むカスタム スキーマは、サービス拒否の攻撃の対象になる可能性があります。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] に付属のスキーマには、文字数が特に多いフィールドはありません。したがって、一般に、そのような攻撃を受けることはありません。  
+## <a name="a-schema-with-a-long-field-can-be-susceptible-to-a-denial-of-service-attack"></a>長いフィールドを持つスキーマをサービス拒否攻撃を受けやすいことができます。  
+ 文字数の多いフィールドを持つカスタム スキーマは、サービス拒否攻撃によって悪用される可能性可能性があります。 同梱されているスキーマ[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]多い、フィールドを持たず、したがっては一般に、このような攻撃を受けやすくなります。  
   
-## <a name="message-processing-will-be-aborted-if-a-control-number-exceeds-its-maximum-length"></a>制御番号が最大文字数を超えると、メッセージの処理が中止される  
- インターチェンジ、グループ、またはトランザクション セットの制御番号の最大文字数は制限されています。 これらの制御番号の文字数が最大文字数を超えると、単一パーティを対象としたそのエンコードの種類のすべてのメッセージの処理は中止されます。 別のエンコードの種類 (たとえば X12 ではなく EDIFACT など) のメッセージは影響を受けません。 これは、セキュリティの脆弱性を表している場合があります。  
+## <a name="message-processing-will-be-aborted-if-a-control-number-exceeds-its-maximum-length"></a>制御番号が、最大の長さを超えた場合、メッセージの処理は中止されます。  
+ インターチェンジ、グループ、またはトランザクション セットの制御番号が、最大長が制限されています。 これらの制御番号のいずれかの長さが最大長を超える場合は、単一のパーティ、そのエンコードの種類のすべてのメッセージの処理は中止されます。 エンコードの種類 (たとえば X12 ではなく EDIFACT など) のメッセージには影響しません。 これにより、セキュリティの脆弱性が表すことができます。  
   
- シーケンス番号の文字数が最大文字数を超えると、ユーザーは影響を受けたパーティについて、EDI プロパティでシーケンス番号をリセットする必要があります。 番号をリセットしたら、そのエンコードの種類のすべてのメッセージの処理を再開できます。  
+ シーケンス番号の長さが最大長を超えるユーザーが影響を受けるパーティの EDI プロパティでシーケンス番号をリセットします。 数をリセットすると、そのエンコードの種類のすべてのメッセージもう一度処理することができます。  
   
- X12 メッセージの場合、制御番号の最大文字数は 9 桁です。 EDIFACT メッセージの場合、制御番号の最大文字数は、3 つのフィールドを合わせて 14 桁です。  
+ X12 メッセージで、コントロールの最大長は 9 桁の数字です。 EDIFACT メッセージの場合は、制御番号の最大長は、14 桁を 3 つのフィールドが。  
   
-## <a name="using-the-edi-receive-pipeline-with-an-http-adapter-will-leave-the-connection-open-if-no-ack-is-sent"></a>HTTP アダプターと共に EDI 受信パイプラインを使用した場合に確認が送信されないと、接続が開いたままになる  
+## <a name="using-the-edi-receive-pipeline-with-an-http-adapter-will-leave-the-connection-open-if-no-ack-is-sent"></a>確認が送信されない場合、受信の HTTP アダプターはまま、接続を開くとパイプラインを EDI を使用して  
  トランスポートの種類が HTTP であり、EDIReceive パイプラインを使用する受信場所を作成すると、セキュリティ上の問題が発生する可能性があります。 EdiReceive パイプラインでは、HTTP の "200 OK" 受信確認は生成されません。 EDI の受信確認が返されないと、接続が正常に終了せず、開いたままになります。 接続は、接続タイムアウト期間が経過したときにタイムアウトになります。  
   
- AS2EdiREceive パイプラインには、この問題はありません。  
+ これは、AS2EdiREceive パイプラインを備えた問題ではありません。  
   
-## <a name="an-x12-encoded-message-is-suspended-if-port-based-authentication-is-enabled-and-biztalk-server-does-not-have-access-to-the-authorization-and-security-information"></a>ポートベースの認証が有効で、BizTalk Server が認証情報およびセキュリティ情報にアクセスできない場合、X12 でエンコードされたメッセージが中断される  
- **症状:**  
+## <a name="an-x12-encoded-message-is-suspended-if-port-based-authentication-is-enabled-and-biztalk-server-does-not-have-access-to-the-authorization-and-security-information"></a>ポート ベースの認証が有効になっているし、BizTalk Server では、承認、およびセキュリティ情報にアクセスできない場合、X12 でエンコードされたメッセージが中断されます。  
+ **現象**  
   
- BizTalk Server は、認証が有効になっている受信ポートでメッセージを受信したときに、そのメッセージを送信したパーティを特定できなければ、メッセージを中断します。  
+ 認証が有効になっていると、メッセージを特定できないを送信したパーティの受信ポートでメッセージが受信されると、BizTalk Server には、メッセージが中断されます。  
   
  **考えられる原因**  
   
- 受信ポートで認証が有効になっている (受信ポートの "認証しない" プロパティがオフになっている) 場合、インターチェンジを処理するためには、BizTalk Server で ISA1 ～ ISA2 (認証修飾子および認証情報) プロパティおよび ISA3 ～ ISA4 (セキュリティ修飾子およびセキュリティ情報) プロパティが設定されている必要があります。 これらのパーティのプロパティは、パーティの [X12 インターチェンジ処理のプロパティ] ページでインターチェンジの送信者として設定されます。 これらのプロパティの値を決定できない場合、BizTalk Server はメッセージを中断します。  
+ BizTalk Server が、「ISA1-2 (認証修飾子およびセキュリティ情報)」の設定が必要です (受信ポートの [認証なし] プロパティがオフ)、受信ポートの認証が有効な場合、「ISA3 ~ 4 (セキュリティ修飾子およびセキュリティ情報)」インターチェンジを処理するためにプロパティです。 これらのプロパティは、x12 の場合、パーティの設定は、インターチェンジの送信者としてのパーティのインターチェンジ処理のプロパティ ページ。 BizTalk Server がこれらのプロパティの値を判別できない場合、メッセージは中断されます。  
   
- これは、2 つの方法で発生します。 最初のケースでは、メッセージを送信したパーティを特定できない場合、BizTalk Server は EDI グローバル プロパティを使用するため、認証およびセキュリティの設定にアクセスできません。 その結果、メッセージは中断されます。 2 番目のケースで BizTalk Server には、パーティが決定されますが、パーティの ISA1 2 および ISA3 ~ 4 のプロパティが構成されていない場合、BizTalk Server がもう一度アクセス権がない承認およびセキュリティ情報にし、メッセージを中断します。  
+ これは、2 つの方法で発生します。 最初のケースでは、BizTalk Server は、メッセージを送信したパーティを決定できない場合は EDI グローバル プロパティを使用し、承認およびセキュリティ設定へのアクセスはありません。 その結果、メッセージは中断されます。 2 番目のケースでは、BizTalk Server は、パーティを決定しますが、パーティの ISA1 2 および ISA3 ~ 4 のプロパティが構成されていない場合、BizTalk Server がもう一度、承認およびセキュリティ情報へのアクセスと、メッセージは中断されます。  
   
  **解決方法**  
   
- メッセージの送信側パーティを識別できること、およびパーティ アグリーメントで ISA1 ～ ISA2 および ISA3 ～ ISA4 プロパティが定義されていることを確認します。  
+ メッセージの送信元パーティを識別でき、パーティ アグリーメントで ISA1 ~ 2 および ISA3 ~ 4 のプロパティが定義されているようにします。  
   
 ## <a name="see-also"></a>参照  
  [EDI および AS2 ソリューションのトラブルシューティング](../core/troubleshooting-edi-and-as2-solutions.md)

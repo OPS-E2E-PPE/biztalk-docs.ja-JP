@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 41b349991d0e0d6949754c804fcd1ebf16ea7ad1
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 0e277a1b2a02ee622f37007a2d2a001570bded79
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37012355"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65381345"
 ---
 # <a name="invalid-identifier"></a>無効な識別子です
 ## <a name="details"></a>詳細  
@@ -30,10 +30,10 @@ ms.locfileid: "37012355"
 |  イベント ソース   |                                                                                     0                                                                                     |
 |    コンポーネント    |                                                                                     0                                                                                     |
 |  シンボル名  |                                                                                     0                                                                                     |
-|  メッセージ テキスト   | "{0}"は有効な識別子ではありません。 元の名前を復元しています。 (有効な識別子は文字または数字の 0 個以上続く文字から成るし、スペースを含めることはできません)。 |
+|  メッセージ テキスト   | "{0}"は有効な識別子ではありません。 元の名前を復元します。 (有効な識別子は文字または数字の 0 個以上続く文字から成るし、スペースを含めることはできません)。 |
   
 ## <a name="explanation"></a>説明  
- このエラーは、スキーマの公開時に定義した Web メソッドが有効な .NET 識別子ではないことを示します。  
+ このエラーは、スキーマの公開が有効な .net 識別子ではない場合に定義されている web メソッドを示します。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- Web メソッドの名前を有効な .NET 識別子に変更します。 有効な識別子の先頭は文字にする必要があり、全体は文字か数字のみで構成されている必要があります。スペースを含めることはできません。
+ 有効な .net 識別子には、web メソッドを変更します。 有効な識別子では、文字または数字の 0 個以上続く文字で構成され、スペースを含めることはできません。

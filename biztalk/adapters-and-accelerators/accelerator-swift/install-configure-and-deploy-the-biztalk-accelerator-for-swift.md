@@ -15,12 +15,12 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 44119bb7a8dd16189eea1e476a1ac694ec5e9fa2
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: df7577b1894ec36fde63096349b81e5f5c7676bf
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36969243"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377374"
 ---
 # <a name="install-configure-and-deploy-the-biztalk-accelerator-for-swift"></a>インストール、構成、および for SWIFT の BizTalk アクセラレータのデプロイ
 Microsoft[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]などのプラットフォームで動作[!INCLUDE[btsBizTalkServerNoVersion_md](../../includes/btsbiztalkservernoversion-md.md)]、 [!INCLUDE[btsVStudioNoVersion_md](../../includes/btsvstudionoversion-md.md)]、および[!INCLUDE[btsSQLServerNoVersion_md](../../includes/btssqlservernoversion-md.md)]します。 機能セットに[!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)]以前設定の機能と互換性が[!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)]バージョン。 ただし、BizTalk Server、Visual Studio および SQL Server の新しいバージョンでの拡張機能を実行できます。  

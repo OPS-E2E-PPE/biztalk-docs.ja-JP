@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル (AS2): 同期 MDN による AS2 経由で EDI の送信 |Microsoft Docs'
+title: チュートリアル (AS2):同期 MDN による AS2 経由での EDI の送信 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,24 +12,24 @@ caps.latest.revision: 34
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 92b5417adfd53498891eccb2845b815f475e861a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b2f451219cb214986ef25f69bbae2ef9704544e7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36982331"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65401574"
 ---
-# <a name="walkthrough-as2-sending-edi-over-as2-with-a-synchronous-mdn"></a>チュートリアル (AS2): 同期 MDN による AS2 経由での EDI の送信
+# <a name="walkthrough-as2-sending-edi-over-as2-with-a-synchronous-mdn"></a>チュートリアル (AS2):同期 MDN による AS2 経由での EDI の送信
 このチュートリアルでは、同期 MDN による AS2 経由の EDI メッセージの送信用のソリューションを作成する一連の手順について説明します。 作成し、1 台のコンピューターには、このチュートリアルでは、完全なソリューションをテストできます。  
   
-## <a name="prerequisites"></a>前提条件  
+## <a name="prerequisites"></a>必須コンポーネント  
  次に、このトピックの手順を実行するための前提条件を示します。  
   
 - [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者グループまたは [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] B2B Operators グループのメンバーとしてログオンしている必要があります。  
   
 - チュートリアルを実行するコンピューターには、インターネット インフォメーション サービス (IIS) 7 がインストールされている必要があります。  
   
-- チュートリアルを実行するコンピューターに 64 ビット版の Windows がインストールされている場合は、BizTalk ホストが 32 ビットのみとマークされていることを確認する必要があります。 IIS の [アプリケーション プールの 32 ビット アプリケーション設定を有効にする] を True に設定する必要があります。 詳細については、[チュートリアル 3: AS2 チュートリアル](../core/tutorial-3-as2-tutorial.md)を参照してください。  
+- チュートリアルを実行するコンピューターに 64 ビット版の Windows がインストールされている場合は、BizTalk ホストが 32 ビットのみとマークされていることを確認する必要があります。 IIS の [アプリケーション プールの 32 ビット アプリケーション設定を有効にする] を True に設定する必要があります。 詳細については、次を参照してください。[チュートリアル 3。AS2 チュートリアル](../core/tutorial-3-as2-tutorial.md)します。  
   
 ## <a name="how-the-solution-sends-an-edias2-message-and-returns-a-synchronous-mdn"></a>ソリューションにより EDI/AS2 メッセージを送信して同期 MDN を返す方法  
  このソリューションは次の処理を実行します。  
@@ -70,7 +70,7 @@ ms.locfileid: "36982331"
   
 -   状態レポートが有効になっていません。  
   
--   このソリューションは、否認不可データベースに署名、圧縮、暗号化、およびメッセージ ストレージを構成しません。 これらのプロパティを構成する手順については、[AS2 プロパティを設定する](../core/configuring-as2-properties.md)を参照してください。  
+-   このソリューションは、否認不可データベースに署名、圧縮、暗号化、およびメッセージ ストレージを構成しません。 これらのプロパティを構成する手順については、次を参照してください。 [AS2 プロパティを設定する](../core/configuring-as2-properties.md)します。  
   
 ## <a name="configuring-and-testing-the-walkthrough"></a>チュートリアルの構成とテスト  
  このソリューションに必要な手順は以下のとおりです。  
@@ -118,7 +118,7 @@ ms.locfileid: "36982331"
 1. [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] で、BizTalk プロジェクトを作成するか、開きます。  
   
    > [!NOTE]
-   >  このトピックは、EDI スキーマ、パイプライン、およびオーケストレーションを含む BizTalk EDI アプリケーションに別のアプリケーションから参照を既に追加していることを前提としています。 そうでない場合は、[、BizTalk Server EDI アプリケーションへの参照を追加する方法](http://msdn.microsoft.com/library/7af066fb-372f-4709-b566-c8d6b4a9d782)を参照してください。  
+   >  このトピックは、EDI スキーマ、パイプライン、およびオーケストレーションを含む BizTalk EDI アプリケーションに別のアプリケーションから参照を既に追加していることを前提としています。 そうでない場合は、次を参照してください。 [、BizTalk Server EDI アプリケーションへの参照を追加する方法](http://msdn.microsoft.com/library/7af066fb-372f-4709-b566-c8d6b4a9d782)します。  
   
 2. プロジェクトを右クリックし、[**追加**、] をクリックし、**既存項目の**します。 SamplePO.txt ファイルを使用してソリューションをテストするには、[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\EDI Interface Developer Tutorial\Inbound_EDI フォルダーに移動します。 X12_00401_850.xsd スキーマを選択し、クリックして**追加**します。  
   
@@ -291,7 +291,7 @@ ms.locfileid: "36982331"
   
 4. **FILE トランスポートのプロパティ** ダイアログ ボックスの**先フォルダー**MDN を送信するために作成したローカル フォルダーを入力します。  
   
-5. **ファイル名**、入力 **%MessageID%.msg**します。クリックして**OK**します。  
+5. **ファイル名**、入力 **%MessageID%.msg**します。**[OK]** をクリックします。  
   
 6. 既定の**PassThruTransmit**の**送信パイプライン**します。  
   

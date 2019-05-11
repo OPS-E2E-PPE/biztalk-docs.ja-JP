@@ -1,5 +1,5 @@
 ---
-title: Update2 |Microsoft ドキュメント
+title: Update2 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,18 +12,18 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a4376cae94e91f462974c626a57170b80b0117ba
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c090d11686babacfcb854782484b689dff2102e0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22286762"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65398618"
 ---
-# <a name="update"></a>Update
-`Update` 要素は、イベントからデータを抽出して、関連する BAM アクティビティにインポートするために使用します。  
+# <a name="update"></a>更新
+`Update`要素を使用して、イベントからデータを抽出し、関連する BAM アクティビティにインポートします。  
   
-## <a name="format"></a>Format  
- 使用する、`Update`要素、列名と型の両方を指定する必要があります、**式**要素が 1 つ以上含む**操作**要素 1 つの文字列値に評価されます。  
+## <a name="format"></a>形式  
+ 使用する、`Update`要素の場合、列名と型の両方を指定する必要があります、**式**要素の 1 つ以上含む**操作**1 つの文字列値に評価される要素。  
   
 ```  
 <ic:Update DataItemName="Name" Type="Type">  
@@ -35,20 +35,20 @@ ms.locfileid: "22286762"
   
 ### <a name="attributes"></a>属性  
   
-|属性名|Description|  
+|属性名|説明|  
 |--------------------|-----------------|  
-|[ColumnName]|BAM アクティビティのチェックポイント名です。 これは、抽出されたデータで更新されるチェックポイントです。|  
-|型|チェックポイントの BAM データ型です。次のいずれかを指定する必要があります。<br /><br /> -NVARCHAR<br />-DATETIME<br />-INT<br />FLOAT|  
+|[ColumnName]|BAM のアクティビティ チェックポイントの名前。 これは、抽出されたデータで更新されるチェックポイントです。|  
+|型|のチェックポイントの BAM データ型次のいずれかを指定する必要があります。<br /><br /> -   NVARCHAR<br />-DATETIME<br />-INT<br />-FLOAT|  
   
-## <a name="remarks"></a>解説  
- 次の演算は、`Update` 式ではサポートされていません。  
+## <a name="remarks"></a>コメント  
+ 次の操作がサポートされていない、`Update`式。  
   
 -   And  
   
 -   [等しい]  
   
 ## <a name="example"></a>例  
- 次の例で、 **GetContextProperty** WF 操作は、取得に使用される、 **EventTime**プロパティです。 この値として保存されます、 **DATETIME** BAM アクティビティの"StartOrderProcessing"データ項目の種類。  
+ 次の例では、 **GetContextProperty** WF の操作を使用して、取得、 **EventTime**プロパティ。 としてこの値が格納される、 **DATETIME** BAM アクティビティの"StartOrderProcessing"データ項目の種類。  
   
 ```  
 <ic:Update DataItemName="StartOrderProcessing" Type="DATETIME">  
@@ -61,4 +61,4 @@ ms.locfileid: "22286762"
 ```  
   
 ## <a name="see-also"></a>参照  
- [インターセプタ OnEvent 要素](../core/interceptor-onevent-element.md)
+ [インターセプター OnEvent 要素](../core/interceptor-onevent-element.md)

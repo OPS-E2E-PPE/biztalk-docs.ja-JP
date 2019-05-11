@@ -1,5 +1,5 @@
 ---
-title: サービス構成ファイルの通知用の BAM コマンド ライン スクリプト |Microsoft ドキュメント
+title: 通知用の BAM コマンド ライン スクリプト サービス構成ファイル |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,45 +12,45 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b22607193ed7c345388a6435e2d58c16b8986370
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: cf28ea2c1ff0defd7696b548ff86bc050259925d
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25965800"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65528716"
 ---
-# <a name="bam-command-line-script-for-notification-services-configuration-files"></a>Notification Services 構成ファイル用の BAM コマンド ライン スクリプト
-管理者は、ProcessBamNSFiles.vbs スクリプトを使用して、BAM 警告の SQL Server Notification Services の動作をカスタマイズできます。 このスクリプトを使用して、Notification Services のアプリケーション定義ファイル (ADF) や Notification Services の構成ファイルを取得できます。 これらのファイルに変更を加えた後、スクリプトを使って変更内容を適用できます。  
+# <a name="bam-command-line-script-for-notification-services-configuration-files"></a>サービス構成ファイルの通知用の BAM コマンド ライン スクリプト
+管理者は、ProcessBamNSFiles.vbs スクリプトを使用して、BAM 警告用 SQL Server Notification Services の動作をカスタマイズします。 Notification Services application 定義ファイル (ADF) と Notification Services 構成ファイルを取得するのにスクリプトを使用することができます。 これらのファイルを変更して、スクリプトを使用して、変更を適用します。  
   
- スクリプトは、通常のコマンド プロンプトからではなく、Notification Services のコマンド プロンプトから実行します。 通常のコマンド プロンプトからスクリプトを実行すると、スクリプトが適切に実行されません。 スクリプトの実行時には、すべてのパラメーターを指定する必要があります。  
+ 通常コマンド プロンプトではなく、Notification Services コマンド プロンプトからスクリプトを実行するとします。 一般的なコマンド プロンプトからスクリプトを実行すると、正しく実行するスクリプトが。 スクリプトを実行している場合は、すべてのパラメーターは必須です。  
   
 ## <a name="get-command"></a>Get コマンド  
  **使用方法**  
   
  **cscript ProcessBamNSFiles-取得\<構成ファイルのパス\> \<ADF ファイルのパス\>\<プライマリ インポート サーバー\> \<プライマリ インポート データベース  \>**  
   
-|パラメーター|Description|  
+|パラメーター|説明|  
 |---------------|-----------------|  
-|構成ファイルのパス|構成ファイルの保存先の名前と場所を指定します。|  
-|ADF ファイルのパス|ADF ファイルの保存先の名前と場所を指定します。|  
-|プライマリ インポート サーバー|BAM プライマリ インポート データベースが格納されているコンピューターの名前です。|  
-|プライマリ インポート データベース|BAM プライマリ インポート データベースの名前です。|  
+|構成ファイルのパス|構成ファイルを格納する場所と名前を指定します。|  
+|ADF ファイルのパス|ADF ファイルを格納する場所と名前を指定します。|  
+|プライマリ インポート サーバー|BAM プライマリ インポート データベースが格納されているコンピューターの名前。|  
+|プライマリ インポート データベース|BAM プライマリ インポート データベースの名前。|  
   
- BAM プライマリ インポート データベースから Notification Services の構成ファイルおよびアプリケーション定義ファイルを取得し、それらを指定されたパスに保存します。  
+ 指定したパスを取得、Notification Services の構成およびアプリケーション定義ファイルを BAM プライマリ インポート データベースからとするために保存します。  
   
 ## <a name="update-command"></a>Update コマンド  
  **使用方法**  
   
- **cscript ProcessBamNSFiles-更新\<configfilepath\> \<構成ファイルのパス\>\<primaryimport サーバー\> \<プライマリ インポート データベース  \>**  
+ **cscript ProcessBamNSFiles-Update \<configfilepath\> \<構成\>\<primaryimport server\> \<プライマリ インポート db  \>**  
   
-|パラメーター|Description|  
+|パラメーター|説明|  
 |---------------|-----------------|  
-|構成ファイルのパス|最新の Notification Services 構成ファイルの名前と場所を指定します。|  
-|ADF ファイルのパス|最新の ADF ファイルの名前と場所を指定します。|  
-|プライマリ インポート サーバー|BAM プライマリ インポート データベースが格納されているコンピューターの名前です。|  
-|プライマリ インポート データベース|BAM プライマリ インポート データベースの名前です。|  
+|構成ファイルのパス|Notification Services の構成情報を更新する元の場所と名前を指定します。|  
+|ADF ファイルのパス|ADF の情報を更新する元の場所と名前を指定します。|  
+|プライマリ インポート サーバー|BAM プライマリ インポート データベースが格納されているコンピューターの名前。|  
+|プライマリ インポート データベース|BAM プライマリ インポート データベースの名前。|  
   
- Notification Services を呼び出し、指定されたファイルの情報で設定を更新します。 構成ファイルと ADF ファイルは、BAM プライマリ インポート データベースに格納されます。  
+ 通知サービスを呼び出すし、指定されたファイルの情報と設定を更新します。 構成ファイルと ADF ファイルは、BAM プライマリ インポート データベースに格納されます。  
   
 ## <a name="see-also"></a>参照  
  [BAM コマンド ライン ツール](../core/bam-command-line-tools.md)

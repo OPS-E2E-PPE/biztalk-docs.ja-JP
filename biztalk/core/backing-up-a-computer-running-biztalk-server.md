@@ -1,5 +1,5 @@
 ---
-title: BizTalk Server を実行しているコンピューターのバックアップ |Microsoft ドキュメント
+title: BizTalk Server を実行しているコンピューターのバックアップ |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,23 +12,23 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 537ea40b39ecd35127b62f8d96f0175e98a1f3b2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 04f8a0073ffd4117da1d5cf5d92dd969b9a0abfc
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22230506"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65528573"
 ---
-# <a name="backing-up-a-computer-running-biztalk-server"></a>BizTalk Server を実行しているコンピュータのバックアップ
-BizTalk Server を実行しているコンピュータで復旧不可能なハードウェア障害が発生した場合、同等のコンピュータに置き換える必要があります。 基本プラットフォーム、必要なソフトウェア、BizTalk Server コンポーネント、および同等の構成設定が備わった代替コンピュータをセットアップします。 これらの構成設定は、BizTalk アプリケーションを正しく機能させるために必要な、適切なレジストリ エントリ、ファイル、フォルダ、および関連する Windows サービスで構成される場合があります。  
+# <a name="backing-up-a-computer-running-biztalk-server"></a>BizTalk Server を実行しているコンピューターのバックアップ
+BizTalk Server を実行しているコンピューターに、回復不可能なハードウェア障害が低下した場合は、同一の 1 つでそのコンピューターを置き換える必要があります。 基本プラットフォームのソフトウェア、ソフトウェアの前提条件、BizTalk Server コンポーネント、および同等の構成設定で、代替コンピューターを設定する必要があります。 これらの構成設定は、適切なレジストリ エントリ、ファイル、フォルダー、および BizTalk アプリケーションの適切な操作に必要な関連する Windows サービスで構成されます。  
   
- BizTalk Server データベースをバックアップするほか、次の BizTalk Server コンポーネントをバックアップして、ハードウェア障害が発生した後 BizTalk Server を復旧できるようにしておく必要があります。  
+ BizTalk Server データベースをバックアップするだけでなくは、ハードウェア障害の後、BizTalk Server を回復できることを確認するのには、次の BizTalk Server コンポーネントをバックアップする必要があります。  
   
--   BizTalk Server 構成  
+-   BizTalk Server の構成  
   
--   エンタープライズ シングル サインオン (SSO) マスタ シークレット  
+-   エンタープライズ シングル サインオン (SSO) マスター シークレット  
   
--   ビジネス アクティビティ監視 (BAM) ポータル (BAM を使用している場合のみ必要)  
+-   (BAM を使用している場合を除きは必要ありません)、ビジネス アクティビティ監視 (BAM) ポータル  
   
 -   BizTalk アプリケーション  
   
@@ -40,4 +40,4 @@ BizTalk Server を実行しているコンピュータで復旧不可能なハ�
   
 -   [BAM ポータルをバックアップする方法](../core/how-to-back-up-the-bam-portal.md)  
   
--   [BizTalk Server アプリケーションをバックアップします。](../core/backing-up-biztalk-server-applications.md)
+-   [BizTalk Server アプリケーションのバックアップ](../core/backing-up-biztalk-server-applications.md)

@@ -18,12 +18,12 @@ caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a1074e2c526efb07597c0bb31dba891d2d6ce951
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8b381e869597c11281f715ba0d05d504671cd062
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37012348"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65401702"
 ---
 # <a name="using-biztalk-adapter-tracing"></a>BizTalk アダプターのトレースの使用
 ここでは、Trace Log tool (トレース ログ ツール) をインストールする方法、および BizTalk アダプターのトレースを可能にする方法について説明します。  
@@ -35,7 +35,7 @@ ms.locfileid: "37012348"
 1. トレース ログ ツールを [Microsoft® Windows® Software Development Kit Update for Windows Vista](http://go.microsoft.com/fwlink/?LinkId=128279) Web サイトからダウンロードします。  
   
    > [!NOTE]
-   >  [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] を実行している場合でも、このバージョン (6.0) の SDK をインストールしてください。 インストールする場合、 **Windows SDK for Windows Server 2008 および .NET Framework 3.5**バージョン (v します。 6.1)、トレース ログ ツールはインストールされません。  
+   >  [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]を実行している場合でも、このバージョン (6.0) の SDK をインストールしてください。 インストールする場合、 **Windows SDK for Windows Server 2008 および .NET Framework 3.5**バージョン (v します。 6.1)、トレース ログ ツールはインストールされません。  
   
 2. Web ページ下部にある **PSDK-x86.exe** ファイルのリンクをクリックして、 **Microsoft® Windows® Software Development Kit Update for Windows Vista** Web インストール プログラムを起動します。  
   
@@ -71,7 +71,7 @@ ms.locfileid: "37012348"
   
     たとえば、次のコマンドを入力し、ENTER キーを押します。  
   
-    **トレース - ツール"C:\Program files \microsoft SDKs\Windows\v6.0\Bin"**  
+    **trace -tools "C:\Program Files\Microsoft SDKs\Windows\v6.0\Bin"**  
   
    > [!NOTE]
    >  **-tools** スイッチは、Trace.cmd ファイルに Tracelog.exe ファイルの場所を示します。  
@@ -80,7 +80,7 @@ ms.locfileid: "37012348"
    >   
    >  **2.0 - 管理 BizTalk 2006 リリース ビット トレースをトレースします。**  
    >   
-   >  **設定を"C:\Program files \microsoft SDKs\Windows\v6.0\Bin"TRACE_TOOL_SEARCH_PATH**  
+   >  **Setting TRACE_TOOL_SEARCH_PATH to "C:\Program Files\Microsoft SDKs\Windows\v6.0\Bin "**  
   
 ## <a name="capture-trace-output-with-tracecmd"></a>trace.cmd を使用したトレース出力の取得  
   
@@ -96,9 +96,9 @@ ms.locfileid: "37012348"
   
 4. コマンド プロンプトで次のコマンドを入力し、Enter キーを押します。  
   
-    **トレースの停止**  
+    **trace -stop**  
   
-5. という名前のバイナリ ファイルは、トレースを停止した後**Btstrace.bin** 、フォルダーに生成された場所[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]がインストールされています。  
+5. トレースを停止した後、 **Btstrace.bin** という名前のバイナリ ファイルが、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] がインストールされているフォルダーに生成されます。  
   
 6. 分析のためにマイクロソフト製品サポート サービスに **Btstrace.bin** ファイルを送信します。  
   

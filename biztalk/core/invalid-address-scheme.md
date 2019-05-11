@@ -12,12 +12,12 @@ caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5c9a0e7a9c200d2efc7d0e6e81158379200d55af
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1b2b1a1514c605a40c98dacfd90911f806ddcd2f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36981003"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65381489"
 ---
 # <a name="invalid-address-scheme"></a>アドレス スキームが無効です
 ## <a name="details"></a>詳細  
@@ -33,7 +33,7 @@ ms.locfileid: "36981003"
 |  メッセージ テキスト   |                  無効なアドレスのスキーム指定してください"{0}"スキーム。                   |
   
 ## <a name="explanation"></a>説明  
- トランスポート バインディングに定義されている種類と一致しないプロトコル スキームを指定しました。  
+ トランスポート バインディングに定義されている型に一致しないプロトコル スキームを指定したとします。  
   
 ## <a name="user-action"></a>ユーザーの操作  
  このエラーを解決するには、次の操作を行います。  
@@ -42,7 +42,7 @@ ms.locfileid: "36981003"
   
 2. コンソール ルートで展開**BizTalk Server 管理**、展開**BizTalk グループ**、展開**アプリケーション**します。  
   
-3. アプリケーションを特定し、次にトランスポートを特定します。  
+3. アプリケーションを見つけて、トランスポートを特定します。  
   
 4. トランスポート名を右クリックします。  
   
@@ -50,7 +50,7 @@ ms.locfileid: "36981003"
   
 6. ポート**型**一覧で、適切なポートを選択します。  
   
-7. クリックして**構成**します。  
+7. をクリックして**構成**です。  
   
 8. **WCF [**<em>トランスポートの種類</em>**] トランスポートのプロパティ**ダイアログ ボックスで、をクリックして、**全般**タブ。  
   

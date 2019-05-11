@@ -12,14 +12,14 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3a5076bc5c4887e1819ab64a32bb987fb9b06248
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3d9d49d4fe30f8e3dd85f32c17e834f45550024d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36975827"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65354362"
 ---
-# <a name="could-not-find-business-identities-corresponding-to-batch"></a>バッチに対応するビジネス ID が見つかりませんでした
+# <a name="could-not-find-business-identities-corresponding-to-batch"></a>バッチに対応するビジネス Id が見つかりませんでした。
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                        |

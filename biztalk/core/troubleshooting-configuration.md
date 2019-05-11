@@ -12,12 +12,12 @@ caps.latest.revision: 37
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f79f2d2ec9e87a22d07802f52b063f279d65ab8a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ed34079f38490b2e48f367c5b73bb3ec9bea4904
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36973195"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65398657"
 ---
 # <a name="troubleshooting-configuration"></a>構成のトラブルシューティング
 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 構成プログラムは、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] を実行する 1 つ以上のコンピューター上にデータベースを作成し、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] が使用するテーブル、ロール、およびストアド プロシージャをそのデータベースに格納して、実行時に使用される .NET アセンブリを BizTalk 管理データベースに展開します。  
@@ -32,7 +32,7 @@ Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernover
  構成ログ ファイルの内容は、実行された構成手順の概要と、構成処理中に発生した疑いのあるエラーに関する診断情報です。 構成エラーが発生した場合、メモ帳などのテキスト エディターでは、構成ログを開くし、エラーの考えられる原因は、ログ ファイルを確認してください。  
   
 ## <a name="troubleshooting-tools"></a>トラブルシューティング ツール  
- SQL Server プロファイラー、Filemon、または Regmon を使用して、構成エラーに関する追加情報を収集します。 これらのツールの詳細については、[トラブルシューティングのために使用するツールとユーティリティ](../core/tools-and-utilities-to-use-for-troubleshooting.md)を参照してください。  
+ SQL Server プロファイラー、Filemon、または Regmon を使用して、構成エラーに関する追加情報を収集します。 これらのツールの詳細については、次を参照してください。[トラブルシューティングのために使用するツールとユーティリティ](../core/tools-and-utilities-to-use-for-troubleshooting.md)します。  
   
 ## <a name="known-issues"></a>既知の問題  
   
@@ -43,7 +43,7 @@ Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernover
   
  SSO データベースへのアクセスを試みているときにエラーが発生しました。  
   
- 関数: FieldInfoCreate  
+ 関数:FieldInfoCreate  
   
  - または -  
   
@@ -75,7 +75,7 @@ Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernover
   
  BizTalk Server 2009\Microsoft.BizTalk.DefaultPipelines.dll します。 [未指定]  
   
- 例外: ファイルまたはアセンブリ名 filename.dll、またはいずれか、  
+ 例外:ファイルまたはアセンブリ名 filename.dll、またはいずれか、  
   
  依存関係の 1 つが見つかりませんでした。 ファイルまたはアセンブリ名 FileName.dll、または  
   
@@ -96,7 +96,7 @@ echo %TEMP%
 ##### <a name="problem"></a>問題  
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のグループの構成が失敗して、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の構成ログに次のようなエラーが表示されます。  
   
- 2006-08-29 23:54:00:0902 [WARN] AdminLib GetBTSMessage: hrErr 80070547; を =  
+ 2006-08-29 23:54:00:0902 [WARN] AdminLib GetBTSMessage: hrErr=80070547;  
   
  Msg=ドメイン コントローラーから構成情報を読み取れま  
   
@@ -229,7 +229,7 @@ echo %TEMP%
 #### <a name="supported-virtual-directory-types"></a>サポートされている仮想ディレクトリのタイプ  
  関連付けられている仮想ディレクトリが型の場合にのみ、エクスポート操作は成功を MSI のエクスポートを実行しようと、オーケストレーションから Web サービスを参照するときに**IIsWebVirtualDir**または**IIsWebDirectory**. **IIsWebVirtualDir**と**IIsWebDirectory**は IIS メタベースに表示されるノードの種類。 **IIsWebVirtualDir**の仮想ディレクトリ、**パス**絶対ファイル フォルダーを指すプロパティ。 **IIsWebDirectory**仮想ディレクトリでは、**パス**プロパティ別のサブフォルダーでは通常、相対ファイル フォルダーを参照および**IIsWebVirtualDir**または**IIsWebDirectory**ノード。 メタベース階層でフォルダーを表すものとしてはこの 2 つのタイプが一般的です。  
   
- 型の仮想ディレクトリ**IIsConfigObject**はサポートされていませんし、この場合、MSI のエクスポートは失敗します。 **IIsConfigObject**が、予期しないメタベース ノード タイプは BizTalk Server が正しく処理されないか、有効なノード型か、正しく作成されていない (およびしたがって無効な) メタベース エントリを示す値。 このような状況では、BizTalk Server によって次のようエラー メッセージが表示されます: 予期しないディレクトリ エントリ"IIS://LM/W3SVC/1/ROOT/BadVdir/"種類 IIsConfigObject します。  
+ 型の仮想ディレクトリ**IIsConfigObject**はサポートされていませんし、この場合、MSI のエクスポートは失敗します。 **IIsConfigObject**が、予期しないメタベース ノード タイプは BizTalk Server が正しく処理されないか、有効なノード型か、正しく作成されていない (およびしたがって無効な) メタベース エントリを示す値。 BizTalk Server ではこのような状況で、次のようなエラー メッセージが表示されます。種類 IIsConfigObject の予期しないディレクトリ エントリ"IIS://LM/W3SVC/1/ROOT/BadVdir/"。  
   
 #### <a name="unable-to-view-group-information-after-removing-stale-logons"></a>古いログオンを削除するとグループ情報を表示できなくなる  
   

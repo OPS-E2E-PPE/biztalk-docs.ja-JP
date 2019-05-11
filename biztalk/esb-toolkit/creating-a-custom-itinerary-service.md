@@ -1,5 +1,5 @@
 ---
-title: カスタム Itinerary サービスを作成する |Microsoft ドキュメント
+title: カスタム スケジュール サービスを作成する |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,16 +12,16 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ef94b0c5fd50a8cdd36c2b8a193102bc9964909a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1ad662ceb748cefbaf9f13bdbc5f410c08bdac55
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22289850"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65401527"
 ---
-# <a name="creating-a-custom-itinerary-service"></a>カスタム Itinerary サービスを作成します。
-変更または拡張することができます、 [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] itinerary サービスと、特定の要件に合わせてコンポーネントです。 2 つの方法がカスタム itinerary サービスを作成することができます。  
+# <a name="creating-a-custom-itinerary-service"></a>カスタム スケジュール サービスを作成します。
+変更したり拡張したりする、 [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] itinerary サービスおよび特定の要件に合わせてコンポーネント。 カスタム スケジュール サービスを作成できる 2 つの方法はあります。  
   
--   [BizTalk オーケストレーションを使用してカスタム Itinerary サービスを作成します。](../esb-toolkit/creating-a-custom-itinerary-service-using-a-biztalk-orchestration.md)  
+-   [BizTalk オーケストレーションを利用し、カスタム スケジュール サービスを作成する](../esb-toolkit/creating-a-custom-itinerary-service-using-a-biztalk-orchestration.md)  
   
--   [カスタム Itinerary メッセージング サービスを作成します。](../esb-toolkit/creating-a-custom-itinerary-messaging-service.md)
+-   [カスタム スケジュール メッセージング サービスを作成する](../esb-toolkit/creating-a-custom-itinerary-messaging-service.md)

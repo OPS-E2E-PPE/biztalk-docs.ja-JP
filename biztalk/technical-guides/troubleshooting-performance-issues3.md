@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 40f7ae950a7078152d2952fb72ebe39303d41813
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c556c0fbf73ba6baaa72a0860799126b59070a0a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36998811"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65400614"
 ---
 # <a name="troubleshooting-performance-issues"></a>パフォーマンスの問題のトラブルシューティング
 このセクションには、診断するための一般的なガイドラインが含まれていますとに関連するパフォーマンスの問題を解決する[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]とその依存関係。 これらのガイドラインを事前に、使用の重要な問題になる前に、潜在的な問題を識別するためにします。  

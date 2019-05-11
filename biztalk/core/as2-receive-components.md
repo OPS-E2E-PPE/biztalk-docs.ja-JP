@@ -12,12 +12,12 @@ caps.latest.revision: 26
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6b0f075b4c1766f2e9fcf5c25bf2a08ea5b60b21
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c64053bbfc818cd2c345e6a2e2268328c3b6b99a
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36973251"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65528562"
 ---
 # <a name="as2-receive-components"></a>AS2 の受信コンポーネント
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、AS2 メッセージの受信にいくつかのコンポーネントが使用されます。  
@@ -90,7 +90,7 @@ ms.locfileid: "36973251"
   
   **EDI 逆アセンブラー**  
   
-  AS2EDIReceivePipeline では、EDI 逆アセンブラーは EDI メッセージを処理するために中間 XML メッセージに解析します。 詳細については、[、EDI 逆アセンブラーのしくみ](../core/how-the-edi-disassembler-works.md)を参照してください。  
+  AS2EDIReceivePipeline では、EDI 逆アセンブラーは EDI メッセージを処理するために中間 XML メッセージに解析します。 詳細については、次を参照してください。 [、EDI 逆アセンブラーのしくみ](../core/how-the-edi-disassembler-works.md)します。  
   
   **BatchMarker**  
   

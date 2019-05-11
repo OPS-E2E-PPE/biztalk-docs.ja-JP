@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7133134ddd37562ec30112549bb1a4ac16149b03
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e1a7f605f94c415909fcd8d5f023ddcfd6c1b1f0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36969803"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65400385"
 ---
 # <a name="how-to-install-certificates-for-biztalk-server"></a>BizTalk Server の証明書をインストールする方法
 データ転送をセキュリティで保護する[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]、適切な証明書を適切な証明書ストアに追加し、適切な BizTalk アイテム、証明書を関連付ける必要があります。 このトピックでは、適切なストアで適切な証明書をインストールする方法と、ローカル コンピューターと現在のユーザーの証明書ストアの証明書管理コンソール インターフェイスを表示する方法について説明します。  
@@ -27,9 +27,9 @@ ms.locfileid: "36969803"
 |証明書の使用|証明書の種類|証明書ストア|  
 |-----------------------|----------------------|-----------------------|  
 |署名 (送信)|固有の秘密キー (.pfx)|現在のユーザー\\<br />各ホスト インスタンス サービス アカウントとして MIME/SMIME エンコーダ パイプラインをホストする各 BizTalk サーバーの個人用ストア|  
-|署名の検証 (受信)|取引先の公開キー (.cer)|各ホスト インスタンス サービス アカウントとして MIME/SMIME デコーダ パイプラインをホストする各 BizTalk サーバーの Local computer\Other People ストア|  
-|暗号化 (送信)|取引先の公開キー (.cer)|MIME/SMIME エンコーダ パイプラインをホストする各 BizTalk サーバーの Local computer\Other People ストア|  
-|解読 (受信)|固有の秘密キー (.pfx)|各ホスト インスタンス サービス アカウントとして MIME/SMIME デコーダ パイプラインをホストする各 BizTalk サーバーの "現在のユーザー\個人用" ストア|  
+|署名の検証 (受信)|取引先パートナーの公開キー (.cer)|Local computer \other People としてのストアの各 BizTalk server をホストする MIME/SMIME デコーダー パイプライン各ホスト インスタンス サービス アカウント|  
+|暗号化 (送信)|取引先パートナーの公開キー (.cer)|Local computer \other People ストアの各 BizTalk server をホストする MIME/SMIME エンコーダー パイプライン|  
+|復号化 (受信)|固有の秘密キー (.pfx)|Current user \personal としてのストアの各 BizTalk server をホストする MIME/SMIME デコーダー パイプライン各ホスト インスタンス サービス アカウント|  
 
 ## <a name="prerequisites"></a>前提条件  
  メンバーとしてログオンする必要があります、このトピックの手順を実行する、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理者グループ。  
@@ -63,7 +63,7 @@ ms.locfileid: "36969803"
 
 2. 公開キーの暗号化をパートナーに送信します。  
 
-3. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]、パートナーからメッセージを受け取るハンドラーを実行するホスト インスタンスのサービス アカウントとしてログオンします。 サービス アカウントの個人用ストアに、メッセージを解読するための [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 秘密キー証明書をインストールします。  
+3. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]、パートナーからメッセージを受け取るハンドラーを実行するホスト インスタンスのサービス アカウントとしてログオンします。 インストール、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]サービス アカウントの個人用ストア内のメッセージを解読するための秘密キー証明書。  
 
    > [!NOTE]
    >  暗号化証明書をインストールするために使用する手順に関する詳細については、次を参照してください。[メッセージの暗号化の証明書をインストールする方法](http://go.microsoft.com/fwlink/?LinkId=155156)(<http://go.microsoft.com/fwlink/?LinkId=155156>) で[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプ。 証明書ストアに証明書をインポートするために使用するツールの詳細については、次を参照してください。[証明書ウィザード ユーティリティ](http://go.microsoft.com/fwlink/?LinkId=155157)(<http://go.microsoft.com/fwlink/?LinkId=155157>) で[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプ。  

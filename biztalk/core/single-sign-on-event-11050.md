@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 11050 |Microsoft Docs'
+title: シングル サインオン:イベント 11050 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2406a29150710286a6560a2239315feaa10c42b6
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 15ec8f5bc7f34f2451418e441eeed42191d6f5dd
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37021928"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65400929"
 ---
-# <a name="single-sign-on-event-11050"></a>シングル サインオン: イベント 11050
+# <a name="single-sign-on-event-11050"></a>シングル サインオン:イベント 11050
 ## <a name="details"></a>詳細  
   
 |                 |                                                            |

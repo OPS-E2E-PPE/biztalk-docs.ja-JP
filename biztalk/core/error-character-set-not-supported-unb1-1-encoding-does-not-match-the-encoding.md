@@ -12,14 +12,14 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4ef85488281c6ddd7fe8ecdb0f096a21bbc30c06
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ea2b1cd0831bb0194c9a5290c2c724bdd46c1714
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36978387"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65388966"
 ---
-# <a name="character-set-not-supported-because-the-encoding-information-in-unb11-does-not-match-the-actual-encoding"></a>UNB1.1 のエンコード情報が実際のエンコードと一致しないため、文字セットはサポートされません
+# <a name="character-set-not-supported-because-the-encoding-information-in-unb11-does-not-match-the-actual-encoding"></a>文字セットの UNB1.1 のエンコード情報では、実際のエンコードは一致しないために、サポートされていません
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                                                                                     |

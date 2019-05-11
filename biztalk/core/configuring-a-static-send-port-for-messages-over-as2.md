@@ -12,35 +12,35 @@ caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3e94514ccd2b16b784e49339f39e9d0c178407b0
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1bec915ded1e7e907066aa65a358077316182782
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36986603"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65356363"
 ---
 # <a name="configuring-a-static-send-port-for-messages-over-as2"></a>AS2 経由でのメッセージの静的送信ポートの構成
 このトピックでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を構成し、静的送信ポートを経由して AS2 メッセージを送信する方法について説明します。 この構成作業では、静的送信ポートを作成し、アグリーメントを構成します。 必要に応じて、送信ポートで使用される暗号化証明書のセットアップも行います。  
   
 > [!NOTE]
->  静的送信ポートの代わりに、動的送信ポートを構成して AS2 メッセージを送信することもできます。 詳細については、[AS2 経由でメッセージを動的送信ポートを構成する](../core/configuring-a-dynamic-send-port-for-messages-over-as2.md)を参照してください。  
+>  静的送信ポートの代わりに、動的送信ポートを構成して AS2 メッセージを送信することもできます。 詳細については、次を参照してください。 [AS2 経由でメッセージを動的送信ポートを構成する](../core/configuring-a-dynamic-send-port-for-messages-over-as2.md)します。  
   
  EDI メッセージまたは非 EDI メッセージを持つ AS2 メッセージや EDI 受信確認を送信するには、次のように構成された送信請求 - 応答の HTTP 送信ポートを作成します。  
   
 |場所|プロパティ|設定|  
 |--------------|--------------|-------------|  
-|**送信ポートのプロパティ: 全般**|ポートの種類|-静的な送信請求-応答 (場合に mdn を要求する**受信確認 (Mdn)** 一方向アグリーメント タブでページが選択されている)<br /><br /> -静的な一方向送信ポート (場合に mdn を要求する**受信確認 (Mdn)** 一方向アグリーメント タブでページがクリアされます)|  
-|**送信ポートのプロパティ: 全般**|トランスポートの種類|HTTP<br /><br /> 注:<br /><br /> EDIINT/AS2 でエンコードされたメッセージには、HTTP アダプタのみ使用できます。 このトランスポートは、HTTP アダプタ以外のアダプタでは使用できません。|  
-|**送信ポートのプロパティ: 全般**|送信ハンドラー|BizTalkServerApplication|  
-|**送信ポートのプロパティ: 全般**|[送信パイプライン]|-AS2EdiSend (EDI エンコード メッセージの場合)<br /><br /> -AS2Send (非 EDI メッセージの場合)|  
-|**送信ポートのプロパティ: 全般**|[受信ハンドラー]<br /><br /> (場合に mdn を要求する**受信確認 (Mdn)** 一方向アグリーメント タブでページが選択されている)|BizTalkServerApplication|  
-|**送信ポートのプロパティ: 全般**|受信パイプライン。<br /><br /> (場合に mdn を要求する**受信確認 (Mdn)** 一方向アグリーメント タブでページが選択されている)|AS2Receive|  
+|**送信ポートのプロパティ:[全般]**|ポートの種類|-静的な送信請求-応答 (場合に mdn を要求する**受信確認 (Mdn)** 一方向アグリーメント タブでページが選択されている)<br /><br /> -静的な一方向送信ポート (場合に mdn を要求する**受信確認 (Mdn)** 一方向アグリーメント タブでページがクリアされます)|  
+|**送信ポートのプロパティ:[全般]**|トランスポートの種類|HTTP<br /><br /> 注:<br /><br /> EDIINT/AS2 でエンコードされたメッセージには、HTTP アダプタのみ使用できます。 このトランスポートは、HTTP アダプタ以外のアダプタでは使用できません。|  
+|**送信ポートのプロパティ:[全般]**|送信ハンドラー|BizTalkServerApplication|  
+|**送信ポートのプロパティ:[全般]**|[送信パイプライン]|-AS2EdiSend (EDI エンコード メッセージの場合)<br /><br /> -AS2Send (非 EDI メッセージの場合)|  
+|**送信ポートのプロパティ:[全般]**|[受信ハンドラー]<br /><br /> (場合に mdn を要求する**受信確認 (Mdn)** 一方向アグリーメント タブでページが選択されている)|BizTalkServerApplication|  
+|**送信ポートのプロパティ:[全般]**|受信パイプライン。<br /><br /> (場合に mdn を要求する**受信確認 (Mdn)** 一方向アグリーメント タブでページが選択されている)|AS2Receive|  
 |**HTTP トランスポートのプロパティ**|送信先 URL|\<送信先 URL の文字列\>|  
 |**HTTP トランスポートのプロパティ**|[チャンク エンコードを有効にする]|クリア|  
-|**送信ポートのプロパティ: フィルター**|プロパティ|BTS.MessageType<br /><br /> 注:<br /><br /> BTS.ReceivePortName などの、さまざまなフィルタ式を使用できます。<br /><br /> 注:<br /><br /> 非 EDI メッセージの場合は、別のプロパティに対してフィルタ処理を行う必要があります。|  
-|**送信ポートのプロパティ: フィルター**|演算子|==|  
-|**送信ポートのプロパティ: フィルター**|値|- `http://schemas.microsoft.com/BizTalk/EDI/X12/2006#<schema name>` (の EDI メッセージの場合)<br /><br /> -                   `http://schemas.microsoft.com/Edi/X12#X12_<997 or TA1>_Root` (x12 受信確認)<br /><br /> -                   `http://schemas.microsoft.com/Edi/Efact#Efact_Contrl_Root` (EDIFACT 受信確認) を|  
-|**送信ポートのプロパティ: 証明書**|"一般名" および "拇印"|送信 AS2 メッセージで暗号化証明書を使用する場合は、証明書の名前および拇印を入力します。|  
+|**送信ポートのプロパティ:フィルター**|プロパティ|BTS.MessageType<br /><br /> 注:<br /><br /> BTS.ReceivePortName などの、さまざまなフィルタ式を使用できます。<br /><br /> 注:<br /><br /> 非 EDI メッセージの場合は、別のプロパティに対してフィルタ処理を行う必要があります。|  
+|**送信ポートのプロパティ:フィルター**|演算子|==|  
+|**送信ポートのプロパティ:フィルター**|値|- `http://schemas.microsoft.com/BizTalk/EDI/X12/2006#<schema name>` (の EDI メッセージの場合)<br /><br /> -                   `http://schemas.microsoft.com/Edi/X12#X12_<997 or TA1>_Root` (x12 受信確認)<br /><br /> -                   `http://schemas.microsoft.com/Edi/Efact#Efact_Contrl_Root` (EDIFACT 受信確認) を|  
+|**送信ポートのプロパティ:証明書**|"一般名" および "拇印"|送信 AS2 メッセージで暗号化証明書を使用する場合は、証明書の名前および拇印を入力します。|  
   
 ## <a name="prerequisites"></a>前提条件  
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者グループのメンバーとしてログオンしている必要があります。  
@@ -71,11 +71,11 @@ ms.locfileid: "36986603"
   
 -   非 EDI メッセージを送信する場合は、別のフィルタを使用してメッセージを取得します。  
   
--   AS2 メッセージを構築します。 このプロセスの詳細については、[送信 AS2 メッセージを生成する](../core/generating-an-outgoing-as2-message.md)を参照してください。  
+-   AS2 メッセージを構築します。 このプロセスの詳細については、次を参照してください。[送信 AS2 メッセージを生成する](../core/generating-an-outgoing-as2-message.md)します。  
   
 -   メッセージや受信確認を送信ポートの送信先 URL に送信します。  
   
--   メッセージや受信確認への MDN 応答を受信します (有効になっている場合)。 このプロセスの詳細については、[受信 MDN の処理](../core/processing-an-incoming-mdn.md)を参照してください。  
+-   メッセージや受信確認への MDN 応答を受信します (有効になっている場合)。 このプロセスの詳細については、次を参照してください。[受信 MDN の処理](../core/processing-an-incoming-mdn.md)します。  
   
 ## <a name="see-also"></a>参照  
  [AS2 ソリューションのポートを構成します。](../core/configuring-ports-for-an-as2-solution.md)   

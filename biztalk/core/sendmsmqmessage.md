@@ -15,19 +15,19 @@ caps.latest.revision: 26
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 27c6a0f6b9e35b68fccd38d62fe7e1ae86f4f6ad
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f3088405a46be194c899684ebef63c33b6592a37
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37024496"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399002"
 ---
 # <a name="sendmsmqmessage"></a>SendMSMQMessage
-SendMSMQMessage サンプルは、.NET ベースのアプリケーションから MSMQ ポートにメッセージを送信する方法を示します。 Microsoft を構成する方法についても用意されています。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] MSMQ 受信場所を使用します。  
+SendMSMQMessage サンプルから MSMQ ポートにメッセージを送信します。NET ベースのアプリケーションです。 Microsoft を構成する方法についても用意されています。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] MSMQ 受信場所を使用します。  
 
- メッセージ キューの多くの操作が非同期であることに注意が必要です。 多くは、MSMQ API 呼び出し (たとえば、 **System.Messaging.MessageQueue.Send**)、要求された操作が完全に完了する前に、呼び出し元に戻ります。 MSMQ には、操作完了後にアプリケーションにフィードバックを配信するメカニズムが用意されています。 このメカニズムでは、"管理キュー" を使用します。 MSMQ は管理キューにメッセージ形式でフィードバックを返します。 MSMQ がフィードバックを返す管理キューは、元の MSMQ API 呼び出しが行われたときに指定されます。 そのため、たとえばを使用してメッセージを送信するときに、 **System.Messaging.MessageQueue.Send** API、アプリケーションを指定できます管理キューの名前を使用して、 **PROPID_M_ADMIN_QUEUE**メッセージ プロパティ呼び出しで渡されるメッセージの**System.Messaging.MessageQueue.Send**します。 アプリケーションの成功を示すリターン コードが取得場合でも、 **System.Messaging.MessageQueue.Send**呼び出し、メッセージの送信操作後で失敗した場合、MSMQ メッセージを書き込みますそれに対応する指定の管理キューにします。 送信エラーによりメッセージが消失と診断がキャプチャされません、アプリケーションが管理キューを指定しない場合、実際には、メッセージは証拠も残らない表示されなくなります。 エラーの可能性がある、この例では、非トランザクションを行うための MSMQ の場合は、トランザクション キューに送信を数多くあります。  
+ メッセージ キューの多くの操作が非同期である注意する必要があります。 多くは、MSMQ API 呼び出し (たとえば、 **System.Messaging.MessageQueue.Send**)、要求された操作が完全に完了する前に、呼び出し元に戻ります。 MSMQ では、操作が完了した後、アプリケーションにフィードバックを配信するためのメカニズムを提供します。 このメカニズムでは、「管理キュー」の使用 MSMQ 管理キューにメッセージの形式でフィードバックを返します。 MSMQ がフィードバックを返す管理キューは、元の MSMQ API 呼び出しが行われたときに指定します。 そのため、たとえばを使用してメッセージを送信するときに、 **System.Messaging.MessageQueue.Send** API、アプリケーションを指定できます管理キューの名前を使用して、 **PROPID_M_ADMIN_QUEUE**メッセージ プロパティ呼び出しで渡されるメッセージの**System.Messaging.MessageQueue.Send**します。 アプリケーションの成功を示すリターン コードが取得場合でも、 **System.Messaging.MessageQueue.Send**呼び出し、メッセージの送信操作後で失敗した場合、MSMQ メッセージを書き込みますそれに対応する指定の管理キューにします。 送信エラーによりメッセージが消失と診断がキャプチャされません、アプリケーションが管理キューを指定しない場合、実際には、メッセージは証拠も残らない表示されなくなります。 エラーの可能性がある、この例では、非トランザクションを行うための MSMQ の場合は、トランザクション キューに送信を数多くあります。  
 
- このサンプルのコンテキストでは、コードが呼び出しでトランザクションの種類を指定することが重要**System.Messaging.MessageQueue.Send**メッセージをキューに指定されたトランザクションのサポートと一貫性があります。送信されます。 この処理が行われない場合や、(このサンプルのように) 管理キューが指定されていない場合、MSMQ は何の通知もなく送信メッセージを破棄します (つまり、アプリケーションにエラー コードが返されたり、イベント ログに診断が書き込まれたりすることはありません)。  
+ このサンプルのコンテキストでは、コードが呼び出しでトランザクションの種類を指定することが重要**System.Messaging.MessageQueue.Send**メッセージをキューに指定されたトランザクションのサポートと一貫性があります。送信されます。 これを行わないし、管理キューが指定されていない場合 (このサンプルの場合と同様)、し、MSMQ 送信はメッセージを破棄することが示されない場合 (つまり、エラー コードが返さ、アプリケーションでは、診断がイベント ログに書き込まれたりするには、など)。  
 
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
  \<パスのサンプル\>\AdaptersUsage\SendMSMQMessage\  
@@ -37,22 +37,22 @@ SendMSMQMessage サンプルは、.NET ベースのアプリケーションか�
 
 |                                 [ファイル]                                 |                                                                      説明                                                                       |
 |-----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| App.ico、AssemblyInfo.cs、SendMSMQMessage.csproj、SendMSMQMessage.sln |                           プロジェクト、ソリューション、およびこのサンプルの簡単なグラフィカル アプリケーションの他の関連ファイルを提供します。                           |
-|                         Form1.cs、Form1.resx                          | このサンプル用の簡単なグラフィカル アプリケーションの Microsoft [!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)].NET ソース ファイルおよびフォーム ファイルを提供します。 |
+| App.ico, AssemblyInfo.cs, SendMSMQMessage.csproj, SendMSMQMessage.sln |                           プロジェクト、ソリューション、およびこのサンプルの簡単なグラフィカル アプリケーションの他の関連ファイルを提供します。                           |
+|                         Form1.cs, Form1.resx                          | Microsoft 提供[!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)]このサンプルの簡単なグラフィカル アプリケーションの .NET ソースと形式のファイル。 |
 
 ## <a name="how-to-use-this-sample"></a>このサンプルの使用方法  
- このサンプルに含まれている簡単なグラフィカル アプリケーションのコードは、Microsoft Office などの .NET 対応のアプリケーションや ASP.NET ページなどから [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 内の MSMQ 受信場所へメッセージを送信する方法の例として使用できます。  
+ 内の場所を受信するメッセージを MSMQ に送信する方法の例として、このサンプルに含まれる簡単なグラフィカル アプリケーションでコードを使用することができます[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]から。NET 対応アプリケーション、Microsoft Office など、ASP.NET ページに、します。  
 
 ## <a name="building-and-initializing-the-sample"></a>サンプルのビルドおよび初期化  
 
-#### <a name="to-build-the-sample-executable"></a>実行可能サンプル ファイルをビルドするには  
+#### <a name="to-build-the-sample-executable"></a>サンプルの実行可能ファイルを作成するには  
 
-1. [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] を使用して、ソリューション ファイル SendMSMQMessage.sln を開きます。  
+1. 使用して[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]、ソリューション ファイル SendMSMQMessage.sln を開きます。  
 
 2. **[ビルド]** メニューの **[ソリューションのビルド]** をクリックします。  
 
-## <a name="configuring-biztalk-server-and-creating-the-msmq-queue"></a>BizTalk Server の構成と MSMQ キューの作成  
- 次の手順を使用して [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を構成し、サンプルを実行するための MSMQ キューを作成します。  
+## <a name="configuring-biztalk-server-and-creating-the-msmq-queue"></a>BizTalk Server の構成と MSMQ キューを作成します。  
+ 次の手順を使用して構成する[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]し、サンプルを実行するための MSMQ キューを作成します。  
 
 #### <a name="to-create-the-msmq-queue-in-windows-server-2008-r2-or-windows-server-2008-sp2"></a>Windows Server 2008 R2 または Windows Server 2008 SP2 で MSMQ キューを作成するには  
 
@@ -85,7 +85,7 @@ SendMSMQMessage サンプルは、.NET ベースのアプリケーションか�
 
 #### <a name="to-configure-biztalk-server"></a>BizTalk Server を構成するには  
 
-1. メッセージを受信するフォルダーを選択します。 次の手順は、C:\Demo\Report を選択したが、別のフォルダーに必要な手順を調整することを想定しています。  
+1. メッセージを受信するためのフォルダーを選択します。 次の手順は、C:\Demo\Report を選択したが、別のフォルダーに必要な手順を調整することを想定しています。  
 
 2. 開く、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソール。  
 
@@ -124,7 +124,7 @@ SendMSMQMessage サンプルは、.NET ベースのアプリケーションか�
     [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] このサンプルを使用する準備ができました。  
 
 ## <a name="running-the-sample"></a>サンプルを実行します。  
- 次の手順を使用して、SendMSMQMessage サンプルを実行します。  
+ SendMSMQMessage サンプルを実行するのにには、次の手順を使用します。  
 
 #### <a name="to-run-the-sample"></a>サンプルを実行するには  
 
@@ -132,7 +132,7 @@ SendMSMQMessage サンプルは、.NET ベースのアプリケーションか�
 
     \<パスのサンプル\>\AdaptersUsage\SendMSMQMessage\bin\Debug  
 
-2. SendMSMQMessage.exe ファイルを実行すると、このサンプルのユーザー インターフェイスを提供するグラフィカル アプリケーションが起動します。  
+2. このサンプルのユーザー インターフェイスを提供するグラフィカル アプリケーションが起動、SendMSMQMessage.exe ファイルを実行します。  
 
 3. グラフィカル アプリケーションでの**BizTalk コンピューター名**ボックスに、ローカル コンピューターの名前を入力します。  
 
@@ -148,7 +148,7 @@ SendMSMQMessage サンプルは、.NET ベースのアプリケーションか�
 
    - 送信先フォルダー C:\Demo\Reports にファイルが表示されます。 このファイルにはからテキストが含まれています、**メッセージ本文**ボックス .NET メッセージ キュー ライブラリによって単純な XML タグにラップします。  
 
-     操作に失敗すると、ボタンのすぐ上のボックスにエラー メッセージが表示されます。  
+     操作が失敗する場合は、ボタンのすぐ上のボックスで、エラー メッセージが表示されます。  
 
 5. お試しください、 **Send Exact**オプション。  
 
@@ -162,7 +162,7 @@ SendMSMQMessage サンプルは、.NET ベースのアプリケーションか�
 
    - 送信先フォルダー C:\Demo\Reports にファイルが表示されます。 このファイルにはからテキストが含まれています、**メッセージ本文**ボックス、テキスト ボックスに表示されているとおりです。  
 
-     操作に失敗すると、ボタンのすぐ上のボックスにエラー メッセージが表示されます。  
+     操作が失敗する場合は、ボタンのすぐ上のボックスで、エラー メッセージが表示されます。  
 
 ## <a name="see-also"></a>参照  
  [アダプタ サンプル – 使用法](../core/adapter-samples-usage.md)

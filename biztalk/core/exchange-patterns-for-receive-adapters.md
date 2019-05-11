@@ -12,20 +12,20 @@ caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cc93f587e8d04e93e96a8e326abfcc68c51daf69
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 856200bbd511f580f8ef58fd0be78ee1fb6718b2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37004820"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65388279"
 ---
 # <a name="exchange-patterns-for-receive-adapters"></a>受信アダプターの交換パターン
-受信アダプターは、外部からデータを受信し、これをメッセージとして [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] に送信します。 この送信プロセスには、一方向または双方向のメッセージ交換パターンが可能です。  
+受信アダプターで「ネットワーク」からデータを受信およびにメッセージとして送信[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]します。 この送信プロセスを一方向または双方向メッセージ交換パターンを使用できます。  
   
 ## <a name="one-way-submit"></a>一方向の送信  
- 受信アダプターから BizTalk メッセージング エンジンにメッセージを送信するには、まず受信アダプターで新しい BizTalk メッセージを作成する必要があります。 IBaseMessage のトピックのコード例では、この方法を示しています。 アダプターがメッセージ本文として設定するストリームは通常、順方向専用のストリームである必要があります。つまり、このストリームで以前メモリに読み込んだデータを、再度ストリームにキャッシュすることはできません。  
+ BizTalk メッセージング エンジンにメッセージを送信する受信アダプターの場合、新しい BizTalk メッセージの作成が必要最初です。 IBaseMessage のトピックのコード サンプルでは、これを行う方法を示します。 アダプターがメッセージの本文として設定するストリームは、メモリに読み取られていたデータをキャッシュする必要がありますので、順方向専用ストリーム通常はずです。  
   
- アダプターは、エンジンにメッセージを送信する前に書き込む必要があります、 **InboundTransportLocation**メッセージ コンテキスト プロパティを BizTalk メッセージに、system 名前空間。 次のコードはこの処理を示すものです。  
+ アダプターは、エンジンにメッセージを送信する前に書き込む必要があります、 **InboundTransportLocation**メッセージ コンテキスト プロパティを BizTalk メッセージに、system 名前空間。 これは、次のコード フラグメントに示します。  
   
  `Assembly References:`  
   
@@ -52,40 +52,40 @@ msg.Context.Write(
 }  
 ```  
   
- アダプターではさらに、独自のプロパティ スキーマを定義して、メッセージを受信したエンドポイントのメッセージ コンテキスト プロパティを書き込む場合もあります。 たとえば、HTTP アダプターではメッセージ コンテキストに HTTP ヘッダーを書き込む場合があり、SMTP レシーバーではメッセージ コンテキストにメールの件名を書き込む場合があります。 この情報は、パイプライン コンポーネント、オーケストレーション スケジュール、送信アダプターなどの下流コンポーネントで役立ちます。  
+ さらに、アダプターは、独自のプロパティ スキーマを定義し、メッセージを受信したことをエンドポイントに関連するメッセージ コンテキスト プロパティを書き込むことがあります。 たとえば、HTTP アダプターが HTTP ヘッダーをメッセージ コンテキストに書き込む可能性があり、SMTP レシーバーは、メッセージ コンテキストにメールの件名を書き込む可能性があります。 この情報は、パイプライン コンポーネントやオーケストレーション スケジュール、送信アダプターなどの下流コンポーネントに役立つ可能性があります。  
   
- メッセージを作成したら、メッセージング エンジンに送信できます。 表示する方法を一方向の受信アダプター可能性があります、エンジンにメッセージを送信をコード サンプルを参照して[SubmitDirect (BizTalk Server サンプル)](../core/submitdirect-biztalk-server-sample.md)します。  
+ メッセージを準備すると後、は、メッセージング エンジンに送信できます。 表示する方法を一方向の受信アダプター可能性があります、エンジンにメッセージを送信をコード サンプルを参照して[SubmitDirect (BizTalk Server サンプル)](../core/submitdirect-biztalk-server-sample.md)します。  
   
 ## <a name="request-response"></a>要求-応答  
- 通常、双方向の受信アダプターは、一方向または双方向の受信ポートで使用します。 このアダプターは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の構成プロパティ バッグを調べて、サービスを提供する受信場所が一方向と双方向のどちらのポートであるかを判断します。 このプロセスについては、 **IBTTransportConfig.AddReceiveEndpoint メソッド (COM)** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]します。  
+ 双方向受信アダプターが一方向または双方向で使用される通常の受信ポート。 アダプターでは、サービスを提供して、受信場所が一方向または双方向のポートを調べることによってがかどうかを決定、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]構成プロパティ バッグを指定します。 このプロセスについては、 **IBTTransportConfig.AddReceiveEndpoint メソッド (COM)** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]します。  
   
- 下の図に、オブジェクト間の対話処理における要求 - 応答のメッセージ交換の実行手順を示します。 アダプターがトランスポート プロキシから新しいバッチを要求し、自身の参照を渡す、 **IBTTransmitter**インターフェイスを通じて、 **SubmitRequestMessage**メソッド。 メッセージング エンジンでは、このインターフェイスの応答メッセージを配信を使用して、 **TransmitMessage**メソッド。  
+ 次のオブジェクト相互作用の図は、要求-応答のメッセージ交換を実行するプロセスを示しています。 アダプターがトランスポート プロキシから新しいバッチを要求し、自身の参照を渡す、 **IBTTransmitter**インターフェイスを通じて、 **SubmitRequestMessage**メソッド。 メッセージング エンジンでは、このインターフェイスの応答メッセージを配信を使用して、 **TransmitMessage**メソッド。  
   
- メッセージング エンジンはメッセージを非同期的に処理します。したがって、次の問題が発生する可能性があります。  
+ エンジンはメッセージを非同期的に処理があるために、発生する次のことができます。  
   
 - **BatchComplete**する前に発生する可能性がコールバック**完了**が返されます。  
   
-- TransmitMessage の呼び出しが、BatchComplete や、場合によっては Done より前に行われる。  
+- TransmitMessage の呼び出しは BatchComplete 前に行われ、実行前であってもに、可能性があります。  
   
-  どちらも発生の可能性は低いものですが、アダプターではこのような問題への対策を用意しておく必要があります。  
+  これら両方のシナリオはまれですが、アダプターが自身を保護これです。  
   
-  応答メッセージは、非同期の非ブロッキング呼び出しを使用して送信することをお勧めします。  
+  非同期の非ブロッキング呼び出しを使用して、応答メッセージを送信することをお勧めします。  
   
   BaseAdapter プロジェクトには、ユーティリティ クラスが含まれる**StandardRequestResponseHandler**、このトピックで説明されている要求/応答セマンティクスをカプセル化します。  
   
-## <a name="request-response-message-time-outs"></a>要求 - 応答メッセージのタイムアウト  
- 要求メッセージのタイムアウトを指定する必要がアダプターでは、要求-応答メッセージを送信するときにある、 **IBTTransportBatch.SubmitRequestMessage メソッド (COM)** API[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]します。 指定したタイムアウトまでの間は応答メッセージが配信され、 タイムアウトに達すると、応答メッセージの代わりに否定受信確認応答 (NACK) がアダプターに配信されます。 アダプターでタイムアウト値を指定していない場合、エンジンでは既定値の 20 分が使用されます。  
+## <a name="request-response-message-time-outs"></a>要求-応答メッセージのタイムアウト  
+ 要求メッセージのタイムアウトを指定する必要がアダプターでは、要求-応答メッセージを送信するときにある、 **IBTTransportBatch.SubmitRequestMessage メソッド (COM)** API[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]します。 応答メッセージは、このタイムアウト期間内でのみ、アダプターに送信されます。 タイムアウトに達すると、否定受信確認応答 (NACK) が応答メッセージではなく、アダプターに配信されます。 アダプターがタイムアウト値を指定しない場合、エンジンは 20 分の既定値を使用します。  
   
- 要求 - 応答メッセージのタイムアウトの既定値は、レジストリ キーを使用して設定できます。インプロセス受信アダプター用のレジストリ キーは次の場所にあります。  
+ インプロセス受信アダプター用に次のレジストリ キーを使用して、要求-応答メッセージの既定のタイムアウトを制御できます。  
   
  **DWORD**  
   
- **Hkey_local_machine \system\currentcontrolset\services\btssvc {guid} ホスト \MessagingReqRespTTL**  
+ **HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BTSSvc{Host Guid}\MessagingReqRespTTL**  
   
- 分離受信アダプター用のレジストリ キーは次の場所にあります。  
+ レジストリ キーを別の場所では、分離受信アダプター。  
   
  **DWORD**  
   
  **HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BTSSvc.3.0\MessagingReqRespTTL**  
   
- NACK (否定受信確認応答) は SOAP エラーとなります。これは 2 つの方法で処理できます。 通常は、アダプターからクライアントに NACK を返し、クライアントで NACK を処理します。 または、応答メッセージを処理する送信パイプラインで、マップまたはカスタム パイプライン コンポーネントを使用して、応答メッセージのコンテンツを変更するよう構成することもできます。
+ Nack (否定受信確認応答) は SOAP エラーと、それらを処理する 2 つの方法はあります。 通常、アダプターがクライアントに NACK を返すし、クライアントで NACK を処理します。 または、マップまたはカスタム パイプライン コンポーネントを使用して、応答メッセージの内容を変更する応答メッセージを処理する送信パイプラインを構成することがあります。

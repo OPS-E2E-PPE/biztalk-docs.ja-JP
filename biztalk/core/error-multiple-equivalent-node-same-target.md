@@ -1,5 +1,5 @@
 ---
-title: エラー - 複数のノードと等しい同じターゲット |Microsoft ドキュメント
+title: エラー - 複数の等価のノードと同じターゲット |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,22 +14,22 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 12df4f7a68bb1eceaa3211c6aad6e9a581f17a4a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7c4cf66fe587f483385c4729e4c34b0179c1710e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22239802"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65388647"
 ---
-# <a name="error---multiple-equivalent-node-same-target"></a>エラー - 複数のノードと等しい同じターゲット
+# <a name="error---multiple-equivalent-node-same-target"></a>エラー - 複数の等価のノードと同じターゲット
 **エラー コード**  
   
  btm1025  
   
  **説明**  
   
- 競合する子ノードである送信元スキーマのノードの**等価**送信先スキーマのノードにリンクされている両方は、グループ ノード。 任意の 1 つのインスタンス メッセージ内で使用できるのは、送信元スキーマ内のこれらのノードのうち、1 つだけです。  
+ 競合する子ノードには、ソース スキーマで指定されたノードの**同等**グループ ノードでは、どちらも、送信先スキーマのノードにリンクされています。 送信元スキーマ内のこれらのノードの 1 つだけに特定のインスタンス メッセージで発生します。  
   
  **ユーザーの操作**  
   
- ノードが 1 つだけの子を確認してください、**等価**グループ ノードが送信先スキーマの特定のノードに接続されています。
+ 子の 1 つだけのノードをことを確認、**同等**グループ ノードが送信先スキーマの特定のノードに接続します。

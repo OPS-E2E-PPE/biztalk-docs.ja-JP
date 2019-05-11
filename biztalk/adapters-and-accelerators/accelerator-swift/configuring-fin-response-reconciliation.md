@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 77f2260c8e6096e2bef926fea45aaf778f4bdfa3
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6fa404335d4136c2c51f990d8c81b753bfcc020c
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36997907"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65527524"
 ---
 # <a name="configuring-fin-response-reconciliation"></a>FIN Response Reconciliation の構成
 Microsoft を構成するのには、次のセクションで手順を実行する必要があります[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]FIN 応答の調整 (FRR) 機能を次の図に示すようにします。  

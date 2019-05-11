@@ -12,17 +12,17 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b3752348a5cc9273ad203b78b77b58bde33bd141
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e8013921cbff0e1723aa6c41d48fae57ad3e1fb9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36981715"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65400826"
 ---
 # <a name="creating-a-custom-resolver"></a>カスタム競合回避モジュールを作成します。
 リゾルバーとアダプターのプロバイダー フレームワーク実装[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]ディスパッチャーをという名前のパイプライン コンポーネントと ItineraryReceive および ItinerarySend という名前のパイプラインを使用します。  
   
- ディスパッチャー パイプライン コンポーネントには 4 つのプロパティ:**検証、Enabled、エンドポイント、** と**MapName**します。 **エンドポイント**プロパティは、次のように値を持つ接続文字列の競合回避モジュールを含めることができます、 **UDDI:\\ \\**  (ルートを使用する解像度の種類を表しますモニカー)。  
+ ディスパッチャーのパイプライン コンポーネントでは、次の 4 つのプロパティがあります。**検証、有効な場合は、エンドポイント、** と**MapName**します。 **エンドポイント**プロパティは、次のように値を持つ接続文字列の競合回避モジュールを含めることができます、 **UDDI:\\ \\**  (ルートを使用する解像度の種類を表しますモニカー)。  
   
 ```  
 UDDI:\\serverUrl=http://localhost/uddi;serviceName=OrderPurchaseToOrderPost;serviceProvider=Microsoft.Practices.ESB  
@@ -60,9 +60,9 @@ UDDI:\\serverUrl=http://localhost/uddi;serviceName=OrderPurchaseToOrderPost;serv
 </configuration>  
 ```  
   
- **ResolverConfig**競合回避モジュールの各ノードの下のセクションでは、特定の環境で動作する、競合回避モジュールが必要な追加のプロパティを構成することができます。 リゾルバー構成へのアクセスには、型のパラメーターを受け取るコンストラクターを公開する必要があります**Microsoft.Practices.ESB.Configuration.Resolver**します。 競合回避モジュールの実装で構成しプロパティを使用して、 **ReadResolverConfigByKey**のメソッド、 **ResolverConfigHelper**クラスは、これを行うには、パラメーターに渡す最初に、コンストラクターに渡され、問題の名前、値渡すします。 名前と値のペアが指定されていない場合、 **resolverConfig**ノードで、既定のパラメーターなしコンストラクターは、競合回避モジュールをインスタンス化に使用されます。  
+ **ResolverConfig**競合回避モジュールの各ノードの下のセクションでは、特定の環境で動作する、競合回避モジュールが必要な追加のプロパティを構成することができます。 リゾルバー構成へのアクセスには、型のパラメーターを受け取るコンス トラクターを公開する必要があります**Microsoft.Practices.ESB.Configuration.Resolver**します。 競合回避モジュールの実装で構成しプロパティを使用して、 **ReadResolverConfigByKey**のメソッド、 **ResolverConfigHelper**クラスは、これを行うには、パラメーターに渡す最初に、コンス トラクターに渡され、問題の名前、値渡すします。 名前と値のペアが指定されていない場合、 **resolverConfig**ノードで、既定のパラメーターなしコンス トラクターは、競合回避モジュールをインスタンス化に使用されます。  
   
- 2 つ Universal Description, Discovery, and Integration (UDDI) 3 競合回避モジュールは、構成で定義されている: 3 の UDDI および UDDI 3-SOASOFTWARE します。 同じ基になるアセンブリを使用して、これらの競合回避モジュールの両方が、別の UDDI 3.0 に準拠したレジストリの別の Uniform Resource Identifier (URI) 形式とセキュリティ要件をサポートするためのさまざまな構成を提供します。 既にサポートされているもの以外の UDDI 3.0 に準拠したレジストリの追加のモニカーを構成する必要がある場合は、次の構成プロパティを使用できます。  
+ 2 つ Universal Description, Discovery, and Integration (UDDI) 3 競合回避モジュールは、構成で定義されています。3 の UDDI および UDDI 3-SOASOFTWARE します。 同じ基になるアセンブリを使用して、これらの競合回避モジュールの両方が、別の UDDI 3.0 に準拠したレジストリの別の Uniform Resource Identifier (URI) 形式とセキュリティ要件をサポートするためのさまざまな構成を提供します。 既にサポートされているもの以外の UDDI 3.0 に準拠したレジストリの追加のモニカーを構成する必要がある場合は、次の構成プロパティを使用できます。  
   
 - **cacheTimeoutValue**  
   
@@ -86,7 +86,7 @@ UDDI:\\serverUrl=http://localhost/uddi;serviceName=OrderPurchaseToOrderPost;serv
   
 - **password**  
   
-  Unity Application Block の依存関係の注入機能に依存している競合回避モジュールを作成する場合は、追加の構成が必要です。 詳細については、[Unity コンテナーでのカスタム競合回避モジュールを作成する](../esb-toolkit/creating-a-custom-resolver-with-a-unity-container.md)を参照してください。  
+  Unity Application Block の依存関係の注入機能に依存している競合回避モジュールを作成する場合は、追加の構成が必要です。 詳細については、次を参照してください。 [Unity コンテナーでのカスタム競合回避モジュールを作成する](../esb-toolkit/creating-a-custom-resolver-with-a-unity-container.md)します。  
   
 ## <a name="the-iresolveprovider-interface"></a>IResolveProvider インターフェイス  
  すべての競合回避モジュールを実装する必要があります、 **IResolveProvider**インターフェイス。 **IResolveProvider** Microsoft.Practices.ESB.Resolver のプロジェクトにあるインターフェイスの 3 つのオーバー ロードから成る、**解決**のインスタンスを返すメソッド、 **ディクショナリ**解像度のファクト具体的な競合回避モジュールのクラスのインスタンスによって提供されるを保持しているクラス。 次のコード例では、これらのメソッド オーバー ロードのシグネチャを示します。  

@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10589 |Microsoft Docs'
+title: シングル サインオン:イベント 10589 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b1f8dd6c8a6045f9e4e1678aa06faec8bb783c1a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 160635fe7446a2fbac21edad332b4c87cd86e1b0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36986187"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65400167"
 ---
-# <a name="single-sign-on-event-10589"></a>シングル サインオン: イベント 10589
+# <a name="single-sign-on-event-10589"></a>シングル サインオン:イベント 10589
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                                                                                                                                                                                                   |
@@ -36,4 +36,4 @@ ms.locfileid: "36986187"
  マスター シークレットがバックアップされていません。 マスター シークレットが失われると、SSO システムに保存されたすべての情報が完全に失われます。また、システムが正しく動作しなくなることがあります。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- マスター シークレットのバックアップについては、[マスター シークレットの管理](../core/managing-the-master-secret.md)を参照してください。
+ マスター シークレットのバックアップについては、次を参照してください。[マスター シークレットの管理](../core/managing-the-master-secret.md)します。

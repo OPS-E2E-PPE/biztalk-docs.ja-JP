@@ -1,5 +1,5 @@
 ---
-title: アクティビティを使用して |Microsoft ドキュメント
+title: アクティビティを使用して |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,26 +12,26 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 13b56424e06bdb8fad043acd92c22a88ca19f478
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a2da2176ba4573762853f44447284c6aeb73f57e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22287186"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399906"
 ---
-# <a name="using-an-activity"></a>アクティビティの使用
-BAM の最も簡単な使用方法は、BAM API を使用して明示的なマイルストーンまたはデータを送信することです。 BAM アクティビティは、実際の作業単位との同期を維持している、SQL テーブルのレコードと考えることができます。  
+# <a name="using-an-activity"></a>アクティビティを使用
+BAM を使用する最も簡単な方法は、明示的なマイルス トーンまたは BAM API を使用してデータを送信します。 BAM アクティビティが作業の実際のユニットとの同期に維持している SQL テーブル内のレコードとして考えることができます。  
   
 -   呼び出す`BeginActivity`新しい各作業単位です。  
   
 -   呼び出す`EndActivity`ときに、作業が完了し、作業単位のコンテキストでイベントがなくなったらを期待します。  
   
--   呼び出す[Microsoft.BizTalk.Bam.EventObservation.EventStream.UpdateActivity](http://msdn.microsoft.com/library/microsoft.biztalk.bam.eventobservation.eventstream.updateactivity.aspx)データとマイルス トーン、インフォメーション ワーカーにとって役に立つを送信する実装の重要な箇所でします。  
+-   呼び出す[Microsoft.BizTalk.Bam.EventObservation.EventStream.UpdateActivity](http://msdn.microsoft.com/library/microsoft.biztalk.bam.eventobservation.eventstream.updateactivity.aspx)データとインフォメーション ワーカーに役に立つマイルス トーンを送信する、実装の重要な箇所でします。  
   
 > [!IMPORTANT]
->  イベント ストリームは破棄される前にフラッシュされる必要があります。 EventStream オブジェクトは、ストリームを破棄するときにデータの自動フラッシュを実行しません。 つまり、通常記述されるコード (操作の処理が完了した後にのみストリームをフラッシュするコード) では、フラッシュの呼び出し前に例外が発生した場合にデータを損失することになります。  
+>  イベント Stream は、破棄される前にフラッシュする必要があります。 EventStream オブジェクトには、破棄されたときに、データの自動フラッシュを実行しません。 これは、通常記述フラッシュ操作の処理が完了した後にのみストリーム損失につながる可能性のデータをフラッシュの呼び出しの前に、例外が発生した場合、そのコードを意味します。  
 >   
->  データの損失を防ぐには、以下の擬似コードのように、処理をカプセル化して try/finally ブロックでフラッシュすることをお勧めします。  
+>  データの損失を回避するためには、処理をカプセル化し、以下の擬似コードに示すように、try/finally ブロックでフラッシュすることお勧めします。  
   
 ```  
 BufferedEventStream es = new BufferedEventStream(…)  
@@ -45,7 +45,7 @@ Finally
 }  
 ```  
   
- 次のコード例は、作業単位が注文書の場合の BeginActivity、UpdateActivity、および EndActivity の使用方法を示しています。 例と仮定する文字列変数**poid**プロセスの現在の注文を識別します。  
+ 次のコード例では、作業単位が注文書 BeginActivity、UpdateActivity、および EndActivity の使用方法を示します。 この例で行っている文字列変数**poid**プロセスの現在の注文書を識別します。  
   
 ```  
 using Microsoft.BizTalk.BAM.EventObservation;  
@@ -78,7 +78,7 @@ es.EndActivity("PurchaseOrder",poid);
 ```  
   
 ## <a name="see-also"></a>参照  
- [BAM アクティビティのイベント ストリームの実装](../core/implementing-bam-activities-with-event-streams.md)   
+ [イベント ストリームを使用した BAM アクティビティを実装します。](../core/implementing-bam-activities-with-event-streams.md)   
  [アクティビティ Continuation](../core/activity-continuation.md)   
  [BAM 動的インフラストラクチャ](../core/bam-dynamic-infrastructure.md)   
  [BAM API (BizTalk Server サンプル)](../core/bam-api-biztalk-server-sample.md)

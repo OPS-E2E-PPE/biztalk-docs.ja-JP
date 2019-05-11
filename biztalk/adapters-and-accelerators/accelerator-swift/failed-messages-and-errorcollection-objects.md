@@ -15,12 +15,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e4f9fd17807d9bc1b92b1eae1ac75662843c8e17
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1c925cecaec71eb0be8f9dd3d997b33090f286f8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36993163"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377856"
 ---
 # <a name="failed-messages-and-errorcollection-objects"></a>失敗したメッセージと ErrorCollection オブジェクト
 Microsoft の昇格させたプロパティを持つ失敗したメッセージを修飾することだけでなく[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]追加のメッセージをメッセージ ボックス データベースに、失敗したメッセージを発行*一部*という**ErrorSegment**. このエラーの部分を含む XML を表す、 **ErrorCollection**オブジェクト。 A4SWIFT の逆アセンブラーが表示されます、 **ErrorCollection**メッセージ処理 (解析、XML の検証とビジネス ルール エンジン (BRE) の検証) の各段階中のオブジェクト。  

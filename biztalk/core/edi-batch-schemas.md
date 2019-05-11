@@ -12,26 +12,26 @@ caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a25391fbc42b8e368a44f652ae691ff8bc2722dc
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 90c03f9a6136a925419166fa4db8b919b9ec8eb3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36999227"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65389244"
 ---
 # <a name="edi-batch-schemas"></a>EDI のバッチ スキーマ
 保存されたインターチェンジが BizTalk Server で処理される際には、以下の 3 つ以上のスキーマが使用されます。  
 
 - 保存されたバッチ インターチェンジ (BaseArtifacts.dll に配置された X12_BatchSchema または Edifact_BatchSchema) のルート ノードを検証するためのバッチ スキーマ (インターチェンジ XML スキーマ)。  
 
-- インターチェンジ、グループ、およびトランザクション セットのヘッダーとトレーラー (BaseArtifacts.dll に配置された X12ServiceSchema または EdifactServiceSchema) を検証するためのエンベロープ サービス スキーマ。 詳細については、[EDI サービスと管理スキーマ](../core/edi-service-and-control-schemas.md)を参照してください。  
+- インターチェンジ、グループ、およびトランザクション セットのヘッダーとトレーラー (BaseArtifacts.dll に配置された X12ServiceSchema または EdifactServiceSchema) を検証するためのエンベロープ サービス スキーマ。 詳細については、次を参照してください。 [EDI サービスと管理スキーマ](../core/edi-service-and-control-schemas.md)します。  
 
-- (プロジェクト内に配置された) バッチ インターチェンジ内にある各ドキュメントの種類のドキュメント スキーマ。 詳細については、[EDI ドキュメント スキーマ](../core/edi-document-schemas.md)を参照してください。  
+- (プロジェクト内に配置された) バッチ インターチェンジ内にある各ドキュメントの種類のドキュメント スキーマ。 詳細については、次を参照してください。 [EDI ドキュメント スキーマ](../core/edi-document-schemas.md)します。  
 
   バッチ スキーマは、保存中の受信および送信の各バッチ インターチェンジを検証するために、実行時に使用されます。 また、バッチ スキーマは、メッセージ インスタンスを検証および生成するために、デザイン時にも使用されます。  
 
 ## <a name="batch-schemas-used-at-runtime"></a>実行時に使用されるバッチ スキーマ  
- バッチ スキーマの 2 つの標準的なバージョンが存在: 使用される X12_BatchSchema.xsd X12 エンコードと EDIFACT エンコードに使用される EDIFACT_BatchSchema.xsd です。 これらのスキーマは、制御セグメントを含むテンプレートです。 これらのスキーマは、次のルート名および名前空間を保持します。  
+ バッチ スキーマの 2 つの標準的なバージョンが存在します。使用される X12_BatchSchema.xsd X12 エンコードと EDIFACT エンコードに使用される EDIFACT_BatchSchema.xsd です。 これらのスキーマは、制御セグメントを含むテンプレートです。 これらのスキーマは、次のルート名および名前空間を保持します。  
 
 
 |       スキーマ        |       ルート ノード       |                    Namespace                     |

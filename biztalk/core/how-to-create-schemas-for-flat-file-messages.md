@@ -12,17 +12,17 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e4459012155ca95166b6345ddad4390e78fce60c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: bd17aca790648b39d3219bb9816115645abe0855
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36984467"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65385436"
 ---
 # <a name="create-schemas-for-flat-file-messages"></a>フラット ファイル メッセージ用スキーマを作成します。
 
 ## <a name="overview"></a>概要
-」の説明に従って XML メッセージ スキーマの作成後に[XML メッセージ用スキーマの作成](../core/how-to-create-schemas-for-xml-messages.md)を使用して、**スキーマ エディター拡張機能**のプロパティ、**スキーマ**ノードを有効にする、フラット ファイル拡張機能。 フラット ファイル拡張機能を有効にすると、スキーマ内の各種ノードに、多数のプロパティが追加されます。 一般に、これらのプロパティは、フラット ファイル形式のビジネス ドキュメントと、XML 形式のビジネス ドキュメント間の変換方法を制御する目的で使用され、対応するプロパティ値は XSD (XML Schema Definition) 言語の注釈としてスキーマ ファイル内に格納されます。 これらのプロパティを適切に使用するためには、多少の学習が必要になります。各プロパティがフラット ファイル形式のどのような側面を定義しているのかを、十分に理解する必要があります。 
+」の説明に従って XML メッセージ スキーマの作成後に[XML メッセージ用スキーマの作成](../core/how-to-create-schemas-for-xml-messages.md)を使用して、**スキーマ エディター拡張機能**のプロパティ、**スキーマ**ノードを有効にする、フラット ファイル拡張機能。 フラット ファイル拡張機能を有効にすると、プロパティのかなりの数が、スキーマ内のノード型の多くを追加します。 その同等の XML ビジネス ドキュメントの間にフラット ファイル ビジネス ドキュメントを変換する方法を制御するこれらのプロパティが使用される通常とその値は、スキーマ ファイル内の XML スキーマ定義言語 (XSD) の注釈として格納されます。 これらのプロパティを正しく使用すると、いくつかのプラクティスとをさまざまなフラット ファイル形式各多少理解が必要です。 
 
 概念と、フラット ファイル プロパティに関する参照情報を参照してください[に関する考慮事項とフラット ファイル メッセージ スキーマの作成](../core/considerations-when-creating-flat-file-message-schemas.md)と**フラット ファイル スキーマの補足のノード プロパティ** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)].  
 

@@ -1,5 +1,5 @@
 ---
-title: メジャーとディメンションについて | Microsoft Docs
+title: メジャーとディメンションとは | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: eb494246741699dfdbdab704c8fca0a3c9d55301
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c07f7ac1f3a0105549c01209e008bd880e0444c0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36994347"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65302306"
 ---
-# <a name="what-are-measures-and-dimensions"></a>メジャーとディメンションについて
+# <a name="what-are-measures-and-dimensions"></a>メジャーとディメンションとは
 ディメンションとメジャーはデータ集計の物理的な要素です。 ここでは、BAM シナリオを例に、メジャーとディメンションについて説明します。  
   
 ## <a name="measures"></a>メジャー  

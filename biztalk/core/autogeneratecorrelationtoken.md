@@ -1,5 +1,5 @@
 ---
-title: AutoGenerateCorrelationToken |Microsoft ドキュメント
+title: AutoGenerateCorrelationToken |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2e396fd0b2c6153a5252d336b9af9c22bf9421fd
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: cf2b3fd5ea662af08cf5613570ba65c4fd1017f6
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22230258"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65528900"
 ---
 # <a name="autogeneratecorrelationtoken"></a>AutoGenerateCorrelationToken
 自動的に関連付けトークンを生成して、スタック上に配置します。  
@@ -35,7 +35,7 @@ ms.locfileid: "22230258"
 ## <a name="pushed-value"></a>プッシュされた値  
  関連付けトークンが含まれた文字列です。  
   
-## <a name="remarks"></a>解説  
+## <a name="remarks"></a>コメント  
  この操作は、メッセージ内に関連付けトークンがないが、要求と応答からの情報を関連付ける必要がある場合に役立ちます。 この操作を行うと、クライアント側またはサービス側で特定の要求/応答を関連付けることができます。  
   
 > [!NOTE]

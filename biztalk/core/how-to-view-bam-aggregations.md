@@ -15,12 +15,12 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8c30ef9b9cb5604936f5cd71bcecdc7068c54744
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e25825fbcb755179ce833a3c542e9554b99ac923
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37006443"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65383165"
 ---
 # <a name="how-to-view-bam-aggregations"></a>BAM 集計を表示する方法
 BAM 集計は、ビジネス アナリストが Excel で Excel アドインを使用して定義します。  
@@ -42,7 +42,7 @@ BAM 集計は、ビジネス アナリストが Excel で Excel アドインを�
 > [!NOTE]
 >  ビューが表示されない場合は、ビューが作成されていないか、ユーザーにアクセス許可が与えられていないかのどちらかです。ビューの作成は通常、ビジネス アナリストが実行するタスクで、権限の許可は通常、管理者が実行するタスクです。  
   
- 詳細については、ライブ データ ブックで何ができる、[ライブ BAM データの表示](../core/viewing-live-bam-data.md)を参照してください。  
+ 詳細については、ライブ データ ブックで何ができる、次を参照してください。[ライブ BAM データの表示](../core/viewing-live-bam-data.md)します。  
   
  事前に計算された BAM 集計を次に示します。  
   

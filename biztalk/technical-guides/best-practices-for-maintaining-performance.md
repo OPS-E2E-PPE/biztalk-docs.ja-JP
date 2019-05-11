@@ -1,5 +1,5 @@
 ---
-title: パフォーマンスを維持するためのベスト プラクティス |Microsoft ドキュメント
+title: パフォーマンスを維持するためのベスト プラクティス |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,20 +12,20 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 84d94b65c80ae258d4100c0cf7ad1fb1f3b5dc89
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 95d37b6d3e620f63786189a0aec76956bcf3baf1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22299602"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399357"
 ---
 # <a name="best-practices-for-maintaining-performance"></a>パフォーマンスを維持するためのベスト プラクティス
-このトピックに関するパフォーマンスの問題を解決するときに従う必要のあるベスト プラクティスを示す、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]システムです。  
+このトピックの「パフォーマンスの問題を解決するときに従う必要のあるベスト プラクティスを示す、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]システム。  
   
 |||  
 |-|-|  
-|パフォーマンス チェック毎週の|[チェックリスト: 毎週のパフォーマンス チェックの実行](../technical-guides/checklist-performing-weekly-performance-checks.md)|  
-|パフォーマンス チェック毎月の|[チェックリスト: を実行する毎月パフォーマンス チェック](../technical-guides/checklist-performing-monthly-performance-checks.md)|  
+|毎週のパフォーマンス チェックの|[チェックリスト:毎週のパフォーマンス チェックの実行](../technical-guides/checklist-performing-weekly-performance-checks.md)|  
+|毎月のパフォーマンス チェックの|[チェックリスト:毎月のパフォーマンス チェックの実行](../technical-guides/checklist-performing-monthly-performance-checks.md)|  
   
 ## <a name="see-also"></a>参照  
- [パフォーマンスを維持します。](../technical-guides/maintaining-performance.md)
+ [パフォーマンスの維持](../technical-guides/maintaining-performance.md)

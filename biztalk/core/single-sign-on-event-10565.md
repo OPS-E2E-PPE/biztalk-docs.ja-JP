@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10565 |Microsoft Docs'
+title: シングル サインオン:イベント 10565 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d31b639853b845169c3360ec6367aee120a266d1
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: dea7d2284d12bacd1fa4bb08bc5870594891e4e7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37008003"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65398791"
 ---
-# <a name="single-sign-on-event-10565"></a>シングル サインオン: イベント 10565
+# <a name="single-sign-on-event-10565"></a>シングル サインオン:イベント 10565
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                                                                                                                                               |
@@ -36,4 +36,4 @@ ms.locfileid: "37008003"
  システムの管理者が、SSO サービス アカウントを変更し、暗号化を解除できないようにしている可能性があります。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- SSO サービス アカウントを変更した管理者を見つけて、バックアップ ファイルからシークレットを復元します。 シークレットを復元する方法の詳細については、[マスター シークレットの管理](../core/managing-the-master-secret.md)を参照してください。
+ SSO サービス アカウントを変更した管理者を見つけて、バックアップ ファイルからシークレットを復元します。 シークレットを復元する方法の詳細については、次を参照してください。[マスター シークレットの管理](../core/managing-the-master-secret.md)します。

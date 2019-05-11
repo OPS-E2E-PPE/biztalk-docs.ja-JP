@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10849 |Microsoft Docs'
+title: シングル サインオン:イベント 10849 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1cb1d63cf12c19a8e2213c7506f1752f86a02a85
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3d42ef5752b1b3bf37445d57771d00482008a7c1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36991851"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65306674"
 ---
-# <a name="single-sign-on-event-10849"></a>シングル サインオン: イベント 10849
+# <a name="single-sign-on-event-10849"></a>シングル サインオン:イベント 10849
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                  |
@@ -30,10 +30,10 @@ ms.locfileid: "36991851"
 |  イベント ソース   |                                      ENTSSO                                      |
 |    コンポーネント    |                                       なし                                        |
 |  シンボル名  |                     ENTSSO_E_DIRECT_SYNC_NOT_ALLOWED_CREATE                      |
-|  メッセージ テキスト   | ‘直接パスワード同期’ フラグを指定してアプリケーションを作成することはできません。 |
+|  メッセージ テキスト   | 'Direct password sync' フラグを指定には、アプリケーションを作成することはできません。 |
   
 ## <a name="explanation"></a>説明  
- ‘直接パスワード同期’ フラグを指定してアプリケーションを作成することはできません。  
+ 'Direct password sync' フラグを指定には、アプリケーションを作成することはできません。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- 直接パスワード同期フラグを設定しないでアプリケーションを作成します。 その後、フィールドを追加および作成し、アプリケーションを有効にして、直接パスワード同期フラグを指定します。
+ 直接パスワード同期フラグを設定しないアプリケーションを作成します。 追加しフィールドを作成、アプリケーションを有効にし、直接パスワード同期フラグを指定します。

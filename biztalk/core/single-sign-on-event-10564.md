@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10564 |Microsoft Docs'
+title: シングル サインオン:イベント 10564 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8be4ea87757a1fa0cb5d8ebd2e344ce521dbf740
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9ddea5def52677643930d215bd17a82359b55d90
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36997147"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65398799"
 ---
-# <a name="single-sign-on-event-10564"></a>シングル サインオン: イベント 10564
+# <a name="single-sign-on-event-10564"></a>シングル サインオン:イベント 10564
 ## <a name="details"></a>詳細  
   
 |                 |                                                            |
@@ -30,10 +30,10 @@ ms.locfileid: "36997147"
 |  イベント ソース   |                           ENTSSO                           |
 |    コンポーネント    |                            なし                             |
 |  シンボル名  |           SSO_ERROR_BACKUP_FILE_INCORRECT_FORMAT           |
-|  メッセージ テキスト   |     バックアップ ファイルの形式が正しくありません。      |
+|  メッセージ テキスト   |     バックアップ ファイルには、正しい形式はありません。      |
   
 ## <a name="explanation"></a>説明  
- バックアップ ファイルの形式が正しくありません。  
+ バックアップ ファイルには、正しい形式はありません。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- ファイルと場所が正しいことを確認します。 また、そのフォルダーに .BAK という拡張子のファイルが他にないことも確認する必要があります。ENTSSO システムが実際のバックアップ ファイルと混同する可能性があります。
+ 正しいファイル名と場所があることを確認します。 そのフォルダー内の他のファイルがないことを確認する必要がありますもします。BAK の拡張機能は、ENTSSO システムとして可能性がありますと混同する実際のバックアップ ファイル。

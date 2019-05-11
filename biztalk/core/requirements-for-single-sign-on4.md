@@ -12,12 +12,12 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8baf665a7f997293130a2c1eb93f893167f39a4f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9a07e4ecf344b06c9d1f98297acb3b3a851283e7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36967883"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399121"
 ---
 # <a name="requirements-for-single-sign-on"></a>シングル サインオンの要件
 
@@ -42,7 +42,7 @@ Microsoft BizTalk Adapter for TIBCO Enterprise Message Service (EMS) ではシ�
   
 2.  トランスポートのプロパティを指定するときに、適切な関連アプリケーションを選択します。  
   
-     関連アプリケーションを作成する方法については、[関連アプリケーションを作成する](../core/creating-affiliate-applications5.md)を参照してください。  
+     関連アプリケーションを作成する方法については、次を参照してください。[関連アプリケーションを作成する](../core/creating-affiliate-applications5.md)します。  
   
     > [!NOTE]
     >  作業が完了したら、SSO を使用してへの任意の Web 共有フォルダーに戻してください**を共有しない**します。 フォルダーが共有されていると、そのフォルダーは使用中と見なされるので、フォルダーを使用するアプリケーションが正しく更新またはアンインストールされません。  

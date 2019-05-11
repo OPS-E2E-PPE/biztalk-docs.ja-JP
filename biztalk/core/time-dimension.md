@@ -1,5 +1,5 @@
 ---
-title: 時間ディメンション |Microsoft ドキュメント
+title: 時間ディメンション |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,15 +15,15 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 418afdc5b7507aba9a564628341c10495b2a740a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2ac4e3d64b2bfee949ca0adca06dc79c9b944192
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22279450"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399469"
 ---
 # <a name="time-dimension"></a>時間ディメンション
-時間ディメンションを使用すると、時間を基準として集計を作成できます。 たとえば、時間ディメンションを使用して、次のテーブルを作成できます。  
+時間ディメンションは、集計を時間を基準として作成できます。 たとえば、次の表を作成する時間ディメンションを使用できます。  
   
 |年|Month|Count|  
 |----------|-----------|-----------|  
@@ -32,7 +32,7 @@ ms.locfileid: "22279450"
 ||March|350|  
 ||April|280|  
   
- 時間ディメンションは、他のディメンションと組み合わせて使用できます。 たとえば、行に時間ディメンションを使用し、列にデータ ディメンションを使用して、次のテーブルを作成できます。  
+ 時間ディメンションは、他のディメンションと組み合わせることができます。 たとえば、次の表を作成するのに行と列のデータ ディメンションで時間ディメンションを使用できます。  
   
 |||テニス ラケット|サッカー ボール|  
 |------|------|---------------------|------------------|  

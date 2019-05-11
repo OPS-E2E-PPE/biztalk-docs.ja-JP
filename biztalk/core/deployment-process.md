@@ -1,5 +1,5 @@
 ---
-title: 展開プロセス |Microsoft ドキュメント
+title: 展開プロセス |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -19,55 +19,55 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 21be32ec58c90c1fb95134a002bee82ef5d78fa5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 89b5e3640626ce63a58532568b08b7290bc40c4c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22240666"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65389743"
 ---
 # <a name="deployment-process"></a>展開プロセス
-次の手順は、エンタープライズ シングル サインオンの、セキュリティで保護された展開の概要です。 SQL Server で実行する操作の詳細な手順については、SQL Server のドキュメントを参照してください。  
+次の手順では、エンタープライズ シングル サインオンのセキュリティで保護された展開の概要を説明します。 SQL Server で実行するアクションに関する詳細な手順は、SQL Server のドキュメントを参照してください。  
   
-1.  SQL Server ドメイン コントローラで、新しい信頼ウィザードを実行して、次のプロパティを指定した信頼関係を作成します。  
+1.  SQL Server のドメイン コント ローラーで、次のプロパティで信頼を作成するのに、新しい信頼ウィザードを使用します。  
   
-    -   **[名前]:** ORCH.com  
-  
-    -   **方向:** 双方向  
-  
-    -   **辺:** このドメインのみ  
-  
-    -   **出力方向の信頼認証レベル--ローカル ドメイン:** 認証の選択  
-  
-    -   **パスワード:** のパスワードを選択  
-  
-    -   **出力方向の信頼の確認:** [はい]  
-  
-    -   **入力方向の信頼の確認:** なし  
-  
-2.  ORCH.com ドメイン コントローラで新しい信頼ウィザードを実行し、次のプロパティを指定した信頼関係を作成します。  
-  
-    -   **[名前]:** SQL.com  
+    -   **名:** ORCH.com  
   
     -   **方向:** 双方向  
   
-    -   **辺:** このドメインのみ  
+    -   **両側:** このドメインのみ  
   
     -   **出力方向の信頼認証レベル--ローカル ドメイン:** 認証の選択  
   
-    -   **パスワード:** ORCH.com のパスワードと同じである必要があります  
+    -   **パスワード:** パスワードを選択します。  
   
-    -   **出力方向の信頼の確認:** [はい]  
+    -   **出力方向の信頼を確認します。** はい  
   
-    -   **入力方向の信頼の確認:** なし  
+    -   **入力方向の信頼を確認します。** いいえ  
   
-3.  ORCH.com ドメイン コントローラで、SQL.com からの着信に対してドメイン レベルの信頼関係を設定します。  
+2.  ORCH.com ドメイン コント ローラーで、次のプロパティで信頼を作成するのに、新しい信頼ウィザードを使用します。  
   
-4.  SQL.com ドメイン コントローラで、ORCH.com からの送信に対してドメイン レベルの信頼関係を設定します。  
+    -   **名:** SQL.com  
   
-5.  ORCH.com ドメイン コントローラーで、ドメインの機能レベルを Windows Server 2008 SP2 または Windows Server 2008 R2 に上げます。  
+    -   **方向:** 双方向  
   
-6.  ORCH.com ドメインに次の新しいユーザーを作成します。  
+    -   **両側:** このドメインのみ  
+  
+    -   **出力方向の信頼認証レベル--ローカル ドメイン:** 認証の選択  
+  
+    -   **パスワード:** ORCH.com のパスワードと同じである必要があります。  
+  
+    -   **出力方向の信頼を確認します。** はい  
+  
+    -   **入力方向の信頼を確認します。** いいえ  
+  
+3.  ORCH.com ドメイン コント ローラーで、SQL.COM から受信ドメイン レベルの信頼関係を設定します。  
+  
+4.  SQL.com ドメイン コント ローラーで、ORCH.COM から送信に対してドメイン レベルの信頼関係を設定します。  
+  
+5.  ORCH.com ドメイン コント ローラーには、Windows Server 2008 SP2 または Windows Server 2008 R2 ドメイン機能レベルを上げます。  
+  
+6.  ORCH ドメインでは、次の新しいユーザーを作成します。  
   
     -   ORCH\SSOSvcUser  
   
@@ -75,11 +75,11 @@ ms.locfileid: "22240666"
   
     -   ORCH\AffAppUser  
   
-7.  追加**オペレーティング システムの一部として動作する**SSOSvcUser と TestAppUser にします。  
+7.  追加**オペレーティング システムの一部として機能**SSOSvcUser と TestAppUser にします。  
   
-8.  追加**認証を許可されている**orch \testadmin する権限です。  
+8.  追加**認証を許可されている**orch \testadmin する権限。  
   
-9. ORCH\SSOSvcUser ユーザーを SQL.com ドメインの SQL2 コンピューターに追加します  (この手順では、Active Directory MMC の詳細ビューを使用する必要があります)。  
+9. SQL ドメインの SQL2 に \ssosvcuser を追加します。 (この手順が必要で Active Directory MMC 詳細ビューを使用します。)  
   
 10. SQL2 コンピュータに、次の 2 つの新しいログインを作成します。  
   
@@ -87,57 +87,57 @@ ms.locfileid: "22240666"
   
     -   ORCH\SSOSvcUser  
   
-11. SQL2 ドメインに、次の 2 つのドメイン グローバル グループを作成します。  
+11. SQL2 ドメインに、2 つのドメイン グローバル グループを作成します。  
   
     -   ORCH\SSOAdminGroup  
   
     -   ORCH\SSOAffAdminGroup  
   
-12. 追加**認証を許可されている**\ssoadmingroup グループに権限です。  
+12. 追加**認証を許可されている**\ssoadmingroup グループに特権。  
   
-13. SQL2 データベースに、次の新しいログインを作成します。  
+13. SQL2 データベースでは、次の新しいログインを作成します。  
   
     -   ORCH\SSOAdminGroup  
   
-14. 次の手順に従って、マスタ シークレット サーバーをインストールします。  
+14. 次のように、マスター シークレット サーバーをインストールします。  
   
-    -   ORCH\TestAdmin を使用して NTS5 にログオンします。  
+    -   Orch \testadmin を使用して NTS5 にログオンします。  
   
-    -   SQL2 コンピュータをマスタ シークレット サーバーとして使用して、ESSO をインストールします。  
+    -   マスター シークレット サーバーとして SQL2 を使用して、ESSO をインストールします。  
   
-15. ORCH\TestAdmin を使用して HIS1 にログオンし、エンタープライズ シングル サインオンをインストールします。 データベース サーバー名 SQL2 を使用して、ESSO を HIS2 に参加する SSO として構成します。  
+15. Orch \testadmin を使用して HIS1 にログオンし、エンタープライズ シングル サインオンをインストールします。 データベース サーバー名 SQL2 を使用して、HIS2 に参加する SSO として ESSO を構成します。  
   
-16. ORCH\TestAdmin を使用して HIS3 にエンタープライズ シングル サインオンの管理ユーティリティをインストールします。  
+16. Orch \testadmin を使用して HIS3 にエンタープライズ シングル サインオンの管理ユーティリティをインストールします。  
   
-17. 次のようにユーザーをグループに追加します。  
+17. 次のグループには、次のユーザーを追加します。  
   
-    -   ORCH\TestAppUser ユーザーを ORCH\SSOAdminGroup グループに追加します  
+    -   Orch \testappuser を \ssoadmingroup に追加します。  
   
-    -   ORCH\AffAppUser ユーザーを ORCH\TestAffUserGroup グループに追加します  
+    -   \Testaffusergroup に \affappuser を追加します。  
   
-18. HIS3 に SQL Server Enterprise Edition をインストールし、ログイン ORCH\AffAppUser を追加します。  
+18. His3、SQL Server Enterprise Edition をインストールし、ログイン \affappuser を追加します。  
   
-19. HIS1 コンピュータでコマンド プロンプトを開き、次のコマンドを使用して制約付き委任とプロトコル遷移を設定します。  
+19. コマンド プロンプトを開き、HIS1 コンピュータでとを設定する、次のコマンドを使用して委任とプロトコル遷移の制限します。  
   
-    -   **setspn-a MSSQLSvc/HIS3.ORCH.com:1433 \ssosvcuser**  
+    -   **setspn -A MSSQLSvc/HIS3.ORCH.com:1433 ORCH\SSOSvcUser**  
   
-    -   **setspn-a MSSQLSvc/HIS3.ORCH.com:1433 orch \testappuser**  
+    -   **setspn -A MSSQLSvc/HIS3.ORCH.com:1433 ORCH\TestAppUser**  
   
-20. **\Ssosvcuser**と**orch \testappuser**プロパティ ページは、次のオプションを選択して両方のユーザー アカウントに対して適切な委任を設定します。  
+20. **\Ssosvcuser**と**orch \testappuser**プロパティ ページでは、次のオプションを選択して両方のユーザー アカウントに対して適切な委任を設定します。  
   
-    -   **このユーザーに指定されたサービスのみ委任に対して信頼します。**  
+    -   **指定されたサービスのみへの委任では、このユーザーを信頼します。**  
   
-    -   **任意の認証プロトコルを使用します。**  
+    -   **任意の認証プロトコルを使用して、**  
   
-21. ORCH\TestAdmin を使用して、HIS1 コンピュータで次の手順を実行します。  
+21. Orch \testadmin を使用して、HIS1 コンピュータで、次を実行します。  
   
-    -   ORCH\TestAppUser を Remote Desktop User グループに追加します。  
+    -   Orch \testappuser を Remote Desktop User グループに追加します。  
   
-    -   Grant**が認証された後の権限を借用**\ssosvcuser する権限  
+    -   Grant**認証された後の権限を借用**\ssosvcuser する権限  
   
-    -   Grant**が認証された後の権限を借用**orch \testappuser する権限  
+    -   Grant**認証された後の権限を借用**orch \testappuser を特権  
   
-22. ORCH\TestAppUser を使用して HIS1 にログオンし、次のアプリケーション構成を実行して、展開の状態を確認します。  
+22. HIS1 にログオンして、デプロイを確認します。 orch \testappuser を使用すると、次のアプリケーションの構成を実行します。  
   
      LogonExternalUser テストを実行します。  
   

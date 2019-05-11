@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 04e0f30d93514fded12d20a06d9fa27fbcd632bd
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9a23c12726915a4f84f8c33ff4a984e5e9aae4fe
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36980715"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399755"
 ---
 # <a name="the-itinerary-on-ramp-web-services"></a>スケジュール オンランプ Web サービス
 旅行プランの Web サービスは、itinerary 入り口行程サービスによって、Microsoft BizTalk のターゲットにし、それ以降の処理や ESB 操作のメッセージを送信するクライアントを許可するメソッドを公開します。  
@@ -38,7 +38,7 @@ ms.locfileid: "36980715"
   
 - **SubmitRequestResponse**します。 ASMX ベースのサービスには、このメソッドのインスタンスへの参照を受け取ります、 **XmlNode**クラスを送信するメッセージを含み、のインスタンスで、応答メッセージを返す、 **XmlNode**に渡されます。です。 WCF ベースのサービスの場合、このメソッドはへの参照を**オブジェクト**を送信するメッセージを含みの配列を返す XML 文字列である型**XmlNodes**で、 **オブジェクト**に渡されました。  
   
-  旅行プランの Web サービスの使用に関する詳細については、[をインストールすると、日程ランプでサンプルを実行する](../esb-toolkit/installing-and-running-the-itinerary-on-ramp-sample.md)を参照してください。  
+  旅行プランの Web サービスの使用に関する詳細については、次を参照してください。[をインストールすると、日程ランプでサンプルを実行する](../esb-toolkit/installing-and-running-the-itinerary-on-ramp-sample.md)します。  
   
 > [!NOTE]
 >  既定では、旅行プランの Web サービスはセキュリティで保護の Sockets Layer (SSL) クライアントがアクセスするときに要求するように構成されていません。 クライアント アクセス用の SSL を必要とし、インターネット インフォメーション サービス (IIS) Web サービスのホスト コンピューターとネットワーク レベルの IPSec を使用して ESBExceptions データベースをホストするサーバー間の接続を保護し、適切なサービスを構成する必要があります。ファイル レベルのアクセス制御リスト (ACL) のアクセス許可。

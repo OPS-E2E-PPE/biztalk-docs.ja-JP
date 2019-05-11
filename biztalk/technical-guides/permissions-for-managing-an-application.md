@@ -1,5 +1,5 @@
 ---
-title: アプリケーションを管理するためのアクセス許可 |Microsoft ドキュメント
+title: アプリケーションを管理するためのアクセス許可 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4d461f21b96783ada9e3986c1fa307fb7e2a9fd7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 476b4e1a7a91e172b05be4f4aa75bd79e8e6da70
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22301946"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65401206"
 ---
 # <a name="permissions-for-managing-an-application"></a>アプリケーションを管理するためのアクセス許可
-展開して、アプリケーションを管理するために必要な権限については、次を参照してください。[を展開すると、BizTalk アプリケーションの管理に必要なアクセス許可](http://go.microsoft.com/fwlink/?LinkId=154733)(http://go.microsoft.com/fwlink/?LinkId=154733)。
+展開して、アプリケーションの管理に必要なアクセス許可については、次を参照してください。[を展開すると、BizTalk アプリケーションの管理に必要なアクセス許可](http://go.microsoft.com/fwlink/?LinkId=154733)(http://go.microsoft.com/fwlink/?LinkId=154733)します。

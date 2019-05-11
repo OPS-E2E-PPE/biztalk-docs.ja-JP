@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10826 |Microsoft Docs'
+title: シングル サインオン:イベント 10826 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dbf2a0a0810a58b0b82ffd818e7328cda83ee8b5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6ed2c871b87d1af73d3d910ec50eb4eb52db784f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36974491"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65401141"
 ---
-# <a name="single-sign-on-event-10826"></a>シングル サインオン: イベント 10826
+# <a name="single-sign-on-event-10826"></a>シングル サインオン:イベント 10826
 ## <a name="details"></a>詳細  
   
 |                 |                                                            |
@@ -30,10 +30,10 @@ ms.locfileid: "36974491"
 |  イベント ソース   |                           ENTSSO                           |
 |    コンポーネント    |                            なし                             |
 |  シンボル名  |                 ENTSSO_E_NO_GROUP_ADAPTER                  |
-|  メッセージ テキスト   |        指定されたグループ アダプターは存在しません。         |
+|  メッセージ テキスト   |        指定されたグループ アダプタは存在しません。         |
   
 ## <a name="explanation"></a>説明  
- 指定されたグループ アダプターは存在しません。  
+ 指定されたグループ アダプタは存在しません。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- アダプター名のスペルをチェックし、グループ アダプターを再度指定します。
+ アダプター名のスペルを確認し、もう一度、グループ アダプターを指定します。

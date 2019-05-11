@@ -1,5 +1,5 @@
 ---
-title: XML 検証パイプライン コンポーネント |Microsoft ドキュメント
+title: XML 検証パイプライン コンポーネント |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,17 +15,17 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 78effccc78846c059626897545a4d916c2d6630f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7d2f1e7997d6234004594320f02535839ed5f7f8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22289322"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65401549"
 ---
 # <a name="xml-validator-pipeline-component"></a>XML 検証パイプライン コンポーネント
-XML 検証パイプライン コンポーネントは、逆アセンブル ステージとアセンブル ステージを除く、送信パイプラインおよび受信パイプラインのすべてのステージで使用できます。 XML 検証コンポーネントでは、指定されたスキーマと照合してメッセージが検証されます。メッセージが、指定されたスキーマに準拠していなかった場合、XML 検証コンポーネントによってエラーが生成され、そのメッセージは、メッセージング エンジンにより保留キューに格納されます。  
+XML 検証パイプライン コンポーネントで使用できます送受信パイプラインのアセンブルとアセンブルを除くすべてのステージ。 XML 検証コンポーネントは、指定したスキーマまたはスキーマに対してメッセージを検証し、メッセージがこれらのスキーマに準拠していない場合、コンポーネントでエラーが発生し、メッセージング エンジンによってメッセージが保留キューに配置されます。  
   
- XML 検証パイプライン コンポーネントの構成については、次を参照してください。 [XML 検証パイプライン コンポーネントを構成する方法](../core/how-to-configure-the-xml-validator-pipeline-component.md)です。  
+ XML 検証パイプライン コンポーネントの構成方法の詳細については、次を参照してください。 [XML 検証パイプライン コンポーネントを構成する方法](../core/how-to-configure-the-xml-validator-pipeline-component.md)します。  
   
 ## <a name="see-also"></a>参照  
  [パイプライン コンポーネント](../core/pipeline-components.md)

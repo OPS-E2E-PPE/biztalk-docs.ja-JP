@@ -1,5 +1,5 @@
 ---
-title: トランザクション メッセージ バッチ |Microsoft ドキュメント
+title: トランザクション メッセージ バッチ |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,26 +12,26 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 28be423aa500ba8950b5b2100ce68dba7743bd79
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: bbc6d3a450106df1b67aa2c0e8fb1ada2f1a9e95
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22279530"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399223"
 ---
 # <a name="transactional-message-batches"></a>トランザクション メッセージ バッチ
-一部のアダプターは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] トランザクションに合わせて外部トランザクションを調整する必要があります。 たとえば、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] に付属の SQL アダプターは、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] トランザクションに合わせて [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] トランザクションを調整する必要があります。 そのためには、アダプターが [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] トランザクション オブジェクトにアクセスする必要があります。 トランザクション オブジェクトは明示的に作成され、バッチに関連付けられます。その後、そのバッチが [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] に送信されます。 トランザクション オブジェクトが関連付けられているバッチを "トランザクション バッチ" といいます。 独自の Microsoft 分散トランザクション コーディネーター (MSDTC) トランザクション オブジェクトを指定することによって、トランザクションから [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] へ、および  からトランザクションへ、"確実に 1 回だけ" データを配信できます。  
+一部のアダプターが内部と外部トランザクションを調整する必要があります[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]トランザクション。 たとえば、SQL アダプターが付属[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]調整する必要があります、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]でトランザクションを[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]トランザクション。 これを行うには、アダプターへのアクセスを必要があります、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]トランザクション オブジェクトです。 トランザクション オブジェクトが明示的に作成され、バッチに送信する前に、バッチに関連付けられている[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]します。 関連付けられているトランザクション オブジェクトを持っているバッチはトランザクション バッチと呼ばれます。 Microsoft 分散トランザクション コーディネーター (MSDTC) トランザクション オブジェクトを指定することによって、「確実、一度だけ」を実現できますの入出力データの配信[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]します。  
   
- SQL アダプターのようなトランザクション データベース アダプターは、バッチに使用される 1 つのトランザクションが原因で外部データベースにデッドロックを引き起こす可能性があります。 このため、SQL アダプターのバッチ サイズは特定の値にハードコードされています。  
+ SQL アダプターのようなトランザクション データベース アダプター バッチに使用する 1 つのトランザクションのため外部データベースのデッドロックを引き起こす可能性があります。 これは、SQL アダプタのバッチ サイズが 1 つにハード コードされた理由です。  
   
- トランザクションのスコープ内で、アダプターが別のデータベースや MSMQ などの追加リソース マネージャーを参加させる必要がある場合は、明示的な外部トランザクションを作成し、メッセージング エンジンに渡す必要があります。 外部トランザクションを作成し、それをバッチに関連付けることは、トランザクション バッチと呼ばれます。 トランザクション アダプターは、外部の Microsoft 分散トランザクション コーディネーター (MSDTC) トランザクションを明示的に作成してトランザクション バッチの使用するようにするアダプターです。  
+ アダプターが別のデータベースや MSMQ などの追加リソース マネージャーをトランザクションのスコープ内に参加する必要があることを作成し、明示的な外部トランザクションをメッセージング エンジンに渡します。 外部トランザクションを作成し、バッチに関連付けることと呼ばれますが、トランザクション バッチ。 トランザクション アダプターは、トランザクション バッチは、アダプターを使用して、外部の Microsoft 分散トランザクション コーディネーター (MSDTC) トランザクションを明示的に作成しています。  
   
- アダプターが [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] にトランザクションを送信する理由の 1 つは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] または外部システムにデータのレコードを作成するためです。 このレコードによって、メッセージが確実に一度だけ配信されるようになります。  
+ アダプターを提供する理由の 1 つ[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]トランザクションでは、確認するどちらかが[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]または外部システムがデータのレコード。 このレコードにより、メッセージが 1 回だけ配信されるようになります。  
   
 > [!NOTE]
->  MSDTC の詳細については、の分散トランザクション コーディネーターのマニュアルを参照してください: [http://go.microsoft.com/fwlink/?LinkId=44297](http://go.microsoft.com/fwlink/?LinkId=44297)です。  
+>  MSDTC の詳細についてでの分散トランザクション コーディネーターのマニュアルを参照してください: [ http://go.microsoft.com/fwlink/?LinkId=44297](http://go.microsoft.com/fwlink/?LinkId=44297)します。  
   
- ファイル アダプターは、管理対象となる外部ファイル操作がトランザクションではないためトランザクションへのアクセスを必要としないアダプターの一例です。 この場合、アダプターはトランザクション オブジェクトを [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] に送信しません。 一方、SQL アダプターは SQL データベースと連携し、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] メッセージ処理以外の操作を行う可能性があります。 その場合、SQL アダプターは MSDTC トランザクションを [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] へ渡します。  
+ ファイル アダプターは、トランザクションへのアクセス、外部のファイル操作を管理するため、いないトランザクションを必要としないアダプターの例を示します。 この場合、アダプターがトランザクション オブジェクトを提供しない[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]します。 その一方で、SQL アダプターと対話し、SQL database、以外の追加操作があります、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]メッセージ処理します。 外部の MSDTC トランザクションはこの場合、アダプターに渡すには意味を行うことがあります[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

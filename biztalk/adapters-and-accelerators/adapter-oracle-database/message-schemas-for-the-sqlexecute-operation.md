@@ -14,12 +14,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f753d2dcbd5782f456b099174e0369e37cca2e6f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: dbf495f6e9e749cb9668dd3ff52c361b8e248ba1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36981483"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65376772"
 ---
 # <a name="message-schemas-for-the-sqlexecute-operation"></a>SQLEXECUTE 操作のメッセージ スキーマ
 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] LOB システムに存在する成果物の厳密に型指定されたメタデータを表示し、これらの成果物の標準的な操作を公開します。 ただし、アプリケーションが、アプリケーションでビジネス ロジックによって駆動される任意の SQL ステートメントの実行を必要がありますのシナリオがあります。 たとえば、しをたい場合があります。  

@@ -1,5 +1,5 @@
 ---
-title: ESB Itinerary コンポーネント |Microsoft ドキュメント
+title: ESB スケジュール コンポーネント |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,23 +12,23 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 80aa7c1ef4bc53ad2e2821eaf8dc4184777900a3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d0e92c62f0ae764ed8123c578d7bc2975d4b10b3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22294970"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399797"
 ---
-# <a name="the-esb-itinerary-component"></a>ESB Itinerary コンポーネント
-ESB 行程コンポーネントは、ESB itinerary 入り口に、メッセージと共に送信される SOAP ヘッダー コンテキスト プロパティを設定します。  
+# <a name="the-esb-itinerary-component"></a>ESB スケジュール コンポーネント
+ESB スケジュール コンポーネントは、ESB オンランプ入り口に、メッセージと共に送信される SOAP ヘッダー コンテキスト プロパティを設定します。  
   
 ## <a name="installation"></a>インストール  
- ESB コアを自動的にインストールするとインストール、**行程**BizTalk Server パイプライン コンポーネント フォルダー内のパイプライン コンポーネントです。  
+ ESB コアを自動的にインストールするインストール、**行程**BizTalk Server パイプライン コンポーネント フォルダー内のパイプライン コンポーネント。  
   
 ## <a name="how-it-works"></a>しくみ  
- ESB 行程コンポーネントは、受信パイプラインにのみ存在でく Microsoft BizTalk パイプライン コンポーネントです。 SOAP メッセージのヘッダーまたはプロパティとしてメッセージ コンテキストにコンポーネントの設定のいずれかの値を昇格します。 提供される行程ランプで Web サービスで SOAP ヘッダーを昇格させるの例を見つけることができます[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]です。 これらの Web サービス、コントラクトの一部として SOAP ヘッダーを公開して、クライアント アプリケーションがヘッダーを設定する必要があります。 コンポーネントが、SOAP ヘッダーの値し、(書き込み) を昇格させますを読み取るように、メッセージは、受信パイプラインのコンポーネントを通過して、メッセージ コンテキスト プロパティにします。  
+ ESB スケジュール コンポーネントは、受信パイプラインにのみ配置できる Microsoft BizTalk パイプライン コンポーネントです。 SOAP メッセージのヘッダーまたはプロパティとしてメッセージ コンテキストにコンポーネントの設定のいずれかから値を昇格します。 提供される日程 Web サービスで SOAP ヘッダーの昇格の例が見つかります[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]します。 これらの Web サービス、コントラクトの一部として SOAP ヘッダーを公開して、クライアント アプリケーションは、ヘッダーを設定する必要があります。 コンポーネントは、SOAP ヘッダー プロパティ (書き込み) を昇格し、値を読み取りますメッセージは、受信パイプラインでコンポーネントを通過して、メッセージ コンテキスト プロパティにすることです。  
   
-## <a name="using-the-esb-itinerary-component"></a>ESB Itinerary コンポーネントを使用します。  
- ESB 行程コンポーネントは、受信パイプラインに追加し、受信場所、パイプラインを使用できます。 コンポーネントは、SOAP ヘッダーの値または受信メッセージのコンテキスト プロパティにコンポーネントの設定を自動的に昇格させます。  
+## <a name="using-the-esb-itinerary-component"></a>ESB スケジュール コンポーネントを使用します。  
+ ESB スケジュール コンポーネントを受信パイプラインに追加し、受信場所のパイプラインを使用できます。 コンポーネントには、SOAP ヘッダーの値またはコンポーネントの設定、受信メッセージのコンテキスト プロパティに自動的に昇格させます。  
   
- このコンポーネントを使用する方法の例は、次を参照してください。[のインストールと旅程ランプでサンプルを実行して](../esb-toolkit/installing-and-running-the-itinerary-on-ramp-sample.md)です。
+ このコンポーネントを使用する方法の例は、次を参照してください。[をインストールすると、日程ランプでサンプルを実行する](../esb-toolkit/installing-and-running-the-itinerary-on-ramp-sample.md)します。

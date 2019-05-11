@@ -1,5 +1,5 @@
 ---
-title: TIBCO Rendezvous のメッセージ コンテキスト プロパティが表示される |Microsoft ドキュメント
+title: TIBCO Rendezvous のメッセージ コンテキスト プロパティが表示される |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,28 +12,28 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 36f4de92dbe7c4c235a1c9ebd092b28b3a198c92
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: e330926c6f362ea5a84ad7b4b9291a5f2f310eee
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
-ms.locfileid: "24015001"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65528324"
 ---
-# <a name="biztalk-server-message-context-properties-receive-handlers"></a>BizTalk Server のメッセージ コンテキスト プロパティが (受信ハンドラー)
-メッセージ ペイロードに加えて、メッセージを構成する補足情報に BizTalk Server オーケストレーションから実行時にアクセスできる必要があります。  
+# <a name="biztalk-server-message-context-properties-receive-handlers"></a>BizTalk Server メッセージ コンテキストのプロパティ (受信ハンドラー)
+メッセージ ペイロードに加えて、メッセージを構成する補足情報には、実行時に BizTalk Server オーケストレーションからアクセスできなければなりません。  
   
 ## <a name="tibco-rv-message-information-promoted-as-message-context-properties"></a>メッセージ コンテキストのプロパティとして昇格される TIBCO RV メッセージ情報  
- 次の表に、この補足情報を示します。  
+ 次の表は、この補足情報。  
   
 |データ ID|型|ルーティング可能|受信場所|  
 |-------------------------|----------|--------------|----------------------|  
-|送信サブジェクト [null]|string|はい|このメッセージの送信先サブジェクトをオーケストレーションに伝えます。|  
-|応答サブジェクト [null]|string|はい|送信者が応答の送信先として期待する場所 (そのような場所が期待される場合) をオーケストレーションに伝えます。|  
-|フィールド数 [読み取り専用]|unsigned int|不可|上位レベル メッセージ内のフィールドの数。 TIBCO RV によって指定されるプロパティです。|  
-|CM 送信者名 [読み取り専用]|string|はい|送信者の CM 通信者名。|  
-|CM シーケンス番号 [読み取り専用]|long|不可|送信元の TIBCO トランスポート オブジェクトによって割り当てられたシーケンス番号。|  
-|CM タイム リミット [読み取り専用]|double|不可|送信元プログラムがその CM トランスポートによるメッセージ配信の認証を期待しなくなるまでのタイム リミット。|  
+|送信サブジェクト [null]|string|はい|オーケストレーションにこのメッセージが送信されて、件名に指示します。|  
+|返信サブジェクト [null]|string|はい|求められた場合に、送信者が送信される応答を期待する場所をオーケストレーションに指示します。|  
+|[読み取り専用] フィールドの数|unsigned int|いいえ|上位レベル メッセージ内のフィールドの数。 TIBCO rv さん。 によって指定されるプロパティ|  
+|CM 送信者名 [読み取り専用]|string|はい|送信者の CM 送信者名です。|  
+|CM シーケンス番号 [読み取り専用]|long|いいえ|送信元の TIBCO トランスポート オブジェクトによって割り当てられたシーケンス番号。|  
+|CM タイム リミット [読み取り専用]|double|いいえ|送信元のプログラムがメッセージの配信の認定を受けるには、その CM トランスポートを不要になった期待される時間制限。|  
   
 ## <a name="see-also"></a>参照  
- [TIBCO Rendezvous のメッセージ マッピング](../core/message-mapping-in-tibco-rendezvous.md)   
+ [TIBCO Rendezvous でのメッセージ マッピング](../core/message-mapping-in-tibco-rendezvous.md)   
  [TIBCO Rendezvous 受信ハンドラーの作成](../core/creating-tibco-rendezvous-receive-handlers.md)

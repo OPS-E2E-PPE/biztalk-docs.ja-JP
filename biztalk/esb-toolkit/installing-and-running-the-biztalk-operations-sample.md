@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c526d3d76e134914f5523301c447bf99add0b27e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e748037a120a64dfa837de71fd1afdadcbd91ff0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36997499"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65400766"
 ---
 # <a name="installing-and-running-the-biztalk-operations-sample"></a>インストールして、BizTalk 操作サンプルを実行しています。
 Microsoft BizTalk 操作サンプルでは、ESB BizTalk 操作のサービスを使用する BizTalk アプリケーションの運用データをクエリする方法を示します。 ESB 管理ポータルでは、このサービスを使用して、返すか、BizTalk 管理および追跡データベースの情報を更新します。 使用可能なは、次のとおりです。  
@@ -34,7 +34,7 @@ Microsoft BizTalk 操作サンプルでは、ESB BizTalk 操作のサービス�
 
 - 送信ポートのプロパティ  
 
-  このセクションのトピックは次のとおりです。  
+  このセクションでは、次のトピックについて説明します。  
 
 - [BizTalk 操作サンプルをインストールする](../esb-toolkit/installing-the-biztalk-operations-sample.md)  
 

@@ -1,5 +1,5 @@
 ---
-title: 型キャストのサポート |Microsoft ドキュメント
+title: 型キャストのサポート |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,17 +12,17 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4e863221a556343ee7dc39825199dd8236408977
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9517a398dbdd75ac2a31bad6d92c82922ad64510
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22279506"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65398919"
 ---
 # <a name="support-for-type-casting"></a>型キャストのサポート
-使用することができます、**キャスト**のメソッド、 **ClassMemberBinding**クラスを 1 つの型のオブジェクトを別の互換性のある型のオブジェクトに変換します。 現在、ビジネス ルール作成ツールはサポートされていませんルールの作成を使用して、**キャスト**メソッドです。 ルールをプログラムによって作成するには、ルール エンジン オブジェクト モデルを使用してこの機能を利用する必要があります。  
+使用することができます、**キャスト**のメソッド、 **ClassMemberBinding**クラスを 1 つの型のオブジェクトを別の互換性のある型のオブジェクトに変換します。 現在、ビジネス ルール作成ツールはサポートされていませんルールの作成を使用して、**キャスト**メソッド。 この機能を活用するために、ルール エンジン オブジェクト モデルを使用してプログラムによってルールを作成する必要があります。  
   
- 次のサンプル コードを使用する方法を示しています、**キャスト**のインスタンスを変換する方法、 **System.Object**クラスのインスタンスを**Cls2**クラスです。 このサンプルでの説明に従って、クラスの入れ子になったメンバーにアクセスする方法も示します[にアクセスする入れ子になったクラスのメンバー、](../core/accessing-nested-members-of-a-class.md)です。  
+ 次のサンプル コードを使用する方法を示します、**キャスト**のインスタンスに変換するメソッド、 **System.Object**クラスのインスタンスを**Cls2**クラス。 このサンプルは」の説明に従って、クラスの入れ子になったメンバーにアクセスする方法も示します[クラスの入れ子になったメンバーのアクセス](../core/accessing-nested-members-of-a-class.md)します。  
   
 ```  
 using Microsoft.RuleEngine;  
@@ -93,4 +93,4 @@ namespace RuleTypeCasting
   
 ## <a name="see-also"></a>参照  
  [ビジネス ルール エンジンにおけるクラス継承のサポート](../core/support-for-class-inheritance-in-the-business-rule-engine.md)   
- [クラスの入れ子になったメンバーへのアクセス](../core/accessing-nested-members-of-a-class.md)
+ [クラスの入れ子メンバーへのアクセス](../core/accessing-nested-members-of-a-class.md)

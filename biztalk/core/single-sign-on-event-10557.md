@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10557 |Microsoft Docs'
+title: シングル サインオン:イベント 10557 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 612231da7c3098eca4d3cc901b83b66e48e09c9f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f5cd5be8005a1ce13c1ad5f13c580e6e72353b9b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36997531"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65398837"
 ---
-# <a name="single-sign-on-event-10557"></a>シングル サインオン: イベント 10557
+# <a name="single-sign-on-event-10557"></a>シングル サインオン:イベント 10557
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                                                                                                                                          |
@@ -30,10 +30,10 @@ ms.locfileid: "36997531"
 |  イベント ソース   |                                                                                                  ENTSSO                                                                                                  |
 |    コンポーネント    |                                                                                                   なし                                                                                                    |
 |  シンボル名  |                                                                                   SSO_WARN_USER_NOT_ALLOWED_FOR_GROUPS                                                                                   |
-|  メッセージ テキスト   | アプリケーション ユーザーはグループ アプリケーションのマッピングの制御を許可されていません。%r<br /><br /> ドメイン名: %1 %r<br /><br /> ユーザー名: % 2 %r<br /><br /> アプリケーション名: % 3 %r<br /><br /> クライアント ユーザー: %4 |
+|  メッセージ テキスト   | アプリケーションのユーザーがグループ applications.%r のマッピングを制御する許可されていません<br /><br /> ドメイン名: %1 %r<br /><br /> ユーザー名: % 2 %r<br /><br /> アプリケーション名: % 3 %r<br /><br /> クライアント ユーザー: %4 |
   
 ## <a name="explanation"></a>説明  
- アプリケーション ユーザーには、グループ アプリケーションのマッピングを作成または制御するのに十分な特権がありません。  
+ ユーザーがアプリケーションには、作成またはグループ アプリケーションに対するマッピングを制御するための十分な特権がありません。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- このアクティビティはアプリケーション管理者が実行する必要があります。
+ このアクティビティは、アプリケーション管理者によって実行する必要があります。

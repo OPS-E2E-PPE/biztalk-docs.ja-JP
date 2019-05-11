@@ -19,26 +19,26 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 56338d268bac6568f8e175b6e70da202715fd7a8
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3cb8259a6c8975673308a0aebb5e9c0336920715
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37006735"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65397974"
 ---
 # <a name="related-documents"></a>関連ドキュメント
-クエリ結果の詳細に表示される [関連ドキュメント] 領域には、アクティビティに関連する参考用ドキュメントが一覧表示されます。 表示されるドキュメントの種類は、CAD 画像、.WAV ファイル、注文書などさまざまです。 たとえば、発注アクティビティでは、通常、基本のドキュメントの種類として注文書が使用されます。 表示される一覧には、注文書へのリンクが含まれます。  
+クエリ結果の詳細の関連するドキュメント領域には、ドキュメントに、アクティビティに関連する参考用ドキュメントの一覧が表示されます。 表示される、CAD 画像を含む、あらゆる種類のドキュメントをします。WAV ファイル、または注文書。 たとえば、発注アクティビティでは、ベースのドキュメントの種類として注文書が必要が通常あります。 注文書へのリンクの一覧が表示されます。  
   
 ## <a name="adding-document-references"></a>ドキュメント参照の追加  
- 関連ドキュメントの一覧は、次のいずれかの方法で生成します。  
+ 2 つの方法のいずれかでは、関連ドキュメントの一覧が生成されます。  
   
-- 追跡プロファイルの作成時にアクティビティ ツリーの Document Reference URL ノードを含め、物理的なドキュメントへの参照ポインターを含んだソースからその Document Reference URL ノードを割り当てます。  
+- 追跡プロファイルを開発する際に、ドキュメント参照 URL ノードをアクティビティ ツリーに追加し、物理的なドキュメントへの参照ポインターを格納しているソースからマップします。  
   
-- 統合アプリケーション開発者が、カスタム アプリケーションを呼び出すことにより、プログラムを使用してこの一覧を作成します。  
+- 統合開発者プログラムでは、カスタム アプリケーションを呼び出すことによってリストを設定します。  
   
   これらのメソッドのいずれかを使用してドキュメント参照の定義内の行を追加します、 \<activityname\>_References テーブルにドキュメントの場所。  
   
   これらのタスクのどちらが実行された場合、**関連ドキュメント**領域は空白です。  
   
 ## <a name="see-also"></a>参照  
- [Xml-data Reduced を参照してください。](../core/tracking-profile-editor.md)
+ [追跡プロファイル エディター](../core/tracking-profile-editor.md)

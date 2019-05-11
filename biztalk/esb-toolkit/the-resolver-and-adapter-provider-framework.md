@@ -12,12 +12,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 95134a1f806398f14a5596149eb605e2de20cac2
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2ff6a9b731b981f04f015d8dd644442680c98cbf
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37002803"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399752"
 ---
 # <a name="the-resolver-and-adapter-provider-framework"></a>リゾルバーとアダプターのプロバイダー フレームワーク
 リゾルバーとアダプターのプロバイダー フレームワークは、スケジュール、変換、およびエンドポイントの解決とルーティングをサポートします。 フレームワークを動的にエンドポイントを解決および送信アダプターのプロパティを設定します。 競合回避モジュールの後にコンポーネント (たとえば、送信の Web サービス エンドポイントを検索する Universal Description, Discovery, and Integration [UDDI] を使用して) エンドポイントの解決、アダプター プロバイダーのコンポーネントが登録済みの BizTalk Server の特定のプロパティを設定アダプター。 たとえば、Wcf-basichttp アダプターのプロバイダーは BizTalk 固有のメッセージ エンドポイントが、特定の BizTalk アダプターを使用する URI のコンテキスト プロパティの設定を行いますFTP アダプターのプロバイダーは、FTP アダプターに固有のプロパティを設定します。  
@@ -31,7 +31,7 @@ ms.locfileid: "37002803"
  リゾルバーとアダプターのプロバイダー フレームワークの動作とカスタム競合回避モジュールとアダプターのプロバイダーを作成して拡張する方法を表示する方法の詳細については[を変更して、BizTalk ESB Toolkit の拡張](../esb-toolkit/modifying-and-extending-the-biztalk-esb-toolkit.md)します。  
   
 ## <a name="supported-resolution-mechanisms-resolvers"></a>サポートされている解決メカニズム (競合回避モジュール)  
- BizTalk ESB Toolkit には、次の競合回避モジュールが含まれています:**静的、UDDI、UDDI3、XPATH、BRE、BRI、日程表、日程静的**と**LDAP**します。  
+ BizTalk ESB Toolkit には、次の競合回避モジュールが含まれています。**静的、UDDI、UDDI3、XPATH、BRE、BRI、日程表、日程静的**と**LDAP**します。  
   
  競合回避モジュールの接続文字列から成る常に、**モニカー** (など**BRE**) 後に":\\\\"と接続または処理の詳細。 モニカーでは、構成ファイルに関連付けられている競合回避モジュールの定義と一致します。 各接続文字列に関連付けられているプロパティは一意であると、すべてのプロパティが必要です。 競合回避モジュールの各スキーマは、ESB で確認できます。Resolvers.Schemas プロジェクトです。  
   
@@ -41,11 +41,11 @@ ms.locfileid: "37002803"
   
    STATIC:\\\TransportType=;  
   
-   TransportLocation =<http://localhost/ESB.CanadianServices/SubmitPOService.asmx>;  
+   TransportLocation=<http://localhost/ESB.CanadianServices/SubmitPOService.asmx>;  
   
    アクション = です。  
   
-   EndPointConfig = です。  
+   EndPointConfig=;  
   
    JaxRpcResponse = false。  
   
@@ -59,7 +59,7 @@ ms.locfileid: "37002803"
   
    UDDI:\\\serverUrl=<http://localhost:9901/rmengine>;  
   
-   serviceName = OrderPurchaseWebService;  
+   serviceName=OrderPurchaseWebService;  
   
    serviceProvider Microsoft プラクティス ESB を =  
   
@@ -71,7 +71,7 @@ ms.locfileid: "37002803"
   
    アクション = です。  
   
-   EndPointConfig = です。  
+   EndPointConfig=;  
   
    JaxRpcResponse = です。  
   
@@ -85,7 +85,7 @@ ms.locfileid: "37002803"
   
    BRE:\\\policy=GetCanadaEndPoint;  
   
-   バージョン = です。  
+   version=;  
   
    useMsg=;  
   
@@ -93,7 +93,7 @@ ms.locfileid: "37002803"
   
    BRI:\\\policy=ResolveItinerary;  
   
-   バージョン = です。  
+   version=;  
   
    useMsg=;  
   
@@ -101,13 +101,13 @@ ms.locfileid: "37002803"
   
    ITINERARY:\\\name=TwoWayTestItinerary;  
   
-   バージョン = です。  
+   version=;  
   
 - **ITINERARY-STATIC**  
   
    ITINERARY-STATIC:\\\name=TwoWayTestItinerary;  
   
-   バージョン = です。  
+   version=;  
   
 - **LDAP**  
   
@@ -115,9 +115,9 @@ ms.locfileid: "37002803"
   
    TransportLocation={mail}  
   
-   フィルター = (&(objectClass=User) (| (userPrincipalName =yourname@domain.com)));  
+   Filter=(&(objectClass=User)(|(userPrincipalName=yourname@domain.com)));  
   
-   SearchRoot = です。  
+   SearchRoot=;  
   
    SearchScope サブツリー; を =  
   
@@ -125,7 +125,7 @@ ms.locfileid: "37002803"
   
    SMTPAuthenticate = 0 (& a)
   
-   SMTPHost 127.0.0.1 を = (& a)
+   SMTPHost=127.0.0.1&
   
    =test@globalbank.com(& A)
   
@@ -152,6 +152,6 @@ ms.locfileid: "37002803"
   ここで、 **ResolverDictionary**アダプター マネージャーにし、解決プロセス、パスから解決されたすべてのプロパティを含むインスタンスが返されます。 ディクショナリは、アダプター マネージャーは、すべてのアダプター固有およびエンドポイント固有 BizTalk コンテキストにメッセージのプロパティを設定する特定のアダプター プロバイダーに渡します。 競合回避モジュールを探して、 **EndPointConfig**プロパティは、それぞれのアダプターのプロパティに対応する名前/値ペアを抽出し、メッセージにこれらの値を設定します。  
   
 ## <a name="supported-adapter-providers"></a>サポートされているアダプターのプロバイダー  
- [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]次の組み込みのアダプターのプロバイダーが含まれています:**ファイル、FTP、SMTP、MQSeries、Wcf-basichttp、Wcf-wshttp、** と**Wcf-custom**します。 各アダプター プロバイダーの名前は、BizTalk Server では、関連付けられているアダプター (トランスポートの種類) の名前と同じです。  
+ [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]次の組み込みのアダプターのプロバイダーが含まれています。**ファイル、FTP、SMTP、MQSeries、Wcf-basichttp、Wcf-wshttp、** と**Wcf-custom**します。 各アダプター プロバイダーの名前は、BizTalk Server では、関連付けられているアダプター (トランスポートの種類) の名前と同じです。  
   
- リゾルバーとアダプターのプロバイダー フレームワークの主な利点を作成し、エンドポイント情報とカスタム アダプター プロバイダーが登録済みの BizTalk アダプターの特定のプロパティの設定を解決するのには独自のカスタム リゾルバーを登録して拡張できます。 詳細については、[を変更すると、BizTalk ESB Toolkit の拡張](../esb-toolkit/modifying-and-extending-the-biztalk-esb-toolkit.md)を参照してください。
+ リゾルバーとアダプターのプロバイダー フレームワークの主な利点を作成し、エンドポイント情報とカスタム アダプター プロバイダーが登録済みの BizTalk アダプターの特定のプロパティの設定を解決するのには独自のカスタム リゾルバーを登録して拡張できます。 詳細については、次を参照してください。[を変更すると、BizTalk ESB Toolkit の拡張](../esb-toolkit/modifying-and-extending-the-biztalk-esb-toolkit.md)します。

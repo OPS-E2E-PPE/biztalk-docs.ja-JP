@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2aae2a6d9b4f3a35c55ffa731323547b1b54a4d5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d4c73d3ac6d96b1cfae4a8e8092669b6b0edcad0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36999411"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65400297"
 ---
 # <a name="how-to-restore-applications-and-enable-processing"></a>アプリケーションを復元し、処理を有効にする方法
 BizTalk グループで、アプリケーションを構成し、次のトピックで説明する手順の後にアプリケーションの処理を有効にする[ランタイム コンピューターの更新方法](../technical-guides/how-to-update-the-runtime-computers.md)します。  

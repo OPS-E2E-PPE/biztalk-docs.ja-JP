@@ -12,14 +12,14 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5dde6df3360a7b4581964f26e395448d15f3de73
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 05023ca937ab8ff74323f4dbcbe52643e5efa01d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37022360"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399462"
 ---
-# <a name="unsupported-transaction-protocol"></a>トランザクション プロトコルがサポートされていません
+# <a name="unsupported-transaction-protocol"></a>サポートされていないトランザクション プロトコル
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                    |
@@ -33,7 +33,7 @@ ms.locfileid: "37022360"
 |  メッセージ テキスト   |                       サポートされていないトランザクション プロトコル: {0}                        |
   
 ## <a name="explanation"></a>説明  
- このエラーは、受信場所または送信ポートのトランザクション プロトコル プロパティが無効な値に設定されているときに発生します。  
+ このエラーは、受信場所または送信ポートのトランザクション プロトコル プロパティが無効な値に設定されている場合に発生します。  
   
 ## <a name="user-action"></a>ユーザーの操作  
  このエラーを解決するには、以下の 1 つ以上の操作を実行します。  
@@ -42,7 +42,7 @@ ms.locfileid: "37022360"
   
 2. コンソール ルートで  [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]、展開**BizTalk グループ**、展開**アプリケーション**します。  
   
-3. アプリケーションを特定し、次にトランスポートを特定します。  
+3. アプリケーションを見つけて、トランスポートを特定します。  
   
 4. トランスポート名を右クリックします。  
   
@@ -50,7 +50,7 @@ ms.locfileid: "37022360"
   
 6. ポート**型**一覧で、適切なポートを選択します。  
   
-7. クリックして**構成**します。  
+7. をクリックして**構成**です。  
   
 8. **WCF [**<em>トランスポートの種類</em>**] トランスポートのプロパティ**ダイアログ ボックスで、をクリックして、**バインド**タブ。  
   
@@ -58,9 +58,9 @@ ms.locfileid: "37022360"
   
 10. **トランザクション プロトコル**ドロップダウン リストで、いずれかを選択**OleTransactions**または **[wsatomictransactions]** します。  
   
-    これらの手順が適用されるのは、次のトランスポートの種類のみです。  
+    次の手順は、次のトランスポートの種類にのみ適用されます。  
   
--   Custom  
+-   カスタム  
   
 -   CustomIsolated  
   

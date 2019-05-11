@@ -12,12 +12,12 @@ caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: db413cfef1e49f1f3177d8a9f578c94f5a2a1a28
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 19c05eff239a24eeb092f1531691d787fcba67ef
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36998147"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65387061"
 ---
 # <a name="how-to-calculate-dehydration"></a>退避を計算する方法
 退避を計算するには、構成されたプロパティおよび特定の実行時の値を使用します。 仮定の退避シナリオを計算する方法を次の例に示します。  
@@ -36,7 +36,7 @@ ms.locfileid: "36998147"
    ```  
   
    > [!NOTE]
-   >  OptimalUsage と MaximalUsage には各退避プロパティの既定値があります。 これらの値は BTSNTSvc.exe.config ファイルで変更できます。 詳細については、[既定の退避プロパティ](../core/dehydration-default-properties.md)を参照してください。  
+   >  OptimalUsage と MaximalUsage には各退避プロパティの既定値があります。 これらの値は BTSNTSvc.exe.config ファイルで変更できます。 詳細については、次を参照してください。[既定の退避プロパティ](../core/dehydration-default-properties.md)します。  
   
 2. その他の alpha コンポーネントも同様に定義します。 次のように定義します。  
   
@@ -52,7 +52,7 @@ ms.locfileid: "36998147"
    ```  
   
    > [!NOTE]
-   >  MinThreshold の既定値 = 1。 MaxThreshold の既定値 = 1800。 これらの値は BTSNTSvc.exe.config ファイルで変更できます。 詳細については、[既定の退避プロパティ](../core/dehydration-default-properties.md)を参照してください。  
+   >  MinThreshold の既定値 = 1。 MaxThreshold の既定値 = 1800。 これらの値は BTSNTSvc.exe.config ファイルで変更できます。 詳細については、次を参照してください。[既定の退避プロパティ](../core/dehydration-default-properties.md)します。  
   
 4. 次に TimeBlocked と EstimatedTime を定義します。  
   

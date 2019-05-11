@@ -1,5 +1,5 @@
 ---
-title: EDI および AS2 ソリューションのトラブルシューティング |Microsoft ドキュメント
+title: EDI および AS2 ソリューションのトラブルシューティング |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,15 +12,15 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f1d9b2862464da17a541733d1e5cff4a3ba29e36
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 0fbd1e3cffcad8abd24b0123c49765283bc0fdb8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26006211"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65398670"
 ---
 # <a name="troubleshooting-edi-and-as2-solutions"></a>EDI および AS2 ソリューションのトラブルシューティング
-このセクションのトピックでは、BizTalk Server の EDI および AS2 ソリューションに関する既知の問題について説明し、識別し、EDI および AS2 ソリューションで発生する可能性がある問題の解決に使用できる一般的なトラブルシューティング手順を説明します。  
+このセクションのトピックでは、BizTalk server の EDI および AS2 ソリューションに関する既知の問題を説明し、識別し、EDI および AS2 ソリューションで発生する可能性がある問題の解決に使用できる一般的なトラブルシューティング手順について説明します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10554 |Microsoft Docs'
+title: シングル サインオン:イベント 10554 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2d4b4c30804f553c4cda86641098c4a6db56a83e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 0a3bb82933c6a37ad73bd1d134d5a36dc2e93904
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36977443"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65398865"
 ---
-# <a name="single-sign-on-event-10554"></a>シングル サインオン: イベント 10554
+# <a name="single-sign-on-event-10554"></a>シングル サインオン:イベント 10554
 ## <a name="details"></a>詳細  
   
 |                 |                                                            |
@@ -30,10 +30,10 @@ ms.locfileid: "36977443"
 |  イベント ソース   |                           ENTSSO                           |
 |    コンポーネント    |                            なし                             |
 |  シンボル名  |          SSO_ERROR_LOOKUP_CALLBACK_ACCESS_DENIED           |
-|  メッセージ テキスト   |               サーバー参照アクセスが拒否されました。%r               |
+|  メッセージ テキスト   |               参照サーバー アクセス denied.%r               |
   
 ## <a name="explanation"></a>説明  
- メッセージはサーバーに送信されましたが、応答はブロックされました。 原因として、プロトコルが正しくない、サーバーのセキュリティ アクセス許可が不十分など、さまざまな理由が考えられます。  
+ メッセージがサーバーに送信されましたが、応答がブロックされました。 さまざまなプロトコルが正しくないやサーバー上の不十分なセキュリティ アクセス許可など、さまざまな理由の可能性があります。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- エラー ログの情報をメモに取り、製品サポート サービスにお問い合わせください。
+ エラー ログの情報をメモし、製品サポート サービスにお問い合わせください。

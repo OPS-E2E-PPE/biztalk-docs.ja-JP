@@ -1,5 +1,5 @@
 ---
-title: WCF サービスとして公開されたオーケストレーションからエラー例外をスローする方法 |Microsoft ドキュメント
+title: WCF サービスとして公開されたオーケストレーションからエラー例外をスローする方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,19 +17,19 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9bf64501f619e74991fafa59b2ab1c2a3e62cbca
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 49be352326a789e77d84cb5ecb77fd0f48c5e1f4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22255738"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65383692"
 ---
 # <a name="how-to-throw-fault-exceptions-from-orchestrations-published-as-wcf-services"></a>WCF サービスとして公開されたオーケストレーションからエラー例外をスローする方法
-オーケストレーションから送信できる SOAP エラーには、型指定された SOAP エラーと型指定されていない SOAP エラーという 2 種類があります。 型指定された SOAP エラーとは、操作が必要がある、 **System.ServiceModel.FaultContractAttribute**カスタム SOAP エラーの種類を指定します。 型指定されていない SOAP エラーとは、操作のコントラクトで指定されていないエラーのことです。  
+オーケストレーションから送信できる SOAP エラーの 2 つの種類: 型指定されており、SOAP エラーを型指定されていません。 操作が必要がある型指定された SOAP エラーは、 **System.ServiceModel.FaultContractAttribute**カスタム SOAP エラーの種類を指定します。 型指定されていない SOAP エラーは、操作のコントラクトで指定されていないことです。  
   
- WCF アダプタでは、WCF サービスとして公開されたオーケストレーションに関する型指定されたエラー コントラクト例外を処理できません。 ただし、型指定されていない SOAP エラーは、オーケストレーションまたはパイプラインによって常に返すことができます。 型指定されていない SOAP エラーを返すには、設定する必要があります、 **System.ServiceModel.ServiceBehaviorAttribute.IncludeExceptionDetailInFaults**受信場所で、または情報を取得する WCF クライアントを許可するように、構成ファイルに内部サービス操作例外。  
+ WCF アダプタでは、WCF サービスとして公開されたオーケストレーションの型指定されたエラー コントラクト例外を処理することはできません。 ただし、型指定されていない SOAP エラーは、常に、オーケストレーションまたはパイプラインによって返されることができます。 型指定されていない、SOAP エラーを返すには、設定する必要があります、 **System.ServiceModel.ServiceBehaviorAttribute.IncludeExceptionDetailInFaults**または情報を取得する WCF クライアントを許可するように、構成ファイルで、受信場所でについては、内部サービス操作例外。  
   
- 次のサンプル コードで、構成ファイルにプロパティを設定する方法を示します。  
+ 次のコードでは、構成ファイルでプロパティを設定する方法を示します。  
   
 ```  
 <?xml version="1.0" encoding="utf-8"?>  

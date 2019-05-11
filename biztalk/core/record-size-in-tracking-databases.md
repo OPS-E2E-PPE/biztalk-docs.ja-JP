@@ -1,5 +1,5 @@
 ---
-title: 追跡データベースのレコード サイズ |Microsoft ドキュメント
+title: 追跡データベースのサイズを記録 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,17 +14,17 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d1f4d09d1af92ce4777f5036885d81ea7bf3e648
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b1e19e5861a061294806c428d300d475ac2e21c4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22268314"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65398046"
 ---
 # <a name="record-size-in-tracking-databases"></a>追跡データベースのレコード サイズ
 次の表は、追跡データベースのさまざまなイベント レコードに予期されるレコード サイズを示しています。この表は、BizTalk のハードウェア要件を計画する際に役立ちます。  
   
-|アクションの種類|サイズ|注|  
+|アクションの種類|サイズ|メモ|  
 |-----------------|----------|-----------|  
 |サービスの展開|1864 + シンボル情報のサイズ。|シンボル情報は、オーケストレーションのサイズによって異なります。 たとえば、1 つのメッセージを受信し、1 つのメッセージを送信し、2 つの図形を含むオーケストレーションのサイズは約 4000 バイトです。|  
 |開始して正常に完了したサービスのインスタンス|通常は 252 バイト。<br /><br /> 特殊な場合には 735 バイトまで増大します。||  
@@ -35,4 +35,4 @@ ms.locfileid: "22268314"
   
 ## <a name="see-also"></a>参照  
  [メッセージの追跡とは](../core/what-is-message-tracking.md)   
- [管理と追跡アーキテクチャ](../core/management-and-tracking-architecture.md)
+ [アーキテクチャの管理および追跡](../core/management-and-tracking-architecture.md)

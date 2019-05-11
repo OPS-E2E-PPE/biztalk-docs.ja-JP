@@ -1,5 +1,5 @@
 ---
-title: 式図形を使用する方法 |Microsoft ドキュメント
+title: 式図形を使用する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,23 +17,23 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e263454db9674d5bc86b6b7dae1649003f3d129c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f26184af9976764f77276e256332d5750e35e5fc
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22256058"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65383404"
 ---
-# <a name="how-to-use-expression-shape"></a>式図形の使用方法
-**式**図形では、オーケストレーションで選択した任意の xlang/s 式を入力することができます。 たとえば、外部プログラムに対して .NET 呼び出しを行ったり、オーケストレーション変数の値を操作できます。  
+# <a name="how-to-use-expression-shape"></a>式図形を使用する方法
+**式**図形では、オーケストレーションで選択した任意の xlang/s 式を入力することができます。 たとえば、外部プログラムを実行する .NET 呼び出しを行うまたは単に、オーケストレーション変数の値を操作できます。  
   
- 中に、**式**図形が非常に柔軟なはないを使用して、オーケストレーション図面自体に表示可能であればされますが、高度なオーケストレーション ロジックを実行することをお勧めします。 一般に、わかりやすくなり、オーケストレーションが保持は、**式**図形には、単純なモジュール形式の式が含まれています。  
+ 中に、**式**図形が非常に柔軟なことはないを使用して、可能であれば、オーケストレーション図面自体に表示される可能性のある高度なオーケストレーション ロジックを実行することをお勧めします。 一般に、簡単に理解して場合、オーケストレーションの管理は、**式**図形は、単純なモジュール形式の式を含めることができます。  
   
 ### <a name="to-configure-an-expression-shape"></a>式図形を構成するには  
   
-1.  BizTalk 式エディターが表示されていない場合を右クリックし、**式**図形をクリックして**式の編集**か、[プロパティ] ウィンドウをクリックして、省略記号ボタン (**.**) ボタンをクリックして、**式**プロパティです。  
+1.  BizTalk 式エディターが表示されていない場合を右クリックし、**式**図形し、クリックして**式の編集**プロパティ ウィンドウで、省略記号ボタンをクリックしますまたは、(**.。**) ボタンを**式**プロパティ。  
   
-2.  BizTalk 式エディターで、値を割り当てる式を作成します。 詳細については、次を参照してください。[式の要件と制限](../core/requirements-and-limitations-for-expressions.md)です。  
+2.  BizTalk 式エディターでは、値を代入する式を作成します。 詳細については、次を参照してください。[式の要件と制限](../core/requirements-and-limitations-for-expressions.md)します。  
   
 ## <a name="see-also"></a>参照  
- [XLANG の言語](../core/xlang-s-language.md)
+ [XLANG-s 言語](../core/xlang-s-language.md)

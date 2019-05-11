@@ -1,5 +1,5 @@
 ---
-title: TIBCO Rendezvous のデータ型のマッピングの送信ハンドラーの |Microsoft ドキュメント
+title: TIBCO Rendezvous のデータ型のマッピングの送信ハンドラーの |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,20 +12,20 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bda336d149d373477b26efeb2e4b05de4aac7554
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: 57987751e57353820f243d914da08f2fc57a73c3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
-ms.locfileid: "24015241"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65352662"
 ---
 # <a name="data-type-mapping-for-send-handlers-in-tibco-rendezvous"></a>TIBCO Rendezvous での送信ハンドラーのデータ型マッピング
-XML スキーマの種類は、TIBCO Rendezvous に型情報 (xsi:type=) が提供されている場合にのみ、TIBCO Rendezvous の型にマップできます。 サポートされない型はすべて、可能な場合は、文字列にマップされます。 マップできない場合、またはポート構成でこのオプションが無効である場合は、エラーが生成されます。  
+XML スキーマの種類から TIBCO Rendezvous の型へのマッピングは、TIBCO Rendezvous は、型情報を提供します。 場合にのみ実行可能 (xsi:type =)。 サポートされていない型は、可能な場合、文字列にマップされます。 マッピングが可能であれば、ない場合、またはポートの構成で、オプションが無効になっている場合は、エラーが生成されます。  
   
-## <a name="xml-schema-to-tibco-rendezvous-data-type-mapping"></a>XML スキーマと TIBCO Rendezvous のデータ型マッピング  
- 次の表に、XML スキーマの種類から TIBCO Rendezvous の型への可能なマッピングを示します。  
+## <a name="xml-schema-to-tibco-rendezvous-data-type-mapping"></a>XML スキーマと TIBCO Rendezvous のデータ型のマッピング  
+ 次の表では、TIBCO Rendezvous の型を XML スキーマ型から可能なマッピングを示します。  
   
-|XML の種類|TIBCO RV 型|  
+|XML 型|TIBCO RV 型|  
 |--------------|-------------------|  
 ||TIBRVMSG_MSG|  
 ||TIBRVMSG_XML|  
@@ -53,12 +53,12 @@ XML スキーマの種類は、TIBCO Rendezvous に型情報 (xsi:type=) が提�
 |tibrv:arrayOfUnsignedLong|TIBRVMSG_U64ARRAY|  
 |tibrv:arrayOfFloat|TIBRVMSG_F32ARRAY|  
 |tibrv:arrayOfDouble|TIBRVMSG_F64ARRAY|  
-|その他 - デバッグ メッセージあり|TIBRVMSG_STRING (ログ)|  
+|その他 - デバッグ メッセージあり|TIBRVMSG_STRING ログ。|  
   
- BizTalk Adapter for TIBCO Rendezvous はスキーマにアクセスできないので、BizTalk Server から TIBCO Rendezvous に送信する場合は、すべての非文字列フィールドについて XML `xsi:type` 属性を提供する必要があります。 アダプターはこの情報を使用して、TIBCO Rendezvous メッセージに、適切なメッセージ フィールドの型を生成します。  
+ BizTalk Adapter for TIBCO Rendezvous は、スキーマへのアクセスがあるない BizTalk Server から TIBCO Rendezvous に送信するときに、ために、XML を指定する必要があります`xsi:type`非文字列フィールドの属性。 アダプターでは、その情報を使用して、TIBCO Rendezvous メッセージに適切なメッセージ フィールドの型を生成します。  
   
 ## <a name="message-mapping-example"></a>メッセージ マッピングの例  
- 次に、BizTalk Server から TIBCO Rendezvous へのメッセージ マッピングの例を示します。 型のマップ方法の詳細は、データ型マッピングの表を参照してください。  
+ 次の例では、BizTalk Server から TIBCO Rendezvous へのメッセージのマッピングを示します。 型をマップする方法については、データ型のマッピング テーブルを参照してください。  
   
 ```  
 <ns:QuoteUpdate xmlns:xsi http://www.w3.org/2001/XMLSchema-instance"  
@@ -102,7 +102,7 @@ xmlns:ns="some namespace for this message [value not important, unless the schem
   
 ```  
   
- 前のメッセージが構造化された TIBCO Rendezvous メッセージとして生成されると、6 つのフィールドがある最上位 TibcoMsg インスタンスになります。 最後のフィールドは、配列型の 2 つのフィールドで構成されるサブメッセージです (アイテム要素は TIBCO Rendezvous メッセージ フィールドにはマップされず、`array` 型のメッセージ フィールドの要素としてマップされます)。 型の仕様を持たない、MarketCap フィールドは文字列フィールドのメッセージとして送信されます。  
+ 前のメッセージが構造化 TIBCO Rendezvous メッセージとして生成されると、6 つのフィールドの最上位 TibcoMsg インスタンスがあります。 最後のフィールドは、配列型の 2 つのフィールドから成る、サブ メッセージ ('item' 要素は TIBCO Rendezvous メッセージ フィールドには、型の 1 つのメッセージ フィールド内の要素にマップされていない`array`)。 型の指定がない、MarketCap フィールドは、メッセージの文字列フィールドとして送信されます。  
   
 ## <a name="see-also"></a>参照  
  [TIBCO Rendezvous 送信ハンドラーの作成](../core/creating-tibco-rendezvous-send-handlers.md)

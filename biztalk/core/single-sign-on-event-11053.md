@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 11053 |Microsoft Docs'
+title: シングル サインオン:イベント 11053 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e1a2e6d46505834f74789b7fa0a880eb90f02723
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e2249e618ecddbb1bfdabdbbdd34fe3baca71c99
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37008123"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65400914"
 ---
-# <a name="single-sign-on-event-11053"></a>シングル サインオン: イベント 11053
+# <a name="single-sign-on-event-11053"></a>シングル サインオン:イベント 11053
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                                                                                                                                                                                                                                                                                                                                 |
@@ -30,12 +30,12 @@ ms.locfileid: "37008123"
 |  イベント ソース   |                                                                                                                                                                                             ENTSSO                                                                                                                                                                                              |
 |    コンポーネント    |                                                                                                                                                                                               なし                                                                                                                                                                                               |
 |  シンボル名  |                                                                                                                                                                                  SSO_WARN_APP_ADMIN_NOT_GROUP                                                                                                                                                                                   |
-|  メッセージ テキスト   | アプリケーション管理者アカウントには、1 つまたは複数の単独 (グループではない) アカウントを含めることができます。 これらの単独アカウントが Active Directory またはローカル コンピューターから削除された場合は、そのアカウントを直ちに SSO システムから削除する必要があります。削除しない場合、セキュリティ リスクになるおそれがあります。%r<br /><br /> アプリケーション名: %1 %r<br /><br /> アプリケーション管理者: % 2 %r<br /><br /> 個々 のアカウント: %3 |
+|  メッセージ テキスト   | アプリケーション管理者アカウントには、1 つまたは複数の個人が含まれています (グループではない) アカウント。 この単独アカウントが Active Directory またはローカル コンピューターから削除された場合は、SSO システムからすぐに削除する必要があります。 またはセキュリティ risk.%r になる可能性があります。<br /><br /> アプリケーション名: %1 %r<br /><br /> アプリケーション管理者: % 2 %r<br /><br /> 個々 のアカウント: %3 |
   
 ## <a name="explanation"></a>説明  
- 単独アカウントを Active Directory またはローカル コンピューターから削除しても、SSO システムからそのアカウントが自動的に削除されるわけではありません。 つまり、アカウント USER1 がローカルで削除され、その後、別のユーザー (新入社員など) が同じ名前でシステムに参加した場合、元の USER1 が持っていたすべてのセキュリティ権限が SSO システムによって新しい USER1 に付与されることになります。 ここで、セキュリティ リスクが生じる。  
+ Active Directory またはローカル コンピューターから個別のアカウントを削除する自動的にアカウントは削除されず、SSO システムから。 つまり、アカウントの USER1 がローカルで削除し、別のユーザー (たとえば、新しい従業員) に同じ名前を使用して、システムが参加している場合、SSO システムは新しい USER1 に付与、元の USER1 が所有するすべてのセキュリティ権限。 ここで、セキュリティ リスクが生じる。  
   
- SSO 管理者アカウントでは Active Directory グループ (単独ではない) アカウントを使用することをお勧めします。  
+ ベスト プラクティスとしては、SSO 管理者アカウントが Active Directory グループ (単独ではない) アカウントを使用することをお勧めします。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- 単独アカウントが Active Directory またはローカル コンピューターから削除されるまで、何もする必要はありません。 単独アカウントが削除された時点で、そのアカウントをできるだけ早く SSO システムから削除する必要があります。
+ 操作は必要ありません、個々 のアカウントが Active Directory またはローカル コンピューターから削除されるまでです。 その時点では、SSO システムから個々 のアカウントをできるだけ早く削除する必要があります。

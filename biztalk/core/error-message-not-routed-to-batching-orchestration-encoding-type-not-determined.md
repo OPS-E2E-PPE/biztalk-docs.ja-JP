@@ -12,14 +12,14 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 777f23ccfc1b79e2fca4ece8e67370513723ac27
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e74a5e8768115af8c70cc54278552d19f7532371
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36990187"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65388639"
 ---
-# <a name="the-message-cannot-be-routed-to-the-batching-orchestration-as-the-encoding-type-could-not-be-determined"></a>エンコードの種類を決定できなかったため、バッチ処理オーケストレーションへメッセージをルーティングできません
+# <a name="the-message-cannot-be-routed-to-the-batching-orchestration-as-the-encoding-type-could-not-be-determined"></a>メッセージをルーティングできません、バッチ処理オーケストレーションにエンコードの種類を特定できませんでした。
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                                                                                                                             |

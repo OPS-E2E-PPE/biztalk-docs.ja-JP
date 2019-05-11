@@ -16,12 +16,12 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c3acc788e1c0bfeb9e722aee0b55d66e6f09d096
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8fadf61b4791234076ae7e77be0ec6447a4aeda7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36991443"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65385362"
 ---
 # <a name="how-to-delete-a-receive-location"></a>受信場所を削除する方法
 このトピックでは、BizTalk Server 管理コンソールを使用して、受信場所を削除する方法について説明します。 削除した受信場所は、BizTalk 管理データベースから削除され、BizTalk Server 管理コンソールに表示されなくなります。  
@@ -30,7 +30,7 @@ ms.locfileid: "36991443"
   
 -   受信場所を削除する前にする必要があります最初に無効にすること、」の説明に従って[受信場所を無効にする方法](../core/how-to-disable-a-receive-location.md)します。  
   
--   受信ポートのプライマリ受信場所を削除することはできません。 プライマリ受信場所を削除しようとすると、エラー メッセージが表示されます。 受信場所を削除するには、受信ポートを削除してそれに含まれるすべての受信場所を削除するか、または別の受信場所をプライマリに設定してから元の受信場所を削除します。 プライマリ受信場所の受信場所を作成する手順については、[受信場所のプロパティを編集する方法](../core/how-to-edit-the-properties-of-a-receive-location.md)を参照してください。  
+-   受信ポートのプライマリ受信場所を削除することはできません。 プライマリ受信場所を削除しようとすると、エラー メッセージが表示されます。 受信場所を削除するには、受信ポートを削除してそれに含まれるすべての受信場所を削除するか、または別の受信場所をプライマリに設定してから元の受信場所を削除します。 プライマリ受信場所の受信場所を作成する手順については、次を参照してください。[受信場所のプロパティを編集する方法](../core/how-to-edit-the-properties-of-a-receive-location.md)します。  
   
 -   受信場所を削除した後、削除した受信場所に対応する分離ホストのワーカー プロセスを再起動します。  
   

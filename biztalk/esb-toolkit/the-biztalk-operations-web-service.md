@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0b9a78dddbbd76566c5c97b1e571e5ad80073d4a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8edbccd04ae86d4cfc9861240061c6cf390f9b32
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36997971"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399866"
 ---
 # <a name="the-biztalk-operations-web-service"></a>BizTalk 操作 Web サービス
 Microsoft BizTalk 操作 Web サービスは、オブジェクトおよび BizTalk Server のメッセージに関する情報を公開します。 サービス名が**ESB.BizTalkOperationsService**とサービスがさまざまなホスト、オーケストレーション、アプリケーション、および BizTalk アプリケーションの状態の一覧などの項目を返すメソッドを公開します。  
@@ -83,7 +83,7 @@ Microsoft BizTalk 操作 Web サービスは、オブジェクトおよび BizTa
   
   SQL Server Management studio では、必要なアクセス許可を構成できます。 これを行うには、展開**セキュリティ**オブジェクト エクスプ ローラーの左側のウィンドウのツリー ビューで展開**ロール**、展開**DatabaseRoles**、BTS_ADMIN_USERS ロールを選択し、編集、図 1 に示すように、このロールのプロパティです。  
   
-  ![SQL Server 管理 Studio](../esb-toolkit/media/ch4-sqlservermgmtstudio.gif "Ch4 SQLServerMgmtStudio")  
+  ![SQL Server Mgmt Studio](../esb-toolkit/media/ch4-sqlservermgmtstudio.gif "Ch4-SQLServerMgmtStudio")  
   
   **図 1**  
   

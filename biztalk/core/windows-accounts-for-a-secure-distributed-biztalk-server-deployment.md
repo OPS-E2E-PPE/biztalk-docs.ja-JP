@@ -23,17 +23,17 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e05753c1693de75bbe6fa8422162a8c6e284bcff
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 493f0e9e095a5de8b1fc57eec658981ea3befa88
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36985699"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65401566"
 ---
 # <a name="windows-accounts-for-a-secure-distributed-biztalk-server-deployment"></a>セキュリティで保護された分散型 BizTalk Server 展開向けの Windows アカウント
-BizTalk Server の展開のシステム アーキテクチャの詳細については、[Sample BizTalk Server Architectures](../core/sample-biztalk-server-architectures.md)を参照してください。  
+BizTalk Server の展開のシステム アーキテクチャの詳細については、次を参照してください。 [Sample BizTalk Server Architectures](../core/sample-biztalk-server-architectures.md)します。  
   
- このセクションでは、分散型 BizTalk Server 環境の Windows グループとアカウントを作成するための推奨事項について説明します。 グループ名とアカウント名は、グループとアカウントの機能に基づいた提案です。 これらのグループとアカウントの名前は自由に選択できます。 分散型 BizTalk Server アーキテクチャの詳細については、[大規模な分散アーキテクチャ](../core/large-distributed-architecture.md)を参照してください。  
+ このセクションでは、分散型 BizTalk Server 環境の Windows グループとアカウントを作成するための推奨事項について説明します。 グループ名とアカウント名は、グループとアカウントの機能に基づいた提案です。 これらのグループとアカウントの名前は自由に選択できます。 分散型 BizTalk Server アーキテクチャの詳細については、次を参照してください。[大規模な分散アーキテクチャ](../core/large-distributed-architecture.md)します。  
   
 ## <a name="windows-groups-for-a-secure-distributed-biztalk-server-deployment"></a>セキュリティで保護された分散型 BizTalk Server 展開向けの Windows グループ  
  次の表は、ドメイン管理者によりデータ層内のドメイン コントローラーに作成することが推奨される Windows グループを示しています。  
@@ -46,7 +46,7 @@ BizTalk Server の展開のシステム アーキテクチャの詳細につい�
   
 - BizTalk Server オペレータ  
   
-  BizTalk Server で使用される Windows グループの詳細については、[Windows グループと BizTalk Server でのユーザー アカウント](../core/windows-groups-and-user-accounts-in-biztalk-server.md)を参照してください。  
+  BizTalk Server で使用される Windows グループの詳細については、次を参照してください。 [Windows グループと BizTalk Server でのユーザー アカウント](../core/windows-groups-and-user-accounts-in-biztalk-server.md)します。  
   
   次の表は、上記のドメイン グループ以外に、ドメイン管理者がデータ層内のドメイン コントローラーに作成する、セキュリティで保護された展開専用の追加グループを示しています。  
   
@@ -66,7 +66,7 @@ BizTalk Server の展開のシステム アーキテクチャの詳細につい�
 ## <a name="windows-user-or-service-accounts-for-a-secure-distributed-biztalk-server-deployment"></a>セキュリティで保護された分散型 BizTalk Server 展開向けの Windows ユーザーまたはサービス アカウント  
  次の表は、ドメイン管理者によりデータ ドメインのドメイン コントローラーに作成することが推奨されるアカウントを示しています。 ドメイン管理者は、アカウントが対象グループのメンバーであることを確認する必要があります。  
   
- BizTalk Server で使用されるユーザー アカウントについての詳細については、[Windows グループと BizTalk Server でのユーザー アカウント](../core/windows-groups-and-user-accounts-in-biztalk-server.md)を参照してください。  
+ BizTalk Server で使用されるユーザー アカウントについての詳細については、次を参照してください。 [Windows グループと BizTalk Server でのユーザー アカウント](../core/windows-groups-and-user-accounts-in-biztalk-server.md)します。  
   
 |アカウント名 (例)|型|グループのメンバー|  
 |------------------------------|----------|---------------------|  
@@ -76,7 +76,7 @@ BizTalk Server の展開のシステム アーキテクチャの詳細につい�
 |BizTalk 管理者|ユーザー|BizTalk 管理者<br /><br /> SSO 関連管理者|  
 |BizTalk オペレーター|ユーザー|BizTalk Operators|  
 |BizTalk 処理 1|サービス|BizTalk 処理ホスト ユーザー 1|  
-|BizTalk 処理 2**注:** 環境内の各処理ホストの複数のアカウントを作成できます。|サービス|BizTalk 処理ホスト ユーザー 1|  
+|2 を処理する BizTalk**に注意してください。** 環境内の各処理ホストの複数のアカウントを作成できます。|サービス|BizTalk 処理ホスト ユーザー 1|  
 |BizTalk 追跡|サービス|BizTalk 追跡ホスト ユーザー|  
 |SOAP アダプター|サービス|BizTalk SOAP ユーザー|  
 |HTTP アダプター|サービス|BizTalk HTTP ユーザー|  

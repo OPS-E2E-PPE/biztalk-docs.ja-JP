@@ -1,5 +1,5 @@
 ---
-title: 開発者ツール |Microsoft ドキュメント
+title: 開発者ツール |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,14 +14,14 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 90649fa64135e8a7826fc8572b4bbdccd2c43dc7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1113c760b19c25e3a71fc8bfc825a5462c76c740
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22239562"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65389488"
 ---
-# <a name="developer-tools"></a>開発者用ツール
+# <a name="developer-tools"></a>開発者ツール
 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] には、BizTalk アプリケーションのさまざまな要素を設計、準備、ビルドするための BizTalk プロジェクト システム設計環境が用意されています。  
   
  BizTalk プロジェクト システムは Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] でホストされるため、ユーザーは統合された環境で設計を行うことができます。 BizTalk プロジェクト システムは、Visual Studio で利用できるいくつかのプロジェクト システムの 1 つで、多くの Visual Studio 標準ツール、エディター、およびその他のユーザー インターフェイスを使用できます。 たとえば、ソリューション エクスプローラーを使用してビジネス ソリューション内で BizTalk プロジェクトを管理し、プロパティ ウィンドウを使用してファイル、プロジェクト、およびソリューションのプロパティを表示および編集できます。  
@@ -34,10 +34,10 @@ Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernover
   
 -   [BizTalk プロジェクト システムの使用](../core/using-the-biztalk-project-system.md)  
   
--   [Visual Studio の使用](../core/using-visual-studio.md)  
+-   [Visual Studio を使用](../core/using-visual-studio.md)  
   
--   [BizTalk プロジェクトでの作業](../core/working-with-biztalk-projects.md)  
+-   [BizTalk プロジェクトの操作](../core/working-with-biztalk-projects.md)  
   
--   [BizTalk プロジェクトに含まれる BizTalk Namespace 参照について](../core/about-biztalk-namespace-references-included-in-biztalk-projects.md)  
+-   [BizTalk プロジェクト内の BizTalk 名前空間参照について](../core/about-biztalk-namespace-references-included-in-biztalk-projects.md)  
   
 -   [MSBUILD の統合](../core/msbuild-integration.md)

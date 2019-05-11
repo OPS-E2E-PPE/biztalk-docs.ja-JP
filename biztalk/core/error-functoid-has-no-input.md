@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8fd2626d0b3332ddbf2def47502e7b323a0ae0e7
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: db8ea58b62537d26b8bc088d84eefa6186dc8941
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37000779"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65348356"
 ---
 # <a name="error---functoid-has-no-input"></a>エラー - Functoid に入力がありません。
 **エラー コード**  
@@ -28,12 +28,12 @@ ms.locfileid: "37000779"
 
  **説明**  
 
- Functoid には少なくとも 1 つの入力パラメーターが必要ですが、入力パラメーターが指定されていません。  
+ 対象の functoid には、少なくとも 1 つの入力パラメーターが必要ですが、入力パラメーターが指定されていません。  
 
  **ユーザーの操作**  
 
- 次のうちの 1 つまたは両方の方法を使用して、Functoid に適切な数の入力パラメーターを指定します。その際、想定されている入力パラメーターの順序に特に注意してください。  
+ 入力パラメーターの予想される順序に特に注意してください、対象の functoid の入力パラメーターの適切な数を提供するのに、次のメソッドの一方または両方を使用します。  
 
-- 送信元スキーマまたは他の Functoid の出力のいずれかのノードと対象の Functoid の間でドラッグしてリンクを作成します。他の Functoid とは、マップ グリッド ページで対象の Functoid の左側に表示されている Functoid を指します。  
+- ドラッグすると、送信元スキーマまたはマップのグリッド ページで、対象の functoid の左側にある他の functoid の出力で、対象の functoid といずれかのノード間のリンクを作成します。  
 
-- 対象の functoid を選択し、省略記号をクリックします (**.**) ボタンに関連付けられている、**入力パラメーター**プロパティで、Microsoft[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]プロパティ ウィンドウを構成して、入力パラメーターの順序を変更、**構成\<Functoid\> Functoid**  ダイアログ ボックス。 このダイアログ ボックスでは、定数入力パラメーターを作成して値を設定し、他の入力パラメーターを考慮したうえで適切な順序に配置できます。
+- 対象の functoid を選択し、省略記号をクリックします (**.**) ボタンに関連付けられている、**入力パラメーター**プロパティで、Microsoft[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]プロパティ ウィンドウを構成して、入力パラメーターの順序を変更、**構成\<Functoid\> Functoid**  ダイアログ ボックス。 定数入力パラメーターの作成、指定された値、およびこのダイアログ ボックスで、その他の入力パラメーターを基準とした適切な順序で配置できます。

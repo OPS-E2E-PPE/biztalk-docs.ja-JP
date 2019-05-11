@@ -1,5 +1,5 @@
 ---
-title: BAM 構成スキーマの変更 |Microsoft ドキュメント
+title: BAM 構成スキーマの変更 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,22 +16,22 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 87721445a19cff96799418c019560d09a1287488
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 18537eca346eef03676978a0e80c31e2daed9ba1
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22263282"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65527587"
 ---
 # <a name="modifying-the-bam-configuration-schema"></a>BAM 構成スキーマの変更
-この構成ファイルは、構成ウィザードで自動的に作成されます。 サーバー名または他の構成情報を変更する場合、展開の完了後に、このファイルを手動で変更する必要があります。  
+構成ウィザードでは、この構成ファイルが自動的に作成します。 展開を完了した後、サーバー名または他の構成情報を変更する場合は、このファイルを手動で変更する必要があります。  
   
 > [!NOTE]
->  BAM 構成ファイルに加えた変更を反映するには、管理者が、現在展開している BAM 構成の展開を解除し、更新した BAMConfiguration.xml を展開する必要があります。  
+>  BAM 構成ファイルの変更を適用するには、は、管理者は現在 BAM 構成では、展開解除し、更新した BAMConfiguration.xml を展開する必要があります。  
   
- BAM 定義を展開解除については、次を参照してください。 [BAM 定義を展開解除](../core/how-to-remove-bam-definitions.md)です。 BAM 定義の展開方法の詳細については、次を参照してください。 [BAM 定義の展開](../core/how-to-deploy-bam-definitions.md)です。  
+ BAM 定義を展開解除については、次を参照してください。 [BAM 定義を展開解除](../core/how-to-remove-bam-definitions.md)します。 BAM 定義の展開方法の詳細については、次を参照してください。 [BAM 定義の展開](../core/how-to-deploy-bam-definitions.md)します。  
   
- BAMConfiguration.xml ファイルに使用されているスキーマを次に示します。  
+ BAMConfiguration.xml ファイルで使用されるスキーマを次に示します。  
   
 ```  
 <?xml version="1.0" encoding="utf-16" ?>  
@@ -59,7 +59,7 @@ ms.locfileid: "22263282"
 </xs:schema>  
 ```  
   
- BAM 構成スキーマに準拠した XML ファイルの例を次に示します。  
+ 次の例は、BAM 構成スキーマに準拠した XML ファイルです。  
   
 ```  
 <?xml version="1.0" encoding="utf-8" ?>  
@@ -100,4 +100,4 @@ ms.locfileid: "22263282"
 ## <a name="see-also"></a>参照  
  [BAM 構成スキーマ](../core/bam-configuration-schema.md)   
  [BAM のセキュリティに関する推奨事項](../core/bam-security-recommendations.md)   
- [ビジネス アクティビティ監視 (BAM)](../core/business-activity-monitoring-bam.md)
+ [ビジネス アクティビティの監視 (BAM)](../core/business-activity-monitoring-bam.md)

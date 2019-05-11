@@ -25,12 +25,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8edec4b1c852a542068b1b5df6a8b58de390907f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d527e789378a19fc22ef96677032f2f2d91c74d6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37004435"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377323"
 ---
 # <a name="message-repair-and-new-submission-service-processing"></a>Message Repair and Submission サービスの新しい処理
 MrsrRepair オーケストレーションで、次の処理を含め、すべて Message Repair and New Submission 操作を処理します。  

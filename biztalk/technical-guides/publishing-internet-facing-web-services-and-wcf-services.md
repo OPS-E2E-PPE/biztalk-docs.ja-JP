@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 32a0478e43f87dfbf29f736fde062c67fb4a94cc
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c16812fc99c6fa38ad55c7e69afb8b6bb256136c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37009203"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399550"
 ---
 # <a name="publishing-internet-facing-web-services-and-wcf-services"></a>インターネットに接続する Web サービスと WCF サービスの発行
 複数のアプローチを使用して、パブリッシング用[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]Web サービスと WCF サービスをインターネット。  
@@ -33,9 +33,9 @@ ms.locfileid: "37009203"
   
  詳細については、リバース プロキシを使用して、BizTalk Server ヘルプで、次のトピックを参照してください。  
   
--   ["サンプル アーキテクチャ: HTTP アダプターと SOAP アダプター"](http://go.microsoft.com/fwlink/?LinkId=153339) (http://go.microsoft.com/fwlink/?LinkId=153339)します。  
+-   ["サンプル アーキテクチャ。HTTP アダプターと SOAP アダプター"](http://go.microsoft.com/fwlink/?LinkId=153339) (http://go.microsoft.com/fwlink/?LinkId=153339)します。  
   
--   ["サンプル TMA: HTTP アダプターと SOAP アダプター"](http://go.microsoft.com/fwlink/?LinkId=153340) (http://go.microsoft.com/fwlink/?LinkId=153340)します。  
+-   ["サンプル TMA:HTTP アダプターと SOAP アダプター"](http://go.microsoft.com/fwlink/?LinkId=153340) (http://go.microsoft.com/fwlink/?LinkId=153340)します。  
   
 -   ["大規模な分散アーキテクチャ"](http://go.microsoft.com/fwlink/?LinkId=153341) (http://go.microsoft.com/fwlink/?LinkId=153341)します。  
   

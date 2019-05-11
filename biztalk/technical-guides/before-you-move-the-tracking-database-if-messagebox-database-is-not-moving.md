@@ -1,5 +1,5 @@
 ---
-title: メッセージ ボックス データベースが移動されていない場合に、追跡データベースを移動する際の考慮事項 |Microsoft ドキュメント
+title: メッセージ ボックス データベースが移動されていない場合は、追跡データベースを移動する場合の考慮事項 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,17 +12,17 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ecb2fcb6ad9ead42bd3e09c84a8895758d82293f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e7ff06df85f70168f3811910c0fab94c8bd772c3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22299922"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65401285"
 ---
-# <a name="considerations-when-moving-the-tracking-database-if-the-messagebox-database-is-not-being-moved"></a>メッセージ ボックス データベースが移動されていない場合に、追跡データベースを移動する際の考慮事項
-追跡データベース、メッセージ ボックス データベースではなく、SampleUpdateInfo.xml ファイルを編集するときに、以下のことを確認を移動する場合は、メッセージ ボックス データベースが移動されていない場合でも同様に、メッセージ ボックス データベースのエントリがあります。 これが行うことを確認する必要があります、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]エージェント ジョブ TrackedMessages_Copy_BizTalkMsgBoxDb は新しい追跡データベースの場所で更新します。  
+# <a name="considerations-when-moving-the-tracking-database-if-the-messagebox-database-is-not-being-moved"></a>メッセージ ボックス データベースが移動されていない場合は、追跡データベースを移動する場合の考慮事項
+追跡データベース、メッセージ ボックス データベースではなく、SampleUpdateInfo.xml ファイルを編集するときに、以下のことを確認を移動する場合、メッセージ ボックス データベースが移動されていない場合でも、同様に、メッセージ ボックス データベースのエントリが含まれます。 これが行うことを確認する必要があります、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]エージェントのジョブ TrackedMessages_Copy_BizTalkMsgBoxDb は新しい追跡データベースの場所で更新されます。  
   
- たとえば、SampleUpdateInfo.xml ファイルを追跡データベースのみがから移動中 OldServer NewServer にします。 メッセージ ボックス データベースは OldServer 上に保持しました。  
+ たとえば、SampleUpdateInfo.xml ファイル追跡データベースのみが中 OldServer からに移動 NewServer。 メッセージ ボックス データベースは、OldServer を使い続けます。  
   
 ```  
 <UpdateConfiguration>  

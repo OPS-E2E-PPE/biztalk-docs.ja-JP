@@ -1,5 +1,5 @@
 ---
-title: ファイル メッセージ スキーマをフラットを作成する際の考慮事項 |Microsoft ドキュメント
+title: ファイル メッセージ スキーマをフラットを作成する際の考慮事項 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,30 +12,30 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3d0cbe19b85fc65c492f1e0ae377da94dad75baf
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3ea131abf4f506ad8f396d7da895b44d8c24536e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22237898"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65354689"
 ---
 # <a name="considerations-when-creating-flat-file-message-schemas"></a>ファイル メッセージ スキーマをフラットを作成する際の考慮事項
-フラット ファイル メッセージのスキーマの扱いには、さまざまな注意点があります。 フラット ファイルのスキーマ全般に当てはまる注意点のほか、位置指定ベースまたは区切り文字ベースのレコード/フィールドに固有の注意点などが含まれます。 また、特殊文字を通常のデータとして解釈させる方法も考慮する必要があります。 このセクションでは、これらの注意事項に関する情報について説明します。  
+フラット ファイル メッセージ スキーマを使用する場合は、多くの注意事項にがあります。 これには、すべてのフラット ファイル スキーマに適用される考慮事項の位置指定レコード、区切り記号付きレコード、位置指定のフィールドまたは区切られたフィールドに適用される考慮事項も含まれます。 考慮事項がありますそれ以外の場合を解釈する方法について特別な文字を通常のデータ。 このセクションでは、これらの考慮事項についての情報を提供します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [フラット ファイル スキーマのコード ページ仕様](../core/code-page-specification-for-flat-file-schemas.md)  
+-   [フラット ファイル スキーマに使用されるコード ページの仕様](../core/code-page-specification-for-flat-file-schemas.md)  
   
--   [フラット ファイル スキーマでの処理の場合](../core/case-handling-in-flat-file-schemas.md)  
+-   [フラット ファイル スキーマにおける大文字と小文字の扱い](../core/case-handling-in-flat-file-schemas.md)  
   
 -   [文字範囲の制限](../core/restricted-character-ranges.md)  
   
 -   [入れ子になった位置指定レコードおよび区切り記号付きレコード](../core/nested-positional-and-delimited-records.md)  
   
--   [位置指定レコードに関する注意点](../core/positional-record-considerations.md)  
+-   [位置指定レコードに関する注意](../core/positional-record-considerations.md)  
   
--   [区切り記号付きレコードに関する注意点](../core/delimited-record-considerations.md)  
+-   [区切り記号付きレコードに関する注意](../core/delimited-record-considerations.md)  
   
--   [フィールドに関する考慮事項](../core/field-considerations.md)  
+-   [フィールドに関する注意](../core/field-considerations.md)  
   
--   [フィールドの値の一部として特殊文字を解釈する方法](../core/ways-to-interpret-special-characters-as-part-of-a-field-value.md)
+-   [特殊文字をフィールド値の一部として解釈させる方法](../core/ways-to-interpret-special-characters-as-part-of-a-field-value.md)

@@ -1,5 +1,5 @@
 ---
-title: エラー - XSLT スクリプト Functoid が無効の出力リンク |Microsoft ドキュメント
+title: エラー - XSLT スクリプト Functoid の無効の出力リンクが |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,22 +14,22 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: efd597a3953db76087086c7ea9038e9fa1fd87eb
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1348fd9cab436ca3ddbd0991acd5861283d933b8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22241274"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65388503"
 ---
-# <a name="error---output-link-for-xslt-scripting-functoid-not-valid"></a>エラー - XSLT スクリプト Functoid が無効の出力リンク
+# <a name="error---output-link-for-xslt-scripting-functoid-not-valid"></a>エラー - XSLT スクリプト Functoid の無効の出力リンク
 **エラー コード**  
   
  btm1075  
   
  **説明**  
   
- 関連出力リンク**スクリプト**functoid のインライン XSLT または XSLT 呼び出しテンプレートを使用するように構成が有効ではありません。 このような出力**スクリプト**functoid が接続されていること、送信先スキーマのノードに直接 (および例については、別の functoid にありません)。  
+ 関連するは、出力リンク**Scripting** functoid のインライン XSLT または XSLT 呼び出しテンプレートを使用するように構成が無効です。 このような出力**Scripting** functoid を接続する必要があります、送信先スキーマのノードに直接 (および例については、別の functoid)。  
   
  **ユーザーの操作**  
   
- 関連する出力リンクを接続することを確認**スクリプト**functoid を送信先スキーマのノードに直接できます。
+ 関連する出力リンクが接続できるように**Scripting** functoid を送信先スキーマ内のノードに直接します。

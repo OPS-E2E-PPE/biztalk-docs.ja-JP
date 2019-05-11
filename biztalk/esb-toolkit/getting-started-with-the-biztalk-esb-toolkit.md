@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7832f2a730cb5eb70d1444809513e4242b82e88b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c4ebd9143f071c4d6f01d30c77c0c9bf815fc2fc
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37006667"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65400127"
 ---
 # <a name="getting-started-with-the-biztalk-esb-toolkit"></a>BizTalk ESB Toolkit の概要
 このトピックでは、デザインとの操作の概念を説明します、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]コンポーネントとサービスの ESB が有効なソリューションを構築するために使用します。 このトピックには、次のトピックのセクションが含まれます。  

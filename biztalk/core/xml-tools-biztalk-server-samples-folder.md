@@ -1,5 +1,5 @@
 ---
-title: XML ツール (BizTalk Server Samples フォルダ) |Microsoft ドキュメント
+title: XML ツール (BizTalk Server Samples フォルダー) |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,18 +16,18 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 51a65fa80c441f00f63ba1a4a1278c5ed29ab6b3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 447e4243e59b59d772738984cb28475cc2d81514
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22289530"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65401898"
 ---
-# <a name="xml-tools-biztalk-server-samples-folder"></a>XML ツール (BizTalk Server Samples フォルダ)
-Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のソフトウェア開発キット (SDK) には、拡張マークアップ言語 (XML) ツールのサンプルが 2 つ含まれています。 このセクションでは、XML ツールのサンプルで示されている機能の詳細、サンプルの構築と実行の手順、および予想される結果について説明します。  
+# <a name="xml-tools-biztalk-server-samples-folder"></a>XML ツール (BizTalk Server Samples フォルダー)
+Microsoft[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ソフトウェア開発キット (SDK) の 2 つの拡張マークアップ言語 (XML) ツールのサンプルが含まれています。 ここでは、XML ツールのサンプルで示されているビルドと、サンプルでは、および予想される結果の実行手順については、機能に関する詳細な情報を示します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [Extending Mapper (BizTalk Server サンプル)](../core/extending-mapper-biztalk-server-sample.md)です。 BizTalk マッパーの使用や拡張を行う方法を示します。  
+-   [Extending Mapper (BizTalk Server サンプル)](../core/extending-mapper-biztalk-server-sample.md)します。 使用して、BizTalk マッパーの拡張方法を示します。  
   
--   [カスタム Functoid (BizTalk Server サンプル)](../core/custom-functoid-biztalk-server-sample.md)です。 BizTalk マッパー用のカスタム Functoid を記述する方法を示します。
+-   [カスタム Functoid (BizTalk Server サンプル)](../core/custom-functoid-biztalk-server-sample.md)します。 BizTalk マッパー用のカスタム functoid を記述する方法を示します。

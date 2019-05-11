@@ -1,5 +1,5 @@
 ---
-title: エンジン制御関数 |Microsoft ドキュメント
+title: エンジン制御関数 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,28 +14,28 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 033a4213a6552319f44a98e23562d7e8703fdd42
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7339462fb21b77bb16627c5671a6246a2eefc4db
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22239858"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65349461"
 ---
 # <a name="engine-control-functions"></a>エンジン制御関数
-このセクションでは、アプリケーションまたはポリシーがルール エンジンの作業メモリ内のファクトを制御できるようにするビジネス ルール エンジンの制御関数に関連する動作について説明します。 作業メモリ内に存在するファクトによって、評価される条件と実行されるアクションが決まります。  
+このセクションでは、アプリケーションまたはポリシーをルール エンジンの作業メモリ内のファクトを制御できるようにするいくつかのビジネス ルール エンジン制御関数に関連する動作について説明します。 作業メモリ内のファクトの存在はドライブは、評価する条件、および実行されるアクションです。  
   
- このセクションの内容を調べ、 **Assert**、 **Retract**、 **RetractByType**、 **Reassert**、および**更新**異なるファクト関数: .NET オブジェクト、 **TypedXmlDocument**、 **DataConnection**、および**TypedDataTable**です。  
+ ここでは、 **Assert**、 **Retract**、 **RetractByType**、**再アサート**、および**Update**異なるファクト関数: .NET オブジェクト、 **TypedXmlDocument**、 **DataConnection**、および**TypedDataTable**します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
 -   [Filter](../core/assert.md)  
   
--   [取り消し](../core/retract.md)  
+-   [Retract](../core/retract.md)  
   
 -   [RetractByType](../core/retractbytype.md)  
   
--   [再アサート](../core/reassert.md)  
+-   [Reassert](../core/reassert.md)  
   
 -   [Update](../core/update1.md)  
   
--   [停止](../core/halt.md)
+-   [Halt](../core/halt.md)

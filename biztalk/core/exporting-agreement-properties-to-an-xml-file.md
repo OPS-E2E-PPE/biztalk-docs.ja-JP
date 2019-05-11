@@ -1,5 +1,5 @@
 ---
-title: アグリーメントのプロパティを XML ファイルにエクスポート |Microsoft ドキュメント
+title: アグリーメントのプロパティを XML ファイルにエクスポートする |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9a2091482bfda8110fc36dc0431b80093b715695
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: b3cff6a781653e57620475657f7cbfa5ad8daec3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26004947"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65388271"
 ---
-# <a name="exporting-agreement-properties-to-an-xml-file"></a>XML ファイルへのアグリーメント プロパティのエクスポート
+# <a name="exporting-agreement-properties-to-an-xml-file"></a>アグリーメントのプロパティを XML ファイルにエクスポートします。
 このセクションでは、アグリーメントのプロパティを XML テンプレート ファイルにエクスポートする方法について説明します。  
   
 ## <a name="prerequisites"></a>前提条件  
@@ -27,15 +27,15 @@ ms.locfileid: "26004947"
   
 ### <a name="to-export-agreement-properties-to-an-xml-file"></a>アグリーメントのプロパティを XML ファイルにエクスポートするには  
   
-1.  BizTalk Server 管理コンソールで、をクリックして、**パーティ**ノードの下、 **BizTalk Server 管理コンソール**と**BizTalk グループ**ノード。 **パーティとビジネス プロファイル** ページで、パーティとし、設定をエクスポートするアグリーメントのあるビジネス プロファイル をクリックします。  
+1.  BizTalk Server 管理コンソールで、をクリックして、**パーティ**ノードの下、 **BizTalk Server 管理**と**BizTalk グループ**ノード。 **パーティとビジネス プロファイル** ページで、パーティとし、設定をエクスポートするアグリーメントのビジネス プロファイル をクリックします。  
   
-2.  **パーティとビジネス プロファイル**] ページの [、**契約**セクションで、プロパティをエクスポートし、をクリックするアグリーメントを右クリックして**プロパティ**です。  
+2.  **パーティとビジネス プロファイル**ページで、**契約**セクションでプロパティをエクスポートし、をクリックするアグリーメントを右クリックし、**プロパティ**します。  
   
-3.  **アグリーメントのプロパティ**ダイアログ ボックスで、をクリックして**テンプレートとして保存**です。  
+3.  **アグリーメントのプロパティ**ダイアログ ボックスで、をクリックして**テンプレートとして保存**します。  
   
-4.  **名前を付けて保存** ダイアログ ボックス、参照 をクリックして、XML ファイルの名前を指定する XML ファイルをエクスポートする場所に**保存**です。  
+4.  **名前を付けて保存**ダイアログ ボックスで、[参照] をクリックして、XML ファイルの名前を指定する XML ファイルをエクスポートする場所に**保存**します。  
   
-5.  **テンプレートの作成**ボックスで、クリックして**OK**です。  
+5.  **テンプレートの作成**ボックスで、 **OK**します。  
   
 ## <a name="see-also"></a>参照  
  [別のアグリーメント プロパティの再利用](../core/reusing-properties-from-another-agreement.md)   

@@ -1,5 +1,5 @@
 ---
-title: '付録 b: HYPER-V のアーキテクチャと機能の概要 |Microsoft Docs'
+title: 付録 B:HYPER-V のアーキテクチャと機能の概要 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d9e20add207d9e4303bd823b82b79e8fad6c07c3
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: bfd53cf4ef318c3f1e6858b32b57177026aa4248
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37002147"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65401366"
 ---
-# <a name="appendix-b-hyper-v-architecture-and-feature-overview"></a>付録 b: HYPER-V のアーキテクチャと機能の概要
+# <a name="appendix-b-hyper-v-architecture-and-feature-overview"></a>付録 B:HYPER-V のアーキテクチャと機能の概要
 このトピックでは、HYPER-V のアーキテクチャの概要を説明します、HYPER-V の長所と短所について説明します。  
   
 ## <a name="hyper-v-architecture"></a>HYPER-V のアーキテクチャ  
@@ -82,7 +82,7 @@ ms.locfileid: "37002147"
 > [!NOTE]  
 >  [HYPER-V テクノロジの概要](https://docs.microsoft.com/windows-server/virtualization/hyper-v/hyper-v-technology-overview)は適切なリソースです。 
   
-## <a name="advantages"></a>利点があります。
+## <a name="advantages"></a>長所
  HYPER-V 仮想化環境でエンタープライズ レベルのソリューションを実行する利点を以下に示します。  
   
 1. **ハードウェア リソースの統合**-複数の物理サーバーに簡単に統合できます比較的少数のサーバー、HYPER-V による仮想化を実装することで。 統合には、展開済みのハードウェア リソースの完全な使用が対応しています。 Windows server、HYPER-V ホスト コンピューターで最大 64 個の論理 Cpu にアクセスできます。 この機能が新しいマルチコア システムの利点を受け取るだけでなく、物理ホストごとのさらなるバーチャル マシン統合率も意味します。  
@@ -125,11 +125,11 @@ ms.locfileid: "37002147"
   
 8. **スケーラビリティ**– 追加電源、ネットワーク帯域幅、および記憶域の容量を処理して実現できます迅速かつ簡単に分配をゲスト仮想マシンのホスト コンピューターから使用可能なリソースを追加します。 ホスト コンピューターがアップグレードされたこと、または機能を持つホスト コンピューターに、ゲスト仮想マシンを移動することが必要です。  
   
-   HYPER-V で提供される仮想化テクノロジを活用することの利点の深さについての詳細は、、 [Hyper-v テクノロジの概要](https://docs.microsoft.com/windows-server/virtualization/hyper-v/hyper-v-technology-overview)を参照してください。 
+   HYPER-V で提供される仮想化テクノロジを活用することの利点の深さについての詳細は、次を参照してください。、 [Hyper-v テクノロジの概要](https://docs.microsoft.com/windows-server/virtualization/hyper-v/hyper-v-technology-overview)します。 
   
 ## <a name="disadvantages"></a>欠点
  HYPER-V 仮想化環境でエンタープライズ レベルのソリューションを実行中のいくつかのデメリットがあります。  
   
 -   **ハードウェアの要件 –** サーバーの統合の確認要求により、HYPER-V 仮想マシン、CPU とメモリを消費する傾向し、比較可能なコンピューティングの読み込みを伴う物理サーバーよりも大きい値のディスク I/O 帯域幅が必要です。 64 ビット Windows Server のすべてのエディションは 64 ビットのみ、HYPER-V サーバーの役割は使用可能なだけであるため、物理ハードウェアがハードウェア支援による仮想化をサポートする必要があります。 つまり、プロセッサは Intel VT または AMD Virtualization (AMD-V) テクノロジと互換性がある、システム BIOS でデータ実行防止 (DEP) をサポートする必要があります、DEP を有効にする必要があります。  
   
--   **ソフトウェアの要件 –** HYPER-V 仮想マシンで実行されている、ほとんどの Microsoft ソフトウェアがサポートされていること、一部の Microsoft ソフトウェアは、HYPER-V 仮想化環境との互換性を確保するテスト対象であること。 たとえば、ほとんどの Microsoft のエンタープライズ レベル アプリケーション サポート、HYPER-V で実行されているか、HYPER-V でサポートされているテスト中します。 BizTalk Server と HYPER-V 上の SQL Server のサポートの詳細については、[付録 c: BizTalk Server と SQL Server、Hyper-v のサポート性](../technical-guides/appendix-c-biztalk-server-and-sql-server-hyper-v-supportability.md)を参照してください。
+-   **ソフトウェアの要件 –** HYPER-V 仮想マシンで実行されている、ほとんどの Microsoft ソフトウェアがサポートされていること、一部の Microsoft ソフトウェアは、HYPER-V 仮想化環境との互換性を確保するテスト対象であること。 たとえば、ほとんどの Microsoft のエンタープライズ レベル アプリケーション サポート、HYPER-V で実行されているか、HYPER-V でサポートされているテスト中します。 BizTalk Server と HYPER-V 上の SQL Server のサポートの詳細については、次を参照してください[付録 c:。BizTalk Server と SQL Server の HYPER-V サポート](../technical-guides/appendix-c-biztalk-server-and-sql-server-hyper-v-supportability.md)します。

@@ -22,12 +22,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9b736fc7eb84964f9c0e74a3c319c9de1f3a3a44
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2235eacf4186277f068850eb9325fbc3ed8ece1f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36989675"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65378842"
 ---
 # <a name="assigning-rights"></a>権利の割り当てください。
 前のトピックで作成された各サイト グループのドキュメント ライブラリでは、次のアクセス許可を許可する必要があります。  
@@ -51,4 +51,4 @@ ms.locfileid: "36989675"
 ## <a name="new-swift-mt-mx-messages-document-library"></a>新しい SWIFT MT]、[MX メッセージ ドキュメント ライブラリ  
  新しい SWIFT MT メッセージと新しい SWIFT MX メッセージ ドキュメント ライブラリは、MRSR サイトのデプロイ時に作成されます。 新しい SWIFT MT メッセージと新しい SWIFT MX メッセージ ドキュメント ライブラリでは、新しい SWIFT XML テンプレートまたは「定型」のメッセージを格納します。 これらのメッセージを使用して、新しい SWIFT InfoPath XML 形式で表されるメッセージを作成することができます。 これらのメッセージは、ドキュメント ライブラリにアップロード ボタンをクリックして、ユーザーが新しい SWIFT MT メッセージと新しい SWIFT MX メッセージ ドキュメント ライブラリにアップロードされます。 さらに、指定したユーザーにアクセスを制限する SWIFT メッセージの新しいテンプレートを配布できます。 これを行うには、まず、新しいドキュメント ライブラリを作成し、ドキュメント ライブラリに必要な XML テンプレートをコピーし、.  
 
- FormPublish ツールの詳細については、[FormPublish ツール](http://msdn.microsoft.com/09a6ed31-5917-4776-9a5e-955af440cdac)ツール セクションでを参照してください。
+ FormPublish ツールの詳細については、次を参照してください。 [FormPublish ツール](http://msdn.microsoft.com/09a6ed31-5917-4776-9a5e-955af440cdac)ツール セクションでします。

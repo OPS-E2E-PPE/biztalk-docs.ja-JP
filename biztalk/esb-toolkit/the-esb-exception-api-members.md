@@ -1,5 +1,5 @@
 ---
-title: ESB 例外 API メンバー |Microsoft ドキュメント
+title: ESB 例外 API メンバー |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,23 +12,23 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5e267f8533948fc46c4604ebfffb6d22367a321e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0ab2e1863ddbafe96a0ea053fe2075e92c361f65
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22295586"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399824"
 ---
 # <a name="the-esb-exception-api-members"></a>ESB 例外 API メンバー
-**ESB です。ExceptionHandling**アセンブリは、次の表に示すようにフォールト メッセージを作成および管理され、処理に取得するパブリック メソッドを公開します。  
+**ESB します。ExceptionHandling**アセンブリは、次の表に示すようにエラー メッセージを作成および管理し、それらを処理する場合に取得するパブリック メソッドを公開します。  
   
-|メンバーを使用する場合|Description|  
+|メンバーとユース ケース|説明|  
 |-------------------------|-----------------|  
-|**CreateFaultMessage** [例外ハンドラーのスコープ]|**パブリック静的 XLANGMessage CreateFaultMessage()** パラメーターを受け取りません。 ESB フォールト メッセージのインスタンスを返します、 **XLANGMessage**現在オーケストレーション名、オーケストレーション インスタンス ID (GUID) が設定インスタンス**System.Exception**インスタンス、およびその他のアンビエント プロパティです。 **注:** このアプリケーション プログラミング インターフェイス (API) は、XLANG 内の例外ブロックからのみ呼び出される必要があります。|  
-|**AddMessage** [例外ハンドラーのスコープ]|**パブリックの静的 void AddMessage (faultMessage、existingMessage)** は、パラメーター 2 として**XLANGMessage**インスタンスです 1 つは新しく作成された ESB エラー メッセージと、2 つ目は、既存のメッセージ インスタンスで、。オーケストレーションです。 メソッドは既存のメッセージ インスタンスとそのメッセージ コンテキスト プロパティが引き続き発生すると、エラー メッセージにし、検索を使用するために使用できるように、 **GetMessage**メソッドです。 戻り値はありません。|  
-|**SetException** [例外ハンドラーのスコープ]|**パブリックの静的 void SetException (faultMessage、例外)** として ESB フォールト メッセージをパラメーターとして受け取り、 **XLANGMessage**インスタンスと**例外**として、**オブジェクト**インスタンス。 メソッドが、既存のエラー メッセージには、例外が引き続き発生して、検索を使用するために使用できるように、 **GetException**メソッドです。 戻り値はありません。|  
-|**GetMessage** [サブスクライバー/プロセッサ]|**パブリック静的 XLANGMessage GetMessage(faultMessage, messageName)** ESB のパラメーターとして、サブスクリプションから受信したメッセージのエラーは、 **XLANGMessage**インスタンスおよび (**文字列**)、メッセージ、エラー メッセージ (元のオーケストレーション図形の例外ハンドラー) に追加済みの名前。 返します、 **XLANGMessage**インスタンス メッセージ名と一致して、すべての元のコンテキスト プロパティ、カスタム昇格させたプロパティを含むことが含まれています。|  
-|**GetMessages** [サブスクライバー/プロセッサ]|**パブリック静的 MessageCollection GetMessages(faultMessage)** ESB フォールト メッセージを受信とサブスクリプションから 1 つのパラメーターとして受け取り、 **XLANGMessage**インスタンス。 返します、 **MessageCollection**すべてすべてのインスタンス、 **XLANGMessage**フォールト メッセージ (元のオーケストレーション図形の例外ハンドラー) に追加済みのインスタンス。 各**XLANGMessage**インスタンスには、すべての元のコンテキスト プロパティ、カスタム昇格させたプロパティを含むが含まれています。|  
-|**GetException** [サブスクライバー/プロセッサ]|**パブリック静的 System.Exception GetException(faultMessage)** とサブスクリプションから受信したエラー メッセージ、単一のパラメーターとして受け取り、 **XLANGMessage**インスタンス。 返します、 **System.Exception**オブジェクト、エラー メッセージ (元のオーケストレーション図形の例外ハンドラー) に以前に追加します。|  
-|**FaultSeverity** [例外ハンドラーのスコープとサブスクライバー/プロセッサ]|ESB のエラー メッセージのパブリックの読み取り/書き込みプロパティ**XLANGMessage**をエラー メッセージの重大度を公開するクラス。 値、**違反コード**列挙:**情報**(0)、**警告**(1)**エラー** (2)、 **Severe**(3)、または**重大**(4)。|  
-|**MessageCollection** [サブスクライバー/プロセッサ]|によって返されるメッセージのコレクション、 **GetMessages**メソッドです。 このクラスから派生**ArrayList**イテレーションを使用できる列挙子を実装して、 **MoveNext**メソッドです。|
+|**CreateFaultMessage** [例外ハンドラーのスコープ]|**パブリックの静的 XLANGMessage CreateFaultMessage()** パラメーターを受け取らない。 ESB エラー メッセージとしてのインスタンスを返します、 **XLANGMessage**インスタンスの現在のオーケストレーション インスタンス ID (GUID)、オーケストレーション名を含む**System.Exception**インスタンス、およびその他アンビエント プロパティです。 **注:** このアプリケーション プログラミング インターフェイス (API) は、XLANG 内で例外ブロックからのみ呼び出す必要があります。|  
+|**AddMessage** [例外ハンドラーのスコープ]|**パブリックの静的 void AddMessage (faultMessage、existingMessage)** は 2 つのパラメーターとして受け取ります**XLANGMessage**インスタンスは 1 つは新しく作成された ESB エラー メッセージと、2 つ目は、既存のメッセージ インスタンスで、オーケストレーションです。 メソッドは、エラー メッセージに、既存のメッセージ インスタンスと、メッセージ コンテキスト プロパティを永続化し、検索を使用するために使用できるように、 **GetMessage**メソッド。 戻り値はありません。|  
+|**SetException** [例外ハンドラーのスコープ]|**パブリックの静的 void SetException (faultMessage、例外)** としての ESB エラー メッセージをパラメーターとして受け取り、 **XLANGMessage**インスタンスと**例外**として、 **オブジェクト**インスタンス。 メソッドは、既存のエラー メッセージに例外を永続化し、検索を使用するために使用できるように、 **GetException**メソッド。 戻り値はありません。|  
+|**GetMessage** [サブスクライバー/プロセッサ]|**パブリックの静的 XLANGMessage GetMessage(faultMessage, messageName)** パラメーター、ESB エラーとサブスクリプションから受信したメッセージは、 **XLANGMessage**インスタンスおよび (**文字列**) (元のオーケストレーション図形の例外ハンドラー) でエラー メッセージに追加したメッセージの名前。 返します、 **XLANGMessage**インスタンス メッセージの名前に一致して、すべて元のコンテキストを含むプロパティのカスタムの昇格させたプロパティを格納しています。|  
+|**GetMessages** [サブスクライバー/プロセッサ]|**パブリックの静的 MessageCollection GetMessages(faultMessage)** とサブスクリプションから、ESB エラー メッセージが受信した 1 つのパラメーターとして受け取り、 **XLANGMessage**インスタンス。 返します、 **MessageCollection**すべてすべてのインスタンス、 **XLANGMessage**インスタンス (元のオーケストレーション図形の例外ハンドラー) でエラー メッセージに以前に追加します。 各**XLANGMessage**インスタンスにはすべて、元のコンテキスト プロパティ、任意のカスタムの昇格させたプロパティなどが含まれています。|  
+|**GetException** [サブスクライバー/プロセッサ]|**パブリックの静的 System.Exception GetException(faultMessage)** とサブスクリプションから受信したエラー メッセージを 1 つのパラメーターとして受け取り、 **XLANGMessage**インスタンス。 返します、 **System.Exception**オブジェクト (元のオーケストレーション図形の例外ハンドラー) でエラー メッセージに以前に追加します。|  
+|**FaultSeverity** [例外ハンドラーのスコープとサブスクライバー/プロセッサ]|ESB エラー メッセージのパブリックな読み取り/書き込みプロパティ**XLANGMessage**エラー メッセージの重大度を公開するクラスです。 値、**違反コード**列挙体。**情報**(0)、**警告**(1)**エラー** (2)、**重大**(3)、または**重要な**(4)。|  
+|**MessageCollection** [サブスクライバー/プロセッサ]|によって返されるメッセージのコレクション、 **GetMessages**メソッド。 このクラスから派生**ArrayList**イテレーションを使用できる列挙子を実装し、 **MoveNext**メソッド。|

@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7c59c396534d6c555cfd133e949e3a5becb5375b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 30107d8cf3624e22099efb5d14daf59b4e256105
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36998835"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399578"
 ---
 # <a name="pre-configuration-database-optimizations"></a>前の構成データベースの最適化
 BizTalk Server は、Microsoft SQL Server で最大 13 個の独立したデータベースの作成を必要とするデータベースを非常に大量に消費するアプリケーションです。 ため、BizTalk Server 環境で SQL Server が果たす重要な役割が何よりも重要な SQL Server では、最適なパフォーマンスが構成されているチューニングがあります。 実行する SQL Server は、チューニングしない場合は、BizTalk Server で使用されるデータベースがボトルネックになり、BizTalk Server 環境の全体的なパフォーマンスが低下します。 このトピックでは、BizTalk Server をインストールして、BizTalk Server データベースを構成する前に従う必要がありますをいくつかの SQL Server パフォーマンスの最適化について説明します。  
@@ -60,7 +60,7 @@ sp_configure ‘Min Server memory (MB)’,(min size in MB)
  比例書き込みアルゴリズムが使用されるため、tempdb に使用されるデータ ファイルが同じサイズのことを確認は重要[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]はデータ ファイルのサイズに基づきます。 このアルゴリズムが、いることを確認しようとしています。[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]塗りつぶしがほぼ同時で最大の容量に到達するようにそのファイルで空き領域に比例して各ファイルのままです。 サイズの異なるデータ ファイルが作成、比例書き込みアルゴリズムは、一番大きいファイルを複数のデータ ファイルを作成する目的にそぐわなくなりますそれによって、すべてのファイル間の割り当てを展開するのではなく、GAM 割り当てを使用します。 Tempdb データベースのデータ ファイルの数は、SQL Server に割り当てられているプロセッサの数の値以上にするように構成する必要があります。  
   
 ## <a name="enable-trace-flag-t1118-as-a-startup-parameter-for-all-instances-of-sql-server"></a>SQL Server のすべてのインスタンスの起動時のパラメーターとしてトレース フラグ-t1118 を実装を有効にします。  
- トレースを実装する – フラグ-t1118 を実装では、ほぼすべての単一ページの割り当てを削除することで、SQL Server インスタンス間で競合を減らすことができます。 詳細については、マイクロソフト サポート技術情報記事 328551 を参照してください。"PRB: tempdb データベースの同時実行制御の強化"に[ http://go.microsoft.com/fwlink/?LinkID=103713](http://go.microsoft.com/fwlink/?LinkID=103713)します。  
+ トレースを実装する – フラグ-t1118 を実装では、ほぼすべての単一ページの割り当てを削除することで、SQL Server インスタンス間で競合を減らすことができます。 詳細については、マイクロソフト サポート技術情報記事 328551 を参照してください。"[prb]。同時実行機能が tempdb データベースの" [ http://go.microsoft.com/fwlink/?LinkID=103713](http://go.microsoft.com/fwlink/?LinkID=103713)します。  
   
 ## <a name="do-not-change-default-sql-server-settings-for-max-degree-of-parallelism-sql-server-statistics-or-database-index-rebuilds-and-defragmentation"></a>Max degree of parallelism、SQL Server の統計、またはデータベースのインデックス再構築と最適化の既定の SQL Server 設定を変更しません。  
  SQL Server インスタンスには、BizTalk Server データベースを格納する場合、し、特定の SQL Server 設定する必要があります変更されません。 具体的には、並列処理の最大限度の SQL Server、SQL Server の統計をメッセージ ボックス データベースとデータベースのインデックスの設定を再構築し、最適化を変更しないでください。 詳細についてを参照してください「SQL Server の設定を変更しないこと」で BizTalk Server 運用ガイド[ http://go.microsoft.com/fwlink/?LinkId=114358](http://go.microsoft.com/fwlink/?LinkId=114358)します。

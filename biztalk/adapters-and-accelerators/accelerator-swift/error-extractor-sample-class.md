@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1085af05221b252bb6942e2c32bbe1f91c8d7688
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 26375519e77de07161e20d9e373f2382cdbf0aac
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37010771"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65378020"
 ---
 # <a name="error-extractor-sample-class"></a>エラー抽出サンプル クラス
 Microsoft[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]逆アセンブラーは、XML オブジェクトへのエラーをシリアル化し、マルチパート メッセージのエラーのセクションに、XML オブジェクトをアタッチします。 逆アセンブラーは、有効なメッセージと同様、失敗したメッセージとメッセージ ボックス データベースに公開します。 そのため、メッセージ ボックス データベースにメッセージの実行エラーの詳細に失敗しました。 エラー抽出サンプル クラスを使用して、失敗したメッセージからエラーの詳細を抽出し、エラーの詳細を含む 1 つのファイルと元のメッセージを持つ別のファイルを生成できます。  

@@ -1,5 +1,5 @@
 ---
-title: 管理用のメンテナンスのためのベスト プラクティス |Microsoft ドキュメント
+title: 管理メンテナンスのベスト プラクティス |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,18 +12,18 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fb2160e14ec2371312c2cf0131afe49ea8bc1e39
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 01156b93efc54faa7921c9b4b095c3dca165661a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22300354"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65401274"
 ---
-# <a name="best-practices-for-administrative-maintenance"></a>管理用のメンテナンスのベスト プラクティス
-このトピックでの管理に関する問題を解決するときに従う必要があります (チェックリストの形式) でのベスト プラクティスを示す、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]システムです。  
+# <a name="best-practices-for-administrative-maintenance"></a>管理メンテナンスのベスト プラクティス
+このトピックの「管理の問題を解決するときに従う必要があります (チェックリストの形式) でのベスト プラクティスを示す、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]システム。  
   
 |||  
 |-|-|  
-|メンテナンスを毎日のチェック|[チェックリスト: メンテナンスを毎日チェックを実行します。](../technical-guides/checklist-performing-daily-maintenance-checks.md)|  
-|メンテナンスを毎週のチェック|[チェックリスト: 毎週の保守チェックの実行](../technical-guides/checklist-performing-weekly-maintenance-checks.md)|  
-|メンテナンスを月単位のチェック|[チェックリスト: 毎月の保守チェックの実行](../technical-guides/checklist-performing-monthly-maintenance-checks.md)|
+|毎日のメンテナンス チェックの|[チェックリスト:毎日のメンテナンス チェックの実行](../technical-guides/checklist-performing-daily-maintenance-checks.md)|  
+|毎週のメンテナンス チェックの|[チェックリスト:毎週のメンテナンス チェックの実行](../technical-guides/checklist-performing-weekly-maintenance-checks.md)|  
+|毎月のメンテナンス チェックの|[チェックリスト:毎月のメンテナンス チェックの実行](../technical-guides/checklist-performing-monthly-maintenance-checks.md)|

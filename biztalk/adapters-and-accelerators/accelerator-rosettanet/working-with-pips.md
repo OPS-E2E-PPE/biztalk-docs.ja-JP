@@ -1,5 +1,5 @@
 ---
-title: Pip の操作 |Microsoft ドキュメント
+title: Pip の操作 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,17 +15,17 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b905a931b7809755ab77285460e178638f58995d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 398383d3212eb8b1fe86282439cd37c592f77fcb
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22209154"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65379179"
 ---
 # <a name="working-with-pips"></a>Pip の操作
-ここでは、PIP (Partnet Interface Process) を操作する方法について説明します。 PIP は、すべての RosettaNet メッセージ交換に共通のビジネス プロセス定義を提供し、取引先間のビジネス プロセスを定義します。 PIP によって、メッセージの Service Content が指定されます。  
+このセクションのトピックでは、Partner Interface Process (Pip) を操作する方法について説明します。 Pip では、すべての RosettaNet メッセージ交換の共通のビジネス プロセス定義を提供する、取引先間のビジネス プロセスを定義します。 Pip では、メッセージの service content を指定します。  
   
- Pip の詳細については、次を参照してください。 [PIP 実装](../../adapters-and-accelerators/accelerator-rosettanet/pip-implementation.md)です。  
+ Pip の詳細については、次を参照してください。 [PIP 実装](../../adapters-and-accelerators/accelerator-rosettanet/pip-implementation.md)します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
@@ -35,8 +35,8 @@ ms.locfileid: "22209154"
   
 -   [XSD ベース PIP のインポート](../../adapters-and-accelerators/accelerator-rosettanet/importing-an-xsd-based-pip.md)  
   
--   [Rnpip の既存の PIP の変更](../../adapters-and-accelerators/accelerator-rosettanet/modifying-an-existing-pip-in-rnpips.md)  
+-   [RNPIP の既存の PIP の変更](../../adapters-and-accelerators/accelerator-rosettanet/modifying-an-existing-pip-in-rnpips.md)  
   
--   [PIP からの整形式メッセージ インスタンスを作成します。](../../adapters-and-accelerators/accelerator-rosettanet/creating-a-well-formed-message-instance-from-a-pip.md)  
+-   [PIP からの整形式メッセージ インスタンスの作成](../../adapters-and-accelerators/accelerator-rosettanet/creating-a-well-formed-message-instance-from-a-pip.md)  
   
--   [スキーマ XSD を使用してメッセージ インスタンスの検証](../../adapters-and-accelerators/accelerator-rosettanet/validating-a-message-instance-using-the-schema-xsd.md)
+-   [スキーマ XSD を使用したメッセージ インスタンスの検証](../../adapters-and-accelerators/accelerator-rosettanet/validating-a-message-instance-using-the-schema-xsd.md)

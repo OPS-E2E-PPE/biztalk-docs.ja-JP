@@ -1,5 +1,5 @@
 ---
-title: ドキュメント参照 URL ノード |Microsoft ドキュメント
+title: ドキュメント参照 URL ノード |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,26 +16,26 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c7939a7e74483b8df192530fd9da2deafeda0681
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0c9cbc37b48ad6592215723695b54edc17e834b8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22238970"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65350962"
 ---
 # <a name="document-reference-url-nodes"></a>ドキュメント参照 URL ノード
-ドキュメント参照 URL ノードは、ナレッジ ワーカーが作成した監視モデルから開発者がインポートする、アクティビティ定義ファイル内に存在します。 ドキュメント参照 URL ノードには、このアクティビティに関連するドキュメントが格納されている場所への参照が含まれます。 たとえば注文書の承認ワーク フローを表すアクティビティなど、すべての種類のドキュメントが対象になります。ドキュメント参照 URL は、基になる注文書を指すこともあります。  
+ドキュメント参照 URL ノードは、ナレッジ ワーカーが作成した監視モデルから開発者がインポートするアクティビティ定義ファイルに存在します。 ドキュメント参照 URL ノードには、このアクティビティに関連するドキュメントを格納している場所への参照が含まれます。 ドキュメント、購買発注書ドキュメントをポイントして、基になる可能性があります、購買注文の承認ワークフロー ドキュメント参照 URL を表すアクティビティなどの任意の型を指定できます。  
   
 ## <a name="working-with-document-reference-url-nodes"></a>ドキュメント参照 URL ノードの操作  
- ドキュメント参照 URL のデータ ソースは、通常、 **MessageRefURL** BizTalk Server システムのプロパティです。 URL を保存するカスタム スキーマを使用して、カスタム スキーマからドキュメント参照 URL にプロパティをマップすることもできます。  
+ ドキュメント参照 URL のデータ ソースは、通常、 **MessageRefURL** BizTalk Server システムのプロパティ。 Url を保存し、カスタム スキーマからドキュメント参照 URL プロパティをマップするカスタム スキーマを使用することもできます。  
   
- ドキュメント参照 URL に関する注意事項を次に示します。  
+ ドキュメント参照 Url に関する注意事項:  
   
--   1 つ以上のドキュメント参照 URL を追加できますが、各ノードの名前はアクティビティ内で一意である必要があります。  
+-   1 つまたは複数のドキュメント参照 Url を追加できますが、各ノードは、アクティビティ内で一意の名前をいる必要があります。  
   
 -   **MessageRefURL**ドキュメント参照 URL ノードを設定するために必要なプロパティは、値は、WSS、FILE および FTP のトランスポート アダプターの場合のみ設定されます。  
   
--   ビジネス エンドユーザーは、BAM ポータルでこの参照を表示できますが、参照 URL の主な目的はカスタム ユーザー インターフェイスの開発者にアクセスするために使用できるように関連するドキュメントの情報をエンドユーザーに提示するようにします。  BAM ポータルでドキュメントの参照を表示する方法の詳細については、次を参照してください。[関連ドキュメント](../core/related-documents.md)です。  
+-   ビジネス エンドユーザーは、BAM ポータルで、この参照を表示できますが、参照 URL の主な目的は、エンドユーザーに提供できるようにカスタム ユーザー インターフェイス開発者へのアクセスを許可するドキュメントの情報を関連付けられています。  BAM ポータルでドキュメントの参照を表示する方法の詳細については、次を参照してください。[関連ドキュメント](../core/related-documents.md)します。  
   
 ## <a name="see-also"></a>参照  
  [TPE アクティビティ ビューのノード](../core/tpe-activity-view-nodes.md)

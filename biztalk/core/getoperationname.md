@@ -1,5 +1,5 @@
 ---
-title: GetOperationName |Microsoft ドキュメント
+title: GetOperationName |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 04e22020add39840b0d2fe4c2fd88156321a18c7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 92eba73898b08e89cd1c3c7cdbd5f65c14ba048f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22246138"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65387676"
 ---
 # <a name="getoperationname"></a>GetOperationName
 現在の操作の名前をスタックにプッシュします。  
@@ -35,7 +35,7 @@ ms.locfileid: "22246138"
 ## <a name="pushed-value"></a>プッシュされた値  
  現在の操作の名前を格納している文字列。  
   
-## <a name="remarks"></a>解説  
+## <a name="remarks"></a>コメント  
  GetOperationName を使用するときは、アプリケーションで呼び出される操作名と比較してください。 たとえば、サービス コントラクトの name 属性を使用してカスタム名を割り当てると、クライアントは、メソッドのカスタム名を使用して生成された既定のプロキシを使用します。 しかし、サーバー アプリケーションは、name 属性で指定された名前ではなく、対応する操作の実際のメソッド名を使用します。  
   
 ## <a name="example"></a>例  

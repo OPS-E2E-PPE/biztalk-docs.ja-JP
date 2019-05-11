@@ -2,12 +2,12 @@
 redirect_url: /biztalk/core/deploying-biztalk-adapter-for-tibco-enterprise-message-service/
 redirect_document_id: true
 ROBOTS: NOINDEX
-ms.openlocfilehash: ea397a082485619a55290a1f5ae64076dbcc8a5f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6c36a962f577c94f44a37e04516c853ef8f2a83d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36967275"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65389556"
 ---
 # <a name="deploying-ports-and-assemblies"></a>ポートとアセンブリの展開
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ポートとターゲット コンピューター上のアセンブリを複製することができます。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] エクスポートは、ポートおよび受信場所の構成を XML ファイルに送信します。  

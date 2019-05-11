@@ -12,21 +12,21 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fa7d8e91ab82cc74f2af2ca0c12f79cdb0a8fcbe
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b33d86a80f87991bf0d22f0daac3c15ccc83f841
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36970083"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65398646"
 ---
-# <a name="how-to-update-the-bam-management-utility-configuration-after-a-backup-and-restore"></a>バックアップおよび復元の後で BAM 管理ユーティリティ構成を更新する方法
-BizTalk Server 環境の変更 (バックアップおよび復元のシーケンスなど) によってサーバー名とデータベース名の組み合わせが変更された場合は、BAM 管理ユーティリティ構成ファイル (bm.exe.config) を更新してこの名前変更を反映させる必要があります。  
+# <a name="how-to-update-the-bam-management-utility-configuration-after-a-backup-and-restore"></a>バックアップおよび復元の後に、BAM 管理ユーティリティ構成を更新する方法
+によって名前の組み合わせがバックアップと復元シーケンスなど、BizTalk Server 環境での変更の結果として変更されると、BAM 管理ユーティリティ構成ファイル (bm.exe.config) これらの名前変更を反映するようを更新する必要があります。  
   
-### <a name="to-update-the-bam-management-configuration-file-a-after-backup-and-restore"></a>バックアップおよび復元の後で BAM 管理構成ファイルを更新するには  
+### <a name="to-update-the-bam-management-configuration-file-a-after-backup-and-restore"></a>BAM 管理の構成の後のバックアップ ファイルを更新および復元するには  
   
 1. クリックしてメモ帳を使用して bm.exe.config ファイルを開く**開始**、**実行**、メモ帳」と入力[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]tracking\bm.exe.config、 をクリックして **[ok]**。  
   
-2. ファイルの appSettings セクションを探し、次の値を変更します。  
+2. ファイルの appSettings セクションを検索し、次の値を変更します。  
   
    ```  
    <!-- Default server and database for bm.exe. -->  

@@ -17,15 +17,15 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9363df166e438aba0db89cbadd0d688c7d353a0e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 315ef88247d61e26056467232bf5a460c6c7fed1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36972083"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65387185"
 ---
 # <a name="how-to-audit-sso"></a>SSO を監査する方法
-MMC スナップインまたはコマンド ラインを使用して、成功と失敗の監査のレベルを設定できます。 監査の結果は、イベント ログと、データベースの監査ログの両方に保存されます。  
+MMC スナップインまたはコマンドラインを使用して、両方、正および負監査のレベルを設定することができます。 監査の結果は、イベント ログとデータベースの監査ログの両方に格納されます。  
   
  SSO 管理者は、企業の規定に応じて、成功と失敗の監査レベルを設定できます。 成功と失敗の監査は、次のレベルのいずれかに設定できます。  
   
@@ -52,7 +52,7 @@ MMC スナップインまたはコマンド ラインを使用して、成功と
   
 ```  
   
-### <a name="to-audit-single-sign-on-using-the-mmc-snap-in"></a>MMC スナップインでシングル サインオンを監査するには  
+### <a name="to-audit-single-sign-on-using-the-mmc-snap-in"></a>シングル サインオン、MMC スナップインを使用して監査するには  
   
 1.  **開始** メニューのをクリックして**すべてのプログラム**、 をクリックして**Microsoft エンタープライズ シングル サインオン**、 をクリックし、 **SSO 管理**。  
   
@@ -64,7 +64,7 @@ MMC スナップインまたはコマンド ラインを使用して、成功と
   
 5.  適切な設定を入力し、クリックして**OK**します。  
   
-### <a name="to-audit-single-sign-on-using-the-command-line"></a>コマンド ラインでシングル サインオンを監査するには  
+### <a name="to-audit-single-sign-on-using-the-command-line"></a>シングル サインオン、コマンドラインを使用して監査するには  
   
 1.  **開始** メニューのをクリックして**実行**、し、入力**cmd**します。  
   

@@ -15,12 +15,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 50c58ad000e465949229400128ce4c47da40806e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3bc1129d413f204baf22193e4a2bba2b54178e17
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36993667"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65527558"
 ---
 # <a name="configuring-the-swift-assembler"></a>SWIFT アセンブラーの構成
 Microsoft で起動するときに、SWIFT アセンブラーが、次のタスクを実行します[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]送信パイプライン。  
@@ -37,9 +37,9 @@ Microsoft で起動するときに、SWIFT アセンブラーが、次のタス�
   
   カスタム送信パイプラインのアセンブル ステージに追加した後で、SWIFT アセンブラーを構成するには、パイプライン デザイナー キャンバスに SWIFT アセンブラー コンポーネントを選択します。 SWIFT アセンブラーし、フォーカスを受け取るし、Microsoft 内で [プロパティ] ウィンドウを使用してその構成プロパティを設定する[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)][!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)]します。  
   
-  使用可能な構成プロパティとその説明および使用方法の詳細のテーブルの場合、[SWIFT アセンブラーの構成プロパティ](../../adapters-and-accelerators/accelerator-swift/swift-assembler-configuration-properties.md)を参照してください。  
+  使用可能な構成プロパティとその説明および使用方法の詳細のテーブルの場合、次を参照してください。 [SWIFT アセンブラーの構成プロパティ](../../adapters-and-accelerators/accelerator-swift/swift-assembler-configuration-properties.md)します。  
   
-  SWIFT アセンブラーを使用して、さまざまなシナリオと構成プロパティの設定については、[SWIFT 逆アセンブラーとアセンブラー](../../adapters-and-accelerators/accelerator-swift/working-with-the-swift-disassembler-and-assembler.md)を参照してください。  
+  SWIFT アセンブラーを使用して、さまざまなシナリオと構成プロパティの設定については、次を参照してください。 [SWIFT 逆アセンブラーとアセンブラー](../../adapters-and-accelerators/accelerator-swift/working-with-the-swift-disassembler-and-assembler.md)します。  
   
   カスタム パイプラインのバイナリがコンパイルされると、静的に構成設定をカスタム パイプラインに書き込みます。 そのため、デプロイ時に構成プロパティを変更したり、時間を実行したりすることはできません。  
   

@@ -15,15 +15,15 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 596161cd2ccf5d4f9a492bbdd23cd8f6f22c5c2f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: aaa903b07d0f7661bcf9750b5c8bcd5762e438c2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36995235"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65387555"
 ---
 # <a name="handling-encoding-in-a-disassembler-pipeline-component"></a>逆アセンブラー パイプライン コンポーネントでのエンコードの処理
-カスタム逆アセンブラー コンポーネントが次の形式のいずれかで送信ドキュメントをエンコードすることを確認します。  
+カスタム逆アセンブラー コンポーネントが、次の形式のいずれかで送信ドキュメントをエンコードすることを確認します。  
   
 - UTF-8  
   
@@ -35,9 +35,9 @@ ms.locfileid: "36995235"
   
 - UTF-16BE  
   
-  オーケストレーション エンジンでは、他のエンコード形式を使用してドキュメントを処理できない可能性があります。  
+  オーケストレーション エンジンはできない他のエンコード形式でドキュメントを処理することがあります。  
   
-  UTF-32LE と UTF-32BE は .NET Framework ではサポートされていません。これらの形式を使用するには、カスタム エンコード実装を作成する必要があります。  
+  UTF 32LE と UTF 32BE が、.NET Framework でサポートされていませんこれらの形式を使用するには、カスタム エンコード実装を作成する必要があります。  
   
 ## <a name="see-also"></a>参照  
  [逆アセンブラー パイプライン コンポーネントの開発](../core/developing-a-disassembling-pipeline-component.md)

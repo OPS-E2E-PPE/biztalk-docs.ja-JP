@@ -17,19 +17,19 @@ caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a45201791912e960976d2e7820ae5421ebefe411
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b309d3e850d37bd4095d375110c643b92fb59422
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36972763"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65384322"
 ---
 # <a name="how-to-remove-bam-activities"></a>BAM アクティビティを削除する方法
 管理者を使用して、**削除アクティビティ**コマンドを指定したアクティビティを BAM プライマリ インポート データベースから削除します。  
   
 ### <a name="to-remove-a-bam-activity"></a>BAM アクティビティを削除するには  
   
-1. 次のように、コマンド プロンプトを開きます: をクリックして**開始**、 をクリックして**実行**、型**cmd**、順にクリックします**OK**。  
+1. 次のように、コマンド プロンプトを開きます。をクリックして**開始**、 をクリックして**実行**、型**cmd**、順にクリックします**OK**。  
   
 2. [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)] に移動します。  
   

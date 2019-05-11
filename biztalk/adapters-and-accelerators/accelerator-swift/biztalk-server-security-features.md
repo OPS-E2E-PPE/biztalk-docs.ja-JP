@@ -18,12 +18,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 45d541138d566eb6791385cdb23413187d2e68ba
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e640a1c1630a024ca3d39915fb6a75cfd12d6eaf
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36971131"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65378652"
 ---
 # <a name="biztalk-server-security-features"></a>BizTalk Server のセキュリティ機能
 金融サービス アプリケーションとの統合ソリューションを使用して開発[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]は[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]ネイティブで保護されたアプリケーションとは[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]セキュリティ機能。 [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] アプリケーションが通常メッセージング機能の構成 (メッセージの処理、変換、ルーティング) とワークフローの自動化 (ビジネス プロセスの自動化、ビジネス ルール、およびロジックの評価)。 [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] 一般的なメッセージングとワークフロー オートメーションのセキュリティを提供します。 [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] エンドユーザーのメッセージのエントリ、修復、承認、および送信のセキュリティ保護に固有の追加のセキュリティ機能を提供します。 詳細については[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]-特定のセキュリティを参照してください[Message Repair and New Submission のセキュリティ機能を A4SWIFT](../../adapters-and-accelerators/accelerator-swift/a4swift-security-features-for-message-repair-and-new-submission.md)します。  

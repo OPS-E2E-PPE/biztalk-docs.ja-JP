@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a6375add6d27e6ce0d3dff89bd2b172a2b693356
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f069b6017ef5d740e3c6cb24b3e7877deef924c2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36992403"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65385223"
 ---
 # <a name="how-to-develop-interdependent-orchestrations"></a>相互依存オーケストレーションを開発する方法
 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] を使用して、相互に依存する Web サービスを持つオーケストレーションのセットを開発できます。 このシナリオは、複数のオーケストレーションが、それらを呼び出すオーケストレーションのデータ型とポートのどちらか一方または両方を参照する場合に発生します。 この種類のシナリオの例は、次のような特徴で示すことができます。  
@@ -28,7 +28,7 @@ ms.locfileid: "36992403"
   
 - Orch2 は、Web サービス呼び出しで Orch1 に応答します。  
   
-  この種類のプロジェクトの一例は、[チュートリアル 2: 発注プロセス](http://msdn.microsoft.com/library/a324ef1b-39b3-49ab-9719-a13f526cb467)を参照してください。  
+  この種類のプロジェクトの一例は、次を参照してください。[チュートリアル 2。発注書処理](http://msdn.microsoft.com/library/a324ef1b-39b3-49ab-9719-a13f526cb467)します。  
   
 ### <a name="to-develop-two-interdependent-orchestrations-orch1-and-orch2"></a>相互に依存する 2 つのオーケストレーション Orch1 と Orch2 を開発するには  
   

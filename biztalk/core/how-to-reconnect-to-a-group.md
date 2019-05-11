@@ -15,24 +15,24 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 74f37804c6d0660529948569191380a94ea8786f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 279fe657f2755a28b59e4e74563d0f2fba4ad751
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36981315"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65384440"
 ---
 # <a name="how-to-reconnect-to-a-group"></a>グループに再接続する方法
-BizTalk Server 管理コンソールで、BizTalk Server に以前接続したグループが利用不可と表示されることがあります。 たとえば、グループが存在するコンピューターを再起動したとき、管理コンソール上に利用不可と表示されることがあります。 使用して、BizTalk Server グループに再接続できます**更新**グループが使用できない場合。  
+グループ、BizTalk server に接続したことをことがあります、BizTalk Server 管理コンソールで使用できないように見えます。 など、グループが存在するコンピューターを再起動すると、グループは、管理コンソールを使用できなくなります。 使用して、BizTalk Server グループに再接続できます**更新**グループが使用できない場合。  
   
 ## <a name="prerequisites"></a>前提条件  
- ここで示す手順を実行するには、BizTalk Server Operators グループのメンバーまたは BizTalk Server 管理者グループのメンバーとしてログオンする必要があります。  
+ この手順を実行するには、必要がありますまたはログインする BizTalk Server Operators グループのメンバーとして、BizTalk Server 管理者グループのメンバーとして。  
   
 ### <a name="to-reconnect-to-a-group"></a>グループに再接続するには  
   
 1. クリックして**開始**、 をクリックして**すべてのプログラム**、 をクリックして[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリックします**BizTalk Server 管理**します。  
   
-2. コンソール ツリーで、[[!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]] をダブルクリックします。  
+2. コンソール ツリーで、ダブルクリック[!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]します。  
   
 3. 右クリックし、 **(利用不可)** グループ化、およびクリックして**更新**します。  
   

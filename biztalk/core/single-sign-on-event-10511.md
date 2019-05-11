@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10511 |Microsoft Docs'
+title: シングル サインオン:イベント 10511 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 828dab394e773f99b31ca23f19b2816ab8558a10
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 531e32a2c23c30095dc744c6e73d111ce9cccc13
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36992091"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65400249"
 ---
-# <a name="single-sign-on-event-10511"></a>シングル サインオン: イベント 10511
+# <a name="single-sign-on-event-10511"></a>シングル サインオン:イベント 10511
 ## <a name="details"></a>詳細  
 
 |                 |                                                                                                                                   |
@@ -28,20 +28,20 @@ ms.locfileid: "36992091"
 | 製品バージョン |                                    [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                                     |
 |    イベント ID     |                                                               10511                                                               |
 |  イベント ソース   |                                                              ENTSSO                                                               |
-|    コンポーネント    |                                                                N\A                                                                |
+|    コンポーネント    |                                                                該当なし                                                                |
 |  シンボル名  |                                                         SSO_ERROR_NO_DSN                                                          |
-|  メッセージ テキスト   | SQL Server 名と SSO データベース名がレジストリ内に見つかりませんでした。 SSO 管理ツールを使用してこれらの値を構成してください。 |
+|  メッセージ テキスト   | SQL Server および SSO データベース名がレジストリに見つかりませんでした。 SSO 管理ツールを使用すると、これらの値を構成できます。 |
 
 ## <a name="explanation"></a>説明  
- このエラー イベントは、SQL Server 名と SSO データベース名がレジストリ内に見つからなかったことを示します。 SSO サービスでは、SSO データベースに接続するためにこの情報が必要です。 この情報は、構成中にレジストリ内で設定されます。 このエラーは、構成が正常に完了していないか、または構成の完了後にレジストリ エントリが削除されたことを示している可能性があります。  
+ このエラー イベントは、SQL Server および SSO データベース名がレジストリ内に見つからなかったことを示します。 SSO サービスでは、SSO データベースに接続できるように、この情報が必要です。 この情報は、構成中に、レジストリに設定されます。 構成が正しく完了しませんでしたか、構成した後、レジストリ エントリが削除されたことが完了したこと可能性があります。  
 
 ## <a name="user-action"></a>ユーザーの操作  
  このエラーを解決するには、以下の 1 つ以上の操作を実行します。  
 
-- 広い範囲での構成の失敗が疑われる場合は、製品の構成を解除し、構成プログラムを使用して再構成します。  
+- 多くの構成の失敗を疑いがある場合は、製品の構成を解除し、構成プログラムを使用してを再構成します。  
 
-- この代わりに、これらの存在しない特定のレジストリ エントリを、SSO コマンド ライン ツール ssoconfig.exe を使用して設定することもできます。ssoconfig.exe は、SSO インストール ディレクトリ (通常、C:\Program Files\Common Files\Enterprise Single Sign-On) にあります。 SSO インストール ディレクトリが違う可能性があります。 使用して、 **-setdb**必要な SQL Server および SSO データベース名を設定するオプション。  
+- またこれら特定の不足しているレジストリ エントリは、SSO コマンド ライン ツール ssoconfig.exe SSO インストール ディレクトリの通常 C:\Program files \common files \enterprise でシングル サインオンを使用して設定できます。 SSO インストール ディレクトリは、異なる場合があります。 使用して、 **-setdb**必要な SQL Server および SSO データベース名を設定するオプション。  
 
-  詳細については、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ヘルプの次の情報を参照してください:   
+  詳細については、の次のリソースを参照してください。[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプ。  
 
 - [Enterprise Single Sign-On の実装](../core/implementing-enterprise-single-sign-on.md)

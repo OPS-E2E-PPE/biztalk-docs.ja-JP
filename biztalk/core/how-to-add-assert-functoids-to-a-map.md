@@ -12,14 +12,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e4cfeabbbeac860e927854fb79c90d2b1608b9c3
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 721effbc64c124b5972c22f30bd0aa3780fa0f13
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37015275"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65387290"
 ---
-# <a name="how-to-add-assert-functoids-to-a-map"></a>マップにアサート Functoid を追加する方法
+# <a name="how-to-add-assert-functoids-to-a-map"></a>追加する方法にアサート Functoid をマップ
 **Assert** functoid では、マップには、条件に関する仮定をテストすることができます。 たとえば、製品の購入で追加の割引を決定する計算を実行する場合がありますをアサートする追加の割引になる論理 functoid を使用して 100 ドルを超える (**より大きい**または**Less Than**)。  
 
 > [!NOTE]
@@ -29,16 +29,16 @@ ms.locfileid: "37015275"
 
 ## <a name="add-the-assert-functoid-to-a-map-and-configure-it"></a>マップにアサート functoid を追加し、構成  
 
-1. [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]ツールボックス active をクリックして、**高度な Functoid** functoid のカテゴリを選択するタブ。 選択したカテゴリに含まれる高度な Functoid の一覧が表示されます。  
+1. [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]ツールボックス active をクリックして、**高度な Functoid** functoid のカテゴリを選択するタブ。 選択したカテゴリでの高度な functoid の一覧が表示されます。  
 
 2. ドラッグ、 **Assert** functoid (![アサート functoid](../core/media/advanced-assert-functoid.gif "advanced_assert_functoid")) ツールボックスからグリッド ページの適切な場所にします。  
 
    > [!NOTE]
    >  Functoid は表示されているグリッド ページに配置されます。 別のグリッド ページに functoid を配置する場合は、最初にその他のグリッド ページを表示する必要があります。 
    >    
-   >  複数の Functoid を使用するマップを構築する場合は、相対的な位置 (左右) に注意する必要があります。 Functoids は左から順に実行されます。 1 つの Functoid からの出力は、これよりも右にある Functoid にのみ入力することができます。  
+   >  1 つ以上の functoid を使用するマップを構築する場合は、左から右の相対的な配置を考慮する必要があります。 Functoids は左から順に実行されます。 1 つの Functoid からの出力は、これよりも右にある Functoid にのみ入力することができます。  
 
-3. Functoid には 3 つの入力パラメーターが必要で、それによって 1 つの出力パラメーターが生成されます。 最初のパラメーターを確立するために、 **Assert** functoid からその他の出力をドラッグして、入力リンクを作成**論理**functoid または入力インスタンス メッセージ内の変数ブール値フィールドから。  
+3. Functoid は 3 つの入力パラメーターが必要し、1 つの出力パラメーターが生成されます。 最初のパラメーターを確立するために、 **Assert** functoid からその他の出力をドラッグして、入力リンクを作成**論理**functoid または入力インスタンス メッセージ内の変数ブール値フィールドから。  
 
 4. 2 番目の入力パラメーターを設定する、 **Assert** functoid は、フィールド ノードに送信元スキーマによって、入力リンクを作成、 **Assert** functoid、または定数を挿入します。  
 

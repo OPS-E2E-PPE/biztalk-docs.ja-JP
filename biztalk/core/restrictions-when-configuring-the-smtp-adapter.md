@@ -1,5 +1,5 @@
 ---
-title: SMTP アダプタの構成時の制限事項 |Microsoft ドキュメント
+title: SMTP アダプタの構成時の制限事項 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,20 +15,20 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bf88ba65d5f44acf7f184f0d22dfaaacaa108fb9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 549073d728bbc51015b62590b9b94acd3ae53e68
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22268346"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399102"
 ---
 # <a name="restrictions-when-configuring-the-smtp-adapter"></a>SMTP アダプタの構成時の制限事項
-このセクションでは、SMTP アダプタの構成時に考慮する情報について説明します。  
+このセクションには、SMTP アダプタ構成時に考慮する情報が含まれています。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [SMTP ヘッダーにマクロの使用に関する制限事項](../core/restrictions-on-using-macros-in-smtp-headers.md)  
+-   [SMTP ヘッダーでのマクロの使用に関する制限事項](../core/restrictions-on-using-macros-in-smtp-headers.md)  
   
--   [SMTP の To プロパティに関する制限事項](../core/restrictions-on-the-smtp-to-property.md)  
+-   [SMTP の To プロパティに関する制限](../core/restrictions-on-the-smtp-to-property.md)  
   
--   [SMTP ホストのプロパティに関する制限事項](../core/restrictions-on-the-smtp-host-property.md)
+-   [SMTP ホストのプロパティに関する制限](../core/restrictions-on-the-smtp-host-property.md)

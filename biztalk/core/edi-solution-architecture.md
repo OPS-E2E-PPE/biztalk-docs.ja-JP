@@ -12,23 +12,23 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d6c4ce03c9188a03b47cc2fbe3f67a8be163acdc
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9df4d308af97e0fcccf52d2c6f42660afa7cf079
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37009979"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65350252"
 ---
 # <a name="edi-solution-architecture"></a>EDI ソリューションのアーキテクチャ
-電子データ交換 (EDI) は、ビジネス エンティティがデータを電子的に交換するために最も広く使用されている方法の 1 つです。 EDI を使用するには、メッセージの構文や標準 (ANSI X12、UN/EDIFACT など)、メッセージング プロトコル、およびトランスポートが必要です。 EDI によるメッセージングには、次のような特性があります。  
+電子データ交換 (EDI) では、ビジネス エンティティ データ交換を電子的に最も一般的な手段の 1 つです。 メッセージの構文や標準 (ANSI X12、UN/EDIFACT など)、メッセージング プロトコル、およびトランスポート EDI を使用する必要があります。 次に、EDI メッセージングの特性を示します。  
   
-- EDI のメッセージング プロトコルにより、データが常に期待どおりに配信され、破損したデータや正しくないデータが自動的に検出および報告されるようにすることができます。  
+- データは、常に、想定どおりに到着して破損しているか正しくないデータが自動的に検出され、報告される EDI メッセージング プロトコルを確認します。  
   
-- EDI のメカニズムでは、通常、データ集計スキーマ (バッチ処理) が指定されています。  
+- EDI のメカニズムは、通常、データ集計のスキーマ (バッチ処理) を指定します。  
   
-- EDI ガイドラインのサブセットや特定の実装を組み込むことにより、EDI のドキュメント定義をカスタマイズできます。  
+- ユーザーは、プロパティのサブセットまたは EDI ガイドラインの特定の実装を実装することで多くの場合、EDI ドキュメント定義をカスタマイズします。  
   
-  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は、EDI メッセージの解析とシリアル化を実行できる EDI 専用の受信パイプラインと送信パイプラインを使用して EDI メッセージを処理します。 このセクションでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] における EDI ソリューションのアーキテクチャ (受信側および送信側の処理に関する詳細、メッセージの検証、状態レポートなど) について説明します。  
+  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 使用して EDI メッセージを処理では、受信し、解析と EDI メッセージをシリアル化を実行できる EDI 送信パイプラインを特定します。 このセクションでの EDI ソリューションのアーキテクチャを説明します[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]、受信側と送信側の処理、メッセージの検証、および状態レポートの詳細を含めています。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

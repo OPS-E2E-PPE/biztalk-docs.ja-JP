@@ -34,51 +34,51 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2fe568185bde471bea9396786e58c31ced960d23
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ec79910977625c7e93bac1e70b0f482a0db67677
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36968187"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399950"
 ---
 # <a name="using-acknowledgments"></a>受信確認の使用
-BizTalk メッセージング エンジンは、ポートを通じたメッセージの処理中に発生した条件に応じて、肯定受信確認応答 (ACK) および否定受信確認応答 (NACK) を生成します。 BizTalk Server では、メッセージの転送が成功したことを示す受信確認、および転送の失敗やメッセージの中断を示す否定受信確認応答を作成します。  
+BizTalk メッセージング エンジンは、ポート経由でメッセージの処理中に発生した状態に肯定受信確認応答 (ACK) および否定受信確認応答 (NACK) を生成します。 BizTalk Server では、メッセージの送信が成功を示す肯定受信確認と転送の失敗やメッセージの中断を示す否定受信確認応答をパブリッシュします。  
   
 ## <a name="why-use-acknowledgments"></a>受信確認を使用する理由  
- 受信確認および否定受信確認応答は、強力なフィードバックを提供します。このフィードバックを使用して、メッセージが送信先に到達したかどうか、途中で問題が発生したかどうかを判断できます。 たとえば、受信確認は、次の場合に役立ちます。  
+ 肯定および否定受信確認は、メッセージが送信先に到着したか、途中の 1 つまたは複数の問題が発生したかを判断するために使用できる強力なフィードバックを提供します。 たとえば、受信確認は便利な場合です。  
   
-- スキーマの検証や他のエラーの調査を行うため、新しい取引先の受信ポートを監視する。  
+- スキーマ検証のための新しい取引先パートナーとその他のエラーの受信ポートを監視するには。  
   
-- 取引先に承認用のローン要求が正常に送信された場合に、"インプロセス" としてその状態をマークする。または、転送に失敗した場合 (取引先のサーバーがダウンしている場合など) に "失敗" としてその状態をマークする。  
+- 正常に承認のため、パートナーに送信されるか (たとえば、パートナーのサーバーでは、ダウン) 場合、送信が失敗した場合は「失敗」の場合は、「インプロセス」として承認用に送信、ローン申請の状態をマークするには。  
   
-- 複数の注文書を含むインターチェンジを処理し、転送された注文数または転送に失敗した注文数を追跡する。  
+- 複数の購買発注書を含むインターチェンジを処理し、送信または転送に失敗した注文数を追跡します。  
   
-  フィルターを使用するコンテンツ ベースのルーティングと受信確認を使用して、これらの各シナリオを実現できます。  
+  これらの各シナリオは、受信確認とフィルターを使用するコンテンツ ベース ルーティングを使用して行うことができます。  
   
 ## <a name="routing-acknowledgments"></a>受信確認のルーティング  
- ACK または NACK が生成されると、ACK/NACK を発生させたメッセージのすべてのメッセージ コンテキスト プロパティが降格します。 昇格させたプロパティは、受信確認に流れません。 受信確認をルーティングするには、次のプロパティを使用してフィルターを作成、 **BTS**名前空間。  
+ ACK または NACK が発行されると、すべての ACK または NACK を原因となったメッセージからメッセージ コンテキスト プロパティは降格されます。 昇格されたプロパティは、受信確認をフローしません。 受信確認をルーティングするには、次のプロパティを使用してフィルターを作成、 **BTS**名前空間。  
   
 |プロパティ名|データ型|説明|  
 |-------------------|---------------|-----------------|  
-|BTS.AckFailureCategory|xs:int|識別、 **ErrorCategory**場所と、中断の理由を提供します。|  
+|BTS します。AckFailureCategory|xs:int|識別、 **ErrorCategory**場所と、中断の理由を提供します。|  
 |BTS.AckFailureCode|xs:string|識別、 **ErrorCode**場所と、中断の理由を提供します。|  
-|BTS.AckType|xs:string|受信確認の値は ACK、否定受信確認応答の値は NACK です。|  
-|BTS.AckID|xs:string|識別、 **MessageID**元のメッセージ。|  
-|BTS.AckOwnerID|xs:string|元のメッセージのインスタンス ID を確認します。|  
-|BTS.CorrelationToken|xs:string|元のメッセージの関連付けトークン (存在する場合) を確認します。|  
-|BTS.AckDescription|xs:string|識別、 **ErrorDescription**場所と、中断の理由を提供します。|  
+|BTS.AckType|xs:string|値は、肯定受信確認と NACK の ACK を否定受信確認の場合です。|  
+|BTS します。AckID|xs:string|識別、 **MessageID**元のメッセージ。|  
+|BTS.AckOwnerID|xs:string|元のメッセージ インスタンス ID を識別します。|  
+|BTS.CorrelationToken|xs:string|1 つが存在する場合は、元のメッセージの関連付けトークンを識別します。|  
+|BTS します。AckDescription|xs:string|識別、 **ErrorDescription**場所と、中断の理由を提供します。|  
 |BTS.AckSendPortID|xs:string|識別、 **SendPortID**元のメッセージ。|  
 |BTS.AckSendPortName|xs:string|識別、 **SendPortName**元のメッセージ。|  
-|BTS.AckOutboundTransportLocation|xs:string|識別、 **OutboundTransportLocation**元のメッセージ。|  
-|BTS.AckReceivePortID|xs:string|識別、 **ReceivePortID**元のメッセージ。|  
+|BTS します。AckOutboundTransportLocation|xs:string|識別、 **OutboundTransportLocation**元のメッセージ。|  
+|BTS します。AckReceivePortID|xs:string|識別、 **ReceivePortID**元のメッセージ。|  
 |BTS.AckReceivePortName|xs:string|識別、 **ReceivePortName**元のメッセージ。|  
-|BTS.AckInboundTransportLocation|xs:string|識別、 **InboundTransportLocation**元のメッセージ。|  
+|BTS します。AckInboundTransportLocation|xs:string|識別、 **InboundTransportLocation**元のメッセージ。|  
   
 > [!NOTE]
->  エラー情報を含むプロパティは、配信確認で示されるので、ACK に存在しません。  
+>  エラー情報を含むプロパティは、ので、正の配信は Ack に存在しません。  
   
-## <a name="negative-acknowledgment-message-body"></a>否定受信確認応答のメッセージ本文  
- 受信確認および否定受信確認応答に関する重要な情報の多くは、コンテキスト プロパティに格納されています。 コンテキスト プロパティ以外に、NACK には、SOAP エラーを含むメッセージの本文部分があります。 SOAP エラーの形式を次に示します。  
+## <a name="negative-acknowledgment-message-body"></a>否定受信確認応答メッセージの本文  
+ 多くの肯定または否定応答に関する重要な情報は、コンテキスト プロパティに含まれています。 Nack メッセージには、コンテキストのプロパティだけでなく、SOAP エラーを含むメッセージのボディ部も含まれます。 SOAP エラーの形式は次のとおりです。  
   
 ```  
 <?xml version="1.0" encoding="utf-8"?>  
@@ -101,10 +101,10 @@ BizTalk メッセージング エンジンは、ポートを通じたメッセ�
 </SOAP:Envelope>  
 ```  
   
- アダプターによって生成される例外メッセージは、ErrorDescription 要素の SOAP 詳細セクションにあります。  
+ アダプターによって発生した例外メッセージは、ErrorDescription 要素の SOAP 詳細セクションでです。  
   
-### <a name="accessing-the-message-body-from-an-orchestration"></a>オーケストレーションからメッセージ本文へアクセスする  
- 配信通知を必要とするオーケストレーション ポートを使用している場合、送信エラーがスローされる DeliveryFailureException は、NACK メッセージ本文に含まれる SOAP エラーからシリアル化解除されます。 オーケストレーションの例外のメッセージ文字列にアクセスするには、DeliveryFailureException を SoapException にキャストし、次のコードで示されるように InnerXml にアクセスします。  
+### <a name="accessing-the-message-body-from-an-orchestration"></a>オーケストレーションからメッセージの本文にアクセスします。  
+ 配信通知を必要とするオーケストレーション ポートがある場合は、転送エラーの発生時にスローされる DeliveryFailureException は、NACK メッセージ本文に含まれる SOAP エラーから逆シリアル化します。 オーケストレーション内から例外メッセージ文字列にアクセスするには、DeliveryFailureException を SoapException にキャストし、次のコードに示すようにし、InnerXml にアクセスします。  
   
 ```  
 // Cast the DeliveryFailureException to a SoapException…  
@@ -114,7 +114,7 @@ System.Diagnostics.Trace.WriteLine(se.Detail.InnerXml);
 //object type created in an Exception handler  
 ```  
   
- 上記のサンプル コードは、次のような XML フラグメントを返します。  
+ 上記のコード サンプルは、次のような XML フラグメントを返します。  
   
 ```  
 <?xml version="1.0" encoding="utf-8"?>  
@@ -126,8 +126,8 @@ System.Diagnostics.Trace.WriteLine(se.Detail.InnerXml);
 </ns0:NACK>  
 ```  
   
-## <a name="when-is-an-acknowledgment-published"></a>受信確認が生成される場合とは  
- 少なくとも 1 つのサブスクリプションが一致する場合、肯定受信確認応答 (ACK) および否定受信確認応答 (NACK) の両方が障害発生時点のメッセージ ボックス データベースに生成されます。 たとえば、受信ポートから読み込まれるメッセージに一致するスキーマを BizTalk Server が検出できず、NACK サブスクリプションがない場合、メッセージが中断され (失敗したメッセージのルーティングが無効の場合)、NACK は生成されません。  
+## <a name="when-is-an-acknowledgment-published"></a>受信確認が発行される場合  
+ 少なくとも 1 つの一致するサブスクリプションが提供される (ACK) の正と負の値 (NACK) の受信確認の両方が失敗した時点で、メッセージ ボックス データベースに発行されます。 たとえば、受信ポートからメッセージを読み取るし、NACK サブスクリプションがないために、BizTalk Server では、一致するスキーマを見つけることができない場合、メッセージが中断 (かどうか失敗したメッセージのルーティングが有効でない)、NACK を公開しません  
   
 ## <a name="see-also"></a>参照  
  [エラー処理](../core/error-handling.md)   

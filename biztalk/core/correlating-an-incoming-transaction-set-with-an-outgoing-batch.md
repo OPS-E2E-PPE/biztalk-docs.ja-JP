@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b44f89133cbfb7f5925f975a723b84c715180c7a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e6d1e0d6b9a26809325d28fd954ae9197ac36ec9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37013803"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65354475"
 ---
 # <a name="correlating-an-incoming-transaction-set-with-an-outgoing-batch"></a>受信トランザクション セットと送信パッチの関連付け
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、バッチ処理オーケストレーションに送信された EDI トランザクション セットを、送信バッチに関連付けることができます。 これを行うには、バッチ処理オーケストレーションに送信されたトランザクション セットの状態レポートのエントリ (BTSInterchangeID) を、オーケストレーションの状態レポートのエントリ (ActivityID) に関連付けます。 この関連付けは、BusinessMessageJournal BAM アクティビティのエントリを使用して行います。 これらのエントリは、バッチ処理オーケストレーションが、バッチ要素の受信時に作成します。  
@@ -44,7 +44,7 @@ ms.locfileid: "37013803"
 1.  EDI 逆アセンブラーは、受信 EDI インターチェンジの処理時に、InterchangeStatusActivity テーブルと TransactionSetActivity テーブルにエントリを作成します。  
   
     > [!NOTE]
-    >  BAM アクティビティの詳細については、[EDI AS2 メッセージの追跡するために BAM アクティビティ作成](../core/bam-activities-created-to-track-edi-as2-messages.md)を参照してください。  
+    >  BAM アクティビティの詳細については、次を参照してください。 [EDI AS2 メッセージの追跡するために BAM アクティビティ作成](../core/bam-activities-created-to-track-edi-as2-messages.md)です。  
   
 2.  バッチ処理オーケストレーションは、インスタンスが作成されたときに、BatchingActivity にエントリを作成します。 BAM サブシステムは、ActivityID の値を作成します。  
   

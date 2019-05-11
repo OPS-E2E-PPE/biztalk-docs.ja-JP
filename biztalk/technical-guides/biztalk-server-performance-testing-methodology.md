@@ -1,5 +1,5 @@
 ---
-title: BizTalk Server のパフォーマンス テストの方法論 |Microsoft ドキュメント
+title: BizTalk Server のパフォーマンス テストの方法論 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,22 +12,22 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 43192a63e6979c1f6cd23853c661b135825b4aef
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2e0842f7e6f7af35f5a64e47280379b9c4ff2d52
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22300362"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65400474"
 ---
 # <a name="biztalk-server-performance-testing-methodology"></a>BizTalk Server のパフォーマンスをテストする方法
-このセクションでは、このガイドで使用する方法をテストのパフォーマンスに関する情報を提供します。  
+このセクションは、このガイドで使用する方法をテストのパフォーマンスに関する情報を提供します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [パフォーマンス基準を確立します。](../technical-guides/establishing-performance-criteria.md)  
+-   [パフォーマンス条件の設定](../technical-guides/establishing-performance-criteria.md)  
   
--   [パフォーマンス評価の段階](../technical-guides/phases-of-a-performance-assessment.md)  
+-   [パフォーマンス評価のフェーズ](../technical-guides/phases-of-a-performance-assessment.md)  
   
--   [テストの自動化を実装します。](../technical-guides/implementing-automated-testing.md)  
+-   [自動テストの実装](../technical-guides/implementing-automated-testing.md)  
   
 -   [単体テスト](../technical-guides/unit-testing.md)

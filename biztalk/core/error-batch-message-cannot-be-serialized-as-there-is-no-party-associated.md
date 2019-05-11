@@ -12,14 +12,14 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 84915c3544ed6e4222dd7fb035808617b51e5280
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c50695adab39c40ba6d09876e7bc7b80fa4e8a4f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36969563"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65349101"
 ---
-# <a name="batch-message-cannot-be-serialized-as-there-is-no-party-associated-with-send-port"></a>送信ポートに関連付けられたパーティが存在しないため、バッチ メッセージをシリアル化できません
+# <a name="batch-message-cannot-be-serialized-as-there-is-no-party-associated-with-send-port"></a>送信ポートに関連付けられたパーティが存在しないために、バッチ メッセージをシリアル化することはできません。
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                                                                            |

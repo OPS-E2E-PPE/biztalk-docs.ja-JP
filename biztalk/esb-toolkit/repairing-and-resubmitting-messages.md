@@ -1,5 +1,5 @@
 ---
-title: 修復と再送信するメッセージ |Microsoft ドキュメント
+title: 修復し、メッセージを再 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,20 +12,20 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 90bd68b23259edf2784986c6e844b0caf4792aa8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6333ca5ee191a2b8f577ee5b4970f1e5237a2553
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22294322"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65401508"
 ---
-# <a name="repairing-and-resubmitting-messages"></a>修復と再送信するメッセージ
-ESB の管理ポータルに表示されるエラー メッセージには、元のメッセージ処理のための送信時の値でのエラーの生じた可能性があります。 [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] 「修復し、再実行してください」の機能が失敗したメッセージを編集し、ESB 処理のためにそれらを再送信するには、管理者またはユーザーをサポートしています。  
+# <a name="repairing-and-resubmitting-messages"></a>修復し、メッセージを再送信
+ESB 管理ポータルに表示されるエラー メッセージの処理のために送信されたときに、元のメッセージの値にエラーの結果があります。 [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] 「修復し、再実行してください」の機能が失敗したメッセージを編集して、ESB 処理のためにそれらを再送信するには、管理者またはユーザーをサポートしています。  
   
- このセクションのトピックは次のとおりです。  
+ このセクションでは、次のトピックについて説明します。  
   
--   [修復と再送信するメッセージ](../esb-toolkit/repairing-and-resubmitting-a-message.md)  
+-   [メッセージを修復し、再送信する](../esb-toolkit/repairing-and-resubmitting-a-message.md)  
   
 -   [再送信の注意事項と制約事項](../esb-toolkit/resubmission-notes-and-restrictions.md)  
   
--   [再送信の問題のトラブルシューティング](../esb-toolkit/troubleshooting-resubmission-issues.md)
+-   [再送信問題のトラブルシューティング](../esb-toolkit/troubleshooting-resubmission-issues.md)

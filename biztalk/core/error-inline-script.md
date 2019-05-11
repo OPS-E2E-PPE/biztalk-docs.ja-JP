@@ -1,5 +1,5 @@
 ---
-title: エラー - インライン スクリプト |Microsoft ドキュメント
+title: エラー - インライン スクリプト |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 96bb17906d0f5be524527517712794d9faa7368b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b7d50790b3d439116e638d7628c1ac82da37048e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22241874"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65388795"
 ---
 # <a name="error---inline-script"></a>エラー - インライン スクリプト
 **エラー コード**  
@@ -28,8 +28,8 @@ ms.locfileid: "22241874"
   
  **説明**  
   
- 指定された、指定されたインライン スクリプト**スクリプト**functoid には、構文エラーが含まれています。  
+ 指定された、指定されたインライン スクリプト**Scripting** functoid には、構文エラーが含まれています。  
   
  **ユーザーの操作**  
   
- 選択し**スクリプト**functoid は、省略記号ボタン (**.**) に関連付けられたボタン、**スクリプト**プロパティで、Microsoft[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]プロパティ] ウィンドウでし、 **[Functoid スクリプトの**ダイアログ ボックスで、正しい、構文エラーです。
+ 選択**Scripting** functoid は、省略記号をクリックします (**.**) ボタンに関連付けられている、**スクリプト**プロパティで、Microsoft[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]プロパティ ウィンドウで、し、 **Functoid スクリプトの構成** ダイアログ ボックスで、適切な構文エラーです。

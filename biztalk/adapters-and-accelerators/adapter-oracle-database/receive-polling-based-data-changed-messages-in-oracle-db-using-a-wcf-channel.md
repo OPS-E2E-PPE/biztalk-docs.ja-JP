@@ -15,19 +15,19 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 03973baf5c55d4f6b5caa3ef28ce0e11b0cd4fa1
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6398b4c92fc4490b5cb55ad665131e58081a2bdd
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36969675"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65529476"
 ---
 # <a name="receive-polling-based-data-changed-messages-in-oracle-database-using-the-wcf-channel-model"></a>WCF チャネル モデルを使用して Oracle データベースでのポーリングに基づいたデータ変更メッセージを受信します。
 構成することができます、 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] Oracle データベースのテーブルまたはビューのデータ変更をポーリングします。 アダプターには、このようなポーリング操作を実行するには、Oracle のテーブルまたはビューが続く省略可能の PL/SQL コード ブロックをに対して SQL クエリを定期的に実行します。 によって SQL クエリの結果が返されるし、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]受信 POLLINGSTMT 操作の設定、厳密に型指定された結果として、コードにします。 使用してデータベースを構成し、Oracle のポーリングを実行するためのメカニズムの詳細については、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]を参照してください[Oracle データベース アダプターのポーリングに基づいたデータ変更メッセージを受信](../../adapters-and-accelerators/adapter-oracle-database/receive-polling-based-data-changed-messages-in-oracle-database-adapter.md)します。 続行する前に、このトピックで確認することを強くお勧めします。  
   
  構成する、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]ポーリングと Oracle データベースのテーブルまたはビューのインスタンスにバインドのプロパティを設定して**OracleDBBinding**します。 WCF チャネル モデルで、このバインディングを使用する取得できますチャネル リスナーを作成、 **IInputChannel** POLLINGSTMT 操作をアダプターから受信するチャネル。  
   
- 受信操作を使用する方法の概要については、 **IInputChannel** WCF では、[サービス チャネル レベルのプログラミング](https://msdn.microsoft.com/library/ms789029.aspx)を参照してください。 
+ 受信操作を使用する方法の概要については、 **IInputChannel** WCF では、次を参照してください。[サービス チャネル レベルのプログラミング](https://msdn.microsoft.com/library/ms789029.aspx)します。 
   
  このトピックのセクションでは、Oracle データベースのテーブルのポーリングを実行するために情報を提供して、WCF を使用して、ビュー モデルのチャネルします。  
   
@@ -40,11 +40,11 @@ ms.locfileid: "36969675"
   
   通常、ノードと値のデータ列を Oracle LOB を含む結果セットを使用するストリーミングを使用します。  
   
-  POLLINGSTMT 操作のメッセージ構造の詳細については、[ポーリング操作のメッセージ スキーマ](../../adapters-and-accelerators/adapter-oracle-database/message-schemas-for-the-polling-operations2.md)を参照してください。  
+  POLLINGSTMT 操作のメッセージ構造の詳細については、次を参照してください。[ポーリング操作のメッセージ スキーマ](../../adapters-and-accelerators/adapter-oracle-database/message-schemas-for-the-polling-operations2.md)します。  
   
   方法の詳細については[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]LOB データのストリーミング サポートを参照してください[Oracle データベース アダプターのラージ オブジェクト データ型のストリーミング](../../adapters-and-accelerators/adapter-oracle-database/streaming-large-object-data-types-in-oracle-database-adapter.md)します。  
   
-  ノード値のエンド ツー エンドの LOB データのストリーミングをサポートするために、コードでは、ストリーミングの実装の詳細については、[ストリーミング Oracle LOB データ型を使用してデータベース、WCF チャネル モデル](../../adapters-and-accelerators/adapter-oracle-database/streaming-oracle-database-lob-data-types-using-the-wcf-channel-model.md)を参照してください。  
+  ノード値のエンド ツー エンドの LOB データのストリーミングをサポートするために、コードでは、ストリーミングの実装の詳細については、次を参照してください。[ストリーミング Oracle LOB データ型を使用してデータベース、WCF チャネル モデル](../../adapters-and-accelerators/adapter-oracle-database/streaming-oracle-database-lob-data-types-using-the-wcf-channel-model.md)します。  
   
 ## <a name="about-the-examples-used-in-this-topic"></a>このトピックで使用する例について  
  このトピックの例では、SCOTT を使用します。ACCOUNTACTIVITY テーブルし、SCOTT します。ACCOUNT_PKG します。PROCESS_ACTIVITY 関数。 これらの成果物を生成するスクリプトは、サンプルで提供されます。 例では、次の操作を実行します。  
@@ -55,7 +55,7 @@ ms.locfileid: "36969675"
   
 - ACCOUNTACTIVITY テーブルに対する後続のアンケートでは、すべてのレコードは返されません。 ただし、ポーリング操作の一部として複数のレコードを返す例を実行する場合に、ACCOUNTACTIVITY テーブルで一部のレコードを挿入する必要があります。 サンプルで提供される more_activity_data.sql スクリプトを実行して行うことができます。  
   
-  サンプルの詳細については、[アダプタ サンプル](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md)を参照してください。  
+  サンプルの詳細については、次を参照してください。[アダプタ サンプル](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md)します。  
   
 ## <a name="how-do-i-poll-an-oracle-database-using-an-iinputchannel"></a>IInputChannel を使用して Oracle データベースをポーリングする方法は?  
  Oracle データベースのテーブルまたは WCF チャネル モデルを使用して、データ変更メッセージを受信するビューをポーリングするには、次の手順を実行します。  
@@ -86,7 +86,7 @@ ms.locfileid: "36969675"
   
    -   `Microsoft.ServiceModel.Channels.Common`  
   
-4. インスタンスを作成**OracleDBBinding**ポーリングを構成するために必要なバインドのプロパティを設定します。 設定する必要がありますには、少なくとも、 **InboundOperationType**、 **PollingStatement**、および**PollingInterval**プロパティをバインドします。 この例では、設定することも、 **PostPollStatement**プロパティをバインドします。 ポーリングを構成するためのプロパティのバインドの詳細については、[Oracle データベース アダプターのポーリングに基づいたデータ変更メッセージを受信](../../adapters-and-accelerators/adapter-oracle-database/receive-polling-based-data-changed-messages-in-oracle-database-adapter.md)を参照してください。  
+4. インスタンスを作成**OracleDBBinding**ポーリングを構成するために必要なバインドのプロパティを設定します。 設定する必要がありますには、少なくとも、 **InboundOperationType**、 **PollingStatement**、および**PollingInterval**プロパティをバインドします。 この例では、設定することも、 **PostPollStatement**プロパティをバインドします。 ポーリングを構成するためのプロパティのバインドの詳細については、次を参照してください。 [Oracle データベース アダプターのポーリングに基づいたデータ変更メッセージを受信](../../adapters-and-accelerators/adapter-oracle-database/receive-polling-based-data-changed-messages-in-oracle-database-adapter.md)します。  
   
    ```  
    OracleDBBinding binding = new OracleDBBinding();  
@@ -107,7 +107,7 @@ ms.locfileid: "36969675"
    bindingParams.Add(credentials);  
    ```  
   
-6. チャネル リスナーを作成し、開きます。 呼び出すことによって、リスナーを作成する**BuildChannelListener < IInputChannel\>** メソッドを**OracleDBBinding**します。 POLLINGSTMT 操作のターゲット名前空間を変更するには、接続 URI の PollingId プロパティを設定します。 アダプターの接続 URI の詳細については、[Oracle Database 接続 URI の作成](../../adapters-and-accelerators/adapter-oracle-database/create-the-oracle-database-connection-uri.md)を参照してください。  
+6. チャネル リスナーを作成し、開きます。 呼び出すことによって、リスナーを作成する**BuildChannelListener < IInputChannel\>** メソッドを**OracleDBBinding**します。 POLLINGSTMT 操作のターゲット名前空間を変更するには、接続 URI の PollingId プロパティを設定します。 アダプターの接続 URI の詳細については、次を参照してください。 [Oracle Database 接続 URI の作成](../../adapters-and-accelerators/adapter-oracle-database/create-the-oracle-database-connection-uri.md)です。  
   
    ```  
    IChannelListener<IInputChannel> listener = binding.BuildChannelListener<IInputChannel>(connectionUri, bindingParams);  

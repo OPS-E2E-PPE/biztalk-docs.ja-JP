@@ -1,5 +1,5 @@
 ---
-title: Wcf-netnamedpipe アダプタ |Microsoft ドキュメント
+title: Wcf-netnamedpipe アダプター |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,18 +14,18 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 146edb7741a0b674e226196c7fdd4db28fb42b17
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a2550b1b930c778a877f6d09a936547f43a0a2e7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22288794"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65400519"
 ---
-# <a name="wcf-netnamedpipe-adapter"></a>WCF-NetNamedPipe アダプタ
-[!INCLUDE[btsCoName](../includes/btsconame-md.md)][!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]の受信と送信 WCF サービスを要求するときに Wcf-netnamedpipe アダプタを使用して、 [NetNamedPipeBinding](http://go.microsoft.com/fwlink/?LinkId=82588)です。 Wcf-netnamedpipe アダプタを使用すると、オーケストレーションとスキーマを WCF サービスとして公開し、と共に外部 WCF サービスを使用すると、 **NetNamedPipeBinding**です。  
+# <a name="wcf-netnamedpipe-adapter"></a>Wcf-netnamedpipe アダプター
+[!INCLUDE[btsCoName](../includes/btsconame-md.md)] [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 受信と送信の WCF サービス経由で要求するときに Wcf-netnamedpipe アダプタを使用して、 [NetNamedPipeBinding](http://go.microsoft.com/fwlink/?LinkId=82588)します。 Wcf-netnamedpipe アダプタを使用するオーケストレーションとスキーマを WCF サービスとして公開して、と共に外部 WCF サービスを使用する、 **NetNamedPipeBinding**します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [Wcf-netnamedpipe アダプタとは何ですか。](../core/what-is-the-wcf-netnamedpipe-adapter.md)  
+-   [WCF-NetNamedPipe アダプターについて](../core/what-is-the-wcf-netnamedpipe-adapter.md)  
   
--   [Wcf-netnamedpipe アダプタを構成します。](../core/configuring-the-wcf-netnamedpipe-adapter.md)
+-   [WCF-NetNamedPipe アダプターの構成](../core/configuring-the-wcf-netnamedpipe-adapter.md)

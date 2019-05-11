@@ -1,5 +1,5 @@
 ---
-title: MX メッセージの例を示します |Microsoft ドキュメント
+title: MX メッセージの例 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,22 +12,22 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7f5280f8ec2ce16344562907a95c1b0afa8c6627
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 26d86af52d8f93986d7028977166df8cfb28045c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22209146"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377893"
 ---
 # <a name="examples-of-mx-messages"></a>MX メッセージの例
-ソリューション (InfoPath フォーム テンプレート) を異なる MX メッセージを生成するコマンドライン  
+異なる MX メッセージのソリューション (InfoPath フォーム テンプレート) を生成するコマンドライン  
   
- 次の例では、"pacs.004.001.01"および"pain.002.001.01"のスキーマをすべて c:\schemas が必要です。 これにより、"C:\GeneratedForms"フォルダー内の InfoPath フォーム テンプレートのソリューションが生成されます。 ソリューションのフォルダー名は、メッセージを生成する必要がある InfoPath フォームの名前と同じになります。 これらの例では、ユーティリティが"C:\Program files \microsoft BizTalk Accelerator 用 SWIFT\SDK\FormGeneratorUtility"フォルダーに格納されていることを前提としています。 ユーティリティ用に選択した場所を交換して、以下のコマンド。  
+ 次の例では、"pacs.004.001.01"と"pain.002.001.01"スキーマは c:\schemas すべてであることが必要です。 これにより、"C:\GeneratedForms"フォルダー内の InfoPath フォーム テンプレートのソリューションが生成されます。 ソリューションのフォルダー名は、メッセージを生成する必要がある InfoPath フォームの名前と同じになります。 これらの例では、ユーティリティが"C:\Program files \microsoft BizTalk Accelerator 用 SWIFT\SDK\FormGeneratorUtility"フォルダーに配置されていることを前提としています。 ユーティリティでの選択した場所を置き換える、以下のコマンド。  
   
--   **Pacs.004.001.01 スキーマ用にフォームを生成します。**  
+-   **Pacs.004.001.01 スキーマ用のフォームを生成するには。**  
   
      `FormGenerator.exe -b -2 “C:\FormGeneratorUtility2008\MXTemplates” " C:\FormGeneratorUtility2008\TemplateDS\InfoPath Form Template" c:\generatedforms c:\schemas pacs.004.001.01`  
   
--   **Pacs.004.001.01 と pain.002.001.01 スキーマ用にフォームを生成するには。**  
+-   **Pacs.004.001.01 と pain.002.001.01 スキーマ用のフォームを生成するには。**  
   
      `FormGenerator.exe -b -2 “C:\FormGeneratorUtility2008\MXTemplates” “C:\FormGeneratorUtility2008\TemplateDS\InfoPath Form Template" c:\generatedforms c:\schemas pacs.004.001.01 pain.002.001.01`

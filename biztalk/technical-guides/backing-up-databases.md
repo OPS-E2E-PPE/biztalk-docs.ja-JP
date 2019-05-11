@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9b3d3e488c1bae99e343f5ff6d5a15b826138459
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a521e88aed552bf25450cabd1dee98b508da5953
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36980067"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65401310"
 ---
 # <a name="backing-up-databases"></a>データベースのバックアップ
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]複数データベース間で分散トランザクションを使用して、BizTalk Server のバックアップ ジョブは、すべての同期のバックアップを作成します。[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]データベース。 これは、マークされたデータベースの「完全」復旧モデルでトランザクションを使用して実現されます。 バックアップするデータベース間での一貫性が必要です。 詳細については、次を参照してください。 ["マークされたトランザクション、完全バックアップ、およびログ バックアップ"](http://go.microsoft.com/fwlink/?LinkId=151565) (<http://go.microsoft.com/fwlink/?LinkId=151565>) で、BizTalk Server のドキュメント。  
@@ -39,11 +39,11 @@ ms.locfileid: "36980067"
 ## <a name="additional-resources"></a>その他のリソース  
  次のトピックを参照してください、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ドキュメント。  
   
-- 特定の詳細については[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]バックアップし復元のタスクを参照してください[「チェックリスト:: バックアップと復元」](http://go.microsoft.com/fwlink/?LinkId=154070) (<http://go.microsoft.com/fwlink/?LinkId=154070>)。  
+- 特定の詳細については[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]バックアップし復元のタスクを参照してください["チェックリスト。バックアップし、復元"](http://go.microsoft.com/fwlink/?LinkId=154070) (<http://go.microsoft.com/fwlink/?LinkId=154070>)。  
   
 - バックアップと復元の概要については[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]を参照してください["し、復元する BizTalk Server のバックアップ"](http://go.microsoft.com/fwlink/?LinkId=154071) (<http://go.microsoft.com/fwlink/?LinkId=154071>)。  
   
-- BizTalk Server のバックアップ ジョブを構成する方法の詳細については、["方法を構成、Backup BizTalk Server ジョブ"](http://go.microsoft.com/fwlink/?LinkId=154072) (http://go.microsoft.com/fwlink/?LinkId=154072)を参照してください。  
+- BizTalk Server のバックアップ ジョブを構成する方法の詳細については、次を参照してください。 ["方法を構成、Backup BizTalk Server ジョブ"](http://go.microsoft.com/fwlink/?LinkId=154072) (http://go.microsoft.com/fwlink/?LinkId=154072)します。  
   
 ## <a name="see-also"></a>参照  
  [ディザスター リカバリーのための BizTalk Server ログ配布の使用](../technical-guides/using-biztalk-server-log-shipping-for-disaster-recovery.md)

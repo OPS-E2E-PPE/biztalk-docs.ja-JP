@@ -1,5 +1,5 @@
 ---
-title: 集計の管理 |Microsoft ドキュメント
+title: 集計の管理 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,17 +15,17 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f1d645db5b109383ace2a7870dbb01000689b1d1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 37a7fe51bda0002ad8db67cf64f626b98f95524e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22262138"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65380342"
 ---
 # <a name="managing-aggregations"></a>集計の管理
-集計とは、データセットに対して実行する累積処理のことで、そのデータセットに関する主要な特性や情報を取得することができます。 このセクションでは、インデックス、アクティビティ、リアルタイム集計 (RTA) など、集計のさまざまな要素を管理する方法について説明します。  
+集計は、通常、代表的な特性をデータ セットの説明を取得するデータ セットに対する累積的な操作です。 このセクションでは、集計、インデックス、アクティビティ、およびリアルタイム集計 (Rta) などのさまざまな要素を管理する方法について説明します。  
   
- 集計の詳細については、次を参照してください。 [、BAM ポータルでの集計](../core/aggregations-in-the-bam-portal.md)と[、BAM ポータル ページの集計](../core/aggregations-on-the-bam-portal-page.md)です。  
+ 集計の詳細については、次を参照してください。 [BAM ポータルでの集計](../core/aggregations-in-the-bam-portal.md)と[BAM ポータル ページで、集計](../core/aggregations-on-the-bam-portal-page.md)します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
@@ -39,8 +39,8 @@ ms.locfileid: "22262138"
   
 -   [アクティビティ ウィンドウの期間を取得する方法](../core/how-to-get-the-duration-on-an-activity-window.md)  
   
--   [RTA 時間帯の期間を設定する方法](../core/how-to-set-the-duration-on-an-rta-window.md)  
+-   [RTA ウィンドウの期間を設定する方法](../core/how-to-set-the-duration-on-an-rta-window.md)  
   
--   [期間には、RTA ウィンドウを取得する方法](../core/how-to-get-the-duration-on-an-rta-window.md)  
+-   [期間が RTA ウィンドウを取得する方法](../core/how-to-get-the-duration-on-an-rta-window.md)  
   
 -   [BAM 集計を定義する方法](../core/how-to-define-bam-aggregations.md)

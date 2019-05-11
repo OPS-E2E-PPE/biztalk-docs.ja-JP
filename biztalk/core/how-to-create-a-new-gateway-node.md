@@ -14,17 +14,17 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c26dd33fcdc4bd8ad43f03ef3fff6d006480a1c1
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5549317c45fbb431155eb3fab3e757c519956cc8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36976163"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65385576"
 ---
 # <a name="how-to-create-a-new-gateway-node"></a>新しいゲートウェイ ノードを作成する方法
-PeopleSoft Enterprise に新しいゲートウェイ ノードを作成して構成するには、次の手順を実行します。  
+PeopleSoft Enterprise で新しいゲートウェイ ノードの構成を作成し、次の手順に従います。  
   
-### <a name="to-create-and-configure-a-new-gateway-node"></a>新しいゲートウェイ ノードを作成および構成するには  
+### <a name="to-create-and-configure-a-new-gateway-node"></a>作成して新しいゲートウェイ ノードを構成するには  
   
 1. Peoplesoft の左側のパネルでクリックして、**ノード定義**リンク。  
   
@@ -34,9 +34,9 @@ PeopleSoft Enterprise に新しいゲートウェイ ノードを作成して構
   
 4. をクリックして、**ノード**タブをクリックし、次の情報を入力します。  
   
-   1. **説明:** ノードの説明を入力します。  
+   1. **説明 :** ノードの説明を入力します。  
   
-   2. **ノード型:** 選択**外部**します。  
+   2. **ノードの種類:** 選択**外部**します。  
   
    3. **ルーティングの種類:** 選択**暗黙的な**します。  
   
@@ -60,9 +60,9 @@ PeopleSoft Enterprise に新しいゲートウェイ ノードを作成して構
   
    1.  **ヘッダー:** 入力`Y`します。  
   
-   2.  **[Httpproperty]:** 入力`POST`します。  
+   2.  **[HTTPPROPERTY]:** 入力`POST`します。  
   
-   3.  **[Primaryurl]:** IP アドレスとポート、ターゲット コンピューター (開発用コンピューター) を入力します。  
+   3.  **[Primaryurl]:** IP アドレスと、ターゲット コンピューター (開発用コンピューター) のポートを入力します。  
   
    > [!NOTE]
    >  **受信ポート**以前に設定します。  

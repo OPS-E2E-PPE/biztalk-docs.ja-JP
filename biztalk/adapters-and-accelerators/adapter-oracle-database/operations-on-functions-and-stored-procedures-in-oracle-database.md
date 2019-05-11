@@ -19,12 +19,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 856e6bf882605737380f0bbe6185dce8a56c5828
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2e091c31879fadef5c30ac25671297c3f18152b8
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36979611"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65528986"
 ---
 # <a name="operations-on-functions-and-stored-procedures-in-oracle-database"></a>関数と Oracle データベースでストアド プロシージャに対する操作
 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]次のように Oracle 関数、プロシージャ、およびパッケージをサポートしています。  
@@ -37,7 +37,7 @@ ms.locfileid: "36979611"
   
 - **オーバー ロードされた関数とプロシージャ**パッケージでの操作として表示されます。 各オーバー ロード関数またはプロシージャがオーバー ロードを識別する名前の末尾に文字列を表示します。 この文字列は、シーケンス"overload1"、"overload2"、"overload3"の一部です。  
   
-- **REF CURSOR 型**IN はサポートされておりで OUT パラメーターをプロシージャと関数、および関数の戻り値。 詳細については、[関数および REF CURSOR パラメーターを使用したプロシージャに対する操作](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-functions-and-procedures-with-ref-cursor-parameters1.md)を参照してください。  
+- **REF CURSOR 型**IN はサポートされておりで OUT パラメーターをプロシージャと関数、および関数の戻り値。 詳細については、次を参照してください。[関数および REF CURSOR パラメーターを使用したプロシージャに対する操作](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-functions-and-procedures-with-ref-cursor-parameters1.md)します。  
   
 - **レコードの種類**IN はサポートされておりで OUT パラメーターをプロシージャと関数、および関数の戻り値。 単純および複雑な両方の (入れ子になった) レコードの種類がサポートされています。 [RECORD 型を使用した関数およびプロシージャに対する操作](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-functions-and-procedures-with-record-types1.md)  
   

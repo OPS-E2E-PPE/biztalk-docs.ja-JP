@@ -13,12 +13,12 @@ caps.latest.revision: 26
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cfc616fa9834071c2ee8d2b4d63f486ff0abbeab
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 538e935a26f72d972340b8793b4b62cc942f5e9b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37004827"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65386269"
 ---
 # <a name="configure-iis-for-an-http-receive-location"></a>HTTP 受信場所用に IIS を構成します。
 HTTP は受信場所が使用をアプリケーション内では、インターネット インフォメーション サービス (IIS)。 このトピックで、HTTP を有効にする手順が一覧には、IIS 内の場所が表示されます。 
@@ -29,8 +29,8 @@ HTTP は受信場所が使用をアプリケーション内では、インター
 
 HTTP では、場所は、BTSHTTPReceive.dll を受信します。 32 ビットと 64 ビット版は、DLL があります。 使用するバージョンを選択します。 64 ビット プロセスで使用可能なメモリのためがあるかどうかには、大きなサイズのメッセージを処理し、64 ビット バージョンが最適な可能性があります。 
 
-**32 ビットのインストール場所**: *Program Files (x86) \Microsoft BizTalk Server\HttpReceive*します。
-**64 ビットのインストール場所**: *Program Files (x86) \Microsoft BizTalk Server\HttpReceive64*
+**32 ビットのインストール場所**:*プログラム ファイル (x86) \Microsoft BizTalk Server\HttpReceive*します。
+**64 ビットのインストール場所**:*Program Files (x86)\Microsoft BizTalk Server\HttpReceive64*
 
 HTTP の 64 ビット バージョンを実行する 64 ビットのネイティブ モードで受信アダプター、コマンド プロンプトを開き、次のスクリプトを実行します。  
 
@@ -71,14 +71,14 @@ HTTP の 64 ビット バージョンを実行する 64 ビットのネイティ
   
 7. 新しいアプリケーション プールを選択して開きます、**詳細設定**(**アクション**ウィンドウ)。 このウィンドウには。
 
-    - **32 ビット アプリケーションを有効にする**: に設定**True** 32 ビットを選択した場合**BtsHttpReceive.dll**
-    - **モデルの処理** セクションで、 **Identity**: 省略記号を選択します (**.**) を選択します**カスタム アカウント**、し**設定**のメンバーであるアカウントに、 **BizTalk 分離ホスト ユーザー**と**IIS_WPG**グループ。 **[OK]** を選択します。 
+    - **32 ビット アプリケーションを有効にする**:設定**True** 32 ビットを選択した場合**BtsHttpReceive.dll**
+    - **モデルの処理**セクション**Identity**:省略記号を選択します (**.**) を選択します**カスタム アカウント**、し**設定**のメンバーであるアカウントに、 **BizTalk 分離ホスト ユーザー**と**IIS_WPG**グループ。 **[OK]** を選択します。 
   
 8. Web サイトに新しいアプリケーションを追加 (を右クリックし、**既定の Web サイト**、**アプリケーションの追加**)。 このウィンドウには。
   
-   1. **エイリアス**: アプリケーションに関連付けるエイリアスを入力します (など`BTS HTTP Receive`、し**選択**します。  
+   1. **エイリアス**:アプリケーションと関連付けるエイリアスを入力します (など`BTS HTTP Receive`、し**選択**します。  
    2. 作成した新しいアプリケーション プールを選択し、選択**OK**します。  
-   3. **物理パス**: 省略記号を選択します (**.**) を参照および[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]\HttpReceive します。  
+   3. **物理パス**:省略記号を選択します (**.**) を参照および[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]\HttpReceive します。  
    4. **テストの設定**でエラーがないことを確認する、 **Test-connection**  ダイアログ ボックス。 **閉じる**、し、 **OK**します。  
   
       > [!TIP]

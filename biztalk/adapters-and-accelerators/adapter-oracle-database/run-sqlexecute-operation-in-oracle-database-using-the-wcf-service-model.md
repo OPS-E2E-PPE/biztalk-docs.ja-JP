@@ -16,12 +16,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f2aedcd9874682ed71af774db72979c152836ab3
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: cf001bcfe96a2fb6849ce72ba5800117f62e618c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37004859"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65376060"
 ---
 # <a name="run-sqlexecute-operation-in-oracle-database-using-the-wcf-service-model"></a>WCF サービス モデルを使用して Oracle データベースで SQLEXECUTE 操作を実行します。
 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] Oracle データベース アイテムに対する操作の標準セットを明らかになります。 これらの操作を使用して、Oracle 関数またはプロシージャの呼び出しなどで行うまたは基本的な SQL データ操作言語 (DML) 操作でテーブルを実行できます。 ただし、ある可能性があります、ビジネス ロジックによって操作を実行する必要があるシナリオを[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]記録されません。 たとえば、しをたい場合があります。  
@@ -37,7 +37,7 @@ ms.locfileid: "37004859"
   このようなシナリオでの[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]SQLEXECUTE 操作を表示します。 SQLEXECUTE 操作を使用すると、Oracle データベースでパラメーター化 SQL ステートメントを実行できます。 SQLEXECUTE 操作のセットごとに、同じ SQL ステートメントを実行するためのパラメーター セットで構成される、入力パラメーター ブロックをサポートします。 SQLEXECUTE 操作は、ジェネリック レコード セット内の SQL ステートメントの結果を返します。  
   
 ## <a name="about-the-examples-used-in-this-topic"></a>このトピックで使用する例について  
- このトピックで使用して Oracle シーケンスの例では、TID_SEQ という名前です。 このシーケンスを生成するスクリプトは SDK のサンプルで提供されます。 SDK サンプルの詳細については、[SDK 内のサンプル](../../core/samples-in-the-sdk.md)を参照してください。  
+ このトピックで使用して Oracle シーケンスの例では、TID_SEQ という名前です。 このシーケンスを生成するスクリプトは SDK のサンプルで提供されます。 SDK サンプルの詳細については、次を参照してください。 [SDK 内のサンプル](../../core/samples-in-the-sdk.md)します。  
   
 ## <a name="the-wcf-client-class"></a>WCF クライアント クラス  
  WCF サービス モデルは、専用の WCF クライアントを生成します**SQLEXECUTEClient**、SQLEXECUTE 操作。 次のコードは、 **SQLEXECUTEClient** SQLEXECUTE 操作を呼び出すために呼び出すメソッドのシグネチャとします。  

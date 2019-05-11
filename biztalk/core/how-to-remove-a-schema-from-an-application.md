@@ -19,15 +19,15 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0693d94736c4ef3d8ad5ee561ed6b42650c90ab3
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1c6af6da4606b8a6138bfbed257ac71b492293b4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36985435"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65384344"
 ---
 # <a name="how-to-remove-a-schema-from-an-application"></a>スキーマをアプリケーションから削除する方法
-ここでは、BizTalk Server 管理コンソールを使用して、スキーマをアプリケーションから削除する方法について説明します。 この手順では、グループの BizTalk 管理データベースからもスキーマを削除します。 スキーマの新しいバージョンを展開した後にスキーマを削除する場合があります。 詳細とアプリケーションのアイテムを更新するための重要な考慮事項は、[BizTalk アプリケーションの更新](../core/updating-biztalk-applications.md)を参照してください。  
+ここでは、BizTalk Server 管理コンソールを使用して、スキーマをアプリケーションから削除する方法について説明します。 この手順では、グループの BizTalk 管理データベースからもスキーマを削除します。 スキーマの新しいバージョンを展開した後にスキーマを削除する場合があります。 詳細とアプリケーションのアイテムを更新するための重要な考慮事項は、次を参照してください。 [BizTalk アプリケーションの更新](../core/updating-biztalk-applications.md)します。  
   
  スキーマを削除し、同じルート名前空間を持つスキーマの前のバージョンがアプリケーションに存在する場合は、前のバージョンがアクティブになります。  
   

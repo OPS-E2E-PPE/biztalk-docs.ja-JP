@@ -1,5 +1,5 @@
 ---
-title: ResolverDictionary クラス |Microsoft ドキュメント
+title: ResolverDictionary クラス |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,20 +12,20 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a2dfe0082ffc7f7b68c5c56811a28d5ccd20e93e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c1ec9080b0ad12910cc46a2844836a3b48887967
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22295002"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399690"
 ---
 # <a name="the-resolverdictionary-class"></a>ResolverDictionary クラス
-**ResolverDictionary**クラスは、**ディクショナリ**-クラスのインスタンスに格納できる、**リゾルバー**としてクラス**文字列**名前/値のペア。 インスタンスを作成するときに、 **ResolverDictionary**クラス、既存の参照を提供する必要があります**ディクショナリ**インスタンス。 **ResolverDictionary**クラスのデータを提供する、**リゾルバー**クラスの実行時の解像度の実行時に使用します。  
+**ResolverDictionary**クラスは、**ディクショナリ**-ベースのクラスのインスタンスを格納できる、**リゾルバー**クラスとして**文字列**名前/値のペア。 インスタンスを作成するときに、 **ResolverDictionary**クラスを既存の参照を提供する必要があります**ディクショナリ**インスタンス。 **ResolverDictionary**クラスの提供、データ、**リゾルバー**実行時の解決を実行するとき、クラスで使用します。  
   
- [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]インストーラーがインストールおよび登録され、 **Microsoft.Practices.ESB.Resolver.dll**を持つアセンブリ、 **ResolverDictionary**グローバル アセンブリ キャッシュ内のクラスです。  
+ [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]インストーラーがインストールおよび登録され、 **Microsoft.Practices.ESB.Resolver.dll**を持つアセンブリ、 **ResolverDictionary**グローバル アセンブリ キャッシュ内のクラス。  
   
- **ResolverDictionary**クラスは、1 つのメソッドと 1 つのプロパティを公開します。  
+ **ResolverDictionary**クラスが 1 つのメソッドと 1 つのプロパティを公開します。  
   
--   **項目 (** キー **)** です。 このメソッドは、キー名を表す文字列値を受け取ります。 基になるアイテムが存在しない場合、対応する文字列値または空の文字列を返します、**ディクショナリ**インスタンス。  
+-   **項目 (** キー **)** します。 このメソッドは、キー名を表す文字列値を受け取ります。 基になるは、項目が存在しない場合、対応する文字列値または空の文字列を返します**ディクショナリ**インスタンス。  
   
--   **BaseDictionary**です。 このプロパティは、基になるへの参照を返します**ディクショナリ**インスタンス。
+-   **BaseDictionary**します。 このプロパティは、基になるへの参照を返します**ディクショナリ**インスタンス。

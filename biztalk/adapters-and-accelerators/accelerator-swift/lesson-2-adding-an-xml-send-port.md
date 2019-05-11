@@ -1,5 +1,5 @@
 ---
-title: 'レッスン 2: XML の送信ポートの追加 |Microsoft Docs'
+title: レッスン 2:XML の送信ポートの追加 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,14 +15,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 63d955b46ca007aea7ea74960e756520a82f43b6
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ac2a76fc7c614fbaed34845ae8c9f8f8bec69b4e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37005331"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377400"
 ---
-# <a name="lesson-2-adding-an-xml-send-port"></a>レッスン 2: XML の送信ポートの追加
+# <a name="lesson-2-adding-an-xml-send-port"></a>レッスン 2:XML の送信ポートを追加します。
 送信メッセージを表示する方法を定義するのにには、送信ポートを使用します。 このレッスンでは、XML メッセージを送信する方法を定義する送信ポートを作成します。  
 
 ### <a name="to-add-an-xml-send-port"></a>XML の送信ポートを追加するには  
@@ -64,10 +64,10 @@ ms.locfileid: "37005331"
 
     > [!NOTE]
     >  追加する、 **"Microsoft.Solutions.A4SWIFT.Property.A4SWIFT_Failed False = ="** フィルター式の句、送信ポートを送信できるようのみ正常に解析し、メッセージを検証します。 ネイティブを使用して受信パイプラインとは異なり[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]、逆アセンブラー、[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]逆アセンブラーによって、失敗した (誤った) メッセージが中断されないが、代わりに、メッセージ ボックスと昇格させたプロパティを使用して、失敗としてマークに発行します。 A4SWIFT は、失敗したメッセージをメッセージ ボックスに公開する前に収集されたエラーの XML 表現をアタッチします。  
-    > を含めなくても、"Microsoft.Solutions.A4SWIFT.Property.A4SWIFT_Failed False = ="フィルター式の句、送信ポートには、すべてのメッセージが送信されます。 成功または失敗します。 失敗したメッセージのサブスクリプションの詳細については、[メッセージ サブスクリプションの失敗の操作](../../adapters-and-accelerators/accelerator-swift/working-with-failed-message-subscriptions.md)を参照してください。  
+    > を含めなくても、"Microsoft.Solutions.A4SWIFT.Property.A4SWIFT_Failed False = ="フィルター式の句、送信ポートには、すべてのメッセージが送信されます。 成功または失敗します。 失敗したメッセージのサブスクリプションの詳細については、次を参照してください。[メッセージ サブスクリプションの失敗の操作](../../adapters-and-accelerators/accelerator-swift/working-with-failed-message-subscriptions.md)します。  
 
 11. クリックして**適用**、順にクリックします**OK**します。  
 
 12. BizTalk Server 管理コンソールで**送信ポート**を右クリックして**MT103_XML_SendPort**、順にクリックします**開始**します。  
 
-    進みます[モジュール 6: ビジネス ルールの展開](../../adapters-and-accelerators/accelerator-swift/module-6-deploying-the-business-rules.md)します。
+    続行する[第 6 章。ビジネス ルールの展開](../../adapters-and-accelerators/accelerator-swift/module-6-deploying-the-business-rules.md)します。

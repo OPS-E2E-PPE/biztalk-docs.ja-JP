@@ -13,12 +13,12 @@ ms.topic: article
 ms.assetid: aa70b621-903a-4cfa-9cb0-c6a82ed8f733
 caps.latest.revision: 11
 ms.author: mandia
-ms.openlocfilehash: aab7bb1fa22a249eb287f01b2050d10d9f0042ac
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 81666369e4b4a2d7fbeece32197c4e04b240d0e2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37018055"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399368"
 ---
 # <a name="set-up-and-install-prerequisites-for-biztalk-server-2016"></a>BizTalk Server 2016 のセットアップとインストールの前提条件
 サーバーのセットアップとソフトウェアのインストール/構成の前提条件。
@@ -41,7 +41,7 @@ BizTalk Server をインストールして構成するには、ローカル コ�
 2.  **[プロパティ]** で、コンピューターの名前プロパティを選択し、変更します。
 3. コンピューターを再起動します。 
 
-**関連項目**: Windows PowerShell [Rename-Computer](https://technet.microsoft.com/library/hh849792.aspx)
+**参照してください**:Windows PowerShell [Rename-computer](https://technet.microsoft.com/library/hh849792.aspx)
 
 ## <a name="enable-network-dtc-access"></a>ネットワーク DTC アクセスを有効にする
 BizTalk と SQL Server が別々のコンピューターにインストールされている場合、BizTalk Server と SQL Server でネットワーク DTC アクセスを有効にします。 
@@ -89,7 +89,7 @@ Microsoft Edge の利用時に次のメッセージが表示されます:
 
 1. [スタート] メニューで、**[ローカル セキュリティ ポリシー]** を開きます。 あるいは、**[サーバー マネージャー]** を開き、**[ツール]** を選択し、**[ローカル セキュリティ ポリシー]** を選択します。
 2.  **[ローカル ポリシー]** を展開し、**[セキュリティ オプション]** を選択します。 
-3.  **[ユーザー アカウント制御: ビルトイン Administrator アカウントのための管理者承認モード]** ポリシーに移動し、ポリシーを**有効にします**。 
+3.  移動して、**ユーザー アカウント制御。ビルトイン Administrator アカウントの管理者承認モード**ポリシー、および**を有効にする**ポリシー。 
 4. **[OK]** を選択し、コンピューターを再起動します。
 
 ## <a name="install-windows-updates"></a>Windows の更新プログラムをインストールする
@@ -138,7 +138,7 @@ IIS は**役割**または**機能**としてオペレーティング システ�
 
 3. インストールを続行します。コンピューターの再起動が求められたら再起動します。 
 
-**関連項目**: [Windows 8 または Windows Server 2012](http://www.iis.net/learn/get-started/whats-new-in-iis-8/installing-iis-8-on-windows-server-2012) に IIS をインストールする
+**参照してください**:IIS をインストールする[Windows 8 または Windows Server 2012](http://www.iis.net/learn/get-started/whats-new-in-iis-8/installing-iis-8-on-windows-server-2012)します。
 
 
 ## <a name="run-64-bit-bam-portal-optional"></a>(省略可能) 64 ビットの BAM ポータルを実行します。
@@ -229,7 +229,7 @@ Office 2016 は "クイック実行" または "C2R インストーラー" で�
  
 6. [Excel] を選択し、インストールを続行します。 
  
-**関連項目**: [Office 展開ツールのオプションの構成](https://technet.microsoft.com/library/jj219426.aspx)と [Office 2016 または 2013 のインストール](https://support.office.com/article/Install-Office-on-your-PC-or-Mac-4414eaaf-0478-48be-9c42-23adc4716658)
+**参照してください**:[Office 展開ツールの構成オプション](https://technet.microsoft.com/library/jj219426.aspx)と[インストール Office 2016 または 2013](https://support.office.com/article/Install-Office-on-your-PC-or-Mac-4414eaaf-0478-48be-9c42-23adc4716658)
 
 #### <a name="install-excel-2013"></a>Excel 2013 をインストールする
 1. Microsoft Office のセットアップを実行します。
@@ -255,12 +255,12 @@ Visual Studio Enterprise Edition が推奨されますが、Professional 版と 
  
 3. インストールを続行します。コンピューターの再起動が求められたら再起動します。
 
-**関連項目**: [Visual Studio のインストール](https://msdn.microsoft.com/library/e2h7fzkw.aspx)
+**参照してください**:[Visual Studio のインストール](https://msdn.microsoft.com/library/e2h7fzkw.aspx)
 
 > [!IMPORTANT]
 > - BizTalk Server をインストールする前に Visual Studio をインストールし、その後 Visual Studio Team Explorer にアップグレードする場合、BizTalk Server インストールの修復が必要になることがあります。
 > - Visual Studio では、Microsoft SQL Server Express は自動的にインストールされますが、BizTalk Server では使用しません。 Microsoft SQL Server Express をアンインストールします。 Microsoft SQL Server Compact もアンインストールできます。  
-> - BizTalk Server 開発ツールは、Visual Studio をベースとして動作します。 BizTalk Server 開発ツールと SDK をインストールする前に、少なくとも Microsoft Visual C#® .NET コンポーネントをインストールしてください。
+> - BizTalk Server 開発ツールは、Visual Studio をベースとして動作します。 Microsoft Visual のインストールには、少なくともC#® .NET コンポーネント、BizTalk Server 開発ツールと SDK をインストールする前にします。
 > - BizTalk Server ランタイムには、.NET Framework 4.6 が必要です。 Windows Communication Foundation (WCF) アダプターまたは WCF インターセプターがインストールされている場合は、必要な .NET Framework 3.0 です。
 
 #### <a name="uninstall-sql-server-express"></a>SQL Server Express をアンインストールする
@@ -281,7 +281,7 @@ BizTalk Server には SQL Server が必要です。 SQL Server は、BizTalk と
 > - BizTalk Server SDK の全機能を使用する場合や、Visual Studio から BizTalk Server アプリケーションを展開する場合には、SQL Server 開発ツールをインストールします。
 > - BizTalk Server では、バイナリ照合順序を除く、大文字と小文字を区別する/区別しないすべての SQL Server 照合順序がサポートされています。 バイナリ照合順序はサポートされません。
 
-**特定のインストール手順については、** [SQL Server 2016 のインストール](https://docs.microsoft.com/sql/database-engine/install-windows/install-sql-server-from-the-installation-wizard-setup)または[SQL Server 2014 のインストール](https://msdn.microsoft.com/library/bb500469(v=sql.120).aspx)を参照してください。
+**特定のインストール手順については、次を参照してください。** [SQL Server 2016 のインストール](https://docs.microsoft.com/sql/database-engine/install-windows/install-sql-server-from-the-installation-wizard-setup)または[SQL Server 2014 のインストール](https://msdn.microsoft.com/library/bb500469(v=sql.120).aspx)します。
 
 1. SQL Server のインストールを開始します。 
 2. 機能セットアップ中に、以下の項目を選択します。
@@ -321,13 +321,13 @@ BizTalk Server ランタイム、管理ツール、および BAM で必要です
 ## <a name="configure-sql-database-mail-optional"></a>(省略可能) SQL データベースのメールを構成します。
 BAM 警告を使用する場合、BizTalk Server には、SQL Server Database Mail が必要です。 BAM 警告を使用しない場合は、このセクションはスキップしてください。 
 
-**関連項目**: [データベース メール](https://docs.microsoft.com/sql/relational-databases/database-mail/database-mail)に詳細があります。
+**参照してください**:詳細[データベース メール](https://docs.microsoft.com/sql/relational-databases/database-mail/database-mail)します。
 
 > [!IMPORTANT]
 > - SMTP サーバーのサーバー名と TCP ポート番号を知っている必要があります。 この同じコンピューターでは IIS と SMTP サーバーをインストールした場合、ローカル SMTP サーバーを使用します。 SMTP サーバーが認証を必要とする場合、ユーザー名とパスワードを用意します。
 > - BAM ポータルと BAM 警告は別々の機能です。 BAM 警告を使用している場合、SQL Server Database Mail が必要です。 BAM 警告を使用していない場合、SQL Server Database Mail は必要ありません。
 
-**特定の構成手順については、**: 構成[SQL Server 2016 Database Mail](https://docs.microsoft.com/sql/relational-databases/database-mail/configure-database-mail)または[SQL Server 2014 Database Mail](https://msdn.microsoft.com/library/hh245116(v=sql.120).aspx)を参照してください。
+**特定の構成手順については、次を参照してください**:。構成[SQL Server 2016 Database Mail](https://docs.microsoft.com/sql/relational-databases/database-mail/configure-database-mail)または[SQL Server 2014 Database Mail](https://msdn.microsoft.com/library/hh245116(v=sql.120).aspx)します。
 
    
 テスト メールを送信するには: 

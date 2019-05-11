@@ -16,12 +16,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b75a3e95c836f8a577543b43319e6abe49a96c42
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e928e05d1f0890d534fe768f843e5fe945706856
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37005259"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65527580"
 ---
 # <a name="configuring-a4swift-users"></a>A4SWIFT ユーザーの構成
 インストール中に[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]、A4SWIFT 構成プログラムが既定取引先のプロファイルと、契約を作成し、BizTalk Server を登録します。 また、A4SWIFT には、Message Repair and New Submission のコンポーネントで使用されるドキュメント ライブラリが作成されます。  

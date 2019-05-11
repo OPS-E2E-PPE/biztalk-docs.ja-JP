@@ -14,15 +14,15 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7abfcd997b72cccf4cd5357a6d2c846d08069632
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7922cb3eb5af59cea1c5acf5d0ab8e8355d96e1c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37011675"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65383608"
 ---
 # <a name="how-to-use-an-xml-schema-as-a-data-source"></a>XML スキーマをデータ ソースとして使用する方法
-### <a name="to-specify-an-xml-schema-as-a-data-source"></a>XML スキーマをデータ ソースとして指定するには  
+### <a name="to-specify-an-xml-schema-as-a-data-source"></a>データ ソースとして XML スキーマを指定するには  
   
 1. ファクト エクスプ ローラーでクリックして、 **XML スキーマ**タブ。  
   

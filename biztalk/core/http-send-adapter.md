@@ -12,12 +12,12 @@ caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f2ddd2a3fa4b8bb2f97e25809121fa11b1f473f1
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 012ae1302571355e56adda51714bd9206cf51fb0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36999643"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65382880"
 ---
 # <a name="http-send-adapter"></a>HTTP 送信アダプタ
 HTTP 送信アダプターは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] からメッセージを取得して、HTTP POST 要求で送信先 URL に送信します。 メッセージの内容は BizTalk メッセージ オブジェクトのボディ部から取得します。 BizTalk メッセージ オブジェクトの他のすべての部分は無視されます。  
@@ -61,7 +61,7 @@ HTTP 送信アダプターは、[!INCLUDE[btsBizTalkServerNoVersion](../includes
   
  Microsoft インターネット インフォメーション サービス (IIS) では、Web クライアントから HTTP 要求を受信すると、ユーザーを認証します。 ISAPI (Internet Server API) 拡張によって Microsoft Windows ユーザーの権限を借用し、SSO 資格情報ストアを呼び出して、暗号化されたチケットを取得します。 このチケットとして格納されている、 **SSOTicket**メッセージのコンテキストのプロパティ。  
   
- パススルー シナリオでは、BizTalk メッセージング エンジンによって、メッセージ ボックス データベースにメッセージが送信されます。 アダプターはメッセージを受信、メッセージ ボックス データベースから、HTTP アダプターが呼び出す、 **ISSOTicket.RedeemTicket メソッド**からバックエンド資格情報を取得するアプリケーション名と共に、暗号化されたチケットと、SSO ストア。 その後、外部の資格情報を使用してバックエンド システムに接続し、要求が処理されます。 関連アプリケーションの詳細については、[SSO 関連アプリケーション](../core/sso-affiliate-applications.md)を参照してください。  
+ パススルー シナリオでは、BizTalk メッセージング エンジンによって、メッセージ ボックス データベースにメッセージが送信されます。 アダプターはメッセージを受信、メッセージ ボックス データベースから、HTTP アダプターが呼び出す、 **ISSOTicket.RedeemTicket メソッド**からバックエンド資格情報を取得するアプリケーション名と共に、暗号化されたチケットと、SSO ストア。 その後、外部の資格情報を使用してバックエンド システムに接続し、要求が処理されます。 関連アプリケーションの詳細については、次を参照してください。 [SSO 関連アプリケーション](../core/sso-affiliate-applications.md)します。  
   
  オーケストレーションがアダプタを呼び出すシナリオでは、BizTalk メッセージング エンジンによって、メッセージ ボックス データベースにこのメッセージが送信されます。 オーケストレーションで、ことを確認します両方、 **SSOTicket**コンテキスト プロパティと**Microsoft.BizTalk.XLANGs.BTXEngine.OriginatorSID**チケットを格納しているメッセージのコンテキスト プロパティには維持されます。 アダプターは、メッセージ ボックス データベースからこのメッセージを受信、アダプターが呼び出し**RedeemTicket**バックエンド資格情報を SSO ストアから取得する暗号化されたチケットを使用します。 スケジュールをデザインするユーザーは、このプロパティをメッセージに明示的にコピーしてください。  
   
@@ -69,7 +69,7 @@ HTTP 送信アダプターは、[!INCLUDE[btsBizTalkServerNoVersion](../includes
   
  SSO が有効になっている場合と HTTP 送信ポートを含むメッセージを受信、 **Secure**プロパティを検証し、関連アプリケーションのチケットを引き換える SSO サーバーを呼び出します。 SSO を呼び出してチケットを引き換える作業は、関連アプリケーションのアプリケーション管理者、関連管理者、または SSO 管理者が行います。 その後、SSO によってチケットが解読され、バックエンド資格情報を取得します。 パススルーおよびオーケストレーションのシナリオは、HTTP 送信ポートのシナリオと同一です。  
   
- 既定では HTTP 送信ポートの SSO は無効です。 HTTP 送信ポートの SSO を有効にする方法の詳細については、[HTTP 送信ポートの構成](../core/configuring-an-http-send-port.md)を参照してください。  
+ 既定では HTTP 送信ポートの SSO は無効です。 HTTP 送信ポートの SSO を有効にする方法の詳細については、次を参照してください。 [HTTP 送信ポートの構成](../core/configuring-an-http-send-port.md)します。  
   
 > [!NOTE]
 >  シングル サインオンは、基本認証およびダイジェスト認証のみで使用できます。  
@@ -80,9 +80,9 @@ HTTP 送信アダプターは、[!INCLUDE[btsBizTalkServerNoVersion](../includes
   
     -   HTTP 受信アダプターで監視している IIS 仮想ディレクトリの、アプリケーション プール ID (IIS 7.0) またはホスト元 COM+ アプリケーションの ID。 HTTP の IIS の構成の詳細については、受信場所を参照してください[IIS の HTTP 受信場所を構成する方法](../core/how-to-configure-iis-for-an-http-receive-location.md)します。  
   
-    -   HTTP アダプターがで実行されている分離ホスト インスタンス用に使用するログオン資格情報。 ホスト インスタンスのログオン資格情報を構成する方法については、[ホスト インスタンスのプロパティを変更する方法](../core/how-to-modify-host-instance-properties.md)を参照してください。  
+    -   HTTP アダプターがで実行されている分離ホスト インスタンス用に使用するログオン資格情報。 ホスト インスタンスのログオン資格情報を構成する方法については、次を参照してください。[ホスト インスタンスのプロパティを変更する方法](../core/how-to-modify-host-instance-properties.md)します。  
   
--   HTTP アダプタが使用する分離ホストは、信頼されている認証として構成する必要があります。 信頼されている認証としてホストを構成する方法については、[ホスト プロパティを変更する方法](../core/how-to-modify-host-properties.md)を参照してください。  
+-   HTTP アダプタが使用する分離ホストは、信頼されている認証として構成する必要があります。 信頼されている認証としてホストを構成する方法については、次を参照してください。[ホスト プロパティを変更する方法](../core/how-to-modify-host-properties.md)します。  
   
 ## <a name="negative-acknowledgment-nack-messages-generated-for-failed-transmissions-by-the-http-or-soap-adapter"></a>HTTP アダプタまたは SOAP アダプタによる送信が失敗した場合に生成される否定受信確認応答 (NACK) メッセージ  
  メッセージの送信が正常にとき、BizTalk メッセージング エンジンは配信通知が有効になっている場合、メッセージ ボックスに、関連付けられている受信確認 (ACK) メッセージを公開します。 同様に、BizTalk メッセージング エンジンによってメッセージが中断されたり、オーケストレーション エンジンによってオーケストレーションが中断された場合、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] により、関連付けられた否定受信確認応答 (NACK) メッセージがメッセージ ボックスにパブリッシュされます。 NACK メッセージには、コンテキスト プロパティと、SOAP エラーで構成されるメッセージのボディ部が含まれます。 HTTP アダプタまたは SOAP アダプタからの送信に失敗したことが原因で NACK メッセージが生成された場合、SOAP エラーには、送信先の Web サーバーからの応答の Headers 要素および Body 要素が含まれます。 SOAP 送信が失敗した場合に生成される NACK の HTTP エラーの例を次に示します。  

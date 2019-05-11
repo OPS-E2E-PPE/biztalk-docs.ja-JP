@@ -29,12 +29,12 @@ caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 790c839685e71dd1a88b637e5ca7811d62809cc0
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9785e734579c88a790f2a07a292fef476be5d6d7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36980019"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65387530"
 ---
 # <a name="hosts"></a>Hosts
 BizTalk ホスト オブジェクトとは、0 個以上のランタイム プロセスの論理セットであり、サービスやパイプラインなどの各種アイテムを展開する場所です。 ホスト オブジェクトは、展開されたアイテムが物理的に実行されるランタイム インスタンス (0 個以上) の集合でもあります。  
@@ -56,7 +56,7 @@ BizTalk ホスト オブジェクトとは、0 個以上のランタイム プ�
   ![ホスト、ホスト インスタンス、およびサーバーの関係](../core/media/ebiz-ops-adm01.gif "ebiz_ops_adm01")  
   ホスト、ホスト インスタンス、およびサーバー間のリレーションシップ  
   
-  ホスト インスタンスの詳細については、[ホスト インスタンス](../core/host-instances.md)を参照してください。  
+  ホスト インスタンスの詳細については、次を参照してください。[ホスト インスタンス](../core/host-instances.md)します。  
   
   物理的な構成とホストされているアダプターの種類に基づきはホストの 2 つの種類があります。 インプロセス ホストと分離ホスト。  
   

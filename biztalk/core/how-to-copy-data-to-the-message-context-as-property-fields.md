@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 97c0440360a064eda7b6177967c2a48d992c1b9e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e9297660504bc5fddf9faa6ae43060a6c2a96fc2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36975883"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65385639"
 ---
 # <a name="how-to-copy-data-to-the-message-context-as-property-fields"></a>プロパティ フィールドとしてメッセージ コンテキストにデータをコピーする方法
 プロパティとして昇格させることができます、**プロパティ フィールド**はるかとしてプロパティを昇格させると同様に、**識別フィールド**、使用することもでき、**クイック昇格**機能をプロセスを合理化します。  
@@ -32,7 +32,7 @@ ms.locfileid: "36975883"
   
 ### <a name="to-promote-a-property-as-a-property-field-using-the-promote-properties-dialog-box"></a>[プロパティの昇格] ダイアログ ボックスを使用してプロパティを [プロパティ フィールド] として昇格させるには  
   
-1.  必要に応じて、昇格させたプロパティ用の適切なプロパティ スキーマを作成します。 プロパティ スキーマの作成手順については、[プロパティ スキーマの作成](../core/how-to-create-property-schemas.md)を参照してください。  
+1.  必要に応じて、昇格させたプロパティ用の適切なプロパティ スキーマを作成します。 プロパティ スキーマの作成手順については、次を参照してください。[プロパティ スキーマの作成](../core/how-to-create-property-schemas.md)です。  
   
     > [!NOTE]
     >  この手順が不要になる場合は、既にプロパティ スキーマを作成し、適切な挿入**フィールド要素**ノードの子ノードとして、**スキーマ**ノード。  

@@ -18,15 +18,15 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4079486e7dc225793f0620dfb52a7c6fdbf02899
-ms.sourcegitcommit: 9b93ee2a019bef8d482626cf5525a6b95509b135
+ms.openlocfilehash: ed13b7f94cf7dea10837295e81063a3f42499c40
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/17/2018
-ms.locfileid: "42709895"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65398397"
 ---
 # <a name="how-to-use-the-biztalk-wcf-service-publishing-wizard-to-publish-schemas-as-wcf-services"></a>BizTalk WCF サービス公開ウィザードを使用してスキーマを WCF サービスとして公開する方法
-スキーマを WCF サービスとして公開するには、BizTalk WCF サービス公開ウィザードを使用します。  
+スキーマを WCF サービスとして公開するのにには、BizTalk WCF サービス公開ウィザードを使用します。  
   
 > [!NOTE]
 >  BizTalk WCF サービス公開ウィザードを実行する前に、BizTalk プロジェクトを作成する必要があります。 BizTalk プロジェクトには、WCF サービスとして公開するスキーマを含める必要があります。  
@@ -36,7 +36,7 @@ ms.locfileid: "42709895"
 1. クリックして**開始**、 をポイント**すべてのプログラム**、 をポイント[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリックします**BizTalk WCF サービス公開ウィザード**します。  
   
    > [!NOTE]
-   >  BizTalk のオーケストレーションおよびスキーマを作成し、WCF アダプターを使用して WCF サービスとして公開するには、BizTalk WCF サービス公開ウィザードを使用します。 一方、SOAP アダプターを使用してオーケストレーションとスキーマを Web サービスとして公開するには、BizTalk Web サービス公開ウィザードを使用します。  
+   >  作成し、BizTalk オーケストレーションとスキーマを WCF アダプタで WCF サービスとして発行、BizTalk WCF サービス公開ウィザードを使用します。 一方、SOAP アダプターを使用してオーケストレーションとスキーマを Web サービスとして公開するには、BizTalk Web サービス公開ウィザードを使用します。  
   
 2. **BizTalk WCF サービス公開ウィザードへようこそ**] ページで [**次**します。  
   
@@ -51,13 +51,13 @@ ms.locfileid: "42709895"
    > [!NOTE]
    >  可能性のある機密性の高いサービス メタデータが誤って漏洩を防ぐためには、運用環境では、この動作を無効にすることをお勧めします。 これは、httpgetenabled を false に設定するか、MEX 仮想ディレクトリを削除して実行できます。  
   
-5. **WCF サービスの種類**] ページの [、**アダプター名 (トランスポートの種類)** ドロップダウン リストで、WCF サービスを発行する際の分離 WCF アダプターを選択します。 以下のいずれかのアダプターを選択できます。  
+5. **WCF サービスの種類**] ページの [、**アダプター名 (トランスポートの種類)** ドロップダウン リストで、WCF サービスを発行する際の分離 WCF アダプターを選択します。 次のアダプターのいずれかを選択できます。  
   
-   -   **Wcf-basichttp します。** : WCF-BasicHttp 受信アダプターは、ASMX ベースのサービスなど WS-I 基本プロファイル 1.1 準拠の Web サービスと通信できます。  
+   -   **Wcf-basichttp します。** Wcf-basichttp アダプターは、WS と通信できます-基本プロファイル 1.1 準拠の web サービスの ASMX ベースのサービスのようにします。  
   
-   -   **Wcf-wshttp します。** : WCF-WSHttp アダプターは、HTTP および HTTPS を使用し WS-* 標準をとおしてサービスと通信できます。  
+   -   **Wcf-wshttp します。** Wcf-wshttp アダプターは、ws-を使用するサービスと通信できる * HTTP および HTTPS 経由での標準です。  
   
-   -   **Wcf-customisolated します。** : WCF-CustomIsolated アダプターを使用すると、HTTP トランスポートで WCF (Windows Communication Foundation) の拡張機能を利用できるようになります。  
+   -   **Wcf-customisolated します。** Wcf-customisolated アダプターでは、HTTP トランスポート経由で Windows Communication Foundation (WCF) の拡張機能を使用できるようにします。  
   
 6. **WCF サービスの種類** ページで、、**次のアプリケーションを作成する BizTalk 受信場所**受信ポートと受信の各生成 .svc ファイルに対応する場所を作成する チェック ボックス選択した WCF アダプター、**アダプター名**ドロップダウン リスト。 受信場所が既に存在する場合、既存の受信場所は置き換えられません。 このオプションを選択した後、アプリケーションで、受信ポートと受信場所が生成される場所を選択、 **BizTalk アプリケーション名**ドロップダウン リスト、およびクリック **[次へ]** します。  
   
@@ -67,11 +67,11 @@ ms.locfileid: "42709895"
   
 8. **WCF サービス**ページで、公開する WCF サービスを定義します。 ツリーを使用して、 **Web サービスの説明**を追加、削除、名前の変更、および公開する WCF サービスの Web サービス説明ノードの編集 ダイアログ ボックス。 **情報** ダイアログ ボックス、選択したノードに関する情報を提供し、現在のノードまたはサブノードでエラーが表示されます。  
   
-   -   ツリーのルート ノード (Web サービスの説明) は、公開する WCF サービスについての説明です。 仮想ディレクトリ名では、ルート ノードが既定の名前として使用されます。 選択して公開する WCF サービスの Web サービス説明の名前を変更する**web サービスの説明の名前を変更**します。  
+   -   (Web サービスの説明) ツリーのルート ノードでは、公開する WCF サービスについて説明します。 仮想ディレクトリ名では、ルート ノードが既定の名前として使用されます。 選択して公開する WCF サービスの Web サービス説明の名前を変更する**web サービスの説明の名前を変更**します。  
   
         ![WCF サービス ページ](../core/media/35131a58-dae7-45fe-ac6a-928c8570f27d.gif "35131a58-dae7-45fe-ac6a-928c8570f27d")  
   
-   -   Web メソッド ノード**Operation1**、既定のサービス ノードの**Service1**で既定で表示されて、 **Web サービスの説明**のダイアログ ボックスを使用することができます、要求-応答の受信場所。 一方向の WCF について、このサービスの説明の受信場所が、既定の Web メソッド ノードを右クリックして、をクリックしてで発行する予定の場合**web メソッドの削除**、し、次のように、一方向の Web メソッドを作成します既定のサービスを右クリック。ノードを指す**web メソッドを追加**、 をクリックし、**一方向**。  
+   -   Web メソッド ノード**Operation1**、既定のサービス ノードの**Service1**で既定で表示されて、 **Web サービスの説明**のダイアログ ボックスを使用することができます、要求-応答の受信場所。 一方向の WCF について、このサービスの説明の受信場所が、既定の Web メソッド ノードを右クリックして、をクリックしてで発行する予定の場合**web メソッドの削除**、し、次のように、一方向の Web メソッドを作成します。既定のサービス ノードを右クリックし、[ **web メソッドを追加**、] をクリックし、**一方向**します。  
   
    -   新しい WCF サービスを追加する Web サービス説明の名前を右クリックし、 **web サービスの追加**します。 これにより、WCF 操作なしの新しい WCF サービスが作成されます。 WCF サービスの名前を変更、WCF サービスのノードを右クリックし、をクリックする**web サービスの名前を変更**、し、enter キーを押して新しい名前を受け入れます。  
   
@@ -124,5 +124,5 @@ ms.locfileid: "42709895"
   
 ## <a name="see-also"></a>参照  
  [BizTalk WCF サービス公開ウィザードで公開した WCF サービスを構成する方法](../core/configure-wcf-services-published-with-the-biztalk-wcf-service-publishing-wizard.md)   
- [チュートリアル: Wcf-basichttp アダプターを使用した WCF サービスの発行](../core/walkthrough-publishing-wcf-services-with-the-wcf-basichttp-adapter.md)   
+ [チュートリアル: Wcf-basichttp アダプターで WCF サービスの公開](../core/walkthrough-publishing-wcf-services-with-the-wcf-basichttp-adapter.md)   
  [BizTalk WCF サービス公開ウィザードを使用してオーケストレーションを WCF サービスとして公開する方法](../core/publish-orchestrations-as-wcf-services--biztalk-wcf-service-publishing-wizard.md)

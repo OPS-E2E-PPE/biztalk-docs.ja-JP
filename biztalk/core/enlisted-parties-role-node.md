@@ -1,5 +1,5 @@
 ---
-title: 参加 Parties (Role ノード) |Microsoft ドキュメント
+title: Parties (Role ノード) の参加 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,19 +14,19 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 662f4221213240df2feb63eca0f75d96aa44449f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e52f53c08673d1c270202da76113a131007e8ec3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22239690"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65349470"
 ---
 # <a name="enlisted-parties-role-node"></a>Enlisted Parties (Role ノード)
-バインド ファイルの [参加しているパーティ] ノードは、バインド ファイルと共にエクスポートされるロールに関連付けられた参加しているパーティに関する特定の情報を含むすべての [参加しているパーティ] ノードの親ノードです。  
+バインド ファイルの [参加しているパーティ] ノードは、すべては、バインド ファイルと共にエクスポートされるロールに関連付けられた参加しているパーティに関する特定の情報を含む Enlisted Party ノードの親ノードです。  
   
-## <a name="nodes-in-the-enlisted-parties-node"></a>[参加しているパーティ] ノード内のノード  
+## <a name="nodes-in-the-enlisted-parties-node"></a>参加しているパーティ ノード内のノード  
  次の表に、バインド ファイルのこのノードに設定できるプロパティを示します。  
   
-|**名前**|**ノード型**|**データ型**|**Description**|**制限**|**コメント**|  
+|**名前**|**ノードの種類**|**[データ型]**|**[説明]**|**制限**|**コメント**|  
 |--------------|-------------------|-------------------|---------------------|----------------------|------------------|  
-|[参加しているパーティ](../core/enlisted-party-enlisted-parties-node.md)|レコード|EnlistedParty (ComplexType)|ロールに関連付けられた参加しているパーティに関する情報を指定します。|任意|既定値: なし|
+|[Enlisted Party](../core/enlisted-party-enlisted-parties-node.md)|レコード|EnlistedParty (ComplexType)|ロールに関連付けられた参加しているパーティに関する情報を指定します。|任意|既定値: なし|

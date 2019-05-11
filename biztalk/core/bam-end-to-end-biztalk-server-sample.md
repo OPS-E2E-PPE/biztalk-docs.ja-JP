@@ -13,51 +13,51 @@ caps.latest.revision: 35
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fca4bd709a872df739d82fbdfbeabc78df9d09f0
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 17ba248941ef6351bd421b30bd0124073e20b791
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37006499"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65528636"
 ---
-# <a name="bam-end-to-end-biztalk-server-sample"></a>BAM End-to-End (BizTalk Server サンプル)
+# <a name="bam-end-to-end-biztalk-server-sample"></a>BAM エンド ツー エンド (BizTalk Server サンプル)
 エンド ツー エンドのサンプルでは、BAM を使用して (この場合、3 つのオーケストレーションおよびパイプライン) で複数のコンポーネントからのイベントを関連付ける方法を示します。  
 
- BAM によって、パイプライン コンポーネントとオーケストレーションにまたがるビジネス アクティビティが再構築されます。 最下位レベルでこの動作を呼び出して**EventStream.EnableContinuation**アクティビティの他のイベントが必要とする各実装コンポーネントから。 呼び出し**EnableContinuation**明示的な Orchestration1 と Orchestration2 が Continuation フォルダーを 1 つのスケジュールと後のスケジュールを ContinuationID フォルダーで追跡プロファイルに追加することで行われた呼び出し中にはです。  
+ BAM には、パイプライン コンポーネントとオーケストレーションにまたがるビジネス アクティビティが再構築します。 最下位レベルでこの動作を呼び出して**EventStream.EnableContinuation**アクティビティの他のイベントが必要とする各実装コンポーネントから。 呼び出し**EnableContinuation**明示的な Orchestration1 と Orchestration2 が Continuation フォルダーを 1 つのスケジュールと後のスケジュールを ContinuationID フォルダーで追跡プロファイルに追加することで行われた呼び出し中にはです。  
 
- 次の図は、このサンプルのワークフローを示します。  
+ 次の図は、このサンプルで使用されるワークフローを示しています。  
 
  ![](../core/media/ebiz-sdk-samples-bam-endtoendwkflw.gif "ebiz_sdk_samples_bam_endtoendwkflw")  
 
 
 ## <a name="what-this-sample-does"></a>このサンプルの処理  
- BAM End-to-End サンプルでは、BAM を使用し、1 つのパイプラインと複数のオーケストレーションから情報を収集して単一のアクティビティを更新する方法を示します。  
+ BAM のエンド ツー エンドのサンプルでは、BAM を使用するパイプラインと複数のオーケストレーションから情報を収集し、1 つのアクティビティを更新する方法を示します。  
 
-## <a name="how-this-sample-was-designed-and-why"></a>このサンプルをデザインした方法とその理由  
- BAM End-to-End サンプルは、次のアクティビティを示すようにデザインされています。  
+## <a name="how-this-sample-was-designed-and-why"></a>このサンプルのデザイン方法とその理由  
+ BAM のエンド ツー エンドのサンプルは、次のアクティビティを示すために設計されました。  
 
--   パイプライン内の BAM の使用  
+-   BAM を使用して、パイプライン内で。  
 
--   追跡プロファイル エディター (TPE) を使用したオーケストレーション内の図形とメッセージの要素へのアクティビティ項目のマップ  
+-   追跡プロファイル エディター (TPE) を使用して、アクティビティ項目をオーケストレーションとメッセージの要素内の図形にマップします。  
 
--   複数のソリューションがアクティビティに関連する場合における、Continuation を使用したアクティビティのアクティブ状態の維持  
+-   Continuation を使用して、ソリューションの複数の部分は、アクティビティを投稿するときは、アクティビティを維持します。  
 
 
-このサンプルの動作は次のとおりです。  
+このサンプルはように動作します。  
 
 1.  入力メッセージがから取得した、 *\<サンプル パス\>* \BamEndToEnd\Input フォルダー。  
 
-2.  パイプライン コンポーネントによって、一意の DocumentID がメッセージに割り当てられ、BAM API を使用して新しい BAM アクティビティが開始されます。 オーケストレーションで利用できるように、入力メッセージの個別の部分として DocumentID が添付されます。  
+2.  パイプライン コンポーネントでは、メッセージに一意の DocumentID を割り当てるし、新しい BAM アクティビティを開始するために、BAM API を使用します。 オーケストレーションに使用できるようにする、入力メッセージの別の部分として DocumentID が添付されます。  
 
-3.  入力メッセージが受信されると、サービス Orchestration1 がアクティブ化されます。  
+3.  入力メッセージを受信したときに、サービス Orchestration1 がアクティブになります。  
 
-4.  Orchestration1 によって入力メッセージが変更され、パラメーターとして Orchestration2 に渡されます。  
+4.  Orchestration1 では、入力メッセージが変更され、パラメーターとして Orchestration2 に渡します。  
 
-5.  Orchestration2 によって入力メッセージが変更され、Orchestration3 をアクティブ化するメッセージ ボックス データベースに送信されます。  
+5.  Orchestration2 によって入力メッセージが変更され、Orchestration3 をアクティブ化するメッセージ ボックス データベースに送信します。  
 
 6.  Orchestration3 のメッセージが変更され、フォルダーに書き込みます*\<サンプル パス\>* \BamEndToEnd\Output します。  
 
-7.  各オーケストレーションによって BAM アクティビティ内のアクティビティ項目が更新されます。  
+7.  各オーケストレーションでは、BAM アクティビティ内のアクティビティ項目を更新します。  
 
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
  このサンプルで*\<サンプル パス\>* \BAM\BamEndToEnd します。  
@@ -67,33 +67,33 @@ ms.locfileid: "37006499"
 
 |                                        ファイル                                        |                                         説明                                          |
 |---------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
-|                                    BamEndToEnd.sln                                    |                               BAM End-to-End サンプル ソリューション。                                |
-|                                    BamEndToEnd.xls                                    |                                 BAM 定義スタイルシート。                                  |
+|                                    BamEndToEnd.sln                                    |                               BAM のエンド ツー エンドのサンプル ソリューションです。                                |
+|                                    BamEndToEnd.xls                                    |                                 BAM 定義スタイル シートです。                                  |
 |                                    BamEndToEnd.xml                                    |                                     BAM 定義 XML。                                      |
 |                                BAMEndToEndBinding.xml                                 |                                         BAM バインド。                                         |
-|                                      Cleanup.bat                                      |                              サンプルの展開解除を行うバッチ ファイル。                              |
+|                                      Cleanup.bat                                      |                              サンプルの展開解除するバッチ ファイルです。                              |
 |                                   InputMessage.xml                                    |                                        入力メッセージ。                                        |
-|                                       Setup.bat                                       |                         サンプルをコンパイルし、展開するバッチ ファイル。                         |
+|                                       Setup.bat                                       |                         コンパイルして、サンプルを配置するバッチ ファイルです。                         |
 |                              \Components\AssemblyInfo.cs                              |                                   パイプライン コンポーネント コード。                                   |
 |                       \Components\BAMMessagePartPLComponent.cs                        |                                   パイプライン コンポーネント コード。                                   |
-|                             \Components\Components.csproj                             |                                 パイプライン コンポーネント プロジェクト。                                  |
+|                             \Components\Components.csproj                             |                                 パイプライン コンポーネントのプロジェクトです。                                  |
 | \Messages\InputMessage01.xml<br /><br /> [...]<br /><br /> \Messages\InputMessage10.xml |                                    サンプル入力メッセージ。                                    |
-|                               \Services\BAMInbound.btp                                |                                    受信パイプライン ファイル。                                    |
+|                               \Services\BAMInbound.btp                                |                                    受信パイプライン ファイルです。                                    |
 |                              \Services\BAMPartSchema.xsd                              |                                   BAM パート メッセージ スキーマ。                                   |
-|                             \Services\Orchestration1.odx                              |                                        オーケストレーション。                                        |
-|                             \Services\Orchestration2.odx                              |                                        オーケストレーション。                                        |
-|                             \Services\Orchestration3.odx                              |                                        オーケストレーション。                                        |
+|                             \Services\Orchestration1.odx                              |                                        オーケストレーションです。                                        |
+|                             \Services\Orchestration2.odx                              |                                        オーケストレーションです。                                        |
+|                             \Services\Orchestration3.odx                              |                                        オーケストレーションです。                                        |
 |                             \Services\PropertySchema.xsd                              |                                       プロパティ スキーマ :                                        |
-|                                 \Services\Schema1.xsd                                 |                                       メッセージ スキーマ。                                        |
-|                                 \Services\Schema2.xsd                                 |                                       メッセージ スキーマ。                                        |
-|                                 Services\Schema3.xsd                                  |                                       メッセージ スキーマ。                                        |
+|                                 \Services\Schema1.xsd                                 |                                       メッセージ スキーマです。                                        |
+|                                 \Services\Schema2.xsd                                 |                                       メッセージ スキーマです。                                        |
+|                                 Services\Schema3.xsd                                  |                                       メッセージ スキーマです。                                        |
 |                               \Services\Services.btproj                               | [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] BizTalk ファイル プロジェクト。 |
-|                               \Services\Transform_1.btm                               |                                          マップ ファイル。                                           |
-|                               \Services\Transform_2.btm                               |                                          マップ ファイル。                                           |
-|                               \Services\Transform_3.btm                               |                                          マップ ファイル。                                           |
+|                               \Services\Transform_1.btm                               |                                          マップ ファイルです。                                           |
+|                               \Services\Transform_2.btm                               |                                          マップ ファイルです。                                           |
+|                               \Services\Transform_3.btm                               |                                          マップ ファイルです。                                           |
 
 ## <a name="how-to-use-this-sample"></a>このサンプルの使用方法  
- 次の手順を使用して、BAM End-to-End サンプルをビルドおよび実行します。  
+ ビルドして BAM エンド ツー エンドのサンプルを実行するには、次の手順を使用します。  
 
 -   [このサンプルをビルドして初期化](#To_Build_Sample)  
 
@@ -103,18 +103,18 @@ ms.locfileid: "37006499"
 
 ##  <a name="To_Build_Sample"></a>ビルドしてこのサンプルの初期化  
 
-1.  管理者は、コマンド プロンプトを開き、実行*\<サンプル パス\>* \BAM\BAMEndToEnd\Setup.bat します。 Setup.bat は、このサンプルの BAM インフラストラクチャをビルドして初期化します。 コマンド プロンプトは開いたままにします。  
+1.  管理者は、コマンド プロンプトを開き、実行*\<サンプル パス\>* \BAM\BAMEndToEnd\Setup.bat します。 Setup.bat は、ビルドして、このサンプルの BAM インフラストラクチャを初期化します。 コマンド プロンプトは開いたままにしておきます。  
 
-2.  Orchestration1、Orchestration2、および Orchestration3 を BAM アクティビティにマップするための追跡プロファイルを作成します。 (詳細な手順がという別の手順では、追跡プロファイルの作成は複雑なプロセスなので**追跡プロファイルを作成する**します。 この手順については、このドキュメントの後半で説明します)。  
+2.  Orchestration1、Orchestration2、および Orchestration3 を BAM アクティビティにマップする追跡プロファイルを作成します。 (詳細な手順がという別の手順では、追跡プロファイルの作成は複雑なプロセスなので**追跡プロファイルを作成する**します。 この手順が表示されますこのドキュメントで後述します。)  
 
-3.  前の手順で作成した追跡プロファイル BamEndToEnd.btt を展開します。  コマンド プロンプトでを変更、 *\<サンプル パス\>* \BAM\BamEndToEnd ディレクトリ。 追跡プロファイルを展開するには、次の行を入力し、キーを押します**Enter**:  
+3.  前の手順で作成した BamEndToEnd.btt 追跡プロファイルを展開します。  コマンド プロンプトでを変更、 *\<サンプル パス\>* \BAM\BamEndToEnd ディレクトリ。 追跡プロファイルを展開するには、次の行を入力し、キーを押します**Enter**:  
 
     `“<BizTalkInstallationPath>\Tracking\bttdeploy” BamEndToEnd.btt`
 
      [追跡プロファイル管理ユーティリティを使って追跡プロファイルを展開する方法](../core/how-to-deploy-tracking-profiles-with-the-tracking-profiles-management-utility.md)詳細に説明します。
 
     > [!IMPORTANT]
-    >  ContinuationID Orch1_ に一致する Continuation がないことを示すメッセージは無視できます。 Orch1_ という名前の Continuation は追跡プロファイルではなくパイプライン コンポーネントで定義されているので、このメッセージが表示されます。  
+    >  ContinuationID orch1 _ に一致する Continuation がないこと、メッセージを無視することができます。 パイプライン コンポーネントでは、追跡プロファイルではなく、orch1 _ という名前の continuation が定義されているため、このメッセージが必要です。  
 
 ##  <a name="To_Run_Sample"></a>このサンプルを実行します。  
 
@@ -128,7 +128,7 @@ ms.locfileid: "37006499"
 
 3.  右クリックして**dbo.bam_EndToEndActivity_Completed**、 をクリックし、**テーブルを開く**します。 SQL Server を使用している場合はクリックして**上位 1000 行を選択する**します。  
 
-     bam_EndToEndActivity_Completed テーブルの内容が右ペインに表示されます。 このテーブルの各行は、完了した EndToEndActivity アクティビティを表します。  
+     Bam_EndToEndActivity_Completed テーブルの内容は、右側のウィンドウに表示されます。 テーブルの各行は、完了した EndToEndActivity アクティビティを表します。  
 
 #### <a name="rerun-this-sample"></a>このサンプルを再実行します。  
 
@@ -188,7 +188,7 @@ ms.locfileid: "37006499"
 20. 展開**\<スキーマ\>**、し、ドラッグ**DocumentID**を**orch2 _** 左側のウィンドウで継続します。  
 
     > [!NOTE]
-    >  Orch2_ Continuation と Orch2_ Continuation ID を混同しないように注意してください。 Continuation ID を表すアイコンには、キーが含まれています (![continuation ID のアイコン](../core/media/2d04a714-ade9-4e96-b89e-00002da75bea.gif "2d04a714-ade9-4e96-b89e-00002da75bea"))、continuation を表すアイコンにキー (が含まれていません![continuation のアイコン](../core/media/test.gif "テスト"))。  
+    >  Orch2 _ continuation と orch2 _ continuation ID を混同しないでください。 Continuation ID を表すアイコンには、キーが含まれています (![continuation ID のアイコン](../core/media/2d04a714-ade9-4e96-b89e-00002da75bea.gif "2d04a714-ade9-4e96-b89e-00002da75bea"))、continuation を表すアイコンにキー (が含まれていません![continuation のアイコン](../core/media/test.gif "テスト"))。  
 
 21. をクリックして**イベント ソースの選択**、] をクリックし、 **[オーケストレーション スケジュールの**します。  
 
@@ -203,7 +203,7 @@ ms.locfileid: "37006499"
 26. 展開**BAMPart**、し、ドラッグ**DocumentID**を右側のウィンドウで、 **orch2 _** 左側のウィンドウで continuation ID。  
 
     > [!NOTE]
-    >  Orch2_ Continuation と Orch2_ Continuation ID を混同しないように注意してください。 Continuation ID を表すアイコンには、キーが含まれています (![continuation ID のアイコン](../core/media/2d04a714-ade9-4e96-b89e-00002da75bea.gif "2d04a714-ade9-4e96-b89e-00002da75bea"))、continuation を表すアイコンにキー (が含まれていません![continuation のアイコン](../core/media/test.gif "テスト"))。  
+    >  Orch2 _ continuation と orch2 _ continuation ID を混同しないでください。 Continuation ID を表すアイコンには、キーが含まれています (![continuation ID のアイコン](../core/media/2d04a714-ade9-4e96-b89e-00002da75bea.gif "2d04a714-ade9-4e96-b89e-00002da75bea"))、continuation を表すアイコンにキー (が含まれていません![continuation のアイコン](../core/media/test.gif "テスト"))。  
 
 27. 矢印の付いたフォルダー アイコンをクリックします (![フォルダーでボタンをクリックし、セットアップ&#45;矢印](../core/media/abccd08b-2b01-49c6-80ed-a032bbbd10d4.gif "abccd08b-2b01-49c6-80ed-a032bbbd10d4"))、オーケストレーションを表示するには、2 回です。  
 
@@ -224,7 +224,7 @@ ms.locfileid: "37006499"
 35. 展開**BAMPart**、し、ドラッグ**DocumentID**を右側のウィンドウで、 **orch3 _** 左側のウィンドウで継続します。  
 
     > [!NOTE]
-    >  Orch3_ Continuation と Orch3_ Continuation ID を混同しないように注意してください。 Continuation ID を表すアイコンには、キーが含まれています (![continuation ID のアイコン](../core/media/2d04a714-ade9-4e96-b89e-00002da75bea.gif "2d04a714-ade9-4e96-b89e-00002da75bea"))、continuation を表すアイコンにキー (が含まれていません![continuation のアイコン](../core/media/test.gif "テスト"))。  
+    >  Orch3 _ continuation と orch3 _ continuation ID を混同しないでください。 Continuation ID を表すアイコンには、キーが含まれています (![continuation ID のアイコン](../core/media/2d04a714-ade9-4e96-b89e-00002da75bea.gif "2d04a714-ade9-4e96-b89e-00002da75bea"))、continuation を表すアイコンにキー (が含まれていません![continuation のアイコン](../core/media/test.gif "テスト"))。  
 
 36. をクリックして**イベント ソースの選択**、] をクリックし、 **[オーケストレーション スケジュールの**します。  
 
@@ -239,7 +239,7 @@ ms.locfileid: "37006499"
 41. 展開**BAMPart**、し、ドラッグ**DocumentID**を右側のウィンドウで、 **orch3 _** 左側のウィンドウで continuation ID。  
 
     > [!NOTE]
-    >  Orch3_ Continuation と Orch3_ Continuation ID を混同しないように注意してください。 Continuation ID を表すアイコンには、キーが含まれています (![continuation ID のアイコン](../core/media/2d04a714-ade9-4e96-b89e-00002da75bea.gif "2d04a714-ade9-4e96-b89e-00002da75bea"))、continuation を表すアイコンにキー (が含まれていません![continuation のアイコン](../core/media/test.gif "テスト"))。  
+    >  Orch3 _ continuation と orch3 _ continuation ID を混同しないでください。 Continuation ID を表すアイコンには、キーが含まれています (![continuation ID のアイコン](../core/media/2d04a714-ade9-4e96-b89e-00002da75bea.gif "2d04a714-ade9-4e96-b89e-00002da75bea"))、continuation を表すアイコンにキー (が含まれていません![continuation のアイコン](../core/media/test.gif "テスト"))。  
 
 42. 矢印の付いたフォルダー アイコンをクリックします (![フォルダーと上矢印ボタン](../core/media/abccd08b-2b01-49c6-80ed-a032bbbd10d4.gif "abccd08b-2b01-49c6-80ed-a032bbbd10d4"))、オーケストレーションを表示するには、2 回クリックします。  
 
@@ -254,14 +254,14 @@ ms.locfileid: "37006499"
 47. 右クリック**DocumentID**下、 **orch2 _** クリックして、継続**ポート マッピングの設定**します。  
 
     > [!NOTE]
-    >  Orch2_ Continuation と Orch2_ Continuation ID を混同しないように注意してください。 Continuation ID を表すアイコンには、キーが含まれています (![continuation ID のアイコン](../core/media/2d04a714-ade9-4e96-b89e-00002da75bea.gif "2d04a714-ade9-4e96-b89e-00002da75bea"))、continuation を表すアイコンにキー (が含まれていません![continuation のアイコン](../core/media/test.gif "テスト"))。  
+    >  Orch2 _ continuation と orch2 _ continuation ID を混同しないでください。 Continuation ID を表すアイコンには、キーが含まれています (![continuation ID のアイコン](../core/media/2d04a714-ade9-4e96-b89e-00002da75bea.gif "2d04a714-ade9-4e96-b89e-00002da75bea"))、continuation を表すアイコンにキー (が含まれていません![continuation のアイコン](../core/media/test.gif "テスト"))。  
 
 48. **ポートの選択**のセクション、**ポートの選択**ダイアログ ボックスで、 をクリックして**BamEndToEnd_ReceivePort**、クリックして-不等号 ( **>**)、をクリックし、 **OK**します。  
 
 49. 追跡プロファイルを保存*\<サンプル パス\>* \BAM\BamEndToEnd\BamEndToEnd.btt します。  
 
 ## <a name="important-details"></a>重要な詳細情報  
- 追跡プロファイルは、パイプラインではサポートされていません。 ただし、呼び出し**BeginActivity**パイプライン コンポーネントは、オーケストレーションで ActivityID の使用と同じです。 呼び出し**EnableContinuation**オーケストレーションでの continuation の使用と同じです。  
+ パイプラインでは、追跡プロファイルはサポートされていません。 ただし、呼び出し**BeginActivity**パイプライン コンポーネントは、オーケストレーションで ActivityID の使用と同じです。 呼び出し**EnableContinuation**オーケストレーションでの continuation の使用と同じです。  
 
 ## <a name="see-also"></a>参照  
  [ビジネス アクティビティの監視 (BizTalk Server Samples フォルダー)](../core/business-activity-monitoring-biztalk-server-samples-folder.md)

@@ -1,5 +1,5 @@
 ---
-title: フラット ファイル逆アセンブラー パイプライン コンポーネント |Microsoft ドキュメント
+title: フラット ファイル逆アセンブラー パイプライン コンポーネント |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,24 +15,24 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7a05c8e72f98e8faa602b5d057c7d6b24dd9de83
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2f829960c2904dc429bc1092f9722b24a5997808
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22245922"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65387934"
 ---
 # <a name="flat-file-disassembler-pipeline-component"></a>フラット ファイル逆アセンブラー パイプライン コンポーネント
-フラット ファイル逆アセンブラー コンポーネントは、区切られたフラット ファイルおよび位置指定のフラットファイルの形式のメッセージを解析し、XML 表現に変換します。 また、フラット ファイル逆アセンブラーは、フラット ファイル メッセージからヘッダー構造およびトレーラー構造を削除し、メッセージのインターチェンジを個別のドキュメントに分割します。 ドキュメントおよびヘッダーからのプロパティの昇格も行われます。  
+フラット ファイル逆アセンブラー コンポーネントは、区切り文字および位置指定フラット ファイル形式のメッセージを解析し、XML 表現に変換します。 フラット ファイル逆アセンブラーは、フラット ファイル メッセージから、ヘッダーとトレーラー構造を削除し、個別のドキュメントに、メッセージ内のインターチェンジを中断します。 また、ドキュメントおよびヘッダーからプロパティを昇格します。  
   
- フラット ファイルの詳細については、次を参照してください。[位置指定レコードのフラット ファイル メッセージ](../core/flat-file-messages-with-positional-records.md)です。 参照してください[区切り記号付きレコードとフラット ファイル メッセージ](../core/flat-file-messages-with-delimited-records.md)です。  
+ フラット ファイルの詳細については、次を参照してください。[位置指定レコードのフラット ファイル メッセージ](../core/flat-file-messages-with-positional-records.md)します。 参照してください[で区切られたレコードのフラット ファイル メッセージ](../core/flat-file-messages-with-delimited-records.md)します。  
   
- フラット ファイル逆アセンブラー パイプライン コンポーネントの構成方法の詳細については、次を参照してください。 [、フラット ファイル逆アセンブラー パイプライン コンポーネントを構成する方法](../core/how-to-configure-the-flat-file-disassembler-pipeline-component.md)です。  
+ フラット ファイル逆アセンブラー パイプライン コンポーネントの構成方法の詳細については、次を参照してください。[フラット ファイル逆アセンブラー パイプライン コンポーネントを構成する方法](../core/how-to-configure-the-flat-file-disassembler-pipeline-component.md)します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [フラット ファイル逆アセンブラー パイプライン コンポーネントにおけるドキュメントの検証](../core/document-validation-in-the-flat-file-disassembler-pipeline-component.md)  
+-   [フラット ファイル逆アセンブラー パイプライン コンポーネントのドキュメント検証](../core/document-validation-in-the-flat-file-disassembler-pipeline-component.md)  
   
--   [フラット ファイル逆アセンブラー パイプライン コンポーネントでの文字エン コード](../core/character-encoding-in-the-flat-file-disassembler-pipeline-component.md)  
+-   [フラット ファイル逆アセンブラー パイプライン コンポーネントでの文字エンコード](../core/character-encoding-in-the-flat-file-disassembler-pipeline-component.md)  
   
--   [チュートリアル: フラット ファイル逆アセンブル ヘッダーおよびトレーラーを使用します。](../core/walkthrough-flat-file-disassembly-using-a-header-and-trailer.md)
+-   [チュートリアル: ヘッダーとトレーラーを使用してフラット ファイル逆アセンブリ](../core/walkthrough-flat-file-disassembly-using-a-header-and-trailer.md)

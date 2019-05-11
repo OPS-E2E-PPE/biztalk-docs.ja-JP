@@ -16,12 +16,12 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8775ea82843641600c9156d79afab49e6cd7c634
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 96aa2e1f7625776f63564455f536697e4cdbdfbc
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37003107"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65339835"
 ---
 # <a name="how-to-create-an-affiliate-application"></a>関連アプリケーションを作成する方法
 MMC スナップインまたはここで示すコマンドを使用すると、XML ファイルで指定された 1 つ以上のアプリケーションを作成できます。 Windows 側開始 SSO の XML ファイルの例を次に示します。  
@@ -57,7 +57,7 @@ MMC スナップインまたはここで示すコマンドを使用すると、X
 > [!IMPORTANT]
 >  この作業を実行するには、SSO 管理者または SSO 関連管理者である必要があります。  
   
- 関連アプリケーションは作成した後で有効にする必要があります。 詳細については、[関連アプリケーションを有効にする方法](../core/how-to-enable-an-affiliate-application.md)を参照してください。  
+ 関連アプリケーションは作成した後で有効にする必要があります。 詳細については、次を参照してください。[関連アプリケーションを有効にする方法](../core/how-to-enable-an-affiliate-application.md)します。  
   
 ### <a name="to-create-an-affiliate-application-using-the-mmc-snap-in"></a>MMC スナップインを使用して関連アプリケーションを作成するには  
   

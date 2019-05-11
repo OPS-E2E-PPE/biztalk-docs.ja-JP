@@ -15,19 +15,19 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 38605a921a1c2761f73c5871544d8853814f6e0f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b6f2b656a45b8ef86df96d1234eb25344cf0cbd7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37014171"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377380"
 ---
 # <a name="installing-and-configuring-biztalk-server-on-the-http-front-end-servers"></a>インストールして、HTTP フロント エンド サーバーで BizTalk Server の構成
 インストールして MRSR サイトをホストするため、HTTP フロント エンド サーバーとして使用する BizTalk Server を構成する方法について説明し、[!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]テンプレート フォーム。  
 
 ### <a name="to-install-and-configure-biztalk-server-on-the-biztalk-http-front-end-servers"></a>インストールして、BizTalk HTTP フロント エンド サーバーに BizTalk Server を構成するには  
 
-1. カスタム インストール実行[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]次の機能を選択する:**ビジネス ルール エンジン**と**SharePoint アダプター**します。  
+1. カスタム インストール実行[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]次の機能を選択します。**ビジネス ルール エンジン**と**SharePoint アダプター**します。  
 
    > [!NOTE]
    >  その他の機能では、このインストールに必要ありません。  

@@ -12,14 +12,14 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cce469b25a2ba15c3038ea9079c3f22fc4f8c0c2
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 379d6a1499ad9bb67ba962b98e64f8966e5fdf9a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37010715"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65348017"
 ---
-# <a name="the-interchange-contained-a-malformed-isa-or-the-service-schema-was-not-available"></a>インターチェンジに正しくない形式の ISA が含まれていたか、サービス スキーマを使用できませんでした
+# <a name="the-interchange-contained-a-malformed-isa-or-the-service-schema-was-not-available"></a>インターチェンジに正しくない形式の ISA が含まれているか、サービス スキーマが利用できなかった
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                                                    |

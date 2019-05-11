@@ -1,5 +1,5 @@
 ---
-title: '方法: ESB 入り口を使用して、メッセージの検証 |Microsoft Docs'
+title: 操作方法:ESB 入り口を使用して、メッセージの検証 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 62df8ec8628353aa127ed6cde8380e5724ddf12a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2c441d3d67cde0cc4c3243a085623adb9cdb349b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37020570"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65400110"
 ---
-# <a name="how-to-validate-a-message-using-an-esb-on-ramp"></a>方法: ESB 入り口を使用して、メッセージの検証
+# <a name="how-to-validate-a-message-using-an-esb-on-ramp"></a>操作方法:ESB 入り口を使用して、メッセージを検証します。
 ## <a name="goal"></a>[目標]  
  このセクションでは、ESB 入り口に送信された XML メッセージのメッセージの検証を実行する ESB ディスパッチャー逆アセンブル パイプライン コンポーネントを構成する方法を示します。  
   
@@ -229,7 +229,7 @@ ms.locfileid: "37020570"
 ## <a name="additional-resources"></a>その他のリソース  
  詳細については、次の関連項目を参照してください。  
   
--   [方法: ビジネス ルール ポリシーを使用して、日程を選択](../esb-toolkit/how-to-select-an-itinerary-using-a-business-rules-policy.md)  
+-   [方法: ビジネス ルール ポリシーを使用するスケジュールを選択します。](../esb-toolkit/how-to-select-an-itinerary-using-a-business-rules-policy.md)  
   
 -   [開発アクティビティ](../esb-toolkit/development-activities.md)  
   

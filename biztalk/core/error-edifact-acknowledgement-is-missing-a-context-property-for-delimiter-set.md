@@ -1,5 +1,5 @@
 ---
-title: EDIFACT 受信確認がシステムによって生成されました。 ただし、区切り記号セットのコンテキスト プロパティがありません。 シリアル化できません |Microsoft Docs
+title: EDIFACT 受信確認は、システムによって生成されました。 ただし、区切り記号セットのコンテキスト プロパティがありませんが。 シリアル化できません |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e15887960035daa9847c133e361ce5bb60085215
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 959be3b06db82d4bd0ca741076adaa9df7148d70
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36993107"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65389334"
 ---
-# <a name="the-edifact-acknowledgement-was-generated-by-the-system-however-it-is-missing-a-context-property-for-delimiter-set-it-cannot-be-serialized"></a>EDIFACT 受信確認がシステムによって生成されました。 ただし、区切り記号セットのコンテキスト プロパティがありません。 この受信確認はシリアル化できません
+# <a name="the-edifact-acknowledgement-was-generated-by-the-system-however-it-is-missing-a-context-property-for-delimiter-set-it-cannot-be-serialized"></a>EDIFACT 受信確認は、システムによって生成されました。 ただし、区切り記号セットのコンテキスト プロパティがありませんが。 シリアル化できません。
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                                                                               |
@@ -30,10 +30,10 @@ ms.locfileid: "36993107"
 |  イベント ソース   |                            [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI                             |
 |    コンポーネント    |                                                                  EDI エンジン                                                                   |
 |  シンボル名  |                                                                       -                                                                       |
-|  メッセージ テキスト   | EDIFACT 受信確認がシステムによって生成されました。 ただし、区切り記号セットのコンテキスト プロパティがありません。 この受信確認はシリアル化できません |
+|  メッセージ テキスト   | EDIFACT 受信確認は、システムによって生成されました。 ただし、区切り記号セットのコンテキスト プロパティがありませんが。 シリアル化できません。 |
   
 ## <a name="explanation"></a>説明  
- このエラーは、BizTalk Server が EDIFACT 受信確認をシリアル化できず、区切り記号セット コンテキスト プロパティが BizTalk メッセージに見つからないことを示します。  
+ このエラーは、BizTalk Server が EDIFACT 受信確認をシリアル化できません、区切り記号セット コンテキスト プロパティが BizTalk メッセージから見つからないを示します。  
   
 ## <a name="user-action"></a>ユーザーの操作  
  このエラーを解決するのには、EDIFACT 受信確認を BizTalk メッセージ コンテキストに区切り記号セット コンテキスト プロパティを記述することを確認します。

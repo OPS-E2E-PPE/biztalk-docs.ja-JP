@@ -1,5 +1,5 @@
 ---
-title: BAM WCF インターセプタ |Microsoft ドキュメント
+title: BAM WCF インターセプタ |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 845348621f6bfcf6dbb41f286a320c5a6953ff39
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f75cbd84c6f874ce631673510e175f55bfe1fe33
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22230570"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65528685"
 ---
 # <a name="bam-wcf-interceptor"></a>BAM WCF インターセプタ
 BAM WCF インターセプタは、WCF サービス内のデータの追跡を包括的にサポートします。  
@@ -34,7 +34,7 @@ BAM WCF インターセプタは、WCF サービス内のデータの追跡を�
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [傍受のための Windows Communication Foundation アプリケーションを構成する方法](../core/configure-a-windows-communication-foundation-application-for-interception.md)  
+-   [傍受のため、Windows Communication Foundation アプリケーションを構成する方法](../core/configure-a-windows-communication-foundation-application-for-interception.md)  
   
 -   [Windows Communication Foundation スキーマ](../core/windows-communication-foundation-schema.md)  
   

@@ -12,12 +12,12 @@ caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b6c17e3f9fd0950d27d2d86568e08726d4886b2f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c4b4d582dd2a40efd08015b6039d97a7e1bfda3a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36983419"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65398186"
 ---
 # <a name="receive-side-processing-of-an-incoming-edi-message-over-as2"></a>AS2 経由での受信 EDI メッセージの受信側の処理
 AS2 経由の EDI メッセージの受信側の処理では、AS2 メッセージの受信、MDN の送信、EDI ペイロードの処理、および EDI 受信確認の送信 (有効になっている場合) が行われます。  
@@ -55,7 +55,7 @@ AS2 経由の EDI メッセージの受信側の処理では、AS2 メッセー�
   
   AS2 デコーダーは、これらのヘッダーをメッセージのコンテキストに昇格させます。 これは、後は、次の:  
   
-- アグリーメントの解決を実行して、受信メッセージの処理に使用するパーティのプロパティを特定します。 詳細については、[受信 AS2 メッセージのアグリーメントの解決](../core/agreement-resolution-for-incoming-as2-messages.md)を参照してください。  
+- アグリーメントの解決を実行して、受信メッセージの処理に使用するパーティのプロパティを特定します。 詳細については、次を参照してください。[受信 AS2 メッセージのアグリーメントの解決](../core/agreement-resolution-for-incoming-as2-messages.md)します。  
   
 - 使用して送信者の認証、 **AS2-から**プロパティ。  
   
@@ -97,7 +97,7 @@ AS2 経由の EDI メッセージの受信側の処理では、AS2 メッセー�
   
  双方向の要求-応答を設定する場合の受信ポートの EDI および AS2 メッセージを同期 MDN または (非同期 MDN の場合)、HTTP 応答を返す、**受信ポートで要求-応答送信パイプラインに確認をルーティング**プロパティ (設定、**ローカル ホスト設定**で一方向 EDI アグリーメントのページ、**アグリーメントのプロパティ** ダイアログ ボックス) は無視されます。 このプロパティがオンになっていても、送信パイプラインは EDI 受信確認ではなく同期 MDN または HTTP 応答を返します。  
   
- 詳細については、[EDI 受信確認を送信する](../core/sending-an-edi-acknowledgment.md)を参照してください。  
+ 詳細については、次を参照してください。 [EDI 受信確認を送信する](../core/sending-an-edi-acknowledgment.md)します。  
   
 ## <a name="see-also"></a>参照  
  [BizTalk Server が AS2 メッセージを受信する方法](../core/how-biztalk-server-receives-as2-messages.md)

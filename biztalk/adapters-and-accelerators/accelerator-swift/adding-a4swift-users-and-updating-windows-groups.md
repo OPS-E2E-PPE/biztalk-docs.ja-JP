@@ -19,17 +19,17 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bb276c069a86d060c319f960e666210691b69056
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 96bbf81638b6099f6e4d6f74704b1f94faf82679
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36973331"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65378674"
 ---
 # <a name="adding-a4swift-users-and-updating-windows-groups"></a>A4SWIFT ユーザーの追加や、Windows グループの更新
 作成する必要がありますを作成して、Message Repair and New Submission の役割用の証明書をインストールした後[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]ユーザーを追加および[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]グループへのユーザー。  
   
- **概要**  
+ **まとめ**  
   
  Message Repair and New Submission のユーザーを作成し、ローカルまたはドメイン アカウントを追加して[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]次のようにユーザーがグループ化します。  
   

@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 55b3744f6590ee706bcc3df4124f964306634ca5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 17aa261f12d7783a15b998c5eed9743ee7af07dc
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36994947"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65398222"
 ---
 # <a name="receive-location-for-address-not-found"></a>アドレスの受信場所が見つかりません
 ## <a name="details"></a>詳細  
@@ -30,15 +30,15 @@ ms.locfileid: "36994947"
 |  イベント ソース   |                                               0                                               |
 |    コンポーネント    |                                               0                                               |
 |  シンボル名  |                                               0                                               |
-|  メッセージ テキスト   | アドレスの受信場所"{0}"が見つかりませんでした。 (BizTalk 受信場所が無効になっている可能性があります)。 |
+|  メッセージ テキスト   | アドレスの受信場所"{0}"が見つかりませんでした。 (BizTalk 受信場所が無効になっています)。 |
   
 ## <a name="explanation"></a>説明  
- このエラーは、公開された WCF 分離受信場所に対応する受信場所が見つからなかったことを示します。  
+ このエラーは、公開された WCF 分離受信場所であることを示します見つかりませんでした。 対応する受信場所。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- このエラーを解決するのには、次の操作: BizTalk 管理コンソールで生成される BizTalk WCF 公開ウィザードが存在し、開始は、Web.config ファイルの receiveLocationName 属性で、受信場所が指定されていることを確認します。  
+ このエラーを解決するには、次の操作を行います。BizTalk 管理コンソールで生成される BizTalk WCF 公開ウィザードが存在し、開始は、Web.config ファイルの receiveLocationName 属性で、受信場所が指定されているいることを確認します。  
   
- 受信場所の作成の詳細については、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ヘルプで次の情報を参照してください。  
+ 作成の詳細については、受信場所、次のリソースを参照してください、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプします。  
   
 -   [分離 WCF 受信アダプターでの WCF サービスの公開](../core/publishing-wcf-services-with-the-isolated-wcf-receive-adapters.md)  
   
@@ -48,4 +48,4 @@ ms.locfileid: "36994947"
   
 -   [Wcf-customisolated 受信場所を構成する方法](../core/how-to-configure-a-wcf-customisolated-receive-location.md)  
   
--   [チュートリアル: WCF-BasicHttp アダプターを使用した WCF サービスの公開](../core/walkthrough-publishing-wcf-services-with-the-wcf-basichttp-adapter.md)
+-   [チュートリアル: Wcf-basichttp アダプターで WCF サービスの公開](../core/walkthrough-publishing-wcf-services-with-the-wcf-basichttp-adapter.md)

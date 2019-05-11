@@ -15,30 +15,30 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9d12a4ee046fa7c7d835f0ddd16187e79d9d19c5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: bb758aea5910f14ff345ecd8408e52218cc6860c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36979283"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65398577"
 ---
 # <a name="upgrading-from-a-previous-version-of-sso"></a>SSO の以前のバージョンからアップグレードします。
 エンタープライズ シングル サインオン機能をインストールする (たとえば、Microsoft BizTalk Server 2009) からコンピューターに展開されている以前のバージョンが既にある場合は、次の手順を完了する必要があります。  
   
-1. SSO データベースをセキュリティで保護された場所にバックアップします。  
+1. セキュリティで保護された場所に、SSO データベースのバックアップします。  
   
-2. マスタ シークレット サーバーにあるマスタ シークレット キーをバックアップします。  
+2. マスタ シークレット サーバーでマスター シークレット キーのバックアップします。  
   
 3. 実行して、マスター シークレット サーバーを更新[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]セットアップで選択**カスタム インストール**を選択し、**エンタープライズ シングル サインオン**します。  
   
 4. 選択した後**このコンピューターで有効にするエンタープライズ シングル サインオン**、**既存の SSO システムに参加**します。  
   
-   マスタ シークレット サーバー以外の SSO サーバーについては、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のインストールを更新する必要はありません。 ただし、他の SSO サーバーでも新しいエンタープライズ シングル サインオン機能を使用する場合は、上記の手順を使用して SSO を更新する必要があります。  
+   他の SSO サーバー (非マスター シークレット サーバー) を更新する必要はありません、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]インストールします。 ただし、これらのサーバーで使用可能にする新しいエンタープライズ シングル サインオン機能を実行する場合に、上記で説明した同じ手順を使用して更新する必要があります。  
   
 > [!NOTE]
->  これは、Host Integration Server 2009 のエンタープライズ シングル サインオン機能がインストールされているコンピューターに Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] をインストールする際に、サーバーを更新する必要がある場合にも該当します。  
+>  これらの考慮事項は、Microsoft をインストールする場合にも適用[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ホスト統合 Server 2009 Enterprise Single Sign-On との既存のインストールを使用しているコンピューターをサーバーを更新します。  
   
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] がインストールされているコンピューターに Host Integration Server をインストールする場合は、エンタープライズ シングル サインオン機能を選択しないでください。  
+ コンピューターに Host Integration Server をインストールするかどうか、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]が既にインストールされている、エンタープライズ シングル サインオン機能を選択しないでください。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

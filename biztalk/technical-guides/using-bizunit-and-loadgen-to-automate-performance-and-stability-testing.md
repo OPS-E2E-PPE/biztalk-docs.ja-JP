@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 53dde16a21679e7986f3369a825bc4281ed40f37
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 84dda7f9312f92dd50138f230407c600fac27dda
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36981699"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65400366"
 ---
 # <a name="using-bizunit-and-loadgen-to-automate-performance-and-stability-testing"></a>パフォーマンスと安定性テストを自動化するための BizUnit と LoadGen を使用します。
 このトピックでは、BizUnit と Microsoft BizTalk LoadGen 2007 ツールを使用して、パフォーマンスと安定性は、BizTalk Server ソリューションのテストを自動化する方法について説明します。  
@@ -384,7 +384,7 @@ ms.locfileid: "36981699"
   
  この例では、BizUnit を組み合わせる LoadGen パフォーマンス テストの自動化に使用する方法を示します。 ロード テストのための BizUnit の構成ファイルで説明されているは、機能テストと同様に、Visual Studio のテスト ツールから実行できます。 この手法を採用するには、一元的に管理、管理、およびパフォーマンス テストにデータを収集することができます。  
   
- BizUnit と LoadGen を使用して、自動化によるアプローチで、非常に簡単に通常の業務時間中に十分なテスト結果の分析を提供する時間帯の中に発生する複数のテストの実行をスケジュールになります。 パフォーマンス テストを自動化するときに、予想される稼働環境のメッセージの量のこと、システム負荷が異なるモデル、たとえばたい場合があります (75%、100% および 125%) をさまざまなレベルをシミュレート LoadGen スクリプトの使用を検討します。 ロード テストを実行する場合は、オーバー ロードまたは"無効な day"のシナリオをテストするは特に重要です。 運用環境にシステムを配置する前に、BizTalk Server 環境では、各テスト・ケースの最大持続可能スループット (MST) を知っておくべきです。 維持可能な最大のパフォーマンスの詳細については、次を参照してください[維持可能なパフォーマンスとは何ですか?。](http://go.microsoft.com/fwlink/?LinkID=132304) (http://go.microsoft.com/fwlink/?LinkID=132304) BizTalk Server 2009 ドキュメント。  
+ BizUnit と LoadGen を使用して、自動化によるアプローチで、非常に簡単に通常の業務時間中に十分なテスト結果の分析を提供する時間帯の中に発生する複数のテストの実行をスケジュールになります。 パフォーマンス テスト、自動化することを検討 LoadGen スクリプトを使用してシステムを通じてさまざまなモデルを読み込みます、たとえば (75%、100% および 125%) をさまざまなレベルをシミュレートするためにすることがあります。メッセージの量が予想される稼働環境です。 ロード テストを実行する場合は、オーバー ロードまたは"無効な day"のシナリオをテストするは特に重要です。 運用環境にシステムを配置する前に、BizTalk Server 環境では、各テスト・ケースの最大持続可能スループット (MST) を知っておくべきです。 維持可能な最大のパフォーマンスの詳細については、次を参照してください[維持可能なパフォーマンスとは何ですか?。](http://go.microsoft.com/fwlink/?LinkID=132304) (http://go.microsoft.com/fwlink/?LinkID=132304) BizTalk Server 2009 ドキュメント。  
   
 ### <a name="the-complete-bizunit-loadgen-sample-configuration-file"></a>完了のための BizUnit LoadGen サンプル構成ファイル  
  次の一覧には、前述のための BizUnit 構成ファイルの内容全体が含まれています。  

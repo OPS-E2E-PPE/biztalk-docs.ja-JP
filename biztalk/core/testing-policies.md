@@ -1,5 +1,5 @@
 ---
-title: ポリシーのテスト |Microsoft ドキュメント
+title: ポリシーのテスト |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,19 +17,19 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 036a0a9de33ffc3dd502085a5a6b935f2f16cf84
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7eb707f4d0a22b8dfc1b9478b5056da2bb778a25
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22278298"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65299307"
 ---
 # <a name="testing-policies"></a>ポリシーのテスト
-このセクションでは、ポリシーをテストする方法と追跡情報について説明します。  
+このセクションでは、ポリシーをテストする方法について説明し、追跡情報について説明します。  
   
- Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を使用して、ルール アクティビティを監視し、ビジネス ルール フレームワークを使用するオーケストレーションの全体的な進行状況を追跡できます。 [グループの概要] ページに表示されるルールの追跡情報は、ビジネス ルール作成ツールでテストを行うポリシーの出力と同じです。  
+ Microsoft を使用する[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ルール アクティビティを監視し、ビジネス ルール フレームワークを使用するオーケストレーションの全体的な進行状況を追跡します。 グループの概要ページに表示されるルールの追跡情報は、ビジネス ルール作成ツールでポリシー テストの出力の場合と同じです。  
   
- 詳細については、追跡を使用して、次を参照してください。[ポリシーの追跡を構成する方法](../core/how-to-configure-tracking-for-a-policy.md)です。  
+ 詳細については、追跡を使用して、次を参照してください。[ポリシーの追跡を構成する方法](../core/how-to-configure-tracking-for-a-policy.md)します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

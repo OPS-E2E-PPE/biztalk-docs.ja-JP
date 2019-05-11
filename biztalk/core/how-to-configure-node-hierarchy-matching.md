@@ -12,17 +12,17 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1eb785793b865e36c5b37bd6b32199ab3e34f5d6
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 00de1b7431fd942451d99b958746d209fcdf427d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37009579"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65386245"
 ---
 # <a name="how-to-configure-node-hierarchy-matching"></a>ノード階層の照合を構成する方法
 マップにリンクを作成すると、BizTalk マッパーが自動的にコンパイラ リンクを作成して、描画されたリンクが実装されます。 **ターゲット リンク**リンクのプロパティは、BizTalk マッパーによるコンパイラ リンクの描画方法を制御します。 ここでは、ターゲット リンクを設定する方法を説明します。  
   
- **ソース リンク**プロパティは、値が送信元ノードから取得され、送信先ノードに適用する方法を指定します。 送信元のリンクを設定する方法については、[ソース リンクのコンパイラ値を設定する方法](../core/how-to-set-the-source-links-compiler-value.md)を参照してください。  
+ **ソース リンク**プロパティは、値が送信元ノードから取得され、送信先ノードに適用する方法を指定します。 送信元のリンクを設定する方法については、次を参照してください。[ソース リンクのコンパイラ値を設定する方法](../core/how-to-set-the-source-links-compiler-value.md)します。  
   
 > [!NOTE]
 >  この操作では、BizTalk マッパーが実行されている必要があります。  

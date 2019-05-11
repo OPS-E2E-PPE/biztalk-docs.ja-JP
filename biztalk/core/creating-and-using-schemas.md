@@ -13,25 +13,25 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a9c3ba874f7db3b1aff77c9377ea27874de8501d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 151ddefb45afd41c343b43de44786d7d99ff9b94
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36969521"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65353671"
 ---
 # <a name="create-and-use-tibco-schemas"></a>作成し、TIBCO スキーマを使用
 
 ## <a name="overview"></a>概要
-Microsoft BizTalk Adapter for TIBCO Enterprise Message Service (EMS) で使用するスキーマは、XML エディターまたは Visual Studio の BizTalk Server エディター (オーケストレーションでアダプターを使用する場合のみ) を使用して作成します。 スキーマには、想定している情報の種類を記述します。 このトピックの情報は、送信ハンドラーと受信ハンドラーの両方に適用されます。  
+Microsoft BizTalk Adapter for TIBCO Enterprise Message Service (EMS) は、(オーケストレーションでは、アダプターを使用) 場合のみ、Visual Studio で、XML エディターまたは BizTalk Server のエディターを使って作成するスキーマを使用します。 スキーマと思われる情報の種類について説明します。 このトピックには、送信と受信ハンドラーの両方の情報が含まれています。  
   
-BizTalk Adapter for TIBCO Enterprise Message Service で使用するスキーマを作成するときは、ターゲットの名前空間を含める必要があります。 BizTalk Server でターゲットの名前空間が必要なのは、特定のメッセージ インスタンスを特定のオーケストレーションに関連付けるキーとなるからです。 つまり、オーケストレーションでは特定のターゲットの名前空間を持つメッセージをサブスクライブし、そのターゲットの名前空間を持つ受信 XML メッセージが、メッセージをサブスクライブしたすべてのオーケストレーションに配信されます。 XML ドキュメント スキーマにターゲットの名前空間がない場合は、ルート要素の名前がキーとして使用されます。  
+スキーマを作成する使用の BizTalk adapter for TIBCO Enterprise Message Service には、ターゲットの名前空間が必要です。 BizTalk Server では、特定のメッセージ インスタンスを特定のオーケストレーションに関連付けられるキーのキーであるために、ターゲットの名前空間が必要です。 つまり、オーケストレーションを特定のターゲット名前空間を持つメッセージをサブスクライブしをそのターゲット名前空間を持つ受信 XML メッセージは、メッセージをサブスクライブしているすべてのオーケストレーションに与えられます。 XML ドキュメント スキーマがターゲットの名前空間を持たない場合、BizTalk Server は、キーとしてルート要素の名前を使用します。  
 
 次の手順では、ターゲットの名前空間を設定する方法と、スキーマを生成する方法を示します。  
   
 ## <a name="generate-a-schema"></a>スキーマを生成します。    
  
-1.  BizTalk エディターで、プロジェクトを開きます。  
+1.  BizTalk エディターでは、プロジェクトを開きます。  
   
 2.  右上でソリューション エクスプ ローラーの **追加**、し、**生成した項目の追加**します。  
   
@@ -49,7 +49,7 @@ BizTalk Adapter for TIBCO Enterprise Message Service で使用するスキーマ
   
 2. **プロパティ**ウィンドウで、検索、 **Namespace**フィールドし、たとえば、名前を入力`testNameSpace`します。  
   
-   これで、メッセージを使用してオーケストレーションを継続できます。 メッセージが取得されると、ターゲットの名前空間が設定されたスキーマを使用するオーケストレーションが BizTalk Server で検索され、オーケストレーション プロセスが実行されます。  
+   メッセージを使用してオーケストレーションを続行することができます。 メッセージが取得されて、BizTalk Server で、スキーマ セットのターゲットの名前空間を使用するオーケストレーションを検索し、オーケストレーション プロセスが実行します。  
   
 ## <a name="see-also"></a>参照  
  [アプリケーションの開発](../core/developing-applications5.md)

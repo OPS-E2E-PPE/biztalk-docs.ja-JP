@@ -17,18 +17,18 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fadd89a1e929d672f1b2c8839248d5d03cb27d1c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3046a6cb3dc90db69d7d113bf08b92d8c4606bab
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37005635"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65387754"
 ---
-# <a name="generating-xml-or-schema-in-peoplesoft"></a>PeopleSoft での XML またはスキーマの生成
-次の手順では、PeopleSoft Enterprise を使用して、XML ファイルを作成し、PeopleSoft イベントをトリガーする方法について説明します。 これを行うには、PeopleSoft 環境の一部を変更します。 この変更によって XML ファイルがアクティブ化され、オーケストレーションで監視対象に設定したファイル フォルダーに送信されます。 後で BizTalk server の XML をインポートし、スキーマを生成します。  
+# <a name="generating-xml-or-schema-in-peoplesoft"></a>PeopleSoft で XML またはスキーマの生成
+次の手順では、PeopleSoft Enterprise を使用して XML ファイルを作成し、PeopleSoft イベントをトリガーする方法について説明します。 これを行うには、PeopleSoft 環境で何かを変更します。 変更は、監視するために、オーケストレーションで設定ファイルのフォルダーに送信される XML ファイルをアクティブにします。 後で BizTalk server の XML をインポートし、スキーマを生成します。  
   
 > [!NOTE]
->  この場所を MSEXTERNAL ノードと関連付けると、"Location Value" が変更された場合に、XML ドキュメントが生成され、イベントがトリガーされます。 オーケストレーションの参加および開始後は、PeopleSoft の画面から [LOCATION] 画面に移動できます。 "Location Value" を変更し、その変更を保存すると、対応する XML が \out ディレクトリに現れます。  
+>  場所の値に加えられた変更が XML ドキュメントを生成する場所を MSEXTERNAL ノードに関連付けると、イベントをトリガーします。 参加と、オーケストレーションの開始、場所の画面に、PeopleSoft の画面間を移動できます。 場所の値に変更を加える変更を保存して、対応する XML が \out ディレクトリに表示されます。  
   
 ### <a name="to-generate-xml-or-schema-in-peoplesoft"></a>PeopleSoft で XML またはスキーマを生成するには  
   
@@ -36,9 +36,9 @@ ms.locfileid: "37005635"
   
 2. **場所**画面で、次の情報を入力します。  
   
-   - **セット ID:** 入力**共有**します。  
+   - **ID を設定します。** 入力**共有**します。  
   
-   - **Location Code:** で始まるコードを入力`WKLOC`します。  
+   - **Location Code:** 始まるコードを入力`WKLOC`します。  
   
      ![](../core/media/psadapter-18-task-sharesearch.gif "PSAdapter_18_Task_ShareSearch")  
   
@@ -64,11 +64,11 @@ ms.locfileid: "37005635"
   
      ![](../core/media/psadapter-22-task-viewxml.gif "PSAdapter_22_Task_ViewXML")  
   
-     XML の内容をコピーし、BizTalk Server プロジェクトからアクセスできるファイルに貼り付けます。  
+     コピーして、BizTalk Server プロジェクトでアクセスできるファイルに XML の内容を貼り付けます。  
   
      ![](../core/media/psadapter-23-task-xmlresult.gif "PSAdapter_23_Task_XMLResult")  
   
-10. BizTalk Server から参照することになるので、このファイルの場所を忘れないようにします。  
+10. は、ファイルの場所を忘れないでください BizTalk Server で参照します。  
   
 ## <a name="see-also"></a>参照  
- [付録 B: PeopleSoft アプリケーションの使用](../core/appendix-b-using-the-peoplesoft-application.md)
+ [付録 b:PeopleSoft アプリケーションの使用](../core/appendix-b-using-the-peoplesoft-application.md)

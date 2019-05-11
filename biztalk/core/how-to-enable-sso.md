@@ -21,19 +21,19 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6bb2c6e5349a74fb212bdf7011fb294cb1810e67
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 863a17fc08ea09b79dc89ecb4a285c9cf7aa2d47
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36966259"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65385093"
 ---
 # <a name="how-to-enable-sso"></a>SSO を有効にする方法
 MMC スナップインまたはコマンド ラインを使用して、エンタープライズ シングル サインオン (SSO) システムを全面的に有効にすることができます。  
   
  有効化コマンドを実行した後、各シングル サインオン サーバーで最新のグローバル情報を取得するために SSO データベースをポーリングするので、すべてのサーバーが有効になるまでに、若干の遅延が発生します。  
   
- SSO システムの関連アプリケーションおよびマッピングを構成する場合、関連アプリケーションを作成する必要もあります。 SSO 関連管理者が関連アプリケーションを作成した後で、アプリケーション管理者が変更を加えたり、アプリケーション ユーザー (エンド ユーザー) が自分のマッピングを作成したりできます。 詳細については、[関連アプリケーションを管理する](../core/managing-affiliate-applications.md)と[ユーザー マッピングを管理する](../core/managing-user-mappings.md)を参照してください。  
+ SSO システムの関連アプリケーションおよびマッピングを構成する場合、関連アプリケーションを作成する必要もあります。 SSO 関連管理者が関連アプリケーションを作成した後で、アプリケーション管理者が変更を加えたり、アプリケーション ユーザー (エンド ユーザー) が自分のマッピングを作成したりできます。 詳細については、次を参照してください。[関連アプリケーションを管理する](../core/managing-affiliate-applications.md)と[ユーザー マッピングを管理する](../core/managing-user-mappings.md)します。  
   
 ### <a name="to-enable-the-sso-system-using-the-mmc-snap-in"></a>MMC スナップインを使用して SSO システムを有効にするには  
   

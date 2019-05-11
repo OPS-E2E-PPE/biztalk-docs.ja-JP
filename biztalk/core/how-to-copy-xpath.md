@@ -1,5 +1,5 @@
 ---
-title: XPath をコピーする方法 |Microsoft ドキュメント
+title: XPath をコピーする方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,31 +12,31 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bb282c5c32d8da62a9da6d7a9c900c798e44eee7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5bf9a8da90f264abb0953592abf16dc0e157fcb5
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22248530"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65385600"
 ---
 # <a name="how-to-copy-xpath"></a>XPath をコピーする方法
-XSD (XML Schema Definition) 言語は、BizTalk Server で定義されるメッセージ スキーマの基礎となる構文を提供します。 BizTalk マッパーのツリー ビューでは、それぞれ独自のプロパティのセットを備えた、レコード ノードおよびフィールド ノードの BizTalk 固有のグラフィカルな階層 (他の種類のノード間) を使用します。ただし、このような階層は、XSD として構築および保存されます。  
+XML スキーマ定義 (XSD) 言語は、BizTalk Server 内で定義されるメッセージ スキーマの基礎となる構文を提供します。 BizTalk マッパーのツリー ビューは、独自のプロパティのセットとレコードの BizTalk 固有のグラフィカルな階層と [フィールド] ノード (その他の種類のノード間)、各を使用して、このような階層が作成され、XSD として永続化します。  
   
- マップが複雑で複数のグリッド ページが含まれる場合は、スキーマ ノードの親を特定するのが難しいことがあります。 このような場合は XSD パスが役に立ちます。 XSD パスを使用すると、スキーマ ノードの深さについての情報を得ることができます。 また、このパスを別のグリッド ページで再利用して、リレーションシップを識別できます。  
+ マップが複雑になり、span をグリッド ページ間ではここでは、スキーマのノードの親を検索するは難しいです。 XSD パスは、ここで使用されます。 XSD パスを使用すると、スキーマ ノードの深さについての情報を取得します。 また、リレーションシップを識別するために別のグリッド ページ内にこのパスを再利用できます。  
   
 ## <a name="prerequisites"></a>前提条件  
  これらの手順では、BizTalk マッパーが実行されている必要があります。  
   
 ### <a name="to-copy-the-xsd-path-xpath"></a>XSD パス (XPath) をコピーするには  
   
-1.  XSD パスが必要し、なる をクリックし、スキーマ ノードを右クリックして**コピー XPath**です。  
+1.  スキーマのノードを XSD パスが必要し、し、をクリックを右クリックして**XPath のコピー**します。  
   
-2.  テキスト エディターを開きます。 **[編集]** メニューの **[貼り付け]** をクリックします。 XSD パスを確認できるようになります。  
+2.  テキスト エディターを開きます。 **[編集]** メニューの **[貼り付け]** をクリックします。 XSD パスが確認できます。  
   
     > [!NOTE]
-    >  または、Ctrl + V キーを押してテキスト エディターにパスを貼り付けることもできます。  
+    >  またをテキスト エディターで、パスを貼り付けるには、CTRL + V を押すことができます。  
   
-     次に示すコードは、選択されているスキーマ ノードの XSD パスです。  
+     次のコードでは、選択したスキーマ ノードの XSD パスが表示されます。  
   
     ```  
     /*[local-name()='<Schema>']/*[local-name()='Shipment']/*[local-name()='DataCollection']  
@@ -45,4 +45,4 @@ XSD (XML Schema Definition) 言語は、BizTalk Server で定義されるメッ�
 ## <a name="see-also"></a>参照  
  [BizTalk マッパーの強化された機能を使用](../core/using-enhanced-features-in-biztalk-mapper.md)   
  [スキーマを置換する方法](../core/how-to-replace-schemas.md)   
- [展開して、スキーマ ツリーを折りたたむ方法](https://msdn.microsoft.com/library/ee253802(v=bts.10).aspx)
+ [展開し、スキーマ ツリーを折りたたむ方法](https://msdn.microsoft.com/library/ee253802(v=bts.10).aspx)

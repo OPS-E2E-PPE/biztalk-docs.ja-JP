@@ -12,30 +12,30 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b95af2f3a44454aa59138cd6f77b7f7195cbb02b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1f44b18593e756fe1ed6e05e03d62e498f66c0a3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36971139"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65387769"
 ---
-# <a name="generate-an-xsd-schema-for-json-message"></a>JSON メッセージの XSD スキーマの生成
+# <a name="generate-an-xsd-schema-for-json-message"></a>JSON メッセージの XSD スキーマを生成します。
 > [!NOTE]
 >  このチュートリアルは、BizTalk Server にのみ適用されます。  
   
- このソリューションでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] アプリが JSON メッセージを受信します。 アプリがメッセージを処理する前に、メッセージを XSD スキーマに変換する必要があります。 変換には、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の JSON メッセージから XSD スキーマを作成する JSON スキーマ ウィザードを使用します。  
+ このソリューションで、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]アプリケーション JSON メッセージを受信します。 アプリケーションでは、メッセージを処理できますが、前に、XSD スキーマに変換する必要があります。 これを行うに[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]JSON メッセージから XSD スキーマを作成する JSON スキーマ ウィザードを提供します。  
   
-1. Visual Studio で、新しい [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] プロジェクトを作成します。  
+1. Visual Studio で、作成、新しい[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]プロジェクト。  
   
 2. ソリューション エクスプ ローラーでプロジェクト名を右クリックして >**追加** > **新しい項目の** > **JSON スキーマ ウィザード**します。 スキーマの名前を指定 (`PO.xsd`)、をクリックし、**追加**します。  
   
 3. JSON スキーマ ウィザードの [ようこそ] ページで、をクリックして**次**します。  
   
-4. JSON スキーマの情報ページで、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] アプリに送信される JSON 注文書ファイルの場所を指定します。 ターゲットの名前空間のルート ノード名を指定し、**完了**します。  
+4. JSON スキーマ情報 ページに送信される JSON 注文書順序ファイルの場所を指定します、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]アプリケーション。 ターゲットの名前空間のルート ノード名を指定し、**完了**します。  
   
     ![JSON の生成された XSD スキーマ](../core/media/btsjson-wizard.png "BTSJSON_Wizard")  
   
-5. 指定した名前のスキーマが [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] プロジェクトに追加されます。 生成されたスキーマ ファイル (**PO.xsd**) サンプルを使用しても提供されます。  
+5. 指定した名前のスキーマが追加、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]プロジェクト。 生成されたスキーマ ファイル (**PO.xsd**) サンプルを使用しても提供されます。  
   
 ## <a name="see-also"></a>参照  
  [BizTalk Server を使用して JSON メッセージの処理](../core/processing-json-messages-using-biztalk-server.md)

@@ -1,5 +1,5 @@
 ---
-title: 'チェックリスト: から別のアプリケーションへのバインドのエクスポート |Microsoft ドキュメント'
+title: チェックリスト:別のアプリケーションへのバインドのエクスポート |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,19 +12,19 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: df60a6fd1b266403a5c43b5f76bf7594cad4f41a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a7da1e88eb3745c60630827732ac92d167e4520b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22299810"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65401841"
 ---
-# <a name="checklist-exporting-bindings-from-one-application-to-another"></a>チェックリスト: から別のアプリケーションへのバインドのエクスポート
-このトピックでは、開発または実稼働環境で別のアプリケーションに 1 つのアプリケーションのバインドの転送に必要な手順について説明します。 このプロセスは、.msi ファイルを使用してアプリケーションの展開プロセスに似ています。 ただし、.msi ファイルを使用してアプリケーションを展開する場合でも、プロセス、アプリケーションが自動的に作成します。 転送する場合、バインドを別の 1 つのアプリケーションから、その一方で、コピー先のアプリケーションが既に存在しています。  
+# <a name="checklist-exporting-bindings-from-one-application-to-another"></a>チェックリスト:別のアプリケーションへのバインドのエクスポート
+このトピックでは、開発または実稼働環境で別のアプリケーションに 1 つのアプリケーションのバインドを転送するための手順について説明します。 このプロセスは、.msi ファイルを使用してアプリケーションをデプロイするプロセスに似ています。 ただし、.msi ファイルを使用してアプリケーションを展開する場合でも、プロセス、アプリケーションが自動的に作成します。 別のアプリケーションへのバインドを転送するときにその一方で、コピー先のアプリケーションが存在する必要があります既に。  
   
 |手順|リファレンス|  
 |-----------|---------------|  
 |エクスポート操作を実行する適切なアクセス許可があることを確認します。|[アプリケーションを管理するためのアクセス許可](../technical-guides/permissions-for-managing-an-application.md)|  
-|アプリケーションのバインドをインポートする送信先アプリケーションを作成します。|-   [アプリケーションを作成します。](../technical-guides/creating-an-application.md)<br />-「BizTalk アプリケーションを作成する」のセクションの[アプリケーションを展開するためのベスト プラクティス](../technical-guides/best-practices-for-deploying-an-application.md)|  
-|バインド ファイルへの送信元アプリケーションのバインドをエクスポートします。|-   [バインドをバインド ファイルにエクスポートする方法](../technical-guides/how-to-export-bindings-to-a-binding-file.md)<br />-のセクションの「BizTalk アプリケーションをエクスポートする」[アプリケーションを展開するためのベスト プラクティス](../technical-guides/best-practices-for-deploying-an-application.md)<br />-のセクションの「BizTalk アプリケーションをエクスポートする」[に関する既知の問題をアプリケーションを配置する](../technical-guides/known-issues-with-deploying-an-application.md)です。|  
-|コピー先のアプリケーションにバインド ファイル内のバインドをインポートします。|-   [バインド ファイルからバインドをインポートする方法](../technical-guides/how-to-import-bindings-from-a-binding-file.md)<br />-のセクションの「BizTalk アプリケーションのインポート」[アプリケーションを展開するためのベスト プラクティス](../technical-guides/best-practices-for-deploying-an-application.md)<br />-のセクションの「BizTalk アプリケーションのインポート」[に関する既知の問題をアプリケーションを配置する](../technical-guides/known-issues-with-deploying-an-application.md)です。|
+|アプリケーションのバインドをインポートする先のアプリケーションを作成します。|-   [アプリケーションを作成します。](../technical-guides/creating-an-application.md)<br />-「BizTalk アプリケーションを作成する」のセクションの[アプリケーションを展開するためのベスト プラクティス](../technical-guides/best-practices-for-deploying-an-application.md)|  
+|バインド ファイルへの送信元アプリケーションのバインドをエクスポートします。|-   [バインド ファイルにバインドをエクスポートする方法](../technical-guides/how-to-export-bindings-to-a-binding-file.md)<br />-「BizTalk アプリケーションをエクスポートする」のセクションの[アプリケーションを展開するためのベスト プラクティス](../technical-guides/best-practices-for-deploying-an-application.md)<br />-「BizTalk アプリケーションをエクスポートする」のセクションの[アプリケーションの展開に関する既知の問題](../technical-guides/known-issues-with-deploying-an-application.md)します。|  
+|コピー先のアプリケーションには、バインド ファイル内のバインドをインポートします。|-   [バインド ファイルからバインドをインポートする方法](../technical-guides/how-to-import-bindings-from-a-binding-file.md)<br />-「BizTalk アプリケーションをインポートする」のセクションの[アプリケーションを展開するためのベスト プラクティス](../technical-guides/best-practices-for-deploying-an-application.md)<br />-「BizTalk アプリケーションをインポートする」のセクションの[アプリケーションの展開に関する既知の問題](../technical-guides/known-issues-with-deploying-an-application.md)します。|

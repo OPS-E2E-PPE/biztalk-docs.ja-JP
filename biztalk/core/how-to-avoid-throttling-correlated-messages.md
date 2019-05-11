@@ -12,19 +12,19 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 755622a55f7b0216399cfe33842994ff0f70a259
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5a8d093daa5b20e12ae2e6c56621180ede3d598a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36994435"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65387159"
 ---
 # <a name="how-to-avoid-throttling-correlated-messages"></a>関連付けられたメッセージの制限を回避する方法
 受信場所やオーケストレーションなどを介して BizTalk Server のキューに入れられたメッセージは、次のいずれかの方法で処理されます。  
   
 - サブスクライバー (オーケストレーションまたは送信ポート) の新しいインスタンスがアクティブ化されます。  
   
-- 関連付けによって、既存のサブスクライバー インスタンスにルーティングされます。 相関関係の詳細については、[オーケストレーションでの相関関係を使用して](../core/using-correlations-in-orchestrations.md)を参照してください。  
+- 関連付けによって、既存のサブスクライバー インスタンスにルーティングされます。 相関関係の詳細については、次を参照してください。[オーケストレーションでの相関関係を使用して](../core/using-correlations-in-orchestrations.md)します。  
   
   開発者の多くは、ソリューションの受信場所で、ソリューションのアクティベーション メッセージと関連付けられたメッセージの両方が同じポートを通じて受信されると考えています。 メッセージ送信者が追跡する必要のあるアドレスの数が最小限に抑えられるため、このように考えるのが自然です。 しかし、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では制限を使用できるようになったため、制限に関しては、アクティベーション メッセージのストリームと関連付けられたメッセージのストリームを分けて考えた方がよい場合があります。  
   

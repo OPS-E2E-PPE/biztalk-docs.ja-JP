@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10569 |Microsoft Docs'
+title: シングル サインオン:イベント 10569 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 25665947921bb316a4d931228016eaf917b4a685
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 21e3c6e7650e61af9811cd58542a7a4d2b6204af
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36987203"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65398761"
 ---
-# <a name="single-sign-on-event-10569"></a>シングル サインオン: イベント 10569
+# <a name="single-sign-on-event-10569"></a>シングル サインオン:イベント 10569
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                                                                                                                                        |
@@ -30,10 +30,10 @@ ms.locfileid: "36987203"
 |  イベント ソース   |                                                                                                 ENTSSO                                                                                                 |
 |    コンポーネント    |                                                                                                  なし                                                                                                   |
 |  シンボル名  |                                                                                    SSO_WARN_NO_UPDATE_BY_APP_ADMIN                                                                                     |
-|  メッセージ テキスト   | このアプリケーション管理者アカウントを、アプリケーション管理者が変更することはできません。%r<br /><br /> アプリケーション名: %1 %r<br /><br /> アプリケーション管理者: % 2 %r<br /><br /> エラー コード: %3 |
+|  メッセージ テキスト   | アプリケーション管理者アカウントは、アプリケーション Administrator.%r 変更ことはできません。<br /><br /> アプリケーション名: %1 %r<br /><br /> アプリケーション管理者: % 2 %r<br /><br /> エラー コード: %3 |
   
 ## <a name="explanation"></a>説明  
- このアプリケーション管理者アカウントを、アプリケーション管理者が変更することはできません。  
+ アプリケーション管理者アカウントには、アプリケーション管理者を変更できません。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- アプリケーション管理者アカウントを変更するには、SSO 関連アプリケーション管理者以上である必要があります。
+ SSO 関連アプリケーション管理者、またはをアプリケーション管理者アカウントを変更するためにする必要があります。

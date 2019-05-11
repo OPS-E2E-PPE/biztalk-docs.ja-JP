@@ -12,27 +12,27 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f79cbc492611a6a1271e45b4198401b3d17452e7
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ea2310f38c221147efdba5b1e2980a548fabfa86
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37016189"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65387065"
 ---
-# <a name="how-to-capture-a-memory-dump-of-a-process-that-is-non-responsive"></a>応答のないプロセスのメモリ ダンプを取得する方法
-BizTalk プロセス BTSNTSvc.exe として定義されている**ぶら下げ**プロセスが応答を停止するようです。 プロセスのハングに共通する現象は、次のとおりです。  
+# <a name="how-to-capture-a-memory-dump-of-a-process-that-is-non-responsive"></a>応答のないプロセスのメモリ ダンプをキャプチャする方法
+BizTalk プロセス BTSNTSvc.exe として定義されている**ぶら下げ**プロセスが応答を停止するようです。 プロセスのハングの一般的な現象は、次のとおりです。  
   
-- オーケストレーションが実行を停止しているように見える。  
+- 実行を停止するオーケストレーションが表示されます。  
   
-- メッセージが処理されていない。  
+- メッセージが処理されていません。  
   
-- 全般的なタイムアウトの問題が発生する。  
+- 一般的なタイムアウトの問題が発生します。  
   
 - BizTalk プロセス BTSNTSvc.exe が非常に大量の CPU サイクルに表示を使用する、**プロセス**タブ**タスク マネージャー**します。  
   
-  ハングしている BTSNTSvc.exe プロセスのメモリ ダンプを取得するには、次の手順を実行します。  
+  ハングしている BTSNTSvc.exe のメモリ ダンプをキャプチャするプロセスは、これらの手順に従います。  
   
-### <a name="to-configure-the-debug-diagnostics-tool-to-capture-a-hang-dump"></a>ハング ダンプを取得するようデバッグ診断ツールを構成するには  
+### <a name="to-configure-the-debug-diagnostics-tool-to-capture-a-hang-dump"></a>ハング ダンプをキャプチャするデバッグ診断ツールを構成するには  
   
 1.  デバッグ診断ツールを起動します**開始**、**すべてのプログラム**、 **IIS 診断**、 **Debug Diagnostics Tools**、 **デバッグ診断ツール 1.0**します。  
   
@@ -40,7 +40,7 @@ BizTalk プロセス BTSNTSvc.exe として定義されている**ぶら下げ**
   
 3.  をクリックして、**プロセス**デバッグ診断ツールのタブ。  
   
-4.  応答しない BTSNTSvc.exe プロセスを右クリックし、選択**Create Full Userdump**します。 既定では、プロセスのメモリ ダンプは、ローカル コンピューターの \Program Files\IIS Resources\DebugDiag\Logs\Misc ディレクトリに保存されます。  
+4.  応答しない BTSNTSvc.exe プロセスを右クリックし、選択**Create Full Userdump**します。 既定では、ローカル コンピューターの \Program Files\IIS \debugdiag\logs\misc ディレクトリにプロセスのメモリ ダンプが保存されます。  
   
 ## <a name="see-also"></a>参照  
  [デバッグ診断ツールを使用してメモリ ダンプを分析する方法](../core/how-to-use-debug-diagnostics-to-analyze-a-memory-dump.md)

@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 907bd9f9b47db10a199f5a93a828558dfb3ae210
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8905a476f967fc7156a81c239ac0f5f76aee6349
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36981963"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65389693"
 ---
 # <a name="dehydration-default-properties"></a>既定の退避プロパティ
 退避プロパティの名前とその既定値は次のとおりです。 これらのプロパティは、[!INCLUDE[btsSettingsDashboard](../includes/btssettingsdashboard-md.md)] を使用するか、または XML として BizTalk 構成ファイル (BTSNTSvc.exe.config または BTSNTSvc64.exe.config) で構成可能です。 BizTalk 構成ファイルの値が先に適用されます。 次に、[!INCLUDE[btsSettingsDashboard](../includes/btssettingsdashboard-md.md)] の設定が適用されます。 退避プロパティは、オーケストレーションを含んでいるすべてのホスト インスタンスの開始時に読み取られます。  
@@ -25,7 +25,7 @@ ms.locfileid: "36981963"
 > [!IMPORTANT]
 >  すべてのオーケストレーション設定が [!INCLUDE[btsSettingsDashboard](../includes/btssettingsdashboard-md.md)] で公開されているわけではありません。 これらの設定については、BizTalk 構成ファイル (BTSNTSvc.exe.config または BTSNTSvc64.exe.config) が使用されます。 BizTalk 構成ファイルを使用する場合、多くのプロパティは一覧に表示されません。 これらのプロパティおよび既定値は、構成ファイルで明示的に指定されていない場合でも常に適用されています。  
   
- 既定値を変更するには、[!INCLUDE[btsSettingsDashboard](../includes/btssettingsdashboard-md.md)] を使用するか、BizTalk 構成ファイルに明示的に追加します。 詳細については、[設定ダッシュ ボードの BizTalk Server のパフォーマンス チューニングを使用して](../core/using-settings-dashboard-for-biztalk-server-performance-tuning.md)と[BTSNTSvc.exe.config ファイル](../core/btsntsvc-exe-config-file.md)を参照してください。  
+ 既定値を変更するには、[!INCLUDE[btsSettingsDashboard](../includes/btssettingsdashboard-md.md)] を使用するか、BizTalk 構成ファイルに明示的に追加します。 詳細については、次を参照してください。[設定ダッシュ ボードの BizTalk Server のパフォーマンス チューニングを使用して](../core/using-settings-dashboard-for-biztalk-server-performance-tuning.md)と[BTSNTSvc.exe.config ファイル](../core/btsntsvc-exe-config-file.md)します。  
   
  **退避**  
   
@@ -64,7 +64,7 @@ ms.locfileid: "36981963"
 ## <a name="dehydration"></a>退避  
  **MaxThreshold**と**MinThreshold**上には、下位の境界をオーケストレーションが退避されるまで (つまり、受信、待ち受け、または遅延によってブロックされている) サブスクリプションでブロックされて時間 (秒)。 あります値を実行時に計算される、という**TestThreshold**、秒単位で、その値が**MinThreshold**と**MaxThreshold**します。  
   
- 既定の-1 以外の値を設定するかどうかは**ConstantThreshold**、実行時値されません**TestThreshold**します。 サブスクリプションでオーケストレーションがブロックされているし、オーケストレーションのすべてのインスタンスをサブスクリプションでブロックされているどのくらいの期間の履歴がの値より大きい**TestThreshold**オーケストレーションは、退避します。 それ以外の場合、履歴がある場合より小さい**TestThreshold**値は、オーケストレーションは退避されません。 また、場合でも、履歴、退避は行われません、現在のブロック時間が 2 に達する場合を示します<em>**TestThreshold</em>*、退避が行われます。 履歴は秒単位の最後の 10 待機時間の平均、または、待機時間の数が 10 未満の場合は履歴内に存在する待機時間の数の平均によって定義されます。  
+ 既定の-1 以外の値を設定するかどうかは**ConstantThreshold**、実行時値されません**TestThreshold**します。 サブスクリプションでオーケストレーションがブロックされているし、オーケストレーションのすべてのインスタンスをサブスクリプションでブロックされているどのくらいの期間の履歴がの値より大きい**TestThreshold**オーケストレーションは、退避します。 それ以外の場合、履歴がある場合より小さい**TestThreshold**値は、オーケストレーションは退避されません。 また、場合でも、履歴、退避は行われません、現在のブロック時間が 2 に達する場合を示します<em>* TestThreshold</em>、退避が行われます。 履歴は秒単位の最後の 10 待機時間の平均、または、待機時間の数が 10 未満の場合は履歴内に存在する待機時間の数の平均によって定義されます。  
   
  ときの値**TestThreshold**に向かって傾向**MinThreshold**メモリ使用量が増加すると呼び出されます「メモリ ベースの退避制限します」。 メモリ ベースの退避制限では、より多くのオーケストレーション インスタンスをライブにできます。これらのインスタンスのいずれかがブロックされて作業を待機 (メッセージの待機または遅延) するとき、これらを退避させたりメモリから消去したりできるためです。 **TestThreshold**が 1 ずつ減少関数のメモリ使用量、メモリ使用量に反比例します。  
   
@@ -81,11 +81,11 @@ ms.locfileid: "36981963"
   
  次に、VirtualMemoryThrottlingCriteria の各プロパティの説明を示します。  
   
--   **OptimalUsage**: の退避制限を有効にするが、仮想メモリ使用量。 この時点では、 **TestThreshold** 、値を持つ**MaxThreshold**メモリ使用量を超える**OptimalUsage**により**TestThreshold**をより小さい**MaxThreshold**します。  
+-   **OptimalUsage**:退避制限を有効にするが仮想メモリ使用量。 この時点では、 **TestThreshold** 、値を持つ**MaxThreshold**メモリ使用量を超える**OptimalUsage**により**TestThreshold**をより小さい**MaxThreshold**します。  
   
--   **MaximalUsage**: 仮想メモリ使用量の制限が最大時点では、退避の量。 この時点では、 **TestThreshold** 、値を持つ**MinThreshold**メモリ使用量より小さい**MaximalUsage**により**TestThreshold**超える**MinThreshold**します。  
+-   **MaximalUsage**:最大の退避制限が仮想メモリ使用量。 この時点では、 **TestThreshold** 、値を持つ**MinThreshold**メモリ使用量より小さい**MaximalUsage**により**TestThreshold**超える**MinThreshold**します。  
   
--   **IsActive**: 仮想メモリの制限がアクティブかどうかを示すブール値。  
+-   **IsActive**:仮想メモリの制限がアクティブかどうかを示すブール値。  
   
 ## <a name="privatememorythrottlingcriteria"></a>PrivateMemoryThrottlingCriteria  
  このプロパティは制限のために役立つ条件ですが、コンピューター上で他の Windows サービスが実行されているかどうかによって適切な値が異なります。 コンピューターに大量のメモリがあり、他の Windows サービスと共有していない場合、これらの値を大幅に増やすことができます。  

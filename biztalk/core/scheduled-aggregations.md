@@ -16,12 +16,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 04aaf0a3eefb018dbe23f3e05e7e684b595820d9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 40d7c272662dfdf7fdf9ee56744b202e54f445c1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36998476"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65307923"
 ---
 # <a name="scheduled-aggregations"></a>スケジュール済みの集計
 BAM では、動的に生成された OLAP キューブとデータ変換サービス (DTS) パッケージに基づいてスケジュール済みの集計を行います。 スケジュール済みの集計に含まれるデータは、DTS パッケージを実行したときのビジネス アクティビティのスナップショットを表します。 これを実現する分析のための DTS パッケージの最初の手順には、ストアド プロシージャの呼び出し**bam_Metadata_BeginAnalysis**から成るスナップショットを取得します。  
@@ -39,7 +39,7 @@ BAM では、動的に生成された OLAP キューブとデータ変換サー�
   
   同時に、実行中のアクティビティに関するデータは、DTS パッケージにより完全処理されるアクティブなインスタンスのキューブに移動します。 BAM では、どの時点においても、実行中のアクティビティの数は比較的少ないことが想定されているため、このようなデータの移動により問題が発生することはありません。  
   
-  スケジュール済みの集計データは、完了したアクティビティと実行中のアクティビティ間の差分を埋め合わせている仮想キューブから利用できます。 詳細については、[スケジュールされた集計データのクエリを実行する](../core/querying-scheduled-aggregated-data.md)を参照してください。  
+  スケジュール済みの集計データは、完了したアクティビティと実行中のアクティビティ間の差分を埋め合わせている仮想キューブから利用できます。 詳細については、次を参照してください。[スケジュールされた集計データのクエリを実行する](../core/querying-scheduled-aggregated-data.md)します。  
   
 ## <a name="see-also"></a>参照  
  [集計について](../core/what-is-an-aggregation.md)

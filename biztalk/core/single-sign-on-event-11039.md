@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 11039 |Microsoft Docs'
+title: シングル サインオン:イベント 11039 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9badc899afddd8ab84ecd52532096453e4579316
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: dce191d742cfb2043d2aef5acae4594f69c94850
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37024072"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65401024"
 ---
-# <a name="single-sign-on-event-11039"></a>シングル サインオン: イベント 11039
+# <a name="single-sign-on-event-11039"></a>シングル サインオン:イベント 11039
 ## <a name="details"></a>詳細  
   
 |                 |                                                               |
@@ -36,4 +36,4 @@ ms.locfileid: "37024072"
  SSO サービスは Local Service アカウントでは実行できません。%r  
   
 ## <a name="user-action"></a>ユーザーの操作  
- 詳細については、[高可用性 SSO インストール オプション](../core/high-availability-sso-installation-options.md)を参照してください。
+ 詳細については、次を参照してください。[高可用性 SSO インストール オプション](../core/high-availability-sso-installation-options.md)します。

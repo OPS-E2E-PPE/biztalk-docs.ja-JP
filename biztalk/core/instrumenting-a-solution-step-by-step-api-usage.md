@@ -1,5 +1,5 @@
 ---
-title: 'ソリューションのインストルメント化: API の使用方法の詳細な手順 |Microsoft ドキュメント'
+title: ソリューションのインストルメント化します。API の使用方法をステップ バイ ステップ |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,20 +12,20 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 73c59ab28c228c779fd9e6e84d836b87415d6386
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3c9d3ecd3f479729acd720a61254a6f82c655a0a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22258234"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65382050"
 ---
-# <a name="instrumenting-a-solution-step-by-step-api-usage"></a>ソリューションのインストルメント化: API の使用方法の詳細な手順
+# <a name="instrumenting-a-solution-step-by-step-api-usage"></a>ソリューションのインストルメント化します。ステップ バイ ステップの API 使用量
 このトピックでは、主要な BAM API クラスを使用してアプリケーションをインストルメント化する方法を説明します。 以下のコードは、定数と、アプリケーションのインストルメント化に必要な最小限のコードを使用して、サンプル コードを単純化したものです。  
   
  次のコード スニペットでは、 [Microsoft.BizTalk.Bam.EventObservation.EventStream](http://msdn.microsoft.com/library/Microsoft.BizTalk.Bam.EventObservation.EventStream.aspx) オブジェクト、具体的には、 [Microsoft.BizTalk.Bam.EventObservation.DirectEventStream](http://msdn.microsoft.com/library/microsoft.biztalk.bam.eventobservation.directeventstream.aspx)を新規に作成する方法を示しています。 このコードでは、最初のパラメーターで BAM プライマリ インポート データベースのデータ ストアへの接続文字列を指定し、2 番目のパラメーターでイベントがデータ ストアに書き込まれる頻度を指定しています。  
   
 > [!NOTE]
->  BAM では、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] データ ストアへの接続のみがサポートされています。 このサンプルの接続文字列は、接続を確立するために必要な最低限の接続文字列を表しています。 構成によっては、接続文字列で追加のパラメーターを指定する必要があります。  
+>  BAM では、 [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] データ ストアへの接続のみがサポートされています。 このサンプルの接続文字列は、接続を確立するために必要な最低限の接続文字列を表しています。 構成によっては、接続文字列で追加のパラメーターを指定する必要があります。  
   
  *FlushThreshold* の値を 0 にすると、イベントが自動的に書き込まれなくなります。この場合、イベントを書き込むには Flush メソッドを呼び出す必要があります。 この値を 1 にすると、イベントは発生するたびに書き込まれます。 1 より大きい値にすると、発生したイベントの数が指定した値になるとイベントが書き込まれます。 この設定は、パフォーマンスの向上に役立ちます。  
   
@@ -40,7 +40,7 @@ EventStream es =
    new DirectEventStream(connBAMPIT, flushThreshold);  
 ```  
   
- [Microsoft.BizTalk.Bam.EventObservation.EventStream](http://msdn.microsoft.com/library/Microsoft.BizTalk.Bam.EventObservation.EventStream.aspx) オブジェクトが作成されたら、アクティビティを開始して、収集されたマイルストーンとデータでアクティビティ テーブルを更新できます。 BAM アクティビティが展開されたときに、BAM プライマリ インポート データベースに 5 つのテーブルが作成されています。 開発プロセスの詳細については、次を参照してください。 [BAM 開発プロセスの概要](../core/overview-of-the-bam-development-process.md)です。  
+ [Microsoft.BizTalk.Bam.EventObservation.EventStream](http://msdn.microsoft.com/library/Microsoft.BizTalk.Bam.EventObservation.EventStream.aspx) オブジェクトが作成されたら、アクティビティを開始して、収集されたマイルストーンとデータでアクティビティ テーブルを更新できます。 BAM アクティビティが展開されたときに、BAM プライマリ インポート データベースに 5 つのテーブルが作成されています。 開発プロセスの詳細については、「 [Overview of the BAM Development Process](../core/overview-of-the-bam-development-process.md)」を参照してください。  
   
  [Microsoft.BizTalk.Bam.EventObservation.EventStream.BeginActivity](http://msdn.microsoft.com/library/microsoft.biztalk.bam.eventobservation.eventstream.beginactivity.aspx) メソッドを呼び出すと、bam _ PurchaseOrder_Activity テーブルにレコードが追加されます。 最初のパラメーターには、更新されるアクティビティの名前が含まれています。2 番目のパラメーターには、そのアクティビティの現在のインスタンスの識別子が含まれています。 識別子には任意の文字列を使用できますが、アクティビティのレコードセットで一意である必要があります。  
   
@@ -57,7 +57,7 @@ es.UpdateActivity ("PurchaseOrder", "PO123",
                     "T_Customer", "Joe");  
 ```  
   
- このサンプルでは 2 番目のアクティビティに継続します。 Continuation の詳細については、次を参照してください。[アクティビティ Continuation](../core/activity-continuation.md)です。  
+ このサンプルでは 2 番目のアクティビティに継続します。 Continuation の詳細については、「 [Activity Continuation](../core/activity-continuation.md)」を参照してください。  
   
  他のインストルメント アプリケーションが PurchaseOrder アクティビティを更新できるようにするには、 [Microsoft.BizTalk.Bam.EventObservation.EventStream.EnableContinuation](http://msdn.microsoft.com/library/microsoft.biztalk.bam.eventobservation.eventstream.EnableContinuation.aspx) メソッドの呼び出しを追加します。 この呼び出しでは、他のアプリケーションが関与できるアクティビティ、追跡するアクティビティのインスタンスの識別子、および他のアプリケーションがアクティビティを更新するために使用する継続トークンを指定します。 継続の状態を追跡するために、bam_ PurchaseOrder_continuations テーブルにレコードが書き込まれます。 アクティビティが他のプロセスに継続される場合、 [Microsoft.BizTalk.Bam.EventObservation.EventStream.EnableContinuation](http://msdn.microsoft.com/library/microsoft.biztalk.bam.eventobservation.eventstream.EnableContinuation.aspx) メソッドが一意の継続トークンで呼び出されるたびにレコードが書き込まれます。  
   
@@ -224,4 +224,4 @@ namespace EventStreamSample
 ```  
   
 ## <a name="see-also"></a>参照  
- [BAM アクティビティのイベント ストリームの実装](../core/implementing-bam-activities-with-event-streams.md)
+ [イベント ストリームを使用した BAM アクティビティを実装します。](../core/implementing-bam-activities-with-event-streams.md)

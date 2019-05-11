@@ -12,31 +12,31 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: eefcdf36959d3171a219ebd79f34318b7a37f430
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e7918ea54829b25f7a8f5ff6093f1373677763ab
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36969547"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65336739"
 ---
 # <a name="how-to-manage-other-visual-studio-windows"></a>その他の Visual Studio の Windows を管理する方法
-BizTalk エディターでの一部の操作では、他の Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] ウィンドウ (出力ウィンドウおよびタスク一覧ウィンドウ) が使用されます。 これらのウィンドウは、サンプル インスタンス メッセージの生成やスキーマおよびインスタンスの検証などの操作による出力を表示するために使用されます。 このトピックでは、これらのウィンドウを管理するための手順について説明します。  
+BizTalk エディターで一部の操作を使用して、他の Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] windows アプリ、つまり、出力ウィンドウおよびタスク一覧 ウィンドウ。 これらのウィンドウを使用して、サンプル インスタンス メッセージの生成と検証のスキーマおよびインスタンスなどの操作からの出力を表示します。 このトピックでは、これらのウィンドウの管理についての詳細な手順を説明します。  
   
-### <a name="to-open-the-output-window"></a>出力ウィンドウを開くには  
+### <a name="to-open-the-output-window"></a>出力ウィンドウを開く  
   
 - [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]、をクリックして、**ビュー** メニューをクリックして**出力**です。  
   
   > [!NOTE]
-  >  出力ウィンドウ内の特定の行に対応するファイルを表示する場合は、その行をダブルクリックします。  
+  >  出力ウィンドウ内の行に対応するファイルを表示する場合は、その行をダブルクリックします。  
   
-### <a name="to-open-the-task-list-window"></a>タスク一覧ウィンドウを開くには  
+### <a name="to-open-the-task-list-window"></a>タスク一覧 ウィンドウを開く  
   
 - [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]、をクリックして、**ビュー** メニューをクリックして**タスク一覧**です。  
   
   > [!NOTE]
-  >  タスク一覧ウィンドウの特定のタスク行に対応する、BizTalk スキーマ内のノードを表示する場合は、そのタスク行をダブルクリックします。  
+  >  タスク一覧 ウィンドウで特定のタスク行に対応する BizTalk スキーマのノードを表示する場合は、そのタスク行をダブルクリックします。  
   
-  既定では、出力ウィンドウとタスク一覧ウィンドウは、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] シェルの同じ部分を共有して使用します。 両方のウィンドウが同時に開かれた場合は名前付きタブで表示され、タブを使用して両方のウィンドウを切り替えることができます。  
+  既定では、出力ウィンドウとタスク一覧 ウィンドウでの同じセクションが共有、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]シェルです。 同時に両方のウィンドウが開いている場合はそれらの間で切り替えるには、名前付きのタブに表示されます。  
   
 ## <a name="see-also"></a>参照  
  [BizTalk エディターを使用してください。](../core/using-biztalk-editor.md)

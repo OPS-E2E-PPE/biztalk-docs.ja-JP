@@ -12,12 +12,12 @@ caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 567b3d88ced85f427fde492cd3e68cefaaf47394
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f7910cf4c6e16d5af75e49bb829f1418a5e1455c
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36999205"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65528213"
 ---
 # <a name="cannot-create-binding"></a>バインドを作成できません
 ## <a name="details"></a>詳細  
@@ -30,13 +30,13 @@ ms.locfileid: "36999205"
 |  イベント ソース   |                                                                       0                                                                        |
 |    コンポーネント    |                                                                       0                                                                        |
 |  シンボル名  |                                                                       0                                                                        |
-|  メッセージ テキスト   | バインドの種類が指定されていないため、バインドを作成できません。 "basicHttpBinding"、"wsHttpBinding"、または "customBinding" のようなバインドの種類を指定してください。 |
+|  メッセージ テキスト   | バインドの種類が指定されていないために、バインドを作成することはできません。 "BasicHttpBinding"、"wsHttpBinding"または"customBinding のようなバインドの種類を指定します。 |
   
 ## <a name="explanation"></a>説明  
- WCF-Custom または WCF-CustomIsolated トランスポートを構成した後に、BindingType プロパティが設定されませんでした。 または、他のコード パスに問題がある可能性があります。 バインド設定のユーザー インターフェイスで値を指定する必要があります。 構成を見直し、受信場所のプロパティ領域のドロップダウン リストからバインドの種類を選択したことを確認します。  
+ BindingType プロパティを Wcf-custom または Wcf-customisolated トランスポートを構成した後、コードで設定されませんでした。 または、他のコード パスで問題になります。 値は、バインド設定のユーザー インターフェイスが必要です。 構成を確認し、受信場所のプロパティ 領域で、ドロップダウン リストからバインドの種類が選択されていることを確認します。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- このエラーを解決するには、WCF-Custom または WCF-CustomIsolated トランスポートを構成するコードを見直します。 いることを確認、 **BindingType**プロパティの XML データで、 **TransportTypeData** ITransportInfo インターフェイスのプロパティが適切に設定します。  
+ このエラーを解決するには、Wcf-custom または Wcf-customisolated トランスポートを構成するコードを確認します。 いることを確認、 **BindingType**プロパティの XML データで、 **TransportTypeData** ITransportInfo インターフェイスのプロパティが適切に設定します。  
   
  また、ようにバインドの種類を指定**basicHttpBinding**、 **wsHttpBinding**、または**customBinding**します。  
   
@@ -44,7 +44,7 @@ ms.locfileid: "36999205"
   
 2. コンソール ルートで  [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]、展開**BizTalk グループ**、展開**アプリケーション**します。  
   
-3. アプリケーションを特定し、次にトランスポートを特定します。  
+3. アプリケーションを見つけて、トランスポートを特定します。  
   
 4. トランスポート名を右クリックします。  
   
@@ -52,13 +52,13 @@ ms.locfileid: "36999205"
   
 6. ポート**型**一覧で、適切なポートを選択します。  
   
-7. クリックして**構成**します。  
+7. をクリックして**構成**です。  
   
 8. **WCF [**<em>トランスポートの種類</em>**] トランスポートのプロパティ**ダイアログ ボックスで、をクリックして、**バインド**タブ。  
   
 9. 値が指定されていることを確認、**バインドの種類**一覧。  
   
-   バインド構成の詳細については、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ヘルプで次の情報を参照してください。  
+   バインディングの構成の詳細については、の次のリソースを参照してください、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプします。  
   
 -   [Wcf-customisolated 受信場所を構成する方法](../core/how-to-configure-a-wcf-customisolated-receive-location.md)  
   

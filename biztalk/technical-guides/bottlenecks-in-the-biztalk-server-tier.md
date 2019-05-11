@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8f8c7b4366390c040d7a4a34b473bdf4c3cfd352
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 66b3a61e71f6051429f0a9b674c37be977275eb4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37004947"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65400444"
 ---
 # <a name="bottlenecks-in-the-biztalk-server-tier"></a>BizTalk Server 層のボトルネック
 BizTalk 層は以下の機能領域に分割できます。  
@@ -77,7 +77,7 @@ BizTalk 層は以下の機能領域に分割できます。
   
  場合は、メッセージ ボックス データベースの TrackingData テーブルが大きく、多くのように構成されている、BizTalk の追跡と BAM プライマリのサイズが増加、BizTalk の追跡と BAM プライマリ インポート データベースのデータ管理ジョブが実行されていないため、します。データベースをインポートします。 これらのデータベースが大きくなりすぎないようにした後、TrackingData テーブルにデータを挿入する追跡ホストの機能に悪影響を及ぼすことができます。 これにより、メッセージ ボックス データベースのテーブルにバックアップするデータを追跡します。 TrackingData テーブルの増加により、開始するために調整が発生します。  
   
- のみ、アプリケーションでは、これが記録されたデータ量を削減し、追跡のボトルネックのリスクを軽減に必要な最小の追跡を有効にする必要があります。 オーケストレーションおよび送信/受信ポートなどの個々 の項目の追跡設定を無効にする方法については、[追跡を無効にする方法](http://go.microsoft.com/fwlink/?LinkId=160064)(http://go.microsoft.com/fwlink/?LinkId=160064)を参照してください。  
+ のみ、アプリケーションでは、これが記録されたデータ量を削減し、追跡のボトルネックのリスクを軽減に必要な最小の追跡を有効にする必要があります。 オーケストレーションおよび送信/受信ポートなどの個々 の項目の追跡設定を無効にする方法については、次を参照してください。[追跡を無効にする方法](http://go.microsoft.com/fwlink/?LinkId=160064)(http://go.microsoft.com/fwlink/?LinkId=160064)します。  
   
 ## <a name="other"></a>その他  
  さまざまな機能がそれぞれ専用の分離ホスト インスタンスで実行されるように展開トポロジを構成します。 このように各ホスト インスタンスは、独自の (たとえば、32 ビット システム、2 GB の仮想メモリ アドレス空間、ハンドル、スレッド) 上のリソース セットを取得します。 サーバーが十分な CPU ヘッドルームと複数のホスト インスタンスをホストするためのメモリが、同じ物理コンピューターで実行するように構成することができます。 必要でない場合は、専用のサーバーに機能を移動することによってスケール アウトを検討します。 同じ機能を複数のサーバーで実行すると、高可用性の構成を実現することもできます。  
@@ -134,21 +134,21 @@ BizTalk 層は以下の機能領域に分割できます。
   
 - maxConnection 属性、 \<connectionManagement\>要素 (ネットワーク設定)  
   
-  アダプターのパフォーマンスに影響するパラメーターを構成する方法の詳細については、[processModel 要素の構成設定を ASP.NET](http://go.microsoft.com/fwlink/?LinkId=158080) (http://go.microsoft.com/fwlink/?LinkId=158080)を参照してください。  
+  アダプターのパフォーマンスに影響するパラメーターを構成する方法の詳細については、次を参照してください。 [processModel 要素の構成設定を ASP.NET](http://go.microsoft.com/fwlink/?LinkId=158080) (http://go.microsoft.com/fwlink/?LinkId=158080)します。  
   
-  BizTalk Server アダプターに影響する構成設定の詳細については、[構成パラメーターを アダプターのパフォーマンスの影響を与える](http://go.microsoft.com/fwlink/?LinkID=154200)(http://go.microsoft.com/fwlink/?LinkID=154200)を参照してください。  
+  BizTalk Server アダプターに影響する構成設定の詳細については、次を参照してください。[構成パラメーターを アダプターのパフォーマンスの影響を与える](http://go.microsoft.com/fwlink/?LinkID=154200)(http://go.microsoft.com/fwlink/?LinkID=154200)します。  
   
-  BizTalk Server アプリケーションを最適化するだけでなく、同じサーバーで実行されている他の ASP.NET アプリケーション全体のパフォーマンスに影響することができます。 すべてのシステム リソースの需要を削減する ASP.NET アプリケーションを最適化するために重要です。 詳細については、[ASP.NET パフォーマンス](http://go.microsoft.com/fwlink/?LinkId=158081)(http://go.microsoft.com/fwlink/?LinkId=158081)を参照してください。  
+  BizTalk Server アプリケーションを最適化するだけでなく、同じサーバーで実行されている他の ASP.NET アプリケーション全体のパフォーマンスに影響することができます。 すべてのシステム リソースの需要を削減する ASP.NET アプリケーションを最適化するために重要です。 詳細については、次を参照してください。 [ASP.NET パフォーマンス](http://go.microsoft.com/fwlink/?LinkId=158081)(http://go.microsoft.com/fwlink/?LinkId=158081)します。  
   
   最大のパフォーマンスを構成する場合は、エンジン (メッセージ キュー、MQSeries)、アプリケーション、データベース、メッセージングなどの他の外部システムの最適化を検討 Active Directory、BizTalk ソリューション全体の一部であるなど。 これらの他の外部システムのいずれかでパフォーマンスのボトルネックには、BizTalk ソリューションに悪影響を及ぼすことができます。  
   
 ### <a name="downstream-bottlenecks"></a>下流のボトルネック  
- 下流システムで BizTalk から十分な速度のデータを受け取ることがない場合、この出力データは、BizTalk データベースでバックアップされます。 これは、コマンドで、肥大化の結果、調整を開始すると、受信パイプが縮小、および BizTalk システムの全体的なスループットに影響を与えます。 この状況を直接示すは、スプール テーブルの増加です。 ボトルネックとスプール テーブルの詳細については、[メッセージ ボックス データベース 1 のボトルネックを特定する方法](../technical-guides/how-to-identify-bottlenecks-in-the-messagebox-database1.md)を参照してください。  
+ 下流システムで BizTalk から十分な速度のデータを受け取ることがない場合、この出力データは、BizTalk データベースでバックアップされます。 これは、コマンドで、肥大化の結果、調整を開始すると、受信パイプが縮小、および BizTalk システムの全体的なスループットに影響を与えます。 この状況を直接示すは、スプール テーブルの増加です。 ボトルネックとスプール テーブルの詳細については、次を参照してください。[メッセージ ボックス データベース 1 のボトルネックを特定する方法](../technical-guides/how-to-identify-bottlenecks-in-the-messagebox-database1.md)します。  
   
 ### <a name="throttling-impact"></a>制限の影響  
- 調整最終的に回復不可能な状態から、システムの保護を開始します。 したがって、調整を使用をシステムが正常に機能しているかどうかを確認し、問題のソースを検出することができます。 制限の状態からボトルネックの原因を特定した後は、問題の原因を特定する他のパフォーマンス カウンターを分析します。 たとえば、メッセージ ボックス データベースで競合が増加メモリ不足によって発生したディスクの過剰なページングによる CPU 使用率が高い可能性があります。 メッセージ ボックス データベースで競合が増加が飽和状態のディスク ドライブのための高いロックの競合によっても原因。 不定期の調整がパフォーマンスに重大な脅威ありませんが、永続的な調整より重要な基になる問題を示すことができます。 BizTalk Server が調整を使いますが、それらの条件の詳細については、[どのように BizTalk Server 実装ホスト Throttling](http://go.microsoft.com/fwlink/?LinkID=155286) (http://go.microsoft.com/fwlink/?LinkID=155286)を参照してください。  
+ 調整最終的に回復不可能な状態から、システムの保護を開始します。 したがって、調整を使用をシステムが正常に機能しているかどうかを確認し、問題のソースを検出することができます。 制限の状態からボトルネックの原因を特定した後は、問題の原因を特定する他のパフォーマンス カウンターを分析します。 たとえば、メッセージ ボックス データベースで競合が増加メモリ不足によって発生したディスクの過剰なページングによる CPU 使用率が高い可能性があります。 メッセージ ボックス データベースで競合が増加が飽和状態のディスク ドライブのための高いロックの競合によっても原因。 不定期の調整がパフォーマンスに重大な脅威ありませんが、永続的な調整より重要な基になる問題を示すことができます。 BizTalk Server が調整を使いますが、それらの条件の詳細については、次を参照してください。[どのように BizTalk Server 実装ホスト Throttling](http://go.microsoft.com/fwlink/?LinkID=155286) (http://go.microsoft.com/fwlink/?LinkID=155286)します。  
   
- BizTalk Server の調整に役立てる方法、使用可能なリソースを管理し、リソースの競合を最小限に抑えるの詳細については、[を最適化するリソースをホストの調整](http://go.microsoft.com/fwlink/?LinkID=155770)(http://go.microsoft.com/fwlink/?LinkID=155770)を参照してください。  
+ BizTalk Server の調整に役立てる方法、使用可能なリソースを管理し、リソースの競合を最小限に抑えるの詳細については、次を参照してください。[を最適化するリソースをホストの調整](http://go.microsoft.com/fwlink/?LinkID=155770)(http://go.microsoft.com/fwlink/?LinkID=155770)します。  
   
 ## <a name="biztalk-application-counters"></a>BizTalk アプリケーション カウンター  
   
@@ -157,8 +157,8 @@ BizTalk 層は以下の機能領域に分割できます。
 |BizTalk Messaging|RxHost|Documents Received/Sec|受信速度|  
 |BizTalk Messaging|TxHost|Documents Processed/Sec|送信速度|  
 |XLANG/s Orchestrations|PxHost|Orchestrations Completed/Sec.|処理速度|  
-|BizTalk: メッセージ ボックス: 一般的なカウンター|MsgBoxName|Spool Size|すべてのホスト キューの合計サイズ|  
-|BizTalk: メッセージ ボックス: 一般的なカウンター|MsgBoxName|Tracking Data Size|メッセージ ボックスの TrackingData テーブルのサイズ|  
+|BizTalk:メッセージ ボックス:一般的なカウンター|MsgBoxName|Spool Size|すべてのホスト キューの合計サイズ|  
+|BizTalk:メッセージ ボックス:一般的なカウンター|MsgBoxName|Tracking Data Size|メッセージ ボックスの TrackingData テーブルのサイズ|  
 |BizTalk:MessageBox:Host Counters|PxHost:MsgBoxName|Host Queue - Length|特定のホスト キューに存在するメッセージの数|  
 |BizTalk:MessageBox:Host Counters|TxHost:MsgBoxName|Host Queue - Length|特定のホスト キューに存在するメッセージの数|  
 |BizTalk:Message Agent|RxHost|Database Size|公開 (PxHost) キューのサイズ|  
@@ -167,7 +167,7 @@ BizTalk 層は以下の機能領域に分割できます。
 |BizTalk:Message Agent|HostName|Message Publishing Throttling State|XLANG と受信トランスポートに影響|  
   
 ### <a name="where-do-i-start"></a>監視の開始  
- 監視、 **Message Delivery Throttling State**と**Message Publishing Throttling State**各ホスト インスタンスをお勧めします。 これらのカウンターの値は、0 ではない、これは、BizTalk システムで調整することを示します。 し、さらに、ボトルネックの原因を分析することができます。 その他のパフォーマンス カウンターの説明については、[データベース層のボトルネック](../technical-guides/bottlenecks-in-the-database-tier.md)を参照してください。  
+ 監視、 **Message Delivery Throttling State**と**Message Publishing Throttling State**各ホスト インスタンスをお勧めします。 これらのカウンターの値は、0 ではない、これは、BizTalk システムで調整することを示します。 し、さらに、ボトルネックの原因を分析することができます。 その他のパフォーマンス カウンターの説明については、次を参照してください。[データベース層のボトルネック](../technical-guides/bottlenecks-in-the-database-tier.md)します。  
   
 ## <a name="orchestration-engine-performance-counters"></a>オーケストレーション エンジンのパフォーマンス カウンター  
  継続的なオーケストレーション dehydration\rehydration と永続化ポイントが全体のパフォーマンスに重大な影響を与えることができますのでは、オーケストレーションの実行時の設定をチューニング微調整することを強くお勧めします。  複数の永続化ポイントとトランザクションのスコープを含む可能性のある複雑なオーケストレーションをテストするときに、次のカウンターを使用する必要があります。  

@@ -12,12 +12,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: aa36acc84358a8e91a0b9daaa4370270fb5860b1
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c1c95a4da43896f0bed6fdd0b9350ca25ccba7e1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36988539"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399397"
 ---
 # <a name="creating-a-custom-itinerary-service-using-a-biztalk-orchestration"></a>BizTalk オーケストレーションを使用して、カスタム スケジュール サービスを作成します。
 スケジュール オンランプ フレームワークの一部である、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]オーケストレーションを使用して、itinerary 手順の実行をサポートしています。 カスタム スケジュール サービスは、次の機能要件に基づいて、Microsoft BizTalk Server オーケストレーションとして実装できます。  

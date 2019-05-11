@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 062ab21b37ddaea2e69641a7c875d22afd20aa78
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 70bdbf18083a1b3e0472813acb5225f57e528cca
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37022576"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65355439"
 ---
 # <a name="configuring-general-settings-x12"></a>全般的な設定の構成 (X12)
 全般設定で指定する項目は、アグリーメント名、使用するプロトコル (X12 または EDIFACT)、このアグリーメントを結ぶパーティとプロファイル、およびこのアグリーメントを介して処理される全メッセージに対してレポート機能を有効にするかどうかです。 また、アグリーメントの中でパーティの連絡先情報を指定することもできます。  
@@ -64,7 +64,7 @@ ms.locfileid: "37022576"
       >  キーを押して`CTRL`は、アグリーメントの一部にする、いずれかのビジネス プロファイルを右クリックし、 をポイントするビジネス プロファイルを選択して**新規**、順にクリックします**契約**します。 値は、パートナー名と、両方のパートナーのビジネス プロファイルが自動的に追加されます、**アグリーメントのプロパティ** ダイアログ ボックス。  
 
       > [!NOTE]
-      >  2 つのタブが横に追加、その他のプロファイルを選択するとすぐに、**全般**タブ。各タブは、2 つのパーティ間の一方向の X12 アグリーメントを表します。 このタブを使用して、インターチェンジやトランザクション セット関連の設定を指定します。 詳細については、[インターチェンジの設定を構成する (X12)](../core/configuring-interchange-settings-x12.md)と[構成トランザクション セットの設定 (X12)](../core/configuring-transaction-set-settings-x12.md)を参照してください。  
+      >  2 つのタブが横に追加、その他のプロファイルを選択するとすぐに、**全般**タブ。各タブは、2 つのパーティ間の一方向の X12 アグリーメントを表します。 このタブを使用して、インターチェンジやトランザクション セット関連の設定を指定します。 詳細については、次を参照してください。[インターチェンジの設定を構成する (X12)](../core/configuring-interchange-settings-x12.md)と[構成トランザクション セットの設定 (X12)](../core/configuring-transaction-set-settings-x12.md)します。  
 
    4. 選択、**を有効にするアグリーメント**アグリーメントを有効にして、次を実行する チェック ボックス。  
 

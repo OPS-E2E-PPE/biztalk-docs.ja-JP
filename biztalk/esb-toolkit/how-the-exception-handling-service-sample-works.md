@@ -1,5 +1,5 @@
 ---
-title: 例外処理サービス サンプルのしくみ |Microsoft ドキュメント
+title: 例外処理サービス サンプルのしくみ |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: eac3a9ff96025f5248c0434a69c38eb01a704488
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 254d7a5b5cbf2e431ff7db4309774d8315367e2d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22293922"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65400783"
 ---
 # <a name="how-the-exception-handling-service-sample-works"></a>例外処理サービス サンプルのしくみ
-例外処理サービス サンプルは、生成されるサービス プロキシ サービスを処理する例外を含んでいる標準的な .NET Windows フォーム アプリケーションです。 アプリケーションから成る 1 つのボタンと 1 つのフォーム**生成例外**です。 インスタンス、このボタンをクリックすると、 **FaultMessage**クラスが生成されます。 **FaultMessage**クラスは、基に、Web サービス記述言語 (WSDL)、例外処理の Web サービスによって提供される Microsoft Visual Studio によって生成されたクラスです。 このインスタンスのプロパティはプロパティにパラメーターとして渡される前に、外部アプリケーションで発生した障害をシミュレートする既定値が入力されます、 **SubmitFault**例外処理の web メソッドサービス。  
+例外処理サービス サンプルは、例外処理サービスのサービスが生成されたプロキシを含む標準の .NET Windows フォーム アプリケーションです。 アプリケーションを 1 つのボタンを 1 つのフォームの構成は**生成例外**します。 インスタンス、このボタンをクリックすると、 **FaultMessage**クラスが生成されます。 **FaultMessage**クラスは基に、Web サービス記述言語 (WSDL)、例外処理の Web サービスによって提供される Microsoft Visual Studio によって生成されたクラスです。 このインスタンスのプロパティには、プロパティがパラメーターとして渡される前に、外部のアプリケーションで発生する障害をシミュレートする既定値が設定されます、 **SubmitFault**の例外処理 Web メソッドサービス。  
   
- 例外処理の Web サービスの動作方法の詳細については、次を参照してください。 [、例外処理 Web Service](../esb-toolkit/the-exception-handling-web-service.md)です。
+ 例外処理の Web サービスの動作方法の詳細については、次を参照してください。 [、例外処理 Web Service](../esb-toolkit/the-exception-handling-web-service.md)します。

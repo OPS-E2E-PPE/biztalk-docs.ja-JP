@@ -25,12 +25,12 @@ caps.latest.revision: 30
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8031316b733d1e86ace3d26e31ea2318e6f40a23
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1744d18f51df2020daf57eee7ad532a5eda148e5
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36980475"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65528865"
 ---
 # <a name="backing-up-and-restoring-biztalk-server-databases"></a>バックアップおよび BizTalk Server データベースを復元します。
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のバックアップ ジョブを使用すると、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 送信元システムのすべてのデータベース (ただし、ビジネス アクティビティ監視 (BAM) により使用されているデータベースは除く) をバックアップできます。 送信元システムは、ライブ データが格納されたサーバーまたはサーバーのグループです。 BAM データベースはバックアップおよび復元の要件が異なるので、これらのデータベースについては別の方法を使用してバックアップおよび復元を行います。  
@@ -39,21 +39,21 @@ ms.locfileid: "36980475"
 
 1. **BizTalk Server のバックアップ ジョブを構成します。**  
 
-    [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] データベースをバックアップするには、あらかじめ、送信元システムで [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のバックアップ ジョブを構成しておく必要があります。バックアップが、後から送信先システムでデータベースを復元するときに使用できるフォルダーに自動的に書き込まれるように指定します。 送信先システムは、送信元システムによって生成されたデータベース バックアップを復元するときに使用されるサーバーまたはサーバーのグループです。 この手順の詳細については、[Backup BizTalk Server ジョブを構成する方法](../core/how-to-configure-the-backup-biztalk-server-job.md)を参照してください。  
+    [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] データベースをバックアップするには、あらかじめ、送信元システムで [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のバックアップ ジョブを構成しておく必要があります。バックアップが、後から送信先システムでデータベースを復元するときに使用できるフォルダーに自動的に書き込まれるように指定します。 送信先システムは、送信元システムによって生成されたデータベース バックアップを復元するときに使用されるサーバーまたはサーバーのグループです。 この手順の詳細については、次を参照してください。 [Backup BizTalk Server ジョブを構成する方法](../core/how-to-configure-the-backup-biztalk-server-job.md)します。  
 
 2. **ログ配布用に送信先システムを構成します。**  
 
-    送信先システムはログ配布用にも構成する必要があります。ログ配布は、システム障害時のダウンタイムを短縮することを目的とした、スタンバイ サーバーの機能です。 この手順の詳細については、[ログ配布用に送信先システムを構成する方法](../core/how-to-configure-the-destination-system-for-log-shipping.md)を参照してください。  
+    送信先システムはログ配布用にも構成する必要があります。ログ配布は、システム障害時のダウンタイムを短縮することを目的とした、スタンバイ サーバーの機能です。 この手順の詳細については、次を参照してください。[ログ配布用に送信先システムを構成する方法](../core/how-to-configure-the-destination-system-for-log-shipping.md)します。  
 
 3. **データベースを復元します。**  
 
-    ハードウェア障害が発生した場合は、送信先システムに送信されたバックアップおよびログを使用してデータベースを復元できます。 この手順の詳細については、[、データベースを復元する方法](../core/how-to-restore-your-databases.md)を参照してください。  
+    ハードウェア障害が発生した場合は、送信先システムに送信されたバックアップおよびログを使用してデータベースを復元できます。 この手順の詳細については、次を参照してください。 [、データベースを復元する方法](../core/how-to-restore-your-databases.md)します。  
 
 ## <a name="biztalk-server-databases"></a>BizTalk Server データベース  
  次の表で、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] によって使用されるデータベースについて説明し、データベースのバックアップに使用する方法を示します。  
 
 ### <a name="databases-backed-up-by-the-backup-biztalk-server-job"></a>BizTalk Server のバックアップ ジョブによるデータベースのバックアップ  
- 次の表は、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のバックアップ ジョブの一部としてバックアップおよび復元されるデータベースの一覧です。 カスタム データベースがバックアップされるように [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のバックアップ ジョブを変更するには、adm_OtherBackupDatabases テーブルにデータベースを追加します。 詳細については、[カスタム データベースを戻す方法](../core/how-to-back-up-custom-databases.md)を参照してください。  
+ 次の表は、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のバックアップ ジョブの一部としてバックアップおよび復元されるデータベースの一覧です。 カスタム データベースがバックアップされるように [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のバックアップ ジョブを変更するには、adm_OtherBackupDatabases テーブルにデータベースを追加します。 詳細については、次を参照してください。[カスタム データベースを戻す方法](../core/how-to-back-up-custom-databases.md)します。  
 
 
 |                    [データベース]                    | 既定のデータベース名 |                                                                                                                                       説明                                                                                                                                        |

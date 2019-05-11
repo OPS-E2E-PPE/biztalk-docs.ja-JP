@@ -1,5 +1,5 @@
 ---
-title: SOAP ヘッダーの使用 |Microsoft ドキュメント
+title: SOAP ヘッダーの使用 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,20 +16,20 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0671dabe7547d3f55b937a1de58241a35cb70b39
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: dfc28000b6a1028ad97403b9c8ae17e0a047dd98
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22287122"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65321690"
 ---
 # <a name="using-soap-headers"></a>SOAP ヘッダーの使用
-Microsoft BizTalk Server は、定義されている SOAP ヘッダーと不明な SOAP ヘッダーのサポートを提供します。 定義されている SOAP ヘッダーは、Web サービスで明示的に指定されている Web サービス記述言語 (WSDL) のヘッダーです。 不明な SOAP ヘッダーは、Web サービスで明示的に指定されていない Web サービス記述言語 (WSDL) のヘッダーです。 SOAP ヘッダーの使用の詳細については、SOAP ヘッダーの使用"Microsoft .NET Framework のドキュメントでを参照してください。 [http://go.microsoft.com/fwlink/?LinkId=25363](http://go.microsoft.com/fwlink/?LinkId=25363)です。  
+Microsoft BizTalk Server では、定義されていると、不明な SOAP ヘッダーのサポートを提供します。 定義済みの SOAP ヘッダーとは、Web サービスで明示的に指定される Web サービス記述言語 (WSDL) でのヘッダーです。 不明な SOAP ヘッダーは、ヘッダーを WSDL ではない Web サービスで明示的に指定します。 SOAP ヘッダーの使用に関する詳細については、SOAP ヘッダーの使用"で、Microsoft .NET Framework のドキュメントでを参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=25363](http://go.microsoft.com/fwlink/?LinkId=25363)します。  
   
- 定義済みの各 SOAP ヘッダーのコンテキスト プロパティが BizTalk Server によって Web サービス内に作成されます。  
+ BizTalk Server では、Web サービスで定義されている各 SOAP ヘッダー コンテキスト プロパティを作成します。  
   
 > [!NOTE]
->  Web サービスは、定義されている SOAP ヘッダーのみをサポートします。Web サービスを利用するとき、不明なヘッダーを設定することはできません。  
+>  消費済み Web サービスのサポートは、SOAP ヘッダーを定義するだけです。Web サービスを使用するときに、不明なヘッダーを設定することはできません。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

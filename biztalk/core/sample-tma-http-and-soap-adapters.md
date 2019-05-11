@@ -1,5 +1,5 @@
 ---
-title: 'サンプル TMA: HTTP アダプターと SOAP アダプター |Microsoft Docs'
+title: サンプル TMA:HTTP アダプターと SOAP アダプター |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -23,14 +23,14 @@ caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cd1b58a89ce123350ba3b6d7be0e665d4428429a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e07bd1d90fbf423fcba38dde75696c3825293d20
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37011483"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399529"
 ---
-# <a name="sample-tma-http-and-soap-adapters"></a>サンプル TMA: HTTP アダプターと SOAP アダプター
+# <a name="sample-tma-http-and-soap-adapters"></a>サンプル TMA:HTTP アダプターと SOAP アダプター
 このトピックでは、サンプル アーキテクチャの HTTP アダプターと SOAP (Web サービス) アダプター シナリオ向けの脅威モデル分析 (TMA) について説明します。 次の図は、HTTP アダプタと SOAP アダプタ シナリオのサンプル アーキテクチャを示しています。  
   
  **図 1. HTTP/SOAP アダプタ シナリオのサンプル アーキテクチャ**  
@@ -68,7 +68,7 @@ ms.locfileid: "37011483"
   
 - **特定のエントリ ポイント、信頼の境界、およびデータのフロー -** 手順 1 で前に説明されている背景情報を参照してくださいと[サンプル シナリオの背景情報](../core/background-information-for-sample-scenarios.md)します。  
   
-- **-特定された脅威の一覧を作成**シナリオに潜在的な脅威を識別するために、DFD のすべてのエントリのカテゴリに分類を使いました**S**poofing を識別、 **T**ampering。データ、 **R**、これが否認**は**漏洩、 **D**ービス拒否、および**E**特権の levation。 次の表は、HTTP アダプタと SOAP アダプタを使用して BizTalk Server との間でメッセージを送受信したときに特定された脅威を示しています。  
+- **-特定された脅威の一覧を作成**シナリオに潜在的な脅威を識別するために、DFD のすべてのエントリのカテゴリに分類を使いました。**S**poofing を識別、 **T**データ、ampering **R**、これが否認**は**漏洩、 **D**ービス拒否、**E**levation 特権。 次の表は、HTTP アダプタと SOAP アダプタを使用して BizTalk Server との間でメッセージを送受信したときに特定された脅威を示しています。  
   
   **表 1. 脅威の一覧**  
   
@@ -80,7 +80,7 @@ ms.locfileid: "37011483"
 |メッセージからユーザーの資格情報が読み取られる|基本認証を使用していて、メッセージにユーザーの資格情報が含まれている場合、悪意のあるユーザーが資格情報へのアクセス権を取得し、その資格情報を使用してアプリケーションにアクセスすることがあります。|ユーザーの資格情報|情報の漏えい<br /><br /> 権限の昇格|  
   
 ## <a name="step-3-review-threats-http-and-soap-adapters-scenario"></a>手順 3. (HTTP アダプタと SOAP アダプタ シナリオ) の脅威を確認します。  
- このセクションでは、サンプル アーキテクチャの HTTP アダプタと SOAP (Web サービス) アダプタ シナリオで特定された脅威に対して実行したリスク分析の結果を示します。 主要な脅威モデルについてのミーティング後の 脅威の確認し、各脅威のリスクを識別するために、次の影響カテゴリを使用しました**D**amage、潜在的な**R**可能性、 **E。** xploitability、 **A**影響を受けるユーザー、および**D**iscoverability します。  
+ このセクションでは、サンプル アーキテクチャの HTTP アダプタと SOAP (Web サービス) アダプタ シナリオで特定された脅威に対して実行したリスク分析の結果を示します。 主要な脅威モデルは、会議後脅威を確認し、各脅威のリスクを識別するために、次の影響カテゴリを使用します。**D**amage、潜在的な**R**可能性、 **E**xploitability、 **A**影響を受けるユーザー、および**D**iscoverability します。  
   
  次の表は、HTTP アダプタと SOAP アダプタを使用して BizTalk Server との間でメッセージを送受信したときに特定された脅威のリスクの度合いを示しています。  
   
@@ -102,7 +102,7 @@ ms.locfileid: "37011483"
   
 |脅威|影響|リスクの度合い|緩和方法とテクノロジ|  
 |------------|------------|-------------------|--------------------------------------------|  
-|非常に大きなサイズのメッセージが送信される|サービス拒否が起こる|2.4|URL ごとに着信メッセージの最大サイズを制限し、指定した最大値を超えるメッセージを拒否します。<br /><br /> 詳細については、[拒否のサービス攻撃の緩和](../core/mitigating-denial-of-service-attacks.md)を参照してください。|  
+|非常に大きなサイズのメッセージが送信される|サービス拒否が起こる|2.4|URL ごとに着信メッセージの最大サイズを制限し、指定した最大値を超えるメッセージを拒否します。<br /><br /> 詳細については、次を参照してください。[拒否のサービス攻撃の緩和](../core/mitigating-denial-of-service-attacks.md)します。|  
 |受信場所に大量のメッセージが送信される|サービス拒否が起こる|2.6|SOAP アダプタは HTTP を使用して BizTalk Server との間でメッセージを送受信します。 そのため、セキュリティに関する推奨事項に従い、インターネット インフォメーション サービス (IIS) をセキュリティで保護する必要があります。 IIS を使用している場合は、アプリケーション分離を構成する方法について IIS の推奨事項に従ってください。<br /><br /> 詳細については、Microsoft TechNet Web サイトを参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=60951](http://go.microsoft.com/fwlink/?LinkId=60951)します。<br /><br /> クライアント認証とパーティの解決を使用して、処理対象メッセージの数を有効かつ認証されたメッセージのみに制限します。|  
 |HTTP 経由でメッセージ本文が読み取られる|情報の漏えい|2.8|S/MIME を使用して、BizTalk Server との間で送信されるメッセージのコンテンツをセキュリティで保護することをお勧めします。<br /><br /> Secure Sockets Layer (SSL) を使用して、BizTalk Server との間および環境に分散された BizTalk Server コンポーネント間でのデータの移動をセキュリティで保護することをお勧めします。|  
 |メッセージからユーザーの資格情報が読み取られる|情報の漏えい<br /><br /> 権限の昇格|2.6|基本認証を使用する場合、またはメッセージ レベルでの暗号化を使用しない場合、SSL を使用してメッセージを送受信し、未認証のユーザーがユーザーの資格情報を読み取ることができないようにすることをお勧めします。|  

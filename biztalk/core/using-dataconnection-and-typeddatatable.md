@@ -1,5 +1,5 @@
 ---
-title: DataConnection と TypedDataTable を使用して |Microsoft ドキュメント
+title: DataConnection と TypedDataTable の使用 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -24,42 +24,42 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2b5a0a490023d77676cc5d156ad5126ad5d7d6c7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c9decd3a849aa21e0e769e006c8dfe29ca5b7315
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22287546"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65401612"
 ---
 # <a name="using-dataconnection-and-typeddatatable"></a>DataConnection と TypedDataTable の使用
-使用して、多くのシナリオで**DataConnection**パフォーマンスを向上させると、使用するよりも少ないメモリを消費する**TypedDataTable**です。 ただし、 **TypedDataTable**で必要になる場合によってを使用して上の特定の制限のため**DataConnection**です。 場合によっては他を使用して**TypedDataTable**を使用するよりも優れたパフォーマンスが生じる**DataConnection**です。 このトピックでは、正しいアプローチを選択するために考慮する必要がある条件と要因について説明します。  
+使用して、多くのシナリオで**DataConnection**パフォーマンスが優れており、使用するよりも少ないメモリを消費**TypedDataTable**します。 ただし、 **TypedDataTable**の使用に関する制限があるため、場合によっては必要があります**DataConnection**します。 その他の場合を使用して**TypedDataTable**を使用してより優れたパフォーマンスを生じる**DataConnection**します。 このトピックでは、条件と適切なアプローチを選択するために考慮すべき要因について説明します。  
   
-## <a name="when-to-use-typeddatatable-instead-of-dataconnection"></a>DataConnection より TypedDataTable が適している場合  
- 次の場合は、DataConnection ではなく TypedDataTable を使用します。  
+## <a name="when-to-use-typeddatatable-instead-of-dataconnection"></a>DataConnection ではなく TypedDataTable を使用する場合  
+ 次のインスタンスで、DataConnection ではなく TypedDataTable を使用します。  
   
--   データを変更する必要があるが、テーブルに主キーがない場合。 使用してデータを変更する**DataConnection**、主キーが必要です。 そのための主キーがない場合、 **TypedDataTable**唯一の方法です。  
+-   データの変更ができるようにする必要がありますが、テーブルには、主キーにありません。 使用してデータを変更する**DataConnection**、主キーが必要です。 そのため、主キーがない場合**TypedDataTable**は唯一の方法です。  
   
     > [!NOTE]
-    >  ルール エンジンのメモリ内の値の更新のみ、 **TypedDataTable**です。 変更が永続的になるかどうかは呼び出し元によって異なります。  
+    >  ルール エンジンのメモリ内の値を更新のみを**TypedDataTable**します。 これらの変更を永続的なを呼び出し元の責任です。  
   
--   選択度が高い場合。つまり、ルール条件として指定されたテストに大半のテーブル行が合格する場合。 この場合、 **DataConnection**メリットは提供されませんを実行できるよりも悪い**TypedDataTable**です。  
+-   選択度は、大きなテーブル内の行の割合がルールの条件として指定されたテストに合格するは、高です。 この場合、 **DataConnection**メリットを提供しない可能性がありますよりも悪い**TypedDataTable**します。  
   
--   テーブルのサイズが小さい場合。通常これには、行数が 500 未満のテーブルが該当します。 ただし、この値は、ルール図形およびルール エンジンで使用可能なメモリによって異なる場合があります。  
+-   テーブルは通常、小規模、500 未満の行を含むテーブル。 この番号が大きくまたは小さく、ルール図形およびルール エンジンで使用できるメモリによってありますに注意してください。  
   
--   ルール連鎖の動作がルール セットで予想されている場合。 呼び出す、**更新**で機能、 **DataConnection**はサポートされていません呼び出すことが**DataConnection.Update**ヘルパー メソッドを使用して、ルールにします。 ルール連鎖が必要な場合、 **TypedDataTable**方が適しています。  
+-   ルール連鎖の動作が規則セットが必要です。 呼び出す、 **Update**に対して関数を**DataConnection**はサポートされていません呼び出すことができますが、 **DataConnection.Update**ヘルパー メソッドを使用してルール。 ルール連鎖が必要なときに**TypedDataTable**をお勧めします。  
   
--   テーブルの 1 つまたは複数の列に、ルールに不要なデータが大量に格納されている場合。 その例としては、イメージ (大量のデータ)、名前、日付などが列に格納される、イメージ データベースが挙げられます。 イメージが不要な場合は、ルールに必要な列だけを選択した方が効果的です。 たとえば、"SELECT Name, Date from TABLE"のようなクエリを発行できますを使用するよりも効率的**DataConnection**です。  
+-   テーブルの 1 つまたは複数の列は、非常に大量のデータは、ルールで必要としないを保持します。 例は、列に格納されるイメージ (大量のデータ)、名前、日付、およびなど、イメージ データベースです。 イメージが必要ない場合は、ルールで必要な列のみを選択する方がよい場合があります。 たとえば、"SELECT Name, Date from TABLE"などのクエリを発行できますを使用してよりも効率的**DataConnection**します。  
   
--   使用して多数のルールは、データベースの同じ行の更新が必要する場合、 **TypedDataTable**行はすべての規則の間で共有と同じ場合は、条件 (Table.Column = = 5)、条件の評価を最適化することができます。 **DataConnection**、使用するルールごとに生成されるクエリは一般に、 **DataConnection**です。 行は再使用されますが (テーブルに主キーがある場合)、同じデータを毎回取得する複数のクエリが生成されることがあります。  
+-   使用して多数のルールまたはデータベースの同じ行の更新を場合、 **TypedDataTable**行がすべてのルールの間で共有条件が同じである場合、(Table.Column 5 = =)、条件の評価を最適化することができます。 **DataConnection**、一般を使用する各ルールには、クエリが生成、 **DataConnection**します。 (テーブルに主キーがある場合)、行が再利用が毎回同じデータを取得する複数のクエリを生成できませんでした。  
   
-## <a name="when-to-use-dataconnection-instead-of-typeddatatable"></a>TypedDataTable より DataConnection が適している場合  
- 次の場合は、TypedDataTable ではなく DataConnection を使用します。  
+## <a name="when-to-use-dataconnection-instead-of-typeddatatable"></a>TypedDataTable ではなく DataConnection を使用する場合  
+ 次のインスタンスで、TypedDataTable ではなく DataConnection を使用します。  
   
--   テーブルには、行の数が多いが含まれていますが、選択度が低い — だけで、ルールの条件を満たす行の少ないです。  
+-   テーブルには、行の数が多いが含まれていますが、選択度が低い-ルールの条件を満たす行のごく一部のみです。  
   
--   サイズの大きなデータベース テーブルが 1 つしかなく、ルールで使用されるその他のオブジェクトには、少数のインスタンスしか含まれていない場合。 最悪の場合は、データベースに対して実行されるクエリの数が、ルールで使用されるその他すべてのインスタンスの結果と等しくなります。  
+-   1 つのデータベースのテーブルが大きいです。ルールで使用されるその他のすべてのオブジェクトでは、少数のインスタンスがあります。 最悪の場合、データベースに対して実行されるクエリの数は、ルールで使用されるその他のすべてのインスタンスの積に等しくなります。  
   
--   ルールが論理積条件だけで構成され、データベース テーブル以外のオブジェクトがこれらのルールで使用される場合。  
+-   論理積条件だけルールを構成し、データベース テーブル以外のオブジェクトは、これらのルールで使用します。  
   
 ## <a name="see-also"></a>参照  
  [ビジネス ルール エンジンでのデータ アクセス](../core/data-access-in-the-business-rule-engine.md)

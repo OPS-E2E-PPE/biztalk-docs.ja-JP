@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b2ded5686cc81b1cc3b629601b142a19c3b7b193
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9dc2ab707bb4620fdb4b45db2750514758f21300
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37023384"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65400357"
 ---
 # <a name="using-biztalk-server-log-shipping-for-disaster-recovery"></a>BizTalk Server ログ配布のディザスター リカバリーを使用します。
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 実装は、データベースを使用してスタンバイの機能をデータベース ログ配布します。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ログ配布は、バックアップと、スタンバイ サーバー データベースが実稼働データベース サーバーが失敗したことに処理を再開できるように、データベースとトランザクション ログ ファイルの復元を自動化します。  
@@ -28,7 +28,7 @@ ms.locfileid: "37023384"
 ## <a name="using-log-shipping-for-disaster-recovery"></a>ディザスター リカバリーのログ配布を使用します。  
  使用する場合、次の操作[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ログ ディザスター リカバリーのための配布。  
   
-- トピックの手順に従って[チェックリスト: ディザスター リカバリーによる可用性の向上](../technical-guides/checklist-increasing-availability-with-disaster-recovery.md)、運用環境の可用性を向上させる[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ディザスター リカバリーを使用して環境。  
+- トピックの手順に従って[チェックリスト。ディザスター リカバリーによる可用性の向上](../technical-guides/checklist-increasing-availability-with-disaster-recovery.md)、運用環境の可用性を向上させる[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ディザスター リカバリーを使用して環境。  
   
 - ディザスター リカバリー server に運用環境の負荷を処理する能力があることを確認します。  
   

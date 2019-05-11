@@ -12,27 +12,27 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d56953fcab29b53f23ba3097296a74aeb67a17c8
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 0e42139a9e286024487417a005963eb677b880a3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36973123"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65384436"
 ---
 # <a name="how-to-recover-enterprise-single-sign-on"></a>エンタープライズ シングル サインオンを復旧する方法
-BizTalk Server を復旧する前に、まずはエンタープライズ シングル サインオン (SSO) を復旧する必要があります。  
+BizTalk Server を回復する前にまずエンタープライズ シングル サインオン (SSO) を回復する必要があります。  
   
 ## <a name="prerequisites"></a>前提条件  
   
--   この作業を実行するには、シングル サインオン管理者グループのメンバーおよび管理者グループのメンバーとしてログオンする必要があります。  
+-   このタスクを実行するには、シングル サインオン管理者グループのメンバーと管理者グループのメンバーとしてログオンする必要があります。  
   
--   SSO の構成中に使用したパスワードが必要です。  
+-   SSO の構成時に使用するパスワードが必要です。  
   
--   リモート サーバー上のすべてのデータベースが破損していない必要があります。  
+-   すべてのデータベースは、リモート サーバー上にそのままです。  
   
--   バックアップ マスター シークレット ファイルが破損しておらず、安全な場所に格納されている必要があります。  
+-   バックアップ マスター シークレット ファイルは、安全な場所にそのままおよび格納されています。  
   
-### <a name="to-recover-enterprise-single-sign-on"></a>エンタープライズ シングル サインオンを復旧するには  
+### <a name="to-recover-enterprise-single-sign-on"></a>エンタープライズ シングル サインオンを回復するには  
   
 1. クリックして**開始**、 をクリックして**すべてのプログラム**、 をクリックして[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリックします**BizTalk Server 構成**します。  
   
@@ -45,11 +45,11 @@ BizTalk Server を復旧する前に、まずはエンタープライズ シン�
 5. **Windows サービス**、最初にインストールして BizTalk Server を構成するときに使用した SSO サービス アカウントのユーザー名とパスワードを入力します。  
   
    > [!NOTE]
-   >  別のアカウントを使用することもできますが、使用するアカウントはシングル サインオン管理者グループのメンバーである必要があります。  
+   >  別のアカウントを使用できますが、シングル サインオン管理者グループのメンバーがあります。  
   
 6. **[構成の適用]** をクリックします。  
   
-    マスター シークレットが取得されなかったことを示す警告が表示されます。 イベント ビューアーを使用すると、エンタープライズ シングル サインオン サービスがコンピューターで開始され実行されていることを確認できます。  
+    マスター シークレットが取得されなかった、警告が表示されます。 ことができますイベント ビューアーを使用ことを確認するのに、エンタープライズ シングル サインオン サービスを今すぐ開始と実行、コンピューター上です。  
   
 7. クリックして**ファイル**、 をクリックし、**終了**します。  
   
@@ -57,11 +57,11 @@ BizTalk Server を復旧する前に、まずはエンタープライズ シン�
   
 9. コマンド プロンプトで、次のように入力します。  
   
-     **cd Program files \common files \enterprise でシングル サインオン**  
+     **cd Program Files\Common Files\Enterprise Single Sign-On**  
   
 10. コマンド プロンプトで、次のように入力します。  
   
-     **ssoconfig-restoresecret***\<backupfile  \>*  
+     **ssoconfig -restoreSecret**  *\<backupfile\>*  
   
      場所*\<backupfile\>* バックアップしたマスター シークレット ファイルの名前を指定します。  
   

@@ -1,5 +1,5 @@
 ---
-title: 式を作成する方法 |Microsoft ドキュメント
+title: 式を作成する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -19,31 +19,31 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9d4dbb6e5494856abea00a999a455542c5f4996e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8c96769a50de1626550409ef7e86ce0460fc3dd4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22248866"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65385484"
 ---
 # <a name="how-to-create-expressions"></a>式を作成する方法
-BizTalk 式エディターを使用すると、さまざまなオーケストレーション デザイナーの図形の機能を拡張する XLANG/s 式を作成できます。 XLANG/s 式を作成すると、判断、遅延の設定、.NET の呼び出し、while ループ条件のテストなどを行うことができます。  
+BizTalk 式エディタでは、さまざまなオーケストレーション デザイナーの図形の機能を拡張する xlang/s 式を作成することができます。 意思決定、遅延の設定、.NET を呼び出して、while ループ条件をテストする xlang/s 式を作成することができます。  
   
- メッセージまたはメッセージの割り当て図形でメッセージ部分に値を割り当てるおよび .NET の呼び出しを行い、内の変数の値を操作することができます、**式**図形です。 複雑なブール式を構築するために使用することもできます、**ループ**と**判断**図形遅延時間を設定して、**遅延**図形です。  
+ メッセージまたはメッセージの割り当て図形のメッセージ部分に値を割り当てる、.NET 呼び出しを行い、内の変数の値を操作することができます、**式**図形。 複雑なブール式の構築に使用することもできます、**ループ**と**判断**図形で遅延を設定して、**遅延**図形。  
   
-### <a name="to-open-biztalk-expression-editor"></a>BizTalk 式エディターを開くには  
+### <a name="to-open-biztalk-expression-editor"></a>BizTalk 式エディターを開く  
   
-1.  右クリックし、**式**図形、**ループ**図形、**メッセージの割り当て**図形、**遅延**図形、または、の分岐**判断**図形です。  
+1.  右クリックし、**式**図形、**ループ**図形、**メッセージの割り当て**、図形、**遅延**図形、または、の分岐**判断**図形。  
   
-2.  をクリックして**式を編集**です。  
+2.  クリックして**式の編集**します。  
   
 3.  BizTalk 式エディターが表示されます。  
   
-### <a name="to-create-or-edit-an-expression"></a>式を作成または編集するには  
+### <a name="to-create-or-edit-an-expression"></a>作成または式を編集するには  
   
-1.  BizTalk 式エディターのテキスト フィールドで、式を入力または編集します。  
+1.  入力するか、BizTalk 式エディターのテキスト フィールドの式を編集します。  
   
-2.  [OK] をクリックします。 式が保存され、選択した図形に適用されます。  
+2.  [OK] をクリックします。 これにより、式が保存され、選択した図形に適用されます。  
   
 ## <a name="see-also"></a>参照  
- [XLANG の言語](../core/xlang-s-language.md)
+ [XLANG-s 言語](../core/xlang-s-language.md)

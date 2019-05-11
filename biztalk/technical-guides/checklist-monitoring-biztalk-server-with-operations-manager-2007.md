@@ -1,5 +1,5 @@
 ---
-title: 'チェックリスト: Operations Manager 2007 による BizTalk Server の監視 |Microsoft Docs'
+title: チェックリスト:Operations Manager 2007 による BizTalk Server の監視 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5f9c256d46225a47707f0baa98542be469d17aa7
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a7d71cfe57dadccd4ee1b14b6728b3329456f759
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37012235"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399287"
 ---
-# <a name="checklist-monitoring-biztalk-server-with-operations-manager-2007"></a>チェックリスト: Operations Manager 2007 による BizTalk Server の監視
+# <a name="checklist-monitoring-biztalk-server-with-operations-manager-2007"></a>チェックリスト:Operations Manager 2007 による BizTalk Server の監視
 このトピックでは、監視するために準備するときに利用できる手順の概要を示します、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]環境。  
 
 

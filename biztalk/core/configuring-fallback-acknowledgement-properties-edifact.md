@@ -12,14 +12,14 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1422e524d9527b5e7e5362d5867654026cc03768
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 75545d752e531c603e7e7e04fee8bda311b6f1a1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36974179"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65355818"
 ---
-# <a name="configuring-fallback-acknowledgement-properties-edifact"></a>フォールバック受信確認プロパティを構成する (EDIFACT)
+# <a name="configuring-fallback-acknowledgement-properties-edifact"></a>フォールバック受信確認プロパティ (EDIFACT) の構成
 フォールバック アグリーメントでは、パーティに返す受信確認の種類を指定できます。  
   
 ## <a name="prerequisites"></a>前提条件  

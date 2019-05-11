@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ad5550a073101e2a30555f90ad6bd879edff3a79
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e2cacbf9f4375e420fd1a201ca268767377c2d2d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36997963"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65400664"
 ---
 # <a name="summary-of-test-results"></a>テスト結果の概要
 このトピックでは、テスト シナリオの結果をまとめたものです。  

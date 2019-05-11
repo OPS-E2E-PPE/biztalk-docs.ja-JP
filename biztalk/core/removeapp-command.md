@@ -12,35 +12,35 @@ caps.latest.revision: 26
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: af0de9a7a2192e29c3c846b78674d30c260e3c19
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a670116f01343df2131835dfc225d93bb64a399d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36995979"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65397924"
 ---
 # <a name="removeapp-command"></a>RemoveApp コマンド
-BizTalk 管理データベースから、BizTalk アプリケーションを含め、そこに格納されているすべてのアイテムを削除します。 アプリケーションがアンインストールされるわけではありません。 これを行う方法の詳細については、[BizTalk アプリケーションをアンインストールする方法](../core/how-to-uninstall-a-biztalk-application.md)を参照してください。  
+BizTalk 管理データベースから、BizTalk アプリケーションを含め、そこに格納されているすべてのアイテムを削除します。 アプリケーションがアンインストールされるわけではありません。 これを行う方法の詳細については、次を参照してください。 [BizTalk アプリケーションをアンインストールする方法](../core/how-to-uninstall-a-biztalk-application.md)します。  
   
  次の場合、削除操作は失敗します。  
   
-- **アプリケーションは停止されません。** アプリケーションの停止手順については、[BizTalk アプリケーション開始および停止方法](../core/how-to-start-and-stop-a-biztalk-application.md)を参照してください。 **ApplicationManager**にインストールされている SDK のサンプル、 <em>\<サンプル パス\>\\</em>admin \explorerom\ ディレクトリを示して 方法プログラム開始または停止を[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]アプリケーション。  
+- **アプリケーションは停止されません。** アプリケーションの停止手順については、次を参照してください。 [BizTalk アプリケーション開始および停止方法](../core/how-to-start-and-stop-a-biztalk-application.md)します。 **ApplicationManager**にインストールされている SDK のサンプル、 <em>\<サンプル パス\>\\</em>admin \explorerom\ ディレクトリを示して 方法プログラム開始または停止を[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]アプリケーション。  
   
-- **他のアプリケーションには、アプリケーションへの参照が含まれます。** 削除するアプリケーションを他のアプリケーションが参照している場合、先に他のアプリケーションから参照を削除する必要があります。 手順については、[別のアプリケーションへの参照を削除する方法](../core/how-to-remove-a-reference-to-another-application.md)を参照してください。  
+- **他のアプリケーションには、アプリケーションへの参照が含まれます。** 削除するアプリケーションを他のアプリケーションが参照している場合、先に他のアプリケーションから参照を削除する必要があります。 手順については、次を参照してください。[別のアプリケーションへの参照を削除する方法](../core/how-to-remove-a-reference-to-another-application.md)します。  
   
-- **アプリケーションには、別のアプリケーションでの送信ポートのメンバーになっている送信ポート グループが含まれています。** メンバーとなっている送信ポートを参加解除してから、アプリケーションを削除する必要があります。 手順については、[送信ポートまたは送信ポート グループを参加解除する方法](../core/how-to-unenlist-a-send-port-or-send-port-group.md)を参照してください。  
+- **アプリケーションには、別のアプリケーションでの送信ポートのメンバーになっている送信ポート グループが含まれています。** メンバーとなっている送信ポートを参加解除してから、アプリケーションを削除する必要があります。 手順については、次を参照してください。[送信ポートまたは送信ポート グループを参加解除する方法](../core/how-to-unenlist-a-send-port-or-send-port-group.md)します。  
   
-- **アプリケーションには、パーティによって参照される送信ポートが含まれています。** パーティから参照を削除するか、送信ポートを別のアプリケーションに移動します。 これらのタスクを実行する方法の詳細については、[方法を表示または編集するパーティ](http://msdn.microsoft.com/library/42e6f3a0-8f7d-4f6c-ab05-a1fab7bf46ca)または[を別のアプリケーション アイテムの移動方法](../core/how-to-move-an-artifact-to-a-different-application.md)を参照してください。  
+- **アプリケーションには、パーティによって参照される送信ポートが含まれています。** パーティから参照を削除するか、送信ポートを別のアプリケーションに移動します。 これらのタスクを実行する方法の詳細については、次を参照してください。[方法を表示または編集するパーティ](http://msdn.microsoft.com/library/42e6f3a0-8f7d-4f6c-ab05-a1fab7bf46ca)または[を別のアプリケーション アイテムの移動方法](../core/how-to-move-an-artifact-to-a-different-application.md)します。  
   
-- **アプリケーションは、既定のアプリケーションです。** 別のアプリケーションを既定にしてから削除する必要があります。 手順については、[既定のアプリケーションを変更する方法](../core/how-to-change-the-default-application.md)を参照してください。  
+- **アプリケーションは、既定のアプリケーションです。** 別のアプリケーションを既定にしてから削除する必要があります。 手順については、次を参照してください。[既定のアプリケーションを変更する方法](../core/how-to-change-the-default-application.md)します。  
   
-- **アプリケーションのオーケストレーションが参加している、または、中断されたインスタンス。** オーケストレーションの詳細については、[オーケストレーション管理](../core/managing-orchestrations.md)を参照してください。  
+- **アプリケーションのオーケストレーションが参加している、または、中断されたインスタンス。** オーケストレーションの詳細については、次を参照してください。[オーケストレーション管理](../core/managing-orchestrations.md)します。  
   
 > [!NOTE]
 >  ポリシーがルール エンジン データベースからは削除されず、ポリシー フォルダーの下に表示するには引き続きアプリケーションに展開された状態にあるポリシーが含まれている場合、\<すべての成果物\>BizTalk のアプリケーション ノード管理コンソール。 ポリシーを他のアプリケーションに追加した場合、ポリシーはその後も展開された状態のままになります。  
   
 ## <a name="usage"></a>使用方法  
- **BTSTask RemoveApp/applicationname は:** *値*[**/Server:**<em>値</em>] [**/database:**<em>値</em>]  
+ **BTSTask RemoveApp /ApplicationName:** *value* [**/Server:**<em>value</em>] [**/Database:**<em>value</em>]  
   
 ## <a name="parameters"></a>パラメーター  
   

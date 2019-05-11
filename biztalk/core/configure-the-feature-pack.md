@@ -13,18 +13,18 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 210089dc225d85271a8c8fdc426d2ca68bf353e1
-ms.sourcegitcommit: 080224caa88f9935b5b13fa035d372f8964d2e52
+ms.openlocfilehash: 5e9dad92a11357c121e01a958996d0b335ba741b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36957870"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65356453"
 ---
 # <a name="configure-the-feature-pack"></a>Feature pack を構成します。
 
 ## <a name="overview"></a>概要
 
-[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)] feature pack を使用して、機能強化、機能、および Azure との統合を提供します。 これらの feature pack は、展開、セキュリティ、分析、ランタイム、保守、標準的なコンプライアンス、およびハイブリッド統合などの主要分野における機能を拡張します。 
+[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)] feature pack を使用して、機能強化、機能、および Azure との統合を提供します。 これらの feature pack は、展開、セキュリティ、分析、ランタイム、保守、標準的なコンプライアンス、およびハイブリッド統合などの主要分野における機能を拡張します。 
 
 > [!NOTE]
 > Feature pack の Enterprise および Developer エディションで使用可能な[!INCLUDE[bts2016_md](../includes/bts2016-md.md)]とき。 
@@ -48,7 +48,7 @@ Feature pack は累積されます。 したがって 3 用 feature pack をイ�
 
 1. セットアップを管理者として実行します。
 2. **ようこそ**を選択します**次**します。 
-3. ライセンス契約に同意して、**[次へ]** を選択します。 
+3. ライセンス条項に同意し、選択**次**します。 
 4. インストールを続行します。 インストール中にはいくつかのコマンド ウィンドウが開き、閉じます。 完了すると、求められる**完了**します。
 
 セットアップ ログが作成`C:\ProgramData\Microsoft\E-Business Servers Updates\Updates\Uninstall4014788-FP2\setup.log`です。

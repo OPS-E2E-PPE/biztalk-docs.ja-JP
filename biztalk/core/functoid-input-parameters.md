@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6a4a93d827a5f58401bb9b8fcdf9727c2a61767e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9f5e90c131e3ddb2190ab05597c92a5c2847a9fd
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37008099"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65387758"
 ---
 # <a name="functoid-input-parameters"></a>Functoid 入力パラメーター
 Functoid をマップで使用する場合の重要な点は、Functoid に対する入力パラメーターを適切に構成することです。 入力パラメーターの順序はすべての functoid にとって重要ではありません (など、**加算**functoid は、同じ表示がまた 1 つが要求するプロパティを関連付ける)、多くの functoid の入力パラメーターが必要正しい順序で指定します。  
@@ -33,7 +33,7 @@ Functoid をマップで使用する場合の重要な点は、Functoid に対�
   
   リンクまたは functoid を使用して、ラベルを指定すると、**ラベル**プロパティ リンクまたは functoid が選択されている場合は、プロパティ ウィンドウで、そのラベルに表示されます、**構成\<Functoid\>Functoid**  ダイアログ ボックスではなく、スキーマ ノードの対応する XPath や入力パラメーターとして使用される functoid の名前。 ラベルを使用すると、各パラメーターの識別や、適切な順序での配置を容易に行うことができます。  
   
-  Functoid の入力パラメーターの適切な順序の詳細については、、 **Functoid リファレンス**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]を参照してください。
+  Functoid の入力パラメーターの適切な順序の詳細については、次を参照してください。、 **Functoid リファレンス**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]します。
   
 ## <a name="see-also"></a>参照  
  [Functoid 入力パラメーターを構成します。](../core/how-to-configure-functoid-input-parameters.md)   

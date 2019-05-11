@@ -2,12 +2,12 @@
 redirect_url: /biztalk/core/deploying-biztalk-adapter-for-jd-edwards-enterpriseone/
 redirect_document_id: true
 ROBOTS: NOINDEX
-ms.openlocfilehash: db28e1db8a0f2d4149e0539e2bce195cd91b1279
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d21d4eaf70948d304564d64379ebd834e89df4ce
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36973987"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65382498"
 ---
 # <a name="importing-binding-files"></a>バインド ファイルのインポート
 このトピックでは、BizTalk Adapter for JD Edwards EnterpriseOne の展開時のインポート プロセスについて説明します。 バインド ファイルとアセンブリをターゲット コンピューターに再展開すると、送信ポートと受信場所が、再インポートされた XML バインド ファイルの送信ポートと受信場所に置き換えられます。  

@@ -18,15 +18,15 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c98a12c11ae735945f4e69631e7211c05c0b9186
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c942bf7f7fd0853164e2cf2b8fdadbfced2fe33d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37022368"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65401753"
 ---
 # <a name="sso-deployment-overview"></a>SSO 展開の概要
-この例では、システムは次のコンピュータを含む 3 つのドメインに展開されています。  
+この例では、システムは、次のコンピューターを含む、3 つのドメインに展開されます。  
   
  **ドメイン ORCH.com**  
   
@@ -40,25 +40,25 @@ ms.locfileid: "37022368"
   
   **ドメイン SQL.com**  
   
-- SQL ドメイン コントローラ  
+- SQL ドメイン コント ローラー  
   
 - SQL2、SSO データベース  
   
   **ドメイン HIS.com**  
   
-- HIS ドメイン コントローラ  
+- 自分のドメイン コントローラ  
   
 - HIS4 データベース  
   
-  この展開の定義について重要な点は次のとおりです。  
+  この配置を定義する重要な点は次のとおりです。  
   
-- ドメイン ORCH.com とドメイン SQL.com には、双方向の信頼関係があり、どちらの方向を使用するかを選択できます。  
+- ドメイン ORCH.com とドメイン SQL.com 選択的な双方向の信頼関係があります。  
   
-- ドメイン ORCH.com は、[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] または [!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] のネイティブの機能レベルとして構成されています。  
+- ドメイン ORCH.com はネイティブとして構成されている[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]または[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]の機能レベル。  
   
-- すべての SSO サービスは、ORCH.com のドメイン ユーザー アカウント (Orch\SSOSvcUser) で実行されています。 ユーザーは、SQL.com ドメイン内の SQL2 コンピュータに対するアクセス許可を持つように構成されています。 ユーザーは、ORCH.com ドメイン内のプロトコル遷移および制約付き委任用に構成されています。  
+- ORCH.com ドメイン ユーザー アカウント (orch \ssosvcuser) では、すべての SSO サービスが実行されています。 ユーザーは、SQL.com ドメイン内の SQL2 コンピュータに対するアクセス許可が構成されます。 ユーザーは、プロトコル遷移用に構成され、ORCH.com ドメイン内での委任を制限します。  
   
-- ORCH.com のもう 1 つのドメイン ユーザー (Orch\TestAppUser) は、テスト プログラムの実行用に設定されています。 このユーザーも、プロトコル遷移および制約付き委任用に構成されています。  
+- ORCH.com のもう 1 つのドメイン ユーザー (orch \testappuser) は、テスト プログラムを実行するために設定されています。 このユーザーは、プロトコル遷移用に設定し、制約付き委任します。  
   
 ## <a name="see-also"></a>参照  
  [展開プロセス](../core/deployment-process.md)

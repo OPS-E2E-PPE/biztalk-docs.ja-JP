@@ -1,5 +1,5 @@
 ---
-title: インストール スクリプトを使用して動的解決のサンプルをインストール |Microsoft ドキュメント
+title: インストール スクリプトを使用して動的解決サンプルのインストール |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,39 +12,39 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 872bb73b9060e25986876c1c2da71afae84b5c52
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 7a2ecbfcf38046a9ad9f4ca2fa7c360f2f5b50a1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25973144"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65400321"
 ---
-# <a name="install-the-dynamic-resolution-sample-using-the-install-scripts"></a>インストール スクリプトを使用して動的解決のサンプルをインストールします。
-このセクションで提供するインストール スクリプトから動的解決のサンプルをインストールする方法について説明します、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]です。  
+# <a name="install-the-dynamic-resolution-sample-using-the-install-scripts"></a>インストール スクリプトを使用して動的解決サンプルをインストールします。
+このセクションで提供するインストール スクリプトから動的解決サンプルをインストールする方法について説明します、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]します。  
   
  **インストール スクリプトから動的解決サンプルをインストールするには**  
   
 1.  FTP を使用する一方向のメッセージングの例を実行する場合は、次の FTP サイトを作成します。  
   
-    -   FTP 仮想ディレクトリ名: アウト  
+    -   FTP 仮想ディレクトリ名:アウト  
   
-    -   場所: \Source\Samples\DynamicResolution\Test\FTP\Out  
+    -   Location: \Source\Samples\DynamicResolution\Test\FTP\Out  
   
-    -   アクセス許可: 読み取りし、書き込み  
+    -   権限:読み取りと書き込み  
   
-    -   BizTalk Application Users グループがこの場所に対するフル アクセスのアクセス許可を確認してください。  
+    -   BizTalk Application Users グループがこの場所の完全なアクセス許可を確認します。  
   
 2.  MQSeries を使用する双方向のメッセージングの例を実行する場合は、WebSphere エクスプ ローラーを使用して、以下を作成します。  
   
-    -   ESB 名前のキュー マネージャー。 DEPSample.QueueManager  
+    -   ESB という名前のキュー マネージャー。DEP.Sample.QueueManager  
   
-    -   テストをという名前のキューです。ESB 内で出力します。 DEPSample.QueueManager  
+    -   テストをという名前のキュー。ESB 内でチェック アウトします。DEP.Sample.QueueManager  
   
 3.  **[スタート]** メニューの **[ファイル名を指定して実行]** をクリックします。  
   
-4.  **実行** ダイアログ ボックスで、「 **cmd**、し、enter キーを押してコマンド プロンプトを開きます。  
+4.  **実行**ダイアログ ボックスに「 **cmd**、し、enter キーを押してコマンド プロンプトを開きます。  
   
-5.  次のコマンド実行交換、\<パス\>をインストールする .cmd ファイルへの完全パスを持つパラメーター (このリリースでは既定のパスは \Source\Samples\DynamicResolution\Install\Scripts\\)。  
+5.  次のコマンドを実行して交換、\<パス\>をインストールする .cmd ファイルへの完全パスを持つパラメーター (このリリースでは既定のパスは \Source\Samples\DynamicResolution\Install\Scripts\\)。  
   
     ```  
     <path>\Setup_bin.cmd  

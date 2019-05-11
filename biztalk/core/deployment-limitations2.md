@@ -2,12 +2,12 @@
 redirect_url: /biztalk/core/deploying-biztalk-adapter-for-jd-edwards-oneworld/
 redirect_document_id: true
 ROBOTS: NOINDEX
-ms.openlocfilehash: 314bffd50e152c1e3141e4f644c60bdbe7a3824a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8a61c55439b5e5f8455b21e59fae06c559b5ff16
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37011035"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65389521"
 ---
 # <a name="deployment-limitations"></a>デプロイメントの制限事項
 アスタリスクでトランスポート アダプターのパスワードが格納されている (\*\*\*\*\*\*) の管理に渡される BizTalk 展開ウィザードによってエクスポートされるバインド ファイルに同じ形式でのコンポーネントです。 アスタリスクをランダムな英数字の値 (つまり、正しくないパスワード) に置き換えて、インポート前にバインド ファイルを編集します。 使用して、正しいパスワードを入力し、**トランスポートのプロパティ**バインド ファイルをインポートした後のページ。  
@@ -16,9 +16,9 @@ ms.locfileid: "37011035"
   
 
 ## <a name="password-limitation-workaround"></a>パスワードの制限への対処方法  
- パスワードの制限への対処方法として、次のいずれかの方法を使用します。  
+ パスワードの制限の解決策として、次のいずれかを使用します。  
   
-#### <a name="to-work-around-the-password-limitation"></a>パスワードの制限の問題を回避するには  
+#### <a name="to-work-around-the-password-limitation"></a>パスワードの制限を回避するには  
   
 1. アスタリスクをプレーンテキストに置き換えて、インポート前にバインド ファイルを編集します。  
   
@@ -32,7 +32,7 @@ ms.locfileid: "37011035"
   
    **- または -**  
   
-#### <a name="to-work-around-the-password-limitation"></a>パスワードの制限の問題を回避するには  
+#### <a name="to-work-around-the-password-limitation"></a>パスワードの制限を回避するには  
   
 1.  パスワードではなく、エンタープライズ シングル サインオンを使用します。  
   

@@ -12,12 +12,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f28771f2611a8b5f7c2522b7cd45e875897645e9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2df07372e17d93ae458f3831401bec4979725173
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36996203"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65400728"
 ---
 # <a name="optimizing-business-activity-monitoring-bam-performance"></a>ビジネス アクティビティ監視 (BAM) のパフォーマンスを最適化します。
 このトピックでは、ビジネス アクティビティ監視 (BAM) のパフォーマンス要因について説明します。  
@@ -56,7 +56,7 @@ ms.locfileid: "36996203"
   
   すべて、非同期 EventStreams (BES、MES、OES) は、BizTalk メッセージ ボックス データベースに最初にデータを保持します。 このデータは Tracking Data Decode Service (TDDS) によって定期的に処理され、BAM プライマリ インポート データベースに保存されます。  
   
-  BAM の EventStream Api の詳細については、[EventStream クラス](http://go.microsoft.com/fwlink/?LinkId=158046)(http://go.microsoft.com/fwlink/?LinkId=158046) 、BizTalk Server のドキュメントにを参照してください。  
+  BAM の EventStream Api の詳細については、次を参照してください。 [EventStream クラス](http://go.microsoft.com/fwlink/?LinkId=158046)(http://go.microsoft.com/fwlink/?LinkId=158046) 、BizTalk Server のドキュメントにします。  
   
 ## <a name="bam-performance-counters"></a>BAM パフォーマンス カウンター  
  BAM のパフォーマンス カウンターの詳細な一覧を参照してください。 [BAM パフォーマンス カウンター](http://go.microsoft.com/fwlink/?LinkId=158048) (http://go.microsoft.com/fwlink/?LinkId=158048) 、BizTalk Server のドキュメントにします。  

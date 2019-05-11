@@ -12,12 +12,12 @@ caps.latest.revision: 28
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4fe9fd977563553e62d10675ee35caa673cf0c8e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 071bc814964aa2502e77bd02d975c978fc02fd77
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36998923"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65299421"
 ---
 # <a name="test-scenarios-for-measuring-mst-of-the-engine"></a>エンジンの MST を測定するためのテスト シナリオ
 このセクションでは、BizTalk システムを次の 3 つの負荷レベルで起動したときの効率性を測定するために実装したテスト シナリオについて説明します。  
@@ -54,7 +54,7 @@ ms.locfileid: "36998923"
  テスト シナリオは非常に単純です。 負荷生成ツール LoadGen 2007 をロード ドライバー サーバーにインストールし、ファイル アダプターによって監視される共有に、ファイルのコピーを送信します。 負荷生成ツールにより、入力ファイル インスタンスのコピーがファイル共有に均等に配布されます。  
   
 > [!NOTE]
->  ダウンロード[LoadGen](https://www.microsoft.com/download/details.aspx?id=14925)します。 このツールの以前のバージョン、BizTalk Server 2004 負荷生成ツールがダウンロードできる[ http://go.microsoft.com/fwlink/?linkid=108999](http://go.microsoft.com/fwlink/?linkid=108999)します。 MSMQ アダプターでの LoadGen の使用方法の詳細については、[MSMQ での LoadGen 2007 を使用して](../core/using-loadgen-2007-with-msmq.md)を参照してください。  
+>  ダウンロード[LoadGen](https://www.microsoft.com/download/details.aspx?id=14925)します。 このツールの以前のバージョン、BizTalk Server 2004 負荷生成ツールがダウンロードできる[ http://go.microsoft.com/fwlink/?linkid=108999](http://go.microsoft.com/fwlink/?linkid=108999)します。 MSMQ アダプターでの LoadGen の使用方法の詳細については、次を参照してください。 [MSMQ での LoadGen 2007 を使用して](../core/using-loadgen-2007-with-msmq.md)します。  
   
  BizTalk ファイル アダプターは、ファイル共有を監視してメッセージをメッセージ ボックスに公開するように構成されています。 受信図形と送信図形のみを含んでいる簡単なオーケストレーションで、公開されたメッセージをサブスクライブします。 オーケストレーションによってメッセージ ボックスに公開されたメッセージは、ファイル送信ポートで取得されて共通の共有に送信され、SAN で定義されます。 出力 SAN 共有に到着したファイルは、テストの実行中にファイルがこの共有に蓄積されるのを回避するために、直ちに削除されます。  
   
@@ -83,7 +83,7 @@ ms.locfileid: "36998923"
   
 - 物理ディスクのアイドル状態、メッセージ ボックス データとトランザクションのファイル ディスクによって測定される時間、 **% アイドル時間**カウンターで使用可能な**LogicalDisk**パフォーマンス オブジェクトです。  
   
-- によって測定されるメッセージ ボックス サーバーの CPU 使用率 (%)、 **% Processor Time**カウンターで使用可能な**プロセッサ**パフォーマンス オブジェクトです。  
+- CPU 使用率 (%)メッセージ ボックス サーバーによって測定される、 **% Processor Time**カウンターで使用可能な**プロセッサ**パフォーマンス オブジェクト。  
   
 - メッセージ ボックス データベースで 1 秒あたりのロック タイムアウトはデータベースによって測定される、 **Lock timeouts/sec**カウンターで使用可能な**SQLServer:Locks**パフォーマンス オブジェクトです。  
   

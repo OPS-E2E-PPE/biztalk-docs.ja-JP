@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9e2b79e2a0d7e4758ac87503f4bfac122c9ee215
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5c275e1f8c6d4ae4b4e7eb0819f56cdf9b26418a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36994787"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399332"
 ---
 # <a name="best-practices-for-managing-certificates"></a>証明書を管理するためのベスト プラクティス
 このセクションでは、Microsoft BizTalk Server 環境で証明書を管理するためのベスト プラクティスを提供します。  

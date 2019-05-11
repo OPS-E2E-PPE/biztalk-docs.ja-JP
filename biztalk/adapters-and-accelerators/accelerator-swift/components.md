@@ -14,15 +14,15 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6c8595aafb14b42240a5f781faf481977be2b821
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 703a3d6c25de9151a5ed7c5dddfe67b948c35a1d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37014683"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65378876"
 ---
-# <a name="components"></a>Components
-Microsoft を使用する[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]パートナー関係、エンタープライズ アプリケーション統合 (EAI)、およびアプリケーションとビジネス ワークフローの自動化の取引先を容易にする SWIFT 指向のミドルウェア ソリューションを実装するコンポーネント。 たとえば、次のようなコンポーネントがあります。  
+# <a name="components"></a>コンポーネント
+Microsoft を使用する[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]パートナー関係、エンタープライズ アプリケーション統合 (EAI)、およびアプリケーションとビジネス ワークフローの自動化の取引先を容易にする SWIFT 指向のミドルウェア ソリューションを実装するコンポーネント。 これらのコンポーネントは次のとおりです。  
   
 - **SWIFT メッセージのスキーマです。** XML スキーマ定義言語 (XSD) を使用する-パイプライン コンポーネントに、SWIFT を使用して XML に、ネイティブ SWIFT フラット ファイル メッセージの解析を容易に準拠しているスキーマと[!INCLUDE[btsBizTalkServerNoVersion_md](../../includes/btsbiztalkservernoversion-md.md)]ランタイム。 SWIFT のデータを XML に変換した後、マップを使用して区切られたフラット ファイルまたは位置指定フラット ファイルなど、別の形式に変換します。 この変換では、既存のアプリケーションでこれらのファイルを使用することができます。 検証のみのシナリオのようにすべてのマッピングがない XML データを使用することもできます。 SWIFT スキーマでは、SWIFT 定義のデータと書式ルールも適用します。 このリリースで提供されるスキーマの完全な一覧を参照してください。[サポートされているメッセージ](../../adapters-and-accelerators/accelerator-swift/supported-messages.md)します。  
   

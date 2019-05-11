@@ -1,5 +1,5 @@
 ---
-title: オーケストレーションでのサービスを Web を使用する方法 |Microsoft ドキュメント
+title: オーケストレーションのサービスの Web を使用する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,24 +12,24 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9aecc7e3618823a5d1bb038a7521cfd0e308bbb4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 73ec9500069f9cacbe0369ffef2e379ef0644b28
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22256738"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65383186"
 ---
-# <a name="how-to-use-web-services-in-orchestrations"></a>オーケストレーションでの Web サービスの使用方法
-Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、Web サービスの組み込みサポートが提供されています。 BizTalk Server は、既存のすべての Web サービスを再利用し、オーケストレーション内に集約できます。 また、オーケストレーションを Web サービスとして公開し、Web サービス ロジックとビジネス プロセス ロジックを区別することもできます。  
+# <a name="how-to-use-web-services-in-orchestrations"></a>オーケストレーションの Web サービスを使用する方法
+Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Web サービスの組み込みサポートを提供します。 BizTalk Server は、再利用とすべての既存の Web サービス、オーケストレーション内で集計できます。 (公開) を公開することも、オーケストレーションを Web を分離する Web サービスとしてのサービス ロジックとビジネス プロセス ロジック。  
   
 ## <a name="examples-of-using-web-services"></a>Web サービスの使用例  
- Web サービスを使用する方法を次のサンプルに示します。  
+ 次のサンプルでは、Web サービスを使用する方法を示します。  
   
--   「発行および消費 Web サービスに SOAP ヘッダー」の SDK サンプルのダウンロード[http://go.microsoft.com/fwlink/?LinkId=73703](http://go.microsoft.com/fwlink/?LinkId=73703)です。  
+-   SDK サンプルの「発行および消費 Web サービスで SOAP ヘッダー」からダウンロード[ http://go.microsoft.com/fwlink/?LinkId=73703](http://go.microsoft.com/fwlink/?LinkId=73703)します。  
   
--   サンプルをダウンロードする SDK「消費 Web Services 配列パラメータによる」から[http://go.microsoft.com/fwlink/?LinkId=73703](http://go.microsoft.com/fwlink/?LinkId=73703)です。  
+-   「消費 Web サービスの配列パラメーター」SDK サンプルからダウンロード[ http://go.microsoft.com/fwlink/?LinkId=73703](http://go.microsoft.com/fwlink/?LinkId=73703)します。  
   
--   サンプルをダウンロードする SDK「消費 Web Services」、メッセージングのみのシナリオのサンプルでは、から[http://go.microsoft.com/fwlink/?LinkId=73703](http://go.microsoft.com/fwlink/?LinkId=73703)です。  
+-   SDK サンプル「消費 Web Services」、メッセージングのみのシナリオの例では、からダウンロード[ http://go.microsoft.com/fwlink/?LinkId=73703](http://go.microsoft.com/fwlink/?LinkId=73703)します。  
   
 ## <a name="see-also"></a>参照  
  [Web サービスの使用](../core/using-web-services.md)

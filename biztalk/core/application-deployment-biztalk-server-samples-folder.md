@@ -1,5 +1,5 @@
 ---
-title: アプリケーションの展開 (BizTalk Server Samples フォルダ) |Microsoft ドキュメント
+title: アプリケーションの展開 (BizTalk Server Samples フォルダー) |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,22 +17,22 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 296e2a79521939c78da749794f4b32dad8e71092
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c1e46913ce72d5ae757776b18a6e8e6f860f0895
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22230250"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65528598"
 ---
 # <a name="application-deployment-biztalk-server-samples-folder"></a>アプリケーションの展開 (BizTalk Server Samples フォルダー)
-Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のソフトウェア開発キット (SDK) には、アプリケーション展開のサンプルがいくつか付属しています。 このセクションでは、各サンプルで示されている機能、サンプルをビルドおよび実行する方法、および予想される実行結果について詳しく説明します。  
+Microsoft[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ソフトウェア開発キット (SDK) のいくつかのアプリケーション展開のサンプルが含まれています。 ここでは、各サンプルの構築と、サンプルと予想される結果を実行する手順で示されている機能の詳細を示します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [テンプレート (アプリケーションの展開サンプル)](../core/template-application-deployment-sample.md)です。 このサンプルでは、アプリケーション展開の 1 つまたは複数のフェーズで実行される前処理および後処理のスクリプトを作成し、カスタム タスクを実行する方法を示します。  
+-   [テンプレート (アプリケーションの展開サンプル)](../core/template-application-deployment-sample.md)します。 このサンプルでは、アプリケーションの展開の 1 つまたは複数フェーズで実行して、カスタム タスクが実行される前処理および後処理のスクリプトを作成する方法を示します。  
   
--   [CreateApp (アプリケーションの展開サンプル)](../core/createapp-application-deployment-sample.md)です。 このサンプルでは、BTSTask コマンド ライン ツールを使用して、アプリケーション展開作業を自動化する方法を示します。  
+-   [CreateApp (アプリケーションの展開サンプル)](../core/createapp-application-deployment-sample.md)します。 このサンプルでは、BTSTask コマンド ライン ツールを使用して、アプリケーション展開タスクを自動化する方法を示します。  
   
--   [SelectiveBindingImport (アプリケーションの展開サンプル)](../core/selectivebindingimport-application-deployment-sample.md)です。 このサンプルでは、前処理および後処理のスクリプトを使用して、展開先の環境に適したアプリケーションにバインド ファイルをインポートする方法を示します。  
+-   [SelectiveBindingImport (アプリケーションの展開サンプル)](../core/selectivebindingimport-application-deployment-sample.md)します。 このサンプルでは、前処理および後処理のスクリプトを使用して、移行先の環境に適したアプリケーションにバインド ファイルをインポートする方法を示します。  
   
--   [VisualStudioHostRestart (アプリケーションの展開サンプル)](../core/visualstudiohostrestart-application-deployment-sample.md)です。 このサンプルは、スクリプトを使用して、ローカル コンピューター上のすべてのホスト インスタンスを再起動する方法を示しています。
+-   [VisualStudioHostRestart (アプリケーションの展開サンプル)](../core/visualstudiohostrestart-application-deployment-sample.md)します。 このサンプルは、スクリプトを使用して、ローカル コンピューター上のすべてのホスト インスタンスを再起動する方法を示しています。

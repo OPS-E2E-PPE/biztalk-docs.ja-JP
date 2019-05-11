@@ -1,5 +1,5 @@
 ---
-title: AS2 ソリューションのアーキテクチャ |Microsoft ドキュメント
+title: AS2 ソリューションのアーキテクチャ |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,17 +12,17 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c22557059bd13dd99e0b24a2291b7f121d561bbc
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 60f25fb229a37896846f81e37c3cc71e8419d854
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22230050"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65528854"
 ---
 # <a name="as2-solution-architecture"></a>AS2 ソリューション アーキテクチャ
-AS2 処理は EDI 処理とは別個に実行されます。 AS2 メッセージの受信、処理、受信確認の送信は EDI ペイロードの処理とは別個に行われます。 したがって、AS2 処理は EDI 処理とは別個に設計され、構成されています。 また、AS2 を使用して、EDI メッセージまたは非 EDI メッセージのどちらかを転送することができます。  
+AS2 処理は EDI から個別に実行を処理します。 AS2 メッセージを受信、処理、および EDI ペイロードの処理とは別に受信確認の送信。 結果として、AS2 処理が設計し、EDI 処理とは別に構成されています。 さらに、AS2 を使用して EDI メッセージまたは非 EDI メッセージを転送することができます。  
   
- このセクションでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のエンド ツー エンド、受信側、および送信側の処理を含む AS2 ソリューションのアーキテクチャについて説明します。  
+ このセクションで AS2 ソリューションのアーキテクチャを説明します[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]エンド ツー エンド、受信側、送信側など、処理します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

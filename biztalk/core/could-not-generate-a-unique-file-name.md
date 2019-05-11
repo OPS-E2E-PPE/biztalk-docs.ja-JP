@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f86cd0867e9b4819c88c2d788b7c7775cba35028
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 88955b113e40016a0cbd5c39c1cc83a878510c6e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37010659"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65390180"
 ---
 # <a name="could-not-generate-a-unique-file-name"></a>一意のファイル名を生成できませんでした
 ## <a name="details"></a>詳細  
@@ -33,7 +33,7 @@ ms.locfileid: "37010659"
 |  メッセージ テキスト   |          一意のファイル名を生成できませんでした"{0}"フォルダー"に{1}"           |
   
 ## <a name="explanation"></a>説明  
- このエラーは、同じ名前のファイルが既に存在していることを示します。  
+ このエラーは、同じ名前のファイルが既に存在を示します。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- ファイル名を変更します。
+ ファイルの名前を変更します。

@@ -12,14 +12,14 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7f4cf13bb338959ca4cd7d2d25a85749f0ff0171
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e023f205252b04dc5122cfa8c01b617758a25771
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36981819"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65381329"
 ---
-# <a name="invalid-receiverid-qualifier"></a>ReceiverId 修飾子が無効です
+# <a name="invalid-receiverid-qualifier"></a>ReceiverId が無効な修飾子
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                        |
@@ -30,7 +30,7 @@ ms.locfileid: "36981819"
 |  イベント ソース   | [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI |
 |    コンポーネント    |                                       EDI エンジン                                       |
 |  シンボル名  |                      X12Ta1InvalidReceiverIdQualifierDescription                       |
-|  メッセージ テキスト   |                              ReceiverId 修飾子が無効です                              |
+|  メッセージ テキスト   |                              ReceiverId が無効な修飾子                              |
   
 ## <a name="explanation"></a>説明  
  このエラー/警告/情報イベントは、エントリのため、受信パイプラインが受信インターチェンジが処理しないことを示します [isa07] フィールドの受信者の修飾子 (x12 インターチェンジ) または受信者コードの修飾子 (EDIFACT の [unb3.2] フィールドインターチェンジの場合) では、サービス スキーマ (X12ServiceSchema または EdifactServiceSchema) で設定されている列挙の値が一致しませんでした。  

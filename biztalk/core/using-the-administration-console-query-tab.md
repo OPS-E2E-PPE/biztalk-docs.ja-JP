@@ -1,5 +1,5 @@
 ---
-title: 管理コンソールの [クエリ] タブを使用して |Microsoft ドキュメント
+title: 管理コンソールの [クエリ] タブを使用して |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,24 +15,24 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 36b95a4213f4ef449aa78441a7caabc1e7f6f074
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: cc28e2b9c07cc456c64c7956ab9cda2e898ba942
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25975834"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65321246"
 ---
-# <a name="using-the-administration-console-query-tab"></a>管理コンソールの [クエリ] タブの使用
-BizTalk Server 管理コンソールの [グループ ハブ] ページの [クエリ] タブを使用すると、実行中または中断された特定のサービス インスタンス、メッセージ、またはサブスクリプションを検索できます。 管理コンソールを使用して実行したクエリでは、メッセージ ボックス データベースに格納されているアクティブな項目が検索されます。 新しいクエリを実行するたびに、[新しいクエリ] タブが表示されます。  
+# <a name="using-the-administration-console-query-tab"></a>管理コンソールの [クエリ] タブを使用します。
+特定の実行、中断されたサービス インスタンス、メッセージ、またはサブスクリプションを検索して、BizTalk Server 管理コンソールの [グループ ハブ] ページで、[クエリ] タブを使用できます。 管理コンソールを使用して実行されるクエリは、メッセージ ボックス データベースに格納されているアクティブな項目を見つけます。 新しいクエリ タブでは、新しいクエリを実行するたびに表示されます。  
   
- 追跡またはアーカイブされたメッセージやサービス インスタンスを検索するには、メッセージ イベントとサービス インスタンスの追跡を使用します。 詳細については、次を参照してください。[追跡メッセージを表示し、インスタンス データ](../core/viewing-tracked-message-and-instance-data.md)です。  
+ 追跡またはアーカイブされたメッセージやサービス インスタンスを検索するには、メッセージ イベントおよびサービス インスタンスの追跡を使用します。 詳細については、次を参照してください。[追跡メッセージを表示し、インスタンス データ](../core/viewing-tracked-message-and-instance-data.md)します。  
   
 > [!NOTE]
->  サービス インスタンスに対してクエリを実行するときに返される結果セットでの値が表示**\<名は使用できません\>** の**ServiceName**サービスのフィールドインスタンスの場合は、対応する送信ポート、受信場所、またはオーケストレーションが削除されました。  **ServiceName** BizTalk 管理データベースに送信ポートのフレンドリ名を検索することによって、サービス インスタンスのフィールドが設定されると、受信場所、またはオーケストレーションです。  場合、送信ポート、受信場所、またはオーケストレーションを削除し、フレンドリ名の参照が失敗したと**\<名は使用できません\>** が表示されます。  
+>  サービス インスタンスのクエリを実行するときに、返される結果セットの値が表示**\<名は使用できません\>** の**ServiceName**サービスのフィールドインスタンスの場合は、対応する送信ポート、受信場所、またはオーケストレーションが削除されました。  **ServiceName**送信ポートのフレンドリ名の BizTalk 管理データベースにサービス インスタンスのフィールドが、参照によって設定されると、受信場所、またはオーケストレーションします。  場合、送信ポート、受信場所、またはオーケストレーションを削除し、フレンドリ名の参照が失敗したと**\<名は使用できません\>** が表示されます。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [保存済みのクエリを開く方法](../core/how-to-open-a-saved-query.md)  
+-   [保存されたクエリを開く方法](../core/how-to-open-a-saved-query.md)  
   
 -   [すべてのサービス インスタンスを検索する方法](../core/how-to-search-for-all-service-instances.md)  
   

@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 74551ac825f9e517bec1d07edc7f288db732b348
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c3f349dbc2eb3ffd6a1bfa38c3231461d45a8ae7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37018884"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65381386"
 ---
 # <a name="invalid-client-certificate-thumbprint"></a>クライアント証明書の拇印が無効です
 ## <a name="details"></a>詳細  
@@ -30,13 +30,13 @@ ms.locfileid: "37018884"
 |  イベント ソース   |                                         0                                          |
 |    コンポーネント    |                                         0                                          |
 |  シンボル名  |                                         0                                          |
-|  メッセージ テキスト   |       クライアント証明書の拇印が無効です。40 桁の 16 進数が必要です。       |
+|  メッセージ テキスト   |       無効なクライアント証明書の拇印。40 桁の 16 進数が必要です。       |
   
 ## <a name="explanation"></a>説明  
  無効なクライアント証明書の拇印が指定されました。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- WCF 送信ポートを構成するコードで、ユーザー インターフェイスのクライアント証明書プロパティには、16 進の 40 桁の値を指定します。 例: 798A68E7A3E6F2CCC6929FC4AF2A15A9EED66E39  
+ WCF 送信ポートを構成するコードでは、ユーザー インターフェイスのクライアント証明書のプロパティには 40 桁の 16 進数の値が期待しています。 例:798A68E7A3E6F2CCC6929FC4AF2A15A9EED66E39  
   
  証明書の詳細については、次を参照してください。  
   

@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cd6e208cd894c2b307bd2c601b7d8bd774e204ce
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d857d2505d90e3dbbdefd6233e9fa337a1d8fd8b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36976699"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65389466"
 ---
 # <a name="developing-a-custom-inline-functoid"></a>インライン型のカスタム Functoid の開発
 インライン型のカスタム Functoid は、参照型のカスタム Functoid のように、アセンブリ、クラス、メソッド名などを参照するのではなく、実装コードを直接マップにコピーすることによって機能を提供します。  
@@ -47,9 +47,9 @@ ms.locfileid: "36976699"
 ### <a name="providing-inline-code-with-getinlinescriptbuffer"></a>GetInlineScriptBuffer を使ったインライン コードの実装  
  オーバーライドして、カスタムのインライン型の functoid では、可変個のパラメーターをサポートする場合**GetInlineScriptBuffer**します。 インライン スクリプトを使用するようにカスタム Functoid を構成するには、次の手順に従います。  
   
-1. コンストラクターの宣言、カスタム functoid を設定して変数の入力の**HasVariableInputs**に`true`します。  
+1. コンス トラクターの宣言、カスタム functoid を設定して変数の入力の**HasVariableInputs**に`true`します。  
   
-2. コンストラクターの呼び出し**AddScriptTypeSupport**で[Microsoft.BizTalk.BaseFunctoids.ScriptType](http://msdn.microsoft.com/library/microsoft.biztalk.basefunctoids.scripttype.aspx)インライン コードを有効にし、サポートされているスクリプトの種類を設定します。  
+2. コンス トラクターの呼び出し**AddScriptTypeSupport**で[Microsoft.BizTalk.BaseFunctoids.ScriptType](http://msdn.microsoft.com/library/microsoft.biztalk.basefunctoids.scripttype.aspx)インライン コードを有効にし、サポートされているスクリプトの種類を設定します。  
   
 3. オーバーライド**GetInlineScriptBuffer**を構築して、カスタム functoid のマップで使用するコードを返します。 パラメーターの `scriptType` と `numParams` を調べて、適切なコードを作成します。 最後のパラメーターで`functionNumber`0 にする必要があります。 累積的な関数は、固定数の入力があるし、このメカニズムを使用しないためにです。  
   

@@ -1,5 +1,5 @@
 ---
-title: アプリケーションをインストールする方法 |Microsoft ドキュメント
+title: アプリケーションをインストールする方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: df611fdaec515480bbe47b1c8c1feddccb6e7333
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: aed3f221d4ea4cd4b125da5f7979e13d56e64cb4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22297746"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65400408"
 ---
 # <a name="how-to-install-an-application"></a>アプリケーションをインストールする方法
-アプリケーションをインストールする方法の詳細については、次を参照してください。[を BizTalk アプリケーションをインストールする方法](http://go.microsoft.com/fwlink/?LinkID=154728)(http://go.microsoft.com/fwlink/?LinkID=154728)。
+アプリケーションをインストールする方法の詳細については、次を参照してください。 [BizTalk アプリケーションをインストールする方法](http://go.microsoft.com/fwlink/?LinkID=154728)(http://go.microsoft.com/fwlink/?LinkID=154728)します。

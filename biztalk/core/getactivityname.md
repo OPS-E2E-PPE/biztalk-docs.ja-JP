@@ -1,5 +1,5 @@
 ---
-title: GetActivityName |Microsoft ドキュメント
+title: GetActivityName |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 55e8f35746f5f4ed1bbbe10a4d45300895340869
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 597b08fc9ea9f19b6c3d7f7e3488ae7f77b2c62f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22246346"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65387739"
 ---
 # <a name="getactivityname"></a>GetActivityName
 現在のアクティビティの名前をスタックにプッシュします。  
@@ -35,7 +35,7 @@ ms.locfileid: "22246346"
 ## <a name="pushed-value"></a>プッシュされた値  
  現在のアクティビティの名前を表す文字列。  
   
-## <a name="remarks"></a>解説  
+## <a name="remarks"></a>コメント  
  Windows Workflow Foundation では、開発者によって構成された一連のアクティビティとして処理が実行されます。 これらのアクティビティにはそれぞれワークフロー内で一意の名前が割り当てられます。 アクティビティの一意の名前に基づいてフィルタ処理を行うことにより、特定のアクティビティのデータを傍受できます。  
   
 ## <a name="example"></a>例  

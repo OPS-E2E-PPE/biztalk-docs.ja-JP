@@ -1,5 +1,5 @@
 ---
-title: SDK のユーティリティ |Microsoft ドキュメント
+title: SDK のユーティリティ |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,15 +14,15 @@ caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7f8db994395ead14ed0e452ff8461f0aa55f8f2a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5c9869ccf526d9a3618fab7f06767f0f426973e2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22287578"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65401588"
 ---
 # <a name="utilities-in-the-sdk"></a>SDK のユーティリティ
-ここでは、Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ソフトウェア開発キット (SDK) に含まれている便利なユーティリティの使用方法について説明します。  
+このセクションでは、Microsoft に含まれるいくつかの便利なユーティリティを使用するための説明[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ソフトウェア開発キット (SDK)。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
@@ -32,7 +32,7 @@ ms.locfileid: "22287578"
   
 -   [BatchTerminator ユーティリティ](../core/batchterminator-utility.md)  
   
--   [BizTalk メッセージ キューの大きいメッセージ用拡張機能](../core/biztalk-message-queuing-large-message-extension.md)  
+-   [BizTalk メッセージ キューのサイズの大きいメッセージ用拡張機能](../core/biztalk-message-queuing-large-message-extension.md)  
   
 -   [証明書ウィザード ユーティリティ](../core/certificate-wizard-utility.md)  
   
@@ -42,4 +42,4 @@ ms.locfileid: "22287578"
   
 -   [スキーマ生成ウィザードを拡張する方法](../core/how-to-extend-the-schema-generator-wizard.md)  
   
--   [パブリック キー トークンのユーティリティを置き換えます](../core/replace-public-key-token-utility.md)
+-   [公開キー トークンの置換ユーティリティ](../core/replace-public-key-token-utility.md)

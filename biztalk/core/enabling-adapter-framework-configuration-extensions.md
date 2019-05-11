@@ -1,5 +1,5 @@
 ---
-title: アダプター フレームワーク構成の拡張機能の有効化 |Microsoft ドキュメント
+title: アダプター フレームワーク構成拡張機能の有効化 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,15 +12,15 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e111a271654b40a01032805bbfdb8eb54bc31ead
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 63831845dee97a4ce03bb5ac19595b2db42e3327
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25970152"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65349669"
 ---
-# <a name="enabling-adapter-framework-configuration-extensions"></a>アダプター フレームワーク構成の拡張機能を有効にします。
-ユーザー エクスペリエンスを向上させるために、BizTalk アダプター フレームワークでは拡張機能がいくつか提供されています。 これらの拡張機能を使用するのには、フレームワークのスキーマ、BiztalkAdapterFramework.xsd をインポートします。 スキーマをインポートする、装飾および特化された型にアクセスして、アダプターの構成スキーマでの使用を以下に示すようできます。 次のコードは、スキーマのインポート方法を示しています。  
+# <a name="enabling-adapter-framework-configuration-extensions"></a>アダプター フレームワーク構成拡張機能を有効にします。
+BizTalk アダプター フレームワークは、ユーザー エクスペリエンスを向上させるためにいくつかの拡張機能を提供します。 これらの拡張機能を使用するには、フレームワークのスキーマ、BiztalkAdapterFramework.xsd をインポートします。 スキーマをインポートする、文字装飾および特化された型にアクセスして、アダプターの構成のスキーマで使用する以下に示すようできます。 次のコードでは、スキーマをインポートする方法を示します。  
   
 ```  
 <?xml version="1.0" encoding="utf-8" ?><xs:schema   targetNamespace="http://tempuri.org/XMLSchema.xsd"   
@@ -33,10 +33,10 @@ ms.locfileid: "25970152"
 </xs:schema>  
 ```  
   
-## <a name="importing-the-biztalk-adapter-framework-extensions-schema-xsd"></a>BizTalk アダプター フレームワークの拡張機能スキーマ XSD のインポート  
- アダプター フレームワークの拡張機能スキーマ XSD をインポートする装飾など、使用できる\<baf:FileName\>要素の種類を示すファイル名ポップアップ要素を編集するとき。  
+## <a name="importing-the-biztalk-adapter-framework-extensions-schema-xsd"></a>BizTalk アダプター フレームワークの拡張機能スキーマ XSD をインポートします。  
+ アダプター フレームワークの拡張機能スキーマ XSD をインポートすることによって、使用できる文字装飾など\<baf:FileName\>として要素の型を示すファイル名ポップアップ要素を編集するときにします。  
   
- さらに装飾を追加して、インターフェイス内のプロパティ表示を制御できます。 \<Baf:description\>装飾はたとえば、要素にヘルプ テキストを追加します。 \<Baf:description\>装飾には、プロパティ ページの下部にあるテキストが表示されます。 \<Baf: ブラウズ\>装飾には、インターフェイスから要素が非表示にします。 次のコードは、このような要素を構成スキーマで使用する方法を示しています。  
+ さらに装飾では、インターフェイスのプロパティの表示を制御します。 \<Baf:description\>装飾はたとえば、要素にヘルプ テキストを追加します。 \<Baf:description\>装飾には、プロパティ ページの下部にあるテキストが表示されます。 \<Baf: ブラウズ\>装飾には、インターフェイスから要素が非表示にします。 次のコードは、構成スキーマ内でこれらの要素を使用する方法を示しています。  
   
 ```  
 <?xml version="1.0" encoding="utf-8" ?><xs:schema   targetNamespace="http://tempuri.org/XMLSchema.xsd"   

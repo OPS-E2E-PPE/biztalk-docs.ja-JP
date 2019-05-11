@@ -1,5 +1,5 @@
 ---
-title: アプリケーションのテスト |Microsoft ドキュメント
+title: アプリケーションのテスト |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a478bc18ad482c1c132ecac79274d9deb2de0365
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1cac8a979a3d49e7910dd34a40eefca0210d2cad
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22302610"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65401202"
 ---
 # <a name="testing-an-application"></a>アプリケーションのテスト
-テストおよびデバッグのためにテスト環境に BizTalk アプリケーションのアイテムを展開する手順については、次を参照してください。 [BizTalk アプリケーション展開のテスト タスク](http://go.microsoft.com/fwlink/?LinkID=154825)(http://go.microsoft.com/fwlink/?LinkID=154825)。
+テストとデバッグ用のテスト環境に BizTalk アプリケーションのアイテムを展開する手順については、次を参照してください。 [BizTalk アプリケーション展開のテスト タスク](http://go.microsoft.com/fwlink/?LinkID=154825)(http://go.microsoft.com/fwlink/?LinkID=154825)します。

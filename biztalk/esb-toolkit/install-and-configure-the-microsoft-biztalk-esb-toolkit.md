@@ -13,18 +13,18 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 698843f7-8361-4d02-9278-0e66f2a9f472
 ms.author: mandia
-ms.openlocfilehash: 7018a6bfa9d55b58cadfa9b808d7c295f88a2c0d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1672b3c2afd7dbca1f1843dedea81111a0a5a6a2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36981379"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65400315"
 ---
 # <a name="install-and-configure-the-microsoft-biztalk-esb-toolkit"></a>インストールして、Microsoft BizTalk ESB Toolkit の構成
 以降では、BizTalk Server 2013 および新しいバージョンの[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]と統合されて、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]セットアップします。 このトピックでは、インストールして構成する方法を示します[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]、ESB Toolkit をアップグレードするコミュニティによって記述されたリンクも含まれています。  
   
 > [!IMPORTANT]
->  [!INCLUDE[esbToolkit_short](../includes/esbtoolkit-short-md.md)] のインストールを始める前に、BizTalk Server をインストールしておく必要があります。  
+>  BizTalk Server のインストールを開始する前にインストールする必要があります、[!INCLUDE[esbToolkit_short](../includes/esbtoolkit-short-md.md)]します。  
   
 ## <a name="install"></a>インストール 
   
@@ -32,18 +32,18 @@ ms.locfileid: "36981379"
   
 2. ライセンス条項に同意し、**次**します。  
   
-3. **[コンポーネントのインストール]** で、インストールするコンポーネントを選択し、**[次へ]** を選択します。  
+3. **コンポーネントのインストール**をインストールして、選択するコンポーネントを選択して**次**します。  
   
 4. **概要**、確認を選択して確認し、**インストール**します。  
   
-5. **[完了]** を選択して、インストール ウィザードを終了します。  
+5. 選択**完了**インストール ウィザードを終了します。  
 
 インストール ログ ファイルが作成されます、' C:\Users\yourUserName\AppData\Local\Temp\Setup(081017 175042).htm' に似ています。 
   
 ## <a name="configure"></a>[構成] 
   
 > [!IMPORTANT]
->  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を構成する前に、[!INCLUDE[esbToolkit_short](../includes/esbtoolkit-short-md.md)] を構成する必要があります。  
+>  構成する必要があります[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]構成する前に[!INCLUDE[esbToolkit_short](../includes/esbtoolkit-short-md.md)]します。  
   
 1. **開始**メニューの **Microsoft [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]** 、し、 **ESB 構成ツール**です。  
   
@@ -78,19 +78,19 @@ ms.locfileid: "36981379"
 7. 左側のウィンドウで次のように選択します。**構成**します。  
    インストールして構成する場合、 [!INCLUDE[esbToolkit_short](../includes/esbtoolkit-short-md.md)] 、1 台のサーバー環境で次のように選択します。**ファイル構成ソース**します。 複数コンピューターの展開をセットアップする場合は、選択、 **SSO 構成ソース**、次を入力します。  
   
-   -   **SSO サーバー**: SSO サーバーの名前を入力します。
+   -   **SSO サーバー**:SSO サーバーの名前を入力します。
   
-   -   **構成ファイル**: 省略記号を選択 **([...])**、し esb.config ファイル (\Program Files (x86) \Microsoft BizTalk ESB Toolkit) を参照
+   -   **構成ファイル**:省略記号を選択 **([...])**、し esb.config ファイル (\Program Files (x86) \Microsoft BizTalk ESB Toolkit) を参照
   
-   -   **アプリケーション名**: SSO アプリケーションの名前を入力します。 たとえば、入力`ESB Toolkit`します。  
+   -   **アプリケーション名**:SSO アプリケーションの名前を入力します。 たとえば、入力`ESB Toolkit`します。  
   
-   -   **連絡先情報**: 次の形式で有効な電子メール アドレス、適切な連絡先情報を入力します:`someone@example.com`します。  
+   -   **連絡先情報**:次の形式で有効な電子メール アドレス、適切な連絡先情報を入力します:`someone@example.com`します。  
   
-   -   **管理者グループ名**: 省略記号を選択 **([...])**、適切な管理グループを参照  
+   -   **管理者グループ名**:省略記号を選択 **([...])**、適切な管理グループを参照  
   
-   -   **ユーザー グループ名**: 省略記号を選択 **([...])**、適切なグループを参照  
+   -   **ユーザー グループ名**:省略記号を選択 **([...])**、適切なグループを参照  
 
-8. 選択**構成の適用**します。 IIS を開き、[!INCLUDE[esbToolkit_short](../includes/esbtoolkit-short-md.md)] に必要なアプリケーションが、[!INCLUDE[esbToolkit_short](../includes/esbtoolkit-short-md.md)] の構成で指定した Web サイトに作成されていることを確認します。  
+8. 選択**構成の適用**します。 IIS を開き、アプリケーションに必要なことに注意してください。[!INCLUDE[esbToolkit_short](../includes/esbtoolkit-short-md.md)]を構成するときに指定した web サイトの下に作成されます。[!INCLUDE[esbToolkit_short](../includes/esbtoolkit-short-md.md)]します。  
   
 9. **ESB 構成ツール**を選択します**ESB BizTalk アプリケーション**をクリックします。  
   
@@ -98,10 +98,10 @@ ms.locfileid: "36981379"
   
    - 選択**BizTalk Server で ESB JMS/WMQ コンポーネントを有効にする**でアプリケーションを作成する、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソール。 選択**既定のバインドを使用して**このアプリケーションを既定のホストにバインドします。 選択**既定のバインドを使用しない**アプリケーションを既定のホストにバインドしたくない場合。 このシナリオでは、アプリケーションが作成されると、ホストにアプリケーションを明示的にバインドする必要があります。  
   
-   - 選択**構成の適用**選択したアプリケーションを作成します。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールでアプリケーションが作成されたことを確認します。  
+   - 選択**構成の適用**選択したアプリケーションを作成します。 アプリケーションが作成されていることを確認、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソール。  
   
 ## <a name="upgrade-esb-toolkit--community-addition"></a>ESB Toolkit – コミュニティからの追加をアップグレードします。  
  [インプレース ESB Toolkit 2.1 の 2.2 へのアップグレード](http://www.brianloesgen.com/blog/2013/10/10/in-place-upgrade-of-esb-toolkit-21-to-22.html)(http://www.brianloesgen.com/blog/2013/10/10/in-place-upgrade-of-esb-toolkit-21-to-22.html)
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 [インストールの問題、および一般的なエラー & 解像度をトラブルシューティングします。](troubleshooting-the-biztalk-esb-toolkit.md)

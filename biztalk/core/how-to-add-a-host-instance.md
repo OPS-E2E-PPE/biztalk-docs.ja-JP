@@ -12,19 +12,19 @@ caps.latest.revision: 27
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c95dc019d1d6ed885d195f0c871fd91178b9a58a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 072aa728eddf99c62fe83ed19e3fef82ba3f612a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37006819"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65387422"
 ---
 # <a name="add-a-host-instance"></a>ホスト インスタンスを追加します。
 
 ## <a name="overview"></a>概要
-[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールまたは Windows Management Instrumentation (WMI) を使用すると、ホスト インスタンスを追加できます。 しかし、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では一度に 1 つのサーバーにしかホスト インスタンスを追加できません。 ホスト インスタンスの詳細については、[ホスト インスタンス](../core/host-instances.md)を参照してください。 WMI を使用して、ホスト インスタンスを追加する方法については、**MSBTS_HostInstance (WMI)** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]を参照してください。
+[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールまたは Windows Management Instrumentation (WMI) を使用すると、ホスト インスタンスを追加できます。 しかし、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では一度に 1 つのサーバーにしかホスト インスタンスを追加できません。 ホスト インスタンスの詳細については、次を参照してください。[ホスト インスタンス](../core/host-instances.md)します。 WMI を使用して、ホスト インスタンスを追加する方法については、次を参照してください。 **MSBTS_HostInstance (WMI)** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]します。
   
- ホスト インスタンスを追加すると、そのホストのインスタンスは BizTalk Server のインスタンスにマップされます。 既存のホスト インスタンスを修復する必要がある場合は、ホスト インスタンスのプロパティを更新できます。 既存のホスト インスタンスを再度追加するには、インスタンスを停止する必要があります。 ホスト インスタンスの停止については、[ホスト インスタンスを停止する方法](../core/how-to-stop-a-host-instance.md)を参照してください。  
+ ホスト インスタンスを追加すると、そのホストのインスタンスは BizTalk Server のインスタンスにマップされます。 既存のホスト インスタンスを修復する必要がある場合は、ホスト インスタンスのプロパティを更新できます。 既存のホスト インスタンスを再度追加するには、インスタンスを停止する必要があります。 ホスト インスタンスの停止については、次を参照してください。[ホスト インスタンスを停止する方法](../core/how-to-stop-a-host-instance.md)します。  
   
 > [!NOTE]
 >  サポート技術情報資料 184802「User32.dll または Kernel32.dll の初期化に失敗」で利用可能な手順が従う必要があります詳細 26 のホスト インスタンスを作成する場合は、 [ http://go.microsoft.com/fwlink/?LinkId=26176](http://go.microsoft.com/fwlink/?LinkId=26176)します。 このサポート技術情報の資料に記載されている内容を反映した後で、ホスト インスタンスを追加する必要がある場合は、BTSNTSvc サービスの各インスタンスに割り当てるメモリ量を減らしてみてください。 メモリ量を減らすことによって、追加のインスタンスを作成するのに必要なメモリを提供できます。  
@@ -68,7 +68,7 @@ ms.locfileid: "37006819"
    |**構成**|表示するをクリックして、**ログオン資格情報**] ダイアログ ボックスの [アカウント名とホスト インスタンスを実行するアカウントのパスワードを入力できます。|  
    |**ホスト インスタンスの開始を無効にします。**|選択したホストの状態を有効から無効に変更する場合、このチェック ボックスをオンにします。 ホスト インスタンスを開始せずに設定を保持する場合は、インスタンスを無効にすると便利です。|  
   
-   ホスト インスタンスをインストールしたら、インスタンスを再起動して、メッセージがメッセージ ボックス データベースにルーティングされるようにする必要があります。 ホスト インスタンスの開始方法の詳細については、[ホスト インスタンスを開始する方法](../core/how-to-start-a-host-instance.md)を参照してください。  
+   ホスト インスタンスをインストールしたら、インスタンスを再起動して、メッセージがメッセージ ボックス データベースにルーティングされるようにする必要があります。 ホスト インスタンスの開始方法の詳細については、次を参照してください。[ホスト インスタンスを開始する方法](../core/how-to-start-a-host-instance.md)します。  
   
 ## <a name="known-issues"></a>既知の問題  
   

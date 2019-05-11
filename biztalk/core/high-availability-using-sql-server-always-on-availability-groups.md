@@ -13,12 +13,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d163c035cdf45ede600509783040114a0eaa0a2b
-ms.sourcegitcommit: 1f0306e812c95dc32c4496345c19f141612cb2c1
+ms.openlocfilehash: 42109ed9180cf7f8bbb0946846ee12795c34b4e8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37913859"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65387615"
 ---
 # <a name="high-availability-using-sql-server-always-on-availability-groups---biztalk-server"></a>SQL Server Always On 可用性グループの BizTalk Server を使用して高可用性
 SQL Server AlwaysOn 可用性グループを使用して高可用性を構成します。
@@ -68,7 +68,7 @@ BizTalk Server データベースが次の 4 つの SQL Server インスタン�
  
 | Instance |ロール |そのグループ内の BizTalk データベース  |
 |--- | --- | ---|
-|1 |[認証] |SSODB|
+|1 |認証 |SSODB|
 |2 |管理 |BizTalkMgmtDb| 
 |3 |ランタイム |BizTalkMsgBoxDb<br/> BizTalkRulesEngineDb<br/> BAMPrimaryImport<br/>BAMStarSchema <br/>BAMAlertsApplication |
 |4 |Tracking |BizTalkDTADb<br/>EsbItineraryDb<br/>EsbExceptionDb | 
@@ -92,7 +92,7 @@ BizTalk Server の構成と SQL Server データベース、SQL Server セキュ
 1. BizTalk アプリケーション ユーザーが (各インプロセス ホストに対応する 1 つまたは複数) 
 2. BizTalk 分離ホスト ユーザー (分離ホストごとに対応する 1 つまたは複数) 
 3. BizTalk Server 管理者 
-4. [BizTalk Server B2B Operators] 
+4. BizTalk Server B2B Operators 
 5. BizTalk Server オペレータ 
 6. SSO 管理者 
 7. BAM 警告ユーザー 
@@ -101,12 +101,12 @@ BizTalk Server の構成と SQL Server データベース、SQL Server セキュ
 
 追加のホストを作成した後で追加のホストを作成するか、このプロセスの一環として作成された新しい SQL ログインがあります。 対応するレプリカに手動でこれらの SQL ログインを作成することを確認しておく必要があります。
 
-以下の SQL Server エージェント ジョブが BizTalk Server と関連付けられています。 各サーバーにインストールされるジョブは、インストールされて構成されている機能によって異なります。 これらのジョブのほとんどは、BizTalk Server の構成中に作成されます。 ログ配布の構成を行う際に作成されるものもあります。 これらのジョブは、対応する BizTalk データベースの SQL Server ホストのレプリカの各インスタンスにレプリケートする必要があります。 これは手動で実行する必要があります。 
+次の SQL Server エージェント ジョブは、BizTalk Server に関連付けられます。 各サーバーにインストールされているジョブは、どの機能がインストールされ、構成によって異なります。 これらのジョブのほとんどは、BizTalk Server の構成中に作成されます。 ログ配布を構成するときにいくつか作成されます。 これらのジョブは、対応する BizTalk データベースの SQL Server ホストのレプリカの各インスタンスにレプリケートする必要があります。 これは手動で実行する必要があります。 
 
 - BizTalkMgmtDb ジョブ: 
-    - BizTalk Server のバックアップ (BizTalkMgmtDb) 
+    - BizTalk Server (BizTalkMgmtDb) のバックアップします。 
     - CleanupBTFExpiredEntriesJob_BizTalkMgmtDb 
-    - BizTalk Server の監視 (BizTalkMgmtDb) 
+    - BizTalk Server (BizTalkMgmtDb) の監視します。 
 - BizTalkMsgBoxDb ジョブ: 
     - MessageBox_DeadProcesses_Cleanup_BizTalkMsgBoxDb 
     - MessageBox_Message_Cleanup_BizTalkMsgBoxDb
@@ -121,7 +121,7 @@ BizTalk Server の構成と SQL Server データベース、SQL Server セキュ
     - DTA Purge and Archive (BizTalkDTADb) 
 - BizTalkRulesEngineDb ジョブ: 
     - Rules_Database_Cleanup_BizTalkRuleEngineDb 
-- BAMAlertsApplication ジョブ: 
+- BAMAlertsApplication job: 
     - 0 または複数の DelAlertHistJob 
 
 異なり SQL フェールオーバー クラスタ リングのインスタンスでは、可用性グループですべてのレプリカはアクティブ、実行中、および使用できます。 SQL エージェント ジョブが各レプリカのフェールオーバーで重複しているときにするかどうかは、現在プライマリ ロールまたはセカンダリ ロールに関係なく、対応するレプリカに対して実行されます。 これらのジョブが現在プライマリ レプリカでのみ実行されるようにするに示すようにすべての手順では、すべてのジョブ、IF ブロックで囲む必要があります。 
@@ -208,7 +208,7 @@ BizTalk Server の構成と SQL Server データベース、SQL Server セキュ
 12. ターゲットがプライマリである場合にのみを実行するかどうかを確認する IF ブロック内では、SQL エージェント ジョブ ステップの本文を囲みます。 
 13. これらを対応するレプリカにレプリケートするには、ログインと SQL エージェント ジョブのスクリプトを作成します。 UpdateDatabase スクリプトでは、Operations_OperateOnInstances_OnMaster_BizTalkMsgBoxDb および TrackedMessages_Copy_BizTalkMsgBoxDb ジョブ内のサーバー名も更新されます。 そのスクリプト UpdateDatabase スクリプトを実行した後にのみ、SQL エージェント ジョブ。 
 
-## <a name="requirements"></a>要件 
+## <a name="requirements"></a>必要条件 
 * BizTalk Server 2016 Enterprise
 * SQL Server 2016 Enterprise または SQL Server 2016 Standard (を参照してください**既知の制限**このトピックの)
 * Windows Server 2012 R2 または Windows Server 2016 
@@ -254,7 +254,7 @@ BizTalk データベースのバックアップ ジョブに他の BizTalk デ�
 * [AlwaysOn 可用性グループ (SQL Server) の概要](https://msdn.microsoft.com/library/ff877884.aspx)  
 * [データベース ミラーリングまたは AlwaysOn 可用性グループ (SQL Server) のデータベースにまたがるトランザクションのサポート](https://msdn.microsoft.com/library/ms366279.aspx)  
 * [SQL Server Windows Server 2012 R2 での MSDTC からトランザクションの結果を受信すると、reenlist を呼び出すことができません。](https://support.microsoft.com/kb/3090973)  
-* [BizTalk Server データベースのバックアップと復元](../core/backing-up-and-restoring-biztalk-server-databases.md)  
+* [バックアップおよび BizTalk Server データベースを復元します。](../core/backing-up-and-restoring-biztalk-server-databases.md)  
 * [BizTalk Server データベースを移動する方法](../core/how-to-move-the-biztalk-server-databases.md)  
 * [データベースを復元する方法](../core/how-to-restore-your-databases.md)   
 * [マルチ サブネット可用性グループ内の接続のタイムアウト](https://blogs.msdn.microsoft.com/alwaysonpro/2014/06/03/connection-timeouts-in-multi-subnet-availability-group/)  

@@ -1,5 +1,5 @@
 ---
-title: エラー - の 2 番目の入力テーブル抽出 Functoid 有効 |Microsoft ドキュメント
+title: エラー - の 2 番目の入力テーブル抽出 Functoid へ有効 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,27 +14,27 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5e674ad6777ebff53fefe053e1b6af46ebc54ef3
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 3c53e84e62422a70214a4cfd90979de85538e158
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25970680"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65388435"
 ---
-# <a name="error---second-input-for-table-extractor-functoid-not-valid"></a>エラー - の 2 番目の入力テーブル抽出 Functoid 有効
+# <a name="error---second-input-for-table-extractor-functoid-not-valid"></a>エラー - の 2 番目の入力テーブル抽出 Functoid へ無効です
 **エラー コード**  
   
  btm1073  
   
  **説明**  
   
- 2 番目の入力パラメーターを関連する**テーブル抽出**functoid が有効ではありません。 このパラメーターは、テーブル ループ グリッドの構成で有効な列を示す正の整数定数である必要があります、**テーブル ループ**最初の入力パラメーターで示されている functoid です。  
+ 2 番目の入力パラメーターを関連する**テーブル抽出**functoid が無効です。 このパラメーターは、テーブル ループ グリッド用に構成された有効な列を示す正の整数定数である必要があります、**テーブル ループ**functoid の最初の入力パラメーターで示されます。  
   
  **ユーザーの操作**  
   
- 関連するへの入力パラメーターを確認してください**テーブル抽出**functoid を使用してアクセスその**入力パラメーター**プロパティおよび**構成\<Functoid\>Functoid**  ダイアログ ボックスでは、次の表に示すようにします。  
+ 入力パラメーターを関連することを確認**テーブル抽出**functoid を使用してアクセスその**入力パラメーター**プロパティおよび**構成\<Functoid\>Functoid**ダイアログ ボックスでは、次の表に示すようにします。  
   
-|テーブル抽出 Functoid の入力パラメーター番号|Description|  
+|テーブル抽出 functoid の入力パラメーター番号|説明|  
 |-----------------------------------------------------|-----------------|  
-|1|リンク、**テーブル ループ**この functoid**テーブル抽出**functoid は、2 番目のパラメーターによって示される列のデータをプルします。|  
-|2|構成データ テーブル内の有効な列の数、**テーブル ループ グリッド**のプロパティ、**テーブル ループ**functoid の最初の入力パラメーターで指定します。|
+|1|リンク、**テーブル ループ**元である functoid**テーブル抽出**functoid が 2 番目のパラメーターで示されている列のデータをプルします。|  
+|2|使用して構成データのテーブルで有効な列の数、**テーブル ループ グリッド**のプロパティ、**テーブル ループ**functoid の最初の入力パラメーターで指定します。|

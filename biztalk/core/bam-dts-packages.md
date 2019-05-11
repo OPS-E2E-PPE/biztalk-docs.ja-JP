@@ -15,12 +15,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1e49741a0fce6fd69e4e2ba5d8bb8dbd1956a0e8
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 30cbcb583f1e175f5d65565c2108361ec9121721
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37015851"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65528886"
 ---
 # <a name="bam-dts-packages"></a>BAM DTS パッケージ
 管理者は、次の BAM DTS パッケージのパラメーターを更新できます。  
@@ -29,26 +29,26 @@ ms.locfileid: "37015851"
   
 - **DataMaintenance** DTS パッケージは、プライマリ インポート データベースと同じサーバー上にある常にします。  
   
-  DTS パッケージでは、BAMConfiguration.xml ファイルで次のパラメーターを使用します。  
+  DTS パッケージは、BAMConfiguration.xml ファイルで、次のパラメーターを使用します。  
   
 |パラメーター|説明|  
 |---------------|-----------------|  
-|ConnectionTimeOut|DTS 接続のタイムアウト値 (秒単位) を整数で指定します。 ConnectionTimeOut パラメーターを指定しないと、構成ファイルでは既定値の 60 秒が使用されます。|  
-|暗号化|DTS パッケージによるデータの変換中、既定ではデータが暗号化されません (Encryption の値は 0 です)。 変換中にデータを暗号化するには Encryption の値を 1 に設定します。|  
-|OwnerPassword|DTS パッケージ所有者のパスワードを指定します。 DTS パッケージの所有者は、DTS パッケージを開いて変更できます。 DTS パッケージの所有者の詳細については、SQL Server Books Online を参照してください。|  
-|UserPassword|DTS パッケージ ユーザーのパスワードを指定します。 DTS パッケージのユーザーは、DTS パッケージを実行できます。 DTS パッケージのユーザーの詳細については、SQL Server Books Online を参照してください。|  
+|ConnectionTimeOut|DTS 接続のタイムアウト値 (秒) では、整数です。 ConnectionTimeOut パラメーターを省略した場合、構成ファイルには、60 秒で、既定値が使用されます。|  
+|暗号化|既定では、DTS パッケージはデータは暗号化データの変換中に (暗号化値は 0)。 変換中にデータを暗号化するには 1 には、暗号化を設定します。|  
+|OwnerPassword|DTS パッケージの所有者のパスワード。 DTS パッケージの所有者が開き、DTS パッケージを変更できます。 DTS パッケージの所有者の詳細については、SQL Server オンライン ブックを参照してください。|  
+|UserPassword|Dts パッケージ ユーザーのパスワード。 DTS パッケージのユーザーには、DTS パッケージを実行できます。 DTS パッケージのユーザーについては、SQL Server オンライン ブックを参照してください。|  
   
- DTS パッケージは、BAMConfiguration.xml ファイルで次の名前付け規則を使用します。  
+ DTS パッケージは、BAMConfiguration.xml ファイルで、次の名前付け規則を使用します。  
   
 - **CubeUpdate** DTS パッケージ  
   
-   **bam_an _\<**  ***CubeName* \>** CubeName はキューブの名前です。 BAM ブックでは、ビュー名からキューブ名が生成されます。 BAM 構成 XML ドキュメントでキューブ名を変更した場合、新しいキューブ名が DTS パッケージ名に使用されます。  
+   **bam_an _\<**  ***CubeName* \>** CubeName はキューブの名前です。 BAM ブックでは、ビュー名からキューブ名を生成します。 BAM 構成 XML ドキュメントでキューブ名を変更する場合、新しいキューブ名は、DTS パッケージ名に使用されます。  
   
 - **DataMaintenance** DTS パッケージ  
   
    **bam_dm _\<**  ***ActivityName* \>** ActivityName はアクティビティの名前です。  
   
-  スケジュール済みの集計を集計するには、CubeUpdate DTS パッケージを実行します。 次のセクションでは、リアルタイムのデータ集計の時間帯を指定できます。  
+  スケジュール済みの集計を集計する CubeUpdate DTS パッケージを実行するとします。 次のセクションでは、リアルタイムのデータ集計の時間枠を指定できます。  
   
 ## <a name="see-also"></a>参照  
  [BAM 構成スキーマ](../core/bam-configuration-schema.md)   

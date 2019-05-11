@@ -12,14 +12,14 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 252da9de050c228a7b2d8a4f549d2d084e2a2f81
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5db094dafd795b27095179b38c55e81bc36d44be
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36978707"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65294941"
 ---
-# <a name="portal-alerts-page"></a>[ポータル警告] ページ
+# <a name="portal-alerts-page"></a>ポータルのアラート ページ
 図 1 は、アラート ページで、2 つのセクションを示しています。  
 
 - メインのセクションでは、新しいアラートと、既存のアラートの一覧を作成するリンクが表示されます。 各アラートには、アラートにサブスクライブすることができますを対応するリンクがあります。 アラートの詳細を表示、警告の新しいサブスクリプションを作成およびアラートを削除するアクション列のアイコンをクリックすることもできます。  

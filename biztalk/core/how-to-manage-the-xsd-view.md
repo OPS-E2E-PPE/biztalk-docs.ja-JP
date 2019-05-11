@@ -12,39 +12,39 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9e38707d25355b8ee46a653971b459f1f799614b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6aa052fffcb50854b43cd8b1df169c026e4c0320
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37004219"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65384608"
 ---
-# <a name="how-to-manage-the-xsd-view"></a>XSD ビューの管理方法
+# <a name="how-to-manage-the-xsd-view"></a>XSD ビューを管理する方法
 に関しては、XSD ビューの管理タスクは、3 種類に分けることができます。 そのサイズを変更する、その背景色とフォントの変更、および更新特性を変更します。  
   
- 特に更新特性の変更はスキーマの規模が大きい場合に有用です。スキーマの規模が大きいと、自動更新に時間かかる場合があるためです。 このような場合は、自動 (連続) 更新を無効にし、必要に応じて手動で XSD ビューを更新できます。  
+ 更新特性の変更、後者に分類が最も役に立つ更新が望ましくない遅延を引き起こす可能性がありますの自動の大規模なスキーマを使用する場合。 このような場合、自動 (連続) 更新を無効にし、代わりに、必要に応じて手動で XSD ビューを更新できます。  
   
- このトピックでは、これらの作業手順について説明します。  
+ このトピックでは、これらのタスクの詳細な手順を説明します。  
   
 ### <a name="to-make-the-xsd-view-taller-or-shorter"></a>XSD ビューのサイズを垂直方向に変更するには  
   
-1. XSD ビューとスキーマ ツリー ビューが並んで表示されている Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] のメイン編集ウィンドウで、マウス ポインターをウィンドウの下枠に移動すると、カーソルのアイコンが、ウィンドウのサイズを垂直方向に変更する標準的なアイコンに変わります。  
+1. Microsoft の下端にマウス ポインターを移動[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]メイン編集ウィンドウが標準的なウィンドウの垂直方向サイズ変更アイコンにカーソルが変更されるまで、XSD ビューのサイドとスキーマ ツリー ビューが表示されます。  
   
-2. マウスの左ボタンをクリックし、ボタンを押しながらウィンドウの下枠を上または下にドラッグします。  
+2. クリックし、マウスの左ボタンを押したままおよび上または下のウィンドウの端をドラッグします。  
   
-    メイン編集ウィンドウ全体を垂直方向にサイズ変更することにより、XSD ビューを垂直方向にサイズ変更できます。  
+    メイン編集ウィンドウ全体を垂直方向にサイズ変更によって、XSD ビューのサイズを変更できますが垂直方向に。  
   
-### <a name="to-make-the-xsd-view-wider-or-more-narrow"></a>XSD ビューのサイズを水平方向に変更するには  
+### <a name="to-make-the-xsd-view-wider-or-more-narrow"></a>XSD ビューの水平方向にサイズ変更するには  
   
-1. [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] のメイン編集ウィンドウで、マウス ポインターをペイン分割バー (XSD ビューとスキーマ ツリー ビューを区切る線) に移動すると、カーソルのアイコンが、ウィンドウのサイズを水平方向に変更する標準的なアイコンに変わります。  
+1. ペインの区切り線にマウス ポインターを移動、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]メイン編集ウィンドウで、カーソルは、標準のウィンドウ アイコンのサイズを水平方向に変更されるまでに、スキーマ ツリー ビューから、XSD ビューを分割します。  
   
-2. マウスの左ボタンをクリックし、ボタンを押しながらペインの端を左 (広くする) または右 (狭くする) にドラッグします。  
+2. クリックして、マウスの左 (狭くする) ボタンと左 (広くする) か、右ペインの端をドラッグします。  
   
-    メイン編集ウィンドウ内でスキーマ ツリー ビューと XSD ビューが占める割合を水平方向に変更することにより、XSD ビューを水平方向にサイズ変更できます。  
+    XSD ビューがスキーマ ツリー ビューを基準に、メイン編集ウィンドウの量を変更することで、XSD ビューのサイズを変更してが水平方向にします。  
   
-    また、メイン編集ウィンドウ全体を水平方向にサイズ変更することによって、XSD ビューの幅を変更することもできます。  
+    メイン編集ウィンドウ全体を水平方向にサイズ変更によって、XSD ビューの幅を広げたり狭めたりを行うことができます。  
   
-### <a name="to-change-the-background-color-andor-font-used-by-the-xsd-view"></a>XSD ビューで使用される背景色/フォントを変更するには  
+### <a name="to-change-the-background-color-andor-font-used-by-the-xsd-view"></a>背景色/XSD ビューで使用されるフォントを変更するには  
   
 1. [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]で、 **[ツール]** メニューの **[オプション]** をクリックします。  
   
@@ -54,20 +54,20 @@ ms.locfileid: "37004219"
   
     アクセス、**フォント**、省略記号を使用して、ダイアログ ボックス (**.**) ボタンの右端にある、 **XSD ビューのフォント**プロパティ値ボックス。  
   
-### <a name="to-turn-automatic-refresh-of-the-xsd-view-on-and-off"></a>XSD ビューの自動更新をオン/オフにするには  
+### <a name="to-turn-automatic-refresh-of-the-xsd-view-on-and-off"></a>XSD ビューの自動更新を有効または無効にする  
   
 -   BizTalk エディターでは、下、 **XSD** ] タブで [**自動更新をオフに**または**自動更新を有効**。  
   
-     自動更新がオフの場合、XSD ビューには何も表示されません。  
+     自動更新がオフの場合は、XSD ビューが空白です。  
   
     > [!IMPORTANT]
-    >  既定では、自動更新はオンになっています。 スキーマは、その規模が大きくなるにつれて、更新に時間がかかるようになります。更新時間が長すぎる場合は、自動更新機能をオフにし、必要に応じてスキーマを手動で更新する必要があります。  
+    >  既定で自動更新はオンです。 スキーマし、自動更新機能をオフにし、スキーマを必要に応じて手動で更新することがますます重要になりますが大きく、します。  
   
 ### <a name="to-manually-refresh-the-xsd-view"></a>XSD ビューを手動で更新するには  
   
 -   **BizTalk**  メニューのをクリックして**XSD の更新**します。  
   
-     XSD ビューが更新され、スキーマ ツリーに対して行ったすべての変更が反映されます。  
+     XSD では、スキーマ ツリーに対して行った変更を反映して更新プログラムを表示します。  
   
     > [!NOTE]
     >  クリックして、XSD ビューを更新することができますも手動で**XSD の更新**かをクリックして、スキーマ ツリー内のすべてのノードに関連付けられているショートカット メニューで、**更新**以下のリンク、 **XSD** XSD ビュー タブで。  

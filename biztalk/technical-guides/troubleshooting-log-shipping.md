@@ -1,5 +1,5 @@
 ---
-title: ログ配布のトラブルシューティング |Microsoft ドキュメント
+title: ログ配布のトラブルシューティング |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,26 +12,26 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 499ad4da5949b9430d668cb4a91f0ccc84bdc36b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5a1ca142826a325e4333d8d7372206545909501e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22301818"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65400620"
 ---
 # <a name="troubleshooting-log-shipping"></a>ログ配布のトラブルシューティング
-このセクションの内容に関連するトラブルシューティングのシナリオの説明[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ログ配布します。  
+このセクションに関連するトラブルシューティングのシナリオを説明します[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ログ配布します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
 -   [復元プロセスのギャップ](../technical-guides/gaps-in-the-restore-process.md)  
   
--   [バックアップ セットの一部](../technical-guides/partial-backup-sets.md)  
+-   [部分バックアップ セット](../technical-guides/partial-backup-sets.md)  
   
--   [バックアップ ファイルが壊れています](../technical-guides/corrupt-backup-files.md)  
+-   [破損したバックアップ ファイル](../technical-guides/corrupt-backup-files.md)  
   
--   [展開先の環境のクリーンアップ](../technical-guides/cleaning-the-destination-environment.md)  
+-   [対象環境のクリーンアップ](../technical-guides/cleaning-the-destination-environment.md)  
   
--   [送信先システムを復元した後ログインの問題を解決します。](../technical-guides/resolving-login-issues-after-restoring-the-destination-system.md)  
+-   [対象システムを復元した後に発生するログインの問題の解決](../technical-guides/resolving-login-issues-after-restoring-the-destination-system.md)  
   
 -   [分散システムの問題](../technical-guides/distributed-system-problems.md)

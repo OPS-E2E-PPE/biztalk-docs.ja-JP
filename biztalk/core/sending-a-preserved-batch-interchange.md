@@ -12,18 +12,18 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1fe98e5547501717c952e54f9be5a4d2f82a23bb
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 327ef8db3042199cc541d53402ea25c8d36b4a06
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37015763"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399082"
 ---
 # <a name="sending-a-preserved-batch-interchange"></a>保存されたバッチ インターチェンジの送信
 EDI 送信パイプラインが保存された送信バッチ インターチェンジを処理するとき、バッチ インターチェンジ全体を処理します。 EDI インターチェンジを作成する場合、通常、アグリーメントに基づいてエンベロープを適用するのではなく、既存のエンベロープ (制御) セグメントを再利用します。 これが発生したときに、**受信バッチ処理オプション**プロパティに設定されて**インターチェンジの保存 - エラーでインターチェンジを中断**または **- インターチェンジの保存時にトランザクション セットを中断エラー**します。  
   
 ## <a name="schema-validation"></a>スキーマの検証  
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は、保存されたバッチのエンベロープを、バッチ スキーマとサービス スキーマを使用して検証します。 保存されたメッセージのルート ノードの検証にはバッチ スキーマが使用され、インターチェンジ、グループ、およびトランザクション セットのヘッダーとトレーラーの検証にはサービス スキーマが使用されます。 バッチ スキーマの詳細については、[EDI のバッチ スキーマ](../core/edi-batch-schemas.md)を参照してください。 サービス スキーマの詳細については、[EDI サービスと管理スキーマ](../core/edi-service-and-control-schemas.md)を参照してください。  
+ [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は、保存されたバッチのエンベロープを、バッチ スキーマとサービス スキーマを使用して検証します。 保存されたメッセージのルート ノードの検証にはバッチ スキーマが使用され、インターチェンジ、グループ、およびトランザクション セットのヘッダーとトレーラーの検証にはサービス スキーマが使用されます。 バッチ スキーマの詳細については、次を参照してください。 [EDI のバッチ スキーマ](../core/edi-batch-schemas.md)します。 サービス スキーマの詳細については、次を参照してください。 [EDI サービスと管理スキーマ](../core/edi-service-and-control-schemas.md)します。  
   
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は、バッチ インターチェンジ内のドキュメントを、プロジェクト内のドキュメント スキーマを使用して検証します。  
   
@@ -36,12 +36,12 @@ EDI 送信パイプラインが保存された送信バッチ インターチェ
   
 - (カスタム コンポーネントに) 保存されているインターチェンジで `EDI.PopulateInterchangeValues` コンテキスト プロパティを True に昇格させると、送信ポートの EDI アセンブラーによって、アグリーメントのプロパティに設定されている値に対してインターチェンジ、グループ、およびトランザクション セットのヘッダーが設定されます。  
   
-- 送信パイプラインによって処理される前にインターチェンジの `EDIOverride.OverrideEdiHeader` コンテキスト プロパティを "True" に昇格させると、適切な `EDIOverride` コンテキスト プロパティの値を設定することで、送信ドキュメントのエンベロープ値をオーバーライドできます。 詳細については、[EDI ヘッダーをオーバーライドする](../core/overriding-edi-headers.md)を参照してください。  
+- 送信パイプラインによって処理される前にインターチェンジの `EDIOverride.OverrideEdiHeader` コンテキスト プロパティを "True" に昇格させると、適切な `EDIOverride` コンテキスト プロパティの値を設定することで、送信ドキュメントのエンベロープ値をオーバーライドできます。 詳細については、次を参照してください。 [EDI ヘッダーをオーバーライドする](../core/overriding-edi-headers.md)します。  
   
   保存されたインターチェンジにエラーがない場合は、アセンブラーは、インターチェンジ内のグループにあるトランザクション セットのシーケンスおよびインターチェンジ内のグループのシーケンスを保持します。  
   
 > [!NOTE]
->  保存されたバッチは、XML 送信パイプラインを使用して送信できます。 ただし、この処理を行うには、バッチ スキーマの名前空間を変更することが必要です。 詳細については、[XML 送信パイプラインによる保存のバッチを送信する](../core/sending-a-preserved-batch-with-an-xml-send-pipeline.md)を参照してください。  
+>  保存されたバッチは、XML 送信パイプラインを使用して送信できます。 ただし、この処理を行うには、バッチ スキーマの名前空間を変更することが必要です。 詳細については、次を参照してください。 [XML 送信パイプラインによる保存のバッチを送信する](../core/sending-a-preserved-batch-with-an-xml-send-pipeline.md)します。  
   
 ## <a name="error-processing"></a>エラー処理  
  EDI 送信パイプラインは、バッチ EDI インターチェンジを保存されたバッチとして認識します。これは、XML に予約タグが存在するためです。 か、このタグ\<X12InterchangeXml\>または\<EdifactInterchangeXml\>EDI で、XML に適用される受信パイプライン。  

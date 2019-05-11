@@ -12,19 +12,19 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 43f90723634a7192d6b8908a37f5d62fa2476997
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 415064960644356db37530b87ce0f591d5a23bb9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37006123"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65400707"
 ---
-# <a name="planning-for-disaster-recovery"></a>災害時の復旧計画
+# <a name="planning-for-disaster-recovery"></a>ディザスター リカバリーの計画
 このトピックでは、ディザスター リカバリーの要件のアプリケーション チームと BizTalk Server 用の手順のガイダンスを提供します。 Microsoft BizTalk Server の構成と処理の情報を格納する[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]します。 BizTalk Server の高可用性とディザスター リカバリーは、の高可用性とディザスター リカバリー機能によって実現[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]します。  
   
  ホストされているデータベースのセットを BizTalk グループが定義されている[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]します。 ホストされているデータベースのセット[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]Windows Server クラスターを使用して高可用性を実現することができます。 BizTalk 環境を実行しているコンピューターで[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]「実行時環境」と、データベースを実行するコンピューターで提供[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]環境の永続的なストアを提供します。 そのため、BizTalk Server のバックアップ、復元、およびディザスター リカバリーに重点を置いて、頻度の高い[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]します。  
   
-## <a name="purpose"></a>用途  
+## <a name="purpose"></a>目的  
  このトピックでは統合[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ディザスター リカバリーについては、主要なドキュメント、さまざまな Microsoft Web サイト、および情報から、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]製品チームのディザスター リカバリー手順を定義する[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]環境。  
   
  アプリケーション チームは、バックアップ、復元、および障害回復の手順を徹底的にテストする必要があります。 また、手順、運用環境に入る前にアプリケーションの要件を満たすに合わせてカスタマイズを確認する必要があります。  

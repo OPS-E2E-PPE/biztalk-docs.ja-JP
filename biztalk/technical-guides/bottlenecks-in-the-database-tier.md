@@ -1,5 +1,5 @@
 ---
-title: データベース層のボトルネック |Microsoft ドキュメント
+title: データベース層のボトルネック |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,19 +12,19 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b741f1ffcd68f7a5c739731e5aa9a1db55be34c9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 65f8dbf3a1d1360bc552344eb989fccf239fc6f5
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22299946"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65400439"
 ---
 # <a name="bottlenecks-in-the-database-tier"></a>データベース層のボトルネック
-このセクションでは、BizTalk メッセージ ボックス データベース、追跡データベース、および BAM プライマリ インポート データベースのボトルネックを特定する方法について説明します。 ディスクの競合を回避する方法についても説明します。  
+このセクションでは、BizTalk メッセージ ボックス データベース、追跡データベース、および BAM プライマリ インポート データベースのボトルネックを特定する方法について説明します。 ディスクの競合を回避する方法も説明します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [メッセージ ボックス データベース Database1 のボトルネックを特定する方法](../technical-guides/how-to-identify-bottlenecks-in-the-messagebox-database1.md)  
+-   [メッセージ ボックス データベース 1 のボトルネックを特定する方法](../technical-guides/how-to-identify-bottlenecks-in-the-messagebox-database1.md)  
   
 -   [追跡データベースのボトルネックを特定する方法](../technical-guides/how-to-identify-bottlenecks-in-the-tracking-database.md)  
   

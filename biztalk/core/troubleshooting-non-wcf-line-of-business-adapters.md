@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d6c5e9b2ffe7e74fc7bf14c3d14a22a93e288b30
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f6cf91a9219f385be1269420ef2965a643bbc29a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36997051"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65296645"
 ---
 # <a name="troubleshooting-non-wcf-line-of-business-adapters"></a>WCF 以外の基幹業務アダプターのトラブルシューティング
 ## <a name="failed-to-retrieve-error"></a>''取得できませんでした" エラー  
@@ -25,9 +25,9 @@ ms.locfileid: "36997051"
   
 -   システムを取得できませんでした  
   
--   ブラウジング エージェント: エラーは、コンストラクターにトラップされました。 ターゲット マシンは能動的に接続を拒否しました。  
+-   ブラウジング エージェント。エラーは、コンス トラクターにトラップされました。 ターゲット マシンは能動的に接続を拒否しました。  
   
--   ランタイム エージェント: エラーは、コンストラクターにトラップされました。 ターゲット マシンは能動的に接続を拒否しました。  
+-   ランタイム エージェント:エラーは、コンス トラクターにトラップされました。 ターゲット マシンは能動的に接続を拒否しました。  
   
 ### <a name="cause"></a>原因  
  基幹業務 (LOB) アダプターが .Net リモート処理を使用しています。 .Net リモート処理のライセンス認証に予想より時間がかかる場合、アダプターがこれらのエラーを返していることがあります。  
@@ -39,11 +39,11 @@ ms.locfileid: "36997051"
   
 2. 次のプロパティで新しい DWORD 値を作成します。  
   
-    名前: StartAgentSleep  
+    名前 :StartAgentSleep  
   
-    基本: 10 進数  
+    ベース:10 進数  
   
-    データの値: 1000  
+    値のデータ:1000  
   
    値のデータはミリ秒 (ms) 単位で指定します。 1000ms が 1 秒です。  
   

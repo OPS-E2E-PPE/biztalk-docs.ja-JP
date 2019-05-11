@@ -1,5 +1,5 @@
 ---
-title: インターセプタ BamActivity 要素 |Microsoft ドキュメント
+title: インターセプター BamActivity 要素 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,18 +12,18 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dd43869922e46187c8b2e06155d525e428edd905
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 07d9929e1122f00ede80c1d3e7c9efff5a2f3fff
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22257066"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65382061"
 ---
 # <a name="interceptor-bamactivity-element"></a>インターセプタ BamActivity 要素
-**BamActivity**要素は、1 つの BAM アクティビティを定義します。  
+**BamActivity**要素が 1 つの BAM アクティビティを定義します。  
   
-## <a name="format"></a>Format  
- `BamActivity`要素が含まれています、**名前**属性を 1 つ以上含む`OnEvent`要素。  
+## <a name="format"></a>形式  
+ `BamActivity`要素が含まれています、**名前**属性し、1 つ以上含む`OnEvent`要素。  
   
 ```  
 <ic:BamActivity Name="PurchaseOrder">  
@@ -33,12 +33,12 @@ ms.locfileid: "22257066"
   
 ### <a name="attributes"></a>属性  
   
-|属性名|Description|  
+|属性名|説明|  
 |--------------------|-----------------|  
-|名前|BAM アクティビティのユーザー定義名です。|  
+|名前|BAM アクティビティのユーザー定義名。|  
   
 ## <a name="example"></a>例  
- 次の例には、単一の OnEvent を持つ、"MyOrderWorkflow" というサンプルの BamActivity が含まれています。  
+ 次の例には、"myorderworkflow"、単一の OnEvent とサンプル BamActivity にはが含まれています。  
   
 ```  
 <ic:BamActivity Name="MyOrderWorkflow">  
@@ -49,5 +49,5 @@ ms.locfileid: "22257066"
 ```  
   
 ## <a name="see-also"></a>参照  
- [インターセプタ EventSource 要素](../core/interceptor-eventsource-element.md)   
- [インターセプタ OnEvent 要素](../core/interceptor-onevent-element.md)
+ [インターセプター EventSource 要素](../core/interceptor-eventsource-element.md)   
+ [インターセプター OnEvent 要素](../core/interceptor-onevent-element.md)

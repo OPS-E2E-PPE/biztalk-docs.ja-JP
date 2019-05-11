@@ -1,5 +1,5 @@
 ---
-title: アプリケーションの展開と管理シナリオ |Microsoft ドキュメント
+title: アプリケーションの展開と管理のシナリオ |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,22 +17,22 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bac83ec54e4722b64e3642950bc73c25adbfad0a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8bb85aa216449b2364ab588d01bb58b5c5552223
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22230122"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65528673"
 ---
 # <a name="application-deployment-and-management-scenarios"></a>アプリケーションの展開および管理のシナリオ
-ここでは、BizTalk アプリケーションが展開または更新される可能性があるシナリオの一部について説明します。  
+このセクションでは、いくつかのシナリオを BizTalk アプリケーションがあるデプロイまたは更新について説明します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [新しいアプリケーションの展開シナリオ。](../core/scenario-deploying-a-new-application.md)  
+-   [シナリオ:新しいアプリケーションの展開](../core/scenario-deploying-a-new-application.md)  
   
--   [シナリオ: 複数のコンピューター間での成果物を配布します。](../core/scenario-distributing-artifacts-among-multiple-computers.md)  
+-   [シナリオ:複数のコンピューター間でのアイテムを配布します。](../core/scenario-distributing-artifacts-among-multiple-computers.md)  
   
--   [シナリオ: アプリケーション アイテムの更新](../core/scenario-updating-application-artifacts.md)  
+-   [シナリオ:アプリケーション アイテムの更新](../core/scenario-updating-application-artifacts.md)  
   
--   [シナリオ: 次の 2 つのバージョンのアプリケーションを展開します。](../core/scenario-deploying-two-versions-of-an-application.md)
+-   [シナリオ:2 つのバージョンのアプリケーションを展開します。](../core/scenario-deploying-two-versions-of-an-application.md)

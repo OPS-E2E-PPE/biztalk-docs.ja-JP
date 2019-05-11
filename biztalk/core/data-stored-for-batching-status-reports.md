@@ -12,23 +12,23 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f42d503177e3b00ce418913e66948eb813575ab1
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2c0306ca5a0d8f3d4e9fb688c747bc77ba9eb5c2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37006859"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65389800"
 ---
 # <a name="data-stored-for-batching-status-reports"></a>バッチの状態レポート用に格納されるデータ
 ときに、**レポートを有効にする**、アグリーメントのプロパティが選択されている[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]バッチ処理の各インスタンスの状態に格納されます。 このプロパティはで使用できる、**全般プロパティ**のページ、**全般** タブで、**アグリーメントのプロパティ** ダイアログ ボックス。 状態は、次のいずれかの値になります。  
   
-- **定義されている**: バッチ インスタンスが構成されています。 バッチ アクティベーションの開始日時は、現在の日時よりも後になっています。 バッチ パラメーターはすべて定義されていますが、バッチは実行されていません (ドキュメントを受理していません)。  
+- **定義されている**:バッチ インスタンスが構成されます。 バッチ アクティベーションの開始日時は、現在の日時よりも後になっています。 バッチ パラメーターはすべて定義されていますが、バッチは実行されていません (ドキュメントを受理していません)。  
   
-- **アクティブな**: バッチ インスタンスがアクティブ化されて、トランザクション セットを集計します。 受理/拒否されたトランザクション セットの数を表示できます。  
+- **[アクティブ]**: バッチ インスタンスがアクティブ化されてし、トランザクション セットを集計します。 受理/拒否されたトランザクション セットの数を表示できます。  
   
-- **リリース**: バッチ リリース条件を満たす、メッセージ ボックスにリリースされていますが、送信パイプラインによってリリースされていない、またはすべてのメッセージを処理する前に、バッチが停止しました。  
+- **リリース**:バッチ リリース条件を満たす、メッセージ ボックスにリリースされていますが、送信パイプラインによってリリースされていない、またはメッセージのいずれかを処理する前に、バッチが停止したこと。  
   
-- **完了した**: バッチは EdiSend パイプラインによって送信されました。  
+- **完了した**:バッチは EdiSend パイプラインによって送信されました。  
   
   バッチが EdiSend パイプラインによって送信されると、UI にあるバッチ レコードを、送信された EDI インターチェンジのレコードに関連付けて、トランザクション セットの詳細を参照できます。  
   
@@ -37,7 +37,7 @@ ms.locfileid: "37006859"
   
  **バッチ インターチェンジの関連付け**  
   
- BusinessMessageJournal BAM アクティビティにより、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は、トランザクション セットを持つ受信 EDI インターチェンジを、同じトランザクション セットを持つ送信バッチ インターチェンジと関連付けることができます。 実装して、この相関関係情報を使用する方法については、[送信バッチで受信トランザクション セットの関連付け](../core/correlating-an-incoming-transaction-set-with-an-outgoing-batch.md)を参照してください。  
+ BusinessMessageJournal BAM アクティビティにより、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は、トランザクション セットを持つ受信 EDI インターチェンジを、同じトランザクション セットを持つ送信バッチ インターチェンジと関連付けることができます。 実装して、この相関関係情報を使用する方法については、次を参照してください。[送信バッチで受信トランザクション セットの関連付け](../core/correlating-an-incoming-transaction-set-with-an-outgoing-batch.md)します。  
   
 ## <a name="see-also"></a>参照  
  [EDI および AS2 状態レポートの格納データ](../core/data-stored-for-edi-and-as2-status-reports.md)   

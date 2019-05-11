@@ -13,21 +13,21 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b6ab7cefe79d59927b481bf20d8b0961bf296595
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 05a6593d13e2b7afb249f7349b3c702ad70691d2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37009475"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377554"
 ---
 # <a name="glossary"></a>用語集
 次の用語集の用語と定義は、Microsoft BizTalk Accelerator for SWIFT を使用します。  
   
 ## <a name="a"></a>A  
- **アセンブラー**  
+ **assembler**  
  Microsoft[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]送信パイプライン処理のアセンブル ステージ中に呼び出される送信パイプライン コンポーネント。 アセンブラーは、一部のフラット ファイル形式を XML から送信メッセージのシリアル化のジョブを通常は。  
   
- **アセンブリ**  
+ **assembly**  
  Microsoft の主なビルド ブロック[!INCLUDE[btsDotNetFramework](../../includes/btsdotnetframework-md.md)]アプリケーション。 再利用、バージョン管理、セキュリティ、および展開の基本単位です。 プログラマが単一のダイナミック リンク ライブラリ (DLL) または実行可能ファイル (EXE) に表示されるファイルのコレクションです。  
   
  **アセンブリ キャッシュ**  
@@ -38,10 +38,10 @@ ms.locfileid: "37009475"
  SWIFT で定義されている、金融機関を識別するために使用するコードです。  
   
  **ビジネス ルール作成ツール**  
- ポリシーを作成するための GUI ツール。  
+ ポリシーを作成するために使用するグラフィカル ユーザー インターフェイス ツールです。  
   
  **ビジネス ルール エンジン (BRE)**  
- ファクトに対してルールを評価し、評価結果に基づいてアクションを開始する実行時推論エンジン。  
+ その評価の結果に基づいてファクトと開始アクションに対してルールを評価するランタイム推論エンジン。  
   
 ## <a name="c"></a>c  
  **条件付き規則**  
@@ -56,7 +56,7 @@ ms.locfileid: "37009475"
  メッセージの種類の規則の特定の違反を示す 2 つの数字が続く文字で構成されるコードです。  
   
  **拡張マークアップ言語 (XML)**  
- W3C (World Wide Web Consortium) によって開発された仕様。標準 HTML の機能にとらわれずに独自のタグを作成できます。 定義済みタグのみを使用しますが、ページ内の要素を記述する HTML、XML は、ページの開発者によって定義されるタグを使用できます。 製品や支払金額など、事実上すべてのデータ項目のタグは、特定のアプリケーションで使用できます。 そのため、Web ページがデータベース レコードとして機能するようになります。  
+ 標準の HTML の機能のカスタマイズされたタグを作成することによって、World Wide Web Consortium (W3C) によって開発された仕様。 定義済みタグのみを使用しますが、ページ内の要素を記述する HTML、XML は、ページの開発者によって定義されるタグを使用できます。 製品や支払金額など、事実上すべてのデータ項目のタグは、特定のアプリケーションで使用できます。 これにより、データベースのレコードとして機能する Web ページです。  
   
  **Extensible Stylesheet Language (XSL)**  
  拡張マークアップ言語 (XML) ドキュメントのスタイル シートの書式。 XSL を使用して、同じハイパー テキスト マークアップ言語 (HTML) の表示を定義する、カスケード スタイル シート (CSS) を使用する方法で XML の表示を定義します。 [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] 2 つの仕様間の変換言語として XSL を使用します。  
@@ -74,12 +74,12 @@ ms.locfileid: "37009475"
  ハイパー テキスト転送プロトコル (HTTP)、Secure Sockets Layer (SSL) 暗号化プロトコルを使用します。  
   
 ## <a name="i"></a>I  
- **インターチェンジ**  
+ **interchange**  
  小さな部分をメッセージまたはブロックする完全なメッセージ。 インターチェンジの SWIFT など[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]SWIFT ヘッダーの一部を連結したものとして定義されます (SWIFT ブロック 1、2、3)、後に、SWIFT ボディ部 (SWIFT ブロック 4)、SWIFT トレーラーの部分で後に (SWIFT ブロック 5)。  
   
 ## <a name="m"></a>M  
- **マップ**  
- 異なる仕様間のレコードとフィールドの対応関係を定義している XML ファイル。 マップには、Extensible Stylesheet Language (XSL) が含まれるスタイル シートが[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]を使用して、マップに記述された変換を実行します。 BizTalk マッパーでマップを作成します。  
+ **map**  
+ 別の仕様と、レコードの仕様は 1 つのフィールドとレコードとフィールド間の対応を定義する XML ファイル。 マップには、Extensible Stylesheet Language (XSL) が含まれるスタイル シートが[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]を使用して、マップに記述された変換を実行します。 BizTalk マッパーでマップを作成します。  
   
  **メッセージの種類**  
  「支払に対して受信」など、SWIFT、標準リリース ガイドで定義されたメッセージの形式の 1 つ。 メッセージの種類は、多くの場合、"MT"の後に、3 桁のコードで示されます。  
@@ -89,7 +89,7 @@ ms.locfileid: "37009475"
  支払開始メッセージやクレジット通知などの銀行から発信する銀行取引の支払いに関連するメッセージに関連付けられている発信側の顧客によって提供される一意のトランザクション識別子です。  
   
  **ポリシー**  
- ビジネス ルールをバージョンを付けて集めたもの。  
+ ビジネス ルールのバージョン管理されたコレクション。  
   
  **PTI**  
  支払いトランザクションの識別子です。  
@@ -99,17 +99,17 @@ ms.locfileid: "37009475"
  条件とアクションの組み合わせ。  
   
  **規則セット**  
- 類似するルールの論理的なグループ。 ルール エンジンのグループ化/分割メカニズムとして表示できます。  
+ 類似するルールの論理的なグループ。 これは、ルール エンジンのグループ化/分割メカニズムとして表示できます。  
   
 ## <a name="s"></a>S  
  **schema**  
- XML ファイルの構造を定義したもの。 スキーマには、レコードおよびフィールド構造内の関連プロパティ情報が含まれています。  
+ XML ファイルの構造を定義します。 スキーマには、レコードおよびフィールド構造内の関連プロパティ情報が含まれています。  
   
  **世界銀行間通信 (SWIFT) の社会**  
  世界銀行間通信の社会します。 メッセージング サービス銀行、株式仲介業者、投資マネージャー、および支払い、財務、証券、および取引の市場のインフラストラクチャを提供する組織。 SWIFT では、世界中のデータの処理を共有し、通信リンクと国際金融取引の共通言語を作成します。  
   
  **仕様**  
- [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] 固有の XML スキーマ。 仕様では、BizTalk エディターで作成され、SWIFT、EDIFACT、x12、および XML) などの業界標準またはフラット ファイル (区切られた、位置指定、または区切り記号付きおよび位置指定) に基づくことができます。 BizTalk マッパーは、送信元仕様と送信先仕様として公開された仕様を使用してマップを作成します。  
+ A [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]-特定の XML スキーマ。 仕様では、BizTalk エディターで作成され、SWIFT、EDIFACT、x12、および XML) などの業界標準またはフラット ファイル (区切られた、位置指定、または区切り記号付きおよび位置指定) に基づくことができます。 BizTalk マッパーでは、仕様、送信元仕様と送信先仕様として開かれてを使用して、マップを作成します。  
   
  **厳密な名前**  
  アセンブリの id で構成される名前など、単純テキスト名、バージョン番号、およびカルチャ情報 (存在する場合): 公開キーと、アセンブリに対して生成されたデジタル署名によって補強されました。 アセンブリ マニフェストにアセンブリの実装を構成するすべてのファイルのファイル ハッシュが含まれているために、アセンブリ マニフェストを含むアセンブリに 1 つのファイルだけをデジタル署名を生成するだけで十分です。 同じ厳密な名前でアセンブリが同一である必要があります。  
@@ -127,7 +127,7 @@ ms.locfileid: "37009475"
  **一意の送金 Identifier (URI)**  
  ビジネスのインターチェンジと銀行のインターチェンジを同期する RosettaNet 支払マイルス トーンのプログラムの参加者によって生成された識別子です。  
   
-## <a name="x"></a>×  
+## <a name="x"></a>x  
   
  **Xml-data Reduced (XDR)**  
  構造と、特定の XML ドキュメントの制約を識別するスキーマを作成するために使用する初期の言語。 Xml-data Reduced は使用可能な Microsoft XML Parser (MSXML) 3.0 以降に作成された XML データ スキーマ仕様のサブセットを指します。 これは、同じ基本的なタスクとして、DTD がさらに強力で柔軟性を実行します。 独自の言語と構文を必要とする DTD とは異なりは、XDR は、その言語の XML 構文を使用します。 XSD では、標準として推奨されて最近のみが、これとは異なり XDR が実装され、W3C XML Schema Working Group により推奨された標準として XSD の存在よりもかなり前の Microsoft で利用できます。  

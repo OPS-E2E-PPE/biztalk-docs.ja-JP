@@ -1,5 +1,5 @@
 ---
-title: 追跡プロファイルの作成 |Microsoft ドキュメント
+title: 追跡プロファイルの作成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,14 +15,14 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6ce1edcab724201dc03792a37b0b796625201351
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 92845adb81be88d195f456a3d82ad86676d5b962
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22238274"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65389847"
 ---
-# <a name="creating-tracking-profiles"></a>追跡プロファイルを作成します。
+# <a name="creating-tracking-profiles"></a>追跡プロファイルの作成
 組織の特定のビジネス プロセスに対する管理や監視機能を向上させるには、新しい追跡プロファイルを作成するか、または既存のプロファイルを変更します。 追跡プロファイル エディター (TPE) を使用すると、ビジネス アナリストの要件を満たすために収集するデータを定義できます。 作成または変更するプロファイルは、ビジネスの要件に応じて簡単にも複雑にもできます。  
   
  開発者の場合、BAM アクティビティ定義に基づいて新しいプロファイルを作成します。 展開されたアクティビティ定義では、その定義向けのプロファイルが既に定義されている場合があります。 まだ定義されていない場合は、次の操作を実行して追跡プロファイルを作成します。  

@@ -14,12 +14,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b9510c7ae534251218826a31eea1cc39c8d1f139
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 679a1be842b27431669e60089143c1972aaa0693
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36977995"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65376566"
 ---
 # <a name="get-metadata-in-oracle-database-using-imetadataretrievalcontract"></a>IMetadataRetrievalContract を使用して Oracle データベースでメタデータを取得します。
 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]公開、 **IMetadataRetrievalContract**Oracle データベース アイテムを検索および参照して、フォームの Web サービス記述言語 (WSDL での操作のメタデータを取得するを使用するエンドポイント) ドキュメントです。  
@@ -46,7 +46,7 @@ ms.locfileid: "36977995"
   
 - **カテゴリ ノード**アダプターでの操作に Oracle データベース アイテムと直接対応している Oracle データベース アイテムのグループを表します。 カテゴリのノードは、ツリーの分岐その他のカテゴリ ノードやノードの操作が含まれます。 たとえば、Oracle のテーブルおよびパッケージは、カテゴリのノードとして表されます。  
   
-  アダプター メタデータの各ノードは、一意のノード ID によって識別されます。 メタデータ ノード Id のアダプターの詳細については、[メタデータ ノード Id](../../adapters-and-accelerators/adapter-oracle-database/metadata-node-ids3.md)を参照してください。 これらのノード Id を使用して、使用するときに、Oracle データベース アイテムのターゲットを指定する、 **IMetadataRetrievalContract**参照、検索、およびメタデータを取得するインターフェイス。  
+  アダプター メタデータの各ノードは、一意のノード ID によって識別されます。 メタデータ ノード Id のアダプターの詳細については、次を参照してください。[メタデータ ノード Id](../../adapters-and-accelerators/adapter-oracle-database/metadata-node-ids3.md)します。 これらのノード Id を使用して、使用するときに、Oracle データベース アイテムのターゲットを指定する、 **IMetadataRetrievalContract**参照、検索、およびメタデータを取得するインターフェイス。  
   
 ### <a name="binding-properties"></a>バインドのプロパティ  
  使用するかどうか、 **IMetadataRetrievalContract**チャネルまたは**IMetadataRetrievalClient**メタデータを使用することを指定する必要があります、 **OracleDBBinding**ときにします。インスタンスを作成します。  
@@ -78,7 +78,7 @@ ms.locfileid: "36977995"
 >  カテゴリのノードのみを参照できます。操作のノードを参照することはできません。  
   
 ### <a name="searching-for-metadata-nodes"></a>メタデータのノードの検索  
- 使用する、**検索**親ノードが格納されているノードの検索を実行するメソッド。 アダプターは、検索式です。 ワイルドカード文字をサポートしていますたとえばパーセント (%) を指定する 0 個以上の文字と一致するワイルドカード文字です。 次の例では、文字列"EMP"が含まれる SCOTT スキーマ内のすべてのテーブルの検索を示します。 この例で**クライアント**のインスタンスである**MetadataRetrievalClient**します。  
+ 使用する、**検索**親ノードが格納されているノードの検索を実行するメソッド。 アダプターは、検索式です。 ワイルドカード文字をサポートしていますたとえば、パーセント (%) を指定できます。0 個以上の文字と一致するワイルドカード文字です。 次の例では、文字列"EMP"が含まれる SCOTT スキーマ内のすべてのテーブルの検索を示します。 この例で**クライアント**のインスタンスである**MetadataRetrievalClient**します。  
   
 ```  
 // Search for all nodes that contain "EMP" under the SCOTT.Table node.  
@@ -89,7 +89,7 @@ IMetadataRetrievalNode[] nodes = client.Search("http://Microsoft.LobServices.Ora
 ```  
   
 > [!IMPORTANT]
->  検索は限られた一連のノードでのみサポートします。 検索式でサポートされているワイルドカード文字および検索がサポートされているノードに関する詳細については、[メタデータ ノード Id](../../adapters-and-accelerators/adapter-oracle-database/metadata-node-ids3.md)を参照してください。  
+>  検索は限られた一連のノードでのみサポートします。 検索式でサポートされているワイルドカード文字および検索がサポートされているノードに関する詳細については、次を参照してください。[メタデータ ノード Id](../../adapters-and-accelerators/adapter-oracle-database/metadata-node-ids3.md)します。  
   
 ### <a name="retrieving-metadata-wsdl-for-operations"></a>操作のメタデータ (WSDL) を取得します。  
  使用する、 **GetMetadata**操作のノードのグループのサービスの説明 (WSDL ドキュメント) を取得します。 次の例では、サービスの説明を含むすべての操作をサーフェス、scott のアダプターを取得します。ノード ID を指定することで、EMP テーブル この例で**クライアント**のインスタンスである**MetadataRetrievalClient**します。  

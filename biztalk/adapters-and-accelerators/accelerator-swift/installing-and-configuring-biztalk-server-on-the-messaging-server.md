@@ -17,12 +17,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b5f4013c1fe315646ea7a2ff34772169a03a2d66
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f322ae292749f4acfa8d64ccda1ebcf5e4d62f9f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36989571"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65378062"
 ---
 # <a name="installing-and-configuring-biztalk-server-on-the-messaging-server"></a>インストールして、メッセージング サーバーで BizTalk Server の構成
 このセクションでは、インストールを行う SWIFT ネットワークに接続するため、メッセージング サーバーとして使用する BizTalk Server を構成する方法について説明します。  

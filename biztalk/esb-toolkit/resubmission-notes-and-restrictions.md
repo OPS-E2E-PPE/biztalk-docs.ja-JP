@@ -1,5 +1,5 @@
 ---
-title: 再送信の注意事項と制約事項 |Microsoft ドキュメント
+title: 再送信の注意事項と制約事項 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,21 +12,21 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d03c969dc056e251d8109ce5bc0a29c16f8ffeda
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: f08f6a2740331518d6fc92fb0c12e6f89d1b79f0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25976608"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65401504"
 ---
 # <a name="resubmission-notes-and-restrictions"></a>再送信の注意事項と制約事項
-再送信プロセスには、次の注意事項と制約事項が適用されます。  
+再送信プロセスには、次の注意事項と制限が適用されます。  
   
--   ESB WCF 入り口、SOAP (ASMX) 上のランプ、XML メッセージを再送信できますか、任意の HTTP 受信場所。  
+-   ESB WCF ランプで、SOAP (ASMX) 上のランプ、XML メッセージを再送信できますか、任意の HTTP 受信場所。  
   
--   WCF の上のランプの既定の URL は、 http://localhost/ESB.ItineraryServices.WCF/ProcessItinerary.svc です。  
+-   ランプで WCF の既定の URL は http://localhost/ESB.ItineraryServices.WCF/ProcessItinerary.svcします。  
   
--   ポータルの Web.config ファイルは、WCF 入り口内のエンドポイントの詳細を定義、 **\<クライアント\>** のノード、 **\<System.ServiceModel\>** 参照してください。 既定値を次に示します。  
+-   ポータルの Web.config ファイルでランプでに WCF のエンドポイントの詳細を定義する、 **\<クライアント\>** のノード、 **\<System.ServiceModel\>** セクション。 既定値は、次のとおりです。  
   
     ```  
     <endpoint  
@@ -38,11 +38,11 @@ ms.locfileid: "25976608"
     </endpoint>  
     ```  
   
--   リモート サーバー上のランプで WCF が存在する場合、正しいサーバーをポイントするアドレスを更新する必要があります。  
+-   リモート サーバー上のランプで WCF が存在する場合は、正しいサーバーをポイントするアドレスを更新する必要があります。  
   
--   ランプで SOAP (ASMX) の既定の URL は、 http://localhost/ESB.ItineraryServices/ProcessItinerary.asmx です 。  
+-   ランプで SOAP (ASMX) の既定の URL は http://localhost/ESB.ItineraryServices/ProcessItinerary.asmxします。  
   
--   ポータルの Web.config ファイルでランプでに SOAP (ASMX) の構成を定義する、 **\<applicationSettings\>** セクションです。 既定値を次に示します。  
+-   ポータルの Web.config ファイルでランプでに SOAP (ASMX) の構成を定義する、 **\<applicationSettings\>** セクション。 既定値は、次のとおりです。  
   
     ```  
     <setting   
@@ -54,14 +54,14 @@ ms.locfileid: "25976608"
     </setting>  
     ```  
   
--   ASMX 入り口がリモート サーバー上にある場合は、適切なサーバー アドレスを持つ URL を更新する必要があります。  
+-   ASMX の上のランプがリモート サーバー上にある場合は、適切なサーバー アドレスの URL を更新する必要があります。  
   
--   フラット ファイルを再送信することができます、HTTP のみに書式設定されたメッセージの受信場所。 WCF または SOAP 入り口に送信することはできません。 確認する必要がありますを消費したり、フラット ファイルを解析する適切なパイプライン、HTTP 受信場所であることができます。  
+-   フラット ファイルを再送信することができますのみ HTTP を書式設定されたメッセージの受信場所。 WCF または SOAP に着手するには、それらを送信できません。 確認する必要があります消費やフラット ファイルを解析できますを適切なパイプラインには、HTTP 受信場所であること。  
   
--   再送信されたメッセージは、元のメッセージのコンテキスト プロパティのいずれか。  
+-   再送信されたメッセージは、元のメッセージのコンテキスト プロパティのいずれかありません。  
   
 -   再送信がメッセージ本文のみに適用されます。メッセージ全体には適用されません。  
   
--   再送信プロセスでは、1 部構成のメッセージのみをサポートします。 マルチパート メッセージを再送信プロセスを使用することはできません。  
+-   再送信プロセスでは、1 つの部分のメッセージのみをサポートします。 マルチパート メッセージを再送信プロセスを使用することはできません。  
   
 -   バイナリ形式のメッセージを再送信することはできません。

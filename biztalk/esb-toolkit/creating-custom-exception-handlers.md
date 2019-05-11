@@ -12,12 +12,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 33d49fddb8a42c440f62acdd4ea337f43b876f6b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2f2e1daaa0877ea1dc4e9abc24b8b1b36463cd7f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36971523"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65400804"
 ---
 # <a name="creating-custom-exception-handlers"></a>カスタム例外ハンドラーの作成
 例外を検出して対処するアプリケーション、開発者は、例外ハンドラーを提供する必要があります。 この例外ハンドラーには、例外メッセージの 1 つの型またはシステムまたはアプリケーションの一部またはすべてのパーツから生成される例外メッセージをサブスクライブできます。 たとえば、(すべての例外、給与支払いシステムで発生している) などの特定のシステムからのすべてのメッセージ ハンドラーは 1 つのみを必要となるまたは (チェック プロセスを印刷することを検出するなどの特定のエラーのハンドラーを対象となる代わりにあります。失敗)。  

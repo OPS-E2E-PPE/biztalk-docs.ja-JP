@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4d5bf8f327cbdb12ebe0723941afd6e37b5d2409
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: fe2d443af13c8c5a3e3e5cb137bbcddd2ceefb03
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36968051"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399583"
 ---
 # <a name="monitoring-throttling-using-performance-threshold-rules"></a>パフォーマンスしきい値ルールを使用して調整の監視
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 回復不可能な状態から、システムを保護するために調整が初期化されます。 調整に問題があるし、そのソースの特定に役立てることができます。 制限の状態に基づいて、ボトルネックの原因を特定したら、問題の原因を絞り込むために他のパフォーマンス カウンターを分析します。  
@@ -45,14 +45,14 @@ ms.locfileid: "36968051"
 |BizTalk Messaging|RxHost|Documents Received/Sec|受信速度|  
 |BizTalk Messaging|TxHost|Documents Processed/Sec|送信速度|  
 |XLANGs/オーケストレーション|PxHost|完了したオーケストレーションの数/秒|処理速度|  
-|BizTalk: メッセージ ボックス: 一般的なカウンター|MsgBoxName|Spool Size|すべてのホスト キューの合計サイズ|  
-|BizTalk: メッセージ ボックス: 一般的なカウンター|MsgBoxName|Tracking Data Size|メッセージ ボックスの TrackingData テーブルのサイズ|  
-|BizTalk: メッセージ ボックス: ホスト カウンター|PxHost:MsgBoxName|Host Queue - Length|特定のホスト キューに存在するメッセージの数|  
-|BizTalk: メッセージ ボックス: ホスト カウンター|TxHost:MsgBoxName|Host Queue - Length|特定のホスト キューに存在するメッセージの数|  
-|BizTalk: メッセージ エージェント|RxHost|Database Size|公開 (PxHost) キューのサイズ|  
-|BizTalk: メッセージ エージェント|PxHost|Database Size|公開 (TxHost) キューのサイズ|  
-|BizTalk: メッセージ エージェント|HostName|Message Delivery Throttling State|XLANG と送信トランスポートに影響|  
-|BizTalk: メッセージ エージェント|HostName|Message Publishing Throttling State|XLANG と受信トランスポートに影響|  
+|BizTalk:メッセージ ボックス:一般的なカウンター|MsgBoxName|Spool Size|すべてのホスト キューの合計サイズ|  
+|BizTalk:メッセージ ボックス:一般的なカウンター|MsgBoxName|Tracking Data Size|メッセージ ボックスの TrackingData テーブルのサイズ|  
+|BizTalk:メッセージ ボックス:ホスト カウンター|PxHost:MsgBoxName|Host Queue - Length|特定のホスト キューに存在するメッセージの数|  
+|BizTalk:メッセージ ボックス:ホスト カウンター|TxHost:MsgBoxName|Host Queue - Length|特定のホスト キューに存在するメッセージの数|  
+|BizTalk:メッセージ エージェント|RxHost|Database Size|公開 (PxHost) キューのサイズ|  
+|BizTalk:メッセージ エージェント|PxHost|Database Size|公開 (TxHost) キューのサイズ|  
+|BizTalk:メッセージ エージェント|HostName|Message Delivery Throttling State|XLANG と送信トランスポートに影響|  
+|BizTalk:メッセージ エージェント|HostName|Message Publishing Throttling State|XLANG と受信トランスポートに影響|  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

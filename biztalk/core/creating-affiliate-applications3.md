@@ -1,5 +1,5 @@
 ---
-title: Applications3 関連の作成 |Microsoft ドキュメント
+title: Applications3 を関連の作成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -18,46 +18,46 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 857ee7edd623332e72176ac09082f0ec9fc460f4
-ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
+ms.openlocfilehash: 48aaf4d7cd6df05d99f31a9ddce7c6ccb6e7ae68
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "24015153"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65353947"
 ---
 # <a name="creating-affiliate-applications"></a>関連アプリケーションの作成
-次の手順では、シングル サインオン (SSO) を使用して関連アプリケーションを利用する方法について説明します。  
+次の手順では、シングル サインオン (SSO) を使用して関連アプリケーションを開始する方法について説明します。  
   
 > [!NOTE]
->  SSO エラーが発生した場合は、BizTalk Server を構成したときにドメイン アカウントを使用したことを確認してください。これは、そのことが ESSO サービスの機能に影響するからです。 SSO はドメイン アカウントでのみ機能します。  
+>  SSO エラーが発生した場合は、あるアカウントを使用したドメイン、BizTalk Server を構成したときに、ESSO サービスの機能に影響するためを確認します。 ドメイン アカウントでの SSO のみ機能します。  
   
 ## <a name="creating-an-affiliate-application"></a>関連アプリケーションの作成  
   
 #### <a name="to-create-an-affiliate-application"></a>関連アプリケーションを作成するには  
   
-1.  **コントロール パネルの** , 、開かれている **サービス**, 、エンタープライズ シングル サインオン サービスが実行されていることを確認します。  
+1.  **コントロール パネル**オープン**サービス**、エンタープライズ シングル サインオン サービスが実行されていることを確認します。  
   
-2.  コマンド プロンプト では、エンタープライズ シングル サインオン フォルダーにディレクトリを変更します。  
+2.  コマンド プロンプトでは、エンタープライズ シングル サインオン フォルダーにディレクトリを変更します。  
   
-     例:  
+     例 :  
   
-     **C:\Program files \common files files \common files \enterprise シングル サインオン >**  
+     **C:\Program Files\Common Files\Enterprise Single Sign-On>**  
   
-3.  エンタープライズ シングル サインオン コマンドを使用します。 コマンドの一覧を表示するには、-help スイッチを使用します。  
+3.  エンタープライズ シングル サインオン コマンドを使用します。 コマンドの一覧は、使用には、ヘルプ スイッチ。  
   
      ![](../core/media/siebeladapter-23-sso-commands.gif "SiebelAdapter_23_SSO_Commands")  
   
-4.  使用して関連アプリケーションを作成する、* します。XML の先頭としては、次のコマンドに入力します。  
+4.  使用して関連アプリケーションを作成する、*。次のコマンドで、先頭として XML を入力します。  
   
-     **ssomanage.exe-createapps C:\SSOtest\AffiliateApplication.xml**  
+     **ssomanage.exe -createapps C:\SSOtest\AffiliateApplication.xml**  
   
      それぞれの文字の説明は次のとおりです。  
   
      C:\SSOtest は、アプリケーション XML を含むフォルダーです。  
   
-     AffiliateApplication.xml は、アプリケーションの作成した、サインオン情報を含む XML です。  
+     AffiliateApplication.xml は、アプリケーションにサインオンしている情報を含む、作成した XML です。  
   
-     例:  
+     以下に例を示します。  
   
     ```  
     <?xml version="1.0"?>  
@@ -76,23 +76,23 @@ ms.locfileid: "24015153"
     </SSO>  
     ```  
   
-## <a name="creating-single-sign-on-tickets"></a>シングル サインオン チケットの作成  
+## <a name="creating-single-sign-on-tickets"></a>シングル サインオン チケットを作成します。  
   
 #### <a name="to-create-sso-tickets"></a>SSO チケットを作成するには  
   
-1.  次のコマンドを入力して、SSO チケットの動作を制御します。  
+1.  SSO チケットの動作を制御する次のコマンドを入力します。  
   
      `ssomanage.exe -tickets yes yes`  
   
-2.  次の質問に回答します。  
+2.  質問に答えます。  
   
      `ssomanage -tickets <allowed yes | no> <validate yes | no>`  
   
-     完了すると、次の確認メッセージが表示されます。  
+     完了時に確認メッセージが表示されます。  
   
-     **このコンピューターで使用中の SSO。操作が正常に完了しました。**  
+     **このコンピューターでは、SSO サーバーを使用します。操作が完了しました。**  
   
-## <a name="enabling-the-affiliate-application-xml"></a>関連アプリケーション XML の有効化  
+## <a name="enabling-the-affiliate-application-xml"></a>関連アプリケーション XML を有効にします。  
   
 #### <a name="to-enable-affiliate-application-xml"></a>関連アプリケーション XML を有効にするには  
   
@@ -108,19 +108,19 @@ ms.locfileid: "24015153"
   
      **Ibi \yourid-jdedwardsapp に使用可能なアプリケーション**  
   
-3.  次のコマンドを入力して、関連アプリケーションの資格情報を設定します。  
+3.  関連アプリケーションの資格情報を設定するのには、次のコマンドを入力します。  
   
      `ssoclient.exe -setcredentials JDEdwardsApp`  
   
-4.  プロンプトで、ユーザー名とパスワードを入力します。 JDEdwardsApp 関連アプリケーションのログオン資格情報を入力します。 たとえば、ユーザーの識別と SSO サーバーを経由してシステムに入力するには、そのユーザーのパスワードを入力します。  
+4.  ユーザー名と、プロンプトでパスワードを入力します。 JDEdwardsApp 関連アプリケーションのログオン資格情報を入力します。 たとえば、ユーザー id と、SSO サーバーを使用してシステムに入力するには、そのユーザーのパスワードを入力します。  
   
     -   **ユーザー ID:** ユーザー  
   
     -   **パスワード:** ******  
   
-    -   **パスワードのパスワード:** ******  
+    -   **確認しますか。パスワード:** ******  
   
-5.  関連アプリケーションが [BizTalk Adapter for JD Edwards OneWorld トランスポートのプロパティ] ダイアログ ボックスのドロップダウン リストに表示されます。  
+5.  関連アプリケーションは、BizTalk Adapter for JD Edwards OneWorld トランスポートのプロパティ ダイアログ ボックスのドロップダウン リストに表示されます。  
   
 ## <a name="see-also"></a>参照  
  [アダプターのセキュリティ](../core/security-in-biztalk-adapter-for-jd-edwards-oneworld.md)

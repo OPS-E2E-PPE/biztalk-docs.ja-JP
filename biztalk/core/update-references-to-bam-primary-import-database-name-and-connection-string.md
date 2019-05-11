@@ -12,17 +12,17 @@ caps.latest.revision: 25
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 846aa3b08ce6cce9b2334da72440cf5ba918e5d9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3021542b405e7511c71b1de11752c16b387d3013
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37003139"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399542"
 ---
 # <a name="update-references-to-the-bam-primary-import-database-name-and-connection-string"></a>BAM プライマリ インポート データベース名および接続文字列への参照を更新します。
 BAMPrimaryImport データベースをバックアップしておくと、システムまたはデータに障害が発生したときに、別のコンピューターにバックアップを復元し、その名前を変更することができます。  
   
- BAM イベント バス サービスでは、イベント データをメッセージ ボックス データベースから BAMPrimaryImport データベースに移動します。 BAM イベント バス サービスには、予期しない障害が発生した場合にデータを失わずに復旧して再起動するためのフォールト トレランス ロジックが含まれています。 BAM イベント バス サービスの詳細については、[BAM イベント バス サービスの管理](../core/managing-the-bam-event-bus-service.md)を参照してください。  
+ BAM イベント バス サービスでは、イベント データをメッセージ ボックス データベースから BAMPrimaryImport データベースに移動します。 BAM イベント バス サービスには、予期しない障害が発生した場合にデータを失わずに復旧して再起動するためのフォールト トレランス ロジックが含まれています。 BAM イベント バス サービスの詳細については、次を参照してください。 [BAM イベント バス サービスの管理](../core/managing-the-bam-event-bus-service.md)します。  
   
  BAMPrimaryImport データベースを復元する手順を実行[、データベースを復元する方法](../core/how-to-restore-your-databases.md)します。 これらの手順を実行したうえで、次の手順を実行します (詳細な手順については後述)。  
   
@@ -39,23 +39,23 @@ BizTalk Server 管理者グループのメンバーとしてサインインし�
   
 1. すべての BAM キューブ更新およびデータ変換サービス (DTS) パッケージを停止するか、BAMPrimaryImport データベースの復元が完了するまで実行されないように措置を講じます。  
   
-2. (これは、BAM イベント バス サービスが含まれています)、BizTalk アプリケーション サービスを停止するためより多くのデータをデータベースにインポートする試行は行われません。  
+2. (を BAM イベント バス サービスを含む)、BizTalk アプリケーション サービスを停止するため、データベースに多くのデータをインポートするのには試行されません。  
   
    1.  **開始**メニューで、「 **services.msc**、開き**サービス**します。  
   
-   2.  右クリックし、 **BizTalk Service BizTalk Group: BizTalkServerApplication**サービスし**停止**します。  
+   2.  右クリックし、 **BizTalk Service BizTalk Group:[Biztalkserverapplication]** サービスし**停止**します。  
   
 3. BAMPrimaryImport データベースを復元する (手順[、データベースを復元する方法](../core/how-to-restore-your-databases.md))。  
   
 4. 次の Web.Config ファイルを更新します。  
   
-   - [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]\BAMPortal\BamManagementService\Web.Config します。  
+   - [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]\BAMPortal\BamManagementService\Web.Config.  
   
       置換、 *\<ServerName\>* 、新しいサーバー名を含む文字列と*\<DatabaseName\>* で新しいデータベース名。 次の接続文字列を更新します。  
   
       \<appSettings\>  
   
-      < キーを追加"BamServer"の値を = ="*\<ServerName\>*"/\>  
+      <add key="BamServer" value="*\<ServerName\>*" /\>  
   
       <add key="BamDatabase" value="*\<DatabaseName\>*" /\>  
   
@@ -63,7 +63,7 @@ BizTalk Server 管理者グループのメンバーとしてサインインし�
   
       \</appSettings\>  
   
-   - [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]\BAMPortal\BamQueryService\Web.Config します。  
+   - [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]\BAMPortal\BamQueryService\Web.Config.  
   
       置換、 *\<ServerName\>* 、新しいサーバー名を含む文字列と*\<DatabaseName\>* で新しいデータベース名。 次の接続文字列を更新します。  
   
@@ -125,11 +125,11 @@ BizTalk Server 管理者グループのメンバーとしてサインインし�
   
     1.  開いている**services.msc**します。  
   
-    2.  右クリックし、 **BizTalk Service BizTalk Group: BizTalkServerApplication**サービスし**開始**します。  
+    2.  右クリックし、 **BizTalk Service BizTalk Group:[Biztalkserverapplication]** サービスし**開始**します。  
   
 12. すべての BAM キューブ更新およびデータ保守 DTS パッケージを有効にします。  
   
-13. すべての不完全なトレース インスタンスを解決するには、[不完全なアクティビティ インスタンスの解決](../core/how-to-resolve-incomplete-activity-instances.md)を参照してください。  
+13. すべての不完全なトレース インスタンスを解決するには、次を参照してください。[不完全なアクティビティ インスタンスの解決](../core/how-to-resolve-incomplete-activity-instances.md)します。  
   
 ## <a name="see-also"></a>参照  
  [BAM のバックアップと復元](../core/backing-up-and-restoring-bam.md)

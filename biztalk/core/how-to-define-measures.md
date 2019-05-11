@@ -16,12 +16,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 536ed57c16d135153765ad1f0d8b3a208106b8b2
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e68b269cd333706978bb2ef2433f0e5703e72b37
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37004123"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65338793"
 ---
 # <a name="how-to-define-measures"></a>メジャーを定義する方法
 メジャーでは、アクティビティの計算方法を定義します。 BAM ビューの作成時、ビューのアクティビティにメジャーを定義できます。 たとえば、発注アクティビティの場合は、PO の合計金額、PO の数、PO の平均金額などを計算できます。  
@@ -43,7 +43,7 @@ ms.locfileid: "37004123"
   
 ### <a name="to-add-new-measures"></a>新しいメジャーを追加するには  
   
-1. BAM ビュー ウィザードで、**次**が表示されるまで、**新しい BAM ビュー: 集計ディメンションおよび集計メジャー**ページ。 クリックして**新しいメジャー**します。  
+1. BAM ビュー ウィザードで、**次**が表示されるまで、**新しい BAM ビュー。集計ディメンションおよび集計メジャー**ページ。 クリックして**新しいメジャー**します。  
   
 2. メジャーの名前を入力します。  
   
@@ -63,11 +63,11 @@ ms.locfileid: "37004123"
   
 5. **[OK]** をクリックします。 ディメンションとメジャーの追加が完了したら、クリックして**次**します。  
   
-6. **新しい BAM ビュー: 概要** ページで、新しいビューに関する情報を確認してをクリックし、**次**。  
+6. **新しい BAM ビュー。概要** ページで、新しいビューに関する情報を確認してクリックして**次**します。  
   
 7. クリックして**完了**を完了する、 **BAM ビュー ウィザード**します。  
   
-   BAM ビューにメジャーとディメンションを追加したら、これらの項目を Excel ブックのピボットテーブルに追加できます。 ピボット テーブルの作成の詳細については、[ピボット テーブルを使用する方法](../core/how-to-use-the-pivottable.md)を参照してください。  
+   BAM ビューにメジャーとディメンションを追加したら、これらの項目を Excel ブックのピボットテーブルに追加できます。 ピボット テーブルの作成の詳細については、次を参照してください。[ピボット テーブルを使用する方法](../core/how-to-use-the-pivottable.md)します。  
   
 ## <a name="see-also"></a>参照  
  [ディメンションの定義](../core/defining-dimensions.md)

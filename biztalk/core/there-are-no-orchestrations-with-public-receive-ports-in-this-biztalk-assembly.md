@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c062f5e23972ed841c4c9d614ad58967a07a4fe2
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4f4693321e02d0da6d8cec9b5ae1542fd62af6c5
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36978217"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65400541"
 ---
 # <a name="there-are-no-orchestrations-with-public-receive-ports-in-this-biztalk-assembly"></a>この BizTalk アセンブリには、パブリック受信ポートを保持するオーケストレーションがありません
 ## <a name="details"></a>詳細  
@@ -30,17 +30,17 @@ ms.locfileid: "36978217"
 |  イベント ソース   |                                                                                       0                                                                                       |
 |    コンポーネント    |                                                                                       0                                                                                       |
 |  シンボル名  |                                                                                       0                                                                                       |
-|  メッセージ テキスト   | この BizTalk アセンブリには、パブリック受信ポートを保持するオーケストレーションがありません。 [戻る] をクリックして、パブリック受信ポートを保持するオーケストレーションを含む BizTalk アセンブリを指定してください。 |
+|  メッセージ テキスト   | パブリック オーケストレーションなしに受信ポートをこの BizTalk アセンブリがあります。 [戻る] をクリックし、パブリックでオーケストレーションを含む BizTalk アセンブリを指定の受信ポート |
   
 ## <a name="explanation"></a>説明  
- このエラーは、選択したオーケストレーションにパブリック ポートがないことを示します。  
+ このエラーは、選択したオーケストレーションには、パブリック ポートはありません。 ことを示します。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- パブリック ポートを構成するには、次の手順を実行します。  
+ パブリック ポートを構成するのにには、次の手順を使用します。  
   
 #### <a name="to-configure-a-public-port"></a>パブリック ポートを構成するには  
   
-1.  オーケストレーションを特定し、目的の受信ポートをパブリックにします。  
+1.  オーケストレーションを特定し、目的の受信ポートを公開します。  
   
     1.  ポート構成ウィザードを開きます。  
   
@@ -50,4 +50,4 @@ ms.locfileid: "36978217"
   
      \- または -  
   
-     パブリック受信ポートがある BizTalk アセンブリを読み込みます。
+     受信ポートをパブリックに BizTalk アセンブリを読み込みます。

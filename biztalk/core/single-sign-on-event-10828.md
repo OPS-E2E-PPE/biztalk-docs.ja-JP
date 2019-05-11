@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10828 |Microsoft Docs'
+title: シングル サインオン:イベント 10828 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 62c848fde4c506edd6507aa183ac19f5326e43fb
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8b493df54694461a97cbc6b5e89b86f23fc0ab28
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37024184"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65401158"
 ---
-# <a name="single-sign-on-event-10828"></a>シングル サインオン: イベント 10828
+# <a name="single-sign-on-event-10828"></a>シングル サインオン:イベント 10828
 ## <a name="details"></a>詳細  
   
 |                 |                                                            |
@@ -30,10 +30,10 @@ ms.locfileid: "37024184"
 |  イベント ソース   |                           ENTSSO                           |
 |    コンポーネント    |                            なし                             |
 |  シンボル名  |         ENTSSO_E_PSADMIN_ADAPTER_ALREADY_ASSIGNED          |
-|  メッセージ テキスト   |    アダプターは既にグループ アダプターに割り当てられています。     |
+|  メッセージ テキスト   |    アダプターは、既にグループ アダプタに割り当てられています。     |
   
 ## <a name="explanation"></a>説明  
- 1 つのアダプターは 1 つのグループ アダプターにのみ割り当てることができます。  
+ アダプターは、1 つのグループ アダプターにのみ割り当てることができます。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- ユーザーの操作は必要ありません。
+ ユーザー操作は必要ありません。

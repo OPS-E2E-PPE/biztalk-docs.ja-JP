@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル: Salesforce との BizTalk Server 2013 の統合 |Microsoft Docs'
+title: チュートリアル:BizTalk Server 2013 を Salesforce と統合する |Microsoft Docs
 description: Service Bus および BIzTalk Server を使用する Salesforce と統合するには
 ms.custom: ''
 ms.date: 12/07/2015
@@ -13,41 +13,41 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: aecf9bcd1ef29a1324dc1b040388f17a19a71c52
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2757c2a36c86bb302859f0174e8c53b5bb397025
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37011731"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399169"
 ---
-# <a name="tutorial-integrating-biztalk-server-2013-with-salesforce"></a>チュートリアル: BizTalk Server 2013 を Salesforce と統合します。
-校閲者: [Nick Hauenstein](http://social.msdn.microsoft.com/profile/nick.hauenstein/)、 [Steef-jan Wiggers](http://social.msdn.microsoft.com/profile/steef-jan%20wiggers)  
+# <a name="tutorial-integrating-biztalk-server-2013-with-salesforce"></a>チュートリアル:BizTalk Server 2013 を Salesforce と統合します。
+校閲者:[Nick Hauenstein](http://social.msdn.microsoft.com/profile/nick.hauenstein/)、 [Steef-jan Wiggers](http://social.msdn.microsoft.com/profile/steef-jan%20wiggers)  
   
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 新たなアダプターのハイブリッドなシナリオの多くを構成する、オンプレミスと Azure のテクノロジが可能になりましたに関連するについて説明します。 このチュートリアルでは、Salesforce を社内の [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] に統合するように、一部の新しいアダプターと [!INCLUDE[winazure](../includes/winazure-md.md)] を使用して、純粋にクラウドのエンティティを統合する手順を説明します。 開始する前に、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] と Salesforce を統合することで達成しようとするビジネス上の目的を理解しましょう。  
+ [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 新たなアダプターのハイブリッドなシナリオの多くを構成する、オンプレミスと Azure のテクノロジが可能になりましたに関連するについて説明します。 ここでは、このチュートリアルでは、純粋なクラウド エンティティをオンプレミスと Salesforce の統合などを統合する方法を参照してください[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]いくつかの新しいアダプターを使用して、[!INCLUDE[winazure](../includes/winazure-md.md)]します。 を始める前に統合することで実現するビジネス目標を理解しましょう[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]Salesforce とします。  
   
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] と Salesforce に以前のバージョンの [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を加えたハイブリッド ソリューションを作成することもできますが、Web サービス (SOAP) を利用して Salesforce を統合すると、ソリューションがより複雑になる場合があります。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] と新しいアダプターを使用すると、ソリューションがより簡単になります。  
+ でしたも作成ハイブリッド ソリューションに関する[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]と Salesforce の以前のバージョンに[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ソリューションは Web サービス (SOAP) を使用する Salesforce との対話に関連するはるかに複雑になりますが、します。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]し、新しいアダプターをソリューションがより容易にします。  
   
 ## <a name="business-scenario"></a>ビジネス シナリオ  
- Northwind は販売パイプラインを通じた顧客の追跡のためのソリューションに Salesforce オンライン CRM システムを利用しています。 Salesforce システムで販売機会が作成されるたびに、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] などの社内システムに通知を受けることで、他のダウンストリーム システムがそのデータを取得して他の関連するプロセスを開始できるようにしたいと Northwind は考えています。 Northwind は [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] で利用できる新しいアダプターを使用し、[!INCLUDE[winazure](../includes/winazure-md.md)] の一部のコンポーネントを含むこのソリューションの導入を計画しています。 このソリューションにおけるエンド ツー エンドのデータ フローは次のようになります。  
+ Northwind は、販売パイプラインを使用して顧客を追跡するためのソリューションとしての Salesforce オンライン CRM システムを使用します。 Northwind がなどのオンプレミス システムを希望するたびに、Salesforce で営業案件が作成される[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]通知を受ける他のダウン ストリーム システムがそのデータを選択し、関連するその他のプロセスを開始できるようにします。 使用可能な新しいアダプターを使用して、このソリューションを実装する計画を Northwind[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]の一部のコンポーネントを含めることでも[!INCLUDE[winazure](../includes/winazure-md.md)]します。 これは、ようなソリューションが、エンド ツー エンドのデータ フローの検索です。  
   
-- 営業担当者が Salesforce システムで "営業案件" を作成します。  
+- 営業担当者は、Salesforce システムで、"opportunity"を作成します。  
   
-- 営業案件の状態が “Closed Won” に設定されると、[!INCLUDE[winazure](../includes/winazure-md.md)] 上にホストされるリレー エンドポイントに通知が送信されます。  
+- ホストされているリレー エンドポイントに通知が送信された営業案件の状態が"Closed Won"に設定されている場合[!INCLUDE[winazure](../includes/winazure-md.md)]します。  
   
-- 新しい WCF-BasicHttpRelay アダプターを使用して、通知情報が社内の [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] システムに渡されます。  
+- 新しい Wcf-basichttprelay アダプターを使用して、通知情報が上に渡される[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]オンプレミスがシステムに格納されています。  
   
-- 通知の一部として受け取った情報を使用し、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は新しい WCF-WebHttp アダプターを使用して Salesforce 内の REST エンドポイントを起動し、営業案件に関する詳細情報を取得します。  
+- 通知の一部として受け取った情報を使用して[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]は営業案件に関する詳細を取得する、新しい Wcf-webhttp アダプターを使用して、Salesforce で REST エンドポイントを呼び出します。  
   
-- 最後に、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は Salesforce から受け取った情報を使用して、社内の SQL Server データベース テーブルに発注エントリを作成します。  
+- 最後に、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Salesforce から受信した情報を使用して、社内の SQL Server データベース テーブルで、発注エントリを作成します。  
   
-  このソリューションで説明する統合の意図を達成するには、これらの一連の手順を実行する必要があります。 これらの手順のそれぞれに、ソリューションの作成を続けていく中で見ることになる、広範なアクティビティが含まれています。  
+  これらは、このソリューションで説明されている統合目標を達成するために必要な手順のセットです。 これらの各手順には、見てソリューションの作成に進むとアクティビティの広範なセットが含まれます。  
   
-  次の図では、エンド ツー エンドの統合ソリューションを説明しています。  
+  エンド ツー エンドの統合ソリューションを説明する図を次に示します。  
   
   ![BizTalk Server と Salesforce の統合シナリオ](../core/media/bts-sf-scenario.gif "BTS_SF_Scenario")  
   
 ## <a name="prerequisites"></a>前提条件  
- このソリューションをセットアップするコンピューターには次のソフトウェアをインストールする必要があります。  
+ このソリューションを設定するコンピューターにインストールされている、次のソフトウェアが必要です。  
   
 - [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]  
   
@@ -59,9 +59,9 @@ ms.locfileid: "37011731"
   
   次のサービスのサブスクリプションが必要です。  
   
-- [!INCLUDE[winazure](../includes/winazure-md.md)] サブスクリプション  
+- A[!INCLUDE[winazure](../includes/winazure-md.md)]サブスクリプション  
   
-- Salesforce Developer Edition アカウント  
+- Salesforce の Developer Edition アカウント  
   
 ## <a name="more-resources"></a>その他のリソース  
  このチュートリアルでは、だけでなく参照することできますも統合の詳細については、次のリソース[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]で導入された新しいアダプターを使用して、Salesforce で[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。  
@@ -72,15 +72,15 @@ ms.locfileid: "37011731"
   
 ## <a name="next-steps"></a>次のステップ
   
--   [手順 1: Service Bus 名前空間を作成する](../core/step-1-create-a-service-bus-namespace.md)  
+-   [ステップ 1: Service Bus の Namespace を作成します。](../core/step-1-create-a-service-bus-namespace.md)  
   
--   [手順 2: Salesforce システムのセットアップ](../core/step-2-set-up-the-salesforce-system.md)  
+-   [手順 2:Salesforce システムを設定します。](../core/step-2-set-up-the-salesforce-system.md)  
   
--   [手順 3: Visual Studio での BizTalk Server ソリューションの作成](../core/step-3-create-the-biztalk-server-solution-in-visual-studio.md)  
+-   [ステップ 3:Visual Studio で BizTalk Server ソリューションを作成します。](../core/step-3-create-the-biztalk-server-solution-in-visual-studio.md)  
   
--   [手順 4: BizTalk Server ソリューションの構成](../core/step-4-configure-the-biztalk-server-solution.md)  
+-   [手順 4:BizTalk Server ソリューションを構成します。](../core/step-4-configure-the-biztalk-server-solution.md)  
   
--   [手順 5: ソリューションのテスト](../core/step-5-test-the-solution.md)  
+-   [手順 5:ソリューションをテストします。](../core/step-5-test-the-solution.md)  
   
 ## <a name="see-also"></a>参照  
  [BizTalk Server チュートリアル](../core/biztalk-server-tutorials.md)

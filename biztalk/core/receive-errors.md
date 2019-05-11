@@ -1,5 +1,5 @@
 ---
-title: 受信エラー |Microsoft ドキュメント
+title: エラーを受け取る |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,26 +12,26 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3a04bd00d17a0f59a97f5fec8256e573a2e271a3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 78cdc8f7b0c6b6f730473ddcfffd0f63edd31d02
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22268274"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65398252"
 ---
 # <a name="receive-errors"></a>受信エラー
 ここでは、WCF の受信エラーを診断および解決するための詳細について説明します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [作成する受信場所のコマンドが失敗しました](../core/create-receive-locations-command-failed.md)  
+-   [受信場所の作成コマンドが失敗しました](../core/create-receive-locations-command-failed.md)  
   
--   [分離受信場所のアドレスを登録できませんでした。](../core/failed-to-register-isolated-receiver-for-address.md)  
+-   [アドレスの分離受信場所を登録できませんでした](../core/failed-to-register-isolated-receiver-for-address.md)  
   
--   [受信場所のアドレスが見つかりません。](../core/receive-location-for-address-not-found.md)  
+-   [アドレスの受信場所が見つかりません](../core/receive-location-for-address-not-found.md)  
   
--   [受信場所のメタデータが見つかりません。](../core/receive-location-for-metadata-not-found.md)  
+-   [メタデータの受信場所が見つかりません](../core/receive-location-for-metadata-not-found.md)  
   
--   [トランザクションの要求-応答の受信場所はサポートされていません](../core/transactional-request-response-receive-location-is-not-supported.md)  
+-   [トランザクションの要求 - 応答の受信場所がサポートされていません](../core/transactional-request-response-receive-location-is-not-supported.md)  
   
--   [BizTalk 受信場所を 1 つ以上作成できませんでした。](../core/unable-to-create-one-or-more-biztalk-receive-locations.md)
+-   [BizTalk 受信場所を 1 つ以上作成できませんでした](../core/unable-to-create-one-or-more-biztalk-receive-locations.md)

@@ -2,12 +2,12 @@
 redirect_url: /biztalk/core/deploying-biztalk-adapter-for-tibco-rendezvous/
 redirect_document_id: true
 ROBOTS: NOINDEX
-ms.openlocfilehash: dc60ee1dcdbfe93dc158834fbc54b7dac9cd06f5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 632e33302dba9b7b2c9318c5418787bd60e76ad7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37003291"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65352017"
 ---
 # <a name="deploying-ports-and-assemblies"></a>ポートとアセンブリの展開
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を使用して、ターゲット コンピューター上でポートとアセンブリを複製できます。 ウィザードにより、送信ポートおよび受信場所の構成が XML ファイルにエクスポートされます。  

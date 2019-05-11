@@ -1,5 +1,5 @@
 ---
-title: FIN 対応調整のトラブルシューティング |Microsoft ドキュメント
+title: FIN Response Reconciliation のトラブルシューティング |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,35 +15,35 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a92812086f191d5777b387d9861b32a3147c1e96
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f9fa60b9b9f3034e795c191cc6a40e7288f195ff
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22207418"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377805"
 ---
-# <a name="fin-response-reconciliation-troubleshooting"></a>FIN 対応調整のトラブルシューティング
+# <a name="fin-response-reconciliation-troubleshooting"></a>FIN Response Reconciliation のトラブルシューティング
 ## <a name="the-frr-bam-view-does-not-show-the-message-type-of-a-message"></a>FRR BAM ビューは、メッセージのメッセージの種類を表示しません。  
   
 ### <a name="symptom"></a>現象  
- MRSR サイト FRR BAM ビューには、1 つまたは複数のメッセージのメッセージの種類は表示されません。 メッセージまたはメッセージの他のすべてのデータが表示され、に対してメッセージの種類が表示されるその他のすべてのメッセージ型のインスタンス。  
+ MRSR サイト FRR BAM ビューには、1 つまたは複数のメッセージのメッセージの種類は表示されません。 メッセージまたはメッセージの他のすべてのデータが表示され、メッセージの種類がに対して表示されるその他のすべてのメッセージ型のインスタンス。  
   
 ### <a name="possible-cause"></a>考えられる原因  
- FRRMessageOut アクティビティでは、F21 メッセージ (Ack/NAKs) のメッセージの種類は記録しません。  
+ FRRMessageOut アクティビティでは、F21 メッセージ (Ack/NAKs) のメッセージの種類は記録されません。  
   
-### <a name="solution"></a>解決方法  
- この問題が発生した場合は、F21 メッセージとして MRSR サイト FRR BAM ビューに表示されているメッセージ型を持たないすべてのメッセージを解釈します。  
+### <a name="solution"></a>ソリューション  
+ この問題が発生した場合は、MRSR サイト F21 メッセージとして FRR BAM ビューで表示されているメッセージの種類がないすべてのメッセージを解釈します。  
   
-## <a name="deploying-system-level-schemas-in-a-project-generates-an-error"></a>プロジェクト内のシステム レベルのスキーマを展開するには、エラーが生成されます。  
+## <a name="deploying-system-level-schemas-in-a-project-generates-an-error"></a>プロジェクトでシステム レベルのスキーマを展開するには、エラーが生成されます。  
   
 ### <a name="symptom"></a>現象  
- プロジェクトで FrrSchemas.dll でシステム レベルのスキーマを展開しようとしたときにエラーが発生します。 これらのスキーマの一覧は、次を参照してください。 [FIN 応答タイプ](../../adapters-and-accelerators/accelerator-swift/fin-response-types.md)です。  
+ プロジェクトで FrrSchemas.dll でシステム レベルのスキーマを展開しようとしたときにエラーが表示されます。 これらのスキーマの一覧は、次を参照してください。 [FIN 応答の種類](../../adapters-and-accelerators/accelerator-swift/fin-response-types.md)します。  
   
 ### <a name="possible-cause"></a>考えられる原因  
- FrrSchemas.dll でシステム レベルのスキーマが FrrSchemas.dll に展開します。 展開しようにもう一度、エラーが発生します。  
+ FrrSchemas.dll でシステム レベルのスキーマは、FrrSchemas.dll に既に展開されています。 再度展開エラーが発生しようとしています。  
   
-### <a name="solution"></a>解決方法  
+### <a name="solution"></a>ソリューション  
  FrrSchemas.dll でシステム レベルのスキーマを展開する必要はありません。  
   
 ## <a name="see-also"></a>参照  
- [トラブルシューティング: 問題と解決策](../../adapters-and-accelerators/accelerator-swift/troubleshooting-issues-and-resolutions1.md)
+ [トラブルシューティング: 問題と解決方法](../../adapters-and-accelerators/accelerator-swift/troubleshooting-issues-and-resolutions1.md)

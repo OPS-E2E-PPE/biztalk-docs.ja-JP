@@ -1,5 +1,5 @@
 ---
-title: 証明書を使用して、パーティの解決の |Microsoft ドキュメント
+title: 証明書を使用して、パーティの解決の |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,19 +12,19 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b157191e4004671a8b276f47d15a8589974dfbac
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5b8ebd7023b687cd66ab0de082079330b20c2ac8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22286914"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65401640"
 ---
-# <a name="using-certificates-for-party-resolution"></a>パーティの解決での証明書の使用
-A*パーティ*オーケストレーションと連携する BizTalk Server 外部のエンティティがします。 BizTalk Server は、メッセージを受信すると、公開キー証明書を使用してメッセージの送信者を特定し、その送信者を BizTalk Server 環境の既知のパーティに解決します。  
+# <a name="using-certificates-for-party-resolution"></a>パーティの解決の証明書の使用
+A*パーティ*はオーケストレーションと連携する BizTalk Server 外部のエンティティです。 BizTalk Server では、メッセージを受信したときに、メッセージの送信者を確認して、送信者を BizTalk Server 環境での既知のパーティに解決するのには、公開キー証明書を使用します。  
   
- ここでは、パーティの解決に使用する [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] パイプライン、受信場所、ポート、および BizTalk Server 環境を構成する方法について説明します。  
+ このセクションでは、構成する方法についての情報を提供します。[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]パイプライン、受信場所、ポート、およびパーティの解決用の BizTalk Server 環境。  
   
- メッセージの認証の詳細については、次を参照してください。[メッセージの送信者の認証](../core/authenticating-the-sender-of-a-message.md)です。  
+ メッセージの認証の詳細については、次を参照してください。[メッセージの送信者の認証](../core/authenticating-the-sender-of-a-message.md)します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
  [BizTalk Server パーティの解決を構成する方法](../core/how-to-configure-biztalk-server-for-party-resolution.md)

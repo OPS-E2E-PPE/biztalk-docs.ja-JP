@@ -1,5 +1,5 @@
 ---
-title: マップのテスト |Microsoft ドキュメント
+title: マップのテスト |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,22 +17,22 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 307a149c72f4cb7224f76405250a20d7bfe4edac
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 65923b308d1c1fb8ec6d2122322f9441f6485df1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22279618"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65299209"
 ---
 # <a name="testing-maps"></a>マップのテスト
-マップのコンパイルが警告なしで完了したら、次にマップをテストします。 このセクションでは、マップのテストに関するさまざまな側面について説明します。  
+マップのコンパイルが警告なしに後、をテストします。 このセクションでは、マップのテストのさまざまな側面について説明します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [テスト用のマップ ファイル プロパティを使用します。](../core/using-map-file-properties-for-testing.md)  
+-   [テストに必要なマップ ファイルのプロパティの使用](../core/using-map-file-properties-for-testing.md)  
   
 -   [インスタンス データの検証](../core/validating-instance-data.md)  
   
--   [送信元インスタンス メッセージ内の空のノードの値](../core/empty-node-values-in-source-instance-messages.md)  
+-   [送信元インスタンス メッセージの空のノードの値](../core/empty-node-values-in-source-instance-messages.md)  
   
--   [省略可能なノード](../core/optional-nodes.md)
+-   [省略可能ノード](../core/optional-nodes.md)

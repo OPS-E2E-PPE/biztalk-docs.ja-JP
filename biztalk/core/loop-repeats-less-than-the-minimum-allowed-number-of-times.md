@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e5457110830a2e38e592ff58e7da672373a139d1
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 27188ecbf45cb147d718a7349c123ce195c4a1a4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37012315"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65380499"
 ---
 # <a name="loop-repeats-less-than-the-minimum-allowed-number-of-times"></a>ループの繰り返し回数が許容される最小値を下回っています
 ## <a name="details"></a>詳細  

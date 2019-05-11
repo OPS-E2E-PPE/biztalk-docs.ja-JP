@@ -1,5 +1,5 @@
 ---
-title: オーケストレーション デバッガーの報告モード |Microsoft ドキュメント
+title: オーケストレーション デバッガーのモードのレポート |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,19 +16,19 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f51c80c8e11545180720a5ec1cf0f28b7f8b6f6d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 436457dd8addc1add819a657e61113eaa8a2ec91
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22268570"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65397869"
 ---
 # <a name="reporting-mode-in-orchestration-debugger"></a>オーケストレーション デバッガーの報告モード
-報告モードでは、追跡したイベントを使用して、何が発生したかを示します。 使用して追跡データを使用して、**オーケストレーション イベント**オプション フラグ。 このフラグは、オーケストレーション インスタンスの実行前に設定する必要があります。 イベントの特定のオーケストレーションの追跡を有効にするを参照してください。[オーケストレーションの追跡を構成する方法](../core/how-to-configure-tracking-for-an-orchestration.md)です。  
+報告モードでは、追跡したイベントを使用して、起こったかを示します。 使用して追跡データを使用して、**オーケストレーション イベント**オプション フラグ。 このフラグは、オーケストレーション インスタンスの実行前に設定する必要があります。 イベントの特定のオーケストレーションの追跡を有効にするのを参照してください。[オーケストレーションの追跡を構成する方法](../core/how-to-configure-tracking-for-an-orchestration.md)します。  
   
- **オーケストレーション イベント**オプションはこれが発生すると、オーケストレーション内の各図形の実行を追跡します。 報告モードでは、手順を繰り返したり、オーケストレーションのクラスにブレークポイントを設定でき、その後、対話モードを使用して、新しいインスタンスをデバッグできます。  
+ **オーケストレーション イベント**オプションと同様に、オーケストレーション内の各図形の実行を追跡します。 報告モードでは、ステップを再生したり対話型モードを使用して新しいインスタンスをデバッグできるように、オーケストレーションのクラスにブレークポイントを設定できます。  
   
- 関心のあるビジネス プロセスを実行した後、調査するオーケストレーションに対して報告ビューのクエリのいずれか 1 つを使用できます。  
+ 興味のあるビジネス プロセスを実行した後は、調査するオーケストレーションの報告ビューのクエリのいずれかを使用できます。  
   
 ## <a name="see-also"></a>参照  
  [オーケストレーション デバッガーの対話モード](../core/interactive-mode-in-orchestration-debugger.md)   

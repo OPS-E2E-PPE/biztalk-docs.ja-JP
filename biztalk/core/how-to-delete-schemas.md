@@ -1,5 +1,5 @@
 ---
-title: スキーマを削除する方法 |Microsoft ドキュメント
+title: スキーマを削除する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,24 +12,24 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1bdf62c577e7e811f470ae455f74ca13686697fb
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 28a09a5f209e71ce11f1358ecbe32bfb36dea144
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22248650"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65385305"
 ---
 # <a name="how-to-delete-schemas"></a>スキーマを削除する方法
-BizTalk プロジェクトからスキーマを除外するだけではなく、スキーマをハード ディスクから完全に削除したい場合があります。 これは、スキーマの除外ではなく、削除と呼ばれます。 このトピックでは、スキーマの削除に必要な手順について説明します。  
+だけでなく、BizTalk プロジェクトのスキーマを除外する、スキーマをハード_ディスクからも完全に削除する必要になります。 これは、スキーマの除外ではなく、削除と呼ばれます。 このトピックでは、スキーマを削除に必要な手順について説明します。  
   
 ### <a name="to-delete-a-schema"></a>スキーマを削除するには  
   
-1.  ソリューション エクスプ ローラーで、削除、およびをクリックするスキーマを右クリックして**削除**です。  
+1.  ソリューション エクスプ ローラーで、削除、およびクリックするスキーマを右クリックして**削除**します。  
   
 2.  確認のダイアログ ボックスで **[OK]** をクリックします。  
   
 > [!NOTE]
->  削除したスキーマは、ファイル システムから完全に消去されるため、慎重に操作するとともに、定期的にファイルをバックアップしてください。  
+>  削除したスキーマは、ファイル システムから完全に削除慎重、そのため、ファイルを定期的にバックアップを選択します。  
   
 ## <a name="see-also"></a>参照  
- [プロジェクト内のスキーマを管理します。](../core/managing-schemas-within-projects.md)
+ [プロジェクト内のスキーマの管理](../core/managing-schemas-within-projects.md)

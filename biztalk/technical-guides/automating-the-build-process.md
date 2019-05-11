@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 22752c413446c0964b8af11b76a2e262fdc40a2d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8591440cf129ea8bf0dbd9bdb4a423d77be8026c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36997731"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65401318"
 ---
 # <a name="automating-the-build-process"></a>ビルド プロセスを自動化します。
 ビルド プロセスを自動化では、コンパイル、展開し、プロジェクトの最新のソース コードに対して、事前に定義された定期的な間隔でビルド確認テスト (Bvt) を実行します。 「ビルド レポートを」ビルド処理の成否に関する詳細はプロジェクト利害関係者に配布します。 ビルド レポートは、プロジェクトの領域が対応し、プロジェクトを以前のバージョン/ビルド ロールバックかどうかに必要かを判断分析されます。  
@@ -77,7 +77,7 @@ ms.locfileid: "36997731"
   
  機能テストが、ソリューションのすべての可能なパスをカバーするように設計ことが重要です。 これだけでなくこれらのシナリオを含める必要があります、運用環境で期待がもエラー パスと例外処理のパスを実装しているが、– 使用することと思いますこの説明によく使用される 1 つの語句が「悪いシナリオ」のテストは、 すべてのオーケストレーション、すべての許容されるメッセージの種類を確認してくださいし、すべてのコード分岐が、機能テスト スイートで実行されます。 次のセクションでは、テスト_ケースの開発正および負機能すべてのコード パスをカバーするについて説明します。  
   
- 運用環境に BizTalk Server ソリューションを配置する前に実装する必要があります、その他のテスト カテゴリと機能テストの詳細については、トピックを参照してください[チェックリスト: 運用準備のテスト](http://go.microsoft.com/fwlink/?LinkId=160138)で、BizTalk Server 2010 操作ガイド 』 [ http://go.microsoft.com/fwlink/?LinkId=160138](http://go.microsoft.com/fwlink/?LinkId=160138)します。  
+ 運用環境に BizTalk Server ソリューションを配置する前に実装する必要があります、その他のテスト カテゴリと機能テストの詳細については、トピックを参照してください[チェックリスト。運用準備のテスト](http://go.microsoft.com/fwlink/?LinkId=160138)で BizTalk Server 2010 操作ガイドの[ http://go.microsoft.com/fwlink/?LinkId=160138](http://go.microsoft.com/fwlink/?LinkId=160138)します。  
   
 ### <a name="positive-tests"></a>ポジティブ テスト  
   
@@ -109,7 +109,7 @@ ms.locfileid: "36997731"
  各機能のテストを記述するために必要な開発作業を最小限に抑えるには重要です。 通常より高価な少なくテスト_ケースを終了可能性がありますが (時間)、開発の観点から何かを生成するためには。 つまり、コードに対してテスト カバレッジのレベルを必要があります。 テスト フレームワークを使用すると、テスト_ケースを迅速かつ簡単に作成でき、そのため、簡単に完全なコード カバレッジを取得できます。 ほとんどの適切なテスト フレームワークでは、テストを定義する宣言型のアプローチを使用します。 (つまり、テストの構成に格納されます、構成ファイル、XML ファイルは、通常。)使用する適切なテストのフレームワークにより、機敏性と信頼性の高い方法でテスト スイートに完全な機能を開発して、"車輪の繰り返し、軽減する必要がなくなります。  
   
 ## <a name="msbuild-support-for-biztalk-server-projects"></a>BizTalk Server プロジェクトの MSBUILD サポート。  
- BizTalk Server では、Visual Studio がインストールされていないビルド ラボ環境でのマネージ プロジェクトのビルドに対応する Microsoft ビルド エンジン (MSBUILD) プラットフォームのサポートを提供します。 MSBUILD は、コマンドラインと MSBUILD ログ記録とバッチ処理を含む高度な機能からのプロジェクトのビルドに対応します。 MSBUILD の詳細については、[MSBuild の概要](http://go.microsoft.com/fwlink/?LinkId=131739)(http://go.microsoft.com/fwlink/?LinkId=131739)を参照してください。  
+ BizTalk Server では、Visual Studio がインストールされていないビルド ラボ環境でのマネージ プロジェクトのビルドに対応する Microsoft ビルド エンジン (MSBUILD) プラットフォームのサポートを提供します。 MSBUILD は、コマンドラインと MSBUILD ログ記録とバッチ処理を含む高度な機能からのプロジェクトのビルドに対応します。 MSBUILD の詳細については、次を参照してください。 [MSBuild の概要](http://go.microsoft.com/fwlink/?LinkId=131739)(http://go.microsoft.com/fwlink/?LinkId=131739)します。  
   
 ## <a name="see-also"></a>参照  
  [自動テストの実装](../technical-guides/implementing-automated-testing.md)

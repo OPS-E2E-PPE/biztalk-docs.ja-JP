@@ -13,12 +13,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5ac7a1c2cda4fd66e450d23022787f5e7d0e0324
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4586563f3f218b818555ac683207afe4d02a7229
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37006451"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65376054"
 ---
 # <a name="samples-for-the-oracle-database-adapter"></a>Oracle データベース アダプターのサンプル
 サンプルは[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]に分類されます。  
@@ -30,7 +30,7 @@ ms.locfileid: "37006451"
 - WCF チャネル モデルのサンプル  
 
   
-サンプルについては、「 [BizTalk Adapter Pack 2010: Oracle データベース アダプタ サンプル](https://www.microsoft.com/download/details.aspx?id=4675)します。 テーブルと、サンプルで使用されるパッケージを作成するための SQL スクリプトが含まれます。 
+サンプルについては、「 [BizTalk Adapter Pack 2010。Oracle データベース アダプタ サンプル](https://www.microsoft.com/download/details.aspx?id=4675)します。 テーブルと、サンプルで使用されるパッケージを作成するための SQL スクリプトが含まれます。 
 
 > [!NOTE]
 > [!INCLUDE[files-need-updated](../../includes/files-need-updated.md)]

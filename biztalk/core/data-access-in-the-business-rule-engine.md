@@ -1,5 +1,5 @@
 ---
-title: ビジネス ルール エンジンでのデータ アクセス |Microsoft ドキュメント
+title: ビジネス ルール エンジンでのデータ アクセス |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,30 +16,30 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 58de70c2befd13f4995ebd073ebd70a2e7d84ea7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c685f0af9bb1750e2507c41d51e11774ae457ce0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22238618"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65390033"
 ---
 # <a name="data-access-in-the-business-rule-engine"></a>ビジネス ルール エンジンでのデータ アクセス
-ルール エンジンは、.NET オブジェクトだけをネイティブにサポートしています。 データベースのデータを扱う場合、直接 ADO.NET オブジェクトを使用できます。ただし、このエンジンにはヘルパー クラスが提供されているので、データベースのデータをルールから簡単に使用できます。 ルール エンジンは、次の 3 つのデータベースに関連する型を公開することでのサポートを拡張します。 **TypedDataRow**、 **TypedDataTable**、および**DataConnection**です。 このセクションでは、これらのヘルパー クラス、それぞれの型を使用するタイミングに関する推奨事項、およびそれぞれの型を使用する際のパフォーマンスへの影響について説明します。  
+ルール エンジンは、.NET オブジェクトだけをネイティブにサポートします。 データベースからデータを処理するためにする ADO.NET オブジェクトを直接使用できますが、エンジンのルールからデータをデータベースの使用を簡略化するいくつかのヘルパー クラスを提供します。 ルール エンジンは、次の 3 つのデータベースに関連する型を公開することで、サポートを拡張します。**TypedDataRow**、 **TypedDataTable**、および**DataConnection**します。 このセクションでは、これらのヘルパー クラスをについて説明します、種類ごとを使用するタイミングに関する推奨事項およびそれらを使用する場合にパフォーマンスへの影響について説明します。  
   
- 用意されているヘルパー クラスは次のとおりです。  
+ ヘルパー クラスは次のとおりです。  
   
--   **TypedDataRow です。** ADO.NET への参照を使用して構築**DataRow**インスタンス。 **TypedDataRow**はルールに最適な 1 つまたは少数の特定のテーブルから行のデータをそのだけを処理します。  
+-   **TypedDataRow します。** ADO.NET への参照を使用して構築された**DataRow**インスタンス。 **TypedDataRow**ルールに最適なは、その 1 つまたは少数の特定のテーブルから行のデータだけを処理します。  
   
--   **TypedDataTable です。** コレクションでは文字どおり**TypedDataRow**オブジェクト。 データベース テーブルの各行としてラップする、 **TypedDataRow**され、ルール エンジンによって作業メモリにアサートします。  
+-   **TypedDataTable.** コレクションでは文字どおり**TypedDataRow**オブジェクト。 データベース テーブルの各行としてラップされる、 **TypedDataRow**ルール エンジンによって作業メモリにアサートされたとします。  
   
-     A **TypedDataTable**インメモリ ADO.NET が必要です**DataTable**、パフォーマンスのオーバーヘッドの場合は、この特定できる**DataTable**非常に大量行にはが含まれています。 少数のデータベース テーブルの行が関連するルールを使用してを呼び出す前にこれらの行を判断した場合、 **DataTable**、それ以外の場合を使用して**TypedDataRow**です。前提は、多数の DataTable 内の行がルールに関連することです。  
+     A **TypedDataTable**メモリで ADO.NET を必要と**DataTable**、パフォーマンスのオーバーヘッドの場合は、この特定できる**DataTable**非常に多く行にはが含まれています。 少数のデータベース テーブルの行が関連して、ルールを呼び出す前にこれらの行を決定する場合、 **DataTable**、それ以外の場合を使用して、 **TypedDataRow**します。前提は、多数のデータ テーブル内の行が規則に関連することです。  
   
--   **DataConnection です。** : データベース接続を通じてアクセスするデータベースのテーブルを表します。 違い**DataConnection**と**TypedDataTable**に加えて、データセット名とテーブル名は**DataConnection**使用可能なデータベースが必要です接続し、必要に応じて、データベースのトランザクション コンテキスト。  
+-   **DataConnection します。** データベース接続を通じてアクセスするデータベース内のテーブルを表します。 間の差**DataConnection**と**TypedDataTable**だけでなく、データセット名とテーブル名、つまり**DataConnection**使用可能なデータベースが必要です接続し、必要に応じてデータベースのトランザクション コンテキスト。  
   
-     一部またはすべての述語をルールで使用される、 **DataConnection**データベース接続に対するクエリの制約の一部になります。 クエリの制約を満たす行だけがデータベースから取得され、エンジンで使用されます。 このメカニズムは、パフォーマンスを向上させると、非常に大きなを保持しているよりも少ないメモリを消費**DataTable**メモリにします。  
+     一部またはすべての述語をルールで使用される、 **DataConnection**データベース接続に対するクエリの制約の一部になります。 クエリの制約を満たす行だけがデータベースから取得し、エンジンによって使用します。 このメカニズムは、パフォーマンスが向上し、非常に大きなを保持しているよりもメモリを消費**DataTable**メモリにします。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [DataConnection を使用する際の考慮事項](../core/considerations-when-using-dataconnection.md)  
+-   [DataConnection を使用する際の注意事項](../core/considerations-when-using-dataconnection.md)  
   
 -   [DataConnection と TypedDataTable の使用](../core/using-dataconnection-and-typeddatatable.md)

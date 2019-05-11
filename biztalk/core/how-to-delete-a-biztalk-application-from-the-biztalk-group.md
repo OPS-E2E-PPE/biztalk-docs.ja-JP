@@ -22,12 +22,12 @@ caps.latest.revision: 28
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7afb7dc0d92f48d2db0ae0e38fbb86f2504c8168
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3125ef9bc0f30b944c487c2edcba70e1e270dbc4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36989627"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65385382"
 ---
 # <a name="how-to-delete-a-biztalk-application-from-the-biztalk-group"></a>BizTalk グループから BizTalk アプリケーションを削除する方法
 BizTalk グループからアプリケーションを削除できます。 アプリケーションを削除すると、グループの BizTalk データベースからアプリケーションのデータがすべて削除され、BizTalk Server 管理コンソールにアプリケーションが表示されなくなります。 アプリケーションはアンインストールされません。  
@@ -36,13 +36,13 @@ BizTalk グループからアプリケーションを削除できます。 ア�
   
 -   アプリケーションを削除する前に、アプリケーションを停止しておく必要があります。 」の説明に従って、アプリケーションを停止するための完全停止オプションを使用する必要があります[BizTalk アプリケーション開始および停止方法](../core/how-to-start-and-stop-a-biztalk-application.md)します。  
   
--   アプリケーションを削除できるのは、削除対象のアプリケーションを他のアプリケーションが参照していない場合だけです。 削除するアプリケーションを他のアプリケーションが参照している場合、先に他のアプリケーションから参照を削除する必要があります。 手順については、[別のアプリケーションへの参照を削除する方法](../core/how-to-remove-a-reference-to-another-application.md)を参照してください。  
+-   アプリケーションを削除できるのは、削除対象のアプリケーションを他のアプリケーションが参照していない場合だけです。 削除するアプリケーションを他のアプリケーションが参照している場合、先に他のアプリケーションから参照を削除する必要があります。 手順については、次を参照してください。[別のアプリケーションへの参照を削除する方法](../core/how-to-remove-a-reference-to-another-application.md)します。  
   
--   削除対象のアプリケーションの送信ポート グループに、他のアプリケーションの送信ポートが属している場合、そのアプリケーションは削除できません。 メンバーとなっている送信ポートを参加解除してから、アプリケーションを削除する必要があります。 手順については、[送信ポートまたは送信ポート グループを参加解除する方法](../core/how-to-unenlist-a-send-port-or-send-port-group.md)を参照してください。  
+-   削除対象のアプリケーションの送信ポート グループに、他のアプリケーションの送信ポートが属している場合、そのアプリケーションは削除できません。 メンバーとなっている送信ポートを参加解除してから、アプリケーションを削除する必要があります。 手順については、次を参照してください。[送信ポートまたは送信ポート グループを参加解除する方法](../core/how-to-unenlist-a-send-port-or-send-port-group.md)します。  
   
--   削除対象のアプリケーションに、パーティによって参照されている送信ポートが含まれている場合、そのアプリケーションは削除できません。 パーティから参照を削除するか、送信ポートを削除するか、または送信ポートを別のアプリケーションに移動します。 これらのタスクを実行する方法の詳細については、[方法を表示または編集するパーティ](http://msdn.microsoft.com/library/42e6f3a0-8f7d-4f6c-ab05-a1fab7bf46ca)、[送信ポートを削除する方法](../core/how-to-delete-a-send-port.md)、または[を別のアプリケーション アイテムの移動方法](../core/how-to-move-an-artifact-to-a-different-application.md)を参照してください。  
+-   削除対象のアプリケーションに、パーティによって参照されている送信ポートが含まれている場合、そのアプリケーションは削除できません。 パーティから参照を削除するか、送信ポートを削除するか、または送信ポートを別のアプリケーションに移動します。 これらのタスクを実行する方法の詳細については、次を参照してください。[方法を表示または編集するパーティ](http://msdn.microsoft.com/library/42e6f3a0-8f7d-4f6c-ab05-a1fab7bf46ca)、[送信ポートを削除する方法](../core/how-to-delete-a-send-port.md)、または[を別のアプリケーション アイテムの移動方法](../core/how-to-move-an-artifact-to-a-different-application.md)します。  
   
--   既定のアプリケーションは削除できません。 別のアプリケーションを既定にしてから削除する必要があります。 手順については、[既定のアプリケーションを変更する方法](../core/how-to-change-the-default-application.md)を参照してください。  
+-   既定のアプリケーションは削除できません。 別のアプリケーションを既定にしてから削除する必要があります。 手順については、次を参照してください。[既定のアプリケーションを変更する方法](../core/how-to-change-the-default-application.md)します。  
   
 -   削除対象のアプリケーションのオーケストレーションに、中断したインスタンスが含まれている場合、そのアプリケーションは削除できません。  
   
@@ -69,11 +69,11 @@ BizTalk グループからアプリケーションを削除できます。 ア�
   
 #### <a name="using-the-command-line"></a>コマンドラインを使用  
   
-1. 次のように、コマンド プロンプトを開きます: をクリックして**開始**、 をクリックして**実行**、型`cmd`、順にクリックします**OK**。  
+1. 次のように、コマンド プロンプトを開きます。をクリックして**開始**、 をクリックして**実行**、型`cmd`、順にクリックします**OK**。  
   
 2. 次の表に示すように、適切な値を置き換えて、次のコマンドを入力します。  
   
-    **BTSTask RemoveApp/applicationname は:** *値*[**/Server:**<em>値</em>] [**/database:**<em>値</em>]  
+    **BTSTask RemoveApp /ApplicationName:** *value* [**/Server:**<em>value</em>] [**/Database:**<em>value</em>]  
   
     例:  
   
@@ -83,7 +83,7 @@ BizTalk グループからアプリケーションを削除できます。 ア�
    |---------------|-----------|  
    |**/ApplicationName**|削除する BizTalk アプリケーションの名前。 名前にスペースが含まれている場合は、二重引用符 (") で囲む必要があります。|  
    |**/サーバー**|BizTalk 管理データベースをホストする SQL Server インスタンスの名前です。 Database パラメーターを指定する場合は必須です。 Server パラメーターおよび Database パラメーターを指定しなかった場合、グループの既定の BizTalk 管理データベースが使用されます。|  
-   |**/データベース**|BizTalk 管理データベースの名前。 Server パラメーターを指定する場合は必須です。 Server パラメーターおよび Database パラメーターを指定しなかった場合、グループの既定の BizTalk 管理データベースが使用されます。|  
+   |**/Database**|BizTalk 管理データベースの名前。 Server パラメーターを指定する場合は必須です。 Server パラメーターおよび Database パラメーターを指定しなかった場合、グループの既定の BizTalk 管理データベースが使用されます。|  
   
 ## <a name="see-also"></a>参照  
  [BizTalk アプリケーションを展開解除](../core/undeploying-biztalk-applications.md)   

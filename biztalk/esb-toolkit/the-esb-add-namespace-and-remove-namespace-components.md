@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ef25458cdf578930f46bdb702feb283a171d1529
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4a7dee9bf5280e7b27fbd8323fbaca913706f195
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36971427"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399843"
 ---
 # <a name="the-esb-add-namespace-and-remove-namespace-components"></a>ESB Namespace を追加し、Namespace コンポーネントを削除
 多くの企業では、時と標準がまだに新たな、一般的なドキュメントの共有が XML テクノロジの早期採用者がいました。 そのため、それらが厳密に適用ですが、通常は、今日の一意のルート名前空間を含めるための要件。  
@@ -85,4 +85,4 @@ ms.locfileid: "36971427"
   
 - **RemoveByteOrderMark**します。 これは、コンポーネントがバイト順マークを削除するかどうかを示すブール型プロパティ (通常は**0xEFBB、0xBFFFFE、** または**0 xfeff**)、XML ドキュメント ストリームの先頭から。  
   
-  これらのコンポーネントを使用する方法の例は、[をインストールすると、Namespace コンポーネント サンプルを実行している](../esb-toolkit/installing-and-running-the-namespace-component-sample.md)を参照してください。
+  これらのコンポーネントを使用する方法の例は、次を参照してください。[をインストールすると、Namespace コンポーネント サンプルを実行している](../esb-toolkit/installing-and-running-the-namespace-component-sample.md)します。

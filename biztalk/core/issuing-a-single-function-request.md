@@ -1,5 +1,5 @@
 ---
-title: 単一関数の要求を発行する |Microsoft ドキュメント
+title: 単一関数の要求の発行 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,18 +16,18 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a12a91c3f155b3e2e2085edaf15fdbf8f1757f46
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: bfa7b9c72b04a70d2a8a18b8a47c2e2099839e3b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22262034"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65380700"
 ---
 # <a name="issuing-a-single-function-request"></a>単一関数の要求の発行
-次の GetEffectiveAddress の例は JD Edwards EnterpriseOne への単一関数の呼び出しであり、この要求の結果は標準の応答ドキュメントです。 単一関数の要求では、XML オブジェクト内の 1 つの callMethod だけを指定します。  
+次の例では、GetEffectiveAddress、JD Edwards EnterpriseOne では、単一関数呼び出しであるし、この要求の結果は標準の応答ドキュメント。 単一関数の要求では、XML オブジェクト内で 1 つだけの callMethod を指定します。  
   
-## <a name="example-executing-a-business-function-with-a-single-function-call"></a>例: 単一関数の呼び出しによるビジネス関数の実行  
- 次のコードは、GetEffectiveAddress 要求ドキュメントのサンプルです。 これは、BizTalk Server で、生成された項目を追加する際に作成される XSD から、XML インスタンスとして生成されます。 この要求ドキュメントのサンプルは、送信ポート構成の ATTRIBUTE_STYLE スキーマ スタイルを使用して生成されています。  
+## <a name="example-executing-a-business-function-with-a-single-function-call"></a>例:単一関数の呼び出しによるビジネス関数の実行  
+ GetEffectiveAddress 要求ドキュメントのサンプルを次に示します。 BizTalk Server によって生成された項目を追加するときに作成される XSD から XML インスタンスとして生成されます。 この要求ドキュメントのサンプルは、送信ポートの構成の ATTRIBUTE_STYLE スキーマ スタイルを使用して生成されました。  
   
  **要求 XML のサンプル**  
   
@@ -41,7 +41,7 @@ ms.locfileid: "22262034"
   
 ```  
   
- J. d. から返される GetEffectiveAddress 応答の例を次に示します Edwards EnterpriseOne は、GetEffectiveAddress 要求への応答として。  
+ 次は、j. d. によって返される GetEffectiveAddress 応答のサンプル Edwards EnterpriseOne は、GetEffectiveAddress 要求への応答として。  
   
  **応答 XML のサンプル**  
   
@@ -171,4 +171,4 @@ ms.locfileid: "22262034"
 ```  
   
 ## <a name="see-also"></a>参照  
- [付録 a: サンプル ファイル](../core/appendix-a-sample-files.md)
+ [付録 a:サンプル ファイル](../core/appendix-a-sample-files.md)

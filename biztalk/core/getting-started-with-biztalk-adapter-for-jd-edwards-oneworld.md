@@ -1,5 +1,5 @@
 ---
-title: BizTalk adapter for JD Edwards OneWorld 開始 |Microsoft ドキュメント
+title: BizTalk Adapter JD Edwards OneWorld を開始する |Microsoft Docs
 description: インストールし、BizTalk Server で JD Edwards OneWorld の BizTalk アダプターのチュートリアルを行う手順
 ms.custom: ''
 ms.date: 10/16/2017
@@ -13,20 +13,20 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3bfae9bd57e79f49fef2d318b88e4f1b43d44301
-ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
+ms.openlocfilehash: 19528c093d8450f72e8f81cefc5e2fc7d693fbea
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2017
-ms.locfileid: "23450555"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65387663"
 ---
-# <a name="get-started-with-biztalk-adapter-for-jd-edwards-oneworld"></a>BizTalk adapter for JD Edwards OneWorld の開始します。
+# <a name="get-started-with-biztalk-adapter-for-jd-edwards-oneworld"></a>BizTalk Adapter JD Edwards OneWorld を開始します。
 
 ## <a name="overview"></a>概要
-Microsoft BizTalk Adapter for JD Edwards OneWorld により、JD Edwards OneWorld のビジネス関数を BizTalk Server で利用することが可能になります。 ここでは、このアダプターを紹介し、このアダプターの主要な機能について説明します。また、JD Edwards OneWorld に固有の情報にアクセスするようにアダプターを設定する方法について説明し、簡単なチュートリアルを提供します。  
+Microsoft BizTalk Adapter for JD Edwards OneWorld により、JD Edwards OneWorld のビジネス関数を BizTalk Server で利用することが可能になります。 このセクションでは、アダプターが導入されています、その主な機能について説明します、JD Edwards OneWorld に固有のアクセスについては、するための設定および簡単なチュートリアルを提供する方法について説明します。  
   
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
   
 -   [BizTalk Adapter for JD Edwards OneWorld のインストール](../core/installing-biztalk-adapter-for-jd-edwards-oneworld.md)  
   
--   [チュートリアル: BizTalk アダプターを使用して JD Edwards OneWorld の](../core/tutorial-using-the-biztalk-adapter-for-jd-edwards-oneworld.md)
+-   [チュートリアル: BizTalk Adapter for JD Edwards OneWorld の使用](../core/tutorial-using-the-biztalk-adapter-for-jd-edwards-oneworld.md)

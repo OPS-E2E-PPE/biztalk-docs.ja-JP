@@ -1,5 +1,5 @@
 ---
-title: 送信アダプターの SSO のサポート |Microsoft ドキュメント
+title: 送信アダプターの SSO のサポート |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,41 +12,41 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d590ada6b8ee80c942714a698d0001c207ac6751
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: efe1b6eac59478dea5e7ba56351c543c04f8c223
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22278434"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65398960"
 ---
 # <a name="sso-support-for-send-adapters"></a>送信アダプター用の SSO サポート
-エンタープライズ シングル サインオン (SSO) には、ローカル、ネットワーク、およびドメインの境界間で暗号化されたユーザーの資格情報を格納および転送するサービスが用意されています。 トランスポート アダプターを作成する場合は、SSO API を利用して、トランスポート アダプターがバックエンドのアプリケーションにアクセスするために使用するユーザーの資格情報を処理できます。  
+エンタープライズ シングル サインオン (SSO) では、暗号化されたユーザー資格情報をローカル、ネットワーク、およびドメインの境界を格納および転送するサービスを提供します。 トランスポート アダプターを作成する場合は、トランスポート アダプターがバックエンド アプリケーションへのアクセスに使用するユーザーの資格情報を処理するために SSO Api を利用できます。  
   
- SSO をサポートしないトランスポート アダプターは、通常、1 セットのバックエンド アプリケーションにアクセスするために使用する資格情報を使用して設定する必要があります。 多くのバックエンド システムの場合、単一のアカウント認証ではすべてのセキュリティの実施に対応できません。 多くのアプリケーションは、それらのアプリケーションにアクセスしているユーザーに応じて異なるアクセス権を提供します。 アダプターは、SSO を使用して、アクセスしようとしているユーザーに基づいてエンドポイントに使用する資格情報を動的に選択できます。  
+ SSO をサポートしないトランスポート アダプターは、通常、バックエンド アプリケーションにアクセスするために使用する資格情報の 1 つのセットで構成される必要です。 多くのバックエンド システムでは、1 つのアカウントの認証がすべてのセキュリティの実施を満たしていません。 多くのアプリケーションでは、それらにアクセスしているユーザーに応じて異なるアクセス権を提供します。 SSO により、アダプターを動的にアクセスしようとしたユーザーに基づくエンドポイントに使用する資格情報を選択します。  
   
-## <a name="how-send-adapters-work-with-sso"></a>送信アダプターと SSO の連携  
- SSO をサポートするアダプターを検証し、チケットを引き換えるし、を使用して、SSO システムからユーザーの資格情報を取得送信、 **ISSOTicket.ValidateAndRedeemTicket** API です。 アダプターは、取得した資格情報を使用して送信先エンドポイントを認証します。  
+## <a name="how-send-adapters-work-with-sso"></a>アダプターと SSO の連携を送信する方法  
+ 送信の SSO をサポートするアダプターを検証し、チケットを引き換えるし、を使用して、SSO システムからユーザーの資格情報を取得、 **ISSOTicket.ValidateAndRedeemTicket** API。 アダプターは、送信先エンドポイントに対する認証を取得した資格情報を使用します。  
   
- 次のコードは、送信アダプターが SSO システムからユーザーの資格情報を取得する方法を示しています。  
+ 次のコード フラグメントでは、送信アダプターが SSO システムからユーザーの資格情報を取得する方法を示しています。  
   
 ```  
 public class MyAdapter : IBTTransport,   
-                         IBTTransportConfig,   
-                         IBTTransportControl,  
-                        IPersistPropertyBag,   
-                         IBaseComponent  
+                         IBTTransportConfig,   
+                         IBTTransportControl,  
+                        IPersistPropertyBag,   
+                         IBaseComponent  
 {  
 ...  
-     private string m_UserName = null;  
-     private string m_UserPassword = null;  
+     private string m_UserName = null;  
+     private string m_UserPassword = null;  
   
  // Get user credentials from SSO  
  // AffiliateAppVal is the name of SSO affiliate   
  // application for the specific destination endpoint  
-     private void GetUserCredentials(  
+     private void GetUserCredentials(  
  IBaseMessage message,   
  string AffiliateAppVal )  
-     {  
+     {  
  string creds[] = null;  
  string externalUserName = null;  
   
@@ -59,15 +59,15 @@ public class MyAdapter : IBTTransport,
   
  m_UserName = externalUserName;  
  m_UserPassword = creds[0];  
-     }  
+     }  
 ...  
 }  
 ```  
   
 ## <a name="party-resolution"></a>パーティの解決  
- パーティの解決パイプライン コンポーネントは、送信者の証明書または送信者のセキュリティ ID (SID) を、対応する構成済み BizTalk Server パーティにマップします。 この情報が使用できるようにするアダプターがコンテキスト プロパティには、2 つのシステム メッセージの設定する必要があります**WindowsUser**と**SignatureCertificate**、下流のパーティの解決が使用します。構成されている場合のコンポーネント。  
+ パーティの解決パイプライン コンポーネントは、送信者の証明書または送信者のセキュリティ識別子 (SID) を対応する構成済みの BizTalk Server パーティにマップします。 この情報が使用できるようにするアダプター設定の 2 つのシステム メッセージ コンテキスト プロパティでは、必要があります**WindowsUser**と**SignatureCertificate**、下流のパーティの解決で使用するにはコンポーネントは構成されている場合。  
   
- **WindowsUser**プロパティには、たとえば redmond\myBtsUser、送信者のドメイン ユーザーが設定されます。 **SignatureCertificate**プロパティには、クライアント認証証明書の拇印が設定されます。  
+ **WindowsUser** redmond\myBtsUser など、送信者のドメイン ユーザーとプロパティが設定されます。 **SignatureCertificate**クライアント認証証明書の拇印を持つプロパティが設定されます。  
   
-## <a name="managing-passwords"></a>パスワードを管理します。  
- エンドポイントのプロパティに直接資格情報を設定する場合、バインド ファイルをエクスポートする必要があるときはパスワード フィールドが空になります。 この場合、ユーザーはパスワードを管理者として再入力する必要があります。 この問題を回避するには、資格情報に SSO を使用します。
+## <a name="managing-passwords"></a>パスワードの管理  
+ エンドポイントのプロパティに直接資格情報を配置する場合、パスワード フィールドが空になります、バインド ファイルをエクスポートする必要がある場合。 管理者としてパスワードを再入力をユーザーが必要になります。 SSO 資格情報を使用すると、この問題を回避できます。

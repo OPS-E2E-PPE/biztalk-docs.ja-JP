@@ -12,15 +12,15 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 415a5112c5cca457f7cbbe229ce073219de95631
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4a566a76d1d42d099e1825af7d6774644bb9049d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36970145"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65387298"
 ---
 # <a name="how-to-add-existing-maps"></a>既存のマップを追加する方法
-既存のマップを BizTalk プロジェクトに追加できます。 この操作を行う前に、マップの送信元スキーマおよび送信先スキーマがマップを追加する BizTalk プロジェクトに含まれている (または対応する .NET アセンブリによって参照されている) ことを確認してください。  
+既存のマップを BizTalk プロジェクトに追加する場合があります。 これを行うには、前に、マップの元と送信先スキーマがマップを追加する BizTalk プロジェクトに含まれることを確認する必要があります。または、対応する .NET アセンブリによって参照されています。  
   
 ### <a name="to-add-an-existing-map-to-a-biztalk-project"></a>既存のマップを BizTalk プロジェクトに追加するには  
   
@@ -28,16 +28,16 @@ ms.locfileid: "36970145"
   
 2. **既存項目の追加** ダイアログ ボックスで、追加で選択しをクリックするマップを含むフォルダーを参照し**追加**します。  
   
-    マップは、BizTalk マッパーで開きます。 また、新しく追加したマップは、現在の BizTalk プロジェクトの子としてソリューション エクスプローラーに表示されます。  
+    マップは、BizTalk マッパーで開きます。 新しく追加したマップは、ソリューション エクスプ ローラーで現在の BizTalk プロジェクトの子としても表示されます。  
   
    > [!NOTE]
-   >  BizTalk プロジェクト フォルダー以外のフォルダーを参照すると、追加したマップのコピーがプロジェクト フォルダーに作成されます。マップのこのコピーがプロジェクトに追加されます。 マップに対するその後の変更は、このコピーに対して行われます。他のフォルダーの元のマップには行われません。  
+   >  BizTalk プロジェクト フォルダー以外のフォルダーを参照した場合、プロジェクト フォルダーに追加したマップのコピーが作成されたし、このプロジェクトに追加されたマップのコピーがします。 その後、マップに変更は、他のフォルダー内の元のマップが、このコピーされます。  
    > 
    > [!IMPORTANT]
-   >  BizTalk マップは、BizTalk マッパー (Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] シェルにホストされている) によってのみ開くことができます。 Windows エクスプローラーのマップをダブルクリックして、対応するスキーマが正常に読み込まれた場合は、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] の新しいインスタンスが開き、マップが BizTalk マッパーで開かれます。  
+   >  BizTalk マップは、Microsoft 内でホストされている BizTalk マッパーによってのみ開くこと[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]シェルです。 Windows エクスプ ローラーの新しいインスタンスのマップをダブルクリック[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]、開く、マップが BizTalk マッパーで表示されます、対応するスキーマが正しく読み込まれています。  
    > 
    > [!NOTE]
-   >  既存のマップにカスタム Functoid が含まれる場合は、対応する DLL を "%BTSINSTALLPATH%\Developer Tools\Mapper Extensions" フォルダーにコピーする必要があります。 コピーしない場合、カスタム Functoid の読み込みに失敗するため、マップは読み込まれず、エラーがスローされます。  
+   >  既存のマップにカスタム functoid が含まれている場合、"%BTSINSTALLPATH%\Developer tools \mapper Extensions"フォルダーに対応する Dll をコピーする必要があります。 それ以外の場合、マップは読み込まれず、カスタム functoid の読み込みに失敗したため、エラーをスローします。  
   
 ## <a name="see-also"></a>参照  
  [プロジェクト内のマップを管理します。](../core/managing-maps-within-projects.md)   

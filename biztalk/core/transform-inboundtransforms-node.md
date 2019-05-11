@@ -1,5 +1,5 @@
 ---
-title: Transform (InboundTransforms ノード) |Microsoft ドキュメント
+title: Transform (InboundTransforms ノード) |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,20 +14,20 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 705b1b04b8305330ab1d5ff705c5025f24b0685c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c93ae620e3f9f40e2f76b814dbfde4b45910c63c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22279114"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399190"
 ---
 # <a name="transform-inboundtransforms-node"></a>Transform (InboundTransforms ノード)
-バインド ファイルの InboundTransforms ノードの Transform ノードには、バインド ファイルと共にエクスポートされる BizTalk Server マップに関する特定の情報が含まれます。  
+バインド ファイルの InboundTransforms ノードの Transform ノードには、バインド ファイルと共にエクスポートされる BizTalk Server マップに関する特定の情報が含まれています。  
   
 ## <a name="nodes-in-the-transform-node"></a>Transform ノード内のノード  
  次の表に、バインド ファイルのこのノードに設定できるプロパティを示します。  
   
-|**名前**|**ノード型**|**データ型**|**Description**|**制限**|**コメント**|  
+|**名前**|**ノードの種類**|**[データ型]**|**[説明]**|**制限**|**コメント**|  
 |--------------|-------------------|-------------------|---------------------|----------------------|------------------|  
 |FullName|属性|xs:string|マップの完全な名前を指定します。|任意|既定値: 空|  
 |AssemblyQualifiedName|属性|xs:string|マップのアセンブリ修飾名を指定します。|任意|既定値: 空|

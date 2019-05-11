@@ -12,12 +12,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fc63ae8f673b25c4acbd2f7c066c38f2cb58d914
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2c82a0b106cbb8fee680582aad7d1aa5ce331f02
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37011019"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65400414"
 ---
 # <a name="how-to-identify-bottlenecks-in-the-tracking-database"></a>追跡データベースのボトルネックを特定する方法
 BizTalk 追跡 (BizTalkDTADb) データベースのボトルネックを識別するために、次の手順に従います。  
@@ -40,15 +40,15 @@ BizTalk 追跡 (BizTalkDTADb) データベースのボトルネックを識別�
   
    Dtasp_BackupAndPurgeTrackingDatabase または dtasp_PurgeTrackingDatabase DTA Purge and Archive ジョブによって呼び出されるは、次のパラメーターの値をチューニングを強くお勧めします。  
   
-- @nLiveHours tinyint — 完了したインスタンス (live hours) + (live days) は、関連付けられているすべてのデータと共に削除されます。 既定では 0 時間です。  
+- @nLiveHourstinyint — (live hours) よりも古いインスタンスに完了した + (live 日) は、関連付けられているすべてのデータと共に削除されます。 既定では 0 時間です。  
   
-- @nLiveDays tinyint — 完了したインスタンス (live hours) + (live days) は、関連付けられているすべてのデータと共に削除されます。 既定の間隔は 1 日です。  
+- @nLiveDaystinyint — (live hours) よりも古いインスタンスに完了した + (live 日) は、関連付けられているすべてのデータと共に削除されます。 既定の間隔は、1 日です。  
   
-- @nHardDeleteDays tinyint — (不完全な場合でも) のすべてのデータがこの削除よりも古い。 HardDeleteDays に指定する間隔は、データの有効期間よりも大きい値にする必要があります。 データの有効期間は、BizTalk 追跡データベース (BizTalkDTADb) でデータを追跡する間隔になります。 この間隔より古いデータは、次のアーカイブ時にアーカイブしてから削除できます。 既定値は、30 日間です。  
+- @nHardDeleteDaystinyint — すべてのデータ (不完全な場合でも) これは、削除するよりも古いします。 HardDeleteDays に指定する間隔は、データの有効期間よりも大きい値にする必要があります。 データの有効期間は、BizTalk 追跡データベース (BizTalkDTADb) でデータを追跡する間隔になります。 この間隔より古いデータは、次のアーカイブ時にアーカイブしてから削除できます。 既定値は、30 日間です。  
   
   お勧めパフォーマンス ラボ テストで値を使用する次のように対し、運用環境でのデータ保持ポリシーに基づいてこれらのパラメーターを設定する必要があります。  
   
-  宣言@dtLastBackupdatetime セット@dtLastBackupGetUTCDate() を =  
+  declare @dtLastBackup datetime set @dtLastBackup = GetUTCDate()  
   exec dtasp_PurgeTrackingDatabase 1, 0, 1, @dtLastBackup  
   
 ## <a name="see-also"></a>参照  

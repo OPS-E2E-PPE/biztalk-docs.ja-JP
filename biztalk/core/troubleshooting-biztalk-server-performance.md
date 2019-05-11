@@ -12,12 +12,12 @@ caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6c748342e55c2e343131e17379de652f6c5ea61d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ec29254a43a86f29a16ddb5babe5d3c607689f68
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37009259"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65401870"
 ---
 # <a name="troubleshooting-biztalk-server-performance"></a>BizTalk Server のパフォーマンスに関するトラブルシューティング
 ここでは、BizTalk メッセージング エンジンに関連するパフォーマンスの問題を診断および解決するための一般的なガイドラインを示します。  
@@ -29,11 +29,11 @@ ms.locfileid: "37009259"
   
     -   SQL Server のディスクを RAID アレイで構成するか。  
   
-    -   Windows クラスターを BizTalk ホスト、SQL Server、またはエンタープライズ シングル サインオンに使用するか。 詳細については、[高可用性の計画](../core/planning-for-high-availability3.md)を参照してください。  
+    -   Windows クラスターを BizTalk ホスト、SQL Server、またはエンタープライズ シングル サインオンに使用するか。 詳細については、次を参照してください。[高可用性の計画](../core/planning-for-high-availability3.md)します。  
   
     -   ネットワーク負荷分散を使用するか。  
   
-    -   環境のバックアップと復旧の要件は何か。 詳細については、[Backing Up and BizTalk Server データベースの復元](../core/backing-up-and-restoring-biztalk-server-databases.md)を参照してください。  
+    -   環境のバックアップと復旧の要件は何か。 詳細については、次を参照してください。 [Backing Up and BizTalk Server データベースの復元](../core/backing-up-and-restoring-biztalk-server-databases.md)します。  
   
 2.  ガイドラインに従う[パフォーマンス維持の計画](../core/planning-for-sustained-performance.md)計画、テスト、および BizTalk Server と SQL Server 環境をスケーリングします。  
   

@@ -12,17 +12,17 @@ caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cacb0167bf93f1a870592d0be74567be852ebebc
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 0040e467bf77de9b55333862dadd87ff940bbeba
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36974547"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65389310"
 ---
-# <a name="enabling-error-reporting"></a>エラー報告の有効化
-[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、強化されたエラーと警告を Windows イベント ビューアーに表示するかどうかを選択できます。  
+# <a name="enabling-error-reporting"></a>エラー報告を有効にします。
+[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Windows イベント ビューアーで強化されたエラーと警告を表示するかどうかを選択できます。  
   
- 次の手順を実行すると、EDI のレポート機構または EDI エンジンによって生成されたエラーおよび警告の報告を有効または無効にできます。 このようなエラーおよび警告の報告は、アグリーメントの一部として、またはフォールバック アグリーメントの一部として有効にできます。 アグリーメントの一部としては、この報告は既定で有効になっています。 フォールバック アグリーメントの一部としては、この報告は既定で無効になっています。 ただし、システム/処理エラーがによって生成[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]は常に、イベント ビューアーに記録 (入力によって表示される`eventvwr`で、**実行** ダイアログ ボックス) かどうか、EDI エラーおよび警告が有効かどうか。  
+ 次の手順では、有効またはエラーと、EDI レポート機構または EDI エンジンによって生成される警告の報告を無効にします。 このようなエラーの報告またはアグリーメントの一部として、またはフォールバック アグリーメントの一部としての警告を有効にすることができます。 アグリーメントの一部として、この報告は既定で有効にします。 フォールバック アグリーメントの一部として、この報告は既定で無効になります。 ただし、システム/処理エラーがによって生成[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]は常に、イベント ビューアーに記録 (入力によって表示される`eventvwr`で、**実行** ダイアログ ボックス) かどうか、EDI エラーおよび警告が有効かどうか。  
   
 ## <a name="prerequisites"></a>前提条件  
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者グループのメンバーとしてログオンしている必要があります。  
@@ -34,7 +34,7 @@ ms.locfileid: "36974547"
 2. **パーティとビジネス プロファイル**ウィンドウで、エラーのログ記録とイベント ログに警告を有効にする X12 または EDIFACT アグリーメントのパーティをクリックします。  
   
    > [!NOTE]
-   >  AS2 アグリーメントのエラーおよび警告をイベント ビューアーに記録することはできません。  
+   >  エラーと警告を AS2 アグリーメントは、イベント ビューアーにログインすることはできません。  
   
 3. **契約**セクションをクリックして、エラーのログ記録と、警告を有効にする X12 または EDIFACT アグリーメントを右クリックして**プロパティ**します。  
   
@@ -46,10 +46,10 @@ ms.locfileid: "36974547"
   
 1. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールを右クリックし、**パーティ**ノードの下、 **BizTalk グループ**ノード、およびクリック**X12 フォールバックの設定**または**EDIFACT フォールバックの設定**します。  
   
-2. **フォールバック設定の全般ページ** タブで、および警告の BizTalk EDI エンジンによって生成された EDI エラーのログ記録を有効にする をクリックして**ログ EDI エラーおよび警告の Windows イベント ログにEDIエンジンによって生成された**. エラー ログには、エラーのデータとコンテキスト情報が含まれます。  
+2. **フォールバック設定の全般ページ** タブで、および警告の BizTalk EDI エンジンによって生成された EDI エラーのログ記録を有効にする をクリックして**ログ EDI エラーおよび警告の Windows イベント ログにEDIエンジンによって生成された**. エラー ログには、エラー データとコンテキスト情報が含まれます。  
   
    > [!NOTE]
-   >  システム/処理エラーは、このチェック ボックスのオン/オフに関係なく、イベント ビューアーに記録されます。  
+   >  システム/処理エラーは、このチェック ボックスが選択されているかどうかを示す、イベント ビューアーに記録されます。  
   
    > [!NOTE]
    >  選択する必要はありません、 **EDI レポートをアクティブ**プロパティを選択するには、**ログ EDI エラーおよび警告の Windows イベント ログに EDI エンジンによって生成された**プロパティ。  

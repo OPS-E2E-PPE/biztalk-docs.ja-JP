@@ -12,12 +12,12 @@ caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e65c2997fa19ed961515285ce04f51acc4c196e5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 351311d526500529c293fffbd400a5c1d317ed16
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36995283"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65385386"
 ---
 # <a name="delete-a-host"></a>ホストを削除します。
 ホストは、以下の状況でのみ削除できます。  
@@ -34,7 +34,7 @@ ms.locfileid: "36995283"
 
 - ホストがクラスター化されていない。  
 
-  ホストの詳細については、[ホスト](../core/hosts.md)を参照してください。  
+  ホストの詳細については、次を参照してください。[ホスト](../core/hosts.md)します。  
 
 ## <a name="prerequisites"></a>前提条件  
  ホストの作成、ホスト プロパティの変更、およびホストの削除には、次のユーザー権利が必要です。  

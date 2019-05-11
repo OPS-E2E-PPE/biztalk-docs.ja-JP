@@ -1,5 +1,5 @@
 ---
-title: スコープ Shape1 を追加する方法 |Microsoft ドキュメント
+title: スコープ図形の 1 を追加する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,37 +17,37 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 094f744f7d4d6d1c405ea50d222beb8c0a67920e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: faabba82196f7e595427f36c0d07d66769bafd18
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22247186"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65387320"
 ---
 # <a name="how-to-add-a-scope-shape"></a>スコープ図形を追加する方法
-以下の手順に従ってスコープ図形を追加します。  
+スコープ図形を追加するこれらの手順に従います。  
   
 ### <a name="to-add-a-scope-shape"></a>スコープ図形を追加するには  
   
-1.  下の矢印を右クリックし、 **ReceiveFromIn**ポートでは、順にポイント**図形の挿入**、クリックして**スコープ**です。  
+1.  下の矢印を右クリックし、 **ReceiveFromIn**ポートをポイントして、**図形の挿入**、 をクリックし、**スコープ**。  
   
      ![](../core/media/siebeladapter-18-exceptionhandling-insertscope.gif "SiebelAdapter_18_ExceptionHandling_InsertScope")  
   
-     スコープ図形に、エラーが発生するような操作を設定します。  
+     スコープ図形では、エラーが発生する操作を設定します。  
   
-     たとえば、SQLExecute オーケストレーションに送信ポート、受信ポート、さらに送信ポートを追加します。 この例では、DB2 にメッセージを送信しています。 DB2 は応答して、 オーケストレーションの残りの部分を実行し、OutFile ポートに情報を返します。  
+     たとえば、SQLExecute オーケストレーション、送信ポート、受信と送信ポートを追加します。 この例では、DB2 にメッセージを送信しました。 DB2 は応答です。 これにより、オーケストレーションの残りの部分を実行し、OutFile ポートに情報を返します。  
   
-2.  スコープ図形で、設定、**トランザクション**に**None**です。  
+2.  スコープ図形に、設定、**トランザクション**に**None**します。  
   
-3.  スコープ図形の内側を右クリックし、選択**新しい例外ハンドラー**です。  
+3.  スコープ図形内で右クリックして**新しい例外ハンドラー**します。  
   
      ![](../core/media/siebeladapter-19-exceptionhandling-newexception.gif "SiebelAdapter_19_ExceptionHandling_NewException")  
   
-     これにより、例外のキャッチ ブロックが作成されます。 例外がバックエンドから発生する場合、例外のキャッチ ブロック内でキャッチされます。  
+     これは、例外のキャッチ ブロックを作成します。 バック エンドから例外が発生した場合は、例外のキャッチ ブロック内でキャッチされます。  
   
-4.  例外のキャッチ ブロックには、ロジックを追加する必要があります。  
+4.  例外のキャッチ ブロックでは、ロジックを追加する必要があります。  
   
-     この場合、設定することが必要となる最も重要なロジックは、想定する種類のエラー メッセージに関するものになります。  
+     最も重要なロジックを設定する必要がありますが、予期したエラー メッセージの種類です。  
   
 ## <a name="see-also"></a>参照  
  [BizTalk Server 例外処理の使用](../core/using-biztalk-server-exception-handling2.md)

@@ -19,25 +19,25 @@ caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 40daaeac7f61a158e4f4a74da39f6d7cee46f18a
-ms.sourcegitcommit: 9b93ee2a019bef8d482626cf5525a6b95509b135
+ms.openlocfilehash: c2e3edfb54f9864b0c5d17ed455d96df7e15b9ce
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/17/2018
-ms.locfileid: "42709875"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65398407"
 ---
 # <a name="how-to-use-the-biztalk-wcf-service-publishing-wizard-to-publish-orchestrations-as-wcf-services"></a>BizTalk WCF サービス公開ウィザードを使用してオーケストレーションを WCF サービスとして公開する方法
-オーケストレーションを WCF サービスとして公開するには、BizTalk WCF サービス公開ウィザードを使用します。  
+オーケストレーションを WCF サービスとして公開するのにには、BizTalk WCF サービス公開ウィザードを使用します。  
   
 > [!NOTE]
->  BizTalk WCF サービス公開ウィザードを実行する前に、BizTalk プロジェクトを作成する必要があります。 BizTalk プロジェクトには、型修飾子がパブリックである受信ポートを 1 つ以上持つオーケストレーションが含まれている必要があります。 この型修飾子は、ポートが作成されたときのオーケストレーションのプロパティに存在します。  
+>  BizTalk WCF サービス公開ウィザードを実行する前に、BizTalk プロジェクトを作成する必要があります。 BizTalk プロジェクトには、型修飾子がパブリックである受信ポートを 1 つ以上持つオーケストレーションが含まれている必要があります。 この型修飾子は、ポートが作成されるときに、オーケストレーションのプロパティに存在します。  
   
 ### <a name="to-publish-an-orchestration-as-a-wcf-service"></a>オーケストレーションを WCF サービスとして公開するには  
   
 1. クリックして**開始**、 をポイント**すべてのプログラム**、 をポイント[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]、順にクリックします**BizTalk WCF サービス公開ウィザード**します。  
   
    > [!NOTE]
-   >  BizTalk のオーケストレーションおよびスキーマを作成し、WCF アダプターを使用して WCF サービスとして公開するには、BizTalk WCF サービス公開ウィザードを使用します。 一方、SOAP アダプターを使用してオーケストレーションとスキーマを Web サービスとして公開するには、BizTalk Web サービス公開ウィザードを使用します。  
+   >  作成し、BizTalk オーケストレーションとスキーマを WCF アダプタで WCF サービスとして発行、BizTalk WCF サービス公開ウィザードを使用します。 一方、SOAP アダプターを使用してオーケストレーションとスキーマを Web サービスとして公開するには、BizTalk Web サービス公開ウィザードを使用します。  
   
 2. **BizTalk WCF サービス公開ウィザードへようこそ**] ページで [**次**します。  
   
@@ -50,13 +50,13 @@ ms.locfileid: "42709875"
    > [!NOTE]
    >  機密性の高いサービス メタデータが誤って公開されないように、実稼働環境ではこの動作を無効にすることをお勧めします。 これは、httpgetenabled を false に設定するか、MEX 仮想ディレクトリを削除して実行できます。  
   
-5. **WCF サービスの種類**] ページの [、**アダプター名 (トランスポートの種類)** ドロップダウン リストで、WCF サービスを発行する際の分離 WCF アダプターを選択します。 以下のいずれかのアダプターを選択できます。  
+5. **WCF サービスの種類**] ページの [、**アダプター名 (トランスポートの種類)** ドロップダウン リストで、WCF サービスを発行する際の分離 WCF アダプターを選択します。 次のアダプターのいずれかを選択できます。  
   
-   -   **Wcf-basichttp します。** : WCF-BasicHttp 受信アダプターは、ASMX ベースのサービスなど WS-I 基本プロファイル 1.1 準拠の Web サービスと通信できます。  
+   -   **Wcf-basichttp します。** Wcf-basichttp アダプターは、WS と通信できます-基本プロファイル 1.1 準拠の web サービスの ASMX ベースのサービスのようにします。  
   
-   -   **Wcf-wshttp します。** : WCF-WSHttp アダプターは、HTTP および HTTPS を使用し WS-* 標準をとおしてサービスと通信できます。  
+   -   **Wcf-wshttp します。** Wcf-wshttp アダプターは、ws-を使用するサービスと通信できる * HTTP および HTTPS 経由での標準です。  
   
-   -   **Wcf-customisolated します。** : WCF-CustomIsolated アダプターを使用すると、HTTP トランスポートで WCF (Windows Communication Foundation) の拡張機能を利用できるようになります。  
+   -   **Wcf-customisolated します。** Wcf-customisolated アダプターでは、HTTP トランスポート経由で Windows Communication Foundation (WCF) の拡張機能を使用できるようにします。  
   
 6. **WCF サービスの種類**] ページで、[、**次のアプリケーションを作成する BizTalk 受信場所**チェック ボックスを受信ポートと各生成 .svc ファイルに対応する場所を作成するには選択した WCF アダプター、**アダプター名**ドロップダウン リスト。 受信場所が既に存在する場合、既存の受信場所は置き換えられません。 このオプションを選択した後、アプリケーションで、受信ポートと受信場所が生成される場所を選択、 **BizTalk アプリケーション名**ドロップダウン リスト、およびクリック **[次へ]** します。  
   
@@ -90,7 +90,7 @@ ms.locfileid: "42709875"
   
 11. **WCF サービスの場所**ページで、**場所**テキスト ボックスに、WCF サービスが生成される Web ディレクトリ名を入力します。 既定の場所を受け入れることができます (`http://localhost/<BizTalk Assembly Name>`)、WCF サービスの場所を入力、**場所**テキスト ボックス、またはクリック**参照**Web ディレクトリを選択します。 次のいずれかのオプションをクリックします。  
   
-    - **既存のプロジェクトを上書きします。** : このオプションは、Web ディレクトリが既に存在する場合にのみ使用できます。 このオプションを選択すると、同じ場所にのみ公開できます。 このオプションを選択しない場合は、別のプロジェクトの場所を入力する必要があります。  
+    - **既存のプロジェクトを上書きします。** このオプションでは、使用できるは、Web ディレクトリが既に存在する場合のみです。 このオプションを選択すると、同じ場所にのみ公開できます。 このオプションを選択しない場合は、別のプロジェクトの場所を入力する必要があります。  
   
     - **WCF サービスへの匿名アクセスを許可します。** : このオプションでは、作成した仮想ディレクトリに匿名アクセスを追加します。 既定では、仮想ディレクトリは、その親仮想ディレクトリまたは Web サイト (最上位の仮想ディレクトリである場合) から、アクセス権限を継承します。  
   
@@ -120,5 +120,5 @@ ms.locfileid: "42709875"
   
 ## <a name="see-also"></a>参照  
  [BizTalk WCF サービス公開ウィザードで公開した WCF サービスを構成する方法](../core/configure-wcf-services-published-with-the-biztalk-wcf-service-publishing-wizard.md)   
- [チュートリアル: Wcf-basichttp アダプターを使用した WCF サービスの発行](../core/walkthrough-publishing-wcf-services-with-the-wcf-basichttp-adapter.md)   
+ [チュートリアル: Wcf-basichttp アダプターで WCF サービスの公開](../core/walkthrough-publishing-wcf-services-with-the-wcf-basichttp-adapter.md)   
  [BizTalk WCF サービス公開ウィザードを使用してスキーマを WCF サービスとして公開する方法](../core/publish-schemas-as-wcf-services--use-the-biztalk-wcf-service-publishing-wizard.md)

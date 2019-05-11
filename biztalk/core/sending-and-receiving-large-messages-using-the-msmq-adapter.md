@@ -1,5 +1,5 @@
 ---
-title: MSMQ アダプターを使用してサイズの大きいメッセージを送受信する |Microsoft ドキュメント
+title: MSMQ アダプターを使用してサイズの大きいメッセージの送受信 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,17 +16,17 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8a23265be84f2767849e4d61c2e9a95bfc9ed4ce
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8b5a1267aa0ee1ffc2d44326ad8922d6fac16a1c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22269530"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399028"
 ---
-# <a name="sending-and-receiving-large-messages-using-the-msmq-adapter"></a>MSMQ アダプタを使用したサイズの大きいメッセージの送受信
-MSMQ アダプタの既定のメッセージ処理には、メッセージのサイズに依存する部分があります。 メッセージのサイズが 4 MB 未満の場合、MSMQ アダプタで .NET Framework クラス ライブラリが使用されます。 4 MB 以上の場合は、Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の、サイズの大きいメッセージ用拡張機能が使用されます。  
+# <a name="sending-and-receiving-large-messages-using-the-msmq-adapter"></a>MSMQ アダプターを使用してサイズの大きいメッセージを送受信します。
+MSMQ アダプターの既定のメッセージ処理、部分的に異なります、メッセージのサイズ。 メッセージが 4 メガバイト (4 MB) の場合は、MSMQ アダプターは、.NET Framework クラス ライブラリを使用します。 Microsoft では、サイズの大きいメッセージの拡張機能を使用して、それ以外の場合、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]します。  
   
- アプリケーションで、常にサイズの大きいメッセージの送受信を行う場合、アダプタで使用するメモリ量の制御が必要になることがあります。 メモリの節約の詳細については、次を参照してください。 [MSMQ アダプターのパフォーマンスの最適化](../core/optimizing-performance-of-the-msmq-adapter.md)です。  
+ アプリケーションは一貫して受信またはサイズの大きいメッセージを送信、アダプターが使用するメモリの量を制御する必要があります。 メモリの節約の詳細については、次を参照してください。 [MSMQ アダプターのパフォーマンスの最適化](../core/optimizing-performance-of-the-msmq-adapter.md)します。  
   
 ## <a name="see-also"></a>参照  
  [MSMQ アダプターのパフォーマンスを最適化します。](../core/optimizing-performance-of-the-msmq-adapter.md)   

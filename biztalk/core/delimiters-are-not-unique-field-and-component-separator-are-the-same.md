@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fd6439bd307ec922b9dbdd5761f61e9e3ad557f0
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9a40e429d8d34f2accd5d755741a174fc972985d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36979419"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65352180"
 ---
 # <a name="delimiters-are-not-unique-field-and-component-separator-are-the-same"></a>区切り記号が一意ではなく、フィールドとコンポーネントの区切り記号が同じです
 ## <a name="details"></a>詳細  

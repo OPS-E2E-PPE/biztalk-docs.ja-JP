@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ef3b1eff57f225d90e7f491f0a8f48ef88f00463
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2797cd51e6e013feb6c273b3aace8a007d71a4eb
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36983579"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377395"
 ---
 # <a name="infopath-security"></a>InfoPath のセキュリティ
 Microsoft [!INCLUDE[btsOfficeNoVersion](../../includes/btsofficenoversion-md.md)] [!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)] 2007 では、XML 署名を使用して、デジタル証明書を使用してフォームにデジタル署名することができます。 XML 署名は、XML ドキュメントに含まれるデータを保護するために使用する XML ベースのデジタル署名用の標準を定義します。 XML 署名は、標準の World Wide Web Consortium (W3C) によって管理されます。  

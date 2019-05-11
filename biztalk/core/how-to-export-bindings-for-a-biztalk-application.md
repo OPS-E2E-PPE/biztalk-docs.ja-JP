@@ -16,15 +16,15 @@ caps.latest.revision: 22
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4b6d7e72eb46cfe6c00167944cc065e044fb4699
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6750ff2f6684942c20eb4fdaa286dcbc181bb5b2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36975899"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65385049"
 ---
 # <a name="how-to-export-bindings-for-a-biztalk-application"></a>BizTalk アプリケーションのバインドをエクスポートする方法
-このトピックでは、BizTalk Server 管理コンソールまたはコマンド ラインを使用して、.xml ファイルに BizTalk アプリケーションのバインドをエクスポートする方法について説明します。 その後、バインド ファイルを別のアプリケーションにインポートすることで、アプリケーションの現在のバインドが、インポートした同じ名前のバインドで上書きされます。 詳細については、[BizTalk アプリケーションにバインドのインポート方法](../core/how-to-import-bindings-into-a-biztalk-application.md)を参照してください。 バインド ファイルの使用についての詳細については、[バインド ファイルとアプリケーションの展開](../core/binding-files-and-application-deployment.md)を参照してください。  
+このトピックでは、BizTalk Server 管理コンソールまたはコマンド ラインを使用して、.xml ファイルに BizTalk アプリケーションのバインドをエクスポートする方法について説明します。 その後、バインド ファイルを別のアプリケーションにインポートすることで、アプリケーションの現在のバインドが、インポートした同じ名前のバインドで上書きされます。 詳細については、次を参照してください。 [BizTalk アプリケーションにバインドのインポート方法](../core/how-to-import-bindings-into-a-biztalk-application.md)します。 バインド ファイルの使用についての詳細については、次を参照してください。[バインド ファイルとアプリケーションの展開](../core/binding-files-and-application-deployment.md)します。  
   
 ## <a name="prerequisites"></a>前提条件  
  このトピックの手順を実行するには、BizTalk Server 管理者または BizTalk Server Operators グループのメンバー アカウントでログオンする必要があります。 詳細なアクセス許可についてを参照してください。[を展開すると、BizTalk アプリケーションの管理に必要なアクセス許可](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)します。  
@@ -41,7 +41,7 @@ ms.locfileid: "36975899"
   
 4. バインドのエクスポート ページで**ファイルにエクスポート**バインドのエクスポート先 .xml ファイルの絶対パスを入力します。  
   
-    例: **C:\Bindings\Application1Bindings_Staging1.xml**  
+    例:**C:\Bindings\Application1Bindings_Staging1.xml**  
   
 5. いることを確認 **、現在のアプリケーションからすべてのバインドをエクスポート**が選択されているし、をクリックし、 **OK**。  
   
@@ -51,15 +51,15 @@ ms.locfileid: "36975899"
   
 #### <a name="using-the-command-line"></a>コマンドラインを使用  
   
-1. 次のように、コマンド プロンプトを開きます: をクリックして**開始**、 をクリックして**実行**、型`cmd`、順にクリックします**OK**。  
+1. 次のように、コマンド プロンプトを開きます。をクリックして**開始**、 をクリックして**実行**、型`cmd`、順にクリックします**OK**。  
   
 2. 次の表に示すように、適切な値を置き換えて、次のコマンドを入力します。  
   
-    **BTSTask ExportBindings/Destination:** *値*[**/applicationname は:**<em>値</em>] **[/GlobalParties]** [**/Server:**<em>値</em>] [**/database:**<em>値</em>]  
+    **BTSTask ExportBindings /Destination:** *value* [**/ApplicationName:**<em>value</em>] **[/GlobalParties]** [**/Server:**<em>value</em>] [**/Database:**<em>value</em>]  
   
     例:  
   
-    **BTSTask ExportBindings/Destination:"C:\Binding Files\MyBindings.xml"applicationname: myapplication/Server:MyDatabaseServer/Database:BizTalkMgmtDb**  
+    **BTSTask ExportBindings /Destination:"C:\Binding Files\MyBindings.xml" /ApplicationName:MyApplication /Server:MyDatabaseServer /Database:BizTalkMgmtDb**  
   
    |パラメーター|値|  
    |---------------|-----------|  
@@ -67,7 +67,7 @@ ms.locfileid: "36975899"
    |**/ApplicationName**|バインドのエクスポート元のアプリケーション名。 アプリケーションが存在していることが必要です。 アプリケーション名を確認するには、使用することができます、 **ListApps** 」の説明に従って、コマンド[ListApps コマンド](../core/listapps-command.md)します。 このパラメーターを指定しなかった場合、既定の BizTalk アプリケーションが使用されます。 名前にスペースが含まれる場合は、二重引用符 (") で囲む必要があります。|  
    |**/GlobalParties**|指定した場合、グループのグローバル パーティ情報をエクスポートします。|  
    |**/サーバー**|BizTalk 管理データベースをホストする SQL Server インスタンスの名前。ServerName\InstanceName,Port の形式で指定します。<br /><br /> インスタンス名の指定は、そのインスタンス名がサーバー名と異なる場合にのみ必要です。 ポートの指定は、SQL Server で使用するポート番号が既定値 (1433) と異なる場合にのみ必要です。<br /><br /> 例 :<br /><br /> Server=MyServer<br /><br /> Server=MyServer\MySQLServer,1533<br /><br /> 指定しなかった場合、ローカル コンピューターで実行されている SQL Server インスタンスの名前が使用されます。|  
-   |**/データベース**|BizTalk 管理データベースの名前。 指定しなかった場合、SQL Server のローカル インスタンスで実行されている BizTalk 管理データベースが使用されます。|  
+   |**/Database**|BizTalk 管理データベースの名前。 指定しなかった場合、SQL Server のローカル インスタンスで実行されている BizTalk 管理データベースが使用されます。|  
   
 ## <a name="see-also"></a>参照  
  [バインドのエクスポート](../core/exporting-bindings6.md)   

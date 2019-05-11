@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d099ba9ea60fd8f553d4eaf2011e93a054f59e68
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: afdc0c4e9d89b83aedf184dc138a3558ef3f5eec
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37018706"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399312"
 ---
 # <a name="best-practices-for-monitoring-with-operations-manager-2007"></a>Operations Manager 2007 で監視するためのベスト プラクティス
 Operations Manager 2007 を使用してアプリケーションを効果的に監視するには、このトピックに記載のベスト プラクティスに従います。  
@@ -48,21 +48,21 @@ Operations Manager 2007 を使用してアプリケーションを効果的に�
   
   **有効にして、必要に応じてルールを無効にします。**  
   
-- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理パックのルールのいくつかは、既定で無効に設定されています。 これらの無効化されたルールは、次の種類: 規則のカスタマイズ、テンプレートとして機能するルールおよび監視のルールを追加しなくて[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]イベント。 確認して、関連するルール[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]環境が有効にします。  
+- 既定のルールの一部で、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理パックが無効になっています。 これらの無効化されたルールは、次の種類: 規則のカスタマイズ、テンプレートとして機能するルールおよび監視のルールを追加しなくて[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]イベント。 確認して、関連するルール[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]環境が有効にします。  
   
   **環境内での必要に応じてルールをカスタマイズします。**  
   
-- 使用している [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の展開に応じて、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理パックのルールをカスタマイズする必要があります。 一部のルールでは、使用している特定の [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の展開に基づいて適切に定義された監視のしきい値または時間のしきい値が必要です。  
+- ルールをカスタマイズする必要があります、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理パックに合わせて、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]展開します。 いくつかのルールは、特定のベースの監視のしきい値または時間のしきい値を定義することが必要と[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]展開します。  
   
   **必要に応じて、追加の規則を作成するに含まれるルールに基づいて、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理パック**  
   
-- など、作成するアイテムのテンプレートとして使用するためのルールが提供されている[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ホスト。 これらのテンプレート ルールは、次のようなアイテム固有のルールを作成するときに参照として使用してください。  
+- など、作成するアイテムのテンプレートとして使用するためのルールが提供されている[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ホスト。 などの成果物に固有のルールを作成するときに参照としてこれらのテンプレート規則を使用する必要があります。  
   
   -   ホストに固有のルールは、たとえば、キューの監視をホストし、調整の監視をホストします。  
   
   -   メッセージ ボックスに固有のルール  
   
-  -   MQSeries アダプターなど、追加のサード パーティ コンポーネント用のルール  
+  -   その他のサード パーティ製コンポーネント、たとえば、MQSeries アダプターの規則  
   
   **すべてを監視、BizTalk Server 関連のコンポーネント**  
   

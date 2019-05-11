@@ -1,5 +1,5 @@
 ---
-title: 成果物をアプリケーションに追加する |Microsoft ドキュメント
+title: アプリケーションへの成果物の追加 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,33 +12,33 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2c08fa95dddad06efb2c51d93df56b757ae4caca
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9ac647201a834d90d745564076b040954c1c3667
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22295650"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65401418"
 ---
 # <a name="adding-artifacts-to-an-application"></a>成果物をアプリケーションに追加します。
-追加し送信などのアイテムを構成して受信ポート、受信場所、オーケストレーションを管理を使用してコンソールします。 バインド ファイルを生成し、アプリケーションをインポートする、さまざまな環境ごとに異なるバインドを適用する場合、アプリケーションに追加できます。  
+追加できますと送信などの成果物を構成し、受信ポート、受信場所、オーケストレーション、管理を使用してコンソールします。 バインド ファイルを生成します。 また、異なる環境にアプリケーションをインポートするごとに異なるバインドを適用する場合、アプリケーションに追加します。  
   
- 追加することができます (通常 BizTalk Server 以外の) スクリプト、証明書、およびリソース ノードの下のアプリケーションに、Readme ファイルなどのアイテムです。 これを行うには、管理コンソールまたは BTSTask を使用します。  
+ さらに追加することができます (通常は BizTalk Server 以外の) スクリプト、証明書、およびアプリケーションのリソース ノードの下に、Readme ファイルなどの成果物。 これを行うには、管理コンソールまたは BTSTask を使用します。  
   
- 成果物の詳細については、次を参照してください[成果物を追加または作成する方法](http://go.microsoft.com/fwlink/?LinkID=154724)(http://go.microsoft.com/fwlink/?。LinkID = 154724)、[成果物の管理](http://go.microsoft.com/fwlink/?LinkID=154725)(http://go.microsoft.com/fwlink/?LinkID = 154725) および[バインド ファイルとアプリケーションの配置](http://go.microsoft.com/fwlink/?LinkID=154726)(http://go.microsoft.com/fwlink/?LinkID = 154726)。  
+ 成果物の詳細については、次を参照してください[成果物を追加または作成する方法](http://go.microsoft.com/fwlink/?LinkID=154724)(http://go.microsoft.com/fwlink/?LinkID=154724)、[管理成果物](http://go.microsoft.com/fwlink/?LinkID=154725)(http://go.microsoft.com/fwlink/?LinkID=154725)と[バインド ファイルとアプリケーションの展開。](http://go.microsoft.com/fwlink/?LinkID=154726) (http://go.microsoft.com/fwlink/?LinkID=154726).  
   
-## <a name="factoring-artifacts-into-multiple-biztalk-applications"></a>成果物の複数の BizTalk アプリケーションにファクタリング  
+## <a name="factoring-artifacts-into-multiple-biztalk-applications"></a>成果物を複数の BizTalk アプリケーションにファクタリング  
  開発プロセス中に、利便性のためにアセンブリを単一のアプリケーションに展開することがあります。 さまざまな理由により、実稼働環境に展開する前にアセンブリを複数のアプリケーションにファクタリングする必要が生じる場合があります。  
   
- を展開する前に、アセンブリのファクタリングの詳細な分析を実行してください。 かどうか行う必要がありますいないファクタリング、完全ファクタリング、または最適なファクタリングを決定します。  
+ を展開する前に、アセンブリのファクタリングの徹底的な分析を行う必要があります。 かどうかを実行するありませんファクタリング、完全なファクタリング、または最適なファクタリングを決定します。  
   
- **ありませんファクタリング**  
+ **なしのファクタリング**  
   
- すべての BizTalk アイテムは、1 つのアセンブリでです。 これは、最も理解および展開するが最低限の柔軟性を提供します。  
+ すべての BizTalk アイテムは、1 つのアセンブリには。 これは、最も理解し、デプロイしますが、最小限の柔軟性を提供します。  
   
- **完全ファクタリング**  
+ **完全なファクタリング**  
   
- 各 BizTalk 成果物は、独自のアセンブリでです。 これは、最大限の柔軟性を提供が複雑では、最もを展開し、理解します。  
+ 各 BizTalk アイテムが、独自のアセンブリです。 これにより、最高の柔軟性を提供しますが、最も複雑なデプロイを理解するには。  
   
  **最適なファクタリング**  
   
- 最適なファクタリングいいえファクタリングと、BizTalk アプリケーションの詳細な分析に基づく完全ファクタリングの間に使用されます。 バージョン管理、に加えてこれにより、BizTalk ホストの設計を簡単に実装します。 これは、BizTalk アイテム間の関係を探すことにより実現されます。 可能であれば、同じアセンブリ内で一緒にバージョン管理は、常にアイテムを配置します。 成果物の独立したバージョンが必要な場合は、異なるアセンブリに配置する必要があります。 これは、達成したいをファクタリングのレベルです。
+ No ファクタリングと、BizTalk アプリケーションの詳細な分析に基づく完全なファクタリングが最適なファクタリングします。 バージョン管理、に加えては、BizTalk ホストの設計を簡単に実装するこのできます。 これは、BizTalk アイテム間の関係を探すことによって実現されます。 可能であれば、常に同じアセンブリ内でまとめてバージョン管理される成果物を配置します。 成果物の独立したバージョン管理が必要な場合は、異なるアセンブリに配置する必要があります。 これは実現するレベルを取り除いたものです。

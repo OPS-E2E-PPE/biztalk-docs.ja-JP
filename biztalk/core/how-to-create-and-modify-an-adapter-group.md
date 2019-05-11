@@ -1,5 +1,5 @@
 ---
-title: 作成し、アダプター グループを変更する方法 |Microsoft ドキュメント
+title: 作成して、アダプター グループを変更する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,33 +12,33 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6865de8eb67d9fe1a6ca8d93b7d2e6527ae36364
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ff60beb673515421054863799f7445304a5be200
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22249226"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65339497"
 ---
-# <a name="how-to-create-and-modify-an-adapter-group"></a>作成し、アダプター グループを変更する方法
-シングル サインオン (SSO) に新たに実装された機能の 1 つに、アダプター グループを作成したり変更したりする機能があります。 アダプター グループとは、その名前からわかるように、複数のアダプターを 1 つにまとめたものです。 アダプター グループを使用することで、一連のアダプターのプロパティ (セキュリティ設定など) を体系的に管理できます。  
+# <a name="how-to-create-and-modify-an-adapter-group"></a>作成して、アダプター グループを変更する方法
+新しい機能のシングル サインオン (SSO) の 1 つ作成し、アダプター グループを変更する機能があります。 名前が示すように、アダプターのコレクションは、アダプター グループです。 アダプター グループを使用して、アダプターのセキュリティ設定およびその他のプロパティを整理することができます。  
   
-### <a name="to-create-and-modify-an-adapter-group"></a>アダプター グループを作成および変更するには  
+### <a name="to-create-and-modify-an-adapter-group"></a>作成し、アダプター グループを変更するには  
   
-1.  ssops ツールの呼び出しを使用して、アダプター グループを作成します。  
+1.  Ssops ツールへの呼び出しを使用して、アダプター グループを作成します。  
   
-     関連する XML ファイルで、グループ フラグをアダプター グループとして設定する必要があります。  
+     関連付けられている XML ファイルをアダプター グループとしてグループ フラグを設定する必要があります。  
   
-2.  `ISSOPSAdmin.AddAdapterToAdapterGroup` を使用して、アダプター グループに 1 つまたは複数のアダプターを追加します。  
+2.  使用して 1 つまたは複数のアダプターをアダプター グループに追加`ISSOPSAdmin.AddAdapterToAdapterGroup`します。  
   
-     これでアダプター グループを使用する準備が整います。 必要であれば、`ISSOPSAdmin.GetAdaptersForAdapterGroup` を使用して、関連付けられたアダプターを一覧表示できます。  
+     この時点では、アダプター グループが予定どおりに機能する準備ができます。 かどうか、必要に応じて表示する関連付けられているアダプターの完全な一覧を使用して`ISSOPSAdmin.GetAdaptersForAdapterGroup`します。  
   
-3.  `ISSOPSAdmin.SetAdapterProperties` を使用して、アダプター グループの設定を変更できます。  
+3.  使用してアダプター グループの設定を変更できます`ISSOPSAdmin.SetAdapterProperties`します。  
   
-4.  以上の作業を終えた後は、`ISSOPSAdmin.RemoveAdapterFromAdapterGroup` を使用して、アダプター グループからアダプターを削除できます。  
+4.  アダプター グループを使用して、アダプターを削除することができますが完了したら、`ISSOPSAdmin.RemoveAdapterFromAdapterGroup`します。  
   
-5.  最後に、`ISSOAdmin.DeleteApplication` を使用して、アダプター グループを削除できます。  
+5.  使用して、アダプター グループを削除する最後に、`ISSOAdmin.DeleteApplication`します。  
   
-     ssops ツールの `-delete` コマンドを使用してアダプター グループを削除することもできます。  
+     使用して、アダプター グループを削除する代わりに選択することがあります、 `-delete` ssops ツールのコマンド。  
   
 ## <a name="see-also"></a>参照  
  [パスワードの同期](../core/synchronizing-passwords.md)

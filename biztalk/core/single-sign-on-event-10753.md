@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10753 |Microsoft Docs'
+title: シングル サインオン:イベント 10753 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 10fb7980b8c039c6ef02e52952564c581e88054b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ca0c0066e1643ec6cc84f19eaf1ca5ece9822e69
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36969083"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65307789"
 ---
-# <a name="single-sign-on-event-10753"></a>シングル サインオン: イベント 10753
+# <a name="single-sign-on-event-10753"></a>シングル サインオン:イベント 10753
 ## <a name="details"></a>詳細  
   
 |                 |                                                            |
@@ -33,7 +33,7 @@ ms.locfileid: "36969083"
 |  メッセージ テキスト   |                マッピングは既に存在します。                 |
   
 ## <a name="explanation"></a>説明  
- このマッピングは、使用中の Windows アカウントまたは外部アカウントに既に存在しています。  
+ このマッピングが既に存在するには既に使用されている Windows アカウントまたは外部のアカウント。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- 既存のマッピングおよび作成しようとしているマッピングを確認します。 必要なマッピングが既に存在している場合は、そのマッピングを使用し、新しいマッピングを削除します。 マッピングが存在しない場合は、新しいマッピングを削除して作成し直します。
+ 既存のマッピングおよび作成しようとしているマッピングを確認します。 既にマッピングが存在する場合は、それを使用し、新しいを削除します。 そうでない場合は、新しいを削除し、再作成します。

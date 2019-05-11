@@ -1,5 +1,5 @@
 ---
-title: SOAP メッセージ トレースを有効にする方法 |Microsoft ドキュメント
+title: SOAP メッセージのトレースを有効にする方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,15 +12,15 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c2daf0a60a8fd16035e093a667b4d3f9db83fa27
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d4b2da3fc019b5c782a5ea25475e3b58d937a3d0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22253882"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65385113"
 ---
 # <a name="how-to-enable-soap-message-tracing"></a>SOAP メッセージのトレースを有効にする方法
-SOAP メッセージ トレースを有効にすることにより、Web サービス公開アプリケーションをデバッグできます。 Web クライアントに詳細な例外を返すように、公開済み Web サービスにブレークポイントを設定します。 SOAP メッセージをトレースするには、SOAP 拡張を使用することが必要です。 SOAP 拡張機能の詳細についてを参照してください「方法に:: 実装 SOAP 拡張機能を」 [http://go.microsoft.com/fwlink/?LinkId=62314](http://go.microsoft.com/fwlink/?LinkId=62314)です。  
+Web サービス公開アプリケーションをデバッグする方法を SOAP メッセージ トレースを有効にすることができます。 Web クライアントに詳細な例外を返す公開済み Web サービスでは、ブレークポイントを設定します。 SOAP メッセージをトレースするには、SOAP 拡張機能を使用する必要があります。 SOAP 拡張機能の詳細については、次を参照してください。"する方法。SOAP 拡張機能を実装"に[ http://go.microsoft.com/fwlink/?LinkId=62314](http://go.microsoft.com/fwlink/?LinkId=62314)します。  
   
 ## <a name="see-also"></a>参照  
  [公開済み Web サービスのデバッグ](../core/debugging-published-web-services.md)

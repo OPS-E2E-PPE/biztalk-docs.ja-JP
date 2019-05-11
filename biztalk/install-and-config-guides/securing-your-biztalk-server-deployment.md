@@ -13,17 +13,17 @@ caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d1d7e0a1201c6d37e0c30ad898248bcc8d7e895f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7cd2a0d0b298a395aaf05a8f00192d2a6e860804
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37002763"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399373"
 ---
 # <a name="securing-your-biztalk-server-deployment"></a>BizTalk Server の安全な展開
 このセクションのトピックでは、BizTalk をインストールして構成した後の、ファイアウォール ポート、インターネット プロトコル セキュリティ (IPSec)、Secure Sockets Layer (SSL) セキュリティの構成に関するリンクが示されています。  
   
-- Web サーバーに SSL を実装する方法の詳細については、[ http://go.microsoft.com/fwlink/p/?LinkId=193059](http://go.microsoft.com/fwlink/p/?LinkId=193059)を参照してください。  
+- Web サーバーに SSL を実装する方法の詳細については、次を参照してください。 [ http://go.microsoft.com/fwlink/p/?LinkId=193059](http://go.microsoft.com/fwlink/p/?LinkId=193059)します。  
   
 - 処理サーバーと管理クライアントのように、SQL Server とそのクライアントとの間で暗号化を有効にする方法については、「[透過的なデータ暗号化 (TDE)](https://msdn.microsoft.com/library/bb934049.aspx)」をご覧ください。  
   

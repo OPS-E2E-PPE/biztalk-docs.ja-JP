@@ -1,5 +1,5 @@
 ---
-title: GetContextProperty1 |Microsoft ドキュメント
+title: GetContextProperty1 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 65b7ffffe4b21e3317b920ac50cdc27b12d708d5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 58e843a8324526e183a577425a015b49c7be3725
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22246266"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65345125"
 ---
 # <a name="getcontextproperty"></a>GetContextProperty
 要求されたコンテキスト プロパティをスタックにプッシュします。  
@@ -34,7 +34,7 @@ ms.locfileid: "22246266"
 #### <a name="parameters"></a>パラメーター  
  次のコンテキスト プロパティ名のいずれかを指定します。  
   
-|コンテキスト プロパティ名|Description|  
+|コンテキスト プロパティ名|説明|  
 |---------------------------|-----------------|  
 |EventTime|現在の日付と時刻です。|  
 |SessionId|ワークフロー セッション ID です。|  
@@ -45,7 +45,7 @@ ms.locfileid: "22246266"
 ## <a name="pushed-value"></a>プッシュされた値  
  要求されたコンテキスト プロパティを表す文字列です。  
   
-## <a name="remarks"></a>解説  
+## <a name="remarks"></a>コメント  
  時刻は UTC 形式でデータベース内部に格納されます。  
   
 ## <a name="example"></a>例  

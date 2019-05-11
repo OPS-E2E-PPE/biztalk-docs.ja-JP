@@ -1,5 +1,5 @@
 ---
-title: 'X12 の処理でエラーが発生しました送信ポートでメッセージ: 受信者および送信者 id 修飾子のペアと名前のパーティは存在しません契約 |。Microsoft Docs'
+title: X12 の処理でエラーが発生しました。 送信ポートでメッセージ。契約受信者および送信者 id 修飾子のペアと名前のパーティは存在しません |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 30d75c1db7b55d1955eec398d6c8d792b11ca648
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e33f187c2804032b881305652f76cd9e45cc081e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37005707"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65388511"
 ---
-# <a name="a-failure-occurred-in-processing-x12-message-on-send-port-no-agreement-for-receiver-and-sender-identifier-qualifier-pairs-and-no-party-with-name"></a>X12 の処理でエラーが発生しました送信ポートでメッセージ: 契約受信者および送信者 id 修飾子のペアと名前のパーティは存在しません。
+# <a name="a-failure-occurred-in-processing-x12-message-on-send-port-no-agreement-for-receiver-and-sender-identifier-qualifier-pairs-and-no-party-with-name"></a>X12 の処理でエラーが発生しました。 送信ポートでメッセージ。契約受信者および送信者 id 修飾子のペアと名前のパーティは存在しません
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                                                                                                                              |
@@ -30,10 +30,10 @@ ms.locfileid: "37005707"
 |  イベント ソース   |                                                    [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI                                                    |
 |    コンポーネント    |                                                                                          EDI エンジン                                                                                          |
 |  シンボル名  |                                                                                              -                                                                                               |
-|  メッセージ テキスト   | X12 の処理でエラーが発生しました。 送信ポートでメッセージ{0}します。 {1}、{2}、{3}、{4} に対する受信者および送信者の ID と修飾子の組み合わせにはアグリーメントが存在しません。 {5} という名前のパーティは存在しません。 |
+|  メッセージ テキスト   | X12 の処理でエラーが発生しました。 送信ポートでメッセージ{0}します。 受信者および送信者の識別子と修飾子の組み合わせのアグリーメントが存在しない{1}、 {2}、 {3}、{4}します。 名前のパーティが存在しない{5}します。 |
   
 ## <a name="explanation"></a>説明  
- このエラー/警告/情報イベントは、BizTalk Server で、昇格した送信者の修飾子と識別子のプロパティ、および昇格した受信者の修飾子と識別子のプロパティが、パーティの対応する値と一致しなかったために、BizTalk Server で EDIFACT インターチェンジのパーティを解決できなかったことを示します。  
+ このエラー/警告/情報イベントは、BizTalk Server が EDIFACT インターチェンジに BizTalk Server が一致するようにできなかったためには、送信者の修飾子と識別子のプロパティを昇格のパーティを解決できなかったし、受信者の修飾子を昇格することを示します、。パーティの対応する値の識別子プロパティ。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- このエラーを解決するには、[EDI のプロパティ] ダイアログ ボックスのパーティの [ISA セグメントの定義] ページで定義されている、送信者の修飾子と識別子 (ISA5 と ISA6) および受信者の修飾子と識別子 (ISA7 と ISA8) が、インターチェンジのコンテキストで昇格させた対応するプロパティに一致することを確認します。
+ このエラーを解決するには、一致するよう送信者の修飾子と識別子 (ISA5 および ISA6) および受信者の修飾子と識別子 (ISA7 と ISA8) が、EDI のプロパティ ダイアログ ボックスのパーティの ISA セグメントの定義 ページで定義されている、対応する昇格インターチェンジのコンテキスト内のプロパティ。

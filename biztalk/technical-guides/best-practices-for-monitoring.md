@@ -12,12 +12,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9bfb2b5575fe46c1104ddc6b852695fb777275ef
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b8951b603fda6204ee8398d2dee9922a0f70a059
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36981659"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399327"
 ---
 # <a name="best-practices-for-monitoring"></a>監視するためのベスト プラクティス
 このトピックでは、Microsoft BizTalk Server 環境とアプリケーションを監視するためのベスト プラクティスを提供します。  
@@ -58,7 +58,7 @@ ms.locfileid: "36981659"
   
   **ログのパフォーマンス分析ツール (PAL) の実行します。**  
   
-- PAL はから無償でダウンロードとして入手できます[ https://github.com/clinthuffman/PAL](https://github.com/clinthuffman/PAL)します。 インストールに関する重要なは、[パフォーマンス分析のログ (PAL) ツールを使用して](../technical-guides/using-the-performance-analysis-of-logs-pal-tool.md)を参照してください。  
+- PAL はから無償でダウンロードとして入手できます[ https://github.com/clinthuffman/PAL](https://github.com/clinthuffman/PAL)します。 インストールに関する重要なは、次を参照してください。[パフォーマンス分析のログ (PAL) ツールを使用して](../technical-guides/using-the-performance-analysis-of-logs-pal-tool.md)します。  
   
   **Log Parser を実行します。**  
   
@@ -68,7 +68,7 @@ ms.locfileid: "36981659"
   
   実行、 [BizTalk MsgBoxViewer ツール](http://go.microsoft.com/fwlink/?LinkId=151930)から使用可能な[ http://go.microsoft.com/fwlink/?LinkId=151930](http://go.microsoft.com/fwlink/?LinkId=151930)します。 このツールは、BizTalk メッセージ ボックスとその他のデータベースを分析し、その他の情報がデータベースに関連している場合、警告を含む、HTML レポートが生成されます。 後で使用できるレポートを保存することもできます。 これらのレポートは、BizTalk アプリケーションの問題のトラブルシューティングを行う便利な可能性があります。  
   
-  BizTalk MsgBoxViewer ツールでは、すべての問題を識別する場合は、実行、[ターミネータ ツール](http://go.microsoft.com/fwlink/?LinkId=151931)でご利用いただけます[ http://go.microsoft.com/fwlink/?LinkId=151931](http://go.microsoft.com/fwlink/?LinkId=151931)します。 このツールでは、簡単に BizTalk MsgBoxViewer ツールによって特定された問題を解決することができます。 BizTalk MsgBoxViewer ツールを使用して、終端記号のツールを統合する方法の詳細については、[BizTalk MsgBoxViewer によって特定された問題を解決するには BizTalk 終端記号のを使用して](http://go.microsoft.com/fwlink/?LinkId=151932)(http://go.microsoft.com/fwlink/?LinkId=151932)を参照してください。  
+  BizTalk MsgBoxViewer ツールでは、すべての問題を識別する場合は、実行、[ターミネータ ツール](http://go.microsoft.com/fwlink/?LinkId=151931)でご利用いただけます[ http://go.microsoft.com/fwlink/?LinkId=151931](http://go.microsoft.com/fwlink/?LinkId=151931)します。 このツールでは、簡単に BizTalk MsgBoxViewer ツールによって特定された問題を解決することができます。 BizTalk MsgBoxViewer ツールを使用して、終端記号のツールを統合する方法の詳細については、次を参照してください。 [BizTalk MsgBoxViewer によって特定された問題を解決するには BizTalk 終端記号のを使用して](http://go.microsoft.com/fwlink/?LinkId=151932)(http://go.microsoft.com/fwlink/?LinkId=151932)します。  
   
 > [!NOTE]  
 >  、Microsoft では、これらのツールの使用はサポートされていないと、Microsoft がこれらのプログラムの適合性に関する保証をいたしません。 これらのプログラムは、ユーザー自身の責任で使用してください。  

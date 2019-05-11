@@ -1,5 +1,5 @@
 ---
-title: BizTalk Server アダプターのトラブルシューティング |Microsoft ドキュメント
+title: BizTalk Server アダプターのトラブルシューティング |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bdaf265f3a0c58f9505f9b4806dac0a5cee05a75
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 900e4bb481f2fd894c9ea186e57b516059b5052a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22278954"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65401875"
 ---
 # <a name="troubleshooting-biztalk-server-adapters"></a>BizTalk Server アダプターのトラブルシューティング
 このトピックでは、BizTalk 統合アダプターで発生する可能性がある問題を特定および解決するために使用できる、一般的なトラブルシューティング手順について説明します。  
@@ -44,6 +44,6 @@ ms.locfileid: "22278954"
   
 -   [WCF アダプターのトラブルシューティング](../core/troubleshooting-the-wcf-adapters.md)  
   
--   [BizTalk アダプターのトレースを使用します。](../core/using-biztalk-adapter-tracing.md)  
+-   [BizTalk アダプターのトレースの使用](../core/using-biztalk-adapter-tracing.md)  
   
--   [BizTalk アダプターに IPv6 のアドレス指定を使用します。](../core/using-ipv6-addressing-with-biztalk-adapters.md)
+-   [BizTalk アダプターにおける IPv6 アドレス指定の使用](../core/using-ipv6-addressing-with-biztalk-adapters.md)

@@ -12,14 +12,14 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 717260f8e45298c19756707ed042b97ab6e207fb
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 428704c78c3d6b615f0272927b03fb57aa66d91b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37016049"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65298789"
 ---
-# <a name="the-edifact-transaction-set-had-a-mismatched-count-in-unt01"></a>EDIFACT トランザクション セットの UNT01 に一致しないカウントがあります
+# <a name="the-edifact-transaction-set-had-a-mismatched-count-in-unt01"></a>UNT01 に一致しないカウントがあります、Edifact トランザクション セット
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                                                                     |
@@ -30,10 +30,10 @@ ms.locfileid: "37016049"
 |  イベント ソース   |                       [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI                        |
 |    コンポーネント    |                                                             EDI エンジン                                                              |
 |  シンボル名  |                                                      EfactUnhUntCountMismatch                                                       |
-|  メッセージ テキスト   | EDIFACT トランザクション セットの UNT01 に一致しないカウントがあります。 UNT01 が{0}されている一方、{1}します。 問題の修正が完了しました。 |
+|  メッセージ テキスト   | Edifact トランザクション セット UNT01 に一致しないカウントがあります。 UNT01 が{0}されている一方、{1}します。 修正されています。 |
   
 ## <a name="explanation"></a>説明  
- この警告は、セグメント カウントである UNT01 フィールドが、トランザクション セットのセグメント数に一致しなかったことを示します。 UNT01 の値が変更されたか壊れている、またはカウントの決定後にセグメントが追加あるいは削除されました。 送信パイプラインが UNT01 フィールドを正しいセグメント数にリセットし、インターチェンジを送信しました。  
+ この警告は、セグメントの数をある UNT01 フィールドが、トランザクション セットのセグメントの数と一致しないことを示します。 UNT01 の値が変更されたか壊れているか、またはセグメントの追加または数が決定された後に削除されました。 送信パイプラインでは、UNT01 フィールドを正しいセグメント数にリセットされ、インターチェンジが送信されます。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- ユーザーの操作は必要ありません。
+ ユーザー操作は必要ありません。

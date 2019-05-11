@@ -20,12 +20,12 @@ caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c12da6732729052119bfcc7841424db6d0dcaff9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b295fbe516c6a30f7244dbfe0cbec83480ec0bba
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22238338"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65389921"
 ---
 # <a name="creating-maps-using-biztalk-mapper"></a>BizTalk マッパーでのマップの作成
 BizTalk マッパーは、Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 環境内で動作するツールです。 BizTalk マッパーを使用すると、XML メッセージの変換に必要なマップを作成および編集できます。 マップは、オーケストレーション (次の図を参照) に使用されるほか、受信ポートで受け取ったメッセージを処理し、変換を適用してから、送信ポートを介して送信するという目的にも使用されます。  

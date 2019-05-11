@@ -1,5 +1,5 @@
 ---
-title: 単体テスト |Microsoft ドキュメント
+title: 単体テスト |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,33 +12,33 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d5f792adf73fb1e3791f0dfe6c8c5f60a3bb81e6
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 2d92743dbfde629212231e9fb8a1e73496f4ca6b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26009835"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65400595"
 ---
 # <a name="unit-testing"></a>単体テスト
-BizTalk Server には、単体テストを有効にできる機能が導入されています、**展開**BizTalk プロジェクトのプロパティ ページ。 次のスクリーン ショットは、このプロジェクトのプロジェクトを右クリックすると、プロジェクト デザイナーからアクセス設定を示しています。**プロパティ**です。  
+BizTalk Server に単体テストで有効にする機能が導入されています、**展開**BizTalk プロジェクトのプロパティ ページ。 次のスクリーン ショットは、このプロジェクトのプロジェクトを右クリックすると、プロジェクト デザイナーからアクセス設定を示しています。**プロパティ**します。  
   
  ![](../core/media/projectdesignerenableunittesting.gif "ProjectDesignerEnableUnitTesting")  
   
- **単体テスト プロジェクトのプロパティを公開するプロジェクト デザイナーの 展開 タブのスクリーン ショット**  
+ **プロジェクトの単体テストを有効にするプロパティを公開するプロジェクト デザイナーの [展開] タブのスクリーン ショット**  
   
- この機能により、スキーマ、マップ、パイプラインの単体テストを作成できます。 BizTalk Server のドキュメントのトピックでは、単体テスト機能を使用するアプローチの例をいくつかを説明します。 この機能を有効にしてプロジェクトを再構築すると、次の基本クラスから、単体テストをサポートするためのアイテム クラスが派生します。  
+ この機能は、スキーマ、マップ、用の単体テストを作成することができ、パイプラインします。 BizTalk Server のドキュメントでは、単体テスト機能を使用するアプローチの例をいくつか説明します。 この機能が有効になっているし、プロジェクトを再構築、成果物の単体テストをサポートするために次の基本クラスからクラスが派生されます。  
   
-|アイテムの種類|基本クラス|  
+|成果物の種類|基本クラス|  
 |-------------------|----------------|  
 |スキーマ|**Microsoft.BizTalk.TestTools.Schema.TestableSchemaBase**|  
 |マップ|**Microsoft.BizTalk.TestTools.Mapper.TestableMapBase**|  
 |パイプライン|**Microsoft.BizTalk.TestTools.Pipeline.TestablePipelineBase**|  
   
- 単体テストで BizTalk Server で導入された機能の詳細については、BizTalk Server ヘルプの次のトピックを参照してください。  
+ 単体テストの BizTalk Server で導入された機能の詳細については、BizTalk Server ヘルプで、次のトピックを参照してください。  
   
--   [単体テストのスキーマおよびマップの機能を使用して](http://go.microsoft.com/fwlink/?LinkId=150482)(http://go.microsoft.com/fwlink/?LinkId=150482)。  
+-   [単体テストのスキーマとマップを含む機能を使用して](http://go.microsoft.com/fwlink/?LinkId=150482)(http://go.microsoft.com/fwlink/?LinkId=150482)します。  
   
--   [単体テストでのパイプライン機能を使用して](http://go.microsoft.com/fwlink/?LinkId=150483)(http://go.microsoft.com/fwlink/?LinkId=150483)  
+-   [単体テストのパイプラインを持つ機能を使用して](http://go.microsoft.com/fwlink/?LinkId=150483)(http://go.microsoft.com/fwlink/?LinkId=150483)  
   
 ## <a name="see-also"></a>参照  
  [自動テストの実装](../technical-guides/implementing-automated-testing.md)

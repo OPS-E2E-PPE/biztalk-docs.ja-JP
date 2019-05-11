@@ -2,12 +2,12 @@
 redirect_url: /biztalk/core/creating-tibco-rendezvous-receive-handlers/
 redirect_document_id: true
 ROBOTS: NOINDEX
-ms.openlocfilehash: 8fc76fb212d343bcafa67c5ea76f62899847b40e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: cd807abafe2cf8769bf4816143facdaf37607d5f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36984267"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65400148"
 ---
 # <a name="tibco-rendezvous-events-and-receive-locations"></a>TIBCO Rendezvous イベントと受信場所
 TIBCO Rendezvous システムは、選択したサブジェクト名にメッセージを送信できます。 概念*イベント*は他の TIBCO Rendezvous プログラムによるメッセージの生成。  

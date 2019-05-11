@@ -21,26 +21,26 @@ caps.latest.revision: 27
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7b58dcb66e4a001d7d163f5d8de53fb89502c6ef
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c0aec49f0334a62e559c0812a7b44029c25b4c95
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36983387"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65386448"
 ---
 # <a name="how-to-configure-an-http-receive-handler"></a>HTTP 受信ハンドラを構成する方法
-次の手順を実行して、HTTP 受信ハンドラのプロパティを構成します。  
+受信ハンドラーを HTTP のプロパティを構成する次の手順を使用します。  
   
 > [!NOTE]
->  各ホストに関連付けられる受信ハンドラは 1 つだけです。  
+>  各ホストは、1 つだけの受信ハンドラーが関連付けられていることができます。  
 > 
 > [!NOTE]
->  HTTP 受信アダプタは、BizTalk 分離ホスト インスタンスのコンテキストで実行されます。  
+>  HTTP では、BizTalk 分離ホスト インスタンスのコンテキストでアダプターの実行が表示されます。  
 > 
 > [!CAUTION]
->  HTTP アダプター ハンドラーまたは SOAP アダプター ハンドラーを使用するときは、これらのハンドラーのホスト インスタンスを Microsoft [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]、または [!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] コンピューターにインストールすることをお勧めします。  
+>  HTTP または SOAP アダプタ ハンドラを使用する場合は、Microsoft では、これらのハンドラーのホスト インスタンスをインストールすることをお勧め[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]または[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]コンピューター。  
   
-### <a name="to-configure-the-general-properties-for-an-http-receive-handler"></a>HTTP 受信ハンドラの全般プロパティを構成するには  
+### <a name="to-configure-the-general-properties-for-an-http-receive-handler"></a>HTTP の [全般] プロパティの受信ハンドラを構成するには  
   
 1. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、 [!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)] **管理**、展開**BizTalk グループ**、展開**プラットフォームの設定**、順に展開**アダプター**します。  
   
@@ -54,20 +54,20 @@ ms.locfileid: "36983387"
   
 6. **[OK]** をクリックします。  
   
-   BizTalk Server では、メッセージのバッチを効果的に処理して、1 つのメッセージを非常に高速処理を行わないように設計されています。 したがって、この受信ハンドラーを双方向 (要求 - 応答) の受信場所で使用する場合は、次の手順に従うことで、待機時間を最小限に抑えることができます。  
+   BizTalk Server では、メッセージのバッチを効果的に処理して、1 つのメッセージを非常に高速処理を行わないように設計されています。 ように、ハンドラーが 2 つを使用しようとしている場合、この受信方向または要求-応答の受信場所、次の手順の待機時間を最小限に抑えることができます。  
   
 - 設定、**バッチ サイズ**プロパティ値の 1 にします。  
   
-- 削減、 **MaxReceiveInterval** 500 の既定値から値を 100 未満の値を**Messaging Isolated、xlang/s では、** と**In-process**サービスクラス。  変更が加えられた、 **adm_ServiceClass**サービスの種類ごとに 1 つのレコードを含む BizTalk 管理データベースのテーブル。  これはサービスの種類全体の変更のため、この設定を変更する場合は、注意を使用します。 この設定は、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] メッセージング エージェントが [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] メッセージ ボックス データベースでメッセージをポーリングするときの最大ポーリング間隔 (ミリ秒) を指定します。  また、特定の負荷条件下でメッセージの制限が必要かどうかを制限コントローラーが判断する際にも使用されます。 必要な場合、制限コントローラーは、システムのストレス条件に基づいてメッセージ ディスパッチの間隔を段階的に遅らせます。 高スループットのシステムでは、この設定は使用されません。  ただし、一度この値を使用すると、MaxReceiveInteral/10 と MaxReceiveInterval の間で間隔が動的に変更されます。  
+- 削減、 **MaxReceiveInterval** 500 の既定値から値を 100 未満の値を**Messaging Isolated、xlang/s では、** と**In-process**サービスクラス。  変更が加えられた、 **adm_ServiceClass**サービスの種類ごとに 1 つのレコードを含む BizTalk 管理データベースのテーブル。  これはサービスの種類全体の変更のため、この設定を変更する場合は、注意を使用します。 この設定を指定します (ミリ秒単位) の最大ポーリング間隔、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]メッセージング エージェント、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]メッセージをメッセージ ボックス データベースです。  また、使用されますスロットル コント ローラーによって負荷条件下でメッセージの制限が必要かどうかを決定します。 必要な場合、制限コント ローラーは、システムのストレス条件に基づいてメッセージ ディスパッチの間隔を遅延増分します。 高スループットのシステムでは、この設定は使用されません。  この値が使用されると、ただし、時間間隔が動的に変更と、maxreceiveinteral/10 と MaxReceiveInterval の間。  
   
   > [!NOTE]
   >  この設定を変更するで作成されたすべてのホストに影響を**ホストの種類**の**Isolated**します。  
   
-- 構成済みの HTTP 受信機能に関連付けられている IIS アプリケーション プールを再起動します。  
+- 再起動を任意の HTTP に関連付けられている IIS アプリケーション プールに構成されている関数が表示されます。  
   
-  ログオン アカウント、 **BizTalkServerIsolatedHost**ホスト インスタンスの読み取りが必要し、HTTP が使用する分離コード ファイルを動的にコンパイルする一時ディレクトリまたはディレクトリに書き込みアクセス許可は、関数を受信します。 アクセス許可を与えるには、次の操作を行います。  
+  ログオン アカウント、 **BizTalkServerIsolatedHost**ホスト インスタンスの読み取りが必要し、HTTP が使用する分離コード ファイルを動的にコンパイルする一時ディレクトリまたはディレクトリに書き込みアクセス許可は、関数を受信します。 次の手順を使用して、アクセス許可を付与します。  
   
-### <a name="to-grant-the-account-for-the-biztalkserverisolatedhost-host-instance-read-and-write-permissions-to-the-temp-directory-of-your-biztalk-server"></a>BizTalkServerIsolatedHost ホスト インスタンスのアカウントに、BizTalk Server の一時ディレクトリの読み取りアクセス許可と書き込みアクセス許可を与えるには  
+### <a name="to-grant-the-account-for-the-biztalkserverisolatedhost-host-instance-read-and-write-permissions-to-the-temp-directory-of-your-biztalk-server"></a>Biztalkserverisolatedhost アカウントに付与するには、ホスト インスタンスの読み取りし、BizTalk server の一時ディレクトリに対する書き込みアクセス許可  
   
 1. クリックして**開始**、 をクリックして**実行**、型**CMD**、ENTER キーを押します。  
   

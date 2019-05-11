@@ -1,6 +1,6 @@
 ---
-title: BizTalk Server での例外処理 JD Edwards OneWorld を使用して |Microsoft ドキュメント
-description: 例外の処理と BizTalk Server で、JD Edwards OneWorld アダプターを使用して、オーケストレーションの jdearglist.txt ファイルの更新の概要
+title: BizTalk Server 例外処理では、JD Edwards OneWorld の使用 |Microsoft Docs
+description: 例外を処理し、BizTalk Server で、JD Edwards OneWorld アダプターを使用しているオーケストレーションの jdearglist.txt ファイルの更新の概要
 ms.custom: ''
 ms.date: 10/18/2017
 ms.prod: biztalk-server
@@ -13,22 +13,22 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d4284b1bfbab9edbb959bdacb2db0f7f842c6e11
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: ee75f896e02c8866e29538ad3956c6e89720e8de
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
-ms.locfileid: "24013185"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65401696"
 ---
 # <a name="use-biztalk-server-exception-handling"></a>BizTalk Server 例外処理を使用します。
 
 ## <a name="overview"></a>概要
-オーケストレーション内では、エラーと、バック エンド サーバーからの例外を処理する図形を追加します。 また、jdearglist.txt ファイルで文字列の位置揃えを設定することを確認します。 
+オーケストレーション内では、エラーと、バック エンド サーバーからの例外を処理するために図形を追加します。 また、jdearglist.txt ファイル内の文字列の位置を設定することを確認します。 
 
  
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
--   [Jdearglist での文字列の位置揃えを設定します。](../core/setting-string-justification-in-jdearglist.md)
+-   [Jdearglist での文字列の位置を設定します。](../core/setting-string-justification-in-jdearglist.md)
   
 -   [基本的なオーケストレーション デザイン](../core/basic-orchestration-design1.md)  
   
@@ -38,4 +38,4 @@ ms.locfileid: "24013185"
   
 -   [例外のキャッチ ブロックの追加](../core/how-to-add-a-catch-exception-block4.md)  
   
--   [例外メッセージを完成させます](../core/completing-the-exception-message2.md)
+-   [例外メッセージの完了](../core/completing-the-exception-message2.md)

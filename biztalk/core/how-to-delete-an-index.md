@@ -16,19 +16,19 @@ caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: aaafdf9515849fb84d569fb50a3e7117f30969b3
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: db57ce24952c1a1987a61aabcbe24e706a2b63e8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36978331"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65385341"
 ---
 # <a name="how-to-delete-an-index"></a>インデックスを削除する方法
 管理者を使用して、**インデックスを削除**特定のチェックポイントで指定したアクティビティのインデックスを削除するコマンド。  
   
 ### <a name="to-delete-an-index-on-an-activity"></a>アクティビティのインデックスを削除するには  
   
-1. 次のように、コマンド プロンプトを開きます: をクリックして**開始**、 をクリックして**実行**、型**cmd**、順にクリックします**OK**。  
+1. 次のように、コマンド プロンプトを開きます。をクリックして**開始**、 をクリックして**実行**、型**cmd**、順にクリックします**OK**。  
   
 2. コマンド プロンプトで「[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking」と入力して、追跡フォルダーに移動し、 **Enter**キーを押します。  
   

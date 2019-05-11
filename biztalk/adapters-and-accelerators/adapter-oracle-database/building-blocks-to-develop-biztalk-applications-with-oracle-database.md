@@ -16,12 +16,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 703bff35321fcedb4240d8ced1f422707c0ca51e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 53908c0b183f3b9c3f9c1615fdc2ec87e4641ece
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36973803"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65376783"
 ---
 # <a name="building-blocks-to-develop-biztalk-applications-with-oracle-database"></a>Oracle データベースと BizTalk アプリケーションを開発する構成要素
 使用して Oracle データベースに対する操作の実行、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]タスクの 2 つのセットが含まれます: デザイン時および実行時。  
@@ -29,7 +29,7 @@ ms.locfileid: "36973803"
 ## <a name="design-time-tasks"></a>デザイン時のタスク  
  [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]参照、検索、およびを使用して Oracle メタデータ テーブル、ストアド プロシージャ、および XML スキーマ定義言語 (Xsd) の形式でこのようなその他の項目を取得する機能を提供、[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]します。 Xsd では、Oracle データベースで実行する操作に固有です。 [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]は BizTalk プロジェクトを作成する場合にのみ使用できます。 デザイン時に、次のタスクを実行する必要があります。  
   
-- **BizTalk プロジェクトを作成し、スキーマ生成**します。 Microsoft で BizTalk プロジェクトを作成する必要があります[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]と Oracle データベースで実行される操作のスキーマを生成します。 たとえば、EMPLOYEE テーブルにレコードを挿入する場合は、EMPLOYEE テーブルに対して挿入操作のメタデータを生成する必要があります。 この手順で使用して、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]スキーマを生成します。 詳細については、[Visual Studio での Oracle データベース操作のメタデータを取得](../../adapters-and-accelerators/adapter-oracle-database/get-metadata-for-oracle-database-operations-in-visual-studio.md)を参照してください。
+- **BizTalk プロジェクトを作成し、スキーマ生成**します。 Microsoft で BizTalk プロジェクトを作成する必要があります[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]と Oracle データベースで実行される操作のスキーマを生成します。 たとえば、EMPLOYEE テーブルにレコードを挿入する場合は、EMPLOYEE テーブルに対して挿入操作のメタデータを生成する必要があります。 この手順で使用して、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]スキーマを生成します。 詳細については、次を参照してください。 [Visual Studio での Oracle データベース操作のメタデータを取得](../../adapters-and-accelerators/adapter-oracle-database/get-metadata-for-oracle-database-operations-in-visual-studio.md)します。
   
 - **オーケストレーションを設定**します。 スキーマを生成した後、オーケストレーション デザイナーを使用してオーケストレーションを設定する必要があります。 基本的なオーケストレーションには、受信と送信図形とし、受信論理ポートの送信を追加します。 後の手順では、BizTalk Server 管理コンソールを使用して物理ポートにこれらの論理ポートをマップします。 オーケストレーションでは、これらのポートを使用して、クライアントがアダプターから送信されるメッセージを選択します。 オーケストレーションは、Oracle データベースにメッセージを渡します。 Oracle データベースからの応答が受信されると、オーケストレーションは、アダプターのクライアントへの応答を渡します。  
   

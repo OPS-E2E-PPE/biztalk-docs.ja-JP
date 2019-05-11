@@ -12,14 +12,14 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dd7cc0a9d4da1b76d3557c57aaf7cb6e4cc5859c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: dc1759842d98bbed33109c50db39919479e28ac1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36980387"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65345835"
 ---
-# <a name="fatal-error-encountered-in-edi-disassembler"></a>EDI 逆アセンブラーに致命的なエラーが発生しました
+# <a name="fatal-error-encountered-in-edi-disassembler"></a>EDI 逆アセンブラーで発生した致命的なエラー
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                    |

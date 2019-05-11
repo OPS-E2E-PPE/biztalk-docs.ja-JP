@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 461e2e1a4256d79112e4eec94047c25df34a4511
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: dd3cf2d75db87e82fd0fd012f028a2ad8bc1cc2e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37001122"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65401257"
 ---
 # <a name="best-practices-for-biztalk-server-settings"></a>BizTalk Server 設定のベスト プラクティス
 このトピックでの運用準備の手順を実行する際に従う必要のあるベスト プラクティス[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]します。  
@@ -26,7 +26,7 @@ ms.locfileid: "37001122"
   
 - 1 つのバッチには、複数の操作を組み合わせることで、アダプターによって実行されるトランザクションの数を最小限に抑えます。  
   
-- メッセージの数だけでなく、バッチ内のバイトの合計数に基づいてバッチ サイズを制限します。 バッチ サイズの制限の詳細については、[アダプターのパフォーマンスを向上させるバッチ処理構成](../technical-guides/configuring-batching-to-improve-adapter-performance.md)を参照してください。  
+- メッセージの数だけでなく、バッチ内のバイトの合計数に基づいてバッチ サイズを制限します。 バッチ サイズの制限の詳細については、次を参照してください。[アダプターのパフォーマンスを向上させるバッチ処理構成](../technical-guides/configuring-batching-to-improve-adapter-performance.md)します。  
   
   **サイズの大きいメッセージのしきい値を調整します。**  
   
@@ -37,7 +37,7 @@ ms.locfileid: "37001122"
 - 計画段階中には、追跡する必要がある情報を決定する必要があります。これにより、プロジェクトを配置した後に追跡オプションを設定して必要な情報のみを付与する追跡データの量を制限します。  
   
   > [!NOTE]  
-  >  追跡に関連するベスト プラクティスの詳細については、[追跡の計画](../technical-guides/planning-for-tracking.md)このガイドと[状態と動作状況の追跡](http://go.microsoft.com/fwlink/p/?LinkId=154187)(http://go.microsoft.com/fwlink/p/?LinkId=154187)を参照してください。  
+  >  追跡に関連するベスト プラクティスの詳細については、次を参照してください。[追跡の計画](../technical-guides/planning-for-tracking.md)このガイドと[状態と動作状況の追跡](http://go.microsoft.com/fwlink/p/?LinkId=154187)(http://go.microsoft.com/fwlink/p/?LinkId=154187)します。  
   
   **すべてのメッセージを追跡しません。**  
   
@@ -49,7 +49,7 @@ ms.locfileid: "37001122"
   
   **リソース使用率に基づく制限を調整します。**  
   
-- スロットル[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]既定では、システムの適切な保護を提供するように構成します。 制限の調整が実行を表示する状態のパフォーマンス カウンターを監視します。 自分のゲージでスロットルを適用するリソースが基づいている場合 (たとえば、データベースのサイズまたはメモリ使用率) はまたはの上に使用します。 次に、調整、調整のしきい値は切り上げまたは切り捨てです。 詳細については、次を参照してください。[制限のしきい値の調整: タイミングと理由](http://go.microsoft.com/fwlink/p/?LinkId=154188)(<http://go.microsoft.com/fwlink/p/?LinkId=154188>)。  
+- スロットル[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]既定では、システムの適切な保護を提供するように構成します。 制限の調整が実行を表示する状態のパフォーマンス カウンターを監視します。 自分のゲージでスロットルを適用するリソースが基づいている場合 (たとえば、データベースのサイズまたはメモリ使用率) はまたはの上に使用します。 次に、調整、調整のしきい値は切り上げまたは切り捨てです。 詳細については、次を参照してください。[制限のしきい値の調整。タイミングと理由](http://go.microsoft.com/fwlink/p/?LinkId=154188)(<http://go.microsoft.com/fwlink/p/?LinkId=154188>)。  
   
   **可能であれば、PassThruTransmit パイプラインを使用します。**  
   
@@ -63,4 +63,4 @@ ms.locfileid: "37001122"
   >  **図形の開始と終了**追跡イベントはすべてのオーケストレーションでは、既定で有効になっています。  
   
 ## <a name="see-also"></a>参照  
- [チェックリスト: BizTalk Server の構成](../technical-guides/checklist-configuring-biztalk-server.md)
+ [チェックリスト:BizTalk Server の構成](../technical-guides/checklist-configuring-biztalk-server.md)

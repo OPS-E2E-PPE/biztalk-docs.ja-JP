@@ -1,5 +1,5 @@
 ---
-title: 既存のメッセージの BRE ポリシーを展開する |Microsoft ドキュメント
+title: 既存のメッセージの BRE ポリシーの展開 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,28 +12,28 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4cd094feabe1ba23a6a73c89aae3a1042b8f7fc9
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: bbe4f95526883f0bc8e79ff0b0c0241aa198747f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25965008"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377964"
 ---
-# <a name="deploying-bre-policies-for-existing-messages"></a>既存のメッセージの BRE ポリシーを展開します。
+# <a name="deploying-bre-policies-for-existing-messages"></a>既存のメッセージの BRE ポリシーの展開
 **関連するビジネス ルールを展開するには。**  
   
-1.  をクリックして**開始**、 をクリックして**プログラム**、 をクリックして**Microsoft BizTalk Accelerator 用 SWIFT**、順にクリック**BRE 配置ユーティリティ**です。  
+1.  クリックして**開始**、 をクリックして**プログラム**、 をクリックして**Microsoft BizTalk Accelerator for SWIFT**、順にクリックします**BRE 配置ユーティリティ**します。  
   
-2.  BRE 配置ユーティリティでクリックして**参照**です。  
+2.  BRE 配置ユーティリティでクリックして**参照**します。  
   
-3.  .NET グローバル アセンブリ キャッシュ] ダイアログ ボックスで、[ **SWIFT MX スキーマ**、順にクリック**OK**です。  
+3.  .NET グローバル アセンブリ キャッシュ] ダイアログ ボックスで、[ **SWIFT MX スキーマ**、順にクリックします**OK**します。  
   
-4.  をクリックして**展開**です。  
+4.  クリックして**デプロイ**します。  
   
-     そのアセンブリに展開されているスキーマに基づくと、配置ユーティリティ関連するルールを識別それらを発行して、BRE を使用します。 完了したら、BRE 配置ユーティリティが表示されます、次のメッセージ:"配置が完了しました。 ログ ファイルまたはビジネス ルール作成ツールの表示の詳細。"  
+     そのアセンブリに展開されているスキーマに基づき、配置ユーティリティは、関連するルールを識別し、BRE を使用して発行します。 完了したら、BRE 配置ユーティリティが表示されます、次のメッセージ。"デプロイが完了しました。 ログ ファイルまたはビジネス ルール作成ツールの表示の詳細。"  
   
 5.  SWIFT BRE 配置ユーティリティ ダイアログ ボックスを閉じます。  
   
-6.  Windows エクスプ ローラーで参照*\<ドライブ\>*: \Documents and settings \all \all データをログ ファイル BREDeploymentLog.txt に表示されるフォルダーを確認します。  
+6.  Windows エクスプ ローラーを参照*\<ドライブ\>*: \Documents and 別のバックアップ データをフォルダーに表示される BREDeploymentLog.txt をログ ファイルことを確認します。  
   
-7.  をクリックして**開始**、 をクリックして**実行**、型**services.msc**、順にクリック**ok**です。 サービス (ローカル) ウィンドウで右クリック**ルール エンジン更新サービス**、クリックして**再起動**です。
+7.  をクリックして**開始**、 をクリックして**実行**、型**services.msc**、順にクリックします**OK**。 サービス (ローカル) ウィンドウで、右クリックして**ルール エンジン更新サービス**、 をクリックし、**再起動**します。

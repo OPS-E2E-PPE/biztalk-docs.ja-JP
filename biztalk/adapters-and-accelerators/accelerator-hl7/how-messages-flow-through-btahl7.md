@@ -16,12 +16,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f6bddae0d685d63772b5fd76f70ba19e0628cab5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a2b048ee47ca90b47644286cef90b9937b8a20bb
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37000107"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65296380"
 ---
 # <a name="how-messages-flow-through-btahl7"></a>Btahl7 のメッセージのフロー
 Microsoft BizTalk Accelerator for HL7 にインストールするときに ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) を追加する MicrosoftBizTalk のサーバー上に[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]コンポーネントを[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]アーキテクチャ。 次の図は、結合されたシステムのアーキテクチャの概要を提供する[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]します。  

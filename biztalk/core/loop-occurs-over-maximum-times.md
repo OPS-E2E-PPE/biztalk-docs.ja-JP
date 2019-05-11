@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6587e5b5dcef641f37f24005fe594a084e5de12d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4fead7e98c587b78e9614dbc02171f3c19d01934
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36979603"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65380535"
 ---
 # <a name="loop-occurs-over-maximum-times"></a>最大回数を超えてループが発生します
 ## <a name="details"></a>詳細  
@@ -33,7 +33,7 @@ ms.locfileid: "36979603"
 |  メッセージ テキスト   |                            最大回数を超えてループが発生します                             |
   
 ## <a name="explanation"></a>説明  
- このエラー/警告/情報イベントは、メッセージのスキーマで規定された最大回数を超える繰り返し回数を持つループがインターチェンジに含まれていたため、受信パイプラインで受信インターチェンジを処理できなかったことを示します。  
+ このエラー/警告/情報イベントは、インターチェンジには、メッセージ スキーマで必要な時間の最大数を超える繰り返し回数をループが含まれているためで受信インターチェンジでした、受信パイプラインによって処理することを示します。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- このエラーを解決するには、インターチェンジのループの繰り返し回数がメッセージのスキーマで指定されたループの maxOccurs プロパティの回数以下であることを確認し、インターチェンジを再送信します。
+ このエラーを解決するのには、ループが繰り返さインターチェンジでない指定されたメッセージのスキーマのループの maxOccurs プロパティの回数以上とし、インターチェンジを再送信のことを確認します。

@@ -1,5 +1,5 @@
 ---
-title: エラー - ネイティブ解析の一般的な |Microsoft ドキュメント
+title: エラー - ネイティブ解析の一般的な |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 383c3198af290552715d51812f22c82760cb445f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: eb7b46fb6b04486c8c80a286c86a4f9cb3c84dbb
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22240450"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65348242"
 ---
 # <a name="error---generic-native-parsing"></a>エラー - ネイティブ解析のジェネリック
 **エラー コード**  
@@ -28,8 +28,8 @@ ms.locfileid: "22240450"
   
  **説明**  
   
- マップのテスト用に指定されたネイティブの入力インスタンス メッセージ ファイルを解析できませんでした。その結果、一般的で致命的な解析エラーが生成されました。  
+ マップのテスト操作に指定されたネイティブ入力インスタンス メッセージ ファイルは、解析できませんでしたし、汎用の致命的な解析エラーを生成します。  
   
  **ユーザーの操作**  
   
- 適宜、マップに関連付けられている送信元スキーマか、指定されているファイルのネイティブな入力インスタンス メッセージ、またはその両方を修正してください。 問題の箇所を特定するために BizTalk エディターで作業することを検討してください。 **スキーマの検証**と**インスタンスの生成**ソリューション エクスプ ローラーでスキーマを右クリックしたときに使用できるコマンドは、スキーマ エラーの検出に便利です。
+ 必要に応じて、適切な送信元スキーマは、マップまたは指定したファイルまたはその両方でネイティブの入力インスタンス メッセージに関連付けられています。 BizTalk エディターで問題を特定する作業を検討してください。 **スキーマの検証**と**インスタンスの生成**コマンド、使用できるは、ソリューション エクスプ ローラーでスキーマを右クリックしたときにスキーマ エラーの検出に役立ちます。

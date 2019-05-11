@@ -1,5 +1,5 @@
 ---
-title: エラー - 入力インスタンス ファイルが見つかりません |Microsoft ドキュメント
+title: エラー - 入力インスタンス ファイルが見つかりません |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 53ce17963acf153b45751e6d3d3a1812ec4940ed
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4ce9d9ff68c38b8beb26182a4f6bfc66587b8731
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22241314"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65388790"
 ---
 # <a name="error---input-instance-file-missing"></a>エラー - 入力インスタンス ファイルが見つかりません
 **説明**  
@@ -28,4 +28,4 @@ ms.locfileid: "22241314"
   
  **ユーザーの操作**  
   
- Microsoft では、関連するスキーマ ファイルを右クリックして[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]ソリューション エクスプ ローラーで、クリックして**プロパティ**を開くには、**プロパティ ページ**このスキーマのダイアログ ボックス。 このダイアログ ボックスでの**全般** タブで、省略記号ボタン (**...**) の値フィールドのボタン、**入力インスタンス ファイル名**プロパティ、およびしを使用して、**入力ファイルの選択**入力インスタンス メッセージを含むファイルを識別する ダイアログ ボックス. 値フィールドに直接ファイル名を入力することも、**入力インスタンス ファイル名**プロパティです。
+ Microsoft の関連するスキーマ ファイルを右クリックして[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]ソリューション エクスプ ローラーをクリック**プロパティ**を開く、**プロパティ ページ**このスキーマのダイアログ ボックス。 このダイアログ ボックスで、**一般的な** タブで、省略記号をクリックします (**...**) の値フィールドのボタン、**入力インスタンス ファイル名**プロパティでは、次を使用して、**入力ファイルの選択**入力インスタンス メッセージを含むファイルを識別するためにダイアログ ボックス. 値フィールドに直接ファイル名を入力することも、**入力インスタンス ファイル名**プロパティ。

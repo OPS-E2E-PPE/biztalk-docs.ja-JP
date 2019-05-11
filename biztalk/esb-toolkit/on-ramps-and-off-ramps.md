@@ -1,5 +1,5 @@
 ---
-title: ランプでと傾斜 Off |Microsoft ドキュメント
+title: オンランプとオフランプ |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,27 +12,27 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a0aafa69315dba07219ad8510c77cdc9de2d4bce
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 528a8a42319fce4dbfc6507ec4d0658092e44963
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22294562"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65400052"
 ---
-# <a name="on-ramps-and-off-ramps"></a>ランプで、ランプ オフ
-環境で、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]が展開されると、BizTalk 受信場所が担当する「入り口です」と呼びます ESB 宛てのメッセージの受信。 ESB 入り口に標準の BizTalk 受信場所を構成する受信場所を関連付ける、toolkit の一部として提供されるパイプラインのいずれかと決定またはの日程を読み取るには、そのパイプラインのコンポーネントを正しく構成しますシナリオに応じて、受信メッセージ。  
+# <a name="on-ramps-and-off-ramps"></a>オンランプとオフランプ
+環境で、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]が展開されると、BizTalk 受信場所が担当する「入り口」と呼びます ESB 宛てのメッセージの受信。 ESB 入り口を標準の BizTalk 受信場所を構成するには、受信場所を toolkit の一部として提供されているパイプラインのいずれかと関連付けるおよび決定またはの旅程を読み取り、そのパイプラインのコンポーネントを正しく構成しますシナリオに応じて受信メッセージ。  
   
- ESB「出口」は、BizTalk の動的送信ポートに対応します。 日程が処理されている、値はシステム Properties.xsd スキーマを使用して、関連付けられているメッセージのコンテキスト プロパティに昇格されます。 BizTalk パブリッシュ/サブスクライブ メカニズムで昇格これら送信ポート (出口) メッセージ配信を完了するには動的でメッセージをルーティングするプロパティです。  
+ ESB「オフ ランプ」は、BizTalk の動的送信ポートに対応します。 日程が処理されると、値は、システム Properties.xsd スキーマを使用して、関連付けられているメッセージのコンテキスト プロパティに昇格されます。 BizTalk パブリッシュ/サブスクライブこれら昇格メカニズムは送信ポート (傾斜オフ) メッセージ配信を完了する動的な経由でメッセージをルーティングするプロパティ。  
   
- 次の表は、上のランプによって提供される、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]です。  
+ 次の表は、オンランプによって提供される、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]します。  
   
-|名前|メッセージ交換パターン|**Description**|  
+|名前|メッセージ交換パターン|**[説明]**|  
 |----------|------------------------------|---------------------|  
-|ESB です。ItineraryServices|一方向|ASMX 入り口です。SOAP ヘッダー内では、ESB itinerary コンテンツが必要ですが。|  
-|ESB です。ItineraryServices.Response|要求-応答|ASMX 入り口です。SOAP ヘッダー内では、ESB itinerary コンテンツが必要ですが。|  
-|ESB です。ItineraryServices.WCF|一方向|Windows Communication Foundation (WCF) の入り口です。SOAP ヘッダー内では、ESB itinerary 参照が必要です。|  
-|ESB です。ItineraryServices.Response.WCF|要求-応答|WCF の入り口です。SOAP ヘッダー内では、ESB itinerary 参照が必要です。|  
-|ESB です。ItineraryServices.Generic.WCF|一方向|WCF の入り口です。要求メッセージだけが必要です。|  
-|ESB です。ItineraryServices.Generic.Response.WCF|要求-応答|WCF の入り口です。要求メッセージだけが必要です。|  
+|ESB します。ItineraryServices|一方向|ASMX のランプ;SOAP ヘッダーでは ESB オンランプ コンテンツが必要です。|  
+|ESB します。ItineraryServices.Response|要求-応答|ASMX のランプ;SOAP ヘッダーでは ESB オンランプ コンテンツが必要です。|  
+|ESB します。ItineraryServices.WCF|一方向|Windows Communication Foundation (WCF) に増加します。SOAP ヘッダーでは ESB スケジュールの参照が必要です。|  
+|ESB します。ItineraryServices.Response.WCF|要求-応答|WCF - 傾斜します。SOAP ヘッダーでは ESB スケジュールの参照が必要です。|  
+|ESB します。ItineraryServices.Generic.WCF|一方向|WCF - 傾斜します。要求メッセージのみを想定しています。|  
+|ESB します。ItineraryServices.Generic.Response.WCF|要求-応答|WCF - 傾斜します。要求メッセージのみを想定しています。|  
   
- [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]上のランプれない ASMX は、ESB 行程を選択するように構成する必要があります。 ESB 行程を選択する方法の詳細については、次を参照してください。[パイプライン コンポーネントを使用して、既存の日程を選択する](../esb-toolkit/using-a-pipeline-component-to-select-an-existing-itinerary.md)です。
+ [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] オンランプ ASMX を構成して、ESB 行程を選択する必要がないです。 ESB スケジュールを選択する方法の詳細については、次を参照してください。[パイプライン コンポーネントを使用して、既存のスケジュールを選択する](../esb-toolkit/using-a-pipeline-component-to-select-an-existing-itinerary.md)します。

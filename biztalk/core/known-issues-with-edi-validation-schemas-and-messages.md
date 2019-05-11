@@ -1,5 +1,5 @@
 ---
-title: EDI 検証、スキーマ、およびメッセージに関する既知の問題 |Microsoft ドキュメント
+title: EDI の検証、スキーマ、およびメッセージに関する既知の問題 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,133 +12,133 @@ caps.latest.revision: 42
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2a508834ff81814b17bc12f1d698984d65748092
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 706b165067fbbed058c12ff096c91851594d945a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22264562"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65380746"
 ---
-# <a name="known-issues-with-edi-validation-schemas-and-messages"></a>EDI 検証、スキーマ、およびメッセージに関する既知の問題
-このトピックでは、検証に関する既知の問題について説明します。  
+# <a name="known-issues-with-edi-validation-schemas-and-messages"></a>EDI の検証、スキーマ、およびメッセージに関する既知の問題
+このトピックでは、既知の検証の問題について説明します。  
   
-## <a name="message-is-suspended-with-edi-validation-turned-off"></a>EDI 検証の無効化によってメッセージが中断される  
+## <a name="message-is-suspended-with-edi-validation-turned-off"></a>EDI 検証をになっているメッセージは中断されます。  
  **現象**  
   
- 1 組のルールに違反し、検証は無効であるにもかかわらず、メッセージが (シリアル化される代わりに) 中断されます。  
+ 1 組のルールに違反すると、検証は無効しが、メッセージは中断されます (結果は、メッセージがシリアル化されることが必要です)。  
   
  **考えられる原因**  
   
- クロス フィールド/セグメント検証を実行すると、場合でも**EDI の種類**プロパティが選択されて、**検証と確認の生成の設定**のノード、 **EDI プロパティ**ダイアログ ボックス。 検証は、スキーマの注釈で有効になっているために発生します。  
+ クロス フィールド/セグメント検証を実行すると、場合でも**EDI の種類**プロパティが選択されて、**検証と確認の生成の設定**のノード、 **EDI プロパティ**ダイアログ ボックス。 検証では、スキーマ注釈でオンにするために発生します。  
   
- **解決策**  
+ **解決方法**  
   
  スキーマの注釈で検証を無効にします。  
   
-## <a name="the-biztalk-service-needs-to-be-restarted-after-a-schema-has-been-edited-and-redeployed"></a>スキーマを編集し、再展開した後で BizTalk サービスを再起動する必要がある  
+## <a name="the-biztalk-service-needs-to-be-restarted-after-a-schema-has-been-edited-and-redeployed"></a>BizTalk サービスは、スキーマを編集し、再デプロイ後に再起動する必要があります。  
  **現象**  
   
- スキーマを編集し、再展開した後に BizTalk Server が有効なメッセージを正常に処理しません。  
+ BizTalk Server は有効なメッセージがスキーマを編集し、再デプロイ後に正常に処理していません。  
   
  **考えられる原因**  
   
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] が、無限のタイムアウトが設定されたスキーマをキャッシュしています。  
+ [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 無制限のタイムアウトを持つスキーマをキャッシュします。  
   
- **解決策**  
+ **解決方法**  
   
- スキーマを編集し、再展開した後で、BizTalk Server アプリケーション サービスを再起動します。 また、再展開されたスキーマを使用するパイプラインをホストするホスト インスタンスを再起動する必要もあります。  
+ 編集、スキーマを再デプロイすると、BizTalk Server アプリケーション サービスを再起動します。 また、再展開されたスキーマを使用しているパイプラインをホストするホスト インスタンスを再起動する必要があります。  
   
-## <a name="processing-has-been-aborted-for-messages-of-a-single-encoding-type-for-a-single-party"></a>1 つのパーティのエンコードの種類が同じであるメッセージの処理が中断される  
+## <a name="processing-has-been-aborted-for-messages-of-a-single-encoding-type-for-a-single-party"></a>1 つのパーティのエンコードの種類のメッセージの処理は中止されました  
  **現象**  
   
- 1 つのパーティのエンコードの種類 (X12、EDIFACT など) が同じであるすべてのメッセージの処理が中断されます。 このパーティのエンコードの種類が異なるメッセージ、または別のパーティのメッセージは処理されます。  
+ エンコードの種類のすべてのメッセージの処理 (たとえば、X12 または EDIFACT)、単一のパーティが中止されました。 別のパーティに同じのパーティのエンコードの種類のメッセージまたはメッセージの処理、影響はありません。  
   
  **考えられる原因**  
   
- インターチェンジ、グループ、またはトランザクション セットの制御番号の長さが許容されている最大の長さを超えています。  
+ インターチェンジ、グループ、またはトランザクション セット制御番号の長さが許容される最大長を超えました。  
   
- X12 メッセージの場合、制御番号の最大文字数は 9 桁です。 EDIFACT メッセージの場合、制御番号の最大文字数は、3 つのフィールドを合わせて 14 桁です。  
+ X12 メッセージで、コントロールの最大長は 9 桁の数字です。 EDIFACT メッセージの場合は、制御番号の最大長は、14 桁を 3 つのフィールドが。  
   
- **解決策**  
+ **解決方法**  
   
- 影響を受けるパーティの [EDI のプロパティ] ダイアログ ボックスの該当するプロパティ ページで、制御番号をリセットしてください。 制御番号は、次のプロパティ ページで編集できます。  
+ 影響を受けるパーティの EDI のプロパティ ダイアログ ボックスの該当するプロパティ ページで、制御番号をリセットします。 次のプロパティ ページで制御番号を編集できます。  
   
--   X12 インターチェンジ制御番号 : X12 プロパティの [パーティ - インターチェンジの受信者] ノードにある [ISA セグメントの定義] ページ  
+-   X12 インターチェンジ制御番号です。ISA セグメントの定義 ページ (パーティ-インターチェンジの受信者 ノード) で X12 のプロパティ  
   
--   X12 グループまたはトランザクション セット制御番号 : X12 プロパティの [パーティ - インターチェンジの受信者] ノードにある [GS および ST セグメントの定義] ページ  
+-   X12 グループまたはトランザクション セット制御番号。GS および ST セグメントの定義 ページ (x12 パーティ-インターチェンジの受信者 ノード プロパティ)  
   
--   EDIFACT インターチェンジ制御番号 : EDIFACT プロパティの [パーティ - インターチェンジの受信者] ノードにある [UNB セグメントの定義] ページ  
+-   EDIFACT インターチェンジ制御番号:UNB セグメントの定義ページの [パーティ-インターチェンジの受信者] ノード EDIFACT プロパティの)  
   
--   EDIFACT グループまたはトランザクション セット制御番号 : EDIFACT プロパティの [パーティ - インターチェンジの受信者] ノードにある [UNG および UNH セグメントの定義] ページ  
+-   EDIFACT グループまたはトランザクション セットの制御番号。[パーティ-インターチェンジの受信者] ノードの EDIFACT のプロパティとして)、[UNG および UNH セグメントの定義] ページ  
   
-## <a name="biztalk-server-validates-with-schemas-that-have-unh-segments-with-seven-data-elements"></a>BizTalk Server が 7 つのデータ要素を含む UNH セグメントを持つスキーマを使用して検証を行う  
- EDIFACT の以前のバージョンの UNH セグメントには 4 つの要素が含まれていましたが、新しいバージョンの UNH セグメントには 7 つの要素 (うち 3 つはオプション) が含まれています。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は、7 つのデータ要素を含む新しいバージョンを検証に使用します。  
+## <a name="biztalk-server-validates-with-schemas-that-have-unh-segments-with-seven-data-elements"></a>BizTalk Server が 7 つのデータ要素を含む UNH セグメントのスキーマを使用して検証します。  
+ UNH セグメントが 7 つの要素 (うち 3 つは省略可能) ではなく、4 つの要素、EDIFACT の以前のバージョンの UNH セグメントの以降のバージョンであります。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 検証のための 7 つの要素に以降のバージョンを使用します。  
   
-## <a name="error-messages-generated-for-multiple-cross-field-validation-rules-will-not-be-specific-to-the-rule"></a>複数のクロスフィールド検証に対して生成されたエラー メッセージが、ルールに固有のものではない  
- メッセージのデータ要素に対する複数のクロスフィールド検証ルールがスキーマに含まれている場合、データ要素にエラーが発生すると、検証ルールごとに別々のエラーが生成されます。 ただし、これらのエラーには同じエラー コードと説明が表示されます (エラーが検証ルールに固有のものではありません)。  
+## <a name="error-messages-generated-for-multiple-cross-field-validation-rules-will-not-be-specific-to-the-rule"></a>複数のクロス フィールド検証ルールを生成するエラー メッセージをルールに固有にすることはできません。  
+ スキーマには、メッセージ内のデータ要素に対して複数のクロス フィールド検証ルールが含まれています、データ要素エラーが発生した場合は、それぞれの検証規則の個別のエラーが生成されます。 ただし、これらのエラーが、同じエラー コードと説明。エラーは、検証規則を特定できません。  
   
-## <a name="if-edi-type-validation-is-disabled-on-receive-and-enabled-on-send-the-send-pipeline-will-not-be-able-to-serialize-the-message"></a>EDI 型の検証が受信時は無効、送信時は有効の場合、送信パイプラインはメッセージをシリアル化できない  
- EDI 型の検証を受信側で無効にした場合、EDI 受信パイプラインは、メッセージが有効であるか無効であるかにかかわらず、受信した EDI メッセージから XML メッセージを生成します。 EDI 型の検証を送信側で有効にした場合、XML ファイルにエラーが含まれていると、EDI 送信パイプラインは XML を有効な EDI ファイルに再処理することができないため、エラーが生成されます。  
+## <a name="if-edi-type-validation-is-disabled-on-receive-and-enabled-on-send-the-send-pipeline-will-not-be-able-to-serialize-the-message"></a>EDI 型の検証が無効になっている場合は、受信し、送信を有効になっている、送信パイプラインはできません、メッセージをシリアル化するには  
+ EDI 型の検証、受信側で無効にした場合、受信した EDI メッセージからメッセージが有効かどうか、EDI 受信パイプラインに XML メッセージが生成されます。 送信側の EDI の検証が有効な場合、EDI 送信パイプラインは XML ファイルは、エラーにはが含まれていて、その結果、エラーが発生、有効な EDI ファイルに XML を再処理することはできません。  
   
-## <a name="edi-promoted-properties-are-only-available-if-your-application-has-a-reference-to-the-biztalk-edi-application"></a>EDI が昇格させたプロパティは、アプリケーションが BizTalk EDI アプリケーションを参照する場合にのみ使用可能である  
+## <a name="edi-promoted-properties-are-only-available-if-your-application-has-a-reference-to-the-biztalk-edi-application"></a>EDI が昇格させたプロパティはのみ、アプリケーションが BizTalk EDI アプリケーションへの参照を使用できます。  
  **現象**  
   
- EDI 名前空間で昇格させたプロパティが、オーケストレーションや送信ポートのフィルター条件などで使用する予定の昇格させたプロパティの一覧に表示されません。  
+ EDI 名前空間で昇格させたプロパティを使用しようとしている昇格させたプロパティの一覧で、たとえば、オーケストレーションまたは送信ポートのフィルター条件では表示されません。  
   
  **考えられる原因**  
   
- 使用している BizTalk アプリケーションが BizTalk EDI アプリケーションを参照していません。 EDI が昇格させたプロパティのプロパティ スキーマは、BizTalk EDI アプリケーションのリソース フォルダーに格納されている Microsoft.BizTalk.Edi.BaseArtifacts.dll 内にあります。  
+ 使用している BizTalk アプリケーションには、BizTalk EDI アプリケーションへの参照はありません。 EDI が昇格させたプロパティのプロパティ スキーマは、BizTalk EDI アプリケーションのリソース フォルダーに含まれている Microsoft.BizTalk.Edi.BaseArtifacts.dll 内です。  
   
- **解決策**  
+ **解決方法**  
   
- 操作している BizTalk アプリケーションに、BizTalk EDI アプリケーションへの参照を追加します。  
+ 作業している BizTalk アプリケーションには、BizTalk EDI アプリケーションへの参照を追加します。  
   
-## <a name="the-data-element-name-in-a-context-property-name-contains-an-underscore-not-a-period"></a>データ要素名のピリオドがコンテキスト プロパティ名ではアンダースコアになる  
- EDI セグメント内のデータ要素名には、ピリオドが含まれています (UNB2 送信者セグメントの ID フィールドである UNB2.1 など)。 しかし、データ要素名が EDI コンテキスト プロパティの一部となった場合、ピリオドがアンダースコアに置き換えられます。 たとえば、送信者 ID データ要素を表すコンテキスト プロパティは、EDI.UNB2.1 ではなく EDI.UNB2_1 となります。 この現象は、コンテキスト プロパティ名でピリオドがサポートされていないために発生します。  
+## <a name="the-data-element-name-in-a-context-property-name-contains-an-underscore-not-a-period"></a>コンテキスト プロパティ名でデータ要素名にアンダー スコア、ピリオドではありませんが含まれています  
+ EDI セグメント内のデータ要素の名前には、たとえば、UNB2.1、UNB2 送信者セグメントの id フィールドである、ピリオドが含まれています。 ただし、データ要素名は、EDI コンテキスト プロパティの一部として含まれていますが、期間は、アンダー スコアに置き換えられます。 たとえば、送信者 Id データ要素のコンテキスト プロパティには、EDI です。UNB2_1、EDI ではありません。UNB2.1 します。 この理由は、コンテキスト プロパティ名でピリオドがサポートされていないことです。  
   
-## <a name="irrelevant-string-is-appended-to-instance-validation-error-message"></a>インスタンスの検証エラー メッセージに関連のない文字列が追加される  
- インスタンスの検証中にエラーが表示された場合、エラー メッセージに "BEC 2004" という文字列が追加されます。 この文字列は無視してかまいません。  
+## <a name="irrelevant-string-is-appended-to-instance-validation-error-message"></a>インスタンスの検証エラー メッセージに関連のない文字列が追加されます。  
+ インスタンスの検証中にエラーを受信したときに、エラー メッセージに「BEC 2004」という文字列が追加されます。 この文字列を無視することができます。  
   
-## <a name="edifact-schema-names-are-case-sensitive"></a>EDIFACT スキーマ名で大文字と小文字が区別される  
- EDIFACT スキーマのスキーマ名では、スキーマの root_reference データ要素に示されるように、大文字と小文字が区別されます。 たとえば、EFACT_D98B_ORDERS と EFACT_d98B_Orders は 2 つの異なるスキーマです。  
+## <a name="edifact-schema-names-are-case-sensitive"></a>EDIFACT スキーマの名前が区別されます。  
+ EDIFACT スキーマのスキーマ名、スキーマの root_reference データ要素で示すように小文字は区別されます。 たとえば、EFACT_D98B_ORDERS と EFACT_d98B_Orders は 2 つの異なるスキーマです。  
   
-## <a name="invalid-edi-messages-can-be-suspended-even-if-edi-type-validation-is-disabled"></a>EDI 型の検証が無効の場合でも、無効な EDI メッセージを中断できる  
- EDI 型の検証が無効の場合でも、EDI 構造検証は実行されます。 EDI の種類の検証が無効であっても、基本的な構造の検証でエラーとなったインターチェンジは中断されます。  
+## <a name="invalid-edi-messages-can-be-suspended-even-if-edi-type-validation-is-disabled"></a>EDI 型の検証が無効になっている場合でも、無効な EDI メッセージを中断することができます。  
+ EDI 型の検証が無効になっている場合でも、EDI 構造検証を実行します。 EDI 型の検証が無効になっている場合でも、基本的な構造検証に失敗したインターチェンジは保留されます。  
   
-## <a name="the-edi-assembler-will-serialize-an-unbatched-interchange-even-if-a-separator-character-is-used-in-an-envelope-header"></a>エンベロープ ヘッダーに区切り文字が使用されている場合でも、EDI アセンブラーはバッチ化されていないインターチェンジをシリアル化する  
- ヘッダー フィールドとトレーラー フィールドを分離するために使用する区切り文字は、インターチェンジ受信者としてのパーティ用に定義されているとおり、インターチェンジ、グループ、またはトランザクション セットのヘッダーまたはトレーラー フィールドの定義で使用することはできません。 これらを定義で使用すると、インターチェンジは、送信側 BizTalk Server の EDI アセンブラーまたは受信側パーティの逆アセンブラーのどちらかの処理に失敗します。 アセンブラーはヘッダー制御 (サービス) スキーマに対してエンベロープを検証するので、送信バッチの場合、インターチェンジは EDI アセンブラーの処理に失敗します。 バッチ化されていないインターチェンジは、EDI アセンブラーではシリアル化されますが、受信側パーティの逆アセンブラーでは処理に失敗します。  
+## <a name="the-edi-assembler-will-serialize-an-unbatched-interchange-even-if-a-separator-character-is-used-in-an-envelope-header"></a>エンベロープ ヘッダーに区切り文字が使用される場合でも、EDI アセンブラーがバッチ処理されていないインターチェンジをシリアル化されます。  
+ インターチェンジ受信者としてのパーティに対して定義されている、ヘッダーおよびトレーラのフィールドを区切るために使用する区切り文字は、インターチェンジ、グループ、またはトランザクション セット ヘッダーやトレーラ フィールドのいずれかの定義では使用されませんする必要があります。 場合は、インターチェンジは送信側 BizTalk Server の EDI アセンブラーまたは受信側パーティの逆アセンブラーで処理に失敗します。 インターチェンジ失敗 EDI アセンブラーで、送信バッチの場合、アセンブラーはヘッダー制御 (サービス) スキーマと照らし合わせたエンベロープを検証します。 インターチェンジがバッチでない場合、EDI アセンブラーがシリアル化できますが、受信側パーティの逆アセンブラーで処理は失敗します。  
   
-## <a name="mismatched-character-sets-can-result-in-suspended-interchanges"></a>文字セットの不一致によりインターチェンジの中断が発生する  
- 送信インターチェンジに使用される文字セットは、インターチェンジに挿入されるトランザクション セットの作成に使用される文字セットと同じである必要があります。 同じでなければ、無効な文字が存在することを示すエラー メッセージが表示され、インターチェンジが中断される場合があります。  
+## <a name="mismatched-character-sets-can-result-in-suspended-interchanges"></a>文字セットの不一致によりインターチェンジの中断が生じる  
+ 送信インターチェンジに対して使用する文字セットは、インターチェンジに挿入するトランザクション セットを作成するために使用する文字セットと同じになります。 ない場合は、無効な文字があったことを示すエラー メッセージでは、インターチェンジは中断可能性があります。  
   
- たとえば、UNOA 文字セットを使用して EDIFACT バッチを作成するときに、バッチに追加するトランザクション セットに小文字を使用すると、UNOA は小文字を許可しないためバッチ処理オーケストレーションはメッセージを中断します。  
+ 例: EDIFACT バッチを作成する場合、UNOA を使用して文字セットしますが、バッチに追加するトランザクション セットには、小文字の文字が含まれて、UNOA は小文字を許可していないために、バッチ処理オーケストレーションがメッセージを中断します。  
   
- また、"基本" 文字セットを使用して X12 インターチェンジの EDI 送信パイプラインを構成するときに、インターチェンジ受信者としてのパーティの [X12 インターチェンジのエンベロープの生成] ページで選択される X12 文字セットは "拡張" または "UTF8/Unicode" であるため、バッチ化された X12 インターチェンジに小文字を使用すると、エンベロープの設定が適用されるときに、バッチ化されたメッセージは中断されます。  
+ 別の例として、"Basic"の文字セットでの X12 インターチェンジが X12 のバッチ処理に EDI 送信パイプラインを構成する場合がインターチェンジに小文字のため、X12 文字セットが X12 で選択したインターチェンジのエンベロープの生成 ページのパーティ エンベロープの設定が適用されると、インターチェンジの受信者は、「拡張」または"UTF8/Unicode"に設定されている、バッチのメッセージが中断されます。  
   
-## <a name="using-unh25-for-schema-resolution-requires-an-update-to-the-schema"></a>スキーマの解決に UNH2.5 を使用する場合、スキーマの更新が要求される  
- 受信 EDIFACT インターチェンジのスキーマの解決に UNH2.5 (関連付けの割り当てコード) を使用する場合は、\Program Files\Microsoft BizTalk Server 20xx\Schema フォルダーにある、関連するドキュメント スキーマを更新する必要があります。 root_reference、display_reference、および xs:element name の既存の値に、UNH2.5 の値を追加する必要があります。 たとえば、UNH2.5 が "EAN008" で、EFACT_D96A_INVOIC スキーマを使用している場合、root_reference、display_reference、および xs:element name を "EFACT_D96A_INVOIC_EAN008" に設定します。  
+## <a name="using-unh25-for-schema-resolution-requires-an-update-to-the-schema"></a>スキーマの解決に UNH2.5 を使用して、スキーマの更新プログラムが必要です。  
+ 受信 EDIFACT インターチェンジのスキーマの解決に UNH2.5 (関連付けの割り当てコード) を使用する場合は、\Program Files\Microsoft BizTalk Server 20xx \schema フォルダーにある関連するドキュメント スキーマを更新する必要があります。 Root_reference、display_reference、および xs:element name の既存の値に UNH2.5 の値を追加する必要があります。 たとえば、UNH2.5 が"EAN008"EFACT_D96A_INVOIC スキーマを使用している場合は、root_reference、display_reference、および xs:element name を"EFACT_D96A_INVOIC_EAN008"を設定するとします。  
   
-## <a name="the-compressed-file-of-schemas-will-be-replaced-when-an-upgrade-is-performed"></a>アップグレードを実行すると、スキーマの圧縮ファイルが置き換えられる  
- Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を新しいビルドにアップグレードすると、環境内の MicrosoftEdiXSDTemplates.exe ファイルが、アップグレードに関連付けられた MicrosoftEdiXSDTemplates.exe ファイルに置き換えられます。 古い圧縮ファイルのスキーマを引き続き使用する場合は、古い圧縮ファイルをバックアップしない限り、アップグレード後、圧縮ファイルにアクセスできなくなります。  
+## <a name="the-compressed-file-of-schemas-will-be-replaced-when-an-upgrade-is-performed"></a>アップグレードを実行するときに、スキーマの圧縮ファイルを置き換え、  
+ Microsoft をアップグレードする場合は[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]アップグレードに関連付けられた MicrosoftEdiXSDTemplates.exe ファイルとそれ以降のビルドに、インストール内の MicrosoftEdiXSDTemplates.exe ファイルが置き換えられます。 引き続き古い圧縮ファイルからスキーマを使用する場合は、不要になったアクセスことは、圧縮ファイルに、アップグレード後に古い圧縮ファイルをバックアップする場合を除き。  
   
-## <a name="if-a-group-contains-multiple-x12-transaction-sets-all-must-be-of-the-same-type"></a>1 つのグループに複数の X12 トランザクション セットが含まれる場合、すべてが同じ種類でなければならない  
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、同じグループ内での異なるトランザクション セットの混合はサポートされていません。 1 つのグループに複数のトランザクションが含まれる場合、すべてのトランザクションで ST01 の値が同じである必要があります。  
+## <a name="if-a-group-contains-multiple-x12-transaction-sets-all-must-be-of-the-same-type"></a>グループには、複数の X12 が含まれている場合、トランザクション セットと同じ型のあるすべて必要があります  
+ [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 同じグループ内の別のトランザクション セットの混在をサポートしません。 グループに複数のトランザクションが含まれている場合、すべてのトランザクションの同じ ST01 の値がある必要があります。  
   
-## <a name="receiving-x12-interchanges-that-contain-non-ascii-delimiters-may-result-in-the-message-becoming-suspended"></a>ASCII 以外の区切り文字を含む X12 インターチェンジを受信すると、メッセージが中断する場合がある  
+## <a name="receiving-x12-interchanges-that-contain-non-ascii-delimiters-may-result-in-the-message-becoming-suspended"></a>受信 X12 インターチェンジが非 ASCII 区切り記号が含まれている可能性が、メッセージが中断  
  **現象**  
   
- ASCII 以外の区切り文字の値を使用する X12 インターチェンジを受信すると、メッセージが中断状態になり、アプリケーション イベント ログにエラーが書き込まれる場合があります。  
+ 使用が非 ASCII 区切り記号の値、メッセージが中断されると、アプリケーション イベント ログに書き込まれるエラーの場合インターチェンジ受信 X12 です。  
   
  **考えられる原因**  
   
- この問題は、インターチェンジが UTF-8 としてエンコードされていない場合に発生する可能性があります。  
+ この問題は、インターチェンジが utf-8 としてエンコードされていない場合に発生することができます。  
   
- **解決策**  
+ **解決方法**  
   
- ASCII 以外の区切り文字を含む受信 X12 インターチェンジが UTF-8 としてエンコードされていることを確認します。  
+ 非 ASCII 区切り記号を含むインターチェンジが utf-8 としてエンコードされた受信 X12 を確認します。  
   
 ## <a name="see-also"></a>参照  
- [EDI 処理に関する既知の問題](../core/known-issues-with-edi-processing.md)   
+ [EDI の処理に関する既知の問題](../core/known-issues-with-edi-processing.md)   
  [EDI メッセージング](../core/edi-messaging.md)   
  [EDI メッセージの検証](../core/edi-message-validation.md)   
  [EDI スキーマ](../core/edi-schemas.md)   

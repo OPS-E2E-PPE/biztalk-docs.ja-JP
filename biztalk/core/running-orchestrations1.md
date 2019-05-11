@@ -18,21 +18,21 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fe1645ecaff4cea4f153c988188fa7f47e94959c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9b05300b3fc4597632a54326ead5ac550a4bb8c2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36969123"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399270"
 ---
 # <a name="running-orchestrations"></a>オーケストレーションの実行
-次の手順では、オーケストレーションのビルド、展開、バインド、および開始の方法について説明します。  
+次の手順では、構築、展開、バインド、およびオーケストレーションを開始する方法について説明します。  
   
 ## <a name="creating-a-strong-name-key"></a>厳密な名前キーを作成します。  
   
-#### <a name="to-create-a-strong-name-key"></a>厳密な名前のキーを作成するには  
+#### <a name="to-create-a-strong-name-key"></a>厳密な名前キーを作成するには  
   
-1. [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] コマンド プロンプトを起動します。  
+1. 開始、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]コマンド プロンプト。  
   
 2. たとえば、既存のプロジェクトにディレクトリを変更\<ドライブ\>: \Adapter_Install\biztalk2010\my_project します。  
   
@@ -40,9 +40,9 @@ ms.locfileid: "36969123"
   
     `sn -k SSOSchedule.snk`  
   
-## <a name="compiling-and-deploying-an-orchestration"></a>オーケストレーションのコンパイルおよび展開  
+## <a name="compiling-and-deploying-an-orchestration"></a>コンパイルして、オーケストレーションの展開  
   
-#### <a name="to-compile-and-deploy-an-orchestration"></a>オーケストレーションをコンパイルおよび展開するには  
+#### <a name="to-compile-and-deploy-an-orchestration"></a>コンパイルして、オーケストレーションを展開するには  
   
 1. [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]ソリューション エクスプ ローラーで、[ssoschedule] プロジェクトを右クリックし、選択**プロパティ**します。  
   
@@ -60,14 +60,14 @@ ms.locfileid: "36969123"
   
 #### <a name="to-start-the-orchestration"></a>オーケストレーションを開始するには  
   
-1.  BizTalk 管理コンソールで、開始するオーケストレーションを選択します。  
+1.  BizTalk 管理コンソールで開始するオーケストレーションを選択します。  
   
 2.  オーケストレーションを右クリックし、をクリックして**開始**します。  
   
 ## <a name="stopping-and-restarting-a-host-instance"></a>停止して、ホスト インスタンスの再起動  
- サンプルを展開したら、ホスト インスタンスを再起動する必要があります。  
+ サンプルをデプロイした後は、ホスト インスタンスを再起動する必要があります。  
   
-#### <a name="to-stop-and-restart-a-host-instance"></a>ホスト インスタンスを停止して再起動するには  
+#### <a name="to-stop-and-restart-a-host-instance"></a>停止して、ホスト インスタンスを再起動するには  
   
 1. をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**Microsoft**[!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)]を選択し、 **BizTalk Server 管理コンソール。**  
   

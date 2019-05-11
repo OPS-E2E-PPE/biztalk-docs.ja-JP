@@ -13,12 +13,12 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dbf7e57d163b5729685c4103a8a3e5da78e37355
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4aa96e84003b27f9e65aa282cf157314ec5f852f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36979691"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65383338"
 ---
 # <a name="test-a-biztalk-web-service"></a>BizTalk Web サービスをテストします。
 
@@ -69,7 +69,7 @@ Web クライアント アプリケーションを記述せずに、公開済み
   
 3. HTTP GET をテストするには、HTTP POST、またはローカルのコンピューターから HTTP-POST で対応する行が削除、\<プロトコル\>セクション。  
   
-   構成オプションの詳細については、[ASP.NET を使用して作成した XML Web サービスの構成オプション](https://msdn.microsoft.com/library/b2c0ew36.aspx)を参照してください。 
+   構成オプションの詳細については、次を参照してください。 [ASP.NET を使用して作成した XML Web サービスの構成オプション](https://msdn.microsoft.com/library/b2c0ew36.aspx)します。 
   
 #### <a name="access-a-web-service-with-internet-explorer"></a>Internet Explorer で Web サービスへのアクセスします。  
   
@@ -114,7 +114,7 @@ Web クライアント アプリケーションを記述せずに、公開済み
 2.  Enter キーを押します。 Web ブラウザに、サーバーからの XML 応答が表示されます。  
   
     > [!NOTE]
-    >  HTTP-POST を使用して Web サービスを呼び出すこともできます。 Web ブラウザーから XML Web サービスの呼び出しのサンプルとは、[ブラウザーから XML Web サービスにアクセス](https://msdn.microsoft.com/library/45fez2a8.aspx)を参照してください。  
+    >  HTTP-POST を使用して Web サービスを呼び出すこともできます。 Web ブラウザーから XML Web サービスの呼び出しのサンプルとは、次を参照してください。[ブラウザーから XML Web サービスにアクセス](https://msdn.microsoft.com/library/45fez2a8.aspx)します。  
   
 ## <a name="see-also"></a>参照  
  [公開済み Web サービスのテスト](../core/testing-published-web-services.md)

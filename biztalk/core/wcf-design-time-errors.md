@@ -1,5 +1,5 @@
 ---
-title: WCF のデザイン時のエラー |Microsoft ドキュメント
+title: WCF デザイン時エラー |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 945093f62c9d0d45fd359dbfabe8a0e495850f6d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ee67253478220a5fb018beb7ad27ae85eac7693e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22288786"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399124"
 ---
-# <a name="wcf-design-time--errors"></a>WCF 設計時エラー
+# <a name="wcf-design-time--errors"></a>WCF デザイン時エラー
 ここでは、WCF の設計時の構成エラーを診断および解決するための詳細について説明します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
@@ -34,19 +34,19 @@ ms.locfileid: "22288786"
   
 -   [バインド エラー](../core/binding-errors.md)  
   
--   [証明書のエラー](../core/certificate-errors.md)  
+-   [証明書エラー](../core/certificate-errors.md)  
   
 -   [通信方式エラー](../core/communication-pattern-errors.md)  
   
--   [エラーのエラー処理](../core/error-handling-errors.md)  
+-   [エラー処理エラー](../core/error-handling-errors.md)  
   
--   [Id エラー](../core/identity-errors.md)  
+-   [ID エラー](../core/identity-errors.md)  
   
 -   [インポートおよびエクスポート エラー](../core/import-and-export-errors.md)  
   
 -   [メタデータ エラー](../core/metadata-errors.md)  
   
--   [名前のエラー](../core/name-errors.md)  
+-   [名前エラー](../core/name-errors.md)  
   
 -   [ポート構成エラー](../core/port-configuration-errors.md)  
   
@@ -58,7 +58,7 @@ ms.locfileid: "22288786"
   
 -   [スキーム エラー](../core/scheme-errors.md)  
   
--   [エラーを送信します。](../core/send-errors.md)  
+-   [送信エラー](../core/send-errors.md)  
   
 -   [テンプレート エラー](../core/template-errors.md)  
   

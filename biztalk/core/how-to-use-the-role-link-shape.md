@@ -1,5 +1,5 @@
 ---
-title: ロール リンク図形を使用する方法 |Microsoft ドキュメント
+title: ロール リンク図形を使用する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -19,32 +19,32 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e4b88abf2514b417bd2ff9c63c151eded3f51129
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0c71a12fddc1eb275fd98b60783c04d51e7793a2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22255746"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65383276"
 ---
-# <a name="how-to-use-the-role-link-shape"></a>ロール リンク図形の使用方法
-A**ロール リンク**図形には、実装ロール プロバイダーの役割および使用ロールまたはコンシューマー ロール用のプレース ホルダーが含まれています。 ロール リンク図形には、これらのいずれかのプレースホルダーを 1 つ、または両方のプレースホルダーを 1 つずつ含めることができます。  
+# <a name="how-to-use-the-role-link-shape"></a>ロール リンク図形を使用する方法
+A**ロール リンク**図形には、実装ロールまたはプロバイダー ロールおよび使用ロールまたはコンシューマー ロール用のプレース ホルダーが含まれています。 いずれか、またはそれぞれ 1 つのいずれかを含めることができます。  
   
  ポートの種類に直接追加することができます、**ロール リンク**図形、既存のロールまたは新しいロールを使用して、既存または新しいポートの種類。  
   
 > [!NOTE]
->  ロール リンクを作成する前にロール リンクの種類を作成してポートの種類を関連付け、既存のロール リンクの種類をロール リンクの定義に使用できるようにしておくことをお勧めします。 詳細については、次を参照してください。[オーケストレーションでロール リンクを作成する方法](../core/how-to-create-role-links-in-orchestrations.md)です。  
+>  ロール リンクを定義するため、既存のロール リンクの種類を使用できるように、ロール リンクを作成するには、ロール リンクの種類と関連付けられているポートの種類の前に作成することをお勧めします。 詳細については、次を参照してください。[オーケストレーションでロール リンクを作成する方法](../core/how-to-create-role-links-in-orchestrations.md)します。  
   
 ### <a name="to-add-a-role-link"></a>ロール リンクを追加するには  
   
--   ポート画面を右クリックし、をクリックして**新しいロール リンク**です。  
+-   ポート画面を右クリックし、をクリックし、**新しいロール リンク**します。  
   
      - または -  
   
-     **BizTalk オーケストレーション**ドラッグ、ツールボックスのタブ、**ロール リンク**図形をポート画面にします。  
+     **BizTalk オーケストレーション**、ツールボックスのタブ、**ロール リンク**図形をポート画面にします。  
   
 ### <a name="to-remove-a-role-link"></a>ロール リンクを削除するには  
   
--   右クリックし、**ロール リンク**してをクリックし、削除、**削除**です。  
+-   右クリックし、**ロール リンク**してをクリックし、削除、**削除**します。  
   
 ## <a name="see-also"></a>参照  
  [オーケストレーションでロール リンクの使用](../core/using-role-links-in-orchestrations.md)   

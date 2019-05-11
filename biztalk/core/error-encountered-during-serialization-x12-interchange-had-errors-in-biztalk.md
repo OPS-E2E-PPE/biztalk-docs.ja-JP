@@ -1,5 +1,5 @@
 ---
-title: シリアル化中にエラーが発生しました。 X12 インターチェンジで次のエラーが |Microsoft Docs
+title: シリアル化中に発生したエラーです。 X12 インターチェンジで次のエラーが |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 96c1a186e56fb5c04364187784522f0ba5832581
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 12ddd3879581387e776728a35b045ae1ac36a2b3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37008139"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65388905"
 ---
-# <a name="error-encountered-during-serialization-the-x12-interchange-had-the-following-errors"></a>シリアル化中にエラーが発生しました。 X12 インターチェンジに次のエラーがありました
+# <a name="error-encountered-during-serialization-the-x12-interchange-had-the-following-errors"></a>シリアル化中に発生したエラーです。 X12 インターチェンジで次のエラーが見つかりました
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                                                                             |
@@ -30,10 +30,10 @@ ms.locfileid: "37008139"
 |  イベント ソース   |                           [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI                            |
 |    コンポーネント    |                                                                 EDI エンジン                                                                  |
 |  シンボル名  |                                                           X12InterchangeSendError                                                           |
-|  メッセージ テキスト   | シリアル化中にエラーが発生しました。 X12 インターチェンジ id '{0}'、送信者 id'{1}'、受信者 id '{2}' 次のエラーが発生しました |
+|  メッセージ テキスト   | シリアル化中に発生したエラーです。 X12 インターチェンジ id '{0}'、送信者 id'{1}'、受信者 id '{2}' 次のエラーが発生しました |
   
 ## <a name="explanation"></a>説明  
- このエラー/警告/情報イベントは、示されたエラーが発生したため、送信 X12 インターチェンジのシリアル化中に EDI 送信パイプラインでエラーが発生したことを示します。  
+ このエラー/警告/情報イベントは、EDI 送信パイプラインでは、X12 の送信をシリアル化するときに、エラーが発生したことを示します、示されたエラーのために交換します。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- このエラーを解決するには、エラー メッセージの情報を使用してインターチェンジのエラーを特定し、製品のヘルプで問題の解決方法を確認してください。
+ このエラーを解決するには、エラー メッセージの情報を使用して、インターチェンジでエラーを特定し、製品のヘルプで問題の解決方法を確認します。

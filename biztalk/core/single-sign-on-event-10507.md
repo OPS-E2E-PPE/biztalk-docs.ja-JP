@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10507 |Microsoft Docs'
+title: シングル サインオン:イベント 10507 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6df0c2d898fd715cbbdebf6fe5d11b780f0fa037
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c147e2cbd5beb0e6c07519b35b700aa59b2b00dd
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36974835"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65398877"
 ---
-# <a name="single-sign-on-event-10507"></a>シングル サインオン: イベント 10507
+# <a name="single-sign-on-event-10507"></a>シングル サインオン:イベント 10507
 ## <a name="details"></a>詳細  
 
 |                 |                                                                 |
@@ -28,19 +28,19 @@ ms.locfileid: "36974835"
 | 製品バージョン |   [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]    |
 |    イベント ID     |                              10504                              |
 |  イベント ソース   |                             ENTSSO                              |
-|    コンポーネント    |                               N\A                               |
+|    コンポーネント    |                               該当なし                               |
 |  シンボル名  |                 SSO_INFO_SERVICE_INSTALL_FAILED                 |
-|  メッセージ テキスト   | SSO サービスをインストールできませんでした。%r<br /><br /> エラー コード: %1 |
+|  メッセージ テキスト   | SSO service.%r のインストールに失敗しました<br /><br /> エラー コード: %1 |
 
 ## <a name="explanation"></a>説明  
- このイベントは、ENTSSO サービスをインストールできなかったことを示します。 このイベントは、エンタープライズ シングル サインオンの手動でのインストール中にのみ発生する可能性があります。  
+ このイベントは、ENTSSO サービスがインストールに失敗したことを示します。 このイベントは、エンタープライズ シングル サインオンの手動インストール時にのみ実行できます。  
 
 ## <a name="user-action"></a>ユーザーの操作  
- このイベントを解決するには、次の手順を実行します。  
+ このイベントを解決するには、次の操作を行います。  
 
-- ENTSSO または他のサービスからの関連するエラーについては、システムおよびアプリケーションのイベント ログを確認します。  
+- ENTSSO または他のサービスから関連するエラーのアプリケーションとシステムの両方のイベント ログを確認します。  
 
-  詳細については、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ヘルプの次の情報を参照してください:   
+  詳細については、の次のリソースを参照してください。[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプ。  
 
 - [SSO のインストール](../core/installing-sso.md)  
 

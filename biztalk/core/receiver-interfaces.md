@@ -1,5 +1,5 @@
 ---
-title: 受信元インターフェイス |Microsoft ドキュメント
+title: 受信元インターフェイス |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,18 +12,18 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 77b42530d721a6dcee52e082fe46deae9ae06405
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 540da1fac24c69bd352a5fd0db9f2831f62f920f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22268330"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65398078"
 ---
 # <a name="receiver-interfaces"></a>受信元インターフェイス
-実装するアダプターの必要性が表示される、標準的なアダプター インターフェイスに加えて、 **IBTTransportConfig**です。 これは、BizTalk Server メッセージング エンジンが、受信場所の構成をアダプターに送信するインターフェイスです。  
+標準的なアダプター インターフェイスに加えて受信アダプターが実装しなければ**IBTTransportConfig**します。 これは、BizTalk メッセージング エンジンは受信場所の構成をアダプターにするインターフェイスです。  
   
 ## <a name="request-response-adapters"></a>要求-応答アダプター  
- 受信アダプターでは、送信メッセージの処理が必要となる場合もあります。 一般に、これを実行するアダプターは、双方向アダプター、つまり要求 - 応答アダプターと呼ばれます。 メッセージを送信できるようにするには、受信アダプターを実装する必要がある**IBTTransmitter**です。  
+ 受信アダプターは、場合によっては、送信メッセージを処理する必要もあります。 このアダプターは通常、双方向に呼ばれますまたは要求-応答アダプター。 受信アダプターはメッセージを送信できるようにするには、実装する必要がある**IBTTransmitter**します。  
   
  次の図は、受信アダプターによって実装されるインターフェイスを示します。  
   

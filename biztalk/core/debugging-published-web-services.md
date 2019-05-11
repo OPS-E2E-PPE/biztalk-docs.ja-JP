@@ -1,5 +1,5 @@
 ---
-title: 公開済み Web サービスのデバッグ |Microsoft ドキュメント
+title: 公開済み Web サービスのデバッグ |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,19 +14,19 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ccda44898f5885f8165fe21835164b38de6630b4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1af327d7cad27b473b81df1897b89d02d43fe2fd
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22238378"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65352490"
 ---
 # <a name="debugging-published-web-services"></a>公開済み Web サービスのデバッグ
-ここでは、公開済み Web サービスのデバッグについて説明します。  
+このセクションでは、デバッグ、公開済み Web サービスの詳細についての情報を提供します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [SOAP メッセージ トレースを有効にする方法](../core/how-to-enable-soap-message-tracing.md)  
+-   [SOAP メッセージのトレースを有効にする方法](../core/how-to-enable-soap-message-tracing.md)  
   
 -   [BTSWebSvcWiz.exe.config を変更する方法](../core/how-to-modify-btswebsvcwiz-exe-config.md)  
   

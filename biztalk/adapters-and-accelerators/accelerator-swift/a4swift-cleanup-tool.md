@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: db6e9f6f6ec25762abc4416bc18f0955055b7e70
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 494225194e3b302acb868277696054260b7c1a07
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36983619"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65527552"
 ---
 # <a name="a4swift-cleanup-tool"></a>A4SWIFT クリーンアップ ツール
 [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]クリーンアップ ツールでは、Microsoft のあるサーバーを準備できます。[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]の新規インストール用にインストールされている[!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)]します。 このツールは、A4SWIFT の成果物など、契約、部門、およびビジネス ルール エンジン (BRE) ポリシーを削除し、アセンブリが展開解除されます。 ツールを実行して、多くの A4SWIFT アイテムを手動で削除しないようにすることができ、他のアセンブリから参照する場合があるアセンブリを展開解除の問題が解決します。  

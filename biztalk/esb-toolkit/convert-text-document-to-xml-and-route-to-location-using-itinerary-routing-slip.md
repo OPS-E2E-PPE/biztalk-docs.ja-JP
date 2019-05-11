@@ -1,5 +1,5 @@
 ---
-title: '方法: XML や、スケジュール ルーティング スリップを使用してファイルの場所へのルートに、テキスト ドキュメントを変換 |Microsoft Docs'
+title: 操作方法:XML に、スケジュール ルーティング スリップを使用してファイルの場所にテキスト ドキュメントを変換 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 27e6690af0cd326853fc0f96254aaaf7083ccd15
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9258493ebd15e12bcb10d4a4dba51a14fdb51c0c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36982571"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65302052"
 ---
-# <a name="how-to-convert-a-text-document-to-xml-and-route-to-a-file-location-using-an-itinerary-routing-slip"></a>方法: テキスト ドキュメントを XML と、スケジュール ルーティング スリップを使用してファイルの場所へのルートに変換
+# <a name="how-to-convert-a-text-document-to-xml-and-route-to-a-file-location-using-an-itinerary-routing-slip"></a>操作方法:テキスト ドキュメントを XML と、スケジュール ルーティング スリップを使用してファイルの場所へのルートに変換します。
 ## <a name="goal"></a>[目標]  
  セクションでは、テキスト ドキュメントを XML に変換し、適切な旅行プランを選択し、ファイルの場所にメッセージをルーティングするパイプラインを作成する方法を示します。  
   
@@ -167,9 +167,9 @@ ms.locfileid: "36982571"
 ## <a name="additional-resources"></a>その他のリソース  
  詳細については、次の関連項目を参照してください。  
   
--   [方法: メッセージを変換し、スケジュール ルーティング スリップを利用してファイルの場所に送信する](../esb-toolkit/transform-message-and-route-the-message-to-a-location-using-itinerary-routing.md)  
+-   [方法: メッセージを変換し、スケジュール ルーティング スリップを使用してファイルの場所に、結果のメッセージをルーティング](../esb-toolkit/transform-message-and-route-the-message-to-a-location-using-itinerary-routing.md)  
   
--   [方法: スケジュール ルーティング スリップを利用し、1 つのメッセージを複数の受信者に送信する](../esb-toolkit/route-a-single-message-to-multiple-recipients-using-an-itinerary-routing-slip.md)  
+-   [方法: 1 つのメッセージをスケジュール ルーティング スリップを使用して複数の受信者にルーティングします。](../esb-toolkit/route-a-single-message-to-multiple-recipients-using-an-itinerary-routing-slip.md)  
   
 -   [開発アクティビティ](../esb-toolkit/development-activities.md)  
   

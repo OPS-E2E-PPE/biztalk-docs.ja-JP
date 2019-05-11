@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10833 |Microsoft Docs'
+title: シングル サインオン:イベント 10833 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1469963acefa2705ce80af59505e64407e99ea1f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1960e5b8fbbebea07f77a99b10929fb1aefe39f5
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37000027"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65401097"
 ---
-# <a name="single-sign-on-event-10833"></a>シングル サインオン: イベント 10833
+# <a name="single-sign-on-event-10833"></a>シングル サインオン:イベント 10833
 ## <a name="details"></a>詳細  
   
 |                 |                                                            |
@@ -30,10 +30,10 @@ ms.locfileid: "37000027"
 |  イベント ソース   |                           ENTSSO                           |
 |    コンポーネント    |                            なし                             |
 |  シンボル名  |            ENTSSO_E_SSO_DATABASE_NOT_CONFIGURED            |
-|  メッセージ テキスト   |       指定された SSO データベースは構成されていません。        |
+|  メッセージ テキスト   |       指定された SSO データベースが構成されていません。        |
   
 ## <a name="explanation"></a>説明  
- システムで、指定した SSO データベースが見つかりませんでした。  
+ システムでは、指定した SSO データベースを見つけることができません。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- SSO データベースおよび SQL Server の正しい名前を指定していることを確認します。
+ SQL Server および SSO データベースの正しい名前を指定していることを確認します。

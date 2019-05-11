@@ -12,20 +12,20 @@ caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e96e647358a0fd0601933dc0b1744537d63ae630
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2e637b974fc49fcfa3b1b6c27452ccc7d036359f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37023592"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65384429"
 ---
 # <a name="how-to-recover-the-biztalk-group"></a>BizTalk グループを復旧する方法
-システムの復旧処理では、BizTalk Server を既存の BizTalk グループに再度加える必要があります。  
+BizTalk Server システム復旧プロセスの一部として既存の BizTalk グループには、再び参加させる必要があります。  
   
 ## <a name="prerequisites"></a>前提条件  
  ここで示す手順を実行するには、管理者グループのメンバーとしてログオンする必要があります。  
   
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Standard Edition を復旧する場合は、サーバーの復旧を円滑にするスクリプトをダウンロードする必要があります。 ダウンロード[RestoreConfig.vbe](https://www.microsoft.com/download/details.aspx?id=7462)します。  
+ 回復する場合は[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]Standard Edition は、サーバーの回復を容易にするスクリプトをダウンロードする必要があります。 ダウンロード[RestoreConfig.vbe](https://www.microsoft.com/download/details.aspx?id=7462)します。  
   
 ## <a name="recover-the-biztalk-group-standard-edition"></a>BizTalk グループ (Standard Edition) の復旧します。  
   
@@ -37,13 +37,13 @@ ms.locfileid: "37023592"
   
     場所*\<SavedConfigXML\>* は完全なパスと保存されている構成ファイルのファイル名。  
   
-    上記の操作でエラーが発生することはほとんどありません。  
+    上記の場合、エラーが発生することがなくが終了する必要があります。  
   
    > [!NOTE]
    >  回復する[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]64 ビット コンピューターで Standard Edition を実行する必要がある**RestoreConfig.vbe** 32 ビットのレジストリを更新できるため、32 ビット コマンド プロンプトからです。 32 ビット コマンド プロンプトを開くには、次のようにクリックします。**開始**、 をクリック**実行**、型**c:\windows\syswow64\cmd.exe**、順にクリックします**OK**。  
    > 
    > [!NOTE]
-   >  障害が発生したコンピューターの名前は、保存済みの構成ファイルに含まれています。 復旧するコンピューターの名前は、これと同じ名前でなければなりません。 その名前のコンピューター上で、前述のスクリプトを実行する必要があります。 ただし、保存済みの構成ファイルで、障害が発生したコンピューターの名前を変更することはできます。 これにより、別の名前のコンピューター上で前述のスクリプトを実行できます。  
+   >  失敗したコンピューターの名前は、保存されている構成ファイルに含まれます。 同じ名前に復元しているコンピューターの名前が必要です。 その名前を持つコンピューターでは、前述のスクリプトを実行する必要があります。 ただし、保存されている構成ファイルで失敗したコンピューターの名前を変更することができます。 これを行う場合は、別の名前でコンピューターには、上記のスクリプトを実行できます。  
   
 ## <a name="recover-the-biztalk-group-developer-edition-or-enterprise-edition"></a>BizTalk グループ (Developer Edition または Enterprise Edition) の復旧します。  
   

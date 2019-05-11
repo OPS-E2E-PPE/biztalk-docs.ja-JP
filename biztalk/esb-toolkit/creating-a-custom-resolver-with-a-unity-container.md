@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b5280108bddeeacd78b9e8f6df0fa908329af8dd
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 86eb06965dba7737ded61ed108ba2e6e6b2349dc
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37012675"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65401516"
 ---
 # <a name="creating-a-custom-resolver-with-a-unity-container"></a>Unity コンテナーでのカスタム競合回避モジュールを作成します。
 使用してカスタム競合回避モジュールを作成することができます、 [Unity Application Block](http://go.microsoft.com/fwlink/?LinkId=188286) (Unity) ([http://go.microsoft.com/fwlink/?LinkId=188286](http://go.microsoft.com/fwlink/?LinkId=188286)) の解決ロジックとメタデータのソースの実行時の依存関係の挿入します。

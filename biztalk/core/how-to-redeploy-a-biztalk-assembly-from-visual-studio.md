@@ -12,12 +12,12 @@ caps.latest.revision: 41
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 68a3d764a02063253e889498e21c65d602973fd9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5500411803bc63d2af0b1196ada2dd6dacc1f7f0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37008859"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65384415"
 ---
 # <a name="how-to-redeploy-a-biztalk-assembly-from-visual-studio"></a>Visual Studio から BizTalk アセンブリを再展開する方法
 アセンブリの開発プロセスでは、展開、テスト、修正、再展開を繰り返し行うことがしばしば必要になります。 以前のバージョンの [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、バージョン番号を変更せずにアセンブリを再展開するには、まず [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] でアセンブリに含まれるアイテムの停止、参加解除、バインド解除を手動で行い、次に BizTalk 管理 (構成) データベースからそのアセンブリを削除する必要がありました。 さらに、アセンブリの再展開の後、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] でアイテムをバインドし、参加させ、開始する必要がありました。  
@@ -43,9 +43,9 @@ ms.locfileid: "37008859"
   
     ![依存関係を持つアセンブリ](../core/media/assemblydependencies.gif "AssemblyDependencies")  
   
-    別の方法として、変更されていないコア アセンブリの不要な展開を避ける方法があります。  上の図の例では、アセンブリ 2 およびアセンブリ 3 に依存している他のアセンブリが存在する場合、これらのアセンブリはどれも更新されていません。  オフに、**デプロイ**構成マネージャーで、アセンブリ 2 およびアセンブリ 3 プロジェクトのオプション。 これにより、依存する外部アセンブリは展開解除されず、再展開は必要ありません。 詳細については、[Visual Studio の配置プロパティを設定する方法](../core/how-to-set-deployment-properties-in-visual-studio.md)を参照してください。  
+    別の方法として、変更されていないコア アセンブリの不要な展開を避ける方法があります。  上の図の例では、アセンブリ 2 およびアセンブリ 3 に依存している他のアセンブリが存在する場合、これらのアセンブリはどれも更新されていません。  オフに、**デプロイ**構成マネージャーで、アセンブリ 2 およびアセンブリ 3 プロジェクトのオプション。 これにより、依存する外部アセンブリは展開解除されず、再展開は必要ありません。 詳細については、次を参照してください。 [Visual Studio の配置プロパティを設定する方法](../core/how-to-set-deployment-properties-in-visual-studio.md)します。  
   
-- **ホスト インスタンスを再起動する必要があります。** アセンブリ バージョン番号を変更せずにオーケストレーションを含むアセンブリを再展開すると、BizTalk 管理データベースの既存のアセンブリは上書きされます。 ただし、変更が有効になる前に、オーケストレーションがバインドされているホストの各ホスト インスタンスを再起動する必要があります。 オプションを指定して、アセンブリの再展開時に、ローカル コンピューター上のすべてのホスト インスタンスを自動的に再起動することができます。 手順については、[Visual Studio の配置プロパティを設定する方法](../core/how-to-set-deployment-properties-in-visual-studio.md)を参照してください。 手動で停止しての説明に従って、各ホスト インスタンスを起動[ホスト インスタンスを停止する方法](../core/how-to-stop-a-host-instance.md)と[ホスト インスタンスを開始する方法](../core/how-to-start-a-host-instance.md)します。  
+- **ホスト インスタンスを再起動する必要があります。** アセンブリ バージョン番号を変更せずにオーケストレーションを含むアセンブリを再展開すると、BizTalk 管理データベースの既存のアセンブリは上書きされます。 ただし、変更が有効になる前に、オーケストレーションがバインドされているホストの各ホスト インスタンスを再起動する必要があります。 オプションを指定して、アセンブリの再展開時に、ローカル コンピューター上のすべてのホスト インスタンスを自動的に再起動することができます。 手順については、次を参照してください。 [Visual Studio の配置プロパティを設定する方法](../core/how-to-set-deployment-properties-in-visual-studio.md)します。 手動で停止しての説明に従って、各ホスト インスタンスを起動[ホスト インスタンスを停止する方法](../core/how-to-stop-a-host-instance.md)と[ホスト インスタンスを開始する方法](../core/how-to-start-a-host-instance.md)します。  
   
 > [!IMPORTANT]
 >  再展開オプションではバージョン管理が無視されるので、使用は開発時のみに限定することをお勧めします。  
@@ -71,11 +71,11 @@ ms.locfileid: "37008859"
   
 3.  次の表に示すように、適切な値を置き換えて、次のコマンドを入力します。  
   
-     **devenv/deploy***SolnConfigName* *SolutionName*   
+     **devenv /deploy**  *SolnConfigName* *SolutionName*  
   
      例:  
   
-     **devenv/deploy リリース"C:\Documents と Settings\someuser\My documents \visual Studio\Projects\MySolution\MySolution.sln"**  
+     **devenv /deploy Release "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln"**  
   
     |パラメーター|値|  
     |---------------|-----------|  

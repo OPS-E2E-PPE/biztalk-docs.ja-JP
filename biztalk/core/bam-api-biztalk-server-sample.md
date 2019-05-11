@@ -12,55 +12,55 @@ caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 899b28a95b6f07d7aec20868ea6b71138acfe60f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4dbc1adba5ef1b0c0a86c456a86ac3cce627d34f
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36987379"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65528529"
 ---
 # <a name="bam-api-biztalk-server-sample"></a>BAM API (BizTalk Server サンプル)
 BAM API サンプルでは、BAM API の呼び出しを監視できるキーの情報を保存するアプリケーションに組み込む方法を示します。  
   
 ## <a name="what-this-sample-does"></a>このサンプルの処理  
- このサンプルは、単純な購入のシナリオを実装します。 注文書の生成、各注文書の処理、出荷、および請求書の作成と処理を行います。 このサンプルを実行すると、BAM アクティビティが作成および更新され、注文書と請求書の詳細と処理が反映されます。  
+ このサンプルでは、単純な購入シナリオを実装します。 注文書の生成、各注文の処理、出荷、および作成し、請求書を処理します。 サンプルを実行すると、作成し、詳細と注文書や請求書のディス ポジションを反映するように BAM アクティビティを更新します。  
   
-## <a name="how-this-sample-was-designed-and-why"></a>このサンプルをデザインした方法とその理由  
- このサンプルは、BAM を使用して、BizTalk オーケストレーションではないアプリケーションの情報を保存する方法を示すためにデザインされました。 アプリケーションは単純ですが、実稼働環境のアプリケーションでも使用できる BAM のいくつかの側面が示されています。 その一部を次に示します。  
+## <a name="how-this-sample-was-designed-and-why"></a>このサンプルのデザイン方法とその理由  
+ このサンプルは、BAM を使用して、BizTalk オーケストレーションではないアプリケーションの情報を格納する方法を説明するために設計されました。 アプリケーションは、単純なは、実稼働アプリケーションで使用する可能性がある BAM のいくつかの側面を示しています。 その一部を次に示します。  
   
-- 単一のアクティビティを構成する複数のスレッド  
+- 1 つのアクティビティに影響を与える複数のスレッド  
   
-- 2 つのアクティビティの間でリレーションシップの作成  
+- 2 つのアクティビティ間のリレーションシップを作成します。  
   
-- 別の ID を使用して同じアクティビティにアクセスできるようにする Continuation の使用  
+- Continuation を使用して、同じアクティビティに異なる Id を使用してアクセスを許可するには  
   
-  BAM API サンプルは、3 つのメイン クラスで構成されます。注文書を処理するためのクラス、出荷を処理するためのクラス、および請求書を処理するためのクラスです。 各クラスには、 **RunOnce** 、キューからメッセージを取得し、メッセージを処理するメソッド。 各クラスにはまた、**実行**継続的に呼び出すメソッド、 **RunOnce**メソッド。  
+  BAM API サンプルは、次の 3 つの主要なクラスで構成されます。 1 つは、出荷の処理、請求書を処理する 1 つに、注文購入を処理する 1 つ。 各クラスには、 **RunOnce** 、キューからメッセージを取得し、メッセージを処理するメソッド。 各クラスにはまた、**実行**継続的に呼び出すメソッド、 **RunOnce**メソッド。  
   
   **RunOnce**のメソッド、 **PoApplication**クラスは、次を実行します。  
   
 1. 注文書を表す XML メッセージを作成します。  
   
-2. BAMApiPo アクティビティを開始し、注文書および注文書の受信時刻に関する情報をアクティビティに追加します。  
+2. BAMApiPo アクティビティを開始し、注文書について、および受信されたときに、アクティビティ情報を追加します。  
   
-3. 適宜、注文書を承認または拒否します。  
+3. 任意を承認または却下、注文します。  
   
-4. BAMApiPo アクティビティを更新して注文書の状況 (承認または拒否) を記録します。  
+4. 注文書 (承認または拒否) のステータスを記録する BAMApiPo アクティビティを更新します。  
   
 5. 注文書が承認された場合、 **RunOnce**メソッドも、次を行います。  
   
-   1.  出荷されるパッケージを表す XML メッセージを作成し、出荷のキューにメッセージを追加します。  
+   1.  出荷するパッケージを表す XML メッセージを作成し、出荷のキューにメッセージを追加します。  
   
-   2.  注文書を表す XML メッセージを、請求書に含める注文書のキューに追加します。  
+   2.  請求書に含まれる発注書のキューに注文書を表す XML メッセージを追加します。  
   
-   3.  BAMApiPo アクティビティの Continuation を有効にします。  
+   3.  BAMApiPo アクティビティの continuation を有効にします。  
   
    4.  BAMApiPo アクティビティを終了します。  
   
    **RunOnce**のメソッド、 **ShipmentApplication**クラスは、次を実行します。  
   
-6. 出荷されるパッケージを表す XML メッセージをキューから取得します。  
+6. 送付先であるパッケージを表す XML メッセージをキューから取得します。  
   
-7. BAMApiPo アクティビティを更新してパッケージが出荷された時刻を記録します。  
+7. パッケージが付属していた時間を記録する BAMApiPo アクティビティを更新します。  
   
 8. BAMApiPo アクティビティを終了します。  
   
@@ -70,11 +70,11 @@ BAM API サンプルでは、BAM API の呼び出しを監視できるキーの�
   
 10. BAMApiInvoice アクティビティを開始します。  
   
-11. 請求される注文書の BAMApiInvoice アクティビティと BAMApiPo アクティビティの間に BAM リレーションシップを作成します。  
+11. BAMApiInvoice アクティビティと BAMApiPo アクティビティを請求される注文書の間の BAM リレーションシップを作成します。  
   
-12. 請求書と請求書の作成時刻に関する情報を BAMApiPo アクティビティに追加します。  
+12. 作成された、請求書と、時間に関する BAMApiPo アクティビティ情報を追加します。  
   
-13. 請求書が支払われるまでの待機時間をシミュレートするためにしばらく間を置いて、BAMApiInvoice アクティビティに請求書の支払いが行われた時刻を追加します。  
+13. BAMApiInvoice アクティビティには時間の支払いに請求書の待機をシミュレートするために、請求書の支払いが行われた時刻を追加します。  
   
 14. BAMApiInvoice アクティビティを終了します。  
   
@@ -100,20 +100,20 @@ BAM API サンプルでは、BAM API の呼び出しを監視できるキーの�
 |ファイル|説明|  
 |----------|-----------------|  
 |BamApiSample.cs|インストルメント化されたアプリケーション。|  
-|BamApiSample.csproj|インストルメント化されたアプリケーション プロジェクト。|  
-|BamApiSample.sln|インストルメント化されたアプリケーション ソリューション。|  
-|BamApiSample.xls|BAM 定義スタイルシート。|  
-|Cleanup.bat|展開されたサンプル ファイルを削除するバッチ ファイル。|  
-|Input.txt|インターセプタ構成入力のサンプル。|  
-|InterceptorConfig.cs|API サンプルのインターセプタ構成コード。|  
+|BamApiSample.csproj|インストルメント化されたアプリケーションのプロジェクトです。|  
+|BamApiSample.sln|インストルメント化されたアプリケーションのソリューションです。|  
+|BamApiSample.xls|BAM 定義スタイル シートです。|  
+|Cleanup.bat|デプロイされたサンプル ファイルを削除するバッチ ファイルです。|  
+|Input.txt|サンプルのインターセプタ構成を入力します。|  
+|InterceptorConfig.cs|API のサンプルのインターセプタ構成コード。|  
 |InterceptorConfig.csproj|インターセプタ構成プロジェクト。|  
 |Invoice_config.xml|Invoice インターセプタ構成。|  
-|Invoice_interceptor.bin|シリアル化された Invoice インターセプタ。|  
+|Invoice_interceptor.bin|シリアル化された invoice インターセプタ。|  
 |PurchaseOrder_config.xml|PurchaseOrder インターセプタ構成。|  
 |PurchaseOrder_interceptor.bin|シリアル化された PurchaseOrder インターセプタ。|  
-|Setup.bat|サンプル ファイルを展開して参加するバッチ ファイル。|  
+|Setup.bat|バッチ ファイルを展開し、サンプル ファイルを参加させる。|  
 |Shipment_config.xml|Shipment インターセプタ構成。|  
-|Shipment_interceptor.bin|シリアル化された Shipment インターセプター。|  
+|Shipment_interceptor.bin|シリアル化された shipment インターセプタ。|  
   
 ## <a name="run-the-bam-api-sample"></a>BAM API サンプルを実行します。  
   
@@ -122,7 +122,7 @@ BAM API サンプルでは、BAM API の呼び出しを監視できるキーの�
 2.  管理者は、Visual Studio を起動し、開く、 *\<サンプル パス\>* \BAM\ BamApiSample\BamApiSample.sln ソリューション。 
   
     > [!IMPORTANT]
-    >  BamApiSample.cs ファイルの `//#define Interceptor` の行をコメント化します。この行から "//" を削除しないでください。 BAM API サンプルでは、`#if Interceptor` プリプロセッサ ディレクティブ内にないコードのみを使用します。  
+    >  行`//#define Interceptor`BamApiSample.cs ファイルで、アウト コメントする必要があります。削除しないでください、"//"この行から。 BAM API サンプルは、内部でないコードのみを使用して、`#if Interceptor`プリプロセッサ ディレクティブです。  
   
 3.  ソリューションをビルドします。  
   
@@ -148,7 +148,7 @@ BAM API サンプルでは、BAM API の呼び出しを監視できるキーの�
     ...  
     ```  
   
-5.  1 分ほど経ったら、Ctrl キーを押しながら C キーを押すか、コマンド プロンプト ウィンドウを閉じて、BamApiSample プログラムを停止します。  
+5.  しばらくするとそのため、ctrl キーを押しながら C キーを押します。 または BamApiSample プログラムを停止するコマンド プロンプト ウィンドウを閉じます。  
   
 ## <a name="view-the-results"></a>結果を表示します。
   
@@ -158,8 +158,8 @@ BAM API サンプルでは、BAM API の呼び出しを監視できるキーの�
   
 3.  右クリックして**dbo.bam_BAMApiInvoice_Active**  をクリックし、**テーブルを開く**します。 SQL Server を使用している場合はクリックして**上位 1000 行を選択する**します。  
   
-     bam_BAMApiInvoice_Active テーブルの内容が右側のウィンドウに表示されます。 テーブルの各行は、開始されているが、完了していない BAMApiInvoice アクティビティを表します。  
+     Bam_BAMApiInvoice_Active テーブルの内容は、右側のウィンドウに表示されます。 テーブルの各行が開始されたら、完了していない BAMApiInvoice アクティビティを表します。  
   
 4.  右クリックして**dbo.bam_BAMApiPo_Completed**  をクリックし、**テーブルを開く**します。 SQL Server を使用している場合はクリックして**上位 1000 行を選択する**します。  
   
-     bam_BAMApiPo_Completed テーブルの内容が右側のウィンドウに表示されます。 テーブルの各行は、完了した BAMApiPo アクティビティを表します。
+     Bam_BAMApiPo_Completed テーブルの内容は、右側のウィンドウに表示されます。 テーブルの各行は、完了した BAMApiPo アクティビティを表します。

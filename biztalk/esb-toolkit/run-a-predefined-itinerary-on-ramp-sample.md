@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7e428a9106582e5bad3408cfb6643cc5da21ac74
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3bed5278e4373b82a2f384f96bee44512aefc1b8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36996587"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65400299"
 ---
 # <a name="run-a-predefined-itinerary-on-ramp-sample"></a>定義済みスケジュール オンランプ ランプでサンプルを実行します。
 [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]実行できる 20 の定義済みスケジュール ユース ケースが含まれています。 これらのリストについては、ユース ケースを参照してください[、サンプル スケジュール シナリオ](../esb-toolkit/the-sample-itinerary-scenarios.md)します。  

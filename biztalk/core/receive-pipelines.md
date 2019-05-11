@@ -20,12 +20,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a0a248c69cb96603e9c4883e5d21caa39165da13
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0a0fd7d5a0cba8543ae44bb6a8e0632cbf33c9ab
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22268866"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65398204"
 ---
 # <a name="receive-pipelines"></a>受信パイプライン
 次の図は、メッセージ処理のワークフローです。受信パイプラインが強調表示されています。  
@@ -40,7 +40,7 @@ ms.locfileid: "22268866"
   
  ビジネス プロセスを作成するときに、新しい受信パイプラインを作成または 2 つの既定値のいずれかを使用することができます受信パイプラインが BizTalk Server に含まれる、パススルー受信パイプラインまたは XML 受信パイプラインです。 これらの既定のパイプラインの詳細については、次を参照してください。[既定のパイプライン](../core/default-pipelines.md)です。  
   
- 受信パイプラインは、4 つの段階で構成されています。 デコード、逆アセンブル、検証、およびパーティの解決。 このトピックでは、これらのステージを設定する際に考慮すべき点について説明します。  
+ 受信パイプラインは、4 つの段階で構成されます。デコード、逆アセンブル、検証、およびパーティの解決。 このトピックでは、これらのステージを設定する際に考慮すべき点について説明します。  
   
 > [!NOTE]
 >  このリリースでは、ステージの順序の変更やステージの省略はサポートされていません。  

@@ -1,5 +1,5 @@
 ---
-title: オーケストレーションを Web サービスとして公開 |Microsoft ドキュメント
+title: Web サービスとしてのオーケストレーションの公開 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -19,27 +19,27 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6b6d36f6c56851bfedcd522f96d01a8256232826
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b35f54c6aa850416029ad54b49de59178bcefd34
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22269066"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65398385"
 ---
 # <a name="publishing-an-orchestration-as-a-web-service"></a>Web サービスとしてのオーケストレーションの公開
-BizTalk Web サービス公開ウィザードを使用して、オーケストレーションを Web サービスとして公開することができます。 ウィザードでは、BizTalk アセンブリ内のオーケストレーションに基づいて、Web サービスが作成されます。 このウィザードを使用して、Web サービスを公開するオーケストレーションと受信ポートを選択できます。 ターゲットの名前空間、SOAP ヘッダーの要件、およびウィザードで生成される Web サービス プロジェクトの場所を定義できます。  
+BizTalk Web サービス公開ウィザードを使用して、オーケストレーションを Web サービスとして公開することができます。 ウィザードでは、BizTalk アセンブリ内のオーケストレーションに基づいた Web サービスを作成します。 ウィザードを使用して、オーケストレーションを選択し、受信ポートを Web サービスを公開します。 ターゲットの名前空間、SOAP ヘッダーの要件、およびウィザードで生成する Web サービス プロジェクトの場所を定義することができます。  
   
- ウィザードを実行する前に、Web サービスとして公開するオーケストレーションとスキーマを含む BizTalk アセンブリをコンパイルすることが必要です。  
+ ウィザードを実行する前に、オーケストレーションと Web サービスとして公開するスキーマを含む BizTalk アセンブリをコンパイルする必要があります。  
   
- BizTalk Web サービス公開ウィザードを実行する前に、Web サービスを有効にする必要があります。 詳細については、システム用の Web サービスを有効にすると、次を参照してください。 [Web サービスを有効にすると](../core/enabling-web-services.md)です。  
+ BizTalk Web サービス公開ウィザードを実行する前に、Web サービスを有効にする必要があります。 お使いのシステムの Web サービスを有効にする方法の詳細については、次を参照してください。 [Web サービスを有効にする](../core/enabling-web-services.md)します。  
   
 > [!NOTE]
->  オーケストレーションを Web サービスとして公開するには、事前に [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] をインストールしておく必要があります。 Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] のインストールは不要です。  
+>  インストールする必要があります[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]前に、Web サービスとして、オーケストレーションを公開することができます。 Microsoft をインストールする必要はありません[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [オーケストレーションを Web サービスにマップする方法](../core/how-to-map-orchestrations-to-web-services.md)  
+-   [Web サービスにオーケストレーションをマップする方法](../core/how-to-map-orchestrations-to-web-services.md)  
   
--   [BizTalk Web サービス公開ウィザードを使用してオーケストレーションを Web サービスとして公開する方法](../core/publish-orchestration-as-web-service--biztalk-web-services-publishing-wizard.md)  
+-   [BizTalk Web サービス公開ウィザードを使用して、オーケストレーションを Web サービスとして公開する方法](../core/publish-orchestration-as-web-service--biztalk-web-services-publishing-wizard.md)  
   
 -   [Web サービスとして公開されたオーケストレーションから SOAP 例外をスローする方法](../core/how-to-throw-soap-exceptions-from-orchestrations-published-as-a-web-service.md)

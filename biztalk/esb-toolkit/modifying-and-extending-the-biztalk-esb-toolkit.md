@@ -1,5 +1,5 @@
 ---
-title: 変更して、BizTalk ESB Toolkit を拡張 |Microsoft ドキュメント
+title: 変更および BizTalk ESB Toolkit の拡張 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,20 +12,20 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 86cda11c8668370e5b2067b812d813d2c3642bdc
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0d30442b5a79c44d325b14ee1559052c8d7f85f5
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22294370"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65400090"
 ---
-# <a name="modifying-and-extending-the-biztalk-esb-toolkit"></a>変更して、BizTalk ESB Toolkit の拡張
-変更または拡張することができます[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]services と、特定の要件に合わせてコンポーネントです。 たとえば、既存のコンポーネントの動作を変更するには、パイプラインを使用して、プロバイダーと、アダプターを追加またはその他のカスタム機能を追加するカスタム メッセージング サービスを作成することがあります、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]です。  
+# <a name="modifying-and-extending-the-biztalk-esb-toolkit"></a>変更および BizTalk ESB Toolkit の拡張
+変更したり拡張したりする[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]サービスおよび特定の要件に合わせてコンポーネント。 たとえば、既存のコンポーネントの動作を変更するには、パイプラインで使用、プロバイダーと、アダプターを追加またはその他のカスタム機能を追加するカスタムのメッセージング サービスを作成することがあります、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]します。  
   
- このセクションの内容は次のとおりです。  
+ ここでは、次のトピックについて説明します。  
   
--   [競合回避モジュールとアダプターのプロバイダー フレームワークの拡張](../esb-toolkit/extending-the-resolver-and-adapter-provider-framework.md)  
+-   [リゾルバーとアダプターのプロバイダー フレームワークを拡張する](../esb-toolkit/extending-the-resolver-and-adapter-provider-framework.md)  
   
--   [カスタム Itinerary サービスを作成します。](../esb-toolkit/creating-a-custom-itinerary-service.md)  
+-   [カスタム スケジュール サービスを作成する](../esb-toolkit/creating-a-custom-itinerary-service.md)  
   
--   [Itinerary Designer を拡張します。](../esb-toolkit/extending-the-itinerary-designer.md)
+-   [Itinerary Designer を拡張する](../esb-toolkit/extending-the-itinerary-designer.md)

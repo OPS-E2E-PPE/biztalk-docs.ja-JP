@@ -24,77 +24,77 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 23028db559864368bb091fb15abfca7e49d73808
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: edc30a99c0a037d23bc7d1ef7476edfdf159a339
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36986323"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65385293"
 ---
-# <a name="how-to-deploy-pipelines"></a>パイプラインを展開する方法
-ソリューションのビルドおよび展開プロセスの一部として、パイプラインのコンパイルと展開が行われます。 コンパイラの呼び出し、**検証**各コンポーネントは、これにより、コンポーネントを返すメソッドが構成されている情報にエラーをコンパイルします。 ビルドが終了すると、パイプラインはソリューションの展開時に、残りのソリューションと同じアセンブリに展開されます。  
+# <a name="how-to-deploy-pipelines"></a>パイプラインをデプロイする方法
+パイプラインはコンパイルされ、ソリューションのビルドの一部として展開およびプロセスを展開します。 コンパイラの呼び出し、**検証**各コンポーネントは、これにより、コンポーネントを返すメソッドが構成されている情報にエラーをコンパイルします。 、作成した後、パイプラインは、ソリューションの配置時に、ソリューションの残りの部分で、同じアセンブリに配置されます。  
   
 ## <a name="per-instance-pipeline-configuration"></a>インスタンスごとのパイプラインの構成  
- インスタンスごとのパイプラインの構成は、送信ポートまたは受信場所のレベルで、展開済みパイプライン内のパイプライン コンポーネントのプロパティを変更する場合に使用されます。 インスタンスごとのパイプラインの構成は、少数のパイプライン コンポーネント プロパティをインスタンスごとに変更する場合に役立ちます。 たとえば、複数の受信場所で数種類のメッセージに対応する必要があり、カスタムの XML 受信パイプラインが 1 つである場合、インスタンスごとのパイプラインの構成を使用すると、パイプラインを展開し、既定の構成をオーバーライドすることができます。また、別のエンベロープやドキュメントの仕様名を指定することもできます。 インスタンスごとのパイプラインの構成に関するメカニズムは BizTalk 管理コンソールでサポートされており、またエクスプローラー オブジェクト モデルを使ったプログラムを介して利用できます。  
+ インスタンスごとのパイプラインの構成は、送信ポートで、展開済みパイプライン内のパイプライン コンポーネントのプロパティを変更または受信場所のレベルに使用されます。 インスタンスごとのパイプラインの構成は、いくつかのパイプライン コンポーネント プロパティのみがインスタンスごとに変更する必要がある場合に便利です。 たとえばをサポートする必要がある場合の受信場所および 1 つのカスタム XML がある複数の種類別のメッセージの受信パイプライン、インスタンスごとのパイプラインの構成では、パイプラインをデプロイして、(を含む既定の構成をオーバーライドすることができます。指定する別のエンベロープやドキュメントの仕様名)。 BizTalk 管理コンソールで、プログラムで、エクスプ ローラー オブジェクト モデルを通じて、このメカニズムはサポートされています。  
   
-### <a name="per-instance-pipeline-configuration-using-biztalk-administration-console"></a>BizTalk 管理コンソールを使ったインスタンスごとのパイプラインの構成  
- インスタンスごとのパイプラインの構成は、BizTalk 管理コンソールを使用して実行できます。 これには、カスタム パイプラインの展開後、受信場所または送信ポートを必要な数だけ作成し、 次に [パイプラインの構成] ダイアログ ボックスで、各受信場所または送信ポートに対し既定のプロパティ値をオーバーライドします。 たとえば、別のドキュメント スキーマを指定するのスキーマ名を入力、 **EnvelopeDocSpecNames**プロパティ。  
+### <a name="per-instance-pipeline-configuration-using-biztalk-administration-console"></a>インスタンスごとのパイプラインの構成を使用して BizTalk 管理コンソール  
+ BizTalk 管理コンソールを使用してインスタンスごとのパイプラインの構成を行うことができます。 カスタム パイプラインをデプロイした後は、受信場所または送信ポートを必要に応じて多くを作成します。 各受信場所または送信ポート、パイプラインの構成 ダイアログ ボックスで既定のプロパティ値をオーバーライドします。 たとえば、別のドキュメント スキーマを指定するのスキーマ名を入力、 **EnvelopeDocSpecNames**プロパティ。  
   
 > [!WARNING]
->  この受信場所または送信ポートに指定された構成値は検証されません。 構成が正しくない場合、メッセージは実行時にパイプラインを通過するときに失敗します。  
+>  構成値の検証は、受信場所の指定など、送信ポートが実行されます。 構成が正しくない場合は、パイプラインを通過するときに実行時にメッセージが失敗します。  
   
-### <a name="per-instance-pipeline-configuration-using-the-explorer-object-model"></a>エクスプローラー オブジェクト モデルを使ったインスタンスごとのパイプラインの構成  
- パイプライン コンポーネントのインスタンスごとの構成を記述する XML ファイルが読み取られると、パイプライン ファイルに設定されたプロパティはオーバーライドされます。  
+### <a name="per-instance-pipeline-configuration-using-the-explorer-object-model"></a>エクスプ ローラー オブジェクト モデルを使用してインスタンスごとのパイプラインの構成  
+ パイプライン コンポーネントのインスタンスごとの構成を記述する XML ファイルが読み取られるときに、パイプライン ファイルで設定されたプロパティをオーバーライドします。  
   
- インスタンスごとのパイプラインの構成は、BizTalk エクスプローラー オブジェクト モデルを使用して設定できます。 BizTalk エクスプ ローラー オブジェクト モデルを使用する、 **ReceivePipelineData**プロパティを**という**と**ISendPort**の構成を設定するためのインターフェイスパイプライン コンポーネントを受信します。 BizTalk エクスプ ローラー オブジェクト モデルを使用することも、 **SendPipelineData**メソッドを**IReceivePort**と**ISendPort**送信の設定の構成用のインターフェイスパイプライン コンポーネント。  
+ インスタンスごとのパイプラインの構成は、BizTalk エクスプローラ オブジェクト モデルを使用して設定されます。 BizTalk エクスプ ローラー オブジェクト モデルを使用する、 **ReceivePipelineData**プロパティを**という**と**ISendPort**の構成を設定するためのインターフェイスパイプライン コンポーネントを受信します。 BizTalk エクスプ ローラー オブジェクト モデルを使用することも、 **SendPipelineData**メソッドを**IReceivePort**と**ISendPort**送信の設定の構成用のインターフェイスパイプライン コンポーネント。  
   
- インスタンスごとのパイプラインの構成は、次の操作をサポートしていません。  
+ インスタンスごとのパイプラインの構成には、次をサポートされていません。  
   
 - パイプライン内のステージの再構成  
   
-- ステージの追加または削除  
+- 追加または削除の段階  
   
 - ステージ内のコンポーネントの再構成  
   
-- コンポーネントの追加または削除  
+- 追加またはコンポーネントを削除します。  
   
-  サポートされている変更は、パイプライン コンポーネントの構成内の変更のみです。 パイプライン コンポーネントのインスタンスごとの構成は、パイプライン コンポーネントの共通の構成をオーバーライドします。 インスタンスごとのパイプラインの構成でコンポーネントのパラメーターが指定されていない場合、そのパラメーターの共通の構成 (パイプライン デザイナーで構成) が使用されます。  
+  パイプライン コンポーネントの構成ではサポートされている変更のみです。 パイプライン コンポーネントのインスタンスごとの構成では、一般的なパイプライン コンポーネントの構成をオーバーライドします。 インスタンスごとのパイプラインの構成でコンポーネントのパラメーターが指定されていない場合は、(パイプライン デザイナーで構成されている) とそのパラメーターの一般的な構成が使用されます。  
   
-  次に、インスタンスごとの構成データの例を示します。  
+  次は、インスタンスごとに構成データの例です。  
   
 ```  
 <?xml version="1.0" encoding="utf-16"?>  
 <Root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">  
-    <Stages>  
-        <Stage CategoryId="9d0e4103-4cce-4536-83fa-4a5040674ad6">  
-            <Components>  
-                <Component Name=Microsoft Microsoft.BizTalk.Component.MIME_SMIME_Decoder>  
-                    <Properties>  
-                        <AllowNonMIMEMessage vt=11>true</AllowNonMIMEMessage>  
-                    </Properties>  
-                </Component>  
-            </Components>  
-        </Stage>  
-        <Stage CategoryId="9d0e4105-4cce-4536-83fa-4a5040674ad6">  
-            <Components>  
-                <Component Name=Microsoft.BizTalk.Component.XmlDasmComp>  
-                    <Properties>  
-                        <EnvelopeSpecNames vt=8>MySchemas.EnvelopeSpecNames</EnvelopeSpecNames>  
-                        <AllowUnrecognizedMessage vt=11>false</AllowUnrecognizedMessage>  
-                    </Properties>  
-                </Component>  
-            </Components>  
-        </Stage>  
-        <Stage CategoryId="9d0e410d-4cce-4536-83fa-4a5040674ad6" ExecutionSequence="2">  
-            <Components>  
-                 <Component Name=Microsoft.BizTalk.Component.XmlValidator >  
-                    <Properties>  
-                        <DocumentSpecName vt=8>MySchemas.DocspecName</DocumentSpecName>  
-                    </Properties>  
-                </Component>  
-            </Components>  
-        </Stage>  
-    </Stages>  
+    <Stages>  
+        <Stage CategoryId="9d0e4103-4cce-4536-83fa-4a5040674ad6">  
+            <Components>  
+                <Component Name=Microsoft Microsoft.BizTalk.Component.MIME_SMIME_Decoder>  
+                    <Properties>  
+                        <AllowNonMIMEMessage vt=11>true</AllowNonMIMEMessage>  
+                    </Properties>  
+                </Component>  
+            </Components>  
+        </Stage>  
+        <Stage CategoryId="9d0e4105-4cce-4536-83fa-4a5040674ad6">  
+            <Components>  
+                <Component Name=Microsoft.BizTalk.Component.XmlDasmComp>  
+                    <Properties>  
+                        <EnvelopeSpecNames vt=8>MySchemas.EnvelopeSpecNames</EnvelopeSpecNames>  
+                        <AllowUnrecognizedMessage vt=11>false</AllowUnrecognizedMessage>  
+                    </Properties>  
+                </Component>  
+            </Components>  
+        </Stage>  
+        <Stage CategoryId="9d0e410d-4cce-4536-83fa-4a5040674ad6" ExecutionSequence="2">  
+            <Components>  
+                 <Component Name=Microsoft.BizTalk.Component.XmlValidator >  
+                    <Properties>  
+                        <DocumentSpecName vt=8>MySchemas.DocspecName</DocumentSpecName>  
+                    </Properties>  
+                </Component>  
+            </Components>  
+        </Stage>  
+    </Stages>  
 </Root>  
 ```  
   

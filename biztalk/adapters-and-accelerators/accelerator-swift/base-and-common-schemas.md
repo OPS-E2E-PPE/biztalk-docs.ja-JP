@@ -17,12 +17,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6b7f8f86e4b74b84cef556ae95bc6255d8575237
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5512c9233e292fdafa232db5c36ac6ff14de53cc
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37012571"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65378794"
 ---
 # <a name="base-and-common-schemas"></a>ベースと一般的なスキーマ
 Microsoft[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]レコードと別のスキーマ内の個々 のメッセージ スキーマを構成する要素を実装します。 このアプローチでは、フィールドと形式のこのような変更からのメッセージ スキーマの保護の更新プログラムを提供する 1 つの場所を提供します。  

@@ -1,5 +1,5 @@
 ---
-title: Wcf-nettcp アダプター |Microsoft ドキュメント
+title: Wcf-nettcp アダプター |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,18 +14,18 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5225a6d64e5b7fe96d97b727a65fe459b58abfb4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c7cdea57c2c8550cf7c8c167b183a31419a0f40a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22288690"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65400569"
 ---
 # <a name="wcf-nettcp-adapter"></a>Wcf-nettcp アダプター
-[!INCLUDE[btsCoName](../includes/btsconame-md.md)][!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]の受信と送信 WCF サービスを要求するときに Wcf-nettcp アダプターを使用して、 [NetTcpBinding](http://go.microsoft.com/fwlink/?LinkID=81087)です。 Wcf-nettcp アダプターを使用すると、オーケストレーションとスキーマを WCF サービスとして公開し、と共に外部 WCF サービスを使用すると、 **NetTcpBinding**です。  
+[!INCLUDE[btsCoName](../includes/btsconame-md.md)] [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 受信と送信の WCF サービス経由で要求するときに Wcf-nettcp アダプターを使用して、 [NetTcpBinding](http://go.microsoft.com/fwlink/?LinkID=81087)します。 Wcf-nettcp アダプターを使用するオーケストレーションとスキーマを WCF サービスとして公開して、と共に外部 WCF サービスを使用する、 **NetTcpBinding**します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [Wcf-nettcp アダプターとは何ですか。](../core/what-is-the-wcf-nettcp-adapter.md)  
+-   [WCF-NetTcp アダプターについて](../core/what-is-the-wcf-nettcp-adapter.md)  
   
--   [Wcf-nettcp アダプターを構成します。](../core/configuring-the-wcf-nettcp-adapter.md)
+-   [WCF-NetTcp アダプターの構成](../core/configuring-the-wcf-nettcp-adapter.md)

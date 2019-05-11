@@ -20,12 +20,12 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 52ca3f5d4636f0592c98528d481a8d3f0a1bc96b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b22bcecae1198a6638504f4406d5e7b5ccf47b26
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37001779"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65386387"
 ---
 # <a name="how-to-configure-authentication-options-for-a-receive-port"></a>受信ポートの認証オプションを構成する方法
 このトピックでは、BizTalk Server 管理コンソールを使用して受信ポートのメッセージ認証オプションを構成する方法について説明します。 メッセージ認証オプションは、パーティの解決の認証が構成されると適用されます。 使用可能なオプションは次のとおりです。  
@@ -36,7 +36,7 @@ ms.locfileid: "37001779"
   
 - **認証が失敗した場合は、メッセージを保持します。** : このオプションを選択すると、受信ポートはパーティの解決を使用してメッセージの資格情報をチェックし、認証に失敗した場合はメッセージを保留キューに保持します。  
   
-  手順の作成とパーティの構成については、[パーティを作成する方法](http://msdn.microsoft.com/library/f6feca1d-bc83-4fb6-981d-26c9e0d53044)を参照してください。 パーティの解決の認証の詳細については、[メッセージの送信者の認証](../core/authenticating-the-sender-of-a-message.md)と[受信メッセージの認証](../core/inbound-message-authentication.md)を参照してください。  
+  手順の作成とパーティの構成については、次を参照してください。[パーティを作成する方法](http://msdn.microsoft.com/library/f6feca1d-bc83-4fb6-981d-26c9e0d53044)します。 パーティの解決の認証の詳細については、次を参照してください。[メッセージの送信者の認証](../core/authenticating-the-sender-of-a-message.md)と[受信メッセージの認証](../core/inbound-message-authentication.md)します。  
   
 ## <a name="prerequisites"></a>前提条件  
  このトピックの手順を実行するには、BizTalk Server 管理者グループのメンバーであるアカウントでログオンする必要があります。 詳細なアクセス許可についてを参照してください。[を展開すると、BizTalk アプリケーションの管理に必要なアクセス許可](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)します。  

@@ -14,12 +14,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 06e46c8be5da2f62f2b59ce2591e0559367adf08
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6dbf2c26518924f1ddf0e1cd77a4ac6e52eec54a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36990931"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65376955"
 ---
 # <a name="swift-text"></a>SWIFT テキスト
 メッセージ テキストは、財務 (FIN)、メッセージのペイロードおり、すべての送信者、受信者、およびメッセージの種類を含むフィールドを除くデータ フィールドが含まれています。 ヘッダー部分は、これら 3 つのフィールドに格納されます。 一部のメッセージには、処理情報を入力することの省略可能なユーザー ヘッダーも含まれます。  
