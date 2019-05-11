@@ -17,24 +17,24 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e56d3d2c1dde771d86f8de345d6e3b249ab394b8
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 27739c126ab4b713d13d3fb3dc86c0cc6fea1cc5
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36977051"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65333884"
 ---
 # <a name="how-to-start-the-business-rule-composer-and-load-a-policy"></a>ビジネス ルール作成ツールを起動し、ポリシーの読み込みする方法
-このセクションでは、ビジネス ルール作成ツールの起動方法とポリシーの読み込み方法について説明します。  
+このセクションでは、ビジネス ルール作成ツールを起動し、ポリシーの読み込みする方法について説明します。  
   
-### <a name="to-start-the-business-rule-composer"></a>ビジネス ルール作成ツールを起動するには  
+### <a name="to-start-the-business-rule-composer"></a>ビジネス ルール作成ツールを開始するには  
   
 - **開始**メニューで、**すべてのプログラム**、microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]、順にクリックします**ビジネス ルール作成ツール**します。  
   
   > [!NOTE]
   >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。 これを行うには、アプリケーションを右クリックし、**管理者として実行**します。  
   
-### <a name="to-load-a-policy"></a>ポリシーを読み込むには  
+### <a name="to-load-a-policy"></a>ポリシーを読み込めません  
   
 1.  ビジネス ルール作成ツールで、上、**ルール ストア** メニューのをクリックして**ロード**します。  
   

@@ -12,12 +12,12 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e9ef38dfaa603550c810dd7a3c5e114ecc3c028e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 0b9cf36e67a8146161faa6805153e9c2eed7990a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36972219"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65368475"
 ---
 # <a name="prerequisites-to-create-sql-applications-using-the-sql-adapter"></a>SQL アダプターを使用して SQL アプリケーションを作成するための必要条件
 使用して BizTalk アプリケーションを開発する前に行う必要があります、[!INCLUDE[adaptersql_md](../../includes/adaptersql-md.md)]します。 トピックには、BizTalk アプリケーションの開発に使用されるいくつかの BizTalk Server ツールも一覧表示されます。  
@@ -50,7 +50,7 @@ Microsoft でプロジェクトをビルドする厳密な名前キー ファイ
 
 - Microsoft [!INCLUDE[btsVStudioNoVersion_md](../../includes/btsvstudionoversion-md.md)] 
 
-- BizTalk エクスプローラー  
+- BizTalk エクスプ ローラー  
 
 - オーケストレーション デザイナー  
 
@@ -73,7 +73,7 @@ Microsoft でプロジェクトをビルドする厳密な名前キー ファイ
 |                          オーケストレーション デザイナー                           |                                                                                                                                                                                          [オーケストレーション デザイナーを使用してオーケストレーションの作成](../../core/creating-orchestrations-using-orchestration-designer.md)                                                                                                                                                                                           |
 |                             パイプライン デザイナー                             |                                                                                                                                                                                                    [パイプライン デザイナーを使用してパイプラインを作成します。](../../core/creating-pipelines-using-pipeline-designer.md)                                                                                                                                                                                                     |
 |                              BizTalk マッパー                               |                                                                                                                                                                                                            [BizTalk マッパーを使用してマップを作成します。](../../core/creating-maps-using-biztalk-mapper.md)                                                                                                                                                                                                             |
-|                   BizTalk Server 管理コンソール                   |                                                                                                                                                                                               [BizTalk Server 管理コンソールの使用](../../core/using-the-biztalk-server-administration-console.md)                                                                                                                                                                                                |
+|                   BizTalk Server 管理コンソール                   |                                                                                                                                                                                               [BizTalk Server 管理コンソールを使用します。](../../core/using-the-biztalk-server-administration-console.md)                                                                                                                                                                                                |
 
 ## <a name="next"></a>Next
 [SQL アダプターを使用した BizTalk アプリケーションを開発する構成要素](../../adapters-and-accelerators/adapter-sql/building-blocks-to-develop-biztalk-applications-with-the-sql-adapter.md)

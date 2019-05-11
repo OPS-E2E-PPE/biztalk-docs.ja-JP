@@ -16,12 +16,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 360a2e3974f1e4ea5858c583c5dc5fcc364e9756
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: beeb0169e70841b7f31e889cc51e296de49e45eb
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36974635"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65530215"
 ---
 # <a name="runtime-message-repair-fin-response-and-messaging"></a>ランタイム、メッセージの修復、FIN 応答、およびメッセージング
 
@@ -39,7 +39,7 @@ Microsoft[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-curre
 ## <a name="next-steps"></a>次のステップ  
  このセクションには、次のトピックが含まれています。  
   
--   [コンポーネント](components.md)  
+-   [Components](components.md)  
   
 -   [BizTalk Accelerator for SWIFT ランタイム](biztalk-accelerator-for-swift-runtime.md)  
   

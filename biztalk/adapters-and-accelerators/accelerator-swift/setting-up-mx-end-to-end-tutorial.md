@@ -1,5 +1,5 @@
 ---
-title: MX エンド ツー エンドのチュートリアルのセットアップ |Microsoft ドキュメント
+title: MX エンド ツー エンドのチュートリアルの設定 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,15 +12,15 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 57d7999bfb3ff073e190873f463b462063ca373c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9466e5abdda8aedffffd51559acdf3cb2f071723
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22214234"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65530055"
 ---
-# <a name="setting-up-mx-end-to-end-tutorial"></a>MX エンド ツー エンドのチュートリアルを設定します。
-次の手順では、MX エンド ツー エンド チュートリアルを実行するための手順が強調表示します。  
+# <a name="setting-up-mx-end-to-end-tutorial"></a>MX エンド ツー エンドのチュートリアルの設定
+次の手順は、MX エンド ツー エンドのチュートリアルを実行するための手順を強調表示します。  
   
 -   [環境の設定](../../adapters-and-accelerators/accelerator-swift/setting-the-environment.md)  
   

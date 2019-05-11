@@ -19,12 +19,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c9c3bbf45074024b8745b845b3f9ca85f5ff814e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 73c994369709c2c0cf534f05a855ab1e9662b3a4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36972227"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373160"
 ---
 # <a name="operations-on-idocs-in-sap"></a>Sap Idoc に対する操作
 Idoc は、SAP と SAP 以外のシステムと非同期的に通信するために SAP がサポートしている標準の EDI のようなドキュメントです。 Idoc は、取引先の SAP システムまたは外部プログラムの間の販売の注文などの"business"ドキュメントの送受信に使用されます。  
@@ -71,24 +71,24 @@ Segment header (DOCNUM is one of the fields here)  |  Segment data
    この操作は、idoc ごとに表示されの特定の IDOC ノード下にある、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]または[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]します。  
   
   > [!NOTE]
-  >  IDOC_INBOUND_ASYNCHRONOUS RFC 詳しくは、  
+  >  正常に実行できる、**送信**操作、SAP システムに関連する承認が必要です。 詳しくは、  
   
-- **Rfc INBOUND_IDOC_PROCESS RFC 別のバインド プロパティPadReceivedIdocsWithSpaces受信した IDOC を空白で埋めるときに省略可能なフィールドの受信に必要な形式は"String"です。 これにより、アダプターの以前のバージョンを使用して受信した IDOC データ形式との互換性ができます。  
+- **SendIdoc**します。 厳密に型指定のスキーマを使用して、SAP システムに IDOC を送信するのにには、この操作を使用します。 この操作のスキーマでは、制御レコードとレコードのデータで構成される 1 つの文字列フィールドとして Idoc を公開します。 SendIdoc 操作は、パラメーターとして、IDOC の文字列と GUID を受け取ります。  
   
    これは 1 つの SAP システムによって公開されているすべての Idoc の表示操作であり、ルートで使用可能な**IDOC**内のノード、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]または[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]します。  
   
   詳細については。  
   
-- BizTalk Server を使用してトランザクション コンテキストでの SAP システムから IDOC を受信するを参照してください[を使用して BizTalk Server でのトランザクション コンテキストでの SAP からの Idoc の受信](../../adapters-and-accelerators/adapter-sap/send-idocs-to-sap-using-biztalk-server.md)します。  
+- BizTalk Server を使用して、SAP システムに IDOC を送信を参照してください[を使用して BizTalk Server での sap の Idoc の送信](../../adapters-and-accelerators/adapter-sap/send-idocs-to-sap-using-biztalk-server.md)します。  
   
-- メッセージの構造と IDOC を受信するための SOAP アクションを参照してください[IDOC 操作のメッセージ スキーマ](../../adapters-and-accelerators/adapter-sap/send-idocs-to-sap-using-the-wcf-service-model.md)します。  
+- IDOC を送信する WCF サービス モデルを使用して、SAP システムを参照してください[WCF サービス モデルを使用して sap の Idoc の送信](../../adapters-and-accelerators/adapter-sap/send-idocs-to-sap-using-the-wcf-service-model.md)します。  
   
 - メッセージの構造と IDOC を送信するための SOAP アクションを参照してください[IDOC 操作のメッセージ スキーマ](../../adapters-and-accelerators/adapter-sap/message-schemas-for-idoc-operations.md)します。  
   
 ## <a name="operations-to-receive-an-idoc"></a>IDOC を受信する操作  
  IDOC を受信する、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] tRFC サーバーまたは RFC サーバーとして動作できます。  
   
-- TRFC サーバー バインド プロパティとして動作するアダプターの**TidDatabaseConnectionString**コンピューターに TID データベースへの接続文字列に設定する必要があります。 トランザクションに関する詳細については、SAP 管理者に問い合わせるか、SAP のマニュアルを参照してください。  
+- TRFC サーバー バインド プロパティとして動作するアダプターの**TidDatabaseConnectionString**コンピューターに TID データベースへの接続文字列に設定する必要があります。 TRFC サーバー シナリオでは、アダプターは、SAP システムから IDOC を受信する tRFC クライアント呼び出しを受け入れます。  
   
 - アダプターが RFC サーバーとして動作するため、 **TidDatabaseConnectionString** null にする必要があります (既定値)。 RFC サーバー シナリオでは、アダプターは、SAP システムから IDOC を受信するため RFC クライアント呼び出しを受け入れます。  
   
@@ -133,7 +133,7 @@ Segment header (DOCNUM is one of the fields here)  |  Segment data
   
  別のバインド プロパティ**PadReceivedIdocsWithSpaces**受信した IDOC を空白で埋めるときに省略可能なフィールドの受信に必要な形式は"String"です。 これにより、アダプターの以前のバージョンを使用して受信した IDOC データ形式との互換性ができます。  
   
- バインド プロパティの詳細については、[mySAP Business Suite バインド プロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md)を参照してください。  
+ バインド プロパティの詳細については、次を参照してください。 [mySAP Business Suite バインド プロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md)します。  
   
  詳細については。  
   

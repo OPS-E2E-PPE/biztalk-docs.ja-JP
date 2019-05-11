@@ -16,12 +16,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b77d1da9261ae4a532e8b56be0f4172350f800e7
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 09cd296d8b2f9b3cff19ccbeb2c0a4149aab248c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36981443"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65372100"
 ---
 # <a name="architecture-overview-of-the-biztalk-adapter-for-siebel-ebusiness-applications"></a>BizTalk Adapter for Siebel eBusiness Applications のアーキテクチャの概要
 使用するエンド ツー エンド ソリューションのアーキテクチャについて説明します、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]も、Siebel システムとの内部アーキテクチャで動作する、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]します。  
@@ -44,7 +44,7 @@ ms.locfileid: "36981443"
 ## <a name="siebel-com-data-control"></a>Siebel COM データ コントロール  
  [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] Siebel COM データ コントロール ライブラリ (sstchca.dll) と Microsoft.Adapters.Siebel.SiebelBusinessObjectInterface.dll ライブラリを使用して Siebel システムに接続します。 Siebel COM のデータ コントロールは、Siebel Web クライアントのコンポーネントです。 
   
- Siebel COM データ コントロールのインターフェイスのような外部のクライアントを有効にする、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]に接続して、Siebel エンタープライズ サーバー上で Siebel アプリケーション オブジェクト マネージャーと通信します。 Siebel オブジェクト マネージャーと Siebel エンタープライズ サーバーだけでなく他の接続パラメーターがで指定された、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]接続 URI。 接続 URI の詳細については、[Siebel システム接続 URI を使用すると、作成](../../adapters-and-accelerators/adapter-siebel/create-the-siebel-system-connection-uri.md)を参照してください。  
+ Siebel COM データ コントロールのインターフェイスのような外部のクライアントを有効にする、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]に接続して、Siebel エンタープライズ サーバー上で Siebel アプリケーション オブジェクト マネージャーと通信します。 Siebel オブジェクト マネージャーと Siebel エンタープライズ サーバーだけでなく他の接続パラメーターがで指定された、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]接続 URI。 接続 URI の詳細については、次を参照してください。 [Siebel システム接続 URI を使用すると、作成](../../adapters-and-accelerators/adapter-siebel/create-the-siebel-system-connection-uri.md)です。  
   
  次の図は、エンド ツー エンドのアーキテクチャを使用して開発されたソリューションを[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]します。  
   

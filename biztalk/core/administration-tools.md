@@ -13,12 +13,12 @@ caps.latest.revision: 28
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e345e001d354cf925a68bc33d43f09bb42ad2761
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7066dd3a0c3ff571bd6cba879f4d7d730f4184ec
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36980499"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65359453"
 ---
 # <a name="administrative-and-performance-tools"></a>管理およびパフォーマンス ツール 
 
@@ -29,15 +29,15 @@ ms.locfileid: "36980499"
   
    BizTalk Server 管理コンソールを使用して、BizTalk Server の実装の正常性の追跡、ボトルネックの特定、および BizTalk Server 環境を監視するライブまたはアーカイブ済みのメッセージ イベントまたはサービス インスタンス データの表示を使用できます。 特定のオーケストレーション、パイプライン、またはメッセージ インスタンスに関する技術的な詳細情報だけでなく、システムで受け取った特定のメッセージのメッセージ フローを表示することもできます。  
   
-   BizTalk Server 管理コンソールの使用方法の詳細については、[、BizTalk Server 管理コンソールを使用して](../core/using-the-biztalk-server-administration-console.md)を参照してください。  
+   BizTalk Server 管理コンソールの使用方法の詳細については、次を参照してください。 [、BizTalk Server 管理コンソールを使用して](../core/using-the-biztalk-server-administration-console.md)します。  
   
-- **BTSTask コマンド ライン ツール**します。 BTSTask を使用すると、コマンド ラインから多くの管理タスクを実行できます。 詳細については、BTSTask を使用して、[BTSTask コマンド ライン リファレンス](../core/btstask-command-line-reference.md)を参照してください。  
+- **BTSTask コマンド ライン ツール**します。 BTSTask を使用すると、コマンド ラインから多くの管理タスクを実行できます。 詳細については、BTSTask を使用して、次を参照してください。 [BTSTask コマンド ライン リファレンス](../core/btstask-command-line-reference.md)します。  
   
-- **スクリプトとプログラミング Api**します。 Microsoft Windows Management Instrumentation (WMI) のオブジェクト モデルを使用して、管理タスクを自動化するスクリプトを作成および実行できます。 WMI の使用方法の詳細については、、 **WMI クラスの参照**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]を参照してください。
+- **スクリプトとプログラミング Api**します。 Microsoft Windows Management Instrumentation (WMI) のオブジェクト モデルを使用して、管理タスクを自動化するスクリプトを作成および実行できます。 WMI の使用方法の詳細については、次を参照してください。、 **WMI クラスの参照**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]します。
   
    WMI オブジェクト モデルは、管理 API を公開および簡素化します。 すべての管理 API は、管理対象のすべてのオブジェクトに対して、作成、列挙、変更、および削除操作のいくつかを公開します。 WMI は、この機能をすべての WMI オブジェクトに対して一貫した方法で公開します。  
   
-- **ビジネス アクティビティを監視 (BAM)。** BAM では、Microsoft Office Excel ブックを使用して、ビジネス ユーザーがビジネス プロセスのリアルタイムの包括的なビューを表示する方法を提供します。 BAM の詳細については、[ビジネス アクティビティの監視を使用して](../core/using-business-activity-monitoring.md)を参照してください。  
+- **ビジネス アクティビティを監視 (BAM)。** BAM では、Microsoft Office Excel ブックを使用して、ビジネス ユーザーがビジネス プロセスのリアルタイムの包括的なビューを表示する方法を提供します。 BAM の詳細については、次を参照してください。[ビジネス アクティビティの監視を使用して](../core/using-business-activity-monitoring.md)します。  
 
 
 - [**BizTalk Health Monitor**](http://blogs.msdn.com/b/biztalkhealthmonitor/ "BizTalk Health Monitor")テーブルの使用法、既知の問題など、BizTalk 環境に関する情報を収集する BizTalk サポート チームによって作成されました。 レポートを強調表示されている潜在的な問題の領域が生成されます。 このツールを実行して、BizTalk 環境を維持するために定期的に出力の確認を検討してください。 これには、BizTalk MsbBox ビューアーが置き換えられます。

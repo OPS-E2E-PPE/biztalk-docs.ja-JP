@@ -17,12 +17,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1457c05b37c3f5b1dfcc5887c1a3f6ce27fcb0d4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b781371962b8c8d32168d6c9ba4ce38fe20a4a49
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37004843"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65529723"
 ---
 # <a name="swift-trailers"></a>SWIFT トレーラー
 各 SWIFT のメッセージには、メッセージ交換とセキュリティ要件に必要な 1 つまたは複数のトレーラーがいます。 システム トレーラー、該当する場合、ユーザーのトレーラーに従います。 内で中かっこのペアをさらに区切られた subblock トレーラー ブロック内で各トレーラが表示されます。 各 subblock 後にコロン、トレーラーの型を表す 3 文字から始まります。  

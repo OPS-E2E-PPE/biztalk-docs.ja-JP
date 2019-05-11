@@ -13,19 +13,19 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 89631ce3-f5af-4d30-b22f-6d20f595295f
 ms.author: mandia
-ms.openlocfilehash: 823788385b659f5aa26d4aa92db1e234f2773600
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4f2a218063bc7f8d90205480887c90c6f6be78d1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37010931"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65282723"
 ---
 # <a name="prepare-for-the-private-process-tutorial"></a>プライベート プロセス チュートリアルを準備します。
 
 ## <a name="prerequisites"></a>前提条件
 前に、チュートリアルを開始するには。
   
-- BizTalk Server のフル インストールを行うと[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]2 台のコンピューター。 詳細については、[インストールおよび構成](install-configure-biztalk-accelerator-for-rosettanet.md)を参照してください。  
+- BizTalk Server のフル インストールを行うと[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]2 台のコンピューター。 詳細については、次を参照してください。[インストールおよび構成](install-configure-biztalk-accelerator-for-rosettanet.md)します。  
   
   > [!IMPORTANT]
   >  BTARN オーケストレーションを開始するなど、RosettaNet アクセラレータを完全に構成してください。 参照してください[インストールおよび構成](install-configure-biztalk-accelerator-for-rosettanet.md)します。 追加する必要がありますも、 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] Microsoft Windows® SharePoint™ Services 管理パスの除外一覧に仮想ディレクトリ (btarnhttpreceive を含む)。 

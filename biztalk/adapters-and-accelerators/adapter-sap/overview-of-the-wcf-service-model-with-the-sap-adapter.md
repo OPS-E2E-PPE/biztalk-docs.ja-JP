@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dd204cc7ad0b588a778fdbbbb6e4a61d884da231
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 17ce25d78b40763f78d214276bb9311898653389
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36967485"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373135"
 ---
 # <a name="overview-of-the-wcf-service-model-with-the-sap-adapter"></a>SAP アダプターを使用した WCF サービス モデルの概要
 操作を使用するが、[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]サーフェスは、クライアントまたはアダプターにサービスとして、コードが機能します。  
@@ -54,9 +54,9 @@ ms.locfileid: "36967485"
   
 #### <a name="to-invoke-operations-on-the-sap-adapter"></a>SAP アダプターの操作を呼び出す  
   
-1. WCF クライアント クラスとヘルパー コードを生成します。 使用して、[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]または、ServiceModel メタデータ ユーティリティ ツール (svcutil.exe) SAP システムの成果物を対象とした WCF クライアント クラスを生成する作業します。 WCF クライアントを生成する方法の詳細については、[WCF クライアントまたは SAP ソリューションの成果物の WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-sap/generate-a-wcf-client-or-a-wcf-service-contract-for-sap-solution-artifacts.md)を参照してください。  
+1. WCF クライアント クラスとヘルパー コードを生成します。 使用して、[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]または、ServiceModel メタデータ ユーティリティ ツール (svcutil.exe) SAP システムの成果物を対象とした WCF クライアント クラスを生成する作業します。 WCF クライアントを生成する方法の詳細については、次を参照してください。 [WCF クライアントまたは SAP ソリューションの成果物の WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-sap/generate-a-wcf-client-or-a-wcf-service-contract-for-sap-solution-artifacts.md)します。  
   
-2. クライアントのバインディングを指定することで、WCF クライアントのインスタンスを作成します。 クライアントのバインディングを指定するには、バインドと WCF クライアントを使用するエンドポイント アドレスを指定する必要があります。 コードで強制的に、または構成で宣言的に、これを行うことができます。 クライアントのバインディングを指定する方法の詳細については、[のバインド、SAP システムのクライアントを構成する](../../adapters-and-accelerators/adapter-sap/configure-a-client-binding-for-the-sap-system.md)を参照してください。 次のコードでは、SAP システムの RFC を呼び出すために使用できる WCF クライアントを作成します。 また、SAP システムの資格情報を設定します。 WCF クライアントは、構成から初期化されます。  
+2. クライアントのバインディングを指定することで、WCF クライアントのインスタンスを作成します。 クライアントのバインディングを指定するには、バインドと WCF クライアントを使用するエンドポイント アドレスを指定する必要があります。 コードで強制的に、または構成で宣言的に、これを行うことができます。 クライアントのバインディングを指定する方法の詳細については、次を参照してください。[のバインド、SAP システムのクライアントを構成する](../../adapters-and-accelerators/adapter-sap/configure-a-client-binding-for-the-sap-system.md)します。 次のコードでは、SAP システムの RFC を呼び出すために使用できる WCF クライアントを作成します。 また、SAP システムの資格情報を設定します。 WCF クライアントは、構成から初期化されます。  
   
    ```  
    RfcClient rfcClient = new RfcClient("SAPBinding_Rfc");  
@@ -88,13 +88,13 @@ ms.locfileid: "36967485"
    ```  
   
 ## <a name="creating-and-implementing-a-wcf-service-by-using-the-sap-adapter"></a>作成して、SAP アダプターを使用して WCF サービスを実装します。  
- 操作を受信する WCF サービス モデルを使用して、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]、(WCF サービス コントラクトとも呼ばれます) によって公開されるサービス コントラクトを表す .NET インターフェイスを生成する必要があります最初、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]操作。 これを行う方法の詳細については、[WCF クライアントまたは SAP ソリューションの成果物の WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-sap/generate-a-wcf-client-or-a-wcf-service-contract-for-sap-solution-artifacts.md)を参照してください。  
+ 操作を受信する WCF サービス モデルを使用して、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]、(WCF サービス コントラクトとも呼ばれます) によって公開されるサービス コントラクトを表す .NET インターフェイスを生成する必要があります最初、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]操作。 これを行う方法の詳細については、次を参照してください。 [WCF クライアントまたは SAP ソリューションの成果物の WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-sap/generate-a-wcf-client-or-a-wcf-service-contract-for-sap-solution-artifacts.md)します。  
   
  WCF サービスを実装するには、生成されたインターフェイスを実装します。 このクラスには、操作を処理し、アダプターに応答を返すビジネス ロジックが含まれています。 サービス ホストを使用して (**System.ServiceModel.ServiceHost**) このサービスのインスタンスをホストします。  
   
 #### <a name="to-create-and-implement-a-wcf-service"></a>作成して WCF サービスの実装  
   
-1. WCF サービス コントラクトとヘルパー クラスを生成します。 使用して、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]または svcutil.exe を使用する SAP システムの成果物を対象とした WCF サービス コントラクト (インターフェイス) を生成します。 WCF クライアントを生成する方法の詳細については、[WCF クライアントまたは SAP ソリューションの成果物の WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-sap/generate-a-wcf-client-or-a-wcf-service-contract-for-sap-solution-artifacts.md)を参照してください。  
+1. WCF サービス コントラクトとヘルパー クラスを生成します。 使用して、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]または svcutil.exe を使用する SAP システムの成果物を対象とした WCF サービス コントラクト (インターフェイス) を生成します。 WCF クライアントを生成する方法の詳細については、次を参照してください。 [WCF クライアントまたは SAP ソリューションの成果物の WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-sap/generate-a-wcf-client-or-a-wcf-service-contract-for-sap-solution-artifacts.md)します。  
   
 2. 手順 1. で生成されたインターフェイスとヘルパー クラスからの WCF サービスを実装します。 その操作を処理するメソッドが、SAP システムに、エラーを返す例外をスローできますデータ操作の処理エラーが発生した場合それ以外の場合、メソッドは、操作の適切な応答が (生成) クラスのインスタンスを返す必要があります。 次のように、WCF サービス クラスを属性する必要があります。  
   
@@ -155,7 +155,7 @@ ms.locfileid: "36967485"
   
    -   手順 5. で作成したバインドを使用します。  
   
-   -   接続の資格情報を含み、リスナーの接続を指定する URI を指定して (SAP ゲートウェイ、ゲートウェイ サービスとプログラム ID)、クエリ文字列にします。 SAP 接続 URI の詳細については、[SAP システム接続 URI の作成](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md)を参照してください。  
+   -   接続の資格情報を含み、リスナーの接続を指定する URI を指定して (SAP ゲートウェイ、ゲートウェイ サービスとプログラム ID)、クエリ文字列にします。 SAP 接続 URI の詳細については、次を参照してください。 [SAP システム接続 URI の作成](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md)です。  
   
    -   サービス コントラクトを指定します。 これは、WCF サービス コントラクトを表すインターフェイスの名前です。 Rfc、"Rfc"です。  
   

@@ -1,5 +1,5 @@
 ---
-title: '証明書の AddResource コマンド: |Microsoft Docs'
+title: AddResource コマンド:証明書 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,19 +12,19 @@ caps.latest.revision: 22
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2e6fc335b3765299ee1b26b40d235e55240a2b53
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5ef8ea4f43107683eda7ef7fc7d128b3f42c1a6b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36984947"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65360718"
 ---
-# <a name="addresource-command-certificate"></a>AddResource コマンド: 証明書
-使用する BizTalk アプリケーションには、セキュリティ証明書を追加するには**AddResource**コマンドを指定**System.BizTalk:Certificate**型パラメーター。 このコマンドが適切に機能するためには、ローカル コンピューターの "その他のユーザー" 証明書ストアに証明書が存在している必要があります。  
+# <a name="addresource-command-certificate"></a>AddResource コマンド:Certificate
+使用する BizTalk アプリケーションには、セキュリティ証明書を追加するには**AddResource**コマンドを指定**System.BizTalk:Certificate**型パラメーター。 このコマンドを実行するには、証明書は、ローカル コンピューター上の他のユーザー証明書ストアにある必要があります。  
   
- このコマンドを実行すると、該当する証明書が BizTalk 管理データベースに追加されます。 証明書は、BizTalk Server 管理コンソール (追加先アプリケーションのリソース フォルダー) にも表示されます。 使用するとさらに、証明書が一覧表示、 [ListApp コマンド](../core/listapp-command.md)します。  
+ このコマンドを実行すると、BizTalk 管理データベースに証明書が追加されます。 証明書は、BizTalk Server 管理コンソールで、追加したアプリケーションのリソース フォルダーにも表示されます。 使用するとさらに、証明書が一覧表示、 [ListApp コマンド](../core/listapp-command.md)します。  
   
- アプリケーションのインストール時、証明書が、ローカル コンピューターの "その他のユーザー" 証明書ストアにインポートされます。  
+ アプリケーションをインストールするときに、証明書は、ローカル コンピューター上の他のユーザー証明書ストアにインポートされます。  
   
 ## <a name="usage"></a>使用方法  
  **BTSTask AddResource** [**/applicationname は:**<em>値</em>] **/Type:System.BizTalk:Certificate** **[/overwrite]****「/Thumbprint」:"**<em>値</em>**"** [**/Server:**<em>値</em>] [**/データベース:**<em>値</em>]  
@@ -41,7 +41,7 @@ ms.locfileid: "36984947"
 |**/データベース**(または **/D**、「解説」を参照してください)|いいえ|BizTalk 管理データベースの名前。 指定されていない場合は、SQL Server のローカル インスタンスで実行されている BizTalk 管理データベースが使用されます。|  
   
 ## <a name="sample"></a>サンプル  
- **BTSTask AddResource applicationname: myapplication/Type: System.BizTalk:Certificate 上書き「/thumbprint」:"04 a2 8e 32 24 f9 36 b9 42 81 12 71 3a d2 ef db c7 9c 83 dc"/Server:MyDatabaseServer/Database:BizTalkMgmtDb**  
+ **BTSTask AddResource applicationname: myapplication/Type:System.BizTalk:Certificate  /Overwrite /Thumbprint:"04 a2 8e 32 24 f9 36 b9 42 81 12 71 3a d2 ef db c7 9c 83 dc" /Server:MyDatabaseServer /Database:BizTalkMgmtDb**  
   
 ## <a name="remarks"></a>コメント  
  パラメーターの大文字と小文字は区別されません。 パラメーター名は、すべて入力する必要はありません。最初の数文字 (一意に特定できるだけの文字数) を入力するだけで構いません。  

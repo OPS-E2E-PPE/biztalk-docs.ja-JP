@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f2783b8741a7f8a703ad8aae22db5b114ea20f0b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 031f963573d1780451306036f9954406c4196082
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37013139"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65369991"
 ---
 # <a name="configure-transaction-isolation-level-and-transaction-timeout-with-sql"></a>SQL を使用したトランザクション分離レベルとトランザクションのタイムアウトを構成します。
 (ポーリングと通知) の受信操作の実行中を使用して、[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]で[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]、トランザクション分離レベルとトランザクションのタイムアウト値を適切に構成する必要があります。 これを行うには :  
@@ -46,10 +46,10 @@ ms.locfileid: "37013139"
 
 12. 左側のウィンドウで、 **Wcf-custom トランスポートのプロパティ**を選択、 **sqlAdapterInboundTransactionBehavior**サービス**ServiceBehavior**します。 1 つの受信 (受信操作のメッセージ) は、分離レベルを制御する、sqlAdapterInboundTransactionBehavior を使用して、既定値は**ReadCommitted**します。  
 
-13. 右側のウィンドウで、 **Wcf-custom トランスポートのプロパティ**、適切な値を指定、 **transactionIsolationLevel**と**transactionTimeout**パラメーター。 次のトランザクション分離レベルのいずれかを選択することができます: **Serializable**、 **RepeatableRead**、 **ReadCommitted**、 **ReadUncommitted**、**スナップショット**、**混乱**、および**未指定**します。  
+13. 右側のウィンドウで、 **Wcf-custom トランスポートのプロパティ**、適切な値を指定、 **transactionIsolationLevel**と**transactionTimeout**パラメーター。 次のトランザクション分離レベルのいずれかを選択できます。**シリアル化可能な**、 **RepeatableRead**、 **ReadCommitted**、 **ReadUncommitted**、**スナップショット**、 **Chaos**、および**未指定**します。  
 
     > [!NOTE]
-    >  トランザクション分離レベルの既定値は**Serializable** WCF-SQL アダプターの受信と送信の両方の操作をします。 これらのトランザクション分離レベルについては、、**メンバー**セクションで[分離レベルの列挙体](http://go.microsoft.com/fwlink/?LinkId=126983)(http://go.microsoft.com/fwlink/?LinkId=126983)を参照してください。  
+    >  トランザクション分離レベルの既定値は**Serializable** WCF-SQL アダプターの受信と送信の両方の操作をします。 これらのトランザクション分離レベルについては、次を参照してください。、**メンバー**セクションで[分離レベルの列挙体](http://go.microsoft.com/fwlink/?LinkId=126983)(http://go.microsoft.com/fwlink/?LinkId=126983)します。  
 
      ![トランザクション分離レベルの設定](../../adapters-and-accelerators/adapter-sql/media/b39c180e-ca9f-48ca-9550-f4837826d00e.gif "b39c180e-ca9f-48ca-9550-f4837826d00e")  
 

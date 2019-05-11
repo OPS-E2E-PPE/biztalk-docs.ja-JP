@@ -12,12 +12,12 @@ caps.latest.revision: 28
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f42980d93c7872811ea26fb9fc21a97f7e4e8e2d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 469464edec3ca22a63ee5185a4371cb77c962cb2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36991323"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65363650"
 ---
 # <a name="development-best-practices-using-the-wcf-lob-adapter-sdk"></a>WCF LOB Adapter SDK を使用して開発のベスト プラクティス
 このトピックの「ベスト プラクティスを使用するには、アプリケーションおよびアダプターを向上させるためにします。  

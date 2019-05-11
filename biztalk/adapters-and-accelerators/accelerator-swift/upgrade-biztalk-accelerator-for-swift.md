@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fa934db02ba9f82134acd5c86da17c6ea240706e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 873a9d6ab13e152dadf73d20941da8e6e9ce725f
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37008219"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65529758"
 ---
 # <a name="upgrade-biztalk-accelerator-for-swift"></a>アップグレードの BizTalk Accelerator for SWIFT
 アップグレード[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef_md](../../includes/a4swift-currentversion-firstref-md.md)]BizTalk Server にします。 
@@ -26,7 +26,7 @@ ms.locfileid: "37008219"
 
 * アップグレードを実行しているユーザーは、BizTalk Server 管理者グループのメンバーである必要があります。
 * 実行すると、SQL Server (MSSQLSERVER) サービスが実行する必要があります、[!INCLUDE[A4SWIFT_CurrentVersion_abbrev_md](../../includes/a4swift-currentversion-abbrev-md.md)]をアップグレードします。
-* [!INCLUDE[A4SWIFT_CurrentVersion_abbrev_md](../../includes/a4swift-currentversion-abbrev-md.md)] へのアップグレード時にはサイレント インストールを実行しないでください。
+* アップグレードするサイレント インストールを実行しない[!INCLUDE[A4SWIFT_CurrentVersion_abbrev_md](../../includes/a4swift-currentversion-abbrev-md.md)]します。
 * BizTalk Server をアップグレードし、アップグレード[!INCLUDE[A4SWIFT_CurrentVersion_abbrev_md](../../includes/a4swift-currentversion-abbrev-md.md)]します。
 * BizTalk Server ランタイムをインストールする必要があります、[!INCLUDE[A4SWIFT_CurrentVersion_abbrev_md](../../includes/a4swift-currentversion-abbrev-md.md)]そのランタイム コンポーネントのインストールにアップグレードします。 前に、BizTalk Server ランタイムがインストールされていないかどうか、 [!INCLUDE[A4SWIFT_CurrentVersion_abbrev_md](../../includes/a4swift-currentversion-abbrev-md.md)] 、アップグレード、[!INCLUDE[A4SWIFT_CurrentVersion_abbrev_md](../../includes/a4swift-currentversion-abbrev-md.md)]コンポーネントはインストールされませんし、前のアセンブリをグローバル アセンブリ キャッシュ (GAC) からは削除されます。
 * インストールするときに[!INCLUDE[A4SWIFT_CurrentVersion_abbrev_md](../../includes/a4swift-currentversion-abbrev-md.md)]MessagePack がインストールされています。 以前のバージョン、MessagePack は、アップグレード中に置き換えられます。
@@ -39,7 +39,7 @@ ms.locfileid: "37008219"
 
 |                                                                                                       | [!INCLUDE[bts2016_md](../../includes/bts2016-md.md)] | [!INCLUDE[bts2013r2](../../includes/bts2013r2-md.md)] | BizTalk Server 2013 |
 |-------------------------------------------------------------------------------------------------------|------------------------------------------------------|-------------------------------------------------------|---------------------|
-| [!INCLUDE[A4SWIFT_CurrentVersion_abbrev_md](../../includes/a4swift-currentversion-abbrev-md.md)] 2013 |                         はい                          |                          はい                          |         いいえ          |
+| [!INCLUDE[A4SWIFT_CurrentVersion_abbrev_md](../../includes/a4swift-currentversion-abbrev-md.md)] 2013 |                         はい                          |                          [はい]                          |         いいえ          |
 | [!INCLUDE[A4SWIFT_CurrentVersion_abbrev_md](../../includes/a4swift-currentversion-abbrev-md.md)] 2010 |                          いいえ                          |                          はい                          |         はい         |
 
 ## <a name="upgrade-a4swift"></a>A4SWIFT をアップグレードします。
@@ -50,7 +50,7 @@ ms.locfileid: "37008219"
   
 3. プロジェクト、BizTalk アイテム、またはのいずれかを参照するアセンブリを展開解除、 [!INCLUDE[A4SWIFT_CurrentVersion_abbrev_md](../../includes/a4swift-currentversion-abbrev-md.md)] MessagePack アセンブリ。
 
-4. Visual Studio で、次の順序ですべての [!INCLUDE[A4SWIFT_CurrentVersion_abbrev_md](../../includes/a4swift-currentversion-abbrev-md.md)] アセンブリの展開を手動で解除します。
+4. Visual Studio で、手動で解除すべて[!INCLUDE[A4SWIFT_CurrentVersion_abbrev_md](../../includes/a4swift-currentversion-abbrev-md.md)]次の順序でアセンブリ。
 
 * Microsoft.Solutions.FinancialServices.SWIFT.FrrOrchestration
 * Microsoft.Solutions.FinancialServices.SWIFT.FrrSchemas
@@ -99,7 +99,7 @@ ms.locfileid: "37008219"
     
 ## <a name="upgrading-in-a-multi-server-environment"></a>マルチ サーバー環境でのアップグレード
 
-マルチ サーバー [!INCLUDE[A4SWIFT_CurrentVersion_abbrev_md](../../includes/a4swift-currentversion-abbrev-md.md)] 、すべてのサーバーで、環境が、BizTalk Server をアップグレードし、アップグレード[!INCLUDE[A4SWIFT_CurrentVersion_abbrev_md](../../includes/a4swift-currentversion-abbrev-md.md)]します。 次の順序でサーバーを移行します。
+マルチ サーバー [!INCLUDE[A4SWIFT_CurrentVersion_abbrev_md](../../includes/a4swift-currentversion-abbrev-md.md)] 、すべてのサーバーで、環境が、BizTalk Server をアップグレードし、アップグレード[!INCLUDE[A4SWIFT_CurrentVersion_abbrev_md](../../includes/a4swift-currentversion-abbrev-md.md)]します。 次の順序で、サーバーを移行するには。
 
 * BizTalk グループをホストするサーバー
 * 各処理ノード

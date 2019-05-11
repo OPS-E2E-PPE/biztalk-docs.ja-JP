@@ -13,12 +13,12 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7f7ff1e686fd8de344c4de4513fbda84003c69a8
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 90a937d53b9a8f09ad8ed20633cca1bedfefc6a5
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36982635"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65368115"
 ---
 # <a name="samples-for-the-sql-adapter"></a>SQL アダプタのサンプル
 
@@ -30,7 +30,7 @@ ms.locfileid: "36982635"
   
 - WCF チャネル モデルのサンプル  
   
-サンプルについては、「 [BizTalk Adapter Pack 2010: SQL アダプタ サンプル](https://www.microsoft.com/download/details.aspx?id=22455)します。 テーブル、データベースなどのサンプルで使用されるオブジェクトを作成するための SQL スクリプトと手順が含まれます。 
+サンプルについては、「 [BizTalk Adapter Pack 2010。SQL アダプタ サンプル](https://www.microsoft.com/download/details.aspx?id=22455)します。 テーブル、データベースなどのサンプルで使用されるオブジェクトを作成するための SQL スクリプトと手順が含まれます。 
 
 > [!NOTE]
 > [!INCLUDE[files-need-updated](../../includes/files-need-updated.md)]
@@ -47,7 +47,7 @@ ms.locfileid: "36982635"
 |      TypedPolling       |   アダプターを使用して SQL Server データベースで厳密に型指定されたポーリングを実行する方法を示します[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]します。   |
 |   FILESTREAMOperation   | アダプターを使用してデータベースを SQL Server 2008 の FILESTREAM 操作を実行する方法を示します[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]します。 |
 | IncrementalNotification | アダプターを使用して SQL Server データベースからインクリメンタル通知を受信する方法を示します[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]します。 |
-| Employee_PurchaseOrder  |                  サンプルに基づいて[チュートリアル 2: 従業員 - 発注プロセス SQL アダプターを使用して](tutorial-2-employee-purchase-order-process-using-the-sql-adapter.md)します。                  |
+| Employee_PurchaseOrder  |                  サンプルに基づいて[チュートリアル 2。従業員 - 発注プロセス SQL アダプターを使用して](tutorial-2-employee-purchase-order-process-using-the-sql-adapter.md)します。                  |
   
 ## <a name="wcf-service-model-samples"></a>WCF サービス モデルのサンプル   
   

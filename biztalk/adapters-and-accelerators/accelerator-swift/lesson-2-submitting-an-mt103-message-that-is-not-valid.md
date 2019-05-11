@@ -1,5 +1,5 @@
 ---
-title: 'レッスン 2: 無効な MT103 メッセージを送信する |Microsoft Docs'
+title: レッスン 2:無効な MT103 メッセージを送信する |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -18,14 +18,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8cb8f0539f3a832e3b54a6fa45b300558a8e39a1
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b686b0ba84d5069f739f129495ee14c7654645d8
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37014883"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65530332"
 ---
-# <a name="lesson-2-submitting-an-mt103-message-that-is-not-valid"></a>レッスン 2: 無効な MT103 メッセージを送信します。
+# <a name="lesson-2-submitting-an-mt103-message-that-is-not-valid"></a>レッスン 2:無効な MT103 メッセージを送信します。
 このレッスンでは、無効な MT103 メッセージを送信して、システム ツールを使用して、結果として得られるエラーのトラブルシューティングを行うします。  
   
 ### <a name="to-submit-an-mt103-message-that-is-not-valid"></a>無効な MT103 メッセージを送信するには  
@@ -56,4 +56,4 @@ ms.locfileid: "37014883"
   
 13. メッセージの詳細 ダイアログ ボックスの body ペインに表示されるメッセージは、メモ帳で開いた MT103_Invalid_Sample.txt に対応していることを確認します。  
   
-    続行する[レッスン 3: XML インスタンスをテスト](../../adapters-and-accelerators/accelerator-swift/lesson-3-testing-an-xml-instance.md)します。
+    続行する[レッスン 3。XML インスタンスをテスト](../../adapters-and-accelerators/accelerator-swift/lesson-3-testing-an-xml-instance.md)します。

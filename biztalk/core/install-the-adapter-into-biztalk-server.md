@@ -12,20 +12,20 @@ caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 13e810a14fec9b51c0d6b0ef1d7b55db234d0a0b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b8d6093776f0359e79731a3ba273e319e7cd3765
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37005627"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65332020"
 ---
-# <a name="install-the-adapter-into-biztalk-server"></a>BizTalk Server へのアダプターのインストール
-適切な [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] エントリがレジストリに書き込まれた後に、アダプターを BizTalk 管理データベースに追加する必要があります。 アダプターをこのデータベースに追加すると、アクティブに構成されたアダプターになり、正しく構成されている場合はメッセージを処理できます。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールを使用してアダプターをデータベースにインストールします。 データベース内のアダプターをインストールした後に、ホスト インスタンスを再起動します。  
+# <a name="install-the-adapter-into-biztalk-server"></a>BizTalk Server にアダプターをインストールします。
+適切な後[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]アダプターは BizTalk 管理データベースに追加する必要があります、レジストリに書き込まれたエントリ。 アダプターがこのデータベースに追加された後アダプターがアクティブに構成されているが正しく構成されている場合、メッセージを処理できます。 使用して、データベースにアダプターをインストールする、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソール。 データベースにアダプターをインストールした後、ホスト インスタンスを再起動します。  
 
 > [!NOTE]
->  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールで追加した内容を表示できるようにするには、アダプターを HKLM レジストリに正しく登録し、必要なアダプター インターフェイスを実装する必要があります。  
+>  追加するために表示される、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、アダプターが、HKLM レジストリに正しく登録されている必要があり、必要なアダプター インターフェイスを実装する必要があります。  
 
-### <a name="to-install-the-static-sample-adapter"></a>静的なサンプル アダプターをインストールするには  
+### <a name="to-install-the-static-sample-adapter"></a>サンプルの静的アダプターをインストールするには  
 
 1. をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、 をクリック**BizTalk Server 管理**します。  
 
@@ -47,7 +47,7 @@ ms.locfileid: "37005627"
 
 6. **[OK]** をクリックします。  
 
-    これで、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールの右ウィンドウにあるアダプターの一覧に静的アダプターが表示されます。  
+    静的アダプターの右側のウィンドウにあるアダプターの一覧が表示されます、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソール。  
 
 ### <a name="to-stop-and-restart-the-host-instance"></a>停止して、ホスト インスタンスを再起動するには  
 

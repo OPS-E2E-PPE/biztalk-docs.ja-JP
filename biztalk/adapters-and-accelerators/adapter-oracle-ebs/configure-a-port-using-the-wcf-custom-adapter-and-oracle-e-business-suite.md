@@ -13,12 +13,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ee32e77a5c30107a481d11ed9364f6db1d666b36
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d0d8c27421b02e183d8e9f3e1f72363cfbe1bcf3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37001003"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65376008"
 ---
 # <a name="configure-a-port-using-the-wcf-custom-adapter-and-oracle-e-business-suite"></a>Wcf-custom アダプターおよび Oracle E-business Suite を使用してポートを構成します。
 Wcf-custom 送信を構成し、Oracle E-business Suite を使用して、送信および受信操作を実行するポートを受信する方法、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]します。  
@@ -43,7 +43,7 @@ Wcf-custom 送信を構成し、Oracle E-business Suite を使用して、送信
   
 7. **Wcf-custom トランスポートのプロパティ** ダイアログ ボックスで、次の操作を行います。  
   
-   1. をクリックして、**全般** タブで、し、**アドレス (URI)** フィールドに、for Oracle E-business Suite 接続 URI を指定します。 接続 URI の詳細については、[Oracle E-business Suite 接続 URI の作成](../../adapters-and-accelerators/adapter-oracle-ebs/create-the-oracle-e-business-suite-connection-uri.md)を参照してください。  
+   1. をクリックして、**全般** タブで、し、**アドレス (URI)** フィールドに、for Oracle E-business Suite 接続 URI を指定します。 接続 URI の詳細については、次を参照してください。 [Oracle E-business Suite 接続 URI の作成](../../adapters-and-accelerators/adapter-oracle-ebs/create-the-oracle-e-business-suite-connection-uri.md)です。  
   
    2. **全般** タブで、**アクション**テキスト ボックスに、操作のアクションを入力します。 参照してください[メッセージと Oracle EBS アダプターのメッセージ スキーマ](messages-and-message-schemas-for-biztalk-adapter-for-oracle-e-business-suite.md)) の各操作のアクションの一覧。 たとえば、資産のアプリケーションの下で、インターフェイス テーブル (FA_BOOKS) に対する挿入操作を呼び出すアクションは。  
   
@@ -51,7 +51,7 @@ Wcf-custom 送信を構成し、Oracle E-business Suite を使用して、送信
       InterfaceTables/Insert/OFA/FA/FA_BOOKS  
       ```  
   
-   3. をクリックして、**バインド**] タブとの間、**バインドの種類**一覧で、[ **oracleEBSBinding**します。 によって公開されるさまざまなバインドのプロパティを指定することができます、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]します。 バインド プロパティの詳細については、[については、BizTalk Adapter for Oracle E-business Suite バインド プロパティを読み取る](../../adapters-and-accelerators/adapter-oracle-ebs/read-about-the-biztalk-adapter-for-oracle-e-business-suite-binding-properties.md)を参照してください。  
+   3. をクリックして、**バインド**] タブとの間、**バインドの種類**一覧で、[ **oracleEBSBinding**します。 によって公開されるさまざまなバインドのプロパティを指定することができます、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]します。 バインド プロパティの詳細については、次を参照してください。[については、BizTalk Adapter for Oracle E-business Suite バインド プロパティを読み取る](../../adapters-and-accelerators/adapter-oracle-ebs/read-about-the-biztalk-adapter-for-oracle-e-business-suite-binding-properties.md)します。  
   
    4. をクリックして、**資格情報**タブをクリックし、次のいずれかの操作を行います。  
   
@@ -103,11 +103,11 @@ Wcf-custom 送信を構成し、Oracle E-business Suite を使用して、送信
   
 8. **Wcf-custom トランスポートのプロパティ** ダイアログ ボックスで、次の操作を行います。  
   
-   1. をクリックして、**全般** タブで、し、**アドレス (URI)** フィールドに、for Oracle E-business Suite 接続 URI を指定します。 接続 URI の詳細については、[Oracle E-business Suite 接続 URI の作成](../../adapters-and-accelerators/adapter-oracle-ebs/create-the-oracle-e-business-suite-connection-uri.md)を参照してください。  
+   1. をクリックして、**全般** タブで、し、**アドレス (URI)** フィールドに、for Oracle E-business Suite 接続 URI を指定します。 接続 URI の詳細については、次を参照してください。 [Oracle E-business Suite 接続 URI の作成](../../adapters-and-accelerators/adapter-oracle-ebs/create-the-oracle-e-business-suite-connection-uri.md)です。  
   
-   2. をクリックして、**バインド** タブとの間、**バインドの種類**ドロップダウン リストで、 **oracleEBSBinding**します。 によって公開されるさまざまなバインドのプロパティを指定することができます、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]します。 バインド プロパティの詳細については、[については、BizTalk Adapter for Oracle E-business Suite バインド プロパティを読み取る](../../adapters-and-accelerators/adapter-oracle-ebs/read-about-the-biztalk-adapter-for-oracle-e-business-suite-binding-properties.md)を参照してください。  
+   2. をクリックして、**バインド** タブとの間、**バインドの種類**ドロップダウン リストで、 **oracleEBSBinding**します。 によって公開されるさまざまなバインドのプロパティを指定することができます、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]します。 バインド プロパティの詳細については、次を参照してください。[については、BizTalk Adapter for Oracle E-business Suite バインド プロパティを読み取る](../../adapters-and-accelerators/adapter-oracle-ebs/read-about-the-biztalk-adapter-for-oracle-e-business-suite-binding-properties.md)します。  
   
-   3. をクリックして、**動作** タブ、トランザクション分離レベルを設定します。 トランザクション分離レベルを設定する方法についての詳細については、[トランザクション分離レベルの構成と E-business Suite でのトランザクション タイムアウト](../../adapters-and-accelerators/adapter-oracle-ebs/configure-transaction-isolation-level-and-transaction-timeout-with-oracle-ebs.md)を参照してください。  
+   3. をクリックして、**動作** タブ、トランザクション分離レベルを設定します。 トランザクション分離レベルを設定する方法についての詳細については、次を参照してください。[トランザクション分離レベルの構成と E-business Suite でのトランザクション タイムアウト](../../adapters-and-accelerators/adapter-oracle-ebs/configure-transaction-isolation-level-and-transaction-timeout-with-oracle-ebs.md)します。  
   
    4. をクリックして、**他**タブをクリックし、次のいずれかの操作を行います。  
   

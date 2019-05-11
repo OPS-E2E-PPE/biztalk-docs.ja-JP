@@ -1,5 +1,5 @@
 ---
-title: サンプル スキーマ プレゼンテーション |Microsoft ドキュメント
+title: サンプル スキーマ プレゼンテーション |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,15 +15,15 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 12b857a6cfeb1846da44036729e52bb386265a9e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 43143625da545e6a0cdc377a12733d085b8c6a67
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22213906"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65530114"
 ---
 # <a name="sample-schema-presentation"></a>サンプル スキーマ プレゼンテーション
-次の図は、SWIFT インターチェンジの XSD スキーマのサンプルを示します。  
+次の図は、SWIFT 交換用のサンプルの XSD スキーマを示します。  
   
  ![](../../adapters-and-accelerators/accelerator-swift/media/intro-sampleschema.gif "Intro_SampleSchema")  
   

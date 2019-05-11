@@ -1,5 +1,5 @@
 ---
-title: プライマリ インポート データベースのデータをアーカイブ |Microsoft ドキュメント
+title: プライマリ インポート データベースのアーカイブ |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,35 +17,35 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c0fdfd55681fabd1b6cfc72f68b7e33150a121f2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0fff7fe5720df0b73ea84f9387d47a4d35b96051
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22230418"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65530623"
 ---
 # <a name="archiving-primary-import-database-data"></a>プライマリ インポート データベースのアーカイブ
-管理者は、プライマリ インポート データベースに格納されているアクティビティ インスタンス データをアーカイブする時間枠を指定できます。 この操作には、BAMPrimaryImport データベースの BAM_Metadata_Activities テーブルの OnlineWindowTimeUnit プロパティと OnlineWindowTimeLength プロパティを使用します。  
+管理者は、プライマリ インポート データベースのアクティビティ インスタンス データをアーカイブする時間枠を指定できます。 BAMPrimaryImport データベースの BAM_Metadata_Activities テーブルで、OnlineWindowTimeUnit プロパティと OnlineWindowTimeLength プロパティを使用するとします。  
   
- ビジネス ユーザーが複数のアクティビティを展開している場合、アクティビティごとに別の時間枠を指定することができます。 アクティビティの展開方法の詳細についてを参照してください「ビジネス アクティビティを定義する」*情報ワーカー ユーザー ガイド*です。  
+ ビジネス ユーザーが複数のアクティビティを配置した場合は、アクティビティごとに、異なる時間枠を指定できます。 アクティビティを展開する方法の詳細については、「ビジネス アクティビティを定義する」を参照してください*インフォメーション ワーカー ユーザー ガイド*します。  
   
- 次の表は、OnlineWindowTimeUnit プロパティと OnlineWindowTimeLength プロパティに使用できる値を示しています。  
+ 次の表では、OnlineWindowTimeUnit と OnlineWindowTimeLength 使用できる値について説明します。  
   
 |プロパティ|値|  
 |--------------|-----------|  
-|OnlineWindowTimeUnit|このプロパティには、month、day、hour、または minute を設定できます。 このプロパティの既定値は month です。|  
-|OnlineWindowTimeLength|このプロパティには、整数値を指定する必要があります。 このプロパティの既定値は 6 です。|  
+|OnlineWindowTimeUnit|このプロパティにすることができます。 1 か月、日、時間、または 1 分です。 このプロパティの既定値は、月です。|  
+|OnlineWindowTimeLength|このプロパティは整数である必要があります。 このプロパティの既定値は、6 です。|  
   
- BAM では、パーティションがオンライン時間帯 (OnlineWindowTimeLength と OnlineWindowTimeUnit で示される) よりも古くなったときに、パーティション単位で BAM プライマリ インポート データベースからデータを移動します。 たとえば、OnlineWindowTimeLength = 5 と OnlineWindowTimeUnit = day の場合、5 日以上経過しているパーティションが削除されます。  
+ BAM では、パーティションがオンライン ウィンドウ (現在の時刻 - OnlineWindowTimeLength の OnlineWindowTimeUnit) よりも古い場合に、パーティションで BAM プライマリ インポート データベースからデータが移動します。 たとえば、OnlineWindowTimeLength = 5 と OnlineWindowTimeUnit 5 日間が削除よりも 1 日、古いパーティションを = です。  
   
- BAM では、BAM アーカイブ データベースにアーカイブしたアクティビティ インスタンス データを移動します。 BAM アーカイブ データベースは、BizTalk で BAM を構成するときに指定します。 BizTalk BAM 構成については、次を参照してください。 [BAM 構成スキーマ](../core/bam-configuration-schema.md)です。  
+ BAM では、BAM アーカイブ データベースにアーカイブ済みアクティビティ インスタンス データを移動します。 BizTalk BAM 構成中にデータベースをアーカイブ、BAM を指定します。 BizTalk BAM 構成の詳細については、次を参照してください。 [BAM 構成スキーマ](../core/bam-configuration-schema.md)します。  
   
- BAM では、インスタンス データを処理してアクティビティ キューブを生成する、BAM キューブ更新のデータ変換サービス (DTS) パッケージを実行していない場合、アクティビティ インスタンスのデータをアーカイブしません。  
+ BAM キューブ更新アクティビティ キューブにインスタンス データを処理するデータ変換サービス (DTS) パッケージを実行していない場合、BAM はアクティビティ インスタンス データをアーカイブできません。  
   
- BAM データ保守 DTS パッケージの実行方法の詳細については、次を参照してください。[の BAM DTS パッケージ](../core/bam-dts-packages.md)です。  
+ BAM データ保守 DTS パッケージの実行方法の詳細については、次を参照してください。[の BAM DTS パッケージ](../core/bam-dts-packages.md)します。  
   
- 時間と共に、アクティビティ インスタンスのデータが追加されるにつれて、BAMArchive データベースのサイズが大きくなります。 データベース全体を切り詰める簡単な方法はありませんが、データベース トランザクション ログを定期的に切り詰めて必要なストレージを削減したり、BAMArchive データベース全体のバックアップとアーカイブを定期的に行ったりすることができます。 詳細については、SQL Server Books Online の「トランザクション ログの切り詰め」を参照してください。  
+ 時間の経過と共にアクティビティ インスタンス データが追加されるにつれて、BAMArchive データベースはサイズの増加はします。 データベース全体を切り捨てる簡単な方法はありませんが、記憶域の要件を削減するデータベースのトランザクション ログを定期的に切り捨てることができ、定期的にバックアップおよび BAMArchive データベース全体をアーカイブすることができます。 「トランザクション ログの切り捨て」でを参照してください。 SQL Server オンライン ブックの詳細についてはします。  
   
 ## <a name="see-also"></a>参照  
- [時間枠とタイム スライスのプロパティを定義します。](../core/defining-the-time-window-and-time-slice-properties.md)   
+ [Timewindow プロパティと Timeslice プロパティを定義します。](../core/defining-the-time-window-and-time-slice-properties.md)   
  [BAM 動的インフラストラクチャの管理](../core/managing-the-bam-dynamic-infrastructure.md)

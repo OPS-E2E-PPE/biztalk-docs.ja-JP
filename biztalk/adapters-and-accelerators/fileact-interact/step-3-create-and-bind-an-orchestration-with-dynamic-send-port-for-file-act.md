@@ -1,5 +1,5 @@
 ---
-title: '手順 3: を作成し、ファイル Act ストア アンド フォワード (プル) シナリオ用の動的送信ポートにオーケストレーションをバインド |Microsoft ドキュメント'
+title: 手順 3:作成および Fileact ストア アンド フォワード (プル) シナリオ用の動的送信ポートを使用したオーケストレーションのバインド |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,18 +12,18 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d7c1f1916ee7f63d9970b90d19b2a6866ed090f1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ad842ded1b7bee4fe2e23b6afcaf1ba03c99758d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22223762"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65365939"
 ---
-# <a name="step-3-create-and-bind-an-orchestration-with-dynamic-send-port--for-the-file-act-store-and-forward-pull-scenario"></a>手順 3: を作成し、ファイル Act ストア アンド フォワード (プル) シナリオ用の動的送信ポートにオーケストレーションをバインド
-手順を完了、[手順 2 C: FileAct ストア アンド フォワード (プル) シナリオの FILEACT 送信ポートを追加](../../adapters-and-accelerators/fileact-interact/step-2c-add-a-fileact-send-port-for-fileact-store-and-forward-pull-scenario.md)のこのセクションの手順を開始する前にします。
+# <a name="step-3-create-and-bind-an-orchestration-with-dynamic-send-port--for-the-file-act-store-and-forward-pull-scenario"></a>手順 3:作成および Fileact ストア アンド フォワード (プル) シナリオ用の動的送信ポートを使用したオーケストレーションのバインド
+手順を完了、[手順 2 C:FileAct ストア アンド フォワード (プル) シナリオに FILEACT 送信ポートの追加](../../adapters-and-accelerators/fileact-interact/step-2c-add-a-fileact-send-port-for-fileact-store-and-forward-pull-scenario.md)のこのセクションの手順を開始する前にします。
   
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
   
--   [手順 3: FileAct ストア アンド フォワード (プル) シナリオの動的送信ポート用のオーケストレーションを作成します。](../../adapters-and-accelerators/fileact-interact/step-3a-create-orchestration-for-dynamic-send-port-fileact-store-and-forward.md)  
+-   [手順 3 a:FileAct ストア アンド フォワード (プル) シナリオ用の動的送信ポートにオーケストレーションを作成します。](../../adapters-and-accelerators/fileact-interact/step-3a-create-orchestration-for-dynamic-send-port-fileact-store-and-forward.md)  
   
--   [手順 3 b: FileAct ストア アンド フォワード (プル) シナリオ用の動的送信ポートにオーケストレーションをバインド](../../adapters-and-accelerators/fileact-interact/step-3b-bind-orchestration-with-dynamic-send-for-fileact-store-and-forward.md)
+-   [手順 3 b:FileAct ストア アンド フォワード (プル) シナリオ用の動的送信ポートとオーケストレーションをバインドします。](../../adapters-and-accelerators/fileact-interact/step-3b-bind-orchestration-with-dynamic-send-for-fileact-store-and-forward.md)

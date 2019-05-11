@@ -1,5 +1,5 @@
 ---
-title: '手順 1: ヘッダーと確認スキーマの追加 |Microsoft Docs'
+title: 手順 1:ヘッダーと確認スキーマの追加 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ae0712e2ee4498b8f6f2eb8cb9527aa8ee8e4582
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 87e470abd9e8e8d71f657d789089caefa40dc1e4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37011317"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65289042"
 ---
-# <a name="step-1-add-header-and-acknowledgment-schemas"></a>手順 1: ヘッダーと確認スキーマを追加します。
+# <a name="step-1-add-header-and-acknowledgment-schemas"></a>手順 1:ヘッダーと確認スキーマを追加します。
 この手順では、BTAHL72XCommon プロジェクト テンプレートに基づいて新しいプロジェクトを作成します。 このテンプレートには、メッセージ ヘッダー (MSH_25_GLO_DEF.xsd) および受信確認 (ACK_24_GLO_DEF.xsd) の 3 つの一般的なスキーマが含まれています (ACK_25_GLO_DEF.xsd) とします。 そのためのプロジェクトでこれらのスキーマを含める必要がありますを BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) ビルドまたはメッセージ ヘッダーと受信確認を正しく検証します。 このプロセスは、すべてのスキーマ バージョンの間で共通[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]2.X。  
   
  アセンブリに割り当てること、およびアセンブリを展開しても強力なキーを作成します。 強力なキーでは、アセンブリのセキュリティと id を提供します、展開に必要です。 アセンブリを展開するときに、構成データベース (BizTalk 管理データベースとも呼ばれます) と、グローバル アセンブリ キャッシュ (GAC) に格納されます。  
@@ -69,4 +69,4 @@ ms.locfileid: "37011317"
     > [!NOTE]
     >  デプロイの適切なメッセージが表示されない場合は、使用[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]デプロイのトラブルシューティングを行う。  
   
-    続行する[手順 2: v2.3.1 の一般的なスキーマを追加](../../adapters-and-accelerators/accelerator-hl7/step-2-add-common-schemas-for-v2-3-1.md)します。
+    続行する[手順 2。V2.3.1 の一般的なスキーマを追加](../../adapters-and-accelerators/accelerator-hl7/step-2-add-common-schemas-for-v2-3-1.md)します。

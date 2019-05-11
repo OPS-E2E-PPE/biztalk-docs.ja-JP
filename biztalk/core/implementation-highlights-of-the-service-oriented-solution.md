@@ -1,5 +1,5 @@
 ---
-title: サービスの実装の要点指向ソリューション |Microsoft ドキュメント
+title: サービスの実装の要点指向のソリューション |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,32 +16,32 @@ caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7c593c24c72e5666525001e6a52e2b0bf6eac2de
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 47cc270e442964d46307a81c097df18085696107
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22257754"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65332501"
 ---
-# <a name="implementation-highlights-of-the-service-oriented-solution"></a>指向ソリューションのサービスの実装の要点
-ソリューションは、特定のコンテキストの特定の問題を解決します。 サービス指向ソリューションも例外ではなく、Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] とそのシナリオに固有のソリューションです。 Woodgrove Bank シナリオの詳細については、次を参照してください。[サービス指向ソリューションを理解する](../core/understanding-the-service-oriented-solution.md)です。  
+# <a name="implementation-highlights-of-the-service-oriented-solution"></a>サービスの実装の要点指向のソリューション
+ソリューションでは、特定のコンテキストで特定の問題は解決します。 サービス指向ソリューションは例外ではありませんし、Microsoft に固有[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]とシナリオ。 Woodgrove Bank シナリオの詳細については、次を参照してください。[サービス指向ソリューションを理解する](../core/understanding-the-service-oriented-solution.md)します。  
   
- シナリオを開発する際、応答時間を許容できるレベルに減らす上でボトルネックになる領域がいくつかあります。 アダプタを使用してメッセージをバックエンド システムに送信すると、応答を返す待機時間が長くなります。 通常、アダプタ自体の待機時間は非常に短いものです。 ただし、BizTalk の分散アーキテクチャには、メッセージ ボックスを使用してオーケストレーションのホスト インスタンスと通信するアダプタが必要です。 このため、データベースへのラウンド トリップが発生して、待機時間が影響を受けます。 そのため、インライン バージョンのソリューション (最速のバージョン) は、オーケストレーション自体がバックエンド システムを直接呼び出すようにアダプタの機能を構築します。 バックエンド システムが 3 種類あるため、3 つの異なるメカニズムを使用して、バックエンド システムと通信する可能性があります。  
+ シナリオの開発中に、いくつかの領域は、応答時間を許容できるレベルに削減するためにボトルネックになることがわかりました。 アダプターを使用して、バックエンド システムにメッセージを送信すると、応答の取得に長い待ち時間が導入されています。 一般的に、アダプタ自体は非常に低待機時間を提供します。 ただし、BizTalk の分散アーキテクチャでは、メッセージ ボックスを使用してオーケストレーションのホスト インスタンスとの通信にアダプターが必要です。 このため、データベースへのラウンド トリップが発生して、待機時間が影響を受けます。 このため、ソリューション (最速のバージョン) ビルドのインライン バージョン、オーケストレーション自体のアダプター機能は、バックエンド システムを直接呼び出します。 次の 3 つの異なるバックエンド システムでは、可能性のあるバックエンド システムとの通信に次の 3 つの異なるメカニズムを意味します。  
   
- パフォーマンスの問題が発生した別の領域では、エンタープライズ シングル サインオン (SSO) から構成データを取得していました。 取得時間を短縮する一方で利便性や一般性を保持するため、このソリューションでは、構成値にローカル キャッシュを使用します。 SSO を使用しても、構成データを簡単に管理できます。 待機時間とパフォーマンスの要件を満たすホスト インスタンスを追加する場合、ホスト インスタンスを実行するサーバーの設定を変更する必要はありません。  
+ パフォーマンスの問題のことを証明した別の領域は、構成データからエンタープライズ シングル サインオン (SSO) を取得されました。 取得時間を短縮する一方、利便性や一般性を保持するには、ソリューションは、構成値をローカル キャッシュを使用します。 SSO を使用すると、構成データの簡単な管理もできます。 待機時間とパフォーマンス要件を満たすホスト インスタンスを追加では、ホスト インスタンスを実行するサーバー上の設定を変更する必要はありません。  
   
- このソリューションの他の例外的な要素では、コードから直接パイプラインを呼び出します。 このため、カスタム パイプライン コンポーネントを再利用できます。  
+ コードから直接パイプラインの呼び出しは、ソリューションの別の例外的な要素です。 これにより、カスタム パイプライン コンポーネントの再利用できます。  
   
- 最後に、このソリューションの速度を少しでも上げたい場合、複数の BizTalk Server 設定を変更できます。  
+ 最後に、でも上げたい場合は、ソリューションの速度の最後のビットを変更することがいくつかの BizTalk Server の設定があります。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [バック エンド呼び出しのインライン展開](../core/inlining-back-end-invocation.md)  
+-   [バックエンドの呼び出しのインライン化](../core/inlining-back-end-invocation.md)  
   
--   [指向ソリューションのサービスで SSO の効率的な使用](../core/using-sso-efficiently-in-the-service-oriented-solution.md)  
+-   [サービスで効率的に SSO を使用して指向ソリューション](../core/using-sso-efficiently-in-the-service-oriented-solution.md)  
   
--   [サービスからパイプラインを使用して指向ソリューション](../core/using-pipelines-from-the-service-oriented-solution.md)  
+-   [サービスからのパイプラインを使用して指向ソリューション](../core/using-pipelines-from-the-service-oriented-solution.md)  
   
--   [チューニング サービス指向ソリューション](../core/tuning-the-service-oriented-solution.md)  
+-   [チューニング、サービス指向ソリューション](../core/tuning-the-service-oriented-solution.md)  
   
 -   [トランスポートの種類の分離と処理](../core/decoupling-transport-type-and-processing.md)

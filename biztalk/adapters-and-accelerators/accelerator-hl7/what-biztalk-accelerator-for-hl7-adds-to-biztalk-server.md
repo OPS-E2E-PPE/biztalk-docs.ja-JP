@@ -33,12 +33,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1ab7cd2d5abe126cc246be678c192c037ee48c90
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8de4841b6ad2f3904dbd3a2c3b94e6bb8c803548
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36980059"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65285320"
 ---
 # <a name="what-biztalk-accelerator-for-hl7-adds-to-biztalk-server"></a>BizTalk Server に追加する BizTalk Accelerator 用 HL7
 Microsoft BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) ビルドを[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]医療の統合システムにシステムを統合します。 医療の組織に必要な機能を追加します。  
@@ -66,7 +66,7 @@ Microsoft BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../
 ## <a name="validation"></a>検証  
  [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] HL7 V2 の検証を実行します。メッセージの X[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]を実行できません。 [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] HL7 メッセージのヘッダーの構文とスキーマの検証を自動的に実行し、自動的に HL7 メッセージの本文の一部の構造の検証を実行します。 [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] その機能を有効にした場合に、HL7 メッセージの本文のスキーマの検証を実行します (を参照してください[検証の設定](../../adapters-and-accelerators/accelerator-hl7/validation-settings.md))。  
   
- HL7 でエンコードされたメッセージの本文の検証には、スキーマ、データ形式、いくつかのヘッダーと本文フィールド、および列挙値が含まれています。 2. XML メッセージの検証には、標準の XML 検証である、そのスキーマに対して検証が含まれています。 詳細については、[BTAHL72X フラット ファイル処理](../../adapters-and-accelerators/accelerator-hl7/btahl72x-flat-file-processing.md)と[BTAHL72XML 処理](../../adapters-and-accelerators/accelerator-hl7/btahl72xml-processing.md)を参照してください。  
+ HL7 でエンコードされたメッセージの本文の検証には、スキーマ、データ形式、いくつかのヘッダーと本文フィールド、および列挙値が含まれています。 2. XML メッセージの検証には、標準の XML 検証である、そのスキーマに対して検証が含まれています。 詳細については、次を参照してください。 [BTAHL72X フラット ファイル処理](../../adapters-and-accelerators/accelerator-hl7/btahl72x-flat-file-processing.md)と[BTAHL72XML 処理](../../adapters-and-accelerators/accelerator-hl7/btahl72xml-processing.md)します。  
   
 ## <a name="auto-acknowledgment"></a>自動受信確認  
  HL7 に受信確認 (ACK) メッセージを要求するメッセージング システムの信頼性を確保することがあります[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]構成設定に基づいて自動的に生成されます。  

@@ -19,18 +19,18 @@ caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 37de5e1153e9d361b76900ca206351e8b9549dc3
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5e59442920c83b55e79692716ef5f5a447efd716
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36991971"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65333835"
 ---
 # <a name="how-to-terminate-suspended-orchestration-instances"></a>中断したオーケストレーション インスタンスを終了する方法
-中断したオーケストレーション インスタンスまたはポートは、BizTalk Server 管理コンソールのクエリ結果ペインまたはプレビュー ペインから終了できます。  
+すべて中断したオーケストレーション インスタンスまたはクエリ結果ペインまたはプレビュー ペインで、BizTalk Server 管理コンソールからのポートを終了することができます。  
   
 > [!NOTE]
->  順次配送送信ポートの各インスタンスは、関連付けられているいくつかのメッセージがあります。 誤終了やデータ損失を防ぐために、インスタンスを終了する前にこのような関連付けをすべて確認してください。  
+>  順次配送送信ポートの各インスタンスは、関連付けられているいくつかのメッセージがあります。 誤終了やデータの損失を防ぐためには、必ず、インスタンスを終了する前にこのようなすべての関連付けを確認ください。  
   
 ## <a name="prerequisites"></a>前提条件  
  この手順を実行する BizTalk Server Operators グループのメンバーとしてログオンする必要があります。  
@@ -39,7 +39,7 @@ ms.locfileid: "36991971"
   
 1. クリックして**開始**、 をクリックして**プログラム**、 をクリックして[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリックします**BizTalk Server 管理**します。  
   
-2. コンソール ツリーで、[!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)] を展開し、[BizTalk グループ] をクリックします。  
+2. コンソール ツリーで、展開[!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]、し、[BizTalk グループ] をクリックします。  
   
 3. 詳細ウィンドウでをクリックして、**新しいクエリ**タブ。  
   

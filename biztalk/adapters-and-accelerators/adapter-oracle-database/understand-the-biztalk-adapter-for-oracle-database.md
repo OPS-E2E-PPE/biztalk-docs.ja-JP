@@ -25,12 +25,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 97fda25d77571a3c0128317a557e5f9d15bbc472
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6233044306df0ae03d3d1dd6b1a65b75129d1c37
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36994619"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65375879"
 ---
 # <a name="understand-the-biztalk-adapter-for-oracle-database"></a>Oracle データベースの BizTalk アダプターを理解します。
 [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]外部システムと対話するためにサービス指向のプログラムによるアクセスを使用します。 アダプターは、次の利点をクライアントに提供します。  
@@ -41,7 +41,7 @@ ms.locfileid: "36994619"
   
 - **Lob の間でのエクスペリエンス、統一された**します。 WCF を使用して、アダプターを標準化および[!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)]、し、そのため、LOB システムへのアクセスのエクスペリエンスの一貫性を提供します。  
   
-  前述のように、アダプターは WCF LOB Adapter SDK の上に構築されます。 WCF LOB Adapter SDK は、さまざまな BizTalk Server および Microsoft Office などのクライアント アプリケーションが使用できる統合アダプターを構築するための共通の基盤を提供します。 WCF LOB Adapter SDK は、Windows Communication Foundation (WCF) チャネルとしての統合アダプターを公開することで、Microsoft のサービスを使用したアダプターの戦略を配置します。 WCF LOB Adapter SDK の詳細については、[WCF LOB Adapter SDK ドキュメント](../../adapters-and-accelerators/wcf-lob-adapter-sdk/microsoft-wcf-line-of-business-adapter-sdk-documentation.md)を参照してください。
+  前述のように、アダプターは WCF LOB Adapter SDK の上に構築されます。 WCF LOB Adapter SDK は、さまざまな BizTalk Server および Microsoft Office などのクライアント アプリケーションが使用できる統合アダプターを構築するための共通の基盤を提供します。 WCF LOB Adapter SDK は、Windows Communication Foundation (WCF) チャネルとしての統合アダプターを公開することで、Microsoft のサービスを使用したアダプターの戦略を配置します。 WCF LOB Adapter SDK の詳細については、次を参照してください。 [WCF LOB Adapter SDK ドキュメント](../../adapters-and-accelerators/wcf-lob-adapter-sdk/microsoft-wcf-line-of-business-adapter-sdk-documentation.md)します。
   
   Oracle データベースで操作を実行するには、アダプター クライアントは、関連するテーブル、関数、およびプロシージャにアクセスする必要があります。 データベース テーブルとは、Oracle データベース内のストレージの基本単位です。 外部のアプリケーションでは、追加したり、SQL ステートメントを使用してテーブルからデータを削除することができます。 アプリケーションは、ビュー、関数、およびプロシージャを使用して、テーブル内のデータをアクセスもできます。 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]、アダプター クライアントは、テーブル、プロシージャ、パッケージ、ビュー、および Oracle データベースでこのようなその他の項目などの成果物を参照できます。 アダプター クライアントは、成果物がソリューションの必要があり、それらの成果物のメタデータの取得を選択できます。 これにより、ユーザーにアクセスし、Oracle データベースで、成果物の操作を実行できます。  
   

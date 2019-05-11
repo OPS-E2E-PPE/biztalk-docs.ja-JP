@@ -16,15 +16,15 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1c527ea9e00cf089390749e93030e8536a80b29b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1d4413eb7dde054fa6b15899c35e037988476a6e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37008587"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65282966"
 ---
 # <a name="messaging-samples"></a>メッセージングのサンプル
-The Microsoft®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]ソフトウェア開発キット (SDK) には、メッセージング機能を示すサンプルが含まれています。 ここでは、それらのサンプルで示される機能に関する詳細、サンプルの構築と実行の手順、および期待される効果について説明します。  
+The Microsoft®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]ソフトウェア開発キット (SDK) には、メッセージング機能を示すサンプルが含まれています。 ここでは、これらのサンプルを構築して、サンプルでは、および予想される結果を実行している手順で示されている機能の詳細を示します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

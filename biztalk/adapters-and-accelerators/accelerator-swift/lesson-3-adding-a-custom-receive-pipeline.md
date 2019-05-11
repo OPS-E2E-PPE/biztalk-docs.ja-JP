@@ -15,19 +15,19 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a5238dac95df214a25c130369b134bc155212516
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8f4d7aa1ccb2ee3dc7b76ca081b2de750bdaa6d5
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36993747"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65530323"
 ---
 # <a name="lesson-3-adding-a-custom-receive-pipeline"></a>レッスン 3: カスタム受信パイプラインを追加します。
 このレッスンでは、BizTalk パイプライン デザイナを使用してカスタム受信パイプラインを作成します。 カスタム受信パイプラインは、アダプターが前に、メッセージを受信した後に、メッセージで実行されるパイプライン[!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)]メッセージ ボックス データベースに公開します。  
   
  SWIFT 逆アセンブラー (逆アセンブラー) コンポーネントを使用するカスタム パイプラインを構成します。 SWIFT 逆アセンブラーでは、SWIFT 形式のフラット ファイルと変換、または解析、SWIFT、XML ベースの表現では、メッセージの内容を[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]消費することができます。  
   
- 前の手順で追加した MT103 ランタイム スキーマ ([レッスン 2: プロジェクト参照を追加する](../../adapters-and-accelerators/accelerator-swift/lesson-2-adding-project-references.md)) は、変換に使用する形式です。  
+ 前の手順で追加した MT103 ランタイム スキーマ ([レッスン 2。プロジェクト参照を追加する](../../adapters-and-accelerators/accelerator-swift/lesson-2-adding-project-references.md)) は、変換に使用する形式です。  
   
 ### <a name="to-create-a-new-custom-receive-pipeline"></a>新しいカスタム受信パイプラインを作成するには  
   
@@ -41,4 +41,4 @@ ms.locfileid: "36993747"
   
    BizTalk パイプライン デザイナーで空のパイプラインが表示されます。 Visual Studio ではソリューション エクスプ ローラーに新しいパイプラインも SWIFTPipelines プロジェクトの下に追加します。  
   
-   続行する[レッスン 4: SWIFT アセンブラーと逆アセンブラーをツールボックスに追加する](../../adapters-and-accelerators/accelerator-swift/lesson-4-adding-the-swift-assembler-and-disassembler-to-the-toolbox.md)します。
+   続行する[レッスン 4。SWIFT アセンブラーと逆アセンブラーをツールボックスに追加する](../../adapters-and-accelerators/accelerator-swift/lesson-4-adding-the-swift-assembler-and-disassembler-to-the-toolbox.md)します。

@@ -12,20 +12,20 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f4243973f6e6b04cddec14261d5b1acedff4b9e0
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: cea9379337797daec243f2d40b15f183c6f54425
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36989163"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65369323"
 ---
 # <a name="invoke-table-valued-functions-in-sql-server-by-using-the-wcf-service-model"></a>WCF サービス モデルを使用して SQL Server でのテーブル値関数を呼び出す
-使用することができます、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]で SQL Server でのテーブル値関数を呼び出すための WCF サービス モデルを使用して .NET アプリケーション。 アダプターは、SQL サーバー上で直接呼び出すことができるメソッドとして、テーブル値関数を公開します。 アダプターがスカラー関数をサポートする方法の詳細については、[SQL アダプターを使用して SQL Server での Execute Table-Valued 関数](../../adapters-and-accelerators/adapter-sql/execute-table-valued-functions-in-sql-server-using-the-sql-adapter.md)を参照してください。  
+使用することができます、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]で SQL Server でのテーブル値関数を呼び出すための WCF サービス モデルを使用して .NET アプリケーション。 アダプターは、SQL サーバー上で直接呼び出すことができるメソッドとして、テーブル値関数を公開します。 アダプターがスカラー関数をサポートする方法の詳細については、次を参照してください。 [SQL アダプターを使用して SQL Server での Execute Table-Valued 関数](../../adapters-and-accelerators/adapter-sql/execute-table-valued-functions-in-sql-server-using-the-sql-adapter.md)します。  
   
- このトピックでは、SQL Server データベースで TVF_EMPLOYEE 関数を呼び出す方法を示します。 TVF_EMPLOYEE 関数は、従業員の指定、**従業員**テーブルが表示され、従業員のレコードを返します。 TVF_EMPLOYEE 関数と**従業員**サンプルで提供される SQL スクリプトを実行してテーブルが作成されます。 詳細については、[アダプタ サンプル](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md)を参照してください。  
+ このトピックでは、SQL Server データベースで TVF_EMPLOYEE 関数を呼び出す方法を示します。 TVF_EMPLOYEE 関数は、従業員の指定、**従業員**テーブルが表示され、従業員のレコードを返します。 TVF_EMPLOYEE 関数と**従業員**サンプルで提供される SQL スクリプトを実行してテーブルが作成されます。 詳細については、次を参照してください。[アダプタ サンプル](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md)します。  
   
 ## <a name="about-the-examples-used-in-this-topic"></a>このトピックで使用する例について  
- このトピックの例で TVF_EMPLOYEE テーブル値関数が呼び出される、**従業員**テーブル。 TVF_EMPLOYEE 関数と**従業員**サンプルで提供される SQL スクリプトを実行してテーブルが作成されます。 サンプルについては、 **TableFunction_ServiceModel**、これは、このトピックに基づいてがで提供されていることも、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]サンプル。 詳細については、[アダプタ サンプル](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md)を参照してください。  
+ このトピックの例で TVF_EMPLOYEE テーブル値関数が呼び出される、**従業員**テーブル。 TVF_EMPLOYEE 関数と**従業員**サンプルで提供される SQL スクリプトを実行してテーブルが作成されます。 サンプルについては、 **TableFunction_ServiceModel**、これは、このトピックに基づいてがで提供されていることも、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]サンプル。 詳細については、次を参照してください。[アダプタ サンプル](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md)します。  
   
 ## <a name="the-wcf-client-class"></a>WCF クライアント クラス  
  SQL Server を使用してスカラー関数を呼び出すために生成された WCF クライアントの名前、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]次の表に記載されています。  
@@ -68,7 +68,7 @@ public partial class TableValuedFunctions_dboClient : System.ServiceModel.Client
  
 1. Visual c# プロジェクトを作成[!INCLUDE[btsVStudioNoVersion](../../includes/btsVStudioNoVersion-md.md)]です。 このトピックでは、コンソール アプリケーションを作成します。  
   
-2. WCF クライアント クラスを生成、 **TVF_EMPLOYEE**スカラー関数。 WCF クライアント クラスを生成する詳細については、[SQL Server のアイテムの WCF クライアントまたは WCF サービス コントラクトを生成](generate-a-wcf-client-or-wcf-service-contract-for-sql-server-artifacts.md)を参照してください。  
+2. WCF クライアント クラスを生成、 **TVF_EMPLOYEE**スカラー関数。 WCF クライアント クラスを生成する詳細については、次を参照してください。 [SQL Server のアイテムの WCF クライアントまたは WCF サービス コントラクトを生成](generate-a-wcf-client-or-wcf-service-contract-for-sql-server-artifacts.md)します。  
   
 3. ソリューション エクスプ ローラーへの参照を追加`Microsoft.Adapters.Sql`と`Microsoft.ServiceModel.Channels`します。  
   
@@ -84,7 +84,7 @@ public partial class TableValuedFunctions_dboClient : System.ServiceModel.Client
     このスニペットで`TableValuedFunctions_dboClient`SqlAdapterBindingClient.cs で定義されている WCF クライアントです。 このファイルがによって生成された、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]します。 `SqlAdapterBinding_TableValuedFunctions_dbo` クライアント エンドポイント構成の名前を指定され、app.config で定義されます。このファイルがによって生成されても、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]バインドのプロパティとその他の構成設定が含まれています。  
   
    > [!NOTE]
-   >  このスニペットでは、構成ファイルからバインドおよびエンドポイント アドレスを使用します。 これらの値は、コードで明示的に指定できます。 クライアント バインディングを指定し、さまざまな方法の詳細については、[SQL アダプタのクライアントのバインディングを構成する](configure-a-client-binding-for-the-sql-adapter.md)を参照してください。  
+   >  このスニペットでは、構成ファイルからバインドおよびエンドポイント アドレスを使用します。 これらの値は、コードで明示的に指定できます。 クライアント バインディングを指定し、さまざまな方法の詳細については、次を参照してください。 [SQL アダプタのクライアントのバインディングを構成する](configure-a-client-binding-for-the-sql-adapter.md)します。  
   
 5. 次のスニペットで説明されているように、クライアントを開きます。  
   

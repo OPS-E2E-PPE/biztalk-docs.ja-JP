@@ -1,5 +1,5 @@
 ---
-title: BizTalk Server の AS2 機能 |Microsoft ドキュメント
+title: BizTalk Server の AS2 機能 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,17 +12,17 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c72e8acf77f57c18a87a44de365ea1ab611e49c1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0511c6f134588097078d99f86261f283880f3fe0
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22231002"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65530417"
 ---
 # <a name="biztalk-server-as2-functionality"></a>BizTalk Server の AS2 機能
-[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は、BizTalk Server のコア機能と AS2 固有の BizTalk Server 機能を組み合わせて AS2 メッセージを処理します。 したがって、BizTalk Server は、コア メッセージング機能を活用すると同時に、AS2 メッセージングに固有の処理を実行することができます。 EDI ドキュメントが AS2 を介してトランスポートされるとき、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の EDI 固有の機能の一部も使用されます。  
+[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] BizTalk Server の機能と AS2 固有の BizTalk Server 機能のコアの組み合わせを使用して AS2 メッセージを処理します。 これにより、BizTalk Server では、コア メッセージング機能を活用しながら、AS2 メッセージングに固有の処理を実行できます。 EDI ドキュメントは EDI 固有の機能の一部には、AS2 経由で転送される場合[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]も使用されます。  
   
- このセクションでは、基本的な AS2 メッセージングと [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] における実装方法について説明します。 また、AS2 処理、受信側 AS2 処理、および送信側 AS2 処理に取引先アグリーメント定義を利用する方法についても説明します。  
+ このセクションでは、基本的な AS2 メッセージングについて説明しますとどのように[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]がこれを実装します。 また、パートナーの取引先アグリーメント定義を利用して、AS2 処理、受信側 AS2 処理、および送信側 AS2 処理の方法も説明します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
@@ -32,4 +32,4 @@ ms.locfileid: "22231002"
   
 ## <a name="see-also"></a>参照  
  [BizTalk Server の EDI 機能](../core/biztalk-server-edi-functionality.md)   
- [AS2 ソリューションのアーキテクチャ](../core/as2-solution-architecture.md)
+ [AS2 ソリューション アーキテクチャ](../core/as2-solution-architecture.md)

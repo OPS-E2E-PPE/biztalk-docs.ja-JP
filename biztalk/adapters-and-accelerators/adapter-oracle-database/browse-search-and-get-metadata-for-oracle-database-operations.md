@@ -24,12 +24,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ab8c821f489a510d87fa06546f45a319608b5065
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e761e81e4f0aaee56611a13e9c84e78056f4da0c
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37005355"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65529632"
 ---
 # <a name="browse-search-and-get-metadata-for-oracle-database-operations"></a>参照、検索、および Oracle データベース操作のメタデータを取得
 このセクションでは、使用する方法についての情報を提供します。 [!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]、 [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]、および[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]します。 これらを使用して[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]ことができます、コンポーネント。  
@@ -132,7 +132,7 @@ ms.locfileid: "37005355"
 |-----------------------|--------------------|  
 |_ (アンダースコア)|1 文字と一致します。<br /><br /> たとえば、<curses.h は AB、AC、AD と一致します。|  
 |% (割合)|0 個以上の文字と一致します。<br /><br /> たとえば、%a、AB ABC に一致します。|  
-|\ (エスケープ)|% と _ の特別な意味でのエスケープします。<br /><br /> たとえば、A\\_B A_B に一致します。|  
+|\ (escape)|% と _ の特別な意味でのエスケープします。<br /><br /> たとえば、A\\_B A_B に一致します。|  
   
 > [!NOTE]
 >  エスケープ文字は、ワイルドカードではなく、通常の文字として、ワイルドカードを解釈することを示すワイルドカード文字の前に挿入されている文字です。  
@@ -166,7 +166,7 @@ ms.locfileid: "37005355"
  使用することができます、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]または[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]Oracle データベース アイテムを選択したスキーマを生成します。 参照を呼び出したいアーティファクトの検索し、それらの成果物のスキーマを生成し、Oracle データベース、スキーマに準拠したメッセージを送信できます。 使用して Oracle データベースからメタデータを取得する次の手順を実行、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]します。  
   
 > [!NOTE]
->  そのカテゴリのサブ-ツリー内のすべての操作を取得するカテゴリ ノードを選択するなどを選択 (テーブルのすべての操作のスキーマの生成) をテーブル全体またはテーブル (たとえば、Insert および Delete) の特定の操作を選択にテーブルに対する操作のみのスキーマを生成します。 ノードの詳細については、[メタデータ ノード IDs3](../../adapters-and-accelerators/adapter-oracle-database/metadata-node-ids3.md)を参照してください。  
+>  そのカテゴリのサブ-ツリー内のすべての操作を取得するカテゴリ ノードを選択するなどを選択 (テーブルのすべての操作のスキーマの生成) をテーブル全体またはテーブル (たとえば、Insert および Delete) の特定の操作を選択にテーブルに対する操作のみのスキーマを生成します。 ノードの詳細については、次を参照してください。[メタデータ ノード IDs3](../../adapters-and-accelerators/adapter-oracle-database/metadata-node-ids3.md)します。  
   
 #### <a name="to-retrieve-metadata-from-an-oracle-database"></a>Oracle データベースからメタデータを取得するには  
   
@@ -202,7 +202,7 @@ ms.locfileid: "37005355"
     既定では、名前付け規則で、ファイルが作成"OracleDBBindingSchema\<n\>.xsd"ここで、' n ' 1、2、およびでは、作成されたスキーマ ファイルの数によってにすることができます。 または、スキーマ ファイルにカスタム名を提供の名前を入力、**ファイル名のプレフィックス**テキスト ボックス。 [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]名前付け規則で今すぐスキーマ ファイルを作成します\<ファイル名のプレフィックス\>スキーマ\<n\>.xsd。  
   
    > [!NOTE]
-   >  [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]ときに指定されたバインドのプロパティを含むバインド ファイル (XML ファイル) も作成操作と操作を呼び出すための SOAP アクションのスキーマを生成します。 接続 URI、バインドのプロパティを持つ WCF カスタム ポートを作成する BizTalk Server 管理コンソールでこのバインド ファイルをインポートして、SOAP アクションを設定します。 詳細については、[Oracle データベースへのポート バインド ファイルを使用して物理的なポート バインドを構成する](../../adapters-and-accelerators/adapter-oracle-database/configure-a-physical-port-binding-using-a-port-binding-file-to-oracle-database.md)を参照してください。  
+   >  [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]ときに指定されたバインドのプロパティを含むバインド ファイル (XML ファイル) も作成操作と操作を呼び出すための SOAP アクションのスキーマを生成します。 接続 URI、バインドのプロパティを持つ WCF カスタム ポートを作成する BizTalk Server 管理コンソールでこのバインド ファイルをインポートして、SOAP アクションを設定します。 詳細については、次を参照してください。 [Oracle データベースへのポート バインド ファイルを使用して物理的なポート バインドを構成する](../../adapters-and-accelerators/adapter-oracle-database/configure-a-physical-port-binding-using-a-port-binding-file-to-oracle-database.md)します。  
    > 
    > [!IMPORTANT]
    >  使用して、[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]バインド ファイルを生成しません。  
@@ -234,7 +234,7 @@ ms.locfileid: "37005355"
     ![Select および Update 操作が選択されます。](../../adapters-and-accelerators/adapter-oracle-database/media/4c41ac7b-784a-494c-ac82-c007e22a4fdf.gif "4c41ac7b-784a-494c-ac82-c007e22a4fdf")  
   
    > [!IMPORTANT]
-   >  によって送信操作 (またはカテゴリ) を選択で、複数の 1 つの WCF クライアント クラスを生成できます。 詳細については、[WCF クライアントまたは Oracle データベース ソリューションの成果物の WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-oracle-database/create-a-wcf-client-or-wcf-service-contract-for-oracle-db-solution-artifacts.md)を参照してください。  
+   >  によって送信操作 (またはカテゴリ) を選択で、複数の 1 つの WCF クライアント クラスを生成できます。 詳細については、次を参照してください。 [WCF クライアントまたは Oracle データベース ソリューションの成果物の WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-oracle-database/create-a-wcf-client-or-wcf-service-contract-for-oracle-db-solution-artifacts.md)します。  
   
 4. ほとんどのシナリオで、既定のシリアル化オプションで十分です。ただし、必要な場合は、生成されたコードに関するいくつかの側面と使用されるシリアライザーの型を制御できます。 これらのオプションを設定するには  
   
@@ -248,9 +248,9 @@ ms.locfileid: "37005355"
   
       ![高度なオプションが既定の設定をボックス](../../adapters-and-accelerators/adapter-oracle-database/media/r2-net-adapters-oracle-msb-advanced-options.gif "R2_NET_Adapters_Oracle_MSB_Advanced_Options")  
   
-      オプションで構成できる、**詳細オプション**ServiceModel メタデータ ユーティリティ ツール (svcutil.exe) を使用する場合は、ボックスはいくつかの使用可能なオプションに相当します。 これらのオプションの詳細については、[ServiceModel メタデータ ユーティリティ ツール (Svcutil.exe)](https://msdn.microsoft.com/library/aa347733.aspx)を参照してください。
+      オプションで構成できる、**詳細オプション**ServiceModel メタデータ ユーティリティ ツール (svcutil.exe) を使用する場合は、ボックスはいくつかの使用可能なオプションに相当します。 これらのオプションの詳細については、次を参照してください。 [ServiceModel メタデータ ユーティリティ ツール (Svcutil.exe)](https://msdn.microsoft.com/library/aa347733.aspx)します。
   
-5. **[OK]** をクリックします。 [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] WCF クライアント クラス (または WCF サービスのインターフェイス) を保存し、操作と、プロジェクト ディレクトリで選択したカテゴリのヘルパー コード。 既定では、構成ファイルも保存されます。 受信と送信操作の若干異なるファイルが生成されます。詳細については、[WCF クライアントまたは Oracle データベース ソリューションの成果物の WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-oracle-database/create-a-wcf-client-or-wcf-service-contract-for-oracle-db-solution-artifacts.md)を参照してください。  
+5. **[OK]** をクリックします。 [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] WCF クライアント クラス (または WCF サービスのインターフェイス) を保存し、操作と、プロジェクト ディレクトリで選択したカテゴリのヘルパー コード。 既定では、構成ファイルも保存されます。 受信と送信操作の若干異なるファイルが生成されます。詳細については、次を参照してください。 [WCF クライアントまたは Oracle データベース ソリューションの成果物の WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-oracle-database/create-a-wcf-client-or-wcf-service-contract-for-oracle-db-solution-artifacts.md)します。  
   
    記載されている任意のノードを選択することができます、**利用可能なカテゴリと操作**ボックス。 カテゴリ ノードを選択する場合は、すべてのノードとそのサブ ノードで使用可能な操作が選択されます。 たとえば、すべての EMP テーブルの表示操作用の WCF クライアントを生成するにはノードを選択、EMP;SCOTT スキーマ内のテーブルのすべての WCF クライアントを生成するには、テーブル ノード; を選択しますなどなど。  
   

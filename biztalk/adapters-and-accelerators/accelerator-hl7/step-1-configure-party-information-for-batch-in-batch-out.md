@@ -1,5 +1,5 @@
 ---
-title: '手順 1: バッチのバッチでアウト用にパーティ情報の構成 |Microsoft Docs'
+title: 手順 1:バッチのバッチでアウト用にパーティ情報の構成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: eafe692cf86ccf3c6fbe0713c1e621a99a601d5d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 188b7cae45ac9cae0076ed129e92147f276a79d6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36974923"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65289073"
 ---
-# <a name="step-1-configure-party-information-for-batch-inbatch-out"></a>手順 1: 構成でバッチ用にパーティ情報/バッチ アウト
+# <a name="step-1-configure-party-information-for-batch-inbatch-out"></a>手順 1:バッチ用にパーティ情報の構成/バッチ アウト
 バッチを有効にすると、パーティのバッチ処理の断片化をオフにするこの手順で/バッチ アウト シナリオ。 再起動する[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]を有効にする構成変更を有効にします。  
   
 ### <a name="to-turn-off-fragmentation-of-batching-for-the-party"></a>パーティのバッチ処理の断片化をオフにするには  
@@ -34,4 +34,4 @@ ms.locfileid: "36974923"
   
 5. 確認します**回復可能なインターチェンジ サポート必要**ドロップダウン リスト**False**が選択されています。  
   
-   続行する[手順 2: 変更または作成、送信ポートと受信ポート](../../adapters-and-accelerators/accelerator-hl7/step-2-modify-or-create-the-send-and-receive-ports.md)します。
+   続行する[手順 2。変更または作成、送信ポートと受信ポート](../../adapters-and-accelerators/accelerator-hl7/step-2-modify-or-create-the-send-and-receive-ports.md)します。

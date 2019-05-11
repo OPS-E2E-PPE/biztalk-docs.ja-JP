@@ -1,5 +1,5 @@
 ---
-title: BAM インターセプター パフォーマンス カウンター |Microsoft ドキュメント
+title: BAM インターセプター パフォーマンス カウンター |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,19 +12,19 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 989316edff34463905c7547db815b3daaf4d4a46
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3a8d3cc2f6ab4eb0945f6f7d8563ad675e1c69de
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22230498"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65530572"
 ---
 # <a name="bam-interceptor-performance-counters"></a>BAM インターセプタのパフォーマンス カウンタ
 パフォーマンス カウンタにより、BAM インターセプタによって実行される作業の特定の側面を監視できます。 パフォーマンス カウンターは、サーバー パフォーマンスに関する問題を特定してトラブルシューティングする際に役立ちます。  
   
  次の表に、BAM インターセプタで利用できるパフォーマンス カウンタを示します。 パフォーマンス カウンタのカテゴリは "BAM インターセプタ" です。  
   
-|カウンター|Description|  
+|カウンター|説明|  
 |-------------|-----------------|  
 |Avg. Failed BAM Events/Flush Avg|プライマリ インポート データベースへのデータ フラッシュ中に発生したエラー BAM イベントの平均数です。|  
 |Successful BAM Events/Flush|プライマリ インポート データベースへのデータ フラッシュ中に発生した正常 BAM イベントの平均数です。 トランザクションがロールバックされる場合、これらのイベントはデータベースに保存されないことがあります。|  

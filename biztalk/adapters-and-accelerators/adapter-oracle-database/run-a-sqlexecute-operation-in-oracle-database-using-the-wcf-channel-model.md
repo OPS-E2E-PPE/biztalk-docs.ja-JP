@@ -1,5 +1,5 @@
 ---
-title: WCF チャネル モデルを使用して Oracle データベースで SQLEXECUTE 操作を実行 |Microsoft ドキュメント
+title: WCF チャネル モデルを使用して Oracle データベースでの SQLEXECUTE 操作の実行 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,15 +16,15 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d5bb458af94d61ceb89a725f80606d8dda2af579
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: ef49976eb15f5022871549f5240b22a97b908312
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25960808"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65528939"
 ---
 # <a name="run-a-sqlexecute-operation-in-oracle-database-using-the-wcf-channel-model"></a>WCF チャネル モデルを使用して Oracle データベースで SQLEXECUTE 操作を実行します。
-このセクションでは、チャネルを経由する Oracle データベースに SQLEXECUTE 操作を実行する方法を示します。 SOAP メッセージのメッセージとメッセージのアクションの両方を指定する必要があります。 SQLEXECUTE 操作の詳細については、次を参照してください。 [WCF サービス モデルを使用して Oracle データベースで実行 SQLEXECUTE 操作](../../adapters-and-accelerators/adapter-oracle-database/run-sqlexecute-operation-in-oracle-database-using-the-wcf-service-model.md)です。  
+このセクションでは、チャネルを経由する Oracle データベースに SQLEXECUTE 操作を実行する方法を示します。 SOAP メッセージでは、メッセージとメッセージのアクションの両方を指定する必要があります。 SQLEXECUTE 操作の詳細については、次を参照してください。 [WCF サービス モデルを使用して Oracle データベースで実行 SQLEXECUTE 操作](../../adapters-and-accelerators/adapter-oracle-database/run-sqlexecute-operation-in-oracle-database-using-the-wcf-service-model.md)します。  
   
 ## <a name="the-sqlexecute-message"></a>SQLEXECUTE メッセージ  
  次の XML では、Oracle シーケンスの次の値を返す SQLEXECUTE メッセージを表示します。  
@@ -37,16 +37,16 @@ ms.locfileid: "25960808"
 </SQLEXECUTE>  
 ```  
   
- SQLEXECUTE には、パラメーターのスキーマ要素とを複数のパラメーター データ セットを含むパラメーター ブロックを指定できます。 表示されるメッセージは、パラメーター スキーマとパラメーターのブロックを指定する要素は、メッセージ本文から省略されるので、指定した SQL ステートメントの 1 つの呼び出しです。 SQLEXECUTE 操作のメッセージ スキーマについては、次を参照してください。 [SQLEXECUTE 操作のメッセージ スキーマを](../../adapters-and-accelerators/adapter-oracle-database/message-schemas-for-the-sqlexecute-operation.md)です。  
+ SQLEXECUTE には、パラメーターのスキーマ要素と複数のパラメーターのデータ セットを含むパラメーター ブロックを指定できます。 表示されるメッセージは、パラメーター スキーマとパラメーター ブロックを指定する要素が、メッセージ本文から省略すると、指定した SQL ステートメントの 1 つの呼び出しとです。 SQLEXECUTE 操作のメッセージのスキーマについては、次を参照してください。 [SQLEXECUTE 操作のメッセージ スキーマ](../../adapters-and-accelerators/adapter-oracle-database/message-schemas-for-the-sqlexecute-operation.md)します。  
   
-## <a name="specifying-the-sqlexecute-action"></a>SQLEXECUTE 操作を指定してください。  
+## <a name="specifying-the-sqlexecute-action"></a>SQLEXECUTE 操作を指定します。  
  メッセージのアクションを指定する必要があります。 次のコードの抜粋では、SQLEXECUTE メッセージのアクションを指定する方法を示します。  
   
 ```  
 Message messageIn = Message.CreateMessage(MessageVersion.Default, "http://Microsoft.LobServices.OracleDB/2007/03/SQLEXECUTE", readerIn);  
 ```  
   
-## <a name="sending-the-sqlexecute-message"></a>SQLEXECUTE メッセージを送信します。  
+## <a name="sending-the-sqlexecute-message"></a>SQLEXECUTE のメッセージを送信します。  
  次のコードの抜粋では、チャネルを経由する Oracle データベースに SQLEXECUTE 操作を呼び出す方法を示します。  
   
 ```  
@@ -84,8 +84,8 @@ if (list.Count > 0) id = list[0].InnerXml;
 ```  
   
 > [!NOTE]
->  SQLEXECUTE 操作を常には、弱い型指定の結果セットを返します。  
+>  SQLEXECUTE 操作を常には、厳密に型指定の結果セットを返します。  
   
 ## <a name="see-also"></a>参照  
  [WCF チャネル モデルを使用して Oracle データベース アプリケーションを開発します。](../../adapters-and-accelerators/adapter-oracle-database/develop-oracle-database-applications-using-the-wcf-channel-model.md)  
- [Oracle データベースを使用して、チャネルを作成します。](../../adapters-and-accelerators/adapter-oracle-database/create-a-channel-using-oracle-database.md)
+ [Oracle データベースを使用してチャネルを作成します。](../../adapters-and-accelerators/adapter-oracle-database/create-a-channel-using-oracle-database.md)

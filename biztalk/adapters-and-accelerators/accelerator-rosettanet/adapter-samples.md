@@ -16,15 +16,15 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 10dac21957095f7e7e78c7b5243541ec61e41653
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 45f9f26dc8530f92c50a79634622843d0bb4e597
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36989275"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65284968"
 ---
 # <a name="adapter-samples"></a>アダプタ サンプル
-Microsoft®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]アダプター サンプルいくつかにはのソフトウェア開発キット (SDK) が含まれています。 このセクションでは、各アダプター サンプルが示す機能、サンプルをビルドおよび実行する方法、および予測できる実行結果について詳しく説明します。  
+Microsoft®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]アダプター サンプルいくつかにはのソフトウェア開発キット (SDK) が含まれています。 ここでは、各アダプタのサンプルを構築して、サンプルと予想される結果を実行する手順で示されている機能の詳細を示します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

@@ -1,5 +1,5 @@
 ---
-title: 'レッスン 8: 構築と、アセンブリの配置 |Microsoft Docs'
+title: 'レッスン 8: ビルドと、アセンブリの展開 |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,14 +17,14 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 80e97076bb503d51bd2180c3f4bea950c0c04a46
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 0b78d78108b656eefd7861904f75b186891dd3e9
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36968387"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65530562"
 ---
-# <a name="lesson-8-building-and-deploying-the-assembly"></a>レッスン 8: 構築と、アセンブリの配置
+# <a name="lesson-8-building-and-deploying-the-assembly"></a>レッスン 8: 構築およびアセンブリを展開します。
 このレッスンでは、ビルドし、前の手順で作成したパイプラインを含むアセンブリを生成するパイプライン プロジェクトを配置します。 このレッスンでは、これまでに作成した作業でコンパイル エラーがないをによりします。  
   
  保存して、プロジェクトをコンパイルしてアセンブリ (DLL) ファイル、 \<*ドライブ*\>: \Program Files\Microsoft BizTalk Accelerator for SWIFT\bin\Development フォルダー。  
@@ -49,4 +49,4 @@ ms.locfileid: "36968387"
   
 6. 展開、**アセンブリ**ノード、アクセラレータが正常にデプロイされることを確認します。 **SWIFTPipelines (1.0.0.0)** します。  
   
-   進みます[モジュール 4: 受信 XML を作成し、フラット ファイル送信ポート](../../adapters-and-accelerators/accelerator-swift/module-4-adding-an-xml-receive-location-and-flat-file-send-port.md)します。
+   続行する[モジュール 4。受信 XML を作成し、フラット ファイル送信ポート](../../adapters-and-accelerators/accelerator-swift/module-4-adding-an-xml-receive-location-and-flat-file-send-port.md)します。

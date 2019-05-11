@@ -1,5 +1,5 @@
 ---
-title: '手順 3: ファイルの受信場所が、対話ストアと転送シナリオの追加 |Microsoft ドキュメント'
+title: 手順 3 a:ファイル受信 InterAct ストア アンド フォワード シナリオ用の場所の追加 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,43 +12,43 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7d2027878771249ceb2dcb45683a71b4475a75cd
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9fb4594877cb4679bbb355d8ea9ee66041c12dfc
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22224178"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65365924"
 ---
-# <a name="step-3a-add-a-file-receive-location-for-the-interact-store-and-forward-scenario"></a>手順 3: ファイルの受信場所が、対話ストアと転送シナリオの追加
-完全な[手順 2: InterAct ストアと転送シナリオ Paramfile に SWIFTNet 構成を追加](../../adapters-and-accelerators/fileact-interact/step-2-add-swiftnet-configuration-to-paramfile-for-interact-store-and-forward.md)この手順を開始する前にします。
+# <a name="step-3a-add-a-file-receive-location-for-the-interact-store-and-forward-scenario"></a>手順 3 a:InterAct ストア アンド フォワード シナリオ用の場所の受信ファイルを追加します。
+完全な[手順 2。InterAct ストア アンド フォワード シナリオ用に Paramfile に SWIFTNet 構成を追加](../../adapters-and-accelerators/fileact-interact/step-2-add-swiftnet-configuration-to-paramfile-for-interact-store-and-forward.md)この手順を開始する前にします。
   
-## <a name="add-a-file-receive-location"></a>ファイルの受信場所を追加します。  
+## <a name="add-a-file-receive-location"></a>ファイル受信場所を追加します。  
   
-1.  開始**BizTalk Server 管理**です。  
+1.  開始**BizTalk Server 管理**します。  
   
-2.  コンソール ツリーで、BizTalk グループを展開し、受信ポートを作成する BizTalk アプリケーションの順に展開します。  
+2.  コンソール ツリーで、BizTalk グループを展開し、受信ポートを作成する BizTalk アプリケーションを順に展開します。  
   
-3.  右クリック**受信ポート**、 をポイント**新規**、クリックして**一方向の受信ポート。**  
+3.  右クリック**受信ポート**、 をポイント**新規**、 をクリックし、**一方向の受信ポート。**  
   
-4.  **受信ポートのプロパティ**ウィンドウで、受信ポート名 Tutorial_IA_InputRequest_SnF です。  
+4.  **受信ポートのプロパティ**ウィンドウで、名前、受信ポート Tutorial_IA_InputRequest_SnF します。  
   
-5.  **受信ポートのプロパティ** ウィンドウで、**受信場所** タブで、をクリックして**新規**です。  
+5.  **受信ポートのプロパティ**ウィンドウで、**受信場所**] タブで [**新規**します。  
   
-6.  **受信場所のプロパティ**ウィンドウで、**全般** タブから、**トランスポートの種類**ドロップダウン リストで、**ファイル**とをクリックして**構成**です。  
+6.  **受信場所のプロパティ**ウィンドウの**全般** タブから、**トランスポートの種類**ドロップダウン リストで、**ファイル**とクリックして**構成**します。  
   
-7.  **FILE トランスポートのプロパティ** ダイアログ ボックスが C:\SWIFTAdapterTutorial\Interact\InputRequest_SnF を入力し、をクリックして**OK**です。  
+7.  **FILE トランスポートのプロパティ** ダイアログ ボックスでは、C:\SWIFTAdapterTutorial\Interact\InputRequest_SnF を入力して、クリックして**OK**。  
   
-8.  **受信場所のプロパティ** ウィンドウで、**全般** タブで、次の操作します。  
+8.  **受信場所のプロパティ**ウィンドウの**全般** タブで、次の操作を行います。  
   
-    |**これを使用してください。**|**これを行う**|  
+    |**これを使用して、**|**これを行う**|  
     |------------------|--------------------|  
-    |**受信ハンドラー**|ドロップダウン リストから選択**BizTalkServerApplication**です。|  
-    |**受信パイプライン**|ドロップダウン リストから選択**XMLReceive**です。|  
+    |**受信ハンドラー**|ドロップダウン リストから選択**BizTalkServerApplication**します。|  
+    |**受信パイプライン**|ドロップダウン リストから選択**XMLReceive**します。|  
   
 9. **[OK]** をクリックします。  
   
-## <a name="complete-steps"></a>詳細な手順
- [手順 3: 送信ポートを作成し、対話ストアと転送シナリオの受信ポート](../../adapters-and-accelerators/fileact-interact/step-3-create-send-and-receive-ports-for-interact-store-and-forward-scenario.md)   
- [手順 3 b: 追加、対話の受信場所が、対話ストアと転送シナリオ](../../adapters-and-accelerators/fileact-interact/step-3b-add-interact-receive-location-for-interact-store-and-forward-scenario.md)   
- [手順 3 C: InterAct ストアと転送シナリオ Sw:HandleRequest メッセージをキャプチャする FILE 送信ポートの追加](../../adapters-and-accelerators/fileact-interact/step-3c-add-file-send-port-to-get-sw-handlerequest-interact-store-and-forward.md)  
- [ステップ 3 D: InterAct ストアと転送シナリオの対話の送信ポートの追加](../../adapters-and-accelerators/fileact-interact/step-3d-add-an-interact-send-port-for-the-interact-store-and-forward-scenario.md)
+## <a name="complete-steps"></a>手順を完了します
+ [ステップ 3:送信ポートの作成し、InterAct ストア アンド フォワード シナリオ用の受信ポート](../../adapters-and-accelerators/fileact-interact/step-3-create-send-and-receive-ports-for-interact-store-and-forward-scenario.md)   
+ [手順 3 b:INTERACT の受信場所 InterAct ストア アンド フォワード シナリオ用の追加します。](../../adapters-and-accelerators/fileact-interact/step-3b-add-interact-receive-location-for-interact-store-and-forward-scenario.md)   
+ [手順 3 C:InterAct ストア アンド フォワード シナリオ用に Sw:HandleRequest メッセージをキャプチャする FILE 送信ポートの追加します。](../../adapters-and-accelerators/fileact-interact/step-3c-add-file-send-port-to-get-sw-handlerequest-interact-store-and-forward.md)  
+ [手順 3 D:InterAct ストア アンド フォワード シナリオ用に INTERACT 送信ポートを追加します。](../../adapters-and-accelerators/fileact-interact/step-3d-add-an-interact-send-port-for-the-interact-store-and-forward-scenario.md)

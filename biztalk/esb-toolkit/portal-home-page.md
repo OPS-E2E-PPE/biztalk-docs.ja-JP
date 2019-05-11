@@ -12,14 +12,14 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1cec16922e7d7f5075942577750867c4739602e9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9c02b37b9c4ccf0c1acd03d6040c2e0169f86992
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37011027"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65295167"
 ---
-# <a name="portal-home-page"></a>ポータル ホーム ページ
+# <a name="portal-home-page"></a>ポータルのホーム ページ
 図 1 は、4 つのセクションを含むホーム ページを示しています。  
 
 - **グラフ**セクションには、アプリケーションで、種類、および分析によって、時間の経過と共に、アプリケーションの観点からエンタープライズ全体の全体的な正常性を示すエラーの詳細が含まれています。  

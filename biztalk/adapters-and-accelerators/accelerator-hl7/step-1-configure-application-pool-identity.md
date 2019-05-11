@@ -1,5 +1,5 @@
 ---
-title: '手順 1: アプリケーション プール Id の構成 |Microsoft Docs'
+title: 手順 1:アプリケーション プール Id の構成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,14 +15,14 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 61cdbc019b2e36ea8c50d97ff03597374cb07253
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: fc2e5c81973caba71f0bb1dfe97f555c42366e68
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36988491"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65289079"
 ---
-# <a name="step-1-configure-application-pool-identity"></a>手順 1: アプリケーション プール Id を構成します。
+# <a name="step-1-configure-application-pool-identity"></a>手順 1:アプリケーション プール Id を構成します。
 このチュートリアルでは、Web サービスとして公開するオーケストレーションを処理するのに Microsoft インターネット インフォメーション サービス (IIS) アプリケーション プールを使用します。 アプリケーション プールは、ワーカー プロセスによって提供される Url の 1 つまたは複数のグループです。  
 
  アプリケーション プールの id は、アプリケーション プールのワーカー プロセスを実行するサービス アカウントの名前です。 既定では、アプリケーション プールは、低レベルのユーザー アクセス権があり、このチュートリアルでは関数には不十分ですが、ネットワーク サービスのユーザー アカウントで動作します。 セキュリティ上の理由から、絶対の最小アクセス許可を持つが、ユーザー アカウントにアプリケーション プール id を構成するのには、メッセージ ボックス データベース (BizTalkMsgBoxDb) と構成データベース (とも呼ばれる、BizTalk を書き込めません最小のアクセス許可。管理データベース、または BizTalkMgmtDb)。  
@@ -51,7 +51,7 @@ ms.locfileid: "36988491"
    > [!NOTE]
    >  または、セキュリティ強化のためのこのチュートリアルに対応したアクセス許可で作成したカスタム id の下で実行するまったく新しいアプリケーション プールを作成できます。  
 
-   続行する[手順 2: 新しいプロジェクトを作成](../../adapters-and-accelerators/accelerator-hl7/step-2-create-a-new-project.md)です。  
+   続行する[手順 2。新しいプロジェクトを作成](../../adapters-and-accelerators/accelerator-hl7/step-2-create-a-new-project.md)です。  
 
 ## <a name="see-also"></a>参照  
  [メッセージ強化のチュートリアル](../../adapters-and-accelerators/accelerator-hl7/message-enrichment-tutorial.md)

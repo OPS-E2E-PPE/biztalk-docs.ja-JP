@@ -7,11 +7,11 @@ ms.topic: article
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 75b1aefd84a209c73b8a6fe7c6566df23bf69b4c
-ms.sourcegitcommit: 1f0306e812c95dc32c4496345c19f141612cb2c1
+ms.openlocfilehash: c992d6e1c7e858c6b5f8742ee93abacf60c1b84f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38942030"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65368124"
 ---
 これらのサンプル必要は現在のバージョンに更新します。 更新することに関心があるでしょうか。 場合でパブリック GitHub リポジトリに更新されたサンプルを追加し、 [ https://github.com/Microsoft/Integration](https://github.com/Microsoft/Integration)します。 

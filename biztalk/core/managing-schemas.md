@@ -13,12 +13,12 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 400d6946235c2137a389b22f639159c9f92d6f4a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 09c39d6bd414a1f9558e058881c41f6dd9bd1e5d
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36973155"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531145"
 ---
 # <a name="manage-schemas"></a>スキーマを管理します。
 
@@ -33,10 +33,10 @@ ms.locfileid: "36973155"
   
 - 開発者が展開したときに、アプリケーションからスキーマを含むアセンブリ[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]」の説明に従って、 [BizTalk アプリケーションに Visual Studio から BizTalk アセンブリを展開する](../core/deploying-biztalk-assemblies-from-visual-studio-into-a-biztalk-application.md)します。  
   
-  スキーマの背景については、[スキーマ](../core/schemas.md)を参照してください。 スキーマの開発方法の詳細については、[BizTalk エディターを使用してスキーマを作成する](../core/creating-schemas-using-biztalk-editor.md)を参照してください。  
+  スキーマの背景については、次を参照してください。[スキーマ](../core/schemas.md)します。 スキーマの開発方法の詳細については、次を参照してください。 [BizTalk エディターを使用してスキーマを作成する](../core/creating-schemas-using-biztalk-editor.md)します。  
   
 > [!NOTE]
->  Microsoft Windows Management Instrumentation (WMI) のオブジェクト モデルを使用して、管理タスクを自動化するスクリプトを作成および実行できます。 WMI の使用方法の詳細については、、 **WMI クラスの参照**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]を参照してください。
+>  Microsoft Windows Management Instrumentation (WMI) のオブジェクト モデルを使用して、管理タスクを自動化するスクリプトを作成および実行できます。 WMI の使用方法の詳細については、次を参照してください。、 **WMI クラスの参照**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]します。
   
 ## <a name="next-steps"></a>次のステップ 
   

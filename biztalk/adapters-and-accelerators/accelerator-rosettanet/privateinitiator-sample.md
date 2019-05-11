@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2ab84d145939191a8bdbca9afb44d04fdf24b3e9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 27ead20d17452dcbd4982bba7f3082ee430ae6dd
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37011283"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65282575"
 ---
 # <a name="privateinitiator-sample"></a>PrivateInitiator サンプル
 PrivateInitiator.odx サンプルには、Microsoft® BizTalk Server によってインストールされる開始側プライベート プロセスのコードが含まれています。 これは、SQL アダプターベースの既定の送受信ポートを使用して RNIF Service Content メッセージを送受信する、汎用のプライベート プロセスです。  
@@ -29,7 +29,7 @@ PrivateInitiator.odx サンプルには、Microsoft® BizTalk Server によっ�
   
  開始側プライベート プロセスは実装ごとに固有です。 PrivateInitiator.odx サンプルは用途に合わせてカスタマイズできます。 ただし、開始側パブリック プロセスの機能に支障をきたさないように注意する必要があります。  
   
- 詳細については、メッセージ フローの説明を含む、[開始側プライベート プロセス](../../adapters-and-accelerators/accelerator-rosettanet/initiator-private-process.md)を参照してください。  
+ 詳細については、メッセージ フローの説明を含む、次を参照してください。[開始側プライベート プロセス](../../adapters-and-accelerators/accelerator-rosettanet/initiator-private-process.md)します。  
   
 ## <a name="see-also"></a>参照  
  [オーケストレーション サンプル](../../adapters-and-accelerators/accelerator-rosettanet/orchestration-samples.md)   

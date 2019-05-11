@@ -12,14 +12,14 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 82a9be7ca6cea6f5ef42795c77b8c73b859b0f17
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 78dea4d186de1b4cfe34998abc3f627eae0e8977
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37001907"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65528556"
 ---
-# <a name="as2-decoding-failed-while-decrypting-a-message"></a>メッセージの復号中に、AS2 のデコードに失敗しました
+# <a name="as2-decoding-failed-while-decrypting-a-message"></a>AS2 のデコード、メッセージの解読中に失敗しました
 ## <a name="details"></a>詳細  
 
 |                 |                                                                                        |
@@ -30,7 +30,7 @@ ms.locfileid: "37001907"
 |  イベント ソース   | [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI |
 |    コンポーネント    |                                       AS2 エンジン                                       |
 |  シンボル名  |                                           -                                            |
-|  メッセージ テキスト   |                    メッセージの復号中に、AS2 のデコードに失敗しました。                     |
+|  メッセージ テキスト   |                    AS2 のデコードは、メッセージの解読中に失敗しました。                     |
 
 ## <a name="explanation"></a>説明  
  このエラー/警告/情報イベントは、受信パイプラインの AS2 デコーダー コンポーネントが AS2 メッセージを解読できなかったことを意味します。 この問題は、解読のプロセスで使用された証明書が、有効でないか、適切な場所に置かれていないか、暗号化のプロセスで使用された証明書と一致していない場合に発生することがあります。  

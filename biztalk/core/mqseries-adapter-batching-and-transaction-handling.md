@@ -1,5 +1,5 @@
 ---
-title: MQSeries アダプタのバッチ処理とトランザクション処理 |Microsoft ドキュメント
+title: MQSeries アダプターがバッチ処理とトランザクションの処理 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -19,19 +19,19 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ffcdec02c464b9398acbece35657e0c3d1dc4432
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 466201e88b55cd17300deaae3d1b1258e82a2c2c
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22262986"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531200"
 ---
-# <a name="mqseries-adapter-batching-and-transaction-handling"></a>MQSeries アダプタのバッチ処理とトランザクション処理
-MQSeries アダプタは、すべてのデータを受信していない場合に限り、トランザクションを停止します。 MQSeries アダプタのトランザクションの境界は、アダプタのエンドポイント (MQSeries Server の MQSeries キュー) およびメッセージ ボックス データベースです。  
+# <a name="mqseries-adapter-batching-and-transaction-handling"></a>MQSeries アダプターのバッチ処理とトランザクション処理
+MQSeries アダプターは、すべてのデータが受信しない場合にのみ、トランザクションを停止します。 アダプターのトランザクションの境界は、アダプターのエンドポイント (MQSeries サーバー上の MQSeries キュー) と、メッセージ ボックス データベースです。  
   
- BizTalk アプリケーションでメッセージが無効化された場合、そのメッセージはアダプタにより保留キューに移動されます。 しかし、アダプタから見ると (すべてのデータを受信しており) そのメッセージはまだ有効なトランザクションなので、トランザクションがコミットされます。  
+ BizTalk アプリケーションがメッセージを無効にする場合、アダプターは、保留キューにメッセージを移動します。 ただし、アダプター (アダプターで受信したすべてのデータ) の有効なトランザクションの観点からではまだであるため、アダプターは、トランザクションをコミットします。  
   
- アダプタを構成するときにプロパティを設定することで、バッチ処理とトランザクション処理を制御できます。 詳細については、次を参照してください。 [MQSeries アダプターを構成する](../core/configuring-the-mqseries-adapter.md)です。  
+ バッチ処理とトランザクション アダプターを構成するときにプロパティを設定して処理を制御できます。 詳細については、次を参照してください。 [MQSeries アダプターの構成](../core/configuring-the-mqseries-adapter.md)します。  
   
 ## <a name="see-also"></a>参照  
- [MQSeries アダプターのプロパティ](../core/mqseries-adapter-properties.md)
+ [MQSeries アダプター プロパティ](../core/mqseries-adapter-properties.md)

@@ -15,12 +15,12 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d6e5ffc3e1ca36e200055a26e8e78f341b125d8a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: cb3747ca3cf950ecb7897ff9e77b9d46950296e0
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36975547"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65530229"
 ---
 # <a name="removing-usage-rule-validation"></a>使用規則の検証を削除します。
 使用に関する規則は SWIFT 標準で定義され、によって適用される[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]メッセージの種類ごとに固有のビジネス ポリシー。 これらの使用に関する規則では、フィールドの追加の検証を提供する際のガイドラインを示します。 必須のネットワークの検証規則とは異なり、メッセージ型の使用に関する規則を必要としないを選択できます。 ケースがある場合は、次のいずれかの操作を行います。  

@@ -1,5 +1,5 @@
 ---
-title: コンポーネント インターフェイスをテストする方法 |Microsoft ドキュメント
+title: コンポーネント インターフェイスをテストする方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,83 +15,83 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: be50521e5c4421d8ac8902bcf7a414d734c3b9f8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d8450177cd97d7136d8ee4146ff93fceee20b351
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22256570"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65333853"
 ---
 # <a name="how-to-test-component-interfaces"></a>コンポーネント インターフェイスをテストする方法
-Microsoft BizTalk Adapter for PeopleSoft Enterprise は PeopleSoft メタデータとコンポーネント インターフェイスを使用するため、新規または変更したコンポーネント インターフェイスを処理できます。 アダプタは、コンポーネント インターフェイスが論理的かつ有効であることを除き、コンポーネント インターフェイスについて想定を行いません。 したがって、各コンポーネント インターフェイスをアダプタのソースとして使用する前にテストする必要があります。  
+Microsoft BizTalk Adapter for PeopleSoft Enterprise は PeopleSoft メタデータとコンポーネントのインターフェイスです。そのため、新しいまたは変更されたコンポーネントのインターフェイスに対応できます。 アダプターによりの前提条件コンポーネント インターフェイスについてが、論理的かつ有効です。 そのため、アダプターのソースとして使用される前に、各コンポーネントのインターフェイスをテストする必要があります。  
   
- ユーザーまたは PeopleSoft のアップグレードによって基になるアプリケーションに変更が加えられ、その変更によってコンポーネント インターフェイスが無効になる場合は、無効なコンポーネント インターフェイスをアダプタが使用する前に修正する必要があります。  
+ ユーザーまたは PeopleSoft のアップグレードによって、基になるアプリケーションに変更が行われた変更が、コンポーネント インターフェイスを無効になる場合は、ユーザーは、アダプタが使用前に、無効なコンポーネント インターフェイスを修復する必要があります。  
   
 ### <a name="to-test-a-component-interface"></a>コンポーネント インターフェイスをテストするには  
   
-1.  アプリケーション デザイナーでの**ツール** メニューのをクリックして**Test Component Interface**です。  
+1.  アプリケーション デザイナーでの**ツール** メニューのをクリックして**Test Component Interface**します。  
   
      ![](../core/media/psadapter-54-ps-testcompinterface1.gif "PSAdapter_54_PS_TestCompInterface1")  
   
-2.  **Component Interface Tester**  ダイアログ ボックスで、1 つに、次のメソッドを使用してコンポーネント インターフェイスをテストします。 変更を加えたら、ペインの一番上にあるアイテムを右クリックします。  
+2.  **Component Interface Tester**  ダイアログ ボックスで、次のメソッドを 1 つを使用してコンポーネント インターフェイスをテストします。 変更が完了したら、ウィンドウの最上位の項目を右クリックします。  
   
     > [!NOTE]
-    >  必要に応じて、ダイアログ ボックスをクリックして前面に表示します。  
+    >  必要な場合は、フォア グラウンドに表示させる ダイアログ ボックスをクリックします。  
   
-    -   Find メソッドを使用してコンポーネント インターフェイスをテストするには、クリックして**検索**です。  
+    -   Find メソッドを使用してコンポーネント インターフェイスをテストするには、クリックして**検索**します。  
   
-         **Component Interface Tester - の検索結果** ダイアログ ボックスが開き、基になるコンポーネントの考えられるすべてのエントリを表示します。 エントリの数が 300 を超える場合は、メッセージが表示されます。  
+         **Component Interface Tester - 検索結果** ダイアログ ボックスが開き、基になるコンポーネントのすべての可能なエントリを表示します。 300 以上のエントリがある場合は、メッセージが表示されます。  
   
-         a. 左側のウィンドウで、**検索結果** ダイアログ ボックスでフィールドを選択します。  
+         A. 左側のウィンドウで、**検索結果** ダイアログ ボックスで、フィールドを選択します。  
   
-         b. その特定のフィールドに関連するデータを表示する をクリックして**Get Selected**です。  
+         B. その特定のフィールドに関連するデータを表示する をクリックして**Get Selected**します。  
   
          次の画面が表示されます。  
   
          ![](../core/media/psadapter-55-ps-testcompinterface2.gif "PSAdapter_55_PS_TestCompInterface2")  
   
-         セキュリティ設定で許可される場合は、各フィールドの値を変更できます。  
+         セキュリティ設定で許可される場合は、個々 のフィールドの値を変更できます。  
   
          次のダイアログ ボックスが開きます。  
   
          ![](../core/media/psadapter-56-ps-testcompinterface3.gif "PSAdapter_56_PS_TestCompInterface3")  
   
-    -   使用してをコンポーネント インターフェイスをテストする、`Get`メソッド。  
+    -   使用してコンポーネント インターフェイスをテストする、`Get`メソッド。  
   
-         a. 既存のキーを入力します。  
+         A. 既存のキーを入力します。  
   
-         b. をクリックして**既存**です。  
+         B. クリックして**既存**します。  
   
-         入力したキーについて公開されているプロパティが返されます。  
+         これは、入力したキーの公開されているプロパティを返します。  
   
          値を変更するには、場合**更新アクセス**が指定されました。  
   
-         または、`Create` メソッドを使用してテストすることもできます。  
+         使用してをテストする代わりに、`Create`メソッド。  
   
          ![](../core/media/psadapter-57-ps-testcompinterface4.gif "PSAdapter_57_PS_TestCompInterface4")  
   
-    -   使用してをコンポーネント インターフェイスをテストする、`Create`メソッド。  
+    -   使用してコンポーネント インターフェイスをテストする、`Create`メソッド。  
   
-         a. 必要なすべてのキー値を入力します。  
+         A. 必要なすべてのキー値を入力します。  
   
-         b. をクリックして**新規作成**です。  
+         B. クリックして**新規作成**です。  
   
-         有効な値を入力すると**キーを作成する**場所の既定データとテーブル名が展開された後に、JOBCODE データを表示するウィンドウが開きます。  
+         有効な値を入力すると**キーを作成する**テーブル名には、配置の既定のデータが展開されてから、JOBCODE データを表示するウィンドウが開きます。  
   
-         この段階で、フィールドを変更できます。  
+         これでフィールドを変更できます。  
   
          ![](../core/media/psadapter-58-ps-testcompinterface5.gif "PSAdapter_58_PS_TestCompInterface5")  
   
-         コンポーネントの基になるビジネス ロジックに対して、変更が検証されます。  
+         変更は、コンポーネントの基になるビジネス ロジックに対して検証されます。  
   
 3.  をクリックして変更を保存、**保存**アイコン。  
   
-     レコードの作成に使用されるキーは、データを表示するために Get メソッドと共に使用できます。 追加されたデータは、次の例に示すように、PeopleSoft コンポーネントで表示できます。  
+     レコードの作成に使用されるキーは、データを表示するための Get メソッドで使用できます。 追加されたデータは、次の例に示すように、PeopleSoft コンポーネントで表示できます。  
   
      ![](../core/media/psadapter-59-ps-testcompinterface6.gif "PSAdapter_59_PS_TestCompInterface6")  
   
-     **発効日**既定値の 1 つです。  
+     **有効日**は既定値の 1 つです。  
   
 ## <a name="see-also"></a>参照  
- [付録 a: コンポーネント インターフェイス メソッド](../core/appendix-a-component-interface-methods.md)   
- [付録 c: コンポーネント インターフェイスの使用](../core/appendix-c-using-component-interfaces.md)
+ [付録 a:コンポーネント インターフェイス メソッド](../core/appendix-a-component-interface-methods.md)   
+ [付録 c:コンポーネント インターフェイスの使用](../core/appendix-c-using-component-interfaces.md)

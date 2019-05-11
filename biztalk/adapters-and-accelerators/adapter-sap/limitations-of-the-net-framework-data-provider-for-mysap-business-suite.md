@@ -15,17 +15,17 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9efcf7fb18471c92c504e08df43482fbc64064d2
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 20ec080a571420eea6177429abb524b8fa11a7df
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36999819"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373263"
 ---
 # <a name="limitations-of-the-net-framework-data-provider-for-mysap-business-suite"></a>.NET Framework Data Provider for mySAP Business Suite の制限事項
 次の制限事項を呼びます、 [!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)] ([!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)])。  
   
-- [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]はセキュリティで保護されたネットワーク接続 (SNC) を使用して SAP システムへの接続をサポートしていません。 SNC の詳細については、[SAP システムとアダプター間のセキュリティ](../../adapters-and-accelerators/adapter-sap/security-between-the-sap-system-and-the-adapter.md)を参照してください。
+- [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]はセキュリティで保護されたネットワーク接続 (SNC) を使用して SAP システムへの接続をサポートしていません。 SNC の詳細については、次を参照してください。 [SAP システムとアダプター間のセキュリティ](../../adapters-and-accelerators/adapter-sap/security-between-the-sap-system-and-the-adapter.md)します。
   
 - [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]はサポートしていません、`DbType`または`Size`のプロパティ、`SAPParameter`します。 代わりに、ユーザーがの値を指定すると、`SAPParameter`値を内部的に確立されている .NET と SAP のデータ型マッピングに従って .NET データ型にキャストします。  
   

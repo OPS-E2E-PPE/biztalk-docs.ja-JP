@@ -15,12 +15,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dabd9796497bdd5b81d34f71c01124f26de203d9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f173b1d2e424a111e4657c0b0d943aee932ac21b
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36987427"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65529743"
 ---
 # <a name="swift-schema-naming-conventions"></a>SWIFT スキーマの名前付け規則
 Microsoft[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]社会の BizTalk エディターを使用して作成された世界銀行間金融電気通信 (SWIFT) FIN メッセージのスキーマが含まれています。 これらのスキーマは、全体では、次の規則に準拠しています。  
@@ -54,7 +54,7 @@ Microsoft[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-curre
   
 - xmlns:xs="<http://www.w3.org/2001/XMLSchema>". これは、既定の W3C XML スキーマ名前空間です。  
   
-- xmlns:b ="<http://schemas.microsoft.com/BizTalk/2003>"。 これは、既定の BizTalk 名前空間です。  
+- xmlns:b="<http://schemas.microsoft.com/BizTalk/2003>". これは、既定の BizTalk 名前空間です。  
   
   各メッセージ スキーマは、基本型と一般的なデータ型のスキーマを直接参照します。  
   

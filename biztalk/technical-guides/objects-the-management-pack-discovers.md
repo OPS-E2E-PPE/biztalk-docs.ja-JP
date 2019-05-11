@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c5c96ea4b2d1b54dfd6105c40046810fb6482e92
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ab1685f017e2960f0df5af7a37ef65cea06d0c9e
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36990603"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65530901"
 ---
 # <a name="objects-the-management-pack-discovers"></a>管理パックで検出されるオブジェクト
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理パックは、次の表で説明されているオブジェクトの種類を検出します。 オブジェクト検出の詳細については、次を参照してください。、 [Operations Manager 2007 のオブジェクト検出](http://go.microsoft.com/fwlink/?LinkId=108505)2012/Operations Manager 2007 R2 のオンライン ライブラリのトピック (<http://go.microsoft.com/fwlink/?LinkId=108505>)。  
@@ -30,7 +30,7 @@ ms.locfileid: "36990603"
 |ApplicationArtifact|論理エンティティ|アプリケーション オブジェクトの表示|  
 |HostedApplicationArtifact|論理エンティティ|アプリケーション オブジェクトの表示|  
 |ReceivePort|アプリケーションの成果物|アプリケーション オブジェクトの表示|  
-|ReceiveLocation|アプリケーションの成果物|アプリケーション オブジェクトの表示|  
+|受信場所|アプリケーションの成果物|アプリケーション オブジェクトの表示|  
 |オーケストレーション|アプリケーションの成果物|アプリケーション オブジェクトの表示|  
 |SendPort|アプリケーションの成果物|アプリケーション オブジェクトの表示|  
 |送信ポート グループ|アプリケーションの成果物|アプリケーション オブジェクトの表示|  

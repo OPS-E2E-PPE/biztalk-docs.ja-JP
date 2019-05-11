@@ -17,12 +17,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a639199a35f2e122d221ada618aa17cc52f510ec
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d2299ec3a45968cd0aaae2094ec892d03c70972f
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36998291"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65529764"
 ---
 # <a name="swift-header-and-trailer-schemas"></a>SWIFT ヘッダーおよびトレーラー スキーマ
 Microsoft [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] SWIFT ヘッダーおよびトレーラのスキーマを提供します。 A4SWIFT は、これらのさまざまな FIN メッセージのインターチェンジのスキーマに既に組み込みます。 カスタム SWIFT FIN 書式スタイル メッセージの種類 (たとえば、N98 メッセージ) を作成する場合は、独自の形式に、ヘッダーとトレーラーのスキーマを組み込むことができます。  

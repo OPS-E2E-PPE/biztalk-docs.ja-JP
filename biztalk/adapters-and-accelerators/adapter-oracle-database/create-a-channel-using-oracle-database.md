@@ -17,12 +17,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 18d3964cabfec2b1e33813e3811bfeb696cd4280
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: abce809fb62966fc311f59c8706c8d6823a16d13
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36972243"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65529413"
 ---
 # <a name="create-a-channel-using-oracle-database"></a>Oracle データベースを使用してチャネルを作成します。
 WCF チャネル モデルで、Oracle データベースに対する操作を呼び出すし、ポーリング クエリの結果を受信するには、SOAP メッセージを交換する、 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] WCF チャネルを経由します。  
@@ -138,7 +138,7 @@ channel.Open();
   
 3. 使用してバインド パラメーターのコレクションを作成、 **BindingParameterCollection**クラスし、資格情報を設定します。  
   
-4. 呼び出してチャネル リスナーを作成して**BuildChannelListener\<IInputChannel\>** メソッドを**OracleDBBinding**します。 このメソッドにパラメーターの 1 つとして、Oracle の接続 URI を指定します。 Oracle の接続 URI の詳細については、[Oracle Database 接続 URI の作成](../../adapters-and-accelerators/adapter-oracle-database/create-the-oracle-database-connection-uri.md)を参照してください。  
+4. 呼び出してチャネル リスナーを作成して**BuildChannelListener\<IInputChannel\>** メソッドを**OracleDBBinding**します。 このメソッドにパラメーターの 1 つとして、Oracle の接続 URI を指定します。 Oracle の接続 URI の詳細については、次を参照してください。 [Oracle Database 接続 URI の作成](../../adapters-and-accelerators/adapter-oracle-database/create-the-oracle-database-connection-uri.md)です。  
   
 5. リスナーを開きます。  
   

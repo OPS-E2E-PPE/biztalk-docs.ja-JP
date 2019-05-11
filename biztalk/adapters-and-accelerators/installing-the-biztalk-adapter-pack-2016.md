@@ -13,19 +13,19 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6eef8511564f134f96745667b94f69f6fb263e17
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8ccbffa606db9f26448ee74198eeb4ec67bee94d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37000387"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65363962"
 ---
 # <a name="install-the-biztalk-adapter-pack-2016"></a>BizTalk Adapter Pack 2016 をインストールします。
 インストール、[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]次の 2 つの方法で。  
 
--   **対話モードで**: セットアップ ウィザードを実行  
+-   **対話モードで**:セットアップ ウィザードを実行します。  
 
--   **サイレント モードで**: コマンドラインを使用して  
+-   **サイレント モードで**:コマンドラインを使用してください。  
 
 > [!IMPORTANT]
 > - インストールするコンピューターで管理者特権が必要、[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]ウィザードまたはコマンドラインを使用してをインストールするかどうかに関係なく、します。  
@@ -77,7 +77,7 @@ ms.locfileid: "37000387"
 
 2. 選択**Microsoft BizTalk Adapters インストール**します。 次のウィンドウで、不足している前提条件となるプログラムの一覧が表示されます。 いずれかが存在しない場合は、不足しているプログラムを選択し、セットアップでは、それをインストールするします。 
 
-   たとえば、**手順 2: Microsoft BizTalk Adapter Pack のインストール**または**手順 3: インストール Microsoft BizTalk Adapter Pack (x64)** します。  
+   たとえば、**手順 2。Microsoft BizTalk Adapter Pack をインストール**または**手順 3。Microsoft BizTalk Adapter Pack (x64) をインストール**します。  
 
    > [!NOTE]
    >  インストールする場合、[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]バーチャル マシンの場合は、セットアップ ウィザードの使用可能なディスク領域をチェックするメッセージが表示されます。 かどうかは、ハング、またはただ座っていて、このメッセージが表示されますすることが推奨**サイレント モードでインストール**(」を参照)。  
@@ -136,8 +136,8 @@ ms.locfileid: "37000387"
 |           [!INCLUDE[adaptersap_short](../includes/adaptersap-short-md.md)]           |                                                                             SapBaseAdapterFeature                                                                              |
 |        [!INCLUDE[adaptersiebel_short](../includes/adaptersiebel-short-md.md)]        |                                                                            SiebelBaseAdapterFeature                                                                            |
 |            [!INCLUDE[adaptersqlshort](../includes/adaptersqlshort-md.md)]            |                                                                                   SqlFeature                                                                                   |
-|        [!INCLUDE[adoprovidersapshort](../includes/adoprovidersapshort-md.md)]        |     SapAdoFeature<br /><br /> **注**: インストールする場合にのみ、この値を指定する必要があります、[!INCLUDE[adaptersap_short](../includes/adaptersap-short-md.md)]もします。      |
-|     [!INCLUDE[adoprovidersiebelshort](../includes/adoprovidersiebelshort-md.md)]     | SiebelAdoFeature<br /><br /> **注**: インストールする場合にのみ、この値を指定する必要があります、[!INCLUDE[adaptersiebel_short](../includes/adaptersiebel-short-md.md)]もします。 |
+|        [!INCLUDE[adoprovidersapshort](../includes/adoprovidersapshort-md.md)]        |     SapAdoFeature<br /><br /> **注**:インストールする場合にのみ、この値を指定する必要があります、[!INCLUDE[adaptersap_short](../includes/adaptersap-short-md.md)]もします。      |
+|     [!INCLUDE[adoprovidersiebelshort](../includes/adoprovidersiebelshort-md.md)]     | SiebelAdoFeature<br /><br /> **注**:インストールする場合にのみ、この値を指定する必要があります、[!INCLUDE[adaptersiebel_short](../includes/adaptersiebel-short-md.md)]もします。 |
 |                                    すべてのコンポーネント                                    |                                                                                      ALL                                                                                       |
 
 > [!IMPORTANT]

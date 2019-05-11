@@ -14,24 +14,24 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8138449cf3af067c9a76848f203c7e1809f6adbc
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 11cb88205b56b3ff773ad88141f9ef5b845d920b
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36986611"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65529054"
 ---
 # <a name="limitations-of-biztalk-adapter-for-oracle-database"></a>Oracle Database の BizTalk アダプターの制限事項
 ## <a name="general"></a>全般  
  次の制限事項を呼びます、 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]:  
   
-- いくつかの例外がなければ、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]はアダプターの以前のリリースと互換性があります。 前回のリリース以降に発生した変更の一覧、[BizTalk Adapter for Oracle Database での主な機能](../../adapters-and-accelerators/adapter-oracle-database/key-features-in-biztalk-adapter-for-oracle-database.md)を参照してください。  
+- いくつかの例外がなければ、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]はアダプターの以前のリリースと互換性があります。 前回のリリース以降に発生した変更の一覧、次を参照してください。 [BizTalk Adapter for Oracle Database での主な機能](../../adapters-and-accelerators/adapter-oracle-database/key-features-in-biztalk-adapter-for-oracle-database.md)します。  
   
 - [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] XML 型をサポートしていません。  
   
 - SQLEXECUTE 操作がタイムアウトの値を返しませんまたはプロシージャ、関数、またはパッケージには、IN OUT パラメーター。 このためを呼び出す必要がありますプロシージャ、関数、およびパッケージ専用の操作を使用している、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]これら Oracle の成果物を公開します。  
   
-- プログラミングでは、プロキシを使用して Oracle データベースからデータを取得するときに、 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] 65536 の複数のノードを持つ XML メッセージを逆シリアル化ではありません。 応答メッセージが 65536 のノード以下を確認します。 この制限を回避するには、アプリケーションの app.config ファイルを変更します。 手順については、[Oracle データベース アダプターを使用した運用上の問題のトラブルシューティングを行う](../../adapters-and-accelerators/adapter-oracle-database/troubleshoot-operational-issues-with-the-oracle-database-adapter.md)を参照してください。  
+- プログラミングでは、プロキシを使用して Oracle データベースからデータを取得するときに、 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] 65536 の複数のノードを持つ XML メッセージを逆シリアル化ではありません。 応答メッセージが 65536 のノード以下を確認します。 この制限を回避するには、アプリケーションの app.config ファイルを変更します。 手順については、次を参照してください。 [Oracle データベース アダプターを使用した運用上の問題のトラブルシューティングを行う](../../adapters-and-accelerators/adapter-oracle-database/troubleshoot-operational-issues-with-the-oracle-database-adapter.md)します。  
   
 - [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]は入力文字列し、アダプターによって実行される SQL コマンドを構築します。 ただし、入力文字列では、他の SQL コマンドも実行される場合があり、操作コントラクトが壊れる可能性があります。  
   
@@ -72,7 +72,7 @@ ms.locfileid: "36986611"
   
 - [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] IN OUT パラメーターとして BLOB、CLOB、NCLOB データ型が含まれている Udt をサポートしていません。  
   
-- [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] Varray の Varray の次の単純型をサポートしていません: BFILE、IntervalDS、IntervalYM、TimeStampLTZ、および TimeStampTZ します。  
+- [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] Varray の Varray の次の単純型をサポートしていません。BFILE、IntervalDS、IntervalYM、TimeStampLTZ、および TimeStampTZ します。  
   
 - 連想配列の制限のため PL/SQL テーブルまたは次のデータ型のいずれかが含まれているレコードの PL/SQL テーブルでサポートされていない、 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]:  
   

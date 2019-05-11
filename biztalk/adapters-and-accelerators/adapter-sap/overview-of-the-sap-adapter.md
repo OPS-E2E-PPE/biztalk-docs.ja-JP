@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 58f6249774697e12e12ab5b85bccf6df210a5d4e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 271b733430b1b31828903add62bd8d71318abafb
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36981843"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373144"
 ---
 # <a name="overview-of-the-sap-adapter"></a>SAP アダプターの概要
 [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)] WCF サービスとしての SAP システムを公開します。 アダプター クライアントは、アダプターを使用した SOAP メッセージを交換することで、SAP システムの操作を実行できます。 アダプターは WCF メッセージを使用し、操作を実行する SAP システムに適切な呼び出しを行います。 アダプターは、SOAP メッセージの形式でクライアントに SAP システムからの応答を返します。  

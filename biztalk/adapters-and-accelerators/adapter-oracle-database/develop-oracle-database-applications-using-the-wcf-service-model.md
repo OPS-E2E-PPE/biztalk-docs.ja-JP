@@ -16,12 +16,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cc677e0bcb8159bb750a91c9e1ea4aa0b5fbf2d5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: bdfb72f4901ce8c4ff10f4ff2e664c10e9f7726c
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36999939"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65529212"
 ---
 # <a name="develop-oracle-database-applications-using-the-wcf-service-model"></a>WCF サービス モデルを使用して Oracle データベース アプリケーションを開発します。
 最下位レベルで、[!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)]をクライアントがクライアントとサービスのエンドポイント間で確立されたチャネル経由で SOAP メッセージを交換することで、サービスで操作を呼び出すプログラミング モデルを表示します。 WCF チャネル モデルと呼ばれる、このモデルでは、データ型および WCF チャネル アーキテクチャを直接操作するためのメソッドを公開します。 WCF チャネル モデルを作成する SOAP メッセージの内容と、両方方法、アプリケーションを直接制御とを提供しますおよび[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]を使用。 ただし、チャネル経由で送信する適切な形式で SOAP メッセージを作成および検証します。返される応答メッセージには、詳細かつ面倒なタスクを指定できます。  
@@ -38,11 +38,11 @@ ms.locfileid: "36999939"
   
 - [!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]が付属していますが、 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]  
   
-  [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]と統合されて、[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]強力な参照と検索機能を備えた、アダプターによって公開される操作では、デザイン エクスペリエンスと標準の Microsoft Windows のインターフェイスを表示します。 WCF クライアントまたは WCF サービス コントラクトを生成する方法の詳細については、[Oracle データベース ソリューションの成果物の WCF クライアントまたは WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-oracle-database/create-a-wcf-client-or-wcf-service-contract-for-oracle-db-solution-artifacts.md)を参照してください。  
+  [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]と統合されて、[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]強力な参照と検索機能を備えた、アダプターによって公開される操作では、デザイン エクスペリエンスと標準の Microsoft Windows のインターフェイスを表示します。 WCF クライアントまたは WCF サービス コントラクトを生成する方法の詳細については、次を参照してください。 [Oracle データベース ソリューションの成果物の WCF クライアントまたは WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-oracle-database/create-a-wcf-client-or-wcf-service-contract-for-oracle-db-solution-artifacts.md)します。  
   
   WCF サービス モデルのプログラミングのソリューションの開発に最適な選択肢は、多くの場合、.NET プログラマになじみがあるし、チャネル経由で SOAP メッセージ交換の基になる複雑さが隠蔽されるモデルを表示するため、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]します。 ただし、WCF チャネル モデルが適してをする可能性がありますのシナリオがあります。 たとえば、WCF サービス モデルのみをサポート ReadLOB 操作にストリーミングします。 これは、シリアル化するためと、SOAP メッセージ内のオブジェクトの XML 表現とサービス モデルでそれらを表すために使用する .NET 型の間の逆シリアル化には、メッセージ全体をメモリに読み取る必要があります。 (ReadLOB 操作の結果は、この規則の例外です)。  
   
-  WCF チャネル モデルでは、XML ノード レベルのすべての操作にストリーミングとデータ レベルのストリーミング、ReadLOB および UpdateLOB 操作でのサポートを提供します。 大きな結果セットを返すか、テーブル内の LOB フィールドを更新しようとしているクエリを扱う場合、WCF チャネル モデルが方が適切にあります。 WCF チャネル モデルの使用に関する詳細については、[WCF チャネル モデルを使用して Oracle データベース アプリケーションを開発](../../adapters-and-accelerators/adapter-oracle-database/develop-oracle-database-applications-using-the-wcf-channel-model.md)を参照してください。  
+  WCF チャネル モデルでは、XML ノード レベルのすべての操作にストリーミングとデータ レベルのストリーミング、ReadLOB および UpdateLOB 操作でのサポートを提供します。 大きな結果セットを返すか、テーブル内の LOB フィールドを更新しようとしているクエリを扱う場合、WCF チャネル モデルが方が適切にあります。 WCF チャネル モデルの使用に関する詳細については、次を参照してください。 [WCF チャネル モデルを使用して Oracle データベース アプリケーションを開発](../../adapters-and-accelerators/adapter-oracle-database/develop-oracle-database-applications-using-the-wcf-channel-model.md)します。  
   
   このセクションのトピックでは、情報、手順、および作成しを使用してアプリケーションを開発する WCF サービス モデルを使用するのに役立つ例が含まれて、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]します。  
   

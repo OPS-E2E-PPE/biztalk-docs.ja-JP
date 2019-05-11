@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8e0c5e68eb1f07067a43995693cbb43bdcad76a4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6241a6e36b15c7e7efc1a796662782f783676318
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37002387"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65368033"
 ---
 # <a name="secure-programming-with-the-sql-adapter"></a>SQL アダプタを使用したプログラミングをセキュリティで保護します。
 ## <a name="how-do-i-protect-credentials-when-i-use-the-add-adapter-service-reference-visual-studio-plug-in"></a>保護するには資格情報を使用する場合、アダプター サービス参照を Visual Studio プラグインを追加しますか?  

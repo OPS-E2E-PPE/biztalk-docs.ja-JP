@@ -17,12 +17,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5e9de4c43e6f1721297b522ae76f5876731aa997
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c430660b2fce17f31901761a050ce7c5522c8952
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37013403"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65529288"
 ---
 # <a name="diagnostic-tracing-and-message-logging-for-the-oracle-database-adapter"></a>診断トレースとメッセージ ログの Oracle Database アダプター
 診断トレースは、効果的にアダプターを使用するときに発生する可能性がある問題を診断するのに役立ちます。 このトピックでは、次の 2 種類のトレースではサポートに関する情報を提供[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]:  

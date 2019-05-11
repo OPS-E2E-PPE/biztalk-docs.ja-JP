@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル 1: SQL アダプタを BizTalk プロジェクトの移行 |Microsoft Docs'
+title: チュートリアル 1:SQL アダプタを BizTalk プロジェクトの移行 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ea64d98404d247a47e8cad8df421c81752fe63e0
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 889a09c99bc83060e4a2a60721a86fb5e21503e0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37013307"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65367442"
 ---
-# <a name="tutorial-1-migrate-biztalk-projects-to-the-sql-adapter"></a>チュートリアル 1: SQL アダプタを BizTalk プロジェクトを移行します。
+# <a name="tutorial-1-migrate-biztalk-projects-to-the-sql-adapter"></a>チュートリアル 1:SQL アダプタを BizTalk プロジェクトを移行します。
 以前のバージョンを Microsoft に同梱されている SQL アダプターの[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]WCF ベースのとは異なる[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]など、多くの点で。  
   
 - BizTalk プロジェクトの作成、デザイン時エクスペリエンス。  
@@ -88,11 +88,11 @@ ms.locfileid: "37013307"
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [手順 1: vPrev BizTalk プロジェクトの SQL アダプタの使用を変更します。](../../adapters-and-accelerators/adapter-sql/step-1-modify-the-vprev-biztalk-project-using-the-sql-adapter.md)  
+-   [ステップ 1: VPrev BizTalk プロジェクトを SQL アダプターを使用しての変更します。](../../adapters-and-accelerators/adapter-sql/step-1-modify-the-vprev-biztalk-project-using-the-sql-adapter.md)  
   
--   [手順 2: SQL アダプターを使用して BizTalk Server 管理コンソールでオーケストレーションを構成します。](../../adapters-and-accelerators/adapter-sql/step-2-configure-the-orchestration-to-use-the-sql-adapter-in-biztalk-server.md)  
+-   [手順 2:SQL アダプターを使用して BizTalk Server 管理コンソールでオーケストレーションを構成します。](../../adapters-and-accelerators/adapter-sql/step-2-configure-the-orchestration-to-use-the-sql-adapter-in-biztalk-server.md)  
   
--   [手順 3: SQL アダプタを使用する移行されたアプリケーションをテストします。](../../adapters-and-accelerators/adapter-sql/step-3-test-the-migrated-application-that-uses-the-sql-adapter.md)  
+-   [ステップ 3:SQL アダプタを使用する移行されたアプリケーションをテストします。](../../adapters-and-accelerators/adapter-sql/step-3-test-the-migrated-application-that-uses-the-sql-adapter.md)  
   
 ## <a name="see-also"></a>参照  
  [SQL アダプターのチュートリアル](../../adapters-and-accelerators/adapter-sql/sql-adapter-tutorials.md)

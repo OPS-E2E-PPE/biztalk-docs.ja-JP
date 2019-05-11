@@ -12,15 +12,15 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a9ca606aa3d8ce6cdb74d4653e910f7db7639ec3
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5a6af8d06ddda2019982bd3ba83bf5d638208c2a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36986099"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65285033"
 ---
 # <a name="3a4-private-responder-orchestration-using-a-business-rule"></a>ビジネス ルールを使用した 3A4 プライベート レスポンダー オーケストレーション
-PIP3A4PrivateResponder.odx サンプルは、ビジネス ルールを組み込んでいる PIP (Partner Interface Process) 固有の応答側プライベート プロセスの実装方法を示した、プライベート プロセス オーケストレーションです。 このプロセスの詳細については、[プライベート プロセス オーケストレーションのビジネス ルールを定義する](../../adapters-and-accelerators/accelerator-rosettanet/defining-a-business-rule-for-a-private-process-orchestration.md)を参照してください。  
+PIP3A4PrivateResponder.odx サンプルは、ビジネス ルールを組み込んでいる PIP (Partner Interface Process) 固有の応答側プライベート プロセスの実装方法を示した、プライベート プロセス オーケストレーションです。 このプロセスの詳細については、次を参照してください。[プライベート プロセス オーケストレーションのビジネス ルールを定義する](../../adapters-and-accelerators/accelerator-rosettanet/defining-a-business-rule-for-a-private-process-orchestration.md)します。  
   
  既定では、Microsoft®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]セットアップ プログラムによってサンプルでは、 \<*ドライブ*\>: \Program Files\Microsoft BizTalk\<バージョン\>Accelerator for RosettaNet\SDK\PipAutomation\3A4 します。  
   
@@ -54,7 +54,7 @@ PIP3A4PrivateResponder.odx サンプルは、ビジネス ルールを組み込�
  このサンプルは、3A4 要求アクションとシグナル メッセージをサブスクライブし、 3A4 の同期処理と非同期処理のどちらでも使用できます。 これ以外の PIP メッセージは、すべて汎用の [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] プライベート プロセスを引き続き使用してルーティングします。 このサンプルにより、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] のビジネス ルール エンジンが呼び出され、着信 3A4 要求メッセージがルール エンジンに渡されます。  
   
 > [!NOTE]
->  [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] ある samplebtarnpolicy.xml という名前のサンプルのビジネス ルール ポリシーが提供されます\<*ドライブ*\>: Microsoft BizTalk Accelerator for RosettaNet \Program Files\\<バージョン\>\SDK\PipAutomation\3A4 します。 詳細については、[サンプル BTARN ビジネス ポリシー](../../adapters-and-accelerators/accelerator-rosettanet/sample-btarn-business-policy.md)を参照してください。  
+>  [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] ある samplebtarnpolicy.xml という名前のサンプルのビジネス ルール ポリシーが提供されます\<*ドライブ*\>: Microsoft BizTalk Accelerator for RosettaNet \Program Files\\<バージョン\>\SDK\PipAutomation\3A4 します。 詳細については、次を参照してください。[サンプル BTARN ビジネス ポリシー](../../adapters-and-accelerators/accelerator-rosettanet/sample-btarn-business-policy.md)します。  
   
  このサンプルを使用するには、ビジネス ルールを設定する必要があります。 メッセージがビジネス ルールに適合すると、受信アクション メッセージが MessagesToLOB テーブルに保存され、Delivered Status が 2 に設定されます。 この要求の確認を生成する必要がないことを基幹業務アプリケーションが認識できるように、[Delivered] 列の値はゼロ以外である必要があります。 次に、3A4 要求メッセージが 3A4 確認メッセージにマップされ、`SubmitRNIF` メソッドを使用して応答が MessageStorageIn テーブルに送信されます。  
   

@@ -16,21 +16,21 @@ caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a4d55456a78c126eec3d14c3b26852d488da3b5b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a635ce657109a0bf4671e83aaade3e23ac05a886
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36991219"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65334996"
 ---
 # <a name="how-to-remove-bam-alerts"></a>BAM 警告を削除する方法
 管理者を使用して、**削除アラート**指定されたビューからすべてのアラートを削除するコマンド。  
   
 ### <a name="to-remove-bam-alerts"></a>BAM 警告を削除するには  
   
-1. 次のように、コマンド プロンプトを開きます: をクリックして**開始**、 をクリックして**実行**、型**cmd**、順にクリックします**OK**。  
+1. 次のように、コマンド プロンプトを開きます。をクリックして**開始**、 をクリックして**実行**、型**cmd**、順にクリックします**OK**。  
   
-2. [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking に移動します。  
+2. 移動します[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]追跡します。  
   
 3. 型**bm 削除-アラートの表示:\<ビュー名\>** します。  
   

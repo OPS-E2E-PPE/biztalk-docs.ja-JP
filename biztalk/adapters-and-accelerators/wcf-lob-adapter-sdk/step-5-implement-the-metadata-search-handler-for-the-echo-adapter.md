@@ -1,5 +1,5 @@
 ---
-title: '手順 5: エコー アダプターのメタデータ検索ハンドラーの実装 |Microsoft Docs'
+title: 手順 5:エコー アダプターのメタデータ検索ハンドラーの実装 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 29768fa47fd26f32308d517f175d906ec088ff7b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 764f5ff5bdd95ad51cfc5cc9c7495c27905131f2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37004091"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65363141"
 ---
-# <a name="step-5-implement-the-metadata-search-handler-for-the-echo-adapter"></a>手順 5: エコー アダプターのメタデータ検索ハンドラーを実装します。
+# <a name="step-5-implement-the-metadata-search-handler-for-the-echo-adapter"></a>手順 5:エコー アダプターのメタデータ検索ハンドラーを実装します。
 ![手順 5. の 9](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-5of9.gif "Step_5of9")  
   
  **所要時間:** 30 分  
@@ -29,7 +29,7 @@ ms.locfileid: "37004091"
  最初に、このインターフェイスを実装する方法の理解を深めるために、EchoAdapterMetadataSearchHandler クラスを更新する方法を設定する`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`オブジェクト、および検索結果を表示する方法、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]ツール。  
   
 ## <a name="prerequisites"></a>前提条件  
- この手順を開始する前に完了[手順 4: エコー アダプターのメタデータ参照ハンドラーを実装する](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-4-implement-the-metadata-browse-handler-for-the-echo-adapter.md)します。 次のクラスについて明確に理解も必要です。  
+ この手順を開始する前に完了[手順 4。エコー アダプターのメタデータ参照ハンドラーを実装する](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-4-implement-the-metadata-browse-handler-for-the-echo-adapter.md)します。 次のクラスについて明確に理解も必要です。  
   
 -   `Microsoft.ServiceModel.Channels.MetadataRetrievalNode`
   
@@ -173,7 +173,7 @@ Echo/EchoGreetingFromFile, outbound operation
 8.  **[ビルド]** メニューの **[ソリューションのビルド]** をクリックします。 プロジェクトを正常にコンパイルする必要があります。 そうでない場合は、上記のすべての手順に従っていることを確認します。  
   
     > [!NOTE]
-    >  これで作業が保存されました。 安全にこの時点で Visual Studio を閉じて、次の手順に進むまたは[手順 6: エコー アダプターのメタデータ解決ハンドラーを実装する](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-6-implement-the-metadata-resolve-handler-for-the-echo-adapter.md)します。  
+    >  これで作業が保存されました。 安全にこの時点で Visual Studio を閉じて、次の手順に進むまたは[手順 6。エコー アダプターのメタデータ解決ハンドラーを実装する](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-6-implement-the-metadata-resolve-handler-for-the-echo-adapter.md)します。  
   
 ## <a name="what-did-i-just-do"></a>でしただけ何か。  
  だけ、エコー アダプターの機能を実装することで検索するメタデータが実装されている、`Microsoft.ServiceModel.Channels.Common.IMetadataSearchHandler.Search%2A`のメソッド、`Microsoft.ServiceModel.Channels.Common.IMetadataSearchHandler`インターフェイス。 具体的には、作成した、`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`オブジェクトのすべての操作を条件に一致しての配列が返されます、`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`オブジェクト。  
@@ -182,6 +182,6 @@ Echo/EchoGreetingFromFile, outbound operation
  機能、および送信および受信のメッセージ交換機能を解決するメタデータを実装します。 最後に、ビルドされ、エコー アダプターを展開します。  
   
 ## <a name="see-also"></a>参照  
- [手順 4: エコー アダプターのメタデータ参照ハンドラーを実装する.](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-4-implement-the-metadata-browse-handler-for-the-echo-adapter.md)   
- [手順 6: エコー アダプターのメタデータ解決ハンドラーを実装します。](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-6-implement-the-metadata-resolve-handler-for-the-echo-adapter.md)   
- [チュートリアル 1: エコー アダプターを開発する](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-1-develop-the-echo-adapter.md)
+ [手順 4:エコー アダプターのメタデータ参照ハンドラーを実装します。](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-4-implement-the-metadata-browse-handler-for-the-echo-adapter.md)   
+ [手順 6:エコー アダプターのメタデータ解決ハンドラーを実装します。](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-6-implement-the-metadata-resolve-handler-for-the-echo-adapter.md)   
+ [チュートリアル 1:エコー アダプターを開発する](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-1-develop-the-echo-adapter.md)

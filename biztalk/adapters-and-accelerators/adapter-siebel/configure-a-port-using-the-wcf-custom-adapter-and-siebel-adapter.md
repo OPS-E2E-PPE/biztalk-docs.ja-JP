@@ -13,12 +13,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: df6d9e9cea34a9bfd95765ad4d37f51fcf55f4ff
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: addb2d6e608053d2761948cb2cbe81d9421e8e16
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37017991"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65371930"
 ---
 # <a name="configure-a-port-using-the-wcf-custom-adapter-and-siebel-adapter"></a>Wcf-custom アダプターと Siebel アダプターを使用してポートを構成します。
 このトピックでは、Wcf-custom を構成する方法については送信ポートを使用して Siebel システムでの送信操作を実行する、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]します。  
@@ -44,7 +44,7 @@ ms.locfileid: "37017991"
   
 7. **Wcf-custom トランスポートのプロパティ** ダイアログ ボックスで、次の操作を行います。  
   
-   1. をクリックして、**全般** タブで、**アドレス (URI)** フィールドは、Siebel システムに接続する接続 URI を指定します。 接続 URI の詳細については、[Siebel システム接続 URI の作成](../../adapters-and-accelerators/adapter-siebel/create-the-siebel-system-connection-uri.md)を参照してください。  
+   1. をクリックして、**全般** タブで、**アドレス (URI)** フィールドは、Siebel システムに接続する接続 URI を指定します。 接続 URI の詳細については、次を参照してください。 [Siebel システム接続 URI の作成](../../adapters-and-accelerators/adapter-siebel/create-the-siebel-system-connection-uri.md)です。  
   
    2. **全般** タブで、**アクション**テキスト ボックスに、操作のアクションを入力します。 参照してください[メッセージとメッセージ スキーマ](messages-and-message-schemas-for-siebel-adapter-in-biztalk.md)の各操作のアクションの一覧。 たとえば、アカウントのビジネス コンポーネントに対する挿入操作を呼び出すアクションは。  
   
@@ -52,7 +52,7 @@ ms.locfileid: "37017991"
       http://Microsoft.LobServices.Siebel/2007/03/BusinessObjects/Account/Account/Insert  
       ```  
   
-   3. をクリックして、**バインド** タブとの間、**バインドの種類**ドロップダウン リストで、 **siebelBinding**します。 によって公開されるさまざまなバインドのプロパティを指定することも、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]します。 詳細については、[Siebel のバインドのプロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-siebel/read-about-biztalk-adapter-for-siebel-binding-properties.md)を参照してください。  
+   3. をクリックして、**バインド** タブとの間、**バインドの種類**ドロップダウン リストで、 **siebelBinding**します。 によって公開されるさまざまなバインドのプロパティを指定することも、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]します。 詳細については、次を参照してください。 [Siebel のバインドのプロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-siebel/read-about-biztalk-adapter-for-siebel-binding-properties.md)します。  
   
    4. をクリックして、**資格情報**タブし、次のいずれかの操作を行います。  
   
@@ -60,7 +60,7 @@ ms.locfileid: "37017991"
   
       - 選択、**使用してシングル サインオン**オプション、および、ESSO 関連アプリケーションを指定します。  
   
-        BizTalk Server に関するセキュリティの詳細については、[Siebel アダプターと BizTalk Server でセキュリティ](../../adapters-and-accelerators/adapter-siebel/security-with-siebel-adapter-and-biztalk-server.md)を参照してください。  
+        BizTalk Server に関するセキュリティの詳細については、次を参照してください。 [Siebel アダプターと BizTalk Server でセキュリティ](../../adapters-and-accelerators/adapter-siebel/security-with-siebel-adapter-and-biztalk-server.md)します。  
   
    5. 戻る、**送信ポートのプロパティ**ダイアログ ボックスで、をクリックして **[ok]** します。  
   

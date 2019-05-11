@@ -1,5 +1,5 @@
 ---
-title: EDI 受信確認構造 |Microsoft ドキュメント
+title: EDI 受信確認の構造 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,20 +12,20 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f52b14af05b009615ad0578702ffbc886603f818
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9cbbb6c1c505078dad24f85a6a9fce34920bc015
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22239090"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65530794"
 ---
 # <a name="edi-acknowledgment-structure"></a>EDI 受信確認構造
 このセクションのトピックでは、X12 および EDIFACT でエンコードされた受信確認メッセージの構造について説明します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [X12 TA1 受信確認](../core/x12-ta1-acknowledgment.md)  
+-   [X12 TA1 確認](../core/x12-ta1-acknowledgment.md)  
   
 -   [X12 997 受信確認](../core/x12-997-acknowledgment.md)  
   
--   [EDIFACT CONTRL 受信確認](../core/edifact-contrl-acknowledgment.md)
+-   [EDIFACT CONTRL 確認](../core/edifact-contrl-acknowledgment.md)

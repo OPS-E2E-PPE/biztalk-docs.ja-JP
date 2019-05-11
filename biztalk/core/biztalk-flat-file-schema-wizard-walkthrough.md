@@ -1,5 +1,5 @@
 ---
-title: BizTalk フラット ファイル スキーマ ウィザード チュートリアル |Microsoft ドキュメント
+title: BizTalk フラット ファイル スキーマ ウィザードのチュートリアル |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,17 +12,17 @@ caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 126e00af41de2a06cb6f82c4ae8e45d66583a2a4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: cf051f93acabd6453077ca988eff1d6f7bb05e4b
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22230458"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65530472"
 ---
 # <a name="biztalk-flat-file-schema-wizard-walkthrough"></a>BizTalk フラット ファイル スキーマ ウィザードのチュートリアル
-次のチュートリアルは、BizTalk フラット ファイル スキーマ ウィザードで、フラット ファイル ドキュメント インスタンスからフラット ファイル スキーマを作成する方法を示すものです。  
+次のチュートリアルでは、BizTalk フラット ファイル スキーマ ウィザードを使用して、フラット ファイル ドキュメント インスタンスからフラット ファイル スキーマを作成する方法を示します。  
   
- インターチェンジ インスタンスからフラット ファイル スキーマを作成するには、最初にチュートリアルで説明されている手順に従ってドキュメント スキーマを作成します。ただし、[ドキュメント データを選択] 画面ではインターチェンジ インスタンス全体を選択するのではなく、インターチェンジ インスタンスの中で個別のドキュメント構造を記述している部分のみを選択します。 ドキュメント スキーマを作成したら、次にエンベロープ スキーマを定義します。 エンベロープ スキーマを定義して、ドキュメント スキーマとエンベロープ スキーマで使用するためのパイプライン コンポーネントの構成に関する詳細については、次を参照してください[エンベロープ スキーマ](../core/envelope-schemas.md)と[XML アセンブラのパイプラインを構成する方法。コンポーネント](../core/how-to-configure-the-xml-assembler-pipeline-component.md)です。  
+ インターチェンジ インスタンスからフラット ファイル スキーマを作成する最初に作成するドキュメント スキーマで次のチュートリアルで説明されている手順でインターチェンジ インスタンスから個別のドキュメントの構造を記述している部分のみを選択しますインターチェンジ インスタンス全体を選択する代わりに ドキュメント データの画面を選択します。 次に、エンベロープ スキーマを定義します。 エンベロープ スキーマを定義して、ドキュメント スキーマとエンベロープ スキーマで使用するためのパイプライン コンポーネントの構成の詳細については、次を参照してください[エンベロープ スキーマ](../core/envelope-schemas.md)と[XML アセンブラのパイプラインを構成する方法。コンポーネント](../core/how-to-configure-the-xml-assembler-pipeline-component.md)します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

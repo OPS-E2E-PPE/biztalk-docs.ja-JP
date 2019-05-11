@@ -1,5 +1,5 @@
 ---
-title: '手順 1: を作成し、一般的なヘッダーと確認スキーマの展開 |Microsoft Docs'
+title: 手順 1:一般的なヘッダーと確認スキーマ作成および展開 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,14 +14,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 988c2922d09412aa248c08c36e727709d45e5a66
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f2ae4efd252f2927a85a59426206fac53fb8b996
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36989267"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65289069"
 ---
-# <a name="step-1-create-and-deploy-common-header-and-acknowledgment-schemas"></a>手順 1: を作成し、一般的なヘッダーと確認スキーマをデプロイします。
+# <a name="step-1-create-and-deploy-common-header-and-acknowledgment-schemas"></a>手順 1:一般的なヘッダーと確認スキーマ作成およびデプロイ
 メッセージ インスタンスのヘッダー (MSH セグメント) を検証するのにには、ヘッダー スキーマを使用します。 受信確認メッセージのインスタンスを生成するのにには、受信確認スキーマを使用します。 このプロセスは、HL7 スキーマのすべてのバージョン間で共通です。  
   
 ### <a name="to-create-the-header-and-acknowledgment-schemas"></a>ヘッダーと受信確認スキーマを作成するには  
@@ -40,7 +40,7 @@ ms.locfileid: "36989267"
   
     Visual Studio は開いたままにしておきます。  
   
-## <a name="step-1a-assign-a-strong-key-to-the-assembly-and-deploy"></a>手順 1 a: アセンブリに厳密なキーを割り当てるとデプロイ  
+## <a name="step-1a-assign-a-strong-key-to-the-assembly-and-deploy"></a>手順 1 a:アセンブリに厳密なキーを割り当てるとデプロイ  
  アセンブリに厳密なキーを割り当てるし、アセンブリを配置するには、次の手順を使用します。  
   
 #### <a name="to-assign-a-strong-key-and-deploy-the-assembly"></a>強力なキーを割り当てるし、アセンブリを展開するには  
@@ -69,4 +69,4 @@ ms.locfileid: "36989267"
    > [!NOTE]
    >  デプロイの適切なメッセージが表示されない場合は、使用[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]デプロイのトラブルシューティングを行う。  
   
-   進みます[手順 2: V2.4 の一般的なスキーマを作成する](../../adapters-and-accelerators/accelerator-hl7/step-2-create-common-schemas-for-v2-4.md)します。
+   続行する[手順 2。V2.4 の一般的なスキーマを作成する](../../adapters-and-accelerators/accelerator-hl7/step-2-create-common-schemas-for-v2-4.md)します。

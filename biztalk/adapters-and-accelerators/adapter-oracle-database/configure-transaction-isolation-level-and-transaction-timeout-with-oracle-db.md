@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3fa97e17f29775059c6f8d80818a177cd640abd4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b7b0969feb6d22ea05e054c17ad4f584009e1b19
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36970131"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65529472"
 ---
 # <a name="configure-transaction-isolation-level-and-transaction-timeout-with-oracle-database"></a>Oracle データベースとトランザクション分離レベルとトランザクションのタイムアウトを構成します。
 使用して受信操作 (ポーリング) を実行中に、[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]で[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]、トランザクション分離レベルとトランザクションのタイムアウト値を適切に構成する必要があります。 これを行うには :  
@@ -46,10 +46,10 @@ ms.locfileid: "36970131"
 
 12. 左側のウィンドウで、 **Wcf-custom トランスポートのプロパティ**を選択、 **oracleDBAdapterInboundTransactionBehavior**サービス**ServiceBehavior**します。  
 
-13. 右側のウィンドウで、 **Wcf-custom トランスポートのプロパティ**、適切な値を指定、 **transactionIsolationLevel**と**transactionTimeout**パラメーター。 次のトランザクション分離レベルのいずれかを選択することができます: **Serializable**、 **RepeatableRead**、 **ReadCommitted**、 **ReadUncommitted**、**スナップショット**、**混乱**、および**未指定**します。 これらのトランザクション分離レベルについては、、**メンバー**セクションで[ http://go.microsoft.com/fwlink/?LinkId=126983](http://go.microsoft.com/fwlink/?LinkId=126983)を参照してください。  
+13. 右側のウィンドウで、 **Wcf-custom トランスポートのプロパティ**、適切な値を指定、 **transactionIsolationLevel**と**transactionTimeout**パラメーター。 次のトランザクション分離レベルのいずれかを選択できます。**シリアル化可能な**、 **RepeatableRead**、 **ReadCommitted**、 **ReadUncommitted**、**スナップショット**、 **Chaos**、および**未指定**します。 これらのトランザクション分離レベルについては、次を参照してください。、**メンバー**セクションで[ http://go.microsoft.com/fwlink/?LinkId=126983](http://go.microsoft.com/fwlink/?LinkId=126983)します。  
 
     > [!IMPORTANT]
-    >  [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]次の 2 つのトランザクション分離レベルのみをサポートしています。 ReadCommitted および Serializable。  
+    >  [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]次の 2 つのトランザクション分離レベルのみをサポートしています。ReadCommitted とシリアル化可能な。  
 
      ![トランザクション分離レベルの設定](../../adapters-and-accelerators/adapter-oracle-database/media/96a66f86-0321-4aa6-9e72-ada30d7de064.gif "96a66f86-0321-4aa6-9e72-ada30d7de064")  
 

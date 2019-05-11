@@ -17,12 +17,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f70be6d66d0ba8aa3385760bfc17b4b19f50351a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2489a8c26d418782e661629afd65f3bafd3b03ff
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36984747"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65289592"
 ---
 # <a name="setting-up-a-send-port-for-receiving-acks"></a>Ack を受信するための送信ポートの設定
 Microsoft BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 一方向の送信ポートで受信確認 (ACK) を受信することができます。 同じ接続の Ack を受信するための新しい一方向の送信ポートを設定するときは、その送信を関連付ける必要があります、一方向のポートの受信ポート。  
@@ -49,7 +49,7 @@ Microsoft BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../
   
 3.  **トランスポート**セクションの**型**を選択します**MLLP**します。  
   
-4.  クリックして**構成**します。  
+4.  をクリックして**構成**です。  
   
 5.  MLLP トランスポートのプロパティ ダイアログ ボックスで、ホストと接続の名前を入力します (たとえば、 **localhost**)。  
   

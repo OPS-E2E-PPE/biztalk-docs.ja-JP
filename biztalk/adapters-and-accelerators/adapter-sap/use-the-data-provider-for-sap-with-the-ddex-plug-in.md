@@ -16,17 +16,17 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 344467367e5745ab089c3f70be017759d22ba8b1
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 552d77518e7e7481efa2ee5eb5dda6908662429c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36970693"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65372069"
 ---
 # <a name="use-the-data-provider-for-sap-with-the-ddex-plug-in"></a>DDEX プラグインで SAP 用データ プロバイダーを使用します。
 インストールした場合、[!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)]と共に、 [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] 、インストール、セットアップ プログラムによって、 [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] DDEX プラグイン。 使用して、SAP オブジェクトを参照するこのプラグインを使用することができます[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]します。 このセクションでは、DDEX プラグインの使用に関する情報を提供します。  
   
- プラグインを使用して、SAP システムからテーブルを追加、SAP システムとの接続を確立し、SAP システムから関数モジュールを追加します。 テーブルと Visual Studio プラグインを使用して、関数モジュールを追加した後は、新しく追加されたテーブルと関数モジュールが SAPDiscoveredObjects.xml ファイルに反映されます。 このファイルの詳細については、[について SAPDiscoveredObjects.xml ファイル sap](../../adapters-and-accelerators/adapter-sap/about-the-sapdiscoveredobjects-xml-file-in-sap.md)を参照してください。  
+ プラグインを使用して、SAP システムからテーブルを追加、SAP システムとの接続を確立し、SAP システムから関数モジュールを追加します。 テーブルと Visual Studio プラグインを使用して、関数モジュールを追加した後は、新しく追加されたテーブルと関数モジュールが SAPDiscoveredObjects.xml ファイルに反映されます。 このファイルの詳細については、次を参照してください。[について SAPDiscoveredObjects.xml ファイル sap](../../adapters-and-accelerators/adapter-sap/about-the-sapdiscoveredobjects-xml-file-in-sap.md)します。  
   
 ## <a name="prerequisites"></a>前提条件  
  インストールするかどうかを確認、[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]と共に、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]インストールします。  

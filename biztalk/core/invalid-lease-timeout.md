@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5632ba534240b1d557e525345fcd8b96a4e43344
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f014edbeb11da7495c0760afaadd28262926b827
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36990723"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65330857"
 ---
 # <a name="invalid-lease-timeout"></a>リース タイムアウトが無効です
 ## <a name="details"></a>詳細  
@@ -30,12 +30,12 @@ ms.locfileid: "36990723"
 |  イベント ソース   |                                            0                                            |
 |    コンポーネント    |                                            0                                            |
 |  シンボル名  |                                            0                                            |
-|  メッセージ テキスト   | リース タイムアウトが無効です。 有効な範囲: 0 ~ 23 時間、0 ~ 59 分、および 0 ~ 59 秒 |
+|  メッセージ テキスト   | 無効なリース タイムアウトします。 有効範囲:0 ~ 23 時間、0 ~ 59 分、および 0 ~ 59 秒 |
 
 ## <a name="explanation"></a>説明  
 
 ## <a name="user-action"></a>ユーザーの操作  
- タイムアウト設定を構成するには、次の手順を実行します。  
+ タイムアウト設定を構成するのにには、次の手順を使用します。  
 
 #### <a name="to-configure-the-timeout-settings"></a>タイムアウト設定を構成するには  
 
@@ -43,7 +43,7 @@ ms.locfileid: "36990723"
 
 2. コンソール ルートで  [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]、展開**BizTalk グループ**、展開**アプリケーション**します。  
 
-3. アプリケーションを特定し、次にトランスポートを特定します。  
+3. アプリケーションを見つけて、トランスポートを特定します。  
 
 4. トランスポート名を右クリックします。  
 
@@ -51,8 +51,8 @@ ms.locfileid: "36990723"
 
 6. ポート**型**一覧で、 **Wcf-nettcp**します。  
 
-7. クリックして**構成**します。  
+7. をクリックして**構成**です。  
 
 8. **Wcf-nettcp トランスポートのプロパティ**ダイアログ ボックスで、をクリックして、**バインド**タブ。  
 
-9. **接続プール設定**セクションを確認してください、**リース タイムアウト (hh:mm:ss)** 範囲が無効です。 使用可能な値は、0 ～ 23 時間、0 ～ 59 分、0 ～ 59 秒です。
+9. **接続プール設定**セクションを確認してください、**リース タイムアウト (hh:mm:ss)** 範囲が無効です。 指定できる値は、0 ~ 23 時間、0 ~ 59 分、および 0 ~ 59 秒です。

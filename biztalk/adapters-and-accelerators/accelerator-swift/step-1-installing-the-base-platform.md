@@ -1,5 +1,5 @@
 ---
-title: '手順 1: 基本プラットフォームのインストール |Microsoft Docs'
+title: 手順 1:基本プラットフォームのインストール |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,14 +16,14 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6eaae10965aa240af86ee381a3504a4ec64c8fc2
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: bd3f901e31f0def313f3f8cf5cb3a9b8ea0dd16c
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36986955"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65529963"
 ---
-# <a name="step-1-installing-the-base-platform"></a>手順 1: 基本プラットフォームのインストール
+# <a name="step-1-installing-the-base-platform"></a>手順 1:基本プラットフォームのインストール
 基本プラットフォームが、インストールする Microsoft[!INCLUDE[btsWinSvr2k3](../../includes/btswinsvr2k3-md.md)]と[!INCLUDE[btsWinSvr2k3](../../includes/btswinsvr2k3-md.md)]既定のインストール オプションを使用して各サーバー上の Service Pack 2。 これらの推奨事項に従います。  
   
 ## <a name="pre-installation"></a>インストール前  

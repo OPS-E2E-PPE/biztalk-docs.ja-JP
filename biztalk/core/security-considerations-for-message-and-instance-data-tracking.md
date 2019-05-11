@@ -20,41 +20,41 @@ caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3ff40db932a7fa1932830289557e1e0bb71b61c7
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4cce159d9012b3fd52405114898f1a2b257a2297
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36974571"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65280309"
 ---
 # <a name="security-considerations-for-message-and-instance-data-tracking"></a>メッセージとインスタンス データの追跡のセキュリティに関する考慮事項
-セキュリティ上の理由により、メッセージとサービス インスタンスの追跡では、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の以前のリリースとは異なりブラウザーや URL を使用しません。 この監視オプションは BizTalk Server 管理コンソールの [グループの概要] ページに含まれています。  下位互換性のため、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ではセキュリティ上の理由からシェル内で Microsoft Internet Explorer をホストします。  
+セキュリティ上の理由から、メッセージとサービス インスタンスの追跡を使用しませんブラウザーや Url の以前のリリースのように[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]します。 この監視オプションは、BizTalk Server 管理コンソールの [グループ概要] ページの一部として含まれています。  旧バージョンと互換性のため、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]セキュリティ上の理由からシェル内で Microsoft Internet Explorer を引き続きホストします。  
 
- メッセージとサービス インスタンス データを追跡することで、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 環境のトラブルシューティングと最適化に必要な技術的な詳細にアクセスできます。 この追跡データは強力なので、実稼働環境ではアクセスを制限し、悪意のあるユーザーや未承認のユーザーが危害を及ぼさないようにしてください。 BizTalk Server 管理コンソールをセキュリティで保護して環境で使用するには、次のガイドラインに従うことをお勧めします。  
+ メッセージとサービス インスタンスのデータを追跡してトラブルシューティングし、最適化に必要な技術的な詳細を表示できます、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]環境。 この追跡データは、強力なであるために、悪質または不正なユーザーが危害を及ぼさないように、実稼働環境でアクセスを制限する必要があります。 セキュリティで保護して環境内で、BizTalk Server 管理コンソールを使用してこれらのガイドラインに従うことをお勧めします。  
 
-- BizTalk Server 管理コンソールを使用してデータを表示するには、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Operators グループのメンバーとしてログオンする必要があります。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールの [グループの概要] セクションのメッセージ本文にアクセスするには、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者グループのメンバーとしてログオンする必要があります。  
+- メンバーとしてログオンする必要があります、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Operators グループ、BizTalk Server 管理コンソールを使用してデータを表示します。 メッセージ本文のグループの概要のセクションにアクセスする、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールのメンバーとしてログオンする必要があります、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理者グループ。  
 
    メッセージとサービス インスタンスの追跡を使用すると、次のデータベースにアクセスできます。  
 
 
-  |               [データベース]               |                                                                                                   ユーザー グループ/アクセス許可                                                                                                   |
+  |               [データベース]               |                                                                                                   ユーザー/グループの権限                                                                                                   |
   |--------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-  |  BizTalk 管理 (BizTalkMgmtDb)  |              [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Operators               |
-  | BizTalk メッセージ ボックス (BizTalkMsgBoxDb) | [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Operators、または読み取り書き込みアクセス許可 |
-  |   BizTalk 追跡 (BizTalkDTADb)    | [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Operators、または読み取り専用アクセス許可  |
+  |  BizTalk 管理 (BizTalkMgmtDb)  |              [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者は、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]演算子               |
+  | BizTalk メッセージ ボックス (BizTalkMsgBoxDb) | [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者は、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Operators、または読み取り/書き込みアクセス許可 |
+  |   BizTalk 追跡 (BizTalkDTADb)    | [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者は、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Operators、または読み取り専用アクセス許可  |
 
 
-- メッセージとサービス インスタンスの追跡により、クエリのパラメーターに基づいて [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 環境のすべてのホストに関するレポートが生成されます。 情報漏えいの可能性を最小限に抑えるため、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者グループのメンバーのみが BizTalk Server 管理コンソールを使用してこれらのクエリを実行できます。 この追跡プロセスで生成されるデータに [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者の全員がアクセスできることを希望しない場合、データにアクセスするメンバーを制限するために、BizTalk 追跡 (BizTalkDTADb) データベースの SQL Server ロール HM_EVENT_WRITER と BAM_EVENT_WRITER に対して、ユーザーの追加と削除を行います。  
+- 追跡メッセージおよびサービスのインスタンスのすべてのホストに関するレポートを生成する、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]クエリのパラメーターに基づいて環境。 メンバーのみ、情報の漏えいの可能性を最小限に抑える、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administrators グループは、BizTalk Server 管理コンソールを使用して、これらのクエリを実行します。 ただし、すべてしない場合[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理者がデータにアクセスするこの追跡プロセスで生成してから、BizTalk のロール HM_EVENT_WRITER と BAM_EVENT_WRITER SQL Server の ユーザーの追加と削除、データへのアクセスを制限します。追跡 (BizTalkDTADb) データベース。  
 
-- SQL Server ロール BAM_EVENT_WRITER と HM_EVENT_WRITER は、追跡データベースの追跡データを読み取ったり書き込んだりする権限を管理者グループのメンバーに許可または拒否するために使用されます。その際、ロールのメンバーシップは使用されません。 これらの SQL Server ロールは削除しないでください。 追跡をホストしていないホストからホストを変更すると (またはその逆) adm_ChangeHostTrackingPrivilege ストアド プロシージャが呼び出されます。 このストアド プロシージャで、SQL Server ロール BAM_EVENT_WRITER と HM_EVENT_WRITER の定義が読み取られ、対応する GRANT/DENY ステートメントが Host Windows グループに適用されます。 この動作は、それぞれの SQL ロールに Host Windows グループを追加するのと同等の効果があります。  
+- BizTalk では、BAM_EVENT_WRITER と HM_EVENT_WRITER の SQL Server の役割を使用して、許可/拒否のメンバーがロールのメンバーシップではなく、追跡データベースに追跡データの読み取り/書き込みアクセスを許可します。 これらの SQL Server ロールは削除しないでください。 追跡をホストしていないホストからホストを変更すると (またはその逆) adm_ChangeHostTrackingPrivilege ストアド プロシージャが呼び出されます。 このストアド プロシージャは、BAM_EVENT_WRITER と HM_EVENT_WRITER の SQL Server ロールの定義を読み取って、ホスト Windows グループに対応する GRANT/DENY ステートメントを適用します。 これには、これらの SQL ロールに、ホスト Windows グループを追加すると同じ効果が得られます。  
 
-- アーカイブ済みのデータベースのデータを表示するように BizTalk Server 管理コンソールの基本設定を構成している場合、追跡クエリは現在アクティブな BizTalk 追跡 (BizTalkDTADb) データベースではなく、アーカイブ済みのデータが保存されているデータベースに接続されます。  
+- アーカイブ済みのデータベースからデータを表示する BizTalk Server 管理コンソールの基本設定を構成するときに、現在アクティブな BizTalk 追跡 (BizTalkDTADb) がアーカイブ済みのデータを保持するデータベースにここで、追跡クエリ接続します。データベース。  
 
-- ネットワーク アドレス変換 (NAT) ファイアウォールを経由してライブ オーケストレーションをデバッグすることはできません。 ライブ オーケストレーションをデバッグするには、処理ドメインに管理用のコンピューターを用意する必要があります。  
+- ネットワーク アドレス変換 (NAT) ファイアウォールを介したライブ オーケストレーションをデバッグすることはできません。 管理用コンピューターは、ライブ オーケストレーションをデバッグするには、処理ドメインが必要です。  
 
-- 追跡とパイプラインの構成の方法によっては、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] にメッセージ コンテキスト内の機密情報が保存される場合があります。 WMI または追跡を使用してメッセージ本文をファイルの場所に保存する場合、その場所の随意アクセス制御リスト (DACL) を強化して、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者のみにメッセージ本文の読み取りアクセス許可を与えるようにしてください。 メッセージ本文、および本文のアーカイブと復元が可能な BizTalk 以外のデータベースを保存する場所には、同一の DACL を適用します。  
+- 追跡およびパイプラインの構成方法に応じて[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]メッセージ コンテキストに含まれる機密情報を格納することがあります。 メッセージ本文をファイルの場所に保存する WMI または追跡を使用する場合は、場所がだけが強力な随意アクセス制御リスト (DACL) を持つことを確認[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理者がこれらのメッセージ本文へのアクセス許可を読み取る。 非 BizTalk データベースのアーカイブし、復元可能性がありますも含め、メッセージ本文を保存する任意の場所に同一の DACL を適用します。  
 
-- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者グループに、Tracking Analysis Server (BizTalkAnalysisDb) データベースへのアクセス許可を手動で与える必要があります。既定では、このデータベースにアクセスできるのは OLAP 管理者のみです。  
+- アクセス許可を手動で付与する必要があります、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administrators グループ、Tracking Analysis Server (BizTalkAnalysisDb) データベースへのアクセスに既定では、OLAP 管理者のみがあることへのアクセス許可。  
 
 ## <a name="see-also"></a>参照  
  [メッセージとインスタンスの追跡の計画](../core/planning-for-message-and-instance-tracking.md)   

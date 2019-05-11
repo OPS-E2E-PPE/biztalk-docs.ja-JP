@@ -15,19 +15,19 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d991125654e04167b026aa98c62c8ffdc7b2b8e2
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 995ed2a0214b9de3f50c7aac2298138da1d6df73
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37006019"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65529735"
 ---
 # <a name="system-trailers"></a>システム トレーラー
 システム トレーラーは、SWIFT メッセージの詳細を追加または特殊なを伝達します。 最初の 3 つのシステム トレーラーが存在する次の順序で出現します。 残りのシステム トレーラーは、任意の順序で発生します。  
   
 |トレーラー コード|名前|  
 |------------------|----------|  
-|**CHK**|Checksum|  
+|**CHK**|チェックサム|  
 |**SYS**|システムにメッセージが発生しました。|  
 |**TNG**|トレーニング|  
 |**PDM**|使用可能な重複するメッセージ|  

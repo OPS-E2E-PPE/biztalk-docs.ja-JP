@@ -23,12 +23,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d9500c11c2ff7c1931d6b3c5f6d724bcadf9c56f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ab079e2114eb606ef90e6c40d0857ec8668e1dca
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36997315"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65529622"
 ---
 # <a name="best-practices-to-secure-the-oracle-database-adapter"></a>Oracle データベース アダプターをセキュリティで保護するベスト プラクティス
 このセクションより完全に機密データの保護を使用して、使用するアプリケーションを開発したりするときに従うべきベスト プラクティス、[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]します。  
@@ -41,7 +41,7 @@ ms.locfileid: "36997315"
   
 - [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] Oracle データベースへの接続中に Windows 認証を使用してメタデータを生成し、使用するか、操作を実行することもできます[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]または[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]します。 Windows 認証を使用する前に記載された手順を実行する必要があります[Oracle データベースを使用して Windows 認証に接続する](../../adapters-and-accelerators/adapter-oracle-database/connect-to-the-oracle-database-using-windows-authentication.md)します。  
   
-  詳細については、[Oracle データベースとアダプター間のセキュリティ](../../adapters-and-accelerators/adapter-oracle-database/security-between-the-oracle-database-and-the-adapter.md)を参照してください。  
+  詳細については、次を参照してください。 [Oracle データベースとアダプター間のセキュリティ](../../adapters-and-accelerators/adapter-oracle-database/security-between-the-oracle-database-and-the-adapter.md)します。  
   
 ## <a name="security-best-practices-for-consuming-the-oracle-database-adapter-with-biztalk-server"></a>BizTalk Server と Oracle データベース アダプターを使用するためのセキュリティのベスト プラクティス  
   
@@ -55,7 +55,7 @@ ms.locfileid: "36997315"
   
 - [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]メタデータを生成してから操作を実行する Oracle データベースへの接続中に Windows 認証を使用することもできます[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]します。 Windows 認証を使用する前に記載された手順を実行する必要があります[Oracle データベースを使用して Windows 認証に接続する](../../adapters-and-accelerators/adapter-oracle-database/connect-to-the-oracle-database-using-windows-authentication.md)します。  
   
-  詳細については、[Oracle データベース アダプターと BizTalk Server でセキュリティ](../../adapters-and-accelerators/adapter-oracle-database/security-with-the-oracle-database-adapter-and-biztalk-server.md)を参照してください。
+  詳細については、次を参照してください。 [Oracle データベース アダプターと BizTalk Server でセキュリティ](../../adapters-and-accelerators/adapter-oracle-database/security-with-the-oracle-database-adapter-and-biztalk-server.md)します。
   
 ## <a name="security-best-practices-for-consuming-the-oracle-database-adapter-with-programming-solutions"></a>プログラミング ソリューションと Oracle データベース アダプターを使用するためのセキュリティのベスト プラクティス  
   
@@ -97,7 +97,7 @@ ms.locfileid: "36997315"
   
 - 場合[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]メッセージ ログが有効になっていると`logMessagesAtServiceLevel`は`true`、アダプター クライアントの間で交換されるメッセージのメッセージ ヘッダー (ただし、メッセージ本文ではありません)、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]ログに記録されます。 メッセージのアクションがメッセージ ヘッダーにあるため、操作で、クライアントが呼び出すことが表示されます、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]します。 場合`logEntireMessage`も`true`、メッセージ本文がログに記録されます。 データベースの機密情報を表示このことができます。  
   
-  診断トレースを有効にすると、セキュリティを向上させる詳細については、[セキュリティに関する注意事項とトレース用の役立つヒント](https://msdn.microsoft.com/library/ms733053.aspx)を参照してください。 メッセージのログ記録を有効にすると、セキュリティを向上させる詳細については、[メッセージ ログのセキュリティ関連事項](https://msdn.microsoft.com/library/ms730318.aspx)を参照してください。 
+  診断トレースを有効にすると、セキュリティを向上させる詳細については、次を参照してください。[セキュリティに関する注意事項とトレース用の役立つヒント](https://msdn.microsoft.com/library/ms733053.aspx)します。 メッセージのログ記録を有効にすると、セキュリティを向上させる詳細については、次を参照してください。[メッセージ ログのセキュリティ関連事項](https://msdn.microsoft.com/library/ms730318.aspx)します。 
   
 ## <a name="see-also"></a>参照  
 [Oracle データベース アプリケーションのセキュリティ保護](../../adapters-and-accelerators/adapter-oracle-database/secure-your-oracle-database-applications.md)

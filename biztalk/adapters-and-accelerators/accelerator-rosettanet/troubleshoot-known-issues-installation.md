@@ -10,17 +10,17 @@ ms.assetid: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c169a0871826aaaae9341f3ccafcb3e888ffbdbb
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 493a46d63fa85f181b2e019c307b7b5be66c9d72
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36974627"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65280442"
 ---
 # <a name="troubleshoot-the-installation-and-see-the-known-install-issues"></a>インストールのトラブルシューティングし、インストールの既知の問題を参照してください。
 
 
-## <a name="do-not-install-sql-server-on-the-domain-controller-computer"></a>ドメイン コントローラー コンピューターには SQL Server をインストールしない  
+## <a name="do-not-install-sql-server-on-the-domain-controller-computer"></a>ドメイン コント ローラー コンピューター上の SQL サーバーをインストールしません。  
  ドメイン コント ローラー コンピューターと同じコンピューターに SQL Server をインストールする場合は、SQL 送信ポートを作成する際、次のエラー メッセージを返します。  
 
 ```
@@ -33,7 +33,7 @@ BindingException: Could not validate TransportTypeData or Address properties for
 > [!IMPORTANT]
 >  ドメイン コント ローラーのコンピューターで SQL Server をインストールできません。  
 
-## <a name="service-account-for-the-application-pools-must-be-the-same-as-the-service-account-for-the-isolated-host-and-host-instances"></a>アプリケーション プールのサービス アカウントは分離ホストおよびホスト インスタンスのサービス アカウントと同じである必要がある  
+## <a name="service-account-for-the-application-pools-must-be-the-same-as-the-service-account-for-the-isolated-host-and-host-instances"></a>アプリケーション プールのサービス アカウントには、分離ホストとホスト インスタンスのサービス アカウントと同じである必要があります。  
  設定の BTARN アプリケーション プール サービス アカウントが別の分離ホスト アカウントの場合は、BTARN は受信メッセージが正しく処理されません。 受信 .aspx ページが、パイプラインを呼び出すと、パイプラインには適切な証明書へのアクセスはありません。 そのため、受信メッセージの暗号化を解除したりしない署名を検証します。 また、メッセージ ボックス データベースにアクセスすることができません。  
 
 
@@ -43,7 +43,7 @@ BindingException: Could not validate TransportTypeData or Address properties for
 ### <a name="btarn-http-front-end-feature-configuration-fails"></a>BTARN HTTP フロント エンド機能の構成が失敗します。  
  **問題**  
 
- カスタム インストールを実行して BTARN HTTP フロント エンド機能のみをインストールした場合は、セットアップの完了後に次のいずれかのエラーによって BTARN の構成に失敗する可能性があります: 
+ BTARN HTTP フロント エンド機能のみをインストールするカスタム インストールを実行する場合、次のエラーでセットアップが完了した後に、BTARN の構成が失敗します。 
 
 `Failed to create object for feature: WebApp`  
 
@@ -61,7 +61,7 @@ BindingException: Could not validate TransportTypeData or Address properties for
 
      同じ BizTalk Server コンピューターに Visual Studio がインストールされていない場合、2 つのファイルのソース フォルダーは <*ドライブ*>: \WINDOWS\WinSxS します。  
 
-2. コピーしたファイルを、BTARN HTTP フロント エンド機能をインストールしたコンピューターに追加します。 既定では、ファイルのコピー <*ドライブ*>: \Program Files\Microsoft BizTalk Accelerator for RosettaNet。  
+2. BTARN HTTP フロント エンド機能がインストールされているコンピューターにコピーしたファイルを追加します。 既定では、ファイルのコピー <*ドライブ*>: \Program Files\Microsoft BizTalk Accelerator for RosettaNet。  
 
 3. HTTP フロント エンド コンピューターにファイルをコピーした後、実行**Configuration.exe**もう一度です。  
 
@@ -72,17 +72,17 @@ BindingException: Could not validate TransportTypeData or Address properties for
 
  **解決方法**  
 
- BTARN を再インストールする前に GAC からアセンブリを削除します。  
+ BTARN を再インストールする前に、GAC からアセンブリを削除します。  
 
- 使用して、 **BtarnClean**ユーティリティ、SDK アセンブリを削除するからです。 このユーティリティは、次の操作を実行します。  
+ 使用して、 **BtarnClean**ユーティリティ、SDK アセンブリを削除するからです。 ユーティリティは、次の操作を実行します。  
 
-- すべての BTARN オーケストレーションを停止し、一覧から削除します。  
+- 停止し、すべての BTARN オーケストレーションの参加を解除します。  
 
-- 関連するすべてのポートを停止し、削除します。  
+- 停止し、関連するすべてのポートを削除します。  
 
 - すべての Microsoft.Solutions.BTARN.* アセンブリの展開を解除します。  
 
-  ユーティリティを実行した後も GAC にアセンブリが残っている場合は、Windows エクスプローラーを開き、"C:\Windows\Assembly" フォルダーに移動して、ファイル名の先頭が Microsoft.Solutions.BTARN のアセンブリを手動ですべて削除します。  
+  ユーティリティを実行した後、GAC にアセンブリが残ってがある場合は、Windows エクスプ ローラーを開き、"C:\Windows\Assembly"フォルダーに移動および Microsoft.Solutions.BTARN で始まるすべてのアセンブリを手動で削除します。  
 
 ### <a name="service-unavailable-error-on-64-bit-os"></a>64 ビット OS 上のサービス利用不可エラー
  **問題**  
@@ -91,7 +91,7 @@ BindingException: Could not validate TransportTypeData or Address properties for
 
  **原因**  
 
- この問題の原因として考えられるのは "RPCProxy.dll" ISAPI フィルターです。  
+ この問題は"RPCProxy.dll"ISAPI によって発生することができますフィルター。  
 
  **解決方法**  
 
@@ -112,7 +112,7 @@ BTARN は、混在モードで SQL Server をサポートしていません。
 
 \Program Files\Microsoft BizTalk Accelerator for rosettanet \sdk\pipautomation\doubleaction フォルダー Double Action PIPAutomation Orchestration サンプルを設定するには、setupx64.bat を実行します。
 
-### <a name="download-the-btarn-setup-file-from-the-web-to-a-temp-folder"></a>BTARN セットアップ ファイルの Web から一時フォルダーへのダウンロード  
+### <a name="download-the-btarn-setup-file-from-the-web-to-a-temp-folder"></a>BTARN セットアップ ファイルを Web から一時フォルダーにダウンロードします。  
  **問題**  
 
  BTARN の自己解凍形式実行可能ファイル、Web からダウンロードして実行可能ファイルの BizTalk 実行しようとしたときに、BizTalk Server のルート フォルダーに保存すると**セットアップ ウィザード**BTARN セットアップ ウィザードではなく、実行します。  

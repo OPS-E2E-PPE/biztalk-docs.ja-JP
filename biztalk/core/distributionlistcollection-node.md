@@ -1,5 +1,5 @@
 ---
-title: DistributionListCollection ノード |Microsoft ドキュメント
+title: DistributionListCollection ノード |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,19 +14,19 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3084aab8e4068c8d227183b000f74ecc867b0ba3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: fbcb3ddaf3a4654f272fc0cfad0c645502600a1c
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22239738"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65530864"
 ---
 # <a name="distributionlistcollection-node"></a>DistributionListCollection ノード
-バインド ファイルの DistributionListCollection ノードは、バインド ファイルと共にエクスポートされる同報リストに関する特定の情報を含む、すべての DistributionList ノードの親ノードです。  
+バインド ファイルの DistributionListCollection ノードは、すべてのバインド ファイルと共にエクスポートされる配布リストに関する特定の情報を含む DistributionList ノードの親ノードです。  
   
 ## <a name="nodes-in-the-distributionlistcollection-node"></a>DistributionListCollection ノード内のノード  
  次の表に、バインド ファイルのこのノードに設定できるプロパティを示します。  
   
-|**名前**|**ノード型**|**データ型**|**Description**|**制限**|**コメント**|  
+|**名前**|**ノードの種類**|**[データ型]**|**[説明]**|**制限**|**コメント**|  
 |--------------|-------------------|-------------------|---------------------|----------------------|------------------|  
 |[DistributionList](../core/distributionlist-distributionlistcollection-node.md)|レコード|DistributionList (ComplexType)|バインド ファイルと共にエクスポートされる同報リストに関する情報を指定します。|任意|既定値: なし|

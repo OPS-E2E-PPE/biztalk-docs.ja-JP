@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ede2d471ce935d11286c49cc7cfb53c0e7ea9d92
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 77dfd6fcd54edb1253eb153b4a3560b8bf6b6357
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37001427"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65369529"
 ---
 # <a name="message-schemas-for-the-executenonquery-executereader-and-executescalar-operations"></a>ExecuteNonQuery、ExecuteReader、ExecuteScalar 操作のメッセージ スキーマ
 [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)] SQL Server の任意の SQL ステートメントを実行する、ルート レベルで ExecuteNonQuery、ExecuteReader、executescalar 送信操作を公開します。  
@@ -31,7 +31,7 @@ ms.locfileid: "37001427"
 ## <a name="message-structure-for-the-executenonquery-executereader-and-executescalar-operations"></a>ExecuteNonQuery、ExecuteReader、ExecuteScalar 操作のメッセージの構造  
  これらの操作でメッセージが、要求-応答メッセージ交換パターンに従うし、次の表は、これらの要求と応答メッセージの構造を示します。  
   
-|演算|XML メッセージ|説明|  
+|操作|XML メッセージ|説明|  
 |---------------|-----------------|-----------------|  
 |ExecuteNonQuery 要求|`<ExecuteNonQuery xmlns="http://schemas.microsoft.com/Sql/2008/05/GenericTableOp/">    <Query>[PL/SQL STATEMENT1];[PL/SQL STATEMENT2];…</Query>  </ExecuteNonQuery>`|内で、`<Query>`タグをセミコロンで区切られた複数の PL/SQL ステートメントを指定することができます。|  
 |ExecuteNonQuery 応答|`<?xml version="1.0" encoding="utf-8" ?> <ExecuteNonQueryResponse xmlns="http://schemas.microsoft.com/Sql/2008/05/GenericTableOp/">   <ExecuteNonQueryResult>[value]</ExecuteNonQueryResult> </ExecuteNonQueryResponse>`|UPDATE、INSERT、および DELETE のステートメントの`[value]`PL/SQL ステートメントによって影響を受ける行の数を表す、 *ExecuteNonQuery 要求*メッセージ。 その他のすべての種類のステートメント、`[value]`は-1 です。|  
@@ -45,7 +45,7 @@ ms.locfileid: "37001427"
 ## <a name="message-action-for-the-executenonquery-executereader-and-executescalar-operations"></a>ExecuteNonQuery、ExecuteReader、ExecuteScalar 操作のメッセージのアクション  
  ExecuteNonQuery、ExecuteReader、executescalar 操作によって使用されるメッセージのアクションを次の表に示します。  
   
-|演算|操作|  
+|操作|操作|  
 |---------------|------------|  
 |ExecuteNonQuery 要求|GenericOp/ExecuteNonQuery|  
 |ExecuteNonQuery 応答|GenericOp/ExecuteNonQuery/応答|  

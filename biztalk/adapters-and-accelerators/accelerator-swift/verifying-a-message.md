@@ -15,12 +15,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5cdb64d95b970e8a1d526f3323cf2fcf0ae4d641
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4cff0cb63f88bf2b69dc01862bf8257864c00d54
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37012099"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65529645"
 ---
 # <a name="verifying-a-message"></a>メッセージの検証
 このセクションでは、修復が完了するメッセージを確認する方法について説明します。  
@@ -39,21 +39,21 @@ ms.locfileid: "37012099"
 
 6. **ファイルのダウンロード**ダイアログ ボックスで、をクリックして**オープン**します。  
 
-7. 現在のロールで: RekeyVerify ウィンドウの[!INCLUDE[btsOfficeNoVersion](../../includes/btsofficenoversion-md.md)] [!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)] 2007年ウィンドウで、をクリックして**エラー**します。 示すように、エラーを確認、**解析と XML の検証エラー**ボックスおよび**BRE 検証エラー**ボックス。  
+7. 現在のロール。RekeyVerify ウィンドウ、 [!INCLUDE[btsOfficeNoVersion](../../includes/btsofficenoversion-md.md)] [!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)] 2007年ウィンドウで、をクリックして**エラー**します。 示すように、エラーを確認、**解析と XML の検証エラー**ボックスおよび**BRE 検証エラー**ボックス。  
 
-8. [!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]フォームで、エラーの位置までスクロールし、エラーが修正されたことを確認します。 クリックして、元のエラーが確認できます**エラー**現在のロール: RekeyVerify ウィンドウで、エラー ウィンドウのいずれかでエラーを表示します。 クリックして、未修理、修正されたバージョンのメッセージを比較することもできます。**メッセージの詳細**、現在のロール: RekeyVerify ウィンドウ。  
+8. [!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]フォームで、エラーの位置までスクロールし、エラーが修正されたことを確認します。 クリックして、元のエラーがわかります**エラー**現在のロール。RekeyVerify ウィンドウで、およびエラー ウィンドウのいずれかでこのエラーを表示します。 クリックして、未修理、修正されたバージョンのメッセージを比較することもできます。**メッセージの詳細**、現在のロール。RekeyVerify ウィンドウです。  
 
-9. メッセージを検証するためには、次のようにクリックします。**検証**、現在のロール: RekeyVerify ウィンドウでは、順にクリックします**検証メッセージ**します。  
+9. メッセージを検証するためには、次のようにクリックします。**検証**、現在のロール。RekeyVerify ウィンドウで、をクリックし、**検証メッセージ**。  
 
    > [!NOTE]
-   >  結果ウィンドウの 現在のロールでのメッセージの検証: RekeyVerify ウィンドウにはキーを再入力する必要のあるメッセージのすべてのフィールドが示されます。 [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] 赤いアスタリスクが付けられてメッセージ ウィンドウでこれらのフィールドをマークします。  
+   >  [現在のロールでのメッセージの検証の結果ウィンドウ:RekeyVerify] ウィンドウでは、キーを再入力する必要のあるメッセージのすべてのフィールドを示します。 [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] 赤いアスタリスクが付けられてメッセージ ウィンドウでこれらのフィールドをマークします。  
 
 10. (データを送信する前に変更する必要があることを示す) 赤いアスタリスクでマークされたメッセージのウィンドウですべてのフィールドにデータを再入力します。  
 
     > [!NOTE]
-    >  クリックして、メッセージのフィールドにキーを再入力する必要があるデータを表示できる**メッセージの詳細**現在のロール: RekeyVerify ウィンドウで、フィールドに、元のメッセージをスクロールするとします。 これは、元のメッセージ内のキーを再入力フィールドのいずれかで検証エラーが発生した場合を除き、true を再入力すると、フィールドを修復する必要がある場合。  
+    >  クリックして、メッセージのフィールドにキーを再入力する必要があるデータを表示できる**メッセージの詳細**現在のロール。RekeyVerify ウィンドウとフィールドに、元のメッセージをスクロールします。 これは、元のメッセージ内のキーを再入力フィールドのいずれかで検証エラーが発生した場合を除き、true を再入力すると、フィールドを修復する必要がある場合。  
 
-11. をクリックして**検証**で、**現在のロール: RekeyVerify**ペイン、およびクリック**検証メッセージ**。 結果ウィンドウが、メッセージが表示されることを確認 **、メッセージが有効な**します。  
+11. クリックして**検証**で、**現在のロール。RekeyVerify**ペイン、およびクリック**検証メッセージ**します。 結果ウィンドウが、メッセージが表示されることを確認 **、メッセージが有効な**します。  
 
 12. クリックして**送信**で、 [!INCLUDE[btsOfficeNoVersion](../../includes/btsofficenoversion-md.md)] [!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)] 2007年ウィンドウ。  
 

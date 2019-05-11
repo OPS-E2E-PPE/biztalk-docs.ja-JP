@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6caa757624a33eaa514c56c9ea7324ff9a0cfb71
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 76a2ab91fb83b1b05d3dc3f54c1c76916681f21f
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36998851"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65530066"
 ---
 # <a name="supported-messages"></a>サポートされているメッセージ
 Microsoft [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] Microsoft と SWIFT のメッセージの一覧を示します。 メッセージは、以下に示すいくつかの金融カテゴリに分類されます。  
@@ -28,25 +28,25 @@ Microsoft [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-curr
   
 -   [SWIFT メッセージ - Microsoft](#fsa_intro_xtkj)  
   
--   [カテゴリ 0: FIN システム メッセージ](#fsa_intro_xcpk)  
+-   [カテゴリ 0:FIN システム メッセージ](#fsa_intro_xcpk)  
   
--   [カテゴリ 1: 顧客の支払いとチェック](#fsa_intro_lxnf)  
+-   [カテゴリ 1:顧客の支払いとチェック](#fsa_intro_lxnf)  
   
--   [カテゴリ 2: 金融機関の転送](#fsa_intro_fywg)  
+-   [カテゴリ 2:金融機関の転送](#fsa_intro_fywg)  
   
--   [外部の Exchange、Money 市場と派生物のカテゴリ 3: Treasury 市場](#fsa_intro_qipa)  
+-   [カテゴリ 3:外部の Exchange、Money 市場と派生 treasury 市場](#fsa_intro_qipa)  
   
--   [カテゴリ 4: コレクションと現金文字](#fsa_intro_ruuc)  
+-   [カテゴリ 4:コレクションと現金文字](#fsa_intro_ruuc)  
   
--   [カテゴリ 5: 米証券取引市場](#fsa_intro_iitn)  
+-   [カテゴリ 5:米証券取引市場](#fsa_intro_iitn)  
   
--   [カテゴリ 6: Treasury 市場貴金属](#fsa_intro_bjez)  
+-   [カテゴリ 6:財務市場貴金属](#fsa_intro_bjez)  
   
--   [カテゴリ 7: ドキュメンタリー クレジットと保証](#fsa_intro_vhkw)  
+-   [カテゴリ 7:ドキュメンタリー クレジットと保証](#fsa_intro_vhkw)  
   
--   [旅の小切手をカテゴリ 8:](#fsa_intro_qlwo)  
+-   [カテゴリ 8:旅小切手](#fsa_intro_qlwo)  
   
--   [カテゴリ 9: キャッシュの管理と顧客の状態](#fsa_intro_sptj)  
+-   [カテゴリ 9:キャッシュ管理、顧客の状態](#fsa_intro_sptj)  
   
 ##  <a name="fsa_intro_xtkj"></a> SWIFT メッセージ - Microsoft  
  次の表では、サービス型 GPA および FIN コントロールに対して Microsoft SWIFT メッセージについて説明します。  
@@ -74,8 +74,8 @@ Microsoft [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-curr
 |**42**|ログインの否定受信確認 (LNK)|  
 |**43**|否定受信確認 (SNK) を選択します。|  
   
-##  <a name="fsa_intro_xcpk"></a> カテゴリ 0: FIN システム メッセージ  
- 次の表に、メッセージ形式カテゴリ 0: SWIFT と SWIFT のユーザーにユーザーを含む、財務のシステム メッセージ。  
+##  <a name="fsa_intro_xcpk"></a> カテゴリ 0:FIN システム メッセージ  
+ 次の表では、カテゴリの 0 からのメッセージについて説明します。システム メッセージを財務、SWIFT と SWIFT のユーザーにユーザーを含むです。  
   
 |メッセージ型|説明|  
 |------------------|-----------------|  
@@ -137,8 +137,8 @@ Microsoft [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-curr
 |**MT 096**|中央機関メッセージにコピーする FIN|  
 |**MT 097**|FIN コピー メッセージの承認/拒否通知|  
   
-##  <a name="fsa_intro_lxnf"></a> カテゴリ 1: 顧客の支払いとチェック  
- 次の表に、カテゴリの 1 からのメッセージ: 支払いおよびチェックします。  
+##  <a name="fsa_intro_lxnf"></a> カテゴリ 1:顧客の支払いとチェック  
+ 次の表では、カテゴリの 1 からのメッセージについて説明します。支払いおよびチェックします。  
   
 |メッセージ型|説明|  
 |------------------|-----------------|  
@@ -163,8 +163,8 @@ Microsoft [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-curr
 |**MT 198**|独自のメッセージ|  
 |**MT 199**|無料の形式のメッセージ|  
   
-##  <a name="fsa_intro_fywg"></a> カテゴリ 2: 金融機関の転送  
- 次の表に、カテゴリ 2 からのメッセージ: 金融機関転送します。  
+##  <a name="fsa_intro_fywg"></a> カテゴリ 2:金融機関の転送  
+ 次の表では、カテゴリ 2 からのメッセージについて説明します。金融機関転送します。  
   
 |メッセージ型|説明|  
 |------------------|-----------------|  
@@ -187,8 +187,8 @@ Microsoft [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-curr
 |**MT 298**|独自のメッセージ|  
 |**MT 299**|無料の形式のメッセージ|  
   
-##  <a name="fsa_intro_qipa"></a> 外部の Exchange、Money 市場と派生物のカテゴリ 3: Treasury 市場  
- 次の表に、メッセージ カテゴリ 3: Treasury 市場外国為替、Money 市場、および派生クラス。  
+##  <a name="fsa_intro_qipa"></a> カテゴリ 3:外部の Exchange、Money 市場と派生 treasury 市場  
+ 次の表では、カテゴリ 3 からのメッセージについて説明します。Treasury 市場の外部の Exchange、Money 市場、および派生クラス。  
   
 |メッセージ型|説明|  
 |------------------|-----------------|  
@@ -220,14 +220,14 @@ Microsoft [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-curr
 |**MT 398**|独自のメッセージ|  
 |**MT 399**|無料の形式のメッセージ|  
   
-##  <a name="fsa_intro_ruuc"></a> カテゴリ 4: コレクションと現金文字  
- 次の表に、カテゴリ 4 からのメッセージ: コレクションと現金文字。  
+##  <a name="fsa_intro_ruuc"></a> カテゴリ 4:コレクションと現金文字  
+ 次の表では、カテゴリ 4 からのメッセージについて説明します。コレクションと現金文字。  
   
 |メッセージ型|説明|  
 |------------------|-----------------|  
 |**MT 400**|支払いのアドバイス|  
 |**MT 405**|コレクションをクリーンアップします。|  
-|**MT 410**|Acknowledgement|  
+|**MT 410**|受信確認|  
 |**MT 412**|受け入れのアドバイス|  
 |**MT 416**|非支払/非承認のアドバイス|  
 |**MT 420**|Tracer|  
@@ -244,8 +244,8 @@ Microsoft [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-curr
 |**MT 498**|独自のメッセージ|  
 |**MT 499**|無料の形式のメッセージ|  
   
-##  <a name="fsa_intro_iitn"></a> カテゴリ 5: 米証券取引市場  
- 次の表に、カテゴリ 5 からのメッセージ: 米証券取引市場です。  
+##  <a name="fsa_intro_iitn"></a> カテゴリ 5:米証券取引市場  
+ 次の表では、カテゴリ 5 からのメッセージについて説明します。米証券取引市場です。  
   
 |メッセージ型|説明|  
 |------------------|-----------------|  
@@ -317,8 +317,8 @@ Microsoft [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-curr
 |**MT 598**|独自のメッセージ|  
 |**MT 599**|無料の形式のメッセージ|  
   
-##  <a name="fsa_intro_bjez"></a> カテゴリ 6: Treasury 市場貴金属  
- 次の表に、カテゴリ 6 からのメッセージ: Treasury 市場貴金属、宝物市場のシンジケーション、および財務市場の一般的なメッセージ。  
+##  <a name="fsa_intro_bjez"></a> カテゴリ 6:財務市場貴金属  
+ 次の表では、カテゴリ 6 からのメッセージについて説明します。財務市場貴金属、宝物市場シンジケーション、および財務市場の一般的なメッセージ。  
   
 |メッセージ型|説明|  
 |------------------|-----------------|  
@@ -347,8 +347,8 @@ Microsoft [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-curr
 |**MT 698**|独自のメッセージ|  
 |**MT 699**|無料の形式のメッセージ|  
   
-##  <a name="fsa_intro_vhkw"></a> カテゴリ 7: ドキュメンタリー クレジットと保証  
- 次の表に、カテゴリ 7 からのメッセージ: ドキュメンタリー クレジットと保証します。  
+##  <a name="fsa_intro_vhkw"></a> カテゴリ 7:ドキュメンタリー クレジットと保証  
+ 次の表では、カテゴリ 7 からのメッセージについて説明します。ドキュメンタリー クレジットと保証します。  
   
 |メッセージ型|説明|  
 |------------------|-----------------|  
@@ -360,7 +360,7 @@ Microsoft [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-curr
 |**MT 711**|3 番目の銀行ドキュメンタリー クレジットのアドバイス|  
 |**MT 720**|ドキュメンタリー クレジットの転送|  
 |**MT 721**|ドキュメンタリー クレジットの転送|  
-|**MT 730**|Acknowledgement|  
+|**MT 730**|受信確認|  
 |**MT 732**|マットのアドバイス|  
 |**MT 734**|拒否されたのアドバイス|  
 |**MT 740**|承認を払い戻す|  
@@ -382,8 +382,8 @@ Microsoft [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-curr
 |**MT 798**|独自のメッセージ|  
 |**MT 799**|無料の形式のメッセージ|  
   
-##  <a name="fsa_intro_qlwo"></a> 旅の小切手をカテゴリ 8:  
- 次の表に、カテゴリ 8 からのメッセージ: 小切手を旅します。  
+##  <a name="fsa_intro_qlwo"></a> カテゴリ 8:旅小切手  
+ 次の表では、カテゴリ 8 からのメッセージについて説明します。旅小切手します。  
   
 |メッセージ型|説明|  
 |------------------|-----------------|  
@@ -406,8 +406,8 @@ Microsoft [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-curr
 |**MT 898**|MT 898 独自のメッセージ|  
 |**MT-899**|MT 899 の自由形式のメッセージ|  
   
-##  <a name="fsa_intro_sptj"></a> カテゴリ 9: キャッシュの管理と顧客の状態  
- 次の表に、カテゴリ 9 からのメッセージ: キャッシュの管理と顧客の状態。  
+##  <a name="fsa_intro_sptj"></a> カテゴリ 9:キャッシュ管理、顧客の状態  
+ 次の表では、カテゴリ 9 からのメッセージについて説明します。キャッシュ管理、顧客の状態。  
   
 |メッセージ型|説明|  
 |------------------|-----------------|  

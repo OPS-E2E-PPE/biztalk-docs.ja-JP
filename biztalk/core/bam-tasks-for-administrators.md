@@ -12,12 +12,12 @@ caps.latest.revision: 33
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 742eeffd496eaf43fbdd809f2610f2af64d04251
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2a7a6ba4459cbe5b9c92c20859b414ec6e694c59
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36996363"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65530538"
 ---
 # <a name="bam-tasks-for-administrators"></a>管理者の BAM タスク
 このトピックでは、BAM インフラストラクチャを管理する際に BAM 管理者が実行する一般的なタスクについて説明します。  
@@ -88,10 +88,10 @@ BAM が分散環境で実行されるように構成すると、警告や通知�
   
 6. 分散環境のすべてのコンピューターで、Notification Services を再起動します。  
   
-   複数コンピューター環境で BAM をインストールする方法の詳細については、[BAM インストールおよび構成 (ビジネス アクティビティ監視)、複数コンピューター環境で](http://go.microsoft.com/fwlink/p/?LinkID=208597)を参照してください。  
+   複数コンピューター環境で BAM をインストールする方法の詳細については、次を参照してください。 [BAM インストールおよび構成 (ビジネス アクティビティ監視)、複数コンピューター環境で](http://go.microsoft.com/fwlink/p/?LinkID=208597)します。  
   
 ### <a name="moving-the-bam-primary-import-database"></a>BAM プライマリ インポート データベースの移動  
- ハードウェアのアップグレードやスケールアップを行うときなど、ある時点で BAM プライマリ インポート データベースの移動が必要になる場合があります。 データベースを移動するには、バックアップ操作と復元操作を実行します。 このプロセスの詳細については、[をバックアップおよび復元する BAM](../core/backing-up-and-restoring-bam.md)を参照してください。  
+ ハードウェアのアップグレードやスケールアップを行うときなど、ある時点で BAM プライマリ インポート データベースの移動が必要になる場合があります。 データベースを移動するには、バックアップ操作と復元操作を実行します。 このプロセスの詳細については、次を参照してください。[をバックアップおよび復元する BAM](../core/backing-up-and-restoring-bam.md)します。  
   
 ### <a name="working-with-bam-definitions"></a>BAM 定義の操作  
  管理者は BAM 定義と密接にかかわっています。 BAM 定義の操作に使用する主なツールは BAM 管理ユーティリティです。 このユーティリティを使用すると、次のタスクを実行できます。  
@@ -102,11 +102,11 @@ BAM が分散環境で実行されるように構成すると、警告や通知�
   
 - ビューにセキュリティを設定する。 使用することができます、**アカウントの追加**と**削除アカウント**コマンドをユーザーに付与するアクセス権をビュー。  
   
-- アクティビティの分散ナビゲーションを構成する。 使用する、**参照を有効にする**と**無効にする参照**アクティビティの分散ナビゲーションを構成するコマンド。 アクティビティの分散ナビゲーションの詳細については、[を管理する分散ナビゲーションのリモート アクティビティ](../core/managing-distributed-navigation-of-remote-activities.md)を参照してください。  
+- アクティビティの分散ナビゲーションを構成する。 使用する、**参照を有効にする**と**無効にする参照**アクティビティの分散ナビゲーションを構成するコマンド。 アクティビティの分散ナビゲーションの詳細については、次を参照してください。[を管理する分散ナビゲーションのリモート アクティビティ](../core/managing-distributed-navigation-of-remote-activities.md)します。  
   
 - 変更を監査する。 BAM 動的インフラストラクチャを使用して変更を一覧表示、 **get 変更**コマンド。  
   
-  BAM 管理ユーティリティで使用できるすべてのコマンドについては、[BAM 管理ユーティリティ](../core/bam-management-utility.md)を参照してください。 BAM 管理ユーティリティを使用した BAM 定義の操作の例については、[BAM 動的インフラストラクチャの管理](../core/managing-the-bam-dynamic-infrastructure.md)を参照してください。  
+  BAM 管理ユーティリティで使用できるすべてのコマンドについては、次を参照してください。 [BAM 管理ユーティリティ](../core/bam-management-utility.md)します。 BAM 管理ユーティリティを使用した BAM 定義の操作の例については、次を参照してください。 [BAM 動的インフラストラクチャの管理](../core/managing-the-bam-dynamic-infrastructure.md)します。  
   
 ## <a name="configuring-multiple-biztalk-groups-to-reference-a-single-bam-database"></a>1 つの BAM データベースを参照する複数の BizTalk グループの構成  
  新しいまたは既存の BizTalk Server グループのいずれかを使用する BAM を構成する場合は、既に別の BizTalk Server グループで使用されている同じ BAM データベースを使用するグループを構成できます。  この方法で BAM を構成するには、次のタスクを実行する必要があります。  
@@ -116,7 +116,7 @@ BAM が分散環境で実行されるように構成すると、警告や通知�
 -   新しいグループに BAM を構成し、対象のプライマリ インポート テーブル (PIT) 用に構成されている情報を正確に入力します。 新しいグループの構成情報を入力するときに、既存のグループから収集されたすべての情報を使用して、新しいグループを構成します。ただし、BAM 警告ユーザーについては空白のままにする必要があります。  
   
 ## <a name="backing-up-and-restoring-bam"></a>BAM のバックアップと復元  
- 管理者は、ディザスター リカバリーの状況に備えて計画を行う必要があります。 BAM 分析、追跡分析、BAM スター スキーマ、BAM アーカイブ、および BAM プライマリ インポート データベースをバックアップして、これらを復元する状況に備える必要があります。  バックアップおよび BAM データベースを復元する方法については、[をバックアップおよび復元する BAM](../core/backing-up-and-restoring-bam.md)を参照してください。  
+ 管理者は、ディザスター リカバリーの状況に備えて計画を行う必要があります。 BAM 分析、追跡分析、BAM スター スキーマ、BAM アーカイブ、および BAM プライマリ インポート データベースをバックアップして、これらを復元する状況に備える必要があります。  バックアップおよび BAM データベースを復元する方法については、次を参照してください。[をバックアップおよび復元する BAM](../core/backing-up-and-restoring-bam.md)します。  
   
 ## <a name="working-with-renamed-servers"></a>名前を変更したサーバーの操作  
  サーバーの名前を変更するか、BAM インフラストラクチャをサーバー間で移動するとき、Excel ブックで BAM 定義を更新して、Excel ブックを更新する必要があります。  
@@ -147,9 +147,9 @@ BAM が分散環境で実行されるように構成すると、警告や通知�
 ## <a name="managing-alerts"></a>警告の管理  
  管理者は、いくつかの方法で警告を管理することができます。  
   
- BAM 管理ユーティリティを使用して、警告の展開と削除を実行できます。 このユーティリティは、警告の有効化と無効化だけでなく、サブスクリプションの追加と削除にも使用できます。 詳細については、BAM 管理ユーティリティを使用して、[BAM 管理ユーティリティ](../core/bam-management-utility.md)、 [BAM セキュリティの管理](../core/managing-bam-security.md)、および[BAM 定義を管理する](../core/managing-bam-definitions.md)を参照してください。  
+ BAM 管理ユーティリティを使用して、警告の展開と削除を実行できます。 このユーティリティは、警告の有効化と無効化だけでなく、サブスクリプションの追加と削除にも使用できます。 詳細については、BAM 管理ユーティリティを使用して、次を参照してください。 [BAM 管理ユーティリティ](../core/bam-management-utility.md)、 [BAM セキュリティの管理](../core/managing-bam-security.md)、および[BAM 定義を管理する](../core/managing-bam-definitions.md)します。  
   
- BAM ポータルを使用して、警告の作成や削除を行うこともできます。  BAM ポータルを使用してアラートを作成する方法の詳細については、[BAM ポータルでのアクティビティの検索](../core/activity-searches-in-the-bam-portal.md)を参照してください。  
+ BAM ポータルを使用して、警告の作成や削除を行うこともできます。  BAM ポータルを使用してアラートを作成する方法の詳細については、次を参照してください。 [BAM ポータルでのアクティビティの検索](../core/activity-searches-in-the-bam-portal.md)します。  
   
 ### <a name="cleaning-up-the-alerts-chronicle-table"></a>警告記録テーブルのクリーンアップ  
  BAM 警告が構成されている場合、作成される各アクティビティ ビューに対して SQL ジョブが作成されます。 次のテンプレートを使用して、ジョブに名前が付けられます。  

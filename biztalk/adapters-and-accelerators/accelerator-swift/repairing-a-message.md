@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f9edb8f9cc3c5db67e75ff47125e0d58891a5173
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5ae521b67445073dbb66f625f8eb5bababe8976b
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36992043"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65530074"
 ---
 # <a name="repairing-a-message"></a>メッセージの修復
 このセクションでは、検証が失敗したメッセージを修復する方法について説明します。  
@@ -41,12 +41,12 @@ ms.locfileid: "36992043"
 7. [!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]フォーム、エラーの場所にスクロールし、エラーを修正します。 XML 検証エラーは、エラーは赤で強調表示されます。  
 
    > [!NOTE]
-   >  BRE の検証エラーが赤で強調表示されませんが、[!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]フォーム。 BRE の検証エラーに関する詳細については、[SWIFT エラー コード](../../adapters-and-accelerators/accelerator-swift/swift-error-codes.md)を参照してください。  
+   >  BRE の検証エラーが赤で強調表示されませんが、[!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]フォーム。 BRE の検証エラーに関する詳細については、次を参照してください。 [SWIFT エラー コード](../../adapters-and-accelerators/accelerator-swift/swift-error-codes.md)します。  
    > 
    > [!NOTE]
    >  ドロップダウン リストでは、関連付けられているフィールドに、エラーが発生した場合、エラーの原因となった元の値を表示することができなきます。 フィールドが表示されます"Select"元の値の代わりにします。 ドロップダウン リストから適切な値を選択します。  
 
-8. メッセージを検証するためには、次のようにクリックします。**検証**、現在のロール: ウィンドウを修復し、順にクリックします**検証メッセージ**します。 結果ペインが表示されることを確認 **、メッセージが有効な**します。  
+8. メッセージを検証するためには、次のようにクリックします。**検証**、現在のロール。ウィンドウを修復し、をクリックし、**検証メッセージ**します。 結果ペインが表示されることを確認 **、メッセージが有効な**します。  
 
 9. [!INCLUDE[btsOfficeNoVersion](../../includes/btsofficenoversion-md.md)] [!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)] 2007年ウィンドウで、をクリックして**送信**します。  
 

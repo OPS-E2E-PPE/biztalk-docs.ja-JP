@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f2461a5542daaf701c90a76d26c31b72095d5aef
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 635706c4614c2d0e874a288068b8f8408bae0c75
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37010027"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65330907"
 ---
 # <a name="invalid-character-in-data-element"></a>データ要素に無効な文字があります
 ## <a name="details"></a>詳細  

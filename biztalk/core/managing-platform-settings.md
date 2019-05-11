@@ -1,5 +1,5 @@
 ---
-title: プラットフォームの設定を管理する |Microsoft ドキュメント
+title: プラットフォームの設定の管理 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,22 +16,22 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 27666e83fa1a4332105ac1f0391dc6d8ed247da2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 088f6fd17402c65be0ecc054b6d5dd6056089f35
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22262130"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531124"
 ---
-# <a name="managing-platform-settings"></a>プラットフォームの設定の管理
+# <a name="managing-platform-settings"></a>プラットフォームの設定を管理します。
 このセクションのトピックでは、ホスト、ホスト インスタンス、サーバー、メッセージ ボックス データベースの管理方法と、アダプターの使用方法について説明します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
 -   [BizTalk ホストとホスト インスタンスの管理](../core/managing-biztalk-hosts-and-host-instances.md)  
   
--   [サーバーを管理します。](../core/managing-servers.md)  
+-   [サーバーの管理](../core/managing-servers.md)  
   
 -   [メッセージ ボックス データベースの管理](../core/managing-messagebox-databases.md)  
   
--   [アダプターを使用します。](../core/using-adapters.md)
+-   [アダプターの使用](../core/using-adapters.md)

@@ -1,5 +1,5 @@
 ---
-title: 'レッスン 2: ビジネス ルールの作成ツールを使用して、展開の確認 |Microsoft Docs'
+title: レッスン 2:ビジネス ルールの作成ツールを使用して、展開の確認 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -18,14 +18,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1e9de00e6996daf5ce7759d395f6dfcf97989aa4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: eee5d380c47d429f5a09343b6157cdeab8e5fba6
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36997803"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65530368"
 ---
-# <a name="lesson-2-confirming-the-deployment-using-the-business-rule-composer-tool"></a>レッスン 2: ビジネス ルールの作成ツールを使用して、展開を確認します。
+# <a name="lesson-2-confirming-the-deployment-using-the-business-rule-composer-tool"></a>レッスン 2:展開をビジネス ルール作成ツールを使用して確認します。
 このレッスンでは、ビジネス ルール作成ツールは、ボキャブラリを作成し、ポリシーの展開を確認します。 ボキャブラリは、ルールの合成で使用するボキャブラリ要素のコレクションです。 ポリシーとはバージョン管理されたビジネス ルールのコレクションです。  
   
 ### <a name="to-confirm-the-deployment-using-the-business-rule-composer-tool"></a>ビジネス ルール作成ツールを使用して、展開を確認するには  
@@ -102,4 +102,4 @@ ms.locfileid: "36997803"
   
     ポリシーは、画面の右側にあるエディター ウィンドウが開きます。  
   
-   続行する[モジュール 7: 有効なフラット ファイル インスタンスをテスト](../../adapters-and-accelerators/accelerator-swift/module-7-testing-a-valid-flat-file-instance.md)します。
+   続行する[モジュール 7。有効なフラット ファイル インスタンスをテスト](../../adapters-and-accelerators/accelerator-swift/module-7-testing-a-valid-flat-file-instance.md)します。

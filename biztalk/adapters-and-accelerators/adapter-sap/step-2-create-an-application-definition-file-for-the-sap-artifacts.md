@@ -1,5 +1,5 @@
 ---
-title: '手順 2: SAP アイテム用のアプリケーション定義ファイルの作成 |Microsoft Docs'
+title: 手順 2:SAP アイテム用のアプリケーション定義ファイルの作成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,19 +16,19 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 92e97a54a6818456efd2f4ac55ca7e2fc5bc7c35
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b1d2953775a948aa20009cf419bd253cafc9a5e1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36970387"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65372821"
 ---
-# <a name="step-2-create-an-application-definition-file-for-the-sap-artifacts"></a>手順 2: SAP アイテム用のアプリケーション定義ファイルを作成します。
+# <a name="step-2-create-an-application-definition-file-for-the-sap-artifacts"></a>手順 2:SAP アイテム用のアプリケーション定義ファイルを作成します。
 ![手順 4 2](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-2of4.gif "Step_2of4")  
   
  **所要時間:** 15 分  
   
- **目標:** Microsoft SharePoint Server でビジネス データ カタログ機能を公開し、基幹業務 (LOB) アプリケーションからのデータがポータルに組み込まれています。 ポータル サイトにこのデータを組み込むには、Microsoft Office SharePoint Server を使用するアプリケーション定義ファイルをビルドする必要があります。  
+ **目標:** Microsoft SharePoint Server のビジネス データ カタログ機能は、公開し、基幹業務 (LOB) アプリケーションからのデータがポータルに組み込まれています。 ポータル サイトにこのデータを組み込むには、Microsoft Office SharePoint Server を使用するアプリケーション定義ファイルをビルドする必要があります。  
   
  Microsoft Office SharePoint Server 2007 SDK で使用可能なビジネス データ カタログ定義エディター ツールでは、ビジネス データ カタログ アプリケーション定義ファイルを作成することができます。 このツールでは、手動でファイルを作成するには、XML エディター必要はありませんので、定義ファイルの XML ファイルが自動的に生成されます。  
   
@@ -46,7 +46,7 @@ ms.locfileid: "36970387"
   
 -   Microsoft Office SharePoint Server 2007 SDK の一部としてインストールされているビジネス データ カタログ定義エディターであることを確認します。 SDK をダウンロードする[ http://go.microsoft.com/fwlink/?LinkId=104130](http://go.microsoft.com/fwlink/?LinkId=104130)します。  
   
--   WCF サービスに発行する」の説明に従って[手順 1: WCF サービスとしての SAP の成果物を公開](../../adapters-and-accelerators/adapter-sap/step-1-publish-the-sap-artifacts-as-a-wcf-service.md)します。  
+-   WCF サービスに発行する」の説明に従って[手順 1。SAP アイテムを WCF サービスとして発行](../../adapters-and-accelerators/adapter-sap/step-1-publish-the-sap-artifacts-as-a-wcf-service.md)します。  
   
 ## <a name="creating-an-application-definition-file"></a>アプリケーション定義ファイルを作成します。  
  このトピックでは、WCF サービスのアプリケーション定義ファイルを作成する手順を提供します。  
@@ -70,7 +70,7 @@ ms.locfileid: "36970387"
   
     Rfc.svc は、Rfc コントラクト用に作成されたファイルです。  
   
-    WCF サービスが、トピックの説明に従って、正常に発行されるかどうかをテストするときに、URL が使用可能な[手順 1: WCF サービスとしての SAP の成果物を公開](../../adapters-and-accelerators/adapter-sap/step-1-publish-the-sap-artifacts-as-a-wcf-service.md)します。  
+    WCF サービスが、トピックの説明に従って、正常に発行されるかどうかをテストするときに、URL が使用可能な[手順 1。SAP アイテムを WCF サービスとして発行](../../adapters-and-accelerators/adapter-sap/step-1-publish-the-sap-artifacts-as-a-wcf-service.md)します。  
   
 5. **[接続]** をクリックします。  
   
@@ -105,7 +105,7 @@ ms.locfileid: "36970387"
     5.  プロパティ ペインで次のように入力します。 **SalesOrder**で、**名前**ボックス。  
   
 ### <a name="specify-user-name-and-password-headers-for-the-methods"></a>メソッドのユーザー名とパスワードのヘッダーを指定します。  
- SAP システムで、選択した Rfc の WCF サービスを作成するときに、エンドポイント動作の構成の一部としてユーザー名とパスワードのヘッダーを指定します。 参照してください[手順 1: SAP アイテムを WCF サービスとして発行](../../adapters-and-accelerators/adapter-sap/step-1-publish-the-sap-artifacts-as-a-wcf-service.md)します。 メソッドのプロパティの同じ値を指定する必要があります。  
+ SAP システムで、選択した Rfc の WCF サービスを作成するときに、エンドポイント動作の構成の一部としてユーザー名とパスワードのヘッダーを指定します。 このトピックの「[手順 1:SAP アイテムを WCF サービスとして発行](../../adapters-and-accelerators/adapter-sap/step-1-publish-the-sap-artifacts-as-a-wcf-service.md)します。 メソッドのプロパティの同じ値を指定する必要があります。  
   
 ##### <a name="to-specify-user-name-and-password-headers"></a>ユーザー名とパスワードのヘッダーを指定するには  
   
@@ -152,7 +152,7 @@ ms.locfileid: "36970387"
   
 4.  **[OK]** をクリックします。  
   
-### <a name="requirement-1-search-for-customers-based-on-customer-name"></a>顧客名に基づいて顧客の要件 1: 検索  
+### <a name="requirement-1-search-for-customers-based-on-customer-name"></a>要件 1:顧客名に基づいて顧客の検索  
  顧客名に基づいて顧客の検索に使用できるアプリケーション定義ファイルを作成するには、次の一連のタスクを行う必要があります。  
   
 -   SD_RFC_CUSTOMER_GET メソッドでは、フィルターを作成し、顧客名を格納するパラメーターにマップします。  
@@ -205,7 +205,7 @@ ms.locfileid: "36970387"
   
      ![メソッド インスタンスの名前を指定](../../adapters-and-accelerators/adapter-sap/media/e44e02e8-b9fb-40ca-a55d-8bdc7ace02b5.gif "e44e02e8-b9fb-40ca-a55d-8bdc7ace02b5")  
   
-### <a name="requirement-2-retrieve-details-for-a-specific-customer-from-the-list-of-customers"></a>要件 2: 顧客の一覧から特定の顧客の詳細を取得します。  
+### <a name="requirement-2-retrieve-details-for-a-specific-customer-from-the-list-of-customers"></a>要件 2:顧客の一覧から特定の顧客の詳細を取得します。  
  顧客名に基づいて顧客の検索に使用できるアプリケーション定義ファイルを作成するには、次の一連のタスクを行う必要があります。  
   
 -   SD_RFC_CUSTOMER_GET メソッドでは、識別子を作成し、顧客番号を格納するパラメーターにマップします。  
@@ -268,7 +268,7 @@ ms.locfileid: "36970387"
   
      ![メソッド インスタンスの名前を指定](../../adapters-and-accelerators/adapter-sap/media/970f543c-cd06-4921-86c9-c110abdc7994.gif "970f543c-cd06-4921-86c9-c110abdc7994")  
   
-### <a name="requirement-3-retrieve-sales-order-details-for-a-specific-customer-from-the-list-of-customers"></a>要件 3: 顧客の一覧から特定の顧客の販売注文の詳細を取得します。  
+### <a name="requirement-3-retrieve-sales-order-details-for-a-specific-customer-from-the-list-of-customers"></a>要件 3:顧客の一覧から特定の顧客の販売注文の詳細を取得します。  
  特定の顧客の販売注文の詳細を取得するために使用するアプリケーション定義ファイルを作成するには、次の一連のタスクを行う必要があります。  
   
 -   間の関連付けを設定、**顧客**と**SalesOrder**エンティティ。  
@@ -353,7 +353,7 @@ ms.locfileid: "36970387"
 2.  Customer_Order.xml として保存します。  
   
 ## <a name="next-steps"></a>次の手順  
- SAP システムからデータを取得する SharePoint アプリケーションを作成する必要がありますようになりました。 参照してください[手順 3: SAP からデータを取得する SharePoint アプリケーションを作成](../../adapters-and-accelerators/adapter-sap/step-3-create-a-sharepoint-application-to-retrieve-data-from-sap.md)手順についてはします。  
+ SAP システムからデータを取得する SharePoint アプリケーションを作成する必要がありますようになりました。 参照してください[手順 3。SAP からデータを取得する SharePoint アプリケーションを作成](../../adapters-and-accelerators/adapter-sap/step-3-create-a-sharepoint-application-to-retrieve-data-from-sap.md)手順についてはします。  
   
 ## <a name="see-also"></a>参照  
- [チュートリアル 1: SAP システムからのデータを SharePoint サイトに表示する](../../adapters-and-accelerators/adapter-sap/tutorial-1-presenting-data-from-an-sap-system-on-a-sharepoint-site.md)
+ [チュートリアル 1:SAP システムからのデータを SharePoint サイトに表示する](../../adapters-and-accelerators/adapter-sap/tutorial-1-presenting-data-from-an-sap-system-on-a-sharepoint-site.md)

@@ -1,5 +1,5 @@
 ---
-title: マスタ シークレットの管理 |Microsoft ドキュメント
+title: マスター シークレットの管理 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,15 +16,15 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c2505fa6f5ec1abc04ded45e7701fd4e5212f889
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f4bc7c0222a635b3b698adf899f98a8ff96e08de
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22262178"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531135"
 ---
-# <a name="managing-the-master-secret"></a>マスタ シークレットの管理
-マスタ シークレットは、SSO データベースに格納されているすべての情報を暗号化するために使用されるキーです。 マスタ シークレット サーバーに障害が発生してマスタ シークレットが失われると、SSO データベースに格納されている情報を取得できなくなります。 そのため、マスタ シークレットは作成したらすぐにバックアップすることが重要です。  
+# <a name="managing-the-master-secret"></a>マスター シークレットの管理
+マスター シークレットは、SSO データベースに格納されているすべての情報の暗号化に使用されるキーです。 マスター シークレット サーバーが失敗して、シークレットを紛失した、SSO データベースに格納されている情報を取得することができなきます。 そのため、生成するとすぐにマスター シークレットをバックアップする非常に重要ですが。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

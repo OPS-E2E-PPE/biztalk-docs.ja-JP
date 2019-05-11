@@ -1,5 +1,5 @@
 ---
-title: バッチ処理 |Microsoft ドキュメント
+title: バッチ処理 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -19,38 +19,38 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ca31344e60daa88a37c21d0f90b6cf2d2a8aa5a7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 941ded3f6b88c835c2eae819099449ed7d4e6974
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22230890"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65529092"
 ---
 # <a name="batching"></a>バッチ処理
-*バッチ処理*をラウンド トリップのデータベースを最適化できるようにする一連のメッセージのシリアル化された処理します。 バッチは、アトミックな作業単位です。つまり、バッチはすべて成功するか、すべて失敗するかのどちらかになります。 バッチ内のある操作が成功しても、別の操作が失敗した場合は、そのバッチを構成するすべての操作が無効になり、もう一度やり直す必要があります。  
+*バッチ処理*をラウンド トリップのデータベースを最適化できるように、一連のメッセージのシリアル化された処理します。 バッチが; アトミック作業単位とはこれは、すべて成功するか、すべて失敗します。 バッチ内の 1 つの操作が成功した場合は、別の操作が失敗したバッチを構成するすべての操作が無効になり、繰り返す必要があります。  
   
- BizTalk Server では、次の目的でバッチ処理を使用します。  
+ BizTalk Server では、バッチ処理を使用します。  
   
--   トランザクションのコストを複数のメッセージに分割する。  
+-   複数のメッセージのトランザクションのコストを償却します。  
   
--   内部的なデータベース ラウンド トリップ数を減らして速度を上げる。  
+-   ラウンド トリップの内部データベースの数を減らすことで速度を上げる。  
   
--   BizTalk Server 非同期 API の使用により、BizTalk Server スレッド プールの利用を効率化する。  
+-   BizTalk Server 非同期 API を使用して、BizTalk Server スレッド プールのより効率的に使用をします。  
   
 ## <a name="applying-batching"></a>バッチ処理の適用  
- バッチ処理は、受信場所の詳細プロパティで設定され、送信ポート側で自動的に有効化されます。  
+ バッチ処理して、受信場所の高度なプロパティで構成されて、送信ポート側で自動的に有効にします。  
   
 ## <a name="lowering-the-batch-size"></a>バッチ サイズの縮小  
- 次の場合は、バッチ サイズを縮小する必要があります。  
+ 次のインスタンスの場合、バッチ サイズを小さく必要があります。  
   
--   サイズの大きなメッセージを処理する場合  
+-   サイズの大きいメッセージを処理するときに  
   
--   データベース ラウンド トリップがボトルネックでない場合  
+-   トリップがボトルネックでない場合、データベース ラウンド  
   
 > [!NOTE]
->  変更するときに注意してください、 **LargeMessageThreshold**設定します。 メッセージの平均サイズを乗算するバッチ サイズにする必要がありますよりも低い**LargeMessageThreshold**しない限り、バッチ サイズは 1 を設定します。  
+>  変更するときに注意してください、 **LargeMessageThreshold**設定します。 バッチ サイズに平均メッセージ サイズを乗算より小さい**LargeMessageThreshold**しない限り、バッチ サイズは 1 に設定します。  
   
 ## <a name="see-also"></a>参照  
  [メッセージング エンジン](../core/the-messaging-engine.md)   
  [受信処理用メッセージをバッチ処理](../core/batching-messages-for-receive-processing.md)   
- [送信処理のメッセージのバッチ処理](../core/batching-messages-for-send-processing.md)
+ [送信処理用メッセージのバッチ処理](../core/batching-messages-for-send-processing.md)

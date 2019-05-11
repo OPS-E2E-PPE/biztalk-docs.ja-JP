@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2f1423d5945fe1c82ccc64027a28efa3c1777ca5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 097916c7fcf971563ef70c933e348c214aceeab5
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37013155"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65529064"
 ---
 # <a name="invoke-functions-and-procedures-in-oracle-database-using-the-wcf-service-model"></a>関数と WCF サービス モデルを使用して Oracle データベースでプロシージャを呼び出す
 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]プロシージャ、関数、およびパッケージの操作として表示されます。 WCF サービス モデルでは、これらの操作は、WCF クライアントのメソッドとして表されます。 WCF サービス モデルと[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]:  
@@ -35,12 +35,12 @@ ms.locfileid: "37013155"
   
 -   **サポート IN、OUT および OUT プロシージャと関数の両方の基本の Oracle データ型のパラメーターの**します。 OUT パラメーターとして表示された**アウト**として、WCF クライアントのメソッドのパラメーターとの OUT パラメーターが表示された**ref**パラメーター。  
   
--   **サポート IN、OUT、および IN OUT プロシージャと関数、関数の戻り値の REF CURSOR パラメーター**します。 詳細については、[を実行する操作を使用して REF CURSOR、WCF サービス モデルを使用して Oracle データベースで](../../adapters-and-accelerators/adapter-oracle-database/run-operations-using-ref-cursors-in-oracle-database-using-the-wcf-service-model.md)を参照してください。  
+-   **サポート IN、OUT、および IN OUT プロシージャと関数、関数の戻り値の REF CURSOR パラメーター**します。 詳細については、次を参照してください。[を実行する操作を使用して REF CURSOR、WCF サービス モデルを使用して Oracle データベースで](../../adapters-and-accelerators/adapter-oracle-database/run-operations-using-ref-cursors-in-oracle-database-using-the-wcf-service-model.md)します。  
   
--   **サポートは、アウト、および内のレコードをプロシージャと関数のパラメーターを入力するだけでなく関数の戻り値**します。 詳細については、[を実行する操作を使用してレコードの種類、WCF サービス モデルを使用して Oracle データベースで](../../adapters-and-accelerators/adapter-oracle-database/using-record-types-in-oracle-database-using-the-wcf-service-model.md)を参照してください。  
+-   **サポートは、アウト、および内のレコードをプロシージャと関数のパラメーターを入力するだけでなく関数の戻り値**します。 詳細については、次を参照してください。[を実行する操作を使用してレコードの種類、WCF サービス モデルを使用して Oracle データベースで](../../adapters-and-accelerators/adapter-oracle-database/using-record-types-in-oracle-database-using-the-wcf-service-model.md)します。  
   
 ## <a name="about-the-examples-used-in-this-topic"></a>このトピックで使用する例について  
- このトピックで使用して、/SCOTT/Package/ACCOUNT_PKG/GET_ACCOUNT の例では、プロシージャがオーバー ロード。 この手順では、アカウント ID またはアカウント名のいずれかに基づいて SCOTT/アカウント テーブルからレコードを読み取ります。 この手順と表を生成するスクリプトは SDK のサンプルで提供されます。 SDK サンプルの詳細については、[SDK 内のサンプル](../../core/samples-in-the-sdk.md)を参照してください。  
+ このトピックで使用して、/SCOTT/Package/ACCOUNT_PKG/GET_ACCOUNT の例では、プロシージャがオーバー ロード。 この手順では、アカウント ID またはアカウント名のいずれかに基づいて SCOTT/アカウント テーブルからレコードを読み取ります。 この手順と表を生成するスクリプトは SDK のサンプルで提供されます。 SDK サンプルの詳細については、次を参照してください。 [SDK 内のサンプル](../../core/samples-in-the-sdk.md)します。  
   
 ## <a name="the-wcf-client-class"></a>WCF クライアント クラス  
  次の表は、WCF クライアントと手順については、生成されたメソッドの名前は、関数し、パッケージに、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]サーフェス。 関数またはプロシージャがオーバー ロードされていない限り、1 つの WCF クライアントを使用して、すべてのスキーマのすべてのスキーマのプロシージャまたは関数のすべての関数およびパッケージ内のプロシージャを呼び出します。  
@@ -63,10 +63,10 @@ ms.locfileid: "37013155"
   
 |Oracle の成果物|Namespace|例|  
 |---------------------|---------------|-------------|  
-|手順|[BASE_NS]。 [スキーマ] です。プロシージャです。[PROC_NAME]|microsoft.lobservices.oracledb._2007._03.SCOTT します。Procedure.MYPROC|  
-|機能|[BASE_NS]。 [スキーマ] です。関数。[FUNC_NAME]|microsoft.lobservices.oracledb._2007._03.SCOTT します。Function.MYFUNC|  
-|パッケージ (プロシージャ)|[BASE_NS]。 [スキーマ] です。パッケージです。[PACKAGE_NAME]。[PROC_NAME]|microsoft.lobservices.oracledb._2007._03.SCOTT します。Package.MYPACKAGE.MYPROC|  
-|パッケージ (関数)|[BASE_NS]。 [スキーマ] です。パッケージです。[PACKAGE_NAME]。[FUNC_NAME]|microsoft.lobservices.oracledb._2007._03.SCOTT します。Package.MYPACKAGE.MYFUNC|  
+|手順|[BASE_NS]。 [スキーマ] です。プロシージャです。[PROC_NAME]|microsoft.lobservices.oracledb._2007._03.SCOTT.Procedure.MYPROC|  
+|機能|[BASE_NS]。 [スキーマ] です。関数。[FUNC_NAME]|microsoft.lobservices.oracledb._2007._03.SCOTT.Function.MYFUNC|  
+|パッケージ (プロシージャ)|[BASE_NS]。 [スキーマ] です。パッケージです。[PACKAGE_NAME]。[PROC_NAME]|microsoft.lobservices.oracledb._2007._03.SCOTT.Package.MYPACKAGE.MYPROC|  
+|パッケージ (関数)|[BASE_NS]。 [スキーマ] です。パッケージです。[PACKAGE_NAME]。[FUNC_NAME]|microsoft.lobservices.oracledb._2007._03.SCOTT.Package.MYPACKAGE.MYFUNC|  
 |汎用レコード セットが (弱い型指定)|[BASE_NS]|microsoft.lobservices.oracledb._2007._03|  
   
  [BASE_NS] = ベース アダプターの名前空間。microsoft.lobservices.oracledb._2007._03 します。  
@@ -79,7 +79,7 @@ ms.locfileid: "37013155"
   
  [PACKAGE_NAME] = Oracle パッケージの名前。  
   
- レコードのパラメーターでこれらの名前空間を使用する方法については、[を実行する操作を使用してレコードの種類、WCF サービス モデルを使用して Oracle データベースで](../../adapters-and-accelerators/adapter-oracle-database/using-record-types-in-oracle-database-using-the-wcf-service-model.md)を参照してください。 REF CURSOR パラメーターをこれらの名前空間を使用する方法については、[を実行する操作を使用して REF CURSOR、WCF サービス モデルを使用して Oracle データベースで](../../adapters-and-accelerators/adapter-oracle-database/run-operations-using-ref-cursors-in-oracle-database-using-the-wcf-service-model.md)を参照してください。  
+ レコードのパラメーターでこれらの名前空間を使用する方法については、次を参照してください。[を実行する操作を使用してレコードの種類、WCF サービス モデルを使用して Oracle データベースで](../../adapters-and-accelerators/adapter-oracle-database/using-record-types-in-oracle-database-using-the-wcf-service-model.md)します。 REF CURSOR パラメーターをこれらの名前空間を使用する方法については、次を参照してください。[を実行する操作を使用して REF CURSOR、WCF サービス モデルを使用して Oracle データベースで](../../adapters-and-accelerators/adapter-oracle-database/run-operations-using-ref-cursors-in-oracle-database-using-the-wcf-service-model.md)します。  
   
  一般に、Oracle パラメーターと戻り値は、WCF クライアントのメソッドでようマップします。  
   
@@ -161,8 +161,8 @@ public partial class SCOTTProcedureClient : System.ServiceModel.ClientBase<SCOTT
   
 |Oracle の成果物|Namespace|例|  
 |---------------------|---------------|-------------|  
-|パッケージ (プロシージャ)|[BASE_NS]。 [スキーマ] です。パッケージです。[PACKAGE_NAME]。[PROC_NAME][OVERLOAD_ID]|microsoft.lobservices.oracledb._2007._03.SCOTT します。Package.MYPACKAGE.MYPROC.overload1|  
-|パッケージ (関数)|[BASE_NS]。 [スキーマ] です。パッケージです。[PACKAGE_NAME]。[FUNC_NAME]。[OVERLOAD_ID]|microsoft.lobservices.oracledb._2007._03.SCOTT します。Package.MYPACKAGE.MYFUNC.overload1|  
+|パッケージ (プロシージャ)|[BASE_NS]。 [スキーマ] です。パッケージです。[PACKAGE_NAME]。[PROC_NAME][OVERLOAD_ID]|microsoft.lobservices.oracledb._2007._03.SCOTT.Package.MYPACKAGE.MYPROC.overload1|  
+|パッケージ (関数)|[BASE_NS]。 [スキーマ] です。パッケージです。[PACKAGE_NAME]。[FUNC_NAME]。[OVERLOAD_ID]|microsoft.lobservices.oracledb._2007._03.SCOTT.Package.MYPACKAGE.MYFUNC.overload1|  
 |汎用レコード セットが (弱い型指定)|[BASE_NS]|microsoft.lobservices.oracledb._2007._03|  
   
  [BASE_NS] = ベース アダプターの名前空間。microsoft.lobservices.oracledb._2007._03 します。  
@@ -218,7 +218,7 @@ public partial class SCOTTPackageACCOUNT_PKGGET_ACCOUNToverload2Client : System.
 > [!IMPORTANT]
 >  関数またはプロシージャ (およびパッケージ) に値を返すフィールドまたは REF CURSOR とレコードの型パラメーターを表すクラスは、関数またはプロシージャごとに一意の名前空間で宣言されます。 つまり、たとえば、2 つの異なる関数の戻り値として使用されるパッケージの REF CURSOR 型が WCF クライアントのメソッドごとに一意の名前空間で宣言することです。 これらの異なる戻り値または WCF クライアントのいずれかを呼び出すときに変数を適切にキャストを保持するために別個の変数を宣言する必要がありますか。  
   
- 次の例では、アカウント レコードを/SCOTT/ACCOUNT テーブルから取得するオーバー ロードされた/SCOTT/Package/ACCOUNT_PKG/GET_ACCOUNT プロシージャの呼び出しを示します。 まず、/SCOTT/Package/ACCOUNT_PKG/CREATE_ACCOUNT プロシージャを呼び出すことによって新しいレコードが作成されます。 新しいレコードを読み取る GET_ACCOUNT のさまざまなオーバー ロードを呼び出すことによって、2 回バックアップします。 この例では、次の 3 つの WCF クライアント、CREATE_ACCOUNT プロシージャと GET_ACCOUNT オーバー ロードの 1 つずつを使用します。 エイリアスは、GET_ACCOUNT の戻り値に使用される名前空間を区別するために使用されます。 完全なサンプルは、SDK のサンプルで使用できます。 SDK サンプルの詳細については、[SDK 内のサンプル](../../core/samples-in-the-sdk.md)を参照してください。  
+ 次の例では、アカウント レコードを/SCOTT/ACCOUNT テーブルから取得するオーバー ロードされた/SCOTT/Package/ACCOUNT_PKG/GET_ACCOUNT プロシージャの呼び出しを示します。 まず、/SCOTT/Package/ACCOUNT_PKG/CREATE_ACCOUNT プロシージャを呼び出すことによって新しいレコードが作成されます。 新しいレコードを読み取る GET_ACCOUNT のさまざまなオーバー ロードを呼び出すことによって、2 回バックアップします。 この例では、次の 3 つの WCF クライアント、CREATE_ACCOUNT プロシージャと GET_ACCOUNT オーバー ロードの 1 つずつを使用します。 エイリアスは、GET_ACCOUNT の戻り値に使用される名前空間を区別するために使用されます。 完全なサンプルは、SDK のサンプルで使用できます。 SDK サンプルの詳細については、次を参照してください。 [SDK 内のサンプル](../../core/samples-in-the-sdk.md)します。  
   
 ```  
 using System;  

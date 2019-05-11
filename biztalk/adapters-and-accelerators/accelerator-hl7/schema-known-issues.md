@@ -15,12 +15,12 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8ced040dab48f455e5af5a7731a319173fa27ca5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3ba0257b3ac5898c639ef8fef1a7d93df19732e8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36983067"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65289734"
 ---
 # <a name="schema-known-issues"></a>スキーマの既知の問題
 このセクションには、スキーマ エラーを回避するために役立つ有用な情報が含まれています。  
@@ -49,7 +49,7 @@ ms.locfileid: "36983067"
  BTAHL7 エンジンは、あいまいな構造を持つ HL7 スキーマに準拠しているメッセージ インスタンスを処理できません。 あいまいなスキーマの構造体には、HL7 標準で完全に定義されていない 1 つです。 このようなスキーマには、固定、OMD、ORD、および SUR. メッセージの種類  
   
 ## <a name="btahl7-will-return-a-segment-sequence-error-for-some-messages"></a>BTAHL7 には、いくつかのメッセージのセグメントのシーケンス エラーが返されます  
- BTAHL7 では、以下に示すスキーマに準拠したメッセージを処理できません。 これらのメッセージの本文の解析が失敗し、次のエラー:「セグメントのシーケンス エラーです (このセグメントの後に見つかったセグメントが無効です).」 メッセージに影響を受けるセグメント Id は、以下に示します。 これらすべてのエラーの影響を受けるシーケンス番号は、「2」です。  
+ BTAHL7 では、以下に示すスキーマに準拠したメッセージを処理できません。 これらのメッセージの本文の解析が失敗し、次のエラー。「セグメントのシーケンス エラーです (このセグメントの後に見つかったセグメントが無効です)。」 メッセージに影響を受けるセグメント Id は、以下に示します。 これらすべてのエラーの影響を受けるシーケンス番号は、「2」です。  
   
 |バージョン|メッセージ型|トリガー イベント|セグメント ID|  
 |-------------|------------------|-------------------|----------------|  

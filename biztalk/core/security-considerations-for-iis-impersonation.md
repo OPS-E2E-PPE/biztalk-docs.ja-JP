@@ -1,5 +1,5 @@
 ---
-title: IIS の偽装のセキュリティに関する考慮事項 |Microsoft ドキュメント
+title: IIS の偽装のセキュリティに関する考慮事項 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,18 +12,18 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3fdafc8668e5143cc43064690f7a14736fec4869
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4f69fed91a7110e88c034d2adc5050e9d2ac690f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22269186"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65280370"
 ---
 # <a name="security-considerations-for-iis-impersonation"></a>IIS の偽装のセキュリティに関する考慮事項
-BAM を使用する[!INCLUDE[firstref_btsWinWorkflowFoundation](../includes/firstref-btswinworkflowfoundation-md.md)]IIS の偽装でインターセプターのガイドラインに従って[かを確認し、アクティビティ イベント ライター ロールを設定する方法](../core/how-to-determine-and-set-event-writer-roles-for-activities.md)です。  
+BAM を使用する[!INCLUDE[firstref_btsWinWorkflowFoundation](../includes/firstref-btswinworkflowfoundation-md.md)]IIS の借用を使用したインターセプターのガイドラインに従って[かを確認し、アクティビティ イベント ライター ロールを設定する方法](../core/how-to-determine-and-set-event-writer-roles-for-activities.md)します。  
   
 > [!IMPORTANT]
->  BizTalk Application Users グループのメンバーである必要があります。  
+>  BizTalk Application Users グループのメンバーがあります。  
   
 ## <a name="see-also"></a>参照  
- [BAM インターセプタのセキュリティに関する考慮事項](../core/security-considerations-for-bam-interceptors.md)
+ [BAM インターセプターのセキュリティに関する考慮事項](../core/security-considerations-for-bam-interceptors.md)

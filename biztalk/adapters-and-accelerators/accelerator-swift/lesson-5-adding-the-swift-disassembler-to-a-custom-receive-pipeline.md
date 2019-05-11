@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0af7635b424a74b160991b1d6cfdeb53bfb7f23f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6f37d8ff6369a030bf284584f19192f651cb08a2
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36971299"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65530287"
 ---
 # <a name="lesson-5-adding-the-swift-disassembler-to-a-custom-receive-pipeline"></a>レッスン 5: SWIFT 逆アセンブラーをカスタム受信パイプラインに追加します。
 このレッスンでは、パイプラインにカスタムの SWIFT 逆アセンブラー (逆アセンブラー) を追加します。 逆アセンブラー パイプライン コンポーネントは、バッチ内のメッセージを個々 のドキュメントに分割するパイプライン コンポーネントです。  
@@ -59,4 +59,4 @@ ms.locfileid: "36971299"
   
 7. **ファイル**メニューの **すべて保存**変更を保存します。  
   
-   進みます[レッスン 6: 作成、カスタム送信パイプライン](../../adapters-and-accelerators/accelerator-swift/lesson-6-creating-a-custom-send-pipeline.md)します。
+   続行する[レッスン 6。送信パイプラインの作成、カスタム](../../adapters-and-accelerators/accelerator-swift/lesson-6-creating-a-custom-send-pipeline.md)します。

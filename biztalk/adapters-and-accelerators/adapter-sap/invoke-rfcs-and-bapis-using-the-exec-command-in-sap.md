@@ -16,12 +16,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b7ddd9e4d3e7d4c4d34445c7a42d83262d04f4b2
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3700ce02f90c15d1367b49af459cb61a4edc4cca
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36988195"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373326"
 ---
 # <a name="invoke-rfcs-and-bapis-using-the-exec-command-in-sap"></a>Rfc と EXEC コマンドを使用して SAP の Bapi を呼び出す
 [!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)] ADO.NET データ ソースとしての SAP システムを公開します。 使用して[!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)]、EXEC コマンドを通して、SAP システムの Rfc および Bapi を呼び出すことができます。  
@@ -33,13 +33,13 @@ ms.locfileid: "36988195"
   
 1. 参照を含める (と、コードでステートメントを使用) に**Microsoft.Data.SAPClient**します。  
   
-2. 作成、 **SAPConnection** SAP 接続文字列のデータ プロバイダーを使用してオブジェクト。 接続文字列の詳細については、[SAP 接続文字列のデータ プロバイダーの種類について](../../adapters-and-accelerators/adapter-sap/read-about-data-provider-types-for-the-sap-connection-string.md)を参照してください。  
+2. 作成、 **SAPConnection** SAP 接続文字列のデータ プロバイダーを使用してオブジェクト。 接続文字列の詳細については、次を参照してください。 [SAP 接続文字列のデータ プロバイダーの種類について](../../adapters-and-accelerators/adapter-sap/read-about-data-provider-types-for-the-sap-connection-string.md)します。  
   
 3. 呼び出すことによって、SAP システムへの接続を開く**オープン**上、 **SAPConnection**します。  
   
 4. 作成、 **SAPCommand**オブジェクトから、 **SAPConnection**します。  
   
-5. BAPI または RFC の呼び出しを指定、 **CommandText**のプロパティ、 **SAPCommand**します。 かどうか、必要に応じてパラメーターを指定できますを使用して**SAPParameter**オブジェクト。 EXEC ステートメントを使用して、BAPI または RFC の呼び出しを指定する方法の詳細については、[sap EXEC ステートメントの構文](../../adapters-and-accelerators/adapter-sap/syntax-for-an-exec-statement-in-sap.md)を参照してください。 RFC または BAPI を指定する方法の例については、[EXEC ステートメントの例](../../adapters-and-accelerators/adapter-sap/examples-for-exec-statement.md)を参照してください。  
+5. BAPI または RFC の呼び出しを指定、 **CommandText**のプロパティ、 **SAPCommand**します。 かどうか、必要に応じてパラメーターを指定できますを使用して**SAPParameter**オブジェクト。 EXEC ステートメントを使用して、BAPI または RFC の呼び出しを指定する方法の詳細については、次を参照してください。 [sap EXEC ステートメントの構文](../../adapters-and-accelerators/adapter-sap/syntax-for-an-exec-statement-in-sap.md)します。 RFC または BAPI を指定する方法の例については、次を参照してください。 [EXEC ステートメントの例](../../adapters-and-accelerators/adapter-sap/examples-for-exec-statement.md)します。  
   
 6. RFC または BAPI を呼び出すしで結果を取得するコマンドを実行する**SAPDataReader**します。  
   

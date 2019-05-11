@@ -15,17 +15,17 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cb6ac17cd0959d712da290b937a961d517f320e7
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 411782fcc0f8d3c80382d1de3b7c8f31d49e1fc9
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36968363"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65529650"
 ---
 # <a name="working-with-schemas"></a>スキーマの使用
 Microsoft で提供されるスキーマ[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]は世界銀行間金融電気通信 (SWIFT) FIN メッセージの社会の Microsoft XSD 表現です。 各種のメッセージでは、SWIFT ヘッダーと SWIFT トレーラー (インターチェンジの形式) を含む独自のスキーマがあります。 このスキーマは、SWIFT メッセージの送受信には十分です。 これらのスキーマは、フラット ファイル FIN 構造体の詳細な XML 表現を提供する、区切り文字および位置指定レコードの一意の組み合わせ。  
 
- SWIFT のほとんどのお客様は、SWIFT FIN メッセージの比較的小さなサブセットを使用します。 これらのお客様には、ソリューションを実装するには、BizTalk スキーマ プロジェクトを作成することができます (で示した[モジュール 2: 新しいスキーマ プロジェクトの追加](../../adapters-and-accelerators/accelerator-swift/module-2-adding-a-new-schemas-project.md)A4SWIFT チュートリアルの)。 関連するメッセージのスキーマを追加 (MT*xxx*.xsd) から\\\ Program files \microsoft BizTalk Accelerator for SWIFT\<バージョン\>MessagePack\SWIFT Messages\A4SWIFT-SRG\<バージョン\>\Category x\MT xyy ディレクトリ、x は FIN メッセージの種類の最初の桁、xyy は、メッセージの 3 桁のメッセージの種類。  
+ SWIFT のほとんどのお客様は、SWIFT FIN メッセージの比較的小さなサブセットを使用します。 これらのお客様には、ソリューションを実装するには、BizTalk スキーマ プロジェクトを作成することができます (で示した[モジュール 2。新しいスキーマ プロジェクトの追加](../../adapters-and-accelerators/accelerator-swift/module-2-adding-a-new-schemas-project.md)A4SWIFT チュートリアルの)。 関連するメッセージのスキーマを追加 (MT*xxx*.xsd) から\\\ Program files \microsoft BizTalk Accelerator for SWIFT\<バージョン\>MessagePack\SWIFT Messages\A4SWIFT-SRG\<バージョン\>\Category x\MT xyy ディレクトリ、x は FIN メッセージの種類の最初の桁、xyy は、メッセージの 3 桁のメッセージの種類。  
 
  いくつかのスキーマは、同じプロジェクトに追加できます。 管理の容易性を維持するには、プロジェクトごとに 20 件以上のメッセージ スキーマを追加しないでください。 また、基本と共通のスキーマをプロジェクトに追加する必要があります。 共通の基本クラスとスキーマを既にデプロイした場合は、それらを展開するのではなく、これらのアセンブリを参照する必要があります。 このセクションでは、これらのスキーマについて説明します。 メッセージ スキーマが SWIFT ネットワークに送信されるメッセージと SWIFT から受信したメッセージの両方として使用できます。  
 
