@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f04067ef6b2e1a057edc05601059d931b7ba7f28
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b4d1ddc49c882ecff05083e9a0a38357733f7f9e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37018603"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65249765"
 ---
 # <a name="installing-the-jms-mqrfh2-component-sample"></a>JMS MQRFH2 コンポーネント サンプルをインストールします。
 このサンプルで使用する、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]次をインストールすることも必要があります。  
@@ -36,7 +36,7 @@ ms.locfileid: "37018603"
   
    このセクションでは、GlobalBank.JMS BizTalk アプリケーションに JMS MQRFH2 サンプルをインストールするプロセスについて説明します。 このサンプルをインストールする前に」の説明に従って、ESB Toolkit のコアをインストールする必要があります[BizTalk ESB Toolkit のコアをインストールする](http://go.microsoft.com/fwlink/?LinkId=187612)([http://go.microsoft.com/fwlink/?LinkId=187612](http://go.microsoft.com/fwlink/?LinkId=187612))。  
   
-   ソリューションのプロジェクトから JMS MQRFH2 コンポーネント サンプルをインストールまたはに付属する Windows インストーラー ファイルを使用することができます、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]します。 このセクションのトピックは次のとおりです。  
+   ソリューションのプロジェクトから JMS MQRFH2 コンポーネント サンプルをインストールまたはに付属する Windows インストーラー ファイルを使用することができます、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]します。 このセクションでは、次のトピックについて説明します。  
   
 -   [インストール スクリプトを利用し、JMS MQRFH2 サンプルをインストールする](../esb-toolkit/install-the-jms-mqrfh2-sample-using-the-install-scripts.md)  
   

@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10807 |Microsoft Docs'
+title: シングル サインオン:イベント 10807 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d9e23aefbb950160f29b6145e64bfaa1784dc3f1
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 774769a952436729e3a32c5aeaf9d3d8eb98243c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36985411"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65267527"
 ---
-# <a name="single-sign-on-event-10807"></a>シングル サインオン: イベント 10807
+# <a name="single-sign-on-event-10807"></a>シングル サインオン:イベント 10807
 ## <a name="details"></a>詳細  
   
 |                 |                                                            |
@@ -33,7 +33,7 @@ ms.locfileid: "36985411"
 |  メッセージ テキスト   |            未確認の通知が多すぎます。             |
   
 ## <a name="explanation"></a>説明  
- パスワード変更通知が送信されるたびに、確認メッセージが受信されます。 この場合、確認されていない通知の制限値を超えています。  
+ たびに、パスワード変更通知が送信される、確認メッセージを受信します。 この場合、確認なしの通知の制限を超過しました。  
   
 ## <a name="user-action"></a>ユーザーの操作  
  パスワード同期アダプターを確認します。

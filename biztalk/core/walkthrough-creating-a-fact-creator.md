@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル: ファクト作成コンポーネントの作成 |Microsoft Docs'
+title: 'チュートリアル: ファクト作成コンポーネントを作成する |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,18 +12,18 @@ caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fbe1e856ad97d81a153828a4d5ae45795670ed1f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2d159428f3e9b2c303a9e4df69d1df616aaabf5f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37017323"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65250172"
 ---
-# <a name="walkthrough-creating-a-fact-creator"></a>チュートリアル: ファクト作成コンポーネントの作成
+# <a name="walkthrough-creating-a-fact-creator"></a>チュートリアル: ファクト作成コンポーネントを作成します。
 このチュートリアルは、ファクト作成コンポーネントを作成する手順を示します**POFactCreator**、テストに使用できる、 **ProcessPurchaseOrder**で先ほど作成したポリシーチュートリアル。  
 
 ## <a name="prerequisites"></a>前提条件  
- 完了する必要があります、[チュートリアル: 単純なビジネス ポリシーを作成する](../core/walkthrough-creating-a-simple-business-policy.md)チュートリアルのこのチュートリアルを実行する前にします。  
+ 完了する必要があります、[チュートリアル。単純なビジネス ポリシーを作成する](../core/walkthrough-creating-a-simple-business-policy.md)チュートリアルのこのチュートリアルを実行する前にします。  
 
 ## <a name="overview-of-this-walkthrough"></a>このチュートリアルの概要  
  次の表に示すように、このチュートリアルには 2 つの手順が含まれています。  
@@ -81,7 +81,7 @@ ms.locfileid: "37017323"
 
      ![BRE&#45;チュートリアル&#45;ImplementInterface](../core/media/ca1ae06c-ad24-4eac-94c3-5a06ad0f7305.gif "ca1ae06c-ad24-4eac-94c3-5a06ad0f7305")  
 
-11. パブリック コンストラクターを追加、 **POFactCreator**次に示すようにクラスします。  
+11. パブリック コンス トラクターを追加、 **POFactCreator**次に示すようにクラスします。  
 
     ```  
     public POFactCreator()  
@@ -143,7 +143,7 @@ ms.locfileid: "37017323"
 
 20. ディレクトリに移動します**C:\BRE-Walkthroughs\POFactCreatorSol**、次のコマンドを実行します。  
 
-     **Sn-k POFactCreator.snk**  
+     **Sn -k POFactCreator.snk**  
 
 21. [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]、ソリューション エクスプ ローラーで、**プロパティ**、し、ダブルクリック**AssemblyInfo.cs**します。  
 

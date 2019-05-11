@@ -1,5 +1,5 @@
 ---
-title: メッセージ強化サンプルをインストールする |Microsoft ドキュメント
+title: メッセージ強化サンプルをインストールする |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,18 +12,18 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7fe506dd6ba5d1ff7816b4f76ea317bb4a2c6861
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 43b907f7fd5d00cbc4d40539f65683e79d612714
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22294106"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65249785"
 ---
 # <a name="installing-the-message-enrichment-sample"></a>メッセージ強化サンプルをインストールします。
-このセクションでは、メッセージ強化サンプルをインストールするプロセスについて説明します。 サンプルをインストールする必要があります[のインストールと旅程ランプでサンプルを実行して](../esb-toolkit/installing-and-running-the-itinerary-on-ramp-sample.md)と[をインストールして、動的の解決サンプルを実行している](../esb-toolkit/installing-and-running-the-dynamic-resolution-sample.md)をインストールして、このサンプルを使用する前にします。  
+このセクションでは、メッセージ強化サンプルをインストールするプロセスについて説明します。 サンプルをインストールする必要があります[をインストールして、日程ランプでサンプルを実行する](../esb-toolkit/installing-and-running-the-itinerary-on-ramp-sample.md)と[をインストールして、動的解決サンプルを実行している](../esb-toolkit/installing-and-running-the-dynamic-resolution-sample.md)インストールしてこのサンプルを使用する前にします。  
   
  **Message Enrichment サンプルをインストールするには**  
   
-1.  Windows エクスプローラで、\Source\Samples\MessageEnrichment\Install\Scripts フォルダーを開きます。  
+1.  Windows エクスプ ローラーで、\Source\Samples\MessageEnrichment\Install\Scripts フォルダーを開きます。  
   
 2.  Setup_bin.cmd をという名前のスクリプト ファイルをダブルクリックします。

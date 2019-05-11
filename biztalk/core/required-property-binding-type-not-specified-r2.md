@@ -12,14 +12,14 @@ caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b9851095ec9fac42faae4af149d0023d4b65ea05
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2e959b7e3e0a48dea0d18a73a898d2c39bfd576e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37022864"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65267597"
 ---
-# <a name="required-property-binding-type-not-specified-r2"></a>必要な "バインドの種類" プロパティが指定されていません (R2)
+# <a name="required-property-binding-type-not-specified-r2"></a>必要なプロパティのバインドの種類が指定されていません (R2)
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                    |
@@ -33,10 +33,10 @@ ms.locfileid: "37022864"
 |  メッセージ テキスト   |                    必要なプロパティが指定されていないバインドの種類                    |
   
 ## <a name="explanation"></a>説明  
- WCF-Custom または WCF-CustomIsolated トランスポートを構成するときに、"バインドの種類" プロパティが設定されませんでした。  
+ Wcf-custom または Wcf-customisolated トランスポートを構成するときに、バインドの種類プロパティは設定されませんでした。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- バインドの種類のプロパティを構成するには、次の手順を実行します。  
+ バインドの種類のプロパティを構成するのにには、次の手順を使用します。  
   
 #### <a name="to-configure-the-binding-type-property"></a>バインドの種類のプロパティを構成するには  
   
@@ -44,7 +44,7 @@ ms.locfileid: "37022864"
   
 2. コンソール ルートで  [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]、展開**BizTalk グループ**、展開**アプリケーション**します。  
   
-3. アプリケーションを特定し、次にトランスポートを特定します。  
+3. アプリケーションを見つけて、トランスポートを特定します。  
   
 4. トランスポート名を右クリックします。  
   
@@ -52,13 +52,13 @@ ms.locfileid: "37022864"
   
 6. ポート**型**一覧で、適切なポートを選択します。  
   
-7. クリックして**構成**します。  
+7. をクリックして**構成**です。  
   
 8. **WCF--[**<em>トランスポートの種類</em>**] トランスポートのプロパティ**ダイアログ ボックスで、をクリックして、**バインド**タブ。  
   
 9. 値を指定、**バインドの種類**一覧。  
   
-   バインドの構成の詳細については、次の情報を参照してください。  
+   バインディングの構成の詳細については、次のリソースを参照してください。  
   
 -   [Wcf-customisolated 受信場所を構成する方法](../core/how-to-configure-a-wcf-customisolated-receive-location.md)  
   

@@ -1,5 +1,5 @@
 ---
-title: 変換サービス サンプルのインストール |Microsoft ドキュメント
+title: 変換サービス サンプルをインストールする |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,16 +12,16 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6c3db4ce05b3baeb7dc61a877cc097ce43e78432
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 266530b1138ddc8e6132a775808baa2989190403
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22294218"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65249724"
 ---
-# <a name="installing-the-transformation-service-sample"></a>変換サービスのサンプルをインストールします。
-このセクションでは、GlobalBank.ESB BizTalk アプリケーションに変換サービスのサンプルをインストールするプロセスについて説明します。 ソリューションのプロジェクトから変換サービスのサンプルをインストールまたはに付属する Windows インストーラー ファイルを使用することができます、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]です。 このセクションのトピックは次のとおりです。  
+# <a name="installing-the-transformation-service-sample"></a>変換サービス サンプルをインストールします。
+このセクションでは、GlobalBank.ESB BizTalk アプリケーションに変換サービス サンプルをインストールするプロセスについて説明します。 ソリューションのプロジェクトから変換サービス サンプルをインストールまたはに付属する Windows インストーラー ファイルを使用することができます、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]します。 このセクションでは、次のトピックについて説明します。  
   
--   [インストール スクリプトを使用して変換サービスのサンプルをインストールします。](../esb-toolkit/install-the-transformation-service-sample-using-the-install-scripts.md)  
+-   [インストール スクリプトを利用し、変換サービス サンプルをインストールする](../esb-toolkit/install-the-transformation-service-sample-using-the-install-scripts.md)  
   
--   [アセンブリと、変換サービスのサンプルがインストールされている成果物](../esb-toolkit/assemblies-and-artifacts-installed-by-the-transformation-service-sample.md)
+-   [変換サービス サンプルによりインストールされるアセンブリとアイテム](../esb-toolkit/assemblies-and-artifacts-installed-by-the-transformation-service-sample.md)

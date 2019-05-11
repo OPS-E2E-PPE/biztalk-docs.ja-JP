@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e89da931e7f7a007734d69dfec8921556982ec24
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 16f789c57c57ce198a6adeaaad549f275b90fbc4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36975083"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65249623"
 ---
 # <a name="post-configuration-database-optimizations"></a>構成後のデータベースの最適化
 推奨事項に従うだけでなく[事前構成のデータベースの最適化](../technical-guides/post-configuration-database-optimizations1.md)、いくつかの手順は、SQL Server で BizTalk Server データベースのパフォーマンスを最適化するために従う必要があります*後*BizTalk Server がインストールされているし、BizTalk Server データベースが構成されています。 このトピックでは、これらの最適化の一覧を示します。  

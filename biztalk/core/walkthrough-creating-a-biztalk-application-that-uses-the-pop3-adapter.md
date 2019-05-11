@@ -19,30 +19,30 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c3bd79682f78591b066fe1e6db671c3dab4a8333
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6f94c34361eb69f2e9838da26a3ea30f95cb3a85
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36985307"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65250208"
 ---
-# <a name="walkthrough-creating-a-biztalk-application-that-uses-the-pop3-adapter"></a>チュートリアル: POP3 アダプターを使用する BizTalk アプリケーションの作成
-このセクションでは、POP3 アダプタを使用する簡単な Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] アプリケーションを作成する手順について説明します。  
+# <a name="walkthrough-creating-a-biztalk-application-that-uses-the-pop3-adapter"></a>チュートリアル: POP3 アダプタを使用する BizTalk アプリケーションの作成
+このセクションで簡単な Microsoft の作成手順は[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]POP3 アダプターを使用するアプリケーション。  
   
 > [!NOTE]
->  このアプリケーションは、Microsoft [!INCLUDE[btsWinSvr2k3](../includes/btswinsvr2k3-md.md)] または [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] が実行されていて電子メール サービスがインストールおよび構成されているコンピューターに、アクセスできることを前提としています。 [!INCLUDE[btsWinSvr2k3](../includes/btswinsvr2k3-md.md)] または [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] を電子メール サービスと共に構成する方法の詳細については、Windows Server のヘルプを参照してください。  
+>  アプリケーションでは、Microsoft を実行しているコンピューターへのアクセスがあると想定[!INCLUDE[btsWinSvr2k3](../includes/btswinsvr2k3-md.md)]または[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]電子メール サービスをインストールして構成します。 構成について[!INCLUDE[btsWinSvr2k3](../includes/btswinsvr2k3-md.md)]または[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]を電子メール サービスと共に Windows Server のヘルプを参照してください。  
 > 
 > [!NOTE]
->  この例では、電子メール クライアントに Microsoft Outlook Express を、電子メール サーバーに [!INCLUDE[btsWinSvr2k3](../includes/btswinsvr2k3-md.md)] または [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] を使用します。 ただし、このシナリオでは任意の POP3 電子メール クライアントと RFC 準拠の POP3 サーバーを使用できます。  
+>  この例での電子メール クライアントとして Microsoft Outlook Express を使用し、[!INCLUDE[btsWinSvr2k3](../includes/btswinsvr2k3-md.md)]または[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]電子メール サーバーとして使用されます。 ただし、任意の POP3 電子メール クライアントと RFC 準拠の POP3 サーバーをこのシナリオで使用できます。  
   
- このアプリケーションは、まだ送信ポートまたは受信場所を作成していないことを前提としています。 既存の送信ポートまたは受信場所がある場合、手順を実行する際に適切な名前に置き換えてください。  
+ このアプリケーションは、または受信場所、送信ポートにまだ作成するいないと仮定します。 既存の送信ポートまたは受信場所がある場合、手順を実行する際に適切な名前に置き換えてください。  
   
- このアプリケーションは、受信場所と送信ポートのみを使用する、コンテンツベースの単純なルーティング アプリケーションです。 受信場所を実行しているサーバー上のメールボックスから読み取り[!INCLUDE[btsWinSvr2k3](../includes/btswinsvr2k3-md.md)]または[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]("Windows server"\)します。 送信ポートは、受信場所からメッセージを取得して、そのメッセージを [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のローカル ファイル システム上のフォルダーに送信します。  
+ アプリケーションは、単純なコンテンツ ベース ルーティング アプリケーションのみを受信場所と送信ポートを使用しています。 受信場所を実行しているサーバー上のメールボックスから読み取り[!INCLUDE[btsWinSvr2k3](../includes/btswinsvr2k3-md.md)]または[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]("Windows server"\)します。 送信ポートの受信場所からメッセージを受け取るし、のローカル ファイル システム上のフォルダーに送信します、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]します。  
   
- このアプリケーションを作成するには、メールボックスの作成、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の受信場所と送信ポートの設定、送信ポートの開始と受信場所の有効化、およびメールボックスへのテスト メッセージの送信を行う必要があります。 次の手順に従って、アプリケーションを作成してください。  
+ アプリケーションを作成するには、メールボックスの作成、設定する必要がある、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]受信場所と送信ポート、送信ポートの開始し、受信場所を有効にして、メールボックスにテスト メッセージを送信します。 アプリケーションを作成するのには、次の手順に従います。  
   
-## <a name="create-a-mailbox-on-windows-server-2003"></a>Windows Server 2003 でのメールボックスの作成  
- 電子メール サービスがインストールされた Windows Server 2003 でメールボックスを作成するには、次の手順を実行します。  
+## <a name="create-a-mailbox-on-windows-server-2003"></a>Windows Server 2003 でメールボックスを作成します。  
+ 電子メール サービスがインストールされている Windows Server 2003 のメールボックスを作成するには、次の手順を実行します。  
   
 1. クリックして**開始**、 をポイント**プログラム**、 をポイント**管理ツール**、順にクリックします**POP3 サービス**します。  
   
@@ -56,10 +56,10 @@ ms.locfileid: "36985307"
   
 6. **パスワード**と**パスワードの確認**ボックス、パスワードを入力し、順にクリックします**OK**します。  
   
-7. 書き留めて、**アカウント名**と**メール サーバー**にクリア テキスト認証で使用するために表示される情報のログオン、 **POP3 サービス** ダイアログ ボックスをクリック**OK**します。 この情報は、トランスポートの種類 POP3 で構成する [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の受信場所によって使用されます。  
+7. 書き留めて、**アカウント名**と**メール サーバー**にクリア テキスト認証で使用するために表示される情報のログオン、 **POP3 サービス** ダイアログ ボックスをクリック**OK**します。 この情報を使って、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]受信トランスポートの種類 POP3 で構成する場所。  
   
 ## <a name="create-the-receive-location"></a>受信場所を作成します。  
- 受信場所を作成するには、次の手順を実行します。  
+ 受信場所を作成する次の手順に従います。  
   
 1. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールは、既定のデータベースをダブルクリックして**\<** <em>machine_name</em>**\>します。>.biztalkmgmtdb.dbo**ここで、 *machine_name*コンピューターの名前を指定します。 クリックして**アプリケーション**、 をクリックし、 **biztalk.application.1**します。  
   
@@ -89,10 +89,10 @@ ms.locfileid: "36985307"
   
 14. **のポーリング間隔**ボックスに「 **1**、 をクリックして**ok**順にクリックします**OK**もう一度です。  
   
-## <a name="create-the-send-port-and-destination-folder-on-the-biztalk-server"></a>BizTalk サーバーでの送信ポートと送信先フォルダの作成  
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] に送信ポートと送信先フォルダーを作成するには、次の手順を実行します。  
+## <a name="create-the-send-port-and-destination-folder-on-the-biztalk-server"></a>BizTalk server に送信ポートと送信先フォルダーを作成します。  
+ 送信ポートと送信先のフォルダを作成する次の手順に従って、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]:  
   
-1. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ファイル システムにフォルダーを作成します。 このフォルダが送信ポートの送信先になります。  
+1. フォルダーを作成、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ファイル システム。 送信ポートの送信先になります。  
   
 2. 右クリック**送信ポート**、 をクリックして**新規、**  をクリックし、**静的な一方向送信ポート。**  
   
@@ -115,16 +115,16 @@ ms.locfileid: "36985307"
 11. **値**ボックスに「 **POP3Receive**、順にクリックします**OK**します。  
   
 ## <a name="enable-the-receive-location-and-start-the-send-port"></a>受信場所を有効にして、送信ポートの開始  
- 受信場所を有効にし、送信ポートを開始するには、次の手順を実行します。  
+ 受信場所を有効にして、送信ポートを開始する次の手順に従います。  
   
 1. 右クリックし、 **POP3Receive**受信場所をクリックして**を有効にする**します。  
   
 2. 右クリックし、 **SendToFile**送信ポート、およびクリックして**開始**します。  
   
-   次の手順では、受信場所によって監視されているメールボックスにテスト メッセージを送信することにより、アプリケーションをテストします。  
+   次の手順では、テスト メッセージを受信場所で監視するメールボックスに送信することによって、アプリケーションをテストします。  
   
-## <a name="configure-outlook-express-to-send-an-e-mail-message-to-the-mailbox"></a>電子メール メッセージをメールボックスに送信するように Outlook Express を構成  
- 電子メール メッセージをメールボックスに送信するように Outlook Express を構成するには、次の手順を実行します。  
+## <a name="configure-outlook-express-to-send-an-e-mail-message-to-the-mailbox"></a>Outlook Express メールボックスへの電子メール メッセージの送信を構成します。  
+ Outlook Express メールボックスへの電子メール メッセージの送信を構成するこれらの手順に従います。  
   
 1.  クリックして**開始**、 をポイント**プログラム**、順にクリックします**Outlook Express**します。  
   
@@ -136,7 +136,7 @@ ms.locfileid: "36985307"
   
 5.  **インターネット電子メール アドレス** ダイアログ ボックスで、**電子メール アドレス**ボックスに「 **EmailTest @< domain_name >**、順にクリックします**次**.  
   
-     適切な値を入力してください *< domain_name >* します。 この値は、Windows サーバーの POP3 サービスの管理インターフェイスでこのメールボックスを作成したドメインの名前と一致する必要があります。  
+     適切な値を入力してください *< domain_name >* します。 この値は、Windows サーバーの POP3 サービスの管理インターフェイスでこのメールボックスが作成されるドメインの名前と一致する必要があります。  
   
 6.  **電子メール サーバー名** ダイアログ ボックスで、**受信メール**と**送信メール**ボックス、サーバー名または Windows server の IP アドレスを入力および順にクリックします**次へ**します。  
   
@@ -155,11 +155,11 @@ ms.locfileid: "36985307"
 13. クリックして**送信**テスト メッセージを送信します。 確実に、Outlook Express メッセージを送信テストすぐに、次のようにクリックします。、**送受信**、Outlook Express ツールバーのボタンをクリックします。  
   
 ## <a name="view-the-message"></a>メッセージを表示します。  
- メッセージを表示するには、次の手順を実行します。  
+ メッセージを表示する次の手順に従います。  
   
 1.  Windows エクスプ ローラーを使用して、として指定したフォルダーを開き、**先フォルダー**送信ポートの。  
   
-2.  フォルダ内のドキュメントをダブルクリックし、ドキュメントの内容をメモ帳で表示します。  
+2.  メモ帳で、ドキュメントの内容を表示するフォルダー内のドキュメントをダブルクリックします。  
   
 ## <a name="see-also"></a>参照  
  [POP3 アダプターについて](../core/what-is-the-pop3-adapter.md)

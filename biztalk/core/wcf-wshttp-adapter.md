@@ -1,5 +1,5 @@
 ---
-title: Wcf-wshttp アダプタ |Microsoft ドキュメント
+title: Wcf-wshttp アダプター |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,18 +14,18 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8007c8bf56ccb6e4f2e345dcc44786313e4de0e4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: fe9c2f714c7b7fb1a23ff74c819d769aa18250b0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22289042"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65250179"
 ---
 # <a name="wcf-wshttp-adapter"></a>Wcf-wshttp アダプター
-[!INCLUDE[btsCoName](../includes/btsconame-md.md)][!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]の受信と送信 WCF サービスを要求するときに Wcf-wshttp アダプタを使用して、 [WSHttpBinding](http://go.microsoft.com/fwlink/?LinkID=81206)です。 Wcf-wshttp アダプタを使用すると、オーケストレーションとスキーマを WCF サービスとして公開し、と共に外部 WCF サービスを使用すると、 **WSHttpBinding**です。  
+[!INCLUDE[btsCoName](../includes/btsconame-md.md)] [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 受信と送信の WCF サービス経由で要求するときに Wcf-wshttp アダプタを使用して、 [WSHttpBinding](http://go.microsoft.com/fwlink/?LinkID=81206)します。 Wcf-wshttp アダプタを使用するオーケストレーションとスキーマを WCF サービスとして公開して、と共に外部 WCF サービスを使用する、 **WSHttpBinding**します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [Wcf-wshttp アダプタとは何ですか。](../core/what-is-the-wcf-wshttp-adapter.md)  
+-   [WCF-WSHttp アダプターについて](../core/what-is-the-wcf-wshttp-adapter.md)  
   
--   [Wcf-wshttp アダプタを構成します。](../core/configuring-the-wcf-wshttp-adapter.md)
+-   [WCF-WSHttp アダプターの構成](../core/configuring-the-wcf-wshttp-adapter.md)
