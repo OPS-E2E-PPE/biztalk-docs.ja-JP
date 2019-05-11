@@ -16,22 +16,22 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1c527ea9e00cf089390749e93030e8536a80b29b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1d4413eb7dde054fa6b15899c35e037988476a6e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37008587"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65282966"
 ---
-# <a name="messaging-samples"></a><span data-ttu-id="2650c-102">メッセージングのサンプル</span><span class="sxs-lookup"><span data-stu-id="2650c-102">Messaging Samples</span></span>
-<span data-ttu-id="2650c-103">The Microsoft®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]ソフトウェア開発キット (SDK) には、メッセージング機能を示すサンプルが含まれています。</span><span class="sxs-lookup"><span data-stu-id="2650c-103">The Microsoft® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] Software Development Kit (SDK) includes samples that demonstrate messaging functionality.</span></span> <span data-ttu-id="2650c-104">ここでは、それらのサンプルで示される機能に関する詳細、サンプルの構築と実行の手順、および期待される効果について説明します。</span><span class="sxs-lookup"><span data-stu-id="2650c-104">This section provides detailed information about the functionality demonstrated by these samples, instructions for building and running the samples, and the results that you can expect.</span></span>  
+# <a name="messaging-samples"></a><span data-ttu-id="e56c7-102">メッセージングのサンプル</span><span class="sxs-lookup"><span data-stu-id="e56c7-102">Messaging Samples</span></span>
+<span data-ttu-id="e56c7-103">The Microsoft®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]ソフトウェア開発キット (SDK) には、メッセージング機能を示すサンプルが含まれています。</span><span class="sxs-lookup"><span data-stu-id="e56c7-103">The Microsoft® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] Software Development Kit (SDK) includes samples that demonstrate messaging functionality.</span></span> <span data-ttu-id="e56c7-104">ここでは、これらのサンプルを構築して、サンプルでは、および予想される結果を実行している手順で示されている機能の詳細を示します。</span><span class="sxs-lookup"><span data-stu-id="e56c7-104">This section provides detailed information about the functionality demonstrated by these samples, instructions for building and running the samples, and the results that you can expect.</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="2650c-105">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="2650c-105">In This Section</span></span>  
+## <a name="in-this-section"></a><span data-ttu-id="e56c7-105">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="e56c7-105">In This Section</span></span>  
   
--   [<span data-ttu-id="2650c-106">FileTransport サンプル</span><span class="sxs-lookup"><span data-stu-id="2650c-106">FileTransport Sample</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/filetransport-sample.md)  
+-   [<span data-ttu-id="e56c7-106">FileTransport サンプル</span><span class="sxs-lookup"><span data-stu-id="e56c7-106">FileTransport Sample</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/filetransport-sample.md)  
   
--   [<span data-ttu-id="2650c-107">GetMessages サンプル</span><span class="sxs-lookup"><span data-stu-id="2650c-107">GetMessages Sample</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/getmessages-sample.md)  
+-   [<span data-ttu-id="e56c7-107">GetMessages サンプル</span><span class="sxs-lookup"><span data-stu-id="e56c7-107">GetMessages Sample</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/getmessages-sample.md)  
   
--   [<span data-ttu-id="2650c-108">メッセージ送信 ASPX サンプル</span><span class="sxs-lookup"><span data-stu-id="2650c-108">Message Submission ASPX Sample</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/message-submission-aspx-sample.md)  
+-   [<span data-ttu-id="e56c7-108">メッセージ送信 ASPX サンプル</span><span class="sxs-lookup"><span data-stu-id="e56c7-108">Message Submission ASPX Sample</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/message-submission-aspx-sample.md)  
   
--   [<span data-ttu-id="2650c-109">Tracking サンプル</span><span class="sxs-lookup"><span data-stu-id="2650c-109">Tracking Sample</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/tracking-sample.md)
+-   [<span data-ttu-id="e56c7-109">Tracking サンプル</span><span class="sxs-lookup"><span data-stu-id="e56c7-109">Tracking Sample</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/tracking-sample.md)

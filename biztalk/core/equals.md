@@ -1,5 +1,5 @@
 ---
-title: 等しい |Microsoft ドキュメント
+title: 等しい |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,33 +12,33 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2b82ac5c779dc6b4d3624b48cebe9df1bc3d1966
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e376445e8349663ab6196e99f9f31df8e5c1e139
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22239818"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65530732"
 ---
-# <a name="equals"></a><span data-ttu-id="de74e-102">[等しい]</span><span class="sxs-lookup"><span data-stu-id="de74e-102">Equals</span></span>
-<span data-ttu-id="de74e-103">スタックから上位 2 項目を削除し、その 2 つの項目を比較して、結果をスタックにプッシュします。</span><span class="sxs-lookup"><span data-stu-id="de74e-103">Removes the top two items from the stack, compares the two items, and then pushes the result onto the stack.</span></span>  
+# <a name="equals"></a><span data-ttu-id="fe3f2-102">[等しい]</span><span class="sxs-lookup"><span data-stu-id="fe3f2-102">Equals</span></span>
+<span data-ttu-id="fe3f2-103">スタックから上位 2 項目を削除、2 つの項目を比較し、その結果をスタックにプッシュします。</span><span class="sxs-lookup"><span data-stu-id="fe3f2-103">Removes the top two items from the stack, compares the two items, and then pushes the result onto the stack.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="de74e-104">構文</span><span class="sxs-lookup"><span data-stu-id="de74e-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="fe3f2-104">構文</span><span class="sxs-lookup"><span data-stu-id="fe3f2-104">Syntax</span></span>  
   
 ```  
   
 <ic:Operation Name="Equals" />  
 ```  
   
-#### <a name="parameters"></a><span data-ttu-id="de74e-105">パラメーター</span><span class="sxs-lookup"><span data-stu-id="de74e-105">Parameters</span></span>  
- <span data-ttu-id="de74e-106">スタックの上位 2 項目。</span><span class="sxs-lookup"><span data-stu-id="de74e-106">Top two items on the stack.</span></span>  
+#### <a name="parameters"></a><span data-ttu-id="fe3f2-105">パラメーター</span><span class="sxs-lookup"><span data-stu-id="fe3f2-105">Parameters</span></span>  
+ <span data-ttu-id="fe3f2-106">スタックの上位 2 項目。</span><span class="sxs-lookup"><span data-stu-id="fe3f2-106">Top two items on the stack.</span></span>  
   
-## <a name="pushed-value"></a><span data-ttu-id="de74e-107">プッシュされた値</span><span class="sxs-lookup"><span data-stu-id="de74e-107">Pushed Value</span></span>  
- <span data-ttu-id="de74e-108">比較演算の結果の文字列。</span><span class="sxs-lookup"><span data-stu-id="de74e-108">String result of the comparison operation.</span></span>  
+## <a name="pushed-value"></a><span data-ttu-id="fe3f2-107">プッシュされた値</span><span class="sxs-lookup"><span data-stu-id="fe3f2-107">Pushed Value</span></span>  
+ <span data-ttu-id="fe3f2-108">比較演算の結果を文字列します。</span><span class="sxs-lookup"><span data-stu-id="fe3f2-108">String result of the comparison operation.</span></span>  
   
-## <a name="remarks"></a><span data-ttu-id="de74e-109">解説</span><span class="sxs-lookup"><span data-stu-id="de74e-109">Remarks</span></span>  
+## <a name="remarks"></a><span data-ttu-id="fe3f2-109">コメント</span><span class="sxs-lookup"><span data-stu-id="fe3f2-109">Remarks</span></span>  
   
-## <a name="example"></a><span data-ttu-id="de74e-110">例</span><span class="sxs-lookup"><span data-stu-id="de74e-110">Example</span></span>  
- <span data-ttu-id="de74e-111">次の例のフィルタ式を使用して、 **Equals**定数"CheckPO"には、現在のアクティビティ名を比較する操作。</span><span class="sxs-lookup"><span data-stu-id="de74e-111">The following example filter expression uses the **Equals** operation to compare the current activity name to the constant "CheckPO".</span></span> <span data-ttu-id="de74e-112">両者が等しい場合、式は `true` に評価されます。</span><span class="sxs-lookup"><span data-stu-id="de74e-112">If the two are equal, the expression evaluates to `true`.</span></span>  
+## <a name="example"></a><span data-ttu-id="fe3f2-110">例</span><span class="sxs-lookup"><span data-stu-id="fe3f2-110">Example</span></span>  
+ <span data-ttu-id="fe3f2-111">次の例のフィルタ式を使用して、 **Equals**定数"CheckPO"には、現在のアクティビティ名を比較する操作。</span><span class="sxs-lookup"><span data-stu-id="fe3f2-111">The following example filter expression uses the **Equals** operation to compare the current activity name to the constant "CheckPO".</span></span> <span data-ttu-id="fe3f2-112">2 つが等しい場合は、式の評価が`true`します。</span><span class="sxs-lookup"><span data-stu-id="fe3f2-112">If the two are equal, the expression evaluates to `true`.</span></span>  
   
 ```  
 <ic:Filter>  
@@ -52,19 +52,19 @@ ms.locfileid: "22239818"
 </ic:Filter>  
 ```  
   
- <span data-ttu-id="de74e-113">比較の実行時に C# でステートメントを作成する場合と同様に、フィルタ式を作成することがあります。</span><span class="sxs-lookup"><span data-stu-id="de74e-113">You may be tempted to build your expression exactly as you would write a statement in C# when performing comparisons.</span></span> <span data-ttu-id="de74e-114">たとえば、3 つの値を比較する場合、C# では次のようなステートメントを作成します。</span><span class="sxs-lookup"><span data-stu-id="de74e-114">For example, you might want to compare three values; in C# you would write something like:</span></span>  
+ <span data-ttu-id="fe3f2-113">まったく同じで、ステートメントを記述すると、式の作成をしたくなる場合がありますC#比較を実行するときにします。</span><span class="sxs-lookup"><span data-stu-id="fe3f2-113">You may be tempted to build your expression exactly as you would write a statement in C# when performing comparisons.</span></span> <span data-ttu-id="fe3f2-114">3 つの値を比較する例。C#ように記述します。</span><span class="sxs-lookup"><span data-stu-id="fe3f2-114">For example, you might want to compare three values; in C# you would write something like:</span></span>  
   
 ```  
 bool res = a == b == c;  
 ```  
   
- <span data-ttu-id="de74e-115">ただし、このステートメントは、フィルタ式のモデルとしては不十分です。</span><span class="sxs-lookup"><span data-stu-id="de74e-115">However, as a model for your expression filter this falls a little short.</span></span> <span data-ttu-id="de74e-116">その代わりに、次のように修正した (同等の) ステートメントを使用します。</span><span class="sxs-lookup"><span data-stu-id="de74e-116">Instead, consider the modified (but equivalent) statement:</span></span>  
+ <span data-ttu-id="fe3f2-115">ただし、フィルタ式のモデルとして少し短くなります。</span><span class="sxs-lookup"><span data-stu-id="fe3f2-115">However, as a model for your expression filter this falls a little short.</span></span> <span data-ttu-id="fe3f2-116">代わりに、変更された (ただし、同等) のステートメントを検討してください。</span><span class="sxs-lookup"><span data-stu-id="fe3f2-116">Instead, consider the modified (but equivalent) statement:</span></span>  
   
 ```  
 Bool res = (a == b) && (a == c);  
 ```  
   
- <span data-ttu-id="de74e-117">こちらの方が、比較を実行するときに使用するフィルタ式により近くなっています。</span><span class="sxs-lookup"><span data-stu-id="de74e-117">This more closely matches the filter expression you would use to perform the comparison.</span></span> <span data-ttu-id="de74e-118">詳細および例に、次を参照してください。[と](../core/and.md)です。</span><span class="sxs-lookup"><span data-stu-id="de74e-118">For more details and an example, see [And](../core/and.md).</span></span>  
+ <span data-ttu-id="fe3f2-117">これには、フィルター式、比較を実行に使用するものより密接と一致します。</span><span class="sxs-lookup"><span data-stu-id="fe3f2-117">This more closely matches the filter expression you would use to perform the comparison.</span></span> <span data-ttu-id="fe3f2-118">詳細と例では、次を参照してください。[と](../core/and.md)します。</span><span class="sxs-lookup"><span data-stu-id="fe3f2-118">For more details and an example, see [And](../core/and.md).</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="de74e-119">参照</span><span class="sxs-lookup"><span data-stu-id="de74e-119">See Also</span></span>  
- [<span data-ttu-id="de74e-120">インターセプタの操作</span><span class="sxs-lookup"><span data-stu-id="de74e-120">Interceptor Operations</span></span>](../core/interceptor-operations.md)
+## <a name="see-also"></a><span data-ttu-id="fe3f2-119">参照</span><span class="sxs-lookup"><span data-stu-id="fe3f2-119">See Also</span></span>  
+ [<span data-ttu-id="fe3f2-120">インターセプターの操作</span><span class="sxs-lookup"><span data-stu-id="fe3f2-120">Interceptor Operations</span></span>](../core/interceptor-operations.md)

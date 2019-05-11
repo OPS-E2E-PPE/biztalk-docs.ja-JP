@@ -15,78 +15,78 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d991125654e04167b026aa98c62c8ffdc7b2b8e2
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 995ed2a0214b9de3f50c7aac2298138da1d6df73
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37006019"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65529735"
 ---
-# <a name="system-trailers"></a><span data-ttu-id="d28c0-102">システム トレーラー</span><span class="sxs-lookup"><span data-stu-id="d28c0-102">System Trailers</span></span>
-<span data-ttu-id="d28c0-103">システム トレーラーは、SWIFT メッセージの詳細を追加または特殊なを伝達します。</span><span class="sxs-lookup"><span data-stu-id="d28c0-103">System trailers convey additional or special details about the SWIFT message.</span></span> <span data-ttu-id="d28c0-104">最初の 3 つのシステム トレーラーが存在する次の順序で出現します。</span><span class="sxs-lookup"><span data-stu-id="d28c0-104">If any of the first three system trailers are present, they occur in the following order.</span></span> <span data-ttu-id="d28c0-105">残りのシステム トレーラーは、任意の順序で発生します。</span><span class="sxs-lookup"><span data-stu-id="d28c0-105">The remaining system trailers can occur in any order.</span></span>  
+# <a name="system-trailers"></a><span data-ttu-id="ba6f7-102">システム トレーラー</span><span class="sxs-lookup"><span data-stu-id="ba6f7-102">System Trailers</span></span>
+<span data-ttu-id="ba6f7-103">システム トレーラーは、SWIFT メッセージの詳細を追加または特殊なを伝達します。</span><span class="sxs-lookup"><span data-stu-id="ba6f7-103">System trailers convey additional or special details about the SWIFT message.</span></span> <span data-ttu-id="ba6f7-104">最初の 3 つのシステム トレーラーが存在する次の順序で出現します。</span><span class="sxs-lookup"><span data-stu-id="ba6f7-104">If any of the first three system trailers are present, they occur in the following order.</span></span> <span data-ttu-id="ba6f7-105">残りのシステム トレーラーは、任意の順序で発生します。</span><span class="sxs-lookup"><span data-stu-id="ba6f7-105">The remaining system trailers can occur in any order.</span></span>  
   
-|<span data-ttu-id="d28c0-106">トレーラー コード</span><span class="sxs-lookup"><span data-stu-id="d28c0-106">Trailer code</span></span>|<span data-ttu-id="d28c0-107">名前</span><span class="sxs-lookup"><span data-stu-id="d28c0-107">Name</span></span>|  
+|<span data-ttu-id="ba6f7-106">トレーラー コード</span><span class="sxs-lookup"><span data-stu-id="ba6f7-106">Trailer code</span></span>|<span data-ttu-id="ba6f7-107">名前</span><span class="sxs-lookup"><span data-stu-id="ba6f7-107">Name</span></span>|  
 |------------------|----------|  
-|<span data-ttu-id="d28c0-108">**CHK**</span><span class="sxs-lookup"><span data-stu-id="d28c0-108">**CHK**</span></span>|<span data-ttu-id="d28c0-109">Checksum</span><span class="sxs-lookup"><span data-stu-id="d28c0-109">Checksum</span></span>|  
-|<span data-ttu-id="d28c0-110">**SYS**</span><span class="sxs-lookup"><span data-stu-id="d28c0-110">**SYS**</span></span>|<span data-ttu-id="d28c0-111">システムにメッセージが発生しました。</span><span class="sxs-lookup"><span data-stu-id="d28c0-111">System Originated Message</span></span>|  
-|<span data-ttu-id="d28c0-112">**TNG**</span><span class="sxs-lookup"><span data-stu-id="d28c0-112">**TNG**</span></span>|<span data-ttu-id="d28c0-113">トレーニング</span><span class="sxs-lookup"><span data-stu-id="d28c0-113">Training</span></span>|  
-|<span data-ttu-id="d28c0-114">**PDM**</span><span class="sxs-lookup"><span data-stu-id="d28c0-114">**PDM**</span></span>|<span data-ttu-id="d28c0-115">使用可能な重複するメッセージ</span><span class="sxs-lookup"><span data-stu-id="d28c0-115">Possible Duplicate Message</span></span>|  
-|<span data-ttu-id="d28c0-116">**DLM**</span><span class="sxs-lookup"><span data-stu-id="d28c0-116">**DLM**</span></span>|<span data-ttu-id="d28c0-117">遅延メッセージ</span><span class="sxs-lookup"><span data-stu-id="d28c0-117">Delayed Message</span></span>|  
-|<span data-ttu-id="d28c0-118">**MRF**</span><span class="sxs-lookup"><span data-stu-id="d28c0-118">**MRF**</span></span>|<span data-ttu-id="d28c0-119">メッセージのリファレンス</span><span class="sxs-lookup"><span data-stu-id="d28c0-119">Message Reference</span></span>|  
+|<span data-ttu-id="ba6f7-108">**CHK**</span><span class="sxs-lookup"><span data-stu-id="ba6f7-108">**CHK**</span></span>|<span data-ttu-id="ba6f7-109">チェックサム</span><span class="sxs-lookup"><span data-stu-id="ba6f7-109">Checksum</span></span>|  
+|<span data-ttu-id="ba6f7-110">**SYS**</span><span class="sxs-lookup"><span data-stu-id="ba6f7-110">**SYS**</span></span>|<span data-ttu-id="ba6f7-111">システムにメッセージが発生しました。</span><span class="sxs-lookup"><span data-stu-id="ba6f7-111">System Originated Message</span></span>|  
+|<span data-ttu-id="ba6f7-112">**TNG**</span><span class="sxs-lookup"><span data-stu-id="ba6f7-112">**TNG**</span></span>|<span data-ttu-id="ba6f7-113">トレーニング</span><span class="sxs-lookup"><span data-stu-id="ba6f7-113">Training</span></span>|  
+|<span data-ttu-id="ba6f7-114">**PDM**</span><span class="sxs-lookup"><span data-stu-id="ba6f7-114">**PDM**</span></span>|<span data-ttu-id="ba6f7-115">使用可能な重複するメッセージ</span><span class="sxs-lookup"><span data-stu-id="ba6f7-115">Possible Duplicate Message</span></span>|  
+|<span data-ttu-id="ba6f7-116">**DLM**</span><span class="sxs-lookup"><span data-stu-id="ba6f7-116">**DLM**</span></span>|<span data-ttu-id="ba6f7-117">遅延メッセージ</span><span class="sxs-lookup"><span data-stu-id="ba6f7-117">Delayed Message</span></span>|  
+|<span data-ttu-id="ba6f7-118">**MRF**</span><span class="sxs-lookup"><span data-stu-id="ba6f7-118">**MRF**</span></span>|<span data-ttu-id="ba6f7-119">メッセージのリファレンス</span><span class="sxs-lookup"><span data-stu-id="ba6f7-119">Message Reference</span></span>|  
   
-- <span data-ttu-id="d28c0-120">**システムでは、(SYS) のメッセージのトレーラーが開始されます。**</span><span class="sxs-lookup"><span data-stu-id="d28c0-120">**System Originated Message (SYS) Trailer.**</span></span> <span data-ttu-id="d28c0-121">システム メッセージまたは PLT システムによって生成される、サービス メッセージは、SYS トレーラーを持っています。</span><span class="sxs-lookup"><span data-stu-id="d28c0-121">The system message or service message, which is generated by a system PLT, has a SYS trailer.</span></span> <span data-ttu-id="d28c0-122">要求の MIR を含めることが、および時間を含めることができますすべて 01 のサービスの識別子を持つシステム メッセージを要請します。</span><span class="sxs-lookup"><span data-stu-id="d28c0-122">All solicited system messages with a Service Identifier of 01, contain the MIR of the request, and may contain the time.</span></span>  
+- <span data-ttu-id="ba6f7-120">**システムでは、(SYS) のメッセージのトレーラーが開始されます。**</span><span class="sxs-lookup"><span data-stu-id="ba6f7-120">**System Originated Message (SYS) Trailer.**</span></span> <span data-ttu-id="ba6f7-121">システム メッセージまたは PLT システムによって生成される、サービス メッセージは、SYS トレーラーを持っています。</span><span class="sxs-lookup"><span data-stu-id="ba6f7-121">The system message or service message, which is generated by a system PLT, has a SYS trailer.</span></span> <span data-ttu-id="ba6f7-122">要求の MIR を含めることが、および時間を含めることができますすべて 01 のサービスの識別子を持つシステム メッセージを要請します。</span><span class="sxs-lookup"><span data-stu-id="ba6f7-122">All solicited system messages with a Service Identifier of 01, contain the MIR of the request, and may contain the time.</span></span>  
   
-   <span data-ttu-id="d28c0-123">次のコードでは、SYS トレーラーの形式の例を示します。</span><span class="sxs-lookup"><span data-stu-id="d28c0-123">The following code is an example of the SYS trailer format:</span></span>  
+   <span data-ttu-id="ba6f7-123">次のコードでは、SYS トレーラーの形式の例を示します。</span><span class="sxs-lookup"><span data-stu-id="ba6f7-123">The following code is an example of the SYS trailer format:</span></span>  
   
   ```  
   {SYS:[<time><mir>]}  
   ```  
   
-- <span data-ttu-id="d28c0-124">**テストと (TNG) メッセージのトレーラーをトレーニングします。**</span><span class="sxs-lookup"><span data-stu-id="d28c0-124">**Test & Training Message (TNG) Trailer.**</span></span> <span data-ttu-id="d28c0-125">TNG トレーラーはファイナンスと GPA (01 のサービス識別子) を持つ送信、またはメッセージをテストおよびトレーニング論理ターミナル (LT) に配信するために必須です。</span><span class="sxs-lookup"><span data-stu-id="d28c0-125">The TNG trailer is mandatory for FIN and GPA messages (with a Service Identifier of 01) sent by, or delivered to, a Test and Training Logical Terminal (LT).</span></span> <span data-ttu-id="d28c0-126">このトレーラーには、のみ、タグと値はありませんがあります。</span><span class="sxs-lookup"><span data-stu-id="d28c0-126">This trailer has a tag only, and no value.</span></span>  
+- <span data-ttu-id="ba6f7-124">**テストと (TNG) メッセージのトレーラーをトレーニングします。**</span><span class="sxs-lookup"><span data-stu-id="ba6f7-124">**Test & Training Message (TNG) Trailer.**</span></span> <span data-ttu-id="ba6f7-125">TNG トレーラーはファイナンスと GPA (01 のサービス識別子) を持つ送信、またはメッセージをテストおよびトレーニング論理ターミナル (LT) に配信するために必須です。</span><span class="sxs-lookup"><span data-stu-id="ba6f7-125">The TNG trailer is mandatory for FIN and GPA messages (with a Service Identifier of 01) sent by, or delivered to, a Test and Training Logical Terminal (LT).</span></span> <span data-ttu-id="ba6f7-126">このトレーラーには、のみ、タグと値はありませんがあります。</span><span class="sxs-lookup"><span data-stu-id="ba6f7-126">This trailer has a tag only, and no value.</span></span>  
   
-   <span data-ttu-id="d28c0-127">次のコードでは、TNG トレーラーの形式の例を示します。</span><span class="sxs-lookup"><span data-stu-id="d28c0-127">The following code is an example of the TNG trailer format:</span></span>  
+   <span data-ttu-id="ba6f7-127">次のコードでは、TNG トレーラーの形式の例を示します。</span><span class="sxs-lookup"><span data-stu-id="ba6f7-127">The following code is an example of the TNG trailer format:</span></span>  
   
   ```  
   {TNG:}  
   ```  
   
-- <span data-ttu-id="d28c0-128">**トレーラーの考えられる重複する出力 (PDE)。**</span><span class="sxs-lookup"><span data-stu-id="d28c0-128">**Possible Duplicate Emission (PDE) Trailer.**</span></span> <span data-ttu-id="d28c0-129">メッセージの送信先は、PDE トレーラーを使用します。</span><span class="sxs-lookup"><span data-stu-id="d28c0-129">The destination of the message uses the PDE trailer.</span></span> <span data-ttu-id="d28c0-130">(01 のサービス識別子) を持つユーザーにメッセージを FIN とメッセージの銀行の予約済みメッセージ カテゴリにのみ適用されます。</span><span class="sxs-lookup"><span data-stu-id="d28c0-130">It only applies to FIN user-to-user messages (with a Service Identifier of 01) and message categories reserved for banking messages.</span></span> <span data-ttu-id="d28c0-131">システムでは、複数の PDEs を含めることができます。</span><span class="sxs-lookup"><span data-stu-id="d28c0-131">The system may contain multiple PDEs.</span></span> <span data-ttu-id="d28c0-132">システムは、順を確認したり (メッセージの最大長) を除く数に制限はありません。</span><span class="sxs-lookup"><span data-stu-id="d28c0-132">The system does not verify the order nor restrict the number (except for maximum message length).</span></span>  
+- <span data-ttu-id="ba6f7-128">**トレーラーの考えられる重複する出力 (PDE)。**</span><span class="sxs-lookup"><span data-stu-id="ba6f7-128">**Possible Duplicate Emission (PDE) Trailer.**</span></span> <span data-ttu-id="ba6f7-129">メッセージの送信先は、PDE トレーラーを使用します。</span><span class="sxs-lookup"><span data-stu-id="ba6f7-129">The destination of the message uses the PDE trailer.</span></span> <span data-ttu-id="ba6f7-130">(01 のサービス識別子) を持つユーザーにメッセージを FIN とメッセージの銀行の予約済みメッセージ カテゴリにのみ適用されます。</span><span class="sxs-lookup"><span data-stu-id="ba6f7-130">It only applies to FIN user-to-user messages (with a Service Identifier of 01) and message categories reserved for banking messages.</span></span> <span data-ttu-id="ba6f7-131">システムでは、複数の PDEs を含めることができます。</span><span class="sxs-lookup"><span data-stu-id="ba6f7-131">The system may contain multiple PDEs.</span></span> <span data-ttu-id="ba6f7-132">システムは、順を確認したり (メッセージの最大長) を除く数に制限はありません。</span><span class="sxs-lookup"><span data-stu-id="ba6f7-132">The system does not verify the order nor restrict the number (except for maximum message length).</span></span>  
   
-   <span data-ttu-id="d28c0-133">システムは、ユーザーとシステム メッセージに適用 PDE トレーラーを正しい形式を受け入れますが、それらを処理しません。</span><span class="sxs-lookup"><span data-stu-id="d28c0-133">The system accepts correctly formatted PDE trailers applied to user-to-system messages, but does not process them.</span></span> <span data-ttu-id="d28c0-134">つまり、システムは、元のメッセージが存在するかどうかを確認しないようにします。</span><span class="sxs-lookup"><span data-stu-id="d28c0-134">This means that the system does not check to see if the original message exists.</span></span> <span data-ttu-id="d28c0-135">そのため、システムが PDE トレーラーで 2 回送信の取得要求を処理可能性があります-システムは、元のメッセージを受信した場合。</span><span class="sxs-lookup"><span data-stu-id="d28c0-135">Therefore, the system may process a retrieval request sent with a PDE trailer twice—if the system received the original message.</span></span>  
+   <span data-ttu-id="ba6f7-133">システムは、ユーザーとシステム メッセージに適用 PDE トレーラーを正しい形式を受け入れますが、それらを処理しません。</span><span class="sxs-lookup"><span data-stu-id="ba6f7-133">The system accepts correctly formatted PDE trailers applied to user-to-system messages, but does not process them.</span></span> <span data-ttu-id="ba6f7-134">つまり、システムは、元のメッセージが存在するかどうかを確認しないようにします。</span><span class="sxs-lookup"><span data-stu-id="ba6f7-134">This means that the system does not check to see if the original message exists.</span></span> <span data-ttu-id="ba6f7-135">そのため、システムが PDE トレーラーで 2 回送信の取得要求を処理可能性があります-システムは、元のメッセージを受信した場合。</span><span class="sxs-lookup"><span data-stu-id="ba6f7-135">Therefore, the system may process a retrieval request sent with a PDE trailer twice—if the system received the original message.</span></span>  
   
-   <span data-ttu-id="d28c0-136">次のコードでは、PDE トレーラーの形式の例を示します。</span><span class="sxs-lookup"><span data-stu-id="d28c0-136">The following code is an example of the PDE trailer format:</span></span>  
+   <span data-ttu-id="ba6f7-136">次のコードでは、PDE トレーラーの形式の例を示します。</span><span class="sxs-lookup"><span data-stu-id="ba6f7-136">The following code is an example of the PDE trailer format:</span></span>  
   
   ```  
   {PDE:[<time><mir>]}  
   where <time><mir> refers to the emission of the previous possible issue  
   ```  
   
-- <span data-ttu-id="d28c0-137">**遅延メッセージ (DLM) トレーラです。**</span><span class="sxs-lookup"><span data-stu-id="d28c0-137">**Delayed Message (DLM) Trailer.**</span></span> <span data-ttu-id="d28c0-138">DLM トレーラーは、陳腐化期間を超えているすべての FIN ユーザーに出力メッセージに追加されます。</span><span class="sxs-lookup"><span data-stu-id="d28c0-138">The DLM trailer is added to all FIN user-to-user output messages that have exceeded their obsolescence period.</span></span> <span data-ttu-id="d28c0-139">このトレーラー GPA または FIN のシステム メッセージが表示されたら、無視できます。</span><span class="sxs-lookup"><span data-stu-id="d28c0-139">If this trailer appears in GPA or FIN system messages, you can ignore it.</span></span> <span data-ttu-id="d28c0-140">このトレーラーには、のみ、タグと値はありませんがあります。</span><span class="sxs-lookup"><span data-stu-id="d28c0-140">This trailer has a tag only, and no value.</span></span>  
+- <span data-ttu-id="ba6f7-137">**遅延メッセージ (DLM) トレーラです。**</span><span class="sxs-lookup"><span data-stu-id="ba6f7-137">**Delayed Message (DLM) Trailer.**</span></span> <span data-ttu-id="ba6f7-138">DLM トレーラーは、陳腐化期間を超えているすべての FIN ユーザーに出力メッセージに追加されます。</span><span class="sxs-lookup"><span data-stu-id="ba6f7-138">The DLM trailer is added to all FIN user-to-user output messages that have exceeded their obsolescence period.</span></span> <span data-ttu-id="ba6f7-139">このトレーラー GPA または FIN のシステム メッセージが表示されたら、無視できます。</span><span class="sxs-lookup"><span data-stu-id="ba6f7-139">If this trailer appears in GPA or FIN system messages, you can ignore it.</span></span> <span data-ttu-id="ba6f7-140">このトレーラーには、のみ、タグと値はありませんがあります。</span><span class="sxs-lookup"><span data-stu-id="ba6f7-140">This trailer has a tag only, and no value.</span></span>  
   
-   <span data-ttu-id="d28c0-141">陳腐化期間は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="d28c0-141">The obsolescence period is as follows:</span></span>  
+   <span data-ttu-id="ba6f7-141">陳腐化期間は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="ba6f7-141">The obsolescence period is as follows:</span></span>  
   
-  - <span data-ttu-id="d28c0-142">U = 15 分</span><span class="sxs-lookup"><span data-stu-id="d28c0-142">U = 15 minutes</span></span>  
+  - <span data-ttu-id="ba6f7-142">U = 15 分</span><span class="sxs-lookup"><span data-stu-id="ba6f7-142">U = 15 minutes</span></span>  
   
-  - <span data-ttu-id="d28c0-143">N = 100 分</span><span class="sxs-lookup"><span data-stu-id="d28c0-143">N = 100 minutes</span></span>  
+  - <span data-ttu-id="ba6f7-143">N = 100 分</span><span class="sxs-lookup"><span data-stu-id="ba6f7-143">N = 100 minutes</span></span>  
   
-    <span data-ttu-id="d28c0-144">DLM トレーラーの形式の例を次のコードに示します。</span><span class="sxs-lookup"><span data-stu-id="d28c0-144">The following code is an example of the DLM trailer format:</span></span>  
+    <span data-ttu-id="ba6f7-144">DLM トレーラーの形式の例を次のコードに示します。</span><span class="sxs-lookup"><span data-stu-id="ba6f7-144">The following code is an example of the DLM trailer format:</span></span>  
   
   ```  
   {DLM:}  
   ```  
   
-- <span data-ttu-id="d28c0-145">**トレーラーの使用可能な重複するメッセージ (PDM)。**</span><span class="sxs-lookup"><span data-stu-id="d28c0-145">**Possible Duplicate Message (PDM) Trailer.**</span></span> <span data-ttu-id="d28c0-146">PDM トレーラーが (GPA および 01 のサービスの識別子を持つ FIN) 出力メッセージに、システムによって追加される前の配布が無効であるため、再送信してもらいます。 します。</span><span class="sxs-lookup"><span data-stu-id="d28c0-146">The PDM trailer is added by the system to any output message (GPA and FIN with a Service Identifier of 01) being resent because a prior delivery may not be valid.</span></span> <span data-ttu-id="d28c0-147">システム PLT PDM トレーラーでレポートの要求を受信する場合、応答には (省略可能な配信のリファレンス) なしのプレーンな PDM があります。</span><span class="sxs-lookup"><span data-stu-id="d28c0-147">If a system PLT receives a report request with a PDM trailer, the response has a plain PDM (without the optional delivery reference).</span></span> <span data-ttu-id="d28c0-148">ユーザーには、配信が失敗した試行のため他 PDMs を追加することがあります。</span><span class="sxs-lookup"><span data-stu-id="d28c0-148">Other PDMs may be added because of unsuccessful delivery attempts to the user.</span></span>  
+- <span data-ttu-id="ba6f7-145">**トレーラーの使用可能な重複するメッセージ (PDM)。**</span><span class="sxs-lookup"><span data-stu-id="ba6f7-145">**Possible Duplicate Message (PDM) Trailer.**</span></span> <span data-ttu-id="ba6f7-146">PDM トレーラーが (GPA および 01 のサービスの識別子を持つ FIN) 出力メッセージに、システムによって追加される前の配布が無効であるため、再送信してもらいます。 します。</span><span class="sxs-lookup"><span data-stu-id="ba6f7-146">The PDM trailer is added by the system to any output message (GPA and FIN with a Service Identifier of 01) being resent because a prior delivery may not be valid.</span></span> <span data-ttu-id="ba6f7-147">システム PLT PDM トレーラーでレポートの要求を受信する場合、応答には (省略可能な配信のリファレンス) なしのプレーンな PDM があります。</span><span class="sxs-lookup"><span data-stu-id="ba6f7-147">If a system PLT receives a report request with a PDM trailer, the response has a plain PDM (without the optional delivery reference).</span></span> <span data-ttu-id="ba6f7-148">ユーザーには、配信が失敗した試行のため他 PDMs を追加することがあります。</span><span class="sxs-lookup"><span data-stu-id="ba6f7-148">Other PDMs may be added because of unsuccessful delivery attempts to the user.</span></span>  
   
-   <span data-ttu-id="d28c0-149">次のコードでは、PDM トレーラーの形式の例を示します。</span><span class="sxs-lookup"><span data-stu-id="d28c0-149">The following code is an example of the PDM trailer format:</span></span>  
+   <span data-ttu-id="ba6f7-149">次のコードでは、PDM トレーラーの形式の例を示します。</span><span class="sxs-lookup"><span data-stu-id="ba6f7-149">The following code is an example of the PDM trailer format:</span></span>  
   
   ```  
   {PDM:[<time><mor>]}  
   where <time> and the Message Output Reference <mor> are that of the previous attempt  
   ```  
   
-- <span data-ttu-id="d28c0-150">**メッセージの参照 (MRF) トレーラーします。**</span><span class="sxs-lookup"><span data-stu-id="d28c0-150">**Message Reference (MRF) Trailer.**</span></span> <span data-ttu-id="d28c0-151">MRF トレーラーは、教育機関のサーバーの全体のメッセージには、MT 096 FIN コピーで元のユーザー メッセージのメッセージの参照を指定します。</span><span class="sxs-lookup"><span data-stu-id="d28c0-151">The MRF trailer specifies the message reference of the original user message in MT 096 FIN Copy to Central Institution Messages.</span></span>  
+- <span data-ttu-id="ba6f7-150">**メッセージの参照 (MRF) トレーラーします。**</span><span class="sxs-lookup"><span data-stu-id="ba6f7-150">**Message Reference (MRF) Trailer.**</span></span> <span data-ttu-id="ba6f7-151">MRF トレーラーは、教育機関のサーバーの全体のメッセージには、MT 096 FIN コピーで元のユーザー メッセージのメッセージの参照を指定します。</span><span class="sxs-lookup"><span data-stu-id="ba6f7-151">The MRF trailer specifies the message reference of the original user message in MT 096 FIN Copy to Central Institution Messages.</span></span>  
   
-   <span data-ttu-id="d28c0-152">次のコードでは、MRF トレーラーの形式の例を示します。</span><span class="sxs-lookup"><span data-stu-id="d28c0-152">The following code is an example of the MRF trailer format:</span></span>  
+   <span data-ttu-id="ba6f7-152">次のコードでは、MRF トレーラーの形式の例を示します。</span><span class="sxs-lookup"><span data-stu-id="ba6f7-152">The following code is an example of the MRF trailer format:</span></span>  
   
   ```  
   {MRF:<date><full-time><mir>}  
@@ -95,7 +95,7 @@ ms.locfileid: "37006019"
   ```  
   
   > [!NOTE]
-  >  <span data-ttu-id="d28c0-153">MRF トレーラーでは、FIN コピーに固有ですし、中央機関メッセージには、MT 096 FIN コピーで自動的に生成されます。</span><span class="sxs-lookup"><span data-stu-id="d28c0-153">The MRF trailer is specific to FIN Copy and is automatically generated in the MT 096 FIN Copy to Central Institution Message.</span></span> <span data-ttu-id="d28c0-154">このトレーラーは、MT 097 が応答を MT 096 を識別するためにフィールド 109 MT 096 FIN コピーの教育機関のサーバーの全体のメッセージにのみ使用できます。</span><span class="sxs-lookup"><span data-stu-id="d28c0-154">You can only use this trailer in field 109 of the MT 096 FIN Copy to Central Institution Message to identify the MT 096 to which the MT 097 is a response.</span></span> <span data-ttu-id="d28c0-155">MRF の形式は変更されます。</span><span class="sxs-lookup"><span data-stu-id="d28c0-155">The format of the MRF is subject to change.</span></span>  
+  >  <span data-ttu-id="ba6f7-153">MRF トレーラーでは、FIN コピーに固有ですし、中央機関メッセージには、MT 096 FIN コピーで自動的に生成されます。</span><span class="sxs-lookup"><span data-stu-id="ba6f7-153">The MRF trailer is specific to FIN Copy and is automatically generated in the MT 096 FIN Copy to Central Institution Message.</span></span> <span data-ttu-id="ba6f7-154">このトレーラーは、MT 097 が応答を MT 096 を識別するためにフィールド 109 MT 096 FIN コピーの教育機関のサーバーの全体のメッセージにのみ使用できます。</span><span class="sxs-lookup"><span data-stu-id="ba6f7-154">You can only use this trailer in field 109 of the MT 096 FIN Copy to Central Institution Message to identify the MT 096 to which the MT 097 is a response.</span></span> <span data-ttu-id="ba6f7-155">MRF の形式は変更されます。</span><span class="sxs-lookup"><span data-stu-id="ba6f7-155">The format of the MRF is subject to change.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="d28c0-156">参照</span><span class="sxs-lookup"><span data-stu-id="d28c0-156">See Also</span></span>  
- [<span data-ttu-id="d28c0-157">スキーマの操作</span><span class="sxs-lookup"><span data-stu-id="d28c0-157">Working with Schemas</span></span>](../../adapters-and-accelerators/accelerator-swift/working-with-schemas.md)
+## <a name="see-also"></a><span data-ttu-id="ba6f7-156">参照</span><span class="sxs-lookup"><span data-stu-id="ba6f7-156">See Also</span></span>  
+ [<span data-ttu-id="ba6f7-157">スキーマの操作</span><span class="sxs-lookup"><span data-stu-id="ba6f7-157">Working with Schemas</span></span>](../../adapters-and-accelerators/accelerator-swift/working-with-schemas.md)

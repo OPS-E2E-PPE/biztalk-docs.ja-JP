@@ -1,5 +1,5 @@
 ---
-title: '手順 4: データベース サーバーの構成 |Microsoft ドキュメント'
+title: 手順 4:データベース サーバーの構成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,12 +15,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f4c2f3277db4a30fbaf9556645e8e130dc4ff92b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 133c640a15773fa9b3e33c571bf32cc5d6b999af
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22214466"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65530017"
 ---
-# <a name="step-4-configuring-the-database-servers"></a><span data-ttu-id="b9f9f-102">手順 4: データベース サーバーの構成</span><span class="sxs-lookup"><span data-stu-id="b9f9f-102">Step 4: Configuring the Database Servers</span></span>
-<span data-ttu-id="b9f9f-103">インストールと構成手順については、SQL server のマニュアルを参照してください。</span><span class="sxs-lookup"><span data-stu-id="b9f9f-103">Refer to the SQL server documentation for installation and configuration instructions.</span></span>
+# <a name="step-4-configuring-the-database-servers"></a><span data-ttu-id="e21b5-102">手順 4:データベース サーバーを構成します。</span><span class="sxs-lookup"><span data-stu-id="e21b5-102">Step 4: Configuring the Database Servers</span></span>
+<span data-ttu-id="e21b5-103">インストールと構成手順については、SQL server のドキュメントを参照してください。</span><span class="sxs-lookup"><span data-stu-id="e21b5-103">Refer to the SQL server documentation for installation and configuration instructions.</span></span>

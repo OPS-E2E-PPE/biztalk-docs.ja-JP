@@ -1,5 +1,5 @@
 ---
-title: Siebel アダプターを使用してへの接続 |Microsoft ドキュメント
+title: アダプターを使用して Siebel に接続する |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,17 +15,17 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0272381aa5edee8c4ffdb1d37ce0e276e8ef4a30
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6b53524decd3e597f0400578afc3da63eb5d2fcf
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22221842"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65371888"
 ---
-# <a name="connect-to-siebel-using-the-adapter"></a><span data-ttu-id="5b0e9-102">Siebel アダプターを使用してへの接続します。</span><span class="sxs-lookup"><span data-stu-id="5b0e9-102">Connect to Siebel using the adapter</span></span>
-<span data-ttu-id="5b0e9-103">[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]アダプター クライアント接続の識別子 URI (Uniform Resource)、Siebel システムへの接続と呼ばれる、接続文字列を指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="5b0e9-103">The [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] requires adapter clients to provide a connection string, called the connection Uniform Resource Identifier (URI), to connect to a Siebel system.</span></span> <span data-ttu-id="5b0e9-104">接続 URI のアダプターのクライアントは、外部システムに接続するための接続パラメーターを指定できます。</span><span class="sxs-lookup"><span data-stu-id="5b0e9-104">With a connection URI, adapter clients can specify connection parameters to connect to an external system.</span></span> <span data-ttu-id="5b0e9-105">接続 URI の詳細については、次を参照してください。 [Siebel システムへの接続を作成する](../../adapters-and-accelerators/adapter-siebel/create-a-connection-to-the-siebel-system.md)です。</span><span class="sxs-lookup"><span data-stu-id="5b0e9-105">For more information about the connection URI, see [Create a Connection to the Siebel System](../../adapters-and-accelerators/adapter-siebel/create-a-connection-to-the-siebel-system.md).</span></span>  
+# <a name="connect-to-siebel-using-the-adapter"></a><span data-ttu-id="8a959-102">アダプターを使用して Siebel に接続します。</span><span class="sxs-lookup"><span data-stu-id="8a959-102">Connect to Siebel using the adapter</span></span>
+<span data-ttu-id="8a959-103">[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]アダプター クライアント接続の Uniform Resource Identifier (URI) を Siebel システムへの接続と呼ばれる接続文字列を指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="8a959-103">The [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] requires adapter clients to provide a connection string, called the connection Uniform Resource Identifier (URI), to connect to a Siebel system.</span></span> <span data-ttu-id="8a959-104">接続 URI では、アダプター クライアントは、外部システムに接続する接続パラメーターを指定できます。</span><span class="sxs-lookup"><span data-stu-id="8a959-104">With a connection URI, adapter clients can specify connection parameters to connect to an external system.</span></span> <span data-ttu-id="8a959-105">接続 URI の詳細については、次を参照してください。 [Siebel システムへの接続を作成する](../../adapters-and-accelerators/adapter-siebel/create-a-connection-to-the-siebel-system.md)します。</span><span class="sxs-lookup"><span data-stu-id="8a959-105">For more information about the connection URI, see [Create a Connection to the Siebel System](../../adapters-and-accelerators/adapter-siebel/create-a-connection-to-the-siebel-system.md).</span></span>  
   
- <span data-ttu-id="5b0e9-106">Siebel システムへの接続を確立するときに、セキュリティのガイドラインに従うことを確認します。</span><span class="sxs-lookup"><span data-stu-id="5b0e9-106">Make sure you comply with the security guidelines when establishing a connection with the Siebel system.</span></span> <span data-ttu-id="5b0e9-107">セキュリティに関するガイドラインの詳細については、次を参照してください。 [Siebel アプリケーションのセキュリティ保護](../../adapters-and-accelerators/adapter-siebel/secure-your-siebel-applications.md)です。</span><span class="sxs-lookup"><span data-stu-id="5b0e9-107">For more information about security guidelines, see [Secure your Siebel applications](../../adapters-and-accelerators/adapter-siebel/secure-your-siebel-applications.md).</span></span>  
+ <span data-ttu-id="8a959-106">Siebel システムへの接続を確立するときに、セキュリティのガイドラインに従うことを確認します。</span><span class="sxs-lookup"><span data-stu-id="8a959-106">Make sure you comply with the security guidelines when establishing a connection with the Siebel system.</span></span> <span data-ttu-id="8a959-107">セキュリティのガイドラインの詳細については、次を参照してください。 [Siebel アプリケーションのセキュリティ保護](../../adapters-and-accelerators/adapter-siebel/secure-your-siebel-applications.md)します。</span><span class="sxs-lookup"><span data-stu-id="8a959-107">For more information about security guidelines, see [Secure your Siebel applications](../../adapters-and-accelerators/adapter-siebel/secure-your-siebel-applications.md).</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="5b0e9-108">参照</span><span class="sxs-lookup"><span data-stu-id="5b0e9-108">See Also</span></span>  
- [<span data-ttu-id="5b0e9-109">BizTalk adapter 用 Siebel eBusiness Applications の概要</span><span class="sxs-lookup"><span data-stu-id="5b0e9-109">Overview of BizTalk Adapter for Siebel eBusiness Applications</span></span>](../../adapters-and-accelerators/adapter-siebel/overview-of-biztalk-adapter-for-siebel-ebusiness-applications.md)
+## <a name="see-also"></a><span data-ttu-id="8a959-108">参照</span><span class="sxs-lookup"><span data-stu-id="8a959-108">See Also</span></span>  
+ [<span data-ttu-id="8a959-109">BizTalk Adapter for Siebel eBusiness Applications の概要</span><span class="sxs-lookup"><span data-stu-id="8a959-109">Overview of BizTalk Adapter for Siebel eBusiness Applications</span></span>](../../adapters-and-accelerators/adapter-siebel/overview-of-biztalk-adapter-for-siebel-ebusiness-applications.md)
