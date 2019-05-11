@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10768 |Microsoft Docs'
+title: シングル サインオン:イベント 10768 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,28 +12,28 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 41459c6c5d3a7512bfd3f1400c58d695ed05bef7
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 12569f3da6aab416f42dbb765e50b6a453e2fdc3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36974723"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65394285"
 ---
-# <a name="single-sign-on-event-10768"></a><span data-ttu-id="c4451-102">シングル サインオン: イベント 10768</span><span class="sxs-lookup"><span data-stu-id="c4451-102">Single Sign-On: Event 10768</span></span>
-## <a name="details"></a><span data-ttu-id="c4451-103">詳細</span><span class="sxs-lookup"><span data-stu-id="c4451-103">Details</span></span>  
+# <a name="single-sign-on-event-10768"></a><span data-ttu-id="74831-102">シングル サインオン:イベント 10768</span><span class="sxs-lookup"><span data-stu-id="74831-102">Single Sign-On: Event 10768</span></span>
+## <a name="details"></a><span data-ttu-id="74831-103">詳細</span><span class="sxs-lookup"><span data-stu-id="74831-103">Details</span></span>  
   
 |                 |                                                            |
 |-----------------|------------------------------------------------------------|
-|  <span data-ttu-id="c4451-104">製品名</span><span class="sxs-lookup"><span data-stu-id="c4451-104">Product Name</span></span>   |                 <span data-ttu-id="c4451-105">エンタープライズ シングル サインオン</span><span class="sxs-lookup"><span data-stu-id="c4451-105">Enterprise Single Sign-On</span></span>                  |
-| <span data-ttu-id="c4451-106">製品バージョン</span><span class="sxs-lookup"><span data-stu-id="c4451-106">Product Version</span></span> | [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)] |
-|    <span data-ttu-id="c4451-107">イベント ID</span><span class="sxs-lookup"><span data-stu-id="c4451-107">Event ID</span></span>     |                           <span data-ttu-id="c4451-108">10768</span><span class="sxs-lookup"><span data-stu-id="c4451-108">10768</span></span>                            |
-|  <span data-ttu-id="c4451-109">イベント ソース</span><span class="sxs-lookup"><span data-stu-id="c4451-109">Event Source</span></span>   |                           <span data-ttu-id="c4451-110">ENTSSO</span><span class="sxs-lookup"><span data-stu-id="c4451-110">ENTSSO</span></span>                           |
-|    <span data-ttu-id="c4451-111">コンポーネント</span><span class="sxs-lookup"><span data-stu-id="c4451-111">Component</span></span>    |                            <span data-ttu-id="c4451-112">なし</span><span class="sxs-lookup"><span data-stu-id="c4451-112">N/A</span></span>                             |
-|  <span data-ttu-id="c4451-113">シンボル名</span><span class="sxs-lookup"><span data-stu-id="c4451-113">Symbolic Name</span></span>  |                  <span data-ttu-id="c4451-114">ENTSSO_E_OUT_OF_SERVICE</span><span class="sxs-lookup"><span data-stu-id="c4451-114">ENTSSO_E_OUT_OF_SERVICE</span></span>                   |
-|  <span data-ttu-id="c4451-115">メッセージ テキスト</span><span class="sxs-lookup"><span data-stu-id="c4451-115">Message Text</span></span>   |           <span data-ttu-id="c4451-116">エンタープライズ シングル サインオンがオフラインです。</span><span class="sxs-lookup"><span data-stu-id="c4451-116">Enterprise Single Sign-On is offline.</span></span>            |
+|  <span data-ttu-id="74831-104">製品名</span><span class="sxs-lookup"><span data-stu-id="74831-104">Product Name</span></span>   |                 <span data-ttu-id="74831-105">エンタープライズ シングル サインオン</span><span class="sxs-lookup"><span data-stu-id="74831-105">Enterprise Single Sign-On</span></span>                  |
+| <span data-ttu-id="74831-106">製品バージョン</span><span class="sxs-lookup"><span data-stu-id="74831-106">Product Version</span></span> | [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)] |
+|    <span data-ttu-id="74831-107">イベント ID</span><span class="sxs-lookup"><span data-stu-id="74831-107">Event ID</span></span>     |                           <span data-ttu-id="74831-108">10768</span><span class="sxs-lookup"><span data-stu-id="74831-108">10768</span></span>                            |
+|  <span data-ttu-id="74831-109">イベント ソース</span><span class="sxs-lookup"><span data-stu-id="74831-109">Event Source</span></span>   |                           <span data-ttu-id="74831-110">ENTSSO</span><span class="sxs-lookup"><span data-stu-id="74831-110">ENTSSO</span></span>                           |
+|    <span data-ttu-id="74831-111">コンポーネント</span><span class="sxs-lookup"><span data-stu-id="74831-111">Component</span></span>    |                            <span data-ttu-id="74831-112">なし</span><span class="sxs-lookup"><span data-stu-id="74831-112">N/A</span></span>                             |
+|  <span data-ttu-id="74831-113">シンボル名</span><span class="sxs-lookup"><span data-stu-id="74831-113">Symbolic Name</span></span>  |                  <span data-ttu-id="74831-114">ENTSSO_E_OUT_OF_SERVICE</span><span class="sxs-lookup"><span data-stu-id="74831-114">ENTSSO_E_OUT_OF_SERVICE</span></span>                   |
+|  <span data-ttu-id="74831-115">メッセージ テキスト</span><span class="sxs-lookup"><span data-stu-id="74831-115">Message Text</span></span>   |           <span data-ttu-id="74831-116">エンタープライズ シングル サインオンがオフラインです。</span><span class="sxs-lookup"><span data-stu-id="74831-116">Enterprise Single Sign-On is offline.</span></span>            |
   
-## <a name="explanation"></a><span data-ttu-id="c4451-117">説明</span><span class="sxs-lookup"><span data-stu-id="c4451-117">Explanation</span></span>  
- <span data-ttu-id="c4451-118">ENTSSO システムがオフラインです。</span><span class="sxs-lookup"><span data-stu-id="c4451-118">The ENTSSO system is offline.</span></span>  
+## <a name="explanation"></a><span data-ttu-id="74831-117">説明</span><span class="sxs-lookup"><span data-stu-id="74831-117">Explanation</span></span>  
+ <span data-ttu-id="74831-118">ENTSSO システムがオフラインです。</span><span class="sxs-lookup"><span data-stu-id="74831-118">The ENTSSO system is offline.</span></span>  
   
-## <a name="user-action"></a><span data-ttu-id="c4451-119">ユーザーの操作</span><span class="sxs-lookup"><span data-stu-id="c4451-119">User Action</span></span>  
- <span data-ttu-id="c4451-120">詳細については、[サーバー スナップインを使用する](../core/how-to-use-the-servers-snap-in.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="c4451-120">For more information, see [How to Use the Servers Snap-in](../core/how-to-use-the-servers-snap-in.md).</span></span>
+## <a name="user-action"></a><span data-ttu-id="74831-119">ユーザーの操作</span><span class="sxs-lookup"><span data-stu-id="74831-119">User Action</span></span>  
+ <span data-ttu-id="74831-120">詳細については、次を参照してください。[サーバー スナップインを使用する](../core/how-to-use-the-servers-snap-in.md)します。</span><span class="sxs-lookup"><span data-stu-id="74831-120">For more information, see [How to Use the Servers Snap-in](../core/how-to-use-the-servers-snap-in.md).</span></span>

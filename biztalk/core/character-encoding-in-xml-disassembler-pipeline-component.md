@@ -17,26 +17,26 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6fee26bdab8566010981e72585358b060009785f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d299ac6a1261160cbd3844c3f0201e55affa5655
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36977579"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65391673"
 ---
-# <a name="character-encoding-in-xml-disassembler-pipeline-component"></a><span data-ttu-id="d2680-102">XML 逆アセンブラー パイプライン コンポーネントでの文字エン コード</span><span class="sxs-lookup"><span data-stu-id="d2680-102">Character Encoding in XML Disassembler Pipeline Component</span></span>
-<span data-ttu-id="d2680-103">XML 逆アセンブラーでは、次のアルゴリズムに基づいて、受信メッセージを処理するためのエンコードを決定します。</span><span class="sxs-lookup"><span data-stu-id="d2680-103">The XML Disassembler uses the following algorithm to determine which encoding to use for processing incoming messages:</span></span>  
+# <a name="character-encoding-in-xml-disassembler-pipeline-component"></a><span data-ttu-id="39b25-102">XML 逆アセンブラー パイプライン コンポーネントでの文字エン コード</span><span class="sxs-lookup"><span data-stu-id="39b25-102">Character Encoding in XML Disassembler Pipeline Component</span></span>
+<span data-ttu-id="39b25-103">XML 逆アセンブラーは、受信メッセージを処理するために使用するのにエンコードを決定するのに、次のアルゴリズムを使用します。</span><span class="sxs-lookup"><span data-stu-id="39b25-103">The XML Disassembler uses the following algorithm to determine which encoding to use for processing incoming messages:</span></span>  
   
-1. <span data-ttu-id="d2680-104">バイト順マークがデータ内に存在する場合、これによってエンコード情報が決定されます。</span><span class="sxs-lookup"><span data-stu-id="d2680-104">If a byte order mark exists in the data, encoding information is determined from it.</span></span>  
+1. <span data-ttu-id="39b25-104">データのバイト順マークが存在する場合、そこからはエンコード情報が判断されます。</span><span class="sxs-lookup"><span data-stu-id="39b25-104">If a byte order mark exists in the data, encoding information is determined from it.</span></span>  
   
-2. <span data-ttu-id="d2680-105">の場合、 **IBaseMessagePart.Charset**プロパティが設定されて、が指定されてエンコードが使用されます。</span><span class="sxs-lookup"><span data-stu-id="d2680-105">Otherwise, if the **IBaseMessagePart.Charset** property is set, the encoding specified there is used.</span></span>  
+2. <span data-ttu-id="39b25-105">の場合、 **IBaseMessagePart.Charset**プロパティが設定されて、が指定されてエンコードが使用されます。</span><span class="sxs-lookup"><span data-stu-id="39b25-105">Otherwise, if the **IBaseMessagePart.Charset** property is set, the encoding specified there is used.</span></span>  
   
-3. <span data-ttu-id="d2680-106">上記のいずれにも該当せず、XML ドキュメント内に ANSI を指定する XML 宣言が存在する場合は、その宣言に指定されているエンコードが使用されます。</span><span class="sxs-lookup"><span data-stu-id="d2680-106">Otherwise if the XML declaration is present in the XML document, the encoding specified there is used, provided the XML declaration is ANSI.</span></span>  
+3. <span data-ttu-id="39b25-106">それ以外の場合、XML 宣言が XML ドキュメント内にある場合が指定されてエンコードされる、指定された XML 宣言が ANSI。</span><span class="sxs-lookup"><span data-stu-id="39b25-106">Otherwise if the XML declaration is present in the XML document, the encoding specified there is used, provided the XML declaration is ANSI.</span></span>  
   
-4. <span data-ttu-id="d2680-107">上記のいずれにも該当しない場合は、UTF-8 エンコードが使用されます。</span><span class="sxs-lookup"><span data-stu-id="d2680-107">Otherwise, UTF-8 encoding is used.</span></span>  
+4. <span data-ttu-id="39b25-107">それ以外の場合、utf-8 エンコードが使用されます。</span><span class="sxs-lookup"><span data-stu-id="39b25-107">Otherwise, UTF-8 encoding is used.</span></span>  
   
-   <span data-ttu-id="d2680-108">メッセージ コンテキストに保存、上記の場合に 2、3、および 4、エンコーディング、XML 逆アセンブラーが決定した後の**XMLNorm.SourceCharset**プロパティ。</span><span class="sxs-lookup"><span data-stu-id="d2680-108">For the preceding cases 2, 3, and 4, after the XML Disassembler determines the encoding, it saves it on the message context in **XMLNorm.SourceCharset** property.</span></span> <span data-ttu-id="d2680-109">XML 逆アセンブラー パイプライン コンポーネントにより生成されるメッセージには、常に UTF-8 エンコードが使用されます。</span><span class="sxs-lookup"><span data-stu-id="d2680-109">Messages produced by the XML Disassembler pipeline component always use UTF-8 encoding.</span></span> <span data-ttu-id="d2680-110">バイト オーダー マークから取得されたエンコード (上記 1 のケース) は保持されません。</span><span class="sxs-lookup"><span data-stu-id="d2680-110">For case 1, encoding determined from the byte order mark is not preserved.</span></span>  
+   <span data-ttu-id="39b25-108">メッセージ コンテキストに保存、上記の場合に 2、3、および 4、エンコーディング、XML 逆アセンブラーが決定した後の**XMLNorm.SourceCharset**プロパティ。</span><span class="sxs-lookup"><span data-stu-id="39b25-108">For the preceding cases 2, 3, and 4, after the XML Disassembler determines the encoding, it saves it on the message context in **XMLNorm.SourceCharset** property.</span></span> <span data-ttu-id="39b25-109">常に、XML 逆アセンブラー パイプライン コンポーネントによって生成されたメッセージは、utf-8 エンコードを使用します。</span><span class="sxs-lookup"><span data-stu-id="39b25-109">Messages produced by the XML Disassembler pipeline component always use UTF-8 encoding.</span></span> <span data-ttu-id="39b25-110">1 の場合、バイト オーダー マークから取得されたエンコードは保持されません。</span><span class="sxs-lookup"><span data-stu-id="39b25-110">For case 1, encoding determined from the byte order mark is not preserved.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="d2680-111">参照</span><span class="sxs-lookup"><span data-stu-id="d2680-111">See Also</span></span>  
- <span data-ttu-id="d2680-112">[XML 逆アセンブラー パイプライン コンポーネント](../core/xml-disassembler-pipeline-component.md) </span><span class="sxs-lookup"><span data-stu-id="d2680-112">[XML Disassembler Pipeline Component](../core/xml-disassembler-pipeline-component.md) </span></span>  
- [<span data-ttu-id="d2680-113">XML 逆アセンブラー パイプライン コンポーネントを構成する方法</span><span class="sxs-lookup"><span data-stu-id="d2680-113">How to Configure the XML Disassembler Pipeline Component</span></span>](../core/how-to-configure-the-xml-disassembler-pipeline-component.md)
+## <a name="see-also"></a><span data-ttu-id="39b25-111">参照</span><span class="sxs-lookup"><span data-stu-id="39b25-111">See Also</span></span>  
+ <span data-ttu-id="39b25-112">[XML 逆アセンブラー パイプライン コンポーネント](../core/xml-disassembler-pipeline-component.md) </span><span class="sxs-lookup"><span data-stu-id="39b25-112">[XML Disassembler Pipeline Component](../core/xml-disassembler-pipeline-component.md) </span></span>  
+ [<span data-ttu-id="39b25-113">XML 逆アセンブラー パイプライン コンポーネントを構成する方法</span><span class="sxs-lookup"><span data-stu-id="39b25-113">How to Configure the XML Disassembler Pipeline Component</span></span>](../core/how-to-configure-the-xml-disassembler-pipeline-component.md)

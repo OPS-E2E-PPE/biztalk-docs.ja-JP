@@ -1,5 +1,5 @@
 ---
-title: TPE のコンポーネント |Microsoft ドキュメント
+title: TPE のコンポーネント |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,22 +14,22 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 79a693a5c5d77fd331a500049560de3aba1f5311
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d5443b469a334cd02a80d499f8c638071ead25e4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22231834"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65391657"
 ---
-# <a name="components-of-the-tpe"></a><span data-ttu-id="6e8d6-102">TPE のコンポーネント</span><span class="sxs-lookup"><span data-stu-id="6e8d6-102">Components of the TPE</span></span>
-<span data-ttu-id="6e8d6-103">このセクションでは、TPE のユーザー インターフェイスおよび実行される機能について説明します。</span><span class="sxs-lookup"><span data-stu-id="6e8d6-103">This section contains information about the TPE user interface and the functions it performs.</span></span>  
+# <a name="components-of-the-tpe"></a><span data-ttu-id="32861-102">TPE のコンポーネント</span><span class="sxs-lookup"><span data-stu-id="32861-102">Components of the TPE</span></span>
+<span data-ttu-id="32861-103">このセクションでは、TPE のユーザー インターフェイスおよび実行される機能について説明します。</span><span class="sxs-lookup"><span data-stu-id="32861-103">This section contains information about the TPE user interface and the functions it performs.</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="6e8d6-104">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="6e8d6-104">In This Section</span></span>  
+## <a name="in-this-section"></a><span data-ttu-id="32861-104">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="32861-104">In This Section</span></span>  
   
--   [<span data-ttu-id="6e8d6-105">TPE のメニュー オプション</span><span class="sxs-lookup"><span data-stu-id="6e8d6-105">TPE Menu Options</span></span>](../core/tpe-menu-options.md)  
+-   [<span data-ttu-id="32861-105">TPE のメニュー オプション</span><span class="sxs-lookup"><span data-stu-id="32861-105">TPE Menu Options</span></span>](../core/tpe-menu-options.md)  
   
--   [<span data-ttu-id="6e8d6-106">アクティビティ ビューとは何ですか。</span><span class="sxs-lookup"><span data-stu-id="6e8d6-106">What Is an Activity View?</span></span>](../core/what-is-an-activity-view.md)  
+-   [<span data-ttu-id="32861-106">アクティビティ ビューについて</span><span class="sxs-lookup"><span data-stu-id="32861-106">What Is an Activity View?</span></span>](../core/what-is-an-activity-view.md)  
   
--   [<span data-ttu-id="6e8d6-107">イベント ソース ビューとは何ですか。</span><span class="sxs-lookup"><span data-stu-id="6e8d6-107">What Is the Source Event View?</span></span>](../core/what-is-the-source-event-view.md)  
+-   [<span data-ttu-id="32861-107">イベント ソース ビューについて</span><span class="sxs-lookup"><span data-stu-id="32861-107">What Is the Source Event View?</span></span>](../core/what-is-the-source-event-view.md)  
   
--   [<span data-ttu-id="6e8d6-108">TPE アクティビティ ビューのノード</span><span class="sxs-lookup"><span data-stu-id="6e8d6-108">TPE Activity View Nodes</span></span>](../core/tpe-activity-view-nodes.md)
+-   [<span data-ttu-id="32861-108">TPE アクティビティ ビューのノード</span><span class="sxs-lookup"><span data-stu-id="32861-108">TPE Activity View Nodes</span></span>](../core/tpe-activity-view-nodes.md)

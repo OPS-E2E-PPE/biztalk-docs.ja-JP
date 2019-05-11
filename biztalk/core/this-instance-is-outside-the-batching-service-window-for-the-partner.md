@@ -12,28 +12,28 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a741439b5d6691a3218811568087450f2008b0ef
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: bc0a60bf52b691795047175186f2707c6839981a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36966483"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395445"
 ---
-# <a name="this-instance-is-outside-the-batching-service-window-for-the-partner"></a><span data-ttu-id="52273-102">このインスタンスはパートナーの [Batching Service] ウィンドウ内にありません</span><span class="sxs-lookup"><span data-stu-id="52273-102">This instance is outside the Batching Service window for the partner</span></span>
-## <a name="details"></a><span data-ttu-id="52273-103">詳細</span><span class="sxs-lookup"><span data-stu-id="52273-103">Details</span></span>  
+# <a name="this-instance-is-outside-the-batching-service-window-for-the-partner"></a><span data-ttu-id="01869-102">このインスタンスがパートナーの [Batching Service] ウィンドウの外側には</span><span class="sxs-lookup"><span data-stu-id="01869-102">This instance is outside the Batching Service window for the partner</span></span>
+## <a name="details"></a><span data-ttu-id="01869-103">詳細</span><span class="sxs-lookup"><span data-stu-id="01869-103">Details</span></span>  
   
 |                 |                                                                                        |
 |-----------------|----------------------------------------------------------------------------------------|
-|  <span data-ttu-id="52273-104">製品名</span><span class="sxs-lookup"><span data-stu-id="52273-104">Product Name</span></span>   |   [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]   |
-| <span data-ttu-id="52273-105">製品バージョン</span><span class="sxs-lookup"><span data-stu-id="52273-105">Product Version</span></span> |               [!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]               |
-|    <span data-ttu-id="52273-106">イベント ID</span><span class="sxs-lookup"><span data-stu-id="52273-106">Event ID</span></span>     |                                           -                                            |
-|  <span data-ttu-id="52273-107">イベント ソース</span><span class="sxs-lookup"><span data-stu-id="52273-107">Event Source</span></span>   | [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="52273-108"> EDI</span><span class="sxs-lookup"><span data-stu-id="52273-108"> EDI</span></span> |
-|    <span data-ttu-id="52273-109">コンポーネント</span><span class="sxs-lookup"><span data-stu-id="52273-109">Component</span></span>    |                                    <span data-ttu-id="52273-110">バッチ処理エンジン</span><span class="sxs-lookup"><span data-stu-id="52273-110">Batching Engine</span></span>                                     |
-|  <span data-ttu-id="52273-111">シンボル名</span><span class="sxs-lookup"><span data-stu-id="52273-111">Symbolic Name</span></span>  |                              <span data-ttu-id="52273-112">OutsideBatchingServiceWindow</span><span class="sxs-lookup"><span data-stu-id="52273-112">OutsideBatchingServiceWindow</span></span>                              |
-|  <span data-ttu-id="52273-113">メッセージ テキスト</span><span class="sxs-lookup"><span data-stu-id="52273-113">Message Text</span></span>   |          <span data-ttu-id="52273-114">このインスタンスはパートナーの [Batching Service] ウィンドウ内にありません</span><span class="sxs-lookup"><span data-stu-id="52273-114">This instance is outside the Batching Service window for the partner</span></span>          |
+|  <span data-ttu-id="01869-104">製品名</span><span class="sxs-lookup"><span data-stu-id="01869-104">Product Name</span></span>   |   [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]   |
+| <span data-ttu-id="01869-105">製品バージョン</span><span class="sxs-lookup"><span data-stu-id="01869-105">Product Version</span></span> |               [!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]               |
+|    <span data-ttu-id="01869-106">イベント ID</span><span class="sxs-lookup"><span data-stu-id="01869-106">Event ID</span></span>     |                                           -                                            |
+|  <span data-ttu-id="01869-107">イベント ソース</span><span class="sxs-lookup"><span data-stu-id="01869-107">Event Source</span></span>   | [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] <span data-ttu-id="01869-108">EDI</span><span class="sxs-lookup"><span data-stu-id="01869-108">EDI</span></span> |
+|    <span data-ttu-id="01869-109">コンポーネント</span><span class="sxs-lookup"><span data-stu-id="01869-109">Component</span></span>    |                                    <span data-ttu-id="01869-110">バッチ処理エンジン</span><span class="sxs-lookup"><span data-stu-id="01869-110">Batching Engine</span></span>                                     |
+|  <span data-ttu-id="01869-111">シンボル名</span><span class="sxs-lookup"><span data-stu-id="01869-111">Symbolic Name</span></span>  |                              <span data-ttu-id="01869-112">OutsideBatchingServiceWindow</span><span class="sxs-lookup"><span data-stu-id="01869-112">OutsideBatchingServiceWindow</span></span>                              |
+|  <span data-ttu-id="01869-113">メッセージ テキスト</span><span class="sxs-lookup"><span data-stu-id="01869-113">Message Text</span></span>   |          <span data-ttu-id="01869-114">このインスタンスがパートナーの [Batching Service] ウィンドウの外側には</span><span class="sxs-lookup"><span data-stu-id="01869-114">This instance is outside the Batching Service window for the partner</span></span>          |
   
-## <a name="explanation"></a><span data-ttu-id="52273-115">説明</span><span class="sxs-lookup"><span data-stu-id="52273-115">Explanation</span></span>  
- <span data-ttu-id="52273-116">このエラー/警告/情報イベントは、バッチ処理オーケストレーションのインスタンスがパーティのアクティベーションの範囲外であったため、インスタンスを開始できなかったことを示します。</span><span class="sxs-lookup"><span data-stu-id="52273-116">This Error/Warning/Information event indicates that an instance of the batching orchestration could not be started because the instance fell outside the activation range for the party.</span></span>  
+## <a name="explanation"></a><span data-ttu-id="01869-115">説明</span><span class="sxs-lookup"><span data-stu-id="01869-115">Explanation</span></span>  
+ <span data-ttu-id="01869-116">このエラー/警告/情報イベントは、パーティのアクティベーションの範囲外のインスタンスであったためは、バッチ処理オーケストレーションのインスタンスを開始できませんでしたを示します。</span><span class="sxs-lookup"><span data-stu-id="01869-116">This Error/Warning/Information event indicates that an instance of the batching orchestration could not be started because the instance fell outside the activation range for the party.</span></span>  
   
-## <a name="user-action"></a><span data-ttu-id="52273-117">ユーザーの操作</span><span class="sxs-lookup"><span data-stu-id="52273-117">User Action</span></span>  
- <span data-ttu-id="52273-118">このエラーを解決するには、パーティの [EDI のプロパティ] の [インターチェンジのバッチ作成用の設定] ページを開き、オーケストレーション インスタンスがアクティベーションの範囲内にあることを確認します。</span><span class="sxs-lookup"><span data-stu-id="52273-118">To resolve this error, open the Interchange Batch Creations Settings page of the EDI Properties for the party, and make sure that the orchestration instance is within the activation range.</span></span> <span data-ttu-id="52273-119">そうでない場合、開始時間プロパティを変更し、クリックして**開始**します。</span><span class="sxs-lookup"><span data-stu-id="52273-119">If not, change the Start time property and then click **Start**.</span></span>
+## <a name="user-action"></a><span data-ttu-id="01869-117">ユーザーの操作</span><span class="sxs-lookup"><span data-stu-id="01869-117">User Action</span></span>  
+ <span data-ttu-id="01869-118">このエラーを解決するには、パーティの EDI のプロパティの [インターチェンジのバッチ作成の設定] ページを開くし、オーケストレーション インスタンスがアクティベーションの範囲内であることを確認します。</span><span class="sxs-lookup"><span data-stu-id="01869-118">To resolve this error, open the Interchange Batch Creations Settings page of the EDI Properties for the party, and make sure that the orchestration instance is within the activation range.</span></span> <span data-ttu-id="01869-119">そうでない場合、開始時間プロパティを変更し、クリックして**開始**します。</span><span class="sxs-lookup"><span data-stu-id="01869-119">If not, change the Start time property and then click **Start**.</span></span>

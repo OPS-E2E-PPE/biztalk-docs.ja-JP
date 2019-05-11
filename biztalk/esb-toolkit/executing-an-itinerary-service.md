@@ -12,35 +12,35 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6a85e5c134e9fbbd2d1b6880fdb9e5cd866bc512
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 83551e31bfd822473e639c12abcf440c154dc826
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37024384"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395124"
 ---
-# <a name="executing-an-itinerary-service"></a><span data-ttu-id="05b8c-102">スケジュールのサービスを実行します。</span><span class="sxs-lookup"><span data-stu-id="05b8c-102">Executing an Itinerary Service</span></span>
-<span data-ttu-id="05b8c-103">ESB スケジュールは、オーケストレーションとして実装されているか、次のタスクを実行するメッセージング可能性のある任意のスケジュール サービスを含めることができます。</span><span class="sxs-lookup"><span data-stu-id="05b8c-103">An ESB itinerary can contain any itinerary service that may be implemented as orchestration or messaging to perform the following tasks:</span></span>  
+# <a name="executing-an-itinerary-service"></a><span data-ttu-id="3ee5e-102">スケジュールのサービスを実行します。</span><span class="sxs-lookup"><span data-stu-id="3ee5e-102">Executing an Itinerary Service</span></span>
+<span data-ttu-id="3ee5e-103">ESB スケジュールは、オーケストレーションとして実装されているか、次のタスクを実行するメッセージング可能性のある任意のスケジュール サービスを含めることができます。</span><span class="sxs-lookup"><span data-stu-id="3ee5e-103">An ESB itinerary can contain any itinerary service that may be implemented as orchestration or messaging to perform the following tasks:</span></span>  
   
-- <span data-ttu-id="05b8c-104">旅行プランを含むメッセージを受信できます。</span><span class="sxs-lookup"><span data-stu-id="05b8c-104">It can receive the message containing the itinerary.</span></span>  
+- <span data-ttu-id="3ee5e-104">旅行プランを含むメッセージを受信できます。</span><span class="sxs-lookup"><span data-stu-id="3ee5e-104">It can receive the message containing the itinerary.</span></span>  
   
-- <span data-ttu-id="05b8c-105">スケジュールの現在のステップを取得できます。</span><span class="sxs-lookup"><span data-stu-id="05b8c-105">It can retrieve the current itinerary step.</span></span>  
+- <span data-ttu-id="3ee5e-105">スケジュールの現在のステップを取得できます。</span><span class="sxs-lookup"><span data-stu-id="3ee5e-105">It can retrieve the current itinerary step.</span></span>  
   
-- <span data-ttu-id="05b8c-106">サービスを処理できます。</span><span class="sxs-lookup"><span data-stu-id="05b8c-106">It can process the service.</span></span>  
+- <span data-ttu-id="3ee5e-106">サービスを処理できます。</span><span class="sxs-lookup"><span data-stu-id="3ee5e-106">It can process the service.</span></span>  
   
-- <span data-ttu-id="05b8c-107">呼び出すことによって、送信メッセージで旅行計画を進めることことができます、**事前**メソッド。</span><span class="sxs-lookup"><span data-stu-id="05b8c-107">It can advance the itinerary on the outgoing message by calling the **Advance** method.</span></span>  
+- <span data-ttu-id="3ee5e-107">呼び出すことによって、送信メッセージで旅行計画を進めることことができます、**事前**メソッド。</span><span class="sxs-lookup"><span data-stu-id="3ee5e-107">It can advance the itinerary on the outgoing message by calling the **Advance** method.</span></span>  
   
-- <span data-ttu-id="05b8c-108">Microsoft BizTalk メッセージ ボックス データベースに、処理されたメッセージを発行できます。</span><span class="sxs-lookup"><span data-stu-id="05b8c-108">It can publish the processed message back into the Microsoft BizTalk Message Box database.</span></span>  
+- <span data-ttu-id="3ee5e-108">Microsoft BizTalk メッセージ ボックス データベースに、処理されたメッセージを発行できます。</span><span class="sxs-lookup"><span data-stu-id="3ee5e-108">It can publish the processed message back into the Microsoft BizTalk Message Box database.</span></span>  
   
-  <span data-ttu-id="05b8c-109">たとえば、オーケストレーションの図 1 に示すように、アクティブ化された受信図形に定義されたフィルターを実装することにより、旅行プランを含むメッセージを表示される[スケジュール サービス サブスクライバーとしてオーケストレーションを使用して](../esb-toolkit/using-an-orchestration-as-an-itinerary-service-subscriber.md)します。</span><span class="sxs-lookup"><span data-stu-id="05b8c-109">For example, an orchestration can receive a message that contains an itinerary by implementing a filter defined on the activated receive shape, as shown in Figure 1 of [Using an Orchestration as an Itinerary Service Subscriber](../esb-toolkit/using-an-orchestration-as-an-itinerary-service-subscriber.md).</span></span> <span data-ttu-id="05b8c-110">ただし、メッセージングは若干異なります: パイプライン コンポーネントの呼び出し、 **GetItineraryStep**日程が受信メッセージが存在するかどうかを判断するメソッド。</span><span class="sxs-lookup"><span data-stu-id="05b8c-110">However, messaging is slightly different: the pipeline component calls the **GetItineraryStep** method to determine whether an itinerary exists in an incoming message.</span></span> <span data-ttu-id="05b8c-111">それが処理する必要があるかどうかを確認するメッセージのプロパティを調べます。</span><span class="sxs-lookup"><span data-stu-id="05b8c-111">It also examines the message properties to check whether it should process it.</span></span>  
+  <span data-ttu-id="3ee5e-109">たとえば、オーケストレーションの図 1 に示すように、アクティブ化された受信図形に定義されたフィルターを実装することにより、旅行プランを含むメッセージを表示される[スケジュール サービス サブスクライバーとしてオーケストレーションを使用して](../esb-toolkit/using-an-orchestration-as-an-itinerary-service-subscriber.md)します。</span><span class="sxs-lookup"><span data-stu-id="3ee5e-109">For example, an orchestration can receive a message that contains an itinerary by implementing a filter defined on the activated receive shape, as shown in Figure 1 of [Using an Orchestration as an Itinerary Service Subscriber](../esb-toolkit/using-an-orchestration-as-an-itinerary-service-subscriber.md).</span></span> <span data-ttu-id="3ee5e-110">ただし、メッセージングは若干異なります: パイプライン コンポーネントの呼び出し、 **GetItineraryStep**日程が受信メッセージが存在するかどうかを判断するメソッド。</span><span class="sxs-lookup"><span data-stu-id="3ee5e-110">However, messaging is slightly different: the pipeline component calls the **GetItineraryStep** method to determine whether an itinerary exists in an incoming message.</span></span> <span data-ttu-id="3ee5e-111">それが処理する必要があるかどうかを確認するメッセージのプロパティを調べます。</span><span class="sxs-lookup"><span data-stu-id="3ee5e-111">It also examines the message properties to check whether it should process it.</span></span>  
   
-  <span data-ttu-id="05b8c-112">![オーケストレーション](../esb-toolkit/media/ch4-orchestration.jpg "Ch4 オーケストレーション")</span><span class="sxs-lookup"><span data-stu-id="05b8c-112">![Orchestration](../esb-toolkit/media/ch4-orchestration.jpg "Ch4-Orchestration")</span></span>  
+  <span data-ttu-id="3ee5e-112">![オーケストレーション](../esb-toolkit/media/ch4-orchestration.jpg "Ch4 オーケストレーション")</span><span class="sxs-lookup"><span data-stu-id="3ee5e-112">![Orchestration](../esb-toolkit/media/ch4-orchestration.jpg "Ch4-Orchestration")</span></span>  
   
-  <span data-ttu-id="05b8c-113">**図 1**</span><span class="sxs-lookup"><span data-stu-id="05b8c-113">**Figure 1**</span></span>  
+  <span data-ttu-id="3ee5e-113">**図 1**</span><span class="sxs-lookup"><span data-stu-id="3ee5e-113">**Figure 1**</span></span>  
   
-  <span data-ttu-id="05b8c-114">**サブスクライバーとして、スケジュールに参加するオーケストレーションのフィルター式の例**</span><span class="sxs-lookup"><span data-stu-id="05b8c-114">**Example filter expression for an orchestration that will participate in an itinerary as a subscriber**</span></span>  
+  <span data-ttu-id="3ee5e-114">**サブスクライバーとして、スケジュールに参加するオーケストレーションのフィルター式の例**</span><span class="sxs-lookup"><span data-stu-id="3ee5e-114">**Example filter expression for an orchestration that will participate in an itinerary as a subscriber**</span></span>  
   
-  <span data-ttu-id="05b8c-115">呼び出す必要がありますが、サービスがメッセージを取得した後、 **GetItineraryStep**のインスタンスを返すメソッド、 **ItineraryStep**クラス。</span><span class="sxs-lookup"><span data-stu-id="05b8c-115">After the service obtains the message, it must call the **GetItineraryStep** method, which returns an instance of the **ItineraryStep** class.</span></span> <span data-ttu-id="05b8c-116">次の一覧は、オーケストレーションとカスタム パイプライン コンポーネントの両方から行程 API のメソッドを呼び出す方法を示します。</span><span class="sxs-lookup"><span data-stu-id="05b8c-116">The following listings demonstrate how you can call the methods of the itinerary API from both an orchestration and a custom pipeline component.</span></span> <span data-ttu-id="05b8c-117">次のコードが実行される、 **GetItineraryStep**オーケストレーションの式図形からメソッド。</span><span class="sxs-lookup"><span data-stu-id="05b8c-117">The following code executes the **GetItineraryStep** method from an orchestration Expression shape.</span></span>  
+  <span data-ttu-id="3ee5e-115">呼び出す必要がありますが、サービスがメッセージを取得した後、 **GetItineraryStep**のインスタンスを返すメソッド、 **ItineraryStep**クラス。</span><span class="sxs-lookup"><span data-stu-id="3ee5e-115">After the service obtains the message, it must call the **GetItineraryStep** method, which returns an instance of the **ItineraryStep** class.</span></span> <span data-ttu-id="3ee5e-116">次の一覧は、オーケストレーションとカスタム パイプライン コンポーネントの両方から行程 API のメソッドを呼び出す方法を示します。</span><span class="sxs-lookup"><span data-stu-id="3ee5e-116">The following listings demonstrate how you can call the methods of the itinerary API from both an orchestration and a custom pipeline component.</span></span> <span data-ttu-id="3ee5e-117">次のコードが実行される、 **GetItineraryStep**オーケストレーションの式図形からメソッド。</span><span class="sxs-lookup"><span data-stu-id="3ee5e-117">The following code executes the **GetItineraryStep** method from an orchestration Expression shape.</span></span>  
   
 ```  
   
@@ -53,7 +53,7 @@ itinerary.Itinerary = Microsoft.Practices.ESB.Itinerary.ItineraryOMFactory.Creat
 step.ItineraryStep = itinerary.Itinerary.GetItineraryStep(InboundMessage);  
 ```  
   
- <span data-ttu-id="05b8c-118">次のコードでは、カスタム パイプライン コンポーネントからメッセージング サービス メソッドを実行する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="05b8c-118">The following code shows how to execute the messaging service method from a custom pipeline component.</span></span>  
+ <span data-ttu-id="3ee5e-118">次のコードでは、カスタム パイプライン コンポーネントからメッセージング サービス メソッドを実行する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="3ee5e-118">The following code shows how to execute the messaging service method from a custom pipeline component.</span></span>  
   
 ```csharp  
 // Execute messaging step.  
@@ -73,16 +73,16 @@ public IBaseMessage Execute(IPipelineContext context, IBaseMessage msg, string r
 }  
 ```  
   
- <span data-ttu-id="05b8c-119">インスタンス、 **IItineraryStep**クラスには、現在のサービスの実行環境のアンビエント プロパティを含む、現在のサービスのすべてのメタデータが含まれています。</span><span class="sxs-lookup"><span data-stu-id="05b8c-119">The instance of the **IItineraryStep** class contains all the metadata for the current service, including ambient properties of the current service execution environment.</span></span> <span data-ttu-id="05b8c-120">この機能には 2 つの優れた例、 **ServiceInstanceID**と現在**MessageDirection**パイプライン コンポーネントのプロパティ。</span><span class="sxs-lookup"><span data-stu-id="05b8c-120">Two good examples of this are the **ServiceInstanceID** and the current **MessageDirection** properties for a pipeline component.</span></span>  
+ <span data-ttu-id="3ee5e-119">インスタンス、 **IItineraryStep**クラスには、現在のサービスの実行環境のアンビエント プロパティを含む、現在のサービスのすべてのメタデータが含まれています。</span><span class="sxs-lookup"><span data-stu-id="3ee5e-119">The instance of the **IItineraryStep** class contains all the metadata for the current service, including ambient properties of the current service execution environment.</span></span> <span data-ttu-id="3ee5e-120">この機能には 2 つの優れた例、 **ServiceInstanceID**と現在**MessageDirection**パイプライン コンポーネントのプロパティ。</span><span class="sxs-lookup"><span data-stu-id="3ee5e-120">Two good examples of this are the **ServiceInstanceID** and the current **MessageDirection** properties for a pipeline component.</span></span>  
   
- <span data-ttu-id="05b8c-121">サービスを呼び出してから、 **GetItineraryStep**メソッドを取得できる、関連付けられたすべての競合回避モジュール。</span><span class="sxs-lookup"><span data-stu-id="05b8c-121">After a service calls the **GetItineraryStep** method, it can retrieve any associated resolvers.</span></span> <span data-ttu-id="05b8c-122">**ResolverCollection**のプロパティ、 **ItineraryStep**クラスは、サービスを列挙できるまで、次の例に示すように競合回避モジュールのコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="05b8c-122">The **ResolverCollection** property of the **ItineraryStep** class returns a collection of resolvers that the service can enumerate through, as shown in the following example.</span></span>  
+ <span data-ttu-id="3ee5e-121">サービスを呼び出してから、 **GetItineraryStep**メソッドを取得できる、関連付けられたすべての競合回避モジュール。</span><span class="sxs-lookup"><span data-stu-id="3ee5e-121">After a service calls the **GetItineraryStep** method, it can retrieve any associated resolvers.</span></span> <span data-ttu-id="3ee5e-122">**ResolverCollection**のプロパティ、 **ItineraryStep**クラスは、サービスを列挙できるまで、次の例に示すように競合回避モジュールのコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="3ee5e-122">The **ResolverCollection** property of the **ItineraryStep** class returns a collection of resolvers that the service can enumerate through, as shown in the following example.</span></span>  
   
 ```csharp  
 Microsoft.Practices.ESB.Itinerary.ResolverCollection resolvers;  
 resolvers = step.ItineraryStep.ResolverCollection;  
 ```  
   
- <span data-ttu-id="05b8c-123">内の各項目、 **ResolverCollection**リゾルバーとアダプター フレームワークでサポートされる型のいずれかに一致する競合回避モジュールの接続文字列を表します。</span><span class="sxs-lookup"><span data-stu-id="05b8c-123">Each item in the **ResolverCollection** represents a resolver connection string that matches one of the types supported by the Resolver and Adapter Framework.</span></span> <span data-ttu-id="05b8c-124">たとえば、次のリストよう、コレクション内の項目になります。</span><span class="sxs-lookup"><span data-stu-id="05b8c-124">For example, an item in the collection could look like the following listing.</span></span>  
+ <span data-ttu-id="3ee5e-123">内の各項目、 **ResolverCollection**リゾルバーとアダプター フレームワークでサポートされる型のいずれかに一致する競合回避モジュールの接続文字列を表します。</span><span class="sxs-lookup"><span data-stu-id="3ee5e-123">Each item in the **ResolverCollection** represents a resolver connection string that matches one of the types supported by the Resolver and Adapter Framework.</span></span> <span data-ttu-id="3ee5e-124">たとえば、次のリストよう、コレクション内の項目になります。</span><span class="sxs-lookup"><span data-stu-id="3ee5e-124">For example, an item in the collection could look like the following listing.</span></span>  
   
 ```idl  
 BRE:\\policy=GetCanadaPurchaseEndPoint;version=;useMsg=;  
@@ -99,9 +99,9 @@ uri()='http://globalbank.esb.dynamicresolution.com/northamericanservices/']/*
 uri()='http://globalbank.esb.dynamicresolution.com/northamericanservices/'];  
 ```  
   
- <span data-ttu-id="05b8c-125">リゾルバーとアダプターのプロバイダー フレームワークの競合回避モジュールのマネージャーは、エンドポイントを解決し、メッセージのエンドポイントのプロパティを設定できます。</span><span class="sxs-lookup"><span data-stu-id="05b8c-125">The resolver manager in the Resolver and Adapter Provider Framework can resolve the endpoints and set the endpoint properties of the message.</span></span> <span data-ttu-id="05b8c-126">このしくみの詳細については、[を使用して動的な解決とルーティング](../esb-toolkit/using-dynamic-resolution-and-routing.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="05b8c-126">For more information about how this occurs, see [Using Dynamic Resolution and Routing](../esb-toolkit/using-dynamic-resolution-and-routing.md).</span></span>  
+ <span data-ttu-id="3ee5e-125">リゾルバーとアダプターのプロバイダー フレームワークの競合回避モジュールのマネージャーは、エンドポイントを解決し、メッセージのエンドポイントのプロパティを設定できます。</span><span class="sxs-lookup"><span data-stu-id="3ee5e-125">The resolver manager in the Resolver and Adapter Provider Framework can resolve the endpoints and set the endpoint properties of the message.</span></span> <span data-ttu-id="3ee5e-126">このしくみの詳細については、次を参照してください。[を使用して動的な解決とルーティング](../esb-toolkit/using-dynamic-resolution-and-routing.md)します。</span><span class="sxs-lookup"><span data-stu-id="3ee5e-126">For more information about how this occurs, see [Using Dynamic Resolution and Routing](../esb-toolkit/using-dynamic-resolution-and-routing.md).</span></span>  
   
- <span data-ttu-id="05b8c-127">サービスでは、メッセージの処理が完了すると後、は、送信メッセージで旅行計画を進める必要があり、メッセージをメッセージ ボックス データベースに発行します。</span><span class="sxs-lookup"><span data-stu-id="05b8c-127">After the service finishes processing the message, it must advance the itinerary on the outgoing message and publish the message back to the Message Box database.</span></span> <span data-ttu-id="05b8c-128">次の例では、オーケストレーションの式図形のプロセスを示します。</span><span class="sxs-lookup"><span data-stu-id="05b8c-128">The following example shows the process for an orchestration Expression shape.</span></span>  
+ <span data-ttu-id="3ee5e-127">サービスでは、メッセージの処理が完了すると後、は、送信メッセージで旅行計画を進める必要があり、メッセージをメッセージ ボックス データベースに発行します。</span><span class="sxs-lookup"><span data-stu-id="3ee5e-127">After the service finishes processing the message, it must advance the itinerary on the outgoing message and publish the message back to the Message Box database.</span></span> <span data-ttu-id="3ee5e-128">次の例では、オーケストレーションの式図形のプロセスを示します。</span><span class="sxs-lookup"><span data-stu-id="3ee5e-128">The following example shows the process for an orchestration Expression shape.</span></span>  
   
 ```xml  
   
@@ -114,7 +114,7 @@ OutboundMessage(*) = InboundMessage(*);
 itinerary.Itinerary.Advance(OutboundMessage, step.ItineraryStep);  
 ```  
   
- <span data-ttu-id="05b8c-129">次の例があることを示す方法を示します[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]コア エンジンは、カスタム パイプライン コンポーネントのスケジュールを進める必要があります。</span><span class="sxs-lookup"><span data-stu-id="05b8c-129">The following example shows how to indicate that [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] core engine should advance itinerary for a custom pipeline component.</span></span>  
+ <span data-ttu-id="3ee5e-129">次の例があることを示す方法を示します[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]コア エンジンは、カスタム パイプライン コンポーネントのスケジュールを進める必要があります。</span><span class="sxs-lookup"><span data-stu-id="3ee5e-129">The following example shows how to indicate that [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] core engine should advance itinerary for a custom pipeline component.</span></span>  
   
 ```csharp  
 // Advance Itinerary  

@@ -1,5 +1,5 @@
 ---
-title: XLANG の式 |Microsoft ドキュメント
+title: Xlang-s 式 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,18 +12,18 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 37d6099757998b0428d761f124785c363a24f2b9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: fe22d2ed03f213e8240aba867fff545a2e488b73
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22289362"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65394700"
 ---
-# <a name="xlang-s-expressions"></a><span data-ttu-id="9eba2-102">XLANG の式</span><span class="sxs-lookup"><span data-stu-id="9eba2-102">XLANG-s Expressions</span></span>
-<span data-ttu-id="9eba2-103">式は一連の演算子とオペランドで構成されます。</span><span class="sxs-lookup"><span data-stu-id="9eba2-103">An expression is a sequence of operators and operands.</span></span> <span data-ttu-id="9eba2-104">このトピックでは、XLANG/s が各種の式に対してサポートしている構文を示します。</span><span class="sxs-lookup"><span data-stu-id="9eba2-104">This topic illustrates the syntax that XLANG/s supports for various expressions.</span></span>  
+# <a name="xlang-s-expressions"></a><span data-ttu-id="62802-102">Xlang-s 式</span><span class="sxs-lookup"><span data-stu-id="62802-102">XLANG-s Expressions</span></span>
+<span data-ttu-id="62802-103">式は、演算子とオペランドのシーケンスです。</span><span class="sxs-lookup"><span data-stu-id="62802-103">An expression is a sequence of operators and operands.</span></span> <span data-ttu-id="62802-104">このトピックでは、xlang/s が各種の式に対してサポートする構文を示しています。</span><span class="sxs-lookup"><span data-stu-id="62802-104">This topic illustrates the syntax that XLANG/s supports for various expressions.</span></span>  
   
-## <a name="basic-expressions"></a><span data-ttu-id="9eba2-105">基本式</span><span class="sxs-lookup"><span data-stu-id="9eba2-105">Basic Expressions</span></span>  
- <span data-ttu-id="9eba2-106">次のコードは、基本式の構文を示しています。</span><span class="sxs-lookup"><span data-stu-id="9eba2-106">The following code shows the syntax for basic expressions:</span></span>  
+## <a name="basic-expressions"></a><span data-ttu-id="62802-105">基本的な式</span><span class="sxs-lookup"><span data-stu-id="62802-105">Basic Expressions</span></span>  
+ <span data-ttu-id="62802-106">次のコードは、基本式の構文を示しています。</span><span class="sxs-lookup"><span data-stu-id="62802-106">The following code shows the syntax for basic expressions:</span></span>  
   
 ```  
 primary-expression:  
@@ -135,8 +135,8 @@ invocation-expression:
      object-reference.method-name(method-argument-list) //method-argument-list is optional  
 ```  
   
-## <a name="service-and-method-arguments"></a><span data-ttu-id="9eba2-107">サービスおよびメソッドの引数</span><span class="sxs-lookup"><span data-stu-id="9eba2-107">Service and Method Arguments</span></span>  
- <span data-ttu-id="9eba2-108">次のコードは、サービスおよびメソッドの引数の構文を示しています。</span><span class="sxs-lookup"><span data-stu-id="9eba2-108">The following code shows the syntax for service and method arguments:</span></span>  
+## <a name="service-and-method-arguments"></a><span data-ttu-id="62802-107">サービスおよびメソッドの引数</span><span class="sxs-lookup"><span data-stu-id="62802-107">Service and Method Arguments</span></span>  
+ <span data-ttu-id="62802-108">次のコードは、サービスおよびメソッドの引数の構文を示しています。</span><span class="sxs-lookup"><span data-stu-id="62802-108">The following code shows the syntax for service and method arguments:</span></span>  
   
 ```  
 service-argument-list:  
@@ -162,8 +162,8 @@ method-argument:
      param-direction message-field-reference //param-direction is optional  
 ```  
   
-## <a name="top-level-expressions"></a><span data-ttu-id="9eba2-109">最上位レベルの式</span><span class="sxs-lookup"><span data-stu-id="9eba2-109">Top-Level Expressions</span></span>  
- <span data-ttu-id="9eba2-110">次のコードは、最上位レベルの式の構文を示しています。</span><span class="sxs-lookup"><span data-stu-id="9eba2-110">The following code shows the syntax for top-level expressions:</span></span>  
+## <a name="top-level-expressions"></a><span data-ttu-id="62802-109">最上位レベルの式</span><span class="sxs-lookup"><span data-stu-id="62802-109">Top-Level Expressions</span></span>  
+ <span data-ttu-id="62802-110">次のコードは、最上位レベルの式の構文を示しています。</span><span class="sxs-lookup"><span data-stu-id="62802-110">The following code shows the syntax for top-level expressions:</span></span>  
   
 ```  
 expression:  
@@ -184,9 +184,9 @@ string-expression:
      conditional-expression  
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="9eba2-111">参照</span><span class="sxs-lookup"><span data-stu-id="9eba2-111">See Also</span></span>  
- <span data-ttu-id="9eba2-112">[XLANG のデータ型](../core/xlang-s-data-types.md) </span><span class="sxs-lookup"><span data-stu-id="9eba2-112">[XLANG-s Data Types](../core/xlang-s-data-types.md) </span></span>  
- <span data-ttu-id="9eba2-113">[XLANG のステートメント](../core/xlang-s-statements.md) </span><span class="sxs-lookup"><span data-stu-id="9eba2-113">[XLANG-s Statements](../core/xlang-s-statements.md) </span></span>  
- <span data-ttu-id="9eba2-114">[XLANG の変数および演算子](../core/xlang-s-variables-and-operators.md) </span><span class="sxs-lookup"><span data-stu-id="9eba2-114">[XLANG-s Variables and Operators](../core/xlang-s-variables-and-operators.md) </span></span>  
- <span data-ttu-id="9eba2-115">[XLANG s の予約語](../core/xlang-s-reserved-words.md) </span><span class="sxs-lookup"><span data-stu-id="9eba2-115">[XLANG-s Reserved Words](../core/xlang-s-reserved-words.md) </span></span>  
- [<span data-ttu-id="9eba2-116">XLANG-s BPEL4WS 型への変換から</span><span class="sxs-lookup"><span data-stu-id="9eba2-116">XLANG-s to BPEL4WS Type Conversions</span></span>](../core/xlang-s-to-bpel4ws-type-conversions.md)
+## <a name="see-also"></a><span data-ttu-id="62802-111">参照</span><span class="sxs-lookup"><span data-stu-id="62802-111">See Also</span></span>  
+ <span data-ttu-id="62802-112">[Xlang-s データ型](../core/xlang-s-data-types.md) </span><span class="sxs-lookup"><span data-stu-id="62802-112">[XLANG-s Data Types](../core/xlang-s-data-types.md) </span></span>  
+ <span data-ttu-id="62802-113">[Xlang-s ステートメント](../core/xlang-s-statements.md) </span><span class="sxs-lookup"><span data-stu-id="62802-113">[XLANG-s Statements](../core/xlang-s-statements.md) </span></span>  
+ <span data-ttu-id="62802-114">[Xlang-s の変数および演算子](../core/xlang-s-variables-and-operators.md) </span><span class="sxs-lookup"><span data-stu-id="62802-114">[XLANG-s Variables and Operators](../core/xlang-s-variables-and-operators.md) </span></span>  
+ <span data-ttu-id="62802-115">[Xlang-s の予約語](../core/xlang-s-reserved-words.md) </span><span class="sxs-lookup"><span data-stu-id="62802-115">[XLANG-s Reserved Words](../core/xlang-s-reserved-words.md) </span></span>  
+ [<span data-ttu-id="62802-116">XLANG-s から BPEL4WS への種類の変換</span><span class="sxs-lookup"><span data-stu-id="62802-116">XLANG-s to BPEL4WS Type Conversions</span></span>](../core/xlang-s-to-bpel4ws-type-conversions.md)

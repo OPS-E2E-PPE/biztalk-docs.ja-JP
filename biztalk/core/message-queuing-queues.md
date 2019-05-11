@@ -1,5 +1,5 @@
 ---
-title: メッセージ キューのキュー |Microsoft ドキュメント
+title: メッセージ キューのキュー |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -23,84 +23,84 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fa8d2521a8cf434c7a0ea56f749f9df3f032551e
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: c2f5c2d4861a59ded7c19da84d0ca0e6ded9ddfe
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25971464"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65394560"
 ---
-# <a name="message-queuing-queues"></a><span data-ttu-id="052cb-102">メッセージ キューのキュー</span><span class="sxs-lookup"><span data-stu-id="052cb-102">Message Queuing Queues</span></span>
-<span data-ttu-id="052cb-103">このセクションでは、Microsoft メッセージ キュー (MSMQ) アダプタを使用する際に、MSMQ キューを指定する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="052cb-103">This section describes how to specify Microsoft Message Queuing (also known as MSMQ) queues when you use the MSMQ adapter.</span></span> <span data-ttu-id="052cb-104">パスを指定するための名前付け規則、およびパスをキューの指定に変換するときの形式名の役割についても説明します。</span><span class="sxs-lookup"><span data-stu-id="052cb-104">It describes the conventions for specifying paths and also describes the role that format names play in translating paths into queue designations.</span></span>  
+# <a name="message-queuing-queues"></a><span data-ttu-id="33924-102">メッセージ キューのキュー</span><span class="sxs-lookup"><span data-stu-id="33924-102">Message Queuing Queues</span></span>
+<span data-ttu-id="33924-103">このセクションでは、MSMQ アダプターを使用するときに、Microsoft メッセージ キュー (MSMQ とも呼ばれます) のキューを指定する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="33924-103">This section describes how to specify Microsoft Message Queuing (also known as MSMQ) queues when you use the MSMQ adapter.</span></span> <span data-ttu-id="33924-104">パスを指定する規則について説明し、キューの指定にパスを変換することで形式名の役割についても説明します。</span><span class="sxs-lookup"><span data-stu-id="33924-104">It describes the conventions for specifying paths and also describes the role that format names play in translating paths into queue designations.</span></span>  
   
-## <a name="queue-path-naming-conventions"></a><span data-ttu-id="052cb-105">キューのパスの名前付け規則</span><span class="sxs-lookup"><span data-stu-id="052cb-105">Queue Path Naming Conventions</span></span>  
- <span data-ttu-id="052cb-106">キュー名でパスを参照する場合、次の表の名前付け規則を使用します。</span><span class="sxs-lookup"><span data-stu-id="052cb-106">If the queue name refers to a path, use the naming conventions in the following table.</span></span>  
+## <a name="queue-path-naming-conventions"></a><span data-ttu-id="33924-105">キューのパスの名前付け規則</span><span class="sxs-lookup"><span data-stu-id="33924-105">Queue Path Naming Conventions</span></span>  
+ <span data-ttu-id="33924-106">キュー名は、パスが参照されている場合は、次の表に、名前付け規則を使用します。</span><span class="sxs-lookup"><span data-stu-id="33924-106">If the queue name refers to a path, use the naming conventions in the following table.</span></span>  
   
-|<span data-ttu-id="052cb-107">**[キューの種類]**</span><span class="sxs-lookup"><span data-stu-id="052cb-107">**Queue type**</span></span>|<span data-ttu-id="052cb-108">**パスの構文**</span><span class="sxs-lookup"><span data-stu-id="052cb-108">**Syntax for path**</span></span>|  
+|<span data-ttu-id="33924-107">**[キューの種類]**</span><span class="sxs-lookup"><span data-stu-id="33924-107">**Queue type**</span></span>|<span data-ttu-id="33924-108">**パスの構文**</span><span class="sxs-lookup"><span data-stu-id="33924-108">**Syntax for path**</span></span>|  
 |--------------------|-------------------------|  
-|<span data-ttu-id="052cb-109">パブリック キュー</span><span class="sxs-lookup"><span data-stu-id="052cb-109">Public queue</span></span>|<span data-ttu-id="052cb-110">*Computername*\QueueName</span><span class="sxs-lookup"><span data-stu-id="052cb-110">*Computername*\QueueName</span></span>|  
-|<span data-ttu-id="052cb-111">専用キュー</span><span class="sxs-lookup"><span data-stu-id="052cb-111">Private queue</span></span>|<span data-ttu-id="052cb-112">*Computername*\Private$\QueueName</span><span class="sxs-lookup"><span data-stu-id="052cb-112">*Computername*\Private$\QueueName</span></span>|  
-|<span data-ttu-id="052cb-113">ジャーナル キュー</span><span class="sxs-lookup"><span data-stu-id="052cb-113">Journal queue</span></span>|<span data-ttu-id="052cb-114">*Computername*\QueueName\Journal$</span><span class="sxs-lookup"><span data-stu-id="052cb-114">*Computername*\QueueName\Journal$</span></span>|  
-|<span data-ttu-id="052cb-115">コンピューター ジャーナル キュー**注:** 受信キューにのみ使用します。</span><span class="sxs-lookup"><span data-stu-id="052cb-115">Computer journal queue **Note:**  Use for receive queue only.</span></span>|<span data-ttu-id="052cb-116">*Computername*\Journal$</span><span class="sxs-lookup"><span data-stu-id="052cb-116">*Computername*\Journal$</span></span>|  
-|<span data-ttu-id="052cb-117">コンピューターの配信不能キュー**注:** 受信キューにのみ使用します。</span><span class="sxs-lookup"><span data-stu-id="052cb-117">Computer dead-letter queue **Note:**  Use for receive queue only.</span></span>|<span data-ttu-id="052cb-118">*Computername*\Deadletter$</span><span class="sxs-lookup"><span data-stu-id="052cb-118">*Computername*\Deadletter$</span></span>|  
-|<span data-ttu-id="052cb-119">コンピューター トランザクション配信不能キュー**注:** 受信キューにのみ使用します。</span><span class="sxs-lookup"><span data-stu-id="052cb-119">Computer transaction dead-letter queue **Note:**  Use for receive queue only.</span></span>|<span data-ttu-id="052cb-120">*Computername*\XactDeadletter$</span><span class="sxs-lookup"><span data-stu-id="052cb-120">*Computername*\XactDeadletter$</span></span>|  
+|<span data-ttu-id="33924-109">パブリック キュー</span><span class="sxs-lookup"><span data-stu-id="33924-109">Public queue</span></span>|<span data-ttu-id="33924-110">*Computername*\QueueName</span><span class="sxs-lookup"><span data-stu-id="33924-110">*Computername*\QueueName</span></span>|  
+|<span data-ttu-id="33924-111">専用キュー</span><span class="sxs-lookup"><span data-stu-id="33924-111">Private queue</span></span>|<span data-ttu-id="33924-112">*Computername*\Private$\QueueName</span><span class="sxs-lookup"><span data-stu-id="33924-112">*Computername*\Private$\QueueName</span></span>|  
+|<span data-ttu-id="33924-113">ジャーナル キュー</span><span class="sxs-lookup"><span data-stu-id="33924-113">Journal queue</span></span>|<span data-ttu-id="33924-114">*Computername*\QueueName\Journal$</span><span class="sxs-lookup"><span data-stu-id="33924-114">*Computername*\QueueName\Journal$</span></span>|  
+|<span data-ttu-id="33924-115">コンピューター ジャーナル キュー**に注意してください。** 受信キューにのみ使用します。</span><span class="sxs-lookup"><span data-stu-id="33924-115">Computer journal queue **Note:**  Use for receive queue only.</span></span>|<span data-ttu-id="33924-116">*Computername*\Journal$</span><span class="sxs-lookup"><span data-stu-id="33924-116">*Computername*\Journal$</span></span>|  
+|<span data-ttu-id="33924-117">コンピューター配信不能キュー**に注意してください。** 受信キューにのみ使用します。</span><span class="sxs-lookup"><span data-stu-id="33924-117">Computer dead-letter queue **Note:**  Use for receive queue only.</span></span>|<span data-ttu-id="33924-118">*Computername*\Deadletter$</span><span class="sxs-lookup"><span data-stu-id="33924-118">*Computername*\Deadletter$</span></span>|  
+|<span data-ttu-id="33924-119">コンピューター トランザクション配信不能キュー**に注意してください。** 受信キューにのみ使用します。</span><span class="sxs-lookup"><span data-stu-id="33924-119">Computer transaction dead-letter queue **Note:**  Use for receive queue only.</span></span>|<span data-ttu-id="33924-120">*Computername*\XactDeadletter$</span><span class="sxs-lookup"><span data-stu-id="33924-120">*Computername*\XactDeadletter$</span></span>|  
   
 > [!NOTE]
->  <span data-ttu-id="052cb-121">キューのパスは、一意である必要があります。</span><span class="sxs-lookup"><span data-stu-id="052cb-121">The path of the queue must be unique.</span></span>  
+>  <span data-ttu-id="33924-121">キューのパスは一意である必要があります。</span><span class="sxs-lookup"><span data-stu-id="33924-121">The path of the queue must be unique.</span></span>  
   
- <span data-ttu-id="052cb-122">キュー名で形式名を参照する場合、形式名は、キューがパブリックかプライベートかを示す文字列から始まり、キューに対して生成された GUID、および必要に応じてその他の識別子が続きます。</span><span class="sxs-lookup"><span data-stu-id="052cb-122">If the queue name refers to a format name, it takes the form of a string that indicates whether a queue is public or private, followed by a generated GUID for the queue and other identifiers as needed.</span></span> <span data-ttu-id="052cb-123">次の表の名前付け規則を使用してください。</span><span class="sxs-lookup"><span data-stu-id="052cb-123">Use the naming conventions in the following table.</span></span>  
+ <span data-ttu-id="33924-122">キュー名は、形式名が参照されている場合を示すかどうか、キュー、パブリックまたはプライベート キューとその他の識別子の GUID を生成後に、必要に応じて文字列の形式になります。</span><span class="sxs-lookup"><span data-stu-id="33924-122">If the queue name refers to a format name, it takes the form of a string that indicates whether a queue is public or private, followed by a generated GUID for the queue and other identifiers as needed.</span></span> <span data-ttu-id="33924-123">次の表に、名前付け規則を使用します。</span><span class="sxs-lookup"><span data-stu-id="33924-123">Use the naming conventions in the following table.</span></span>  
   
-|<span data-ttu-id="052cb-124">**形式の種類**</span><span class="sxs-lookup"><span data-stu-id="052cb-124">**Format type**</span></span>|<span data-ttu-id="052cb-125">**形式名の構文**</span><span class="sxs-lookup"><span data-stu-id="052cb-125">**Syntax for format name**</span></span>|  
+|<span data-ttu-id="33924-124">**形式の種類**</span><span class="sxs-lookup"><span data-stu-id="33924-124">**Format type**</span></span>|<span data-ttu-id="33924-125">**形式名の構文**</span><span class="sxs-lookup"><span data-stu-id="33924-125">**Syntax for format name**</span></span>|  
 |---------------------|--------------------------------|  
-|<span data-ttu-id="052cb-126">パブリック</span><span class="sxs-lookup"><span data-stu-id="052cb-126">Public</span></span>|<span data-ttu-id="052cb-127">*FormatName*: パブリック:public =</span><span class="sxs-lookup"><span data-stu-id="052cb-127">*FormatName*:Public=QueueGUID</span></span>|  
-|<span data-ttu-id="052cb-128">[直接]</span><span class="sxs-lookup"><span data-stu-id="052cb-128">Direct</span></span>|<span data-ttu-id="052cb-129">*FormatName*: DIRECT = SPX:NetworkNumber:HostNumber\QueueName</span><span class="sxs-lookup"><span data-stu-id="052cb-129">*FormatName*:DIRECT=SPX:NetworkNumber:HostNumber\QueueName</span></span><br /><br /> <span data-ttu-id="052cb-130">*FormatName*: DIRECT = TCP:IPAddress\QueueName</span><span class="sxs-lookup"><span data-stu-id="052cb-130">*FormatName*: DIRECT=TCP:IPAddress\QueueName</span></span><br /><br /> <span data-ttu-id="052cb-131">*FormatName*: DIRECT = OS:ComputerName\QueueName</span><span class="sxs-lookup"><span data-stu-id="052cb-131">*FormatName*: DIRECT=OS:ComputerName\QueueName</span></span>|  
+|<span data-ttu-id="33924-126">パブリック</span><span class="sxs-lookup"><span data-stu-id="33924-126">Public</span></span>|<span data-ttu-id="33924-127">*FormatName*:Public=QueueGUID</span><span class="sxs-lookup"><span data-stu-id="33924-127">*FormatName*:Public=QueueGUID</span></span>|  
+|<span data-ttu-id="33924-128">[直接]</span><span class="sxs-lookup"><span data-stu-id="33924-128">Direct</span></span>|<span data-ttu-id="33924-129">*FormatName*:DIRECT=SPX:NetworkNumber:HostNumber\QueueName</span><span class="sxs-lookup"><span data-stu-id="33924-129">*FormatName*:DIRECT=SPX:NetworkNumber:HostNumber\QueueName</span></span><br /><br /> <span data-ttu-id="33924-130">*FormatName*:DIRECT=TCP:IPAddress\QueueName</span><span class="sxs-lookup"><span data-stu-id="33924-130">*FormatName*: DIRECT=TCP:IPAddress\QueueName</span></span><br /><br /> <span data-ttu-id="33924-131">*FormatName*:DIRECT=OS:ComputerName\QueueName</span><span class="sxs-lookup"><span data-stu-id="33924-131">*FormatName*: DIRECT=OS:ComputerName\QueueName</span></span>|  
   
- <span data-ttu-id="052cb-132">送信ポートのキューのパスが同報リストである場合、キューのパスの構文は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="052cb-132">If the send port queue path is a distribution list, then the queue path syntax is:</span></span>  
+ <span data-ttu-id="33924-132">送信ポートのキューのパスが配布リストの場合は、キューのパスの構文は。</span><span class="sxs-lookup"><span data-stu-id="33924-132">If the send port queue path is a distribution list, then the queue path syntax is:</span></span>  
   
- <span data-ttu-id="052cb-133">DL=同報リストの GUID</span><span class="sxs-lookup"><span data-stu-id="052cb-133">DL=DistributionListGUID</span></span>  
+ <span data-ttu-id="33924-133">DL = DistributionListGUID</span><span class="sxs-lookup"><span data-stu-id="33924-133">DL=DistributionListGUID</span></span>  
   
- <span data-ttu-id="052cb-134">送信または受信キューのパスが、HTTP または HTTPS の URL である場合、構文は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="052cb-134">If the send or receive queue path is an HTTP or HTTPS URL, then the syntax is:</span></span>  
+ <span data-ttu-id="33924-134">場合、送信または受信キューのパスが、HTTP または HTTPS の URL では、構文。</span><span class="sxs-lookup"><span data-stu-id="33924-134">If the send or receive queue path is an HTTP or HTTPS URL, then the syntax is:</span></span>  
   
- <span data-ttu-id="052cb-135">形式名:direct = http://\<クライアント名\>/msmq/\<キュー名\></span><span class="sxs-lookup"><span data-stu-id="052cb-135">FormatName:DIRECT=http://\<client name\>/msmq/\<queue name\></span></span>  
+ <span data-ttu-id="33924-135">形式名:direct = http://\<クライアント名\>/msmq/\<キュー名\></span><span class="sxs-lookup"><span data-stu-id="33924-135">FormatName:DIRECT=http://\<client name\>/msmq/\<queue name\></span></span>  
   
- <span data-ttu-id="052cb-136">形式名:direct = https://\<クライアント名\>/msmq/\<キュー名\></span><span class="sxs-lookup"><span data-stu-id="052cb-136">FormatName:DIRECT=https://\<client name\>/msmq/\<queue name\></span></span>  
-  
-> [!NOTE]
->  <span data-ttu-id="052cb-137">"msmq" は、メッセージ キューによってインターネット インフォメーション サービス (IIS) に作成される仮想フォルダです。</span><span class="sxs-lookup"><span data-stu-id="052cb-137">"msmq" is the virtual folder that Message Queuing creates in Internet Information Services (IIS).</span></span>  
+ <span data-ttu-id="33924-136">形式名:direct = https://\<クライアント名\>/msmq/\<キュー名\></span><span class="sxs-lookup"><span data-stu-id="33924-136">FormatName:DIRECT=https://\<client name\>/msmq/\<queue name\></span></span>  
   
 > [!NOTE]
->  <span data-ttu-id="052cb-138">HTTP は、メッセージの送信のみに使用できます。</span><span class="sxs-lookup"><span data-stu-id="052cb-138">You can only use HTTP to send messages.</span></span> <span data-ttu-id="052cb-139">リモート コンピューターのキューのメッセージは、キューが HTTP の直接形式名を使用して開かれている場合は、読み取ることができません。</span><span class="sxs-lookup"><span data-stu-id="052cb-139">You cannot read messages in a queue on a remote computer if the queue is opened using an HTTP direct format name.</span></span> <span data-ttu-id="052cb-140">HTTP を使用しない専用キューまたはパブリック キューのパスを使用して、リモート キューの SOAP (形式の) メッセージを受信することはできます。</span><span class="sxs-lookup"><span data-stu-id="052cb-140">However, you can still receive SOAP (formatted) messages from a remote queue by using the private or public queue path without HTTP.</span></span>  
-  
- <span data-ttu-id="052cb-141">管理者がキューに指定した説明的なテキスト ラベルをキュー名で参照している場合、そのラベルを参照するキューのパスの構文は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="052cb-141">If the queue name refers to a descriptive text label that the administrator specified for the queue, then the syntax of the queue path referring to this label is:</span></span>  
-  
- <span data-ttu-id="052cb-142">LABEL:MyQueue</span><span class="sxs-lookup"><span data-stu-id="052cb-142">LABEL:MyQueue</span></span>  
+>  <span data-ttu-id="33924-137">"msmq"は、メッセージ キューでは、インターネット インフォメーション サービス (IIS) が作成される仮想フォルダーです。</span><span class="sxs-lookup"><span data-stu-id="33924-137">"msmq" is the virtual folder that Message Queuing creates in Internet Information Services (IIS).</span></span>  
   
 > [!NOTE]
->  <span data-ttu-id="052cb-143">ラベルは一意とは限りません。</span><span class="sxs-lookup"><span data-stu-id="052cb-143">Labels are not always unique.</span></span> <span data-ttu-id="052cb-144">そのため、ラベルを使用して特定のキューに接続しようとしたときに名前の競合があると、エラーが返されます。</span><span class="sxs-lookup"><span data-stu-id="052cb-144">Therefore, you will receive an error if a name conflict exists when you try to connect to a specific queue by using its label.</span></span>  
+>  <span data-ttu-id="33924-138">メッセージを送信するのにのみ HTTP を使用できます。</span><span class="sxs-lookup"><span data-stu-id="33924-138">You can only use HTTP to send messages.</span></span> <span data-ttu-id="33924-139">キューが HTTP の直接形式名を使用して開かれている場合は、リモート コンピューター上のキューでメッセージを読み取ることができません。</span><span class="sxs-lookup"><span data-stu-id="33924-139">You cannot read messages in a queue on a remote computer if the queue is opened using an HTTP direct format name.</span></span> <span data-ttu-id="33924-140">ただし、まだメッセージを受信できます SOAP (形式の) リモート キューから HTTP を使用しないプライベートまたはパブリック キューのパスを使用しています。</span><span class="sxs-lookup"><span data-stu-id="33924-140">However, you can still receive SOAP (formatted) messages from a remote queue by using the private or public queue path without HTTP.</span></span>  
+  
+ <span data-ttu-id="33924-141">キュー名はわかりやすいテキストを参照している場合、キューの指定した管理者をラベル付けし、ラベルを参照するキューのパスの構文は。</span><span class="sxs-lookup"><span data-stu-id="33924-141">If the queue name refers to a descriptive text label that the administrator specified for the queue, then the syntax of the queue path referring to this label is:</span></span>  
+  
+ <span data-ttu-id="33924-142">ラベル: MyQueue</span><span class="sxs-lookup"><span data-stu-id="33924-142">LABEL:MyQueue</span></span>  
   
 > [!NOTE]
->  <span data-ttu-id="052cb-145">ラベルはアダプタの必須のトランスポート フィールドです。</span><span class="sxs-lookup"><span data-stu-id="052cb-145">The label is a required transport field for the adapter.</span></span>  
+>  <span data-ttu-id="33924-143">ラベルは常に一意ではありません。</span><span class="sxs-lookup"><span data-stu-id="33924-143">Labels are not always unique.</span></span> <span data-ttu-id="33924-144">そのため、そのラベルを使用して、特定のキューに接続しようとすると、名前の競合が存在する場合、エラーが表示されます。</span><span class="sxs-lookup"><span data-stu-id="33924-144">Therefore, you will receive an error if a name conflict exists when you try to connect to a specific queue by using its label.</span></span>  
   
-## <a name="role-of-the-format-name"></a><span data-ttu-id="052cb-146">形式名の役割</span><span class="sxs-lookup"><span data-stu-id="052cb-146">Role of the Format Name</span></span>  
- <span data-ttu-id="052cb-147">形式名は、キューを識別し、キューへのアクセス方法を特定するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="052cb-147">Message Queuing uses the format name to identify a queue and to determine how to access it.</span></span> <span data-ttu-id="052cb-148">形式名はメッセージ キューによってキューに割り当てられます。</span><span class="sxs-lookup"><span data-stu-id="052cb-148">Message Queuing assigns the format name to the queue.</span></span>  
+> [!NOTE]
+>  <span data-ttu-id="33924-145">ラベルは、アダプターの必須のトランスポート フィールドです。</span><span class="sxs-lookup"><span data-stu-id="33924-145">The label is a required transport field for the adapter.</span></span>  
   
- <span data-ttu-id="052cb-149">"コンピュータ名\キュー名" など、パス名の構文を使用してキューを指定するとき、メッセージ キューはパスを検索して関連する形式名を検出します。</span><span class="sxs-lookup"><span data-stu-id="052cb-149">When you specify a queue using the path name syntax, for example myMachine\myQueue, Message Queuing looks up the path to find the associated format name.</span></span> <span data-ttu-id="052cb-150">その後、形式名を使用してキューにアクセスします。</span><span class="sxs-lookup"><span data-stu-id="052cb-150">Message Queuing then uses that format name to access the queue.</span></span> <span data-ttu-id="052cb-151">形式名を指定すると、メッセージ キューではその形式名が使用されます。</span><span class="sxs-lookup"><span data-stu-id="052cb-151">When you specify the format name, Message Queuing uses the format name you use.</span></span>  
+## <a name="role-of-the-format-name"></a><span data-ttu-id="33924-146">形式名の役割</span><span class="sxs-lookup"><span data-stu-id="33924-146">Role of the Format Name</span></span>  
+ <span data-ttu-id="33924-147">メッセージ キューは、キューを識別するために、それにアクセスする方法を決定する、形式名を使用します。</span><span class="sxs-lookup"><span data-stu-id="33924-147">Message Queuing uses the format name to identify a queue and to determine how to access it.</span></span> <span data-ttu-id="33924-148">メッセージ キューは、キューに形式名を割り当てます。</span><span class="sxs-lookup"><span data-stu-id="33924-148">Message Queuing assigns the format name to the queue.</span></span>  
   
- <span data-ttu-id="052cb-152">形式名の詳細については、.NET Framework クラス ライブラリ ヘルプの「MessageQueue.FormatName プロパティ」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="052cb-152">For more information about format names, see "MessageQueue.FormatName Property" in .NET Framework Class Library Help.</span></span>  
+ <span data-ttu-id="33924-149">たとえばパス名の構文を使用してキューを指定すると、myMachine\myQueue、メッセージ キューは関連付けられている形式名を検索するパスを検索します。</span><span class="sxs-lookup"><span data-stu-id="33924-149">When you specify a queue using the path name syntax, for example myMachine\myQueue, Message Queuing looks up the path to find the associated format name.</span></span> <span data-ttu-id="33924-150">後、メッセージ キューは、その形式名を使用して、キューにアクセスします。</span><span class="sxs-lookup"><span data-stu-id="33924-150">Message Queuing then uses that format name to access the queue.</span></span> <span data-ttu-id="33924-151">形式名を指定する場合はメッセージ キューを使用する形式名を使用します。</span><span class="sxs-lookup"><span data-stu-id="33924-151">When you specify the format name, Message Queuing uses the format name you use.</span></span>  
   
-## <a name="troubleshooting-queue-paths"></a><span data-ttu-id="052cb-153">キューのパスに関するトラブルシューティング</span><span class="sxs-lookup"><span data-stu-id="052cb-153">Troubleshooting Queue Paths</span></span>  
+ <span data-ttu-id="33924-152">形式名の詳細については、.NET Framework クラス ライブラリのヘルプ「「MessageQueue.FormatName プロパティ」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="33924-152">For more information about format names, see "MessageQueue.FormatName Property" in .NET Framework Class Library Help.</span></span>  
   
--   <span data-ttu-id="052cb-154">指定したキューのパスの構文が、前半の「キューのパスの名前付け規則」に記載した形式のいずれとも一致しない場合、例外が発生します。</span><span class="sxs-lookup"><span data-stu-id="052cb-154">An exception occurs if the syntax of the provided queue path does not match one of the formats described earlier in "Queue Path Naming Conventions."</span></span>  
+## <a name="troubleshooting-queue-paths"></a><span data-ttu-id="33924-153">キューのパスのトラブルシューティング</span><span class="sxs-lookup"><span data-stu-id="33924-153">Troubleshooting Queue Paths</span></span>  
   
--   <span data-ttu-id="052cb-155">キューのパスのコンピュータ名には、以下の文字は無効です。</span><span class="sxs-lookup"><span data-stu-id="052cb-155">The following are not valid characters for computer names in the queue path:</span></span>  
+-   <span data-ttu-id="33924-154">例外は、指定されたキューのパスの構文は「キューのパスの名前付け規則」で既に説明した形式のいずれかが一致しない場合に発生します。</span><span class="sxs-lookup"><span data-stu-id="33924-154">An exception occurs if the syntax of the provided queue path does not match one of the formats described earlier in "Queue Path Naming Conventions."</span></span>  
   
-     <span data-ttu-id="052cb-156">\ ; , + "</span><span class="sxs-lookup"><span data-stu-id="052cb-156">\ ; , + "</span></span>  
+-   <span data-ttu-id="33924-155">次に、いないキューのパスでコンピューター名の有効な文字。</span><span class="sxs-lookup"><span data-stu-id="33924-155">The following are not valid characters for computer names in the queue path:</span></span>  
   
-     <span data-ttu-id="052cb-157">コンピュータ名が数字である場合、例外が発生します。</span><span class="sxs-lookup"><span data-stu-id="052cb-157">An exception occurs if the computer name is a number.</span></span> <span data-ttu-id="052cb-158">例: 234\private$ \queue です。</span><span class="sxs-lookup"><span data-stu-id="052cb-158">For example: 234\private$\queue.</span></span>  
+     <span data-ttu-id="33924-156">\ ; , + "</span><span class="sxs-lookup"><span data-stu-id="33924-156">\ ; , + "</span></span>  
   
--   <span data-ttu-id="052cb-159">コンピュータの配信不能キュー、コンピュータ ジャーナル キュー、およびコンピュータのトランザクション配信不能キューを使用する場合、ユーザーが送信先のキューとしてシステム キューを指定すると、例外が発生します。</span><span class="sxs-lookup"><span data-stu-id="052cb-159">For a computer dead-letter queue, computer journal queue, and computer transaction dead-letter queue, an exception occurs if the user specifies any one of the system queues as the destination queue for send.</span></span>  
+     <span data-ttu-id="33924-157">例外は、コンピューター名が数値の場合に発生します。</span><span class="sxs-lookup"><span data-stu-id="33924-157">An exception occurs if the computer name is a number.</span></span> <span data-ttu-id="33924-158">例 :234\private$\queue.</span><span class="sxs-lookup"><span data-stu-id="33924-158">For example: 234\private$\queue.</span></span>  
   
--   <span data-ttu-id="052cb-160">**System.Messaging.MessageQueue.Exists**リモート キューでは機能しません。</span><span class="sxs-lookup"><span data-stu-id="052cb-160">**System.Messaging.MessageQueue.Exists** does not work for remote queues.</span></span> <span data-ttu-id="052cb-161">詳細については、.NET Framework クラス ライブラリ ヘルプの「MessageQueue.Exists メソッド」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="052cb-161">For more information, see "MessageQueue.Exists Method" in .NET Framework Class Library Help.</span></span>  
+-   <span data-ttu-id="33924-159">コンピューター配信不能メッセージ キュー、コンピュータ ジャーナル キュー、およびコンピューター トランザクション配信不能キューは、ユーザーの送信先のキューととしてシステム キューのいずれかが指定されている場合、例外が発生しました。</span><span class="sxs-lookup"><span data-stu-id="33924-159">For a computer dead-letter queue, computer journal queue, and computer transaction dead-letter queue, an exception occurs if the user specifies any one of the system queues as the destination queue for send.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="052cb-162">参照</span><span class="sxs-lookup"><span data-stu-id="052cb-162">See Also</span></span>  
- [<span data-ttu-id="052cb-163">MSMQ アダプターの構成</span><span class="sxs-lookup"><span data-stu-id="052cb-163">Configuring the MSMQ Adapter</span></span>](../core/configuring-the-msmq-adapter.md)
+-   <span data-ttu-id="33924-160">**System.Messaging.MessageQueue.Exists**リモート キューは機能しません。</span><span class="sxs-lookup"><span data-stu-id="33924-160">**System.Messaging.MessageQueue.Exists** does not work for remote queues.</span></span> <span data-ttu-id="33924-161">詳細については、.NET Framework クラス ライブラリのヘルプ「「MessageQueue.Exists メソッド」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="33924-161">For more information, see "MessageQueue.Exists Method" in .NET Framework Class Library Help.</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="33924-162">参照</span><span class="sxs-lookup"><span data-stu-id="33924-162">See Also</span></span>  
+ [<span data-ttu-id="33924-163">MSMQ アダプターの構成</span><span class="sxs-lookup"><span data-stu-id="33924-163">Configuring the MSMQ Adapter</span></span>](../core/configuring-the-msmq-adapter.md)

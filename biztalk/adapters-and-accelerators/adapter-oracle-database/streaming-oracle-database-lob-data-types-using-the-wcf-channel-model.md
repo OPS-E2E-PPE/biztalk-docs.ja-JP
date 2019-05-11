@@ -15,35 +15,35 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: aa8a493c94761ce74d76885ee59fae1425c15523
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9d9c1ad3c50cf2383ad9b2d65af3d8c79f2c1862
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37013843"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65375980"
 ---
-# <a name="streaming-oracle-database-lob-data-types-using-the-wcf-channel-model"></a><span data-ttu-id="2f968-102">ストリーミングの Oracle データベース LOB データ型 WCF チャネル モデルを使用します。</span><span class="sxs-lookup"><span data-stu-id="2f968-102">Streaming Oracle Database LOB Data Types Using the WCF Channel Model</span></span>
-<span data-ttu-id="2f968-103">[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] LOB データの特定の操作のエンド ツー エンドのストリーミングをサポートしています。</span><span class="sxs-lookup"><span data-stu-id="2f968-103">The [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] supports end-to-end streaming of LOB data for certain operations.</span></span> <span data-ttu-id="2f968-104">このトピックのセクションでは、WCF チャネル モデルを使用すると、LOB データのストリーミングを実装する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="2f968-104">The sections in this topic describe how to implement streaming for LOB data when you use the WCF channel model.</span></span>  
+# <a name="streaming-oracle-database-lob-data-types-using-the-wcf-channel-model"></a><span data-ttu-id="4cdee-102">ストリーミングの Oracle データベース LOB データ型 WCF チャネル モデルを使用します。</span><span class="sxs-lookup"><span data-stu-id="4cdee-102">Streaming Oracle Database LOB Data Types Using the WCF Channel Model</span></span>
+<span data-ttu-id="4cdee-103">[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] LOB データの特定の操作のエンド ツー エンドのストリーミングをサポートしています。</span><span class="sxs-lookup"><span data-stu-id="4cdee-103">The [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] supports end-to-end streaming of LOB data for certain operations.</span></span> <span data-ttu-id="4cdee-104">このトピックのセクションでは、WCF チャネル モデルを使用すると、LOB データのストリーミングを実装する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="4cdee-104">The sections in this topic describe how to implement streaming for LOB data when you use the WCF channel model.</span></span>  
   
- <span data-ttu-id="2f968-105">背景情報アダプターが LOB データ型のストリーミングがサポートする方法については、[Oracle データベース アダプターのラージ オブジェクト データ型のストリーミング](../../adapters-and-accelerators/adapter-oracle-database/streaming-large-object-data-types-in-oracle-database-adapter.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="2f968-105">For background information about how the adapter supports streaming of LOB data types, see [Streaming large object data types in Oracle Database adapter](../../adapters-and-accelerators/adapter-oracle-database/streaming-large-object-data-types-in-oracle-database-adapter.md).</span></span> <span data-ttu-id="2f968-106">続行する前に、このトピックを確認してください。</span><span class="sxs-lookup"><span data-stu-id="2f968-106">You should read this topic before proceeding.</span></span>  
+ <span data-ttu-id="4cdee-105">背景情報アダプターが LOB データ型のストリーミングがサポートする方法については、次を参照してください。 [Oracle データベース アダプターのラージ オブジェクト データ型のストリーミング](../../adapters-and-accelerators/adapter-oracle-database/streaming-large-object-data-types-in-oracle-database-adapter.md)します。</span><span class="sxs-lookup"><span data-stu-id="4cdee-105">For background information about how the adapter supports streaming of LOB data types, see [Streaming large object data types in Oracle Database adapter](../../adapters-and-accelerators/adapter-oracle-database/streaming-large-object-data-types-in-oracle-database-adapter.md).</span></span> <span data-ttu-id="4cdee-106">続行する前に、このトピックを確認してください。</span><span class="sxs-lookup"><span data-stu-id="4cdee-106">You should read this topic before proceeding.</span></span>  
   
- <span data-ttu-id="2f968-107">LOB データのストリーミングを示すサンプルに含まれる SDK サンプルでは、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]します。</span><span class="sxs-lookup"><span data-stu-id="2f968-107">A sample that demonstrates LOB data streaming is available in the SDK samples included with the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)].</span></span> <span data-ttu-id="2f968-108">詳細については、[SDK 内のサンプル](../../core/samples-in-the-sdk.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="2f968-108">For more information, see [Samples in the SDK](../../core/samples-in-the-sdk.md).</span></span>  
+ <span data-ttu-id="4cdee-107">LOB データのストリーミングを示すサンプルに含まれる SDK サンプルでは、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]します。</span><span class="sxs-lookup"><span data-stu-id="4cdee-107">A sample that demonstrates LOB data streaming is available in the SDK samples included with the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)].</span></span> <span data-ttu-id="4cdee-108">詳細については、次を参照してください。 [SDK 内のサンプル](../../core/samples-in-the-sdk.md)します。</span><span class="sxs-lookup"><span data-stu-id="4cdee-108">For more information, see [Samples in the SDK](../../core/samples-in-the-sdk.md).</span></span>  
   
-## <a name="streaming-outbound-messages-to-the-adapter"></a><span data-ttu-id="2f968-109">アダプターに送信メッセージのストリーミング</span><span class="sxs-lookup"><span data-stu-id="2f968-109">Streaming Outbound Messages to the Adapter</span></span>  
- <span data-ttu-id="2f968-110">アダプターでは、エンド ツー エンドの LOB データのストリーミング UpdateLOB 操作の要求メッセージをサポートしています。</span><span class="sxs-lookup"><span data-stu-id="2f968-110">The adapter supports end-to-end LOB data streaming for the request message for the UpdateLOB operation.</span></span>  
+## <a name="streaming-outbound-messages-to-the-adapter"></a><span data-ttu-id="4cdee-109">アダプターに送信メッセージのストリーミング</span><span class="sxs-lookup"><span data-stu-id="4cdee-109">Streaming Outbound Messages to the Adapter</span></span>  
+ <span data-ttu-id="4cdee-110">アダプターでは、エンド ツー エンドの LOB データのストリーミング UpdateLOB 操作の要求メッセージをサポートしています。</span><span class="sxs-lookup"><span data-stu-id="4cdee-110">The adapter supports end-to-end LOB data streaming for the request message for the UpdateLOB operation.</span></span>  
   
- <span data-ttu-id="2f968-111">WCF チャネル モデルで UpdateLOB 操作に関するエンド ツー エンドのストリーミングをサポートするには、次の操作をする必要があります。</span><span class="sxs-lookup"><span data-stu-id="2f968-111">To support end-to-end streaming on UpdateLOB operations in the WCF channel model, you must:</span></span>  
+ <span data-ttu-id="4cdee-111">WCF チャネル モデルで UpdateLOB 操作に関するエンド ツー エンドのストリーミングをサポートするには、次の操作をする必要があります。</span><span class="sxs-lookup"><span data-stu-id="4cdee-111">To support end-to-end streaming on UpdateLOB operations in the WCF channel model, you must:</span></span>  
   
-1.  <span data-ttu-id="2f968-112">設定、 **UseAmbientTransaction**プロパティを true にバインドします。</span><span class="sxs-lookup"><span data-stu-id="2f968-112">Set the **UseAmbientTransaction** binding property to true.</span></span>  
+1.  <span data-ttu-id="4cdee-112">設定、 **UseAmbientTransaction**プロパティを true にバインドします。</span><span class="sxs-lookup"><span data-stu-id="4cdee-112">Set the **UseAmbientTransaction** binding property to true.</span></span>  
   
-2.  <span data-ttu-id="2f968-113">実装を**System.ServiceModel.Channels.BodyWriter**ことができる (ノード値の LOB データのストリーミングを実行する) LOB データをストリーミングします。</span><span class="sxs-lookup"><span data-stu-id="2f968-113">Implement a **System.ServiceModel.Channels.BodyWriter** that is capable of streaming the LOB data (performing node-value streaming on the LOB data).</span></span>  
+2.  <span data-ttu-id="4cdee-113">実装を**System.ServiceModel.Channels.BodyWriter**ことができる (ノード値の LOB データのストリーミングを実行する) LOB データをストリーミングします。</span><span class="sxs-lookup"><span data-stu-id="4cdee-113">Implement a **System.ServiceModel.Channels.BodyWriter** that is capable of streaming the LOB data (performing node-value streaming on the LOB data).</span></span>  
   
-3.  <span data-ttu-id="2f968-114">トランザクション スコープ内で UpdateLOB 操作を実行します。</span><span class="sxs-lookup"><span data-stu-id="2f968-114">Perform the UpdateLOB operation within a transaction scope.</span></span>  
+3.  <span data-ttu-id="4cdee-114">トランザクション スコープ内で UpdateLOB 操作を実行します。</span><span class="sxs-lookup"><span data-stu-id="4cdee-114">Perform the UpdateLOB operation within a transaction scope.</span></span>  
   
-4.  <span data-ttu-id="2f968-115">作成、 **System.ServiceModel.Message**このメッセージ本文を指定して、操作を呼び出すために使用**BodyWriter**の適切なオーバー ロードを使用して、 **Message.Create**メソッド。</span><span class="sxs-lookup"><span data-stu-id="2f968-115">Create the **System.ServiceModel.Message** used to invoke the operation by supplying the message body with this **BodyWriter** using an appropriate overload of the **Message.Create** method.</span></span>  
+4.  <span data-ttu-id="4cdee-115">作成、 **System.ServiceModel.Message**このメッセージ本文を指定して、操作を呼び出すために使用**BodyWriter**の適切なオーバー ロードを使用して、 **Message.Create**メソッド。</span><span class="sxs-lookup"><span data-stu-id="4cdee-115">Create the **System.ServiceModel.Message** used to invoke the operation by supplying the message body with this **BodyWriter** using an appropriate overload of the **Message.Create** method.</span></span>  
   
-### <a name="setting-the-useambienttransaction-binding-property"></a><span data-ttu-id="2f968-116">プロパティのバインド UseAmbientTransaction の設定</span><span class="sxs-lookup"><span data-stu-id="2f968-116">Setting the UseAmbientTransaction Binding Property</span></span>  
- <span data-ttu-id="2f968-117">次の例のバインドを作成する方法を示しています、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]設定と、 **UseAmbientTransaction**プロパティをバインドします。</span><span class="sxs-lookup"><span data-stu-id="2f968-117">The following example shows how to create a binding for the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] and set the **UseAmbientTransaction** binding property.</span></span>  
+### <a name="setting-the-useambienttransaction-binding-property"></a><span data-ttu-id="4cdee-116">プロパティのバインド UseAmbientTransaction の設定</span><span class="sxs-lookup"><span data-stu-id="4cdee-116">Setting the UseAmbientTransaction Binding Property</span></span>  
+ <span data-ttu-id="4cdee-117">次の例のバインドを作成する方法を示しています、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]設定と、 **UseAmbientTransaction**プロパティをバインドします。</span><span class="sxs-lookup"><span data-stu-id="4cdee-117">The following example shows how to create a binding for the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] and set the **UseAmbientTransaction** binding property.</span></span>  
   
 ```  
 // Create binding  
@@ -54,8 +54,8 @@ binding.UseAmbientTransaction = true;
   
 ```  
   
-### <a name="implementing-a-bodywriter"></a><span data-ttu-id="2f968-118">BodyWriter を実装します。</span><span class="sxs-lookup"><span data-stu-id="2f968-118">Implementing a BodyWriter</span></span>  
- <span data-ttu-id="2f968-119">次の例の実装を示しています、 **BodyWriter**ノード値のストリーミングを実行します。</span><span class="sxs-lookup"><span data-stu-id="2f968-119">The following example shows an implementation of a **BodyWriter** that performs node-value streaming.</span></span>  
+### <a name="implementing-a-bodywriter"></a><span data-ttu-id="4cdee-118">BodyWriter を実装します。</span><span class="sxs-lookup"><span data-stu-id="4cdee-118">Implementing a BodyWriter</span></span>  
+ <span data-ttu-id="4cdee-119">次の例の実装を示しています、 **BodyWriter**ノード値のストリーミングを実行します。</span><span class="sxs-lookup"><span data-stu-id="4cdee-119">The following example shows an implementation of a **BodyWriter** that performs node-value streaming.</span></span>  
   
 ```  
 /// <summary>  
@@ -125,8 +125,8 @@ class StreamingBodyWriter : BodyWriter, IDisposable
 }  
 ```  
   
-### <a name="perform-the-operations-within-a-transaction-scope"></a><span data-ttu-id="2f968-120">トランザクション スコープ内で操作を実行します。</span><span class="sxs-lookup"><span data-stu-id="2f968-120">Perform the Operations Within a Transaction Scope</span></span>  
- <span data-ttu-id="2f968-121">次の例では、トランザクション スコープ内での操作を実行する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="2f968-121">The following example shows how to perform operations within a transaction scope.</span></span>  
+### <a name="perform-the-operations-within-a-transaction-scope"></a><span data-ttu-id="4cdee-120">トランザクション スコープ内で操作を実行します。</span><span class="sxs-lookup"><span data-stu-id="4cdee-120">Perform the Operations Within a Transaction Scope</span></span>  
+ <span data-ttu-id="4cdee-121">次の例では、トランザクション スコープ内での操作を実行する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="4cdee-121">The following example shows how to perform operations within a transaction scope.</span></span>  
   
 ```  
 // Create a transaction scope  
@@ -142,8 +142,8 @@ using(TransactionScope tx = new TransactionScope())
   
 ```  
   
-### <a name="creating-a-message-by-using-a-bodywriter"></a><span data-ttu-id="2f968-122">BodyWriter によるメッセージの作成</span><span class="sxs-lookup"><span data-stu-id="2f968-122">Creating a Message by using a BodyWriter</span></span>  
- <span data-ttu-id="2f968-123">次の例では、使用して UpdateLOB 要求メッセージを作成する方法を示しています、 **BodyWriter**前の例です。</span><span class="sxs-lookup"><span data-stu-id="2f968-123">The following example shows how to create an UpdateLOB request message using the **BodyWriter** in the preceding example.</span></span> <span data-ttu-id="2f968-124">メッセージのデータは、ファイルから読み取られます。</span><span class="sxs-lookup"><span data-stu-id="2f968-124">The message data is read from a file.</span></span>  
+### <a name="creating-a-message-by-using-a-bodywriter"></a><span data-ttu-id="4cdee-122">BodyWriter によるメッセージの作成</span><span class="sxs-lookup"><span data-stu-id="4cdee-122">Creating a Message by using a BodyWriter</span></span>  
+ <span data-ttu-id="4cdee-123">次の例では、使用して UpdateLOB 要求メッセージを作成する方法を示しています、 **BodyWriter**前の例です。</span><span class="sxs-lookup"><span data-stu-id="4cdee-123">The following example shows how to create an UpdateLOB request message using the **BodyWriter** in the preceding example.</span></span> <span data-ttu-id="4cdee-124">メッセージのデータは、ファイルから読み取られます。</span><span class="sxs-lookup"><span data-stu-id="4cdee-124">The message data is read from a file.</span></span>  
   
 ```  
 // Create a transaction scope  
@@ -165,31 +165,31 @@ using(TransactionScope tx = new TransactionScope())
   
 ```  
   
-## <a name="streaming-inbound-messages-from-the-adapter"></a><span data-ttu-id="2f968-125">アダプターから受信メッセージのストリーミング</span><span class="sxs-lookup"><span data-stu-id="2f968-125">Streaming Inbound Messages from the Adapter</span></span>  
- <span data-ttu-id="2f968-126">アダプターには、エンド ツー エンドの LOB データが次の受信メッセージのストリーミングがサポートされています。</span><span class="sxs-lookup"><span data-stu-id="2f968-126">The adapter supports end-to-end LOB data streaming for the following inbound messages:</span></span>  
+## <a name="streaming-inbound-messages-from-the-adapter"></a><span data-ttu-id="4cdee-125">アダプターから受信メッセージのストリーミング</span><span class="sxs-lookup"><span data-stu-id="4cdee-125">Streaming Inbound Messages from the Adapter</span></span>  
+ <span data-ttu-id="4cdee-126">アダプターには、エンド ツー エンドの LOB データが次の受信メッセージのストリーミングがサポートされています。</span><span class="sxs-lookup"><span data-stu-id="4cdee-126">The adapter supports end-to-end LOB data streaming for the following inbound messages:</span></span>  
   
-- <span data-ttu-id="2f968-127">応答メッセージを持つ関数または LOB データが含まれている IN OUT パラメーター。</span><span class="sxs-lookup"><span data-stu-id="2f968-127">Response message for functions with OUT or IN OUT parameters that contain LOB data.</span></span> <span data-ttu-id="2f968-128">レコードの種類のパラメーターが LOB データの列を含めることができますに注意してください。</span><span class="sxs-lookup"><span data-stu-id="2f968-128">Note that RECORD TYPE parameters can contain LOB data columns.</span></span>  
+- <span data-ttu-id="4cdee-127">応答メッセージを持つ関数または LOB データが含まれている IN OUT パラメーター。</span><span class="sxs-lookup"><span data-stu-id="4cdee-127">Response message for functions with OUT or IN OUT parameters that contain LOB data.</span></span> <span data-ttu-id="4cdee-128">レコードの種類のパラメーターが LOB データの列を含めることができますに注意してください。</span><span class="sxs-lookup"><span data-stu-id="4cdee-128">Note that RECORD TYPE parameters can contain LOB data columns.</span></span>  
   
-- <span data-ttu-id="2f968-129">LOB データが含まれている関数を REF CURSOR パラメーター (または戻り値) の応答メッセージ。</span><span class="sxs-lookup"><span data-stu-id="2f968-129">Response message for functions with OUT REF CURSOR parameters (or return values) that contain LOB data.</span></span> <span data-ttu-id="2f968-130">これには、出力側 REF CURSOR を IN パラメーターにはが含まれます。</span><span class="sxs-lookup"><span data-stu-id="2f968-130">This includes the output side of IN OUT REF CURSOR parameters.</span></span>  
+- <span data-ttu-id="4cdee-129">LOB データが含まれている関数を REF CURSOR パラメーター (または戻り値) の応答メッセージ。</span><span class="sxs-lookup"><span data-stu-id="4cdee-129">Response message for functions with OUT REF CURSOR parameters (or return values) that contain LOB data.</span></span> <span data-ttu-id="4cdee-130">これには、出力側 REF CURSOR を IN パラメーターにはが含まれます。</span><span class="sxs-lookup"><span data-stu-id="4cdee-130">This includes the output side of IN OUT REF CURSOR parameters.</span></span>  
   
-- <span data-ttu-id="2f968-131">プロシージャの応答メッセージまたは LOB データが含まれている IN OUT パラメーター。</span><span class="sxs-lookup"><span data-stu-id="2f968-131">Response message for procedures with IN or IN OUT parameters that contain LOB data.</span></span> <span data-ttu-id="2f968-132">レコードの種類のパラメーターが LOB データの列を含めることができますに注意してください。</span><span class="sxs-lookup"><span data-stu-id="2f968-132">Note that RECORD TYPE parameters can contain LOB data columns.</span></span>  
+- <span data-ttu-id="4cdee-131">プロシージャの応答メッセージまたは LOB データが含まれている IN OUT パラメーター。</span><span class="sxs-lookup"><span data-stu-id="4cdee-131">Response message for procedures with IN or IN OUT parameters that contain LOB data.</span></span> <span data-ttu-id="4cdee-132">レコードの種類のパラメーターが LOB データの列を含めることができますに注意してください。</span><span class="sxs-lookup"><span data-stu-id="4cdee-132">Note that RECORD TYPE parameters can contain LOB data columns.</span></span>  
   
-- <span data-ttu-id="2f968-133">LOB データを含む OUT REF CURSOR パラメーターを含むプロシージャの応答メッセージ。</span><span class="sxs-lookup"><span data-stu-id="2f968-133">Response message for procedures with OUT REF CURSOR parameters that contain LOB data.</span></span> <span data-ttu-id="2f968-134">これにより、出力側 REF CURSOR を IN パラメーターにはが含まれます。</span><span class="sxs-lookup"><span data-stu-id="2f968-134">This includes the output side of IN OUT REF CURSOR parameters</span></span>  
+- <span data-ttu-id="4cdee-133">LOB データを含む OUT REF CURSOR パラメーターを含むプロシージャの応答メッセージ。</span><span class="sxs-lookup"><span data-stu-id="4cdee-133">Response message for procedures with OUT REF CURSOR parameters that contain LOB data.</span></span> <span data-ttu-id="4cdee-134">これにより、出力側 REF CURSOR を IN パラメーターにはが含まれます。</span><span class="sxs-lookup"><span data-stu-id="4cdee-134">This includes the output side of IN OUT REF CURSOR parameters</span></span>  
   
-- <span data-ttu-id="2f968-135">LOB データを含む結果セットを返す SQLEXECUTE 操作の応答メッセージ。</span><span class="sxs-lookup"><span data-stu-id="2f968-135">Response message for SQLEXECUTE operations that return result sets that contain LOB data.</span></span>  
+- <span data-ttu-id="4cdee-135">LOB データを含む結果セットを返す SQLEXECUTE 操作の応答メッセージ。</span><span class="sxs-lookup"><span data-stu-id="4cdee-135">Response message for SQLEXECUTE operations that return result sets that contain LOB data.</span></span>  
   
-- <span data-ttu-id="2f968-136">LOB データを返す結果のテーブルまたはビューの Select 操作の応答メッセージを設定します。</span><span class="sxs-lookup"><span data-stu-id="2f968-136">Response message for Table or view Select operations that return LOB data in the result set.</span></span>  
+- <span data-ttu-id="4cdee-136">LOB データを返す結果のテーブルまたはビューの Select 操作の応答メッセージを設定します。</span><span class="sxs-lookup"><span data-stu-id="4cdee-136">Response message for Table or view Select operations that return LOB data in the result set.</span></span>  
   
-- <span data-ttu-id="2f968-137">(受信) POLLINGSTMT 操作の要求メッセージ</span><span class="sxs-lookup"><span data-stu-id="2f968-137">Request message for the (inbound) POLLINGSTMT operation</span></span>  
+- <span data-ttu-id="4cdee-137">(受信) POLLINGSTMT 操作の要求メッセージ</span><span class="sxs-lookup"><span data-stu-id="4cdee-137">Request message for the (inbound) POLLINGSTMT operation</span></span>  
   
-  <span data-ttu-id="2f968-138">WCF チャネル モデル内の受信メッセージのエンド ツー エンドのストリーミングをサポートするには、次の操作をする必要があります。</span><span class="sxs-lookup"><span data-stu-id="2f968-138">To support end-to-end streaming on an inbound message in the WCF channel model, you must:</span></span>  
+  <span data-ttu-id="4cdee-138">WCF チャネル モデル内の受信メッセージのエンド ツー エンドのストリーミングをサポートするには、次の操作をする必要があります。</span><span class="sxs-lookup"><span data-stu-id="4cdee-138">To support end-to-end streaming on an inbound message in the WCF channel model, you must:</span></span>  
   
-1.  <span data-ttu-id="2f968-139">実装を**System.Xml.XmlDictionaryWriter**ことができる (ノード値の LOB データのストリーミングを実行する) LOB データをストリーミングします。</span><span class="sxs-lookup"><span data-stu-id="2f968-139">Implement a **System.Xml.XmlDictionaryWriter** that is capable of streaming the LOB data (performing node-value streaming on the LOB data).</span></span>  
+1.  <span data-ttu-id="4cdee-139">実装を**System.Xml.XmlDictionaryWriter**ことができる (ノード値の LOB データのストリーミングを実行する) LOB データをストリーミングします。</span><span class="sxs-lookup"><span data-stu-id="4cdee-139">Implement a **System.Xml.XmlDictionaryWriter** that is capable of streaming the LOB data (performing node-value streaming on the LOB data).</span></span>  
   
-2.  <span data-ttu-id="2f968-140">使用、**メッセージ**を呼び出して**WriteBodyContents**メソッドをこの**XmlDictionaryWriter**します。</span><span class="sxs-lookup"><span data-stu-id="2f968-140">Consume the **Message** by invoking **WriteBodyContents** method with this **XmlDictionaryWriter**.</span></span>  
+2.  <span data-ttu-id="4cdee-140">使用、**メッセージ**を呼び出して**WriteBodyContents**メソッドをこの**XmlDictionaryWriter**します。</span><span class="sxs-lookup"><span data-stu-id="4cdee-140">Consume the **Message** by invoking **WriteBodyContents** method with this **XmlDictionaryWriter**.</span></span>  
   
-### <a name="implementing-an-xmldictionarywriter"></a><span data-ttu-id="2f968-141">XmlDictionaryWriter の実装</span><span class="sxs-lookup"><span data-stu-id="2f968-141">Implementing an XmlDictionaryWriter</span></span>  
- <span data-ttu-id="2f968-142">次の例の実装を示しています、 **XmlDictionaryWriter**ノード値のストリーミングを実行します。</span><span class="sxs-lookup"><span data-stu-id="2f968-142">The following example shows an implementation of an **XmlDictionaryWriter** that performs node-value streaming.</span></span>  
+### <a name="implementing-an-xmldictionarywriter"></a><span data-ttu-id="4cdee-141">XmlDictionaryWriter の実装</span><span class="sxs-lookup"><span data-stu-id="4cdee-141">Implementing an XmlDictionaryWriter</span></span>  
+ <span data-ttu-id="4cdee-142">次の例の実装を示しています、 **XmlDictionaryWriter**ノード値のストリーミングを実行します。</span><span class="sxs-lookup"><span data-stu-id="4cdee-142">The following example shows an implementation of an **XmlDictionaryWriter** that performs node-value streaming.</span></span>  
   
 ```  
 using System;  
@@ -333,8 +333,8 @@ class FileXmlWriter : XmlDictionaryWriter
 }  
 ```  
   
-### <a name="consuming-a-message-by-using-an-xmldictionarywriter"></a><span data-ttu-id="2f968-143">メッセージを使用する XmlDictionaryWriter を使用して、</span><span class="sxs-lookup"><span data-stu-id="2f968-143">Consuming a Message by using an XmlDictionaryWriter</span></span>  
- <span data-ttu-id="2f968-144">次の例は、応答メッセージを使用してテーブルを使用する方法を示しています、 **FileXmlWriter**前の例で実装します。</span><span class="sxs-lookup"><span data-stu-id="2f968-144">The following example shows how to consume a table Select response message using the **FileXmlWriter** implemented in the preceding example.</span></span> <span data-ttu-id="2f968-145">(、 **FileWriter**クラスがサブクラス化によって作成された**XmlDictionaryWriter**)。この例では、 **IRequestChannel**選択操作を呼び出すためのチャネル。</span><span class="sxs-lookup"><span data-stu-id="2f968-145">(The **FileWriter** class was created by sub-classing **XmlDictionaryWriter**.) The example uses an **IRequestChannel** channel to invoke the Select operation.</span></span> <span data-ttu-id="2f968-146">チャネルの作成の詳細が省略されています。</span><span class="sxs-lookup"><span data-stu-id="2f968-146">The details of the channel creation have been omitted.</span></span> <span data-ttu-id="2f968-147">要求メッセージは、ファイルから読み取られ、選択の応答メッセージは、ファイルに書き込まれます。</span><span class="sxs-lookup"><span data-stu-id="2f968-147">The Select request message is read from a file and the Select response message is written to a file.</span></span>  
+### <a name="consuming-a-message-by-using-an-xmldictionarywriter"></a><span data-ttu-id="4cdee-143">メッセージを使用する XmlDictionaryWriter を使用して、</span><span class="sxs-lookup"><span data-stu-id="4cdee-143">Consuming a Message by using an XmlDictionaryWriter</span></span>  
+ <span data-ttu-id="4cdee-144">次の例は、応答メッセージを使用してテーブルを使用する方法を示しています、 **FileXmlWriter**前の例で実装します。</span><span class="sxs-lookup"><span data-stu-id="4cdee-144">The following example shows how to consume a table Select response message using the **FileXmlWriter** implemented in the preceding example.</span></span> <span data-ttu-id="4cdee-145">(、 **FileWriter**クラスがサブクラス化によって作成された**XmlDictionaryWriter**)。この例では、 **IRequestChannel**選択操作を呼び出すためのチャネル。</span><span class="sxs-lookup"><span data-stu-id="4cdee-145">(The **FileWriter** class was created by sub-classing **XmlDictionaryWriter**.) The example uses an **IRequestChannel** channel to invoke the Select operation.</span></span> <span data-ttu-id="4cdee-146">チャネルの作成の詳細が省略されています。</span><span class="sxs-lookup"><span data-stu-id="4cdee-146">The details of the channel creation have been omitted.</span></span> <span data-ttu-id="4cdee-147">要求メッセージは、ファイルから読み取られ、選択の応答メッセージは、ファイルに書き込まれます。</span><span class="sxs-lookup"><span data-stu-id="4cdee-147">The Select request message is read from a file and the Select response message is written to a file.</span></span>  
   
 ```  
 // Read Select message body from a file  
@@ -354,7 +354,7 @@ fileXmlWriter.Close();
 OutputMsg.Close();  
 ```  
   
- <span data-ttu-id="2f968-148">次の XML では、選択操作の要求メッセージ (select.xml ファイルの内容) を表示します。</span><span class="sxs-lookup"><span data-stu-id="2f968-148">The following XML shows the request message (contents of the select.xml file) for the Select operation.</span></span> <span data-ttu-id="2f968-149">CUSTOMER テーブルには、写真をという名前の BLOB 列が含まれています。</span><span class="sxs-lookup"><span data-stu-id="2f968-149">The CUSTOMER table contains a BLOB column named PHOTO.</span></span>  
+ <span data-ttu-id="4cdee-148">次の XML では、選択操作の要求メッセージ (select.xml ファイルの内容) を表示します。</span><span class="sxs-lookup"><span data-stu-id="4cdee-148">The following XML shows the request message (contents of the select.xml file) for the Select operation.</span></span> <span data-ttu-id="4cdee-149">CUSTOMER テーブルには、写真をという名前の BLOB 列が含まれています。</span><span class="sxs-lookup"><span data-stu-id="4cdee-149">The CUSTOMER table contains a BLOB column named PHOTO.</span></span>  
   
 ```  
 <Select xmlns="http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/CUSTOMER">  
@@ -363,5 +363,5 @@ OutputMsg.Close();
 </Select>  
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="2f968-150">参照</span><span class="sxs-lookup"><span data-stu-id="2f968-150">See Also</span></span>  
- [<span data-ttu-id="2f968-151">WCF チャネル モデルを使用して Oracle データベース アプリケーションを開発します。</span><span class="sxs-lookup"><span data-stu-id="2f968-151">Develop Oracle Database applications using the WCF Channel Model</span></span>](../../adapters-and-accelerators/adapter-oracle-database/develop-oracle-database-applications-using-the-wcf-channel-model.md)
+## <a name="see-also"></a><span data-ttu-id="4cdee-150">参照</span><span class="sxs-lookup"><span data-stu-id="4cdee-150">See Also</span></span>  
+ [<span data-ttu-id="4cdee-151">WCF チャネル モデルを使用して Oracle データベース アプリケーションを開発します。</span><span class="sxs-lookup"><span data-stu-id="4cdee-151">Develop Oracle Database applications using the WCF Channel Model</span></span>](../../adapters-and-accelerators/adapter-oracle-database/develop-oracle-database-applications-using-the-wcf-channel-model.md)

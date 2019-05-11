@@ -1,5 +1,5 @@
 ---
-title: ランタイム アーキテクチャ |Microsoft ドキュメント
+title: ランタイムのアーキテクチャ |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,38 +16,38 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9e45ac745dbf6704f06f61155b3f57edfdec9e09
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5b6b7a01f8919a1c2bee415df3733394462d59f5
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22268994"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65393973"
 ---
-# <a name="runtime-architecture"></a><span data-ttu-id="03cc9-102">ランタイム アーキテクチャ</span><span class="sxs-lookup"><span data-stu-id="03cc9-102">Runtime Architecture</span></span>
-<span data-ttu-id="03cc9-103">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のさまざまなコンポーネントに関する詳細な情報を確認する前に、コンポーネントが製品の全体的なアーキテクチャにどのように組み込まれているかを理解しておくことが重要です。</span><span class="sxs-lookup"><span data-stu-id="03cc9-103">Before reviewing more detailed information about the various components in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], it is important that you have an understanding of how the components fit into the overall architecture of the product.</span></span> <span data-ttu-id="03cc9-104">BizTalk Server ランタイムは、メッセージがシステムに公開され、次に 1 つまたは複数のアクティブなサブスクライバーによって受信される公開/サブスクライブ アーキテクチャに基づいて構築されています。</span><span class="sxs-lookup"><span data-stu-id="03cc9-104">The BizTalk Server runtime is built on a publish/subscribe architecture in which a message is published into the system, and then received by one or more active subscribers.</span></span> <span data-ttu-id="03cc9-105">このアーキテクチャの異なる特性がありますが、BizTalk Server で実装されるモデルとも呼ばれます*コンテンツ ベースのパブリッシュ/サブスクライブ*です。</span><span class="sxs-lookup"><span data-stu-id="03cc9-105">Different flavors of this architecture exist, but the model implemented in BizTalk Server is often called *content-based publish/subscribe*.</span></span>  
+# <a name="runtime-architecture"></a><span data-ttu-id="a794a-102">ランタイム アーキテクチャ</span><span class="sxs-lookup"><span data-stu-id="a794a-102">Runtime Architecture</span></span>
+<span data-ttu-id="a794a-103">さまざまなコンポーネントに関する情報を確認する前に詳細[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]コンポーネントが、製品の全体的なアーキテクチャに適合させる方法を理解することが重要になります。</span><span class="sxs-lookup"><span data-stu-id="a794a-103">Before reviewing more detailed information about the various components in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], it is important that you have an understanding of how the components fit into the overall architecture of the product.</span></span> <span data-ttu-id="a794a-104">BizTalk Server ランタイムは、メッセージが、システムに公開および 1 つまたは複数のアクティブなサブスクライバーで受信し、パブリッシュ/サブスクライブ アーキテクチャに基づいて構築されます。</span><span class="sxs-lookup"><span data-stu-id="a794a-104">The BizTalk Server runtime is built on a publish/subscribe architecture in which a message is published into the system, and then received by one or more active subscribers.</span></span> <span data-ttu-id="a794a-105">このアーキテクチャのさまざまな種類があります。 しかし、BizTalk Server で実装されるモデルとも呼ばれます*コンテンツに基づく公開/定期受信*します。</span><span class="sxs-lookup"><span data-stu-id="a794a-105">Different flavors of this architecture exist, but the model implemented in BizTalk Server is often called *content-based publish/subscribe*.</span></span>  
   
- <span data-ttu-id="03cc9-106">コンテンツ ベースの公開/サブスクライブ モデルでは、サブスクライバーはメッセージに関する条件のセットを使用して、受信するメッセージを指定します。</span><span class="sxs-lookup"><span data-stu-id="03cc9-106">In a content-based publish/subscribe model, subscribers specify the messages they want to receive using a set of criteria about the message.</span></span> <span data-ttu-id="03cc9-107">メッセージは公開されたときに評価され、サブスクリプションに一致するすべてのアクティブなサブスクライバー (フィルター式で示す) がメッセージを受信します。</span><span class="sxs-lookup"><span data-stu-id="03cc9-107">The message is evaluated at the time it is published, and all of the active subscribers with matching subscriptions (indicated by filter expressions), receive the message.</span></span> <span data-ttu-id="03cc9-108">BizTalk Server では、サブスクリプションを構築するために使用する条件がメッセージの内容から取得される必要がなく、メッセージに関するコンテキスト情報も含まれる場合があるので、コンテンツ ベースという名前はあまりふさわしくありません。</span><span class="sxs-lookup"><span data-stu-id="03cc9-108">As it applies to BizTalk Server, content-based is a bit of a misnomer, however, because the criteria used to build subscriptions do not have to come from the message content, and may include contextual information about the message as well.</span></span> <span data-ttu-id="03cc9-109">サブスクリプション メカニズムの詳細については、「[パブリッシュとサブスクライブ アーキテクチャ](../core/publish-and-subscribe-architecture.md)です。</span><span class="sxs-lookup"><span data-stu-id="03cc9-109">For details of the subscription mechanism, see [Publish and Subscribe Architecture](../core/publish-and-subscribe-architecture.md).</span></span>  
+ <span data-ttu-id="a794a-106">コンテンツ ベースのパブリッシュ/サブスクライブ モデルでは、サブスクライバーは、メッセージに関する条件のセットを使用して受信するメッセージを指定します。</span><span class="sxs-lookup"><span data-stu-id="a794a-106">In a content-based publish/subscribe model, subscribers specify the messages they want to receive using a set of criteria about the message.</span></span> <span data-ttu-id="a794a-107">メッセージが発行時に評価され、すべてのアクティブなサブスクライバー (フィルター式によって示されます) のサブスクリプションに一致するメッセージが表示されます。</span><span class="sxs-lookup"><span data-stu-id="a794a-107">The message is evaluated at the time it is published, and all of the active subscribers with matching subscriptions (indicated by filter expressions), receive the message.</span></span> <span data-ttu-id="a794a-108">BizTalk Server に適用される、コンテンツに基づくが、若干不適切な名称、ただし、サブスクリプションを構築するための条件は、メッセージの内容から取得する必要はなくもメッセージに関するコンテキスト情報を含めることができますです。</span><span class="sxs-lookup"><span data-stu-id="a794a-108">As it applies to BizTalk Server, content-based is a bit of a misnomer, however, because the criteria used to build subscriptions do not have to come from the message content, and may include contextual information about the message as well.</span></span> <span data-ttu-id="a794a-109">サブスクリプション メカニズムの詳細については、次を参照してください。[発行およびサブスクライブ アーキテクチャ](../core/publish-and-subscribe-architecture.md)します。</span><span class="sxs-lookup"><span data-stu-id="a794a-109">For details of the subscription mechanism, see [Publish and Subscribe Architecture](../core/publish-and-subscribe-architecture.md).</span></span>  
   
- <span data-ttu-id="03cc9-110">次のセクションでは、BizTalk Server ランタイム アーキテクチャのさまざまなコンポーネントについて説明します。</span><span class="sxs-lookup"><span data-stu-id="03cc9-110">The sections that follow describe the various components of the BizTalk Server runtime architecture.</span></span>  
+ <span data-ttu-id="a794a-110">次のセクションでは、BizTalk Server ランタイム アーキテクチャのさまざまなコンポーネントについて説明します。</span><span class="sxs-lookup"><span data-stu-id="a794a-110">The sections that follow describe the various components of the BizTalk Server runtime architecture.</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="03cc9-111">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="03cc9-111">In This Section</span></span>  
+## <a name="in-this-section"></a><span data-ttu-id="a794a-111">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="a794a-111">In This Section</span></span>  
   
--   [<span data-ttu-id="03cc9-112">BizTalk Server メッセージ</span><span class="sxs-lookup"><span data-stu-id="03cc9-112">The BizTalk Server Message</span></span>](../core/the-biztalk-server-message.md)  
+-   [<span data-ttu-id="a794a-112">BizTalk Server メッセージ</span><span class="sxs-lookup"><span data-stu-id="a794a-112">The BizTalk Server Message</span></span>](../core/the-biztalk-server-message.md)  
   
--   [<span data-ttu-id="03cc9-113">メッセージのライフ サイクル</span><span class="sxs-lookup"><span data-stu-id="03cc9-113">Lifecycle of a Message</span></span>](../core/lifecycle-of-a-message.md)  
+-   [<span data-ttu-id="a794a-113">メッセージのライフサイクル</span><span class="sxs-lookup"><span data-stu-id="a794a-113">Lifecycle of a Message</span></span>](../core/lifecycle-of-a-message.md)  
   
--   [<span data-ttu-id="03cc9-114">メッセージの処理</span><span class="sxs-lookup"><span data-stu-id="03cc9-114">Processing the Message</span></span>](../core/processing-the-message.md)  
+-   [<span data-ttu-id="a794a-114">メッセージの処理</span><span class="sxs-lookup"><span data-stu-id="a794a-114">Processing the Message</span></span>](../core/processing-the-message.md)  
   
--   [<span data-ttu-id="03cc9-115">要求-応答のメッセージング</span><span class="sxs-lookup"><span data-stu-id="03cc9-115">Request-Response Messaging</span></span>](../core/request-response-messaging.md)  
+-   [<span data-ttu-id="a794a-115">要求 - 応答メッセージング</span><span class="sxs-lookup"><span data-stu-id="a794a-115">Request-Response Messaging</span></span>](../core/request-response-messaging.md)  
   
--   [<span data-ttu-id="03cc9-116">メッセージング エンジン</span><span class="sxs-lookup"><span data-stu-id="03cc9-116">The Messaging Engine</span></span>](../core/the-messaging-engine.md)  
+-   [<span data-ttu-id="a794a-116">メッセージング エンジン</span><span class="sxs-lookup"><span data-stu-id="a794a-116">The Messaging Engine</span></span>](../core/the-messaging-engine.md)  
   
--   [<span data-ttu-id="03cc9-117">エンティティ</span><span class="sxs-lookup"><span data-stu-id="03cc9-117">Entities</span></span>](../core/entities.md)  
+-   [<span data-ttu-id="a794a-117">エンティティ</span><span class="sxs-lookup"><span data-stu-id="a794a-117">Entities</span></span>](../core/entities.md)  
   
--   [<span data-ttu-id="03cc9-118">成果物</span><span class="sxs-lookup"><span data-stu-id="03cc9-118">Artifacts</span></span>](../core/artifacts.md)  
+-   [<span data-ttu-id="a794a-118">アイテム</span><span class="sxs-lookup"><span data-stu-id="a794a-118">Artifacts</span></span>](../core/artifacts.md)  
   
--   [<span data-ttu-id="03cc9-119">エンタープライズ シングル サインオン (SSO)</span><span class="sxs-lookup"><span data-stu-id="03cc9-119">Enterprise Single Sign-On (SSO)</span></span>](../core/enterprise-single-sign-on-sso.md)  
+-   [<span data-ttu-id="a794a-119">Enterprise Single Sign-On (SSO)</span><span class="sxs-lookup"><span data-stu-id="a794a-119">Enterprise Single Sign-On (SSO)</span></span>](../core/enterprise-single-sign-on-sso.md)  
   
--   [<span data-ttu-id="03cc9-120">ビジネス ルール エンジン</span><span class="sxs-lookup"><span data-stu-id="03cc9-120">Business Rules Engine</span></span>](../core/business-rules-engine.md)  
+-   [<span data-ttu-id="a794a-120">ビジネス ルール エンジン</span><span class="sxs-lookup"><span data-stu-id="a794a-120">Business Rules Engine</span></span>](../core/business-rules-engine.md)  
   
--   [<span data-ttu-id="03cc9-121">BizTalk アセンブリ</span><span class="sxs-lookup"><span data-stu-id="03cc9-121">BizTalk Assemblies</span></span>](../core/biztalk-assemblies.md)
+-   [<span data-ttu-id="a794a-121">BizTalk アセンブリ</span><span class="sxs-lookup"><span data-stu-id="a794a-121">BizTalk Assemblies</span></span>](../core/biztalk-assemblies.md)

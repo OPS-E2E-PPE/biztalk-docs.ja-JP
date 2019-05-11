@@ -12,28 +12,28 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 30f71ebf1ef6c0b48876c27e3f5212be42548f9d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b9bb4cd603084a4bd105423a556d6480051fc0a5
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36998603"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65391661"
 ---
-# <a name="component-cannot-repeat-because-it-has-an-invalid-repetition-count"></a><span data-ttu-id="d7e8f-102">コンポーネントを繰り返すことはできません。無効な繰り返し回数が指定されています</span><span class="sxs-lookup"><span data-stu-id="d7e8f-102">Component cannot repeat because it has an invalid repetition count</span></span>
-## <a name="details"></a><span data-ttu-id="d7e8f-103">詳細</span><span class="sxs-lookup"><span data-stu-id="d7e8f-103">Details</span></span>  
+# <a name="component-cannot-repeat-because-it-has-an-invalid-repetition-count"></a><span data-ttu-id="191f0-102">無効な繰り返し回数があるため、コンポーネントを繰り返すことはできません。</span><span class="sxs-lookup"><span data-stu-id="191f0-102">Component cannot repeat because it has an invalid repetition count</span></span>
+## <a name="details"></a><span data-ttu-id="191f0-103">詳細</span><span class="sxs-lookup"><span data-stu-id="191f0-103">Details</span></span>  
   
 |                 |                                                                                        |
 |-----------------|----------------------------------------------------------------------------------------|
-|  <span data-ttu-id="d7e8f-104">製品名</span><span class="sxs-lookup"><span data-stu-id="d7e8f-104">Product Name</span></span>   |   [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]   |
-| <span data-ttu-id="d7e8f-105">製品バージョン</span><span class="sxs-lookup"><span data-stu-id="d7e8f-105">Product Version</span></span> |               [!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]               |
-|    <span data-ttu-id="d7e8f-106">イベント ID</span><span class="sxs-lookup"><span data-stu-id="d7e8f-106">Event ID</span></span>     |                                           -                                            |
-|  <span data-ttu-id="d7e8f-107">イベント ソース</span><span class="sxs-lookup"><span data-stu-id="d7e8f-107">Event Source</span></span>   | [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="d7e8f-108"> EDI</span><span class="sxs-lookup"><span data-stu-id="d7e8f-108"> EDI</span></span> |
-|    <span data-ttu-id="d7e8f-109">コンポーネント</span><span class="sxs-lookup"><span data-stu-id="d7e8f-109">Component</span></span>    |                                       <span data-ttu-id="d7e8f-110">EDI エンジン</span><span class="sxs-lookup"><span data-stu-id="d7e8f-110">EDI Engine</span></span>                                       |
-|  <span data-ttu-id="d7e8f-111">シンボル名</span><span class="sxs-lookup"><span data-stu-id="d7e8f-111">Symbolic Name</span></span>  |                            <span data-ttu-id="d7e8f-112">SchemaCode118EInvalidRepetition</span><span class="sxs-lookup"><span data-stu-id="d7e8f-112">SchemaCode118EInvalidRepetition</span></span>                             |
-|  <span data-ttu-id="d7e8f-113">メッセージ テキスト</span><span class="sxs-lookup"><span data-stu-id="d7e8f-113">Message Text</span></span>   |           <span data-ttu-id="d7e8f-114">無効な繰り返し数があるコンポーネントを繰り返すことはできません。 {0}</span><span class="sxs-lookup"><span data-stu-id="d7e8f-114">Component cannot repeat, it has an invalid repetition count of {0}</span></span>           |
+|  <span data-ttu-id="191f0-104">製品名</span><span class="sxs-lookup"><span data-stu-id="191f0-104">Product Name</span></span>   |   [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]   |
+| <span data-ttu-id="191f0-105">製品バージョン</span><span class="sxs-lookup"><span data-stu-id="191f0-105">Product Version</span></span> |               [!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]               |
+|    <span data-ttu-id="191f0-106">イベント ID</span><span class="sxs-lookup"><span data-stu-id="191f0-106">Event ID</span></span>     |                                           -                                            |
+|  <span data-ttu-id="191f0-107">イベント ソース</span><span class="sxs-lookup"><span data-stu-id="191f0-107">Event Source</span></span>   | [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] <span data-ttu-id="191f0-108">EDI</span><span class="sxs-lookup"><span data-stu-id="191f0-108">EDI</span></span> |
+|    <span data-ttu-id="191f0-109">コンポーネント</span><span class="sxs-lookup"><span data-stu-id="191f0-109">Component</span></span>    |                                       <span data-ttu-id="191f0-110">EDI エンジン</span><span class="sxs-lookup"><span data-stu-id="191f0-110">EDI Engine</span></span>                                       |
+|  <span data-ttu-id="191f0-111">シンボル名</span><span class="sxs-lookup"><span data-stu-id="191f0-111">Symbolic Name</span></span>  |                            <span data-ttu-id="191f0-112">SchemaCode118EInvalidRepetition</span><span class="sxs-lookup"><span data-stu-id="191f0-112">SchemaCode118EInvalidRepetition</span></span>                             |
+|  <span data-ttu-id="191f0-113">メッセージ テキスト</span><span class="sxs-lookup"><span data-stu-id="191f0-113">Message Text</span></span>   |           <span data-ttu-id="191f0-114">無効な繰り返し数があるコンポーネントを繰り返すことはできません。 {0}</span><span class="sxs-lookup"><span data-stu-id="191f0-114">Component cannot repeat, it has an invalid repetition count of {0}</span></span>           |
   
-## <a name="explanation"></a><span data-ttu-id="d7e8f-115">説明</span><span class="sxs-lookup"><span data-stu-id="d7e8f-115">Explanation</span></span>  
- <span data-ttu-id="d7e8f-116">このエラー/警告/情報イベントは、スキーマで繰り返しが許可されていないにもかかわらず、インターチェンジで要素コンポーネント、要素、セグメント、またはループが繰り返されていたため、受信パイプラインで受信インターチェンジを処理できなかったか、送信パイプラインで送信インターチェンジを処理できなかったことを示します。</span><span class="sxs-lookup"><span data-stu-id="d7e8f-116">This Error/Warning/Information event indicates that the receive pipeline could not process the incoming interchange or the send pipeline could not process the outgoing interchange because an element component, element, segment, or loop was repeated in the interchange while the schema does not allow the repetition.</span></span>  
+## <a name="explanation"></a><span data-ttu-id="191f0-115">説明</span><span class="sxs-lookup"><span data-stu-id="191f0-115">Explanation</span></span>  
+ <span data-ttu-id="191f0-116">このエラー/警告/情報イベントは、スキーマで繰り返しが許可されていないにもかかわらず、インターチェンジで要素コンポーネント、要素、セグメント、またはループが繰り返されていたため、受信パイプラインで受信インターチェンジを処理できなかったか、送信パイプラインで送信インターチェンジを処理できなかったことを示します。</span><span class="sxs-lookup"><span data-stu-id="191f0-116">This Error/Warning/Information event indicates that the receive pipeline could not process the incoming interchange or the send pipeline could not process the outgoing interchange because an element component, element, segment, or loop was repeated in the interchange while the schema does not allow the repetition.</span></span>  
   
-## <a name="user-action"></a><span data-ttu-id="d7e8f-117">ユーザーの操作</span><span class="sxs-lookup"><span data-stu-id="d7e8f-117">User Action</span></span>  
- <span data-ttu-id="d7e8f-118">このエラーを解決するには、インターチェンジに要素コンポーネント、要素、セグメント、またはループの繰り返しがなく、スキーマの要件どおりであることを確認し、メッセージを再送信します。</span><span class="sxs-lookup"><span data-stu-id="d7e8f-118">To resolve this error, ensure that the element component, element, segment, or loop does not repeat in the interchange, as required by the schema, and have the message resent.</span></span>
+## <a name="user-action"></a><span data-ttu-id="191f0-117">ユーザーの操作</span><span class="sxs-lookup"><span data-stu-id="191f0-117">User Action</span></span>  
+ <span data-ttu-id="191f0-118">このエラーを解決するには、インターチェンジに要素コンポーネント、要素、セグメント、またはループの繰り返しがなく、スキーマの要件どおりであることを確認し、メッセージを再送信します。</span><span class="sxs-lookup"><span data-stu-id="191f0-118">To resolve this error, ensure that the element component, element, segment, or loop does not repeat in the interchange, as required by the schema, and have the message resent.</span></span>

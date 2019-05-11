@@ -12,182 +12,182 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2f337efa7b72a40c37a4cc3f42a2bd5d846923dc
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8579726d4e97d7bce91dce2a27687528e6064794
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36970955"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65397036"
 ---
-# <a name="plan-for-your-biztalk-solution"></a><span data-ttu-id="8adf4-102">BizTalk ソリューションを計画します。</span><span class="sxs-lookup"><span data-stu-id="8adf4-102">Plan for your BizTalk Solution</span></span>
-<span data-ttu-id="8adf4-103">主な設計目標の 1 つ[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]できるだけ多くの処理のシナリオに対応するために最大限の柔軟性を提供することです。</span><span class="sxs-lookup"><span data-stu-id="8adf4-103">One of the primary design goals of [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] is to provide maximum flexibility for accommodating as many processing scenarios as possible.</span></span> <span data-ttu-id="8adf4-104">この柔軟性により機能の最適な使用で使用できるようにする方法を決定する BizTalk ソリューションの開発者が直面する主な課題の 1 つは[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ビジネスに合わせて必要があります。</span><span class="sxs-lookup"><span data-stu-id="8adf4-104">Because of this great flexibility, one of the primary challenges facing developers of a BizTalk solution is to determine how to make best use of the features available in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] to best meet their business needs.</span></span> <span data-ttu-id="8adf4-105">計画、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]は以下に示す種類のフェーズに分けることができます。</span><span class="sxs-lookup"><span data-stu-id="8adf4-105">Planning the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] can be broken down into distinct phases which are summarized below.</span></span>  
+# <a name="plan-for-your-biztalk-solution"></a><span data-ttu-id="4d849-102">BizTalk ソリューションを計画します。</span><span class="sxs-lookup"><span data-stu-id="4d849-102">Plan for your BizTalk Solution</span></span>
+<span data-ttu-id="4d849-103">主な設計目標の 1 つ[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]できるだけ多くの処理のシナリオに対応するために最大限の柔軟性を提供することです。</span><span class="sxs-lookup"><span data-stu-id="4d849-103">One of the primary design goals of [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] is to provide maximum flexibility for accommodating as many processing scenarios as possible.</span></span> <span data-ttu-id="4d849-104">この柔軟性により機能の最適な使用で使用できるようにする方法を決定する BizTalk ソリューションの開発者が直面する主な課題の 1 つは[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ビジネスに合わせて必要があります。</span><span class="sxs-lookup"><span data-stu-id="4d849-104">Because of this great flexibility, one of the primary challenges facing developers of a BizTalk solution is to determine how to make best use of the features available in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] to best meet their business needs.</span></span> <span data-ttu-id="4d849-105">計画、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]は以下に示す種類のフェーズに分けることができます。</span><span class="sxs-lookup"><span data-stu-id="4d849-105">Planning the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] can be broken down into distinct phases which are summarized below.</span></span>  
   
-## <a name="scoping-the-solution"></a><span data-ttu-id="8adf4-106">ソリューションのスコープ</span><span class="sxs-lookup"><span data-stu-id="8adf4-106">Scoping the Solution</span></span>  
+## <a name="scoping-the-solution"></a><span data-ttu-id="4d849-106">ソリューションのスコープ</span><span class="sxs-lookup"><span data-stu-id="4d849-106">Scoping the Solution</span></span>  
   
-### <a name="performance-considerations"></a><span data-ttu-id="8adf4-107">パフォーマンスに関する考慮事項</span><span class="sxs-lookup"><span data-stu-id="8adf4-107">Performance Considerations</span></span>  
- <span data-ttu-id="8adf4-108">BizTalk ソリューションをスコープとは、次を考慮してください。</span><span class="sxs-lookup"><span data-stu-id="8adf4-108">Consider the following when scoping your BizTalk solution:</span></span>  
+### <a name="performance-considerations"></a><span data-ttu-id="4d849-107">パフォーマンスに関する考慮事項</span><span class="sxs-lookup"><span data-stu-id="4d849-107">Performance Considerations</span></span>  
+ <span data-ttu-id="4d849-108">BizTalk ソリューションをスコープとは、次を考慮してください。</span><span class="sxs-lookup"><span data-stu-id="4d849-108">Consider the following when scoping your BizTalk solution:</span></span>  
   
-- <span data-ttu-id="8adf4-109">どのアダプターとアクセラレータが必要ですか。</span><span class="sxs-lookup"><span data-stu-id="8adf4-109">Which adapters and/or accelerators are required?</span></span>  
+- <span data-ttu-id="4d849-109">どのアダプターとアクセラレータが必要ですか。</span><span class="sxs-lookup"><span data-stu-id="4d849-109">Which adapters and/or accelerators are required?</span></span>  
   
-- <span data-ttu-id="8adf4-110">ソリューションにオーケストレーションを実装するための要件とは</span><span class="sxs-lookup"><span data-stu-id="8adf4-110">What are the requirements for implementing orchestrations in the solution?</span></span>  
+- <span data-ttu-id="4d849-110">ソリューションにオーケストレーションを実装するための要件とは</span><span class="sxs-lookup"><span data-stu-id="4d849-110">What are the requirements for implementing orchestrations in the solution?</span></span>  
   
-- <span data-ttu-id="8adf4-111">スループットの要件を文書化: ソリューションの最大持続可能スループットの要件は何ですか?</span><span class="sxs-lookup"><span data-stu-id="8adf4-111">Document throughput requirements: What are the maximum sustainable throughput requirements for the solution?</span></span>  
+- <span data-ttu-id="4d849-111">ドキュメントのスループットの要件:ソリューションの最大持続可能スループットの要件とは</span><span class="sxs-lookup"><span data-stu-id="4d849-111">Document throughput requirements: What are the maximum sustainable throughput requirements for the solution?</span></span>  
   
-- <span data-ttu-id="8adf4-112">待機時間の要件: どのように応答性の高いソリューションにする必要は送信請求-応答と要求-応答のシナリオのでしょうか。</span><span class="sxs-lookup"><span data-stu-id="8adf4-112">Latency requirements: How responsive does the solution need to be for solicit-response and request-response scenarios?</span></span>  
+- <span data-ttu-id="4d849-112">待機時間の要件:応答性の高い方法は、ソリューション必要があります送信請求-応答と要求-応答のシナリオのでしょうか。</span><span class="sxs-lookup"><span data-stu-id="4d849-112">Latency requirements: How responsive does the solution need to be for solicit-response and request-response scenarios?</span></span>  
   
-- <span data-ttu-id="8adf4-113">ソリューションは、ピーク時のドキュメントの読み込みの期間からどの程度回復か。</span><span class="sxs-lookup"><span data-stu-id="8adf4-113">How well does the solution recover from periods of peak document load?</span></span>  
+- <span data-ttu-id="4d849-113">ソリューションは、ピーク時のドキュメントの読み込みの期間からどの程度回復か。</span><span class="sxs-lookup"><span data-stu-id="4d849-113">How well does the solution recover from periods of peak document load?</span></span>  
   
-- <span data-ttu-id="8adf4-114">ソリューションの高可用性の要件とは</span><span class="sxs-lookup"><span data-stu-id="8adf4-114">What are the high availability requirements of the solution?</span></span>  
+- <span data-ttu-id="4d849-114">ソリューションの高可用性の要件とは</span><span class="sxs-lookup"><span data-stu-id="4d849-114">What are the high availability requirements of the solution?</span></span>  
   
-- <span data-ttu-id="8adf4-115">ソリューションのドキュメント追跡の要件とは</span><span class="sxs-lookup"><span data-stu-id="8adf4-115">What are the document tracking requirements of the solution?</span></span>  
+- <span data-ttu-id="4d849-115">ソリューションのドキュメント追跡の要件とは</span><span class="sxs-lookup"><span data-stu-id="4d849-115">What are the document tracking requirements of the solution?</span></span>  
   
-- <span data-ttu-id="8adf4-116">リモートの Web サービスまたはその他のシステムなど、あらゆる依存アプリケーションのパフォーマンス特性を挙げてください。</span><span class="sxs-lookup"><span data-stu-id="8adf4-116">What are the performance characteristics of any dependent applications such as a remote Web service or other system?</span></span> <span data-ttu-id="8adf4-117">必要な負荷に依存するアプリケーションは保持しない場合は、システム全体のパフォーマンスを適宜デグレードされます。</span><span class="sxs-lookup"><span data-stu-id="8adf4-117">If dependent applications do not keep up with the required load then the overall system performance will be degraded accordingly.</span></span>  
+- <span data-ttu-id="4d849-116">リモートの Web サービスまたはその他のシステムなど、あらゆる依存アプリケーションのパフォーマンス特性を挙げてください。</span><span class="sxs-lookup"><span data-stu-id="4d849-116">What are the performance characteristics of any dependent applications such as a remote Web service or other system?</span></span> <span data-ttu-id="4d849-117">必要な負荷に依存するアプリケーションは保持しない場合は、システム全体のパフォーマンスを適宜デグレードされます。</span><span class="sxs-lookup"><span data-stu-id="4d849-117">If dependent applications do not keep up with the required load then the overall system performance will be degraded accordingly.</span></span>  
   
-- <span data-ttu-id="8adf4-118">BizTalk アプリケーションはデータベースに関連していないを消費する[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]でしょうか。</span><span class="sxs-lookup"><span data-stu-id="8adf4-118">Would the BizTalk application be consuming databases not related to [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]?</span></span> <span data-ttu-id="8adf4-119">たとえば、BizTalk アプリケーションが SQL アダプターを使用して SQL Server データベースのテーブルを使用する場合はテーブル効率的に構成しますか。</span><span class="sxs-lookup"><span data-stu-id="8adf4-119">For example, if the BizTalk application is consuming tables in a SQL Server database using the SQL adapter, are the tables efficiently configured?</span></span>  
+- <span data-ttu-id="4d849-118">BizTalk アプリケーションはデータベースに関連していないを消費する[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]でしょうか。</span><span class="sxs-lookup"><span data-stu-id="4d849-118">Would the BizTalk application be consuming databases not related to [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]?</span></span> <span data-ttu-id="4d849-119">たとえば、BizTalk アプリケーションが SQL アダプターを使用して SQL Server データベースのテーブルを使用する場合はテーブル効率的に構成しますか。</span><span class="sxs-lookup"><span data-stu-id="4d849-119">For example, if the BizTalk application is consuming tables in a SQL Server database using the SQL adapter, are the tables efficiently configured?</span></span>  
   
-### <a name="hardware-considerations"></a><span data-ttu-id="8adf4-120">ハードウェアについての注意事項</span><span class="sxs-lookup"><span data-stu-id="8adf4-120">Hardware Considerations</span></span>  
- <span data-ttu-id="8adf4-121">ソリューションをスコープには、以下を含むハードウェアの高度なダイアグラムを作成します。</span><span class="sxs-lookup"><span data-stu-id="8adf4-121">When scoping the solution, create a high-level hardware diagram that includes the following:</span></span>  
+### <a name="hardware-considerations"></a><span data-ttu-id="4d849-120">ハードウェアについての注意事項</span><span class="sxs-lookup"><span data-stu-id="4d849-120">Hardware Considerations</span></span>  
+ <span data-ttu-id="4d849-121">ソリューションをスコープには、以下を含むハードウェアの高度なダイアグラムを作成します。</span><span class="sxs-lookup"><span data-stu-id="4d849-121">When scoping the solution, create a high-level hardware diagram that includes the following:</span></span>  
   
--   <span data-ttu-id="8adf4-122">コンピューターのアーキテクチャ (x86、x64、IA64 など)</span><span class="sxs-lookup"><span data-stu-id="8adf4-122">Computer architecture (such as x86, x64, and IA64)</span></span>  
+-   <span data-ttu-id="4d849-122">コンピューターのアーキテクチャ (x86、x64、IA64 など)</span><span class="sxs-lookup"><span data-stu-id="4d849-122">Computer architecture (such as x86, x64, and IA64)</span></span>  
   
--   <span data-ttu-id="8adf4-123">CPU 要件 (など、種類、速度、数、コア、ハイパースレッディングを使用)</span><span class="sxs-lookup"><span data-stu-id="8adf4-123">CPU requirements (such as type, speed, number, cores, and use of hyperthreading)</span></span>  
+-   <span data-ttu-id="4d849-123">CPU 要件 (など、種類、速度、数、コア、ハイパースレッディングを使用)</span><span class="sxs-lookup"><span data-stu-id="4d849-123">CPU requirements (such as type, speed, number, cores, and use of hyperthreading)</span></span>  
   
--   <span data-ttu-id="8adf4-124">各コンピューターの RAM の要件</span><span class="sxs-lookup"><span data-stu-id="8adf4-124">RAM requirements for each computer</span></span>  
+-   <span data-ttu-id="4d849-124">各コンピューターの RAM の要件</span><span class="sxs-lookup"><span data-stu-id="4d849-124">RAM requirements for each computer</span></span>  
   
--   <span data-ttu-id="8adf4-125">ローカル ディスク ストレージ (型、サイズ、速度)</span><span class="sxs-lookup"><span data-stu-id="8adf4-125">Local disk storage (type, size, speed)</span></span>  
+-   <span data-ttu-id="4d849-125">ローカル ディスク ストレージ (型、サイズ、速度)</span><span class="sxs-lookup"><span data-stu-id="4d849-125">Local disk storage (type, size, speed)</span></span>  
   
--   <span data-ttu-id="8adf4-126">SAN (記憶域の要件: LUN の数SAN カードの種類)</span><span class="sxs-lookup"><span data-stu-id="8adf4-126">SAN (storage requirements: number of LUNS; SAN card type)</span></span>  
+-   <span data-ttu-id="4d849-126">SAN (記憶域の要件: LUN の数SAN カードの種類)</span><span class="sxs-lookup"><span data-stu-id="4d849-126">SAN (storage requirements: number of LUNS; SAN card type)</span></span>  
   
--   <span data-ttu-id="8adf4-127">ネットワーク カード (1 ギガビットと 100 メガビット (Mbps) は、各コンピューターの数 (1 Gbps).)</span><span class="sxs-lookup"><span data-stu-id="8adf4-127">Network cards (number in each computer, 100 megabits (Mbps) versus 1 Gigabit (1 Gbps).)</span></span>  
+-   <span data-ttu-id="4d849-127">ネットワーク カード (1 ギガビットと 100 メガビット (Mbps) は、各コンピューターの数 (1 Gbps).)</span><span class="sxs-lookup"><span data-stu-id="4d849-127">Network cards (number in each computer, 100 megabits (Mbps) versus 1 Gigabit (1 Gbps).)</span></span>  
   
--   <span data-ttu-id="8adf4-128">ファイアウォールは、ソリューションでどのように展開されますか。</span><span class="sxs-lookup"><span data-stu-id="8adf4-128">How will firewalls be deployed in the solution?</span></span>  
+-   <span data-ttu-id="4d849-128">ファイアウォールは、ソリューションでどのように展開されますか。</span><span class="sxs-lookup"><span data-stu-id="4d849-128">How will firewalls be deployed in the solution?</span></span>  
   
--   <span data-ttu-id="8adf4-129">ネットワーク負荷分散ハードウェアが使用されますか。</span><span class="sxs-lookup"><span data-stu-id="8adf4-129">Will Network Load Balancing hardware be used?</span></span>  
+-   <span data-ttu-id="4d849-129">ネットワーク負荷分散ハードウェアが使用されますか。</span><span class="sxs-lookup"><span data-stu-id="4d849-129">Will Network Load Balancing hardware be used?</span></span>  
   
--   <span data-ttu-id="8adf4-130">クラスター化する特定のコンピューターか?</span><span class="sxs-lookup"><span data-stu-id="8adf4-130">Are specific computers to be clustered?</span></span>  
+-   <span data-ttu-id="4d849-130">クラスター化する特定のコンピューターか?</span><span class="sxs-lookup"><span data-stu-id="4d849-130">Are specific computers to be clustered?</span></span>  
   
--   <span data-ttu-id="8adf4-131">Microsoft HYPER-V Server またはその他の仮想化製品に関連する仮想環境を使用するでしょうか。</span><span class="sxs-lookup"><span data-stu-id="8adf4-131">Would you be using a virtual environment involving Microsoft Hyper-V Server or any other virtualization products?</span></span>  
+-   <span data-ttu-id="4d849-131">Microsoft HYPER-V Server またはその他の仮想化製品に関連する仮想環境を使用するでしょうか。</span><span class="sxs-lookup"><span data-stu-id="4d849-131">Would you be using a virtual environment involving Microsoft Hyper-V Server or any other virtualization products?</span></span>  
   
-## <a name="planning-the-solution"></a><span data-ttu-id="8adf4-132">ソリューションの計画</span><span class="sxs-lookup"><span data-stu-id="8adf4-132">Planning the Solution</span></span>  
+## <a name="planning-the-solution"></a><span data-ttu-id="4d849-132">ソリューションの計画</span><span class="sxs-lookup"><span data-stu-id="4d849-132">Planning the Solution</span></span>  
   
-### <a name="solution-milestones-timeline"></a><span data-ttu-id="8adf4-133">ソリューションのマイルス トーンのタイムライン</span><span class="sxs-lookup"><span data-stu-id="8adf4-133">Solution Milestones Timeline</span></span>  
- <span data-ttu-id="8adf4-134">BizTalk ソリューションの特定の側面を完了するためのマイルス トーンでは、スケジュールを作成します。</span><span class="sxs-lookup"><span data-stu-id="8adf4-134">Create a schedule with milestones for completing specific aspects of your BizTalk solution.</span></span> <span data-ttu-id="8adf4-135">特定のマイルス トーンを設定するソリューションとなる可能性が高く、適切なタイミングで完了します。</span><span class="sxs-lookup"><span data-stu-id="8adf4-135">Setting specific milestones will increase the likelihood that the solution will be completed in a timely manner.</span></span>  
+### <a name="solution-milestones-timeline"></a><span data-ttu-id="4d849-133">ソリューションのマイルス トーンのタイムライン</span><span class="sxs-lookup"><span data-stu-id="4d849-133">Solution Milestones Timeline</span></span>  
+ <span data-ttu-id="4d849-134">BizTalk ソリューションの特定の側面を完了するためのマイルス トーンでは、スケジュールを作成します。</span><span class="sxs-lookup"><span data-stu-id="4d849-134">Create a schedule with milestones for completing specific aspects of your BizTalk solution.</span></span> <span data-ttu-id="4d849-135">特定のマイルス トーンを設定するソリューションとなる可能性が高く、適切なタイミングで完了します。</span><span class="sxs-lookup"><span data-stu-id="4d849-135">Setting specific milestones will increase the likelihood that the solution will be completed in a timely manner.</span></span>  
   
-### <a name="non-microsoft-software-considerations"></a><span data-ttu-id="8adf4-136">Microsoft 以外のソフトウェアの考慮事項</span><span class="sxs-lookup"><span data-stu-id="8adf4-136">Non-Microsoft Software Considerations</span></span>  
- <span data-ttu-id="8adf4-137">Microsoft 以外のソフトウェアは、ソリューションで使用される場合は、次を検討します。</span><span class="sxs-lookup"><span data-stu-id="8adf4-137">Consider the following when non-Microsoft software will be used with the solution:</span></span>  
+### <a name="non-microsoft-software-considerations"></a><span data-ttu-id="4d849-136">Microsoft 以外のソフトウェアの考慮事項</span><span class="sxs-lookup"><span data-stu-id="4d849-136">Non-Microsoft Software Considerations</span></span>  
+ <span data-ttu-id="4d849-137">Microsoft 以外のソフトウェアは、ソリューションで使用される場合は、次を検討します。</span><span class="sxs-lookup"><span data-stu-id="4d849-137">Consider the following when non-Microsoft software will be used with the solution:</span></span>  
   
--   <span data-ttu-id="8adf4-138">ソフトウェアまたはハードウェアの必要のある判断を取得します。</span><span class="sxs-lookup"><span data-stu-id="8adf4-138">Determine how the software or hardware required be obtained.</span></span>  
+-   <span data-ttu-id="4d849-138">ソフトウェアまたはハードウェアの必要のある判断を取得します。</span><span class="sxs-lookup"><span data-stu-id="4d849-138">Determine how the software or hardware required be obtained.</span></span>  
   
--   <span data-ttu-id="8adf4-139">容量の計画し、する Microsoft 以外のソフトウェアを確実にサイズ変更が、ソリューション内のボトルネックになりません。</span><span class="sxs-lookup"><span data-stu-id="8adf4-139">Plan for capacity and sizing to ensure that non-Microsoft software does not become a bottleneck in your solution.</span></span>  
+-   <span data-ttu-id="4d849-139">容量の計画し、する Microsoft 以外のソフトウェアを確実にサイズ変更が、ソリューション内のボトルネックになりません。</span><span class="sxs-lookup"><span data-stu-id="4d849-139">Plan for capacity and sizing to ensure that non-Microsoft software does not become a bottleneck in your solution.</span></span>  
   
--   <span data-ttu-id="8adf4-140">必要な Microsoft 以外のソフトウェアをインストールするための行動計画を決定します。</span><span class="sxs-lookup"><span data-stu-id="8adf4-140">Determine a plan of action for installing required non-Microsoft software.</span></span>  
+-   <span data-ttu-id="4d849-140">必要な Microsoft 以外のソフトウェアをインストールするための行動計画を決定します。</span><span class="sxs-lookup"><span data-stu-id="4d849-140">Determine a plan of action for installing required non-Microsoft software.</span></span>  
   
--   <span data-ttu-id="8adf4-141">アクションを構成し、必要な Microsoft 以外のソフトウェアを最適化するための計画を作成します。</span><span class="sxs-lookup"><span data-stu-id="8adf4-141">Create a plan of action for configuring and optimizing required non-Microsoft software.</span></span>  
+-   <span data-ttu-id="4d849-141">アクションを構成し、必要な Microsoft 以外のソフトウェアを最適化するための計画を作成します。</span><span class="sxs-lookup"><span data-stu-id="4d849-141">Create a plan of action for configuring and optimizing required non-Microsoft software.</span></span>  
   
-## <a name="preparing-for-the-solution"></a><span data-ttu-id="8adf4-142">ソリューションの準備</span><span class="sxs-lookup"><span data-stu-id="8adf4-142">Preparing for the Solution</span></span>  
- <span data-ttu-id="8adf4-143">準備フェーズでは、次の要素を含めます。</span><span class="sxs-lookup"><span data-stu-id="8adf4-143">Include the following elements in your preparation phase:</span></span>  
+## <a name="preparing-for-the-solution"></a><span data-ttu-id="4d849-142">ソリューションの準備</span><span class="sxs-lookup"><span data-stu-id="4d849-142">Preparing for the Solution</span></span>  
+ <span data-ttu-id="4d849-143">準備フェーズでは、次の要素を含めます。</span><span class="sxs-lookup"><span data-stu-id="4d849-143">Include the following elements in your preparation phase:</span></span>  
   
-### <a name="detailed-design-of-the-solution-platform"></a><span data-ttu-id="8adf4-144">ソリューション プラットフォームの詳細な設計</span><span class="sxs-lookup"><span data-stu-id="8adf4-144">Detailed Design of the Solution Platform</span></span>  
- <span data-ttu-id="8adf4-145">詳細なソリューションの設計では、通信を容易を俊敏性とすべてのアクティビティの有効性を改善する前提条件を回避できます。</span><span class="sxs-lookup"><span data-stu-id="8adf4-145">A detailed solution design facilitates communications and avoids assumptions, which will improve the agility and effectiveness of all activities.</span></span> <span data-ttu-id="8adf4-146">完全に、次の要素を文書化する必要があります。</span><span class="sxs-lookup"><span data-stu-id="8adf4-146">You should fully document the following elements:</span></span>  
+### <a name="detailed-design-of-the-solution-platform"></a><span data-ttu-id="4d849-144">ソリューション プラットフォームの詳細な設計</span><span class="sxs-lookup"><span data-stu-id="4d849-144">Detailed Design of the Solution Platform</span></span>  
+ <span data-ttu-id="4d849-145">詳細なソリューションの設計では、通信を容易を俊敏性とすべてのアクティビティの有効性を改善する前提条件を回避できます。</span><span class="sxs-lookup"><span data-stu-id="4d849-145">A detailed solution design facilitates communications and avoids assumptions, which will improve the agility and effectiveness of all activities.</span></span> <span data-ttu-id="4d849-146">完全に、次の要素を文書化する必要があります。</span><span class="sxs-lookup"><span data-stu-id="4d849-146">You should fully document the following elements:</span></span>  
   
-- <span data-ttu-id="8adf4-147">BizTalk Server データベースとコンピューター間での分散方法。</span><span class="sxs-lookup"><span data-stu-id="8adf4-147">BizTalk Server databases and how they will be distributed across computers.</span></span>  
+- <span data-ttu-id="4d849-147">BizTalk Server データベースとコンピューター間での分散方法。</span><span class="sxs-lookup"><span data-stu-id="4d849-147">BizTalk Server databases and how they will be distributed across computers.</span></span>  
   
-- <span data-ttu-id="8adf4-148">BizTalk ホストの設計と各ホストとそれらのインスタンスの説明。</span><span class="sxs-lookup"><span data-stu-id="8adf4-148">BizTalk Host design and descriptions of each host and their instances.</span></span>  
+- <span data-ttu-id="4d849-148">BizTalk ホストの設計と各ホストとそれらのインスタンスの説明。</span><span class="sxs-lookup"><span data-stu-id="4d849-148">BizTalk Host design and descriptions of each host and their instances.</span></span>  
   
-- <span data-ttu-id="8adf4-149">各オーケストレーションの説明です。</span><span class="sxs-lookup"><span data-stu-id="8adf4-149">Description of each orchestration.</span></span>  
+- <span data-ttu-id="4d849-149">各オーケストレーションの説明です。</span><span class="sxs-lookup"><span data-stu-id="4d849-149">Description of each orchestration.</span></span>  
   
-- <span data-ttu-id="8adf4-150">各パイプラインの説明です。</span><span class="sxs-lookup"><span data-stu-id="8adf4-150">Description of each pipeline.</span></span>  
+- <span data-ttu-id="4d849-150">各パイプラインの説明です。</span><span class="sxs-lookup"><span data-stu-id="4d849-150">Description of each pipeline.</span></span>  
   
-- <span data-ttu-id="8adf4-151">.NET アセンブリなどのカスタム コンポーネントと COM + コンポーネントの説明。</span><span class="sxs-lookup"><span data-stu-id="8adf4-151">Description of custom components such as .NET assemblies and COM+ components.</span></span>  
+- <span data-ttu-id="4d849-151">.NET アセンブリなどのカスタム コンポーネントと COM + コンポーネントの説明。</span><span class="sxs-lookup"><span data-stu-id="4d849-151">Description of custom components such as .NET assemblies and COM+ components.</span></span>  
   
-  <span data-ttu-id="8adf4-152">**メッセージ フロー図**</span><span class="sxs-lookup"><span data-stu-id="8adf4-152">**Message Flow Diagrams**</span></span>  
+  <span data-ttu-id="4d849-152">**メッセージ フロー図**</span><span class="sxs-lookup"><span data-stu-id="4d849-152">**Message Flow Diagrams**</span></span>  
   
-  <span data-ttu-id="8adf4-153">混乱や false にメッセージを処理中に発生することは想定されて内容に関する前提条件を回避するための詳細なメッセージ フロー ダイアグラムを作成します。</span><span class="sxs-lookup"><span data-stu-id="8adf4-153">Create detailed message flow diagrams to help avoid any confusion or false assumptions regarding what is supposed to be happening to messages during processing.</span></span> <span data-ttu-id="8adf4-154">メッセージのフロー ダイアグラムを作成するときに、次の詳細を検討してください。</span><span class="sxs-lookup"><span data-stu-id="8adf4-154">The following details should be considered when creating the message flow diagrams:</span></span>  
+  <span data-ttu-id="4d849-153">混乱や false にメッセージを処理中に発生することは想定されて内容に関する前提条件を回避するための詳細なメッセージ フロー ダイアグラムを作成します。</span><span class="sxs-lookup"><span data-stu-id="4d849-153">Create detailed message flow diagrams to help avoid any confusion or false assumptions regarding what is supposed to be happening to messages during processing.</span></span> <span data-ttu-id="4d849-154">メッセージのフロー ダイアグラムを作成するときに、次の詳細を検討してください。</span><span class="sxs-lookup"><span data-stu-id="4d849-154">The following details should be considered when creating the message flow diagrams:</span></span>  
   
-- <span data-ttu-id="8adf4-155">結果として得られるすべてのメッセージが送信され、すべての関連する処理が完了するまで、受信場所に到着した時点からのメッセージの種類ごとのライフ サイクルについて説明します。</span><span class="sxs-lookup"><span data-stu-id="8adf4-155">Describe the lifecycle of each type of message from the time it arrives at a receive location until all resulting messages are sent and all related processing is completed.</span></span>  
+- <span data-ttu-id="4d849-155">結果として得られるすべてのメッセージが送信され、すべての関連する処理が完了するまで、受信場所に到着した時点からのメッセージの種類ごとのライフ サイクルについて説明します。</span><span class="sxs-lookup"><span data-stu-id="4d849-155">Describe the lifecycle of each type of message from the time it arrives at a receive location until all resulting messages are sent and all related processing is completed.</span></span>  
   
-- <span data-ttu-id="8adf4-156">処理のエラー条件を変更する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="8adf4-156">Describe how processing changes for error conditions.</span></span>  
+- <span data-ttu-id="4d849-156">処理のエラー条件を変更する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="4d849-156">Describe how processing changes for error conditions.</span></span>  
   
-- <span data-ttu-id="8adf4-157">相関関係、配信通知、および受信確認の詳細が含まれます。</span><span class="sxs-lookup"><span data-stu-id="8adf4-157">Include details about correlation, delivery notifications, and acknowledgements.</span></span>  
+- <span data-ttu-id="4d849-157">相関関係、配信通知、および受信確認の詳細が含まれます。</span><span class="sxs-lookup"><span data-stu-id="4d849-157">Include details about correlation, delivery notifications, and acknowledgements.</span></span>  
   
-- <span data-ttu-id="8adf4-158">待機時間とスループットに関するパフォーマンス要件の情報が含まれます。</span><span class="sxs-lookup"><span data-stu-id="8adf4-158">Include performance requirement information regarding latency and throughput.</span></span>  
+- <span data-ttu-id="4d849-158">待機時間とスループットに関するパフォーマンス要件の情報が含まれます。</span><span class="sxs-lookup"><span data-stu-id="4d849-158">Include performance requirement information regarding latency and throughput.</span></span>  
   
-  <span data-ttu-id="8adf4-159">**Microsoft 以外のソフトウェアの詳細**</span><span class="sxs-lookup"><span data-stu-id="8adf4-159">**Non-Microsoft Software Details**</span></span>  
+  <span data-ttu-id="4d849-159">**Microsoft 以外のソフトウェアの詳細**</span><span class="sxs-lookup"><span data-stu-id="4d849-159">**Non-Microsoft Software Details**</span></span>  
   
-  <span data-ttu-id="8adf4-160">詳細なソリューション設計の一部として使用されるすべての Microsoft 以外のソフトウェアを完全に記述する必要があります。</span><span class="sxs-lookup"><span data-stu-id="8adf4-160">All non-Microsoft software that is used should be fully documented as part of the detailed solution design.</span></span>  
+  <span data-ttu-id="4d849-160">詳細なソリューション設計の一部として使用されるすべての Microsoft 以外のソフトウェアを完全に記述する必要があります。</span><span class="sxs-lookup"><span data-stu-id="4d849-160">All non-Microsoft software that is used should be fully documented as part of the detailed solution design.</span></span>  
   
-  <span data-ttu-id="8adf4-161">**詳細なハードウェア スタック**</span><span class="sxs-lookup"><span data-stu-id="8adf4-161">**Detailed Hardware Stack**</span></span>  
+  <span data-ttu-id="4d849-161">**詳細なハードウェア スタック**</span><span class="sxs-lookup"><span data-stu-id="4d849-161">**Detailed Hardware Stack**</span></span>  
   
-  <span data-ttu-id="8adf4-162">以前に作成した高レベルのハードウェア図上の構築、次のハードウェア情報が完全に記述します。</span><span class="sxs-lookup"><span data-stu-id="8adf4-162">Building on the previously created high level hardware diagram, the following hardware information should be fully documented:</span></span>  
+  <span data-ttu-id="4d849-162">以前に作成した高レベルのハードウェア図上の構築、次のハードウェア情報が完全に記述します。</span><span class="sxs-lookup"><span data-stu-id="4d849-162">Building on the previously created high level hardware diagram, the following hardware information should be fully documented:</span></span>  
   
-- <span data-ttu-id="8adf4-163">[プロセッサ]</span><span class="sxs-lookup"><span data-stu-id="8adf4-163">Processors</span></span>  
+- <span data-ttu-id="4d849-163">[プロセッサ]</span><span class="sxs-lookup"><span data-stu-id="4d849-163">Processors</span></span>  
   
-  -   <span data-ttu-id="8adf4-164">型</span><span class="sxs-lookup"><span data-stu-id="8adf4-164">Type</span></span>  
+  -   <span data-ttu-id="4d849-164">型</span><span class="sxs-lookup"><span data-stu-id="4d849-164">Type</span></span>  
   
-  -   <span data-ttu-id="8adf4-165">速度</span><span class="sxs-lookup"><span data-stu-id="8adf4-165">Speed</span></span>  
+  -   <span data-ttu-id="4d849-165">速度</span><span class="sxs-lookup"><span data-stu-id="4d849-165">Speed</span></span>  
   
-  -   <span data-ttu-id="8adf4-166">コアの数</span><span class="sxs-lookup"><span data-stu-id="8adf4-166">Number of cores</span></span>  
+  -   <span data-ttu-id="4d849-166">コアの数</span><span class="sxs-lookup"><span data-stu-id="4d849-166">Number of cores</span></span>  
   
-  -   <span data-ttu-id="8adf4-167">ハイパー スレッド</span><span class="sxs-lookup"><span data-stu-id="8adf4-167">Hyperthreading</span></span>  
+  -   <span data-ttu-id="4d849-167">ハイパー スレッド</span><span class="sxs-lookup"><span data-stu-id="4d849-167">Hyperthreading</span></span>  
   
-- <span data-ttu-id="8adf4-168">Memory</span><span class="sxs-lookup"><span data-stu-id="8adf4-168">Memory</span></span>  
+- <span data-ttu-id="4d849-168">Memory</span><span class="sxs-lookup"><span data-stu-id="4d849-168">Memory</span></span>  
   
-  -   <span data-ttu-id="8adf4-169">Amount</span><span class="sxs-lookup"><span data-stu-id="8adf4-169">Amount</span></span>  
+  -   <span data-ttu-id="4d849-169">Amount</span><span class="sxs-lookup"><span data-stu-id="4d849-169">Amount</span></span>  
   
-  -   <span data-ttu-id="8adf4-170">速度</span><span class="sxs-lookup"><span data-stu-id="8adf4-170">Speed</span></span>  
+  -   <span data-ttu-id="4d849-170">速度</span><span class="sxs-lookup"><span data-stu-id="4d849-170">Speed</span></span>  
   
-  -   <span data-ttu-id="8adf4-171">パリティ</span><span class="sxs-lookup"><span data-stu-id="8adf4-171">Parity</span></span>  
+  -   <span data-ttu-id="4d849-171">パリティ</span><span class="sxs-lookup"><span data-stu-id="4d849-171">Parity</span></span>  
   
-- <span data-ttu-id="8adf4-172">ネットワーク</span><span class="sxs-lookup"><span data-stu-id="8adf4-172">Network</span></span>  
+- <span data-ttu-id="4d849-172">ネットワーク</span><span class="sxs-lookup"><span data-stu-id="4d849-172">Network</span></span>  
   
-  -   <span data-ttu-id="8adf4-173">ネットワーク インターフェイス カード (Nic) の数</span><span class="sxs-lookup"><span data-stu-id="8adf4-173">Number of network interface cards (NICs)</span></span>  
+  -   <span data-ttu-id="4d849-173">ネットワーク インターフェイス カード (Nic) の数</span><span class="sxs-lookup"><span data-stu-id="4d849-173">Number of network interface cards (NICs)</span></span>  
   
-  -   <span data-ttu-id="8adf4-174">ネットワークの速度</span><span class="sxs-lookup"><span data-stu-id="8adf4-174">Speed of network</span></span>  
+  -   <span data-ttu-id="4d849-174">ネットワークの速度</span><span class="sxs-lookup"><span data-stu-id="4d849-174">Speed of network</span></span>  
   
-- <span data-ttu-id="8adf4-175">SAN</span><span class="sxs-lookup"><span data-stu-id="8adf4-175">SAN</span></span>  
+- <span data-ttu-id="4d849-175">SAN</span><span class="sxs-lookup"><span data-stu-id="4d849-175">SAN</span></span>  
   
-  -   <span data-ttu-id="8adf4-176">各コンピューターでの SAN のカードの数</span><span class="sxs-lookup"><span data-stu-id="8adf4-176">Number of SAN cards in each computer</span></span>  
+  -   <span data-ttu-id="4d849-176">各コンピューターでの SAN のカードの数</span><span class="sxs-lookup"><span data-stu-id="4d849-176">Number of SAN cards in each computer</span></span>  
   
-  -   <span data-ttu-id="8adf4-177">各コンピューターと各 LUN の目的の論理ユニット番号 (Lun) の数</span><span class="sxs-lookup"><span data-stu-id="8adf4-177">Number of logical unit numbers (LUNs) for each computer and purpose for each LUN</span></span>  
+  -   <span data-ttu-id="4d849-177">各コンピューターと各 LUN の目的の論理ユニット番号 (Lun) の数</span><span class="sxs-lookup"><span data-stu-id="4d849-177">Number of logical unit numbers (LUNs) for each computer and purpose for each LUN</span></span>  
   
-  -   <span data-ttu-id="8adf4-178">速度の記憶域ネットワーク (SAN) カード</span><span class="sxs-lookup"><span data-stu-id="8adf4-178">Speed of storage area network (SAN) Cards</span></span>  
+  -   <span data-ttu-id="4d849-178">速度の記憶域ネットワーク (SAN) カード</span><span class="sxs-lookup"><span data-stu-id="4d849-178">Speed of storage area network (SAN) Cards</span></span>  
   
-  -   <span data-ttu-id="8adf4-179">SAN カード構成の詳細</span><span class="sxs-lookup"><span data-stu-id="8adf4-179">SAN card configuration details</span></span>  
+  -   <span data-ttu-id="4d849-179">SAN カード構成の詳細</span><span class="sxs-lookup"><span data-stu-id="4d849-179">SAN card configuration details</span></span>  
   
-  -   <span data-ttu-id="8adf4-180">SAN ディスク割り当て、書式設定、およびパーティション分割</span><span class="sxs-lookup"><span data-stu-id="8adf4-180">SAN disk allocation, formatting, and partitioning</span></span>  
+  -   <span data-ttu-id="4d849-180">SAN ディスク割り当て、書式設定、およびパーティション分割</span><span class="sxs-lookup"><span data-stu-id="4d849-180">SAN disk allocation, formatting, and partitioning</span></span>  
   
-- <span data-ttu-id="8adf4-181">[ディスク]</span><span class="sxs-lookup"><span data-stu-id="8adf4-181">Disk</span></span>  
+- <span data-ttu-id="4d849-181">Disk</span><span class="sxs-lookup"><span data-stu-id="4d849-181">Disk</span></span>  
   
-  -   <span data-ttu-id="8adf4-182">各コンピューターのローカル ディスクの詳細</span><span class="sxs-lookup"><span data-stu-id="8adf4-182">Local disk details for each computer</span></span>  
+  -   <span data-ttu-id="4d849-182">各コンピューターのローカル ディスクの詳細</span><span class="sxs-lookup"><span data-stu-id="4d849-182">Local disk details for each computer</span></span>  
   
-  -   <span data-ttu-id="8adf4-183">ローカル ディスクとして使用される書式設定</span><span class="sxs-lookup"><span data-stu-id="8adf4-183">Formatting used for local disks</span></span>  
+  -   <span data-ttu-id="4d849-183">ローカル ディスクとして使用される書式設定</span><span class="sxs-lookup"><span data-stu-id="4d849-183">Formatting used for local disks</span></span>  
   
-  -   <span data-ttu-id="8adf4-184">ローカル ディスクのパーティション分割の詳細</span><span class="sxs-lookup"><span data-stu-id="8adf4-184">Partitioning details for local disks</span></span>  
+  -   <span data-ttu-id="4d849-184">ローカル ディスクのパーティション分割の詳細</span><span class="sxs-lookup"><span data-stu-id="4d849-184">Partitioning details for local disks</span></span>  
   
-- <span data-ttu-id="8adf4-185">Cache</span><span class="sxs-lookup"><span data-stu-id="8adf4-185">Cache</span></span>  
+- <span data-ttu-id="4d849-185">Cache</span><span class="sxs-lookup"><span data-stu-id="4d849-185">Cache</span></span>  
   
-  -   <span data-ttu-id="8adf4-186">L2 キャッシュの量</span><span class="sxs-lookup"><span data-stu-id="8adf4-186">L2 Cache amount</span></span>  
+  -   <span data-ttu-id="4d849-186">L2 キャッシュの量</span><span class="sxs-lookup"><span data-stu-id="4d849-186">L2 Cache amount</span></span>  
   
-  -   <span data-ttu-id="8adf4-187">L3 キャッシュ容量</span><span class="sxs-lookup"><span data-stu-id="8adf4-187">L3 Cache amount</span></span>  
+  -   <span data-ttu-id="4d849-187">L3 キャッシュ容量</span><span class="sxs-lookup"><span data-stu-id="4d849-187">L3 Cache amount</span></span>  
   
-  <span data-ttu-id="8adf4-188">**詳細なソフトウェア スタック**</span><span class="sxs-lookup"><span data-stu-id="8adf4-188">**Detailed Software Stack**</span></span>  
+  <span data-ttu-id="4d849-188">**詳細なソフトウェア スタック**</span><span class="sxs-lookup"><span data-stu-id="4d849-188">**Detailed Software Stack**</span></span>  
   
-  <span data-ttu-id="8adf4-189">次のソフトウェアの情報を文書化する必要があります。</span><span class="sxs-lookup"><span data-stu-id="8adf4-189">The following software information should be documented:</span></span>  
+  <span data-ttu-id="4d849-189">次のソフトウェアの情報を文書化する必要があります。</span><span class="sxs-lookup"><span data-stu-id="4d849-189">The following software information should be documented:</span></span>  
   
-- <span data-ttu-id="8adf4-190">特定のオペレーティング システムのバージョン、エディション、およびアーキテクチャ</span><span class="sxs-lookup"><span data-stu-id="8adf4-190">Specific operating system versions, editions, and architecture</span></span>  
+- <span data-ttu-id="4d849-190">特定のオペレーティング システムのバージョン、エディション、およびアーキテクチャ</span><span class="sxs-lookup"><span data-stu-id="4d849-190">Specific operating system versions, editions, and architecture</span></span>  
   
-- <span data-ttu-id="8adf4-191">特定のオペレーティング システムの機能</span><span class="sxs-lookup"><span data-stu-id="8adf4-191">Specific operating system features</span></span>  
+- <span data-ttu-id="4d849-191">特定のオペレーティング システムの機能</span><span class="sxs-lookup"><span data-stu-id="4d849-191">Specific operating system features</span></span>  
   
-- <span data-ttu-id="8adf4-192">各コンピューターにインストールされている特定のソフトウェア</span><span class="sxs-lookup"><span data-stu-id="8adf4-192">Specific software installed on each computer</span></span>  
+- <span data-ttu-id="4d849-192">各コンピューターにインストールされている特定のソフトウェア</span><span class="sxs-lookup"><span data-stu-id="4d849-192">Specific software installed on each computer</span></span>  
   
-- <span data-ttu-id="8adf4-193">特定のドライバー</span><span class="sxs-lookup"><span data-stu-id="8adf4-193">Specific drivers</span></span>  
+- <span data-ttu-id="4d849-193">特定のドライバー</span><span class="sxs-lookup"><span data-stu-id="4d849-193">Specific drivers</span></span>  
   
-- <span data-ttu-id="8adf4-194">サービス パックとその他の更新</span><span class="sxs-lookup"><span data-stu-id="8adf4-194">Service Packs and other updates</span></span>  
+- <span data-ttu-id="4d849-194">サービス パックとその他の更新</span><span class="sxs-lookup"><span data-stu-id="4d849-194">Service Packs and other updates</span></span>  
   
-- <span data-ttu-id="8adf4-195">既定値からずれている場合に使用されるすべてのソフトウェアとオペレーティング システムの機能の構成値</span><span class="sxs-lookup"><span data-stu-id="8adf4-195">Configuration values for all software and operating system features used if they vary from default values</span></span>  
+- <span data-ttu-id="4d849-195">既定値からずれている場合に使用されるすべてのソフトウェアとオペレーティング システムの機能の構成値</span><span class="sxs-lookup"><span data-stu-id="4d849-195">Configuration values for all software and operating system features used if they vary from default values</span></span>  
   
-## <a name="building-out-the-environment-for-the-solution"></a><span data-ttu-id="8adf4-196">ソリューションの環境の構築</span><span class="sxs-lookup"><span data-stu-id="8adf4-196">Building Out the Environment for the Solution</span></span>  
- <span data-ttu-id="8adf4-197">インストール手順の詳細な[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]とソフトウェア要件、 [BizTalk Server インストール ガイド](../install-and-config-guides/biztalk-server-what-s-new-installation-configuration-and-upgrade.md)します。</span><span class="sxs-lookup"><span data-stu-id="8adf4-197">Detailed instructions for installing [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] and the software requirements are in the [BizTalk Server Installation Guides](../install-and-config-guides/biztalk-server-what-s-new-installation-configuration-and-upgrade.md).</span></span>
+## <a name="building-out-the-environment-for-the-solution"></a><span data-ttu-id="4d849-196">ソリューションの環境の構築</span><span class="sxs-lookup"><span data-stu-id="4d849-196">Building Out the Environment for the Solution</span></span>  
+ <span data-ttu-id="4d849-197">インストール手順の詳細な[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]とソフトウェア要件、 [BizTalk Server インストール ガイド](../install-and-config-guides/biztalk-server-what-s-new-installation-configuration-and-upgrade.md)します。</span><span class="sxs-lookup"><span data-stu-id="4d849-197">Detailed instructions for installing [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] and the software requirements are in the [BizTalk Server Installation Guides](../install-and-config-guides/biztalk-server-what-s-new-installation-configuration-and-upgrade.md).</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="8adf4-198">参照</span><span class="sxs-lookup"><span data-stu-id="8adf4-198">See Also</span></span>  
- [<span data-ttu-id="8adf4-199">BizTalk Server 層の計画</span><span class="sxs-lookup"><span data-stu-id="8adf4-199">Planning the BizTalk Server Tier</span></span>](../technical-guides/planning-the-biztalk-server-tier.md)
+## <a name="see-also"></a><span data-ttu-id="4d849-198">参照</span><span class="sxs-lookup"><span data-stu-id="4d849-198">See Also</span></span>  
+ [<span data-ttu-id="4d849-199">BizTalk Server 層の計画</span><span class="sxs-lookup"><span data-stu-id="4d849-199">Planning the BizTalk Server Tier</span></span>](../technical-guides/planning-the-biztalk-server-tier.md)
