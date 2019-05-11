@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1c14d510f0d89a899aebf3feb308561aba2549df
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5ee93a214730303b4ce510d0da8d4d08e2073990
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36979787"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65390580"
 ---
 # <a name="configuring-validation-as2"></a>検証の構成 (AS2)
 パートナー アグリーメントで、受信 AS2 メッセージを検証する検証設定を指定する必要があります。  
@@ -36,7 +36,7 @@ ms.locfileid: "36979787"
   
 2. 一方向アグリーメント タブで、次のようにクリックします。**検証**です。  
   
-3. 選択、**検証および MDN に対してメッセージ ヘッダーの代わりにアグリーメントの設定を使用して**する場合は、チェック ボックス[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]デジタル署名、圧縮、および暗号化の設定に基づいて、受信メッセージの検証アグリーメント。 このチェック ボックスをオフにすると、この処理を決定するために、アグリーメントのプロパティではなく、メッセージの AS2 ヘッダーのプロパティに対してメッセージが検証されます。 AS2 ヘッダーの一覧は、[AS2 メッセージ](../core/as2-messages.md)を参照してください。  
+3. 選択、**検証および MDN に対してメッセージ ヘッダーの代わりにアグリーメントの設定を使用して**する場合は、チェック ボックス[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]デジタル署名、圧縮、および暗号化の設定に基づいて、受信メッセージの検証アグリーメント。 このチェック ボックスをオフにすると、この処理を決定するために、アグリーメントのプロパティではなく、メッセージの AS2 ヘッダーのプロパティに対してメッセージが検証されます。 AS2 ヘッダーの一覧は、次を参照してください。 [AS2 メッセージ](../core/as2-messages.md)します。  
   
 4. 選択、**メッセージに署名する必要があります**受信メッセージが署名されていることを確認する チェック ボックス。  
   

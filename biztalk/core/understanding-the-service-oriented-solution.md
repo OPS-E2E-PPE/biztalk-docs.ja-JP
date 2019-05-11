@@ -17,12 +17,12 @@ caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1d3595d664e53a5abc20a69d990391e3c273ee3f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a7114ab32084abd45eb6169e1bb4e54bcf3b5f25
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37010347"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65292709"
 ---
 # <a name="understanding-the-service-oriented-solution"></a>サービス指向ソリューション
 サービス指向ソリューションは、サービスとして設計された預金残高を記録するアプリケーションです。 このアプリケーションは、サービスとして公開されている 3 つのバックエンド アプリケーションを使用して、預金残高の必要な情報を取得します。  
@@ -70,7 +70,7 @@ ms.locfileid: "37010347"
 ## <a name="business-requirements"></a>ビジネス要件  
  クレジット記録アプリケーションは、顧客の要求にリアルタイムで応答し、要求をすばやく処理するため、短い待機時間を設定する必要があります。 また、多くの同時要求にも対応する必要があります。 このソリューションでは機密情報とパブリック インターフェイスを使用するため、セキュリティが大きな課題です。 最後に、信頼性の高いサービスにする必要があります。  
   
- ソリューションがこれらの要件を満たす方法については、[サービス指向ソリューションの開発](../core/developing-a-service-oriented-solution.md)を参照してください。  
+ ソリューションがこれらの要件を満たす方法については、次を参照してください。[サービス指向ソリューションの開発](../core/developing-a-service-oriented-solution.md)します。  
   
 ## <a name="performance-characteristics"></a>パフォーマンスの特性  
  ビジネス要件を満たすには、次のパフォーマンス特性が、シナリオには。  
@@ -97,7 +97,7 @@ ms.locfileid: "37010347"
   
 - インライン バージョンでは、バックエンド システムと直接通信するインライン コードにアダプタを置き換えます。 このソリューションのインライン バージョンは、最も短い待機時間で最も高いスループットを実現します。  
   
-  この展開ガイドでは、Pending Transactions システムに HIS を使用して接続する各バージョンのシミュレート方法と、このソリューションの 3 つのすべてのバージョンを作成および展開する方法について説明します。 構築とソリューションのデプロイについては、[サービス指向ソリューションを展開する](../core/deploying-the-service-oriented-solution.md)を参照してください。  
+  この展開ガイドでは、Pending Transactions システムに HIS を使用して接続する各バージョンのシミュレート方法と、このソリューションの 3 つのすべてのバージョンを作成および展開する方法について説明します。 構築とソリューションのデプロイについては、次を参照してください。[サービス指向ソリューションを展開する](../core/deploying-the-service-oriented-solution.md)します。  
   
 ## <a name="see-also"></a>参照  
  [サービス指向ソリューション](../core/service-oriented-solution.md)

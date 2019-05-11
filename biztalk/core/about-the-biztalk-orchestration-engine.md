@@ -1,5 +1,5 @@
 ---
-title: BizTalk オーケストレーション エンジンに関する |Microsoft ドキュメント
+title: BizTalk オーケストレーション エンジンについて |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,24 +12,24 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0e4e686f066c2fcde921e45d08b60d6386e86640
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c5ba658a0df6675992601ecb55796e606791b6af
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22224450"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65362315"
 ---
 # <a name="about-the-biztalk-orchestration-engine"></a>BizTalk オーケストレーション エンジンについて
-実行時に、BizTalk オーケストレーション エンジンは、BizTalk オーケストレーション デザイナーによって生成された xlang/s ファイルを実行します。 オーケストレーション デザイナーは、ビジネス プロセスを視覚的にデザインするための機能豊富なグラフィカル ツールです。 オーケストレーション デザイナーは、.odx という拡張子を持つ XLANG/s ファイルを生成します。このファイルのヘッダーには追加のビジュアル情報が格納され、本文にはカスタム属性情報が格納されます。  
+実行時に、BizTalk オーケストレーション エンジンは、BizTalk オーケストレーション デザイナーによって生成される xlang/s ファイルを実行します。 オーケストレーション デザイナーは、ビジネス プロセスを視覚的に設計するための豊富なグラフィカル ツールです。 Xlang/s ファイルを .odx という拡張子を持ち、ヘッダー内の視覚エフェクトの追加情報と、本文にカスタム属性情報が含まれますが生成されます。  
   
 > [!NOTE]
->  XLANG/s は、C# の表現機能を備えたメッセージング言語と見なすことができます。  
+>  一部の式の機能を備えたメッセージング言語として XLANG/秒を表示できますC#します。  
   
- オーケストレーション エンジンには、主に次のような機能があります。  
+ オーケストレーション エンジンの主な機能は次のとおりです。  
   
 -   永続化  
   
--   .NET コンポーネントのホスト  
+-   .NET コンポーネントをホストしています。  
   
 -   トランザクション  
   
@@ -41,7 +41,7 @@ ms.locfileid: "22224450"
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [永続化し、オーケストレーション エンジン](../core/persistence-and-the-orchestration-engine.md)  
+-   [永続性とオーケストレーション エンジン](../core/persistence-and-the-orchestration-engine.md)  
   
 -   [オーケストレーションの退避と復元](../core/orchestration-dehydration-and-rehydration.md)  
   
@@ -51,6 +51,6 @@ ms.locfileid: "22224450"
   
 ## <a name="see-also"></a>参照  
  [BizTalk Server アーキテクチャ](../core/biztalk-server-architecture.md)   
- [XLANG の言語](../core/xlang-s-language.md)   
+ [Xlang-s 言語](../core/xlang-s-language.md)   
  [ホスト制限によるリソース使用率の最適化](../core/optimizing-resource-usage-through-host-throttling.md)   
- [BizTalk Server がサイズの大きいメッセージを処理する方法](../core/how-biztalk-server-processes-large-messages.md)
+ [BizTalk Server がサイズの大きなメッセージを処理する方法](../core/how-biztalk-server-processes-large-messages.md)

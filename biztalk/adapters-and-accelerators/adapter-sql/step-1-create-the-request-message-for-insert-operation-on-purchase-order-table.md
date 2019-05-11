@@ -1,5 +1,5 @@
 ---
-title: '手順 1: Purchase_Order テーブルに対する挿入操作の要求メッセージを作成する |Microsoft ドキュメント'
+title: 手順 1:Purchase_Order テーブルに対する挿入操作の要求メッセージを作成する |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,30 +12,30 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 71021bb0a9bbb71f17f0899e625ac184f9087429
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: e0ef474e20b44d319ca4ac1d764dfa46b3062231
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25966008"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65367808"
 ---
-# <a name="step-1-create-the-request-message-for-insert-operation-on-purchaseorder-table"></a>手順 1: Purchase_Order テーブルに対する挿入操作の要求メッセージを作成します。
-![4 のステップ 1](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-1of4.gif "Step_1of4")  
+# <a name="step-1-create-the-request-message-for-insert-operation-on-purchaseorder-table"></a>手順 1:Purchase_Order テーブルに対する挿入操作の要求メッセージを作成します。
+![手順 4 の 1](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-1of4.gif "Step_1of4")  
   
  **所要時間:** 10 分  
   
- **目標:** c# クラス ライブラリ プロジェクトをソリューションでは、追加します。 このライブラリに挿入操作のため、メモリ内の要求メッセージを作成する、 **Purchase_Order**テーブル。 以降のステップでは、オーケストレーションは、テーブルにレコードを挿入する SQL Server にこのメッセージを送信します。  
+ **目標:** この手順で追加、C#をソリューションにクラス ライブラリ プロジェクト。 このライブラリで挿入操作のメモリ内の要求メッセージを作成する、 **Purchase_Order**テーブル。 後の手順では、オーケストレーションは、このメッセージをテーブルにレコードを挿入する SQL Server に送信します。  
   
 ## <a name="prerequisites"></a>前提条件  
- 内の手順を完了する必要があります[レッスン 3: 追加された新しい従業員を選択するストアド プロシージャを実行して](../../adapters-and-accelerators/adapter-sql/lesson-3-execute-a-stored-procedure-to-select-new-employees-added.md)です。  
+ 」の手順を完了する必要があります[レッスン 3。追加された新しい従業員を選択するストアド プロシージャの実行](../../adapters-and-accelerators/adapter-sql/lesson-3-execute-a-stored-procedure-to-select-new-employees-added.md)します。  
   
 ### <a name="to-create-a-request-message-for-insert-operation"></a>挿入操作の要求メッセージを作成するには  
   
-1.  Visual c# クラス ライブラリ プロジェクトをソリューションに追加します。 プロジェクトの名前を入力`UpdatePOMessageCreator`です。  
+1.  ビジュアルの追加C#をソリューションにクラス ライブラリ プロジェクト。 プロジェクトの名前を入力`UpdatePOMessageCreator`します。  
   
-2.  名前を変更**Class1.cs**に**UpdatePOMessageCreator.cs**です。  
+2.  名前を変更**Class1.cs**に**UpdatePOMessageCreator.cs**します。  
   
-3.  .Cs ファイルに次のコードをコピーします。  
+3.  次のコードを .cs ファイルにコピーします。  
   
     ```  
     using System;  
@@ -80,33 +80,33 @@ ms.locfileid: "25966008"
   
     ```  
   
-     このコード スニペットの挿入操作の要求メッセージが必要ですが、 **Purchase_Order** C:\TestLocation\CreatePOMessage に存在するテーブル。 コードでは、要求メッセージを使用して、実行時に、同様の要求メッセージを作成します。  
+     このコード スニペットには、挿入操作の要求メッセージでが必要ですが、 **Purchase_Order** C:\TestLocation\CreatePOMessage に存在するテーブル。 コードでは、要求メッセージを使用して、実行時に同様の要求メッセージを作成します。  
   
-4.  厳密な名前キー ファイルをプロジェクトに追加します。 厳密な名前キー ファイルを作成する方法の詳細については、次を参照してください。 [SQL アダプターを使用して SQL アプリケーションを作成するための必要条件](../../adapters-and-accelerators/adapter-sql/prerequisites-to-create-sql-applications-using-the-sql-adapter.md)です。  
+4.  厳密な名前キー ファイルをプロジェクトに追加します。 厳密な名前キー ファイルを作成する手順については、次を参照してください。 [SQL アダプターを使用して SQL アプリケーションを作成するための必要条件](../../adapters-and-accelerators/adapter-sql/prerequisites-to-create-sql-applications-using-the-sql-adapter.md)します。  
   
-    1.  ソリューション エクスプ ローラーで右クリックし、 **UpdatePOMessageCreator**プロジェクトし、クリックして**プロパティ**です。  
+    1.  ソリューション エクスプ ローラーで右クリックし、 **UpdatePOMessageCreator**プロジェクトし、クリックして**プロパティ**します。  
   
-    2.  **プロパティ**ウィンドウで、をクリックして**署名**です。  
+    2.  **プロパティ**ウィンドウで、をクリックして**署名**します。  
   
     3.  **署名**] タブで、[、**アセンブリに署名**チェック ボックスをオンします。  
   
-    4.  **厳密な名前キー ファイルを選択して**一覧で、クリックして**\<参照\>** です。  
+    4.  **厳密な名前キー ファイルを選択して**一覧で、 **\<参照\>** します。  
   
-    5.  厳密な名前のキー ファイルを作成したフォルダーに移動し、をクリックして**開く**です。  
+    5.  厳密な名前キー ファイルを作成したフォルダーに移動し、をクリックし、**オープン**します。  
   
-    6.  をクリックして**保存**上、**標準**メニュー バーです。 閉じる、**プロパティ**ウィンドウです。  
+    6.  クリックして**保存**上、**標準**メニュー バー。 閉じる、**プロパティ**ウィンドウ。  
   
-5.  プロジェクトをビルドする。 プロジェクトを右クリックし、をクリックして**ビルド**です。  
+5.  プロジェクトをビルドする。 プロジェクトを右クリックし、をクリックして**ビルド**します。  
   
-6.  このプロジェクトの参照をソリューション内の BizTalk プロジェクトに追加します。  
+6.  ソリューション内の BizTalk プロジェクトには、このプロジェクトの参照を追加します。  
   
-    1.  ソリューション エクスプ ローラーで、BizTalk プロジェクトを展開しを右クリックして**参照**、クリックして**参照の追加**です。  
+    1.  ソリューション エクスプ ローラーで、BizTalk プロジェクトを展開し、右クリックして**参照**、 をクリックし、**参照の追加**します。  
   
-    2.  **参照の追加**ダイアログ ボックスで、をクリックして、**プロジェクト**タブです。  
+    2.  **参照の追加**ダイアログ ボックスで、をクリックして、**プロジェクト**タブ。  
   
-    3.  、プロジェクト名の一覧から選択**UpdatePOMessageCreator**、 をクリックして**追加**、をクリックし、 **OK**です。  
+    3.  プロジェクト名のリストから選択**UpdatePOMessageCreator**、 をクリックして**追加**、順にクリックします**OK**します。  
   
-7.  プロジェクトをビルドすると、プロジェクトの \bin\Debug フォルダーの下アセンブリ DLL が作成されます。 この DLL は、グローバル アセンブリ キャッシュ (GAC) に追加する必要があります。  
+7.  プロジェクトをビルドして、プロジェクトの \bin\Debug フォルダーの下に、アセンブリ DLL を作成します。 この DLL は、グローバル アセンブリ キャッシュ (GAC) に追加する必要があります。  
   
     1.  Visual Studio コマンド プロンプトを起動します。  
   
@@ -118,12 +118,12 @@ ms.locfileid: "25966008"
         gacutil /i UpdatePOMessageCreator.dll  
         ```  
   
-## <a name="what-did-i-just-do"></a>でしただけは何ですか。  
- このステップでは、実行時に要求メッセージを作成する UpdatePOMessageCreator クラス ライブラリ プロジェクトを追加しました。 BizTalk プロジェクトでこのプロジェクトへの参照を追加しても、GAC にアセンブリ DLL を追加します。  
+## <a name="what-did-i-just-do"></a>でしただけ何か。  
+ この手順で実行時に要求メッセージを作成する UpdatePOMessageCreator クラス ライブラリ プロジェクトを追加しました。 BizTalk プロジェクトでこのプロジェクトへの参照を追加し、またアセンブリ DLL を GAC に追加します。  
   
 ## <a name="next-steps"></a>次の手順  
- 挿入操作の要求メッセージに UPDATE_EMPLOYEE ストアド プロシージャの応答メッセージをマップする**Purchaser_Order**テーブル。  
+ 上の応答メッセージの挿入操作の要求メッセージに UPDATE_EMPLOYEE ストアド プロシージャをマップする**Purchaser_Order**テーブル。  
   
 ## <a name="see-also"></a>参照  
- [手順 2: マップ操作の要求メッセージを挿入する UPDATE_EMPLOYEE 応答メッセージ](../../adapters-and-accelerators/adapter-sql/step-2-map-update_employee-response-to-insert-operation-request.md)   
- [レッスン 4: 注文テーブルに対して挿入操作を実行する](../../adapters-and-accelerators/adapter-sql/lesson-4-perform-an-insert-operation-on-the-purchase-order-table.md)
+ [手順 2:操作要求メッセージを挿入する UPDATE_EMPLOYEE 応答メッセージをマップします。](../../adapters-and-accelerators/adapter-sql/step-2-map-update_employee-response-to-insert-operation-request.md)   
+ [レッスン 4:注文テーブルに対して挿入操作を実行する](../../adapters-and-accelerators/adapter-sql/lesson-4-perform-an-insert-operation-on-the-purchase-order-table.md)

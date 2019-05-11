@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 00bf78bcc7c6589889691de7ec6c20621f1883ee
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d5a0da1a5b43bfe37e7dd4b72efb75f40216e22a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36985955"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65375540"
 ---
 # <a name="diagnostic-tracing-and-message-logging-in-the-oracle-e-business-suite-adapter"></a>診断トレースと Oracle E-business Suite アダプターでメッセージのログ記録
 診断トレースは、効果的にアダプターを使用するときに発生する可能性がある問題を診断するのに役立ちます。 このトピックでは、次の 3 種類のトレースではサポートに関する情報を提供[!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]:  
@@ -31,7 +31,7 @@ ms.locfileid: "36985955"
 ## <a name="oracle-server-side-tracing-using-a-client-identifier"></a>クライアント識別子を使用して oracle サーバー側トレース  
  Oracle では、Oracle データベースでのクライアント アプリケーションによって実行される操作のサーバー側トレースを実行できます。 クライアント アプリケーションからの要求は、別のデータベース セッションにルーティング可能であるため、要求の送信元のトレースが困難になります。 ただし、Oracle では、クライアント識別子を使用してエンド ツー エンド アプリケーションのトレースが容易になります。 
  
- [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]公開、 `OracleConnectionClientId` Oracle に接続するアダプターによって使用される接続のデザイン時にクライアント識別子を指定できるプロパティをバインドします。 アダプターのクライアント識別子では、Oracle でアダプター クライアントによって実行される操作のトレースを選択的に役立つをフィルター処理して、クライアント識別子に基づく Oracle サーバーのトレースを表示することもできます。 Oracle ではクライアント識別子のトレースを有効にする方法については、[ http://go.microsoft.com/fwlink/p/?LinkId=135746](http://go.microsoft.com/fwlink/p/?LinkId=135746)を参照してください。  
+ [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]公開、 `OracleConnectionClientId` Oracle に接続するアダプターによって使用される接続のデザイン時にクライアント識別子を指定できるプロパティをバインドします。 アダプターのクライアント識別子では、Oracle でアダプター クライアントによって実行される操作のトレースを選択的に役立つをフィルター処理して、クライアント識別子に基づく Oracle サーバーのトレースを表示することもできます。 Oracle ではクライアント識別子のトレースを有効にする方法については、次を参照してください。 [ http://go.microsoft.com/fwlink/p/?LinkId=135746](http://go.microsoft.com/fwlink/p/?LinkId=135746)します。  
   
 ## <a name="wcf-tracing-between-the-adapter-client-and-the-adapter"></a>アダプターのクライアントとアダプター間での WCF トレース  
  アダプター クライアントには、アダプターのクライアントとアダプター間のトレースの問題に WCF トレースが有効にすることができます。 WCF トレースを使用して、WCF サービス モデルを使用して、アダプターのクライアントからは、シリアル化の問題の診断に役立つ入力 XML をトレースします。 WCF トレースは、WCF チャネル モデルまたはアダプター クライアントにアダプターからの出力メッセージには使用されません。 抜粋をそれぞれの構成ファイルに追加することで、BizTalk アプリケーションと WCF サービス モデルのアプリケーションの WCF トレースをアクティブにできます。 また、デザイン時と実行時の両方のトレースを有効にできます。  
@@ -87,7 +87,7 @@ ms.locfileid: "36985955"
  これにより、WCF トレースが C:\log\WCFTrace.svclog を保存します。 [WCF トレース](https://msdn.microsoft.com/library/ms730342.aspx)詳細に説明します。  
   
 > [!IMPORTANT]
->  トレースを有効にする場合に生じるおそれのある機密性の高いビジネス データを公開することの潜在的なセキュリティ脅威を軽減することを確認します。 推奨事項は、、[メッセージとインスタンス データ追跡のベスト プラクティス](../../core/best-practices-for-message-and-instance-data-tracking.md)を参照してください。  
+>  トレースを有効にする場合に生じるおそれのある機密性の高いビジネス データを公開することの潜在的なセキュリティ脅威を軽減することを確認します。 推奨事項は、次を参照してください。、[メッセージとインスタンス データ追跡のベスト プラクティス](../../core/best-practices-for-message-and-instance-data-tracking.md)します。  
   
 ## <a name="wcf-tracing-within-the-adapter"></a>アダプターの WCF トレース  
  アダプターは、さまざまなカテゴリの有用な情報をエラー、警告、および情報メッセージなど、トレース ファイルにログインします。 このような情報は、アダプターの処理フローを理解し、アダプターに関する問題の診断に役立ちます。 アクティブ化することができます、[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]とアダプターの BizTalk アプリケーションと WCF の抜粋をそれぞれの構成ファイルに追加することでモデルのアプリケーションをサービスのトレースします。 また、デザイン時と実行時の両方のトレースを有効にできます。  
@@ -131,7 +131,7 @@ ms.locfileid: "36985955"
  Windows Communication Foundation (WCF) サービス トレース ビューアー ツールを使用するには、トレースを表示します。 [サービス トレース ビューアーを使用して相関トレースの表示とトラブルシューティングの](https://msdn.microsoft.com/library/aa751795.aspx)このツールの詳細が示されます。  
   
 ## <a name="configuring-tracking-for-biztalk-applications"></a>BizTalk アプリケーションの追跡の構成  
- BizTalk Server 管理コンソールを使用するポートと受信ポートの送信ポートなどのアイテムのさまざまな追跡オプションを構成することができます。 追跡構成設定を使用すると、受信と送信イベント データ、メッセージのプロパティ、メッセージ本文、およびオーケストレーションを追跡します。 BizTalk アプリケーションの追跡を構成する方法の詳細については、[の管理と追跡、アーティファクト](../../core/managing-artifacts.md)を参照してください。  
+ BizTalk Server 管理コンソールを使用するポートと受信ポートの送信ポートなどのアイテムのさまざまな追跡オプションを構成することができます。 追跡構成設定を使用すると、受信と送信イベント データ、メッセージのプロパティ、メッセージ本文、およびオーケストレーションを追跡します。 BizTalk アプリケーションの追跡を構成する方法の詳細については、次を参照してください。[の管理と追跡、アーティファクト](../../core/managing-artifacts.md)します。  
   
  グループ ハブを使用することもできます。[追跡対象のメッセージとインスタンス データを表示する](../../core/viewing-tracked-message-and-instance-data.md)、追跡クエリでは、その他の保存のベスト プラクティスなど。
   

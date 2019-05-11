@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 37b39ec0e240a2d4ee9ba1239cf27d7b118ca0ad
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4ddf068c29fca7ffae186ad7417f35d8f44786dc
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37007707"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65363835"
 ---
 # <a name="configure-atomic-consistent-isolated-and-durable-transactions-using-the-wcf-lob-adapter-sdk"></a>WCF LOB Adapter SDK を使用して原子性、一貫性のある、分離、および持続性のあるトランザクションを設定します。
 [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]によって公開される機能に依存することにより、トランザクションをサポートする、[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]します。 によって公開される API を使用して[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]アダプターはトランザクションとは操作をサポートできます。  

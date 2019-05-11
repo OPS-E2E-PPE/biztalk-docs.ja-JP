@@ -1,5 +1,5 @@
 ---
-title: インスタンス メッセージについて |Microsoft ドキュメント
+title: インスタンス メッセージについて |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bf956fb9f201697ac8c2b7da2135e469e03de55e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7ccd2e6cbaca7a592c54fd2d36941ac1c004440c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22224778"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65362353"
 ---
 # <a name="about-instance-messages"></a>インスタンス メッセージについて
 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は、インスタンス メッセージの送受信を行います。通常、各インスタンス メッセージは、注文書などの 1 つ以上のビジネス ドキュメントを表します。 インスタンス メッセージは、1 つ以上のスキーマで定義されるメッセージ構造のインスタンスです。 スキーマまたはスキーマ セットは、有効なインスタンス メッセージを構成するための情報を定義します。 たとえば、注文書を定義して、複数のレコード (ShipTo レコード、BillTo レコード、Item レコードなど) を格納することがあります。 これらの各レコードを定義して、固有のサブレコードやフィールドを格納できます。 対応するスキーマでは、これらのレコードやフィールドに関する情報を定義します。また、対応するインスタンス メッセージは、スキーマに基づいて構成された注文書のデータを含む実際の注文書を格納します。  

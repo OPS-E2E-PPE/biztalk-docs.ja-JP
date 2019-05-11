@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 98499420c773328d647a9c7fa1c80e3ab09ba1b1
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4d935ca74ce1fd6b8137807f14184d4fa22f3ade
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37003459"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65359036"
 ---
 # <a name="application-not-found"></a>アプリケーションが見つかりません
 ## <a name="details"></a>詳細  
@@ -33,10 +33,10 @@ ms.locfileid: "37003459"
 |  メッセージ テキスト   | アプリケーション"{0}"が見つかりませんでした。アプリケーションが既定の BizTalk 構成データベースに存在することを確認します。 |
 
 ## <a name="explanation"></a>説明  
- BizTalk が、BizTalk データベースに存在しないアプリケーションを使用していることを示します。  
+ このエラーは、BizTalk は BizTalk データベースに存在しないアプリケーションを使用したことを示します。  
 
 ## <a name="user-action"></a>ユーザーの操作  
- 有効なアプリケーションを構成するには、次の手順を実行します。  
+ 有効なアプリケーションを構成するのにには、次の手順を使用します。  
 
 #### <a name="to-configure-a-valid-application"></a>有効なアプリケーションを構成するには  
 
@@ -44,4 +44,4 @@ ms.locfileid: "37003459"
 
 2. コンソール ルートで  [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]、展開**BizTalk グループ**、展開**アプリケーション**します。  
 
-3. アプリケーションがそこに存在することを確認します。 存在しない場合は、別の有効なアプリケーションを選択します。
+3. アプリケーションがあることを確認します。 それ以外の場合は、別の有効なアプリケーションを選択します。

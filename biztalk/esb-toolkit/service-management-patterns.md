@@ -1,5 +1,5 @@
 ---
-title: サービス管理パターン |Microsoft ドキュメント
+title: サービス管理のパターン |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,15 +12,15 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a48639fb2a540b5b2597b34ad95ee390b4382c34
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1ec777e46dada4a47f00cff666b6924e448ef8b8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22294626"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65392031"
 ---
-# <a name="service-management-patterns"></a>サービス管理のパターン
-## <a name="repair-and-resubmit"></a>修復し、再実行してください。  
- 修復と再送信のパターンが定義され、ソリューションをサービス メッセージを処理することがないと適切に、失敗したメッセージの形式での状態を外部化は、利用できるように、メッセージの内容を有効にする修復し、サービスに再送信する必要があります。メッセージの処理を続行します。  
+# <a name="service-management-patterns"></a>サービス管理パターン
+## <a name="repair-and-resubmit"></a>修復と再送信  
+ 修復と再送信のパターンをサービスがメッセージを処理できないとを正常に失敗したメッセージの形式でその状態を外部化を修復し、サービスに再送信できるメッセージの内容を有効にする必要があるソリューションを定義しますメッセージの処理を続行します。  
   
- [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]メカニズムによって Microsoft BizTalk メッセージングとオーケストレーションの例外を正規化して公開されている追加のアクションが含まれます。 ESB ソリューションを設計するときに、例外を処理する方法のアカウントを必要があります。 [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]を例外を表示および管理する方法を示すサンプル ESB 管理ポータル アプリケーションが含まれています。 修復および ESB 管理ポータルのサンプル アプリケーションを使用して例外を再送信の詳細については、次を参照してください。[修復と再送信メッセージ](../esb-toolkit/repairing-and-resubmitting-messages.md)です。
+ [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] 追加の操作のメカニズムでは、Microsoft BizTalk メッセージングとオーケストレーションの例外正規化できが公開されているが含まれています。 ESB ソリューションを設計するには、これが例外を処理する方法のアカウントに重要です。 [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]例外を表示および管理する方法を示すサンプル ESB 管理ポータル アプリケーションが含まれています。 ESB 管理ポータルのサンプル アプリケーションを使用して例外を再送信の修復と詳細については、次を参照してください。[修復と再送信メッセージ](../esb-toolkit/repairing-and-resubmitting-messages.md)します。

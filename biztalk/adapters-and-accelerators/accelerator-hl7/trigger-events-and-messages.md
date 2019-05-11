@@ -17,12 +17,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 309d420d97cdc22c4f0eaca30bb6426e295cbe33
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 533594b0113be48e719b92273ae0a2413348d2a0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36971611"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65286554"
 ---
 # <a name="trigger-events-and-messages"></a>トリガー イベントとメッセージ
 デジタルの医療システムでは、アプリケーションは、ラボにおける注文または薬の順序の配置などの実際のイベントのため HL7 メッセージを作成します。 HL7 の組織には、医療保険の実際のイベントは、これらのアプリケーションが異種システムにまたがる場合でも、アプリケーション間でフローにデータの必要性を作成することを前提と HL7 標準が書き込まれます。 HL7 標準は、この実際のイベントを呼び出して、*トリガー イベント*します。 自動化されたシステムは、トリガー イベントを認識体系的にする必要があります。  

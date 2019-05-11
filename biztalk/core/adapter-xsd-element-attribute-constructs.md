@@ -1,5 +1,5 @@
 ---
-title: アダプターの XSD Element-attribute コンス トラクター |Microsoft ドキュメント
+title: アダプターの XSD 要素属性のコンス トラクター |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,30 +12,30 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b30a90a03c3799796bde49846d2bdc2c777ca649
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 88cf66a04d7b7b97233ba9795d83e7195b0590cb
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22229794"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65361072"
 ---
-# <a name="adapter-xsd-element-attribute-constructs"></a>アダプターの XSD Element-attribute コンス トラクター
-次の表は、アダプター フレームワークでサポートされる XSD Element-Attribute コンストラクターの一覧です。 縦軸はサポートされている要素の型を、横軸は各要素の有効な属性の型をそれぞれ表しています。  
+# <a name="adapter-xsd-element-attribute-constructs"></a>アダプターの XSD 要素属性のコンス トラクター
+次の表には、アダプター フレームワークでサポートされている XSD 要素属性のコンス トラクターが一覧表示します。 垂直軸はサポートされている要素の種類を格納し、水平軸には各要素に対して有効な属性の型が含まれています。  
   
 > [!NOTE]
->  要素および属性の名前は一意である必要があります。 名前が重複している場合、コンパイル エラーが発生します。  
+>  要素と属性は、一意の名前が必要です。 重複する名前は、コンパイル エラーが発生します。  
   
 > [!NOTE]
 >  列挙ファセットを含む固定属性はサポートされません。  
   
 > [!NOTE]
->  構成 XSD は、という名前の要素を持つ必要があります**uri** xsd:string 型のです。  
+>  構成 XSD という名前の要素があります**uri**型 xsd:string の。  
   
  ![](../core/media/ebiz-prog-custadapt-element1.gif "ebiz_prog_custadapt_element1")  
-サポートされているアダプターの XSD Element-Attribute コンストラクター  
+サポートされているアダプターの XSD 要素の属性の構文  
   
  ![](../core/media/ebiz-prog-custadapt-element2.gif "ebiz_prog_custadapt_element2")  
-サポートされているアダプターの XSD Element-Attribute コンストラクター  
+サポートされているアダプターの XSD 要素の属性の構文  
   
 ## <a name="see-also"></a>参照  
- [アダプターのデザインに関する問題](../core/adapter-design-issues.md)
+ [アダプターのデザインの問題点](../core/adapter-design-issues.md)

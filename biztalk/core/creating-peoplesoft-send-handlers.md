@@ -1,6 +1,6 @@
 ---
-title: PeopleSoft アダプターの送信のアーティファクトを作成 |Microsoft ドキュメント
-description: 送信ポートを作成し、トランスポートのプロパティを送信し、BizTalk Server で PeopleSoft Enterprise アダプターを使用して PeopleSoft にメッセージを送信する最大同時呼び出しを更新
+title: PeopleSoft アダプターの送信アイテムの作成 |Microsoft Docs
+description: 送信ポートを作成し、トランスポートのプロパティを送信し、PeopleSoft Enterprise アダプターを BizTalk server を使用して PeopleSoft にメッセージを送信する最大同時呼び出しを更新
 ms.custom: ''
 ms.date: 10/19/2017
 ms.prod: biztalk-server
@@ -13,119 +13,119 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2bc559f4e3c25560540a171b3f47ff25e6f34e89
-ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
+ms.openlocfilehash: e4857bf6444f30da0162cf7ffbeb8572042ba762
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "25969552"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65390433"
 ---
 # <a name="create-peoplesoft-send-artifacts"></a>PeopleSoft 送信アイテムを作成します。
-Microsoft BizTalk Adapter for PeopleSoft Enterprise は、PeopleSoft にアクセスして、使用できるコンポーネントを探索したり、SOAP 要求を処理したりします。 このトピックでは、PeopleSoft アダプターを使用する BizTalk Server 管理コンソールで、送信の成果物を作成する方法を示します。
+Microsoft BizTalk Adapter for PeopleSoft Enterprise は PeopleSoft にアクセスで使用可能なコンポーネントについて説明し、SOAP 要求を処理します。 このトピックでは、PeopleSoft アダプターを使用する BizTalk Server 管理コンソールで送信アイテムを作成する方法を示します。
 
 
 ## <a name="create-the-send-port"></a>送信ポートを作成します。
 
-1.  BizTalk Server 管理コンソールで、展開**BizTalk グループ**、展開**アプリケーション**、し、目的のアプリケーションを展開します。  
+1.  BizTalk Server 管理コンソールで  **BizTalk グループ**、展開**アプリケーション**、し、目的のアプリケーションを展開します。  
   
-2.  右クリック**送信ポート**[**新規**、し、[**静的な送信請求-応答送信ポート**です。  
+2.  右クリックして**送信ポート**を選択します**新規**、し、**静的な送信請求-応答送信ポート**します。  
   
 3.  **送信ポートのプロパティ**次の操作を行います。  
   
-    1.  送信ポートの名前を入力します。 たとえば、入力`SSOSendToPeopleSoft`です。  
+    1.  送信ポートの名前を入力します。 たとえば、`SSOSendToPeopleSoft` と入力します。  
   
-    2.  **型** ドロップダウン リストで、 **PeopleSoft**します。  
+    2.  **型**ドロップダウン リストで、 **PeopleSoft**します。  
   
-    3.  **送信ハンドラー** ドロップダウン リストで、URI を選択します。  
+    3.  **送信ハンドラー**ドロップダウン リストで、URI を選択します。  
   
-    4.  送信パイプラインのドロップダウン リストから選択 **Microsoft.BizTalk.DefaultPipelines.XMLTransmit**します。  
+    4.  送信パイプラインのドロップダウン リストから選択**Microsoft.BizTalk.DefaultPipelines.XMLTransmit**します。  
   
-    5.  **受信パイプライン** ドロップダウン リストで、 **[microsoft.biztalk.defaultpiplelines.xmlreceive]** します。  
+    5.  **受信パイプライン**ドロップダウン リストで、 **[microsoft.biztalk.defaultpiplelines.xmlreceive]** します。  
   
     6.  選択**構成**送信ポートを構成します。  
   
 4.  **PeopleSoft トランスポートのプロパティ**次の操作を行います。  
   
-    1.  展開 **アダプターに必要なプロパティ**, 、入力と **アプリケーション サーバーのパス**, 、**JAVA_HOME**, 、**ユーザー名**, 、**パスワード**, 、および Peoplesoft システムに接続するための Jar ファイル。  
+    1.  展開**アダプターに必要なプロパティ**、入力と**アプリケーション サーバーのパス**、 **JAVA_HOME**、**ユーザー名**、 **パスワード**、および Peoplesoft システムに接続するための Jar ファイル。  
   
          ログオン情報を設定する必要はありません。  
   
     2.  一覧で、PeopleSoft システムを表すよう作成した SSO 関連アプリケーションを選択します。  
   
-    3.  **SSO を使用する**, [ **はい**します。  
+    3.  **SSO を使用**、**はい**します。  
   
-    4.  [ **OK**] を選択します。  
+    4.  **[OK]** を選択します。  
   
-5.  [ **OK**] を選択します。
+5.  **[OK]** を選択します。
 
 ## <a name="set-the-transport-properties"></a>トランスポートのプロパティを設定します。
-PeopleSoft トランスポートのプロパティは、設計時および実行時に使用されます。 **トランスポートのプロパティ** ダイアログ ボックスで、パラメーターを設定する接続および資格情報の特定とアクセスしようとしているオブジェクトのサーバー システムにします。  
+PeopleSoft トランスポートのプロパティはデザインに使用し、実行時間。 **トランスポートのプロパティ**ダイアログ ボックスで、接続および資格情報パラメーターに固有の設定、サーバー システムとアクセスしようとしているオブジェクト。  
   
  ![](../core/media/peop-peoplesofttransportpropertiess.gif "Peop_PeopleSoftTransportPropertiess")  
   
-1.  [アダプターに必要なプロパティ] を展開し、PeopleSoft サーバーへの接続に必要なすべての情報を入力します。  
+1.  アダプターの必要なプロパティを展開し、PeopleSoft サーバーへの接続に必要なすべての情報を入力します。  
   
-     Microsoft BizTalk Adapter for PeopleSoft Enterprise を PeopleSoft Enterprise に接続するには、構成パラメーターを設定する必要があります。 このデータは、大文字と小文字が区別されます。  
+     Microsoft BizTalk Adapter for PeopleSoft Enterprise を PeopleSoft Enterprise に接続する構成パラメーターを設定する必要があります。 このデータは、大文字小文字を区別します。  
   
-    |パラメーター|Description|  
+    |パラメーター|説明|  
     |---------------|-----------------|  
-    |`Application Server Path`|PeopleSoft Application Server が動作して受信を待ち受けているコンピューターおよびポートを表す文字列。 PeopleSoft 8 Application への URL パスの構文は//< computer_name >:\<ポート\>です。 PeopleSoft 管理者に問い合わせて、\<ポート\>値。 \<ポート\>値は、JOLT プロトコル リスナー ポート、App Server ポートではありません。 既定の JOLT ポートは 9000 です。|  
-    |`JAVA_HOME`|たとえば、JDK のインストール] をポイントするように JAVA_HOME 変数を設定します。 **C:\j2sdk1.4.2_08**します。|  
-    |`Password`|選択しなかった場合 **SSO を使用する**, 、BizTalk Adapter for PeopleSoft Enterprise server システムにアクセスするための資格情報パラメーターを設定する必要があります。<br /><br /> PeopleSoft システムへのログオンに使用するユーザーのパスワードを表す文字列です。 文字は表示されませんが、アスタリスク (*) で表されます。|  
-    |`PeopleSoft 8.x Jar Files`|コンポーネント インターフェイス (PeopleSoft 8 のみ) を使用するには、PeopleSoft Component Interface の jar ファイルが含まれるように CLASSPATH を更新する必要があります 例: **< PeopleSoft_Home > \web\PSJOA\psjoa.jar**します。|  
-    |`User Name`|選択しなかった場合 **SSO を使用する**, 、BizTalk Adapter for PeopleSoft Enterprise server システムにアクセスするための資格情報パラメーターを設定する必要があります。<br /><br /> PeopleSoft システムへのログオンに必要なユーザー名を表す文字列です。|  
+    |`Application Server Path`|ポートのロックを実行しているが、PeopleSoft Application Server がリッスンしているコンピューターを表す文字列。 PeopleSoft 8 Application への URL パスの構文は//< computer_name >:\<ポート\>します。 PeopleSoft 管理者に問い合わせて、\<ポート\>値。 \<ポート\>値は、JOLT プロトコル リスナー ポート、App Server ポートではありません。 既定の JOLT ポートは 9000 ですです。|  
+    |`JAVA_HOME`|たとえば、JDK のインストール をポイントする JAVA_HOME 変数を設定します。**C:\j2sdk1.4.2_08**します。|  
+    |`Password`|選択しなかった場合**使用 SSO**、BizTalk Adapter for PeopleSoft Enterprise サーバー システムにアクセスするための資格情報パラメーターを設定する必要があります。<br /><br /> PeopleSoft システムへのログオン ユーザーのパスワードを表す文字列。 文字は表示されませんが、アスタリスク (*) で表されます。|  
+    |`PeopleSoft 8.x Jar Files`|コンポーネントを使用するには、インターフェイス (PeopleSoft 8 のみ)、クラスパスに含める、PeopleSoft コンポーネント インターフェイスを更新する必要があります jar ファイルを使用します。 例: **< PeopleSoft_Home > \web\PSJOA\psjoa.jar**します。|  
+    |`User Name`|選択しなかった場合**使用 SSO**、BizTalk Adapter for PeopleSoft Enterprise サーバー システムにアクセスするための資格情報パラメーターを設定する必要があります。<br /><br /> PeopleSoft システムへのログオンに必要なユーザー名を表す文字列。|  
   
-2.  入力、 **追加パラメーター** 日付がキーとして使用されるときの値になっている別の形式です。 既定の形式は YYYY-MM-DD です。  
+2.  入力、**追加パラメーター**値の日付をキーとして使用する場合に、別の形式があります。 YYYY-MM-DD では、既定の形式を示します。  
   
-3.  入力、 **同時実行制御** で 200 などの呼び出しの数を表す値 **最大同時呼び出し数** が必要な場合です。  
+3.  入力、**同時実行制御**で呼び出し、たとえば 200 の数を表す値**最大同時呼び出し数**必要な場合。  
   
-     **最大同時呼び出し数** バック エンド サーバーは、データの量を処理できない場合、パラメーターがオーバー ロードの保護を有効にします。 同時呼び出しとは、アダプターがまだ返信を受信していない要求のことです。 設定 **最大同時呼び出し数** 場合、スループットがバックエンドの処理能力を超えています。  
+     **最大同時呼び出し数**パラメーターは、バック エンド サーバーは、データの量を処理できない場合に、オーバー ロードの保護をアクティブにします。 同時呼び出しは、対象のアダプターはまだありません返信要求です。 設定**最大同時呼び出し数**スループットがバックエンド処理機能を上回るインスタンスでします。  
   
-     このフィールドの既定値は -1 です。保護は発生しません。  
+     既定値のこのフィールドが-1 の場合に発生します保護れないことを意味します。  
   
-     BizTalk Server が送信アダプターに要求を送信し、同時実行の数が呼び出しまたはに設定値を超えた場合 **最大同時呼び出し数**, 、送信、申請が保存されるは、同時呼び出しの値の設定の下に番号が減少するまでスレッドです。  
+     BizTalk Server 送信アダプターでは、要求を送信して、同時実行の数が呼び出しまたはの設定値を超える場合**最大同時呼び出し数**、同時呼び出しの数まで、要求が保存された送信スレッド設定値を下回るまで減少します。  
 
 ## <a name="update-max-concurrent-calls"></a>最大同時呼び出しを更新します。
 
-`Max Concurrent Calls` パラメーターは、構成を最適化することができる機能です。 このパラメータは、スループットがバックエンドの処理機能を上回るインスタンスで使用します。 パラメーターを追加するには、アダプターに、 **送信ポートのトランスポート プロパティ** メッセージ オーバー ロードの保護を有効にする] ダイアログ ボックス。 既定値は -1 です。これは呼び出しが制限されないことを意味します。  
+`Max Concurrent Calls`パラメーターは、機能、構成を最適化することができます。 スループットがバックエンド処理機能を上回るインスタンスでは、このパラメーターを使用します。 パラメーターを追加するには、アダプターに、**送信ポートのトランスポート プロパティ**メッセージ オーバー ロードの保護をアクティブにする ダイアログ ボックス。 既定値は -1 です。これは呼び出しが制限されないことを意味します。  
   
-BizTalk Server は、送信アダプタに対してメッセージを送信するとき、まず、アダプタからバッチを受け取り、バッチで `TransmitMessage()` を呼び出して各メッセージを転送します。 この処理が完了すると、BizTalk Server はバッチで `Done()` を呼び出し、アダプタがバックエンドに対するメッセージ送信を開始します。 BizTalk Server が `Done` を呼び出す前に複数のバッチを取得した場合、`Done` コマンドは発行されないことがあります。 バッチ内に含めるメッセージの最大数を設定することで、バックエンドに送信するメッセージを制御できます。 このパラメータに加えた変更は、すぐに有効になります。 BizTalk Server は、SQL データベースに保存されているアダプター構成に対する変更を取得する必要があります。  
+BizTalk Server では、送信アダプターにメッセージを送信するときに最初にアダプターからバッチを受信し、呼び出します`TransmitMessage()`で各メッセージを送信するバッチ。 この処理が完了すると、BizTalk Server はバッチで `Done()` を呼び出し、アダプタがバックエンドに対するメッセージ送信を開始します。 BizTalk Server は、前に複数のバッチを取得した場合`Done`が呼び出される、`Done`コマンドが発生することはありません。 バッチ内に含めるメッセージの最大数を設定することで、バックエンドに送信するメッセージを制御できます。 このパラメーターを変更するには、1 分で有効です。 BizTalk Server では、SQL database に保存されているアダプター構成に対する変更を取得する必要があります。  
   
 ### <a name="change-the-max-concurrent-calls-parameter"></a>Max Concurrent Calls パラメーターを変更します。  
   
-1.  **送信ポートのトランスポート プロパティ** ] ダイアログ ボックスで、入力、 **接続** 値。  
+1.  **送信ポートのトランスポート プロパティ** ダイアログ ボックスに、入力、**接続**値。  
   
-     既定値は 40 セッションです。 これより小さい値を使用すると、実行時のパフォーマンスが低下することがあります。 逆の場合も同様に、より大きい値を使用するとサーバーの許容量を超え、実行時エラーが発生することがあります。  
+     既定値は、40 セッションです。 小さい値を使用する場合は、実行時のパフォーマンスの低下があります。 逆の場合も同様です。大きい値には、実行時エラーの結果、サーバーの機能を超える可能性があります。  
   
-2.  選択 **はい** の **エージェントの更新** 、runtimeagent.exe および browsingagent.exe の処理を必要な場合に自動的に再起動を強制します。  
+2.  選択**はい**の**エージェントの更新**runtimeagent.exe および browsingagent.exe の処理を必要な場合に自動的に再起動を強制します。  
   
      たとえば、サーバーとの接続が失われた場合や、サーバーに追加したものが Microsoft アダプター ウィザードに表示されない場合に、処理を自動的に再起動することができます。  
   
-     **エージェントの更新** パラメーターは、参照と実行時のエージェントの両方を更新します。 runtimeagent.exe は、1 分間の遅延後または次の send 呼び出し時に更新されます。  
+     **エージェントの更新**両方参照エージェントとランタイム エージェント パラメーターを更新します。 または次の 1 つ分の遅延の後、runtimeagent.exe 更新プログラムは、呼び出しを送信します。  
   
-3.  PeopleSoft システムにアクセスするための資格情報を設定します。  
+3.  PeopleSoft システムにアクセスする資格情報を提供します。  
   
-     システムへのアクセスには、2 つの方法を使用できます。  
+     2 つのメソッドを使用するには、システムにアクセスします。  
   
     -   ログイン資格情報 (Transport Properties Login パラメーター)  
   
     -   シングル サインオン  
   
-4.  選択 **はい** の **SSO を使用する** でのシングル サインオンを使用します。  
+4.  選択**はい**の**を使用して SSO**でシングル サインオンを使用します。  
   
     > [!NOTE]
-    >  詳細については、次を参照してください。[アダプターをセキュリティで保護された](../core/security-in-biztalk-adapter-for-peoplesoft-enterprise.md)です。 
+    >  詳細については、次を参照してください。[アダプターのセキュリティ保護](../core/security-in-biztalk-adapter-for-peoplesoft-enterprise.md)します。 
   
 5.  一覧で関連アプリケーションを選択します。  
   
-     エンタープライズ シングル サインオン ツールで作成される関連アプリケーションは、PeopleSoft などのアプリケーションを表します。 BizTalk Adapter for PeopleSoft Enterprise は、アプリケーション ユーザーの資格情報を使用します。 これらの資格情報は、指定された関連アプリケーションのサーバー システムの SSO データベースから取得されます。 取得される資格情報は、BizTalk プロジェクトを起動したユーザー (アプリケーション ユーザー) の資格情報です。  
+     エンタープライズ シングル サインオン ツールによって作成される関連アプリケーションは、PeopleSoft などのアプリケーションを表します。 Microsoft BizTalk Adapter for PeopleSoft Enterprise では、アプリケーション ユーザーの資格情報を使用します。 これらの資格情報は、指定された関連アプリケーションのサーバー システムの SSO データベースから取得されます。 資格情報では、BizTalk プロジェクトを起動したユーザー (アプリケーション ユーザー) のものです。  
   
     > [!NOTE]
-    >  関連アプリケーションを作成する方法の詳細については、次を参照してください。[関連アプリケーションの作成](../core/creating-affiliate-applications2.md)、または Microsoft BizTalk Server のオンライン ヘルプ。  
+    >  関連アプリケーションを作成する方法の詳細については、次を参照してください。[関連アプリケーションを作成する](../core/creating-affiliate-applications2.md)、または Microsoft BizTalk Server のオンライン ヘルプ。  
   
-6.  接続情報を受け入れるように必要なすべての情報を提供すた後、次のようにクリックします。 **適用**, 、] をクリックし、 **OK**します。  
+6.  接続情報を受け入れるように必要なすべての情報を提供するには、後に次のようにクリックします。**適用**、順にクリックします**OK**します。  
   
-     PeopleSoft にアクセスするには、BizTalk Adapter for PeopleSoft Enterprise に接続パラメーターを設定する必要があります。  
+     BizTalk Adapter for PeopleSoft Enterprise PeopleSoft へのアクセスの接続パラメーターを設定する必要があります。  
   
 
 ## <a name="next"></a>Next

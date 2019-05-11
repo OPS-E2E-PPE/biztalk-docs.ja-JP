@@ -12,15 +12,15 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 98cbd0ea288e14b68bc16f5e9a88f636bc229b9d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7f20f3b9977331826b758eb89f7a1ae936f682d2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37014483"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65359169"
 ---
 # <a name="any-attribute-nodes"></a>任意の属性ノード
-使用できる BizTalk エディターで、**すべての属性**ノードが 0 個以上の不明な属性が表示される対象のインスタンス メッセージ内の (既知の) 要素を示すことです。 特定の要素がインスタンス メッセージ内の特定の場所に出現することはあらかじめわかっているが、そこにどのような属性が入るかが不確定の場合に使用できます。 配置した場合、**すべての属性**内のノード、**レコード**関連する要素に関連付けられているノードでは、BizTalk を処理できます、その要素に関連付けられたすべての属性がされている唯一の要件構文を修正 (attributeName ="attributeValue")。  
+使用できる BizTalk エディターで、**すべての属性**ノードが 0 個以上の不明な属性が表示される対象のインスタンス メッセージ内の (既知の) 要素を示すことです。 不確定の場合に、特定の要素は、インスタンス メッセージ内の特定の場所に存在するが、その要素を正確にどのような属性が不明されているを含む可能性があります。 配置した場合、**すべての属性**内のノード、**レコード**関連する要素に関連付けられているノードでは、BizTalk を処理できます、その要素に関連付けられたすべての属性がされている唯一の要件構文を修正 (attributeName ="attributeValue")。  
   
 > [!NOTE]
 >  BizTalk エディターで、**すべての属性**ノードが文字列で表される\<AnyAttribute\>スキーマ ツリー ビューで。  

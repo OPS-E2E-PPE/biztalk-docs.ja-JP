@@ -20,12 +20,12 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 61923d2cc169184c969ca6e7439b1ee88e9726fb
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 32d6e2124598a97644036e309ce340eaf42ff8b6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36983739"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65360848"
 ---
 # <a name="adding-web-references"></a>Web 参照の追加
 Web ポートを追加するには、BizTalk プロジェクトに Web 参照を追加する必要があります。 Web 参照は、プロジェクトで使用可能な Web サービスの説明です。 BizTalk プロジェクトにオーケストレーション Web 作成をプロジェクトに Web 参照を追加するときにポートの種類、Web メッセージの種類、Reference.map (マップ ファイル)、Reference.odx (オーケストレーション ファイル)、 \< *WebService*\>します。disco (探索ファイル) と\< *WebService*\>.wsdl (Web サービス記述言語ファイル) をプロジェクトにします。 Web サービス記述言語 (WSDL) ファイルにスキーマ Web メッセージの種類が含まれる場合、プロジェクトに Reference.xsd が追加されます。  
@@ -40,7 +40,7 @@ Web ポートを追加するには、BizTalk プロジェクトに Web 参照を
   
   Web 参照を追加する場合、その Web サービスのすべての Web メソッドには、BizTalk Server との互換性が必要です。 Web サービス内の特定の Web メソッドの条件付き属性を指定することはできません。  
   
-  使用して、プロジェクトに Web 参照を追加する、 **Web 参照の追加** ダイアログ ボックス。 Web 参照を追加する方法の詳細については、[Visual Studio を使って](../core/using-visual-studio.md)を参照してください。  
+  使用して、プロジェクトに Web 参照を追加する、 **Web 参照の追加** ダイアログ ボックス。 Web 参照を追加する方法の詳細については、次を参照してください。 [Visual Studio を使って](../core/using-visual-studio.md)します。  
   
   Business Process Execution Language (BPEL) エクスポート プロセスを使用してオーケストレーションをエクスポートする場合、既存の BizTalk プロジェクトから Web 参照を参照することはできません。 既存の BizTalk プロジェクトから Web 参照を参照すると、BPEL エクスポート プロセスでは、2 つ目の WSDL ファイルが自動生成され、バインド情報が失われます。  
   

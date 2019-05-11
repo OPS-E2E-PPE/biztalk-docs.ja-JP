@@ -12,12 +12,12 @@ caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a847aeae8c3c6ee564c38acf0b87679cd8469840
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1968f0ab8e6d6c01a98db04379ea4df21fb59be4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36994107"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65363745"
 ---
 # <a name="consume-a-wcf-lob-adapter-sdk-adapter-in-a-net-project"></a>.NET プロジェクトで、WCF LOB Adapter SDK のアダプターを使用します。
 使用して構築されたアダプターを使用する、[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]から[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]プロジェクトにサービス参照を追加する必要があります。 、これを行うことができます。  
@@ -80,7 +80,7 @@ ms.locfileid: "36994107"
 10. アプリケーションで、プロキシを使えるようになりました。  
 
 ## <a name="adding-a-service-reference-by-using-svcutilexe"></a>Svcutil.exe を使用してサービス参照の追加  
- Svcutil.exe はメタデータを取得し、後に追加できる .NET CLR プロキシ クラスを生成するために使用できるコマンド ライン ユーティリティ、[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]プロジェクト。 Svcutil.exe の詳細については、[ServiceModel メタデータ ユーティリティ ツール (Svcutil.exe)](https://msdn.microsoft.com/library/aa347733.aspx)を参照してください。 
+ Svcutil.exe はメタデータを取得し、後に追加できる .NET CLR プロキシ クラスを生成するために使用できるコマンド ライン ユーティリティ、[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]プロジェクト。 Svcutil.exe の詳細については、次を参照してください。 [ServiceModel メタデータ ユーティリティ ツール (Svcutil.exe)](https://msdn.microsoft.com/library/aa347733.aspx)します。 
 
  IIS でホストされているアダプターからプロキシ クラスを生成するには  
 
@@ -96,5 +96,5 @@ ms.locfileid: "36994107"
    2.  **ソリューション エクスプ ローラー**を右クリックして**参照**、 をクリックし、**参照の追加**します。 **.NET** ] タブで [ **System.ServiceModel**、順にクリックします**OK**します。 アプリケーションで、プロキシを使えるようになりました。  
 
 ## <a name="see-also"></a>参照  
- [チュートリアル 1: エコー アダプターを開発します。](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-1-develop-the-echo-adapter.md)   
+ [チュートリアル 1:エコー アダプターを開発します。](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-1-develop-the-echo-adapter.md)   
  [WCF LOB Adapter SDK を使用して作成されたアダプタを使用します。](../../adapters-and-accelerators/wcf-lob-adapter-sdk/consume-an-adapter-created-using-the-wcf-lob-adapter-sdk.md)

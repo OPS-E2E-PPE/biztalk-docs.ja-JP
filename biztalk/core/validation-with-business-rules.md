@@ -1,5 +1,5 @@
 ---
-title: ビジネス ルールによる検証 |Microsoft ドキュメント
+title: ビジネス ルールによる検証 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,22 +17,22 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8926cf8bd95c2b90c7d16151b47f8893120b812e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2383f8cabf2e27aa62b7bdcfd6ac56ec30acc018
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22287778"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65292620"
 ---
 # <a name="validation-with-business-rules"></a>ビジネス ルールによる検証
-通常、検証を行うには、ビジネス ルール フレームワークを使用してビジネス ルールのセットを作成し、 検証を行うオーケストレーションでルールの呼び出し図形を使用します。  
+検証を実行する一般的な方法では、ビジネス ルール フレームワークを使用してビジネス ルールのセットを作成します。 使用するルールの呼び出し図形のオーケストレーションで検証を実行します。  
   
- ビジネス プロセス管理アプリケーションで、**検証**オーケストレーションでは、ビジネス ルールを使用して、注文の有効性をテストします。  
+ ビジネス プロセス管理アプリケーションで、**検証**オーケストレーションはビジネス ルールを使用して、注文の有効性をテストします。  
   
- 再コンパイルと再展開せずに、ルールを変更することができます、ビジネス ルール フレームワークを使用して、**検証**オーケストレーションです。 ただし、単純なルール セットの場合は、オーケストレーションでロジックのコードを記述することにより、処理時間を短縮できる可能性があります。  
+ 再コンパイルして再展開することがなく、ルールを変更することができます、ビジネス ルール フレームワークを使用して、**検証**オーケストレーションします。 トレードオフである必要がルールの単純なセットの場合があります、オーケストレーションのロジックをコーディングして処理時間を保存することです。  
   
- 詳細については、ビジネス ルール フレームワークを使用して、次を参照してください。[を使用してビジネス ルールの作成と](../core/creating-and-using-business-rules.md)です。 ルールの呼び出し図形の詳細については、次を参照してください。[ルールの呼び出し図形を使用する方法](../core/how-to-use-the-call-rules-shape.md)です。  
+ ビジネス ルール フレームワークの使用に関する詳細については、次を参照してください。[を使用してビジネス ルールの作成と](../core/creating-and-using-business-rules.md)します。 ルールの呼び出し図形の詳細については、次を参照してください。[ルールの呼び出し図形の使用方法](../core/how-to-use-the-call-rules-shape.md)します。  
   
 ## <a name="see-also"></a>参照  
  [ビジネス プロセス管理ソリューションの実装の要点](../core/implementation-highlights-of-the-business-process-management-solution.md)   
- [プロセス マネージャのロジック](../core/process-manager-logic.md)
+ [プロセス マネージャーのロジック](../core/process-manager-logic.md)

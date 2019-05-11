@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1d55a8ddccb996f11315c8856797147083da9123
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a1174466897c94b1a7797c32620e88dae6ae57c6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36998035"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65334034"
 ---
 # <a name="set-map-compilation-and-output-settings"></a>マップのコンパイルの設定し、出力の設定
 BizTalk マッパーでマップのプロパティを設定します。 
@@ -59,7 +59,7 @@ XML 宣言が表示されます (選択した場合**いいえ**)、次のよう
 ```  
   
 ## <a name="set-encoding-for-output-instance-data"></a>出力インスタンス データのエンコーディングを設定します。  
-"エンコード" プロパティによって、マップの出力結果の作成で必要となる文字セットに関する情報が、ランタイム エンジンに提供されます。  
+エンコードは、マップの出力結果を作成するときに使用する文字のセットを決定する必要がある情報を使用して、実行時エンジンを提供します。  
    
 1. グリッド ビューでは、マップを開きます。
 2. マッパー グリッドで任意の場所を右クリックし、選択**プロパティ**します。    

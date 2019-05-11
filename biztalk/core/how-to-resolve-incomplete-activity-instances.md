@@ -1,6 +1,6 @@
 ---
-title: 不完全なアクティビティ インスタンスを解決するには |Microsoft ドキュメント
-description: BAM アクティビティ インスタンスが BizTalk Server で BAMPrimaryImport データベースをバックアップした後アクティブなまま
+title: 不完全なアクティビティ インスタンスの解決 |Microsoft Docs
+description: BizTalk Server で BAMPrimaryImport データベースのバックアップ後に BAM アクティビティ インスタンスがアクティブなまま
 ms.custom: ''
 ms.date: 01/17/2018
 ms.prod: biztalk-server
@@ -13,32 +13,32 @@ caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 616ba096062da7ede8d78122e5a6faaca2befdc4
-ms.sourcegitcommit: 20d33d8b74bf129a8d1a506ac4a1ad960184966d
+ms.openlocfilehash: 83510267108754985e9121bf473c25215b9a08a1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/18/2018
-ms.locfileid: "27873418"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65334918"
 ---
-# <a name="resolve-incomplete-bam-activity-instances---biztalk-server"></a>不完全な BAM アクティビティ インスタンスを解決するには、BizTalk Server
-BAM では、不完全なアクティビティ インスタンスのデータを格納特殊な *アクティブなインスタンス* BAMPrimaryImport データベースのテーブルです。  
+# <a name="resolve-incomplete-bam-activity-instances---biztalk-server"></a>不完全な BAM アクティビティ インスタンスの BizTalk Server を解決します。
+BAM では、不完全なアクティビティ インスタンスのデータを格納特別な*アクティブなインスタンス*BAMPrimaryImport データベースのテーブル。  
   
- インスタンス レコードの一部では、BAMPrimaryImport データベースの最後のバックアップする前に開始は、バックアップ後に完了することが、これらのレコードはアクティブ インスタンス テーブルに残ります。 これは、BAMPrimaryImport データベースが復元された後、これらのインスタンスの完了レコードが失われるからです。  
+ インスタンス レコードの一部が前に開始、BAMPrimaryImport データベースの最後のバックアップ、バックアップ後に完了した、これらのレコードは、アクティブ インスタンス テーブルに残ります。 BAMPrimaryImport データベースを復元すると、これらのインスタンスの完了レコードは失われますためにです。  
   
- アクティブ インスタンス テーブルに残ったレコードが、BAM の正常な機能を阻害することはありませんが、これらのレコードは "完了" としてマークし、アクティブ インスタンス テーブルから取り除くことをお勧めします。  
+ アクティブ インスタンス テーブル内のレコードが妨げられない BAM 正常に機能して、これらのレコードは「完了」としてマークしてから、アクティブなインスタンス テーブルから移動してお勧めします。  
   
 ## <a name="prerequisites"></a>前提条件  
 BizTalk Server 管理者グループのメンバーとしてサインインします。  
   
-## <a name="create-a-list-of-incomplete-activityids"></a>不完全な activityid 検索リストを作成します。 
+## <a name="create-a-list-of-incomplete-activityids"></a>不完全な Activityid のリストを作成します。 
   
-1.  BAMPrimaryImport データベースに対し、次のクエリを実行します。  
+1.  BAMPrimaryImport データベースに対して次のクエリを実行します。  
   
     ```  
     Select ActivityID from bam_<ActivityName>_Active where IsComplete = 0  
     ```  
   
-2.  外部システムからデータには、アクティビティ インスタンスが実際に完了したことが示されている場合は、インスタンスを手動で完了するには、以下のクエリを実行します。  
+2.  外部システムからのデータは、アクティビティ インスタンスが実際に完了したことを示している場合は、インスタンスを手動で完了するのには、次のクエリを実行します。  
   
     ```  
     begin transaction
@@ -47,12 +47,12 @@ BizTalk Server 管理者グループのメンバーとしてサインインし�
     ```  
   
 > [!NOTE]
->  置き換えることにより、継続アクティビティを完了する同じ処理を行うことができる`ActivityID`で`ContinuationID`です。  
+>  置き換えることで、継続アクティビティを完了すると同じ手順を実行できる`ActivityID`で`ContinuationID`します。  
 > 
->  アクティブな継続トレースがメイン トレースに存在した場合、メイン トレースは、その継続トレースが完了するまでアクティブな状態のままとなります。  
+>  メイン トレースは、アクティブな継続トレースがある、継続トレースが完了するまでにはアクティブです。  
 
 ## <a name="remove-incomplete-instances"></a>不完全なインスタンスを削除します。
-不完全なアクティビティ インスタンスは、カスタムの SQL スクリプトを使用して、BAMPrimaryImport データベースから削除することもできます。 参照してください[不完全なアクティビティ インスタンスを削除する](how-to-remove-incomplete-activity-instances.md)サンプルについてはします。
+不完全なアクティビティ インスタンスは、カスタム SQL スクリプトを使用して、BAMPrimaryImport データベースから削除することもできます。 参照してください[不完全なアクティビティ インスタンスを削除](how-to-remove-incomplete-activity-instances.md)サンプルについては、します。
 
 ## <a name="see-also"></a>参照  
  [BAM のバックアップと復元](../core/backing-up-and-restoring-bam.md)

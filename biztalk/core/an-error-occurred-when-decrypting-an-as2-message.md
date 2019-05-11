@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4def7a6726eb6524a3ebd07a05d292e5e978ffdd
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: fe9e89878a7e3db229b75eaf77bb1aeb0a85247a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36988955"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65359210"
 ---
 # <a name="an-error-occurred-when-decrypting-an-as2-message"></a>AS2 メッセージの解読中にエラーが発生しました
 ## <a name="details"></a>詳細  

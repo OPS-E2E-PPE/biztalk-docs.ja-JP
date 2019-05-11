@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 944d9a4722f0c97ab09b66159bc04fc4715e01ef
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: cb7fdad7268f0cfd7aa285f0046ecd4691e84528
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36989859"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65394071"
 ---
 # <a name="the-property-name-is-not-a-valid-string"></a>プロパティ名が有効な文字列ではありません
 ## <a name="details"></a>詳細  

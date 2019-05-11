@@ -1,5 +1,5 @@
 ---
-title: '付録 a: データの種類 |Microsoft ドキュメント'
+title: '付録 A: データの種類 |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,19 +16,19 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 780ee02ef6c5505352259c21042487479a838151
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6a6a6c9dc741955ff415576a053b5a3ff60168d6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22230170"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65359137"
 ---
-# <a name="appendix-a-data-types"></a>付録 a: データ型
-ここでは、Microsoft BizTalk Server での生成されたスキーマの使用に関する JD Edwards OneWorld 固有の情報について説明します。  
+# <a name="appendix-a-data-types"></a>付録 A: データ型
+このセクションでは、JD Edwards OneWorld に固有の情報を使用しての詳細については、Microsoft BizTalk server スキーマを生成します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [基本型](../core/basic-types1.md)  
+-   [基本の型](../core/basic-types1.md)  
   
 -   [文字列値の処理](../core/handling-string-values1.md)  
   

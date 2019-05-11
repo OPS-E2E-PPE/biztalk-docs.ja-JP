@@ -1,5 +1,5 @@
 ---
-title: アセンブリおよび例外管理のサンプルがインストールされているアイテム |Microsoft ドキュメント
+title: アセンブリと例外管理サンプルがインストールされているアイテム |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,15 +12,15 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 59bff4a6b5962410b758f73895105eac280fa6c8
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: ac0a14eeb6eaca71cf346c901b33b03f590ca563
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26006299"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65392287"
 ---
-# <a name="assemblies-and-artifacts-installed-by-the-exception-management-samples"></a>アセンブリおよび例外管理のサンプルがインストールされているアイテム
-次の表には、アセンブリおよび ESB 例外管理サンプル用にインストールされた他のアイテムが一覧表示します。  
+# <a name="assemblies-and-artifacts-installed-by-the-exception-management-samples"></a>アセンブリとアイテム例外管理サンプルによりインストール
+次の表は、アセンブリと、ESB 例外管理サンプルのインストールされている他の成果物を示します。  
   
 |場所|カテゴリ|コンポーネントの名前とバージョン|  
 |--------------|--------------|---------------------------------------|  

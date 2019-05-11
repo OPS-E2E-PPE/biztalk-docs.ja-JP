@@ -1,5 +1,5 @@
 ---
-title: スキーマに関する |Microsoft ドキュメント
+title: スキーマに関する |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a452675cb11b13ae83f940ce10b09c72a622dc8b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9bda778473e1b2f79608650271ad3d250ed294cb
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22224226"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65362284"
 ---
 # <a name="about-schemas"></a>スキーマについて
 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は、処理されるすべてのメッセージの構造を XML スキーマ定義 (XSD) 言語で定義します。メッセージ構造のこのような定義をスキーマと呼びます。 ほとんど例外なく、構造化されたメッセージは、アプリケーションの中核を成すものです。 これらの構造化されたメッセージは、大小さまざまな形式になります。また、多種多様なバックエンド システムおよびデータ ストアを対象とします。 構造化されたメッセージを頻繁に作成して使用するシステムは、さまざまな形式を使用します。 構造化されたメッセージの最も一般的な形式は、XML とフラット ファイルです。  
@@ -36,7 +36,7 @@ Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernover
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [BizTalk スキーマの種類](../core/different-types-of-biztalk-schemas.md)  
+-   [さまざまな種類の BizTalk スキーマ](../core/different-types-of-biztalk-schemas.md)  
   
 -   [XSD の役割](../core/role-of-xsd.md)  
   
@@ -44,14 +44,14 @@ Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernover
   
 -   [スキーマの BizTalk 表記](../core/biztalk-representation-of-schemas.md)  
   
--   [他のスキーマを使用するスキーマ](../core/schemas-that-use-other-schemas.md)  
+-   [他のスキーマを使用したスキーマ](../core/schemas-that-use-other-schemas.md)  
   
 -   [型の再利用と派生](../core/type-reuse-and-derivations.md)  
   
--   [BizTalk Server の以前のバージョンからのスキーマの移行](../core/schema-migration-from-previous-versions-of-biztalk-server.md)  
+-   [旧バージョンの BizTalk Server からのスキーマの移行](../core/schema-migration-from-previous-versions-of-biztalk-server.md)  
   
--   [メッセージ処理を制御するメッセージの内容を使用する方法](../core/ways-to-use-message-content-to-control-message-processing.md)  
+-   [メッセージ処理を管理するためのメッセージの内容の使用方法](../core/ways-to-use-message-content-to-control-message-processing.md)  
   
 -   [Visual Studio でのスキーマの検証](../core/schema-validation-in-visual-studio.md)  
   
--   [インスタンス メッセージの生成と検証](../core/instance-message-generation-and-validation.md)
+-   [インスタンス メッセージの生成および検証](../core/instance-message-generation-and-validation.md)

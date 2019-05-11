@@ -1,5 +1,5 @@
 ---
-title: Windows グループとユーザー アカウントを管理するためのベスト プラクティス |Microsoft ドキュメント
+title: Windows グループとユーザー アカウントを管理するためのベスト プラクティス |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -27,33 +27,33 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 71f7560e3867bf290f20e0f2f49a740d7298131b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6720135f15b2c6d50bb193cd6e533e5b06f71961
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22231226"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65358202"
 ---
-# <a name="best-practices-for-managing-windows-groups-and-user-accounts"></a>Windows グループおよびユーザー アカウントの管理のベスト プラクティス
-このセクションでは、Windows グループおよびユーザー アカウントのセキュリティ管理のベスト プラクティスおよびヒントについて説明します。  
+# <a name="best-practices-for-managing-windows-groups-and-user-accounts"></a>Windows グループとユーザー アカウントを管理するためのベスト プラクティス
+このセクションには、ベスト プラクティスや Windows グループとユーザー アカウントのセキュリティを管理するためのヒントが含まれています。  
   
--   **サービス アカウントのホスト インスタンスに必要な最低限の特権を使用します。**  
+-   **ホスト インスタンスに必要な最小限の特権を使用してサービス アカウント**  
   
-     BizTalk Server 環境のセキュリティを確保するには、ホスト インスタンスの実行に必要な最小限の権限を持つサービス アカウントを使用することをお勧めします。 サービス アカウントに必要な最低限の特権の詳細については、次を参照してください。[アクセス制御とデータ セキュリティ](../core/access-control-and-data-security.md)です。  
+     BizTalk Server 環境のセキュリティを確保するには、ホスト インスタンスを実行するために必要な最小限の特権をサービス アカウントを使用することをお勧めします。 サービス アカウントに必要な最低限の特権の詳細については、次を参照してください。[アクセス制御とデータ セキュリティ](../core/access-control-and-data-security.md)します。  
   
--   **信頼されている認証および信頼されていないホストに別のユーザー グループを使用します。**  
+-   **信頼された認証と信頼されていないホストの別のユーザー グループを使用します。**  
   
-     信頼されていない認証ホストの権限が、信頼済み認証ホストの権限よりも低くなるように、各ホストに別々のサービス アカウントを使用する必要があります。  
+     ホストが信頼されたホストの認証よりも少ない特権を持つその非認証が信頼されていることを確認するには、ホストごとに異なるサービス アカウントを使用する必要があります。  
   
--   **各 BizTalk ホストの別のユーザー グループを使用します。**  
+-   **各 BizTalk ホストの別のユーザーのグループを使用します。**  
   
-     ホスト間のセキュリティ境界を最大限に高めるには、BizTalk グループ内の各 BizTalk ホストに対して、別々の Windows ユーザー グループを使用することをお勧めします。  
+     ホスト間のセキュリティ境界を最大化するには、BizTalk グループで、各 BizTalk ホストの別の Windows ユーザー グループを使用することをお勧めします。  
   
--   **BizTalk Server 管理者グループからインストール ユーザーを削除します。**  
+-   **BizTalk Server 管理者グループからのインストール ユーザーを削除します。**  
   
-     複数のローカル グループがある 1 台のコンピュータに BizTalk Server をインストールすると、BizTalk Server の対話型インストールを実行しているユーザーは、BizTalk Server 管理者グループに自動的に追加されます。 これによりユーザーは、構成マネージャで BizTalk Server を構成できます。  
+     ローカル グループを含む 1 台のコンピューターに BizTalk Server をインストールすると、BizTalk Server の対話型インストールを実行するユーザーは、BizTalk Server 管理者グループに自動的に追加します。 これにより、Configuration Manager での BizTalk Server を構成するには、そのユーザーができます。  
   
-     BizTalk Server をインストールしたユーザーが BizTalk Server の管理担当ではない場合、BizTalk Server を構成した後で、このユーザーを BizTalk Server 管理者グループから削除することをお勧めします。  
+     BizTalk Server をインストールしたユーザーには BizTalk Server が管理するされない場合、は、BizTalk Server を構成した後、このユーザーを BizTalk Server 管理者グループから削除することをお勧めします。  
   
 ## <a name="see-also"></a>参照  
- [BizTalk Server のセキュリティを管理します。](../core/managing-biztalk-server-security.md)
+ [BizTalk Server のセキュリティの管理](../core/managing-biztalk-server-security.md)

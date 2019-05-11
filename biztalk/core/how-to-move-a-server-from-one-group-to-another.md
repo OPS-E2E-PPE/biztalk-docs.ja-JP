@@ -19,20 +19,20 @@ caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0492af242b742fa51b75ae36ac577cd0ff0b8714
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b3ef92cecddc32915a194cd5058e7337511ab609
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36971771"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65335953"
 ---
 # <a name="how-to-move-a-server-from-one-group-to-another"></a>サーバーをあるグループから別のグループに移動する方法
-1 つの BizTalk Server グループに関連付けることができるサーバーは 1 つだけです。 サーバーをあるグループから別のグループに移動するには、まず元のグループの構成を解除してそのグループからサーバーを削除したうえで、新しいグループに追加する必要があります。  
+サーバーは、1 つの BizTalk Server グループに関連付けられた場合のみできます。 サーバーを別の 1 つのグループに移動するには、最初に、構成を解除して、元のグループからサーバーを削除し、新しいグループにサーバーを追加する必要があります。  
   
 ## <a name="prerequisites"></a>前提条件  
  ここで示す手順を実行するには、SSO 管理者グループのメンバーおよび Windows 管理者グループのメンバーとしてログオンする必要があります。  
   
-### <a name="to-move-a-server-from-one-biztalk-group-to-another"></a>サーバーをあるサーバーから別の BizTalk グループに移動するには  
+### <a name="to-move-a-server-from-one-biztalk-group-to-another"></a>別の 1 つの BizTalk グループからサーバーを移動するには  
   
 1. を別の BizTalk グループから移動するコンピューターに次のようにクリックします。**開始**、 をクリックして**すべてのプログラム**、 をクリックして[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、 をクリックし、 **BizTalkServerの構成**.  
   
@@ -41,13 +41,13 @@ ms.locfileid: "36971771"
 3. **機能の構成解除**ダイアログ ボックスで、**エンタープライズ SSO**を選択します**グループ**、順にクリックします**OK**します。  
   
    > [!CAUTION]
-   >  グループの構成を解除すると、そのコンピューターで既に構成されているすべての依存機能の構成が解除されます。  
+   >  グループを構成解除のコンピューターに既に構成されているすべての依存機能構成が解除されます。  
   
 4. **[はい]** をクリックします。  
   
 5. **Microsoft BizTalk Server 構成**ウィンドウで、をクリックして**次**します。  
   
-    エンタープライズ SSO、グループ、および、それらに依存する機能の構成が解除されます。  
+    エンタープライズ SSO、グループ、および、依存する機能では、構成されています。  
   
 6. **[完了]** をクリックします。  
   
@@ -61,13 +61,13 @@ ms.locfileid: "36971771"
   
 11. **エンタープライズ シングル サインオン**] ページで [**既存の SSO システムに参加**します。  
   
-     移動先 BizTalk Server グループのマスター SSO データベース サーバーに対する、適切なサーバー名およびデータベース名が指定されていることを確認してください。  
+     サーバー名とデータベース名を指している BizTalk Server グループのマスター SSO データベース サーバー、サーバーを移動することを確認します。  
   
 12. 画面の左側にあるナビゲーション ツリーで、クリックして**グループ**します。  
   
 13. **グループ**] ページで [**既存の BizTalk グループに参加**します。  
   
-     移動先 BizTalk Server グループのデータベースに対する、適切なサーバー名およびデータベース名が指定されていることを確認してください。  
+     サーバー名とデータベース名を指す BizTalk Server グループのデータベース サーバーを移動することを確認します。  
   
 14. メニュー バーでクリックして**構成の適用**このコンピューターでエンタープライズ シングル サインオンとグループの両方を構成します。  
   

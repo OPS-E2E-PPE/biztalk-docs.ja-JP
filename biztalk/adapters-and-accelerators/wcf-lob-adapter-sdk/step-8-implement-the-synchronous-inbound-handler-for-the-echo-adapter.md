@@ -1,5 +1,5 @@
 ---
-title: '手順 8: エコー アダプターの同期受信ハンドラーを実装する |Microsoft ドキュメント'
+title: 手順 8:エコー アダプターの同期受信ハンドラーを実装する |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,24 +12,24 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: da34bca28f073babac4907b7d408d0642a234e2a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e3a692493b39b51499a2a42adfcbd485dd4cfc0e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22226634"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65363147"
 ---
-# <a name="step-8-implement-the-synchronous-inbound-handler-for-the-echo-adapter"></a>手順 8: エコー アダプターの同期受信ハンドラーを実装します。
+# <a name="step-8-implement-the-synchronous-inbound-handler-for-the-echo-adapter"></a>手順 8:エコー アダプターの同期受信ハンドラーを実装します。
 ![手順 9 の 8](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-8of9.gif "Step_8of9")  
   
  **所要時間:** 45 分  
   
- この手順では、エコー アダプターの受信機能を実装します。 この機能により、データまたは対象システムからのイベントをリッスンするアダプター。 よると、 [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]、のみを実装する必要があります、`Microsoft.ServiceModel.Channels.Common.IInboundHandler`アダプターは、受信機能をサポートしている場合は、インターフェイスです。 [!INCLUDE[afdevwizardnameshort](../../includes/afdevwizardnameshort-md.md)] EchoAdpterInboundHandler を要求する派生クラスが自動的に生成されます。  
+ この手順では、エコー アダプターの受信機能を実装します。 この機能により、データまたは対象システムからイベントをリッスンするアダプター。 に従って、 [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]、のみを実装する必要があります、`Microsoft.ServiceModel.Channels.Common.IInboundHandler`アダプターが受信機能をサポートする場合にインターフェイスです。 [!INCLUDE[afdevwizardnameshort](../../includes/afdevwizardnameshort-md.md)] EchoAdpterInboundHandler を要求する派生クラスが自動的に生成されます。  
   
- 次のセクションでは、このインターフェイスを実装する方法について理解を深めるために EchoAdpterInboundHandler クラスを更新します。 この手順を完了したときに、エコー アダプターの作業の受信ハンドラーを持ちます。  
+ 次のセクションでは、このインターフェイスを実装する方法について理解を深めるために EchoAdpterInboundHandler クラスを更新します。 この手順を完了すると、エコー アダプターの受信ハンドラーを作業があります。  
   
 ## <a name="prerequisites"></a>前提条件  
- この手順を開始する前にする必要がありますが正常に完了しました[手順 7: エコー アダプターの同期送信ハンドラーの実装](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-7-implement-the-synchronous-outbound-handler-for-the-echo-adapter.md)です。 基礎知識`Microsoft.ServiceModel.Channels.Common.IInboundHandler`も便利です。  
+ この手順を開始する前にする必要がありますが正常に完了して[手順 7。エコー アダプターの同期送信ハンドラーを実装する](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-7-implement-the-synchronous-outbound-handler-for-the-echo-adapter.md)します。 基本的な知識`Microsoft.ServiceModel.Channels.Common.IInboundHandler`も便利です。  
   
 ## <a name="the-iinboundhandler-interface"></a>IInboundHandler インターフェイス  
  `Microsoft.ServiceModel.Channels.Common.IInboundHandler`として定義されます。  
@@ -46,23 +46,23 @@ public interface IInboundHandler : IConnectionHandler, IDisposable
   
  メソッドの説明は次のとおりです。  
   
-|方法|Description|  
+|方法|説明|  
 |------------|-----------------|  
-|StartListener|指定された Ws-addressing アクションがあるメッセージのリッスンを開始します。 すべてをリッスンが指定されていない場合や、既定の操作です。|  
-|StopListener|待機を停止します。|  
-|TryReceive|対象システムから受信メッセージを受信しようとしています。|  
-|WaitForMessage|対象システムから受信 WCF メッセージを待機します。|  
+|StartListener|指定された Ws-addressing アクションを含むメッセージをリッスンを開始します。 すべてをリッスンし、指定されていない場合や、既定のアクション。|  
+|StopListener|リッスンを停止します。|  
+|TryReceive|ターゲット システムから受信メッセージを受信しようとします。|  
+|WaitForMessage|ターゲット システムから受信 WCF メッセージを待ちます。|  
   
- 各メソッドのパラメーターの説明の詳細については、ドキュメントを参照して、`Microsoft.ServiceModel.Channels.Common.IInboundHandler`インターフェイスです。  
+ 各メソッドのパラメーターの説明について詳しくは、ドキュメントを参照して、`Microsoft.ServiceModel.Channels.Common.IInboundHandler`インターフェイス。  
   
 ## <a name="implementing-the-echoadpterinboundhandler"></a>EchoAdpterInboundHandler を実装します。  
- エコー アダプターを使用して、`System.IO.FileSystemWatcher`をターゲット システムをシミュレートします。 内の各メソッドを実装する次の場合、 `Microsoft.ServiceModel.Channels.Common.IInboundHandler` StartListener、StopListener、TryReceive および WaitForMessage、インターフェイスです。  
+ エコー アダプターを使用して、`System.IO.FileSystemWatcher`ターゲット システムをシミュレートします。 内の各メソッドを実装する、次に、 `Microsoft.ServiceModel.Channels.Common.IInboundHandler` StartListener、StopListener、TryReceive、WaitForMessage インターフェイスします。  
   
-#### <a name="to-implement-iinboundhandler-interface-in-the-echoadpterinboundhandler-class"></a>インターフェイスを実装する IInboundHandler EchoAdpterInboundHandler クラス  
+#### <a name="to-implement-iinboundhandler-interface-in-the-echoadpterinboundhandler-class"></a>EchoAdpterInboundHandler クラスで IInboundHandler インターフェイスを実装するには  
   
 1.  ソリューション エクスプ ローラーで、 **EchoAdapterInboundHandler.cs**ファイル。  
   
-2.  Visual Studio エディターでは、ディレクティブを使用する既存のセットに次の行を追加します。  
+2.  Visual Studio エディターでは、using ディレクティブの既存のセットに次の行を追加します。  
   
     ```csharp  
     using System.IO;  
@@ -71,7 +71,7 @@ public interface IInboundHandler : IConnectionHandler, IDisposable
     using System.Diagnostics;  
     ```  
   
-3.  今すぐ EchoAdapterInboundHandler クラスをクラス レベルの変数を追加します。 これらの変数は、ファイル システム ファイルの活動で監視に使用されます。 コンス トラクターは、前に、クラス宣言の下にコピーします。  
+3.  今すぐ EchoAdapterInboundHandler クラスにクラス レベルの変数を追加します。 これらの変数は、ファイル システム ファイルのアクティビティの監視に使用されます。 コンス トラクターの前に、クラス宣言の下にコピーします。  
   
     ```csharp  
     private Queue<Message> inboundQueue;  
@@ -81,7 +81,7 @@ public interface IInboundHandler : IConnectionHandler, IDisposable
     private string filter;  
     ```  
   
-4.  EchoAdapterInboundHandler コンス トラクター メソッドの内部インフラストラクチャを監視するファイルを初期化するために、フィルターと監視のパスをキャプチャして、次のコードを追加します。  
+4.  EchoAdapterInboundHandler コンス トラクター メソッド内では、インフラストラクチャを監視するファイルを初期化するために、監視のパスとフィルターをキャプチャして、次のコードを追加します。  
   
     ```csharp  
     inboundWatcher = null;  
@@ -90,7 +90,7 @@ public interface IInboundHandler : IConnectionHandler, IDisposable
     filter = connection.ConnectionFactory.Adapter.InboundFileFilter;  
     ```  
   
-5.  次のコードを追加、 **StartListener**メソッドです。 コードでは、パラメーターを確認し、ファイルのアクティビティの監視を開始するためのロジックを実装します。  
+5.  次のコードを追加、 **StartListener**メソッド。 コードでは、パラメーターを確認し、ファイルのアクティビティの監視を開始するためのロジックを実装します。  
   
     ```csharp  
     // if no actions are provided, log an error in the trace log  
@@ -120,7 +120,7 @@ public interface IInboundHandler : IConnectionHandler, IDisposable
     }  
     ```  
   
-6.  実装を追加することにより続行、 **StopListener**メソッドです。  
+6.  実装を追加することで引き続き、 **StopListener**メソッド。  
   
     ```csharp  
     if (inboundWatcher != null)  
@@ -136,7 +136,7 @@ public interface IInboundHandler : IConnectionHandler, IDisposable
     }  
     ```  
   
-7.  実装を提供するようになりました、 **TryReveive**メソッドです。 このメソッドは、最新のファイルを取得します。 1 つが利用可能な場合は、内部キューからメッセージを受信します。  
+7.  今すぐ実装を提供、 **TryReveive**メソッド。 このメソッドは、最新のファイルを取得します。 1 つが使用可能な場合は、内部キューからメッセージを受信します。  
   
     ```csharp  
     reply = new EchoAdapterInboundReply();  
@@ -169,7 +169,7 @@ public interface IInboundHandler : IConnectionHandler, IDisposable
     }  
     ```  
   
-8.  実装を追加することにより続行、 **WaitForMessage**メソッドです。  
+8.  実装を追加することで引き続き、 **WaitForMessage**メソッド。  
   
     ```csharp  
     while (inboundQueue.Count == 0) { };  
@@ -184,7 +184,7 @@ public interface IInboundHandler : IConnectionHandler, IDisposable
     }  
     ```  
   
-9. これで、ファイルの監視のコールバックを指定します。 新しいメソッドを追加するには、 **FileMonitor_Created**を**EchoAdapterInboundAdapter**クラスです。  
+9. 今すぐファイル ウォッチャーにコールバックを指定します。 これを行うには、新しいメソッドを追加**FileMonitor_Created**を**EchoAdapterInboundAdapter**クラス。  
   
     ```csharp  
     private void FileMonitor_Created(object sender, FileSystemEventArgs e)  
@@ -222,13 +222,13 @@ public interface IInboundHandler : IConnectionHandler, IDisposable
     }  
     ```  
   
-10. これで、削除する必要があります、 **NotImplementedException**内部によってスローされた例外**EchoAdapterInboundReply**クラスです。 これを行うには、次のステートメントを削除、**中止**と**返信**メソッドです。  
+10. 削除する必要がありますので、 **NotImplementedException**内部によってスローされた例外**EchoAdapterInboundReply**クラス。 これを行うには、次のステートメントを削除、**中止**と**応答**メソッド。  
   
     ```csharp  
     throw new NotImplementedException("The method or operation is not implemented.");  
     ```  
   
-     **中止**と**返信**メソッドは、次のようにする必要があります。  
+     **中止**と**応答**メソッドは、次のようになります。  
   
     ```csharp  
     /// <summary>  
@@ -247,7 +247,7 @@ public interface IInboundHandler : IConnectionHandler, IDisposable
     }  
     ```  
   
-11. 完了するには、受信ハンドラーの実装を次のクラスを追加**EchoAdapterOutboundHandler.cs**です。 このクラスは、受信ハンドラーの実装のタイムアウトのサポートを提供します。  
+11. 受信ハンドラーの実装を完了するには、次のクラスを追加**EchoAdapterOutboundHandler.cs**します。 このクラスは、受信ハンドラーの実装のタイムアウトのサポートを提供します。  
   
     ```csharp  
     /// <summary>  
@@ -333,19 +333,19 @@ public interface IInboundHandler : IConnectionHandler, IDisposable
     }  
     ```  
   
-12. Visual Studio での**ファイル** メニューのをクリックして**すべて保存**です。  
+12. Visual Studio での**ファイル** メニューのをクリックして**すべて保存**します。  
   
-13. **[ビルド]** メニューの **[ソリューションのビルド]** をクリックします。 これは、エラーなしでコンパイルする必要があります。 以外の場合は、上記のすべてのステップに従っていることを確認します。  
+13. **[ビルド]** メニューの **[ソリューションのビルド]** をクリックします。 これは、エラーなしでコンパイルする必要があります。 そうでない場合は、上記のすべての手順に従っていることを確認します。  
   
 > [!NOTE]
->  これで作業が保存されました。 安全にこの時点で Visual Studio を終了したり、次の手順に進みます[手順 9: ビルドし、配置エコー アダプター](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-9-build-and-deploy-the-echo-adapter.md)です。  
+>  これで作業が保存されました。 安全にこの時点で Visual Studio を閉じて、次の手順に進むまたは[手順 9。ビルドおよび配置エコー アダプター](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-9-build-and-deploy-the-echo-adapter.md)します。  
   
-## <a name="what-did-i-just-do"></a>でしただけは何ですか。  
- エコー アダプター チュートリアルのこのステップでは、受信ハンドラーの実装を提供します。 この実装を使用してエコー アダプターの機能を見てファイルを提供する、 **FileSystemWatcher** .NET Framework のクラスです。  
+## <a name="what-did-i-just-do"></a>でしただけ何か。  
+ エコー アダプターのチュートリアルのこの手順では、受信ハンドラーの実装を提供します。 この実装は、ファイルを使用してエコー アダプターの機能の監視を提供、 **FileSystemWatcher** .NET Framework のクラス。  
   
 ## <a name="next-steps"></a>次の手順  
- 次の手順では、アダプターを展開します。  
+ 次の手順では、アダプターをデプロイします。  
   
 ## <a name="see-also"></a>参照  
- [手順 9: ビルドをエコー アダプターの展開](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-9-build-and-deploy-the-echo-adapter.md)   
- [手順 7: エコー アダプターの同期送信ハンドラーを実装します。](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-7-implement-the-synchronous-outbound-handler-for-the-echo-adapter.md)
+ [手順 9:ビルドおよびエコー アダプターの展開](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-9-build-and-deploy-the-echo-adapter.md)   
+ [手順 7:エコー アダプターの同期送信ハンドラーを実装する](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-7-implement-the-synchronous-outbound-handler-for-the-echo-adapter.md)

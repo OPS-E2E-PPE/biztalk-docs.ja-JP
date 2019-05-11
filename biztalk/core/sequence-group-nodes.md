@@ -12,24 +12,24 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c113d0cfd0f6055d55b0329bba3c1ec60bf835e8
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e0a8343fe49f104cc00622e6489237fde48d0f7c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37019744"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65393343"
 ---
-# <a name="sequence-group-nodes"></a>[シーケンス グループ] ノード
+# <a name="sequence-group-nodes"></a>シーケンス グループ ノード
 
 ## <a name="overview"></a>概要
-BizTalk エディターでは、挿入できる、**シーケンス グループ**をする必要があります内に表示される同じ順序で、インスタンス メッセージ内に表示される他のノードを含むノード、**シーケンス グループ**ノード。 取り込むノードは、XML 要素に対応するノードであることが必要です。ただし、XML 属性に対応するノードではありません。  
+BizTalk エディターでは、挿入できる、**シーケンス グループ**をする必要があります内に表示される同じ順序で、インスタンス メッセージ内に表示される他のノードを含むノード、**シーケンス グループ**ノード。 含まれているノードは、XML 要素に対応するノードである必要がありますが、XML 属性に対応するノードをすることはできません。  
 
 > [!NOTE]
 >  BizTalk エディターで、**シーケンス グループ**ノードが既定では、文字列で表される\<シーケンス\>スキーマ ツリー ビューで。 参照を設定した場合、**シーケンス グループ**x などのノードとして表されます\<グループ: x\>スキーマ ツリー ビューで。  
 
  追加することも、**シーケンス グループ**グローバル要素グループを宣言します。  
 
- このような場合は、次の例に示す XML のスキーマを作成します。  
+ 次のように、XML のスキーマを作成する必要があります。  
 
 ```  
 <Root>  
@@ -46,7 +46,7 @@ BizTalk エディターでは、挿入できる、**シーケンス グループ
 
 ```  
 
- GroupItem1 と GroupItem2 は両方の場合に存在するので、Record1 および Record2 の両方の子であるグローバル シーケンス グループを宣言することができます。 グローバル シーケンス グループを宣言する方法の詳しい手順については、「[別のノードまたは種類への参照の作成](../core/how-to-create-references-to-another-node-or-type.md)です。  
+ GroupItem1 と GroupItem2 がどちらの場合も存在するため、Record1 と Record2 の子であるグローバル シーケンス グループを宣言することがあります。 グローバル シーケンス グループを宣言する方法の詳しい手順については、「[別のノードまたは種類への参照の作成](../core/how-to-create-references-to-another-node-or-type.md)です。  
 
  ユーザー グループを非表示を変更できる、**グループの選択**ノードまたは**すべてのグループ**ノード (とは限りませんため、**シーケンス グループ**ノード) を変更して、 **Group Order Type**プロパティ。 このプロパティについて詳しく[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]します。
 

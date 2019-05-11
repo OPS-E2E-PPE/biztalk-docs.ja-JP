@@ -2,15 +2,15 @@
 redirect_url: /biztalk/core/using-biztalk-server-exception-handling3/
 redirect_document_id: true
 ROBOTS: NOINDEX
-ms.openlocfilehash: 8252bd6eda1841d8edf1db1f6a7a20c03f0c95aa
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: fd566b8d02f2bc9ffd5ceaa41d8bdb34a2800c6c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
-ms.locfileid: "24015065"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65359969"
 ---
 # <a name="administering-biztalk-adapter-for-jd-edwards-enterpriseone"></a>BizTalk Adapter for JD Edwards EnterpriseOne の管理
-このセクションでは、BizTalk Adapter for JD Edwards EnterpriseOne の管理について説明します。  
+このセクションでは、BizTalk Adapter for JD Edwards EnterpriseOne の管理についての情報を提供します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

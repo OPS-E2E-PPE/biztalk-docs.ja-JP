@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7a587b70eb3ae603d59dd5a6f21270133b5a8125
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4b1a6b5cf310dfd7e65cba21364cbccc385300df
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37005307"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65364076"
 ---
 # <a name="understanding-fileact-and-interact-adapter-architecture"></a>理解 FileAct および InterAct アダプターのアーキテクチャ
 SWIFT アダプターは、BizTalk アダプター フレームワークに基づきます。 BizTalk Server 内のアダプターの分類を使用して、FileAct および InterAct は、SWIFT アダプターを表す次。  
@@ -28,7 +28,7 @@ SWIFT アダプターは、BizTalk アダプター フレームワークに基�
   
 - 非トランザクションです。 アダプターを行わないの任意のトランザクション オブジェクトを使用して行う SWIFT ネットワークとやり取りします。  
   
-- 分離。 受信アダプターが別のプロセスで実行し、通常の送信アダプターはプロセスで実行します。  
+- 分離します。 受信アダプターが別のプロセスで実行し、通常の送信アダプターはプロセスで実行します。  
   
   BizTalk アダプター フレームワークについては、次を参照してください、"とは、アダプター フレームワーク"。 BizTalk Server ヘルプのトピックです。  
   

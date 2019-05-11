@@ -1,5 +1,5 @@
 ---
-title: '手順 1: 作成して WCF サービスを発行する、Oracle E-business アダプターの使用 |Microsoft Docs'
+title: 手順 1:Oracle E-business アダプターを使用して作成および WCF サービスの発行 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,19 +12,19 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 75bbbb57b633475d9973d187d61d6e698f6cadb2
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 88b8ae60cd9b2daa15c9d33888eeaa6c6b703408
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36981027"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65374555"
 ---
-# <a name="step-1-use-the-oracle-e-business-adapter-to-create-and-publish-a-wcf-service"></a>手順 1: Oracle E-business アダプターを使用して作成して WCF サービスを発行するには
+# <a name="step-1-use-the-oracle-e-business-adapter-to-create-and-publish-a-wcf-service"></a>手順 1:Oracle E-business アダプターを使用して作成および WCF サービスの発行
 ![手順 4 の 1](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-1of4.gif "Step_1of4")  
   
  **所要時間:** 15 分  
   
- **目標:** を使用することができます、[!INCLUDE[afsvcdevwizlong](../../includes/afsvcdevwizlong-md.md)]をインターネット インフォメーション サービス (IIS) または Windows プロセス アクティブ化サービス (WAS) などのホスティング環境でホストできる Oracle E-business Suite の成果物から WCF サービスを生成します。 このトピックでは、ウィザードを使用して WCF サービスのファイルを生成する方法を示します。  
+ **目標:** 使用することができます、[!INCLUDE[afsvcdevwizlong](../../includes/afsvcdevwizlong-md.md)]をインターネット インフォメーション サービス (IIS) または Windows プロセス アクティブ化サービス (WAS) などのホスティング環境でホストできる Oracle E-business Suite の成果物から WCF サービスを生成します。 このトピックでは、ウィザードを使用して WCF サービスのファイルを生成する方法を示します。  
   
 ## <a name="prerequisites"></a>前提条件  
  ウィザードを実行する前に、次のようにインストールします。  
@@ -33,7 +33,7 @@ ms.locfileid: "36981027"
   
 - [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)] [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]します。  
   
-  これらの前提条件の詳細については、、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]インストール ガイドを参照してください。 通常、インストール ガイドにインストールされて\<インストール ドライブ\>: \Program Files\Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]\Documents します。  
+  これらの前提条件の詳細については、次を参照してください。、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]インストール ガイドです。 通常、インストール ガイドにインストールされて\<インストール ドライブ\>: \Program Files\Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]\Documents します。  
   
 > [!NOTE]
 >  作成する Microsoft Office SharePoint Server のサンプルで提供される create_apps_artifacts.sql スクリプトを実行することも必要があります、 **MS_SAMPLE_EMPLOYEE**インターフェイス テーブルで、**アプリケーション オブジェクト ライブラリ**アプリケーション。 このインターフェイスのテーブルは、このチュートリアルで使用されます。  
@@ -82,14 +82,14 @@ ms.locfileid: "36981027"
   
 6. 操作の選択] ページで、**選択のコントラクト型**一覧で、[**クライアント (送信操作)** します。  
   
-7. **カテゴリを選択**ボックスに、アプリケーション オブジェクト ライブラリのアプリケーションで MS_SAMPLE_EMPLOYEE インターフェイス テーブルに移動します。 アダプターで成果物への参照については、[参照、検索、および取得操作のメタデータの Oracle E-business](../../adapters-and-accelerators/adapter-oracle-ebs/browse-search-and-get-metadata-for-oracle-e-business-suite-operations.md)を参照してください。  
+7. **カテゴリを選択**ボックスに、アプリケーション オブジェクト ライブラリのアプリケーションで MS_SAMPLE_EMPLOYEE インターフェイス テーブルに移動します。 アダプターで成果物への参照については、次を参照してください。[参照、検索、および取得操作のメタデータの Oracle E-business](../../adapters-and-accelerators/adapter-oracle-ebs/browse-search-and-get-metadata-for-oracle-e-business-suite-operations.md)します。  
   
 8. **利用可能なカテゴリと操作**ボックスで、**選択**操作、およびクリック**追加**します。 選択操作に追加されます、**カテゴリと操作を追加**ボックス。  
   
     ![選択操作を追加する](../../adapters-and-accelerators/adapter-oracle-ebs/media/02-msb-gui.gif "02 _ msb_gui")  
   
    > [!NOTE]
-   >  各成果物の 1 つ以上の操作を追加することができます。 Oracle E-business Suite の各アイテムの操作を追加することもできます。 たとえば、インターフェイス テーブルの 1 つの操作と同時実行プログラムを追加できます。 さらに、検索式のワイルドカード文字を指定することによって、特定の操作を検索できます。 サポートされている特殊文字および位置は、操作を検索することができます、ノード レベルの詳細については、[Oracle E-business Suite 操作の検索](../../adapters-and-accelerators/adapter-oracle-ebs/search-for-oracle-e-business-suite-operations.md)を参照してください。  
+   >  各成果物の 1 つ以上の操作を追加することができます。 Oracle E-business Suite の各アイテムの操作を追加することもできます。 たとえば、インターフェイス テーブルの 1 つの操作と同時実行プログラムを追加できます。 さらに、検索式のワイルドカード文字を指定することによって、特定の操作を検索できます。 サポートされている特殊文字および位置は、操作を検索することができます、ノード レベルの詳細については、次を参照してください。 [Oracle E-business Suite 操作の検索](../../adapters-and-accelerators/adapter-oracle-ebs/search-for-oracle-e-business-suite-operations.md)します。  
   
 9. 操作の選択 ページで、次のようにクリックします。**次**します。  
   
@@ -113,8 +113,8 @@ ms.locfileid: "36981027"
        |----------------------|-----------------------|  
        |[認証の種類]|WCF サービスを使用する Microsoft Office SharePoint server、として設定する必要があります**HTTPUserNamePassword**します。 これにより、クライアントが HTTP ヘッダーの一部としてユーザー名とパスワードを指定できます。|  
        |名前|エンドポイントの動作の構成の名前を指定します。 このチュートリアルでは、入力**customEndpointBehavior**します。|  
-       |UsernameHeader|ユーザー名ヘッダーの名前です。 この例では、指定**MyUserHeader**します。 HTTP ヘッダーの詳細についてを参照してください「のサポートのカスタム HTTP ヘッダーと SOAP ヘッダー」 [ http://go.microsoft.com/fwlink/?LinkId=106692](http://go.microsoft.com/fwlink/?LinkId=106692)します。 **注:** 場合は、このプロパティの値を指定する必要があります、**認証の種類**に設定されている**HTTPUserNamePassword**します。 場合**認証の種類**に設定されている**自動**、このプロパティは省略可能です。|  
-       |PasswordHeader|パスワード ヘッダーの名前です。 この例では、指定**MyPassHeader**します。 HTTP ヘッダーの詳細についてを参照してください「のサポートのカスタム HTTP ヘッダーと SOAP ヘッダー」 [ http://go.microsoft.com/fwlink/?LinkId=106692](http://go.microsoft.com/fwlink/?LinkId=106692)します。 **注:** 場合は、このプロパティの値を指定する必要があります、**認証の種類**に設定されている**HTTPUserNamePassword**します。 場合**認証の種類**に設定されている**自動**、このプロパティは省略可能です。|  
+       |UsernameHeader|ユーザー名ヘッダーの名前です。 この例では、指定**MyUserHeader**します。 HTTP ヘッダーの詳細についてを参照してください「のサポートのカスタム HTTP ヘッダーと SOAP ヘッダー」 [ http://go.microsoft.com/fwlink/?LinkId=106692](http://go.microsoft.com/fwlink/?LinkId=106692)します。 **注:** 場合、このプロパティの値を指定する必要があります、**認証の種類**に設定されている**HTTPUserNamePassword**します。 場合**認証の種類**に設定されている**自動**、このプロパティは省略可能です。|  
+       |PasswordHeader|パスワード ヘッダーの名前です。 この例では、指定**MyPassHeader**します。 HTTP ヘッダーの詳細についてを参照してください「のサポートのカスタム HTTP ヘッダーと SOAP ヘッダー」 [ http://go.microsoft.com/fwlink/?LinkId=106692](http://go.microsoft.com/fwlink/?LinkId=106692)します。 **注:** 場合、このプロパティの値を指定する必要があります、**認証の種類**に設定されている**HTTPUserNamePassword**します。 場合**認証の種類**に設定されている**自動**、このプロパティは省略可能です。|  
   
        次の図は、値を指定して、サービスの構成およびエンドポイントの動作のページを示しています。  
   
@@ -174,7 +174,7 @@ SelectResponse InterfaceTables_FND_APPS_MS_SAMPLE_EMPLOYEE.Select(SelectRequest 
 ```  
   
 ##  <a name="Publish"></a> WCF サービスを発行します。  
- IIS で SSL が有効であることを確認します。 IIS の SSL を有効にする方法については、[ http://go.microsoft.com/fwlink/?LinkId=197170](http://go.microsoft.com/fwlink/?LinkId=197170)を参照してください。  
+ IIS で SSL が有効であることを確認します。 IIS の SSL を有効にする方法については、次を参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=197170](http://go.microsoft.com/fwlink/?LinkId=197170)します。  
   
  WCF サービスを発行するには。  
   
@@ -209,7 +209,7 @@ SelectResponse InterfaceTables_FND_APPS_MS_SAMPLE_EMPLOYEE.Select(SelectRequest 
         ```  
   
 ## <a name="next-step"></a>次の手順  
- Oracle E-business Suite の成果物のアプリケーション定義ファイルを作成するには、ビジネス データ カタログ定義エディターを使用します。 手順については、[手順 2: Oracle E-business Suite の成果物のアプリケーション定義ファイルを作成](../../adapters-and-accelerators/adapter-oracle-ebs/step-2-create-an-application-definition-file-for-the-oracle-ebs-artifacts.md)を参照してください。 LOB データが格納されていると、形式が格納されているアプリケーション定義ファイルを識別します。  
+ Oracle E-business Suite の成果物のアプリケーション定義ファイルを作成するには、ビジネス データ カタログ定義エディターを使用します。 手順については、次を参照してください。[手順 2。Oracle E-business Suite の成果物のアプリケーション定義ファイルを作成](../../adapters-and-accelerators/adapter-oracle-ebs/step-2-create-an-application-definition-file-for-the-oracle-ebs-artifacts.md)です。 LOB データが格納されていると、形式が格納されているアプリケーション定義ファイルを識別します。  
   
 ## <a name="see-also"></a>参照  
  [チュートリアル: SharePoint サイト上の Oracle E-business Suite からデータを表示します。](Tutorial:%20Present%20data%20from%20Oracle%20E-Business%20Suite%20on%20a%20SharePoint%20Site.md)

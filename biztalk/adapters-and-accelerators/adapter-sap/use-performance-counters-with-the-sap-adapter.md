@@ -15,12 +15,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7818f5f5cf24bd1d4e58da2c24691813fc2b761f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 16f83041339275b1b372f57a86754e8df28a24a1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36991459"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65372210"
 ---
 # <a name="use-performance-counters-with-the-sap-adapter"></a>SAP アダプターを使用したパフォーマンス カウンターを使用します。
 Microsoft[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]クライアントは、パフォーマンス カウンターを使用して、アダプターのパフォーマンスを測定します。 [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]セットアップ プログラムは、パフォーマンス カウンター カテゴリを作成します。"[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]"インストールに沿って、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]します。  

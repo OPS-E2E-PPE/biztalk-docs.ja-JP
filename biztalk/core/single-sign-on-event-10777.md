@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10777 |Microsoft Docs'
+title: シングル サインオン:イベント 10777 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 08c3f3d1022e58f922ed8e300396fbfe2b8acf8d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4fd1c534ba326728014e02d6fbec603169b94511
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36968595"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65394221"
 ---
-# <a name="single-sign-on-event-10777"></a>シングル サインオン: イベント 10777
+# <a name="single-sign-on-event-10777"></a>シングル サインオン:イベント 10777
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                           |
@@ -30,10 +30,10 @@ ms.locfileid: "36968595"
 |  イベント ソース   |                                          ENTSSO                                           |
 |    コンポーネント    |                                            なし                                            |
 |  シンボル名  |                               ENTSSO_E_NO_BUILTIN_ACCOUNTS                                |
-|  メッセージ テキスト   | セキュリティ上の理由は、次のアカウントは許可されていません。 ビルトイン アカウントです。Everyone; |
+|  メッセージ テキスト   | セキュリティ上の理由は、次のアカウントは使用できません。ビルトイン アカウントです。Everyone; |
   
 ## <a name="explanation"></a>説明  
  これらのアカウントは使用できません。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- 詳細については、[SSO のセキュリティに関する推奨事項](../core/sso-security-recommendations.md)を参照してください。
+ 詳細については、次を参照してください。 [SSO のセキュリティに関する推奨事項](../core/sso-security-recommendations.md)します。

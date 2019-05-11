@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4f593c1eb9f7158aa69d4fcd0278078caeca2dca
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 70d3d3850480cd3d3af8e0942590d919902b4378
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36993155"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65370239"
 ---
 # <a name="use-the-net-framework-data-provider-for-siebel-ebusiness-applications"></a>.NET Framework Data Provider 用 Siebel eBusiness Applications を使用して、
 このセクションで使用方法については、 [!INCLUDE[adoprovidersiebellong](../../includes/adoprovidersiebellong-md.md)] ([!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)])。 このセクションでは、に関する情報を提供します。  

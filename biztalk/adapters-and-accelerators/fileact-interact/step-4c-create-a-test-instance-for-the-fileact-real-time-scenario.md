@@ -1,5 +1,5 @@
 ---
-title: '手順 4 C: FileAct リアルタイム シナリオのテスト インスタンスを作成 |Microsoft ドキュメント'
+title: 手順 4 C:FileAct リアルタイム シナリオ用のテスト インスタンスの作成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,19 +12,19 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 04952616f1b49eb30b4eb00462e4e5295ade0cfc
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: dbdc7c46b23206876e59fe7ac74fdf241787abfe
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22225042"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65364810"
 ---
-# <a name="step-4c-create-a-test-instance-for-the-fileact-real-time-scenario"></a>手順 4 C: FileAct リアルタイム シナリオのテスト インスタンスを作成
-この手順を開始する前に行う必要があります[手順 4B: FileAct リアルタイム シナリオでは、送信ポートおよび受信ポートを開始](../../adapters-and-accelerators/fileact-interact/step-4b-start-the-send-and-receive-ports-for-the-fileact-real-time-scenario.md)です。  
+# <a name="step-4c-create-a-test-instance-for-the-fileact-real-time-scenario"></a>手順 4 C:FileAct リアルタイム シナリオ用のテスト インスタンスを作成します。
+この手順を開始する前に行う必要があります[手順 4 b:送信ポートを開始および FileAct リアルタイム シナリオ用の受信ポート](../../adapters-and-accelerators/fileact-interact/step-4b-start-the-send-and-receive-ports-for-the-fileact-real-time-scenario.md)します。  
   
 ### <a name="to-create-a-test-instance"></a>テスト インスタンスを作成するには  
   
-1.  メモ帳などのテキスト エディターで、新しいファイルを開くし、以下を貼り付けます。  
+1.  新しいファイルをメモ帳などのテキスト エディターで開き、次を貼り付けます。  
   
     ```  
     <?xml version="1.0" encoding="utf-8"?>  
@@ -41,10 +41,10 @@ ms.locfileid: "22225042"
   
 2.  "PutReqSimple.xml"という名前のファイルを保存します。  
   
-3.  ファイル (Sample_put.txt) は、クライアントの場所のフォルダーに配置されていることを確認します。  
+3.  ファイル (Sample_put.txt) が、クライアントの場所のフォルダー内に配置されることを確認します。  
   
 ## <a name="see-also"></a>参照  
- [手順 4: FileAct エンド ツー エンドのリアルタイムのシナリオをテストします。](../../adapters-and-accelerators/fileact-interact/step-4-test-fileact-real-time-end-to-end-scenario.md)   
- [手順 4 a: FileAct リアルタイム シナリオの SWIFTNet サービスの開始](../../adapters-and-accelerators/fileact-interact/step-4a-start-the-swiftnet-service-for-the-fileact-real-time-scenario.md)   
- [手順 4 b: 送信ポートを開始および FileAct リアルタイム シナリオでは、受信ポート](../../adapters-and-accelerators/fileact-interact/step-4b-start-the-send-and-receive-ports-for-the-fileact-real-time-scenario.md)   
- [手順 4 D: FileAct リアルタイム シナリオでは、有効なインスタンスをテストします。](../../adapters-and-accelerators/fileact-interact/step-4d-test-a-valid-instance-for-the-fileact-real-time-scenario.md)
+ [手順 4:FileAct リアルタイム エンド ツー エンド シナリオをテストします。](../../adapters-and-accelerators/fileact-interact/step-4-test-fileact-real-time-end-to-end-scenario.md)   
+ [手順 4 a:FileAct リアルタイム シナリオ用に SWIFTNet サービスを開始します。](../../adapters-and-accelerators/fileact-interact/step-4a-start-the-swiftnet-service-for-the-fileact-real-time-scenario.md)   
+ [手順 4 b:送信ポートを開始および FileAct リアルタイム シナリオ用の受信ポート](../../adapters-and-accelerators/fileact-interact/step-4b-start-the-send-and-receive-ports-for-the-fileact-real-time-scenario.md)   
+ [手順 4 D:FileAct リアルタイム シナリオ用の有効なインスタンスをテストします。](../../adapters-and-accelerators/fileact-interact/step-4d-test-a-valid-instance-for-the-fileact-real-time-scenario.md)

@@ -1,5 +1,5 @@
 ---
-title: BizTalk Server ホスト インスタンスを SQL Server フェールオーバー時の動作 |Microsoft ドキュメント
+title: BizTalk Server ホスト インスタンスを SQL Server フェールオーバー時の動作 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,21 +12,21 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f244ce0fe00fe05f73db5f43ec867254b7a61fb7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4cd4f60d37ecf994b258991bb1b0947c2f28d7bc
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22231250"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65358222"
 ---
-# <a name="behavior-of-biztalk-server-host-instances-during-sql-server-failover"></a>SQL Server フェールオーバー時の BizTalk Server ホスト インスタンスの動作
-Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のクラスター化インスタンスに格納されている [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] データベースは、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] のクラスター化インスタンスにフェールオーバーが発生した場合、一時的に使用できなくなります。 このセクションでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] データベースが使用できなくなった場合の、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] に関連するホスト インスタンスの動作について説明します。  
+# <a name="behavior-of-biztalk-server-host-instances-during-sql-server-failover"></a>BizTalk Server ホスト インスタンスを SQL Server フェールオーバー時の動作
+[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Microsoft のクラスター化インスタンスに格納されているデータベース[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]が一時的に使用しない場合のクラスター化されたインスタンス[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]フェールオーバーが発生しました。 このセクションに関連付けられているホスト インスタンスの動作について説明[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ときに、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]データベースは利用できません。  
   
 ## <a name="behavior-of-in-process-host-instances-during-sql-server-failover"></a>SQL Server フェールオーバー時のインプロセス ホスト インスタンスの動作  
- 場合、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]データベースが使用できない状態のプロセスのインスタンス、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ホストされるリサイクルされるまでにへの接続、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]を復元します。 接続を 1 回、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]データベースが復元されたら、そのドキュメントの処理が正常に再開します。  
+ 場合、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]データベースが使用できない場合のインプロセス インスタンス、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]への接続までのホストが再利用されます、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]が復元されます。 接続を 1 回、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]データベースの復元、ドキュメントの処理が正常に再開します。  
   
 ## <a name="behavior-of-isolated-host-instances-during-sql-server-failover"></a>SQL Server フェールオーバー時の分離ホスト インスタンスの動作  
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] データベースが使用できなくなった場合、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ホストの分離インスタンスは一時停止し、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] アプリケーション ログに次のようなエラーが生成されます。  
+ 場合、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]データベースが使用できない場合は、分離されたインスタンス、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ホストは一時停止しで、次のようなエラーが生成されます、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]アプリケーション ログ。  
   
 ```  
 All receive locations are being temporarily disabled because either   
@@ -34,7 +34,7 @@ the MessageBox or Configuration database is not available.
 When these databases become available, the receive locations will be automatically enabled.  
 ```  
   
- [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] データベースへの接続が復旧すると、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] アプリケーション ログに次のような情報メッセージが書き込まれ、ドキュメント処理は通常どおり再開されます。  
+ 接続を 1 回、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]データベースの復元に、次のような情報メッセージが書き込まれます、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]アプリケーション ログや再開を正常に処理ドキュメント。  
   
 ```  
 All receive locations are being enabled because both the MessageBox and Configuration databases are back online.  

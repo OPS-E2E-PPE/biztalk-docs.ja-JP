@@ -1,5 +1,5 @@
 ---
-title: SWIFT 受信アダプター セキュリティ コンテキスト |Microsoft ドキュメント
+title: SWIFT 受信アダプター セキュリティ コンテキスト |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,15 +12,15 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b381ba9b4e0e1d53eca8e6cdd01b9770eb82372f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f1ce4136efb28c8535b01b86cb55e84456e7773a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22223826"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65364471"
 ---
 # <a name="swift-receive-adapter-security-context"></a>SWIFT 受信アダプター セキュリティ コンテキスト
-送信アダプターとは異なり、受信アダプターは、SWIFTNet リンク (SNL/RA) コマンド プロンプトから起動 (SWIFTNet 開始)。 SNL/RA 構成ファイル (paramconfig) では、実行可能ファイルの受信アダプターを構成します。 スタートアップ時にアダプターでは、コマンド ライン パラメーターに基づく SNL ライブラリを初期化します。 後で使用するには、構成値がキャッシュされます。  
+送信アダプターとは異なり、受信アダプターは SWIFTNet リンク (SNL/RA) コマンド プロンプト (SWIFTNet 開始) から起動します。 実行可能ファイル受信アダプターは、RA SNL/構成ファイル (paramconfig) で構成されます。 起動時にアダプターでは、コマンド ライン パラメーターに基づく SNL ライブラリを初期化します。 後で使用するには、構成値がキャッシュされます。  
   
  次の図は、受信アダプター セキュリティ コンテキストの構成を示します。  
   
@@ -28,7 +28,7 @@ ms.locfileid: "22223826"
   
 ## <a name="see-also"></a>参照  
  [SWIFT 受信アダプターのアーキテクチャ](../../adapters-and-accelerators/fileact-interact/swift-receive-adapter-architecture.md)   
- [SWIFT 受信アダプター URI](../../adapters-and-accelerators/fileact-interact/swift-receive-adapter-uri.md)   
+ [SWIFT 受信アダプターの URI](../../adapters-and-accelerators/fileact-interact/swift-receive-adapter-uri.md)   
  [SWIFT 受信アダプターの初期化](../../adapters-and-accelerators/fileact-interact/swift-receive-adapter-initialization.md)   
  [SWIFT 受信アダプターの同期および遅延モード](../../adapters-and-accelerators/fileact-interact/swift-receive-adapter-synchronous-and-deferred-modes.md)   
- [SWIFT 受信アダプター ストア アンド フォワード](../../adapters-and-accelerators/fileact-interact/swift-receive-adapter-store-and-forward.md)
+ [SWIFT 受信アダプターのストア アンド フォワード](../../adapters-and-accelerators/fileact-interact/swift-receive-adapter-store-and-forward.md)

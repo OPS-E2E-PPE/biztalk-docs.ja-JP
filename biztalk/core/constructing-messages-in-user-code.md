@@ -1,5 +1,5 @@
 ---
-title: ユーザー コードでメッセージの構築 |Microsoft ドキュメント
+title: ユーザー コードでメッセージの構築 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -18,15 +18,15 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a1e73131b1de1b58b98b27453bcb0dbcdb2a6d92
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 028618596c6784a25130b06e1efca909f333124a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22237802"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65390254"
 ---
 # <a name="constructing-messages-in-user-code"></a>ユーザー コードでメッセージの構築
-デザイン時に XSD スキーマ、.NET クラス、または XLANGMessage として BizTalk メッセージを表すことができます。  
+デザイン時に XSD スキーマ、.NET クラスまたは XLANGMessage として BizTalk メッセージを表すことができます。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

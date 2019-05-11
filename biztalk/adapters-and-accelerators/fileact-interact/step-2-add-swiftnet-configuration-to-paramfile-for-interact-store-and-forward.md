@@ -1,5 +1,5 @@
 ---
-title: '手順 2: InterAct ストア アンド フォワード シナリオ用に Paramfile に SWIFTNet 構成を追加 |Microsoft Docs'
+title: 手順 2:InterAct ストア アンド フォワード シナリオ用に Paramfile に SWIFTNet 構成を追加 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,24 +12,24 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9495d6a53e9048dc5dee839f1dc859c62b4e9187
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3bfa88c4a382721da5ccecc8baff2c2ebca2a50f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37014499"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65366193"
 ---
-# <a name="step-2-add-swiftnet-configuration-to-the-paramfile-for-the-interact-store-and-forward-scenario"></a>手順 2: は、InterAct ストア アンド フォワード シナリオ用に Paramfile に SWIFTNet 構成を追加します。
+# <a name="step-2-add-swiftnet-configuration-to-the-paramfile-for-the-interact-store-and-forward-scenario"></a>手順 2:InterAct ストア アンド フォワード シナリオ用に Paramfile に SWIFTNet 構成を追加します。
 これらの値で初期化するために受信者を有効にする SWIFTNet に paramfile に SAG で作成したサーバー メッセージのパートナーを指定する必要があります。  
   
- この手順を開始する前に行う必要があります[手順 1: InterAct ストア アンド フォワード シナリオ用に SWIFT アダプターを構成する](../../adapters-and-accelerators/fileact-interact/step-1-configure-the-swift-adapter-for-the-interact-store-and-forward-scenario.md)します。  
+ この手順を開始する前に行う必要があります[手順 1。InterAct ストア アンド フォワード シナリオ用に SWIFT アダプターを構成する](../../adapters-and-accelerators/fileact-interact/step-1-configure-the-swift-adapter-for-the-interact-store-and-forward-scenario.md)します。  
   
 ### <a name="to-add-swiftnet-configuration-to-the-paramfile"></a>Paramfile に SWIFTNet 構成を追加するには  
   
 1. Paramfile をメモ帳などのテキスト エディターで開きます。  
   
    > [!NOTE]
-   >  位置に paramfile にある通常: C:\SWIFTAlliance\RA\Ra1\cfg\paramfile します。  
+   >  位置に paramfile にある通常。C:\SWIFTAlliance\RA\Ra1\cfg\paramfile.  
   
 2. Paramfile では、サーバー メッセージのパートナー名を指定する、強調表示されている変更を行います。  
   
@@ -67,9 +67,9 @@ ms.locfileid: "37014499"
   
     \#subsystem_name:User  
   
-    \## subsystem_group:user  
+    \##subsystem_group:user  
   
-    \## subsystem_dependency:  
+    \##subsystem_dependency:  
   
     \#subsystem_nature: 重大  
   
@@ -91,6 +91,6 @@ ms.locfileid: "37014499"
   
 ## <a name="see-also"></a>参照  
  [InterAct ストア アンド フォワード (プッシュ) シナリオ](../../adapters-and-accelerators/fileact-interact/interact-store-and-forward-push-scenario.md)   
- [手順 1: InterAct ストア アンド フォワード シナリオ用に SWIFT アダプターを構成します。](../../adapters-and-accelerators/fileact-interact/step-1-configure-the-swift-adapter-for-the-interact-store-and-forward-scenario.md)   
- [手順 3: 送信ポートの作成し、InterAct ストア アンド フォワード シナリオ用の受信ポート](../../adapters-and-accelerators/fileact-interact/step-3-create-send-and-receive-ports-for-interact-store-and-forward-scenario.md)   
- [手順 4: InterAct ストア アンド フォワード エンド ツー エンド シナリオをテストする](../../adapters-and-accelerators/fileact-interact/step-4-test-the-interact-store-and-forward-end-to-end-scenario.md)
+ [ステップ 1: InterAct ストア アンド フォワード シナリオ用に SWIFT アダプターを構成します。](../../adapters-and-accelerators/fileact-interact/step-1-configure-the-swift-adapter-for-the-interact-store-and-forward-scenario.md)   
+ [ステップ 3:送信ポートの作成し、InterAct ストア アンド フォワード シナリオ用の受信ポート](../../adapters-and-accelerators/fileact-interact/step-3-create-send-and-receive-ports-for-interact-store-and-forward-scenario.md)   
+ [手順 4:InterAct ストア アンド フォワード エンド ツー エンド シナリオをテストします。](../../adapters-and-accelerators/fileact-interact/step-4-test-the-interact-store-and-forward-end-to-end-scenario.md)

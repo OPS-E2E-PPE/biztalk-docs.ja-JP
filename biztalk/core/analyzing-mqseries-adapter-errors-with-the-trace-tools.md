@@ -22,12 +22,12 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2de3ac3f94edb6ca1c3f7f366ef5c0578eb69d76
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f1523e20a0fa27c4ac932cd4a78cef64056d340d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36999035"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65359804"
 ---
 # <a name="analyzing-mqseries-adapter-errors-with-the-trace-tools"></a>トレース ツールを使用して MQSeries アダプターのエラーの分析
 アプリケーションの実行時に、トレース ツールを使用して、メッセージングのエラーを分析します。 MQSeries アダプタでは、アダプタと BizTalk アプリケーション (trace.cmd) 用と、MQSAgent (MQSTrace.cmd) 用の 2 つのツールを使用する必要があります。 どちらのツールでも、tracelog.exe が使用されます。 まだインストールしていない場合は、インストールしてください。  
@@ -60,13 +60,13 @@ ms.locfileid: "36999035"
 
 2.  次のコマンドを入力します。入力時に二重引用符で囲まれたディレクトリを、使用しているコンピュータの tracelog.exe ファイルがあるディレクトリに置き換えてください。入力後、Enter キーを押します。  
 
-     **トレース - ツール"c:\Program files \microsoft sdk \bin"**  
+     **trace -tools "c:\Program Files\Microsoft SDK\Bin"**  
 
 3.  MQSTrace.cmd があるディレクトリに移動します。  
 
 4.  次のコマンドを入力します。入力時に二重引用符で囲まれたディレクトリを、使用しているコンピュータの tracelog.exe ファイルがあるディレクトリに置き換えてください。入力後、Enter キーを押します。  
 
-     **MQSTrace-ツールの"c:\Program files \microsoft sdk \bin"**  
+     **MQSTrace -tools "c:\Program Files\Microsoft SDK\Bin"**  
 
 ## <a name="run-the-trace-utility"></a>Trace Utility を実行するには  
  BizTalk Adapter Trace Utility を実行するには、次の手順を実行します。  
@@ -77,7 +77,7 @@ ms.locfileid: "36999035"
 
 3. コマンド プロンプトで「 **trace.cmd-停止**、し、ENTER キーを押します。  
 
-4. bts2006.bin ファイルには、トレース ツールの出力が含まれます。 分析のため、マイクロソフト製品サポート サービスに連絡してください。 詳細については、[ http://go.microsoft.com/fwlink/?LinkId=41645](http://go.microsoft.com/fwlink/?LinkId=41645)を参照してください。  
+4. bts2006.bin ファイルには、トレース ツールの出力が含まれます。 分析のため、マイクロソフト製品サポート サービスに連絡してください。 詳細については、次を参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=41645](http://go.microsoft.com/fwlink/?LinkId=41645)します。  
 
    MQSAgent Trace Utility を実行するには、次の手順を実行します。  
 
@@ -87,4 +87,4 @@ ms.locfileid: "36999035"
 
 7. コマンド プロンプトで「 **MQSTrace.cmd-停止**します。  
 
-8. MQSAdapterTrace.bin ファイルには、トレース ツールの出力が含まれます。 分析のため、マイクロソフト製品サポート サービスに連絡してください。 詳細については、[ http://go.microsoft.com/fwlink/?LinkId=41645](http://go.microsoft.com/fwlink/?LinkId=41645)を参照してください。
+8. MQSAdapterTrace.bin ファイルには、トレース ツールの出力が含まれます。 分析のため、マイクロソフト製品サポート サービスに連絡してください。 詳細については、次を参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=41645](http://go.microsoft.com/fwlink/?LinkId=41645)します。

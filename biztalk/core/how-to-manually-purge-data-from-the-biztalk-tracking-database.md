@@ -16,18 +16,18 @@ caps.latest.revision: 22
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ffb7b0eb838295e4abdc059a1437b6cf338d0a99
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e4e4366edf0187ee74391ea144b67878fb51999a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36993083"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65336685"
 ---
-# <a name="how-to-manually-purge-data-from-the-biztalk-tracking-database"></a>BizTalk 追跡データベースから手動でデータを削除する方法
-SQL Server エージェント ジョブである DTA Archive and Purge では、データベースの連続的な削除および格納された追跡データの圧縮により、BizTalk 追跡 (BizTalkDTADb) データベースから手動でデータを削除する必要性が低減されます。 BizTalk 追跡 (BizTalkDTADb) データベースのサイズが、パフォーマンスが低下するほど大幅に大きくなり、DTA Archive and Purge ジョブがデータベース サイズの増大に対応できなくなった場合には、手動でデータを削除することが必要になる場合があります。  
+# <a name="how-to-manually-purge-data-from-the-biztalk-tracking-database"></a>BizTalk 追跡データベースからデータを手動で削除する方法
+DTA Archive and Purge SQL Server エージェント ジョブには、格納された追跡データの圧縮、データベースの連続的な削除のための BizTalk 追跡 (BizTalkDTADb) データベースからデータを手動で削除する必要があます。 BizTalk 追跡 (BizTalkDTADb) データベースには、その程度のパフォーマンスが低下が大きくなった場合にデータが発生している削除と、DTA Archive は手動でする必要があり、Purge ジョブで、データベースの成長続けることができます。  
   
 > [!CAUTION]
->  ここで示す手順を実行すると、完了時刻に関係なく、完了したインスタンスのすべての追跡データが BizTalk 追跡 (BizTalkDTADb) データベースから削除されます。 この手順を実行する前に、BizTalk 追跡 (BizTalkDTADb) データベースを、他の [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] データベースとは別にアーカイブする必要があります。  
+>  この手順を実行すると、完成したインスタンスのすべての追跡データが完了時間に関係なく、BizTalk 追跡 (BizTalkDTADb) データベースから削除します。 この手順を実行する前に、他の個別に BizTalk 追跡 (BizTalkDTADb) データベースをアーカイブする必要があります[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]データベース。  
   
 ## <a name="prerequisites"></a>前提条件  
  この手順を実行するには、SQL Server sysadmin 固定サーバーの役割のメンバーであるアカウントを使用してログオンする必要があります。  
@@ -38,15 +38,15 @@ SQL Server エージェント ジョブである DTA Archive and Purge では、
   
 2. BizTalk 追跡 (BizTalkDTADb) データベースをアーカイブします。  
   
-3. サービス コンソールを開きます。 クリックして**開始**、 をクリックして**実行**、し、入力**services.msc**します。 場合、**ユーザー アカウント制御**ダイアログが表示されたら、クリックして**続行**します。  
+3. サービス コンソールを開きます。 をクリックして**開始**、 をクリックして**実行**、し、入力**services.msc**です。 場合、**ユーザー アカウント制御**ダイアログが表示されたら、クリックして**続行**します。  
   
-4. サービス コンソールが表示されたら、次の各サービスを検索して停止します。 サービスを停止するには、サービス行を右クリックして、**サービス**ペイン、およびクリック**停止**します。  
+4. サービス コンソールが表示されたらを検索して、次のサービスそれぞれを停止します。 サービスを停止するには、サービス行を右クリックして、**サービス**ペイン、およびクリック**停止**します。  
   
-   -   ときに BizTalkServiceBizTalkGroup: BizTalkServerApplication  
+   -   ときに BizTalkServiceBizTalkGroup:BizTalkServerApplication  
   
    -   エンタープライズ シングル サインオン サービス  
   
-        場合、ときに BizTalkServiceBizTalkGroup: BizTalkServerApplication サービスが実行されている、エンタープライズ シングル サインオン サービスをシャット ダウンしようとすると、**その他のサービスの停止**ダイアログが表示されます。 **[はい]** をクリックします。  
+        場合、ときに BizTalkServiceBizTalkGroup:[Biztalkserverapplication] サービスが実行されている、エンタープライズ シングル サインオン サービスをシャット ダウンしようとすると、**その他のサービスの停止**ダイアログが表示されます。 **[はい]** をクリックします。  
   
    -   ルール エンジン更新サービス  
   
@@ -62,9 +62,9 @@ SQL Server エージェント ジョブである DTA Archive and Purge では、
   
      **net stop iisadmin/y**  
   
-     これで、IIS Admin Service とこのサービスが依存しているすべてのサービスが 1 つずつ停止され、データの削除中に新しいデータが BizTalkDTADb に書き込まれるのを防止できます。 各サービスが停止されるたびに、サービスの一覧を書き留めておいてください。 このサービスの一覧は、後で IIS を再起動するときに必要になります。  
+     これにより、IIS 管理サービスと、すべての依存サービスを 1 つずつ停止し、新しいデータがデータが削除されるときに、BizTalkDTADb に書き込まれることを防ぎます。 各 1 つが停止しているように、サービスの一覧を書き留めます。 IIS を再起動するときに、この後でサービスの一覧を使用する必要があります。  
   
-     このコマンドを発行した後に表示される出力の例を次に示します (コンピューターに表示される依存サービスは異なる場合があります)。  
+     (コンピューターに表示される依存サービスが異なる場合があります)、このコマンドを発行後に表示される出力の例を次に示します。  
   
     ```  
     The following services are dependent on the IIS Admin Service service. Stopping the IIS Admin Service service will also stop these services.  
@@ -82,13 +82,13 @@ SQL Server エージェント ジョブである DTA Archive and Purge では、
   
 14. **プロシージャの実行**ダイアログ ボックスで、をクリックして**OK**します。  
   
-     このストアド プロシージャにより、完了時刻に関係なく、完了したインスタンスに関連付けられたすべての追跡データが削除されます。  
+     このストアド プロシージャは、完了時刻に関係なく完了したインスタンスに関連付けられているすべての追跡データを削除します。  
   
-15. [サービス] を開きます。 クリックして**開始**、 をクリックして**実行**、し、入力**services.msc**します。 場合、**ユーザー アカウント制御**ダイアログが表示されたら、示されているアクションが、クリックしてであることを確認**続行**します。  
+15. [サービス] を開きます。 をクリックして**開始**、 をクリックして**実行**、し、入力**services.msc**です。 場合、**ユーザー アカウント制御**ダイアログが表示されたら、示されているアクションが、クリックしてであることを確認**続行**します。  
   
 16. 次のサービスのそれぞれを右クリックし をクリックし、**開始**:  
   
-    -   ときに BizTalkServiceBizTalkGroup: BizTalkServerApplication  
+    -   ときに BizTalkServiceBizTalkGroup:BizTalkServerApplication  
   
     -   エンタープライズ シングル サインオン サービス  
   
@@ -106,7 +106,7 @@ SQL Server エージェント ジョブである DTA Archive and Purge では、
   
      **net start**  *\<IISserviceName\>*  
   
-     場所*\<IISserviceName\>* 再起動する IIS サービスの名前を指定します。 各 IIS サービスに対してこのコマンドを繰り返し実行する必要があります。  
+     場所*\<IISserviceName\>* 再起動する IIS サービスの名前を指定します。 各 IIS サービスは、このコマンドを繰り返す必要があります。  
   
 ## <a name="see-also"></a>参照  
  [アーカイブおよび BizTalk 追跡データベースの削除](../core/archiving-and-purging-the-biztalk-tracking-database.md)   

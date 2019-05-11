@@ -12,12 +12,12 @@ caps.latest.revision: 25
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d9e0f1959563b0a0f1273de6341e2402f90f8f34
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 454b2465072ed6cbdb19a1ac6b7cdae672698aeb
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36995451"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65363401"
 ---
 # <a name="prequisities-for-the-wcf-lob-adapter-sdk-tutorials"></a>WCF LOB Adapter SDK のチュートリアルの Prequisities
 このセクションでは、それらを完了するために必要なソフトウェアと同様に、チュートリアルを最大限に慣れておく必要がある概念について説明します。  
@@ -37,7 +37,7 @@ ms.locfileid: "36995451"
   
 - Microsoft SharePoint  
   
-- Microsoft SharePoint の SDK  
+- Microsoft SharePoint SDK  
   
 > [!CAUTION]
 >  実稼働環境では、これらのチュートリアルを実行しません。  
@@ -57,7 +57,7 @@ ms.locfileid: "36995451"
   
 - .NET Framework  
   
-  チュートリアルを開始する前にことが便利な場合は、この SDK の概念説明のトピックを確認し、チャネルでの基本的な知識がある[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]、内の型を含む、 **T:Microsoft.ServiceModel.Channels**と**T:Microsoft.ServiceModel.Channels.Common**名前空間。  チャネルの詳細については、、[チャネル モデルの概要](https://msdn.microsoft.com/library/ms729840.aspx)を参照してください。  
+  チュートリアルを開始する前にことが便利な場合は、この SDK の概念説明のトピックを確認し、チャネルでの基本的な知識がある[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]、内の型を含む、 **T:Microsoft.ServiceModel.Channels**と**T:Microsoft.ServiceModel.Channels.Common**名前空間。  チャネルの詳細については、次を参照してください。、[チャネル モデルの概要](https://msdn.microsoft.com/library/ms729840.aspx)します。  
   
 ## <a name="see-also"></a>参照  
  [WCF LOB Adapter SDK についてのチュートリアル](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorials-to-learn-the-wcf-lob-adapter-sdk.md)

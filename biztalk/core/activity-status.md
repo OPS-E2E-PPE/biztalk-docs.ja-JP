@@ -1,5 +1,5 @@
 ---
-title: アクティビティの状態 |Microsoft ドキュメント
+title: アクティビティの状態 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -18,12 +18,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3ca252b4c55561b783ed3be53cd5779974b78205
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e054e93b5ed929d0b7da300cc80a557a81a643e3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22224642"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65361572"
 ---
 # <a name="activity-status"></a>アクティビティの状態
 結果の詳細の [アクティビティの状態] 領域を使用すると、結果項目のすべての詳細情報を 1 ページで確認できます。  
@@ -33,5 +33,5 @@ ms.locfileid: "22224642"
 ## <a name="milestones"></a>Milestones  
  [マイルストーン] 領域には、選択したアクティビティについて定義されているすべてのマイルストーンが表示されます。 マイルストーン データでは、マイルストーンに到達した日時が表示されます。 マイルストーンの中には、受注の承認済みマイルストーンと拒否マイルストーンなど、相互排他的なものもあります。 相互排他的なマイルストーンの場合、一方についてはマイルストーンの日時が表示されますが、他方は、そのマイルストーンに対するデータが存在しないことを示す空白になります。  
   
-## <a name="data"></a>Data  
+## <a name="data"></a>data  
  [データ] 領域には、選択したアクティビティについて定義されているすべてのデータ項目が表示されます。 データ項目は、アルファベット順に表示されます。

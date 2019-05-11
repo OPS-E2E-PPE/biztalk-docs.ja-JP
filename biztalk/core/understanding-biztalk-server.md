@@ -1,5 +1,5 @@
 ---
-title: Understanding BizTalk Server |Microsoft ドキュメント
+title: Understanding BizTalk Server |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,24 +12,24 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 58bd3835325d7c432b4cfe1c9dc8126a00b2f466
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b10299ce380057cbefef4aecc0100e71ac239d92
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22286666"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65292659"
 ---
 # <a name="understanding-biztalk-server"></a>Understanding BizTalk Server
 > [!NOTE]
->  このセクションの内容は、David chappell 氏が、ホワイト ペーパー「Understanding BizTalk Server 2006」に基づいています。 David chappell 氏はプリンシパルの Chappell & Associates ([http://go.microsoft.com/fwlink/?LinkId=21434](http://go.microsoft.com/fwlink/?LinkId=21434))、カリフォルニア州サンフランシスコにします。  
+>  このセクションの内容は David chappell ホワイト ペーパー「Understanding BizTalk Server 2006」に基づきます。 David chappell 氏はある Chappell & Associates ([http://go.microsoft.com/fwlink/?LinkId=21434](http://go.microsoft.com/fwlink/?LinkId=21434))、カリフォルニア州サンフランシスコでします。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [BizTalk Server の紹介](../core/introducing-biztalk-server.md)  
+-   [BizTalk Server の概要](../core/introducing-biztalk-server.md)  
   
 -   [BizTalk Server メッセージング エンジン](../core/the-biztalk-server-messaging-engine.md)  
   
--   [BizTalk Server を使用して取引先管理](../core/trading-partner-management-using-biztalk-server.md)  
+-   [BizTalk Server を使用して取引先のパートナー管理](../core/trading-partner-management-using-biztalk-server.md)  
   
 -   [インフォメーション ワーカー テクノロジ](../core/information-worker-technologies.md)  
   

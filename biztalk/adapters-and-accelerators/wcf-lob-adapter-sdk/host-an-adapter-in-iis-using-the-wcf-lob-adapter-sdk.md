@@ -12,15 +12,15 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 570c844b7e41c8fd4deb340e6a0ce1bf598ae24b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 51d6958bb740b3707748459281769077eb69d008
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36976139"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65363604"
 ---
 # <a name="host-an-adapter-in-iis-using-the-wcf-lob-adapter-sdk"></a>WCF LOB Adapter SDK を使用して、IIS でアダプターをホストします。
-このセクションを使用して構築されたアダプターをホストする方法について説明、[!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)]インターネット インフォメーション サービス (IIS)。 その他のホスティング オプションの詳細については、[ホスティング サービス](https://msdn.microsoft.com/library/ms730158.aspx)を参照してください。
+このセクションを使用して構築されたアダプターをホストする方法について説明、[!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)]インターネット インフォメーション サービス (IIS)。 その他のホスティング オプションの詳細については、次を参照してください。[ホスティング サービス](https://msdn.microsoft.com/library/ms730158.aspx)します。
 
 ## <a name="use-iis-and-aspnet"></a>IIS と ASP.NET を使用して、
  IIS は、WCF LOB Adapter SDK で作成されたアダプターの発行を有効になっている ASP.NET で使用することができます。 によって作成されたアダプターをホストする、 [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]、WCF サービスを公開するためにインターネット インフォメーション サービス (IIS) を構成します。 次に、ASP.NET、WCF adapterwith を使用する方法を検討してください。
@@ -85,10 +85,10 @@ ms.locfileid: "36976139"
        |**IncludeExceptionDetailsinFault**|この値を設定**True**をクライアントに SOAP エラー マネージ例外情報で結果が返されます。 これを変更しても設定できます\< **serviceDebug usingincludeExceptionDetailInFaults =""** \> web.config にします。既定値は**False**します。|  
        |**名前**|サービス動作の構成の名前です。|  
        |**UseServiceCertificate**|この値は、サービスがクライアント プロセスに自身を認証する X.509 証明書を使用しているかどうかを決定します。 既定値は**True**します。|  
-       |**FindValue**|この値は、証明書ストアに特定の X.509 証明書の検索に使用されます。 これを変更しても設定できます\< **serviceCredentials findValue =""** \> web.config**注:** 場合にのみ、このプロパティの値を指定**UseServiceCertificate**に設定されている**True**します。|  
+       |**FindValue**|この値は、証明書ストアに特定の X.509 証明書の検索に使用されます。 これを変更しても設定できます\< **serviceCredentials findValue =""** \> web.config**に注意してください。** 場合にのみ、このプロパティの値を指定**UseServiceCertificate**に設定されている**True**します。|  
        |**StoreLocation**|この値は、指定された証明書を検索するシステム ストアの場所を指定します。 これを変更しても設定できます\< **serviceCredentials storeLocation =""** \> web.config にします。**注:** 場合にのみ、このプロパティの値を指定**UseServiceCertificate**に設定されている**True**します。|  
-       |**StoreName**|この値は、指定された証明書を検索する特定のシステム ストアを指定します。 これを変更しても設定できます\< **serviceCredentials storeName =""** \> web.config**注:** 場合にのみ、このプロパティの値を指定**UseServiceCertificate**に設定されている**True**します。|  
-       |**X509FindType**|使用する特定の証明書を確認するには、検索を使用した、FindValue の型が前に指定します。 これを変更しても設定できます\< **serviceCredentials x509FindType =""** \> web.config**注:** 場合にのみ、このプロパティの値を指定**UseServiceCertificate**に設定されている**True**します。|  
+       |**StoreName**|この値は、指定された証明書を検索する特定のシステム ストアを指定します。 これを変更しても設定できます\< **serviceCredentials storeName =""** \> web.config**に注意してください。** 場合にのみ、このプロパティの値を指定**UseServiceCertificate**に設定されている**True**します。|  
+       |**X509FindType**|使用する特定の証明書を確認するには、検索を使用した、FindValue の型が前に指定します。 これを変更しても設定できます\< **serviceCredentials x509FindType =""** \> web.config**に注意してください。** 場合にのみ、このプロパティの値を指定**UseServiceCertificate**に設定されている**True**します。|  
 
    2.  **エンドポイント動作の構成**セクションは、エンドポイントの動作を制御します。  
 
@@ -96,8 +96,8 @@ ms.locfileid: "36976139"
        |--------------|-----------------|  
        |**名前**|エンドポイントの動作の名前|  
        |**AuthenticationType**|この値は、クライアントの受信ドキュメントの資格情報を取得する場所をアダプターに指示します。 設定、サービスに対する認証にクライアント証明書を指定するクライアントを有効にする**ClientCredentialUsernamePassword**します。 設定する HTTP ヘッダーの一部として、ユーザー名とパスワードを指定するクライアントを有効にする、 **HTTPUsernamePassword**します。 設定、ClientCredential インターフェイスを通じて資格情報を指定するクライアントを有効にする**自動**します。これが失敗すると、クライアントは、HTTP ヘッダーの一部として資格情報を渡すことができます。<br /><br /> この値は変更することによっても設定する\< **endpointBehavior adapterSecurityBridgeType** \> web.config にします。既定値は**自動**します。|  
-       |**UsernameHeader**|これには、サービスにユーザー名を渡すために使用されるヘッダーの名前を指定します。 HTTP ヘッダーの詳細については、用に「カスタム HTTP および SOAP ヘッダーのサポート」を参照してください。 [http://go.microsoft.com/fwlink/?LinkId=106692](http://go.microsoft.com/fwlink/?LinkId=106692)<br /><br /> この値は変更することによっても設定する\< **endpointBehavior usernameHttpHeader** \> web.config にします。**注:** 場合は、このプロパティの値を指定する必要があります、 **AuthenticationType**に設定されている**HTTPUserNamePassword**します。  場合設定**自動**、このプロパティは省略可能です。|  
-       |**PasswordHeader**|これには、サービスにユーザーのパスワードを渡すに使用されるヘッダーの名前を指定します。 HTTP ヘッダーの詳細についてを参照してください「のサポートのカスタム HTTP ヘッダーと SOAP ヘッダー」 [http://go.microsoft.com/fwlink/?LinkId=106692](http://go.microsoft.com/fwlink/?LinkId=106692)<br /><br /> この値は、変更することによっても設定できます <**endpointBehavior passwordHttpHeader**< web.config にします。**注:** 場合は、このプロパティの値を指定する必要があります、 **AuthenticationType**に設定されている**HTTPUserNamePassword**します。 場合設定**自動**、このプロパティは省略可能です。|  
+       |**UsernameHeader**|これには、サービスにユーザー名を渡すために使用されるヘッダーの名前を指定します。 HTTP ヘッダーの詳細については、用に「カスタム HTTP および SOAP ヘッダーのサポート」を参照してください。 [http://go.microsoft.com/fwlink/?LinkId=106692](http://go.microsoft.com/fwlink/?LinkId=106692)<br /><br /> この値は変更することによっても設定する\< **endpointBehavior usernameHttpHeader** \> web.config にします。**注:** 場合、このプロパティの値を指定する必要があります、 **AuthenticationType**に設定されている**HTTPUserNamePassword**します。  場合設定**自動**、このプロパティは省略可能です。|  
+       |**PasswordHeader**|これには、サービスにユーザーのパスワードを渡すに使用されるヘッダーの名前を指定します。 HTTP ヘッダーの詳細についてを参照してください「のサポートのカスタム HTTP ヘッダーと SOAP ヘッダー」 [http://go.microsoft.com/fwlink/?LinkId=106692](http://go.microsoft.com/fwlink/?LinkId=106692)<br /><br /> この値は、変更することによっても設定できます <**endpointBehavior passwordHttpHeader**< web.config にします。**注:** 場合、このプロパティの値を指定する必要があります、 **AuthenticationType**に設定されている**HTTPUserNamePassword**します。 場合設定**自動**、このプロパティは省略可能です。|  
 
    3.  目的の動作を設定した後には、次のようにクリックします。**次**を続行します。  
 

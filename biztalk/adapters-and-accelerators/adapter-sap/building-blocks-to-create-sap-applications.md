@@ -16,12 +16,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e0ff492d48538a54313d85202618e099e984fc3e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 39e3b5aefa7a2f68945e300556d084fb2aed99dd
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37006027"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373963"
 ---
 # <a name="building-blocks-to-create-sap-applications"></a>SAP アプリケーションを作成する構成要素
 使用して SAP システムの操作を実行する[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]アクティビティの 2 つのセットが含まれます: デザイン時および実行時のアクティビティ。 使用して、SAP システムの操作を実行する、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]で[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]を使用して、デザイン時および実行時のタスクのセットを実行する必要があります[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]と[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールでそれぞれします。 このセクションでは、これらのタスクの概要を示します。 このセクションで例を使用して SAP システムで特定の操作を実行する方法を示すすべてのトピック[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]、これらの高度なタスクをモデル化されます。  
@@ -29,7 +29,7 @@ ms.locfileid: "37006027"
 ## <a name="design-time-tasks"></a>デザイン時のタスク  
  [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]参照、検索、および Rfc、Bapi、および使用して XML スキーマ定義言語 (Xsd) の形式で Idoc を SAP メタデータを取得する機能を提供、[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]または[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]します。 Xsd は、SAP システムで実行する操作に固有と[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]または[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]は BizTalk プロジェクトを作成する場合にのみ使用できます。 デザイン時に、次のタスクを実行する必要があります。  
   
-- **BizTalk プロジェクトを作成し、スキーマ生成**します。 最初に、Microsoft で BizTalk プロジェクトを作成する必要があります[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]や、SAP システムの呼び出しは、RFC のスキーマを生成します。 たとえば、SAP システムで RFC_CUSTOMER_GET を呼び出す場合は、RFC_CUSTOMER_GET のメタデータを生成する必要があります。 この手順で使用して、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]または[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]スキーマを生成します。 詳細については、[Visual Studio で SAP 操作のメタデータの取得](../../adapters-and-accelerators/adapter-sap/get-metadata-for-sap-operations-in-visual-studio.md)を参照してください。  
+- **BizTalk プロジェクトを作成し、スキーマ生成**します。 最初に、Microsoft で BizTalk プロジェクトを作成する必要があります[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]や、SAP システムの呼び出しは、RFC のスキーマを生成します。 たとえば、SAP システムで RFC_CUSTOMER_GET を呼び出す場合は、RFC_CUSTOMER_GET のメタデータを生成する必要があります。 この手順で使用して、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]または[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]スキーマを生成します。 詳細については、次を参照してください。 [Visual Studio で SAP 操作のメタデータの取得](../../adapters-and-accelerators/adapter-sap/get-metadata-for-sap-operations-in-visual-studio.md)します。  
   
 - **オーケストレーションを設定**します。 スキーマを生成した後、オーケストレーション デザイナーを使用してオーケストレーションを設定する必要があります。 基本的なオーケストレーションには、受信と送信図形とし、受信論理ポートの送信を追加します。 後の手順では、BizTalk Server 管理コンソールを使用して物理ポートにこれらの論理ポートをマップします。 オーケストレーションでは、これらのポートを使用して、クライアントがアダプターから送信されるメッセージを選択します。 オーケストレーションは、SAP システムにメッセージを渡します。 SAP システムからの応答が受信されると、オーケストレーションは、アダプターのクライアントへの応答を渡します。  
   

@@ -1,5 +1,5 @@
 ---
-title: アセンブリおよび Itinerary 入り口サンプルがインストールされているアイテム |Microsoft ドキュメント
+title: アセンブリと、スケジュール オンランプ サンプルによりインストールされているアイテム |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,15 +12,15 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 34b9c6337a502a394dc01c54f3beda6cc8c9413c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f60f70070d871c8c72ac9581468d1c0409304556
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22290130"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65392214"
 ---
-# <a name="assemblies-and-artifacts-installed-by-the-itinerary-on-ramp-sample"></a>アセンブリおよび Itinerary 入り口サンプルがインストールされているアイテム
-次の表は、アセンブリおよびによってインストールされているアイテム、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]行程入り口サンプルです。  
+# <a name="assemblies-and-artifacts-installed-by-the-itinerary-on-ramp-sample"></a>アセンブリと、スケジュール オンランプ サンプルによりインストールされているアイテム
+次の表は、アセンブリとインストールされている成果物、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]行程サンプル。  
   
 |場所|カテゴリ|コンポーネントの名前とバージョン|  
 |--------------|--------------|---------------------------------------|  

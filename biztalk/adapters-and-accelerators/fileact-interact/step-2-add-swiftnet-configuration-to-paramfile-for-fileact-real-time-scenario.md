@@ -1,5 +1,5 @@
 ---
-title: '手順 2: FileAct リアルタイム シナリオ用に Paramfile に SWIFTNet 構成を追加 |Microsoft Docs'
+title: 手順 2:FileAct リアルタイム シナリオ用に Paramfile に SWIFTNet 構成を追加 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,24 +12,24 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f40da4b503a5b29e161b376fc25f535c338f5f42
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 0acfd70f479aec6c7557fcdf9a87c10f839502be
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37010563"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65366458"
 ---
-# <a name="step-2-add-swiftnet-configuration-to-the-paramfile-for-the-fileact-real-time-scenario"></a>手順 2: は、FileAct リアルタイム シナリオ用に Paramfile に SWIFTNet 構成を追加します。
+# <a name="step-2-add-swiftnet-configuration-to-the-paramfile-for-the-fileact-real-time-scenario"></a>手順 2:FileAct リアルタイム シナリオ用に Paramfile に SWIFTNet 構成を追加します。
 これらの値で初期化するために受信者を有効にする SWIFTNet に paramfile に SAG で作成したサーバー メッセージのパートナーを指定する必要があります。  
   
- この手順を開始する前に行う必要があります[手順 1: FileAct リアルタイム シナリオ用に SWIFT アダプターを構成する](../../adapters-and-accelerators/fileact-interact/step-1-configure-the-swift-adapter-for-the-fileact-real-time-scenario.md)します。  
+ この手順を開始する前に行う必要があります[手順 1。FileAct リアルタイム シナリオ用に SWIFT アダプターを構成する](../../adapters-and-accelerators/fileact-interact/step-1-configure-the-swift-adapter-for-the-fileact-real-time-scenario.md)します。  
   
 ### <a name="to-add-swiftnet-configuration-to-the-paramfile"></a>Paramfile に SWIFTNet 構成を追加するには  
   
 1. Paramfile をメモ帳などのテキスト エディターで開きます。  
   
    > [!NOTE]
-   >  位置に paramfile にある通常: C:\SWIFTAlliance\RA\Ra1\cfg\paramfile  
+   >  位置に paramfile にある通常。C:\SWIFTAlliance\RA\Ra1\cfg\paramfile  
   
 2. Paramfile では、サーバー メッセージのパートナー名を指定する、強調表示されている変更を行います。  
   
@@ -67,9 +67,9 @@ ms.locfileid: "37010563"
   
     \#subsystem_name:User  
   
-    \## subsystem_group:user  
+    \##subsystem_group:user  
   
-    \## subsystem_dependency:  
+    \##subsystem_dependency:  
   
     \#subsystem_nature: 重大  
   
@@ -91,6 +91,6 @@ ms.locfileid: "37010563"
   
 ## <a name="see-also"></a>参照  
  [FileAct リアルタイム シナリオ](../../adapters-and-accelerators/fileact-interact/fileact-real-time-scenario.md)   
- [手順 1: FileAct リアルタイム シナリオ用に SWIFT アダプターを構成します。](../../adapters-and-accelerators/fileact-interact/step-1-configure-the-swift-adapter-for-the-fileact-real-time-scenario.md)   
- [手順 3: 送信ポートを作成および FileAct リアルタイム シナリオ用の受信ポート](../../adapters-and-accelerators/fileact-interact/step-3-create-the-send-ports-and-receive-ports-for-fileact-real-time-scenario.md)   
- [手順 4: FileAct リアルタイム エンド ツー エンド シナリオをテストする](../../adapters-and-accelerators/fileact-interact/step-4-test-fileact-real-time-end-to-end-scenario.md)
+ [ステップ 1: FileAct リアルタイム シナリオ用に SWIFT アダプターを構成します。](../../adapters-and-accelerators/fileact-interact/step-1-configure-the-swift-adapter-for-the-fileact-real-time-scenario.md)   
+ [ステップ 3:送信ポートを作成および FileAct リアルタイム シナリオ用の受信ポート](../../adapters-and-accelerators/fileact-interact/step-3-create-the-send-ports-and-receive-ports-for-fileact-real-time-scenario.md)   
+ [手順 4:FileAct リアルタイム エンド ツー エンド シナリオをテストします。](../../adapters-and-accelerators/fileact-interact/step-4-test-fileact-real-time-end-to-end-scenario.md)

@@ -1,5 +1,5 @@
 ---
-title: XSD スキーマとして表されるメッセージ |Microsoft ドキュメント
+title: メッセージは、XSD スキーマとして表される |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,15 +16,15 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 47242dc01ed05ca2ab3c2cb71daffc5a81f9462c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 37c15de5c7bbf4c5d8639c1d05a427d48686b58b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22262970"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65324961"
 ---
 # <a name="messages-represented-as-xsd-schemas"></a>XSD スキーマとして表されるメッセージ
-XSD メッセージの種類のテンプレート XML インスタンスは、デザイン時に定義されてディスクに格納されます。 実行時には、XML は .NET コンポーネントによってディスクから取得され、XmlDocument として返されます。 オーケストレーション コードでは、オーケストレーションで宣言されているメッセージ インスタンスに、この XmlDocument 結果を割り当てることができます。  
+XSD メッセージの種類のテンプレート XML インスタンスがデザイン時に定義されているし、ディスクに格納されます。 実行時に、.NET コンポーネントはディスクから XML を取得し、XmlDocument として返されます。 オーケストレーション コードでは、オーケストレーションで宣言されているメッセージ インスタンスにこの XmlDocument 結果を割り当てることができます。  
   
  **メッセージの割り当て**形状に 1 行のコードがあります。  
   
@@ -32,7 +32,7 @@ XSD メッセージの種類のテンプレート XML インスタンスは、�
 MsgOut = CreateMsgHelper.Helper.GetXmlDocumentTemplate();  
 ```  
   
- XmlDocument を作成するヘルパー コンポーネントには、次に示す単一の静的メソッドが含まれています。  
+ XmlDocument を作成するヘルパー コンポーネントには、1 つの静的メソッドがあります。  
   
 ```  
 private static XmlDocument _template = null;  
@@ -75,4 +75,4 @@ public static XmlDocument GetXmlDocumentTemplate()
 ## <a name="see-also"></a>参照  
  [.NET クラスとして表されるメッセージ](../core/messages-represented-as-net-classes.md)   
  [XLANGMessage として表されるメッセージ](../core/messages-represented-as-xlangmessage.md)   
- [ユーザー コードでメッセージの構築](../core/constructing-messages-in-user-code.md)
+ [ユーザー コードでのメッセージの構築](../core/constructing-messages-in-user-code.md)

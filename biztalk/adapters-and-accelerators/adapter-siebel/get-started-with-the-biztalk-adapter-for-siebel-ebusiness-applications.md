@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8f4d03e8b85811db6ea7fe7bcde5bf37f93b255d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 934d3f40e79d95b7fd5d471e981386bb39dff3a0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36968947"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65371566"
 ---
 # <a name="get-started-with-the-biztalk-adapter-for-siebel-ebusiness-applications"></a>BizTalk Adapter for Siebel eBusiness Applications の概要します。
 このセクションでは、Microsoft に新しいユーザーのアダプター、前提条件、およびトピックの概要を提供する[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]します。 機能について説明します[!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]とアダプターを使用して Siebel システムで実行できるさまざまな操作です。  

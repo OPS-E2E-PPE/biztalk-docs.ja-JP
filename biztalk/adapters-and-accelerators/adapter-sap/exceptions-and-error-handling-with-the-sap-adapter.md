@@ -16,12 +16,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5439ae9cc58dfbb649fefd7ae3f18348502bcd48
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9d609e456e835cc14288f239bb53b252eb58f7e9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36991627"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373449"
 ---
 # <a name="exceptions-and-error-handling-with-the-sap-adapter"></a>例外と SAP アダプターを使用したエラーの処理
 例外の一覧を表示する、[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]をスローします。 これらを含めることができます。  

@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f4bc572cc18ca7d9d5515fe9f189287df5d1440f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 26aaca5ce206e8ef320b61959f04f5e0fd5657a1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37022952"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65366530"
 ---
 # <a name="read-the-installation-known-issues"></a>インストールをに関する既知の問題
 [!INCLUDE[swift_adapter](../../includes/swift-adapter-md.md)] 既知の問題は、次のセクションに表示されます。  
@@ -27,9 +27,9 @@ ms.locfileid: "37022952"
   
  さらに、すべてのノード (サーバー、線、および帯域幅) が、データの損失を回避するために正しく構成されていることを確認する必要があります。 スループットの一般的なサンプルを次に示します。  
   
-- 高負荷のコンピューターに属する操作/Fileact の送信: 20 メッセージ/分  
+- 操作/Fileact のストレスがコンピューターに属する送信:20 メッセージ/分  
   
-- 高負荷のコンピューターに属する操作/Fileact の受信: 300 ~ 400 メッセージ/分  
+- 操作/Fileact のストレスがコンピューターに属する受信:300 ~ 400 メッセージ/分  
   
   詳細については、SWIFT、マニュアルを参照してください。  
   

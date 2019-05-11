@@ -1,6 +1,6 @@
 ---
-title: メッセージのポーリングと biztalk SQL アダプターの TypedPolling 操作のスキーマ |Microsoft ドキュメント
-description: ポーリングと TypedPolling メッセージの BizTalk アダプター パック (BAP) で SQL アダプターによって使用される構造体
+title: ポーリングと TypedPolling 操作では、BizTalk SQL アダプターのメッセージ スキーマ |Microsoft Docs
+description: SQL アダプターの BizTalk アダプター パック (BAP) によって使用される構造をメッセージのポーリングと TypedPolling
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -13,21 +13,21 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0cd6a281bfca73e74f23ce25bb9fa08761a07789
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 4930e854bcad679a3b6ab8c3e90150ad3e879c98
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25964864"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65368612"
 ---
-# <a name="message-schemas-for-the-polling-and-typedpolling-operations"></a>ポーリングと TypedPolling 操作のメッセージ スキーマ
-[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]サーフェスのポーリングと TypedPolling 受信アダプターのクライアントに、ポーリング クエリの結果セットを返す操作。  
+# <a name="message-schemas-for-the-polling-and-typedpolling-operations"></a>Polling 操作と TypedPolling 操作のメッセージ スキーマ
+[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)] Polling 操作と TypedPolling サーフェスの受信アダプターのクライアントに、ポーリング クエリの結果セットを返す操作。  
   
- バインドのプロパティを設定して、ポーリングおよび TypedPolling 操作を構成する、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]です。 これらのバインド プロパティの詳細については、次を参照してください。 [SQL Server のアダプターのバインド プロパティの BizTalk アダプターの説明を読む](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md)です。 設定する、 **PollingStatement** SQL ステートメントを指定するプロパティのバインド (SELECT または EXEC\<ストアド プロシージャ\>)、ポーリング クエリのです。 ポーリング操作で、コードへのデータおよび TypedPolling 操作の厳密に型指定されたデータとして、このクエリの結果セットが返されます。 結果セットの構造は、アダプターが、指定されたクエリのサーフェスをメタデータによって決定されます。  
+ バインドのプロパティを設定してポーリングと TypedPolling 操作を構成する、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]します。 これらのバインド プロパティの詳細については、次を参照してください。 [for SQL Server のアダプターのバインド プロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md)します。 設定する、 **PollingStatement** SQL ステートメントを指定するプロパティのバインド (SELECT または EXEC\<ストアド プロシージャ\>) のポーリング クエリ。 このクエリの結果セットは、ポーリング操作では、コードへのデータと TypedPolling 操作で厳密に型指定されたデータとして返されます。 結果セットの構造は、アダプターが指定されたクエリのサーフェスをメタデータによって決定されます。  
   
 ## <a name="polling-message-structure"></a>メッセージの構造のポーリング 
   
-**操作**:`Polling`
+**操作**: `Polling`
 
 **XML メッセージ**:  
 ```xml
@@ -43,12 +43,12 @@ ms.locfileid: "25964864"
  </Polling>
 ```
 
-**説明**: SQL Server によってアダプターのクライアントに送信される受信メッセージ。  
+**説明**:SQL Server によってアダプター クライアントに送信される受信メッセージ。  
 
 
-## <a name="typedpolling-message-structure"></a>TypedPolling メッセージの構造体 
+## <a name="typedpolling-message-structure"></a>TypedPolling メッセージの構造 
 
-**操作**:`TypedPolling`
+**操作**: `TypedPolling`
 
 **XML メッセージ**:  
 ```xml
@@ -60,12 +60,12 @@ ms.locfileid: "25964864"
   </TypedPollingResultSet>
 ```
 
-**説明**: SQL Server によってアダプターのクライアントに送信される厳密に型指定された受信メッセージ。
+**説明**:厳密に型指定された受信メッセージを SQL Server によってアダプター クライアントに送信されます。
   
-## <a name="message-action-for-the-polling-and-typedpolling-operations"></a>ポーリングと TypedPolling 操作のメッセージのアクション  
- メッセージ アクション、します。  
+## <a name="message-action-for-the-polling-and-typedpolling-operations"></a>Polling 操作と TypedPolling 操作のメッセージのアクション  
+ メッセージのアクションにします。  
   
--   ポーリング操作は、「ポーリングしています。」  
+-   ポーリング操作が「ポーリングします。」  
   
--   TypedPolling 操作は"TypedPolling"  
+-   TypedPolling 操作は、"TypedPolling"  
   

@@ -1,5 +1,5 @@
 ---
-title: Siebel ビジネス コンポーネントで SELECT クエリを実行 |Microsoft ドキュメント
+title: Siebel ビジネス コンポーネントで SELECT クエリを実行 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,18 +15,18 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 92b9bd5645579bb66a338c05802c5016214c9b0b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: bae686ace4f7feea8b5084f7d4844df61ea79807
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22221962"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65371130"
 ---
 # <a name="run-a-select-query-on-business-components-with-siebel"></a>Siebel ビジネス コンポーネントで SELECT クエリを実行します。
-このセクションでは、Siebel ビジネス コンポーネントを使用して、データを選択する方法を示します、[!INCLUDE[adoprovidersiebellong](../../includes/adoprovidersiebellong-md.md)]です。  
+このセクションで使用して Siebel ビジネス コンポーネントからデータを選択する方法を示す、[!INCLUDE[adoprovidersiebellong](../../includes/adoprovidersiebellong-md.md)]します。  
   
-## <a name="selecting-data-from-a-siebel-business-component"></a>Siebel ビジネス コンポーネントからデータを選択します。  
- このセクションでは、Siebel リポジトリに「アカウント」ビジネス コンポーネントからデータを選択する方法を示します。  
+## <a name="selecting-data-from-a-siebel-business-component"></a>Siebel ビジネス コンポーネントからデータを選択  
+ このセクションでは、Siebel リポジトリ内の「アカウント」ビジネス コンポーネントからデータを選択する方法を示します。  
   
 ```  
 using System;  
@@ -77,5 +77,5 @@ namespace SiebelADO
 ```  
   
 ## <a name="see-also"></a>参照  
- [Siebel eBusiness Applications の .NET Framework データ プロバイダーを使用します。](../../adapters-and-accelerators/adapter-siebel/use-the-net-framework-data-provider-for-siebel-ebusiness-applications.md)   
- [Siebel ビジネス サービスの実行操作を実行します。](../../adapters-and-accelerators/adapter-siebel/run-an-execute-operation-on-business-services-with-siebel.md)
+ [.NET Framework Data Provider 用 Siebel eBusiness Applications を使用して、](../../adapters-and-accelerators/adapter-siebel/use-the-net-framework-data-provider-for-siebel-ebusiness-applications.md)   
+ [Siebel ビジネス サービスに対して EXECUTE 操作を実行します。](../../adapters-and-accelerators/adapter-siebel/run-an-execute-operation-on-business-services-with-siebel.md)

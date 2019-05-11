@@ -2,15 +2,15 @@
 redirect_url: /biztalk/core/using-biztalk-server-exception-handling1/
 redirect_document_id: true
 ROBOTS: NOINDEX
-ms.openlocfilehash: ee3a5831246ad7c88e0150ff01dcd182873d6c5d
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: ed790fdf63c9619baa90db02dba3d4a7971b8ec5
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
-ms.locfileid: "24015849"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65359949"
 ---
 # <a name="administering-biztalk-adapter-for-jd-edwards-oneworld"></a>BizTalk Adapter for JD Edwards OneWorld の管理
-このセクションでは、BizTalk Adapter for JD Edwards OneWorld の管理情報について説明します。  
+このセクションでは、BizTalk Adapter for JD Edwards OneWorld の管理についての情報を提供します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

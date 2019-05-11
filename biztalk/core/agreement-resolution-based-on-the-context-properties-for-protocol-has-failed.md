@@ -12,14 +12,14 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a2cac1ea6e940385fceac541df96582f93eb058e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e5cb408e59f6817be9aa06f94d3b83d90f07c494
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37008171"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65359921"
 ---
-# <a name="agreement-resolution-based-on-the-context-properties-for-protocol-has-failed"></a>プロトコルに対するコンテキスト プロパティに基づくアグリーメントの解決が失敗しました
+# <a name="agreement-resolution-based-on-the-context-properties-for-protocol-has-failed"></a>アグリーメントのコンテキスト プロパティ プロトコルに基づく解決が失敗しました
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                        |
@@ -33,7 +33,7 @@ ms.locfileid: "37008171"
 |  メッセージ テキスト   |   コンテキスト プロパティに基づくアグリーメント解決{0}プロトコルが失敗しました。    |
   
 ## <a name="explanation"></a>説明  
- このエラー/警告/情報イベントは、BizTalk Server がユーザーによって指定されたコンテキスト プロパティに基づいてアグリーメントを解決できなかったことを示します。  
+ このエラー/警告/情報イベントは、BizTalk Server で、顧客が用意されているコンテキスト プロパティに基づいてアグリーメントを解決できなかったことを示します。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- このエラーを解決するには、アグリーメントの解決が実行されるように、BizTalk メッセージの一部としてコンテキスト プロパティを指定します。
+ このエラーを解決するには、コンテキスト プロパティの BizTalk メッセージの一部としてでの指定は、アグリーメントの解決が実行されるようにしてください。

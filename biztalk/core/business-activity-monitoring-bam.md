@@ -29,12 +29,12 @@ caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 258294a8a51e6f8e80e360668123e522acf6ff15
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: acac201eac5ec76c0d6f9d06a97c58aaa3b4af46
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36972307"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65357754"
 ---
 # <a name="business-activity-monitoring-bam"></a>ビジネス アクティビティ監視 (BAM)
 次の図に、ビジネス アクティビティ監視 (BAM) 機能のアーキテクチャを示します。  
@@ -44,20 +44,20 @@ ms.locfileid: "36972307"
 ## <a name="tools"></a>ツール  
  BAM と統合する BizTalk ソリューションのデザイン、開発、および展開には、次のツールを使用できます。  
   
--   **Microsoft Excel**します。 Excel 用の BAM アドインによって提供されるユーザー インターフェイスを使用して、ビジネス アナリストはアクティビティとビューを作成できます。 Excel はビジネス アナリストのデザイン ツールとして、およびビジネス ユーザーのデータ利用ツールとして機能します。 Excel 用 BAM アドインの詳細については、[Excel 用 BAM アドインを使用するための要件](../core/requirements-for-using-the-bam-add-in-for-excel.md)を参照してください。  
+-   **Microsoft Excel**します。 Excel 用の BAM アドインによって提供されるユーザー インターフェイスを使用して、ビジネス アナリストはアクティビティとビューを作成できます。 Excel はビジネス アナリストのデザイン ツールとして、およびビジネス ユーザーのデータ利用ツールとして機能します。 Excel 用 BAM アドインの詳細については、次を参照してください。 [Excel 用 BAM アドインを使用するための要件](../core/requirements-for-using-the-bam-add-in-for-excel.md)します。  
   
--   **BAM 管理ユーティリティ**します。 BAM 管理ユーティリティは、Excel で作成された BAM の定義を企業に展開するための展開ツールです。 BAM 管理ユーティリティでは、必要な SQL Server データベース、Analysis Services キューブ、SQL Notification Service データベース、および DTS タスクまたは SSIS タスク (インストールされている SQL Server のバージョンによって異なる) を作成します。 BAM マネージャーの詳細については、[BAM 管理ユーティリティ](../core/bam-management-utility.md)を参照してください。  
+-   **BAM 管理ユーティリティ**します。 BAM 管理ユーティリティは、Excel で作成された BAM の定義を企業に展開するための展開ツールです。 BAM 管理ユーティリティでは、必要な SQL Server データベース、Analysis Services キューブ、SQL Notification Service データベース、および DTS タスクまたは SSIS タスク (インストールされている SQL Server のバージョンによって異なる) を作成します。 BAM マネージャーの詳細については、次を参照してください。 [BAM 管理ユーティリティ](../core/bam-management-utility.md)します。  
   
--   **追跡プロファイル エディター**します。 追跡プロファイル エディターを使用すると、BizTalk 開発者は、ビジネス アナリストによって定義されたデータ要素をオーケストレーションやメッセージングを含む BizTalk 実装にマップできます。 追跡プロファイル エディターの詳細については、[追跡プロファイル エディター](../core/tracking-profile-editor.md)を参照してください。  
+-   **追跡プロファイル エディター**します。 追跡プロファイル エディターを使用すると、BizTalk 開発者は、ビジネス アナリストによって定義されたデータ要素をオーケストレーションやメッセージングを含む BizTalk 実装にマップできます。 追跡プロファイル エディターの詳細については、次を参照してください。[追跡プロファイル エディター](../core/tracking-profile-editor.md)します。  
   
--   **追跡プロファイルの展開ユーティリティ**します。 追跡プロファイルの展開ユーティリティを使用すると、IT プロフェッショナルは新しい追跡プロファイルや更新された追跡プロファイルを BAM インフラストラクチャに展開できます。 追跡プロファイルの展開ツールの詳細については、[追跡プロファイルの展開ユーティリティ](../core/tracking-profile-deployment-utility.md)を参照してください。  
+-   **追跡プロファイルの展開ユーティリティ**します。 追跡プロファイルの展開ユーティリティを使用すると、IT プロフェッショナルは新しい追跡プロファイルや更新された追跡プロファイルを BAM インフラストラクチャに展開できます。 追跡プロファイルの展開ツールの詳細については、次を参照してください。[追跡プロファイルの展開ユーティリティ](../core/tracking-profile-deployment-utility.md)します。  
   
 ## <a name="presentation"></a>効果  
  プレゼンテーション層は、次の要素で構成されています。  
   
-- **BAM ポータル**します。 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の BAM ポータルでは、ビジネス プロセスをリアルタイムで詳しく表示できます。 これは、ASP.NET ページのコレクションで構成される Web ベースの機能です。 BAM をカスタマイズすることにより、パフォーマンスとユーザー エクスペリエンスが向上します。 BAM ポータルの詳細については、[BAM ポータル](../core/bam-portal.md)を参照してください。  
+- **BAM ポータル**します。 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の BAM ポータルでは、ビジネス プロセスをリアルタイムで詳しく表示できます。 これは、ASP.NET ページのコレクションで構成される Web ベースの機能です。 BAM をカスタマイズすることにより、パフォーマンスとユーザー エクスペリエンスが向上します。 BAM ポータルの詳細については、次を参照してください。 [BAM ポータル](../core/bam-portal.md)します。  
   
-- **Microsoft Excel**します。 Excel 用の BAM アドインによって提供されるユーザー インターフェイスを使用して、ビジネス アナリストはアクティビティとビューを作成できます。 Excel はビジネス アナリストのデザイン ツールとして、およびビジネス ユーザーのデータ利用ツールとして機能します。 Excel 用 BAM アドインの詳細については、[Excel 用 BAM アドインを使用するための要件](../core/requirements-for-using-the-bam-add-in-for-excel.md)を参照してください。  
+- **Microsoft Excel**します。 Excel 用の BAM アドインによって提供されるユーザー インターフェイスを使用して、ビジネス アナリストはアクティビティとビューを作成できます。 Excel はビジネス アナリストのデザイン ツールとして、およびビジネス ユーザーのデータ利用ツールとして機能します。 Excel 用 BAM アドインの詳細については、次を参照してください。 [Excel 用 BAM アドインを使用するための要件](../core/requirements-for-using-the-bam-add-in-for-excel.md)します。  
   
 - **カスタム ユーザー インターフェイス**します。 ISV および開発者は、BAM データを表示するカスタム アプリケーションを作成できます。  
   

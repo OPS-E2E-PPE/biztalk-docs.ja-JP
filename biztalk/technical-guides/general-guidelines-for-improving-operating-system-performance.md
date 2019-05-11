@@ -12,12 +12,12 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a7674b1f7b9a24337985bcb7496c03cae88115de
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6263e9af9ce9ec826c887e04b398fa862edf0332
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37007883"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65392014"
 ---
 # <a name="general-guidelines-for-improving-operating-system-performance"></a>オペレーティング システムのパフォーマンスを向上させるための一般的なガイドライン
 次の一般的なガイドラインは、オペレーティング システムのパフォーマンスを向上させるために後にする必要があります。  
@@ -36,7 +36,7 @@ ms.locfileid: "37007883"
 ## <a name="enable-the-high-performance-power-plan-on-all-biztalk-server-and-sql-server-computers"></a>「高パフォーマンス」を有効にするすべての BizTalk Server と SQL Server コンピューターの電源プランします。  
  既定では、Windows Server 2008/2008 R2 セット (推奨) バランス電源プランで、電力の節約できますしますが、できます待機時間の増加 (いくつかのタスクの低速の応答時間) が発生して CPU 負荷の高いアプリケーションでパフォーマンスの問題が発生します。  
   
- 待機時間を短縮するために BizTalk Server を実行しているすべてのサーバーと SQL Server、Windows であることを確認する必要があります**電源プラン**設定**高性能**します。 切り替える方法について、**高性能**電源プラン、サポート技術情報の記事を参照してください: 2207548 [Windows Server 2008 R2 での全体的なパフォーマンスの低下](http://go.microsoft.com/fwlink/?LinkID=219677)(http://go.microsoft.com/fwlink/?LinkID=219677)します。  
+ 待機時間を短縮するために BizTalk Server を実行しているすべてのサーバーと SQL Server、Windows であることを確認する必要があります**電源プラン**設定**高性能**します。 切り替える方法について、**高性能**電源プラン、サポート技術情報の記事を参照してください。2207548 [Windows Server 2008 R2 での全体的なパフォーマンスの低下](http://go.microsoft.com/fwlink/?LinkID=219677)(http://go.microsoft.com/fwlink/?LinkID=219677)します。  
   
 ## <a name="evaluate-the-usage-of-intel-hyper-threading-on-biztalk-server-and-sql-server-computers"></a>Intel ハイパー スレッディングの BizTalk Server と SQL Server のコンピューターで評価します。  
   
@@ -46,9 +46,9 @@ ms.locfileid: "37007883"
   
     -   ハイパー スレッディングをオフにする SQL Server コンピューターで高レベルの (BizTalk Server) などの競合を引き起こす可能性のあるアプリケーションでは、SQL Server コンピューター上のハイパー スレッド環境でパフォーマンスの低下が生じるためです。  
   
--   **Nehalem ハイパースレッディング**: とは異なり、旧式のアーキテクチャで Intel microarchitecture"Nehalem"プロセッサでハイパー スレッディングの有効化を提供できますまでほぼ線形の容量の増加。 最適なパフォーマンスの結果、"Nehalem"プロセッサを展開するときにお勧めのスループットが大幅に増加するためのテクノロジの Intel ハイパー スレッド (H T) を有効にすると、コンピューターの BIOS を構成すること。  
+-   **Nehalem ハイパースレッディング**:異なり、旧式のアーキテクチャで Intel microarchitecture"Nehalem"プロセッサでハイパー スレッディングの有効化を提供できますまでほぼ線形の容量の増加。 最適なパフォーマンスの結果、"Nehalem"プロセッサを展開するときにお勧めのスループットが大幅に増加するためのテクノロジの Intel ハイパー スレッド (H T) を有効にすると、コンピューターの BIOS を構成すること。  
   
--   **ハードウェア仮想化**: 仮想マシンが仮想プロセッサを使用してハードウェア仮想化を使用する場合。 利用可能な Cpu の数は、仮想マシンを構成するときに選択した設定に基づきます。 ハードウェアが、ハイパー スレッドの場合、仮想マシンはわかりませんがハイパー スレッドします。  
+-   **ハードウェア仮想化**:ハードウェア仮想化を使用する場合、仮想マシンは仮想プロセッサを使用しています。 利用可能な Cpu の数は、仮想マシンを構成するときに選択した設定に基づきます。 ハードウェアが、ハイパー スレッドの場合、仮想マシンはわかりませんがハイパー スレッドします。  
   
 ## <a name="assign-the-msdtc-log-file-directory-to-a-separate-dedicated-drive"></a>MSDTC ログ ファイルのディレクトリを別の専用のドライブに割り当てる  
  別の SQL Server コンピューターで複数のメッセージ ボックス データベースを使用する BizTalk Server 環境では、Microsoft 分散トランザクション コーディネーター (MSDTC) に関連付けられている追加のオーバーヘッドが発生します。 既定では、MSDTC ログ ファイルは、DTC サービスを実行しているコンピューターの %systemdrive%\windows\system32\msdtc ディレクトリにあります。 DTC ログ記録がパフォーマンスのボトルネックになる可能性を軽減するために高速ディスク ドライブに、MSDTC ログ ファイル ディレクトリの移動を検討してください。  
@@ -72,7 +72,7 @@ ms.locfileid: "37007883"
     >  マスター ファイル テーブルを事前に割り当てて、サポート技術情報記事 961095 を参照してください[「Windows Vista および Windows Server 2008 で予約をゾーンのマスター ファイル テーブルについて」](http://go.microsoft.com/fwlink/?LinkID=204563) (http://go.microsoft.com/fwlink/?LinkID=204563)します。  
   
 ## <a name="if-antivirus-software-is-installed-on-the-sql-server-computer-disable-real-time-scanning-of-data-and-transaction-files"></a>SQL Server コンピューターのウイルス対策ソフトウェアがインストールされている場合、は、データとトランザクションのファイルのリアルタイム スキャンを無効にします。  
- (.Mdf、.ndf、.ldf、.mdb ファイル) の SQL Server データとトランザクション ファイルのリアルタイム スキャン、ディスク I/O の競合が増加し、SQL Server のパフォーマンスが低下することができます。 SQL Server のデータとトランザクションのファイルの名前は、BizTalk Server 環境間で異なる場合がありますに注意してください。 既定の BizTalk Server 構成で作成されたデータとトランザクションのファイルの詳細については、[、Databases2 のファイル グループを最適化する](../technical-guides/optimizing-filegroups-for-the-databases2.md)を参照してください。  
+ (.Mdf、.ndf、.ldf、.mdb ファイル) の SQL Server データとトランザクション ファイルのリアルタイム スキャン、ディスク I/O の競合が増加し、SQL Server のパフォーマンスが低下することができます。 SQL Server のデータとトランザクションのファイルの名前は、BizTalk Server 環境間で異なる場合がありますに注意してください。 既定の BizTalk Server 構成で作成されたデータとトランザクションのファイルの詳細については、次を参照してください。 [、Databases2 のファイル グループを最適化する](../technical-guides/optimizing-filegroups-for-the-databases2.md)します。  
   
 ## <a name="configure-msdtc-for-biztalk-server-and-sql-server"></a>BizTalk Server と SQL Server の MSDTC を構成します。  
  SQL Server と BizTalk Server 間のトランザクションを促進するには、Microsoft 分散トランザクション コーディネーター (MSDTC) を有効にする必要があります。  
@@ -154,7 +154,7 @@ ms.locfileid: "37007883"
  割り込みアフィニティ ポリシー (IntPolicy) は、特定のプロセッサまたはマルチプロセッサのコンピューター上のプロセッサを使用すると、「バインド」または (ネットワーク アダプター) などの特定のデバイスの割り込みの CPU 関係を変更するツールです。 このバインディングは、パーティション分割とも呼ばれます。 特定のネットワーク アダプターからの割り込みをマルチプロセッサ コンピューターで特定のプロセッサをバインドでは、実行中の遅延プロシージャ呼び出し (Dpc) と指定されたプロセッサ上のネットワーク アダプターの割り込みサービス ルーチン (Isr) を適用します。 割り込みアフィニティをシングル プロセッサ コンピューターで構成できないことに注意してください。  
   
 > [!NOTE]  
->  DPC は、キューに置かれた後で通常実行されるカーネル モード関数呼び出しとして定義されます。 ISR は、その目的は、割り込みを生成するときに、デバイスをサービス ルーチンとして定義されます。 遅延プロシージャ呼び出しと割り込みサービス ルーチンの詳細については、、 [Windows Driver Kit ドキュメント](http://go.microsoft.com/fwlink/?LinkId=84418)(http://go.microsoft.com/fwlink/?LinkId=84418)を参照してください。  
+>  DPC は、キューに置かれた後で通常実行されるカーネル モード関数呼び出しとして定義されます。 ISR は、その目的は、割り込みを生成するときに、デバイスをサービス ルーチンとして定義されます。 遅延プロシージャ呼び出しと割り込みサービス ルーチンの詳細については、次を参照してください。、 [Windows Driver Kit ドキュメント](http://go.microsoft.com/fwlink/?LinkId=84418)(http://go.microsoft.com/fwlink/?LinkId=84418)します。  
   
  ![割り込み&#45;アフィニティ ポリシー ツール](../technical-guides/media/interrupt-affinitypolicytool.gif "割り込み AffinityPolicyTool")  
 Interrupt-Affinity Policy ツール  
@@ -289,7 +289,7 @@ Windows Server 2008 は、プリエンプティブなマルチタスクを使用
 ## <a name="synchronize-time-on-all-servers"></a>すべてのサーバー上の時刻を同期します。  
  チケットに関連する多くの操作では、配信確認メッセージとログ記録は、正確なされているローカル システム クロックに依存します。 これはシステムの間に不一致がログを同期または期限切れとして別に拒否される 1 つのシステムによって発行されたチケットを発生可能性があります、分散環境で特にまたは有効化されていません。  
   
- 時刻を自動的に同期するサーバーの設定の詳細については、[自動ドメイン時刻の同期用のクライアント コンピューターを構成](http://go.microsoft.com/fwlink/?LinkId=99420)(http://go.microsoft.com/fwlink/?LinkId=99420)を参照してください。  
+ 時刻を自動的に同期するサーバーの設定の詳細については、次を参照してください。[自動ドメイン時刻の同期用のクライアント コンピューターを構成](http://go.microsoft.com/fwlink/?LinkId=99420)(http://go.microsoft.com/fwlink/?LinkId=99420)します。  
   
 ## <a name="configure-the-windows-pagefile-for-optimal-performance"></a>最適なパフォーマンス、Windows ページファイルを構成します。  
  最適なパフォーマンスには、Windows ページファイル (ページング ファイル) を構成する次のガイドラインに従います。  

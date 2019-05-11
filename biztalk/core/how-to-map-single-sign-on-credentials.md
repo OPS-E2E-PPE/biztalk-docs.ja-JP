@@ -12,33 +12,33 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5534eb63d7b9586017d77ffd84606a842f12a48d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a95a56da0d30ec0f30c556dcab01b3789f3e1fb0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37002899"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65336268"
 ---
 # <a name="how-to-map-single-sign-on-credentials"></a>シングル サインオン資格情報をマップする方法
-エンタープライズ シングル サインオン データベース内に関連アプリケーションがあれば、ユーザーの資格情報をそのアプリケーションにマップできます。 現在のユーザーの資格情報を関連アプリケーションにマップする場合、`ISSOMapper` インターフェイスおよび `ISSOMapping` インターフェイスを組み合わせて使用する必要があります。  
+エンタープライズ シングル サインオン データベースに関連があるアプリケーションの場合は、そのアプリケーションにユーザーの資格情報をマップできます。 関連アプリケーションへの現在のユーザーの資格情報のマッピングの組み合わせを使用することが必要です、`ISSOMapper`と`ISSOMapping`インターフェイス。  
   
-### <a name="to-map-between-an-affiliated-application-and-user-credentials"></a>関連アプリケーションとユーザーの資格情報をマップするには  
+### <a name="to-map-between-an-affiliated-application-and-user-credentials"></a>関連アプリケーションとユーザーの資格情報の間にマップするには  
   
-1. `ISSOMapper` および `ISSOMapping` の新しいインスタンスを作成します。  
+1. 新しいインスタンスを作成`ISSOMapper`と`ISSOMapping`します。  
   
-2. `ISSOMapping` プロパティを適切な値に設定します。  
+2. 設定、`ISSOMapping`プロパティを関連する値。  
   
-    `ISSOMapping` に指定できるプロパティは、ユーザーの Microsoft Windows ドメイン名、Windows ユーザー名、関連アプリケーションの名前、または外部ユーザー名です。  
+    関連するプロパティを`ISSOMapping`はユーザーの Microsoft Windows ドメイン名、Windows ユーザー名、関連のアプリケーションの名前、および外部ユーザー名。  
   
 3. ISSOMapping.Create を呼び出して、マッピングを作成します。  
   
-    `ISSOMapping.Create` を呼び出すと、エンタープライズ シングル サインオン サーバーにマップするローカル コピーに反映されます。  
+    呼び出す`ISSOMapping.Create`をエンタープライズ シングル サインオン サーバーへのマッピングのローカル コピーを伝達します。  
   
-4. `ISSOMapper.SetExternalCredentials` を呼び出して、マッピングの資格情報を設定します。  
+4. 呼び出して、マッピングの資格情報を設定`ISSOMapper.SetExternalCredentials`します。  
   
-5. `ISSOMapping.Enable` を呼び出して、マッピングを有効にします。  
+5. 呼び出して、マッピングを有効にする`ISSOMapping.Enable`します。  
   
-   次の例は、指定されたエンタープライズ シングル サインオン アプリケーションとユーザーのマッピングを追加する方法を示しています。  
+   次の例では、指定されたエンタープライズ シングル サインオン アプリケーションとユーザー間のマッピングを追加する方法を示します。  
   
 ```  
 public static bool AddMapping(string application, string user, string XU, string XP)  

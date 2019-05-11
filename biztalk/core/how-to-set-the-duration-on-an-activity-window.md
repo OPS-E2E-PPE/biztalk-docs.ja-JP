@@ -16,19 +16,19 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b9c0e1fc3ab23559fee0d0cb0d042f457f82a05f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4c7bab9fe9c5969bf4f5d277b83b63f751e6afc9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37023552"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65334227"
 ---
-# <a name="how-to-set-the-duration-on-an-activity-window"></a>アクティビティ時間帯の期間を設定する方法
+# <a name="how-to-set-the-duration-on-an-activity-window"></a>アクティビティ ウィンドウの期間を設定する方法
 管理者を使用して、**セット activitywindow**指定されたアクティビティの期間を設定するコマンド。  
   
 ### <a name="to-set-the-duration-on-an-activity"></a>アクティビティの期間を設定するには  
   
-1. 次のように、コマンド プロンプトを開きます: をクリックして**開始**、 をクリックして**実行**、型**cmd**、順にクリックします**OK**。  
+1. 次のように、コマンド プロンプトを開きます。をクリックして**開始**、 をクリックして**実行**、型**cmd**、順にクリックします**OK**。  
   
 2. コマンド プロンプトで「[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking」と入力して、追跡フォルダーに移動し、 **Enter**キーを押します。  
   

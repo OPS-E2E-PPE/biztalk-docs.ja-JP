@@ -1,5 +1,5 @@
 ---
-title: HTTP アダプター プロパティ スキーマおよびプロパティ |Microsoft ドキュメント
+title: HTTP アダプター プロパティ スキーマおよびプロパティ |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -34,39 +34,39 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 416ad39e804a4907dc39c7cef941e9a1bb57d3dd
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a2f4fdfbd082bb9bbb8e3a37355068b3c8d29c63
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22257426"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65332890"
 ---
 # <a name="http-adapter-property-schema-and-properties"></a>HTTP アダプター プロパティ スキーマおよびプロパティ
-HTTP アダプタ プロパティ スキーマのプロパティを次の表に示します。  
+次の表は、HTTP アダプタ プロパティ スキーマのプロパティを一覧表示します。  
   
- **Namespace:** http://schemas.microsoft.com/BizTalk/2003/http-properties  
+ **名前空間:** http://schemas.microsoft.com/BizTalk/2003/http-properties  
   
-|名前|型|Description|  
+|名前|型|説明|  
 |----------|----------|-----------------|  
 |**ProxyName**|xs:string|プロキシ サーバーの名前を指定します。|  
 |**ProxyPort**|xs:int|プロキシ サーバーのポートを指定します。|  
-|**UseHandlerProxySettings**|xs:boolean|HTTP 送信ポートでハンドラのプロキシ構成を使用するかどうかを指定します。|  
+|**UseHandlerProxySettings**|xs:boolean|HTTP 送信ポートが、ハンドラーのプロキシ構成を使用するかどうかを指定します。|  
 |**UseProxy**|xs:boolean|HTTP アダプタでプロキシ サーバーを使用するかどうかを指定します。|  
-|**RequestTimeout**|xs:int|サーバーからの応答を待機する際のタイムアウト値です。 ゼロ (0) に設定されている場合、タイムアウト値は要求メッセージのサイズを基準に計算されます。|  
-|**ユーザー名**|xs:string|サーバーでの認証に使用するユーザー名です。|  
-|**Password**|xs:string|サーバーでの認証に使用するユーザーのパスワードです。|  
+|**RequestTimeout**|xs:int|サーバーからの応答を待機する際のタイムアウト値です。 このプロパティが 0 (ゼロ) に設定されている場合のタイムアウト値を要求メッセージのサイズが計算されます。|  
+|**ユーザー名**|xs:string|サーバーでの認証に使用するユーザー名。|  
+|**Password**|xs:string|サーバーでの認証に使用するユーザー パスワード。|  
 |**ProxyUsername**|xs:string|プロキシ サーバーで認証のユーザー名を指定します。|  
-|**ProxyPassword**|xs:string|プロキシ サーバーで認証用のユーザー パスワードを指定します。|  
-|**MaxRedirects**|xs:int|HTTP アダプタで要求をリダイレクトする最大回数です。|  
-|**ContentType**|xs:string|要求メッセージのコンテンツの種類です。|  
+|**ProxyPassword**|xs:string|プロキシ サーバーで認証のユーザーのパスワードを指定します。|  
+|**MaxRedirects**|xs:int|HTTP アダプターが要求をリダイレクトする最大回数。|  
+|**ContentType**|xs:string|要求メッセージのコンテンツ タイプ。|  
 |**AuthenticationScheme**|xs:string|接続先のサーバーで使用する認証の種類です。|  
 |**[MSSQLSERVER のプロトコルのプロパティ]**|xs:string|SSL クライアント証明書の拇印です。|  
-|**UseSSO**|xs:boolean|HTTP 送信ポートで SSO を使用するかどうかを指定します。|  
+|**UseSSO**|xs:boolean|HTTP 送信ポートで SSO を使用しているかどうかを指定します。|  
 |**AffiliateApplicationName**|xs:string|SSO に使用する関連アプリケーションの名前です。|  
-|**InboundHttpHeaders**|xs:string|受信した HTTP 要求の HTTP ヘッダーを表します。|  
-|**SubmissionHandle**|xs:string|要求メッセージの BizTalk Server 関連付けトークン (GUID) を表します。|  
-|**EnableChunkedEncoding**|xs:boolean|HTTP アダプターで使用されてエンコード チャンクかどうかを指定します。|  
-|**UserHttpHeaders**|xs:string|HTTP の要求メッセージまたは応答メッセージに含まれているカスタマイズされたヘッダーを表します。<br /><br /> 値、 **UserHttpHeaders**プロパティは、次の形式である必要があります。<br /><br /> `Header1: value\r\nHeader2: value\r\n`<br /><br /> **注**コロン (:) と、ヘッダーと値の間のスペース文字 () に配置します。 ヘッダーが空の場合、エントリは表示されません。空の値は問題ありません。<br /><br /> 使用して次の 5 つの標準 HTTP ヘッダーを変更することができます、 **UserHttpHeaders**プロパティ。<br /><br /> Accept します。<br /><br /> -参照元<br /><br /> -期待します。<br /><br /> 場合の変更-以降<br /><br /> -ユーザー エージェント|  
+|**InboundHttpHeaders**|xs:string|受信した HTTP 要求から HTTP ヘッダーが含まれています。|  
+|**SubmissionHandle**|xs:string|要求メッセージの BizTalk Server 関連付けトークン (GUID) が含まれています。|  
+|**EnableChunkedEncoding**|xs:boolean|HTTP アダプターによってエンコードされるチャンク対象かどうかを指定します。|  
+|**UserHttpHeaders**|xs:string|HTTP 要求または応答メッセージに含まれるカスタマイズされたヘッダーが含まれています<br /><br /> 値、 **UserHttpHeaders**プロパティは、次の形式である必要があります。<br /><br /> `Header1: value\r\nHeader2: value\r\n`<br /><br /> **注**コロン (:) の配置ヘッダーと値の間の空白文字 () を選択します。 空のヘッダーには、フィルターで除外するエントリが発生します。空の値は問題ありません。<br /><br /> 使用して、次の 5 つの標準 HTTP ヘッダーを変更することができます、 **UserHttpHeaders**プロパティ。<br /><br /> -そのまま使用します。<br /><br /> -参照元<br /><br /> -期待します。<br /><br /> 場合-変更-以降<br /><br /> -ユーザー エージェント|  
   
 ## <a name="see-also"></a>参照  
- [HTTP アダプタの構成](../core/configuring-the-http-adapter.md)
+ [HTTP アダプターの構成](../core/configuring-the-http-adapter.md)

@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cfd3dca7c807ef48c82d46743e749e19a40001bc
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4396f3404b885d4b2069eae2b6e9be882401e664
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37016301"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65358145"
 ---
 # <a name="biztalk-server-message-context-properties-send-handlers"></a>BizTalk Server メッセージ コンテキスト プロパティ (送信ハンドラー)
 BizTalk Server オーケストレーションの実行時には、メッセージ ペイロードに加えて、メッセージに含まれる補足情報にもアクセスできる必要があります。  
@@ -30,9 +30,9 @@ BizTalk Server オーケストレーションの実行時には、メッセー�
 |返信サブジェクト|string|はい|必要に応じて、オーケストレーションにより返信メッセージのサブジェクトが指定されます。 既定値は Null です。|  
   
 ## <a name="getting-a-tibco-reply"></a>TIBCO の返信の取得  
- **質問:** 方法は、BizTalk アダプターは TIBCO Rendezvous を読み取り、応答の送信サブジェクトとして使用できるように、オーケストレーション内で返信サブジェクトを操作してでしょうか。 BizTalk Adapter for TIBCO Rendezvous では Rendezvous からの受信メッセージのメッセージ コンテキストにどのようにアクセスしますか。  
+ **質問:** 方法は BizTalk Adapter for TIBCO Rendezvous を読み取り操作して、オーケストレーション内で返信サブジェクト応答の送信サブジェクトとして使用できるようにしますか。 BizTalk Adapter for TIBCO Rendezvous では Rendezvous からの受信メッセージのメッセージ コンテキストにどのようにアクセスしますか。  
   
- **回答:** 返信サブジェクトは、着信メッセージのコンテキストで設定し、オーケストレーションで読み取ることができます。 最終的にオーケストレーションで返信を作成する場合は、その値を使用して返信メッセージの送信サブジェクトを設定できます。  
+ **回答:** 返信サブジェクトは、着信メッセージのコンテキストで設定され、オーケストレーションで読み取ることができます。 最終的にオーケストレーションで返信を作成する場合は、その値を使用して返信メッセージの送信サブジェクトを設定できます。  
   
 1. BizTalk Server プロジェクトで、<install_directory>\TibcoRV\bin\Microsoft.BizTalk.Adapters.TibRV.Properties.dll への参照を追加します。  
   
@@ -43,7 +43,7 @@ BizTalk Server オーケストレーションの実行時には、メッセー�
    (Rendezvous.ReplySubject);  
    ```  
    ## <a name="management-assembly"></a>アセンブリの管理
-   TIBCO Rendezvous はメタデータ リポジトリを備えておらず、Microsoft BizTalk Adapter for TIBCO Rendezvous 管理アセンブリは参照機能またはスキーマ生成機能を備えていません。 したがって、ユーザーがスキーマを BizTalk Server に提供する必要があります。 詳細については、[インストール、スキーマ、および制限事項](../core/installing-biztalk-adapter-for-tibco-rendezvous.md)を参照してください。
+   TIBCO Rendezvous はメタデータ リポジトリを備えておらず、Microsoft BizTalk Adapter for TIBCO Rendezvous 管理アセンブリは参照機能またはスキーマ生成機能を備えていません。 したがって、ユーザーがスキーマを BizTalk Server に提供する必要があります。 詳細については、次を参照してください。[インストール、スキーマ、および制限事項](../core/installing-biztalk-adapter-for-tibco-rendezvous.md)します。
   
    BizTalk Adapter for TIBCO Rendezvous には定義済みの型のスキーマが含まれます。 アダプターは、一部の特定のデータ型 (配列) のメッセージを生成するときに、これらの型を使用します。
 

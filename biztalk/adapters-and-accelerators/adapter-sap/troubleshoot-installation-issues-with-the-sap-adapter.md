@@ -15,12 +15,12 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a72a5e2da055a9e4137e3e8954b72ad32cde40db
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d5b331d391229938093953dd6a6bcd65f8178265
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36982731"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65372482"
 ---
 # <a name="troubleshoot-installation-issues-with-the-sap-adapter"></a>SAP アダプターを使用したインストールの問題をトラブルシューティングします。
 Microsoft のインストール[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]コンピューターで、製品バイナリをコピーし、各アダプターのバインドを登録します。 このセクションでは、インストール エラーを解決するトラブルシューティング手法について説明します。  
@@ -84,7 +84,7 @@ Microsoft のインストール[!INCLUDE[adapterpacknoversion](../../includes/ad
       ```  
 
       > [!NOTE]
-      >  公開キーを確認する方法については、[公開キーとバージョンを決定する](#BKMK_PubKey)を参照してください。  
+      >  公開キーを確認する方法については、次を参照してください。[公開キーとバージョンを決定する](#BKMK_PubKey)します。  
 
 4. 登録する、 [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]:  
 
@@ -146,7 +146,7 @@ No valid adapters are installed on this machine
   >   
   >  たとえば、32 ビット アダプターが 64 ビットのオペレーティング システムを使用しているコンピューターで実行している場合アダプターのクライアント アプリケーションは 32 ビットとしてマークする必要があります。  
 
-   SAP クライアント Dll の詳細については、[Data Provider for SAP のインストールのカスタム Rfc](../../adapters-and-accelerators/adapter-sap/install-custom-rfcs-for-the-data-provider-for-sap.md)を参照してください。  
+   SAP クライアント Dll の詳細については、次を参照してください。 [Data Provider for SAP のインストールのカスタム Rfc](../../adapters-and-accelerators/adapter-sap/install-custom-rfcs-for-the-data-provider-for-sap.md)します。  
 
 ##  <a name="BKMK_SAPInvalidBinding"></a> SAP アダプターのポートを構成するときに無効なバインド エラー  
  **問題**  
@@ -177,7 +177,7 @@ Verify the binding extension is registered in machine.config."
   >   
   >  たとえば、32 ビット アダプターが 64 ビットのオペレーティング システムを使用しているコンピューターで実行している場合アダプターのクライアント アプリケーションは 32 ビットとしてマークする必要があります。  
 
-   SAP クライアント Dll の詳細については、[Data Provider for SAP のインストールのカスタム Rfc](../../adapters-and-accelerators/adapter-sap/install-custom-rfcs-for-the-data-provider-for-sap.md)を参照してください。
+   SAP クライアント Dll の詳細については、次を参照してください。 [Data Provider for SAP のインストールのカスタム Rfc](../../adapters-and-accelerators/adapter-sap/install-custom-rfcs-for-the-data-provider-for-sap.md)します。
 
 ## <a name="see-also"></a>参照  
 [SAP アダプターをトラブルシューティングします。](../../adapters-and-accelerators/adapter-sap/troubleshoot-the-sap-adapter.md)

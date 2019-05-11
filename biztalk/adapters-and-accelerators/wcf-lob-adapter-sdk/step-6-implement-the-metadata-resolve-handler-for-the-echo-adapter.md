@@ -1,5 +1,5 @@
 ---
-title: '手順 6: エコー アダプター メタデータの解決ハンドラーを実装する |Microsoft ドキュメント'
+title: 手順 6:エコー アダプターのメタデータ解決ハンドラーの実装 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,24 +12,24 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 022da31cacedaa59c9e5821fb049165f463c7f06
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 98171f958a1e16b5078fb570b107ffcf93cd5954
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22227002"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65363131"
 ---
-# <a name="step-6-implement-the-metadata-resolve-handler-for-the-echo-adapter"></a>手順 6: エコー アダプター メタデータの解決ハンドラーを実装します。
+# <a name="step-6-implement-the-metadata-resolve-handler-for-the-echo-adapter"></a>手順 6:エコー アダプターのメタデータ解決ハンドラーを実装します。
 ![手順 9 の 6](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-6of9.gif "Step_6of9")  
   
  **所要時間:** 45 分  
   
- 実装するこの手順で、`Microsoft.ServiceModel.Channels.Common.IMetadataResolverHandler`インターフェイスに操作を解決するには、エコー アダプターのメタデータを入力します。 アダプターの機能に関係なく、このインターフェイスを実装する必要があります。 [!INCLUDE[afdevwizardnameshort](../../includes/afdevwizardnameshort-md.md)] EchoAdapterMetadataResolverHandler を要求する派生クラスが自動的に生成されます。  
+ 実装するこの手順で、`Microsoft.ServiceModel.Channels.Common.IMetadataResolverHandler`インターフェイス操作を解決するには、エコー アダプターのメタデータを入力します。 アダプターの機能に関係なく、このインターフェイスを実装する必要があります。 [!INCLUDE[afdevwizardnameshort](../../includes/afdevwizardnameshort-md.md)] EchoAdapterMetadataResolverHandler を要求する派生クラスが自動的に生成されます。  
   
- 次のセクションでは、このインターフェイスを実装する方法について理解を深めるために EchoAdapterMetadataResolverHandler クラスを更新します。 この手順を完了したときに、エコー アダプターのハンドラーを解決する作業のメタデータがあります。  
+ 次のセクションでは、このインターフェイスを実装する方法について理解を深めるために EchoAdapterMetadataResolverHandler クラスを更新します。 この手順を完了すると、エコー アダプターのハンドラーを解決する作業のメタデータがあります。  
   
 ## <a name="prerequisites"></a>前提条件  
- この手順を開始する前にする必要がありますが正常に完了しました[手順 5: エコー アダプターのメタデータの検索ハンドラーの実装](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-5-implement-the-metadata-search-handler-for-the-echo-adapter.md)です。 次の操作と種類のクラスを理解する必要があります。  
+ この手順を開始する前にする必要がありますが正常に完了して[手順 5。エコー アダプターのメタデータ検索ハンドラーの実装](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-5-implement-the-metadata-search-handler-for-the-echo-adapter.md)します。 次の操作と種類のクラスを理解することも必要があります。  
   
 -   `Microsoft.ServiceModel.Channels.Common.ParameterizedOperationMetadata`  
   
@@ -61,22 +61,22 @@ public interface IMetadataResolverHandler : IConnectionHandler, IDisposable
   }  
 ```  
   
- 次の表では、各メソッドの実行内容について説明します。  
+ 次の表では、各メソッドの動作について説明します。  
   
-|**メソッド名**|**Description**|  
+|**メソッド名**|**[説明]**|  
 |---------------------|---------------------|  
-|IsOperationMetadataValid|型のメタデータが指定した日時以降に変更されていない場合、true を返します|  
+|IsOperationMetadataValid|型のメタデータが指定された日時以降に変更されていない場合、true を返します|  
 |IsTypeMetadataValid|指定した型のメタデータが有効かどうかを示すブール値を返します。|  
-|ResolveOperationMetadata|対応する操作 ID を解決します。`Microsoft.ServiceModel.Channels.Common.OperationMetadata`|  
-|ResolveTypeMetadata|な typeId で指定されたメタデータを対応する解決`Microsoft.ServiceModel.Channels.Common.TypeMetadata`です。|  
+|ResolveOperationMetadata|対応する、操作 ID を解決します。 `Microsoft.ServiceModel.Channels.Common.OperationMetadata`|  
+|ResolveTypeMetadata|指定されたメタデータ typeId に、対応する解決`Microsoft.ServiceModel.Channels.Common.TypeMetadata`します。|  
   
 ### <a name="to-implement-the-isoperationmetadatavalid-method"></a>IsOperationMetadataValid メソッドを実装するには  
   
 1.  ソリューション エクスプ ローラーで、 **EchoAdapterMetadataResolverHandler.cs**ファイル。  
   
-2.  Visual Studio エディターで、任意の場所を右クリック コンテキスト メニューで、エディター内のをポイント**アウトライン**、クリックして**アウトラインの中止**です。  
+2.  Visual Studio エディターで、任意の場所を右クリック コンテキスト メニューで、エディター内をポイント**アウトライン**、 をクリックし、**アウトラインの中止**します。  
   
-3.  Visual Studio エディターで、検索、 **IsOperationMetadataValid**このメソッド内のメソッドは、既存のすべてのメタデータを指定した操作が有効であることを示す次の 1 つのステートメントでを置換します。  
+3.  Visual Studio エディターで検索、 **IsOperationMetadataValid**メソッドは、このメソッド内では、既存のすべてのメタデータを指定した操作が有効であることを示す次の 1 つのステートメントでを置き換えます。  
   
     ```csharp  
     return true;  
@@ -84,7 +84,7 @@ public interface IMetadataResolverHandler : IConnectionHandler, IDisposable
   
 ### <a name="to-implement-the-istypemetadatavalid-method"></a>IsTypeMetadataValid メソッドを実装するには  
   
--   Visual Studio エディターで、検索、 **IsTypeMetadataValid**このメソッド内のメソッドは、既存のすべての指定した型のメタデータが無効であることを示す次の 1 つのステートメントでを置換します。  
+-   Visual Studio エディターで検索、 **IsTypeMetadataValid**メソッドは、このメソッド内では、既存のすべての指定した型のメタデータが有効であることを示す次の 1 つのステートメントでを置き換えます。  
   
     ```csharp  
     return true;  
@@ -92,7 +92,7 @@ public interface IMetadataResolverHandler : IConnectionHandler, IDisposable
   
 ### <a name="to-implement-the-resolveoperationmetadata-method"></a>ResolveOperationMetadata メソッドを実装するには  
   
-1.  Visual Studio エディターで、検索、 **ResolveOperationMetadata** OnReceiveEcho 操作、void OnReceiveEcho (Uri パス、長い fileLength) を解決するのには次のように、既存の代わりにこのメソッド内のメソッドです。  
+1.  Visual Studio エディターで検索、 **ResolveOperationMetadata** OnReceiveEcho 操作、void OnReceiveEcho (Uri のパス、長い fileLength) を解決するには、次のように既存のメソッドは、このメソッド内での置換します。  
   
     ```csharp  
     extraTypeMetadataResolved = null;  
@@ -132,7 +132,7 @@ public interface IMetadataResolverHandler : IConnectionHandler, IDisposable
         return om;  
     ```  
   
-3.  エコー/EchoStrings 操作、string[] EchoStrings(string data) を解決するのには、次のロジックを追加していきます。  
+3.  エコー/EchoStrings 操作、string[] EchoStrings(string data) を解決するのには、次のロジックの追加を続行します。  
   
     ```csharp  
     case "Echo/EchoGreetings":  
@@ -150,7 +150,7 @@ public interface IMetadataResolverHandler : IConnectionHandler, IDisposable
         return om;  
     ```  
   
-4.  続けて、CustomGreeting EchoCustomGreetingFromFile(Uri greetingInstancePath) 操作を解決するのには、次のロジックを追加します。  
+4.  CustomGreeting EchoCustomGreetingFromFile(Uri greetingInstancePath) 操作を解決するのには、次のロジックの追加を続行します。  
   
     ```csharp  
     case "Echo/EchoCustomGreetingFromFile":  
@@ -174,7 +174,7 @@ public interface IMetadataResolverHandler : IConnectionHandler, IDisposable
   
     ```  
   
-5.  既定のケースを処理するには、次の追加を続行します。  
+5.  既定のケースを処理するために、次の追加を続行します。  
   
     ```csharp  
         default:  
@@ -184,7 +184,7 @@ public interface IMetadataResolverHandler : IConnectionHandler, IDisposable
   
 ### <a name="to-implement-the-resolvetypemetadata-method"></a>ResolveTypeMetadata メソッドを実装するには  
   
--   Visual Studio エディターで、検索、 **ResolveTypeMetadata**を返すには、次のように、既存の代わりにこのメソッド内のメソッド、`Microsoft.ServiceModel.Channels.Common.TypeMetadata`オブジェクト。  
+-   Visual Studio エディターで検索、 **ResolveTypeMetadata**メソッドは、このメソッド内で置換を返すには、次のように、既存の`Microsoft.ServiceModel.Channels.Common.TypeMetadata`オブジェクト。  
   
     ```csharp  
     extraTypeMetadataResolved = null;  
@@ -224,11 +224,11 @@ public interface IMetadataResolverHandler : IConnectionHandler, IDisposable
   
 ### <a name="to-define-the-custom-greeting-type-metadata-class"></a>カスタムの案内応答型のメタデータ クラスを定義するには  
   
-1.  ソリューション エクスプ ローラーで右クリックし、**エコー アダプター**プロジェクトをポイントし、**追加**、順にクリック**新しい項目の**します。  
+1.  ソリューション エクスプ ローラーで右クリックし、**エコー アダプター**プロジェクトをポイントして、**追加**、 をクリックし、**新しい項目の**。  
   
-2.  **新しい項目の追加**ダイアログ ボックスで、**テンプレート**をクリックして**クラス**です。  
+2.  **新しい項目の追加**ダイアログ ボックスで、**テンプレート**、 をクリックして**クラス**します。  
   
-3.  **名前**テキスト ボックスで、「 **CustomGreetingTypeMetadata**です。  
+3.  **名前**テキスト ボックスに「 **CustomGreetingTypeMetadata**します。  
   
 4.  **[追加]** をクリックします。  
   
@@ -349,21 +349,21 @@ public interface IMetadataResolverHandler : IConnectionHandler, IDisposable
     }  
     ```  
   
-6.  Visual Studio から、**ファイル** メニューのをクリックして**すべて保存**です。  
+6.  Visual Studio から、**ファイル** メニューのをクリックして**すべて保存**します。  
   
-### <a name="to-create-the-custom-greeting-xml-schema-definition"></a>カスタムの案内応答 XML スキーマ定義を作成するには  
+### <a name="to-create-the-custom-greeting-xml-schema-definition"></a>XML スキーマ定義のカスタムあいさつ文を作成するには  
   
-1.  ソリューション エクスプ ローラーで右クリックし、**エコー アダプター**プロジェクトをポイントし、**追加**、順にクリック**新しい項目の**します。  
+1.  ソリューション エクスプ ローラーで右クリックし、**エコー アダプター**プロジェクトをポイントして、**追加**、 をクリックし、**新しい項目の**。  
   
-2.  **新しい項目の追加**ダイアログ ボックスで、**テンプレート**をクリックして**XML スキーマ**です。  
+2.  **新しい項目の追加**ダイアログ ボックスで、**テンプレート**、 をクリックして**XML スキーマ**します。  
   
-3.  **名前**テキスト ボックスで、「 **CustomGreeting**です。  
+3.  **名前**テキスト ボックスに「 **CustomGreeting**します。  
   
 4.  **[追加]** をクリックします。  
   
-5.  ソリューション エクスプ ローラーで右クリックし、 **CustomGreeting.xsd**ファイルして選択**コードの表示**です。  
+5.  ソリューション エクスプ ローラーで右クリックし、 **CustomGreeting.xsd**ファイル**コードの表示**します。  
   
-6.  Visual Studio エディターで CustomGreeting スキーマの定義を開始する次のコードを既存のコードを置き換えることで開始します。  
+6.  Visual Studio エディターで、既存のコードを CustomGreeting スキーマの定義を開始する次のコードに置き換えることにより開始します。  
   
     ```csharp  
     <?xml version="1.0" encoding="utf-8" ?>   
@@ -400,7 +400,7 @@ public interface IMetadataResolverHandler : IConnectionHandler, IDisposable
     </xsd:complexType>  
     ```  
   
-9. UsAddress 複合型を追加することによって、CustomGreeting スキーマ定義を続行します。  
+9. UsAddress 複合型を追加することで、CustomGreeting スキーマ定義を続行します。  
   
     ```csharp  
     <xsd:complexType name="UsAddress">  
@@ -414,7 +414,7 @@ public interface IMetadataResolverHandler : IConnectionHandler, IDisposable
     </xsd:complexType>  
     ```  
   
-10. PostalCode 単純型とスキーマの終了タグの追加、CustomGreeting スキーマの定義を完了します。  
+10. PostalCode 単純型とスキーマの終了タグを追加して CustomGreeting スキーマの定義が完了します。  
   
     ```csharp  
       <xsd:simpleType name="PostalCode">  
@@ -425,20 +425,20 @@ public interface IMetadataResolverHandler : IConnectionHandler, IDisposable
     </xsd:schema>  
     ```  
   
-11. 埋め込みリソースとして扱われるために、このファイルのビルド アクションを今すぐ更新します。 Visual Studio ソリューション ウィンドウで、これには、ファイルを右クリックして、**プロパティ**です。 ビルド アクションを変更する**None**に**埋め込みリソース**です。  
+11. 埋め込みリソースとして扱われるために、このファイルのビルド アクションを今すぐ更新します。 Visual Studio ソリューション ウィンドウで、ファイルを右クリックし、選択**プロパティ**します。 ビルド アクションを変更する**None**に**埋め込みリソース**します。  
   
-12. Visual Studio から、**ファイル** メニューのをクリックして**すべて保存**です。  
+12. Visual Studio から、**ファイル** メニューのをクリックして**すべて保存**します。  
   
 > [!NOTE]
->  これで作業が保存されました。 安全にこの時点で Visual Studio を終了したり、次の手順に進みます[手順 7: エコー アダプターの同期送信ハンドラーの実装](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-7-implement-the-synchronous-outbound-handler-for-the-echo-adapter.md)です。  
+>  これで作業が保存されました。 安全にこの時点で Visual Studio を閉じて、次の手順に進むまたは[手順 7。エコー アダプターの同期送信ハンドラーを実装する](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-7-implement-the-synchronous-outbound-handler-for-the-echo-adapter.md)します。  
   
-## <a name="what-did-i-just-do"></a>でしただけは何ですか。  
- エコー アダプターの機能を解決するメタデータを実装されているだけです。  
+## <a name="what-did-i-just-do"></a>でしただけ何か。  
+ エコー アダプターの機能を解決するメタデータを実装するだけです。  
   
 ## <a name="next-steps"></a>次の手順  
- 次の手順では、エコー アダプターの同期送信ハンドラーを実装します。 ビルドし、同期受信ハンドラーを実装し、エコー アダプターを展開します。  
+ 次の手順では、エコー アダプターの同期送信ハンドラーを実装します。 ビルドし、同期受信ハンドラーを実装し、エコー アダプターの展開します。  
   
 ## <a name="see-also"></a>参照  
- [手順 5: エコー アダプターのメタデータの検索ハンドラーを実装します。](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-5-implement-the-metadata-search-handler-for-the-echo-adapter.md)   
- [手順 7: エコー アダプターの同期送信ハンドラーを実装します。](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-7-implement-the-synchronous-outbound-handler-for-the-echo-adapter.md)   
- [チュートリアル 1: エコー アダプターを開発します。](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-1-develop-the-echo-adapter.md)
+ [手順 5:エコー アダプターのメタデータ検索ハンドラーを実装します。](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-5-implement-the-metadata-search-handler-for-the-echo-adapter.md)   
+ [手順 7:エコー アダプターの同期送信ハンドラーを実装します。](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-7-implement-the-synchronous-outbound-handler-for-the-echo-adapter.md)   
+ [チュートリアル 1:エコー アダプターを開発する](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-1-develop-the-echo-adapter.md)

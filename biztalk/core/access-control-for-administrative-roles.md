@@ -17,12 +17,12 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7999230f3ec0545d8cd15b66e1407148f080bb26
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3b3fd5c38ea1ac46c54821b2dcd5ecd033d71ea6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36990315"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65362199"
 ---
 # <a name="access-control-for-administrative-roles"></a>管理ロールのアクセス制御
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ツールを開いてデータベースや Windows リソースにアクセスし、そのツールがサポートしているさまざまな作業を実行するには、SQL Server および Windows で適切なユーザー権限が与えられていなければなりません。  
@@ -30,7 +30,7 @@ ms.locfileid: "36990315"
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のツールは [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] データベースにアクセスします。 したがって BizTalk Server では、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者に対して、データベースごとに適切なアクセス権を付与する必要があります。 ただしセキュリティ上の理由から、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者に対し、業務の遂行に不要なユーザー権限は設定しないようにします。 SQL Server データベース ロールを使用すると、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] で両方の条件を満たすことができます。 インストール中、または [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールを使用して [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] データベースを作成すると、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、2 つの管理ロール用の SQL ロールがデータベースに自動的に作成されます。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 各ロール、およびロールに割り当てられているすべての SQL Server ログインで SQL Server オブジェクト (テーブル、ビュー、ストアド プロシージャなど) をそのデータベースでの管理タスクを実行する管理者の必要最小限のユーザー権限を付与します。  
   
 > [!NOTE]
->  ホスト インスタンスの作成など、管理タスクによっては、SQL Server ロールで BizTalk 管理者に与えられた以上の権限が必要となる場合があります。 これらの追加のアクセス許可の詳細については、[最小セキュリティ ユーザー権限](../core/minimum-security-user-rights.md)を参照してください。  
+>  ホスト インスタンスの作成など、管理タスクによっては、SQL Server ロールで BizTalk 管理者に与えられた以上の権限が必要となる場合があります。 これらの追加のアクセス許可の詳細については、次を参照してください。[最小セキュリティ ユーザー権限](../core/minimum-security-user-rights.md)します。  
   
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] には、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者と [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Operator の 2 種類の管理者ロールがあります。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者は権限レベルの高いロールで、構成データおよび追跡データにアクセスできます。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Operator は権限レベルの低いロールで、監視操作とトラブルシューティング操作にのみアクセスできます。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Operators グループ:   
   
@@ -42,7 +42,7 @@ ms.locfileid: "36990315"
   
   [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を初めてインストールすると、既定の [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者ロールが作成されます。 既定では、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]側でこれ[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理者が、別の名前を選択することができます。  
   
-  同様に、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、各ホストのユーザー グループ用の SQL Server Database ロールが各データベースに作成されます。作成されたロールには、ユーザー グループがそのホストに対してタスクを実行するときに必要となる最小限のユーザー権限が許可されます。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者は、シングル サインオン関連管理者グループに追加する必要があります。 エンタープライズ シングル サインオンに関する詳細については、[を使用して SSO](../core/using-sso.md)を参照してください。  
+  同様に、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、各ホストのユーザー グループ用の SQL Server Database ロールが各データベースに作成されます。作成されたロールには、ユーザー グループがそのホストに対してタスクを実行するときに必要となる最小限のユーザー権限が許可されます。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者は、シングル サインオン関連管理者グループに追加する必要があります。 エンタープライズ シングル サインオンに関する詳細については、次を参照してください。[を使用して SSO](../core/using-sso.md)します。  
   
 > [!CAUTION]
 >  BizTalk 管理者は、システムに展開するアセンブリのソースが信頼済みであることを確認する必要があります。 信頼済みでないコードが含まれるアセンブリを展開すると、BizTalk 環境が攻撃の対象になる可能性があります。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、BizTalk エンジンでカスタム コード コンポーネントが呼び出された場合、このコンポーネントで実行される処理に対しては制限が適用されません。  

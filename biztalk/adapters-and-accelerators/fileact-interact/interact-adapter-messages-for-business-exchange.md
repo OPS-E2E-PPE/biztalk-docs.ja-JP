@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ea8e7d4f4ed8397c88a3cf21280352b446d629c8
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d97c1bd20341719440637f0fa37bd8a806a84224
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37020154"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65366684"
 ---
 # <a name="interact-adapter-messages-for-business-exchange"></a>業務用 Exchange 用の interAct アダプターのメッセージ
 InterAct アダプターのエンド ツー エンドのサイクルには、4 つのメッセージがあります。 これらのメッセージは SWIFTNet プリミティブです。 最初と最後のメッセージには、クライアント側のプリミティブ、SwInt:ExchangeRequest および SwInt:ExchangeResponse が構成されています。 中間の 2 つのメッセージには、サーバー側のプリミティブ、SwInt:HandleRequest および SwInt:HandleResponse が構成されています。  

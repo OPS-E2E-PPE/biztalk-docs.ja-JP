@@ -1,5 +1,5 @@
 ---
-title: 参照および WCF LOB Adapter SDK を使用してメタデータの検索 |Microsoft ドキュメント
+title: 参照および WCF LOB Adapter SDK を使用してメタデータの検索 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,24 +12,24 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 67f4717c8621b798ff960487dfd156c4f0934dfc
-ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
+ms.openlocfilehash: ccf9889f395937f5ef1f4c6b1acda6b9413fc867
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "22225674"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65363843"
 ---
 # <a name="browse-and-search-metadata-using-the-wcf-lob-adapter-sdk"></a>WCF LOB Adapter SDK を使用してメタデータを参照および検索
-このセクションでは、それぞれ IMetadataBrowseHandler と IMetadataSearchHandler を実装することによって、アダプターでの参照および検索機能を公開する方法に関する情報を提供します。  
+このセクションでは、IMetadataBrowseHandler と IMetadataSearchHandler をそれぞれ実装でアダプターを使用した参照および検索機能を公開する方法について説明します。  
   
 ## <a name="imetadatabrowsehandler"></a>IMetadataBrowseHandler  
- アダプターをプロジェクトに追加すると、IMetadataBrowseHandler はカテゴリと、アダプターをサポートする操作の参照を許可します。 これにより、アダプターのコンシューマー、デザイン時にメタデータ情報を表示して、クライアントの処理を必要とする操作のみを選択します。  
+ プロジェクトにアダプターを追加するときに IMetadataBrowseHandler はカテゴリと、アダプターをサポートする操作を参照できます。 これにより、アダプターのコンシューマー、デザイン時にメタデータ情報を表示して、クライアントの処理を必要とする操作のみを選択できます。  
   
- 使用する場合、[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]または[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]、IMetadataBrowseHandler に入力アダプターをプロジェクトに追加するには**選択コントラクト型**、**カテゴリを選択**、および**利用可能なカテゴリと操作**ボックス。  
+ 使用する場合、[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]または[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]、IMetadataBrowseHandler の設定をプロジェクトに、アダプターを追加する、**選択のコントラクト型**、**カテゴリを選択**、および**利用可能なカテゴリと操作**ボックス。  
   
- ![参照操作](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/b143971c-a50b-4ef2-a973-dfe4aa4fc17e.gif "b143971c-a50b-4ef2-a973-dfe4aa4fc17e")  
+ ![操作を参照する](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/b143971c-a50b-4ef2-a973-dfe4aa4fc17e.gif "b143971c-a50b-4ef2-a973-dfe4aa4fc17e")  
   
- 次の例では、IMetadataBrowseHandler を実装する方法を示します。 カテゴリと、アダプターをサポートする操作に関する情報を含む MetadataRetrievalNode 配列を構築します。  
+ 次の例では、IMetadataBrowseHandler を実装する方法を示します。 これは、カテゴリと、アダプターをサポートする操作に関する情報を含む MetadataRetrievalNode 配列を構築します。  
   
 ```csharp  
 public class EchoAdapterMetadataBrowseHandler : EchoAdapterHandlerBase, IMetadataBrowseHandler  
@@ -101,13 +101,13 @@ public class EchoAdapterMetadataBrowseHandler : EchoAdapterHandlerBase, IMetadat
 ```  
   
 ## <a name="imetadatasearchhandler"></a>IMetadataSearchHandler  
- アダプターで IMetadataSearchHandler を実装する操作名の一部など、検索語句を入力して、デザイン時に使用可能な操作を検索する機能を提供します。 これは、アダプターは、返される操作を制限するための検索値を入力するため、多くの操作を含まれている場合に非常に役立ちます。  
+ アダプターで IMetadataSearchHandler を実装するには、操作名の一部などの検索語句を入力して、デザイン時に使用可能な操作を検索する機能が提供します。 これは、アダプターは、返される操作を制限する検索値を入力するため、多くの操作を含まれている場合に非常に役立ちます。  
   
- 使用する場合、[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]または[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]IMetadataSearchHandler 解決で入力文字列を検索する際、プロジェクトにアダプターを追加するには**カテゴリで検索**ボックス、および照合の一覧の項目を返します、 **利用可能なカテゴリと操作**ボックス。  
+ 使用する場合、[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]または[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]IMetadataSearchHandler 解決で入力された文字列の検索をプロジェクトに、アダプターを追加する、**カテゴリで検索**ボックス、および照合の一覧の項目を返します、 **利用可能なカテゴリと操作**ボックス。  
   
  ![検索操作](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/48dc9ca6-8697-42bf-9419-5fa35a19937f.gif "48dc9ca6-8697-42bf-9419-5fa35a19937f")  
   
- 検索を実行することもできます。 op の形式でクエリ文字列として検索する値を渡すことによって = 値 WSDL またはアダプターのプロキシを生成するときに svcutil.exe を使用します。 エコー/EchoStrings 操作情報のみを返す svcutil.exe を使用する例を次に示します。  
+ 検索を実行することもできます。 WSDL またはアダプターのプロキシを生成するときに svcutil.exe を使用しての op の形式でクエリ文字列としての検索 の値を渡すことによって = 値。 次にエコー/EchoStrings 操作情報のみを返す svcutil.exe を使用する例を示します。  
   
 ```  
 svcutil.exe “echov2://lobhostname/lobapplication?enableAuthentication=False&op=Echo/EchoStrings” /target:metadata  
@@ -115,9 +115,9 @@ svcutil.exe “echov2://lobhostname/lobapplication?enableAuthentication=False&op
 ```  
   
 > [!NOTE]
->  [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]エコー *、% エコー % などの既定ワイルドカード検索機能は提供されません。 ワイルドカードまたは機能に一致するパターンを実装するアダプターの作成者の責任です。  
+>  [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]エコー *、%echo% などの既定ワイルドカード検索機能は提供されません。 ワイルドカードまたは機能に一致するパターンを実装するために、アダプター作成者の責任です。  
   
- 次の例では、IMetadataSearchHandler を実装する方法を示します。 カテゴリと、アダプターをサポートする操作に関する情報を含む MetadataRetrievalNode 配列を構築します。  
+ 次の例では、IMetadataSearchHandler を実装する方法を示します。 これは、カテゴリと、アダプターをサポートする操作に関する情報を含む MetadataRetrievalNode 配列を構築します。  
   
 ```csharp  
 public class EchoAdapterMetadataSearchHandler : EchoAdapterHandlerBase, IMetadataSearchHandler  

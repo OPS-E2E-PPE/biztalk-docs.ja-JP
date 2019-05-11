@@ -1,5 +1,5 @@
 ---
-title: '手順 6: 受信確認を配信する送信ポートの作成 |Microsoft Docs'
+title: 手順 6:確認を配信する送信ポートの作成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,21 +12,21 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 47e30db70d67cb70ba87cf661e46ca325de1f3cc
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: aa256bd6eca2486bba0e71fdaae69bde0defe759
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37003619"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65288049"
 ---
-# <a name="step-6-create-a-send-port-to-deliver-acknowledgments"></a>手順 6: 受信確認を配信する送信ポートを作成します。
+# <a name="step-6-create-a-send-port-to-deliver-acknowledgments"></a>手順 6:確認を配信する送信ポートを作成します。
 この手順では、バッチのソースへの受信確認を返信するポートを作成します。  
 
  MLLP アダプターでは、関連付けられているのみなります、、特定の宛先 (バッチのソース) にのみ送信されるように静的であるには、このポートを作成します。 このチュートリアルでは、ソースは、Tutorial_BatchSource パーティに関連付けられます。 この送信元パーティは、個々 のメッセージと FHS3 MSH3 と元のバッチの BHS3 に含まれます。  
 
  受信確認をしないデータ メッセージの送信にポートを制限するフィルターを使用してポートを作成します。 これらのフィルターは、ACK_024_GLO_DEF および Tutorial_BatchSource の変換先のメッセージの種類を指定します。  
 
- この送信ポート構成受信確認を宛先からという名前の受信ポートと送信ポートを関連付けることによって**TwoWayAckReceivePort**します。 [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] セットアップ、このポートを作成してに付属の受信場所の**TwoWayAckReceiveLocation**します。 設定して、このポートを使用する送信ポートを設定する**送信請求-応答を有効にする**に**いいえ**と設定、**受信場所の URI を送信**に**127.0.0.1:65535** (Ack をそのまま使用するために必要な設定)。 詳細については、[設定を、送信ポートの受信確認の](../../adapters-and-accelerators/accelerator-hl7/setting-up-a-send-port-for-receiving-acks.md)を参照してください。  
+ この送信ポート構成受信確認を宛先からという名前の受信ポートと送信ポートを関連付けることによって**TwoWayAckReceivePort**します。 [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] セットアップ、このポートを作成してに付属の受信場所の**TwoWayAckReceiveLocation**します。 設定して、このポートを使用する送信ポートを設定する**送信請求-応答を有効にする**に**いいえ**と設定、**受信場所の URI を送信**に**127.0.0.1:65535** (Ack をそのまま使用するために必要な設定)。 詳細については、次を参照してください。[設定を、送信ポートの受信確認の](../../adapters-and-accelerators/accelerator-hl7/setting-up-a-send-port-for-receiving-acks.md)します。  
 
 ### <a name="to-create-a-send-port-to-deliver-acknowledgments"></a>確認を配信する送信ポートを作成するには  
 
@@ -89,4 +89,4 @@ ms.locfileid: "37003619"
 
 9. クリックして**受信場所**します。 TwoWayAckReceiveLocation の状態が有効になっていることを確認します。 ない場合を右クリックして**TwoWayAckReceiveLocation**、 をクリックし、**を有効にする**します。  
 
-   進みます[手順 7: を作成し、送信元パーティを構成する](../../adapters-and-accelerators/accelerator-hl7/step-7-create-and-configure-a-source-party.md)します。
+   続行する[手順 7。作成し、送信元パーティを構成する](../../adapters-and-accelerators/accelerator-hl7/step-7-create-and-configure-a-source-party.md)します。

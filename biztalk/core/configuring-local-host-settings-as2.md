@@ -1,5 +1,5 @@
 ---
-title: ローカル ホスト設定 (AS2) の構成 |Microsoft ドキュメント
+title: ローカル ホスト設定 (AS2) の構成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,29 +12,29 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f1e809085c4621ae3a6bce3243622dcadb1a65ce
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 35747ec460cf601b09ad4c2e0fa2033777da1731
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22232762"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65390943"
 ---
 # <a name="configuring-local-host-settings-as2"></a>ローカル ホスト設定の構成 (AS2)
-ここでは、メッセージ トランザクションに関係するいずれかのパーティが [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のホストを兼ねているかどうかに基づいて設定する必要がある、ローカル ホスト設定について説明します。  
+このセクションには、メッセージ トランザクションに関係するパーティの 1 つもホストするかどうかに基づいて設定する必要があるローカル ホスト設定がについて説明します[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [[全般] ローカル ホスト設定の構成 (AS2)](../core/configuring-general-local-host-settings-as2.md)  
+-   [全般的なローカル ホスト設定の構成 (AS2)](../core/configuring-general-local-host-settings-as2.md)  
   
--   [受信者の MDN 設定を構成します。](../core/configuring-receiver-mdn-settings.md)  
+-   [受信元 MDN 設定の構成](../core/configuring-receiver-mdn-settings.md)  
   
--   [メッセージの HTTP 設定を構成します。](../core/configuring-http-settings-for-messages.md)  
+-   [メッセージの HTTP 設定を構成する](../core/configuring-http-settings-for-messages.md)  
   
--   [Mdn の HTTP 設定を構成します。](../core/configuring-http-settings-for-mdns.md)  
+-   [MDN の HTTP 設定を構成する](../core/configuring-http-settings-for-mdns.md)  
   
--   [送信者メッセージ追跡 (NRR) を構成します。](../core/configuring-sender-message-tracking-nrr.md)  
+-   [送信者メッセージ追跡の構成 (NRR)](../core/configuring-sender-message-tracking-nrr.md)  
   
--   [受信者メッセージの追跡 (NRR) を構成します。](../core/configuring-receiver-message-tracking-nrr.md)  
+-   [受信者メッセージの追跡 (NRR) の構成](../core/configuring-receiver-message-tracking-nrr.md)  
   
 ## <a name="see-also"></a>参照  
- [AS2 アグリーメント プロパティの構成](../core/configuring-as2-agreement-properties.md)
+ [AS2 アグリーメントのプロパティの構成](../core/configuring-as2-agreement-properties.md)

@@ -16,23 +16,23 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 189886d80b921fc155672d56a77cc39817e30622
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: dfda44cc6239bc7ad00144eea74453c2f58fe2a1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36967043"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65361227"
 ---
 # <a name="adapter-samples---development"></a>アダプタ サンプル - 開発
-このセクションでは、各アダプタ サンプルで示されている機能、サンプルをビルドおよび実行する方法、および予想される実行結果について説明します。  
+このセクションでは、各アダプタのサンプルを構築して、サンプルと予想される結果を実行する手順で示されている機能についての情報を提供します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
-- [ファイル アダプター (BizTalk Server サンプル)](../core/file-adapter-biztalk-server-sample.md)します。 書き込む方法を示します、します。NET ベース ファイル アダプター (Microsoft Visual C の場合)。  
+- [ファイル アダプター (BizTalk Server サンプル)](../core/file-adapter-biztalk-server-sample.md)します。 書き込む方法を示します、します。NET ベースのファイル アダプターでは、Microsoft VisualC#します。  
   
-- [HTTP アダプター (BizTalk Server サンプル)](../core/http-adapter-biztalk-server-sample.md)します。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] で使用される要求 - 応答および送信請求 - 応答の通信パラダイムを実装する方法を示します。  
+- [HTTP アダプター (BizTalk Server サンプル)](../core/http-adapter-biztalk-server-sample.md)します。 使用される要求/応答および送信請求-応答の通信パラダイムを実装する方法を示します[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]します。  
   
-- [SubmitDirect (BizTalk Server サンプル)](../core/submitdirect-biztalk-server-sample.md)します。 アダプタを使用して .NET ベースのアプリケーションから BizTalk Server にメッセージを送信する 2 つの方法を示します。  
+- [SubmitDirect (BizTalk Server サンプル)](../core/submitdirect-biztalk-server-sample.md)します。 BizTalk Server にメッセージを送信する 2 つの方法を示します。アダプターを使用して、NET ベースのアプリケーション。  
   
 - [トランザクション アダプター (BizTalk Server サンプル)](../core/transactional-adapter-biztalk-server-sample.md)します。 使用して、明示的な Microsoft 分散トランザクション コーディネーター (MSDTC) トランザクションをデータベースに対して処理中に、BizTalk Server メッセージの作成方法を示します。  
   

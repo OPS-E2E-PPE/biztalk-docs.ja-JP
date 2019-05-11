@@ -19,12 +19,12 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1cc45411d19bc23a2985dbd60fc68bc8de58594c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6eba010d49bc3eec9fae2a17b6903734bc7c0d02
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36979851"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65357554"
 ---
 # <a name="certificates-that-biztalk-server-uses-for-signed-messages"></a>BizTalk Server で署名付きメッセージに使用する証明書
 BizTalk Server では、送信メッセージへの署名と、S/MIME (Secure Multipurpose Internet Mail Extensions) 受信メッセージに対する署名の確認がサポートされます。 送信メッセージへの署名と受信メッセージの署名の確認には、S/MIME バージョン 2 および 3 が使用されます。 同様に、BizTalk Server の構成では、パートナーへの送信メッセージが署名され暗号化されるように指定できます。  
@@ -65,7 +65,7 @@ BizTalk Server では、送信メッセージへの署名と、S/MIME (Secure Mu
   
    BizTalk Server は、証明機関 (CA) 信頼チェーンの検証と確認することにより、証明書の証明書の有効期限が切れていない受信署名付きメッセージに関連付けられている証明書の有効性を確認します。 証明機関 (CA) の信頼チェーンの検証プロセスでは、ルート証明機関まで証明書の信頼チェーンをたどって検証が行われます。 これにより、メッセージの署名に使用された証明書が確実に、認識されている当事者からのものであることが検証されます。 この検証は、実行時、すべての署名付きメッセージに対して個別に行われます。  
   
-   さらに、BizTalk Server では、証明機関が署名またはメッセージの暗号化に使用する証明書を失効していないことを確認できます。 これには、証明機関から証明書の失効一覧 (CRL) をダウンロードし、エクスプローラーを使用して CRL をインストールする必要があります。 証明書を検証する方法の詳細については、[MIME-SMIME デコーダー パイプライン コンポーネントを構成する方法](../core/how-to-configure-the-mime-smime-decoder-pipeline-component.md)を参照してください。  
+   さらに、BizTalk Server では、証明機関が署名またはメッセージの暗号化に使用する証明書を失効していないことを確認できます。 これには、証明機関から証明書の失効一覧 (CRL) をダウンロードし、エクスプローラーを使用して CRL をインストールする必要があります。 証明書を検証する方法の詳細については、次を参照してください。 [MIME-SMIME デコーダー パイプライン コンポーネントを構成する方法](../core/how-to-configure-the-mime-smime-decoder-pipeline-component.md)します。  
   
 ## <a name="see-also"></a>参照  
  [BizTalk Server は、暗号化されたメッセージで使用する証明書](../core/certificates-that-biztalk-server-uses-for-encrypted-messages.md)   

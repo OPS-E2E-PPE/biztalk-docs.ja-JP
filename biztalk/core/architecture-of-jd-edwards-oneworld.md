@@ -1,6 +1,6 @@
 ---
-title: JD Edwards OneWorld のアーキテクチャ |Microsoft ドキュメント
-description: デザイン時および実行時に BizTalk の JD Edwards OneWorld アダプター デザイン時および実行時に、および送信イベント受信サービスを説明します。
+title: JD Edwards OneWorld のアーキテクチャ |Microsoft Docs
+description: デザイン時および実行時に BizTalk の JD Edwards OneWorld アダプター デザイン時および実行時、および送信イベント受信サービスを説明します。
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -13,75 +13,75 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0f866e5d72e392136d19c155785aaf6b71db2ce3
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: 0e98b7196077d0754ef067d01a51b49b96dc8f9e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
-ms.locfileid: "24014793"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65358987"
 ---
 # <a name="architecture-of-jd-edwards-oneworld"></a>JD Edwards OneWorld のアーキテクチャ
-Microsoft BizTalk Adapter for JD Edwards OneWorld を使用すると、JD Edwards OneWorld のビジネス関数にアクセスできます。 JD Edwards OneWorld は、JDENet と呼ばれる独自のメッセージング アーキテクチャを使用して、クライアント コンピューターとサーバー コンピューター間の通信を処理します。 JDENet は、JAR ファイルは、Connector.jar および Kernel.jar で JD Edwards OneWorld コネクタ クラスによって実装されます。 通信は、TCP/IP をトランスポート プロトコルとして使用して実装されており、既定のポートは 6009 または 6010 です。 この値を設定する場所の詳細についてを参照してください[アイテムを BizTalk 管理コンソールに追加](../core/adding-biztalk-adapter-for-jd-edwards-oneworld.md)です。  
+Microsoft の BizTalk Adapter for JD Edwards OneWorld では、JD Edwards OneWorld ビジネス関数へのアクセスを提供します。 JD Edwards OneWorld は、独自のメッセージング JDENet と呼ばれるアーキテクチャを使用してクライアントとサーバーのマシン間で通信します。 JDENet は、Connector.jar および Kernel.jar という JAR ファイルを JD Edwards OneWorld コネクタ クラスによって実装されます。 通信は、既定のポートは 6009 または 6010 トランスポート プロトコルとして TCP/IP を使用して実装されます。 この値を設定する場所の説明についてを参照してください[アーティファクトを BizTalk 管理コンソールに追加](../core/adding-biztalk-adapter-for-jd-edwards-oneworld.md)します。  
   
  **BizTalk Adapter for JD Edwards OneWorld のアーキテクチャ**  
   
  ![](../core/media/jdedadapter-01-architecture.gif "JDEdAdapter_01_Architecture")  
   
- JD Edwards OneWorld のビジネス関数を呼び出すには、2 つのメッセージが必要です。  
+ JD Edwards OneWorld ビジネス関数の呼び出しでは、2 つのメッセージが必要です。  
   
--   最初のメッセージは、ビジネス関数を処理するサーバーの場所を返します。 これを行うと呼ばれるテーブルのセットの検索を実行して*オブジェクト構成マッピング (OCM)* です。  
+-   最初のメッセージは、ビジネス関数を処理するサーバーの場所で応答します。 これと呼ばれるテーブルのセットでルックアップを実行することによって実現*オブジェクト構成マッピング (OCM)* します。  
   
--   2 番目のメッセージでは、JD Edwards OneWorld から渡す引数または JD Edwards OneWorld に渡す引数が入ったフォーマット済みメッセージ バッファーを適切なサーバーに送信し、応答を待ちます。 バッファーは基になる C++ 構造体の Typedef に従ってフォーマットされます。  
+-   2 番目のメッセージは、JD Edwards OneWorld との間を適切なサーバーに渡す引数を含む書式設定されたメッセージ バッファーを送信し、応答を待機します。 バッファーは、基になるの typedef に従って書式設定C++構造体。  
   
-## <a name="inbound-services-at-design-time"></a>デザイン時の受信サービス  
+## <a name="inbound-services-at-design-time"></a>デザイン時に受信サービス  
   
--   デザイン時に、ターゲットの JD Edwards OneWorld サーバーに接続するためのポートを作成し、アダプターを選択して、資格情報を指定します。 Visual Studio 開発環境は、アダプター フレームワークを呼び出して、このポートのデザイン時情報を要求します。 BizTalk Adapter for JD Edwards OneWorld ではこのポートに Browsingagent を使用します。  
+-   デザイン時にには、アダプターを選択、および、ターゲットの JD Edwards OneWorld サーバーへの接続に資格情報を指定のポートを作成します。 Visual Studio 開発環境では、このポートのデザイン時の情報を要求するためにアダプター フレームワークを呼び出します。 BizTalk Adapter for JD Edwards OneWorld では、このポートに対して Browsingagent を使用します。  
   
--   BizTalk Server は、デザイン時にアダプターを呼び出して情報を要求します。  
+-   デザイン時に、BizTalk Server は、アダプターを呼び出すことで情報を要求します。  
   
--   Browsingagent は、要求を JD Edwards OneWorld のネイティブ コードに変換し、ThinNet API 接続 (Connector.jar および Kernel.jar で確立される) を経由して、変換した要求を JD Edwards OneWorld に送信します。  
+-   Browsingagent は、要求を JD Edwards OneWorld のネイティブ コードに変換し、(コネクタと Kernel.jar で確立された)、ThinNet API 接続を JD Edwards OneWorld に要求を送信します。  
   
--   カスタム ビジネス関数は BTSREL インストールによりインストール: マスター ビジネス関数を公開します。  
+-   カスタム ビジネス関数は BTSREL インストールを通じてインストールされます。 マスター ビジネス関数を公開します。  
   
--   JD Edwards OneWorld のモジュールの一覧が最初に返され、Visual Studio に転送され、アダプター ウィザードに設定されます。  
+-   JD Edwards OneWorld のモジュールの一覧が最初に返され、転送先に Visual Studio で、アダプター ウィザードに設定されます。  
   
--   階層を展開してライブラリ名とモジュール名を表示できます。  
+-   ライブラリ名とモジュール名を表示する階層を展開することができます。  
   
--   特定のモジュールを選択すると、モジュール内のすべての関数のスキーマが表示されます。 アダプターは必要な情報を JD Edwards OneWorld から取得し、browsingagent がスキーマを作成します。  
+-   特定のモジュールを選択すると、モジュール内のすべての関数のスキーマを参照してください。 アダプターは、JD Edwards OneWorld から、必要な情報を取得し、browsingagent がスキーマを作成します。  
   
--   スキーマは BizTalk Server プロジェクトのオーケストレーションに追加されます。  
+-   スキーマは、BizTalk Server プロジェクトのオーケストレーションに追加されます。  
   
-## <a name="inbound-services-at-run-time"></a>実行時の受信サービス  
+## <a name="inbound-services-at-run-time"></a>実行時に受信サービス  
   
--   BizTalk Server は BizTalk Adapter for JD Edwards OneWorld を呼び出し、特定のポートでメッセージを送信します。  
+-   BizTalk Server は、BizTalk Adapter for JD Edwards OneWorld の特定のポートでメッセージの送信を呼び出します。  
   
--   ランタイム エージェントは XML を JD Edwards のネイティブ コードに変換します。  
+-   ランタイム エージェントは、XML を JD Edwards のネイティブ コードに変換します。  
   
--   ランタイム エージェントは、ThinNet を経由して、送信ポートのトランスポート プロパティで指定された JD Edwards エンタープライズ システムに要求を送信します。  
+-   ランタイム エージェントは、送信ポートのトランスポートのプロパティで指定された JD Edwards エンタープライズ システムに ThinNet を通じて要求を送信します。  
   
--   JD Edwards システムでマスター ビジネス関数が実行され、ビジネス関数が返すデータ パラメーターと成功または失敗を示す応答ドキュメントが生成されます。  
+-   データだけでなく、成功または失敗を示す応答ドキュメントを生成し、JD Edwards システムでマスター ビジネス関数が実行されるビジネス関数によって返されるパラメーター。  
   
--   JD Edwards OneWorld に送信されるメッセージは、単一メッセージ、単一応答のアーキテクチャです。 複数のメッセージを同時に処理することはできません。  
+-   JD Edwards OneWorld に送信されるメッセージは 1 つのメッセージ、単一応答のアーキテクチャです。 同時に複数のメッセージを処理できません。  
   
--   応答ドキュメントが ThinNet を通じて返され、XML に変換されて、BizTalk Server に送られます。  
+-   応答ドキュメントが ThinNet を経由で送信される、XML に変換され、BizTalk Server に送信します。  
   
-## <a name="outbound-events-at-design-time"></a>デザイン時の送信イベント  
+## <a name="outbound-events-at-design-time"></a>デザイン時にイベントを送信  
   
--   イベント メタデータのシステム的な作成は利用できません。  
+-   イベント メタデータの体系的な作成はありません。  
   
--   イベント ドキュメントの FAX を Visual Studio に提供し、スキーマを生成して、ターゲットの名前空間と共にプロジェクトに組み込めるようにする必要があります。  
+-   イベント ドキュメントの複製は、スキーマを生成し、ターゲットの名前空間と共にプロジェクトに組み込むように Visual Studio を指定する必要があります。  
   
-## <a name="outbound-events-at-run-time"></a>実行時の送信イベント  
+## <a name="outbound-events-at-run-time"></a>実行時にイベントを送信  
   
--   JD Edwards エンタープライズ サーバーにファイル転送機構が設定されます。イベントの完了により、生成された XML ドキュメントがそのサーバーのターゲット ディレクトリに転送されます。  
+-   ファイル転送機構は、そのサーバー上のターゲット ディレクトリに、イベントの完了によってトリガーされる結果の XML ドキュメントのトランスポートを JD Edwards エンタープライズ サーバーで確立されます。  
   
--   BizTalk Server コンピューターには、エンタープライズ サーバーのディレクトリに対して割り当てられたドライブがあります。  
+-   BizTalk Server コンピューターには、エンタープライズ サーバー上のディレクトリにマップされたドライブがあります。  
   
--   受信ポートのトランスポート プロパティは、マップされたドライブに対して構成されます。 受信ポートではエンタープライズ サーバーによりディレクトリに送信されたメッセージを受信します。  
+-   受信ポートのトランスポートのプロパティは、マップされたドライブに対して構成されます。 受信ポートは、エンタープライズ サーバーによりディレクトリに送信されたメッセージを受信します。  
   
--   ターゲットの名前空間を識別することによって、構成されている受信ポートに正しいメッセージが確実にルーティングされます。  
+-   ターゲット名前空間 id によりに正しいメッセージがルーティングされる受信ポートが構成されています。  
   
--   受信ポートは、BizTalk Server の XML ドキュメントを送信します。  
+-   受信ポートは、BizTalk Server に XML ドキュメントを送信します。  
   
 ## <a name="see-also"></a>参照  
  [BizTalk 管理コンソールに、アイテムを追加します。](../core/adding-biztalk-adapter-for-jd-edwards-oneworld.md)   

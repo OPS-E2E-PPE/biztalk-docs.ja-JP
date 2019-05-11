@@ -1,5 +1,5 @@
 ---
-title: アダプター構成スキーマ |Microsoft ドキュメント
+title: アダプター構成スキーマ |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,38 +12,38 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 89ca7d02c756fdbdf819e1a15069a95d0784d764
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 837e4ff704b086f5511c42f8184c1edc03928ef8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25966504"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65361562"
 ---
 # <a name="adapter-configuration-schemas"></a>アダプター構成スキーマ
-アダプターのデザイン時構成では、さまざまな種類のスキーマを使用します。 プロパティ値の可視性とスコープに応じて、さまざまなスキーマを変更して使用します。  
+さまざまな種類のスキーマは、アダプターのデザイン時構成で使用されます。 可視性とスコープのプロパティの値に応じて、さまざまなスキーマ変更され使用します。  
   
 ## <a name="handler-schemas"></a>ハンドラーのスキーマ  
- ハンドラーから取得したアダプター構成は、アダプターとそのコンシューマーすべてにグローバル スコープで適用されます。 管理者は、デザイン時に、ハンドラー構成を静的に変更できます。そのためには、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールを使用してアダプターの受信ハンドラーまたは送信ハンドラーを展開し、指定したホストのプロパティを表示します。  
+ ハンドラーから取得したアダプター構成は、アダプターにグローバル スコープですべてのコンシューマーに適用されます。 使用して、管理者がデザイン時にハンドラー構成を静的に変更、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールをアダプターの展開を受信または送信ハンドラーと、指定したホストのプロパティを表示します。  
   
- SDK に付属するサンプル ファイル アダプターには、受信場所、送信ポート、受信ハンドラー、および送信ハンドラーの構成に使用する一連の XSD ファイルが含まれています。 カスタム アダプターが必要とする構成プロパティを受け取るよう、これらの XSD ファイルを変更します。 サンプル ファイル アダプターに含まれているファイルのうち、変更する必要があるのは、スキーマ ファイル TransmitHandler.xsd および ReceiveHandler.xsd です。 これらのファイルでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールでハンドラーの構成に使用されるプロパティ ページを制御することにより、それぞれ送信ハンドラーと受信ハンドラーを構成します。  
+ SDK に含まれているサンプル ファイル アダプターが、一連の構成に使用される XSD ファイルの受信場所、送信ポート、受信ハンドラー、および送信ハンドラー。 これらの XSD ファイルを変更して、カスタム アダプターの受信設定のプロパティが必要です。 変更する必要のあるサンプル ファイル アダプターに含まれているファイルは、TransmitHandler.xsd および ReceiveHandler.xsd スキーマ ファイルです。 これらのファイル送信ハンドラを構成し、受信ハンドラー、それぞれのハンドラーの構成に使用されるプロパティ ページを制御することで、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソール。  
   
- アダプターの要件に基づいて、各エンドポイントに必要な構成プロパティの一覧を作成します。 すべての構成プロパティがグローバルである場合、変更する必要があるのは送受信ポートの構成だけです。 送信ポートまたは受信場所ごとにアダプター プロパティを設定する必要がある場合、受信場所と送信ポートの構成ファイルも変更しなければなりません。  
+ アダプターの要件を使用して、各エンドポイントに必要な構成プロパティの一覧を作成します。 グローバルすべて、構成プロパティの場合は、変更の送信と受信ポートの構成にだけことがあります。 アダプターのプロパティは、各送信ポートまたは受信場所に対して設定する場合に、受信場所を変更し、送信ポートの構成ファイルもが必要です。  
   
- アダプター フレームワークには、一般的なアダプター構成の要件をサポートするための、スキーマ拡張機能および詳細構成オプションが用意されています。 また、サンプル ファイル アダプターに含まれているスキーマにはない拡張機能も用意されています。 アダプター フレームワーク スキーマの拡張機能の詳細については、次を参照してください。[アダプター フレームワーク構成スキーマの拡張機能](../core/adapter-framework-configuration-schema-extensions.md)します。 カスタム ドロップダウン エディターやカスタム型コンバーターなどの高度な構成オプションの詳細については、次を参照してください。[アダプターの高度な構成コンポーネント](../core/advanced-configuration-components-for-adapters.md)です。  
+ アダプター フレームワークは、スキーマの拡張機能および一般的なアダプター構成の要件をサポートするために高度な構成オプションを提供します。 サンプル ファイル アダプターに含まれているスキーマではない拡張機能も提供します。 アダプター フレームワーク スキーマの拡張機能の詳細については、次を参照してください。[アダプター フレームワーク構成スキーマの拡張機能](../core/adapter-framework-configuration-schema-extensions.md)します。 カスタム ドロップダウン エディターやカスタム型コンバーターなどの高度な構成オプションの詳細については、次を参照してください。[アダプターの高度な構成コンポーネント](../core/advanced-configuration-components-for-adapters.md)します。  
   
- TransmitHandler.xsd ファイルのコードを、このトピックの最後に示します。このコードにより、次のプロパティ ページが作成されます。  
+ このトピックの最後に、コードは、TransmitHandler.xsd ファイルからは、し、次のプロパティ ページを生成します。  
   
  ![](../core/media/ebiz-prog-custad-sh.gif "ebiz_prog_custad_sh")  
-TransmitHandler.xsd ファイルによって作成される送信ハンドラー プロパティ ページ  
+TransmitHandler.xsd ファイルによって作成されたハンドラーのプロパティ ページを送信します。  
   
- 使用に注意してください、 \<baf:designer\>、 \<baf:displayname\>、および\<baf:description\>次に示す TransmitHandler.xsd コード内のタグ。 これらは、アダプター フレームワークによって提供されているカスタム装飾であり、このようなプロパティ ページの生成を高速化します。  
+ 使用に注意してください、 \<baf:designer\>、 \<baf:displayname\>、および\<baf:description\>以下に示す TransmitHandler.xsd コード内のタグ。 これらは、これらのプロパティ ページの生成を速くアダプター フレームワークによって提供されるカスタムの装飾です。  
   
- すべてのアダプター フレームワーク内で使用できる装飾の一覧は、次を参照してください。[アダプター フレームワーク構成スキーマの装飾タグ](../core/adapter-framework-configuration-schema-decoration-tags.md)です。  
+ アダプター フレームワーク内で使用できる文字装飾のすべての一覧は、次を参照してください。[アダプター フレームワーク構成スキーマの装飾タグ](../core/adapter-framework-configuration-schema-decoration-tags.md)します。  
   
- このスキーマには、要素が 1 つだけ含まれており、URI 要素は含まれていません。  
+ スキーマは 1 つだけ要素があり、URI 要素が含まれていないことに注意してください。  
   
 > [!IMPORTANT]
->  既定のアダプター スキーマに、機密性の高い顧客データを格納しない。 セキュリティ上の理由により、ユーザー名とパスワードの情報を構成するのは、アダプターの展開後にしてください。 これにより、エンタープライズ シングル サインオン (SSO) データベースに確実に情報が格納されます。 SSO データベースの詳細については、次を参照してください。[を使用して SSO](../core/using-sso.md)です。  
+>  既定のアダプター スキーマでは、顧客の機密データを格納しないでください。 セキュリティ上の理由には、アダプターを展開した後にのみ、ユーザー名とパスワード情報を構成します。 これにより、情報を取得します、エンタープライズ シングル サインオン (SSO) データベースに格納されていること。 SSO データベースの詳細については、次を参照してください。[を使用して SSO](../core/using-sso.md)します。  
   
 ```  
 <?xml version="1.0" encoding="utf-16"?>  
@@ -97,19 +97,19 @@ number of threads per CPU to execute in the thread pool</baf:description>
 </xs:schema>  
 ```  
   
-## <a name="send-port-and-receive-location-schemas"></a>送信ポートおよび受信場所のスキーマ  
- アダプターにポート固有のプロパティを設定するには、受信場所および送信ポートの構成スキーマを変更します。 スキーマ ファイル TransmitLocation.xsd および ReceiveLocation.xsd では、それぞれ送信ポートと受信場所を構成します。  
+## <a name="send-port-and-receive-location-schemas"></a>送信ポートと受信場所のスキーマ  
+ アダプターのポートに固有のプロパティを設定するには、受信場所を変更し、ポートの構成スキーマを送信します。 TransmitLocation.xsd および ReceiveLocation.xsd スキーマ ファイルは、送信ポートを構成し、それぞれの場所を受信します。  
   
- アダプター フレームワークには、一般的なアダプター構成の要件をサポートするための、スキーマ拡張機能および詳細構成オプションが用意されています。 アダプター フレームワーク スキーマの拡張機能の詳細については、次を参照してください。[アダプター フレームワーク構成スキーマの拡張機能](../core/adapter-framework-configuration-schema-extensions.md)します。 カスタム ドロップダウン エディターやカスタム型コンバーターなどの高度な構成オプションの詳細については、次を参照してください。[アダプターの高度な構成コンポーネント](../core/advanced-configuration-components-for-adapters.md)です。  
+ アダプター フレームワークは、スキーマの拡張機能および一般的なアダプター構成の要件をサポートするために高度な構成オプションを提供します。 アダプター フレームワーク スキーマの拡張機能の詳細については、次を参照してください。[アダプター フレームワーク構成スキーマの拡張機能](../core/adapter-framework-configuration-schema-extensions.md)します。 カスタム ドロップダウン エディターやカスタム型コンバーターなどの高度な構成オプションの詳細については、次を参照してください。[アダプターの高度な構成コンポーネント](../core/advanced-configuration-components-for-adapters.md)します。  
   
- TransmitLocation.xsd ファイルのコードを以下に示します。このコードにより、次のプロパティ ページが作成されます。  
+ 次のコードは、TransmitLocation.xsd ファイルから、次のプロパティ ページが生成されます。  
   
  ![](../core/media/ebiz-prog-custad-sp.gif "ebiz_prog_custad_sp")  
-サンプル ファイル アダプターの送信ポート プロパティ ページを示します  
+サンプル ファイル アダプターの送信ポートのプロパティ ページを示しています。  
   
- 送信ポートの構成が含まれている下の TransmitLocation.xsd ファイルに注意してください、 \<baf:designer\>、 \<baf:displayname\>、および\<baf:description\>とまったく同様に、タグ送信ハンドラーもパラメーターを使用して、 \<baf:category\>タグ。 このカテゴリ タグを使用すると、複数のプロパティをグループ化できます。 カテゴリが複数ある場合は、展開したり折りたたんだりできます。また、カテゴリに含まれるプロパティの上には、そのカテゴリがヘッダーとして灰色で表示されます。 詳細については、次を参照してください。[アダプター フレームワーク構成スキーマの拡張機能](../core/adapter-framework-configuration-schema-extensions.md)します。  
+ 下の TransmitLocation.xsd ファイルの送信ポートの構成を含むことに注意してください、 \<baf:designer\>、 \<baf:displayname\>、および\<baf:description\>タグと同じように、。送信ハンドラーの場合と使用、 \<baf:category\>タグ。 カテゴリ タグには、まとめてグループのプロパティを使用します。 1 つ以上のカテゴリがある場合は、カテゴリは展開と折りたたみし、そのカテゴリのプロパティ上のヘッダーとして灰色で表示されます。 詳細については、次を参照してください。[アダプター フレームワーク構成スキーマの拡張機能](../core/adapter-framework-configuration-schema-extensions.md)します。  
   
- このスキーマには URI フィールドも含まれています。 これは、送信ポート プロパティ ページのフィールド情報をすべて入力した後に表示されるページに、アダプターによる検証処理中に自動入力されます。  
+ このスキーマには、URI フィールドも含まれています。 これはすべてのフィールド情報、送信ポートのプロパティ ページの検証処理中に入力した後に表示されるページで、アダプターによって設定されます。  
   
 ```  
 <?xml version="1.0" encoding="utf-16"?>  

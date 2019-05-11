@@ -15,12 +15,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 96dd1c4cd8909564ff39c78b5b1a9e4fc248d93f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 97532000f99f10ceedde76ec0c072a053739d1b4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36972859"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65290170"
 ---
 # <a name="modifying-2xml-schemas-to-work-with-biztalk-editor"></a>BizTalk エディターを使用する 2.xml スキーマの変更
 HL7 2. XML スキーマが正しく連動させる Microsoft BizTalk Accelerator for HL7 の変更が必要です ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)])。 次に、HL7 V2 を変更する方法について説明します。BizTalk エディターを使用して使用することを有効にする XML スキーマです。  

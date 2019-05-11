@@ -1,5 +1,5 @@
 ---
-title: WCF LOB Adapter SDK での展開パッケージを作成 |Microsoft ドキュメント
+title: WCF LOB アダプター SDK を使用した配置パッケージの作成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,26 +12,26 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 734d79e92a4864090720434b9a1fb83387a0a850
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: f6d8a74929d5a3f5073e2ac927d3959068166dc1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25966560"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65363737"
 ---
-# <a name="create-a-deployment-package-with-the-wcf-lob-adapter-sdk"></a>WCF LOB Adapter SDK の配置パッケージを作成します。
-開発サイクル中にビルド、デバッグ、および Visual Studio 内で、アダプターを実行することができます。 アダプター ソリューションの出力は、DLL アセンブリです。 Visual Studio IDE を使用してアダプター ソリューションをビルドまたは devenv.exe スクリプトを使用して、アダプター アセンブリを作成することができます。 アダプターを開発し、アダプターのコンシューマーの環境内で使用可能な状態である、アダプターはテスト環境や実稼働環境にインストールする展開パッケージを作成する必要があります。  
+# <a name="create-a-deployment-package-with-the-wcf-lob-adapter-sdk"></a>WCF LOB アダプター SDK を使用した配置パッケージを作成します。
+開発サイクルでは、ビルド、デバッグ、および Visual Studio 内で、アダプターを実行することができます。 アダプター ソリューションの出力は、DLL アセンブリです。 Visual Studio IDE を使用して、アダプター ソリューションをビルドまたは devenv.exe スクリプトを使用して、アダプター アセンブリを作成することができます。 アダプターを開発し、アダプターのコンシューマーの環境内で使用できる状態になります、テストおよび運用環境にインストールするアダプターを使用する展開パッケージを作成する必要があります。  
   
  ソリューション内の Visual Studio のセットアップと配置プロジェクトを含めることができます。 ソリューションのビルドの一部として、.msi ファイルを自動的に生成するために使用できます。  
   
 > [!NOTE]
->  セットアップと配置プロジェクトは、ローカル ワークステーションに、Configuration Manager で ([ビルド] メニューに) Visual Studio .NET でを除外することで、ソリューションをビルドするたびに作成されないようにできます。 このメソッドを使用してソリューションのビルドからプロジェクトを除外する場合、ソース管理されたソリューション ファイルは影響しません。 これは開発者特有であり、ソース管理下にないソリューション ユーザー オプション ファイル内では、変更が保持されます。  
+>  セットアップと配置プロジェクトを防止、Configuration Manager で ([ビルド] メニューに) Visual Studio .NET 内で、除外することで、ローカル ワークステーションでソリューションをビルドするたびに構築できます。 このメソッドを使用してソリューションのビルドからプロジェクトを除外した場合、ソース管理されたソリューション ファイルは影響しません。 変更は、開発者向けのソース管理下にないソリューション ユーザー オプション ファイル内で保持されます。  
   
- 新しいプロジェクトがソリューションに追加されるたびに更新を新しいプロジェクトの出力が .msi ファイル内でインクルードされると、プロジェクト固有のインストール手順を実行することを確認するデプロイ プロジェクトを構成することを忘れないでください。  
+ 新しいプロジェクトがソリューションに追加されるたびに、新しいプロジェクトの出力が .msi ファイルに含まれると、プロジェクトに固有のインストール手順を実行することを確認する展開プロジェクトを更新および構成を忘れないでください。  
   
- アダプター プロジェクトの出力をユーザーのコンピューターにインストールするには不十分です。 アダプターがグローバル アセンブリ キャッシュ (GAC) にインストールする必要があるし、が付いたアダプターを登録するように更新する必要があります、machine.config ファイル[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]です。  
+ アダプター プロジェクトの出力をユーザーのコンピューターにインストールするには不十分ではありません。 アダプターはグローバル アセンブリ キャッシュ (GAC) にインストールする必要があるし、machine.config ファイルでアダプターを登録する更新が必要[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]します。  
   
- 登録または登録解除のアダプターが使用できるサンプルのカスタム アクションを次に示します[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]です。  
+ 登録またはでアダプターを登録解除に使用できるサンプルのカスタム アクションを次に[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]します。  
   
 ```  
 using System;  
@@ -261,7 +261,7 @@ namespace Microsoft.Adapters.Samples.EchoV2
 }  
 ```  
   
- 展開パッケージにサンプル アダプターを調査する場合は、テストのコードとインストールのスクリプトを含む完成したエコー アダプターをダウンロードできます。 このサンプルは、BizTalk のインストール ファイルに含まれる`\BizTalk Server\ASDK_x86\Program Files\WCF LOB Adapter SDK\Documents\Samples`または`\BizTalk Server\ASDK_x64\Program Files\WCF LOB Adapter SDK\Documents\Samples`です。
+ デプロイメント パッケージ サンプル アダプターを探索する場合は、テスト コードとインストール スクリプトを含む、完成したエコー アダプターをダウンロードできます。 このサンプルは、BizTalk のインストール ファイルに含まれる`\BizTalk Server\ASDK_x86\Program Files\WCF LOB Adapter SDK\Documents\Samples`または`\BizTalk Server\ASDK_x64\Program Files\WCF LOB Adapter SDK\Documents\Samples`します。
   
 ## <a name="see-also"></a>参照  
  [WCF LOB アダプター SDK を使用して、アダプターを展開します。](../../adapters-and-accelerators/wcf-lob-adapter-sdk/deploy-an-adapter-using-the-wcf-lob-adapter-sdk.md)   

@@ -14,15 +14,15 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a4932b276250bb9b43b45b7957fb2a8dfc597e92
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4d3aef2c09f86e95c5fd4a4df7534dd7848dc063
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36982003"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65283678"
 ---
 # <a name="how-biztalk-accelerator-for-rosettanet-works"></a>BizTalk Accelerator for RosettaNet のしくみ
-Microsoft® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] on Microsoft を構築することにより、ハイテク製造ソリューションを提供します。[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]します。 これは、RNIF (RosettaNet Implementation Framework) および PIP (Partner Interface Processes) のサポートを提供し、メッセージ処理をカスタマイズするコンポーネントをハイテク製造アプリケーションに追加することにより行います。  
+Microsoft® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] on Microsoft を構築することにより、ハイテク製造ソリューションを提供します。[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]します。 これは RosettaNet Implementation Framework (RNIF) と Partner Interface Process (Pip) のサポートを提供して、メッセージ、ハイテク製造アプリケーションに処理をカスタマイズするコンポーネントを追加することによって。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

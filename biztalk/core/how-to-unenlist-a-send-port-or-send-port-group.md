@@ -19,24 +19,24 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ee33b2ea9711b19e23067b164ecef9084541ba87
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7dbd8a3a7c3450fcf36d66467cd95a38e39583dd
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36967747"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65333777"
 ---
 # <a name="how-to-unenlist-a-send-port-or-send-port-group"></a>送信ポートまたは送信ポート グループを参加解除する方法
-このトピックでは、BizTalk Server 管理コンソールを使用して、送信ポートまたは送信ポート グループを参加解除する方法について説明します。 送信ポートまたは送信ポート グループを参加解除すると、そこに関連付けられていたすべてのサブスクリプションが削除されます。 送信ポートまたは送信ポート グループは、実行中であるか停止されているかに関係なく参加解除できます。 参加解除された送信ポートまたは送信ポート グループは自動的に停止されます。  
+このトピックでは、送信ポートを参加解除、または送信ポート グループを BizTalk Server 管理コンソールを使用する方法について説明します。 送信ポートまたは送信ポート グループを参加解除、その送信ポートに関連付けられているすべてのサブスクリプションを排除または送信ポート グループ。 実行中と停止の両方の送信ポートの参加を解除したり、送信ポート グループができます。 送信ポートまたは送信ポート グループを自動的に参加解除するには、そのは停止します。  
   
- 送信ポートまたは送信ポート グループの参加解除が必要になる状況としては、バインドを編集したい場合や、送信ポートまたは送信ポート グループを BizTalk Server 環境から削除したい場合などが考えられます。  
+ 送信ポートを参加解除、または送信ポート グループ、そのバインドを編集したいなどのポートまたは送信ポート グループを BizTalk Server 環境からの送信を削除するかどうかまたはします。  
   
- 実行中または参加済みの送信ポート グループに対して最後に参加させた送信ポートを参加解除することはできません。 送信ポート グループを参加解除しても、そのグループに属する各送信ポートの状態は変わりません。  
+ 参加しているまたは実行中である送信ポート グループ内の最後の参加させた送信ポートを参加解除することはできません。 送信ポート グループを参加解除しても、それに含まれる送信ポートの状態は変わりません。  
   
 ## <a name="prerequisites"></a>前提条件  
  このトピックの手順を実行するには、BizTalk Server 管理者グループのメンバーであるアカウントでログオンする必要があります。 詳細なアクセス許可についてを参照してください。[を展開すると、BizTalk アプリケーションの管理に必要なアクセス許可](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)します。  
   
-### <a name="to-unenlist-a-send-port-or-send-port-group"></a>送信ポートまたは送信ポート グループを参加解除するには  
+### <a name="to-unenlist-a-send-port-or-send-port-group"></a>送信ポートを参加解除または送信ポート グループ  
   
 1. クリックして**開始**、 をクリックして**すべてのプログラム**、 をクリックして[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリックします**BizTalk Server 管理**します。  
   

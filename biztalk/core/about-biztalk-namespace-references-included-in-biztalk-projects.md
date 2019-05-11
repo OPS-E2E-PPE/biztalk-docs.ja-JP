@@ -24,12 +24,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 608f3ebf9a80553749fe5de558c2db05e3c7673d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 01344253a75033650b0e6326ff11420d0ed6fef5
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37016370"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65362402"
 ---
 # <a name="about-biztalk-namespace-references-included-in-biztalk-projects"></a>BizTalk プロジェクト内の BizTalk 名前空間参照について
 新しい BizTalk プロジェクトを追加すると、既定で次の名前空間が設定されます。  
@@ -42,7 +42,7 @@ ms.locfileid: "37016370"
   
 - **System.Xml**  
   
-  また、新しい参照および Web 参照をプロジェクトに追加することもできます。 追加の詳細については参照を使用して、**プロジェクト**] メニューの [を参照してください[Visual Studio を使って](../core/using-visual-studio.md)します。 Web 参照を追加する方法の詳細については、[Web 参照を追加する](../core/adding-web-references.md)を参照してください。  
+  また、新しい参照および Web 参照をプロジェクトに追加することもできます。 追加の詳細については参照を使用して、**プロジェクト**] メニューの [を参照してください[Visual Studio を使って](../core/using-visual-studio.md)します。 Web 参照を追加する方法の詳細については、次を参照してください。 [Web 参照を追加する](../core/adding-web-references.md)します。  
   
 > [!CAUTION]
 >  既定の参照は削除しないでください。 既定の参照を削除すると、プロジェクト内の BizTalk アイテムを参照するときに問題が発生する場合があります。 ソリューション エクスプローラーで既定の参照を復元できます。  

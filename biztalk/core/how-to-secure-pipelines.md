@@ -1,5 +1,5 @@
 ---
-title: パイプラインをセキュリティで保護する方法 |Microsoft ドキュメント
+title: パイプラインをセキュリティで保護する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,26 +12,26 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 903e9faec81ce58aac243fb7a22bac6678a81a42
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9e27ba4d24dd8109366af95b0a477fc8fb049ce5
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22255186"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65334824"
 ---
-# <a name="how-to-secure-pipelines"></a>パイプラインをセキュリティ保護する方法
+# <a name="how-to-secure-pipelines"></a>パイプラインをセキュリティで保護する方法
 
-## <a name="authentication-trusted"></a>信頼されている認証
-ホストとして、管理コンソールでマークできる**信頼されている認証**です。 ホストが [信頼されている認証] としてマークされている場合、そのホストからのメッセージのコンテキストとして送信されたセキュリティ関連のプロパティが、Microsoft BizTalk Server で信頼されます。 セキュリティ関連のプロパティをメッセージ コンテキストでは、 **OriginatorPID**、BTS メッセージ コンテキスト プロパティに対応します。SourcePartyID、および**OriginatorSID**、メッセージ コンテキスト プロパティに対応する**BTS です。WindowsUser**です。 詳細については、次を参照してください。**メッセージ コンテキスト プロパティ**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]です。  
+## <a name="authentication-trusted"></a>信頼された認証
+ホストとして、管理コンソールでマークできる**信頼されている認証**します。 信頼されている認証としてホストを示す Microsoft BizTalk Server がメッセージのメッセージ コンテキストでそのホストから送信されたセキュリティ関連のプロパティを信頼することを意味します。 セキュリティ関連のプロパティをメッセージ コンテキストでは、 **OriginatorPID**、BTS メッセージ コンテキスト プロパティに対応します。SourcePartyID、および**OriginatorSID**、メッセージ コンテキスト プロパティに対応する**BTS します。WindowsUser**します。 詳細については、次を参照してください。**メッセージ コンテキスト プロパティ**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]します。  
   
- としてマークされているホスト**認証信頼**は、信頼されたホストが追加されるメッセージをキューに自分以外からのメッセージの送信者としてを示すために使用します。 としてマークされていないホスト言い換えれば、**信頼されている認証**それ自体以外のメッセージの送信者からキューにメッセージを追加することはできません。  
+ としてマークされているホスト**認証が信頼された**を信頼されたホストが追加されるメッセージ キュー自体以外のユーザーから、メッセージの送信者として示すためには許可されています。 つまり、としてマークされていないホスト**信頼されている認証**自体以外のメッセージの送信者からキューにメッセージを追加することはできません。  
   
 > [!IMPORTANT]
->  MIME/SMIME デコーダー パイプライン コンポーネントは、解読証明書の有効期限をチェックしません。 ただし、署名証明書の有効期限はチェックされます。  
+>  MIME/SMIME デコーダー パイプライン コンポーネントでは、暗号化解除証明書の有効期限はチェックしません。 ただし、署名証明書の有効期限はチェックします。  
   
- エンコードとデコード SMTP または HTTP 経由で送信されたメッセージについては、次を参照してください。 [- MIME/SMIME エンコーダー パイプライン コンポーネント](../core/mime-smime-encoder-pipeline-component.md)です。 参照してください[- MIME/SMIME デコーダー パイプライン コンポーネント](../core/mime-smime-decoder-pipeline-component.md)です。  
+ エンコードおよびデコードの SMTP または HTTP 経由で送信されるメッセージについては、次を参照してください。 [MIME-SMIME エンコーダー パイプライン コンポーネント](../core/mime-smime-encoder-pipeline-component.md)します。 参照してください[MIME/SMIME デコーダー パイプライン コンポーネント](../core/mime-smime-decoder-pipeline-component.md)します。  
   
- サード パーティを処理する場合、署名の検証方法については、次を参照してください。[パーティの解決パイプライン コンポーネント](../core/party-resolution-pipeline-component.md)です。 参照してください[アグリーメントを作成する方法](http://msdn.microsoft.com/library/f8608cf7-8ac5-4f02-805e-5a0bdf19ca8c)です。  
+ ときに、サード パーティの署名の確認については、次を参照してください。[パーティの解決パイプライン コンポーネント](../core/party-resolution-pipeline-component.md)します。 参照してください[アグリーメントを作成する方法](http://msdn.microsoft.com/library/f8608cf7-8ac5-4f02-805e-5a0bdf19ca8c)します。  
   
 ## <a name="see-also"></a>参照  
  [パイプライン デザイナーを使用してパイプラインを作成します。](../core/creating-pipelines-using-pipeline-designer.md)   

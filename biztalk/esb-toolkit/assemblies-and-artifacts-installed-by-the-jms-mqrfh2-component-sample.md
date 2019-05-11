@@ -1,5 +1,5 @@
 ---
-title: アセンブリおよび JMS MQRFH2 コンポーネント サンプルがインストールされているアイテム |Microsoft ドキュメント
+title: アセンブリと JMS MQRFH2 コンポーネント サンプルによりインストールされたアイテム |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,15 +12,15 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b1d5035f5379972521c36fb8bef5b6aba8157aa6
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 97d26dc0a2203938cd338dcee1b72542a9e39222
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26009491"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65392209"
 ---
-# <a name="assemblies-and-artifacts-installed-by-the-jms-mqrfh2-component-sample"></a>アセンブリおよび JMS MQRFH2 コンポーネント サンプルがインストールされているアイテム
-次の表は、アセンブリおよびによってインストールされているアイテム、 [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] JMS MQRFH2 コンポーネント サンプルです。  
+# <a name="assemblies-and-artifacts-installed-by-the-jms-mqrfh2-component-sample"></a>アセンブリと JMS MQRFH2 コンポーネント サンプルによりインストールされたアイテム
+次の表は、アセンブリとインストールされている成果物、 [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] JMS MQRFH2 コンポーネント サンプル。  
   
 |場所|カテゴリ|コンポーネントの名前とバージョン|  
 |--------------|--------------|---------------------------------------|  

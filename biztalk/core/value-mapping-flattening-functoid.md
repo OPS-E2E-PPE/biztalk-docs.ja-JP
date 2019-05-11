@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d17d5d64409cd434075dfd4c556209864784e4d5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 783bcb19bacfde3833065ddcc18f5889b83881d6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22287874"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65292575"
 ---
 # <a name="value-mapping-flattening-functoid"></a>値のマッピング (フラット化) Functoid
 **値のマッピング (フラット化)** functoid では、複数のレコードを 1 つのレコードに変換することによって、入力インスタンス メッセージの一部をフラット化することができます。 これは、Microsoft Commerce Server カタログを変換する場合の一般的な操作です。  

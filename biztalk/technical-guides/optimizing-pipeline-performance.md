@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7102eb3fc0f6f7b1ef16a319e5e04daff6d544d1
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 34d83aad4a393df0cc0532545d5518fff9e0f8e5
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37007875"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65291352"
 ---
 # <a name="optimizing-pipeline-performance"></a>パイプラインのパフォーマンスを最適化します。
 このトピックでは、パイプラインでのパフォーマンスを最適化するためのガイドラインを説明します、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ソリューション。  
@@ -30,11 +30,11 @@ ms.locfileid: "37007875"
   
 3. パイプライン コンポーネント内で受信メッセージを確認する必要がある場合にメモリを使用してドキュメント全体を読み込みを避けるため、 **XmlDocument**オブジェクト。 インスタンスで必要な領域の量、 **XmlDocument**を読み込むし、XML ドキュメントのメモリ内表現を作成するクラスは、最大 10 倍の実際のメッセージ サイズ。 メッセージを読み取るために使用する必要があります、 **XmlTextReader**オブジェクトと共に、次のクラスのインスタンス。  
   
-   -   **VirtualStream (Microsoft.BizTalk.Streaming.dll)** -このクラスのソース コードが次のように、パイプラインの SDK の下の 2 つの場所にある: \samples\pipelines\arbitraryxpathpropertyhandler および SDK\Samples\Pipelines\SchemaResolverComponent\SchemaResolverFlatFileDasm します。  
+   -   **VirtualStream (Microsoft.BizTalk.Streaming.dll)** -このクラスのソース コードが次のように、パイプラインの SDK の下の 2 つの場所にあります。\Samples\pipelines\arbitraryxpathpropertyhandler および \samples\pipelines\schemaresolvercomponent\schemaresolverflatfiledasm します。  
   
    -   **ReadOnlySeekableStream (Microsoft.BizTalk.Streaming.dll)** します。  
   
-   -   **SeekAbleReadOnlyStream** -このクラスのソース コードが次のように、パイプラインの SDK の下の 2 つの場所にある: \samples\pipelines\arbitraryxpathpropertyhandler および SDK\Samples\Pipelines\SchemaResolverComponent\SchemaResolverFlatFileDasm します。  
+   -   **SeekAbleReadOnlyStream** -このクラスのソース コードが次のように、パイプラインの SDK の下の 2 つの場所にあります。\Samples\pipelines\arbitraryxpathpropertyhandler および \samples\pipelines\schemaresolvercomponent\schemaresolverflatfiledasm します。  
   
 4. PassThruReceive パイプラインおよび可能な限り PassThruTransmit 標準パイプラインを使用します。 任意のパイプライン コンポーネントが含まれていないされ、メッセージの処理を実行しないでください。 このため、受信または送信メッセージの最大のパフォーマンスを支えます。 バイナリ メッセージを送信する必要がある場合は、バイナリのドキュメントを BizTalk メッセージ ボックスと送信ポートで PassThruTransmit パイプラインに発行する必要がある場合は、受信場所で PassThruReceive パイプラインを使用できます。 PassThruTransmit パイプラインで、メッセージは、フォーマットされているし、送信する準備ができている場合、オーケストレーションにバインドする物理送信ポートを使用することもできます。 次の操作のいずれかを実行する必要がある場合に、別のアプローチを使用する必要があります。  
   

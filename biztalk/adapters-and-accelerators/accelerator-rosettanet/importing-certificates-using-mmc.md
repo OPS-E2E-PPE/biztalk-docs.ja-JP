@@ -19,27 +19,27 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2442551819d338d0cd78f7f7d112ffb8800aee6f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 0d813adad739f7843308bcd3c53aa242ff97520c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36970811"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65283602"
 ---
 # <a name="importing-certificates-using-mmc"></a>MMC を使用して証明書のインポート
 このトピックでは、マイクロソフトのデジタル証明書をインポートする方法を説明します[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]を使用して取引先パートナーを認証、受信メッセージの暗号化を解除または暗号化または送信メッセージに署名します。  
   
- この手順では、Microsoft 管理コンソール (MMC) の証明書スナップインで使用します。 この手動プロセスでは、証明書ストアに証明書をインポートしますが、証明書の使用法は個別に構成する必要があります。 証明書は CertWizard ユーティリティを使用してインポートすることもできます。この場合、証明書の使用法は自動的に構成されます。  
+ この手順では、Microsoft 管理コンソール (MMC) の証明書スナップインで使用します。 この手動プロセスは、証明書の使用を個別に構成することを必要とする証明書ストアに証明書をインポートします。 証明書の使用を自動的に構成する CertWizard ユーティリティを使用して、証明書をインポートすることもできます。  
   
  プライベート証明書をインポートするには、BizTalk ホストを実行するユーザー アカウントを使用する必要があります。  
   
 ### <a name="to-import-a-public-key-certificate"></a>公開キー証明書をインポートするには  
   
-1. 公開キー (.cer) 証明書ファイルを、サーバーのハードディスク上にある証明書のコピー先にコピーします。  
+1. 公開キー (.cer) 証明書が証明書のコピー先サーバーのハード ディスク上の場所にファイルをコピーします。  
   
 2. をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**Microsoft** [!INCLUDE[btaBTARNNoVersionui](../../includes/btabtarnnoversionui-md.md)]、順にクリックします[!INCLUDE[btaBTARNNoVersionui](../../includes/btabtarnnoversionui-md.md)]**管理コンソール**.  
   
-3. [!INCLUDE[btaBTARNNoVersion](../../includes/btabtarnnoversion-md.md)]管理コンソールで、展開**証明書 (ローカル コンピューター)** します。 ログインするユーザーは、そのコンピューターの管理権限を持っていなければなりません。  
+3. [!INCLUDE[btaBTARNNoVersion](../../includes/btabtarnnoversion-md.md)]管理コンソールで、展開**証明書 (ローカル コンピューター)** します。 ログイン ユーザー、コンピューター管理者のアクセス許可が必要です。  
   
 4. 右クリック**その他のユーザー**、 をポイント**すべてのタスク**、 をクリックし、**インポート**します。  
   
@@ -53,7 +53,7 @@ ms.locfileid: "36970811"
   
 ### <a name="to-import-a-private-key-certificate"></a>秘密キー証明書をインポートするには  
   
-1. 秘密キー (.pfx) 証明書ファイルを、サーバーのハードディスク上にある証明書のコピー先にコピーします。  
+1. 証明書のコピー先サーバーのハード ディスク上の場所にファイルの秘密キー (.pfx) 証明書のコピー。  
   
 2. をクリックして**開始**、 をクリックして**実行**、型 **/user として実行:\<サービスをホスト\>mmc**、順にクリックします**OK**します。  
   

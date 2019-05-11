@@ -1,5 +1,5 @@
 ---
-title: '手順 3: 構成し、アプリケーションを起動します |Microsoft Docs'
+title: 手順 3:構成し、アプリケーションを起動します |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,22 +12,22 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9f932ca1f3570f080de239dd90c52d9a5f5db721
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6dd0d569355d0873b42bc708b44e12993e97f58e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36988203"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65367704"
 ---
-# <a name="step-3-configure-and-start-the-application"></a>手順 3: 構成し、アプリケーションを起動します
+# <a name="step-3-configure-and-start-the-application"></a>手順 3:構成し、アプリケーションを起動します
 ![手順 4 の 3](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-3of4.gif "Step_3of4")  
   
  **所要時間:** 10 分  
   
- **目標:** この手順で構成し、SampleApplication アプリケーションを起動します。 作成した論理アイテムを関連付ける SampleApplication アプリケーションを構成するときに[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]物理対応します。  
+ **目標:** この手順では、構成し、SampleApplication アプリケーションを起動します。 作成した論理アイテムを関連付ける SampleApplication アプリケーションを構成するときに[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]物理対応します。  
   
 ## <a name="prerequisites"></a>前提条件  
- 完了する必要があります[手順 2: ポートを構成する](../../adapters-and-accelerators/adapter-sql/step-2-configure-the-ports.md)します。  
+ 完了する必要があります[手順 2。ポートを構成する](../../adapters-and-accelerators/adapter-sql/step-2-configure-the-ports.md)します。  
   
 ### <a name="to-configure-and-start-the-application"></a>構成して、アプリケーションを起動するには  
   
@@ -63,9 +63,9 @@ ms.locfileid: "36988203"
  構成を SampleApplication アプリケーションを開始します。  
   
 ## <a name="next-steps"></a>次の手順  
- 新しく加わる従業員を挿入して、アプリケーションをテストする、**従業員**」の説明に従って、テーブル[手順 4: アプリケーションをテストする](../../adapters-and-accelerators/adapter-sql/step-4-test-the-application.md)します。  
+ 新しく加わる従業員を挿入して、アプリケーションをテストする、**従業員**」の説明に従って、テーブル[手順 4。アプリケーションをテストする](../../adapters-and-accelerators/adapter-sql/step-4-test-the-application.md)します。  
   
 ## <a name="see-also"></a>参照  
- [手順 2: ポートを構成します。](../../adapters-and-accelerators/adapter-sql/step-2-configure-the-ports.md)   
- [手順 4: アプリケーションをテストします。](../../adapters-and-accelerators/adapter-sql/step-4-test-the-application.md)   
+ [手順 2:ポートを構成します。](../../adapters-and-accelerators/adapter-sql/step-2-configure-the-ports.md)   
+ [手順 4:アプリケーションをテストします。](../../adapters-and-accelerators/adapter-sql/step-4-test-the-application.md)   
  [レッスン 5: ソリューションを展開する](../../adapters-and-accelerators/adapter-sql/lesson-5-deploy-the-solution.md)

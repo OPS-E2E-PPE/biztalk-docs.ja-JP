@@ -12,14 +12,14 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2e200f4ffd8d822a5c2bb1a0bad74a60e84a408a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b44cd404242c19ebbfbc92b358fb33de9b510b95
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36992435"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65360191"
 ---
-# <a name="an-end-element-was-found-while-looking-for-start-element"></a>StartElement の検索中に EndElement が見つかりました
+# <a name="an-end-element-was-found-while-looking-for-start-element"></a>開始要素の中に、終了要素が見つかりました
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                                   |
@@ -33,7 +33,7 @@ ms.locfileid: "36992435"
 |  メッセージ テキスト   | 名前の EndElement{0}検出されましたが、名前の StartElement の検索中に{1}、深さ {2} |
   
 ## <a name="explanation"></a>説明  
- このエラー/警告/情報イベントは、XML メッセージが検証に失敗したため、BizTalk Server が受信 XML メッセージ (解析後) または送信 XML メッセージ (シリアル化前) を処理できなかったことを示します。 XML メッセージに、ヘッダーまたはデータ要素の終了タグが含まれていませんでした。  
+ このエラー/警告/情報イベントは、BizTalk Server を処理できなかったこと (解析後) 受信 XML メッセージまたは送信 XML メッセージ (シリアル化) する前に、XML メッセージの検証に失敗したためことを示します。 XML メッセージに、ヘッダーまたはデータ要素の終了タグが含まれていませんでした。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- このエラーを解決するには、XML メッセージに適切な終了タグまたはトレーラーを追加し、メッセージを再送信します。
+ このエラーを解決するには、XML メッセージに適切な終了タグまたはトレーラーを追加してし、メッセージを再送信します。

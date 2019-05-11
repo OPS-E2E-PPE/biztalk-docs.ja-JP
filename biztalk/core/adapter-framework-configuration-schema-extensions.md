@@ -1,5 +1,5 @@
 ---
-title: アダプター フレームワーク構成スキーマの拡張機能 |Microsoft ドキュメント
+title: アダプター フレームワーク構成スキーマの拡張機能 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,23 +12,23 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0cc50bcd592e104be0ffc82573c8ad9f4227858c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ac88ce098f546bf97fcb2d3897f71f4e6429966f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22225226"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65361488"
 ---
 # <a name="adapter-framework-configuration-schema-extensions"></a>アダプター フレームワーク構成スキーマの拡張機能
-BizTalk アダプター フレームワークは、XSD 定義に基づくユーザー インターフェイスの動的生成をサポートします。 アダプターは必要な XSD を提供し、アダプター フレームワークはユーザーが値を入力できるプロパティ ページを作成します。  
+BizTalk アダプター フレームワークは、XSD 定義に基づいたユーザー インターフェイスの動的生成をサポートします。 アダプターが必要な XSD を提供し、アダプター フレームワークは、値を入力するユーザーを許可するプロパティ ページを作成します。  
   
- カスタム ユーザー インターフェイスを作成するため、アダプター フレームワークでは拡張機能がいくつか提供されています。 これらの拡張機能を使用するには、アダプター フレームワーク スキーマ (BizTalkAdapterFramework.xsd) をインポートする必要があります。 スキーマをインポートすることで、修飾および特化された型にアダプター構成スキーマでアクセスして使用できます。  
+ カスタム ユーザー インターフェイスを作成するには、アダプター フレームワークは、いくつかの拡張機能を提供します。 これらの拡張機能を使用するには、アダプター フレームワーク スキーマ (BizTalkAdapterFramework.xsd) をインポートする必要があります。 スキーマをインポートすることによってにアクセスしてアダプター構成スキーマで装飾および特化された型を使用します。  
   
- アダプターのプロパティ グリッドをカスタマイズするには、ここで説明する修飾タグと組み込み型を使用します。  
+ 装飾タグとこのセクションで説明した組み込みの型を使用すると、アダプターのプロパティ グリッドをカスタマイズできます。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [アダプター フレームワーク構成の拡張機能を有効にします。](../core/enabling-adapter-framework-configuration-extensions.md)  
+-   [アダプター フレームワーク構成の拡張機能の有効化](../core/enabling-adapter-framework-configuration-extensions.md)  
   
 -   [アダプター フレームワーク構成スキーマの装飾タグ](../core/adapter-framework-configuration-schema-decoration-tags.md)  
   

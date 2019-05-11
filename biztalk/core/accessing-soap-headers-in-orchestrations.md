@@ -1,5 +1,5 @@
 ---
-title: オーケストレーションで SOAP ヘッダーへのアクセス |Microsoft ドキュメント
+title: オーケストレーションで SOAP ヘッダーへのアクセス |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,60 +16,60 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 516b2bcc57bef507a028f30c61fd329a5fd7a598
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 01260e95c6e4bb1676c2bca589660e21812f2d9a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22225922"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65361931"
 ---
 # <a name="accessing-soap-headers-in-orchestrations"></a>オーケストレーションで SOAP ヘッダーへのアクセス
-定義されている SOAP ヘッダーと不明な SOAP ヘッダーに関して、オーケストレーション内の SOAP ヘッダー コンテキスト プロパティにアクセスできます。 プロパティ スキーマおよびコンテキスト プロパティの詳細については、次を参照してください。[プロパティ スキーマ](../core/property-schemas.md)です。  
+定義されていると、不明な SOAP ヘッダーのオーケストレーションで SOAP ヘッダー コンテキスト プロパティにアクセスすることができます。 プロパティ スキーマおよびコンテキスト プロパティの詳細については、次を参照してください。[プロパティ スキーマ](../core/property-schemas.md)します。  
   
-## <a name="defined-soap-header-context-properties"></a>定義されている SOAP ヘッダー コンテキスト プロパティ  
- オーケストレーションで定義済み SOAP ヘッダー コンテキスト プロパティでは、プロパティ スキーマが必要です。 プロパティ スキーマは、ターゲットの名前空間を持つ必要があります**http://schemas.microsoft.com/BizTalk/2003/SOAPHeader**、および**Property Schema Base**プロパティに設定**MessageContextPropertyBase**です。 各ルート要素名、プロパティ スキーマでは、定義済み SOAP ヘッダーのルート要素名と一致する必要があります。 プロパティ スキーマおよびプロパティ名の名前空間を使用して、コンテキスト プロパティの値を表示できます。 プロパティ スキーマの名前空間は、上に示したターゲットの名前空間と異なります。 プロパティ スキーマの名前空間には、任意の文字列できますが、通常、プロジェクトの名前を既定になります。  
+## <a name="defined-soap-header-context-properties"></a>定義済みの SOAP ヘッダー コンテキスト プロパティ  
+ オーケストレーションで定義されている SOAP ヘッダー コンテキスト プロパティには、プロパティ スキーマが必要です。 プロパティ スキーマは、ターゲットの名前空間をいる必要があります**http://schemas.microsoft.com/BizTalk/2003/SOAPHeader**、および**Property Schema Base**プロパティに設定**MessageContextPropertyBase**します。 プロパティ スキーマ内の各ルート要素名は、定義済みの SOAP ヘッダーのルート要素名と一致する必要があります。 プロパティ スキーマおよびプロパティ名の名前空間を使用して、コンテキスト プロパティの値を表示できます。 プロパティ スキーマの名前空間は、上に示したターゲットの名前空間と異なります。 プロパティ スキーマの名前空間には、任意の文字列できますが、通常、プロジェクトの名前を既定になります。  
   
- 次の例は、プロパティ スキーマ名前空間では、SOAP ヘッダー コンテキスト プロパティにアクセスする**SOAPHeader**、およびプロパティ名**OrigDest**:  
+ 次の例は、プロパティ スキーマの名前空間、SOAP ヘッダー コンテキスト プロパティにアクセスする**SOAPHeader**、およびプロパティ名**OrigDest**:  
   
 ```  
 stringVar = requestMessageInstance(SOAPHeader.OrigDest);  
 ```  
   
 > [!NOTE]
->  定義されている SOAP ヘッダーは、"in" または "out" ヘッダーとして取り扱われます。 ウィザードで要求メッセージと応答メッセージに同じ SOAP ヘッダーが定義された場合、応答には受信値は自動的に返されません。 要求メッセージの SOAP ヘッダー コンテキスト プロパティを応答メッセージの SOAP ヘッダー コンテキスト プロパティに明示的にコピーする必要があります。  
+>  定義済みの SOAP ヘッダーは、"in"または"out"ヘッダーに扱われます。 ウィザードでは、要求と応答メッセージの同じ SOAP ヘッダーが定義されている場合、ウィザードでは、応答の受信値は自動的に返されません。 応答メッセージの SOAP ヘッダー コンテキスト プロパティに要求メッセージの SOAP ヘッダー コンテキスト プロパティに明示的にコピーする必要があります。  
   
 ## <a name="copying-soap-header-context-property-of-incoming-message"></a>受信メッセージの SOAP ヘッダー コンテキスト プロパティのコピー  
- 受信メッセージの SOAP ヘッダー コンテキスト プロパティは、応答メッセージの同じ SOAP ヘッダー コンテキスト プロパティにコピーできます。  
+ 応答メッセージの同じ SOAP ヘッダー コンテキスト プロパティには、受信メッセージの SOAP ヘッダー コンテキスト プロパティをコピーできます。  
   
- 次の例は、SOAP ヘッダー コンテキスト プロパティのコピーを示します。  
+ 次の例では、SOAP ヘッダー コンテキスト プロパティのコピーを示しています。  
   
 ```  
 ResponseMessageInstance(SOAPHeader.OrigDest) = RequestMessageInstance(SOAPHeader.OrigDest);  
 ```  
   
- SOAP 応答の SOAP ヘッダーを作成するときは、SOAP ヘッダーを正しく作成する必要があります。 SOAP アダプタでは SOAP ヘッダー コンテキスト プロパティの内容を検証しません。 応答 SOAP ヘッダーの値が誤っていた場合、SOAP アダプタでは Web サービスのコンシューマに応答メッセージを送信できません。  
+ SOAP 応答の SOAP ヘッダーを作成するときに、SOAP ヘッダーを正しく作成することを確認します。 SOAP アダプターでは、SOAP ヘッダー コンテキスト プロパティの内容を検証しません。 応答 SOAP ヘッダーの値が正しくない場合、SOAP アダプターは、Web サービスのコンシューマーに応答メッセージを送信することはできません。  
   
 ## <a name="unknown-soap-header-context-property"></a>不明な SOAP ヘッダー コンテキスト プロパティ  
- 不明な SOAP ヘッダー コンテキスト プロパティにはプロパティ スキーマは必要ありません。 このグローバル コンテキスト プロパティにアクセスすることができます**SOAP です。UnknownHeaders**です。  
+ 不明な SOAP ヘッダー コンテキスト プロパティでは、プロパティ スキーマは必要ありません。 このグローバル コンテキスト プロパティにアクセスすることができます**SOAP します。UnknownHeaders**します。  
   
- 次の例は、不明な SOAP ヘッダー コンテキスト プロパティにアクセスする**SOAP です。UnknownHeaders**:  
+ 次の例は、不明な SOAP ヘッダー コンテキスト プロパティにアクセスする**SOAP します。UnknownHeaders**:  
   
 ```  
 stringVar = RequestMessageInstance(SOAP.UnknownHeaders);  
 ```  
   
- コンテキスト プロパティに含まれている値は、XML データを含む文字列です。 このデータにアクセスする最も簡単な方法で BizTalk 式エディタを使用する、**メッセージの割り当て**または**式**図形および内の文字列を読み込み、 **XmlDocument**および使用特定のフィールドにアクセスする XPATH クエリです。 BizTalk 式エディターで XML ドキュメントの作成の詳細については、次を参照してください。 [XLANG-s 言語](../core/xlang-s-language.md)します。  
+ コンテキスト プロパティに含まれる値は、XML データを含む文字列です。 このデータにアクセスする最も簡単な方法は、BizTalk 式エディターを使用する、**メッセージの割り当て**または**式**図形および内の文字列を読み込み、 **XmlDocument**および使用特定のフィールドにアクセスする XPATH クエリです。 BizTalk 式エディターで XML ドキュメントの作成の詳細については、次を参照してください。 [xlang-s 言語](../core/xlang-s-language.md)します。  
   
- コンテキスト プロパティは、特定のメッセージに関連付けられています。 メッセージング エンジンでは、応答メッセージに要求メッセージからの既知の SOAP ヘッダーの値は自動的にマップしません。 Web サービスの応答メッセージを作成する場合は、SOAP ヘッダーの値を明示的に設定する必要があります。 次のコマンドは、SOAP ヘッダー コンテキスト プロパティの設定の最も単純なメソッドを示します。  
+ コンテキスト プロパティは、特定のメッセージに関連付けられます。 メッセージング エンジンは、応答メッセージに要求メッセージからの既知の SOAP ヘッダーの値を自動的にマップしません。 Web サービスの応答メッセージを作成するときに具体的には、SOAP ヘッダーの値を設定する必要があります。 次のコマンドは、SOAP ヘッダー コンテキスト プロパティの設定の最も簡単なメソッドを示します。  
   
 ```  
 ResponseMessageInstance(SOAPHeader.OrigDest) = "<?xml version="1.0" encoding="utf-16"?><OrigDest xmlns=\"http://SOAPHeaderSchemas.OrigDestSOAPHeader\"><Origination xmlns=\"\">Home</Origination><Destination xmlns=\"\">Work</Destination> </OrigDest>"  
 ```  
   
- これを実現する作成することで、 **XmlDocument**と書き込みの文字列値、 **XmlDocument**をコンテキスト プロパティです。  
+ 作成してこれも実現できる、 **XmlDocument**の文字列値の書き込みと、 **XmlDocument**をコンテキスト プロパティ。  
   
 > [!NOTE]
->  場合、 **SOAP です。UnknownHeaders**プロパティが null で、BizTalk が自動的に SOAP 要求を SOAP 応答で受信した不明なヘッダーを返します。 場合、 **SOAP です。UnknownHeaders**応答メッセージのコンテキスト プロパティが null でないし、BizTalk は、SOAP 応答にその値を返します。  
+>  場合、 **SOAP します。UnknownHeaders**プロパティが null で、BizTalk は自動的に SOAP 要求を SOAP 応答で受信した不明なヘッダーを返します。 場合、 **SOAP します。UnknownHeaders**応答メッセージのコンテキスト プロパティが null でないし、BizTalk は、SOAP 応答にその値を返します。  
   
 ## <a name="see-also"></a>参照  
  [公開済み Web サービスでの SOAP ヘッダー](../core/soap-headers-with-published-web-services.md)

@@ -1,5 +1,5 @@
 ---
-title: '手順 1: エコー アダプター プロジェクトを作成する WCF LOB アダプター開発ウィザードを使用する |Microsoft Docs'
+title: 手順 1:WCF LOB アダプター開発ウィザードを使用してエコー アダプター プロジェクトを作成する |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 23
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 86b55bdfe771eb571a999668fc8ef7d2003ddf56
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: da2e6ebce130716d2a1fb79766e4760c1fa79897
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36976915"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65363244"
 ---
-# <a name="step-1-use-the-wcf-lob-adapter-development-wizard-to-create-the-echo-adapter-project"></a>手順 1: エコー アダプター プロジェクトを作成するのに WCF LOB アダプター開発ウィザードを使用します。
+# <a name="step-1-use-the-wcf-lob-adapter-development-wizard-to-create-the-echo-adapter-project"></a>手順 1:WCF LOB アダプター開発ウィザードを使用してエコー アダプター プロジェクトを作成するには
 ![手順 9 の 1](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-1of9.gif "Step_1of9")  
 
  **所要時間:** 15 分  
@@ -204,7 +204,7 @@ ms.locfileid: "36976915"
 2.  Visual Studio での**ファイル** メニューのをクリックして**すべて保存**します。  
 
     > [!NOTE]
-    >  これで作業が保存されました。 安全にこの時点で Visual Studio を閉じて、次の手順に進むまたは[手順 2: アダプターと接続のプロパティを分類](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-2-categorize-the-adapter-and-connection-properties.md)します。  
+    >  これで作業が保存されました。 安全にこの時点で Visual Studio を閉じて、次の手順に進むまたは[手順 2。アダプターおよび接続のプロパティを分類](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-2-categorize-the-adapter-and-connection-properties.md)します。  
 
 ## <a name="what-did-i-just-do"></a>でしただけ何か。  
  この手順で Visual Studio を使用してエコー アダプターのソリューションを作成した、[!INCLUDE[afdevwizardnameshort](../../includes/afdevwizardnameshort-md.md)]します。 次の表には、各ファイルの新機能およびファイルのセットが含まれています。  
@@ -214,22 +214,22 @@ ms.locfileid: "36976915"
 |EchoAdapter.cs|これは、メインのアダプター クラスを継承する`Microsoft.ServiceModel.Channels.Common.Adapter`します。<br /><br /> エコー アダプターの変更は不要です。|  
 |EchoAdapterBinding.cs|これは、アダプターのバインドを作成するときに使用されるクラスです。<br /><br /> エコー アダプターの変更は不要です。|  
 |EchoAdapterBindingCollectionElement.cs|これは、コレクションの要素のバインディング クラスを実装する、`System.ServiceModel.Configuration.StandardBindingCollectionElement`します。<br /><br /> エコー アダプターの変更は不要です。|  
-|EchoAdapterBindingElement.cs|これは、構成要素の基本クラスを提供します。<br /><br /> エコー アダプターのアダプターと接続のプロパティを分類するには、次の[手順 2: アダプターと接続のプロパティを分類](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-2-categorize-the-adapter-and-connection-properties.md)します。|  
-|EchoAdapterBindingElementExtensionElement.cs|ユーザー定義 WCF カスタム バインド内で使用できるように、このクラスは、バインド要素として、アダプターを表す提供されます。<br /><br /> エコー アダプターのアダプターと接続のプロパティを分類するには、次の[手順 2: アダプターと接続のプロパティを分類](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-2-categorize-the-adapter-and-connection-properties.md)します。|  
-|EchoAdapterHandlerBase.cs|これは、基底クラスによって公開されている共通のプロパティ/ヘルパー関数を格納するために使用するハンドラーの基本クラスです。<br /><br /> エコー アダプターのアダプターと接続のプロパティを分類するには、次の[手順 2: アダプターと接続のプロパティを分類](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-2-categorize-the-adapter-and-connection-properties.md)します。|  
-|EchoAdapterConnection.cs|これは、ターゲット システムに接続を定義します。<br /><br /> 次のターゲット システムにエコー アダプターの接続をサポートする[手順 3: エコー アダプターの接続を実装](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-3-implement-the-connection-for-the-echo-adapter.md)します。|  
-|EchoAdapterConnectionFactory.cs|これには、ターゲット システムの接続ファクトリを定義します。<br /><br /> 次のターゲット システムにエコー アダプターの接続をサポートする[手順 3: エコー アダプターの接続を実装](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-3-implement-the-connection-for-the-echo-adapter.md)します。|  
-|EchoAdapterConnectionUri.cs|これは、アダプターの接続 Uri を表すクラスです。<br /><br /> 次のターゲット システムにエコー アダプターの接続をサポートする[手順 3: エコー アダプターの接続を実装](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-3-implement-the-connection-for-the-echo-adapter.md))。|  
-|EchoAdapterMetadataBrowseHandler.cs|このクラスは、ターゲット システムからのメタデータの接続に基づく参照の実行中に使用されます。<br /><br /> 次のメタデータのエコー アダプターの機能の参照をサポートするために[手順 4: エコー アダプターのメタデータ参照ハンドラーを実装する](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-4-implement-the-metadata-browse-handler-for-the-echo-adapter.md)します。|  
-|EchoAdapterMetadataSearchHandler.cs|このクラスは、ターゲット システムからのメタデータには、接続ベースの検索を実行するために使用されます。<br /><br /> エコー アダプターの機能を検索するメタデータをサポートするに従って[手順 5: エコー アダプターのメタデータ検索ハンドラーを実装](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-5-implement-the-metadata-search-handler-for-the-echo-adapter.md)します。|  
-|EchoAdapterMetadataResolve.cs|このクラスは、ターゲット システムからのメタデータの接続ベースの取得を実行するために使用されます。<br /><br /> エコー アダプターの機能を解決するメタデータをサポートするに従って[手順 6: エコー アダプターのメタデータ解決ハンドラーを実装する](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-6-implement-the-metadata-resolve-handler-for-the-echo-adapter.md)します。|  
-|EchoAdapterOutboundHandler.cs|このクラスは、ターゲット システムにデータを送信するために使用されます。<br /><br /> 以下のエコー アダプターの送信メッセージの交換をサポートするために[手順 7: エコー アダプターの同期送信ハンドラーを実装する](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-7-implement-the-synchronous-outbound-handler-for-the-echo-adapter.md)します。|  
-|EchoAdapterInboundHandler.cs|このクラスは、リッスンしているかにデータをポーリングするためのインターフェイスを実装します。<br /><br /> 以下のエコー アダプターの受信メッセージの交換をサポートするために[手順 8: エコー アダプターの同期受信ハンドラーを実装する](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-8-implement-the-synchronous-inbound-handler-for-the-echo-adapter.md)します。|  
+|EchoAdapterBindingElement.cs|これは、構成要素の基本クラスを提供します。<br /><br /> エコー アダプターのアダプターと接続のプロパティを分類するには、次の[手順 2。アダプターおよび接続のプロパティを分類](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-2-categorize-the-adapter-and-connection-properties.md)します。|  
+|EchoAdapterBindingElementExtensionElement.cs|ユーザー定義 WCF カスタム バインド内で使用できるように、このクラスは、バインド要素として、アダプターを表す提供されます。<br /><br /> エコー アダプターのアダプターと接続のプロパティを分類するには、次の[手順 2。アダプターおよび接続のプロパティを分類](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-2-categorize-the-adapter-and-connection-properties.md)します。|  
+|EchoAdapterHandlerBase.cs|これは、基底クラスによって公開されている共通のプロパティ/ヘルパー関数を格納するために使用するハンドラーの基本クラスです。<br /><br /> エコー アダプターのアダプターと接続のプロパティを分類するには、次の[手順 2。アダプターおよび接続のプロパティを分類](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-2-categorize-the-adapter-and-connection-properties.md)します。|  
+|EchoAdapterConnection.cs|これは、ターゲット システムに接続を定義します。<br /><br /> 次のターゲット システムにエコー アダプターの接続をサポートする[手順 3。エコー アダプターの接続を実装](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-3-implement-the-connection-for-the-echo-adapter.md)します。|  
+|EchoAdapterConnectionFactory.cs|これには、ターゲット システムの接続ファクトリを定義します。<br /><br /> 次のターゲット システムにエコー アダプターの接続をサポートする[手順 3。エコー アダプターの接続を実装](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-3-implement-the-connection-for-the-echo-adapter.md)します。|  
+|EchoAdapterConnectionUri.cs|これは、アダプターの接続 Uri を表すクラスです。<br /><br /> 次のターゲット システムにエコー アダプターの接続をサポートする[手順 3。エコー アダプターの接続を実装](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-3-implement-the-connection-for-the-echo-adapter.md))。|  
+|EchoAdapterMetadataBrowseHandler.cs|このクラスは、ターゲット システムからのメタデータの接続に基づく参照の実行中に使用されます。<br /><br /> 次のメタデータのエコー アダプターの機能の参照をサポートするために[手順 4。エコー アダプターのメタデータ参照ハンドラーを実装する](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-4-implement-the-metadata-browse-handler-for-the-echo-adapter.md)します。|  
+|EchoAdapterMetadataSearchHandler.cs|このクラスは、ターゲット システムからのメタデータには、接続ベースの検索を実行するために使用されます。<br /><br /> エコー アダプターの機能を検索するメタデータをサポートするに従って[手順 5。エコー アダプターのメタデータ検索ハンドラーの実装](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-5-implement-the-metadata-search-handler-for-the-echo-adapter.md)します。|  
+|EchoAdapterMetadataResolve.cs|このクラスは、ターゲット システムからのメタデータの接続ベースの取得を実行するために使用されます。<br /><br /> エコー アダプターの機能を解決するメタデータをサポートするに従って[手順 6。エコー アダプターのメタデータ解決ハンドラーを実装する](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-6-implement-the-metadata-resolve-handler-for-the-echo-adapter.md)します。|  
+|EchoAdapterOutboundHandler.cs|このクラスは、ターゲット システムにデータを送信するために使用されます。<br /><br /> 次のエコー アダプターの送信メッセージの交換をサポートするために[手順 7。エコー アダプターの同期送信ハンドラーを実装する](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-7-implement-the-synchronous-outbound-handler-for-the-echo-adapter.md)します。|  
+|EchoAdapterInboundHandler.cs|このクラスは、リッスンしているかにデータをポーリングするためのインターフェイスを実装します。<br /><br /> 次のエコー アダプターの受信メッセージの交換をサポートするために[手順 8。エコー アダプターの同期受信ハンドラーを実装する](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-8-implement-the-synchronous-inbound-handler-for-the-echo-adapter.md)します。|  
 |EchoAdapterTrace.cs|このクラスは、デバッグとトラブルシューティングのためのアダプターのトレースを実装します。|  
 
 ## <a name="next-steps"></a>次の手順  
  UI 論理グループのアダプターと接続のプロパティを分類し、接続、メタデータの参照、検索、および機能、および送信および受信のメッセージ交換の解決を実装します。 最後に、ビルドし、エコー アダプターを展開します。  
 
 ## <a name="see-also"></a>参照  
- [手順 2: 分類、アダプターと接続のプロパティ](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-2-categorize-the-adapter-and-connection-properties.md)   
- [チュートリアル 1: エコー アダプターを開発する](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-1-develop-the-echo-adapter.md)
+ [手順 2:アダプターと接続のプロパティを分類します。](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-2-categorize-the-adapter-and-connection-properties.md)   
+ [チュートリアル 1:エコー アダプターを開発する](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-1-develop-the-echo-adapter.md)

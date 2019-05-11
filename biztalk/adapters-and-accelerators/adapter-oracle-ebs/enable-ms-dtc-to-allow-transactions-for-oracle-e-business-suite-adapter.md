@@ -12,12 +12,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 53037e9a7dc1ccc3c0ef21860696060ad1c046a8
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d26f37502c6bde3d5135d06e0b7f2cdccba199a8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36984995"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65375535"
 ---
 # <a name="enable-ms-distributed-transaction-coordinator-to-allow-transactions-for-oracle-e-business-suite"></a>Oracle E-business Suite のトランザクションを許可する MS 分散トランザクション コーディネーターを有効にします。
 使用するアプリケーションの作成を開始する前に、MSDTC を構成、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]します。  
@@ -27,7 +27,7 @@ Oracle E-business Suite を使用して、操作を実行、 [!INCLUDE[adapteror
 > [!NOTE]
 >  MSDTC を構成する手順は、さまざまなオペレーティング システムによって異なります。 このトピックに記載の手順は、Windows クライアントおよび Windows Server オペレーティング システムに適用されます。  
   
-## <a name="configure-msdtc"></a>MSDTC を構成します。  
+## <a name="configure-msdtc"></a>MSDTC の構成  
   
 1. 開いている**コンポーネント サービス**します。  
 

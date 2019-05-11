@@ -14,33 +14,33 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cd2474aebf77baf39a623a246cf575ba9af7a113
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8c78ab2ef84572084ba74d253a48e15d8a70ca84
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36970179"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65335811"
 ---
-# <a name="how-to-open-a-saved-query"></a>保存したクエリを開く方法
-保存したクエリは、クエリの保存先フォルダーから直接開くか、BizTalk Server 管理コンソール内から開くことができます。 フォルダーから直接クエリを開くと、管理コンソールの適切な BizTalk Server グループが開きます。 管理コンソール内からクエリを開くと、一覧に表示された任意のグループにクエリを実行するオプションが表示されます。  
+# <a name="how-to-open-a-saved-query"></a>保存されたクエリを開く方法
+クエリが保存されているフォルダーから直接、または内から、保存されたクエリを開くことができます、BizTalk Server 管理コンソール。 フォルダーから直接クエリを開くときに、管理コンソールで、適切な BizTalk Server グループを開きます。 管理コンソール内からクエリを開くときに、一覧表示されるグループのいずれかでクエリを実行するオプションがあります。  
   
 ## <a name="prerequisites"></a>前提条件  
- ここで示す手順を実行するには、BizTalk Server Operators グループのメンバーとしてログオンする必要があります。  
+ この手順を実行するには、BizTalk Server Operators グループのメンバーとしてログオンする必要があります。  
   
-### <a name="to-open-a-saved-query-from-disk"></a>保存したクエリをディスクから開くには  
+### <a name="to-open-a-saved-query-from-disk"></a>ディスクから保存されたクエリを開くには  
   
-1.  保存したクエリが格納されているフォルダーに移動します。  
+1.  保存されたクエリが格納されているフォルダーに移動します。  
   
     > [!NOTE]
     >  既定では、保存されたクエリが格納されている、 **My Documents**作成および保存したユーザーのフォルダー。  
   
-2.  保存したクエリをダブルクリックすると、BizTalk Server 管理コンソールが開き、クエリが実行されます。  
+2.  BizTalk Server 管理コンソールを開き、クエリを実行します。 保存したクエリをダブルクリックします。  
   
-### <a name="to-open-a-saved-query-from-the-administration-console"></a>保存したクエリを管理コンソールから開くには  
+### <a name="to-open-a-saved-query-from-the-administration-console"></a>管理コンソールから保存されたクエリを開くには  
   
 1. クリックして**開始**、 をクリックして**プログラム**、 をクリックして[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリックします**BizTalk Server 管理**します。  
   
-2. コンソール ツリーで、[!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)] を展開し、[BizTalk グループ] をクリックします。  
+2. コンソール ツリーで、展開[!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]、し、[BizTalk グループ] をクリックします。  
   
 3. 詳細ウィンドウでをクリックして、**新しいクエリ**タブをクリックし、をクリックし、**クエリを開く**します。  
   

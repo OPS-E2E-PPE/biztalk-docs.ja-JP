@@ -19,12 +19,12 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b9aaf8c42b2b0d96e44323af6ee4a0e164a3f46c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b01936259f9259335f43b39ed19b741b20bf25b2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37004203"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65358211"
 ---
 # <a name="best-practices-for-managing-certificates"></a>証明書を管理するためのベスト プラクティス
 ここでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 環境で証明書を管理する際のベスト プラクティスについて説明します。  
@@ -47,14 +47,14 @@ ms.locfileid: "37004203"
   
 - **署名証明書を確認します。**  
   
-   署名証明書を証明書の失効一覧と照合して確認します。 署名証明書を確認する方法の詳細については、[MIME-SMIME デコーダー パイプライン コンポーネントを構成する方法](../core/how-to-configure-the-mime-smime-decoder-pipeline-component.md)を参照してください。  
+   署名証明書を証明書の失効一覧と照合して確認します。 署名証明書を確認する方法の詳細については、次を参照してください。 [MIME-SMIME デコーダー パイプライン コンポーネントを構成する方法](../core/how-to-configure-the-mime-smime-decoder-pipeline-component.md)します。  
   
 - **デジタル署名に対するサービス拒否攻撃の拒否を防ぐ**  
   
    [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] がデジタル署名を検証できなかった場合に、そのメッセージをどのように取り扱うかについて決定します。 設定、**認証**受信ポートのプロパティにサービス拒否攻撃が防止されます。  
   
   > [!NOTE]
-  >  **認証 - メッセージの削除**と**認証 - メッセージの保持**受信ポートのフラグは、パーティの解決パイプライン コンポーネントを正しく構成することが必要ですし、パーティであります。BizTalk Server で定義されます。 パーティの解決パイプライン コンポーネントの構成の詳細については、[パーティの解決パイプライン コンポーネント](../core/party-resolution-pipeline-component.md)を参照してください。  
+  >  **認証 - メッセージの削除**と**認証 - メッセージの保持**受信ポートのフラグは、パーティの解決パイプライン コンポーネントを正しく構成することが必要ですし、パーティであります。BizTalk Server で定義されます。 パーティの解決パイプライン コンポーネントの構成の詳細については、次を参照してください。[パーティの解決パイプライン コンポーネント](../core/party-resolution-pipeline-component.md)します。  
   
 - **別の作成用暗号化および暗号化されていないメッセージの受信場所**  
   

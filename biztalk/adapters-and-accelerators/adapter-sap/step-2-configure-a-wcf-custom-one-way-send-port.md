@@ -1,5 +1,5 @@
 ---
-title: '手順 2: Wcf-custom の一方向送信ポートの構成 |Microsoft Docs'
+title: 手順 2:Wcf-custom 一方向送信ポートの構成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,14 +15,14 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 662007dc6f75e1ca0459e53f576c816d23b71404
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a5daec84fac1987fccc015da9d457e26f86dea61
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37005723"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65372838"
 ---
-# <a name="step-2-configure-a-wcf-custom-one-way-send-port"></a>手順 2: Wcf-custom の一方向送信ポートを構成します。
+# <a name="step-2-configure-a-wcf-custom-one-way-send-port"></a>手順 2:Wcf-custom 一方向送信ポートを構成します。
 ![ステップ 2/3](../../adapters-and-accelerators/adapter-oracle-database/media/step-2of3.gif "Step_2of3")  
   
  **所要時間:** 10 分  
@@ -48,11 +48,11 @@ ms.locfileid: "37005723"
   
 7. **Wcf-custom トランスポートのプロパティ** ダイアログ ボックスで、次の操作を行います。  
   
-   1. をクリックして、**全般** タブで、し、**アドレス (URI)** フィールドに、SAP システムにメッセージを送信する接続 URI を指定します。 接続 URI の詳細については、[SAP システム接続 URI を使用すると、作成](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md)を参照してください。  
+   1. をクリックして、**全般** タブで、し、**アドレス (URI)** フィールドに、SAP システムにメッセージを送信する接続 URI を指定します。 接続 URI の詳細については、次を参照してください。 [SAP システム接続 URI を使用すると、作成](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md)です。  
   
        ![送信ポートで指定された接続 URI](../../adapters-and-accelerators/adapter-sap/media/53ae71e1-89ec-49c5-8096-ff04a2c94c0a.gif "53ae71e1-89ec-49c5-8096-ff04a2c94c0a")  
   
-   2. **全般** タブで、**アクション**テキスト ボックスに、操作のアクションを入力します。 フラット ファイル IDOC を送信するには、使用する必要があります、 **SendIdoc** WCF ベースによって公開される操作[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]します。 **SendIdoc**操作には、厳密に型指定のスキーマが Idoc を送信するアダプターのクライアントが使用できます。 詳細については、[sap Idoc に対する操作](../../adapters-and-accelerators/adapter-sap/operations-on-idocs-in-sap.md)を参照してください。 次に示します、**アクション**の操作は、テキスト ボックス、 **SendIdoc**操作。  
+   2. **全般** タブで、**アクション**テキスト ボックスに、操作のアクションを入力します。 フラット ファイル IDOC を送信するには、使用する必要があります、 **SendIdoc** WCF ベースによって公開される操作[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]します。 **SendIdoc**操作には、厳密に型指定のスキーマが Idoc を送信するアダプターのクライアントが使用できます。 詳細については、次を参照してください。 [sap Idoc に対する操作](../../adapters-and-accelerators/adapter-sap/operations-on-idocs-in-sap.md)します。 次に示します、**アクション**の操作は、テキスト ボックス、 **SendIdoc**操作。  
   
        ![送信ポートでアクションを指定](../../adapters-and-accelerators/adapter-sap/media/94dd1505-5529-43cf-a27b-2588a022dfb9.gif "94dd1505-5529-43cf-a27b-2588a022dfb9")  
   
@@ -103,7 +103,7 @@ ms.locfileid: "37005723"
       アプリケーションを構成する方法の詳細についてを参照してください「する方法をアプリケーションの構成」 [ http://go.microsoft.com/fwlink/?LinkId=102360](http://go.microsoft.com/fwlink/?LinkId=102360)します。  
   
 ## <a name="next-steps"></a>次の手順  
- WCF ベースを使用して、SAP システムに Idoc を送信する BizTalk プロジェクトに vPrev BizTalk プロジェクトの移行が完了したので[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]します。 」の説明に従って、フラット ファイル IDOC を送信することによって、移行済みの BizTalk アプリケーションにテストすること今すぐ必要があります[手順 3: 移行されたアプリケーションをテストする](../../adapters-and-accelerators/adapter-sap/step-3-test-the-migrated-application2.md)します。  
+ WCF ベースを使用して、SAP システムに Idoc を送信する BizTalk プロジェクトに vPrev BizTalk プロジェクトの移行が完了したので[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]します。 」の説明に従って、フラット ファイル IDOC を送信することによって、移行済みの BizTalk アプリケーションにテストすること今すぐ必要があります[手順 3。移行したアプリケーションをテスト](../../adapters-and-accelerators/adapter-sap/step-3-test-the-migrated-application2.md)します。  
   
 ## <a name="see-also"></a>参照  
  [チュートリアル 3: SAP の IDOC 送信 BizTalk プロジェクトを移行する](../../adapters-and-accelerators/adapter-sap/tutorial-3-migrating-an-sap-send-idoc-biztalk-project.md)

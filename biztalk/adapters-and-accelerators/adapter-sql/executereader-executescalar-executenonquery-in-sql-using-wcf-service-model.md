@@ -12,20 +12,20 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d9dd50b3353aac683548f9220c441bef21776a37
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 733b117aa4f9ca5e5f113d725a592266134db711
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36968835"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65369507"
 ---
 # <a name="executereader-executescalar-or-executenonquery-operations-in-sql-using-wcf-service-model"></a>WCF サービス モデルを使用して sql ExecuteReader、executescalar、ExecuteNonQuery 操作
-[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]など SQL Server の一般的な操作を公開する**ExecuteNonQuery**、 **ExecuteReader**、および**ExecuteScalar**します。 これらの操作を使用して、SQL Server データベースで任意の SQL ステートメントを実行することができます。 これらの操作は、応答するための SQL ステートメントの種類によって異なります。 アダプターがこれらの操作をサポートする方法の詳細については、[ExecuteNonQuery、ExecuteReader、ExecuteScalar 操作のサポート](../../adapters-and-accelerators/adapter-oracle-ebs/support-for-executenonquery-executereader-and-executescalar-operations.md)を参照してください。  
+[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]など SQL Server の一般的な操作を公開する**ExecuteNonQuery**、 **ExecuteReader**、および**ExecuteScalar**します。 これらの操作を使用して、SQL Server データベースで任意の SQL ステートメントを実行することができます。 これらの操作は、応答するための SQL ステートメントの種類によって異なります。 アダプターがこれらの操作をサポートする方法の詳細については、次を参照してください。 [ExecuteNonQuery、ExecuteReader、ExecuteScalar 操作のサポート](../../adapters-and-accelerators/adapter-oracle-ebs/support-for-executenonquery-executereader-and-executescalar-operations.md)します。  
 
  このトピックでは、実行する方法を示します、 **ExecuteReader**操作を使用して、 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] WCF サービス モデルを使用します。 実行するには、このトピックで説明する手順の同じセットを利用できる**ExecuteNonQuery**と**ExecuteScalar**操作。  
 
 ## <a name="about-the-examples-used-in-this-topic"></a>このトピックで使用する例について  
- このトピックの例では、 **ExecuteReader**操作、ADD_EMP_DETAILS を実行するストアド プロシージャ。 このストアド プロシージャでは、Employee テーブルにレコードを追加し、レコードの従業員 ID を返します。 ADD_EMP_DETAILS ストアド プロシージャは、サンプルで提供される SQL スクリプトを実行して作成されます。 サンプルの詳細については、[アダプタ サンプル](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md)を参照してください。 サンプルについては、 **Execute_Reader**、これは、このトピックに基づいてがで提供されていることも、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]サンプル。  
+ このトピックの例では、 **ExecuteReader**操作、ADD_EMP_DETAILS を実行するストアド プロシージャ。 このストアド プロシージャでは、Employee テーブルにレコードを追加し、レコードの従業員 ID を返します。 ADD_EMP_DETAILS ストアド プロシージャは、サンプルで提供される SQL スクリプトを実行して作成されます。 サンプルの詳細については、次を参照してください。[アダプタ サンプル](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md)します。 サンプルについては、 **Execute_Reader**、これは、このトピックに基づいてがで提供されていることも、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]サンプル。  
 
 ## <a name="the-wcf-client-class"></a>WCF クライアント クラス  
  一般的な操作 (ExecuteNonQuery、ExecuteReader、ExecuteScalar のいずれか) を使用してを呼び出すために生成された WCF クライアントの名前、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]次の表に記載されています。  
@@ -39,8 +39,8 @@ ms.locfileid: "36968835"
 
 |演算|メソッド シグネチャ|  
 |---------------|----------------------|  
-|ExecuteNonQuery|int ExecuteNonQuery (クエリ文字列)|  
-|ExecuteReader|System.Data.DataSet:operator[] ExecuteReader (クエリ文字列)|  
+|ExecuteNonQuery|int ExecuteNonQuery(string Query)|  
+|ExecuteReader|System.Data.DataSet[] ExecuteReader(string Query)|  
 |ExecuteScalar|文字列 ExecuteScalar(string Query)|  
 
  例として、汎用の操作メソッドのシグネチャを次のコード スニペットに示します。  
@@ -66,7 +66,7 @@ public partial class GenericTableOpClient : System.ServiceModel.ClientBase<Gener
 
 1. Visual Studio で Visual c# プロジェクトを作成します。 このトピックでは、コンソール アプリケーションを作成します。  
 
-2. WCF クライアント クラスを生成、 **ExecuteReader**ジェネリック操作。 使用して、SQL Server データベースに接続するときに、この操作は、ルート ノードで使用可能な[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]します。 WCF クライアント クラスを生成する詳細については、[SQL Server のアイテムの WCF クライアントまたは WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-sql/generate-a-wcf-client-or-wcf-service-contract-for-sql-server-artifacts.md)を参照してください。  
+2. WCF クライアント クラスを生成、 **ExecuteReader**ジェネリック操作。 使用して、SQL Server データベースに接続するときに、この操作は、ルート ノードで使用可能な[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]します。 WCF クライアント クラスを生成する詳細については、次を参照してください。 [SQL Server のアイテムの WCF クライアントまたは WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-sql/generate-a-wcf-client-or-wcf-service-contract-for-sql-server-artifacts.md)します。  
 
    > [!IMPORTANT]
    >  WCF クライアント クラスを生成する前に必ず設定して、 **EnableBizTalkCompatibilityMode**プロパティを false にバインドします。  
@@ -85,7 +85,7 @@ public partial class GenericTableOpClient : System.ServiceModel.ClientBase<Gener
     このスニペットで`GenericTableOpClient`SqlAdapterBindingClient.cs で定義されている WCF クライアントです。 このファイルがによって生成された、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]します。 `SqlAdapterBinding_GenericTableOp` クライアント エンドポイント構成の名前を指定され、app.config で定義されます。このファイルがによって生成されても、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]バインドのプロパティとその他の構成設定が含まれています。  
 
    > [!NOTE]
-   >  このスニペットでは、構成ファイルからバインドおよびエンドポイント アドレスを使用します。 これらの値は、コードで明示的に指定できます。 クライアント バインディングを指定する、さまざまな方法の詳細については、[SQL アダプタのクライアントのバインディングを構成する](../../adapters-and-accelerators/adapter-sql/configure-a-client-binding-for-the-sql-adapter.md)を参照してください。  
+   >  このスニペットでは、構成ファイルからバインドおよびエンドポイント アドレスを使用します。 これらの値は、コードで明示的に指定できます。 クライアント バインディングを指定する、さまざまな方法の詳細については、次を参照してください。 [SQL アダプタのクライアントのバインディングを構成する](../../adapters-and-accelerators/adapter-sql/configure-a-client-binding-for-the-sql-adapter.md)します。  
 
 5. 次のスニペットで説明されているように、クライアントを開きます。  
 

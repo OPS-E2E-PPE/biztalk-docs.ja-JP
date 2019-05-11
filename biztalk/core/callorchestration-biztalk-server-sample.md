@@ -16,12 +16,12 @@ caps.latest.revision: 22
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 614cbb4531d0d7052263e5e4c7d73ec209e9b685
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 64c0481242c86038cde10a0505b5a12f039ec9bf
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37021880"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65357656"
 ---
 # <a name="callorchestration-biztalk-server-sample"></a>CallOrchestration (BizTalk Server サンプル)
 CallOrchestration サンプルは、1 つの BizTalk オーケストレーションから別のオーケストレーションを呼び出す方法を示すものです。  
@@ -58,7 +58,7 @@ End If
 >  アトミック オーケストレーションから、長時間実行されるトランザクションを呼び出すことはできません。  
   
 > [!NOTE]
->  使用方法の違い、**オーケストレーションの呼び出し**図形と**オーケストレーションの開始**図形がオーケストレーションを呼び出すときに、入れ子になったオーケストレーションが返されるまでの呼び出し元が待機続行しています。 後者の場合、呼び出し元のオーケストレーションは別のオーケストレーションを開始した後すぐプロセス フローの次の手順に進む点です。 後者の場合、呼び出されたオーケストレーションは呼び出し元とは独立して、自身のプロセス フローを最後まで実行します。 詳細については、[オーケストレーションの呼び出し図形を構成する方法](../core/how-to-configure-the-call-orchestration-shape.md)を参照してください。 参照してください[オーケストレーションの開始図形を構成する方法](../core/how-to-configure-the-start-orchestration-shape.md)します。  
+>  使用方法の違い、**オーケストレーションの呼び出し**図形と**オーケストレーションの開始**図形がオーケストレーションを呼び出すときに、入れ子になったオーケストレーションが返されるまでの呼び出し元が待機続行しています。 後者の場合、呼び出し元のオーケストレーションは別のオーケストレーションを開始した後すぐプロセス フローの次の手順に進む点です。 後者の場合、呼び出されたオーケストレーションは呼び出し元とは独立して、自身のプロセス フローを最後まで実行します。 詳細については、次を参照してください。[オーケストレーションの呼び出し図形を構成する方法](../core/how-to-configure-the-call-orchestration-shape.md)します。 参照してください[オーケストレーションの開始図形を構成する方法](../core/how-to-configure-the-start-orchestration-shape.md)します。  
   
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
  \<*パスのサンプル*\>\Orchestrations\CallOrchestration\  

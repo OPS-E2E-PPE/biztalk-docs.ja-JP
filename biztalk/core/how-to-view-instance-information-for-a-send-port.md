@@ -16,30 +16,30 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5dc1ae4401303845f92b95e6cdf7f4903c165b07
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: bcb1dc5c055a28ce3a651546e21744017c6bc5dd
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36975147"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65333093"
 ---
 # <a name="how-to-view-instance-information-for-a-send-port"></a>送信ポートのインスタンス情報を表示する方法
-このトピックでは、BizTalk Server 管理コンソールを使用して、送信ポートの実行中のサービス インスタンスを一覧表示する方法について説明します。 サービス インスタンスとは、メッセージが送信ポートに送信されたときに作成される、送信ポート サービスのインスタンスです。 このトピックの手順を実行すると、送信ポートのグループ概要ページにインスタンス情報が表示されます。  
+このトピックでは、BizTalk Server 管理コンソールを使用して、実行の一覧を表示する方法を説明します。 送信ポートのインスタンスのサービスを提供します。 サービス インスタンスは、メッセージが送信ポートに送信されるときに作成される送信ポート サービスのインスタンスです。 このトピックの手順を実行するときに、送信ポートのグループ概要ページにインスタンス情報が表示されます。  
   
 ## <a name="prerequisites"></a>前提条件  
- このトピックの手順を実行するには、BizTalk Server 管理者グループまたは BizTalk Server Operators グループのメンバー アカウントでログオンする必要があります。 詳細なアクセス許可についてを参照してください。[を展開すると、BizTalk アプリケーションの管理に必要なアクセス許可](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)します。  
+ このトピックの手順を実行するには、BizTalk Server 管理者グループまたは BizTalk Server Operators グループのメンバーであるアカウントでログオンする必要があります。 詳細なアクセス許可についてを参照してください。[を展開すると、BizTalk アプリケーションの管理に必要なアクセス許可](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)します。  
   
 ### <a name="to-view-instance-information-for-a-send-port"></a>送信ポートのインスタンス情報を表示するには  
   
 1. クリックして**開始**、 をクリックして**すべてのプログラム**、 をクリックして[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリックします**BizTalk Server 管理**します。  
   
-2. コンソール ツリーで、BizTalk グループを展開し、送信ポートのサービス インスタンス情報を表示する BizTalk アプリケーションを展開します。  
+2. コンソール ツリーで、BizTalk グループと、送信ポートのサービス インスタンスの情報を表示する BizTalk アプリケーションを展開します。  
   
 3. をクリックして**送信ポート**、送信ポートを右クリックし、 をポイント**ビュー**、 をクリックし、**インスタンス情報**します。  
   
-    ページ下部のクエリ結果パネルに、送信ポートの実行中のインスタンスがすべて表示されます。  
+    ページの下部に、クエリ結果 パネルには、送信ポートのすべての実行中のインスタンスが表示されます。  
   
-4. クエリを絞り込むし、送信ポートの別のサービス インスタンスの情報を表示、下にあるボックスをクリックします。**値**、検索対象フィールドの表示、およびクリックするインスタンスの種類を選択します。**クエリの実行**します。 クエリの作成の詳細については、「関連項目」で検索に関するトピックを選んで参照してください。  
+4. クエリを絞り込むし、送信ポートの別のサービス インスタンスの情報を表示、下にあるボックスをクリックします。**値**、検索対象フィールドの表示、およびクリックするインスタンスの種類を選択します。**クエリの実行**します。 クエリの作成に関する詳細については、参照の検索のトピックを参照してください。  
   
 ## <a name="see-also"></a>参照  
  [作成と送信ポートの構成](../core/creating-and-configuring-send-ports.md)   

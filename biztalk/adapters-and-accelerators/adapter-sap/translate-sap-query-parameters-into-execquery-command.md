@@ -13,12 +13,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c8ffd480e952e0df7114a93f6cb2a5baf631ad96
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8dd9db83cbc3a8b8a3c6a0d56282580f0c07814f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37021697"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65372542"
 ---
 # <a name="translate-sap-query-parameters-into-execquery-command"></a>SAP クエリのパラメーターを EXECQUERY コマンドに変換します。
 クエリのパラメーターを EXECQUERY コマンド テキストに変換する方法について説明します。 このトピックでは、ZQUERY_TST_NEW カスタムの SAP クエリの例を使用します。  

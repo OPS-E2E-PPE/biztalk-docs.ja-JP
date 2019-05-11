@@ -1,5 +1,5 @@
 ---
-title: インフォメーション ワーカー テクノロジ |Microsoft ドキュメント
+title: インフォメーション ワーカー テクノロジ |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,17 +12,17 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6736e58e60df2217e85fd6242b3436b69b603834
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 2324b65d983d197b3514e404c875c2f222b55f07
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26005811"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65332058"
 ---
 # <a name="information-worker-technologies"></a>インフォメーション ワーカー テクノロジ
-Microsoft BizTalk Server エンジンでは、複数のアプリケーションにまたがる自動化されたビジネス プロセスのサポートを提供します。 これらのプロセスが作成した後、それらを使用するインフォメーション ワーカーが、— ビジネスに携わる人々、開発者ではなく-その他の要件があります。 たとえば、インフォメーション ワーカーは、プロセスのビジネスにかかわるさまざまな側面を監視したり、取引先とさまざまな方法でやりとりする必要があります。  
+Microsoft BizTalk Server エンジンでは、複数のアプリケーションにまたがる自動化されたビジネス プロセスをサポートします。 これらのプロセスが作成されると、それらを使用するインフォメーション ワーカーが、-ビジネスに携わる人々、開発者ではなく、他の要件があります。 たとえば、プロセスのさまざまなビジネス関連の側面を監視や、さまざまな方法で取引先との作業を必要があります。  
   
- BizTalk Server では、これらの問題に対処するいくつかのコンポーネントを提供します。 これらのコンポーネントは、このセクションで説明するビジネス アクティビティの監視にグループ化されています。  
+ BizTalk Server では、これらの問題に対処するいくつかのコンポーネントを提供します。 これらのコンポーネントは、このセクションで説明されているビジネス アクティビティ監視にグループ化されます。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e61230ed2244bc4bb7c79f87c18879c3c83f7f95
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 873b74a253bd96c95ecf3d26be884fe83ac53e7e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37011275"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65367430"
 ---
 # <a name="what-operations-are-supported-by-the-sql-adapter"></a>SQL アダプターによってサポートされる操作
 アダプター クライアントを使用してでの SQL Server データベースで操作を実行できます。  
@@ -28,7 +28,7 @@ ms.locfileid: "37011275"
   
 - WCF チャネル モデルを使用します。  
   
-  [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]アプリケーションは、それを呼び出すことができ、アプリケーションで呼び出すことができます、さらに、操作を公開します。 これらの操作は、チャネル経由で SOAP メッセージを送信することによって呼び出されます。 応答が必要な場合、同じチャネル経由で SOAP メッセージで返されます。 メッセージの構造とそれぞれの操作に関連付けられている SOAP アクションについては、[メッセージと BizTalk adapter for SQL Server のメッセージ スキーマ](../../adapters-and-accelerators/adapter-sql/messages-and-message-schemas-for-biztalk-adapter-for-sql-server.md)を参照してください。  
+  [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]アプリケーションは、それを呼び出すことができ、アプリケーションで呼び出すことができます、さらに、操作を公開します。 これらの操作は、チャネル経由で SOAP メッセージを送信することによって呼び出されます。 応答が必要な場合、同じチャネル経由で SOAP メッセージで返されます。 メッセージの構造とそれぞれの操作に関連付けられている SOAP アクションについては、次を参照してください。[メッセージと BizTalk adapter for SQL Server のメッセージ スキーマ](../../adapters-and-accelerators/adapter-sql/messages-and-message-schemas-for-biztalk-adapter-for-sql-server.md)します。  
   
   このセクションで、SQL Server データベースを使用してサポートされる操作について説明します、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]します。  
   

@@ -15,15 +15,15 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 67216209204e8c621b387bee396b099081ea08c4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: dc0dc9610b171ffa2049c5a4951d3846451aa2db
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36994659"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65284688"
 ---
 # <a name="creating-a-well-formed-message-instance-from-a-pip"></a>PIP からの整形式メッセージ インスタンスの作成
-ここでは、整形式のメッセージ インスタンスを生成する方法を説明します。 PIP (Partner Interface Process) からメッセージ インスタンスのテンプレートを生成できます。 その後、データを追加する前に、それが整形式になるように、そのテンプレートを変更する必要があります。  
+このトピックでは、整形式メッセージ インスタンスを生成する方法について説明します。 メッセージ インスタンス テンプレートは、パートナー インターフェイス プロセス (PIP) から生成できます。 これを行うには、変更する必要が、そのテンプレートには、整形式で、データを追加する前にするためです。  
   
 ### <a name="to-generate-a-message-instance-template-from-the-pip"></a>PIP からメッセージ インスタンス テンプレートを生成するには  
   
@@ -38,28 +38,28 @@ ms.locfileid: "36994659"
 5. クリックして**インスタンスの生成**します。  
   
    > [!NOTE]
-   >  選択した PIP の名前の後に "_output" が追加され、さらに .xml 拡張子を付けたファイル名が生成されます。 出力ペインのステートメントにより、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] でインスタンスが作成された場所が示されます。  
+   >  これには、"_output"ファイル名に付加され、.xml 拡張子後、PIP という名前のファイルが生成されます。 [出力] ウィンドウ内のステートメントは、位置を示します[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]インスタンスを生成します。  
   
 ### <a name="to-modify-the-message-instance-template"></a>メッセージ インスタンス テンプレートを変更するには  
   
-1. [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)] エクスプローラーで、目的の XML ファイルが保存されているフォルダーに移動し、そのファイルの名前をダブルクリックして開きます。  
+1. [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]エクスプ ローラーでは、XML ファイルを保持しているフォルダーに移動し、フォルダーを開く、ファイル名をダブルクリックします。  
   
-2. 他のすべてのテキストの前に、XML のバージョンとエンコードを示す XML ヘッダー タグを追加します。 以下に例を示します。  
+2. XML とエンコーディングのバージョンを示すその他のすべてのテキストの前に、XML ヘッダー タグを追加します。 以下に例を示します。  
   
    ```  
    <?xml version="1.0" encoding="UTF-8" ?>  
    ```  
   
-3. 追加した行の後に、DTD を示す DOCTYPE 行を追加します。 たとえば、3A4 発注要求のインスタンスの場合、DOCTYPE 行は次のようになります。  
+3. 追加した行の後に、DTD を示す DOCTYPE 行を追加します。 たとえば、3A4 発注書要求のインスタンスでは、行とおりのようになります  
   
    ```  
    <!DOCTYPE Pip3A4PurchaseOrderRequest SYSTEM "3A4_MS_V02_02_PurchaseOrderRequest.dtd">  
    ```  
   
    > [!NOTE]
-   >  各メッセージ インスタンスを処理するには、それぞれ DOCTYPE 行を含める必要があります。  
+   >  各メッセージ インスタンスには、処理の DOCTYPE 行を含める必要があります。  
   
-4. これで、ビジネス ニーズに合わせてこのメッセージ インスタンスをカスタマイズできます。 XML 名前空間または名前空間プレフィックスを使用しないように、XML インスタンスを変更します。  
+4. これで、ビジネス ニーズに合わせてこのメッセージ インスタンスをカスタマイズできます。 XML インスタンスを変更するは、XML 名前空間または名前空間プレフィックスを使用しないようにします。  
   
 ## <a name="see-also"></a>参照  
  [プログラミング ガイド](../../adapters-and-accelerators/accelerator-rosettanet/programming-guide2.md)

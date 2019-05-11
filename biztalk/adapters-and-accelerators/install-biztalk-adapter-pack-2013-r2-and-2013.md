@@ -13,12 +13,12 @@ caps.latest.revision: 107
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ac127e569603e77889e24dfb410cc1b5e48ebf67
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2f7cb4d3e7f2f5cdf1cd48df8cf0927e888e81c6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37023152"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65364057"
 ---
 # <a name="install-biztalk-adapter-pack-2013-r2-and-2013"></a>BizTalk Adapter Pack 2013 R2 および 2013 をインストールします。
 このドキュメントは、Microsoft をインストールするには、ソフトウェアの要件と手順を示します[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)](BAP) は、BizTalk Server 2013 に含まれているまたは[!INCLUDE[bts2013r2](../includes/bts2013r2-md.md)]します。  
@@ -105,13 +105,13 @@ BizTalk Server を使用して、アダプターを使用する、BizTalk Server
 
 ### <a name="oracle-database-adapter"></a>Oracle Database アダプター  
 
--   省略可能: 分散トランザクションを使用して Oracle データベースがある場合はインストール**Microsoft Transaction Server 用の Oracle サービス**(Oracle クライアントのインストールの一部) アダプター クライアントを実行しているコンピューター。  
+-   省略可能:分散トランザクションを使用して Oracle データベースがある場合は、インストール**Microsoft Transaction Server 用の Oracle サービス**(Oracle クライアントのインストールの一部) アダプター クライアントを実行しているコンピューター。  
 
 -   ODP.NET の最新バージョンで動作するアプリケーションのインストール、**ポリシー Dll** GAC に Dll を登録します。 参照してください[Oracle Data Provider for .NET に関する FAQ](http://www.oracle.com/technetwork/database/windows/faq-093106.html)します。  
 
 ### <a name="oracle-e-business-adapter"></a>Oracle E-Business アダプター  
 
--   省略可能: インストールで、Oracle データベースを分散トランザクションを使用する**Microsoft Transaction Server 用の Oracle サービス**(Oracle クライアントのインストールの一部) アダプター クライアントを実行しているコンピューター。  
+-   省略可能:Oracle データベースでは、分散トランザクションを使用するには、インストール**Microsoft Transaction Server 用の Oracle サービス**(Oracle クライアントのインストールの一部) アダプター クライアントを実行しているコンピューター。  
 
 -   ODP.NET の最新バージョンで動作するアプリケーションのインストール、**ポリシー Dll** GAC に Dll を登録します。 参照してください[Oracle Data Provider for .NET に関する FAQ](http://www.oracle.com/technetwork/database/windows/faq-093106.html)します。  
 
@@ -119,7 +119,7 @@ BizTalk Server を使用して、アダプターを使用する、BizTalk Server
 
 - [!INCLUDE[adaptersap_short](../includes/adaptersap-short-md.md)] SAP システムは、Unicode または Unicode でないかどうかに関係なく、RFC SDK の Unicode バージョンが必要です。  
 
-- **ドライバーに必要な**: 次の表に、必要な Dll、 [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)] SAP システムとのインターフェイス。 これらの Dll が含まれているパッケージのほとんどは、SAP Service Marketplace からダウンロードする必要があります。 取得するには、SAP サービス マーケットプ レースからダウンロードします。 
+- **ドライバーに必要な**:次の表に、必要な Dll、 [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)] SAP システムとのインターフェイス。 これらの Dll が含まれているパッケージのほとんどは、SAP Service Marketplace からダウンロードする必要があります。 取得するには、SAP サービス マーケットプ レースからダウンロードします。 
 
   1. SAP サービス マーケットプ レースから利用可能なダウンロード マネージャーをインストールします。  
 
@@ -139,7 +139,7 @@ BizTalk Server を使用して、アダプターを使用する、BizTalk Server
   |--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
   |        6.4         |                                                                                                                                                                                                                       **BizTalk Adapter Pack 2013 のみ**<br /><br /> - **SAP の RFC SDK 6.40 UNICODE**します。 これは、使用可能な SNOTE の一部として<sup>* </sup> 27517 します。SDK をダウンロードする手順については、「 [ http://go.microsoft.com/fwlink/?LinkId=94691](http://go.microsoft.com/fwlink/?LinkId=94691)します。ダウンロードが、SDK を抽出して後、は、次の表の前に説明した関連する場所を \rfcsdk\bin および \rfcsdk\lib フォルダーからすべての Dll をコピーします。<br /> <br /> -Dll には SAP からの一部として\* \*R3DLLINST.zip*<em>します。 これにより、Microsoft ランタイム Dll が含まれています、SAP サイトからダウンロードできます。 SNOTE を参照してください。<sup> </em> </sup> 684106 詳細についてはします。 .Zip ファイルをダウンロードする[ http://go.microsoft.com/fwlink/?LinkId=94693](http://go.microsoft.com/fwlink/?LinkId=94693)します。 このリンクには、"Attachments"からパッケージをダウンロードするオプションがあります。<br /><br /> -SAP システムに接続する SAP セキュリティで保護されたネットワーク通信 (SNC) を使用する場合は、SAP から関連する Dll を必要もあります。 これらの Dll が 32 ビットおよび 64 ビット プラットフォーム用に異なると SNOTE で使用可能な<sup>* </sup> 352295 します。Dll をダウンロードする[ http://go.microsoft.com/fwlink/?LinkId=104032](http://go.microsoft.com/fwlink/?LinkId=104032)します。このリンクには、"Attachments"からパッケージをダウンロードするオプションがあります。Dll の名前が:<br /><br /> - \*\*の 32 ビット*<em>: gsskrb5.dll、gssntlm.dll<br /><br /> -  \*\*64 ビット x86 用</em>\*: gx64krb5.dll、gx64ntlm.dll                                                                                                                                                                                                                       |
   |        7.0         |                                                                                                                                                                                                                                             - **SAP の RFC SDK 7.00 UNICODE**します。 これは、使用可能な SNOTE の一部として<sup>* </sup> 27517 します。SDK をダウンロードする手順については、「 [ http://go.microsoft.com/fwlink/?LinkId=94691](http://go.microsoft.com/fwlink/?LinkId=94691)します。ダウンロードした SDK を抽出後 \rfcsdk\bin および \rfcsdk\lib フォルダーから、次の表の前に説明した関連する場所をすべての Dll をコピーします。<br /> <br /> -Dll には SAP からの一部として\* \*R3DLLINST.zip*<em>します。 これにより、Microsoft ランタイム Dll が含まれています、SAP サイトからダウンロードできます。 SNOTE を参照してください。<sup> </em> </sup> 684106 詳細についてはします。 .Zip ファイルをダウンロードする[ http://go.microsoft.com/fwlink/?LinkId=94693](http://go.microsoft.com/fwlink/?LinkId=94693)します。 このリンクには、"Attachments"からパッケージをダウンロードするオプションがあります。<br /><br /> -SAP システムに接続する SAP セキュリティで保護されたネットワーク通信 (SNC) を使用する場合は、SAP から関連する Dll を必要もあります。 これらの Dll が 32 ビットおよび 64 ビット プラットフォーム用に異なると SNOTE で使用可能な<sup>* </sup> 352295 します。Dll をダウンロードする[ http://go.microsoft.com/fwlink/?LinkId=104032](http://go.microsoft.com/fwlink/?LinkId=104032)します。このリンクには、"Attachments"からパッケージをダウンロードするオプションがあります。Dll の名前が:<br /><br /> - \*\*の 32 ビット*<em>: gsskrb5.dll、gssntlm.dll<br /><br /> - \*\*64 ビット x86 用</em>\*: gx64krb5.dll、gx64ntlm.dll                                                                                                                                                                                                                                             |
-  |        7.1         | - **SAP の RFC SDK 7.10 UNICODE**します。 これは、使用可能な SNOTE の一部として<sup>* </sup> 27517 します。SDK をダウンロードする手順については、「 [ http://go.microsoft.com/fwlink/?LinkId=94691](http://go.microsoft.com/fwlink/?LinkId=94691)します。ダウンロードが、SDK を抽出して後、は、次の表の前に説明した関連する場所を \rfcsdk\bin および \rfcsdk\lib フォルダーからすべての Dll をコピーします。<br /> <br /> -Dll には SAP からの一部として\* \*R3DLLINST.zip*<em>します。 これにより、Microsoft ランタイム Dll が含まれています、SAP サイトからダウンロードできます。 SNOTE を参照してください。<sup> </em> </sup> 684106 詳細についてはします。 .Zip ファイルをダウンロードする[ http://go.microsoft.com/fwlink/?LinkId=94693](http://go.microsoft.com/fwlink/?LinkId=94693)します。 このリンクには、"Attachments"からパッケージをダウンロードするオプションがあります。<br /><br /> Microsoft Visual C SAP 7.1 クライアントに必要なランタイム Dll は、次のリンクから入手できます。<br /><br /> - **32 ビット SAP 7.1 クライアント**: から Vcredist_x86.exe [ http://go.microsoft.com/fwlink/?LinkId=107086](http://go.microsoft.com/fwlink/?LinkId=107086)します。<br /><br /> -                                 **64 ビット SAP 7.1 クライアント**: から Vcredist_x64.exe [ http://go.microsoft.com/fwlink/?LinkId=107087](http://go.microsoft.com/fwlink/?LinkId=107087)します。<br /><br /> -SAP システムに接続する SAP セキュリティで保護されたネットワーク通信 (SNC) を使用する場合は、SAP から関連する Dll を必要もあります。 これらの Dll が 32 ビットおよび 64 ビット プラットフォーム用に異なると SNOTE で使用可能な<sup>* </sup> 352295 します。Dll をダウンロードする[ http://go.microsoft.com/fwlink/?LinkId=104032](http://go.microsoft.com/fwlink/?LinkId=104032)します。このリンクには、"Attachments"からパッケージをダウンロードするオプションがあります。Dll の名前が:<br /><br /> - \*\*の 32 ビット*<em>: gsskrb5.dll、gssntlm.dll<br /><br /> - \*\*64 ビット x86 用</em>\*: gx64krb5.dll、gx64ntlm.dll |
+  |        7.1         | - **SAP の RFC SDK 7.10 UNICODE**します。 これは、使用可能な SNOTE の一部として<sup>* </sup> 27517 します。SDK をダウンロードする手順については、「 [ http://go.microsoft.com/fwlink/?LinkId=94691](http://go.microsoft.com/fwlink/?LinkId=94691)します。ダウンロードが、SDK を抽出して後、は、次の表の前に説明した関連する場所を \rfcsdk\bin および \rfcsdk\lib フォルダーからすべての Dll をコピーします。<br /> <br /> -Dll には SAP からの一部として\* \*R3DLLINST.zip*<em>します。 これにより、Microsoft ランタイム Dll が含まれています、SAP サイトからダウンロードできます。 SNOTE を参照してください。<sup> </em> </sup> 684106 詳細についてはします。 .Zip ファイルをダウンロードする[ http://go.microsoft.com/fwlink/?LinkId=94693](http://go.microsoft.com/fwlink/?LinkId=94693)します。 このリンクには、"Attachments"からパッケージをダウンロードするオプションがあります。<br /><br /> Microsoft Visual C SAP 7.1 クライアントに必要なランタイム Dll は、次のリンクから入手できます。<br /><br /> - **32 ビット SAP 7.1 クライアント**:Vcredist_x86.exe [ http://go.microsoft.com/fwlink/?LinkId=107086](http://go.microsoft.com/fwlink/?LinkId=107086)します。<br /><br /> -                                 **64 ビット SAP 7.1 クライアント**:Vcredist_x64.exe [ http://go.microsoft.com/fwlink/?LinkId=107087](http://go.microsoft.com/fwlink/?LinkId=107087)します。<br /><br /> -SAP システムに接続する SAP セキュリティで保護されたネットワーク通信 (SNC) を使用する場合は、SAP から関連する Dll を必要もあります。 これらの Dll が 32 ビットおよび 64 ビット プラットフォーム用に異なると SNOTE で使用可能な<sup>* </sup> 352295 します。Dll をダウンロードする[ http://go.microsoft.com/fwlink/?LinkId=104032](http://go.microsoft.com/fwlink/?LinkId=104032)します。このリンクには、"Attachments"からパッケージをダウンロードするオプションがあります。Dll の名前が:<br /><br /> - \*\*の 32 ビット*<em>: gsskrb5.dll、gssntlm.dll<br /><br /> - \*\*64 ビット x86 用</em>\*: gx64krb5.dll、gx64ntlm.dll |
 
    * SNOTEs は、SAP でリリースされた修正プログラムに付随するリリース ノートです。  
 
@@ -150,7 +150,7 @@ BizTalk Server を使用して、アダプターを使用する、BizTalk Server
 
 **ドライバーに必要な**:  
 
--   **SQL Server 2005 の**: SQL Server でユーザー定義型 (Udt) を作成する場合、Udt のそれぞれのアセンブリを GAC に追加確認します。  
+-   **SQL Server 2005 の**:SQL Server でユーザー定義型 (Udt) を作成する場合は、Udt のそれぞれのアセンブリを GAC に追加して確認します。  
 
 -   **SQL Server 2014、SQL Server 2012、SQL Server 2008 R2、SQL Server 2008 SP1 の**:  
 
@@ -180,9 +180,9 @@ Siebel アダプターは、32 ビット ホスト インスタンスでサポ�
 ## <a name="installing-the-biztalk-adapter-pack"></a>BizTalk Adapter Pack をインストールします。  
  すべてのことを確認、[ソフトウェアの前提条件](#BKMK_Prereqs)がインストールする前にインストールされている、[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]します。 インストールすることができます、[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]次の 2 つの方法で。  
 
-- **対話モードで**: セットアップ ウィザードを実行  
+- **対話モードで**:セットアップ ウィザードを実行します。  
 
-- **サイレント モードで**: コマンドラインを使用して  
+- **サイレント モードで**:コマンドラインを使用してください。  
 
   > [!IMPORTANT]
   >  インストールするコンピューターで管理者特権が必要、[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]ウィザードまたはコマンドラインを使用してをインストールするかどうかに関係なく、します。  
@@ -293,8 +293,8 @@ Siebel アダプターは、32 ビット ホスト インスタンスでサポ�
 |           [!INCLUDE[adaptersap_short](../includes/adaptersap-short-md.md)]           |                                                                             SapBaseAdapterFeature                                                                              |
 |        [!INCLUDE[adaptersiebel_short](../includes/adaptersiebel-short-md.md)]        |                                                                            SiebelBaseAdapterFeature                                                                            |
 |            [!INCLUDE[adaptersqlshort](../includes/adaptersqlshort-md.md)]            |                                                                                   SqlFeature                                                                                   |
-|        [!INCLUDE[adoprovidersapshort](../includes/adoprovidersapshort-md.md)]        |     SapAdoFeature<br /><br /> **注**: インストールする場合にのみ、この値を指定する必要があります、[!INCLUDE[adaptersap_short](../includes/adaptersap-short-md.md)]もします。      |
-|     [!INCLUDE[adoprovidersiebelshort](../includes/adoprovidersiebelshort-md.md)]     | SiebelAdoFeature<br /><br /> **注**: インストールする場合にのみ、この値を指定する必要があります、[!INCLUDE[adaptersiebel_short](../includes/adaptersiebel-short-md.md)]もします。 |
+|        [!INCLUDE[adoprovidersapshort](../includes/adoprovidersapshort-md.md)]        |     SapAdoFeature<br /><br /> **注**:インストールする場合にのみ、この値を指定する必要があります、[!INCLUDE[adaptersap_short](../includes/adaptersap-short-md.md)]もします。      |
+|     [!INCLUDE[adoprovidersiebelshort](../includes/adoprovidersiebelshort-md.md)]     | SiebelAdoFeature<br /><br /> **注**:インストールする場合にのみ、この値を指定する必要があります、[!INCLUDE[adaptersiebel_short](../includes/adaptersiebel-short-md.md)]もします。 |
 |                                    すべてのコンポーネント                                    |                                                                                      ALL                                                                                       |
 
 > [!IMPORTANT]
@@ -410,7 +410,7 @@ Siebel アダプターは、32 ビット ホスト インスタンスでサポ�
 
 1.  BizTalk Server では、次のフォルダーに移動します。  
 
-     *ドライブ*: \Program Files\Microsoft BizTalk Adapter Pack (x64) \bin  
+     *drive*:\Program Files\Microsoft BizTalk Adapter Pack(x64)\bin  
 
      *ドライブ*: \Program Files (x86) \Microsoft BizTalk Adapter Pack\bin  
 
@@ -534,7 +534,7 @@ Siebel アダプターは、32 ビット ホスト インスタンスでサポ�
       ```  
 
    > [!NOTE]
-   >  公開キーを確認する方法については、[公開キーとバージョン特定](#BKMK_PubKey)を参照してください。  
+   >  公開キーを確認する方法については、次を参照してください。[公開キーとバージョン特定](#BKMK_PubKey)します。  
 
 4. .NET Framework データ プロバイダーを登録します。  
 

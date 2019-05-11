@@ -17,17 +17,17 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8af3a77b9bb169e394571444c7eb7e3984f7f7c3
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9267de92dcefc9decc5932bee6b531e300be029b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37013043"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65333102"
 ---
 # <a name="how-to-verify-activity-status-of-a-message"></a>メッセージのアクティビティの状態を確認する方法
-PeopleSoft Integration Broker を使用して、PeopleSoft HTTP ホストおよび PeopleSoft がイベントを送信ポートを作成します。 メッセージがアクティブになっており、ルーティングされていることを確認するには、次の手順に従います。  
+PeopleSoft Integration Broker を使用して、PeopleSoft HTTP ホストおよび PeopleSoft がイベントを送信ポートを作成します。 次の手順に従ってが、アクティブで、ルーティングにメッセージを確認します。  
   
-### <a name="to-verify-that-a-message-is-active-and-routed-correctly"></a>メッセージがアクティブで正しくルーティングされていることを確認するには  
+### <a name="to-verify-that-a-message-is-active-and-routed-correctly"></a>メッセージがアクティブでルーティング正しくことを確認するには  
   
 1. をクリックして**開始**、 をポイント**プログラム**、 をポイント**PeopleSoft Application Name**、し、**アプリケーション デザイナー**します。  
   
@@ -57,7 +57,7 @@ PeopleSoft Integration Broker を使用して、PeopleSoft HTTP ホストおよ�
   
     クリックして、次のことを確認**OK**します。  
   
-   1. **メッセージ:** Active  
+   1. **メッセージ：** Active  
   
    2. **Message Channel:** ENTERPRISE_SETUP  
   
@@ -67,17 +67,17 @@ PeopleSoft Integration Broker を使用して、PeopleSoft HTTP ホストおよ�
   
 8. アプリケーション デザイナーを終了します。  
   
-    これにより、メッセージの状態がアクティブであること、VERSION_1 が使用されていること、および PeopleSoft の ENTERPRISE_SETUP チャネルにルーティングされていることが確認されました。  
+    こうことで、メッセージについて、アクティブな状態では、VERSION_1 が使用および PeopleSoft の ENTERPRISE_SETUP チャネル経由でことです。  
   
 9. PeopleSoft アプリケーションと通信するように Integration.Gateway.properties ファイルを構成します。  
   
-     プロパティが次のように設定されていることを確認します。  
+     次のプロパティを設定することを確認します。  
   
     -   **ig.isc.serverurl:** //server:9000  
   
-    -   **ig.isc.userid::** PS の ID  
+    -   **ig.isc.userid:** PS の ID  
   
-    -   **ig.isc.password::** PS のパスワード  
+    -   **ig.isc.password:** PS のパスワード  
   
     -   **ig.isc.toolsrel::** 特定のリリース  
   

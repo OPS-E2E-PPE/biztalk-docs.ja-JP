@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 589d55d4ffccadf277f586104f8d5b9b1bf36b00
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 75350c5f49e7d9f7e6f70365d3978e953ac620b0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36996227"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65330936"
 ---
 # <a name="invalid-binding"></a>バインドが無効です
 ## <a name="details"></a>詳細  
@@ -33,18 +33,18 @@ ms.locfileid: "36996227"
 |  メッセージ テキスト   |                                  バインドが無効です                                   |
 
 ## <a name="explanation"></a>説明  
- このエラーは、受信場所または送信ポートのバインディング構成に指定されたバインディングを、アダプターが作成できないことを示します。  
+ このエラーは、アダプターが受信場所のバインド構成で指定されたバインディングを作成することはできませんまたは送信ポートを示します。  
 
 ## <a name="user-action"></a>ユーザーの操作  
- バインディング要素を確認するには、次の手順を実行します。  
+ 次の手順を使用すると、バインド要素を確認できます。  
 
-#### <a name="to-verify-binding-elements"></a>バインド要素を検証するには  
+#### <a name="to-verify-binding-elements"></a>バインディング要素を確認するには  
 
 1. クリックして**開始**、 をクリックして**すべてのプログラム**、 をクリックして[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、 をクリック**BizTalk Server 管理**します。  
 
 2. コンソール ルートで  [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]、展開**BizTalk グループ**、展開**アプリケーション**します。  
 
-3. アプリケーションを特定し、次にトランスポートを特定します。  
+3. アプリケーションを見つけて、トランスポートを特定します。  
 
 4. トランスポート名を右クリックします。  
 
@@ -52,8 +52,8 @@ ms.locfileid: "36996227"
 
 6. ポート**型**一覧で、適切なポートを選択します。  
 
-7. クリックして**構成**します。  
+7. をクリックして**構成**です。  
 
 8. **WCF [**<em>トランスポートの種類</em>**] トランスポートのプロパティ**ダイアログ ボックスで、をクリックして、**バインド**タブ。  
 
-9. 構成に指定されているバインディング要素が有効であることを確認します。
+9. 有効な構成で指定されたバインド要素を確認します。

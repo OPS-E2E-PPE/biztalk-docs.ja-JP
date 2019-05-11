@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: eabb9c260ed835a7c4cac3183000327767bb9cd0
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8ec6222c68e37ab85414a5b6eb8137b5cba13f3d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37014515"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65367881"
 ---
 # <a name="secure-your-sql-applications"></a>SQL アプリケーションのセキュリティ保護します。
 ## <a name="overview"></a>概要
@@ -35,7 +35,7 @@ SQL Server データベースは、多くの場合、顧客アカウントの詳
   
   統合セキュリティ。 ここで、 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] 、Microsoft を使用して[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]資格情報。 このメソッドを使用するこれらの資格情報を受け入れるように SQL server を構成する必要があります。  
   
-  エンタープライズ シングル サインオン (SSO)。 詳細については、SSO を使用して、[SQL アダプターと BizTalk Server でセキュリティ](../../adapters-and-accelerators/adapter-sql/security-with-the-sql-adapter-and-biztalk-server.md)を参照してください。  
+  エンタープライズ シングル サインオン (SSO)。 詳細については、SSO を使用して、次を参照してください。 [SQL アダプターと BizTalk Server でセキュリティ](../../adapters-and-accelerators/adapter-sql/security-with-the-sql-adapter-and-biztalk-server.md)します。  
   
   このセクションのトピックで説明に役立つガイドラインで開発したソリューションをセキュリティで保護された、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]します。  
   

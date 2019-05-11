@@ -1,5 +1,5 @@
 ---
-title: アダプター プログラミングの管理 |Microsoft ドキュメント
+title: アダプター プログラミングの管理 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,15 +12,15 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7b19e3285357bb067614aae9472eb099470fe27f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6c81d056e9775ec0e9273f01aa11be384f632647
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22229810"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65361349"
 ---
 # <a name="adapter-programming-administration"></a>アダプター プログラミングの管理
-特殊な種類の構成ストア アプリケーションは、アダプターは: つまり、アダプターは、他のシングル サインオンや構成ストア アプリケーションと名前空間を共有するコンポーネントです。 このため、ISSOConfigStore を使用するアダプターに関する情報にアクセスできます。 ただし、構成ストア アプリケーションとは異なり、ISSOAdmin インターフェイスでアダプターの管理機能を実行しません。 代わりに、ISSOPSAdmin を通じてアダプターを管理します。 特殊なアダプターの管理インターフェイスが存在するのは、他のアクティビティと構成ストアをシステムが調整するためです。  
+アダプターが特別な種類の構成ストア アプリケーション。 これは、アダプターは、その他のシングル サインオンおよび構成ストア アプリケーションと、名前空間を共有するコンポーネント。 そのため、ISSOConfigStore を使用して、アダプターについての情報にアクセスすることができます。 構成ストア アプリケーションとは異なりを実行しない管理機能、ISSOAdmin インターフェイスでアダプター。 代わりに、ISSOPSAdmin を通じてアダプターを管理します。 特殊化されたアダプターの管理インターフェイスの理由が設定されて、システムは、構成ストアとその他のアクティビティを調整できます。  
   
 ## <a name="see-also"></a>参照  
  [アダプター プログラミングの構成](../core/adapter-programming-configuration.md)   

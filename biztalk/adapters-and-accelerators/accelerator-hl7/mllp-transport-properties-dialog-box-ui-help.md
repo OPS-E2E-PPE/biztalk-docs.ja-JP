@@ -14,23 +14,23 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c8740ebb1533881e484ab13cdfcce3fc0afb4fbd
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 167591fe9820d4e416cdb1f931b8dbf4fc302ea4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36971747"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65290378"
 ---
 # <a name="mllp-transport-properties-dialog-box-ui-help"></a>MLLP トランスポート プロパティ ダイアログ ボックスの UI ヘルプ
 使用する、 **MLLP トランスポート プロパティ**送信のパラメーターを構成し、受信アダプターの最小限の下位レイヤー プロトコル (MLLP) ダイアログ ボックス。 パラメーターを設定、ネットワーク接続 MLLP トランスポートのプロパティのいずれかの送信ポートまたは受信場所の MLLP トランスポートの種類を使用することができます。  
 
- MLLP プロパティの詳細については、[送信および受信アダプターの構成パラメーター](../../adapters-and-accelerators/accelerator-hl7/configuration-parameters-for-send-and-receive-adapters.md)を参照してください。  
+ MLLP プロパティの詳細については、次を参照してください。[送信および受信アダプターの構成パラメーター](../../adapters-and-accelerators/accelerator-hl7/configuration-parameters-for-send-and-receive-adapters.md)します。  
 
 ## <a name="uielement-list"></a>UI 要素の一覧  
  **MLLP トランスポート プロパティ** ダイアログ ボックスで、次の操作を行います。  
 
 #### <a name="block-characters"></a>文字のブロック  
- ブロック文字パラメーターは、特殊文字を HL7 メッセージの受信または送信 MLLP アダプター経由で囲む必要があります。 これらの文字は、次の形式でブロックを形成: \<SB\>*DDD*\<EB\>\<CR\>ここで、 *DDD*意味メッセージのデータでは、 \<SB\>開始ブロックの文字は、 \<EB\> end ブロックの文字と\<CR\>キャリッジ リターンが。  
+ ブロック文字パラメーターは、特殊文字を HL7 メッセージの受信または送信 MLLP アダプター経由で囲む必要があります。 これらの文字は、次の形式でブロックをフォームします。\<SB\>*DDD*\<EB\>\<CR\>ここで、 *DDD*メッセージ データの略\<SB\>が、開始ブロックの文字\<EB\> end ブロックの文字と\<CR\>が、改行が返されます。  
 
 |プロパティ|目的|  
 |--------------|----------------|  
@@ -67,9 +67,9 @@ ms.locfileid: "36971747"
 |**永続的な接続**|**受信タイムアウト**|結果|  
 |-------------------------------|-------------------------|------------|  
 |**FALSE**|>0|メッセージが受信されるか、タイムアウト期間が経過した後、接続が閉じます。|  
-|**FALSE**|0|エラーの原因:「受信タイムアウト値することはできません固定接続 FALSE の場合は 0」。|  
+|**FALSE**|0|エラーが発生します。"受信タイムアウト値は永続的な接続 FALSE の場合 0 をすることはできません"。|  
 |**TRUE**|0|決して接続が中断されます。|  
-|**TRUE**|<>0|エラーの原因:「受信タイムアウト値は、永続的な接続 TRUE の場合 0 をする必要があります」|  
+|**TRUE**|<>0|エラーが発生します。"受信タイムアウト値が TRUE の永続的な接続が発生した場合ゼロになります"。|  
 
  **MLLP 送信**、次の表に、可能な値の結果、**永続的な接続**と**受信タイムアウト**値。  
 

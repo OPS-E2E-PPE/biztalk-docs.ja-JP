@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 597eca7199a5362fde67b4add5044ca3efe42c2e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e5cff3344128e1471b57b387aaa8597c22a11d85
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37013859"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65368320"
 ---
 # <a name="receive-query-notifications-from-sql-using-the-wcf-service-model"></a>WCF サービス モデルを使用して SQL のクエリ通知を受信します。
 このトピックでは、構成する方法を示します、 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] SQL Server データベースからクエリ通知メッセージを受信します。 通知を示すために、従業員、列を持つテーブルを"Status"を検討してください。 このテーブルに新しいレコードが挿入されると、[状態] 列の値は 0 に設定します。 「0」を返します [状態] 列であるすべてのレコードを取得する SQL ステートメントを使用して通知を登録することで通知を受信するアダプターを構成します。 SQL ステートメントを指定することによって行うことができます、 **NotificationStatement**プロパティをバインドします。 アダプターのクライアントが通知を受信した後、SQL Server データベースで、後続のタスクを実行するロジックを含めることができます。 わかりやすくする、この例では、アダプター クライアントが「0」を返します [状態] 列である、テーブル内のすべてのレコードを一覧表示されます。  
@@ -34,7 +34,7 @@ ms.locfileid: "37013859"
 |**NotificationStatement**|SQL ステートメントを指定します (SELECT または EXEC \<*ストアド プロシージャ*\>) のクエリ通知を登録するために使用します。 アダプターは、指定された SQL ステートメントの変更の結果セットの場合にのみ、SQL Server から通知メッセージを取得します。|  
 |**NotifyOnListenerStart**|リスナーが開始されると、アダプターがアダプター クライアントに通知を送信するかどうかを指定します。|  
   
- これらのプロパティの詳細については、[for SQL Server のアダプターのバインド プロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md)を参照してください。 使用する方法の詳細については、 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] SQL Server からの通知を受信するさらに読み進める。  
+ これらのプロパティの詳細については、次を参照してください。 [for SQL Server のアダプターのバインド プロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md)します。 使用する方法の詳細については、 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] SQL Server からの通知を受信するさらに読み進める。  
   
 ## <a name="configuring-notifications-using-the-wcf-service-model"></a>WCF サービス モデルを使用して通知を構成します。  
  WCF サービス モデルを使用して通知を受信するには、次の必要があります。  
@@ -48,10 +48,10 @@ ms.locfileid: "37013859"
 4. サービス ホストを使用してこの WCF サービス ホスト (**System.ServiceModel.ServiceHost**)。  
   
 ## <a name="about-the-examples-used-in-this-topic"></a>このトピックで使用する例について  
- このトピックの例では、Employee テーブルに対して通知を受信します。 テーブルを生成するスクリプトは、サンプルで提供されます。 サンプルの詳細については、[SQL アダプタのサンプル](../../adapters-and-accelerators/adapter-sql/samples-for-the-sql-adapter.md)を参照してください。 サンプルについては、 **Notification_ServiceModel**、これは、このトピックに基づいてがで提供されていることも、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]サンプル。  
+ このトピックの例では、Employee テーブルに対して通知を受信します。 テーブルを生成するスクリプトは、サンプルで提供されます。 サンプルの詳細については、次を参照してください。 [SQL アダプタのサンプル](../../adapters-and-accelerators/adapter-sql/samples-for-the-sql-adapter.md)します。 サンプルについては、 **Notification_ServiceModel**、これは、このトピックに基づいてがで提供されていることも、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]サンプル。  
   
 ## <a name="the-wcf-service-contract-and-class"></a>WCF サービス コントラクトとクラス  
- 使用することができます、 [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] WCF サービス コントラクト (インターフェイス) とサポートのクラスを作成する、**通知**操作。 WCF サービス コントラクトを生成する詳細については、[SQL Server のアイテムの WCF クライアントまたは WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-sql/generate-a-wcf-client-or-wcf-service-contract-for-sql-server-artifacts.md)を参照してください。  
+ 使用することができます、 [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] WCF サービス コントラクト (インターフェイス) とサポートのクラスを作成する、**通知**操作。 WCF サービス コントラクトを生成する詳細については、次を参照してください。 [SQL Server のアイテムの WCF クライアントまたは WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-sql/generate-a-wcf-client-or-wcf-service-contract-for-sql-server-artifacts.md)します。  
   
 ### <a name="the-wcf-service-contract-interface"></a>WCF サービス コントラクト (インターフェイス)  
  次のコードに対して生成された WCF サービス コントラクト (インターフェイス) を示しています、**通知**操作。  
@@ -191,7 +191,7 @@ namespace SqlAdapterBindingNamespace {
   
 2. 使用して、 [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] WCF サービス コントラクト (インターフェイス) とのヘルパー クラスを生成する、**通知**操作。  
   
-    詳細については、[SQL Server のアイテムの WCF クライアントまたは WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-sql/generate-a-wcf-client-or-wcf-service-contract-for-sql-server-artifacts.md)を参照してください。 必要に応じて、サービス コントラクトとヘルパー クラスを生成するときにバインドのプロパティを指定することができます。 これは、生成された構成ファイルで設定は正しくことを保証します。  
+    詳細については、次を参照してください。 [SQL Server のアイテムの WCF クライアントまたは WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-sql/generate-a-wcf-client-or-wcf-service-contract-for-sql-server-artifacts.md)します。 必要に応じて、サービス コントラクトとヘルパー クラスを生成するときにバインドのプロパティを指定することができます。 これは、生成された構成ファイルで設定は正しくことを保証します。  
   
 3. 手順 2 で生成されたインターフェイスとヘルパー クラスからの WCF サービスを実装します。 **通知**から受信したデータの処理エラーが発生した場合、このクラスのメソッドは、操作を中止する例外をスローできます、**通知**操作ですそれ以外の場合、メソッドでは。何も返しません。 次のように、WCF サービス クラスを属性する必要があります。  
   

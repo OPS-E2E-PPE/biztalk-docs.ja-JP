@@ -18,18 +18,18 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 558c87b4ed8d9a5504725c17a7f8d36bb10e821d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: acd52ede77b4a9ec18287372f6ddde1f7628ecbc
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36985395"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65332999"
 ---
 # <a name="how-to-view-the-schema-definition-xsd-of-a-schema"></a>スキーマのスキーマ定義 (XSD) を表示する方法
-このトピックでは、BizTalk Server 管理コンソールを使用して、スキーマのスキーマ定義 (XSD) を表示する方法について説明します。 これは、スキーマ検証エラーのトラブルシューティングを行ったり、正しいスキーマが展開されていることを確認したりするために必要です。  
+このトピックでは、BizTalk Server 管理コンソールを使用して、スキーマのスキーマ定義 (XSD) を表示する方法を説明します。 これには、スキーマ検証エラーをトラブルシューティングしたり、適切なスキーマが展開されていることを検証する可能性があります。  
   
 ## <a name="prerequisites"></a>前提条件  
- このトピックの手順を実行するには、BizTalk Server 管理者グループまたは BizTalk Server Operators グループのメンバー アカウントでログオンする必要があります。 詳細なアクセス許可についてを参照してください。[を展開すると、BizTalk アプリケーションの管理に必要なアクセス許可](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)します。  
+ このトピックの手順を実行するには、BizTalk Server 管理者グループまたは BizTalk Server Operators グループのメンバーであるアカウントでログオンする必要があります。 詳細なアクセス許可についてを参照してください。[を展開すると、BizTalk アプリケーションの管理に必要なアクセス許可](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)します。  
   
 ### <a name="to-view-the-xsd-of-a-schema"></a>スキーマの XSD を表示するには  
   
@@ -41,7 +41,7 @@ ms.locfileid: "36985395"
   
 4. 左側のウィンドウで次のようにクリックします。**スキーマ ビュー**します。  
   
-    右ペインに XSD が表示されます。  
+    右側のウィンドウで、XSD を表示します。  
   
 ## <a name="see-also"></a>参照  
  [スキーマの管理](../core/managing-schemas.md)

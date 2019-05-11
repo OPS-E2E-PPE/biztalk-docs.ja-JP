@@ -1,6 +1,6 @@
 ---
-title: WCF LOB Adapter SDK の一般的な開発者のタスク |Microsoft ドキュメント
-description: チュートリアルと WCF LOB Adapter SDK を使用してアダプターの作成に関する概念情報へのクイック リンク
+title: WCF LOB Adapter SDK の開発者の一般的なタスク |Microsoft Docs
+description: チュートリアルと WCF LOB Adapter SDK を使用してアダプターを作成する方法の概念情報へのクイック リンク
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -13,24 +13,24 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bbf6a6c24178aa98bf456b7e9d8dbc61efb053ef
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 187eb8d5c841d6bd5b51e05e9be04742e4fa0ef4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22224378"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65363971"
 ---
-# <a name="common-developer-tasks-for-the-wcf-lob-adapter-sdk"></a>WCF LOB Adapter SDK の一般的な開発者のタスク
+# <a name="common-developer-tasks-for-the-wcf-lob-adapter-sdk"></a>WCF LOB Adapter SDK の開発者の一般的なタスク
 
 ## <a name="overview"></a>概要
 
-アダプター開発者の設計し、使用した基幹業務システムを WCF ベース アダプターを開発、 [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] API およびツールだけでなく、Microsoft .NET Framework。  
+アダプター開発者が設計および WCF ベース アダプターを使用して基幹業務システムを開発、 [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] API とツールだけでなく、Microsoft .NET Framework です。  
   
- できるだけほど効果的では、アダプター開発者を支援するには、次の一覧では、チュートリアルを使用してアダプターの開発に関する一般的な情報のリンクを提供[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]です。  
+ アダプター開発者の効率を最大限にするために、次の一覧では、チュートリアルと一般的な情報を使用してアダプターの開発についてのリンクを提供[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]します。  
   
 **概念**  
   
--   [ビジネス アダプター SDK の Windows Communication Foundation 回線とは](what-is-the-windows-communication-foundation-line-of-business-adapter-sdk.md)  
+-   [Business Adapter SDK の Windows Communication Foundation の行とは](what-is-the-windows-communication-foundation-line-of-business-adapter-sdk.md)  
   
 
 **開発**  
@@ -43,11 +43,11 @@ ms.locfileid: "22224378"
 
 **チュートリアル**  
   
--   [WCF LOB Adapter SDK を説明するチュートリアル](tutorials-to-learn-the-wcf-lob-adapter-sdk.md) 
+-   [WCF LOB Adapter SDK についてのチュートリアル](tutorials-to-learn-the-wcf-lob-adapter-sdk.md) 
   
-    アダプター コンシューマーにアダプターの消費は WCF サービスの使用と同じです。 WCF の学習を開始[Developing Service-Oriented WCF アプリケーション)](https://docs.microsoft.com/dotnet/framework/wcf)です。
+    アダプターのコンシューマーにアダプターの使用は WCF サービスの使用と同じです。 WCF について学習を開始する[Developing Service-Oriented WCF アプリケーション)](https://docs.microsoft.com/dotnet/framework/wcf)します。
   
-    次のトピックは、アダプターのコンシューマーに役立つ可能性があります。  
+    次のトピックは、アダプターのコンシューマー向けの便利な可能性があります。  
   
 -   [Windows Communication Foundation とは](https://docs.microsoft.com/dotnet/framework/wcf/whats-wcf)  
   
@@ -58,4 +58,4 @@ ms.locfileid: "22224378"
 -   [クライアントを構築します。](https://docs.microsoft.com/dotnet/framework/wcf/building-clients)  
   
 ## <a name="see-also"></a>参照  
- [概要、WCF LOB Adapter SDK と](get-started-with-the-with-the-wcf-lob-adapter-sdk.md)
+ [概要、WCF LOB Adapter SDK の使用](get-started-with-the-with-the-wcf-lob-adapter-sdk.md)

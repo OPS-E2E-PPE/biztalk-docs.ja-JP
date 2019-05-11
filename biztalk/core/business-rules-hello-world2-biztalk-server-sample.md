@@ -15,12 +15,12 @@ caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6ccc78579c9febfa93b489d72c40ccb603bed92a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ee732b2b1850b653426eab6a5ad55d52974df975
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36972811"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65357885"
 ---
 # <a name="business-rules-hello-world2-biztalk-server-sample"></a>Business Rules こんにちは World2 (BizTalk Server サンプル)
 Business Rules こんにちは World2 サンプルを説明 Business Rules こんにちは World1 サンプルを拡張する方法のバージョンに次のように公開、および共有 SQL ルール ストア、およびポリシーを使用して、実行する方法に設定 XML 規則を展開、**ポリシー**オブジェクトビジネス ルール フレームワークによって提供されます。 また、実行中のポリシーを動的に更新する方法についても示します。  
@@ -53,7 +53,7 @@ Business Rules こんにちは World2 サンプルを説明 Business Rules こ�
 8.  後でこのサンプルを実行するための準備として、ルール セット ファイルおよび展開されたルール セット レコードを削除して、クリーンアップします。  
   
 > [!NOTE]
->  この SDK のすべてのサンプルに関する重要な情報は、[サンプル](../core/samples-in-the-sdk.md)を参照してください。  
+>  この SDK のすべてのサンプルに関する重要な情報は、次を参照してください。[サンプル](../core/samples-in-the-sdk.md)します。  
   
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
  *\<パスのサンプル\>* \Business Rules\Business こんにちは World2\ のルール  

@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2bd54cf701ed3da6ce7296a16ac5d926077cf7ff
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b33abda0259e76015596218f0d3331a584ab8699
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36995443"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65371220"
 ---
 # <a name="prerequisites-to-create-siebel-applications"></a>Siebel アプリケーションを作成するための必要条件
 使用して BizTalk アプリケーションを開発する前に行う必要があります、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]します。 トピックには、BizTalk アプリケーションの開発に使用されるいくつかの BizTalk Server ツールも一覧表示されます。  
@@ -51,7 +51,7 @@ Microsoft でプロジェクトをビルドする厳密な名前キー ファイ
 
 - Microsoft [!INCLUDE[btsVStudioNoVersion_md](../../includes/btsvstudionoversion-md.md)] 
 
-- BizTalk エクスプローラー  
+- BizTalk エクスプ ローラー  
 
 - オーケストレーション eesigner  
 

@@ -1,5 +1,5 @@
 ---
-title: Siebel アダプターと ADO.NET インターフェイスを拡張 |Microsoft ドキュメント
+title: Siebel アダプターを使用した ADO.NET インターフェイスの拡張 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,15 +15,15 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a569ebcc42b7d1f3af0d655f6e7cfc6fa9460da8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a6c00d8137bf1d171c40c958932da155ce4a0baa
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22221874"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65371679"
 ---
-# <a name="extend-adonet-interfaces-with-the-siebel-adapter"></a>Siebel アダプターと ADO.NET インターフェイスを拡張します。
-[!INCLUDE[adoprovidersiebellong](../../includes/adoprovidersiebellong-md.md)]さまざまな ADO.NET インターフェイスを拡張します。 ADO.NET クライアントは、Siebel システムとのやり取りにこれらを使用できます。 このセクションでは、これらのインターフェイスの詳細を提供します。  
+# <a name="extend-adonet-interfaces-with-the-siebel-adapter"></a>Siebel アダプターを使用した ADO.NET インターフェイスを拡張します。
+[!INCLUDE[adoprovidersiebellong](../../includes/adoprovidersiebellong-md.md)]さまざまな ADO.NET インターフェイスを拡張します。 ADO.NET クライアントは、Siebel システムとのインターフェイスにこれらを使用できます。 このセクションでは、これらのインターフェイスの詳細について提供します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

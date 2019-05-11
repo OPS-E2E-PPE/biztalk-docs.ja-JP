@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b23ddf1905bc0067d5d35b625d4a66ec058028fa
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f75851b8c2b781d943611657e016775c8bce95b4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36985131"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65279742"
 ---
 # <a name="transaction-set-trailer-missing"></a>トランザクション セットのトレーラーがありません
 ## <a name="details"></a>詳細  

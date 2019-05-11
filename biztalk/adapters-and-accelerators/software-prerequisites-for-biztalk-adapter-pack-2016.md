@@ -12,12 +12,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2832333e7c38b824fb26f988ec01423e519a83d4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7980760c3a99363449e18f0315fdeddac0626bca
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36973275"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65364010"
 ---
 # <a name="software-prerequisites-for-biztalk-adapter-pack-2016"></a>BizTalk Adapter Pack 2016 のソフトウェアの前提条件
 Microsoft のソフトウェア要件[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)](BAP) に含まれる[!INCLUDE[bts2016_md](../includes/bts2016-md.md)]します。
@@ -89,19 +89,19 @@ Microsoft sharepoint アダプターを使用する目的では、SharePoint ポ
 
 <a name="BKMK_SuppLOB"></a>   
 ## <a name="supported-enterprise-application-versions"></a>サポートされているエンタープライズ アプリケーションのバージョン  
-BizTalk Adapter Pack でサポートされている特定の LOB システムのバージョンを表示するには、**[サポートされている基幹業務 (LOB) システム](http://social.technet.microsoft.com/wiki/contents/articles/17631.biztalk-server-supported-line-of-business-lob-systems.aspx)** を参照してください。
+BizTalk Adapter Pack でサポートされている特定の LOB システムのバージョンを表示するには、次を参照してください。 **[サポートされている基幹業務 (LOB) システム](http://social.technet.microsoft.com/wiki/contents/articles/17631.biztalk-server-supported-line-of-business-lob-systems.aspx)** します。
 
 このセクションでは、各アダプターに必要なすべてのクライアントの Dll など、アダプターごとに、追加の情報が一覧表示します。  
 
 ### <a name="oracle-database-adapter"></a>Oracle Database アダプター  
 
--   省略可能: 分散トランザクションを使用して Oracle データベースがある場合はインストール**Microsoft Transaction Server 用の Oracle サービス**(Oracle クライアントのインストールの一部) アダプター クライアントを実行しているコンピューター。  
+-   省略可能:分散トランザクションを使用して Oracle データベースがある場合は、インストール**Microsoft Transaction Server 用の Oracle サービス**(Oracle クライアントのインストールの一部) アダプター クライアントを実行しているコンピューター。  
 
 -   ODP.NET の最新バージョンで動作するアプリケーションのインストール、**ポリシー Dll** GAC に Dll を登録します。 参照してください[Oracle Data Provider for .NET に関する FAQ](http://www.oracle.com/technetwork/database/windows/faq-093106.html)します。  
 
 ### <a name="oracle-e-business-adapter"></a>Oracle E-Business アダプター  
 
--   省略可能: インストールで、Oracle データベースを分散トランザクションを使用する**Microsoft Transaction Server 用の Oracle サービス**(Oracle クライアントのインストールの一部) アダプター クライアントを実行しているコンピューター。  
+-   省略可能:Oracle データベースでは、分散トランザクションを使用するには、インストール**Microsoft Transaction Server 用の Oracle サービス**(Oracle クライアントのインストールの一部) アダプター クライアントを実行しているコンピューター。  
 
 -   ODP.NET の最新バージョンで動作するアプリケーションのインストール、**ポリシー Dll** GAC に Dll を登録します。 参照してください[Oracle Data Provider for .NET に関する FAQ](http://www.oracle.com/technetwork/database/windows/faq-093106.html)します。  
 
@@ -109,12 +109,12 @@ BizTalk Adapter Pack でサポートされている特定の LOB システムの
 
 - [!INCLUDE[adaptersap_short](../includes/adaptersap-short-md.md)] SAP システムは、Unicode または Unicode でないかどうかに関係なく、RFC SDK の Unicode バージョンが必要です。  
 
-- **ドライバーに必要な**: 次の表に、必要な Dll、 [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)] SAP システムとのインターフェイス。  
+- **ドライバーに必要な**:次の表に、必要な Dll、 [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)] SAP システムとのインターフェイス。  
 
 
   | SAP クライアント バージョン |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  必要なドライバー                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
   |--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-  |        7.2         | - **SAP の RFC SDK 7.10 UNICODE**します。 これは、使用可能な SNOTE の一部として<sup>* </sup> 27517 します。SDK をダウンロードする手順については、「 [ http://go.microsoft.com/fwlink/?LinkId=94691](http://go.microsoft.com/fwlink/?LinkId=94691)します。ダウンロードが、SDK を抽出して後、は、次の表の前に説明した関連する場所を \rfcsdk\bin および \rfcsdk\lib フォルダーからすべての Dll をコピーします。<br /> <br /> -Dll には SAP からの一部として\* \*R3DLLINST.zip*<em>します。 これにより、Microsoft ランタイム Dll が含まれています、SAP サイトからダウンロードできます。 SNOTE を参照してください。<sup> </em> </sup> 684106 詳細についてはします。 .Zip ファイルをダウンロードする[ http://go.microsoft.com/fwlink/?LinkId=94693](http://go.microsoft.com/fwlink/?LinkId=94693)します。 このリンクには、"Attachments"からパッケージをダウンロードするオプションがあります。<br /><br /> Microsoft Visual C SAP 7.1 クライアントに必要なランタイム Dll は、次のリンクから入手できます。<br /><br /> - **32 ビット SAP 7.1 クライアント**: から Vcredist_x86.exe [ http://go.microsoft.com/fwlink/?LinkId=107086](http://go.microsoft.com/fwlink/?LinkId=107086)します。<br /><br /> -                                 **64 ビット SAP 7.1 クライアント**: から Vcredist_x64.exe [ http://go.microsoft.com/fwlink/?LinkId=107087](http://go.microsoft.com/fwlink/?LinkId=107087)します。<br /><br /> -SAP システムに接続する SAP セキュリティで保護されたネットワーク通信 (SNC) を使用する場合は、SAP から関連する Dll を必要もあります。 これらの Dll が 32 ビットおよび 64 ビット プラットフォーム用に異なると SNOTE で使用可能な<sup>* </sup> 352295 します。Dll をダウンロードする[ http://go.microsoft.com/fwlink/?LinkId=104032](http://go.microsoft.com/fwlink/?LinkId=104032)します。このリンクには、"Attachments"からパッケージをダウンロードするオプションがあります。Dll の名前が:<br /><br /> - \*\*の 32 ビット*<em>: gsskrb5.dll、gssntlm.dll<br /><br /> - \*\*64 ビット x86 用</em>\*: gx64krb5.dll、gx64ntlm.dll |
+  |        7.2         | - **SAP の RFC SDK 7.10 UNICODE**します。 これは、使用可能な SNOTE の一部として<sup>* </sup> 27517 します。SDK をダウンロードする手順については、「 [ http://go.microsoft.com/fwlink/?LinkId=94691](http://go.microsoft.com/fwlink/?LinkId=94691)します。ダウンロードが、SDK を抽出して後、は、次の表の前に説明した関連する場所を \rfcsdk\bin および \rfcsdk\lib フォルダーからすべての Dll をコピーします。<br /> <br /> -Dll には SAP からの一部として\* \*R3DLLINST.zip*<em>します。 これにより、Microsoft ランタイム Dll が含まれています、SAP サイトからダウンロードできます。 SNOTE を参照してください。<sup> </em> </sup> 684106 詳細についてはします。 .Zip ファイルをダウンロードする[ http://go.microsoft.com/fwlink/?LinkId=94693](http://go.microsoft.com/fwlink/?LinkId=94693)します。 このリンクには、"Attachments"からパッケージをダウンロードするオプションがあります。<br /><br /> Microsoft Visual C SAP 7.1 クライアントに必要なランタイム Dll は、次のリンクから入手できます。<br /><br /> - **32 ビット SAP 7.1 クライアント**:Vcredist_x86.exe [ http://go.microsoft.com/fwlink/?LinkId=107086](http://go.microsoft.com/fwlink/?LinkId=107086)します。<br /><br /> -                                 **64 ビット SAP 7.1 クライアント**:Vcredist_x64.exe [ http://go.microsoft.com/fwlink/?LinkId=107087](http://go.microsoft.com/fwlink/?LinkId=107087)します。<br /><br /> -SAP システムに接続する SAP セキュリティで保護されたネットワーク通信 (SNC) を使用する場合は、SAP から関連する Dll を必要もあります。 これらの Dll が 32 ビットおよび 64 ビット プラットフォーム用に異なると SNOTE で使用可能な<sup>* </sup> 352295 します。Dll をダウンロードする[ http://go.microsoft.com/fwlink/?LinkId=104032](http://go.microsoft.com/fwlink/?LinkId=104032)します。このリンクには、"Attachments"からパッケージをダウンロードするオプションがあります。Dll の名前が:<br /><br /> - \*\*の 32 ビット*<em>: gsskrb5.dll、gssntlm.dll<br /><br /> - \*\*64 ビット x86 用</em>\*: gx64krb5.dll、gx64ntlm.dll |
 
    > [!TIP]
    > SNOTEs は、SAP でリリースされた修正プログラムに付随するリリース ノートです。  

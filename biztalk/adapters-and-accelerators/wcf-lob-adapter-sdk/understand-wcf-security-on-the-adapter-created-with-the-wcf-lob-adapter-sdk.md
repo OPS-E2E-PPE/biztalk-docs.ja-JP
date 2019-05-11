@@ -1,5 +1,5 @@
 ---
-title: WCF LOB Adapter SDK で作成されたアダプターで WCF セキュリティについて理解 |Microsoft ドキュメント
+title: WCF LOB Adapter SDK で作成されたアダプターで WCF セキュリティの概要 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,21 +12,21 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: baf0c62c3d0c37c1f69cb944112ff832dade5ec4
-ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
+ms.openlocfilehash: 6b34be29b74b10d5b9768cff5bc40a26abe41dce
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "22224010"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65362721"
 ---
-# <a name="understand-wcf-security-on-the-adapter-created-with-the-wcf-lob-adapter-sdk"></a>WCF LOB Adapter SDK で作成されたアダプターで WCF のセキュリティを理解します。
-[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]拡張、[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]アーキテクチャのチャネルし、は、メッセージング インフラストラクチャとで提供される API を使用します。  WCF LOB アダプターが、ターゲット システムに接続を確立する必要があるし、そのために認証とその他のセキュリティ情報がターゲット システムの接続を確立するために必要なアダプターを構成する必要があります。  
+# <a name="understand-wcf-security-on-the-adapter-created-with-the-wcf-lob-adapter-sdk"></a>WCF LOB Adapter SDK で作成されたアダプターで WCF セキュリティを概要します。
+[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]拡張、[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]チャネルのアーキテクチャと、メッセージング インフラストラクチャとそれを提供する API に依存しています。  WCF LOB アダプターを対象のシステムへの接続を確立する必要があるし、は認証とターゲット システムに接続するために必要なその他のセキュリティ情報と、アダプターを構成するために必要なためです。  
   
- [!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)] 分散プログラミングのプラットフォームは、SOAP メッセージを移動できる多数の異なるノード、SOAP 中継ぎ局、ファイアウォール、および可能性のあるインターネット送信者から基幹業務システムからアダプターにおよび、クライアントにログオンに基づいています。 これは、アダプターと配置のシナリオに対するさまざまなセキュリティの脅威の数が発生する可能性があります。  
+ [!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)] 分散プログラミングのプラットフォームはアダプターに、クライアントへのログオンと基幹業務システムから多数の異なるノード、SOAP 中継ぎ局、ファイアウォール、および可能性のあるインターネットの途中で移動できる SOAP メッセージに基づいています。 これは、数、アダプターと展開シナリオに対するさまざまなセキュリティの脅威が発生する可能性があります。  
   
- セキュリティは、すべてのエンタープライズ アーキテクチャ ソリューションでの主要な役割を果たします。 機密性、整合性、認証、およびセキュリティの脅威からアダプターを保護するために、WCF のセキュリティ モデルで提供される承認機能を活用することができます。 これら 2 つのエンティティ間の通信を保護するには、アダプターと、ターゲット システムの間のメッセージ レベルのセキュリティとトランスポートについても考慮する必要があります。 場合でも、WCF は、豊富な一連の ws-* 仕様、これらの実装の詳細セキュリティ標準では、アダプターは、基幹業務システムによって提供される機能に依存します。  
+ セキュリティは、すべてのエンタープライズ アーキテクチャ ソリューションでの主要な役割を果たします。 機密性、整合性、認証、およびセキュリティの脅威からアダプターをセキュリティ保護するための WCF セキュリティ モデルで提供される承認機能を活用することができます。 トランスポートおよびこれら 2 つのエンティティ間の通信を保護するには、アダプターと、ターゲット システムの間のメッセージ レベルのセキュリティも考慮する必要があります。 場合でも、WCF は ws-の豊富なセットを提供します * の仕様、これらの実装の詳細セキュリティ標準では、アダプターは、基幹業務システムによって提供される機能に依存します。  
   
- 詳細については[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]、概要、概念、一般的なシナリオ、およびベスト プラクティスは、「」を参照を含むセキュリティ[Windows Communication Foundation セキュリティ](https://msdn.microsoft.com/library/ms732362.aspx)です。
+ 詳細については[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]、概要、概念、一般的なシナリオ、およびベスト プラクティスは、参照を含むセキュリティ[Windows Communication Foundation セキュリティ](https://msdn.microsoft.com/library/ms732362.aspx)します。
   
 ## <a name="see-also"></a>参照  
  [計画し、WCF LOB Adapter SDK を使用して、アダプターの設計](../../adapters-and-accelerators/wcf-lob-adapter-sdk/plan-and-design-an-adapter-using-the-wcf-lob-adapter-sdk.md)

@@ -1,5 +1,5 @@
 ---
-title: インターセプタ構成スキーマ |Microsoft ドキュメント
+title: インターセプタ構成スキーマ |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5e7c4c21582c74fb307d3ecbdaaa5cebd109b750
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6882c9b7699a6b06376ed0e3957b23193ddcb202
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22257658"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65331758"
 ---
 # <a name="interceptor-configuration-schema"></a>インターセプタ構成スキーマ
 このセクションには、共通のインターセプタ構成スキーマが示されています。  

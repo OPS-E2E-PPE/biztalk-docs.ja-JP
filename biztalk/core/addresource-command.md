@@ -1,5 +1,5 @@
 ---
-title: AddResource コマンド |Microsoft ドキュメント
+title: AddResource コマンド |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,45 +12,45 @@ caps.latest.revision: 33
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 875a087fa3afe7515aee2c406cbc47551bea1f4d
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: d5d8831cbac23343186eb4df9959378cb49fe279
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25964448"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65360202"
 ---
 # <a name="addresource-command"></a>AddResource コマンド
-このセクションの各トピックでは、AddResource コマンドの各種パラメーターについてのリファレンス情報を紹介しています。 このコマンドで使用されるパラメーターは、追加するアイテムの種類によって異なります。 成果物の種類の完全な一覧を取得するを使用して、 **ListTypes**コマンドを」の説明に従って[ListTypes コマンド](../core/listtypes-command.md)です。  
+このセクションのトピックでは、AddResource コマンドのパラメーターに関する参照情報を提供します。 このコマンドで使用するパラメーターを追加するアイテムの種類によって異なります。 成果物の種類の完全な一覧を取得する、 **ListTypes** 」の説明に従って、コマンド[ListTypes コマンド](../core/listtypes-command.md)します。  
   
- 次のコマンドを入力することによって、追加するアイテムの種類に応じたヘルプを参照できます。  
+ に特定の成果物の種類の追加のヘルプを取得するには、次のコマンドを入力します。  
   
- **BTSTask AddResource/Type:**\<*型名*\> **/しますか?**  
+ **BTSTask AddResource/Type:**\<*型名*\> **/でしょうか。**  
   
 > [!NOTE]
->  追加するアイテムのパス名 (あるいはファイル名) が極端に長いと、アイテムをアプリケーションに追加するときにエラーが発生する場合があります。 パスは 260 文字を超えることはできません。  
+>  追加するアイテムがあるファイル名を含む非常に長いパス名をアプリケーションにアイテムを追加する操作が表示される場合があります。 パスは 260 文字を超えることはできません。  
 >   
->  追加操作に失敗した場合、その操作中に行われたすべてのアクションがロールバックされます。ただし、このコマンドでグローバル アセンブリ キャッシュに追加されたアセンブリは削除されず、そのまま残ってしまいます。また、Windows レジストリにエントリが書き込まれた場合も、エントリは削除されません。  
+>  追加操作が失敗した場合、操作中に実行されたすべてのアクションはロールバックする点を除いて、このコマンドでは、追加された場合にすべてのエントリが加えられた場合、エントリは Windows レジストリから削除されませんアセンブリはグローバル アセンブリ キャッシュから削除されません。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [AddResource コマンド: BizTalk アセンブリ](../core/addresource-command-biztalk-assembly.md)  
+-   [AddResource コマンド:BizTalk アセンブリ](../core/addresource-command-biztalk-assembly.md)  
   
--   [AddResource コマンド: BizTalk バインディング](../core/addresource-command-biztalk-binding.md)  
+-   [AddResource コマンド:BizTalk バインド](../core/addresource-command-biztalk-binding.md)  
   
 -   [AddResource コマンド: .NET アセンブリ](../core/addresource-command-net-assembly.md)  
   
--   [AddResource コマンド: BAM アイテム](../core/addresource-command-bam-artifact.md)  
+-   [AddResource コマンド:BAM アイテム](../core/addresource-command-bam-artifact.md)  
   
--   [AddResource コマンド: 証明書](../core/addresource-command-certificate.md)  
+-   [AddResource コマンド:証明書](../core/addresource-command-certificate.md)  
   
--   [AddResource コマンド: COM コンポーネント](../core/addresource-command-com-component.md)  
+-   [AddResource コマンド:COM コンポーネント](../core/addresource-command-com-component.md)  
   
--   [AddResource コマンド: ファイル](../core/addresource-command-file.md)  
+-   [AddResource コマンド:ファイル](../core/addresource-command-file.md)  
   
--   [AddResource コマンド: 前処理スクリプト](../core/addresource-command-preprocessing-script.md)  
+-   [AddResource コマンド:処理前のスクリプト](../core/addresource-command-preprocessing-script.md)  
   
--   [AddResource コマンド: 処理後のスクリプト](../core/addresource-command-postprocessing-script.md)  
+-   [AddResource コマンド:処理後のスクリプト](../core/addresource-command-postprocessing-script.md)  
   
--   [AddResource コマンド: ポリシー](../core/addresource-command-policy.md)  
+-   [AddResource コマンド:ポリシー](../core/addresource-command-policy.md)  
   
--   [AddResource コマンド: 仮想ディレクトリ](../core/addresource-command-virtual-directory.md)
+-   [AddResource コマンド:仮想ディレクトリ](../core/addresource-command-virtual-directory.md)

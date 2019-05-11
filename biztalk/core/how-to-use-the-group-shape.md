@@ -1,5 +1,5 @@
 ---
-title: グループ図形を使用する方法 |Microsoft ドキュメント
+title: グループ図形を使用する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -19,21 +19,21 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 268241f336b4252ab8baf1c9dc101d41a7eb1893
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7c4320646cbc42fd4539760138eee16d044219ff
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22256426"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65333326"
 ---
 # <a name="how-to-use-the-group-shape"></a>グループ図形を使用する方法
 ![](../core/media/ebiz-orch-group.gif "ebiz_orch_group")  
 グループ図形  
   
-## <a name="annotations-and-placeholders"></a>注釈とプレースホルダー  
- 使用することができます、**グループ**図形を追加するには、まだ機能のプレース ホルダーとして使用するか、内に行われるアクションについての注釈にします。  
+## <a name="annotations-and-placeholders"></a>注釈とプレース ホルダー  
+ 使用することができます、**グループ**または図形を追加するには、まだ機能のプレース ホルダーとして使用できます内に行われるアクションについての注釈にします。  
   
- 名前プロパティに、**グループ**図形は最大 512 文字を使用できます。 注釈を入力することができます、**名前**プロパティと、図形が折りたたまれている場合、名前全体が表示されます。 図形が展開されているときは、名前が切り詰められて表示されます。  
+ Name プロパティを**グループ**図形は、最大 512 文字を使用できます。 注釈を入力することができます、**名前**プロパティと、図形を折りたたむと、全体の名前が表示されます。 図形を展開すると、名前は切り捨てられます。  
   
 ## <a name="see-also"></a>参照  
- [フロー制御図形を構成します。](../core/configuring-flow-control-shapes.md)
+ [フロー制御図形の構成](../core/configuring-flow-control-shapes.md)

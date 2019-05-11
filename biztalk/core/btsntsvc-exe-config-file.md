@@ -1,5 +1,5 @@
 ---
-title: BTSNTSvc.exe.config ファイル |Microsoft ドキュメント
+title: BTSNTSvc.exe.config ファイル |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,21 +12,21 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a7fae2fc49487597380e6c5d04a946b1078daeeb
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 1c8347f7027371cd77c5b712ed3e12380e30bc34
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26004819"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65357998"
 ---
-# <a name="btsntsvcexeconfig-file"></a>BTSNTSvc.exe.config ファイル
-退避プロパティとその既定値は、[!INCLUDE[btsSettingsDashboard](../includes/btssettingsdashboard-md.md)] を使用するか、または XML として BizTalk 構成ファイル (BTSNTSvc.exe.config または BTSNTSvc64.exe.config) で構成可能です。 BizTalk 構成ファイルの値が先に適用されます。 次に、[!INCLUDE[btsSettingsDashboard](../includes/btssettingsdashboard-md.md)] の設定が適用されます。 退避プロパティは、オーケストレーションを含んでいるすべてのホスト インスタンスの開始時に読み取られます。  
+# <a name="btsntsvcexeconfig-file"></a>BTSNTSvc.exe.config File
+退避プロパティとその既定値は構成可能で[!INCLUDE[btsSettingsDashboard](../includes/btssettingsdashboard-md.md)]または BizTalk 構成ファイル (BTSNTSvc.exe.config または BTSNTSvc64.exe.config) で XML として。 BizTalk 構成ファイルの値が先に適用されます。 次に、[!INCLUDE[btsSettingsDashboard](../includes/btssettingsdashboard-md.md)] の設定が適用されます。 退避プロパティは、オーケストレーションを含んでいるすべてのホスト インスタンスの開始時に読み取られます。  
   
- このトピックでは、BizTalk 構成ファイル (BTSNTSvc.exe.config または BTSNTSvc64.exe.config) について説明します。 多くの退避プロパティはリストされません。 これらのプロパティおよび既定値は、構成ファイルで明示的に指定されていない場合でも常に適用されています。  
+ このトピックでは、BizTalk 構成ファイル (BTSNTSvc.exe.config または BTSNTSvc64.exe.config) について説明します。 多くの退避プロパティは表示されません。 これらのプロパティおよび既定値は、構成ファイルで明示的に指定されていない場合でも常に適用されています。  
   
- 既定値を変更するには、構成ファイルに明示的に追加する必要があります。 既定の退避動作を変更する方法については、次を参照してください。[オーケストレーション制限の設定の変更方法](../core/how-to-modify-orchestration-throttling-settings.md)です。 オーケストレーション メモリの制限については、次を参照してください。[オーケストレーション メモリ制限の設定の変更方法](../core/how-to-modify-orchestration-memory-throttling-settings.md)です。  
+ 既定値を変更するにする必要があります明示的に追加、構成ファイルをします。 既定の退避動作を変更する方法については、次を参照してください。[オーケストレーション制限の設定の変更方法](../core/how-to-modify-orchestration-throttling-settings.md)します。 オーケストレーション メモリ制限については、次を参照してください。[オーケストレーション メモリ制限の設定の変更方法](../core/how-to-modify-orchestration-memory-throttling-settings.md)します。  
   
- BTSNTSvc.exe.config ファイルの内容を以下に示します。 このファイルは常に BTSNTSvc.exe ファイル、通常は C:\Program files \microsoft BizTalk Server と同じディレクトリにあります。  
+ BTSNTSvc.exe.config ファイルの内容を次に示します。 このファイルは常に BTSNTSvc.exe ファイル、通常は C:\Program files \microsoft BizTalk Server と同じディレクトリ内にあります。  
   
 ```  
 <?xml version="1.0" ?>  

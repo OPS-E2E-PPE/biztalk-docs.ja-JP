@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1f7bf6026ebd9bf506dd84b1a8c309760c38f8d6
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a40ea3ecad02e248d9c4f993be53c51434751b56
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36975459"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65368533"
 ---
 # <a name="receive-query-notifications-after-a-receive-location-breakdown-in-sql-using-biztalk-server"></a>BizTalk Server を使用した SQL でクエリ通知した後、受信場所のブレーク ダウンを受け取る
 EMPLOYEE テーブルに変更されたときに、データベース変更通知のメッセージを受信する BizTalk アプリケーションが存在するシナリオを検討してください。 一部として、受信場所が構成されている場合、BizTalk アプリケーションが分割し同時に EMPLOYEE テーブルにレコードが追加される、最近追加されたレコードの通知が届きません。 わからない、受信場所が再度使用可能です。 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]バインドのプロパティを公開します**NotifyOnListenerStart**、受信場所が回復した通知を受け取る構成できます。 次の値を指定することができます、 **NotifyOnListenerStart**プロパティをバインドします。  

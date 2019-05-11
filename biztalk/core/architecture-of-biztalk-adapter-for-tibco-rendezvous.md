@@ -13,28 +13,28 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 28845891181b3f71b31cf4d4dc3f8a20040bb205
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2d368e27dd0652753d223fa15b7c82d8ddbbe8b9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37011995"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65359012"
 ---
 # <a name="architecture-of-the-tibco-rendezvous-adapter"></a>TIBCO Rendezvous アダプターのアーキテクチャ
 
 ## <a name="overview"></a>概要
-Microsoft BizTalk Adapter for TIBCO Rendezvous は、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] と TIBCO Rendezvous 間に双方向の接続を提供します。 このアダプターは、TIBCO Rendezvous API と BizTalk Adapter Framework API の両方を使用して、緊密な統合を提供します。  
+Microsoft BizTalk Adapter for TIBCO Rendezvous 間の双方向接続を提供する[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]と TIBCO Rendezvous します。 このアダプターは、TIBCO Rendezvous API と BizTalk Adapter Framework API の両方を使用して、緊密な統合を提供します。  
   
- TIBCO Rendezvous は、エンタープライズ アプリケーション統合 (EAI) のメッセージ バスを提供するソフトウェア製品です。 TIBCO には、C、C++、Java、Visual Basic および Microsoft .NET Framework 用のメッセージング API が用意されており、Microsoft Office Excel ワークシートおよびその他の任意のアプリケーションでデータ フィードを受信できます。  
+ TIBCO Rendezvous は、エンタープライズ アプリケーション統合 (EAI) のメッセージ バスを提供するソフトウェア製品です。 TIBCO には、C、C++、Java、Visual Basic および Microsoft .NET Framework を受信し、Microsoft Office Excel ワークシートにデータ フィードを任意の他のアプリケーションでのメッセージング Api が提供されます。  
   
 ## <a name="message-passing"></a>メッセージの受け渡し  
  メッセージを渡す概念はとても簡単です。  
   
-- メッセージには、ピリオドで区切られた要素で構成される 1 つのサブジェクトがあります。 メッセージは 1 つの Rendezous デーモンに送信されます (ただし、最終的に他の複数のデーモンに配信される場合があります)。  
+- メッセージには、ピリオドで区切られた要素で構成される 1 つのサブジェクトがあります。 (ただし、最終的に他の複数のデーモンにブロードキャストする場合があります) は、1 つの Rendezvous デーモンに送信されます。  
   
-- リスナーは、待機しているサブジェクトを (基本的なワイルドカード機能を使用して) デーモンに通知し、2 つのデーモンが相互に "接続" されている場合または実際には同一のデーモンである場合は、一致するサブジェクトを持つメッセージがリスナーに配信されます。 詳細については、内のメッセージを参照してください。[で BizTalk Adapter for TIBCO Rendezvous メッセージ](../core/messages-in-biztalk-adapter-for-tibco-rendezvous.md)します。  
+- リスナーを発表しているサブジェクトを (基本的なワイルドカード機能) デーモンに関心のあるとを一致するサブジェクトを持つメッセージは、2 つのデーモン、互いに '接続' または同一のデーモンでは実際に配信されます。 詳細については、内のメッセージを参照してください。[で BizTalk Adapter for TIBCO Rendezvous メッセージ](../core/messages-in-biztalk-adapter-for-tibco-rendezvous.md)します。  
   
-  次の図は、BizTalk Adapter for TIBCO Rendezvous のアーキテクチャを示しています。  
+  次の図は、BizTalk Adapter for TIBCO Rendezvous のアーキテクチャを示します。  
   
   ![](../core/media/tibcorend-arch.gif "TibcoRend_Arch")  
   

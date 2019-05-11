@@ -12,12 +12,12 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0930baa5ec89c500f15a5ae7a88ce36e71785c96
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2a5ff4da00e0ba5c5012b6b13eb8bc5748584f91
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37013339"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65369421"
 ---
 # <a name="generate-a-wcf-client-or-wcf-service-contract-for-sql-server-artifacts"></a>SQL Server のアイテムの WCF クライアントまたは WCF サービス コントラクトを生成します。
 使用することができます、 [!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)] WCF クライアント クラスを生成する SQL Server のアイテムを選択した操作を対象としました。 WCF クライアント クラスを生成するのに、ServiceModel メタデータ ユーティリティ ツール (svcutil.exe) を使用することもできます。ただし、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]標準の Microsoft Windows インターフェイスから ServiceModel メタデータ ユーティリティ ツールの機能を公開します。 Svcutil.exe ツールを使用できない参照および検索の機能を提供し、SQL Server データベースに接続するときに選択したバインドのプロパティに基づいて構成ファイルを生成します。  
@@ -74,7 +74,7 @@ ms.locfileid: "37013339"
 ## <a name="generating-a-wcf-client-class-by-using-svcutilexe"></a>Svcutil.exe を使用して WCF クライアント クラスを生成します。  
  Svcutil.exe を使用して、アプリケーションの WCF クライアント クラスを生成することができます。 Svcutil.exe を使用すればを構成する必要があります、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]します。  
   
- Svcutil.exe の既定のファイル名を持つ出力ファイルで、WCF クライアント クラスを生成する**output.cs**します。 このファイルを手動で含める必要があります、[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]プロジェクト。 Svcutil.exe の詳細については、[ServiceModel メタデータ ユーティリティ ツール (Svcutil.exe)](https://msdn.microsoft.com/library/aa347733.aspx)を参照してください。
+ Svcutil.exe の既定のファイル名を持つ出力ファイルで、WCF クライアント クラスを生成する**output.cs**します。 このファイルを手動で含める必要があります、[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]プロジェクト。 Svcutil.exe の詳細については、次を参照してください。 [ServiceModel メタデータ ユーティリティ ツール (Svcutil.exe)](https://msdn.microsoft.com/library/aa347733.aspx)します。
   
 ## <a name="see-also"></a>参照  
 [WCF サービス モデルを使用して SQL アプリケーションを開発します。](../../adapters-and-accelerators/adapter-sql/develop-sql-applications-using-the-wcf-service-model.md)

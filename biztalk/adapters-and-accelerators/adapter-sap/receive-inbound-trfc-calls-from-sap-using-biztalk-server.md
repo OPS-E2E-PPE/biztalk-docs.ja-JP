@@ -15,12 +15,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 49d83d8710b36d0900c2d7b3a6b02c7d0a389ba4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d98d1f38e45109649d64758b74c0ae5fc1489e9c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36978619"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373038"
 ---
 # <a name="receive-inbound-trfc-calls-from-sap-using-biztalk-server"></a>BizTalk Server を使用して SAP から受信 tRFC 呼び出しを受信します。
 TRFC サーバーの呼び出しは、トランザクションの RFC サーバー呼び出しです。 トランザクションのコンテキストでの RFC の受信に必要なオーケストレーションは、SAP システムから送信されたすべての他の受信 RFC を受信するオーケストレーションに似ています。 ただし、Rfc がトランザクションのコンテキストで受信したかどうかを確認する特定の追加タスクを実行する必要があります。 受信 RFC を使用して SAP システムから受信の詳細については、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]を参照してください[BizTalk Server を使用して SAP からの受信 RFC 呼び出しの受信](../../adapters-and-accelerators/adapter-sap/receive-inbound-rfc-calls-from-sap-using-biztalk-server.md)します。 方法の詳細については[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]、SAP システムからの受信 tRFC 呼び出しの受信をサポートを参照してください[SAP の Trfc に対する操作](../../adapters-and-accelerators/adapter-sap/operations-on-trfcs-in-sap.md)します。  
@@ -35,7 +35,7 @@ TRFC サーバーの呼び出しは、トランザクションの RFC サーバ�
    Data Source=<myServerAddress>;Initial Catalog=<myDataBase>;User Id=<myUsername>;Password=<myPassword>;  
    ```  
   
-    バインディングのプロパティとその設定方法の詳細については、[mySAP Business Suite バインド プロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md)を参照してください。  
+    バインディングのプロパティとその設定方法の詳細については、次を参照してください。 [mySAP Business Suite バインド プロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md)します。  
   
    > [!IMPORTANT]
    >  [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]しばらくお待ちくださいこの処理には、数分かかることがあります SQL スクリプト、SapAdapter-DbScript-Install.sql、SQL server データベースおよびデータベース オブジェクトを作成する SQL Server の管理者によって実行する必要があります。 スクリプトは通常にインストールされて*\<インストール ドライブ\>: Program FilesMicrosoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]* します。  

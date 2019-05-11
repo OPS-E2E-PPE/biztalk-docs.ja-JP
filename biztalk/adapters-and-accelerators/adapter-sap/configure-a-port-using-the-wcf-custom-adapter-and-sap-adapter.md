@@ -13,12 +13,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9baf552efc102d13b83b28f5c5b0c473147b2812
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 304fa647f0b50549c6f5779f2579d8d2f473c9ae
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36982947"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373857"
 ---
 # <a name="configure-a-port-using-the-wcf-custom-adapter-and-sap-adapter"></a>Wcf-custom アダプターと SAP アダプターを使用してポートを構成します。
 このトピックでは構成 Wcf-custom 送信ポートと受信ポートを使用して SAP システムでの送信および受信の操作を実行する方法を手順については、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]します。  
@@ -43,7 +43,7 @@ WCF カスタムを構成するのには、次の手順送信ポートを使用�
   
 7. **Wcf-custom トランスポートのプロパティ** ダイアログ ボックスで、次の操作を行います。  
   
-   1. をクリックして、**全般** タブで、し、**アドレス (URI)** フィールドに、SAP システムの接続 URI を指定します。 接続 URI の詳細については、[SAP システム接続 URI の作成](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md)を参照してください。  
+   1. をクリックして、**全般** タブで、し、**アドレス (URI)** フィールドに、SAP システムの接続 URI を指定します。 接続 URI の詳細については、次を参照してください。 [SAP システム接続 URI の作成](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md)です。  
   
    2. **全般** タブで、**アクション**テキスト ボックスに、操作のアクションを入力します。 参照してください[メッセージとメッセージ スキーマ](messages-and-message-schemas-for-biztalk-adapter-for-mysap-business-suite.md)の各操作のアクションの一覧。 たとえばに、RFC_CUSTOMER_GET を呼び出すアクションは次のようになります。  
   
@@ -51,7 +51,7 @@ WCF カスタムを構成するのには、次の手順送信ポートを使用�
       http://Microsoft.LobServices.Sap/2007/03/Rfc/RFC_CUSTOMER_GET  
       ```  
   
-   3. をクリックして、**バインド** タブとの間、**バインドの種類**ドロップダウン リストで、 **sapBinding**します。 によって公開されるさまざまなバインドのプロパティを指定することができます、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]します。 バインド プロパティの詳細については、[mySAP Business Suite のバインドのプロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md)を参照してください。  
+   3. をクリックして、**バインド** タブとの間、**バインドの種類**ドロップダウン リストで、 **sapBinding**します。 によって公開されるさまざまなバインドのプロパティを指定することができます、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]します。 バインド プロパティの詳細については、次を参照してください。 [mySAP Business Suite のバインドのプロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md)します。  
   
    4. をクリックして、**資格情報**タブし、次のいずれかの操作を行います。  
   
@@ -59,7 +59,7 @@ WCF カスタムを構成するのには、次の手順送信ポートを使用�
   
       -   選択、**使用してシングル サインオン**オプション、および SSO 関連アプリケーションを指定します。  
   
-           BizTalk Server に関するセキュリティの詳細については、[SAP アダプターと BizTalk Server でセキュリティ](../../adapters-and-accelerators/adapter-sap/security-with-the-sap-adapter-and-biztalk-server.md)を参照してください。
+           BizTalk Server に関するセキュリティの詳細については、次を参照してください。 [SAP アダプターと BizTalk Server でセキュリティ](../../adapters-and-accelerators/adapter-sap/security-with-the-sap-adapter-and-biztalk-server.md)します。
   
            戻る、**送信ポートのプロパティ**ダイアログ ボックスで、をクリックして **[ok]** します。  
   
@@ -98,9 +98,9 @@ WCF カスタムを構成するのには、次の手順を使用して SAP シ�
   
 8. **Wcf-custom トランスポートのプロパティ** ダイアログ ボックスで、次の操作を行います。  
   
-   1.  をクリックして、**全般** タブで、し、**アドレス (URI)** フィールドに、SAP システムの接続 URI を指定します。 接続 URI の詳細については、[SAP システム接続 URI の作成](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md)を参照してください。  
+   1.  をクリックして、**全般** タブで、し、**アドレス (URI)** フィールドに、SAP システムの接続 URI を指定します。 接続 URI の詳細については、次を参照してください。 [SAP システム接続 URI の作成](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md)です。  
   
-   2.  をクリックして、**バインド** タブとの間、**バインドの種類**ドロップダウン リストで、 **sapBinding**します。 バインド プロパティの詳細については、[mySAP Business Suite のバインドのプロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md)を参照してください。  
+   2.  をクリックして、**バインド** タブとの間、**バインドの種類**ドロップダウン リストで、 **sapBinding**します。 バインド プロパティの詳細については、次を参照してください。 [mySAP Business Suite のバインドのプロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md)します。  
   
    3.  をクリックして、**他**タブをクリックし、次のいずれかの操作を行います。  
   
@@ -108,7 +108,7 @@ WCF カスタムを構成するのには、次の手順を使用して SAP シ�
   
        -   選択**関連アプリケーションから資格情報を Get**オプション、および関連アプリケーションを指定します。  
   
-            BizTalk Server に関するセキュリティの詳細については、[SAP アダプターと BizTalk Server でセキュリティ](../../adapters-and-accelerators/adapter-sap/security-with-the-sap-adapter-and-biztalk-server.md)を参照してください。
+            BizTalk Server に関するセキュリティの詳細については、次を参照してください。 [SAP アダプターと BizTalk Server でセキュリティ](../../adapters-and-accelerators/adapter-sap/security-with-the-sap-adapter-and-biztalk-server.md)します。
   
             をクリックして**OK**に戻る、**受信場所のプロパティ** ダイアログ ボックス。  
   

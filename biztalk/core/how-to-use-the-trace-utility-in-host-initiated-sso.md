@@ -1,5 +1,5 @@
 ---
-title: 側開始 SSO のホストで、トレース ユーティリティを使用する方法 |Microsoft ドキュメント
+title: 側開始 SSO のホストで Trace ユーティリティを使用する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,40 +15,40 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ebb2003cc6091e3f14bd863902e03649d9005722
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: ed0b0a77881cba6de26454f51c6f6f8e21103e90
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25973456"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65333170"
 ---
-# <a name="how-to-use-the-trace-utility-in-host-initiated-sso"></a>側開始 SSO のホストで、トレース ユーティリティを使用する方法
-トラブルシューティングの主要な方法はトレースを行うことです。  
+# <a name="how-to-use-the-trace-utility-in-host-initiated-sso"></a>側開始 SSO のホストで Trace ユーティリティを使用する方法
+トラブルシューティングの主要な方法をトレースしています。  
   
 ## <a name="tracing"></a>追跡  
- SSO でトレースを有効にするには Trace コマンド ライン ユーティリティを使用します。  
+ SSO でトレースを有効にするのにには、トレースのコマンド ライン ユーティリティを使用します。  
   
 > [!NOTE]
->  Trace コマンドが動作するためには、tracelog.exe ファイルが次のディレクトリに存在する必要があります。  
+>  トレース コマンドが動作する次のディレクトリにファイル tracelog.exe 必要があります。  
 >   
->  \<*ドライブ*\>: \program files \common files \enterprise シングル サインオン  
+>  \<*drive*\>:\Program Files\Common Files\Enterprise Single Sign-On  
   
 > [!NOTE]
->  このファイルは、次の場所からダウンロードできます: [http://go.microsoft.com/fwlink/?LinkId=59534](http://go.microsoft.com/fwlink/?LinkId=59534)  
+>  このファイルは、次の場所からダウンロードできます。 [http://go.microsoft.com/fwlink/?LinkId=59534](http://go.microsoft.com/fwlink/?LinkId=59534)  
   
-#### <a name="to-use-the-trace-utility"></a>Trace ユーティリティを使用するには  
+#### <a name="to-use-the-trace-utility"></a>トレース ユーティリティを使用するには  
   
 1.  **[スタート]** メニューの **[ファイル名を指定して実行]** をクリックします。  
   
-2.  **実行** ダイアログ ボックスで、「 **cmd**、順にクリック**OK**です。  
+2.  **実行**ダイアログ ボックスに「 **cmd**、順にクリックします**OK**します。  
   
-3.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定値は\<ドライブ\>: \program files \common files \enterprise シングル サインオンします。  
+3.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定値は\<ドライブ\>: \Program Files\Common \enterprise シングル サインオンします。  
   
-4.  型**Trace – start – 高**高 に、トレース レベルを設定し、トレースを開始します。  
+4.  型**Trace – start – high**高 に、トレース レベルを設定し、トレースを開始します。  
   
-5.  ホスト側開始 SSO でシナリオを実行します。  
+5.  側開始 SSO のホストでシナリオを実行します。  
   
-6.  型**Trace – 停止**トレースを終了します。 .bin ファイルが上記のディレクトリに生成されます。このファイルは、分析のためにマイクロソフトに送信することができます。  
+6.  型**Trace – 停止**トレースを終了します。 ディレクトリの上、分析のため Microsoft に送信することができますに .bin ファイルが生成されます。  
   
 ## <a name="see-also"></a>参照  
  [ホスト側開始 SSO](../core/host-initiated-sso.md)

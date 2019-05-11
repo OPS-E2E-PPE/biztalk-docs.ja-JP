@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 121b425abe1c7c34ba75e535799770031b931525
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b36c80de06955643e0aff9b2261e6c353cff1c37
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36997331"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65368499"
 ---
 # <a name="overview-of-the-wcf-service-model-with-the-sql-adapter"></a>SQL アダプターを使用した WCF サービス モデルの概要
 [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)] WCF サービスとしての SQL Server の操作を公開します。 、ストアド プロシージャを呼び出す例については、SQL Server のアイテムに対して操作を実行するには、さらに、SQL Server 上の操作を実行すると、アダプターでの操作を呼び出します。 そのため、コードは、アダプターによって提示される WCF サービスのクライアントとして機能します。  
@@ -31,7 +31,7 @@ ms.locfileid: "36997331"
   
 #### <a name="to-invoke-operations-on-the-sql-adapter"></a>SQL アダプターの操作を呼び出す  
   
-1. WCF クライアント クラスとヘルパー コードを生成します。 使用して、 [!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]WCF クライアント クラスを生成する作業する SQL Server データベースのアイテムを対象としました。 WCF クライアントを生成する方法の詳細については、[SQL Server のアイテムの WCF クライアントまたは WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-sql/generate-a-wcf-client-or-wcf-service-contract-for-sql-server-artifacts.md)を参照してください。  
+1. WCF クライアント クラスとヘルパー コードを生成します。 使用して、 [!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]WCF クライアント クラスを生成する作業する SQL Server データベースのアイテムを対象としました。 WCF クライアントを生成する方法の詳細については、次を参照してください。 [SQL Server のアイテムの WCF クライアントまたは WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-sql/generate-a-wcf-client-or-wcf-service-contract-for-sql-server-artifacts.md)します。  
   
 2. WCF クライアントのインスタンスを作成し、WCF クライアントを構成します。 WCF クライアントを構成するには、バインドと、クライアントが使用するエンドポイント アドレス (URI の接続) を指定する必要があります。 コードで強制的に、または構成で宣言的に、これを行うことができます。 次のコード作成、WCF クライアントを対象とする、**選択**操作、**従業員**SQL Server データベースのテーブル。 また、SQL Server データベースの資格情報を設定します。 WCF クライアントは、構成から初期化されます。  
   
@@ -43,7 +43,7 @@ ms.locfileid: "36997331"
    ```  
   
    > [!NOTE]
-   >  コードでクライアント バインディングとエンドポイント アドレスを指定するか、app.config 構成ファイルで宣言します。 上記のコード スニペットは、後者は使用します。 いずれかのアプローチを使用する方法の詳細については、[クライアント バインディングを構成、SQL アダプターの](../../adapters-and-accelerators/adapter-sql/configure-a-client-binding-for-the-sql-adapter.md)を参照してください。  
+   >  コードでクライアント バインディングとエンドポイント アドレスを指定するか、app.config 構成ファイルで宣言します。 上記のコード スニペットは、後者は使用します。 いずれかのアプローチを使用する方法の詳細については、次を参照してください。[クライアント バインディングを構成、SQL アダプターの](../../adapters-and-accelerators/adapter-sql/configure-a-client-binding-for-the-sql-adapter.md)します。  
   
 3. WCF クライアントを開きます。  
   

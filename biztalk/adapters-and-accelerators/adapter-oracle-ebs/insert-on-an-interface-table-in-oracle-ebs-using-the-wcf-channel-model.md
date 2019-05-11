@@ -1,5 +1,5 @@
 ---
-title: WCF チャネル モデルを使用して Oracle E-business Suite のインターフェイス テーブルに対して挿入操作を実行 |Microsoft ドキュメント
+title: WCF チャネル モデルを使用して Oracle E-business Suite でのインターフェイス テーブルで挿入操作の実行 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,23 +12,23 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 703b00adeb373fe66c4a96c324f13f9c3c5ec655
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c2f52284e3d4fb08c7dafae9f1a761346fd56351
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22216738"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65375480"
 ---
-# <a name="run-an-insert-operation-on-an-interface-table-in-oracle-e-business-suite-using-the-wcf-channel-model"></a>WCF チャネル モデルを使用して Oracle E-business suite のインターフェイス テーブルに対して挿入操作を実行します。
-[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] Oracle E-business Suite のインターフェイス テーブルに対する Insert、Select、Update、および Delete の操作のセットを検出します。 これらの操作を使用することができますを実行して単純な Insert、Select、Update、Delete ステートメントで修飾して、Where 句は、対象のインターフェイス テーブルにします。 このトピックでは、WCF チャネル モデルを使用してインターフェイス テーブルに対する挿入操作を実行する方法について説明します。  
+# <a name="run-an-insert-operation-on-an-interface-table-in-oracle-e-business-suite-using-the-wcf-channel-model"></a>WCF チャネル モデルを使用して Oracle E-business Suite でのインターフェイス テーブルで挿入操作を実行します。
+[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] Oracle E-business Suite のインターフェイス テーブルに対する Insert、Select、Update、および削除の操作のセットを検出します。 これらの操作を使用すると、実行の単純な Insert、Select、Update、および Delete ステートメントで Where 修飾対象のインターフェイス テーブルで句。 このトピックでは、WCF チャネル モデルを使用して、インターフェイス テーブルに対する挿入操作を実行する方法について説明します。  
   
- アダプターがこれらの操作をサポートする方法の詳細については、次を参照してください。[インターフェイス テーブルとのインターフェイス ビューで操作](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-interface-tables-and-interface-views.md)です。 WCF チャネル モデルを使用して Oracle E-business Suite での操作を実行する方法に関する詳細については、次を参照してください。 [Oracle E-business Suite アダプターで WCF チャネル モデルの概要](../../adapters-and-accelerators/adapter-oracle-ebs/overview-of-the-wcf-channel-model-with-the-oracle-e-business-suite-adapter.md)です。  
+ アダプターがこれらの操作をサポートする方法の詳細については、次を参照してください。[インターフェイス テーブルとインターフェイス ビューで操作](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-interface-tables-and-interface-views.md)します。 WCF チャネル モデルを使用して Oracle E-business Suite での操作を実行する方法の詳細については、次を参照してください。 [Oracle E-business Suite アダプターを使用した WCF チャネル モデルの概要](../../adapters-and-accelerators/adapter-oracle-ebs/overview-of-the-wcf-channel-model-with-the-oracle-e-business-suite-adapter.md)します。  
   
 ## <a name="about-the-examples-used-in-this-topic"></a>このトピックで使用する例について  
- このトピックの例では、MS_SAMPLE_EMPLOYEE インターフェイス テーブルでの操作を実行します。 サンプルに用意されているスクリプトを実行して、テーブルが作成されます。 サンプルの詳細については、次を参照してください。 [Oracle EBS アダプター用のサンプル](../../adapters-and-accelerators/adapter-oracle-ebs/samples-for-the-oracle-ebs-adapter.md)です。 サンプルは、 **InsertOperation**、これは、このトピックの内容に基づいても付属、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]サンプルです。  
+ このトピックの例では、MS_SAMPLE_EMPLOYEE インターフェイス テーブルの操作を実行します。 サンプルに付属のスクリプトを実行して、テーブルが作成されます。 サンプルの詳細については、次を参照してください。 [Oracle EBS アダプター用のサンプル](../../adapters-and-accelerators/adapter-oracle-ebs/samples-for-the-oracle-ebs-adapter.md)します。 サンプルについては、 **InsertOperation**、これは、このトピックに基づいてがで提供されていることも、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]サンプル。  
   
 ## <a name="the-insert-message"></a>挿入メッセージ  
- WCF チャネル モデルを使用して Oracle E-business Suite での操作を実行するには、操作に固有の要求メッセージが必要です。 MS_SAMPLE_EMPLOYEE インターフェイス テーブルに対する挿入操作を実行する要求メッセージには、次のようになります。  
+ WCF チャネル モデルを使用して Oracle E-business Suite での操作を実行するには、操作に固有の要求メッセージが必要です。 MS_SAMPLE_EMPLOYEE インターフェイス テーブルに対して挿入操作を実行する要求メッセージには、次のようになります。  
   
 ```  
 <Insert xmlns="http://schemas.microsoft.com/OracleEBS/2008/05/InterfaceTables/FND/APPS/MS_SAMPLE_EMPLOYEE">  
@@ -53,16 +53,16 @@ Designation = Manager
 Salary = 500000  
 ```  
   
- 例: InsertRequest.xml ファイルにメッセージをコピーする必要があります。 このファイルは、Oracle E-business Suite を使用する要求メッセージを送信するこの例では使用、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]です。 テーブルに対する操作のメッセージ スキーマの詳細については、次を参照してください。 [Insert、Update、Delete、および選択操作のメッセージ スキーマを](../../adapters-and-accelerators/adapter-oracle-ebs/message-schemas-for-insert-update-delete-and-select-operations.md)です。  
+ メッセージは、InsertRequest.xml など、ファイルをコピーする必要があります。 Oracle E-business Suite を使用する要求メッセージを送信するこの例ではこのファイルが使用される、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]します。 テーブルに対する操作のメッセージ スキーマの詳細については、次を参照してください。 [Insert、Update、Delete、および選択操作のメッセージ スキーマ](../../adapters-and-accelerators/adapter-oracle-ebs/message-schemas-for-insert-update-delete-and-select-operations.md)します。  
   
-## <a name="creating-a-wcf-channel-application"></a>WCF チャネル アプリケーションを作成します。  
+## <a name="creating-a-wcf-channel-application"></a>WCF チャネル アプリケーションの作成  
  このセクションでは、MS_SAMPLE_EMPLOYEE インターフェイス テーブルに対して挿入操作を実行する WCF チャネル アプリケーションを作成する方法について説明します。  
   
 #### <a name="to-create-a-wcf-channel-application-for-inserting-records-into-the-table"></a>テーブルにレコードを挿入するための WCF チャネル アプリケーションを作成するには  
   
 1.  Visual Studio で Visual c# プロジェクトを作成します。 このトピックでは、コンソール アプリケーションを作成します。  
   
-2.  ソリューション エクスプ ローラーへの参照を追加`Microsoft.Adapters.OracleEBS`、 `Microsoft.ServiceModel.Channels`、 `System.ServiceModel`、および`System.Runtime.Serialization`です。  
+2.  ソリューション エクスプ ローラーへの参照を追加`Microsoft.Adapters.OracleEBS`、 `Microsoft.ServiceModel.Channels`、 `System.ServiceModel`、および`System.Runtime.Serialization`します。  
   
 3.  Program.cs ファイルを開き、次の名前空間を追加します。  
   
@@ -76,7 +76,7 @@ Salary = 500000
   
     -   `System.Xml`  
   
-4.  バインドとエンドポイントを作成します。  
+4.  バインディングとエンドポイントを作成します。  
   
     ```  
     OracleEBSBinding binding = new OracleEBSBinding();  
@@ -84,7 +84,7 @@ Salary = 500000
   
     ```  
   
-5.  インターフェイス テーブルに対する操作を実行しているため、アプリケーションのコンテキストを設定する必要があります。 この例では、アプリケーションのコンテキストを設定するを指定する、 **OracleUserName**、 **OraclePassword**、および**OracleEBSResponsibilityName**プロパティをバインドします。 アプリケーション コンテキストの詳細については、次を参照してください。[アプリケーション コンテキストの設定](../../adapters-and-accelerators/adapter-oracle-ebs/set-application-context.md)です。  
+5.  インターフェイス テーブルで操作を実行しているため、アプリケーションのコンテキストを設定する必要があります。 この例で、アプリケーションのコンテキストの設定を指定する、 **OracleUserName**、 **OraclePassword**、および**OracleEBSResponsibilityName**プロパティをバインドします。 アプリケーションのコンテキストの詳細については、次を参照してください。[アプリケーション コンテキストの設定](../../adapters-and-accelerators/adapter-oracle-ebs/set-application-context.md)します。  
   
     ```  
     binding.OracleUserName = "myOracleEBSUserName";  
@@ -92,7 +92,7 @@ Salary = 500000
     binding.OracleEBSResponsibilityName = "myOracleEBSResponsibility";  
     ```  
   
-6.  作成し、チャネル ファクトリを開きます。 このアプリケーションは、Oracle E-business Suite に要求メッセージを送信し、応答を受信する、そのため、IRequestChannel インターフェイスを実装する必要があります。  
+6.  作成し、チャネル ファクトリを開きます。 このアプリケーションが Oracle E-business Suite への要求メッセージの送信し、応答を受信、そのため、IRequestChannel インターフェイスを実装する必要があります。  
   
     ```  
     ChannelFactory<IRequestChannel> factory = new ChannelFactory<IRequestChannel>(binding, address);  
@@ -101,7 +101,7 @@ Salary = 500000
     factory.Open();  
     ```  
   
-7.  作成し、チャネルを開きます。  
+7.  作成して、チャネルを開きます。  
   
     ```  
     IRequestChannel channel;  
@@ -146,7 +146,7 @@ Salary = 500000
   
     ```  
   
-     要求メッセージを作成中にインターフェイス テーブルについて、アダプターを実行するアクションを示すメッセージのアクションを指定する必要があります。 メッセージのアクションは、MS_SAMPLE_EMPLOYEE テーブルに対して挿入操作を実行する`InterfaceTables/Insert/FND/APPS/MS_SAMPLE_EMPLOYEE`です。 テーブルに対するさまざまな操作のメッセージのアクションを判断する方法については、次を参照してください。 [Insert、Update、Delete、および選択操作のメッセージ スキーマを](../../adapters-and-accelerators/adapter-oracle-ebs/message-schemas-for-insert-update-delete-and-select-operations.md)です。  
+     要求メッセージを作成するときに、インターフェイス テーブルで、アダプターを実行するアクションを示すメッセージ操作を指定する必要があります。 メッセージのアクションは、MS_SAMPLE_EMPLOYEE テーブルに対する挿入操作を実行する`InterfaceTables/Insert/FND/APPS/MS_SAMPLE_EMPLOYEE`します。 テーブルに対するさまざまな操作のメッセージ アクションを決定する方法については、次を参照してください。 [Insert、Update、Delete、および選択操作のメッセージ スキーマ](../../adapters-and-accelerators/adapter-oracle-ebs/message-schemas-for-insert-update-delete-and-select-operations.md)します。  
   
 9. 応答メッセージを取得します。  
   
@@ -165,9 +165,9 @@ Salary = 500000
     factory.Close();  
     ```  
   
-11. プロジェクトをビルドする。 プロジェクトをビルドしたら、InsertRequest.xml、実行可能プロジェクトと同じ場所に、要求メッセージをコピーする必要があります。 通常、この場所は、プロジェクト ディレクトリ下にある \bin\Debug\ です。  
+11. プロジェクトをビルドする。 プロジェクトをビルドした後に、要求メッセージ、実行可能ファイル、プロジェクトと同じ場所にある、InsertRequest.xml をコピーする必要があります。 通常、この場所は、プロジェクト ディレクトリ以下に \bin\Debug\ です。  
   
-12. アプリケーションを実行します。 応答メッセージ、Response.xml は、アプリケーションで指定した場所に保存されます。 応答メッセージは、番号または挿入されたレコードが含まれ、次のようになります。  
+12. アプリケーションを実行します。 Response.xml、応答メッセージは、アプリケーションで指定した場所に保存されます。 応答メッセージは、数または挿入されたレコードを格納し、次のような。  
   
     ```  
     <InsertResponse xmlns="http://schemas.microsoft.com/OracleEBS/2008/05/InterfaceTables/FND/APPS/MS_SAMPLE_EMPLOYEE">  
@@ -175,7 +175,7 @@ Salary = 500000
     </InsertResponse>  
     ```  
   
-     値「1」では、1 つのレコードが MS_SAMPLE_EMPLOYEE テーブルに挿入されるを示します。  
+     値「1」では、MS_SAMPLE_EMPLOYEE テーブルに 1 つのレコードが挿入されることを示します。  
   
 ## <a name="see-also"></a>参照  
- [WCF チャネル モデルを使用して Oracle E-business Suite アプリケーションを開発します。](../../adapters-and-accelerators/adapter-oracle-ebs/develop-oracle-e-business-suite-applications-using-the-wcf-channel-model.md)
+ [WCF チャネル モデルを使用して Oracle E-business Suite のアプリケーションを開発します。](../../adapters-and-accelerators/adapter-oracle-ebs/develop-oracle-e-business-suite-applications-using-the-wcf-channel-model.md)

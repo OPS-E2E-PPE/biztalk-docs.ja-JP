@@ -12,14 +12,14 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9d7e4092b057b83caef252d63853ecf6791edbde
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8c1fe6f01b31d841c5d07bbae51a6a311bca28c6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37014723"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65360080"
 ---
-# <a name="agreement-found-for-the-protocol-is-in-disabled-or-expired-state"></a>プロトコルに対して見つかったアグリーメントの状態が "無効" または "期限切れ" です
+# <a name="agreement-found-for-the-protocol-is-in-disabled-or-expired-state"></a>プロトコルが無効にに対して見つかったアグリーメントまたは期限切れの状態
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                        |
@@ -33,7 +33,7 @@ ms.locfileid: "37014723"
 |  メッセージ テキスト   |      アグリーメントが見つかりませんでした、{0}プロトコルが無効または期限切れのいずれかの状態。      |
   
 ## <a name="explanation"></a>説明  
- このエラー/警告/情報イベントは、BizTalk Server がアグリーメントを解決できたが、アグリーメントの状態が無効または期限切れだったことを示します。  
+ このエラー/警告/情報イベントは、BizTalk Server がアグリーメントに解決するのにが無効または期限切れの状態にあることを示します。  
   
 ## <a name="user-action"></a>ユーザーの操作  
  このエラーを解決するには、アグリーメントを有効にしてください。

@@ -15,12 +15,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 45a0f21cfe71a1c7af0b4d05798a08c842c4b85d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8ea01a9ba4a74e6adc3a7980841c2c850969dfec
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36995907"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65292962"
 ---
 # <a name="how-biztalk-server-solves-the-business-need"></a>BizTalk Server がビジネス ニーズを解決する方法
 医療を解決するためにシステムの統合を必要がある BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 医療システム MicrosoftBizTalk サーバーの機能を拡張します。  

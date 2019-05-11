@@ -12,12 +12,12 @@ caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8991590d97d70fc0e2090f11f05f8882b0ca3396
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 72d99666ef2e3eff4504ebce35df33524be0d64f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37004716"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65363386"
 ---
 # <a name="read-how-wcf-is-used-by-the-wcf-lob-adapter-sdk"></a>WCF LOB Adapter SDK による WCF の使用方法を読み取る
 [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]拡張、[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]チャネル アーキテクチャに依存して、[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]アダプターの機能を公開し、情報を交換するために必要な基本的なメッセージング サービスを提供するランタイム。 

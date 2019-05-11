@@ -17,18 +17,18 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4efc52ba5531bac17fa244edfbf7e197fa0028ba
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f0cee3cb77368b8128ad5be66e4628f9c693f71c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36980995"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65335096"
 ---
-# <a name="how-to-remove-a-certificate-from-a-send-port"></a>送信ポート グループから証明書を削除する方法
-このトピックでは、BizTalk Server 管理コンソールを使用して、送信ポートからセキュリティ証明書を削除する方法について説明します。 この操作を実行すると、送信ポートではメッセージが暗号化されなくなり、メッセージはクリア テキストで送信されるようになります。 証明書を送信ポートから削除しても、証明書ストアからは削除されません。  
+# <a name="how-to-remove-a-certificate-from-a-send-port"></a>送信ポートから証明書を削除する方法
+このトピックでは、BizTalk Server 管理コンソールを使用して、送信ポートからセキュリティ証明書を削除する方法を説明します。 これを行うときに、送信ポートのメッセージが暗号化されなくメッセージは、クリア テキストで送信されます。 送信ポートから証明書の削除は削除されません証明書ストアから。  
   
 > [!NOTE]
->  アプリケーション開発者が開発プロセス中にセキュリティ証明書を送信ポートから削除するには、このトピックの手順を実行します。  
+>  アプリケーション開発者から削除できますセキュリティ証明書を送信ポートを開発プロセス中にこのトピックの手順を使用しています。  
   
 ## <a name="prerequisites"></a>前提条件  
  このトピックの手順を実行するには、BizTalk Server 管理者グループのメンバーであるアカウントでログオンする必要があります。 詳細なアクセス許可についてを参照してください。[を展開すると、BizTalk アプリケーションの管理に必要なアクセス許可](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)します。  
@@ -37,7 +37,7 @@ ms.locfileid: "36980995"
   
 1. クリックして**開始**、 をクリックして**すべてのプログラム**、 をクリックして[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリックします**BizTalk Server 管理**します。  
   
-2. コンソール ツリーで、BizTalk グループを展開し、送信ポートから証明書を削除する BizTalk アプリケーションを展開します。  
+2. コンソール ツリーで、BizTalk グループと、送信ポートから証明書を削除する BizTalk アプリケーションを展開します。  
   
 3. 展開**送信ポート**は、送信ポートを右クリックし、[**プロパティ**、] をクリックし、**証明書**します。  
   

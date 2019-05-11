@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 25a464025377eae7fd70992359d3be1582fa748a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: bf569721a2a97aeb93b8b753599c64ae0ef890ee
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37016730"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65359874"
 ---
 # <a name="agreement-resolution-for-incoming-as2-messages"></a>受信 AS2 メッセージのアグリーメントの解決
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は、EDIINT/AS2 でエンコードされたメッセージを HTTP/HTTPS トランスポート経由で受信すると、メッセージを送信した取引先のビジネス プロファイルの特定を試みます。 これは、次の処理を順番に試みることによって行われます。  
@@ -36,7 +36,7 @@ ms.locfileid: "37016730"
 > [!NOTE]
 >  アグリーメントの解決時に決定される AS2 アグリーメントは、EDI ペイロードと同じアグリーメントにならない場合があります。 AS2 アグリーメントは、複数のパーティから EDI ドキュメントをルーティングするクリアリングハウスを表す場合があるので、AS2 と EDI が同じアグリーメントを共有する必要はありません。  
   
- 受信処理の詳細については、[受信 AS2 メッセージの処理](../core/processing-an-incoming-as2-message.md)を参照してください。  
+ 受信処理の詳細については、次を参照してください。[受信 AS2 メッセージの処理](../core/processing-an-incoming-as2-message.md)します。  
   
 ## <a name="see-also"></a>参照  
  [BizTalk Server が AS2 メッセージを受信する方法](../core/how-biztalk-server-receives-as2-messages.md)

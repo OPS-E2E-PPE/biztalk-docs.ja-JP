@@ -12,17 +12,17 @@ caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 500e3e2f6e9ee895c41145371cacc78467b8a64c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a30c4bedeab4041002a6ab225a441ac10d37de15
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37003595"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65358434"
 ---
 # <a name="before-installing-the-business-process-management-solution"></a>ビジネス プロセス管理ソリューションをインストールする前に
 
-## <a name="requirements"></a>要件
-単一のコンピュータにビジネス プロセス管理ソリューションを展開するには、次のコンポーネントをインストールする必要があります。  
+## <a name="requirements"></a>必要条件
+1 台のコンピューターでビジネス プロセス管理ソリューションをデプロイするには、次の前提条件をインストールしてください。  
   
 - Microsoft Windows
   

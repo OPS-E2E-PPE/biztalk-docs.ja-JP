@@ -1,5 +1,5 @@
 ---
-title: '手順 1: RFC を呼び出すための vPrev BizTalk プロジェクトの変更 |Microsoft Docs'
+title: 手順 1:RFC を呼び出すための vPrev BizTalk プロジェクトの変更 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,19 +15,19 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2e2624ede6d2710db2d82311c2f452f8be372aa2
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6a9000f4754517223fe39856cdac9e50e2ab676c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36969651"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65372934"
 ---
-# <a name="step-1-modify-the-vprev-biztalk-project-for-invoking-an-rfc"></a>手順 1: RFC を呼び出すための vPrev BizTalk プロジェクトの変更します。
+# <a name="step-1-modify-the-vprev-biztalk-project-for-invoking-an-rfc"></a>手順 1:RFC を呼び出すための vPrev BizTalk プロジェクトの変更します。
 ![ステップ 1/3](../../adapters-and-accelerators/adapter-oracle-database/media/step-1of3.gif "Step_1of3")  
   
  **所要時間:** 10 分  
   
- **目標:** この手順で、次を変更する既存の vPrev BizTalk プロジェクト。  
+ **目標:** この手順では、既存の vPrev BizTalk プロジェクトに、次の変更を行います。  
   
 - WCF ベースを使用して、SD_RFC_CUSTOMER_GET RFC のメタデータを生成[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]します。  
   
@@ -43,7 +43,7 @@ ms.locfileid: "36969651"
   
 1. WCF ベースを使用して、SD_RFC_CUSTOMER_GET RFC のメタデータを生成[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]します。 使用することができます、[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]メタデータを生成します。  
   
-    Rfc のメタデータを生成する方法の詳細については、[参照、SAP で RFC 操作のメタデータを検索し、get](../../adapters-and-accelerators/adapter-sap/browse-search-and-get-metadata-for-rfc-operations-in-sap.md)を参照してください。 スキーマを生成すると後のような名前のファイル*SapBindingSchema.xsd* BizTalk プロジェクトに追加されます。 このファイルには、WCF ベースを使用して SD_RFC_CUSTOMER_GET を呼び出すためのスキーマが含まれています。[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]します。  
+    Rfc のメタデータを生成する方法の詳細については、次を参照してください。[参照、SAP で RFC 操作のメタデータを検索し、get](../../adapters-and-accelerators/adapter-sap/browse-search-and-get-metadata-for-rfc-operations-in-sap.md)します。 スキーマを生成すると後のような名前のファイル*SapBindingSchema.xsd* BizTalk プロジェクトに追加されます。 このファイルには、WCF ベースを使用して SD_RFC_CUSTOMER_GET を呼び出すためのスキーマが含まれています。[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]します。  
   
 2. SD_RFC_CUSTOMER_GET RFC のメタデータを生成すると、ポートのバインド ファイルも作成します。 次の手順で、SAP システムにメッセージを送信する Wcf-custom 送信ポートを作成するこのバインド ファイルが使用されます。 操作の SOAP アクションは、メタデータの生成対象の操作にも設定されます。 SD_RFC_CUSTOMER_GET RFC のメタデータを生成する場合など、送信ポートでの SOAP アクションの操作名では、"SD_RFC_CUSTOMER_GET"になります。 ただし、操作名とオーケストレーションの一部異なる可能性があります、たとえば、作成した論理送信ポートで"Operation_1"。 その結果、送信ポートを使用して SAP システムにメッセージを送信するときに、エラーが発生します。 これを回避するには、ことを確認しますで論理送信ポート、オーケストレーションでは、メタデータを生成する操作名と同じ操作名。  
   
@@ -105,7 +105,7 @@ ms.locfileid: "36969651"
 6. ソリューションを展開する。 クリックして、ソリューションを右クリックして**ソリューションの配置**します。  
   
 ## <a name="next-steps"></a>次の手順  
- Wcf-custom 送信ポートを作成および構成」の説明に従って、この手順で作成したマップを使用するように[手順 2: BizTalk Server 管理コンソールでオーケストレーションを構成](../../adapters-and-accelerators/adapter-sap/step-2-configure-the-orchestration-in-biztalk-server-administration-console1.md)します。  
+ Wcf-custom 送信ポートを作成および構成」の説明に従って、この手順で作成したマップを使用するように[手順 2。BizTalk Server 管理コンソールでオーケストレーションを構成](../../adapters-and-accelerators/adapter-sap/step-2-configure-the-orchestration-in-biztalk-server-administration-console1.md)します。  
   
 ## <a name="see-also"></a>参照  
  [チュートリアル 2: SAP の RFC BizTalk プロジェクトを移行する](../../adapters-and-accelerators/adapter-sap/tutorial-2-migrating-an-sap-rfc-biztalk-project.md)
