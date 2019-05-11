@@ -1,5 +1,5 @@
 ---
-title: Null 許容型のサポート |Microsoft ドキュメント
+title: Null 許容型のサポート |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,18 +12,18 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: abd277db970a00e9d7d8f20de65e85c607c2a861
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7c468df33b522f14608fbe001f4ce4be52ba524e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22278722"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65254424"
 ---
 # <a name="support-for-nullable-types"></a>Null 許容型のサポート
-ルール エンジンは、ビジネス ルールでの Null 許容型の使用をサポートしています。 Null 許容型は、.NET クラス バインド、XML バインド、およびデータベース バインドで使用できます。 現在、ビジネス ルール作成ツールは、ビジネス ルールでの Null 許容型の使用をサポートしていません。 Null 許容型は、プログラムによってルールを作成する場合に使用できます。  
+ルール エンジンは、ビジネス ルールで null 許容型の使用をサポートします。 .NET クラス バインド、XML バインド、およびデータベース バインドで null 許容型を使用することができます。 現時点では、ビジネス ルール作成ツールでは、ビジネス ルールで null 許容型の使用はできません。 プログラムで規則を作成するときに、null 許容型を使用できます。  
   
-## <a name="using-nullable-types-in-net-class-bindings"></a>.NET クラス バインドでの Null 許容型の使用  
- Null 許容型のプロパティまたはフィールドへのクラス メンバー バインドを作成できます。 また、Null 許容型のパラメーターを使用するメソッド、Null 許容型の値を返すメソッド、またはその両方を行うメソッドへのクラス メンバー バインドも作成できます。 次のサンプル コードは、Null 許容型フィールドにアクセスする方法、およびビジネス ルール内のメソッドから Null 許容型の戻り値にアクセスする方法を示しています。 実行する場合、コンソール アプリケーションを次のコードは、\outputfromtestproviderdebugmode.txt の値、 **prop**フィールドが 5 に設定します。 初期化しない場合、 **prop**クラスのフィールドまたは null に設定し、コードを実行する初期化 \outputfromtestproviderdebugmode.txt の値、 **prop**フィールドが 1 に設定します。  
+## <a name="using-nullable-types-in-net-class-bindings"></a>.NET クラス バインドで null 許容型の使用  
+ プロパティまたは null 許容型のフィールドにバインドするクラスのメンバーを作成することができます。 クラス メンバーを null 許容型のパラメーターを受け取るまたは null 許容型の値を取得するメソッドにバインドを作成することもできます。 次のサンプル コードでは、ビジネス ルールのメソッドから null 許容型の戻り値にアクセスする方法と、null 許容フィールドにアクセスする方法を示します。 表示されますが、コンソール アプリケーションを次のコードを実行する場合の値、 **prop**フィールドが 5 に設定します。 初期化しない場合、 **prop**クラスのフィールドまたは null に設定し、コードを実行する初期化ことがわかりますの値、 **prop**フィールドが 1 に設定します。  
   
 ```  
 using Microsoft.RuleEngine;  
@@ -117,17 +117,17 @@ namespace UseNullableAsm
 }  
 ```  
   
-## <a name="using-nullable-types-in-database-bindings"></a>データベース バインドでの Null 許容型の使用  
- データベース バインドでも Null 許容型を使用できます。 次のサンプル コードは、データベース バインドで Null 許容型を使用する方法を示しています。  
+## <a name="using-nullable-types-in-database-bindings"></a>データベース バインドで null 許容型の使用  
+ データベース バインドで null 許容型を使用することもできます。 次のサンプル コードでは、データベース バインドで null 許容型を使用する方法を示します。  
   
 ```  
 DataColumnBinding dcBinding = new DataColumnBinding(“col”, typeof(int?), dbBinding);  
 ```  
   
- 値をチェックする条件を持つルールがあると 3 に等しいかどうかをデータベース列。 列の値が null の場合、式が false に評価されます。 例外は行われません。  
+ 値をチェックする条件を持つルールがあるとするかどうかをデータベース列が 3 に等しい。 列の値が null の場合、式が false に評価されます。 これには、例外は発生しません。  
   
-## <a name="using-nullable-types-in-xml-bindings"></a>XML バインドでの Null 許容型の使用  
- 同様に、XML バインドでも Null 許容型を使用できます。 次のサンプル コードは、XML バインドで Null 許容型を使用する方法を示しています。  
+## <a name="using-nullable-types-in-xml-bindings"></a>XML バインドで null 許容型の使用  
+ 同様に、XML バインドで null 許容型を使用することができます。 次のサンプル コードでは、XML バインドで null 許容型を使用する方法を示します。  
   
 ```  
 XMLDocumentFieldBinding xfb1 = new XMLDocumentFieldBinding(typeof(int?),"ID",xdb);  
