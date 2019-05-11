@@ -23,35 +23,35 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c299486c8ca43b34ba93ce434245b52b30e567aa
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c43c0694397f024b692012f7e2846e6ff38bbd14
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36981051"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65254517"
 ---
 # <a name="running-orchestrations"></a>オーケストレーションの実行
-次の手順では、オーケストレーションのビルド、展開、バインド、および開始の方法について説明します。  
+次の手順では、構築、展開、バインド、およびオーケストレーションを開始する方法について説明します。  
   
 ## <a name="creating-a-strong-name-key"></a>厳密な名前キーを作成します。  
   
-#### <a name="to-create-a-strong-name-key"></a>厳密な名前のキーを作成するには  
+#### <a name="to-create-a-strong-name-key"></a>厳密な名前キーを作成するには  
   
 1. 開く、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]コマンド プロンプト。  
   
-2. 既存のプロジェクトのディレクトリに移動し、Enter キーを押します。  
+2. 既存のプロジェクトにディレクトリを変更し、ENTER キーを押します。  
   
     以下に例を示します。  
   
-    **\<ドライブ\>: \Adapter_Install\biztalk\my_project**  
+    **\<drive\>:\Adapter_Install\biztalk\my_project**  
   
-3. コマンド プロンプトで以下を入力し、Enter キーを押します。  
+3. コマンド プロンプトで、次を入力し、ENTER キーを押します。  
   
     `sn -k SSOSchedule.snk`  
   
-## <a name="compiling-and-deploying-an-orchestration"></a>オーケストレーションのコンパイルおよび展開  
+## <a name="compiling-and-deploying-an-orchestration"></a>コンパイルして、オーケストレーションの展開  
   
-#### <a name="to-compile-and-deploy-an-orchestration"></a>オーケストレーションをコンパイルおよび展開するには  
+#### <a name="to-compile-and-deploy-an-orchestration"></a>コンパイルして、オーケストレーションを展開するには  
   
 1. [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]ソリューション エクスプ ローラーを右クリックし、 **[ssoschedule]** 順に選択して、**プロパティ**します。  
   
@@ -78,7 +78,7 @@ ms.locfileid: "36981051"
 ## <a name="stopping-and-restarting-a-host-instance"></a>停止して、ホスト インスタンスの再起動  
  サンプルをデプロイした後は、ホスト インスタンスを再起動する必要があります。  
   
-#### <a name="to-stop-and-restart-a-host-instance"></a>ホスト インスタンスを停止して再起動するには  
+#### <a name="to-stop-and-restart-a-host-instance"></a>停止して、ホスト インスタンスを再起動するには  
   
 1. をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**Microsoft** [!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)]、順にクリックします**BizTalk Server 管理コンソール。**  
   

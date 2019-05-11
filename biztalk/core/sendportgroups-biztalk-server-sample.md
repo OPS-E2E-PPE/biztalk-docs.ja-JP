@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 035cd5d0f6b3c37861574d3ace81b15e1dfbc06d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ca073cdbe6bc7a32ce0168db227d2121980c92ef
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36990043"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65254430"
 ---
 # <a name="sendportgroups-biztalk-server-sample"></a>SendPortGroups (BizTalk Server サンプル)
 SendPortGroups サンプルは、列挙およびを使用して送信ポート グループを管理する方法を示します、 **Microsoft.BizTalk.ExplorerOM**管理クラス。  
@@ -33,21 +33,21 @@ SendPortGroups サンプルは、列挙およびを使用して送信ポート �
 
 - 使用して、BizTalk 管理データベースに接続する、 **BtsCatalogExplorer**クラス。  
 
-- "My Send Port Group" という名前の新しい送信ポート グループを作成する。  
+- "My Send Port Group"という名前の新しい送信ポート グループを作成します。  
 
-- 送信ポート グループを列挙して新たに作成した送信ポート グループを表示する。  
+- 列挙の送信ポート グループを新しく作成された表示は送信ポート グループです。  
 
-- 新しい送信ポート グループを削除する。  
+- 新しい送信ポート グループを削除しています。  
 
-  サンプルにはこれ以外の機能もありますが、[!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)] バージョンでは実行されません。  これらの機能の一部は、PowerShell サンプル スクリプトで示します。 これらの機能の内容は、次のとおりです。  
+  追加の関数は、サンプルに存在するでは実行されません、[!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)]バージョン。  いくつかの追加の関数は、PowerShell スクリプト例で説明します。 追加の関数は、次の機能を示しています。  
 
-- 新たに作成した送信ポート グループに送信ポートを追加する (PowerShell サンプルに収録)。  
+- (PowerShell の例で説明)、新しく作成した送信ポート グループへの送信ポートを追加します。  
 
-- 送信ポート グループから送信ポートを削除する (PowerShell サンプルに収録)。  
+- (PowerShell の例で説明) 送信ポート グループから送信ポートを削除しています。  
 
-- 送信ポート グループを開始する。  
+- 送信ポート グループを開始しています。  
 
-- 送信ポート グループを停止する。  
+- 送信ポート グループを停止しています。  
 
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
  このサンプルは、SDK がある次の場所にあります。  
@@ -60,23 +60,23 @@ SendPortGroups サンプルは、列挙およびを使用して送信ポート �
 |                            ファイル                            |                                                 説明                                                  |
 |---------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
 |                       SendPortGroups.cs                       | このサンプルに示されている操作の [!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)] ソース ファイル。 |
-| SendPortGroups.sln、SendPortGroups.csproj、SendPortGroups.suo |                                  このサンプルのソリューション ファイルとプロジェクト ファイル。                                  |
+| SendPortGroups.sln, SendPortGroups.csproj, SendPortGroups.suo |                                  このサンプルのソリューション ファイルとプロジェクト ファイル。                                  |
 
 ## <a name="building-and-running-this-sample"></a>このサンプルのビルドおよび実行  
 
 #### <a name="to-build-this-sample"></a>このサンプルをビルドするには  
 
-1. [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] で、SendPortGroups.sln ソリューション ファイルを開きます。  
+1. [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]、SendPortGroups.sln ソリューション ファイルを開きます。  
 
 2. ソリューション エクスプ ローラーでダブルクリック**SendPortGroups.cs**サンプル コードを開きます。  
 
-3. `root.ConnectionString` 関数内で `CreateSendPortGroup` を見つけます。  BizTalk 管理データベースをホストする SQL Server を正しく参照するようにサーバー指定を変更する必要があります。  ピリオド (.) を使用してローカル SQL サーバーに接続することもできます。  以下に例を示します。  
+3. 検索、`root.ConnectionString`で、`CreateSendPortGroup`関数。  BizTalk 管理データベースをホストする SQL server を正しく指すサーバーの仕様を変更する必要があります。  ローカルの SQL server への接続にピリオド (.) を使用することもできます。  例 :  
 
    ```  
    root.ConnectionString = "Integrated Security=SSPI;database=BizTalkMgmtDb;server=.";  
    ```  
 
-4. 次の関数について、手順 3. を繰り返します。  
+4. 次の関数について、手順 3。  
 
    -   **EnumerateSendPortGroups**  
 
@@ -90,7 +90,7 @@ SendPortGroups サンプルは、列挙およびを使用して送信ポート �
 
 1.  コマンド ウィンドウを開き、次のフォルダーに移動します。  
 
-     \<*パスのサンプル*\>\Admin\ExplorerOM\SendPortGroups\bin\Debug  
+     \<*Samples Path*\>\Admin\ExplorerOM\SendPortGroups\bin\Debug  
 
 2.  SendPortGroups.exe ファイルを実行します。  
 

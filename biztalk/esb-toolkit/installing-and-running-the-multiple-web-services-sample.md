@@ -1,5 +1,5 @@
 ---
-title: インストールと実行、複数の Web サービス サンプル |Microsoft ドキュメント
+title: インストールと実行の複数の Web サービスのサンプル |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,24 +12,24 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4f25b5d6a6f39e1705738a1d65a25fe57da89a2e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7d9741e362e0c38c76c8eadf4f53b32f178985eb
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22294074"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65261644"
 ---
 # <a name="installing-and-running-the-multiple-web-services-sample"></a>インストールして、複数の Web サービス サンプルを実行します。
-複数の Web サービス サンプルでは、送信できるメッセージを複数の Web サービスでは、1 つずつ、フォワーダー パイプライン コンポーネントを使用して旅程を開発する方法を示します。 このサンプルでは、行程入り口サンプルが既にインストールされている必要があります。  
+複数の Web サービス サンプルでは、できるメッセージを送信する複数の Web サービスでは、1 つずつフォワーダーのパイプライン コンポーネントを使用している旅行プランを開発する方法を示します。 このサンプルでは、ランプの旅程サンプルが既にインストールされている必要があります。  
   
- このセクションのトピックは次のとおりです。  
+ このセクションでは、次のトピックについて説明します。  
   
--   [複数の Web サービス サンプルをインストールします。](../esb-toolkit/installing-the-multiple-web-services-sample.md)  
+-   [複数の Web サービス サンプルをインストールする](../esb-toolkit/installing-the-multiple-web-services-sample.md)  
   
--   [アセンブリと、複数の Web サービス サンプルがインストールされている成果物](../esb-toolkit/assemblies-and-artifacts-installed-by-the-multiple-web-services-sample.md)  
+-   [複数の Web サービス サンプルによりインストールされるアセンブリとアイテム](../esb-toolkit/assemblies-and-artifacts-installed-by-the-multiple-web-services-sample.md)  
   
--   [複数の Web サービス サンプルを実行します。](../esb-toolkit/running-the-multiple-web-services-sample.md)  
+-   [複数の Web サービス サンプルを実行する](../esb-toolkit/running-the-multiple-web-services-sample.md)  
   
 -   [複数の Web サービス サンプルのしくみ](../esb-toolkit/how-the-multiple-web-services-sample-works.md)  
   
--   [サンプル複数の Web サービスの日程](../esb-toolkit/the-sample-multiple-web-services-itineraries.md)
+-   [複数の Web サービスのスケジュール サンプル](../esb-toolkit/the-sample-multiple-web-services-itineraries.md)
