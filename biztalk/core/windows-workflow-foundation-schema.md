@@ -1,5 +1,5 @@
 ---
-title: Windows Workflow Foundation スキーマ |Microsoft ドキュメント
+title: Windows Workflow Foundation スキーマ |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,15 +12,15 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2b680a21fe892c2599cb43643cadc68fbb74f89c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2d595f7d9ebddb8e9c94fc70876bd49be85f4b3d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22289066"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65240379"
 ---
-# <a name="windows-workflow-foundation-schema"></a><span data-ttu-id="70ea6-102">Windows Workflow Foundation スキーマ</span><span class="sxs-lookup"><span data-stu-id="70ea6-102">Windows Workflow Foundation Schema</span></span>
-<span data-ttu-id="70ea6-103">このセクションでは、Windows Workflow Foundation インターセプタのスキーマを示します。</span><span class="sxs-lookup"><span data-stu-id="70ea6-103">This section contains the schema for the Windows Workflow Foundation interceptor.</span></span>  
+# <a name="windows-workflow-foundation-schema"></a><span data-ttu-id="2b29d-102">Windows Workflow Foundation スキーマ</span><span class="sxs-lookup"><span data-stu-id="2b29d-102">Windows Workflow Foundation Schema</span></span>
+<span data-ttu-id="2b29d-103">このセクションでは、Windows Workflow Foundation インターセプタのスキーマを示します。</span><span class="sxs-lookup"><span data-stu-id="2b29d-103">This section contains the schema for the Windows Workflow Foundation interceptor.</span></span>  
   
 ```  
 <?xml version="1.0" encoding="utf-8"?>  
@@ -53,6 +53,6 @@ ms.locfileid: "22289066"
 </xs:schema>   
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="70ea6-104">参照</span><span class="sxs-lookup"><span data-stu-id="70ea6-104">See Also</span></span>  
- <span data-ttu-id="70ea6-105">[インターセプタ構成スキーマ](../core/interceptor-configuration-schema.md) </span><span class="sxs-lookup"><span data-stu-id="70ea6-105">[Interceptor Configuration Schema](../core/interceptor-configuration-schema.md) </span></span>  
- [<span data-ttu-id="70ea6-106">Windows Communication Foundation スキーマ</span><span class="sxs-lookup"><span data-stu-id="70ea6-106">Windows Communication Foundation Schema</span></span>](../core/windows-communication-foundation-schema.md)
+## <a name="see-also"></a><span data-ttu-id="2b29d-104">参照</span><span class="sxs-lookup"><span data-stu-id="2b29d-104">See Also</span></span>  
+ <span data-ttu-id="2b29d-105">[インターセプタ構成スキーマ](../core/interceptor-configuration-schema.md) </span><span class="sxs-lookup"><span data-stu-id="2b29d-105">[Interceptor Configuration Schema](../core/interceptor-configuration-schema.md) </span></span>  
+ [<span data-ttu-id="2b29d-106">Windows Communication Foundation スキーマ</span><span class="sxs-lookup"><span data-stu-id="2b29d-106">Windows Communication Foundation Schema</span></span>](../core/windows-communication-foundation-schema.md)
