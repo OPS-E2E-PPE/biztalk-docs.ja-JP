@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10722 |Microsoft Docs'
+title: シングル サインオン:イベント 10722 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f3cef151ebcd75a8ba6f0af35da2500d8bc80b4e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4ab88dddff9529f0d101731e8e82ab2f9b466b82
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37008603"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65397145"
 ---
-# <a name="single-sign-on-event-10722"></a>シングル サインオン: イベント 10722
+# <a name="single-sign-on-event-10722"></a>シングル サインオン:イベント 10722
 ## <a name="details"></a>詳細  
 
 |                 |                                                                                                 |
@@ -28,16 +28,16 @@ ms.locfileid: "37008603"
 | 製品バージョン |                   [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                    |
 |    イベント ID     |                                              10722                                              |
 |  イベント ソース   |                                             ENTSSO                                              |
-|    コンポーネント    |                                               N\A                                               |
+|    コンポーネント    |                                               該当なし                                               |
 |  シンボル名  |                                SSO_INFO_REPLAY_FILE_CLOSED_IDLE                                 |
-|  メッセージ テキスト   | 再生ファイルは使用されていないので閉じられました。%r<br /><br /> ファイル名: %1 |
+|  メッセージ テキスト   | 現在ではない use.%r ために、再生ファイルは閉じられました<br /><br /> ファイル名: %1 |
 
 ## <a name="explanation"></a>説明  
- この情報イベントは、再生ファイルが使用されていないので閉じられたことを示します。  
+ この情報イベントは、いない現在使用されているため、再生ファイルが閉じられたことを示します。  
 
 ## <a name="user-action"></a>ユーザーの操作  
 
-- ユーザーの操作は必要ありません  
+- ユーザー操作は必要ありません。  
 
   詳細については、次のリソースを参照してください。  
 

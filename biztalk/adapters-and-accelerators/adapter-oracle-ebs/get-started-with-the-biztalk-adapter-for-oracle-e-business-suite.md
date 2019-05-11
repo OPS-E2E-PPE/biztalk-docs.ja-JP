@@ -12,12 +12,12 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bdbfdeb58fdf8abde97db5b466008c32a0b54699
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3c32bfb27935bc93163bd777d0c604a0c08f303a
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37006075"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65530707"
 ---
 # <a name="get-started-with-the-biztalk-adapter-for-oracle-e-business-suite"></a>Oracle E-business Suite 用 BizTalk アダプターの概要します。
 アダプター、前提条件、および初心者 Microsoft BizTalk Adapter Pack にはユーザー向けのトピックの概要です。 機能に関する情報が提供[!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]と、アダプターを使用して Oracle データベースで実行できるさまざまな操作です。  
@@ -28,9 +28,9 @@ ms.locfileid: "37006075"
   
  アダプター、 [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] 2 つのカテゴリに分類できます。  
   
-- **LOB アダプタ**: LOB アダプタは、LOB システムへのアクセスをサービス指向のプログラミング モデルを提供、SAP や Siebel アプリケーション用のアダプターなど。  
+- **LOB アダプタ**:LOB アダプタは、LOB システムへのアクセスをサービス指向のプログラミング モデルを提供、SAP や Siebel アプリケーション用のアダプターなど。  
   
-- **データ アダプター**: データ アダプターは、access データベースにサービス指向のプログラミング モデルを提供します。-Oracle database または SQL Server のアダプターなど。  
+- **データ アダプター**:データ アダプターは、access データベースにサービス指向のプログラミング モデルを提供します。-Oracle database または SQL Server のアダプターなど。  
   
   5 つのアダプタでは、 [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]:  
   
@@ -53,6 +53,6 @@ ms.locfileid: "37006075"
   
 -   [BizTalk Adapter for Oracle E-Business Suite について](../../adapters-and-accelerators/adapter-oracle-ebs/understand-biztalk-adapter-for-oracle-e-business-suite.md)  
   
--   [チュートリアル: SharePoint サイト上の Oracle E-business Suite からのデータの表示](Tutorial:%20Presenting%20Data%20from%20Oracle%20E-Business%20Suite%20on%20a%20SharePoint%20Site.md)
+-   [チュートリアル: SharePoint サイト上の Oracle E-business Suite からデータを表示します。](Tutorial:%20Presenting%20Data%20from%20Oracle%20E-Business%20Suite%20on%20a%20SharePoint%20Site.md)
   
 - [Oracle EBS アダプターのトラブルシューティング](../../adapters-and-accelerators/adapter-oracle-ebs/troubleshooting-the-oracle-ebs-adapter.md)

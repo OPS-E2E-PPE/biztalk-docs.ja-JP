@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル: プログラムによって、ポリシーの実行 |Microsoft Docs'
+title: 'チュートリアル: プログラムによるポリシーの実行 |Microsoft Docs'
 ms.custom: ''
 ms.date: 2016-04-05
 ms.prod: biztalk-server
@@ -12,18 +12,18 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 666b674e30e548489478af898d5fe88c47d21f14
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3682be5a36ade434c6123f5d2b1a7f02c133232e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36985723"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395356"
 ---
-# <a name="walkthrough-executing-the-policy-programmatically"></a>チュートリアル: プログラムによって、ポリシーの実行
-このチュートリアルでは、詳細な手順で作成したポリシーを呼び出す、[チュートリアル: 単純なビジネス ポリシーを作成する](../core/walkthrough-creating-a-simple-business-policy.md)コンソール アプリケーションからチュートリアル プログラムを使用します。  
+# <a name="walkthrough-executing-the-policy-programmatically"></a>チュートリアル: プログラムによるポリシーの実行
+このチュートリアルでは、詳細な手順で作成したポリシーを呼び出す、[チュートリアル。単純なビジネス ポリシーを作成する](../core/walkthrough-creating-a-simple-business-policy.md)チュートリアルのコンソール アプリケーションからプログラムを使用します。  
 
 ## <a name="prerequisites"></a>前提条件  
- 完了する必要があります、[チュートリアル: 単純なビジネス ポリシーを作成する](../core/walkthrough-creating-a-simple-business-policy.md)チュートリアルのこのチュートリアルを実行する前にします。  
+ 完了する必要があります、[チュートリアル。単純なビジネス ポリシーを作成する](../core/walkthrough-creating-a-simple-business-policy.md)チュートリアルのこのチュートリアルを実行する前にします。  
 
 ## <a name="overview-of-this-walkthrough"></a>このチュートリアルの概要  
  次の表に示すように、このチュートリアルには 2 つの手順が含まれています。  
@@ -216,11 +216,11 @@ ms.locfileid: "36985723"
     policy.Dispose();  
     ```  
 
--   最初のパラメーター、 **TypedXmlDocument**コンストラクターのコードでは、ポリシーの構築に使用する型の名前です。  
+-   最初のパラメーター、 **TypedXmlDocument**コンス トラクターのコードでは、ポリシーの構築に使用する型の名前です。  
 
 -   **Policy.Execute**メソッドは、ラッパーでは基本的に、 **RuleEngine.Execute**メソッド。 したがってを使用して、 **Policy.Execute**メソッドでは、このチュートリアルで説明したように、ポリシーを呼び出すの最も簡単な方法です。  
 
--   使用するポリシーの実行をより細かく制御することがあります、 **RuleEngine.Execute**メソッドを使用してではなく**Policy.Execute**します。 使用して、エンジンを一時的に停止するなど、 **Halt**関数とを使用して、再開、 **Execute**関数。 詳細については、[Halt](../core/halt.md)を参照してください。  
+-   使用するポリシーの実行をより細かく制御することがあります、 **RuleEngine.Execute**メソッドを使用してではなく**Policy.Execute**します。 使用して、エンジンを一時的に停止するなど、 **Halt**関数とを使用して、再開、 **Execute**関数。 詳細については、次を参照してください。 [Halt](../core/halt.md)します。  
 
 ## <a name="see-also"></a>参照  
  [ポリシーを実行する方法](../core/how-to-execute-policies.md)

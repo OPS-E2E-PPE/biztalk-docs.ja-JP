@@ -12,32 +12,32 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: db57847964c7e3da452675945b7d4557ae7cbc85
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7336b515d196fadc6e8e6cc4fe0bcf500b883189
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36986347"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396982"
 ---
-# <a name="processing-json-messages-using-biztalk-server"></a>BizTalk Server を使用した JSON メッセージの処理
+# <a name="processing-json-messages-using-biztalk-server"></a>BizTalk Server を使用して JSON メッセージの処理
 > [!NOTE]
 >  このチュートリアルは、BizTalk Server にのみ適用されます。  
   
- このチュートリアルでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を使用して JSON メッセージを処理する方法を示します。 チュートリアルでは、BizTalk Server で今すぐ使用できるカスタム パイプライン コンポーネントを使用します。 これらのパイプライン コンポーネントでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] オーケストレーションでメッセージを受信して JSON メッセージを XML に変換し、メッセージの送信時にメッセージを XML から JSON に変換します。  
+ このチュートリアルを使用して JSON メッセージを処理する方法を示します[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]します。 チュートリアルでは、BizTalk Server で今すぐ使用できるカスタム パイプライン コンポーネントを使用します。 これらのパイプライン コンポーネントでは、JSON メッセージを XML に変換 (にメッセージを受信中に[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]オーケストレーションとメッセージを送信するときにメッセージを XML から JSON に変換します。  
   
-## <a name="what-does-this-tutorial-do"></a>このチュートリアルの目的  
- 次の内容を次の順序で実行する [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を作成して、JSON の処理方法を示します:  
+## <a name="what-does-this-tutorial-do"></a>このチュートリアルの目的が何か。  
+ JSON の処理を示すためには、作成、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]特定の順序で、次を行うこと。  
   
-1. JSON 注文書を受信して、受信パイプラインで JSON デコーダー コンポーネントを使用して JSON メッセージを XML メッセージに変換します。  
+1. JSON 注文書を受信し、受信パイプラインで XML メッセージに JSON メッセージを変換する JSON デコーダー コンポーネントを使用します。  
   
-2. マップを使用して XML 注文書を XML 請求書に変換します。  
+2. マップを使用して XML 請求書には、XML 注文書を変換します。  
   
-3. 送信パイプラインで、JSON エンコーダーを使用して XML 請求書を JSON 請求書に変換して送信します。  
+3. 送信パイプラインでに JSON 請求書の XML を変換する JSON エンコーダーを使用して請求書し、送信されます。  
   
    ![BizTalk Server で JSON メッセージの処理](../core/media/btsjson-flow.png "BTSJSON_Flow")  
   
-## <a name="how-to-use-this-tutorial"></a>このチュートリアルの使用方法  
- このチュートリアルは、サンプルに構築されています (**BTSJSON**) からダウンロードできますが、 [MSDN コード ギャラリー](http://go.microsoft.com/fwlink/?LinkId=403197)します。 サンプルを使用してチュートリアルを進めることで、サンプルが構築された方法を理解しやすくなります。 または、このチュートリアルで独自のソリューションを作り上げることもできます。 このチュートリアルは、このソリューションがどのように構築されたかを理解できるよう、2 つ目のアプローチに向けて作成されています。 また、このチュートリアルでは、可能な限りサンプルに合わせて、サンプルで使用されているのと同じアイテム名 (スキーマ、変換など) を使用しています。  
+## <a name="how-to-use-this-tutorial"></a>このチュートリアルを使用する方法は?  
+ このチュートリアルは、サンプルに構築されています (**BTSJSON**) からダウンロードできますが、 [MSDN コード ギャラリー](http://go.microsoft.com/fwlink/?LinkId=403197)します。 サンプルを使用して、サンプルの構築方法を理解するには、このチュートリアルを参照してください。 または、独自のソリューション地上-アップを作成するこのチュートリアルを使用する可能性があります。 このソリューションの構築方法を理解できるようにこのチュートリアルの 2 番目のアプローチが対象です。 また、可能な限り、チュートリアルはサンプルを使用して一貫性のある使用してアーティファクト (スキーマ、変換など) に同じ名前として、サンプルで使用されます。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

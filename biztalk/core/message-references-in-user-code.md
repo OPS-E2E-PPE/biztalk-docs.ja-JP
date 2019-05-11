@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 71e73eb9b953e514e48ae4e927ec3e4c104feb43
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 77603901b5fbbad945d9e6f0e34e3c4131bf33c8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36972499"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65394549"
 ---
 # <a name="message-references-in-user-code"></a>ユーザー コードでのメッセージ参照
 メッセージが構築された時点では、メッセージ ボックス データベースとコンピューターのメモリにメッセージ表現が存在します。 メッセージ参照を .NET オブジェクトまたは外部アセンブリに渡し、この .NET オブジェクトまたは外部アセンブリでコンピューターのメモリにあるメッセージ表現を変更することによってメッセージ割り当てを行った場合、BizTalk オーケストレーション エンジンではその変更が認識されません。  

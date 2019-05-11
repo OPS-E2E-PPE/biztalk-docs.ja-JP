@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8b369b3ce29b989f01f0ea95d6f32a663d7e7bc5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 70011a83e5264344a5ef4f30c4525529aa403dce
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36980772"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65393771"
 ---
 # <a name="type-cannot-be-found-in-namespace"></a>種類が名前空間に見つかりません
 ## <a name="details"></a>詳細  
@@ -30,10 +30,10 @@ ms.locfileid: "36980772"
 |  イベント ソース   |                                         0                                          |
 |    コンポーネント    |                                         0                                          |
 |  シンボル名  |                                         0                                          |
-|  メッセージ テキスト   |                エラー: 型"{0}「名前空間で見つかったことはできません」{1}"                |
+|  メッセージ テキスト   |                エラー:型"{0}「名前空間で見つかったことはできません」{1}"                |
   
 ## <a name="explanation"></a>説明  
- このエラーは、作成されたアイテムが、指定した名前空間に存在しない種類を参照していることを示します。  
+ このエラーは、作成される成果物が型指定された名前空間で見つからないを参照していることを示します。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- 存在しない種類を含む参照を追加し、ウィザードを再実行します (使用する予定の WCF サービスを所有している場合)。 それ以外の場合、サービス プロバイダーに問い合わせてください。
+ 型が見つからないことが含まれている参照を追加し、(使用しようとしている WCF サービスを所有) 場合は、ウィザードを再度実行します。 それ以外の場合、サービス プロバイダーに問い合わせてください。

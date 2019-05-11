@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10526 |Microsoft Docs'
+title: シングル サインオン:イベント 10526 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 433190146391c494ff3b890c8332cc15fb947753
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 924f6dee79b51740c62b302a0e57371fdd060470
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37024456"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65394324"
 ---
-# <a name="single-sign-on-event-10526"></a>シングル サインオン: イベント 10526
+# <a name="single-sign-on-event-10526"></a>シングル サインオン:イベント 10526
 ## <a name="details"></a>詳細  
 
 |                 |                                                                                                                                                                   |
@@ -28,21 +28,21 @@ ms.locfileid: "37024456"
 | 製品バージョン |                                                    [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                                                     |
 |    イベント ID     |                                                                               10526                                                                               |
 |  イベント ソース   |                                                                              ENTSSO                                                                               |
-|    コンポーネント    |                                                                                N\A                                                                                |
+|    コンポーネント    |                                                                                該当なし                                                                                |
 |  シンボル名  |                                                                 SSO_ERROR_GENERATE_SECRET_FAILED                                                                  |
-|  メッセージ テキスト   | 新しいマスター シークレットを生成できませんでした。%r<br /><br /> クライアント ユーザー: 1 %r<br /><br /> クライアント コンピューター: %2%r<br /><br /> 追跡 ID: % 3 %r<br /><br /> エラー コード: %4 |
+|  メッセージ テキスト   | 新しいマスター secret.%r を生成できませんでした。<br /><br /> クライアント ユーザー: 1 %r<br /><br /> クライアント コンピューター: %2 %r<br /><br /> 追跡 ID: % 3 %r<br /><br /> エラー コード: %4 |
 
 ## <a name="explanation"></a>説明  
- このエラー イベントは、ユーザーが新しいマスター シークレットを生成しようとしたが、失敗したことを示します。 原因としては、アクセス許可の問題 (マスター シークレットを生成するには SSO 管理者である必要がある) であるか、またはバックアップ ファイルへのマスター シークレットの書き込みに問題がある可能性があります。 これらの場合、アプリケーション イベント ログに関連するメッセージがあります。  
+ このエラー イベントは、新しいマスター シークレットを生成するユーザーの試行が失敗したことを示します。 原因としては、アクセス許可 (マスター シークレットを生成するのには、SSO 管理者である必要があります) の問題またはバックアップ ファイルに、マスター シークレットの書き込みに問題があった可能性があります。 このような場合があります関連するメッセージ、アプリケーション イベント ログ。  
 
 ## <a name="user-action"></a>ユーザーの操作  
  このエラーを解決するには、以下の 1 つ以上の操作を実行します。  
 
-- 関連するイベントまたはエラーについては、アプリケーション イベント ログを確認します。  
+- アプリケーション イベント ログの関連するイベントまたはエラーを確認します。  
 
 - 適切な SSO 管理者のアクセス許可があることを確認します。  
 
-  詳細については、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ヘルプの次の情報を参照してください:   
+  詳細については、の次のリソースを参照してください。[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプ。  
 
 - [マスター シークレットを生成する方法](../core/how-to-generate-the-master-secret.md)  
 

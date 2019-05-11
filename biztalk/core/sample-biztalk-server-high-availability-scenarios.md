@@ -1,5 +1,5 @@
 ---
-title: BizTalk Server の高可用性のシナリオのサンプル |Microsoft ドキュメント
+title: BizTalk Server の高可用性のシナリオのサンプル |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -22,51 +22,51 @@ caps.latest.revision: 30
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ff4db96e89dc91ee96aaf5f0b60f0de34ce83425
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 950f82a57c1f0be599fa9fbcceb4b6a590a0576e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22271666"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65393921"
 ---
-# <a name="sample-biztalk-server-high-availability-scenarios"></a>BizTalk Server の高可用性を実現するサンプル シナリオ
-このトピックは、ホストをスケールアウトすることによって Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の高可用性を実現するシナリオについて説明します。 管理者は、それぞれの機能領域を [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の異なるホストおよび層に分離することにより、各ホストの冗長性を確保し、他のホストから独立して個別に拡張することができます。 各機能領域の高可用性を実現するには、主要な機能 (受信、処理、送信、および追跡) ごとに別々のホストを作成し、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] データベースとエンタープライズ シングル サインオンのマスター シークレット サーバーをクラスター化します。  
+# <a name="sample-biztalk-server-high-availability-scenarios"></a>サンプル BizTalk Server の高可用性のシナリオ
+このトピックでは、Microsoft のシナリオを説明します[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]をホストのスケール アウト層から高可用性を提供します。 別々 のホスト機能と階層内の領域を分離することで[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理者は、各ホストの冗長性を確保し、他のホストとは独立してスケールします。 各機能領域の高可用性を実現するには、プライマリ関数ごとに個別のホストを作成する-受信、処理、送信、および追跡-クラスターと、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]データベースと、エンタープライズ シングル サインオン マスター シークレット サーバーです。  
   
-## <a name="small-biztalk-server-deployments"></a>BizTalk Server の小規模な展開  
- SQL Server と [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の両方に高可用性を確保する最小限の [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 環境には、SQL Server をアクティブ/アクティブのクラスター構成で実行する 2 台のコンピューターを使用します。 この場合、両方のコンピューターが、BizTalk 環境のホスト インスタンスをすべて実行することになります。 1 台のコンピューターでエラーや障害が発生した場合、もう 1 台のコンピューターが、SQL Server と BizTalk Server の両方のサービスを引き継ぎます。 この構成はマスター シークレット サーバーのクラスター化に対応していないため、可用性はあまり高くありません。クラスター化されたエンタープライズ シングル サインオン リソースが [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] コンピューターでパッシブになっていて、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ホスト インスタンスが起動しないからです。 マスター シークレット サーバーをクラスタ リングの詳細については、次を参照してください。[エンタープライズ シングル サインオンの高可用性](../core/high-availability-for-enterprise-single-sign-on.md)です。  
+## <a name="small-biztalk-server-deployments"></a>小規模の BizTalk Server の展開  
+ 最小[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]両方 SQL Server の高可用性を提供する展開と[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]for SQL Server をアクティブ/アクティブ クラスター構成を持つ 2 台のコンピューターの構成されます。 両方のコンピューターには、環境内のすべての BizTalk ホストのインスタンスが含まれます。 1 台のコンピューターでは、障害が発生したり、エラーが発生した、他のコンピューターは、SQL Server と BizTalk Server の両方のサービスの可用性を維持します。 この構成できないため、マスター シークレット サーバーをクラスター対応していないため、高可用性は[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ホスト インスタンスが起動しない、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]パッシブ クラスター化されたエンタープライズ シングル サインオン リソースのコンピューター。 マスター シークレット サーバーをクラスタ リングの詳細については、次を参照してください。[エンタープライズ シングル サインオンの高可用性](../core/high-availability-for-enterprise-single-sign-on.md)します。  
   
- 5 台未満のコンピューターから成る小規模な [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 環境では、BizTalk Server のデータベースをホストする SQL Server クラスターを、BizTalk Server コンピューターとは別のコンピューターで実行することをお勧めします。 BizTalk Server コンピューターでは、すべての BizTalk ホスト (受信、処理、および送信) を実行することができます。 この環境で高可用性を実現するには、SQL Server とエンタープライズ シングル サインオンのマスター シークレット サーバーをクラスター化して 2 つの BizTalk Server を用意し、それぞれが各ホストのインスタンスを実行するように構成します。  
+ 小規模[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]5 未満のコンピューターを含む展開では、お勧め、BizTalk Server コンピューターから別のコンピューターで BizTalk Server データベースを含む SQL Server クラスターを実行します。 BizTalk Server コンピューターは、すべての BizTalk ホストを実行できます (受信、処理、および送信) します。 この展開を高可用性にするには、クラスターの SQL Server と、エンタープライズ シングル サインオン マスター シークレット サーバーと、環境内の各ホスト インスタンスを実行する 2 つの BizTalk サーバーがあります。  
   
- 次の図は、小規模な BizTalk Server 環境に高可用性を実現した例を示しています。  
+ 次の図は、高可用性である小規模の BizTalk Server 展開を示します。  
   
- ![BizTalk Server の小規模展開](../core/media/tdi-highava-smalldepl.gif "TDI_HighAva_SmallDepl")  
+ ![小規模の BizTalk Server 展開](../core/media/tdi-highava-smalldepl.gif "TDI_HighAva_SmallDepl")  
   
-## <a name="medium-sized-biztalk-server-deployments"></a>BizTalk Server の中規模な展開  
- 5 台から 10 台のコンピューターから成る中規模の環境では、BizTalk Server データベースとエンタープライズ シングル サインオンのマスター シークレット サーバーをホストする SQL Server をクラスター化することをお勧めします。 受信の負荷が大きい場合、受信ホストのインスタンスを実行する専用の BizTalk Server を 2 つ用意することによって高可用性を確保できます。 さらに、処理と送信の両方のホスト インスタンスを実行する 2 台のコンピューターを追加します。 この環境に高可用性を実現するためには、2 つの BizTalk Server に対し、処理と送信の両方のホスト インスタンスを作成します。 同様に、処理の負荷が大きい場合は、処理ホストのインスタンスを実行する専用の BizTalk Server を 2 つ用意し、残りの 2 つの BizTalk Server で、受信ホストおよび送信ホストの両方のインスタンスを実行するように構成します。  
+## <a name="medium-sized-biztalk-server-deployments"></a>BizTalk Server の規模の展開  
+ 5 ~ 10 台のコンピューターを含む中規模の展開、BizTalk Server データベースを含む SQL Server と、エンタープライズ シングル サインオン マスター シークレット サーバーをクラスター化することをお勧めします。 自分のシナリオが受信集中型の場合は、専用の 2 つの BizTalk Server の高可用性ソリューションを提供する受信側のホスト インスタンスを実行したい場合があります。 2 つのコンピューターに、両方の処理を実行しているし、送信ホスト インスタンスをすることができます。 このようにするには、高可用性の展開が、両方の処理のホスト インスタンスを作成し、2 つの BizTalk サーバーでホストを送信します。 同様に、処理負荷の高いシナリオがあれば、処理ホストのインスタンスを実行し、受信側の両方のインスタンスを実行している残りの 2 つの BizTalk サーバーし、送信ホストに 2 つの BizTalk サーバー専用にする可能性があります。  
   
- 次の図は、中規模の BizTalk Server 環境で、受信機能を 2 つの BizTalk Server で実行することによって高可用性を実現する例を示しています。  
+ 次の図は、受信側の操作に専用の 2 つの BizTalk Server で高可用性規模の BizTalk Server 展開を示しています。  
   
- ![Medium &#45;BizTalk Server の展開の規模](../core/media/tdi-highava-meddepl.gif "TDI_HighAva_MedDepl")  
+ ![Medium&#45;BizTalk Server の展開の規模](../core/media/tdi-highava-meddepl.gif "TDI_HighAva_MedDepl")  
   
- エンタープライズ シングル サインオンの高可用性の詳細については、次を参照してください。[エンタープライズ シングル サインオンの高可用性](../core/high-availability-for-enterprise-single-sign-on.md)です。  
+ エンタープライズ シングル サインオンの高可用性に関する詳細については、次を参照してください。[エンタープライズ シングル サインオンの高可用性](../core/high-availability-for-enterprise-single-sign-on.md)します。  
   
 ## <a name="large-scale-biztalk-server-deployments"></a>BizTalk Server の大規模な展開  
- 10 台以上のコンピューターが存在する大規模な環境では、受信、処理、送信の各機能ごとに専用の BizTalk Server コンピューターを用意します。 また、グループ内に多数の BizTalk Server コンピューターが存在する場合は、メッセージ ボックス データベース コンピューターを追加してパフォーマンスを強化できます。 この場合、メッセージ ボックス データベースとマスター シークレット サーバーをクラスター化することで、高可用性が実現します。  
+ 10 個以上のコンピューターを含む大規模な展開では、専用の受信、処理、および送信の各機能の個別の BizTalk Server コンピューターを割り当てます。 また、多くの BizTalk Server コンピューター グループである場合は場合、は、パフォーマンスを向上させるその他のメッセージ ボックス データベース コンピューターを含めることができます。 この場合、クラスター、メッセージ ボックス データベース、高可用性を提供する場合は、マスター シークレット サーバーをクリックします。  
   
- このような分散構成では、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の柔軟性が最大限に発揮されます。環境内で障害の発生しやすい箇所を調べて特定し、戦略に基づいてリソースを割り当て、システムの障害発生点を減らしていくことができるためです。 変化の激しい今日のビジネス環境では、ワークロードやビジネス要件も日々変化するため、こうした柔軟性が不可欠です。  
+ このような分散構成の柔軟性を示して[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]を評価および、配置内のエラーの特定のポイントを特定し、戦略的に、システムでこれらのポイントを削減するリソースを割り当てることができるためです。 今日のダイナミックなビジネス環境は、ワークロードの変動やビジネス要件も日々 変化するために、このような柔軟性を要求します。  
   
- リソース消費の低いコンピューターから、リソース消費の激しいコンピューターへとリソースを移すことにより、既存のリソースを活用して高可用性を実現することができます。アップグレードや新しいハードウェアを購入するために投資を繰り返す必要はありません。  
+ アップグレードまたは新しいハードウェアを取得するのに追加のコストをかけるには、リソースの消費をあるコンピューターにいくつかのリソースを消費するコンピューターからリソースを移動することによって高可用性を実現するために既存のリソースを使用できます。  
   
- 次の図は、大規模な [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 環境における構成例を示しています。  
+ 次の図は、大規模な[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]展開します。  
   
- ![大規模な & #45 です。BizTalk Server の展開をスケール](../core/media/tdi-highava-largedepl.gif "TDI_HighAva_LargeDepl")  
+ ![大規模な&#45;BizTalk Server の展開をスケール](../core/media/tdi-highava-largedepl.gif "TDI_HighAva_LargeDepl")  
   
- エンタープライズ シングル サインオンの高可用性の詳細については、次を参照してください。[エンタープライズ シングル サインオンの高可用性](../core/high-availability-for-enterprise-single-sign-on.md)です。  
+ エンタープライズ シングル サインオンの高可用性に関する詳細については、次を参照してください。[エンタープライズ シングル サインオンの高可用性](../core/high-availability-for-enterprise-single-sign-on.md)します。  
   
-## <a name="providing-high-availability-using-hyper-v-and-failover-clustering"></a>Hyper-V とフェールオーバー クラスタリングによる高可用性の実現  
- Windows® Server 2008 Hyper-V ロールと Windows Server 2008 フェールオーバー クラスタリング機能を組み合わせて使用することで、仮想化サーバー コンピューティング環境における高可用性を確保できます。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 環境で使用される BizTalk Server コンピューターと SQL Server コンピューターは、Hyper-V の仮想化環境にインストールすることができます。その後、フェールオーバー クラスタリングを使用して高可用性を実現できます。 Hyper-V でゲスト オペレーティング システムを実行するのに伴いシステム リソース コストが発生するため、このようなソリューションを実稼働環境に展開する前に、全体のパフォーマンス テストを実行することをお勧めします。 詳細については、HYPER-V とフェールオーバー クラスタ リングを共に使用して仮想マシンの高可用性を実現するを参照してください「HYPER-V ステップ バイ ステップ ガイド:: HYPER-V とフェールオーバー クラスタ リング」 [http://go.microsoft.com/fwlink/?LinkID=129113](http://go.microsoft.com/fwlink/?LinkID=129113)です。 展開の詳細については、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] HYPER-V の仮想化環境でダウンロードできる BizTalk Server の HYPER-V ガイドを参照してください。 [http://go.microsoft.com/fwlink/?LinkId=189706](http://go.microsoft.com/fwlink/?LinkId=189706)です。  
+## <a name="providing-high-availability-using-hyper-v-and-failover-clustering"></a>HYPER-V とフェールオーバー クラスタ リングを使用して高可用性の実現  
+ Windows® Server 2008 HYPER-V の役割と Windows Server 2008 フェールオーバー クラスタ リング機能は、仮想化サーバー コンピューティング環境の高可用性を提供する同時使用できます。 BizTalk Server コンピューターとで使用される SQL Server コンピュータ、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]展開を HYPER-V 仮想化環境にインストールされているし、フェールオーバー クラスタ リングによって高可用性になります。 HYPER-V でゲスト オペレーティング システムを実行に関連付けられているシステム リソースのコストがあるため、このようなソリューションを運用環境に展開する前に徹底的なパフォーマンス テストを実行することをお勧めします。 HYPER-V とフェールオーバー クラスタ リングを使用しての詳細についてはまとめて高可用性の仮想マシンを参照してください"HYPER-V ステップ バイ ステップ ガイド。HYPER-V とフェールオーバー クラスタ リング"で[ http://go.microsoft.com/fwlink/?LinkID=129113](http://go.microsoft.com/fwlink/?LinkID=129113)します。 展開の詳細については、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 、HYPER-V の仮想化環境でダウンロードできる BizTalk Server の HYPER-V ガイドを参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=189706](http://go.microsoft.com/fwlink/?LinkId=189706)します。  
   
 ## <a name="see-also"></a>参照  
  [BizTalk ホストの高可用性を実現します。](../core/providing-high-availability-for-biztalk-hosts.md)   
  [BizTalk Server データベースの高可用性を実現します。](../core/providing-high-availability-for-biztalk-server-databases.md)   
- [エンタープライズ シングル サインオンの高可用性](../core/high-availability-for-enterprise-single-sign-on.md)
+ [Enterprise Single Sign-On の高可用性](../core/high-availability-for-enterprise-single-sign-on.md)

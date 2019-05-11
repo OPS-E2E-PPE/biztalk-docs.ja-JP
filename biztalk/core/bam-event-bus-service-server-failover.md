@@ -1,5 +1,5 @@
 ---
-title: BAM イベント バス サービス サーバーのフェールオーバー |Microsoft ドキュメント
+title: BAM イベント バス サービス サーバーのフェールオーバー |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,34 +12,34 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5c1fafc3e97d9905a6efd0de8ff0f389c2a389bd
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ca99e507e5f0344f7991a6e6b3c7798fb309dad4
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22230642"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65530596"
 ---
 # <a name="bam-event-bus-service-server-failover"></a>BAM イベント バス サービス サーバーのフェールオーバー
 BAM イベント バス サービスには、予期しない障害が発生した場合にデータを失わずに復旧して再起動するためのフォールト トレランス ロジックが含まれています。  
   
- 複数のコンピューター上で BAM イベント バス サービスが有効になっている状態でサービスが失敗した場合、フェールオーバーのロジックでは BAM イベント バス サービスが停止したことが検出され、BAM イベント バス サービスの新しいインスタンスが自動的に別のコンピューター上で開始されます。  
+ 複数のコンピューターで BAM イベント バス サービスを有効にするし、サービスが失敗した場合、フェールオーバーのロジックは、BAM イベント バス サービスが終了すると、そのロジックでは、別のコンピューターで、BAM イベント バス サービスの新しいインスタンスを自動的に開始に検出されます。  
   
- BAM イベント バスが単純な負荷分散によってコンピューターまたはネットワークの障害を処理する方法を、次の図に示します。 BAM イベント バス サービスの開始前には、2 つの送信元と 1 つの送信先が構成されています。  
+ 次の図は、BAM イベント バスがコンピューターでどのように処理する方法を示します。 またはネットワーク障害によって、単純な負荷を分散します。 2 つのソースと変換先の 1 つは、BAM イベント バス サービスの開始前に構成されました。  
   
  ![](../core/media/ebiz-bam-admin-evntbuspoolfail.gif "ebiz_bam_admin_evntbuspoolfail")  
-BAM イベント バス サービスによる負荷分散の方法  
+BAM イベント バス サービスの負荷を分散する方法  
   
- BAM イベント バス サービスによる負荷分散は、次のようにして行われます。  
+ BAM イベント バス サービスの負荷は、次を実行することによって残高します。  
   
--   **A: Server1 は 2 つのソース (セッション) からイベント データを処理**です。 BAM イベント バス サービスのインスタンスがサーバー 2 で作成される前に、BAM イベント バス オーケストレーション インスタンスがサーバー 1 で作成されます。 サーバーは他に利用できるサービスがないことを検出し、Src1 および Src2 の両方のセッションを取得します。  
+-   **A:2 つのソース (セッション) からイベント データを処理する Server1**します。 Server2 で BAM イベント バス サービスのインスタンスを作成すると、前に、BAM イベント バス オーケストレーション インスタンスはサーバー 1 で作成します。 サーバーが検出されるその他のサーバー、およびそのため Src1 および Src2 の両方のセッションを取得します。  
   
--   **B: Server2 がオンラインになり、BAM イベント バス プールに参加**です。 BAM イベント バス サービスがサーバー 2 で作成された後、サーバー 1 が 1 つの BAM イベント バス サービス セッションをドロップし、サーバー 2 がそれを取得します。  
+-   **B:Server2 がオンラインになり、BAM イベント バス プールに参加**します。 Server2 で BAM イベント バス サービスのインスタンスが作成されると、Server1 は、1 つの BAM イベント バス サービス セッションを削除し、Server2 ピックアップします。  
   
--   **C: Server1 失敗**です。 サーバー 2 が BAE イベント バス プールに参加した後、サーバー 1 が失敗します。  
+-   **C:サーバー 1 が失敗**します。 Server1 は、Server2 BAM イベント バス プールに参加した後に失敗します。  
   
--   **D: server2 という 2 つのソース (セッション) からのイベント データを処理する**です。 サーバー 2 が、Src1 および Src2 の両方のセッションを取得します。  
+-   **D:Server2 という 2 つのソース (セッション) からイベント データを処理する**します。 Server2 では、Src1 および Src2 の両方のセッションを取得します。  
   
 ## <a name="see-also"></a>参照  
- [BAM イベント バス サービスを管理します。](../core/managing-the-bam-event-bus-service.md)   
+ [BAM イベント バス サービスの管理](../core/managing-the-bam-event-bus-service.md)   
  [BAM のセキュリティに関する推奨事項](../core/bam-security-recommendations.md)   
- [ビジネス アクティビティ監視 (BAM)](../core/business-activity-monitoring-bam.md)
+ [ビジネス アクティビティの監視 (BAM)](../core/business-activity-monitoring-bam.md)

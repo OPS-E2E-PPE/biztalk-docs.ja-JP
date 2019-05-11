@@ -12,18 +12,18 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 34f9dca1416b106e951b32efe79d18260201dc48
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e6ab5d688a0496ce55f1ae343ad48dba1ba901ba
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36973931"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65391105"
 ---
 # <a name="configuring-fallback-validation-properties-x12"></a>フォールバック検証プロパティの構成 (X12)
-X12 インターチェンジの検証生成のフォールバック設定は、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] で受信したインターチェンジ内の重複した制御番号の有無を確認する方法を定義します。  
+X12 インターチェンジの検証生成のフォールバックの設定を定義する方法[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]受信したインターチェンジの重複した制御番号を確認します。  
   
 > [!NOTE]
->  ここで説明する設定は、HIPAA インターチェンジの検証にも適用されます。  
+>  ここで説明した設定は、HIPAA インターチェンジの検証にも適用されます。  
   
 ## <a name="prerequisites"></a>前提条件  
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者グループまたは [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] B2B Operators グループのメンバーとしてログオンしている必要があります。  
@@ -34,7 +34,7 @@ X12 インターチェンジの検証生成のフォールバック設定は、[
   
 2. **X12 フォールバック設定**] ダイアログ ボックスで、 **X12 アグリーメント ページ**] タブの [、**インターチェンジの設定**セクションで、[**検証**.  
   
-3. 選択、**インターチェンジ制御番号**受信パイプラインによる重複インターチェンジのブロックを有効にする チェック ボックス。 選択した場合、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]は受信したインターチェンジのインターチェンジ制御番号 (ISA13) では、インターチェンジ制御番号が一致しないことを確認します。 一致した制御番号が検出された場合、受信パイプラインはインターチェンジを処理しません。  
+3. 選択、**インターチェンジ制御番号**受信パイプラインによる重複インターチェンジのブロックを有効にする チェック ボックス。 選択した場合、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]は受信したインターチェンジのインターチェンジ制御番号 (ISA13) では、インターチェンジ制御番号が一致しないことを確認します。 一致が検出されると、受信パイプラインはインターチェンジを処理できません。  
   
 4. 場合**インターチェンジ制御番号**がオン、**内で重複している isa13 を確認**フィールドに、特定を使用して、重複するインターチェンジに対する確認を実行する日数を入力します。インターチェンジ制御番号。  
   

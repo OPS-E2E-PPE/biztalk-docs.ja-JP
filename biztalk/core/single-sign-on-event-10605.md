@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10605 |Microsoft Docs'
+title: シングル サインオン:イベント 10605 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c578462759d2eeb69767d21191e028ef9e8ce1e5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 181191572cd433ebcd6ab2356a1cb0455c6a4c09
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36972515"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65397776"
 ---
-# <a name="single-sign-on-event-10605"></a>シングル サインオン: イベント 10605
+# <a name="single-sign-on-event-10605"></a>シングル サインオン:イベント 10605
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                                                                                                       |
@@ -36,4 +36,4 @@ ms.locfileid: "36972515"
  Microsoft 分散トランザクション コーディネーター (MSDTC) に問題があります。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- MSDTC の問題に関するヘルプは、[MSDTC を使用した問題のトラブルシューティング](../core/troubleshooting-problems-with-msdtc.md)を参照してください。
+ MSDTC の問題に関するヘルプは、次を参照してください。 [MSDTC を使用した問題のトラブルシューティング](../core/troubleshooting-problems-with-msdtc.md)します。

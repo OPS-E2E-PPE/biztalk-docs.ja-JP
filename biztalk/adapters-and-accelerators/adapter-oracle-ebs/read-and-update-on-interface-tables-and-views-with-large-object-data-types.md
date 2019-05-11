@@ -12,12 +12,12 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4f1336c1d6f5fb6ea7c0b68e4c7670616f141583
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c134719da5d7cfb8f6997495a01eb529c5ec0241
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36967691"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65374822"
 ---
 # <a name="operations-on-interface-tables-interface-views-tables-and-views-that-contain-lob-data"></a>インターフェイス テーブル、インターフェイス ビュー、テーブル、および LOB データを格納するビューに対する操作
 [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)] Oracle のラージ オブジェクト (LOB) データ型のサポートを提供します。  
@@ -28,7 +28,7 @@ ms.locfileid: "36967691"
   
 - 各国語文字ラージ オブジェクト (NCLOB)  
   
-- バイナリ ファイル (BFILE)。 詳細については、[テーブルを含む BFILE データ型に対する演算](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-tables-that-contain-bfile-data-types.md)を参照してください。  
+- バイナリ ファイル (BFILE)。 詳細については、次を参照してください。[テーブルを含む BFILE データ型に対する演算](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-tables-that-contain-bfile-data-types.md)します。  
   
   基になる Oracle データベースで LOB データ型を使用して、大量のデータを格納する最大 4 ギガバイト (GB)。 BFILE データ型を除くは、LOB データ型は、入力と出力のストリーミングの両方をサポートします。  
 
@@ -40,12 +40,12 @@ ms.locfileid: "36967691"
   > [!NOTE]
   >  `Read_<LOBColName>`操作は、WCF サービス モデル内の LOB データの入力ストリームをサポートするために設計されています。 WCF チャネル モデルから LOB データを読み取るテーブルの選択操作を使用する必要がありますまたは[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]ソリューション。  
   
-- **Update_\<LOBColName\>**:`Update_<LOBColName>`インターフェイス テーブルとのみ列を含む BLOB、CLOB、NCLOB、テーブルの操作が表示される場所\<LOBColName\>の名前を指定します列は、BLOB、CLOB、NCLOB を入力します。 による、Update_\<LOBColName\>操作、アダプター クライアントは、LOB の列の値を更新できます。 BLOB データの種類の CLOB、NCLOB データ型で、この操作は、パラメーターとして文字列のフィルターは、この操作は、パラメーターとして base64binary でエンコードされたデータを受け取ります。  
+- **Update_\<LOBColName\>**:`Update_<LOBColName>`インターフェイス テーブルとのみ列を含む BLOB、CLOB、NCLOB、テーブルの操作が表示される場所\<LOBColName\>型の列の名前を指定し、BLOB、CLOB、NCLOB します。 による、Update_\<LOBColName\>操作、アダプター クライアントは、LOB の列の値を更新できます。 BLOB データの種類の CLOB、NCLOB データ型で、この操作は、パラメーターとして文字列のフィルターは、この操作は、パラメーターとして base64binary でエンコードされたデータを受け取ります。  
   
   > [!NOTE]
   >  `Update_<LOBColName>`操作。  
   > 
-  > - BFILE データ型のサポートされていません。 アダプター クライアントは、更新操作を使用してもできます。 詳細については、[テーブルを含む BFILE データ型に対する演算](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-tables-that-contain-bfile-data-types.md)を参照してください。  
+  > - BFILE データ型のサポートされていません。 アダプター クライアントは、更新操作を使用してもできます。 詳細については、次を参照してください。[テーブルを含む BFILE データ型に対する演算](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-tables-that-contain-bfile-data-types.md)します。  
   >   -   公開されませんビューとビューのインターフェイスします。  
   >   -   トランザクションの一部として実行する必要があります。 これは、確実に、 **UseAmbientTransaction**に設定するプロパティをバインドする必要があります**True**します。 については、 **UseAmbientTransaction**プロパティ、バインドを参照してください[BizTalk Adapter for Oracle E-business Suite バインド プロパティの Rad](../../adapters-and-accelerators/adapter-oracle-ebs/read-about-the-biztalk-adapter-for-oracle-e-business-suite-binding-properties.md)します。  
   

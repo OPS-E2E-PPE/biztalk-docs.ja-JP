@@ -17,20 +17,20 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3c5cc4708692e659019cf8d95a18868929f75654
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f107f3fd36a7491e8c0e3871fc03a480cf3e6c8e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36985403"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65334084"
 ---
-# <a name="how-to-show-and-hide-property-schemas"></a>プロパティ スキーマを表示または非表示にする方法
-このトピックでは、BizTalk Server 管理コンソールを使用してアプリケーションの Schemas フォルダーでプロパティ スキーマを表示または非表示にする方法について説明します。 プロパティ スキーマは、昇格させたプロパティを、インスタンス メッセージからメッセージ コンテキストへ、あるいは、メッセージ コンテキストからインスタンス メッセージへとコピーするプロセスを実行する、簡易版の BizTalk スキーマといえます。 プロパティ スキーマを非表示にすると、ドキュメント スキーマのみが表示され、スキーマ ビューが簡略化されます。  
+# <a name="how-to-show-and-hide-property-schemas"></a>プロパティ スキーマを非表示にしたりする方法
+このトピックでは、BizTalk Server 管理コンソールを使用して、アプリケーションの Schemas フォルダーでプロパティ スキーマを非表示にしたりする方法について説明します。 プロパティ スキーマは、インスタンス メッセージとメッセージ コンテキストの間を行き来昇格させたプロパティをコピーするプロセスで再生する BizTalk スキーマの簡易バージョンです。 ドキュメント スキーマのみ表示することは、スキーマ ビューを簡略化するプロパティ スキーマを非表示にすることがあります。  
   
 ## <a name="prerequisites"></a>前提条件  
- このトピックの手順を実行するには、BizTalk Server 管理者グループまたは BizTalk Server Operators グループのメンバー アカウントでログオンする必要があります。 詳細なアクセス許可についてを参照してください。[を展開すると、BizTalk アプリケーションの管理に必要なアクセス許可](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)します。  
+ このトピックの手順を実行するには、BizTalk Server 管理者グループまたは BizTalk Server Operators グループのメンバーであるアカウントでログオンする必要があります。 詳細なアクセス許可についてを参照してください。[を展開すると、BizTalk アプリケーションの管理に必要なアクセス許可](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)します。  
   
-### <a name="to-show-or-hide-property-schemas-in-the-schemas-folder"></a>Schemas フォルダーでプロパティ スキーマを表示または非表示にするには  
+### <a name="to-show-or-hide-property-schemas-in-the-schemas-folder"></a>Schemas フォルダーでプロパティ スキーマを非表示  
   
 1. クリックして**開始**、 をクリックして**すべてのプログラム**、 をクリックして[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリックします**BizTalk Server 管理**します。  
   

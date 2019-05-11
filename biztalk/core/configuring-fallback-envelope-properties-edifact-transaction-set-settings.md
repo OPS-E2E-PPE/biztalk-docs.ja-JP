@@ -12,17 +12,17 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6f060b37004346ae5b7419acbe9f1fcf1d128179
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6d0dbad19076ab457f91dc41970d1c07c88cf45e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37020262"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65391332"
 ---
 # <a name="configuring-fallback-envelope-properties-edifact-transaction-set-settings"></a>フォールバック エンベロープ プロパティの構成 (EDIFACT トランザクション セットの設定)
 **エンベロープ**のページ、**トランザクション セットの設定** セクションで、BizTalk Server が、パーティに送信する EDIFACT エンコード インターチェンジの UNG セグメントを生成する方法を定義します。  
   
- UNG セグメントは、EDIFACT エンコード インターチェンジの機能グループを識別および指定するヘッダーです。 UNG セグメントには、機能グループに含まれているドキュメントの種類とバージョンのほか、機能グループが準備された日時に関する情報が含まれています。  
+ UNG セグメントは、ヘッダーを識別し、EDIFACT エンコード インターチェンジの機能グループを指定します。 種類と、機能グループ内のドキュメントのバージョンと共に、機能グループが準備された日時に関する情報が含まれています。  
   
 ## <a name="prerequisites"></a>前提条件  
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者グループまたは [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] B2B Operators グループのメンバーとしてログオンしている必要があります。  
@@ -39,13 +39,13 @@ ms.locfileid: "37020262"
   
    -   **Id (UNG2.1)**、1 つの文字の最小値、最大 35 文字の英数字を入力します。 このフィールドは必須です。  
   
-   -   **コードの修飾子 (UNG2.2)**、1 つの文字の最小値、最大 4 文字の英数字を入力します。 このフィールドの入力は省略可能です。  
+   -   **コードの修飾子 (UNG2.2)**、1 つの文字の最小値、最大 4 文字の英数字を入力します。 これは、オプションのフィールドです。  
   
 5. 識別する値を入力して**アプリケーション受信者 (UNG3)** します。  
   
    -   **の Id (UNG3.1)**、1 つの文字の最小値、最大 35 文字の英数字を入力します。 このフィールドは必須です。  
   
-   -   **コードの修飾子 (UNG3.2)**、1 つの文字の最小値、最大 4 文字の英数字を入力します。 このフィールドの入力は省略可能です。  
+   -   **コードの修飾子 (UNG3.2)**、1 つの文字の最小値、最大 4 文字の英数字を入力します。 これは、オプションのフィールドです。  
   
 6. **制御機関 (UNG6)**、1 つの文字の最小値、最大 2 つの文字の英数字を入力します。 このフィールドは必須です。  
   
@@ -55,7 +55,7 @@ ms.locfileid: "37020262"
   
    -   **リリース (UNG7.2)**、1 つの文字の最小値、最大 3 つの文字の英数字を入力します。 このフィールドは必須です。  
   
-   -   **関連付けの割り当てコード (UNG7.3)**、1 文字の最小値、最大 6 文字の英数字を入力します。 このフィールドの入力は省略可能です。  
+   -   **関連付けの割り当てコード (UNG7.3)**、1 文字の最小値、最大 6 文字の英数字を入力します。 これは、オプションのフィールドです。  
   
 8. **アプリケーション パスワード (UNG8)**、1 つの文字の最小値、最大 14 文字の英数字を入力します。 このフィールドは必須です。  
   

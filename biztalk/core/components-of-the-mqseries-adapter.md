@@ -18,38 +18,38 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: afeac0dda1d42c244eeeac124632ed68aa2e90d4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6c6a97bd38a68eef866549f980624a92ee2b3143
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36990331"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65391638"
 ---
 # <a name="components-of-the-mqseries-adapter"></a>MQSeries アダプターのコンポーネント
-MQSeries アダプターでは、2 つのコンポーネントを使用して、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] と MQSeries Server for Windows の間のドキュメント転送を容易にしています。  
+MQSeries アダプターの間のドキュメント転送を容易に 2 つのコンポーネントを使用して[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]と MQSeries Server for Windows。  
   
-- **BizTalk コンポーネントです。** Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] と同じコンピューターにこのコンポーネントをインストールします。 このコンポーネントによって BizTalk Server との通信が行われます。  
+- **BizTalk コンポーネントです。** Microsoft と同じコンピューターにこのコンポーネントをインストール[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]します。 このコンポーネントは、BizTalk Server と通信します。  
   
-- **MQSeries コンポーネントです。** MQSeries Server for Windows にこのコンポーネントをインストールします。 MQSeries Server for Windows は、[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] または [!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] 上で動作します。 このコンポーネント (MQSAgent と呼ばれます) によって IBM MQSeries Server との通信が行われます。  
+- **MQSeries コンポーネントです。** Windows の MQSeries サーバーでこのコンポーネントをインストールします。 MQSeries Server for Windows 上で実行[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]または[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]します。 このコンポーネント (MQSAgent と呼ばれます) は、IBM MQSeries Server と通信します。  
   
   > [!NOTE]
-  >  MQSeries アダプターの MQSAgent コンポーネントは、Windows 上の MQSeries Server 5.3、CSD10 以降、および WebSphere MQSeries Server 6.0 に対して実行できます。  
+  >  MQSeries アダプターの MQSAgent コンポーネントは、サポートされている実行に対して MQSeries Server 5.3、CSD10 以降および Windows 上の WebSphere MQSeries Server 6.0 です。  
   
-  次の図に、MQSeries アダプターの一般的な使用方法を示します。  
+  次の図では、アダプターの一般的な使用について説明します。  
   
   ![MQSeries Server と BizTalk 間のフローを文書化](../core/media/bts-dev-mqadapterflow.gif "BTS_Dev_MQAdapterFlow")  
   
-  MQSeries アダプターは、メッセージング標準として MQSeries を選択している企業で [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を使用できるようにする接続ソリューションです。 このソリューションを開発した背景として、以下のような課題がありました。  
+  MQSeries アダプターが使用できるようにする接続ソリューション[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]エンタープライズで選択したメッセージング標準として MQSeries します。 このソリューションが開発されたように促されて、一部を次の問題。  
   
-- 簡単なインストールと構成、および MQSeries 接続ソリューションに対する顧客の要望に応えること  
+- 簡単なインストールと構成、および MQSeries 接続ソリューションに対する顧客の要望に対応  
   
-- 最大 100 MB のメッセージ サイズをサポートすること  
+- 最大 100 MB のサイズをメッセージのサポート  
   
-- MQSeries のサポートを提供すること  
+- MQSeries のサポートを提供します。  
   
-- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] に送信される MQSeries メッセージに対するプラグ アンド プレイの接続ソリューションを提供すること  
+- 送信される MQSeries メッセージのプラグ アンド プレイの接続ソリューションを提供します。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]  
   
-  MQSeries アダプターは、さまざまな通信プロトコル標準用のリスナー セットを提供する、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 受信サービスの重要な追加機能です。 これらのリスナーによって、HTTP、FTP、MQSeries などのプロトコルがエンタープライズ アプリケーション統合 (EAI)、企業間統合、またはアプリケーション統合の取引関係に追加されます。  
+  MQSeries アダプターは、重要な追加、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]さまざまな通信プロトコル標準用のリスナーのセットを提供する受信サービスのスイートです。 リスナーは、エンタープライズ アプリケーション統合 (EAI)、企業間取引、またはアプリケーションの統合の取引関係にプロトコル、HTTP、FTP、または MQSeries、たとえばをアタッチします。  
   
 ## <a name="see-also"></a>参照  
  [MQSeries アダプターのアーキテクチャ](../core/mqseries-adapter-architecture.md)   

@@ -1,5 +1,5 @@
 ---
-title: 使用して、フラット ファイルのシリアル化エンジン |Microsoft ドキュメント
+title: 使用して、フラット ファイルのシリアル化エンジン |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: eb4f39f42c3513932b54a92946e448d821ee362a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d9a854a440dda25c822b923f7ca17ef8e80ccc34
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22287570"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396030"
 ---
-# <a name="using-the-flat-file-serializing-engine"></a>フラット ファイルのシリアル化エンジンを使用します。
-フラット ファイルのシリアル化エンジンが呼び出すことによって呼び出される、 **Serialize**のメソッド、 **IFFDocumentSpec**インターフェイスです。 により、カスタマイズされた**XmlReader**メソッドの引数、最後のデータをシリアル化を制御することができます。 データは任意の形式にできます。また、単純に XmlDocument で作成したデータ リーダーにすることもできます。  
+# <a name="using-the-flat-file-serializing-engine"></a>フラット ファイルをシリアル化エンジンを使用します。
+呼び出すことによって、フラット ファイル シリアル化エンジンが呼び出される、 **Serialize**のメソッド、 **IFFDocumentSpec**インターフェイス。 により、カスタマイズされた**XmlReader**メソッドの引数としては、最後のデータをシリアル化を制御できます。 任意の形式でデータ可能性があります。 または単に作成できませんでした、リーダーの xmldocument です。  
   
 ## <a name="example"></a>例  
   

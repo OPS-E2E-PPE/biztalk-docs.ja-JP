@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a5ad0e2b649757ee591b476f29d030b2d49b8850
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 486e8bb9481a08c0f7d017362b6d2a9ab3940a05
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37017022"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65393490"
 ---
 # <a name="how-to-move-the-bam-star-schema-database"></a>BAM スター スキーマ データベースを移動する方法
 ここでは、BAM スター スキーマ データベースを他のサーバーに移動する手順について説明します。  エンド ツー エンドのシナリオの観点から、BAM スター スキーマ データベースの移動にも 2 つの主要な手順が含まれます。  
@@ -48,11 +48,11 @@ ms.locfileid: "37017022"
   
         **net stop NS$ BamAlerts**  
   
-5. 古いサーバーで、BAM スター スキーマ データベースをバックアップします。 データベースのバックアップの手順についてに記載された手順に従います[方法:、データベースのバックアップ (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=156510) (<http://go.microsoft.com/fwlink/?LinkId=156510>) で[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]データベースをバックアップする方法のオンライン ブックの「します。  
+5. 古いサーバーで、BAM スター スキーマ データベースをバックアップします。 データベースのバックアップの手順についてに記載された手順に従います[方法。データベースのバックアップ (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=156510) (<http://go.microsoft.com/fwlink/?LinkId=156510>) で[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]データベースをバックアップする方法のオンライン ブックの「します。  
   
 6. BAM スター スキーマ データベースのコピーを新しい[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]コンピューター。  
   
-7. 新しいサーバーで、BAM スター スキーマ データベースを復元します。 以下の手順については、データベースを復元する方法」の手順に従って[方法: データベース バックアップ (SQL Server Management Studio) を復元](http://go.microsoft.com/fwlink/?LinkId=156511)(<http://go.microsoft.com/fwlink/?LinkId=156511>) で[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]データベースを復元する方法のオンライン ブックの「します。  
+7. 新しいサーバーで、BAM スター スキーマ データベースを復元します。 以下の手順については、データベースを復元する方法」の手順に従って[方法。データベースのバックアップ (SQL Server Management Studio) 復元](http://go.microsoft.com/fwlink/?LinkId=156511)(<http://go.microsoft.com/fwlink/?LinkId=156511>) で[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]データベースを復元する方法のオンライン ブックの「します。  
   
 ##  <a name="BKMK_StarUpdate"></a> 新しい BAM スター スキーマ データベースへの参照を更新しています  
  データベースを移動した後は、新しい BAM スター スキーマ データベースに対するすべての参照を更新する必要があります。 次の参照を更新する必要があります。  
@@ -81,7 +81,7 @@ ms.locfileid: "37017022"
   
    3. コマンド プロンプトで、次のように入力します。  
   
-       **Bm.exe config の取得 –filename:BAMConfiguration.xml-サーバー:\<servername\> -データベース:\<データベース\>**  
+       **Bm.exe get-config –filename:BAMConfiguration.xml -server:\<servername\> -database:\<database\>**  
   
       > [!NOTE]
       >  このコマンドを実行するときに、実際の構成情報の取得元のサーバーの名前に置き換えてください\<servername\>の構成情報の取得元のデータベースの実際の名前に置き換えます。\<データベース\>します。 詳細については、BAM 管理 (BM) ユーティリティを使用して、次を参照してください。[インフラストラクチャ管理コマンド](http://go.microsoft.com/fwlink/?LinkId=156516)(<http://go.microsoft.com/fwlink/?LinkId=156516>) で[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプ。  
@@ -104,13 +104,13 @@ ms.locfileid: "37017022"
   
 6. コマンド プロンプトで、次のように入力します。  
   
-    **bm.exe の更新-構成-FileName:BAMConfiguration.xml**  
+    **bm.exe update-config -FileName:BAMConfiguration.xml**  
   
 ###  <a name="BKMK_StarUpdateRef"></a> サーバーとすべての BAM SSIS パッケージ内のデータベース名を更新するには  
   
 1.  すべての BAM 分析 SSIS パッケージ「bam_an _」が付いてでサーバーとデータベースの名前を更新します。 これを行うには、次のようにクリックします**開始**、 をクリック**すべてのプログラム**、 をクリック**Microsoft SQL Server 2008 R2**または**Microsoft SQL Server 2008 SP1**、順にクリックします。**SQL Server Business Intelligence Development Studio**します。  
   
-2.  SQL Server Business Intelligence Development Studio で、プロジェクトを新規作成します。 をクリックして**ファイル**、 をクリックして**新規**、 をクリックし、**プロジェクト**します。  
+2.  SQL Server Business Intelligence Development Studio で、プロジェクトを新規作成します。 をクリックして**ファイル**、 をクリックして**新規**、クリックして**プロジェクト**です。  
   
 3.  **新しいプロジェクト**] ダイアログ ボックスで、**プロジェクトの種類**ボックスで、[**ビジネス インテリジェンス プロジェクト**します。 右側のウィンドウで、**テンプレート**ボックスで、 **Integration Services プロジェクト**、順にクリックします**OK**。  
   
@@ -161,7 +161,7 @@ ms.locfileid: "37017022"
     > [!NOTE]  
     >  すべてのパッケージを更新するには、手順 18 ~ 21 を繰り返します。  
   
-22. をクリックして**OK**、順にクリックします**はい**を上書きします。  
+22. をクリックして **[ok]**、順にクリック**はい**を上書きします。  
   
 23. すべての BAM キューブ更新およびデータ保守 SSIS パッケージを有効にします。  
   
@@ -189,7 +189,7 @@ ms.locfileid: "37017022"
   
         **Net start NS$ BamAlerts**  
   
-9. すべての不完全なトレース インスタンスを解決します。  不完全な BAM アクティビティ インスタンスの解決方法の詳細については、[不完全なアクティビティ インスタンスの解決方法](http://go.microsoft.com/fwlink/?LinkId=151475)(http://go.microsoft.com/fwlink/?LinkId=151475)を参照してください。  
+9. すべての不完全なトレース インスタンスを解決します。  不完全な BAM アクティビティ インスタンスの解決方法の詳細については、次を参照してください。[不完全なアクティビティ インスタンスの解決方法](http://go.microsoft.com/fwlink/?LinkId=151475)(http://go.microsoft.com/fwlink/?LinkId=151475)します。  
   
 > [!TIP]  
 >  をお勧め、BAMStarSchema データベースをホストするサーバーに bam_an _ * SSIS パッケージを移動する必要があります。  

@@ -1,5 +1,5 @@
 ---
-title: '手順 6: BizTalk オーケストレーション サーバーの構成 |Microsoft Docs'
+title: 手順 6:BizTalk オーケストレーション サーバーの構成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,14 +15,14 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 51ca589433d945dfdc5acac0602151b9f7cf6374
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 59b1eea5ca26e951f25ebda75a09941afba6fabf
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36991723"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65530112"
 ---
-# <a name="step-6-configuring-the-biztalk-orchestration-servers"></a>手順 6: BizTalk オーケストレーション サーバーの構成
+# <a name="step-6-configuring-the-biztalk-orchestration-servers"></a>手順 6:BizTalk オーケストレーション サーバーの構成
 このセクションでは、BizTalk オーケストレーション サーバーの構成のガイドラインを提供します。  
   
 ### <a name="to-configure-the-biztalk-orchestration-servers"></a>BizTalk オーケストレーション サーバーを構成するには  

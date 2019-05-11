@@ -23,12 +23,12 @@ caps.latest.revision: 28
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 35a6457911e17c11c1ce09ff9c76a42f72b7bc2c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: bf72f7508444e456d938c4157e25cc9869e93e36
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37023856"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395195"
 ---
 # <a name="what-is-a-biztalk-application"></a>BizTalk アプリケーションについて
 BizTalk アプリケーションは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ビジネス ソリューションの展開、管理、およびトラブルシューティングをすばやく簡単に行えるようにする [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の新機能です。 BizTalk アプリケーションは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ビジネス ソリューションで使用される "アイテム" の論理グループです。 アイテムについては後で詳しく説明します。  
@@ -54,20 +54,20 @@ BizTalk アプリケーションは、[!INCLUDE[btsBizTalkServerNoVersion](../in
   
 - ソリューションで使用されるその他のアイテム (証明書、COM コンポーネント、スクリプトなど)  
   
-  成果物の種類ごとの背景については、[ランタイム アーキテクチャ](../core/runtime-architecture.md)を参照してください。 追加の詳細については、削除、およびアーティファクトの構成を参照してください[管理成果物](../core/managing-artifacts.md)します。  
+  成果物の種類ごとの背景については、次を参照してください。[ランタイム アーキテクチャ](../core/runtime-architecture.md)します。 追加の詳細については、削除、およびアーティファクトの構成を参照してください[管理成果物](../core/managing-artifacts.md)します。  
   
-  アプリケーションには、ビジネス ソリューションで使用されているすべてのアイテムを含めることも、一部のみを含めることもできます。 アイテムを 1 つのアプリケーションに配置した方がよいか、2 つ以上のアプリケーションに分けた方がよいかは、アイテムの展開方法によって異なります。 成果物をグループ化する方法を決定する方法の詳細については、[BizTalk アプリケーションの展開のベスト プラクティス](../core/best-practices-for-deploying-a-biztalk-application.md)を参照してください。  
+  アプリケーションには、ビジネス ソリューションで使用されているすべてのアイテムを含めることも、一部のみを含めることもできます。 アイテムを 1 つのアプリケーションに配置した方がよいか、2 つ以上のアプリケーションに分けた方がよいかは、アイテムの展開方法によって異なります。 成果物をグループ化する方法を決定する方法の詳細については、次を参照してください。 [BizTalk アプリケーションの展開のベスト プラクティス](../core/best-practices-for-deploying-a-biztalk-application.md)します。  
   
 ## <a name="the-default-application"></a>既定のアプリケーション  
- BizTalk Server は、次のインストールが構成されて、BizTalk アプリケーション 1 という名前の既定のアプリケーションが自動的に作成します。 異なるアプリケーションにアイテムをグループ化のベスト プラクティスについては、[BizTalk アプリケーションの展開のベスト プラクティス](../core/best-practices-for-deploying-a-biztalk-application.md)を参照してください。 既定のアプリケーションを変更したり、既定のアプリケーションの名前を変更したりすることもできます。  
+ BizTalk Server は、次のインストールが構成されて、BizTalk アプリケーション 1 という名前の既定のアプリケーションが自動的に作成します。 異なるアプリケーションにアイテムをグループ化のベスト プラクティスについては、次を参照してください。 [BizTalk アプリケーションの展開のベスト プラクティス](../core/best-practices-for-deploying-a-biztalk-application.md)します。 既定のアプリケーションを変更したり、既定のアプリケーションの名前を変更したりすることもできます。  
   
  次のシナリオでは、アイテムは自動的に既定のアプリケーションに追加されます。  
   
-- アプリケーション名を指定せずに、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] から [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] にアセンブリを展開する場合。 詳細については、[Visual Studio から BizTalk アセンブリを展開する方法](../core/how-to-deploy-a-biztalk-assembly-from-visual-studio.md)を参照してください。  
+- アプリケーション名を指定せずに、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] から [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] にアセンブリを展開する場合。 詳細については、次を参照してください。 [Visual Studio から BizTalk アセンブリを展開する方法](../core/how-to-deploy-a-biztalk-assembly-from-visual-studio.md)します。  
   
-- BTSTask を使用して、アプリケーション名を指定せずにアイテムをアプリケーションに追加する場合。 詳細については、[AddResource コマンド](../core/addresource-command.md)を参照してください。  
+- BTSTask を使用して、アプリケーション名を指定せずにアイテムをアプリケーションに追加する場合。 詳細については、次を参照してください。 [AddResource コマンド](../core/addresource-command.md)します。  
   
-- BTSTask を使用して、アプリケーション名を指定せずにアプリケーションの .msi ファイルをインポートする場合。 詳細については、[ImportApp コマンド](../core/importapp-command.md)を参照してください。  
+- BTSTask を使用して、アプリケーション名を指定せずにアプリケーションの .msi ファイルをインポートする場合。 詳細については、次を参照してください。 [ImportApp コマンド](../core/importapp-command.md)します。  
   
 ## <a name="the-biztalksystem-application"></a>BizTalk.System アプリケーション  
  BizTalk サーバーが構成されている次のインストールの場合は、BizTalk.System という名前のアプリケーションが自動的に作成し、既定のスキーマやパイプラインなど、すべての BizTalk アプリケーションで使用される一般的なアイテムを格納します。 BizTalk.System とそのアイテムは読み取り専用です。 BizTalk.System を削除したり、名前を変更したりすることはできません。また、BizTalk.System に含まれるアイテムを削除したり、名前を変更したり、移動したりすることもできません。  

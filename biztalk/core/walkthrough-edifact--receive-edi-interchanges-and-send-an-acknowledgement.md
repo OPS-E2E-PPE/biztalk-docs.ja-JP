@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル (EDIFACT): EDI インターチェンジの受信と受信確認の送信 |Microsoft Docs'
+title: チュートリアル (EDIFACT):EDI インターチェンジの受信と受信確認の送信 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2b221d47a64f603db697b99c7e5a60b1cb1a67bd
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: fae5bbda87851df48daeacf116739744153fa52d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37018892"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395968"
 ---
-# <a name="walkthrough-edifact-receiving-edi-interchanges-and-sending-back-an-acknowledgement"></a>チュートリアル (EDIFACT): EDI インターチェンジの受信と受信確認の送信
+# <a name="walkthrough-edifact-receiving-edi-interchanges-and-sending-back-an-acknowledgement"></a>チュートリアル (EDIFACT):EDI インターチェンジの受信と受信確認の送信
 このチュートリアルでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を使用して EDIFACT インターチェンジの受信用のソリューションを作成する一連の手順について説明します。 このソリューションでは、ある取引先 (Fabrikam) から別の取引先 (Contoso) に EDIFACT インターチェンジが送信されます。  
 
 ## <a name="prerequisites"></a>前提条件  
@@ -57,7 +57,7 @@ ms.locfileid: "37018892"
 - ソリューションは EDIFACT エンコードを使用したインターチェンジ用に設計されています。  
 
   > [!NOTE]
-  >  X12 インターチェンジの場合は、同様のソリューションを作成する方法については、[チュートリアル (X12): EDI インターチェンジの受信と送信、受信確認を返す](../core/walkthrough-x12--receive-edi-interchanges-and-send-back-an-acknowledgement.md)を参照してください。  
+  >  X12 インターチェンジの場合は、同様のソリューションを作成する方法については、次を参照してください[チュートリアル (X12):。EDI インターチェンジの受信と受信確認の送信](../core/walkthrough-x12--receive-edi-interchanges-and-send-back-an-acknowledgement.md)します。  
 
 - EDI の種類の検証および拡張された検証は、受信インターチェンジに対して実行されます。  
 
@@ -66,7 +66,7 @@ ms.locfileid: "37018892"
 - このソリューションでは、トランスポートの種類が FILE である一方向の受信場所が使用されます。  
 
   > [!NOTE]
-  >  双方向の送信請求応答の受信ポートと受信場所を使用してメッセージを受信できますが、この方法で受信する場合、種類が FILE のトランスポートは受信場所に対して使用できません。 詳細については、[受信確認と EDI メッセージを受信するポートの構成](../core/configuring-a-port-to-receive-edi-messages-and-acknowledgments.md)を参照してください。  
+  >  双方向の送信請求応答の受信ポートと受信場所を使用してメッセージを受信できますが、この方法で受信する場合、種類が FILE のトランスポートは受信場所に対して使用できません。 詳細については、次を参照してください。[受信確認と EDI メッセージを受信するポートの構成](../core/configuring-a-port-to-receive-edi-messages-and-acknowledgments.md)します。  
 
 - EDI レポートが有効になり、インターチェンジの状態レポートに表示するトランザクション セットが保存されます。  
 
@@ -130,7 +130,7 @@ ms.locfileid: "37018892"
 1. [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] で、BizTalk プロジェクトを作成するか、開きます。  
 
    > [!NOTE]
-   >  このトピックは、EDI スキーマ、パイプライン、およびオーケストレーションを含む BizTalk EDI アプリケーションに別のアプリケーションから参照を既に追加していることを前提としています。 そうでない場合は、[、BizTalk Server EDI アプリケーションへの参照を追加する方法](http://msdn.microsoft.com/library/7af066fb-372f-4709-b566-c8d6b4a9d782)を参照してください。  
+   >  このトピックは、EDI スキーマ、パイプライン、およびオーケストレーションを含む BizTalk EDI アプリケーションに別のアプリケーションから参照を既に追加していることを前提としています。 そうでない場合は、次を参照してください。 [、BizTalk Server EDI アプリケーションへの参照を追加する方法](http://msdn.microsoft.com/library/7af066fb-372f-4709-b566-c8d6b4a9d782)します。  
 
 2. プロジェクトを右クリックし、[**追加**、] をクリックし、**既存項目の**します。 スキーマがフォルダーに移動[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]xsd_schema \edi\edifact\d98a, し、スキーマをダブルクリックします (**EFACT_D98A_APERAK.xsd**)。  
 

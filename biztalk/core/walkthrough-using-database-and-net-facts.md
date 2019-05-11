@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル: データベースおよび .NET のファクトの使用 |Microsoft Docs'
+title: 'チュートリアル: データベースおよび .NET のファクトを使用して |Microsoft Docs'
 ms.custom: ''
 ms.date: 2016-04-05
 ms.prod: biztalk-server
@@ -12,18 +12,18 @@ caps.latest.revision: 23
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 94eb3f34a529950a7344f6cc4579aa6f6909f813
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 453d7e657c2e2a416729a68700098be9b69a3a86
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36966955"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395956"
 ---
 # <a name="walkthrough-using-database-and-net-facts"></a>チュートリアル: データベースおよび .NET のファクトの使用
 ここでは、ビジネス ルール作成ツールを使用して、データベースおよび .NET のファクトを使用するポリシーを作成する手順について説明します。  
 
 ## <a name="prerequisites"></a>前提条件  
- 値を設定する必要があります、 **StaticSupport**を 1 または 2 のチュートリアルを実行する前にレジストリ キー。 これによって、クライアントにクラスのインスタンスをアサートするように要求しなくても、ポリシーで .NET クラスの静的メソッドを呼び出すことができるようになります。 詳細については、[クラスの静的メンバーを呼び出す](../core/invoking-static-members-of-a-class.md)を参照してください。  
+ 値を設定する必要があります、 **StaticSupport**を 1 または 2 のチュートリアルを実行する前にレジストリ キー。 これによって、クライアントにクラスのインスタンスをアサートするように要求しなくても、ポリシーで .NET クラスの静的メソッドを呼び出すことができるようになります。 詳細については、次を参照してください。[クラスの静的メンバーを呼び出す](../core/invoking-static-members-of-a-class.md)します。  
 
 ## <a name="overview-of-this-walkthrough"></a>このチュートリアルの概要  
  次の表に示すように、このチュートリアルには 5 つの手順が含まれています。  
@@ -119,7 +119,7 @@ ms.locfileid: "36966955"
 
 9. ディレクトリに移動します**C:\BRE-Walkthroughs\POUtilitySol**、次のコマンドを実行します。  
 
-     **Sn-k POUtility.snk**  
+     **Sn -k POUtility.snk**  
 
 10. [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]、ソリューション エクスプ ローラーで、**プロパティ**、し、ダブルクリック**AssemblyInfo.cs**します。  
 
@@ -350,7 +350,7 @@ ms.locfileid: "36966955"
     policy.Execute(dc, dti);  
     ```  
 
--   使用することができます、 **SqlTransaction**からデータベースを更新するクラス、 **ProcessPODbNet**をトランザクションでのポリシー。 次のコードは、トランザクションを開始するには、トランザクションをパラメーターとして渡す方法を示しています、 **DataConnection**オブジェクト、およびデータベースの変更をコミットします。 詳細については、[トランザクション サポート](../core/transaction-support.md)を参照してください。  
+-   使用することができます、 **SqlTransaction**からデータベースを更新するクラス、 **ProcessPODbNet**をトランザクションでのポリシー。 次のコードは、トランザクションを開始するには、トランザクションをパラメーターとして渡す方法を示しています、 **DataConnection**オブジェクト、およびデータベースの変更をコミットします。 詳細については、次を参照してください。[トランザクション サポート](../core/transaction-support.md)します。  
 
     ```  
     SqlConnection cn = new SqlConnection("Data Source=(local);Initial Catalog=TestDB;Integrated Security=SSPI");  

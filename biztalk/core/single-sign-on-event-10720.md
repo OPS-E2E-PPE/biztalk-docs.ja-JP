@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10720 |Microsoft Docs'
+title: シングル サインオン:イベント 10720 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: aa248270bd7d48699defcf00efedec3e5a545aac
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6cbf3a3e264f9b1e450f278c4029cc32f1819a8e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36971115"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65397175"
 ---
-# <a name="single-sign-on-event-10720"></a>シングル サインオン: イベント 10720
+# <a name="single-sign-on-event-10720"></a>シングル サインオン:イベント 10720
 ## <a name="details"></a>詳細  
 
 |                 |                                                                                                                                                                                                                                |
@@ -28,16 +28,16 @@ ms.locfileid: "36971115"
 | 製品バージョン |                                                                                   [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                                                                                   |
 |    イベント ID     |                                                                                                             10720                                                                                                              |
 |  イベント ソース   |                                                                                                             ENTSSO                                                                                                             |
-|    コンポーネント    |                                                                                                              N\A                                                                                                               |
+|    コンポーネント    |                                                                                                              該当なし                                                                                                               |
 |  シンボル名  |                                                                                                 SSO_INFO_REPLAY_RECORD_WRITTEN                                                                                                 |
-|  メッセージ テキスト   | 外部パスワード変更が再生ファイルに正常に保存されました。%r<br /><br /> 追跡 ID: %1 %r<br /><br /> アダプター: % 2 %r<br /><br /> 外部アカウント: % 3 %r<br /><br /> ファイル名: % 4 %r<br /><br /> レコード数: %5 |
+|  メッセージ テキスト   | 外部パスワード変更が再生 file.%r に正常に保存<br /><br /> 追跡 ID: %1 %r<br /><br /> アダプター: % 2 %r<br /><br /> 外部アカウント: % 3 %r<br /><br /> ファイル名: % 4 %r<br /><br /> レコード数: %5 |
 
 ## <a name="explanation"></a>説明  
- この情報イベントは、外部パスワード変更が再生ファイルに正常に保存されたことを示します。  
+ この情報イベントは、外部パスワード変更が正常に再生ファイルで格納されていることを示します。  
 
 ## <a name="user-action"></a>ユーザーの操作  
 
-- ユーザーの操作は必要ありません  
+- ユーザー操作は必要ありません。  
 
   詳細については、次のリソースを参照してください。  
 

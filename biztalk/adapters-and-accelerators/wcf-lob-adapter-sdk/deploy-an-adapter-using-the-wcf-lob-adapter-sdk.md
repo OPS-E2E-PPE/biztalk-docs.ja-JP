@@ -12,12 +12,12 @@ caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2c29400aae9a9bcd0cf36d49f9b619dc7642fa5a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: aa1ad45eeafae2f6f91936124f01677b5dc6c32a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36978475"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65363713"
 ---
 # <a name="deploy-an-adapter-using-the-wcf-lob-adapter-sdk"></a>WCF LOB アダプター SDK を使用して、アダプターを展開します。
 アダプターを展開するには、アダプター アセンブリをグローバル アセンブリ キャッシュ (GAC) にインストールして、machine.config ファイルでアダプターを登録します。  
@@ -36,7 +36,7 @@ ms.locfileid: "36978475"
   
 3. コマンド プロンプトで、キー ファイルを格納するフォルダーから次のコマンドを入力し、Enter キーを押します。  
   
-    **sn/k***file_name* **.snk**   
+    **sn /k**  *file_name* **.snk**  
   
     例: **sn/k EchoAdapter.snk**  
   
@@ -88,7 +88,7 @@ ms.locfileid: "36978475"
   
 #### <a name="manually-edit-the-machineconfig-file"></a>Machine.config ファイルを手動で編集します。  
   
-1. Microsoft .NET 構成フォルダ内にある machine.config ファイルを編集します。 これを行うには、次のようにクリックします**開始**、 をクリック**実行**、「notepad \<Windows インストール パス\>\Microsoft.NET\Framework\\< バージョン\>\CONFIG\。クリックして、machine.config **OK**します。  
+1. Microsoft .NET の構成フォルダーにある machine.config ファイルを編集します。 これを行うには、次のようにクリックします**開始**、 をクリック**実行**、「notepad \<Windows インストール パス\>\Microsoft.NET\Framework\\< バージョン\>\CONFIG\。クリックして、machine.config **OK**します。  
   
 2. Machine.config ファイルを更新します。 ファイルに system.serviceModel セクションが含まれていない場合は、終了タグをルートする前に、構成ファイルの末尾に次のセクションを追加します。  
   
@@ -122,7 +122,7 @@ ms.locfileid: "36978475"
    </extensions>  
    ```  
   
-3. machine.config ファイルを閉じて保存します。  
+3. Machine.config ファイルを保存して閉じます。  
   
    使用することも、[サービス構成エディター](https://msdn.microsoft.com/library/ms732009.aspx) machine.config ファイルを変更します。
   

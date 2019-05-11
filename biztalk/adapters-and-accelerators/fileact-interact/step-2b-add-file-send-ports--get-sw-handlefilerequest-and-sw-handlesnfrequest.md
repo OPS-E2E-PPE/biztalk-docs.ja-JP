@@ -1,5 +1,5 @@
 ---
-title: '手順 2 b: Sw:HandleFileRequest をキャプチャするファイルの送信ポートを追加および Sw:HandleSnFRequest メッセージを FileAct ストア アンド フォワード (プル) シナリオ |Microsoft Docs'
+title: 手順 2 b:ファイル送信ポート、Sw:HandleFileRequest のキャプチャを追加および Sw:HandleSnFRequest メッセージを FileAct ストア アンド フォワード (プル) シナリオ |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,17 +12,17 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 47515324fae89937754e0643563f16df9777868a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8d832f94f205ab74ee3dbfac06828a750fb89847
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36991491"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65366146"
 ---
-# <a name="step-2b-add-file-send-ports-to-capture-the-swhandlefilerequest-and-swhandlesnfrequest-messages-for-the-fileact-store-and-forward-pull-scenario"></a>手順 2 b: Sw:HandleFileRequest をキャプチャするファイルの送信ポートを追加および Sw:HandleSnFRequest メッセージを FileAct ストア アンド フォワード (プル) シナリオ
-この手順を開始する前に行う必要があります、 [Step 2 a: FileAct ストア アンド フォワード (プル) シナリオ用のファイル受信場所の追加](../../adapters-and-accelerators/fileact-interact/step-2a-add-file-receive-locations-for-fileact-store-and-forward-scenario.md)セクション。  
+# <a name="step-2b-add-file-send-ports-to-capture-the-swhandlefilerequest-and-swhandlesnfrequest-messages-for-the-fileact-store-and-forward-pull-scenario"></a>手順 2 b:FileAct ストア アンド フォワード (プル) シナリオに Sw:HandleFileRequest および Sw:HandleSnFRequest メッセージをキャプチャするファイルの送信ポートの追加します。
+この手順を開始する前に行う必要があります、 [Step 2 a:FileAct ストア アンド フォワード (プル) シナリオ用の受信場所のファイルを追加](../../adapters-and-accelerators/fileact-interact/step-2a-add-file-receive-locations-for-fileact-store-and-forward-scenario.md)セクション。  
 
-### <a name="to-add-a-file-send-port-to-capture-the-sw-handlefilerequest-message"></a>ファイル送信ポート、Sw のキャプチャを追加する: HandleFileRequest メッセージ  
+### <a name="to-add-a-file-send-port-to-capture-the-sw-handlefilerequest-message"></a>ソフトウェアをキャプチャする FILE 送信ポートを追加します。HandleFileRequest メッセージ  
 
 1. 開始**BizTalk Server 管理**します。  
 
@@ -65,5 +65,5 @@ ms.locfileid: "36991491"
 13. **[OK]** をクリックします。  
 
 ## <a name="see-also"></a>参照  
- [手順 2 a: FileAct ストア アンド フォワード (プル) シナリオ用の場所の受信ファイルを追加](../../adapters-and-accelerators/fileact-interact/step-2a-add-file-receive-locations-for-fileact-store-and-forward-scenario.md)   
- [手順 2C: FileAct ストア アンド フォワード (プル) シナリオ用に FILEACT 送信ポートを追加する](../../adapters-and-accelerators/fileact-interact/step-2c-add-a-fileact-send-port-for-fileact-store-and-forward-pull-scenario.md)
+ [手順 2 a:ファイルの受信場所 FileAct ストア アンド フォワード (プル) シナリオの追加します。](../../adapters-and-accelerators/fileact-interact/step-2a-add-file-receive-locations-for-fileact-store-and-forward-scenario.md)   
+ [手順 2 C:FileAct ストア アンド フォワード (プル) シナリオに FILEACT 送信ポートの追加します。](../../adapters-and-accelerators/fileact-interact/step-2c-add-a-fileact-send-port-for-fileact-store-and-forward-pull-scenario.md)

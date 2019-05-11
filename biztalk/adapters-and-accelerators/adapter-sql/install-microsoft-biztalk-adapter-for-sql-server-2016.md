@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 65205828e4ab178a0fec29c37cc1854f6a570242
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 15681ec21d399e03d86ec9457d814cf4531ed30b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36966979"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65369353"
 ---
 # <a name="install-microsoft-biztalk-adapter-for-sql-server---2016"></a>Microsoft BizTalk Adapter for SQL Server - 2016 のインストールします。
 インストール、[!INCLUDE[adaptersql_md](../../includes/adaptersql-md.md)]に含まれている[!INCLUDE[bts2016_md](../../includes/bts2016-md.md)]します。
@@ -37,7 +37,7 @@ ms.locfileid: "36966979"
 
 ||
 |---|
-|Windows Server 2016 <br />-Windows Server 2012 R2 <br />Windows 10 <br />-Windows 8.1    |
+|- Windows Server 2016 <br />- Windows Server 2012 R2 <br />- Windows 10 <br />- Windows 8.1    |
 |.NET Framework 4.6.*x*|
 |Visual Studio 2015|
 |[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]|
@@ -49,7 +49,7 @@ ms.locfileid: "36966979"
 
 ||
 |---|
-|Windows Server 2016 <br />-Windows Server 2012 R2 <br />Windows 10 <br />-Windows 8.1    |
+|- Windows Server 2016 <br />- Windows Server 2012 R2 <br />- Windows 10 <br />- Windows 8.1    |
 |.NET Framework 4.6.*x*|
 |Visual Studio 2015|
 |[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]<br /><br /> インストール、[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]の[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]に含まれている、[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]します。 インストールするには、**カスタム**(選択**BizTalk Server アドイン**) または**完了**のインストール、[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]します。|
@@ -60,9 +60,9 @@ ms.locfileid: "36966979"
 ## <a name="supported-sql-server-versions-and-client-libraries"></a>サポートされている SQL Server のバージョンとクライアント ライブラリ  
  次のセクションではサポートされている SQL Server のバージョンと、クライアントで必要なライブラリ、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]します。  
 
-- **サポートされているサーバー バージョン**: SQL Server 2016、SQL Server 2014
+- **サポートされているサーバー バージョン**:SQL Server 2016、SQL Server 2014
 
-- **サポートされているクライアント バージョン**: Microsoft [!INCLUDE[btsDotNetFramework_md](../../includes/btsdotnetframework-md.md)] SQL Server に接続するために必要なクライアント Dll バンドルします。 コンピューターに任意のクライアントの Dll を明示的にインストールする必要はありません。  
+- **サポートされているクライアント バージョン**:Microsoft [!INCLUDE[btsDotNetFramework_md](../../includes/btsdotnetframework-md.md)] SQL Server に接続するために必要なクライアント Dll バンドルします。 コンピューターに任意のクライアントの Dll を明示的にインストールする必要はありません。  
 
 - **ドライバーに必要な**:  
 
@@ -231,7 +231,7 @@ ms.locfileid: "36966979"
       ```  
 
    > [!NOTE]
-   >  公開キーを確認する方法については、[公開キーとバージョンを決定する](#BKMK_PubKey)を参照してください。  
+   >  公開キーを確認する方法については、次を参照してください。[公開キーとバージョンを決定する](#BKMK_PubKey)します。  
 
 4. machine.config ファイルを保存して閉じます。  
 

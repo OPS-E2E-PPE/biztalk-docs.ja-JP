@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 78468438dbd04583f8936bab28e80bf400e83d72
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4a9f333606143e53d5797d7bae506c770cb08b56
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36987139"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396776"
 ---
 # <a name="using-multiple-continuations"></a>複数の Continuation の使用
 複数のアクティビティが存在する環境で追跡プロファイル エディター (TPE) を使用するには、受信ポート、オーケストレーション、および送信ポートを正しい順序でマップするために、アクティビティが追跡されるシナリオを理解する必要があります。  
@@ -95,7 +95,7 @@ ms.locfileid: "36987139"
   
  アクティビティを 2 つのアクティビティに分割します。 2 つのアクティビティを関連付け、元のアクティビティに応答を関連付けます。  
   
- 関連するアクティビティに関する詳細については、[アクティビティ リレーションシップ](../core/activity-relationships.md)を参照してください。  
+ 関連するアクティビティに関する詳細については、次を参照してください。[アクティビティ リレーションシップ](../core/activity-relationships.md)します。  
   
 ## <a name="see-also"></a>参照  
- [Xml-data Reduced を参照してください。](../core/tracking-profile-editor.md)
+ [追跡プロファイル エディター](../core/tracking-profile-editor.md)

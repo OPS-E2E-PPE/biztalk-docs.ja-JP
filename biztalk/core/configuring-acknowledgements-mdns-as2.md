@@ -12,15 +12,15 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7370b37c7c390e6a837dbf3f700784dbc7fee7e3
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 81d1eb8c500ac746606da82509fb74e4d9afeb6a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37017966"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65391383"
 ---
-# <a name="configuring-acknowledgements-mdns-as2"></a>受信確認 (MDN) の構成 (AS2)
-パートナー アグリーメントで、AS2 メッセージを受信するパーティの MDN 応答の生成方法と返送方法を指定できます。  
+# <a name="configuring-acknowledgements-mdns-as2"></a>受信確認 (Mdn) (AS2) の構成
+パートナー アグリーメントでは、AS2 メッセージを受信するパーティの MDN 応答を生成および返送を指定できます。  
   
 > [!IMPORTANT]
 >  オフにした場合、このページで、次のプロパティが無効に、**ローカルの BizTalk パーティまたはこのパーティからのメッセージの送信をサポートして受信したメッセージを処理する**チェック ボックスを作成するパーティを作成するときに、契約です。  
@@ -39,7 +39,7 @@ ms.locfileid: "37017966"
   
 2. 一方向アグリーメント タブで、次のようにクリックします。**受信確認 (Mdn)** します。  
   
-3. 選択、 **MessageBox にルーティング/配信の受信 MDN を処理する**をパススルー メッセージとしてし、メッセージ ボックスに、A2 デコーダ経由の MDN をルーティングする チェック ボックス。 このプロパティを選択すると、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] により `IsAS2MdnResponseMessage` プロパティがルーティング用に昇格されます。  
+3. 選択、 **MessageBox にルーティング/配信の受信 MDN を処理する**をパススルー メッセージとしてし、メッセージ ボックスに、A2 デコーダ経由の MDN をルーティングする チェック ボックス。 このプロパティを選択すると、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]昇格、`IsAS2MdnResponseMessage`ルーティングを行うのためのプロパティ。  
   
 4. オンにした場合、**検証と MSDN のメッセージ ヘッダーの代わりにアグリーメントの設定を使用して**プロパティ、**検証**] ページで、[、 **mdn を要求する**チェック ボックスをオンの場合、取引先は、AS2 メッセージへの応答で MDN を生成する必要があります。  
   
@@ -57,7 +57,7 @@ ms.locfileid: "37017966"
       1. 選択、 **MDN を受信しない場合は再送信 AS2 メッセージ**AS2 メッセージの再送信を有効にする チェック ボックス。 値を入力**最小 AS2 メッセージ再送信間隔**、**数の AS2 メッセージ再送信試行**と**AS2 メッセージ再**を指定するフィールド、間隔、最大試行回数と、メッセージの再送信を停止するタイミングを再試行してください。  
   
          > [!NOTE]
-         >  選択する必要があります、**レポートを有効にする**チェック ボックスをオン、**全般プロパティ**のページ、**全般**タブを選択する前に**再送信 AS2 メッセージの場合は MDN されません受信した**します。  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は、AS2 レポートに保存された追跡情報を使用して、AS2 メッセージを再送信するタイミングを決定します。  
+         >  選択する必要があります、**レポートを有効にする**チェック ボックスをオン、**全般プロパティ**のページ、**全般**タブを選択する前に**再送信 AS2 メッセージの場合は MDN されません受信した**します。  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] AS2 レポートを AS2 メッセージ再送信するタイミングを決定するために保存された追跡情報を使用します。  
   
       2. 場合**MDN を受信しない場合は再送信 AS2 メッセージ** チェック ボックスを選択すると、確認**送信ポートの設定を上書き**を指定する、 **HTTP 最小再試行間隔**と**HTTP 再試行の回数**します。 値を入力、 **HTTP しようとすると停止の後で再試行**を HTTP アダプターを使用した再試行の最大時間を指定するフィールド。  
   

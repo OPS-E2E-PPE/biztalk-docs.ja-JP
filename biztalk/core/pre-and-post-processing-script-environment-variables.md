@@ -1,5 +1,5 @@
 ---
-title: 前処理および後処理のスクリプト環境変数 |Microsoft ドキュメント
+title: 前処理および後処理のスクリプト環境変数 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,12 +16,12 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dab1086a30ce670524a095f30c0bd6c1910365b8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: af8834f70db30ea5f7609383846db3970582729e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22264506"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396229"
 ---
 # <a name="pre--and-post-processing-script-environment-variables"></a>処理前および処理後のスクリプト環境変数
 このセクションのトピックでは、処理前および処理後のスクリプトでアクセスできる環境変数について説明します。  

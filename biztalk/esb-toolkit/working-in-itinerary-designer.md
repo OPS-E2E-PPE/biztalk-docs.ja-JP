@@ -12,12 +12,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 747ce8a750f2b2c775deaa1123a1b6b1d387eafc
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8efcc93d77f24b86a6a5ba8680f35afea815c5b0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36999403"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396343"
 ---
 # <a name="working-in-itinerary-designer"></a>Itinerary Designer での作業
 Microsoft Visual c# プロジェクトを作成した後は、スケジュールの新しいモデルを作成し、プロジェクトに既存のスケジュールを追加します。 次の手順では、新しいスケジュールを作成、スケジュールの既存のモデルを追加またはスケジュールの名前を変更する方法について説明します。  

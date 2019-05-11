@@ -12,18 +12,18 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6225a931a991d4b4fb85a23525c53fe01f9e52db
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: afb2f0244f0f0ace3ebd2bba67909935a1e8e96b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37021375"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65391239"
 ---
 # <a name="configuring-fallback-envelope-properties-x12-transaction-set-settings"></a>フォールバック エンベロープ プロパティの構成 (X12 トランザクション セットの設定)
-**エンベロープ**のページ、**トランザクション セットの設定** セクションで、BizTalk Server が、パーティに送信する X12 エンコード インターチェンジの GS セグメントを生成する方法を定義します。 GS セグメントは、X12 エンコード インターチェンジの機能グループを識別および指定します。  
+**エンベロープ**のページ、**トランザクション セットの設定** セクションで、BizTalk Server が、パーティに送信する X12 エンコード インターチェンジの GS セグメントを生成する方法を定義します。 GS セグメントは、識別し、X12 エンコード インターチェンジの機能グループを指定します。  
   
 > [!NOTE]
->  このトピックは、HIPAA 関連の設定にも当てはまります。  
+>  このトピックでは、HIPAA 関連の設定にも適用されます。  
   
 ## <a name="prerequisites"></a>前提条件  
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者グループまたは [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] B2B Operators グループのメンバーとしてログオンしている必要があります。  
@@ -46,7 +46,7 @@ ms.locfileid: "37021375"
   
 8. **担当機関 (GS07)**、ドロップダウン リストから値を選択します。  
   
-9. **ドキュメント識別子 (GS08)** 1 の最小値、12 文字の英数字を入力します。 このフィールドの入力は省略可能です。  
+9. **ドキュメント識別子 (GS08)** 1 の最小値、12 文字の英数字を入力します。 これは、オプションのフィールドです。  
   
 10. をクリックして**適用**構成では、続行する前に、変更を受け入れるか、をクリックする**OK**変更を検証し、ダイアログ ボックスを閉じます。  
   

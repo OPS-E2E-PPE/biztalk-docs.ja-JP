@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 03bf79d6a1324658101c2f12de758848ce7794fa
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3033c038febae4dc13cb0681947eb55135b6e6f7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36996947"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65374591"
 ---
 # <a name="secure-your-oracle-ebs-applications"></a>Oracle EBS アプリケーションのセキュリティ保護します。
 Oracle E-business アプリケーションは、顧客アカウントの詳細などの機密性の高いビジネス情報を処理します。 使用するアプリケーション、[!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]にアクセスして、この情報を変更するいずれかまたは分散ネットワーク経由でローカルにキーが誤って公開、不正なアクターによってアクセス中にデータをセキュリティで保護する取り組みが行われた場合を除き、転送します。 データ保護とセキュリティは、通常と考えられるので、次の用語。  

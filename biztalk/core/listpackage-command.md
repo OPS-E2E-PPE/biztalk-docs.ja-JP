@@ -12,15 +12,15 @@ caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7c2469a509545dffc80a79a61a5f8f761f5bb724
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 65e90a4b28d89d4d30b2ca4c6c09977529db653a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36970467"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65328662"
 ---
 # <a name="listpackage-command"></a>ListPackage コマンド
-[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] によって生成された .msi ファイルに格納されているアイテムを一覧表示します。  
+によって生成された .msi ファイルに含まれるアイテムを一覧表示[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]します。  
   
 ## <a name="usage"></a>使用方法  
  **BTSTask ListPackage** [**/package:**<em>値</em>]  
@@ -29,10 +29,10 @@ ms.locfileid: "36970467"
   
 |パラメーター|必須|説明|  
 |---------------|--------------|-----------------|  
-|**/パッケージ**または **/P**|はい|.msi ファイルの名前とパス。 例: C:\MSI\MyApplication.msi。 パスにスペースが含まれている場合は、二重引用符 (") で囲む必要があります。|  
+|**/パッケージ**または **/P**|はい|名前と、.msi ファイルのパス。 例:C:\MSI\MyApplication.msi. パスにスペースが含まれている場合は、二重引用符 (") で囲む必要があります。|  
   
 ## <a name="sample"></a>サンプル  
- **ListPackage/Package:"C:\My MSI \myapplication.msi"**  
+ **ListPackage /Package:"C:\My MSI Files\MyApplication.msi"**  
   
 ## <a name="remarks"></a>コメント  
  パラメーターの大文字と小文字は区別されません。 パラメーター名は、すべて入力する必要はありません。最初の数文字 (一意に特定できるだけの文字数) を入力するだけで構いません。  

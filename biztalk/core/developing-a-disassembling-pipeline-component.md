@@ -18,15 +18,15 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 843958cdfe00a9fc9d1a2c178cb85adfe4ffc8d7
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 00258b86f2da320b0ec13963a96a93aca8de477a
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36999723"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65530925"
 ---
 # <a name="developing-a-disassembling-pipeline-component"></a>逆アセンブラー パイプライン コンポーネントの開発
-逆アセンブラー パイプライン コンポーネントは入力時に 1 通のメッセージを受け取り、出力時に 0 通以上のメッセージを生成します。 逆アセンブラー コンポーネントは、メッセージのインターチェンジを個別のドキュメントに分割するために使用されます。 逆アセンブラー コンポーネントは次のインターフェイスを実装する必要があります。  
+逆アセンブラー パイプライン コンポーネントは、入力に 1 つのメッセージを受け取り、出力で、0 個以上のメッセージが生成されます。 逆アセンブラー コンポーネントは、個別のドキュメントにメッセージのインターチェンジの分割に使用されます。 逆アセンブラー コンポーネントは、次のインターフェイスを実装する必要があります。  
   
 - `IBaseComponent`
   
@@ -34,15 +34,15 @@ ms.locfileid: "36999723"
   
 - `IComponentUI`
   
-- **IPersistPropertyBag します。** (このインターフェイスについては、.NET Framework SDK のドキュメントを参照してください)  
+- **IPersistPropertyBag します。** このインターフェイスは .NET Framework SDK ドキュメントを参照してください。  
   
   独自の逆アセンブラー コンポーネントを作成するには拡張することによって、 **FFDasmComp**または**XMLDasmComp**クラス。  
   
 > [!WARNING]
->  カスタム逆アセンブラーで MessageDestination コンテキスト プロパティを SuspendQueue に設定する場合、逆アセンブラーから返されるストリームでは保留が動作するように Seek(0) をサポートしている必要があります。  
+>  カスタム逆アセンブラーを suspendqueue MessageDestination コンテキスト プロパティ設定は、作業の中断の Seek(0) をサポートするために、逆アセンブラーによって返されるストリーム必要があります。  
   
 > [!NOTE]
->  カスタム パイプライン コンポーネントでは入力メッセージの追加部分を出力メッセージにコピーする必要があります。 これにより、パイプラインでの後続の処理のために追加部分が保持されます。  
+>  カスタム パイプライン コンポーネントは、出力メッセージ用に、入力メッセージからその他のパーツをコピーする必要があります。 これはさらに、パイプラインで処理するためを保持します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

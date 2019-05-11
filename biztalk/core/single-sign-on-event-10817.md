@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10817 |Microsoft Docs'
+title: シングル サインオン:イベント 10817 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7e42873f0b56c43a7c997a2476ba2b15148d4639
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9c4f05181db88c58a5e29857cbe2ce80bb3ab369
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36979195"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396102"
 ---
-# <a name="single-sign-on-event-10817"></a>シングル サインオン: イベント 10817
+# <a name="single-sign-on-event-10817"></a>シングル サインオン:イベント 10817
 ## <a name="details"></a>詳細  
   
 |                 |                                                            |
@@ -30,10 +30,10 @@ ms.locfileid: "36979195"
 |  イベント ソース   |                           ENTSSO                           |
 |    コンポーネント    |                            なし                             |
 |  シンボル名  |              ENTSSO_E_NOTIFICATION_NOT_FOUND               |
-|  メッセージ テキスト   |         指定された通知が見つかりませんでした。          |
+|  メッセージ テキスト   |         指定された通知は見つかりませんでした。          |
   
 ## <a name="explanation"></a>説明  
- パスワード変更で指定された通知の GUID が見つかりません。  
+ パスワードの変更で指定された通知 GUID が見つかりません。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- このパスワード同期アダプターの構成を調べて、通知の正しい GUID を確認します。
+ 通知の適切な GUID を特定するこのパスワード同期アダプターの構成を参照してください。

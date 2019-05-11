@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10821 |Microsoft Docs'
+title: シングル サインオン:イベント 10821 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6d1b9d5499ac11f29034f0110e0ff0fe6850f66a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 552f6677c1e52baab51e0725a4eca03a3d4335b9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36988083"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395461"
 ---
-# <a name="single-sign-on-event-10821"></a>シングル サインオン: イベント 10821
+# <a name="single-sign-on-event-10821"></a>シングル サインオン:イベント 10821
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                    |
@@ -30,10 +30,10 @@ ms.locfileid: "36988083"
 |  イベント ソース   |                                       ENTSSO                                       |
 |    コンポーネント    |                                        なし                                         |
 |  シンボル名  |                     ENTSSO_E_ADAPTER_ASSIGNED_TO_GROUP_ADAPTER                     |
-|  メッセージ テキスト   | アダプターは現在グループ アダプターに割り当てられているため、削除できません。 |
+|  メッセージ テキスト   | アダプターは、現在グループ アダプタに割り当てられているために削除できません。 |
   
 ## <a name="explanation"></a>説明  
- アダプターは現在グループ アダプターに割り当てられているため、削除できません。  
+ アダプターは、現在グループ アダプタに割り当てられているために削除できません。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- アダプターの割り当てを解除し、削除します。
+ アダプターの割り当てを解除してから削除します。

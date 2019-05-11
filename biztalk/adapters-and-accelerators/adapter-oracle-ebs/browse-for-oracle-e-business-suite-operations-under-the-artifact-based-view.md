@@ -12,12 +12,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a70b378393839a4f1f03dbd6841d85fbd06fd18d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4d5af2639b846bdde1e7f892a74e12eeae392363
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36979627"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65375765"
 ---
 # <a name="browse-for-oracle-e-business-suite-operations-under-the-artifact-based-view"></a>成果物ベースのビューでの Oracle E-business Suite 操作の参照します。
 使用することができます、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]または[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]Oracle E-business Suite で実行できる操作を送信および受信を参照するを使用して、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]します。 このトピックでは、成果物ベースのビューでの送信および受信操作を参照する方法について説明します。  
@@ -44,7 +44,7 @@ ms.locfileid: "36979627"
     ![操作と、ルート レベルでカテゴリ](../../adapters-and-accelerators/adapter-oracle-ebs/media/559a6652-2d9d-4ecd-a1bb-4f63750c9518.gif "559a6652-2d9d-4ecd-a1bb-4f63750c9518")  
   
    > [!NOTE]
-   >  ExecuteReader、ExecuteScalar、ExecuteNonQuery などの標準的な操作は、ルート レベルで使用できます。 これらの操作の詳細については、[ExecuteNonQuery、ExecuteReader、ExecuteScalar 操作のサポート](../../adapters-and-accelerators/adapter-oracle-ebs/support-for-executenonquery-executereader-and-executescalar-operations.md)を参照してください。 使用してこれらの操作を実行する方法については、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]を参照してください[ExecuteReader、executescalar、ExecuteNonQuery 操作では、BizTalk Server を使用して SQL](../../adapters-and-accelerators/adapter-sql/executereader-executescalar-or-executenonquery-in-sql-server-using-biztalk.md)します。  
+   >  ExecuteReader、ExecuteScalar、ExecuteNonQuery などの標準的な操作は、ルート レベルで使用できます。 これらの操作の詳細については、次を参照してください。 [ExecuteNonQuery、ExecuteReader、ExecuteScalar 操作のサポート](../../adapters-and-accelerators/adapter-oracle-ebs/support-for-executenonquery-executereader-and-executescalar-operations.md)します。 使用してこれらの操作を実行する方法については、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]を参照してください[ExecuteReader、executescalar、ExecuteNonQuery 操作では、BizTalk Server を使用して SQL](../../adapters-and-accelerators/adapter-sql/executereader-executescalar-or-executenonquery-in-sql-server-using-biztalk.md)します。  
   
 4. 展開、**成果物ベースのビュー**成果物を Oracle E-business Suite と基になるデータベースの両方のカテゴリを表示するノード。 各カテゴリが (のインターフェイス テーブル、インターフェイス ビュー、同時実行プログラム、および要求セットなどの Oracle-E-business Suite の成果物) に属しているアプリケーションまたは (Oracle データベースなどの成果物に属しているスキーマに基づいてさらに分類します。PL-SQL Api、プロシージャ、関数、テーブル、およびビュー)。  
   
@@ -106,7 +106,7 @@ ms.locfileid: "36979627"
      ![すべてのスキーマの Oracle データベースのテーブルの参照](../../adapters-and-accelerators/adapter-oracle-ebs/media/d7c52ab4-ba27-404a-9db6-32b2a635ad2f.gif "d7c52ab4-ba27-404a-9db6-32b2a635ad2f")  
   
     > [!NOTE]
-    >  参照、検索、および Oracle E-business Suite 操作のメタデータを取得 このような操作の名前は Read_\<LOBColName\>します。 たとえば、テーブルに列、写真、BLOB の種類の場合、アダプターが公開、 **Read_PHOTO**操作。 テーブルに BLOB の種類の 1 つ以上の列がある場合は、CLOB、NCLOB、BFILE、アダプターは Read_ 数が同数公開\<LOBColName\>操作。  
+    >  テーブルには、BLOB 型の列が含まれる場合、CLOB、NCLOB、BFILE、アダプターも公開しますこのような列からデータを読み取る、特定の操作。 このような操作の名前は Read_\<LOBColName\>します。 たとえば、テーブルに列、写真、BLOB の種類の場合、アダプターが公開、 **Read_PHOTO**操作。 テーブルに BLOB の種類の 1 つ以上の列がある場合は、CLOB、NCLOB、BFILE、アダプターは Read_ 数が同数公開\<LOBColName\>操作。  
     >   
     >  同様に、テーブルに BLOB の型の列が含まれている場合 CLOB、NCLOB、アダプターもを公開、特定の操作をこのような列にデータを更新します。 このような操作の名前は Update_\<LOBColName\>します。 たとえば、テーブルに列、写真、BLOB の種類の場合、アダプターが公開、 **Update_PHOTO**操作。 テーブルに BLOB の種類の 1 つ以上の列がある場合、CLOB、NCLOB、アダプターは Update_ 数が同数公開\<LOBColName\>操作。 BFILE の型の列には、更新操作がサポートされていないことに注意してください。  
   

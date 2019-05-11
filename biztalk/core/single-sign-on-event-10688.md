@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10688 |Microsoft Docs'
+title: シングル サインオン:イベント 10688 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b0efe057472366b713b00573a36fa15c0b092ec2
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e760441481a5eddfd2d7d53294a8f6f4abade8fb
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36975907"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65397408"
 ---
-# <a name="single-sign-on-event-10688"></a>シングル サインオン: イベント 10688
+# <a name="single-sign-on-event-10688"></a>シングル サインオン:イベント 10688
 ## <a name="details"></a>詳細  
 
 |                 |                                                                           |
@@ -28,23 +28,23 @@ ms.locfileid: "36975907"
 | 製品バージョン |        [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]         |
 |    イベント ID     |                                   10688                                   |
 |  イベント ソース   |                                  ENTSSO                                   |
-|    コンポーネント    |                                    N\A                                    |
+|    コンポーネント    |                                    該当なし                                    |
 |  シンボル名  |                   SSO_ERROR_REPLAY_FILE_UNEXPECTED_DATA                   |
-|  メッセージ テキスト   | 再生ファイルに破損が検出されました。%r<br /><br /> 再生ファイル: %1 |
+|  メッセージ テキスト   | 再生 file.%r で破損が検出されました<br /><br /> 再生ファイル: %1 |
 
 ## <a name="explanation"></a>説明  
- このエラー イベントは、SSO が SSO データベースとの接続を再確立したが、破損のために再生ファイルを読み取れなかったことを示しています。 SSO で再生ファイルを開くことができない場合、次の再生ファイルに進みます (次の再生ファイルがある場合)。  
+ このエラー イベントは、SSO が SSO データベースとの接続が再び確立したが、破損のため、再生ファイルを読み取ることができなかったことを示します。 SSO で再生ファイルを開くことはできない場合は、(存在する場合)、[次へ] の再生ファイルに進みます。  
 
- ENTSSO サーバーから SSO データベースに接続できない場合、パスワード同期で再生ファイルが使用されます。 進行ファイルでは、SSO データベースとの接続が再度失われた場合に SSO で再生ファイルをどこまで読み取ることができるかを示します。  
+ 再生ファイルは、ENTSSO サーバーが SSO データベースに接続できない場合、パスワード同期で使用されます。 進行状況ファイルがどこまで方法を示します SSO が SSO データベースと再生ファイルのケースで連絡先が再度失われたを読めるようにします。  
 
 ## <a name="user-action"></a>ユーザーの操作  
  このエラーを解決するには、次の操作を行います。  
 
-- 関連するイベントについては、システムおよびアプリケーションのイベント ログを確認します。  
+- システムおよびアプリケーションのイベント ログで関連するイベントを確認します。  
 
 - 再生ファイルを削除します。  
 
-  詳細については、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ヘルプの次の情報を参照してください:   
+  詳細については、の次のリソースを参照してください。[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプ。  
 
 - [パスワード同期を構成する方法](../core/how-to-configure-password-synchronization.md)  
 

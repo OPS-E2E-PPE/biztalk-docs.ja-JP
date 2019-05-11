@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10666 |Microsoft Docs'
+title: シングル サインオン:イベント 10666 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a82308e721f53f9d4eb81fdbdad771b69a1cade5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 921f11f422e4707d81a9387cd9606c3dfd3f337d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37018272"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65397545"
 ---
-# <a name="single-sign-on-event-10666"></a>シングル サインオン: イベント 10666
+# <a name="single-sign-on-event-10666"></a>シングル サインオン:イベント 10666
 ## <a name="details"></a>詳細  
 
 |                 |                                                                                                                                                                            |
@@ -28,17 +28,17 @@ ms.locfileid: "37018272"
 | 製品バージョン |                                                         [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                                                         |
 |    イベント ID     |                                                                                   10666                                                                                    |
 |  イベント ソース   |                                                                                   ENTSSO                                                                                   |
-|    コンポーネント    |                                                                                    N\A                                                                                     |
+|    コンポーネント    |                                                                                    該当なし                                                                                     |
 |  シンボル名  |                                                                  SSO_INFO_DAMPED_EXTERNAL_PASSWORD_CHANGE                                                                  |
-|  メッセージ テキスト   | 外部パスワードの変更は抑制されました (重複として検出され、破棄されました)。%r<br /><br /> 追跡 ID: %1 %r<br /><br /> アダプター: % 2 %r<br /><br /> 外部アカウント: %3 |
+|  メッセージ テキスト   | 外部パスワード変更は抑制されました (重複および discarded).%r として検出します。<br /><br /> 追跡 ID: %1 %r<br /><br /> アダプター: % 2 %r<br /><br /> 外部アカウント: %3 |
 
 ## <a name="explanation"></a>説明  
- この情報イベントは、外部パスワードの変更が重複していると判断され、破棄されたことを示します。  
+ この情報イベントは、外部パスワード変更が重複するいると判断して、破棄されることを示します。  
 
 ## <a name="user-action"></a>ユーザーの操作  
 
-- ユーザーの操作は必要ありません。  
+- ユーザー操作は必要ありません。  
 
-  詳細については、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ヘルプの次の情報を参照してください:   
+  詳細については、の次のリソースを参照してください。[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプ。  
 
 - [パスワード同期](../core/password-synchronization2.md)

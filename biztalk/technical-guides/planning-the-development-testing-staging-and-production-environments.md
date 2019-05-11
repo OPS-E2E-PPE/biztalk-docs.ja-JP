@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f4d72440595adb34b822b70e934985f88f79c66d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 40fa445127b5bb5e6a138820d9d321195580d823
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36996051"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65397024"
 ---
 # <a name="planning-the-development-testing-staging-and-production-environments"></a>開発、テスト、ステージング、および運用環境の計画
 このトピックでは、BizTalk ソリューションのリリース管理プロセスで使用される環境について説明します。 リリースの BizTalk ソリューションの開発と、エンタープライズ ソフトウェア ソリューションと同様に確立されているソフトウェア リリースの管理ガイドラインに従ってください。 このプロセスは、次の段階を含める必要があります。  
@@ -78,13 +78,13 @@ ms.locfileid: "36996051"
  テスト環境を使用して、最大持続可能スループット (MST) と、BizTalk ソリューションの維持可能な最大の追跡スループットなどのパフォーマンス特性を測定します。 物理的な運用環境は、可能な限り、したがって一致する必要があります。 パフォーマンスの測定の詳細については、BizTalk ソリューションの特性を参照してください[エンジン パフォーマンスの特性](../core/engine-performance-characteristics.md)、または[BizTalk Server パフォーマンス最適化ガイド](../technical-guides/biztalk-server-2010-performance-optimization-guide.md)します。
   
 ## <a name="staging-environment"></a>ステージング環境  
- 通常、「単体テストを」ステージング環境を使用する BizTalk ソリューションを実際に展開します。 ステージング環境にインストールされているソフトウェア、実稼働環境にインストールされているソフトウェアとする必要があります。 ただし、この環境は、パフォーマンスを測定するために使用することはできませんので、ステージング環境で仮想コンピューターを使用してかまいませんが、します。 ステージング環境に BizTalk アプリケーションの展開の詳細については、[BizTalk アプリケーション展開のタスクをステージング](../core/staging-tasks-for-biztalk-application-deployment.md)を参照してください。
+ 通常、「単体テストを」ステージング環境を使用する BizTalk ソリューションを実際に展開します。 ステージング環境にインストールされているソフトウェア、実稼働環境にインストールされているソフトウェアとする必要があります。 ただし、この環境は、パフォーマンスを測定するために使用することはできませんので、ステージング環境で仮想コンピューターを使用してかまいませんが、します。 ステージング環境に BizTalk アプリケーションの展開の詳細については、次を参照してください。 [BizTalk アプリケーション展開のタスクをステージング](../core/staging-tasks-for-biztalk-application-deployment.md)します。
   
 ## <a name="production-environment"></a>運用環境  
  運用環境は、実行中の BizTalk ソリューションをホストする「ライブ」環境です。 運用環境では、リリース管理プロセスの最後のエンドポイントし、開発、単体テスト、ロード テスト、およびその他の環境でのステージングが発生した以前ホスト BizTalk アプリケーションのみをする必要があります。 完全な単体テスト、ロード テスト、および事前はステージングのヘルプでの最大のパフォーマンスや運用環境で BizTalk アプリケーションの稼働時間を確認します。  
   
 ## <a name="guidelines-for-allocating-servers"></a>サーバーを割り当てるためのガイドライン  
- 運用環境で使用する BizTalk サーバーおよび SQL server の物理コンピューターの特定の数を指定されたリリース管理プロセスの各ステージに割り当てる必要がありますの数の次のガイドラインが原則を提供しますは大まかな。アーキテクチャによって変更される可能性は概算値。  
+ 次のガイドラインが BizTalk サーバーの数の原則を提供し、実稼働環境で使用する SQL サーバーの物理コンピューターの特定の数を指定されたリリース管理プロセスの各ステージに割り当てる必要がありますが必要です。これらは、アーキテクチャに応じて変更される可能性は大まかな見積もりです。  
   
 > [!NOTE]  
 >  仮想サーバーは、開発、ステージング環境で使用することがあり、単体テストも使用できます。 運用環境で物理ハードウェアに一致する物理ハードウェア上で、すべてのパフォーマンス テストを実行してください。  

@@ -1,5 +1,5 @@
 ---
-title: 運用環境の BizTalk Server 環境のスケーリング |Microsoft ドキュメント
+title: BizTalk Server の運用環境のスケーリング |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,17 +12,17 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8f6dfd90864f6698c54558c65aa3a87b96c0459c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b162633246a5c23ec583bbbb55a20d893e21c5a8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22302954"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65393991"
 ---
-# <a name="scaling-a-production-biztalk-server-environment"></a>運用環境の BizTalk Server 環境のスケーリング
-このセクションでは、BizTalk Server ソリューション、ロード テストの結果、および一般的な観測とラボの結果に基づく推奨事項の概要のロード テストの実行に使用されたラボ環境の概要を示します。  
+# <a name="scaling-a-production-biztalk-server-environment"></a>BizTalk Server の運用環境のスケーリング
+このセクションでは、BizTalk Server ソリューション、ロード テストの結果と大まかに、ラボで調査結果に基づいて推奨事項の概要のロード テストの実行に使用されたラボ環境の概要を示します。  
   
- これらのトピックで提供される情報のことができ、スケーリングのガイドとして使用する必要があります、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]環境。 定期処理を完了することをお勧めこのガイダンスに加えロード テストの開発サイクル全体を通じて、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]アプリケーションです。  
+ これらのトピックで提供される情報のことができ、スケーリングのガイドとして使用する必要があります、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]環境。 ロードの開発サイクル全体でテストを定期的なを完了することをお勧めします。 このガイダンスに加え、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]アプリケーション。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

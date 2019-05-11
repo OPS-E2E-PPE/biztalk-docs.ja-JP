@@ -1,5 +1,5 @@
 ---
-title: 管理パックの詳細を表示する方法 |Microsoft ドキュメント
+title: 管理パックの詳細を表示する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,24 +12,24 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5e63973c87c381b67116a4df64f7ad94f1582dc8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a48e8d001c01c263aa106b5b34f2da9312835002
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22298258"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395874"
 ---
 # <a name="how-to-view-management-pack-details"></a>管理パックの詳細を表示する方法
-モニターと関連付けられた上書き値については、モニターのナレッジを参照してください。  
+モニターと関連付けられた上書き値については、モニターのナレッジを表示します。  
   
 ### <a name="to-view-knowledge-for-a-monitor"></a>モニターのナレッジを表示するには  
   
-1.  オペレーション コンソールで、 **Authoring**ボタンをクリックします。  
+1.  オペレーション コンソールでをクリックして、 **Authoring**ボタンをクリックします。  
   
-2.  展開**管理パック オブジェクト**、クリックして**モニター**です。  
+2.  展開**管理パック オブジェクト**、 をクリックし、**モニター**します。  
   
 3.  [モニタ] ウィンドウでは、モニタのレベルに到達するまで、ターゲットを展開します。 また、使用することができます、**検索**ボックスに、特定のモニタを検索します。  
   
-4.  モニタをクリックし、[モニタ] ウィンドウでをクリックして**ナレッジを表示**です。  
+4.  モニタをクリックし、[モニタ] ウィンドウで次のようにクリックします。**ナレッジを表示**します。  
   
-5.  クリックして、**製品ナレッジ**タブです。
+5.  をクリックして、**製品ナレッジ**タブ。

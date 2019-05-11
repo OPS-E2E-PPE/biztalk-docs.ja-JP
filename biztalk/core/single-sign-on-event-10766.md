@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10766 |Microsoft Docs'
+title: シングル サインオン:イベント 10766 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 44b866b843cc23802f22706cc4ea6460991a27c6
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: db709855bc2d8ecc34f985433a08cb58596a5a53
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37023888"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65394318"
 ---
-# <a name="single-sign-on-event-10766"></a>シングル サインオン: イベント 10766
+# <a name="single-sign-on-event-10766"></a>シングル サインオン:イベント 10766
 ## <a name="details"></a>詳細  
   
 |                 |                                                                  |
@@ -30,10 +30,10 @@ ms.locfileid: "37023888"
 |  イベント ソース   |                              ENTSSO                              |
 |    コンポーネント    |                               なし                                |
 |  シンボル名  |                    ENTSSO_E_NOT_SECRET_SERVER                    |
-|  メッセージ テキスト   | この関数はマスター シークレット サーバーでのみ実行できます。 |
+|  メッセージ テキスト   | この関数は、マスタ シークレット サーバーでのみ実行できます。 |
   
 ## <a name="explanation"></a>説明  
- この関数はマスター シークレット サーバーでのみ実行できます。  
+ この関数は、マスタ シークレット サーバーでのみ実行できます。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- この機能はマスタ シークレット サーバーで実行する必要があります。
+ マスタ シークレット サーバーでは、この機能を実行する必要があります。

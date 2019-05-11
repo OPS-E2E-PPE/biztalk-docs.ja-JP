@@ -1,5 +1,5 @@
 ---
-title: BizTalk マッパーの機能強化を使用して |Microsoft ドキュメント
+title: BizTalk マッパーの機能を使用して強化されています |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9400403e4a1339ff324a3eb3f9534729e2e108a9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8caf52948e5bc3c36e07016fed81b5d7942a9328
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22287010"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396590"
 ---
-# <a name="using-enhanced-features-in-biztalk-mapper"></a>BizTalk マッパーの強化された機能の使用
+# <a name="using-enhanced-features-in-biztalk-mapper"></a>BizTalk マッパーの強化された機能を使用
 BizTalk マッパーは操作性が強化され、複雑なマップを処理しやすくなっています。  
   
  既存の BizTalk マッパーでは、小規模なスキーマは問題なく処理できますが、大規模で複雑なスキーマの処理は効率的ではありません。 そこで、新しい機能強化が重要な役割を果たします。  
@@ -31,7 +31,7 @@ BizTalk マッパーは操作性が強化され、複雑なマップを処理し
   
  [マップ項目を強調する方法](../core/how-to-emphasize-map-items.md)  
   
- [選択したマップ項目をビュー内に置く方法](../core/how-to-bring-selected-map-items-in-view.md)  
+ [選択したマップ項目を表示するようにする方法](../core/how-to-bring-selected-map-items-in-view.md)  
   
  [Functoid の構成の問題を検出する方法](../core/how-to-detect-configuration-issues-for-a-functoid.md)  
   

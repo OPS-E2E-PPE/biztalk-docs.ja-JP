@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10655 |Microsoft Docs'
+title: シングル サインオン:イベント 10655 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 75ce0442b02667ce9796d9418dae4b1700dd757d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d357eaf5433823f8b21f6d6a6757f06c59bdbd9f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37013011"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65397637"
 ---
-# <a name="single-sign-on-event-10655"></a>シングル サインオン: イベント 10655
+# <a name="single-sign-on-event-10655"></a>シングル サインオン:イベント 10655
 ## <a name="details"></a>詳細  
 
 |                 |                                                                              |
@@ -28,18 +28,18 @@ ms.locfileid: "37013011"
 | 製品バージョン |          [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]          |
 |    イベント ID     |                                    10655                                     |
 |  イベント ソース   |                                    ENTSSO                                    |
-|    コンポーネント    |                                     N\A                                      |
+|    コンポーネント    |                                     該当なし                                      |
 |  シンボル名  |                   SSO_ERROR_PS_PING_CALLBACK_ACCESS_DENIED                   |
-|  メッセージ テキスト   | パスワード同期サーバーへの (ping の) アクセスは拒否されました。%r<br /><br /> クライアント ユーザー: %1 |
+|  メッセージ テキスト   | パスワード同期サーバー (ping) 用アクセス denied.%r<br /><br /> クライアント ユーザー: %1 |
 
 ## <a name="explanation"></a>説明  
- このエラー イベントは、メッセージが [名前] サーバーに送信されたが、応答がブロックされたことを示します。 原因として、プロトコルが正しくない、サーバーのセキュリティ アクセス許可が不十分など、さまざまな理由が考えられます。  
+ このエラー イベントは、[名前] サーバーにメッセージが送信されましたが、応答がブロックされたことを示します。 さまざまなプロトコルが正しくないやサーバー上の不十分なセキュリティ アクセス許可など、さまざまな理由の可能性があります。  
 
 ## <a name="user-action"></a>ユーザーの操作  
  このエラーを解決するには、次の操作を行います。  
 
 - このメッセージの情報と、イベント ログで関連情報をメモし、マイクロソフト製品サポート サービスにお問い合わせください。  
 
-  詳細については、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ヘルプの次の情報を参照してください:   
+  詳細については、の次のリソースを参照してください。[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプ。  
 
 - [パスワード同期](../core/password-synchronization2.md)

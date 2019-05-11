@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10819 |Microsoft Docs'
+title: シングル サインオン:イベント 10819 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f196bb49cd0e5825551bbffe45757c327e2cbcca
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d1f338b78cd9c19b337b83eb829736cb7e81612e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36972115"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396638"
 ---
-# <a name="single-sign-on-event-10819"></a>シングル サインオン: イベント 10819
+# <a name="single-sign-on-event-10819"></a>シングル サインオン:イベント 10819
 ## <a name="details"></a>詳細  
   
 |                 |                                                                           |
@@ -38,4 +38,4 @@ ms.locfileid: "36972115"
 ## <a name="user-action"></a>ユーザーの操作  
  マッピングの競合が予想される動作の場合は、操作は必要ありません。このメッセージは情報のみです。 マッピングの競合を許可する必要がある場合は、アプリケーションを構成します。  
   
- マッピングの競合の詳細については、**パスワード同期アダプターのプロパティ: オプション**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]を参照してください。
+ マッピングの競合の詳細については、次を参照してください。**パスワード同期アダプターのプロパティ。オプション**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]します。

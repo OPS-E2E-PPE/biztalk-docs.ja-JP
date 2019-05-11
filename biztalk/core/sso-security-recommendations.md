@@ -35,15 +35,15 @@ caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4877bdb4ea7f19a1ff8ec93dcee2e6910ef8891f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f7fa15b272aef5da2eba1fea53c690fadc60b143
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37007123"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395452"
 ---
 # <a name="sso-security-recommendations"></a>SSO のセキュリティに関する推奨事項
-エンタープライズ シングル サインオン (SSO) システムを使用すると、ユーザーは 1 組の資格情報だけを使用してさまざまなシステムに接続できるようになります。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、SSO システムを機密情報の格納場所として使用しています。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ランタイムをインストールするたびにエンタープライズ シングル サインオンが自動的にインストールされますが、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 環境に関係なく、エンタープライズ シングル サインオンをスタンドアロン コンポーネントとしてインストールすることもできます。 エンタープライズ シングル サインオンに関する詳細については、[を使用して SSO](../core/using-sso.md)を参照してください。 SSO サービスとリソースをセキュリティで保護して環境に展開するには、次のガイドラインに従うことをお勧めします。  
+エンタープライズ シングル サインオン (SSO) システムを使用すると、ユーザーは 1 組の資格情報だけを使用してさまざまなシステムに接続できるようになります。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、SSO システムを機密情報の格納場所として使用しています。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ランタイムをインストールするたびにエンタープライズ シングル サインオンが自動的にインストールされますが、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 環境に関係なく、エンタープライズ シングル サインオンをスタンドアロン コンポーネントとしてインストールすることもできます。 エンタープライズ シングル サインオンに関する詳細については、次を参照してください。[を使用して SSO](../core/using-sso.md)します。 SSO サービスとリソースをセキュリティで保護して環境に展開するには、次のガイドラインに従うことをお勧めします。  
   
 ## <a name="general-deployment-recommendations-for-sso"></a>SSO の展開に関する一般的な推奨事項  
   
@@ -51,7 +51,7 @@ ms.locfileid: "37007123"
   
 -   すべての SSO サーバーが同期されるように、環境内には 1 台のタイム サーバーを配置する必要があります。 SSO サーバー間で時刻が同期されていないことが原因で、環境のセキュリティが危険にさらされる場合があります。  
   
--   環境内に 1 台のマスタ シークレット サーバーしか存在しないことを考慮して、マスタ シークレット サーバーにはアクティブ/パッシブのクラスタ構成を使用することをお勧めします。 マスター シークレット サーバーをクラスタ リングの詳細については、[マスター シークレット サーバーをクラスター化する方法](../core/how-to-cluster-the-master-secret-server1.md)を参照してください。  
+-   環境内に 1 台のマスタ シークレット サーバーしか存在しないことを考慮して、マスタ シークレット サーバーにはアクティブ/パッシブのクラスタ構成を使用することをお勧めします。 マスター シークレット サーバーをクラスタ リングの詳細については、次を参照してください。[マスター シークレット サーバーをクラスター化する方法](../core/how-to-cluster-the-master-secret-server1.md)します。  
   
 -   マスタ シークレット サーバーでは、SSO システムが SSO データベースに格納されている情報の暗号化に使用する暗号化キーを保持します。 マスタ シークレット サーバーには、他の製品やサービスをインストールまたは構成しないことをお勧めします。  
   
@@ -60,9 +60,9 @@ ms.locfileid: "37007123"
   
 -   マスタ シークレット サーバーは、マスタ シークレットをバックアップおよび復元するため、リムーバブル メディアまたは NTFS ファイル システム フォルダにアクセスできる必要があります。 リムーバブル メディアを使用する場合は、適切な手段を講じてリムーバブル メディアを保護してください。 NTFS ファイル システムにマスタ シークレットをバックアップする場合は、ファイルとフォルダを保護する必要があります。 また、このファイルには、SSO 管理者のみがアクセスできるようにする必要があります。  
   
--   マスタ シークレットは、マスタ シークレット サーバーによって生成されたら、すぐにバックアップする必要があります。 バックアップすると、マスタ シークレット サーバーで障害が発生した場合に、SSO データベースのデータを回復することができます。 マスター シークレットのバックアップの詳細については、[マスター シークレットの管理](../core/managing-the-master-secret.md)を参照してください。  
+-   マスタ シークレットは、マスタ シークレット サーバーによって生成されたら、すぐにバックアップする必要があります。 バックアップすると、マスタ シークレット サーバーで障害が発生した場合に、SSO データベースのデータを回復することができます。 マスター シークレットのバックアップの詳細については、次を参照してください。[マスター シークレットの管理](../core/managing-the-master-secret.md)します。  
   
--   現在のシークレットをバックアップするか、または定期的 (月 1 回など) に新しいシークレットを生成します。 シークレットがないと、SSO データベースから情報を取得できません。 バックアップと、マスター シークレットの復元の詳細については、[マスター シークレットの管理](../core/managing-the-master-secret.md)を参照してください。  
+-   現在のシークレットをバックアップするか、または定期的 (月 1 回など) に新しいシークレットを生成します。 シークレットがないと、SSO データベースから情報を取得できません。 バックアップと、マスター シークレットの復元の詳細については、次を参照してください。[マスター シークレットの管理](../core/managing-the-master-secret.md)します。  
   
 ## <a name="security-recommendations-for-sso-groups-and-accounts"></a>SSO グループとアカウントのセキュリティに関する推奨事項  
   
@@ -89,7 +89,7 @@ ms.locfileid: "37007123"
   
 - SSO 管理者は、マスタ シークレット サーバーと SSO サーバーのイベント ログで SSO 監査イベントを定期的に監視することをお勧めします。  
   
-- すべての SSO サーバーと SSO データベース間に、ファイアウォールに加えて、インターネット プロトコル セキュリティ (IPsec) または Secure Sockets Layer (SSL) を使用することをお勧めします。 SSL の詳細については、Microsoft ヘルプとサポート Web サイトを参照して[ http://go.microsoft.com/fwlink/?LinkId=195798](http://go.microsoft.com/fwlink/?LinkId=195798)します。 詳細については、すべての SSO サーバーと SSO データベース間で SSL を使用して、[SSO の SSL を有効にする方法](../core/how-to-enable-ssl-for-sso.md)を参照してください。  
+- すべての SSO サーバーと SSO データベース間に、ファイアウォールに加えて、インターネット プロトコル セキュリティ (IPsec) または Secure Sockets Layer (SSL) を使用することをお勧めします。 SSL の詳細については、Microsoft ヘルプとサポート Web サイトを参照して[ http://go.microsoft.com/fwlink/?LinkId=195798](http://go.microsoft.com/fwlink/?LinkId=195798)します。 詳細については、すべての SSO サーバーと SSO データベース間で SSL を使用して、次を参照してください。 [SSO の SSL を有効にする方法](../core/how-to-enable-ssl-for-sso.md)します。  
   
 ## <a name="perimeter-network"></a>境界ネットワーク  
  インターネット インフォメーション サービス (IIS) とエンタープライズ シングル サインオンを実行する際は、次の推奨事項に従ってください。  
@@ -99,11 +99,11 @@ ms.locfileid: "37007123"
 -   IIS ではリモート プロシージャ コール (RPC) ポートを開かないでください。  
   
 ## <a name="sql-server-access"></a>SQL Server へのアクセス  
- すべての SSO サーバーでは SQL Server に格納されている SSO データベースへのアクセスが発生します。 SQL Server データベースをセキュリティで保護する方法の詳細については、[ http://go.microsoft.com/fwlink/?LinkId=33175](http://go.microsoft.com/fwlink/?LinkId=33175)を参照してください。  
+ すべての SSO サーバーでは SQL Server に格納されている SSO データベースへのアクセスが発生します。 SQL Server データベースをセキュリティで保護する方法の詳細については、次を参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=33175](http://go.microsoft.com/fwlink/?LinkId=33175)します。  
   
- Secure Sockets Layer (SSL)、インターネット プロトコル セキュリティ (IPsec) のいずれか、またはその両方を使用して、SSO サーバーと SSO データベース間でのデータの移動をセキュリティで保護することをお勧めします。 SSL の使用方法の詳細については、[ http://go.microsoft.com/fwlink/?LinkId=195798](http://go.microsoft.com/fwlink/?LinkId=195798)を参照してください。  
+ Secure Sockets Layer (SSL)、インターネット プロトコル セキュリティ (IPsec) のいずれか、またはその両方を使用して、SSO サーバーと SSO データベース間でのデータの移動をセキュリティで保護することをお勧めします。 SSL の使用方法の詳細については、次を参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=195798](http://go.microsoft.com/fwlink/?LinkId=195798)します。  
   
- SSO サーバーと SSO データベース間の接続のみで SSL を有効にする場合は、ssoconfig ユーティリティを使用して、すべての SSO サーバーに SSL サポートを設定できます。 このオプションを使用すると、SSO サーバーでは、SSO データベースにアクセスするときに必ず SSL が使用されるようになります。 詳細については、[SSO の SSL を有効にする方法](../core/how-to-enable-ssl-for-sso.md)を参照してください。  
+ SSO サーバーと SSO データベース間の接続のみで SSL を有効にする場合は、ssoconfig ユーティリティを使用して、すべての SSO サーバーに SSL サポートを設定できます。 このオプションを使用すると、SSO サーバーでは、SSO データベースにアクセスするときに必ず SSL が使用されるようになります。 詳細については、次を参照してください。 [SSO の SSL を有効にする方法](../core/how-to-enable-ssl-for-sso.md)します。  
   
 ## <a name="strong-passwords"></a>強力なパスワード  
  すべてのアカウントには、強力なパスワードを使用する必要があります。特に SSO 管理者グループのメンバ アカウントは SSO システム全体を制御できるので、強力なパスワードを使用することが重要になります。  
@@ -117,7 +117,7 @@ ms.locfileid: "37007123"
 ## <a name="kerberos"></a>Kerberos  
  SSO では Kerberos 認証がサポートされているため、SSO に Kerberos 認証を設定することをお勧めします。 SSO に Kerberos を設定するには、SSO サービスのサービス プリンシパル名 (SPN) を登録する必要があります。 既定では、Kerberos を設定すると、SSO では SPN を使用して、SSO サービスを使用するコンポーネントを認証します。 SSO で管理しているサブサービスと SSO サーバー間には、Kerberos 認証を設定することをお勧めします。 また、SSO サーバー間、SSO サーバーと SSO データベースが格納されている SQL Server コンピュータ間に Kerberos 認証を使用することもできます。  
   
- Kerberos 認証を設定および確認するには、setspn ユーティリティと kerbtray ユーティリティを使用します。 これらのユーティリティの詳細については、[ http://go.microsoft.com/fwlink/?LinkId=33178](http://go.microsoft.com/fwlink/?LinkId=33178)を参照してください。  
+ Kerberos 認証を設定および確認するには、setspn ユーティリティと kerbtray ユーティリティを使用します。 これらのユーティリティの詳細については、次を参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=33178](http://go.microsoft.com/fwlink/?LinkId=33178)します。  
   
 ## <a name="delegation"></a>委任  
  [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] または [!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] を使用している場合、制約付き委任を使用できますが、シングル サインオン管理者のタスクの実行には委任を使用しないことをお勧めします。 また、シングル サインオン管理者には、追加のタスクやユーザー権利を委任しないことをお勧めします。  

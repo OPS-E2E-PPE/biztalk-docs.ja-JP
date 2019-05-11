@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10667 |Microsoft Docs'
+title: シングル サインオン:イベント 10667 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9a41719f6b8a4d3a0ed99b4993b8968f58d28d42
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2e5115d7d521a0e19d1b48f5c1bf1f9f1f5937e1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37024050"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65397542"
 ---
-# <a name="single-sign-on-event-10667"></a>シングル サインオン: イベント 10667
+# <a name="single-sign-on-event-10667"></a>シングル サインオン:イベント 10667
 ## <a name="details"></a>詳細  
 
 |                 |                                                                                                                                         |
@@ -28,19 +28,19 @@ ms.locfileid: "37024050"
 | 製品バージョン |                                       [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                                        |
 |    イベント ID     |                                                                  10667                                                                  |
 |  イベント ソース   |                                                                 ENTSSO                                                                  |
-|    コンポーネント    |                                                                   N\A                                                                   |
+|    コンポーネント    |                                                                   該当なし                                                                   |
 |  シンボル名  |                                          SSO_INFO_SUPPRESSED_DUPLICATE_WINDOWS_PASSWORD_CHANGE                                          |
-|  メッセージ テキスト   | 重複する Windows パスワード変更を抑制しました。%r<br /><br /> 追跡 ID: %1 %r<br /><br /> アダプター: % 2 %r<br /><br /> Windows アカウント: %3 |
+|  メッセージ テキスト   | 重複する Windows パスワード change.%r の抑制<br /><br /> 追跡 ID: %1 %r<br /><br /> アダプター: % 2 %r<br /><br /> Windows アカウント: %3 |
 
 ## <a name="explanation"></a>説明  
- この情報イベントは、SSO が重複する Windows パスワード変更を抑制したことを示します。  
+ この情報イベントは、SSO が重複している Windows パスワード変更を抑制することを示します。  
 
 ## <a name="user-action"></a>ユーザーの操作  
 
--   ユーザーの操作は必要ありません。  
+-   ユーザー操作は必要ありません。  
 
-## <a name="more-info"></a>詳細
+## <a name="more-info"></a>詳細情報
 
 - [パスワード同期](../core/password-synchronization2.md)  
 
-- **パスワード同期アダプターのプロパティ: オプション** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]
+- **パスワード同期アダプターのプロパティ:オプション** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]

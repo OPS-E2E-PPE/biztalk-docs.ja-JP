@@ -1,5 +1,5 @@
 ---
-title: '手順 2: 双方向 Wcf-webhttp 送信ポートの構成 |Microsoft ドキュメント'
+title: 手順 2:双方向の Wcf-webhttp 送信ポートの構成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f355275f9480cfa13f3a15bcc6522fbe7ec83b8c
-ms.sourcegitcommit: e172dedfd00d4de3a40c8289f3a97ef65cdadd3c
+ms.openlocfilehash: aa2018b9212ddb1f8a4df8d94d0f48f5bdaf26ec
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "22278890"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65392807"
 ---
-# <a name="step-2-configure-a-two-way-wcf-webhttp-send-port"></a>手順 2: 双方向 Wcf-webhttp 送信ポートを構成します。
+# <a name="step-2-configure-a-two-way-wcf-webhttp-send-port"></a>手順 2:双方向の Wcf-webhttp 送信ポートを構成します。
 この手順で構成する、双方向**Wcf-webhttp**米国航空会社のスケジュールで遅延を取得するための REST リソース URL を起動するポートを送信します。  
   
 ### <a name="to-configure-wcf-webhttp-send-port"></a>WCF-WebHttp 送信ポートを構成するには  
@@ -73,9 +73,9 @@ ms.locfileid: "22278890"
   
         4.  **[OK]** をクリックします。  
   
-    5.  **メッセージ** タブの**動詞の本文を抑制**、要求メッセージからメッセージ ペイロードを除去する動詞を指定します。 このチュートリアルを指定`GET`です。 その理由を次に示します: 米国航空会社のフライト遅延の REST エンドポイントに対する GET メソッド呼び出しには、メッセージ ペイロードは不要REST リソース URL は、情報を取得するだけで十分です。 ただし、トリガーを**Wcf-webhttp** rest 呼び出しを送信ポート、いくつかのメッセージ本文を持つダミー メッセージをドロップします。 前に説明したように、REST エンドポイントはメッセージのペイロードを想定していないので、送信ポートから REST エンドポイントにダミー メッセージを送信できません。 そのため、REST エンドポイントを呼び出す前に、アダプターを切り離しますで指定した動詞についてのみ、ダミー メッセージからメッセージ ペイロード、**動詞の本文を抑制**テキスト ボックス。  
+    5.  **メッセージ** タブの**動詞の本文を抑制**、要求メッセージからメッセージ ペイロードを除去する動詞を指定します。 このチュートリアルを指定`GET`です。 その理由を次に示します。米国航空会社のフライトの遅延の REST エンドポイントに対する GET メソッドの呼び出しにメッセージ ペイロードは必要ありません。REST リソース URL では、情報を取得するための十分です。 ただし、トリガーを**Wcf-webhttp** rest 呼び出しを送信ポート、いくつかのメッセージ本文を持つダミー メッセージをドロップします。 前に説明したように、REST エンドポイントはメッセージのペイロードを想定していないので、送信ポートから REST エンドポイントにダミー メッセージを送信できません。 そのため、REST エンドポイントを呼び出す前に、アダプターを切り離しますで指定した動詞についてのみ、ダミー メッセージからメッセージ ペイロード、**動詞の本文を抑制**テキスト ボックス。  
   
-    6.  をクリックして**OK**送信ポートのプロパティ ダイアログ ボックスに戻るまでです。 左側のウィンドウからをクリックして**フィルター**で作成したポートの受信側から受信したすべてのメッセージを処理するフィルターを指定して[手順 1: ファイルの受信場所を構成する](../core/step-1-configure-a-file-receive-location.md)です。  
+    6.  をクリックして**OK**送信ポートのプロパティ ダイアログ ボックスに戻るまでです。 左側のウィンドウから次のようにクリックします。**フィルター**、で作成したポートの受信側から受信したすべてのメッセージを処理するフィルターを指定して[手順 1。ファイルを構成する受信場所](../core/step-1-configure-a-file-receive-location.md)します。  
   
         |||  
         |-|-|  
@@ -86,4 +86,4 @@ ms.locfileid: "22278890"
     7.  **[OK]** をクリックします。  
   
 ## <a name="see-also"></a>参照  
- [チュートリアル 5: BizTalk Server を使用して REST インターフェイスの呼び出し](../core/tutorial-5-invoking-a-rest-interface-using-biztalk-server.md)
+ [チュートリアル 5:BizTalk Server を使用して REST インターフェイスの呼び出し](../core/tutorial-5-invoking-a-rest-interface-using-biztalk-server.md)

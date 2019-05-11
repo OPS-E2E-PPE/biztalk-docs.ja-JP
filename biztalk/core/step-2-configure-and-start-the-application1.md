@@ -1,5 +1,5 @@
 ---
-title: '手順 2: 構成し、開始、Application1 |Microsoft Docs'
+title: 手順 2:構成および開始、Application1 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,31 +12,31 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8edeb1cdb1f24774ec7c1e615377d81e4393c9dc
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 07fbdba63325f44a803fe4e9c5e83fbd5d31240e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37024552"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65392772"
 ---
-# <a name="step-2-configure-and-start-the-application"></a>手順 2: 構成し、アプリケーションを起動します
+# <a name="step-2-configure-and-start-the-application"></a>手順 2:構成し、アプリケーションを起動します
 ![ステップ 2/3](../adapters-and-accelerators/adapter-oracle-database/media/step-2of3.gif "Step_2of3")  
   
  **所要時間:** 10 分  
   
- **目標:** では、この手順では、構成し、EAISolution アプリケーションを起動します。  
+ **目標:** この手順では、構成し、EAISolution アプリケーションを起動します。  
   
- **目的:** 構成は、バインドに関するほとんどの場合は。  バインディングは、オーケストレーション ポートなど、ロール リンクの論理エンドポイントとの送信などの物理的なエンドポイント間のマッピングを作成し、受信ポートまたはパーティします。 これにより、BizTalk ビジネス ソリューションの複数のコンポーネント間で通信できるようになります。 バインドを作成するには BizTalk Server 管理コンソールを使用します。  
+ **目的:** 構成は、バインドに関するほとんどの場合です。  バインディングは、オーケストレーション ポートなど、ロール リンクの論理エンドポイントとの送信などの物理的なエンドポイント間のマッピングを作成し、受信ポートまたはパーティします。 これにより、BizTalk ビジネス ソリューションの複数のコンポーネント間で通信できるようになります。 バインドを作成するには BizTalk Server 管理コンソールを使用します。  
   
 ## <a name="prerequisites"></a>前提条件  
  このステップを開始する前に、以下の要件を確認してください。  
   
-- この手順を開始する前に行う必要があります[手順 1: プロジェクトの配置](../core/step-1-deploy-the-projects.md)します。  
+- この手順を開始する前に行う必要があります[手順 1。プロジェクトの配置](../core/step-1-deploy-the-projects.md)します。  
   
 - [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者グループのメンバーとしてログオンする必要があります。  
   
 ## <a name="procedures"></a>手順  
- BizTalk アプリケーションは、BizTalk Server ビジネス ソリューションの展開、管理、およびトラブルシューティングをすばやく簡単に行えるようにする BizTalk Server の機能です。 BizTalk アプリケーションは、BizTalk Server ビジネス ソリューションで使用される "アイテム" の論理グループです。  詳細については、[BizTalk アプリケーションとは何ですか?](../core/what-is-a-biztalk-application.md)を参照してください。  [手順 1: プロジェクトの配置](../core/step-1-deploy-the-projects.md)、"EAISolution"に、プロジェクトを展開するアプリケーション名を構成します。  したがって、EAISolution アプリケーションには、オーケストレーション、2 つのスキーマおよびマップが含まれています。  
+ BizTalk アプリケーションは、BizTalk Server ビジネス ソリューションの展開、管理、およびトラブルシューティングをすばやく簡単に行えるようにする BizTalk Server の機能です。 BizTalk アプリケーションは、BizTalk Server ビジネス ソリューションで使用される "アイテム" の論理グループです。  詳細については、次を参照してください。 [BizTalk アプリケーションとは何ですか?](../core/what-is-a-biztalk-application.md)します。  [手順 1。プロジェクトの配置](../core/step-1-deploy-the-projects.md)、"EAISolution"に、プロジェクトを展開するアプリケーション名を構成します。  したがって、EAISolution アプリケーションには、オーケストレーション、2 つのスキーマおよびマップが含まれています。  
   
 #### <a name="to-open-the-eaisolution-application-from-biztalk-server-administration-console"></a>EAISolution アプリケーションを BizTalk Server 管理コンソールから開くには  
   
@@ -46,7 +46,7 @@ ms.locfileid: "37024552"
   
 3. 展開**BizTalk グループ**、展開**アプリケーション**、 をクリックし、 **EAISolution**します。  
   
-   [レッスン 2: ビジネス プロセスの定義](../core/lesson-2-define-the-business-process.md)オーケストレーションを作成しました。  オーケストレーションでは、論理ポートを定義しました。  次の手順では、物理ポートを定義して論理ポートにバインドします。  
+   「[レッスン 2: ビジネス プロセスの定義](../core/lesson-2-define-the-business-process.md)オーケストレーションを作成しました。  オーケストレーションでは、論理ポートを定義しました。  次の手順では、物理ポートを定義して論理ポートにバインドします。  
   
 #### <a name="to-create-the-receiverequest-port"></a>ReceiveRequest ポートを作成するには  
   
@@ -70,7 +70,7 @@ ms.locfileid: "37024552"
     |**受信ハンドラー**|**[BizTalkServerApplication]** を選択します。|  
     |**受信パイプライン**|選択**XMLReceive**します。|  
   
-5.  クリックして**構成**します。  
+5.  をクリックして**構成**です。  
   
 6.  [FILE トランスポートのプロパティ] で、次の操作を行います。  
   
@@ -93,7 +93,7 @@ ms.locfileid: "37024552"
     |**送信ハンドラー**|選択**BizTAlkServerApplication**します。|  
     |**送信パイプライン**|選択**XML Transmit**します。|  
   
-3.  クリックして**構成**します。  
+3.  をクリックして**構成**です。  
   
 4.  [FILE トランスポートのプロパティ] で、次の操作を行います。  
   
@@ -117,7 +117,7 @@ ms.locfileid: "37024552"
     |**送信ハンドラー**|選択**BizTAlkServerApplication**します。|  
     |**送信パイプライン**|選択**XML Transmit**します。|  
   
-3.  クリックして**構成**します。  
+3.  をクリックして**構成**です。  
   
 4.  [FILE トランスポートのプロパティ] で、次の操作を行います。  
   
@@ -155,8 +155,8 @@ ms.locfileid: "37024552"
  このステップでは、EAIApplication アプリケーションを構成し、開始しました。  
   
 ## <a name="next-steps"></a>次の手順  
- EAI ソリューションでメッセージを処理する方法をテストする[手順 3: ソリューションをテストする](../core/step-3-test-the-solution2.md)します。  
+ EAI ソリューションでメッセージを処理する方法をテストする[手順 3。ソリューションをテストする](../core/step-3-test-the-solution2.md)します。  
   
 ## <a name="see-also"></a>参照  
- [手順 1: 配置プロジェクト](../core/step-1-deploy-the-projects.md)   
- [手順 3: ソリューションのテスト](../core/step-3-test-the-solution2.md)
+ [ステップ 1: プロジェクトを配置します。](../core/step-1-deploy-the-projects.md)   
+ [ステップ 3:ソリューションをテストします。](../core/step-3-test-the-solution2.md)

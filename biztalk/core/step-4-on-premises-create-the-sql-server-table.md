@@ -1,5 +1,5 @@
 ---
-title: '手順 4 (オンプレミス): SQL Server テーブルの作成 |Microsoft ドキュメント'
+title: 手順 4 (オンプレミス):SQL Server のテーブルの作成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,21 +12,21 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e6a6934a98ccd101003519486388b09504b5f0ab
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 67981fed618f9214bf1d07c3140c7685fba3a727
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22277266"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65392511"
 ---
-# <a name="step-4-on-premises-create-the-sql-server-table"></a>手順 4 (オンプレミス): SQL Server テーブルを作成します。
-ビジネス シナリオの一環として、販売注文メッセージが Contoso により Northwind に送信されるメッセージ X12 最後に挿入する必要がで、 **SalesOrder**テーブル、注文数量が 100 より大きい場合。 このトピックでは、作成する方法の説明、 **SalesOrder**収納内部設置型である SQL Server データベース インスタンス内のテーブルです。  
+# <a name="step-4-on-premises-create-the-sql-server-table"></a>手順 4 (オンプレミス):SQL Server のテーブルを作成します。
+ビジネス シナリオの一環として、メッセージ X12 販売注文メッセージが Contoso により Northwind に送信する必要があります最後に挿入するを**SalesOrder**注文数量が 100 より大きい場合は、テーブルします。 このトピックでは、手順を作成する方法には、 **SalesOrder**収納オンプレミスである SQL Server データベース インスタンス内のテーブル。  
   
 ### <a name="to-create-the-salesorder-table"></a>SalesOrder テーブルを作成するには  
   
-1.  SQL Server Management Studio を開き、テーブルの作成先となるデータベースに対して次のクエリを実行します。  
+1.  SQL Server Management Studio を開き、テーブルを作成するデータベースに対して次のクエリを実行します。  
   
-2.  次のクエリを作成する実行、 **SalesOrder**テーブル。  
+2.  作成する次のクエリ実行、 **SalesOrder**テーブル。  
   
     ```  
     CREATE TABLE [dbo].[SalesOrder] (  
@@ -46,7 +46,7 @@ ms.locfileid: "22277266"
     GO  
     ```  
   
-3.  対象データベースにテーブルが作成されていることを確認します。  
+3.  ターゲット データベースのテーブルが作成されたことを確認します。  
   
 ## <a name="see-also"></a>参照  
- [チュートリアル 4: BizTalk Server 2013 を使用するハイブリッド アプリケーションを作成します。](../core/tutorial-4-creating-a-hybrid-application-using-biztalk-server-2013.md)
+ [チュートリアル 4: BizTalk Server 2013 を使用してハイブリッド アプリケーションを作成します。](../core/tutorial-4-creating-a-hybrid-application-using-biztalk-server-2013.md)

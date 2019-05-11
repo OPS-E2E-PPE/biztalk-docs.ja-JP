@@ -15,12 +15,12 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c58bccbb48603af8bf5a5cc0d12b4c2200e78704
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3781d2088c56b5dbd0b1b502e46c04537c836b37
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37013365"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373064"
 ---
 # <a name="receive-idocs-from-sap-in-a-transactional-context-using-biztalk-server"></a>BizTalk Server を使用してトランザクション コンテキストでの SAP の Idoc を受信します。
 トランザクションのコンテキストで IDOC を受信は、トランザクションのコンテキストで Trfc の受信に似ています。 このような場合は、SAP システムから受信した IDOC がの一部として、TID を含む、 *\<TransactionalRfcOperationIdentifier\>* 要素。 この TID は、アダプターによって、SQL database に保存されます。 IDOC を送信する SAP システムで、ABAP コードに"COMMIT WORK"ステートメントがある場合は、SAP システムへの応答が送信された後に、TID が SQL データベースから削除されます。  
@@ -35,7 +35,7 @@ ms.locfileid: "37013365"
    Data Source=<myServerAddress>;Initial Catalog=<myDataBase>;User Id=<myUsername>;Password=<myPassword>;  
    ```  
   
-    バインディングのプロパティとその設定方法の詳細については、[mySAP Business Suite バインド プロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md)を参照してください。  
+    バインディングのプロパティとその設定方法の詳細については、次を参照してください。 [mySAP Business Suite バインド プロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md)します。  
   
    > [!IMPORTANT]
    >  [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]しばらくお待ちくださいこの処理には、数分かかることがあります SQL スクリプト、SapAdapter-DbScript-Install.sql、SQL server データベースおよびデータベース オブジェクトを作成する SQL Server の管理者によって実行する必要があります。 スクリプトは通常にインストールされて*\<インストール ドライブ\>*: Program FilesMicrosoft[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]します。  

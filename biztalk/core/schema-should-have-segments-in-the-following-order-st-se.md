@@ -1,5 +1,5 @@
 ---
-title: スキーマには ST .... SE の順序でセグメントが記述されている必要がありますSE |Microsoft Docs
+title: スキーマは、ST の次の順序でセグメントをある必要があります.SE |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c98bc756e4bd75a8a15111c54f433a7f9c6c0509
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b975f28221941ef84f0683fae1597816640d48a1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37015171"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396902"
 ---
-# <a name="schema-should-have-segments-in-the-following-order-st--se"></a>スキーマには ST .... SE の順序でセグメントが記述されている必要がありますSE
+# <a name="schema-should-have-segments-in-the-following-order-st--se"></a>スキーマは、ST の次の順序でセグメントをある必要があります.SE
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                        |
@@ -30,10 +30,10 @@ ms.locfileid: "37015171"
 |  イベント ソース   | [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI |
 |    コンポーネント    |                                       EDI エンジン                                       |
 |  シンボル名  |                    SchemaCode116ETransactionSetSchemaStSeOutOfOrder                    |
-|  メッセージ テキスト   |             スキーマには ST .... SE の順序でセグメントが記述されている必要がありますSE              |
+|  メッセージ テキスト   |             スキーマは、ST の次の順序でセグメントをある必要があります.SE              |
   
 ## <a name="explanation"></a>説明  
- このエラー/警告/情報イベントは、ヘッダーとトレーラーが正しい順序で記述されていなかったため、カスタム ドキュメント スキーマが無効であることを示します。 スキーマが展開されると、BizTalk Server によってこの検証が実行されます。  
+ このエラー/警告/情報イベントは、カスタム ドキュメント スキーマが無効である、正しい順序でヘッダーとトレーラーがないためにことを示します。 BizTalk Server は、スキーマが展開されているときに、この検証を実行します。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- このエラーを解決するには、カスタマイズされたドキュメント スキーマを変更し、ヘッダーとトレーラーを正しい順序で記述して、スキーマを再展開します。
+ このエラーを解決するには、ヘッダーとトレーラーが正しい順番とし、スキーマを再配置できるように、カスタマイズされたドキュメント スキーマを変更します。

@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2a487f30fc4ca9897cfd1dc4642c26a2e5f36fd7
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5a18a0b5d125defd23de079d8ce502f423369353
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37016773"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396701"
 ---
 # <a name="portal-reports-page"></a>ポータル レポート ページ
 図 1 に示すように、ポータルのレポート ページには、次のグラフが表示されます。  
@@ -40,7 +40,7 @@ ms.locfileid: "37016773"
 
   **ESB 管理ポータル レポート ページ**  
 
-  次の一覧では、ESB 管理ポータル新しいレジストリ エントリ ページの機能を使用する方法について説明します。  
+  次の一覧では、ESB 管理ポータル新しいレジストリ エントリ] ページの機能を使用する方法について説明します。  
 
 - をクリックして、 **SelectApplications**最初のグラフの上にリンクし選択するか表示されるインストール済みの Microsoft BizTalk Server アプリケーションの一覧でチェック ボックスをオフにします。 またはすべてのアプリケーションを選択して表示されるリンクを使用することもできます。 をクリックして**保存**選択したアプリケーションの情報を表示する**キャンセル**変更を破棄します。  
 

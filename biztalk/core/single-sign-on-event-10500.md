@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10500 |Microsoft Docs'
+title: シングル サインオン:イベント 10500 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 37c614f2b8660fbc6d0c6969f740615a0c90354e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c3581429fec4b53b8f4c2cda2411955487099a79
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36983955"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65392999"
 ---
-# <a name="single-sign-on-event-10500"></a>シングル サインオン: イベント 10500
+# <a name="single-sign-on-event-10500"></a>シングル サインオン:イベント 10500
 ## <a name="details"></a>詳細  
 
 |                 |                                                                                                                |
@@ -28,18 +28,18 @@ ms.locfileid: "36983955"
 | 製品バージョン |                           [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                           |
 |    イベント ID     |                                                     10500                                                      |
 |  イベント ソース   |                                                     ENTSSO                                                     |
-|    コンポーネント    |                                                      N\A                                                       |
+|    コンポーネント    |                                                      該当なし                                                       |
 |  シンボル名  |                                           SSO_ERROR_EVENT_LOG_FAILED                                           |
-|  メッセージ テキスト   | イベント ログ システムでエラーが発生しました。 イベント ログ メッセージがこのアプリケーションの正しいものではない可能性があります。 |
+|  メッセージ テキスト   | イベント ログ システムには、エラーが発生しました。 イベント ログ メッセージは、このアプリケーションの正しくない場合があります。 |
 
 ## <a name="explanation"></a>説明  
- このエラー イベントは、イベント ログへの記録に失敗したことを示します。  
+ このエラー イベントは、イベント ログが失敗したことを示します。  
 
 ## <a name="user-action"></a>ユーザーの操作  
  このエラーを解決するには、次の操作を行います。  
 
 - 必要なアクションはありません。  
 
-  詳細については、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ヘルプの次の情報を参照してください:   
+  詳細については、の次のリソースを参照してください。[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプ。  
 
 - [SSO の使用](../core/using-sso.md)

@@ -14,12 +14,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a0323bde34a7ef9abcbba15d8dd8059fee0c51c6
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3e6beaea054912934bee2826eaa1aa92b7060ad5
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37012011"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65391262"
 ---
 # <a name="configuring-encoding-agreement-properties"></a>エンコード アグリーメントのプロパティの構成
 取引先アグリーメント (TPA) は、特定の B2B プロトコルによる 2 つの取引先間でのメッセージの処理に関する、最終的で拘束力のある合意です。 簡単に言うと、TPA は、2 つのビジネス プロファイル間で B2B メッセージを互いに交換する際に、特定のメッセージ エンコード プロトコル (X12 または EDIFACT) や特定のトランスポート プロトコル (AS2) を使用するための了解事項です。 エンコードとトランスポート プロトコルについての合意事項を定義する以外にも、アグリーメントを使用してメッセージの形式と配信方法をカスタマイズすることができます。  
@@ -29,7 +29,7 @@ ms.locfileid: "37012011"
 - トランスポート プロトコルの設定の一部として、メッセージに署名する必要があるかどうか、メッセージを暗号化する必要があるかどうか、なども定義できます。  
   
   > [!NOTE]
-  >  トランスポート (AS2) プロトコルの設定の詳細については、[AS2 アグリーメントのプロパティを構成する](../core/configuring-as2-agreement-properties.md)を参照してください。  
+  >  トランスポート (AS2) プロトコルの設定の詳細については、次を参照してください。 [AS2 アグリーメントのプロパティを構成する](../core/configuring-as2-agreement-properties.md)します。  
   
   アグリーメントを作成する際は、次の点を考慮する必要があります。  
   
@@ -45,7 +45,7 @@ ms.locfileid: "37012011"
 - エンコード アグリーメント (メッセージに使用するメッセージ エンコードを定義する) およびトランスポート アグリーメント (メッセージ交換に使用するトランスポート プロトコルを定義する) を設定できます。 エンコード アグリーメントは必ず設定する必要があります。 2 つのパーティが AS2 アグリーメントを設定するのは、メッセージの転送に AS2 プロトコルを使用する場合のみです。 たとえば、2 つのパーティがメッセージを電子メールで転送する場合、AS2 アグリーメントは必要ありません。  
   
   > [!NOTE]
-  >  AS2 アグリーメントの詳細については、[AS2 アグリーメントのプロパティを構成する](../core/configuring-as2-agreement-properties.md)を参照してください。  
+  >  AS2 アグリーメントの詳細については、次を参照してください。 [AS2 アグリーメントのプロパティを構成する](../core/configuring-as2-agreement-properties.md)します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

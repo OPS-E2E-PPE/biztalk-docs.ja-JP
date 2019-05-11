@@ -1,5 +1,5 @@
 ---
-title: '手順 3: オーケストレーションのポートの追加 |Microsoft Docs'
+title: 手順 3:オーケストレーションへのポートの追加 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,21 +12,21 @@ caps.latest.revision: 45
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9b42c91be94663f1061d3bbda31267db21988157
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 310c9b5640d8b975e2f11f7ab52d314236c0d43e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36968619"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65392694"
 ---
-# <a name="step-3-add-ports-to-the-orchestration"></a>ステップ 3: オーケストレーションへのポートの追加
+# <a name="step-3-add-ports-to-the-orchestration"></a>手順 3:オーケストレーションへのポートの追加
 ![手順 4 の 3](../adapters-and-accelerators/adapter-oracle-ebs/media/step-3of4.gif "Step_3of4")  
   
  **所要時間:** 10 分  
   
- **目標:** ここでは、EAIProcess オーケストレーションに 3 つのポートを追加およびそれらを構成します。  
+ **目標:** この手順では、EAIProcess オーケストレーションに 3 つのポートを追加し、それらを構成します。  
   
- **目的:** ポートをオーケストレーションはメッセージを送信し、他のビジネス プロセスからメッセージを受信する方法を指定します。 各ポートは、種類、方向、バインドを保持しています。これらの組み合わせによって、通信方向、通信方式、メッセージの送信先場所と送信元場所、および通信の実行方法が決まります。 このステップで作成および構成する 3 つのポートには、それぞれ次の役割があります。  
+ **目的:** ポートは、オーケストレーションはメッセージを送信し、他のビジネス プロセスからメッセージを受信する方法を指定します。 各ポートは、種類、方向、バインドを保持しています。これらの組み合わせによって、通信方向、通信方式、メッセージの送信先場所と送信元場所、および通信の実行方法が決まります。 このステップで作成および構成する 3 つのポートには、それぞれ次の役割があります。  
   
 - **ReceiveRequestPort**倉庫から在庫補充要求メッセージを受信します。  
   
@@ -34,12 +34,12 @@ ms.locfileid: "36968619"
   
 - **SendDeclinePort**要求拒否メッセージを倉庫に返送します。  
   
-  詳細については、[オーケストレーションで使用するポート](../core/using-ports-in-orchestrations.md)を参照してください。  
+  詳細については、次を参照してください。[オーケストレーションで使用するポート](../core/using-ports-in-orchestrations.md)します。  
   
 ## <a name="prerequisites"></a>前提条件  
  このステップを開始する前に、以下の要件を確認してください。  
   
--   この手順を開始する前に行う必要があります[手順 2: ビジネス プロセスの定義](../core/step-2-define-the-business-process.md)します。  
+-   この手順を開始する前に行う必要があります[手順 2。ビジネス プロセスの定義](../core/step-2-define-the-business-process.md)します。  
   
 ## <a name="procedures"></a>手順  
   
@@ -73,7 +73,7 @@ ms.locfileid: "36968619"
     |**ポートの通信方向**|選択**常にこのポートでメッセージを受信**します。|  
     |**ポートのバインド**|選択から**後で指定する**します。|  
   
-7.  **ポート ウィザードの完了**] ページで [**完了**します。  
+7.  **ポート ウィザードの完了**] ページで [**完了**です。  
   
 #### <a name="to-create-and-configure-senddeclineport"></a>SendDeclinePort を作成および構成するには  
   
@@ -125,9 +125,9 @@ ms.locfileid: "36968619"
  このステップでは、EAIProcess オーケストレーションに 3 つのポートを追加し、それらを構成しました。  
   
 ## <a name="next-steps"></a>次の手順  
- プロジェクトをビルドする[手順 4: EAIOrchestration プロジェクトのビルド](../core/step-4-build-the-eaiorchestration-project.md)します。  
+ プロジェクトをビルドする[手順 4。EAIOrchestration プロジェクトのビルド](../core/step-4-build-the-eaiorchestration-project.md)します。  
   
 ## <a name="see-also"></a>参照  
- [手順 1: EAIOrchestration プロジェクトをソリューションに追加します。](../core/step-1-add-eaiorchestration-project-to-the-solution.md)   
- [手順 2: ビジネス プロセスを定義します。](../core/step-2-define-the-business-process.md)   
- [手順 4: EAIOrchestration プロジェクトのビルド](../core/step-4-build-the-eaiorchestration-project.md)
+ [ステップ 1: EAIOrchestration プロジェクトをソリューションに追加します。](../core/step-1-add-eaiorchestration-project-to-the-solution.md)   
+ [手順 2:ビジネス プロセスを定義します。](../core/step-2-define-the-business-process.md)   
+ [手順 4:EAIOrchestration プロジェクトをビルドします。](../core/step-4-build-the-eaiorchestration-project.md)

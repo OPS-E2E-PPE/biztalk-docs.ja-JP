@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d9e5c8c5e225239461c9509aa50c105e4181ba12
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: bc6db1f67340092c27eea10f4847fa04b0269dab
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36978627"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396337"
 ---
 # <a name="low-latency-scenario-optimizations"></a>低待機時間シナリオの最適化
 既定では、BizTalk Server は、低待機時間よりもスループットに最適化されています。 次の最適化は、待機時間の短縮が必要な場合のシナリオで、BizTalk Server に適用できます。  
@@ -26,13 +26,13 @@ ms.locfileid: "36978627"
 >  これらの最適化は、待機時間が改善されますが、全体的なスループットをいくつかのコストで行うことがあります。  
   
 ## <a name="increase-the-biztalk-server-host-internal-message-queue-size"></a>BizTalk Server ホストの内部メッセージ キューのサイズを増やす  
- 各 BizTalk ホストには、内部のメモリ内キューがあります。 低待機時間シナリオのパフォーマンスを向上させるためには、100 ~ 10,000 の既定値からこのキューのサイズを大ききます。 内部メッセージ キューのサイズの値を変更する方法の詳細については、[リソース ベースのスロットル設定の変更方法](http://go.microsoft.com/fwlink/?LinkID=208366)(http://go.microsoft.com/fwlink/?LinkID=208366) 、BizTalk Server のドキュメントにを参照してください。  
+ 各 BizTalk ホストには、内部のメモリ内キューがあります。 低待機時間シナリオのパフォーマンスを向上させるためには、100 ~ 10,000 の既定値からこのキューのサイズを大ききます。 内部メッセージ キューのサイズの値を変更する方法の詳細については、次を参照してください。[リソース ベースのスロットル設定の変更方法](http://go.microsoft.com/fwlink/?LinkID=208366)(http://go.microsoft.com/fwlink/?LinkID=208366) 、BizTalk Server のドキュメントにします。  
   
 > [!NOTE]  
 >  内部メッセージ キュー サイズの値を増やすと、ホスト インスタンスによって使用されるメモリが増加します。  
   
 ## <a name="increase-the-biztalk-server-host-in-process-messages"></a>BizTalk Server ホストのインプロセス メッセージを向上します。  
- パフォーマンスを向上させるために 1000 ~ 10,000 個の既定値からのプロセスでメッセージを増やします。 インプロセス メッセージの値を変更する方法の詳細については、[ホスト制限の既定の設定を変更する方法](http://go.microsoft.com/fwlink/?LinkID=208366)(http://go.microsoft.com/fwlink/?LinkID=208366) 、BizTalk Server のドキュメントにを参照してください。  
+ パフォーマンスを向上させるために 1000 ~ 10,000 個の既定値からのプロセスでメッセージを増やします。 インプロセス メッセージの値を変更する方法の詳細については、次を参照してください。[ホスト制限の既定の設定を変更する方法](http://go.microsoft.com/fwlink/?LinkID=208366)(http://go.microsoft.com/fwlink/?LinkID=208366) 、BizTalk Server のドキュメントにします。  
   
 > [!NOTE]  
 >  内部メッセージ キュー サイズの値を増やすと、ホスト インスタンスによって使用されるメモリが増加します。  

@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8146b3f2f9be6d076cfd7dddd651ee2c9bb4d3c6
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 97af5b390fa3f2ba5255a28b77ec37ab5bec670f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36991531"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396405"
 ---
 # <a name="using-the-exception-management-framework"></a>例外管理フレームワークの使用
 [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]動的変換およびルーティングの障害 (展開されていないマップまたはマップ名を返さない規則など) の通信に例外を使用します。 変換またはルーティング プロセスが失敗したときに、ESB は例外メッセージを作成し、メッセージ ボックス データベースに直接バインドされたポートを通じて送信します。 ESB は、すべてをという名前の送信ポートも実装します。サブスクライブし、例外メッセージを取得し、ESB 管理ポータルに公開する例外です。  

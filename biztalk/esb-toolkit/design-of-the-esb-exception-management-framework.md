@@ -12,12 +12,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f25bec37d7ee6ec02db5db28e32ce8ed5b62f724
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 14c7c7e8f6ba2632e68ed81e98a562e5ef316120
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36996579"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65394638"
 ---
 # <a name="design-of-the-esb-exception-management-framework"></a>ESB 例外管理フレームワークの設計
 例外を管理するための一貫性と再利用可能なパターンが任意の開発プロジェクトの主要な考慮事項です。保守容易性を最大化し、デプロイ後にアプリケーションをサポートするために容易にできるようにするのに役立ちます。  

@@ -1,5 +1,5 @@
 ---
-title: BizTalk で、mySAP アダプターを使用する SAP システムから Idoc を送信する |Microsoft ドキュメント
+title: BizTalk での mySAP アダプターを使用する SAP システムから Idoc を送信する |Microsoft Docs
 description: ''
 ms.custom: ''
 ms.date: 06/08/2017
@@ -13,39 +13,39 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 63f7d1ccdaa8cb6a4ee12ad1cc4263c487a164c5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 47b194afbc0fff102c9c3a7017f24610234a88ac
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22215594"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65372866"
 ---
 # <a name="sending-idocs-from-an-sap-system"></a>SAP システムから Idoc を送信します。
-SAP システムから IDOC を外部アプリケーションに送信する SAP システムで完了する高度なタスクです。 これらのタスクを実行するため、SAP 管理者に問い合わせてまたは SAP ガイダンスを参照してください。  
+外部のアプリケーションに、SAP システムから IDOC を送信する SAP システムで完了する高度なタスク。 これらのタスクを実行するため、SAP 管理者にお問い合わせくださいまたは SAP のガイダンスを参照してください。  
   
 ## <a name="send-an-idoc-from-sap"></a>SAP からの IDOC を送信します。  
   
-1.  SAP の GUI を起動します。  
+1.  SAP GUI を起動します。  
   
 2.  BD54 トランザクションを使用して論理システムを作成します。  
   
-3.  SM59 トランザクションを使用して TCP/IP 接続で、RFC 変換先を作成します。  
+3.  SM59 トランザクションを使用して TCP/IP 接続では、RFC 転送先を作成します。  
   
 4.  WE21 トランザクションを使用してポートを作成し、最後の手順で作成された RFC 転送先にアタッチします。  
   
-5.  IDOC タイプと必須のメッセージ型と WE20 トランザクションを使用して、パートナー プロファイルを作成し、最後の手順で作成したポートにアタッチします。  
+5.  IDOC の種類と必要なメッセージの種類と WE20 トランザクションを使用してパートナー プロファイルを作成し、最後の手順で作成したポートにアタッチします。  
   
-6.  メッセージの種類を販売トランザクションを使用してポートに接続することで、分散モデルを維持します。  
+6.  メッセージの種類を販売トランザクションを使用して、ポートに接続することで、分散型モデルを維持します。  
   
-7.  SAP 内で IDOC を生成します。 たとえば、MATMAS IDOC をトリガーするのに BD10 トランザクションを使用します。 特定の Idoc をトリガーするには、他のトランザクションについては、SAP 管理者にお問い合わせください。  
+7.  SAP の IDOC を生成します。 たとえば、BD10 トランザクションを使用して、MATMAS IDOC をトリガーします。 特定の Idoc をトリガーするには、他のトランザクションについては、SAP 管理者にお問い合わせください。  
 
 ## <a name="view-transaction-ids-in-sap"></a>SAP でトランザクション Id の表示
-ときに、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] tRFC を呼び出すか、IDOC が SAP システムのレジスタ、SAP システムにトランザクション ID (TID) の応答として送信します。 一部のシナリオでからの呼び出しに応答内の SAP システムに登録されている TID を知っている必要があります、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]です。 たとえば、問題のトラブルシューティングを SAP システム上の作業 (LUW) の論理ユニットを識別することができます。  
+ときに、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] tRFC を呼び出すか、IDOC を SAP システムのレジスタの SAP システムにトランザクション ID (TID) の応答で送信します。 一部のシナリオからの呼び出しに対する応答で SAP システムに登録されている TID を把握する必要があります、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]します。 たとえば、問題をトラブルシューティングする SAP システムでの作業 (LUW) の論理単位を識別します。  
   
  SAP システムで、Tid を表示するには、SM58 トランザクションを使用する必要があります。 SAP 管理者に問い合わせるか、このトランザクションの詳細については、SAP のガイダンスを参照してください。 
 
 ## <a name="view-details-about-idocs-sent-and-received-from-sap"></a>送信され、SAP から受信した Idoc に関する詳細を表示
-使用して、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]IDOC を SAP システムに送信または SAP システムから IDOC を受信できます。 状態とを IDOC のデータが送信または受信されたビューを SAP システムを追跡、WE02 トランザクションを使用することができます。 SAP 管理者に問い合わせて、またはこのトランザクションの詳細については、SAP のガイダンスを参照してください。  
+使用して、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]IDOC を SAP システムに送信または SAP システムから IDOC を受信できます。 状態と送信または受信された IDOC のデータ ビューでの SAP システムを追跡するには、WE02 トランザクションを使用することができます。 SAP の管理者に問い合わせるか、このトランザクションの詳細については、SAP のガイダンスを参照してください。  
 
   
 ## <a name="see-also"></a>参照  

@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル 2: Siebel のプロジェクトを移行する BizTalk |Microsoft Docs'
+title: チュートリアル 2:移行する BizTalk プロジェクトで Siebel |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3ada19454c3d2aef1c725987d8d37f7b98a2d1c2
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 477a23c571333fb609987bf0060c92c6e6348ea9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36996435"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65370385"
 ---
-# <a name="tutorial-2-migrating-biztalk-projects-in-siebel"></a>チュートリアル 2: Siebel の BizTalk プロジェクトを移行します。
+# <a name="tutorial-2-migrating-biztalk-projects-in-siebel"></a>チュートリアル 2:Siebel の BizTalk プロジェクトの移行
 WCF ベースの Microsoft BizTalk Server に付属する Siebel アダプターの以前のバージョンとは異なる[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]など、多くの点で。  
   
 - BizTalk プロジェクトの作成、デザイン時エクスペリエンス。  
@@ -44,7 +44,7 @@ WCF ベースの Microsoft BizTalk Server に付属する Siebel アダプター
 >  説明を簡潔にするため、このチュートリアルでは、vPrev Siebel アダプターと Siebel アダプターの以前のバージョンに参照されます。 同様に、vPrev Siebel アダプターを使用する BizTalk プロジェクトは vPrev BizTalk プロジェクトとしてに参照されます。  
   
 ## <a name="sample-used-for-the-tutorial"></a>このチュートリアルで使用されるサンプル  
- このチュートリアルは、アカウントの Siebel ビジネス コンポーネントに対して、挿入操作を実行する vPrev BizTalk プロジェクトを移行する方法を示すサンプル (Siebel_BussComp_Migration) に基づいています。 Microsoft とサンプルが提供される[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]します。 詳細については、[アダプター サンプル](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md)を参照してください。  
+ このチュートリアルは、アカウントの Siebel ビジネス コンポーネントに対して、挿入操作を実行する vPrev BizTalk プロジェクトを移行する方法を示すサンプル (Siebel_BussComp_Migration) に基づいています。 Microsoft とサンプルが提供される[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]します。 詳細については、次を参照してください。[アダプター サンプル](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md)します。  
   
 ## <a name="prerequisites"></a>前提条件  
   
@@ -83,11 +83,11 @@ WCF ベースの Microsoft BizTalk Server に付属する Siebel アダプター
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [手順 1: vPrev BizTalk プロジェクトで Oracle データベースを変更します。](../../adapters-and-accelerators/adapter-oracle-database/step-1-modify-the-vprev-biztalk-project-in-oracle-database.md)  
+-   [ステップ 1: VPrev BizTalk プロジェクトで Oracle データベースを変更します。](../../adapters-and-accelerators/adapter-oracle-database/step-1-modify-the-vprev-biztalk-project-in-oracle-database.md)  
   
--   [手順 2: ORacle データベース アダプターを使用する BizTalk Server 管理コンソールでオーケストレーションを構成します。](../../adapters-and-accelerators/adapter-oracle-database/step-2-configure-an-orchestration-to-use-the-oracle-db-adapter-in-biztalk.md)  
+-   [手順 2:ORacle データベース アダプターを使用する BizTalk Server 管理コンソールでオーケストレーションを構成します。](../../adapters-and-accelerators/adapter-oracle-database/step-2-configure-an-orchestration-to-use-the-oracle-db-adapter-in-biztalk.md)  
   
--   [手順 3: Siebel アダプターを使用して移行されたアプリケーションをテストします。](../../adapters-and-accelerators/adapter-siebel/step-3-test-the-migrated-application-with-the-siebel-adapter.md)  
+-   [ステップ 3:Siebel アダプターを使用した移行されたアプリケーションをテストします。](../../adapters-and-accelerators/adapter-siebel/step-3-test-the-migrated-application-with-the-siebel-adapter.md)  
   
 ## <a name="see-also"></a>参照  
  [Siebel アダプターのチュートリアル](../../adapters-and-accelerators/adapter-siebel/siebel-adapter-tutorials.md)

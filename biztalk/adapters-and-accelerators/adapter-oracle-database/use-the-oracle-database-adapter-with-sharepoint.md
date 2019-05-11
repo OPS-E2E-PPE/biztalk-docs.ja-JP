@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fa6e5f92bcb1ddd579b70912b98fc0f08165bca6
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7ca498313f74ac863cfb8d3c3846cb590cddebe8
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36975379"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65528981"
 ---
 # <a name="use-the-oracle-database-adapter-with-sharepoint"></a>SharePoint での Oracle データベース アダプターを使用します。
 WCF アダプター サービス開発ウィザード[!INCLUDE[btsVStudioNoVersion_md](../../includes/btsvstudionoversion-md.md)]で Microsoft SharePoint の外部データ ソースとして直接使用するには、Oracle データベース、Microsoft BizTalk Adapter for Oracle E-business Suite の Microsoft BizTalk Adapter を有効にします。 この機能をサポートする追加サービス開発ウィザードを起動、 **WCF アダプタ サービス**、新しい Visual c# での Websites を作成するためのテンプレート[!INCLUDE[btsVStudioNoVersion_md](../../includes/btsvstudionoversion-md.md)]します。 テンプレートが付属、[!INCLUDE[adapterpacknoversion_md](../../includes/adapterpacknoversion-md.md)]します。 Microsoft Windows Communication Foundation (WCF) の基幹業務 (LOB) アダプター SDK をインストールすることも必要があります。  
@@ -25,17 +25,17 @@ WCF アダプター サービス開発ウィザード[!INCLUDE[btsVStudioNoVersi
 ## <a name="sharepoint-operation-support"></a>SharePoint の操作のサポート  
  アダプター サービス開発ウィザードは、Microsoft SharePoint と互換性がある Oracle アダプターの特別なサービス コントラクトを生成します。 ウィザードを Microsoft SharePoint アダプターを統合するために、次の操作を含むサービス コントラクトが生成されます。  
   
-- **作成:** CreateItem_ 操作によってサポートされています。  
+- **作成します。** CreateItem_ 操作によってサポートされています。  
   
-- **読む:** ReadItem_ 操作によってサポートされています。  
+- **読み取り:** ReadItem_ 操作によってサポートされています。  
   
-- **更新:** UpdateItem_ 操作によってサポートされています。  
+- **更新プログラム:** UpdateItem_ 操作によってサポートされています。  
   
-- **削除:** DeleteItem_ 操作によってサポートされています。  
+- **削除します。** DeleteItem_ 操作によってサポートされています。  
   
 - **クエリ:** ReadList 操作によってサポートされています。  
   
-- **関連付け:** Associate_ 操作によってサポートされています。  
+- **関連付けます。** Associate_ 操作によってサポートされています。  
   
   例として、Microsoft BizTalk adapter for Oracle Database を使用に次のサービス コントラクトが生成されました。 EMP テーブルへのアクセスを提供するアダプターが構成されています。  
   

@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3a3cb898643e8a7eff1b73a138f98f1ecfc05248
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1a3a3a44292c3c439c7556bd14e7aa7acadd4fdc
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36993131"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65362728"
 ---
 # <a name="understand-the-lob-system-with-the-wcf-lob-adapter-sdk"></a>WCF LOB Adapter SDK を使用して LOB システムを理解します。
 使用して、アダプターを開発する前に、[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]ターゲットの基幹業務システムを十分に理解する必要があります。 基幹業務システム、公開する方法、およびセキュリティ、トランザクション、およびその他の機能を提供するサポートのさまざまなレベルで提供される機能を理解していない場合、アダプターはアダプターに必要な機能を提供しません。コンシューマー。 このセクションには、アダプターを効果的にデザインするために理解する必要があります領域がについて説明します。  
@@ -25,7 +25,7 @@ ms.locfileid: "36993131"
 ## <a name="the-path-to-understanding"></a>Understanding へのパス  
  アダプターでは、アダプター仕様やアダプター API による規則に従って、アクセス可能な一貫性のある方法でデータと基幹業務システムから操作を公開します。 どの操作および公開するデータについては、システムの機能とそのデータと操作を公開する方法を理解する必要があります。 具体的には、次のデザインの問題について検討する必要があります。  
   
-- **接続のライフ サイクルです。** 方法は接続の開閉しますか。 方法は開いている接続が維持されますか? 接続を再利用するための特別な要件はありますか。 接続の詳細については、`Microsoft.ServiceModel.Channels.Common.IConnection`を参照してください。  
+- **接続のライフ サイクルです。** 方法は接続の開閉しますか。 方法は開いている接続が維持されますか? 接続を再利用するための特別な要件はありますか。 接続の詳細については、次を参照してください。`Microsoft.ServiceModel.Channels.Common.IConnection`します。  
   
 - **システムによって公開される操作と型メタデータ。** 基幹業務システムでは、操作の検索と参照と、メタデータに簡単にアクセスまたはこの機能を提供するサポート コードを開発する必要がありますか。 たとえば、SQL Server の操作はなどに格納されているオブジェクトの手順です。 列、テーブル、およびその他のオブジェクトの型のメタデータは、簡単に取得できます。 従来の基幹業務システムを使用することは困難があります。  
   

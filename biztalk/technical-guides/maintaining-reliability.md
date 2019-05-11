@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: faf58e24442d2a17bace7b0d56393d1c793b9cd9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7569b0abf5745a7809f371486492de2d880ad3d0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36985675"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396277"
 ---
 # <a name="maintaining-reliability"></a>信頼性の維持
 このセクションで信頼性に関する問題を解決する方法について説明します、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]システム。 実行される定期的なメンテナンスのチェックでこれらの問題を検出する可能性がある、[ルーチン メンテナンスのチェックリスト](../technical-guides/routine-maintenance-checklists.md)このドキュメントの「します。  
@@ -37,7 +37,7 @@ ms.locfileid: "36985675"
 
 #### <a name="to-test-a-group-failover-policy"></a>グループのフェールオーバー ポリシーをテストするには  
 
-1.  インストールされていることを確認、**フェールオーバー クラスタ リング**機能に少なくとも 2 つのコンピューター上には、2 つのノードの Windows フェールオーバー クラスターを作成するための Windows Server 2008 を実行します。 この機能をインストールする方法については、[フェールオーバー クラスタ リング機能をインストール](http://go.microsoft.com/fwlink/?LinkId=157259)(http://go.microsoft.com/fwlink/?LinkId=157259)を参照してください。  
+1.  インストールされていることを確認、**フェールオーバー クラスタ リング**機能に少なくとも 2 つのコンピューター上には、2 つのノードの Windows フェールオーバー クラスターを作成するための Windows Server 2008 を実行します。 この機能をインストールする方法については、次を参照してください。[フェールオーバー クラスタ リング機能をインストール](http://go.microsoft.com/fwlink/?LinkId=157259)(http://go.microsoft.com/fwlink/?LinkId=157259)します。  
 
 2.  フェールオーバー クラスター管理 を開く**開始**をクリック**管理ツール**、 をクリックし、**フェールオーバー クラスター管理**します。  
 
@@ -61,7 +61,7 @@ ms.locfileid: "36985675"
 
 #### <a name="to-test-whether-group-resources-can-fail-over"></a>グループ リソースがフェールオーバーできるかどうかをテストするには  
 
-1.  インストールされていることを確認、**フェールオーバー クラスタ リング**Windows Server 2008 を実行しているコンピューター上で機能します。 この機能をインストールする方法については、[フェールオーバー クラスタ リング機能をインストール](http://go.microsoft.com/fwlink/?LinkId=157259)(http://go.microsoft.com/fwlink/?LinkId=157259)を参照してください。  
+1.  インストールされていることを確認、**フェールオーバー クラスタ リング**Windows Server 2008 を実行しているコンピューター上で機能します。 この機能をインストールする方法については、次を参照してください。[フェールオーバー クラスタ リング機能をインストール](http://go.microsoft.com/fwlink/?LinkId=157259)(http://go.microsoft.com/fwlink/?LinkId=157259)します。  
 
 2.  フェールオーバー クラスター管理 を開く**開始**をクリック**管理ツール**、 をクリックし、**フェールオーバー クラスター管理**します。  
 
@@ -128,14 +128,14 @@ ms.locfileid: "36985675"
 
 - 手動で中断されたメッセージのチェック方法の詳細についてを参照してください「Investigating オーケストレーション、ポート、およびメッセージのエラー」[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプ[ http://go.microsoft.com/fwlink/?LinkID=154512](http://go.microsoft.com/fwlink/?LinkID=154512)します。  
 
-- 各ホストは、少なくとも 2 つの物理 BizTalk サーバーで実行されているインスタンスについては、[BizTalk ホストの高可用性](../technical-guides/high-availability-for-biztalk-hosts.md)を参照してください。  
+- 各ホストは、少なくとも 2 つの物理 BizTalk サーバーで実行されているインスタンスについては、次を参照してください。 [BizTalk ホストの高可用性](../technical-guides/high-availability-for-biztalk-hosts.md)します。  
 
-- 各ホストは、少なくとも 2 つの物理 BizTalk サーバーで実行されているインスタンスについては、[受信ホストをスケール](../technical-guides/scaling-out-receiving-hosts.md)を参照してください。  
+- 各ホストは、少なくとも 2 つの物理 BizTalk サーバーで実行されているインスタンスについては、次を参照してください。[受信ホストをスケール](../technical-guides/scaling-out-receiving-hosts.md)します。  
 
 - クラスター化されたすべてのサービスのフェールオーバーを確認する方法についてはテストされて、参照してください[マスター シークレット サーバーをクラスタ リング](../technical-guides/clustering-the-master-secret-server.md)します。  
 
-- BizTalk データベースが SQL サービスでクラスター化することを確認する方法については、[、BizTalk Server Databases2 をクラスタ リング](../technical-guides/clustering-the-biztalk-server-databases2.md)を参照してください。  
+- BizTalk データベースが SQL サービスでクラスター化することを確認する方法については、次を参照してください。 [、BizTalk Server Databases2 をクラスタ リング](../technical-guides/clustering-the-biztalk-server-databases2.md)します。  
 
-- (個別のホストが必要)、不安定なコードが使用されているかどうかを決定する方法の詳細については、[BizTalk ホストの高可用性](../technical-guides/high-availability-for-biztalk-hosts.md)を参照してください。  
+- (個別のホストが必要)、不安定なコードが使用されているかどうかを決定する方法の詳細については、次を参照してください。 [BizTalk ホストの高可用性](../technical-guides/high-availability-for-biztalk-hosts.md)します。  
 
 - すべての新しい BizTalk アプリケーションの機能テストを実行する方法の詳細については、次を参照してください[アプリケーションのテスト。](../technical-guides/testing-an-application.md)

@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル: Microsoft BizTalk Adapter を使用して TIBCO Enterprise Message Service の |Microsoft ドキュメント'
+title: チュートリアル:TIBCO Enterprise Message Service の Microsoft BizTalk Adapter の使用 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b31da82ff0cf512de63eebb642299df126052d17
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 739c08a5434b2c4f2d71ae08559b644a6c943aff
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22286506"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65393807"
 ---
-# <a name="tutorials-using-the-microsoft-biztalk-adapter-for-tibco-enterprise-message-service"></a>チュートリアル: Microsoft BizTalk Adapter を使用して TIBCO Enterprise Message Service の
+# <a name="tutorials-using-the-microsoft-biztalk-adapter-for-tibco-enterprise-message-service"></a>チュートリアル:TIBCO Enterprise Message Service の Microsoft BizTalk Adapter の使用
 Microsoft BizTalk Adapter for TIBCO Enterprise Message Service は、基幹業務プロセスの管理と自動化のための開発および実行環境です。 ここでは、すぐ作業を始められるように、アダプターをセットアップして展開する方法を詳細に示す 2 つの SDK サンプルについて説明します。  
   
  これらのチュートリアルには、BizTalk Server へのアダプターの追加、適切な送信ポートと受信ポートの作成、サンプルのビルドと展開、およびサンプルでのテスト データの処理に関する詳細な手順情報が含まれます。  

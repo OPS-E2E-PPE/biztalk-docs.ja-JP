@@ -1,5 +1,5 @@
 ---
-title: '手順 4: EAIOrchestration プロジェクトのビルド |Microsoft ドキュメント'
+title: 手順 4:EAIOrchestration プロジェクトのビルド |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,52 +12,52 @@ caps.latest.revision: 34
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 992d903fc64740cb9ec4bda762ee5ac032e51a77
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e7c380d5aa68daeb6f7f05ca0846c00f1999b976
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22276674"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65392633"
 ---
-# <a name="step-4-build-the-eaiorchestration-project"></a>ステップ 4: EAIOrchestration プロジェクトのビルド
-![4 のステップ 4](../adapters-and-accelerators/adapter-oracle-ebs/media/step-4of4.gif "Step_4of4")  
+# <a name="step-4-build-the-eaiorchestration-project"></a>手順 4:EAIOrchestration プロジェクトをビルドします。
+![手順 4 の 4](../adapters-and-accelerators/adapter-oracle-ebs/media/step-4of4.gif "Step_4of4")  
   
  **所要時間:** 5 分  
   
- **目標:** EAIOrchestration プロジェクト アセンブリにコンパイルするこの手順でします。  
+ **目標:** この手順では、EAIOrchestration プロジェクトをアセンブリにコンパイルします。  
   
- **目的:** BizTalk Server には、.NET アセンブリにコンパイルするすべての成果物が必要です。  
+ **目的:** BizTalk Server では、.NET アセンブリにコンパイルするすべての成果物が必要です。  
   
 ## <a name="prerequisites"></a>前提条件  
  このステップを開始する前に、以下の要件を確認してください。  
   
--   このステップを開始する前に、次のステップを完了しておく必要があります。  
+-   この手順を開始する前に、次の手順を完了する必要があります。  
   
-    -   [手順 1: EAIOrchestration プロジェクトをソリューションに追加します。](../core/step-1-add-eaiorchestration-project-to-the-solution.md)  
+    -   [ステップ 1: EAIOrchestration プロジェクトをソリューションに追加します。](../core/step-1-add-eaiorchestration-project-to-the-solution.md)  
   
-    -   [手順 2: ビジネス プロセスを定義します。](../core/step-2-define-the-business-process.md)  
+    -   [手順 2:ビジネス プロセスを定義します。](../core/step-2-define-the-business-process.md)  
   
-    -   [手順 3: オーケストレーションのポートを追加します。](../core/step-3-add-ports-to-the-orchestration.md)  
+    -   [ステップ 3:ポートをオーケストレーションに追加します。](../core/step-3-add-ports-to-the-orchestration.md)  
   
 ## <a name="procedures"></a>手順  
   
 #### <a name="to-build-the-eaiorchestration-project"></a>EAIOrchestration プロジェクトをビルドするには  
   
--   ソリューション エクスプ ローラーで右クリック**EAIOrchestration**、クリックして**ビルド**です。  
+-   ソリューション エクスプ ローラーで右クリックして**EAIOrchestration**、 をクリックし、**ビルド**します。  
   
-     画面の下部に、次のように表示されます。  
+     画面の下部に表示されます。  
   
     ```  
     ========== Build: 1 succeeded or up-to-date, 0 failed, 0 skipped ==========  
     ```  
   
-## <a name="what-did-i-just-do"></a>でしただけは何ですか。  
- このステップでは、EAIOrchestration プロジェクトをコンパイルしました。  
+## <a name="what-did-i-just-do"></a>でしただけ何か。  
+ この手順では、EAIOrchestration プロジェクトをコンパイルします。  
   
-## <a name="next-steps"></a>次の手順  
- では、EAISolution ソリューションを展開する[レッスン 3: ソリューションの配置](../core/lesson-3-deploy-the-solution.md)です。  
+## <a name="next-steps"></a>次のステップ  
+ では、EAISolution ソリューションをデプロイする[レッスン 3。ソリューションの配置](../core/lesson-3-deploy-the-solution.md)します。  
   
 ## <a name="see-also"></a>参照  
- [手順 1: EAIOrchestration プロジェクトをソリューションに追加します。](../core/step-1-add-eaiorchestration-project-to-the-solution.md)   
- [手順 2: ビジネス プロセスを定義します。](../core/step-2-define-the-business-process.md)   
- [手順 3: オーケストレーションのポートを追加します。](../core/step-3-add-ports-to-the-orchestration.md)
+ [ステップ 1: EAIOrchestration プロジェクトをソリューションに追加します。](../core/step-1-add-eaiorchestration-project-to-the-solution.md)   
+ [手順 2:ビジネス プロセスを定義します。](../core/step-2-define-the-business-process.md)   
+ [ステップ 3:ポートをオーケストレーションに追加します。](../core/step-3-add-ports-to-the-orchestration.md)

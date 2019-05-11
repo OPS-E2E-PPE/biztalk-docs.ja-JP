@@ -12,14 +12,14 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 87613f9482c5c54e99544b96ddd0d1cfc94d3c85
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4526c07171a96904299c60f12ee5c34c01816a42
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37018140"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65291674"
 ---
-# <a name="ta1-segment-found-after-a-functional-group"></a>機能グループの後に TA1 セグメントが見つかりました
+# <a name="ta1-segment-found-after-a-functional-group"></a>TA1 セグメントの機能グループの後に見つかりました
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                        |

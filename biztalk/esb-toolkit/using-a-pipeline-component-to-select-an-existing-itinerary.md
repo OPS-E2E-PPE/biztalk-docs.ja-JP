@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2aceef4385652918ee7326709e7838776501e885
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9e705bb1c048e4ef84e8783226f7980dc868c2d5
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36975499"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396483"
 ---
 # <a name="using-a-pipeline-component-to-select-an-existing-itinerary"></a>パイプライン コンポーネントを使用して、既存のスケジュールを選択するには
 ## <a name="esb-itinerary-selector-pipeline-component"></a>ESB スケジュール セレクターのパイプライン コンポーネント  
@@ -67,7 +67,7 @@ ms.locfileid: "36975499"
   - コンポーネントは、システム Properties.xsd スキーマで定義されたプロパティを使用して次の表に、BizTalk メッセージ コンテキスト プロパティを変更後の日程を書き込みます。  
 
 
-    |                                           [プロパティ]                                           |
+    |                                           プロパティ                                           |
     |------------------------------------------------------------------------------------------------|
     |                                   **名前 = ItineraryHeader**                                   |
     | **Namespace = http://schemas.microsoft.biztalk.practices.esb.com/itinerary/system-properties** |

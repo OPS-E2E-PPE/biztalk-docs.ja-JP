@@ -14,12 +14,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2380e58605cf401e7ed1138b078d19d5279144f4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2f8f3d6341e0f5d26d589f03dc0b93a3e5b0afa0
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36972875"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65529188"
 ---
 # <a name="get-metadata-programmatically-from-the-oracle-database"></a>Oracle データベースからメタデータをプログラムで取得します。
 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] WCF サービスとしての Oracle データベースを公開するカスタム WCF バインドします。 アダプターは、サービスを自己記述型として、Oracle データベースを公開しますサポートされる操作についてのメタデータを公開できるサービスは、します。 メタデータが、WCF サービスに論理インターフェイスについて説明しますつまり、サービス コントラクト、メッセージ、およびメッセージ スキーマ、サービスと対話するために使用する必要があります。  

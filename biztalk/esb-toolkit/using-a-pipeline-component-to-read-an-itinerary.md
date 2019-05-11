@@ -12,12 +12,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c03e4e48b125d7a8236c66ce36e458dd2d51a6f7
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 153f99e68e2c2457db44998b6c955c02af73a6c9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36991131"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396494"
 ---
 # <a name="using-a-pipeline-component-to-read-an-itinerary"></a>パイプライン コンポーネントを使用して、スケジュールを読み取るに
 受信パイプラインで受信するメッセージは、その処理の要件 (クライアント側の旅程) を定義する SOAP ヘッダー内のメタデータを含めることができます。 図 1 は、ESB 行程および ESB ディスパッチャー パイプライン コンポーネントの使用を示しています。  
@@ -40,7 +40,7 @@ ms.locfileid: "36991131"
   - **WCF アダプター。** このアダプターは、SOAP ヘッダーを解析し、次の表に、BizTalk メッセージ コンテキスト プロパティを設定します。  
 
 
-    |                                  [プロパティ]                                  |
+    |                                  プロパティ                                  |
     |------------------------------------------------------------------------------|
     |                             **名前の旅程を =**                             |
     | **Namespace = http://schemas.microsoft.biztalk.practices.esb.com/itinerary** |
@@ -51,7 +51,7 @@ ms.locfileid: "36991131"
   - **SOAP アダプター。** このアダプターは、SOAP ヘッダーを解析し、次の表に、BizTalk メッセージ コンテキスト プロパティを設定します。  
 
 
-    |                              [プロパティ]                              |
+    |                              プロパティ                              |
     |----------------------------------------------------------------------|
     |                         **名前の旅程を =**                         |
     | **Namespace = http://schemas.microsoft.com/BizTalk/2003/SOAPHeader** |
@@ -84,7 +84,7 @@ ms.locfileid: "36991131"
   - コンポーネントは、システム Properties.xsd スキーマで定義されたプロパティを使用して次の表に、BizTalk メッセージ コンテキスト プロパティを変更後の日程を書き込みます。  
 
 
-    |                                           [プロパティ]                                           |
+    |                                           プロパティ                                           |
     |------------------------------------------------------------------------------------------------|
     |                                   **名前 = ItineraryHeader**                                   |
     | **Namespace = http://schemas.microsoft.biztalk.practices.esb.com/itinerary/system-properties** |

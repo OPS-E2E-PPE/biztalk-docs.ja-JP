@@ -1,5 +1,5 @@
 ---
-title: バックアップと復元 BAM |Microsoft ドキュメント
+title: バックアップと復元の BAM |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -19,19 +19,19 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f002dbbd25fe71650125a009edc4583ef909004b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 83a1911d8d320eefb3bc08f6be2f40d217ba20a7
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22230298"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65530605"
 ---
 # <a name="backing-up-and-restoring-bam"></a>BAM のバックアップと復元
 このセクションでは、BAM 分析、追跡分析、BAM スター スキーマ、および BAM アーカイブ データベースをバックアップおよび復元する方法について説明します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [バックアップ方法、BAM 分析および Tracking Analysis Server データベース](../core/how-to-back-up-the-bam-analysis-and-tracking-analysis-server-databases.md)  
+-   [BAM 分析および Tracking Analysis Server データベースをバックアップする方法](../core/how-to-back-up-the-bam-analysis-and-tracking-analysis-server-databases.md)  
   
 -   [BAM Analysis Server およびスター スキーマ データベース名への参照を更新する方法](../core/update-references-to-the-bam-analysis-server-and-star-schema-database-names.md)  
   

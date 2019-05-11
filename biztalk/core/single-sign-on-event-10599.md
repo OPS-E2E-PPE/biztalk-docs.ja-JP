@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10599 |Microsoft Docs'
+title: シングル サインオン:イベント 10599 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 326b94be9c05be6645a21b10f3ea302cf63be8e5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 263d2b0b50e43b485e60a56ebd74e0164dab8b0f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37015683"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65397817"
 ---
-# <a name="single-sign-on-event-10599"></a>シングル サインオン: イベント 10599
+# <a name="single-sign-on-event-10599"></a>シングル サインオン:イベント 10599
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                                                                                                                    |
@@ -36,4 +36,4 @@ ms.locfileid: "37015683"
  指定された SSO サービスはローカル管理者アカウントで実行しています。 これは、セキュリティ上の理由により推奨されていません。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- 詳細については、[SSO のセキュリティに関する推奨事項](../core/sso-security-recommendations.md)を参照してください。
+ 詳細については、次を参照してください。 [SSO のセキュリティに関する推奨事項](../core/sso-security-recommendations.md)します。

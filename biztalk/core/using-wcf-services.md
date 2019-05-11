@@ -1,5 +1,5 @@
 ---
-title: WCF サービスの使用 |Microsoft ドキュメント
+title: WCF サービスの使用 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,32 +15,32 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 29b984bcda798796565113739c6088af6d569f7c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 81082cacafb1f04d54920648d8f588a4b2ccc50a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22287794"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396733"
 ---
 # <a name="using-wcf-services"></a>WCF サービスの使用
-Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Windows Communication Foundation (WCF) の組み込みサポートを提供します。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]使用すると、再利用し、すべての既存の WCF サービス、オーケストレーション内に集約できます。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]WCF サービスでのネイティブ アダプタのサポートも実装します。 ネイティブ アダプタのサポートにより、コードを記述しなくても、WCF サービスのスケーラビリティ、フォールト トレランス、および追跡の機能を利用できます。 WCF アダプターについては、次を参照してください。 [WCF アダプタ](../core/wcf-adapters.md)です。  
+Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Windows Communication Foundation (WCF) 用の組み込みサポートを提供します。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 再利用し、すべての既存の WCF サービス、オーケストレーション内の集計ができます。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] WCF サービスにもネイティブ アダプターのサポートを実装します。 ネイティブ アダプタのサポートは、スケーラビリティ、フォールト トレランス、およびコードを記述することがなく追跡の WCF サービスの機能を提供します。 WCF アダプターについては、次を参照してください。 [WCF アダプタ](../core/wcf-adapters.md)します。  
   
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] での WCF サービスのサポートは、WCF サービスの公開 (作成) と WCF サービスの呼び出し (利用) の 2 種類に分類されます。  
+ WCF サービスでのサポート[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]は 2 つのカテゴリに分類されます: 発行または WCF サービスの場合は、作成または呼び出しまたは WCF サービスを使用します。  
   
  **WCF サービスの公開**  
   
- WCF アダプタを使用してオーケストレーションとスキーマを Web サービスとして公開すると、WCF サービス ロジックとビジネス プロセス ロジックを区別できます。 分離 WCF アダプタでは、BizTalk WCF サービス公開ウィザードを使用して、インターネット インフォメーション サービス (IIS) で実行されている Web アプリケーションでホストされる分離された WCF 受信場所を作成できます。 インプロセス WCF アダプタでは、BizTalk WCF サービス公開ウィザードを使用して、WCF に関する場所のサービス メタデータを公開できます。  メタデータの公開によって、svcutil.exe ユーティリティを使用してクライアント コードを作成できるようになります。  
+ (公開) を公開するオーケストレーションおよびスキーマを WCF 分離 WCF アダプターで WCF サービスとしてのサービス ロジックとビジネス プロセス ロジック。 分離を作成する、BizTalk WCF サービス公開ウィザードを使用する分離 WCF アダプタでの WCF 受信場所では、インターネット インフォメーション サービス (IIS) を実行する Web アプリケーションによってホストされています。 インプロセス WCF アダプタでは、BizTalk WCF サービス公開ウィザードで WCF の任意の場所のサービス メタデータを発行できます。  メタデータの公開では、svcutil.exe ユーティリティを使用してクライアント コードの作成を許可します。  
   
  **WCF サービスの使用**  
   
- BizTalk WCF サービス使用ウィザードを使用すると、BizTalk オーケストレーションや種類など、WCF サービスのメタデータ ドキュメントに基づいて WCF サービスを利用するための BizTalk アイテムを生成できます。 メタデータによって、送信ポートはクライアントとして外部サービスにアクセスできます。 メタデータは、エンドポイント アドレス、バインド、およびコントラクトの記述にのみ使用されます。  
+ BizTalk WCF サービス使用ウィザードを使用して、BizTalk オーケストレーションや種類、WCF サービスのメタデータ ドキュメントに基づいて WCF サービスを使用するなどの BizTalk アイテムを生成することができます。 メタデータは、クライアントとして外部サービスにアクセスする送信ポートを使用します。 純粋に、バインド、およびコントラクト、エンドポイント アドレスを記述するメタデータが使用されます。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
 -   [WCF サービスの公開](../core/publishing-wcf-services.md)  
   
--   [WCF サービスの使用](../core/consuming-wcf-services.md)  
+-   [WCF サービスの利用](../core/consuming-wcf-services.md)  
   
--   [WCF アダプタのメッセージ本文の指定](../core/specifying-the-message-body-for-the-wcf-adapters.md)  
+-   [WCF アダプターのメッセージ本文の指定](../core/specifying-the-message-body-for-the-wcf-adapters.md)  
   
 -   [WCF アダプターのチュートリアル](../core/wcf-adapter-walkthroughs.md)

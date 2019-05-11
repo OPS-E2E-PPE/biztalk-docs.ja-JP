@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c8cf33ab303127ba369a619637abf455c80ee539
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 81ab596b01c515fad670b959c00e0571b5e9962c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37018729"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396480"
 ---
 # <a name="using-a-send-port-as-an-itinerary-service-subscriber"></a>スケジュール サービス サブスクライバーとして送信ポートを使用します。
 スケジュール サービス サブスクライバーとして送信ポートを使用する方法の例としては、図 1 を次の条件を満たすメッセージを取得する動的な一方向送信ポートのフィルター条件を示します。  

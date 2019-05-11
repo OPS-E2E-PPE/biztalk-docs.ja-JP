@@ -1,5 +1,5 @@
 ---
-title: '手順 1: 構成ファイルの受信場所 |Microsoft ドキュメント'
+title: 手順 1:ファイルを構成する受信場所 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,39 +12,39 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 78f8bccc187bf310b8426fc3d5fee36add44a9f3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2ae1bb74c162a0a61521392fc4cd75e99ba26297
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22278258"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65392826"
 ---
-# <a name="step-1-configure-a-file-receive-location"></a>手順 1: 構成ファイルの受信場所
-このトピックでは、送信ポートを呼び出すためにファイル フォルダーにドロップするダミーの要求メッセージを処理する FILE 受信場所を構成します。  
+# <a name="step-1-configure-a-file-receive-location"></a>手順 1:ファイルを構成する受信場所
+このトピックでは、ファイルを構成する送信ポートを呼び出すためにファイル フォルダーにドロップするダミー要求メッセージを使用する受信場所。  
   
 > [!NOTE]
->  このチュートリアルの手順は、既定のアプリケーションを使用することを想定しています (**BizTalk アプリケーション 1**)、ソリューションを作成します。 別のアプリケーションを作成して、そのアプリケーションで同じステップを実行することもできます。  
+>  このチュートリアルの手順では、既定のアプリケーションを使用することを想定しています (**BizTalk アプリケーション 1**) ソリューションを作成します。 また別のアプリケーションを作成し、そのアプリケーションで同じ手順を実行できます。  
   
-### <a name="to-configure-a-file-receive-location"></a>FILE 受信場所を構成するには  
+### <a name="to-configure-a-file-receive-location"></a>ファイル受信場所を構成するには  
   
-1.  BizTalk Server 管理コンソールから下にある、 **BizTalk アプリケーション 1**  ノードを右クリックして**受信ポート**、 をポイント**新規**、順にクリック**一方向受信ポート**です。  
+1.  BizTalk Server 管理コンソールから下、 **BizTalk アプリケーション 1**ノードを右クリックして**受信ポート**、 をポイント**新規**、順にクリックします**一方向受信ポート**します。  
   
-2.  [全般] タブには、次の操作を行います。  
+2.  [全般] タブで、次の操作を行います。  
   
     |プロパティ|目的|  
     |--------------|----------------|  
-    |**名前**|型**ReceivePortRestAzureMarketPlace**です。|  
+    |**名前**|型**ReceivePortRestAzureMarketPlace**します。|  
     |**失敗したメッセージのルーティングを有効にします。**|(選択解除)|  
   
-3.  をクリックして**受信場所**、クリックして**新規**です。  
+3.  クリックして**受信場所**、 をクリックし、**新規**します。  
   
 4.  [Receive Location1 - 受信場所のプロパティ] で、次の操作を行います。  
   
     |プロパティ|目的|  
     |--------------|----------------|  
-    |**名前**|型**ReceiveLocationAzureMarketPlace**です。|  
-    |**型**|選択**ファイル**です。|  
-    |**受信ハンドラー**|[ **BizTalkServerApplication**] を選択します。|  
+    |**名前**|型**ReceiveLocationAzureMarketPlace**します。|  
+    |**型**|選択**ファイル**します。|  
+    |**受信ハンドラー**|**[BizTalkServerApplication]** を選択します。|  
     |**受信パイプライン**|選択**PassThruReceive**です。|  
   
 5.  をクリックして**構成**です。  
@@ -53,10 +53,10 @@ ms.locfileid: "22278258"
   
     |プロパティ|目的|  
     |--------------|----------------|  
-    |**受信フォルダー**|ダミーの要求メッセージをドロップする場所を入力します。|  
-    |**ファイル名**|保持します。`*.xml`|  
+    |**受信フォルダー**|ダミー要求メッセージをドロップする場所の場所を入力します。|  
+    |**[ファイル名]**|保持 `*.xml`|  
   
-7.  をクリックして**OK**すべてのダイアログ ボックスを終了するまでです。  
+7.  クリックして**OK**すべてのダイアログ ボックスを終了するまでです。  
   
 ## <a name="see-also"></a>参照  
- [チュートリアル 5: BizTalk Server を使用して REST インターフェイスの呼び出し](../core/tutorial-5-invoking-a-rest-interface-using-biztalk-server.md)
+ [チュートリアル 5:BizTalk Server を使用して REST インターフェイスの呼び出し](../core/tutorial-5-invoking-a-rest-interface-using-biztalk-server.md)

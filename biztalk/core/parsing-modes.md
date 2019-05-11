@@ -1,5 +1,5 @@
 ---
-title: 解析モード |Microsoft ドキュメント
+title: 解析モード |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,15 +15,15 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cf8f9b2618b8cafd7813f08217457227a0f21809
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 72955f1dd560a442e011e176007defa236d39386
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22263306"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395050"
 ---
 # <a name="parsing-modes"></a>解析モード
-解析モードは schemaInfo レコードの 2 つのモードでの属性: 速度と複雑度。 "パーサーの最適化" プロパティは、BizTalk スキーマ エディター内で構成できます。  
+解析モードは schemaInfo レコードの 2 つのモードでの属性: 速度と複雑さです。 パーサーの最適化のプロパティは、BizTalk スキーマ エディター内で構成できます。  
   
 ## <a name="example"></a>例  
   
@@ -32,7 +32,7 @@ ms.locfileid: "22263306"
 root_reference="document" parser_optimization="complexity" />.  
 ```  
   
- speed モードの場合、パーサーはストリームで出現する順序に従ってデータの処理を試みます。 たとえば、次のようなスキーマがあるとします。  
+ Speed モードの場合、パーサーはストリームに表示されるデータに合わせてしようとします。 たとえば、次のスキーマを与えられます。  
   
 ```  
 <schema>  
@@ -47,13 +47,13 @@ root_reference="document" parser_optimization="complexity" />.
 </schema>  
 ```  
   
- 入力メッセージは次のとおりです。  
+ 入力メッセージ。  
   
 ```  
 ,1,2,3,4  
 ```  
   
- speed モードでは、次の XML ドキュメントが得られます。  
+ speed モード、次の XML では、ドキュメントが取得されます。  
   
 ```  
 <Root>  
@@ -64,7 +64,7 @@ root_reference="document" parser_optimization="complexity" />.
 </Root>  
 ```  
   
- complexity モードでは、同じスキーマで次の出力が生成されます。  
+ Complexity モードでは、同じスキーマには、次の出力が生成されます。  
   
 ```  
 <Root>  
@@ -77,9 +77,9 @@ root_reference="document" parser_optimization="complexity" />.
 </Root>  
 ```  
   
- complexity モードの場合、フラット ファイル解析エンジンは先頭からと末尾からの両方向で解析を行い、より正確なデータの処理を試みます。 speed モードの場合、パーサーはストリームで出現する順序に従ってデータの処理を試みます。  
+ Complexity モードの場合、フラット ファイル解析エンジンは、上から下へとボトムアップの両方の解析、使用より正確にデータを格納しようとします。 Speed モードの場合、パーサーはストリームに表示されるデータに合わせてしようとします。  
   
- たとえば、次のように必須要素と省略可能要素があるとします。  
+ たとえばがある必須の要素と省略可能な要素です。 場合、  
   
 ```  
 <schema>  
@@ -92,7 +92,7 @@ root_reference="document" parser_optimization="complexity" />.
   
 ```  
   
- この場合、パーサーはスキーマを内部的に次のように表現するため、データを正しく解析するには complexity モードを使用する必要があります。  
+ パーサーは、スキーマを表すために、データを正しく解析する complexity モードを使用する必要がありますとして内部的にします。  
   
 ```  
 <schema>  

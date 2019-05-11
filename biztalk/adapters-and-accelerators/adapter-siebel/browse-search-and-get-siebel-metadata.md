@@ -20,12 +20,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 77a02e62bcea6a1647859b8578279ee97f2349d3
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 622384366615555408fecba99782e45f31a6a68d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36980539"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65371978"
 ---
 # <a name="browse-search-and-get-siebel-metadata"></a>参照、検索、および Siebel メタデータの取得
 [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]アダプターを使用して Siebel システムと通信するためのメッセージ構造を記述する Siebel システムからのサーフェスのメタデータ。 [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]メタデータを取得するための 2 つのインターフェイスをサポートしています。  
@@ -45,7 +45,7 @@ ms.locfileid: "36980539"
   
 - **ビジネス サービス**します。 このノードには、Siebel システムによって公開されるビジネス サービスが含まれています。 Siebel ビジネス サービスは、Siebel システムで直接呼び出すことがあるビジネス サービス メソッドまたは関数のコレクションです。  
   
-  メタデータの分類方法の詳細については、[メタデータ ノード Id](../../adapters-and-accelerators/adapter-siebel/metadata-node-ids1.md)を参照してください。  
+  メタデータの分類方法の詳細については、次を参照してください。[メタデータ ノード Id](../../adapters-and-accelerators/adapter-siebel/metadata-node-ids1.md)します。  
   
 ## <a name="searching-metadata"></a>メタデータの検索  
  [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]アダプター クライアントが Siebel システムでメタデータを検索できるようにします。 この機能を使用するには、Siebel と互換性のある検索式は、メタデータを参照するために使用する Siebel リポジトリ ビジネス コンポーネントの [名前] フィールドで演算子などの有効な Siebel を使用します。 次の表は、Siebel の成果物とメタデータの階層を検索することができます。  
@@ -70,7 +70,7 @@ ms.locfileid: "36980539"
   
 - ビジネス サービス メソッドの場合、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]ビジネス サービス名、メソッド名 (操作と同じ)、メソッド パラメーター、およびパラメーターのデータ型としては、このような項目を取得します。  
   
-  メタデータの取得の詳細については、[Visual Studio で Siebel 操作のメタデータの取得](../../adapters-and-accelerators/adapter-siebel/get-metadata-for-siebel-operations-in-visual-studio.md)を参照してください。  
+  メタデータの取得の詳細については、次を参照してください。 [Visual Studio で Siebel 操作のメタデータの取得](../../adapters-and-accelerators/adapter-siebel/get-metadata-for-siebel-operations-in-visual-studio.md)します。  
   
 ## <a name="see-also"></a>参照  
  [BizTalk Adapter for Siebel eBusiness Applications の概要](../../adapters-and-accelerators/adapter-siebel/overview-of-biztalk-adapter-for-siebel-ebusiness-applications.md)

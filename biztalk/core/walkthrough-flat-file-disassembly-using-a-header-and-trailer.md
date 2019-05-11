@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル: フラット ファイル逆アセンブリのヘッダーとトレーラーを使用して |Microsoft Docs'
+title: 'チュートリアル: ヘッダーとトレーラーを使用してフラット ファイル逆アセンブリ |Microsoft Docs'
 description: フラット ファイル スキーマ ウィザードを使用してヘッダー スキーマ、トレーラー スキーマ、および本文のスキーマを作成し、BizTalk Server でのフラット ファイル逆アセンブル
 ms.custom: ''
 ms.date: 06/08/2017
@@ -13,14 +13,14 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7a39361e4da6dec9acf023911466f07572a3de13
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9a3e2739b50d19c867fa05744ab98735ffc90646
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36983915"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395335"
 ---
-# <a name="walkthrough-flat-file-disassembly-using-a-header-and-trailer"></a>ヘッダーとトレーラーを使用してチュートリアル: フラット ファイル逆アセンブリ
+# <a name="walkthrough-flat-file-disassembly-using-a-header-and-trailer"></a>チュートリアル: ヘッダーとトレーラーを使用してフラット ファイル逆アセンブリ
 
 ## <a name="overview"></a>概要
 このチュートリアルでは、フラット ファイル スキーマ ウィザードによって作成されたスキーマを使用して、ヘッダー、トレーラー、および繰り返しのメッセージ ボディを含んでいるファイルのフラット ファイル逆アセンブリを実行する方法を説明します。 このチュートリアルでは、次の要件を満たす架空のエラー追跡システムの一部を開発します。  
@@ -34,7 +34,7 @@ ms.locfileid: "36983915"
   このチュートリアルを完了すると、フラット ファイルを処理し、バックエンド システムで処理するために XML として出力する BizTalk Server アプリケーションが完成します。  
   
 ## <a name="prerequisites"></a>前提条件  
- この例では、BizTalk Server プロジェクトの作成、アセンブリへの署名、および BizTalk Server 管理コンソールでのアプリケーションとポートの表示に慣れている必要があります。 またはずで紹介したアイデアに[チュートリアル: 基本的な BizTalk アプリケーションの展開](../core/walkthrough-deploying-a-basic-biztalk-application.md)します。 フラット ファイル スキーマ ウィザードの基礎知識は役立ちますが、必須ではありません。  
+ この例では、BizTalk Server プロジェクトの作成、アセンブリへの署名、および BizTalk Server 管理コンソールでのアプリケーションとポートの表示に慣れている必要があります。 またはずで紹介したアイデアに[チュートリアル。基本的な BizTalk アプリケーション展開](../core/walkthrough-deploying-a-basic-biztalk-application.md)します。 フラット ファイル スキーマ ウィザードの基礎知識は役立ちますが、必須ではありません。  
   
 ## <a name="what-this-example-does"></a>この例の処理  
  この例では、受信フラット ファイルをカスタム パイプラインとフラット ファイル逆アセンブラー コンポーネントを使用して処理します。 ヘッダー スキーマ、トレーラー スキーマ、およびボディ スキーマを使用してメッセージを解析した後、バックエンドで処理するためにそれらのメッセージを送信場所に出力します。  
@@ -47,7 +47,7 @@ ms.locfileid: "36983915"
   
 1. [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] を使用して新しい BizTalk プロジェクトを作成します。 プロジェクトを呼び出す **[ffdisassemblerwalkthrough]** します。  
   
-2. キー ファイルを作成してプロジェクトに割り当てます。 このタスクの詳細については、[署名 Page, Project Designer](http://go.microsoft.com/fwlink/?LinkId=125876)を参照してください。  
+2. キー ファイルを作成してプロジェクトに割り当てます。 このタスクの詳細については、次を参照してください。[署名 Page, Project Designer](http://go.microsoft.com/fwlink/?LinkId=125876)します。  
   
 3. プロジェクトの配置プロパティで、次のように設定します。**アプリケーション名**を"FlatFileExample"に設定し**ホスト インスタンスを再起動**に`True`します。 このフラグを設定すると、キャッシュされたアセンブリのインスタンスを消去するようにホストに通知されます。  
   
@@ -71,7 +71,7 @@ ms.locfileid: "36983915"
     |---|---|---|  
     |ID|整数 (integer)|このエラーの ID。|  
     |型|整数 (integer)|エラーの種類。|  
-    |[Priority]|string|優先度インジケーター: Low、Medium、または High。|  
+    |[Priority]|string|優先度インジケーター:Low、Medium、または High。|  
     |説明|string|エラーの説明。|  
     |ErrorDateTime|DateTime|エラーが発生した日時です。|  
   
@@ -231,7 +231,7 @@ ms.locfileid: "36983915"
     <Samples Path>\SDK\Utilities\PipelineTools\FFDasm ErrorFile.txt  -hs header.xsd -bs body.xsd -ts Trailer.xsd  
     ```  
   
-     これと他のパイプライン ツールの場所については、[パイプライン ツール](../core/pipeline-tools.md)を参照してください。  
+     これと他のパイプライン ツールの場所については、次を参照してください。[パイプライン ツール](../core/pipeline-tools.md)します。  
   
 3.  FFDasm.exe によって、テスト ファイル内の各 ERROR レコードに対応した {GUID}.xml という名前の出力ファイルが 2 つ生成されます。 優先度の高いエラー レコードは、次のようになります。  
   

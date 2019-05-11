@@ -1,5 +1,5 @@
 ---
-title: SharePoint での Oracle E-business Suite アダプターの使用 |Microsoft ドキュメント
+title: SharePoint で Oracle E-business Suite アダプターを使用する |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,23 +12,23 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6217b9f687cd937b44fd11d502264e1e2cccf8f1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 43c7ebee73d2db18cdded0a32238c3b4f3e3b871
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22215306"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65374257"
 ---
-# <a name="use-the-oracle-e-business-suite-adapter-with-sharepoint"></a>SharePoint での Oracle E-business Suite アダプターを使用します。
-ほとんどの基幹業務 (LOB) アプリケーションは、必要な特定の分野専門知識と比較的少数のユーザーがアクセスできる専用のインターフェイスを持っています。 ただし、関連する情報のワーカーが必要、すべてのレベル、組織の領域の専門家であるために、インフォメーション ワーカーが、情報を使用する上で Microsoft Excel などの他の一般的なアプリケーションに必要なデータをエクスポートします。  
+# <a name="use-the-oracle-e-business-suite-adapter-with-sharepoint"></a>SharePoint で Oracle E-business Suite アダプターを使用します。
+ほとんどの基幹業務 (LOB) アプリケーションでは、必要な分野の専門知識を持つ比較的少数のユーザーがアクセスできる専用のインターフェイスがあります。 ただし、関連する情報のワーカーが必要、すべてのレベル、組織のため、分野の専門家をインフォメーション ワーカーが情報を使用する上で、Microsoft Excel などの他の一般的なアプリケーションに必要なデータをエクスポートする必要があります。  
   
- Microsoft Office クライアント アプリケーションと機能の新しいコレクションは、インフォメーション ワーカーが、Microsoft Office の最も一般的なインターフェイスにバックエンド ビジネス データを戻すことによってこの時間差を結びます。 Microsoft Office クライアント アプリケーションは、インフォメーション ワーカーに使い慣れたインターフェイスを通じて、LOB アプリケーションからデータをシームレスに提示します。 1 つの例は、Microsoft Office SharePoint Server でビジネス データ カタログです。  
+ Microsoft Office クライアント アプリケーションと機能の新しいコレクションは、Microsoft Office のインフォメーション ワーカー用、最も一般的なインターフェイスをバックエンドのビジネス データを導入することで、このギャップを橋渡しします。 Microsoft Office クライアント アプリケーションは、インフォメーション ワーカーに使い慣れたインターフェイスを通じて、LOB アプリケーションからデータをシームレスに表示します。 1 つの例では、Microsoft Office SharePoint Server のビジネス データ カタログです。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
 -   [Oracle E-business Suite でのビジネス データ カタログについて](../../adapters-and-accelerators/adapter-oracle-ebs/about-business-data-catalog-with-oracle-e-business-suite.md)  
   
--   [Oracle E-business Suite とビジネス データ カタログと SharePoint 統合します。](../../adapters-and-accelerators/adapter-oracle-ebs/integrate-oracle-e-business-suite-with-the-business-data-catalog-and-sharepoint.md)  
+-   [ビジネス データ カタログと SharePoint との Oracle E-business Suite の統合します。](../../adapters-and-accelerators/adapter-oracle-ebs/integrate-oracle-e-business-suite-with-the-business-data-catalog-and-sharepoint.md)  
   
 -   [SharePoint で Oracle Business Suite アダプターの使用に関する考慮事項](../../adapters-and-accelerators/adapter-oracle-ebs/considerations-using-the-oracle-business-suite-adapter-with-sharepoint.md)  
   

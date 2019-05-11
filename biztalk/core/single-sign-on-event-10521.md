@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10521 |Microsoft Docs'
+title: シングル サインオン:イベント 10521 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8af1b2ac8d2ac3645db6a6a80146832378aececf
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ccb36c1306736fed435099c46254ee34d0079a1d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37008571"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65394352"
 ---
-# <a name="single-sign-on-event-10521"></a>シングル サインオン: イベント 10521
+# <a name="single-sign-on-event-10521"></a>シングル サインオン:イベント 10521
 ## <a name="details"></a>詳細  
 
 |                 |                                                                       |
@@ -28,19 +28,19 @@ ms.locfileid: "37008571"
 | 製品バージョン |      [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]       |
 |    イベント ID     |                                 10521                                 |
 |  イベント ソース   |                                ENTSSO                                 |
-|    コンポーネント    |                                  N\A                                  |
+|    コンポーネント    |                                  該当なし                                  |
 |  シンボル名  |                     SSO_ERROR_SECRETS_NOT_LOADED                      |
 |  メッセージ テキスト   | マスター シークレット サーバーのレジストリからシークレットを読み込めませんでした。 |
 
 ## <a name="explanation"></a>説明  
- このエラー イベントは、マスター シークレットをレジストリから取得できない場合にマスター シークレット サーバーで発生します。 イベント ログに詳細を示す関連エラー メッセージが記録されている場合があります。 このエラーの最も大きな原因は、SSO サービスがレジストリにアクセスしようとしたときに、アクセス許可エラーまたは暗号化エラーが発生していることです。 これは、SSO サービス アカウントが変更されたときに発生する可能性があります。 マスター シークレットは、SSO サービス アカウントの ID に基づくキーで暗号化されています。 このアカウントが変更されると、レジストリ内にある既存のマスター シークレットの暗号化を解除できなくなります。  
+ マスター シークレットは、レジストリから取得することはできません、マスター シークレット サーバーでこのエラー イベントが発生します。 さらに情報をイベント ログに関連するエラー メッセージが可能性があります。 これの最も可能性の高い原因があったこと、アクセス許可エラーまたは暗号化エラー SSO サービス アカウントは、レジストリにアクセスしようとした場合です。 これは、SSO サービス アカウントが変更されたときに発生します。 マスター シークレットは、SSO サービス アカウントの id に基づくキーで暗号化されます。 そのアカウントが変更された場合、レジストリ内の既存のマスター シークレットは不要になった解読できません。  
 
 ## <a name="user-action"></a>ユーザーの操作  
  このエラーを解決するには、次の操作を行います。  
 
-- SSO サービス アカウントを変更する場合は、マスター シークレットをバックアップし、SSO サービス アカウントを変更した後、マスター シークレットを復元します。 これによって、マスター シークレットを復元することができ、このエラーが修正されます。  
+- マスター シークレットをバックアップするは、SSO サービス アカウントを変更し、マスタ シークレットを復元し、SSO サービス アカウントを変更します。 これは、マスター シークレットを復元でき、このエラーを修正する必要があります。  
 
-  詳細については、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ヘルプの次の情報を参照してください:   
+  詳細については、の次のリソースを参照してください。[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプ。  
 
 - [マスター シークレット サーバー](../core/master-secret-server.md)  
 

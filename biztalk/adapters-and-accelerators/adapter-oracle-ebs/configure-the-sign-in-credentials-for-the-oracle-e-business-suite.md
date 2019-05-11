@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 08081cc1e59181f3cd6aad0dfa532b060287d2ea
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8385d9f18bf3d7cf64c669a64cabc56110673cdd
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36978947"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65375681"
 ---
 # <a name="configure-the-sign-in-credentials-for-the-oracle-e-business-suite"></a>Oracle E-business suite のサインイン資格情報を構成します。
 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]アダプター クライアントのクライアント資格情報を提供する必要があります。 アダプターは、Oracle E-business Suite でユーザーを認証して、接続を確立するために、これらの資格情報を使用します。  
@@ -25,7 +25,7 @@ ms.locfileid: "36978947"
  アダプター クライアントのクライアント資格情報の両方を使用する場合を提供できます[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]を使用する場合と、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソール。 使用する場合[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]メタデータを生成する資格情報が必要です。 使用する場合、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、資格情報が Oracle E-business Suite で操作を実行するために必要です。  
 
 > [!IMPORTANT]
->  Oracle E-business Suite または Oracle データベースを基になるは、資格情報を指定できます。 接続し、メタデータを生成するには、資格情報を指定できます。 ただし、Oracle E-business Suite の成果物を起動するための操作を実行中に、アプリケーションのコンテキストを呼び出したい Oracle E-business Suite のアプリケーションを設定する必要があるため Oracle E-business Suite の資格情報を指定する必要があります。 アプリケーション コンテキストの設定の詳細については、[アプリケーション コンテキストの設定](../../adapters-and-accelerators/adapter-oracle-ebs/set-application-context.md)を参照してください。  
+>  Oracle E-business Suite または Oracle データベースを基になるは、資格情報を指定できます。 接続し、メタデータを生成するには、資格情報を指定できます。 ただし、Oracle E-business Suite の成果物を起動するための操作を実行中に、アプリケーションのコンテキストを呼び出したい Oracle E-business Suite のアプリケーションを設定する必要があるため Oracle E-business Suite の資格情報を指定する必要があります。 アプリケーション コンテキストの設定の詳細については、次を参照してください。[アプリケーション コンテキストの設定](../../adapters-and-accelerators/adapter-oracle-ebs/set-application-context.md)します。  
 
  このセクションで、クライアントの資格情報を指定する方法について説明します[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]と[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソール。  
 
@@ -143,7 +143,7 @@ ms.locfileid: "36978947"
 
 1. 開始、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソール。  
 
-2. Wcf-oracleebs アダプターの追加、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソール。 手順については、[、Oracle E-business Suite アダプターを BizTalk Server 管理コンソールに追加する](../../adapters-and-accelerators/adapter-oracle-ebs/add-the-oracle-ebs-adapter-to-biztalk-server-administration-console.md)を参照してください。  
+2. Wcf-oracleebs アダプターの追加、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソール。 手順については、次を参照してください。 [、Oracle E-business Suite アダプターを BizTalk Server 管理コンソールに追加する](../../adapters-and-accelerators/adapter-oracle-ebs/add-the-oracle-ebs-adapter-to-biztalk-server-administration-console.md)します。  
 
 3. コンソール ツリーで、展開**BizTalk グループ**の順に展開**アプリケーション**、順に展開する、ポートを作成し、をクリックしアプリケーション**送信ポート**または**受信ポート**します。 右側のウィンドウでは、ポートを作成または既存のポートを選択できます。  
 

@@ -1,5 +1,5 @@
 ---
-title: 'サンプル TMA: エンタープライズ シングル サインオン |Microsoft Docs'
+title: サンプル TMA:エンタープライズ シングル サインオン |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -20,14 +20,14 @@ caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 36848a6e2fa48dff20080bda8cc1f7f1d487d089
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9c87a27ced896214e361d6056da2e1b5e13c0883
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36995331"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65393911"
 ---
-# <a name="sample-tma-enterprise-single-sign-on"></a>サンプル TMA: エンタープライズ シングル サインオン
+# <a name="sample-tma-enterprise-single-sign-on"></a>サンプル TMA:エンタープライズ シングル サインオン
 このトピックでは、サンプル アーキテクチャのエンタープライズ シングル サインオン シナリオ向けの脅威モデル分析 (TMA) について説明します。  
   
  次の図は、基盤となるサンプル アーキテクチャを示し、エンタープライズ シングル サインオンのシナリオが含まれています。  
@@ -63,7 +63,7 @@ ms.locfileid: "36995331"
   
 - **エントリ ポイント、信頼の境界、およびデータ フローの特定**-手順 1 で前で説明されている背景情報を参照してください。[サンプル シナリオの背景情報](../core/background-information-for-sample-scenarios.md)します。  
   
-- **特定された脅威の一覧を作成**-シナリオに潜在的な脅威を識別するために、DFD のすべてのエントリのカテゴリに分類を使いました**S**poofing を識別、 **T**ampering。データ、 **R**、これが否認**は**漏洩、 **D**ービス拒否、および**E**特権の levation。 次の表は、エンタープライズ シングル サインオン (SSO) を使用して BizTalk Server との間でメッセージを送受信したときに特定された脅威を示しています。  
+- **特定された脅威の一覧を作成**のシナリオに潜在的な脅威を識別するために、DFD のすべてのエントリのカテゴリに分類を使いました。**S**poofing を識別、 **T**データ、ampering **R**、これが否認**は**漏洩、 **D**ービス拒否、**E**levation 特権。 次の表は、エンタープライズ シングル サインオン (SSO) を使用して BizTalk Server との間でメッセージを送受信したときに特定された脅威を示しています。  
   
   **特定された脅威の一覧を表 1**  
   
@@ -74,7 +74,7 @@ ms.locfileid: "36995331"
 |悪意のあるユーザーが、あるサーバーから別のサーバーに移動中のデータを改ざんできる|サーバー間の通信がクリア テキストで行われていると、悪意のあるユーザーが移動中のデータを読み取る可能性があります。|data|データの改ざん<br /><br /> 情報の漏えい|  
   
 ## <a name="step-3-review-threats-enterprise-single-sign-on-scenario"></a>手順 3. (エンタープライズ シングル サインオン シナリオ) の脅威を確認します。  
- このセクションでは、サンプル アーキテクチャのエンタープライズ シングル サインオン (SSO) シナリオで特定された脅威に対して実行したリスク分析の結果を示します。 主要な脅威モデルは、会議後、脅威を確認し、使用のために使用、次に影響を与える各脅威のリスクを識別するためにカテゴリ: **D**amage、潜在的な**R**可能性、 **E**xploitability、 **A**影響を受けるユーザー、および**D**iscoverability します。  
+ このセクションでは、サンプル アーキテクチャのエンタープライズ シングル サインオン (SSO) シナリオで特定された脅威に対して実行したリスク分析の結果を示します。 主要な脅威モデルは、会議後、脅威を確認し、使用のために使用、次に影響を与える各脅威のリスクを識別するカテゴリ。**D**amage、潜在的な**R**可能性、 **E**xploitability、 **A**影響を受けるユーザー、および**D**iscoverability します。  
   
  次の表は、エンタープライズ シングル サインオンを使用して BizTalk Server との間でメッセージを送受信したときに特定された脅威のリスクの度合いを示しています。  
   
@@ -95,9 +95,9 @@ ms.locfileid: "36995331"
   
 |脅威|影響|リスクの度合い|緩和方法とテクノロジ|  
 |------------|------------|-------------------|--------------------------------------------|  
-|マスタ シークレット サーバーで単一ポイントのエラーが発生する|サービス拒否が起こる|2|マスタ シークレット サーバーにアクティブ/パッシブ クラスタ構成を使用します。<br /><br /> マスター シークレット サーバーをクラスタ リングの詳細については、[エンタープライズ シングル サインオンの高可用性](../core/high-availability-for-enterprise-single-sign-on.md)を参照してください。|  
+|マスタ シークレット サーバーで単一ポイントのエラーが発生する|サービス拒否が起こる|2|マスタ シークレット サーバーにアクティブ/パッシブ クラスタ構成を使用します。<br /><br /> マスター シークレット サーバーをクラスタ リングの詳細については、次を参照してください。[エンタープライズ シングル サインオンの高可用性](../core/high-availability-for-enterprise-single-sign-on.md)します。|  
 |悪意のあるユーザーが、クライアントまたはサーバーを偽装できる|ID 偽装<br /><br /> データの改ざん<br /><br /> 否認<br /><br /> 情報の漏えい<br /><br /> サービス拒否が起こる<br /><br /> 特権の昇格|2|ネットワークが Kerberos 認証をサポートしている場合、すべての SSO サーバーを登録する必要があります。 マスタ シークレット サーバーと SSO データベース間に Kerberos 認証を使用する場合は、SSO データベースが存在する SQL Server コンピュータにサービス プリンシパル名 (SPN) を構成する必要があります。<br /><br /> サービス プリンシパル名を構成する方法の詳細については、Microsoft TechNet Web サイトを参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=61374](http://go.microsoft.com/fwlink/?LinkId=61374)します。|  
-|悪意のあるユーザーが、あるサーバーから別のサーバーに移動中のデータを改ざんできる|データの改ざん<br /><br /> 情報の漏えい|1.6|すべての SSO サーバーと SSO データベース間にインターネット プロトコル セキュリティ (IPsec) またはセキュア ソケット レイヤ (SSL) を使用します。<br /><br /> SSL の詳細については、Microsoft ヘルプとサポート Web サイトを参照してください。 [ http://go.microsoft.com/fwlink/?LinkID=189708](http://go.microsoft.com/fwlink/?LinkID=189708)します。<br /><br /> すべての SSO サーバーと SSO データベースの間で SSL を使用する方法の詳細については、[SSO の SSL を有効にする方法](../core/how-to-enable-ssl-for-sso.md)を参照してください。|  
+|悪意のあるユーザーが、あるサーバーから別のサーバーに移動中のデータを改ざんできる|データの改ざん<br /><br /> 情報の漏えい|1.6|すべての SSO サーバーと SSO データベース間にインターネット プロトコル セキュリティ (IPsec) またはセキュア ソケット レイヤ (SSL) を使用します。<br /><br /> SSL の詳細については、Microsoft ヘルプとサポート Web サイトを参照してください。 [ http://go.microsoft.com/fwlink/?LinkID=189708](http://go.microsoft.com/fwlink/?LinkID=189708)します。<br /><br /> すべての SSO サーバーと SSO データベースの間で SSL を使用する方法の詳細については、次を参照してください。 [SSO の SSL を有効にする方法](../core/how-to-enable-ssl-for-sso.md)します。|  
   
 ## <a name="see-also"></a>参照  
  [脅威モデル分析](../core/threat-model-analysis.md)   

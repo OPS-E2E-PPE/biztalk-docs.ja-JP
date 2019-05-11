@@ -1,5 +1,5 @@
 ---
-title: 構成、着信 Mdn の受信ポート |Microsoft ドキュメント
+title: 構成を受信 Mdn の受信ポート |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,28 +12,28 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8585ae946e15d2677e225d42f6c123d5dd5e8e49
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: b630555d5ec32ca9c1a3d48a8320f138a977284f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25968312"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65391388"
 ---
-# <a name="configuring-a-receive-port-for-incoming-mdns"></a>受信 MDN の受信ポートの構成
-AS2 MDN を受信するには、メッセージを受信してパーティに応答を返すための一方向の HTTP 受信ポートを作成します。  
+# <a name="configuring-a-receive-port-for-incoming-mdns"></a>構成を受信 Mdn の受信ポート
+AS2 MDN を受信するには、作成、一方向 HTTP 受信ポート、メッセージを受信し、パーティへの応答を返します。  
   
- AS2 メッセージの受信に使用する双方向の要求 - 応答の受信ポートは、MDN メッセージの受信には使用できません。 MDN に要求 - 応答受信ポートを使用すると、受信 MDN に応答して 200OK メッセージが返されなくなるため、MDN 送信の不要な再試行が行われます。  
+ 双方向の要求-応答の受信 MDN メッセージを受信するメッセージを使用しない必要があります AS2 の受信に使用されるポート。 受信ポート 200OK メッセージなるため、MDN 送信の不要な再試行を原因となり、受信 MDN への応答で返される MDN を要求-応答を使用します。  
   
- 受信 MDN の処理には、AS2Receive と AS2EdiReceive のいずれかのパイプラインを使用できます。 ただし、AS2EdiReceive を使用する場合することはできませんに MDN をルーティング、メッセージ ボックス データベースを設定して、**メッセージ ボックスに受信 MDN をルーティング/配信用処理**プロパティを**受信確認**ページ一方向アグリーメント タブです。この操作を実行しようとすると、MDN を処理できない EDI デコーダーに対して MDN が渡されるため、EDI エラーが発生します。 MDN がメッセージ ボックスに送信されないと、AS2 デコーダーは MDN を利用 (消費) するため、MDN は EDI デコーダーに渡されません。  
+ AS2Receive または AS2EdiReceive パイプラインのいずれかを使用して、受信した MDN を処理することができます。 ただし、AS2EdiReceive を使用する場合ことはできません MDN をルーティングするメッセージ ボックスに設定して、 **MessageBox にルーティング/配信の受信 MDN を処理する**プロパティを**受信確認**ページ一方向アグリーメント タブ。操作を実行しようと、MSN が MDN を処理できない EDI デコーダーに渡されるために、EDI エラーが発生するがします。 メッセージ ボックスに MDN が送信されない場合、AS2Decoder は EDI デコーダーに渡されませんので、MDN を消費します。  
   
  次の構成を使用して受信ポートを作成します。  
   
 |場所|プロパティ|設定|  
 |--------------|--------------|-------------|  
-|**受信ポートのプロパティ: 全般**|[ポートの種類]|一方向|  
-|**受信場所のプロパティ: 全般**|トランスポートの種類|HTTP<br /><br /> **注**mdn の場合、される EDIINT/AS2 でエンコードされたメッセージを転送するため、HTTP アダプタのみを使用できます。 このトランスポートは、HTTP アダプタ以外のアダプタでは使用できません。|  
-|**受信場所のプロパティ: 全般**|[受信ハンドラー]|BizTalkServerIsolatedHost|  
-|**受信場所のプロパティ: 全般**|受信パイプライン。|AS2Receive または AS2EdiReceive|  
+|**受信ポートのプロパティ。[全般]**|[ポートの種類]|一方向|  
+|**受信場所のプロパティ。[全般]**|トランスポートの種類|HTTP<br /><br /> **注**EDIINT/AS2 でエンコードされたメッセージは、Mdn を転送するため、HTTP アダプタのみを使用できます。 このトランスポートは、HTTP アダプタ以外のアダプタでは使用できません。|  
+|**受信場所のプロパティ。[全般]**|[受信ハンドラー]|BizTalkServerIsolatedHost|  
+|**受信場所のプロパティ。[全般]**|受信パイプライン。|AS2Receive または AS2EdiReceive|  
 |**HTTP トランスポートのプロパティ**|仮想ディレクトリと ISAPI 拡張|/\<仮想ディレクトリの名前\>>/btshttpreceive.dll|  
   
 ## <a name="see-also"></a>参照  

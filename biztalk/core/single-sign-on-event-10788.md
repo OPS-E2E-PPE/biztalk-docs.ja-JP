@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10788 |Microsoft Docs'
+title: シングル サインオン:イベント 10788 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b1bf8d17abd7fd5652821b998cae34915e7777f2
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7c2594fdaf20acb55131d928f22506c164a5c1dd
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37019666"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65394134"
 ---
-# <a name="single-sign-on-event-10788"></a>シングル サインオン: イベント 10788
+# <a name="single-sign-on-event-10788"></a>シングル サインオン:イベント 10788
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                                                                          |
@@ -38,4 +38,4 @@ ms.locfileid: "37019666"
 ## <a name="user-action"></a>ユーザーの操作  
  MSDTC がリモート操作用に正しく構成されていることを確認してください。詳細については、指定されたコンピューターのイベント ログを確認してください。  
   
- MSDTC の問題に関するヘルプは、[MSDTC を使用した問題のトラブルシューティング](../core/troubleshooting-problems-with-msdtc.md)を参照してください。
+ MSDTC の問題に関するヘルプは、次を参照してください。 [MSDTC を使用した問題のトラブルシューティング](../core/troubleshooting-problems-with-msdtc.md)します。

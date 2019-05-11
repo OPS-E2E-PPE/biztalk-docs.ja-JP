@@ -1,5 +1,5 @@
 ---
-title: BAM で完了済みとして実行中のトランザクションのマークを付ける |Microsoft ドキュメント
+title: 進行中トランザクションを BAM で完了としてマークする |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,23 +17,23 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 508001fcc1023acfd54b7d28bea7f246cb6a1a2d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e975893867906d9f9570741e780abfcf10625f30
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22262370"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531106"
 ---
 # <a name="marking-in-progress-transactions-as-complete-in-bam"></a>BAM の進行中トランザクションを "完了" としてマークする
-ビジネス アクティビティ監視 (BAM) は、不完全なトレース インスタンスのデータを、特殊なアクティブ インスタンス テーブルに格納します。 インスタンス レコードの一部が、最後のバックアップの前に開始し、バックアップの後に完了した場合、これらのレコードはアクティブ インスタンス テーブル内に残ったままになります。 これができないシステムに機能してから、アクティブなインスタンス テーブルから移動できるようにを完了すると、これらのレコード手動でマークできます。  
+ビジネス アクティビティ監視 (BAM) は、特殊なアクティブ インスタンス テーブル内の不完全なトレース インスタンスのデータを保持します。 インスタンス レコードの一部では、最後のバックアップの前に開始しましたが、バックアップ後に完了した、いるこれらのレコードはアクティブ インスタンス テーブルに残ります。 これができない、システムが機能してから、アクティブなインスタンス テーブルから移動できるようにを完了すると、これらのレコード手動でマークできます。  
   
- 次のクエリを BAM プライマリ インポート データベースに対して実行することにより、特定のアクティビティに対する不完全な ActivityID を検索できます。  
+ BAM プライマリ インポート データベースに対して次のクエリを発行して、特定のアクティビティに対する不完全な Activityid の一覧を決定できます。  
   
 ```  
 Select ActivityID from bam_<ActivityName> where IsComplete = 0  
 ```  
   
- 外部システムのデータを見て、アクティビティ インスタンスが実際に完了していることを確認できた場合は、次のクエリを実行し、手動でインスタンスを完了させます。  
+ 外部システムからのデータは、アクティビティ インスタンスが完了したことを示す場合、は、手動でインスタンスを完了する次のクエリを使用できます。  
   
 ```  
 exec bam_<ActivityName>_PrimaryImport @ActivityID=N'<ActivityID>', @IsStartNew=0, @IsComplete=1  

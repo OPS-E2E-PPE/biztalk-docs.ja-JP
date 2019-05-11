@@ -1,5 +1,5 @@
 ---
-title: AS2 処理に関する既知の問題 |Microsoft ドキュメント
+title: AS2 の処理に関する既知の問題 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,71 +12,71 @@ caps.latest.revision: 40
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 61ce04c572c95a1a4e2433d6b046028468eca805
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 389184d177fe1b192db22660bdf382a6e64f37bf
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26009395"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65329386"
 ---
 # <a name="known-issues-with-as2-processing"></a>AS2 の処理に関する既知の問題
 このセクションには、BizTalk Server AS2 ソリューションに関する既知の問題を説明するトピックが含まれています。  
   
-## <a name="as2-processing-not-supported-on-64-bit-computers"></a>AS2 処理が 64 ビット コンピューターに対応していない  
- BizTalk Server AS2 ソリューションは、64 ビット コンピューター上ではサポートされません。 AS2 処理を正しく行えるのは、32 ビット コンピューターで実行する場合、または 64 ビット コンピューター上の WOW64 エミュレーターで実行する場合のみです。  
+## <a name="as2-processing-not-supported-on-64-bit-computers"></a>AS2 処理の 64 ビット コンピューターでサポートされていません  
+ BizTalk Server AS2 ソリューションは、64 ビット コンピューターではサポートされていません。 64 ビット コンピューターでの WOW64 エミュレーターで実行されているときに、32 ビット コンピューターで、または AS2 処理のみ機能します。  
   
-## <a name="the-as2-receive-pipelines-require-the-account-that-the-biztalk-isolated-host-instance-process-is-running-under-to-be-part-of-the-biztalk-application-users-group"></a>AS2 受信パイプラインでは、BizTalk 分離ホスト インスタンス プロセスの実行に使用するアカウントが BizTalk アプリケーション ユーザー グループに含まれていることが必要  
- AS2EdiReceive パイプラインまたは AS2Receive パイプラインを使用する場合は、BizTalk Application Users グループに、BizTalk 分離ホスト インスタンス プロセスが実行されているユーザー アカウントを追加する必要があります。 AS2EdiReceive パイプラインと AS2Receive パイプラインは、BizTalk 分離ホスト インスタンス プロセスで実行されます。  
+## <a name="the-as2-receive-pipelines-require-the-account-that-the-biztalk-isolated-host-instance-process-is-running-under-to-be-part-of-the-biztalk-application-users-group"></a>AS2 受信パイプラインが、BizTalk 分離ホスト インスタンス プロセスで実行されているに含まれて、BizTalk アプリケーション ユーザー グループのアカウントが必要です。  
+ AS2EdiReceive または AS2Receive パイプラインを使用している場合は、BizTalk 分離ホスト インスタンス プロセスは、BizTalk Application Users グループで実行されているユーザー アカウントを追加する必要があります。 AS2EdiReceive と AS2Receive パイプラインは、BizTalk 分離ホスト インスタンス プロセスで実行します。  
   
-## <a name="an-empty-receipt-delivery-option-header-will-cause-an-mdn-to-be-sent-synchronously"></a>Receipt-Delivery-Option ヘッダーを空白にすると、MDN が同期送信される  
- Receipt-Delivery-Option ヘッダーが空白のメッセージを AS2Receive パイプラインが受信した場合に、非同期 MDN が要求されると、このパイプラインは非同期 MDN 要求を無視します。 パイプラインは、代わりに同期 MDN を返して、イベント ログと AS2 状態レポート (有効になっている場合) にエラーを送信します。 この問題は、"受信メッセージのプロパティを上書きする" プロパティが選択されていない場合に発生します。 このプロパティを選択した場合、メッセージ内の Receipt-Delivery-Option ヘッダーは、[AS2 のプロパティ] ダイアログ ボックスの [パーティ - AS2 メッセージの送信者] ページにある Receipt-Delivery-Option プロパティの値で上書きされます。  
+## <a name="an-empty-receipt-delivery-option-header-will-cause-an-mdn-to-be-sent-synchronously"></a>Receipt-delivery-option ヘッダーが空白になります、MDN を同期的に送信します。  
+ AS2Receive パイプラインが受信メッセージの receipt-delivery-option ヘッダーが空白を非同期 MDN が要求された場合は、パイプラインは、非同期 MDN 要求を無視します。 同期 MDN を代わりに、返信、イベント ログと AS2 状態レポート (有効な) 場合、エラーが送信されます。 これは、「受信メッセージのプロパティを上書きする」プロパティが選択されていない場合に発生します。 そのプロパティを選択した場合は、パーティの Receipt-delivery-option プロパティの値を持つメッセージのメッセージの Receipt-delivery-option ヘッダーを AS2 のプロパティ ダイアログ ボックスの AS2 メッセージの送信者 ページとしてオーバーライドします。  
   
- この場合、Receipt-Delivery-Option ヘッダーが空白なので、AS2Receive パイプラインには非同期接続を介した MDN 応答の送信先アドレスが指定されていません。 ただし、パイプラインの同期接続は開かれたままなので、MDN は同期接続を介して送り返されます。 これが一方向の受信ポートの場合、BizTalk Server は、HTTP 200OK メッセージを送信した後で接続を閉じます。  
+ このインスタンスでの receipt-delivery-option ヘッダーが空であるため、AS2Receive パイプラインはありません非同期接続経由でへの MDN 応答を送信するアドレス。 ただし、パイプラインは、まだ、同期接続が開いてその接続を介して、MDN を送信します。 一方向である場合は、受信ポート、BizTalk Server は、HTTP 200OK メッセージを送信した後で接続を閉じます。  
   
-## <a name="use-of-unfolded-and-folded-http-line-headers"></a>展開された HTTP 行ヘッダーと折りたたまれた HTTP 行ヘッダーの使用  
- 相互運用性を最大化するには、展開された HTTP 行ヘッダーを AS2 メッセージに対して使用します。 インフォメーション サービス (IIS) 7.0 は展開された HTTP ヘッダーにのみ対応しています。 IIS 6.0 は展開されたヘッダーと折りたたまれたヘッダーに対応しています。 ただし、一部のシステムは、1 行あたりの文字数が 80 を上回るヘッダーに対応していません。そのため、これらのシステムでは、折りたたまれた行を使用する必要があります。  
+## <a name="use-of-unfolded-and-folded-http-line-headers"></a>展開された、折りたたまれた HTTP 行ヘッダーを使用して  
+ 最大の相互運用性、AS2 メッセージの展開された HTTP 行ヘッダーを使用する必要があります。 インフォメーション サービス (IIS) 7.0 には、展開された HTTP ヘッダーだけがサポートされています。 IIS 6.0 では、2 つ折りと折りたたまれたヘッダーをサポートします。 ただし、すべてのシステムは、ため、このようなシステムの折りたたまれた行を使用する必要があります、80 以上の文字を 1 行のヘッダーをサポートできます。  
   
  BizTalk Server における AS2 の既定値は、展開された HTTP 行ヘッダーです。  
   
-## <a name="party-resolution-can-be-affected-by-a-localized-name"></a>ローカライズされた名前がパーティの解決に影響する場合がある  
- BizTalk Server が送信 AS2 メッセージに対してパーティの解決を実行すると、メッセージ ヘッダー内のローカライズされた値がパーティの解決に影響する場合があります。 [AS2 のプロパティ] ダイアログ ボックスの [パーティ - AS2 メッセージの受信者] ページにある AS2-To パーティ プロパティが既定で英語のパーティ名に設定されている場合に、AS2 メッセージの AS2-To ヘッダー内の値が英語以外の名前に設定されていると、一致した項目は見つかりません。  
+## <a name="party-resolution-can-be-affected-by-a-localized-name"></a>パーティの解決はローカライズされた名前によって影響を受けることができます。  
+ BizTalk Server では、送信 AS2 メッセージのパーティの解決を実行し、パーティの解決がメッセージ ヘッダー内のローカライズされた値によって影響を受けることができます。 場合、AS2 の既定では英語のパーティ名、および AS2 の値に設定されているため、AS2 のプロパティ ダイアログ ボックスの AS2 メッセージの受信者 ページで、パーティのプロパティをパーティに-英語以外の名前に設定されているメッセージの AS2 ヘッダーにし、一致が見つかりません。  
   
 ## <a name="as2-message-size-limitation"></a>AS2 メッセージのサイズ制限  
- 暗号化された AS2 メッセージは、サイズが 96 MB 未満でないと処理されません。 この制限は、AS2Receive パイプラインと AS2EdiReceive パイプラインに含まれている AS2 デコーダーによるものです。  
+ 暗号化された AS2 メッセージは、処理するために 96 メガバイト数よりも小さい必要があります。 AS2Receive と AS2EdiReceive パイプラインの一部である AS2 デコーダーでは、この制限が適用されます。  
   
- AS2 メッセージは圧縮されてから暗号化されるので、圧縮機能を使用すると、このサイズ制限を回避できます。  
+ このサイズの制限を回避する方法の 1 つは、AS2 メッセージを圧縮すると、前に、暗号化されているため、圧縮を使用します。  
   
-## <a name="biztalk-edi-application-must-not-be-modified"></a>BizTalk EDI アプリケーションを変更できない  
- BizTalk EDI アプリケーション内のアイテムは、変更または削除できません。 このアプリケーションを変更すると、EDI 機能や AS2 機能の構成を解除して再構成しても、元のアプリケーションを復元することはできません。  
+## <a name="biztalk-edi-application-must-not-be-modified"></a>BizTalk EDI アプリケーションを変更する必要がありません。  
+ BizTalk EDI アプリケーションのアイテムを変更または削除する必要があります。 このアプリケーションが変更された場合は、構成を解除し、EDI および AS2 機能を再構成して、元のアプリケーションを復元する方法はありません。  
   
-## <a name="partner-may-reject-multipart-messages"></a>パートナーがマルチパート メッセージを拒否することがある  
+## <a name="partner-may-reject-multipart-messages"></a>パートナーがマルチパート メッセージを拒否します。  
  **現象**  
   
- AS2 送信パイプラインを使用してマルチパート メッセージを送信する場合、Content-Type MIME ヘッダーがないため、パートナーがメッセージを拒否することがあります。  
+ 送信パイプライン、AS2 を使用してマルチパート メッセージを送信する場合、パートナーが不足している Content-type MIME ヘッダーによりメッセージを拒否します。  
   
  **考えられる原因**  
   
- Content-Type は、マルチパート メッセージの各ボディ部に配置できる省略可能なヘッダーです。 パートナーによっては、このヘッダーが各ボディ部に存在し、特定のコンテンツの種類に設定されていることを要求します。  
+ コンテンツの種類は、各ボディ部のマルチパート メッセージに存在することができる省略可能なヘッダーです。 一部のパートナーでは、このヘッダーが各ボディ部、およびセットの特定のコンテンツの種類に存在することが必要です。  
   
 > [!NOTE]
->  メッセージの本文には AS2 送信パイプラインによって Content-Type プロパティが設定されますが、添付ファイルには Content-Type プロパティが設定されません。  
+>  すべての添付ファイルには、コンテンツの種類プロパティの設定はありません。 ただし、メッセージの本文は、AS2 送信パイプラインで設定するコンテンツの種類プロパティがあります。  
   
- **解決策**  
+ **解決方法**  
   
- パートナーが各ボディ部の Content-Type ヘッダー値を要求する場合、このプロパティを設定するカスタム パイプライン コンポーネントを作成し、送信パイプラインでこのコンポーネントを使用する必要があります。  
+ パートナーは、各ボディ部の Content-type ヘッダーの値を必要とする場合は、このプロパティを設定するカスタム パイプライン コンポーネントを作成および送信パイプラインでコンポーネントを使用する必要があります。  
   
-## <a name="when-receiving-multipart-messages-the-first-part-is-considered-the-body"></a>マルチパート メッセージの受信時に最初の部分が本文と見なされる  
+## <a name="when-receiving-multipart-messages-the-first-part-is-considered-the-body"></a>マルチパート メッセージの受信、最初の部分と見なされるタイミング本文  
  **現象**  
   
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、マルチパート AS2 メッセージの受信時に、添付ファイルの 1 つを間違ってメッセージ本文と識別することがあります。  
+ マルチパートの AS2 メッセージの受信時[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]可能性があります誤認する添付ファイルのいずれかのメッセージ本文として。  
   
  **考えられる原因**  
   
- マルチパート/関連メッセージの MIME ヘッダーには、どの部分をメッセージの本文として扱うかを示す、省略可能な "start" パラメーターが含まれていることがあります (その部分の Content-ID を指定)。 Start パラメーターが存在しない場合は、最初の部分がメッセージの本文を考慮してください。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]存在し、メッセージの本文として最初の部分を処理は常には、start パラメーターを考慮しません。  
+ マルチパート/関連メッセージの MIME ヘッダー、省略可能な場合がありますを指定する部分の 'start' のパラメーターは、パーツのコンテンツ ID を指定して、メッセージの本文として扱う必要があります。 Start パラメーターが存在しない場合は、最初の部分がメッセージの本文を検討してください。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] メッセージの本文として最初の部分は常に扱いますが存在する場合は、start パラメーターを考慮しません。  
   
- **解決策**  
+ **解決方法**  
   
- パートナーがマルチパート/関連メッセージの最初の部分として本文を送信できない場合、メッセージの本文を正しく識別するパイプライン コンポーネントを作成する必要があります。  
+ パートナーがマルチパート/関連メッセージの最初の部分として本文を送信できるように、メッセージの本文を正しく識別するパイプライン コンポーネントを作成する必要があります。  
   
 ## <a name="see-also"></a>参照  
  [EDI および AS2 ソリューションのトラブルシューティング](../core/troubleshooting-edi-and-as2-solutions.md)   

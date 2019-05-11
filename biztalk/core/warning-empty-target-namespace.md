@@ -1,5 +1,5 @@
 ---
-title: 警告 - 空対象 Namespace |Microsoft ドキュメント
+title: 警告 - ターゲット空 Namespace |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,22 +14,22 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b40194d0bb3c7d64bfe738d6e9f37d4032a5a70e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 856127f1bee020e550f9fac88cf9b09838489d8a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22287930"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65393706"
 ---
-# <a name="warning---empty-target-namespace"></a>警告 - 空対象 Namespace
+# <a name="warning---empty-target-namespace"></a>警告 - ターゲット空 Namespace
 **エラー コード**  
   
  BEC1007  
   
  **説明**  
   
- **Target Namespace**のプロパティ、**スキーマ**ノードが設定されていません。 必須ではありませんが、それぞれのスキーマに一意のターゲットの名前空間を定義することをお勧めします。  
+ **Target Namespace**のプロパティ、**スキーマ**ノードが設定されていません。 必須ではありませんが、それぞれのスキーマの一意のターゲット名前空間を定義することをお勧めします。  
   
  **ユーザーの操作**  
   
- ない限り、妥当な理由に、選択、**スキーマ**ノードこのスキーマのしてから、Microsoft®[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]プロパティ ウィンドウの値を指定、 **Target Namespace**一意であるプロパティこのスキーマです。
+ ない限り、正当な理由に、選択、**スキーマ**ノードが、このスキーマのしてから、Microsoft®[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]プロパティ ウィンドウの値を指定、 **Target Namespace**一意のプロパティこのスキーマ。

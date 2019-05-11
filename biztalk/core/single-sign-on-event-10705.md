@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10705 |Microsoft Docs'
+title: シングル サインオン:イベント 10705 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c74e4ebe0119698348668eb2ca6f78b5697cc5d0
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9e88a77cc05956f50af31094d299b653ce71056f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36976899"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65397289"
 ---
-# <a name="single-sign-on-event-10705"></a>シングル サインオン: イベント 10705
+# <a name="single-sign-on-event-10705"></a>シングル サインオン:イベント 10705
 ## <a name="details"></a>詳細  
 
 |                 |                                                                                                            |
@@ -28,19 +28,19 @@ ms.locfileid: "36976899"
 | 製品バージョン |                         [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                         |
 |    イベント ID     |                                                   10705                                                    |
 |  イベント ソース   |                                                   ENTSSO                                                   |
-|    コンポーネント    |                                                    N\A                                                     |
+|    コンポーネント    |                                                    該当なし                                                     |
 |  シンボル名  |                                          SSO_WARN_PS_NOT_ADAPTER                                           |
-|  メッセージ テキスト   | 指定されたアダプターはアダプター アプリケーションではありません。 アプリケーションの種類を確認してください。%r<br /><br /> アダプタ: %1 |
+|  メッセージ テキスト   | 指定されたアダプターはアダプター アプリケーションではありません。 アプリケーション type.%r を確認してください。<br /><br /> アダプタ: %1 |
 
 ## <a name="explanation"></a>説明  
  この警告イベントは、指定されたアダプターがアダプター アプリケーションではないことを示します。  
 
 ## <a name="user-action"></a>ユーザーの操作  
- この警告を解決するには、次の操作を行います:   
+ この警告を解決するには、次の操作を行います。  
 
-- SSO 管理 MMC スナップインを使用して、指定したアダプターを右クリックし、[プロパティ] をクリックしてアプリケーションの種類を特定するか、コマンド ライン ツール ssops -list および ssops -display を使用してアプリケーションの種類を特定します。  
+- SSO 管理 MMC スナップインを使用して、指定のアダプターを右クリックし、プロパティをアプリケーションの種類を確認したり、コマンド ライン ツール ssops を使用 をクリックして--list および ssops-アプリケーションの種類を決定する表示します。  
 
-- SSO 管理 MMC スナップインまたは ssops -addapp を使用して、アダプター アプリケーションを設定します。  
+- アダプターのアプリケーションを設定して、SSO 管理 MMC スナップインまたは ssops-addapp を使用します。  
 
   詳細については、次のリソースを参照してください。  
 

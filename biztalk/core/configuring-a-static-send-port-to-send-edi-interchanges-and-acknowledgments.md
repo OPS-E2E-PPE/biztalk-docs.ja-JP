@@ -1,5 +1,5 @@
 ---
-title: EDI インターチェンジと確認を送信する静的な送信ポートの構成 |Microsoft ドキュメント
+title: EDI インターチェンジと確認を送信する静的な送信ポートの構成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,51 +12,51 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: eb8645cd36447c814a5c43534e6c01de51e4be52
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d5c9e3e1648d570c41567339617c9a0b20ad8d47
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22234458"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65391378"
 ---
 # <a name="configuring-a-static-send-port-to-send-edi-interchanges-and-acknowledgments"></a>EDI インターチェンジと受信確認を送信するための静的送信ポートの構成
-EDI 受信確認またはインターチェンジを送信するには、静的な一方向の送信ポートまたは静的な送信請求 - 応答 (双方向) の送信ポートを使用できます。  
+EDI 受信確認またはインターチェンジを送信するには、静的な一方向送信ポートまたは静的な送信請求-応答 (双方向) の送信ポートのいずれかを使用することができます。  
   
--   EDI 受信確認 (有効になっている場合) を受信する一方向の受信ポートを作成する場合は、一方向の送信ポートを作成します。  
+-   作成、一方向送信ポートを作成する場合も、一方向の受信 (有効になっている) 場合は、EDI 受信確認を受信するポート。  
   
--   関連付けられた受信パイプライン経由で EDI インターチェンジを送信し、EDI 受信確認 (有効になっている場合) を受信するには、送信請求 - 応答の送信ポートを作成します。  
+-   EDI インターチェンジを送信して、関連付けられている受信パイプライン経由で EDI 受信確認 (有効な場合) を受信する送信請求-応答送信ポートを作成します。  
   
-## <a name="configuring-a-static-one-way-send-port"></a>静的な一方向の送信ポートの構成  
- 静的な一方向の送信ポートを作成して EDI インターチェンジおよび受信確認を送信するには、次の構成を使用します。  
-  
-|場所|プロパティ|設定|  
-|--------------|--------------|-------------|  
-|**送信ポートのプロパティ: 全般**|[ポートの種類]|静的な一方向|  
-|**送信ポートのプロパティ: 全般**|トランスポートの種類|FILE、FTP、HTTP、MQSeries、MSMQ、SMTP、SOAP、SQL、WCF などのさまざまなトランスポート、および Windows SharePoint Services を指定できます。|  
-|**送信ポートのプロパティ: 全般**|送信ハンドラー|BizTalkServerApplication|  
-|**送信ポートのプロパティ: 全般**|[送信パイプライン]|EdiSend|  
-|**トランスポートのプロパティ: 認証 (ファイル トランスポートの種類)**|ホストにネットワーク共有へのアクセス権がない場合に、これらの資格情報を (ユーザー名およびパスワードと共に) 使用します。|認証が必要な場合に設定します。|  
-|**送信ポートのプロパティ: フィルター**|プロパティ|BTS.MessageType<br /><br /> 注:<br /><br /> BTS.ReceivePortName またはその他の昇格させたプロパティを使用することもできます。|  
-|**送信ポートのプロパティ: フィルター**|演算子|==|  
-|**送信ポートのプロパティ: フィルター**|値|**BTS を使用します。インターチェンジの MessageType:**<br /><br /> - **X12**: `http://schemas.microsoft.com/Edi/X12/2006#<schema name>`、または<br /><br /> - **Edifact**:`http://schemas.microsoft.com/Edi/Edifact/2006#<schema name>`<br /><br /> **BTS を使用します。Ack の MessageType**:<br /><br /> -                     **X12**: `http://schemas.microsoft.com/Edi/X12#X12_997_Root`、または<br /><br /> -                     **X12**: `http://schemas.microsoft.com/Edi/X12#X12_TA1_Root`、または<br /><br /> -                     **Edifact**:`http://schemas.microsoft.com/Edi/Edifact#Efact_Contrl_Root`|  
-  
-## <a name="configuring-a-static-solicit-response-send-port"></a>静的な送信請求 - 応答の送信ポートの構成  
- 静的な送信請求 - 応答 (双方向) の送信ポートを作成して EDI インターチェンジおよび受信確認を送信するには、次の構成を使用します。  
+## <a name="configuring-a-static-one-way-send-port"></a>静的な一方向送信ポートを構成します。  
+ 静的な一方向送信 EDI インターチェンジおよび受信確認の送信、次の構成を使用するポートを作成します。  
   
 |場所|プロパティ|設定|  
 |--------------|--------------|-------------|  
-|**送信ポートのプロパティ: 全般**|[ポートの種類]|静的な送信請求 - 応答|  
-|**送信ポートのプロパティ: 全般**|トランスポートの種類|HTTP、MQSeries、MSMQ、SOAP、SQL、および WCF など、さまさざまな種類を指定できます。 FILE、FTP、SMTP、または Windows SharePoint Services を指定することはできません。|  
-|**送信ポートのプロパティ: 全般**|送信ハンドラー|BizTalkServerApplication|  
-|**送信ポートのプロパティ: 全般**|[送信パイプライン]|EdiSend|  
-|**送信ポートのプロパティ: 全般**|受信パイプライン。|EdiReceive|  
-|**トランスポートのプロパティ: 認証 (HTTP トランスポートの種類)**|ホストにネットワーク共有へのアクセス権がない場合に、これらの資格情報を (ユーザー名およびパスワードと共に) 使用します。|認証が必要な場合に設定します。|  
-|**送信ポートのプロパティ: フィルター**|プロパティ|BTS.MessageType<br /><br /> 注:<br /><br /> BTS.ReceivePortName またはその他の昇格させたプロパティを使用することもできます。|  
-|**送信ポートのプロパティ: フィルター**|演算子|==|  
-|**送信ポートのプロパティ: フィルター**|値|**BTS を使用します。インターチェンジの MessageType:**<br /><br /> -                     **X12**: `http://schemas.microsoft.com/Edi/X12/2006#<schema name>`、または<br /><br /> -                     **Edifact**:`http://schemas.microsoft.com/Edi/Edifact/2006#<schema name>`<br /><br /> **BTS を使用します。Ack の MessageType**:<br /><br /> -                     **X12**: `http://schemas.microsoft.com/Edi/X12#X12_997_Root`、または<br /><br /> -                     **X12**: `http://schemas.microsoft.com/Edi/X12#X12_TA1_Root`、または<br /><br /> -                     **Edifact**:`http://schemas.microsoft.com/Edi/Edifact#Efact_Contrl_Root`|  
+|**送信ポートのプロパティ:[全般]**|[ポートの種類]|静的な一方向|  
+|**送信ポートのプロパティ:[全般]**|トランスポートの種類|多くの型、ファイル、FTP、HTTP、MQSeries、MSMQ、SMTP、SOAP、SQL など、WCF の型、および Windows SharePoint Services を使用できます。|  
+|**送信ポートのプロパティ:[全般]**|送信ハンドラー|BizTalkServerApplication|  
+|**送信ポートのプロパティ:[全般]**|[送信パイプライン]|EdiSend|  
+|**トランスポートのプロパティ:(ファイル トランスポートの種類) の認証**|ホストに (ユーザー名とパスワード) を持つネットワーク共有へのアクセスがあるない場合に、これらの資格情報を使用します。|認証が必要な場合に設定します。|  
+|**送信ポートのプロパティ:フィルター**|プロパティ|BTS.MessageType<br /><br /> 注:<br /><br /> BTS を使用することもできます。ReceivePortName またはその他のプロパティを昇格します。|  
+|**送信ポートのプロパティ:フィルター**|演算子|==|  
+|**送信ポートのプロパティ:フィルター**|値|**BTS を使用します。インターチェンジのメッセージの種類:**<br /><br /> - **X12**: `http://schemas.microsoft.com/Edi/X12/2006#<schema name>`、または<br /><br /> - **Edifact**: `http://schemas.microsoft.com/Edi/Edifact/2006#<schema name>`<br /><br /> **BTS を使用します。Ack の MessageType**:<br /><br /> -                     **X12**: `http://schemas.microsoft.com/Edi/X12#X12_997_Root`、または<br /><br /> -                     **X12**: `http://schemas.microsoft.com/Edi/X12#X12_TA1_Root`、または<br /><br /> -                     **Edifact**: `http://schemas.microsoft.com/Edi/Edifact#Efact_Contrl_Root`|  
+  
+## <a name="configuring-a-static-solicit-response-send-port"></a>静的な送信請求-応答の送信ポートの構成  
+ 作成する静的な送信請求-応答 (双方向) の EDI インターチェンジおよび受信確認の送信、次の構成を使用するポートを送信します。  
+  
+|場所|プロパティ|設定|  
+|--------------|--------------|-------------|  
+|**送信ポートのプロパティ:[全般]**|[ポートの種類]|静的な送信請求-応答|  
+|**送信ポートのプロパティ:[全般]**|トランスポートの種類|多くの種類などの HTTP、MQSeries、MSMQ、SOAP、SQL、および WCF の種類を指定できます。 ファイル、FTP、SMTP、または Windows SharePoint Services にすることはできません。|  
+|**送信ポートのプロパティ:[全般]**|送信ハンドラー|BizTalkServerApplication|  
+|**送信ポートのプロパティ:[全般]**|[送信パイプライン]|EdiSend|  
+|**送信ポートのプロパティ:[全般]**|受信パイプライン。|EdiReceive|  
+|**トランスポートのプロパティ:(HTTP トランスポートの種類) の認証**|ホストに (ユーザー名とパスワード) を持つネットワーク共有へのアクセスがあるない場合に、これらの資格情報を使用します。|認証が必要な場合に設定します。|  
+|**送信ポートのプロパティ:フィルター**|プロパティ|BTS.MessageType<br /><br /> 注:<br /><br /> BTS を使用することもできます。ReceivePortName またはその他のプロパティを昇格します。|  
+|**送信ポートのプロパティ:フィルター**|演算子|==|  
+|**送信ポートのプロパティ:フィルター**|値|**BTS を使用します。インターチェンジのメッセージの種類:**<br /><br /> -                     **X12**: `http://schemas.microsoft.com/Edi/X12/2006#<schema name>`、または<br /><br /> -                     **Edifact**: `http://schemas.microsoft.com/Edi/Edifact/2006#<schema name>`<br /><br /> **BTS を使用します。Ack の MessageType**:<br /><br /> -                     **X12**: `http://schemas.microsoft.com/Edi/X12#X12_997_Root`、または<br /><br /> -                     **X12**: `http://schemas.microsoft.com/Edi/X12#X12_TA1_Root`、または<br /><br /> -                     **Edifact**: `http://schemas.microsoft.com/Edi/Edifact#Efact_Contrl_Root`|  
   
 ## <a name="setting-agreement-properties"></a>アグリーメント プロパティの設定  
- 送信ポートを作成したら、送信パイプラインを正しく機能させるために必要となるアグリーメント プロパティを設定する必要があります。 さまざまなページでこれらのプロパティが設定されて、**アグリーメントのプロパティ** ダイアログ ボックス。  
+ 送信ポートを作成した後は、関数への送信パイプラインに必要なアグリーメントのプロパティを設定する必要があります。 これらのプロパティのさまざまなページの設定、**アグリーメントのプロパティ** ダイアログ ボックス。  
   
 ## <a name="see-also"></a>参照  
  [EDI ソリューションのポートを構成します。](../core/configuring-ports-for-an-edi-solution.md)   

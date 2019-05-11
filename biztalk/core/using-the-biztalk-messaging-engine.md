@@ -1,5 +1,5 @@
 ---
-title: BizTalk メッセージングを使用してエンジン |Microsoft ドキュメント
+title: BizTalk メッセージングを使用してエンジン |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -21,48 +21,48 @@ caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 701ed3e82eb75b98a948313a99bb4debc65a8cce
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 598a7030b885057dc7781336c2925f0cb99b17fd
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22288042"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395185"
 ---
-# <a name="using-the-biztalk-messaging-engine"></a>BizTalk メッセージング エンジンの使用
-メッセージング エンジンのアーキテクチャを次の図に示します。 メッセージがアダプターによって受信され、BizTalk Server に送信されるシナリオを示しています。  
+# <a name="using-the-biztalk-messaging-engine"></a>BizTalk メッセージング エンジンを使用します。
+次の図は、メッセージング エンジンのアーキテクチャを示しています。 メッセージがアダプターによって受信および BizTalk Server に送信されるシナリオを示しています。  
   
  ![](../core/media/ebiz-prog-messaging1.gif "ebiz_prog_messaging1")  
 メッセージング エンジンのアーキテクチャ  
   
- 各アダプターには、独自のインスタンス、 **TransportProxy**メッセージング エンジンとの対話に使用されるオブジェクト。 アダプターとメッセージング エンジンとの対話はバッチ単位で実行され、バッチには分離的な処理が適用されます。 バッチとは、SubmitMessage、SuspendMessage、DeleteMessage などの操作をひとまとめにしたものです。  
+ 各アダプターに独自のインスタンスには、 **TransportProxy**メッセージング エンジンと対話するために使用するオブジェクト。 アダプターは、バッチ、アトミックに処理されますが、メッセージング エンジンに対する作業を実行します。 バッチは、SubmitMessage、suspendmessage、DeleteMessage などの操作のコレクションです。  
   
- アダプターがメッセージング エンジンにメッセージを送信するときに、具体的にどのような処理が行われるかを次に示します。  
+ 以下は、一連のシナリオでは、アダプターがメッセージング エンジンにメッセージを送信するイベントです。  
   
-1.  アダプターが新しいメッセージを作成し、データ ストリームをメッセージに接続します。  
+1.  アダプターは、新しいメッセージを作成し、データ ストリームをメッセージに接続します。  
   
-2.  アダプターが新しいバッチをメッセージング エンジンから取得します。  
+2.  アダプターは、メッセージング エンジンから新しいバッチを取得します。  
   
-3.  送信対象のバッチに対し、アダプターがメッセージを追加します。  
+3.  アダプターでは、送信するバッチにメッセージを追加します。  
   
-4.  バッチがコミットされ、メッセージング エンジンのスレッド プールのキューに格納されます。  
+4.  バッチがコミットされ、メッセージング エンジン スレッドのプールでキューに登録します。  
   
-5.  メッセージング エンジンのスレッド プールが新しいバッチの処理を開始します。  
+5.  メッセージング エンジン スレッドのプールでは、新しいバッチの処理を開始します。  
   
-6.  メッセージが受信パイプラインで処理されます。  
+6.  メッセージは、受信パイプラインで処理されます。  
   
-7.  受信パイプラインがメッセージ (ゼロ個以上) を生成します。 パイプラインでは、エラーが発生しない限り、メッセージを処理できます。 受信パイプラインで複数のメッセージが生成される場合もあります。複数のメッセージが生成される典型的なケースとしては、逆アセンブラー コンポーネントが、単一のインターチェンジを複数のメッセージに逆アセンブルする場合などが考えられます。 通常、送信されたメッセージは、受信パイプラインによって XML として正規化されます。  
+7.  受信パイプラインは、0 個以上のメッセージを生成します。 パイプラインは、すべてのエラーを返さないを提供するメッセージを使用できます。 受信パイプラインは、1 つ以上のメッセージを生成できます通常は、逆アセンブラー コンポーネントがメッセージの数に 1 つのインターチェンジを逆アセンブルするときに発生します。 通常、受信パイプラインは、送信されたメッセージを XML に正規化します。  
   
-8.  マッピングが構成されていた場合、パイプラインによって生成されたメッセージが、マッパーで処理されます。  
+8.  マッピングが構成されている場合、パイプラインによって生成されたメッセージは、マッパーで処理されます。  
   
-9. メッセージがメッセージ エージェントまたはメッセージ ボックス データベースに公開されます。  
+9. メッセージは、メッセージ エージェントまたはメッセージ ボックス データベースに公開されます。  
   
-10. メッセージング エンジンが、アダプターをコールバックし、バッチの処理結果を通知します。  
+10. メッセージング エンジンがアダプター バッチの処理の結果を通知するコールバックします。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
 -   [回復可能なインターチェンジ処理](../core/recoverable-interchange-processing.md)  
   
--   [メッセージの順次配送](../core/ordered-delivery-of-messages.md)  
+-   [メッセージの配信を順序付け](../core/ordered-delivery-of-messages.md)  
   
 -   [エラー処理](../core/error-handling.md)  
   
@@ -70,5 +70,5 @@ ms.locfileid: "22288042"
  [BizTalk Server がサイズの大きいメッセージを処理する方法](../core/how-biztalk-server-processes-large-messages.md)   
  [エンジン パフォーマンスの特性](../core/engine-performance-characteristics.md)   
  [維持可能な最大のエンジン スループットの測定](../core/measuring-maximum-sustainable-engine-throughput.md)   
- [エンジンの MST を測定するためのシナリオをテストします。](../core/test-scenarios-for-measuring-mst-of-the-engine.md)   
- [Microsoft BizTalk LoadGen 2007 ツールの使用](../core/using-the-microsoft-biztalk-loadgen-2007-tool.md)
+ [エンジンの MST を測定するためのテスト シナリオ](../core/test-scenarios-for-measuring-mst-of-the-engine.md)   
+ [Microsoft BizTalk LoadGen 2007 ツールを使用](../core/using-the-microsoft-biztalk-loadgen-2007-tool.md)

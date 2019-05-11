@@ -1,5 +1,5 @@
 ---
-title: Itinerary サブスクライバーを作成 |Microsoft ドキュメント
+title: スケジュール サブスクライバーを作成する |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,17 +12,17 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5f470ed5268c445ab3b7175f1cba07ff1de52a27
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 2998b47ec136414af896cadb40b8336fe41ef2ae
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26007195"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65394671"
 ---
-# <a name="creating-itinerary-subscribers"></a>Itinerary サブスクライバーを作成します。
-BizTalk Server メッセージ ボックス データベースに、受信パイプライン経由で到着するメッセージを自動的に公開します。これにより、メッセージが、関連するサブスクライバーで収集できる状態にします。 この分離方法は、最大限の柔軟性を提供のスケールを設定し、発行を使用しているために、BizTalk ソリューションを開発することをお勧めのメカニズムをサブスクライブします。  
+# <a name="creating-itinerary-subscribers"></a>スケジュール サブスクライバーを作成します。
+BizTalk Server 受信パイプライン経由でメッセージ ボックス データベースに到着するメッセージを自動的に公開します。これにより、メッセージは、関連するサブスクライバーの乗車の準備ができています。 この減結合アプローチは、最大限の柔軟性を提供します、適切にスケールし、発行を使用するために、BizTalk ソリューションを開発することをお勧めのメカニズムをサブスクライブします。  
   
- 2 つの方法でサブスクライバーを itinerary サービスを作成するにがあります。  
+ スケジュール サービス サブスクライバーで作成する 2 つの方法はあります。  
   
 -   [スケジュール サービス サブスクライバーとして送信ポートを利用する](../esb-toolkit/using-a-send-port-as-an-itinerary-service-subscriber.md)  
   

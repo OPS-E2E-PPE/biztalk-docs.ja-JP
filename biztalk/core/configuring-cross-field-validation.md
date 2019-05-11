@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 97951adc5c98f8350e7f42c92214f89558f2a70d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6cd14497f08bf085c1a93122baa00875ad714cc1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37014491"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65391342"
 ---
 # <a name="configuring-cross-field-validation"></a>クロスフィールド検証の構成
 このトピックでは、EDI でエンコードされたメッセージのトランザクション セット データ要素に対するクロスフィールド/セグメント検証を有効にする方法について説明します。 これを行うには、2 つの設定を行う必要があります。  
@@ -40,7 +40,7 @@ ms.locfileid: "37014491"
   
 3. EDIFACT スキーマで、検索、 **EdifactDependencyRule_Check**スキーマの appinfo セクションの注釈のフラグ。 設定**はい**します。  
   
-4. スキーマの適切なセグメントに対して、適用する関係条件 (X12 および HIPAA) または依存ルール (EDIFACT) を指定します。 詳細については、[クロス フィールド/セグメント検証](../core/cross-field-segment-validation.md)を参照してください。  
+4. スキーマの適切なセグメントに対して、適用する関係条件 (X12 および HIPAA) または依存ルール (EDIFACT) を指定します。 詳細については、次を参照してください。[クロス フィールド/セグメント検証](../core/cross-field-segment-validation.md)です。  
   
    > [!NOTE]
    >  クロスフィールド検証の条件またはルールは、EDI スキーマのセグメントに対して入力されます。 セグメントではなくデータ要素に対してクロスフィールド検証ルールを入力すると、スキーマ検証の実行時に [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] によって警告が生成されます。  

@@ -1,5 +1,5 @@
 ---
-title: セキュリティの計画 |Microsoft ドキュメント
+title: セキュリティの計画 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -18,17 +18,17 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c0c962541a6ce39d96a5024c0a0a668328ca55e2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 83a3e17b25625ce307449cad5c7b0586abaeb705
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22264026"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395655"
 ---
 # <a name="planning-for-security"></a>セキュリティの計画
-このセクションでは、Microsoft BizTalk Server 環境で発生しやすい潜在的な脅威、サービスの拒否攻撃を緩和するための推奨事項、および BizTalk Server 環境をセキュリティで保護するための推奨事項に関する情報を示します。  
+このセクションには、潜在的な脅威は、Microsoft BizTalk Server 環境に影響を受ける可能性があります、サービス拒否の攻撃を緩和するための推奨事項と、BizTalk Server 環境をセキュリティで保護するための推奨事項に関する情報が含まれています。  
   
- 詳細については、BizTalk Server の展開をセキュリティで保護する、次を参照してください。[サンプル BizTalk Server アーキテクチャ](../core/sample-biztalk-server-architectures.md)です。  
+ BizTalk Server の展開をセキュリティで保護する方法の詳細については、「 [Sample BizTalk Server Architectures](../core/sample-biztalk-server-architectures.md)」を参照してください。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
@@ -38,8 +38,8 @@ ms.locfileid: "22264026"
   
 -   [攻撃のサービス拒否攻撃の緩和](../core/mitigating-denial-of-service-attacks.md)  
   
--   [BizTalk Server の展開のセキュリティに関する推奨事項](../core/security-recommendations-for-a-biztalk-server-deployment.md)  
+-   [BizTalk Server を展開する際のセキュリティに関する推奨事項](../core/security-recommendations-for-a-biztalk-server-deployment.md)  
   
--   [BizTalk Server ランタイムのセキュリティに関する推奨事項](../core/biztalk-server-runtime-security-recommendations.md)  
+-   [BizTalk Server ランタイム セキュリティの推奨事項](../core/biztalk-server-runtime-security-recommendations.md)  
   
--   [小規模中規模の企業からのセキュリティのケース スタディ](../core/security-case-studies-for-small-to-medium-sized-companies.md)
+-   [中小企業のセキュリティに関するケース スタディ](../core/security-case-studies-for-small-to-medium-sized-companies.md)

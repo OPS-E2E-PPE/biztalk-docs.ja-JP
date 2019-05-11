@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10652 |Microsoft Docs'
+title: シングル サインオン:イベント 10652 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a2e27c678f2c031c642107cd770566f92d7ca708
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: df470103391e41cdac109e5b58af0514d402f04a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36985747"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65397658"
 ---
-# <a name="single-sign-on-event-10652"></a>シングル サインオン: イベント 10652
+# <a name="single-sign-on-event-10652"></a>シングル サインオン:イベント 10652
 ## <a name="details"></a>詳細  
 
 |                 |                                                                           |
@@ -28,18 +28,18 @@ ms.locfileid: "36985747"
 | 製品バージョン |        [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]         |
 |    イベント ID     |                                   10652                                   |
 |  イベント ソース   |                                  ENTSSO                                   |
-|    コンポーネント    |                                    N\A                                    |
+|    コンポーネント    |                                    該当なし                                    |
 |  シンボル名  |                   SSO_ERROR_PASSWORD_SYNC_START_FAILED                    |
-|  メッセージ テキスト   | パスワード同期サービスを初期化できませんでした。%r<br /><br /> エラー コード: %1 |
+|  メッセージ テキスト   | Initialize.%r にパスワード同期サービスが失敗しました<br /><br /> エラー コード: %1 |
 
 ## <a name="explanation"></a>説明  
- このエラー イベントは、例外が発生したためにパスワード同期サービスを開始できなかったことを示します。  
+ このエラー イベントは、例外が原因で、パスワード同期サービスを開始できなかったことを示します。  
 
 ## <a name="user-action"></a>ユーザーの操作  
  このエラーを解決するには、次の操作を行います。  
 
-- ENTSSO または他のサービスからの関連するエラーについては、システムおよびアプリケーションのイベント ログを確認します。  
+- ENTSSO または他のサービスから関連するエラーのアプリケーションとシステムの両方のイベント ログを確認します。  
 
-  詳細については、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ヘルプの次の情報を参照してください:   
+  詳細については、の次のリソースを参照してください。[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプ。  
 
 - [パスワード同期](../core/password-synchronization2.md)

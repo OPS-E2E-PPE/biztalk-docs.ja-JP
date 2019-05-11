@@ -1,5 +1,5 @@
 ---
-title: パイプライン コンポーネント |Microsoft ドキュメント
+title: パイプライン コンポーネント |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,15 +15,15 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bd187fddaae290149442f5bad37f61a870410690
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3a4e33ceef2a8450c868123c2efba0b9b69fb869
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22264306"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395807"
 ---
 # <a name="pipeline-components"></a>パイプライン コンポーネント
-Visual Studio ツールボックスには、パイプラインの作成に使用できるいくつかの標準 BizTalk Server コンポーネントが組み込まれています。  
+Visual Studio ツールボックスには、パイプラインを作成するのに使用できるいくつかの標準的な BizTalk Server コンポーネントが設定されます。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

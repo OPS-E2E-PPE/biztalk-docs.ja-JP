@@ -1,5 +1,5 @@
 ---
-title: 'フェーズ 1: 評価のスコープ |Microsoft Docs'
+title: フェーズ 1:評価のスコープ |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 377abbb4ae14e3c3e1c13f7caf45ac998e9f5e9b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 11fa6c99aec54848c27927aed3444cc9d8b18983
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36986979"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65394621"
 ---
-# <a name="phase-1-scoping-the-assessment"></a>フェーズ 1: 評価のスコープ
+# <a name="phase-1-scoping-the-assessment"></a>フェーズ 1:評価の範囲設定
 このトピックでは、BizTalk Server のパフォーマンス評価のスコープ フェーズの側面について説明します。  
   
  パフォーマンス評価に関与しているときによくある間違いでは、パフォーマンス評価のスコープを過小評価します。 十分なリソースと時間が事前に割り当てられない場合、パフォーマンス評価を担当するチームはできませんをすべての構築して、複雑な運用環境に似た環境をテストするために必要なタスクを完了できません。 パフォーマンス評価に使用するチームは、戦闘を慎重に選択する必要があります。 ほとんどのパフォーマンス評価は非常に限られた期間内で実行およびそのため、チームを特定し、ほとんどの主要なパフォーマンス目標で 3 つの 1 つまたは 2 つ、おそらくに集中する必要があります。 テストするアプリケーションでは、識別されたパフォーマンスの目標に焦点を具体的には開発する必要があり、可能な限りすべての他のテクノロジ変数を考慮する必要があります。 このトピックでは、BizTalk Server のパフォーマンス評価のスコープ フェーズの側面について説明します。  
@@ -65,7 +65,7 @@ ms.locfileid: "36986979"
   
 - **ピーク時の負荷**  
   
-- **バッチの完了に時間***X*   
+- **バッチの完了に時間***X*  
   
 - **フラッド ゲートの回復シナリオ**  
   
@@ -97,9 +97,9 @@ ms.locfileid: "36986979"
   
 -   ソリューションにオーケストレーションを実装するための要件とは  
   
--   スループットの要件を文書化: ソリューションの最大持続可能スループットの要件は何ですか?  
+-   ドキュメントのスループットの要件:ソリューションの最大持続可能スループットの要件とは  
   
--   待機時間の要件: どのように応答性の高いソリューションにする必要は送信請求-応答と要求-応答のシナリオのでしょうか。  
+-   待機時間の要件:応答性の高い方法は、ソリューション必要があります送信請求-応答と要求-応答のシナリオのでしょうか。  
   
 -   ソリューションは、ピーク時のドキュメントの読み込みの期間からどの程度回復か。  
   
@@ -168,7 +168,7 @@ ms.locfileid: "36986979"
   - 複数のファイルにデータベースを分割するスクリプトを作成する権限です。  
   
     > [!NOTE]  
-    >  この最適化を適用する方法の詳細については、[、Databases2 のファイル グループを最適化する](../technical-guides/optimizing-filegroups-for-the-databases2.md)を参照してください。  
+    >  この最適化を適用する方法の詳細については、次を参照してください。 [、Databases2 のファイル グループを最適化する](../technical-guides/optimizing-filegroups-for-the-databases2.md)します。  
   
   - SQL Server 2008 R2 Performance Dashboard Reports を使用してパフォーマンスの問題を特定できます。  
   
@@ -334,12 +334,12 @@ ms.locfileid: "36986979"
   |            **メッセージの種類**             |                                                                                                                                                                                                                                                                  -小さな XML メッセージを XML スキーマに準拠している 25 KB 約*X*<br />-中の XML メッセージを XML スキーマに準拠する 512 KB 約*Y*                                                                                                                                                                                                                                                                  |
   |        **メッセージの配信**         |                                                                                                                                                                                                          58 %25 KB (小さな XML メッセージ)<br />~ 25 %512 KB (中規模の XML メッセージ)<br />-11 %3 MB (中規模バイナリ データ – PDF) – 非圧縮可能<br />-4 %7.5 MB (大きなバイナリ データ – PDF) – 非圧縮可能)<br />-2 %20 MB (大きなバイナリ データ – PDF) – 非圧縮可能                                                                                                                                                                                                          |
   |    **ピーク負荷の処理の要件**    |                                                                                                                                                                                                                                  大きなバイナリ データ (20 MB) (上で指定した) としてのデータの約 2% を表すが、これを処理するときは、予測可能ではないです。 システムは、これらのサイズの大きいメッセージを特定の時点に対応できる必要があります。                                                                                                                                                                                                                                  |
-  | **メッセージの受信/送信に使用するエンドポイント** | **小さな XML メッセージ (25 KB)**<br /><br /> -受信場所: PaymentXMLDocIn<br />-ホスト: ReceiveHost<br />パイプラインのために使用します XMLReceive。<br /><br /> **中規模の XML メッセージ (512 KB)**<br /><br /> -受信場所: PaymentXMLDocIn<br />-ホスト: ReceiveHost<br />パイプラインのために使用します XMLReceive。<br /><br /> **中規模バイナリ データ (3 MB)-PDF – 非圧縮可能**<br /><br /> -受信場所: BinaryDataIn<br />-ホスト: ReceiveHost<br />パイプラインの使用: PassThruReceive<br /><br /> **大きなバイナリ データ (7.5 – 20 MB)-PDF – 非圧縮可能**<br /><br /> -受信場所: BinaryDataIn<br />-ホスト: ReceiveHost<br />パイプラインの使用: PassThruReceive |
+  | **メッセージの受信/送信に使用するエンドポイント** | **小さな XML メッセージ (25 KB)**<br /><br /> -受信場所。PaymentXMLDocIn<br />-ホスト:ReceiveHost<br />パイプラインを使用します。[Xmlreceive]<br /><br /> **中規模の XML メッセージ (512 KB)**<br /><br /> -受信場所。PaymentXMLDocIn<br />-ホスト:ReceiveHost<br />パイプラインを使用します。[Xmlreceive]<br /><br /> **中規模バイナリ データ (3 MB)-PDF – 非圧縮可能**<br /><br /> -受信場所。BinaryDataIn<br />-ホスト:ReceiveHost<br />パイプラインを使用します。PassThruReceive<br /><br /> **大きなバイナリ データ (7.5 – 20 MB)-PDF – 非圧縮可能**<br /><br /> -受信場所。BinaryDataIn<br />-ホスト:ReceiveHost<br />パイプラインを使用します。PassThruReceive |
   |          **テスト データの場所**          |                                                                                                                                                                                                                                                                                                    ローカルでアクセス可能なテスト データ ファイル共有の例: \\\PerformanceLabs\July\Test Data\                                                                                                                                                                                                                                                                                                    |
   
    テーブルに情報を配置するには、いくつかの処理が実現されます。 まず、簡単、テスト データについての前提条件に同意するには、利害関係者の。 第 2 に、パフォーマンス評価のための潜在的な最適化に関する決定に使用できる情報を提供します。 たとえばする上記の表で確認できます ReceiveHost BizTalk ホスト内で、すべての異なるデータ型を処理するために使用するすべての受信場所がホストされていること。 これは、このホストの各インスタンスがデータ (例: XML とバイナリの非圧縮 PDF データ) のさまざまな種類とサイズの処理を担当することを意味します。 各ホスト インスタンスは 1 つのインスタンスの BizTalk Server プロセス (BTSNTSVC します。EXE)、処理のボトルネックになるこの可能性があります。 したがってこのシナリオのいずれかの環境の最適化を簡単にすぐには、パフォーマンスの向上のそれぞれを分離することをテストすることで、独自の個々 のホストに場所が表示されます。 概要の表形式で、テスト データの情報にアクセスすることすると、ゲージのような簡単な最適化しやすきます。  
   
-- **ロード テストとロードの生成の自動化計画**-パフォーマンス評価のため、テスト データのプロファイルが確立された後は、ロード、環境内でテストを実行する方法を検討してください。 BizTalk Server 2010 は、ロード テストのロード テストの Visual Studio 2010 を使用しました。 Visual Studio 2010 でのロード テストを容易にする方法の詳細については、[テスト自動化を容易にする Visual Studio を使用して](../technical-guides/using-visual-studio-to-facilitate-automated-testing.md)を参照してください。  
+- **ロード テストとロードの生成の自動化計画**-パフォーマンス評価のため、テスト データのプロファイルが確立された後は、ロード、環境内でテストを実行する方法を検討してください。 BizTalk Server 2010 は、ロード テストのロード テストの Visual Studio 2010 を使用しました。 Visual Studio 2010 でのロード テストを容易にする方法の詳細については、次を参照してください。[テスト自動化を容易にする Visual Studio を使用して](../technical-guides/using-visual-studio-to-facilitate-automated-testing.md)します。  
   
 ## <a name="see-also"></a>参照  
  [パフォーマンス評価のフェーズ](../technical-guides/phases-of-a-performance-assessment.md)

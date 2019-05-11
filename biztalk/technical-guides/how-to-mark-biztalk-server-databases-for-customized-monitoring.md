@@ -12,12 +12,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ea069140b9dd89fafa13fe57be9eefa17eceb790
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 49e34847ae9ad93861a1e9cf18698f500cce5263
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37023712"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396308"
 ---
 # <a name="how-to-mark-biztalk-server-databases-for-customized-monitoring"></a>カスタマイズした監視用の BizTalk Server データベースをマークする方法
 Microsoft がインストールされている場合[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]管理パックは、方法をカスタマイズする[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]のデータベースを監視します。 これにより、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]管理パックは、次の監視[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]データベース。  
@@ -51,7 +51,7 @@ Microsoft がインストールされている場合[!INCLUDE[btsSQLServerNoVers
   
 4. SQL Server の検出を見つけ、オペレーション コンソール ツールバーをクリックして**検索**、し、**探して**テキスト ボックスに「 **SQL 2008** SQL Server 2008 を検索しますします。  
   
-5. で、**検出された種類: SQL 2008 DB**カテゴリで、**データベース エンジンのデータベースの検出**します。  
+5. 下、**型を検出します。SQL 2008 DB**カテゴリで、**データベース エンジンのデータベースの検出**します。  
   
 6. オペレーション コンソール ツールバーで、次のようにクリックします。**オーバーライド**順にポイント**オブジェクト検出の上書き**します。 に対して、特定の種類のオブジェクトまたはグループ内のすべてのオブジェクトの検出の上書きを選択することができます。 オーバーライドするにはオブジェクトの種類のグループを選択した後、**上書きのプロパティ** ダイアログ ボックスが表示されます。  
   

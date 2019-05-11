@@ -1,5 +1,5 @@
 ---
-title: '手順 4: 取引先、Partner1 のパーティとビジネス プロファイルの構成 |Microsoft Docs'
+title: 手順 4:取引先、Partner1 のパーティとビジネス プロファイルの構成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,17 +12,17 @@ caps.latest.revision: 40
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: aa53034af1a07ca55574e2e37eecb7c0875f8a2e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: db279e32601603a8f539d6e95627f522e5f7bd85
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36989683"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65392577"
 ---
-# <a name="step-4-configure-a-party-and-business-profile-for-your-trading-partner"></a>手順 4: 取引先のパーティとビジネス プロファイルを構成します。
+# <a name="step-4-configure-a-party-and-business-profile-for-your-trading-partner"></a>手順 4:取引先のパーティとビジネス プロファイルを構成します。
 ![手順 9 の 4](../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-4of9.gif "Step_4of9")  
   
- このステップでは、取引先が 850 メッセージを自組織に送信し、それに対する 997 受信確認メッセージを受信するように、取引先 Fabrikam のパーティおよびビジネス プロファイルを構成します。  
+ この手順では、取引先パートナーを組織に 850 メッセージを送信し、代わりに、997 受信確認メッセージを受信する Fabrikam のパーティとビジネス プロファイルを構成します。  
   
 ## <a name="prerequisites"></a>前提条件  
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者グループのメンバーとしてログオンしている必要があります。  
@@ -44,12 +44,12 @@ ms.locfileid: "36989683"
 7. **プロファイル プロパティ**] ダイアログ ボックスの [、**全般**ページで、入力`Fabrikam_Profile`で、**名前**テキスト ボックス。  
   
    > [!NOTE]
-   >  プロファイルがという名前のパーティを作成するときに*PartyName*(_p) が自動的に作成します。 新しいプロファイルを作成する代わりに、このプロファイルを使用できます。 プロファイルの名前を変更するには、プロファイルを右クリックして**プロパティ**します。 **全般** ページで、プロファイルの名前を指定します。  
+   >  プロファイルがという名前のパーティを作成するときに*PartyName*(_p) が自動的に作成します。 このプロファイルは、新規に作成する代わりに使用できます。 プロファイルの名前を変更するには、プロファイルを右クリックして**プロパティ**します。 **全般** ページで、プロファイルの名前を指定します。  
   
 8. **[OK]** をクリックします。  
   
 ## <a name="next-steps"></a>次の手順  
- 受信場所を構成する (**fromTHEM_4010_850**)」の説明に従って、Fabrikam から 850 メッセージを受信する[手順 5: 受信ポートと受信場所構成](../core/step-5-configure-a-receive-port-and-receive-location.md)します。  
+ 受信場所を構成する (**fromTHEM_4010_850**)」の説明に従って、Fabrikam から 850 メッセージを受信する[手順 5。構成を受信ポートと受信場所](../core/step-5-configure-a-receive-port-and-receive-location.md)します。  
   
 ## <a name="see-also"></a>参照  
  [EDI のプロパティの構成](../core/configuring-edi-properties.md)

@@ -22,12 +22,12 @@ caps.latest.revision: 36
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fef8fb531ae88552d888fb2ebea4854151eca11e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a45873711255d6bde4fb6ef5727a2acaea37d1f9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36990691"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395645"
 ---
 # <a name="planning-for-the-bam-portal"></a>BAM ポータルの計画
 このトピックでは、ビジネス アクティビティ監視 (BAM) ポータルの展開を計画するときに考慮する必要がある項目について説明します。  
@@ -65,7 +65,7 @@ ms.locfileid: "36990691"
    **IIS のインストール**します。 BAM ポータルは、32 ビット モードでのみ実行されます。 IIS を 64 ビット コンピューターにインストールする場合は、ASP.NET 2.0 を 32 ビット モードで有効にする必要があります。 これを行うには、IIS マネージャーを開き開く**アプリケーション プール**アプリケーション プール (BAMAppPool) を選択し、クリックして**詳細設定**します。 **[32 ビット アプリケーションの有効化]** で、**[True]** を選択します。 詳細については、BizTalk Server のアップグレード ガイドを参照してください。  
   
 ## <a name="deployment-planning"></a>展開の計画  
- **複数コンピュータ展開**します。 複数コンピューター環境に BizTalk Server を展開するかどうか。 BAM ポータルを警告データベースとは別のサーバー上に構成する場合、マルチサーバー環境におけるクエリ サービスのタイムアウト値を増やす必要があります。 追加の構成については、[BAM ポータル構成のカスタマイズ](../core/customizing-the-bam-portal-configuration.md)を参照してください。  
+ **複数コンピュータ展開**します。 複数コンピューター環境に BizTalk Server を展開するかどうか。 BAM ポータルを警告データベースとは別のサーバー上に構成する場合、マルチサーバー環境におけるクエリ サービスのタイムアウト値を増やす必要があります。 追加の構成については、次を参照してください。 [BAM ポータル構成のカスタマイズ](../core/customizing-the-bam-portal-configuration.md)します。  
   
 - **複数カルチャの展開**します。 複数カルチャ環境に BizTalk Server を展開するかどうか。 BizTalk Server をインストールするときに、ユーザー インターフェイス (UI) がインストールされているバージョンの言語ではし、BAM ポータルはそれを構成するユーザーのカルチャ設定を取得します。 適切なカルチャ設定を反映するように BAM ポータルの web.config ファイルを変更するを参照してください。 [BAM ポータル構成のカスタマイズ](../core/customizing-the-bam-portal-configuration.md)します。  
   
@@ -97,7 +97,7 @@ ms.locfileid: "36990691"
   
 - 追跡プロファイルがポートとスキーマの組み合わせにマップされるので、パススルー パイプラインのメッセージ ペイロード データを追跡しても、何も追跡されません。  
   
-  **ピボット テーブルの名前**: Excel で作成するピボット テーブルの表示名ユーザーを作成する必要があります、BAM ポータルの集計タスクにおけるエクスペリエンスを計画および開発ユーザー、ときにします。  この名前は、ピボットテーブルを右クリックしてショートカット メニューから [オプション] を選択すると、カスタマイズできます。  
+  **ピボット テーブルの名前**:BAM ポータルの集計タスクにおけるエクスペリエンスを計画および開発ユーザー、ときに、Excel で作成するピボット テーブルの表示名のユーザーを作成する必要があります。  この名前は、ピボットテーブルを右クリックしてショートカット メニューから [オプション] を選択すると、カスタマイズできます。  
   
   **日付範囲**します。 使用してアラート クエリおよびインスタンスを作成するときにアクティビティの検索ページに留意いる場合、@@DateFirst SQL クエリ内の値が CultureInfo.CurrentCulture.DateTimeFormat.FirstDayOfWeek 値が一致しませんし、日付の範囲に表示される、検索ページでは、集計の生成に使用される 1 週間境界が一致しません。  
   

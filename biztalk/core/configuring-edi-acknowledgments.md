@@ -1,5 +1,5 @@
 ---
-title: EDI 受信確認の構成 |Microsoft ドキュメント
+title: EDI 受信確認の構成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,21 +12,21 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7bdd58a9565d8670ec0ebf66061b9fcaaa14858c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 12461712dbba99b2cbaa640fbfb05afe8637155d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22232034"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65391318"
 ---
 # <a name="configuring-edi-acknowledgments"></a>EDI 受信確認の構成
 このセクションの各トピックでは、EDI 受信確認の送信および受信を有効にする方法について説明します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [送信側と EDI 受信確認の受信側の構成](../core/configuring-the-sending-and-receiving-of-edi-acknowledgments.md)  
+-   [EDI 受信確認の送信と受信の構成](../core/configuring-the-sending-and-receiving-of-edi-acknowledgments.md)  
   
--   [EDI 受信確認の受信を構成します。](../core/configuring-the-receiving-of-edi-acknowledgments.md)  
+-   [EDI 受信確認の受信の構成](../core/configuring-the-receiving-of-edi-acknowledgments.md)  
   
 ## <a name="see-also"></a>参照  
- [開発および BizTalk Server EDI ソリューションを構成します。](../core/developing-and-configuring-biztalk-server-edi-solutions.md)
+ [BizTalk Server EDI ソリューションの開発と構成](../core/developing-and-configuring-biztalk-server-edi-solutions.md)

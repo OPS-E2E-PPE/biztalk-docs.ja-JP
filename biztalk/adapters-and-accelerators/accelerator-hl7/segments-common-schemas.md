@@ -16,12 +16,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 46e961934b1595217b94aab82b2adae9fd3e456f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5f7bb3bbad38918679c56383720aea27001654d5
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36985483"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65289515"
 ---
 # <a name="segments-common-schemas"></a>セグメントの一般的なスキーマ
 **Segments_\<*バージョン*\>.xsd**ファイルに datatypes_\<*バージョン*\>.xsd が含まれています、HL7 バージョンに関連するすべてのセグメントの定義。 各メッセージ スキーマは segments_\<*バージョン*\>.xsd。 HL7 メッセージ定義の各サブフォルダーの下で、segments_ を含める\<*バージョン*\>.xsd。 SegmentDataElements と DataElements アクセス データベースのテーブルの生成、segments_\<*バージョン*\>.xsd ファイルは、すべてのデータ型の Fields.xsd スキーマ ファイルへのポインターが含まれています。 スキーマ ファイル名の形式です。  

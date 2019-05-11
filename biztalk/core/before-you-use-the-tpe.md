@@ -1,5 +1,5 @@
 ---
-title: TPE を使用する前に |Microsoft ドキュメント
+title: TPE を使用する前に |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,23 +12,23 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 26ec36baa1328045916161bb5363f0019130fc7a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: af8e34c62366823b2640453ad216f0c4cf445196
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22231066"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65358616"
 ---
 # <a name="before-you-use-the-tpe"></a>TPE を使用する前に
-追跡プロファイル エディター (TPE) の使用を始める前に、BizTalk Server について、およびさまざまなプラットフォームとアプリケーションの間の通信を容易にするために TPE がどのように動作するのかについて理解しておくことをお勧めします。  
+追跡プロファイル エディター (TPE) で作業を開始する前に、BizTalk Server とさまざまなプラットフォームとアプリケーション間で通信を容易にするためにそのしくみを理解することをお勧めします。  
   
- ソリューション開発者として、Microsoft BizTalk Server オーケストレーションを使用して組織のビジネス プロセスがどのように実装されるのかについての専門的な知識も必要です。 オーケストレーション デザイナーを使用してオーケストレーションを作成する方法について理解する必要があります。 詳細については[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]オーケストレーションを参照してください[オーケストレーションに関する](../core/about-orchestrations.md)です。  
+ ソリューション開発者としてもする必要がある組織のビジネス プロセスは、方法の詳細については、サポート技術情報の専門的な Microsoft BizTalk Server オーケストレーションを使用して実装します。 オーケストレーション デザイナーを使用してオーケストレーションを作成する方法を理解する必要があります。 詳細については[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]オーケストレーションを参照してください[オーケストレーションについて](../core/about-orchestrations.md)します。  
   
 > [!IMPORTANT]
->  TPE を使用するには、BizTalk Server 製品の完全インストールまたはカスタム インストールの使用と、選択した機能に "開発ツールおよび SDK" または "管理ツール" のオプションが含まれていることの確認が必要です。 詳細については、次を参照してください。 [BizTalk Server 2013 および 2013 R2 のインストールの概要](http://msdn.microsoft.com/library/8041926c-cfc9-4eaf-9c28-a2c6e8015bc5)です。  
+>  TPE を使用するには完全またはカスタムの BizTalk Server 製品のインストールを使用し、好みに"開発ツールおよび SDK"または「管理ツール」オプションが含まれていることを確認ください。 詳細については、次を参照してください。 [BizTalk Server 2013 および 2013 R2 のインストールの概要](http://msdn.microsoft.com/library/8041926c-cfc9-4eaf-9c28-a2c6e8015bc5)します。  
   
 > [!NOTE]
->  TPE では、.Net メッセージの部分は追跡されません。 これらの種類のメッセージのメッセージ スキーマは表示できません。  
+>  TPE では、.NET メッセージの部分は追跡しません。 この種のメッセージのメッセージ スキーマを表示することはできません。  
   
 ## <a name="see-also"></a>参照  
  [追跡プロファイル エディター](../core/tracking-profile-editor.md)   

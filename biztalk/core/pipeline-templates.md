@@ -17,12 +17,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8075611bbf1f64de7b69ee92e1078dc5046c5de4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c843c4817c8d256f1ac06efbffa741cf88ddc0fe
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36984987"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395766"
 ---
 # <a name="pipeline-templates"></a>パイプライン テンプレート
 既定のパイプラインだけでなく[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]2 つのパイプライン テンプレートが含まれています: 受信パイプライン テンプレートと送信パイプライン テンプレート。 Microsoft での BizTalk プロジェクトから[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]、パイプライン テンプレートをプロジェクトに追加するにを使用して、**新しい項目の追加**コマンドを**プロジェクト**メニュー。 各テンプレートにはポリシー ファイルが関連付けられ、このポリシー ファイルによって、パイプラインに含まれるステージと、パイプラインで許可されるパイプライン コンポーネントが決まります。 ポリシー ファイルにおけるステージの順序を変えることはできませんが、パイプライン デザイナーを使って、ステージにおけるコンポーネントの順序を変えることはできます。  
@@ -35,7 +35,7 @@ ms.locfileid: "36984987"
   
 - 各ステージの実行モード  
   
-  パイプライン テンプレートのポリシー ファイルに格納されます *\<BizTalk Server のインストール ディレクトリ\>* \Developer Tools\Pipeline ポリシー ファイルです。 ポリシー ファイルは編集しないでください。 パイプラインに変更を加える場合は、パイプライン テンプレートを開き、パイプライン デザイナーを使って編集します。 パイプライン デザイナーの使用に関する詳細については、[パイプライン デザイナーを使用して](../core/using-pipeline-designer.md)を参照してください。  
+  パイプライン テンプレートのポリシー ファイルに格納されます *\<BizTalk Server のインストール ディレクトリ\>* \Developer Tools\Pipeline ポリシー ファイルです。 ポリシー ファイルは編集しないでください。 パイプラインに変更を加える場合は、パイプライン テンプレートを開き、パイプライン デザイナーを使って編集します。 パイプライン デザイナーの使用に関する詳細については、次を参照してください。[パイプライン デザイナーを使用して](../core/using-pipeline-designer.md)します。  
   
   空のパイプライン テンプレート ファイルが格納されている *\<BizTalk Server のインストール ディレクトリ\>* \Developer Tools\BizTalkProjectItems、されが BTSReceivePipeline.btp および BTSTransmitPipeline.btp という名前. ファイル名の拡張子 .btp は、ファイルが BizTalk Server パイプラインは、パイプライン デザイナーで編集できることを示します。  
   

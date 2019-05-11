@@ -1,5 +1,5 @@
 ---
-title: ビジネス ルール作成ツールを使用してルールを作成 |Microsoft ドキュメント
+title: ビジネス ルール作成ツールを使用してルールの作成 |Microsoft Docs
 ms.custom: ''
 ms.date: 02/01/2018
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 74a4ccb0a4cdb7592dabfeb4dae96530c04cea38
-ms.sourcegitcommit: 78376935362715684b451eb6da9f2b1e8c129c2b
+ms.openlocfilehash: e197557be5d5d5cf00fd7ca420d6886cdbb83166
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2018
-ms.locfileid: "28944106"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65389946"
 ---
 # <a name="create-business-rules-using-the-business-rule-composer"></a>ビジネス ルール作成ツールを使用してビジネス ルールを作成します。
 
 ## <a name="overview"></a>概要
-ビジネス ルール作成ツールを使用すると、1 つ以上のビジネス ルールを持つビジネス ポリシーを作成し、作成したポリシーを展開できます。 また、ファクト (XML、データベース、および .NET) を参照して、ビジネス ルールでファクトを使用することもできます。 さらに、ファクトに基づくビジネス ボキャブラリを作成し、作成したボキャブラリをビジネス ルールで使用できます。  
+ビジネス ルール作成ツールでは、1 つまたは複数のビジネス ルールを持つビジネス ポリシーを作成できます。 および、これらのポリシーを展開することができます。 また、ファクト (XML、データベース、および .NET) を参照し、ビジネス ルールでファクトを使用することもできます。 さらに、ファクトに基づくビジネス ボキャブラリを作成し、ビジネス ルールでボキャブラリを使用できます。  
   
- ここでは、ビジネス ルール作成ツールを使用してビジネス ルールを作成する場合の、タスク固有の情報について説明します。  
+ このセクションは、ビジネス ルール作成ツールを使用して、ビジネス ルールを作成する方法のタスク固有の情報を提供します。  
   
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
   
 -   [ビジネス ルール作成ツールを起動してポリシーを読み込む](../core/how-to-start-the-business-rule-composer-and-load-a-policy.md)  
   
--   [ビジネス ルール作成ツールの Windows](../core/windows-of-the-business-rule-composer.md)  
+-   [ビジネス ルール作成ツールのウィンドウ](../core/windows-of-the-business-rule-composer.md)  
   
 -   [ファクトの選択](../core/selecting-facts.md)  
   
@@ -50,7 +50,7 @@ ms.locfileid: "28944106"
   
 -   [ポリシーのテスト](../core/testing-policies.md)  
   
--   [eploy と展開解除ポリシーとボキャブラリ](../core/how-to-deploy-and-undeploy-policies-and-vocabularies.md)  
+-   [展開解除ポリシーとボキャブラリを eploy および](../core/how-to-deploy-and-undeploy-policies-and-vocabularies.md)  
   
 -   [算術演算子](../core/arithmetic-operators.md)  
   

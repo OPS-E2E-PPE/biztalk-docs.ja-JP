@@ -18,37 +18,37 @@ caps.latest.revision: 23
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d387229964f95ac5ab5bac0b890c28ce6a6db845
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 0f304039d0d6d68d12bfc7605cba69bb01e22ca7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36996675"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395990"
 ---
 # <a name="using-the-mqsagent-com-configuration-wizard"></a>MQSAgent COM + 構成ウィザードの使用
-MQSAgent COM+ 構成ウィザードでは、アダプターの COM+ アプリケーション (MQSeries コンポーネント) 部分である MQSAgent を構成します。 このウィザードでは、コンポーネントのアプリケーション ID、およびロール名とそのロールに含めるユーザーを設定します。 MQSAgent COM + 構成ウィザードを使用して作成される MQSAgent COM + コンポーネントの名前は**MQSAgent2**します。  
+MQSAgent COM + 構成ウィザードは、MQSAgent では、アダプターの COM + アプリケーション (MQSeries コンポーネント) 部分を構成します。 ウィザードでは、コンポーネント、およびロールの名前と、ロールに含まれるユーザーのアプリケーション id を設定します。 MQSAgent COM + 構成ウィザードを使用して作成される MQSAgent COM + コンポーネントの名前は**MQSAgent2**します。  
 
 > [!NOTE]
->  MQSAgent COM+ アプリケーションは、64 ビット版の Windows サーバーでサポートされています。 WOW64 の下で 32 ビット プロセスとして実行されます。 64 ビット版の Windows Server で実行されている [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ベースのコンピューターは、MQSAgent がインストールされているリモートの 32 ビット コンピューターと通信できます。  
+>  MQSAgent COM + アプリケーションは、64 ビットの Windows server でサポートされます。 WOW64 の下で 32 ビット プロセスとして実行されます。 A [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]-64 ビット バージョンの Windows Server で実行されているベースのコンピューターを持つ、MQSAgent がインストールされているリモートの 32 ビット コンピューターと通信できます。  
 > 
 > [!NOTE]
 >  MQSeries エージェントと MQSAgent COM + 構成ウィザードの実行可能ファイル**MQSConfigWiz.exe** BizTalk Server 2009 から BizTalk Server までアップグレードする場合はインストールされません。 セットアップを再実行して、BizTalk Server 2009 から BizTalk Server へのアップグレード後は、選択、**変更**オプション、およびこれらのコンポーネントをインストールする追加のソフトウェア MQSeries エージェントを選択します。  
 
-## <a name="to-set-the-application-identity"></a>アプリケーション ID を設定するには  
+## <a name="to-set-the-application-identity"></a>アプリケーション id を設定するには  
 
 -   使用して、**アプリケーション Id** MQSAgent COM + 構成ウィザードの次のように MQSAgent のアプリケーション id を設定するページ。  
 
     |プロパティ|目的|  
     |--------------|----------------|  
-    |**対話型ユーザー**|アプリケーション ID に現在のログオン アカウントを使用する場合にこのオプションを選択します。|  
-    |**Local Service**|アプリケーション ID にビルトイン サービス アカウントを設定します。|  
-    |**Network Service**|アプリケーション ID にネットワーク アクセス権付きのビルトイン サービス アカウントを設定します。|  
-    |**このユーザー**|アプリケーション ID に、指定したユーザー名を設定します。|  
+    |**対話型ユーザー**|アプリケーション id の現在のログオン アカウントを使用するには、このオプションを選択します。|  
+    |**Local Service**|組み込みのサービス アカウントには、アプリケーション id を設定します。|  
+    |**Network Service**|ネットワーク アクセス権を持つビルトイン アカウントには、アプリケーション id を設定します。|  
+    |**このユーザー**|アプリケーション id を指定したユーザー名に設定します。|  
 
 > [!NOTE]
->  アプリケーション ID に管理権限を持つアカウントを使用することはお勧めしません。 このアカウントには、MQSeries キューに対する必要最低限の権限 (読み取りと書き込みのアクセス許可) を付与する必要があります。  
+>  アプリケーション id の管理アクセス許可を持つアカウントを使用することは推奨されません。 アカウントは必要な最小限の権限が必要: 読み取りおよび書き込み、MQSeries キューに対する権限。  
 
-## <a name="to-name-the-role-and-add-users-to-it"></a>ロールに名前を付けてユーザーを追加するには  
+## <a name="to-name-the-role-and-add-users-to-it"></a>ロールの名前を指定し、ユーザーを追加するには  
 
 - 使用して、**ロールの名前**MQSAgent COM + 構成ウィザードの次のように、役割に、名前とユーザーを割り当てるページ。  
 
@@ -57,13 +57,13 @@ MQSAgent COM+ 構成ウィザードでは、アダプターの COM+ アプリケ
   |------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
   | **ロールの名前** |                                                                 ロールの名前を入力します。                                                                  |
   |    **ユーザー**     |                                                         ロールに属しているユーザーを表示します。                                                          |
-  |     **[追加]**      | ユーザーをロールに追加します。 これらのユーザーは、アダプターを使用する [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] サービス アカウントです。 |
+  |     **[追加]**      | ロールにユーザーを追加します。 これらは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]サービス アダプターを使用するアカウント。 |
 
 > [!NOTE]
->  ロールには、アダプターにアクセスする必要のあるアカウントのみを追加してください。  
+>  アダプターへのアクセスを必要とするロールの唯一のアカウントを追加します。  
 
-## <a name="to-set-the-msdtc-security-configuration-on-the-windows-server-2008-computer-to-no-authentication-required"></a>Windows Server 2008 コンピューター上の MSDTC のセキュリティ構成を [認証を必要としない] に設定するには  
- MQSAgent COM + アプリケーションがインストールされている場合、[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]でコンピューターと、MQSeries アダプター (これは BizTalk Server と共にインストールされます) がインストールされている、[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]または[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]コンピューター、MSDTC セキュリティ構成を[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]または[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]にコンピューターを設定する必要があります**認証を必要としない**します。 MSDTC のセキュリティ構成を [認証を必要としない] に設定するには、次の手順を実行します。  
+## <a name="to-set-the-msdtc-security-configuration-on-the-windows-server-2008-computer-to-no-authentication-required"></a>認証を必要としないを Windows Server 2008 コンピューターで MSDTC のセキュリティ構成を設定するには  
+ MQSAgent COM + アプリケーションがインストールされている場合、[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]でコンピューターと、MQSeries アダプター (これは BizTalk Server と共にインストールされます) がインストールされている、[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]または[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]コンピューター、MSDTC セキュリティ構成を[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]または[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]にコンピューターを設定する必要があります**認証を必要としない**します。 認証を必要としない MSDTC セキュリティ構成を設定する次の手順に従います。  
 
 1.  クリックして**開始**順にクリックします**コントロール パネルの **します。  
 
@@ -84,9 +84,9 @@ MQSAgent COM+ 構成ウィザードでは、アダプターの COM+ アプリケ
 9. 閉じる、**コンポーネント サービス**管理インターフェイスです。  
 
 ## <a name="to-configure-the-mqsagent-runtime-components-to-run-under-an-alternative-set-of-credentials"></a>代替の資格情報のセットを使用して実行するように MQSAgent ランタイム コンポーネントを構成するには  
- MQSAgent COM+ アプリケーションには、管理およびランタイム用のコンポーネントが含まれています。 セキュリティ上の理由でこの機能を異なる COM+ アプリケーションに分割する場合は、MQSAgent COM+ アプリケーションがインストールされているコンピューター上で次の手順を実行してください。  
+ MQSAgent COM + アプリケーションには、管理とランタイムの両方のコンポーネントが含まれています。 セキュリティのための異なる COM + アプリケーションには、この機能を分離する場合は、次の手順に、MQSAgent COM + アプリケーションがインストールされているコンピューターで。  
 
-1.  MQSAgent COM+ コンポーネントに変更を加えられるようにします。  
+1.  MQSAgent COM + コンポーネントの変更を有効にします。  
 
     -   クリックして**開始**順にクリックします**コントロール パネルの **します。  
 
@@ -100,7 +100,7 @@ MQSAgent COM+ 構成ウィザードでは、アダプターの COM+ アプリケ
 
     -   **[OK]** をクリックします。  
 
-2.  MQSAgent ランタイム コンポーネント用の新しい COM+ アプリケーションを作成します。  
+2.  MQSAgent ランタイム コンポーネントの新しい COM + アプリケーションを作成します。  
 
     -   右クリックして**COM + アプリケーション**、 をクリックして**新規**、**アプリケーション**を表示する、 **COM + アプリケーション インストール ウィザード**をクリックします。**次へ**します。  
 
@@ -119,7 +119,7 @@ MQSAgent COM+ 構成ウィザードでは、アダプターの COM+ アプリケ
 
     -   **[完了]** をクリックします。  
 
-3.  ランタイム コンポーネントを、新しい COM+ アプリケーションに移動します。  
+3.  ランタイム コンポーネントを新しい COM + アプリケーションに移動します。  
 
     -   展開、 **MQSAgent2** COM + アプリケーション。  
 

@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10654 |Microsoft Docs'
+title: シングル サインオン:イベント 10654 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6ca59040b340d033ab6c355c0440378f09d87000
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 703462b0d4988a60bc0d6fc6b11629fe3dbe0502
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36974483"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65397649"
 ---
-# <a name="single-sign-on-event-10654"></a>シングル サインオン: イベント 10654
+# <a name="single-sign-on-event-10654"></a>シングル サインオン:イベント 10654
 ## <a name="details"></a>詳細  
 
 |                 |                                                            |
@@ -28,18 +28,18 @@ ms.locfileid: "36974483"
 | 製品バージョン | [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)] |
 |    イベント ID     |                           10654                            |
 |  イベント ソース   |                           ENTSSO                           |
-|    コンポーネント    |                            N\A                             |
+|    コンポーネント    |                            該当なし                             |
 |  シンボル名  |        SSO_ERROR_PS_WINDOWS_CALLBACK_ACCESS_DENIED         |
-|  メッセージ テキスト   |    パスワード同期サーバーへの (Windows の) アクセスは拒否されました。%r     |
+|  メッセージ テキスト   |    パスワード同期サーバー (Windows) 用アクセス denied.%r     |
 
 ## <a name="explanation"></a>説明  
- このエラー イベントは、メッセージが [名前] サーバーに送信されたが、応答がブロックされたことを示します。 原因として、プロトコルが正しくない、サーバーのセキュリティ アクセス許可が不十分など、さまざまな理由が考えられます。  
+ このエラー イベントは、[名前] サーバーにメッセージが送信されましたが、応答がブロックされたことを示します。 さまざまなプロトコルが正しくないやサーバー上の不十分なセキュリティ アクセス許可など、さまざまな理由の可能性があります。  
 
 ## <a name="user-action"></a>ユーザーの操作  
  このエラーを解決するには、次の操作を行います。  
 
 - このメッセージの情報と、イベント ログで関連情報をメモし、マイクロソフト製品サポート サービスにお問い合わせください。  
 
-  詳細については、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ヘルプの次の情報を参照してください:   
+  詳細については、の次のリソースを参照してください。[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプ。  
 
 - [パスワード同期](../core/password-synchronization2.md)

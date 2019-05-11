@@ -12,17 +12,17 @@ caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2c1bc305e45747c4471894cc362ebeeec2ee36a9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c7115d902616856c3b256dcbd22a52611d772143
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37013107"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65368099"
 ---
 # <a name="run-operations-on-tables-and-views-with-large-data-types-using-the-sql-adapter"></a>SQL アダプターを使用して大規模なデータ型を持つテーブルとビューで操作を実行します。
 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]アダプター クライアントの読み取りし、は、大規模なデータ型の列のデータを更新する、varchar (max)、nvarchar (max)、または varbinary (max) を有効にします。 このような列からデータを読み取る、アダプターのクライアントは、選択操作を使用できます。 を挿入またはこのような列にデータを更新するには、は、アダプターは、< column_name > がの型 varchar (max)、nvarchar (max)、または varbinary (max) 列の名前を、< column_name > の設定操作を公開します。  
   
- さらに、SQL Server 2008 でテキスト ドキュメントやイメージなどの非構造化データを格納する varbinay(max) 列があることができます。 このような非構造化データには、FILESTREAM データが呼び出されます。 FILESTREAM データは、ファイル システム上のファイルとして格納することができます。 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]により、クライアントは、varbinary (max) 型の列に FILESTREAM データを入力できます。 FILESTREAM ストレージの詳細については、[FILESTREAM の概要](https://msdn.microsoft.com/library/bb933993(SQL.100).aspx)を参照してください。  
+ さらに、SQL Server 2008 でテキスト ドキュメントやイメージなどの非構造化データを格納する varbinay(max) 列があることができます。 このような非構造化データには、FILESTREAM データが呼び出されます。 FILESTREAM データは、ファイル システム上のファイルとして格納することができます。 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]により、クライアントは、varbinary (max) 型の列に FILESTREAM データを入力できます。 FILESTREAM ストレージの詳細については、次を参照してください。 [FILESTREAM の概要](https://msdn.microsoft.com/library/bb933993(SQL.100).aspx)します。  
   
  このトピックでは実行する必要があります、特定のタスクについては、コンピューター上には、SQL Server および挿入または FILESTREAM データを更新できるアダプター クライアントを実行しているコンピューターを実行しています。 このトピックでは、FILESTREAM データを挿入するセット < column_name > の操作を実行する方法の手順も示します。  
   
@@ -35,19 +35,19 @@ ms.locfileid: "37013107"
   
 - **SQL Server を実行するコンピューター**  
   
-  -   SQL Server インスタンスで FILESTREAM を有効にする必要があります。 詳細については、[ http://go.microsoft.com/fwlink/?LinkId=122486](http://go.microsoft.com/fwlink/?LinkId=122486)を参照してください。  
+  -   SQL Server インスタンスで FILESTREAM を有効にする必要があります。 詳細については、次を参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=122486](http://go.microsoft.com/fwlink/?LinkId=122486)します。  
   
-  -   FILESTREAM が有効なデータベースを作成する必要があります。 詳細については、[ http://go.microsoft.com/fwlink/?LinkId=122487](http://go.microsoft.com/fwlink/?LinkId=122487)を参照してください。  
+  -   FILESTREAM が有効なデータベースを作成する必要があります。 詳細については、次を参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=122487](http://go.microsoft.com/fwlink/?LinkId=122487)します。  
   
-  -   FILESTREAM データを格納するためのテーブルが必要です。 詳細については、[ http://go.microsoft.com/fwlink/?LinkId=122488](http://go.microsoft.com/fwlink/?LinkId=122488)を参照してください。  
+  -   FILESTREAM データを格納するためのテーブルが必要です。 詳細については、次を参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=122488](http://go.microsoft.com/fwlink/?LinkId=122488)します。  
   
-  -   SQL Server データベースをホストするコンピューターでは、MSDTC を構成する必要があります。 MSDTC を構成する方法については、[SQL サーバーとアダプターのクライアントで MSDTC を構成する](../../adapters-and-accelerators/adapter-sql/configure-msdtc-on-sql-server-and-adapter-client.md)を参照してください。  
+  -   SQL Server データベースをホストするコンピューターでは、MSDTC を構成する必要があります。 MSDTC を構成する方法については、次を参照してください。 [SQL サーバーとアダプターのクライアントで MSDTC を構成する](../../adapters-and-accelerators/adapter-sql/configure-msdtc-on-sql-server-and-adapter-client.md)します。  
   
 - **アダプターのクライアントを実行するコンピューター**  
   
   -   インストールされている SQL Client Connectivity SDK が必要です。 SQL クライアント接続 SDK をインストールするには、SQL Server 2008 セットアップを実行し、選択**SQL Client Connectivity SDK**で、**機能の選択**ウィザードのページ。 アダプターは、FILESTREAM 操作を実行するのに SQL クライアント接続 sdk では、インストールされている、sqlncli10.dll を使用します。  
   
-  -   アダプターのクライアントを実行しているコンピューターでは、MSDTC を構成する必要があります。 MSDTC を構成する方法については、[SQL サーバーとアダプターのクライアントで MSDTC を構成する](../../adapters-and-accelerators/adapter-sql/configure-msdtc-on-sql-server-and-adapter-client.md)を参照してください。  
+  -   アダプターのクライアントを実行しているコンピューターでは、MSDTC を構成する必要があります。 MSDTC を構成する方法については、次を参照してください。 [SQL サーバーとアダプターのクライアントで MSDTC を構成する](../../adapters-and-accelerators/adapter-sql/configure-msdtc-on-sql-server-and-adapter-client.md)します。  
   
   これらのタスクを完了すると、設定は完了を挿入または SQL Server 2008 データベース テーブル内の FILESTREAM データを更新します。  
   
@@ -75,7 +75,7 @@ ms.locfileid: "37013107"
    このトピックでは、これらのタスクを実行する手順を説明します。  
   
 ## <a name="sample-based-on-this-topic"></a>このトピックに基づくサンプル  
- サンプル FILESTREAMOperation、このトピックの「に基づいてが付属、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]します。 詳細については、[SQL アダプタのサンプル](../../adapters-and-accelerators/adapter-sql/samples-for-the-sql-adapter.md)を参照してください。  
+ サンプル FILESTREAMOperation、このトピックの「に基づいてが付属、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]します。 詳細については、次を参照してください。 [SQL アダプタのサンプル](../../adapters-and-accelerators/adapter-sql/samples-for-the-sql-adapter.md)します。  
   
 ## <a name="generating-schema"></a>スキーマを生成します。  
  大規模なデータ型の列の値を更新する方法を示すためには、レコードのテーブルの SetDocument 操作用のスキーマを生成します。 BizTalk プロジェクトを作成して使用する必要があります、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]スキーマを生成します。 参照してください[SQL アダプターを使用して Visual Studio での SQL Server 操作のメタデータを取得する](../../adapters-and-accelerators/adapter-sql/get-metadata-for-sql-server-operations-in-visual-studio-using-the-sql-adapter.md)スキーマを生成する方法の詳細について。  
@@ -143,10 +143,10 @@ ms.locfileid: "37013107"
   
  これらのプロパティを指定したら、メッセージの構築図形とポートを接続すると、し、オーケストレーションが完了します。  
   
- BizTalk ソリューションをビルドし、BizTalk Server に展開する必要がありますようになりました。 詳細については、[を実行しているオーケストレーションのビルドと](../../core/building-and-running-orchestrations.md)を参照してください。
+ BizTalk ソリューションをビルドし、BizTalk Server に展開する必要がありますようになりました。 詳細については、次を参照してください。[を実行しているオーケストレーションのビルドと](../../core/building-and-running-orchestrations.md)します。
   
 ## <a name="configuring-the-biztalk-application"></a>BizTalk アプリケーションを構成します。  
- [オーケストレーション] ペインで先ほど作成したオーケストレーションが表示されている BizTalk プロジェクトを配置した後、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソール。 使用する必要があります、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールにアプリケーションを構成します。 チュートリアルについては、[チュートリアル: 基本的な BizTalk アプリケーションの展開](Walkthrough:%20Deploying%20a%20Basic%20BizTalk%20Application.md)を参照してください。
+ [オーケストレーション] ペインで先ほど作成したオーケストレーションが表示されている BizTalk プロジェクトを配置した後、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソール。 使用する必要があります、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールにアプリケーションを構成します。 チュートリアルについては、次を参照してください。[チュートリアル。基本的な BizTalk アプリケーション展開](Walkthrough:%20Deploying%20a%20Basic%20BizTalk%20Application.md)します。
   
  アプリケーションを構成する必要があります。  
   
@@ -158,19 +158,19 @@ ms.locfileid: "37013107"
   
   - ハード ディスクと、対応するファイル ポートを BizTalk オーケストレーションが、SQL Server データベースからの応答を含む応答メッセージをドロップする場所の場所を定義します。  
   
-  - SQL Server データベースにメッセージを送信する物理 Wcf-custom または WCF-SQL 送信ポートを定義します。 送信ポートでアクションを指定することも必要があります。 ポートを作成する方法については、[SQL アダプターを物理ポートのバインドを手動で構成](../../adapters-and-accelerators/adapter-sql/manually-configure-a-physical-port-binding-to-the-sql-adapter.md)を参照してください。
+  - SQL Server データベースにメッセージを送信する物理 Wcf-custom または WCF-SQL 送信ポートを定義します。 送信ポートでアクションを指定することも必要があります。 ポートを作成する方法については、次を参照してください。 [SQL アダプターを物理ポートのバインドを手動で構成](../../adapters-and-accelerators/adapter-sql/manually-configure-a-physical-port-binding-to-the-sql-adapter.md)します。
   
     > [!IMPORTANT]
-    >  トランザクション内では、FILESTREAM データを入力する操作を実行する必要があります。 そのため、必ず、 **UseAmbientTransaction**に設定されているプロパティのバインド**True** Wcf-custom または WCF-SQL 送信ポート。 バインディング プロパティの詳細については、[for SQL Server のアダプターのバインド プロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md)を参照してください。  
+    >  トランザクション内では、FILESTREAM データを入力する操作を実行する必要があります。 そのため、必ず、 **UseAmbientTransaction**に設定されているプロパティのバインド**True** Wcf-custom または WCF-SQL 送信ポート。 バインディング プロパティの詳細については、次を参照してください。 [for SQL Server のアダプターのバインド プロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md)します。  
     > 
     > [!IMPORTANT]
     >  操作を実行するためには、FILESTREAM データを挿入する必要があります常に Windows 認証を使用して WCF カスタム上の SQL Server に接続または WCF-SQL 送信ポート。 そのためで、**資格情報** タブで、ポートのプロパティ ダイアログ ボックスで、**シングル サインオンを使用しないでください**オプション、およびユーザー名とパスワードを空白のままにします。  
     > 
     > [!NOTE]
-    >  使用して、スキーマの生成、[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]ポートとそれらのポートに設定するアクションに関する情報を含むバインド ファイルも作成されます。 このバインド ファイルをインポートすることができます、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソール (発信) の送信ポートを作成したり (着信) 用のポートを受信します。 詳細については、[SQL アダプターを使用するポートのバインド ファイルを使用して物理的なポート バインドを構成する](../../adapters-and-accelerators/adapter-sql/configure-a-physical-port-binding-using-a-port-binding-file-to-sql-adapter.md)を参照してください。
+    >  使用して、スキーマの生成、[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]ポートとそれらのポートに設定するアクションに関する情報を含むバインド ファイルも作成されます。 このバインド ファイルをインポートすることができます、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソール (発信) の送信ポートを作成したり (着信) 用のポートを受信します。 詳細については、次を参照してください。 [SQL アダプターを使用するポートのバインド ファイルを使用して物理的なポート バインドを構成する](../../adapters-and-accelerators/adapter-sql/configure-a-physical-port-binding-using-a-port-binding-file-to-sql-adapter.md)します。
   
 ## <a name="starting-the-application"></a>アプリケーションの起動  
- 実行するための BizTalk アプリケーションを起動する必要があります、 **SetDocument**操作、**レコード**テーブル。 BizTalk アプリケーションを開始する手順については、[オーケストレーションを開始する方法](../../core/how-to-start-an-orchestration.md)を参照してください。
+ 実行するための BizTalk アプリケーションを起動する必要があります、 **SetDocument**操作、**レコード**テーブル。 BizTalk アプリケーションを開始する手順については、次を参照してください。[オーケストレーションを開始する方法](../../core/how-to-start-an-orchestration.md)します。
   
  この段階で、ことを確認します。  
   
@@ -205,7 +205,7 @@ ms.locfileid: "37013107"
  空の応答送信、 **< column_name > が設定**操作。  
   
 ## <a name="best-practices"></a>ベスト プラクティス  
- 展開し、BizTalk プロジェクトの構成後は、バインド ファイルと呼ばれる XML ファイル構成設定をエクスポートできます。 バインド ファイルを生成した、送信ポートなどの項目を作成し、同じオーケストレーション用のポートを受信する必要はありませんように構成設定、ファイルからインポートできます。 バインド ファイルの詳細については、[アダプターのバインドを再利用](../../adapters-and-accelerators/adapter-sql/reuse-sql-adapter-bindings.md)を参照してください。
+ 展開し、BizTalk プロジェクトの構成後は、バインド ファイルと呼ばれる XML ファイル構成設定をエクスポートできます。 バインド ファイルを生成した、送信ポートなどの項目を作成し、同じオーケストレーション用のポートを受信する必要はありませんように構成設定、ファイルからインポートできます。 バインド ファイルの詳細については、次を参照してください。[アダプターのバインドを再利用](../../adapters-and-accelerators/adapter-sql/reuse-sql-adapter-bindings.md)します。
   
 ## <a name="see-also"></a>参照  
 [SQL アダプターを使用して BizTalk アプリケーションを開発する](../../adapters-and-accelerators/adapter-sql/develop-biztalk-applications-using-the-sql-adapter.md)

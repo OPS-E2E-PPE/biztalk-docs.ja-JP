@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10651 |Microsoft Docs'
+title: シングル サインオン:イベント 10651 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fff78608420b9fc3856c29df214b33aa24ba3873
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9b9f3a91e219ada44ace3ec392ef59d0e3eb4548
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37007499"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65397670"
 ---
-# <a name="single-sign-on-event-10651"></a>シングル サインオン: イベント 10651
+# <a name="single-sign-on-event-10651"></a>シングル サインオン:イベント 10651
 ## <a name="details"></a>詳細  
 
 |                 |                                                            |
@@ -28,18 +28,18 @@ ms.locfileid: "37007499"
 | 製品バージョン | [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)] |
 |    イベント ID     |                           10651                            |
 |  イベント ソース   |                           ENTSSO                           |
-|    コンポーネント    |                            N\A                             |
+|    コンポーネント    |                            該当なし                             |
 |  シンボル名  |               SSO_INFO_PASSWORD_SYNC_STARTED               |
-|  メッセージ テキスト   |       パスワード同期サービスが正常に初期化されました。%r        |
+|  メッセージ テキスト   |       パスワード同期サービスが初期化 OK.%r        |
 
 ## <a name="explanation"></a>説明  
  この情報イベントは、パスワード同期サービスが初期化されたことを示します。  
 
 ## <a name="user-action"></a>ユーザーの操作  
 
-- ユーザーの操作は必要ありません。  
+- ユーザー操作は必要ありません。  
 
-  詳細については、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ヘルプの次の情報を参照してください:   
+  詳細については、の次のリソースを参照してください。[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプ。  
 
 - [パスワード同期](../core/password-synchronization2.md)  
 

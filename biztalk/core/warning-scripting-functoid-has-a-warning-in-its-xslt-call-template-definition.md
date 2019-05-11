@@ -1,5 +1,5 @@
 ---
-title: '警告-スクリプト functoid、ターゲット ノードに接続する&#39;{0}&#39;、警告が、その&#39;Xslt 呼び出しテンプレート&#39;定義: &#39;{1}&#39; |Microsoft ドキュメント'
+title: '警告-スクリプト functoid はターゲット ノードに接続する&#39; {0} &#39;、警告が、その&#39;Xslt 呼び出しテンプレート&#39;定義: &#39; {1} &#39; |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1440f378196cd078c7adb31530894bdba4203f7a
-ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
+ms.openlocfilehash: 03486d840e72bb8dbde511e1b2332753295a3eeb
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2018
-ms.locfileid: "22288178"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65393659"
 ---
-# <a name="warning--the-scripting-functoid-that-connects-to-target-node-39039-has-a-warning-in-its-39xslt-call-template39-definition-39139"></a>警告-スクリプト functoid、ターゲット ノードに接続する&#39;{0}&#39;、警告が、その&#39;Xslt 呼び出しテンプレート&#39;定義: &#39;{1}&#39;
+# <a name="warning--the-scripting-functoid-that-connects-to-target-node-39039-has-a-warning-in-its-39xslt-call-template39-definition-39139"></a>警告-スクリプト functoid はターゲット ノードに接続する&#39; {0} &#39;、警告が、その&#39;Xslt 呼び出しテンプレート&#39;定義。&#39;{1}&#39;
 **エラー コード**  
   
  btm1083  

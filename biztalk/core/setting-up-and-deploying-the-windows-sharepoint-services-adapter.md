@@ -1,5 +1,5 @@
 ---
-title: 設定と展開の Windows SharePoint Services アダプター |Microsoft ドキュメント
+title: 設定と展開 Windows SharePoint Services アダプター |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,26 +15,26 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c84e1a6efab2b099214a1c52bf4b962dad78f700
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f821e289c7887b79f640fe363b39e27ae49ea084
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22271122"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65393198"
 ---
-# <a name="setting-up-and-deploying-the-windows-sharepoint-services-adapter"></a>Windows SharePoint Services アダプタの設定と展開
-このセクションのトピックでは、シングルサーバー展開とマルチサーバー展開で Windows SharePoint Services (WSS) アダプタを設定および展開する方法について説明します。  
+# <a name="setting-up-and-deploying-the-windows-sharepoint-services-adapter"></a>設定して、Windows SharePoint Services アダプターを展開します。
+このセクションのトピックでは、設定して、シングル サーバー展開とマルチ サーバー展開の両方で Windows SharePoint Services (WSS) アダプタの展開について説明します。  
   
 > [!WARNING]
->  Windows SharePoint Services アダプターに関する既知の問題については、次を参照してください。[に関する既知の問題、Windows SharePoint Services アダプター](../core/known-issues-with-the-windows-sharepoint-services-adapter.md)です。  
+>  Windows SharePoint Services アダプターに関する既知の問題を参照してください。 [、Windows SharePoint Services アダプターに関する既知の問題](../core/known-issues-with-the-windows-sharepoint-services-adapter.md)します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [シングル サーバー配置](../core/single-server-deployment.md)  
+-   [シングルサーバー展開](../core/single-server-deployment.md)  
   
--   [マルチ サーバー展開](../core/multiserver-deployment.md)  
+-   [マルチサーバー展開](../core/multiserver-deployment.md)  
   
 ## <a name="see-also"></a>参照  
  [Windows SharePoint Services アダプターとは何ですか。](../core/what-is-the-windows-sharepoint-services-adapter.md)   
- [Windows SharePoint Services アダプターを構成します。](../core/configuring-the-windows-sharepoint-services-adapter.md)   
- [Windows SharePoint Services アダプタのチュートリアル](../core/windows-sharepoint-services-adapter-walkthroughs.md)
+ [Windows SharePoint Services アダプターの構成](../core/configuring-the-windows-sharepoint-services-adapter.md)   
+ [Windows SharePoint Services アダプターのチュートリアル](../core/windows-sharepoint-services-adapter-walkthroughs.md)

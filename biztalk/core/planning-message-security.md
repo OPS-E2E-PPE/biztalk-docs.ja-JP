@@ -1,5 +1,5 @@
 ---
-title: メッセージ セキュリティの計画 |Microsoft ドキュメント
+title: メッセージ セキュリティの計画 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,31 +17,31 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5826db8480d378342ee30993f67bbd60e27751d0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 847c53e7e07b4985f5cf2ad1756e3343c335348b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22264290"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395632"
 ---
 # <a name="planning-message-security"></a>メッセージ セキュリティの計画
-企業内のセキュリティ ポリシーに基づいて、次の表に示す項目を検討し、BizTalk Server 環境に実装する必要があるセキュリティのレベルを決定します。 この項目に対する解答によって、メッセージングに必要なセキュリティ機能が決まります。  
+社内のセキュリティ ポリシーに基づいて、BizTalk Server 環境で実装する必要があるセキュリティのレベルを決定する次の表に、質問を考慮することがあります。 これらの質問に対する回答には、メッセージングに必要なセキュリティ機能が決まります。  
   
 |質問|BizTalk Server のセキュリティ機能|  
 |--------------|-------------------------------------|  
-|**メッセージを受信するとき**||  
-|メッセージの送信者をどのように特定するか|BizTalk パイプラインのパーティの解決コンポーネントと、署名証明書または Windows セキュリティ ID (SID) を使用すると、メッセージの送信者を明確に識別できます。 詳細については、次を参照してください。[受信メッセージの認証](../core/inbound-message-authentication.md)です。|  
-|メッセージ送信元パーティが既存かどうか|BizTalk パイプラインのパーティの解決コンポーネントを使用すると、メッセージ送信元パーティがシステム内に既に存在する取引先かどうかを特定できます。 詳細については、次を参照してください。[受信メッセージの認証](../core/inbound-message-authentication.md)です。|  
-|不明なパーティからのメッセージを受信するかどうか|ポートで認証を必須とする機能を使用すると、既知のパーティからのメッセージのみを BizTalk サーバーで処理するように指定できます。 詳細については、次を参照してください。[受信メッセージの認証](../core/inbound-message-authentication.md)です。|  
+|**メッセージの受信時**||  
+|メッセージの送信者の id を確認するにはどうするでしょうか。|BizTalk パイプラインと署名証明書または Windows セキュリティ ID (SID) で、パーティの解決コンポーネントは、メッセージの送信者を明確に識別するために使用できます。 詳細については、次を参照してください。[受信メッセージの認証](../core/inbound-message-authentication.md)します。|  
+|メッセージを送信したパーティをご存知ですか。|BizTalk パイプラインのパーティの解決コンポーネントを使用すると、メッセージを送信したパーティがシステムに既に取引先であるかどうかを確認します。 詳細については、次を参照してください。[受信メッセージの認証](../core/inbound-message-authentication.md)します。|  
+|不明なパーティからメッセージを受信しないようにしますか。|ポートの認証の必要な機能を使用すると、BizTalk server がわかっているパーティからのメッセージのみを処理する必要があります。 詳細については、次を参照してください。[受信メッセージの認証](../core/inbound-message-authentication.md)します。|  
 |**メッセージの送信。**||  
-|送信するメッセージのプライバシーをどのように確保するか|メッセージを暗号化すると、意図したパーティのみがメッセージを読めるようにできます。 詳細については、次を参照してください。[送信のメッセージ保護](../core/outbound-message-protection.md)です。|  
-|送信中に、悪意のあるユーザーによるメッセージの改ざんをどのように防ぐか|デジタル署名を使用すると、メッセージの整合性を確保できます。 詳細については、次を参照してください。[送信のメッセージ保護](../core/outbound-message-protection.md)です。|  
+|送信メッセージのプライバシーを確保するにはどうするでしょうか。|意図したパーティのみがメッセージに読み取ることができることを確認するメッセージを暗号化することができます。 詳細については、次を参照してください。[送信メッセージの保護](../core/outbound-message-protection.md)します。|  
+|転送中に、メッセージの改ざんから悪意のあるユーザーを防ぐためにします。|デジタル署名を使用して、メッセージの整合性を確保することができます。 詳細については、次を参照してください。[送信メッセージの保護](../core/outbound-message-protection.md)します。|  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [メッセージを送受信するためのセキュリティ](../core/security-for-sending-and-receiving-messages.md)  
+-   [メッセージを送受信する際のセキュリティ](../core/security-for-sending-and-receiving-messages.md)  
   
--   [暗号化と証明書の署名](../core/encryption-and-signing-certificates.md)  
+-   [暗号化証明書および署名証明書](../core/encryption-and-signing-certificates.md)  
   
 -   [メッセージの送信者の認証](../core/authenticating-the-sender-of-a-message.md)  
   

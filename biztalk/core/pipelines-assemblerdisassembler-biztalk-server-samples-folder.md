@@ -1,5 +1,5 @@
 ---
-title: パイプライン AssemblerDisassembler (BizTalk Server Samples フォルダ) |Microsoft ドキュメント
+title: Pipelines-assemblerdisassembler (BizTalk Server Samples フォルダ) |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,20 +15,20 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 12b657266e36adb9bfb179c1ef8af22c62530064
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9e304feba4dc6087c3c696e0dbf6631727f1d371
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22263818"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395777"
 ---
-# <a name="pipelines-assemblerdisassembler-biztalk-server-samples-folder"></a>パイプライン AssemblerDisassembler (BizTalk Server Samples フォルダ)
-Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のソフトウェア開発キット (SDK) には、3 つのアセンブラ/逆アセンブラ パイプライン サンプルが付属しています。 ここでは、各アセンブラ/逆アセンブラ サンプルの機能、サンプルを構築して実行する手順、および予期される結果について詳細に説明します。  
+# <a name="pipelines-assemblerdisassembler-biztalk-server-samples-folder"></a>Pipelines-assemblerdisassembler (BizTalk Server Samples フォルダー)
+Microsoft[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ソフトウェア開発キット (SDK) の 3 つのアセンブラ/逆アセンブラ パイプライン サンプルが含まれています。 ここでは、ことについて、各アセンブラ/逆アセンブラ サンプルの説明を構築して、サンプルでは、および予想される結果の実行手順については、機能に関する詳細な情報を示します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [FlatFileReceive (BizTalk Server サンプル)](../core/flatfilereceive-biztalk-server-sample.md)です。 BizTalk Server パイプラインを使用して、区切りフラット ファイル メッセージを同等の XML メッセージに変換する方法を示します。  
+-   [FlatFileReceive (BizTalk Server サンプル)](../core/flatfilereceive-biztalk-server-sample.md)します。 BizTalk Server パイプラインを使用して同等の XML メッセージに区切られたフラット ファイル メッセージを処理する方法を示します。  
   
--   [EnvelopeProcessing (BizTalk Server サンプル)](../core/envelopeprocessing-biztalk-server-sample.md)です。 BizTalk Server パイプラインを使用して、フラット ファイル メッセージをエンベロープ付きの XML メッセージに変換する方法を示します。  
+-   [EnvelopeProcessing (BizTalk Server サンプル)](../core/envelopeprocessing-biztalk-server-sample.md)します。 BizTalk Server パイプラインを使用してエンベロープを XML メッセージをフラット ファイル メッセージに変換する方法を示します。  
   
--   [FlatFileSend (BizTalk Server サンプル)](../core/flatfilesend-biztalk-server-sample.md)です。 BizTalk Server パイプラインを使用して、XML メッセージを同等の位置指定フラット ファイル メッセージに変換する方法を示します。
+-   [FlatFileSend (BizTalk Server サンプル)](../core/flatfilesend-biztalk-server-sample.md)します。 BizTalk Server パイプラインを使用して同等の位置指定フラット ファイル メッセージに XML メッセージを変換する方法を示します。

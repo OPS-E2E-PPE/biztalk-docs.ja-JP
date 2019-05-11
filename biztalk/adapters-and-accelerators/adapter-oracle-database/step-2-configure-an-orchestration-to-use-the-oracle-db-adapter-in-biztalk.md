@@ -1,5 +1,5 @@
 ---
-title: '手順 2: Oracle データベース アダプターを使用する BizTalk Server 管理コンソールで、オーケストレーションの構成 |Microsoft Docs'
+title: 手順 2:Oracle データベース アダプターを使用する BizTalk Server 管理コンソールで、オーケストレーションの構成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e0a8b8035b27babeacd6e5ade8c2cc40c8af2d75
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 113d1b90f02961fd8ecdf5fd7ecc894e664b3796
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37007867"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65375997"
 ---
-# <a name="step-2-configure-the-orchestration-in-biztalk-server-administration-console-to-use-the-oracle-database-adapter"></a>手順 2: Oracle データベース アダプターを使用する BizTalk Server 管理コンソールでオーケストレーションを構成します。
+# <a name="step-2-configure-the-orchestration-in-biztalk-server-administration-console-to-use-the-oracle-database-adapter"></a>手順 2:Oracle データベース アダプターを使用する BizTalk Server 管理コンソールでオーケストレーションを構成します。
 ![ステップ 2/3](../../adapters-and-accelerators/adapter-oracle-database/media/step-2of3.gif "Step_2of3")  
   
  **所要時間:** 10 分  
@@ -36,7 +36,7 @@ ms.locfileid: "37007867"
   
 ### <a name="to-create-a-wcf-custom-port"></a>WCF カスタム ポートを作成するには  
   
-1. 使用して Oracle データベースで操作のスキーマを生成すると[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]、バインド ファイルが BizTalk プロジェクトにも追加します。 このバインド ファイルをインポートすることに、BizTalk WCF カスタムを作成するアプリケーション送信-受信ポート。 バインド ファイルのインポート方法の詳細については、[バインドのインポート](http://msdn.microsoft.com/library/4cac9267-8bd8-453b-96b4-5c038912463f)を参照してください。  
+1. 使用して Oracle データベースで操作のスキーマを生成すると[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]、バインド ファイルが BizTalk プロジェクトにも追加します。 このバインド ファイルをインポートすることに、BizTalk WCF カスタムを作成するアプリケーション送信-受信ポート。 バインド ファイルのインポート方法の詳細については、次を参照してください。[バインドのインポート](http://msdn.microsoft.com/library/4cac9267-8bd8-453b-96b4-5c038912463f)します。  
   
 2. 送信ポートが作成されたバインド ファイルをインポートした後、**送信ポート**BizTalk Server 管理コンソール内のフォルダー。  
   
@@ -79,7 +79,7 @@ ms.locfileid: "37007867"
       アプリケーションを構成する方法の詳細についてを参照してください「する方法をアプリケーションの構成」 [ http://go.microsoft.com/fwlink/?LinkID=196961](http://go.microsoft.com/fwlink/?LinkID=196961)します。  
   
 ## <a name="next-steps"></a>次の手順  
- WCF ベースを使用して Oracle データベースにメッセージを送信する BizTalk プロジェクトに vPrev BizTalk プロジェクトの移行が完了したので[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]します。 」の説明に従って、Oracle データベースに対して、挿入操作を実行する要求メッセージを送信することによって移行済みの BizTalk アプリケーションを今すぐテストする必要があります[手順 3: Oracle データベース アダプターに移行したアプリケーションをテスト](../../adapters-and-accelerators/adapter-oracle-database/step-3-test-the-migrated-application-to-oracle-database-adapter.md)します。  
+ WCF ベースを使用して Oracle データベースにメッセージを送信する BizTalk プロジェクトに vPrev BizTalk プロジェクトの移行が完了したので[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]します。 」の説明に従って、Oracle データベースに対して、挿入操作を実行する要求メッセージを送信することによって移行済みの BizTalk アプリケーションを今すぐテストする必要があります[手順 3。Oracle データベース アダプターに移行したアプリケーションをテスト](../../adapters-and-accelerators/adapter-oracle-database/step-3-test-the-migrated-application-to-oracle-database-adapter.md)します。  
   
 ## <a name="see-also"></a>参照  
- [チュートリアル: BizTalk プロジェクトを移行します。](https://msdn.microsoft.com/library/dd788186(v=bts.80).aspx)
+ [チュートリアル: BizTalk プロジェクトの移行](https://msdn.microsoft.com/library/dd788186(v=bts.80).aspx)

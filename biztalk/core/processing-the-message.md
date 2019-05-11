@@ -26,12 +26,12 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 49329e23127f051a593596955f808cc879dd76f6
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 93e24c865cf233703a028753ab0d7a16d0819340
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36987787"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396967"
 ---
 # <a name="processing-the-message"></a>メッセージの処理
 これまで説明したコンポーネントはすべて、メッセージが BizTalk Server を通過する過程で行われる処理にそれぞれの役割を果たしています。 このセクションでは、これらのコンポーネントが機能的にどのように連携するかについて説明します。最初にメッセージの受信について説明します。 受信ポートの作成と受信プロセスにおけるメッセージ フローを、次の図に示します。  

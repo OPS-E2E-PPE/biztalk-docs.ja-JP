@@ -1,5 +1,5 @@
 ---
-title: SharePoint での SAP アダプターの使用 |Microsoft ドキュメント
+title: SharePoint で SAP アダプターを使用する |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -18,27 +18,27 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2acef0aa2d7c0325fa77206f7213da9e439ce11b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 35222ed38a30b2f185c9554351540d136d5ac53f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22217554"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65372050"
 ---
-# <a name="use-the-sap-adapter-with-sharepoint"></a>SharePoint での SAP アダプターを使用します。
-ほとんどの基幹業務 (LOB) アプリケーションは、必要な特定の分野専門知識と比較的少数のユーザーがアクセスできる専用のインターフェイスを持っています。 ただし、関連する情報のワーカーが必要、すべてのレベル、組織の領域の専門家であるために、インフォメーション ワーカーが、情報を使用する上で Microsoft Excel などの他の一般的なアプリケーションに必要なデータをエクスポートします。  
+# <a name="use-the-sap-adapter-with-sharepoint"></a>SharePoint で SAP アダプターを使用します。
+ほとんどの基幹業務 (LOB) アプリケーションでは、必要な分野の専門知識を持つ比較的少数のユーザーがアクセスできる専用のインターフェイスがあります。 ただし、関連する情報のワーカーが必要、すべてのレベル、組織のため、分野の専門家をインフォメーション ワーカーが情報を使用する上で、Microsoft Excel などの他の一般的なアプリケーションに必要なデータをエクスポートする必要があります。  
   
- Microsoft Office クライアント アプリケーションと機能の新しいコレクションは、インフォメーション ワーカーが、Microsoft Office の最も一般的なインターフェイスにバックエンド ビジネス データを戻すことによってこの時間差を結びます。 Microsoft Office クライアント アプリケーションは、インフォメーション ワーカーに使い慣れたインターフェイスを通じて、LOB アプリケーションからデータをシームレスに提示します。 1 つの例は、Microsoft Office SharePoint Server でビジネス データ カタログです。  
+ Microsoft Office クライアント アプリケーションと機能の新しいコレクションは、Microsoft Office のインフォメーション ワーカー用、最も一般的なインターフェイスをバックエンドのビジネス データを導入することで、このギャップを橋渡しします。 Microsoft Office クライアント アプリケーションは、インフォメーション ワーカーに使い慣れたインターフェイスを通じて、LOB アプリケーションからデータをシームレスに表示します。 1 つの例では、Microsoft Office SharePoint Server のビジネス データ カタログです。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [SAP アダプターとビジネス データ カタログについて](../../adapters-and-accelerators/adapter-sap/about-business-data-catalog-with-the-sap-adapter.md)  
+-   [SAP アダプターを使用したビジネス データ カタログについて](../../adapters-and-accelerators/adapter-sap/about-business-data-catalog-with-the-sap-adapter.md)  
   
 -   [SAP アダプターを使用して、ビジネス データ カタログと Microsoft Office SharePoint Server と SAP システムを統合するには](https://msdn.microsoft.com/library/dd450991(v=bts.10).aspx)  
   
--   [Microsoft Office SharePoint Server と SAP アダプターを使用するときの考慮事項](https://msdn.microsoft.com/library/dd787912.aspx)  
+-   [Microsoft Office SharePoint Server と SAP アダプターを使用する場合の考慮事項](https://msdn.microsoft.com/library/dd787912.aspx)  
   
 -   [カスタム Web パーツの使用方法](https://msdn.microsoft.com/library/dd788451.aspx)  
   
 ## <a name="see-also"></a>参照  
-[SAP アプリケーションを開発します。](../../adapters-and-accelerators/adapter-sap/develop-your-sap-applications.md)
+[SAP アプリケーションを開発する](../../adapters-and-accelerators/adapter-sap/develop-your-sap-applications.md)

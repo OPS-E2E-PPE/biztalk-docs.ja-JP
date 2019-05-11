@@ -1,5 +1,5 @@
 ---
-title: ワークフローを変更する |Microsoft ドキュメント
+title: ワークフローの変更 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,12 +16,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3fbd3c28dc6499cb83fcff672673f729ac970ea4
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: e413a6f476fe23ba82655412cc8d1e3ef51ae758
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25961009"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65530270"
 ---
 # <a name="modifying-a-workflow"></a>ワークフローを変更します。
-参照してください\<ドライブ:\>\Program Files\Microsoft SWIFT\SDK\Samples\ CustomMrsrModel\ ProfileWebClientUserManual.doc で BizTalk Accelerator の詳細についてはします。
+参照してください\<ドライブ:\>\Program Files\Microsoft SWIFT\SDK\Samples\ CustomMrsrModel\ ProfileWebClientUserManual.doc で BizTalk アクセラレータの詳細についてはします。

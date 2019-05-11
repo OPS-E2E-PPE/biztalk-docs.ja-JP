@@ -16,12 +16,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 184b4a7dde452902f404a5d6ed5dca5ee611e1e0
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: aee984e3dab85cf9a1efb7a28864c85c9abac918
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37008915"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395795"
 ---
 # <a name="persistence-in-orchestrations"></a>オーケストレーションでの永続化
 オーケストレーション エンジンは、さまざまな永続化ポイントでのオーケストレーション インスタンスの全体の状態を保存して、オーケストレーション インスタンスを復元できるようにします。 この状態には、メッセージや変数だけでなく、オーケストレーションで使用できるすべての .NET ベースのコンポーネントが含まれます。 エンジンは、次の永続化ポイントでの状態を保存します。  
@@ -56,7 +56,7 @@ ms.locfileid: "37008915"
   
   シリアル化中に**X**、ランタイムは、次の情報を保持: (a)、実際の型**Tr**オブジェクトの**X**を参照している (b) **OuterXml**ドキュメントの文字列。  
   
-  逆シリアル化時に**X**、ランタイムのインスタンスが作成されます**Tr** (すべてのパラメーターを受け取らないコンストラクターを想定しています) とが呼び出されます**LoadXml**を提供する、保存されているインスタンス**OuterXml します。X**の新しく作成されたインスタンスを指すように設定し、されます**Tr**します。  
+  逆シリアル化時に**X**、ランタイムのインスタンスが作成されます**Tr** (すべてのパラメーターを受け取らないコンス トラクターを想定しています) とが呼び出されます**LoadXml**を提供する、保存されているインスタンス**OuterXml します。X**の新しく作成されたインスタンスを指すように設定し、されます**Tr**します。  
   
 ## <a name="see-also"></a>参照  
  [トランザクション](../core/transactions.md)

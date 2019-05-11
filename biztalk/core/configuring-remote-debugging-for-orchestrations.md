@@ -18,15 +18,15 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6f5d28c13cb9da4454efcad1a43a4048c8881ea8
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 96fa7775bc6e67e0c56e2b93e9ca334ac361794c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36967291"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65390910"
 ---
 # <a name="configuring-remote-debugging-for-orchestrations"></a>オーケストレーションのリモート デバッグの構成
-クライアントとサーバーの間のリモート デバッグは詳細に構成することができます。 クライアントの構成は、Microsoft.XLANGs.BizTalk.Client.dll.config で指定されます。サーバーの構成は、BTSNTSvc.exe.config で指定されます。それぞれの既定の構成の一覧を次に示します。  
+クライアントとサーバー間のリモート デバッグを完全に構成することができます。 クライアントの構成は、Microsoft.XLANGs.BizTalk.Client.dll.config で指定されます。サーバーの構成は、BTSNTSvc.exe.config で指定されます。それぞれの既定の構成の一覧を次に示します。  
   
 ## <a name="client-microsoftxlangsbiztalkclientdllconfig"></a>クライアント (Microsoft.XLANGs.BizTalk.Client.dll.config)  
   
@@ -57,7 +57,7 @@ ms.locfileid: "36967291"
 </configuration>  
 ```  
   
-## <a name="serverbtsntsvcexeconfig"></a>サーバー (BTSNTSvc.exe.config)  
+## <a name="serverbtsntsvcexeconfig"></a>Server(BTSNTSvc.exe.config)  
   
 ```  
 <?xml version="1.0" ?>  
@@ -92,31 +92,31 @@ ms.locfileid: "36967291"
 ```  
   
 ## <a name="configurable-parameters"></a>構成可能なパラメーター  
- 既定値でも最大限のセキュリティ構成が保証されますが、 ユーザーがこれらの既定値を変更することが可能です。これらのファイルはプログラム ファイル フォルダーにあるため、ACL で制御されます。  
+ 既定値により、最大限のセキュリティ構成。 ただしこれらの既定値を変更するユーザーに任されており、プログラム ファイル フォルダーであるために、これらのファイルは acl を設定します。  
   
- 要素\<プロバイダー/> は省略可能とカスタム シンクを使用して相互に認証が、チャネルは指定されていない場合があるとします。 しかし、このオプションを無効にすると、チャネルが開放されるため危険です。 セキュリティ上の攻撃の心配がいらない場合、パフォーマンスを高めるにはこのオプションを無効にします。  
+ 要素\<プロバイダー/> は省略可能とカスタム シンクを使用して相互に認証が、チャネルは指定されていない場合があるとします。 ただし、これは、チャネルが開放されるとオフにする危険なオプションです。 これは、パフォーマンスを向上させるときにセキュリティ攻撃に問題がないを実行できます。  
   
- チャネル要素には、プロパティ rejectRemoteRequests = true を指定することができます。このオプションを指定すると、ローカルな呼び出しだけが可能となり、リモート要求が拒否されます。  
+ Channel 要素は、プロパティ rejectRemoteRequests を持つことができます = true をローカルな呼び出しだけを有効にしてリモート要求が拒否されます。  
   
  内の securityPackage 属性、 \<serverProviders/> 要素には次の値を持つことができます。  
   
-- negotiate  
+- ネゴシエート  
   
-- ntlm  
+- Ntlm  
   
 - Kerberos  
   
   AuthenticationLevel 属性は、 \<serverProviders/> 要素には次の値を持つことができます。  
   
-- packetPrivacy - メッセージの暗号化と復号化が行われます。  
+- packetPrivacy - メッセージれます暗号化/復号化  
   
-- packetIntegrity – メッセージの署名と検証が行われます。  
+- packetIntegrity – メッセージが署名と検証が  
   
-- call - メッセージはそのまま送信されます。  
+- 呼び出しのまま、メッセージが送信されます。  
   
   Ref 属性は、\<チャネル/> 要素は tcp または http に変更することができます。 属性の名前とポート、\<チャネル/> 要素は明示的な値にも変更できます。  
   
-  詳細については、『.NET Framework 開発者ガイド』の「チャネルとフォーマッタの構成プロパティ」を参照してください。  
+  詳細については、.NET Framework 開発者ガイド (チャネルとフォーマッタの構成プロパティ) を参照してください。  
   
 ## <a name="see-also"></a>参照  
  [オーケストレーションのデバッグ](../core/debugging-orchestrations.md)

@@ -1,5 +1,5 @@
 ---
-title: '手順 2: 更新し、チュートリアル ソリューションのデプロイ |Microsoft Docs'
+title: 手順 2:更新し、チュートリアルのソリューションの展開 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 27
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 714b76ac87b183daa30740268e1a306217d5d13d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 89dff2034e747374c5fdb08763e5d5fbd9d604a7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36998883"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65392705"
 ---
-# <a name="step-2-update-and-deploy-the-tutorial-solution"></a>手順 2: 更新し、チュートリアル ソリューションのデプロイ
+# <a name="step-2-update-and-deploy-the-tutorial-solution"></a>手順 2:更新し、チュートリアルのソリューションの展開
 ![手順 2 の 9](../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-2of9.gif "Step_2of9")  
   
  このステップでは、このチュートリアルのために用意されたソリューションを更新し、チュートリアルのアセンブリをビルドして展開します。 このチュートリアルで使用できるように、必要なスキーマ、カスタム送信パイプライン、およびマップは既に作成されています。 マップは、850 の EDI データを注文システムで必要な形式に変換するために使用します。  
@@ -37,7 +37,7 @@ ms.locfileid: "36998883"
 2. Visual Studio で、次のようにクリックします。**ファイル**、 をポイント**オープン**、 をクリックし、**プロジェクト/ソリューション**します。 移動[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]sdk \edi Interface Developer Tutorial 選択**EDI Inbound Processing.sln**、順にクリックします**オープン**します。  
   
    > [!NOTE]
-   >  このトピックは、EDI スキーマ、パイプライン、およびオーケストレーションを含む BizTalk EDI アプリケーションに別のアプリケーションから参照を既に追加していることを前提としています。 そうでない場合は、[、BizTalk Server EDI アプリケーションへの参照を追加する方法](http://msdn.microsoft.com/library/7af066fb-372f-4709-b566-c8d6b4a9d782)を参照してください。  
+   >  このトピックは、EDI スキーマ、パイプライン、およびオーケストレーションを含む BizTalk EDI アプリケーションに別のアプリケーションから参照を既に追加していることを前提としています。 そうでない場合は、次を参照してください。 [、BizTalk Server EDI アプリケーションへの参照を追加する方法](http://msdn.microsoft.com/library/7af066fb-372f-4709-b566-c8d6b4a9d782)します。  
   
 3. 右クリックし、 **Inbound_EDI**ソリューション エクスプ ローラーでプロジェクトを選び**プロパティ**します。  
   
@@ -63,7 +63,7 @@ ms.locfileid: "36998883"
 5. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、展開**BizTalk Server 管理**、 **BizTalk グループ**、**アプリケーション**、 \< **すべての成果物**\>選び**リソース**します。 いることを確認、 **Inbound_EDI**アセンブリが表示されます。  
   
 ## <a name="next-steps"></a>次の手順  
- 組織のパーティとビジネス プロファイルを構成する (**OrderSystem**)」の説明に従って、[手順 3: 組織のパーティとビジネス プロファイルを構成します。](../core/step-3-configure-a-party-and-business-profile-for-your-organization1.md)  
+ 組織のパーティとビジネス プロファイルを構成する (**OrderSystem**)」の説明に従って、[手順 3。組織のパーティとビジネス プロファイルを構成します。](../core/step-3-configure-a-party-and-business-profile-for-your-organization1.md)  
   
 ## <a name="see-also"></a>参照  
- [手順 1: EDI インターフェイス開発チュートリアルのための準備](../core/step-1-prepare-for-the-edi-interface-developer-tutorial.md)
+ [ステップ 1: EDI インターフェイス開発チュートリアルを準備します。](../core/step-1-prepare-for-the-edi-interface-developer-tutorial.md)

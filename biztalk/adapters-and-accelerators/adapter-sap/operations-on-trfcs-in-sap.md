@@ -26,12 +26,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b99822d838f0681cf9a6ce336ed1a23f4088c659
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a122f1c1f432a6af9361ee86e7f832627ca638dc
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36996139"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373153"
 ---
 # <a name="operations-on-trfcs-in-sap"></a>SAP の Trfc に対する操作
 トランザクションの Rfc (Trfc) は、Rfc (LUW) の作業の論理ユニットの一部として呼び出されます。 SAP システムで、LUW にすべてのビジネスやプログラミング タスクを完了するために必要な手順が含まれます。 TRFC を表します。 RFC を呼び出す方法一意の SAP アーティファクトではありません。  
@@ -60,7 +60,7 @@ ms.locfileid: "36996139"
   
 - TRFC クライアントと tRFC サーバー シナリオの両方でアダプターからの tRFC のため実際の SAP TID を取得します。 SAP ユーティリティ メソッドを呼び出し、ConvertGuidToTid これを行います。  
   
-  これらの操作の詳細については、[特別な操作](../../adapters-and-accelerators/adapter-sap/special-operations.md)を参照してください。 メッセージの構造と Trfc のアダプターを使用する SOAP アクションの詳細については、[tRFC 操作のメッセージ スキーマ](../../adapters-and-accelerators/adapter-sap/message-schemas-for-trfc-operations.md)を参照してください。  
+  これらの操作の詳細については、次を参照してください。[特別な操作](../../adapters-and-accelerators/adapter-sap/special-operations.md)します。 メッセージの構造と Trfc のアダプターを使用する SOAP アクションの詳細については、次を参照してください。 [tRFC 操作のメッセージ スキーマ](../../adapters-and-accelerators/adapter-sap/message-schemas-for-trfc-operations.md)します。  
   
 ## <a name="invoking-transactional-rfcs-in-an-sap-system"></a>SAP システムでトランザクションの Rfc を呼び出す  
  1 つの LUW; 内の 1 つまたは複数の RFC 呼び出しを実行する、通常、Trfc を使用します。ただし、SAP の RFC SDK での制限により、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] LUW あたり 1 つの tRFC のみをサポートしています。 このため、アダプターは、各 tRFC の LUW (SAP TID) を作成します。 このようなクライアントの場合は、SAP は、RFC の「1 回限り」の実行を保証するためのメカニズムとして、LUW を定義し、コミットとロールバック ベース トランザクションとは限りません。  
@@ -143,14 +143,14 @@ ms.locfileid: "36996139"
 >  TRFC サーバー操作中に TID データベースに接続しようとしてエラーが発生する場合、エラー コードがあることを示す SAP からの着信呼び出しによって処理されませんでした、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] SAP に返されます。  
   
 ### <a name="receiving-idocs-as-a-trfc-server"></a>TRFC サーバーとして Idoc を受信します。  
- 使用する、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] RFC サーバーまたは SAP システムから Idoc を受信する tRFC サーバーのいずれかとして。 いずれの場合も、設定する必要があります、 **ReceiveIdocFormat**アダプターが、アプリケーションに IDOC データを出力する形式を指定するプロパティをバインドします。 アダプターを使用した Idoc を受信する詳細については、[sap Idoc に対する操作](../../adapters-and-accelerators/adapter-sap/operations-on-idocs-in-sap.md)を参照してください。 詳細については、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]バインドのプロパティを参照してください[mySAP Business Suite のバインドのプロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md)します。  
+ 使用する、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] RFC サーバーまたは SAP システムから Idoc を受信する tRFC サーバーのいずれかとして。 いずれの場合も、設定する必要があります、 **ReceiveIdocFormat**アダプターが、アプリケーションに IDOC データを出力する形式を指定するプロパティをバインドします。 アダプターを使用した Idoc を受信する詳細については、次を参照してください。 [sap Idoc に対する操作](../../adapters-and-accelerators/adapter-sap/operations-on-idocs-in-sap.md)します。 詳細については、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]バインドのプロパティを参照してください[mySAP Business Suite のバインドのプロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md)します。  
   
 ## <a name="special-trfc-operations"></a>特別な tRFC 操作  
  [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] SAP システムで特定の特別な tRFC 操作も実行できます。 このような 1 つの操作では、RfcConfirmTransID です。  
   
 - **RfcConfirmTransID します。** この操作を呼び出す、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]を SAP サーバーに tRFC の呼び出しを確認します。 RfcConfirmTransID は、アダプターを使用して、tRFC として SAP サーバーに Idoc を送信するシナリオで必要な可能性があります。 操作が 利用可能な**TRFC**ノードを使用する場合、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]と[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]します。  
   
-  メッセージの構造と RfcConfirmTransID 操作の SOAP アクションの詳細については、[tRFC 操作のメッセージ スキーマ](../../adapters-and-accelerators/adapter-sap/message-schemas-for-trfc-operations.md)を参照してください。  
+  メッセージの構造と RfcConfirmTransID 操作の SOAP アクションの詳細については、次を参照してください。 [tRFC 操作のメッセージ スキーマ](../../adapters-and-accelerators/adapter-sap/message-schemas-for-trfc-operations.md)します。  
   
 ## <a name="see-also"></a>参照  
  [アダプターを使用して SAP システムへの接続します。](../../adapters-and-accelerators/adapter-sap/connect-to-an-sap-system-using-the-adapter.md)

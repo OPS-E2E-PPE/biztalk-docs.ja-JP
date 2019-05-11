@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 08f74b441ca42b1a0854cd5aff098c221281e579
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 0c84faae692cf514b7a9049e2c1ae4165ebce26b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36988515"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396247"
 ---
 # <a name="managing-biztalk-server"></a>BizTalk Server の管理
 このセクションでは、運用環境で BizTalk Server システムを管理するためのガイダンスを提供します。 一般に次の手順では、デプロイ後に BizTalk アプリケーションを使用するとします。 これらの手順では、ベスト プラクティスと、次のルーチン処理の概念について説明します。  

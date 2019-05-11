@@ -1,5 +1,5 @@
 ---
-title: ポリシー テストのトレース出力 |Microsoft ドキュメント
+title: ポリシー テストのトレース出力 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,12 +15,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 722836d7ddf768b2d6cde86e2fcd8bdb9339185a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a014e316087933052acadbc85275f6570f84026d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22264186"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65394932"
 ---
 # <a name="policy-test-trace-output"></a>ポリシー テストのトレース出力
 ポリシーをテストする際、ポリシー テスターは、バージョン情報ウィンドウに出力を表示します。 このセクションでは、トレースに含まれるアクティビティについて説明します。  
@@ -30,6 +30,6 @@ ms.locfileid: "22264186"
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [ビジネス ルールにおけるポリシー テストのトレース出力の情報](../core/policy-test-trace-output-information-for-business-rules.md)  
+-   [ビジネス ルールにおけるポリシー テストのトレース出力情報](../core/policy-test-trace-output-information-for-business-rules.md)  
   
 -   [ポリシー テストのトレース出力例](../core/policy-test-trace-output-examples.md)

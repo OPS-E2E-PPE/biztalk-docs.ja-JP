@@ -19,12 +19,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 61daf6e28b03174af2b32a61c758a39b4cd16ff9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ba31b6d1dd4a1951289c74029c745c362f3149b8
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36980603"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65529970"
 ---
 # <a name="security-and-privacy-standards"></a>セキュリティおよびプライバシーに関する基準
 金融サービス アプリケーションとの統合ソリューションは、Microsoft を使用して開発された[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]ネイティブによって一般にセキュリティ保護された[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]セキュリティ機能。 [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] など、事実上インターネット暗号化メッセージ規格とトランスポート プロトコル、署名証明書、アグレッシブなセキュリティ メカニズムを使用して[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]認証、およびエンタープライズ シングル サインオンを保護する[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]アプリケーション、データ、およびランタイム。  

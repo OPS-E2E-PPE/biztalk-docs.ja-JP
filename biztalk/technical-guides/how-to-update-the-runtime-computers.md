@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0fff5c5ec4c965b9dbdaaf5d876ca0943a32be96
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d67497e3c462194e2306cf7ada0764943975cbb0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36993299"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395880"
 ---
 # <a name="how-to-update-the-runtime-computers"></a>ランタイム コンピューターを更新する方法
 送信先システム[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ランタイム コンピューターで構成されて、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]運用環境で実行されている運用環境の BizTalk グループの一部として構成します。 各設定を更新する必要があります、ディザスター リカバリー環境で運用環境の BizTalk グループが復元されると、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ランタイム コンピューターのことが、ディザスター リカバリーを指すように[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]復元されたに接続しようとしたときにインスタンス運用環境の BizTalk グループ。 送信先システムで BizTalk グループが復元された後に、次の手順を使用して更新、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ランタイム コンピューター。  

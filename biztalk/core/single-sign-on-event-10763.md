@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10763 |Microsoft Docs'
+title: シングル サインオン:イベント 10763 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 64a10c0b274d3037be376c492699ed442ce8734f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e42372f5c5673617b41b66c1805551a4ff2e2678
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36974043"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396646"
 ---
-# <a name="single-sign-on-event-10763"></a>シングル サインオン: イベント 10763
+# <a name="single-sign-on-event-10763"></a>シングル サインオン:イベント 10763
 ## <a name="details"></a>詳細  
   
 |                 |                                                            |
@@ -30,10 +30,10 @@ ms.locfileid: "36974043"
 |  イベント ソース   |                           ENTSSO                           |
 |    コンポーネント    |                            なし                             |
 |  シンボル名  |               ENTSSO_E_TRACKING_ID_MISMATCH                |
-|  メッセージ テキスト   |     追跡 ID がトランザクション ID と一致しません。     |
+|  メッセージ テキスト   |     追跡 ID は、トランザクション ID と一致しません     |
   
 ## <a name="explanation"></a>説明  
- 追跡 ID がトランザクション ID と一致しません。  
+ 追跡 ID は、トランザクション ID と一致しません  
   
 ## <a name="user-action"></a>ユーザーの操作  
- ユーザーの操作は必要ありません。
+ ユーザー操作は必要ありません。

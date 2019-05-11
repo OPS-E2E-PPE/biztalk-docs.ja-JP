@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5719d74517331b30de986424bc14e7d01d128cf3
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c65a1a6313b70b03894c2d4adc41d7679d71b82c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36999347"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65375326"
 ---
 # <a name="operations-on-plsql-apis"></a>PL/SQL Api に対する操作
 Oracle E-business Suite では、パッケージ化された関数およびストアド プロシージャの形式で PL/SQL Api のセットを提供します。 これらのパッケージ化関数とプロシージャでの操作として表示された[!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]します。 

@@ -12,18 +12,18 @@ caps.latest.revision: 23
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0ddf9dcc459fbee7494a913846f1c9d2a7137579
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d6c969f6f0f36237fb48b015d5ff9eebea036d77
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37001771"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395981"
 ---
 # <a name="walkthrough-testing-the-policy"></a>チュートリアル: ポリシーのテスト
-このチュートリアルでは、詳細な手順で作成したポリシーのテスト、[チュートリアル: 単純なビジネス ポリシーを作成する](../core/walkthrough-creating-a-simple-business-policy.md)チュートリアル。  
+このチュートリアルでは、詳細な手順で作成したポリシーのテスト、[チュートリアル。単純なビジネス ポリシーを作成する](../core/walkthrough-creating-a-simple-business-policy.md)チュートリアル。  
 
 ## <a name="prerequisites"></a>前提条件  
- 完了する必要があります、[チュートリアル: 単純なビジネス ポリシーを作成する](../core/walkthrough-creating-a-simple-business-policy.md)チュートリアルのこのチュートリアルを実行する前にします。  
+ 完了する必要があります、[チュートリアル。単純なビジネス ポリシーを作成する](../core/walkthrough-creating-a-simple-business-policy.md)チュートリアルのこのチュートリアルを実行する前にします。  
 
 ## <a name="overview-of-this-walkthrough"></a>このチュートリアルの概要  
  次の表に示すように、このチュートリアルには 2 つの手順が含まれています。  
@@ -127,7 +127,7 @@ ms.locfileid: "37001771"
 > [!NOTE]
 >  出力テキストは太字です。この出力テキストの後に説明が続きます。  
 
- **ルールセットのルール エンジン トレース: ProcessPurchaseOrder 2006/8/31 1時 33分: 10 PM**  
+ **セットのルール エンジン トレース:ProcessPurchaseOrder 2006/8/31 1時 33分: 10 PM**  
 
  ポリシーの実行のルール エンジン トレース**ProcessPurchaseOrder** 2006 年 8 月 31 日に開始された 1時 33分: 10 PM。  
 
@@ -135,13 +135,13 @@ ms.locfileid: "37001771"
 
  **ルール エンジン インスタンス識別子: bc4f1cf5-e9a2-49d0-9cdd-76a2ac057240**  
 
- **ルール セット名: ProcessPurchaseOrder**  
+ **ルール セット名:ProcessPurchaseOrder**  
 
- **操作: アサート**  
+ **操作:アサート**  
 
- **オブジェクトの種類: TypedXmlDocument:PurchaseOrder**  
+ **オブジェクトの種類:TypedXmlDocument:PurchaseOrder**  
 
- **オブジェクト インスタンス識別子: 14626574**  
+ **オブジェクト インスタンス識別子:14626574**  
 
  クリックすると**テスト**、次の処理が行われます。  
 
@@ -159,25 +159,25 @@ ms.locfileid: "37001771"
 
    **ルール エンジン インスタンス識別子: bc4f1cf5-e9a2-49d0-9cdd-76a2ac057240**  
 
-   **ルール セット名: ProcessPurchaseOrder**  
+   **ルール セット名:ProcessPurchaseOrder**  
 
-   **操作: アサート**  
+   **操作:アサート**  
 
-   **オブジェクトの種類: TypedXmlDocument:PurchaseOrder:/PurchaseOrder**  
+   **オブジェクトの種類:TypedXmlDocument:PurchaseOrder:/PurchaseOrder**  
 
-   **オブジェクト インスタンス識別子: 64530307**  
+   **オブジェクト インスタンス識別子:64530307**  
 
    **ファクト アクティビティ 2006/8/31 1時 33分: 10 PM**  
 
    **ルール エンジン インスタンス識別子: bc4f1cf5-e9a2-49d0-9cdd-76a2ac057240**  
 
-   **ルール セット名: ProcessPurchaseOrder**  
+   **ルール セット名:ProcessPurchaseOrder**  
 
-   **操作: アサート**  
+   **操作:アサート**  
 
-   **オブジェクトの種類: TypedXmlDocument:PurchaseOrder: PurchaseOrder/項目**  
+   **オブジェクトの種類:TypedXmlDocument:PurchaseOrder:/PurchaseOrder/Item**  
 
-   **オブジェクト インスタンス識別子: 43901854**  
+   **オブジェクト インスタンス識別子:43901854**  
 
 6. ルール エンジンは、どの子を決定します。 **TypedXmlDocument**規則で定義された XPath セレクターに基づいて、オブジェクトを作成します。 ビジネス ルール作成ツールでルールを構築するときに XPath セレクターの既定値で選択したノード上のノード、 **XML スキーマ**ファクト エクスプ ローラー タブ。 [XPath フィールド] の既定値は選択したノード自体になり、親ノードに関連しています。 ただし、選択したノードに子がある場合は、選択したノードを指すために XPath セレクター バインドだけが作成され、XPath フィールド バインドは作成されません。  
 
@@ -185,8 +185,8 @@ ms.locfileid: "37001771"
 
 | [フィールド名] |                                                             [XPath セレクター]                                                              |                    [XPath フィールド]                     | [XPath セレクター] (簡略化された形式) | [XPath フィールド]<br /><br /> (簡略化された形式) |
 |------------|-----------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------|----------------------------------|-------------------------------------------|
-|  Quantity  | /\*[ローカル名 () = 'PurchaseOrder' and namespace-uri() ='http://EAISolution.PurchaseOrder']/\*[ローカル名 () 'Item' and namespace-uri() = = '] | \*[ローカル名 () '数量' and namespace-uri() = = '] |       /PurchaseOrder/Item        |                 Quantity                  |
-|   状態   |                       /\*[ローカル名 () = 'PurchaseOrder' and namespace-uri() ='<http://EAISolution.PurchaseOrder>']                        |  \*[ローカル名 () = 'Status' and namespace-uri() = ']  |          /PurchaseOrder          |                  状態                   |
+|  Quantity  | /\*[local-name()='PurchaseOrder' and namespace-uri()='http://EAISolution.PurchaseOrder']/\*[local-name()='Item' and namespace-uri()=''] | \*[local-name()='Quantity' and namespace-uri()=''] |       /PurchaseOrder/Item        |                 Quantity                  |
+|   状態   |                       /\*[local-name()='PurchaseOrder' and namespace-uri()='<http://EAISolution.PurchaseOrder>']                        |  \*[ローカル名 () = 'Status' and namespace-uri() = ']  |          /PurchaseOrder          |                  状態                   |
 
 <!---Loc Comment: Please, verify strucutre in line 183 and 184--->
 
@@ -211,27 +211,27 @@ ms.locfileid: "37001771"
 
  **ルール エンジン インスタンス識別子: bc4f1cf5-e9a2-49d0-9cdd-76a2ac057240**  
 
- **ルール セット名: ProcessPurchaseOrder**  
+ **ルール セット名:ProcessPurchaseOrder**  
 
- **テスト式: TypedXmlDocument:PurchaseOrder:/PurchaseOrder/Item.Quantity < = 500**  
+ **テスト式。TypedXmlDocument:PurchaseOrder:/PurchaseOrder/Item.Quantity <= 500**  
 
- **左のオペランド値: 400**  
+ **左側のオペランド値:400**  
 
- **右のオペランド値: 500**  
+ **右側のオペランド値:500**  
 
- **テスト結果: True**  
+ **テスト結果。true**  
 
  **議題の更新 2006/8/31 1時 33分: 10 PM**  
 
  **ルール エンジン インスタンス識別子: bc4f1cf5-e9a2-49d0-9cdd-76a2ac057240**  
 
- **ルール セット名: ProcessPurchaseOrder**  
+ **ルール セット名:ProcessPurchaseOrder**  
 
- **操作: 追加**  
+ **操作:追加します。**  
 
- **ルール名: ApprovalRule**  
+ **ルール名:ApprovalRule**  
 
- **競合解決条件: 0**  
+ **競合解決条件:0**  
 
  ルール エンジンは、条件の評価、競合解決、およびアクションの実行という 3 つのステージによるアルゴリズムを使用してポリシーを実行します。 条件の評価のステージでは、ルール エンジンは、ポリシーのすべてのルールで条件を評価し、条件が議題に対して `true` と評価されているルールを追加します。 この簡単な例で、 **ProcessPurchaseOrder**ポリシーが 1 つのルール**ApprovalRule**します。 ルール エンジンでという条件を評価するため、**数量 < = 500**の**ApprovalRule**の値を使用して、**数量**フィールドに送信された XML ドキュメントこれは**400**します。 上記の出力には、左側のオペランド、右側のオペランド、およびテスト結果の値が表示されます。  
 
@@ -241,11 +241,11 @@ ms.locfileid: "37001771"
 
  **ルール エンジン インスタンス識別子: bc4f1cf5-e9a2-49d0-9cdd-76a2ac057240**  
 
- **ルール セット名: ProcessPurchaseOrder**  
+ **ルール セット名:ProcessPurchaseOrder**  
 
- **ルール名: ApprovalRule**  
+ **ルール名:ApprovalRule**  
 
- **競合解決条件: 0**  
+ **競合解決条件:0**  
 
  最終段階であるアクションの実行のステージでは、ルール エンジンによってルールのアクションの実行が開始されます。 1 つのアクションがある、 **ApprovalRule**の値を設定する、**状態**フィールドに送信された XML ドキュメントに**Approved**します。  
 
@@ -253,35 +253,35 @@ ms.locfileid: "37001771"
 
  **ルール エンジン インスタンス識別子: bc4f1cf5-e9a2-49d0-9cdd-76a2ac057240**  
 
- **ルール セット名: ProcessPurchaseOrder**  
+ **ルール セット名:ProcessPurchaseOrder**  
 
- **操作: 取り消し**  
+ **操作:取り消し**  
 
- **オブジェクトの種類: TypedXmlDocument:PurchaseOrder**  
+ **オブジェクトの種類:TypedXmlDocument:PurchaseOrder**  
 
- **オブジェクト インスタンス識別子: 14626574**  
-
- **ファクト アクティビティ 2006/8/31 1時 33分: 10 PM**  
-
- **ルール エンジン インスタンス識別子: bc4f1cf5-e9a2-49d0-9cdd-76a2ac057240**  
-
- **ルール セット名: ProcessPurchaseOrder**  
-
- **操作: 取り消し**  
-
- **オブジェクトの種類: TypedXmlDocument:PurchaseOrder: PurchaseOrder/項目**  
-
- **オブジェクト インスタンス識別子: 43901854**  
+ **オブジェクト インスタンス識別子:14626574**  
 
  **ファクト アクティビティ 2006/8/31 1時 33分: 10 PM**  
 
  **ルール エンジン インスタンス識別子: bc4f1cf5-e9a2-49d0-9cdd-76a2ac057240**  
 
- **ルール セット名: ProcessPurchaseOrder**  
+ **ルール セット名:ProcessPurchaseOrder**  
 
- **操作: 取り消し**  
+ **操作:取り消し**  
 
- **オブジェクトの種類: TypedXmlDocument:PurchaseOrder:/PurchaseOrder**  
+ **オブジェクトの種類:TypedXmlDocument:PurchaseOrder:/PurchaseOrder/Item**  
+
+ **オブジェクト インスタンス識別子:43901854**  
+
+ **ファクト アクティビティ 2006/8/31 1時 33分: 10 PM**  
+
+ **ルール エンジン インスタンス識別子: bc4f1cf5-e9a2-49d0-9cdd-76a2ac057240**  
+
+ **ルール セット名:ProcessPurchaseOrder**  
+
+ **操作:取り消し**  
+
+ **オブジェクトの種類:TypedXmlDocument:PurchaseOrder:/PurchaseOrder**  
 
  **オブジェクト インスタンス識別子:** 64530307  
 
@@ -292,15 +292,15 @@ ms.locfileid: "37001771"
 
  **ルール エンジン インスタンス識別子: b749d2fd-a883-4c2f-9974-5cf688010622**  
 
- **ルール セット名: ProcessPurchaseOrder**  
+ **ルール セット名:ProcessPurchaseOrder**  
 
- **テスト式: TypedXmlDocument:PurchaseOrder:/PurchaseOrder/Item.Quantity < = 500**  
+ **テスト式。TypedXmlDocument:PurchaseOrder:/PurchaseOrder/Item.Quantity <= 500**  
 
- **左のオペランド値: 700**  
+ **左側のオペランド値:700**  
 
- **右のオペランド値: 500**  
+ **右側のオペランド値:500**  
 
- **テスト結果:** False  
+ **テスト結果。** False  
 
  条件を評価するルール エンジン (**数量 < = 500**) で、 **ApprovalRule** 、内の単一行を使用して**項目**オブジェクト。 左側のオペランド値は、の値であるを参照してください、**数量**、XML ドキュメント内の要素**700**します。 テスト結果は`false`ため**700 < = 500**ルールがルール エンジンの議題に追加されていないため、します。 議題にはルールが存在しません。 そのためを実行する操作はありませんしの値がありますが、**状態**フィールドは**XYZ**します。  
 
@@ -310,10 +310,10 @@ ms.locfileid: "37001771"
 
 -   と共にデータベース ファクトを使用するポリシーをテストするとき、 **DataConnection**ビジネス ルール作成ツールで、バインド、 **DataConnection**オブジェクトが自動的に作成します。 ただし、呼び出すと、同じポリシー オーケストレーションからを使用して、**ルールの呼び出し**図形、いいえ**DataConnection**オブジェクトがポリシーに自動的に渡されます。 作成する必要があります、 **DataConnection**オーケストレーション内のオブジェクトや、パラメーターとして渡すことをアサートするファクト取得コンポーネントを作成、 **DataConnection**オブジェクト、および使用するポリシーを構成します。ファクト取得コンポーネント。  
 
--   .NET ファクトを使用するポリシーをテストするには、ファクト作成コンポーネントを作成し、で指定する必要があります、 **[ファクトの**] ダイアログ ボックス。 ファクト作成コンポーネントの作成の詳細については、[ファクト取得コンポーネントを作成する方法](../core/how-to-create-a-fact-retriever.md)を参照してください。 ポリシーがデータベース ファクトを使用する場合は、同じ処理を行うことができます (**TypedDataConnection**または**TypedDataTable**または**TypedDataRow**) または XML ファクト (**TypedXmlDocument**)。  
+-   .NET ファクトを使用するポリシーをテストするには、ファクト作成コンポーネントを作成し、で指定する必要があります、 **[ファクトの**] ダイアログ ボックス。 ファクト作成コンポーネントの作成の詳細については、次を参照してください。[ファクト取得コンポーネントを作成する方法](../core/how-to-create-a-fact-retriever.md)します。 ポリシーがデータベース ファクトを使用する場合は、同じ処理を行うことができます (**TypedDataConnection**または**TypedDataTable**または**TypedDataRow**) または XML ファクト (**TypedXmlDocument**)。  
 
 ## <a name="next-steps"></a>次の手順  
- これで、このチュートリアルを完了すると、実行、[チュートリアル: オーケストレーションからポリシーを呼び出す](../core/walkthrough-invoking-the-policy-from-an-orchestration.md)を呼び出す手順を説明するチュートリアル、 **ProcessPurchaseOrder**オーケストレーションからのポリシー。  
+ これで、このチュートリアルを完了すると、実行、[チュートリアル。オーケストレーションからポリシーを呼び出す](../core/walkthrough-invoking-the-policy-from-an-orchestration.md)を呼び出す手順を説明するチュートリアル、 **ProcessPurchaseOrder**オーケストレーションからのポリシー。  
 
 ## <a name="see-also"></a>参照  
  [ポリシー テストのトレース出力](../core/policy-test-trace-output.md)   

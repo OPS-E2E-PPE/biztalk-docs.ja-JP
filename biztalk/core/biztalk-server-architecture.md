@@ -1,5 +1,5 @@
 ---
-title: BizTalk Server アーキテクチャ |Microsoft ドキュメント
+title: BizTalk Server のアーキテクチャ |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,12 +15,12 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e95a78e2bad739920f7cdef41eddc36b947ab69b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5262ba2cfe8efbc2f0f593db61d42cfc1582e2b9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22230554"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65357956"
 ---
 # <a name="biztalk-server-architecture"></a>BizTalk Server のアーキテクチャ
 このセクションでは、Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のアーキテクチャと内部機能の詳細について説明します。  
@@ -29,7 +29,7 @@ ms.locfileid: "22230554"
   
 -   [ランタイム アーキテクチャ](../core/runtime-architecture.md)  
   
--   [管理と追跡アーキテクチャ](../core/management-and-tracking-architecture.md)  
+-   [アーキテクチャの管理および追跡](../core/management-and-tracking-architecture.md)  
   
 -   [EDI および AS2 ソリューションのアーキテクチャ](../core/edi-and-as2-solution-architecture.md)  
   

@@ -1,6 +1,6 @@
 ---
-title: BizTalk Server の自動化のパフォーマンス チューニング |Microsoft ドキュメント
-description: BTSTask を使用して、インポートまたは BizTalk Server で環境間でのパフォーマンス設定をエクスポートするには
+title: BizTalk Server を自動化するパフォーマンスのチューニング |Microsoft Docs
+description: BTSTask を使用して、インポートまたは BizTalk Server での環境間でのパフォーマンス設定をエクスポートするには
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -13,27 +13,27 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9e4ea364345ed9f2a8f642e11650cfcd9d09f10f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 35c0ad345a480f10350b6fdf8a4ecc6eae4e9e74
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22230354"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65530653"
 ---
 # <a name="automate-biztalk-server-performance-tuning"></a>BizTalk Server の自動化のパフォーマンス チューニング
 
 ## <a name="overview"></a>概要
-チューニングを自動化する[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]パフォーマンス設定のインポートまたは BizTalk の設定をエクスポートするかを使用して設定を操作することによって[WMI](http://go.microsoft.com/fwlink/?LinkId=200464)です。  
+チューニングを自動化する[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]パフォーマンス設定をインポートする BizTalk の設定をエクスポートするか、またはを使用して設定を操作することによって[WMI](http://go.microsoft.com/fwlink/?LinkId=200464)します。  
   
- 最適なパフォーマンスが得られるように [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 環境を設定した後、BizTalk Server 設定を XML ファイルにエクスポートまたはインポートできます。 BizTalk Server の設定は、設定ダッシュボードまたは BTSTask コマンドライン ユーティリティを使用してインポート/エクスポートできます。 **BTSTask.exe**で[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]により、BizTalk 管理者は新しいスクリプトを作成するときに BTSTask コマンドを使用します。  
+ 後に、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]最適なパフォーマンスの環境を設定すると、エクスポートまたは XML ファイルに、BizTalk Server 設定をインポートすることができます。 インポート/エクスポートできます BizTalk Server の設定、設定ダッシュ ボードまたは BTSTask コマンド ライン ユーティリティを使用しています。 **BTSTask.exe**で[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]により、BizTalk 管理者は、新しいスクリプトを作成するときに、BTSTask コマンドを使用します。  
   
- インポート/エクスポート BizTalk Server 設定について 1 つの環境から別の使用に[!INCLUDE[btsSettingsDashboard](../includes/btssettingsdashboard-md.md)]を参照してください[インポートまたはエクスポート BizTalk の設定を使用して設定のダッシュ ボード](how-to-import-biztalk-settings-using-settings-dashboard.md)です。 
+ インポート/エクスポート BizTalk Server 設定について 1 つの環境から別の使用に[!INCLUDE[btsSettingsDashboard](../includes/btssettingsdashboard-md.md)]を参照してください[インポートまたはエクスポート BizTalk の設定を使用して設定のダッシュ ボード](how-to-import-biztalk-settings-using-settings-dashboard.md)します。 
   
-## <a name="next-steps"></a>次の手順 
+## <a name="next-steps"></a>次のステップ 
   
--   [インポートまたは BTSTask を使用して BizTalk の設定のエクスポート](../core/how-to-import-biztalk-settings-using-btstask.md)  
+-   [BTSTask を使用して BizTalk の設定をインポートまたはエクスポートする](../core/how-to-import-biztalk-settings-using-btstask.md)  
   
 - [BTSTask コマンド ライン リファレンス](btstask-command-line-reference.md)
   
 ## <a name="see-also"></a>参照  
- [BizTalk Server パフォーマンス設定を管理します。](../core/managing-biztalk-server-performance-settings.md)
+ [BizTalk Server パフォーマンス設定の管理](../core/managing-biztalk-server-performance-settings.md)

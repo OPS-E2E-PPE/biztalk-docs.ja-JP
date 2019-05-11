@@ -1,5 +1,5 @@
 ---
-title: メッセージ フローを理解する |Microsoft ドキュメント
+title: メッセージ フローを理解する |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,20 +12,20 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 83963b0896bd67f1f1ca43295688e8f1ca56756e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c66c4cff0f82c30c99907f54d417ffc64fb7600b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22294666"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396511"
 ---
-# <a name="understanding-message-flow"></a>メッセージ フローを理解します。
-このトピックでは、によって生成された ESB 内のメッセージのフローについて説明します、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]です。 全体のメッセージ フローについて説明し、ESB 行程ベース ルーティングの詳細については、ルーティングの明細を各メッセージの処理を定義するために使用します。  
+# <a name="understanding-message-flow"></a>メッセージ フローを理解
+このトピックでは、メッセージがによって生成された ESB を通過する方法について説明します、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]します。 メッセージの全体的な流れについて説明し、ESB スケジュールに基づくルーティングの詳細な説明を提供します。 各メッセージの処理を定義するために使用する回覧用紙。  
   
  このトピックのセクションは次のとおりです。  
   
--   [BizTalk ESB Toolkit のメッセージのライフ サイクル](../esb-toolkit/biztalk-esb-toolkit-message-life-cycle.md)  
+-   [BizTalk ESB Toolkit メッセージ ライフ サイクル](../esb-toolkit/biztalk-esb-toolkit-message-life-cycle.md)  
   
--   [行程ベースのルーティング](../esb-toolkit/itinerary-based-routing.md)  
+-   [スケジュールに基づくルーティング](../esb-toolkit/itinerary-based-routing.md)  
   
 -   [処理命令の詳細](../esb-toolkit/processing-instructions-in-detail.md)

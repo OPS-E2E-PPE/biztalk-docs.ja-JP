@@ -1,5 +1,5 @@
 ---
-title: スキーマ ノードの |Microsoft ドキュメント
+title: スキーマ ノードの |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,27 +12,27 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dd892e825194afea880d3bde153f472051ce9102
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: c14658eb48e4031345ec8ce3e9618ef601f5f5ab
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25972232"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396936"
 ---
-# <a name="schema-node"></a>[スキーマ] ノード
+# <a name="schema-node"></a>スキーマ ノード
 
 ## <a name="overview"></a>概要
-BizTalk エディターで、スキーマ階層の最上位は常に、**スキーマ**ノードで、名前を変更することはできません。 **スキーマ**ノードに対応、**スキーマ**XML スキーマ定義 (XSD) 言語表記のスキーマ内の要素。  
+BizTalk エディターでは、スキーマ階層の最上位は常に、**スキーマ**ノードで、名前を変更することはできません。 **スキーマ**ノードに対応、**スキーマ**スキーマの XML スキーマ定義 (XSD) 言語表記での要素。  
   
 > [!NOTE]
->  BizTalk エディターで、**スキーマ**ノードは、文字列で表される\<スキーマ\>スキーマ ツリー ビューでします。  
+>  BizTalk エディターで、**スキーマ**ノードが文字列で表される\<スキーマ\>スキーマ ツリー ビューで。  
   
- 一般のプロパティ、**スキーマ**の属性に対応しているノード、**スキーマ**スキーマの XSD 表記内の要素。 ノードのプロパティに関する概要については、次を参照してください。[ノードのプロパティ](../core/node-properties.md)です。 プロパティに関するリファレンス情報について、**スキーマ** ノードを参照してください、**スキーマ ノードのプロパティ**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]です。
+ 一般のプロパティ、**スキーマ**ノードの属性に対応、**スキーマ**要素は、スキーマの XSD 表記でします。 ノードのプロパティの詳細については、次を参照してください。[ノード プロパティ](../core/node-properties.md)します。 プロパティの参照情報について、**スキーマ**ノードを参照してください、**スキーマのノード プロパティ**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]します。
   
- BizTalk エディターで、新しい XML スキーマを作成するときに、**スキーマ**ノードおよび**ルート**ノードが自動的に作成されます。  
+ BizTalk エディターで、新しい XML スキーマを作成するときに、**スキーマ**ノードと 1 つ**ルート**ノードが自動的に作成されます。  
   
 ## <a name="xsd-representation"></a>XSD 表記  
- 例を次に、太字に対応するスキーマの XSD 表記内の行で、 **\<スキーマ\>** スキーマのツリー ビュー内のノードです。  
+ 太字に対応するスキーマの XSD 表記での行で、次の例は、 **\<スキーマ\>** スキーマのツリー ビューでノード。  
   
 ```  
 <?xml version="1.0" encoding="utf-16" ?>  

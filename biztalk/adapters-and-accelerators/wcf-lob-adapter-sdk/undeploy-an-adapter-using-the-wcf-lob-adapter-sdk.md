@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 84932fa0a140df157408ad77d9fc6bec8c0823fe
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 300c7721d66d3f5ebb320bf8ddd29319dfeb81cb
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36974587"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65362993"
 ---
 # <a name="undeploy-an-adapter-using-the-wcf-lob-adapter-sdk"></a>WCF LOB アダプター SDK を使用してアダプターを展開解除します。
 コンピューターからアダプターを展開解除するには、ユーザーは、次の 2 つのタスクを実行する必要があります。  
@@ -30,7 +30,7 @@ ms.locfileid: "36974587"
   
 #### <a name="use-the-windows-interface"></a>Windows インターフェイスを使用してください。  
   
-1.  次のように Windows エクスプ ローラーを開く: をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**アクセサリ**、順にクリックします**Windows エクスプ ローラー**.  
+1.  次のように Windows エクスプ ローラーを開きます。をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**アクセサリ**、順にクリックします**Windows エクスプ ローラー**します。  
   
 2.  Systemdrive%\Windows\Assembly に置かれている、GAC に参照します。  
   
@@ -46,7 +46,7 @@ ms.locfileid: "36974587"
   
     このコマンドでは、アセンブリ名は、GAC からアンインストールするアセンブリの名前です。  
   
-    アセンブリ hello.dll を GAC から削除する例を次に示します。  
+    次の例では、アセンブリ hello.dll を GAC から削除します。  
   
     `gacutil /u "MyAdapter,Version=1.0.0.0, Culture=neutral, PublicKeyToken=fafafafafafafafa"`
   
@@ -55,7 +55,7 @@ ms.locfileid: "36974587"
   
 #### <a name="manually-edit-the-machineconfig-file"></a>Machine.config ファイルを手動で編集します。  
   
-1.  Microsoft .NET 構成フォルダ内にある machine.config ファイルを編集します。 これを行うには、次のようにクリックします**開始**、 をクリック**実行**、型**メモ帳\<Windows インストール パス\>\Microsoft.NET\Framework\\< バージョン\>。\CONFIG\machine.config**、 をクリックし、 **OK**します。  
+1.  Microsoft .NET の構成フォルダーにある machine.config ファイルを編集します。 これを行うには、次のようにクリックします**開始**、 をクリック**実行**、型**メモ帳\<Windows インストール パス\>\Microsoft.NET\Framework\\< バージョン\>。\CONFIG\machine.config**、 をクリックし、 **OK**します。  
   
     > [!NOTE]
     >  編集のミスから保護するための変更を加える前に、machine.config ファイルのバックアップを作成します。  
@@ -72,11 +72,11 @@ ms.locfileid: "36974587"
   
 3.  BindingElementExtensions 要素に対して、手順 2. を繰り返します。  
   
-4.  machine.config ファイルを閉じて保存します。  
+4.  Machine.config ファイルを保存して閉じます。  
   
 #### <a name="use-the-service-configuration-editor-do-change-the-machineconfig-file"></a>サービス構成エディターを使用して、machine.config ファイルを変更しないでください。  
   
-1.  サービス構成エディタを開きます。 参照してください[サービス構成エディター](https://msdn.microsoft.com/library/ms732009.aspx)詳細についてはします。
+1.  サービス構成エディターを開きます。 参照してください[サービス構成エディター](https://msdn.microsoft.com/library/ms732009.aspx)詳細についてはします。
   
 2.  ツリー ビュー ペインで (というラベルの付いた**構成**)、ノード ツリーを展開します。 をクリックして、 **詳細設定**フォルダー、 をクリックして、**拡張**フォルダー、およびバインド拡張機能の要素を選択します。  
   
@@ -84,7 +84,7 @@ ms.locfileid: "36974587"
   
      ![拡張機能が追加されたサービス構成エディター。](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/955d37ea-cba5-49db-90de-0f8feb49c0e0.gif "955d37ea-cba5-49db-90de-0f8feb49c0e0")  
   
-4.  サービス構成エディタを閉じます。  
+4.  サービス構成エディターを閉じます。  
   
 ## <a name="see-also"></a>参照  
  [WCF LOB アダプター SDK を使用して、アダプターを展開します。](../../adapters-and-accelerators/wcf-lob-adapter-sdk/deploy-an-adapter-using-the-wcf-lob-adapter-sdk.md)

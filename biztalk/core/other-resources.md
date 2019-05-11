@@ -1,5 +1,5 @@
 ---
-title: その他のリソース |Microsoft ドキュメント
+title: その他のリソース |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -40,17 +40,17 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8e96a8641b1e05abe55b4613df261d15f457cfe0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b64ea6f6d4d8d18ae2452161c9381523130bfe73
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22264066"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65393431"
 ---
 # <a name="other-resources"></a>その他のリソース
-次のリソースは、BizTalk アプリケーションで使用できる外部アイテムの種類です。 リソースには、次のものがあります。  
+次のリソースは、BizTalk アプリケーションで使用できるサポートされている外部の成果物の種類です。 リソースを以下に示します。  
   
-|成果物|完全修飾のリソースの種類|  
+|成果物|完全修飾リソースの種類|  
 |--------------|-----------------------------------|  
 |**.NET アセンブリ**|System.BizTalk:Assembly|  
 |**BAM 定義**|System.BizTalk:Bam|  
@@ -65,5 +65,5 @@ ms.locfileid: "22264066"
 |**仮想ディレクトリ**|System.BizTalk:WebDirectory|  
   
 ## <a name="see-also"></a>参照  
- [リソースの管理](../core/managing-resources.md)   
- [成果物](../core/artifacts.md)
+ [リソースを管理します。](../core/managing-resources.md)   
+ [アイテム](../core/artifacts.md)

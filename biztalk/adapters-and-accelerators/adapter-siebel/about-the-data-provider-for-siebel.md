@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 97d7366ba227c16a5910a8000e57e92f992d3e1a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9ea055188320f9d576d4b114e6be769ccfac3d2e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36989579"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65372059"
 ---
 # <a name="about-the-data-provider-for-siebel"></a>Data Provider for Siebel について
 ## <a name="overview"></a>概要
@@ -64,6 +64,6 @@ ms.locfileid: "36989579"
   
 - EXEC 操作が使用中に機能しなくなります、 [!INCLUDE[adoprovidersiebellong](../../includes/adoprovidersiebellong-md.md)] SQL Server Integration Services (SSIS) とします。 そのため、たとえば、アダプター クライアントできなくで Siebel ビジネス サービスを実行する (を使用して[!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]) SSIS を使用したデータ プロバイダーを使用しているときにします。 
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 [Siebel アダプターの制限事項](../../adapters-and-accelerators/adapter-siebel/limitations-of-biztalk-adapter-for-siebel-ebusiness-applications.md)  
 [Siebel アダプターをトラブルシューティングします。](../../adapters-and-accelerators/adapter-siebel/troubleshoot-the-siebel-adapter.md)

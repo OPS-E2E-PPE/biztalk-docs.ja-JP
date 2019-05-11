@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10770 |Microsoft Docs'
+title: シングル サインオン:イベント 10770 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0deaa29edf3db77b8c0170b4a4f83f1086339615
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 95fc77cebfcd72ce546ae376efed04b14aa277c0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36978259"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65394278"
 ---
-# <a name="single-sign-on-event-10770"></a>シングル サインオン: イベント 10770
+# <a name="single-sign-on-event-10770"></a>シングル サインオン:イベント 10770
 ## <a name="details"></a>詳細  
   
 |                 |                                                            |
@@ -30,10 +30,10 @@ ms.locfileid: "36978259"
 |  イベント ソース   |                           ENTSSO                           |
 |    コンポーネント    |                            なし                             |
 |  シンボル名  |              ENTSSO_E_MAPPING_DISABLED_ADMIN               |
-|  メッセージ テキスト   |     マッピングは管理者によって無効にされました。     |
+|  メッセージ テキスト   |     マッピングは、管理者によって無効にされています。     |
   
 ## <a name="explanation"></a>説明  
- マッピングは管理者によって無効にされました。  
+ マッピングは、管理者によって無効にされています。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- 管理者に確認してください。
+ 管理者に問い合わせてください。

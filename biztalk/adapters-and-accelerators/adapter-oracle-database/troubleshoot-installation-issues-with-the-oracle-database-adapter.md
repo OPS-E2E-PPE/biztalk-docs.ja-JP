@@ -15,12 +15,12 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1fff4cc7948bd05043de9d9028b2c2a39bf940b4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d2e7d00f6d943318903388f58ce3aa1ee7f5568d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36975963"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65375946"
 ---
 # <a name="troubleshoot-installation-issues-with-the-oracle-database-adapter"></a>Oracle データベース アダプターのインストールに関する問題をトラブルシューティングします。
 Microsoft のインストール[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]コンピューターで、製品バイナリをコピーし、各アダプターのバインドを登録します。 このセクションでは、インストールのエラーを解決するトラブルシューティング手法の使用について説明しもいくつかの既知の問題一覧表示されます。  
@@ -82,7 +82,7 @@ Microsoft のインストール[!INCLUDE[adapterpacknoversion](../../includes/ad
       ```  
 
    > [!NOTE]
-   >  公開キーとバージョンを確認する方法については、[公開キーとバージョンを決定する](#BKMK_PubKey)を参照してください。  
+   >  公開キーとバージョンを確認する方法については、次を参照してください。[公開キーとバージョンを決定する](#BKMK_PubKey)します。  
 
 4. machine.config ファイルを保存して閉じます。  
 

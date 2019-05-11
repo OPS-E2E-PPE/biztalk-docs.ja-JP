@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7756a6ca4301f7536a0e4964117f11cb92eb2fcd
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c7561007ddf03b4a17357b2c5204f2bdd91acc73
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36993787"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395853"
 ---
 # <a name="import-the-biztalk-server-2013-monitoring-management-pack"></a>BizTalk Server 2013 Monitoring 管理パックをインポートします。
 管理パックをインポートする方法についてで管理パックをインポートする方法を参照してください。 [Operations Manager 2007 R2 または 2012](http://go.microsoft.com/fwlink/?LinkId=142351) (<http://go.microsoft.com/fwlink/?LinkId=142351>)。 後に、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理パックのインポートは、次の手順を実行して初期構成を完了します。  

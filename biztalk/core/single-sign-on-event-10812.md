@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10812 |Microsoft Docs'
+title: シングル サインオン:イベント 10812 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 34261e158e578ea4241c6b67456fe721c7c5a0df
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 077a399d719f5f8b677e16ed8d24bf8912d067e2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36994803"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396143"
 ---
-# <a name="single-sign-on-event-10812"></a>シングル サインオン: イベント 10812
+# <a name="single-sign-on-event-10812"></a>シングル サインオン:イベント 10812
 ## <a name="details"></a>詳細  
   
 |                 |                                                            |
@@ -30,7 +30,7 @@ ms.locfileid: "36994803"
 |  イベント ソース   |                           ENTSSO                           |
 |    コンポーネント    |                            なし                             |
 |  シンボル名  |               ENTSSO_E_HISSO_LSA_S4U_FAILED                |
-|  メッセージ テキスト   |             LSA サーバーがエラーを返しました。              |
+|  メッセージ テキスト   |             LSA サーバーには、エラーが返されます。              |
   
 ## <a name="explanation"></a>説明  
  これは内部エラーです。  

@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 432499729e0f28092e13e222e29d2c92607ec6ca
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 735a0e5d1d84c589948dcf5e075a665c66c50a94
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36996235"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65393503"
 ---
 # <a name="how-to-move-the-bam-notification-services-databases"></a>BAM Notification Services データベースを移動する方法
 この手順を使用すると、BAM Notification Services データベースを別のサーバーに移動します。  エンド ツー エンドのシナリオの観点から BAM Notification Services データベースの移動にも 2 つの主要な手順が含まれます。  
@@ -51,14 +51,14 @@ ms.locfileid: "36996235"
   
         **net stop NS$ BamAlerts**  
   
-5. 古いサーバー上に BAM Notification Services データベースをバックアップします。 データベースのバックアップの手順についてに記載された手順に従います[方法:、データベースのバックアップ (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=156510) (<http://go.microsoft.com/fwlink/?LinkId=156510>) で[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]データベースをバックアップする方法のオンライン ブックの「します。  
+5. 古いサーバー上に BAM Notification Services データベースをバックアップします。 データベースのバックアップの手順についてに記載された手順に従います[方法。データベースのバックアップ (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=156510) (<http://go.microsoft.com/fwlink/?LinkId=156510>) で[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]データベースをバックアップする方法のオンライン ブックの「します。  
   
    > [!NOTE]  
    >  BAMAlertsApplication、BAMAlertsNSMain の両方のデータベースには、この手順を実行します。  
   
 6. BAM Notification Services データベースのコピーを新しい[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]コンピューター。  
   
-7. 新しいサーバーに BAM Notification Services データベースを復元します。 以下の手順については、データベースを復元する方法」の手順に従って[方法: データベース バックアップ (SQL Server Management Studio) を復元](http://go.microsoft.com/fwlink/?LinkId=156511)(<http://go.microsoft.com/fwlink/?LinkId=156511>) で[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]データベースを復元する方法のオンライン ブックの「します。  
+7. 新しいサーバーに BAM Notification Services データベースを復元します。 以下の手順については、データベースを復元する方法」の手順に従って[方法。データベースのバックアップ (SQL Server Management Studio) 復元](http://go.microsoft.com/fwlink/?LinkId=156511)(<http://go.microsoft.com/fwlink/?LinkId=156511>) で[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]データベースを復元する方法のオンライン ブックの「します。  
   
    > [!NOTE]  
    >  BAMAlertsApplication、BAMAlertsNSMain の両方のデータベースには、この手順を実行します。  
@@ -88,7 +88,7 @@ ms.locfileid: "36996235"
   
    3. コマンド プロンプトで、次のように入力します。  
   
-       **Bm.exe config の取得 –filename:BAMConfiguration.xml-サーバー:\<servername\> -データベース:\<データベース\>**  
+       **Bm.exe get-config –filename:BAMConfiguration.xml -server:\<servername\> -database:\<database\>**  
   
       > [!NOTE]
       >  このコマンドを実行するときに、実際の構成情報の取得元のサーバーの名前に置き換えてください。<servername>の構成情報の取得元のデータベースの実際の名前に置き換えます<database>します。 詳細については、BAM 管理 (BM) ユーティリティを使用して、次を参照してください。[インフラストラクチャ管理コマンド](http://go.microsoft.com/fwlink/?LinkId=156516)(<http://go.microsoft.com/fwlink/?LinkId=156516>) で[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプ。  
@@ -111,10 +111,10 @@ ms.locfileid: "36996235"
   
 6. コマンド プロンプトで、次のように入力します。  
   
-    **bm.exe の更新-構成-FileName:BAMConfiguration.xml**  
+    **bm.exe update-config -FileName:BAMConfiguration.xml**  
   
 ###  <a name="BKMK_NotiRegister"></a> Notification Services を登録します。  
- BAM Notification Services データベースを移動した後は、Notification Services (NSservice.exe) を実行している BizTalk Server グループ内のすべてのコンピューターで通知サービスを再登録する必要があります。 こうして初めて、Notification Services から新しい場所のデータベースに接続できるようになります。 Notification Services を登録する方法の詳細については、次の手順 5 ~ 11 [BAM Notification Services データベースへの参照を更新する方法](http://go.microsoft.com/fwlink/?LinkId=156684)(<http://go.microsoft.com/fwlink/?LinkId=156684>) で[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプします。  
+ BAM Notification Services データベースを移動した後は、Notification Services (NSservice.exe) を実行している BizTalk Server グループ内のすべてのコンピューターで通知サービスを再登録する必要があります。 これにより、Notification Services の新しい場所にデータベースに接続できます。 Notification Services を登録する方法の詳細については、次の手順 5 ~ 11 [BAM Notification Services データベースへの参照を更新する方法](http://go.microsoft.com/fwlink/?LinkId=156684)(<http://go.microsoft.com/fwlink/?LinkId=156684>) で[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプします。  
   
  上記のリンクで説明されている手順を実行する際に、次に注意してください。  
   

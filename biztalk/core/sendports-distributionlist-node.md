@@ -1,5 +1,5 @@
 ---
-title: SendPorts (DistributionList ノード) |Microsoft ドキュメント
+title: SendPorts (DistributionList ノード) |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,22 +14,22 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a9eaf692bd61913e604731fc2e2cea373fd31f48
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 63fda2724291b15492ecb4d9a035d33cddc0b5d9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22269634"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65393349"
 ---
 # <a name="sendports-distributionlist-node"></a>SendPorts (DistributionList ノード)
-バインド ファイルの DistributionList ノードの SendPorts ノードは、同報リスト内の送信ポート参照のコンテナー ノードです。  
+バインド ファイルの DistributionList ノードの SendPorts ノードは、配布リストに送信ポート参照のコンテナー ノードです。  
   
 > [!NOTE]
->  同報リストは、BizTalk 管理者では送信ポート グループと呼ばれます。  
+>  同報リストは、送信ポート グループ、BizTalk 管理者と呼ばれます。  
   
 ## <a name="nodes-in-the-sendports-node"></a>SendPorts ノード内のノード  
  次の表に、バインド ファイルのこのノードに設定できるプロパティを示します。  
   
-|**名前**|**ノード型**|**データ型**|**Description**|**制限**|**コメント**|  
+|**名前**|**ノードの種類**|**[データ型]**|**[説明]**|**制限**|**コメント**|  
 |--------------|-------------------|-------------------|---------------------|----------------------|------------------|  
-|[SendPortRef](../core/sendportref-sendports-node.md)|レコード|SendPortRef (ComplexType)|同報リストによって参照される送信ポートのコンテナー ノードです。|任意|既定値: なし|
+|[SendPortRef](../core/sendportref-sendports-node.md)|レコード|SendPortRef (ComplexType)|同報リストによって行われた送信ポートへの参照のコンテナー ノードです。|任意|既定値: なし|

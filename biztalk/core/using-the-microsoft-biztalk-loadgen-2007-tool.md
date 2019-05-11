@@ -1,5 +1,5 @@
 ---
-title: Microsoft BizTalk LoadGen 2007 ツールの使用 |Microsoft ドキュメント
+title: Microsoft BizTalk LoadGen 2007 ツールを使用して |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,26 +12,26 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2dcf55b2371387ffd52139724d74a118d52ce999
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: ba37985ad0841f0bc6b39bb9a5958b625033f168
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26007203"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396000"
 ---
-# <a name="using-the-microsoft-biztalk-loadgen-2007-tool"></a>Microsoft BizTalk LoadGen 2007 ツールの使用
-Microsoft BizTalk LoadGen 2007 ツールは、開発者や IT プロフェッショナルが BizTalk Server 上で負荷をシミュレートできるように設計されています。 このツールを使用することにより、負荷をシミュレートし、BizTalk の展開に対するパフォーマンスとストレスを測定できます。 さらに、開発者はこのツールを拡張して、カスタム トランスポートの負荷をシミュレートすることもできます。  
+# <a name="using-the-microsoft-biztalk-loadgen-2007-tool"></a>Microsoft BizTalk LoadGen 2007 ツールを使用
+Microsoft BizTalk LoadGen 2007 ツールが開発者向けし、BizTalk Server 上の負荷をシミュレートするために IT プロフェッショナル。 このツールを使用して、インストルメント化のパフォーマンスとストレス BizTalk 展開に対する負荷をシミュレートできます。 さらに、このツールは、カスタム トランスポートの負荷をシミュレートする開発者も拡張可能性があります。  
   
 > [!NOTE]
->  ダウンロード[LoadGen](https://www.microsoft.com/download/details.aspx?id=14925)です。 
+>  ダウンロード[LoadGen](https://www.microsoft.com/download/details.aspx?id=14925)します。 
   
- このツールはテスト環境でのみ使用してください。実稼働環境では使用しないでください。 このツールは "現状のまま" 提供されるものであり、サポート対象ではありません。  
-  
-> [!NOTE]
->  MSMQ アダプターと BizTalk Server 負荷生成ツールを使用できますが、追加の手順を行う必要があります。 手順については、次を参照してください。 [MSMQ での LoadGen 2007 を使用して](../core/using-loadgen-2007-with-msmq.md)です。  
+ このツールは、テスト環境でのみで使用する必要があり、運用環境では使用しない必要があります。 このツールが提供される"としてでは"はサポートされていません。  
   
 > [!NOTE]
->  LoadGen は、64 ビット コンピューターでサポートされていない可能性があります。 リモートの 32 ビット コンピューターで LoadGen を実行することにより、64 ビット サーバーに対応した負荷を生成することができます。  
+>  MSMQ アダプターでは、BizTalk Server の負荷生成ツールを使用できますが、追加の手順を実行する必要があります。 手順については、次を参照してください。 [MSMQ での LoadGen 2007 を使用して](../core/using-loadgen-2007-with-msmq.md)します。  
+  
+> [!NOTE]
+>  64 ビット コンピューターで LoadGen をサポートしない可能性があります。 64 ビット サーバー上の負荷を生成するのに 32 ビット コンピューターでリモートで実行されている LoadGen を使用できます。  
   
 ## <a name="see-also"></a>参照  
  [オーバードライブ ロード テスト](../core/overdrive-load-test.md)

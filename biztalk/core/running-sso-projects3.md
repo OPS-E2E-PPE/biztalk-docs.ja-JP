@@ -17,17 +17,17 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 27e0423121d0259de0a406e17fa9987a522b549d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 88edad3cd58344e6ba5549e517f711957e811ed5
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37008875"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395284"
 ---
 # <a name="running-sso-projects"></a>SSO プロジェクトの実行
-Internet Explorer からシングル サインオン (SSO) のサンプル プロジェクトを実行できます。  
+Internet Explorer からサンプル シングル サインオン (SSO) プロジェクトを実行することができます。  
   
-## <a name="running-a-sample-from-internet-explorer"></a>Internet Explorer からサンプルを実行する  
+## <a name="running-a-sample-from-internet-explorer"></a>Internet Explorer からサンプルを実行します。  
   
 #### <a name="to-run-the-sample-from-the-internet-explorer"></a>Internet Explorer からサンプルを実行するには  
   

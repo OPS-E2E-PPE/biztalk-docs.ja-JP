@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 231d5f83e673a7af2594c3f6f49e4457fcd9573e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3e18e105c0438fd526a4aae2a1ef229707788dca
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37010467"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65368286"
 ---
 # <a name="receive-query-notifications-on-multiple-receive-locations-from-sql-using-biztalk-server"></a>BizTalk Server を使用して SQL のクエリ通知で複数受信場所を受信します。
 同じデータベース内の複数の受信場所が同じテーブル (例: 従業員) のクエリ通知を受信するように構成の異なる BizTalk アプリケーションの一部として作成する必要があるシナリオを検討してください。 100 個のレコードを挿入して、同じテーブルに、すべての受信場所で、通知メッセージが表示されます。 効果的に間での通知を受信する複数の受信場所、その受信場所のいずれかで通知を受信した場合、このような方法で BizTalk アプリケーションから操作を呼び出すことが、その他の受信場所と同じ通知を取得できません。 そのため、複数の場所で受信した負荷分散通知すること効果的にできます。  
@@ -52,7 +52,7 @@ DELETE FROM Employee WHERE Employee_ID=@var
    |     プロパティのバインド      |                                                                                                                  値                                                                                                                  |
    |---------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
    | **InboundOperationType**  |                                                                                                      これを設定**通知**します。                                                                                                      |
-   | **NotificationStatement** | これを設定します。<br /><br /> `SELECT Employee_ID, Name FROM dbo.Employee WHERE Status=0`<br /><br /> **注:** 通知のステートメントは、スキーマ名とテーブル名常に指定する必要があります。 たとえば、 `dbo.Employee`のようにします。 |
+   | **NotificationStatement** | これを設定します。<br /><br /> `SELECT Employee_ID, Name FROM dbo.Employee WHERE Status=0`<br /><br /> **注:**、通知のステートメントは、常にスキーマ名とテーブル名を指定する必要があります。 たとえば、`dbo.Employee` のようにします。 |
    | **NotifyOnListenerStart** |                                                                                                          これを設定**True**します。                                                                                                          |
 
 

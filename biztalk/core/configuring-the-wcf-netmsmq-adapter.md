@@ -1,5 +1,5 @@
 ---
-title: Wcf-netmsmq アダプタの構成 |Microsoft ドキュメント
+title: Wcf-netmsmq アダプタの構成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,12 +15,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7564d7345dcf290153c88b9ea90f96a24c05f07f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 59c6187b105f4fc1e5edc47164f6b05e38ce72d2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22232906"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65390661"
 ---
 # <a name="configuring-the-wcf-netmsmq-adapter"></a>WCF-NetMsmq アダプタの構成
 このセクションでは、WCF-NetMsmq アダプタを構成する方法について説明します。  

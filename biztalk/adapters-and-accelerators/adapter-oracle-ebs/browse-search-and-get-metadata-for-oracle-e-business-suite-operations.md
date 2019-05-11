@@ -12,12 +12,12 @@ caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 46588632c4444c5c38966cfc22fd75711d2af11a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 133862d81ba82e5ce4c94bbc0a93261941bb413f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36996884"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65375749"
 ---
 # <a name="browse-search-and-get-metadata-for-oracle-e-business-suite-operations"></a>参照、検索、および Oracle E-business Suite 操作のメタデータを取得
 このセクションを使用する方法について説明します、 [!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)] 、[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]します。 これらを使用して[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]ことができます、コンポーネント。  
@@ -39,7 +39,7 @@ ms.locfileid: "36996884"
 |**成果物ベースのビュー**|このビューは、Oracle E-business Suite の成果物によって分類されます。 連携する Oracle E-business Suite の成果物が不明な成果物が属するどのアプリケーションがわかっている場合は、このビューを使用します。 このビューを使用すると、すべての Oracle E-business Suite アプリケーションで特定の成果物を検索できます。<br /><br /> 成果物ベースのビューには、PL-SQL Api、テーブル、ビュー、関数、プロシージャなどの基になる、Oracle データベースのアイテムも一覧表示されます。 これらの成果物はさらに、所属するスキーマに基づいて分類されます。 そのため、成果物ベースのビューの別の使用は、スキーマに属するアイテムおよびその他のスキーマに属している成果物を使用します。 このビューでは、すべてのスキーマ間でアイテムを検索することもできます。|  
 |**スキーマ ベースのビュー**|このビューは、基になる Oracle データベースで使用できるスキーマによって分類されます。 スキーマが、成果物を使用することがわかっている場合は、このビューを使用します。 このビューでは、成果物として PL-SQL Api、プロシージャ、関数、テーブル、ビューとして分類されます。|  
   
- Oracle E-business Suite の成果物を分類する方法の詳細については、次を参照してください[アダプター メタデータの追加ウィザードを使用して Visual Studio での Oracle E-business Suite への接続](../../adapters-and-accelerators/adapter-oracle-ebs/connect-to-oracle-ebs-in-visual-studio-using-add-adapter-metadata-wizard.md)のアイテムを整理するためのもう 1 つの主な。別のビューは、簡単に特定のアイテムを検索します。 成果物を検索する方法の詳細については、[Oracle E-business Suite 操作の検索](../../adapters-and-accelerators/adapter-oracle-ebs/search-for-oracle-e-business-suite-operations.md)を参照してください。  
+ Oracle E-business Suite の成果物を分類する方法の詳細については、次を参照してください[アダプター メタデータの追加ウィザードを使用して Visual Studio での Oracle E-business Suite への接続](../../adapters-and-accelerators/adapter-oracle-ebs/connect-to-oracle-ebs-in-visual-studio-using-add-adapter-metadata-wizard.md)のアイテムを整理するためのもう 1 つの主な。別のビューは、簡単に特定のアイテムを検索します。 成果物を検索する方法の詳細については、次を参照してください。 [Oracle E-business Suite 操作の検索](../../adapters-and-accelerators/adapter-oracle-ebs/search-for-oracle-e-business-suite-operations.md)します。  
   
 > [!IMPORTANT]
 >  ノードが接続の接続を確立中に指定する URI に基づいて表示します。 Oracle E-business Suite の成果物に対するアクセス許可がありません。 資格情報を指定する場合は、で成果物を使用することはできません、**アプリケーション ベースのビュー**します。 また、**成果物ベースのビュー** Oracle E-business Suite に属するアイテムを一覧表示しません。  

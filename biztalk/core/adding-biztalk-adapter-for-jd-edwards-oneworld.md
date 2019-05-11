@@ -13,12 +13,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: decababef3ece92c99687a4019b15625b1b4c6b7
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8d6c68b6ab7c71f390ef4313b5228a05644619a4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36981395"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65360883"
 ---
 # <a name="configure-jd-edwards-enterpriseone-artifacts-in-biztalk-administration"></a>BizTalk 管理コンソールで JD Edwards EnterpriseOne の成果物を構成します。
 Microsoft BizTalk Adapter for JD Edwards OneWorld には、受信ハンドラーと送信ハンドラーの両方のフォルダーが含まれています。 送信ハンドラー フォルダーには、BizTalkServerApplication が含まれています。 BizTalk Adapter for JD Edwards OneWorld は作成可能です。BizTalk Server とインプロセスで実行され、分離されたホスト プロセスでは実行されません。  
@@ -84,7 +84,7 @@ JD Edwards OneWorld の "トランスポート プロパティ" システム定�
   
 1.  資格情報を指定します。 JD Edwards OneWorld システムにアクセスするには、次の方法があります。  
   
-    -   ログオン資格情報 (パスワード、ユーザー名): このメソッドを使用する場合は、手順 5. に進みます。  
+    -   ログオン資格情報 (パスワード、ユーザー名):このメソッドを使用する場合は、手順 5 に進みます。  
   
     -   シングル サインオン  
   
@@ -96,13 +96,13 @@ JD Edwards OneWorld の "トランスポート プロパティ" システム定�
   
      エンタープライズ シングル サインオンのツールによって作成される関連アプリケーションはそれぞれ、JD Edwards OneWorld などの特定のアプリケーションを表します。 Microsoft BizTalk Adapter for JD Edwards OneWorld では、アプリケーション ユーザーの資格情報が使用されます。 この資格情報は、指定された関連アプリケーションのサーバー システムの SSO 資格情報データベースから取得されます。 取得される資格情報は、BizTalk Server プロジェクトを起動したアプリケーション ユーザーの資格情報です。  
   
-     詳細については、[関連アプリケーションを作成する](../core/creating-affiliate-applications3.md)を参照してください。  
+     詳細については、次を参照してください。[関連アプリケーションを作成する](../core/creating-affiliate-applications3.md)します。  
   
 4.  展開、 **JD Edwards OneWorld システム**ノードし、JD Edwards OneWorld サーバーへの接続に必要なすべての情報を入力します。  
   
      ![](../core/media/jdedadapter-02-jdesystem.gif "JDEdAdapter_02_JDESystem")  
   
-     接続パラメーターの設定が完了すると、JD Edwards OneWorld システムの内容を参照できるようになります。 詳細については、[を BizTalk Server プロジェクトに JD Edwards OneWorld スキーマをインポートする](../core/importing-jd-edwards-oneworld-schemas-into-biztalk-server-projects.md)を参照してください。  
+     接続パラメーターの設定が完了すると、JD Edwards OneWorld システムの内容を参照できるようになります。 詳細については、次を参照してください。[を BizTalk Server プロジェクトに JD Edwards OneWorld スキーマをインポートする](../core/importing-jd-edwards-oneworld-schemas-into-biztalk-server-projects.md)します。  
   
 5.  呼び出しでは、たとえば 200 の数を示す値を入力**最大同時呼び出し数**必要な場合。  
   
@@ -131,7 +131,7 @@ JD Edwards OneWorld の "トランスポート プロパティ" システム定�
 |`Host`|ホスト サーバーのコンピューター名の名前を入力 (たとえば、 `actsvr1`); またはコンピューターの IP アドレス (たとえば、 `123.456.0.789`)。|  
 |JAVA_HOME|JDK インストール ディレクトリの完全パスを入力します。|  
 |JD Edwards 環境|たとえば、JD Edwards oneworld では、環境の名前を入力`DV7333`します。<br /><br /> DV7333 は開発環境の一般名、PY7333 はプロトタイプ環境の一般名、PD7333 は実稼働環境の一般名です。|  
-|JDEdwards JAR ファイル|各 JAR ファイルの完全なパスとファイル名を入力します。<br /><br /> -Connector.jar<br />-Kernel.jar<br />-JDEJAccess.jar<br />-JDEActionalInterop.jar<br /><br /> jar ファイルの区切りにはセミコロン (;) を使用し、スペースは入れません。 以下に例を示します。<br /><br /> `<drive>\Connector.jar;<drive>\Kernel.jar;`|  
+|JDEdwards JAR ファイル|各 JAR ファイルの完全なパスとファイル名を入力します。<br /><br /> -   Connector.jar<br />-   Kernel.jar<br />-   JDEJAccess.jar<br />-   JDEActionalInterop.jar<br /><br /> jar ファイルの区切りにはセミコロン (;) を使用し、スペースは入れません。 以下に例を示します。<br /><br /> `<drive>\Connector.jar;<drive>\Kernel.jar;`|  
 |パスワード|指定したユーザーのパスワードを入力します。|  
 |Port|データを交換するポート番号を入力 (たとえば、 `6009`)。|  
 |[ユーザー名]|JD Edwards OneWorld システムへのログオンに使用する JD Edwards OneWorld ユーザー名を入力します。|  

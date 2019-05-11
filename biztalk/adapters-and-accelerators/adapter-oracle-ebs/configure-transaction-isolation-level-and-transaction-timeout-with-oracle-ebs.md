@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8bbff645105feb4732afdf86aa3a591252c0d88c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: df2c95ae4ecaae987f0a8e706952a7b86e36eb45
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36969219"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65375666"
 ---
 # <a name="configure-transaction-isolation-level-and-transaction-timeout-with-oracle-e-business-suite"></a>Oracle E-business Suite でのトランザクション分離レベルとトランザクションのタイムアウトを構成します。
 (ポーリングと通知) の受信操作の実行中を使用して、[!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]で[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]、トランザクション分離レベルとトランザクションのタイムアウト値を適切に構成する必要があります。 これを行うには :  
@@ -46,10 +46,10 @@ ms.locfileid: "36969219"
 
 12. 左側のウィンドウで、 **Wcf-custom トランスポートのプロパティ**を選択、 **oracleEBSAdapterInboundTransactionBehavior**サービス**ServiceBehavior**します。  
 
-13. 右側のウィンドウで、 **Wcf-custom トランスポートのプロパティ**、適切な値を指定、 **transactionIsolationLevel**と**transactionTimeout**パラメーター。 次のトランザクション分離レベルのいずれかを選択することができます: **Serializable**、 **RepeatableRead**、 **ReadCommitted**、 **ReadUncommitted**、**スナップショット**、**混乱**、および**未指定**します。 これらのトランザクション分離レベルについては、、**メンバー**セクションで[ http://go.microsoft.com/fwlink/?LinkId=126983](http://go.microsoft.com/fwlink/?LinkId=126983)を参照してください。  
+13. 右側のウィンドウで、 **Wcf-custom トランスポートのプロパティ**、適切な値を指定、 **transactionIsolationLevel**と**transactionTimeout**パラメーター。 次のトランザクション分離レベルのいずれかを選択できます。**シリアル化可能な**、 **RepeatableRead**、 **ReadCommitted**、 **ReadUncommitted**、**スナップショット**、 **Chaos**、および**未指定**します。 これらのトランザクション分離レベルについては、次を参照してください。、**メンバー**セクションで[ http://go.microsoft.com/fwlink/?LinkId=126983](http://go.microsoft.com/fwlink/?LinkId=126983)します。  
 
     > [!IMPORTANT]
-    >  Oracle E-business Suite は、次の 2 つのトランザクション分離レベルのみをサポートしています。 ReadCommitted および Serializable。  
+    >  Oracle E-business Suite には、次の 2 つのトランザクション分離レベルのみがサポートされています。ReadCommitted とシリアル化可能な。  
 
      ![トランザクション分離レベルの設定](../../adapters-and-accelerators/adapter-oracle-ebs/media/2bafbb9d-4daa-43c0-abcb-35220e6a3cb5.gif "2bafbb9d-4daa-43c0-abcb-35220e6a3cb5")  
 

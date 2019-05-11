@@ -1,5 +1,5 @@
 ---
-title: ビジネス ルール エンジン データベース ファクトを渡す |Microsoft ドキュメント
+title: ビジネス ルール エンジンにデータベース ファクトを渡す |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,22 +12,22 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 01ae35802263b71965698e0bb56d1ddbee9ae0a0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d8e3b389b3b606089005fa089604b3ba81452fdf
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22264138"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395021"
 ---
-# <a name="passing-database-facts-to-the-business-rule-engine"></a>ビジネス ルール エンジンへのデータベースのファクトの引き渡し
-DataConnection と TypedDataTable オブジェクトをファクトとしてを必要とするポリシーをテストするビジネス ルール作成ツールを使用する場合、DataConnection と TypedDataTable オブジェクトが自動的に作成され、ビジネス ルール エンジンの作業メモリにアサートします。 さらに、ポリシーによるデータベースの更新がすべて自動的にコミットされます。  
+# <a name="passing-database-facts-to-the-business-rule-engine"></a>ビジネス ルール エンジンへのデータベース ファクトの引き渡し
+DataConnection と TypedDataTable のオブジェクトをファクトとしてを必要とするポリシーをテストするビジネス ルール作成ツールを使用する場合、DataConnection と TypedDataTable オブジェクトが自動的に作成され、ビジネス ルール エンジンの作業メモリにアサートします。 さらに、すべてのデータベース更新ポリシーによって自動的にコミットされます。  
   
- これに対し、オーケストレーションからポリシーを呼び出すと、いずれかを使用してルールの呼び出し図形またはプログラムでは、DataConnection と TypedDataTable オブジェクトは作成されず、データベースの更新はコミットされません自動的にされます。 この例では、DataConnection と TypedDataTable オブジェクトを作成をファクトとしてルール エンジンに渡すこと、および、次のメソッドのいずれかを使用してプログラムでデータベースの変更をコミットする必要があります。  
+ これに対し、オーケストレーションからポリシーを呼び出すを使用してルールの呼び出し図形またはプログラムでは、DataConnection と TypedDataTable オブジェクトは作成されませんがされ、データベースの更新はコミットされません自動的にします。 ここでは、DataConnection と TypedDataTable オブジェクトの作成をファクトとしてルール エンジンに渡す、およびプログラムで、次のメソッドのいずれかを使用して、データベースの変更をコミットする必要があります。  
   
 ## <a name="passing-a-dataconnection-object-from-an-orchestration"></a>オーケストレーションからの DataConnection オブジェクトの引き渡し  
- 次のサンプル コードは、オーケストレーションで DataConnection オブジェクトを作成し、DataConnection オブジェクトをパラメーターとして渡すようにルールの呼び出し図形を構成して、ポリシーが実行された後にすべてのデータベース更新をコミットする方法を示しています。  
+ 次のサンプル コードでは、オーケストレーションで DataConnection オブジェクトを作成、DataConnection オブジェクトをパラメーターとして渡すルールの呼び出し図形の構成し、ポリシーの実行後にすべてのデータベース更新をコミットする方法を示します。  
   
-1.  オーケストレーション デザイナーで、オーケストレーションを開いた状態で [オーケストレーションの種類] タブを使用して次の変数を作成します。  
+1.  オーケストレーション デザイナーでオーケストレーションを開き、[オーケストレーションの種類] タブを使用して、次の変数を作成します。  
   
     ```  
     DataCon of type Microsoft.RuleEngine.DataConnection   
@@ -44,9 +44,9 @@ DataConnection と TypedDataTable オブジェクトをファクトとしてを�
     DataCon = new Microsoft.RuleEngine.DataConnection("test", "FlagTable", SqlCon, SqlTran);    
     ```  
   
-3.  DataCon 変数をパラメーターとして渡すようにルールの呼び出し図形を構成します。 詳細については、次を参照してください。[ルールの呼び出し図形を使用する方法](../core/how-to-use-the-call-rules-shape.md)です。  
+3.  DataCon 変数をパラメーターとして渡すルールの呼び出し図形を構成します。 詳細については、次を参照してください。[ルールの呼び出し図形の使用方法](../core/how-to-use-the-call-rules-shape.md)します。  
   
-4.  ルールの呼び出し図形の後の式図形で、ポリシーによるデータベースの変更をコミットします。 ポリシーによるデータベースの変更をコミットする方法を次のコード例に示します。  
+4.  ルールの呼び出し図形の後に、式図形では、ポリシーによって、データベースの変更をコミットします。 次のコード例では、ポリシーによるデータベース変更をコミットする方法を示します。  
   
     ```  
     DataCon.Update();   
@@ -54,16 +54,16 @@ DataConnection と TypedDataTable オブジェクトをファクトとしてを�
     ```  
   
 > [!NOTE]
->  使用する必要があります、 [SqlTransaction](http://msdn.microsoft.com/library/system.data.sqlclient.sqltransaction.aspx)ポリシーが、データベースを更新するかどうかのオブジェクトのみです。  
+>  使用する必要がある、 [SqlTransaction](http://msdn.microsoft.com/library/system.data.sqlclient.sqltransaction.aspx)オブジェクトのみ、ポリシー、データベースを更新します。  
   
-## <a name="passing-a-dataconnection-object-from-a-fact-retriever"></a>ファクト取得コンポーネントからの DataConnection オブジェクトの引き渡し  
- ここでは、ファクト取得コンポーネントから DataConnection オブジェクトを渡すために実装する必要のある通常の手順を示します。  
+## <a name="passing-a-dataconnection-object-from-a-fact-retriever"></a>ファクト取得コンポーネントから DataConnection オブジェクトの引き渡し  
+ 次に、ファクト取得コンポーネントから DataConnection オブジェクトを通過するために実装する必要がある一般的な手順を示します。  
   
-1.  DataConnection オブジェクトを作成してルール エンジンの作業メモリにアサートするファクト取得コンポーネントを作成します。 ファクト取得コンポーネントを作成する方法の詳細については、次を参照してください。[ファクト取得コンポーネントを作成する方法](../core/how-to-create-a-fact-retriever.md)です。  
+1.  作成し、DataConnection オブジェクトをルール エンジンの作業メモリにアサートするファクト取得コンポーネントを作成します。 ファクト取得コンポーネントを作成する方法の詳細については、次を参照してください。[ファクト取得コンポーネントを作成する方法](../core/how-to-create-a-fact-retriever.md)します。  
   
-2.  実装、 [IFactRemover](http://msdn.microsoft.com/library/Microsoft.RuleEngine.IFactRemover.aspx)ファクト取得コンポーネントのインターフェイスし、のデータベースの変更をコミット、 [UpdateFactsAfterExecution](http://msdn.microsoft.com/library/microsoft.ruleengine.ifactremover.updatefactsafterexecution.aspx)メソッドです。 このメソッドは、ポリシーの実行が終了した後、ルール エンジンによって呼び出されます。  
+2.  実装、 [IFactRemover](http://msdn.microsoft.com/library/Microsoft.RuleEngine.IFactRemover.aspx)ファクト取得コンポーネントのインターフェイスし、データベースの変更をコミット、 [UpdateFactsAfterExecution](http://msdn.microsoft.com/library/microsoft.ruleengine.ifactremover.updatefactsafterexecution.aspx)メソッド。 このメソッドは、ポリシーの実行が終了した後に、ルール エンジンによって呼び出されます。  
   
-3.  ビジネス ルール作成ツールを使用して、ファクト取得コンポーネントを使用するようにポリシーを構成します。 詳細については、次を参照してください。[ポリシーのファクト取得コンポーネントを構成する方法](../core/how-to-configure-a-fact-retriever-for-a-policy.md)です。  
+3.  ビジネス ルール作成ツールを使用して、ファクト取得コンポーネントを使用するポリシーを構成します。 詳細については、次を参照してください。[ポリシーのファクト取得コンポーネントを構成する方法](../core/how-to-configure-a-fact-retriever-for-a-policy.md)します。  
   
 ## <a name="see-also"></a>参照  
  [ビジネス ルール エンジンでのデータ アクセス](../core/data-access-in-the-business-rule-engine.md)   

@@ -13,12 +13,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: eef0252a2907287c3197d40558d605f5c9f5660e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a8019aad1487fad16d111db8f6cf711455bd20e2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36981867"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65363934"
 ---
 # <a name="update-or-uninstall-the-biztalk-adapter-pack-2016"></a>更新または、BizTalk Adapter Pack 2016 のアンインストール
 変更またはアンインストールする方法、[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]します。

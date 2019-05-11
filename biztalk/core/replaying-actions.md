@@ -1,5 +1,5 @@
 ---
-title: アクションの再生 |Microsoft ドキュメント
+title: アクションの再生 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,12 +15,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bdcf9c5ed3cb23dc25af75d84ce53673da7ce2f3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ce27ab64893cf693b841b335f2f1e8f722a0bec4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22268234"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65397875"
 ---
 # <a name="replaying-actions"></a>アクションの再生
 オーケストレーション デバッガーを使用すると、オーケストレーションのアクションを 1 つずつ順に再生できます。 オーケストレーションを開くと、カーソルは 1 つ目のアクション (たとえば、初期化) に置かれます。 オーケストレーションの次のアクションや前のアクションに移動するには、上矢印ボタンと下矢印ボタンを使用します。 表示されたオーケストレーションのフォーカスが図形から図形に移動する動きから、進捗状況を把握できます。  

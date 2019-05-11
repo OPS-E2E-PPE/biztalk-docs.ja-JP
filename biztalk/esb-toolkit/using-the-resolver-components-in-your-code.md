@@ -1,5 +1,5 @@
 ---
-title: コード内の競合回避モジュール コンポーネントを使用して |Microsoft ドキュメント
+title: コードで競合回避モジュール コンポーネントを使用する |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,15 +12,15 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 220ae4983f2fcbf60f6de02f818095fe5c0c50a7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 901ade5dd611c047c480f05ef0da8271150139d0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22295578"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396391"
 ---
-# <a name="using-the-resolver-components-in-your-code"></a>コード内の競合回避モジュール コンポーネントを使用します。
-動的な変換エージェントから次のコード フラグメントは、既定・ イン タイム (JIT) の解決策機能を示しています。 解像度は、のようなコードを使用して、独自のアプリケーションで簡単に実装できます。  
+# <a name="using-the-resolver-components-in-your-code"></a>コードで競合回避モジュール コンポーネントを使用します。
+動的変換エージェントからは、次のコード フラグメントでは、既定のジャストイン タイム (JIT) の解決機能を示します。 ようなコードを使用して、お使いのアプリケーションの解像度を簡単に実装できます。  
   
 ```  
   
@@ -41,9 +41,9 @@ resolverDictionary = Microsoft.Practices.ESB.Resolver.ResolverMgr.Resolve(Inboun
 transformType = resolverDictionary.Item("Resolver.TransformType");  
 ```  
   
- 上記の一覧で、**解決**のメソッド、 **ResolverMgr**クラスを返します、**ディクショナリ**既定解像度のすべてのプロパティを格納しているオブジェクトとその値を解決します。 任意のカスタム競合回避モジュールはカスタム プロパティを追加できる、**ディクショナリ**オブジェクトです。 これにより、任意のカスタム itinerary サービスで使用できるこれらのプロパティを実行します。  
+ 上記の一覧で、**解決**のメソッド、 **ResolverMgr**クラスを返しますを**ディクショナリ**既定解像度のすべてのプロパティを格納しているオブジェクトとその。値を解決します。 任意のカスタム競合回避モジュールへのカスタム プロパティを追加できる、**ディクショナリ**オブジェクト。 これにより、任意のカスタム スケジュール サービスを使用可能なこれらのプロパティを実行します。  
   
- 次の表に含まれるリゾルバーが必要に応じて設定できるプロパティを示しています、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]です。 によって返されたから抽出するこれらのプロパティ値を取得できます、itinerary サービス**ディクショナリ**オブジェクト。  
+ 次の表に含まれる競合回避モジュールで必要に応じて値が設定できるプロパティ、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]します。 任意のスケジュール サービスは、返されたから抽出してこれらのプロパティ値を取得できます**ディクショナリ**オブジェクト。  
   
  **プロパティ**:  
   
@@ -59,7 +59,7 @@ transformType = resolverDictionary.Item("Resolver.TransformType");
 |**Resolver.TransportType**|**Resolver.TransportNamespace**|**Resolver.WindowUserField**|  
 |**Resolver.CacheTimeout**|||  
   
- マネージャーが返した場合、競合回避モジュールの後に、**ディクショナリ**オブジェクト インスタンスの場合は、アダプター マネージャーがメッセージの特定の BizTalk アダプター コンテキスト プロパティを設定します。 ルーティングのエージェントから次のコード フラグメントは、アダプター マネージャーを使用して、送信メッセージのエンドポイントのプロパティを設定する方法を示します。  
+ マネージャーを返します、競合回避モジュールの後、**ディクショナリ**オブジェクト インスタンスの場合は、アダプター マネージャーがメッセージの特定の BizTalk アダプター コンテキスト プロパティを設定します。 ルーティング エージェントからは、次のコード フラグメントでは、アダプター マネージャーを使用して、送信メッセージのエンドポイント プロパティを設定する方法を示します。  
   
 ```  
   
@@ -80,7 +80,7 @@ DeliveryPort(Microsoft.XLANGs.BaseTypes.Address) = transportLocation;
 DeliveryPort(Microsoft.XLANGs.BaseTypes.TransportType) = transportType;  
 ```  
   
- ルーティングのエージェントから次のコード フラグメントでは、カスタム パイプライン コンポーネント内からアダプター マネージャーを使用して、送信メッセージのエンドポイントのプロパティを設定する方法を示します。  
+ ルーティング エージェントからは、次のコード フラグメントでは、カスタム パイプライン コンポーネント内からアダプター マネージャーを使用して、送信メッセージのエンドポイントのプロパティを設定する方法を示します。  
   
 ```csharp  
 // Resolve the configuration for routing.  

@@ -1,6 +1,6 @@
 ---
-title: BAM コマンド ライン ツール |Microsoft ドキュメント
-description: BizTalk Server でビジネス アクティビティ監視追跡プロファイル展開ツール BAM 管理ユーティリティの概要します。
+title: BAM コマンド ライン ツール |Microsoft Docs
+description: BAM 管理ユーティリティを使用して追跡プロファイルの展開ツールを BizTalk Server では、ビジネス アクティビティの監視を開始します。
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -13,12 +13,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9c0583b119aec96264807928b1dab6bd219b5ab2
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 5e9f43f9a1b8ac980253c501d5809fe3a8462a06
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26005939"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65530588"
 ---
 # <a name="bam-command-line-tools"></a>BAM コマンド ライン ツール
 このセクションでは、Microsoft BizTalk Server に付属の BAM コマンド ライン ツールに関するリファレンス情報を提供します。  

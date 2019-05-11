@@ -13,33 +13,33 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8a4ed81978dd275be8eb0348ff15dc8748258239
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: bebb8d3899c34dcde7a5d5c3059434d23202929a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36977171"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65334975"
 ---
 # <a name="remove-incomplete-activity-instances"></a>不完全なアクティビティ インスタンスを削除します。
-BAM 定義ファイルを展開すると、定義ファイルで定義された各アクティビティに対し、5 個のテーブルが BAM プライマリ インポート データベースに作成されます。 作成されるテーブルは次のとおりです。  
+BAM 定義ファイルを展開するときは、5 つのテーブルが、定義ファイルで定義されている各アクティビティを BAM プライマリ インポート データベースに作成されます。 これらのテーブルは次のとおりです。  
   
-- bam_`ActivityName`_Active  
+- bam _`ActivityName`(_a)  
   
-- bam_`ActivityName`_Completed  
+- bam _`ActivityName`_Completed  
   
-- bam_`ActivityName`_ActiveRelationships  
+- bam _`ActivityName`_ActiveRelationships  
   
-- bam_`ActivityName`_CompletedRelationships  
+- bam _`ActivityName`_CompletedRelationships  
   
-- bam_`ActivityName`_Continuations  
+- bam _`ActivityName`_Continuations  
   
-  `ActivityName` は、ユーザーが定義したアクティビティの名前になります。  
+  場所`ActivityName`ユーザーが定義したアクティビティの名前を指定します。  
   
   不完全なデータが、bam _ には、通常の実行中に`ActivityName`*アクティブ テーブル。データにリレーションシップおよび参照がある場合はデータには、bam\\*`ActivityName`_ActiveRelationships テーブル。  
   
-  Continuation を使用したアクティビティの追跡時には、アクティビティが不完全な状態で BAM データベースに残される場合があります。 このトピックの最後に示すストアド プロシージャ作成スクリプトを使用すると、不完全なレコードを削除するストアド プロシージャを作成できます。  
+  継続を使用してアクティビティの追跡、中には、BAM データベースの状態が未完了の活動は左側のインスタンスが可能性があります。 このトピックの最後に、ストアド プロシージャ作成スクリプトを使用するには、不完全なレコードを削除するストアド プロシージャを作成します。  
   
-  ストアド プロシージャを作成するには、スクリプトをコピーしてから、SQL Server Management を使用して BAM プライマリ インポート データベースに対しスクリプトを実行します。 スクリプトでは、という名前のストアド プロシージャを生成します。 **RemoveDanglingInstances**データベースにします。  
+  ストアド プロシージャを作成するには、スクリプトをコピーし、SQL Server の管理を使用して BAM プライマリ インポート データベースに対して実行します。 スクリプトでは、という名前のストアド プロシージャを生成します。 **RemoveDanglingInstances**データベースにします。  
   
 ## <a name="create-the-removedanglinginstances-stored-procedure"></a>RemoveDanglingInstances ストアド プロシージャを作成します。  
   
@@ -61,7 +61,7 @@ BAM 定義ファイルを展開すると、定義ファイルで定義された�
   
 3.  **[新しいクエリ]** をクリックします。  
   
-4.  クエリ ウィンドウで次のように入力します。`exec RemoveDanglingInstances`と削除の操作を実行するための適切なパラメーター。 たとえば、注文書アクティビティの不完全なインスタンスをすべて削除するには、「`exec RemoveDanglingInstances @ActivityName = 'PurchaseOrder'`」と入力します。  
+4.  クエリ ウィンドウで次のように入力します。`exec RemoveDanglingInstances`と削除の操作を実行するための適切なパラメーター。 たとえば、発注アクティビティのすべての不完全なインスタンスを削除する次のように入力します。`exec RemoveDanglingInstances @ActivityName = 'PurchaseOrder'`します。  
   
 5.  **実行**スクリプト。  
   
@@ -71,29 +71,29 @@ BAM 定義ファイルを展開すると、定義ファイルで定義された�
 |パラメーター|説明|  
 |---------------|-----------------|  
 |@ActivityName nvarchar(128)|削除する不完全なアクティビティ インスタンスの名前を指定します。|  
-|@ActivityId nvarchar(128)|(省略可能) 指定したインスタンス識別子を持つ未解決のインスタンスだけをストアド プロシージャで削除するように指定します。|  
+|@ActivityId nvarchar(128)|(省略可能)ストアド プロシージャが指定されたインスタンス識別子を持つ未解決のインスタンスのみを削除することを指定します。|  
 |@DateThreshold datetime|(省略可能)古いアクティブなテーブルですべてのアクティブなインスタンスのことを指定します (等しくないと古い、古いのみ)、指定された日付よりも削除されます。|  
-|@NewTableExtension nvarchar (30)|(省略可能) ストアド プロシージャで、指定された拡張子を既存のアクティビティ テーブルに連結して新しいテーブルを 3 つ作成するように指定します。<br /><br /> 結果のテーブルになります。<br /><br /> bam_ActivityName_Active_\<拡張機能\><br /><br /> bam_ActivityName_ActiveRelationships_\<拡張機能\><br /><br /> bam_ActivityName_Continuations_\<拡張機能\><br /><br /> 不完全なインスタンスは、データベースから削除される代わりに、これらの新しいテーブルに移動されます。<br /><br /> これらのテーブルが既に存在する場合は、再利用されます。存在しない場合は作成されます。 **重要:** ストアド プロシージャ、テーブルが既に存在する場合、これらのスキーマが作成された場合に使用されるものと一致する前提としています。 スキーマが一致しない場合は、ストアド プロシージャはレコードを挿入できず、削除操作が失敗します。|  
+|@NewTableExtension nvarchar(30)|(省略可能)ストアド プロシージャが既存のアクティビティ テーブルに、指定された拡張子を連結して 3 つの新しいテーブルを作成することを指定します。<br /><br /> 結果のテーブルになります。<br /><br /> bam_ActivityName_Active_\<拡張機能\><br /><br /> bam_ActivityName_ActiveRelationships_\<拡張機能\><br /><br /> bam_ActivityName_Continuations_\<拡張機能\><br /><br /> 不完全なインスタンスは、データベースから削除されるのではなく、新しいテーブルに移動されます。<br /><br /> ストアド プロシージャを再利用には、テーブルが既に存在する場合それ以外の場合に作成されます。 **重要:** テーブルが既に存在する場合、ストアド プロシージャでは、そのスキーマが作成された場合に使用されるものと一致する前提としています。 スキーマが一致しない場合、レコードを挿入するストアド プロシージャは失敗し、削除操作は失敗します。|  
   
  `exec RemoveDanglingInstances @ActivityName = 'PurchaseOrder'`  
   
- アクティブ テーブル、アクティブ リレーションシップ テーブル、および Continuation テーブルにある PurchaseOrder アクティビティのアクティブなインスタンスをすべて削除します。  
+ アクティブなので PurchaseOrder アクティビティのすべてのアクティブなインスタンスを削除します。 アクティブなリレーションシップ、および continuation テーブル。  
   
  `exec RemoveDanglingInstances @ActivityName = 'PurchaseOrder', @ActivityId = 'PO220567'`  
   
- PurchaseOrder アクティビティのアクティブ テーブル、アクティブ リレーションシップ テーブル、および Continuation テーブルから、アクティビティ ID が PO220567 であるアクティビティ インスタンスだけを削除します。  
+ アクティブでは、アクティビティ ID が PO220567 のあるアクティビティ インスタンスのみを削除します。 アクティブなリレーションシップ、および continuation テーブル PurchaseOrder アクティビティ。  
   
  `exec RemoveDanglingInstances @ActivityName = 'PurchaseOrder', @DateThreshold='2005-02-02 19:27:03:533'`  
   
- PurchaseOrder アクティビティのアクティブ テーブル、アクティブ リレーションシップ テーブル、および Continuation テーブルから、LastModified の日時が 2005 年 2 月 2 日午後 7:27:03.533 よりも古いアクティビティ インスタンスをすべて削除します。  
+ 2005 年 2 月 2日よりも古い LastModified 時刻があるすべてのアクティビティ インスタンスを削除します。 アクティブ、から日午後 7:27:03.533 アクティブなリレーションシップ、および continuation テーブル PurchaseOrder アクティビティ。  
   
  `exec RemoveDanglingInstances @ActivityName = 'PurchaseOrder', @ActivityId = 'PO220567', @DateThreshold='2005-02-02 19:27:03:533'`  
   
- LastModified 列が 2005 年 2 月 2 日午後 7:27:03.533 よりも古い場合にのみ、アクティビティ ID が PO220567 であるアクティビティ インスタンスを削除します。  
+ LastModified 列が 2005 年 2 月 2日よりも古い場合にのみ、アクティビティ ID が po220567 であるアクティビティ インスタンスの削除日午後 7:27:03.533 します。  
   
  `exec RemoveDanglingInstances @ActivityName = 'PurchaseOrder', @DateThreshold='2005-02-02 19:27:03:533', @NewTableExtension=N'Dangling'`  
   
- データベース内に次のテーブルを作成します。  
+ データベースには、次の表を作成します。  
   
  bam_PurchaseOrder_Active_Dangling  
   
@@ -101,7 +101,7 @@ BAM 定義ファイルを展開すると、定義ファイルで定義された�
   
  bam_PurchaseOrder_Continuations_Dangling  
   
- ストアド プロシージャは、PurchaseOrder アクティビティのアクティブ テーブル、アクティブ リレーションシップ テーブル、および Continuation テーブルから、2005 年 2 月 2 日午後 7:27:03.533 よりも古い不完全なアクティビティ インスタンスをすべてコピーし、新しく作成されたテーブルに挿入します。 次に、コピー済みのアクティビティ インスタンスが、アクティブ テーブル、アクティブ リレーションシップ テーブル、および Continuation テーブルから削除されます。  
+ ストアド プロシージャは、2005 年 2 月 2日よりも古いすべての不完全なアクティビティ インスタンスのコピーから、使用中のアクティブなリレーションシップでは、日午後 7:27:03.533 および継続タスク、PurchaseOrder アクティビティのテーブルし、新しく作成されたテーブルに挿入します。 コピー アクティビティのインスタンス、アクティブなから削除されるアクティブなリレーションシップ、および continuation テーブル。  
   
 ## <a name="stored-procedure-creation-script"></a>ストアド プロシージャ作成スクリプト  
   

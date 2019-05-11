@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c6de74c7efb9aa4f900d555c265318bb17118082
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9d8d3b74fe8c0389093b9525be7ad7adbad5638f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37023704"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395850"
 ---
 # <a name="increasing-availability-for-biztalk-server"></a>BizTalk Server の可用性の向上
 このセクションの可用性を向上させる方法を説明します、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]システム。  
@@ -37,7 +37,7 @@ ms.locfileid: "37023704"
   
   - ネットワーク負荷分散 (NLB)。 NLB は、ホストが失敗したかオフラインの場合、NLB クラスター ホストを操作への着信ネットワーク トラフィックのリダイレクトにより、高可用性を実現します。 サーバーのクラスターとは異なり、NLB は、特殊なハードウェアを必要ありません。  
   
-  - BizTalk ホストの負荷分散します。 実行している複数のサーバーを追加することで、BizTalk ホストの BizTalk ホストの負荷分散が提供されている[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]を[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]グループと、これらのサーバーで実行するインプロセス ホストの複数のインスタンスを構成します。 これにより、そのホストで構成されているサービスとアイテムの実行がホストの複数のインスタンスに分散されて、可用性とスケーラビリティが向上します。  
+  - BizTalk ホストの負荷分散します。 実行している複数のサーバーを追加することで、BizTalk ホストの BizTalk ホストの負荷分散が提供されている[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]を[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]グループと、これらのサーバーで実行するインプロセス ホストの複数のインスタンスを構成します。 これは、サービスとその可用性とスケーラビリティを向上すると、ホストの複数のインスタンス間でそのホストで構成されているアイテムの実行が分散します。  
   
     > [!NOTE]  
     >  ホストの負荷分散機能は、インプロセス ホストでのみ使用できます。  
@@ -62,5 +62,5 @@ ms.locfileid: "37023704"
 -   [ディザスター リカバリー](../technical-guides/disaster-recovery.md)  
   
 ## <a name="see-also"></a>参照  
- [チェックリスト: フォールト トレランスまたは負荷分散と高可用性を実現します。](../technical-guides/checklist-providing-high-availability-with-fault-tolerance-or-load-balancing.md)   
- [チェックリスト: ディザスター リカバリーによる可用性の向上](../technical-guides/checklist-increasing-availability-with-disaster-recovery.md)
+ [チェックリスト:フォールト トレランスまたは負荷分散と高可用性を実現します。](../technical-guides/checklist-providing-high-availability-with-fault-tolerance-or-load-balancing.md)   
+ [チェックリスト:ディザスター リカバリーによる可用性の向上](../technical-guides/checklist-increasing-availability-with-disaster-recovery.md)

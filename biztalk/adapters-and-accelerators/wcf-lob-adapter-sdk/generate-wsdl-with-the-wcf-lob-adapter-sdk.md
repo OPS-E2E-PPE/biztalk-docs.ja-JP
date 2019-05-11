@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: eaf5ed992864c11d360baa30f35983f0082213b3
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e670d0cfe476d086eaa52273d356aece34e4601b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36971075"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65363619"
 ---
 # <a name="generate-wsdl-with-the-wcf-lob-adapter-sdk"></a>WCF LOB Adapter SDK と WSDL を生成します。
 アダプター、または LOB システムの変更から返されるメタデータは多くの場合、操作のメタデータが生成されることを確認するアダプターから返される Web サービス記述言語 (WSDL) を確認するために、開発中に正しくします。 WSDL を生成するいくつかの方法はあります。 このトピックでは、svcutil.exe とメタデータの検索参照コントロールの使用に関する情報を提供します。  

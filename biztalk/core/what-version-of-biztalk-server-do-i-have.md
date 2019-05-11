@@ -1,5 +1,5 @@
 ---
-title: ご使用の BizTalk Server のバージョンを確認する方法 | Microsoft Docs
+title: BizTalk Server のバージョンがあるでしょうか。 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e7003f2d3c61345462ca484f627110a6e507e748
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 974999da3d74075fa218e078d1a757a83dbd325e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36976979"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395148"
 ---
-# <a name="what-version-of-biztalk-server-do-i-have"></a>ご使用の BizTalk Server のバージョンを確認する方法
+# <a name="what-version-of-biztalk-server-do-i-have"></a>BizTalk Server のバージョンがあるでしょうか。
 さまざまなバージョンとのさまざまなエディションを実行して[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]します。 このトピックでは、確認する方法を示します[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]インストールについては、バージョン番号、エディション、およびインストール パスを含むです。  
 
 ## <a name="use-the-registry"></a>レジストリを使用します。
@@ -28,14 +28,14 @@ ms.locfileid: "36976979"
 
 2. 展開**HKEY_LOCAL_MACHINE**、展開**ソフトウェア**、展開**Microsoft**、展開**BizTalk Server**、し、 **3.0**します。  
 
-3. 右側のウィンドウに以下のインストール情報が表示されます。  
+3. 右側のウィンドウには、インストール情報が表示されます。 など。  
 
 
-   |      サブキー       |                                                                                                         説明                                                                                                          |
+   |      サブ キー       |                                                                                                         説明                                                                                                          |
    |--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-   |  **インストール パス**   |                                             [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] をインストールしたインストール パスがリストされます。                                              |
-   | **ProductEdition** |                                                        以下のエディションがリストされます。<br /><br /> -開発者<br />ブランチ<br />標準<br />-エンタープライズ                                                         |
-   | **ProductVersion** | 基本の製品バージョンがリストされます。 サービス パックおよび累積更新プログラムを含め、特定の製品バージョンを参照してください。[のバージョンの BizTalk](http://social.technet.microsoft.com/wiki/contents/articles/7915.biztalk-versions.aspx)します。 |
+   |  **InstallPath**   |                                             インストールしたインストール パスを一覧表示[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]します。                                              |
+   | **ProductEdition** |                                                        エディションの一覧を含みます。<br /><br /> -開発者<br />ブランチ<br />標準<br />-エンタープライズ                                                         |
+   | **ProductVersion** | 基本の製品バージョンを一覧表示します。 サービス パックおよび累積更新プログラムを含め、特定の製品バージョンを参照してください。[のバージョンの BizTalk](http://social.technet.microsoft.com/wiki/contents/articles/7915.biztalk-versions.aspx)します。 |
 
 ## <a name="use-the-control-panel"></a>コントロール パネルを使用します。
 

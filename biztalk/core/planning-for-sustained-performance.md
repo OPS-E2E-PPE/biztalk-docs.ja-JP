@@ -1,5 +1,5 @@
 ---
-title: パフォーマンスを維持の計画 |Microsoft ドキュメント
+title: パフォーマンスを維持の計画 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,19 +16,19 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3cd0d87a5750aa506fb1e0b605d215e6229927c7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4eece626b48a1467127c836775b1680f11f59ff8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22264330"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395637"
 ---
 # <a name="planning-for-sustained-performance"></a>パフォーマンス維持の計画
 このセクションでは、最適なパフォーマンスを得るために、BizTalk Server システムの計画、テスト、および拡張を行う方法について説明します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [プロジェクト計画のフェーズの推奨事項](../core/project-planning-recommendations-by-phase.md)  
+-   [フェーズごとのプロジェクト計画の推奨事項](../core/project-planning-recommendations-by-phase.md)  
   
 -   [エンジン パフォーマンスの特性](../core/engine-performance-characteristics.md)  
   

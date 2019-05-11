@@ -12,15 +12,15 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ed4ce98bd4191d79ef05742b389e1d065325d8ed
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 26ba465598f94f5f9ff41e74d50962a71b0ad979
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37008979"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65391255"
 ---
 # <a name="configuring-fallback-acknowledgement-properties-x12"></a>フォールバック受信確認プロパティの構成 (X12)
-フォールバック アグリーメントでは、パーティから受信した X12 エンコード インターチェンジへの応答としての受信確認を [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] で生成する方法、およびパーティに返す受信確認の種類を指定できます。 ここでは、この指定を行う手順について説明します。  
+フォールバック アグリーメントで指定できますか[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]パーティとパーティに返す受信確認の種類から受信した X12 エンコード インターチェンジへの応答の受信確認を生成します。 このセクションでは、同じ操作を実行する方法の手順を提供します。  
   
 > [!NOTE]
 >  ここで説明する受信確認プロパティは、HIPAA の受信確認にも適用されます。  

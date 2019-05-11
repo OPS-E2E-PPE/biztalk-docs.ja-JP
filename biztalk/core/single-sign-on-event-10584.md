@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10584 |Microsoft Docs'
+title: シングル サインオン:イベント 10584 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0188f09ab94bd14df0dbe3fee0b91341cd9eb087
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 478d33b1ef00930617a32f18dc7cf942210e0162
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36996723"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395252"
 ---
-# <a name="single-sign-on-event-10584"></a>シングル サインオン: イベント 10584
+# <a name="single-sign-on-event-10584"></a>シングル サインオン:イベント 10584
 ## <a name="details"></a>詳細  
   
 |                 |                                                                |
@@ -30,10 +30,10 @@ ms.locfileid: "36996723"
 |  イベント ソース   |                             ENTSSO                             |
 |    コンポーネント    |                              なし                               |
 |  シンボル名  |                   SSO_WARN_NO_IMPERSONATION                    |
-|  メッセージ テキスト   | クライアントを偽装できませんでした。%r<br /><br /> エラー コード: %1 |
+|  メッセージ テキスト   | Client.%r を偽装できませんでした。<br /><br /> エラー コード: %1 |
   
 ## <a name="explanation"></a>説明  
- クライアントの偽装は、クライアントの ID を確認するために ENTSSO システムで行う処理です。 システムがクライアントを偽装できない場合、3 つのいずれかの状況が発生している可能性があります。 クライアントが通常のアクティビティを実行しようとしたか、クライアントがシステムのセキュリティに侵入しようとしたか、またはクライアント アプリケーションが偽装をブロックするように設計されている可能性があります。  
+ クライアントの偽装は、ENTSSO システムでは、クライアントの身元を確認します。 システムは、クライアントを偽装することは、次の 3 つのいずれかが発生した可能性があります。 クライアントが通常のアクティビティを実行しよう、クライアントがシステムのセキュリティに侵入しようまたはクライアント アプリケーションが偽装をブロックする設計されています。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- クライアント アプリケーションを探し、どのような処理が行われようとしているか、およびクライアント アプリケーションが偽装をブロックしているかどうかを特定します。
+ クライアント アプリケーションを見つけて、試行を行うには、権限借用でブロックされるかどうかを判断します。

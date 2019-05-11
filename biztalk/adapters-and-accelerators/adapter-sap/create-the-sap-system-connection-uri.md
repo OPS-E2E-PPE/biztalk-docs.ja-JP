@@ -17,12 +17,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a1a54dc12b4bca6418cea1ea4ae63c6c63dcba6e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f0cf3f1f830540469fb9e87af6ef3cdcb7f87068
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36969491"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373546"
 ---
 # <a name="create-the-sap-system-connection-uri"></a>SAP システム接続 URI を作成します。
 [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]接続 URI には、アダプターが SAP システムへの接続を確立するために使用するプロパティが含まれています。  
@@ -66,18 +66,18 @@ sap://user=[USER_NAME];passwd=[PASSWORD];Client=[CLIENT];lang=[LANGUAGE];[UseSnc
 
 | プロパティ |                                                                                                                                                                                                                                                                                                                                                                                                          説明                                                                                                                                                                                                                                                                                                                                                                                                          |
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|   ユーザー   |                                                                                                                                                                                                            SAP システムのユーザー名この値は大文字小文字を区別します。 設定する必要があります、 **AcceptCredentialsInUri**プロパティをバインド**true**接続 URI のユーザー名とパスワードを指定します。 **注:** 、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]上の SAP システムの接続を開くときにユーザー名を入力する値の大文字小文字を保持します。                                                                                                                                                                                                             |
-|  Passwd  |                                                                                                                                                                                                       SAP システムのユーザーのパスワードこの値は大文字小文字を区別します。 設定する必要があります、 **AcceptCredentialsInUri**プロパティをバインド**true**接続 URI のユーザー名とパスワードを指定します。 **注:** 、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]上の SAP システムの接続を開くときにパスワードを入力する値の大文字小文字を保持します。                                                                                                                                                                                                       |
+|   ユーザー   |                                                                                                                                                                                                            SAP システムのユーザー名この値は大文字小文字を区別します。 設定する必要があります、 **AcceptCredentialsInUri**プロパティをバインド**true**接続 URI のユーザー名とパスワードを指定します。 **注:**[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]上の SAP システムの接続を開くときにユーザー名を入力する値の大文字小文字を保持します。                                                                                                                                                                                                             |
+|  Passwd  |                                                                                                                                                                                                       SAP システムのユーザーのパスワードこの値は大文字小文字を区別します。 設定する必要があります、 **AcceptCredentialsInUri**プロパティをバインド**true**接続 URI のユーザー名とパスワードを指定します。 **注:**[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]上の SAP システムの接続を開くときにパスワードを入力する値の大文字小文字を保持します。                                                                                                                                                                                                       |
 |  クライアント  |                                                                                                                                                                                                                                                                                                                                                                                                   SAP システムのクライアント id。                                                                                                                                                                                                                                                                                                                                                                                                   |
 | [言語] |                                                                                                                                                                                                                                                                                                                                                                                                           言語。                                                                                                                                                                                                                                                                                                                                                                                                           |
-|  UseSnc  | SAP セキュリティで保護されたネットワーク通信 (SNC) が有効になっているかどうかを指定する省略可能なパラメーター。 値は True または False です。True の場合、SNC が有効にします。 既定値は False<br /><br /> 設定する必要がある SNC を有効にすると、 **SncPartnerName**と**SncLibrary**プロパティをバインドします。 詳細については、[mySAP Business Suite のバインドのプロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md)を参照してください。<br /><br /> SNC が有効になっている接続の URI には、資格情報が含まれている場合は、アダプターは例外をスローします。 **注:** UseSnc 接続パラメーターは、A と B の接続の種類に対してのみ適用異なる接続の種類とその重要性については、このトピックの後半で詳しく説明します。 |
+|  UseSnc  | SAP セキュリティで保護されたネットワーク通信 (SNC) が有効になっているかどうかを指定する省略可能なパラメーター。 値は True または False です。True の場合、SNC が有効にします。 既定値は False<br /><br /> 設定する必要がある SNC を有効にすると、 **SncPartnerName**と**SncLibrary**プロパティをバインドします。 詳細については、次を参照してください。 [mySAP Business Suite のバインドのプロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md)します。<br /><br /> SNC が有効になっている接続の URI には、資格情報が含まれている場合は、アダプターは例外をスローします。 **注:** UseSnc 接続パラメーターは、A と B の接続の種類に対してのみ適用異なる接続の種類とその重要性については、このトピックの後半で詳しく説明します。 |
 
 > [!NOTE]
 >  SAP 接続 URI では、クライアントと言語を指定する必要があります。  
 
  [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]サーフェス、 **AcceptCredentialsinUri**接続 URI で SAP システムの資格情報を指定できるかどうかを制御できるように、プロパティをバインドします。 資格情報はプレーン テキストで、接続 URI として表され、固有のセキュリティ リスクが生じないためにです。 既定で、 **AcceptCredentialsInUri**バインド プロパティが false と資格情報が接続 URI で指定されている場合、アダプターが例外をスローします。  
 
- 一部のシナリオは、接続 URI; で資格情報を指定する必要があります。たとえば、SAP から受信操作を受信する WCF を使用すると、システム サービス モデルまたは WCF チャネル モデル。 設定することができます、 **AcceptCredentialsInUri**プロパティをこれらのシナリオを true にします。 ベスト プラクティスは、接続 URI で直接資格情報を提供することを回避するためにただし、これは。 SAP 接続の資格情報をより安全に提供する方法の詳細については、[SAP アプリケーションのセキュリティ保護](../../adapters-and-accelerators/adapter-sap/secure-your-sap-applications.md)を参照してください。  
+ 一部のシナリオは、接続 URI; で資格情報を指定する必要があります。たとえば、SAP から受信操作を受信する WCF を使用すると、システム サービス モデルまたは WCF チャネル モデル。 設定することができます、 **AcceptCredentialsInUri**プロパティをこれらのシナリオを true にします。 ベスト プラクティスは、接続 URI で直接資格情報を提供することを回避するためにただし、これは。 SAP 接続の資格情報をより安全に提供する方法の詳細については、次を参照してください。 [SAP アプリケーションのセキュリティ保護](../../adapters-and-accelerators/adapter-sap/secure-your-sap-applications.md)します。  
 
 > [!IMPORTANT]
 >  UseSnc パラメーターを true に設定してセキュリティで保護されたネットワーク通信 (SNC) を有効にした場合、アダプターは例外をスローします。  
@@ -85,11 +85,11 @@ sap://user=[USER_NAME];passwd=[PASSWORD];Client=[CLIENT];lang=[LANGUAGE];[UseSnc
 ### <a name="host-information-in-the-sap-connection-uri"></a>SAP 接続 URI のホスト情報  
  SAP ホスト情報 (hostinfoparams) は、SAP 接続 URI では、次の要素によって表される:`connectiontype/conndetail1/conndetail2`します。 これらのパラメーターは、SAP システムへのクライアント接続に関する詳細を指定します。 SAP クライアントの接続に関する追加情報と SAP RFC 転送先にリスナーとしての接続を確立するための詳細は、クエリ文字列で指定できます。 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] SAP 接続 URI で次のクライアント接続の種類をサポートしています。  
 
-- A: 使用して、アプリケーション ホスト ベース接続を使用して、アプリケーション サーバーを指定する接続 URI、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] SAP に接続します。  
+- A:アプリケーション ホスト ベース接続の接続 URI を使用して、アプリケーション サーバーを指定する、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] SAP に接続します。  
 
-- B:、負荷分散された接続の接続 URI が経由するメッセージ サーバーを指定します、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] SAP に接続します。  
+- B:接続 URI が経由するメッセージ サーバーを指定する接続の負荷分散された、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] SAP に接続します。  
 
-- D: SAP 用の接続パラメーターを含む saprfc.ini ファイルの宛先を指定する接続 URI をを先ベースの接続。  
+- D:宛先に基づく接続接続 URI が SAP 用の接続パラメーターを含む saprfc.ini ファイルの宛先を指定します。  
 
   > [!NOTE]
   > 接続タイプ B は、送信ポートにのみ適用されます。  受信場所を構成する場合は、接続の種類、または D. を選択します。
@@ -161,7 +161,7 @@ sap://Client=800;lang=EN@A/YourSAPHOST/00
 |メッセージ サーバー|メッセージ サーバー ホスト|Conndetail1 (ホスト情報の接続の種類 B)|  
 |メッセージ サーバー|メッセージ サーバー サービス|MsServ (クエリ文字列)|  
 |メッセージ サーバー|R/3 システム名|Conndetail2 (ホスト情報の接続の種類 B)|  
-|その他|[接続の種類]|接続の種類 (ホスト情報: A、B、または D)|  
+|その他|[接続の種類]|接続の種類 (ホスト情報。A、B、または D)|  
 |RFC サーバー|宛先名|ListenerDest (クエリ文字列)|  
 |RFC サーバー|ゲートウェイ ホスト|ListenerGwHost (クエリ文字列)|  
 |RFC サーバー|ゲートウェイ サービス|ListenerGwServ (クエリ文字列)|  
@@ -169,7 +169,7 @@ sap://Client=800;lang=EN@A/YourSAPHOST/00
 |SNC|UseSnc|UseSnc (ユーザー情報)|  
 
 ## <a name="how-to-specify-a-connection-uri-for-rfc-server-connections"></a>RFC サーバー接続の接続 URI を指定する方法。  
- 使用されるエンドポイント アドレスを作成する、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] RFC サーバーとして機能する、SAP プログラム id、SAP ゲートウェイ ホスト、および SAP システムの RFC 転送先に対応する SAP ゲートウェイ サービスを指定する必要があります。 SAP で RFC 転送先をセットアップする方法については、[RFC を作成する、RFC 転送先、および送信 SAP から RFC](creating-an-rfc-in-an-sap-system.md)を参照してください。  
+ 使用されるエンドポイント アドレスを作成する、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] RFC サーバーとして機能する、SAP プログラム id、SAP ゲートウェイ ホスト、および SAP システムの RFC 転送先に対応する SAP ゲートウェイ サービスを指定する必要があります。 SAP で RFC 転送先をセットアップする方法については、次を参照してください。 [RFC を作成する、RFC 転送先、および送信 SAP から RFC](creating-an-rfc-in-an-sap-system.md)します。  
 
  接続で 2 つの方法のいずれかの URI では、プログラム id、ゲートウェイ ホスト、およびゲートウェイ サービスを指定できます。  
 

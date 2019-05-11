@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10783 |Microsoft Docs'
+title: シングル サインオン:イベント 10783 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9a8920c06d22f533b56984f80cf03a2e6fe64fe4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9b9e8ff8c0fa2568badd5c110c0349cd77ca75a9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37014371"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65394159"
 ---
-# <a name="single-sign-on-event-10783"></a>シングル サインオン: イベント 10783
+# <a name="single-sign-on-event-10783"></a>シングル サインオン:イベント 10783
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                                                                                  |
@@ -30,10 +30,10 @@ ms.locfileid: "37014371"
 |  イベント ソース   |                                                                      ENTSSO                                                                      |
 |    コンポーネント    |                                                                       なし                                                                        |
 |  シンボル名  |                                                                ENTSSO_E_NO_SECRET                                                                |
-|  メッセージ テキスト   | マスター シークレット サーバーからシークレットを入手できないため、暗号化または解読を実行できません。 イベント ログで関連エラーを参照してください。 |
+|  メッセージ テキスト   | シークレットがマスター シークレット サーバーから利用できないために、暗号化または復号化を実行できません。 関連するエラーのイベント ログを参照してください。 |
   
 ## <a name="explanation"></a>説明  
- 構成中に問題が発生した可能性があります。  
+ あるされた可能性がある問題の構成時に  
   
 ## <a name="user-action"></a>ユーザーの操作  
- イベント ログで詳細および関連エラーを参照してください。
+ 詳細と関連するエラーのイベント ログを参照してください。

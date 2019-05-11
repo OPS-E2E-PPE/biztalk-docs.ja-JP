@@ -1,5 +1,5 @@
 ---
-title: Siebel を使用してチャネルを作成 |Microsoft ドキュメント
+title: Siebel を使用してチャネルを作成する |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,15 +16,15 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 87524160550cfe84c5e7e94efba1e44bff20c6ca
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5b5efe7a5e20c2526bf944b18ee87d7afd4f88bb
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22221890"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65371817"
 ---
-# <a name="create-a-channel-using-siebel"></a>Siebel を使用して、チャネルを作成します。
-このセクションでは、によって提供および XML メッセージを消費する Siebel による直接メッセージングのチャネルを作成する方法を示します。  
+# <a name="create-a-channel-using-siebel"></a>Siebel を使用してチャネルを作成します。
+このセクションでは、提供する XML メッセージを使用する Siebel と直接メッセージング チャネルを作成する方法を示します。  
   
 ```  
 //create a channel factory, capable of sending a request to Siebel and receiving a reply (IRequestChannel)  
@@ -51,8 +51,8 @@ irc.Close();
 factory.Close();  
 ```  
   
- チャネルを作成した後は、Siebel の操作を実行、そのチャネルを使用できます。  
+ チャネルを作成した後は、Siebel の操作を実行するのにそのチャネルを使用できます。  
   
 ## <a name="see-also"></a>参照  
  [WCF チャネル モデルを使用して Siebel アプリケーションを開発します。](../../adapters-and-accelerators/adapter-siebel/develop-siebel-applications-using-the-wcf-channel-model3.md)   
- [WCF チャネル モデルを使用して、Siebel アダプターとビジネス コンポーネントでの操作を実行します。](../../adapters-and-accelerators/adapter-siebel/run-tasks-on-business-components-with-the-siebel-adapter-using-a-wcf-channel.md)
+ [WCF チャネル モデルを使用して Siebel アダプターでのビジネス コンポーネントに対する操作を実行します。](../../adapters-and-accelerators/adapter-siebel/run-tasks-on-business-components-with-the-siebel-adapter-using-a-wcf-channel.md)

@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10670 |Microsoft Docs'
+title: シングル サインオン:イベント 10670 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dca094f48f8b9c367d46af2dc3ca866888f42bbe
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e544a9707e2765502c79029d10e6facad4a354c6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37001765"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65397519"
 ---
-# <a name="single-sign-on-event-10670"></a>シングル サインオン: イベント 10670
+# <a name="single-sign-on-event-10670"></a>シングル サインオン:イベント 10670
 ## <a name="details"></a>詳細  
 
 |                 |                                                                                                                                      |
@@ -28,17 +28,17 @@ ms.locfileid: "37001765"
 | 製品バージョン |                                      [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                                      |
 |    イベント ID     |                                                                10670                                                                 |
 |  イベント ソース   |                                                                ENTSSO                                                                |
-|    コンポーネント    |                                                                 N\A                                                                  |
+|    コンポーネント    |                                                                 該当なし                                                                  |
 |  シンボル名  |                                                  SSO_INFO_CHANGED_WINDOWS_PASSWORD                                                   |
-|  メッセージ テキスト   | Windows パスワードが正常に変更されました。%r<br /><br /> 追跡 ID: %1 %r<br /><br /> アダプター: % 2 %r<br /><br /> Windows アカウント: %3 |
+|  メッセージ テキスト   | Windows password.%r を正常に変更されました<br /><br /> 追跡 ID: %1 %r<br /><br /> アダプター: % 2 %r<br /><br /> Windows アカウント: %3 |
 
 ## <a name="explanation"></a>説明  
- この情報イベントは、SSO によって Windows パスワードが正常に変更されたことを示します。  
+ この情報イベントは、SSO が Windows パスワードを正常に変更されたことを示します。  
 
 ## <a name="user-action"></a>ユーザーの操作  
 
-- ユーザーの操作は必要ありません。  
+- ユーザー操作は必要ありません。  
 
-  詳細については、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ヘルプの次の情報を参照してください:   
+  詳細については、の次のリソースを参照してください。[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプ。  
 
 - [パスワード同期](../core/password-synchronization2.md)

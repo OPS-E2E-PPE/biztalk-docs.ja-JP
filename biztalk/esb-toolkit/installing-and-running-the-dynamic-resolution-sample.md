@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0939111bc0a62ecf31286045f412ed160a97c3f9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 918b9e5d2f5ad4a3aeb0db54d54cdab943198cee
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36967731"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395120"
 ---
 # <a name="installing-and-running-the-dynamic-resolution-sample"></a>インストールして、動的解決サンプルを実行します。
 動的解決サンプルでは、ESB ディスパッチャーと ESB ディスパッチャー逆アセンブラー パイプライン コンポーネントの一般的な使用シナリオを示します。 コンポーネントを使用を動的にエンドポイントの場所を解決するには、ルーティングのプロパティを設定し解決してオーケストレーションを使用しなくても、メッセージング レベルでの Microsoft BizTalk マップを実行する方法を示します。 一方向と双方向の両方のメッセージング パターンも示します。  
@@ -33,7 +33,7 @@ ms.locfileid: "36967731"
 ## <a name="two-way-messaging-scenarios"></a>双方向メッセージング シナリオ  
  すべての双方向メッセージング シナリオでは、ESB のサンプルを使用します。NorthAmericanServices Web サービスがある http://localhost/ESB.NorthAmericanServices/CustomerOrder.asmx 要求メッセージを BizTalk に公開します。 Microsoft InfoPath を使用してこの Web サービスを実行するかから使用可能な Storm などのユーティリティを使って[CodePlex](http://go.microsoft.com/fwlink/?LinkID=187762&clcid=0x409)します。  
   
- それぞれの例は、ESB のサンプル メッセージを送信するエンドポイントの URL を動的に解決します。CanadianServices Web サービスがあるhttp://localhost/ESB.CanadianServices/SubmitPOService.asmxします。 例を実行するか、 **submitOrder**アクションまたは**submitPurchase**解決プロセスの結果に応じて、アクション。 双方向メッセージング シナリオの受信場所では、DynamicResolutionReqResp_SOAP です。 10 の双方向メッセージングの例は、一意のバインドによって表されるすべてのファイルをそれぞれの例を実行する前にインポートする必要があります。  
+ それぞれの例は、ESB のサンプル メッセージを送信するエンドポイントの URL を動的に解決します。CanadianServices Web サービスがある http://localhost/ESB.CanadianServices/SubmitPOService.asmxします。 例を実行するか、 **submitOrder**アクションまたは**submitPurchase**解決プロセスの結果に応じて、アクション。 双方向メッセージング シナリオの受信場所では、DynamicResolutionReqResp_SOAP です。 10 の双方向メッセージングの例は、一意のバインドによって表されるすべてのファイルをそれぞれの例を実行する前にインポートする必要があります。  
   
 ## <a name="binding-files"></a>バインド ファイル  
  このサンプルのバインド ファイルは \Source\Samples\DynamicResolution\Samples\Release という名前のフォルダーにあります。  
@@ -75,7 +75,7 @@ ms.locfileid: "36967731"
   
   動的解決サンプルも、上記のリゾルバーとアダプターの適切な構成に依存します。 インストールする」の説明に従って、これらの構成のプロセスが完了したことを確認、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]します。  
   
-  このセクションのトピックは次のとおりです。  
+  このセクションでは、次のトピックについて説明します。  
   
 - [動的解決サンプルをインストールする](../esb-toolkit/installing-the-dynamic-resolution-sample.md)  
   

@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 83f1dc0b3b46ff8e76ce4dc6dbd9bffd1acdf919
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: fe143d9926632150acb581f69a7f14cb1546d9c2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36988243"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65376129"
 ---
 # <a name="how-to-use-a-custom-web-part-with-oracle-e-business-suite"></a>Oracle E-business Suite でカスタム web パーツを使用する方法
 このセクションでは、Microsoft Office SharePoint Server でカスタム Web パーツの使用に関する情報を提供します。 カスタム Web パーツを使用するには、次の操作を行う必要があります。  
@@ -31,11 +31,11 @@ ms.locfileid: "36988243"
 ## <a name="before-you-begin"></a>はじめに  
  カスタム Web パーツを作成する前に。  
   
--   WCF サービスとしての Oracle E-business Suite の成果物を発行します。 詳細については、[手順 1: Oracle E-business アダプターを使用して作成および WCF サービスの発行](../../adapters-and-accelerators/adapter-oracle-ebs/step-1-use-the-oracle-e-business-adapter-to-create-and-publish-a-wcf-service.md)で[チュートリアル: SharePoint サイト上の Oracle E-business Suite からデータを提示](Tutorial:%20Present%20data%20from%20Oracle%20E-Business%20Suite%20on%20a%20SharePoint%20Site.md)を参照してください。  
+-   WCF サービスとしての Oracle E-business Suite の成果物を発行します。 詳細については、次を参照してください。[手順 1。Oracle E-business アダプターを使用して作成および WCF サービス発行](../../adapters-and-accelerators/adapter-oracle-ebs/step-1-use-the-oracle-e-business-adapter-to-create-and-publish-a-wcf-service.md)で[チュートリアル。SharePoint サイト上の Oracle E-business Suite からデータを提示](Tutorial:%20Present%20data%20from%20Oracle%20E-Business%20Suite%20on%20a%20SharePoint%20Site.md)します。  
   
--   Microsoft Office SharePoint Server でビジネス データ カタログを使用して Oracle E-business Suite の成果物のアプリケーション定義ファイルを作成します。 詳細については、[手順 2: Oracle E-business Suite の成果物のアプリケーション定義ファイルを作成](../../adapters-and-accelerators/adapter-oracle-ebs/step-2-create-an-application-definition-file-for-the-oracle-ebs-artifacts.md)で[チュートリアル: SharePoint サイト上の Oracle E-business Suite からデータを提示](Tutorial:%20Present%20data%20from%20Oracle%20E-Business%20Suite%20on%20a%20SharePoint%20Site.md)を参照してください。  
+-   Microsoft Office SharePoint Server でビジネス データ カタログを使用して Oracle E-business Suite の成果物のアプリケーション定義ファイルを作成します。 詳細については、次を参照してください。[手順 2。Oracle E-business Suite の成果物のアプリケーション定義ファイルを作成](../../adapters-and-accelerators/adapter-oracle-ebs/step-2-create-an-application-definition-file-for-the-oracle-ebs-artifacts.md)で[チュートリアル。SharePoint サイト上の Oracle E-business Suite からデータを提示](Tutorial:%20Present%20data%20from%20Oracle%20E-Business%20Suite%20on%20a%20SharePoint%20Site.md)します。  
   
-##  <a name="Create_a_Custom_Web_Part"></a> 手順 1: カスタム Web パーツを作成します。  
+##  <a name="Create_a_Custom_Web_Part"></a> ステップ 1:カスタム Web パーツを作成します。  
   
 1.  Visual Studio を起動し、プロジェクトを作成します。  
   
@@ -49,17 +49,17 @@ ms.locfileid: "36988243"
   
 6.  プロジェクトをビルドする。 プロジェクトの成功したビルドで CustomWebPart.dll、.dll ファイルが生成されます、\<プロジェクト フォルダー\>bin/デバッグ フォルダー。  
   
-7.  **64 ビット コンピューターに対してのみ**: 次の手順を実行する前に厳密な名前で CustomWebPart.dll ファイルに署名します。 それはできません、インポートするための SharePoint ポータルで、CustomWebPart.dll、使用できる"手順 3: カスタムの Web パーツを使用する SharePoint ポータルを構成します"。 厳密な名前でアセンブリに署名する方法については、[方法: 厳密な名前でアセンブリに署名](https://msdn.microsoft.com/library/xc31ft41.aspx)を参照してください。
+7.  **64 ビット コンピューターに対してのみ**:次の手順を実行する前に厳密な名前で CustomWebPart.dll ファイルを署名します。 それ以外の場合、することができなくインポート、および SharePoint ポータルで、CustomWebPart.dll のため、使用する"手順 3。カスタム Web パーツを使用する SharePoint ポータルを構成します。" 厳密な名前でアセンブリに署名する方法については、次を参照してください。[方法。厳密な名前でアセンブリに署名](https://msdn.microsoft.com/library/xc31ft41.aspx)します。
   
-## <a name="step-2-deploy-the-custom-web-part-to-a-sharepoint-portal"></a>手順 2: SharePoint ポータルにカスタム Web パーツを展開します。  
- 作成される CustomWebPart.dll ファイル (カスタム Web パーツ) を作成するには、次を行う必要があります"手順 1: カスタム Web パーツの作成"のこのトピックでは、SharePoint ポータル上で使用。  
+## <a name="step-2-deploy-the-custom-web-part-to-a-sharepoint-portal"></a>手順 2:SharePoint ポータルにカスタム Web パーツを展開します。  
+ 作成される CustomWebPart.dll ファイル (カスタム Web パーツ) を作成するには、次を行う必要があります"手順 1。カスタム Web パーツを作成"このトピックでの SharePoint ポータルの使用:  
   
-- **CustomWebPart.dll ファイルを SharePoint Portal の bin フォルダーにコピー**: Microsoft Office SharePoint Server は、ポータルを作成、\<ドライブのルート\>: \Inetpub\wwwroot\wss\VirtualDirectories フォルダー。 フォルダーは、それぞれのポータルが作成され、ポート番号で識別できます。 作成した CustomWebPart.dll ファイルをコピーする必要があります"手順 1: カスタム Web パーツの作成"するには、このトピックの\<ドライブのルート\>: \Inetpub\wwwroot\wss\VirtualDirectories\\< Port_Number\>\bin フォルダー。 たとえば、SharePoint ポータルのポート番号が 13614 の場合に CustomWebPart.dll ファイルをコピーする必要があります、\<ドライブのルート\>: \Inetpub\wwwroot\wss\VirtualDirectories\13614\bin フォルダー。  
+- **SharePoint Portal の bin フォルダーに CustomWebPart.dll ファイルをコピー**:Microsoft Office SharePoint Server は、ポータルを作成、\<ドライブのルート\>: \Inetpub\wwwroot\wss\VirtualDirectories フォルダー。 フォルダーは、それぞれのポータルが作成され、ポート番号で識別できます。 作成した CustomWebPart.dll ファイルをコピーする必要があります"手順 1。カスタム Web パーツの作成"するには、このトピックの\<ドライブのルート\>: \Inetpub\wwwroot\wss\VirtualDirectories\\< Port_Number\>\bin フォルダー。 たとえば、SharePoint ポータルのポート番号が 13614 の場合に CustomWebPart.dll ファイルをコピーする必要があります、\<ドライブのルート\>: \Inetpub\wwwroot\wss\VirtualDirectories\13614\bin フォルダー。  
   
   > [!TIP]
   >  使用して、SharePoint ポータルのフォルダーの場所を検索する別の方法は、**インターネット インフォメーション サービス (IIS) マネージャー**ウィンドウ (**開始** > **実行** >  **inetmgr**)。 SharePoint ポータルの検索、**インターネット インフォメーション サービス (IIS) マネージャー**ウィンドウ ([コンピューター名] > の Web サイト > [ポータル-Name])、右クリックしをクリック**プロパティ**で、ショートカット メニュー。 SharePoint ポータルの [プロパティ] ダイアログ ボックスでをクリックして、**ホーム ディレクトリ**、タブを選び、**ローカル パス**ボックス。  
   
-- **Web.config ファイルの安全なコントロール エントリを追加**: CustomWebPart.dll ファイルを別のコンピューターと、複数のユーザーが使用するため、"safe"としてファイルを宣言する必要があります。 これを行うには、SharePoint portal フォルダーにある web.config ファイルを開く\<ドライブのルート\>: \Inetpub\wwwroot\wss\VirtualDirectories\\< Port_Number\>します。 下、`<SafeControls>`セクション、web.config ファイルの次の安全なコントロール エントリを追加します。  
+- **Web.config ファイルに安全なコントロール エントリを追加**:CustomWebPart.dll ファイルを別のコンピューターと、複数のユーザーが使用するため、「安全」としてファイルを宣言する必要があります。 これを行うには、SharePoint portal フォルダーにある web.config ファイルを開く\<ドライブのルート\>: \Inetpub\wwwroot\wss\VirtualDirectories\\< Port_Number\>します。 下、`<SafeControls>`セクション、web.config ファイルの次の安全なコントロール エントリを追加します。  
   
   - **32 ビット コンピューター。**  
   
@@ -75,7 +75,7 @@ ms.locfileid: "36988243"
   
     Web.config ファイルを保存して、閉じます。  
   
-## <a name="step-3-configure-the-sharepoint-portal-to-use-the-custom-web-part"></a>手順 3: カスタムの Web パーツを使用する SharePoint ポータルを構成します。  
+## <a name="step-3-configure-the-sharepoint-portal-to-use-the-custom-web-part"></a>手順 3:カスタム Web パーツを使用する SharePoint ポータルを構成します。  
  これを使用するには、SharePoint ポータルにするために、Microsoft Office SharePoint Server Web パーツ ギャラリーでカスタム Web パーツを追加する必要があります。 そのためには次を行います。  
   
 1. SharePoint 3.0 サーバーの全体管理を開始します。 クリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**Microsoft Office Server**、順にクリックします**SharePoint 3.0 サーバーの全体管理**.  

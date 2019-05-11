@@ -1,5 +1,5 @@
 ---
-title: SSO を使用して JD Edwards OneWorld を保護する |Microsoft ドキュメント
+title: SSO を使用して、JD Edwards OneWorld をセキュリティで保護する |Microsoft Docs
 description: Microsoft BizTalk Adapter JD Edwards OneWorld を BizTalk Server で使用する場合のセキュリティの概要
 ms.custom: ''
 ms.date: 10/18/2017
@@ -13,24 +13,24 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 97e72ffbc38cad2f5bbd622ed497663cf8ac5f3c
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: b44e203a614edf4fdf6fe1decd5862c5c33d3430
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
-ms.locfileid: "24015947"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65279965"
 ---
 # <a name="security-in-jd-edwards-oneworld"></a>JD Edwards OneWorld のセキュリティ
 
 ## <a name="overview"></a>概要
-Microsoft BizTalk Adapter for JD Edwards OneWorld ではシングル サインオン (SSO) をサポートしています。 エンタープライズ シングル サインオン ツールで作成された関連アプリケーションは JD Edwards OneWorld などのサーバー システムを表します。  
+Microsoft の BizTalk Adapter for JD Edwards OneWorld は、シングル サインオン (SSO) サポートを提供します。 エンタープライズ シングル サインオン ツールによって作成される関連アプリケーションは、JD Edwards OneWorld などのサーバー システムを表します。  
 
-このセクションでは、セキュリティで保護された環境で Microsoft BizTalk Adapter for JD Edwards OneWorld を展開するためのガイドラインを示します。  
+このセクションでは、Microsoft BizTalk Adapter for JD Edwards OneWorld のセキュリティで保護された環境に展開する方法についてのガイドラインを提供します。  
   
 > [!CAUTION]
->  承認されたユーザーだけに、BizTalk adapter for JD Edwards OneWorld の使用を制限することをお勧めように、クライアント ファイルが基幹業務アプリケーションに直接接続します。  
+>  承認されたユーザーだけでは、BizTalk Adapter for JD Edwards OneWorld の使用を制限することをお勧めします。 クライアント ファイルが基幹業務アプリケーションに直接接続します。  
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
   
 -   [シングル サインオンの要件](../core/requirements-for-single-sign-on5.md)  
   

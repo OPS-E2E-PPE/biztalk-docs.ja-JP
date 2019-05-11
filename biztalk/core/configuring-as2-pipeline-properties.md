@@ -14,15 +14,15 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0d2bb679e4e150382cd8ff3e80c838d269ba908f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7b8168af5ba8d9fbb242833011bfb0d9a51bdd96
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36988875"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65391353"
 ---
-# <a name="configuring-as2-pipeline-properties"></a>AS2 パイプラインのプロパティの構成
-パイプラインのプロパティは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] が送信または受信されたインターチェンジに解決されるアグリーメントを特定できなかった場合に、受信または送信 AS2 メッセージの処理で使用されます。  
+# <a name="configuring-as2-pipeline-properties"></a>AS2 パイプラインのプロパティを構成します。
+パイプラインのプロパティは、受信または送信の AS2 の処理で使用メッセージ[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]送信または受信したインターチェンジに解決されるアグリーメントを特定することができます。  
   
 ## <a name="prerequisites"></a>前提条件  
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者グループまたは [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] B2B Operators グループのメンバーとしてログオンしている必要があります。  
@@ -32,11 +32,11 @@ ms.locfileid: "36988875"
   
 |プロパティ|新しく使用する機能|値|パイプライン/ステージ|  
 |--------------|---------|------------|---------------------|  
-|ContentTransferEncoding|バイナリ データを ASCII テキスト形式で表現するために使用する方法を示します。|8bit (既定)<br /><br /> 7bit<br /><br /> 8bit|AS2EdiSend/エンコード<br /><br /> AS2Send/エンコード|  
+|ContentTransferEncoding|ASCII テキスト形式でバイナリ データを表現するメソッドが使用されることを示します。|8 bit (既定値)<br /><br /> 7 ビット<br /><br /> 8 ビット|AS2EdiSend/エンコード<br /><br /> AS2Send/エンコード|  
   
 ### <a name="to-set-a-pipeline-property"></a>パイプライン プロパティの設定  
   
-1. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールで、プロパティを設定するパイプラインを使用している受信場所または送信ポートを右クリックします。 **[プロパティ]** をクリックします。  
+1. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、受信場所を右クリックするか送信ポートのプロパティを設定するパイプラインを使用します。 **[プロパティ]** をクリックします。  
   
 2. プロパティを設定する対象のパイプラインの横にある省略記号ボタン ([…]) をクリックします。  
   

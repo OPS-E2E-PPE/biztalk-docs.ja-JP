@@ -19,12 +19,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c031f9a3325eda9cbcf865eaf72d1d9e100616c7
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e01292443316088986ee0897cf180b1e26b103ae
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36997539"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395291"
 ---
 # <a name="performance-considerations-for-bam-event-publishing"></a>BAM イベントを公開する際のパフォーマンスに関する考慮事項
 BAM では、ビジネス イベントの公開形式として、次に示す 2 種類の形式がサポートされています。  

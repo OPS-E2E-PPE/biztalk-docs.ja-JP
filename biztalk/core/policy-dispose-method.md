@@ -1,5 +1,5 @@
 ---
-title: Policy.Dispose メソッド |Microsoft ドキュメント
+title: Policy.Dispose メソッド |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,19 +12,19 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ba4713616edf55c149a215a6f7842cd5d0353dfe
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1eba833edcedd814fffd823bfe01729b77f0f033
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22263634"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65394960"
 ---
 # <a name="policydispose-method"></a>Policy.Dispose メソッド
-**Policy.Dispose**メソッドによって使用されているリソースを解放する、**ポリシー**クラス、さらにを返します、**ポリシー**キャッシュするオブジェクト。 同じポリシーが再度呼び出される場合、キャッシュされた**ポリシー**オブジェクトを使用すると、新しいを作成するために必要な時間を節約**ポリシー**オブジェクト。  
+**Policy.Dispose**メソッドで使用されるリソースを解放、**ポリシー**クラス、およびも返します、**ポリシー**キャッシュするオブジェクト。 同じポリシーが再度呼び出されるとき、キャッシュされた**ポリシー**オブジェクトを使用すると、新しいを作成するために必要な時間を節約**ポリシー**オブジェクト。  
   
- 明示的に呼び出さない場合、 **Policy.Dispose**メソッド、ポリシーは返されませんをキャッシュに、.NET ランタイムがガベージ コレクション プロセス中に、オブジェクトが解放されるまでです。 そのため、呼び出す必要は**Policy.Dispose**使用が終了したら、**ポリシー**オブジェクト。  
+ 明示的に呼び出さない場合、 **Policy.Dispose**メソッド、ポリシーは返されませんをキャッシュに、ガベージ コレクション プロセス中に、.NET ランタイムがオブジェクトを解放するまでです。 そのため、呼び出す必要がある**Policy.Dispose**使用が終了したら、**ポリシー**オブジェクト。  
   
- 使用するサンプル コード、 **Policy.Dispose**メソッドを次に示します。  
+ 使用するためのサンプル コード、 **Policy.Dispose**メソッドを次に示します。  
   
 ```  
 xmlDocument = IncomingXMLMessage.XMLCase;  

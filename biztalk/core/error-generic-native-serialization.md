@@ -1,5 +1,5 @@
 ---
-title: エラー - ネイティブ シリアライズの一般的な |Microsoft ドキュメント
+title: エラー - ネイティブ シリアライズの一般的な |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5d2eacfae17d72dbb17786a1d924cfdf14be20ee
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: dbe7591c6d48c647d60daf232b591acbad50ae4b
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22241002"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65530751"
 ---
 # <a name="error---generic-native-serialization"></a>エラー - ネイティブ シリアライズの一般的です
 **エラー コード**  
@@ -28,8 +28,8 @@ ms.locfileid: "22241002"
   
  **説明**  
   
- マップで指定された変換によって生成された XML 出力インスタンス メッセージは、特定できないエラーが原因で、送信先スキーマで指定されたネイティブ形式に変換できませんでした。  
+ マップで指定された変換によって生成される XML 出力インスタンス メッセージを特定できないエラーにより、送信先スキーマで指定されたネイティブな形式に変換されませんでした。  
   
  **ユーザーの操作**  
   
- BizTalk エディターで、送信先スキーマを開いて使用して、**スキーマの検証**、**インスタンスの検証**と**インスタンスの生成** コマンドを右クリックしたときに使用します。ソリューション エクスプ ローラーで、問題を特定するスキーマです。
+ 送信先スキーマを BizTalk エディターで開くしを使用して、**スキーマの検証**、**インスタンスの検証**と**インスタンスの生成**コマンドを使用できるは、右クリックすると、ソリューション エクスプ ローラーで、問題を分離するスキーマです。

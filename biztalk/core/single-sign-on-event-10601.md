@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10601 |Microsoft Docs'
+title: シングル サインオン:イベント 10601 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4ea1dfbcc36cc83498aa316cedeab8fc46a2f4dd
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: dedc94aa8cb5881e4ef738f6414f51463684003a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36987739"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65397789"
 ---
-# <a name="single-sign-on-event-10601"></a>シングル サインオン: イベント 10601
+# <a name="single-sign-on-event-10601"></a>シングル サインオン:イベント 10601
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                                                                                                                                                                                              |
@@ -30,10 +30,10 @@ ms.locfileid: "36987739"
 |  イベント ソース   |                                                                                                                            ENTSSO                                                                                                                            |
 |    コンポーネント    |                                                                                                                             なし                                                                                                                              |
 |  シンボル名  |                                                                                                                    SSO_WARN_INVALID_FLAGS                                                                                                                    |
-|  メッセージ テキスト   | 指定されたフラグはこの種類のアプリケーションの作成には無効です。<br /><br /> Details.%r のドキュメントを参照してください。<br /><br /> アプリケーション名: %1 %r<br /><br /> 指定したフラグ: % 2 %r<br /><br /> 許可されているフラグ: % 3 %r<br /><br /> 許可されていないフラグ: %4 |
+|  メッセージ テキスト   | 指定したフラグは、この種類のアプリケーションを作成できません。<br /><br /> Details.%r のドキュメントを参照してください。<br /><br /> アプリケーション名: %1 %r<br /><br /> 指定したフラグ: % 2 %r<br /><br /> 許可されているフラグ: % 3 %r<br /><br /> 許可されていないフラグ: %4 |
   
 ## <a name="explanation"></a>説明  
- 指定されたフラグはこの種類のアプリケーションの作成には無効です。 この警告には、関連するアプリケーションと共に、許可されているフラグと許可されていないフラグが示されます。  
+ 指定したフラグは、この種類のアプリケーションを作成できません。 警告には、関連するアプリケーションだけでなくは許可されているフラグといないものが一覧表示されます。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- 警告メッセージに示されているガイドラインに従ってアプリケーションを再作成します。
+ 警告メッセージに記載されているガイドラインに従うアプリケーションを再作成します。

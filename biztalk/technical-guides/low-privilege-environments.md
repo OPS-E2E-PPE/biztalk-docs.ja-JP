@@ -1,5 +1,5 @@
 ---
-title: 低い特権の環境 |Microsoft ドキュメント
+title: 低い特権の環境 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,27 +12,27 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d43f363bd96dd8e3109a8ce21b9565fb43e5f9bf
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 121655ecb70c084637f2fd481dc6bd2fce7a57cc
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22298298"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396291"
 ---
 # <a name="low-privilege-environments"></a>低い特権の環境
-複数のワークフローに含まれている[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理パックは、特定のアクションを実行する高度な権限を必要とします。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理パックでは、低特権の環境で基本的な監視機能を実行することができます。 2 つの管理ロール: BizTalk Server 管理者と BizTalk Server Operator です。 BizTalk Server 管理者は権限レベルの高いロールで、構成データおよび追跡データにアクセスできます。 BizTalk Server 管理者は、このような参加と成果物を開始、すべてのキー管理タスクを実行できます。 BizTalk Server Operator は、監視とトラブルシューティング操作にのみアクセス権を持つ特権の低いロールです。 詳細については、次を参照してください。[最低限のセキュリティ ユーザー権限](http://technet.microsoft.com/library/aa559845\(BTS.80\).aspx)です。  
+複数のワークフローに含まれている[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理パックには、特定のアクションを実行する管理者特権での権限が必要です。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理パックでは、低い特権の環境での基本的な監視機能を実行することができます。 2 つの管理ロール: BizTalk Server 管理者、および BizTalk Server Operator します。 BizTalk Server の管理者は、構成データおよび追跡データへのアクセスを高い特権を持つロールです。 BizTalk Server の管理者は、このような参加と成果物を開始、すべてのキー管理タスクを実行できます。 BizTalk Server Operator は、監視とトラブルシューティング操作にのみアクセス権を持つ特権の低いロールです。 詳細については、次を参照してください。[最小セキュリティ ユーザー権限](http://technet.microsoft.com/library/aa559845\(BTS.80\).aspx)します。  
   
  使用して[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理パック。  
   
 -   BizTalk Server Operator グループのメンバは、次の操作を実行できます。  
   
-    -   エラー、中断された messages\instances、構成の表示には、BizTalk Server を監視します。  
+    -   BizTalk Server の監視のエラー、中断された messages\instances、構成の表示をクエリします。  
   
     -   BizTalk Server のインストールと成果物を監視します。  
   
     -   サービスの状態とメッセージ フローの表示。  
   
-    -   開始またはアプリケーションやオーケストレーションなどの成果物を停止、送信ポートまたは送信ポート グループ参加している状態にあります。  
+    -   開始または停止アプリケーションやオーケストレーションなどの成果物、送信ポートまたは送信ポート グループに参加している状態にあります。  
   
     -   受信場所の有効化または無効化。 変更は、次回のキャッシュ更新の後で有効になります。キャッシュの更新間隔は既定では 60 秒で、 BizTalk Server のグループ レベルで設定できます。  
   

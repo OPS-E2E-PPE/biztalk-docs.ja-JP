@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cf7a181f200948335aab0ffa2a06d43d38408afb
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6255b6e7d4cc81eea493c1f9d81211c27771d371
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36977418"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395550"
 ---
 # <a name="scientific-functoids"></a>関数 Functoid
 
@@ -26,11 +26,11 @@ ms.locfileid: "36977418"
 
  例外として、**底指定対数**と**X ^ Y** functoid をそれぞれ 2 つの入力パラメーターを取る、**科学的**すべての functoid が 1 つのパラメーターを受け取る。  
 
- 4 つの三角関数**科学的**functoid (**アーク タンジェント**、**コサイン**、**サイン**、および**タンジェント**)、関連する入力または出力パラメーターの単位として度ではなく、ラジアンを使用すべて。 ラジアンは角度の単位で、2π ラジアンで円になります。 つまり、次の式が成立します。  
+ 4 つの三角関数**科学的**functoid (**アーク タンジェント**、**コサイン**、**サイン**、および**タンジェント**)、関連する入力または出力パラメーターの単位として度ではなく、ラジアンを使用すべて。 ラジアンは、2 π ラジアンを円でが存在するよう、角度の単位の単位です。 これを次に示します。  
 
-- 2π ラジアン = 360 度  
+- 2π radians equals 360 degrees  
 
-- 1 ラジアン = 180/π 度  
+- 1 radian = 180/π degrees  
 
 - 1 度 = π/180 ラジアン  
 
@@ -39,7 +39,7 @@ ms.locfileid: "36977418"
 ## <a name="available-functoids"></a>使用可能な functoid  
  **科学的**functoid には。 
 
-* 10^n
+* 10 ^ n
 * アーク タンジェント
 * 底指定対数
 * 常用対数
@@ -48,7 +48,7 @@ ms.locfileid: "36977418"
 * 自然対数
 * サイン
 * タンジェント
-* X^Y
+* X ^ Y
 
 ## <a name="see-also"></a>参照  
 - [マップに基本 Functoid を追加する方法](../core/how-to-add-basic-functoids-to-a-map.md)   

@@ -12,18 +12,18 @@ caps.latest.revision: 27
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cb47b817c0f48cb82337afc6c82613fc35df28f6
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4adefbfa2e2f9e92b606c9d46bd881b64ddd0864
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36986579"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65360990"
 ---
 # <a name="addapp-command"></a>AddApp コマンド
-BizTalk 管理データベースに新しい BizTalk アプリケーションを作成します。 作成したアプリケーションは、BizTalk Server 管理コンソールの [アプリケーション] ノードに表示されます。 ことができますにアイテムを追加、アプリケーション、AddResource コマンドを使用して」の説明に従って[AddResource コマンド](../core/addresource-command.md)します。  
+BizTalk 管理データベースに新しい BizTalk アプリケーションを作成します。 BizTalk Server 管理コンソールの [アプリケーション] ノードでは、アプリケーションを表示できます。 ことができますにアイテムを追加、アプリケーション、AddResource コマンドを使用して」の説明に従って[AddResource コマンド](../core/addresource-command.md)します。  
   
 ## <a name="usage"></a>使用方法  
- **BTSTask AddApp/applicationname は:** *値*[**/Description:**<em>値</em>] **[/既定値]** [**/サーバー:**<em>値</em>] [**/database:**<em>値</em>]  
+ **BTSTask AddApp /ApplicationName:** *value* [**/Description:**<em>value</em>] **[/Default]** [**/Server:**<em>value</em>] [**/Database:**<em>value</em>]  
   
 ## <a name="parameters"></a>パラメーター  
   
@@ -36,7 +36,7 @@ BizTalk 管理データベースに新しい BizTalk アプリケーションを
 |**/データベース**(または **/Da**、「解説」を参照してください)|いいえ|BizTalk 管理データベースの名前。 指定しなかった場合、SQL Server のローカル インスタンスで実行されている BizTalk 管理データベースが使用されます。|  
   
 ## <a name="sample"></a>サンプル  
- **AddApp applicationname: myapplication/Description:「BizTalk アプリケーション」**  
+ **AddApp /ApplicationName:MyApplication /Description:"My BizTalk application"**  
   
 ## <a name="remarks"></a>コメント  
  パラメーターの大文字と小文字は区別されません。 パラメーター名は、すべて入力する必要はありません。最初の数文字 (一意に特定できるだけの文字数) を入力するだけで構いません。  

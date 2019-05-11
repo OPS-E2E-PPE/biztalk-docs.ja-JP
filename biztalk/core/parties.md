@@ -1,5 +1,5 @@
 ---
-title: パーティ |Microsoft ドキュメント
+title: パーティ |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,15 +15,15 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7b4b86599a5a57e15b8493de121af8849fd386f0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 72233c53a90abb92bc117bbb59757e301a06168c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22263426"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395062"
 ---
 # <a name="parties"></a>パーティ
-パーティ (つまり、組織単位) は、オーケストレーションと連携する BizTalk Server 外部のエンティティを表します。 BizTalk Server では、メッセージ交換の対象となる各組織は、パーティで表されます。 パーティをロールに参加させてパーティと連携する方法を定義できます。  
+パーティ、または組織単位、オーケストレーションと連携する BizTalk Server 外部のエンティティを表します。 BizTalk Server では、メッセージを交換する各組織は、パーティによって表されます。 パーティがロールに参加させてと連携する方法を定義できます。  
   
 ## <a name="see-also"></a>参照  
- [成果物](../core/artifacts.md)
+ [アイテム](../core/artifacts.md)

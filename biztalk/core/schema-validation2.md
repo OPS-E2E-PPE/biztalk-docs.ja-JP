@@ -12,21 +12,21 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8648b1fc098fc303f3afa2fc47733103f30a6f0a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f74afc7c9b0a10c5050ce13d7ce5ab9c8c13967f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36999472"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396869"
 ---
 # <a name="schema-validation"></a>スキーマの検証
 EDI 受信パイプラインと EDI 送信パイプラインは、次のスキーマを使用してメッセージを検証します。  
   
-- **エンベロープの検証**: サービス スキーマ`Microsoft.BizTalk.Edi.BaseArtifacts.dll`で [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]  
+- **エンベロープの検証**:サービス スキーマ`Microsoft.BizTalk.Edi.BaseArtifacts.dll`で [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]  
   
-- **トランザクション セットの検証**: スキーマのメッセージ スキーマに格納[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]xsd_schema \edi にあります  
+- **トランザクション セットの検証**:スキーマ内のメッセージ スキーマに格納[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]xsd_schema \edi にあります  
   
-- **受信確認メッセージの検証**: CONTRL、997、および TA1 のスキーマ`Microsoft.BizTalk.Edi.BaseArtifacts.dll`します。  
+- **受信確認メッセージの検証**:CONTRL、997、および TA1 のスキーマ`Microsoft.BizTalk.Edi.BaseArtifacts.dll`します。  
   
   `Microsoft.BizTalk.Edi.BaseArtifacts.dll` 内のスキーマは、セットアップ プログラムによって自動的に展開されます。 これらのスキーマが記載されて、**スキーマ**のノード、 **BizTalk EDI アプリケーション**で、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソール。  
   
@@ -34,7 +34,7 @@ EDI 受信パイプラインと EDI 送信パイプラインは、次のスキ�
   
   **スキーマの決定**  
   
-  EDI 受信パイプラインは、受信メッセージの処理時に、アグリーメントの参照とスキーマ検索プロセスを実行して、メッセージの処理に使用するスキーマの名前空間を決定します。 詳細については、[アグリーメントの解決、スキーマ探索、および EDI メッセージの受信を承認](../core/agreement-resolution-schema-discovery-and-authorization-for-received-edi.md)を参照してください。  
+  EDI 受信パイプラインは、受信メッセージの処理時に、アグリーメントの参照とスキーマ検索プロセスを実行して、メッセージの処理に使用するスキーマの名前空間を決定します。 詳細については、次を参照してください。[アグリーメントの解決、スキーマ探索、および EDI メッセージの受信を承認](../core/agreement-resolution-schema-discovery-and-authorization-for-received-edi.md)します。  
   
   EDI 送信パイプラインは、送信メッセージの作成時に、アグリーメント プロパティを使用してエンベロープに必要事項を記載した後、トランザクション セット内の情報に対してスキーマの検証を実行します。 スキーマが読み込まれると、送信パイプラインは、スキーマをアグリーメント プロパティ (アグリーメントが指定されていない場合はフォールバック アグリーメント) に照らし合わせて検証します。 スキーマの検証に成功したら、パイプラインは、そのスキーマに照らし合わせてトランザクション セットを検証します。  
   

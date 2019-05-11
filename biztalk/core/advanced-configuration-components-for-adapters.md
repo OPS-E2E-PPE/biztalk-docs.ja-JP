@@ -1,5 +1,5 @@
 ---
-title: アダプターの構成コンポーネントを高度な |Microsoft ドキュメント
+title: アダプターの構成コンポーネントを高度な |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,21 +12,21 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8307f54caffec269466dcd9398a9d911fdc83715
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 33509a64a80aa27d241a3b2634e89026cecfe0c1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22230010"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65360667"
 ---
 # <a name="advanced-configuration-components-for-adapters"></a>アダプターの高度な構成コンポーネント
-BizTalk アダプター フレームワークは、カスタム ドロップダウン エディター、カスタム モーダル ダイアログ エディター、およびカスタム型コンバーターをサポートします。 これらのカスタム デザイン コンポーネントは、ユーザー名やパスワード情報を入力として受け取る場合に特に役に立ちます。  
+BizTalk アダプター フレームワークには、カスタム ドロップダウン エディターやカスタムのモーダル ダイアログ エディター、カスタム型コンバーターがサポートしています。 これらのカスタム デザイン コンポーネントは、入力としてユーザー名とパスワードの情報を作成する際に特に便利です。  
   
- 構成スキーマの特定のデータ フィールド (要素または属性) に対してカスタム エディターやカスタム型コンバーターを呼び出すことができます。 Microsoft」の説明に従って[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]ヘルプ、エディターから派生する必要があります**System.Drawing.Design.UITypeEditor**と、型コンバーター **System.ComponentModel.TypeConverter**です。  
+ カスタム エディターか、構成スキーマで特定のデータ フィールド (要素または属性) の型コンバーターを呼び出すことができます。 Microsoft」の説明に従って[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]ヘルプについては、エディターから派生する必要があります**System.Drawing.Design.UITypeEditor**から型コンバーターと**System.ComponentModel.TypeConverter**します。  
   
- エディターが最小限に抑えるよりも優先、 **GetEditStyle**エディターの種類を指定する方法 (**モーダル**ダイアログ ボックスで、**ドロップダウン**コントロール、または**None**上記の) および**EditValue**エディターでは、値を変更するメソッド。  
+ エディターの最低限のオーバーライド、 **GetEditStyle**エディターの種類を指定するメソッド (**モーダル**ダイアログ ボックスで、**ドロップダウン**コントロール、または**None**上記の) および**EditValue**エディターを使用して値を変更するメソッド。  
   
- 実行する型コンバーターは通常よりも優先、 **ConvertFrom**、 **CanConvertFrom**、 **ConvertTo**、 **CanConvertTo**、 **GetStandardValues**、 **GetStandardValuesSupported**、および**GetStandardValuesExclusive**.NET Framework クラス ライブラリのメソッドです。  
+ 型コンバーターは通常よりも優先、 **ConvertFrom**、 **CanConvertFrom**、 **ConvertTo**、 **CanConvertTo**、 **GetStandardValues**、 **GetStandardValuesSupported**、および**GetStandardValuesExclusive**.NET Framework クラス ライブラリのメソッド。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
@@ -36,4 +36,4 @@ BizTalk アダプター フレームワークは、カスタム ドロップダ�
   
 -   [アダプター構成のカスタム モデル ダイアログ エディター](../core/custom-modal-dialog-editor-for-adapter-configuration.md)  
   
--   [アダプターの構成のカスタム型コンバーター](../core/custom-type-converter-for-adapter-configuration.md)
+-   [アダプター構成のカスタム型コンバーター](../core/custom-type-converter-for-adapter-configuration.md)

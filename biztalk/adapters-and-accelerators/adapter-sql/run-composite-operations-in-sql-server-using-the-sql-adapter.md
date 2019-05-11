@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5acf0eca210bd163c0d74e7d8d873ec6009d40a5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 95c7863666317b42fa32b04073244915eae6d7dd
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36999283"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65367979"
 ---
 # <a name="run-composite-operations-in-sql-server--using-the-sql-adapter"></a>SQL アダプターを使用して SQL Server で複合操作を実行します。
 [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]アダプター クライアントが SQL Server データベースでの複合操作を実行できるようにします。 複合操作では、および任意の順序で、次の操作の任意の数を含めることができます。  

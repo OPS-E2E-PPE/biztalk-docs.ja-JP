@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ac6ef809104e1ce11385cb88d94547d0de496af1
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9fa1744a29d17be79766839c0f85a2a416110646
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37009907"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65393361"
 ---
 # <a name="sendports-biztalk-server-sample"></a>SendPorts (BizTalk Server サンプル)
 SendPorts サンプルは、列挙およびを使用して送信ポートを管理する方法を示します、 **Microsoft.BizTalk.ExplorerOM**管理クラス。  
@@ -26,7 +26,7 @@ SendPorts サンプルは、列挙およびを使用して送信ポートを管�
 
 - このサンプルの管理オブジェクトを使用するには、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者特権が必要です。  
 
-- Windows PowerShell スクリプトを実行するには、Windows PowerShell 実行ポリシーが必要です。 詳細については、:[実行ポリシーの確認](http://go.microsoft.com/fwlink/?LinkId=128930)を参照してください。  
+- Windows PowerShell スクリプトを実行するには、Windows PowerShell 実行ポリシーが必要です。 詳しくは、次のトピックをご覧ください。[実行ポリシーの確認](http://go.microsoft.com/fwlink/?LinkId=128930)します。  
 
 ## <a name="what-this-sample-does"></a>このサンプルの処理  
  このサンプルを使用して、 **BtsCatalogExplorer**と**SendPort**クラスを**Microsoft.BizTalk.ExplorerOM** での送信ポートの名前空間を管理するには[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]環境。 サンプルは Microsoft [!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)] で作成されています。 このトピックには、Windows PowerShell のスクリプト例も含まれています。 このサンプルは次の操作を示します。  
@@ -62,7 +62,7 @@ SendPorts サンプルは、列挙およびを使用して送信ポートを管�
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
  このサンプルは、SDK がある次の場所にあります。  
 
- \<*パスのサンプル*\>\Admin\ExplorerOM\SendPorts  
+ \<*Samples Path*\>\Admin\ExplorerOM\SendPorts  
 
  次の表は、このサンプルのファイルとその目的を示しています。  
 
@@ -84,7 +84,7 @@ SendPorts サンプルは、列挙およびを使用して送信ポートを管�
 
 1.  コマンド ウィンドウを開き、次のフォルダーに移動します。  
 
-     \<*パスのサンプル*\>\Admin\ExplorerOM\SendPorts\bin\Debug  
+     \<*Samples Path*\>\Admin\ExplorerOM\SendPorts\bin\Debug  
 
 2.  SendPorts.exe ファイルを実行します。  
 

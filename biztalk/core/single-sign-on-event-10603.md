@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10603 |Microsoft Docs'
+title: シングル サインオン:イベント 10603 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5416ae8a2dcfdf5a3da6d8c1d00eb5a556fc3599
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c57b75ba39be2b49606b351573f50c677077aa48
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36970067"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65397780"
 ---
-# <a name="single-sign-on-event-10603"></a>シングル サインオン: イベント 10603
+# <a name="single-sign-on-event-10603"></a>シングル サインオン:イベント 10603
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                                                                                    |
@@ -30,10 +30,10 @@ ms.locfileid: "36970067"
 |  イベント ソース   |                                                                       ENTSSO                                                                       |
 |    コンポーネント    |                                                                        なし                                                                         |
 |  シンボル名  |                                                                 SSO_WARN_DB_ACCESS                                                                 |
-|  メッセージ テキスト   | SSO データベースにアクセスできませんでした。 この状況が継続すると、SSO サービスはオフラインになります。%r<br /><br /> %1.%r<br /><br /> SQL エラー コード: %2 |
+|  メッセージ テキスト   | SSO データベースにアクセスできませんでした。 この条件が解決しない場合、SSO サービスになる offline.%r<br /><br /> %1.%r<br /><br /> SQL エラー コード: %2 |
   
 ## <a name="explanation"></a>説明  
- SSO データベースを利用できません。  
+ SSO データベースは使用できません。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- 警告に含まれる SQL エラー コードを確認します。 これによってガイダンスが示される場合があります。 ガイダンスが示されない場合は、マイクロソフト製品サポート サービスにお問い合わせください。
+ 警告に含まれる SQL エラー コードを確認します。 いくつかのガイダンスが提供することができます。 それ以外の場合は、マイクロソフト製品サポート サービスにお問い合わせください。

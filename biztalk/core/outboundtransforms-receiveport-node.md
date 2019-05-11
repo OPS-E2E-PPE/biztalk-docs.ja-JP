@@ -1,5 +1,5 @@
 ---
-title: OutboundTransforms (ReceivePort ノード) |Microsoft ドキュメント
+title: OutboundTransforms (ReceivePort ノード) |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,19 +14,19 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fc6fa0bc804fad0d0ddea79614c392769452f1c7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 109995aa38731338ce53d4dea58226fa081fd17a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22263866"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65393422"
 ---
 # <a name="outboundtransforms-receiveport-node"></a>OutboundTransforms (ReceivePort ノード)
-バインド ファイルの ReceivePort ノードの OutboundTransforms ノードには、バインド ファイルと共にエクスポートされる双方向受信ポートの送信変換のコレクションが含まれます。  
+バインド ファイルの ReceivePort ノードの OutboundTransforms ノードには、出力方向のコレクションが含まれています。 双方向の変換は、バインド ファイルと共にエクスポートされるポートを受信します。  
   
 ## <a name="nodes-in-the-outboundtransforms-node"></a>OutboundTransforms ノード内のノード  
  次の表に、バインド ファイルのこのノードに設定できるプロパティを示します。  
   
-|**名前**|**ノード型**|**データ型**|**Description**|**制限**|**コメント**|  
+|**名前**|**ノードの種類**|**[データ型]**|**[説明]**|**制限**|**コメント**|  
 |--------------|-------------------|-------------------|---------------------|----------------------|------------------|  
-|[Transform (OutboundTransforms ノード)](../core/transform-outboundtransforms-node.md)|レコード|Transform (ComplexType)|BizTalk Server マップまたは変換を指定します。これは送信元スキーマと送信先スキーマのマッピングを表す項目です。|任意|既定値: なし|
+|[Transform (OutboundTransforms ノード)](../core/transform-outboundtransforms-node.md)|レコード|変換 (ComplexType)|BizTalk Server マップまたは変換で、送信元スキーマと送信先スキーマ間のマッピングを表す項目を指定します。|任意|既定値: なし|

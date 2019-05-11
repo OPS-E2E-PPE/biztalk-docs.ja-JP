@@ -1,5 +1,5 @@
 ---
-title: BizTalk Server アプリケーションのバックアップ |Microsoft ドキュメント
+title: BizTalk Server アプリケーションのバックアップ |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,21 +12,21 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1d125a1430aa2d044abba7632fa31a9c89f2bc50
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a5f209ea114cb515e0d09f5ddd80bbf864501038
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22230378"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65530613"
 ---
 # <a name="backing-up-biztalk-server-applications"></a>BizTalk Server アプリケーションのバックアップ
-ハードウェア障害が発生した後、BizTalk Server システムを確実に復旧するには、適切なバックアップを作成しておくことが重要です。 バックアップ計画では、BizTalk アプリケーションをリモート サーバーにエクスポートし、アプリケーションをバックアップすることをお勧めします。  
+ハードウェア障害の後、BizTalk Server システムを回復できることを確認するには、適切なバックアップがある必要があります。 、ままの状態のバックアップの一部としては、BizTalk アプリケーションをリモート サーバーをエクスポートして、これらのアプリケーションをバックアップすることをお勧めします。  
   
- こうしておくと、後で BizTalk Server データベースを復元して BizTalk Server を再インストールしたときに、バックアップしたアプリケーションをインポートできます。 エクスポートして、アプリケーションをインポートする方法の詳細については、次を参照してください。[を管理する BizTalk アプリケーションの展開と](../core/deploying-and-managing-biztalk-applications.md)です。  
+ 後で、BizTalk Server データベースを復元して、BizTalk Server を再インストールするときに、これらのアプリケーションをインポートできます。 エクスポートして、アプリケーションをインポートする方法の詳細については、次を参照してください。 [Deploying and Managing BizTalk Applications](../core/deploying-and-managing-biztalk-applications.md)します。  
   
- コンピュータに展開されているすべての BizTalk アプリケーションについて、.msi ファイルをエクスポートし、別のサーバー上のバックアップ場所に保存してください。 .msi ファイルを使用すると、コンピュータを復旧した後で BizTalk Server に必要なリソースを再インストールできます。 .msi には必要なリソースをすべて含め、これらのリソースを .msi ファイルでインストールするときに必要な手順も指定しておきます。 BizTalk アプリケーションが、.msi ファイルに含まれていないユーザー アセンブリやその他の DLL に依存している場合は、これらのコンポーネントも別にバックアップする必要があります。  
+ コンピューターに展開されているすべての BizTalk アプリケーションを .msi ファイルをエクスポートして (別のサーバー) 上のバックアップ場所に保存をします。 .Msi ファイルを使用すると、セットアップ先のコンピューターを回復した後に、BizTalk Server で必要なリソースを再インストールできます。 .Msi ファイルに、必要なリソースが含まれていると、これらのリソースの .msi のインストールで実行するアクションを指定することを確認してください。 場合は、BizTalk アプリケーションは、すべてのユーザー アセンブリまたは .msi ファイルに含まれていないその他の Dll に依存する必要がありますをバックアップすることを個別にします。  
   
- アプリケーションのエクスポート手順は、コンテンツ ベースのルーティングやオーケストレーションが含まれる場合でも同じです。 BizTalk アプリケーションを変更したときには、常にこの手順を実行する必要があります。 詳細については、次を参照してください。[を BizTalk アプリケーションをエクスポートする方法](../core/how-to-export-a-biztalk-application.md)です。  
+ アプリケーションのエクスポート手順は、オーケストレーションのシナリオと、コンテンツ ベース ルーティングのシナリオと同じです。 BizTalk アプリケーションを変更するたびに、このプロセスが繰り返されます。 詳細については、次を参照してください。 [BizTalk アプリケーションのエクスポート方法](../core/how-to-export-a-biztalk-application.md)します。  
   
 ## <a name="see-also"></a>参照  
  [BizTalk Server を実行しているコンピューターのバックアップ](../core/backing-up-a-computer-running-biztalk-server.md)

@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6e0447a89929ba729de78b2e10f337f0a62b28e4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 30e9004b1e464b9decc60b78f2aba670f08e5a9f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37013683"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395039"
 ---
 # <a name="partnermanagement-biztalk-server-sample"></a>PartnerManagement (BizTalk Server サンプル)
 PartnerManagement サンプルでパーティを管理する方法を示します、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]環境を使用して、 **ExplorerOM**管理オブジェクト。  
@@ -29,20 +29,20 @@ PartnerManagement サンプルでパーティを管理する方法を示しま�
 - Windows PowerShell スクリプトを実行するには、Windows PowerShell 実行ポリシーが必要です。 詳細については、「 [実行ポリシーの確認](http://go.microsoft.com/fwlink/?LinkId=128930)」を参照してください。  
 
 ## <a name="what-this-sample-does"></a>このサンプルの処理  
- このサンプルでは、管理クラスを使用して、 **Microsoft.BizTalk.ExplorerOM**パーティを管理する名前空間。 パーティは、ビジネス プロセスで操作できる取引先またはバックエンド アプリケーションを表します。 パーティの詳細についてはドキュメントを参照して一般に、[パーティ](../core/parties.md)または[ロール リンクとサービス リンク ロール](../core/role-links-and-service-link-roles.md)します。 サンプルは Microsoft [!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)] で作成されています。 このトピックには、Windows PowerShell のスクリプト例も含まれています。 このサンプルは次の操作を示します。  
+ このサンプルでは、管理クラスを使用して、 **Microsoft.BizTalk.ExplorerOM**パーティを管理する名前空間。 パーティは、取引先またはバックエンド アプリケーションのビジネス プロセスを操作できます。 パーティの詳細についてはドキュメントを参照して一般に、[パーティ](../core/parties.md)または[ロール リンクとサービス リンク ロール](../core/role-links-and-service-link-roles.md)します。 サンプルは Microsoft [!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)] で作成されています。 このトピックには、Windows PowerShell のスクリプト例も含まれています。 このサンプルは次の操作を示します。  
 
-- カスタム エイリアスまたは標準エイリアスを持つ新しいパーティを作成し、既存の [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 送信ポートをパーティに追加する。  
+- カスタムまたは標準のエイリアスを持つ新しいパーティを作成して、既存の追加[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ポートをパーティに送信します。  
 
-- 既存のロール リンクを持つ新しいパーティを BizTalk Server に参加させる。  
+- BizTalk server の既存のロール リンクを持つ新しいパーティを参加させます。  
 
-- 新しいパーティを参加解除する。  
+- 参加解除、新しいパーティです。  
 
-- 新しいパーティを削除する。  
+- 新しいパーティを削除しています。  
 
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
  このサンプルは、SDK がある次の場所にあります。  
 
- \<*パスのサンプル*\>\Admin\ExplorerOM\PartnerManagement  
+ \<*Samples Path*\>\Admin\ExplorerOM\PartnerManagement  
 
  次の表は、このサンプルのファイルとその目的を示しています。  
 
@@ -53,17 +53,17 @@ PartnerManagement サンプルでパーティを管理する方法を示しま�
 | PartnerManagement.sln と PartnerManagement.csproj |                                  このサンプルのソリューション ファイルとプロジェクト ファイル。                                  |
 
 ## <a name="building-and-running-this-sample"></a>このサンプルのビルドおよび実行  
- サンプルをビルドする前に、コードを 4 か所で変更し、BizTalk Server のサンプルをカスタマイズする必要があります。 これは、サンプルではパーティに関連付けられた送信ポートと参加のロールに任意の名前を使用しているためです。 したがって、サンプルに有効な名前を指定する必要があります。 まず、次のディレクトリから PartyResolution サンプルのビルドがこのトピックでこのサンプルを示すためには、説明: \<*サンプル パス*\>\Orchestrations\PartyResolution。 この方法を使用するのは、有効なロール名と送信ポート名が BizTalk Server に存在することを確認し、サンプルの手順を示すことができるようにするためです。  
+ このサンプルをビルドする前に、BizTalk server のサンプルをカスタマイズする 4 つのコード変更を加える必要があります。 これは、機能は、サンプルは、パーティと参加リストの名前を任意のロールに関連付けられている送信ポートの任意の名前を使用するため必要です。 そのため、サンプルに有効な名前を指定する必要があります。 このサンプルに示すためには、このトピックでは、最初に、次のディレクトリから PartyResolution サンプルのビルドについて説明します。\<*パスのサンプル*\>\Orchestrations\PartyResolution。 このアプローチは、有効なロール名を確認し、送信ポート名がサンプルの手順を示すため、BizTalk server 上に存在するに使用されます。  
 
 #### <a name="to-build-this-sample"></a>このサンプルをビルドするには  
 
-1. 最初に、有効なロール名と送信ポート名をサンプルで使用できるよう、PartyResolution サンプルがビルドされ初期化されていることを確認します。 これに「ビルドと初期化このサンプルの」というタイトルのセクションに記載されている[PartyResolution (BizTalk Server サンプル)](../core/partyresolution-biztalk-server-sample.md)します。  
+1. まず、PartyResolution サンプルをビルドし、有効なロール名と送信ポート名は、サンプルで使用できるように初期化を確認します。 これに「ビルドと初期化このサンプルの」というタイトルのセクションに記載されている[PartyResolution (BizTalk Server サンプル)](../core/partyresolution-biztalk-server-sample.md)します。  
 
-2. [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] で、ソリューション ファイル PartnerManagement.sln を開きます。  
+2. [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]、ソリューション ファイル PartnerManagement.sln を開きます。  
 
-3. ソリューション エクスプローラーでソース ファイル PartnerManagement.cs を開きます。  
+3. ソリューション エクスプ ローラーでは、ソース ファイル PartnerManagement.cs を開きます。  
 
-4. という名前の関数までスクロール**CreateParty**と 2 つの送信ポートの名前、PartyResolution からサンプルまたは、BizTalk server 環境から有効な名前を使用して挿入します。 次のコード例では、PartyResolution サンプルの送信ポートを使用する変更を示しています。  
+4. という名前の関数までスクロール**CreateParty**と 2 つの送信ポートの名前、PartyResolution からサンプルまたは、BizTalk server 環境から有効な名前を使用して挿入します。 次のコード例では、PartyResolution サンプルからの送信ポートを使用して変更を示します。  
 
    ```  
    // Replacing arbitrary send port names with PartyResolution send port names ===  
@@ -75,7 +75,7 @@ PartnerManagement サンプルでパーティを管理する方法を示しま�
 
    ```  
 
-5. という名前の関数までスクロール**EnlistParty** "shipmentrole"ロールの Supplier アセンブリを検索するように、foreach ループを変更し、参加リストで使用します。 次のコード例では、PartyResolution サンプルの ShipmentRole を使用する変更を示しています。  
+5. という名前の関数までスクロール**EnlistParty** "shipmentrole"ロールの Supplier アセンブリを検索するように、foreach ループを変更し、参加リストで使用します。 次のコード例では、PartyResolution サンプルの ShipmentRole を使用する変更を示します。  
 
    ```  
                // Search for the “Shipmentrole” instead of “shipperRole”  
@@ -93,7 +93,7 @@ PartnerManagement サンプルでパーティを管理する方法を示しま�
 
    ```  
 
-6. という名前の関数までスクロール**UnenlistParty** ShipmentRole の Supplier アセンブリを検索する foreach ループを変更します。 次のコード例に、この変更を示します。  
+6. という名前の関数までスクロール**UnenlistParty** ShipmentRole の Supplier アセンブリを検索する foreach ループを変更します。 次のコード例では、この変更を示します。  
 
    ```  
                // Search for the “ShipmentRole” instead of “shipperRole”  
@@ -111,7 +111,7 @@ PartnerManagement サンプルでパーティを管理する方法を示しま�
 
    ```  
 
-7. ShipmentRole を持つ新しいパーティを作成し、参加させた後、サンプルはすぐにパーティを参加解除し削除するようデザインされています。 メイン プロシージャに次のコード変更を追加して実行を一時停止し、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールで新しいパーティに作成した参加を表示できるようにします。  
+7. すぐに解除する、サンプルを設計を作成し、ShipmentRole を持つ新しいパーティを参加させる、-、パーティを参加させるし、それを削除します。 実行を一時停止し、作成した新しいパーティの参加を表示することを許可するのには、メインのプロシージャに次のコード変更を追加、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソール。  
 
    ```  
    static void Main(string[] args)  
@@ -134,7 +134,7 @@ PartnerManagement サンプルでパーティを管理する方法を示しま�
 
 1. コマンド ウィンドウを開き、次のフォルダーに移動します。  
 
-    \<*パスのサンプル*\>\Admin\ExplorerOM\PartnerManagement\bin\Debug  
+    \<*Samples Path*\>\Admin\ExplorerOM\PartnerManagement\bin\Debug  
 
 2. PartnerManagement.exe ファイルを実行します。  
 
@@ -142,7 +142,7 @@ PartnerManagement サンプルでパーティを管理する方法を示しま�
 
 4. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、ツリー ビューに移動し、 **ShipmentRole**  **Applications\BizTalk Application 1 \role Links**します。 ダブルクリック**ShipmentRole**に注意してください**ShipmentAgency1**にマップされている、 **SupplierAdvice**操作と**ShipmentAgency2**マップされている、 **SupplierOrder**参加で操作します。  
 
-5. コマンド ウィンドウで Enter キーを押すと、サンプルを参加解除し削除できます。  
+5. コマンド ウィンドウで enter キーを解除するサンプルを許可する-参加させ、新しいパーティを削除します。  
 
 6. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、パーティが一覧から削除されていないことを確認、 **ShipmentRole**から削除し、**パーティ**ノード。  
 
@@ -338,7 +338,7 @@ DeleteParty
 
 ```  
 
- 次に、PowerShell スクリプト例の実行による出力の例を示します。 スクリプトの実行が失敗した場合、PowerShell スクリプトがこのトピックの先頭にある要件の説明に従って有効になっていることを確認してください。  
+ PowerShell のサンプル スクリプトを実行してからの出力例を次に示します。 スクリプトは、実行に失敗した場合、このトピックの上部にある、要件に従って PowerShell スクリプトが有効になっていることを確認します。  
 
 ```  
 PS C:\> .\PartnerManagement.ps1  

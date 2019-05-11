@@ -1,5 +1,5 @@
 ---
-title: 静的アダプターの IStaticAdapterConfig インターフェイス |Microsoft ドキュメント
+title: 静的アダプターの IStaticAdapterConfig インターフェイス |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,21 +12,21 @@ caps.latest.revision: 27
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2de8d95ba4a5945cb43e3681055750cdad628759
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 296520f7f879e45657c6559827387239d7e10fe0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22277386"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65392865"
 ---
 # <a name="static-adapter-istaticadapterconfig-interface"></a>静的アダプターの IStaticAdapterConfig インターフェイス
-静的デザイン時アダプターを実装する必要があります、 **IStaticAdapterConfig**インターフェイスです。 このインターフェイスによって、アダプター メタデータの追加ウィザードが利用可能になり、アダプターからサービス組織や個々のサービスの説明を取得できます。 このウィザードでは、 **GetServiceOrganization**と**GetServiceDescription**アダプターと連携するメタデータ情報を取得し、BizTalk に追加する方法でプロジェクトを[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]です。  
+静的デザイン時アダプターを実装する必要があります、 **IStaticAdapterConfig**インターフェイス。 これにより、アダプター メタデータの追加ウィザードと対話し、アダプターからサービス組織や個々 のサービスの説明を取得することができます。 ウィザードでは、 **GetServiceOrganization**と**GetServiceDescription**アダプターと連携するメタデータ情報をプルし、BizTalk に追加する方法のプロジェクトで[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]します。  
   
- **GetServiceOrganization**メソッドは、アダプターの公開されたサービスの階層構造を表す XML インスタンス ドキュメントを取得します。 この構造体に表示されるサービス組織ツリーが生成されます、 **インポートするサービス**アダプター メタデータの追加ウィザードのページです。  
+ **GetServiceOrganization**メソッドは、アダプターの公開されているサービスの階層構造を表す XML インスタンス ドキュメントを取得します。 この構造体に表示されるサービス組織ツリーが生成されます、 **インポートするサービス**アダプター メタデータの追加ウィザードのページ。  
   
- インポートするサービスを選択すると、ウィザードは呼び出し、 **GetServiceDescription**メソッドの追加 で選択されたサービス カテゴリに対応する Web サービス記述言語 (WSDL) ファイルの配列を取得するにはアダプター メタデータのウィザードのツリーです。 アダプター メタデータの追加ウィザードの完了後、サービスを表すスキーマが XSD ファイルとして生成され、BizTalk プロジェクトに追加されます。  
+ インポートするサービスを選択すると、ウィザードは呼び出し、 **GetServiceDescription**メソッドは、追加で選択されたサービスのカテゴリに対応する Web サービス記述言語 (WSDL) ファイルの配列を取得するにはアダプター メタデータのウィザードのツリー。 サービスを表すスキーマは XSD ファイルとして生成され、アダプター メタデータの追加ウィザードの完了後に、BizTalk プロジェクトに追加します。  
   
- ファイル アダプター サンプルでは、 **GetServiceOrganization**と**GetServiceDescription**にメソッドが存在する、 **StaticAdapterManagement**クラス内で、AdapterManagement.cs クラス ファイルです。 このウィザードでは、 **GetServiceOrganization**上に表示するツリー構造を取得するメソッド、 **インポートするサービス**ページ。 **GetServicesOrganization**ハードコードされた戻り値の次のコード フラグメントに示すように、AdapterManagement.CategorySchema.xml ファイルの値が使用されます。 アダプター開発者は、適切な XML ファイルを返すためのロジックを追加する必要があります。  
+ ファイル アダプターのサンプル、 **GetServiceOrganization**と**GetServiceDescription**メソッド、 **StaticAdapterManagement**クラスで、AdapterManagement.cs クラス ファイルです。 ウィザードでは、 **GetServiceOrganization**上に表示するツリー構造を取得するメソッド、 **インポートするサービス**ページ。 **GetServicesOrganization**ハードコードされた戻り値の次のコード フラグメントに示すように、AdapterManagement.CategorySchema.xml ファイルの値が使用されます。 アダプター開発者は適切な XML ファイルを返すロジックを追加する必要があります。  
   
 ```  
 public string GetServiceOrganization(IPropertyBag endPointConfiguration, string NodeIdentifier)   
@@ -37,9 +37,9 @@ public string GetServiceOrganization(IPropertyBag endPointConfiguration, string 
 ```  
   
 > [!NOTE]
->  変更してください、 **GetServiceDescription**のメソッド、 **StaticAdapterManagement**クラスではなく、 **DynamicAdapterManagement**で最初に表示されるクラスファイル。  
+>  変更してください、 **GetServiceDescription**のメソッド、 **StaticAdapterManagement**クラスではなく、 **DynamicAdapterManagement**クラスは、最初に表示されますファイルです。  
   
- 次のコードは、 **GetServiceDescription** AdapterManagement.cs ファイルのメソッドです。 ここでは、返される WSDL ファイルとしてファイル service1.wsdl がハードコードされており、 WSDL ファイルとして表されているスキーマが返されます。 `wsdls`パラメーターは、ソースによって読み込まれた XML 内の WSDL 参照に対応する一意の WSDL 参照の配列**GetServicesOrganization**です。 返される WSDL 記述のセットは、BizTalk プロジェクトのポートの種類とメッセージの種類を生成するために使用されます。 ツリー内に選択できるスキーマの種類が複数存在する場合は、複数の WSDL ファイルが必要です。 スキーマと WSDL の選択肢が多くある場合は、正しい WSDL ファイルを返すためデータベース検索を追加することもできます。  
+ 次のコードは、 **GetServiceDescription** AdapterManagement.cs ファイルのメソッド。 返される WSDL ファイルとしてハード コーディングされたファイル service1.wsdl です。 WSDL ファイルとして表されているスキーマを返します。 `wsdls`パラメーターは、ソースによって読み込まれた XML 内の WSDL 参照に対応する一意の WSDL 参照の配列**GetServicesOrganization**します。 返される WSDL 記述のセットは、ポートの種類とメッセージの種類の BizTalk プロジェクトの生成に使用されます。 ツリーで選択可能な 1 つ以上のスキーマ型があれば、1 つ以上の WSDL ファイルを必要があります。 多くの可能なスキーマと WSDL の選択肢がある場合は、場合は、正しい WSDL ファイルを返すデータベース参照を追加します。  
   
 ```  
 /// <summary>     

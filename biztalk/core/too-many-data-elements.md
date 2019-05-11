@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c2e4668c4afacfdb9ac646d7d889320f45bcff14
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1cb05cc31331dcc2633b7dc398c8f77a369c3f28
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36992915"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395422"
 ---
 # <a name="too-many-data-elements"></a>データ要素が多すぎます
 ## <a name="details"></a>詳細  

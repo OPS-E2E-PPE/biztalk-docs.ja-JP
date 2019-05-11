@@ -15,12 +15,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c6c825653321f2dbe0bf5ef1f5ed58676e6ae90e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8fe6993334b54761b2a9081ffd7794edde18abe3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36995683"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373344"
 ---
 # <a name="import-sap-data-using-sql-server-management-studio"></a>SQL Server Management Studio を使用して SAP データのインポート
 このセクションでは、SAP システムから SQL Server データベースにデータをインポートする、SQL Server Management Studio を使用する方法について説明します。 このセクションでは、データをインポートする実行可能な SSIS パッケージを作成する方法の手順を説明します。 このセクションでは、SSIS パッケージを実行する方法に関する情報も提供します。  
@@ -145,7 +145,7 @@ ms.locfileid: "36995683"
   
 5. **パッケージ実行ユーティリティ**ダイアログ ボックスで、をクリックして**閉じる**します。  
   
-   パッケージの実行の詳細については、[ http://go.microsoft.com/fwlink/?LinkId=94972](http://go.microsoft.com/fwlink/?LinkId=94972)を参照してください。 SSIS パッケージに関連するその他の情報を参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=94973](http://go.microsoft.com/fwlink/?LinkId=94973)します。  
+   パッケージの実行の詳細については、次を参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=94972](http://go.microsoft.com/fwlink/?LinkId=94972)します。 SSIS パッケージに関連するその他の情報を参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=94973](http://go.microsoft.com/fwlink/?LinkId=94973)します。  
   
 ## <a name="verifying-the-results"></a>結果の確認  
  パッケージを実行した後は、SAP のデータをインポートする SQL Server データベースに移動して結果を確認する必要があります。 パッケージを実行する必要がありますが転送先データベースでテーブルを作成し、SAP テーブルから値が格納されます。  

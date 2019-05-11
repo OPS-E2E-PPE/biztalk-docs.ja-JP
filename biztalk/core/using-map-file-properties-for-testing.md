@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 45c494a1239d215c24ef2cb3394f5bb202a50955
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 16604b6fe3efc0f54a2fb1ad6ef7890765a3df6b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36985275"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396837"
 ---
 # <a name="using-map-file-properties-for-testing"></a>テストに必要なマップ ファイルのプロパティの使用
 
@@ -30,7 +30,7 @@ ms.locfileid: "36985275"
   
 - 入力/出力テスト インスタンスの形式  
   
-  マップのプロパティについては、、**マップ プロパティ参照**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]を参照してください。
+  マップのプロパティについては、次を参照してください。、**マップ プロパティ参照**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]します。
   
 ## <a name="see-also"></a>参照  
  [マップのテスト](../core/testing-maps.md)

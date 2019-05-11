@@ -12,15 +12,15 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6d02291cf08b368aa695f7effc37371e8e272598
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 0e3ae95040ca7de42d3e58b39b4e4a672034dd17
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36969163"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395666"
 ---
 # <a name="planning-for-schema-creation"></a>スキーマ作成の計画
-スキーマは、メッセージのインスタンスがその定義に準拠しているかどうかを検証したり、異なる形式 (XML と非 XML) のインスタンス メッセージを相互に変換するための方法を定義したり、あるいは、特定の構造を持つ XML インスタンス メッセージを、それとは別の構造を持つ XML インスタンス メッセージに変換する方法を定義したりする場合に使用されます。 インスタンス メッセージの変換とインスタンス メッセージの変換の違いの詳細については、[vs を変換を参照してください。翻訳](../core/data-transformation.md)します。  
+スキーマは、メッセージのインスタンスがその定義に準拠しているかどうかを検証したり、異なる形式 (XML と非 XML) のインスタンス メッセージを相互に変換するための方法を定義したり、あるいは、特定の構造を持つ XML インスタンス メッセージを、それとは別の構造を持つ XML インスタンス メッセージに変換する方法を定義したりする場合に使用されます。 インスタンス メッセージの変換とインスタンス メッセージの変換の違いの詳細については、次を参照してください。 [vs を変換します。翻訳](../core/data-transformation.md)します。  
 
  次の表は、BizTalk エディターのスキーマ作成計画で検討する必要がある項目を示しています。  
 

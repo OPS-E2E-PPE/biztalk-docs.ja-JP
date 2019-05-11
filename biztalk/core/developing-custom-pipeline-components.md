@@ -27,17 +27,17 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 74828d31b55a4b50bdb18a537fbf7bb293445545
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f0067f4583ec1612a3ba3a55761705029582caf7
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37008971"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65530883"
 ---
 # <a name="developing-custom-pipeline-components"></a>カスタム パイプライン コンポーネントの開発
 ここでは、パイプライン コンポーネントを開発する方法について説明します。 3 種類のパイプライン コンポーネントを作成することができます: 全般、アセンブル、および逆アセンブルします。 これらの各パイプライン コンポーネントでは、プローブ機能を追加実装できます。 パイプライン コンポーネントの種類ごとに関連付けられているインターフェイスを BizTalk メッセージング エンジンに接続コンポーネントを実装する必要があります。コンポーネントの種類を識別するパイプライン インターフェイスは**IComponent**、 **IAssemblerComponent**、および**IDisassemblerComponent**します。 コンポーネントをプローブするには、実装する必要があります、 **IProbeMessage**インターフェイス。  
   
- Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] にはサンプル パイプライン コンポーネントが含まれており、独自のコンポーネントを作成するときに参照できます。 サンプル コンポーネントは、メッセージの末尾や先頭にデータを追加する方法を示すものです。 サンプル パイプライン コンポーネントの詳細については、[CustomComponent (BizTalk Server サンプル)](../core/customcomponent-biztalk-server-sample.md)を参照してください。  
+ Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] にはサンプル パイプライン コンポーネントが含まれており、独自のコンポーネントを作成するときに参照できます。 サンプル コンポーネントは、メッセージの末尾や先頭にデータを追加する方法を示すものです。 サンプル パイプライン コンポーネントの詳細については、次を参照してください。 [CustomComponent (BizTalk Server サンプル)](../core/customcomponent-biztalk-server-sample.md)します。  
   
 > [!CAUTION]
 >  [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] で、パイプラインからカスタム パイプライン コンポーネントを参照すると、コンパイル時エラーが発生することがあります。 このエラーを修正するには、コンパイル前にパイプライン デザイナーをいったん閉じて再度開きます。 または、コンポーネントをいったん削除して追加することもできます。  

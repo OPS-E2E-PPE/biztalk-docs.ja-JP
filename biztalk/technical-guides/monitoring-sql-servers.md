@@ -1,6 +1,6 @@
 ---
-title: SQL サーバーの監視 |Microsoft ドキュメント
-description: SQL Server 管理パックを使用して、パフォーマンス、使用可能な領域、データベースの構成、ブロックされるプロセス、接続、失敗した SQL エージェント ジョブ、レプリケーション、および BizTalk Server の詳細を確認するには
+title: SQL サーバーの監視 |Microsoft Docs
+description: SQL Server の管理パックを使用して、パフォーマンス、使用可能な領域、データベースの構成、ブロックされるプロセス、接続、失敗した SQL エージェント ジョブ、レプリケーション、および BizTalk Server の詳細を確認するには
 ms.custom: ''
 ms.date: 11/29/2017
 ms.prod: biztalk-server
@@ -13,41 +13,41 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1d0e3ea9ecb9d9d910549790568d5891b72d06de
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 0d1a6d5807f3f6415e1ac23013caaf9d08088ab2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26006963"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395299"
 ---
-# <a name="monitoring-sql-servers"></a>SQL サーバーの監視
+# <a name="monitoring-sql-servers"></a>SQL Server の監視
 
 ## <a name="use-sql-management-pack"></a>SQL 管理パックを使用します。
-Microsoft SQL Server 管理パックを主体的および対応のエンタープライズ環境での SQL Server の監視を提供します。 可用性と構成の監視、パフォーマンス データの収集、および既定のしきい値は、エンタープライズ レベルの監視に構築されます。 ローカルおよびリモートの両方の接続性チェックにより、データベースの可用性を確認してください。  
+Microsoft SQL Server の管理パックを主体的および対応のエンタープライズ環境で SQL Server の監視を提供します。 可用性と構成の監視、パフォーマンス データの収集、および既定のしきい値は、エンタープライズ レベルの監視に構築されます。 ローカルとリモートの両方の接続チェックにより、データベースの可用性を確認します。  
   
- SQL Server 管理パックに組み込まれた専門知識と事前に SQL サーバーを管理し、重大になる前に、問題を特定することがことができます。 この管理パックは、セキュリティ、可用性、および SQL Server インフラストラクチャのパフォーマンスが向上します。  
+ SQL Server 管理パックに埋め込みの専門知識により、事前に、SQL Server を管理し、重大になる前に、問題を特定できます。 この管理パックは、セキュリティ、可用性、および SQL Server インフラストラクチャのパフォーマンスが向上します。  
   
- パックに付属している Microsoft SQL Server 管理パック ガイドでは、管理パックの内容、および展開方法を説明します。 管理パックの機能は次のとおりです。  
+ パックに付属する Microsoft SQL Server 管理パック ガイドは、管理パックの内容を記述し、それをデプロイする方法について説明します。 管理パックの機能は次のとおりです。  
   
 -   SQL Server、SQL エージェント、レポート サーバー、Notification Services などの含まれるサービスの状態の監視  
   
 -   データベースの状態の監視  
   
--   データベースでは、% または MB で設定可能な空き領域の監視  
+-   % または MB で設定可能なデータベースで使用可能な領域の監視  
   
--   確保データベースが正しく構成されています。  
+-   データベースを確保することが正しく構成されています。  
   
--   クライアントは、SQL Server に接続できることを確認します。  
+-   クライアントは、SQL Server に接続できるようにします  
   
 -   ブロックされたプロセスを監視します。  
   
--   失敗したエージェントの監視ジョブ、および、過剰にかかる時間実行ジョブ  
+-   失敗したエージェントの監視ジョブ、およびジョブの実行に過度の時間がかかって  
   
--   レプリケーションとアラートのエラー発生時の正常性を監視します。  
+-   レプリケーションとエラーに関する警告の正常性を監視します。  
   
 -   データベース ミラーリングの状態を監視します。  
   
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
   
 -   [SQL Server エージェント ジョブとデータベースの監視](../technical-guides/monitoring-sql-server-agent-jobs-and-databases.md)  
   

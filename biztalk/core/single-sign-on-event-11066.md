@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 11066 |Microsoft Docs'
+title: シングル サインオン:イベント 11066 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d21c505492f68a11556cbc7d2250ab5f89d63a1c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 390c98521946184d1e260f417e7d799cf82b5e3e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37012723"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396088"
 ---
-# <a name="single-sign-on-event-11066"></a>シングル サインオン: イベント 11066
+# <a name="single-sign-on-event-11066"></a>シングル サインオン:イベント 11066
 ## <a name="details"></a>詳細  
   
 |                 |                                                            |
@@ -30,10 +30,10 @@ ms.locfileid: "37012723"
 |  イベント ソース   |                           ENTSSO                           |
 |    コンポーネント    |                            なし                             |
 |  シンボル名  |            SSO_INFO_PASSWORD_SYNC_MIIS_STARTED             |
-|  メッセージ テキスト   |    Windows のパスワード同期を (MIIS から) 開始しました。%r    |
+|  メッセージ テキスト   |    (MIIS から) Windows のパスワード同期が started.%r    |
   
 ## <a name="explanation"></a>説明  
- これは、Windows のパスワード同期を (MIIS から) 開始したことを示す情報メッセージです。  
+ これは、(MIIS から) Windows のパスワード同期が開始されたことを示す情報メッセージです。  
   
 ## <a name="user-action"></a>ユーザーの操作  
  ユーザーによる操作は不要です。

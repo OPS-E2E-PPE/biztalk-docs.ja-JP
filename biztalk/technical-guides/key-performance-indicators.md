@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f808299dd0df0c47b169a831a7f09b33e59dc799
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2fc0d89c7d6bb72cf68611d1a6eaccffa11dbe0d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36966139"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395835"
 ---
 # <a name="key-performance-indicators"></a>主要業績評価指標
 このトピックでは、次のスケール アウト メソッドを使用する場合、BizTalk Server 製品グループが観察されたテスト結果を示します。  

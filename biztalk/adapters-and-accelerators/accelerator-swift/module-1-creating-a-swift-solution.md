@@ -1,5 +1,5 @@
 ---
-title: 'モジュール 1: SWIFT ソリューションの作成 |Microsoft Docs'
+title: モジュール 1:SWIFT ソリューションの作成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,14 +15,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c8eb0e1146882676a0ba572a1116336d6be32051
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f16a40fb32b67c6960f673218d24d3324d4e2222
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37002371"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65530255"
 ---
-# <a name="module-1-creating-a-swift-solution"></a>モジュール 1: SWIFT ソリューションの作成
+# <a name="module-1-creating-a-swift-solution"></a>モジュール 1:SWIFT ソリューションの作成
 このモジュールでは、空の BizTalk ソリューションを作成します。 最初のレッスンでは、Microsoft を使用して新しいソリューションを作成する[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)][!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)]します。 スキーマ、マップ、オーケストレーション、パイプライン コンポーネントなど、BizTalk ソリューションのコンポーネントが含まれている個々 のプロジェクトを作成します。  
   
  ソリューションは、1 つだけの BizTalk プロジェクトを含めることができますか、(ソリューションは、個別にした開発と統合するには、この後で多数のプロジェクトで構成されています) 場合、多くの BizTalk プロジェクトを含めることことに注意してください。  
@@ -43,4 +43,4 @@ ms.locfileid: "37002371"
   
     [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] ソリューション エクスプ ローラーで新しい空のソリューションで空のソリューションを作成し、 \<*ドライブ*:\>\labs フォルダー。  
   
-   続行する[モジュール 2: 新しいスキーマ プロジェクトの追加](../../adapters-and-accelerators/accelerator-swift/module-2-adding-a-new-schemas-project.md)します。
+   続行する[モジュール 2。新しいスキーマ プロジェクトの追加](../../adapters-and-accelerators/accelerator-swift/module-2-adding-a-new-schemas-project.md)します。

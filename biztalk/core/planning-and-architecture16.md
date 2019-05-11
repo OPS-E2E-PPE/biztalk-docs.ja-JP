@@ -1,5 +1,5 @@
 ---
-title: アーキテクチャと TIBCO Enterprise Message Service の要件 |Microsoft ドキュメント
+title: アーキテクチャと TIBCO Enterprise Message Service の要件 |Microsoft Docs
 ms.custom: ''
 ms.date: 10/19/2017
 ms.prod: biztalk-server
@@ -12,19 +12,19 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a126f2bc835a0f1e69e5c1b1cd7c870bbf6bed73
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: 3d8a008e02bcd656a08f9f5eb02b9dda497a7a57
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
-ms.locfileid: "24013609"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395712"
 ---
 # <a name="architecture-and-limitations"></a>アーキテクチャと制限事項
 
 ## <a name="overview"></a>概要
-このセクションでは、TIBCO Enterprise Message Service で使用する Microsoft BizTalk Adapter TIBCO Enterprise Message Service (EMS) 用の設定中に表示されるアーキテクチャ シナリオを説明します。  
+このセクションでは、TIBCO Enterprise Message Service の使用を Microsoft BizTalk Adapter for TIBCO Enterprise Message Service (EMS) の設定中に表示されるアーキテクチャのシナリオについて説明します。  
   
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
   
 -   [アーキテクチャ](../core/architecture-of-biztalk-adapter-for-tibco-enterprise-message-service.md)  
   

@@ -20,12 +20,12 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3b01f37551b9d4c1aef13786be7094504f8cee08
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: dc93b7bfd5e6bfb2097e3f190003b63e093b8e64
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37020504"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65394444"
 ---
 # <a name="migrating-functoids"></a>Functoid の移行
 BizTalk Server の以前のバージョンから BizTalk Server にマップを移行する場合、マップに含まれる functoid も移行されます。 移行する functoid が含まれない場合**Scripting** functoid の場合、追加の移行タスクは必要ありません。 ただし、マップが含まれている場合**Scripting** functoid またはカスタム functoid では、追加の手順を実行する必要があります。  
@@ -54,7 +54,7 @@ BizTalk Server の以前のバージョンから BizTalk Server にマップを�
   
 4. 含むマップとの間の参照を作成、 **Scripting** functoid と再作成された機能を格納するアセンブリ。  
   
-5. 構成、**スクリプト**プロパティを**Scripting** functoid。 このプロパティは、どのようなスクリプトを決定します、 **Scripting**実行時に functoid の呼び出し。 このプロパティの値と、カスタム スクリプトの再作成で使用した言語を一致させる必要があります。 スクリプト プロパティを構成する方法の詳細については、[Functoid のプロパティを編集および入力パラメーター](../core/editing-functoid-properties-and-input-parameters.md)を参照してください。 参照してください[スクリプト Functoid の](../core/scripting-functoid.md)します。  
+5. 構成、**スクリプト**プロパティを**Scripting** functoid。 このプロパティは、どのようなスクリプトを決定します、 **Scripting**実行時に functoid の呼び出し。 このプロパティの値と、カスタム スクリプトの再作成で使用した言語を一致させる必要があります。 スクリプト プロパティを構成する方法の詳細については、次を参照してください。 [Functoid のプロパティを編集および入力パラメーター](../core/editing-functoid-properties-and-input-parameters.md)します。 参照してください[スクリプト Functoid の](../core/scripting-functoid.md)します。  
   
 6. マップを含んでいる BizTalk プロジェクトをビルド、 **Scripting** functoid。  
   

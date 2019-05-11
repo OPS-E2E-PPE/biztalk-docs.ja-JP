@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4fb1d5f0e1f17870c9824b30e5da55a2740cb81b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8955cc05d9ab4f0847ea9979b38fc361edf7164f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36968131"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65374436"
 ---
 # <a name="troubleshoot-installation-issues-with-the-oracle-e-business-suite-adapter"></a>Oracle E-business Suite アダプターを使用したインストールの問題のトラブルシューティングします。
 Microsoft のインストール[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]コンピューターで、製品バイナリをコピーし、各アダプターのバインドを登録します。 このセクションでは、インストール エラーを解決するトラブルシューティングの手法を使用して説明します。  
@@ -86,7 +86,7 @@ Microsoft のインストール[!INCLUDE[adapterpacknoversion](../../includes/ad
       ```  
 
    > [!NOTE]
-   >  公開キーとバージョンを確認する方法については、[公開キーとバージョンを決定する](#BKMK_PubKey)を参照してください。  
+   >  公開キーとバージョンを確認する方法については、次を参照してください。[公開キーとバージョンを決定する](#BKMK_PubKey)します。  
 
 4. machine.config ファイルを保存して閉じます。  
 
