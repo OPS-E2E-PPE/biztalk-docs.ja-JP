@@ -15,14 +15,14 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dbc2db94a98e7bfca6b5fc5b9c16ceb304b5d22b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e0a4f9fbc64d8572b8dcc5bcebc85e28e440942c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36988467"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377116"
 ---
-# <a name="network-requirements"></a><span data-ttu-id="e8cdb-102">ネットワークの要件</span><span class="sxs-lookup"><span data-stu-id="e8cdb-102">Network Requirements</span></span>
-<span data-ttu-id="e8cdb-103">次のネットワーク コンポーネントの規定された展開アーキテクチャを構築する必要があります。</span><span class="sxs-lookup"><span data-stu-id="e8cdb-103">You will need the following network components to build the prescribed deployment architecture:</span></span>  
+# <a name="network-requirements"></a><span data-ttu-id="a83f0-102">ネットワークの要件</span><span class="sxs-lookup"><span data-stu-id="a83f0-102">Network Requirements</span></span>
+<span data-ttu-id="a83f0-103">次のネットワーク コンポーネントの規定された展開アーキテクチャを構築する必要があります。</span><span class="sxs-lookup"><span data-stu-id="a83f0-103">You will need the following network components to build the prescribed deployment architecture:</span></span>  
 
-- <span data-ttu-id="e8cdb-104">Microsoft Internet Security and Acceleration (ISA) Server などのファイアウォール サーバー。</span><span class="sxs-lookup"><span data-stu-id="e8cdb-104">A firewall server such as the Microsoft Internet Security and Acceleration (ISA) Server.</span></span>
+- <span data-ttu-id="a83f0-104">Microsoft Internet Security and Acceleration (ISA) Server などのファイアウォール サーバー。</span><span class="sxs-lookup"><span data-stu-id="a83f0-104">A firewall server such as the Microsoft Internet Security and Acceleration (ISA) Server.</span></span>

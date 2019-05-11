@@ -1,5 +1,5 @@
 ---
-title: アダプターの構成のカスタム型コンバーター |Microsoft ドキュメント
+title: アダプターの構成のカスタム型コンバーター |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,17 +12,17 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8f6285cd61fd0738fb97c6192cd52b812d96ede7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: cc107422d7bb2033d68c96c27df4850acda74a09
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22238714"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65390066"
 ---
-# <a name="custom-type-converter-for-adapter-configuration"></a><span data-ttu-id="96a73-102">アダプターの構成のカスタム型コンバーター</span><span class="sxs-lookup"><span data-stu-id="96a73-102">Custom Type Converter for Adapter Configuration</span></span>
-<span data-ttu-id="96a73-103">カスタムのエディターなど、カスタム型コンバーターよりも優先、 **System.ComponentModel.TypeConverter**の 1 つの子のクラスです。</span><span class="sxs-lookup"><span data-stu-id="96a73-103">Like the custom editor, the custom type converter overrides the **System.ComponentModel.TypeConverter** class of one of its children.</span></span> <span data-ttu-id="96a73-104">このとき、コンバーターでは値が保持されるように書式が追加されますが、プロパティ ページには表示されません。</span><span class="sxs-lookup"><span data-stu-id="96a73-104">Here, the converter adds formatting to the value to be persisted but does not appear on the property page.</span></span> <span data-ttu-id="96a73-105">**ConvertFrom**メソッドは文字列値を囲む角かっこを追加し、 **ConvertTo**メソッドでは、それらを削除します。</span><span class="sxs-lookup"><span data-stu-id="96a73-105">The **ConvertFrom** method adds square brackets around the string value and the **ConvertTo** method removes them.</span></span>  
+# <a name="custom-type-converter-for-adapter-configuration"></a><span data-ttu-id="c7db9-102">アダプターの構成のカスタム型コンバーター</span><span class="sxs-lookup"><span data-stu-id="c7db9-102">Custom Type Converter for Adapter Configuration</span></span>
+<span data-ttu-id="c7db9-103">カスタム型コンバーターをオーバーライドしてカスタム エディターをなど、 **System.ComponentModel.TypeConverter**その子のいずれかのクラス。</span><span class="sxs-lookup"><span data-stu-id="c7db9-103">Like the custom editor, the custom type converter overrides the **System.ComponentModel.TypeConverter** class of one of its children.</span></span> <span data-ttu-id="c7db9-104">ここでは、コンバーターを追加する永続化する値の書式設定が [プロパティ] ページは表示されません。</span><span class="sxs-lookup"><span data-stu-id="c7db9-104">Here, the converter adds formatting to the value to be persisted but does not appear on the property page.</span></span> <span data-ttu-id="c7db9-105">**ConvertFrom**メソッドは文字列値を囲む角かっこを追加し、 **ConvertTo**メソッドがそれらを削除します。</span><span class="sxs-lookup"><span data-stu-id="c7db9-105">The **ConvertFrom** method adds square brackets around the string value and the **ConvertTo** method removes them.</span></span>  
   
- <span data-ttu-id="96a73-106">次のコードはカスタム型コンバーターのクラス定義です。</span><span class="sxs-lookup"><span data-stu-id="96a73-106">The following code is the class definition for the custom type converter:</span></span>  
+ <span data-ttu-id="c7db9-106">次のコードでは、カスタム型コンバーターのクラス定義を示します。</span><span class="sxs-lookup"><span data-stu-id="c7db9-106">The following code is the class definition for the custom type converter:</span></span>  
   
 ```  
 using System;  
@@ -57,8 +57,8 @@ namespace AdapterManagement.ComponentModel {
 }  
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="96a73-107">参照</span><span class="sxs-lookup"><span data-stu-id="96a73-107">See Also</span></span>  
- <span data-ttu-id="96a73-108">[カスタム アダプター構成デザイナー](../core/custom-adapter-configuration-designer.md) </span><span class="sxs-lookup"><span data-stu-id="96a73-108">[Custom Adapter Configuration Designer](../core/custom-adapter-configuration-designer.md) </span></span>  
- <span data-ttu-id="96a73-109">[アダプター構成のカスタム ドロップダウン エディター](../core/custom-drop-down-editor-for-adapter-configuration.md) </span><span class="sxs-lookup"><span data-stu-id="96a73-109">[Custom Drop-Down Editor for Adapter Configuration](../core/custom-drop-down-editor-for-adapter-configuration.md) </span></span>  
- <span data-ttu-id="96a73-110">[アダプター構成のカスタム モデル ダイアログ エディター](../core/custom-modal-dialog-editor-for-adapter-configuration.md) </span><span class="sxs-lookup"><span data-stu-id="96a73-110">[Custom Modal Dialog Editor for Adapter Configuration](../core/custom-modal-dialog-editor-for-adapter-configuration.md) </span></span>  
- [<span data-ttu-id="96a73-111">アダプターの高度な構成コンポーネント</span><span class="sxs-lookup"><span data-stu-id="96a73-111">Advanced Configuration Components for Adapters</span></span>](../core/advanced-configuration-components-for-adapters.md)
+## <a name="see-also"></a><span data-ttu-id="c7db9-107">参照</span><span class="sxs-lookup"><span data-stu-id="c7db9-107">See Also</span></span>  
+ <span data-ttu-id="c7db9-108">[カスタム アダプター構成デザイナー](../core/custom-adapter-configuration-designer.md) </span><span class="sxs-lookup"><span data-stu-id="c7db9-108">[Custom Adapter Configuration Designer](../core/custom-adapter-configuration-designer.md) </span></span>  
+ <span data-ttu-id="c7db9-109">[アダプター構成のカスタム ドロップダウン エディター](../core/custom-drop-down-editor-for-adapter-configuration.md) </span><span class="sxs-lookup"><span data-stu-id="c7db9-109">[Custom Drop-Down Editor for Adapter Configuration](../core/custom-drop-down-editor-for-adapter-configuration.md) </span></span>  
+ <span data-ttu-id="c7db9-110">[アダプター構成のカスタム モデル ダイアログ エディター](../core/custom-modal-dialog-editor-for-adapter-configuration.md) </span><span class="sxs-lookup"><span data-stu-id="c7db9-110">[Custom Modal Dialog Editor for Adapter Configuration](../core/custom-modal-dialog-editor-for-adapter-configuration.md) </span></span>  
+ [<span data-ttu-id="c7db9-111">アダプターの詳細構成コンポーネント</span><span class="sxs-lookup"><span data-stu-id="c7db9-111">Advanced Configuration Components for Adapters</span></span>](../core/advanced-configuration-components-for-adapters.md)

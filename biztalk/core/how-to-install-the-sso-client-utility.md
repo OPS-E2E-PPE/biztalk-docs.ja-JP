@@ -17,58 +17,58 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 674ecc3857fe9e5b5cbef2914aec875f350d7de5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: cc7970f397c8b5c076edd7bf0f29e3d7cf8becd3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37003963"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65384916"
 ---
-# <a name="how-to-install-the-sso-client-utility"></a><span data-ttu-id="c3bf9-102">SSO クライアント ユーティリティをインストールする方法</span><span class="sxs-lookup"><span data-stu-id="c3bf9-102">How to Install the SSO Client Utility</span></span>
-<span data-ttu-id="c3bf9-103">スタンドアロンの SSO クライアント ユーティリティ (コマンド ライン ユーティリティ ベースおよびユーザー インターフェイス ベース) を使用すると、エンド ユーザーが SSO データベースでクライアントのマッピングを構成できます。</span><span class="sxs-lookup"><span data-stu-id="c3bf9-103">The stand-alone SSO client utility (command-line utility and user interface-based) allows end users to configure their client mappings in the SSO database.</span></span> <span data-ttu-id="c3bf9-104">クライアント ユーティリティは、SSO 管理機能と一緒にインストールされる自己展開型ファイル (SSOClientInstall.exe) からインストールできます。</span><span class="sxs-lookup"><span data-stu-id="c3bf9-104">You can install the client utility from a self-extracting file (SSOClientInstall.exe) which is installed with the SSO administration feature.</span></span> <span data-ttu-id="c3bf9-105">管理者は、ネットワーク共有上にインストーラ パッケージのコピーを配置することで、クライアント ユーザーがインストーラ パッケージを使用できるようにすることもできます。</span><span class="sxs-lookup"><span data-stu-id="c3bf9-105">Administrators can also make the installer package available to client users by placing a copy of the installer package on a network share.</span></span>  
+# <a name="how-to-install-the-sso-client-utility"></a><span data-ttu-id="c7cba-102">SSO クライアント ユーティリティをインストールする方法</span><span class="sxs-lookup"><span data-stu-id="c7cba-102">How to Install the SSO Client Utility</span></span>
+<span data-ttu-id="c7cba-103">スタンドアロンの SSO クライアント ユーティリティ (コマンド ライン ユーティリティとユーザー インターフェイスに基づく) は、エンドユーザーが SSO データベース内のクライアントのマッピングの構成に使用できます。</span><span class="sxs-lookup"><span data-stu-id="c7cba-103">The stand-alone SSO client utility (command-line utility and user interface-based) allows end users to configure their client mappings in the SSO database.</span></span> <span data-ttu-id="c7cba-104">クライアント ユーティリティは、SSO 管理機能と共にインストールされる自己解凍形式のファイル (SSOClientInstall.exe) からインストールできます。</span><span class="sxs-lookup"><span data-stu-id="c7cba-104">You can install the client utility from a self-extracting file (SSOClientInstall.exe) which is installed with the SSO administration feature.</span></span> <span data-ttu-id="c7cba-105">管理者は、ネットワーク共有上にインストーラ パッケージのコピーを配置することで、クライアント ユーザーがインストーラ パッケージを使用できるようにすることもできます。</span><span class="sxs-lookup"><span data-stu-id="c7cba-105">Administrators can also make the installer package available to client users by placing a copy of the installer package on a network share.</span></span>  
   
- <span data-ttu-id="c3bf9-106">SSO クライアント ユーティリティをインストールするには、クライアント コンピュータで次のオペレーティング システムのいずれかを実行している必要があります。</span><span class="sxs-lookup"><span data-stu-id="c3bf9-106">To install the SSO client utility, you must be running one of the following operating systems on the client computer:</span></span>  
+ <span data-ttu-id="c7cba-106">SSO クライアント ユーティリティをインストールするには、クライアント コンピュータで次のオペレーティング システムのいずれかを実行している必要があります。</span><span class="sxs-lookup"><span data-stu-id="c7cba-106">To install the SSO client utility, you must be running one of the following operating systems on the client computer:</span></span>  
   
 - [!INCLUDE[btsPlatformsComApis](../includes/btsplatformscomapis-md.md)]  
   
-- [!INCLUDE[btsDotNetFramework3.5](../includes/btsdotnetframework3-5-md.md)]<span data-ttu-id="c3bf9-107"> または [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] (UI ベースの SSO クライアント ユーティリティを使用する場合、またはエンタープライズ SSO の相互運用マネージド コンポーネントを利用する場合にのみ必要です)。</span><span class="sxs-lookup"><span data-stu-id="c3bf9-107"> or [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] (only necessary if you are using the UI-based SSO Client Utility or for leveraging the managed interoperability component of Enterprise SSO).</span></span>  
+- [!INCLUDE[btsDotNetFramework3.5](../includes/btsdotnetframework3-5-md.md)] <span data-ttu-id="c7cba-107">または [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] (UI ベースの SSO クライアント ユーティリティを使用する場合、またはエンタープライズ SSO の相互運用マネージド コンポーネントを利用する場合にのみ必要です)。</span><span class="sxs-lookup"><span data-stu-id="c7cba-107">or [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] (only necessary if you are using the UI-based SSO Client Utility or for leveraging the managed interoperability component of Enterprise SSO).</span></span>  
   
-  <span data-ttu-id="c3bf9-108">SSO クライアント ユーティリティをインストールした後からを起動できる、**開始**メニューをクリックして**プログラム**、 **Microsoft エンタープライズ シングル サインオン**、し**SSO クライアント ユーティリティ**します。</span><span class="sxs-lookup"><span data-stu-id="c3bf9-108">After installing the SSO Client Utility, you can launch it from the **Start** menu by clicking **Programs**, **Microsoft Enterprise Single Sign-On**, and then **SSO Client Utility**.</span></span>  
+  <span data-ttu-id="c7cba-108">SSO クライアント ユーティリティをインストールした後からを起動できる、**開始**メニューをクリックして**プログラム**、 **Microsoft エンタープライズ シングル サインオン**、し**SSO クライアント ユーティリティ**します。</span><span class="sxs-lookup"><span data-stu-id="c7cba-108">After installing the SSO Client Utility, you can launch it from the **Start** menu by clicking **Programs**, **Microsoft Enterprise Single Sign-On**, and then **SSO Client Utility**.</span></span>  
   
-### <a name="to-install-the-sso-client-utility"></a><span data-ttu-id="c3bf9-109">SSO クライアント ユーティリティをインストールするには</span><span class="sxs-lookup"><span data-stu-id="c3bf9-109">To install the SSO client utility</span></span>  
+### <a name="to-install-the-sso-client-utility"></a><span data-ttu-id="c7cba-109">SSO クライアント ユーティリティをインストールするには</span><span class="sxs-lookup"><span data-stu-id="c7cba-109">To install the SSO client utility</span></span>  
   
-1.  <span data-ttu-id="c3bf9-110">インストーラ パッケージ SSOClientInstall をダブルクリックします。</span><span class="sxs-lookup"><span data-stu-id="c3bf9-110">Double-click the installer package SSOClientInstall.</span></span>  
+1.  <span data-ttu-id="c7cba-110">インストーラ パッケージ SSOClientInstall をダブルクリックします。</span><span class="sxs-lookup"><span data-stu-id="c7cba-110">Double-click the installer package SSOClientInstall.</span></span>  
   
     > [!NOTE]
-    >  <span data-ttu-id="c3bf9-111">このファイルが企業内のどこにあるのかについては、エンタープライズ シングル サインオン管理者に問い合わせてください。</span><span class="sxs-lookup"><span data-stu-id="c3bf9-111">Ask your Enterprise Single Sign-On Administrator for the location of this file in your enterprise.</span></span>  
+    >  <span data-ttu-id="c7cba-111">企業では、このファイルの場所のエンタープライズ シングル サインオン管理者を確認します。</span><span class="sxs-lookup"><span data-stu-id="c7cba-111">Ask your Enterprise Single Sign-On Administrator for the location of this file in your enterprise.</span></span>  
   
-     <span data-ttu-id="c3bf9-112">**WinZip Self-extractor**プログラムが表示されます。</span><span class="sxs-lookup"><span data-stu-id="c3bf9-112">The **WinZip Self-Extractor** program appears.</span></span>  
+     <span data-ttu-id="c7cba-112">**WinZip Self-extractor**プログラムが表示されます。</span><span class="sxs-lookup"><span data-stu-id="c7cba-112">The **WinZip Self-Extractor** program appears.</span></span>  
   
-2.  <span data-ttu-id="c3bf9-113">フォルダー、ファイルを解凍し、をクリックして選択します**Unzip**します。</span><span class="sxs-lookup"><span data-stu-id="c3bf9-113">Select the folder where you want to unzip the files, and click **Unzip**.</span></span>  
+2.  <span data-ttu-id="c7cba-113">フォルダー、ファイルを解凍し、をクリックして選択します**Unzip**します。</span><span class="sxs-lookup"><span data-stu-id="c7cba-113">Select the folder where you want to unzip the files, and click **Unzip**.</span></span>  
   
-     <span data-ttu-id="c3bf9-114">ファイルは一時フォルダに解凍することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="c3bf9-114">It is recommended to unzip the files in a temporary folder.</span></span>  
+     <span data-ttu-id="c7cba-114">一時フォルダーにファイルを解凍することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="c7cba-114">It is recommended to unzip the files in a temporary folder.</span></span>  
   
-     <span data-ttu-id="c3bf9-115">**エンタープライズ シングル サインオン クライアント セットアップ**プログラムが表示されます。</span><span class="sxs-lookup"><span data-stu-id="c3bf9-115">The **Enterprise Single Sign-On Client Setup** program appears.</span></span>  
+     <span data-ttu-id="c7cba-115">**エンタープライズ シングル サインオン クライアント セットアップ**プログラムが表示されます。</span><span class="sxs-lookup"><span data-stu-id="c7cba-115">The **Enterprise Single Sign-On Client Setup** program appears.</span></span>  
   
-3.  <span data-ttu-id="c3bf9-116">**エンタープライズ シングル サインオン クライアントへようこそ**  ページで **次**します。</span><span class="sxs-lookup"><span data-stu-id="c3bf9-116">On **the Welcome to the Enterprise Single Sign-On Client** page, click **Next**.</span></span>  
+3.  <span data-ttu-id="c7cba-116">**エンタープライズ シングル サインオン クライアントへようこそ**  ページで **次**します。</span><span class="sxs-lookup"><span data-stu-id="c7cba-116">On **the Welcome to the Enterprise Single Sign-On Client** page, click **Next**.</span></span>  
   
-4.  <span data-ttu-id="c3bf9-117">使用許諾契約書 ページで、次のようにクリックします。**本ライセンス契約の条項に同意**、 をクリックし、**次**。</span><span class="sxs-lookup"><span data-stu-id="c3bf9-117">On the License Agreement page, click **I accept the terms of this license agreement**, and then click **Next**.</span></span>  
+4.  <span data-ttu-id="c7cba-117">使用許諾契約書 ページで、次のようにクリックします。**本ライセンス契約の条項に同意**、 をクリックし、**次**。</span><span class="sxs-lookup"><span data-stu-id="c7cba-117">On the License Agreement page, click **I accept the terms of this license agreement**, and then click **Next**.</span></span>  
   
-5.  <span data-ttu-id="c3bf9-118">**ユーザー情報** ページで、ユーザー名、組織の名前を入力してをクリックし、**次**します。</span><span class="sxs-lookup"><span data-stu-id="c3bf9-118">On the **User Information** page, type your user name, organization name, and then click **Next**.</span></span>  
+5.  <span data-ttu-id="c7cba-118">**ユーザー情報** ページで、ユーザー名、組織の名前を入力してをクリックし、**次**します。</span><span class="sxs-lookup"><span data-stu-id="c7cba-118">On the **User Information** page, type your user name, organization name, and then click **Next**.</span></span>  
   
-6.  <span data-ttu-id="c3bf9-119">**インストールの開始**] ページで [**インストール**します。</span><span class="sxs-lookup"><span data-stu-id="c3bf9-119">On the **Start Installation** page, click **Install**.</span></span>  
+6.  <span data-ttu-id="c7cba-119">**インストールの開始**] ページで [**インストール**します。</span><span class="sxs-lookup"><span data-stu-id="c7cba-119">On the **Start Installation** page, click **Install**.</span></span>  
   
-7.  <span data-ttu-id="c3bf9-120">**エンタープライズ シングル サインオン クライアント ウィザードの完了**] ページで [**完了**します。</span><span class="sxs-lookup"><span data-stu-id="c3bf9-120">On the **Completing the Enterprise Single Sign-On Client Wizard** page, click **Finish**.</span></span>  
+7.  <span data-ttu-id="c7cba-120">**エンタープライズ シングル サインオン クライアント ウィザードの完了**] ページで [**完了**します。</span><span class="sxs-lookup"><span data-stu-id="c7cba-120">On the **Completing the Enterprise Single Sign-On Client Wizard** page, click **Finish**.</span></span>  
   
-8.  <span data-ttu-id="c3bf9-121">次のいずれかの手順を実行し、SSO サーバーを指定します。</span><span class="sxs-lookup"><span data-stu-id="c3bf9-121">Specify the SSO server by doing either of the following:</span></span>  
+8.  <span data-ttu-id="c7cba-121">次のいずれかの手順を実行して、SSO サーバーを指定します。</span><span class="sxs-lookup"><span data-stu-id="c7cba-121">Specify the SSO server by doing either of the following:</span></span>  
   
-    -   <span data-ttu-id="c3bf9-122">ENTSSO 管理の MMC スナップインを開きます。</span><span class="sxs-lookup"><span data-stu-id="c3bf9-122">Open the ENTSSO Administration MMC Snap-In.</span></span> <span data-ttu-id="c3bf9-123">**SSO サーバーの選択**ダイアログが表示されます。</span><span class="sxs-lookup"><span data-stu-id="c3bf9-123">The **Select SSO Server** dialog will appear.</span></span> <span data-ttu-id="c3bf9-124">管理操作の実行時に接続する SSO サーバーについて、名前を入力するか、または参照します。</span><span class="sxs-lookup"><span data-stu-id="c3bf9-124">Enter or browse to the SSO Server that you want to connect to when you perform administration operations.</span></span> <span data-ttu-id="c3bf9-125">コンピューターのすべてのユーザーの SSO サーバーを指定する**すべてのユーザーの SSO サーバーを設定**します。</span><span class="sxs-lookup"><span data-stu-id="c3bf9-125">To specify the SSO Server for all users on the machine, select **Set SSO Server for all users**.</span></span>  
+    -   <span data-ttu-id="c7cba-122">ENTSSO 管理 MMC スナップインを開きます。</span><span class="sxs-lookup"><span data-stu-id="c7cba-122">Open the ENTSSO Administration MMC Snap-In.</span></span> <span data-ttu-id="c7cba-123">**SSO サーバーの選択**ダイアログが表示されます。</span><span class="sxs-lookup"><span data-stu-id="c7cba-123">The **Select SSO Server** dialog will appear.</span></span> <span data-ttu-id="c7cba-124">入力するか、管理操作を実行するときに接続する SSO サーバーを参照します。</span><span class="sxs-lookup"><span data-stu-id="c7cba-124">Enter or browse to the SSO Server that you want to connect to when you perform administration operations.</span></span> <span data-ttu-id="c7cba-125">コンピューターのすべてのユーザーの SSO サーバーを指定する**すべてのユーザーの SSO サーバーを設定**します。</span><span class="sxs-lookup"><span data-stu-id="c7cba-125">To specify the SSO Server for all users on the machine, select **Set SSO Server for all users**.</span></span>  
   
-         <span data-ttu-id="c3bf9-126">OR</span><span class="sxs-lookup"><span data-stu-id="c3bf9-126">OR</span></span>  
+         <span data-ttu-id="c7cba-126">スイッチまたは</span><span class="sxs-lookup"><span data-stu-id="c7cba-126">OR</span></span>  
   
-    -   <span data-ttu-id="c3bf9-127">コマンド プロンプトで「`ssomanage –server`目的の SSO サーバーを指定します。</span><span class="sxs-lookup"><span data-stu-id="c3bf9-127">At a command prompt, type `ssomanage –server` to specify the SSO server desired.</span></span> <span data-ttu-id="c3bf9-128">入力することも`ssomanage -serverall`管理操作を実行するときにこのコンピューターのすべてのユーザーが接続する SSO サーバーを指定します。</span><span class="sxs-lookup"><span data-stu-id="c3bf9-128">You can also type `ssomanage -serverall` to specify the SSO server that all users of this computer will connect to when performing administration operations.</span></span>  
+    -   <span data-ttu-id="c7cba-127">コマンド プロンプトで「`ssomanage –server`目的の SSO サーバーを指定します。</span><span class="sxs-lookup"><span data-stu-id="c7cba-127">At a command prompt, type `ssomanage –server` to specify the SSO server desired.</span></span> <span data-ttu-id="c7cba-128">入力することも`ssomanage -serverall`管理操作を実行するときにこのコンピューターのすべてのユーザーが接続する SSO サーバーを指定します。</span><span class="sxs-lookup"><span data-stu-id="c7cba-128">You can also type `ssomanage -serverall` to specify the SSO server that all users of this computer will connect to when performing administration operations.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="c3bf9-129">参照</span><span class="sxs-lookup"><span data-stu-id="c3bf9-129">See Also</span></span>  
- <span data-ttu-id="c3bf9-130">[SSO 管理コンポーネントをインストールする方法](../core/how-to-install-the-sso-administration-component.md) </span><span class="sxs-lookup"><span data-stu-id="c3bf9-130">[How to Install the SSO Administration Component](../core/how-to-install-the-sso-administration-component.md) </span></span>  
- <span data-ttu-id="c3bf9-131">[SSO を構成します。](../core/configuring-sso.md) </span><span class="sxs-lookup"><span data-stu-id="c3bf9-131">[Configuring SSO](../core/configuring-sso.md) </span></span>  
- [<span data-ttu-id="c3bf9-132">SSO のインストール</span><span class="sxs-lookup"><span data-stu-id="c3bf9-132">Installing SSO</span></span>](../core/installing-sso.md)
+## <a name="see-also"></a><span data-ttu-id="c7cba-129">参照</span><span class="sxs-lookup"><span data-stu-id="c7cba-129">See Also</span></span>  
+ <span data-ttu-id="c7cba-130">[SSO 管理コンポーネントをインストールする方法](../core/how-to-install-the-sso-administration-component.md) </span><span class="sxs-lookup"><span data-stu-id="c7cba-130">[How to Install the SSO Administration Component](../core/how-to-install-the-sso-administration-component.md) </span></span>  
+ <span data-ttu-id="c7cba-131">[SSO を構成します。](../core/configuring-sso.md) </span><span class="sxs-lookup"><span data-stu-id="c7cba-131">[Configuring SSO](../core/configuring-sso.md) </span></span>  
+ [<span data-ttu-id="c7cba-132">SSO のインストール</span><span class="sxs-lookup"><span data-stu-id="c7cba-132">Installing SSO</span></span>](../core/installing-sso.md)

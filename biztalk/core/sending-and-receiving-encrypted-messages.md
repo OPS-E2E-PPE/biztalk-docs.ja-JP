@@ -1,5 +1,5 @@
 ---
-title: 暗号化されたメッセージを送受信する |Microsoft ドキュメント
+title: 暗号化されたメッセージの送受信 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,22 +12,22 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b0578e82710d7f5b1df989e9677a377466063563
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 613ff764c4dcff7dbb5239608ed809a9b988819f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22269154"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399038"
 ---
-# <a name="sending-and-receiving-encrypted-messages"></a><span data-ttu-id="a530e-102">暗号化されたメッセージの送受信</span><span class="sxs-lookup"><span data-stu-id="a530e-102">Sending and Receiving Encrypted Messages</span></span>
-<span data-ttu-id="a530e-103">ここでは、暗号化されたメッセージを送受信するための [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] パイプライン、受信場所、ポート、および BizTalk Server 環境を構成する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="a530e-103">This section provides information about how to configure [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] pipelines, receive locations, ports, and the BizTalk Server environment to receive and send encrypted messages.</span></span>  
+# <a name="sending-and-receiving-encrypted-messages"></a><span data-ttu-id="b17a7-102">暗号化されたメッセージの送受信</span><span class="sxs-lookup"><span data-stu-id="b17a7-102">Sending and Receiving Encrypted Messages</span></span>
+<span data-ttu-id="b17a7-103">このセクションでは、構成する方法についての情報を提供します。[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]パイプライン、受信場所、ポート、および暗号化されたメッセージを送受信する BizTalk Server 環境。</span><span class="sxs-lookup"><span data-stu-id="b17a7-103">This section provides information about how to configure [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] pipelines, receive locations, ports, and the BizTalk Server environment to receive and send encrypted messages.</span></span>  
   
- <span data-ttu-id="a530e-104">暗号化されたメッセージ用の証明書の詳細については、次を参照してください。[ための証明書を BizTalk Server を使用して暗号化されたメッセージ](../core/certificates-that-biztalk-server-uses-for-encrypted-messages.md)です。</span><span class="sxs-lookup"><span data-stu-id="a530e-104">For more information about the certificates for encrypted messages, see [Certificates that BizTalk Server Uses for Encrypted Messages](../core/certificates-that-biztalk-server-uses-for-encrypted-messages.md).</span></span>  
+ <span data-ttu-id="b17a7-104">暗号化されたメッセージ用の証明書の詳細については、次を参照してください。[暗号化メッセージを BizTalk Server を使用して証明書](../core/certificates-that-biztalk-server-uses-for-encrypted-messages.md)します。</span><span class="sxs-lookup"><span data-stu-id="b17a7-104">For more information about the certificates for encrypted messages, see [Certificates that BizTalk Server Uses for Encrypted Messages](../core/certificates-that-biztalk-server-uses-for-encrypted-messages.md).</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="a530e-105">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="a530e-105">In This Section</span></span>  
+## <a name="in-this-section"></a><span data-ttu-id="b17a7-105">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="b17a7-105">In This Section</span></span>  
   
--   [<span data-ttu-id="a530e-106">暗号化されたメッセージの証明書をインストールする方法</span><span class="sxs-lookup"><span data-stu-id="a530e-106">How to Install the Certificates for Encrypted Messages</span></span>](../core/how-to-install-the-certificates-for-encrypted-messages.md)  
+-   [<span data-ttu-id="b17a7-106">暗号化されたメッセージの証明書をインストールする方法</span><span class="sxs-lookup"><span data-stu-id="b17a7-106">How to Install the Certificates for Encrypted Messages</span></span>](../core/how-to-install-the-certificates-for-encrypted-messages.md)  
   
--   [<span data-ttu-id="a530e-107">暗号化されたメッセージを受信するための BizTalk Server を構成する方法</span><span class="sxs-lookup"><span data-stu-id="a530e-107">How to Configure BizTalk Server for Receiving Encrypted Messages</span></span>](../core/how-to-configure-biztalk-server-for-receiving-encrypted-messages.md)  
+-   [<span data-ttu-id="b17a7-107">暗号化されたメッセージを受信するための BizTalk Server を構成する方法</span><span class="sxs-lookup"><span data-stu-id="b17a7-107">How to Configure BizTalk Server for Receiving Encrypted Messages</span></span>](../core/how-to-configure-biztalk-server-for-receiving-encrypted-messages.md)  
   
--   [<span data-ttu-id="a530e-108">暗号化されたメッセージを送信するための BizTalk Server を構成する方法</span><span class="sxs-lookup"><span data-stu-id="a530e-108">How to Configure BizTalk Server for Sending Encrypted Messages</span></span>](../core/how-to-configure-biztalk-server-for-sending-encrypted-messages.md)
+-   [<span data-ttu-id="b17a7-108">暗号化されたメッセージを送信するための BizTalk Server を構成する方法</span><span class="sxs-lookup"><span data-stu-id="b17a7-108">How to Configure BizTalk Server for Sending Encrypted Messages</span></span>](../core/how-to-configure-biztalk-server-for-sending-encrypted-messages.md)

@@ -1,5 +1,5 @@
 ---
-title: 'エラー - 例外スタック トレース: {0} |Microsoft ドキュメント'
+title: 'エラー - 例外スタック トレース: {0} |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,18 +12,18 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 666cf6c6f021bae6ca4938d0015659ba51d2f1af
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 89decd8a6b7a452d9c963bb1807b60f82c772fb9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22239650"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65389125"
 ---
-# <a name="error---exception-stack-trace-0"></a><span data-ttu-id="b4b67-102">エラー - 例外スタック トレース: {0}</span><span class="sxs-lookup"><span data-stu-id="b4b67-102">Error - Exception Stack Trace: {0}</span></span>
-<span data-ttu-id="b4b67-103">**エラー コード**</span><span class="sxs-lookup"><span data-stu-id="b4b67-103">**Error Code**</span></span>  
+# <a name="error---exception-stack-trace-0"></a><span data-ttu-id="5845a-102">エラー - 例外スタック トレース: {0}</span><span class="sxs-lookup"><span data-stu-id="5845a-102">Error - Exception Stack Trace: {0}</span></span>
+<span data-ttu-id="5845a-103">**エラー コード**</span><span class="sxs-lookup"><span data-stu-id="5845a-103">**Error Code**</span></span>  
   
- <span data-ttu-id="b4b67-104">btm1024</span><span class="sxs-lookup"><span data-stu-id="b4b67-104">btm1024</span></span>  
+ <span data-ttu-id="5845a-104">btm1024</span><span class="sxs-lookup"><span data-stu-id="5845a-104">btm1024</span></span>  
   
- <span data-ttu-id="b4b67-105">**ユーザーの操作**</span><span class="sxs-lookup"><span data-stu-id="b4b67-105">**User Action**</span></span>  
+ <span data-ttu-id="5845a-105">**ユーザーの操作**</span><span class="sxs-lookup"><span data-stu-id="5845a-105">**User Action**</span></span>  
   
- <span data-ttu-id="b4b67-106">[なし] :</span><span class="sxs-lookup"><span data-stu-id="b4b67-106">None.</span></span>
+ <span data-ttu-id="5845a-106">[なし] :</span><span class="sxs-lookup"><span data-stu-id="5845a-106">None.</span></span>

@@ -1,5 +1,5 @@
 ---
-title: BAM Notification Services データベースへの参照の更新 |Microsoft ドキュメント
+title: BAM Notification Services データベースへの参照の更新 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,15 +12,15 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fa1e41069e8a43716ac62296733fbea0590c1ad1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 969ccb719a36bd88fe9ca7da2faab104e4e9ad18
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22302826"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65400013"
 ---
-# <a name="update-references-to-the-bam-notification-services-databases"></a><span data-ttu-id="3b6e1-102">BAM Notification Services データベースへの参照を更新します。</span><span class="sxs-lookup"><span data-stu-id="3b6e1-102">Update References to the BAM Notification Services Databases</span></span>
-<span data-ttu-id="3b6e1-103">BAM Notification Services データベースへの参照の更新については、次を参照してください。[新しい BAM Notification Services データベースへの参照の更新](../technical-guides/how-to-move-the-bam-notification-services-databases1.md#BKMK_NotiUpdate)です。</span><span class="sxs-lookup"><span data-stu-id="3b6e1-103">For information about updating references to the BAM Notification Services databases, see [Updating References to the New BAM Notification Services Databases](../technical-guides/how-to-move-the-bam-notification-services-databases1.md#BKMK_NotiUpdate).</span></span>  
+# <a name="update-references-to-the-bam-notification-services-databases"></a><span data-ttu-id="16551-102">BAM Notification Services データベースへの参照を更新します。</span><span class="sxs-lookup"><span data-stu-id="16551-102">Update References to the BAM Notification Services Databases</span></span>
+<span data-ttu-id="16551-103">BAM Notification Services データベースへの参照を更新する方法の詳細については、次を参照してください。[新しい BAM Notification Services データベースへの参照の更新](../technical-guides/how-to-move-the-bam-notification-services-databases1.md#BKMK_NotiUpdate)します。</span><span class="sxs-lookup"><span data-stu-id="16551-103">For information about updating references to the BAM Notification Services databases, see [Updating References to the New BAM Notification Services Databases](../technical-guides/how-to-move-the-bam-notification-services-databases1.md#BKMK_NotiUpdate).</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="3b6e1-104">参照</span><span class="sxs-lookup"><span data-stu-id="3b6e1-104">See Also</span></span>  
- [<span data-ttu-id="3b6e1-105">BAM 分析をバックアップして、追跡分析サーバー データベース</span><span class="sxs-lookup"><span data-stu-id="3b6e1-105">Backing Up the BAM Analysis and Tracking Analysis Server Databases</span></span>](../technical-guides/backing-up-the-bam-analysis-and-tracking-analysis-server-databases.md)
+## <a name="see-also"></a><span data-ttu-id="16551-104">参照</span><span class="sxs-lookup"><span data-stu-id="16551-104">See Also</span></span>  
+ [<span data-ttu-id="16551-105">BAM 分析および Tracking Analysis Server データベースのバックアップ</span><span class="sxs-lookup"><span data-stu-id="16551-105">Backing Up the BAM Analysis and Tracking Analysis Server Databases</span></span>](../technical-guides/backing-up-the-bam-analysis-and-tracking-analysis-server-databases.md)

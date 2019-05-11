@@ -12,30 +12,30 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c526d3d76e134914f5523301c447bf99add0b27e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e748037a120a64dfa837de71fd1afdadcbd91ff0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36997499"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65400766"
 ---
-# <a name="installing-and-running-the-biztalk-operations-sample"></a><span data-ttu-id="c8948-102">インストールして、BizTalk 操作サンプルを実行しています。</span><span class="sxs-lookup"><span data-stu-id="c8948-102">Installing and Running the BizTalk Operations Sample</span></span>
-<span data-ttu-id="c8948-103">Microsoft BizTalk 操作サンプルでは、ESB BizTalk 操作のサービスを使用する BizTalk アプリケーションの運用データをクエリする方法を示します。</span><span class="sxs-lookup"><span data-stu-id="c8948-103">The Microsoft BizTalk Operations sample shows how you can query for operational data on BizTalk applications using the ESB BizTalk Operations Service.</span></span> <span data-ttu-id="c8948-104">ESB 管理ポータルでは、このサービスを使用して、返すか、BizTalk 管理および追跡データベースの情報を更新します。</span><span class="sxs-lookup"><span data-stu-id="c8948-104">The ESB Management Portal uses this service to return or update information in the BizTalk management and tracking databases.</span></span> <span data-ttu-id="c8948-105">使用可能なは、次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="c8948-105">The available information includes the following:</span></span>  
+# <a name="installing-and-running-the-biztalk-operations-sample"></a><span data-ttu-id="05d66-102">インストールして、BizTalk 操作サンプルを実行しています。</span><span class="sxs-lookup"><span data-stu-id="05d66-102">Installing and Running the BizTalk Operations Sample</span></span>
+<span data-ttu-id="05d66-103">Microsoft BizTalk 操作サンプルでは、ESB BizTalk 操作のサービスを使用する BizTalk アプリケーションの運用データをクエリする方法を示します。</span><span class="sxs-lookup"><span data-stu-id="05d66-103">The Microsoft BizTalk Operations sample shows how you can query for operational data on BizTalk applications using the ESB BizTalk Operations Service.</span></span> <span data-ttu-id="05d66-104">ESB 管理ポータルでは、このサービスを使用して、返すか、BizTalk 管理および追跡データベースの情報を更新します。</span><span class="sxs-lookup"><span data-stu-id="05d66-104">The ESB Management Portal uses this service to return or update information in the BizTalk management and tracking databases.</span></span> <span data-ttu-id="05d66-105">使用可能なは、次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="05d66-105">The available information includes the following:</span></span>  
 
-- <span data-ttu-id="c8948-106">展開済みの BizTalk アプリケーションとホストの状態</span><span class="sxs-lookup"><span data-stu-id="c8948-106">The status of deployed BizTalk applications and hosts</span></span>  
+- <span data-ttu-id="05d66-106">展開済みの BizTalk アプリケーションとホストの状態</span><span class="sxs-lookup"><span data-stu-id="05d66-106">The status of deployed BizTalk applications and hosts</span></span>  
 
-- <span data-ttu-id="c8948-107">アクティブまたは中断されたサービス インスタンス</span><span class="sxs-lookup"><span data-stu-id="c8948-107">Active or suspended service instances</span></span>  
+- <span data-ttu-id="05d66-107">アクティブまたは中断されたサービス インスタンス</span><span class="sxs-lookup"><span data-stu-id="05d66-107">Active or suspended service instances</span></span>  
 
-- <span data-ttu-id="c8948-108">メッセージとそのプロパティ</span><span class="sxs-lookup"><span data-stu-id="c8948-108">Messages and their properties</span></span>  
+- <span data-ttu-id="05d66-108">メッセージとそのプロパティ</span><span class="sxs-lookup"><span data-stu-id="05d66-108">Messages and their properties</span></span>  
 
-- <span data-ttu-id="c8948-109">デプロイ済みの BizTalk アプリケーション</span><span class="sxs-lookup"><span data-stu-id="c8948-109">Deployed BizTalk applications</span></span>  
+- <span data-ttu-id="05d66-109">デプロイ済みの BizTalk アプリケーション</span><span class="sxs-lookup"><span data-stu-id="05d66-109">Deployed BizTalk applications</span></span>  
 
-- <span data-ttu-id="c8948-110">受信ポートのプロパティと、受信場所</span><span class="sxs-lookup"><span data-stu-id="c8948-110">Receive port properties and receive locations</span></span>  
+- <span data-ttu-id="05d66-110">受信ポートのプロパティと、受信場所</span><span class="sxs-lookup"><span data-stu-id="05d66-110">Receive port properties and receive locations</span></span>  
 
-- <span data-ttu-id="c8948-111">送信ポートのプロパティ</span><span class="sxs-lookup"><span data-stu-id="c8948-111">Send port properties</span></span>  
+- <span data-ttu-id="05d66-111">送信ポートのプロパティ</span><span class="sxs-lookup"><span data-stu-id="05d66-111">Send port properties</span></span>  
 
-  <span data-ttu-id="c8948-112">このセクションのトピックは次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="c8948-112">This section contains the following topics:</span></span>  
+  <span data-ttu-id="05d66-112">このセクションでは、次のトピックについて説明します。</span><span class="sxs-lookup"><span data-stu-id="05d66-112">This section contains the following topics:</span></span>  
 
-- [<span data-ttu-id="c8948-113">BizTalk 操作サンプルをインストールする</span><span class="sxs-lookup"><span data-stu-id="c8948-113">Installing the BizTalk Operations Sample</span></span>](../esb-toolkit/installing-the-biztalk-operations-sample.md)  
+- [<span data-ttu-id="05d66-113">BizTalk 操作サンプルをインストールする</span><span class="sxs-lookup"><span data-stu-id="05d66-113">Installing the BizTalk Operations Sample</span></span>](../esb-toolkit/installing-the-biztalk-operations-sample.md)  
 
-- [<span data-ttu-id="c8948-114">BizTalk 操作サンプルの実行</span><span class="sxs-lookup"><span data-stu-id="c8948-114">Running the BizTalk Operations Sample</span></span>](../esb-toolkit/running-the-biztalk-operations-sample.md)
+- [<span data-ttu-id="05d66-114">BizTalk 操作サンプルの実行</span><span class="sxs-lookup"><span data-stu-id="05d66-114">Running the BizTalk Operations Sample</span></span>](../esb-toolkit/running-the-biztalk-operations-sample.md)

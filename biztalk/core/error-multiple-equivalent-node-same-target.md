@@ -1,5 +1,5 @@
 ---
-title: エラー - 複数のノードと等しい同じターゲット |Microsoft ドキュメント
+title: エラー - 複数の等価のノードと同じターゲット |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,22 +14,22 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 12df4f7a68bb1eceaa3211c6aad6e9a581f17a4a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7c4cf66fe587f483385c4729e4c34b0179c1710e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22239802"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65388647"
 ---
-# <a name="error---multiple-equivalent-node-same-target"></a><span data-ttu-id="9b28c-102">エラー - 複数のノードと等しい同じターゲット</span><span class="sxs-lookup"><span data-stu-id="9b28c-102">Error - Multiple Equivalent Node Same Target</span></span>
-<span data-ttu-id="9b28c-103">**エラー コード**</span><span class="sxs-lookup"><span data-stu-id="9b28c-103">**Error Code**</span></span>  
+# <a name="error---multiple-equivalent-node-same-target"></a><span data-ttu-id="dbb77-102">エラー - 複数の等価のノードと同じターゲット</span><span class="sxs-lookup"><span data-stu-id="dbb77-102">Error - Multiple Equivalent Node Same Target</span></span>
+<span data-ttu-id="dbb77-103">**エラー コード**</span><span class="sxs-lookup"><span data-stu-id="dbb77-103">**Error Code**</span></span>  
   
- <span data-ttu-id="9b28c-104">btm1025</span><span class="sxs-lookup"><span data-stu-id="9b28c-104">btm1025</span></span>  
+ <span data-ttu-id="dbb77-104">btm1025</span><span class="sxs-lookup"><span data-stu-id="dbb77-104">btm1025</span></span>  
   
- <span data-ttu-id="9b28c-105">**説明**</span><span class="sxs-lookup"><span data-stu-id="9b28c-105">**Explanation**</span></span>  
+ <span data-ttu-id="dbb77-105">**説明**</span><span class="sxs-lookup"><span data-stu-id="dbb77-105">**Explanation**</span></span>  
   
- <span data-ttu-id="9b28c-106">競合する子ノードである送信元スキーマのノードの**等価**送信先スキーマのノードにリンクされている両方は、グループ ノード。</span><span class="sxs-lookup"><span data-stu-id="9b28c-106">The indicated nodes in the source schema, which are conflicting child nodes of an **Equivalent** group node, are both linked to the indicated node in the destination schema.</span></span> <span data-ttu-id="9b28c-107">任意の 1 つのインスタンス メッセージ内で使用できるのは、送信元スキーマ内のこれらのノードのうち、1 つだけです。</span><span class="sxs-lookup"><span data-stu-id="9b28c-107">Only one of these nodes in the source schema can occur in a given instance message.</span></span>  
+ <span data-ttu-id="dbb77-106">競合する子ノードには、ソース スキーマで指定されたノードの**同等**グループ ノードでは、どちらも、送信先スキーマのノードにリンクされています。</span><span class="sxs-lookup"><span data-stu-id="dbb77-106">The indicated nodes in the source schema, which are conflicting child nodes of an **Equivalent** group node, are both linked to the indicated node in the destination schema.</span></span> <span data-ttu-id="dbb77-107">送信元スキーマ内のこれらのノードの 1 つだけに特定のインスタンス メッセージで発生します。</span><span class="sxs-lookup"><span data-stu-id="dbb77-107">Only one of these nodes in the source schema can occur in a given instance message.</span></span>  
   
- <span data-ttu-id="9b28c-108">**ユーザーの操作**</span><span class="sxs-lookup"><span data-stu-id="9b28c-108">**User Action**</span></span>  
+ <span data-ttu-id="dbb77-108">**ユーザーの操作**</span><span class="sxs-lookup"><span data-stu-id="dbb77-108">**User Action**</span></span>  
   
- <span data-ttu-id="9b28c-109">ノードが 1 つだけの子を確認してください、**等価**グループ ノードが送信先スキーマの特定のノードに接続されています。</span><span class="sxs-lookup"><span data-stu-id="9b28c-109">Ensure that only one of the child nodes of the **Equivalent** group node is connected to a given node in the destination schema.</span></span>
+ <span data-ttu-id="dbb77-109">子の 1 つだけのノードをことを確認、**同等**グループ ノードが送信先スキーマの特定のノードに接続します。</span><span class="sxs-lookup"><span data-stu-id="dbb77-109">Ensure that only one of the child nodes of the **Equivalent** group node is connected to a given node in the destination schema.</span></span>

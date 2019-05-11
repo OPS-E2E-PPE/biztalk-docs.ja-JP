@@ -1,5 +1,5 @@
 ---
-title: 式図形を使用する方法 |Microsoft ドキュメント
+title: 式図形を使用する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,23 +17,23 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e263454db9674d5bc86b6b7dae1649003f3d129c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f26184af9976764f77276e256332d5750e35e5fc
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22256058"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65383404"
 ---
-# <a name="how-to-use-expression-shape"></a><span data-ttu-id="71806-102">式図形の使用方法</span><span class="sxs-lookup"><span data-stu-id="71806-102">How to Use Expression Shape</span></span>
-<span data-ttu-id="71806-103">**式**図形では、オーケストレーションで選択した任意の xlang/s 式を入力することができます。</span><span class="sxs-lookup"><span data-stu-id="71806-103">The **Expression** shape enables you to enter any XLANG/s expression you choose in your orchestration.</span></span> <span data-ttu-id="71806-104">たとえば、外部プログラムに対して .NET 呼び出しを行ったり、オーケストレーション変数の値を操作できます。</span><span class="sxs-lookup"><span data-stu-id="71806-104">For example, you can make a .NET call to run an external program, or simply manipulate the values of your orchestration variables.</span></span>  
+# <a name="how-to-use-expression-shape"></a><span data-ttu-id="e7a08-102">式図形を使用する方法</span><span class="sxs-lookup"><span data-stu-id="e7a08-102">How to Use Expression Shape</span></span>
+<span data-ttu-id="e7a08-103">**式**図形では、オーケストレーションで選択した任意の xlang/s 式を入力することができます。</span><span class="sxs-lookup"><span data-stu-id="e7a08-103">The **Expression** shape enables you to enter any XLANG/s expression you choose in your orchestration.</span></span> <span data-ttu-id="e7a08-104">たとえば、外部プログラムを実行する .NET 呼び出しを行うまたは単に、オーケストレーション変数の値を操作できます。</span><span class="sxs-lookup"><span data-stu-id="e7a08-104">For example, you can make a .NET call to run an external program, or simply manipulate the values of your orchestration variables.</span></span>  
   
- <span data-ttu-id="71806-105">中に、**式**図形が非常に柔軟なはないを使用して、オーケストレーション図面自体に表示可能であればされますが、高度なオーケストレーション ロジックを実行することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="71806-105">While the **Expression** shape is quite flexible, it is not good practice to use it to perform high-level orchestration logic, which preferably would be visible in the orchestration drawing itself.</span></span> <span data-ttu-id="71806-106">一般に、わかりやすくなり、オーケストレーションが保持は、**式**図形には、単純なモジュール形式の式が含まれています。</span><span class="sxs-lookup"><span data-stu-id="71806-106">In general, it is easier to understand and maintain your orchestrations if your **Expression** shapes contain simple and modular expressions.</span></span>  
+ <span data-ttu-id="e7a08-105">中に、**式**図形が非常に柔軟なことはないを使用して、可能であれば、オーケストレーション図面自体に表示される可能性のある高度なオーケストレーション ロジックを実行することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="e7a08-105">While the **Expression** shape is quite flexible, it is not good practice to use it to perform high-level orchestration logic, which preferably would be visible in the orchestration drawing itself.</span></span> <span data-ttu-id="e7a08-106">一般に、簡単に理解して場合、オーケストレーションの管理は、**式**図形は、単純なモジュール形式の式を含めることができます。</span><span class="sxs-lookup"><span data-stu-id="e7a08-106">In general, it is easier to understand and maintain your orchestrations if your **Expression** shapes contain simple and modular expressions.</span></span>  
   
-### <a name="to-configure-an-expression-shape"></a><span data-ttu-id="71806-107">式図形を構成するには</span><span class="sxs-lookup"><span data-stu-id="71806-107">To configure an Expression shape</span></span>  
+### <a name="to-configure-an-expression-shape"></a><span data-ttu-id="e7a08-107">式図形を構成するには</span><span class="sxs-lookup"><span data-stu-id="e7a08-107">To configure an Expression shape</span></span>  
   
-1.  <span data-ttu-id="71806-108">BizTalk 式エディターが表示されていない場合を右クリックし、**式**図形をクリックして**式の編集**か、[プロパティ] ウィンドウをクリックして、省略記号ボタン (**.**) ボタンをクリックして、**式**プロパティです。</span><span class="sxs-lookup"><span data-stu-id="71806-108">If BizTalk Expression Editor is not visible, right-click the **Expression** shape and click **Edit Expression** or, in the Properties window, click the Ellipsis (**...**) button for the **Expression** property.</span></span>  
+1.  <span data-ttu-id="e7a08-108">BizTalk 式エディターが表示されていない場合を右クリックし、**式**図形し、クリックして**式の編集**プロパティ ウィンドウで、省略記号ボタンをクリックしますまたは、(**.。**) ボタンを**式**プロパティ。</span><span class="sxs-lookup"><span data-stu-id="e7a08-108">If BizTalk Expression Editor is not visible, right-click the **Expression** shape and click **Edit Expression** or, in the Properties window, click the Ellipsis (**...**) button for the **Expression** property.</span></span>  
   
-2.  <span data-ttu-id="71806-109">BizTalk 式エディターで、値を割り当てる式を作成します。</span><span class="sxs-lookup"><span data-stu-id="71806-109">In BizTalk Expression Editor, create an expression to assign values.</span></span> <span data-ttu-id="71806-110">詳細については、次を参照してください。[式の要件と制限](../core/requirements-and-limitations-for-expressions.md)です。</span><span class="sxs-lookup"><span data-stu-id="71806-110">For more information, see [Requirements and Limitations for Expressions](../core/requirements-and-limitations-for-expressions.md).</span></span>  
+2.  <span data-ttu-id="e7a08-109">BizTalk 式エディターでは、値を代入する式を作成します。</span><span class="sxs-lookup"><span data-stu-id="e7a08-109">In BizTalk Expression Editor, create an expression to assign values.</span></span> <span data-ttu-id="e7a08-110">詳細については、次を参照してください。[式の要件と制限](../core/requirements-and-limitations-for-expressions.md)します。</span><span class="sxs-lookup"><span data-stu-id="e7a08-110">For more information, see [Requirements and Limitations for Expressions](../core/requirements-and-limitations-for-expressions.md).</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="71806-111">参照</span><span class="sxs-lookup"><span data-stu-id="71806-111">See Also</span></span>  
- [<span data-ttu-id="71806-112">XLANG の言語</span><span class="sxs-lookup"><span data-stu-id="71806-112">XLANG-s Language</span></span>](../core/xlang-s-language.md)
+## <a name="see-also"></a><span data-ttu-id="e7a08-111">参照</span><span class="sxs-lookup"><span data-stu-id="e7a08-111">See Also</span></span>  
+ [<span data-ttu-id="e7a08-112">XLANG-s 言語</span><span class="sxs-lookup"><span data-stu-id="e7a08-112">XLANG-s Language</span></span>](../core/xlang-s-language.md)

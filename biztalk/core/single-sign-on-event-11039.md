@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 11039 |Microsoft Docs'
+title: シングル サインオン:イベント 11039 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,28 +12,28 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9badc899afddd8ab84ecd52532096453e4579316
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: dce191d742cfb2043d2aef5acae4594f69c94850
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37024072"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65401024"
 ---
-# <a name="single-sign-on-event-11039"></a><span data-ttu-id="0e43e-102">シングル サインオン: イベント 11039</span><span class="sxs-lookup"><span data-stu-id="0e43e-102">Single Sign-On: Event 11039</span></span>
-## <a name="details"></a><span data-ttu-id="0e43e-103">詳細</span><span class="sxs-lookup"><span data-stu-id="0e43e-103">Details</span></span>  
+# <a name="single-sign-on-event-11039"></a><span data-ttu-id="95016-102">シングル サインオン:イベント 11039</span><span class="sxs-lookup"><span data-stu-id="95016-102">Single Sign-On: Event 11039</span></span>
+## <a name="details"></a><span data-ttu-id="95016-103">詳細</span><span class="sxs-lookup"><span data-stu-id="95016-103">Details</span></span>  
   
 |                 |                                                               |
 |-----------------|---------------------------------------------------------------|
-|  <span data-ttu-id="0e43e-104">製品名</span><span class="sxs-lookup"><span data-stu-id="0e43e-104">Product Name</span></span>   |                   <span data-ttu-id="0e43e-105">エンタープライズ シングル サインオン</span><span class="sxs-lookup"><span data-stu-id="0e43e-105">Enterprise Single Sign-On</span></span>                   |
-| <span data-ttu-id="0e43e-106">製品バージョン</span><span class="sxs-lookup"><span data-stu-id="0e43e-106">Product Version</span></span> |  [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]   |
-|    <span data-ttu-id="0e43e-107">イベント ID</span><span class="sxs-lookup"><span data-stu-id="0e43e-107">Event ID</span></span>     |                             <span data-ttu-id="0e43e-108">11039</span><span class="sxs-lookup"><span data-stu-id="0e43e-108">11039</span></span>                             |
-|  <span data-ttu-id="0e43e-109">イベント ソース</span><span class="sxs-lookup"><span data-stu-id="0e43e-109">Event Source</span></span>   |                            <span data-ttu-id="0e43e-110">ENTSSO</span><span class="sxs-lookup"><span data-stu-id="0e43e-110">ENTSSO</span></span>                             |
-|    <span data-ttu-id="0e43e-111">コンポーネント</span><span class="sxs-lookup"><span data-stu-id="0e43e-111">Component</span></span>    |                              <span data-ttu-id="0e43e-112">なし</span><span class="sxs-lookup"><span data-stu-id="0e43e-112">N/A</span></span>                              |
-|  <span data-ttu-id="0e43e-113">シンボル名</span><span class="sxs-lookup"><span data-stu-id="0e43e-113">Symbolic Name</span></span>  |                  <span data-ttu-id="0e43e-114">SSO_ERROR_NO_LOCAL_SERVICE</span><span class="sxs-lookup"><span data-stu-id="0e43e-114">SSO_ERROR_NO_LOCAL_SERVICE</span></span>                   |
-|  <span data-ttu-id="0e43e-115">メッセージ テキスト</span><span class="sxs-lookup"><span data-stu-id="0e43e-115">Message Text</span></span>   | <span data-ttu-id="0e43e-116">SSO サービスは Local Service アカウントでは実行できません。%r</span><span class="sxs-lookup"><span data-stu-id="0e43e-116">The SSO service cannot run under the Local Service account.%r</span></span> |
+|  <span data-ttu-id="95016-104">製品名</span><span class="sxs-lookup"><span data-stu-id="95016-104">Product Name</span></span>   |                   <span data-ttu-id="95016-105">エンタープライズ シングル サインオン</span><span class="sxs-lookup"><span data-stu-id="95016-105">Enterprise Single Sign-On</span></span>                   |
+| <span data-ttu-id="95016-106">製品バージョン</span><span class="sxs-lookup"><span data-stu-id="95016-106">Product Version</span></span> |  [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]   |
+|    <span data-ttu-id="95016-107">イベント ID</span><span class="sxs-lookup"><span data-stu-id="95016-107">Event ID</span></span>     |                             <span data-ttu-id="95016-108">11039</span><span class="sxs-lookup"><span data-stu-id="95016-108">11039</span></span>                             |
+|  <span data-ttu-id="95016-109">イベント ソース</span><span class="sxs-lookup"><span data-stu-id="95016-109">Event Source</span></span>   |                            <span data-ttu-id="95016-110">ENTSSO</span><span class="sxs-lookup"><span data-stu-id="95016-110">ENTSSO</span></span>                             |
+|    <span data-ttu-id="95016-111">コンポーネント</span><span class="sxs-lookup"><span data-stu-id="95016-111">Component</span></span>    |                              <span data-ttu-id="95016-112">なし</span><span class="sxs-lookup"><span data-stu-id="95016-112">N/A</span></span>                              |
+|  <span data-ttu-id="95016-113">シンボル名</span><span class="sxs-lookup"><span data-stu-id="95016-113">Symbolic Name</span></span>  |                  <span data-ttu-id="95016-114">SSO_ERROR_NO_LOCAL_SERVICE</span><span class="sxs-lookup"><span data-stu-id="95016-114">SSO_ERROR_NO_LOCAL_SERVICE</span></span>                   |
+|  <span data-ttu-id="95016-115">メッセージ テキスト</span><span class="sxs-lookup"><span data-stu-id="95016-115">Message Text</span></span>   | <span data-ttu-id="95016-116">SSO サービスは Local Service アカウントでは実行できません。%r</span><span class="sxs-lookup"><span data-stu-id="95016-116">The SSO service cannot run under the Local Service account.%r</span></span> |
   
-## <a name="explanation"></a><span data-ttu-id="0e43e-117">説明</span><span class="sxs-lookup"><span data-stu-id="0e43e-117">Explanation</span></span>  
- <span data-ttu-id="0e43e-118">SSO サービスは Local Service アカウントでは実行できません。%r</span><span class="sxs-lookup"><span data-stu-id="0e43e-118">The SSO service cannot run under the Local Service account.%r</span></span>  
+## <a name="explanation"></a><span data-ttu-id="95016-117">説明</span><span class="sxs-lookup"><span data-stu-id="95016-117">Explanation</span></span>  
+ <span data-ttu-id="95016-118">SSO サービスは Local Service アカウントでは実行できません。%r</span><span class="sxs-lookup"><span data-stu-id="95016-118">The SSO service cannot run under the Local Service account.%r</span></span>  
   
-## <a name="user-action"></a><span data-ttu-id="0e43e-119">ユーザーの操作</span><span class="sxs-lookup"><span data-stu-id="0e43e-119">User Action</span></span>  
- <span data-ttu-id="0e43e-120">詳細については、[高可用性 SSO インストール オプション](../core/high-availability-sso-installation-options.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="0e43e-120">For more information, see [High-Availability SSO Installation Options](../core/high-availability-sso-installation-options.md).</span></span>
+## <a name="user-action"></a><span data-ttu-id="95016-119">ユーザーの操作</span><span class="sxs-lookup"><span data-stu-id="95016-119">User Action</span></span>  
+ <span data-ttu-id="95016-120">詳細については、次を参照してください。[高可用性 SSO インストール オプション](../core/high-availability-sso-installation-options.md)します。</span><span class="sxs-lookup"><span data-stu-id="95016-120">For more information, see [High-Availability SSO Installation Options](../core/high-availability-sso-installation-options.md).</span></span>

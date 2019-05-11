@@ -1,5 +1,5 @@
 ---
-title: エラー - XSL 変換エラー |Microsoft ドキュメント
+title: エラー - XSL 変換エラー |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,22 +14,22 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 58548bccde30bc1d4fb07c13aa926aa36a30e070
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f08de2f8ca1450abff7028c9a35d0185ef624e16
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22245858"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65388328"
 ---
-# <a name="error---xsl-transformation-failure"></a><span data-ttu-id="859eb-102">エラー - XSL 変換エラー</span><span class="sxs-lookup"><span data-stu-id="859eb-102">Error - XSL Transformation Failure</span></span>
-<span data-ttu-id="859eb-103">**エラー コード**</span><span class="sxs-lookup"><span data-stu-id="859eb-103">**Error Code**</span></span>  
+# <a name="error---xsl-transformation-failure"></a><span data-ttu-id="ebbb3-102">エラー - XSL 変換エラー</span><span class="sxs-lookup"><span data-stu-id="ebbb3-102">Error - XSL Transformation Failure</span></span>
+<span data-ttu-id="ebbb3-103">**エラー コード**</span><span class="sxs-lookup"><span data-stu-id="ebbb3-103">**Error Code**</span></span>  
   
- <span data-ttu-id="859eb-104">btm1050</span><span class="sxs-lookup"><span data-stu-id="859eb-104">btm1050</span></span>  
+ <span data-ttu-id="ebbb3-104">btm1050</span><span class="sxs-lookup"><span data-stu-id="ebbb3-104">btm1050</span></span>  
   
- <span data-ttu-id="859eb-105">**説明**</span><span class="sxs-lookup"><span data-stu-id="859eb-105">**Explanation**</span></span>  
+ <span data-ttu-id="ebbb3-105">**説明**</span><span class="sxs-lookup"><span data-stu-id="ebbb3-105">**Explanation**</span></span>  
   
- <span data-ttu-id="859eb-106">変換処理中に、XSLT エラーが発生しました。</span><span class="sxs-lookup"><span data-stu-id="859eb-106">The indicated XSLT error occurred during the transformation processing.</span></span>  
+ <span data-ttu-id="ebbb3-106">変換処理中に、XSLT エラーが発生しました。</span><span class="sxs-lookup"><span data-stu-id="ebbb3-106">The indicated XSLT error occurred during the transformation processing.</span></span>  
   
- <span data-ttu-id="859eb-107">**ユーザーの操作**</span><span class="sxs-lookup"><span data-stu-id="859eb-107">**User Action**</span></span>  
+ <span data-ttu-id="ebbb3-107">**ユーザーの操作**</span><span class="sxs-lookup"><span data-stu-id="ebbb3-107">**User Action**</span></span>  
   
- <span data-ttu-id="859eb-108">表示されている XSLT エラーに基づき、マップまたは変換元スキーマと変換先のスキーマ、またはその両方を変更し、エラーの原因を解決します。</span><span class="sxs-lookup"><span data-stu-id="859eb-108">Based on the indicated XSLT error, modify the map and/or the source and destination schemas to correct the cause of the error.</span></span>
+ <span data-ttu-id="ebbb3-108">表示されている XSLT エラーに基づき、マップまたは変換元スキーマと変換先のスキーマ、またはその両方を変更し、エラーの原因を解決します。</span><span class="sxs-lookup"><span data-stu-id="ebbb3-108">Based on the indicated XSLT error, modify the map and/or the source and destination schemas to correct the cause of the error.</span></span>

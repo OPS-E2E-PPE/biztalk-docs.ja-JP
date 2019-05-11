@@ -1,5 +1,5 @@
 ---
-title: 例外管理フレームワークのコンポーネント |Microsoft ドキュメント
+title: 例外管理フレームワークのコンポーネント |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,20 +12,20 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 634951e7676c46765b2f79b915e61d77c6cc2270
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 67cfe27520d8fb330a605052393f2b88bea05226
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22294762"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399855"
 ---
-# <a name="the-components-of-the-exception-management-framework"></a><span data-ttu-id="5e59b-102">例外管理フレームワークのコンポーネント</span><span class="sxs-lookup"><span data-stu-id="5e59b-102">The Components of the Exception Management Framework</span></span>
-<span data-ttu-id="5e59b-103">ESB 例外管理フレームワークには、いくつかの主要な機能が含まれています。</span><span class="sxs-lookup"><span data-stu-id="5e59b-103">The ESB Exception Management Framework includes several core features.</span></span> <span data-ttu-id="5e59b-104">次のトピックでは、これらの各機能について説明します。</span><span class="sxs-lookup"><span data-stu-id="5e59b-104">The following topics describe each of these features:</span></span>  
+# <a name="the-components-of-the-exception-management-framework"></a><span data-ttu-id="36007-102">例外管理フレームワークのコンポーネント</span><span class="sxs-lookup"><span data-stu-id="36007-102">The Components of the Exception Management Framework</span></span>
+<span data-ttu-id="36007-103">ESB 例外管理フレームワークには、いくつかのコア機能が含まれています。</span><span class="sxs-lookup"><span data-stu-id="36007-103">The ESB Exception Management Framework includes several core features.</span></span> <span data-ttu-id="36007-104">次のトピックでは、これらの各機能について説明します。</span><span class="sxs-lookup"><span data-stu-id="36007-104">The following topics describe each of these features:</span></span>  
   
--   [<span data-ttu-id="5e59b-105">ESB オーケストレーション例外ルーティング機構に失敗しました</span><span class="sxs-lookup"><span data-stu-id="5e59b-105">The ESB Failed Orchestration Exception Routing Mechanism</span></span>](../esb-toolkit/the-esb-failed-orchestration-exception-routing-mechanism.md)  
+-   [<span data-ttu-id="36007-105">ESB オーケストレーション エラーの例外ルーティング メカニズム</span><span class="sxs-lookup"><span data-stu-id="36007-105">The ESB Failed Orchestration Exception Routing Mechanism</span></span>](../esb-toolkit/the-esb-failed-orchestration-exception-routing-mechanism.md)  
   
--   [<span data-ttu-id="5e59b-106">ESB フォールト Processor パイプライン</span><span class="sxs-lookup"><span data-stu-id="5e59b-106">The ESB Fault Processor Pipeline</span></span>](../esb-toolkit/the-esb-fault-processor-pipeline.md)  
+-   [<span data-ttu-id="36007-106">ESB エラー プロセッサ パイプライン</span><span class="sxs-lookup"><span data-stu-id="36007-106">The ESB Fault Processor Pipeline</span></span>](../esb-toolkit/the-esb-fault-processor-pipeline.md)  
   
--   [<span data-ttu-id="5e59b-107">ESB の管理ポータルおよびフォールト メッセージ ビューアー</span><span class="sxs-lookup"><span data-stu-id="5e59b-107">The ESB Management Portal and Fault Message Viewer</span></span>](../esb-toolkit/the-esb-management-portal-and-fault-message-viewer.md)  
+-   [<span data-ttu-id="36007-107">ESB 管理ポータルとエラー メッセージ ビューアー</span><span class="sxs-lookup"><span data-stu-id="36007-107">The ESB Management Portal and Fault Message Viewer</span></span>](../esb-toolkit/the-esb-management-portal-and-fault-message-viewer.md)  
   
--   [<span data-ttu-id="5e59b-108">InfoPath メッセージ テンプレート</span><span class="sxs-lookup"><span data-stu-id="5e59b-108">The InfoPath Message Template</span></span>](../esb-toolkit/the-infopath-message-template.md)
+-   [<span data-ttu-id="36007-108">InfoPath メッセージ テンプレート</span><span class="sxs-lookup"><span data-stu-id="36007-108">The InfoPath Message Template</span></span>](../esb-toolkit/the-infopath-message-template.md)

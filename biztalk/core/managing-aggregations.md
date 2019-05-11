@@ -1,5 +1,5 @@
 ---
-title: 集計の管理 |Microsoft ドキュメント
+title: 集計の管理 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,32 +15,32 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f1d645db5b109383ace2a7870dbb01000689b1d1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 37a7fe51bda0002ad8db67cf64f626b98f95524e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22262138"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65380342"
 ---
-# <a name="managing-aggregations"></a><span data-ttu-id="4758a-102">集計の管理</span><span class="sxs-lookup"><span data-stu-id="4758a-102">Managing Aggregations</span></span>
-<span data-ttu-id="4758a-103">集計とは、データセットに対して実行する累積処理のことで、そのデータセットに関する主要な特性や情報を取得することができます。</span><span class="sxs-lookup"><span data-stu-id="4758a-103">Aggregations are cumulative operations against a data set to derive a generally representative characteristic or description for that data set.</span></span> <span data-ttu-id="4758a-104">このセクションでは、インデックス、アクティビティ、リアルタイム集計 (RTA) など、集計のさまざまな要素を管理する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="4758a-104">This section describes how to manage different elements of an aggregation, such as indexes, activities, and real-time aggregations (RTAs).</span></span>  
+# <a name="managing-aggregations"></a><span data-ttu-id="8c5ef-102">集計の管理</span><span class="sxs-lookup"><span data-stu-id="8c5ef-102">Managing Aggregations</span></span>
+<span data-ttu-id="8c5ef-103">集計は、通常、代表的な特性をデータ セットの説明を取得するデータ セットに対する累積的な操作です。</span><span class="sxs-lookup"><span data-stu-id="8c5ef-103">Aggregations are cumulative operations against a data set to derive a generally representative characteristic or description for that data set.</span></span> <span data-ttu-id="8c5ef-104">このセクションでは、集計、インデックス、アクティビティ、およびリアルタイム集計 (Rta) などのさまざまな要素を管理する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="8c5ef-104">This section describes how to manage different elements of an aggregation, such as indexes, activities, and real-time aggregations (RTAs).</span></span>  
   
- <span data-ttu-id="4758a-105">集計の詳細については、次を参照してください。 [、BAM ポータルでの集計](../core/aggregations-in-the-bam-portal.md)と[、BAM ポータル ページの集計](../core/aggregations-on-the-bam-portal-page.md)です。</span><span class="sxs-lookup"><span data-stu-id="4758a-105">For general information about aggregations, see [Aggregations in the BAM Portal](../core/aggregations-in-the-bam-portal.md) and [Aggregations on the BAM Portal Page](../core/aggregations-on-the-bam-portal-page.md).</span></span>  
+ <span data-ttu-id="8c5ef-105">集計の詳細については、次を参照してください。 [BAM ポータルでの集計](../core/aggregations-in-the-bam-portal.md)と[BAM ポータル ページで、集計](../core/aggregations-on-the-bam-portal-page.md)します。</span><span class="sxs-lookup"><span data-stu-id="8c5ef-105">For general information about aggregations, see [Aggregations in the BAM Portal](../core/aggregations-in-the-bam-portal.md) and [Aggregations on the BAM Portal Page](../core/aggregations-on-the-bam-portal-page.md).</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="4758a-106">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="4758a-106">In This Section</span></span>  
+## <a name="in-this-section"></a><span data-ttu-id="8c5ef-106">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="8c5ef-106">In This Section</span></span>  
   
--   [<span data-ttu-id="4758a-107">インデックスを作成する方法</span><span class="sxs-lookup"><span data-stu-id="4758a-107">How to Create an Index</span></span>](../core/how-to-create-an-index.md)  
+-   [<span data-ttu-id="8c5ef-107">インデックスを作成する方法</span><span class="sxs-lookup"><span data-stu-id="8c5ef-107">How to Create an Index</span></span>](../core/how-to-create-an-index.md)  
   
--   [<span data-ttu-id="4758a-108">集計のインデックスの一覧を取得する方法</span><span class="sxs-lookup"><span data-stu-id="4758a-108">How to Get a List of Indexes on an Aggregation</span></span>](../core/how-to-get-a-list-of-indexes-on-an-aggregation.md)  
+-   [<span data-ttu-id="8c5ef-108">集計のインデックスの一覧を取得する方法</span><span class="sxs-lookup"><span data-stu-id="8c5ef-108">How to Get a List of Indexes on an Aggregation</span></span>](../core/how-to-get-a-list-of-indexes-on-an-aggregation.md)  
   
--   [<span data-ttu-id="4758a-109">インデックスを削除する方法</span><span class="sxs-lookup"><span data-stu-id="4758a-109">How to Delete an Index</span></span>](../core/how-to-delete-an-index.md)  
+-   [<span data-ttu-id="8c5ef-109">インデックスを削除する方法</span><span class="sxs-lookup"><span data-stu-id="8c5ef-109">How to Delete an Index</span></span>](../core/how-to-delete-an-index.md)  
   
--   [<span data-ttu-id="4758a-110">アクティビティ ウィンドウの期間を設定する方法</span><span class="sxs-lookup"><span data-stu-id="4758a-110">How to Set the Duration on an Activity Window</span></span>](../core/how-to-set-the-duration-on-an-activity-window.md)  
+-   [<span data-ttu-id="8c5ef-110">アクティビティ ウィンドウの期間を設定する方法</span><span class="sxs-lookup"><span data-stu-id="8c5ef-110">How to Set the Duration on an Activity Window</span></span>](../core/how-to-set-the-duration-on-an-activity-window.md)  
   
--   [<span data-ttu-id="4758a-111">アクティビティ ウィンドウの期間を取得する方法</span><span class="sxs-lookup"><span data-stu-id="4758a-111">How to Get the Duration on an Activity Window</span></span>](../core/how-to-get-the-duration-on-an-activity-window.md)  
+-   [<span data-ttu-id="8c5ef-111">アクティビティ ウィンドウの期間を取得する方法</span><span class="sxs-lookup"><span data-stu-id="8c5ef-111">How to Get the Duration on an Activity Window</span></span>](../core/how-to-get-the-duration-on-an-activity-window.md)  
   
--   [<span data-ttu-id="4758a-112">RTA 時間帯の期間を設定する方法</span><span class="sxs-lookup"><span data-stu-id="4758a-112">How to Set the Duration on an RTA Window</span></span>](../core/how-to-set-the-duration-on-an-rta-window.md)  
+-   [<span data-ttu-id="8c5ef-112">RTA ウィンドウの期間を設定する方法</span><span class="sxs-lookup"><span data-stu-id="8c5ef-112">How to Set the Duration on an RTA Window</span></span>](../core/how-to-set-the-duration-on-an-rta-window.md)  
   
--   [<span data-ttu-id="4758a-113">期間には、RTA ウィンドウを取得する方法</span><span class="sxs-lookup"><span data-stu-id="4758a-113">How to Get the Duration on an RTA Window</span></span>](../core/how-to-get-the-duration-on-an-rta-window.md)  
+-   [<span data-ttu-id="8c5ef-113">期間が RTA ウィンドウを取得する方法</span><span class="sxs-lookup"><span data-stu-id="8c5ef-113">How to Get the Duration on an RTA Window</span></span>](../core/how-to-get-the-duration-on-an-rta-window.md)  
   
--   [<span data-ttu-id="4758a-114">BAM 集計を定義する方法</span><span class="sxs-lookup"><span data-stu-id="4758a-114">How to Define BAM Aggregations</span></span>](../core/how-to-define-bam-aggregations.md)
+-   [<span data-ttu-id="8c5ef-114">BAM 集計を定義する方法</span><span class="sxs-lookup"><span data-stu-id="8c5ef-114">How to Define BAM Aggregations</span></span>](../core/how-to-define-bam-aggregations.md)

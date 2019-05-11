@@ -1,5 +1,5 @@
 ---
-title: 'エラー -、 &quot;{0}&quot; functoid が、無効な xpath ステートメント: {1} です。 | Microsoft Docs'
+title: エラー -、 &quot; {0} &quot; functoid が、無効な xpath ステートメント:{1}します。 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,18 +12,18 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d443463a8f8d4d7a7878189fa4f49e4efcaf85fd
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 643c371b22044b828f11899fdedb282edb039a00
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22241570"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65388418"
 ---
-# <a name="error---the-quot0quot-functoid-has-an-invalid-xpath-statement-1"></a><span data-ttu-id="28508-103">エラー -、 &quot;{0}&quot; functoid が、無効な xpath ステートメント: {1} です。</span><span class="sxs-lookup"><span data-stu-id="28508-103">Error - The &quot;{0}&quot; functoid has an invalid xpath statement: {1}.</span></span>
-<span data-ttu-id="28508-104">**エラー コード**</span><span class="sxs-lookup"><span data-stu-id="28508-104">**Error Code**</span></span>  
+# <a name="error---the-quot0quot-functoid-has-an-invalid-xpath-statement-1"></a><span data-ttu-id="9a8db-103">エラー -、 &quot; {0} &quot; functoid が、無効な xpath ステートメント:{1}します。</span><span class="sxs-lookup"><span data-stu-id="9a8db-103">Error - The &quot;{0}&quot; functoid has an invalid xpath statement: {1}.</span></span>
+<span data-ttu-id="9a8db-104">**エラー コード**</span><span class="sxs-lookup"><span data-stu-id="9a8db-104">**Error Code**</span></span>  
   
- <span data-ttu-id="28508-105">btm1018</span><span class="sxs-lookup"><span data-stu-id="28508-105">btm1018</span></span>  
+ <span data-ttu-id="9a8db-105">btm1018</span><span class="sxs-lookup"><span data-stu-id="9a8db-105">btm1018</span></span>  
   
- <span data-ttu-id="28508-106">**ユーザーの操作**</span><span class="sxs-lookup"><span data-stu-id="28508-106">**User Action**</span></span>  
+ <span data-ttu-id="9a8db-106">**ユーザーの操作**</span><span class="sxs-lookup"><span data-stu-id="9a8db-106">**User Action**</span></span>  
   
- <span data-ttu-id="28508-107">なし</span><span class="sxs-lookup"><span data-stu-id="28508-107">None</span></span>
+ <span data-ttu-id="9a8db-107">なし</span><span class="sxs-lookup"><span data-stu-id="9a8db-107">None</span></span>

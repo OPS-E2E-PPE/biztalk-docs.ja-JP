@@ -1,5 +1,5 @@
 ---
-title: エラー - インライン スクリプト |Microsoft ドキュメント
+title: エラー - インライン スクリプト |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,22 +14,22 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 96bb17906d0f5be524527517712794d9faa7368b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b7d50790b3d439116e638d7628c1ac82da37048e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22241874"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65388795"
 ---
-# <a name="error---inline-script"></a><span data-ttu-id="4d2fb-102">エラー - インライン スクリプト</span><span class="sxs-lookup"><span data-stu-id="4d2fb-102">Error - Inline Script</span></span>
-<span data-ttu-id="4d2fb-103">**エラー コード**</span><span class="sxs-lookup"><span data-stu-id="4d2fb-103">**Error Code**</span></span>  
+# <a name="error---inline-script"></a><span data-ttu-id="12812-102">エラー - インライン スクリプト</span><span class="sxs-lookup"><span data-stu-id="12812-102">Error - Inline Script</span></span>
+<span data-ttu-id="12812-103">**エラー コード**</span><span class="sxs-lookup"><span data-stu-id="12812-103">**Error Code**</span></span>  
   
- <span data-ttu-id="4d2fb-104">btm1021</span><span class="sxs-lookup"><span data-stu-id="4d2fb-104">btm1021</span></span>  
+ <span data-ttu-id="12812-104">btm1021</span><span class="sxs-lookup"><span data-stu-id="12812-104">btm1021</span></span>  
   
- <span data-ttu-id="4d2fb-105">**説明**</span><span class="sxs-lookup"><span data-stu-id="4d2fb-105">**Explanation**</span></span>  
+ <span data-ttu-id="12812-105">**説明**</span><span class="sxs-lookup"><span data-stu-id="12812-105">**Explanation**</span></span>  
   
- <span data-ttu-id="4d2fb-106">指定された、指定されたインライン スクリプト**スクリプト**functoid には、構文エラーが含まれています。</span><span class="sxs-lookup"><span data-stu-id="4d2fb-106">The inline script provided for the indicated **Scripting** functoid contains a syntax error.</span></span>  
+ <span data-ttu-id="12812-106">指定された、指定されたインライン スクリプト**Scripting** functoid には、構文エラーが含まれています。</span><span class="sxs-lookup"><span data-stu-id="12812-106">The inline script provided for the indicated **Scripting** functoid contains a syntax error.</span></span>  
   
- <span data-ttu-id="4d2fb-107">**ユーザーの操作**</span><span class="sxs-lookup"><span data-stu-id="4d2fb-107">**User Action**</span></span>  
+ <span data-ttu-id="12812-107">**ユーザーの操作**</span><span class="sxs-lookup"><span data-stu-id="12812-107">**User Action**</span></span>  
   
- <span data-ttu-id="4d2fb-108">選択し**スクリプト**functoid は、省略記号ボタン (**.**) に関連付けられたボタン、**スクリプト**プロパティで、Microsoft[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]プロパティ] ウィンドウでし、 **[Functoid スクリプトの**ダイアログ ボックスで、正しい、構文エラーです。</span><span class="sxs-lookup"><span data-stu-id="4d2fb-108">Select the indicated **Scripting** functoid, click the ellipsis (**...**) button associated with the **Script** property in the Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] Properties window, and then in the **Configure Functoid Script** dialog box, correct the syntax error(s).</span></span>
+ <span data-ttu-id="12812-108">選択**Scripting** functoid は、省略記号をクリックします (**.**) ボタンに関連付けられている、**スクリプト**プロパティで、Microsoft[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]プロパティ ウィンドウで、し、 **Functoid スクリプトの構成** ダイアログ ボックスで、適切な構文エラーです。</span><span class="sxs-lookup"><span data-stu-id="12812-108">Select the indicated **Scripting** functoid, click the ellipsis (**...**) button associated with the **Script** property in the Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] Properties window, and then in the **Configure Functoid Script** dialog box, correct the syntax error(s).</span></span>

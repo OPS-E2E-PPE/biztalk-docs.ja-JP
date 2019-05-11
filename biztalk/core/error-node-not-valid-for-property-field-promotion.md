@@ -1,5 +1,5 @@
 ---
-title: エラー - ノードがプロパティ フィールドの昇格では無効です |Microsoft ドキュメント
+title: エラー - ノード プロパティ フィールドの昇格が無効です |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,22 +14,22 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4f9773acebdd50aa6a53cd0bfce88a769445268e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: cc079c9668ecdb5a85423047c6706b2656e5fbf4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22240186"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65388528"
 ---
-# <a name="error---node-not-valid-for-property-field-promotion"></a><span data-ttu-id="801e0-102">エラー - ノードがプロパティ フィールドの昇格では無効です。</span><span class="sxs-lookup"><span data-stu-id="801e0-102">Error - Node Not Valid For Property Field Promotion</span></span>
-<span data-ttu-id="801e0-103">**エラー コード**</span><span class="sxs-lookup"><span data-stu-id="801e0-103">**Error Code**</span></span>  
+# <a name="error---node-not-valid-for-property-field-promotion"></a><span data-ttu-id="74075-102">エラー - ノード プロパティ フィールドの昇格が無効です。</span><span class="sxs-lookup"><span data-stu-id="74075-102">Error - Node Not Valid For Property Field Promotion</span></span>
+<span data-ttu-id="74075-103">**エラー コード**</span><span class="sxs-lookup"><span data-stu-id="74075-103">**Error Code**</span></span>  
   
- <span data-ttu-id="801e0-104">BEC2001</span><span class="sxs-lookup"><span data-stu-id="801e0-104">BEC2001</span></span>  
+ <span data-ttu-id="74075-104">BEC2001</span><span class="sxs-lookup"><span data-stu-id="74075-104">BEC2001</span></span>  
   
- <span data-ttu-id="801e0-105">**説明**</span><span class="sxs-lookup"><span data-stu-id="801e0-105">**Explanation**</span></span>  
+ <span data-ttu-id="74075-105">**説明**</span><span class="sxs-lookup"><span data-stu-id="74075-105">**Explanation**</span></span>  
   
- <span data-ttu-id="801e0-106">対象のノードには必要なテキスト コンテンツを含めることができないため、このノードをプロパティ フィールドとして昇格することはできません。</span><span class="sxs-lookup"><span data-stu-id="801e0-106">The indicated node cannot be promoted as a Property Field because it cannot contain the required text content.</span></span> <span data-ttu-id="801e0-107">のみ**フィールド要素**ノード、**フィールド属性**ノード、または**レコード**混合コンテンツまたは単純なコンテンツを持つノードをプロパティ フィールドとして昇格されることができます。</span><span class="sxs-lookup"><span data-stu-id="801e0-107">Only **Field Element** nodes, **Field Attribute** nodes, or **Record** nodes with mixed or simple content can be promoted as Property Fields.</span></span>  
+ <span data-ttu-id="74075-106">必要なテキスト コンテンツを含めることはできませんので、ノードをプロパティ フィールドとして昇格できません。</span><span class="sxs-lookup"><span data-stu-id="74075-106">The indicated node cannot be promoted as a Property Field because it cannot contain the required text content.</span></span> <span data-ttu-id="74075-107">のみ**フィールド要素**ノード、**フィールド属性**ノード、または**レコード**混合コンテンツまたは単純なコンテンツを持つノードをプロパティ フィールドとして昇格できます。</span><span class="sxs-lookup"><span data-stu-id="74075-107">Only **Field Element** nodes, **Field Attribute** nodes, or **Record** nodes with mixed or simple content can be promoted as Property Fields.</span></span>  
   
- <span data-ttu-id="801e0-108">**ユーザーの操作**</span><span class="sxs-lookup"><span data-stu-id="801e0-108">**User Action**</span></span>  
+ <span data-ttu-id="74075-108">**ユーザーの操作**</span><span class="sxs-lookup"><span data-stu-id="74075-108">**User Action**</span></span>  
   
- <span data-ttu-id="801e0-109">使用して、**プロパティ フィールド** タブで、**プロパティの昇格**ダイアログ ボックス、許可されていないプロパティの昇格を削除します。</span><span class="sxs-lookup"><span data-stu-id="801e0-109">Use the **Property Fields** tab in the **Promote Properties** dialog box to remove the disallowed property promotion.</span></span>
+ <span data-ttu-id="74075-109">使用して、**プロパティ フィールド** タブで、**プロパティの昇格**許可されていないプロパティの昇格を削除 ダイアログ ボックス。</span><span class="sxs-lookup"><span data-stu-id="74075-109">Use the **Property Fields** tab in the **Promote Properties** dialog box to remove the disallowed property promotion.</span></span>

@@ -1,5 +1,5 @@
 ---
-title: SQL Server エージェントを開始する方法 |Microsoft ドキュメント
+title: SQL Server エージェントを開始する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e8220e2c3cc8e23edf71c0f50934f90327137aef
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 65888448633a1178ccddc8d57238bf1c4f81d558
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22298578"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65400262"
 ---
-# <a name="how-to-start-the-sql-server-agent"></a><span data-ttu-id="c7639-102">SQL Server エージェントを開始する方法</span><span class="sxs-lookup"><span data-stu-id="c7639-102">How to Start the SQL Server Agent</span></span>
-<span data-ttu-id="c7639-103">SQL Server エージェントを開始する方法については、次を参照してください。[する方法: SQL Server エージェントを開始 (SQL Server 構成マネージャー)](http://go.microsoft.com/fwlink/?LinkId=154672) (http://go.microsoft.com/fwlink/?LinkId=154672) SQL Server オンライン ブック。</span><span class="sxs-lookup"><span data-stu-id="c7639-103">For information about how to start the SQL Server agent, see [How to: Start SQL Server Agent (SQL Server Configuration Manager)](http://go.microsoft.com/fwlink/?LinkId=154672) (http://go.microsoft.com/fwlink/?LinkId=154672) in SQL Server Books Online.</span></span>
+# <a name="how-to-start-the-sql-server-agent"></a><span data-ttu-id="a10fa-102">SQL Server エージェントを開始する方法</span><span class="sxs-lookup"><span data-stu-id="a10fa-102">How to Start the SQL Server Agent</span></span>
+<span data-ttu-id="a10fa-103">SQL Server エージェントを開始する方法については、次を参照してください。[方法。SQL Server エージェント (SQL Server 構成マネージャー) 開始](http://go.microsoft.com/fwlink/?LinkId=154672)(http://go.microsoft.com/fwlink/?LinkId=154672)で SQL Server オンライン ブック。</span><span class="sxs-lookup"><span data-stu-id="a10fa-103">For information about how to start the SQL Server agent, see [How to: Start SQL Server Agent (SQL Server Configuration Manager)](http://go.microsoft.com/fwlink/?LinkId=154672) (http://go.microsoft.com/fwlink/?LinkId=154672) in SQL Server Books Online.</span></span>
