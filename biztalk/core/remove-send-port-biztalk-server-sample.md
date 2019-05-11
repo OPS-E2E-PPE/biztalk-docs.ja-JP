@@ -1,5 +1,5 @@
 ---
-title: 送信ポートの削除 (BizTalk Server サンプル) |Microsoft ドキュメント
+title: 送信ポートの削除 (BizTalk Server サンプル) |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,28 +17,28 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e8b82af2be42342d51429e42d1952816ee0dd07a
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 4edb148d1627d596f98684b09d18da111b4e435c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25971448"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65397932"
 ---
 # <a name="remove-send-port-biztalk-server-sample"></a>送信ポートの削除 (BizTalk Server サンプル)
-送信ポートの削除のサンプルでは、1 つ以上の送信ポートの参加を解除し、削除する方法を示します。  
+以上の送信ポートや送信ポートの削除のサンプルが参加を解除し、1 つを削除する方法を示します。  
   
 > [!WARNING]
 >  展開スクリプトは、展開後に不要になった場合は、削除する必要があります。 保持する必要のある管理スクリプトおよび他のスクリプトは、ACL によってセキュリティで保護し、厳重に監視する必要があります。  
   
 ## <a name="what-this-sample-does"></a>このサンプルの処理  
- このサンプルを構成するスクリプト ファイル内の Visual Basic Scripting Edition (VBScript) スクリプトは、BizTalk Server WMI プロバイダーを使用して、次の操作を実行する方法を示しています。  
+ このサンプルを構成するスクリプト ファイル内の Visual Basic Scripting Edition (VBScript) スクリプトは、BizTalk Server WMI プロバイダーを使用して、次の操作を実行する方法を示します。  
   
--   送信ポート名が指定されていることを前提として、クエリを実行し、一致する送信ポートの一覧を取得します。  
+-   一致する送信ポートの一覧については、クエリの送信ポート名を指定します。  
   
     > [!NOTE]
-    >  通常、指定された名前に一致する送信ポートは 1 つだけです。  
+    >  一般に、のみがあります指定された名前に一致する 1 つの送信ポート。  
   
--   送信ポートの参加を解除します。  
+-   参加が解除された送信ポート。  
   
 -   削除された送信ポート。  
   
@@ -47,16 +47,16 @@ ms.locfileid: "25971448"
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
  このサンプルは、SDK がある次の場所にあります。  
   
- \<*パスのサンプル*\>\Admin\WMI\Remove Port\ の送信  
+ \<*パスのサンプル*\>\Admin\WMI\Remove Port\ を送信します。  
   
  次の表は、このサンプルのファイルとその目的を示しています。  
   
-|ファイル|Description|  
+|ファイル|説明|  
 |---------------|-----------------|  
-|\VBScript フォルダー内のファイル : <br /><br /> RemoveSendPort.vbs|参加を解除し、削除する 1 つ以上の送信ポートを指定するパラメータを取る VBScript ファイル。|  
+|\VBScript フォルダー。<br /><br /> RemoveSendPort.vbs|1 つまたは複数を指定するパラメーターを取る VBScript ファイルでは、参加を解除し、削除するポートを送信します。|  
   
 ## <a name="building-and-initializing-this-sample"></a>このサンプルのビルドと初期化  
- 送信ポートの削除のサンプルは、ビルドまたは初期化が不要な 1 つの VBScript ファイルで構成されています。  
+ 送信ポートの削除のサンプルは、ビルドまたは初期化する必要はありませんが、1 つの VBScript ファイルで構成されます。  
   
 ## <a name="running-this-sample"></a>このサンプルの実行  
   
@@ -64,13 +64,13 @@ ms.locfileid: "25971448"
   
 1.  コマンド ウィンドウで、次のフォルダーに移動します。  
   
-     \<*パスのサンプル*\>\Admin\WMI\Remove 受信 Port\VBScript\  
+     \<*パスのサンプル*\>\Admin\WMI\Remove Port\VBScript\ の受信  
   
-2.  cscript プログラムを使用し、次のコマンド ライン引数を渡して、ファイル RemoveSendPort.vbs を実行します。  
+2.  ファイル RemoveSendPort.vbs cscript プログラムを使用して、次のコマンドライン引数を渡して実行します。  
   
-     **\<** ***SendPortName* \>です。** 削除する送信ポートの名前。 送信ポートの名前にスペースが含まれる場合は、名前を引用符で囲みます。  
+     **\<** ***SendPortName* \>.** 削除する送信ポートの名前。 送信ポートの名前にスペースが含まれている場合は、名前を引用符で囲みます。  
   
-     例:  
+     例 :  
   
     ```  
     cscript RemoveSendPort.vbs "My Business Send Port"  
@@ -79,7 +79,7 @@ ms.locfileid: "25971448"
 ## <a name="comments"></a>コメント  
  BizTalk Server 管理コンソールで実行できるすべてのタスクは、Windows WMI オブジェクト モデルにアクセスするスクリプトを使用しても実行できます。  
   
- スクリプト ファイル RemoveSendPort.vbs には、実行する操作についての説明のある詳細なコメントが含まれています。 詳細については、Windows Management Instrumentation」を参照してください。 [http://go.microsoft.com/fwlink/?LinkId=21102](http://go.microsoft.com/fwlink/?LinkId=21102)です。  
+ スクリプト ファイル RemoveSendPort.vbs には、詳細なコメントが、実行する操作についての説明が含まれています。 詳細については、Windows Management Instrumentation を参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=21102](http://go.microsoft.com/fwlink/?LinkId=21102)します。  
   
 ## <a name="see-also"></a>参照  
  [Admin-WMI (BizTalk Server Samples フォルダー)](../core/admin-wmi-biztalk-server-samples-folder.md)

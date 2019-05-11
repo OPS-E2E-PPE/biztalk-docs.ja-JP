@@ -1,5 +1,5 @@
 ---
-title: BAM によるビジネス アクティビティの監視 |Microsoft ドキュメント
+title: BAM によるビジネス アクティビティの監視 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -18,30 +18,30 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 742dff7f75caf5e8910eb1f133b0d24a42945f95
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1232c635cc8a3bbb6c6052e0b8f1b6defb40face
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22262794"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65527570"
 ---
 # <a name="monitoring-business-activities-with-bam"></a>BAM によるビジネス アクティビティの監視
-ビジネス アクティビティ監視 (BAM) を使用すると、ビジネス アナリストはビジネス プロセスに関するデータを監視できます。 ビジネス アナリストは、Microsoft Office Excel の BAM ブックを使用して、ビジネス プロセスから収集するデータの種類と、収集したデータをビジネス ユーザーが表示する方法を定義します。  
+ビジネス アナリストは、ビジネス アクティビティ監視 (BAM) を使用して、ビジネス プロセスに関するデータを監視します。 ビジネス アナリストは、Microsoft Office Excel で BAM ブックを使用して、ビジネス プロセスから収集して、ビジネス ユーザーが、収集したデータを表示する方法を定義するデータを定義します。  
   
- BAM では、複数のアプリケーションにまたがるプロセスを監視できます。 たとえば、発注プロセスには、BizTalk Server などの多様なアプリケーションによって完了される部分や、データベース アクティビティ、さらには内部 Web サイト、業者 Web サイト、および出荷業者 Web サイトの間で送受信されるメッセージが含まれる場合があります。  
+ ビジネス アナリストは、BAM を使用して、複数のアプリケーションにまたがるプロセスを監視することができます。 たとえば、発注プロセスには、BizTalk Server、データベース アクティビティ、および送信されるメッセージなどのさまざまなアプリケーションを内部の Web サイト、業者の Web サイト、および出荷業者の Web サイトで完了される部分があります。  
   
- ビジネス ユーザーは BAM を使用して、ビジネス プロセスに関するリアルタイム データおよびアーカイブ済みの (履歴) データの両方を参照できます。 たとえば、100 ドル以上の注文書の受信 (リアルタイム データ) や、今月届いた 100 ドル以上の注文書の数 (アーカイブ済みのデータ) を確認できます。 BAM では、データの表示速度を向上させるためにリアルタイム データおよびアーカイブ済みデータが集計されます。  
+ ビジネス ユーザーは、BAM を使用して、ビジネス プロセスに関するリアルタイムとアーカイブ済みの両方の (履歴) データを表示します。 たとえば、ビジネス ユーザーはときに複数の $100 (リアルタイム データ) または、注文書の数の注文書が到着する複数の (アーカイブ) 今月届いた $100 を知りたい場合があります。 BAM 集計リアルタイム データとアーカイブされたデータをデータ表示速度を向上させるためにします。  
   
- BAM をインストールするためのソフトウェアとハードウェアの要件についてで BizTalk Server のインストール ガイドを参照してください。 [BizTalk Server の新機能新規、インストール、構成、およびアップグレード](../install-and-config-guides/biztalk-server-what-s-new-installation-configuration-and-upgrade.md)です。  
+ BAM をインストールするためのソフトウェアとハードウェアの要件についてで BizTalk Server のインストール ガイドを参照してください。 [BizTalk Server の新機能新規、インストール、構成、およびアップグレード](../install-and-config-guides/biztalk-server-what-s-new-installation-configuration-and-upgrade.md)します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [BAM を使用するユーザーですか。](../core/who-uses-bam.md)  
+-   [BAM のユーザー](../core/who-uses-bam.md)  
   
 -   [BAM のワークフロー](../core/bam-workflow.md)  
   
--   [BAM でデータを定義します。](../core/defining-data-in-bam.md)  
+-   [BAM でのデータの定義](../core/defining-data-in-bam.md)  
   
--   [Excel でビジネス アクティビティとビューを定義します。](../core/defining-business-activities-and-views-in-excel.md)  
+-   [Excel でのビジネス アクティビティとビジネス ビューの定義](../core/defining-business-activities-and-views-in-excel.md)  
   
 -   [ライブ BAM データの表示](../core/viewing-live-bam-data.md)
