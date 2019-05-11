@@ -18,14 +18,14 @@ caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2b637f37c8d0953417ca628204fe299318b91266
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f614a1400631a1bae36a1f15dc4b1f6916b45916
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37022096"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65279635"
 ---
-# <a name="walkthrough-using-xml-envelopes-basic"></a>チュートリアル: を使用して XML エンベロープ (Basic)
+# <a name="walkthrough-using-xml-envelopes-basic"></a>チュートリアル: XML エンベロープ (Basic) の使用
 この例では、架空のエラー追跡システムを実装して、基本的な XML エンベロープの逆アセンブルを示します。 この例は次の要件を満たしています。  
   
 1.  エラー メッセージは社内のさまざまな物理的な場所でログに記録され、集中管理された場所に送信されて、さまざまなバックエンド システムに振り分けられます。  
@@ -35,7 +35,7 @@ ms.locfileid: "37022096"
 3.  エラー メッセージは、エンベロープなしで単独に送信したり、エンベロープに含まれるバッチとして送信したりできます。  
   
 ## <a name="prerequisites"></a>前提条件  
- この例では、BizTalk プロジェクトの作成、アセンブリへの署名、BizTalk Server 管理コンソールでのアプリケーションとポートの表示に慣れている必要があります。 またはずで紹介したアイデアに[チュートリアル: 基本的な BizTalk アプリケーションの展開](../core/walkthrough-deploying-a-basic-biztalk-application.md)します。  
+ この例では、BizTalk プロジェクトの作成、アセンブリへの署名、BizTalk Server 管理コンソールでのアプリケーションとポートの表示に慣れている必要があります。 またはずで紹介したアイデアに[チュートリアル。基本的な BizTalk アプリケーション展開](../core/walkthrough-deploying-a-basic-biztalk-application.md)します。  
   
 ## <a name="what-this-example-does"></a>この例の処理  
  この例では、エンベロープ スキーマを定義し、XmlDisassembler パイプラインを使用して、単一のエラー メッセージまたはエラー メッセージのバッチを含む受信メッセージを処理します。  
@@ -50,7 +50,7 @@ ms.locfileid: "37022096"
   
 1. [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] を使用して新しい BizTalk プロジェクトを作成します。 プロジェクトを呼び出す**BasicXMLEnvelope**します。  
   
-2. キー ファイルを作成してプロジェクトに割り当てます。 このタスクの詳細については、[厳密な名前のアセンブリ キー ファイルを構成する方法](../core/how-to-configure-a-strong-name-assembly-key-file.md)を参照してください。  
+2. キー ファイルを作成してプロジェクトに割り当てます。 このタスクの詳細については、次を参照してください。[厳密な名前のアセンブリ キー ファイルを構成する方法](../core/how-to-configure-a-strong-name-assembly-key-file.md)します。  
   
 3. プロジェクトの配置構成プロパティを割り当てて、**アプリケーション名**設定と**ホスト インスタンスを再起動**に`True`します。 このフラグを設定すると、キャッシュされたアセンブリのインスタンスを消去するようにホストに通知されます。  
   
@@ -237,7 +237,7 @@ ms.locfileid: "37022096"
   
  サンプルを拡張するには、次の作業を行う必要があります。  
   
-1.  昇格、**優先度**BasicXMLEnvelope プロジェクトの [エラー] スキーマのフィールド。 コンテンツ ベースのルーティングでは、メッセージのルーティングに昇格させたプロパティが必要です。 詳細については、[プロパティの昇格](../core/promoting-properties.md)を参照してください。  
+1.  昇格、**優先度**BasicXMLEnvelope プロジェクトの [エラー] スキーマのフィールド。 コンテンツ ベースのルーティングでは、メッセージのルーティングに昇格させたプロパティが必要です。 詳細については、次を参照してください。[プロパティの昇格](../core/promoting-properties.md)します。  
   
 2.  2 つの追加の送信ポートを作成および構成します。 これらのポートでは、適切なメッセージを受信するためにフィルターを使用します。  
   

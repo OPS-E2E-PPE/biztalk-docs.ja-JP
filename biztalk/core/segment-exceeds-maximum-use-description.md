@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 62a52f7589dc42d3af6b07db6fcbeb926a3d5dbc
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f7a260d68d608bb88cc0252ad2a1ec5c125e2b0a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36985323"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65279815"
 ---
 # <a name="segment-exceeds-maximum-use-description"></a>セグメントが説明されている最大使用数を超えています
 ## <a name="details"></a>詳細  

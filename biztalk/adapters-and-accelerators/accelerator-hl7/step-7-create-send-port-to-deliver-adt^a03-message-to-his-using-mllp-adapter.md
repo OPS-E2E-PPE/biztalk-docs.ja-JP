@@ -1,5 +1,5 @@
 ---
-title: '手順 7: ADT を配信する送信ポートを作成する ^ A03 メッセージを MLLP アダプターを使用して HIS |Microsoft Docs'
+title: 手順 7:ADT を配信する送信ポートを作成 ^ A03 メッセージを MLLP アダプターを使用して HIS |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,14 +16,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 540a8745da811e7f14ab6ac5c1909bffe057c5f7
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 49d75da284ecbf0852d62e614cae2a787bc6dc52
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37006107"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65287919"
 ---
-# <a name="step-7-create-a-send-port-to-deliver-the-adta03-message-to-his-using-the-mllp-adapter"></a>手順 7: ADT を配信する送信ポートを作成する ^ A03 メッセージを MLLP アダプターを使用して HIS
+# <a name="step-7-create-a-send-port-to-deliver-the-adta03-message-to-his-using-the-mllp-adapter"></a>手順 7:ADT を配信する送信ポートを作成 ^ A03 メッセージを MLLP アダプターを使用して HIS
 この手順では、MLLP アダプターを使用して医療情報システム (HIS) にメッセージを送信する送信ポートを作成します。  
 
 ### <a name="to-create-the-tutorialmllpsend-send-port"></a>Tutorial_MllpSend 送信ポートを作成するには  
@@ -67,4 +67,4 @@ ms.locfileid: "37006107"
 
 7. 管理コンソールで、**送信ポート**を右クリックして**Tutorial_MllpSend**、順にクリックします**開始**します。  
 
-   続行する[手順 8: パーティ情報の構成](../../adapters-and-accelerators/accelerator-hl7/step-8-configure-party-information.md)します。
+   続行する[手順 8。パーティ情報の構成](../../adapters-and-accelerators/accelerator-hl7/step-8-configure-party-information.md)します。

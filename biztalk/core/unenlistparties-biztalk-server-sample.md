@@ -18,12 +18,12 @@ caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c7525e97ba93ebd35d2439044b8c1be55a70be3d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: cff6aa95ed8865bab165ee3dd62325eb0e589954
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36973027"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65292697"
 ---
 # <a name="unenlistparties-biztalk-server-sample"></a>UnenlistParties (BizTalk Server サンプル)
 UnenlistParties サンプルは、展開された BizTalk Server アセンブリに関連付けられているすべてのパーティの参加を解除する方法を示しています。  
@@ -35,7 +35,7 @@ UnenlistParties サンプルは、展開された BizTalk Server アセンブリ
   
 - このサンプルの管理オブジェクトを使用するには、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者特権が必要です。  
   
-- Windows PowerShell スクリプトを実行するには、Windows PowerShell 実行ポリシーが必要です。 詳細については、:[実行ポリシーの確認](http://go.microsoft.com/fwlink/?LinkId=128930)を参照してください。  
+- Windows PowerShell スクリプトを実行するには、Windows PowerShell 実行ポリシーが必要です。 詳しくは、次のトピックをご覧ください。[実行ポリシーの確認](http://go.microsoft.com/fwlink/?LinkId=128930)します。  
   
 ## <a name="how-this-sample-is-designed-and-why"></a>このサンプルのデザイン方法とその理由  
  このサンプルは、BizTalk エクスプローラー オブジェクト モデルのオブジェクトを使用して Visual C# で記述されています。このサンプルは、以下の操作を実行します。  
@@ -51,7 +51,7 @@ UnenlistParties サンプルは、展開された BizTalk Server アセンブリ
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
  このサンプルは、SDK がある次の場所にあります。  
   
- \<*パスのサンプル*\>\Admin\ExplorerOM\UnenlistParties\  
+ \<*Samples Path*\>\Admin\ExplorerOM\UnenlistParties\  
   
  次の表は、このサンプルのファイルとその目的を示しています。  
   
@@ -69,7 +69,7 @@ UnenlistParties サンプルは、展開された BizTalk Server アセンブリ
   
 1. コマンド ウィンドウで、次のフォルダーに移動します。  
   
-    \<*パスのサンプル*\>\Admin\ExplorerOM\UnenlistParties\bin\Debug\  
+    \<*Samples Path*\>\Admin\ExplorerOM\UnenlistParties\bin\Debug\  
   
 2. ファイル UnenlistParties.exe を実行し、次の 2 つのコマンド ライン引数のいずれかを渡します。  
   

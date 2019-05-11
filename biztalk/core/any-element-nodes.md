@@ -12,15 +12,15 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 905d6c25c5c2021840f4257c29df015d4bcb374e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3d5581ed73c6bb2fdf625a976a33d906bd5d2836
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37002435"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65359165"
 ---
 # <a name="any-element-nodes"></a>すべての要素ノード
-使用できる BizTalk エディターで、 **Any 要素**ノードが、不明な要素が表示されるインスタンス メッセージ内の場所を示すことです。 これにより、特定の要素がインスタンス メッセージ内の特定の場所に出現することはあらかじめわかっているが、要素の名前や複雑さの程度が不確定な状況にも対応できます。 配置した場合、 **Any 要素**ノードのスキーマでは、BizTalk 内で適切な位置には、メッセージのような未知の部分を処理できます。 唯一の要件は、対応する XML が整形式であることです。  
+使用できる BizTalk エディターで、 **Any 要素**ノードが、不明な要素が表示されるインスタンス メッセージ内の場所を示すことです。 不確定の場合に、いくつかの要素がインスタンス メッセージ内の特定の場所に表示されるが、要素の名前がわからないことがわかってまたは複雑な方法があります。 配置した場合、 **Any 要素**ノードのスキーマでは、BizTalk 内で適切な位置には、メッセージのような未知の部分を処理できます。 唯一の要件は、対応する XML が整形式であります。  
   
 > [!NOTE]
 >  BizTalk エディターで、**すべての要素**ノードが文字列で表される\<任意\>スキーマ ツリー ビューで。  

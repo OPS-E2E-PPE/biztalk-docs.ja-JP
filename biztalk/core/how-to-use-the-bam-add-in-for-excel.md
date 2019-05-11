@@ -1,5 +1,5 @@
 ---
-title: Excel 用 BAM アドインを使用する方法 |Microsoft ドキュメント
+title: Excel 用 BAM アドインを使用する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,38 +16,38 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5419bf5b68f890eac4a752d80dfa34f8cc83d077
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a60c5743daf083d87e5acc8e41b8519531c0600f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22256186"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65333267"
 ---
 # <a name="how-to-use-the-bam-add-in-for-excel"></a>Excel 用 BAM アドインを使用する方法
-Excel 用 BAM アドインのテンプレートを使用して BAM ビューを定義するには、次の手順に従います。  
+Excel テンプレート用の BAM アドインを使用して、BAM ビューを定義する、この手順の手順に従います。  
   
- ここでは、既に Excel を起動していることを前提とします。  
+ この手順では、Excel を既に開いていると仮定します。  
   
 ### <a name="to-define-a-bam-view"></a>BAM ビューを定義するには  
   
 1.  ツールバーのをクリックして、 **BAM**メニュー項目をクリック**BAM アクティビティ**アクティビティを定義します。  
   
-     アクティビティの作成の詳細については、次を参照してください。[ビジネス アクティビティの定義](../core/how-to-define-a-business-activity.md)です。  
+     アクティビティの作成の詳細については、次を参照してください。[ビジネス アクティビティを定義する](../core/how-to-define-a-business-activity.md)します。  
   
-2.  **BAM**  メニューのをクリックして**BAM ビュー**です。  
+2.  **BAM**  メニューのをクリックして**BAM ビュー**します。  
   
 3.  **ビジネス アクティビティ監視ビュー ウィザード**、 をクリックして**次**を続行します。  
   
-4.  **BAM ビュー**ことを確認 ページで、**新しいビューを作成**を選択して、をクリックして**次**です。  
+4.  **BAM ビュー**ことを確認します ページで、**新しいビューを作成**が選択されているし、をクリックして**次**します。  
   
-5.  **新しい BAM ビュー: 名前とアクティビティ**] ページの [、**ビュー名**ボックスに、わかりやすい名前を入力します。  
+5.  **新しい BAM ビュー。名前とアクティビティ**ページで、**ビュー名**ボックスに、わかりやすい名前を入力します。  
   
     > [!IMPORTANT]
-    >  使用しないでください**BizTalkOrchestration**ビュー名。 この名前は BAM の別の部分で予約されています。  
+    >  使用しない**BizTalkOrchestration**ビュー名。 この名前は、BAM の別の部分で予約されています。  
   
-6.  アクティビティの一覧で現在定義しているし、をクリックし、BAM ビューに追加する各アクティビティのチェック ボックスをオン**次**です。  
+6.  アクティビティの一覧で現在定義しているし、をクリックし、BAM ビューに追加する各アクティビティのチェック ボックスを選択します。**次**します。  
   
-7.  **新しい BAM ビュー: 表示項目** ページで、現在定義しているしをクリックして、BAM ビューに追加する各アクティビティ項目のチェック ボックスをオン**次へ**です。  
+7.  **新しい BAM ビュー。項目の表示** ページで、現在定義している をクリックして、BAM ビューに追加する各アクティビティ項目のチェック ボックスをオン**次**します。  
   
 ## <a name="see-also"></a>参照  
  [BAM によるビジネス アクティビティの監視](../core/monitoring-business-activities-with-bam.md)

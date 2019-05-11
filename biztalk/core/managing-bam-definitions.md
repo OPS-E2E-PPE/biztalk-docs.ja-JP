@@ -1,5 +1,5 @@
 ---
-title: BAM 定義を管理する |Microsoft ドキュメント
+title: BAM 定義の管理 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -18,25 +18,25 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 93cf3d280d0e615442a4141b7fa41f6ee3566490
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f3d193470db70334b4f30d2ae0f331a1949a48c7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22262530"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65327511"
 ---
-# <a name="managing-bam-definitions"></a>BAM 定義の管理
+# <a name="managing-bam-definitions"></a>BAM 定義を管理します。
 BAM 定義は、BAM インフラストラクチャの一部であり、 追跡および集計するデータの定義、および追跡データに関するビジネス エンド ユーザー向けビューの定義を設定します。 このセクションのトピックでは、アクティビティ、ビュー、アイテム、警告など、BAM 定義の要素を管理するための手順について説明します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [BAM 定義ファイルを管理するユーザー権利が必要](../core/required-user-rights-for-managing-bam-definition-files.md)  
+-   [BAM 定義ファイルの管理に必要なユーザー権利](../core/required-user-rights-for-managing-bam-definition-files.md)  
   
 -   [BAM 定義を展開する方法](../core/how-to-deploy-bam-definitions.md)  
   
 -   [BAM 定義を削除する方法](../core/how-to-remove-bam-activities.md)  
   
--   [BAM インフラストラクチャに対する変更を一覧表示する方法](../core/how-to-list-changes-to-the-bam-infrastructure.md)  
+-   [BAM インフラストラクチャの変更を一覧表示する方法](../core/how-to-list-changes-to-the-bam-infrastructure.md)  
   
 -   [BAM アクティビティを一覧表示する方法](../core/how-to-list-bam-activities.md)  
   
@@ -58,6 +58,6 @@ BAM 定義は、BAM インフラストラクチャの一部であり、 追跡�
   
 -   [BAM 警告の構成](../core/configuring-bam-alerts.md)  
   
--   [BAM 警告の実行を管理します。](../core/managing-bam-alert-execution.md)  
+-   [BAM 警告の実行の管理](../core/managing-bam-alert-execution.md)  
   
 -   [変更の頻度をどのアラートを評価する方法](../core/how-to-change-the-frequency-with-which-alerts-are-evaluated.md)

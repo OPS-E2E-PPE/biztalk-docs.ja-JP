@@ -1,5 +1,5 @@
 ---
-title: WCF LOB Adapter SDK を使用してアダプターの展開 |Microsoft ドキュメント
+title: WCF LOB Adapter SDK を使用してアダプターの展開 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,15 +12,15 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ce75c941fc9567fdc3d6f00a79cbdd75fff46ba2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 56fac9bed17fe725d190c0ab7159f773e37ff465
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22222978"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65363726"
 ---
 # <a name="deploy-adapter-using-the-wcf-lob-adapter-sdk"></a>WCF LOB Adapter SDK を使用してアダプターを展開します。
-このセクションでは、手順を展開して、アダプターを使用して、展開解除についてを説明します、[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]です。 テスト環境や実稼働環境でのインストール用の展開パッケージを作成する方法についても説明します。  
+このセクションを展開して、アダプターを使用して、展開解除の手順を説明します、[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]します。 また、テストおよび運用環境でインストールの展開パッケージを作成する方法も説明します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
@@ -28,4 +28,4 @@ ms.locfileid: "22222978"
   
 -   [アダプターを終了する方法](../../core/how-to-terminate-an-adapter.md)  
   
--   [WCF LOB Adapter SDK の配置パッケージを作成します。](../../adapters-and-accelerators/wcf-lob-adapter-sdk/create-a-deployment-package-with-the-wcf-lob-adapter-sdk.md)
+-   [WCF LOB アダプター SDK を使用した配置パッケージを作成します。](../../adapters-and-accelerators/wcf-lob-adapter-sdk/create-a-deployment-package-with-the-wcf-lob-adapter-sdk.md)

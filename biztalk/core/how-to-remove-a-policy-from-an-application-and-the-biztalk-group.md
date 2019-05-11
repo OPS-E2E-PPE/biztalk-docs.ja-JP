@@ -19,12 +19,12 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8d555549e693ed6cc5f8ab972008c76e236ee863
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: beca719538949bd82b1d9ea442fb12c61c607e14
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37001355"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65335065"
 ---
 # <a name="how-to-remove-a-policy-from-an-application-and-the-biztalk-group"></a>アプリケーションおよび BizTalk グループからポリシーを削除する方法
 このトピックでは、BizTalk Server 管理コンソールまたはコマンド ラインを使用して、BizTalk グループのアプリケーションおよびルール エンジン データベースからポリシーを削除する方法を説明します。  
@@ -33,7 +33,7 @@ ms.locfileid: "37001355"
   
 -   展開済みのポリシーは削除できません。 ポリシーを解除する必要がありますまず[展開またはポリシーを展開解除する方法](../core/how-to-deploy-or-undeploy-a-policy.md)します。 ポリシーは、展開解除すると非アクティブとなり、BizTalk グループ内でそれを使用しているすべてのアプリケーションで動作しなくなります。  
   
--   ポリシーを削除すると、ポリシーはルール データベースから削除されます。 このポリシーを再度使用する場合は、ポリシーを削除する前に .xml ファイルにインポートする必要があります。 手順については、[ポリシーをエクスポートする方法](../core/how-to-export-a-policy.md)を参照してください。  
+-   ポリシーを削除すると、ポリシーはルール データベースから削除されます。 このポリシーを再度使用する場合は、ポリシーを削除する前に .xml ファイルにインポートする必要があります。 手順については、次を参照してください。[ポリシーをエクスポートする方法](../core/how-to-export-a-policy.md)します。  
   
 -   ポリシーが他のアプリケーションで使用されている場合、削除したポリシーはそのアプリケーションでも無効になります。 ポリシーを削除する前に、そのポリシーを参照している他のアプリケーションでポリシーを使用する必要がないか確認してください。  
   
@@ -52,22 +52,22 @@ ms.locfileid: "37001355"
   
 #### <a name="using-the-command-line"></a>コマンドラインを使用  
   
-1. 次のように、コマンド プロンプトを開きます: をクリックして**開始**、 をクリックして**実行**、型`cmd`、順にクリックします**OK**。  
+1. 次のように、コマンド プロンプトを開きます。をクリックして**開始**、 をクリックして**実行**、型`cmd`、順にクリックします**OK**。  
   
 2. 次の表に示すように、適切な値を置き換えて、次のコマンドを入力します。  
   
-    **BTSTask RemoveResource** [**/applicationname は:**<em>値</em>] **/Luid:**<em>値</em>[**/Server:** <em>値</em>] [**/database:**<em>値</em>]  
+    **BTSTask RemoveResource** [**/ApplicationName:**<em>value</em>] **/Luid:**<em>value</em> [**/Server:**<em>value</em>] [**/Database:**<em>value</em>]  
   
     例:  
   
-    **BTSTask RemoveResource applicationname: myapplication/Luid:"Rule/Policy1/1.0"**  
+    **BTSTask RemoveResource /ApplicationName:MyApplication /Luid:"Rule/Policy1/1.0"**  
   
    |パラメーター|説明|  
    |---------------|-----------------|  
    |**/ApplicationName**|削除するポリシーが存在する BizTalk アプリケーションの名前。 このパラメーターを指定しなかった場合、既定のアプリケーションが使用されます。|  
    |**/Luid**|ポリシーのローカル一意識別子 (LUID)。 LUID を取得するにを使用して、 **ListApp** 」の説明に従って、コマンド[ListApp コマンド](../core/listapp-command.md)します。|  
    |**/サーバー**|BizTalk 管理データベースをホストする SQL Server インスタンスの名前です。 Database パラメーターを指定する場合は必須です。 Server パラメーターおよび Database パラメーターを指定しなかった場合、グループの既定の BizTalk 管理データベースが使用されます。|  
-   |**/データベース**|BizTalk 管理データベースの名前。 Server パラメーターを指定する場合は必須です。 Server パラメーターおよび Database パラメーターを指定しなかった場合、グループの既定の BizTalk 管理データベースが使用されます。|  
+   |**/Database**|BizTalk 管理データベースの名前。 Server パラメーターを指定する場合は必須です。 Server パラメーターおよび Database パラメーターを指定しなかった場合、グループの既定の BizTalk 管理データベースが使用されます。|  
   
 ## <a name="see-also"></a>参照  
  [ポリシーの管理](../core/managing-policies.md)

@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 245d59e54a39cb77a71fc546920542619a4aeb3f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4bb5bbc8f1b17f47ab6463eab33cfc9fee62cc6c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36977643"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65286393"
 ---
 # <a name="upgrade-biztalk-accelerator-for-hl7"></a>アップグレードの BizTalk Accelerator 用 HL7
 概要については、[!INCLUDE[btaBTAHL7NoNumber](../../includes/btabtahl7nonumber-md.md)]プロセスをアップグレードします。 
@@ -47,7 +47,7 @@ ms.locfileid: "36977643"
 
 |                                                                                              | [!INCLUDE[bts2016_md](../../includes/bts2016-md.md)] | [!INCLUDE[bts2013r2](../../includes/bts2013r2-md.md)] | BizTalk Server 2013 |
 |----------------------------------------------------------------------------------------------|------------------------------------------------------|-------------------------------------------------------|---------------------|
-| [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] 2013 |                         はい                          |                          はい                          |         いいえ          |
+| [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] 2013 |                         はい                          |                          [はい]                          |         いいえ          |
 | [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] 2010 |                          いいえ                          |                          はい                          |         はい         |
 
 <a name="BKMK_UpgradeSteps"></a>   
@@ -66,19 +66,19 @@ ms.locfileid: "36977643"
    -   BTAHL7 2013 からアップグレードする場合は、インストール**HL72013Patch.msp**します。  
 
 
-5. [!INCLUDE[btaBTAHL7NoNumber](../../includes/btabtahl7nonumber-md.md)] のセットアップを実行します。 参照してください[for HL7 の BizTalk アクセラレータのインストール](../../adapters-and-accelerators/accelerator-hl7/install-biztalk-accelerator-for-hl7.md)します。  
+5. 実行、[!INCLUDE[btaBTAHL7NoNumber](../../includes/btabtahl7nonumber-md.md)]セットアップします。 参照してください[for HL7 の BizTalk アクセラレータのインストール](../../adapters-and-accelerators/accelerator-hl7/install-biztalk-accelerator-for-hl7.md)します。  
 
 6. 新しい BTAHL7V2 デプロイ*x*共通プロジェクト。  
 
 7. その他のすべてのアセンブリを再デプロイします。  
 
-8. [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] アセンブリを参照するプロジェクトまたはアセンブリを再構築します。 使用して**BTSTask.exe**で\<*ドライブ*\>: \Program Files\Microsoft BizTalk Server\<バージョン\>、手動でこれらのプロジェクトを再デプロイします。  
+8. 該当するプロジェクトまたは 1 つ以上への参照を持つアセンブリを再構築、[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]アセンブリ。 使用して**BTSTask.exe**で\<*ドライブ*\>: \Program Files\Microsoft BizTalk Server\<バージョン\>、手動でこれらのプロジェクトを再デプロイします。  
 
 9. [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] サービスを再開します。  
 
 <a name="BKMK_UpgradeMulti"></a>   
 ## <a name="upgrading-in-a-multi-server-environment"></a>マルチ サーバー環境でのアップグレード  
- マルチ サーバー[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]環境 アップグレード[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]s、アップグレードしてから、[!INCLUDE[btaBTAHL7NoNumber](../../includes/btabtahl7nonumber-md.md)]すべてのサーバー。 次の順序でサーバーを移行します。  
+ マルチ サーバー[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]環境 アップグレード[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]s、アップグレードしてから、[!INCLUDE[btaBTAHL7NoNumber](../../includes/btabtahl7nonumber-md.md)]すべてのサーバー。 次の順序で、サーバーを移行するには。  
 
 -   BizTalk グループをホストするサーバー  
 

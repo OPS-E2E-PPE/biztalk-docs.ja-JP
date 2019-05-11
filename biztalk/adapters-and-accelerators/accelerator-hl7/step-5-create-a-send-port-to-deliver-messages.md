@@ -1,5 +1,5 @@
 ---
-title: '手順 5: メッセージを配信する送信ポートの作成 |Microsoft Docs'
+title: 手順 5:メッセージを配信する送信ポートの作成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,19 +12,19 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5ec45b98cf1ef5152f52e6d11c9d3f6d150c6b55
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ec8a5919c6cebaa8d1a6a977bdae92834023745d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37001683"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65288009"
 ---
-# <a name="step-5-create-a-send-port-to-deliver-messages"></a>手順 5: メッセージを配信する送信ポートを作成します。
+# <a name="step-5-create-a-send-port-to-deliver-messages"></a>手順 5:メッセージを配信する送信ポートを作成します。
 この手順では、作成し、受信したバッチに含まれる個々 のメッセージを送信するためのポートを構成します。 チュートリアルの後半では、送信元パーティ (Tutorial_BatchSource) の断片化を有効[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]構成エクスプ ローラー。 その結果、BizTalk の統合エンジンはバッチの個別のメッセージにフラグメントは、[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]この手順で作成した送信ポート経由でそれらのメッセージを送信します。  
 
  MLLP アダプターでは、関連付けられているのみなります、、特定の送信先 (送信先の基幹業務アプリケーション) にのみ送信されるように静的であるには、このポートを作成します。 このチュートリアルでは、その送信先は、個々 のメッセージの MSH5 記載されているに MESA_IS が。 ACK_024_GLO_DEF スキーマまたは任意の静的な確認 (ACK) に準拠したメッセージをフィルター処理していない受信確認のメッセージを送信するポートを制限するフィルターを使用して、ポートを作成します。  
 
- この送信ポート構成の Ack を受信する、宛先からという名前の受信ポートと送信ポートを関連付けることによって**TwoWayAckReceivePort**します。 [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] セットアップ、このポートを作成してに付属の受信場所の**TwoWayAckReceiveLocation**します。 設定して、このポートを使用する送信ポートを設定する**送信請求-応答を有効にする**に**はい**と設定、**受信場所の URI を送信**に**127.0.0.1:65535** (Ack をそのまま使用するために必要な設定)。 詳細については、[設定を、送信ポートの受信確認の](../../adapters-and-accelerators/accelerator-hl7/setting-up-a-send-port-for-receiving-acks.md)を参照してください。  
+ この送信ポート構成の Ack を受信する、宛先からという名前の受信ポートと送信ポートを関連付けることによって**TwoWayAckReceivePort**します。 [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] セットアップ、このポートを作成してに付属の受信場所の**TwoWayAckReceiveLocation**します。 設定して、このポートを使用する送信ポートを設定する**送信請求-応答を有効にする**に**はい**と設定、**受信場所の URI を送信**に**127.0.0.1:65535** (Ack をそのまま使用するために必要な設定)。 詳細については、次を参照してください。[設定を、送信ポートの受信確認の](../../adapters-and-accelerators/accelerator-hl7/setting-up-a-send-port-for-receiving-acks.md)します。  
 
 ### <a name="to-create-a-send-port-to-deliver-messages"></a>メッセージを配信する送信ポートを作成するには  
 
@@ -78,4 +78,4 @@ ms.locfileid: "37001683"
 
 8. 管理コンソールで、**送信ポート**を右クリックして**Tutorial_2wayMsg**、順にクリックします**開始**します。  
 
-   進みます[手順 6: 受信確認を配信する送信ポートを作成](../../adapters-and-accelerators/accelerator-hl7/step-6-create-a-send-port-to-deliver-acknowledgments.md)です。
+   続行する[手順 6。確認を配信する送信ポートを作成](../../adapters-and-accelerators/accelerator-hl7/step-6-create-a-send-port-to-deliver-acknowledgments.md)です。

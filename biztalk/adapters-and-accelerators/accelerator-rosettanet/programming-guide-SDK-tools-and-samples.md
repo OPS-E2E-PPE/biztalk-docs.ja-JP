@@ -13,17 +13,17 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 159cb8f2-80af-4abf-9d9e-59300a880071
 ms.author: mandia
-ms.openlocfilehash: a69270f873f3de1e4af6d1cc7cb441195882f8b4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: cb37d4a13c01f9d1ea3ee1835838e96ff4e9c5a6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36983571"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65282549"
 ---
 # <a name="programming-guide-tools-and-samples-in-the-rosettanet-sdk"></a>プログラミング ガイド、ツール、および RosettaNet SDK 内のサンプル
 このソフトウェア開発キット (SDK) は、Microsoft® のいずれかのツールを使用してアプリケーションを作成している開発者向けの情報を提供します[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]、パブリック アプリケーション プログラミング インターフェイス (API)、または、で提供されるサンプルとユーティリティ。[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]SDK があります。  
   
- [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] Class Reference では、署名およびコードの例を複数のプログラム言語で紹介しています。 次のタグは、言語固有の情報を示します。  
+ [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]署名とコード例は、複数のプログラミング言語でクラスの参照を提供します。 次のタグは、言語固有の情報を表します。  
   
  **[C#]**  
   

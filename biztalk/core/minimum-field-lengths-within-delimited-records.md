@@ -12,15 +12,15 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 992ffbc6a2e0568bc000413bf90b3c92012d4d59
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f7e30f3bcb6b26a13dfd964eb59796dcdee56237
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36983315"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65324679"
 ---
 # <a name="minimum-field-lengths-within-delimited-records"></a>区切られたレコード内の最小フィールド長
-位置指定レコードの定義では、すべてのフィールドは、特定の厳密な長さに定義されます。 区切られたレコードでは、レコードのフィールドに対して最小のフィールド長を定義できます。 このような特性がによって定義されている、 **[埋め込み文字を含めた最小値**プロパティの**フィールド要素**と**フィールド属性**ノード。  
+定義では、位置指定レコード内のフィールドはすべて定義して、特定の正確な長さ。 区切られたレコードのフィールドは、最小長にも定義できます。 このような特性がによって定義されている、 **[埋め込み文字を含めた最小値**プロパティの**フィールド要素**と**フィールド属性**ノード。  
 
  0 以外の値を指定すると、**埋め込み文字を含めた最小値**プロパティ、フラット ファイル アセンブラーがかどうかをフィールドに関連付けられたデータの文字の数、の設定よりも小さい**埋め込み文字を含めた最小値**プロパティ、違いは、構成に関連する埋め込み文字が使用されます。  
 

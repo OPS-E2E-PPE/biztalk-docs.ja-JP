@@ -15,12 +15,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2ce5dca50ba3be13705cbb957898f3da98c75648
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b910e7af4d6e612ad4046a44c70cce57bacf8a89
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36986027"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65282538"
 ---
 # <a name="programming-guide"></a>プログラミング ガイド
 The Microsoft®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]プログラミング ガイドを使用したコードを記述する開発者向けの概念と手順を説明します。[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]します。 このガイドを MicrosoftBizTalk Server のヘルプと組み合わせて使用します。  

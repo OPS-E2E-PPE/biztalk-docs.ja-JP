@@ -18,15 +18,15 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2215a5464c2798c7b7ffe6f128deccf48d8500e3
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1127eed100389f548c7a4b579a44ee84120529e2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37009155"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65283777"
 ---
 # <a name="customizing-send-and-receive-components"></a>送受信コンポーネントのカスタマイズ
-このセクションのトピックでは、作成、カスタマイズ、または Microsoft® のプロパティを設定する方法を説明[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]コンポーネントを送受信します。 これらのコンポーネントには ASPX ページ、送信ポートと受信ポート、およびアダプターが含まれます。  
+このセクションのトピックでは、作成、カスタマイズ、または Microsoft® のプロパティを設定する方法を説明[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]コンポーネントを送受信します。 これらのコンポーネントは、送信、およびポート、およびアダプターを受信する ASPX ページが含まれます。  
   
  詳細については[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]、し[RosettaNet アクセラレータについて](learn-the-rosettanet-accelerator-and-the-biztalk-tools-available.md)します。  
   

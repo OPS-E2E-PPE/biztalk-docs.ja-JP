@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ae25a8e09b6e9aa8f4b5cef7b6dc5365a601e7de
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9a2b31f73340db43d84f1a2d643c6fc651e3c940
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37001187"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65332379"
 ---
 # <a name="implementing-message-security"></a>メッセージ セキュリティの実装
 署名および暗号化されたメッセージの送受信に証明書を使用するように Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 環境を構成できます。 BizTalk Server では、暗号化およびデジタル署名用の証明書を使用することで次の処理が可能になります。  
@@ -32,7 +32,7 @@ ms.locfileid: "37001187"
   
   ここでは、BizTalk Server パイプライン、受信場所、ポート、および BizTalk Server 環境を構成してメッセージ セキュリティを実装する方法について説明します。  
   
-  メッセージ セキュリティの詳細については、[メッセージ セキュリティの計画](../core/planning-message-security.md)を参照してください。  
+  メッセージ セキュリティの詳細については、次を参照してください。[メッセージ セキュリティの計画](../core/planning-message-security.md)します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

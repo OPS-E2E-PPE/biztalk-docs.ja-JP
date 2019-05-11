@@ -1,5 +1,5 @@
 ---
-title: '手順 2: Siebel ビジネス コンポーネント操作用のアプリケーション定義ファイルの作成 |Microsoft Docs'
+title: 手順 2:Siebel ビジネス コンポーネント操作用のアプリケーション定義ファイルの作成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,19 +12,19 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c017d5e71cdd2a4281849647727364520ad77784
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e845d4a11563d06686749a451998e7b48bbec7ef
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36967619"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65370596"
 ---
-# <a name="step-2-create-an-application-definition-file-for-siebel-business-component-operations"></a>手順 2: Siebel ビジネス コンポーネント操作用のアプリケーション定義ファイルを作成します。
+# <a name="step-2-create-an-application-definition-file-for-siebel-business-component-operations"></a>手順 2:Siebel ビジネス コンポーネント操作用のアプリケーション定義ファイルを作成します。
 ![手順 4 2](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-2of4.gif "Step_2of4")  
   
  **所要時間:** 15 分  
   
- **目標:** ビジネス データ カタログを公開し、基幹業務 (LOB) アプリケーションからのデータがポータルに組み込まれています。 ポータル サイトにこのデータを組み込むには、Microsoft Office SharePoint Server を使用するアプリケーション定義ファイルをビルドする必要があります。  
+ **目標:** ビジネス データ カタログは、公開し、基幹業務 (LOB) アプリケーションからのデータがポータルに組み込まれています。 ポータル サイトにこのデータを組み込むには、Microsoft Office SharePoint Server を使用するアプリケーション定義ファイルをビルドする必要があります。  
   
  ビジネス データ カタログ定義エディター ツールでは、ビジネス データ カタログ アプリケーション定義ファイルを作成することができます。 このツールには、XML 定義ファイルの自動生成されます。 そのため、手動でファイルを作成するには、XML エディターはありません。  
   
@@ -34,7 +34,7 @@ ms.locfileid: "36967619"
   
 -   Microsoft Office SharePoint Server 2007 SDK の一部としてインストールされているビジネス データ カタログ定義エディターが必要です。 SDK をダウンロードする[ http://go.microsoft.com/fwlink/?LinkId=104130](http://go.microsoft.com/fwlink/?LinkId=104130)します。  
   
--   公開した WCF サービスを」の説明に従って[手順 1: WCF サービスとしての Siebel ビジネス コンポーネント操作を発行](../../adapters-and-accelerators/adapter-siebel/step-1-publish-the-siebel-business-component-operations-as-a-wcf-service.md)します。  
+-   公開した WCF サービスを」の説明に従って[手順 1。Siebel ビジネス コンポーネントの操作を WCF サービスとして発行](../../adapters-and-accelerators/adapter-siebel/step-1-publish-the-siebel-business-component-operations-as-a-wcf-service.md)します。  
   
 ## <a name="creating-an-application-definition-file"></a>アプリケーション定義ファイルを作成します。  
  このセクションでは、WCF サービスのアプリケーション定義ファイルを作成する手順が説明します。  
@@ -58,7 +58,7 @@ ms.locfileid: "36967619"
   
      ここで、BusinessObjects_Account_Account_Operation.svc は、Siebel コントラクト用に作成されたサービス ファイルです。  
   
-     URL を入力する必要がありますが、WCF サービスが」の説明に従って、正常に発行されるかどうかをテストするときに使用可能な[手順 1: WCF サービスとしての Siebel ビジネス コンポーネント操作を発行](../../adapters-and-accelerators/adapter-siebel/step-1-publish-the-siebel-business-component-operations-as-a-wcf-service.md)します。  
+     URL を入力する必要がありますが、WCF サービスが」の説明に従って、正常に発行されるかどうかをテストするときに使用可能な[手順 1。Siebel ビジネス コンポーネントの操作を WCF サービスとして発行](../../adapters-and-accelerators/adapter-siebel/step-1-publish-the-siebel-business-component-operations-as-a-wcf-service.md)します。  
   
 5.  **[接続]** をクリックします。  
   
@@ -84,7 +84,7 @@ ms.locfileid: "36967619"
          ![エンティティの名前変更](../../adapters-and-accelerators/adapter-siebel/media/44eda1de-b348-4421-9c51-0355b51f4a90.gif "44eda1de-b348-4421-9c51-0355b51f4a90")  
   
 ### <a name="specify-user-name-and-password-headers-for-methods"></a>メソッドのユーザー名とパスワードのヘッダーを指定します。  
- Siebel システムで、選択したビジネス コンポーネント操作用の WCF サービスを作成するときにユーザー名とパスワードのヘッダーを指定したエンドポイント動作の構成の一部として ([手順 1: Siebel ビジネス コンポーネントの操作を発行します。WCF サービスとして](../../adapters-and-accelerators/adapter-siebel/step-1-publish-the-siebel-business-component-operations-as-a-wcf-service.md))。 メソッドのプロパティの同じ値を指定する必要があります。  
+ Siebel システムで、選択したビジネス コンポーネント操作用の WCF サービスを作成するときにユーザー名とパスワードのヘッダーを指定したエンドポイント動作の構成の一部として ([手順 1。Siebel ビジネス コンポーネントの操作を WCF サービスとして発行](../../adapters-and-accelerators/adapter-siebel/step-1-publish-the-siebel-business-component-operations-as-a-wcf-service.md))。 メソッドのプロパティの同じ値を指定する必要があります。  
   
 ##### <a name="to-specify-user-name-and-password-headers-for-the-query-method"></a>クエリ メソッドのユーザー名とパスワードのヘッダーを指定するには  
   
@@ -117,7 +117,7 @@ ms.locfileid: "36967619"
   
 4.  **[OK]** をクリックします。  
   
-### <a name="requirement-perform-a-query-operation-on-the-account-business-component"></a>要件: アカウントのビジネス コンポーネントでのクエリ操作を実行します。  
+### <a name="requirement-perform-a-query-operation-on-the-account-business-component"></a>要件:アカウントのビジネス コンポーネントでのクエリ操作を実行します。  
  この例の最初の要件では、アカウントのビジネス コンポーネントにクエリ操作の実行に使用できるアプリケーション定義を作成します。 この要件を達成するには、次の一連のタスクを実行する必要があります。  
   
 -   クエリ メソッドで、フィルターを作成し、クエリ操作が実行されるパラメーターにマップします。 アカウント ビジネス コンポーネントを使用してクエリを実行は、 **SearchExpr**パラメーター。 フィルターをマップするなど、 **SearchExpr**パラメーター。  
@@ -211,7 +211,7 @@ ms.locfileid: "36967619"
  このトピックの前述ビジネス データ カタログ定義エディターのツールは列挙データ型を処理しません。 列挙型を検出し、残りのフィールドを無視するまで、ビジネス データ カタログ定義エディターのツールは、フィールドをインポートします。 そのため、アプリケーションに必要な特定のフィールドは省略されます。 これらのフィールドを含めるアプリケーション定義ファイルを手動で編集することができます。  
   
 > [!NOTE]
->  追加するパラメーターがで WCF アダプター サービス開発ウィザードによって生成された .cs ファイルに存在することを確認しておく必要があります[手順 1: WCF サービスとしての Siebel ビジネス コンポーネント操作を発行](../../adapters-and-accelerators/adapter-siebel/step-1-publish-the-siebel-business-component-operations-as-a-wcf-service.md)します。  
+>  追加するパラメーターがで WCF アダプター サービス開発ウィザードによって生成された .cs ファイルに存在することを確認しておく必要があります[手順 1。Siebel ビジネス コンポーネントの操作を WCF サービスとして発行](../../adapters-and-accelerators/adapter-siebel/step-1-publish-the-siebel-business-component-operations-as-a-wcf-service.md)します。  
   
  このアプリケーションの定義ファイルでは、追加または戻り値のパラメーターを削除、 **QueryAccount**メソッド。  
   
@@ -243,7 +243,7 @@ ms.locfileid: "36967619"
    >  新しく追加されたフィールドを表示するビジネス データ カタログ定義エディター ツールに戻り、更新されたアプリケーション定義ファイルをインポートすることができます。 ただし、インポートする前に、ビジネス データ カタログ定義エディター ツールから既存の"Siebel_Account"アプリケーションを削除する必要があります。  
   
 ## <a name="next-steps"></a>次の手順  
- Siebel システムからデータを取得する SharePoint アプリケーションが作成する必要があります。 参照してください[手順 3: Siebel からデータを取得する SharePoint アプリケーションを作成](../../adapters-and-accelerators/adapter-siebel/step-3-create-a-sharepoint-application-to-retrieve-data-from-siebel.md)手順についてはします。  
+ Siebel システムからデータを取得する SharePoint アプリケーションが作成する必要があります。 参照してください[手順 3。Siebel からデータを取得する SharePoint アプリケーションを作成](../../adapters-and-accelerators/adapter-siebel/step-3-create-a-sharepoint-application-to-retrieve-data-from-siebel.md)手順についてはします。  
   
 ## <a name="see-also"></a>参照  
- [チュートリアル 1: Siebel システムからのデータを SharePoint サイトに表示する](../../adapters-and-accelerators/adapter-siebel/tutorial-1-presenting-data-from-a-siebel-system-on-a-sharepoint-site.md)
+ [チュートリアル 1:Siebel システムからのデータを SharePoint サイトに表示する](../../adapters-and-accelerators/adapter-siebel/tutorial-1-presenting-data-from-a-siebel-system-on-a-sharepoint-site.md)

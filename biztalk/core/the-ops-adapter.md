@@ -1,5 +1,5 @@
 ---
-title: Ops アダプタ |Microsoft ドキュメント
+title: Ops アダプタ |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -18,29 +18,29 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 67463adf4e1e960ab6608e67595a679804aa223e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 052fff3518e3a302c6b632e9852a9d0c8f6b5ceb
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22279378"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65277943"
 ---
 # <a name="the-ops-adapter"></a>Ops アダプタ
-このソリューションは、エラーの修正や注文の中止に関して決定を行うオペレーティング システムに、問題を示すメッセージやエラーが可能な限り渡されるようにデザインされています。 Ops アダプタは新しいエラー報告機能を使用して、このような状況を処理します。  
+ソリューションの設計は、渡すには、可能であれば、問題を示すメッセージとエラーを修正するか、終了順序を決定するオペレーション システムにエラーです。 新しいエラー報告機能を組み合わせて、Ops アダプタは、多くの場合を処理します。  
   
- このソリューションでは、新しいエラー報告機能が有効に設定されているポートでアダプタを使用します。 アダプターが 2 つのメソッドを呼び出してエラーを受け取ることと、**初期化**と**Execute**、指定したアセンブリ内のクラスにします。 このソリューションでは、これらのメソッドがエラーを正しい操作グループに送信します。  
+ ソリューションでは、新しいエラー報告機能を使用するように構成のポートでアダプターを使用します。 アダプターが 2 つのメソッドを呼び出してエラーを受信した場合**初期化**と**Execute**、指定したアセンブリ内のクラスにします。 ソリューションでは、これらのメソッドは、正しい操作グループに、エラーを送信します。  
   
- サンプル ハンドラがソリューションに含まれていますが、独自のハンドラを簡単に作成して、アダプタを他のソリューションで使用することができます。 新しいエラー報告機能に関する概要については、次を参照してください。[できませんでしたメッセージのルーティングを使用して](../core/using-failed-message-routing.md)です。  
+ ソリューションには、独自に作成し、その他のソリューションでアダプターを使用できますが、簡単にサンプルのハンドラーが含まれています。 新しいエラー報告機能については、次を参照してください。[できませんでしたメッセージのルーティングを使用して](../core/using-failed-message-routing.md)します。  
   
 > [!NOTE]
->  Ops アダプタは、アダプター フレームワークを使用して作成されています。 フレームワークでアダプタのビルドについては、次を参照してください。[カスタム アダプターの開発](../core/developing-custom-adapters.md)です。  
+>  Ops アダプタは、アダプター フレームワークを使用して構築されています。 アダプタ フレームワークを構築する方法については、次を参照してください。[カスタム アダプターの開発](../core/developing-custom-adapters.md)します。  
   
- このセクションでは、アダプタのしくみとその設定方法と、エラー ハンドラ アセンブリについて詳しく説明します。 このセクションの最後では、アダプタを変更したり、他の用途に使用するユーザーに役立つ実装の詳細を説明します。  
+ このセクションでは、アダプターのしくみと、それを構成する方法について説明し、ハンドラー アセンブリ エラーの詳細を提供します。 セクションの最後で、アダプターを変更またはその他のアプリケーションで使用するユーザーのために、役立つ実装の詳細。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
 -   [Ops アダプタの使用](../core/using-the-ops-adapter.md)  
   
--   [サンプル操作エラー ハンドラ](../core/the-sample-operations-error-handler.md)  
+-   [サンプル操作エラー ハンドラー](../core/the-sample-operations-error-handler.md)  
   
--   [Ops アダプタの実装の詳細](../core/ops-adapter-implementation-details.md)
+-   [Ops アダプターの実装の詳細](../core/ops-adapter-implementation-details.md)

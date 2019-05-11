@@ -13,12 +13,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 43a454e1e6f1dc65d8a2e2c5493aacf9375374b2
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 54c02d5fa7573516bb998e1e47c3c4a929feba77
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36997379"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65363995"
 ---
 # <a name="post-installation-steps-for-biztalk-adapter-pack-2016"></a>BizTalk Adapter Pack 2016 のインストール後の手順
 インストールした後、 [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]、いくつかのインストール後の手順します。 このトピックでは、次の手順を使用します。   
@@ -45,7 +45,7 @@ Wcf-oracledb アダプターを使用または生成されたアダプターを�
 
 1.  BizTalk Server では、次のフォルダーに移動します。  
 
-     *ドライブ*: \Program Files\Microsoft BizTalk Adapter Pack (x64) \bin  
+     *drive*:\Program Files\Microsoft BizTalk Adapter Pack(x64)\bin  
 
      *ドライブ*: \Program Files (x86) \Microsoft BizTalk Adapter Pack\bin  
 

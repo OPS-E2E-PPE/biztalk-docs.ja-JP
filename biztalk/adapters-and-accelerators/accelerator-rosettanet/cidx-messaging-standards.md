@@ -1,5 +1,5 @@
 ---
-title: CIDX メッセージ規格 |Microsoft ドキュメント
+title: CIDX メッセージ規格 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,35 +15,35 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4d37cd02f92a8a13857071d0b3d84ab40c480787
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a39b76ef67374796d9ba569a50e7d5357dac819d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22207258"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65284861"
 ---
 # <a name="cidx-messaging-standards"></a>CIDX メッセージ規格
-CIDX (Chemical Industry Data Exchange) は、標準化されたメッセージ交換の Chem eStandards をサポートおよび維持する標準化機構です。 化学工業分野の企業では、この規格を利用して、業界特有のメッセージングのニーズに対応します。  
+CIDX (Chemical Industry Data Exchange) は、サポートおよび標準化されたメッセージ交換の Chem eStandards を維持する標準化機構として動作します。 企業、化学工業分野では、業界固有のメッセージング ニーズにこれらの標準を使用します。  
   
- CIDX では、XML ドキュメントの交換を可能にするために、メッセージ層に RNIF (RosettaNet Implementation Framework) を採用しています。 CIDX では、RNIF 規格のパブリック プロセス層は採用していません。  
+ CIDX は、Framework RNIF (RosettaNet Implementation) メッセージング層で XML ドキュメントの交換を有効にするを採用しています。 CIDX は、RNIF 規格のパブリック プロセス層を採用していません。  
   
- Chem eStandards は、システムが交換するメッセージの Service Content を記述する XML 文書型定義 (DTD) を定義します。 メッセージの構造は RNIF 1.1 RosettaNet オブジェクトと同じですが、Service Content と一部のヘッダー値が異なります。 CIDX 規格と RosettaNet メッセージに一致がある場合、CIDX 規格では RosettaNet の要素名とデータ構造を採用します。  
+ Chem eStandards では、システムが交換するメッセージの service content を記述する XML ドキュメント型定義 (Dtd) を定義します。 メッセージでは、service content と一部のヘッダー値に違い構造で、RNIF 1.1 RosettaNet オブジェクトと同じです。 CIDX 規格と RosettaNet メッセージの間の一致がある場合は、RosettaNet の要素名とデータ構造体、CIDX 規格が採用されます。  
   
- CIDX では、これまでメッセージ交換に EDI (Electronic Document Interchange) を使用していましたが、XML テクノロジに基づいた新しいドキュメント セットを作成しました。 Chem eStandards により、EDI メッセージの XML レプリカが作成されます。  
+ CIDX が、メッセージ交換の場合は、電子ドキュメント交換 (EDI) を使用していましたが形式の XML テクノロジに基づいたドキュメントの新しいセット。 Chem eStandards では、EDI メッセージの XML レプリカを提供します。  
   
- Chem eStandards により、各取り引きに対して個別のメッセージが作成されます。 Chem eStandards では、テクニカル応答とトランザクション応答の 2 種類のメッセージ応答を使用します。 安全で信頼できるメッセージ処理のために、Chem eStandards では RNIF 1.1 の通知タイプ プロセスのみを使用します。 PIP (Partner Interface Process) 0A1 は使用しません。  
+ Chem eStandards では、各取引に対して個別のメッセージを作成します。 Chem eStandards を使用して、2 つの種類のメッセージ応答: テクニカル応答とトランザクション応答します。 安全で信頼性の高いメッセージング、Chem eStandards は RNIF 1.1 の通知タイプ プロセスのみを使用します。 Chem eStandards では、プロセス PIP (Partner Interface) 0A1 は使用しないでください。  
   
 ## <a name="cidx-and-rosettanet-differences"></a>CIDX と RosettaNet の違い  
- 次の表に、RosettaNet と CIDX の違いの一部を示します。  
+ 次の表では、RosettaNet と CIDX の違いの一部を示します。  
   
 |RosettaNet の実装|CIDX の実装|  
 |-------------------------------|-------------------------|  
-|RosettaNet は、MIME (Multipurpose Internet Mail Extensions) の種類として "Application/x-RosettaNet" を使用します。|CIDX は、MIME の種類として "Application/x-ChemXML" を使用します。|  
-|RosettaNet は、RosettaNet ヘッダーとして GlobalAdministeringAuthorityCode = RosettaNet を使用します。|CIDX は、GlobalAdministeringAuthorityCode = CIDX を使用します。|  
-|RosettaNet は、シングル アクションとダブル アクションのメッセージをサポートします。|CIDX は、シングル アクションのメッセージのみをサポートします。|  
-|RosettaNet は、PIP 0A1 (エラー通知) をサポートします。|CIDX は、PIP 0A1 をサポートしません。|  
-|RosettaNet メッセージの種類は、Transaction または Notification です。|CIDX メッセージの種類はすべて Notification です。|  
-|RosettaNet では、PIP 仕様に基づいて PIP 構成設定を作成する必要があります。|CIDX では、CIDX Chem eStandards 仕様に基づいて PIP 構成設定を作成する必要があります。|  
+|RosettaNet は、Multipurpose Internet Mail Extensions (MIME) の種類として、"Application/x RosettaNet"を使用します。|CIDX は、MIME の種類として"アプリケーション/x-ChemXML"を使用します。|  
+|RosettaNet ヘッダー、RosettaNet 使用 GlobalAdministeringAuthorityCode = RosettaNet|CIDX は GlobalAdministeringAuthorityCode = CIDX|  
+|RosettaNet では、シングル アクションとダブル アクション メッセージをサポートします。|CIDX では、シングル アクション メッセージのみをサポートします。|  
+|RosettaNet PIP 0A1 をサポートしています (エラー通知)。|CIDX は、PIP 0A1 をサポートしていません。|  
+|RosettaNet メッセージのトランザクションまたは通知のできる型。|CIDX のすべてのメッセージでは、通知の種類です。|  
+|RosettaNet では、PIP 仕様から PIP 構成設定を派生する必要があります。|CIDX では、CIDX Chem eStandards 仕様から PIP 構成設定を派生する必要があります。|  
   
 ## <a name="see-also"></a>参照  
  [RosettaNet および CIDX メッセージ規格](../../adapters-and-accelerators/accelerator-rosettanet/rosettanet-and-cidx-messaging-standards.md)   

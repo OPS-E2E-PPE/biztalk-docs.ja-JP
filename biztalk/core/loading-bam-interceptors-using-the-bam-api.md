@@ -1,5 +1,5 @@
 ---
-title: BAM API を使用して BAM インターセプタの読み込み |Microsoft ドキュメント
+title: BAM API を使用して BAM インターセプタの読み込み |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 363c4fc43092e63b664d42bb0420263bd7439dad
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1236d674a643224d2aaf5ca2cb5be2be15c2f2bb
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22261930"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65331147"
 ---
 # <a name="loading-bam-interceptors-using-the-bam-api"></a>BAM API を使用した BAM インターセプタの読み込み
 このトピックでは、構成ファイルではなく、コードを使用した WF インターセプタおよび WCF インターセプタの読み込みについて説明します。  
@@ -66,4 +66,4 @@ foreach (System.ServiceModel.Description.ServiceEndpoint endpoint in myServiceHo
 ```  
   
 ## <a name="see-also"></a>参照  
- [BAM WCF インターセプタと WF インターセプタを使用します。](../core/using-the-bam-wcf-and-wf-interceptors.md)
+ [BAM WCF インターセプターと WF インターセプターを使用します。](../core/using-the-bam-wcf-and-wf-interceptors.md)

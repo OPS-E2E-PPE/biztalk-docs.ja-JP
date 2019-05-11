@@ -19,59 +19,59 @@ caps.latest.revision: 31
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 62eb5603ffca6f22e0e22f185886d0cfefb17746
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d86d5b519d05c01389cff1c5a46e071c51e091a6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37012555"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65357858"
 ---
 # <a name="bpel-import-biztalk-server-sample"></a>BPEL インポート (BizTalk Server サンプル)
-BPEL インポート サンプルは、BPEL (Business Process Execution Language) 処理の記述ファイルと関連アイテムを利用してオーケストレーションを作成する方法を示すものです。  
+BPEL インポート サンプルでは、Business Process Execution Language (BPEL) プロセスの説明とその関連アイテムからオーケストレーションを作成する方法を示します。  
 
 ## <a name="what-this-sample-does"></a>このサンプルの処理  
- Wide World Importers 社は、小売業者に自動出荷サービスを提供する出荷業者です。 具体的には、Wide World Importers 社は小売業者に次のサービスを提供しています。  
+ Wide World importers 社は、小売業者に自動出荷サービスを提供する出荷業者です。 具体的には、Wide World importers 社は小売業者に有効にします。  
 
-- 注文の出荷要求  
+- 注文の出荷を要求します。  
 
-- 出荷の追跡  
+- 出荷を追跡します。  
 
-- 出荷の確認  
+- 出荷を確認します。  
 
-- 出荷に対する請求書発行と支払いの確認  
+- 請求および支払いの送付を確認します。  
 
-  これらのサービスを利用できるかどうかは WSDL (Web Services Description Language) ドキュメントを使用して表すことができます。BPEL ドキュメントでは、製造業者がサービスを呼び出す通常の方法と Wide World Importers 社からの応答方法が記述されます。  
+  BPEL ドキュメントが全体からの応答を期待する方法と製品の企業がサービスの呼び出しに予定されている通常の方法について説明します、これらのサービスの可用性は、Web サービス記述言語 (WSDL) ドキュメントを使用して表すことが、World importers 社です。  
 
-  Northwind Traders という会社が Wide World Importers 社に出荷処理を委託した場合、Northwind Traders 社は全体的な情報のやり取りを記述した BPEL ファイルと関連アイテムを受け取ります。 Northwind Traders 社はこの BPEL ファイルを使用して [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] アプリケーション (BPELShipping) を作成し、Wide World Importers 社を介して自動的に注文を処理できます。  
+  Northwind Traders 社に出荷処理 Wide World Importers 人材採用と BPEL ファイルが提供されるいくつかの関連成果物全体の相互作用を記述します。 BPEL ファイルを使用して、Northwind Traders の作成、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Wide World importers 社を介して自動的に処理するアプリケーション (BPELShipping) を並べ替えます。  
 
-  このサンプルでは、BPELShipping アプリケーションで次のシナリオを実行します。  
+  このサンプルでは、このシナリオを説明します。 BPELShipping アプリケーション。  
 
-1. Northwind Traders 社の顧客注文システムから注文を受信します。  
+1. Northwind traders 社の顧客の注文システムから注文を受信します。  
 
-2. Wide World Importers 社に出荷要求を送信し確認を求めます。  
+2. Wide World importers 社と要求の確認に出荷要求を送信します。  
 
-3. Wide World Importers 社から出荷要求の確認を受信します。  
+3. Wide World importers 社から出荷要求の確認を受信します。  
 
-4. Wide World Importers 社からピックアップ通知を受信します。  
+4. Wide World importers 社からピックアップ通知を受信します。  
 
-5. 出荷製品が顧客に配送され、受理されるまでの出荷状況メッセージを受信します。  
+5. 最大の出荷状況メッセージと出荷が顧客によって受信されたときなどを受け取ります。  
 
-6. Wide World Importers 社から請求書を受信します。  
+6. Wide World importers 社から請求書を受信します。  
 
-7. Wide World Importers 社に請求書受領の応答を返します。  
+7. 請求書の受信確認では、Wide World importers 社に応答します。  
 
-8. Wide World Importers 社から支払い確認を受信します。  
+8. Wide World importers 社から支払い確認メッセージを受信します。  
 
-9. 注文システムに最終的な出荷確認を送信します。  
+9. 注文システムには、最終的な出荷確認を送信します。  
 
-   このサンプルでは、個別の BizTalk アプリケーション (ShipperProcess) を使用して、Wide World Importers 社の役割をシミュレートします。 BPELShipping アプリケーションは、FILE トランスポートを介して ShipperProcess と通信します。ここでは、通信用に共通のファイル システムの場所が使用されます。  
+   別の BizTalk アプリケーション (ShipperProcess) は、このサンプルの Wide World importers 社のシミュレーションに使用されます。 BPELShipping アプリケーションは、一般的なファイル システムの場所を通信に使用されるファイル トランスポートを使用して、ShipperProcess と通信します。  
 
 ## <a name="how-this-sample-is-designed-and-why"></a>このサンプルのデザイン方法とその理由  
- BPEL for Web Services はビジネス プロセスを記述する XML ベースの言語で、異なる企業間で Web サービスを使用して取引する場合に、ビジネス プロセスを簡単に共有できるようにするものです。 BPEL ではビジネス プロトコル レベルでビジネス プロセスの処理方法を記述します。パートナーから受信した注文書の処理など、企業内部で行うプロセスについては記述しません。 このサンプルでは、BPEL ファイルとそれに対応する WSDL ファイルをインポートし、これらのファイルをオーケストレーションに変換した後、パートナーとのビジネス プロセスを開始する方法を示します。  
+ BPEL の Web サービスは、Web サービスを使用して相互にビジネスを実行するさまざまな企業で簡単に共有できるように、ビジネス プロセスを記述する XML ベースの言語です。 BPEL はビジネス プロトコル レベルでは、ビジネス プロセスを処理する方法を説明しますが、パートナーから受信した注文書の処理を行う手順のような企業内の内部プロセスが説明されていません。 このサンプルは、BPEL ファイルと対応する WSDL ファイルをインポート、オーケストレーションに変換してから、パートナーとビジネス プロセスを実行する起動する方法について説明する設計されています。  
 
- 以下は、BPEL ファイルと WSDL ファイルをインポートし、これらのファイルをオーケストレーションに変換して、ビルド済みの BizTalk アプリケーション (ShipperProcess) とやり取りする場合の一連の手順です。 この手順を完了した場合、「BPELShipping アプリケーションをビルドおよび初期化するには」に示されている手順を実行する必要はありません。  
+ BPEL および WSDL ファイルをインポートし、事前構築済みの BizTalk アプリケーション (ShipperProcess) と対話するためのオーケストレーションに変換する方法を示す一連の手順を次に示します。 次の手順を完了する場合は、「をビルドおよび初期化する BPELShipping アプリケーション」で説明されている手順を実行する必要はありません。  
 
-#### <a name="to-import-from-bpel-and-build-a-working-solution"></a>BPEL からインポートして実際のソリューションをビルドするには  
+#### <a name="to-import-from-bpel-and-build-a-working-solution"></a>BPEL からインポートし、実用的なソリューションをビルドするには  
 
 1. Microsoft で[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]の**ファイル** メニューのをクリックして**新規**、 をクリックし、**プロジェクト**。  
 
@@ -83,7 +83,7 @@ BPEL インポート サンプルは、BPEL (Business Process Execution Language
 3. **名前**ボックスに、入力**BPELShipping**します。  
 
    > [!NOTE]
-   >  別の名前を使用すると、最後のバインド ステップで問題が発生する場合があります。  
+   >  別の名前を使用する場合、最終的なバインドの手順で問題が発生する可能性があります。  
 
 4. プロジェクトの場所を選択し、クリックして**OK** BPEL インポート ウィザードを開始します。  
 
@@ -94,11 +94,11 @@ BPEL インポート サンプルは、BPEL (Business Process Execution Language
 7. すべてのファイルを選択、 \<*サンプル パス*\>\Orchestrations\BPELImport\BPELSource フォルダー、 をクリックして**オープン**、順にクリックします**次**.  
 
    > [!NOTE]
-   >  このステップでは、ビジネス プロセスを記述する BPEL ファイルと WSDL ファイル、およびビジネス ドキュメント スキーマを表す XSD ファイルを選択します。  
+   >  この手順では、ビジネス プロセスの説明に BPEL および WSDL ファイルとビジネス ドキュメント スキーマを表す XSD ファイルを選択します。  
 
 8. **呼び出した WebServices 用の WSDL ファイルの選択**] ページで [**完了**します。  
 
-9. BPEL インポート ウィザードにインポートが正常に完了したことが表示されたら、ウィザードを閉じます。 これでプロジェクトが作成されます。  
+9. BPEL インポート ウィザードでは、インポートに成功を報告するウィザードを閉じます。 プロジェクトが作成されました。  
 
 10. [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]コマンド プロンプトでディレクトリ変更コマンド (**cd**) プロジェクトの場所にします。  
 
@@ -110,14 +110,14 @@ BPEL インポート サンプルは、BPEL (Business Process Execution Language
 
 13. **Common properties \assembly**、アセンブリ キー ファイルを選択**BPELShipping.snk**ステップ 11 で作成され、順にクリックします**OK**します。  
 
-14. ソリューション エクスプローラーで、すべての .xsd ファイルを選択して削除します。  
+14. ソリューション エクスプ ローラーで、すべての .xsd ファイルを選択し、それらを削除します。  
 
 15. ソリューション エクスプ ローラーで選択**参照の追加**、し、**プロジェクト**] タブで [**参照**します。  
 
 16. 選択**ShippingSchemas.dll**の場所から\<*サンプル パス*\>\Orchestrations\BPELImport\Solution\ShipperProcess\ShippingSchemas\bin\Development とクリックして**OK**します。  
 
     > [!NOTE]
-    >  このビルド方法については、「ShipperProcess アプリケーションをビルドおよび初期化するには」で説明します。  
+    >  「ビルド、ShipperProcess アプリケーションを初期化して」セクションには、これを構築する方法の手順があります。  
 
 17. ソリューション エクスプ ローラーでダブルクリック **[ordershippingprocess.bpel.odx]** します。  
 
@@ -138,9 +138,9 @@ BPEL インポート サンプルは、BPEL (Business Process Execution Language
 25. **成果物の種類の選択**ダイアログ ボックスで、 をクリックして**ShippingSchemas**を選択します、 **Imported_InvoiceAckMessage**を入力し、クリックして**OK**.  
 
     > [!NOTE]
-    >  ステップ 23 ～ 25 では、BPEL プロセスに参加しているサービスのメッセージの種類を、ShippingSchemas で記述されている対応するメッセージの種類に置き換えます。  
+    >  手順 23 ~ 25 では、ShippingSchemas で説明されている対応するメッセージの種類、BPEL プロセスに参加しているサービスのメッセージの種類を置き換えます。  
 
-26. メッセージの種類ごとに、次の値を使用してステップ 23 ～ 25 を繰り返します。  
+26. 次の値を使用してメッセージの種類ごとにステップ 23 ~ 25 を繰り返します。  
 
 
     |          メッセージ部分          |                    メッセージ型                     |
@@ -178,33 +178,33 @@ BPEL インポート サンプルは、BPEL (Business Process Execution Language
 36. 各ステップ 29 ~ 35 を繰り返し、**メッセージの割り当て**図形し、置き換え**変換**次の表に従って図形。  
 
 
-    |  置き換える図形   |              使用するマップ              |      置き換え元ドキュメント       |       置き換え先ドキュメント        |
+    |  置き換える図形   |              マップを使用するには              |      ソース ドキュメント       |       宛先のドキュメント        |
     |---------------------|--------------------------------------|----------------------------|-----------------------------------|
-    | MessageAssignment_2 |     BPELShipping.Order2OrderAck      |   order.OrderMessagePart   |   order_ack.OrderAckMessagePart   |
-    | MessageAssignment_3 |     BPELShipping.Order2OrderNAck     |   order.OrderMessagePart   |   order_ack.OrderAckMessagePart   |
-    | MessageAssignment_4 |    BPELShipping.Order2ShipHistory    |   order.OrderMessagePart   | ship_history.ShippingHistoryPart  |
-    | MessageAssignment_5 |  BPELShipping.ShipHistory2Completed  |   order.OrderMessagePart   | ship_history.ShippingHistoryPart  |
-    | MessageAssignment_6 |       BPELShipping.Invoice2Ack       | invoice.InvoiceMessagePart | invoice_ack.InvoiceAckMessagePart |
-    | MessageAssignment_7 | BPELShipping.Order2FinalConfirmation |   order.OrderMessagePart   | order_shipped.OrderAckMessagePart |
+    | MessageAssignment_2 |     BPELShipping.Order2OrderAck      |   順序。OrderMessagePart   |   order_ack します。OrderAckMessagePart   |
+    | MessageAssignment_3 |     BPELShipping.Order2OrderNAck     |   順序。OrderMessagePart   |   order_ack します。OrderAckMessagePart   |
+    | MessageAssignment_4 |    BPELShipping.Order2ShipHistory    |   順序。OrderMessagePart   | ship_history します。ShippingHistoryPart  |
+    | MessageAssignment_5 |  BPELShipping.ShipHistory2Completed  |   順序。OrderMessagePart   | ship_history します。ShippingHistoryPart  |
+    | MessageAssignment_6 |       BPELShipping.Invoice2Ack       | 請求書。InvoiceMessagePart | invoice_ack します。[Invoiceackmessagepart] |
+    | MessageAssignment_7 | BPELShipping.Order2FinalConfirmation |   順序。OrderMessagePart   | order_shipped します。OrderAckMessagePart |
 
 
 37. オーケストレーションを保存します。  
 
 38. ダブルクリック **[rule_1]** で、**判断**図形**Decision_1**します。  
 
-39. BizTalk 式エディターで、次の部分を探します。  
+39. BizTalk 式エディターで置き換えます  
 
-     ship_request_ack(BPELShipping.Ship_Acknowledged) == true  
+     ship_request_ack(BPELShipping.Ship_Acknowledged) true = =  
 
      これを次の行に置き換えます。  
 
-     ship_request_ack(ShippingSchemas.Ship_Acknowledged) == true  
+     ship_request_ack(ShippingSchemas.Ship_Acknowledged) true = =  
 
 40. ダブルクリックして、**ループ**という名前の図形**Loop_1**します。  
 
-41. BizTalk 式エディターで、次の部分を探します。  
+41. BizTalk 式エディターで置き換えます  
 
-     ship_history(BPELShipping.Ship_Completed) == true  
+     ship_history(BPELShipping.Ship_Completed) true = =  
 
      これを次の行に置き換えます。  
 
@@ -212,7 +212,7 @@ BPEL インポート サンプルは、BPEL (Business Process Execution Language
 
 42. ダブルクリック**Rule_2**で、**判断**図形**Decision_2**します。  
 
-43. BizTalk 式エディターで、次の部分を探します。  
+43. BizTalk 式エディターで置き換えます  
 
      ship_status(BPELShipping.ShipStatus) == "DONE"  
 
@@ -243,62 +243,62 @@ BPEL インポート サンプルは、BPEL (Business Process Execution Language
 
 |ファイル|説明|  
 |---------------|-----------------|  
-|BPELSource\InvoiceAckMessage.xsd|請求書の受信確認応答スキーマです。|  
+|BPELSource\InvoiceAckMessage.xsd|請求書の受信確認のスキーマです。|  
 |BPELSource\InvoiceMessage.xsd|請求書スキーマです。|  
-|BPELSource\OrderAckMessage.xsd|注文書の受信確認応答スキーマです。|  
-|BPELSource\OrderHeader.xsd|注文書ヘッダー スキーマです。|  
-|BPELSource\OrderMessage.xsd|注文書メッセージ スキーマです。|  
-|BPELSource\OrderShipping.wsdl|BPEL で参照されている WSDL ファイルです。|  
+|BPELSource\OrderAckMessage.xsd|注文の受信確認のスキーマです。|  
+|BPELSource\OrderHeader.xsd|注文ヘッダーのスキーマです。|  
+|BPELSource\OrderMessage.xsd|発注書メッセージのスキーマ。|  
+|BPELSource\OrderShipping.wsdl|BPEL で参照される WSDL ファイル。|  
 |BPELSource\OrderShippingProcess.bpel|BPEL プロセス フローです。|  
 |BPELSource\PaymentConfirmationMessage.xsd|支払い確認メッセージです。|  
 |BPELSource\PickupNotificationMessage.xsd|ピックアップ通知メッセージです。|  
 |BPELSource\ShipConfirmationMessage.xsd|出荷確認メッセージです。|  
 |BPELSource\ShippingHistory.xsd|出荷履歴ドキュメントです。|  
-|BPELSource\ShipRequestAckMessage.xsd|出荷要求の受信確認応答です。|  
+|BPELSource\ShipRequestAckMessage.xsd|出荷要求の受信確認。|  
 |BPELSource\ShipRequestMessage.xsd|出荷要求メッセージです。|  
 |BPELSource\ShipStatusMessage.xsd|出荷状態メッセージです。|  
 |Solution\bindings\BPELBindings.xml|BPELShipping オーケストレーションのポートのバインドを指定するバインド ファイルです。|  
 |Solution\bindings\ShipperBindings.xml|ShipperProcess オーケストレーションのポートのバインドを指定するバインド ファイルです。|  
-|Solution\BPELShipping\BindAndStartOnly.bat|手動でビルドし展開した BPELImport オーケストレーションを、バインドおよび開始するときに使用するバッチ ファイルです。|  
-|Solution\BPELShipping\cleanup.bat|BPELShipping プロセスの削除に使用するバッチ ファイルです。|  
-|Solution\BPELShipping\Setup.bat|提供されている BPELShipping サンプルをインストールおよび開始するときに使用するバッチ ファイルです。|  
-|Solution\BPELShipping\BPELShipping.sln|ビルド済みの BPELShipping サンプルです。|  
-olution\BPELShipping\BPELShipping\Invoice2Ack.btm|請求書と請求書の受信確認応答を関連付けるマップです。|  
-|Solution\BPELShipping\BPELShipping\Order2FinalConfirmation.btm|注文書メッセージを最終的な出荷確認に変換するマップです。|  
-|Solution\BPELShipping\BPELShipping\Order2OrderAck.btm|注文書メッセージを注文書の受信確認応答に変換するマップです。|  
-|Solution\BPELShipping\BPELShipping\Order2OrderNack.btm|注文書メッセージを注文書の否定応答に変換するマップです。|  
-|Solution\BPELShipping\BPELShipping\Order2ShipHistory.btm|注文書メッセージを出荷履歴ドキュメントに変換するマップです。|  
-|Solution\BPELShipping\BPELShipping\Order2ShipRequest.btm|注文書メッセージを注文出荷要求に変換するマップです。|  
+|Solution\BPELShipping\BindAndStartOnly.bat|バインドおよび手動で構築およびデプロイされた後、BPELImport オーケストレーションを開始するのに使用するバッチ ファイルです。|  
+|Solution\BPELShipping\cleanup.bat|BPELShipping プロセスの削除に使用するバッチ ファイル。|  
+|Solution\BPELShipping\Setup.bat|使用してインストールし、提供されている BPELShipping サンプルを起動するバッチ ファイルです。|  
+|Solution\BPELShipping\BPELShipping.sln|事前構築済みの BPELShipping サンプルです。|  
+olution\BPELShipping\BPELShipping\Invoice2Ack.btm|受信確認のマップの請求書を請求します。|  
+|Solution\BPELShipping\BPELShipping\Order2FinalConfirmation.btm|注文メッセージから最終的な出荷確認に変換するマップです。|  
+|Solution\BPELShipping\BPELShipping\Order2OrderAck.btm|注文メッセージから注文書受信確認に変換するマップです。|  
+|Solution\BPELShipping\BPELShipping\Order2OrderNack.btm|注文メッセージから注文否定受信確認応答に変換するマップです。|  
+|Solution\BPELShipping\BPELShipping\Order2ShipHistory.btm|注文メッセージから出荷履歴ドキュメントに変換するマップします。|  
+|Solution\BPELShipping\BPELShipping\Order2ShipRequest.btm|注文メッセージを注文出荷要求から変換するマップします。|  
 |Solution\BPELShipping\BPELShipping\ShipRequest2Completed.btm|出荷履歴を完了に設定するマップです。|  
-|Solution\ShipperProcess\setup.bat|ShipperProcess ヘルパー オーケストレーションとそのポートをビルド、展開、バインド、および開始するためのバッチ ファイルです。|  
-|Solution\ShipperProcess\cleanup.bat|ShipperProcess ヘルパー オーケストレーションとそのポートを停止、参加解除、および展開解除するためのバッチ ファイルです。|  
+|Solution\ShipperProcess\setup.bat|バッチ ファイルをビルドするには、展開し、バインド、ShipperProcess ヘルパー オーケストレーションとそのポートを開始します。|  
+|Solution\ShipperProcess\cleanup.bat|停止、参加解除、および ShipperProcess ヘルパー オーケストレーションとそのポートを展開解除するバッチ ファイルです。|  
 
 ## <a name="building-and-initializing-this-sample"></a>このサンプルのビルドと初期化  
- 最初のステップでは、Wide World Importers 社の役割をシミュレートするために使用する ShipperProcess アプリケーションをビルドおよび初期化します。  
+ 最初の手順をビルドして Wide World importers 社をシミュレートするために使用する ShipperProcess アプリケーションを初期化します。  
 
-#### <a name="to-build-and-initialize-the-shipperprocess-application"></a>ShipperProcess アプリケーションをビルドおよび初期化するには  
+#### <a name="to-build-and-initialize-the-shipperprocess-application"></a>ビルドし、ShipperProcess アプリケーションを初期化するには  
 
 1. 開始**Visual Studio コマンド プロンプト**します。  
 
 2. [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]コマンド プロンプトでディレクトリ変更コマンド (**cd**) 次のフォルダーに。  
 
-    *\<パスのサンプル\>* \Orchestrations\BPELImport\Solution\ShipperProcess  
+    *\<Samples Path\>* \Orchestrations\BPELImport\Solution\ShipperProcess  
 
 3. ファイルは、次の操作を実行します。 Setup.bat を実行します。  
 
-   -   ShipperProcess および BPELShipping プロセスで使用されるスキーマを含む ShippingSchemas プロジェクトをビルドします。  
+   -   、、ShipperProcess および BPELShipping プロセスで使用されるスキーマを含む ShippingSchemas プロジェクトをビルドします。  
 
    -   ShipperProcess をビルドします。  
 
-   -   ShippingSchemas プロジェクトと ShipperProcess プロジェクトを展開します。  
+   -   ShippingSchemas と ShipperProcess プロジェクトをデプロイします。  
 
-   -   ShipperProcess で使用される送信ポートと受信ポートを作成しバインドします。  
+   -   ShipperProcess で使用されるポートの受信の作成と送信のバインド  
 
-   -   ShipperProcess で使用されるポートを開始します。  
+   -   ShipperProcess で使用されるポートを開始します  
 
-   -   ShipperProcess オーケストレーションを参加させ、開始します。  
+   -   参加させ、ShipperProcess オーケストレーションの開始  
 
-   このサンプルを実行する前に、ビルド処理および初期化処理でエラーが報告されていないことを確認してください。 次の警告が 1 つ以上表示される場合がありますが、これらの警告は無視できます。  
+   エラーが報告されていないこと、ビルドおよび初期化プロセス中にこのサンプルを実行する前に確認してください。 1 つ以上の次の警告が表示されます。これらを無視することができます。  
 
 ```  
 The 'http://contoso.org/samples/Fragments:XXXX' element is not declared. An error occurred at , (35, 16).  
@@ -308,12 +308,12 @@ The 'http://contoso.org/samples/Fragments:XXXX' element is not declared. An erro
 ```  
 
 > [!NOTE]
->  「BPEL からインポートして実際のソリューションをビルドするには」に記載されている手順を完了した場合、次の手順を実行する必要はありません。  
+>  "BPEL からインポートし、実用的なソリューションをビルドします"に記載の手順を完了している場合は、次の手順を実行する必要はありません。  
 
-#### <a name="to-build-and-initialize-the-bpelshipping-application"></a>BPELShipping アプリケーションをビルドおよび初期化するには  
+#### <a name="to-build-and-initialize-the-bpelshipping-application"></a>ビルドおよび BPELShipping アプリケーションを初期化するには  
 
 1. > [!WARNING]
-   >  以下の手順を実行する前に、「ShipperProcess アプリケーションをビルドおよび初期化するには」の手順を完了しておく必要があります。  
+   >  次の手順を実行する前に使用権を持って「をビルドおよび初期化する ShipperProcess アプリケーション」上記の手順を完了する必要があります。  
 
     [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]コマンド プロンプトでディレクトリ変更コマンド (**cd**) 次のフォルダーに。  
 
@@ -321,15 +321,15 @@ The 'http://contoso.org/samples/Fragments:XXXX' element is not declared. An erro
 
 2. ファイルは、次の操作を実行します。 Setup.bat を実行します。  
 
-   -   BPELShipping プロジェクトをビルドします。  
+   -   BPELShipping プロジェクトをビルドします  
 
-   -   BPELShipping プロジェクトを展開します。  
+   -   BPELShipping プロジェクトをデプロイします。  
 
-   -   BPELShipping プロセスで使用される送信ポートと受信ポートを作成しバインドします。  
+   -   BPELShipping プロセスで使用されるポートの受信の作成と送信のバインド  
 
-   -   BPELShipping プロセスで使用されるポートを開始します。  
+   -   BPELShipping プロセスで使用されるポートを開始します  
 
-   -   BPELShipping オーケストレーションを参加させ、開始します。  
+   -   参加させ、BPELShipping オーケストレーションの開始  
 
 ## <a name="running-this-sample"></a>このサンプルの実行  
 

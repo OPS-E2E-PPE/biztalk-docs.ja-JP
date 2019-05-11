@@ -18,19 +18,19 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b0865c55480710e52c4d4d87d444d35ac48f0dd0
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6beaec0f6363765706d0eb248fa348e0aa5fe254
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36987835"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65335092"
 ---
 # <a name="how-to-remove-a-biztalk-assembly-from-an-application"></a>BizTalk アセンブリをアプリケーションから削除する方法
 ここでは、BizTalk Server 管理コンソールまたはコマンド ラインを使用して、BizTalk アセンブリを BizTalk アプリケーションから削除する方法について説明します。 この操作を実行すると、アセンブリおよびそのアセンブリに含まれるアイテム (オーケストレーション、スキーマ、パイプラインなど) は、アプリケーションおよび BizTalk 管理データベースから削除されます。  
   
  BizTalk アセンブリを削除する前に、次の重要事項を考慮します。  
   
--   BizTalk アセンブリを削除すると、アセンブリ ファイルは、グローバル アセンブリ キャッシュ (GAC) またはローカル ファイル システム内に存在する場合、自動的に削除されません。 そのアセンブリ ファイルは手動で削除する必要があります。 手順については、[GAC からアセンブリをアンインストールする方法](http://msdn.microsoft.com/library/464706a8-f902-4d05-a724-19169facd2b4)と[BizTalk アプリケーションの設定およびその他のファイルを削除する方法](../core/how-to-remove-other-files-and-settings-for-a-biztalk-application.md)を参照してください。  
+-   BizTalk アセンブリを削除すると、アセンブリ ファイルは、グローバル アセンブリ キャッシュ (GAC) またはローカル ファイル システム内に存在する場合、自動的に削除されません。 そのアセンブリ ファイルは手動で削除する必要があります。 手順については、次を参照してください。 [GAC からアセンブリをアンインストールする方法](http://msdn.microsoft.com/library/464706a8-f902-4d05-a724-19169facd2b4)と[BizTalk アプリケーションの設定およびその他のファイルを削除する方法](../core/how-to-remove-other-files-and-settings-for-a-biztalk-application.md)します。  
   
 -   パイプラインを含む BizTalk アセンブリを削除すると、同じアプリケーション内でそのパイプラインを使用する送信ポートはすべてリセットされて、既定の PassThruTransmit パイプラインを使用するようになります。  
   
@@ -51,22 +51,22 @@ ms.locfileid: "36987835"
   
 #### <a name="using-the-command-line"></a>コマンドラインを使用  
   
-1. 次のように、コマンド プロンプトを開きます: をクリックして**開始**、 をクリックして**実行**、型`cmd`、順にクリックします**OK**。  
+1. 次のように、コマンド プロンプトを開きます。をクリックして**開始**、 をクリックして**実行**、型`cmd`、順にクリックします**OK**。  
   
 2. 次の表に示すように、適切な値を置き換えて、次のコマンドを入力します。  
   
-    **BTSTask RemoveResource** [**/applicationname は:**<em>値</em>] **/Luid:**<em>値</em>[**/Server:** <em>値</em>] [**/database:**<em>値</em>]  
+    **BTSTask RemoveResource** [**/ApplicationName:**<em>value</em>] **/Luid:**<em>value</em> [**/Server:**<em>value</em>] [**/Database:**<em>value</em>]  
   
     例:  
   
-    **BTSTask RemoveResource applicationname: myapplication/Luid:"MyApp.Orchestrations、バージョン 1.0.0.0、Culture = neutral, PublicKeyToken = = 0123456789ABCDEF"**  
+    **BTSTask RemoveResource /ApplicationName:MyApplication /Luid:"MyApp.Orchestrations, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0123456789ABCDEF"**  
   
    |パラメーター|説明|  
    |---------------|-----------------|  
    |**/ApplicationName**|削除する BizTalk アセンブリが含まれる BizTalk アプリケーションの名前。 このパラメーターを指定しなかった場合、既定のアプリケーションが使用されます。 名前にスペースが含まれている場合は、二重引用符 (") で囲む必要があります。|  
    |**/Luid**|BizTalk アセンブリのローカル一意識別子 (LUID)。 LUID を取得するにを使用して、 **ListApp** 」の説明に従って、コマンド[ListApp コマンド](../core/listapp-command.md)します。|  
    |**/サーバー**|BizTalk 管理データベースをホストする SQL Server インスタンスの名前。ServerName\InstanceName,Port の形式で指定します。<br /><br /> インスタンス名の指定は、そのインスタンス名がサーバー名と異なる場合にのみ必要です。 ポートの指定は、SQL Server で使用するポート番号が既定値 (1433) と異なる場合にのみ必要です。<br /><br /> 例 :<br /><br /> Server=MyServer<br /><br /> Server=MyServer\MySQLServer,1533<br /><br /> 指定しなかった場合、ローカル コンピューターで実行されている SQL Server インスタンスの名前が使用されます。|  
-   |**/データベース**|BizTalk 管理データベースの名前。 指定しなかった場合、SQL Server のローカル インスタンスで実行されている BizTalk 管理データベースが使用されます。|  
+   |**/Database**|BizTalk 管理データベースの名前。 指定しなかった場合、SQL Server のローカル インスタンスで実行されている BizTalk 管理データベースが使用されます。|  
   
 ## <a name="see-also"></a>参照  
  [BizTalk アセンブリの管理](../core/managing-biztalk-assemblies.md)   

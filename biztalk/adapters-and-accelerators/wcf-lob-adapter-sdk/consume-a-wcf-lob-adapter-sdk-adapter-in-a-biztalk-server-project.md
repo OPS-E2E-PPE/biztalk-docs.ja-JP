@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1b75a3fb19f10188c91120ec816e59996e18c644
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c0ad9b2659ce20876807d894f99751eeb265e92e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36998267"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65363825"
 ---
 # <a name="consume-a-wcf-lob-adapter-sdk-adapter-in-a-biztalk-server-project"></a>BizTalk Server プロジェクト内の WCF LOB Adapter SDK のアダプターを使用します。
 このトピックを使用して構築されたアダプターを使用する方法を説明します、[!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)]から[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]を使用して、[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]します。  
