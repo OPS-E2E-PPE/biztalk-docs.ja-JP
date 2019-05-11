@@ -1,5 +1,5 @@
 ---
-title: サービスのサンプルを複数の Web をインストールする |Microsoft ドキュメント
+title: 複数の Web をインストールするサービスのサンプル |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,18 +12,18 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8efa43cf5d437d80d930ff96742e8172a2f820ff
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: cda85529c4b5dcca602892bcfafa0090f693fa99
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22294154"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65249948"
 ---
 # <a name="installing-the-multiple-web-services-sample"></a>複数の Web サービス サンプルをインストールします。
-このセクションでは、複数の Web サービス サンプルをインストールするためのプロセスについて説明します。 サンプルをインストールする必要があります[のインストールと旅程ランプでサンプルを実行して](../esb-toolkit/installing-and-running-the-itinerary-on-ramp-sample.md)と[をインストールして、動的の解決サンプルを実行している](../esb-toolkit/installing-and-running-the-dynamic-resolution-sample.md)をインストールして、このサンプルを使用する前にします。  
+このセクションでは、複数の Web サービス サンプルをインストールするプロセスについて説明します。 サンプルをインストールする必要があります[をインストールして、日程ランプでサンプルを実行する](../esb-toolkit/installing-and-running-the-itinerary-on-ramp-sample.md)と[をインストールして、動的解決サンプルを実行している](../esb-toolkit/installing-and-running-the-dynamic-resolution-sample.md)インストールしてこのサンプルを使用する前にします。  
   
  **複数の Web サービス サンプルをインストールするには**  
   
-1.  Windows エクスプローラで、\Source\Samples\MultipleWebServices\Install\Scripts フォルダーを開きます。  
+1.  Windows エクスプ ローラーで、\Source\Samples\MultipleWebServices\Install\Scripts フォルダーを開きます。  
   
 2.  Setup_bin.cmd をという名前のスクリプト ファイルをダブルクリックします。

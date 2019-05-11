@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a4fcad54e40ad489b5a5d55ceabac50f6381e4e0
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 02829131deaeb5ba61aa10271de1eb4e5229fa0e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36994939"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65261908"
 ---
 # <a name="installing-and-running-the-itinerary-on-ramp-sample"></a>インストールして、スケジュール オンランプ サンプルを実行します。
 行程導入サンプルでは、ESB スケジュールのプロパティと実行の一方向と、次の要求-応答メッセージング シナリオを構成する方法を示しています。  
@@ -30,7 +30,7 @@ ms.locfileid: "36994939"
 
   行程導入サンプルでは、Windows フォームのテスト クライアント アプリケーションを使用して、旅行プランの Web サービスのメソッドを実行し、返されたメッセージを表示します。 それを実行して、コードを独自のサービス指向アーキテクチャ (SOA) および ESB アプリケーションでの旅程 Web サービスを使用する方法を確認するテスト クライアント プロジェクトを開くことができます。  
 
-  このセクションのトピックは次のとおりです。  
+  このセクションでは、次のトピックについて説明します。  
 
 - [スケジュール オンランプ サンプルをインストールする](../esb-toolkit/installing-the-itinerary-on-ramp-sample.md)  
 

@@ -19,12 +19,12 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e6d2acc5b70f7a2be120db5159f893922135a429
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 357d891eb783192e4b5c9c82bd2f5a8dc9f9061d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22270338"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65254658"
 ---
 # <a name="rule-engine-configuration-and-tuning-parameters"></a>ルール エンジンの構成およびチューニング パラメーター
 次の表に、構成の検証およびトラブルシューティングに利用できるレジストリ キーの一覧を示します。 これらのレジストリ キーが格納されている**HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\BusinessRules\3.0**です。  
@@ -52,9 +52,9 @@ ms.locfileid: "22270338"
 |DeploymentDriverClass|展開ドライバーのクラス名。|Microsoft.RuleEngine.RuleSetDeploymentDriver|Microsoft.BizTalk.RuleEngineExtensions.RuleSetDeploymentDriver|  
 |TrackingInterceptorAssembly|追跡情報インターセプターのアセンブリ名。|(空の文字列)|Microsoft.BizTalk.RuleEngineExtensions|  
 |TrackingInterceptorClass|追跡情報インターセプターのクラス名。|(空の文字列)|Microsoft.BizTalk.RuleEngineExtensions.RuleSetTrackingInterceptor|  
-|TranslationTimeout|ルール セットの変換に使用できる最大時間 (ミリ秒)。 **注:** これは ruleset ごとに、RuleSetConfiguration を使用してオーバーライドすることができます)。|60000 (1 分)|60000|  
+|TranslationTimeout|ルール セットの変換に使用できる最大時間 (ミリ秒)。 **注:** これは、オーバーライドできる ruleset ごとに、RuleSetConfiguration を使用して)。|60000 (1 分)|60000|  
 |UpdateServiceName|更新サービスの名前 .NET リモート処理で、サービスを探す場合に使用されます。|RemoteUpdateService|RemoteUpdateService|  
-|UpdateServiceHost|更新サービスをホストするコンピューター .NET リモート処理で、サービスを探す場合に使用されます。 **注:** サービスが現在受信メッセージを同じコンピューターにのみに制限します。|localhost|localhost|  
+|UpdateServiceHost|更新サービスをホストするコンピューター .NET リモート処理で、サービスを探す場合に使用されます。 **注:** 現在、サービスは、同じコンピューターにのみ受信メッセージを制限します。|localhost|localhost|  
 |UpdateServicePort|更新サービスが使用する TCP ポート番号 .NET リモート処理で、サービスを探す場合に使用されます。|3132|3132|  
 |CacheEntries|更新サービスによってキャッシュされるルール セットの最大数。|32|32|  
 |CacheTimeout|更新サービス キャッシュのエントリが期限切れになるまでの時間 (秒)。|3600 (1 時間)|3600|  
