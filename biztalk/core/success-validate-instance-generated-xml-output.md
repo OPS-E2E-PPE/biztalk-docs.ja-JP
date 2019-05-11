@@ -1,5 +1,5 @@
 ---
-title: 成功 - 検証インスタンスには、XML 出力が生成される |Microsoft ドキュメント
+title: 成功 - 検証インスタンスには、XML 出力が生成されました |。Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,14 +14,14 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 32d8185cac85b87ab483176e4cc3471db9ee063b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9991f37354c8c2bdf9551c9a7ea07160b09da78f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22277738"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65240340"
 ---
-# <a name="success---validate-instance-generated-xml-output"></a>成功 - 検証インスタンスには、XML 出力が生成されます。
+# <a name="success---validate-instance-generated-xml-output"></a>成功 - 検証インスタンスには、XML 出力が生成されました。
 **説明**  
   
  インスタンスの検証で、XML 出力ファイルが生成されました。 このファイルには、XML と等価な、XML 以外の入力インスタンス メッセージが含まれています。  

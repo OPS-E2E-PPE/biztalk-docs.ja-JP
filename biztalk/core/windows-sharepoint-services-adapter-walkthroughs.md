@@ -1,5 +1,5 @@
 ---
-title: Windows SharePoint Services アダプタのチュートリアル |Microsoft ドキュメント
+title: Windows SharePoint Services アダプターのチュートリアル |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,15 +16,15 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ce038a1e80ff6d98a32fa0a094bcc0fb93bb79da
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2a3e7ecbda2a954cc1dfe0830e77353e9c4ca0d5
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22289562"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65240387"
 ---
-# <a name="windows-sharepoint-services-adapter-walkthroughs"></a>Windows SharePoint Services アダプタのチュートリアル
-このセクションは、3 つのチュートリアルで構成されています。 最初のチュートリアルでは、Windows SharePoint Services アダプタとコンテンツ ベースのルーティング (CBR) を使用してメッセージを送受信するように [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を構成する方法について説明します。 2 番目のチュートリアルでは、BizTalk Server を Microsoft Office に統合する方法について説明します。 3 番目のチュートリアルでは、実行時に受信メッセージの Windows SharePoint Services コンテキスト プロパティにアクセスし、プロパティを基にオーケストレーションの動的ポートでメッセージの送信先を判断する方法について説明します。  
+# <a name="windows-sharepoint-services-adapter-walkthroughs"></a>Windows SharePoint Services アダプターのチュートリアル
+このセクションでは、3 つのチュートリアルで構成されます。 1 つ目は、構成する方法を示します[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]Windows SharePoint Services アダプターとコンテンツ ベース ルーティング (CBR) を使用してメッセージを送受信します。 2 つ目は、Microsoft Office と BizTalk Server を統合する方法を示しています。 3 つ目では、実行時に、受信メッセージの Windows SharePoint Services コンテキスト プロパティにアクセスし、オーケストレーションでの動的ポートを使用してプロパティに基づいてメッセージの送信先を決定する方法を示します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
@@ -36,5 +36,5 @@ ms.locfileid: "22289562"
   
 ## <a name="see-also"></a>参照  
  [Windows SharePoint Services アダプターとは何ですか。](../core/what-is-the-windows-sharepoint-services-adapter.md)   
- [設定して、Windows SharePoint Services アダプターの展開](../core/setting-up-and-deploying-the-windows-sharepoint-services-adapter.md)   
- [Windows SharePoint Services アダプターを構成します。](../core/configuring-the-windows-sharepoint-services-adapter.md)
+ [設定して、Windows SharePoint Services アダプターを展開します。](../core/setting-up-and-deploying-the-windows-sharepoint-services-adapter.md)   
+ [Windows SharePoint Services アダプターの構成](../core/configuring-the-windows-sharepoint-services-adapter.md)
