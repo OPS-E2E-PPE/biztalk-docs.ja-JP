@@ -1,5 +1,5 @@
 ---
-title: 基本的なオーケストレーション Design5 |Microsoft ドキュメント
+title: 基本的なオーケストレーション Design5 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,25 +15,25 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 224b8e507fc9319a2a4b66006914b3ebc27a8421
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 96606eac3ed552dfb07d82630d1ae82830b040c4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22230850"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65358319"
 ---
-# <a name="basic-orchestration-design"></a><span data-ttu-id="78a0b-102">基本的なオーケストレーション デザイン</span><span class="sxs-lookup"><span data-stu-id="78a0b-102">Basic Orchestration Design</span></span>
-<span data-ttu-id="78a0b-103">BizTalk Adapter for PeopleSoft Enterprise で基本的なオーケストレーションを作成する場合、XML の受信はオーケストレーションの受信ポートで行います。</span><span class="sxs-lookup"><span data-stu-id="78a0b-103">When you create a basic orchestration in BizTalk Adapter for PeopleSoft Enterprise, you receive XML into the receive port of your orchestration.</span></span> <span data-ttu-id="78a0b-104">次に、その XML をバックエンド システムに送信して処理します。</span><span class="sxs-lookup"><span data-stu-id="78a0b-104">The XML is then sent to the back-end system to be processed.</span></span> <span data-ttu-id="78a0b-105">バックエンド システムで、例外が発生する可能性がありますはオーケストレーションを停止し、エラーが生成されます。</span><span class="sxs-lookup"><span data-stu-id="78a0b-105">In the back-end system, an exception might occur that would stop the orchestration and generate a fault.</span></span> <span data-ttu-id="78a0b-106">生成されるエラーには、完了しなかったオーケストレーションの情報が示されます。</span><span class="sxs-lookup"><span data-stu-id="78a0b-106">The fault that is produced provides information that the orchestration was not completed.</span></span> <span data-ttu-id="78a0b-107">エラーの原因をデバッグする際、この情報はあまり役に立ちません。</span><span class="sxs-lookup"><span data-stu-id="78a0b-107">This is not helpful in debugging the cause of the error.</span></span>  
+# <a name="basic-orchestration-design"></a><span data-ttu-id="0ee1d-102">基本的なオーケストレーション デザイン</span><span class="sxs-lookup"><span data-stu-id="0ee1d-102">Basic Orchestration Design</span></span>
+<span data-ttu-id="0ee1d-103">BizTalk adapter for PeopleSoft Enterprise の基本的なオーケストレーションを作成するときに、オーケストレーションの受信ポートに XML が表示されます。</span><span class="sxs-lookup"><span data-stu-id="0ee1d-103">When you create a basic orchestration in BizTalk Adapter for PeopleSoft Enterprise, you receive XML into the receive port of your orchestration.</span></span> <span data-ttu-id="0ee1d-104">XML は、処理するバックエンド システムに送信されます。</span><span class="sxs-lookup"><span data-stu-id="0ee1d-104">The XML is then sent to the back-end system to be processed.</span></span> <span data-ttu-id="0ee1d-105">バックエンド システムで例外が発生する可能性をオーケストレーションを停止し、エラーが生成です。</span><span class="sxs-lookup"><span data-stu-id="0ee1d-105">In the back-end system, an exception might occur that would stop the orchestration and generate a fault.</span></span> <span data-ttu-id="0ee1d-106">生成されるエラーは、オーケストレーションが完了しなかったの情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="0ee1d-106">The fault that is produced provides information that the orchestration was not completed.</span></span> <span data-ttu-id="0ee1d-107">これは、エラーの原因のデバッグに便利ではありません。</span><span class="sxs-lookup"><span data-stu-id="0ee1d-107">This is not helpful in debugging the cause of the error.</span></span>  
   
- ![](../core/media/siebeladapter-15-exceptionhandling-start.gif "SiebelAdapter_15_ExceptionHandling_Start")  
-<span data-ttu-id="78a0b-108">例外処理</span><span class="sxs-lookup"><span data-stu-id="78a0b-108">Exception handling</span></span>  
+ <span data-ttu-id="0ee1d-108">![](../core/media/siebeladapter-15-exceptionhandling-start.gif "SiebelAdapter_15_ExceptionHandling_Start")</span><span class="sxs-lookup"><span data-stu-id="0ee1d-108">![](../core/media/siebeladapter-15-exceptionhandling-start.gif "SiebelAdapter_15_ExceptionHandling_Start")</span></span>  
+<span data-ttu-id="0ee1d-109">例外処理</span><span class="sxs-lookup"><span data-stu-id="0ee1d-109">Exception handling</span></span>  
   
- <span data-ttu-id="78a0b-109">エラーが発生すると、呼び出しは中断されます。</span><span class="sxs-lookup"><span data-stu-id="78a0b-109">When a fault occurs the call is suspended.</span></span> <span data-ttu-id="78a0b-110">監査ログで、その呼び出しは [FAILED] に設定されます。</span><span class="sxs-lookup"><span data-stu-id="78a0b-110">In the Auditing log, the call is set to FAILED.</span></span> <span data-ttu-id="78a0b-111">監査ログで [FAILED] を右クリックすると、失敗した呼び出しからポップアップ メッセージが表示されます。</span><span class="sxs-lookup"><span data-stu-id="78a0b-111">When you right-click FAILED in the Auditing log, the failed call opens a pop-up message.</span></span> <span data-ttu-id="78a0b-112">レポートの選択項目をクリックすると、バックエンド システムからのエラーに対し、エラーの内容と原因が表示されます。</span><span class="sxs-lookup"><span data-stu-id="78a0b-112">When you click the reporting selection, you are shown the fault and the reason for the failure from the back-end system.</span></span>  
+ <span data-ttu-id="0ee1d-110">エラーが発生した場合、呼び出しは中断されます。</span><span class="sxs-lookup"><span data-stu-id="0ee1d-110">When a fault occurs the call is suspended.</span></span> <span data-ttu-id="0ee1d-111">監査ログには、呼び出しが失敗に設定されます。</span><span class="sxs-lookup"><span data-stu-id="0ee1d-111">In the Auditing log, the call is set to FAILED.</span></span> <span data-ttu-id="0ee1d-112">監査ログで失敗を右クリックすると、失敗した呼び出しは、ポップアップ メッセージを開きます。</span><span class="sxs-lookup"><span data-stu-id="0ee1d-112">When you right-click FAILED in the Auditing log, the failed call opens a pop-up message.</span></span> <span data-ttu-id="0ee1d-113">レポートの選択範囲をクリックすると、障害ドメインとバックエンド システムからエラーの原因が表示されます。</span><span class="sxs-lookup"><span data-stu-id="0ee1d-113">When you click the reporting selection, you are shown the fault and the reason for the failure from the back-end system.</span></span>  
   
- <span data-ttu-id="78a0b-113">オーケストレーションが中断状態にならないようにし、エラーをリダイレクトするには、CatchExpression を作成します。</span><span class="sxs-lookup"><span data-stu-id="78a0b-113">To prevent the orchestration from entering a suspended state and to redirect the fault, you can create a CatchExpression.</span></span> <span data-ttu-id="78a0b-114">バックエンドで生成される例外をトラップし、エラーの原因の特定に役立てるには、オーケストレーションでスコープ図形を使用します。</span><span class="sxs-lookup"><span data-stu-id="78a0b-114">To trap the exception generated by the back-end, and to help in locating the cause of the fault, you can use the Scope shape in your orchestration.</span></span>  
+ <span data-ttu-id="0ee1d-114">中断状態からオーケストレーションをしないようにして、エラーをリダイレクトする、CatchExpression を作成できます。</span><span class="sxs-lookup"><span data-stu-id="0ee1d-114">To prevent the orchestration from entering a suspended state and to redirect the fault, you can create a CatchExpression.</span></span> <span data-ttu-id="0ee1d-115">バック エンドによって生成された例外をトラップし、エラーの原因の特定に役立てるには、オーケストレーションでスコープ図形を使用できます。</span><span class="sxs-lookup"><span data-stu-id="0ee1d-115">To trap the exception generated by the back-end, and to help in locating the cause of the fault, you can use the Scope shape in your orchestration.</span></span>  
   
- ![](../core/media/siebeladapter-16-exceptionhandling-total.gif "SiebelAdapter_16_ExceptionHandling_Total")  
-<span data-ttu-id="78a0b-115">例外処理の全体図</span><span class="sxs-lookup"><span data-stu-id="78a0b-115">Exception handling total</span></span>  
+ <span data-ttu-id="0ee1d-116">![](../core/media/siebeladapter-16-exceptionhandling-total.gif "SiebelAdapter_16_ExceptionHandling_Total")</span><span class="sxs-lookup"><span data-stu-id="0ee1d-116">![](../core/media/siebeladapter-16-exceptionhandling-total.gif "SiebelAdapter_16_ExceptionHandling_Total")</span></span>  
+<span data-ttu-id="0ee1d-117">例外処理の合計</span><span class="sxs-lookup"><span data-stu-id="0ee1d-117">Exception handling total</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="78a0b-116">参照</span><span class="sxs-lookup"><span data-stu-id="78a0b-116">See Also</span></span>  
- [<span data-ttu-id="78a0b-117">BizTalk Server 例外処理の使用</span><span class="sxs-lookup"><span data-stu-id="78a0b-117">Using BizTalk Server Exception Handling</span></span>](../core/using-biztalk-server-exception-handling2.md)
+## <a name="see-also"></a><span data-ttu-id="0ee1d-118">参照</span><span class="sxs-lookup"><span data-stu-id="0ee1d-118">See Also</span></span>  
+ [<span data-ttu-id="0ee1d-119">BizTalk Server 例外処理の使用</span><span class="sxs-lookup"><span data-stu-id="0ee1d-119">Using BizTalk Server Exception Handling</span></span>](../core/using-biztalk-server-exception-handling2.md)

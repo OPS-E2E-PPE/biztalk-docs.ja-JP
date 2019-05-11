@@ -1,5 +1,5 @@
 ---
-title: インポート エクスポートとビジネス ポリシーの展開スクリプトを作成する方法 |Microsoft ドキュメント
+title: インポート/エクスポートとビジネス ポリシーの展開を記述する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -24,17 +24,17 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9fda67a54c63c8d1dd092e615b2057f00ad41bba
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 50358be7c04218321f76b56cb670d1b65f8c9477
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22254970"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65334851"
 ---
-# <a name="how-to-script-import-export-and-deployment-of-business-policies"></a><span data-ttu-id="e1d07-102">インポート エクスポートとビジネス ポリシーの展開スクリプトを作成する方法</span><span class="sxs-lookup"><span data-stu-id="e1d07-102">How to Script Import-Export and Deployment of Business Policies</span></span>
-<span data-ttu-id="e1d07-103">プログラムでインポート/エクスポートしを使用してポリシーを展開する方法について説明**RuleSetDeploymentDriver**です。</span><span class="sxs-lookup"><span data-stu-id="e1d07-103">This section describes how to programmatically import/export and deploy policies using **RuleSetDeploymentDriver**.</span></span>  
+# <a name="how-to-script-import-export-and-deployment-of-business-policies"></a><span data-ttu-id="6c891-102">インポート/エクスポートとビジネス ポリシーの展開を記述する方法</span><span class="sxs-lookup"><span data-stu-id="6c891-102">How to Script Import-Export and Deployment of Business Policies</span></span>
+<span data-ttu-id="6c891-103">このセクションは、プログラムでインポート/エクスポートしを使用してポリシーを展開する方法を説明します**RuleSetDeploymentDriver**します。</span><span class="sxs-lookup"><span data-stu-id="6c891-103">This section describes how to programmatically import/export and deploy policies using **RuleSetDeploymentDriver**.</span></span>  
   
- <span data-ttu-id="e1d07-104">次の例は、ポリシーをファイルにエクスポートする方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="e1d07-104">The following example shows how to export a policy to a file.</span></span>  
+ <span data-ttu-id="6c891-104">次の例では、ポリシーをファイルにエクスポートする方法を示します。</span><span class="sxs-lookup"><span data-stu-id="6c891-104">The following example shows how to export a policy to a file.</span></span>  
   
 ```  
 using System;  
@@ -65,7 +65,7 @@ namespace SimpleExport
 }  
 ```  
   
- <span data-ttu-id="e1d07-105">次の例は、ファイルからポリシーをインポートおよび展開する方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="e1d07-105">The following example shows how you can import and deploy a policy from a file.</span></span>  
+ <span data-ttu-id="6c891-105">次の例では、インポートし、ファイルからポリシーを展開する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="6c891-105">The following example shows how you can import and deploy a policy from a file.</span></span>  
   
 ```  
 using System;  
@@ -97,4 +97,4 @@ namespace SimpleImport
 ```  
   
 > [!NOTE]
->  <span data-ttu-id="e1d07-106">このコードは、ボキャブラリの依存関係がないことを前提としています。ポリシーがボキャブラリを使用する場合、最初にボキャブラリをインポートする必要があります。</span><span class="sxs-lookup"><span data-stu-id="e1d07-106">The code assumes no dependencies on vocabularies; if the policy uses vocabularies they must be imported first.</span></span>
+>  <span data-ttu-id="6c891-106">コードにボキャブラリ; への依存関係が前提としませんポリシーがボキャブラリを使用している場合最初にインポートする必要があります。</span><span class="sxs-lookup"><span data-stu-id="6c891-106">The code assumes no dependencies on vocabularies; if the policy uses vocabularies they must be imported first.</span></span>

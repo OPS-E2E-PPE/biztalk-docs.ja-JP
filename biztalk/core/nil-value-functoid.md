@@ -1,5 +1,5 @@
 ---
-title: Nil 値 Functoid |Microsoft ドキュメント
+title: Nil 値 Functoid |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,17 +12,17 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: decc7bb78a03aa7fdf943ed0628044cbc61575fb
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ee1ffb333901e51904b9034636674f8da9133f3c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22262914"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65323522"
 ---
-# <a name="nil-value-functoid"></a><span data-ttu-id="54eef-102">Nil 値 Functoid</span><span class="sxs-lookup"><span data-stu-id="54eef-102">Nil Value Functoid</span></span>
+# <a name="nil-value-functoid"></a><span data-ttu-id="b1878-102">Nil 値 Functoid</span><span class="sxs-lookup"><span data-stu-id="b1878-102">Nil Value Functoid</span></span>
 
-## <a name="description"></a><span data-ttu-id="54eef-103">Description</span><span class="sxs-lookup"><span data-stu-id="54eef-103">Description</span></span>
-<span data-ttu-id="54eef-104">**Nil 値**functoid 送信先要素を設定する**Nil**です。</span><span class="sxs-lookup"><span data-stu-id="54eef-104">The **Nil Value** functoid sets a destination element to **Nil**.</span></span> <span data-ttu-id="54eef-105">この Functoid は、出力メッセージに空の要素を含める場合に便利です。</span><span class="sxs-lookup"><span data-stu-id="54eef-105">This functoid is useful when you want to include empty elements in the output message.</span></span> <span data-ttu-id="54eef-106">生成するために他の functoid と組み合わせることができます、 **Nil**特定の条件に基づいて値。</span><span class="sxs-lookup"><span data-stu-id="54eef-106">It can be combined with other functoids to produce a **Nil** value based on specific conditions.</span></span>  
+## <a name="description"></a><span data-ttu-id="b1878-103">説明</span><span class="sxs-lookup"><span data-stu-id="b1878-103">Description</span></span>
+<span data-ttu-id="b1878-104">**Nil 値**functoid 送信先要素を設定する**Nil**します。</span><span class="sxs-lookup"><span data-stu-id="b1878-104">The **Nil Value** functoid sets a destination element to **Nil**.</span></span> <span data-ttu-id="b1878-105">この functoid は、出力メッセージに空の要素を追加する場合に便利です。</span><span class="sxs-lookup"><span data-stu-id="b1878-105">This functoid is useful when you want to include empty elements in the output message.</span></span> <span data-ttu-id="b1878-106">生成するために他の functoid と組み合わせることができますが、 **Nil**に基づいて特定の条件の値。</span><span class="sxs-lookup"><span data-stu-id="b1878-106">It can be combined with other functoids to produce a **Nil** value based on specific conditions.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="54eef-107">参照</span><span class="sxs-lookup"><span data-stu-id="54eef-107">See Also</span></span>  
- <span data-ttu-id="54eef-108">**Nil 値 Functoid のリファレンス**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]</span><span class="sxs-lookup"><span data-stu-id="54eef-108">**Nil Value Functoid Reference** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]</span></span>
+## <a name="see-also"></a><span data-ttu-id="b1878-107">参照</span><span class="sxs-lookup"><span data-stu-id="b1878-107">See Also</span></span>  
+ <span data-ttu-id="b1878-108">**Nil 値 Functoid のリファレンス** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]</span><span class="sxs-lookup"><span data-stu-id="b1878-108">**Nil Value Functoid Reference** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]</span></span>

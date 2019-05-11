@@ -12,32 +12,32 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5b147ce36ba7303c698242ae378a0231e975ec75
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 17052b9d65d500fd9ca4a16162a1943d120dbcc9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36995827"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65392340"
 ---
-# <a name="analyzing-fault-trends-using-charts-and-reports"></a><span data-ttu-id="4f2b5-102">グラフとレポートを使用してエラー傾向の分析</span><span class="sxs-lookup"><span data-stu-id="4f2b5-102">Analyzing Fault Trends Using Charts and Reports</span></span>
-<span data-ttu-id="4f2b5-103">このセクションでは、グラフや ESB 管理ポータルを生成するレポートについて説明します。</span><span class="sxs-lookup"><span data-stu-id="4f2b5-103">This section describes the charts and reports that the ESB Management Portal generates.</span></span> <span data-ttu-id="4f2b5-104">これらのグラフとレポートは、重要な詳細とエラー、警告、およびメッセージの再送信のトレンドに関する情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="4f2b5-104">These charts and reports provide valuable detail and trend information for faults, alerts, and message resubmission.</span></span> <span data-ttu-id="4f2b5-105">次の情報を表示できます。</span><span class="sxs-lookup"><span data-stu-id="4f2b5-105">You can view the following:</span></span>  
+# <a name="analyzing-fault-trends-using-charts-and-reports"></a><span data-ttu-id="f3dc2-102">グラフとレポートを使用してエラー傾向の分析</span><span class="sxs-lookup"><span data-stu-id="f3dc2-102">Analyzing Fault Trends Using Charts and Reports</span></span>
+<span data-ttu-id="f3dc2-103">このセクションでは、グラフや ESB 管理ポータルを生成するレポートについて説明します。</span><span class="sxs-lookup"><span data-stu-id="f3dc2-103">This section describes the charts and reports that the ESB Management Portal generates.</span></span> <span data-ttu-id="f3dc2-104">これらのグラフとレポートは、重要な詳細とエラー、警告、およびメッセージの再送信のトレンドに関する情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="f3dc2-104">These charts and reports provide valuable detail and trend information for faults, alerts, and message resubmission.</span></span> <span data-ttu-id="f3dc2-105">次の情報を表示できます。</span><span class="sxs-lookup"><span data-stu-id="f3dc2-105">You can view the following:</span></span>  
   
-- [<span data-ttu-id="4f2b5-106">アプリケーションまたはサービス別のエラー</span><span class="sxs-lookup"><span data-stu-id="4f2b5-106">Faults by Application or Service</span></span>](../esb-toolkit/faults-by-application-or-service.md)  
+- [<span data-ttu-id="f3dc2-106">アプリケーションまたはサービス別のエラー</span><span class="sxs-lookup"><span data-stu-id="f3dc2-106">Faults by Application or Service</span></span>](../esb-toolkit/faults-by-application-or-service.md)  
   
-- [<span data-ttu-id="4f2b5-107">アプリケーションまたはサービス別のアラート</span><span class="sxs-lookup"><span data-stu-id="4f2b5-107">Alerts by Application or Service</span></span>](../esb-toolkit/alerts-by-application-or-service.md)  
+- [<span data-ttu-id="f3dc2-107">アプリケーションまたはサービス別のアラート</span><span class="sxs-lookup"><span data-stu-id="f3dc2-107">Alerts by Application or Service</span></span>](../esb-toolkit/alerts-by-application-or-service.md)  
   
-- [<span data-ttu-id="4f2b5-108">アプリケーションまたはサービス別のエラー タイプ</span><span class="sxs-lookup"><span data-stu-id="4f2b5-108">Fault Error Types by Application or Service</span></span>](../esb-toolkit/fault-error-types-by-application-or-service.md)  
+- [<span data-ttu-id="f3dc2-108">アプリケーションまたはサービス別のエラー タイプ</span><span class="sxs-lookup"><span data-stu-id="f3dc2-108">Fault Error Types by Application or Service</span></span>](../esb-toolkit/fault-error-types-by-application-or-service.md)  
   
-- [<span data-ttu-id="4f2b5-109">アプリケーションまたはサービス別のエラー推移</span><span class="sxs-lookup"><span data-stu-id="4f2b5-109">Faults over Time by Application or Service</span></span>](../esb-toolkit/faults-over-time-by-application-or-service.md)  
+- [<span data-ttu-id="f3dc2-109">アプリケーションまたはサービス別のエラー推移</span><span class="sxs-lookup"><span data-stu-id="f3dc2-109">Faults over Time by Application or Service</span></span>](../esb-toolkit/faults-over-time-by-application-or-service.md)  
   
-- [<span data-ttu-id="4f2b5-110">アプリケーションまたはサービス別の再送信推移</span><span class="sxs-lookup"><span data-stu-id="4f2b5-110">Resubmissions over Time by Application or Service</span></span>](../esb-toolkit/resubmissions-over-time-by-application-or-service.md)  
+- [<span data-ttu-id="f3dc2-110">アプリケーションまたはサービス別の再送信推移</span><span class="sxs-lookup"><span data-stu-id="f3dc2-110">Resubmissions over Time by Application or Service</span></span>](../esb-toolkit/resubmissions-over-time-by-application-or-service.md)  
   
-- [<span data-ttu-id="4f2b5-111">アプリケーションまたはサービス別のサブスクリプション推移</span><span class="sxs-lookup"><span data-stu-id="4f2b5-111">Subscriptions over Time by Application or Service</span></span>](../esb-toolkit/subscriptions-over-time-by-application-or-service.md)  
+- [<span data-ttu-id="f3dc2-111">アプリケーションまたはサービス別のサブスクリプション推移</span><span class="sxs-lookup"><span data-stu-id="f3dc2-111">Subscriptions over Time by Application or Service</span></span>](../esb-toolkit/subscriptions-over-time-by-application-or-service.md)  
   
-  <span data-ttu-id="4f2b5-112">ESB 管理ポータルのレポート機能の詳細については、、[ポータル レポート ページ](../esb-toolkit/portal-reports-page.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="4f2b5-112">For more information about the reporting features of the ESB Management Portal, see the [Portal Reports Page](../esb-toolkit/portal-reports-page.md).</span></span> <span data-ttu-id="4f2b5-113">図 1 は、レポート ページの既定のビューを示します。</span><span class="sxs-lookup"><span data-stu-id="4f2b5-113">Figure 1 shows the default view of the Reports page.</span></span>  
+  <span data-ttu-id="f3dc2-112">ESB 管理ポータルのレポート機能の詳細については、次を参照してください。、[ポータル レポート ページ](../esb-toolkit/portal-reports-page.md)します。</span><span class="sxs-lookup"><span data-stu-id="f3dc2-112">For more information about the reporting features of the ESB Management Portal, see the [Portal Reports Page](../esb-toolkit/portal-reports-page.md).</span></span> <span data-ttu-id="f3dc2-113">図 1 は、レポート ページの既定のビューを示します。</span><span class="sxs-lookup"><span data-stu-id="f3dc2-113">Figure 1 shows the default view of the Reports page.</span></span>  
   
-  <span data-ttu-id="4f2b5-114">![ポータル レポート ページ](../esb-toolkit/media/portalreportspage.gif "PortalReportsPage")</span><span class="sxs-lookup"><span data-stu-id="4f2b5-114">![Portal Reports Page](../esb-toolkit/media/portalreportspage.gif "PortalReportsPage")</span></span>  
+  <span data-ttu-id="f3dc2-114">![ポータル レポート ページ](../esb-toolkit/media/portalreportspage.gif "PortalReportsPage")</span><span class="sxs-lookup"><span data-stu-id="f3dc2-114">![Portal Reports Page](../esb-toolkit/media/portalreportspage.gif "PortalReportsPage")</span></span>  
   
-  <span data-ttu-id="4f2b5-115">**図 1**</span><span class="sxs-lookup"><span data-stu-id="4f2b5-115">**Figure 1**</span></span>  
+  <span data-ttu-id="f3dc2-115">**図 1**</span><span class="sxs-lookup"><span data-stu-id="f3dc2-115">**Figure 1**</span></span>  
   
-  <span data-ttu-id="4f2b5-116">**ESB 管理ポータルの [レポート] ページ**</span><span class="sxs-lookup"><span data-stu-id="4f2b5-116">**The Reports page of the ESB Management Portal**</span></span>
+  <span data-ttu-id="f3dc2-116">**ESB 管理ポータルの [レポート] ページ**</span><span class="sxs-lookup"><span data-stu-id="f3dc2-116">**The Reports page of the ESB Management Portal**</span></span>
