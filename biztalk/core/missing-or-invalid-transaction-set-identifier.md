@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0f0444468b7f7ff52b38bcd8db01a6bded5ed0a9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c9dca8c7d26eb826ff6da339ae77040e5527238c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37009931"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65324517"
 ---
 # <a name="missing-or-invalid-transaction-set-identifier"></a>トランザクション セット識別子が見つからないか無効です
 ## <a name="details"></a>詳細  

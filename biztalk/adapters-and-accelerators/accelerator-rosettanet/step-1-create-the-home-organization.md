@@ -1,5 +1,5 @@
 ---
-title: '手順 1: ホーム組織の作成 |Microsoft Docs'
+title: 手順 1:ホーム組織の作成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,17 +16,17 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 77c39e30ecbfefdf60ad6b241e996f4a19c71088
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 30ae9910aace1e21daca71dab8c5d4f173c3df31
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37000900"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65281687"
 ---
-# <a name="step-1-create-the-home-organization"></a>手順 1: ホーム組織を作成します。
+# <a name="step-1-create-the-home-organization"></a>手順 1:ホーム組織を作成します。
 この手順で、Microsoft® を使用して、ホーム組織を作成する[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]管理コンソール。  
 
-### <a name="to-start-the-btarn-management-console"></a>BTARN 管理コンソールを起動するには  
+### <a name="to-start-the-btarn-management-console"></a>BTARN 管理コンソールを開始するには  
 
 - 開始**[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]** 管理コンソール。  
 
@@ -59,4 +59,4 @@ ms.locfileid: "37000900"
 4. をクリックして**適用**、し**OK**します。  
 
 ## <a name="see-also"></a>参照  
- [手順 2: 取引先組織の作成](../../adapters-and-accelerators/accelerator-rosettanet/step-2-create-the-partner-organization.md)
+ [手順 2:取引先組織の作成](../../adapters-and-accelerators/accelerator-rosettanet/step-2-create-the-partner-organization.md)

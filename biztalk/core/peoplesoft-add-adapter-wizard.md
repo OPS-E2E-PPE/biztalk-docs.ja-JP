@@ -1,5 +1,5 @@
 ---
-title: PeopleSoft アダプターの追加ウィザード |Microsoft ドキュメント
+title: PeopleSoft アダプター ウィザードの追加 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,22 +16,22 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7e8ded823af4a903547cfe7a5f08e1f42ca135bb
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 11179b25e8275e95fc31aefa762924d434b27b5f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22263442"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65291830"
 ---
 # <a name="peoplesoft-add-adapter-wizard"></a>PeopleSoft アダプターの追加ウィザード
-PeopleSoft システムのメタデータ情報にアクセスするには、アダプターの追加ウィザードを使用します。  
+PeopleSoft システムからメタデータ情報にアクセスするアダプターの追加ウィザードを使用します。  
   
 |プロパティ|目的|  
 |--------------|----------------|  
-|[アダプターの選択] の一覧|一覧からアダプターを選択します。|  
-|SQL Server|一覧から SQL Server を選択し、をクリックして**次**です。|  
-|データベース|SQL Server と同じデータベースに接続します。|  
-|ポート|選択、構成された送信ポートをクリックして**次**です。|  
+|アダプターの一覧を選択します。|一覧からアダプターを選択します。|  
+|SQL Server|一覧から SQL Server を選択し、をクリックして**次**します。|  
+|[データベース]|SQL server と同じデータベースに接続します。|  
+|Port|選択、構成された送信ポートとクリックして**次**します。|  
   
 ## <a name="see-also"></a>参照  
  [BizTalk Adapter for PeopleSoft Enterprise の UI リファレンス](../core/ui-reference-for-biztalk-adapter-for-peoplesoft-enterprise.md)

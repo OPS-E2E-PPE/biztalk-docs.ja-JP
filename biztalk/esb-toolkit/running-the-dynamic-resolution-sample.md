@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 66a61262bab3c3abeb7a4eb7113f09d8d3f7e8db
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2d6d6aaf524af19672c86c5fe4a2a6d052bbfe2c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36983131"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65292547"
 ---
 # <a name="running-the-dynamic-resolution-sample"></a>動的解決サンプルを実行します。
 ユース ケースの例のいずれかを実行する GlobalBank.ESB BizTalk アプリケーションに適切な Microsoft BizTalk バインド ファイルをインポートし、サンプルの入力フォルダーに適切なメッセージをドロップするかサンプル Web サービスを呼び出します。 動的解決サンプルでは、2 つの主なシナリオがサポートされています。  
@@ -26,4 +26,4 @@ ms.locfileid: "36983131"
   
 - [動的解決サンプルの双方向のメッセージング シナリオ](../esb-toolkit/two-way-messaging-scenarios-for-the-dynamic-resolution-sample.md) します。 動的解決サンプルは、サービスがある NorthAmerican Web を使用してこのシナリオをサポートしている http://localhost/ESB.NorthAmericanServices/CustomerOrder.asmx にパブリケーションとして BizTalk にポイントします。  
   
-  ESB ディスパッチャーと ESB ディスパッチャー逆アセンブラー パイプライン コンポーネントのサンプルの使用については、[、動的解決サンプルのしくみ](../esb-toolkit/how-the-dynamic-resolution-sample-works.md)を参照してください。
+  ESB ディスパッチャーと ESB ディスパッチャー逆アセンブラー パイプライン コンポーネントのサンプルの使用については、次を参照してください。 [、動的解決サンプルのしくみ](../esb-toolkit/how-the-dynamic-resolution-sample-works.md)します。

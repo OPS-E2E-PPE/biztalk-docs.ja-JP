@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b24b0815c5948bac86dc3c614d05eb87d0684bdb
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5e4555b9a3f635d733d698109614c1ed673125f0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36999251"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65291259"
 ---
 # <a name="restoring-databases-not-included-in-the-backup-biztalk-server-job"></a>バックアップ BizTalk Server のジョブに含まれていないデータベースの復元
 このセクションでは、BizTalk Server のバックアップ ジョブによってバックアップされませんは全体的な BizTalk ソリューションの一部のデータベースを復元する方法について説明します。 BizTalk ソリューションの一部であるすべてのデータベースは、次を除く、BizTalk Server のバックアップ ジョブを使用してバックアップされます。  

@@ -15,12 +15,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3d8dfaf91d9b0d3d058c4d3e31cd67c652235eff
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ccf8b71b08c35e94f710af12562060d477bf4abb
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36983043"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65285144"
 ---
 # <a name="xml-disassembler-and-assembler"></a>XML 逆アセンブラーとアセンブラー
 XML 逆アセンブラーとアセンブラーことを確認します。 Microsoft BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) だけでなく、HL7 でエンコードされたメッセージをサポートしますが、受信/送信 XML メッセージをもサポートしています。  
@@ -43,7 +43,7 @@ XML 逆アセンブラーとアセンブラーことを確認します。 Micros
 ## <a name="xml-assembler"></a>XML アセンブラー  
  XML アセンブラーは、XML のセグメントを送信 XML メッセージにシリアル化します。 XML アセンブラーは、サポートおよび次の受信確認 (ACK) メッセージを作成します。  
   
-- 静的  
+- スタティック  
   
 - 元のモード  
   

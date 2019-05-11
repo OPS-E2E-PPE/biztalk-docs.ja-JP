@@ -1,5 +1,5 @@
 ---
-title: '手順 3: 定義する、発行、および Contoso のビジネス ポリシーを展開する |Microsoft ドキュメント'
+title: 手順 3:定義する、発行、および Contoso のビジネス ポリシーの展開 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,14 +17,14 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cbdd1133145aada8b1a1abf0ccdde25547b7fed3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d0b94deb38356325c81dd1b5192c726e75a43ff0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22210666"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65281099"
 ---
-# <a name="step-3-defining-publishing-and-deploying-the-business-policy-for-contoso"></a>手順 3: を定義する、発行、および Contoso のビジネス ポリシーを展開します。
+# <a name="step-3-defining-publishing-and-deploying-the-business-policy-for-contoso"></a>手順 3:定義する、発行、および Contoso のビジネス ポリシーを展開します。
 ここでは、緊急時に使用するために、Contoso が製造する各製品を決められた数量だけ取っておくビジネス ポリシーを作成します。  
   
 ### <a name="to-add-a-new-policy"></a>新しいポリシーを追加するには  
@@ -76,4 +76,4 @@ ms.locfileid: "22210666"
 3.  その同じノードを右クリックし、をクリックして**展開**です。  
   
 ## <a name="see-also"></a>参照  
- [手順 4: HeaderHelper プロジェクトの作成](../../adapters-and-accelerators/accelerator-rosettanet/step-4-creating-the-headerhelper-project.md)
+ [手順 4:HeaderHelper プロジェクトの作成](../../adapters-and-accelerators/accelerator-rosettanet/step-4-creating-the-headerhelper-project.md)

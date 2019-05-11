@@ -12,34 +12,34 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0d9aca64afee9ed979b2eee58a5f2bdafb25b461
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 92ad9b7c0318a028b6b2f98a75eca1484014b305
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37011603"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65282238"
 ---
 # <a name="rnifsend"></a>RNIFSend
-このサンプルは、作業 Microsoft® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] RNIFSend.aspx ファイルが、RNIF 処理用メッセージを準備し、応答側の RNIFReceive.aspx ページにメッセージを送信します。 ASPX ページをカスタマイズして、次の操作を実行できます。  
+このサンプルは、作業 Microsoft® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] RNIFSend.aspx ファイルが、RNIF 処理用メッセージを準備し、応答側の RNIFReceive.aspx ページにメッセージを送信します。 次の ASPX ページをカスタマイズできます。  
   
-- パフォーマンス カウンタの追加と削除  
+- 追加または削除のパフォーマンス カウンター  
   
-- 機能の追加 (データベースへのデータの書き込みや追跡機能のカスタマイズなど)  
+- データベースへのデータの書き込みや追跡機能のカスタマイズなど、ページに機能を追加します。  
   
-- 検証機能の追加  
+- 検証ページを追加します。  
   
   このサンプルにある*\<ドライブ\>*: \Program Files\Microsoft BizTalk\<バージョン\>\sdk\webapplication\rnifsender のアクセラレータです。  
   
 ## <a name="demonstrates"></a>使用例  
- このサンプルは、以下のような RNIF 処理用の送信メッセージを作成する方法を示します。  
+ このサンプルでは、RNIF 処理には、次の送信メッセージを準備する方法を示しています。  
   
--   MIME ヘッダーのデータを検証する  
+-   MIME ヘッダーのデータの検証  
   
--   MIME ヘッダーと MIME 境界をページに追加する  
+-   メッセージに MIME ヘッダーと MIME 境界を追加します。  
   
--   取引先の RNIFReceive.aspx にメッセージを送信する  
+-   パートナーの RNIFReceive.aspx にメッセージを送信  
   
--   返されたシグナル メッセージを処理する  
+-   返されたシグナル メッセージの処理  
   
 ## <a name="see-also"></a>参照  
  [送信および受信 ASPX ページ](../../adapters-and-accelerators/accelerator-rosettanet/send-and-receive-aspx-pages.md)   

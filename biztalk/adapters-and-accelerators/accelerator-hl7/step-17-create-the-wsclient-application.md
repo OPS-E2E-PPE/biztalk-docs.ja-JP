@@ -1,5 +1,5 @@
 ---
-title: '手順 17: WSClient アプリケーションの作成 |Microsoft Docs'
+title: 手順 17:WSClient アプリケーションの作成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,14 +16,14 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9da92bf7631b254ac8464cad058a6500305f01bf
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c9238e94168060c8e8853bbd8108ae62a57397d1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36993259"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65288846"
 ---
-# <a name="step-17-create-the-wsclient-application"></a>手順 17: WSClient アプリケーションを作成します。
+# <a name="step-17-create-the-wsclient-application"></a>手順 17:WSClient アプリケーションを作成します。
 WSClient.exe (Web サービス クライアント) で記述されたコンソール アプリケーションは、[!INCLUDE[btsVCSharp](../../includes/btsvcsharp-md.md)]は、前の手順で Web サービスとして公開するオーケストレーションにデータを送信する方法を示しています。 WSClient アプリケーションは、4 つの入力の順序でパラメーターを受け取る: 患者名、ミドル ネーム、名、および社会保障番号の末尾をそれぞれします。 患者の情報を Web サービスを送信するには、次のコマンドライン構文を使用します。  
   
 ```  
@@ -79,7 +79,7 @@ wsclient john henry smith 123456789
   
 9. ソリューション エクスプ ローラーで右クリックして**WSClient**、 をクリックし、**ビルド**します。 成功メッセージが出力ウィンドウに表示されることを確認します。 成功メッセージが表示されない場合のトラブルシューティングを行う**WSClient**します。 [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] WSClient.exe、実行可能ファイルのコピーを配置、 \<*ドライブ*\>: \Tutorial\WSClient\bin\Debug フォルダー。  
   
-   進みます[手順 18: 新しいメッセージ強化ソリューションのテスト](../../adapters-and-accelerators/accelerator-hl7/step-18-test-your-new-message-enrichment-solution.md)します。  
+   続行する[手順 18。新しいメッセージ強化ソリューションのテスト](../../adapters-and-accelerators/accelerator-hl7/step-18-test-your-new-message-enrichment-solution.md)します。  
   
 ## <a name="see-also"></a>参照  
  [メッセージ強化のチュートリアル](../../adapters-and-accelerators/accelerator-hl7/message-enrichment-tutorial.md)

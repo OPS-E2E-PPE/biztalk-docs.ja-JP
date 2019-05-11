@@ -1,5 +1,5 @@
 ---
-title: Siebel システム用の WCF クライアントの構成 |Microsoft ドキュメント
+title: Siebel システム用の WCF クライアントの構成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,22 +16,22 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 04d122c3300f3c1e52194a10332fbb7fb6c45d81
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 0db4b2c74e79468ed31bd15734f18a9616681217
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25963608"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65371921"
 ---
 # <a name="configure-a-wcf-client-for-a-siebel-system"></a>Siebel システム用の WCF クライアントを構成します。
-WCF クライアント クラスを生成した後を WCF クライアント (インスタンス) を作成し、使用するには、そのメソッドを呼び出す、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]です。 操作用の WCF クライアント クラスとヘルパー コードを生成する方法についてを[!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]公開を参照してください[WCF クライアントまたは Siebel ソリューションの成果物の WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-siebel/generate-a-wcf-client-or-a-wcf-service-contract-for-siebel-solution-artifacts.md)です。  
+WCF クライアント クラスを生成した後は、WCF クライアント (インスタンス) の作成し、使用するメソッドの呼び出し、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]します。 操作のための WCF クライアント クラスとヘルパー コードを生成する方法についてを[!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]公開を参照してください[WCF クライアントまたは Siebel ソリューションの成果物の WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-siebel/generate-a-wcf-client-or-a-wcf-service-contract-for-siebel-solution-artifacts.md)します。  
   
- WCF クライアントを作成するには、エンドポイント アドレスとバインディングを指定する必要があります。 エンドポイントのアドレスは、Siebel の有効な接続 URI を含める必要があり、バインディングは、Siebel のバインドのインスタンスである必要があります (**SiebelBinding**)。 Siebel 接続 URI の詳細については、次を参照してください。 [Visual Studio での Siebel システムへの接続](../../adapters-and-accelerators/adapter-siebel/connect-to-the-siebel-system-in-visual-studio.md)です。  
+ WCF クライアントを作成するには、エンドポイント アドレスとバインディングを指定する必要があります。 エンドポイント アドレスが有効な Siebel 接続 URI を含める必要があり、バインドは、Siebel のバインドのインスタンスである必要があります (**SiebelBinding**)。 Siebel 接続 URI の詳細については、次を参照してください。 [Visual Studio で Siebel システムへの接続](../../adapters-and-accelerators/adapter-siebel/connect-to-the-siebel-system-in-visual-studio.md)します。  
   
- コードまたは構成ファイルでは、Siebel のバインドとエンドポイント アドレスを指定できます。 使用すると、[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]プロジェクトの作成も構成ファイル (app.config) で WCF クライアント クラスを生成します。 このファイルには、バインドのプロパティおよび接続情報 (資格情報) を除くで Siebel システムに接続するときに指定したを反映する構成設定が含まれています、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]です。  
+ コードまたは構成ファイルでは、Siebel のバインドとエンドポイント アドレスを指定できます。 使用すると、[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]プロジェクトの作成も構成ファイル (app.config) で WCF クライアント クラスを生成します。 このファイルに情報を反映するバインドのプロパティと接続 (資格情報) を除くで Siebel システムに接続するときに指定した構成設定が含まれています、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]します。  
   
-## <a name="specifying-the-binding-and-endpoint-address-in-code"></a>コードでのバインディングとエンドポイント アドレスの指定  
- 次のコードでは、コード内のバインディングとエンドポイント アドレスを指定することによって、WCF クライアントを作成する方法を示します。 Siebel の資格情報を使用して指定することをお勧め、 **ClientCredentials**接続エンドポイントのアドレスに指定された URI ではなく、WCF クライアントのプロパティです。  
+## <a name="specifying-the-binding-and-endpoint-address-in-code"></a>バインディングとエンドポイント アドレスを指定するコード  
+ 次のコードでは、コードでバインディングとエンドポイント アドレスを指定することで、WCF クライアントを作成する方法を示します。 使用して Siebel の資格情報を指定することをお勧め、 **ClientCredentials**接続エンドポイントのアドレスの指定された URI ではなく、WCF クライアントのプロパティ。  
   
 ```  
 // A WCF client that targets the TimeStamp business service is created  
@@ -48,8 +48,8 @@ BusinessServices_TimeStamp_OperationClient client =
     client.Open();  
 ```  
   
-## <a name="specifying-the-binding-and-endpoint-address-in-a-configuration-file"></a>構成ファイルでのバインディングとエンドポイント アドレスの指定  
- 次のコードでは、app.config ファイルでバインディングとエンドポイント アドレスを指定して、WCF クライアントを作成する方法を示します。  
+## <a name="specifying-the-binding-and-endpoint-address-in-a-configuration-file"></a>構成ファイルでバインディングとエンドポイント アドレスを指定します。  
+ 次のコードでは、app.config ファイルでバインディングとエンドポイント アドレスを指定することで、WCF クライアントを作成する方法を示します。  
   
 ```  
 // A WCF client that targets the TimeStamp business service is created  
@@ -64,7 +64,7 @@ client.Open();
 ```  
   
 ### <a name="the-appconfig-file"></a>App.config ファイル  
- 次の XML は、タイムスタンプのビジネス サービスの作成、構成ファイル、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]です。 このファイルには、前の例で参照されているクライアント エンドポイント構成が含まれています。  
+ 次の XML は、タイムスタンプのビジネス サービスの作成、構成ファイル、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]します。 このファイルには、前の例で参照されているクライアント エンドポイント構成が含まれています。  
   
 ```  
 <?xml version="1.0" encoding="utf-8"?>  
@@ -88,7 +88,7 @@ client.Open();
 </configuration>  
 ```  
   
- プロジェクトに複数の WCF クライアントがある場合があります複数のクライアント構成ファイルで定義されているエンドポイント エントリ。 各 WCF クライアント エントリが設定されます、バインド構成とターゲット Siebel の成果物; に基づいて一意の名前たとえば、"SiebelBinding_BusinessServices_TimeStamp_Operation"です。 場合は、プロジェクトで、WCF クライアントを作成する複数回接続すると、複数のバインド構成エントリが作成接続ごとに 1 つです。 これらのバインディングの構成エントリの名前は次のようになります: SiebelBinding、SiebelBinding1、SiebelBinding2 などです。 特定の接続中に作成される各クライアント エンドポイント エントリでは、その接続中に作成されたバインド エントリを参照します。  
+ プロジェクトには、複数の WCF クライアントがある場合があります複数のクライアント構成ファイルで定義されているエンドポイントのエントリ。 WCF クライアントの各エントリは、バインド構成とターゲットの Siebel の成果物; に基づいて一意の名前になりますたとえば、"SiebelBinding_BusinessServices_TimeStamp_Operation"です。 プロジェクトで、WCF クライアントを作成するための複数回を接続する場合は、複数のバインド構成エントリが作成されます、接続ごとに 1 つ。 これらのバインド構成エントリは次の方法で名前が付けられます。SiebelBinding、SiebelBinding1、SiebelBinding2 など。 特定の接続中に作成される各クライアントのエンドポイント エントリは、その接続中に作成されたバインド エントリを参照します。  
   
 ## <a name="see-also"></a>参照  
  [WCF サービス モデルを使用して Siebel アプリケーションを開発します。](../../adapters-and-accelerators/adapter-siebel/develop-siebel-applications-using-the-wcf-service-model.md)

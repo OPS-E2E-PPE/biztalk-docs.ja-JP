@@ -20,12 +20,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d9120d9078303092740fdbfc27b6932b7849cc6a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: bd28808854b07120cce7b021d27bf1146e23d749
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37002107"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65283322"
 ---
 # <a name="lobwebapplication"></a>LOBWebApplication
 LOBWebApplication ユーティリティは、実際の基幹業務 (LOB) Web アプリケーションをシミュレートして、ASPX ページから取引先にアクションまたは応答メッセージを送信するために使用します。  
@@ -93,7 +93,7 @@ LOBWebApplication ユーティリティは、実際の基幹業務 (LOB) Web ア
 5.  **[送信]** をクリックします。  
   
 ## <a name="remarks"></a>コメント  
- LOBWebApplication ユーティリティは、指定した PIP からメッセージのインスタンスを生成し、ASPX ページに生成されたメッセージのインスタンスからサービスのコンテンツを入力します。 この処理を実行する際、LOBWebApplication ユーティリティは、書式設定されたメッセージ インスタンスを PIP から直接生成するのと同じ技法を使用します。 詳細については、[PIP からの整形式メッセージ インスタンスを作成する](../../adapters-and-accelerators/accelerator-rosettanet/creating-a-well-formed-message-instance-from-a-pip.md)を参照してください。 ASPX ページのサービス コンテンツのフィールドに実際のデータを入力すると、実際のメッセージ インスタンスを生成できます。  
+ LOBWebApplication ユーティリティは、指定した PIP からメッセージのインスタンスを生成し、ASPX ページに生成されたメッセージのインスタンスからサービスのコンテンツを入力します。 この処理を実行する際、LOBWebApplication ユーティリティは、書式設定されたメッセージ インスタンスを PIP から直接生成するのと同じ技法を使用します。 詳細については、次を参照してください。 [PIP からの整形式メッセージ インスタンスを作成する](../../adapters-and-accelerators/accelerator-rosettanet/creating-a-well-formed-message-instance-from-a-pip.md)します。 ASPX ページのサービス コンテンツのフィールドに実際のデータを入力すると、実際のメッセージ インスタンスを生成できます。  
   
  LOBWebApplication ユーティリティは、メッセージを送信する基幹業務 (LOB) Web アプリケーションをシミュレートするために使用します。 LOBApplication ユーティリティは、メッセージを送信する基幹業務 (LOB) デスクトップ アプリケーションをシミュレートするために使用します。  
   

@@ -12,12 +12,12 @@ caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4ada608dbac8071af182c26af02c8f47b43e6cca
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d3411785538e8dc6fcfe50cc2959b85481634264
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37011987"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65362616"
 ---
 # <a name="what-is-the-windows-communication-foundation-line-of-business-adapter-sdk"></a>Business Adapter SDK の Windows Communication Foundation の行とは
 機能とコンポーネントの概要については、[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]します。 また、メタデータ、接続の管理、およびバインドとチャネルなど、知っておくべき用語を含む、主要な概念についても説明します。
@@ -82,9 +82,9 @@ ms.locfileid: "37011987"
 
 |           |                                                                                                                                                                                                                                                         |
 |-----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|  バインド (binding)  | アダプターとの通信方法を定義します。 バインディングがによって作成された、[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]し、トランスポート、エンコーディング、およびその他の詳細を定義します。 バインディングの 1 つまたは複数のバインド要素が可能性があります。 |
+|  バインド  | アダプターとの通信方法を定義します。 バインディングがによって作成された、[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]し、トランスポート、エンコーディング、およびその他の詳細を定義します。 バインディングの 1 つまたは複数のバインド要素が可能性があります。 |
 |  channel  |                                                          バインド要素の実装です。 チャネル スタックを作成するのには相互にバインド スタックのチャネルのコレクション。                                                           |
-|  message  |                                                                              本文やヘッダーなど、いくつかの要素で構成されるデータの自己完結型の単位。                                                                              |
+|  メッセージ  |                                                                              本文やヘッダーなど、いくつかの要素で構成されるデータの自己完結型の単位。                                                                              |
 | メタデータ (metadata)  |                                                                   操作と利用可能なデータを含む、基幹業務システムの特性について説明します。                                                                    |
 | operation |                             関数と基幹業務システムによって公開されるメソッド。 データを操作また adjudicating クレームや、注文を作成する売上データの照会などの便利なアクティビティを実行します。                              |
    

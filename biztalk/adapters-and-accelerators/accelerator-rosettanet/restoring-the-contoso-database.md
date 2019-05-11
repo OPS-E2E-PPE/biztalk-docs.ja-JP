@@ -1,5 +1,5 @@
 ---
-title: Contoso データベースの復元 |Microsoft ドキュメント
+title: Contoso データベースの復元 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,28 +15,28 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f77c242fe6477baac53b6a3e1b2fda545a7e4365
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4d434d3817a8e00f01e458dd96850b1bff6bb79a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22210226"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65282401"
 ---
 # <a name="restoring-the-contoso-database"></a>Contoso データベースの復元
-ここでは、SQL Server Management Studio を使用して SQL スクリプトを実行し、Contoso データベースとそれに関連付けられたストアド プロシージャを復元します。 また、データベース テーブルに準備データを追加します。  
+この手順では、Contoso データベースとその関連付けられたストアド プロシージャを復元するのに SQL スクリプトを実行するのに SQL Server Management Studio を使用します。 予備的なデータをデータベース テーブルを作成します。  
   
 ### <a name="to-restore-the-contoso-database"></a>Contoso データベースを復元するには  
   
-1.  をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**Microsoft SQL Server 2008 R2**、順にクリック**SQL Server Management Studio**です。  
+1.  クリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**Microsoft SQL Server 2008 R2**、順にクリックします**SQL Server Management Studio**します。  
   
-2.  サーバー ダイアログ ボックスへの接続で、 **SQL Server**ボックスで、クリックして**接続**です。  
+2.  サーバー] ダイアログ ボックスへの接続で、 **SQL Server**ボックスで、[ **Connect**します。  
   
     > [!NOTE]
-    >  SQL Server エージェントが開始されていない場合を右クリックし、をクリックして**開始**です。  
+    >  SQL Server エージェントが開始されていない場合を右クリックし、順にクリックします**開始**します。  
   
-3.  Microsoft SQL Server Management Studio でクリックして**新しいクエリ**です。  
+3.  Microsoft SQL Server Management Studio で次のようにクリックします。**新しいクエリ**します。  
   
-4.  [クエリ] ペインで、次の SQL スクリプトをコピーし、[クエリ] ウィンドウに貼り付けます。  
+4.  クエリ ウィンドウでコピーしてクエリ ウィンドウに次の SQL スクリプトを貼り付けます。  
   
     ```  
     CREATE DATABASE Contoso  
@@ -92,21 +92,21 @@ ms.locfileid: "22210226"
   
 ### <a name="to-set-permissions-on-the-contoso-database"></a>Contoso データベースにアクセス許可を設定するには  
   
-1.  Microsoft SQL Server Management Studio の オブジェクト エクスプ ローラーで展開**データベース**、展開、 **Contoso**データベースを展開し、展開**セキュリティ**です。 **[ユーザー]** を右クリックし、 **[新しいユーザー]** をクリックします。  
+1.  Microsoft SQL Server Management Studio の オブジェクト エクスプ ローラー**データベース**、展開、 **Contoso**データベースを展開し、展開**セキュリティ**します。 **[ユーザー]** を右クリックし、 **[新しいユーザー]** をクリックします。  
   
-2.  データベース ユーザー - 新規 ダイアログ ボックスの**ログイン名**、省略記号ボタンをクリックします。  
+2.  データベース ユーザー - 新規 ダイアログ ボックスでの**ログイン名**、省略記号をクリックします。  
   
-3.  [ログインの選択] ダイアログ ボックスで、**参照**です。  
+3.  ログインの選択] ダイアログ ボックスで、[**参照**します。  
   
-4.  オブジェクト ダイアログ ボックスの参照で、次のように選択します。 **BizTalk Application Users**、をクリックし、 **OK**です。  
+4.  [参照] ダイアログ ボックスのオブジェクトで選択**BizTalk Application Users**、順にクリックします**OK**します。  
   
-5.  [ログインの選択] ダイアログ ボックスで、 **OK**です。  
+5.  ログインの選択] ダイアログ ボックスで、[ **OK**します。  
   
-6.  データベース ユーザー - 新規 ダイアログ ボックスで、**データベース ロールのメンバーシップ**ペインで、 **db_datareader**と**db_datawriter**です。 **ユーザー名**、入力**BizTalk Application Users**です。 **[OK]** をクリックします。  
+6.  データベース ユーザー - 新規 ダイアログ ボックスで、**データベース ロールのメンバーシップ**ペインで、 **db_datareader**と**db_datawriter**します。 **ユーザー名**、入力**BizTalk Application Users**します。 **[OK]** をクリックします。  
   
-7.  手順 1. ~ 6. を繰り返します**BizTalk Isolated Host Users**を選択すると、 **db_datareader**と**db_datawriter**の**データベース ロールのメンバーシップ**、」と入力して**BizTalk Isolated Host Users**の**ユーザー名**です。  
+7.  手順 1. ~ 6. を繰り返します**BizTalk 分離ホスト ユーザー**選択**db_datareader**と**db_datawriter**の**データベース ロールのメンバーシップ**、入力と**BizTalk 分離ホスト ユーザー**の**ユーザー名**します。  
   
-8.  手順 1. ~ 6. を繰り返します**BizTalk Server 管理者**を選択すると、 **db_owner**の**データベース ロールのメンバーシップ**、」と入力して**BizTalk Server管理者**の**ユーザー名**です。  
+8.  手順 1. ~ 6. を繰り返します**BizTalk Server 管理者**選択**db_owner**の**データベース ロールのメンバーシップ**、入力と**BizTalk Server管理者**の**ユーザー名**します。  
   
 ## <a name="see-also"></a>参照  
- [生成して、証明書の有効化](../../adapters-and-accelerators/accelerator-rosettanet/generating-and-enabling-certificates.md)
+ [証明書の生成と有効化](../../adapters-and-accelerators/accelerator-rosettanet/generating-and-enabling-certificates.md)

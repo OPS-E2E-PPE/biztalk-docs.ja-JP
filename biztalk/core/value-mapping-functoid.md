@@ -1,5 +1,5 @@
 ---
-title: 値のマッピング Functoid |Microsoft ドキュメント
+title: 値のマッピング Functoid |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,22 +16,22 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 038d59827a62c9f4e83879ec7cf2e0b47fd738f4
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 7ca60ff3024eb1b4cadc42e42c65a0c44c82ef5d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25973784"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65292612"
 ---
 # <a name="value-mapping-functoid"></a>値のマッピング Functoid
-**値のマッピング**functoid は、最初のパラメーターが true の場合に、2 番目のパラメーターの値を返します。 この Functoid は、主にフィールドの属性をレコードの属性に変更する場合に使用します。 入力メッセージの一部を平坦化する複数のレコードを 1 つのレコードに変換することによって、使用、[値のマッピング (フラット化) Functoid](../core/value-mapping-flattening-functoid.md)です。  
+**値のマッピング**functoid は、最初のパラメーターが true の場合に 2 番目のパラメーターの値を返します。 Functoid の一般的な用途は、フィールドの属性をレコードの属性に変更するのにです。 入力メッセージの一部を統合すると、複数のレコードを 1 つのレコードに変換することを使用して、[値のマッピング (フラット化) Functoid](../core/value-mapping-flattening-functoid.md)します。  
   
  次の図は、map、**値のマッピング**functoid、レコードの属性にフィールドの属性を変更するために使用します。  
   
  ![](../core/media/valuemappingfunctoid.gif "valuemappingfunctoid")  
-値のマッピング Functoid を含むマップ  
+値のマッピング Functoid マップ  
   
- 次のコードは、名前のペアで、入力インスタンス メッセージを示し、値が割り当てられます**名前**と**値**属性。  
+ 次のコードは、名前のペアで、入力インスタンス メッセージし、に値が割り当てられている**名前**と**値**属性。  
   
 ```  
 <ns0:Root xmlns:ns0="http://ValueMapping.WeatherIn">  
@@ -46,7 +46,7 @@ ms.locfileid: "25973784"
 </ns0:Root>  
 ```  
   
- このメッセージに対して、前述のマップを適用して変換すると、レコードごとに値が対応する名前の属性に割り当てられます。  
+ 図に示したマップでは、値が別個のレコードに対応する名前を持つ属性に割り当てられているいずれかに、このメッセージを変換できます。  
   
 ```  
 <ns0:Root xmlns:ns0="http://ValueMapping.WeatherOut">  
@@ -57,15 +57,15 @@ ms.locfileid: "25973784"
 </ns0:Root>  
 ```  
   
- **等しい**functoid の値がテスト、**名前**属性。 最初の**等しい**の値のテストの functoid**名前**"windspeed"。 ときに、**名前**が"WindSpeed、"最初**等しい**functoid を返します**True**です。 、これにより、さらに、**値のマッピング**の値を設定する functoid、 **WindSpeed** 、出力インスタンス メッセージ内の属性です。  
+ **等しい**functoid の値のテスト、**名前**属性。 最初の**等しい**の値のテストの functoid**名前**"windspeed"。 ときに、**名前**"WindSpeed、"は、最初の**等しい**functoid を返します**True**します。 これにより、有効、**値のマッピング**functoid の値を設定する、 **WindSpeed**出力インスタンス メッセージ内の属性。  
   
-## <a name="suppressing-the-creation-of-empty-tags"></a>空のタグを作成しないようにする  
- 空のタグを作成しないようにするには、値のマッピング Functoid を使用して、タグを作成するかどうかを制御します。 値が True の場合は目的のフィールドが作成され、True でない場合は作成されません。 ループ シナリオでは論理 Functoid を使用し、論理 Functoid を目的のレコードまたはフィールドに接続します。 条件が False と評価された場合、タグは作成されません。 例については、次を参照してください。[条件付きループ](../core/conditional-looping.md)です。  
+## <a name="suppressing-the-creation-of-empty-tags"></a>空のタグの作成を抑制します。  
+ 空のタグを抑制するには、タグを作成するかどうか場合、コントロールに値のマッピング functoid を使用します。 値が評価される場合は true、先にフィールドが作成されます。それ以外の場合、目的のフィールドは作成されません。 ループでは、論理演算 functoid を使用し、送信先レコードまたはフィールドに接続します。 条件が false に評価される場合、タグは作成されません。 例については、次を参照してください。[条件付きループ](../core/conditional-looping.md)します。  
   
-## <a name="forcing-the-creation-of-empty-tags"></a>空のタグを強制的に作成する  
- 空のタグを作成するのには、目的のフィールドまたはリンクの Value プロパティに値を追加することができます、 **Concatenate** functoid を目的のフィールドです。  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]を選択すると、空のタグの生成を強制することは、"\<空\>"、目的のフィールドの値プロパティ内の値。 この場合、空の値のフィールドが作成されます。  
+## <a name="forcing-the-creation-of-empty-tags"></a>空のタグの作成を強制  
+ 作成される空のタグを強制的には、[destination] フィールドまたはリンクの Value プロパティに値を追加することができます、 **Concatenate** functoid を目的のフィールド。  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]を選択して空のタグの生成を強制することは、"\<空\>"目的のフィールドの値プロパティの値。 この場合、フィールド、空の値が作成されます。  
   
 ## <a name="see-also"></a>参照  
  [値のマッピング (フラット化) Functoid](../core/value-mapping-flattening-functoid.md)   
- [値のマッピング Functoid をマップに追加する方法](../core/how-to-add-value-mapping-functoids-to-a-map.md)   
+ [値のマッピングをマップに Functoid を追加する方法](../core/how-to-add-value-mapping-functoids-to-a-map.md)   
  [高度な Functoid](../core/advanced-functoids.md)

@@ -1,5 +1,5 @@
 ---
-title: ホストのパスワードを検証する側開始 SSO |Microsoft ドキュメント
+title: ホストのパスワードを検証側開始 SSO |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,17 +15,17 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 03a33eb83630831863f231ff9594e3082f0faa98
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6ac003083157c69be0fcabaeb37ff7064b76a6e9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22287858"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65279563"
 ---
-# <a name="validating-passwords-for-host-initiated-sso"></a>ホストのパスワードを検証する側開始 SSO
-ホスト側開始 SSO の関連アプリケーションを作成するときは、Windows 以外のユーザーのパスワードの検証が既定で有効になります。 このため、アプリケーションでリソースにアクセスするための Windows ユーザー トークンを取得するために SSO を呼び出すときは、アプリケーションで Windows 以外のユーザー アカウントとパスワードを指定する必要があります。 パスワードが SSO データベースに格納されている、その Windows 以外のユーザーのパスワードと一致しない場合は、アクセスが拒否されます。 関連アプリケーションのパスワードの検証機能は、必要に応じて無効にできます。 パスワードの検証機能は、ホスト側開始 SSO の関連アプリケーションの種類が単独であっても、ホスト グループであってもどちらにも適用されます。  
+# <a name="validating-passwords-for-host-initiated-sso"></a>ホストのパスワードを検証側開始 SSO
+ホスト側開始 SSO が作成される関連アプリケーションは、ときに Windows 以外のユーザーのパスワードの検証は既定で有効にします。 このため、アプリケーションがリソースにアクセスする Windows ユーザー トークンの取得に SSO を呼び出すと、Windows 以外のユーザー アカウントと非 Windows パスワードを提供する必要があります、します。 パスワードがその Windows 以外のユーザーの SSO データベースにパスワードが一致しない場合は、アクセスが拒否されました。 必要に応じて、関連アプリケーションのパスワードの検証機能を無効にできます。 パスワードの検証機能は、個人の両方に適用され、ホスト グループ タイプの関連アプリケーションのホスト側開始 SSO。  
   
- ホスト側開始 SSO 関連アプリケーションの種類が単独の場合の XML ファイルの例を以下に示します。  
+ XML ファイルの例の個々 の型のホスト側開始 SSO 関連アプリケーションは。  
   
 ```  
 <sso>  
@@ -42,9 +42,9 @@ ms.locfileid: "22287858"
   
 ```  
   
- ホスト側開始 SSO の単独アプリケーションの場合、上記の appUserAccount は、Windows ドメイン アカウント ユーザーの一覧を含むグループ アカウントです。一覧の Windows ドメイン アカウント ユーザーは、それぞれ対応する Windows 以外のアカウントに 1 対 1 でマッピングされます。  
+ 個々 のアプリケーションの場合ホスト側開始 SSO を上記の appUserAccount は、グループ アカウントの 1 対 1 マッピングが、対応する Windows 以外のアカウントである Windows ドメイン アカウントのユーザーの一覧を含むです。  
   
- ホスト側開始 SSO 関連アプリケーションの種類がホスト グループの場合の XML ファイルの例を以下に示します。  
+ XML ファイルの例の開始された SSO 関連アプリケーションのホスト グループ タイプのホストは。  
   
 ```  
 <sso>  
@@ -61,7 +61,7 @@ ms.locfileid: "22287858"
   
 ```  
   
- ホスト側開始 SSO のグループ アプリケーションでは、上記の appUserAccount を、個別のユーザー アカウントにする必要があります。 このアカウントは、Windows 以外のアカウントがすべてマップされるアカウントです。  
+ グループ アプリケーションのホスト側開始 SSO の、上記の appUserAccount は個々 のユーザー アカウントである必要があります。 Windows 以外のすべてのアカウントにマップされるこのアカウントになります。  
   
 ## <a name="see-also"></a>参照  
  [ホスト側開始 SSO](../core/host-initiated-sso.md)

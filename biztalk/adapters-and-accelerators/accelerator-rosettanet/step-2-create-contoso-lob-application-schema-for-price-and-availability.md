@@ -1,5 +1,5 @@
 ---
-title: '手順 2: Price and Availability プロジェクト、BizTalk エディターを使用して Contoso LOB アプリケーション スキーマの作成 |Microsoft Docs'
+title: 手順 2:Price and Availability プロジェクト、BizTalk エディターを使用して Contoso LOB アプリケーション スキーマの作成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,17 +14,17 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f899a6614ea5d5d28c555be1b39e72b5880fe3ae
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8ca16160005cb90e342c7c92c711081aa7a7fd16
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36999331"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65281621"
 ---
-# <a name="step-2-creating-the-contoso-lob-application-schemas-for-the-price-and-availability-project-using-biztalk-editor"></a>手順 2: Price and Availability プロジェクトを BizTalk エディターを使用して用の Contoso LOB アプリケーション スキーマの作成
-ここでは、特定の製品の価格やその製品が入手可能かどうかを Contoso ERP システムに照会する際に使用するスキーマを生成します。 このスキーマを生成するには、BizTalk Server 用 Microsoft® SQL アダプタを使用します。  
+# <a name="step-2-creating-the-contoso-lob-application-schemas-for-the-price-and-availability-project-using-biztalk-editor"></a>手順 2:Price and Availability プロジェクトを BizTalk エディターを使用して用の Contoso LOB アプリケーション スキーマの作成
+この手順では、価格と特定の製品の可用性のため、Contoso ERP システムのクエリを使用するスキーマを生成します。 このスキーマを生成するには、BizTalk Server 用 Microsoft® SQL アダプタを使用します。  
 
-### <a name="to-update-the-sql-stored-procedure-for-schema-generation"></a>スキーマを生成するために SQL ストアド プロシージャを更新するには  
+### <a name="to-update-the-sql-stored-procedure-for-schema-generation"></a>SQL を更新するには、ストアド プロシージャのスキーマの生成  
 
 1.  クリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**Microsoft SQL Server 2008 R2**、順にクリックします**SQL Server Management Studio**します。  
 
@@ -32,7 +32,7 @@ ms.locfileid: "36999331"
 
 3.  右クリックして**dbo します。SP_GetInventoryForProductID**、 をクリックし、**変更**します。  
 
-4.  クエリ ウィンドウで、"for xml auto" の直後にコンマとスペースを挿入し、その後に「xmldata」と入力します。 次のコード行があります。  
+4.  クエリ ウィンドウで、コンマ、スペース、および「xmldata」直後に"for xml auto"次を挿入します。 次のコード行があります。  
 
     ```  
     for xml auto, xmldata  
@@ -41,11 +41,11 @@ ms.locfileid: "36999331"
 5.  クリックして**Execute**ストアド プロシージャに変更を保存します。  
 
     > [!NOTE]
-    >  次の手順で使用するため、Microsoft SQL Server Management Studio は開いたままにしておきます。  
+    >  Microsoft SQL Server Management Studio は、次の手順を開いたままにしておきます。  
 
-### <a name="to-create-the-contoso-price-and-availability-schema"></a>ContosoPriceAndAvailability スキーマを作成するには  
+### <a name="to-create-the-contoso-price-and-availability-schema"></a>Contoso Price and Availability スキーマを作成するには  
 
-1. [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] で Contoso ソリューションを開きます。  
+1. Contoso ソリューションを開きます[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]します。  
 
 2. ソリューション エクスプ ローラーで右クリックし、 **contosopriceandavailability**プロジェクトをポイントして、**追加**、 をクリックし、**生成した項目の追加**します。  
 
@@ -55,7 +55,7 @@ ms.locfileid: "36999331"
 
 5. **データベース情報**] ページで [**設定**します。  
 
-6. データ リンク プロパティ ダイアログ ボックスでの**を選択するか、サーバー名を入力**ボックスに「 **localhost**します。 選択**使用して Windows NT 統合セキュリティ**します。 **サーバー上のデータベースを選択します。** を選択、 **Contoso**データベースの一覧からデータベース。 **[OK]** をクリックします。  
+6. [データ リンク プロパティ] ダイアログ ボックスで、**を選択するか、サーバー名を入力**ボックスに、入力**localhost**です。 選択**Windows NT 統合セキュリティ**です。 **サーバー上のデータベースを選択します。** を選択、 **Contoso**データベースの一覧からデータベース。 **[OK]** をクリックします。  
 
 7. **データベース情報**] ページで [**次**します。  
 
@@ -87,4 +87,4 @@ ms.locfileid: "36999331"
 16. Microsoft SQL Server Management Studio では、削除、`xmldata`述語とコンマから、`SP_GetInventoryForProductID`クリックして、ストアド プロシージャを前の手順で追加した**Execute**。  
 
 ## <a name="see-also"></a>参照  
- [手順 3: BizTalk マッパーを使用した Price and Availability プロジェクト用の Contoso LOB アプリケーション マップの作成](../../adapters-and-accelerators/accelerator-rosettanet/step-3-create-contoso-lob-application-map-for-price-and-availability-in-mapper.md)
+ [ステップ 3:BizTalk マッパーを使用した Price and Availability プロジェクト用の Contoso LOB アプリケーション マップの作成](../../adapters-and-accelerators/accelerator-rosettanet/step-3-create-contoso-lob-application-map-for-price-and-availability-in-mapper.md)

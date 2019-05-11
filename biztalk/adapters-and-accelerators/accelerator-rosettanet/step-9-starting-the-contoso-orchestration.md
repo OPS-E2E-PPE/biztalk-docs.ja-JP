@@ -1,5 +1,5 @@
 ---
-title: '手順 9: Contoso オーケストレーションの開始 |Microsoft Docs'
+title: 手順 9:Contoso オーケストレーションの開始 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,15 +14,15 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 994355b67c19a7411c62f8858033e44cb8bdf3f4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6e8693fab7f39a0371514ca56c9ad08dc539696f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36990828"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65280623"
 ---
-# <a name="step-9-starting-the-contoso-orchestration"></a>手順 9: Contoso オーケストレーションの開始
-ここでは、物理的な送信元と送信先の場所を定義して、ポートの構成プロセスを実行します。 作成した論理ポートを物理ポートをバインドする[手順 7: ポートの作成と構成](../../adapters-and-accelerators/accelerator-rosettanet/step-7-creating-and-configuring-ports.md)します。 オーケストレーションで実行される物理環境と、オーケストレーションでデザインしたビジネス プロセスを関連付けるにサービスを参加させます。 最後に、Fabrikam とのビジネス トランザクションに参加できるように、オーケストレーションを開始します。  
+# <a name="step-9-starting-the-contoso-orchestration"></a>手順 9:Contoso オーケストレーションの開始
+この手順では、物理のソースと変換先の場所を定義することでポートの構成プロセスを完了します。 作成した論理ポートを物理ポートをバインドする[手順 7。ポートの構成の作成と](../../adapters-and-accelerators/accelerator-rosettanet/step-7-creating-and-configuring-ports.md)します。 オーケストレーションで実行される物理環境と、オーケストレーションでデザインしたビジネス プロセスを関連付けるにサービスを参加させます。 最後に、Fabrikam とのビジネス トランザクションに参加できるように、オーケストレーションを開始します。  
   
 ### <a name="to-bind-the-orchestration-ports"></a>オーケストレーション ポートをバインドするには  
   
@@ -48,7 +48,7 @@ ms.locfileid: "36990828"
   
 3. いることを確認の状態、 **BizTalkServerApplication**サービスは**を実行している**します。  
   
-### <a name="to-enlist-and-start-the-orchestration"></a>オーケストレーションを登録して開始するには  
+### <a name="to-enlist-and-start-the-orchestration"></a>参加させ、オーケストレーションを開始するには  
   
 1.  BizTalk 管理コンソールの左側のウィンドウで展開**アプリケーション**、展開**BizTalk アプリケーション 1**、 をクリックし、**オーケストレーション**します。  
   

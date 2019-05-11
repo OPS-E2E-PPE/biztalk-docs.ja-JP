@@ -13,12 +13,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 59bdabcba48d00bdf1d6c884ae1f2b469d858626
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 75345610fe1585fa5af14f7202d7f87613629198
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36992595"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373469"
 ---
 # <a name="examples-for-exec-statement"></a>EXEC ステートメントの例
 このトピックでは、さまざまな EXEC ステートメントの構文の例を示します。

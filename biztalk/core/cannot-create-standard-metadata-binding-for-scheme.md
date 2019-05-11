@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4fd4a91535c7872bb5be7328755808eb91758db6
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d45e8e983e626db3b48c4875573fd7e3a92d50e1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36989315"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65357650"
 ---
 # <a name="cannot-create-standard-metadata-binding-for-scheme"></a>スキームの標準メタデータ バインドを作成できません
 ## <a name="details"></a>詳細  
@@ -30,14 +30,14 @@ ms.locfileid: "36989315"
 |  イベント ソース   |                                                         0                                                          |
 |    コンポーネント    |                                                         0                                                          |
 |  シンボル名  |                                                         0                                                          |
-|  メッセージ テキスト   | スキームの標準メタデータ バインドを作成することはできません"{0}"。 サポートされているスキームは、http、https、net.pipe、および net.tcp です。 |
+|  メッセージ テキスト   | スキームの標準メタデータ バインドを作成することはできません"{0}"。 サポートされているスキームは http、https、net.pipe、および net.tcp です。 |
   
 ## <a name="explanation"></a>説明  
- このエラーは、使用するメタデータのサービスは、サポートされたスキームではないことを示します。  
+ このエラーは、メタデータが使用しようとするサービスがサポートされているスキームを示します。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- 有効なスキームでメタデータを公開し、新しいメタデータの場所に対して、ウィザードをもう一度実行します。  
+ 有効なスキームでメタデータを公開し、新しいメタデータの場所に対して、もう一度ウィザードを実行します。  
   
- アダプターおよびバインドの詳細については、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ヘルプで次の情報を参照してください。  
+ アダプターとバインドする方法の詳細についてで次の情報を参照してください、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプします。  
   
 -   [WCF アダプター](../core/wcf-adapters.md)

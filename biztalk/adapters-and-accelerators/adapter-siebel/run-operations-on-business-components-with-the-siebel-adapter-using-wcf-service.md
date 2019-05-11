@@ -1,5 +1,5 @@
 ---
-title: WCF サービス モデルを使用して、Siebel アダプターとビジネス コンポーネントでの操作を実行 |Microsoft ドキュメント
+title: WCF サービス モデルを使用して Siebel アダプターでのビジネス コンポーネントに対する操作の実行 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,20 +17,20 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 99ac40efda9ed8c27fb5ac5fedfbe782b9a4f645
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 111d8397b2784fdbb01f1cdf7dbf05036bc50bce
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22222226"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65371048"
 ---
-# <a name="run-operations-on-business-components-with-the-siebel-adapter-using-the-wcf-service-model"></a>WCF サービス モデルを使用して、Siebel アダプターとビジネス コンポーネントでの操作を実行します。
-Siebel ビジネス コンポーネントを対象とする WCF クライアントを作成することができます。 Siebel システムに挿入、更新、クエリ、削除、関連付ける、関連付けを解除、およびビジネス コンポーネントに対して子レコードのクエリ操作を実行し、WCF クライアントを使用できます。 [ビジネス オブジェクト] ノードに表示された Siebel ビジネス オブジェクト、[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]です。 各ビジネス オブジェクトを作成するビジネス コンポーネントは、そのオブジェクトに対応するノードの下に表示されます。 」の手順を行うことができる[Siebel アダプターと WCF サービス モデルの概要](../../adapters-and-accelerators/adapter-siebel/overview-of-the-wcf-service-model-with-the-siebel-adapter.md)を特定の操作を対象とするビジネス コンポーネント用の WCF クライアントを生成して、ビジネスでこれらの操作を呼び出すクライアントを使用するにはコンポーネント。  
+# <a name="run-operations-on-business-components-with-the-siebel-adapter-using-the-wcf-service-model"></a>WCF サービス モデルを使用して Siebel アダプターでのビジネス コンポーネントに対する操作を実行します。
+Siebel ビジネス コンポーネントを対象とする WCF クライアントを作成することができます。 Siebel システムに対して挿入、更新、クエリ、削除、関連付け、関連付けを解除、およびビジネス コンポーネントに子レコードのクエリ操作を実行するのに、WCF クライアントを使用できます。 [ビジネス オブジェクト] ノードに表示される Siebel ビジネス オブジェクト、[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]します。 各ビジネス オブジェクトを構成するビジネス コンポーネントは、そのオブジェクトに対応するノードの下に表示されます。 」の手順を利用できる[Siebel アダプターで WCF サービス モデルの概要](../../adapters-and-accelerators/adapter-siebel/overview-of-the-wcf-service-model-with-the-siebel-adapter.md)を特定の操作を対象とするビジネス コンポーネント用の WCF クライアントを生成し、ビジネスでこれらの操作を呼び出すクライアントを使用するにはコンポーネント。  
   
 > [!NOTE]
->  このトピックでは、ビジネス コンポーネントの基本操作 (挿入、更新、クエリ、削除) の実行に関する情報を提供します。 関連付ける、関連付けを解除、および子レコードのクエリ操作の実行に関する詳細については、次を参照してください[WCF サービス モデルを使用して MVG フィールドのビジネス コンポーネントでの操作を実行。](../../adapters-and-accelerators/adapter-siebel/work-with-mvp-fields-using-the-siebel-adapter-and-the-wcf-service-model.md)  
+>  このトピックでは、ビジネス コンポーネントに対する基本操作 (挿入、更新、クエリ、削除) の実行に関する情報を提供します。 関連付けや関連付け解除、子レコードのクエリ操作の実行の詳細については、次を参照してください[WCF サービス モデルを使用して MVG フィールドを持つビジネス コンポーネントに対する操作を実行。](../../adapters-and-accelerators/adapter-siebel/work-with-mvp-fields-using-the-siebel-adapter-and-the-wcf-service-model.md)  
   
- 次のコードでは、WCF クライアントを使用して、アカウントのビジネス オブジェクトのビジネス コンポーネントのアカウント レコードに対して Insert、Update、および Delete の操作を実行します。 各操作の間でクエリ操作は結果を確認する実行されます。 によって生成される構成ファイルからこの例では、WCF クライアントが初期化されて、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]です。 生成された構成ファイルの例は、次を参照してください。 [Siebel システムの WCF クライアントを構成する](../../adapters-and-accelerators/adapter-siebel/configure-a-wcf-client-for-a-siebel-system.md)です。  
+ 次のコードでは、WCF クライアントを使用して、アカウントのビジネス オブジェクトのアカウントのビジネス コンポーネントで、レコードに対する Insert、Update、および Delete の操作を実行します。 各操作の間でクエリ操作を実行する結果を確認します。 この例では、WCF クライアントがによって生成される構成ファイルから初期化される、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]します。 生成された構成ファイルの例は、次を参照してください。 [Siebel システムの WCF クライアントを構成する](../../adapters-and-accelerators/adapter-siebel/configure-a-wcf-client-for-a-siebel-system.md)します。  
   
 ```  
   

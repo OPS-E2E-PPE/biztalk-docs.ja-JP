@@ -15,12 +15,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4b0ff37ff260ca11e594a208c125f229e2961c01
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: cad46899eb05520303116c08547a2b0e581608d8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36967163"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65286435"
 ---
 # <a name="using-dynamic-data-validation"></a>動的データ検証を使用します。
 動的データの検証の重要な部分は、メッセージの内容に対して、メッセージの形式とメッセージの内容の検証を含む動的データを検証しています。 MicrosoftBizTalk Server は、XSD ファイルでは、ドキュメント スキーマを定義し、メッセージ形式を検証します。 ビジネス ルールは、メッセージの内容を定義する[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]ビジネス ルール エンジン ポリシーを検証します。 コンテンツの検証には、メッセージ インスタンス内のデータが、相対的な頻度で変わる可能性のあるデータと一致することの確認を含めることができます。 Microsoft[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]のコードを再コンパイルやサービスをシャット ダウンすることがなく、運用環境では、このデータを更新できるように、動的な方法でこの種類の検証を実装します。  

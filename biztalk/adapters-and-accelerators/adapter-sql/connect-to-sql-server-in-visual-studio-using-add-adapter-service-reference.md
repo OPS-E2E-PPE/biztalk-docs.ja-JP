@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9998acf89bd036230dceb3a06f950497677490b9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: cef87522e76a0997166f4c9415b48805361d0ba0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37018264"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65369931"
 ---
 # <a name="connect-to-sql-server-in-visual-studio-using-add-adapter-service-reference-plug-in"></a>SQL に接続する Visual Studio を使用してサーバー プラグインのアダプター サービス参照の追加
 使用して SQL Server に接続するため、 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] .NET プログラミング ソリューションでは、使用する必要があります、[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]します。 このトピックでは、手順を使用する方法には、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]します。  
@@ -44,7 +44,7 @@ ms.locfileid: "37018264"
    |--------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
    |   **なし**   |                                                                                                                                         Windows 認証を使用して、SQL Server に接続します。                                                                                                                                         |
    | **Windows**  |                                                                                                                                         Windows 認証を使用して、SQL Server に接続します。                                                                                                                                         |
-   | **ユーザー名** | ユーザー名とパスワードを指定し、SQL Server データベースで定義されているユーザーの資格情報を指定して SQL Server に接続します。 ユーザー名とパスワードでは大文字と小文字が区別されることに注意してください。 **注:** のままにする場合、**ユーザー名**と**パスワード**フィールドを空白、アダプターが Windows 認証を使用して SQL Server に接続します。 |
+   | **ユーザー名** | ユーザー名とパスワードを指定し、SQL Server データベースで定義されているユーザーの資格情報を指定して SQL Server に接続します。 ユーザー名とパスワードでは大文字と小文字が区別されることに注意してください。 **注:** ままにする場合、**ユーザー名**と**パスワード**フィールドを空白、アダプターが Windows 認証を使用して SQL Server に接続します。 |
 
 
 4. をクリックして、 **URI プロパティ**タブをクリックし、接続パラメーターの値を指定します。 接続 URI の詳細についてはの[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]を参照してください[SQL Server 接続 URI の作成](../../adapters-and-accelerators/adapter-sql/create-the-sql-server-connection-uri.md)です。  
@@ -65,7 +65,7 @@ ms.locfileid: "37018264"
 
     ![SQL Server に接続](../../adapters-and-accelerators/adapter-sql/media/661adb8a-5050-44d5-8db8-fdf0fe530b40.gif "661adb8a-5050-44d5-8db8-fdf0fe530b40")  
 
-    [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] SQL Server で実行できるさまざまな操作を含む別のノードが表示されます。 たとえば、**プロシージャ**ノードに接続されているデータベースに使用できるすべてのプロシージャが含まれています。 同様に、**テーブル**ノードに接続して、データベースとテーブルで実行できる操作のすべてのテーブルが含まれています。 これらのノードの詳細については、[メタデータ ノード Id](../../adapters-and-accelerators/adapter-sql/metadata-node-ids2.md)を参照してください。  
+    [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] SQL Server で実行できるさまざまな操作を含む別のノードが表示されます。 たとえば、**プロシージャ**ノードに接続されているデータベースに使用できるすべてのプロシージャが含まれています。 同様に、**テーブル**ノードに接続して、データベースとテーブルで実行できる操作のすべてのテーブルが含まれています。 これらのノードの詳細については、次を参照してください。[メタデータ ノード Id](../../adapters-and-accelerators/adapter-sql/metadata-node-ids2.md)します。  
 
 ## <a name="see-also"></a>参照  
  [Consume Adapter Service アドインを使用して Visual Studio での SQL Server に接続します。](../../adapters-and-accelerators/adapter-sql/connect-to-sql-server-in-visual-studio-using-the-consume-adapter-service-add-in.md)

@@ -1,5 +1,5 @@
 ---
-title: '手順 2: v2.3.1 の一般的なスキーマの追加 |Microsoft Docs'
+title: 手順 2:V2.3.1 の一般的なスキーマの追加 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,17 +12,17 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 36b07419b50d02d1f810dffbd7417533e844a3ea
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 772b38911ee2f6896588909cb4ae9a6f33cb42b5
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36994163"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65288830"
 ---
-# <a name="step-2-add-common-schemas-for-v231"></a>手順 2: v2.3.1 の一般的なスキーマを追加します。
+# <a name="step-2-add-common-schemas-for-v231"></a>手順 2:V2.3.1 の一般的なスキーマを追加します。
 この手順では、BTAHL7231Common プロジェクト テンプレートに基づいて新しいプロジェクトを作成します。 このテンプレートが含まれています (データ型、セグメント、およびテーブルの値) の 3 つの一般的なスキーマには Microsoft BizTalk Accelerator には用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) v2.3.1 メッセージ インスタンスの検証に使用します。 [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] 受信バッチの個々 のメッセージに使用するスキーマを含む、HL7 v2.3.1 スキーマと共にこれらの一般的なスキーマを使用して (ADT ^ A03)。  
   
- ステップの最後に、アセンブリに厳密なキーを割り当てるし、デプロイします。 2 番目の強力なキーを作成する必要はありません。作成した厳密なキーを使用して[手順 1: ヘッダーの追加と確認スキーマ](../../adapters-and-accelerators/accelerator-hl7/step-1-add-header-and-acknowledgment-schemas.md)します。  
+ ステップの最後に、アセンブリに厳密なキーを割り当てるし、デプロイします。 2 番目の強力なキーを作成する必要はありません。作成した厳密なキーを使用して[手順 1。ヘッダーと確認スキーマを追加](../../adapters-and-accelerators/accelerator-hl7/step-1-add-header-and-acknowledgment-schemas.md)します。  
   
 ### <a name="to-add-v231-common-schemas-and-deploy-the-assembly"></a>V2.3.1 の一般的なスキーマを追加し、アセンブリを展開するには  
   
@@ -56,4 +56,4 @@ ms.locfileid: "36994163"
     > [!NOTE]
     >  適切なメッセージが表示されない場合は、使用[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]スキーマのトラブルシューティングを行う。  
   
-    続行する[手順 3: トリガー イベント (メッセージ) スキーマを追加](../../adapters-and-accelerators/accelerator-hl7/step-3-add-a-trigger-event-message-schema.md)します。
+    続行する[手順 3。トリガー イベント (メッセージ) スキーマを追加](../../adapters-and-accelerators/accelerator-hl7/step-3-add-a-trigger-event-message-schema.md)します。

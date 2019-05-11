@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e48e475d3f8daf36cb6860393a4c4ff031a10e5a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a7969280d7fa794820d2e99c164ee00e2ebbecc4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37003659"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65291437"
 ---
 # <a name="optimizing-filegroups-for-the-databases"></a>データベースのファイルグループの最適化
 ファイルは、入出力 (I/O) の競合が制限要因、または運用環境の BizTalk Server 環境で、ボトルネックが頻繁にです。 BizTalk Server が非常にデータベースの処理を要するアプリケーションと、さらに、BizTalk Server によって使用される SQL Server データベースは、非常にファイル I/O を集中的に使用します。  
@@ -29,11 +29,11 @@ ms.locfileid: "37003659"
   
 - RAID (Redundant Array of Independent Disks) デバイスなど、使用するディスク ハードウェアの種類。 
   
-- ファイルおよびファイル グループを使用してディスク上のデータを分配する方法。 SQL Server でのファイルおよびファイル グループの使用に関する詳細については、[Database Files and Filegroups](https://docs.microsoft.com/sql/relational-databases/databases/database-files-and-filegroups)を参照してください。
+- ファイルおよびファイル グループを使用してディスク上のデータを分配する方法。 SQL Server でのファイルおよびファイル グループの使用に関する詳細については、次を参照してください。 [Database Files and Filegroups](https://docs.microsoft.com/sql/relational-databases/databases/database-files-and-filegroups)します。
   
-- データにアクセスする場合は、パフォーマンスを向上させるための最適なインデックスの設計を実装します。 インデックスのデザインの詳細については、[インデックスの設計](https://docs.microsoft.com/sql/relational-databases/sql-server-index-design-guide)を参照してください。
+- データにアクセスする場合は、パフォーマンスを向上させるための最適なインデックスの設計を実装します。 インデックスのデザインの詳細については、次を参照してください。[インデックスの設計](https://docs.microsoft.com/sql/relational-databases/sql-server-index-design-guide)します。
   
-- 最適なパフォーマンスを SQL Server の構成パラメーターを設定する方法。 SQL Server の最適な構成パラメーターの設定の詳細については、[サーバー構成オプションの](https://docs.microsoft.com/sql/database-engine/configure-windows/server-configuration-options-sql-server)を参照してください。 
+- 最適なパフォーマンスを SQL Server の構成パラメーターを設定する方法。 SQL Server の最適な構成パラメーターの設定の詳細については、次を参照してください。[サーバー構成オプションの](https://docs.microsoft.com/sql/database-engine/configure-windows/server-configuration-options-sql-server)します。 
   
   BizTalk Server の主な設計目標の 1 つは、メッセージがあることを確認する**決して**失われます。 メッセージの損失の可能性を軽減するためには、メッセージが処理されるメッセージをメッセージ ボックス データベースに書き込まれます頻繁に。 オーケストレーションによって処理されるは、メッセージ、メッセージがオーケストレーション内のすべての永続化ポイントにあるメッセージ ボックス データベースに書き込まれます。 これらの永続性ポイントには、メッセージ ボックスに、物理ディスクへのメッセージと関連する状態の書き込みが発生します。 高いスループットをでは、この永続化は、かなりのディスクの競合が生じるし、ボトルネックになる可能性があることができます。  
   

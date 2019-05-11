@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2a21cc6339c82ab5465f117c8ef51d539add0055
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 363597ca798abcaa4a75a7c1c1df8568b439001d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37016261"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65278987"
 ---
 # <a name="settings-that-can-be-modified-to-improve-network-performance"></a>ネットワーク パフォーマンスを向上させる変更可能な設定
 このトピックでは、ネットワーク パフォーマンスに影響する推奨値の説明を提供します。  
@@ -28,13 +28,13 @@ ms.locfileid: "37016261"
 ## <a name="adjust-the-maxuserport-and-tcptimedwaitdelay-settings"></a>MaxUserPort と TcpTimedWaitDelay 設定を調整します。  
  **MaxUserPort**値アプリケーションは、システムから利用可能なユーザーの任意のポートを要求するときに使用される最大ポート数を制御します。 通常、有効期間が短いポートは、1025 65535 までからの範囲で割り当てられます。 ポートの範囲は、本当に範囲の開始点と、エンドポイントではようになりました。 新しい既定の開始ポートは 49152、および既定の終了ポートは 65535 です。 この範囲は、アプリケーションとサービスによって使用される既知のポートだけでなく、します。 各サーバーでは、サーバーで使用するポートの範囲を変更できます。 次のように、netsh コマンドを使用して、この範囲を調整します。  
   
- **netsh int \<ipv4&#124;ipv6\>動的設定\<tcp&#124;udp\>開始番号の数を = = 範囲**  
+ **netsh int \<ipv4&#124;ipv6\> set dynamicport \<tcp&#124;udp\> start=number num=range**  
   
- このコマンドは、tcp 動的ポートの範囲を設定します。 開始ポート アドレスが**数**、ポートの合計数は**範囲**します。 サンプル コマンドを次に示します: 次の netsh コマンドを使用して動的ポートの範囲を表示することができます。  
+ このコマンドは、tcp 動的ポートの範囲を設定します。 開始ポート アドレスが**数**、ポートの合計数は**範囲**します。 サンプル コマンドは、次のように。動的ポートの範囲を表示するには、次の netsh コマンドを使用します。  
   
 - netsh int ipv4 では、動的 tcp を表示します。 Tcp v4 の最大許容値の範囲を向上させるのには、次のコマンドを使用します。  
   
-   **netsh int ipv4 設定動的 tcp スタート 1025 num = 64511 を =**  
+   **netsh int ipv4 set dynamicport tcp start=1025 num=64511**  
   
 - netsh int ipv4 動的 udp を表示します。  
   

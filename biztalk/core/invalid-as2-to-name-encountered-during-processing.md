@@ -12,14 +12,14 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 32ba8039d57bdc88f2aeed8e2654c5dc738f3d69
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: cf17c8221686562ec6cc74578d646bb832d4ea22
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37002675"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65330916"
 ---
-# <a name="invalid-as2-to-name-encountered-during-processing"></a>処理中に無効な AS2-To 名を検出しました
+# <a name="invalid-as2-to-name-encountered-during-processing"></a>無効な AS2 の処理中に検出名
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                        |
@@ -30,10 +30,10 @@ ms.locfileid: "37002675"
 |  イベント ソース   | [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI |
 |    コンポーネント    |                                       AS2 エンジン                                       |
 |  シンボル名  |                            InvalidAS2ToNameEncounteredError                            |
-|  メッセージ テキスト   |             処理中に無効な AS2-To 名を検出しました。  値: {0}             |
+|  メッセージ テキスト   |             無効な AS2 の処理中に発生する名前にします。  値: {0}             |
   
 ## <a name="explanation"></a>説明  
- このエラー/警告/情報イベントは、AS2-To ヘッダーの値が、AS2 RFC 4130 の仕様に準拠していなかったため、受信パイプラインで受信インターチェンジを処理できなかったか、または送信パイプラインで送信インターチェンジを処理できなかったことを示します。  
+ このエラー/警告/情報イベントまたはを示します、受信パイプラインで受信インターチェンジを処理できなかったために、送信パイプラインは、送信インターチェンジを処理できませんでした、AS2 の値のヘッダーに準拠しないと、AS2 RFC 4130 の仕様。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- このエラーを解決するには、受信メッセージまたは送信メッセージの AS2-To ヘッダーが、AS2 RFC 4130 のセクション 6.2 の仕様に準拠していることを確認します。
+ このエラーを解決することを確認、AS2 の受信または送信メッセージのメッセージ ヘッダーには、AS2 RFC 4130 のセクション 6.2 の仕様に準拠しています。

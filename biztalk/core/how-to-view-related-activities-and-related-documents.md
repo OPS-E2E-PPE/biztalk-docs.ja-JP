@@ -1,5 +1,5 @@
 ---
-title: 関連アクティビティおよび関連ドキュメントを表示する方法 |Microsoft ドキュメント
+title: 関連アクティビティおよび関連ドキュメントを表示する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,33 +16,33 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d23915fba0f5cd95e5b21e0c58e950e45c12c677
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8e65009f122a669f308210f32ea2e10c72e381a3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22256538"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65333037"
 ---
 # <a name="how-to-view-related-activities-and-related-documents"></a>関連アクティビティおよび関連ドキュメントを表示する方法
-関連アクティビティおよび関連ドキュメントは、BAM Web ポータルの [Business Activity Search Results] ページで確認できます。 関連アクティビティ間を移動することができます。たとえば、特定の発注を検索した場合、その発注に関連する複数の出荷を参照できます。 また、関連ドキュメントを確認することもできます。たとえば、上記の発注に関連する販売注文を参照できます。  
+BAM Web ポータルでは、関連アクティビティおよび Business Activity Search Results ページでドキュメントを表示できます。 別に 1 つの関連するアクティビティから移動することができます、たとえば、特定の発注書を検索する場合に進めるよう、PO に複数の出荷。 関連のドキュメントを確認することもできます。 たとえば、上記の発注に進めるよう、関連する販売注文。  
   
- アクティビティを検索する手順については、次を参照してください[アクティビティを検索する方法。](../core/how-to-search-for-activities.md)  
+ アクティビティを検索する手順については、次を参照してください[のアクティビティを検索する方法。](../core/how-to-search-for-activities.md)  
   
-### <a name="to-view-related-activities"></a>関連アクティビティを参照するには  
+### <a name="to-view-related-activities"></a>関連アクティビティを表示するには  
   
-1.  BAM Web ポータルで、特定のアクティビティを検索します。  
+1.  BAM Web ポータルでは、特定のアクティビティを検索します。  
   
-2.  アクティビティの状態 ページで、プラス記号をクリックします (+) アイコンで、**関連アクティビティ** コンテンツ フレームの領域。  
+2.  アクティビティの状態 ページで、プラス記号をクリックします (+) アイコン、**関連アクティビティ** コンテンツ フレームの領域。  
   
      関連アクティビティの一覧が表示されます。  
   
-3.  一覧で、参照する関連アクティビティをクリックします。  
+3.  一覧で、関連するアクティビティをクリックします。  
   
-### <a name="to-view-related-documents"></a>関連ドキュメントを参照するには  
+### <a name="to-view-related-documents"></a>関連ドキュメントを表示するには  
   
-1.  BAM Web ポータルで、特定のアクティビティを検索.  
+1.  BAM Web ポータルでは、特定のアクティビティの検索.  
   
-2.  アクティビティの状態 ページで、プラス記号をクリックします (+) アイコンで、**関連ドキュメント** コンテンツ フレームの領域。  
+2.  アクティビティの状態 ページで、プラス記号をクリックします (+) アイコン、**関連ドキュメント** コンテンツ フレームの領域。  
   
      関連ドキュメントの一覧が表示されます。  
   

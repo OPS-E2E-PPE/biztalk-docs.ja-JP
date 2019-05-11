@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10741 |Microsoft Docs'
+title: シングル サインオン:イベント 10741 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1901ad4c58f3056b74f50fead72637bc9bb8b62e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2150f33b90137d5f5e1258a829901426a45d7856
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37006835"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65291734"
 ---
-# <a name="single-sign-on-event-10741"></a>シングル サインオン: イベント 10741
+# <a name="single-sign-on-event-10741"></a>シングル サインオン:イベント 10741
 ## <a name="details"></a>詳細  
 
 |                 |                                                                                           |
@@ -28,18 +28,18 @@ ms.locfileid: "37006835"
 | 製品バージョン |                [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                 |
 |    イベント ID     |                                           10741                                           |
 |  イベント ソース   |                                          ENTSSO                                           |
-|    コンポーネント    |                                            N\A                                            |
+|    コンポーネント    |                                            該当なし                                            |
 |  シンボル名  |                                SSO_WARN_SAVING_REPLAY_FILE                                |
-|  メッセージ テキスト   | 再生ファイルまたは進行状況ファイルを保存しています。%r<br /><br /> 保存したファイル: % 1 %r<br /><br /> エラー コード: %2 |
+|  メッセージ テキスト   | 再生または進行状況の file.%r を保存しています<br /><br /> 保存したファイル: % 1 %r<br /><br /> エラー コード: %2 |
 
 ## <a name="explanation"></a>説明  
- この警告イベントは、SSO が再生ファイルまたは進行状況ファイルを保存していることを示します。  
+ この警告イベントは、SSO が再生または進行ファイルを保存することを示します。  
 
- ENTSSO サーバーから SSO データベースに接続できない場合、パスワード同期で再生ファイルが使用されます。 進行ファイルでは、SSO データベースとの接続が再度失われた場合に SSO で再生ファイルをどこまで読み取ることができるかを示します。  
+ 再生ファイルは、ENTSSO サーバーが SSO データベースに接続できない場合、パスワード同期で使用されます。 進行状況ファイルがどこまで方法を示します SSO が SSO データベースと再生ファイルのケースで連絡先が再度失われたを読めるようにします。  
 
 ## <a name="user-action"></a>ユーザーの操作  
 
-- ユーザーの操作は必要ありません。  
+- ユーザー操作は必要ありません。  
 
   詳細については、次のリソースを参照してください。  
 

@@ -15,15 +15,15 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ebf4afafeabeae8fa9dec0683bd344c40ce23da8
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 48097f4803aba02c19abbd0a1a48c7f9103545c4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36990003"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65357668"
 ---
 # <a name="business-rules-hello-world1-biztalk-server-sample"></a>Business Rules こんにちは World1 (BizTalk Server サンプル)
-Business Rules Hello World1 サンプルでは、BizTalk ルール セットを作成して、そのルール セットをファイル (SampleRuleSet.xml) に保存し、読み込んでから、サンプルのファクト セットに基づいて実行する方法を示します。 サンプルのルール セットには、ルール定義の条件として XML 要素を含む単一のルール、および .NET ベースのオブジェクト (プロパティとメンバ) が含まれます。  
+Business Rules こんにちは World1 サンプルでは、BizTalk ルール セットを作成、ファイル (SampleRuleSet.xml) に保存、読み込み、およびサンプルのファクト セットに基づいて実行する方法を示します。 サンプルのルール セットが XML 要素を含む単純なルールを含むとします。NET ベースのオブジェクト (プロパティとメンバ) ルールの定義の条件として。  
   
 ## <a name="what-this-sample-does"></a>このサンプルの処理  
  このサンプルでは、次の一連の手順を実行する実行可能ファイルを作成します。  
@@ -34,13 +34,13 @@ Business Rules Hello World1 サンプルでは、BizTalk ルール セットを�
   
 3.  メソッドを呼び出して**LoadFromFile**を読み込み、ファイルからルール セットを示すためにします。  
   
-4.  ルール セットの実行対象のサンプル ファクトを作成します。  
+4.  構成要素のサンプル ファクトに対してルール セットを実行します。  
   
-5.  サンプル ファクトに対してルール セットを実行し、画面出力を作成します。  
+5.  画面出力を生成する、サンプル ファクトに対してルール セットを実行します。  
   
-6.  一時停止し、ルール セット ファイル SampleRuleStore.xml を確認できるようにします。  
+6.  一時停止し、ファイル SampleRuleStore.xml を設定をルールを確認します。  
   
-7.  後でこのサンプルを実行するための準備として、ルール セット ファイルを削除して、クリーンアップします。  
+7.  サンプルの後続の実行の準備のルール セット ファイルを削除してクリーンアップします。  
   
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
  \<*パスのサンプル*\>\Business Rules\Business こんにちは World1\ のルール  
@@ -49,17 +49,17 @@ Business Rules Hello World1 サンプルでは、BizTalk ルール セットを�
   
 |ファイル|説明|  
 |---------------|-----------------|  
-|App.ico、AssemblyInfo.cs、BusinessRulesHelloWorld1.csproj、および BusinessRulesHelloWorld1.sln|このサンプルで、ルール セットの作成、保存、読み込み、実行を行う部分で使用するプロジェクト ファイル、ソリューション ファイル、その他の関連ファイルです。|  
-|HelloWorld1.cs|ルール セットの作成、ファイルへのルール セットの保存、およびファイルからルール セットを読み込む方法を示すメソッドを含む Visual C# ファイルです。 これらのメソッドを呼び出し、作成したルール セットを実行する、前後のコードも含まれます。|  
+|App.ico, AssemblyInfo.cs, BusinessRulesHelloWorld1.csproj, BusinessRulesHelloWorld1.sln|プロジェクト、ソリューション、および他の関連ファイルを作成、保存、このサンプルの一部が読み込まれ、ルール セットを実行します。|  
+|HelloWorld1.cs|VisualC#ファイルからルール セットを作成する、規則セットをファイルに保存、およびルールの読み込みを示すためにメソッドを含むファイルを設定します。 これらのメソッドを呼び出すし、作成したルール セットを実行する前後のコードも含まれています。|  
 |Cleanup.bat|アセンブリを展開解除し、グローバル アセンブリ キャッシュ (GAC) から削除するために使用されます。 送信ポートと受信ポートが削除されます。 必要に応じて、Microsoft インターネット インフォメーション サービス (IIS) の仮想ディレクトリが削除されます。|  
 |SampleDocumentInstance.xml|ファイル SampleSchema.xsd で定義されているスキーマに準拠したサンプル入力ファイルです。|  
-|SampleSchema.xsd|簡潔なスキーマを定義したスキーマ ファイルで、Visual C# ファイル HelloWorld1.cs で作成されたルール セットから参照される要素が含まれます。|  
+|SampleSchema.xsd|セットは、ビジュアルの作成ルールによって参照される要素を単純なスキーマを定義したスキーマ ファイルC#ファイル HelloWorld1.cs します。|  
 |Setup.bat|このサンプルをビルドおよび初期化するために使用されます。|  
-|\MySampleLibrary フォルダーに含まれるファイル: <br /><br /> AssemblyInfo.cs、MySampleLibrary.csproj、および MySampleLibrary.sln|このサンプルで、作成したルール セットから参照されるオブジェクトを定義するクラスを提供する部分で使用するプロジェクト ファイル、ソリューション ファイル、その他の関連ファイルです。|  
-|\MySampleLibrary フォルダーに含まれるファイル: <br /><br /> MySampleLibraryClass.cs|参照されているプロパティを含む visual c# ファイル、**場合**、作成した規則で呼び出されるメソッドの部分、**し**作成した規則の一部です。|  
+|\MySampleLibrary フォルダーには。<br /><br /> AssemblyInfo.cs、MySampleLibrary.csproj、および MySampleLibrary.sln|このサンプルで、作成したルール セットから参照されるオブジェクトを定義するクラスを提供する部分で使用するプロジェクト ファイル、ソリューション ファイル、その他の関連ファイルです。|  
+|\MySampleLibrary フォルダーには。<br /><br /> MySampleLibraryClass.cs|参照されているプロパティを含む visual c# ファイル、**場合**、作成した規則で呼び出されるメソッドの部分、**し**作成した規則の一部です。|  
   
 ## <a name="building-and-initializing-this-sample"></a>このサンプルのビルドと初期化  
- 次の手順を使用して、Business Rules Hello World1 サンプルの作成および初期化を行います。  
+ ビルドおよび初期化する Business Rules こんにちは World1 サンプルを次の手順を使用します。  
   
 #### <a name="to-build-and-initialize-this-sample"></a>このサンプルを作成および初期化するには  
   
@@ -81,7 +81,7 @@ Business Rules Hello World1 サンプルでは、BizTalk ルール セットを�
    >  Setup.bat によって行われた変更を元に戻すには、Cleanup.bat を実行します。 Setup.bat を 2 回目に実行する場合は、その前に Cleanup.bat を実行してください。  
   
 ## <a name="running-this-sample"></a>このサンプルの実行  
- 次の手順を使用して、Business Rules Hello World1 サンプルを実行します。  
+ Business Rules こんにちは World1 サンプルを実行するのにには、次の手順を使用します。  
   
 #### <a name="to-run-this-sample"></a>このサンプルを実行するには  
   
@@ -89,10 +89,10 @@ Business Rules Hello World1 サンプルでは、BizTalk ルール セットを�
   
     \<*パスのサンプル*\>\Business Rules\Business こんにちは World1\bin\Debug\ のルール  
   
-2. コマンド ウィンドウで、このサンプルの実行可能ファイル名 (BusinessRulesHelloWorld1.exe) を入力して、<localizedText>Enter</localizedText> キーを押します。  
+2. コマンド ウィンドウで (BusinessRulesHelloWorld1.exe)、このサンプルの実行可能ファイルの名前を入力し、ENTER キーを押します。  
   
    > [!NOTE]
-   >  規則セット ファイル SampleRuleStore.xml このサンプルでの実行中に、 **bin \debug**フォルダー。 実行可能ファイルを一時停止すると、<localizedText>Enter</localizedText> キーを押すまで終了が待機されるので、このファイルの内容を確認できます。 このファイルは、任意のキーを押して終了する前に閉じてください。 これを行わないと、後でこのサンプルを実行するための準備として、実行可能ファイルからこのファイルを削除できません。  
+   >  規則セット ファイル SampleRuleStore.xml このサンプルでの実行中に、 **bin \debug**フォルダー。 実行可能ファイルが一時停止したときにすると、完了、ENTER キーを押すを待つことができますを確認するこのファイルの内容。 終了する任意のキーを押す前に閉じることに注意してください。 それ以外の場合、実行可能ファイルは、サンプルの後続の実行の準備では削除できません可能性があります。  
   
    提供されているサンプル入力ファイル SampleDocumentInstance.xml に対して定義されている (1) 1 つの値を持つこのサンプルを実行する場合、作成したルール セットの特性に基づき、 **ID**要素、次の出力が表示されます。  
   
@@ -136,13 +136,13 @@ Press any key to finish ...
   
  **MySampleBusinessObject.MySampleMethod(int)** パラメーターを使用して、整数、ハードここでは、定数 5 (5) にコード化されました。 このメソッドが始まる出力行を生成**MySampleBusinessObject Class –-** します。  
   
- このルールは、次の要因に依存します。  
+ このルールは、次に依存します。  
   
 - A **MySampleBusinessObject**というパブリック プロパティを持つクラス**MyValue**というパブリック メソッドと**MySampleMethod** (整数パラメーターで受け取る)。  
   
 - 含む XML ドキュメントを定義する XML スキーマ定義言語 (XSD) スキーマ、 **ID**要素。  
   
-  ルールは、クラスやスキーマとして定義しますが、実行中の場合は、関連するクラスのオブジェクト インスタンスおよび関連するスキーマのドキュメント インスタンスが必要です。 このような実行時のインスタンス (ファクト) に対してルールを評価します。 このサンプルでは、ファクトはの複数のインスタンス、 **MySampleBusinessObject**に別の値を使用して構築されているオブジェクト、 **MyValue**プロパティ、および定義済みのスキーマの単一の XML インスタンス値を格納している、 **ID**要素。  
+  クラスと、スキーマの観点から規則を定義するが、実行中に、関連するクラスのオブジェクトのインスタンスと、適切なスキーマのドキュメント インスタンスが必要です。 これらの実行時インスタンス (ファクトと呼ばれます) に対してルールを評価します。 このサンプルでは、ファクトはの複数のインスタンス、 **MySampleBusinessObject**に別の値を使用して構築されているオブジェクト、 **MyValue**プロパティ、および定義済みのスキーマの単一の XML インスタンス値を格納している、 **ID**要素。  
   
 ## <a name="see-also"></a>参照  
  [ビジネス ルール (BizTalk Server サンプル フォルダー)](../core/business-rules-biztalk-server-samples-folder.md)

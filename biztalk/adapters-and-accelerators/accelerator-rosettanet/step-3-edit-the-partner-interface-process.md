@@ -1,5 +1,5 @@
 ---
-title: '手順 3: Partner Interface Process の編集 |Microsoft Docs'
+title: 手順 3:Partner Interface Process の編集 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,26 +16,26 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a3b5b6d2f6b0fcbf13ab521bc318eda54ece55f4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 50c276c201fca7f0aa6b8b6cf7da4e69698cba77
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37003611"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65281113"
 ---
-# <a name="step-3-edit-the-partner-interface-process"></a>手順 3: Partner Interface Process を編集します。
-この手順では、Microsoft® インターネット インフォメーション サービス (IIS) で構成されているセキュリティで保護された Sockets Layer (SSL) 証明書があるない場合は、セキュリティで保護されたトランスポートを無効にするプロセス PIP (Partner Interface) の構成設定を編集します。 ループバック シナリオでは着信メッセージと送信メッセージの署名はサポートされていないため、チュートリアルを続行するには既定の設定を変更する必要があります。 STD_0C1_R01.02 PIP を変更します。  
+# <a name="step-3-edit-the-partner-interface-process"></a>手順 3:Partner Interface Process を編集します。
+この手順では、Microsoft® インターネット インフォメーション サービス (IIS) で構成されているセキュリティで保護された Sockets Layer (SSL) 証明書があるない場合は、セキュリティで保護されたトランスポートを無効にするプロセス PIP (Partner Interface) の構成設定を編集します。 ループバック シナリオでは、受信と送信の両方のメッセージの署名はサポートされていません、このチュートリアルを続行する既定の設定を変更する必要があります。 STD_0C1_R01.02 PIP を変更します。  
   
 ### <a name="to-edit-the-std0c1r0102-pip"></a>STD_0C1_R01.02 PIP を編集するには  
   
 1. **[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]** 管理コンソールで、展開**BizTalk\<バージョン\>Accelerator for RosettaNet**、 をクリックして**プロセス構成設定**、右クリックして**STD_0C1_R01.02**、 をクリックし、**プロパティ**します。  
   
-2. STD_0C1_R01.02Properties ダイアログ ボックスで、上、**アクティビティ**タブで、設定、**セキュリティで保護されたトランスポートの必要性が**オプションを`False`します。 この手順は、IIS Web サーバーに SSL 証明書がない場合にのみ実行します。  
+2. STD_0C1_R01.02Properties ダイアログ ボックスで、上、**アクティビティ**タブで、設定、**セキュリティで保護されたトランスポートの必要性が**オプションを`False`します。 IIS Web サーバー上の SSL 証明書がいない場合にのみ、この手順を実行します。  
   
 3. 設定、**否認不可のために必要な**に`False`に設定して、**認証の必要性**に`False`設定**発信元とコンテンツの否認**に`False`、 をクリックし、 **OK**します。  
   
-    これによって、否認不可と、メッセージに署名するための証明書の使用が無効になります。  
+    これには、否認防止とのメッセージに署名する証明書の使用が無効にします。  
   
 ## <a name="see-also"></a>参照  
- [手順 4: 取引先アグリーメントを作成します。](../../adapters-and-accelerators/accelerator-rosettanet/step-4-create-a-trade-agreement.md)   
+ [手順 4:取引アグリーメントを作成します。](../../adapters-and-accelerators/accelerator-rosettanet/step-4-create-a-trade-agreement.md)   
  [承認プロパティと否認不可プロパティ](../../adapters-and-accelerators/accelerator-rosettanet/authorization-and-non-repudiation-properties.md)

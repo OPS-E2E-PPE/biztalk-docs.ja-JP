@@ -12,12 +12,12 @@ caps.latest.revision: 25
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 473c6e904def7f58adcb52eb26e46891be9c41d0
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 688aae3d543d93941bb356c0d6d207eb1d4be851
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36971883"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65291411"
 ---
 # <a name="optimizing-orchestration-performance"></a>オーケストレーション パフォーマンスの最適化
 このトピックでは、オーケストレーションを BizTalk Server ソリューションで使用するためのベスト プラクティスについて説明します。 これには、推奨事項が含まれます。  
@@ -84,15 +84,15 @@ ms.locfileid: "36971883"
   
 - 不要な識別フィールドを削除します。 識別フィールドには、コンテキスト プロパティが書き込まれ、その名前がデータを取得するために使用される XPath 式と同じように簡単に重要な領域を占めることができます。 識別プロパティは、ドキュメント型を定義する XSD の注釈として定義されます。 逆アセンブラー コンポーネントでは、昇格させたプロパティを採用して同じアプローチを使用し、受信ドキュメント内で検索する識別フィールドを定義する XPath 式を使用します。 次に、逆アセンブラー コンポーネントは、コンテキストのプロパティを書き込みます場所。  
   
-  - **名前**: 注釈で定義された XPath 式。  
+  - **[名前]**:注釈で定義された XPath 式。  
   
-  - **値**: 受信ドキュメント内で XPath 式で識別される要素の値。  
+  - **値**:受信ドキュメント内で XPath 式で識別される要素の値。  
   
     XPath 式は、対象の要素がドキュメント スキーマで非常に深い場合に特に非常に長いです。 これをより識別フィールドより大きなコンテキストのサイズ。 これにより、全体的なパフォーマンスがさらに悪影響を及ぼします。  
   
 - オーケストレーション ランタイムによって提供される XPath 組み込み関数を使用します。  
   
-- メッセージが非常に小さい場合 (数キロバイト) と XML 形式の .NET クラスのインスタンスにメッセージを逆シリアル化してパブリック フィールドとプロパティを操作します。 メッセージには、複雑な詰める (カスタム コード、ビジネス ルール エンジン ポリシーなど) が必要がある場合ははるかに高速 XPath 式を使用して、.NET クラスのインスタンスによって公開されるプロパティを使用してデータにアクセスします。 オーケストレーションによって呼び出されるビジネス ロジックが完了したら、エンティティ オブジェクトは BizTalk メッセージにシリアル化できます。 .NET クラスを作成するには、次のツールのいずれかを使用して XML スキーマから: XSD ツール (.NET Framework 2.0) または SVCUTIL (.NET Framework 3.0)。  
+- メッセージが非常に小さい場合 (数キロバイト) と XML 形式の .NET クラスのインスタンスにメッセージを逆シリアル化してパブリック フィールドとプロパティを操作します。 メッセージには、複雑な詰める (カスタム コード、ビジネス ルール エンジン ポリシーなど) が必要がある場合ははるかに高速 XPath 式を使用して、.NET クラスのインスタンスによって公開されるプロパティを使用してデータにアクセスします。 オーケストレーションによって呼び出されるビジネス ロジックが完了したら、エンティティ オブジェクトは BizTalk メッセージにシリアル化できます。 次のツールのいずれかを使用して XML スキーマから .NET クラスを作成できます。XSD ツール (.NET Framework 2.0) または SVCUTIL (.NET Framework 3.0)。  
   
 - オーケストレーションからヘルパー コンポーネントを有効にします。 この手法では、識別フィールドを使用する利点があります。 XPath のため、XPath 式を変更するときは変更する必要はありません (構成ファイル、SSO 構成ストア、カスタム Db、およびなど) を構成から式が格納および再デプロイすると、スキーマが昇格させたプロパティや d を行う必要があります、オーケストレーションが実際には、読み取ることができます。istinguished フィールドです。 次のコード サンプルでは、ヘルパー コンポーネントの例を示します。 コンポーネントは、BizTalk ランタイムによって提供される XPathReader クラスを使用します。 これにより、XPath 式が見つかるまで、ドキュメント ストリームを読み取るコード。  
   
@@ -347,7 +347,7 @@ public static Root SetValues(Microsoft.XLANGs.BaseTypes.XLANGMessage msg)
   
 - [BizTalk Server 例外処理を使用して](http://msdn.microsoft.com/library/aa561229.aspx)(http://msdn.microsoft.com/library/aa561229.aspx)します。  
   
-- [Charles Young のブログ、BizTalk Server 2006: 補正モデル](http://go.microsoft.com/fwlink/?LinkId=158017)(http://go.microsoft.com/fwlink/?LinkId=158017)します。  
+- [Charles Young のブログ、BizTalk Server 2006:補正モデル](http://go.microsoft.com/fwlink/?LinkId=158017)(http://go.microsoft.com/fwlink/?LinkId=158017)します。  
   
   > [!NOTE]
   >  このブログで書き込まれたときに[!INCLUDE[btsBizTalkServer2006](../includes/btsbiztalkserver2006-md.md)]を考慮して、ブログで説明する原則にも適用 BizTalk Server です。  
@@ -357,7 +357,7 @@ public static Root SetValues(Microsoft.XLANGs.BaseTypes.XLANGMessage msg)
   
 -   抽出または使用するプロパティを設定するマップを使用している場合、オーケストレーションでビジネス ロジックは識別フィールドを使用して、または昇格させたプロパティです。 この実習を抽出したり、ドキュメント マップで値の設定が読み込まれるときにメモリにただし識別フィールドまたは昇格させたプロパティを使用して、オーケストレーション エンジンがメッセージ コンテキストにアクセスして、読み込まれませんので、従う必要があります、ドキュメントをメモリにします。  
   
--   マップを使用して、複数のフィールドを 1 つのフィールドで集計している場合、識別フィールドまたはオーケストレーションの変数が設定されている昇格したプロパティを使用して、結果セットを累積してください。  
+-   いくつかのフィールドを 1 つのフィールドに集計を識別フィールドを使用して、マップを使用して結果セットを蓄積するオーケストレーション変数のプロパティを昇格するか。  
   
 ## <a name="see-also"></a>参照  
  [パフォーマンスの最適化](../technical-guides/optimizing-performance.md)

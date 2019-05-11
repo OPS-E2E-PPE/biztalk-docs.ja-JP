@@ -13,12 +13,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2b048cccdcc46f4713967003c81671e062420377
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 513ee55c2c934c30944916dd4342a82873208215
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36976315"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65290005"
 ---
 # <a name="parties-in-btahl7-configuration-explorer"></a>BTAHL7 構成エクスプ ローラーでパーティ
 使用する、**パーティ** タブを使用可能な関係者を表示および指定[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]構成を選択すると、特定のパーティおよび受信確認のプロパティを構成します。 

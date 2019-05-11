@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 981a879a5dad68bfb423a03b82e11fb646f912c1
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 86d3b3c91fc4b2fc027ef11ff2f9a0253727eea1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36973259"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65291226"
 ---
 # <a name="reviewing-and-testing-sql-server-cluster-configuration-for-failover-scenarios"></a>レビューとテスト フェールオーバーのシナリオに SQL Server クラスターの構成
 Windows クラスタ リングと SQL Server を使用すると、1 つまたは複数の SQL Server インスタンスを「アクティブ」で実行されて、クラスターの各ノードのアクティブ/アクティブ モードで SQL Server を実行できます。 これは、ようにすると、たとえば、1 つのノードとその他のすべてのメッセージ ボックス データベースが[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]他のノード上のデータベース。 これにより、クラスターのハードウェア使用率を最大化することができます。  
@@ -59,4 +59,4 @@ Windows クラスタ リングと SQL Server を使用すると、1 つまたは
  1 つのノードはフェールオーバー シナリオでは、すべての SQL Server インスタンスを処理できないと判断した場合の代替では、アクティブ/アクティブ/パッシブのクラスタ リング モデルを使用します。 アクティブ/アクティブ/パッシブ クラスタ リング モデルでは、常にある 1 つのパッシブ ノードのフェールオーバーのシナリオに使用できる可能性が大幅に高まります。  
   
 ## <a name="see-also"></a>参照  
- [チェックリスト: SQL Server の構成](~/technical-guides/checklist-configuring-sql-server.md)
+ [チェックリスト:SQL Server の構成](~/technical-guides/checklist-configuring-sql-server.md)

@@ -12,17 +12,17 @@ caps.latest.revision: 28
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2605a7acd9610b0b5417e8c5d7c875f67f22f30c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: fc1901b4c0bae53b88c3657da88e7f998af45114
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37006715"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65278990"
 ---
 # <a name="general-biztalk-server-optimizations"></a>BizTalk Server の一般的な最適化
 BizTalk Server のパフォーマンスを向上させるのには、次の推奨事項を使用できます。 BizTalk Server をインストールして、構成後、このトピックで示した最適化が適用されます。  
   
-## <a name="configure-msdtc"></a>MSDTC を構成します。  
+## <a name="configure-msdtc"></a>MSDTC の構成  
  SQL Server と BizTalk Server 間のトランザクションを促進するには、Microsoft 分散トランザクション コーディネーター (MS DTC) を有効にする必要があります。 BizTalk Server 上で MSDTC を構成するには、トピックを参照して[オペレーティング システムのパフォーマンスを向上させるための一般的なガイドライン](../technical-guides/general-guidelines-for-improving-operating-system-performance.md)します。  
   
 ## <a name="recommendations-for-configuring-biztalk-server-hosts"></a>BizTalk Server ホストの構成に関する推奨事項  
@@ -99,8 +99,8 @@ BizTalk Server のパフォーマンスを向上させるのには、次の推�
   
  Maxconnection プロパティを設定するときに HTTP、HTTPS、web サイトの IP アドレスおよびポート番号を指定することができます。 その他の例は次のとおりです。  
   
- **\<アドレスを追加 ="<https://www.contoso.com>"maxconnection =「24」/\>**   
-**\<アドレスを追加 ="<http://www.contoso.com:8080>"maxconnection =「24」/\>**   
+ **\<add address="<https://www.contoso.com>" maxconnection="24" /\>**   
+**\<add address="<http://www.contoso.com:8080>" maxconnection="24" /\>**   
 **\<アドレスを追加 ="http://*IPAddress*"maxconnection =「24」/\>**  Web サービスの IIS と ASP.NET の設定のチューニングに関する詳細については、HTTP アダプターに影響する"ASP.NET 設定を参照してください。パフォーマンス"セクション[構成パラメーターを アダプターのパフォーマンスの影響を与える](http://go.microsoft.com/fwlink/?LinkID=154200)(<http://go.microsoft.com/fwlink/?LinkID=154200>) BizTalk Server 2010 のヘルプ。  
   
 ## <a name="manage-aspnet-thread-usage-or-concurrently-executing-requests-for-web-applications-that-can-host--isolated-received-locations-back-end-web-services-and-wcf-services"></a>ASP.NET スレッドの使用状況を管理または受信場所、バックエンド Web サービスと WCF サービスを分離することができますをホストする Web アプリケーションに対する要求を同時に実行  
@@ -138,7 +138,7 @@ BizTalk Server のパフォーマンスを向上させるのには、次の推�
   
 ```  
 <!-- <processModel autoConfig="true" /> -->  
-    <processModel maxWorkerThreads="200" maxIoThreads="200" />  
+    <processModel maxWorkerThreads="200" maxIoThreads="200" />  
 ```  
   
 > [!NOTE]  
@@ -187,10 +187,10 @@ BizTalk Server のパフォーマンスを向上させるのには、次の推�
 > [!NOTE]  
 >  この値に指定された値よりも優先されます**maxConcurrentRequestsPerCPU**レジストリにします。 RequestQueueLimit 設定では、aspnet.config ファイルの設定は、machine.config ファイルで設定を上書きする点を除いて processModel/requestQueueLimit の場合と同じです。  
   
- IIS 7.0 で ASP.NET のスレッドの使用量を構成する方法の詳細については、[Thomas Marquardt のブログを IIS 7.0 で ASP.NET スレッドの使用に関する](http://go.microsoft.com/fwlink/?LinkId=157518)(http://go.microsoft.com/fwlink/?LinkId=157518)を参照してください。  
+ IIS 7.0 で ASP.NET のスレッドの使用量を構成する方法の詳細については、次を参照してください。 [Thomas Marquardt のブログを IIS 7.0 で ASP.NET スレッドの使用に関する](http://go.microsoft.com/fwlink/?LinkId=157518)(http://go.microsoft.com/fwlink/?LinkId=157518)します。  
   
 ### <a name="manage-the-number-of-concurrently-executing-requests-for-aspnet-4web-applications-that-can-host-isolated-received-locations-back-end-web-services-and-wcf-services-on-iis-75-and-70-running-in-integrated-mode"></a>同時に実行される分離受信場所、バックエンド Web サービス、および IIS 7.5 および 7.0 統合モードで実行されている WCF サービスをホストできる ASP.NET 4Web アプリケーションに対する要求の数を管理します。  
- .NET Framework 4 で maxConcurrentRequestsPerCPU の既定の設定は 5000、これは非常に大きな数、したがってにより、多数の非同期の要求を同時に実行 詳細については、[ \<applicationPool\>要素 (Web 設定)](http://go.microsoft.com/fwlink/?LinkID=205339) (http://go.microsoft.com/fwlink/?LinkID=205339)を参照してください。  
+ .NET Framework 4 で maxConcurrentRequestsPerCPU の既定の設定は 5000、これは非常に大きな数、したがってにより、多数の非同期の要求を同時に実行 詳細については、次を参照してください。 [ \<applicationPool\>要素 (Web 設定)](http://go.microsoft.com/fwlink/?LinkID=205339) (http://go.microsoft.com/fwlink/?LinkID=205339)します。  
   
  IIS 7.5、および IIS 7.0 の Integrated モードの場合は、HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ASP.NET\4.0.30319.0 内 MaxConcurrentRequestsPerCPU をという名前の DWORD は、CPU あたりの同時要求の数を決定します。 既定では、レジストリ キーが存在しないと、CPU あたりの要求の数が 5000 に制限されています。  
   
@@ -237,7 +237,7 @@ BizTalk Server のパフォーマンスを向上させるのには、次の推�
 ## <a name="define-clr-hosting-thread-values-for-biztalk-host-instances"></a>CLR ホストの BizTalk ホスト インスタンス用のスレッド値の定義します。  
  Windows スレッドは、Windows プロセスに使用できる最も基本的な実行可能単位なので、BizTalk ホストのインスタンスに関連付けられた .NET スレッド プールには十分なスレッドを割り当てて、スレッドが不足しないようにすることが重要です。 スレッドの不足が発生したときに、パフォーマンスが低下する、要求された作業を実行できる十分なスレッドはありませんがあります。 同時に、ホストに関連付けられた .NET スレッド プールに必要以上にスレッドを割り当てないよう注意する必要があります。 ホストに関連付けられた .NET スレッド プールに割り当てたスレッドが多すぎると、コンテキストの切り替えが増加する場合があります。 コンテキストの切り替えには、パフォーマンス コストが生じますが、別のスレッドを 1 つのスレッドを実行してから、Windows カーネルが切り替わるときに発生します。 過剰なスレッドの割り当ては、全体的なパフォーマンスに悪影響を与えるが、過剰なコンテキストの切り替えことができます。 BizTalk ホスト インスタンスの .NET スレッド プールに割り当てられるスレッドの既定の数は、インストールされているバージョンの .NET Framework に依存します。 .NET Framework 4 および .NET Framework 3.5 SP1 は、の既定値は、BizTalk Server コンピューターと、メッセージ ボックス データベースの過剰なロックの競合に対して過剰なスレッドの割り当てを引き起こす可能性が大幅に増加します。  
   
- 使用して、 **BizTalk 設定ダッシュ ボード**.NET で使用できる Windows スレッド数のスレッド プールの BizTalk ホストのインスタンスに関連付けられているは、既定値を変更できます。 .NET CLR 設定を変更する方法の詳細については、[.NET CLR 設定を変更する方法](http://go.microsoft.com/fwlink/?LinkID=205344)(http://go.microsoft.com/fwlink/?LinkID=205344)を参照してください。 .NET CLR 設定は、コア CPU ごとに適用されます。  
+ 使用して、 **BizTalk 設定ダッシュ ボード**.NET で使用できる Windows スレッド数のスレッド プールの BizTalk ホストのインスタンスに関連付けられているは、既定値を変更できます。 .NET CLR 設定を変更する方法の詳細については、次を参照してください。 [.NET CLR 設定を変更する方法](http://go.microsoft.com/fwlink/?LinkID=205344)(http://go.microsoft.com/fwlink/?LinkID=205344)します。 .NET CLR 設定は、コア CPU ごとに適用されます。  
   
 > [!NOTE]  
 >  **ワーカー スレッド**キューに置かれた作業項目の処理に使用し、 **I/O スレッド**専用のコールバック スレッドが完了した非同期 I/O 要求を処理するために、I/O 完了ポートに関連付けられています。  
@@ -245,7 +245,7 @@ BizTalk Server のパフォーマンスを向上させるのには、次の推�
 |スレッドの設定|既定値|推奨値|  
 |------------------------|-------------------|-----------------------|  
 |最大 IO スレッドの数|250|250|  
-|ワーカー スレッド最大数|25|100**重要:** 100 よりも、この値を増やす、BizTalk Server メッセージ ボックス データベースをホストする SQL Server コンピューターのパフォーマンスに悪影響を与えることができます。 この問題が発生した場合、SQL Server でデッドロック状態が発生することがあります。 このパラメーターは 100 の値を上回る値を増加しないことをお勧めします。|  
+|ワーカー スレッド最大数|25|100**重要です。** 100 を超えるには、この値を大きくと、BizTalk Server メッセージ ボックス データベースをホストする SQL Server コンピューターのパフォーマンスに悪影響を与えることができます。 この問題が発生した場合、SQL Server でデッドロック状態が発生することがあります。 このパラメーターは 100 の値を上回る値を増加しないことをお勧めします。|  
 |最小 IO スレッドの数|25|25|  
 |最小ワーカー スレッド|5|25|  
   
@@ -280,7 +280,7 @@ BizTalk Server のパフォーマンスを向上させるのには、次の推�
   
     追跡オプション「図形の開始と終了」オーケストレーションは、大きなオーバーヘッドが発生し、高スループットが必要な場合、運用環境で有効にする必要がありますされません。 オーケストレーション追跡オプションは、BizTalk 管理コンソールでアクセス可能な**追跡**オーケストレーションのプロパティ ダイアログ ボックスのページ。  
   
-  追跡を構成する方法の詳細については、[、BizTalk Server 管理コンソールを使用した追跡構成](http://go.microsoft.com/fwlink/?LinkId=158021)(http://go.microsoft.com/fwlink/?LinkId=158021)を参照してください。  
+  追跡を構成する方法の詳細については、次を参照してください。 [、BizTalk Server 管理コンソールを使用した追跡構成](http://go.microsoft.com/fwlink/?LinkId=158021)(http://go.microsoft.com/fwlink/?LinkId=158021)します。  
   
 ## <a name="decrease-the-purging-period-for-the-dta-purge-and-archive-job-from-7-days-to-2-days-in-high-throughput-scenarios"></a>DTA Purge and Archive ジョブから 7 日間で高スループットのシナリオ 2 日間に、削除期間を短縮します。  
  既定では、BizTalk Server でのデータを追跡するため、削除間隔は 7 日間に設定します。 高スループットのシナリオでは、メッセージ ボックスとさらに悪い影響メッセージの処理スループットのパフォーマンスに影響が最終的に、追跡データベース内のデータを過剰なビルドではこのことがあります。  

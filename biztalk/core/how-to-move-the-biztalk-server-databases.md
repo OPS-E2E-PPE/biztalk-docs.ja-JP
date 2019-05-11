@@ -13,12 +13,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7a3509a6a0297b0f58a16cfd3eff1dc29420232b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: baa475b4e8e9cbf63cc921451bb7ae19d6857c57
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36978907"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65335903"
 ---
 # <a name="how-to-move-the-biztalk-server-databases"></a>BizTalk Server データベースを移動する方法
 
@@ -30,7 +30,7 @@ ms.locfileid: "36978907"
   
 ## <a name="move-steps"></a>ステップを移動します。
   
-1. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] サービスをすべて停止します。 詳細については、[BizTalk Server サービスの再起動とシャット ダウンの BizTalk Server](how-to-start-stop-pause-resume-or-restart-biztalk-server-services.md)を参照してください。
+1. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] サービスをすべて停止します。 詳細については、次を参照してください。 [BizTalk Server サービスの再起動とシャット ダウンの BizTalk Server](how-to-start-stop-pause-resume-or-restart-biztalk-server-services.md)します。
   
    > [!IMPORTANT]
    >  データベースを移動する前に、すべての [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] サービスおよびジョブが停止していることを必ず確認してください。  

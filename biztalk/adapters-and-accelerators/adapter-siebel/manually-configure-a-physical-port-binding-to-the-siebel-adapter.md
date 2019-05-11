@@ -15,12 +15,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 25afdeaf544cddb67440d050690ca8ca08df4547
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 576188121d5dd33541440c8bb34d7b59fc97fb47
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37020034"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65371463"
 ---
 # <a name="manually-configure-a-physical-port-binding-to-the-siebel-adapter"></a>Siebel アダプターを物理ポートのバインドを手動で構成します。
 このセクションでは、構成に関する情報を提供、[!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]を使用して WCF カスタム バインドとして、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソール。 アダプタの展開後にすることを使用しての Siebel システムからメッセージを送受信、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソール。 アダプタの展開の手順の間の通信の方向によって異なります[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]と[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]します。 送信または送受信ポートを構成することができます。 選択項目は次のとおりです。  
@@ -30,13 +30,13 @@ ms.locfileid: "37020034"
 |Send|一方向|常にこのポートでメッセージを送信します。|  
 |送信 - 受信|要求 - 応答|要求の送信と応答の受信をされます。|  
   
- 詳細については、[構成する送信ポートの作成と](../../core/creating-and-configuring-send-ports.md)を参照してください。
+ 詳細については、次を参照してください。[構成する送信ポートの作成と](../../core/creating-and-configuring-send-ports.md)します。
   
 > [!NOTE]
 >  受信ポートはため、サポートされていません、 [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] Siebel システムからの受信操作を有効にしません。  
 > 
 > [!NOTE]
->  によって作成されるバインド構成ファイルをインポートすることで、Wcf-custom 送信ポートを構成することも、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]メタデータの生成の一部として。 このバインド ファイルを使用してポートを構成する方法の詳細については、[Siebel にポートのバインド ファイルを使用して物理的なポート バインドを構成する](../../adapters-and-accelerators/adapter-siebel/configure-a-physical-port-binding-using-a-port-binding-file-to-siebel.md)を参照してください。
+>  によって作成されるバインド構成ファイルをインポートすることで、Wcf-custom 送信ポートを構成することも、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]メタデータの生成の一部として。 このバインド ファイルを使用してポートを構成する方法の詳細については、次を参照してください。 [Siebel にポートのバインド ファイルを使用して物理的なポート バインドを構成する](../../adapters-and-accelerators/adapter-siebel/configure-a-physical-port-binding-using-a-port-binding-file-to-siebel.md)します。
   
  
   

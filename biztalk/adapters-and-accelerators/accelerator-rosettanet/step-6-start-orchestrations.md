@@ -1,5 +1,5 @@
 ---
-title: '手順 6: オーケストレーションの開始 |Microsoft Docs'
+title: 手順 6:オーケストレーションの開始 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,14 +15,14 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 973d0c5e8628d2363e8192c7faffeaebcc6d63b6
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a79ac73ef2b275cd5b3740f6dccd32918f43b493
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36993187"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65280641"
 ---
-# <a name="step-6-start-orchestrations"></a>手順 6: オーケストレーションを開始します。
+# <a name="step-6-start-orchestrations"></a>手順 6:オーケストレーションを開始します。
 この手順で Microsoft を使用して[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]Microsoft のオーケストレーションを開始する[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]します。  
   
 ### <a name="to-start-the-btarn-orchestrations-using-visual-studio"></a>Visual Studio を使用して BTARN オーケストレーションを開始するには  
@@ -36,5 +36,5 @@ ms.locfileid: "36993187"
 4.  クリックして**オーケストレーション**、すべてを開始および**BTARN オーケストレーション**します。  
   
 ## <a name="see-also"></a>参照  
- [手順 7: サンプル LOB メッセージを作成します。](../../adapters-and-accelerators/accelerator-rosettanet/step-7-create-a-sample-lob-message.md)   
+ [手順 7:サンプル LOB メッセージを作成します。](../../adapters-and-accelerators/accelerator-rosettanet/step-7-create-a-sample-lob-message.md)   
  [プログラミングによるオーケストレーション、送信ポート、受信場所の停止および開始](../../adapters-and-accelerators/accelerator-rosettanet/code-to-stop-and-start-orchestrations-send-ports-and-receive-locations.md)

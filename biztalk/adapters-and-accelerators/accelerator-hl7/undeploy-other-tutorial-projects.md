@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e2c014a094acac4e374605cd0ebd9b9c50c9d733
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d4de399020c4fe41f3c65d3e6119cbe11469efd5
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36976283"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65286387"
 ---
 # <a name="undeploy-other-tutorial-projects"></a>その他のチュートリアルのプロジェクトを展開解除します。
 BizTalk Accelerator for HL7 に展開するときに ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) チュートリアルでは、[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]チュートリアルのアセンブリ ファイルの構成データベース (BizTalk 管理データベースとも呼ばれます) とグローバル アセンブリ キャッシュに格納します。 別に実行している場合[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]チュートリアル、およびデプロイされたそのチュートリアルで作成したアセンブリ、バッチ処理のチュートリアルの 3 つの部分で、アセンブリをテストするときにエラーを発生可能性があります。 これは、1 つのメッセージ スキーマを一度に 1 つのみ展開できるために発生する可能性があります。  

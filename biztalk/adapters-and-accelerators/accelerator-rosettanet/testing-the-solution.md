@@ -1,5 +1,5 @@
 ---
-title: ソリューションのテスト |Microsoft ドキュメント
+title: ソリューションのテスト |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,15 +15,15 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7af2cab529344f499ff006a6cd99401ae63c4668
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 7b43ab300fefbe1916b58e9c606c2541dfd0a10e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26005539"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65280602"
 ---
-# <a name="testing-the-solution"></a>ソリューションをテストします。
-ここでは、完成したソリューションをテストします。 Fabrikam ソリューションで作成した LOBWebApplication ツールを使用して、Contoso LOB アプリケーションに 3A2 PIP 要求を送信します。 作成した Contoso のプライベート オーケストレーションは、BizTalk Server の SQL アダプタを使用して、ERP システムに Contoso のベース 3 a 2 Price and Availability 要求を送信します。 ERP システムからの応答を受信すると、オーケストレーションはビジネス ルール エンジンを呼び出し、作成した緊急時に必要なビジネス ポリシーを実行します。  
+# <a name="testing-the-solution"></a>ソリューションのテスト
+このセクションでは、完全なソリューションをテストします。 Fabrikam ソリューションで作成した LOBWebApplication ツールを使用して、Contoso LOB アプリケーションに 3 a 2 PIP 要求を送信します。 作成した Contoso のプライベート オーケストレーションは、BizTalk Server の SQL アダプターを使用して、ERP システムに Contoso のに基づいて 3 a 2 Price and Availability 要求を送信します。 ERP システムからの応答が受信されると、オーケストレーションを呼び出して、緊急にビジネス ルール エンジンでは、ビジネス ポリシーを作成する必要です。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

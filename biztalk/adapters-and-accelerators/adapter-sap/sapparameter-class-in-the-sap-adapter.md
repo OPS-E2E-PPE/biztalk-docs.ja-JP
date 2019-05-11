@@ -1,5 +1,5 @@
 ---
-title: SAP アダプターで SAPParameter クラス |Microsoft ドキュメント
+title: SAP アダプターの SAPParameter クラス |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,45 +14,45 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9ff43c344cc14adb3deef226c270adc3ca94f2a5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 67f87932d7add9723d67e0af822a8d6f389b59fb
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22218002"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65372942"
 ---
-# <a name="sapparameter-class-in-the-sap-adapter"></a>SAP アダプターで SAPParameter クラス
-次のセクションではメソッドとプロパティの一覧表示、 **SAPParameter**クラスです。 これは、派生元**System.Data.Common.DbParameter**です。  
+# <a name="sapparameter-class-in-the-sap-adapter"></a>SAP アダプターの SAPParameter クラス
+メソッドおよびプロパティを次のセクションの一覧、 **SAPParameter**クラス。 これは、派生元**System.Data.Common.DbParameter**します。  
   
 ## <a name="supported-properties"></a>サポートされているプロパティ  
   
-|名前|取得/設定|Description|  
+|名前|Get/Set|説明|  
 |----------|--------------|-----------------|  
 |**DbType**|取得|DbType 場合は、パラメーターが返されます。 設定することはできません。|  
-|**方向**|Get および Set|ParameterDirection.ReturnValue がサポートされていません。|  
+|**[方向]**|Get と Set|ParameterDirection.ReturnValue がサポートされていません。|  
 |**IsNullable**|-|サポートされていません。|  
-|**パラメーター名**|Get および Set|パラメーターの名前です。|  
-|**サイズ**|-|サポートされていません。|  
+|**ParameterName**|Get と Set|パラメーターの名前。|  
+|**Size**|-|サポートされていません。|  
 |**SourceColumn**|-|サポートされていません。|  
 |**SourceColumnNullMapping**|-|サポートされていません。|  
 |**SourceVersion**|-|サポートされていません。|  
-|**値**|Get および Set|パラメーターの値|  
+|**[値]**|Get と Set|パラメーターの値|  
   
 ## <a name="supported-methods"></a>サポートされているメソッド  
   
-|名前|Description|  
+|名前|説明|  
 |----------|-----------------|  
 |**ResetDbType()**|サポートされていません。|  
   
 ## <a name="supported-constructors"></a>サポートされているコンス トラクター  
   
-|名前|Description|  
+|名前|説明|  
 |----------|-----------------|  
 |**SAPParameter()**|SAP パラメーターのインスタンス。|  
-|**SAPParameter(string)**|SAP パラメーターの名前を持つ SAP パラメーター。|  
-|**SAPParameter (string, DbType)**|SAP パラメーター名と DbType SAP パラメーター。|  
-|**SAPParameter (文字列、オブジェクト)**|SAP パラメーター名と値を持つ SAP パラメーター。 複合型では、データ テーブルの型の値と XML 文字列があります。|  
-|**SAPParameter (string, ParameterDirection)**|SAP パラメーターの名前とパラメーターの方向と SAP のパラメーターです。|  
+|**SAPParameter(string)**|SAP SAP パラメーターの名前のパラメーター。|  
+|**SAPParameter(string, DbType)**|SAP パラメーター名と DbType SAP パラメーター。|  
+|**SAPParameter (文字列、オブジェクト)**|SAP パラメーター名および値を持つ SAP パラメーター。 複合型は、DataTable の型の値と XML 文字列があります。|  
+|**SAPParameter(string, ParameterDirection)**|SAP パラメーターの名前とパラメーターの方向を持つ SAP パラメーター。|  
   
 ## <a name="see-also"></a>参照  
- [SAP アダプターと ADO.NET インターフェイスを拡張します。](../../adapters-and-accelerators/adapter-sap/extend-ado-net-interfaces-with-the-sap-adapter.md)
+ [SAP アダプターを使用した ADO.NET インターフェイスを拡張します。](../../adapters-and-accelerators/adapter-sap/extend-ado-net-interfaces-with-the-sap-adapter.md)

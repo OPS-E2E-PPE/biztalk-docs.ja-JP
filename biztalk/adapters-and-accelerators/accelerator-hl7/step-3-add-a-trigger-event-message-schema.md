@@ -1,5 +1,5 @@
 ---
-title: '手順 3: トリガー イベント (メッセージ) スキーマの追加 |Microsoft Docs'
+title: 手順 3:トリガー イベント (メッセージ) スキーマの追加 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: adaab47647bff4ad912ebcc558f43069907e204a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c395a5dd68686b04d47af790f733174787b5a4b4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37012147"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65288891"
 ---
-# <a name="step-3-add-a-trigger-event-message-schema"></a>手順 3: トリガー イベント (メッセージ) スキーマを追加します。
+# <a name="step-3-add-a-trigger-event-message-schema"></a>手順 3:トリガー イベント (メッセージ) スキーマを追加します。
 この手順で、空に基づく新しいプロジェクトを作成する[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]プロジェクト テンプレート。 このプロジェクトにスキーマを追加する[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]受信バッチ内のメッセージの検証に使用されます (ADT ^ A03)。 V2.3.1 の一般的なスキーマを含むプロジェクトへの参照を追加し、プロジェクトに厳密な名前を割り当て、プロジェクトを配置します。  
 
 ### <a name="to-add-the-project-containing-the-message-schema"></a>メッセージ スキーマを含むプロジェクトに追加するには  
@@ -52,7 +52,7 @@ ms.locfileid: "37012147"
    |     プロパティ      |         目的         |
    |-------------------|----------------------------|
    | **Message クラス** | 保持**V2.X**として選択します。 |
-   |    **[バージョン]**    |     選択**2.3.1**します。      |
+   |    **バージョン**    |     選択**2.3.1**します。      |
    | **メッセージの種類**  |      選択**ADT**します。       |
    | **トリガー イベント** |      選択**A03**します。       |
 
@@ -76,4 +76,4 @@ ms.locfileid: "37012147"
    > [!NOTE]
    >  Successful-deploy メッセージが表示されない場合は、使用[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]スキーマのトラブルシューティングを行う。  
 
-   進みます[手順 4: 作成、受信ポートのバッチ メッセージを受け入れる](../../adapters-and-accelerators/accelerator-hl7/step-4-create-a-receive-port-for-accepting-the-batch-message.md)します。
+   続行する[手順 4。作成、受信ポートのバッチ メッセージを受け入れる](../../adapters-and-accelerators/accelerator-hl7/step-4-create-a-receive-port-for-accepting-the-batch-message.md)します。

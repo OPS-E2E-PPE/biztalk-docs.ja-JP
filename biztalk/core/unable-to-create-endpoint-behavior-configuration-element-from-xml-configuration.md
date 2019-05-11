@@ -12,14 +12,14 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0d1f014463bbbd12de856d20b37332c912b3ce22
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b2b294b67f066c0c3ff61232afd1aa81382363c1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36987243"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65292835"
 ---
-# <a name="unable-to-create-endpoint-behavior-configuration-element-from-xml-configuration"></a>XML 構成からエンドポイント動作の構成要素を作成できません
+# <a name="unable-to-create-endpoint-behavior-configuration-element-from-xml-configuration"></a>XML 構成からエンドポイント動作の構成要素を作成できません。
 ## <a name="details"></a>詳細  
 
 |                 |                                                                                    |
@@ -30,21 +30,21 @@ ms.locfileid: "36987243"
 |  イベント ソース   |                                         0                                          |
 |    コンポーネント    |                                         0                                          |
 |  シンボル名  |                                         0                                          |
-|  メッセージ テキスト   |  XML 構成からエンドポイント動作の構成要素を作成できません   |
+|  メッセージ テキスト   |  XML 構成からエンドポイント動作の構成要素を作成できません。   |
 
 ## <a name="explanation"></a>説明  
- このエラーは、アダプターにエンドポイント動作の構成が読み込まれなかったことを示します。 この状況は、主に WCF-Custom アダプターおよび WCF-CustomIsolated アダプターで発生します。  
+ このエラーは、アダプターでは、エンドポイント動作の構成は読み込まれませんでしたを示します。 Wcf-custom および Wcf-customisolated アダプターで主に、このような状況が発生します。  
 
 ## <a name="user-action"></a>ユーザーの操作  
- エンドポイント動作を構成するには、次の手順を実行します。  
+ エンドポイントの動作を構成するのにには、次の手順を使用します。  
 
-#### <a name="to-configure-the-endpoint-behavior"></a>エンドポイント動作を構成するには  
+#### <a name="to-configure-the-endpoint-behavior"></a>エンドポイントの動作を構成するには  
 
 1. クリックして**開始**、 をクリックして**すべてのプログラム**、 をクリックして[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、 をクリック**BizTalk Server 管理**します。  
 
 2. コンソール ルートで  [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]、展開**BizTalk グループ**、展開**アプリケーション**します。  
 
-3. アプリケーションを特定し、次にトランスポートを特定します。  
+3. アプリケーションを見つけて、トランスポートを特定します。  
 
 4. トランスポート名を右クリックします。  
 
@@ -52,7 +52,7 @@ ms.locfileid: "36987243"
 
 6. ポート**型**一覧で、適切なポートを選択します。  
 
-7. クリックして**構成**します。  
+7. をクリックして**構成**です。  
 
 8. **WCF [**<em>トランスポートの種類</em>**] トランスポートのプロパティ**ダイアログ ボックスで、をクリックして、**動作**タブ。  
 

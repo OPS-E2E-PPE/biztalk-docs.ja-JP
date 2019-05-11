@@ -13,12 +13,12 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 335eb3c9-b565-470f-b69c-2a771ef8b476
 ms.author: mandia
-ms.openlocfilehash: a7c421f647a7e23ff23474af6c00cb6f06ec9c55
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d4f14eff559c3952457b1c5473cd04ece7a39987
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36974243"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65283356"
 ---
 # <a name="known-issues"></a>既知の問題
 このセクションには、Microsoft® によるエラーの回避に役立つ有用な情報が含まれています。[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]します。 既知の問題は次の分野に分かれています。  
@@ -76,7 +76,7 @@ ms.locfileid: "36974243"
  [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 受信し、utf-16 の文字セットのメッセージを処理します。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] utf-8 の文字セットを含むメッセージを送信します。  
   
 ### <a name="namespaces-must-be-stripped-from-response-messages-mapped-from-request-messages"></a>要求メッセージからマップされた応答メッセージから名前空間を削除する必要がある  
- ダブル アクションのシナリオのプライベート プロセスで BizTalk マッパーを使用すると、BizTalk マッパーは、要求メッセージからマップされた応答メッセージ インスタンスの一部の要素タグに名前空間を追加します。 この名前空間により、送信パイプラインで障害が発生します。 したがって、この名前空間は削除する必要があります。 そのためには、HeaderHelper サンプルを使用します。 詳細については、[Double Action PIPAutomation Orchestration &#91;RN3&#93; ](../../adapters-and-accelerators/accelerator-rosettanet/double-action-pipautomation-orchestration.md)と[手順 4: HeaderHelper プロジェクトの作成&#91;RN3&#93;](../../adapters-and-accelerators/accelerator-rosettanet/step-4-creating-the-headerhelper-project.md)を参照してください。  
+ ダブル アクションのシナリオのプライベート プロセスで BizTalk マッパーを使用すると、BizTalk マッパーは、要求メッセージからマップされた応答メッセージ インスタンスの一部の要素タグに名前空間を追加します。 この名前空間により、送信パイプラインで障害が発生します。 したがって、この名前空間は削除する必要があります。 そのためには、HeaderHelper サンプルを使用します。 詳細については、次を参照してください。 [Double Action PIPAutomation Orchestration &#91;RN3&#93; ](../../adapters-and-accelerators/accelerator-rosettanet/double-action-pipautomation-orchestration.md)と[手順 4。HeaderHelper プロジェクトの作成&#91;RN3&#93;](../../adapters-and-accelerators/accelerator-rosettanet/step-4-creating-the-headerhelper-project.md)します。  
   
 ### <a name="changing-uri-settings-requires-iisreset"></a>URI 設定を変更すると IISRESET が必要になる  
  セットアップ プログラムの実行中に、受信と送信の .aspx ページが使用する URI 設定、および受信と送信のアダプタの URI 設定が行われます。 .aspx ページまたはアダプタがインストールされているコンピュータの名前を変更する場合は、この設定を変更する必要があります。 構成処理を再実行することでこれらの設定を変更できますが、そのためには、構成設定をすべてリセットする必要があります。 URI 設定のみを変更するには、関連付けられたレジストリ キー (`AsyncReceivePortURI`、`RNIFSenderURI`、および `SyncReceivePortURI`) を変更します。 このレジストリ設定のいずれかを変更した後は、変更を有効にするため、IISRESET を実行する必要があります。 これは、後で使用するために [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] が設定をキャッシュしているためです。 IISRESET の実行後は、BizTalk サービスも再開する必要があります。  

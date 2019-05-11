@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f2e44157c1b7a4e545bad23c5d9b6dcd9fa87cfe
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a02d4b2d902f2dad24a20c150e474e671f582a66
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36986868"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65282520"
 ---
 # <a name="privateresponder-sample"></a>PrivateResponder サンプル
 PrivateResponder.odx サンプルには、Microsoft® によってインストールされる応答側プライベート プロセスのコードが含まれています。[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]します。 この汎用プライベート プロセスは、SQL アダプターベースの既定の送受信ポートを使用して RNIF Service Content メッセージを送受信します。  
@@ -29,7 +29,7 @@ PrivateResponder.odx サンプルには、Microsoft® によってインスト�
   
  応答側プライベート プロセスは実装ごとに固有です。 PrivateResponder.odx サンプルは用途に合わせてカスタマイズできます。 ただし、応答側パブリック プロセスの機能に支障をきたさないように注意する必要があります。  
   
- 詳細については、メッセージ フローの説明を含む、[応答側プライベート プロセス](../../adapters-and-accelerators/accelerator-rosettanet/responder-private-process.md)を参照してください。  
+ 詳細については、メッセージ フローの説明を含む、次を参照してください。[応答側プライベート プロセス](../../adapters-and-accelerators/accelerator-rosettanet/responder-private-process.md)します。  
   
 ## <a name="see-also"></a>参照  
  [オーケストレーション サンプル](../../adapters-and-accelerators/accelerator-rosettanet/orchestration-samples.md)   

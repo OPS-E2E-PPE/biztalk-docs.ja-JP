@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 07167c2c0189c36f7b1a321d81bd0070398953e8
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a7699aa162044e13b5f3176e38cf858a5268e25f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36975123"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65324942"
 ---
 # <a name="metadata-errors"></a>メタデータ エラー
 診断と WCF メタデータのエラーの解決に関する情報。  
@@ -35,10 +35,10 @@ ms.locfileid: "36975123"
 |  メッセージ テキスト   |                        WCF サービスのメタデータを使用中にエラーが発生しました                        |
   
 ### <a name="explanation"></a>説明  
- このエラーは、サービスのメタデータが使用できないか、有効ではないことを示します。  
+ このエラーは、サービスがないか、メタデータを示します使用できるか、無効です。  
   
 ### <a name="user-action"></a>ユーザーの操作  
- サービスのメタデータを修正して使用します (使用する WCF サービスを所有している場合)。 サービス構成エディターに移動 (**svcConfigEditor.exe**)、構成ファイルを変更します。  それ以外の場合、サービス プロバイダーにお問い合わせください。
+ サービス メタデータを修正し、(使用する WCF サービスを所有) 場合を使用しようとします。 サービス構成エディターに移動 (**svcConfigEditor.exe**)、構成ファイルを変更します。  それ以外の場合、サービス プロバイダーにお問い合わせください。
 
 ## <a name="failed-to-get-metadata"></a>メタデータを取得できませんでした
 
@@ -53,7 +53,7 @@ ms.locfileid: "36975123"
 |  メッセージ テキスト   |                          メタデータを取得できませんでした"{0}                          |
   
 ## <a name="explanation"></a>説明  
- このエラーは、メタデータをそのサービスに使用できないことを示します。  
+ このエラーは、メタデータをそのサービスのご利用いただけませんを示します。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- サービスに対してメタデータを有効にし、カスタマイズ ウィザードをもう一度実行します (使用する WCF サービスを所有している場合)。 それ以外の場合、サービス プロバイダーに問い合わせてください。
+ サービスのメタデータを有効にして、(使用する WCF サービスを所有) 場合は、使用ウィザードを再度実行します。 それ以外の場合、サービス プロバイダーに問い合わせてください。

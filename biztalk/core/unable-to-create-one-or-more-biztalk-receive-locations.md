@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b0dfc81876cba51b4dad03a01c2feb935b4fc959
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 06f8fa39d5998b37e994cd599466eee123798292
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36986403"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65292806"
 ---
 # <a name="unable-to-create-one-or-more-biztalk-receive-locations"></a>BizTalk 受信場所を 1 つ以上作成できませんでした
 ## <a name="details"></a>詳細  
@@ -30,15 +30,15 @@ ms.locfileid: "36986403"
 |  イベント ソース   |                                         0                                          |
 |    コンポーネント    |                                         0                                          |
 |  シンボル名  |                                         0                                          |
-|  メッセージ テキスト   |              BizTalk の受信場所を 1 つ以上作成できませんでした。               |
+|  メッセージ テキスト   |              BizTalk 受信場所を 1 つ以上作成できませんでした。               |
   
 ## <a name="explanation"></a>説明  
- このエラーは、BizTalk WCF サービス公開ウィザードで、分離 WCF アダプターをホストする受信場所の作成に失敗したことを示します。  
+ このエラーは、BizTalk WCF 公開ウィザードを作成できなかったことを示す分離 WCF アダプターをホストする受信場所。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- BizTalk インスタンスが起動していることを確認します。  
+ BizTalk インスタンスが開始することを確認します。  
   
- 受信場所の作成の詳細については、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] マニュアルで次の情報を参照してください。  
+ 作成の詳細については、受信場所、次のリソースを参照してください、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ドキュメント。  
   
 -   [分離 WCF 受信アダプターでの WCF サービスの公開](../core/publishing-wcf-services-with-the-isolated-wcf-receive-adapters.md)  
   
@@ -48,4 +48,4 @@ ms.locfileid: "36986403"
   
 -   [Wcf-customisolated 受信場所を構成する方法](../core/how-to-configure-a-wcf-customisolated-receive-location.md)  
   
--   [チュートリアル: WCF-BasicHttp アダプターを使用した WCF サービスの公開](../core/walkthrough-publishing-wcf-services-with-the-wcf-basichttp-adapter.md)
+-   [チュートリアル: Wcf-basichttp アダプターで WCF サービスの公開](../core/walkthrough-publishing-wcf-services-with-the-wcf-basichttp-adapter.md)

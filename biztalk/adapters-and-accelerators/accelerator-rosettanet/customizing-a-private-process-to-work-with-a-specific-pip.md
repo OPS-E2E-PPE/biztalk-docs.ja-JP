@@ -18,41 +18,41 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 77abdf870f0813bb5b9e1dd7a039b99ef0726c15
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c2a9bac75fd3cb71210fdfff99978d973f28c142
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37001507"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65284072"
 ---
 # <a name="customizing-a-private-process-to-work-with-a-specific-pip"></a>特定の PIP に使用するプライベート プロセスのカスタマイズ
-応答側のプライベートプロセス オーケストレーションが特定の Partner Interface Process (PIP) のインスタンスを処理するかどうかを指定するフィルター式を作成できます。 これにより、特定の PIP インスタンスを受信して処理するためのカスタム プライベート プロセスを作成し、その他の PIP インスタンスには既定のプライベート プロセスを使用する柔軟性が備わります。  
+処理するプライベート プロセス オーケストレーションまたはプロセスのインスタンスの特定のプロセス PIP (Partner Interface) いない応答側が発生するフィルター式を作成することができます。 これは、受信および特定の PIP インスタンスを処理するカスタム プライベート プロセスを作成して、プロセスを使用して既定のプライベート プロセスにその他のすべての PIP インスタンスの柔軟性をによりします。  
   
- 特定の PIP で使用するカスタム プライベート プロセスを作成するには、プライベートプロセス オーケストレーションの受信図形のフィルタ式を作成します。 例としては、Microsoft® で PIP3A4PrivateResponder.odx オーケストレーション[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]SDK。 場所は\<*ドライブ*\>: \Program Files\BizTalk\<バージョン\>Accelerator for rosettanet \sdk\pip3a4process を使用して Business rules \pip3a4privateresponder にあります。  
+ PIP または複数の特定の Pip の特定の作業のカスタム プライベート プロセスを作成するには、プライベート プロセス オーケストレーションの受信図形のフィルター式を作成します。 例としては、Microsoft® で PIP3A4PrivateResponder.odx オーケストレーション[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]SDK。 場所は\<*ドライブ*\>: \Program Files\BizTalk\<バージョン\>Accelerator for rosettanet \sdk\pip3a4process を使用して Business rules \pip3a4privateresponder にあります。  
   
- 特定の PIP のインスタンスのみを処理するプライベート プロセスを作成するだけでなく、既定の BTARN プライベート プロセスをカスタマイズして、その PIP のインスタンスを処理しないように設定する必要があります。  
+ だけでなく、特定の PIP のインスタンスのみを処理するプライベート プロセスを作成するには、その PIP のインスタンスを処理しないように、既定の BTARN プライベート プロセスをカスタマイズする必要があります。  
   
-### <a name="to-customize-a-responder-private-process-to-work-with-a-specific-pip"></a>特定の PIP で使用する応答側プライベート プロセスをカスタマイズするには  
+### <a name="to-customize-a-responder-private-process-to-work-with-a-specific-pip"></a>特定の PIP を使用する応答側プライベート プロセスをカスタマイズするには  
   
-1. [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] で、特定の PIP で使用する応答側プライベートプロセス オーケストレーションを作成します。 既定の BTARN 応答側プライベートプロセスのオーケストレーションを基盤にできます。  
+1. [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]、特定の PIP を操作するためのカスタム応答側プライベート プロセス オーケストレーションを作成します。 既定の BTARN 応答側プライベート プロセス オーケストレーションのオーケストレーションを基にすることができます。  
   
    > [!NOTE]
-   >  PrivateResponder.odx という名前の既定の応答側プライベートプロセス オーケストレーションは BTARN SDK にあります。 場所は*\<ドライブ\>*: \Program Files\BizTalk\<バージョン\>Accelerator for rosettanet \sdk\privateresponder です。  
+   >  既定値を検索する応答側プライベート プロセス オーケストレーション、BTARN SDK PrivateResponder.odx という名前です。 場所は*\<ドライブ\>*: \Program Files\BizTalk\<バージョン\>Accelerator for rosettanet \sdk\privateresponder です。  
   
 2. カスタム オーケストレーションを BizTalk プロジェクトに追加します。 プロジェクトに Microsoft.Solutions.BTARN.GlobalSchemas.dll ファイルへの参照があることを確認してください。  
   
-3. オーケストレーション デザイナでカスタム オーケストレーションを開きます。  
+3. オーケストレーション デザイナーでカスタム オーケストレーションを開きます。  
   
 4. 1 つ目を右クリックして**受信**図形をオーケストレーションをアクティブ化し、をクリックし、**フィルター式の編集**します。  
   
    > [!NOTE]
-   >  既定の BTARN 応答側プライベートプロセス オーケストレーションの受信図形には、Microsoft.Solutions.BTARN.GlobalSchemas.SCCategory == "AsyncAction" または Microsoft.Solutions.BTARN.GlobalSchemas.SCCategory == "SyncAction" という 2 つのフィルター条件があります。 この式は、オーケストレーションが RosettaNet メッセージを処理することを確認します。 カスタム オーケストレーションにこのフィルター式を維持してください。  
+   >  既定の BTARN 応答側プライベート プロセス オーケストレーションの受信図形には、2 つのフィルター条件があります。Microsoft.Solutions.BTARN.GlobalSchemas.SCCategory = ="AsyncAction"または Microsoft.Solutions.BTARN.GlobalSchemas.SCCategory ="SyncAction"です。 この式は、オーケストレーションが RosettaNet メッセージを処理することを確認します。 カスタム オーケストレーションには、このフィルター式を保持します。  
   
 5. **フィルター式**ダイアログ ボックスで、最初の開いている行のプロパティの列で選択**microsoft.solutions.btarn.globalschemas.scpipcode** 演算子 列で、ドロップダウン リストから選択**==** 値 列に入力 3 桁の PIP コードの例では、型のボックスの一覧から**3A4**します。  
   
 6. **[OK]** をクリックします。  
   
-7. オーケストレーション デザイナーで既定の応答側プライベートプロセス オーケストレーション プロジェクト (PrivateResponder.btproj) を開きます。 プロジェクトに Microsoft.Solutions.BTARN.GlobalSchemas.dll ファイルへの実際の参照があることを確認してください。  
+7. オーケストレーション デザイナーでは、既定の応答側プライベート プロセス オーケストレーション プロジェクト (PrivateResponder.btproj) を開きます。 プロジェクトに Microsoft.Solutions.BTARN.GlobalSchemas.dll ファイルへの参照が含まれることを確認します。  
   
 8. ダブルクリック**PrivateResponder.odx**します。  
   

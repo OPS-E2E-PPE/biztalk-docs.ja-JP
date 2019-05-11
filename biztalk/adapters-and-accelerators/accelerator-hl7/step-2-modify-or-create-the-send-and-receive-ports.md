@@ -1,5 +1,5 @@
 ---
-title: '手順 2: 変更または作成、送信と受信ポート |Microsoft Docs'
+title: 手順 2:変更または作成、送信ポートと受信ポート |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 42c40652d334fd2c7dec2475edca81b9fc9b1b14
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8538bd8f67a78c77c0dca0a875c26ed169672e80
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36996523"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65288609"
 ---
-# <a name="step-2-modify-or-create-the-send-and-receive-ports"></a>手順 2: 変更または作成、送信と受信ポート
+# <a name="step-2-modify-or-create-the-send-and-receive-ports"></a>手順 2:変更または作成、送信ポートと受信ポート
 ファイルの送信と、バッチの受信ポートが必要で/バッチ アウト チュートリアル。 クリックした場合、 **Launch Tutorial**の Enterprise Edition のインストールの最後にあるボタン[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]これらのポートを作成する: Tutorial_BTAHL7Drop、という名前の送信ポートと受信ポート Tutorial_BTAHL7PickUp という名前です。 これらのポートがあれば、引き続き Tutorial_BTAHL7Drop 送信ポートを変更する必要があります。  
 
  場合[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]セットアップでしたいない送信を作成の受信ポート、このトピックでは、「を作成する、BIBOTutorialPickup 受信ポート」手順を参照してこのトピックでも「を作成する、BIBOTutorialDrop 送信ポート」の手順を参照してください。  
@@ -70,7 +70,7 @@ ms.locfileid: "36996523"
 
     |      プロパティ      |                                                                                                                                                                         目的                                                                                                                                                                          |
     |--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | **受信フォルダー** | 参照する**\<**<em>ドライブ</em>**\>: \Program Files\Microsoft BizTalk\<バージョン\>HL7\SDK\End ツー エンドのアクセラレータTutorial\Tutorial_BTAHL7PickUp**します。 **注:** 場所からファイル システムまたはパブリック共有上の場所へのパスですこの[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]は、ファイルを取得します。 |
+    | **受信フォルダー** | 参照する**\<**<em>ドライブ</em>**\>: \Program Files\Microsoft BizTalk\<バージョン\>HL7\SDK\End ツー エンドのアクセラレータTutorial\Tutorial_BTAHL7PickUp**します。 **注:** これは、パス、ファイル システムまたはパブリック共有上の場所にどこから[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]は、ファイルを取得します。 |
     |   **ファイル マスク**    |                                                                                                                                                                      型 **\*.txt**します。                                                                                                                                                                       |
 
 
@@ -138,4 +138,4 @@ ms.locfileid: "36996523"
 
 10. 展開**プラットフォームの設定**、 をクリックし、**ホスト インスタンス**します。 右クリック**BizTalkServerApplication**、 をクリックし、**再起動**します。  
 
-    続行する[手順 3: テストのバッチ処理/バッチ アウト シナリオ](../../adapters-and-accelerators/accelerator-hl7/step-3-test-the-batch-in-batch-out-scenario.md)します。
+    続行する[手順 3。テストのバッチ処理/バッチ アウト シナリオ](../../adapters-and-accelerators/accelerator-hl7/step-3-test-the-batch-in-batch-out-scenario.md)します。

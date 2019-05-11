@@ -1,5 +1,5 @@
 ---
-title: メッセージング イベント ストリーム |Microsoft ドキュメント
+title: メッセージング イベント ストリーム |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,21 +12,21 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9d955dbc2b50d1d9c40b54736762fcbaa2bfe536
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3ae51bce79ca06edc8874100648b1b3002f917f6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22262786"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65324969"
 ---
 # <a name="messaging-event-streams"></a>メッセージング イベント ストリーム
-メッセージング イベント ストリーム (MES) は、BizTalk Server がインストールされているコンピューターでアプリケーションを実行し、BizTalk パイプライン トランザクションの一部である項目を追跡する場合に使用します。 MES を使用すると、BAM イベントの永続化と BizTalk パイプライン トランザクションとの同期を維持することができます。  
+BizTalk Server がインストールされているし、するが、コンピューター、アプリケーションの実行は BizTalk パイプライン トランザクションの一部である項目を追跡する場合は、メッセージング イベント ストリーム (MES) を使用します。 MES を使用すると、BAM イベントの永続化非 BizTalk パイプライン トランザクションとの同期にならないように。  
   
- メッセージング イベント ストリームによって返される EventStream オブジェクトのインスタンスである、 [Microsoft.BizTalk.Component.Interop.IPipelineContext.GetEventStream](http://msdn.microsoft.com/library/microsoft.biztalk.component.interop.ipipelinecontext.geteventstream.aspx)メソッドです。  
+ メッセージング イベント ストリームによって返される EventStream オブジェクトのインスタンスである、 [Microsoft.BizTalk.Component.Interop.IPipelineContext.GetEventStream](http://msdn.microsoft.com/library/microsoft.biztalk.component.interop.ipipelinecontext.geteventstream.aspx)メソッド。  
   
- メッセージング イベント ストリームは非同期であり、最初に追跡データを BizTalk メッセージ ボックス データベースに保存します。 このデータは Tracking Data Decode Service (TDDS) によって定期的に処理され、BAM プライマリ インポート データベースに保存されます。  
+ メッセージング イベント ストリームは非同期であり、BizTalk メッセージ ボックス データベースで最初に追跡データを保存します。 このデータは Tracking Data Decode Service (TDDS) によって定期的に処理され、BAM プライマリ インポート データベースに保存されます。  
   
- Ipipelinecontext は、 [Microsoft.BizTalk.Component.Interop](http://msdn.microsoft.com/library/microsoft.biztalk.component.interop.aspx)名前空間。 API を使用するには、Microsoft.BizTalk.Pipeline (microsoft.biztalk.pipeline.dll 内) をプロジェクトに追加する必要があります。  
+ Ipipelinecontext は、 [Microsoft.BizTalk.Component.Interop](http://msdn.microsoft.com/library/microsoft.biztalk.component.interop.aspx)名前空間。 API を使用して、プロジェクトに、Microsoft.BizTalk.Pipeline (microsoft.biztalk.pipeline.dll 内) を追加する必要があります。  
   
 ## <a name="see-also"></a>参照  
  [OrchestrationEventStream](../core/orchestrationeventstream.md)   

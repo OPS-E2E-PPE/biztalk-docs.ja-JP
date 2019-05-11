@@ -14,11 +14,11 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 27dd4ff3e317f178c2b9085cf531a6b963aafc7f
-ms.sourcegitcommit: be6273d612669adfbb9dc9208aaae0a8437d4017
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "24015377"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65390228"
 ---
 # <a name="create-tibco-ems-receive-artifacts"></a>TIBCO EMS の作成の成果物の受信
 
@@ -92,7 +92,7 @@ TIBCO Enterprise Message System (EMS) の受信場所、 **URL**と**Target Name
   
          エンタープライズ シングル サインオン ツールで作成される関連アプリケーションは、TIBCO EMS などのアプリケーションを表します。 Microsoft BizTalk Adapter for TIBCO EMS は、アプリケーション ユーザーの資格情報を使用します。 これらの資格情報は、指定された関連アプリケーションのサーバー システムの SSO データベースから取得されます。  
   
-         関連アプリケーションを作成する方法の詳細については、[関連アプリケーションを作成する](../core/creating-affiliate-applications5.md)を参照してください。  
+         関連アプリケーションを作成する方法の詳細については、次を参照してください。[関連アプリケーションを作成する](../core/creating-affiliate-applications5.md)します。  
   
 5.  展開**ユーザーの資格情報**を入力し、**ユーザー名**と**パスワード**TIBCO EMS サーバーにアクセスします。  
   

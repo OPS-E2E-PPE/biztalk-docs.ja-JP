@@ -19,12 +19,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f012073f507026a03060a4ddf6c0574fe34186ef
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 59ede457ffd415d3ac7cae9a15ebe61cf46a1138
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37004355"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65372763"
 ---
 # <a name="streaming-and-the-sap-adapter"></a>ストリーミングと SAP アダプター
 [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]メッセージ自体と、クライアント アプリケーション間のストリーミングをサポートしています。 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]操作が呼び出され、SOAP メッセージを交換することで応答が返されます。 SOAP メッセージの本文は、XML ノードで構成されます。  
@@ -103,7 +103,7 @@ ms.locfileid: "37004355"
 |RFC 操作を受信します。|サポートされていません|サポートされていません||  
 |受信 tRFC 操作|サポートされていません|サポートされていません||  
   
- ノード値を送信し、SendIdoc および ReceiveIdoc 操作を使用してフラット ファイル (string) Idoc を受信するコードでは、ストリーミングを実装する方法については、[WCF チャネル モデルを使用して SAP でのフラット ファイル Idoc の Stream](../../adapters-and-accelerators/adapter-sap/stream-flat-file-idocs-in-sap-using-the-wcf-channel-model.md)を参照してください。  
+ ノード値を送信し、SendIdoc および ReceiveIdoc 操作を使用してフラット ファイル (string) Idoc を受信するコードでは、ストリーミングを実装する方法については、次を参照してください。 [WCF チャネル モデルを使用して SAP でのフラット ファイル Idoc の Stream](../../adapters-and-accelerators/adapter-sap/stream-flat-file-idocs-in-sap-using-the-wcf-channel-model.md)します。  
   
 ## <a name="streaming-support-in-the-wcf-service-model"></a>WCF サービス モデルでのストリーミング サポート  
  メッセージの XML 表現とメッセージのマネージ コード オブジェクトの表現の間を逆シリアル化のシリアル化とは、メッセージ全体をメモリに読み書きが必要です。 このため、ストリーミング ノードもノード値のストリーミングもが WCF サービス モデルからサポートされます。  

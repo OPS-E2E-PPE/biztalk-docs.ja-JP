@@ -16,21 +16,21 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7e598690b2249352a7e89341be8fa90110cd8c0f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: adb94c1f7897ecd848d63f9141d2c244fccd0a07
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36981619"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65282585"
 ---
 # <a name="private-process-tutorial"></a>プライベート プロセス チュートリアル
-このチュートリアルには、Microsoft® を使用して完全なエンド ツー エンド ソリューションが含まれています。[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]します。 ここでは、RosettaNet 準拠のソリューションを実装するために従う必要のある手順について詳しく説明します。この手順では、Contoso 社 (サプライヤー組織) と Fabrikam 社 (購入者組織) という 2 つの架空の会社間の取引シナリオを作成します。  
+このチュートリアルには、Microsoft® を使用して完全なエンド ツー エンド ソリューションが含まれています。[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]します。 このチュートリアルには、2 つの架空の企業間取引シナリオを作成して、RosettaNet 準拠のソリューションを実装するために従う必要のある手順が詳しく説明します。Contoso、サプライヤーの組織と Fabrikam の購入者組織の場合は。  
   
- このチュートリアルが実装するシナリオでは、3A2 - Price and Availability PIP (Partner Interface Process) を使用します。 購入の前に、購入者である Fabrikam が 3A2 - Price and Availability Request をサプライヤーである Contoso に送信します。 この PIP により、Fabrikam は製品に関する情報を取得し、その情報をビジネス ルールによって処理して、製品を購入するかどうかを決定することができます。 次の図は、3A2 PIP の交換時における開始側の組織と応答側の組織の通信パターンを示しています。  
+ このチュートリアルを実装するシナリオでは、3 a 2 Price and Availability パートナー インターフェイス プロセス (PIP) を使用します。 、購入する前に、その、購入者で、Fabrikam が 3 a 2 Price and Availability Request をサプライヤーである Contoso に送信します。 この PIP により、Fabrikam は製品を購入するかどうかを決定するビジネス ルールを処理できる、特定の商品に関する情報を取得します。 次の図は、3 a 2 PIP の交換中に、イニシエーターとレスポンダーの組織間の通信パターンを示します。  
   
  ![&#60;変更なし&#62;](../../adapters-and-accelerators/accelerator-rosettanet/media/rn3-intro-eetut-3a2flow.gif "RN3_Intro_EETut_3A2Flow")  
   
- このチュートリアルでは、Contoso ソリューションに焦点を当てています。 ここでは、ERP の統合、ビジネス ポリシーの実施、プライベート プロセスのカスタマイズ、およびセキュリティで保護された通信の使用など、RosettaNet ベースのソリューションの作成についてさまざまな角度から概説しています。  
+ このチュートリアルの焦点は、Contoso ソリューションです。 これには、RosettaNet ベースのソリューションを作成する、ERP の統合、ビジネス ポリシーの実施、プライベート プロセスのカスタマイズ、およびセキュリティで保護された通信の昇格のさまざまな側面について説明します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

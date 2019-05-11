@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 98e58ec9966d0e0534d078fc5741f267bf02e735
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c508f4839937315c64734f650fe84e87c60c0dcb
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36974339"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65292875"
 ---
 # <a name="unable-to-create-binding-configuration-element-for-editing"></a>編集対象のバインド構成要素を作成できません
 ## <a name="details"></a>詳細  
@@ -30,14 +30,14 @@ ms.locfileid: "36974339"
 |  イベント ソース   |                                                                  0                                                                   |
 |    コンポーネント    |                                                                  0                                                                   |
 |  シンボル名  |                                                                  0                                                                   |
-|  メッセージ テキスト   | 編集対象のバインド構成要素を作成できません。 BindingType プロパティおよび BindingConfiguration プロパティの値を確認してください。 |
+|  メッセージ テキスト   | 編集対象のバインド構成要素を作成できません。 BindingType プロパティおよび BindingConfiguration プロパティの値を確認します。 |
   
 ## <a name="explanation"></a>説明  
- ユーザー インターフェイスに表示するバインディング要素を読み込むときに、エラーが発生しました。 このエラーはカスタム バインディングの場合によく発生します。 構成ファイルにバインディング要素がないために、バインディングのドロップダウン リストで使用できない可能性があります。  
+ ユーザー インターフェイスに表示するバインド要素を読み込み中にエラーが発生しました。 このエラーは、多くの場合、カスタム バインドで発生します。 バインド要素は、構成ファイルが不足している可能性がありますし、したがってはバインディングのドロップダウン リストで使用できません。  
   
 ## <a name="user-action"></a>ユーザーの操作  
  値を確認、 **BindingType**と**BindingConfiguration**プロパティ。  
   
- バインディング構成要素の作成の詳細については、次の情報を参照してください。  
+ バインディング構成要素を作成する方法の詳細については、次のリソースを参照してください。  
   
 -   [WCF-NetMsmq アダプターの構成](../core/configuring-the-wcf-netmsmq-adapter.md)

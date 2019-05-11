@@ -1,5 +1,5 @@
 ---
-title: SAP の EXECQUERY コマンド オプション |Microsoft ドキュメント
+title: SAP での EXECQUERY コマンド オプション |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,21 +12,21 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0ae3bfc139b0290bc18d03fa7121a018d3668900
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 22260b750a56e36e33449182d9c4f6ecf38a40af
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22216226"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373420"
 ---
-# <a name="execquery-command-options-in-sap"></a>SAP の EXECQUERY コマンド オプション
-[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)] EXECQUERY コマンドを使用して ADO.NET アプリケーションからの SAP クエリを呼び出すクライアントを有効にします。 このセクションでは、EXECQUERY コマンドの構文に関する情報とその使用方法を説明します。 このセクションには、SAP システムで、クエリの定義を調べることで EXECQUERY 構文をフレームにについての情報も説明します。  
+# <a name="execquery-command-options-in-sap"></a>SAP での EXECQUERY コマンド オプション
+[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]を EXECQUERY コマンドを使用して ADO.NET アプリケーションからの SAP クエリを呼び出すクライアントを使用します。 このセクションでは、EXECQUERY コマンドの構文に関する情報とその使用方法を提供します。 このセクションでは、フレーム EXECQUERY 構文、クエリの定義で、SAP システムを検索する方法の情報も提供します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [SAP の EXECQUERY ステートメントの構文](../../adapters-and-accelerators/adapter-sap/syntax-for-an-execquery-statement-in-sap.md)  
+-   [SAP に EXECQUERY ステートメントの構文](../../adapters-and-accelerators/adapter-sap/syntax-for-an-execquery-statement-in-sap.md)  
   
--   [SAP クエリのパラメーターを EXECQUERY コマンドに変換します。](../../adapters-and-accelerators/adapter-sap/translate-sap-query-parameters-into-execquery-command.md)  
+-   [SAP クエリのパラメーターを EXECQUERY コマンドに変換する](../../adapters-and-accelerators/adapter-sap/translate-sap-query-parameters-into-execquery-command.md)  
   
 ## <a name="see-also"></a>参照  
- [使用して、.NET Framework Data Provider 用 mySAP Business Suite](../../adapters-and-accelerators/adapter-sap/use-the-net-framework-data-provider-for-mysap-business-suite.md)
+ [.NET Framework Data Provider for mySAP Business Suite の使用](../../adapters-and-accelerators/adapter-sap/use-the-net-framework-data-provider-for-mysap-business-suite.md)

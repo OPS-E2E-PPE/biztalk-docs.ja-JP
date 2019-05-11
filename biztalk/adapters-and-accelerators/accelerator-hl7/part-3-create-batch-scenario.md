@@ -15,12 +15,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7e487bfbe29ee2a34f2e50affa502d7f20592fe0
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 439e285ddc432a57add0a9a719553eb532f12bbf
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36975955"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65290022"
 ---
 # <a name="part-3-create-batch-scenario"></a>パート 3: バッチの作成シナリオ
 このシナリオには、バッチ メッセージに結合する、およびを先にバッチを送信する 2 つの受信メッセージの受信します。 BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)])、ソース、宛先からのメッセージに対して生成された 2 つの受信確認を含む、受信確認のバッチを返します。 次の図は、このチュートリアルのこの部分の処理フローを示します。  
@@ -43,18 +43,18 @@ ms.locfileid: "36975955"
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [手順 1: BatchControlPort 受信ポートの構成と有効化](../../adapters-and-accelerators/accelerator-hl7/step-1-configure-and-enable-the-batchcontrolport-receive-port.md)  
+-   [ステップ 1: BatchControlPort 受信ポートの構成と有効化](../../adapters-and-accelerators/accelerator-hl7/step-1-configure-and-enable-the-batchcontrolport-receive-port.md)  
   
--   [手順 2: バッチ オーケストレーションの有効化](../../adapters-and-accelerators/accelerator-hl7/step-2-enable-the-batch-orchestration.md)  
+-   [手順 2:バッチ オーケストレーションの有効化](../../adapters-and-accelerators/accelerator-hl7/step-2-enable-the-batch-orchestration.md)  
   
--   [手順 3: 送信先パーティーの作成と構成](../../adapters-and-accelerators/accelerator-hl7/step-3-create-and-configure-a-destination-party.md)  
+-   [ステップ 3:送信先パーティの作成と構成](../../adapters-and-accelerators/accelerator-hl7/step-3-create-and-configure-a-destination-party.md)  
   
--   [手順 4: バッチの作成シナリオのソース パーティーの構成](../../adapters-and-accelerators/accelerator-hl7/step-4-configure-the-source-party-for-the-create-batch-scenario.md)  
+-   [手順 4:バッチの作成シナリオのソース パーティの構成](../../adapters-and-accelerators/accelerator-hl7/step-4-configure-the-source-party-for-the-create-batch-scenario.md)  
   
--   [手順 5: メッセージ バッチの送信ポートの作成](../../adapters-and-accelerators/accelerator-hl7/step-5-create-the-send-port-for-the-message-batch.md)  
+-   [手順 5:メッセージ バッチの送信ポートの作成](../../adapters-and-accelerators/accelerator-hl7/step-5-create-the-send-port-for-the-message-batch.md)  
   
--   [手順 6: 受信確認バッチの送信ポートの作成](../../adapters-and-accelerators/accelerator-hl7/step-6-create-the-send-port-for-the-acknowledgment-batch.md)  
+-   [手順 6:受信確認バッチの送信ポートの作成](../../adapters-and-accelerators/accelerator-hl7/step-6-create-the-send-port-for-the-acknowledgment-batch.md)  
   
--   [手順 7: オーケストレーションの開始と BizTalk Server の再起動](../../adapters-and-accelerators/accelerator-hl7/step-7-start-the-orchestration-and-restart-biztalk-server.md)  
+-   [手順 7:オーケストレーションの開始と BizTalk Server の再起動](../../adapters-and-accelerators/accelerator-hl7/step-7-start-the-orchestration-and-restart-biztalk-server.md)  
   
--   [手順 8: バッチの作成シナリオのテスト](../../adapters-and-accelerators/accelerator-hl7/step-8-test-the-create-batch-scenario.md)
+-   [手順 8:バッチの作成シナリオのテスト](../../adapters-and-accelerators/accelerator-hl7/step-8-test-the-create-batch-scenario.md)

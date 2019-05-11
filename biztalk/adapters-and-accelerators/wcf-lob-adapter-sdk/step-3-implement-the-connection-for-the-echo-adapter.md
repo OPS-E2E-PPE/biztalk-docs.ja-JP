@@ -1,5 +1,5 @@
 ---
-title: '手順 3: エコー アダプターの接続の実装 |Microsoft Docs'
+title: 手順 3:エコー アダプターの接続の実装 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 22
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 15749fdca84508654fc915fff0c1abe7008de2f3
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: fb452db2e3bd2728ff6b7e9fe5ba3879d3efc41e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36988411"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65363222"
 ---
-# <a name="step-3-implement-the-connection-for-the-echo-adapter"></a>手順 3: エコー アダプターの接続を実装します。
+# <a name="step-3-implement-the-connection-for-the-echo-adapter"></a>手順 3:エコー アダプターの接続を実装します。
 ![手順 9 の 3](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-3of9.gif "Step_3of9")  
 
  **所要時間:** 45 分  
@@ -37,7 +37,7 @@ ms.locfileid: "36988411"
   次のセクションでは、接続を処理する方法、URI の構造は URI のさまざまな要素をプログラムで取得し、アダプター内での要素を使用する方法の理解を深めるためにこれら 3 つのクラスを更新します。  
 
 ## <a name="prerequisites"></a>前提条件  
- この手順を開始する前にする必要がありますが正常に完了して[手順 2: アダプターと接続のプロパティを分類](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-2-categorize-the-adapter-and-connection-properties.md)します。 明確に理解しておくと、 `Microsoft.ServiceModel.Channels.Common.IConnection`、 `Microsoft.ServiceModel.Channels.Common.IConnectionFactory`、および`Microsoft.ServiceModel.Channels.Common.ConnectionUri`クラス。  
+ この手順を開始する前にする必要がありますが正常に完了して[手順 2。アダプターおよび接続のプロパティを分類](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-2-categorize-the-adapter-and-connection-properties.md)します。 明確に理解しておくと、 `Microsoft.ServiceModel.Channels.Common.IConnection`、 `Microsoft.ServiceModel.Channels.Common.IConnectionFactory`、および`Microsoft.ServiceModel.Channels.Common.ConnectionUri`クラス。  
 
 ## <a name="connection-related-classes"></a>接続に関連するクラス  
  [!INCLUDE[afdevwizardnameshort](../../includes/afdevwizardnameshort-md.md)] 3 つの派生クラス、EchoAdapterConnection、EchoAdapterConnectionUri、および EchoAdapterConnectionFactory が生成されます。 関連付けられた各メソッドの簡単な概要を次に示します。  
@@ -66,13 +66,13 @@ ms.locfileid: "36988411"
 |               **方法**               |                                                                                                                                       **[説明]**                                                                                                                                        |
 |----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |        パブリック オーバーライドの Uri の Uri         |                                                                                                    取得し、Uri を設定します。 Uri 文字列を作成するを取得し、Uri 文字列の解析を設定します。                                                                                                     |
-|   パブリック EchoAdapterConnectionUri()    |                                                                                                                    ConnectionUri クラスの新しいインスタンスを初期化します。                                                                                                                    |
+|   public EchoAdapterConnectionUri()    |                                                                                                                    ConnectionUri クラスの新しいインスタンスを初期化します。                                                                                                                    |
 | パブリック オーバーライド文字列 SampleUriString | Returns EchoAdapter.SCHEME + "://{hostname}/{application}?enableAuthentication={True&#124;False}".<br /><br /> としてこの戻り値の文字列が表示されます、**例**で、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]ツールを次の図に示すようにします。 |
 
  ![](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/e4b9d0b8-f07f-4342-815f-9ef1507b0980.gif "e4b9d0b8-f07f-4342-815f-9ef1507b0980")  
 
 ## <a name="echo-adapter-connection-uri"></a>エコー アダプターの接続 URI  
- サンプルのエコー アダプターの接続 URI のとおりです: EchoAapter.SCHEME://{hostname}/{application}?enableAuthentication={true&#124;false}  
+ サンプル エコー アダプターの接続 URI として説明します。EchoAapter.SCHEME://{hostname}/{application}?enableAuthentication={true&#124;false}  
 
  EchoAapter.SCHEME echov2 であるため、接続 URI です。  
 
@@ -101,7 +101,7 @@ ms.locfileid: "36988411"
 |---------------------------|----------------|  
 |lobhostname|`System.Uri.Host%2A` ホスト名を取得するには|  
 |Lobapplication|`System.Uri.AbsolutePath%2A` ターゲット アプリケーションの名前を取得するには|  
-|enableAuthentation = false|GetQueryStringValue("enableAuthentication")<br /><br /> この URI の要素を使用して、ユーザーの資格情報を検証する**注:** GetQueryStringValue 静的メソッドで定義されているは、 `Microsoft.ServiceModel.Channels.Common.ConnectionUri`|  
+|enableAuthentation = false|GetQueryStringValue("enableAuthentication")<br /><br /> この URI の要素を使用して、ユーザーの資格情報を検証する**に注意してください。** GetQueryStringValue 静的メソッドで定義されているは、 `Microsoft.ServiceModel.Channels.Common.ConnectionUri`|  
 |echoInUpperValue=false|GetQueryStringValue("echoInUpperValue")<br /><br /> 受信の文字列を大文字に変換するためには、この URI の要素を使用します。|  
 
 ### <a name="enableauthentication-uri-element"></a>EnableAuthentication URI 要素  
@@ -184,7 +184,7 @@ ms.locfileid: "36988411"
     ```  
 
 ## <a name="updating-the-echoadapterconnectionfactory"></a>EchoAdapterConnectionFactory を更新しています  
- EchoAdapterConnectionFactory コンストラクターを実装し、ClientCredentials、ConnectionUri という 2 つのプロパティを追加します。  
+ EchoAdapterConnectionFactory コンス トラクターを実装し、ClientCredentials、ConnectionUri という 2 つのプロパティを追加します。  
 
 #### <a name="to-update-the-echoadapterconnectionfactory-class"></a>EchoAdapterConnectionFactory クラスを更新するには  
 
@@ -208,7 +208,7 @@ ms.locfileid: "36988411"
     private EchoAdapterConnectionUri connectionUri;  
     ```  
 
-4.  Visual Studio エディターで検索、 **EchoAdapterConnectionFactory**メソッド。 内で、 **EchoAdapterConnectionFactory**コンストラクターのメソッドの前に"}"、最後のステートメントとして次の 1 つのステートメントを追加します。  
+4.  Visual Studio エディターで検索、 **EchoAdapterConnectionFactory**メソッド。 内で、 **EchoAdapterConnectionFactory**コンス トラクターのメソッドの前に"}"、最後のステートメントとして次の 1 つのステートメントを追加します。  
 
     ```csharp  
     this.connectionUri = connectionUri as EchoAdapterConnectionUri;  
@@ -258,7 +258,7 @@ ms.locfileid: "36988411"
     ```  
 
 ## <a name="updating-the-echoadapterconnectionuri"></a>EchoAdapterConnectionUri を更新しています  
- EchoAdapterConnectionUri 既定のコンストラクターを実装して、EchoAdapterConnectionUri(Uri uri) コンストラクターをオーバー ロードされたパブリック Uri Uri プロパティをオーバーライドします。  
+ EchoAdapterConnectionUri 既定のコンス トラクターを実装して、EchoAdapterConnectionUri(Uri uri) コンス トラクターをオーバー ロードされたパブリック Uri Uri プロパティをオーバーライドします。  
 
 #### <a name="to-update-the-echoadapterconnectionuri-class"></a>EchoAdapterConnectionUri クラスを更新するには  
 
@@ -266,13 +266,13 @@ ms.locfileid: "36988411"
 
 2.  Visual Studio エディターで、任意の場所を右クリック コンテキスト メニューで、エディター内をポイント**アウトライン**、 をクリックし、**アウトラインの中止**します。  
 
-3.  Visual Studio エディターで検索、**コンストラクター**リージョン。 内で、 **EchoAdapterConnectionUri()** 既定コンストラクターを次のステートメントを追加します。  
+3.  Visual Studio エディターで検索、**コンス トラクター**リージョン。 内で、 **EchoAdapterConnectionUri()** 既定コンス トラクターを次のステートメントを追加します。  
 
     ```csharp  
     Uri = new Uri("echov2://lobhostname/lobapplication?enableauthentication=False");  
     ```  
 
-4.  Visual Studio エディターでの内部、 **EchoAdapterConnectionUri (Uri の uri)** コンストラクターをオーバー ロードされ、次のステートメントを追加します。  
+4.  Visual Studio エディターでの内部、 **EchoAdapterConnectionUri (Uri の uri)** コンス トラクターをオーバー ロードされ、次のステートメントを追加します。  
 
     ```csharp  
     Uri = uri;  
@@ -326,7 +326,7 @@ ms.locfileid: "36988411"
 7.  **[ビルド]** メニューの **[ソリューションのビルド]** をクリックします。 プロジェクトを正常にコンパイルする必要があります。 そうでない場合は、上記のすべての手順に従っていることを確認します。  
 
 > [!NOTE]
->  これで作業が保存されました。 安全にこの時点で Visual Studio を閉じて、次の手順に進むまたは[手順 4: エコー アダプターのメタデータ参照ハンドラーを実装する](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-4-implement-the-metadata-browse-handler-for-the-echo-adapter.md)します。  
+>  これで作業が保存されました。 安全にこの時点で Visual Studio を閉じて、次の手順に進むまたは[手順 4。エコー アダプターのメタデータ参照ハンドラーを実装する](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-4-implement-the-metadata-browse-handler-for-the-echo-adapter.md)します。  
 
 ## <a name="what-did-i-just-do"></a>でしただけ何か。  
  エコー アダプターの接続を実装しました。 接続のコンポーネントについて説明しました、 [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]、接続 URI の基本的な構造、URI の要素をプログラムで解析する方法および URI 要素を使用して、アダプターの機能を変更する方法。  
@@ -335,5 +335,5 @@ ms.locfileid: "36988411"
  メタデータの参照、検索、および機能、および送信のメッセージ交換の解決を実装します。 最後に、ビルドし、アダプターを展開します。  
 
 ## <a name="see-also"></a>参照  
- [手順 4: エコー アダプターのメタデータ参照ハンドラーを実装する.](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-4-implement-the-metadata-browse-handler-for-the-echo-adapter.md)   
- [チュートリアル 1: エコー アダプターを開発する](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-1-develop-the-echo-adapter.md)
+ [手順 4:エコー アダプターのメタデータ参照ハンドラーを実装します。](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-4-implement-the-metadata-browse-handler-for-the-echo-adapter.md)   
+ [チュートリアル 1:エコー アダプターを開発する](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-1-develop-the-echo-adapter.md)

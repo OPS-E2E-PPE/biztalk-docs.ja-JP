@@ -16,19 +16,19 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dbb5932d65bce2b17ebfca3645b8c755549b9a9c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 37cf1deb1ce956c94ffd44cc416cdf6970c81341
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36968139"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65290406"
 ---
 # <a name="mllp-receive-adapter-processing"></a>MLLP 受信アダプターの処理
 最小下位レイヤー プロトコル (MLLP) では、両方の一方向と双方向の要求応答モード アダプターのサポートを受信します。 アダプターをリッスンし、接続を受け入れます。  
   
  MLLP 受信アダプターは双方向のモードで動作、アダプターしないメッセージが表示されます、新しい接続から、パイプラインの前のメッセージの受信確認 (ACK) が生成されるまで。  
   
-## <a name="configuration-parameters"></a>構成パラメータ  
+## <a name="configuration-parameters"></a>構成パラメーター  
  受信ハンドラーのパラメーターは、BizTalk ホスト レベルで構成されているし、関連付けられているすべての MLLP 受信場所に適用されます。  
   
 |パラメーター|新しく使用する機能|  
@@ -38,11 +38,11 @@ ms.locfileid: "36968139"
 ## <a name="acknowledgments-with-the-two-way-mllp-receive-adapter"></a>双方向の MLLP の受信確認の受信アダプター  
  アダプターが Microsoft BizTalk Accelerator 用 HL7 メッセージを受信する双方向の MLLP の受信時に ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 次の種類の確認を生成できます。  
   
-- HL7 拡張コミットの確認: このシナリオで[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]同じ接続上でコミットの確認を送信します。 これは、別の送信ポートでアプリケーションを受け入れる ACK を送信します。  
+- HL7 強化されたコミットの確認:このシナリオで[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]同じ接続上でコミットの確認を送信します。 これは、別の送信ポートでアプリケーションを受け入れる ACK を送信します。  
   
-- アプリケーションの同意 ACK: このシナリオで[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]同じ接続上でアプリケーションに同意の確認を送信します。  
+- アプリケーションには、ACK がそのまま使用します。このシナリオで[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]同じ接続上でアプリケーションに同意の確認を送信します。  
   
-- 静的 ACK: このシナリオで[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]ACK を同じ接続で送信します。  
+- 静的な確認:このシナリオで[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]ACK を同じ接続で送信します。  
   
 - 生成された確認の種類によって異なります、[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]メッセージを送信するパーティのエクスプ ローラーの構成設定。 MSH 15 のフィールドと個々 のメッセージの 16 の値は、この設定を上書きできます。 ただし、静的 Ack を想定するアプリケーションでは、構成できるでのみ設定[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]構成エクスプ ローラー。  
   
@@ -77,9 +77,9 @@ ms.locfileid: "36968139"
   
 |カウンター|説明|  
 |-------------|-------------|  
-|バイト|受信または送信されたすべてのドキュメントのペイロードのサイズ。|  
+|Bytes|受信または送信されたすべてのドキュメントのペイロードのサイズ。|  
 |バイト数/秒|受信または送信されたペイロードの現在のスループット。|  
-|Documents processed|**MLLP 受信**:<br /><br /> ドキュメントの数は、メッセージ ボックス データベースに正常に配信します。<br /><br /> **MLLP 送信**:<br /><br /> ドキュメントの数は、リモート アプリケーションに正常に配信します。|  
+|処理されたドキュメント|**MLLP 受信**:<br /><br /> ドキュメントの数は、メッセージ ボックス データベースに正常に配信します。<br /><br /> **MLLP 送信**:<br /><br /> ドキュメントの数は、リモート アプリケーションに正常に配信します。|  
 |失敗したドキュメント|**MLLP 受信**:<br /><br /> ドキュメントの数は、メッセージ ボックス データベースに正常に配信します。<br /><br /> **MLLP 送信**:<br /><br /> ドキュメントの数は、リモート アプリケーションに正常に配信します。|  
 |[接続状態]|アダプターの接続の状態 1 または 0 (1 = 接続されている)。|  
   

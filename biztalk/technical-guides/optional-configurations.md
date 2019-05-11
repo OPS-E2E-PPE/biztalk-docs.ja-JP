@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f1ee8c10485522db82040210eff2a7afbc785d25
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 0d97a23ef64c84d4ec39511fc2138bd767ea64af
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36992467"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65291370"
 ---
 # <a name="optional-configurations"></a>オプションの構成
 BizTalk Server 管理パックをインポートした後、[監視] ウィンドウのナビゲーション ウィンドウが自動的に検出されるオブジェクトの種類が表示されます。 オブジェクトの種類の一覧は、次を参照してください。 [、管理パックで検出されるオブジェクト](../technical-guides/objects-the-management-pack-discovers.md)セクション。 によって検出されるオブジェクトの既定の検出構成を変更することができます、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理パック。 Operations Manager 2007 R2 または 2012 の上書き機能を使用して、構成設定を変更します。  
@@ -40,4 +40,4 @@ BizTalk Server 管理パックをインポートした後、[監視] ウィン�
   
    上書きの設定を変更すると、オブジェクトの種類が自動検出し、[監視] ウィンドウで表示されます[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]します。  
   
-   上書きの設定方法の詳細については、[Operations Manager 2007 R2 または 2012 オーバーライド](http://go.microsoft.com/fwlink/?LinkId=86870)(http://go.microsoft.com/fwlink/?LinkId=86870)を参照してください。
+   上書きの設定方法の詳細については、次を参照してください。 [Operations Manager 2007 R2 または 2012 オーバーライド](http://go.microsoft.com/fwlink/?LinkId=86870)(http://go.microsoft.com/fwlink/?LinkId=86870)します。

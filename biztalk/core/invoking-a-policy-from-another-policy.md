@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 39f1366ccbf199db02bc60c0caf9015aba0cfc03
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 332bf8928fd8abfba6b5da1068df83bb4ecdbb68
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36994035"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65329976"
 ---
 # <a name="invoking-a-policy-from-another-policy"></a>別のポリシーからのポリシーの呼び出し
 次のいずれかのメソッドを使用すると、ポリシー (子) を別のポリシー (親) から呼び出すことができます。  
@@ -36,7 +36,7 @@ ms.locfileid: "36994035"
   
 ##### <a name="to-add-the-policyexecute-method-as-an-action-to-a-policy"></a>Policy.Execute メソッドをアクションとして親ポリシーに追加するには  
   
-1.  [ファクト エクスプ ローラー] ウィンドウ、 **.NET クラス**タブ。  
+1.  [ファクト エクスプ ローラー] ウィンドウ、 **.NET クラス**タブです。  
   
 2.  右クリック **.NET アセンブリ**、 をクリックし、**参照**します。  
   
@@ -64,7 +64,7 @@ ms.locfileid: "36994035"
 12. ドラッグ**DebugTrackingInterceptor**で**Microsoft.RuleEngine**の 2 番目の引数、 **Policy.Execute**メソッド。  
   
     > [!NOTE]
-    >  この操作を実行する場合、クライアントがのインスタンスを渡す必要があります、 **DebugTrackingInterceptor**クラスをインスタンスをファクトとして子ポリシーに渡します親ポリシーのファクトとして。 コンストラクターをドラッグする代わりに、 **DebugTrackingInterceptor**クラスのインスタンスが自動的に作成するようにします。  
+    >  この操作を実行する場合、クライアントがのインスタンスを渡す必要があります、 **DebugTrackingInterceptor**クラスをインスタンスをファクトとして子ポリシーに渡します親ポリシーのファクトとして。 コンス トラクターをドラッグする代わりに、 **DebugTrackingInterceptor**クラスのインスタンスが自動的に作成するようにします。  
   
 ### <a name="modifying-the-client-application-that-invokes-the-parent-policy"></a>親ポリシーを呼び出すクライアント アプリケーションの変更  
  親ポリシーを呼び出すクライアントのインスタンスを作成、**ポリシー**クラスをパラメーターとして子ポリシーの名前をファクトとして他のファクトと共に親ポリシーに渡します。 このアクションを説明するサンプル コードを次に示します。  
@@ -107,7 +107,7 @@ policy.Dispose();
     }   
     ```  
   
-3.  必ず、 **StaticSupport**レジストリ キーが 1 または 2 に設定します。 レジストリ キーの詳細については、[クラスの静的メンバーを呼び出す](../core/invoking-static-members-of-a-class.md)を参照してください。  
+3.  必ず、 **StaticSupport**レジストリ キーが 1 または 2 に設定します。 レジストリ キーの詳細については、次を参照してください。[クラスの静的メンバーを呼び出す](../core/invoking-static-members-of-a-class.md)します。  
   
     > [!NOTE]
     >  静的メソッドの代わりにインスタンス メソッドを使用することもできます。 インスタンス メソッドを使用する場合、クライアントは、ヘルパー .NET クラスのインスタンスをファクトとして親ポリシーに渡す必要があります。  

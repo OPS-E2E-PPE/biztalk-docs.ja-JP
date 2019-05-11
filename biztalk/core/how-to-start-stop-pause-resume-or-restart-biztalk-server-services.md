@@ -13,12 +13,12 @@ caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1b83e7573117749ce78789de0ba21ef63ebed217
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 85e8c353e4a8fa157352aa62238b107a07831465
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36987891"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65333987"
 ---
 # <a name="restart-biztalk-services-or-shut-down-the-biztalk-server"></a>、BizTalk サービスを再起動またはシャット ダウン、BizTalk Server
 
@@ -26,7 +26,7 @@ ms.locfileid: "36987891"
   
 |名前|説明|スタートアップの種類|依存関係|  
 |----------|-----------------|------------------|------------------|  
-|BizTalk Service BizTalk Group:  *\<[biztalkserverapplication]\>*|BizTalk Server アプリケーション サービスを提供します。|自動|エンタープライズ シングル サインオン (SSO) サービス<br />イベント ログ<br />-リモート プロシージャ コール (RPC)|  
+|BizTalk Service BizTalk Group:*\<BizTalkServerApplication\>*|BizTalk Server アプリケーション サービスを提供します。|自動|エンタープライズ シングル サインオン (SSO) サービス<br />イベント ログ<br />-リモート プロシージャ コール (RPC)|  
 |エンタープライズ シングル サインオン サービス|エンタープライズ アプリケーションにシングル サインオン サービスを提供します。|自動|ローカルにインストールされる SQL Server の場合<br /><br /> -COM + システム アプリケーション<br />-リモート プロシージャ コール (RPC)<br />SQL Server (MSSQLSERVER)<br /><br /> リモートにインストールされる SQL Server の場合<br /><br /> -COM + システム アプリケーション<br />-リモート プロシージャ コール (RPC) なし|  
 |ルール エンジン更新サービス|ポリシーの展開または展開解除について、ユーザーに通知します。|Automatic|なし|  
   
@@ -39,7 +39,7 @@ ms.locfileid: "36987891"
   
 ### <a name="use-services-in-control-panel"></a>コントロール パネルの サービスを使用します。  
   
-1.  [サービス] を開きます。 クリックして**開始**、 をクリックして**実行**、し、入力**services.msc**します。  
+1.  [サービス] を開きます。 をクリックして**開始**、 をクリックして**実行**、し、入力**services.msc**です。  
   
 2.  適切な BizTalk Server サービスを右クリックし、をクリックし、**開始**、**停止**、**一時停止**、**再開**、または**再起動**します。  
   
@@ -67,7 +67,7 @@ ms.locfileid: "36987891"
 
     |BizTalk サービス|ServiceName|  
     |---|---|  
-    |BizTalk サービス BizTalk グループ: BizTalkServerApplication|btssvc$biztalkserverapplication|  
+    |BizTalk Service BizTalk Group:BizTalkServerApplication|btssvc$biztalkserverapplication|  
     |エンタープライズ シングル サインオン サービス|Entsso|  
     |ルール エンジン更新サービス|ruleengineupdateservice|
   
@@ -78,9 +78,9 @@ ms.locfileid: "36987891"
 -   BizTalk Server 管理者グループまたは BizTalk Server Operators グループのメンバーであるアカウントでサインインします。 
 
 ### <a name="task-overview"></a>タスクの概要
-1. 受信場所を無効にし、アクティブな各アプリケーションの部分停止を実行することによってオーケストレーションと送信ポートを停止します。 アプリケーションの削除または再展開を行う場合は、完全停止を実行する必要があります。 詳細については、[BizTalk アプリケーション開始および停止方法](../core/how-to-start-and-stop-a-biztalk-application.md)を参照してください。  
+1. 受信場所を無効にし、アクティブな各アプリケーションの部分停止を実行することによってオーケストレーションと送信ポートを停止します。 アプリケーションの削除または再展開を行う場合は、完全停止を実行する必要があります。 詳細については、次を参照してください。 [BizTalk アプリケーション開始および停止方法](../core/how-to-start-and-stop-a-biztalk-application.md)します。  
   
-2. ホスト インスタンスを停止します。 詳細については、[ホスト インスタンスを停止する方法](../core/how-to-stop-a-host-instance.md)を参照してください。  
+2. ホスト インスタンスを停止します。 詳細については、次を参照してください。[ホスト インスタンスを停止する方法](../core/how-to-stop-a-host-instance.md)します。  
   
 3. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] サービスをシャットダウンします。 参照してください**開始、停止、一時停止、再開、または BizTalk Server サービスを再起動する方法**(」を参照)。
   
@@ -88,11 +88,11 @@ ms.locfileid: "36987891"
   
     この手順の進め方は、使用している IIS のバージョンにより若干異なります。 IIS 6 では、アプリケーション プールと Web サイトを停止できます。 IIS 6 では、IIS Admin Service を停止して、アプリケーション プールと Web サイトを含むすべての IIS アクティビティをシャットダウンすることもできます。 IIS 7.0 は IIS 6.0 よりもモジュール化が進んでおり、1 つのスイッチですべての IIS 7.0 アクティビティを停止することはできないので、Web サイトとアプリケーション プールを個別に停止する必要があります。  
   
-    アプリケーション プールおよび仮想アプリケーション (Web サイトおよび Web サービス) BizTalk Server で使用されるの一覧は、[BizTalk Server の構成](../install-and-config-guides/configure-biztalk-server.md)を参照してください。  
+    アプリケーション プールおよび仮想アプリケーション (Web サイトおよび Web サービス) BizTalk Server で使用されるの一覧は、次を参照してください。 [BizTalk Server の構成](../install-and-config-guides/configure-biztalk-server.md)します。  
   
-   開始して、IIS アプリケーション プールを停止しています。 詳細については、[ http://go.microsoft.com/fwlink/?LinkID=140513](http://go.microsoft.com/fwlink/?LinkID=140513)を参照してください。  
+   開始して、IIS アプリケーション プールを停止しています。 詳細については、次を参照してください。 [ http://go.microsoft.com/fwlink/?LinkID=140513](http://go.microsoft.com/fwlink/?LinkID=140513)します。  
   
-   開始して、IIS で Web サーバーを停止する方法については、[ http://go.microsoft.com/fwlink/?LinkId=140695](http://go.microsoft.com/fwlink/?LinkId=140695)を参照してください。  
+   開始して、IIS で Web サーバーを停止する方法については、次を参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=140695](http://go.microsoft.com/fwlink/?LinkId=140695)します。  
   
 ## <a name="see-also"></a>参照  
  [BizTalk アプリケーション開始および停止する方法](../core/how-to-start-and-stop-a-biztalk-application.md)   

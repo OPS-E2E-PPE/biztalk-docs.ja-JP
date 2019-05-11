@@ -1,5 +1,5 @@
 ---
-title: '手順 11: オーケストレーション変数の作成 |Microsoft Docs'
+title: 手順 11:オーケストレーション変数の作成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,14 +15,14 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dfe49f533989e339e6eb4318460a444ed0d8b741
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1675a2e00219b8afc2f7c94c755c12140e5f3665
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36991163"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65288991"
 ---
-# <a name="step-11-create-orchestration-variables"></a>手順 11: オーケストレーション変数を作成します。
+# <a name="step-11-create-orchestration-variables"></a>手順 11:オーケストレーション変数を作成します。
 この手順では、オーケストレーションによって送受信されたメッセージ インスタンスのオーケストレーション変数を作成します。  
   
  BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) シリアライザーでは、次の要素の名前。 マルチパート メッセージを作成するには、その他の部分の名前と、シリアライザーは、メッセージを拒否します。 メッセージ要素の名前は次のとおりです。  
@@ -97,7 +97,7 @@ ms.locfileid: "36991163"
   
 21. **ファイル** メニューのをクリックして**すべて保存**します。  
   
-    続行する[手順 12: オーケストレーション図形の構成](../../adapters-and-accelerators/accelerator-hl7/step-12-configure-orchestration-shapes.md)します。  
+    続行する[手順 12。オーケストレーション図形の構成](../../adapters-and-accelerators/accelerator-hl7/step-12-configure-orchestration-shapes.md)します。  
   
 ## <a name="see-also"></a>参照  
  [メッセージ強化のチュートリアル](../../adapters-and-accelerators/accelerator-hl7/message-enrichment-tutorial.md)

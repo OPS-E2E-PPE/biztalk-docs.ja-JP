@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10818 |Microsoft Docs'
+title: シングル サインオン:イベント 10818 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 328e4286ed024923ab66e147e806ef5db5065b77
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: aa489e88a3742dfb7acbd1995a6f996bdc58142c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36972435"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65295915"
 ---
-# <a name="single-sign-on-event-10818"></a>シングル サインオン: イベント 10818
+# <a name="single-sign-on-event-10818"></a>シングル サインオン:イベント 10818
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                 |
@@ -30,10 +30,10 @@ ms.locfileid: "36972435"
 |  イベント ソース   |                                     ENTSSO                                      |
 |    コンポーネント    |                                       なし                                       |
 |  シンボル名  |                         ENTSSO_E_AMBIGUOUS_SYNC_FIELDS                          |
-|  メッセージ テキスト   | アプリケーションのフィールドは 2 つであるか、または 1 つのフィールドだけが同期の対象としてマークされている必要があります。 |
+|  メッセージ テキスト   | アプリケーションに 2 つのフィールドが必要または同期の 1 つのみのフィールドをマークする必要があります。 |
   
 ## <a name="explanation"></a>説明  
- フィールドが 2 つ以上ある場合、パスワードの同期を設定できるのは 1 つだけです。  
+ 複数の 2 つのフィールドがある場合、1 つだけ必要があります指定はパスワードの同期です。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- この状況を解決するために、アプリケーションをいったん削除し、これらのガイドラインに沿って再作成する必要があります。
+ このような状況を解決するには、するには、アプリケーションを削除し、再作成するため、これらのガイドラインに従います。

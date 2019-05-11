@@ -18,12 +18,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9e4018b2fc52d94f26838b81b56dd26472cb9391
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3255f83418f78a35ba4c905212ed8ccc91882ae1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36985091"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65285308"
 ---
 # <a name="validation-tab"></a>[検証] タブ
 使用する、**検証** タブを受信し、生成されたメッセージのメッセージの検証オプションを選択します。  

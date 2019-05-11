@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5700b3adb0769edff4ec820b4d95353383c08e6d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: acd13510e9052f1f14f38f30cf263949f65bf5fa
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36968019"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65281890"
 ---
 # <a name="send-pipeline"></a>送信パイプライン
 このサンプルは、作業 Microsoft®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]送信パイプラインをアプリケーション用にカスタマイズできます。  
@@ -34,7 +34,7 @@ ms.locfileid: "36968019"
 > [!NOTE]
 >  Visual Studio のパイプライン デザイナーで、上記の BTARN 送信パイプラインのコンポーネントのいずれかを選択しても、そのコンポーネントのプロパティは [プロパティ] ペインには表示されません。 コンポーネントのプロパティを表示する必要があります、コンポーネントを追加するツールボックスを使用して、 **[ツールボックス アイテムの**ツール] メニュー コマンド;、送信パイプラインから既存コンポーネントを削除してからコンポーネントを追加し、パイプライン デザイナーで適切なステージにツールボックスです。 コンポーネントを選択すると、そのコンポーネントのプロパティが [プロパティ] ペインに表示されます。  
   
- このパイプラインでは、このパイプライン内のメッセージ フローのコンポーネントに関する詳細については、[BTARN 送信パイプライン](../../adapters-and-accelerators/accelerator-rosettanet/btarn-send-pipeline.md)を参照してください。  
+ このパイプラインでは、このパイプライン内のメッセージ フローのコンポーネントに関する詳細については、次を参照してください。 [BTARN 送信パイプライン](../../adapters-and-accelerators/accelerator-rosettanet/btarn-send-pipeline.md)します。  
   
 ## <a name="see-also"></a>参照  
  [パイプラインのサンプル](../../adapters-and-accelerators/accelerator-rosettanet/pipeline-samples.md)   

@@ -12,69 +12,69 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 01fa66b344548654a4d2e2e2f2b8700b604ec0e7
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d987164eeb855bfc991e9b4f1b0c8b444b99407b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36998507"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65325119"
 ---
 # <a name="message-enrichment-sample-biztalk-server-sample"></a>メッセージ強化サンプル (BizTalk Server サンプル)
-このメッセージ強化サンプルでは、X12 ドキュメントおよび EDIFACT ドキュメント用のインターチェンジ ヘッダーをトランザクション セット メッセージに追加する方法を示します。  
+メッセージ強化サンプルでは、X12 と EDIFACT ドキュメントのトランザクション セット メッセージにインターチェンジ ヘッダーを追加する方法を示します。  
   
 ## <a name="what-this-sample-does"></a>このサンプルの処理  
- このサンプルでは、EDIFACT 用の UNA、UNB、および UNG ヘッダーと X12 用の ISA ヘッダーをトランザクション セットに追加する方法を示します。 具体的には、このサンプルは以下の処理を行います。  
+ このサンプルでは、edifact では、UNA、UNB、および UNG ヘッダーと x12 の場合、ISA ヘッダーをトランザクション セットに追加する方法を示します。 具体的には、このサンプルは以下の処理を行います。  
   
-1.  テスト メッセージを \Message Enrichment\In フォルダーにドロップすると、受信ポートがそのメッセージを取得して処理し、MessageBox にドロップします。  
+1.  \Message Enrichment\In フォルダーにテスト メッセージをドロップすると、受信ポートは、ピックアップする、処理、および、MessageBox にドロップします。  
   
-2.  MessageEnrichmentOrchestration は、受信図形に対して設定されているフィルター式に基づいてメッセージにサブスクライブするため、このテスト メッセージを MessageBox から取得します。  
+2.  MessageEnrichmentOrchestration から取得し、テスト メッセージ、メッセージ ボックスでは、受信図形に対して設定するフィルター式に基づいてメッセージをサブスクライブしています。  
   
-3.  オーケストレーションは、このメッセージのコンテキスト プロパティからインターチェンジ ヘッダーを読み取ります。  
+3.  オーケストレーションは、メッセージのコンテキスト プロパティからインターチェンジ ヘッダーを読み取ります。  
   
     > [!NOTE]
-    >  UNA ヘッダーと UNG ヘッダーは EDIFACT メッセージに含まれている必要がないため、メッセージのコンテキスト プロパティに含まれていない場合があります。  
+    >  UNA と UNG ヘッダーは、メッセージのコンテキスト プロパティでない可能性がありますので、EDIFACT メッセージのオプションです。  
   
-4.  オーケストレーションは、インターチェンジ ヘッダーとメッセージ本文の両方を単一の新規メッセージに書き込みます。  
+4.  オーケストレーションでは、インターチェンジ ヘッダーとメッセージ本文の両方を 1 つの新しいメッセージに書き込みます。  
   
-5.  オーケストレーションは、ReceivePortNameCorrelationType 関連付けの種類で設定されている追加のプロパティをメッセージに昇格させます。 これにより、オーケストレーションのユーザーは、サブスクリプションに必要なプロパティの一覧を選択できるようになります。 これらのプロパティは、メッセージの構築図形に書き込まれます。 元のメッセージに書き込まれたすべてのコンテキスト プロパティが新規メッセージに書き込まれるわけではありません。  
+5.  オーケストレーションは、メッセージには、ReceivePortNameCorrelationType 関連付けの種類に設定されている追加のプロパティを昇格させます。 サブスクリプションに必要なプロパティの一覧を選択するオーケストレーションのユーザーは、します。 これらのプロパティは、メッセージの構築図形で記述されます。 元のメッセージに書き込まれたすべてのコンテキスト プロパティは、新しいメッセージに書き込まれます。  
   
-6.  オーケストレーションは、新規メッセージを MessageBox にドロップします。  
+6.  オーケストレーションは、メッセージ ボックスに新しいメッセージを削除します。  
   
-7.  送信ポートは、新規メッセージを取得し、ファイル アダプター経由で \Message Enrichment\Out フォルダーに送信します。  
+7.  送信ポートでは、新しいメッセージを取得して、\Message Enrichment\Out フォルダーにファイル アダプターを経由して送信します。  
   
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
- このサンプルにある、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]インストール フォルダー: [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]sdk \samples\edi\message Enrichment。  
+ このサンプルにある、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]インストール フォルダー。[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Sdk \samples\edi\message Enrichment。  
   
  次の表は、このサンプルのファイルとその目的を示しています。  
   
 |ファイル|説明|  
 |---------------|-----------------|  
-|Cleanup.bat|サンプル シナリオの展開を解除します。 このファイルが正しく実行されるには、オーケストレーションのアクティブなインスタンスがないことが必要です。 アクティブなインスタンスがある場合、ファイルは正しく実行されません。|  
-|MessageEnrichment.sln|MessageEnrichment プロジェクトと MessageEnrichmentLibrary プロジェクトが含まれています。|  
-|Setup.bat|受信ポート、送信ポート、およびオーケストレーションから構成されるサンプル シナリオを展開します。|  
-|EDIFACT_example.edi|入力 EDIFACT メッセージです。|  
-|X12_example.edi|入力 X12 メッセージです。|  
-|MessageEnrichment.btproj|MessageEnrichment のオーケストレーションとスキーマが含まれたプロジェクトです。|  
-|MessageEnrichmentBindings.xml|オーケストレーション、ポート、およびパーティのバインドが含まれたファイルです。|  
-|MessageEnrichmentOrchestration.odx|ヘッダーをメッセージに追加するオーケストレーションです。|  
-|MessageEnrichmentOrchestration.odx.cs|ヘッダーをメッセージに追加するオーケストレーション コードです。|  
+|Cleanup.bat|この例のシナリオの展開を解除します。 成功するために必要がありますいないオーケストレーションのアクティブなインスタンス。 それ以外の場合、これは失敗します。|  
+|MessageEnrichment.sln|MessageEnrichment と MessageEnrichmentLibrary プロジェクトが含まれています。|  
+|Setup.bat|受信ポート、送信ポート、およびオーケストレーションで構成されるシナリオの例をデプロイします。|  
+|EDIFACT_example.edi|入力の EDIFACT メッセージです。|  
+|X12_example.edi|入力 X12 メッセージ。|  
+|MessageEnrichment.btproj|MessageEnrichment のオーケストレーションとスキーマを含むプロジェクト。|  
+|MessageEnrichmentBindings.xml|オーケストレーション、ポート、および、パーティのバインドを含んでいるファイルです。|  
+|MessageEnrichmentOrchestration.odx|このオーケストレーションは、メッセージにヘッダーを追加します。|  
+|MessageEnrichmentOrchestration.odx.cs|メッセージにヘッダーを追加するオーケストレーション コードです。|  
 |EFACT_D98B_APERAK.xsd|入力メッセージの EDIFACT スキーマです。|  
 |Enriched_EFACT_D98B_APERAK.xsd|出力メッセージの EDIFACT スキーマです。|  
-|X12_00401_864.xsd|入力メッセージの X12 スキーマです。|  
-|Enriched_X12_00401_864.xsd|出力メッセージの X12 スキーマです。|  
+|X12_00401_864.xsd|X12 入力メッセージのスキーマ。|  
+|Enriched_X12_00401_864.xsd|X12 出力メッセージのスキーマ。|  
 |Headers.xsd|入力メッセージに追加されるヘッダーのスキーマです。|  
-|MessageEnrichmentLibrary.csproj|Headers.cs、OrchestrationUtilities.cs、および ParseHeaders.cs の各ファイルが含まれたプロジェクトです。|  
-|Headers.cs|ヘッダー データを表すクラスが含まれています。|  
+|MessageEnrichmentLibrary.csproj|Headers.cs、OrchestrationUtilities.cs、および parseheaders.cs の各ファイルを含むプロジェクトです。|  
+|Headers.cs|ヘッダーのデータを表すクラスが含まれています。|  
 |OrchestrationUtilities.cs|オーケストレーションによって使用されるユーティリティ メソッドが含まれています。|  
-|ParseHeaders.cs|新規メッセージで使用される UNA の既定値が含まれています。 これらの値は、ParseHeaders.cs の SerializeEDIFACTHeaders メソッドから取得されます。|  
+|Parseheaders.cs の各|新しいメッセージで使用される UNA の既定値が含まれています。 これらの値は、parseheaders.cs の SerializeEDIFACTHeaders メソッドから取得されます。|  
   
 ## <a name="how-to-use-this-sample"></a>このサンプルの使用方法  
- このサンプルは、インターチェンジ ヘッダーを EDI トランザクション セット メッセージに追加するために必要なアクションの実行例として使用します。  
+ EDI トランザクション セット メッセージにインターチェンジ ヘッダーを追加するために必要なアクションの動作例としては、このサンプルを使用します。  
   
 ## <a name="building-and-initializing-this-sample"></a>このサンプルのビルドと初期化  
- Message Enrichment サンプルをビルドして初期化するには、このサンプルの BizTalk プロジェクトをビルドして展開し、受信ポートと受信場所を構成して、2 つの異なる送信ポートを構成する必要があります。  
+ をビルドし、メッセージ強化サンプルを初期化する必要がありますを構築し、このサンプルでは、BizTalk プロジェクトを配置、場所と受信ポートを構成を 2 つの異なる送信ポートを構成します。  
   
-#### <a name="to-build-and-deploy-the-biztalk-project-for-this-sample"></a>このサンプルの BizTalk プロジェクトをビルドして展開するには  
+#### <a name="to-build-and-deploy-the-biztalk-project-for-this-sample"></a>このサンプルの BizTalk プロジェクト ビルドおよび配置するには  
   
 1. Notepad.Exe を使用して開く[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]sdk \samples\edi\messageenrichment\  
    MessageEnrichment\properties\AssemblyInfo.cs し、ファイルの下部にある次の行を追加します。  
@@ -93,20 +93,20 @@ ms.locfileid: "36998507"
   
    -   受信側を作成します (**で**) と送信 (**アウト**) \MessageEnrichment フォルダーに、このサンプル用のフォルダー。  
   
-   -   キーのペアを MessageEnrichmentLibrary\testkey.snk に書き込みます。  
+   -   キーのペアを \testkey.snk に書き込みます  
   
-   -   MessageEnrichmentLibrary.btproj プロジェクトを構築し、展開します。  
+   -   ビルドし、MessageEnrichmentLibrary.btproj プロジェクトをデプロイします。  
   
-   -   MessageEnrichment.btproj プロジェクトを構築して展開します。  
+   -   ビルドし、MessageEnrichment.btproj プロジェクトをデプロイします。  
   
    -   MessageEnrichmentBindings.xml のバインド情報を読み取ります。  
   
        > [!NOTE]
-       >  このプロジェクトのバインドでは、BizTalk ホストが信頼された認証として設定されていることが必要です。  信頼されていないホストでバインドを使用するためには、MessageEnrichmentBindings.xml で HostTrusted="true" エントリを HostTrusted="false" に変更します。  
+       >  このプロジェクトのバインドでは、BizTalk ホストが信頼されている認証としてマークされている必要があります。  これを使用して、信頼されていないホストで、するには、messageenrichmentbindings.xml し、変更、HostTrusted ="true"のエントリを HostTrusted ="false"。  
   
    -   オーケストレーションのバインドを更新します。  
   
-   -   送信ポート、送信ポート グループ、および受信ポートを更新します。  
+   -   更新プログラムは、送信ポート、送信ポート グループ、および受信ポート。  
   
    -   パーティと参加状況を更新します。  
   
@@ -114,26 +114,26 @@ ms.locfileid: "36998507"
   
    -   受信場所を有効にします。  
   
-   -   オーケストレーションを登録して開始します。  
+   -   参加させ、オーケストレーションを開始します。  
   
-   BizTalk Server でこのサンプルを使用する準備ができました。  
+   BizTalk Server は、このサンプルで動作するようになりました。  
   
 ## <a name="running-this-sample"></a>このサンプルの実行  
- Message Enrichment サンプルを実行するには、次の手順に従います。  
+ Message Enrichment サンプルを実行するのにには、次の手順を使用します。  
   
 #### <a name="to-run-this-sample"></a>このサンプルを実行するには  
   
 1.  EDIFACT_examples.edi ファイルを \MessageEnrichment\Instances フォルダーから \MessageEnrichment\In フォルダーにコピーします。  
   
-2.  EDIFACT_examples.edi ファイルが \MessageEnrichment\In フォルダーに表示されなくなり、\MessageEnrichment\Out フォルダーに表示されていることを確認します。  
+2.  EDIFACT_examples.edi ファイルが \MessageEnrichment\In フォルダーが表示されなくなり、\MessageEnrichment\Out フォルダーに表示されることを確認します。  
   
-3.  \MessageEnrichment\Out フォルダーのファイルを開きます。 ファイルが \MessageEnrichment\Instances フォルダーにある EDIFACT_examples.edi ファイルの XML 表記であることを確認します。また、出力ファイルに EDIFACT UNA、UNB、および UNG の各ヘッダーがあることを除き、ファイルのコンテンツが EDIFACT_examples.edi ファイルと同じであることを確認します。  
+3.  \MessageEnrichment\Out フォルダーにファイルを開きます。 \MessageEnrichment\Instances フォルダーにファイルが EDIFACT_examples.edi の XML 表現が出力ファイルに EDIFACT UNA、UNB、および UNG ヘッダーがあることを除き、EDIFACT_examples.edi ファイルと同じ内容があることを確認します。  
   
-4.  \MessageEnrichment\Instances フォルダーの X12_examples.edi ファイルに対して手順 1. と 2. を繰り返します。  
+4.  \MessageEnrichment\Instances フォルダーの X12_examples.edi ファイルには、手順 1. および 2. を繰り返します。  
   
-5.  \MessageEnrichment\Out フォルダーの新規ファイルを開きます。 ファイルが \MessageEnrichment\Instances フォルダーにある X12_examples.edi file ファイルの XML 表記であることを確認します。また、出力ファイルに X12 ISA ヘッダーがあることを除き、ファイルのコンテンツが X12_examples.edi ファイルと同じであることを確認します。  
+5.  \MessageEnrichment\Out フォルダーに新しいファイルを開きます。 \MessageEnrichment\Instances フォルダーにファイルが X12_examples.edi の XML 表現が X12_examples.edi ファイル、出力ファイルに X12 例外として同じ内容があることを確認 ISA ヘッダー。  
   
-## <a name="classes-or-methods-used-in-this-sample"></a>このサンプルで使用されるクラスまたはメソッド  
+## <a name="classes-or-methods-used-in-this-sample"></a>クラスまたはメソッドのこのサンプルで使用  
  なし  
   
 ## <a name="see-also"></a>参照  

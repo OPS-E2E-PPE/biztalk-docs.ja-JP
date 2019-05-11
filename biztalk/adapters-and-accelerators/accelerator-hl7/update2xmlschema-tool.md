@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 108bc63536e84dd18cd738fbc6ec10d1e07c404b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b47b3cc13d5c77dcc8efc8f5fd19e049b321a4f9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36978139"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65286468"
 ---
 # <a name="update2xmlschema-tool"></a>Update2XMLSchema ツール
 Update2XMLSchema ツールでは、BizTalk エディターを操作する HL7 2. XML スキーマを変更することができます。 これは、Microsoft 内で特定の HL7 2. XML スキーマが正しく機能しないため[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]変更なし。 スキーマを変更した後、ツールに置きます Schemas フォルダーで、[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]がインストールされている、たとえば、 *\<ドライブ\>*: \Program Files\Microsoft BizTalk \<のバージョン\>HL7\Templates\Schemas のアクセラレータです。  
@@ -40,7 +40,7 @@ Update2XMLSchema /s /v
   
 |パラメーター|名前|値|  
 |---------------|----------|-----------|  
-|*S*|Source|元の HL7 スキーマの完全なパス|  
+|*S*|ソース|元の HL7 スキーマの完全なパス|  
 |*V*|バージョン|2. XML スキーマのバージョン: 2.3.1、2.4、または 2.5|  
   
 ## <a name="example"></a>例  

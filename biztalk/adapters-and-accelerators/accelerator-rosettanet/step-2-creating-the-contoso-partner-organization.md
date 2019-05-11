@@ -1,5 +1,5 @@
 ---
-title: '手順 2: Contoso パートナー組織の作成 |Microsoft Docs'
+title: 手順 2:Contoso 取引先組織の作成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,21 +14,21 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 97e811493c1347bc016671469da8a0dc18483e85
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7d540a24be7ae5421956a3ad80536490f5a9fef6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36969779"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65281285"
 ---
-# <a name="step-2-creating-the-contoso-partner-organization"></a>手順 2: Contoso パートナー組織の作成
-この手順で、Microsoft® を使用して[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]管理コンソール、新しい取引を作成します。 このチュートリアルでは、Contoso 組織という取引先を使用します。  
+# <a name="step-2-creating-the-contoso-partner-organization"></a>手順 2:Contoso 取引先組織の作成
+この手順で、Microsoft® を使用して[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]管理コンソール、新しい取引を作成します。 このチュートリアルでは、取引先パートナーは、Contoso 組織です。  
 
-### <a name="to-start-the-btarn-management-console"></a>BTARN 管理コンソールを起動するには  
+### <a name="to-start-the-btarn-management-console"></a>BTARN 管理コンソールを開始するには  
 
 - クリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**Microsoft BizTalk\<バージョン\>Accelerator for RosettaNet**順にクリックします**[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]** 管理コンソール。  
 
-### <a name="to-create-fabrikam-as-a-trading-partner"></a>Fabrikam という名前の取引先を作成するには  
+### <a name="to-create-fabrikam-as-a-trading-partner"></a>取引先パートナーとして Fabrikam を作成するには  
 
 1. **[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]** 管理コンソールで、展開[!INCLUDE[btaBTARNNoVersionui](../../includes/btabtarnnoversionui-md.md)]を右クリックして**パートナー**、 をポイント**新規**、 をクリックし、**パートナー**.  
 
@@ -59,4 +59,4 @@ ms.locfileid: "36969779"
 4. **[OK]** をクリックします。  
 
 ## <a name="see-also"></a>参照  
- [手順 3: Fabrikam 0C2 取引先契約の作成](../../adapters-and-accelerators/accelerator-rosettanet/step-3-creating-the-fabrikam-0c2-trading-partner-agreement.md)
+ [ステップ 3:Fabrikam 0C2 取引先契約の作成](../../adapters-and-accelerators/accelerator-rosettanet/step-3-creating-the-fabrikam-0c2-trading-partner-agreement.md)

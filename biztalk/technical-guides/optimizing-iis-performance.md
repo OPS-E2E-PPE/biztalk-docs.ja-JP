@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ad8db99f2f6d26b05960950376e30faaa5a2155d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d1939a3cacdccf613a7665a766c952c6bc9c5e91
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36971451"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65291392"
 ---
 # <a name="optimizing-iis-performance"></a>IIS のパフォーマンスの最適化
 ## <a name="apply-iis-configuration-options-to-improve-iis-performance"></a>IIS のパフォーマンスを向上させるために IIS の構成オプションを適用します。  
@@ -33,7 +33,7 @@ ms.locfileid: "36971451"
 3.  クリックして**を無効にする**で、**アクション**この Web サイトのログ記録を無効にするウィンドウ。  
   
 ### <a name="disable-iis-asp-debugging-in-production-environments"></a>運用環境で IIS ASP デバッグを無効にします。  
- 運用環境で IIS ASP デバッグを無効にする必要があります。 IIS の ASP を無効にするに次の手順に従ってデバッグ: で、**接続** ウィンドウをクリックして展開**サイト**、ASP デバッグを無効にするには、の選択をwebサイトを選択するをクリックします **。機能ビュー**、し、ダブルクリック、 **ASP**機能します。 クリックして展開**コンパイル**をクリックして展開**デバッグ プロパティ**、ことを確認します両方**クライアント側のデバッグを有効にする**と**サーバー側を有効にします。デバッグ**に設定されている**False**します。  
+ 運用環境で IIS ASP デバッグを無効にする必要があります。 ASP デバッグを IIS を無効にするには、これらの手順に従います。**接続** ウィンドウをクリックして展開**サイト**、ASP デバッグを無効にするには、選択を web サイトを選択する をクリックします**機能ビュー**、し、。ダブルクリックして、 **ASP**機能します。 クリックして展開**コンパイル**をクリックして展開**デバッグ プロパティ**、ことを確認します両方**クライアント側のデバッグを有効にする**と**サーバー側を有効にします。デバッグ**に設定されている**False**します。  
   
 1. クリックして**開始**、 をポイント**すべてのプログラム**、 をクリックして**管理ツール**、順にクリックします**インターネット インフォメーション サービス (IIS) マネージャー**.  
   
@@ -81,7 +81,7 @@ ms.locfileid: "36971451"
  この設定では、プロセッサごとに作成するプールのスレッドの数を指定します。 プールのスレッドでは、ネットワーク要求と受信要求の処理をご覧ください。 MaxPoolThreads 数では ISAPI アプリケーションで使用されるスレッドは含まれません。 一般に、プロセッサごとに 20 個を超えるスレッドを作成しないでください。 MaxPoolThreads では、既定値は 4 の HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\InetInfo\Parameters\ にある REG_DWORD レジストリ エントリです。  
   
 ### <a name="disable-wcf-services-tracing"></a>WCF サービスのトレースを無効にします。  
- WCF サービスの運用環境でのトレースを無効にするには、構成エディター ツール (SvcConfigEditor.exe) を使用します。 構成エディター ツールの詳細については、[構成エディター ツール (SvcConfigEditor.exe)](http://go.microsoft.com/fwlink/?LinkID=127070) (http://go.microsoft.com/fwlink/?LinkID=127070)を参照してください。  
+ WCF サービスの運用環境でのトレースを無効にするには、構成エディター ツール (SvcConfigEditor.exe) を使用します。 構成エディター ツールの詳細については、次を参照してください。[構成エディター ツール (SvcConfigEditor.exe)](http://go.microsoft.com/fwlink/?LinkID=127070) (http://go.microsoft.com/fwlink/?LinkID=127070)します。  
   
 ### <a name="configure-aspnet-20-maxconcurrentrequests-for-iis-7570-integrated-mode"></a>IIS 7.5 または 7.0 統合モード用の ASP.NET 2.0 MaxConcurrentRequests の構成します。  
  ASP.NET 2.0 は、IIS 7.5 または 7.0 統合モードでホストされている、ときにスレッド処理が異なりますよりで IIS 7.5 または 7.0 でクラシック モード。 ASP.NET 2.0 が統合モードで IIS 7.5 でホストされている場合、ASP.NET 2.0 は、同時に実行される要求を同時に実行するスレッドの数ではなく要求の数を制限します。 同期のシナリオでこれ直接制限されましていないスレッドの数ため、要求の数には、スレッドの数と同じになります。 非同期のシナリオでは、要求とスレッドの数は可能性があります非常に異なるスレッドよりもはるかに要求する可能性があるためです。 ASP.NET 2.0 を IIS 7.5 統合モードでを実行すると、minFreeThreads と machine.config ファイル内の"httpRuntime"要素の minLocalRequestFreeThreads は無視されます。 IIS 7.5 統合モードでは、HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ASP.NET\2.0.50727.0 内 MaxConcurrentRequestsPerCPU をという名前の DWORD は、CPU あたりの同時要求の数を決定します。 既定では、レジストリ キーが存在しないと、CPU あたりの要求の数は 12 に制限されます。 .NET framework 3.5 SP1 には、aspnet.config ファイルを使用して、構成の IIS アプリケーション プールをサポートする v2.0 バイナリに更新プログラムが含まれています。 この構成は、統合モードのみに適用されます (クラシックまたは ISAPI モードでは、これらの設定を無視します)。既定値を持つ新しい aspnet.config 構成セクションは、次に示します。  
@@ -94,10 +94,10 @@ ms.locfileid: "36971451"
   
  IIS 7.5 統合モードで、maxWorkerThreads と maxIoThreads パラメーター、machine.config ファイルの"processModel"セクションでは、本質的に、要求の実行の数を制御するのには使用されませんが、CLR スレッド プールのサイズを制御するのには使用されます。ASP.NET によって使用されます。 ときに、machine.config の"processModel"セクションが"autoConfig = true"(既定の設定では、) アプリケーション プールを論理 CPU あたりの最大 100 個のワーカー スレッド (MaxWorkerThreads) この付与されます。 したがって 2 つのデュアル コア Cpu で共通の汎用的なサーバーは 400 MaxWorkerThreads になります。 要件の高いアプリケーションを除くすべてのための十分な場合があります。  
   
- IIS 7.5 で ASP.NET のスレッドの使用量を構成する方法の詳細については、[Thomas Marquardt のブログを IIS 7.0 で ASP.NET スレッドの使用に関する](http://go.microsoft.com/fwlink/?LinkId=157518)(http://go.microsoft.com/fwlink/?LinkId=157518)を参照してください。  
+ IIS 7.5 で ASP.NET のスレッドの使用量を構成する方法の詳細については、次を参照してください。 [Thomas Marquardt のブログを IIS 7.0 で ASP.NET スレッドの使用に関する](http://go.microsoft.com/fwlink/?LinkId=157518)(http://go.microsoft.com/fwlink/?LinkId=157518)します。  
   
 ### <a name="configure-aspnet-4-maxconcurrentrequests-for-iis-7570-integrated-mode"></a>IIS 7.5 または 7.0 統合モード用の ASP.NET 4 MaxConcurrentRequests の構成します。  
- .NET Framework 4 で maxConcurrentRequestsPerCPU の既定の設定は非常に大きい数である 5000、したがってにより、多数の非同期の要求を同時に実行します。 詳細については、[ \<applicationPool\>要素 (Web 設定)](http://go.microsoft.com/fwlink/?LinkID=205339) (http://go.microsoft.com/fwlink/?LinkID=205339)を参照してください。  
+ .NET Framework 4 で maxConcurrentRequestsPerCPU の既定の設定は非常に大きい数である 5000、したがってにより、多数の非同期の要求を同時に実行します。 詳細については、次を参照してください。 [ \<applicationPool\>要素 (Web 設定)](http://go.microsoft.com/fwlink/?LinkID=205339) (http://go.microsoft.com/fwlink/?LinkID=205339)します。  
   
  IIS 7.5 または 7.0 の Integrated モードの場合は、HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ASP.NET\4.0.30319.0 内 MaxConcurrentRequestsPerCPU をという名前の DWORD は、CPU あたりの同時要求の数を決定します。 既定では、レジストリ キーが存在しないと、CPU あたりの要求の数が 5000 に制限されています。  
   

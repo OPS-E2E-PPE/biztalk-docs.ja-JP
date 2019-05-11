@@ -1,5 +1,5 @@
 ---
-title: マップ内のリンク |Microsoft ドキュメント
+title: マップのリンク |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,21 +17,21 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a32d2a9ef07cf2d79037d7983e49b26c6cfe5e81
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ba3da2b4bebcb559616aa583fd24fd183fd085c6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22262090"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65329653"
 ---
 # <a name="links-in-maps"></a>マップのリンク
-リンクを使用して、入力インスタンス メッセージの要素や属性のデータを、出力インスタンスの要素や属性にコピーするときの基本的な機能を指定します。 送信元スキーマと送信先スキーマのレコード間およびフィールド間のリンクをデザイン時に作成しておくと、 実行時には、送信元スキーマに準拠した入力インスタンス メッセージから、送信先スキーマに準拠した出力インスタンス メッセージが作成されます。  
+リンクは、要素または属性は、入力インスタンス メッセージ内のデータ要素または属性の出力インスタンスにコピーの基本的な機能を指定します。 デザイン時に、元と送信先スキーマのレコードとフィールド間のリンクを作成します。 これは、ドライブの作成、送信元スキーマに準拠している入力インスタンス メッセージから送信先スキーマに準拠した出力インスタンス メッセージの実行時にします。  
   
- BizTalk マッパーは、1 対 1 および 1 対多のリンクをサポートしています。 たとえば、送信元スキーマの単一のレコードまたはフィールドを、送信先スキーマの単一のレコードまたはフィールドに接続するようなリンクを作成する以外に、 送信元スキーマの単一のレコードまたはフィールドを、送信先スキーマの複数のレコードまたはフィールドに接続するようなリンクを作成することもできます。  
+ BizTalk マッパーでは、1 対 1 のリンクと一対多のリンクをサポートします。 たとえば、リンクに接続できます 1 つのレコードまたはフィールド、送信元スキーマから 1 つのレコードまたはフィールドを送信先スキーマの。 リンク接続もできます、1 つのレコードまたはフィールド、送信元スキーマから複数のレコードまたはフィールドを送信先スキーマに。  
   
- 送信元スキーマの複数のレコードまたはフィールドを Functoid に接続し、そこから、さらに、送信先スキーマの単一 (または複数) のレコードまたはフィールドに接続するようなリンクを作成することも可能です。 通常は、複数の送信元レコードまたはフィールドを、単一の送信先レコードまたはフィールドに直接接続することはできません。このような多対 1 のリンクでは警告が発生します。 1 つの例外は、**ループ**functoid です。 詳細については、**ループ**functoid を参照してください[ループ Functoid の](../core/looping-functoid.md)します。  
+ リンクにも接続できます複数のレコードまたはフィールド、送信元スキーマから functoid、単一 (または複数) のレコードまたは送信先スキーマのフィールドに接続します。 一般に、複数のソース レコードからリンクを直接または 1 つの宛先のレコードまたはフィールドにフィールドが有効でないし、警告が生成されます。 1 つの例外は、**ループ**functoid。 詳細については、**ループ**functoid を参照してください[ループ Functoid](../core/looping-functoid.md)します。  
   
- このセクションの各トピックでは、BizTalk マッパーにおけるリンクの作成と使用に関連した概要が説明されています。  
+ このセクションのトピックでは、BizTalk マッパーにおけるリンクの作成と操作に関連する概念について説明します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
@@ -41,8 +41,8 @@ ms.locfileid: "22262090"
   
 -   [リンクを構成します。](../core/configuring-links.md)  
   
--   [レコードへのリンク](../core/record-to-record-linking.md)  
+-   [レコード間のリンク](../core/record-to-record-linking.md)  
   
--   [リンクから、すべての要素および anyAttribute ノード](../core/links-to-and-from-the-any-element-and-anyattribute-nodes.md)  
+-   [anyElement ノードおよび anyAttribute ノード間のリンク](../core/links-to-and-from-the-any-element-and-anyattribute-nodes.md)  
   
 -   [コンパイラ ディレクティブおよびリンク](../core/compiler-directives-and-links.md)

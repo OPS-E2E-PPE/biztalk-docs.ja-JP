@@ -15,17 +15,17 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5e7260ed387ae5bb09e229c8721f5c40c61d4e80
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b3098fa81b9fa88c884eb556a31481ac1ac57c51
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36971563"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65283766"
 ---
 # <a name="enabling-bam-tracking"></a>BAM 追跡を有効にします。
 [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] では、BizTalk アクティビティ監視 (BAM) を使用した拡張追跡機能をサポートしています。 BTARN 構成のグローバル プロパティの一部として追跡を有効にします。 追跡を有効にすると、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] はすべてのアグリーメントに対するメッセージを追跡します。 既定では追跡が有効になっています。  
   
- 追跡の詳細については、[拡張追跡](../../adapters-and-accelerators/accelerator-rosettanet/enhanced-tracking.md)を参照してください。  
+ 追跡の詳細については、次を参照してください。[拡張追跡](../../adapters-and-accelerators/accelerator-rosettanet/enhanced-tracking.md)します。  
   
 ### <a name="to-enable-or-disable-bam-tracking"></a>BAM の追跡を有効または無効にするには  
   

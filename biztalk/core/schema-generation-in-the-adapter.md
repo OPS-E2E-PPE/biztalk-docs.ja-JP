@@ -2,18 +2,18 @@
 redirect_url: /biztalk/core/installing-biztalk-adapter-for-tibco-rendezvous/
 redirect_document_id: true
 ROBOTS: NOINDEX
-ms.openlocfilehash: 4e4209c75ca52585c0a11141dbe0d9841fa6a5ba
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: 04db79d76850bf657dbd45e6c60e6fb7edbf1ffb
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
-ms.locfileid: "24016021"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396950"
 ---
-# <a name="schema-generation-in-the-adapter"></a>アダプタでのスキーマの生成
-TIBCO Rendezvous システムには、メッセージの種類のリポジトリは含まれていません。 すべてのメッセージの構築と解析は、Rendezvous アプリケーション レベルに組み込まれています。 この制限により、Microsoft BizTalk Adapter for TIBCO Rendezvous ではスキーマ生成機能を利用できません。  
+# <a name="schema-generation-in-the-adapter"></a>アダプタでスキーマの生成
+TIBCO Rendezvous システムでは、メッセージの種類のリポジトリは含まれません。 すべてのメッセージの構築と解析が、Rendezvous アプリケーション レベルで埋め込まれています。 この制限により、Microsoft BizTalk Adapter for TIBCO Rendezvous はスキーマ生成機能を提供できません。  
   
 ## <a name="writing-schemas"></a>スキーマの記述  
- スキーマを記述して、使用する必要があります**既存項目の追加**オーケストレーションで使用できるは、インポートする Visual Studio でします。 スキーマは、BizTalk Server の開発ツールに必要で、Visual Studio での統合において非常に重要な役割を果たします。 BizTalk Server の開発者は、完全なスキーマを作成する必要はなく、最小限のスキーマやその中間のスキーマも作成できます。  
+ スキーマを記述し、使用する必要があります**既存項目の追加**Visual Studio でオーケストレーション用にインポートします。 スキーマは、BizTalk Server 開発ツールと Visual Studio での統合のために非常に重要です。 BizTalk Server の開発者は、完全なスキーマ、必要最低限のスキーマまたはとの間のどこかのバージョンの提供を選択できます。  
   
 ## <a name="see-also"></a>参照  
  [作業の開始](../core/getting-started-with-biztalk-adapter-for-tibco-rendezvous.md)

@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a74f22813f9752f82985d2e984f5effeb3208e6e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 05b834c6379c1a7dcf16ea74152b131a85a59d38
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37009171"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65291207"
 ---
 # <a name="why-it-is-important-to-test"></a>テストに重要な理由
 ここでは、十分なテストにつながる考え方の概要については、BizTalk ソリューションのテストに失敗に関連するリスクについて説明しの自動テストの利点があります手動テストの落とし穴は対照的です。  

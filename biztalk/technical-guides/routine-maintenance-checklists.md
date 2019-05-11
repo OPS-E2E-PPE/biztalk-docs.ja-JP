@@ -1,5 +1,5 @@
 ---
-title: 定期的なメンテナンスのチェックリスト |Microsoft ドキュメント
+title: 日常的なメンテナンスのチェックリスト |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,22 +12,22 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6c5376ee83b6dd3e4ed1c13e8d7c2d3534f45914
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d2a13dbc9809913d45dcdf35b6c583ce18014430
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22302058"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65291247"
 ---
-# <a name="routine-maintenance-checklists"></a>定期的なメンテナンスのチェックリスト
-このセクションでは実行するメンテナンス確認を一覧表示、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]予防保守プログラムの一環として定期的にシステムです。 これらのチェックの実行は、システムの信頼性、管理、セキュリティ、またはパフォーマンスの問題があるかどうかを判断するに役立ちます。  
+# <a name="routine-maintenance-checklists"></a>日常的なメンテナンスのチェックリスト
+このセクションで実行されるメンテナンス チェックを一覧表示、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]予防保守プログラムの一環として定期的にシステム。 これらのチェックを実行する、システムの信頼性、管理、セキュリティ、またはパフォーマンスの問題があるかどうかを判断する際に役立ちます。  
   
- このセクションのトピックでは、メンテナンスのチェックは、このドキュメントの内外両方において、監視とメンテナンスのトピックへのリンクを提供します。  
+ このセクションのトピックでは、メンテナンス チェックのため、このドキュメントの内外両方の監視とメンテナンス トピックへのリンクを提供します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [チェックリスト: メンテナンスを毎日チェックを実行します。](../technical-guides/checklist-performing-daily-maintenance-checks.md)  
+-   [チェックリスト:毎日のメンテナンス チェックの実行](../technical-guides/checklist-performing-daily-maintenance-checks.md)  
   
--   [チェックリスト: 毎週の保守チェックの実行](../technical-guides/checklist-performing-weekly-maintenance-checks.md)  
+-   [チェックリスト:毎週のメンテナンス チェックの実行](../technical-guides/checklist-performing-weekly-maintenance-checks.md)  
   
--   [チェックリスト: 毎月の保守チェックの実行](../technical-guides/checklist-performing-monthly-maintenance-checks.md)
+-   [チェックリスト:毎月のメンテナンス チェックの実行](../technical-guides/checklist-performing-monthly-maintenance-checks.md)

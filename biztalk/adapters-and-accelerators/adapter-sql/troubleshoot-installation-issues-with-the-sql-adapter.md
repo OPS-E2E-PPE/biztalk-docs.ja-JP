@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9543c7dcd4c92cfd15aed5b93115ffc9a849652b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1d21e3d8e2f6496560a749942f64636776ab5862
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37001459"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65367517"
 ---
 # <a name="troubleshoot-installation-issues-with-the-sql-adapter"></a>SQl アダプターを使用したインストールの問題をトラブルシューティングします。
 > [!IMPORTANT]
@@ -89,7 +89,7 @@ ms.locfileid: "37001459"
       ```  
 
    > [!NOTE]
-   >  公開キーとバージョンを確認する方法については、[公開キーとバージョンを決定する](#BKMK_PubKey)を参照してください。  
+   >  公開キーとバージョンを確認する方法については、次を参照してください。[公開キーとバージョンを決定する](#BKMK_PubKey)します。  
 
 4. machine.config ファイルを保存して閉じます。  
 

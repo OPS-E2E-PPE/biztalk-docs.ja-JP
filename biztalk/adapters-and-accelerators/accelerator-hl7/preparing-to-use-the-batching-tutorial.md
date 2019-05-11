@@ -1,5 +1,5 @@
 ---
-title: バッチ処理のチュートリアルを使用する準備 |Microsoft ドキュメント
+title: バッチ処理のチュートリアルを使用する準備 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,25 +14,25 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 287f94ce9d5f96921729a28ce99bf4e84aad5a6d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 89f95ff8b3bdf8c68a940b90df8ac4ee10ee542f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22206042"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65290032"
 ---
 # <a name="preparing-to-use-the-batching-tutorial"></a>バッチ処理のチュートリアルを使用する準備をしています
-バッチ処理のチュートリアルを使用することができます、前に、このセクションのタスクを実行する必要があります。  
+バッチ処理のチュートリアルを使用する前に、このセクションでは、タスクを実行する必要があります。  
   
 > [!IMPORTANT]
->  このチュートリアルでの手順で、テキストを正確に入力した場合の作業に最適な結果が表示されます。 テキストのエントリはここで記述されたよりも異なる場合にテキストを入力すると、ソリューションが失敗する可能性がありますので、大文字小文字を区別です。  
+>  場合は、手順を実行して、テキストを正確に入力して、このチュートリアルを操作するために最適な結果が得られます。 テキスト エントリは、ソリューションが失敗する可能性がありますよりも、ここで記述された別のケースでのテキストを入力するために大文字小文字が区別です。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [その他のチュートリアルのプロジェクトを展開解除します。](../../adapters-and-accelerators/accelerator-hl7/undeploy-other-tutorial-projects.md)  
+-   [その他のチュートリアル プロジェクトの展開解除](../../adapters-and-accelerators/accelerator-hl7/undeploy-other-tutorial-projects.md)  
   
--   [Tutorial フォルダーを作成します。](../../adapters-and-accelerators/accelerator-hl7/create-the-tutorial-folders.md)  
+-   [チュートリアル フォルダーの作成](../../adapters-and-accelerators/accelerator-hl7/create-the-tutorial-folders.md)  
   
--   [必要なソフトウェア、ユーティリティ、およびサンプルをインストールします。](../../adapters-and-accelerators/accelerator-hl7/install-the-required-software-utilities-and-samples.md)  
+-   [必要なソフトウェア、ユーティリティ、サンプルのインストール](../../adapters-and-accelerators/accelerator-hl7/install-the-required-software-utilities-and-samples.md)  
   
--   [メッセージ インスタンスを作成します。](../../adapters-and-accelerators/accelerator-hl7/create-the-message-instances.md)
+-   [メッセージ インスタンスの作成](../../adapters-and-accelerators/accelerator-hl7/create-the-message-instances.md)

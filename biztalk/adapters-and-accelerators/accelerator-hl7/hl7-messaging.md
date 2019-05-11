@@ -15,12 +15,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a06877838316c31aa8de6974fc40d4e54e74d407
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e86518dbab50f9dfa3c7ad8d500dadf83a8840bb
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36998396"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65292948"
 ---
 # <a name="hl7-messaging"></a>HL7 メッセージング
 Microsoft BizTalk Accelerator for HL7 の主な目的 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) は、HL7 標準に準拠する医療のメッセージを処理します。 このセクションを HL7 メッセージングを紹介するには、HL7 標準、基本的な HL7 メッセージ モード、メッセージの種類に関する情報を提供します、どのように[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]HL7 メッセージをトリガーします。  

@@ -1,5 +1,5 @@
 ---
-title: XML メッセージの構造体 |Microsoft ドキュメント
+title: XML メッセージの構造 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0f35e48e90ffb089342c268b7b6a45069e2f9869
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d4e7501165dca01c81ad43a0e79184f7e5614ae9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22278482"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65295810"
 ---
 # <a name="structure-of-an-xml-message"></a>XML メッセージの構造
 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、XML インスタンス メッセージは XML タグの有効な階層になっており、0 個以上の XML エンベロープおよび 1 つ以上の XML ドキュメントで構成されます。 たとえば、次の XML インスタンス メッセージは、単一の XML ドキュメント (太字で示されている) を含む 1 つの XML エンベロープ (通常フォントで示されている) で構成されています。  

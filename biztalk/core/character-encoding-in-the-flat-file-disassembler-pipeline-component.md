@@ -17,23 +17,23 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d2a7ef27ec23fb7470aff74df2915150f892e07a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6949861ffa6197e6a0061a1a565bea3711e617d1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36988811"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65357493"
 ---
 # <a name="character-encoding-in-the-flat-file-disassembler-pipeline-component"></a>フラット ファイル逆アセンブラー パイプライン コンポーネントでの文字エン コード
-フラット ファイル逆アセンブラーでは、次のアルゴリズムに基づいて、入力メッセージを処理するためのエンコードに使用する文字セットを決定します。  
+次のアルゴリズムは、受信メッセージの処理に使用するエンコードを決定、フラット ファイル逆アセンブラー コンポーネントによって使用されます。  
   
-1. バイト順マークがデータ内に存在する場合、これによってエンコード情報が決定されます。 このエンコード情報は、逆アセンブラーでは保持されません (つまり、これは保存されません、 **XMLNorm.SourceCharset**プロパティ)。  
+1. データのバイト順マークが存在する場合、そこからはエンコード情報が判断されます。 このエンコード情報は、逆アセンブラーでは保持されません (つまり、これは保存されません、 **XMLNorm.SourceCharset**プロパティ)。  
   
 2. の場合、 **IBaseMessagePart.Charset**プロパティが設定されて、が指定されてエンコードが使用されます。  
   
-3. IBaseMessagePart.Charset プロパティも設定されていない場合、ヘッダーまたはドキュメント スキーマにコードページ情報が含まれていれば、これが使用されます。  
+3. それ以外の場合、ヘッダーまたはドキュメント スキーマにコードページ情報が含まれる場合に使用されます。  
   
-4. 上記のいずれにも該当しない場合は、UTF-8 エンコードが使用されます。  
+4. それ以外の場合、utf-8 エンコードが使用されます。  
   
    逆アセンブラーがでメッセージ コンテキストにエンコード情報を保存の前に、2、3、および 4 の場合、 **XMLNorm.SourceCharset**プロパティ。  
   

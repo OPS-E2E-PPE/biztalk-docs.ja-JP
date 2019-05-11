@@ -1,5 +1,5 @@
 ---
-title: Itinerary Designer を使用して日程を作成 |Microsoft ドキュメント
+title: Itinerary Designer を使用してスケジュールを作成する |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,22 +12,22 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e1ad23c046f67d8030d309a512550a35c140dd7e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 39d091bcc0be6fbd0ad088f0ba4e3adaf52b2883
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22293938"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65394685"
 ---
-# <a name="creating-itineraries-using-itinerary-designer"></a>Itinerary Designer を使用して日程を作成します。
-使用することができます、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]行程デザイナー ESB 仲介ポリシー、行程ベースのルーティングの実行時に使用される、日程をという名前を作成します。 このツールは、いくつかの図形、または、日程のデザイン時に実行することも別のアクションに対応するモデル要素を提供します。  
+# <a name="creating-itineraries-using-itinerary-designer"></a>Itinerary Designer を使用してスケジュールを作成します。
+使用することができます、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]行程デザイナーという名前のスケジュールに基づくルーティングの実行時に使用して、スケジュール、ESB 仲介のポリシーを作成します。 このツールは、いくつかの図形、またはスケジュールの設計時に実行することもできるさまざまなアクションに対応するモデル要素を提供します。  
   
- このセクションでは、概念および行程デザイナーを使用して日程を開発する方法を理解するためのガイドラインを提供します。 次のトピックが含まれています。  
+ このセクションでは、概念情報と旅行プラン デザイナーを使用してスケジュールを開発する方法を理解するためのガイドラインを示します。 次のトピックが含まれています。  
   
--   [行程について](../esb-toolkit/about-itineraries.md)  
+-   [スケジュールについて](../esb-toolkit/about-itineraries.md)  
   
--   [Itinerary Designer での作業](../esb-toolkit/working-in-itinerary-designer.md)  
+-   [Itinerary Designer で作業する](../esb-toolkit/working-in-itinerary-designer.md)  
   
--   [行程でのデザイン パターンの実装](../esb-toolkit/implementing-design-patterns-in-itineraries.md)  
+-   [スケジュールでデザイン パターンを実装する](../esb-toolkit/implementing-design-patterns-in-itineraries.md)  
   
 -   [開発アクティビティ](../esb-toolkit/development-activities.md)

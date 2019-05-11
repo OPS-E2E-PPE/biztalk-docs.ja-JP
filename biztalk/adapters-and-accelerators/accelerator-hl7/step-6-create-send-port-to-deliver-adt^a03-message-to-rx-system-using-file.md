@@ -1,5 +1,5 @@
 ---
-title: '手順 6: ADT を配信する送信ポートを作成する ^ A03 メッセージをファイル アダプターを使用して RX System |Microsoft Docs'
+title: 手順 6:ADT を配信する送信ポートを作成 ^ A03 メッセージをファイル アダプターを使用して RX System |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,14 +16,14 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 95a9200d4c03f11f2feca89042bfb57ba36de345
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7674721e3c59ea9f7af0864b2c0790ebf9a1ab92
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37004379"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65288005"
 ---
-# <a name="step-6-create-a-send-port-to-deliver-the-adta03-message-to-the-rx-system-using-the-file-adapter"></a>手順 6: ADT を配信する送信ポートを作成する ^ A03 メッセージをファイル アダプターを使用して RX System
+# <a name="step-6-create-a-send-port-to-deliver-the-adta03-message-to-the-rx-system-using-the-file-adapter"></a>手順 6:ADT を配信する送信ポートを作成 ^ A03 メッセージをファイル アダプターを使用して RX System
 この手順で、送信ポートの薬剤システム (RX)、ファイル アダプターを使用してを作成します。  
 
 ### <a name="to-create-the-tutorialsendmsgrx-send-port"></a>Tutorial_sendMsg_RX 送信ポートを作成するには  
@@ -51,7 +51,7 @@ ms.locfileid: "37004379"
 
 4. **送信ポートのプロパティ** ダイアログ ボックスの**送信パイプライン**を選択します**BTAHL72XPipelines.BTAHL72XSendPipeline**します。  
 
-5. 左側のウィンドウで次のように選択します。**フィルター**、し、次の操作を実行します。 **[OK]** をクリックして続行します。  
+5. 左側のウィンドウで次のように選択します。**フィルター**、し、次の操作を実行します。 続行するには、 **[OK]** をクリックします。  
 
 
    |          プロパティ          |                                            目的                                            |
@@ -78,4 +78,4 @@ ms.locfileid: "37004379"
 
 7. 管理コンソールで、**送信ポート**を右クリックして**Tutorial_sendMsg_RX**、順にクリックします**開始**します。  
 
-   進みます[手順 7: ADT を配信する送信ポートを作成 ^ A03 メッセージを MLLP アダプターを使用して HIS](../../adapters-and-accelerators/accelerator-hl7/step-7-create-send-port-to-deliver-adt^a03-message-to-his-using-mllp-adapter.md)します。
+   続行する[手順 7。ADT を配信する送信ポートを作成 ^ A03 メッセージを MLLP アダプターを使用して HIS](../../adapters-and-accelerators/accelerator-hl7/step-7-create-send-port-to-deliver-adt^a03-message-to-his-using-mllp-adapter.md)します。

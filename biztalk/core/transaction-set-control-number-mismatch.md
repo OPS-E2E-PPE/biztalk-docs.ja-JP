@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: da4c20eb6853827709731c41631a38225214424d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f3081249fba97e9bf478c8435952c8e5c5ecb914
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37021976"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65279936"
 ---
 # <a name="transaction-set-control-number-mismatch"></a>トランザクション セット制御番号が一致していません
 ## <a name="details"></a>詳細  

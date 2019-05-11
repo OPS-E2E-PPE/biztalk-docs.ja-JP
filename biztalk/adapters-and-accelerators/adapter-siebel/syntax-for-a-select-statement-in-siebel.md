@@ -16,12 +16,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 543445fe6958a156894bb6c0d268d9b3b5814b23
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3e25e8af2bd192495108204ded53b682333d64f8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37022664"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65370495"
 ---
 # <a name="syntax-for-a-select-statement-in-siebel"></a>Siebel の SELECT ステートメントの構文
 使用して、 [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]、ADO.NET クライアントは Siebel 検索の有効な定義を表す WHERE 句を指定することで Siebel ビジネス コンポーネントに対する SELECT クエリを実行することができます。 SELECT ステートメントの構文です。  

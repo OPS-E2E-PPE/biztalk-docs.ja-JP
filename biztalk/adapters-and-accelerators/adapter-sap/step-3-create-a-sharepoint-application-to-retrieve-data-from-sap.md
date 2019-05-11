@@ -1,5 +1,5 @@
 ---
-title: '手順 3: SAP からデータを取得する SharePoint アプリケーションの作成 |Microsoft Docs'
+title: 手順 3:SAP からデータを取得する SharePoint アプリケーションの作成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -20,23 +20,23 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 346dcf24e1440717e111a1ae146521d887054cd0
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: db5b9a6278de98cbd3105d921806454f51e32a69
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36983483"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65372817"
 ---
-# <a name="step-3-create-a-sharepoint-application-to-retrieve-data-from-sap"></a>手順 3: SAP からデータを取得する SharePoint アプリケーションを作成します。
+# <a name="step-3-create-a-sharepoint-application-to-retrieve-data-from-sap"></a>手順 3:SAP からデータを取得する SharePoint アプリケーションを作成します。
 ![手順 4 の 3](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-3of4.gif "Step_3of4")  
   
  **所要時間:** 15 分  
   
- **目標:** 今すぐビジネス データ カタログ定義エディター ツールを使用して作成したアプリケーション定義ファイルを取得し、Microsoft Office SharePoint Server にインポートする必要があります。  
+ **目標:** ビジネス データ カタログ定義エディター ツールを使用して作成したアプリケーション定義ファイルを受け取り、Microsoft Office SharePoint Server にインポートする必要がありますようになりました。  
   
 ## <a name="prerequisites"></a>前提条件  
   
--   作成済みアプリケーション定義ファイル」の説明に従って[手順 2: SAP アイテム用のアプリケーション定義ファイルの作成](../../adapters-and-accelerators/adapter-sap/step-2-create-an-application-definition-file-for-the-sap-artifacts.md)です。  
+-   作成済みアプリケーション定義ファイル」の説明に従って[手順 2。SAP アイテム用のアプリケーション定義ファイルの作成](../../adapters-and-accelerators/adapter-sap/step-2-create-an-application-definition-file-for-the-sap-artifacts.md)です。  
   
 -   Microsoft シングル サインオン サービスを実行する必要があります。  
   
@@ -69,7 +69,7 @@ ms.locfileid: "36983483"
     4.  エンタープライズ アプリケーション定義の管理 ページで、値を指定、**表示名**、**アプリケーション名**、および**連絡先の電子メール アドレス**フィールド。  
   
         > [!IMPORTANT]
-        >  **アプリケーション名**フィールドに、指定したのと同じ SSO アプリケーション名を指定するかどうかを確認、 **SecondarySsoApplicationId**として、アプリケーション定義ファイルを作成するときに変数説明されている[手順 2: SAP アイテム用のアプリケーション定義ファイルの作成](../../adapters-and-accelerators/adapter-sap/step-2-create-an-application-definition-file-for-the-sap-artifacts.md)です。  
+        >  **アプリケーション名**フィールドに、指定したのと同じ SSO アプリケーション名を指定するかどうかを確認、 **SecondarySsoApplicationId**として、アプリケーション定義ファイルを作成するときに変数説明されている[手順 2。SAP アイテム用のアプリケーション定義ファイルの作成](../../adapters-and-accelerators/adapter-sap/step-2-create-an-application-definition-file-for-the-sap-artifacts.md)です。  
   
     5.  既定では、他のフィールドのままにし、クリックして**OK**します。  
   
@@ -80,7 +80,7 @@ ms.locfileid: "36983483"
   
  SSP を作成するときに、Web サイトを定義する必要があります。 ポート番号とを作成するサイトのアドレスに注意してください。 このサイトには、ビジネス データ カタログ アプリケーション定義をインポートします。  
   
- SSP の作成の詳細については、"」の章の概要: を作成し、共有サービス プロバイダーを構成する"で[ http://go.microsoft.com/fwlink/?LinkId=105119](http://go.microsoft.com/fwlink/?LinkId=105119)を参照してください。  
+ SSP の作成の詳細については、次を参照してください。"」の章の概要。作成および共有サービス プロバイダーの構成"に[ http://go.microsoft.com/fwlink/?LinkId=105119](http://go.microsoft.com/fwlink/?LinkId=105119)します。  
   
 ## <a name="importing-the-application-definition-file"></a>アプリケーション定義ファイルのインポート  
  SSP に今すぐアプリケーション定義ファイルをインポートする必要があります。  
@@ -260,7 +260,7 @@ ms.locfileid: "36983483"
 12. をクリックして**編集モードを終了**ページの右上隅にあるからです。  
   
 ## <a name="next-steps"></a>次の手順  
- SAP システムからデータを取得することによって、SharePoint アプリケーションをテストします。 参照してください[手順 4: SharePoint アプリケーションをテスト](../../adapters-and-accelerators/adapter-sap/step-4-test-your-sharepoint-application1.md)します。  
+ SAP システムからデータを取得することによって、SharePoint アプリケーションをテストします。 参照してください[手順 4。SharePoint アプリケーションをテスト](../../adapters-and-accelerators/adapter-sap/step-4-test-your-sharepoint-application1.md)します。  
   
 ## <a name="see-also"></a>参照  
- [チュートリアル 1: SAP システムからのデータを SharePoint サイトに表示する](../../adapters-and-accelerators/adapter-sap/tutorial-1-presenting-data-from-an-sap-system-on-a-sharepoint-site.md)
+ [チュートリアル 1:SAP システムからのデータを SharePoint サイトに表示する](../../adapters-and-accelerators/adapter-sap/tutorial-1-presenting-data-from-an-sap-system-on-a-sharepoint-site.md)

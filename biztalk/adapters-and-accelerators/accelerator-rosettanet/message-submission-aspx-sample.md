@@ -12,12 +12,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a36a41e5bb60169632072445ff4685e1df5dbce9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f1c9a527b932e2ed532d20840f522328da9d4e78
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36979595"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65282995"
 ---
 # <a name="message-submission-aspx-sample"></a>メッセージ送信 ASPX サンプル
 ここでは、サービス内容をプライベート プロセスに送信するために使用するサンプル .aspx コードを提供します。 line-of-business (LOB) アプリケーションの代わりに、この .aspx コードを使用できます。  
@@ -36,7 +36,7 @@ ms.locfileid: "36979595"
 ## <a name="example"></a>例  
  このコードは、ブラウザーなどのフロント エンド アプリケーションからの入力を受け付ける[!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]®、または Microsoft® Word では、開始側プライベート プロセスが消費できる XML ドキュメントを生成します。  
   
- LOBWebApplication ユーティリティには次のコードが含まれています。 詳細については、[LOBWebApplication](../../adapters-and-accelerators/accelerator-rosettanet/lobwebapplication.md)を参照してください。  
+ LOBWebApplication ユーティリティには次のコードが含まれています。 詳細については、次を参照してください。 [LOBWebApplication](../../adapters-and-accelerators/accelerator-rosettanet/lobwebapplication.md)します。  
   
 ```  
 using System;  

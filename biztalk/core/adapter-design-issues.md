@@ -1,5 +1,5 @@
 ---
-title: アダプターのデザインに関する問題 |Microsoft ドキュメント
+title: アダプターのデザインの問題 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,15 +12,15 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 79c6228db8342f3d1ad2628d4e4caf418efd9b29
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 15c6b99ff1416ace11c11d07dc9b137b5e33a231
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22226562"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65361584"
 ---
 # <a name="adapter-design-issues"></a>アダプターのデザインの問題点
-アダプターの構成は、ユーザーがデザイン時に構成を変更すると、シングル サインオン (SSO) データベースに格納されます。 実行時に、メッセージング エンジンはアダプターの構成を取得し、その構成をアダプターに送信します。 アダプターには、次の 4 種類の構成情報が送信されます。  
+アダプターの構成は、ユーザーがデザイン時構成の変更を行ったときに、シングル サインオン (SSO) データベースに格納されます。 実行時に、メッセージング エンジンは、アダプターの構成を取得し、アダプターに配信します。 4 種類の構成情報は、アダプターに配信されます。  
   
 -   受信ハンドラーの構成  
   
@@ -31,9 +31,9 @@ ms.locfileid: "22226562"
 -   送信場所 (エンドポイント) の構成  
   
 ## <a name="receive-and-send-handler-configuration"></a>受信し、送信ハンドラーの構成  
- アダプターのハンドラー構成は省略可能なの実装でアダプターに送信**IPersistPropertyBag**.**ロード**インターフェイスです。 ハンドラー構成は一度しか送信されないため、アダプダのハンドラー構成が BizTalk サービスの開始後に変更された場合、アダプターは更新されません。 一般的なモデルでは、アダプターはハンドラー構成を既定の構成として処理します。エンドポイント構成は、エンドポイントごとにハンドラー構成をオーバーライドします。  
+ アダプターのハンドラー構成は省略可能な実装でアダプターに配信**IPersistPropertyBag**.**ロード**インターフェイス。 ハンドラーの構成は、BizTalk サービスが開始した後、アダプター ハンドラーの構成が変更された場合、アダプターは更新されませんので、1 回だけ配信されます。 一般的なモデルは、アダプター ハンドラーの構成を既定の構成として扱うにはエンドポイント構成は、エンドポイントごとにハンドラー構成をオーバーライドします。  
   
- 次のコードは、構成の解析例を示します。 渡されたプロパティでは、アダプターの構成、**ロード**文字列プロパティで呼び出して**AdapterConfig**です。 このプロパティ値には、アダプターの構成を表す XML ドキュメントが含まれています。 アダプターはこの構成をドキュメント オブジェクト モデル (DOM) または XML リーダーに読み込み、XPath を使用して個々のプロパティを取得する必要があります。  
+ 次のコード フラグメントでは、構成の解析を示します。 渡されたプロパティは、アダプターの構成、**ロード**文字列プロパティで呼び出す**AdapterConfig**します。 このプロパティの値には、アダプターの構成を表す XML ドキュメントが含まれています。 アダプターは、ドキュメント オブジェクト モデル (DOM) または XML リーダーにこの構成を読み込むし、XPath を使用して、個々 のプロパティを取得する必要があります。  
   
 ```  
 public class MyAdapter : IBTTransport,   
@@ -72,12 +72,12 @@ defaultHeader = node.InnerText;
 ```  
   
 ## <a name="receive-location-configuration"></a>受信場所の構成  
- 受信場所の構成情報がの実装でアダプターに配信される**IBTTransportConfig**です。 このインターフェイスには、3 つのメソッドが含まれています。 **AddReceiveEndpoint**、 **UpdateEndpointConfig**、および**RemoveReceiveEndpoint**です。 メッセージング エンジンは、メッセージを受信するために受信待ちする必要があるエンドポイントをアダプターに通知します。 個々のエンドポイントの構成が変更されると、アダプターはそのエンドポイントの変更について通知を受けます。 これは、ハンドラーの構成が変更されてもアダプターは通知を受けないのとは対照的です。 同様に、BizTalk Server はサービス ウィンドウがアクティブまたは非アクティブになるとエンドポイントを追加、削除するため、アダプターはサービス ウィンドウを処理する必要はありません。  
+ 受信場所の実装でアダプターに構成情報が配信される**IBTTransportConfig**します。 このインターフェイスには、3 つのメソッドが含まれています。 **AddReceiveEndpoint**、 **UpdateEndpointConfig**、および**RemoveReceiveEndpoint**します。 メッセージング エンジンでは、そのメッセージを受信するでリッスンする必要のあるエンドポイントのアダプターに通知します。 個々 のエンドポイント構成が変更されたときに、アダプターはそのエンドポイントの変更の通知します。 これは、ハンドラーの構成が変更されたときに、アダプターは通知されないという事実とは対照的です。 同様に、アダプターは BizTalk Server を追加またはアクティブまたは非アクティブになる windows のサービスとしてのエンドポイントを削除するために、windows サービスを処理する必要はありません。  
   
 ### <a name="addreceiveendpoint"></a>AddReceiveEndpoint  
- アダプターが、エンドポイントでは、エンジンの呼び出しで待機を開始する必要がある場合**IBTTransportConfig.AddReceiveEndpoint**受信場所の URI の場合、そのエンドポイントのアダプターの構成を含むプロパティ バッグに渡すとそのエンドポイントの BizTalk Server 固有の構成を含む 2 つ目のプロパティ バッグ。 アダプターは、BizTalk Server システムのプロパティとしてメッセージ コンテキストに URI を書き込む必要があります**InboundTransportLocation**です。  
+ アダプターが、エンジンの呼び出しのエンドポイントでリッスンを開始する必要がある場合**IBTTransportConfig.AddReceiveEndpoint**受信場所の URI をそのエンドポイントのアダプターの構成を含むプロパティ バッグを渡すとそのエンドポイントの BizTalk Server に固有の構成を含む 2 つ目のプロパティ バッグ。 アダプターは、BizTalk Server のシステム プロパティとしてメッセージ コンテキストに URI を書き込む必要があります**InboundTransportLocation**します。  
   
- アダプターのプロパティ バッグから受信場所のプロパティを読み取るのは、上記で説明したハンドラー構成を読み取るのと同じことです。 アダプターに渡された BizTalk Server の構成には、1 つのプロパティが含まれています。 **TwoWayReceivePort**、ポートが一方向または双方向かどうかを示します。 次のコードは、受信ポートが一方向と双方向のどちらであるかを BizTalk Server のプロパティ バッグから評価する方法を示しています。  
+ アダプターのプロパティ バッグからの受信場所のプロパティの読み取りは、ハンドラーの構成を上記の説明を読む場合と同じです。 アダプターに渡された BizTalk Server 構成には、1 つのプロパティが含まれています。 **TwoWayReceivePort**、ポートが一方向または双方向であるかどうかを示します。 次のコード フラグメントでは、受信ポートが BizTalk Server のプロパティ バッグから一方向または双方向がある場合に評価する方法を示します。  
   
 ```  
 public void AddReceiveEndpoint(  
@@ -102,15 +102,15 @@ this.twoWay = (bool)obj;
 ```  
   
 ### <a name="updateendpointconfig"></a>UpdateEndpointConfig  
- 場所が変更される、エンジンを使用してアクティブな構成が表示されたら、 **UpdateEndpointConfig** API に別の構成を使用する必要があることをアダプターに通知します。 BizTalk Server 固有の構成を含め、すべての構成がアダプターに送信されます。  
+ アクティブな構成が表示されたら、場所が変更された場合、エンジンは、 **UpdateEndpointConfig**に異なる構成を使用する必要があることをアダプターに通知する API。 すべての構成は、BizTalk Server に固有の構成を含め、アダプターに配信されます。  
   
 ### <a name="removereceiveendpoint"></a>RemoveReceiveEndpoint  
- アダプターを介して通知受信場所がアクティブでなくなったときに**RemoveReceiveEndpoint**です。 アダプターから返された後**RemoveReceiveEndpoint**その URI を使用してエンジンにメッセージを送信するには使用できなくします。  
+ 受信場所がアクティブでなくなったときに、アダプターがで通知されます**RemoveReceiveEndpoint**します。 アダプターから返された後**RemoveReceiveEndpoint**その URI を使用してエンジンにメッセージを送信することは許可されなくします。  
   
 ## <a name="send-port-configuration"></a>送信ポートの構成  
- メッセージング エンジンは送信ポートの構成をアダプターのメッセージ内のメッセージ コンテキストに書き込んでから、メッセージをアダプターに送信します。 アダプターは、構成の読み取りや検証を実行した後に、その構成を使用してメッセージの送信を制御します。 バッチ化された送信をサポートする送信アダプターの場合は、別の送信ポートを宛先とするメッセージが同じバッチ内に存在する可能性があるため、アダプターはこれらの "混在" バッチを処理する必要があります。  
+ メッセージング エンジンは、アダプターにメッセージを配信する前に、アダプターの名前空間内のメッセージ コンテキストに送信ポートの構成を書き込みます。 読み取って、メッセージの送信の制御を使用して、その後の構成を検証するアダプターの役目です。 送信アダプターは、バッチ処理をサポートするメッセージを送信、宛ての異なる送信ポートは同じバッチでアダプターが「混在」バッチ処理する必要があるため。  
   
- 次のコード フラグメントを読み取る方法を示しています、 **OutboundTransportLocation**送信ポートの URI はします。 また、アダプターの構成を含む XML BLOB を読み取ってから、個々のプロパティを読み取る方法も示します。  
+ 次のコード フラグメントを読み取る方法を示しています、 **OutboundTransportLocation**は送信ポートの URI。 アダプターの構成を含む XML blob の読み取りし、個々 のプロパティを読み取る方法も示します。  
   
 ```  
 ...  
@@ -173,16 +173,16 @@ return int.Parse(s);
 }   
 ```  
   
- **実装のヒン ト:** アダプターは一般に使用する必要があります、 **OutboundTransportLocation**メッセージ コンテキスト プロパティをメッセージを送信するアドレスを決定します。 この方法を実行すると、静的送信と動的送信に対する送信を一貫して処理できます。 また、この方法を使用すると、実稼動のバインド ファイルのアドレスを簡単に変更できます。  
+ **実装のヒン ト:** 一般にアダプターを使用する必要があります、 **OutboundTransportLocation**メッセージ コンテキスト プロパティにメッセージを送信するアドレスを確認します。 アダプターは、この手順を実行して静的へのハンドルの送信と動的送信一貫しています。 これには、運用環境のバインド ファイル内のアドレスの変更も簡単になります。  
   
 ## <a name="xsd"></a>[XSD]  
- SDK ファイル アダプターのサンプルに含まれる 4 つの XSD ファイル ハンドル アダプター構成では、主に: ReceiveHandler.xsd、ReceiveLocation.xsd、TransmitLocation.xsd、および TransmitHandler.xsd です。  
+ SDK ファイル アダプターのサンプルに含まれる 4 つの XSD ファイル アダプターの構成を主にハンドル。ReceiveHandler.xsd、ReceiveLocation.xsd、TransmitLocation.xsd、および TransmitHandler.xsd です。  
   
- 次のトピックでは、これらの各ファイルと、それらのファイルの変更方法について説明します。  
+ 次のトピックでは、これらの各ファイルについて説明し、変更する方法について説明します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [アダプター構成の検証](../core/validating-the-adapter-configuration.md)  
+-   [アダプターの構成情報の検証](../core/validating-the-adapter-configuration.md)  
   
 -   [アダプターの登録](../core/registering-an-adapter.md)  
   
@@ -190,8 +190,8 @@ return int.Parse(s);
   
 -   [サポートされているアダプターの XSD 要素の型](../core/supported-adapter-xsd-element-types.md)  
   
--   [アダプターの XSD Element-attribute コンス トラクター](../core/adapter-xsd-element-attribute-constructs.md)  
+-   [アダプターの XSD Element-Attribute コンストラクター](../core/adapter-xsd-element-attribute-constructs.md)  
   
--   [アダプターの XSD Data Type-facet コンス トラクター](../core/adapter-xsd-data-type-facet-constructs.md)  
+-   [アダプターの XSD Data Type-Facet コンストラクター](../core/adapter-xsd-data-type-facet-constructs.md)  
   
--   [アダプターの高度な構成コンポーネント](../core/advanced-configuration-components-for-adapters.md)
+-   [アダプターの詳細構成コンポーネント](../core/advanced-configuration-components-for-adapters.md)

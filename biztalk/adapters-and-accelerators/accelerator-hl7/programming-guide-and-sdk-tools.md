@@ -16,12 +16,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b40802a02d51af6440b4f22e77cf0c32ce6ab386
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 131a1a8888487b96b80f4cf64a4ac66efbf47794
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37010603"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65289970"
 ---
 # <a name="programming-guide-and-sdk-tools"></a>プログラミング ガイドと SDK ツール
 このソフトウェア開発キット (SDK) は、Microsoft のツールを使用してアプリケーションを作成している開発者向けの情報を提供します[!INCLUDE[btaBTAHL7NoNumber](../../includes/btabtahl7nonumber-md.md)]、パブリック アプリケーション プログラミング インターフェイス (API)、または、BTAHL7 で提供されるサンプルとユーティリティ。SDK があります。  
@@ -47,7 +47,7 @@ ms.locfileid: "37010603"
   
 |||  
 |-|-|  
-|![](../../adapters-and-accelerators/accelerator-hl7/media/protmethod.gif "protmethod") Finalize (から継承された**System.Object**)|System 名前空間の詳細については、[System Namespace クラス](https://msdn.microsoft.com/library/system(v=vs.110).aspx)を参照してください。|  
+|![](../../adapters-and-accelerators/accelerator-hl7/media/protmethod.gif "protmethod") Finalize (から継承された**System.Object**)|System 名前空間の詳細については、次を参照してください。 [System Namespace クラス](https://msdn.microsoft.com/library/system(v=vs.110).aspx)します。|  
   
  BTAHL7 内を表示している場合[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]または、[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]ドキュメントについては、左側にあるリンクは、メンバーの正確なページに移動します。 BTAHL7 が外部のヘルプを表示している場合[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]、右側の列にリンクを使用して、MSDN ライブラリの System 名前空間 ページに移動します。 リンクは特定のメンバーのページに移動していないことに注意してください。  
   

@@ -1,5 +1,5 @@
 ---
-title: 組織の作成と取引先アグリーメント Contoso の |Microsoft ドキュメント
+title: および Contoso のパートナー アグリーメントを取引先組織の作成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,24 +15,24 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b137b4da73e583f9be1109164ba48888467b8a05
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: aa9367b230051765671c449fd8254a09b9045b4a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22209810"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65284267"
 ---
-# <a name="creating-organizations-and-trading-partner-agreement-for-contoso"></a>組織の作成と取引先アグリーメントの Contoso
-ここでは、BizTalk Accelerator for RosettaNet 管理コンソールを使用して、必要な組織情報を追加します。 両方の組織の連絡先情報を追加したら、最後に 3A2 PIP (Partner Interface Process) のための取引先アグリーメントをセットアップします。 ダブル アクション チュートリアルでこの手順を完了している場合は、必要な手順は既に実行されています。 移動できます[Contoso LOB スキーマとマップの作成](../../adapters-and-accelerators/accelerator-rosettanet/creating-the-contoso-lob-schemas-and-maps.md)です。 組織と取引先アグリーメントを作成するには、次の項目を参照してください。  
+# <a name="creating-organizations-and-trading-partner-agreement-for-contoso"></a>および Contoso のパートナー アグリーメントを取引先組織の作成
+このセクションでは、for RosettaNet 管理コンソール、BizTalk Accelerator を使用して、組織のために必要な情報を追加します。 両方の組織の連絡先情報を追加すると後の最後の手順では、、3 a 2 PIP Partner Interface Process () を取引先アグリーメントを設定します。 ダブル アクション チュートリアルの手順を完了する場合、必要な手順既に実行してきました。 移動できます[Contoso LOB スキーマとマップの作成](../../adapters-and-accelerators/accelerator-rosettanet/creating-the-contoso-lob-schemas-and-maps.md)です。 組織と取引先アグリーメントを作成するには、次を参照してください。  
   
--   [手順 1: Contoso ホーム組織の作成](../../adapters-and-accelerators/accelerator-rosettanet/step-1-creating-the-contoso-home-organization.md)  
+-   [ステップ 1: Contoso ホーム組織の作成](../../adapters-and-accelerators/accelerator-rosettanet/step-1-creating-the-contoso-home-organization.md)  
   
--   [手順 2: Fabrikam パートナー組織の作成](../../adapters-and-accelerators/accelerator-rosettanet/step-2-creating-the-fabrikam-partner-organization.md)  
+-   [手順 2:Fabrikam 取引先組織の作成](../../adapters-and-accelerators/accelerator-rosettanet/step-2-creating-the-fabrikam-partner-organization.md)  
   
--   [手順 5: Contoso 3 a 2 取引先アグリーメントの作成](../../adapters-and-accelerators/accelerator-rosettanet/step-5-creating-the-contoso-3a2-trading-partner-agreement.md)  
+-   [手順 5:Contoso 3A2 取引先契約の作成](../../adapters-and-accelerators/accelerator-rosettanet/step-5-creating-the-contoso-3a2-trading-partner-agreement.md)  
   
 > [!IMPORTANT]
->  これらの手順は、ダブル アクション チュートリアルにあります。 各手順を完了したら、このトピックに戻り、プライベート プロセス チュートリアルを続行します。  
+>  これらの手順では、ダブル アクション チュートリアルです。 各手順を完了するには、プライベート プロセス チュートリアルを続行するには、このトピックに戻ります。  
   
 ## <a name="see-also"></a>参照  
  [Contoso LOB スキーマとマップの作成](../../adapters-and-accelerators/accelerator-rosettanet/creating-the-contoso-lob-schemas-and-maps.md)

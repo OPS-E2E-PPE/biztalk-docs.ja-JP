@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a3db84f1ae6fda183799b0344d95da7b395aaee8
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: cbd82a28c424d9fa28cb26653b353c6b24603cf5
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36991699"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65279794"
 ---
 # <a name="segment-not-in-defined-transaction-set"></a>定義されたトランザクション セットにセグメントがありません
 ## <a name="details"></a>詳細  

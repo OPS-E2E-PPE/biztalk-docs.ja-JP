@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10834 |Microsoft Docs'
+title: シングル サインオン:イベント 10834 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: efba5b53e6947ba1d609c84a741c2332db5f4f77
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8b96ac26d25028647b473908715b96987dabd43f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37024208"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65279766"
 ---
-# <a name="single-sign-on-event-10834"></a>シングル サインオン: イベント 10834
+# <a name="single-sign-on-event-10834"></a>シングル サインオン:イベント 10834
 ## <a name="details"></a>詳細  
   
 |                 |                                                                               |
@@ -36,4 +36,4 @@ ms.locfileid: "37024208"
  この操作を実行するには、ユーザーは指定された SSO 管理者アカウントのメンバーである必要があります。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- アカウントの詳細については、[SSO 管理者の指定および関連管理者アカウントを表示する方法](../core/how-to-specify-sso-administrators-and-affiliate-administrators-accounts.md)を参照してください。
+ アカウントの詳細については、次を参照してください。 [SSO 管理者の指定および関連管理者アカウントを表示する方法](../core/how-to-specify-sso-administrators-and-affiliate-administrators-accounts.md)します。

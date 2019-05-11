@@ -15,15 +15,15 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f2833d0ae20462d5be84a45b49fc2e1fde44be4f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f586b9c26016e555f1b55f06bec975281fd7bf0a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36967147"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65282976"
 ---
 # <a name="message-processing-in-btarn"></a>BTARN でのメッセージ処理
-このセクションの説明方法 Microsoft® の主要コンポーネント[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]メッセージを処理します。 このセクションのトピックでは、必要に応じてコンポーネント内のメッセージの流れについても説明します。  
+このセクションの説明方法 Microsoft® の主要コンポーネント[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]メッセージを処理します。 必要に応じて、このセクションのトピックではメッセージ フローは、コンポーネントの説明が含まれます。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

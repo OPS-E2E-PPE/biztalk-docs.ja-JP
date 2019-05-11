@@ -23,12 +23,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 20e41137d8e300453d3dc4eba7fee6e9dd6ecc0b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b560623a2a34d4c65511077c7434dd9aebfe1cce
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36977275"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65290012"
 ---
 # <a name="planning-for-your-solution"></a>ソリューションの計画
 このセクションでは、Microsoft を計画する際の判断についての情報を提供します。[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]ソリューション。  

@@ -24,12 +24,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 770691b2862aba307e6f1cc444c8d38adce4aeb4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: fc14c208886497b001d50bbb8b5446b1ecccc20a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36984291"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65281787"
 ---
 # <a name="setting-up-a-cidx-solution"></a>CIDX ソリューションの設定
 Microsoft [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] は、CIDX (Chemical Industry Data Exchange) XML メッセージ交換 (CIDX Chem eStandards バージョン 2.0 および 3.0) をサポートしています。 ここでは、次の操作を行って CIDX ソリューションを設定する方法について説明します。  
@@ -53,7 +53,7 @@ Microsoft [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentv
   
 - **0A1 アグリーメント**プロパティ設定する取引先パートナー アグリーメントで**非 0A1**  
   
-  詳細については、[を CIDX eStandards メッセージ交換](../../adapters-and-accelerators/accelerator-rosettanet/setting-up-cidx-estandards-message-exchange.md)を参照してください。  
+  詳細については、次を参照してください。[を CIDX eStandards メッセージ交換](../../adapters-and-accelerators/accelerator-rosettanet/setting-up-cidx-estandards-message-exchange.md)します。  
   
 ## <a name="creating-a-cidx-agreement"></a>CIDX アグリーメントの作成  
  CIDX eStandards メッセージ交換を設定するには、次のプロパティを持つアグリーメントを作成する必要があります。  
@@ -62,7 +62,7 @@ Microsoft [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentv
   
 - **0A1 アグリーメント**プロパティに設定するアグリーメントの設定で**非 0A1**  
   
-  詳細については、[を作成または編集するアグリーメント](../../adapters-and-accelerators/accelerator-rosettanet/creating-or-editing-an-agreement.md)を参照してください。  
+  詳細については、次を参照してください。[を作成または編集するアグリーメント](../../adapters-and-accelerators/accelerator-rosettanet/creating-or-editing-an-agreement.md)します。  
   
 ## <a name="applying-a-pip-for-cidx"></a>CIDX 用 PIP の適用  
  PIP を CIDX 実装に適用するには、設定、**標準**にプロセス構成プロファイルのプロパティ**CIDX**します。 完了したら後の値を入力できるが、**メッセージ標準**、**標準バージョン**、および**ペイロードのバインド ID**します。 これらの値は CIDX Chem eStandards の仕様に含まれています。  

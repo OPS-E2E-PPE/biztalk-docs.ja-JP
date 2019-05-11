@@ -15,16 +15,16 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ca3ef0bf698515d00b60e7ffb8b2124576e9a001
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2cf8d0b960f09ef3ba955da9996aa858595688f1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37019519"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65323657"
 ---
 # <a name="security-with-the-mqseries-adapter"></a>MQSeries アダプタでのセキュリティ
 
-MQSeries アダプタをセキュリティで保護するには、BizTalk Server と MQSeries Server をセキュリティで保護する必要があります。 BizTalk Server をセキュリティで保護する方法の詳細については、[セキュリティで保護されたデータの保護と](secure-and-protect-your-biztalk-messages.md)を参照してください。 MQSeries Server をセキュリティで保護する方法の詳細については、IBM MQSeries Server のマニュアルを参照してください。  
+MQSeries アダプタをセキュリティで保護するには、BizTalk Server と MQSeries Server をセキュリティで保護する必要があります。 BizTalk Server をセキュリティで保護する方法の詳細については、次を参照してください。[セキュリティで保護されたデータの保護と](secure-and-protect-your-biztalk-messages.md)します。 MQSeries Server をセキュリティで保護する方法の詳細については、IBM MQSeries Server のマニュアルを参照してください。  
   
 > [!NOTE]
 >  MQSeries アダプタでは、BizTalk Server と MQSeries Server 間のメッセージの送受信にパケット プライバシーが自動的に使用されます。  
@@ -46,7 +46,7 @@ MQSeries アダプタをセキュリティで保護するには、BizTalk Server
   
   キュー定義の処理中に作成されたスクリプトをエクスポートして使用する場合、スクリプトはセキュリティで保護された場所に格納するようにします。 また、管理者がスクリプトを使用した場合にのみアクセスできるようにする必要があります。  
   
-  アプリケーションでは、送信メッセージにユーザーの資格情報を MQCIH および MQIIH ヘッダー プロパティを使用する場合は、使用、 **SSO 関連アプリケーション**プロパティを**トランスポートのプロパティ**ページ。 このプロパティの詳細については、[MQSeries アダプター受信場所の構成、送信ポートを](../core/how-to-configure-mqseries-adapter-receive-locations-and-send-ports.md)を参照してください。  
+  アプリケーションでは、送信メッセージにユーザーの資格情報を MQCIH および MQIIH ヘッダー プロパティを使用する場合は、使用、 **SSO 関連アプリケーション**プロパティを**トランスポートのプロパティ**ページ。 このプロパティの詳細については、次を参照してください。 [MQSeries アダプター受信場所の構成、送信ポートを](../core/how-to-configure-mqseries-adapter-receive-locations-and-send-ports.md)します。  
   
 ## <a name="see-also"></a>参照  
  [MQSeries アダプターの構造](../core/structure-of-the-mqseries-adapter.md)   

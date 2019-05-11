@@ -1,5 +1,5 @@
 ---
-title: '手順 5: スキーマのプロパティの昇格 |Microsoft Docs'
+title: 手順 5:スキーマ プロパティの昇格 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,14 +16,14 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 60aa8681e9647e592af3173295c3d32e216f1f2d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: fa148fee56ae62d5c14112c850f16b4d9ae3cf53
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37003219"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65288063"
 ---
-# <a name="step-5-promote-schema-properties"></a>手順 5: スキーマのプロパティを昇格します。
+# <a name="step-5-promote-schema-properties"></a>手順 5:スキーマ プロパティを昇格させる
 この手順でスキーマのプロパティを昇格するように、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]オーケストレーションは、後の手順で作成したこれらのプロパティ値を参照できます。 プロモーションは、メッセージ インスタンス内の特定の値を参照しにアクセスできるようにするために使用するメカニズム[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]コンポーネントやオーケストレーションなど、コンテンツ ベース ルーティングを行うのためです。 さらに、昇格させたプロパティがで Microsoft IntelliSense の式エディターに表示される[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]します。  
   
 > [!NOTE]
@@ -53,7 +53,7 @@ ms.locfileid: "37003219"
   
     昇格させたスキーマ要素に基づいてドキュメントの追跡の詳細については、正常性と動作状況の追跡について BizTalk Server のヘルプを参照してください。  
   
-   続行する[手順 6: スキーマの検証](../../adapters-and-accelerators/accelerator-hl7/step-6-validate-the-schemas.md)です。  
+   続行する[手順 6。スキーマの検証](../../adapters-and-accelerators/accelerator-hl7/step-6-validate-the-schemas.md)です。  
   
 ## <a name="see-also"></a>参照  
  [メッセージ強化のチュートリアル](../../adapters-and-accelerators/accelerator-hl7/message-enrichment-tutorial.md)

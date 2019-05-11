@@ -1,5 +1,5 @@
 ---
-title: FTP アダプターのトラブルシューティング |Microsoft ドキュメント
+title: FTP アダプターのトラブルシューティング |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 545d99b9ca056ca14f4bf6a92bd9be5b54b52104
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7e786ad9059e7b46c0e573e1162e5bc37e14f6ac
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22286410"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65292900"
 ---
 # <a name="troubleshooting-the-ftp-adapter"></a>FTP アダプターのトラブルシューティング
 このセクションでは、FTP アダプターに関する問題の診断に使用できるトラブルシューティング手法と FTP アダプターを使用する際の既知の問題点について説明します。  

@@ -1,5 +1,5 @@
 ---
-title: EDI および AS2 のパフォーマンスに関する既知の問題 |Microsoft ドキュメント
+title: EDI および AS2 のパフォーマンスに関する既知の問題 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e034cf228ee92157c4b29c36660111bb1856c358
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4cf091226c91660568d56b53618f04cbe4364318
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22261762"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65330541"
 ---
 # <a name="known-issues-with-edi-and-as2-performance"></a>EDI および AS2 のパフォーマンスに関する既知の問題
 このトピックでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI ソリューションおよび AS2 ソリューションのパフォーマンスに関する既知の問題について説明します。  

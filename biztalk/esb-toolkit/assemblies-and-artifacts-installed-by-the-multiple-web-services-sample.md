@@ -1,5 +1,5 @@
 ---
-title: アセンブリと、複数の Web サービス サンプルがインストールされている成果物 |Microsoft ドキュメント
+title: アセンブリとアイテムが複数の Web サービス サンプルによりインストールされる |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,29 +12,29 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1cbb1ccd6d015cfa07037f270b501023e5490fec
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 62bcf2c0dd261484b30cb1f42f8201253cb36db4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26007675"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65392134"
 ---
-# <a name="assemblies-and-artifacts-installed-by-the-multiple-web-services-sample"></a>アセンブリと、複数の Web サービス サンプルがインストールされている成果物
-次の表には、アセンブリと、複数の Web サービス サンプルのインストールされている他の成果物が一覧表示します。  
+# <a name="assemblies-and-artifacts-installed-by-the-multiple-web-services-sample"></a>アセンブリとアイテムが複数の Web サービス サンプルによりインストールされます。
+次の表は、アセンブリと、複数の Web サービス サンプルのインストールされている他の成果物を示します。  
   
 |場所|カテゴリ|コンポーネントの名前とバージョン|  
 |--------------|--------------|---------------------------------------|  
-|BizTalk アプリケーション GlobalBank.ESB|オーケストレーション|ESB です。MultipleWebServices.Orchestrations.TwoWayRouting|  
-|BizTalk アプリケーション GlobalBank.ESB|送信ポート|ESB です。MultipleWebServices.Orchestrations_2.0.0.0_<br /><br /> ESB です。MultipleWebServices.Orchestrations.TwoWayRouting_RoutingPort_d98186f1038d4721|  
+|BizTalk アプリケーション GlobalBank.ESB|オーケストレーション|ESB.MultipleWebServices.Orchestrations.TwoWayRouting|  
+|BizTalk アプリケーション GlobalBank.ESB|送信ポート|ESB.MultipleWebServices.Orchestrations_2.0.0.0_<br /><br /> ESB.MultipleWebServices.Orchestrations.TwoWayRouting_RoutingPort_d98186f1038d4721|  
 |BizTalk アプリケーション GlobalBank.ESB|受信ポート||  
 |BizTalk アプリケーション GlobalBank.ESB|受信場所||  
 |BizTalk アプリケーション GlobalBank.ESB|スキーマ||  
 |BizTalk アプリケーション GlobalBank.ESB|パイプライン||  
-|BizTalk アプリケーション GlobalBank.ESB|リソース|ESB です。MultipleWebServices.Maps バージョン 2.0.0.0 以降|  
-|||ESB です。MultipleWebServices.Orchestrations バージョン 2.0.0.0 以降|  
+|BizTalk アプリケーション GlobalBank.ESB|リソース|ESB します。MultipleWebServices.Maps バージョン 2.0.0.0 以降|  
+|||ESB.MultipleWebServices.Orchestrations Version 2.0.0.0|  
 |BizTalk アプリケーション GlobalBank.ESB|ポリシー||  
-|BizTalk アプリケーション GlobalBank.ESB|マップ|ESB です。MultipleWebServices.Maps.SubmitOrderResponseCN_To_SubmitOrderRequestCN バージョン 2.0.0.0 以降|  
-|||MessageEnrichment.Transforms.OrderDocAndGetOrderDetailsToInventoryOrder バージョン 1.0.0.0|  
-|グローバル アセンブリ キャッシュ|アセンブリ|ESB です。MultipleWebServices.Maps バージョン 2.0.0.0 以降|  
-|||ESB です。MultipleWebServices.Orchestrations バージョン 2.0.0.0 以降|  
+|BizTalk アプリケーション GlobalBank.ESB|マップ|ESB.MultipleWebServices.Maps.SubmitOrderResponseCN_To_SubmitOrderRequestCN Version 2.0.0.0|  
+|||MessageEnrichment.Transforms.OrderDocAndGetOrderDetailsToInventoryOrder Version 1.0.0.0|  
+|グローバル アセンブリ キャッシュ|アセンブリ|ESB します。MultipleWebServices.Maps バージョン 2.0.0.0 以降|  
+|||ESB.MultipleWebServices.Orchestrations Version 2.0.0.0|  
 |%Program Files %\\BizTalk Server\Pipeline コンポーネント|パイプライン コンポーネント||

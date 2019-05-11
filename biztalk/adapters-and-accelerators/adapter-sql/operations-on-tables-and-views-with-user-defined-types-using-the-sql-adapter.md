@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3dab9b8d008b9bb36fa5a09789b531ea9fbee113
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: eb497a951230463e307a18ec6f12db69ab2c8da9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37006427"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65368623"
 ---
 # <a name="operations-on-tables-and-views-with-user-defined-types-using-the-sql-adapter"></a>SQL アダプターを使用してユーザー定義型を持つテーブルとビューに対する操作
 使用することができます、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]テーブルまたはユーザー定義型 (Udt) 列を含むビューで操作を実行します。 標準のテーブル操作 (Insert、Update、Delete、および選択) を読み取り、または UDT 型の列にデータを書き込むを使用することができます。 このようなテーブルで、ストアド プロシージャおよび関数を実行することもできます。 ただし、アダプターを使用するには、UDT 列を含むテーブルを操作するには、特定のタスクを実行する必要があります。 これらのタスクを実行すると、アダプターを使用できます。  

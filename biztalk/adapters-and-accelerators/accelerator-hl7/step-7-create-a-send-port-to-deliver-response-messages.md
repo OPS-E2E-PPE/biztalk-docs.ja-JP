@@ -1,5 +1,5 @@
 ---
-title: '手順 7: 応答メッセージを配信する送信ポートの作成 |Microsoft Docs'
+title: 手順 7:応答メッセージを配信する送信ポートの作成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,14 +14,14 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4139e07c5ca503a8cb58b1aa88fe8e602a92ee07
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a07e4a084fecd17bc2fbe2ec05b5fe17a046bfba
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36987827"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65287982"
 ---
-# <a name="step-7-create-a-send-port-to-deliver-response-messages"></a>手順 7: 応答メッセージを配信する送信ポートを作成します。
+# <a name="step-7-create-a-send-port-to-deliver-response-messages"></a>手順 7:応答メッセージを配信する送信ポートを作成します。
 この手順で入学、放電、および転送 (ADT) へのクエリ応答を配信する送信ポートを作成するシステムです。  
 
 ### <a name="to-create-the-adtsend-send-port"></a>ADT_Send 送信ポートを作成するには  
@@ -70,4 +70,4 @@ ms.locfileid: "36987827"
 
 7. 管理コンソールで、**送信ポート**を右クリックして**ADT_Send**、順にクリックします**開始**します。  
 
-   続行する[手順 8: パーティ情報の構成](../../adapters-and-accelerators/accelerator-hl7/step-8-configure-party-information-hl7-main.md)します。
+   続行する[手順 8。パーティ情報の構成](../../adapters-and-accelerators/accelerator-hl7/step-8-configure-party-information-hl7-main.md)します。

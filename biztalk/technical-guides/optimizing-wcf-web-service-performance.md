@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1b0dc200135d65f179d565ba0fe03cc8df897eeb
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 63ee4af7de8485b95e142d2291ada66d53d7da4d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36999379"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65291323"
 ---
 # <a name="optimizing-wcf-web-service-performance"></a>WCF Web サービスのパフォーマンスの最適化
 WCF サービスは、パフォーマンスに影響する多数の構成パラメーターを公開します。 このトピックでは、WCF サービスのパフォーマンスを向上させるためにこれらの構成パラメーターの最適な値の設定に関する一般的なガイダンスを提供します。  
@@ -73,9 +73,9 @@ maxConcurrentInstances="200" />
 </netTcpBinding>  
 ```  
   
- NetTcpBinding.ListenBacklog プロパティの詳細については、[NetTcpBinding.ListenBacklog プロパティ](http://go.microsoft.com/fwlink/?LinkId=157752)(http://go.microsoft.com/fwlink/?LinkId=157752) msdn を参照してください。  
+ NetTcpBinding.ListenBacklog プロパティの詳細については、次を参照してください。 [NetTcpBinding.ListenBacklog プロパティ](http://go.microsoft.com/fwlink/?LinkId=157752)(http://go.microsoft.com/fwlink/?LinkId=157752) msdn です。  
   
- NetTcpBinding.MaxConnections プロパティの詳細については、[NetTcpBinding.MaxConnections プロパティ](http://go.microsoft.com/fwlink/?LinkID=157751)(http://go.microsoft.com/fwlink/?LinkID=157751) msdn を参照してください。  
+ NetTcpBinding.MaxConnections プロパティの詳細については、次を参照してください。 [NetTcpBinding.MaxConnections プロパティ](http://go.microsoft.com/fwlink/?LinkID=157751)(http://go.microsoft.com/fwlink/?LinkID=157751) msdn です。  
   
 ## <a name="eliminate-aspnet-httpmodules-that-are-not-required-to-run-wcf-web-services"></a>WCF Web サービスを実行する必要のない ASP.NET httpModules を排除します。  
  既定では、いくつかの ASP.NET httpModules は、IIS 6.0 では、クラシックまたは IIS 7.5 または 7.0 の Integrated パイプラインで要求パイプラインで定義されます。 これらのコンポーネントがインターセプトし、すべての受信要求を処理します。 既定のモジュールは、64 ビットの ASP の %windir%\Microsoft.NET\Framework64\v2.0.50727\CONFIG フォルダーと 32 ビット ASP.NET アプリケーションの %windir%\Microsoft.NET\Framework\v2.0.50727\CONFIG フォルダーに含まれる、web.config ファイルで定義されます。次のスニペットで示すように .NET アプリケーション。  
@@ -122,7 +122,7 @@ maxConcurrentInstances="200" />
   
 - WCF の HTTP モジュールとハンドラー  
   
-  非同期の WCF の HTTP モジュール/ハンドラーを使用して、IIS 7.5 または 7.0 のスケーラビリティを向上させる方法については、WCF サービスをホストされている、Wenlong ドンのブログを参照してください[Orcas SP1 の改善: 非同期 WCF HTTP モジュール/ハンドラー良く IIS7 用。サーバーのスケーラビリティ](http://go.microsoft.com/fwlink/?LinkId=157428)(http://go.microsoft.com/fwlink/?LinkId=157428)します。  
+  非同期の WCF の HTTP モジュール/ハンドラーを使用して、IIS 7.5 または 7.0 のスケーラビリティを向上させる方法については、WCF サービスをホストされている、Wenlong ドンのブログを参照してください。 [Orcas SP1 の改善。非同期の WCF HTTP モジュール/ハンドラーのサーバーのスケーラビリティの向上の IIS7](http://go.microsoft.com/fwlink/?LinkId=157428) (http://go.microsoft.com/fwlink/?LinkId=157428)します。  
   
 ## <a name="see-also"></a>参照  
  [BizTalk Server WCF Adapter パフォーマンスの最適化](../technical-guides/optimizing-biztalk-server-wcf-adapter-performance.md)

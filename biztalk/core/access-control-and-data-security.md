@@ -1,5 +1,5 @@
 ---
-title: アクセス制御とデータのセキュリティ |Microsoft ドキュメント
+title: アクセス制御とデータ セキュリティ |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -23,32 +23,32 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 11cb00eabf6110de78e2d194e0a25bfac6a3b6b0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e34babf08ccc18d0e20165b5f3a39914ad7324e1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22225642"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65362259"
 ---
-# <a name="access-control-and-data-security"></a>アクセス制御とデータのセキュリティ
-BizTalk Server では、ユーザー権限を最小限にすることでプロセスとデータベースへのアクセスを制限しています。システム内の重要なデータは、Microsoft Windows Server の機能を使用して、セキュリティで保護できます。 セキュリティ上の理由から、BizTalk Server 管理者および BizTalk ホストに対して、業務の遂行に不要なユーザー権限を設定しないでください。  
+# <a name="access-control-and-data-security"></a>アクセス制御とデータ セキュリティ
+BizTalk Server は、最小限のユーザーの権限を使用して、プロセスとデータベースへのアクセスを制限します。Microsoft Windows Server から機能を使用して、セキュリティで保護された重要なデータのシステムに役立ちます。 セキュリティ上の理由から、BizTalk Server 管理者と BizTalk ホストは必要ありません、ジョブを実行するために必要なユーザー権限。  
   
- BizTalk では、データへの管理アクセスは SQL ロールを使用して制御されます。この方法により、ツールを使用する場合も直接データベースを利用する場合もデータへのアクセスを制御できます。 BizTalk ホストからのデータへのアクセスは、ホスト ユーザー グループとアカウントを使用して制御されます。  
+ 両方ツールおよびデータベースを使用して直接データへのアクセスを制御するための SQL ロールを使用してデータにアクセスする BizTalk 制御管理します。 データへの BizTalk ホストでは、ホスト ユーザー グループとアカウントを使用して制御されます。  
   
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] には、BizTalk Server 管理者と BizTalk Server Operator の 2 種類の管理者ロールがあります。 インストールまたは BizTalk Server 管理コンソールを使用して BizTalk Server データベースを作成する BizTalk Server により、これら両方の管理ロール用の SQL ロールがそのデータベースに自動的に作成します。 各ロール、およびロールに割り当てられる SQL Server ログインには、管理者がデータベースで管理タスクを実行するときに SQL Server オブジェクト (テーブル、ビュー、ストアド プロシージャなど) に対して持っている必要のある最小限のユーザー権限が許可されます。  
+ [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]、2 つの管理ロール: BizTalk Server 管理者、および BizTalk Server Operator します。 インストールや、BizTalk Server 管理コンソールを使用して BizTalk Server データベースを作成するときにいつでも BizTalk Server により、これら両方の管理ロール用の SQL ロールがそのデータベースに自動的に作成します。 BizTalk Server では、各ロール、およびロールに割り当てられているすべての SQL Server ログインで SQL Server オブジェクト (テーブル、ビュー、ストアド プロシージャなど) をそのデータベースでの管理タスクを実行する管理者の必要最小限のユーザー権限を付与します。  
   
- BizTalk Server 管理者は権限レベルの高いロールで、構成データおよび追跡データにアクセスできます。 BizTalk Server Operator は、監視とトラブルシューティング操作にのみアクセス権を持つ特権の低いロールです。 BizTalk Server Operator ロールはサービスの状態とメッセージ フローを表示したり、アプリケーションを開始および停止したり、サービス インスタンスを終了および再開することができますが、構成を変更したり、メッセージのプロパティと内容を表示することはできません。  
+ BizTalk Server の管理者は、構成データおよび追跡データへのアクセスを高い特権を持つロールです。 BizTalk Server Operator は、監視とトラブルシューティング操作にのみアクセス権を持つ特権の低いロールです。 この後者のロールできますサービスの状態とメッセージ フローを表示しできます開始またはアプリケーションを停止および終了および再開サービス インスタンスしますが、メッセージのプロパティを構成またはビューとコンテンツを変更することはできません。  
   
- 同様に、BizTalk Server では、各ホストのユーザー グループ用の SQL ロールが各データベースに作成されます。作成されたロールには、ユーザー グループがそのホストに対してタスクを実行するときに必要となる最小限のユーザー権限が許可されます。  
+ 同様に、BizTalk Server は、各ホストの各データベースでユーザー グループ用の SQL ロールを作成し、このロールをホストするためのタスクを実行するユーザー グループに必要な最小ユーザー権限が付与されます。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
 -   [BizTalk Server の Windows グループ アカウントとユーザー アカウント](../core/windows-groups-and-user-accounts-in-biztalk-server.md)  
   
--   [グループおよびサービス アカウントのアクセス制御](../core/access-control-for-groups-and-service-accounts.md)  
+-   [グループ アカウントおよびサービス アカウントのアクセス制御](../core/access-control-for-groups-and-service-accounts.md)  
   
 -   [管理ロールのアクセス制御](../core/access-control-for-administrative-roles.md)  
   
--   [ビジネス情報へのアクセス制御](../core/access-control-to-business-information.md)  
+-   [企業情報へのアクセス制御](../core/access-control-to-business-information.md)  
   
--   [セキュリティの最小ユーザー権限](../core/minimum-security-user-rights.md)
+-   [セキュリティ保護のための最小ユーザー権限](../core/minimum-security-user-rights.md)

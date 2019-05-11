@@ -1,5 +1,5 @@
 ---
-title: サンプルの対話と FileAct メッセージ |Microsoft ドキュメント
+title: サンプルを操作および FileAct メッセージ |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,17 +12,17 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 30c2541e2ec3a6fe77de374843a47befacf3a791
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 776659a7bcd6c882a514098758385123e4cfc0ea
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22222418"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65366516"
 ---
-# <a name="sample-interact-and-fileact-messages"></a>サンプルの対話と FileAct メッセージ
-InterAct メッセージと FileAct リアルタイム メッセージのサンプルは、次のとおりです。  
+# <a name="sample-interact-and-fileact-messages"></a>サンプルを操作および FileAct メッセージ
+InterAct および FileAct のリアルタイム メッセージのサンプルは、次のとおりです。  
   
- **InterAct リアルタイムでのメッセージをサンプルします。**  
+ **InterAct のリアルタイム メッセージをサンプルします。**  
   
 ```  
 <SwInt-ExchangeRequest>  
@@ -34,7 +34,7 @@ TestPayloadRequestSnF
 </SwInt-ExchangeRequest>  
 ```  
   
- **FileAct リアルタイム メッセージのサンプル (put 要求)**  
+ **サンプル FileAct のリアルタイム メッセージ (put 要求)**  
   
 ```  
 <?xml version="1.0" encoding="utf-8"?>  
@@ -49,7 +49,7 @@ TestPayloadRequestSnF
 </Sw-ExchangeFileRequest>  
 ```  
   
- **FileAct リアルタイム メッセージのサンプル (get 要求)**  
+ **サンプル FileAct のリアルタイム メッセージ (get 要求)**  
   
 ```  
 <?xml version="1.0" encoding="utf-8"?>  

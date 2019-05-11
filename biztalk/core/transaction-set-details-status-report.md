@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ef31f7216eb011d95ab62ebf361dfcde8374ddd2
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: cf94c5d39bcf304bfb2942d957f1c30d2e365571
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37009955"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65279736"
 ---
 # <a name="transaction-set-details-status-report"></a>トランザクション セットの詳細の状態レポート
 このレポートには、インターチェンジ/確認の状態レポートで選択した特定の EDI インターチェンジにあるトランザクション セットに関する詳細が示されます。 この状態レポートを表示するには、インターチェンジをインターチェンジ/確認の状態レポートのクエリ結果ペインに一覧表示を右クリックし、順にクリックします**トランザクション セットの詳細**します。  
@@ -67,7 +67,7 @@ ms.locfileid: "37009955"
 |-|-|-|-|  
 |クエリ式のフィールド|有効な演算子|潜在的な値|既定で含まれますか。|  
 |検索|[等しい]|トランザクション セットの詳細|指定あり (必須)|  
-|インターチェンジの日時|[以下]<br /><br /> [以上]|特定の日時<br /><br /> [今日]<br /><br /> 昨日|はい<br /><br /> メモ: クエリ式に 1 回以上含めることができます。|  
+|インターチェンジの日時|[以下]<br /><br /> [以上]|特定の日時<br /><br /> [今日]<br /><br /> 昨日|はい<br /><br /> 注:できますに含めることが 1 回以上のクエリ式です。|  
 |受信者パーティ名|[等しい]|すべて (既定)<br /><br /> 特定のパーティ名|はい|  
 |送信者パーティ名|[等しい]|すべて (既定)<br /><br /> 特定のパーティ名|はい|  
 |Direction|[等しい]|すべて (既定)<br /><br /> Receive<br /><br /> Send|はい|  
@@ -80,7 +80,7 @@ ms.locfileid: "37009955"
 ## <a name="additional-reports-displayed-from-this-report"></a>このレポートで表示されるその他のレポート  
  トランザクション セットのトランザクション セットの詳細レポートに示すように、次の追加の状態レポートを表示することができます。  
   
--   メッセージ コンテンツの状態レポート。 このレポートを表示するには、詳細レポートで任意のトランザクション セットを右クリックし、[トランザクション セット数の表示] をクリックします。 詳細については、[EDI メッセージ コンテンツ状態レポート](../core/edi-message-content-status-report.md)を参照してください。  
+-   メッセージ コンテンツの状態レポート。 このレポートを表示するには、詳細レポートで任意のトランザクション セットを右クリックし、[トランザクション セット数の表示] をクリックします。 詳細については、次を参照してください。 [EDI メッセージ コンテンツ状態レポート](../core/edi-message-content-status-report.md)します。  
   
 -   インターチェンジ/確認の状態レポート。 このレポートと同じユーザー インターフェイスを使用して、 [EDI インターチェンジと関連する ACK の状態レポート](../core/edi-interchange-and-correlated-ack-status-report.md)を複数のインターチェンジが表示されます。 相違点は、このトランザクション セットを含むインターチェンジに関するデータだけが報告されることです  
   

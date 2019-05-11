@@ -1,5 +1,5 @@
 ---
-title: WCF チャネル モデルを使用して SAP のフラット ファイル Idoc をストリーム配信 |Microsoft ドキュメント
+title: WCF チャネル モデルを使用して SAP でのフラット ファイル Idoc を Stream |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,28 +14,28 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c8de850022a03a3be0310da3022a2cf496c94f30
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: bf0b2c0cd8fe401e8d410c8827d2d3ed7547edab
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25966040"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65372773"
 ---
-# <a name="stream-flat-file-idocs-in-sap-using-the-wcf-channel-model"></a>WCF チャネル モデルを使用して SAP のフラット ファイル Idoc をストリーム
-[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]ノード値、SendIdoc および ReceiveIdoc 操作のストリーミングをサポートします。 これらの操作は、フラット ファイル (string) Idoc をして、アダプターからの送受信に使用されます。 1 つのノードの下の文字列にこれらの操作の両方で全体の IDOC のデータが含まれている (\<idocData\>)。 大規模の Idoc は、アダプターとコード間で IDOC データのストリーミングは、大量のメモリ リソースに保存できます。  
+# <a name="stream-flat-file-idocs-in-sap-using-the-wcf-channel-model"></a>WCF チャネル モデルを使用して SAP でのフラット ファイル Idoc の Stream
+[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]ノード値のストリーミング、SendIdoc および ReceiveIdoc 操作をサポートしています。 これらの操作は、フラット ファイル (string) Idoc とアダプターの間の送受信に使用されます。 1 つのノードの下の文字列にこれらの操作の両方で全体の IDOC のデータが含まれている (\<idocData\>)。 大規模の Idoc は、アダプターと、コードの間、IDOC データのストリーミングは、大量のメモリ リソースに保存できます。  
   
- アダプターがストリーミングをサポートする方法の詳細については、次を参照してください。[ストリーミングと SAP アダプター](../../adapters-and-accelerators/adapter-sap/streaming-and-the-sap-adapter.md)です。 続行する前にこのトピックの内容を確認してください。  
+ アダプターがストリーミングをサポートする方法の詳細については、次を参照してください。[ストリーミングと SAP アダプター](../../adapters-and-accelerators/adapter-sap/streaming-and-the-sap-adapter.md)します。 続行する前に、このトピックを確認してください。  
   
  このトピックのセクションでは、ノードと値の WCF チャネル モデルを使用すると、SendIdoc および ReceiveIdoc 操作のストリーミングを実装する方法について説明します。  
   
 ## <a name="streaming-outbound-flat-file-idocs-to-the-adapter"></a>送信フラット ファイル Idoc をアダプターにストリーミング  
  アダプターは、ノード値 SendIdoc 操作の要求メッセージのストリーミングをサポートします。  
   
- ノード値が、WCF チャネル モデルで SendIdoc 操作でストリーミングをサポートするために次の操作を行う必要があります。  
+ ノード値 SendIdoc 操作 WCF チャネル モデルでのストリーミングをサポートするためには、次の必要があります。  
   
-1.  実装する**System.ServiceModel.Channels.BodyWriter**が (ノード値 IDOC データのストリーミングを実行する) IDOC データをストリーミング可能です。  
+1.  実装を**System.ServiceModel.Channels.BodyWriter**ことができる (ノード値の IDOC のデータのストリーミングを実行する) IDOC データをストリーミングします。  
   
-2.  作成、 **System.ServiceModel.Message**これを使用してメッセージ本文を指定することによって、操作を呼び出すために使用**BodyWriter**の適切なオーバー ロードを使用して、 **Message.Create**メソッドです。  
+2.  作成、 **System.ServiceModel.Message**このメッセージ本文を指定して、操作を呼び出すために使用**BodyWriter**の適切なオーバー ロードを使用して、 **Message.Create**メソッド。  
   
 ### <a name="implementing-a-bodywriter"></a>BodyWriter を実装します。  
  次の例の実装を示しています、 **BodyWriter**ノード値のストリーミングを実行します。  
@@ -109,7 +109,7 @@ class StreamingBodyWriter : BodyWriter, IDisposable
 ```  
   
 ### <a name="creating-a-message-by-using-a-bodywriter"></a>BodyWriter によるメッセージの作成  
- 次の例を使用して SendIdoc 要求メッセージを作成する方法を示しています、 **BodyWriter**前の例です。 メッセージのデータは、ファイルから読み取られます。  
+ 次の例は、SendIdoc 要求メッセージを作成する方法を示しています、 **BodyWriter**前の例です。 メッセージのデータは、ファイルから読み取られます。  
   
 ```  
 XmlReader readerIn = XmlReader.Create ("sendidoc.xml");  
@@ -125,11 +125,11 @@ Message InputMsg = Message.CreateMessage(MessageVersion.Default,
 ## <a name="streaming-inbound-flat-file-idocs-from-the-adapter"></a>アダプターからの着信フラット ファイル Idoc のストリーミング  
  受信 ReceiveIdoc 操作では、フラット ファイル Idoc を受信します。 アダプターは、ノード値 ReceiveIdoc 操作の要求メッセージのストリーミングをサポートします。  
   
- ノード値が、WCF チャネル モデルで ReceiveIdoc 操作でストリーミングをサポートするために次の操作を行う必要があります。  
+ ノード値 ReceiveIdoc 操作 WCF チャネル モデルでのストリーミングをサポートするためには、次の必要があります。  
   
-1.  実装する**System.Xml.XmlDictionaryWriter**が (ノード値 IDOC データのストリーミングを実行する) IDOC データをストリーミング可能です。  
+1.  実装を**System.Xml.XmlDictionaryWriter**ことができる (ノード値の IDOC のデータのストリーミングを実行する) IDOC データをストリーミングします。  
   
-2.  消費、**メッセージ**を呼び出すことによってその**WriteBodyContents**メソッドをこの**XmlDictionaryWriter**です。  
+2.  使用、**メッセージ**を呼び出すことによってその**WriteBodyContents**メソッドをこの**XmlDictionaryWriter**します。  
   
 ### <a name="implementing-an-xmldictionarywriter"></a>XmlDictionaryWriter の実装  
  次の例の実装を示しています、 **XmlDictionaryWriter**ノード値のストリーミングを実行します。  
@@ -277,7 +277,7 @@ class FileXmlWriter : XmlDictionaryWriter
 ```  
   
 ### <a name="consuming-a-message-by-using-an-xmldictionarywriter"></a>メッセージを使用する XmlDictionaryWriter を使用して、  
- 次の例を使用して ReceiveIdoc 要求メッセージを使用する方法を示しています、 **FileXmlWriter**前の例で実装します。 (、 **FileWriter**サブクラスによってクラスが作成された**XmlDictionaryWriter**)。この例では、 **IReplyChannel**受信 ReceiveIdoc 操作へのチャネル。 チャネルの作成の詳細が省略されています。 ReceiveIdoc 要求メッセージは、ファイルに書き込まれます。  
+ 次の例では、使用して ReceiveIdoc 要求メッセージを使用する方法を示しています、 **FileXmlWriter**前の例で実装します。 (、 **FileWriter**クラスがサブクラス化によって作成された**XmlDictionaryWriter**)。この例では、 **IReplyChannel** ReceiveIdoc 操作を受信するチャネル。 チャネルの作成の詳細が省略されています。 ReceiveIdoc 要求メッセージは、ファイルに書き込まれます。  
   
 ```  
 // Receive the ReceiveIdoc request message from the adapter.  

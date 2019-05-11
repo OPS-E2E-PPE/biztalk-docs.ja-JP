@@ -1,5 +1,5 @@
 ---
-title: 'パート 1: 断片化した受信バッチのシナリオ |Microsoft Docs'
+title: 作業 1:受信バッチのシナリオを断片化 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,14 +16,14 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7c5cf6f38daca7b1773798e4bc8ed2e40ad143bd
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 0d334c9cee7da4cca1a28268f0d693b5a7813839
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36970507"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65290041"
 ---
-# <a name="part-1-fragmented-inbound-batch-scenario"></a>パート 1: 断片化した受信バッチのシナリオ
+# <a name="part-1-fragmented-inbound-batch-scenario"></a>作業 1:断片化した受信バッチのシナリオ
 このチュートリアルには、個別のメッセージにフラグメントが、および、変換先に個々 のメッセージを送信、HL7 でエンコードされたバッチを受信します。 次の図は、このプロセスの流れを示しています。  
   
  ![](../../adapters-and-accelerators/accelerator-hl7/media/hl7-fragmented-inbound-batching-scenario.gif "hl7_fragmented_inbound_batching_scenario")  
@@ -50,20 +50,20 @@ ms.locfileid: "36970507"
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [手順 1: ヘッダーと受信確認スキーマの追加](../../adapters-and-accelerators/accelerator-hl7/step-1-add-header-and-acknowledgment-schemas.md)  
+-   [ステップ 1: ヘッダーと受信確認スキーマの追加](../../adapters-and-accelerators/accelerator-hl7/step-1-add-header-and-acknowledgment-schemas.md)  
   
--   [手順 2: v2.3.1 の一般的なスキーマの追加](../../adapters-and-accelerators/accelerator-hl7/step-2-add-common-schemas-for-v2-3-1.md)  
+-   [手順 2:v2.3.1 の一般的なスキーマの追加](../../adapters-and-accelerators/accelerator-hl7/step-2-add-common-schemas-for-v2-3-1.md)  
   
--   [手順 3: トリガー イベント (メッセージ) スキーマの追加](../../adapters-and-accelerators/accelerator-hl7/step-3-add-a-trigger-event-message-schema.md)  
+-   [ステップ 3:トリガー イベント (メッセージ) スキーマの追加](../../adapters-and-accelerators/accelerator-hl7/step-3-add-a-trigger-event-message-schema.md)  
   
--   [手順 4: バッチ メッセージを受け入れるための受信ポートの作成](../../adapters-and-accelerators/accelerator-hl7/step-4-create-a-receive-port-for-accepting-the-batch-message.md)  
+-   [手順 4:バッチ メッセージを受け入れるための受信ポートの作成](../../adapters-and-accelerators/accelerator-hl7/step-4-create-a-receive-port-for-accepting-the-batch-message.md)  
   
--   [手順 5: メッセージを配信する送信ポートの作成](../../adapters-and-accelerators/accelerator-hl7/step-5-create-a-send-port-to-deliver-messages.md)  
+-   [手順 5:メッセージを配信する送信ポートの作成](../../adapters-and-accelerators/accelerator-hl7/step-5-create-a-send-port-to-deliver-messages.md)  
   
--   [手順 6: 受信確認を配信する送信ポートの作成](../../adapters-and-accelerators/accelerator-hl7/step-6-create-a-send-port-to-deliver-acknowledgments.md)  
+-   [手順 6:受信確認を配信する送信ポートの作成](../../adapters-and-accelerators/accelerator-hl7/step-6-create-a-send-port-to-deliver-acknowledgments.md)  
   
--   [手順 7: ソース パーティーの作成と構成](../../adapters-and-accelerators/accelerator-hl7/step-7-create-and-configure-a-source-party.md)  
+-   [手順 7:ソース パーティの作成と構成](../../adapters-and-accelerators/accelerator-hl7/step-7-create-and-configure-a-source-party.md)  
   
--   [手順 8: BizTalk Server の再起動](../../adapters-and-accelerators/accelerator-hl7/step-8-restart-biztalk-server.md)  
+-   [手順 8:BizTalk Server の再起動](../../adapters-and-accelerators/accelerator-hl7/step-8-restart-biztalk-server.md)  
   
--   [手順 9: 断片化した受信バッチのシナリオの確認](../../adapters-and-accelerators/accelerator-hl7/step-9-verify-the-fragmented-inbound-batch-scenario.md)
+-   [手順 9:断片化した受信バッチのシナリオの確認](../../adapters-and-accelerators/accelerator-hl7/step-9-verify-the-fragmented-inbound-batch-scenario.md)

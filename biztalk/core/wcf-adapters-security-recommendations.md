@@ -15,17 +15,17 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f871c68277c487efcc7400a3ae54db749090148e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 617d573dba56cfae8f95c6d847813f50e57f3b48
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36993451"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65279093"
 ---
 # <a name="wcf-adapters-security-recommendations"></a>WCF アダプターのセキュリティに関する推奨事項
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は、WCF アダプターを使用して WCF サービスを公開 (受信) および使用 (送信) します。 使用している環境内において WCF アダプターをセキュリティで保護して展開するには、次のガイドラインに従うことをお勧めします。  
   
- WCF アダプターに関する詳細については、[WCF アダプタ](../core/wcf-adapters.md)を参照してください。 WCF サービスの詳細については、次を参照してください。 [WCF サービスを使用する](../core/using-wcf-services.md)秒。  
+ WCF アダプターに関する詳細については、次を参照してください。 [WCF アダプタ](../core/wcf-adapters.md)します。 WCF サービスの詳細については、次を参照してください。 [WCF サービスを使用する](../core/using-wcf-services.md)秒。  
   
 ## <a name="security-recommendations-for-all-wcf-adapters"></a>すべての WCF アダプターのセキュリティに関する推奨事項  
   
@@ -42,7 +42,7 @@ ms.locfileid: "36993451"
   
 ## <a name="security-recommendations-for-the-isolated-wcf-adapters"></a>分離 WCF アダプターのセキュリティに関する推奨事項  
   
-- Web サービスを公開するためのセキュリティの推奨事項については、[Web サービスを有効にする](../core/enabling-web-services.md)を参照してください。  
+- Web サービスを公開するためのセキュリティの推奨事項については、次を参照してください。 [Web サービスを有効にする](../core/enabling-web-services.md)します。  
   
 - WCF-CustomIsolated、WCF-BasicHttp、WCF-WSHttp などの分離 WCF アダプターは、HTTP (ハイパーテキスト転送プロトコル) を利用して、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] との間でメッセージを送受信します。 そのため、インターネット インフォメーション サービス (IIS) を保護するためのセキュリティの推奨事項に従う必要があります。  
   
@@ -50,7 +50,7 @@ ms.locfileid: "36993451"
   
 ## <a name="security-recommendations-for-the-wcf-custom-adapter"></a>WCF-Custom アダプターのセキュリティに関する推奨事項  
   
--   HTTP カーネル モード ドライバー (HTTP.sys) を使用する場合は、Wcf-custom 受信場所、 **httpsTransport** Secure Sockets Layer (SSL) 通信、受信場所のバインド要素は、証明書が必要ソケット (IP アドレスとポートの組み合わせ) ごとに登録します。 SSL 証明書をコンピューター上のポートにバインドするには、HttpCfg.exe ツールを使用します。 詳細についてを参照してください「方法に::、ポートでの SSL 証明書の構成」 [ http://go.microsoft.com/fwlink/?LinkId=86384](http://go.microsoft.com/fwlink/?LinkId=86384)します。  
+-   HTTP カーネル モード ドライバー (HTTP.sys) を使用する場合は、Wcf-custom 受信場所、 **httpsTransport** Secure Sockets Layer (SSL) 通信、受信場所のバインド要素は、証明書が必要ソケット (IP アドレスとポートの組み合わせ) ごとに登録します。 SSL 証明書をコンピューター上のポートにバインドするには、HttpCfg.exe ツールを使用します。 詳細については、次を参照してください。"どのようにします。構成、SSL 証明書でポート" [ http://go.microsoft.com/fwlink/?LinkId=86384](http://go.microsoft.com/fwlink/?LinkId=86384)します。  
   
 ## <a name="security-recommendations-for-the-wcf-netmsmq-adapter"></a>WCF-NetMsmq アダプターのセキュリティに関する推奨事項  
   
@@ -97,7 +97,7 @@ ms.locfileid: "36993451"
   </configuration>  
   ```  
   
-- さらに、"承認されていないセキュリティ呼び出し" などのセキュリティ関連のパフォーマンス カウンターを使用して WCF アダプターを監視することもできます。 WCF パフォーマンス カウンタを有効にする方法の詳細については、[WCF アダプターのパフォーマンス カウンター](../core/wcf-adapters-performance-counters.md)を参照してください。  
+- さらに、"承認されていないセキュリティ呼び出し" などのセキュリティ関連のパフォーマンス カウンターを使用して WCF アダプターを監視することもできます。 WCF パフォーマンス カウンタを有効にする方法の詳細については、次を参照してください。 [WCF アダプターのパフォーマンス カウンター](../core/wcf-adapters-performance-counters.md)します。  
   
 ## <a name="see-also"></a>参照  
  [セキュリティの計画](../core/planning-for-security.md)

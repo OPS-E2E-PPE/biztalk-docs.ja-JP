@@ -17,12 +17,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dbe92c28a3ca84cdd94236c1069c9d340cc4630f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e0ad89c82f7eac4aca14ca3d424a5bda6056f95f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36983563"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65361818"
 ---
 # <a name="activity-and-activityid-nodes"></a>アクティビティ ノードと ActivityID ノード
 アクティビティ ノードと ActivityID ノードは、アクティビティ定義の格納と識別に使用します。 アクティビティ ノードは、アクティビティ定義に含まれる項目の親フォルダーです。 すべてのデータ項目とビジネス イベント ノードは、関連付けられているアクティビティ ノードの下位ノードで、アクティビティ ノードに含まれています。 アクティビティ ノードの名前は、アクティビティ自体の名前が反映されます。  
@@ -52,7 +52,7 @@ ms.locfileid: "36983563"
   
   ソリューション開発者は ActivityID ノードを使用して、アクティビティを一意に識別するデータ (注文番号など) を抽出できます。サンプル シナリオでは、メッセージの SSN フィールドのデータを抽出しました。 データを ActivityID ノードにドラッグしない場合、ビジネス アクティビティは、自動的に生成された GUID により識別されます。  
   
-  異なるオーケストレーションに含まれているビジネス イベントまたはマイルストーンの間でリレーションシップを定義するには、ターゲット オーケストレーションで ActivityID を参照する必要があります。 TPE を使用してリレーションシップを実装する方法の詳細については、[リレーションシップ ノード](../core/relationship-nodes.md)を参照してください。  
+  異なるオーケストレーションに含まれているビジネス イベントまたはマイルストーンの間でリレーションシップを定義するには、ターゲット オーケストレーションで ActivityID を参照する必要があります。 TPE を使用してリレーションシップを実装する方法の詳細については、次を参照してください。[リレーションシップ ノード](../core/relationship-nodes.md)します。  
   
 ## <a name="see-also"></a>参照  
  [TPE アクティビティ ビューのノード](../core/tpe-activity-view-nodes.md)

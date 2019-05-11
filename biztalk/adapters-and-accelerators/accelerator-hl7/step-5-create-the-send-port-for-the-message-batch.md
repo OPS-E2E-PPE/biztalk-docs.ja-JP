@@ -1,5 +1,5 @@
 ---
-title: '手順 5: メッセージ バッチの送信ポートを作成する |Microsoft Docs'
+title: 手順 5:メッセージ バッチの送信ポートの作成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 24a71d788d0b12a3ffaef8f14ccd145ef61d673e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c4d69f21413e084ae81eda69827c079b39379bca
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37002843"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65287970"
 ---
-# <a name="step-5-create-the-send-port-for-the-message-batch"></a>手順 5: メッセージ バッチの送信ポートを作成します。
+# <a name="step-5-create-the-send-port-for-the-message-batch"></a>手順 5:メッセージ バッチの送信ポートを作成します。
 この手順では、送信先パーティを作成するメッセージのバッチを配信する送信ポートを作成します。 これは、ファイル アダプターの種類を静的な一方向のポートです。 場所 (\Tutorial_BatchMsgDrop) 移行先のファイル フォルダーを指定する[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]メッセージのバッチ ファイルが削除されます。 ポートで送信するメッセージのバッチの種類を示すポートのフィルターを定義します。 フィルターには、Tutorial_BatchDest と OutboundBatch のメッセージの種類の変換先を指定します。  
 
 > [!NOTE]
@@ -80,4 +80,4 @@ ms.locfileid: "37002843"
    > [!NOTE]
    >  同時実行制御違反が発生した場合に、 **Tutorial_DestBatch**パーティの更新中で、[ **[ok]** ] ダイアログ ボックスを閉じます。 管理コンソールで、右クリック**BizTalk グループ**、 をクリックして**更新**、し、手順 1. および 2. を繰り返します。  
 
-   進みます[手順 6: 受信確認のバッチの送信ポートを作成する](../../adapters-and-accelerators/accelerator-hl7/step-6-create-the-send-port-for-the-acknowledgment-batch.md)します。
+   続行する[手順 6。受信確認のバッチの送信ポートを作成する](../../adapters-and-accelerators/accelerator-hl7/step-6-create-the-send-port-for-the-acknowledgment-batch.md)します。

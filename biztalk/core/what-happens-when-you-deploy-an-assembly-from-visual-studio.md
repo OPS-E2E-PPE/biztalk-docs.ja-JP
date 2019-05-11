@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c74336e90e1ac58088de0d528695dbfed617d9b5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1721f519313eb9d2d6aaeba8e1d03e3f7b85d0cf
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36985267"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65394804"
 ---
 # <a name="what-happens-when-you-deploy-an-assembly-from-visual-studio"></a>Visual Studio からアセンブリを展開する場合の動作
 このトピックでは、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] から [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 上の BizTalk アプリケーションにアセンブリを展開する場合の動作について説明します。  
@@ -45,10 +45,10 @@ ms.locfileid: "36985267"
   
    展開先を変更したら、以後同じアセンブリを再展開する場合は、この新しい場所が既定値として使用されます。  
   
-   詳細については、[Visual Studio から BizTalk アセンブリを展開する方法](../core/how-to-deploy-a-biztalk-assembly-from-visual-studio.md)を参照してください。  
+   詳細については、次を参照してください。 [Visual Studio から BizTalk アセンブリを展開する方法](../core/how-to-deploy-a-biztalk-assembly-from-visual-studio.md)します。  
   
 ## <a name="deploying-solutions-vs-projects"></a>Vs のソリューションを展開します。プロジェクト  
- 展開する場合は、個別のプロジェクトではなく、常にソリューションを展開することを強くお勧めします。 個別のプロジェクトの展開では、展開するアセンブリと別のアセンブリとの間に依存関係がある場合、展開を完了するまでにいくつかの手順を実行しなければなりません。 しかし、ソリューションを展開すると、アセンブリ間の依存関係を管理するための手順はすべて [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] が自動的に実行します。 詳細については、[Visual Studio から BizTalk アセンブリを再デプロイする方法](../core/how-to-redeploy-a-biztalk-assembly-from-visual-studio.md)を参照してください。  
+ 展開する場合は、個別のプロジェクトではなく、常にソリューションを展開することを強くお勧めします。 個別のプロジェクトの展開では、展開するアセンブリと別のアセンブリとの間に依存関係がある場合、展開を完了するまでにいくつかの手順を実行しなければなりません。 しかし、ソリューションを展開すると、アセンブリ間の依存関係を管理するための手順はすべて [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] が自動的に実行します。 詳細については、次を参照してください。 [Visual Studio から BizTalk アセンブリを再デプロイする方法](../core/how-to-redeploy-a-biztalk-assembly-from-visual-studio.md)します。  
   
  次の図は、ソリューションを展開した場合に、依存関係のあるアセンブリを再展開するために [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] によって実行される手順を示しています。  
   

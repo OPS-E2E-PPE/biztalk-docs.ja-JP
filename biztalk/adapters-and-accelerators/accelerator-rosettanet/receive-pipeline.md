@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2a2c1de940fab14aa370dc1358efe36fe702a9d2
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 211817d704faec2f936f33a04944360804b52e14
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36990307"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65282473"
 ---
 # <a name="receive-pipeline"></a>[受信パイプライン]
 このサンプルは、作業 Microsoft®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]受信パイプラインをアプリケーション用にカスタマイズできます。  
@@ -35,7 +35,7 @@ ms.locfileid: "36990307"
   
 - MessageUpdater  
   
-  このパイプラインでは、このパイプラインでのメッセージ フローのコンポーネントに関する詳細については、[BTARN 受信パイプライン](../../adapters-and-accelerators/accelerator-rosettanet/btarn-receive-pipeline.md)を参照してください。  
+  このパイプラインでは、このパイプラインでのメッセージ フローのコンポーネントに関する詳細については、次を参照してください。 [BTARN 受信パイプライン](../../adapters-and-accelerators/accelerator-rosettanet/btarn-receive-pipeline.md)します。  
   
 ## <a name="see-also"></a>参照  
  [パイプラインのサンプル](../../adapters-and-accelerators/accelerator-rosettanet/pipeline-samples.md)   

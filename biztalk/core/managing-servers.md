@@ -1,5 +1,5 @@
 ---
-title: サーバーの管理 |Microsoft ドキュメント
+title: サーバーの管理 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,12 +16,12 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9442d5b9350b970af714f4f3f43c561cb8c35e3a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 856c35add9c738fced27ec527f7e9c6e469be868
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22262290"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65329126"
 ---
 # <a name="managing-servers"></a>サーバーの管理
 BizTalk Server 管理コンソールのサーバー ノードには、BizTalk Server グループに属しているすべてのサーバーが一覧表示されます。 このセクションに記載されている手順を使用すると、BizTalk Server グループでサーバーを追加または削除したり、サーバーをあるグループから別のグループに移動することができます。  

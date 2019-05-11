@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3f57155b386af979f1da52d39d062aff171203b5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 45934085c75092f07264f8ed6fa4f9d6376ffbbb
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37008211"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65372203"
 ---
 # <a name="use-the-data-provider-for-sap-to-create-a-report-server-project"></a>Data Provider for SAP を使用して、レポート サーバー プロジェクトを作成するには
 レポート サーバーを作成する必要がありますを使用して、プロジェクト、 [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]、SAP システムで使用可能なデータのレポートを生成します。 このトピックでは、レポート サーバー プロジェクトを作成する方法について説明します。  
@@ -55,7 +55,7 @@ ms.locfileid: "37008211"
       |プロパティ|目的|  
       |--------------|----------------|  
       |**[特定のユーザー名とパスワードを使用する]**|ユーザー名と SAP システムに接続するためのパスワードを指定します。|  
-      |**資格情報のプロンプト**|レポートの生成時に、SAP システムの資格情報を入力します。 **注:** の接続文字列の一部として、指定した場合、このオプションは、資格情報をオーバーライドを指定する資格情報。|  
+      |**資格情報のプロンプト**|レポートの生成時に、SAP システムの資格情報を入力します。 **注:** 接続文字列の一部として、指定した場合、このオプションの指定した資格情報は、資格情報をオーバーライドします。|  
       |**資格情報なし**|接続文字列の一部として、ユーザー名とパスワードを指定する場合は、このオプションを選択します。|  
   
       > [!NOTE]
@@ -89,7 +89,7 @@ ms.locfileid: "37008211"
   
    7. **ウィザードの完了**ダイアログ ボックスで、レポートの名前を指定の概要を確認 をクリックし、**完了**します。 このトピックでは、レポートの名前を指定します`SAPReport`します。  
   
-      レポートを表示できるようになりました。 レポートを表示する方法については、[SAP についてレポートを表示](../../adapters-and-accelerators/adapter-sap/view-the-reports-for-sap.md)を参照してください。  
+      レポートを表示できるようになりました。 レポートを表示する方法については、次を参照してください。 [SAP についてレポートを表示](../../adapters-and-accelerators/adapter-sap/view-the-reports-for-sap.md)します。  
   
 ## <a name="see-also"></a>参照  
  [Data Provider for SAP を SSRS と一緒に使用する](../../adapters-and-accelerators/adapter-sap/use-the-data-provider-for-sap-with-ssrs.md)

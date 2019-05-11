@@ -12,17 +12,17 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6ad777bc5b4df2717d20fd95aa60fdf5d59d1f6f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: cb6d3a08cf1cc4f22ea339d74a1b7ca2de081a37
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36975171"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65334218"
 ---
 # <a name="how-to-set-the-source-links-compiler-value"></a>送信元リンクのコンパイラ値を設定する方法
-使用することができます、**ソース リンク**値が送信元ノードから取得され、送信先ノードに適用する方法を指定するリンクのプロパティ。 このトピックでは、利用可能な選択肢と具体的な選択方法について説明します。  
+使用することができます、**ソース リンク**値が送信元ノードから取得され、送信先ノードに適用する方法を指定するリンクのプロパティ。 このトピックでは、使用可能な選択肢とそれらの間で選択する方法について説明します。  
   
-### <a name="to-set-the-source-links-link-property"></a>[送信元のリンク] プロパティを設定するには  
+### <a name="to-set-the-source-links-link-property"></a>送信元のリンクのリンクのプロパティを設定するには  
   
 1. BizTalk マッパーのグリッド ページで、リンクをクリックして選択します。  
   
@@ -30,11 +30,11 @@ ms.locfileid: "36975171"
   
 2. [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]プロパティ ウィンドウで、**ソース リンク**プロパティを次の選択肢のいずれか。  
   
-   -   **名前をコピーします。** : 送信元スキーマにおけるノード名は、送信先スキーマのリンク先ノードの値として使用されます。  
+   -   **名前をコピーします。** 送信元スキーマ ノードの名前は、送信先スキーマのリンク先ノードの値として使用されます。  
   
-   -   **テキスト値をコピーします。** : 送信元スキーマのノードに対応する値 (要素データまたは属性データ) は、送信先スキーマのリンク先ノードの値として使用されます。 これは既定の設定です。 たとえば、`<Node>Hello<Name>Chris</Name>Barry</Node>` は "Hello" のようになります。  
+   -   **テキスト値をコピーします。** (要素データまたは属性値) の送信元スキーマ内のノードに対応する値は、送信先スキーマのリンク先ノードの値として使用されます。 このオプションは、既定値です。 たとえば、 `<Node>Hello<Name>Chris</Name>Barry</Node>` 「こんにちは」になります。  
   
-   -   **テキストとサブコンテンツの値をコピーします。** 送信元スキーマの [レコード] ノードに対応する値と、そのすべての子孫ノードの値 (要素データおよび属性値) が結合され、送信先スキーマのリンク先ノードの値となります。 たとえば、`<Node>Hello<Name>Chris</Name>Barry</Node>` は "Hello Chris Barry" のようになります。  
+   -   **テキストとサブコンテンツの値をコピーします。** レコード ノードとそのすべての子ノードとその子ノードの値に対応する値をソース スキーマ (要素データおよび属性値) は、送信先スキーマのリンク先ノードの値として結合されます。 たとえば、 `<Node>Hello<Name>Chris</Name>Barry</Node>` "こんにちは Chris Barry"になります。  
   
 ## <a name="see-also"></a>参照  
  [リンクを使用してレコードを指定して、フィールド マッピング](../core/using-links-to-specify-record-and-field-mappings.md)   

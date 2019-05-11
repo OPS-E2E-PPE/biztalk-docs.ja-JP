@@ -16,17 +16,17 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 30a20c38d9394d15c66b31129dcdf13622f9c5ce
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 67e914c7ac6a80a1d00b6c3bb5a240aba4ea4e87
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36991083"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65282101"
 ---
 # <a name="rosettanet-and-cidx-messaging-standards"></a>RosettaNet および CIDX メッセージ規格
-Microsoft® の主な目的[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]は RosettaNet または Chemical Industry Data Exchange (CIDX) メッセージング標準に準拠するメッセージを処理します。 ここでは、2 つの主要な RosettaNet 規格である RNIF (RosettaNet Implementation Framework) と PIP (Partner Interface Process) について説明します。 また、CIDX Chem eStandards についても説明します。  
+Microsoft® の主な目的[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]は RosettaNet または Chemical Industry Data Exchange (CIDX) メッセージング標準に準拠するメッセージを処理します。 このセクションでは、2 つの主要な RosettaNet 規格についての情報を提供します。 RosettaNet Implementation Framework (RNIF) と Partner Interface Process (Pip)。 また、CIDX Chem eStandards についての情報も提供します。  
   
- RosettaNet 規格は、ハイテク分野で自動メッセージ交換を実装するために、幅広く受け入れられている新しい一連の規格です。 RosettaNet 組織の目的は、eBusiness プロセスの規格の作成、実装、普及を行うことです。 このような規格は、ハイテク製造業やサプライ チェーンの分野で広く実用化されています。 RosettaNet 組織には次の 6 業界の協議会が参画しており、応用範囲の広さがわかります。  
+ RosettaNet 規格は、ハイテクのシナリオで自動メッセージ交換を実装するための標準の新たな、広く受け入れられている一連です。 RosettaNet 組織では、作成、実装、および e ビジネス プロセスの標準化を昇格します。 これらの標準が広く、ハイテク製造とサプライ チェーンのアプリケーションで使用されます。 RosettaNet 組織を管理する 6 つのさまざまな業界協議会は、さまざまなアプリケーションを示しています。  
   
 - 電子部品  
   
@@ -34,13 +34,13 @@ Microsoft® の主な目的[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includ
   
 - 情報技術  
   
-- 通信  
+- 電気通信  
   
-- 流通  
+- 物流担当  
   
-- ソリューション プロバイダ  
+- ソリューション プロバイダー  
   
-  CIDX Chem eStandards は、化学工業分野で自動メッセージ交換を実装するために広く普及している一連の規格です。  
+  CIDX Chem eStandards は、広く受け入れられている化学工業分野で自動メッセージ交換を実装するための標準のセットです。  
   
   標準の詳細については、RosettaNet の Web サイトを参照してください。 [ http://go.microsoft.com/FWLink/?LinkID=33859 ](http://go.microsoft.com/FWLink/?LinkID=33859)と CIDX の Web サイトで[ http://go.microsoft.com/FWLink/?LinkID=34540](http://go.microsoft.com/FWLink/?LinkID=34540)します。  
   

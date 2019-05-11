@@ -12,18 +12,18 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 867ea9be9d9e2cae0e167ec8c958d7d004730af8
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: bf152826fa5e2e0873d0544236fa73c110c4536d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37007543"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65393510"
 ---
 # <a name="how-to-avoid-disk-contention"></a>ディスクの競合を防止する方法
 BizTalk Server は、永続的なシステムとして設計されています。 高スループットのシナリオで、メッセージ ボックス データベースおよび BizTalk 追跡データベース深刻な競合が発生することができます。 ディスクが遅い場合には事態がさらに悪化します。 ディスクの場合は (平均の平均値を使うよりも大きい低速します。Disk Sec/read や avgDisk Sec/write)、長い時間ロック (ロック待機時間と高のロック タイムアウト数) を保持する SQL Server をしまう可能性があります。 これは、さらに、可能性があります、メッセージ ボックス テーブル (スプールとアプリケーション キュー) に増加し、データベースの肥大と調整します。 このような状況は、最終的に、全体的な持続可能なスループットの低下に生じます。  
   
 > [!NOTE]  
->  サーバーがディスクのボトルネックを特定する方法の詳細については、[Windows パフォーマンス モニター](http://go.microsoft.com/fwlink/?LinkID=204007) (http://go.microsoft.com/fwlink/?LinkID=204007)を参照してください。 Windows パフォーマンス モニターは、システムのパフォーマンスを分析するためのツールを提供する Microsoft 管理コンソール (MMC) スナップインです。  
+>  サーバーがディスクのボトルネックを特定する方法の詳細については、次を参照してください。 [Windows パフォーマンス モニター](http://go.microsoft.com/fwlink/?LinkID=204007) (http://go.microsoft.com/fwlink/?LinkID=204007)します。 Windows パフォーマンス モニターは、システムのパフォーマンスを分析するためのツールを提供する Microsoft 管理コンソール (MMC) スナップインです。  
   
  ディスクの競合を回避するには、次の操作を行います。  
   

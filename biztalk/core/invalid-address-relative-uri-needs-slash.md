@@ -12,12 +12,12 @@ caps.latest.revision: 22
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 39a0e45cf540b07f167f2ca2a2ffcb52851e0327
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 34b1f5d49bfc34d0498d14ba54c866f2972c9035
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37023536"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65331195"
 ---
 # <a name="invalid-address-relative-uri-needs-slash-quot-quot"></a>アドレスが無効です (相対 uri にスラッシュが必要があります (&quot;-&quot;))
 ## <a name="details"></a>詳細  
@@ -30,15 +30,15 @@ ms.locfileid: "37023536"
 |  イベント ソース   |                                         0                                          |
 |    コンポーネント    |                                         0                                          |
 |  シンボル名  |                                         0                                          |
-|  メッセージ テキスト   |         アドレスが無効です。スラッシュ ("/") で始まる相対 URI を指定してください。          |
+|  メッセージ テキスト   |         アドレスが無効です。スラッシュ (「/」) で始まる相対 uri を指定してください。          |
   
 ## <a name="explanation"></a>説明  
  正しい形式の相対アドレスを使用して WCF 分離受信場所が指定されていませんでした。 たとえば、 http://localhost/svc 相対アドレスとしては機能しません。 WCF 分離受信場所の "アドレス" プロパティを絶対アドレスに設定することはできません。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- アドレスを構成するには、次の手順を実行します。  
+ アドレスを構成するのにには、次の手順を使用します。  
   
-#### <a name="to-configure-an-address"></a>アドレスを構成するには  
+#### <a name="to-configure-an-address"></a>アドレスを構成する  
   
 1. をクリックして**開始**、 をクリックして**すべてのプログラム**、 をクリックして**Microsoft [!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)]** 、 をクリック**BizTalk Server 管理コンソール**です。  
   
@@ -52,13 +52,13 @@ ms.locfileid: "37023536"
   
 6. ポート**型**一覧で、適切なポートを選択します。  
   
-7. クリックして**構成**します。  
+7. をクリックして**構成**です。  
   
 8. **WCF [**<em>トランスポートの種類</em>**] トランスポートのプロパティ**ダイアログ ボックスで、をクリックして、**全般**タブ。  
   
-9. **アドレス (URI)** テキスト ボックスに、アドレスを変更します。 整形式の相対アドレスの一例は /path/service.svc です。  
+9. **アドレス (URI)** テキスト ボックスに、アドレスを変更します。 整形式の相対アドレスの例は、/path/service.svc です。  
   
-   受信場所の詳細については、以下を参照してください。  
+   詳細については受信場所は次を参照してください。  
   
 -   [Wcf-customisolated 受信場所を構成する方法](../core/how-to-configure-a-wcf-customisolated-receive-location.md)  
   

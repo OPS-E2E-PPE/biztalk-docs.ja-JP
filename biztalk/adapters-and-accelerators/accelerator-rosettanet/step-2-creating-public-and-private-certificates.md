@@ -1,5 +1,5 @@
 ---
-title: '手順 2: パブリックおよびプライベート証明書の作成 |Microsoft Docs'
+title: 手順 2:パブリックおよびプライベート証明書の作成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f31d1bb1dcc5a0e6f587797f41e97d16ca6606da
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ef62e5ff78b7a8d0be417bbb89e5bba92132c3c0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37007611"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65281302"
 ---
-# <a name="step-2-creating-public-and-private-certificates"></a>手順 2: パブリックおよびプライベート証明書の作成
-作成した証明機関を使用するこの手順で[手順 1: 証明機関の作成&#91;RN3&#93; ](../../adapters-and-accelerators/accelerator-rosettanet/step-1-creating-a-certification-authority.md) Contoso と Fabrikam 組織で使用されるパブリックおよびプライベート証明書を生成します。  
+# <a name="step-2-creating-public-and-private-certificates"></a>手順 2:パブリックおよびプライベート証明書の作成
+作成した証明機関を使用するこの手順で[手順 1。証明機関の作成&#91;RN3&#93; ](../../adapters-and-accelerators/accelerator-rosettanet/step-1-creating-a-certification-authority.md) Contoso と Fabrikam 組織で使用されるパブリックおよびプライベート証明書を生成します。  
 
-### <a name="to-generate-the-contoso-and-fabrikam-encryption-certificates"></a>Contoso および Fabrikam の暗号化証明書を生成するには  
+### <a name="to-generate-the-contoso-and-fabrikam-encryption-certificates"></a>Contoso と Fabrikam の暗号化証明書を生成するには  
 
-1. 証明機関として使用したコンピューターから、Internet Explorer を使用して http://<Contoso のコンピューター名>/certsrv を開きます。  
+1. Internet Explorer で、証明機関として使用するコンピューターを http://<contoso_computername>/certsrv を開きます。  
 
 2. **ようこそ**] ページで [**証明書を要求**します。  
 
@@ -45,14 +45,14 @@ ms.locfileid: "37007611"
    |--------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
    |            **名前**            |                                                               型**Fabrikam Encryption**します。                                                                |
    |           **電子メール**           |                                                          型 <strong>jdoe@fabrikam.com</strong>します。                                                          |
-   |          **Company**           |                                                                     型**Fabrikam**します。                                                                     |
+   |          **企業**           |                                                                     型**Fabrikam**します。                                                                     |
    |         **部門**         |                                                                       型**テスト**します。                                                                       |
    |            **City**            |                                                                       型**テスト**します。                                                                       |
    |           **State**            |                                                                       型**テスト**します。                                                                       |
    |       **国/地域**       |                                                                        型**米国**します。                                                                        |
    | **必要な証明書の種類** |                                             選択**電子メール保護証明書**ドロップダウン リストから。                                              |
    |         **キー使用法**          |                                                              選択、 **Exchange**オプション。                                                               |
-   |   **キーのオプション**   | 次のチェック ボックスをオンにします。<br /><br /> -   **キー エクスポート可能としてマークします。**<br />-   **ローカル コンピューターの証明書ストアに証明書を格納します。** |
+   |   **キーのオプション**   | 次のオプションでは、チェックを配置します。<br /><br /> -   **キー エクスポート可能としてマークします。**<br />-   **ローカル コンピューターの証明書ストアに証明書を格納します。** |
    |       **表示名**        |                                                               型**Fabrikam Encryption**します。                                                                |
 
 
@@ -62,9 +62,9 @@ ms.locfileid: "37007611"
 
 8. 手順 1 ~ 7 の情報を変更する、**名前**ボックスに、**識別情報**セクションおよび**フレンドリ名**ボックス**Contoso暗号化**します。  
 
-### <a name="to-generate-the-contoso-and-fabrikam-signing-certificates"></a>Contoso および Fabrikam の署名証明書を生成するには  
+### <a name="to-generate-the-contoso-and-fabrikam-signing-certificates"></a>Contoso と Fabrikam の署名証明書を生成するには  
 
-1. Internet Explorer で、http://<Contoso のコンピューター名>/certsrv を検索して開きます。  
+1. Internet Explorer を http://<contoso_computername>/certsrv を開きます。  
 
 2. **ようこそ**] ページで [**証明書を要求**します。  
 
@@ -79,14 +79,14 @@ ms.locfileid: "37007611"
    |--------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
    |            **名前**            |                                                                型**Fabrikam Signature**します。                                                                |
    |           **電子メール**           |                                                          型 <strong>jdoe@fabrikam.com</strong>します。                                                          |
-   |          **Company**           |                                                                     型**Fabrikam**します。                                                                     |
+   |          **企業**           |                                                                     型**Fabrikam**します。                                                                     |
    |         **部門**         |                                                                       型**テスト**します。                                                                       |
    |            **City**            |                                                                       型**テスト**します。                                                                       |
    |           **State**            |                                                                       型**テスト**します。                                                                       |
    |       **国/地域**       |                                                                        型**米国**します。                                                                        |
    | **必要な証明書の種類** |                                             選択**電子メール保護証明書**ドロップダウン リストをクリックします。                                              |
    |         **キー使用法**          |                                                              選択、**署名**オプション。                                                              |
-   |   **キーのオプション**   | 次のチェック ボックスをオンにします。<br /><br /> -   **キー エクスポート可能としてマークします。**<br />-   **ローカル コンピューターの証明書ストアに証明書を格納します。** |
+   |   **キーのオプション**   | 次のオプションでは、チェックを配置します。<br /><br /> -   **キー エクスポート可能としてマークします。**<br />-   **ローカル コンピューターの証明書ストアに証明書を格納します。** |
    |       **表示名**        |                                                                型**Fabrikam Signature**します。                                                                |
 
 
@@ -96,7 +96,7 @@ ms.locfileid: "37007611"
 
 8. 手順 1 ~ 7 の情報を変更する、**名前**ボックスに、**識別情報**セクションおよび**フレンドリ名**ボックス**Contoso署名**します。  
 
-### <a name="to-generate-private-certificates-for-the-encryption-and-signature-certificates"></a>暗号化証明書および署名証明書のプライベート証明書を生成するには  
+### <a name="to-generate-private-certificates-for-the-encryption-and-signature-certificates"></a>暗号化と署名証明書のプライベート証明書を生成するには  
 
 1.  をクリックして**開始**、 をクリックして**実行**、型**MMC**、順にクリックします**OK**。  
 
@@ -136,11 +136,11 @@ ms.locfileid: "37007611"
 
 19. エクスポートが成功を示す証明書のエクスポート ウィザード ポップアップで、次のようにクリックします。 **OK**します。  
 
-20. Fabrikam 署名証明書を生成するため、ファイル名 Fabrikam Private Signature.pfx を使用して、手順 10. ～ 19. を繰り返します。  
+20. 手順 10 ~ 19 ファイル名 Fabrikam Private Signature.pfx を使用して Fabrikam 署名証明書を繰り返します。  
 
-21. Contoso 署名証明書および Contoso 暗号化証明書を生成するため、それぞれファイル名 Contoso Private Signature.pfx と Contoso Private Encryption.pfx を使用して、手順 10. ～ 19. を繰り返します。  
+21. 手順 10 ~ 19 Contoso Private Signature.pfx と Contoso Private Encryption.pfx、ファイル名をそれぞれ使用して Contoso Signature および Contoso 暗号化証明書を繰り返します。  
 
-### <a name="to-generate-public-certificates-for-the-encryption-and-signature-certificates"></a>暗号化証明書および署名証明書のパブリック証明書を生成するには  
+### <a name="to-generate-public-certificates-for-the-encryption-and-signature-certificates"></a>暗号化と署名証明書の公開証明書を生成するには  
 
 1.  コンソール 1 ウィンドウで、**証明書-現在のユーザー**、展開**個人**、 をクリックし、**証明書**します。  
 
@@ -162,9 +162,9 @@ ms.locfileid: "37007611"
 
 10. エクスポートが成功を示す証明書のエクスポート ウィザード ポップアップで、次のようにクリックします。 **OK**します。  
 
-11. Fabrikam 署名証明書を生成するため、ファイル名 Fabrikam Public Signature.cer を使用して、手順 1. ～ 9. を繰り返します。  
+11. ファイル名 Fabrikam Public Signature.cer を使用して Fabrikam 署名証明書の手順 1 ~ 9 を繰り返します。  
 
-12. Contoso 署名証明書および Contoso 暗号化証明書を生成するため、それぞれファイル名 Contoso Public Signature.cer と Contoso Public Encryption.cer を使用して、手順 1. ～ 9. を繰り返します。  
+12. Contoso Public Signature.cer と Contoso Public Encryption.cer、ファイル名をそれぞれ使用して Contoso Signature および Contoso 暗号化証明書の手順 1 ~ 9 を繰り返します。  
 
 ## <a name="see-also"></a>参照  
- [手順 3: パブリック証明書とプライベート証明書のインポート](../../adapters-and-accelerators/accelerator-rosettanet/step-3-importing-public-and-private-certificates.md)
+ [ステップ 3:パブリック証明書とプライベート証明書のインポート](../../adapters-and-accelerators/accelerator-rosettanet/step-3-importing-public-and-private-certificates.md)

@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1d493647a184a250120ee25e614deb82c2f062d2
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 86ba3585bd40c7adcae9ea1951b90509ce915d09
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36998843"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65292651"
 ---
 # <a name="unexpected-segment"></a>セグメントが正しくありません
 ## <a name="details"></a>詳細  

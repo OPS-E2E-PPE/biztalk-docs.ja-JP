@@ -13,12 +13,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 60479097dc9e56c2bc0c525d0de7d7a33afccaa5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9cfbacbce925ae81e41467196e052d258d59124e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36978267"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65278957"
 ---
 # <a name="sql-server-settings-that-should-not-be-changed"></a>SQL Server の設定を変更しないでください。
 設定するときに[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]の運用準備手順の間に[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]、次の設定を変更しないでいます。  
@@ -30,7 +30,7 @@ ms.locfileid: "36978267"
   
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ストアド プロシージャが適切な結合を提供および多くの作業を行い、プランの変更から、クエリ オプティマイザーを維持しようとするために可能な場合にヒントをロックします。 これらのストアド プロシージャは、クエリ オプティマイザーが可能な限り、画像から実行されるように、クエリを構築することによって、一貫性のあるクエリの実行を提供します。  
   
- 詳細については、[KB 899000: BizTalk Server で使用される SQL Server インスタンスの並列処理の設定](https://support.microsoft.com/help/899000/the-parallelism-setting-for-the-instance-of-sql-server-when-you-config)を参照してください。  
+ 詳細については、次を参照してください。 [KB 899000。BizTalk Server で使用される SQL Server インスタンスの並列処理の設定](https://support.microsoft.com/help/899000/the-parallelism-setting-for-the-instance-of-sql-server-when-you-config)します。  
   
 ## <a name="sql-server-statistics-on-the-messagebox-database"></a>メッセージ ボックス データベースで SQL Server の統計  
  次のオプションが既定でオフ、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]メッセージ ボックス データベースが作成されたとき。  
@@ -50,15 +50,15 @@ ms.locfileid: "36978267"
 - **917845**—[「、発生したブロックしている BizTalk Server で、BizTalkMsgBoxDb データベースに接続しようとすると、条件、またはその他の SQL Server の問題をデッドロック」](https://support.microsoft.com/help/917845/you-experience-blocking--deadlock-conditions--or-other-sql-server-issu)します。  
   
 ## <a name="changes-to-the-messagebox-database"></a>メッセージ ボックス データベースへの変更  
- メッセージ ボックス データベースは、Microsoft 以外のアプリケーションのソース コードのように処理されます。 つまり、する必要がありますいない「を調整する」テーブル、インデックス、ストアド プロシージャ、およびほとんどの SQL Server データベースの設定の変更を使用してメッセージ ボックス データベースです。 詳細については、BizTalk コア エンジンのブログでは、[ことを確認し、メッセージ ボックス データベース サーバーで実行できない](http://go.microsoft.com/fwlink/p/?LinkId=101577)を参照してください。  
+ メッセージ ボックス データベースは、Microsoft 以外のアプリケーションのソース コードのように処理されます。 つまり、する必要がありますいない「を調整する」テーブル、インデックス、ストアド プロシージャ、およびほとんどの SQL Server データベースの設定の変更を使用してメッセージ ボックス データベースです。 詳細については、BizTalk コア エンジンのブログでは、次を参照してください。[ことを確認し、メッセージ ボックス データベース サーバーで実行できない](http://go.microsoft.com/fwlink/p/?LinkId=101577)します。  
   
 ## <a name="default-settings-for-the-database-index-rebuilds-and-defragmentation"></a>データベースのインデックス再構築と最適化の既定の設定  
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] インデックスの最適化をサポートしません。 "DBCC INDEXDEFRAG"および"ALTER INDEX… REORGANIZE..." ページ ロックのブロックしている可能性があるとを使用したデッドロックを使用するためにサポートされていません[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]します。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ("DBCC DBREINDEX"および"ALTER INDEX... はサポートのデータベースのインデックスの再構築します。 REBUILD...")、メンテナンス期間中にのみ実行する必要がありますが、ときに[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]がデータを処理していません。 インデックスを再構築中に[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]処理は、データがサポートされていません。  
   
- 詳細については、[KB 917845:、ブロッキングが発生した BizTalk Server で、BizTalkMsgBoxDb データベースに接続しようとすると、条件、またはその他の SQL Server の問題をデッドロック"](https://support.microsoft.com/help/917845/you-experience-blocking--deadlock-conditions--or-other-sql-server-issu)を参照してください。  
+ 詳細については、次を参照してください。 [KB 917845。ブロックが発生、BizTalk Server で、BizTalkMsgBoxDb データベースに接続しようとするとデッドロック条件、またはその他の SQL Server の問題が発生すると"](https://support.microsoft.com/help/917845/you-experience-blocking--deadlock-conditions--or-other-sql-server-issu)します。  
   
  インデックスの断片化がないほどのパフォーマンスの問題の[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]DSS システムまたはインデックス スキャンを実行する OLTP システムであるようです。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 非常に高いクエリと更新プログラムと[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]またはインデックス スキャンのストアド プロシージャがテーブルに発生することはできません。  
   
  
 ## <a name="see-also"></a>参照  
- [チェックリスト: SQL Server の構成](~/technical-guides/checklist-configuring-sql-server.md)
+ [チェックリスト:SQL Server の構成](~/technical-guides/checklist-configuring-sql-server.md)

@@ -22,19 +22,19 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 50bdce5ff094153e0aaa0e6ca69b106993722722
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2545da0d4ac9e62e500a24a49c8b3a10dd37adac
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36993803"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65283585"
 ---
 # <a name="importing-certificates-using-the-certwizard-utility"></a>CertWizard ユーティリティを使用して証明書のインポート
-このトピックでは、CertWizard ユーティリティでは、Microsoft で使用できるステップ バイ ステップ コマンド ライン ユーティリティを使用して、証明書をインポートする方法を説明します。 [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] SDK。 ここでは、秘密キー、公開キー、またはルート キーのインポートについて説明します。 証明書の構成に使用するスイッチについても説明します。  
+このトピックでは、CertWizard ユーティリティでは、Microsoft で使用できるステップ バイ ステップ コマンド ライン ユーティリティを使用して、証明書をインポートする方法を説明します。 [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] SDK。 このトピックでは、private、public、またはルート キーのインポートについて説明します。 これには、証明書を構成するために使用するスイッチについて説明します。  
   
- CertWizard ユーティリティは、Microsoft 管理コンソール (MMC) を使用して手動で行うことになる手順の多くを自動化します。 CertWizard ユーティリティは、実行、 **runas**ホスト サービス アカウントとして MMC を開くコマンド。 追加しない場合、 **Useridentity**スイッチを検出し、パスワードの入力を求める、ホスト サービス アカウントを使用します。 証明書が格納および構成されます。  
+ CertWizard ユーティリティは、Microsoft 管理コンソール (MMC) を使用して手動で行うことになる手順の多くを自動化します。 CertWizard ユーティリティは、実行、 **runas**ホスト サービス アカウントとして MMC を開くコマンド。 追加しない場合、 **Useridentity**スイッチを検出し、パスワードの入力を求める、ホスト サービス アカウントを使用します。 格納し、証明書を構成します。  
   
- 複数の CertWizard ユーティリティ コマンドでバッチ ファイルを作成することにより、複数の証明書を同時にインポートできます。  
+ 同時に複数の証明書をインポートするには、複数の CertWizard ユーティリティ コマンドでバッチ ファイルを作成します。  
   
 ### <a name="to-import-a-private-key"></a>秘密キーをインポートするには  
   
@@ -65,11 +65,11 @@ ms.locfileid: "36993803"
   
 8. **Enter**キーを押します。  
   
-9. 必要なパスワードをいずれか 1 つコマンドに入力しないと、ツールが入力を求めます。 パスワードを入力し、キーを押します**Enter**します。  
+9. コマンドに必要なパスワードのいずれかを入力して場合、ツールはそのプロンプトします。 パスワードを入力し、キーを押します**Enter**します。  
   
-10. ファイルに複数の証明書が含まれる場合は、コマンドに拇印を入力しないと、利用可能な拇印がツールに表示され、いずれか 1 つを選択するように求められます。 キーを押します拇印の番号を入力**Enter**します。  
+10. ファイルには、複数の証明書が含まれています。 コマンド内の拇印を入力しない場合は、ツールが利用可能な拇印を表示し、いずれかを選択するように求められます。 キーを押します拇印の番号を入力**Enter**します。  
   
-     このツールで指定されたユーザーに対して、\Personal\Certificates ストアに証明書がインポート、 **「/useridentity」** スイッチ。 ユーザーを指定しない場合は、BizTalkServerApplication と BizTalkServerIsolatedHost ホストのユーザー ID が既定のユーザーになります。  
+     このツールで指定されたユーザーに対して、\Personal\Certificates ストアに証明書がインポート、 **「/useridentity」** スイッチ。 ユーザーを指定しない場合、既定のユーザーは、BizTalkServerApplication と BizTalkServerIsolatedHost ホストのユーザー id です。  
   
 ### <a name="to-import-a-public-key"></a>公開キーをインポートするには  
   
@@ -81,7 +81,7 @@ ms.locfileid: "36993803"
   
 4. .Cer または .der ファイル内の証明書拇印を指定する場合は、追加 **「/thumbprint」\<拇印\>** コマンド。  
   
-    [証明書 (ローカル コンピューター)] \Other People\Certificates ストアに証明書がインポートされ、構成が設定されます。  
+    ツールは、証明書 (ローカル コンピューター) \Other People\Certificates ストアに証明書をインポートし、その構成を設定します。  
   
 ### <a name="to-import-a-root-key"></a>ルート キーをインポートするには  
   
@@ -93,7 +93,7 @@ ms.locfileid: "36993803"
   
 4. .Cer または .der ファイル内の証明書拇印を指定する場合は、追加 **「/thumbprint」\<拇印\>** コマンド。  
   
-    [証明書 (ローカル コンピューター)] \Trusted Root Certification Authority\Certificates ストアに証明書がインポートされ、構成が設定されます。  
+    ツールは、証明書 (ローカル コンピューター) \Trusted Root Certification Authority\Certificates ストアに証明書をインポートし、その構成を設定します。  
   
 ## <a name="see-also"></a>参照  
  [CertWizard](../../adapters-and-accelerators/accelerator-rosettanet/certwizard.md)   

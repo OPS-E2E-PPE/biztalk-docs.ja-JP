@@ -1,5 +1,5 @@
 ---
-title: '手順 7: を作成し、送信元パーティの構成 |Microsoft Docs'
+title: 手順 7:作成および送信元パーティの構成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4708a682047ced4fa33ae34781fd88d379c5e70b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c1bc0b0981ebaeeca4e68d4139a8b49cb6ac7499
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36968931"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65287904"
 ---
-# <a name="step-7-create-and-configure-a-source-party"></a>手順 7: を作成し、送信元パーティの構成
+# <a name="step-7-create-and-configure-a-source-party"></a>手順 7:作成および送信元パーティの構成
 この手順では、ソース パーティを構成し、送信ポート、送信メッセージのメッセージ ヘッダーの変換を有効にするを割り当てますを作成します。  
   
 ### <a name="to-create-and-configure-a-source-party"></a>作成および送信元パーティを構成するには  
@@ -45,4 +45,4 @@ ms.locfileid: "36968931"
   
 9. 選択、**受信確認**タブ。**受信確認の種類**を選択します**OriginalMode**、 をクリックし、**保存**します。  
   
-   続行する[手順 8: BizTalk Server の再起動](../../adapters-and-accelerators/accelerator-hl7/step-8-restart-biztalk-server.md)します。
+   続行する[手順 8。BizTalk Server の再起動](../../adapters-and-accelerators/accelerator-hl7/step-8-restart-biztalk-server.md)します。

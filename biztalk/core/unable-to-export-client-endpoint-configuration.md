@@ -12,14 +12,14 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 752546eb85f8285e18c0a38d0877637e3627b6a2
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1ce781105c96f12705605e7c97f0e5229d2017f4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36999427"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65292795"
 ---
-# <a name="unable-to-export-client-endpoint-configuration"></a>クライアント エンドポイント構成をエクスポートできません
+# <a name="unable-to-export-client-endpoint-configuration"></a>クライアント エンドポイント構成をエクスポートできません。
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                    |
@@ -33,9 +33,9 @@ ms.locfileid: "36999427"
 |  メッセージ テキスト   |              クライアント エンドポイント構成をエクスポートできません"{0}"               |
   
 ## <a name="explanation"></a>説明  
- このエラーは、以下のいずれかを示します。  
+ このエラーは、次のいずれかを示します。  
   
--   宛先に書き込むアクセス許可がユーザーにない可能性があります。  
+-   ユーザーは、先に書き込むアクセス許可がありません。  
   
      \- または -  
   
@@ -44,13 +44,13 @@ ms.locfileid: "36999427"
 ## <a name="user-action"></a>ユーザーの操作  
  次の手順を使用して、ユーザーのアクセス許可の確認入力と確認を**アドレス (URI)** と**バインドの種類**設定が無効です。  
   
-#### <a name="to-verify-user-permissions-and-confirm-settings"></a>ユーザーのアクセス許可と設定を確認するには  
+#### <a name="to-verify-user-permissions-and-confirm-settings"></a>ユーザーのアクセス許可を確認し、設定を確認するには  
   
 1. クリックして**開始**、 をクリックして**すべてのプログラム**、 をクリックして[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、 をクリック**BizTalk Server 管理**します。  
   
 2. コンソール ルートで  [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]、展開**BizTalk グループ**、展開**アプリケーション**します。  
   
-3. アプリケーションを特定し、トランスポートを特定します。  
+3. アプリケーションを特定して、トランスポートを見つけます。  
   
 4. トランスポート名を右クリックします。  
   
@@ -58,13 +58,13 @@ ms.locfileid: "36999427"
   
 6. ポート**型**一覧で、適切なポートを選択します。  
   
-7. クリックして**構成**します。  
+7. をクリックして**構成**です。  
   
 8. Wcf **[**<em>トランスポートの種類</em>**] トランスポートのプロパティ**ダイアログ ボックスで、をクリックして、**バインド**タブ。  
   
-9. 宛先フォルダーへの書き込みが許可されていることを確認します。  
+9. コピー先のフォルダーへの書き込みが許可されていることを確認します。  
   
 10. チェック、**動作** タブと**エンドポイント Id**設定**全般**が有効であることを確認するには、タブ。  
   
 > [!NOTE]
->  送信先フォルダーの書き込みアクセス権が必要です。 必要なアクセス権を取得するには、コンピューターの管理者に連絡してください。
+>  目的のフォルダーに書き込みアクセス許可が必要です。 これらのアクセス許可を取得する、コンピューターの管理者に問い合わせてください。

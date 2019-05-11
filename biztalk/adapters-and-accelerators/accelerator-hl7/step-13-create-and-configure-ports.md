@@ -1,5 +1,5 @@
 ---
-title: '手順 13: を作成し、ポートの構成 |Microsoft Docs'
+title: 手順 13:作成し、ポートの構成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -18,14 +18,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4414795b1c214e8dbe15eb3117527c3cb5227cde
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 09113f9fb108c79630597c5e930e13651e679944
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36991939"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65288946"
 ---
-# <a name="step-13-create-and-configure-ports"></a>手順 13: を作成し、ポートを構成します。
+# <a name="step-13-create-and-configure-ports"></a>手順 13:作成し、ポートを構成します。
 この手順では、ポート構成ウィザードを使用して作成し、オーケストレーション デザイナーでポートを構成します。 ポートは、オーケストレーションの送信し、受信メッセージとビジネス プロセスの間を指定します。 各ポートは、型、方向、およびバインドには。 プロパティの方向の通信、通信のパターン、元の場所が決定[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]を送信または受信メッセージとの通信が行われる方法です。 [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] 送信ポートとして、最低限の下位レイヤー プロトコル (MLLP) アダプターを使用します。 MLLP アダプターでは、他のテスト アプリケーションなどのアプリケーション、保険アプリケーションは、従来の基幹業務アプリケーションとのインターフェイスに TCP ソケット通信を使用します。 MLLP 送信アダプターを表す、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]はアダプター。  
 
 - カスタマイズします。 アダプターにのみ付属[!INCLUDE[HL7_CurrentVersion_abbrev](../../includes/hl7-currentversion-abbrev-md.md)]配布 BizTalk Server ではなく、します。  
@@ -49,7 +49,7 @@ ms.locfileid: "36991939"
 
  この手順では、MLLP アダプターと SOAP アダプタを構成します。  
 
-### <a name="to-create-and-configure-the-ports"></a>ポートを作成および構成するには  
+### <a name="to-create-and-configure-the-ports"></a>作成してポートを構成するには  
 
 1. オーケストレーション デザイナー、ドラッグ、**ポート**、ツールボックスから図形をデザイン ビュー サーフェイスの左側にあるポート画面とで水平方向に合わせて配置されるようにドロップします、 **DoorbellReceive**図形です。  
 
@@ -69,7 +69,7 @@ ms.locfileid: "36991939"
 
 5. **ポートのバインド**] ページで [ **[次へ]** 既定値を受け入れます。  
 
-6. **ポート ウィザードの完了**] ページで [**完了**します。  
+6. **ポート ウィザードの完了**] ページで [**完了**です。  
 
 7. ドラッグ、**ポート**、ツールボックスから図形をデザイン ビューの右側にあるポート画面とで水平方向に合わせて配置されるようにドロップします、 **DoorbellSend**図形。  
 
@@ -82,8 +82,8 @@ ms.locfileid: "36991939"
    |         **ポートの種類名**          |               MLLPSendPortType                |
    |      **通信方式**      |                    一方向                    |
    |       **アクセスの制限**       |               パブリック - 制限なし               |
-   |          **ポートのバインド**           |                 [後で指定する]                 |
-   | **ポートの通信方向** | 常にこのポートでメッセージを送信する |
+   |          **ポートのバインド**           |                 後で指定します。                 |
+   | **ポートの通信方向** | 常にメッセージを送信しますこのポートでします。 |
 
 
 9. **オーケストレーション ビュー**  ウィンドウで、**型**、**ポートの種類**と**SOAPReceivePortType** を展開するノードを展開すると、**Operation_1**、 をクリックし、**要求**します。  
@@ -117,7 +117,7 @@ ms.locfileid: "36991939"
 
 22. 右クリックして**BTAHL7 プロジェクト**、 をクリック**デプロイ**BTAHL7 プロジェクトを配置します。  
 
-    進みます[手順 14: Web サービスとしてのオーケストレーションの公開](../../adapters-and-accelerators/accelerator-hl7/step-14-publish-the-orchestration-as-a-web-service.md)します。  
+    続行する[手順 14。Web サービスとしてのオーケストレーションの公開](../../adapters-and-accelerators/accelerator-hl7/step-14-publish-the-orchestration-as-a-web-service.md)します。  
 
 ## <a name="see-also"></a>参照  
  [メッセージ強化のチュートリアル](../../adapters-and-accelerators/accelerator-hl7/message-enrichment-tutorial.md)

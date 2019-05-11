@@ -1,5 +1,5 @@
 ---
-title: '手順 8: BTARN データベース内のメッセージの表示 |Microsoft Docs'
+title: 手順 8:BTARN データベース内のメッセージの表示 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,47 +16,47 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 56563473e5865e9b94edefd76e9f230f8cd37f67
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 94f9b676c2f8ea8c212a4ded6f50ee9037cad6ea
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36998446"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65280546"
 ---
-# <a name="step-8-view-messages-in-the-btarn-databases"></a>手順 8: BTARN データベース内のメッセージの表示
+# <a name="step-8-view-messages-in-the-btarn-databases"></a>手順 8:BTARN データベース内のメッセージの表示
 この手順で、Microsoft® に格納されている基幹業務 (LOB) メッセージを表示する SQL クエリ アナライザーを使用する[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]ループバック シナリオが正しく動作していることを確認するデータベース。  
   
- LOB アプリケーション ユーティリティが LOB メッセージを生成し、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] に送信した後、開始側 (ホーム) と応答側 (パートナー) で次のイベントが発生します。  
+ LOB アプリケーション後ユーティリティが LOB メッセージを生成しに送信[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]、(ホーム) のイニシエーターおよびレスポンダー (パートナー) に対して次のイベントが発生します。  
   
  開始側ワークフロー  
   
-- SubmitRNIF が、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] DATA データベースの MessagesFromLOB テーブルに LOB メッセージを送信します。  
+- SubmitRNIF の MessagesFromLOB テーブルに LOB メッセージの送信、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]データ データベース。  
   
-- SQL アダプター受信場所がメッセージを取得し、MessageBox データベースに配信します。 SQL アダプターは `GetMessagesFromLOB` ストアド プロシージャを実行して、一度に 1 つのメッセージを取得します。  
+- SQL アダプターでは、受信場所がメッセージを取得し、メッセージ ボックス データベースに配信します。 SQL アダプターは、時間の実行中に 1 つのメッセージを取得、`GetMessagesFromLOB`ストアド プロシージャ。  
   
-- プライベート開始側が MessageBox データベースからメッセージを取得し、追加で昇格されたコンテキスト プロパティを付けて MessageBox データベースに再度ドロップします。  
+- プライベート開始側はメッセージ ボックス データベースからメッセージを取得し、昇格させた追加のコンテキスト プロパティをメッセージ ボックス データベースにもう一度削除します。  
   
-- パブリック開始側がサブスクリプション フィルターに基づいて、MessageBox データベースからメッセージを取得します。  
+- パブリック開始側は、サブスクリプション フィルターに基づいて、メッセージ ボックス データベースからメッセージを取得します。  
   
-- HTTP 送信ポートがサブスクリプションに基づいて、RNIFSend パイプラインでメッセージを取得します。 HTTP 送信ポートは、否認不可用の [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] Archive データベースの MessageStorageOut テーブルにメッセージを格納した後、メッセージを RNIFSend.aspx ページに送信します。  
+- HTTP では、サブスクリプションに基づいて、RNIFSend パイプラインでポートによって取得、メッセージを送信します。 MessageStorageOut テーブルにメッセージを保存、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]非否認のアーカイブ データベースを RNIFSend.aspx ページにメッセージを送信するとします。  
   
-- RNIFSend.aspx ページは、メッセージの最終送信先 (取引先組織の URL) を含むクエリ文字列変数付きの MIME でエンコードされたメッセージを受け取ります。  
+- RNIFSend.aspx ページは、メッセージ (パートナー組織の URL) の最終的な送信先を含むクエリ文字列変数で MIME でエンコードされたメッセージを受信します。  
   
   応答側ワークフロー  
   
-- [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] が RNIF メッセージを RNIFReceive.aspx ページに送信します。RNIFReceive.aspx ページでは、MIME でデコードされたラッパーが削除されます。 メッセージは、同期メッセージまたは非同期メッセージのいずれかとして識別された後、同期または非同期の受信場所 (RNIF_Sync_Receive または RNIF_Async_Receive) に転送されます。  
+- [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] MIME でデコードされたラッパーを除去する RNIFReceive.aspx ページに RNIF メッセージを送信します。 同期または非同期のどちらかとして識別されるメッセージを転送し、同期または非同期のいずれかの受信場所 (RNIF_Sync_Receive または RNIF_Async_Receive)。  
   
-- まず、HTTP 受信場所が、ワイヤ形式のメッセージを [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] Archive データベースの否認不可用 MessageStorageIn テーブルに格納します。 次に HTTP 受信場所は、デコードおよび暗号化の解除を実行して (RNIF 2.0 の場合)、その署名を検証します。次に XML メッセージ部を逆アセンブルし、署名に基づいて承認してから、昇格された正しいプロパティを付けて MessageBox データベースにドロップします。  
+- HTTP の否認不可用 MessageStorageIn テーブル内の場所の最初の保存、メッセージのワイヤ形式を受信、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]アーカイブ データベース。 HTTP 受信場所をデコードし、(RNIF 2.0) の復号化、その署名を検証、XML メッセージの部分を逆アセンブル、承認、シグネチャに基づいており、昇格された正しいプロパティを付けて MessageBox データベースにドロップします  
   
-- パブリック応答側が、サブスクリプションに基づいてメッセージ部を取得し、正しい RNIF 規格に基づいてメッセージを検証および処理します。 Service Content 部が、メッセージに正しいコンテキスト プロパティを付けて MessageBox データベースにドロップします。  
+- パブリック応答側は、ベースのサブスクリプションでは、メッセージ部分を取得、それを検証してから、正しい RNIF 規格に基づいてメッセージを処理します。 Service content 部では、正しいコンテキスト プロパティをメッセージ ボックス データベースにメッセージを削除します。  
   
-- SQL 送信ポートがサブスクリプション フィルターに基づいてメッセージを取得します。 次に、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] DATA データベースの MessagesToLOB テーブルにメッセージを格納します。  
+- SQL 送信ポートは、サブスクリプション フィルターに基づいてメッセージ。 MessagesToLOB テーブルにメッセージを保存し、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]データ データベース。  
   
 > [!NOTE]
->  応答側では、パブリック応答側は受信確認または例外シグナルを発信側に生成する責任を負います。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] MessagesFromLOB テーブルには、シグナル メッセージは保存されません。 これは、LOB アプリケーションがシグナル メッセージを生成しないためです。 アクション メッセージはプライベート応答側を経由し、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] によって MessagesToLOB テーブルに格納されます。  
+>  応答側では、パブリック応答側は受信確認または例外シグナルを発信側に生成する責任を負います。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] MessagesFromLOB テーブルには、シグナル メッセージは保存されません。 これは、LOB アプリケーションがシグナル メッセージを生成しないためです。 プライベート応答側アクションのメッセージが今後と[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]MessagesToLOB テーブルに保存します。  
 > 
 > [!NOTE]
->  ダブル アクション Pip の応答側に LOB が応答メッセージを生成する責任を負います。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 開始側プロセスと同じプロセスを経由する MessagesFromLOB テーブルにドロップします。 この場合、開始側のパブリック開始側プロセスが、応答メッセージの受信確認または例外シグナルを送信します。  
+>  ダブル アクション Pip の応答側に LOB が応答メッセージを生成する責任を負います。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 開始側プロセスと同じプロセスを経由する MessagesFromLOB テーブルにドロップします。 ここで、開始側パブリック開始側プロセスでは、戻る応答メッセージの受信確認または例外シグナルのために送信します。  
   
 ### <a name="to-view-messages-in-the-btarn-databases"></a>BTARN データベース内のメッセージを表示するには  
   
@@ -65,11 +65,11 @@ ms.locfileid: "36998446"
 2. [サーバー] ダイアログ ボックスへの接続、クリックして**Connect**します。  
   
    > [!NOTE]
-   >  オブジェクト エクスプローラー ペインで、SQL Server エージェントが開始されていることを確認します。 ない場合を右クリックして**SQL Server エージェント**、 をクリック**開始**します。  
+   >  オブジェクト エクスプ ローラー ウィンドウで、SQL Server エージェントが開始されていることを確認します。 ない場合を右クリックして**SQL Server エージェント**、 をクリック**開始**します。  
   
 3. Microsoft SQL Server Management Studio で次のようにクリックします。**新しいクエリ**します。  
   
-4. 空のクエリ ウィンドウに以下を入力します。  
+4. 空のクエリ ウィンドウで、次のように入力します。  
   
    ```  
    use BTARNArchive  
@@ -84,7 +84,7 @@ ms.locfileid: "36998446"
   
 5. Microsoft SQL Server Management Studio で次のようにクリックします。 **Execute**します。  
   
-   MessagesFromLOB テーブル内のアクション メッセージが表示されます。数分後 (この時間はシステム構成によって異なります) にクエリを再度実行すると、MessageCategory 値が AsyncAckSignal (25) および AsyncAction (10) である 2 つのメッセージが MessagesToLOB テーブルに生成されて表示されます。  
+   MessagesFromLOB テーブル内のアクション メッセージは表示され (時刻は、システム構成によって異なる場合があります)、数分後にもう一度クエリを実行する場合は、MessageCategory 値を持つ MessagesToLOB テーブルで生成された 2 つのメッセージが表示されます。AsyncAckSignal (25) および AsyncAction (10)。  
   
 ## <a name="see-also"></a>参照  
  [Loopback](../../adapters-and-accelerators/accelerator-rosettanet/loopback.md)   

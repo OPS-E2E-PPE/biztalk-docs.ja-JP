@@ -15,24 +15,24 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 96bdc2a681cf3632f6393a3fef05ec275f60f82f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 96dd45cb6a4f973b98a0a7a4a0c32c2d8452c0a0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37006083"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65283653"
 ---
 # <a name="importing-certificates"></a>証明書のインポート
-ここでは、インポート先、格納先、インポートに使用するツールなど、証明書のインポート方法について説明します。  
+このセクションは、証明書をインポートする方法を説明しますからそれらをインポートする場所、それを格納する場所を使用してそれらをインポートするどのようなツールなど。  
   
- 証明書をインポートする方法は 2 つあります。 Microsoft 管理コンソール (MMC) を CertWizard ツールまたは証明書スナップインに使用することができます。  
+ 証明書をインポートする 2 つの方法はあります。 Microsoft 管理コンソール (MMC) を CertWizard ツールまたは証明書スナップインに使用することができます。  
   
-- CertWizard は、スイッチの設定に基づいて証明書の使用法を構成する段階的なコマンド ライン ウィザードです。 このツールは、Microsoft で使用できる[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]SDK フォルダー。  
+- CertWizard は、スイッチの設定に基づく証明書の使用を構成するステップ バイ ステップのコマンド ライン ウィザードです。 このツールは、Microsoft で使用できる[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]SDK フォルダー。  
   
-- MMC の証明書スナップインを使用しても、証明書を証明書ストアにインポートできます。 ただし、この手動プロセスを使用した場合は、証明書の使用法を個別に構成する必要があります。  
+- 証明書スナップイン MMC で、証明書ストアに証明書をインポートできます。 ただし、この手動プロセスでは、証明書の使用を個別に構成することが必要です。  
   
   > [!IMPORTANT]
-  >  MMC のプライベート証明書をインポートまたは使用するには、ログオンしているユーザーが BizTalk ホストのユーザー ID を持っている必要があります。 そうでないを実行する必要がある場合、 **runas**コマンドと、ユーザー スイッチとホスト サービス アカウントは、証明書 MMC の起動を**runas/user:hostsvc mmc**します。 このコマンドを実行することにより、BizTalk ホスト (BizTalkServerApplication および BizTalkServerIsolatedHost) のユーザー ID を想定します。  
+  >  インポートまたは MMC のプライベート証明書の使用、ログオンしているユーザーは、BizTalk ホストのユーザー id が必要です。 そうでないを実行する必要がある場合、 **runas**コマンドと、ユーザー スイッチとホスト サービス アカウントは、証明書 MMC の起動を**runas/user:hostsvc mmc**します。 このコマンドを実行すると、BizTalk ホスト (BizTalkServerApplication および BizTalkServerIsolatedHost) のユーザー id を想定します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

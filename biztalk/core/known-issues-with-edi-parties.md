@@ -1,5 +1,5 @@
 ---
-title: EDI パーティに関する既知の問題 |Microsoft ドキュメント
+title: EDI パーティに関する既知の問題 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,21 +12,21 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fddda6dd62e8e3bd2d38574343b7fcb0e0d76f89
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7305d28b9162ab1d88be8dde9e79437d5d1e85b3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22261786"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65330337"
 ---
 # <a name="known-issues-with-edi-parties"></a>EDI パーティに関する既知の問題
 このセクションには、EDI パーティと、パートナー アグリーメント マネージャに関する既知の問題を説明するトピックが含まれています。  
   
-## <a name="a-cache-refresh-period-delays-availability-of-a-changed-party-property"></a>キャッシュ更新間隔による変更後のパーティ プロパティの使用可能時期の遅延  
- PAM でパーティまたはグローバル プロパティを変更すると、15 分ごとのキャッシュ更新または BizTalk サービスの再起動の後に、BizTalk Runtime でそのプロパティが使用可能になります。  
+## <a name="a-cache-refresh-period-delays-availability-of-a-changed-party-property"></a>変更されたパーティ プロパティのキャッシュの更新期間の遅延可用性  
+ パーティまたは PAM でグローバル プロパティを変更すると、プロパティにキャッシュが 15 分ごとに更新した後、BizTalk Runtime または BizTalk サービスの再起動後に利用可能になります。  
   
 ## <a name="see-also"></a>参照  
- [EDI 受信確認を構成します。](../core/configuring-edi-acknowledgments.md)   
+ [EDI 受信確認の構成](../core/configuring-edi-acknowledgments.md)   
  [EDI 処理におけるアグリーメントのロール](../core/the-role-of-agreements-in-edi-processing.md)   
  [EDI のプロパティを構成します。](../core/configuring-edi-properties.md)   
- [グローバルまたはフォールバック アグリーメント プロパティの構成](../core/configuring-global-or-fallback-agreement-properties.md)
+ [グローバルまたはフォールバック アグリーメントのプロパティの構成](../core/configuring-global-or-fallback-agreement-properties.md)

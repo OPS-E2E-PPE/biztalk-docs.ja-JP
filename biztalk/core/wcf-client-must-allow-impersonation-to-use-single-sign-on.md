@@ -12,14 +12,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a2d5ebfc9853f10417c1d2ad2c41a0d2531ff6de
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7f79cee850fac0689cbf956a966ad0970d36223f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36971475"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65279072"
 ---
-# <a name="wcf-client-must-allow-impersonation-to-use-single-sign-on"></a>シングル サインオンを使用するには、WCF クライアントが権限借用を許可する必要があります
+# <a name="wcf-client-must-allow-impersonation-to-use-single-sign-on"></a>WCF クライアントは、シングル サインオンを使用する権限の借用を許可する必要があります。
 ## <a name="details"></a>詳細  
 
 |                 |                                                                                    |
@@ -30,19 +30,19 @@ ms.locfileid: "36971475"
 |  イベント ソース   |                                         0                                          |
 |    コンポーネント    |                                         0                                          |
 |  シンボル名  |                                         0                                          |
-|  メッセージ テキスト   |           シングル サインオンを使用するには、WCF クライアントが権限借用を許可する必要があります。            |
+|  メッセージ テキスト   |           WCF クライアントは、シングル サインオンを使用する偽装を許可する必要があります。            |
 
 ## <a name="explanation"></a>説明  
- シングル サインオン (SSO) が受信場所で有効ですが、WCF クライアントでは偽装を許可していません。  
+ 受信場所のシングル サインオン (SSO) が有効になっているが、WCF クライアントが権限借用を許可していません。  
 
 ## <a name="user-action"></a>ユーザーの操作  
- サービスを実行する WCF クライアントが偽装を許可するようにします。  
+ サービスを実行する WCF クライアントが偽装を許可することを確認します。  
 
 1. クリックして**開始**、 をクリックして**すべてのプログラム**、 をクリックして[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、 をクリック**BizTalk Server 管理**します。  
 
 2. コンソール ルートで  [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]、展開**BizTalk グループ**、展開**アプリケーション**します。  
 
-3. アプリケーションを特定し、次にトランスポートを特定します。  
+3. アプリケーションを見つけて、トランスポートを特定します。  
 
 4. トランスポート名を右クリックします。  
 
@@ -50,7 +50,7 @@ ms.locfileid: "36971475"
 
 6. ポート**型**一覧で、 **Wcf-custom** (または**Wcf-customisolate**)。  
 
-7. クリックして**構成**します。  
+7. をクリックして**構成**です。  
 
 8. **WCF [**<em>トランスポートの種類</em>**] トランスポートのプロパティ**ダイアログ ボックスで、をクリックして、**動作**タブ。  
 

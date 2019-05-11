@@ -12,17 +12,17 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 195701e4bba469a7faaab36a5ae1636c5abca5f4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 582ebdb4bcf41afe0da18d05399650ff56b08789
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36967387"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65368776"
 ---
 # <a name="limitations-of-biztalk-adapter-for-sql-server"></a>SQL Server 用 BizTalk アダプターの制限事項
 次の制限事項を呼びます[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]:  
   
-- [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]は SQL Server データベースに作成されたシノニムをサポートしていません。 SQL Server でのシノニムについては、[ http://go.microsoft.com/fwlink/?LinkId=120111](http://go.microsoft.com/fwlink/?LinkId=120111)を参照してください。  
+- [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]は SQL Server データベースに作成されたシノニムをサポートしていません。 SQL Server でのシノニムについては、次を参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=120111](http://go.microsoft.com/fwlink/?LinkId=120111)します。  
   
 - 実行するコンピューターのシステム時刻を変更するかどうか、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]ホスト、時間が自動的に更新されないで、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]ホスト。 受信ポートを使用する受信操作の不適切な動作になる可能性[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]します。 この問題を回避するを実行するコンピューターのシステム時刻を変更した後、受信ポートを持つホスト インスタンスを再起動する必要があります。  
   

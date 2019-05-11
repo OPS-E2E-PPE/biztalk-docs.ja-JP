@@ -12,12 +12,12 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2a4f27cd62a546213041be594094ff6b5e39274b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9b93831275f2ae12bdef54f9116a2242d9cc52d5
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37005323"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65357834"
 ---
 # <a name="cbr-biztalk-server-sample"></a>CBR (BizTalk Server サンプル)
 CBR サンプルの使用例、 **ExplorerOM**管理オブジェクトを追加して新しい構成が BizTalk メッセージのコンテンツ ベース ルーティング用のポートを送信します。  
@@ -28,7 +28,7 @@ CBR サンプルの使用例、 **ExplorerOM**管理オブジェクトを追加�
 
 - このサンプルの管理オブジェクトを使用するには、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者特権が必要です。  
 
-- Windows PowerShell スクリプトの例を実行するには、Windows PowerShell 実行ポリシーが必要です。 詳細については、:[実行ポリシーの確認](http://go.microsoft.com/fwlink/?LinkId=128930)を参照してください。  
+- Windows PowerShell スクリプトの例を実行するには、Windows PowerShell 実行ポリシーが必要です。 詳しくは、次のトピックをご覧ください。[実行ポリシーの確認](http://go.microsoft.com/fwlink/?LinkId=128930)します。  
 
 ## <a name="what-this-sample-does"></a>このサンプルの処理  
  このサンプルで管理オブジェクトを使用して、 **Microsoft.BizTalk.ExplorerOM** CBRApplication サンプルに 2 つの新しいポートを追加する名前空間。 これらの新しいポートは、CBRApplication のサンプル ポートです。 これらのポートは、HTTP アダプターを使用してメッセージを仮の HTTP Web サービス アドレスにルーティングするように構成されます。 このサンプルでは、 **ExplorerOM** オブジェクトを使用して次の操作を実行する方法を示します。  
@@ -48,7 +48,7 @@ CBR サンプルの使用例、 **ExplorerOM**管理オブジェクトを追加�
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
  このサンプルは、SDK がある次の場所にあります。  
 
- \<*パスのサンプル*\>\Admin\ExplorerOM\CBR  
+ \<*Samples Path*\>\Admin\ExplorerOM\CBR  
 
  次の表は、このサンプルのファイルとその目的を示しています。  
 
@@ -76,7 +76,7 @@ CBR サンプルの使用例、 **ExplorerOM**管理オブジェクトを追加�
 
 3. コマンド ウィンドウを開き、次のフォルダーに移動します。  
 
-    \<*パスのサンプル*\>\Admin\ExplorerOM\CBR\bin\Debug  
+    \<*Samples Path*\>\Admin\ExplorerOM\CBR\bin\Debug  
 
 4. CBR.exe ファイルを実行します。  
 

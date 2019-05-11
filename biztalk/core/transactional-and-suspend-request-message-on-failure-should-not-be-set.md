@@ -12,12 +12,12 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3818ddba18b89aedd1185f5ad87f3682dd5686a7
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a194be042fde95d18c80126e53839057d621f46c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36971419"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65279662"
 ---
 # <a name="transactions-option-quottransactionalquot-and-the-error-handling-option-quotsuspend-request-message-on-failurequot-should-not-both-be-set-to-false"></a>トランザクションのオプション&quot;トランザクション&quot;とエラー処理オプションの&quot;エラー発生時に要求メッセージを保留&quot;両方を false に設定する必要があります
 ## <a name="details"></a>詳細  
@@ -30,13 +30,13 @@ ms.locfileid: "36971419"
 |  イベント ソース   |                                                                                                        0                                                                                                         |
 |    コンポーネント    |                                                                                                        0                                                                                                         |
 |  シンボル名  |                                                                                                        0                                                                                                         |
-|  メッセージ テキスト   | メッセージが表示されなくなる可能性があるため、エラー処理オプションの "エラー発生時に場所を無効にする" および "エラー発生時に要求メッセージを保留する" を両方とも false に設定しないでください。 1 つまたは両方のオプションを true に設定してください。 |
+|  メッセージ テキスト   | トランザクションのオプション「トランザクション」およびエラー処理オプション「失敗時に要求メッセージを保留」する必要があります両方では false に設定するため、メッセージの損失が発生する可能性があります。 1 つまたは両方のオプションを true に設定してください。 |
   
 ## <a name="explanation"></a>説明  
- Wcf-netmsmq アダプターは、オプションで**トランザクション**と**エラー発生時に要求メッセージを保留**両方を false に設定する必要があります (オフ)。 メッセージ送信の失敗でトランザクションとしてロール バックせずに、メッセージを中断してメッセージ ボックスに保存しない場合は、メッセージが失われることがあります。  
+ Wcf-netmsmq アダプターは、オプションで**トランザクション**と**エラー発生時に要求メッセージを保留**両方を false に設定する必要があります (オフ)。 メッセージの損失は、メッセージ送信の失敗はロールバックされません、トランザクションとしてメッセージは中断されませんし、メッセージ ボックスに格納されている場合に発生する可能性があります。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- アダプター設定を確認するには、次の手順を実行します。  
+ アダプター設定を確認するのにには、次の手順を使用します。  
   
 #### <a name="to-verify-adapter-settings"></a>アダプター設定を確認するには  
   
@@ -44,7 +44,7 @@ ms.locfileid: "36971419"
   
 2. コンソール ルートで  [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]、展開**BizTalk グループ**、展開**アプリケーション**します。  
   
-3. アプリケーションを特定し、次にトランスポートを特定します。  
+3. アプリケーションを見つけて、トランスポートを特定します。  
   
 4. トランスポート名を右クリックします。  
   
@@ -52,7 +52,7 @@ ms.locfileid: "36971419"
   
 6. ポート**型**一覧で、適切なポートを選択します。  
   
-7. クリックして**構成**します。  
+7. をクリックして**構成**です。  
   
 8. **Wcf-netmsmq トランスポートのプロパティ**ダイアログ ボックスで、をクリックして、**バインド**タブ。  
   
@@ -63,4 +63,4 @@ ms.locfileid: "36971419"
 11. かどうか確認**エラー発生時に要求メッセージを保留**がチェックされます。  
   
     > [!NOTE]
-    >  これらの手順は、場所の受信にのみ適用されます。
+    >  次の手順は、受信場所にのみ適用されます。

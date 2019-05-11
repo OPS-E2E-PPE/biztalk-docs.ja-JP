@@ -17,12 +17,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 05a33abb76d49cfa5db640b1d15d9fde420f19c6
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6c5d31c7803eaa8fe0f8afeb6ed7c534f70233db
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36974227"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65286420"
 ---
 # <a name="undeclared-customizations"></a>未宣言のカスタマイズ
 形式またはデータの性質を定義することがなく、メッセージにデータを追加できます。 未宣言の Z セグメントを使用してこれを行います。 未宣言の Z セグメントは、メッセージの最後の予期しないインスタンスです。 パーサー/XML 検証では、セグメントは検証されません。 任意のスキーマでは定義されません。 Microsoft BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) セグメントをバイナリ ラージ オブジェクト (BLOB) として扱われます。  

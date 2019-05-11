@@ -12,14 +12,14 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 48701d24b405f46ad66a76c0ac473fb7343317f2
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e1c99776d350f556855b541290fac1f6a65f5921
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36994131"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65360256"
 ---
-# <a name="an-empty-as2-message-was-received-and-suspended"></a>空の AS2 メッセージが受信され、中断されました
+# <a name="an-empty-as2-message-was-received-and-suspended"></a>空の AS2 メッセージが受信され、中断
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                        |

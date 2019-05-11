@@ -1,5 +1,5 @@
 ---
-title: BtarnConfig |Microsoft Docs
+title: BtarnConfig | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,20 +17,20 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 542ed5729ce4f5ed7ca4a6d453b3169bb1f43d01
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 50940e57a806f56ae874934052a4c5b7a03a13f9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36991467"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65284896"
 ---
 # <a name="btarnconfig"></a>BtarnConfig
-BtarnConfig ユーティリティを使用して構成データをインポートまたは、Microsoft® から構成データをエクスポートする[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]環境。 この構成データは、BTARN 管理コンソールを使用して設定するデータで、プロセス構成設定、ホーム組織、パートナー、アグリーメントなどが含まれます。  
+BtarnConfig ユーティリティを使用して構成データをインポートまたは、Microsoft® から構成データをエクスポートする[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]環境。 この構成データは、プロセス構成設定、ホーム組織、パートナー、および契約を含む、BTARN 管理コンソールを使用して設定したデータです。  
 
 ## <a name="location-in-sdk"></a>SDK でのパス  
- \<*ドライブ*\>\ Program Files (x86)\\Microsoft BizTalk\<バージョン\>Accelerator for rosettanet \sdk  
+ \<*drive*\>\ Program Files (x86)\\Microsoft  BizTalk \<version\> Accelerator for RosettaNet\SDK  
 
-## <a name="running-btarnconfig"></a>BtarnConfig の実行  
+## <a name="running-btarnconfig"></a>Running BtarnConfig  
 
 #### <a name="to-run-btarnconfig"></a>BtarnConfig を実行するには  
 
@@ -41,10 +41,10 @@ BtarnConfig ユーティリティを使用して構成データをインポー�
 3. コマンド プロンプトで「 **BtarnConfig**と、適切なスイッチを入力し、ENTER キーを押します。  
 
    > [!NOTE]
-   >  スイッチについては次のセクションで説明します。  
+   >  次のセクションでは、スイッチについて説明します。  
 
 ## <a name="syntax-for-btarnconfig"></a>BtarnConfig の構文  
- 以下に、このコマンドライン ツールを起動するための構文を示します。  
+ このコマンド ライン ツールの起動に使用する構文を次に示します。  
 
 ### <a name="syntax-for-importing-configuration-data"></a>構成データをインポートするための構文  
 
@@ -59,25 +59,25 @@ BTARNCONFIG /EXPORT <filename>.xml [/H] [/P] [/R] [/A]
 ```  
 
 ### <a name="syntax-description"></a>構文の説明  
- 次の表で、BtarnConfig が使用する構文の各部について説明します。  
+ 次の表では、BtarnConfig ユーティリティを使用する構文の各部について説明します。  
 
 
 |       構文       |                                                                                                                          説明                                                                                                                          |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| \<*ファイル名*.xml\> | インポートまたはエクスポートするファイルのフルパス。 BTARN のパスを指定しない場合、パスが前提としています\<*ドライブ*\>\ Program Files (x86)\\Microsoft BizTalk\<バージョン\>してのアクセラレータSDK があります。 |
-|    **/インポート**     |                                                                                          XML データをインポート\< *filename*.xml\> BTARN の構成にします。                                                                                           |
+| \<*filename*.xml\> | インポートまたはエクスポートするファイルの完全パス。 BTARN のパスを指定しない場合、パスが前提としています\<*ドライブ*\>\ Program Files (x86)\\Microsoft BizTalk\<バージョン\>してのアクセラレータSDK があります。 |
+|    **/IMPORT**     |                                                                                          XML データをインポート\< *filename*.xml\> BTARN の構成にします。                                                                                           |
 |    **/EXPORT**     |                                                                                             XML データとしての BTARN の構成のエクスポート\< *filename*.xml\>します。                                                                                              |
-|       **/H**       |                                                                                                   ホーム組織の構成データをインポートまたはエクスポートします。                                                                                                    |
-|       **/P**       |                                                                                                        取引先の構成データをインポートまたはエクスポートします。                                                                                                         |
-|       **/R**       |                                                                                                        プロセス構成データをインポートまたはエクスポートします。                                                                                                         |
-|       **/A**       |                                                                                                       アグリーメントの構成データをインポートまたはエクスポートします。                                                                                                        |
+|       **/H**       |                                                                                                   インポートまたはホーム組織の構成データをエクスポートします。                                                                                                    |
+|       **/P**       |                                                                                                        インポートまたはパートナーの構成データをエクスポートします。                                                                                                         |
+|       **/R**       |                                                                                                        インポートまたはプロセス構成データをエクスポートします。                                                                                                         |
+|       **/A**       |                                                                                                       インポートまたはアグリーメントの構成データをエクスポートします。                                                                                                        |
 
 ## <a name="remarks"></a>コメント  
- いずれかを指定しない場合、 **/H**、 **/P**、 **/R**、または **/A**スイッチ、BtarnConfig ユーティリティは、インポートまたはすべてのデータをエクスポートします。 一度の操作で全データをエクスポートする場合は、ホーム組織、取引先、プロセス構成、アグリーメントの順にデータが XML にエクスポートされます。  
+ いずれかを指定しない場合、 **/H**、 **/P**、 **/R**、または **/A**スイッチ、BtarnConfig ユーティリティは、インポートまたはすべてのデータをエクスポートします。 BtarnConfig が次の順序で XML ファイルにデータをエクスポートする 1 つの操作のすべてのデータをエクスポートする場合: ホーム組織、パートナー、プロセス構成、およびアグリーメント。  
 
- インポート元のファイルに構造上の問題がある場合は、スキーマ検証ステージでエラーが検出され、データがインポートされる前に操作に失敗します。 別のエラーが発生した場合、たとえば重複項目をインポートしようとしている場合や、PIP/アグリーメントに HTTPS が必要な場合は、インポート操作に失敗します。 ただし、その時点までにインポートされたデータは構成に残ります。  
+ インポートするファイルの構造上の問題がある場合は、BTARN スキーマの検証段階でエラーが検出され、任意のデータをインポートする前に、操作は失敗します。 重複するアイテムをインポートしようとしているなどの別のエラーが発生した場合または HTTPS が必要な PIP/アグリーメントし、インポート操作に失敗します。 ただし、すべてのデータまでにインポートされた構成でポイントが残ります。  
 
- BtarnConfig を使用して構成データをインポートまたはエクスポートするには、BizTalk 管理者でなければなりません。 BizTalk 管理者でない場合は、アクセス権の問題でインポート操作に失敗する可能性がありますが、 BtarnConfig コマンドを使用した他のインポート操作には成功する場合もあります。  
+ BizTalk 管理者は、インポートまたは BtarnConfig を使用して構成データをエクスポートする必要があります。 BizTalk 管理者でない場合は、いくつかのインポート操作が失敗するアクセスの問題があるためです。 ただし、同じ BtarnConfig コマンドで他のインポート操作が成功する可能性があります。  
 
 ## <a name="see-also"></a>参照  
  [ユーティリティ](../../adapters-and-accelerators/accelerator-rosettanet/utilities1.md)

@@ -18,12 +18,12 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4742ad9625c91c9a8f92f8359c4e0becbb166eab
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6f866df79f46f941604bc72a189a080f56aea170
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37004907"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65292669"
 ---
 # <a name="understanding-the-business-process-management-solution"></a>ビジネス プロセス管理ソリューションについて
 このセクションで説明するソリューションは、ビジネス プロセス管理アプリケーションを実装する方法を示します。 理想的なビジネス プロセス マネージャでは、ソリューションの各部分が、ビジネス ルール、特定のバックエンド システムとの通信、応答メッセージの送信などのビジネス プロセスを表し、プロセスを支えるインフラストラクチャと分離されています。  
@@ -77,7 +77,7 @@ ms.locfileid: "37004907"
   
   Southridge Video の注文は、長期プロセスです。ケーブル注文が完了するまでに要する時間は、1 分から 1 年までさまざまです。 BizTalk オーケストレーションのインスタンスは完了するまで実行される必要があるため、オーケストレーション インスタンスの有効期間は最長で 1 年になる場合があります。  
   
-  Southridge Video は、注文処理中にアプリケーション コンポーネントを変更できるような、長期プロセスに対応したアーキテクチャを必要としています。 このため、最新のプロセス コンポーネントを使用して注文を完了できるように、Southridge では注文処理を複数のステージに分割しました。 ビジネス プロセスにおいてステージの境界を判断する方法については、[、ビジネス プロセス管理ソリューションの一部の設計原則](../core/some-design-principles-in-the-business-process-management-solution.md)を参照してください。  
+  Southridge Video は、注文処理中にアプリケーション コンポーネントを変更できるような、長期プロセスに対応したアーキテクチャを必要としています。 このため、最新のプロセス コンポーネントを使用して注文を完了できるように、Southridge では注文処理を複数のステージに分割しました。 ビジネス プロセスにおいてステージの境界を判断する方法については、次を参照してください。 [、ビジネス プロセス管理ソリューションの一部の設計原則](../core/some-design-principles-in-the-business-process-management-solution.md)します。  
   
   注文の処理時間が長いことも、処理中の注文の変更が必要になる要因です。 注文の変更は、ソリューションに広範な割り込みシステムが組み込まれている理由の 1 つです。 割り込みシステムを組み込むと、完了していない注文を簡単に変更またはキャンセルできます。 ソリューションでは、割り込みを処理するためのソリューションの各機能間の通信に .NET メッセージを使用します。  
   

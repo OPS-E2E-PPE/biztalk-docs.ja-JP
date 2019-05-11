@@ -17,12 +17,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 160f40d4dfd0d11a7bd5a5c7c127d62b3e42a2cb
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 02a1e9832a633c1b638b7a6b527e607654e75870
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37004027"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65283035"
 ---
 # <a name="message-flow-in-the-initiator-btarn"></a>開始側 BTARN でのメッセージ フロー
 開始側コンピューターが、バックエンドの基幹業務 (LOB) アプリケーションから専用形式のメッセージを受信すると、メッセージ フローが開始されます。 メッセージ フローには、受信したメッセージを RNIF (RosettaNet Implementation Framework) に準拠するメッセージに変換して、インターネット経由で応答側コンピューターに送信するタスクも含まれています。  
@@ -48,7 +48,7 @@ ms.locfileid: "37004027"
   
 - RNIFSend.aspx ページ  
   
-  これらのコンポーネントとメッセージの処理方法の詳細については、[BTARN でのメッセージ処理](../../adapters-and-accelerators/accelerator-rosettanet/message-processing-in-btarn.md)を参照してください。  
+  これらのコンポーネントとメッセージの処理方法の詳細については、次を参照してください。 [BTARN でのメッセージ処理](../../adapters-and-accelerators/accelerator-rosettanet/message-processing-in-btarn.md)します。  
   
 ## <a name="flow-of-an-initiated-message"></a>開始メッセージのフロー  
  以下の手順は、開始側の [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] コンピュータから発信されたメッセージのメッセージ フローを示します。 このプロセスを次に示します。  

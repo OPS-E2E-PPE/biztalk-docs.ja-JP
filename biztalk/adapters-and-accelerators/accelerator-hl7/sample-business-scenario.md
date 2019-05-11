@@ -17,12 +17,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a6b88bd76a1fac2ebfa5c2f75a6abbf78aab75b7
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 0c84acde2b7d3049c415954a561c1a53edb16a0b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36966907"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65289944"
 ---
 # <a name="sample-business-scenario"></a>サンプル ビジネス シナリオ
 医療のプロセスは複雑では多くの場合、多くのシステムが含まれます。 例としては、患者が病院では、入力したときに発生するプロセスと、医師が患者のラボ テストを送信します。 この手順に関連するには 5 つのパーティを示します。  

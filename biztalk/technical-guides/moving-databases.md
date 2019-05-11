@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 15562fc1fb642a4766190dabe912e81b38bb1ea8
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ce521277ee64819d6201ab24ced3066d2b3b10ce
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36972419"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65278965"
 ---
 # <a name="moving-databases"></a>データベースの移動
 移動するための推奨される方法[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]構成することです (ビジネス アクティビティ監視 (BAM) データベース) を除くデータベース[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]」セクションの説明に従って、ログ配布[ディザスター リカバリー](../technical-guides/disaster-recovery.md)します。 を除き、すべての BAM で使用されるデータベース、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]を使用してデータベース バックアップすることができます、 **Backup BizTalk Server** [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]エージェント ジョブ。 このジョブの詳細については、次を参照してください。 [Backup BizTalk Server のジョブをスケジュールする方法](http://go.microsoft.com/fwlink/?LinkId=154674)(<http://go.microsoft.com/fwlink/?LinkId=154674>) で[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプ。  

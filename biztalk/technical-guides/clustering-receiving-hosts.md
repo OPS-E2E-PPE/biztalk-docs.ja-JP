@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0f2d00960a2b09c692c1bc333d66d5bf72621259
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a50a23fa3c3d5a5469d82f42e7b467524c2a1f81
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37020671"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65277268"
 ---
 # <a name="clustering-receiving-hosts"></a>受信ホストをクラスタ リング
 BizTalk Server 内のクラスター化リソースとして、BizTalk ホストを構成できるようにする機能の提供、[!INCLUDE[btsWinSvrNoVersion](../includes/btswinsvrnoversion-md.md)]クラスター グループ。 ホスト クラスターのサポートは、BizTalk の統合の高可用性が、FTP 受信ハンドラーなどを実行するか複数のホスト インスタンスで同時に、アダプターを受信するにはサポートまたは特定の状況では、POP3 受信ハンドラーに提供されます。 MSMQ サービスのクラスター化が必要となるような状況でも、MSMQ アダプターによって送受信されたメッセージについて、トランザクションの一貫性を確実に保つことができます。  
@@ -43,7 +43,7 @@ BizTalk Server 内のクラスター化リソースとして、BizTalk ホスト
   
 - クラスター化された BizTalk ホストで順次配送をサポートする受信アダプターを実行する  
   
-  これらのシナリオの詳細については、[されたクラスター化されたホストでアダプター ハンドラーの実行に関する考慮事項](http://go.microsoft.com/fwlink/?LinkId=151284)(http://go.microsoft.com/fwlink/?LinkId=151284)を参照してください。  
+  これらのシナリオの詳細については、次を参照してください。[されたクラスター化されたホストでアダプター ハンドラーの実行に関する考慮事項](http://go.microsoft.com/fwlink/?LinkId=151284)(http://go.microsoft.com/fwlink/?LinkId=151284)します。  
   
 ## <a name="see-also"></a>参照  
  [スケール アウト、受信ホスト](../technical-guides/scaling-out-receiving-hosts.md)   

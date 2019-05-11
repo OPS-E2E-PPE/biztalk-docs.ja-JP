@@ -1,5 +1,5 @@
 ---
-title: '手順 4: 作成、ADT を受け入れるための受信ポート ^ A03 メッセージ MLLP アダプターを使用して ADT システムから |Microsoft Docs'
+title: 手順 4:作成の受信ポートの受け入れ ADT ^ A03 メッセージ MLLP アダプターを使用して ADT システムから |Microsoft Docs
 ms.custom: ''
 ms.date: 2015-12-09
 ms.prod: biztalk-server
@@ -16,14 +16,14 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1571d0f506f052aac08735d426fdbb4dcaf4b647
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7068e7964f44947c23829af41cf24243889673ed
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37000155"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65288322"
 ---
-# <a name="step-4-create-the-receive-port-for-accepting-adta03-messages-from-adt-systems-using-the-mllp-adapter"></a>手順 4: 作成、ADT を受け入れるための受信ポート ^ A03 メッセージ MLLP アダプターを使用して ADT システムから
+# <a name="step-4-create-the-receive-port-for-accepting-adta03-messages-from-adt-systems-using-the-mllp-adapter"></a>手順 4:作成の受信ポートの受け入れ ADT ^ A03 メッセージ MLLP アダプターを使用して ADT システムから
 受信ポートを使用して、受信メッセージの受信場所を指定します。 次の手順を使用して ADT を受け付ける受信ポートを作成する ^ A03 メッセージ MLLP アダプターを使用して ADT System から。  
 
 ## <a name="create-the-receive-port"></a>受信ポートの作成  
@@ -70,4 +70,4 @@ ms.locfileid: "37000155"
 12. 右クリックし、作成した受信場所を有効にし、**を有効にする**します。  
 
 ## <a name="next-step"></a>次の手順  
-[手順 5: ファイル アダプターを使用して ADT System に受診確認を配信する送信ポートの作成](../../adapters-and-accelerators/accelerator-hl7/step-5-create-send-port-to-deliver-acknowledgments-to-adt-system-using-file.md)
+[手順 5:ファイル アダプターを使用して ADT System に受信確認を配信する送信ポートの作成](../../adapters-and-accelerators/accelerator-hl7/step-5-create-send-port-to-deliver-acknowledgments-to-adt-system-using-file.md)

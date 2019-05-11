@@ -1,5 +1,5 @@
 ---
-title: TIBCO Rendezvous アダプターのセキュリティ |Microsoft ドキュメント
+title: TIBCO Rendezvous アダプターのセキュリティ |Microsoft Docs
 description: Biztalk TIBCO Rendezvous アダプターを使用するアプリケーションをセキュリティで保護するのにエンタープライズ シングル サインオン (SSO) を使用します。
 ms.custom: ''
 ms.date: 10/23/2017
@@ -13,22 +13,22 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0c06b241bff7595f4119a0226a07d45d365a4faa
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: fd96118e2d7301169b7fa3dd7c6fadf500feacf4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
-ms.locfileid: "24015833"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65279778"
 ---
 # <a name="sso-security-in-biztalk-adapter-for-tibco-rendezvous"></a>BizTalk Adapter for TIBCO Rendezvous での SSO のセキュリティ
 
 ## <a name="overview"></a>概要
-Microsoft BizTalk Adapter for TIBCO Rendezvous ではシングル サインオン (SSO) をサポートしています。 エンタープライズ シングル サインオン ツールによって作成される関連アプリケーションは、TIBCO Rendezvous などのサーバー システムを表します。 
+Microsoft BizTalk Adapter for TIBCO Rendezvous は、シングル サインオン (SSO) サポートを提供します。 エンタープライズ シングル サインオン ツールによって作成される関連アプリケーションは、TIBCO Rendezvous などのサーバー システムを表します。 
   
 > [!CAUTION]
->  クライアントのファイルは基幹業務 (LOB) アプリケーションに直接接続されるので、エンタープライズ アプリケーション用の BizTalk Adapter の使用は許可されたユーザーだけに制限することを強くお勧めします。  
+>  クライアント ファイルが基幹業務アプリケーションに直接接続できないため、承認されたユーザーだけに、エンタープライズ アプリケーション用 BizTalk アダプターの使用を制限することが強くお勧めします。  
   
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
   
 -   [SSO の要件](../core/requirements-for-single-sign-on3.md)  
   

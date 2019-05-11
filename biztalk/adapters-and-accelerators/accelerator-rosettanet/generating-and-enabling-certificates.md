@@ -1,5 +1,5 @@
 ---
-title: 生成して、証明書の有効化 |Microsoft ドキュメント
+title: 生成と証明書の有効化 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,26 +16,26 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 93293939ae509dcb2af04e17fcdd35e9cf6d03cb
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: faf4218919ec2c47729ce1002f17d73ac79584ad
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22209786"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65283687"
 ---
-# <a name="generating-and-enabling-certificates"></a>生成して、証明書の有効化
-このチュートリアルでは、Contoso 組織と Fabrikam 組織によって送信されたメッセージに署名し、暗号化するために、証明書を使用します。 ダブル アクション チュートリアルを既に実行している場合は、この手順をスキップしてに移動することが[Contoso ソリューションの作成](../../adapters-and-accelerators/accelerator-rosettanet/creating-the-contoso-solution.md)です。 このチュートリアルで使う証明書を生成して使用するには、以下のトピックの順番で手順を実行します。  
+# <a name="generating-and-enabling-certificates"></a>生成と証明書の有効化
+このチュートリアルでは、署名し、Contoso と Fabrikam 組織によって送信されたメッセージの暗号化に証明書を使用します。 ダブル アクション チュートリアルを既に完了この手順をスキップしに移動する可能性があります[Contoso ソリューションの作成](../../adapters-and-accelerators/accelerator-rosettanet/creating-the-contoso-solution.md)です。 生成して、証明書を使用して、このチュートリアルでは、次のトピックの手順に従います。  
   
--   [手順 1: 証明機関の作成](../../adapters-and-accelerators/accelerator-rosettanet/step-1-creating-a-certification-authority.md)  
+-   [ステップ 1: 証明機関の作成](../../adapters-and-accelerators/accelerator-rosettanet/step-1-creating-a-certification-authority.md)  
   
--   [手順 2: パブリックおよびプライベート証明書の作成](../../adapters-and-accelerators/accelerator-rosettanet/step-2-creating-public-and-private-certificates.md)  
+-   [手順 2:パブリックおよびプライベート証明書の作成](../../adapters-and-accelerators/accelerator-rosettanet/step-2-creating-public-and-private-certificates.md)  
   
--   [手順 3: パブリックおよびプライベート証明書のインポート](../../adapters-and-accelerators/accelerator-rosettanet/step-3-importing-public-and-private-certificates.md)  
+-   [ステップ 3:パブリック証明書とプライベート証明書のインポート](../../adapters-and-accelerators/accelerator-rosettanet/step-3-importing-public-and-private-certificates.md)  
   
--   [手順 4: IIS でレイヤーをソケット セキュリティで保護を有効にします。](../../adapters-and-accelerators/accelerator-rosettanet/step-4-enabling-secure-sockets-layer-in-iis.md)  
+-   [手順 4:IIS での SSL (Secure Sockets Layer) の有効化](../../adapters-and-accelerators/accelerator-rosettanet/step-4-enabling-secure-sockets-layer-in-iis.md)  
   
 > [!IMPORTANT]
->  これらの手順は、ダブル アクション チュートリアルにあります。 各手順を完了したら、このトピックに戻り、プライベート プロセス チュートリアルを続行します。  
+>  これらの手順では、ダブル アクション チュートリアルです。 各手順を完了するには、プライベート プロセス チュートリアルを続行するには、このトピックに戻ります。  
   
 ## <a name="see-also"></a>参照  
  [Contoso ソリューションの作成](../../adapters-and-accelerators/accelerator-rosettanet/creating-the-contoso-solution.md)

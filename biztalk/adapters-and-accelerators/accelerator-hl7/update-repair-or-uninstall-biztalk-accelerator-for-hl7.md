@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a63f015541c93f1fb2000eed064aaa50df0fca86
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9d9ab8aa171c814ed353e289911c31e8c08fcb11
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36977315"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65286415"
 ---
 # <a name="update-repair-or-uninstall-biztalk-accelerator-for-hl7"></a>更新、修復、または for HL7 の BizTalk アクセラレータのアンインストール
 
@@ -50,7 +50,7 @@ ms.locfileid: "36977315"
   
 6. **[インストール]** を選択します。  
   
-7. 完了したら、**[完了]** を選択します。  
+7. 完了すると、選択**完了**します。  
 
 ## <a name="repair-an-existing-installation"></a>既存のインストールを修復します。
 [!INCLUDE[btaBTAHL7NoNumber](../../includes/btabtahl7nonumber-md.md)]ウィザードが見つからないか壊れているファイル、ショートカット、またはレジストリ エントリを修正して、インストールを修復します。  
@@ -75,7 +75,7 @@ ms.locfileid: "36977315"
 > [!IMPORTANT]
 >  ある場合、受信場所または送信ポートの MLLP トランスポートの種類を使用して、BTAHL7 セットアップの BTAHL7 のアンインストール時に MLLP アダプターは削除されません。 アンインストールする前に削除のすべての受信場所または送信ポートの MLLP トランスポートを使用しています。 または、別の型 MLLP からトランスポートの種類を変更します。 次に、アンインストール、MLLP アダプターが削除されます。  
       
-1. **[プログラムと機能]** を開きます。  
+1. 開いている**プログラムと機能**します。  
   
 2. 選択[!INCLUDE[btaBTAHL7NoNumber](../../includes/btabtahl7nonumber-md.md)]、し、**アンインストール**します。  
   

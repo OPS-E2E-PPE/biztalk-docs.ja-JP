@@ -23,12 +23,12 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f0f33a484d67981bb72908243b82e7835e0390e3
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 527929bbd78c463bf5ef7eb97bc3bcc06d16fe0e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37016116"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65326689"
 ---
 # <a name="managing-hosts-and-service-accounts"></a>ホストとサービス アカウントの管理
 BizTalk Server の構成が済んだら、Windows グループおよびユーザー アカウントを管理する必要があります。 ここでは、BizTalk Server に必要なアカウントを管理する方法について説明します。  
@@ -46,9 +46,9 @@ BizTalk Server の構成が済んだら、Windows グループおよびユーザ
   
 - ホストに関連付けられている Windows グループに変更を加える  
   
-  完全な一覧と、グループと BizTalk Server でユーザー アカウントの説明では、[Windows グループと BizTalk Server でのユーザー アカウント](../core/windows-groups-and-user-accounts-in-biztalk-server.md)を参照してください。  
+  完全な一覧と、グループと BizTalk Server でユーザー アカウントの説明では、次を参照してください。 [Windows グループと BizTalk Server でのユーザー アカウント](../core/windows-groups-and-user-accounts-in-biztalk-server.md)します。  
   
-  最低限のセキュリティ ユーザー権利の管理タスクの詳細については、[最小セキュリティ ユーザー権限](../core/minimum-security-user-rights.md)を参照してください。  
+  最低限のセキュリティ ユーザー権利の管理タスクの詳細については、次を参照してください。[最小セキュリティ ユーザー権限](../core/minimum-security-user-rights.md)します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

@@ -19,12 +19,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4a1c9d43ba83e6b5b861662f268aeac561e3d377
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f3d35008b2dcb579ff412af4a6d067da3c9b3959
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36998699"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65284302"
 ---
 # <a name="creating-or-editing-a-home-organization"></a>作成またはホーム組織を編集します。
 ここでは、ホーム組織の作成方法または編集方法について説明します。 ホーム組織の構成では、組織の説明と分類、発信元の否認不可期間の設定、および連絡先情報の提供を行います。  
@@ -37,10 +37,10 @@ ms.locfileid: "36998699"
   
 |タブ|設定|使用方法|  
 |---------|-------------|-----------|  
-|**全般**|**名前**|ホーム組織の名前。<br /><br /> 必須フィールド。<br /><br /> 最大長: 255|  
+|**全般**|**名前**|ホーム組織の名前。<br /><br /> 必須フィールド。<br /><br /> 最大長:255|  
 |**全般**|**GBI**|ホーム組織のグローバル ビジネス ID (GBI)。 これで、9 桁の数字にする必要があり、DUNS 番号に対応する必要があります。<br /><br /> 必須フィールド。|  
 |**全般**|**[説明]**|ホーム組織の識別に役立つ説明。|  
-|**全般**|**ホーム組織の分類**|組織の性質。<br /><br /> **エンドユーザー**、**政府機関**、 **Financier**、**製造元**、**小売業者**、 **買い物客**、**フォワーダーの運賃**、または**Marketplace**します。<br /><br /> アグリーメントの [カスタム プロパティ] タブで HPCC カスタム プロパティを入力すると、メッセージの Service Header に含まれるホーム組織の分類に別の値を入力し、このプロパティをオーバーライドすることができます。 詳細については、[を作成または編集するアグリーメント](../../adapters-and-accelerators/accelerator-rosettanet/creating-or-editing-an-agreement.md)を参照してください。|  
+|**全般**|**ホーム組織の分類**|組織の性質。<br /><br /> **エンドユーザー**、**政府機関**、 **Financier**、**製造元**、**小売業者**、 **買い物客**、**フォワーダーの運賃**、または**Marketplace**します。<br /><br /> アグリーメントの [カスタム プロパティ] タブで HPCC カスタム プロパティを入力すると、メッセージの Service Header に含まれるホーム組織の分類に別の値を入力し、このプロパティをオーバーライドすることができます。 詳細については、次を参照してください。[を作成または編集するアグリーメント](../../adapters-and-accelerators/accelerator-rosettanet/creating-or-editing-an-agreement.md)します。|  
 |**連絡先のプロパティ**|**連絡先の名前**|ホーム組織での連絡先の名前。<br /><br /> 必須フィールド。|  
 |**連絡先のプロパティ**|**[電子メール アドレス]**|ホーム組織での連絡先の電子メール アドレス。<br /><br /> 必須フィールド。|  
 |**連絡先のプロパティ**|**電話番号**|ホーム組織での連絡先の電話番号。<br /><br /> 必須フィールド。|  

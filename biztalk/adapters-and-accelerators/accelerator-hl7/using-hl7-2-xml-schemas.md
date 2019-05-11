@@ -16,12 +16,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6758be134043c77138e37960641a54c0aff8455b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7e14e0d77f5aa357b303d10c70d1867e45407dff
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36982035"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65286359"
 ---
 # <a name="using-hl7-2xml-schemas"></a>HL7 2. XML スキーマの使用
 このセクションでは、Microsoft でサポートされている正常性レベル 7 (HL7) の標準の 2. の XML バージョンをについて説明します[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]します。  

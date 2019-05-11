@@ -1,5 +1,5 @@
 ---
-title: '手順 14: Web サービスとしてのオーケストレーションの公開 |Microsoft Docs'
+title: 手順 14:Web サービスとしてのオーケストレーションの公開 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -19,14 +19,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 64bcc47364cca427f2fc02a807528e7105a40837
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f168acb351dc1546b304a5c0f8226b00aab9b213
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36992083"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65288861"
 ---
-# <a name="step-14-publish-the-orchestration-as-a-web-service"></a>手順 14: Web サービスとしてのオーケストレーションを公開します。
+# <a name="step-14-publish-the-orchestration-as-a-web-service"></a>手順 14:オーケストレーション Web サービスとして公開します
 この手順では、BizTalk Web サービス公開ウィザードを使用して、オーケストレーションを Web サービスとして公開します。  
   
  Web サービスとしてのオーケストレーションを公開する前に、BizTalk データベースにアクセスできるように、[biztalkserverisolatedhost] のログオン アカウントが、BizTalk 分離ホスト ユーザー グループの一部があることを確認する必要があります。 これは、機能は、このチュートリアルでは、Web サービス公開ウィザードによって作成される SOAPReceivePort 受信場所の受信ハンドラーは、[biztalkserverisolatedhost]、[biztalkserverapplication] ではないため、必要です。 受信ハンドラーは、SOAP アダプタは BizTalk プロセスではなく、IIS プロセスで実行されるので、BizTalkServerIsolatedHost が。  
@@ -65,7 +65,7 @@ ms.locfileid: "36992083"
   
 13. 右クリック**WebService_BTAHL7_Project_Proxy/BTAHL7_Project_Doorbell_Orchestration_SOAPReceivePort**、 をクリックし、**を有効にする**します。  
   
-    続行する[手順 15: 構成、送信ポートと受信ポート](../../adapters-and-accelerators/accelerator-hl7/step-15-configure-the-send-and-receive-ports.md)します。  
+    続行する[手順 15。構成、送信ポートと受信ポート](../../adapters-and-accelerators/accelerator-hl7/step-15-configure-the-send-and-receive-ports.md)します。  
   
 ## <a name="see-also"></a>参照  
  [メッセージ強化のチュートリアル](../../adapters-and-accelerators/accelerator-hl7/message-enrichment-tutorial.md)

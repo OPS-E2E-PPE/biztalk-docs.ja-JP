@@ -18,19 +18,19 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f6b29d8c9c770893fd78769b86266ce33e31a336
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 19e7b30570fe4d561a704d6760846e01b3f5f7f9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22211130"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65282315"
 ---
 # <a name="rnif-standard"></a>RNIF 規格
 RNIF (RosettaNet Implementation Framework) 規格では、システムが RosettaNet メッセージを転送する方法が規定されています。 RNIF 規格は、堅牢な転送、ルーティング、パッケージ化、およびセキュリティの規格です。 RosettaNet 認定を受けるためには、すべての RosettaNet メッセージング システムが RNIF 規格に準拠している必要があります。  
   
  RNIF 規格では、メッセージ構造、受信確認の必要性、MIME (Multipurpose Internet Mail Extensions) エンコード、およびデジタル署名が規定されています。 RNIF のコア規格には、認証、承認、暗号化、および否認不可についての要件が含まれています。 RNIF 規格は、HTTP、MIME、および XML の各規格に基づいています。 RNIF 規格では、プラットフォームや使用アプリケーションは指定されていません。  
   
- [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]2 つのバージョンの RNIF を実装します。 [RNIF Specification v02.00.01] と RNIF Specification v1.1 です。 RNIF 2.01 では、暗号化、添付ファイル、および同期トランザクションを含む、RNIF 1.1 でサポートされているもの以外の重要な機能を追加します。 RNIF 2.0 には RNIF 1.1 との下位互換性はありません。  
+ [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] 2 つのバージョンの RNIF を実装します。RNIF Specification v02.00.01 と RNIF Specification v1.1 します。 RNIF 2.01 では、暗号化、添付ファイル、および同期トランザクションを含む、RNIF 1.1 でサポートされているもの以外の重要な機能を追加します。 RNIF 2.0 には RNIF 1.1 との下位互換性はありません。  
   
 ## <a name="messaging-framework-patterns"></a>メッセージング フレームワーク パターン  
  次の表に、メッセージング フレームワーク パターンおよび同期メッセージ交換に関する RNIF のサポートを示します。 シングル アクション メッセージとは、応答を含まないメッセージです。ダブル アクション メッセージとは、要求と応答が含まれるメッセージです。  

@@ -16,15 +16,15 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4fc4141e248047b3add5bae6259f1039b75a40bb
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 79f078800926852be5dcd24679157b000dab1c19
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36969091"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65279702"
 ---
 # <a name="transaction-support"></a>トランザクションのサポート
-通常、ルール エンジンではトランザクションがサポートされません。 使用して、トランザクション的に、データベースを更新するただし、 **DataConnection**オブジェクトの次の手順で示すようにします。  
+ルール エンジンでは、トランザクションを一般にサポートしません。 使用して、トランザクション的に、データベースを更新するただし、 **DataConnection**オブジェクトの次の手順で示すようにします。  
   
 1. 作成、 **SqlConnection**接続文字列を使用してオブジェクトし、の接続を開きます。  
   
@@ -57,7 +57,7 @@ ms.locfileid: "36969091"
    policy.Execute(facts);    
    ```  
   
-5. 呼び出す、 **Update**データ接続オブジェクトのメソッド。 ポリシーの実行時に処理される更新は、すべてメモリ内だけで実行されます。 呼び出す必要があります、**更新**データベースを更新するデータ接続オブジェクトのメソッド。  
+5. 呼び出す、 **Update**データ接続オブジェクトのメソッド。 すべての更新プログラムは、メモリ内にのみ完了したら、ポリシーの実行中に実行します。 呼び出す必要があります、**更新**データベースを更新するデータ接続オブジェクトのメソッド。  
   
    ```  
    dc.Update();  
@@ -82,7 +82,7 @@ ms.locfileid: "36969091"
    policy.Dispose();  
    ```  
   
-   これまでの全手順を含めたコードを次に示します。  
+   次のコードでは、すべての手順で完全なコードを示します。  
   
 ```  
 SqlConnection connection = new SqlConnection("Initial Catalog=Northwind;Data Source=(local);Integrated Security=SSPI;");  
@@ -108,6 +108,6 @@ policy.Dispose();
   
 -   使用することも、 **OleDbConnection**と**OleDbTransaction**オブジェクトを使用してではなく、 **SqlConnection**と**SqlTransaction**トランザクション的にデータベースの更新を実行するオブジェクト。  
   
--   ポリシーによって加えられる変更は、すべてメモリ内で実行されます。 呼び出す必要があります、**更新**メソッドを**DataConnection**データベースを更新するオブジェクト。  
+-   ポリシーから行われたすべての変更は、メモリ内で実行されます。 呼び出す必要があります、**更新**メソッドを**DataConnection**データベースを更新するオブジェクト。  
   
 -   コミットするか、呼び出すことによってトランザクションをロールバックして、**コミット**または**ロールバック**のメソッド、 **DataConnection**それぞれオブジェクトします。

@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c675f2c6a9f558be597f7765ec936daf0a5a2dde
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 27b52b9ca48b381cf8032c5b33600ce349ce054c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37001101"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65279043"
 ---
 # <a name="how-the-scatter-gather-sample-works"></a>スキャッター/ギャザー サンプルのしくみ
 サンプル アプリケーションは、スキャッター/ギャザー itinerary ファイルから読み込まれたスケジュールを格納している SOAP ヘッダーのセットを構築、ディスクから、指定されたメッセージ ファイルを読み込み、itinerary ヘッダーをメッセージに追加および入り口のを通じて ESB に送信します処理しています。 旅行プランは、応答を生成する場合、アプリケーションはこれを収集し、アプリケーション ウィンドウに表示します。  

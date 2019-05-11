@@ -15,12 +15,12 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ff5caa9120be64e919ab4b6050f8df0c62fa33a6
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5035be00b043b7ea35c76fcecabd50663ef91f26
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37010611"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65335858"
 ---
 # <a name="how-to-move-the-bam-primary-import-database"></a>BAM プライマリ インポート データベースを移動する方法
 ここでは、BAM プライマリ インポート データベースを他のサーバーに移動する手順について説明します。  
@@ -30,7 +30,7 @@ ms.locfileid: "37010611"
   
 ### <a name="to-move-the-bam-primary-import-database"></a>BAM プライマリ インポート データベースを移動するには  
   
-1. BizTalk Server サービスをすべて停止します。 詳細については、[開始、停止、一時停止、再開、または BizTalk Server サービスを再起動する方法](../core/how-to-start-stop-pause-resume-or-restart-biztalk-server-services.md)を参照してください。  
+1. BizTalk Server サービスをすべて停止します。 詳細については、次を参照してください。[開始、停止、一時停止、再開、または BizTalk Server サービスを再起動する方法](../core/how-to-start-stop-pause-resume-or-restart-biztalk-server-services.md)します。  
   
 2. IIS サービスを停止します。  
   
@@ -141,11 +141,11 @@ ms.locfileid: "37010611"
   
     6.  新しいサーバーおよびデータベースに対応するように、次の行を変更します。  
   
-         PrimaryImportServer ="*\<ServerName\>*"  
+         PrimaryImportServer= "*\<ServerName\>*"  
   
-         PrimaryImportDatabase ="*\<DatabaseName\>*"  
+         PrimaryImportDatabase = "*\<DatabaseName\>*"  
   
-17. BizTalk Server サービスをすべて開始します。 詳細については、[開始、停止、一時停止、再開、または BizTalk Server サービスを再起動する方法](../core/how-to-start-stop-pause-resume-or-restart-biztalk-server-services.md)を参照してください。  
+17. BizTalk Server サービスをすべて開始します。 詳細については、次を参照してください。[開始、停止、一時停止、再開、または BizTalk Server サービスを再起動する方法](../core/how-to-start-stop-pause-resume-or-restart-biztalk-server-services.md)します。  
   
 18. IIS サービスを開始します。  
   

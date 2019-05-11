@@ -1,5 +1,5 @@
 ---
-title: '手順 1: Contoso Price and Availability Request の新しい BizTalk ソリューションの作成 |Microsoft Docs'
+title: 手順 1:Contoso Price and Availability Request の新しい BizTalk ソリューションの作成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,15 +14,15 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a4d48087411241f6ba26b55d4b20f6dce6a255e5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ad2b35b6b687c820f872bdb63087cca07ead5a4c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36971579"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65281682"
 ---
-# <a name="step-1-creating-a-new-biztalk-solution-for-the-contoso-price-and-availability-request"></a>手順 1: Contoso Price and Availability Request の新しい BizTalk ソリューションを作成します。
-この手順で Microsoft を作成する[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]Contoso Price and Availability Request プロジェクトのソリューションです。 このプロジェクトには、3A2 Price and Availability メッセージの要求および応答のための、スキーマとマップが含まれます。  
+# <a name="step-1-creating-a-new-biztalk-solution-for-the-contoso-price-and-availability-request"></a>手順 1:Contoso Price and Availability Request の新しい BizTalk ソリューションの作成
+この手順で Microsoft を作成する[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]Contoso Price and Availability Request プロジェクトのソリューションです。 このプロジェクトは、スキーマと、要求のマップと、3 a 2 Price and Availability メッセージの応答に含まれます。  
   
 ### <a name="to-create-a-blank-solution"></a>空のソリューションを作成するには  
   
@@ -43,4 +43,4 @@ ms.locfileid: "36971579"
 3.  **名前**ボックスに「 **ContosoPriceAndAvailability**プロジェクト名として。 **ソリューション**、**ソリューションに追加**します。 をクリックして**OK**を新しいプロジェクトを開きます。  
   
 ## <a name="see-also"></a>参照  
- [手順 2: BizTalk エディターを使用した Price and Availability プロジェクト用の Contoso LOB アプリケーション スキーマの作成](../../adapters-and-accelerators/accelerator-rosettanet/step-2-create-contoso-lob-application-schema-for-price-and-availability.md)
+ [手順 2:BizTalk エディターを使用した Price and Availability プロジェクト用の Contoso LOB アプリケーション スキーマの作成](../../adapters-and-accelerators/accelerator-rosettanet/step-2-create-contoso-lob-application-schema-for-price-and-availability.md)

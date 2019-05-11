@@ -1,5 +1,5 @@
 ---
-title: '手順 4: 作成、受信ポートのバッチ メッセージを受け入れる |Microsoft Docs'
+title: 手順 4:作成、受信ポートのバッチ メッセージを受け入れる |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9a0d2f6f36ee34f93e8a5069aadc1958837af00c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4fca10f31c3de2d82b769cb63a732c7c144a465a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36966811"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65288207"
 ---
-# <a name="step-4-create-a-receive-port-for-accepting-the-batch-message"></a>手順 4: 作成、受信ポートのバッチ メッセージを受け入れる
+# <a name="step-4-create-a-receive-port-for-accepting-the-batch-message"></a>手順 4:作成、受信ポートのバッチ メッセージを受け入れる
 この手順では、作成し、受信のバッチを受信するポートを構成します。  
 
  作成要求-応答 (双方向) の受信ポート、シナリオには生成が含まれていますので、アプリケーションに受け入れ、バッチ内の個々 のメッセージの受信確認。 双方向のモードでは、受信パイプラインの前のメッセージの受信確認 (ACK) が生成されるまで、MLLP 受信アダプターは、新しい着信メッセージを受け入れません。  
@@ -74,4 +74,4 @@ ms.locfileid: "36966811"
 11. 右クリックし、作成した受信場所を有効にし、**を有効にする**します。  
 
 ## <a name="next-step"></a>次の手順
-[手順 5: メッセージを配信する送信ポートの作成](../../adapters-and-accelerators/accelerator-hl7/step-5-create-a-send-port-to-deliver-messages.md)
+[手順 5:メッセージを配信する送信ポートの作成](../../adapters-and-accelerators/accelerator-hl7/step-5-create-a-send-port-to-deliver-messages.md)

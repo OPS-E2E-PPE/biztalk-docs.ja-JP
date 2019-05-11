@@ -1,5 +1,5 @@
 ---
-title: '手順 2: V2.3.1 の一般的なスキーマを作成する |Microsoft Docs'
+title: 手順 2:V2.3.1 の一般的なスキーマを作成する |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,14 +15,14 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e6331538a3dd46dcd45d63bcbdbc3b8f19b2c531
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 869eadf2c52b9def861aa93d451ca8c53bfcb26e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36995411"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65289009"
 ---
-# <a name="step-2-create-common-schemas-for-v231"></a>手順 2: V2.3.1 の一般的なスキーマを作成します。
+# <a name="step-2-create-common-schemas-for-v231"></a>手順 2:V2.3.1 の一般的なスキーマを作成します。
 V2.3.1 スキーマは、頻繁に参照されるスキーマは、メッセージ インスタンスの検証に使用します。  
   
 ### <a name="to-create-a-common-schema-for-v231"></a>V2.3.1 の一般的なスキーマを作成するには  
@@ -57,4 +57,4 @@ V2.3.1 スキーマは、頻繁に参照されるスキーマは、メッセー�
     > [!NOTE]
     >  適切なメッセージが表示されない場合は、使用[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]スキーマのトラブルシューティングを行う。  
   
-    続行する[手順 3: トリガー イベント (メッセージ) スキーマを追加](../../adapters-and-accelerators/accelerator-hl7/step-3-add-a-trigger-event-message-schema.md)します。
+    続行する[手順 3。トリガー イベント (メッセージ) スキーマを追加](../../adapters-and-accelerators/accelerator-hl7/step-3-add-a-trigger-event-message-schema.md)します。

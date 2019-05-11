@@ -18,12 +18,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dd026b30a1a13f92019d3f275811fab80ac687e1
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 73c5d6e11ca1840875de9b279136ef1b141b770a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36994683"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65291884"
 ---
 # <a name="hl7-2x-common-schema-files"></a>HL7 2.X の共通スキーマ ファイル
 各 HL7 メッセージ スキーマでは、データ型、セグメント、およびテーブルのスキーマの定義を提供する共通のスキーマ ファイルが必要です。 HL7 のバージョンごとにこれらの共通スキーマ ファイルが定義されている 2.X。 Microsoft では、配置されたプロジェクト[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]メッセージ スキーマを含む 3 つの一般的なスキーマを含む一般的なプロジェクトの配置済みのインスタンスを参照する必要があります。  

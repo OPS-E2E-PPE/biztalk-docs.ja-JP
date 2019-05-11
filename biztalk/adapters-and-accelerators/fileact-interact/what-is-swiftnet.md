@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 02f09a1ccc9b67b084a6f683125bacaec5eae77c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a46f793f55d92d020c989569bcbc2d7e5a74c61b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36989339"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65364080"
 ---
 # <a name="what-is-swiftnet"></a>SWIFTNet とは何ですか。
 汎用の財務業界の業界標準のソリューションとしては、SWIFTNet はグローバル金融コミュニティに参加しているすべての教育機関のすべての接続されているアプリケーションへのアプリケーションに依存しない、1 つのウィンドウ インターフェイスを提供します。 各サービス管理者のビジネス ポリシーの決定によって、インフラストラクチャの技術的な制限ではなく、実際のアクセスが制御されます。  
@@ -52,7 +52,7 @@ SWIFTNet を使用して**SWIFTNet リンク**(SNL) SWIFTNet サービス、お�
   
  SNL は、ビジネス アプリケーション コンポーネント間の疎結合のクライアント/サーバーの関係を確立します。 メソッドまたは関数を直接呼び出すのではなく、相互作用にはメッセージ指向: 構造化されたメッセージはクライアントとサーバー間で渡されます。 一般に SWIFTNet サービス用に設計されたビジネス アプリケーションは、クライアントとサーバーのセットで構成されます。 同じクライアントまたは同じサーバー プロセスに複数回を開始できます。 のどのプロセス インスタンスが同じアプリケーションの受信メッセージ要求の配信を予測することはできませんに注意してください。 クライアント プロセス内で複数のスレッドは、SwCall API 関数を呼び出すことができます。 サーバー プロセスは、複数のスレッドも; を持つことができます。ただし、1 つのスレッドは SwCallback を呼び出すことができます。 クライアントとサーバー プロセスは、同じプロセス内で組み合わせることはできません。  
   
- SNL は、一連の高可用性と高スループットの環境用に設計されたトランスポート レベルの機能を提供します。 次のような機能があります。  
+ SNL は、一連の高可用性と高スループットの環境用に設計されたトランスポート レベルの機能を提供します。 これらの機能は次のとおりです。  
   
 - 負荷分散  
   
@@ -62,7 +62,7 @@ SWIFTNet を使用して**SWIFTNet リンク**(SNL) SWIFTNet サービス、お�
   
 - セキュリティ関数のアプリケーション ソフトウェアはビジネスによってエンド ツー エンドのセキュリティ (ユーザー アプリケーションにユーザー アプリケーション) を確立することが必要です。  
   
-  C++ または Java を使用して、ソース コード レベルでのプログラミングの観点からは、2 つの関数: SwCall と SwCallback します。 SwCall は、SWIFTNet を通じてサーバー アプリケーションにアクセスするクライアント アプリケーションによって使用されます。 SwCallback は、SWIFTNet 経由のクライアントに応答するサーバー アプリケーションによって使用されます。  
+  ソース コード レベルを使用してでのプログラミングの観点からC++だけ 2 つの関数は、Java または。SwCall SwCallback. SwCall は、SWIFTNet を通じてサーバー アプリケーションにアクセスするクライアント アプリケーションによって使用されます。 SwCallback は、SWIFTNet 経由のクライアントに応答するサーバー アプリケーションによって使用されます。  
   
   SwCall と SwCallback 関数は、構造化された XML メッセージとの間の SWIFTNet を渡すことによって SWIFTNet の機能にアクセスします。 SNL には実行時に、両方のソフトウェア ライブラリが含まれています: ビジネス アプリケーションのクライアントまたはサーバーのプロセスと同じアドレス空間内のコードを実行します-アドレス空間を独立したプロセス (デーモンまたはサービス) が自分で実行されるとします。 ソフトウェア ライブラリは、SNL Api を介してアクセスできます。  
 
@@ -80,5 +80,5 @@ SWIFTAlliance ゲートウェイ (SAG) は、インターフェイスの SWIFTNe
  [InterAct アダプターとは](../../adapters-and-accelerators/fileact-interact/what-is-the-interact-adapter.md)  
  [BizTalk FileAct および InterAct アダプターのエンド ツー エンド チュートリアル](../../adapters-and-accelerators/fileact-interact/biztalk-fileact-and-interact-adapters-end-to-end-tutorial.md)
  
- ## <a name="see-also"></a>参照
+ ## <a name="see-also"></a>関連項目
  [FileAct および InterAct アダプターのアーキテクチャを理解する](../../adapters-and-accelerators/fileact-interact/understanding-fileact-and-interact-adapter-architecture.md)

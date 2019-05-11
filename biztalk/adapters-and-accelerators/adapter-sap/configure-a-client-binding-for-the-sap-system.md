@@ -1,5 +1,5 @@
 ---
-title: バインディングの SAP システムをクライアントの構成 |Microsoft ドキュメント
+title: バインドの SAP システムのクライアントの構成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,22 +16,22 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e1e9a4f84dbf98a17b2c1a918e30ab85b8e86c13
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 6788d735a1c2d91937473661365e7da393426b65
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25963856"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373958"
 ---
-# <a name="configure-a-client-binding-for-the-sap-system"></a>SAP システムのバインディングをクライアントを構成します。
-WCF クライアント クラスを生成した後を WCF クライアント (インスタンス) を作成し、使用するには、そのメソッドを呼び出す、[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]です。 操作用の WCF クライアント クラスとヘルパー コードを生成する方法についてを[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]公開を参照してください[WCF クライアントまたは SAP ソリューションの成果物のための WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-sap/generate-a-wcf-client-or-a-wcf-service-contract-for-sap-solution-artifacts.md)です。  
+# <a name="configure-a-client-binding-for-the-sap-system"></a>クライアントの SAP システムのバインドを構成します。
+WCF クライアント クラスを生成した後は、WCF クライアント (インスタンス) の作成し、使用するメソッドの呼び出し、[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]します。 操作のための WCF クライアント クラスとヘルパー コードを生成する方法についてを[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]公開を参照してください[WCF クライアントまたは SAP ソリューションの成果物の WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-sap/generate-a-wcf-client-or-a-wcf-service-contract-for-sap-solution-artifacts.md)します。  
   
- WCF クライアントを作成するには、エンドポイント アドレスとバインディングを指定する必要があります。 エンドポイントのアドレスは有効な SAP 接続 URI を含める必要があり、バインディングは、SAP バインドのインスタンスである必要があります (**SAPBinding**)。 SAP 接続 URI の詳細については、次を参照してください。 [SAP システム接続 URI を作成する](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md)です。  
+ WCF クライアントを作成するには、エンドポイント アドレスとバインディングを指定する必要があります。 エンドポイント アドレスが有効な SAP 接続 URI を含める必要があり、バインドは、SAP バインドのインスタンスである必要があります (**SAPBinding**)。 SAP 接続 URI の詳細については、次を参照してください。 [SAP システム接続 URI の作成](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md)です。  
   
- コードまたは構成ファイルでは、SAP バインドとエンドポイント アドレスを指定できます。 使用すると、[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]プロジェクトの作成も構成ファイル (app.config) で WCF クライアント クラスを生成します。 このファイルには、バインドのプロパティおよび接続情報 (資格情報) を除くで SAP システムに接続するときに指定したを反映する構成設定が含まれています、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]です。  
+ コードまたは構成ファイルでは、SAP バインドとエンドポイント アドレスを指定できます。 使用すると、[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]プロジェクトの作成も構成ファイル (app.config) で WCF クライアント クラスを生成します。 このファイルに情報を反映するバインドのプロパティと接続 (資格情報) を除くで SAP システムに接続するときに指定した構成設定が含まれています、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]します。  
   
-## <a name="specifying-the-binding-and-endpoint-address-in-code"></a>コードでのバインディングとエンドポイント アドレスの指定  
- 次のコードでは、コード内のバインディングとエンドポイント アドレスを指定することによって、WCF クライアントを作成する方法を示します。 使用して SAP システムの資格情報を指定することをお勧め、 **ClientCredentials**接続エンドポイントのアドレスに指定された URI ではなく、WCF クライアントのプロパティです。  
+## <a name="specifying-the-binding-and-endpoint-address-in-code"></a>バインディングとエンドポイント アドレスを指定するコード  
+ 次のコードでは、コードでバインディングとエンドポイント アドレスを指定することで、WCF クライアントを作成する方法を示します。 使用して、SAP システムの資格情報を指定することをお勧め、 **ClientCredentials**接続エンドポイントのアドレスの指定された URI ではなく、WCF クライアントのプロパティ。  
   
 ```  
 // A WCF client that targets an RFC is created  
@@ -47,8 +47,8 @@ rfcClient.ClientCredentials.UserName.Password = "YourPassword";
 rfcClient.Open();  
 ```  
   
-## <a name="specifying-the-binding-and-endpoint-address-in-a-configuration-file"></a>構成ファイルでのバインディングとエンドポイント アドレスの指定  
- 次のコードでは、app.config ファイルでバインディングとエンドポイント アドレスを指定して、WCF クライアントを作成する方法を示します。  
+## <a name="specifying-the-binding-and-endpoint-address-in-a-configuration-file"></a>構成ファイルでバインディングとエンドポイント アドレスを指定します。  
+ 次のコードでは、app.config ファイルでバインディングとエンドポイント アドレスを指定することで、WCF クライアントを作成する方法を示します。  
   
 ```  
 // A WCF client that targets an RFC is created  
@@ -61,7 +61,7 @@ rfcClient.ClientCredentials.UserName.Password = "YourPassword";
 rfcClient.Open();  
 ```  
   
- 次の XML は、構成ファイルで、EMP テーブル用に作成された、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]です。 このファイルには、前の例で参照されているクライアント エンドポイント構成が含まれています。  
+ 次の XML は、EMP テーブルの作成、構成ファイル、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]します。 このファイルには、前の例で参照されているクライアント エンドポイント構成が含まれています。  
   
 ```  
 <?xml version="1.0" encoding="utf-8"?>  
@@ -88,12 +88,12 @@ rfcClient.Open();
 </configuration>  
 ```  
   
- プロジェクトに複数の WCF クライアントがある場合があります複数のクライアント構成ファイルで定義されているエンドポイント エントリ。 各 WCF クライアント エントリが設定されます (Rfc や Trfc); ターゲット SAP システムの成果物とバインド構成に基づき、一意の名前たとえば、"SAPBinding_Rfc"です。 場合は、プロジェクトで、WCF クライアントを作成する複数回接続すると、複数のバインド構成エントリが作成接続ごとに 1 つです。 これらのバインディングの構成エントリの名前は次のようになります: SAPBinding1、SAPBinding2 などです。 特定の接続中に作成される各クライアント エンドポイント エントリでは、その接続中に作成されたバインド エントリを参照します。  
+ プロジェクトには、複数の WCF クライアントがある場合があります複数のクライアント構成ファイルで定義されているエンドポイントのエントリ。 WCF クライアントの各エントリは、バインド構成とターゲットの SAP システムのアイテム (Rfc、Trfc); などに基づいて一意の名前になりますたとえば、"SAPBinding_Rfc"です。 プロジェクトで、WCF クライアントを作成するための複数回を接続する場合は、複数のバインド構成エントリが作成されます、接続ごとに 1 つ。 これらのバインド構成エントリは次の方法で名前が付けられます。SAPBinding1、SAPBinding2、しにします。 特定の接続中に作成される各クライアントのエンドポイント エントリは、その接続中に作成されたバインド エントリを参照します。  
   
 > [!IMPORTANT]
->  [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]同じサービス コントラクトのさまざまな操作として、同じ種類 (RFC、TRFC、IDOC など) のさまざまな SAP アイテムを表示します。 例については、次の 2 つの異なる Rfc、RFC_EXAMPLE_A および RFC_EXAMPLE_B、両方が提示される同じサービス コントラクト ("Rfc") の下。 つまり、両方の Rfc を同じ WCF クライアント クラスによって呼び出されること**RfcClient**、両方の Rfc のパラメーターは、同じ名前空間で宣言することです。 そのため、同じの中に両方の Rfc の WCF クライアントを生成する必要があります[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]ソリューションをビルドするときに、名前空間の競合の発生を回避するセッション (接続)。  
+>  [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]として、同じサービス コントラクトのさまざまなオペレーション (RFC、TRFC、IDOC など)、同じ種類の異なる SAP アイテムを表示します。 たとえば、2 つの異なる Rfc、RFC_EXAMPLE_A および RFC_EXAMPLE_B、両方が提示される同じサービス契約 ("Rfc")。 これは、両方の Rfc を同じ WCF クライアント クラスによって呼び出されることを意味**RfcClient**と同じ名前空間の両方の Rfc パラメーターが宣言されます。 そのため、中に同じ両方 Rfc 用の WCF クライアントを生成する必要があります[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]ソリューションをビルドするときに、名前空間の競合の発生を回避するためにセッション (接続)。  
   
 ## <a name="see-also"></a>参照  
 [WCF サービス モデルを使用して SAP アプリケーションを開発します。](../../adapters-and-accelerators/adapter-sap/develop-sap-applications-using-the-wcf-service-model.md)   
- [WCF クライアントまたは SAP ソリューションの成果物のための WCF サービス コントラクトを生成します。](../../adapters-and-accelerators/adapter-sap/generate-a-wcf-client-or-a-wcf-service-contract-for-sap-solution-artifacts.md)   
+ [WCF クライアントまたは SAP ソリューションの成果物の WCF サービス コントラクトを生成します。](../../adapters-and-accelerators/adapter-sap/generate-a-wcf-client-or-a-wcf-service-contract-for-sap-solution-artifacts.md)   
  [SAP システム接続 URI を作成します。](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md)

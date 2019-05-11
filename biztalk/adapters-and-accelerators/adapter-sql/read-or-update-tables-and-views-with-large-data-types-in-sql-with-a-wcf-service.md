@@ -12,12 +12,12 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a2bfb30c01113e868bd6a662d004639645e29746
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 031e65cc749de34807993e858c066cfc9438cc7b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36992483"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65368555"
 ---
 # <a name="run-operations-on-tables-and-views-with-large-data-types-in-sql-using-the-wcf-service-model"></a>WCF サービス モデルを使用して SQL に大規模なデータ型を持つテーブルとビューで操作を実行します。
 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]アダプター クライアントの読み取りし、は、大規模なデータ型の列のデータを更新する、varchar (max)、nvarchar (max)、または varbinary (max) を有効にします。 このような列からデータを読み取る、アダプターのクライアントは、選択操作を使用できます。 アダプターを挿入またはこのような列にデータを更新するには、セットを公開する\<*column_name* \>操作、 \< *column_name* \>名前を指定します型 varchar (max)、nvarchar (max)、または varbinary (max) 列。  
@@ -49,7 +49,7 @@ ms.locfileid: "36992483"
 ## <a name="how-this-topic-demonstrates-operations-on-large-data-types"></a>ここで大量のデータ型に対する演算をについて説明する方法  
  セットを実行する方法を説明するために\<*column_name* \>大量のデータの型を持つテーブルに対する操作は、テーブルを受け取り**レコード**、列を持つ**Id**と**ドキュメント**:  
   
--   **レコード**サンプルで提供される SQL スクリプトを実行して、すべてのデータのテーブルを作成します。 詳細については、[アダプタ サンプル](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md)を参照してください。  
+-   **レコード**サンプルで提供される SQL スクリプトを実行して、すべてのデータのテーブルを作成します。 詳細については、次を参照してください。[アダプタ サンプル](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md)します。  
   
 -   **Id**列の型は uniqueidentifier とは GUID を受け取ります。 ある、 **Id**列は既に GUID '`438B7B4C-5491-409F-BCC1-78817C399EC3`'。  
   
@@ -59,7 +59,7 @@ ms.locfileid: "36992483"
 >  SQL server の FILESTREAM 操作を示すためには、前提としていますが、**ドキュメント**列が FILESTREAM データを格納できます。  
   
 ## <a name="about-the-examples-used-in-this-topic"></a>このトピックで使用する例について  
- このトピックの例で操作を実行する、**レコード**テーブル。 **レコード**サンプルで提供される SQL スクリプトを実行してテーブルを作成します。 サンプルの詳細については、[アダプタ サンプル](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md)を参照してください。 サンプルについては、 **Records_FILESTREAM_Op**、これは、このトピックに基づいてがで提供されていることも、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]サンプル。  
+ このトピックの例で操作を実行する、**レコード**テーブル。 **レコード**サンプルで提供される SQL スクリプトを実行してテーブルを作成します。 サンプルの詳細については、次を参照してください。[アダプタ サンプル](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md)します。 サンプルについては、 **Records_FILESTREAM_Op**、これは、このトピックに基づいてがで提供されていることも、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]サンプル。  
   
 ## <a name="the-wcf-client-class"></a>WCF クライアント クラス  
  大規模データに対する操作の生成された WCF クライアントの名前の種類を[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]はでは、次の表に示すように、テーブルまたはビューの名前に基づきます。  
@@ -107,7 +107,7 @@ public partial class TableOp_dbo_RecordsClient : System.ServiceModel.ClientBase<
   
 1. Visual Studio で Visual c# プロジェクトを作成します。 このトピックでは、コンソール アプリケーションを作成します。  
   
-2. WCF クライアント クラスを生成、 **SetDocument**操作、**レコード**テーブル。 WCF クライアント クラスを生成する詳細については、[SQL Server のアイテムの WCF クライアントまたは WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-sql/generate-a-wcf-client-or-wcf-service-contract-for-sql-server-artifacts.md)を参照してください。  
+2. WCF クライアント クラスを生成、 **SetDocument**操作、**レコード**テーブル。 WCF クライアント クラスを生成する詳細については、次を参照してください。 [SQL Server のアイテムの WCF クライアントまたは WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-sql/generate-a-wcf-client-or-wcf-service-contract-for-sql-server-artifacts.md)します。  
   
 3. ソリューション エクスプ ローラーへの参照を追加`Microsoft.Adapters.Sql`、 `Microsoft.ServiceModel.Channels`、および`System.Transactions`します。  
   
@@ -129,7 +129,7 @@ public partial class TableOp_dbo_RecordsClient : System.ServiceModel.ClientBase<
    >  FILESTREAM データの操作を行うには、常に Windows 認証を使用して SQL Server に接続する必要があります。 を Windows 認証を使用して接続するには、前のスニペットで示すように、空のユーザー名とパスワードを提供する必要があります。 また、SQL Server への接続に Windows 認証を使用する前に行うことが必要で説明されている手順[による SQL Server を使用して Windows 認証、SQL アダプターに接続する](../../adapters-and-accelerators/adapter-sql/connect-to-sql-server-using-windows-authentication-with-the-sql-adapter.md)します。  
   
    > [!NOTE]
-   >  このスニペットでは、構成ファイルからバインドおよびエンドポイント アドレスを使用します。 これらの値は、コードで明示的に指定できます。 クライアント バインディングを指定する、さまざまな方法の詳細については、[SQL アダプタのクライアントのバインディングを構成する](../../adapters-and-accelerators/adapter-sql/configure-a-client-binding-for-the-sql-adapter.md)を参照してください。  
+   >  このスニペットでは、構成ファイルからバインドおよびエンドポイント アドレスを使用します。 これらの値は、コードで明示的に指定できます。 クライアント バインディングを指定する、さまざまな方法の詳細については、次を参照してください。 [SQL アダプタのクライアントのバインディングを構成する](../../adapters-and-accelerators/adapter-sql/configure-a-client-binding-for-the-sql-adapter.md)します。  
   
 6. 次のスニペットで説明されているように、クライアントを開きます。  
   

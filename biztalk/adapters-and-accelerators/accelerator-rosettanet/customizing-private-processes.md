@@ -16,15 +16,15 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: aa1437d1dbe154f553323077b1c29127c58abdf4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 98fada75af4d94daeb39d94a3178bd3787f7fb86
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37009531"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65283820"
 ---
 # <a name="customizing-private-processes"></a>プライベート プロセスのカスタマイズ
-このセクションでは、サービスのコンテンツを処理するプライベート プロセス オーケストレーションをカスタマイズする方法について説明します。 Microsoft[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]プライベート プロセスとして、組織の内部ビジネス プロセスを実装します。 これらのプロセスは、サービス コンテンツのメッセージ部分を処理するオーケストレーションです。 詳細については、[プライベート プロセス](../../adapters-and-accelerators/accelerator-rosettanet/private-processes.md)を参照してください。  
+このセクションでは、サービスのコンテンツを処理するプライベート プロセス オーケストレーションをカスタマイズする方法について説明します。 Microsoft[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]プライベート プロセスとして、組織の内部ビジネス プロセスを実装します。 これらのプロセスは、サービス コンテンツのメッセージ部分を処理するオーケストレーションです。 詳細については、次を参照してください。[プライベート プロセス](../../adapters-and-accelerators/accelerator-rosettanet/private-processes.md)します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル 2: SAP の RFC BizTalk プロジェクトの移行 |Microsoft Docs'
+title: チュートリアル 2:SAP の RFC BizTalk プロジェクトの移行 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,14 +16,14 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bf741fdbbf996fa54c227cc879c850304413d25f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 76eee4656808c56664f23cd216afeef5f564f9b0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36978987"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65372324"
 ---
-# <a name="tutorial-2-migrating-an-sap-rfc-biztalk-project"></a>チュートリアル 2: SAP の RFC BizTalk プロジェクトを移行します。
+# <a name="tutorial-2-migrating-an-sap-rfc-biztalk-project"></a>チュートリアル 2:SAP の RFC BizTalk プロジェクトを移行します。
 WCF ベースの Microsoft BizTalk Server に同梱されている SAP アダプターの以前のバージョンとは異なる[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]など、多くの点で。  
   
 - BizTalk プロジェクトの作成、デザイン時エクスペリエンス。  
@@ -48,7 +48,7 @@ WCF ベースの Microsoft BizTalk Server に同梱されている SAP アダプ
 >  説明を簡潔にするため、このチュートリアルでは SAP アダプターの以前のバージョンを vPrev SAP アダプターとして指す場合は。 同様に、vPrev SAP アダプターを使用する BizTalk プロジェクトは vPrev BizTalk プロジェクトに参照されます。  
   
 ## <a name="sample-used-for-the-tutorial"></a>このチュートリアルで使用されるサンプル  
- このチュートリアルは、SAP システムでの RFC を呼び出す vPrev BizTalk プロジェクトを移行する方法を示すサンプル (SAP_RFC_Migration) に基づいています。 サンプルが付属、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]します。 詳細については、[アダプタ サンプル](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md)を参照してください。  
+ このチュートリアルは、SAP システムでの RFC を呼び出す vPrev BizTalk プロジェクトを移行する方法を示すサンプル (SAP_RFC_Migration) に基づいています。 サンプルが付属、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]します。 詳細については、次を参照してください。[アダプタ サンプル](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md)します。  
   
 ## <a name="prerequisites"></a>前提条件  
   
@@ -84,11 +84,11 @@ WCF ベースの Microsoft BizTalk Server に同梱されている SAP アダプ
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [手順 1: RFC を呼び出すように vPrev BizTalk プロジェクトを変更する](../../adapters-and-accelerators/adapter-sap/step-1-modify-the-vprev-biztalk-project-for-invoking-an-rfc.md)  
+-   [ステップ 1: RFC を呼び出すように vPrev BizTalk プロジェクトを変更する](../../adapters-and-accelerators/adapter-sap/step-1-modify-the-vprev-biztalk-project-for-invoking-an-rfc.md)  
   
--   [手順 2: BizTalk Server 管理コンソールでオーケストレーションを構成する](../../adapters-and-accelerators/adapter-sap/step-2-configure-the-orchestration-in-biztalk-server-administration-console1.md)  
+-   [手順 2:BizTalk Server 管理コンソールでオーケストレーションを構成する](../../adapters-and-accelerators/adapter-sap/step-2-configure-the-orchestration-in-biztalk-server-administration-console1.md)  
   
--   [手順 3: 移行されたアプリケーションをテストする](../../adapters-and-accelerators/adapter-sap/step-3-test-the-migrated-application6.md)  
+-   [ステップ 3:移行されたアプリケーションをテストする](../../adapters-and-accelerators/adapter-sap/step-3-test-the-migrated-application6.md)  
   
 ## <a name="see-also"></a>参照  
  [SAP アダプター チュートリアル](../../adapters-and-accelerators/adapter-sap/sap-adapter-tutorials.md)

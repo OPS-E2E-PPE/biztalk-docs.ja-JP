@@ -1,5 +1,5 @@
 ---
-title: フラット ファイル スキーマでの処理をケース |Microsoft ドキュメント
+title: フラット ファイル スキーマにおける処理の場合 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,19 +12,19 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2312f00a6dab18fa92c0fed05c5c9fa182d500f9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4103b9f133ffac16b967832325effefba04b5ab2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22231138"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65357606"
 ---
-# <a name="case-handling-in-flat-file-schemas"></a>フラット ファイル スキーマでの処理の場合
+# <a name="case-handling-in-flat-file-schemas"></a>ケースのフラット ファイル スキーマの処理
 
 ## <a name="overview"></a>概要
-使用することができます、**ケース**プロパティと同等の XML 形式から変換されているときに、フラット ファイル データの大文字/小文字の変換を実行します。 フラット ファイル アセンブラー、XML メッセージを同等のフラット ファイル形式に変換されるときに、**ケース**プロパティに設定されている**大文字**または**小文字**、すべてのデータ対応する制約を受けるスキーマには、変換中にそれぞれ、大文字または小文字に変換します。  
+使用することができます、**ケース**プロパティを XML 形式から変換時に、フラット ファイル データの大文字/小文字の変換を実行します。 フラット ファイル アセンブラーが XML メッセージをその同等のフラット ファイル形式に変換するとき、**ケース**プロパティがいずれかに**大文字**または**小文字**、すべてのデータによって、対応する制御スキーマには、変換時に、それぞれ大文字または小文字に変換します。  
   
- ときに、**ケース**プロパティに設定されている **(既定)**、大文字/小文字変換は行われません。  
+ ときに、**ケース**プロパティに設定されて **(既定)**、大文字と小文字の変換は行われません。  
   
 ## <a name="see-also"></a>参照  
- **ファイル メッセージ スキーマをフラットを作成する際の考慮事項**と**ケース (フラット ファイル スキーマのノード プロパティ)**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]
+ **ファイル メッセージ スキーマをフラットを作成する際の考慮事項**と**ケース (フラット ファイル スキーマのノード プロパティ)** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]

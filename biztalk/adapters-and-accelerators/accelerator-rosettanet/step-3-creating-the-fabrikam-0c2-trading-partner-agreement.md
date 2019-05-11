@@ -1,5 +1,5 @@
 ---
-title: '手順 3: Fabrikam 0 C のパートナーの 2 つの取引先アグリーメントの作成 |Microsoft Docs'
+title: 手順 3:Fabrikam 0 C のパートナーの 2 つの取引先アグリーメントの作成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,21 +14,21 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c10881f1ac703f07d6daaf2a87abd96f3086672b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3c937ecadc7b526bf67c11099aed2cd4aed100d2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36970267"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65281124"
 ---
-# <a name="step-3-creating-the-fabrikam-0c2-trading-partner-agreement"></a>手順 3: Fabrikam 0 C のパートナーの 2 つの取引先アグリーメントの作成
-Contoso と Fabrikam、Microsoft® を使用して間の取引先パートナー契約を作成するこの手順で[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]管理コンソール。 0C2 PIP (Partner Interface Process) のための新しい取引先アグリーメントを作成します。  
+# <a name="step-3-creating-the-fabrikam-0c2-trading-partner-agreement"></a>手順 3:Fabrikam 0 C のパートナーの 2 つの取引先アグリーメントの作成
+Contoso と Fabrikam、Microsoft® を使用して間の取引先パートナー契約を作成するこの手順で[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]管理コンソール。 0c2 の新しい取引先パートナー アグリーメントを作成するプロセス PIP (Partner Interface)。  
 
-### <a name="to-start-the-btarn-management-console"></a>BTARN 管理コンソールを起動するには  
+### <a name="to-start-the-btarn-management-console"></a>BTARN 管理コンソールを開始するには  
 
 - クリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**Microsoft BizTalk\<バージョン\>Accelerator for RosettaNet**順にクリックします**[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]** 管理コンソール。  
 
-### <a name="to-create-the-0c2-trading-partner-agreement"></a>0C2 取引先アグリーメントを作成するには  
+### <a name="to-create-the-0c2-trading-partner-agreement"></a>2 取引先パートナー契約の 0 C を作成するには  
 
 1. **[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]** 管理コンソールで、展開[!INCLUDE[btaBTARNNoVersionui](../../includes/btabtarnnoversionui-md.md)]、右クリックして**契約**、 をポイント**新規**、順にクリックします**アグリーメント**.  
 
@@ -61,4 +61,4 @@ Contoso と Fabrikam、Microsoft® を使用して間の取引先パートナー
 5. 右クリックし、 **Fabrikam_To_Contoso_0C2**アグリーメント、およびクリック**Activate**します。  
 
 ## <a name="see-also"></a>参照  
- [手順 4: Fabrikam 0C4 取引先契約の作成](../../adapters-and-accelerators/accelerator-rosettanet/step-4-creating-the-fabrikam-0c4-trading-partner-agreement.md)
+ [手順 4:Fabrikam 0C4 取引先契約の作成](../../adapters-and-accelerators/accelerator-rosettanet/step-4-creating-the-fabrikam-0c4-trading-partner-agreement.md)

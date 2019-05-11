@@ -18,24 +18,24 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fc4e6e8650f0da1446a48b5da8c8f7c2142af7bb
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d4a6e166a891da2a3d393d176555c2b50deed044
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36997899"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65284843"
 ---
 # <a name="creating-a-send-port-to-handle-orphan-or-duplicate-messages"></a>孤立したメッセージまたは重複するメッセージを処理する送信ポートを作成します。
-ここでは、孤立したメッセージや重複メッセージの削除に使用できる送信ポートの設定方法について説明します。  
+このトピックでは、孤立したメッセージまたは重複するメッセージを削除するために使用できる送信ポートを設定する方法について説明します。  
   
- 孤立したメッセージまたは重複メッセージは、場合に、問題になる可能性 Microsoft®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]パブリック プロセス オーケストレーションのメッセージの最初のコピー処理が完了した後、メッセージの追加のコピーを受信します。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] これらのメッセージを重複としてマークし、それらを中断します。 これらのメッセージは BizTalk 管理コンソールに表示できます。 BizTalk 管理コンソールの詳細については、「を使用して、BizTalk 管理コンソール」で、BizTalk Server ヘルプを参照してください。  
+ 孤立したメッセージまたは重複メッセージは、場合に、問題になる可能性 Microsoft®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]パブリック プロセス オーケストレーションのメッセージの最初のコピー処理が完了した後、メッセージの追加のコピーを受信します。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] これらのメッセージを重複としてマークし、それらを中断します。 BizTalk 管理コンソールで、これらのメッセージを表示できます。 BizTalk 管理コンソールの詳細については、「を使用して、BizTalk 管理コンソール」で、BizTalk Server ヘルプを参照してください。  
   
- 孤立したメッセージまたは重複メッセージは、それらを再表示または削除するまで BizTalk 管理コンソールに残ります。 これらのメッセージを削除する最も効果的な方法は、孤立したメッセージまたは重複メッセージのフィルターを設定した送信ポートを設定することです。 BizTalk Server で使用可能な輸送手段を使用してそれらを移動することができます。 たとえば、ファイル トランスポートを使用して、移動できます。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] ハード ディスク上の場所にファイルとして、孤立したメッセージまたは重複するメッセージを送信します。 これにより、それらを簡単に削除できます。 ポートは、参加している状態の場合も停止状態の場合もありますが、停止状態では、そのポートに送信されたすべてのメッセージは、その送信ポートの下に保留メッセージとして表示されます。  
+ 孤立したメッセージまたは重複メッセージは、確認するか、それらを削除するまでは、BizTalk 管理コンソールに残ります。 それらを削除する最も効果的な方法では、孤立したメッセージまたは重複するメッセージに設定されているフィルターと送信ポートを設定します。 BizTalk Server で使用可能な輸送手段を使用してそれらを移動することができます。 たとえば、ファイル トランスポートを使用して、移動できます。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] ハード ディスク上の場所にファイルとして、孤立したメッセージまたは重複するメッセージを送信します。 これにより、それらを簡単に削除します。 参加していると、停止状態で、中断状態としてのすべてのメッセージが送信された場合は表示その送信ポート、ポートを指定できます。  
   
 > [!NOTE]
->  重複/孤立したメッセージを処理する送信ポートを作成する代わりに、特別なパイプライン コンポーネントを作成して、MessageBox データベースからそれらのメッセージを削除できます。 [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] SDK の FixMsg コンポーネントをテンプレートとして使用できます。 `IComponent.Execute` メソッドが Null を返すように変更する必要があります。 これにより、パイプラインに送られたメッセージでこのコンポーネントを含むものが [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] で破棄されます。 このパイプライン コンポーネントは、コンパイルして送信パイプラインに追加し、その後、シンク ポートの送信パイプラインをコンパイルし、展開し、選択します。 詳細については、次を参照してください。"CustomComponent ([!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]サンプル)"で BizTalk Server のヘルプ。  
+>  重複/孤立したメッセージを処理する送信ポートを作成する代わりに、これらのメッセージをメッセージ ボックス データベースから削除する特別なパイプライン コンポーネントを作成できます。 内の FixMsg コンポーネントを使用することができます、 [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] SDK テンプレートとして。 変更する必要がある、`IComponent.Execute`メソッドは null を返します。 これにより、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]コンポーネントを含むパイプラインに送信されたメッセージを破棄します。 このパイプライン コンポーネントをコンパイルし送信パイプラインに追加して、コンパイル、展開、およびシンク ポートの送信パイプラインを選択する必要があります。 詳細については、次を参照してください。"CustomComponent ([!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]サンプル)"で BizTalk Server のヘルプ。  
   
-### <a name="to-create-a-send-port-to-handle-orphan-or-duplicate-messages"></a>孤立したメッセージまたは重複メッセージを処理する送信ポートを作成するには  
+### <a name="to-create-a-send-port-to-handle-orphan-or-duplicate-messages"></a>孤立したメッセージまたは重複するメッセージを処理する送信ポートを作成するには  
   
 1. [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]の**ビュー** メニューのをクリックして**BizTalk エクスプ ローラー**です。  
   

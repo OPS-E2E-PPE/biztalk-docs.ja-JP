@@ -1,5 +1,5 @@
 ---
-title: '手順 1: Contoso ホーム組織の作成 |Microsoft Docs'
+title: 手順 1:Contoso ホーム組織の作成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,17 +16,17 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 303048a06ce1acccac07d10bbe1ac53c32a08122
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3893d582a85708190f1f030b06187fcd8f152bd6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37000123"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65281596"
 ---
-# <a name="step-1-creating-the-contoso-home-organization"></a>手順 1: Contoso ホーム組織の作成
+# <a name="step-1-creating-the-contoso-home-organization"></a>手順 1:Contoso ホーム組織の作成
 この手順で、Microsoft® を使用して[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]Contoso ホーム組織を作成する管理コンソール。  
 
-### <a name="to-start-the-btarn-management-console"></a>BTARN 管理コンソールを起動するには  
+### <a name="to-start-the-btarn-management-console"></a>BTARN 管理コンソールを開始するには  
 
 - Contoso コンピューターでは、次のようにクリックします**開始**、 をポイント**すべてのプログラム**、 をポイント**Microsoft BizTalk\<バージョン\>Accelerator for RosettaNet**。し**[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]** 管理コンソール。  
 
@@ -40,7 +40,7 @@ ms.locfileid: "37000123"
    |               プロパティ               |                                                                              目的                                                                               |
    |--------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
    |               **名前**               |                                                                           型**CONTOSO**します。                                                                           |
-   |               **GBI**                | 型**123456789**します。 **注:** を同じコンピューターで、Loopback チュートリアルを実行する gbi には異なる 123456789 以外の値を入力する必要があります。 |
+   |               **GBI**                | 型**123456789**します。 **注:** 同じコンピューターで、Loopback チュートリアルを実行した場合の gbi に 123456789 以外の異なる値を入力する必要があります。 |
    | **ホーム組織の分類** |                                                           選択**製造元**ドロップダウン リストから。                                                            |
 
 
@@ -59,4 +59,4 @@ ms.locfileid: "37000123"
 4. **[OK]** をクリックします。  
 
 ## <a name="see-also"></a>参照  
- [手順 2: Fabrikam 取引先組織の作成](../../adapters-and-accelerators/accelerator-rosettanet/step-2-creating-the-fabrikam-partner-organization.md)
+ [手順 2:Fabrikam 取引先組織の作成](../../adapters-and-accelerators/accelerator-rosettanet/step-2-creating-the-fabrikam-partner-organization.md)

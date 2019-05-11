@@ -15,12 +15,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cd54bdfd3a772912b4d2687ab1ce9e715e7fbab9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a8429a2cc4fa8b3f4a72fa45bbcadd315caa4d68
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37013331"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373022"
 ---
 # <a name="receive-inbound-trfc-calls-in-sap-using-the-wcf-service-model"></a>WCF サービス モデルを使用して SAP で受信 tRFC 呼び出しを受信します。
 使用することができます、 [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)] SAP から受信 tRFC 呼び出しを受信するトランザクションの RFC (tRFC) サーバーとして。 受信 Trfc、用、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]作業 (LUW) の同じ SAP の論理ユニットに複数の Trfc をサポートしています。  
@@ -31,7 +31,7 @@ ms.locfileid: "37013331"
   
 - Trfc のサポートの概要については、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]を参照してください[SAP の Trfc に対する操作](../../adapters-and-accelerators/adapter-sap/operations-on-trfcs-in-sap.md)します。 このトピックでは、続行する前にお読みください。  
   
-- TRFC サーバー操作のメッセージ スキーマの詳細については、[SAP の Trfc に対する操作](../../adapters-and-accelerators/adapter-sap/operations-on-trfcs-in-sap.md)を参照してください。  
+- TRFC サーバー操作のメッセージ スキーマの詳細については、次を参照してください。 [SAP の Trfc に対する操作](../../adapters-and-accelerators/adapter-sap/operations-on-trfcs-in-sap.md)します。  
   
 ## <a name="the-wcf-service-contract-for-a-trfc"></a>TRFC の WCF サービス コントラクト  
  使用する、[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]または SAP システムから受信する Trfc の WCF サービス コントラクトを生成する ServiceModel メタデータ ユーティリティ ツール (svcutil.exe)。 契約の受信の tRFC は受信 RFC 用に生成するときと同様に生成された点が異なります。  
@@ -70,7 +70,7 @@ ms.locfileid: "37013331"
   ```  
   
 ## <a name="how-do-i-enable-the-adapter-to-act-as-a-trfc-server"></a>TRFC サーバーとして、アダプター操作を行うことをする方法  
- TRFC サーバーとして機能するアダプターを有効に設定する必要があります、 **TidDatabaseConnectionString** TID データベースの接続文字列プロパティにバインドします。 これは、サービス ホストを開く前に行う必要があります。 これは、アダプターが各 tRFC の SAP トランザクション ID (TID) を格納するデータベースです。 このバインドのプロパティの詳細については、[mySAP Business Suite バインド プロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md)を参照してください。  
+ TRFC サーバーとして機能するアダプターを有効に設定する必要があります、 **TidDatabaseConnectionString** TID データベースの接続文字列プロパティにバインドします。 これは、サービス ホストを開く前に行う必要があります。 これは、アダプターが各 tRFC の SAP トランザクション ID (TID) を格納するデータベースです。 このバインドのプロパティの詳細については、次を参照してください。 [mySAP Business Suite バインド プロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md)します。  
   
 ## <a name="how-do-i-enlist-in-the-transaction-for-inbound-trfcs"></a>受信 Trfc のトランザクションに参加させる方法をでしょうか。  
  SAP 論理単位の作業 (LUW) は、複数の Trfc を含めることができます。 SAP システムで、LUW は一意のトランザクション ID (TID) によって識別されます。 アダプターでは、アダプターの tRFC の呼び出しを呼び出すときに、SAP システムを使用している Tid ごとコミット トランザクションを作成します。 SAP システムは、アダプターの tRFC を呼び出すときにアダプターは、サービスに SAP TID に関連付けられているトランザクションをフローします。 このトランザクションをアンビエント トランザクションとしては、操作メソッドの内部にアクセスできます。 このアンビエント トランザクションへの参加、によって、操作で実行されるアクションは、SAP LUW に参加できます。  

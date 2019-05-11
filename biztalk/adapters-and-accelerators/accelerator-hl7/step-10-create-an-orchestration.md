@@ -1,5 +1,5 @@
 ---
-title: '手順 10: オーケストレーションの作成 |Microsoft Docs'
+title: 手順 10:オーケストレーションを作成する |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,14 +16,14 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e896b5a5723b84cfc94d735aa51b8bee848b41b9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: da424576feb01762b703f43e796956e2dbb25228
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36989779"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65288994"
 ---
-# <a name="step-10-create-an-orchestration"></a>手順 10: オーケストレーションを作成します。
+# <a name="step-10-create-an-orchestration"></a>手順 10:オーケストレーションを作成します。
 この手順では、患者、ADT_A04 メッセージは完全に表示される追加の詳細を取得するためのビジネス プロセスを表すオーケストレーションを作成するのにオーケストレーション デザイナーを使用します。 オーケストレーション デザイナーを使用して、このビジネス プロセスのアクションを表すために必要なオーケストレーション図形を選択します。 以降の演習では、正しく動作させるように図形を構成する追加の情報を提供します。  
   
 > [!NOTE]
@@ -59,7 +59,7 @@ ms.locfileid: "36989779"
   
 14. (画面の右下) で [プロパティ] ウィンドウで、**名前**プロパティの名前を変更する、**送信**図形を**DoorbellSend**とを押します**入力**します。  
   
-    続行する[手順 11: オーケストレーション変数の作成](../../adapters-and-accelerators/accelerator-hl7/step-11-create-orchestration-variables.md)です。  
+    続行する[手順 11。オーケストレーション変数の作成](../../adapters-and-accelerators/accelerator-hl7/step-11-create-orchestration-variables.md)です。  
   
 ## <a name="see-also"></a>参照  
  [メッセージ強化のチュートリアル](../../adapters-and-accelerators/accelerator-hl7/message-enrichment-tutorial.md)

@@ -12,12 +12,12 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b8471dfe16338f71785062eca4484ca53185931d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a8ef67be41cc161921b6bd973cb17c6eacba103d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37005267"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65360316"
 ---
 # <a name="an-as2-message-was-received-that-did-not-contain-the-as2-from-header"></a>AS2-From ヘッダーが含まれていない AS2 メッセージを受信しました
 ## <a name="details"></a>詳細  

@@ -15,12 +15,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b3806ed8db2272068ff60c6656b73cdf4a726bd9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9bc04fb6656a3e01c876afd94b76643bf39be3d5
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37005899"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65292953"
 ---
 # <a name="hl7-versions"></a>HL7 のバージョン
 HL7 バージョン 2 は、1 つの標準ではなく、密接に関連する標準のファミリです。 HL7 の組織が、これらの標準 HL7 のバージョン間の互換性規則の適用を上方に対応するように設計されています。 これらの規則は、バージョン 2 の範囲内で HL7 のバージョンの規則の下で定義されたインターフェイスはまだ機能の後継バージョンの定義内でを保証します。 受信側のシステムはその実装と、送信を損なうことがなく、以降のバージョンからのメッセージを受信できるように、システムは引き続き以降のバージョンをサポートしている受信者にメッセージを送信することになります。  

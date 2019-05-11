@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b8a9e9ffd78e0740dd366f4f09d3a832e74cda94
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3fd645cbaf8b14fb66b5da3a506ac2258ba1d6be
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37005771"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65363363"
 ---
 # <a name="select-a-uri-scheme-and-addressing-format-when-using-the-wcf-lob-adapter-sdk"></a>WCF LOB Adapter SDK を使用する場合は、URI スキームとアドレス指定の形式を選択します
 Web サービスのように、使用して開発されたアダプターの場合、リソースを一意に識別する Uniform Resource Identifier (URI)、[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]を実行するアクションと同様に、システムに接続します。 このセクションでは、エンドポイント アドレスとアダプターのアクションを記述する URI を作成する方法の推奨事項を提供します。  
@@ -49,7 +49,7 @@ Web サービスのように、使用して開発されたアダプターの場�
   
  たとえば、注文システム (ビジネス アプリケーションのサンプル行)、contoso カタログに接続できます、次を使用します。  
   
- **northwind.contoso.v1.0://\<servername\>でしょうか。カタログ = Contoso & Integrated Security = True**  
+ **northwind.contoso.v1.0://\<servername\>?Catalog=Contoso&Integrated Security=True**  
   
  ユーザー名とパスワード、およびその他の重要な資格情報を含む URI で省略可能な機関の情報を指定することもできます。 ただし、このセキュリティ リスクを表示できます。  
   

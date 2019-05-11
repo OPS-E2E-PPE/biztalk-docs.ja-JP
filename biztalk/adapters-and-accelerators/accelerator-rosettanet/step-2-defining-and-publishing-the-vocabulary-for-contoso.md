@@ -1,5 +1,5 @@
 ---
-title: '手順 2: 定義と Contoso のボキャブラリを公開 |Microsoft Docs'
+title: 手順 2:定義と Contoso のボキャブラリを公開 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,15 +16,15 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 56dc5a4c65dcf198308e382b82d9b167c5d4ca8b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e30d20064f322b88abc27f6adb1a59d4825c56a1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37007107"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65281141"
 ---
-# <a name="step-2-defining-and-publishing-the-vocabulary-for-contoso"></a>手順 2: 定義と Contoso のボキャブラリを公開
-このシナリオでは、緊急時でもインベントリが確実に利用できる状態にするビジネス ポリシーを Contoso で実装します。 ビジネス ポリシーは、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] のビジネス ルール作成ツールを使用して作成します。 ここでは、ビジネス ポリシーを定義する際に使用するボキャブラリを作成します。  
+# <a name="step-2-defining-and-publishing-the-vocabulary-for-contoso"></a>手順 2:定義と Contoso のボキャブラリを公開
+このシナリオでは、Contoso は、そのインベントリは手の形で常に、緊急事態が発生した場合ことを確認するビジネス ポリシーを実装します。 ビジネス ルール作成ツールを使用してビジネス ポリシーを作成する[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]します。 この手順では、ビジネス ポリシーを定義するときに使用するボキャブラリを作成します。  
   
 ### <a name="to-add-a-new-vocabulary"></a>新しいボキャブラリを追加するには  
   
@@ -46,7 +46,7 @@ ms.locfileid: "37007107"
   
 4.  **定数値の定義**] ページの [、**値**ボックスに「 **800**、順にクリックします**完了**します。  
   
-### <a name="to-define-an-xml-document-get-element"></a>XML ドキュメントの "取得" 要素を定義するには  
+### <a name="to-define-an-xml-document-get-element"></a>XML ドキュメントの 'Get' 要素を定義するには  
   
 1.  ビジネス ルール作成ツールのファクト エクスプローラ ペインで右クリック**バージョン 1.0 (未保存)** [ **3 a2priceavailabilityvocabulary**、] をクリックし、**新しい定義の追加**.  
   
@@ -62,7 +62,7 @@ ms.locfileid: "37007107"
   
 7.  **操作を選択して**セクションで、選択 **「取得」操作の実行**、順にクリックします**完了**します。  
   
-### <a name="to-define-an-xml-document-set-element"></a>XML ドキュメントの "設定" 要素を定義するには  
+### <a name="to-define-an-xml-document-set-element"></a>XML ドキュメントの 'Set' 要素を定義するには  
   
 1.  ビジネス ルール作成ツールのファクト エクスプローラ ペインで右クリック**バージョン 1.0 (未保存)** [ **3 a2priceavailabilityvocabulary**、] をクリックし、**新しい定義の追加**.  
   
@@ -87,7 +87,7 @@ ms.locfileid: "37007107"
 2.  右クリックしてその同じ**バージョン 1.0**ノードをクリック**発行**します。  
   
     > [!NOTE]
-    >  チュートリアルの次の手順で使用するため、ビジネス ルール作成ツールは開いたままにしておきます。  
+    >  ビジネス ルール作成ツールを開いたままに、次の手順、チュートリアルでは。  
   
 ## <a name="see-also"></a>参照  
- [手順 3: Contoso のビジネス ポリシーの定義、公開、展開](../../adapters-and-accelerators/accelerator-rosettanet/step-3-defining-publishing-and-deploying-the-business-policy-for-contoso.md)
+ [ステップ 3:Contoso のビジネス ポリシーの定義、公開、展開](../../adapters-and-accelerators/accelerator-rosettanet/step-3-defining-publishing-and-deploying-the-business-policy-for-contoso.md)

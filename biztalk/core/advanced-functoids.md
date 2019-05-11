@@ -1,5 +1,5 @@
 ---
-title: Functoid の詳細 |Microsoft ドキュメント
+title: Functoid の詳細 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,27 +12,27 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5002b639df79ece1019c2d013c128f615517ae5f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b0e906b7e1c4d7ca71f952441cd22542e9637399
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22230394"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65360503"
 ---
 # <a name="advanced-functoids"></a>高度な Functoid
 
 ## <a name="overview"></a>概要
-高度な Functoid は、使用目的に応じて次の 5 つのグループに分類されます。  
+高度な functoid は、使用目的に応じて、5 つのグループに分類されます。  
   
--   **ループ レコードを管理します。** **インデックス**、**イテレーション**、**ループ**、 **Nil 値**、**レコード カウント**、**テーブル抽出**、および**テーブル ループ**入力インスタンス メッセージを含むセクションが不明な場合に、さまざまな組み合わせで functoid が使用される繰り返し出現する要素、ループで表される数送信元スキーマのレコードです。  
+-   **ループ レコードを管理します。** **インデックス**、**イテレーション**、**ループ**、 **Nil 値**、**レコード カウント**、**テーブルエクス トラクター**、および**テーブル ループ**入力インスタンス メッセージには、予期できないいくつかのセクションが含まれている場合、さまざまな組み合わせで functoid が使用される繰り返し出現する要素、ループで表される数送信元スキーマ内のレコード。  
   
--   **条件付きのマッピング。** **値のマッピング**と**値のマッピング (フラット化)** functoid は、入力インスタンス メッセージから出力インスタンス メッセージへの条件付きのマッピングを提供するために使用します。 最初の入力パラメーターが true の場合、2 番目の入力パラメーターは、出力インスタンス メッセージの指定された要素または属性に配置されます。それ以外の場合、この要素または属性は、出力インスタンス メッセージに作成されません。  
+-   **条件付きのマッピング。** **値のマッピング**と**値のマッピング (フラット化)** functoid を使用して、入力インスタンス メッセージから出力インスタンス メッセージへの条件付きのマッピングを提供します。 2 番目の入力パラメーターが指定した要素または属性を出力インスタンス メッセージ内に配置されている最初の入力パラメーターが true の場合それ以外の場合、その要素または属性は、出力インスタンス メッセージでは作成されません。  
   
--   **任意のスクリプト。** **スクリプト**functoid は、任意のスクリプトを実行するために使用または入力インスタンス メッセージは、出力インスタンス メッセージにマップされているときにコードをコンパイルします。 このようなスクリプトまたはコンパイル済みコードを作成し、送信元インスタンス メッセージ、構成された定数値、別の Functoid の出力、またはこれらの組み合わせから、入力パラメーターを受け取ることができます。  
+-   **任意のスクリプト。** **Scripting** functoid は、任意のスクリプトを実行するために使用または入力インスタンス メッセージを出力インスタンス メッセージにマップされているときにコードをコンパイルします。 送信元インスタンス メッセージの別の functoid、またはその組み合わせの出力から、構成された定数値から、入力パラメーターを受け入れるように、このようなスクリプトまたはコンパイル済みコードを作成できます。  
   
--   **単純なマッピング。** **一括コピー**出力インスタンス メッセージに入力インスタンス メッセージから任意の深さにサブ要素を含む、要素全体をコピーする functoid を使用できます。  
+-   **単純なマッピング。** **一括コピー**出力インスタンス メッセージに入力インスタンス メッセージから任意の深さをそのサブ要素を含む要素全体をコピーする functoid を使用できます。  
   
--   **トラブルシューティング**です。 **Assert** functoid を使用して要素の値に関する仮定をテストできます。  
+-   **トラブルシューティング**します。 **Assert** functoid を使用して要素の値に関する仮定をテストできます。  
   
 ## <a name="available-functoids"></a>使用可能な functoid
   
@@ -46,13 +46,13 @@ ms.locfileid: "22230394"
 * Nil 値 Functoid
 * レコード カウント Functoid 
 * スクリプト Functoid 
-* テーブル ループ functoid とテーブル抽出 Functoid
+* テーブル ループ functoid およびテーブル抽出 Functoid
 * 値のマッピング Functoid
 * 値のマッピング (フラット化) Functoid
 
-これらの functoid の詳細については、 **Functoid リファレンス**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]です。
+これらの functoid について詳しくは、 **Functoid リファレンス**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]します。
   
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
   
 -   [アサート Functoid](../core/assert-functoid.md)  
   
@@ -68,7 +68,7 @@ ms.locfileid: "22230394"
   
 -   [レコード カウント Functoid](../core/record-count-functoid.md)  
   
--   [テーブル ループ functoid とテーブル抽出 Functoid](../core/table-looping-and-table-extractor-functoids.md)  
+-   [テーブル ループ Functoid とテーブル抽出 Functoid](../core/table-looping-and-table-extractor-functoids.md)  
   
 -   [値のマッピング Functoid](../core/value-mapping-functoid.md)  
   

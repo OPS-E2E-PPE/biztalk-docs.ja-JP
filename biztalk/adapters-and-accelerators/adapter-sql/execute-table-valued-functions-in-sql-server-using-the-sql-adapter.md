@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dab49fa57a3132a75fd937f1d89333577d28c420
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 48597c430bf2c77956476cbd689ec29bdc44b5af
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37007235"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65369522"
 ---
 # <a name="execute-table-valued-functions-in-sql-server-using-the-sql-adapter"></a>SQL アダプターを使用して SQL Server でのテーブル値関数の実行します。
 SQL Server で Transact SQL と CLR テーブル値関数での操作として表示された[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]します。 内の操作名、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]値関数で SQL Server テーブルの名前と同じです。  
@@ -26,7 +26,7 @@ SQL Server で Transact SQL と CLR テーブル値関数での操作として�
   
  詳細については。  
   
-- 使用して、 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] SQL Server でのテーブル値関数を呼び出すための BizTalk Server で、[Invoking Table-Valued 関数を使用して BizTalk Server によって SQL Server で](../../adapters-and-accelerators/adapter-sql/invoke-table-valued-functions-in-sql-server-using-biztalk-server.md)を参照してください。  
+- 使用して、 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] SQL Server でのテーブル値関数を呼び出すための BizTalk Server で、次を参照してください。 [Invoking Table-Valued 関数を使用して BizTalk Server によって SQL Server で](../../adapters-and-accelerators/adapter-sql/invoke-table-valued-functions-in-sql-server-using-biztalk-server.md)します。  
   
 - メッセージの構造とテーブル値関数用の SOAP アクションを参照してください[プロシージャと関数のメッセージ スキーマ](../../adapters-and-accelerators/adapter-sql/message-schemas-for-procedures-and-functions.md)します。  
   

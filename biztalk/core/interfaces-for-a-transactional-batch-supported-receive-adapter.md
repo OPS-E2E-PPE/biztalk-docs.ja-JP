@@ -1,5 +1,5 @@
 ---
-title: 受信アダプターのバッチでサポートされているトランザクション パブリケーション用のインターフェイス |Microsoft ドキュメント
+title: 受信アダプターのバッチでサポートされているトランザクション パブリケーション用のインターフェイス |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,28 +12,28 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 27b51a67f63f3088ce64c9db35c368289ce156d2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f46c7662fac5010c4f1effe56016fe2f5c5d5e8f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22257578"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65331556"
 ---
 # <a name="interfaces-for-a-transactional-batch-supported-receive-adapter"></a>バッチ処理に対応したトランザクション受信アダプター用のインターフェイス
-メッセージのトランザクション送信が必要な場合、受信アダプターはトランザクションを作成して制御します。  
+受信アダプターは、作成し、メッセージのトランザクション送信が必要な場合は、トランザクションを制御します。  
   
- トランザクション受信アダプターを作成し、上の Microsoft 分散トランザクション コーディネーター (MSDTC) トランザクションにポインターを渡します、**完了**のメソッド、 **IBTTransportBatch**インターフェイスです。 これにより、すべてのバッチ操作がその特定のトランザクション オブジェクトのスコープ内で実行されることが保証されます。 バッチ送信が完了すると、アダプターのコールバック メソッドがトランザクションをコミットまたはロールバックします。 どちらのアクションを実行するかは、トランスポート プロキシから返されるステータス、および場合によっては、アダプターが実行する、トランスポート プロキシには認識されない他のトランザクション関連処理によって決まります。 アダプターは、トランザクションの失敗または成功を判断します。 アダプター (コミットまたはロールバック) トランザクションの結果に報告、トランスポート プロキシを使用して、 **DTCCommitConfirm**のメソッド、**IBTDTCCommitConfirm**インターフェイスです。 トランザクションが成功した場合は `true` を渡し、失敗した場合は `false` を渡します。  
+ トランザクション受信アダプターは、作成し、Microsoft 分散トランザクション コーディネーター (MSDTC) トランザクションへのポインターを渡します、**完了**のメソッド、 **IBTTransportBatch**インターフェイス。 これにより、すべてのバッチ操作は、その特定のトランザクション オブジェクトのスコープ内で実行されます。 バッチ送信が完了したら、アダプターのコールバック メソッドがコミットまたはトランザクションをロールバックします。 トランスポート プロキシから返されたかかるアクション、状態によって異なります、可能性がある他のトランザクション関連の作業時に、アダプターは表示されませんをトランスポート プロキシ。 アダプターは、トランザクションが失敗または成功したかどうかを判断します。 アダプター (コミットまたはロールバック) トランザクションの結果に報告、トランスポート プロキシを使用して、 **DTCCommitConfirm**のメソッド、**IBTDTCCommitConfirm**インターフェイス。 渡します`true`成功したトランザクションのまたは`false`エラー。  
   
- バッチ処理に対応したトランザクション受信アダプターを作成するときの、オブジェクト間の対話処理を次に示します。  
+ 次の図は、受信アダプターのバッチでサポートされているトランザクションの作成に関連するオブジェクトの相互作用を示しています。  
   
  ![](../core/media/ebiz-sdk-devadapter2.gif "ebiz_sdk_devadapter2")  
 DTC トランザクションを使用してメッセージのバッチを送信する受信アダプターのワークフロー  
   
 ## <a name="see-also"></a>参照  
- [アダプタの変数](../core/adapter-variables.md)   
+ [アダプター変数](../core/adapter-variables.md)   
  [開発、受信アダプター](../core/developing-a-receive-adapter.md)   
  [インスタンス化と初期化、アダプターの受信](../core/instantiating-and-initializing-a-receive-adapter.md)   
  [受信アダプターをインプロセスで用のインターフェイス](../core/interfaces-for-an-in-process-receive-adapter.md)   
- [受信アダプターの分離用のインターフェイス](../core/interfaces-for-an-isolated-receive-adapter.md)   
+ [インターフェイスの分離受信アダプター](../core/interfaces-for-an-isolated-receive-adapter.md)   
  [受信アダプターのバッチ サポート用のインターフェイス](../core/interfaces-for-a-batch-supported-receive-adapter.md)   
- [アダプターの受信要求-応答の同期用のインターフェイス](../core/interfaces-for-a-synchronous-request-response-receive-adapter.md)
+ [要求 - 応答の同期受信アダプター用のインターフェイス](../core/interfaces-for-a-synchronous-request-response-receive-adapter.md)

@@ -15,15 +15,15 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 25d820b2807c6dd7584af2399b20287d1476e7c6
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 47402dcb034ca9b4da564b0f7a4798b9c486db09
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36982547"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65286382"
 ---
 # <a name="utilities"></a>ユーティリティ
-ここでは、Microsoft [!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)] ソフトウェア開発キット (SDK) に含まれている便利なユーティリティの使用方法について説明します。  
+このセクションでは、Microsoft に含まれるいくつかの便利なユーティリティを使用するための説明[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]ソフトウェア開発キット (SDK)。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

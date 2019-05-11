@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル 1: エンタープライズ アプリケーションの統合 |Microsoft Docs'
+title: チュートリアル 1:エンタープライズ アプリケーションの統合 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,14 +16,14 @@ caps.latest.revision: 37
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 04e0c7e6e654290aaf5bebf786f3294e988364f8
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6abc6e3b56c0145a10392a8523700115b79c66cd
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36968531"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65279656"
 ---
-# <a name="tutorial-1-enterprise-application-integration"></a>チュートリアル 1: エンタープライズ アプリケーション統合
+# <a name="tutorial-1-enterprise-application-integration"></a>チュートリアル 1:エンタープライズ アプリケーション統合
 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、アプリケーション統合とビジネス プロセス マネジメント (BPM) 用の開発環境と実行環境が提供されます。 このチュートリアルでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を使用してエンタープライズ アプリケーション統合 (EAI) ソリューションをセットアップして展開する方法について、詳細に学習します。  
   
 ##  <a name="BKMK_Tut1_scenario"></a> ビジネス シナリオ  
@@ -31,7 +31,7 @@ Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernover
   
  この統合ソリューションには課題がいくつかあります。  
   
-- **メッセージのトランスポート**します。  倉庫システムと ERP システムは、2 つの異なるプラットフォームに存在し、メッセージの送受信に異なるトランスポート プロトコルを使用する可能性があります。 このソリューションでは、送信側システムによってサポートされるプロトコルでメッセージを受信し、受信側システムによってサポートされるプロトコルでメッセージを転送できる必要があります。  BizTalk Server を使用して*アダプター*メッセージを転送します。  BizTalk Server と BizTalk Adapter Pack には多数のネイティブ アダプターが付属しています。  アダプターを追加するには、ベンダーから購入する方法と、BizTalk Server で提供されるアダプター フレームワークを使用して独自に開発する方法があります。 アダプターの詳細については、[ http://go.microsoft.com/fwlink/?LinkId=191131](http://go.microsoft.com/fwlink/?LinkId=191131)を参照してください。  
+- **メッセージのトランスポート**します。  倉庫システムと ERP システムは、2 つの異なるプラットフォームに存在し、メッセージの送受信に異なるトランスポート プロトコルを使用する可能性があります。 このソリューションでは、送信側システムによってサポートされるプロトコルでメッセージを受信し、受信側システムによってサポートされるプロトコルでメッセージを転送できる必要があります。  BizTalk Server を使用して*アダプター*メッセージを転送します。  BizTalk Server と BizTalk Adapter Pack には多数のネイティブ アダプターが付属しています。  アダプターを追加するには、ベンダーから購入する方法と、BizTalk Server で提供されるアダプター フレームワークを使用して独自に開発する方法があります。 アダプターの詳細については、次を参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=191131](http://go.microsoft.com/fwlink/?LinkId=191131)します。  
   
 - **メッセージの変換**します。 メッセージには、XML (eXtended Markup Language)、EDI (Electronic Data Interchange)、区切り文字を使用したファイルなど、多くの種類があります。 BizTalk Server では主に XML を使用します。 ほとんどの場合、受信メッセージはまず XML に変換されます。  このプロセスが呼び出されます*解析*します。  送信側では、メッセージを XML から他の種類に変換できます。  このプロセスが呼び出されます*シリアル化*します。  
   
@@ -46,7 +46,7 @@ Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernover
 ## <a name="preparation"></a>準備  
  BizTalk Server 統合ソリューションを作成する前に、次の基本情報を収集する必要があります。  
   
--   BizTalk Server ソリューションで統合する必要があるアプリケーション/システムの数。  このシナリオでは、ERP と倉庫の 2 つのシステムがあります。  
+-   BizTalk Server ソリューションで統合する必要があるアプリケーション/システムの数。  このシナリオでは、2 つのシステムがあります。ERP と倉庫します。  
   
 -   各アプリケーションでサポートされるトランスポート プロトコル。  ソリューションを簡易にするために、両方のアプリケーションでファイルが使用されると想定します。  倉庫システムは、要求をファイルとしてファイル フォルダー内に入れます。 BizTalk Server ソリューションはフォルダーからファイルを取得し、ファイルを処理して、ERP システムが監視する別のフォルダーに要求を入れます。  
   
@@ -73,8 +73,8 @@ Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernover
   
 -   [チュートリアルを開始する前に](../core/before-you-begin-the-tutorial.md) 
   
--   [レッスン 1: スキーマおよびマップの定義](../core/lesson-1-define-schemas-and-a-map.md) 
+-   [レッスン 1:スキーマおよびマップを定義します。](../core/lesson-1-define-schemas-and-a-map.md) 
   
--   [レッスン 2: ビジネス プロセスの定義](../core/lesson-2-define-the-business-process.md)  
+-   [レッスン 2:ビジネス プロセスを定義します。](../core/lesson-2-define-the-business-process.md)  
   
--   [レッスン 3: ソリューションの展開](../core/lesson-3-deploy-the-solution.md)
+-   [レッスン 3:ソリューションを展開する](../core/lesson-3-deploy-the-solution.md)

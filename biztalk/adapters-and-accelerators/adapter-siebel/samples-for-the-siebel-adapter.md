@@ -13,12 +13,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 608603ead6b708722a7fc51cd2d5e2849812b408
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 57b338fd5cb445d8d83e9d3d364909cf7a9eb6b5
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37014827"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65371031"
 ---
 # <a name="samples-for-the-siebel-adapter"></a>Siebel アダプターのサンプル
 サンプルは[!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]に分類されます。  
@@ -30,7 +30,7 @@ ms.locfileid: "37014827"
 - [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)] サンプル  
 
 
-サンプルについては、「 [BizTalk Adapter Pack 2010: Siebel アダプターのサンプル](https://www.microsoft.com/download/details.aspx?id=6492)します。 
+サンプルについては、「 [BizTalk Adapter Pack 2010。Siebel アダプターのサンプル](https://www.microsoft.com/download/details.aspx?id=6492)します。 
 
 > [!NOTE]
 > [!INCLUDE[files-need-updated](../../includes/files-need-updated.md)]

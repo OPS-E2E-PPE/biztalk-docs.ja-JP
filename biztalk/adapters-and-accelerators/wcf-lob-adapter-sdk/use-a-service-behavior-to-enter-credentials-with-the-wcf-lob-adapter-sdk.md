@@ -1,5 +1,5 @@
 ---
-title: サービスの動作を使用して、WCF LOB Adapter SDK を持つ資格情報を入力 |Microsoft ドキュメント
+title: サービスの動作を使用して、WCF LOB アダプター SDK を使用した資格情報を入力します |。Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,17 +12,17 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3cc494e55aee70a9a441eccbe056f4651448752d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 446bb6e93336f765560742c070ee55921df42a9b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22223882"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65362711"
 ---
-# <a name="use-a-service-behavior-to-enter-credentials-with-the-wcf-lob-adapter-sdk"></a>サービスの動作を使用して、WCF LOB Adapter SDK を持つ資格情報を入力
+# <a name="use-a-service-behavior-to-enter-credentials-with-the-wcf-lob-adapter-sdk"></a>サービスの動作を使用して、WCF LOB アダプター SDK を使用した資格情報を入力します。
 多くの場合、アダプターのコンシューマーは、対象の基幹業務システムに資格情報を渡す必要があります。 この機能を提供するには、WCF サービスの動作を提供する必要があります。  
   
- 次のコード例では、サービスの動作を派生させる方法を示します。 アダプターに、アダプターのコンシューマーから取得した資格情報を委任します。 アダプターは、資格情報を認証するのに基幹業務プロトコルを使用する必要があります。 資格情報が認証されると、サービスが基幹業務アプリケーションからの着信イベントのリッスンを開始することができます。  
+ 次のコード例では、サービスの動作を派生させる方法を示します。 これは、アダプター、アダプターのコンシューマーから取得した資格情報を委任します。 アダプターは、資格情報を認証するのに基幹業務のプロトコルを使用する必要があります。 資格情報が認証されると、サービスが基幹業務アプリケーションからの受信イベントのリッスンを開始することができます。  
   
 ```  
 /// <summary>  
@@ -88,4 +88,4 @@ host.Close();
 ```  
   
 ## <a name="see-also"></a>参照  
- [WCF LOB Adapter SDK を使用して、開発のベスト プラクティス](../../adapters-and-accelerators/wcf-lob-adapter-sdk/development-best-practices-using-the-wcf-lob-adapter-sdk.md)
+ [WCF LOB Adapter SDK を使用して開発のベスト プラクティス](../../adapters-and-accelerators/wcf-lob-adapter-sdk/development-best-practices-using-the-wcf-lob-adapter-sdk.md)

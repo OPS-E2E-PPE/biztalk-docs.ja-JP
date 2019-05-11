@@ -1,5 +1,5 @@
 ---
-title: BizTalk アプリケーションの展開と管理を理解する |Microsoft ドキュメント
+title: BizTalk アプリケーションの展開と管理について |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -24,31 +24,31 @@ caps.latest.revision: 33
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 82d9596f2f8261b35035ead291f2a7d1bb859a5e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0a5b3d3a8a36b179baee2ab508915ec72d62ea52
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22286626"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65292691"
 ---
-# <a name="understanding-biztalk-application-deployment-and-management"></a>BizTalk アプリケーションの展開と管理について
+# <a name="understanding-biztalk-application-deployment-and-management"></a>BizTalk アプリケーションの展開と管理についてください。
 ここでは、アプリケーションの展開と管理に関する [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の新しい機能を紹介し、これらの機能を使用して BizTalk アプリケーションを展開および管理する方法を理解するのに役立つ背景情報を説明します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [BizTalk アプリケーションとは何ですか。](../core/what-is-a-biztalk-application.md)  
+-   [BizTalk アプリケーションについて](../core/what-is-a-biztalk-application.md)  
   
--   [アプリケーションの展開プロセス](../core/the-application-deployment-process.md)  
+-   [アプリケーション展開プロセス](../core/the-application-deployment-process.md)  
   
--   [アプリケーションの展開と管理機能](../core/application-deployment-and-management-features.md)  
+-   [アプリケーションの展開および管理の機能](../core/application-deployment-and-management-features.md)  
   
--   [アプリケーションの展開と管理ツール](../core/application-deployment-and-management-tools.md)  
+-   [アプリケーションの展開および管理のツール](../core/application-deployment-and-management-tools.md)  
   
--   [アプリケーションの展開と管理のシナリオ](../core/application-deployment-and-management-scenarios.md)  
+-   [アプリケーションの展開および管理のシナリオ](../core/application-deployment-and-management-scenarios.md)  
   
--   [アプリケーションの展開時の成果物を処理します。](../core/what-happens-to-artifacts-during-application-deployment.md)  
+-   [アプリケーション展開時のアイテムの処理](../core/what-happens-to-artifacts-during-application-deployment.md)  
   
--   [アプリケーション展開タスク](../core/application-deployment-tasks.md)  
+-   [アプリケーション展開作業](../core/application-deployment-tasks.md)  
   
 -   [アプリケーションの展開のセキュリティに関する考慮事項](../core/security-considerations-for-application-deployment.md)  
   
@@ -56,6 +56,6 @@ ms.locfileid: "22286626"
   
 -   [バインド ファイルとアプリケーションの展開](../core/binding-files-and-application-deployment.md)  
   
--   [アプリケーションまたはグループ内で一意である必要がありますの成果物](../core/artifacts-that-must-be-unique-in-an-application-or-group.md)  
+-   [アプリケーションまたはグループ内で一意である必要があるアイテム](../core/artifacts-that-must-be-unique-in-an-application-or-group.md)  
   
--   [GAC にアセンブリのインストール](../core/assembly-installation-in-the-gac.md)
+-   [GAC でのアセンブリのインストール](../core/assembly-installation-in-the-gac.md)

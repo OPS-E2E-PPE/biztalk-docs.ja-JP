@@ -1,5 +1,5 @@
 ---
-title: クライアント ユーティリティを使用して関連アプリケーションの資格情報を設定する方法 |Microsoft ドキュメント
+title: クライアント ユーティリティを使用して関連アプリケーションの資格情報を設定する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,34 +16,34 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3ebe3e1a9e8d2ea8df421d0bade60f35d6925459
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: abc8c329b46e5eab5f04f5082064f1dea63505bd
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25971568"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65334520"
 ---
 # <a name="how-to-set-credentials-for-the-affiliate-application-using-the-client-utility"></a>クライアント ユーティリティを使用して関連アプリケーションの資格情報を設定する方法
-ここで示すコマンドを使用すると、ユーザーが特定のアプリケーションにアクセスできるようにユーザーの資格情報を設定できます。 また、このコマンドにより、マッピングが自動的に有効になります。  
+このコマンドを使用して、ユーザーが特定のアプリケーションにアクセスできるように、ユーザーの資格情報を設定します。 このコマンドも自動的にマッピングを有効にします。  
   
- このコマンドでは、入力したパスワードは表示されません。  
+ このコマンドでは、入力すると、パスワードは表示されません。  
   
- ユーザー マッピングが既に存在する場合、このコマンドにより、その既存のマッピングに対して資格情報が設定されます。 ユーザー マッピングを作成していない場合、SSO システムからアプリケーションのユーザー ID を入力するよう要求されます。  
+ ユーザー マッピングが既に存在する場合、このコマンドはその既存のマッピングの資格情報を設定します。 ユーザー マッピングを作成していない場合、SSO システムのアプリケーションのユーザー ID を求められます。  
   
-### <a name="to-set-credentials-for-the-affiliate-application-using-the-client-utility"></a>クライアント ユーティリティを使用して関連アプリケーションに資格情報を設定するには  
+### <a name="to-set-credentials-for-the-affiliate-application-using-the-client-utility"></a>クライアント ユーティリティを使用して関連アプリケーションの資格情報を設定するには  
   
-1.  **開始** メニューのをクリックして**実行**、し、入力**cmd**です。  
+1.  **開始** メニューのをクリックして**実行**、し、入力**cmd**します。  
   
-2.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定のインストール ディレクトリは*\<ドライブ\>*: \program files \common files \enterprise シングル サインオンします。  
+2.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定のインストール ディレクトリは*\<ドライブ\>*: \Program Files\Common \enterprise シングル サインオンします。  
   
-3.  型**ssoclient – setcredentials\<アプリケーション名\>** ここで、 **\<アプリケーション名\>** 対象となる特定のアプリケーションは、資格情報を設定します。  
+3.  型**ssoclient – setcredentials\<アプリケーション名\>** ここで、 **\<アプリケーション名\>** 対象となる特定のアプリケーションには資格情報を設定します。  
   
     > [!NOTE]
     >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  
   
-4.  ユーザーの資格情報を要求されたら、このアプリケーションのユーザー パスワードを入力します。  
+4.  ユーザーの資格情報が表示されたら、このアプリケーションのユーザーのパスワードを入力します。  
   
-5.  ユーザー マッピングを作成していない場合、SSO システムからアプリケーションのユーザー ID を入力するよう要求されます。  
+5.  ユーザー マッピングを作成していない場合、SSO システムのアプリケーションのユーザー ID を求められます。  
   
 ## <a name="see-also"></a>参照  
  [SSO 関連アプリケーション](../core/sso-affiliate-applications.md)   

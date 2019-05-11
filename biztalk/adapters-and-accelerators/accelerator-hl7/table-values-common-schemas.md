@@ -16,12 +16,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 90c66ee201e5a73d8f632a8002a9a3627d1885f1
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4f577b96f07daa6367a6e68550df441b9d355c5d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36968067"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65286562"
 ---
 # <a name="table-values-common-schemas"></a>テーブル値の一般的なスキーマ
 Microsoft BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) を生成、 **tablevalues_*\<バージョン\>*.xsd** HL7 バージョンごとに、ファイルし、のルートにあるファイルを見つけますHL7 バージョン固有のフォルダー。 データ型の共通スキーマ ファイルでは、テーブル値の一般的なスキーマ ファイルを参照します。  

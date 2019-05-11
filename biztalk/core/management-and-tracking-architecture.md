@@ -1,5 +1,5 @@
 ---
-title: 管理と追跡アーキテクチャ |Microsoft ドキュメント
+title: 管理と追跡アーキテクチャ |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 660d4e71bc70d3ad8bc808040d4b56d6656753d1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9a33d09fab9b79240574fc8e0254065345230f3a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22262042"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65330044"
 ---
 # <a name="management-and-tracking-architecture"></a>アーキテクチャの管理および追跡
 このトピックでは、コンポーネントとアーキテクチャの管理および追跡について説明します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [ビジネス アクティビティ監視 (BAM)](../core/business-activity-monitoring-bam.md)  
+-   [ビジネス アクティビティの監視 (BAM)](../core/business-activity-monitoring-bam.md)  
   
 -   [メッセージとインスタンスの追跡の計画](../core/planning-for-message-and-instance-tracking.md)  
   

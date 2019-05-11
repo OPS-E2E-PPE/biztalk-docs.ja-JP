@@ -16,12 +16,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 396905f9b4cc8c1ebb0dbd1d3051b6f40566662a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 180e11f3f4c4c0406927614d4351eb19fef1fb95
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36971915"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65290394"
 ---
 # <a name="mllp-send-adapter-processing"></a>MLLP 送信アダプターの処理
 最小限の下位レイヤー プロトコル (MLLP) 送信アダプターでは、次の構成で一方向と双方向トランスポート モードをサポートしています。  
@@ -70,7 +70,7 @@ ms.locfileid: "36971915"
 |Instance|条件|  
 |--------------|---------------|  
 |HL7 (強化された、元の遅延)|1.XML は含まれません。<br />2.構造を持っていないため、MSA1 フィールドを取得することはできません。または、(CA、AA、CR、AR、CE、AE) に指定できる値のいずれかの MSA1 フィールドを含んでいません。|  
-|静的|確認の失敗または成功した場合に指定できる値のいずれかと一致しません|  
+|スタティック|確認の失敗または成功した場合に指定できる値のいずれかと一致しません|  
 |XML が含まれています|(コンテンツ) に関係なく受け入れ ACK として扱われ、元のメッセージを削除しています。|  
   
 ### <a name="error-conditions"></a>エラー条件  

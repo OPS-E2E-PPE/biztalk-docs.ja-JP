@@ -13,12 +13,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9741b970873b97401968f7b87ee76ac853c60ae4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5978888da09b746eb1c6ba3905833d1360502919
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36987387"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65370229"
 ---
 # <a name="using-the-servicemodel-metadata-utility-tool-with-the-biztalk-adapter-for-siebel-ebusiness-applications"></a>BizTalk adapter 用 Siebel eBusiness Applications、ServiceModel メタデータ ユーティリティ ツールを使用します。
 ServiceModel メタデータ ユーティリティ ツール (svcutil.exe) を使用して、操作のための WCF クライアント クラスを生成することができる[!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]を公開します。 WCF クライアント クラスを生成する svcutil.exe を実行した後、コードで生成されたファイルをインクルードし、Siebel システムに対して操作を実行する WCF クライアント クラスのインスタンスを作成できます。  

@@ -1,5 +1,5 @@
 ---
-title: '手順 7: ビルドと LOBWebApplication SDK サンプルの展開 |Microsoft Docs'
+title: 手順 7:LOBWebApplication SDK サンプルのビルドと |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,15 +15,15 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3a0716c854c20f5ea7fa7d2ad91576cb142f6a02
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5bbe4c2bad357f479c337b8f889a4e4ed588dcf4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36996187"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65280633"
 ---
-# <a name="step-7-building-and-deploying-the-lobwebapplication-sdk-sample"></a>手順 7: ビルドと LOBWebApplication SDK サンプルの展開
-ここでは、Fabrikam が PIP (Partner Interface Process) 要求を Contoso に送信するために使用する基幹業務 (LOB) アプリケーションを作成します。 LOBWebApplication プロジェクトは、Microsoft® で見つかります[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]SDK フォルダー。 Web アプリケーションを実行するには、Microsoft インターネット インフォメーション サービス (IIS) の仮想ディレクトリを作成し、LOBWebApplication プロジェクトを作成するがあります。  
+# <a name="step-7-building-and-deploying-the-lobwebapplication-sdk-sample"></a>手順 7:LOBWebApplication SDK サンプルのビルドと
+この手順では、Fabrikam が Contoso にプロセス PIP (Partner Interface) 要求を送信に使用する基幹業務 (LOB) アプリケーションを作成します。 LOBWebApplication プロジェクトは、Microsoft® で見つかります[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]SDK フォルダー。 Web アプリケーションを実行するには、Microsoft インターネット インフォメーション サービス (IIS) の仮想ディレクトリを作成し、LOBWebApplication プロジェクトを作成するがあります。  
   
 ### <a name="to-create-the-lobwebapplication-virtual-directory"></a>LOBWebApplication 仮想ディレクトリを作成するには  
   

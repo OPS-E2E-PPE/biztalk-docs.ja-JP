@@ -1,5 +1,5 @@
 ---
-title: HTTP ノードをテストする方法 |Microsoft ドキュメント
+title: HTTP ノードをテストする方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,37 +15,37 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2790a4e3fa0ff1ed9a9b9b0c2018108c9cbb1282
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 27e3ebdc1c75ba0e42e5af8a57e194d3ab363753
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22255530"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65333881"
 ---
 # <a name="how-to-test-the-http-node"></a>HTTP ノードをテストする方法
-HTTP ノードをテストするには、次の手順を実行します。  
+HTTP ノードをテストする次の手順に従います。  
   
 ### <a name="to-test-the-http-node"></a>HTTP ノードをテストするには  
   
-1.  PeopleSoft Enterprise でに移動**PeopleTools**、 **Integration Broker**、**モニター**、 **Monitor Message**です。  
+1.  PeopleSoft Enterprise に移動します。 **PeopleTools**、 **Integration Broker**、**モニター**、**メッセージの監視**します。  
   
      ![](../core/media/psadapter-40-task-gatewaytestnode.gif "PSAdapter_40_Task_GatewayTestNode")  
   
-2.  クリックして、**ノードの状態**タブです。  
+2.  をクリックして、**ノードの状態**タブ。  
   
-3.  **Message Node Name**フィールドに「 `MSEXTERNAL`、[] をクリックし、、**ルックアップ**アイコン。  
+3.  **Message Node Name**フィールドに、入力`MSEXTERNAL`、 をクリックし、**ルックアップ**アイコン。  
   
-4.  **Message Node Name** **MSEXTERNAL**です。  
+4.  **Message Node Name**、 **MSEXTERNAL**します。  
   
-     PeopleSoft が HTTP 経由で通信していることを示すメッセージが表示されます。  
+     メッセージが表示され、PeopleSoft が HTTP 経由で通信することを示します。  
   
      ![](../core/media/psadapter-41-task-gatewaytestsuccess.gif "PSAdapter_41_Task_GatewayTestSuccess")  
   
-     メッセージが表示されない場合は、次のことを確認します。  
+     メッセージを受け取らない場合は、次のことを確認します。  
   
-    1.  IP アドレスおよびポートが、受信ポートおよびノードと一致していること。  
+    1.  IP アドレスとポート、受信ポートと、ノードの間と一致します。  
   
-    2.  BizTalk Server が実行されていること。  
+    2.  BizTalk Server が実行されています。  
   
 ## <a name="see-also"></a>参照  
- [PeopleSoft HTTP ホストおよびポートを作成します。](../core/creating-a-peoplesoft-http-host-and-port.md)
+ [PeopleSoft の HTTP ホストとポートを作成する](../core/creating-a-peoplesoft-http-host-and-port.md)

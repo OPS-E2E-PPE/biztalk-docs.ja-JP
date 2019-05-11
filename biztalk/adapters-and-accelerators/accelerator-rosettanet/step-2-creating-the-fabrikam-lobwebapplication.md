@@ -1,5 +1,5 @@
 ---
-title: '手順 2: Fabrikam LOBWebApplication の作成 |Microsoft Docs'
+title: 手順 2:Fabrikam LOBWebApplication の作成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,25 +15,25 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9c55234d8ee9c123c9efe9e7ec66b7c0db590b54
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5be0577e7fb301ceecf1e727c34cd078348c33e4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36966627"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65281222"
 ---
-# <a name="step-2-creating-the-fabrikam-lobwebapplication"></a>手順 2: Fabrikam LOBWebApplication の作成
-ここでは、Fabrikam が 3A2 PIP 要求を Contoso に送信するために使用する LOB アプリケーションを作成します。 LOBWebApplication プロジェクトは、[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] SDK にインストールされています。 Web アプリケーションを実行するには、Microsoft インターネット インフォメーション サービス (IIS) 仮想ディレクトリを作成し、LOBWebApplication プロジェクトをビルドがあります。  
+# <a name="step-2-creating-the-fabrikam-lobwebapplication"></a>手順 2:Fabrikam LOBWebApplication の作成
+この手順では、Fabrikam が Contoso 3 a 2 PIP 要求を送信に使用する LOB アプリケーションを作成します。 LOBWebApplication プロジェクトがインストールされている、 [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] SDK。 Web アプリケーションを実行するには、Microsoft インターネット インフォメーション サービス (IIS) 仮想ディレクトリを作成し、LOBWebApplication プロジェクトをビルドがあります。  
   
 > [!NOTE]
->  ダブル アクション チュートリアルを完了済みであれば、この手順を実行する必要はありません。  
+>  DoubleAction チュートリアルを完了した場合、この手順を実行する必要はありません。  
   
 ### <a name="to-create-the-lobwebapplication-virtual-directory"></a>LOBWebApplication 仮想ディレクトリを作成するには  
   
 1.  クリックして**開始**、 をポイント**管理ツール**、順にクリックします**インターネット インフォメーション サービス マネージャー**します。  
   
     > [!NOTE]
-    >  ダブル アクション チュートリアルを完了済みであれば、このチュートリアルで LOBWebApplication 仮想ディレクトリを作成しています。 その場合は、この手順を実行する必要はありません。 仮想ディレクトリからのアクセス許可を変更する必要が、ただし、**スクリプトを実行する**に**読み取り**します。  
+    >  ダブル アクション チュートリアルをまだ実行して場合、LOBWebApplication 仮想ディレクトリをそのチュートリアルでは作成が既には。 場合は、これらの手順を実行する必要はありません。 仮想ディレクトリからのアクセス許可を変更する必要が、ただし、**スクリプトを実行する**に**読み取り**します。  
   
 2.  インターネット インフォメーション サービス マネージャーで  **< computer_name > (ローカル コンピューター)**、順に展開**Websites**します。  
   
@@ -54,7 +54,7 @@ ms.locfileid: "36966627"
 1.  をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**管理ツール**、順にクリックします**SharePoint Central Administration**。  
   
     > [!NOTE]
-    >  ダブル アクション チュートリアルを完了済みであれば、チュートリアルで LOBWebApplication 仮想ディレクトリを SharePoint から除外しています。 その場合は、この手順を実行する必要はありません。  
+    >  ダブル アクション チュートリアルを完了済みの場合は既に LOBWebApplication 仮想ディレクトリから除外 SharePoint チュートリアルではそのします。 場合は、これらの手順を実行する必要はありません。  
   
 2.  **サーバーの全体管理**] ページの [、**仮想サーバーの構成**セクションで、**アップグレード仮想サーバーの拡張または**します。  
   

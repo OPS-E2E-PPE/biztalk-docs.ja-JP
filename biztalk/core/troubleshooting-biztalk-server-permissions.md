@@ -12,14 +12,14 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7c4187d666cb0f93229a0cf4117ca24b92d479c9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f8996bac83803917c3fb3fd5b209d5cbfa73ff75
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36995995"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65292937"
 ---
-# <a name="troubleshooting-biztalk-server-permissions"></a>BizTalk Server のアクセス許可に関するトラブルシューティング
+# <a name="troubleshooting-biztalk-server-permissions"></a>BizTalk Server のアクセス許可のトラブルシューティング
 通常、BizTalk Server のアクセス許可に関する問題は、次のカテゴリのいずれかに分類されます。  
   
 - SQL Server 権限  

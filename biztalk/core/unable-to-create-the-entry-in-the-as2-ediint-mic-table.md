@@ -12,14 +12,14 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0d0a9cf5f472a449d8632553ec41738c7e4ebd9f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 35dd74bc872968b22dd74826e10cb6f23ea24b5c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36970451"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65292823"
 ---
-# <a name="unable-to-create-the-entry-in-the-as2-ediint-mic-table"></a>AS2 EDIINT MIC テーブルにエントリを作成できません
+# <a name="unable-to-create-the-entry-in-the-as2-ediint-mic-table"></a>AS2 EDIINT MIC テーブルにエントリを作成できません。
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                                                                                                               |
@@ -30,10 +30,10 @@ ms.locfileid: "36970451"
 |  イベント ソース   |                                            [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI                                             |
 |    コンポーネント    |                                                                                  AS2 エンジン                                                                                   |
 |  シンボル名  |                                                                        AS2MicDataStoreCreateEntryError                                                                        |
-|  メッセージ テキスト   | AS2 EDIINT MIC テーブルにエントリを作成できません。 テーブルに挿入しようとしている AS2-From、AS2-To、および MessageID の組み合わせが重複している可能性があります。  エラー: {0} |
+|  メッセージ テキスト   | AS2 EDIINT MIC テーブルにエントリを作成できません。 これは、重複する AS2 によって発生する可能性があります、AS2 から-をおよび MessageID の組み合わせ、テーブルに書き込まれています。  エラー: {0} |
   
 ## <a name="explanation"></a>説明  
- このエラーは、データベース接続に問題があるか、または行のキーが既にデータベース テーブルに存在していることを示します。 エラー メッセージの全文には、挿入操作が失敗した理由に関する情報が示されます。 テーブルのエントリは MDN の受信後に (成功または失敗にかかわらず) 削除されるので、このエラーが MDN の受信後に発生することはありません。  
+ このエラーは、データベース接続の問題またはデータベース テーブルのキーが既に存在する行のいずれかを示します。 完全なエラー メッセージは、挿入操作が失敗した理由に関する情報を提供する必要があります。 MDN の受信後に (成功または失敗) かどうか、MDN が受信された後、このエラーは発生しないように、テーブル内のエントリが削除されます。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- このエラーを解決するには、挿入操作が発生した理由について、エラー メッセージの全文を確認します。 SQL の EDIINT_MIC テーブルで、AS2-From と AS2-To MessageID の重複した組み合わせがあるかどうかをチェックします。 ある場合は、削除します。
+ このエラーを解決するには、挿入操作が失敗した理由については、完全なエラー メッセージを確認します。 SQL では、EDIINT_MIC テーブル内かどうかが確認重複する AS2-からおよび AS2 の MessageID の組み合わせ。 そうである場合は、それらを削除します。

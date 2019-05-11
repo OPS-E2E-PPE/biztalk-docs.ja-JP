@@ -12,14 +12,14 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6e1668e7e9159ef7c922c68b54893c604b84c560
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 04e172e54544ddfe0d2dd9404dbe1672be39a17f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37017341"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65292829"
 ---
-# <a name="unable-to-create-service-behavior-configuration-element-from-xml-configuration"></a>XML 構成からサービス動作の構成要素を作成できません
+# <a name="unable-to-create-service-behavior-configuration-element-from-xml-configuration"></a>XML 構成からサービス動作の構成要素を作成できません。
 ## <a name="details"></a>詳細  
 
 |                 |                                                                                    |
@@ -33,10 +33,10 @@ ms.locfileid: "37017341"
 |  メッセージ テキスト   |  XML 構成からサービス動作の構成要素を作成できません。   |
 
 ## <a name="explanation"></a>説明  
- このエラーは、アダプターにサービス動作の構成が読み込まれなかったことを示します。 この状況は、主に WCF-Custom アダプターおよび WCF-CustomIsolated アダプターで発生します。  
+ このエラーは、アダプターでは、サービス動作の構成は読み込まれませんでしたを示します。 Wcf-custom および Wcf-customisolated アダプターで主に、このような状況が発生します。  
 
 ## <a name="user-action"></a>ユーザーの操作  
- サービス動作を構成するには、次の手順を実行します。  
+ サービス動作を構成するのにには、次の手順を使用します。  
 
 #### <a name="to-configure-the-service-behavior"></a>サービス動作を構成するには  
 
@@ -44,7 +44,7 @@ ms.locfileid: "37017341"
 
 2. コンソール ルートで  [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]、展開**BizTalk グループ**、展開**アプリケーション**します。  
 
-3. アプリケーションを特定し、次にトランスポートを特定します。  
+3. アプリケーションを見つけて、トランスポートを特定します。  
 
 4. トランスポート名を右クリックします。  
 
@@ -52,7 +52,7 @@ ms.locfileid: "37017341"
 
 6. ポート**型**一覧で、適切なポートを選択します。  
 
-7. クリックして**構成**します。  
+7. をクリックして**構成**です。  
 
 8. **WCF [**<em>トランスポートの種類</em>**] トランスポートのプロパティ**ダイアログ ボックスで、をクリックして、**動作**タブ。  
 

@@ -2,12 +2,12 @@
 redirect_url: /biztalk/core/deploying-biztalk-adapter-for-peoplesoft-enterprise/
 redirect_document_id: true
 ROBOTS: NOINDEX
-ms.openlocfilehash: 907c21377a6affd5a99576137a5babaa1626c135
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 7f8c87e4d29b06b46b559dccf18c3e1038a34fae
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25971304"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65332119"
 ---
 # <a name="import-binding-files"></a>バインド ファイルをインポートします。
 
@@ -18,21 +18,21 @@ ms.locfileid: "25971304"
   
 -   新しいコンピュータで、応答用のフォルダが存在し、同じである。同じでない場合は、バインド ファイルを編集します。  
   
--   PeopleSoft Enterprise システム パスワードが構成に存在する場合、パスワードが ***** としてバインド ファイルに保存されている。 
+-   PeopleSoft Enterprise システム パスワードは、構成に存在する場合、として保存されます * * *、バインド ファイルにします。 
   
 > [!NOTE]
->  展開すると、受信場所の構成が上書きされます。 バインド ファイルとアセンブリを展開先のコンピュータに展開すると、送信ポートと受信場所が、インポートされた XML バインド ファイルの送信ポートと受信場所に置き換えられます。  
+>  展開すると、受信場所の構成が上書きされます。 バインド ファイルとアセンブリをターゲット コンピューターに展開すると、送信ポートと受信場所が、インポートされた XML バインド ファイルの送信ポートと受信場所に置き換えられます。  
   
- バインド ファイルをインポートする手順については、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ドキュメントの「BizTalk グループにバインドをインポートする方法」を参照してください。  
+ バインド ファイルをインポートする方法の詳細な手順で「どのようにインポート グループにバインドする、BizTalk」のトピックを参照してください、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ドキュメント。  
   
 ## <a name="clean-the-target-computer"></a>ターゲット コンピューターをクリーニングします。  
-新しいアプリケーションの配置ターゲット コンピューターのクリーニング、送信ポートを削除、および受信場所をオーケストレーションにバインドされます。  
+新しいアプリケーションをデプロイするためのターゲット コンピューターのクリーニング、送信ポートを削除する受信場所をオーケストレーションにバインドされます。  
   
-Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] が展開先のコンピューターにインストールされていない場合は、次のスクリプトを実行してポートを削除することができます。  
+Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] がターゲット コンピューターにインストールされていない場合は、次のスクリプトを実行してポートを削除することができます。  
   
-**\<Microsoft BizTalk Server\>\SDK\Samples\Admin\WMI\Remove Port\VBScript\RemoveSendPort.vbs の送信**  
+**\<Microsoft BizTalk Server\>\SDK\Samples\Admin\WMI\Remove Port\VBScript\RemoveSendPort.vbs を送信します。**  
   
-**\<Microsoft BizTalk Server\>\SDK\Samples\Admin\WMI\Remove 受信 Port\VBScript\RemoveReceivePort.vbs**  
+**\<Microsoft BizTalk Server\>\SDK\Samples\Admin\WMI\Remove Port\VBScript\RemoveReceivePort.vbs の受信**  
   
 たとえば、コマンド プロンプトで次のように実行します。  
   

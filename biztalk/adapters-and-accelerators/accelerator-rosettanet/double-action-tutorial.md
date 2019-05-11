@@ -20,27 +20,27 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 220f853788462d3c9b53b8fb043c65ac54872fd0
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 84d1e143385b55a1891255e96ec97974f4bdca89
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36973979"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65283784"
 ---
 # <a name="double-action-tutorial"></a>ダブル アクション チュートリアル
-このチュートリアルの内容 Microsoft® を使用して、エンド ツー エンド ソリューション[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]します。 ここでは、RosettaNet 準拠のソリューションを実装するために従う必要のある手順について詳しく説明します。この手順では、Contoso 社 (サプライヤー組織) と Fabrikam 社 (購入者組織) という 2 つの架空の会社間の取引先シナリオを作成します。  
+このチュートリアルの内容 Microsoft® を使用して、エンド ツー エンド ソリューション[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]します。 このチュートリアルには、2 つの架空の会社間の取引パートナー シナリオを作成して、RosettaNet 準拠のソリューションを実装するために従う必要のある手順が詳しく説明します。Contoso、サプライヤーの組織と Fabrikam の購入者組織の場合は。  
   
- このチュートリアルでは、以下の 4 種類の PIP (Partner Interface Process) を使用します。  
+ このチュートリアルでは、次の 4 つ異なる Partner Interface Process (Pip) を使用します。  
   
-- 0C2 - Asynchronous Test Request (非同期のテスト要求)  
+- 0c2 - 非同期テスト要求  
   
-- 0C4 - Synchronous Test Query (同期のテスト照会)  
+- 0 C 4 - クエリの同期のテスト  
   
-- 3A2 - Request Price and Availability (価格とアベイラビリティの要求)  
+- 3 a 2 - Request Price and Availability  
   
-- 3A4 - Request Purchase Order (発注の要求)  
+- 3A4 - 注文書の要求  
   
-  このチュートリアルは、RosettaNet ベースのソリューションの複数の異なる領域に対応しています。これらの領域には、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 管理コンソールを使用した作業、基幹業務 (LOB) アプリケーションの作成、エンタープライズ リソース計画 (ERP) システムを統合するために使用できるカスタム オーケストレーションの作成が含まれます。  
+  このチュートリアルのアドレスの処理など、RosettaNet ベースのソリューションのいくつかの異なる領域、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]管理コンソールで、基幹業務 (LOB) アプリケーションを作成して、統合に使用できるカスタム オーケストレーションの作成エンタープライズ リソース プランニング (ERP) システムです。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c364af2691767ac55a52afb52b77f09d39ef6d2d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 17af00eb0347a1654feafd59046596741829b9b0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37005072"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65323408"
 ---
 # <a name="one-or-more-segments-in-error"></a>エラーに 1 つ以上のセグメントが含まれています
 ## <a name="details"></a>詳細  

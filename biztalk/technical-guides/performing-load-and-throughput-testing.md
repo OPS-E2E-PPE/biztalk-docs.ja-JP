@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2d4313c073abff7022de99ac1d38375599b6ee43
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b1c9ad8fe4fb38ec09eb271e732894a244bea243
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36966915"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65291274"
 ---
 # <a name="performing-load-and-throughput-testing"></a>ロード テストとスループットのテストを実行します。
 必要があります使用可能なパフォーマンスとストレス テスト、運用環境に一致する環境。 この環境には、すべての標準的なサービスをインストールし、監視エージェントとウイルス対策ソフトウェアなど、実行している必要があります。  
@@ -33,4 +33,4 @@ ms.locfileid: "36966915"
 -   [維持可能な最大の追跡スループットの測定](http://go.microsoft.com/fwlink/?LinkID=153815)(http://go.microsoft.com/fwlink/?LinkID=153815)  
   
 ## <a name="see-also"></a>参照  
- [チェックリスト: 運用準備のテスト](../technical-guides/checklist-testing-operational-readiness.md)
+ [チェックリスト:運用準備のテスト](../technical-guides/checklist-testing-operational-readiness.md)

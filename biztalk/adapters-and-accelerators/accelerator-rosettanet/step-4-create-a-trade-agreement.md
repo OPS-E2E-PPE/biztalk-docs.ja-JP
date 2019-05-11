@@ -1,5 +1,5 @@
 ---
-title: '手順 4: 取引先アグリーメントの作成 |Microsoft Docs'
+title: 手順 4:取引アグリーメントの作成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,17 +16,17 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bbe74e1b214d733615bbc46deaea9f8a7e6c5134
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2aa9be8b5435b212838a40059e784b0f54c17b36
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36994635"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65280991"
 ---
-# <a name="step-4-create-a-trade-agreement"></a>手順 4: 取引先アグリーメントを作成します。
+# <a name="step-4-create-a-trade-agreement"></a>手順 4:取引アグリーメントを作成します。
 この手順で、Microsoft® を使用してホームとパートナーの組織間の取引アグリーメントを作成する[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]管理コンソール。  
 
-### <a name="to-create-a-trade-agreement"></a>取引アグリーメントを作成するには  
+### <a name="to-create-a-trade-agreement"></a>取引先アグリーメントを作成するには  
 
 1. **[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]** 管理コンソールで、展開**BizTalk\<バージョン\>Accelerator for RosettaNet**、右クリックして**契約**、 をクリックして**新規**、 をクリックし、**契約**します。  
 
@@ -49,16 +49,16 @@ ms.locfileid: "36994635"
    |----------------|--------------------------------------------------------------------------------------------|
    | **アクションの URL** |                   型 **<http://localhost/BTARNApp/RNIFReceive.aspx>** します。                   |
    | **シグナル URL** |                   型 **<http://localhost/BTARNApp/RNIFReceive.aspx>** します。                   |
-   |  **同期 URL**  | 空白のままにします。 同期 URL は、同期 PIP (Partner Interface Process) には必要ありません。 |
+   |  **同期 URL**  | 空白のままにします。 同期 URL が必要なため、同期プロセス PIP (Partner Interface) ではありません。 |
 
 
 4. クリックして**適用**、順にクリックします**OK**します。  
 
-   取引アグリーメントを作成したら、アクティブ化する必要があります。  
+   取引先アグリーメントを作成した後は、アクティブ化する必要があります。  
 
-### <a name="to-activate-the-trade-agreement"></a>取引アグリーメントをアクティブ化するには  
+### <a name="to-activate-the-trade-agreement"></a>取引先アグリーメントをアクティブ化するには  
 
 - [!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]管理コンソールで、展開[!INCLUDE[btaBTARNNoVersionui](../../includes/btabtarnnoversionui-md.md)]、 をクリックして**契約**を右クリックして**取引先アグリーメント**で結果ウィンドウをクリック**Activate**.  
 
 ## <a name="see-also"></a>参照  
- [手順 5: ミラー アグリーメントの作成](../../adapters-and-accelerators/accelerator-rosettanet/step-5-create-a-mirror-agreement.md)
+ [手順 5:ミラー アグリーメントの作成](../../adapters-and-accelerators/accelerator-rosettanet/step-5-create-a-mirror-agreement.md)

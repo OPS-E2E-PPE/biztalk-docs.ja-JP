@@ -16,15 +16,15 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cd0afe156d33dca1dabc55f31203fbeecbbb37d9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: bad72680d93d7aa14d7a9ca9302edfa26ef28731
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36977187"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65282879"
 ---
 # <a name="orchestration-samples"></a>オーケストレーション サンプル
-The Microsoft®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]ソフトウェア開発キット (SDK) には、いくつかのオーケストレーション サンプルが含まれています。 ここでは、これらのオーケストレーション サンプルの機能、サンプルを構築して実行する手順、および予期される結果について詳細に説明します。  
+The Microsoft®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]ソフトウェア開発キット (SDK) には、いくつかのオーケストレーション サンプルが含まれています。 ここでは、オーケストレーション サンプルを構築して、サンプルと予想される結果を実行する手順が示されている機能の詳細を示します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

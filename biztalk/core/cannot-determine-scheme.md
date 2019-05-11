@@ -12,12 +12,12 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e6086562f593b7ca04db63b7fb41f5cf128afe9d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: fb18e7d19e9eca1d68839bd626adbcd838b571cc
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37007171"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65357637"
 ---
 # <a name="cannot-determine-scheme"></a>スキームを確認できません
 ## <a name="details"></a>詳細  
@@ -30,13 +30,13 @@ ms.locfileid: "37007171"
 |  イベント ソース   |                                         0                                          |
 |    コンポーネント    |                                         0                                          |
 |  シンボル名  |                                         0                                          |
-|  メッセージ テキスト   |                 スキームを確認できません。有効なバインドを指定してください。                  |
+|  メッセージ テキスト   |                 スキームを判断することはできません。有効なバインドを指定します。                  |
   
 ## <a name="explanation"></a>説明  
- 指定されているトランスポート バインド要素にスキームがありません。  
+ 指定されたトランスポート バインド要素のスキームではありません。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- 有効なバインディングを選択し、トランスポート バインディング要素のスキームを有効な内容にします。 カスタム バインドを使用する場合は、有効なトランスポート バインド要素が指定されていることを確認します。  
+ 有効なバインドを選択し、トランスポート バインド要素が有効なスキームを確認します。 カスタム バインドを使用する場合、有効なトランスポート バインド要素が指定されたことを確認します。  
   
  詳細については、の次のリソースを参照してください、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプします。  
   

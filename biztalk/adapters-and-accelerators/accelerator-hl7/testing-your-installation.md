@@ -15,12 +15,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6d2d94ffce01bd299ad836b7f1fb7c82f66a8196
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3780ca8555efdac3d3c46e96080bb43d8226e339
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36971907"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65286539"
 ---
 # <a name="testing-your-installation"></a>インストールのテスト
 設定することができます、[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]のエンド ツー エンド チュートリアルを手動で実行されているか、エンド ツー エンド チュートリアル プログラムを実行することによってテスト用インストールします。 プログラムを実行するをクリックするか、 **Launch Tutorial**セットアップ中にボタンまたは C:\Program files \microsoft biztalk EndToEndTutorial.exe を実行\<バージョン\>HL7\SDK\ のアクセラレータ(後のインストールと構成を実行している) エンド ツー エンド チュートリアル フォルダーです。 これらの自動化されたアクションのいずれかは、チュートリアルを実行して手動で実行する同じセットアップ手順を実行します。 エンド ツー エンド チュートリアル プログラムは、次を行います。  

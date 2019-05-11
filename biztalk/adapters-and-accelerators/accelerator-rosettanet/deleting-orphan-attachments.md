@@ -16,12 +16,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 99b31633c27aaed7cb8ae7289f383a5bfcac8d1b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 927bedacd4aed0554b90b634bd0b9ec813d6ef3e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36971891"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65283761"
 ---
 # <a name="deleting-orphan-attachments"></a>孤立した添付ファイルを削除します。
 Microsoft[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]受信するメッセージの添付ファイルを格納します。 特定の状況で[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]、添付ファイルを保存しますが、孤立した添付ファイルに生成される、MessagesToLOB テーブルから関連するメッセージを削除します。 個の添付ファイルをマニフェストが無効なメッセージ numberofattachments マニフェストなどを送信するときに発生する可能性がこの 0 を = です。 定期的に、システムのパフォーマンスを維持するために孤立した添付ファイルを削除することがあります。  
@@ -35,7 +35,7 @@ Microsoft[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentve
 delete from attachments where outMessageID not in (select messageid from messagestolob)  
 ```  
   
- さらに、特定の期間より古く、それ以上の追跡を必要としない添付ファイルは削除することをお勧めします。 Attachments テーブルには、古い添付ファイルの削除に使用できる `TimeCreated` プロパティが含まれています。 このプロセスは、古いダイジェストの削除に使用するプロセスに似ています。 古いダイジェストを削除するストアド プロシージャのサンプル SQL ステートメントの場合、[ダイジェストを削除する](../../adapters-and-accelerators/accelerator-rosettanet/deleting-digests.md)を参照してください。  
+ さらに、特定の期間より古く、それ以上の追跡を必要としない添付ファイルは削除することをお勧めします。 Attachments テーブルには、古い添付ファイルの削除に使用できる `TimeCreated` プロパティが含まれています。 このプロセスは、古いダイジェストの削除に使用するプロセスに似ています。 古いダイジェストを削除するストアド プロシージャのサンプル SQL ステートメントの場合、次を参照してください。[ダイジェストを削除する](../../adapters-and-accelerators/accelerator-rosettanet/deleting-digests.md)します。  
   
  また、それぞれの MessageID 列にある Attachments テーブルおよび MessagestoLOB テーブルにはインデックスを付けることをお勧めします。  
   

@@ -1,5 +1,5 @@
 ---
-title: '手順 9: 検証し、マップ プロジェクトのビルド |Microsoft Docs'
+title: 手順 9:検証し、マップ プロジェクトのビルド |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,14 +17,14 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: eb542ffd185cfa0f84c1e73ce17becfacdb709f3
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 0f41cc3bbe235dfda75563d94ae0173737a58c75
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36966651"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65286635"
 ---
-# <a name="step-9-validate-and-build-the-map-project"></a>手順 9: 検証し、マップ プロジェクトのビルド
+# <a name="step-9-validate-and-build-the-map-project"></a>手順 9:検証し、マップ プロジェクトのビルド
 この手順で使用する、**マップの検証**コマンドをマップ、内部の不整合が含まれていますかを妨げる、マッピング スキーマを効果的に使用されているその他の問題があるかを判断します。 また、作成したリソース (スキーマおよびマップ) を含むアセンブリを生成するプロジェクトをビルドします。 またこれにより、これまでに完了した作業でコンパイル エラーがないこと。  
   
 ### <a name="to-validate-the-map-project"></a>マップのプロジェクトを検証するには  
@@ -41,7 +41,7 @@ ms.locfileid: "36966651"
   
    成功メッセージが表示されない場合は、マップのプロジェクトをトラブルシューティングします。  
   
-  続行する[手順 10: オーケストレーションを作成する](../../adapters-and-accelerators/accelerator-hl7/step-10-create-an-orchestration.md)します。  
+  続行する[手順 10。オーケストレーションを作成する](../../adapters-and-accelerators/accelerator-hl7/step-10-create-an-orchestration.md)します。  
   
 ## <a name="see-also"></a>参照  
  [メッセージ強化のチュートリアル](../../adapters-and-accelerators/accelerator-hl7/message-enrichment-tutorial.md)

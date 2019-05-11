@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c8cc3c8763115e93387bed5195f234bf4a070b9b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 773741699d040a909ef56bf2034a3b52fddee79f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36986907"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65394893"
 ---
 # <a name="port-configuration-errors"></a>ポート構成エラー
 診断および WCF のポート構成エラーを解決するための情報です。  
@@ -40,7 +40,7 @@ ms.locfileid: "36986907"
 ### <a name="user-action"></a>ユーザーの操作  
  ポート構成ウィザードを使用すると、結合されるすべてのポートは、同じ通信方式 (一方向または要求 - 応答) になります。  
   
- ポートの構成の詳細については、[ポート構成ウィザードを実行する方法](../core/how-to-run-the-port-configuration-wizard.md)を参照してください。
+ ポートの構成の詳細については、次を参照してください。[ポート構成ウィザードを実行する方法](../core/how-to-run-the-port-configuration-wizard.md)します。
  
 ## <a name="port-types-that-have-a-combination-of-one-way-and-request-response-operations-are-not-allowed"></a>一方向の操作および要求 - 応答の操作の組み合わせを保持するポートの種類は許可されていません 
   

@@ -1,5 +1,5 @@
 ---
-title: '手順 8 b: HI System 用のパーティ情報の構成 |Microsoft Docs'
+title: 手順 8 b:HI System 用のパーティ情報の構成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2d2cfc31d4bc42b599d7403006f8b44a8bfab447
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: dd7afd025337d10e5f18fad03ded58544ce07ff0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36973747"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65286595"
 ---
-# <a name="step-8b-configure-party-information-for-the-hi-system"></a>手順 8 b: HI System 用のパーティ情報の構成
+# <a name="step-8b-configure-party-information-for-the-hi-system"></a>手順 8 b:HI System 用のパーティ情報を構成します。
 この手順では、HI System 用のパーティ情報を構成します。  
   
 ### <a name="to-configure-the-hi-system-party-information"></a>HI System パーティ情報を構成するには  
@@ -32,4 +32,4 @@ ms.locfileid: "36973747"
   
 4. **送信ポート**ウィンドウの**名前**最初の行では、次のように選択します。 **HIS_Send**、順にクリックします**OK**。  
   
-   続行する[手順 9: BizTalk Server の再起動](../../adapters-and-accelerators/accelerator-hl7/step-9-restart-biztalk-server-hl7-main.md)します。
+   続行する[手順 9。BizTalk Server の再起動](../../adapters-and-accelerators/accelerator-hl7/step-9-restart-biztalk-server-hl7-main.md)します。

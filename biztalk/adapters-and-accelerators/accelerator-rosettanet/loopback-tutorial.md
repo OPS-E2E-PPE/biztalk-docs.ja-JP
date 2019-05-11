@@ -17,40 +17,40 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 97714d5f7e604acbb798739fc4eb545a07968980
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f96d81e59686759300e996e2f257da5afbc91ed0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37010099"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65283286"
 ---
 # <a name="loopback-tutorial"></a>Loopback チュートリアル
 このチュートリアルには、Microsoft® を使用する方法を説明する詳細な手順が含まれています。[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]を 1 台のコンピューターをホームとパートナーの組織間のプロセスの実装をシミュレートします。  
   
- 実際の運用環境では、取引先組織はリモート コンピューターに実装されます。 このチュートリアルでは、ループバック ユーティリティを使用して、同じコンピューター上で取引先をシミュレートするためのミラー取引アグリーメントを作成します。 1 台のコンピューターでループバックを行うシナリオの使用は、開発とテストを目的としたものです。 運用環境ではループバック ユーティリティを使用しないことをお勧めします。  
+ 実際の運用環境で、パートナー組織の実装は、リモート コンピューターに存在します。 このチュートリアルでは、同じコンピューター上で取引をシミュレートするためのアグリーメントを取引先ミラーを作成するのに、Loopback ユーティリティを使用します。 1 台のコンピューターのループバック シナリオを使用して開発およびテスト目的に適しています。 運用環境で、Loopback ユーティリティを使用しないようにすることをお勧めします。  
   
- このループバック シナリオでは署名メッセージはサポートされないため、否認不可もサポートされません。  
+ このループバック シナリオは、メッセージの署名をサポートしていませんし、ため、否認不可はサポートされません。  
   
- 証明機関が構成されており、テスト目的に使用できる暗号化用の秘密キーがある場合は、このシナリオではメッセージの暗号化がサポートされます。  
+ このシナリオは、テスト目的で使用できる暗号化用の秘密キーを使用して、構成されている証明機関がある場合、メッセージの暗号化をサポートしています。  
   
- このチュートリアルでは、ホーム組織、取引先組織、取引アグリーメントを作成し、ループバック ユーティリティを使用してミラー アグリーメントを作成し、次にサンプル プロセスを実行してループバック シナリオを検証します。  
+ このチュートリアルでは、Loopback ユーティリティを使用してミラー アグリーメントを作成するや、ループバック シナリオを確認するサンプル プロセスを実行し、ホーム組織、取引先組織、取引先アグリーメントを作成します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
 -   [チュートリアルの準備](../../adapters-and-accelerators/accelerator-rosettanet/preparing-for-the-tutorial.md)  
   
--   [手順 1: ホーム組織の作成](../../adapters-and-accelerators/accelerator-rosettanet/step-1-create-the-home-organization.md)  
+-   [ステップ 1: ホーム組織の作成](../../adapters-and-accelerators/accelerator-rosettanet/step-1-create-the-home-organization.md)  
   
--   [手順 2: 取引先組織の作成](../../adapters-and-accelerators/accelerator-rosettanet/step-2-create-the-partner-organization.md)  
+-   [手順 2:取引先組織の作成](../../adapters-and-accelerators/accelerator-rosettanet/step-2-create-the-partner-organization.md)  
   
--   [手順 3: Partner Interface Process の編集](../../adapters-and-accelerators/accelerator-rosettanet/step-3-edit-the-partner-interface-process.md)  
+-   [ステップ 3:PIP (Partner Interface Process) の編集](../../adapters-and-accelerators/accelerator-rosettanet/step-3-edit-the-partner-interface-process.md)  
   
--   [手順 4: 取引先アグリーメントの作成](../../adapters-and-accelerators/accelerator-rosettanet/step-4-create-a-trade-agreement.md)  
+-   [手順 4:取引契約の作成](../../adapters-and-accelerators/accelerator-rosettanet/step-4-create-a-trade-agreement.md)  
   
--   [手順 5: ミラー アグリーメントの作成](../../adapters-and-accelerators/accelerator-rosettanet/step-5-create-a-mirror-agreement.md)  
+-   [手順 5:ミラー アグリーメントの作成](../../adapters-and-accelerators/accelerator-rosettanet/step-5-create-a-mirror-agreement.md)  
   
--   [手順 6: オーケストレーションの開始](../../adapters-and-accelerators/accelerator-rosettanet/step-6-start-orchestrations.md)  
+-   [手順 6:オーケストレーションの開始](../../adapters-and-accelerators/accelerator-rosettanet/step-6-start-orchestrations.md)  
   
--   [手順 7: サンプル LOB メッセージの作成](../../adapters-and-accelerators/accelerator-rosettanet/step-7-create-a-sample-lob-message.md)  
+-   [手順 7:サンプル LOB メッセージの作成](../../adapters-and-accelerators/accelerator-rosettanet/step-7-create-a-sample-lob-message.md)  
   
--   [手順 8: BTARN データベース内のメッセージの表示](../../adapters-and-accelerators/accelerator-rosettanet/step-8-view-messages-in-the-btarn-databases.md)
+-   [手順 8:BTARN データベース内のメッセージの表示](../../adapters-and-accelerators/accelerator-rosettanet/step-8-view-messages-in-the-btarn-databases.md)

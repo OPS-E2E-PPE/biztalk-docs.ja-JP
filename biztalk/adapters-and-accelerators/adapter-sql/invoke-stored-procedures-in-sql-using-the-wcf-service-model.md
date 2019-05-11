@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 05ce43db33101dfc3849743e8480e66a8fd76f53
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 607a9188d53c1f18e40c04f6b7f692098dfc738c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37023296"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65369315"
 ---
 # <a name="invoke-stored-procedures-in-sql-using-the-wcf-service-model"></a>WCF サービス モデルを使用して SQL ストアド プロシージャを呼び出す
 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]アダプター クライアントは、ストアド プロシージャを呼び出すには、WCF クライアントで呼び出すことができますの操作として、ストアド プロシージャを検出します。 ストアド プロシージャが結果セットを返す方法に基づき、アダプターとしてすべてのストアド プロシージャを示しています。  

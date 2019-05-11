@@ -15,119 +15,119 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2f242da434e2f9c6a99ed1f3b27745885188d23e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c9b338a2dea65c9d1ccd86cf46daa736d2c4044a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36973507"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65282120"
 ---
 # <a name="sample-supply-chain-scenario"></a>サンプル サプライ チェーン シナリオ
-発注要求および応答メッセージの交換は、先端技術を駆使したサプライ チェーンの最も基本的なプロセスの 1 つです。 購入者が発注書を発行すると、業者は製品ライン レベル単位で注文を受けるかどうか、または注文が保留になっているかどうかを確認します。  
+ハイテク サプライ チェーンの最も基本的なプロセスの 1 つは、発注要求および応答メッセージの交換です。 購入者が発注書を発行し、かどうかを承諾または拒絶、順序、注文が保留中かどうかや、行レベルで、仕入先を確認します。  
   
- ここでは、発注メッセージを交換する取引先 2 社のシナリオをサンプルとして使用し、統合と自動化によってプロセスが強化されるしくみについて説明します。  
+ このトピックでは、発注書メッセージを交換する 2 つの取引のサンプル シナリオについて説明し、統合と自動化のプロセスを改善する方法を示しています。  
   
-## <a name="the-players"></a>背景説明  
- このサンプル シナリオでの購入者は大規模なハイテク装置メーカーです。 現在は EDI ベースのシステムを使用してデータの自動交換を行っています。 EDI を使用しない業者に対しては、電話、FAX、スプレッドシートを添付した電子メール、および Web アプリケーションを使用しています。 EDI を使用する業者であっても、取引先との通信をバックエンド ERP システムに統合する機能は制約されています。 EDI を介して注文と情報を受信した後で、これらの注文を ERP システムに手動で再入力する必要があります。 このような理由により、取引先に関する需要、インベントリ、購入、およびレポートを自動化することで、既存のサプライ チェーンを向上させたいと考えています。 そのためには、業者と顧客をインターネット経由で接続し、さらに既存の基幹業務 (LOB) アプリケーションを直接統合できるシステムが必要です。  
+## <a name="the-players"></a>プレイヤー  
+ このサンプル シナリオでは、購入者は、大規模なハイテク装置メーカーです。 現在、自動化されたデータ交換 EDI ベースのシステムを使用します。 依存している EDI を使用して仕入先と電話、fax、スプレッドシート、および Web アプリケーションを電子メールで送信します。 EDI を使用する業者を使用しても、取引先パートナーとの通信をバックエンド ERP システムと統合する機能が制限があります。 EDI を介して注文と情報を受信した後する必要があります手動で再入力これらの注文を ERP システムにします。 要求を自動化することで、既存のサプライ チェーン プロセスを改善するインベントリ、購入、および取引先パートナーとレポートします。 これらには、そのサプライヤーや、既存の基幹業務 (LOB) アプリケーションと直接連携することも、インターネット経由の顧客とつながるのシステムが必要です。  
   
- 販売者は、高性能 IC を取り扱う中規模の業者です。 現在電話を使用して、取引先パートナーとの通信、fax、電子メールで Microsoft に接続されている[!INCLUDE[btsExcel](../../includes/btsexcel-md.md)]スプレッドシート、FTP、および Web アプリケーション。 EDI は使用していません。 各取引先とのやり取りは、顧客および顧客が使用しているテクノロジのニーズに応じて異なります。 ビジネス プロセスを効率よくすることで、トランザクション コストの削減、顧客満足度の向上、競争力の強化を図りたいと考えています。  
+ 販売者は、高性能 ic) の規模のサプライヤーです。 現在電話を使用して、取引先パートナーとの通信、fax、電子メールで Microsoft に接続されている[!INCLUDE[btsExcel](../../includes/btsexcel-md.md)]スプレッドシート、FTP、および Web アプリケーション。 EDI は使わないでください。 各取引先パートナーとの対話は、顧客や、独自のテクノロジのニーズによって異なります。 トランザクションのコストを削減し、顧客満足度を向上させ、競争力を高めより効率的なビジネス プロセスを作成します。  
   
 ## <a name="the-present-business-process"></a>現在のビジネス プロセス  
- 統合ソリューションを使用しない場合のメーカーと業者の発注プロセスは、次のように機能します。  
+ 統合ソリューションをせずメーカーと業者の発注プロセスは次のように動作します。  
   
-1. ハイテク装置メーカーの顧客は、Web サイトを使用して、このメーカーに発注を送信します。  
+1. ハイテク装置メーカーの顧客は、Web サイトを製造元に注文を送信します。  
   
-2. この注文に応じて、ハイテク装置メーカーの従業員は、IC 供給業者へ送る発注要求メッセージを LOB ERP アプリケーションで作成します。  
+2. 元の順序に対応してでは、メーカーの従業員は、IC 供給業者側の LOB ERP アプリケーションで発注要求を作成します。  
   
-3. 作成された発注要求は、メーカー社内の各関係者に回され、記録、処理、確認、および承認が行われます。 その際、ERP システム ユーザーの場合は自動的に処理されますが、そうでない場合は、電子メールに [!INCLUDE[btsExcel](../../includes/btsexcel-md.md)] スプレッドシートを添付するなど手動で処理することになります。  
+3. 発注要求は、記録、処理、確認、および発注要求を承認する必要がある製造会社のさまざまな関係者を走査します。 この処理とルーティングは、ERP システムのユーザーの自動化されたプロセスと電子メールの添付など、手動のプロセスを組み合わせた[!INCLUDE[btsExcel](../../includes/btsexcel-md.md)]スプレッドシートです。  
   
-4. 従業員が電子メールで発注要求を作成し、業者に送信します。 他の従業員も同様のプロセスを経て、他の業者と電子メール、FAX、または EDI を使用して通信します。 使用するプロセスは、部門ごとに異なります。 EDI を使用する業者の場合でも、メーカーの従業員は ERP システムから手動でメッセージを作成する必要があります。  
+4. 従業員は、電子メールで発注要求を作成し、業者に送信します。 他のサプライヤーに電子メール、fax、または EDI 経由で通信する他の従業員数は、このプロセスを繰り返します。 さまざまな部門では、別のプロセスを使用します。 EDI を使用する業者、メーカーの従業員する必要がありますもメッセージを手動で作成、ERP システムから。  
   
-5. 業者の従業員はメッセージを受信すると、データ形式を変更して ERP システムに手動で入力します。 従業員は電子メールを使用して、要求を他の従業員に通知します。  
+5. 供給業者の従業員は、メッセージを受信して、し、手動でキーが、ERP システムにデータの形式を変更します。 電子メールを使用して、従業員には、要求の他の従業員に通知します。  
   
-6. 他の従業員は、この要求を分析します。 必要に応じて、部品供給業者に必要な部品の通知を送信します。 業者に応じて、電話、FAX、電子メール、または FTP で通知します。  
+6. 他の従業員は、要求を分析します。 必要な場合は、部品の必要性を独自の部品サプライヤーに通知されます。 業者に応じて、それらを使用して、電話、fax、電子メール、または FTP で通知します。  
   
-7. 各従業員は部署および業者と相談した後で、発注書の各製品品目を受けるか断るかを決定し、発注を受けるかどうかの通知、または注文が保留になっていることの通知を出します。 これらのタスクは、ERP システムを使用して実行します。  
+7. 部署および業者と話し合うには、後に各従業員を受け入れるまたは購買注文製品の行項目、拒否したことを確認しますまたは、発注書を拒否し、保留中であることを示します。 ERP システムでこれらのタスクを実行します。  
   
-8. 業者の従業員は発注応答を電子メールで作成して、製品品目ごとに発注を受けるか断るかを知らせます。あるいは、発注が保留になっていることを知らせるメッセージを作成します。 業者の従業員は、メーカーに応答メッセージを送信します。 保留中の製品品目がある場合は、該当する品目の発注を受けるか断るかを知らせる別のメッセージを後で作成します。  
+8. いずれかの確認または各品目の要求を拒否しています、業者の従業員が電子メールでは、発注応答を作成するかが保留中であることを示すメッセージを作成するには、注文書。 業者の従業員は、製造元に、応答メッセージを送信します。 行項目が保留中の場合は、後で保留中の項目が受け入れられるか拒否されるかどうかを示す別のメッセージを作成します。  
   
-9. メーカーの従業員は、発注応答を受信します。 バックエンド ERP システムに注文を再入力します。  
+9. メーカーの従業員は発注応答を受信します。 再バックエンド ERP システムに注文を入力します。  
   
-10. 別の従業員が発注確認を分析し、発注元の顧客に送信する発注確認の応答メッセージを作成します。 この応答メッセージは電子メールで送信します。  
+10. 別の従業員は発注書の確認を分析し、注文の確認、元の顧客への応答を作成します。 この応答を電子メールを送信します。  
   
 ## <a name="the-rosettanet-solution"></a>RosettaNet ソリューション  
- Microsoft BizTalk Server および [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] は、発注要求と応答プロセスを自動化および標準化します。 統合システムを使用することで、手動での操作、使用する用紙の量、使用する電話と FAX の回数を最小限に抑えます。 ほとんどのプロセスは、統合されたサーバー コンピューター間で自動的に処理されます。 手動で操作を実行する必要があるときは、バックエンド ERP システムで行います。 次の図は、統合システムを示しています。  
+ Microsoft BizTalk Server と[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]を自動化し、発注要求および応答プロセスを標準化します。 統合システムを使用して、処理、および電話と fax のマシンを使用して、用紙の量の手動操作の量を最小限に抑えられます。 ほとんどのプロセスは、統合されたサーバーのコンピューター間で自動トランザクションです。 従業員は、操作を手動で実行する必要があります、ときに、通常はバックエンド ERP システムで。 次の図は、統合システムを示しています。  
   
- ![&#60;変更なし&#62;](../../adapters-and-accelerators/accelerator-rosettanet/media/rn3-integrated-supply-chain-scenario.gif "RN3_Integrated_Supply_Chain_Scenario")  
+ ![&#60;No Change&#62;](../../adapters-and-accelerators/accelerator-rosettanet/media/rn3-integrated-supply-chain-scenario.gif "RN3_Integrated_Supply_Chain_Scenario")  
   
- このシナリオでは、統合システムにより、次のようにプロセスが変わりました。  
+ このシナリオでは、統合システムは、次のプロセスを変更します。  
   
-- メーカーと IC 供給業者間で行われていた手動処理は、RNIF (RosettaNet Implementation Framework) 接続によって処理されます。 つまり、メッセージの送受信、バックエンド システムへのデータのルーティング、メッセージの確認と応答はすべて自動的に行われます。 メーカーと業者の両方が [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] を使用して、RNIF 接続を実装します。  
+- RosettaNet Implementation Framework (RNIF) の接続には、メーカーと IC 供給業者側の間で日常的な手動操作が置き換えられます。 システムに自動的に送信しメッセージを受信、バックエンド システムにデータをルーティングしかを確認し、、メッセージに応答します。 製造元とを使用して仕入先の両方[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]RNIF 接続を実装します。  
   
-- メーカー、IC 供給業者、他の取引先との間で行われていた EDI 接続が、RNIF 接続に変更されました。 これにより、統合システムはデータを取引先のバックエンド システムに自動的にルーティングできます。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] を使用して RNIF 接続を実装する取引先もあれば、RosettaNet に準拠する別のソリューションを使用する取引先もあります。  
+- RNIF 接続には、製造元、IC 供給業者、およびその他の取引先パートナーとの間 EDI 接続が置き換えられます。 これにより、取引先のバックエンド システムに自動的に統合システムのルート データ。 取引先のいくつかのパートナー使用[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]RNIF 接続を実装するためにさまざまな RosettaNet 準拠のソリューションを使用して、他のユーザー。  
   
-- RosettaNet に準拠するソリューションを使用しない小規模なパートナーについては、Web ブラウザーからアクセスできる Web サービスを作成します。 この Web サービスは、標準の RNIF 接続を使用してメーカー側または IC 供給業者側の [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] システムと通信します。  
+- 小規模なパートナーについて、RosettaNet 準拠のソリューションがない、メーカーと IC 供給業者は Web ブラウザーを使用して、パートナーがアクセスできる Web サービスを作成します。 Web サービスとの通信に、標準の RNIF 接続を使用して、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]システム、製造元または IC 供給業者側のいずれかにします。  
   
-- メーカーと業者の間で交換されるメッセージでは、標準の RosettaNet PIP (Partner Interface Process) に準拠するスキーマを使用します。 これらのスキーマは、EDI と FTP で使用される形式を置き換えます。 すべての取引先が同じスキーマを使用します。このようにすると、メッセージ間でデータをマップする必要がありません。  
+- 製造元によって交換されるメッセージと業者の標準的な RosettaNet Partner Interface Process (Pip) に準拠するスキーマ。 これらのスキーマは、EDI と FTP で使用される形式を置き換えます。 すべての取引を使用して、同じスキーマです。メッセージ間のデータをマップするはありません。  
   
-- [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] はスキーマに対してすべてのメッセージを自動的に検証するため、データ エラーのリスクが低下します。  
+- [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] データ エラーの危険性の低下、スキーマに対してすべてのメッセージを自動的に検証します。  
   
-- 管理者は管理ソフトウェア ツールを使用して、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] サーバー上で操作することができます。 ビジネスの意思決定者は、クライアント コンピューター上で Microsoft Office ベースのアプリケーションまたはツールがホストするビジネス監視ツールを使用できます。 どちらもシステムの効率的な動作を保持するための有効なプロセスで、システムおよびビジネスがどのように実行しているかを視覚的に認識できます。  
+- 管理者は、上で操作できます[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]サーバーの管理ソフトウェア ツールを使用します。 クライアント コンピューターでビジネスの意思決定者は、Microsoft Office ベースのアプリケーションまたはツールでホストされているビジネス監視ツールを使用できます。 効果的にオペレーティング システムを維持する効率的なプロセスし、方法に可視性を提供します。 これらの両方、システム-方法と、ビジネス-が実行されています。  
   
 ### <a name="message-flow"></a>メッセージ フロー  
- ビジネス プロセスには次の手順が含まれます。  
+ ここで、ビジネス プロセスには、次の手順が含まれます。  
   
-1. ハイテク装置メーカーの顧客は、Web サイトを使用して、このメーカーに発注を送信します。  
+1. ハイテク装置メーカーの顧客は、Web サイトを製造元に注文を送信します。  
   
-2. この元の注文に応じて、メーカーの従業員は会社の受注在庫管理システムで発注要求メッセージを作成します。 この LOB アプリケーションは、Web ベースのユーザー インターフェイスを使用した ERP システムです。  
+2. 元の順序に対応してでは、メーカーの従業員は会社の注文や在庫管理システムで発注要求を生成します。 この LOB アプリケーションは、Web ベースのユーザー インターフェイスと ERP システムです。  
   
-3. システムは、ERP システムの固有の形式を使用して、この発注要求メッセージを [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] に送信します。  
+3. システムによる発注書要求を送信します、ERP システムにネイティブ形式のままでに[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]します。  
   
-4. [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] は、RosettaNet 組織で定義されている 3A4 PIP に準拠した発注要求メッセージを自動的に生成します。 この発注要求は XML 形式です。 PIP は、メッセージの内容を定義します。  
+4. [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] RosettaNet 組織で定義されている 3A4 PIP に準拠した発注要求メッセージを自動的に生成されます。 この発注要求は XML 形式です。 PIP では、メッセージの内容を定義します。  
   
    > [!NOTE]
-   >  3A4 PIP は、すべての発注要求および応答メッセージが同じ形式であることを確認します。 この PIP は、RosettaNet で定義されている、完全に相互接続されたメッセージング システムを形成する PIP コレクションの一部です。 たとえば、購入者は 3A4 メッセージを送信する前に、価格とアベイラビリティの要求 (PIP 3A2)、見積もりの要求 (PIP 3A1)、ショッピング カート転送 (PIP 3A3) を行うことができます。 また、発注要求を送信した後で、発注の変更 (PIP 3A8)、発注の取り消し (PIP 3A9)、発注状態の照会 (PIP 3A5)、発注状態の配信 (PIP 3A6) を行うことができます。 これらのすべてのメッセージは、RosettaNet 組織によって標準化されています。  
+   >  3A4 PIP は、すべての発注書の要求と応答は、フォームで同じであることを確認します。 この PIP は、完全に相互接続されたメッセージング システムを形成する Pip の RosettaNet 定義のコレクションの一部です。 たとえば、3A4 メッセージを送信する前に価格を検索、購入者や可用性 (PIP 3 a 2) (PIP 3A1)、見積もりの要求 (PIP 3A3) ショッピング カート転送します。 発注書要求を送信すると、購入者可能性があります (PIP 3A8) 購入順序を変更、発注書 (PIP 3A9) をキャンセル、購買注文の状態 (PIP 3A5) に対してクエリを実行または配布発注状態の (配信 PIP 3A6)。 RosettaNet 組織には、これらすべてのメッセージが標準化されています。  
   
-5. [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] は、要求メッセージ (具体的には Service Content) を RNIF ヘッダーでラップします。これにより、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] はインターネット経由で業者サイトの別の [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] コンピュータにメッセージを送信できるようになります。 RNIF は、パートナーがインターネット経由でメッセージを交換する方法を定義します。  
+5. [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] RNIF ヘッダーで (名前付き、service content)、要求メッセージをラップ[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]別に、インターネット経由でメッセージの送信[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]業者サイトのコンピューター。 RNIF は、パートナーがインターネット経由でメッセージを交換する方法を定義します。  
   
-6. メーカーの [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] システムは、IC 供給業者の [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] システムに発注要求メッセージを送信します。  
+6. 製造元の[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]システム IC 供給業者の発注書の要求が送信[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]システム。  
   
-7. 業者の [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] システムは、この発注要求メッセージを受信します。 (応答が不要な) シングル アクションの要求の場合、業者の [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] システムは、このメッセージの受信を確認するシグナル メッセージを返します。 ただしダブル アクションのメッセージでは、業者の [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] システムは受信確認のシグナル メッセージの後で応答メッセージも返します。  
+7. 供給業者の[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]N システムが発注書要求を受信します。 (対応する応答がない 1 つ)、シングル アクション要求した場合、業者の[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]システムは、メッセージの受信を確認するシグナル メッセージを返します。 ただし、これは、ダブル アクション メッセージを業者のため、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]システムは応答メッセージも後に受信確認シグナル メッセージを返します。  
   
-8. 業者の [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] システムは発注要求メッセージから RNIF ヘッダーを削除し、メッセージの Service Content を処理して、業者の ERP システムに要求をルーティングします。  
+8. 供給業者の[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]システム、発注要求メッセージから RNIF ヘッダーを削除、メッセージの service content を処理および業者の ERP システムに要求をルーティングします。  
   
-9. 業者の従業員は ERP システムを使って注文を処理します。 メッセージを部品供給業者に送信しなければならない場合は、同じ BizTalk と [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] システムを使用して送信します。 IT 部門は、製造元に自動的に応答するシステムをカスタマイズできます。  
+9. 業者の従業員は、注文を処理する ERP システムで動作します。 独自の部品サプライヤーにメッセージを送信する場合は、それによって、同じ biztalk と[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]システム。 IT 部門は、製造元に自動的に応答するシステムをカスタマイズできます。  
   
-10. 従業員は業者の ERP システムを使用して発注応答メッセージを生成し、業者の [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] システムにルーティングします。  
+10. 従業員は業者の ERP システムを使用して、発注応答メッセージを生成して、応答メッセージをルーティングし、業者の[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]システム。  
   
-11. 業者の [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] システムは PIP 3A4 発注応答メッセージを作成し、応答メッセージの Service Content を RNIF ヘッダーでラップしてから、メーカーの [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] システムに送信します。  
+11. 供給業者の[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]システムは、PIP 3A4 発注応答メッセージが生成され、応答メッセージの service content を RNIF ヘッダーでラップし、メーカーの発注応答を送信[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]システム。  
   
-12. メーカーの [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] システムが発注応答を受信し、受信確認メッセージを業者の [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] に送信します。 業者の [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] システムは、業者の ERP システムにこの確認メッセージをルーティングします。  
+12. 製造元の[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]システム発注応答を受信し、業者の受信確認メッセージを送信[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]します。 供給業者の[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]システムが業者の ERP システムに受信確認をルーティングします。  
   
-13. メーカーの [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] は応答メッセージから RNIF ヘッダーを削除し、Service Content を処理して、メーカーの ERP アプリケーションにルーティングします。  
+13. 製造元の[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]応答メッセージから RNIF ヘッダーを削除、サービスのコンテンツを処理し、製造元の ERP アプリケーションに発注応答をルーティングします。  
   
-14. メーカーの従業員がすべての発注確認メッセージを分析し、発注元の顧客へ送信する発注確認の応答メッセージを作成します。 この応答メッセージを電子メールで送信します。  
+14. メーカーの従業員は、すべての発注書確認メッセージを分析し、注文の確認、元の顧客への応答を作成します。 従業員は電子メールでは、この応答を送信します。  
   
 ## <a name="advantages-of-the-btarn-solution"></a>BTARN ソリューションの利点  
- 発注要求および応答プロセスの大部分は、BizTalk Server と [!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)] によって自動化されます。 メーカーと IC 供給業者に関するプロセスだけではなく、サプライ チェーン管理の一環として RosettaNet に準拠するソリューションを採用した他のすべての取引先とのプロセスも自動化されます。  
+ BizTalk Server と[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]発注要求および応答プロセスの大部分を自動化します。 それによって、メーカーと IC 供給業者側でだけでなく、サプライ チェーン管理の一環として RosettaNet 準拠のソリューションを採用している他のすべての取引先に対してもします。  
   
- 統合システムは、手動の操作と使用する用紙の量を最小限に抑えます。 ほとんどのプロセスで、統合されたサーバー コンピューター間での処理が自動化されています。 プロセスはメーカーと IC 供給業者の両方で視覚的に管理できます。 どちらも受信確認を自動受信することで、否認不可性を維持することができます。  
+ システムの統合には、手動介入の量と、用紙の量が最小限に抑えます。 ほとんどのプロセスには、統合されたサーバーのコンピューター間で自動化されたインタラクションが含まれます。 メーカーと IC 供給業者側の両方のそのプロセスの可視性と制御、高度ながあります。 受信確認を受信して、否認不可性を維持できますが自動的には。  
   
- [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] を使用した自動システムにより、メーカーと業者は以下のことを実現できます。  
+ 自動化されたシステムを使用して、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]メーカーと業者は、以下を実行できるようにします。  
   
--   注文処理のサイクル時間の短縮  
+-   注文調達のサイクル時間を短縮します。  
   
--   プロセスにおける不確定要素の削減と、プロセスの信頼性の向上  
+-   プロセスにおける不確定要素を削減し、プロセスの信頼性を向上させる  
   
--   処理時間および見積もり応答時間の短縮  
+-   処理時間および見積もり応答時間を減らす  
   
--   手動での情報の再入力、不足情報の取得、エラー修正作業に要する時間の削減  
+-   不足情報の取得、またはエラーを修正する時間を手動で再情報を削減します。  
   
--   メッセージのプロセスおよび追跡を視覚的に監視  
+-   可視性を提供し、プロセスの監視と、メッセージの追跡を有効にします。  
   
 ## <a name="see-also"></a>参照  
  [BizTalk Server がビジネス ニーズを解決する方法](../../adapters-and-accelerators/accelerator-rosettanet/how-biztalk-server-solves-the-business-need1.md)   
- [取引先のパートナーとの統合の必要性](../../adapters-and-accelerators/accelerator-rosettanet/the-need-for-trading-partner-integration.md)   
+ [取引先との統合の必要性](../../adapters-and-accelerators/accelerator-rosettanet/the-need-for-trading-partner-integration.md)   
  [サプライ チェーンの課題](../../adapters-and-accelerators/accelerator-rosettanet/the-supply-chain-challenge.md)   
  [サプライ チェーン ソリューション](../../adapters-and-accelerators/accelerator-rosettanet/the-supply-chain-solution.md)   
  [サンプルのハブベース シナリオ](../../adapters-and-accelerators/accelerator-rosettanet/sample-hub-based-scenario.md)

@@ -1,5 +1,5 @@
 ---
-title: 関連アプリケーションの管理 |Microsoft ドキュメント
+title: 関連アプリケーションの管理 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,15 +16,15 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dc5a355faed995fb6543b1e8f5810eec14584600
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 67a23bb1e237299a7745a0f53e3cf6a12e6dd51b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22262210"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65330047"
 ---
 # <a name="managing-affiliate-applications"></a>関連アプリケーションの管理
-このセクションでは、関連アプリケーションを作成および構成する方法について説明します。  
+このセクションでは、関連アプリケーションを作成および構成方法について説明します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
@@ -38,7 +38,7 @@ ms.locfileid: "22262210"
   
 -   [関連アプリケーションを無効にする方法](../core/how-to-disable-an-affiliate-application.md)  
   
--   [関連アプリケーションを一覧表示する方法](../core/how-to-list-affiliate-applications.md)  
+-   [関連アプリケーションの一覧を表示する方法](../core/how-to-list-affiliate-applications.md)  
   
 -   [関連アプリケーションのプロパティを一覧表示する方法](../core/how-to-list-the-properties-of-an-affiliate-application.md)  
   

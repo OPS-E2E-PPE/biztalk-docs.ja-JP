@@ -12,14 +12,14 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1f366fc619ac070d618345ce6bde9996710b1242
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: da78a4846570b66e95950c61194151c59bbee366
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36988187"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65325329"
 ---
-# <a name="message-cannot-be-serialized-as-the-schema-could-not-be-located"></a>スキーマが見つからなかったため、メッセージをシリアル化できません
+# <a name="message-cannot-be-serialized-as-the-schema-could-not-be-located"></a>スキーマが見つからなかったために、メッセージがシリアル化ことはできません。
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                                                                          |

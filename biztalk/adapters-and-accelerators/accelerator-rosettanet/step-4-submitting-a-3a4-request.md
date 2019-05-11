@@ -1,5 +1,5 @@
 ---
-title: '手順 4: 3A4 要求の送信 |Microsoft ドキュメント'
+title: 手順 4:3A4 要求の送信 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,79 +14,79 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ff36b6181b167d70340a65913e1e85e7acfeeaf4
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 6589a46665edf6e446483b673fd4228dd471bbd3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25965576"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65280923"
 ---
-# <a name="step-4-submitting-a-3a4-request"></a>手順 4: 3A4 要求の送信
-ここでは、3A4 - Request Purchase Order の PIP (Partner Interface Process) を使用して、要求を作成および送信します。 この PIP を使用することにより、購入者組織が発注を業者に送信できるようになります。 通常は、3A2 - Request Price and Availability PIP を使用して注文可能な製品を照会してから、3A4 - Request Purchase Order を要求します。 3A4 PIP は、受信確認を送信する非同期の PIP です。  
+# <a name="step-4-submitting-a-3a4-request"></a>手順 4:3A4 要求の送信
+この手順では、準備し、3a4-request Purchase Order を要求をプロセス PIP (Partner Interface) を使用して、要求を送信します。 この PIP は、業者に注文要求を送信する購入者組織を使用できます。 一般に、3A4 - 製品の可用性を 3 a 2 - Request Price and Availability PIP を使用してクエリを実行した後の要求の発注書を要求します。 3A4 PIP は、受信確認を送信する非同期の PIP です。  
   
- ![(& m); 60変更なし & #62;。](../../adapters-and-accelerators/accelerator-rosettanet/media/rn3-intro-eetut-3a4flow.gif "RN3_Intro_EETut_3A4Flow")  
+ ![&#60;変更なし&#62;](../../adapters-and-accelerators/accelerator-rosettanet/media/rn3-intro-eetut-3a4flow.gif "RN3_Intro_EETut_3A4Flow")  
   
-### <a name="to-submit-a-3a4---request-purchase-order"></a>3A4 - Request Purchase Order を送信するには  
+### <a name="to-submit-a-3a4---request-purchase-order"></a>3A4 の発注書の要求を送信するには  
   
-1.  Fabrikam のコンピュータから、Internet Explorer を使用して http://localhost/LOBWebApplication/default.aspx を開きます。  
+1.  Internet Explorer で、Fabrikam のコンピューターで検索し、開きます http://localhost/LOBWebApplication/default.aspxします。  
   
-2.  **Submit Message**  ページで、次の操作します。  
+2.  **Submit Message**ページで、次の操作を行います。  
   
-    |**これを使用してください。**|**これを行う**|  
+    |**これを使用して、**|**これを行う**|  
     |------------------|--------------------|  
-    |**ホーム組織**|型**FABRIKAM**です。|  
-    |**パートナー組織**|型**Contoso**です。|  
-    |**[Pip Code]**|型**3A4**です。|  
-    |**[Pip Version]**|型**V02.02.00**です。|  
-    |**Pip インスタンス ID**|型**3A4_Test**です。 **重要:** 重複したメッセージ ID のエラーを避けるためには、する必要があることを確認、 **Pip インスタンス ID**を送信するメッセージごとに一意です。 後で 3A4_Test を実行する場合は、このフィールドを変更する必要があります。|  
-    |**メッセージのカテゴリ**|型**アクション**です。|  
+    |**ホーム組織**|型**FABRIKAM**します。|  
+    |**取引先組織**|型**Contoso**します。|  
+    |**[Pip Code]**|型**3A4**します。|  
+    |**[Pip Version]**|型**V02.02.00**します。|  
+    |**Pip インスタンス ID**|型**3A4_Test**します。 **重要:** 重複するメッセージ ID のエラーを回避する必要があること確認する、 **Pip インスタンス ID**は送信した各メッセージに一意です。 今後 3a4_test を実行する場合はこのフィールドを変更する必要があります。|  
+    |**メッセージのカテゴリ**|型**アクション**します。|  
   
-3.  ある 3A4_Request.xml ファイルを開くメモ帳または別のテキスト エディターを使用して、 \<*ドライブ*\>: \Program Files\Microsoft BizTalk\<バージョン\>Accelerator for rosettanet \sdk\LOBApplication\SampleInstances フォルダーをコピーして貼り付け、内容、 **Service Content** LOBWebApplication のフィールドです。  
+3.  メモ帳または別のテキスト エディターを使用してある 3A4_Request.xml ファイルを開き、 \<*ドライブ*\>: \Program Files\Microsoft BizTalk\<バージョン\>Accelerator for rosettanet \sdk\LOBApplication\SampleInstances のフォルダーをコピーして貼り付け、内容、 **Service Content** LOBWebApplication のフィールド。  
   
-4.  をクリックして**送信**を Contoso のコンピューター 3A4 要求を送信します。  
+4.  クリックして**送信**3A4 要求を Contoso のコンピューターを送信します。  
   
-### <a name="to-verify-successful-communication-on-the-fabrikam-computer"></a>Fabrikam のコンピューターで通信が成功したかどうか確認するには  
+### <a name="to-verify-successful-communication-on-the-fabrikam-computer"></a>Fabrikam のコンピューターで通信が成功したことを確認するには  
   
--   **メッセージの状態**LOBWebApplication に ページで、次の 2 つの受信メッセージを受信することを確認します。  
+-   **メッセージの状態**LOBWebApplication のページで、2 つのメッセージを受信することを確認します。  
   
     > [!NOTE]
-    >  最初に受信しているのは、Contoso のコンピューターからの受信確認を表すカテゴリ 25 のメッセージです。 次に受信しているのは、Contoso のコンピューターからの応答メッセージであるカテゴリ 50 のメッセージです。 カテゴリ -99 のメッセージは、エラーを表します。 使用することができます**イベント ビューアー**を実際のエラー メッセージを確認します。  
+    >  Contoso のコンピューターからの受信確認を表すカテゴリ 25 のメッセージを最初に受信する必要があります。 Contoso のコンピューターからの応答メッセージであるカテゴリ 50 のメッセージを受信する必要がありますから。 カテゴリ-99 のメッセージでは、エラーを示します。 使用することができます**イベント ビューアー**を実際のエラー メッセージを確認します。  
   
-### <a name="to-verify-successful-communication-on-the-contoso-computer"></a>Contoso のコンピュータで通信が成功したかどうか確認するには  
+### <a name="to-verify-successful-communication-on-the-contoso-computer"></a>Contoso のコンピューターの通信が成功したことを確認するには  
   
-1.  をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**Microsoft SQL Server 2008 R2**、順にクリック**SQL Server Management Studio**です。  
+1.  クリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**Microsoft SQL Server 2008 R2**、順にクリックします**SQL Server Management Studio**します。  
   
-2.  **サーバーへの接続** ダイアログ ボックスで、 **SQL Server**ボックスに、入力**localhost** **Windows 認証**、 をクリックし、**接続**です。  
+2.  **サーバーへの接続** ダイアログ ボックスで、 **SQL Server**ボックスに「 **localhost**、 **Windows 認証**順にクリックします**接続**します。  
   
-3.  Microsoft SQL Server Management Studio でクリックして**新しいクエリ**です。  
+3.  Microsoft SQL Server Management Studio で次のようにクリックします。**新しいクエリ**します。  
   
-4.  \<テーブル\>テキスト ダイアログ ボックスで、 **BTARNDATA**一覧からです。  
+4.  \<テーブル\>テキスト] ダイアログ ボックス、[ **BTARNDATA**一覧から。  
   
-5.  SQL ウィンドウに、次の SQL ステートメントを入力します。  
+5.  SQL ウィンドウで、次の SQL ステートメントを入力します。  
   
     ```  
     SELECT * From MessagesToLOB  
     ```  
   
-6.  をクリックして**Execute** SQL ステートメントを実行します。  
+6.  クリックして**Execute** SQL ステートメントを実行します。  
   
-7.  [クエリ] ウィンドウの結果ペインで、2 つの着信メッセージが表示されていることを確認します。  
+7.  結果ウィンドウで、クエリ ウィンドウで 2 つのメッセージが表示されることを確認します。  
   
     > [!NOTE]
-    >  最初に受信しているのは、Fabrikam のコンピューターが送信した元の要求を表すカテゴリ 10 のメッセージです。 受信 acknowledegment メッセージを表すカテゴリ 25 のメッセージを表示する必要があります。  
+    >  最初に、Fabrikam のコンピューターから送信された元の要求を表すカテゴリ 10 のメッセージを受信します。 Acknowledegment メッセージを表すカテゴリ 25 のメッセージを受信する必要があります。  
   
-8.  SQL ウィンドウに、次の SQL ステートメントを入力します。  
+8.  SQL ウィンドウで、次の SQL ステートメントを入力します。  
   
     ```  
     SELECT * From MessagesFromLOB  
     ```  
   
-9. をクリックして**Execute** SQL ステートメントを実行します。  
+9. クリックして**Execute** SQL ステートメントを実行します。  
   
-10. クエリ ウィンドウ内で、**結果** ウィンドウで、1 つの送信メッセージが表示されることを確認します。  
+10. クエリ ウィンドウ内で、**結果**ウィンドウで、1 つの送信メッセージを表示することを確認します。  
   
     > [!NOTE]
-    >  Contoso のコンピューターから Fabrikam のコンピューターに送信された受信確認を表すカテゴリ 25 のメッセージが表示されます。 Contoso の基幹業務 (LOB) アプリケーションから Fabrikam のコンピューターに送信された応答を表すカテゴリ 50 のメッセージも表示されます。  
+    >  Fabrikam のコンピューターに、Contoso から送信された受信確認を表すカテゴリ 25 のメッセージが表示されます。 Fabrikam のコンピューターに Contoso の基幹業務 (LOB) アプリケーションから送信された応答を表すカテゴリ 50 のメッセージも表示する必要があります。  
   
 ## <a name="see-also"></a>参照  
  [ダブル アクション チュートリアル](../../adapters-and-accelerators/accelerator-rosettanet/double-action-tutorial.md)   

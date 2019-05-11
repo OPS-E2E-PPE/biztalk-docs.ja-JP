@@ -1,5 +1,5 @@
 ---
-title: '手順 1: vPrev BizTalk プロジェクトで Siebel アダプターの変更 |Microsoft Docs'
+title: 手順 1:Siebel アダプターと vPrev BizTalk プロジェクトの変更 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,19 +12,19 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e03b915abcaef48cf8c31001f6c096e5040a247b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 68a3bc43e3f8f946652b75768c1846a388a28c13
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37004187"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65370904"
 ---
-# <a name="step-1-modify-the-vprev-biztalk-project-with-the-siebel-adapter"></a>手順 1: vPrev BizTalk プロジェクトで Siebel アダプターの変更します。
+# <a name="step-1-modify-the-vprev-biztalk-project-with-the-siebel-adapter"></a>手順 1:Siebel アダプターと vPrev BizTalk プロジェクトの変更します。
 ![ステップ 1/3](../../adapters-and-accelerators/adapter-oracle-database/media/step-1of3.gif "Step_1of3")  
   
  **所要時間:** 10 分  
   
- **目標:** この手順で、次を変更する既存の vPrev BizTalk プロジェクト。  
+ **目標:** この手順では、既存の vPrev BizTalk プロジェクトに、次の変更を行います。  
   
 - WCF ベースを使用してアカウントのビジネス コンポーネントに対する挿入操作のメタデータを生成[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]します。  
   
@@ -40,7 +40,7 @@ ms.locfileid: "37004187"
   
 1. WCF ベースを使用してアカウントのビジネス コンポーネントに対する挿入操作のメタデータを生成[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]します。 使用することができます、[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]メタデータを生成します。  
   
-    メタデータを生成する方法の詳細については、[Visual Studio で Siebel 操作のメタデータの取得](../../adapters-and-accelerators/adapter-siebel/get-metadata-for-siebel-operations-in-visual-studio.md)を参照してください。 スキーマを生成すると後のような名前のファイル*SiebelBindingSchema.xsd* BizTalk プロジェクトに追加されます。 このファイルには、WCF ベースを使用してアカウントのビジネス コンポーネントに対する挿入操作を実行するメッセージを送信するためのスキーマが含まれています。[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]します。  
+    メタデータを生成する方法の詳細については、次を参照してください。 [Visual Studio で Siebel 操作のメタデータの取得](../../adapters-and-accelerators/adapter-siebel/get-metadata-for-siebel-operations-in-visual-studio.md)します。 スキーマを生成すると後のような名前のファイル*SiebelBindingSchema.xsd* BizTalk プロジェクトに追加されます。 このファイルには、WCF ベースを使用してアカウントのビジネス コンポーネントに対する挿入操作を実行するメッセージを送信するためのスキーマが含まれています。[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]します。  
   
 2. 挿入操作のメタデータを生成すると、ポートのバインド ファイルも作成します。 次の手順で Siebel システムへのメッセージを送信する Wcf-custom 送信ポートを作成するこのバインド ファイルが使用されます。 操作の SOAP アクションは、メタデータの生成対象の操作にも設定されます。 たとえば、挿入操作のメタデータを生成すると、送信ポートでの SOAP アクションで、操作名が、"Insert"になります。 ただし、操作名とオーケストレーションの一部異なる可能性があります、たとえば、作成した論理送信ポートで"Operation_1"。 その結果、送信ポートを使用して Siebel システムにメッセージを送信するときに、エラーが発生します。 これを回避するには、ことを確認しますで論理送信ポート、オーケストレーションでは、メタデータを生成する操作名と同じ操作名。  
   
@@ -64,7 +64,7 @@ ms.locfileid: "37004187"
   
    7. **ターゲット スキーマのルート ノード**ダイアログ ボックスで、*挿入*、順にクリックします**OK**します。  
   
-   8. 両方のスキーマでは、次の要素をマップ: **Currency_Code**、 **Current_Volume**、 **Customer_Account_Group**、**場所**、**Main_Phone_Number**、**名前**、 **Party_Name**、 **Primary_Address_Id**、  
+   8. 両方のスキーマでは、次の要素をマップします。**Currency_Code**、 **Current_Volume**、 **Customer_Account_Group**、**場所**、 **Main_Phone_Number**、 **名前**、 **Party_Name**、 **Primary_Address_Id**、  
   
    9. マップを保存します。  
   
@@ -97,7 +97,7 @@ ms.locfileid: "37004187"
 6. ソリューションを展開する。 クリックして、ソリューションを右クリックして**ソリューションの配置**します。  
   
 ## <a name="next-steps"></a>次の手順  
- Wcf-custom 送信ポートを作成および構成」の説明に従って、この手順で作成したマップを使用するように[手順 2: Oracle データベース アダプターを使用する BizTalk Server 管理コンソールでオーケストレーションを構成](../../adapters-and-accelerators/adapter-oracle-database/step-2-configure-an-orchestration-to-use-the-oracle-db-adapter-in-biztalk.md)します。  
+ Wcf-custom 送信ポートを作成および構成」の説明に従って、この手順で作成したマップを使用するように[手順 2。Oracle データベース アダプターを使用する BizTalk Server 管理コンソールでオーケストレーションを構成](../../adapters-and-accelerators/adapter-oracle-database/step-2-configure-an-orchestration-to-use-the-oracle-db-adapter-in-biztalk.md)します。  
   
 ## <a name="see-also"></a>参照  
- [チュートリアル 2: Siebel の BizTalk プロジェクトを移行します。](../../adapters-and-accelerators/adapter-siebel/tutorial-2-migrating-biztalk-projects-in-siebel.md)
+ [チュートリアル 2: Siebel の BizTalk プロジェクトの移行](../../adapters-and-accelerators/adapter-siebel/tutorial-2-migrating-biztalk-projects-in-siebel.md)

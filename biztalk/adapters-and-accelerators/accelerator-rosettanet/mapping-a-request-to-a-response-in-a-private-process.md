@@ -22,12 +22,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fb7cab4ba412a46f61df89daefd86df260454195
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: cd0ec4be1703c81061cf38310a467932a917bca3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36976227"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65283225"
 ---
 # <a name="mapping-a-request-to-a-response-in-a-private-process"></a>プライベート プロセスで応答する要求のマッピング
 このトピックでは、応答側プライベート プロセスが受信した要求メッセージにマップする方法を説明します: Microsoft から[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]を応答メッセージを送信できる、パブリック応答側プロセス、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]応答側パブリック プロセス。  
@@ -84,10 +84,10 @@ ms.locfileid: "36976227"
 2.  ツールボックスで、をクリックして、**変換**図形、および位置は、要求メッセージを応答メッセージに変換する必要があるオーケストレーション内の位置にドラッグします。  
   
     > [!NOTE]
-    >  配置の例については、**変換**図形、PIP3A4PrivateResponder.odx オーケストレーションを参照してください。 ある\<*ドライブ*\>: \Program Files\Microsoft BizTalk\<バージョン\>Accelerator for rosettanet \sdk\pipautomation\3a4\pr です。 このサンプルでは、**変換**図形のすぐ下、 **IsActivityDoubleAction**図形。 詳細については、[3A4 プライベート レスポンダー オーケストレーションを使用してビジネス ルール](../../adapters-and-accelerators/accelerator-rosettanet/3a4-private-responder-orchestration-using-a-business-rule.md)を参照してください。  
+    >  配置の例については、**変換**図形、PIP3A4PrivateResponder.odx オーケストレーションを参照してください。 ある\<*ドライブ*\>: \Program Files\Microsoft BizTalk\<バージョン\>Accelerator for rosettanet \sdk\pipautomation\3a4\pr です。 このサンプルでは、**変換**図形のすぐ下、 **IsActivityDoubleAction**図形。 詳細については、次を参照してください。 [3A4 プライベート レスポンダー オーケストレーションを使用してビジネス ルール](../../adapters-and-accelerators/accelerator-rosettanet/3a4-private-responder-orchestration-using-a-business-rule.md)します。  
   
     > [!NOTE]
-    >  複数の Pip の複数のマップを組み込む方法の例は、[Double Action PIPAutomation Orchestration](../../adapters-and-accelerators/accelerator-rosettanet/double-action-pipautomation-orchestration.md)を参照してください。  
+    >  複数の Pip の複数のマップを組み込む方法の例は、次を参照してください。 [Double Action PIPAutomation Orchestration](../../adapters-and-accelerators/accelerator-rosettanet/double-action-pipautomation-orchestration.md)します。  
   
 3.  オーケストレーション デザイン画面でクリックして**ConstructMessage1**します。 プロパティ ウィンドウで、図形の名前、および作成するメッセージの名前を入力します。  
   

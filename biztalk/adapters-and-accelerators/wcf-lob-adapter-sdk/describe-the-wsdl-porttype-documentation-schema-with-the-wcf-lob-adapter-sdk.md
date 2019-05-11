@@ -1,5 +1,5 @@
 ---
-title: WCF LOB Adapter SDK では、WSDL PortType ドキュメント スキーマの説明 |Microsoft ドキュメント
+title: WCF LOB Adapter SDK と WSDL PortType ドキュメント スキーマについて説明します |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,18 +12,18 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 81e4977403da18229aea19beef21f361dfdd9391
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: f24476e97807900b686dc471276de76f92212a3e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25965152"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65363668"
 ---
-# <a name="describe-the-wsdl-porttype-documentation-schema-with-the-wcf-lob-adapter-sdk"></a>WCF LOB Adapter SDK では、WSDL PortType ドキュメント スキーマを説明します。
-WSDL を[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]生成の各 portType 追加の説明情報が含まれています。 この追加情報のスキーマはこのトピックで説明します。  
+# <a name="describe-the-wsdl-porttype-documentation-schema-with-the-wcf-lob-adapter-sdk"></a>WCF LOB Adapter SDK と WSDL PortType ドキュメント スキーマについて説明します
+WSDL を[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]生成各 portType の追加のわかりやすい情報が含まれています。 このトピックでは、この追加情報のスキーマを説明します。  
   
-## <a name="documentation-xml-schema"></a>ドキュメントの XML スキーマ  
- 操作のドキュメントは、操作のアダプターのドキュメントを表すノードを追加する portType の注釈を使用して実装されます。 このノードには、さらに、操作とパラメーターを記述するサブノードが含まれています。 このスキーマの定義は次のとおりです。  
+## <a name="documentation-xml-schema"></a>XML スキーマのドキュメント  
+ 操作のドキュメントは、アダプターのドキュメントの操作を表すノードを追加する、portType の注釈を使用して実装されます。 このノードには、操作とパラメーターの詳細に説明するサブノードが含まれています。 このスキーマの定義は次のとおりです。  
   
 ```  
 <?xml version="1.0" encoding="utf-8"?>  
@@ -48,7 +48,7 @@ WSDL を[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]�
 </xs:schema>  
 ```  
   
- 特定の操作の WSDL が生成されると、人間の判読できる形式で追加の説明情報を提供する、前のスキーマが使用されます。 たとえば、エコー アダプターの EchoString 操作のため portType の次の情報が返されます。  
+ 指定した操作で生成される WSDL は、人間が読める形式で追加のわかりやすい情報を提供する、前のスキーマが使用されます。 たとえば、エコー アダプターの EchoString 操作の portType は次の情報が返されます。  
   
 ```  
 <wsdl:portType name="EchoService">  
@@ -66,7 +66,7 @@ WSDL を[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]�
 </wsdl:portType>  
 ```  
   
- ドキュメント要素の値がから取得した`Microsoft.ServiceModel.Channels.Common.ParameterizedOperationMetadata`操作します。 前の例は、次の例の結果として生成されました。  
+ ドキュメント要素の値がから取得した`Microsoft.ServiceModel.Channels.Common.ParameterizedOperationMetadata`操作。 前の例は、次の例の結果として生成されました。  
   
 ```csharp  
 ParameterizedOperationMetadata om = new ParameterizedOperationMetadata(operationId, operationId);  
@@ -92,4 +92,4 @@ switch (operationId)
 ```  
   
 ## <a name="see-also"></a>参照  
- [WCF LOB Adapter SDK を使用して、開発のベスト プラクティス](../../adapters-and-accelerators/wcf-lob-adapter-sdk/development-best-practices-using-the-wcf-lob-adapter-sdk.md)
+ [WCF LOB Adapter SDK を使用して開発のベスト プラクティス](../../adapters-and-accelerators/wcf-lob-adapter-sdk/development-best-practices-using-the-wcf-lob-adapter-sdk.md)

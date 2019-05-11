@@ -15,12 +15,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d603e74defeac983b1287f16c7f562b706b8c54d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3762fedc26142bf91bef677255d1eaa7427ba2e0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36994995"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65292989"
 ---
 # <a name="hl7-disassembler-and-assembler"></a>HL7 の逆アセンブラーとアセンブラー
 HL7 の逆アセンブラーとアセンブラーは、HL7 でエンコードされたメッセージのサポートを提供します。 Microsoft から[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]XML 形式では、Microsoft BizTalk Accelerator for HL7 のネイティブのメッセージを処理 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) HL7 の逆アセンブラーとアセンブラーを使用して、行う[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]HL7 の統合エンジン。  
@@ -33,7 +33,7 @@ HL7 の逆アセンブラーとアセンブラーは、HL7 でエンコードさ
   
  アセンブラーは、次の確認 (ACK) メッセージをシリアル化できます。  
   
-- 静的  
+- スタティック  
   
 - 元のモード  
   

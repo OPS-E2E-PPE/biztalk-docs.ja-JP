@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 555934e0be188011a69efb3966e5316bc716c254
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c305afe09a7ff116d04554bb1c1962a137274945
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37023824"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65330092"
 ---
 # <a name="invalid-time"></a>時刻が無効です
 ## <a name="details"></a>詳細  

@@ -1,5 +1,5 @@
 ---
-title: 送信アダプター用のインターフェイス |Microsoft ドキュメント
+title: 送信アダプター用のインターフェイス |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,26 +12,26 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 71a7f0fb83b24e7d04221894abecdede3345d2e4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 60335c47c652ceeb2cadd93926f9c774fff7d48e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22256906"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65331421"
 ---
 # <a name="interfaces-for-send-adapters"></a>送信アダプター用のインターフェイス
-ここでは、送信アダプターを開発する場合に実装する必要のあるインターフェイスについて説明します。  
+このセクションでは、送信アダプターを開発する場合に実装する必要のあるインターフェイスについて説明します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [送信アダプターの同期用のインターフェイス](../core/interfaces-for-a-synchronous-send-adapter.md)  
+-   [同期送信アダプター用のインターフェイス](../core/interfaces-for-a-synchronous-send-adapter.md)  
   
--   [送信アダプターの非同期インターフェイス](../core/interfaces-for-an-asynchronous-send-adapter.md)  
+-   [非同期送信アダプター用のインターフェイス](../core/interfaces-for-an-asynchronous-send-adapter.md)  
   
--   [同期のバッチでサポートされている送信アダプター用のインターフェイス](../core/interfaces-for-a-synchronous-batch-supported-send-adapter.md)  
+-   [バッチ処理に対応した同期送信アダプター用のインターフェイス](../core/interfaces-for-a-synchronous-batch-supported-send-adapter.md)  
   
 -   [Asynchronous Batch-Supported 送信アダプター用のインターフェイス](../core/interfaces-for-an-asynchronous-batch-supported-send-adapter.md)er  
   
--   [バッチでサポートされているトランザクションの非同期送信アダプター用のインターフェイス](../core/interfaces-for-a-transactional-asynchronous-batch-supported-send-adapter.md)  
+-   [バッチ処理に対応したトランザクションとしての非同期送信アダプター用のインターフェイス](../core/interfaces-for-a-transactional-asynchronous-batch-supported-send-adapter.md)  
   
--   [送信アダプターの送信請求-応答のインターフェイス](../core/interfaces-for-a-solicit-response-send-adapter.md)
+-   [送信請求 - 応答送信アダプター用のインターフェイス](../core/interfaces-for-a-solicit-response-send-adapter.md)

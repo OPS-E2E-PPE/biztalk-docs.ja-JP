@@ -1,5 +1,5 @@
 ---
-title: '手順 6: 受信確認のバッチの送信ポートを作成する |Microsoft Docs'
+title: 手順 6:受信確認のバッチの送信ポートの作成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3f38b8c7f8e2f486e4de6feca12bf69551221428
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 960e05afa424adf4d23980618170f82987a192ab
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37005003"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65287954"
 ---
-# <a name="step-6-create-the-send-port-for-the-acknowledgment-batch"></a>手順 6: 受信確認のバッチの送信ポートを作成します。
+# <a name="step-6-create-the-send-port-for-the-acknowledgment-batch"></a>手順 6:受信確認のバッチの送信ポートを作成します。
 この手順では、送信元パーティを作成する受信確認のバッチを配信する送信ポートを作成します。 これは、ファイル アダプターの種類を静的な一方向のポートです。 場所のソース (\Tutorial_BatchACKDrop) ファイルのフォルダーを指定する[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]受信確認のバッチ ファイルが削除されます。 ポートで送信する受信確認のバッチの種類を示すポートのフィルターを定義します。 フィルターには、Tutorial_BatchSource と OutboundBatch のメッセージの種類のソースを指定します。  
 
 ### <a name="to-create-the-send-port-for-the-acknowledgment-batch"></a>受信確認のバッチの送信ポートを作成するには  
@@ -74,4 +74,4 @@ ms.locfileid: "37005003"
 
 2. パーティのプロパティ] ダイアログ ボックスで、[**送信ポート**コンソール ツリーでします。 **送信ポート**を選択します**Tutorial_BatchSource**クリックしてドロップダウン リストから**OK**します。  
 
-   続行する[手順 7: オーケストレーションの開始し、BizTalk Server の再起動](../../adapters-and-accelerators/accelerator-hl7/step-7-start-the-orchestration-and-restart-biztalk-server.md)します。
+   続行する[手順 7。オーケストレーションの開始し、BizTalk Server の再起動](../../adapters-and-accelerators/accelerator-hl7/step-7-start-the-orchestration-and-restart-biztalk-server.md)します。

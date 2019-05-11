@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7f4a7b5d016adf1cc7fa8bb73772e1e5d7145520
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 77977351036e86e558491a2c2927a29878ae550b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37002075"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65375527"
 ---
 # <a name="get-metadata-for-oracle-e-business-suite-operations-in-visual-studio"></a>Visual Studio での Oracle E-business Suite 操作のメタデータを取得します。
 [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)] 3 つ提供[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]アダプターを使用してソリューションを開発するために使用できるコンポーネント。  

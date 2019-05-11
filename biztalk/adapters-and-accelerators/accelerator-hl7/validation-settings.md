@@ -15,12 +15,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 01f85c02434f8b20124258d95fd484c79809b509
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 92fa9c8106dd8d00b3d7090e05d65b7d2632d193
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36966323"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65285347"
 ---
 # <a name="validation-settings"></a>検証の設定
 使用して[!INCLUDE[btaBTAHL7NoNumber](../../includes/btabtahl7nonumber-md.md)]、HL7 標準に対してメッセージを検証することができます。 [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] HL7 標準に準拠しているメッセージの構造と本文セグメントを送信または受信するメッセージがあることをによりします。 HL7 がサポートされているカスタム データ型を検証し、末尾の区切り記号を許可できます。 使用する、[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]構成エクスプ ローラー**検証**検証を構成するには、タブ。  

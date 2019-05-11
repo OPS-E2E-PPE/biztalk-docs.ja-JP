@@ -17,24 +17,24 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 21abc71e05a1ee3cf9487021b1311637c39d59e6
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5c8f2d0bcde8743c605e1a0f24c942af816d674c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36988291"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65284984"
 ---
 # <a name="a-role-based-product"></a>ロール ベースの製品
-Microsoft BizTalk Server と Microsoft[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]機能と、ユーザーのロールの適切な環境でツールを提供します。 これらの機能やツールにより、迅速な開発、展開、処理、管理、およびビジネスの使用が実現します。  
+Microsoft BizTalk Server と Microsoft[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]機能と、ユーザーのロールの適切な環境でツールを提供します。 これらの機能とツールは、迅速な開発、展開、操作、管理、および業務の使用を有効にします。  
   
 ## <a name="features-and-tools"></a>機能とツール  
- 開発者用のツールは Microsoft に統合されて[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]®[!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)]します。 開発者はソリューションやプロジェクトをソリューション エクスプローラーで管理でき、BizTalk のデザイン用ツールをすぐに使用できます。  
+ 開発者用のツールは Microsoft に統合されて[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]®[!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)]します。 開発者は、ソリューションとソリューション エクスプ ローラーでプロジェクトを管理し、BizTalk のデザイン時ツールをすぐにアクセスできます。  
   
- Microsoft 管理コンソール (MMC) では、IT プロフェッショナル向けのツールをホストします。 インターフェイス アナリスト、IT 開発者、および IT オペレーターは、MMC ベースの BizTalk 管理 コンソール、BizTalk エクスプローラー、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 管理コンソール、および他のランタイム ツールを使用して [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] システムを管理します。  
+ Microsoft 管理コンソール (MMC) では、IT プロフェッショナル向けのツールをホストします。 インターフェイス アナリスト、IT インプリメンタ、および IT オペレーターは、管理、 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] MMC ベースの BizTalk 管理コンソール、BizTalk エクスプ ローラーを使用して、システム[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]管理コンソール、およびその他の実行時のツール。  
   
- ビジネス アナリストや他のインフォメーション ワーカーは独自の [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] ツールのセットを使用して、ビジネスの状態を分析し、ビジネス データにアクセスすることができます。  
+ ビジネス アナリストおよびその他のインフォメーション ワーカーがビジネスの状態を分析し、独自の一連のビジネス データにアクセスできる[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]ツール。  
   
- [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] SDK は、システムの開発および管理に役立つツールを多数備えています。  
+ [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] SDK には、多数の開発やシステムの管理で役立つツールが用意されています。  
   
 ## <a name="see-also"></a>参照  
  [BizTalk のデザイン時ツール](../../adapters-and-accelerators/accelerator-rosettanet/biztalk-design-time-tools.md)   

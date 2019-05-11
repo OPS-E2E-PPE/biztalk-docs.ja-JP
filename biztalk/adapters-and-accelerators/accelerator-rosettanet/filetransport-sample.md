@@ -12,60 +12,60 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4a4be76ba244418612fe9c4a4996569b3c40b506
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a79759a94b2effd751dd566d62dcdde51395e566
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37007003"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65283719"
 ---
 # <a name="filetransport-sample"></a>FileTransport サンプル
-FileTransport サンプルは Microsoft® を構成する方法を示します[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]SQL ポートではなくファイルのポートを使用します。 FileTransport サンプルは、HTTP の代わりにファイル転送プロトコル (FTP) を使用してメッセージを送受信します。  
+FileTransport サンプルは Microsoft® を構成する方法を示します[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]SQL ポートではなくファイルのポートを使用します。 FileTransport サンプルでは、ファイル転送プロトコル (FTP) を使用して、HTTP ではなく、メッセージの送受信を行います。  
   
 > [!NOTE]
->  このドキュメントでは、内部テストまたは説明を目的として [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] をインストールすることを前提としており、 最小セキュリティ アカウントやセットアップについては説明しません。 このトピックの手順に従うには、ローカル管理権限を持つアカウントを使用する必要があります。  
+>  このドキュメントは、インストールすることを想定しています[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]内部のテストまたはデモ目的のみ。 最小の任意のアカウントを規定したりを設定しません。 このトピックで、手順全体にわたって、ローカルの管理アクセス許可のあるアカウントを使用する必要があります。  
 > 
 > [!NOTE]
->  このサンプルはメッセージの添付ファイルをサポートしていません。  
+>  このサンプルは、メッセージの添付ファイルをサポートしていません。  
   
 ## <a name="filetransport-binding-files"></a>FileTransport バインド ファイル  
- FileTransport サンプルには、2 つのバインド ファイルが含まれています。 各バインド ファイルを使用すると、BTARN のオーケストレーションで使用するファイル ポートを設定できます。 これらのバインド ファイルにある*\<ドライブ\>*: \Program Files\Microsoft BizTalk\<バージョン\>Accelerator for RosettaNet \SDK\FileTransport します。 次に示すように、オーケストレーション、送信ポート、受信ポート、および受信場所に関する設定を確認するには、各バインド ファイルをメモ帳などのエディターで開きます。  
+ FileTransport サンプルには、2 つのバインド ファイルが含まれています。 BTARN のオーケストレーションで使用するためにファイル ポートを設定するには、これらのバインド ファイルの各を使用できます。 これらのバインド ファイルにある*\<ドライブ\>*: \Program Files\Microsoft BizTalk\<バージョン\>Accelerator for RosettaNet \SDK\FileTransport します。 次に示すように、オーケストレーションの設定を表示、送信ポート、受信ポート、および受信場所をメモ帳などのエディターで各バインド ファイルを開きます。  
   
 - PrivateInitiatorusingFileDrops.xml  
   
-  -   オーケストレーション : Microsoft.Solutions.BTARN.PrivateInitiator.PrivateInitiatorProcess  
+  -   オーケストレーション:Microsoft.Solutions.BTARN.PrivateInitiator.PrivateInitiatorProcess  
   
-  -   送信ポート : PrivateInitiator_To_File  
+  -   送信ポート。PrivateInitiator_To_File  
   
-  -   受信ポート : File_To_PrivateInitiator  
+  -   受信ポート。File_To_PrivateInitiator  
   
-  -   受信場所 : File_To_PrivateInitiator  
+  -   受信場所。File_To_PrivateInitiator  
   
 - PrivateResponderusingFileDrops.xml  
   
-  -   オーケストレーション : Microsoft.Solutions.BTARN.PrivateResponder.PrivateResponderProcess  
+  -   オーケストレーション:Microsoft.Solutions.BTARN.PrivateResponder.PrivateResponderProcess  
   
-  -   送信ポート : PrivateResponder_To_File  
+  -   送信ポート。PrivateResponder_To_File  
   
-  -   受信ポート : File_To_PrivateResponder  
+  -   受信ポート。File_To_PrivateResponder  
   
-  -   受信場所 : File_To_PrivateResponder  
+  -   受信場所。File_To_PrivateResponder  
   
   次の手順では、BTSTask コマンドを使用してバインド ファイルからバインドをインポートする方法について説明します。 詳細については、BizTalk Server ヘルプの「ImportBindings コマンド」のトピックを参照してください。  
   
 ## <a name="procedure"></a>手順  
   
-#### <a name="to-set-up-btarn-by-using-file-drop-folders"></a>ファイル格納フォルダを使用して BTARN を設定するには  
+#### <a name="to-set-up-btarn-by-using-file-drop-folders"></a>ファイル ドロップ フォルダーを使用して BTARN を設定するには  
   
-1.  BizTalk エクスプローラを開きます。  
+1.  BizTalk エクスプ ローラーを開きます。  
   
-2.  PrivateInitiator_To_LOB と PrivateResponder_To_LOB という、2 つの LOB SQL 送信ポートを停止します。  
+2.  2 つの LOB SQL 送信ポート、PrivateInitiator_To_LOB と PrivateResponder_To_LOB を停止します。  
   
-3.  LOB_To_PrivateInitiator と LOB_To_PrivateResponder という、2 つの Lob SQL 受信ポートを無効にします。  
+3.  2 つの Lob SQL 受信ポート LOB_To_PrivateInitiator と LOB_To_PrivateResponder を無効にします。  
   
-4.  Microsoft.Solutions.BTARN.PrivateResponder.PrivateResponderProcess の登録を解除します。  
+4.  Microsoft.Solutions.BTARN.PrivateResponder.PrivateResponderProcess の参加を解除します。  
   
-5.  Microsoft.Solutions.BTARN.PrivateInitiator.PrivateInitiatatorProcess の登録を解除します。  
+5.  Microsoft.Solutions.BTARN.PrivateInitiator.PrivateInitiatatorProcess の参加を解除します。  
   
 6.  C:\Program files \microsoft BizTalk の BTARN フォルダーの下に \FileDrops フォルダーを作成する\<バージョン\>Accelerator for RosettaNet、し、\FileDrops の下の次のフォルダー構造を作成します。  
   
@@ -81,21 +81,21 @@ FileTransport サンプルは Microsoft® を構成する方法を示します[!
   
          \ToLOB  
   
-7.  次のコマンドを実行します (BTARN が C: ドライブにインストールされていると仮定します)。  
+7.  (BTARN が c: ドライブにインストールされていることを想定)、次のコマンドを実行します。  
   
     ```  
     BTSTask ImportBindings /Source:C:\Program Files\Microsoft BizTalk <version> Accelerator for RosettaNet\SDK\FileTransport\PrivateInitiatorusingFileDrops.xml  
     ```  
   
-8.  次のコマンドを実行します (BTARN が C: ドライブにインストールされていると仮定します)。  
+8.  (BTARN が c: ドライブにインストールされていることを想定)、次のコマンドを実行します。  
   
     ```  
     BTSTask ImportBindings /Source:C:\Program Files\Microsoft BizTalk <version> Accelerator for RosettaNet\SDK\FileTransport\PrivateResponderusingFileDrops.xml  
     ```  
   
-9. 送信ポート PrivateInitiator_To_File と PrivateResponder_To_File を開始します。  
+9. 送信ポートを開始します。PrivateInitiator_To_File and PrivateResponder_To_File  
   
-10. 受信ポート LOB_To_PrivateInitiator と LOB_To_PrivateResponder を有効にします。  
+10. 受信ポートを有効にします。LOB_To_PrivateInitiator and LOB_To_PrivateResponder  
   
 ## <a name="see-also"></a>参照  
  [メッセージ サンプル](../../adapters-and-accelerators/accelerator-rosettanet/messaging-samples.md)

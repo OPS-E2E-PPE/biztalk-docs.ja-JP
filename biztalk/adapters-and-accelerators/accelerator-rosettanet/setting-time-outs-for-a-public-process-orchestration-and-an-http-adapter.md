@@ -20,15 +20,15 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3e0977589e310746e2c75c1f89fdd2c41ecb86aa
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 70dd783e805116b24e224886e02d0f46fe2edfed
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36976715"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65281824"
 ---
 # <a name="setting-time-outs-for-a-public-process-orchestration-and-an-http-adapter"></a>パブリック プロセス オーケストレーションと HTTP アダプタのタイムアウトの設定
-同期接続シナリオでパブリック プロセス オーケストレーションを HTTP アダプターと一緒に使用する場合、それぞれのタイムアウトを適切に設定する必要があります。 オーケストレーションのタイムアウト設定 (実行までの時間) は HTTP アダプターのタイムアウト (要求のタイムアウト) より小さくする必要があります。 これは、HTTP アダプターの設定が小さいと、オーケストレーションの前にアダプターがタイムアウトになる可能性があるからです。 この場合、プロセスの制御権がアダプターに渡ります。 プロセスはオーケストレーションが制御する必要があるため、そのタイムアウト値が小さくなければなりません。  
+同期のシナリオで HTTP アダプターを使用したパブリック プロセス オーケストレーションを使用するときにごとのタイムアウトの設定値を適切に設定する必要があります。 オーケストレーション (実行までの時間) のタイムアウト設定は、(要求タイムアウト) HTTP アダプターのタイムアウトより小さくする必要があります。 これは、ため、アダプターが、オーケストレーションの前にタイムアウトになる可能性があります、HTTP アダプターの設定が小さい場合は、です。 これにより、プロセス、アダプターを制御します。 オーケストレーションがプロセスのコントロールである必要があります。そのため、そのタイムアウトの設定は、小さくする必要があります。  
   
 ### <a name="to-set-the-time-out-setting-for-the-http-adapter"></a>HTTP アダプターのタイムアウトを設定するには  
   
@@ -40,7 +40,7 @@ ms.locfileid: "36976715"
   
 4.  をクリックして**OK**、順にクリックします**OK**もう一度です。  
   
-### <a name="to-set-the-time-out-setting-for-the-public-process-orchestration"></a>パブリック プロセス オーケストレーションのタイムアウトを設定するには  
+### <a name="to-set-the-time-out-setting-for-the-public-process-orchestration"></a>パブリック プロセス オーケストレーションのタイムアウト設定を設定するには  
   
 1. クリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**Microsoft BizTalk\<バージョン\>Accelerator for RosettaNet**順にクリックします**BizTalk Accelerator for RosettaNet 管理コンソール**します。  
   

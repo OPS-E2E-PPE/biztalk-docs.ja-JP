@@ -12,20 +12,20 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c1bf38102dd37539ce69f892fc0e383ee80bc21f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 098cbe94f8f8841ee09a6d04825be5ef8fff1ba2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36986371"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65285024"
 ---
 # <a name="0c2-request-to-0c2-response-map-sample"></a>0c2 の要求への応答の 2 つのマップ サンプル
-_0C2RequestMessageTo0C2ResponseMessage.btm サンプルは、0C2 要求メッセージを 0C2 応答メッセージにマップする方法を示します。  
+_0C2RequestMessageTo0C2ResponseMessage.btm サンプルでは、0 C 2 応答メッセージに 0 の C の 2 つの要求メッセージをマップする方法を示します。  
   
  既定では、Microsoft® BizTalk Server のセットアップ プログラムのインストールでサンプル\<*ドライブ*\>: \Program Files\Microsoft BizTalk\<バージョン\>Accelerator for rosettanet \sdk\PIPAutomation\DoubleAction します。  
   
 ## <a name="sample-contents"></a>サンプルの内容  
- このサンプルでは、0 C 2 応答メッセージに 0 の C の 2 つの要求メッセージのフィールドをマップする方法を示します。 このサンプルは、Double Action PIPAutomation オーケストレーション サンプルと組み合わせて使用できます。 ダブルアクション PIPAutomation オーケストレーションのサンプルは、オーケストレーションを実装してダブルアクション 0C2、0C4、3A2、3A4 の PIP の応答を自動生成する方法を示します。  
+ このサンプルでは、0 C 2 応答メッセージに 0 の C の 2 つの要求メッセージのフィールドをマップする方法を示します。 ダブル アクション PIPAutomation オーケストレーション サンプルを使用して、このサンプルを使用することができます。 ダブル アクション PIPAutomation オーケストレーション サンプルは、ダブル アクションの応答を自動的に生成するためのオーケストレーションを実装する方法を示します 0c2、0 C 4、3 a 2、および 3A4 の Pip です。  
   
 ## <a name="see-also"></a>参照  
  [サンプル](../../adapters-and-accelerators/accelerator-rosettanet/samples3.md)

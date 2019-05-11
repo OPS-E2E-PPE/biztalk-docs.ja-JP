@@ -1,5 +1,5 @@
 ---
-title: MLLP でエンコードされたメッセージの処理 |Microsoft ドキュメント
+title: MLLP でエンコードされたメッセージの処理 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,21 +15,21 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 156ae3a8aadd3710f29caf5b32d9edd4ae4f6ad9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 95849112afadc2400819d71aee8f88e40af4fd68
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22205970"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65289972"
 ---
 # <a name="processing-mllp-encoded-messages"></a>MLLP でエンコードされたメッセージの処理
-次のセクションでは、受信アダプターの詳細については、最小下位層プロトコル (MLLP) と、MLLP HL7 V2 を使用するアダプターの送信を提供します。メッセージの処理 x。  
+次のセクションでは、受信アダプターの情報について、最小下位レイヤー プロトコル (MLLP) と、MLLP 送信 HL7 V2 に使用されるアダプターを提供します。メッセージの処理 x。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [構成パラメーターを送信および受信アダプター](../../adapters-and-accelerators/accelerator-hl7/configuration-parameters-for-send-and-receive-adapters.md)  
+-   [送信および受信アダプターの構成パラメーター](../../adapters-and-accelerators/accelerator-hl7/configuration-parameters-for-send-and-receive-adapters.md)  
   
--   [MLLP の受信アダプターの処理](../../adapters-and-accelerators/accelerator-hl7/mllp-receive-adapter-processing.md)  
+-   [MLLP 受信アダプターの処理](../../adapters-and-accelerators/accelerator-hl7/mllp-receive-adapter-processing.md)  
   
 -   [MLLP 送信アダプターの処理](../../adapters-and-accelerators/accelerator-hl7/mllp-send-adapter-processing.md)  
   

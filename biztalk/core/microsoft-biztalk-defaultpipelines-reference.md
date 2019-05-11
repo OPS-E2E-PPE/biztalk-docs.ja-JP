@@ -26,17 +26,17 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: de2ec54b34a4e6d92f471db7fe9ad5dbc7933014
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a183aa499b5acb56813fcb0433d2fd57258a777d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37022056"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65324839"
 ---
 # <a name="microsoftbiztalkdefaultpipelines-reference"></a>Microsoft.BizTalk.DefaultPipelines の参照
 **Microsoft.BizTalk.DefaultPipelines**名前空間には、次のパイプラインが含まれています。  
   
-- XMLReceive  
+- [Xmlreceive]  
   
 - PassThruReceive  
   
@@ -44,13 +44,13 @@ ms.locfileid: "37022056"
   
 - PassThruTransmit  
   
-  パイプラインとは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] で送受信されるメッセージを処理するために 1 つ以上のステージを定義およびリンクする、ソフトウェア コンポーネントです。 ステージは、エンコードやデコード、アセンブルや逆アセンブル、暗号化や復号化などの機能を備えています。 これらの機能は、特定の順序で実装されます。 パイプライン デザイナーを使用して、受信および送信パイプラインを作成できます。  
+  パイプラインを定義し、受信または送信されたメッセージの処理の 1 つ以上のステージをリンクするソフトウェア コンポーネントとは[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]します。 各ステージには、エンコードまたはデコード、逆アセンブルまたはアセンブル、および復号化または暗号化などの関数が含まれます。 これらの関数は、特定の順序で実装されます。 パイプライン デザイナーを使用して、作成する受信パイプラインと送信されます。  
   
   BizTalk プロジェクトに含まれる既定のパイプライン参照を使用してドキュメントのすべての種類を処理できる、 **PassThruReceive**と**PassThruTransmit**パイプライン。  
   
-  既定のパイプラインに含まれる既定のコンポーネントを次に示します。 これらは、各パイプラインにおけるコンポーネントの既定の順序も示しています。 コンポーネントは必要に応じて追加したり削除したりできます。  
+  次の表は、既定のパイプラインの既定のコンポーネントを示します。 これらのリストには、各パイプラインにおけるコンポーネントの既定の順序も示します。 追加し、必要に応じて、コンポーネントを削除できます。  
   
-  既定の XMLReceive パイプラインに含まれる既定のコンポーネントは次のとおりです。  
+  既定の XMLReceive パイプラインに既定のコンポーネントは次のとおりです。  
   
 - 復号化  
   
@@ -62,13 +62,13 @@ ms.locfileid: "37022056"
   
 - パーティの解決  
   
-  既定の XMLTransmit パイプラインに含まれる既定のコンポーネントは次のとおりです。  
+  既定の XMLTransmit パイプラインで既定のコンポーネントは次のとおりです。  
   
 - アセンブラー  
   
 - エンコーダー  
   
-- 暗号化  
+- 盗み見  
   
 ## <a name="see-also"></a>参照  
  [パイプライン デザイナーを使用してパイプラインを作成します。](../core/creating-pipelines-using-pipeline-designer.md)   

@@ -1,13 +1,13 @@
 ---
 redirect_url: /biztalk/adapters-and-accelerators/adapter-oracle-ebs/microsoft-biztalk-adapter-for-oracle-e-business-suite-documentation
 redirect_document_id: true
-ms.openlocfilehash: f0028dddead85be120b82dafeaaa2b4c725bb9f1
-ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
+ms.openlocfilehash: cab4507abda3f464242aca26b4a5d60fbd711974
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2017
-ms.locfileid: "23449948"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65323394"
 ---
-# <a name="oracle-e-business-suite-odbc-adapter"></a>Oracle E-Business Suite ODBC アダプタ
+# <a name="oracle-e-business-suite-odbc-adapter"></a>Oracle E-business Suite ODBC アダプター
 
-[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は現在、Oracle E-Business Suite ODBC アダプターをサポートしていません。 同じ機能を実現するには、Microsoft [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)] を使用することをお勧めします。  
+[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 不要になった、Oracle E-business Suite ODBC アダプターをサポートします。 Microsoft を使用することをお勧めします。[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]同じ機能を実現します。  

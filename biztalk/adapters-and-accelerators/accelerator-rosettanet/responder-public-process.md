@@ -17,12 +17,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6565f10b311a504edbd3323cc0fe3b318c7b2410
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7a98cfde175b9377be11bf4b18570eb93bd16437
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36981067"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65282430"
 ---
 # <a name="responder-public-process"></a>応答側パブリック プロセス
 この応答側のパブリック プロセスは、開始側から RNIF (RosettaNet Implementation Framework) メッセージを受信し、必要に応じて応答します。  
@@ -35,7 +35,7 @@ ms.locfileid: "36981067"
 2. パブリック プロセスが Service Content およびヘッダーをアクション メッセージから抽出してプライベート プロセスに送信します。  
   
    > [!NOTE]
-   >  応答側パブリック プロセスが着信メッセージに対して標準検証 (適用できる場合は、検証アダプターに含まれる追加の検証) を実行します。 検証が正常に終了すると、パブリック プロセスはアプリケーション アダプターを開始して個々の実装に基づいて通知を実行します。 応答側パブリック プロセスはメッセージ ボックス データベースにメッセージを保存し、`BeginNotify` クラスの `ApplicationAdapter` メソッドを使用して、メッセージ ボックスにメッセージを保存したことを応答側プライベート プロセスに通知します。 検証アダプターとアプリケーション アダプターの詳細については、[ValidationAdapter &#91;RN3&#93; ](../../adapters-and-accelerators/accelerator-rosettanet/validationadapter.md)と[ApplicationAdapter &#91;RN3&#93;](../../adapters-and-accelerators/accelerator-rosettanet/applicationadapter.md)を参照してください。  
+   >  応答側パブリック プロセスが着信メッセージに対して標準検証 (適用できる場合は、検証アダプターに含まれる追加の検証) を実行します。 検証が正常に終了すると、パブリック プロセスはアプリケーション アダプターを開始して個々の実装に基づいて通知を実行します。 応答側パブリック プロセスはメッセージ ボックス データベースにメッセージを保存し、`BeginNotify` クラスの `ApplicationAdapter` メソッドを使用して、メッセージ ボックスにメッセージを保存したことを応答側プライベート プロセスに通知します。 検証アダプターとアプリケーション アダプターの詳細については、次を参照してください。 [ValidationAdapter &#91;RN3&#93; ](../../adapters-and-accelerators/accelerator-rosettanet/validationadapter.md)と[ApplicationAdapter &#91;RN3&#93;](../../adapters-and-accelerators/accelerator-rosettanet/applicationadapter.md)します。  
   
 3. 非同期のシングル アクションの場合、パブリック プロセスは Service Content のメッセージ部を Preamble、Service Header、および Delivery Header (RNIF 2.01 の場合のみ) でラップして、RNIF シグナル メッセージ (受信確認) を作成します。 パブリック プロセスは、パーティ間の取引先アグリーメントに保存されている情報 (プロセス構成設定、送信元と送信先パーティの構成情報、および PIP (Partner Interface Process) 変数) を使用して、Preamble、Service Header、および Delivery Header を作成します。 その後、開始側にシグナル メッセージを送信します。  
   

@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0f9d806f3f757200e425b2f922032cb8f8d26bc6
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 61e283233017723a5dbb014eae41073820a7f43d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36981571"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65279027"
 ---
 # <a name="preparing-the-disaster-recovery-biztalk-servers"></a>ディザスター リカバリー BizTalk Server の準備
 インストール[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]、推奨事項に従い、ディザスター リカバリー サイトでの実行時サーバー [BizTalk Server 2010 インストールおよびアップグレード ガイド](http://go.microsoft.com/fwlink/?LinkID=194815)(<http://go.microsoft.com/fwlink/?LinkID=194815>)。 これらの構成[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ランタイム サーバーを BizTalk 構成ウィザードを使用して、運用環境の BizTalk グループに参加させます。 構成するときに、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] (ディザスター リカバリーのエンタープライズ シングル サインオン マスター シークレット サーバーを含む) のディザスター リカバリー サイトでの実行時のサーバーを確認します。  

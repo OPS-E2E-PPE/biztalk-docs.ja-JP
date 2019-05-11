@@ -1,5 +1,5 @@
 ---
-title: '手順 4: スキーマの作成 |Microsoft Docs'
+title: 手順 4:スキーマの作成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,14 +16,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 914efbfe8632bb727724a5115f6423b9abb8f54f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 58f3e45216c9a38faf13001eb3842ef0db4976d9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37000939"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65288018"
 ---
-# <a name="step-4-create-the-schemas"></a>手順 4: スキーマを作成します。
+# <a name="step-4-create-the-schemas"></a>手順 4:スキーマを作成します。
 この手順で新しいプロジェクトを作成する (**BTAHL7 プロジェクト**) このプロジェクトの成果物を格納している: スキーマ、マップ、およびオーケストレーションします。 スキーマを作成し (**Doorbell.xsd**) XML でエンコードされた受信メッセージ、および既存のスキーマを選択します (**ADT_A04_22_GLO_DEF.xsd**) 送信 HL7 でエンコードされたメッセージ。 これらのスキーマを使用すると、オーケストレーション内で交換するメッセージの構造を定義します。  
 
 ### <a name="to-create-the-schemas"></a>スキーマを作成するには  
@@ -76,7 +76,7 @@ ms.locfileid: "37000939"
 
     |     プロパティ      |                                     目的                                     |
     |-------------------|------------------------------------------------------------------------------------|
-    |    **[バージョン]**    |    HL7 メッセージのバージョン番号を選択します。 このチュートリアルでは使用**2.2**します。    |
+    |    **バージョン**    |    HL7 メッセージのバージョン番号を選択します。 このチュートリアルでは使用**2.2**します。    |
     | **メッセージの種類**  |           HL7 メッセージの種類を選択します。 このチュートリアルでは使用**ADT**します。           |
     | **トリガー イベント** | HL7 メッセージのトリガー イベントの値を選択します。 このチュートリアルでは使用**A04**します。 |
 
@@ -94,7 +94,7 @@ ms.locfileid: "37000939"
 
 22. [参照の追加] ダイアログ ボックスで、**参照**タブ。**検索対象の**ボックスで、移動\<*ドライブ*\>: \Program Files\Microsoft BizTalk\<バージョン\>HL7\SDK\End ツー エンドのチュートリアルのアクセラレータ\Tutorial_BTAHL7Drop\Bin します。 クリックして**Microsoft.Solutions.BTAHL7.HL7Schemas.dll**、 をクリックして**追加**、順にクリックします**OK**します。  
 
-    進みます[手順 5: スキーマのプロパティを昇格させる](../../adapters-and-accelerators/accelerator-hl7/step-5-promote-schema-properties.md)します。  
+    続行する[手順 5。スキーマ プロパティを昇格させる](../../adapters-and-accelerators/accelerator-hl7/step-5-promote-schema-properties.md)します。  
 
 ## <a name="see-also"></a>参照  
  [メッセージ強化のチュートリアル](../../adapters-and-accelerators/accelerator-hl7/message-enrichment-tutorial.md)

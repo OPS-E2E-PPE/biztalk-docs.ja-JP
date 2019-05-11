@@ -1,5 +1,5 @@
 ---
-title: '手順 4: テスト FileAct ストア アンド フォワードのエンド ツー エンド シナリオ |Microsoft ドキュメント'
+title: 手順 4:テスト FileAct ストア アンド フォワード エンド ツー エンドのシナリオ |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,22 +12,22 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ffceec62a87fc9dbfa4dd7cac089ca1f0059ba8d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 487da5ade816150aeb24647c7de540f63163a00e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22223186"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65365228"
 ---
-# <a name="step-4-test-fileact-store-and-forward-end-to-end-scenario"></a>手順 4: FileAct ストア アンド フォワードのエンド ツー エンド シナリオをテストします。
-完全な[ステップ 3 e: FileAct ストア アンド ソフトウェア ExchangeSnFResponse メッセージをキャプチャするシナリオ前方の FILE 送信ポートを追加](../../adapters-and-accelerators/fileact-interact/step-3e-add-file-send-port-to-get-sw-exchangesnfresponse-messages-for-fileact.md)のこのセクションの手順を開始する前にします。
+# <a name="step-4-test-fileact-store-and-forward-end-to-end-scenario"></a>手順 4:テスト FileAct ストア アンド フォワード エンド ツー エンドのシナリオ
+完全な[手順 3 e:FileAct ストア アンド フォワード シナリオ用に Sw-exchangesnfresponse メッセージをキャプチャする FILE 送信ポートの追加](../../adapters-and-accelerators/fileact-interact/step-3e-add-file-send-port-to-get-sw-exchangesnfresponse-messages-for-fileact.md)のこのセクションの手順を開始する前にします。
   
-## <a name="next-steps"></a>次の手順  
+## <a name="next-steps"></a>次のステップ  
   
--   [手順 4 a: FileAct ストア アンド フォワードのシナリオの SWIFTNet サービスの開始](../../adapters-and-accelerators/fileact-interact/step-4a-start-the-swiftnet-service-for-the-fileact-store-and-forward-scenario.md)  
+-   [手順 4 a:FileAct ストア アンド フォワード シナリオ用に SWIFTNet サービスを開始します。](../../adapters-and-accelerators/fileact-interact/step-4a-start-the-swiftnet-service-for-the-fileact-store-and-forward-scenario.md)  
   
--   [手順 4 b: 送信ポートの開始し、FileAct ストア アンド フォワードのシナリオの受信ポート](../../adapters-and-accelerators/fileact-interact/step-4b-start-the-send-ports-and-receive-ports-for-fileact-store-and-forward.md)  
+-   [手順 4 b:送信ポートの開始し、受信 FileAct ストア アンド フォワード シナリオ用のポート](../../adapters-and-accelerators/fileact-interact/step-4b-start-the-send-ports-and-receive-ports-for-fileact-store-and-forward.md)  
   
--   [手順 4 C: FileAct ストア アンド フォワードのシナリオのテスト インスタンスを作成します。](../../adapters-and-accelerators/fileact-interact/step-4c-create-a-test-instance-for-the-fileact-store-and-forward-scenario.md)  
+-   [手順 4 C:FileAct ストア アンド フォワード シナリオ用のテスト インスタンスを作成します。](../../adapters-and-accelerators/fileact-interact/step-4c-create-a-test-instance-for-the-fileact-store-and-forward-scenario.md)  
   
--   [手順 4 D: FileAct ストア アンド フォワードのシナリオの有効なインスタンスのテスト](../../adapters-and-accelerators/fileact-interact/step-4d-test-a-valid-instance-for-the-fileact-store-and-forward-scenario.md)
+-   [手順 4 D:FileAct ストア アンド フォワード シナリオ用に有効なインスタンスをテストします。](../../adapters-and-accelerators/fileact-interact/step-4d-test-a-valid-instance-for-the-fileact-store-and-forward-scenario.md)

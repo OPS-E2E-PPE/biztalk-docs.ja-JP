@@ -1,5 +1,5 @@
 ---
-title: 基本的なオーケストレーション Design1 |Microsoft ドキュメント
+title: 基本的なオーケストレーション Design1 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,25 +14,25 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d302428cd713b826e7c4629ea75eb6f6268d7400
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6bfe5f4bce42fbffb7a0496b296f95b20be429d3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22230698"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65358380"
 ---
 # <a name="basic-orchestration-design"></a>基本的なオーケストレーション デザイン
-基本的なオーケストレーションを作成するときに、オーケストレーションの受信ポートに XML が表示されます。 その XML をバックエンド システムに送信して処理します。 バックエンド システムで例外が発生した場合はオーケストレーションが停止し、エラーが生成されます。 生成される例外は、オーケストレーションが完了しませんでした情報を提供します。  
+基本的なオーケストレーションを作成するときに、オーケストレーションの受信ポートに XML が表示されます。 XML は、処理するバックエンド システムに送信されます。 バックエンド システムで、例外が発生する可能性があります、オーケストレーションを停止し、エラーが生成される可能性があります。 生成される例外は、オーケストレーションが完了しなかった情報を提供します。  
   
  ![](../core/media/jdeoneworld-01.gif "JdeOneWorld_01")  
 例外処理  
   
- 障害が発生すると、呼び出しが中断されます。 イベント ビューアー ログで、エラーとその原因を表示できます。  
+ エラーが発生したときに、呼び出しは中断されます。 イベント ビューアー ログでは、エラーと失敗の理由を表示できます。  
   
- オーケストレーションが中断状態にならないようにし、エラーをリダイレクトするには、CatchExpression を作成します。 バックエンド システムによって生成される例外をトラップし、問題の原因の特定に役立てるにすることができますを使用する、**スコープ**オーケストレーションの図形です。  
+ 中断状態からオーケストレーションをしないようにして、エラーをリダイレクトする、CatchExpression を作成できます。 使用できる、バックエンド システムによって生成された例外をトラップして、問題の原因の特定を支援する、**スコープ**オーケストレーションの図形。  
   
  ![](../core/media/jdeoneworld-02.gif "JdeOneWorld_02")  
-例外処理の全体図  
+例外処理の合計  
   
 ## <a name="see-also"></a>参照  
  [BizTalk Server 例外処理の使用](../core/using-biztalk-server-exception-handling1.md)

@@ -1,5 +1,5 @@
 ---
-title: システムのリファレンス |Microsoft ドキュメント
+title: システムの参照 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,17 +16,17 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f5a7340cd3e5721d0552d5d70046af28407982d0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: aa35ab7d3a63ef2f1106b02669777ba8c903b2a3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22278114"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65291713"
 ---
-# <a name="system-reference"></a>システムのリファレンス
-**システム**参照の名前空間には、基本クラスが含まれています。 および、一般的に定義する基底クラスが値型と参照データ型、イベントとイベント ハンドラー、インターフェイス、属性、および処理例外を使用します。 この既定の参照は、正常に機能するすべての BizTalk プロジェクトの必要があります。 削除しないでください、**システム**参照します。  
+# <a name="system-reference"></a>システムの参照
+**システム**参照の名前空間には、基礎的なクラスが含まれていて、一般的に定義する基底クラスが値と参照データ型、イベントとイベント ハンドラー、インターフェイス、属性、および例外処理を使用します。 この既定の参照は、すべての BizTalk プロジェクトを正常に機能する必要があります。 削除しないでください、**システム**参照。  
   
- 詳細については、**システム**参照、Visual Studio 連結ヘルプ コレクションの「System Namespace」を参照してください[http://go.microsoft.com/fwlink/?LinkId=193568](http://go.microsoft.com/fwlink/?LinkId=193568)です。  
+ 詳細については、**システム**参照を"System Namespace"で Visual Studio 連結ヘルプ コレクションを参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=193568](http://go.microsoft.com/fwlink/?LinkId=193568)します。  
   
 ## <a name="see-also"></a>参照  
- [BizTalk プロジェクトに含まれる BizTalk Namespace 参照について](../core/about-biztalk-namespace-references-included-in-biztalk-projects.md)
+ [BizTalk プロジェクト内の BizTalk 名前空間参照について](../core/about-biztalk-namespace-references-included-in-biztalk-projects.md)

@@ -13,12 +13,12 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f6a2484c23d4abf8fbe489c3b2fed3ced25b9313
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: bbccab308521ca6c3bb429da3ba13078258ba2dd
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36992075"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65370003"
 ---
 # <a name="configure-a-port-using-the-wcf-sql-adapter"></a>WCF-SQL アダプターを使用してポートを構成します。
 このトピックでは WCF SQL を構成する方法については送受信ポートを使用して SQL サーバーの送信および受信操作を実行する、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]します。  
@@ -31,7 +31,7 @@ ms.locfileid: "36992075"
   
 1. 開始、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソール。  
   
-2. WCF-SQL アダプターを追加、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソール。 手順については、[SQL アダプタを BizTalk Server 管理コンソールに追加する](../../adapters-and-accelerators/adapter-sql/adding-the-sql-adapter-to-biztalk-server-administration-console.md)を参照してください。  
+2. WCF-SQL アダプターを追加、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソール。 手順については、次を参照してください。 [SQL アダプタを BizTalk Server 管理コンソールに追加する](../../adapters-and-accelerators/adapter-sql/adding-the-sql-adapter-to-biztalk-server-administration-console.md)します。  
   
 3. コンソール ツリーで、展開**BizTalk グループ**、順に展開**アプリケーション**します。  
   
@@ -56,7 +56,7 @@ ms.locfileid: "36992075"
       > [!NOTE]
       >  従業員は、SQL Server データベース内のテーブルの名前です。  
   
-   3. をクリックして、**バインド** タブでバインドによって公開されるプロパティの値を指定し、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]します。 バインド プロパティの詳細については、[for SQL Server のアダプターのバインド プロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md)を参照してください。  
+   3. をクリックして、**バインド** タブでバインドによって公開されるプロパティの値を指定し、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]します。 バインド プロパティの詳細については、次を参照してください。 [for SQL Server のアダプターのバインド プロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md)します。  
   
       > [!NOTE]
       >  バインドのプロパティは、送信ポートまたは受信ポートを構成するかどうかに基づいて表示されます。 たとえば、通知に関連するバインドのプロパティは通知が受信操作には、受信ポートの構成を必要とするために、送信ポートを構成するときに使用できませんなりました。  
@@ -70,7 +70,7 @@ ms.locfileid: "36992075"
   
       -   選択、**使用してシングル サインオン**オプション、し、関連アプリケーションにエンタープライズ シングル サインオン (SSO) を指定します。  
   
-           BizTalk Server に関するセキュリティの詳細については、[SQL アダプターと BizTalk Server でセキュリティ](../../adapters-and-accelerators/adapter-sql/security-with-the-sql-adapter-and-biztalk-server.md)を参照してください。  
+           BizTalk Server に関するセキュリティの詳細については、次を参照してください。 [SQL アダプターと BizTalk Server でセキュリティ](../../adapters-and-accelerators/adapter-sql/security-with-the-sql-adapter-and-biztalk-server.md)します。  
   
    5. 戻る、**送信ポートのプロパティ**ダイアログ ボックスで、をクリックして **[ok]** します。  
   
@@ -91,7 +91,7 @@ ms.locfileid: "36992075"
   
 1. 開始、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソール。  
   
-2. WCF-SQL アダプターを追加、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソール。 手順については、[SQL アダプタを BizTalk Server 管理コンソールに追加する](../../adapters-and-accelerators/adapter-sql/adding-the-sql-adapter-to-biztalk-server-administration-console.md)を参照してください。  
+2. WCF-SQL アダプターを追加、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソール。 手順については、次を参照してください。 [SQL アダプタを BizTalk Server 管理コンソールに追加する](../../adapters-and-accelerators/adapter-sql/adding-the-sql-adapter-to-biztalk-server-administration-console.md)します。  
   
 3. コンソール ツリーで、展開**BizTalk グループ**、順に展開**アプリケーション**します。  
   
@@ -113,12 +113,12 @@ ms.locfileid: "36992075"
   
    1. をクリックして、**全般**タブをクリックし、**構成**ボタンをクリックし、接続パラメーターの値を指定します。 接続 URI の詳細についてはの[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]を参照してください[SQL Server の接続 URI の作成](../../adapters-and-accelerators/adapter-sql/create-the-sql-server-connection-uri.md)です。  
   
-   2. をクリックして、**バインド** タブでバインドによって公開されるプロパティの値を指定し、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]します。 バインド プロパティの詳細については、[for SQL Server のアダプターのバインド プロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md)を参照してください。  
+   2. をクリックして、**バインド** タブでバインドによって公開されるプロパティの値を指定し、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]します。 バインド プロパティの詳細については、次を参照してください。 [for SQL Server のアダプターのバインド プロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md)します。  
   
       > [!NOTE]
       >  バインドのプロパティは、送信ポートまたは受信ポートを構成するかどうかに基づいて表示されます。 たとえば、通知に関連するバインドのプロパティは通知が受信操作には、受信ポートの構成を必要とするために、送信ポートを構成するときに使用できませんなりました。  
   
-   3. をクリックして、**動作** タブ、トランザクション分離レベルを設定します。 トランザクション分離レベルを設定する方法についての詳細については、[トランザクション分離レベルの構成と SQL を使用したトランザクション タイムアウト](../../adapters-and-accelerators/adapter-sql/configure-transaction-isolation-level-and-transaction-timeout-with-sql.md)を参照してください。  
+   3. をクリックして、**動作** タブ、トランザクション分離レベルを設定します。 トランザクション分離レベルを設定する方法についての詳細については、次を参照してください。[トランザクション分離レベルの構成と SQL を使用したトランザクション タイムアウト](../../adapters-and-accelerators/adapter-sql/configure-transaction-isolation-level-and-transaction-timeout-with-sql.md)します。  
   
    4. をクリックして、**他**タブをクリックし、次のいずれかの操作を行います。  
   

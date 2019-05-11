@@ -16,15 +16,15 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e484b221df54f00b02f20ef89466fed6b99cd69d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a1acb8f56a4318695584abb074ddfcc0cf0c28c0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22225098"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65361921"
 ---
 # <a name="accessing-soap-headers-in-pipeline-components"></a>パイプライン コンポーネントでの SOAP ヘッダーへのアクセス
-パイプライン コンポーネントでは、SOAP ヘッダーのコンテキスト プロパティにアクセスできます。 コンテキスト プロパティ名とターゲットの名前空間の組み合わせを使用する**http://schemas.microsoft.com/BizTalk/2003/SOAPHeader**です。  
+パイプライン コンポーネントでは、SOAP ヘッダーのコンテキスト プロパティにアクセスできます。 コンテキスト プロパティ名とターゲットの名前空間の組み合わせを使用する **http://schemas.microsoft.com/BizTalk/2003/SOAPHeader**します。  
   
  次のコード例は、要求 SOAP ヘッダーを受信パイプライン コンポーネントのプロパティの取得**OrigDest**:  
   

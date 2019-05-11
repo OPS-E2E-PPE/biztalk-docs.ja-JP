@@ -12,14 +12,14 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d057efc9f0fd9e1cd5625f191f811c53b2e1ad4f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 069cb188ce6f6035b64298aaa90d6362d9500702
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37019503"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65362588"
 ---
-# <a name="a-bitwiseand-comparison-cannot-be-done-for-this-xsd-type"></a>この種の XSD に対して BitwiseAnd 比較を行うことはできません
+# <a name="a-bitwiseand-comparison-cannot-be-done-for-this-xsd-type"></a>この XSD 型に対して BitwiseAnd 比較を行うことはできません。
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                        |

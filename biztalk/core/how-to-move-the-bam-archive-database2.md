@@ -15,15 +15,15 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e33b09bd4e6563800c70acfae12ff52acc2cb071
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ffb306cd7b7115d5ed9e28577d34f84332a161eb
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36967171"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65335885"
 ---
 # <a name="how-to-move-the-bam-archive-database"></a>BAM アーカイブ データベースを移動する方法
-ここでは、BAM アーカイブ データベースを他のサーバーに移動する手順について説明します。  
+この手順を使用すると、BAM アーカイブ データベースを別のサーバーに移動します。  
   
 ## <a name="prerequisites"></a>前提条件  
  この手順を実行するには、SQL Server sysadmin 固定サーバーの役割のメンバーであるアカウントを使用してログオンする必要があります。  
@@ -47,13 +47,13 @@ ms.locfileid: "36967171"
       > [!NOTE]
       >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  
   
-2. SQL Server Books Online に記載されている手順に従い、古いサーバーのデータベースをバックアップします。  
+2. 前のサーバー、データベースをバックアップする SQL Server オンライン ブックの指示に従います。  
   
-3. BAM アーカイブ データベースを新しい SQL Server にコピーします。  
+3. BAM アーカイブ データベースを新しい SQL server にコピーします。  
   
 4. 新しいサーバー上のデータベースを復元する SQL Server オンライン ブックの指示に従います。  
   
-5. BAMConfiguration.xml ファイルで、ArchivingDatabase DeploymentUnit セクションの ServerName を新しいサーバー名に変更します。  
+5. BAMConfiguration.xml ファイルを編集し、ArchivingDatabase DeploymentUnit セクションの ServerName を新しいサーバー名に変更します。  
   
 6. BAMConfiguration.xml ファイルを保存して閉じます。  
   

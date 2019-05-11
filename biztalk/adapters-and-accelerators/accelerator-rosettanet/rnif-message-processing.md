@@ -22,12 +22,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3cda3468bfc6ada0ca9a4088fca5efc6c6d365f1
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: bb063368f79d2aec81a540084e7137ac9359a9e8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36991435"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65282410"
 ---
 # <a name="rnif-message-processing"></a>RNIF メッセージの処理
 RosettaNet 組織は、RNIF (RosettaNet Implementation Framework) 仕様でメッセージ交換を定義しています。 RNIF は、統合システムがメッセージを転送する方法を定義します。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] RNIF 仕様は、マイクロソフトに追加する機能を完全に実装[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]ボックスをネイティブに提供します。  
@@ -35,12 +35,12 @@ RosettaNet 組織は、RNIF (RosettaNet Implementation Framework) 仕様でメ�
 RNIF 通信は複雑です。 RNIF 処理を実行するパブリック プロセスには、さまざまな検証チェックと複雑なワークフロー ロジックが含まれます。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] この機能をネイティブに提供します。 そのため、RNIF ロジックを最初から開発したり保守することなく、RosettaNet 準拠システムを使用できます。  
   
 ## <a name="btarn-support-for-rnif"></a>BTARN の RNIF のサポート  
- [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] では、RNIF の両方のバージョン、RNIF 1.1 と RNIF 2.0 (V02.00.01) をサポートしています。 RNIF 2.0 には、RNIF 1.1 でサポートされる機能に加え、暗号化、添付ファイル、および同期トランザクションを含む重要な機能が追加されています。 RNIF 2.0 には RNIF 1.1 との下位互換性はありません。  
+ [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] RNIF の両方のバージョンをサポートしています。RNIF 1.1 および RNIF 2.0 (V02.00.01)。 RNIF 2.0 には、RNIF 1.1 でサポートされる機能に加え、暗号化、添付ファイル、および同期トランザクションを含む重要な機能が追加されています。 RNIF 2.0 には RNIF 1.1 との下位互換性はありません。  
   
 > [!NOTE]
 >  [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] は、RosettaNet Ready RNIF 2.0 に準拠しています。  
   
-この 2 つのバージョンでは RosettaNet メッセージの定義方法が異なります。 異なるメッセージ コンテナの詳細については、[RNIF 規格](../../adapters-and-accelerators/accelerator-rosettanet/rnif-standard.md)を参照してください。  
+この 2 つのバージョンでは RosettaNet メッセージの定義方法が異なります。 異なるメッセージ コンテナの詳細については、次を参照してください。 [RNIF 規格](../../adapters-and-accelerators/accelerator-rosettanet/rnif-standard.md)します。  
   
 統合システムは、HTTP/HTTPS および SMTP; 経由で RNIF 転送を実行します。ただし、 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] HTTP/HTTPS のみを実装します。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] RNIF 1.1 の添付ファイル、および同期トランザクションができませんでした。  
   

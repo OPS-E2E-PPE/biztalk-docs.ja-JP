@@ -14,35 +14,35 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 23d3128d8cb3298dbab7e2394d55f6c2d6ff6ac3
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7ff157896d15b99685379bef16c0b3fc87e2e76e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36971739"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65322502"
 ---
 # <a name="orchestration-variable-types"></a>オーケストレーション変数の型
-次の定義済み型の変数を宣言できます。  
+次の定義済みの型の変数を宣言することができます。  
 
 |||||  
 |-|-|-|-|  
 |boolean|byte|char|DATETIME|  
-|Decimal|double|int16|int32|  
-|int64|long|sbyte|single|  
+|Decimal|double|int16|Int32|  
+|int64|long|sbyte|1 つ|  
 |string|timespan|uint16|uint32|  
 |uint64||||  
 
- プロジェクト内で参照されている任意の .NET ベースの型の変数を宣言することもできます。  
+ いずれかの変数を宣言することもできます。プロジェクトで参照されている NET ベースの型。  
 
-## <a name="considerations-for-declare-orchestration-variables"></a>オーケストレーション変数を宣言する際の考慮事項  
- オーケストレーション変数を宣言するときは、次の点を考慮してください。  
+## <a name="considerations-for-declare-orchestration-variables"></a>オーケストレーション変数を宣言に関する考慮事項  
+ オーケストレーションを宣言する場合、変数は、次を検討してください。  
 
-- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は、特定のコンテキストベースのルーティング シナリオに対して複数値のコンテキスト プロパティをサポートしていますが、このようなプロパティをオーケストレーションで使用することはできません。  
+- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 特定のコンテンツ ベースのルーティングのシナリオがサポートする複数値のコンテキスト プロパティは、オーケストレーションでこのようなプロパティを使用することはできません。  
 
-- オーケストレーションの中断と退避をサポートするには、すべてのオーケストレーション変数がその状態を永続化できるようになっている必要があります。  通常、これは変数の型またはクラスをシリアル化またはストリーミング化可能にすることで実現します。  
+- 中断とオーケストレーションの変数である必要がありますすべてのオーケストレーションの退避をサポートするために持つことができる状態の永続化されます。  通常、これは、変数の型またはクラスがシリアル化またはストリーミングによって実現されます。  
 
-- これらの .NET ベースの型 (クラス) はシリアル化可能なクラスである必要があります。  これは、"[Serializable]" 属性を使用して宣言するか、ISerializable .NET インターフェイス (System.Runtime.Serialization 名前空間内) を明示的に実装することによって実装できます。  
+- これらは。NET ベースの型 (クラス) は、シリアル化可能なクラスである必要があります。  "[Serializable]"属性で宣言されているか、ISerializable .NET インターフェイス (System.Runtime.Serialization 名前空間の) 内に明示的に実装しているか、実装できます。  
 
-- .NET ベースの型が、実際には基になる COM コンポーネントのランタイム呼び出し可能ラッパー (RCW) である場合、その COM コンポーネントでは RCW がシリアル化可能な .NET クラス (IPersistStream、IPersistStreamInit など) となるために必要なインターフェイスを実装する必要があります。  
+- 場合、します。NET ベースの型は、基になる COM コンポーネントの実際には、ランタイム呼び出し可能ラッパー (RCW)、その COM コンポーネントでは RCW がシリアル化可能な .NET クラス (IPersistStream、ipersiststreaminit など) に必要なインターフェイスを実装する必要があります。  
 
-- .NET ベース (または基になる COM) の型はオーケストレーションのフロー内で実行されるので、これらの型のメソッドはオーケストレーションの実行を (リソースの競合などにより) 遅延しないようにする必要があります。  また、これらの型の実装によるリソースの競合は、呼び出し元のオーケストレーションを実行するホスト インスタンスに影響を及ぼします。
+- 任意です。NET ベース (または、基になる COM) 型は、オーケストレーションのフローで実行して、これらの型のメソッドは、(競合リソースなど) を使用するなどのオーケストレーションの実行を遅延しない必要があります。  これらの型の実装によってリソースの競合が呼び出し元のオーケストレーションを実行するホスト インスタンスに反映されます。

@@ -1,5 +1,5 @@
 ---
-title: ダブル アクション チュートリアルのテスト |Microsoft ドキュメント
+title: ダブル アクション チュートリアルのテスト |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,22 +15,22 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 807308623780e029fff571a36dc703de0f79460d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: cd350d5744e9c5d3f36e254cd57b44c574095efe
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22207050"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65280574"
 ---
 # <a name="testing-the-double-action-tutorial"></a>ダブル アクション チュートリアルのテスト
-ここでは、これまでのセクションで作成した Contoso と Fabrikam のソリューションを使用して、0C2、0C4、3A2、3A4 という 4 つの異なる PIP (Partner Interface Process) をテストします。 Fabrikam のコンピューターで LOBWebApplication を使用して、要求を行います。 システムは、拡張された通信チャネルを使用して、Contoso のコンピューターに要求を送信します。 ダブル アクション オーケストレーションでは、使用する PIP に基づいた適切な応答が生成されます。  
+このセクションで、前のセクションで作成した Contoso と Fabrikam のソリューションを使用する 4 つ異なる Partner Interface Process (Pip) をテストします。0c2、0 C 4、3 a 2 および 3A4 します。 Fabrikam のコンピューターで LOBWebApplication を使用して要求を行うとします。 システムでは、Contoso のコンピューターに拡張された通信チャネルを使用して要求を送信します。 ダブル アクション オーケストレーションを使用する PIP に基づく適切な応答が生成されます。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [手順 1: a 0 C の送信要求します。](../../adapters-and-accelerators/accelerator-rosettanet/step-1-submitting-a-0c2-request.md)  
+-   [ステップ 1: 0C2 要求の送信](../../adapters-and-accelerators/accelerator-rosettanet/step-1-submitting-a-0c2-request.md)  
   
--   [手順 2: 送信 a 0 C 4 クエリします。](../../adapters-and-accelerators/accelerator-rosettanet/step-2-submitting-a-0c4-query.md)  
+-   [手順 2:0C4 クエリの送信](../../adapters-and-accelerators/accelerator-rosettanet/step-2-submitting-a-0c4-query.md)  
   
--   [手順 3: 3 a 2 要求の送信](../../adapters-and-accelerators/accelerator-rosettanet/step-3-submitting-a-3a2-request.md)  
+-   [ステップ 3:3A2 要求の送信](../../adapters-and-accelerators/accelerator-rosettanet/step-3-submitting-a-3a2-request.md)  
   
--   [手順 4: 3A4 要求の送信](../../adapters-and-accelerators/accelerator-rosettanet/step-4-submitting-a-3a4-request.md)
+-   [手順 4:3A4 要求の送信](../../adapters-and-accelerators/accelerator-rosettanet/step-4-submitting-a-3a4-request.md)

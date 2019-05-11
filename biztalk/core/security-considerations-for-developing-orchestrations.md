@@ -1,5 +1,5 @@
 ---
-title: オーケストレーションを開発するためのセキュリティに関する考慮事項 |Microsoft ドキュメント
+title: オーケストレーションを開発するためのセキュリティに関する考慮事項 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,20 +17,20 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e020759a8d389461978a4de4138bcc139d527539
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e6d159a96052871796c102dc628dae2a06d85046
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22269322"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65280320"
 ---
 # <a name="security-considerations-for-developing-orchestrations"></a>オーケストレーションを開発するためのセキュリティに関する考慮事項
-オーケストレーションを設計する際は、潜在的なセキュリティの問題を考慮する必要があります。  
+オーケストレーションを設計するときは、潜在的なセキュリティの問題を検討してください。  
   
-## <a name="avoid-subscriptions-based-on-content-from-untrusted-messages"></a>信頼されないメッセージのコンテンツに基づくサブスクリプションを防ぐ  
- メッセージのコンテンツやコンテキストに基づいてサブスクリプションを作成する可能性のあるオーケストレーション インスタンスが、権限レベルの低いメッセージによって開始されないようにするため、信頼されないメッセージのコンテンツやコンテキストに基づくメッセージのサブスクリプションが、オーケストレーションで作成されないようにすることを強くお勧めします。  
+## <a name="avoid-subscriptions-based-on-content-from-untrusted-messages"></a>信頼されていないメッセージのコンテンツに基づいてサブスクリプションを回避します。  
+ 特権の低いメッセージがメッセージのコンテンツやコンテキストに基づいてサブスクリプションを作成する可能性のあるオーケストレーション インスタンスを開始していないことを確認するを強くお勧め、オーケストレーションがメッセージのサブスクリプションを作成できません。コンテンツや信頼されていないメッセージのコンテキストに基づいています。  
   
- セキュリティの詳細については[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]を参照してください[BizTalk Server のセキュリティで保護する](../core/securing-biztalk-server.md)です。  
+ セキュリティについて[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]を参照してください[BizTalk Server のセキュリティで保護する](../core/securing-biztalk-server.md)します。  
   
 ## <a name="see-also"></a>参照  
  [オーケストレーションの作成](../core/creating-orchestrations.md)   

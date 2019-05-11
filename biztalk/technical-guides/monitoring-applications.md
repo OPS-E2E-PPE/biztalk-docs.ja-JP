@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0d1a7e4e0d4cb0f4e6899159da6c6c06a83e9165
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 069fbb101c3aac124e624f107a49d984c9a1b56d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37010299"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65291446"
 ---
 # <a name="monitoring-applications"></a>アプリケーションの監視
 BizTalk を監視するための Microsoft System Center Operations Manager の設定アプリケーション通常できますに細分化プログレッシブ 4 段階のプロセスには、次のように。  

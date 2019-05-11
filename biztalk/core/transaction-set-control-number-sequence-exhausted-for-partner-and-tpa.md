@@ -12,14 +12,14 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7c39815ccd013deea9ac4ef78426320e5c371feb
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 89f917dc3688755816c29dea82ae153133dcca05
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36968515"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65279708"
 ---
-# <a name="transaction-set-control-number-sequence-exhausted-for-partner-and-tpa"></a>パートナーと TPA のトランザクション セット制御番号のシーケンスが終了しました
+# <a name="transaction-set-control-number-sequence-exhausted-for-partner-and-tpa"></a>トランザクション セット制御番号シーケンスがパートナーと TPA の
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                                                                                                        |
@@ -33,7 +33,7 @@ ms.locfileid: "36968515"
 |  メッセージ テキスト   | トランザクション セット制御番号シーケンスがパートナー '{1}'for 'TPA{2}'。 シーケンスをリセット{2}- BizTalk Server 管理コンソールを使用して EDI のプロパティ。 |
   
 ## <a name="explanation"></a>説明  
- このエラー/警告/情報イベントは、トランザクション セット制御の範囲が {2} のアグリーメントにすべて使用されたため、BizTalk Server がドキュメントを処理できなかったことを示します。  
+ このエラー/警告/情報イベントは、BizTalk Server がドキュメントのため、トランザクション セット制御の範囲が使用されたアグリーメントに処理することを示します{2}します。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- このエラーを解決するには、チェック ボックスをオンにして {2} アグリーメントの制御番号をリセットするか、制御番号の範囲を大きくするか、またはアグリーメントの制御番号範囲指定に対するリセット ボタンを押します。
+ このエラーを解決するのには、制御番号をリセットするチェック ボックスをオンしてください、{2}契約または増加コントロール番号の範囲または契約書に制御番号の範囲指定に対するリセット ボタンをクリックします。

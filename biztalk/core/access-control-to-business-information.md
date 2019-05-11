@@ -1,5 +1,5 @@
 ---
-title: コントロールをビジネス情報にアクセス |Microsoft ドキュメント
+title: ビジネス情報に対するアクセス制御 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -20,19 +20,19 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 81a1461198a13449eaaa491e3abe568eadb31e20
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 02543e862b4c99ed9d4bd596bef93872c0e5040c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22223554"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65362078"
 ---
 # <a name="access-control-to-business-information"></a>ビジネス情報へのアクセス制御
-BizTalk 追跡データベース内のメッセージ プロパティ データおよびメッセージ本文データの追跡など、追跡データにアクセスできるのは BizTalk Server 管理者のみです。 BizTalk Server Operator は、BizTalk 追跡データベース内のメッセージ フロー データにアクセスできます。  
+BizTalk Server の管理者は、メッセージのプロパティと、BizTalk 追跡データベース内のメッセージ本文データの追跡など、追跡データにアクセスできます。 BizTalk Server Operator は、BizTalk 追跡データベースのメッセージ フローのデータへのアクセスがあります。  
   
 ## <a name="see-also"></a>参照  
  [メッセージとインスタンス データ追跡のセキュリティに関する考慮事項](../core/security-considerations-for-message-and-instance-data-tracking.md)   
  [BAM のセキュリティに関する推奨事項](../core/bam-security-recommendations.md)   
  [BAM ポータルのセキュリティに関する考慮事項](../core/security-considerations-for-the-bam-portal.md)   
  [セキュリティ保護のための最小ユーザー権限](../core/minimum-security-user-rights.md)   
- [アクセス制御とデータのセキュリティ](../core/access-control-and-data-security.md)
+ [アクセス制御とデータ セキュリティ](../core/access-control-and-data-security.md)

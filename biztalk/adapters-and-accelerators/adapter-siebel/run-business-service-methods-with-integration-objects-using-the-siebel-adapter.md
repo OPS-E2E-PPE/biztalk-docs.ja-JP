@@ -16,12 +16,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 40add1c72dabfd8648d1fa33e968cb26e98c11c3
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9eaed223b88ad3be039ebb6a77a5f63c2094c4c5
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36996915"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65371139"
 ---
 # <a name="invoke-business-service-methods-with-integration-objects-using-the-siebel-adapter"></a>Siebel アダプターを使用して統合オブジェクトでのビジネス サービス メソッドの呼び出し
 [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]アダプター クライアント統合オブジェクトと連携するビジネス サービス メソッドの呼び出しに使用できます。 これらのビジネス サービスでは、OUT、IN、通常があるか、IN OUT パラメーターの「階層」のデータが送信または統合オブジェクト データを受信する入力します。  
@@ -29,7 +29,7 @@ ms.locfileid: "36996915"
  [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]文字列としてのこれらの階層型を公開します。 これらの文字列値は、基本的に XML の CDATA セクション内にカプセル化された XML 文字列です。 XML 文字列は、アダプターのクライアントが送信または受信しようとした統合オブジェクトの XML スキーマと互換性が。  
   
 ## <a name="sample-based-on-this-topic"></a>このトピックに基づくサンプル  
- サンプル SiebelAdapterIntegrationObjects、このトピックの「に基づいてが付属しても、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]します。 詳細については、[の Siebel アダプターのサンプル](../../adapters-and-accelerators/adapter-siebel/samples-for-the-siebel-adapter.md)を参照してください。
+ サンプル SiebelAdapterIntegrationObjects、このトピックの「に基づいてが付属しても、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]します。 詳細については、次を参照してください。[の Siebel アダプターのサンプル](../../adapters-and-accelerators/adapter-siebel/samples-for-the-siebel-adapter.md)します。
   
 ## <a name="creating-an-orchestration-to-invoke-business-service-methods-with-integration-objects"></a>統合オブジェクトでのビジネス サービス メソッドを呼び出すオーケストレーションを作成します。  
  」の説明に従って統合オブジェクトのパラメーターを受け取るビジネス サービス メソッドを呼び出すオーケストレーションの作成は他のビジネス サービスを呼び出すオーケストレーションに似ています[呼び出すビジネス サービス メソッドを使用して BizTalk Server とSiebel アダプター](../../adapters-and-accelerators/adapter-siebel/invoke-business-service-methods-using-biztalk-server-and-the-siebel-adapter.md)します。  

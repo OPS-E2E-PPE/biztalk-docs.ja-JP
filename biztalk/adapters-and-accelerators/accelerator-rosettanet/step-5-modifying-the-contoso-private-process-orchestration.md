@@ -1,5 +1,5 @@
 ---
-title: '手順 5: Contoso プライベート プロセス オーケストレーションの変更 |Microsoft Docs'
+title: 手順 5:Contoso プライベート プロセス オーケストレーションの変更 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,33 +15,33 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 197854a1a37846a11b07b126ec73cb7f204d91b1
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 298a6ab0728928347b33f65ba5819a62897511cb
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36972899"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65280857"
 ---
-# <a name="step-5-modifying-the-contoso-private-process-orchestration"></a>手順 5: Contoso プライベート プロセス オーケストレーションの変更
-ここでは、プライベート プロセス オーケストレーションを変更して、Contoso のエンタープライズ リソース計画 (ERP) システムと統合します。 Contoso の ERP システムは、製品価格と在庫に対する内部的に定義されたスキーマを使用します。 3A2 - Price and Availability PIP (Partner Interface Process) のプライベート プロセスをカスタマイズすることによって、スキーマにマップされた情報を使用して、ERP システムと統合できるようになります。  
+# <a name="step-5-modifying-the-contoso-private-process-orchestration"></a>手順 5:Contoso プライベート プロセス オーケストレーションの変更
+この手順では、Contoso のエンタープライズ リソース プランニング (ERP) システムと統合するプライベート プロセス オーケストレーションを変更します。 Contoso の ERP システムは、製品の価格と可用性のため、内部的に定義されたスキーマを使用します。 3 a 2 - Price and Availability パートナー インターフェイス プロセス (PIP) のプライベート プロセスをカスタマイズすることで、スキーマ マッピング情報を使用して、ERP システムと統合することになります。  
   
-### <a name="to-add-a-reference-to-the-contoso-priceandavailability-and-rnpips-assemblies"></a>Contoso の PriceAndAvailability アセンブリおよび RNPIPs アセンブリの参照の追加  
+### <a name="to-add-a-reference-to-the-contoso-priceandavailability-and-rnpips-assemblies"></a>Contoso の PriceAndAvailability アセンブリおよび RNPIPs アセンブリへの参照を追加するには  
   
 1. ソリューション エクスプ ローラーに表示される Contoso ソリューションを右クリックし、 **PrivateResponder**プロジェクトをクリックして**参照の追加**します。  
   
 2. [参照の追加] ダイアログ ボックスで、**参照**します。 移動*\<ドライブ\>*: \Program Files\Microsoft BizTalk\<バージョン\>Accelerator for rosettanet \bin フォルダーを選択し、次のアセンブリ<strong>:</strong>  
   
-   -   Microsoft.solutions.BTARN.CommonTypes.dll  
+   -   Microsoft.Solutions.BTARN.CommonTypes.dll  
   
-   -   Microsoft.solutions.BTARN.ConfigurationManager.dll  
+   -   Microsoft.Solutions.BTARN.ConfigurationManager.dll  
   
-   -   Microsoft.solutions.BTARN.GlobalSchemas.dll  
+   -   Microsoft.Solutions.BTARN.GlobalSchemas.dll  
   
-   -   Microsoft.solutions.BTARN.PublicResponder.dll  
+   -   Microsoft.Solutions.BTARN.PublicResponder.dll  
   
    -   Microsoft.Solutions.BTARN.Schemas.RNPIPs.dll  
   
-   -   Microsoft.solutions.BTARN.Shared.dll  
+   -   Microsoft.Solutions.BTARN.Shared.dll  
   
    -   Microsoft.Solutions.BTARN.XSDClasses.GlobalSchemas.dll  
   
@@ -53,7 +53,7 @@ ms.locfileid: "36972899"
   
 6. マイクロソフトの開発環境] ダイアログ ボックスで、[ **OK**します。  
   
-### <a name="to-create-new-message-types"></a>新しいメッセージの種類を作成するには  
+### <a name="to-create-new-message-types"></a>新しいメッセージ型を作成するには  
   
 1.  ソリューション エクスプ ローラーで、 **PrivateResponder**オーケストレーションを開きます。  
   
@@ -67,15 +67,15 @@ ms.locfileid: "36972899"
   
 6.  成果物のタイプの選択ボックスで、次のように選択します **[microsoft.solutions.btarn.schemas.rnpips]** 左側のウィンドウで次のように選択します。 **_ 3 a2priceandavailabilityquerymessageguideline_v1_3**右側のウィンドウで、。クリックして**OK**します。  
   
-7.  ソリューションに対して以下の情報を使用して手順 3. ～ 6. を繰り返し、すべてのメッセージの種類を作成します。  
+7.  手順 3. から 6. 次の情報を使用して、ソリューションのすべてのメッセージ型を作成する.  
   
     |[Identifier]|アセンブリ|メッセージ型|  
     |----------------|--------------|------------------|  
     |PIP3A2ResponseMessage|Microsoft.Solutions.BTARN します。<br />Schemas.RNPips|_3A2PriceAndAvailability<br />ResponseMessageGuideline_v1_3|  
-    |Contoso3A2ResponseMessage|ContosoPriceAndAvailability|rootPriceResponse|  
-    |Contoso3A2RequestMessage|ContosoPriceAndAvailability|rootPriceRequest|  
+    |[Contoso3a2responsemessage]|[Contosopriceandavailability]|rootpriceresponse|  
+    |Contoso3A2RequestMessage|[Contosopriceandavailability]|[rootpricerequest]|  
   
-8.  これで、このソリューションのメッセージの種類の作成が完了しました。  
+8.  ソリューションのメッセージの種類の作成が完了しました。  
   
 ### <a name="to-create-new-variables"></a>新しい変数を作成するには  
   
@@ -109,7 +109,7 @@ ms.locfileid: "36972899"
   
 6.  同じ行内では、次のようにクリックします。 **AND**で、 **Group By**ボックスを選び**または**ドロップダウン リストから。  
   
-7.  [フィルター式] ダイアログ ボックスで、前の手順で作成した行を選択し、上矢印ボタンを 1 回クリックして行を上に移動します。  
+7.  フィルター式 ダイアログ ボックスで、作成した行を選択しとに 1 回の行に移動する 1 回上矢印ボタンをクリックします。  
   
 8.  クリックして**ここをクリックして新しい行を追加する**、し、 **microsoft.solutions.btarn.globalschemas.scpipcode**ドロップダウン リストから。  
   
@@ -117,7 +117,7 @@ ms.locfileid: "36972899"
   
 10. [OK] をクリックします。  
   
-### <a name="to-modify-the-business-process-workflow"></a>ビジネス プロセスワークフローを変更するには  
+### <a name="to-modify-the-business-process-workflow"></a>ビジネス プロセス ワークフローを変更するには  
   
 1. ドラッグ、**メッセージの割り当て**図形をツールボックスからデザイン画面に、下にドロップし、 **[receivefrompublicprocessresponder]** 図形。 選択、 **[constructmessage_1]** が作成された図形と、**プロパティ**ウィンドウで、**名前**ボックスに「 **[constructpip3a2requestmessage]**.  
   
@@ -127,7 +127,7 @@ ms.locfileid: "36972899"
   
 4. ドラッグ、**受信**図形をデザイン画面に、下にドロップし、 **Send_1**図形。  
   
-5. オーケストレーション デザイン画面の空の領域をクリックします。  
+5. オーケストレーション デザイン画面で空の領域をクリックします。  
   
 6. プロパティ ウィンドウで、選択、**トランザクションの種類**プロパティ、およびクリック**長時間**します。  
   
@@ -144,4 +144,4 @@ ms.locfileid: "36972899"
 12. [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]の**ファイル**、 をクリックして**すべて保存**プロジェクトを保存します。  
   
 ## <a name="see-also"></a>参照  
- [手順 6: オーケストレーション図形の構成 (Contoso)](../../adapters-and-accelerators/accelerator-rosettanet/step-6-configuring-orchestration-shapes-contoso.md)
+ [手順 6:オーケストレーション図形の構成 (Contoso)](../../adapters-and-accelerators/accelerator-rosettanet/step-6-configuring-orchestration-shapes-contoso.md)

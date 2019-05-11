@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b2527b3174b0497025e070a9228f420a31523f24
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: afc078ff4d72dffc9717464934a46c1a9b314f98
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36972883"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65286532"
 ---
 # <a name="the-need-for-health-care-systems-integration"></a>医療保険システム統合の必要性
 Microsoft[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]医療プロバイダーをソリューションで、アプリケーションの統合とビジネス プロセス オートメーションのニーズが提供されます。 このトピックで説明、ビジネス上の課題の一部、医療の組織が直面してどのように Microsoft を組み込んだシステム[!INCLUDE[btsBizTalkServerNoVersion_md](../../includes/btsbiztalkservernoversion-md.md)]と[!INCLUDE[HL7_CurrentVersion_abbrev_md](../../includes/hl7-currentversion-abbrev-md.md)]これら組織がこれらの課題に対応できます。 サンプル ビジネス シナリオを示す一般的なシナリオを見ても[!INCLUDE[HL7_CurrentVersion_abbrev_md](../../includes/hl7-currentversion-abbrev-md.md)]します。  

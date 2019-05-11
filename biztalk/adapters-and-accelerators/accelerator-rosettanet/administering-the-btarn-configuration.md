@@ -15,15 +15,15 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7d947db632e612a9973b2f247be2fff865f8a5d5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b01dd7ee29f096be7dbab4e1c64100f0c35b2491
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37011267"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65284957"
 ---
 # <a name="administering-the-btarn-configuration"></a>BTARN 構成の管理
-The Microsoft®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]管理コンソールでは、すべての側面を管理することができます、 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 1 人のユーザー インターフェイスから構成します。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 構成には、プロセス構成、ホーム組織、パートナー、および取引先アグリーメントが含まれます。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]管理コンソールで、管理することも、証明書インスタンスの Microsoft 管理[!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)]™、イベントを表示し、パフォーマンスを表示するログと警告。  
+The Microsoft®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]管理コンソールでは、すべての側面を管理することができます、 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 1 人のユーザー インターフェイスから構成します。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]構成には、プロセス構成、ホーム組織、パートナー、および取引先アグリーメントが含まれています。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]管理コンソールで、管理することも、証明書インスタンスの Microsoft 管理[!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)]™、イベントを表示し、パフォーマンスを表示するログと警告。  
   
  実行できるすべての操作の概要については、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]管理コンソールを参照してください[BTARN 管理コンソールを使用して](../../adapters-and-accelerators/accelerator-rosettanet/using-the-btarn-management-console.md)します。  
   

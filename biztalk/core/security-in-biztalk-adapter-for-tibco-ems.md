@@ -1,6 +1,6 @@
 ---
-title: SSO を使用して、TIBCO EMS を保護する |Microsoft ドキュメント
-description: BizTalk Server で TIBCO Enterprise Message Service を Microsoft BizTalk アダプターを使用する場合のセキュリティの概要
+title: SSO を使用して、TIBCO EMS をセキュリティで保護する |Microsoft Docs
+description: Microsoft BizTalk アダプターを BizTalk Server で TIBCO Enterprise Message Service を使用する場合のセキュリティの概要
 ms.custom: ''
 ms.date: 10/19/2017
 ms.prod: biztalk-server
@@ -13,25 +13,25 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1d0974595a13e583928bca1cab394fce0d1d154f
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: 5ec373526a8e436b21614acab22cb9d2120936f5
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
-ms.locfileid: "24016077"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65280289"
 ---
 # <a name="security-in-biztalk-adapter-for-tibco-ems"></a>BizTalk Adapter for TIBCO EMS のセキュリティ
 
 ## <a name="overview"></a>概要
-Microsoft BizTalk Adapter for TIBCO Enterprise Message Service ではシングル サインオン (SSO) をサポートしています。 エンタープライズ シングル サインオン ツールによって作成される関連アプリケーションは、TIBCO Enterprise Message Service などのサーバー システムを表します。  
+Microsoft の BizTalk Adapter for TIBCO Enterprise Message Service は、シングル サインオン (SSO) サポートを提供します。 エンタープライズ シングル サインオン ツールによって作成される関連アプリケーションは、TIBCO Enterprise Message Service などのサーバー システムを表します。  
 
-このセクションでは、セキュリティで保護された環境で BizTalk Adapter for TIBCO Enterprise Message Service を展開するためのガイドラインを示します。  
+このセクションでは、BizTalk Adapter for TIBCO Enterprise Message Service セキュリティで保護された環境に展開する方法のガイドラインを提供します。  
   
 > [!CAUTION]
->  承認されたユーザーだけに、BizTalk adapter for Enterprise Message Service の使用を制限することを強くお勧めように、クライアント ファイルが基幹業務アプリケーションに直接接続します。    
+>  承認されたユーザーだけに、BizTalk Adapter for Enterprise Message Service の使用を制限することを強くお勧めクライアント ファイルが基幹業務アプリケーションに直接接続します。    
 
   
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
   
 -   [シングル サインオンの要件](../core/requirements-for-single-sign-on4.md)  
   

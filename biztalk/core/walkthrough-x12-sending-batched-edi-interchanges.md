@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル (X12): バッチ EDI インターチェンジの送信 |Microsoft Docs'
+title: チュートリアル (X12):バッチ EDI インターチェンジの送信 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 54
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 25a17a950cf857c21fe9f7d913ba58a5a68c4512
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 29ea3dd93d237fe87a9a8f7a5dd61d44ac2ab284
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36973219"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65279574"
 ---
-# <a name="walkthrough-x12-sending-batched-edi-interchanges"></a>チュートリアル (X12): バッチ EDI インターチェンジの送信
+# <a name="walkthrough-x12-sending-batched-edi-interchanges"></a>チュートリアル (X12):バッチ EDI インターチェンジの送信
 このチュートリアルでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を使用して二者間で複数の EDI インターチェンジをバッチとしてまとめて送信するためのソリューションを作成する手順を説明します。  
 
 ## <a name="prerequisites"></a>前提条件  
@@ -50,7 +50,7 @@ ms.locfileid: "36973219"
 9. 送信パイプライン、バッチ インターチェンジのエンベロープに追加のプロパティを適用し、インターチェンジを送信先のパーティに送信**パーティ B**します。  
 
     > [!NOTE]
-    >  詳細については、[バッチ EDI インターチェンジをアセンブル](../core/assembling-a-batched-edi-interchange.md)を参照してください。  
+    >  詳細については、次を参照してください。[バッチ EDI インターチェンジをアセンブル](../core/assembling-a-batched-edi-interchange.md)します。  
 
    次の図は、このソリューションのアーキテクチャを示します。  
 
@@ -67,7 +67,7 @@ ms.locfileid: "36973219"
 -   最初に受信したインターチェンジ、または送信されたバッチ インターチェンジへの応答として、技術確認または機能確認は返されません。  
 
     > [!NOTE]
-    >  EDI 受信確認の生成方法の詳細については、[チュートリアル (X12): EDI インターチェンジの受信と送信、受信確認を返す](../core/walkthrough-x12--receive-edi-interchanges-and-send-back-an-acknowledgement.md)を参照してください。  
+    >  EDI 受信確認の生成方法の詳細については、次を参照してください[チュートリアル (X12):。EDI インターチェンジの受信と受信確認の送信](../core/walkthrough-x12--receive-edi-interchanges-and-send-back-an-acknowledgement.md)します。  
 
 -   このソリューションでは、一方向受信ポートと静的な一方向送信ポート。 これらのポートは、FILE トランスポートの種類で構成されます。  
 
@@ -104,7 +104,7 @@ ms.locfileid: "36973219"
 1. [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] で、BizTalk プロジェクトを作成するか、開きます。  
 
    > [!NOTE]
-   >  このトピックは、EDI スキーマ、パイプライン、およびオーケストレーションを含む BizTalk EDI アプリケーションに別のアプリケーションから参照を既に追加していることを前提としています。 そうでない場合は、[、BizTalk Server EDI アプリケーションへの参照を追加する方法](http://msdn.microsoft.com/library/7af066fb-372f-4709-b566-c8d6b4a9d782)を参照してください。  
+   >  このトピックは、EDI スキーマ、パイプライン、およびオーケストレーションを含む BizTalk EDI アプリケーションに別のアプリケーションから参照を既に追加していることを前提としています。 そうでない場合は、次を参照してください。 [、BizTalk Server EDI アプリケーションへの参照を追加する方法](http://msdn.microsoft.com/library/7af066fb-372f-4709-b566-c8d6b4a9d782)します。  
 
 2. プロジェクトを右クリックし、[**追加**、] をクリックし、**既存項目の**します。 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]XSD_Schema\EDI\X12\00401 に移動し、テスト メッセージに対応するスキーマをダブルクリックします。  
 
@@ -162,7 +162,7 @@ ms.locfileid: "36973219"
 
 3. パーティ名を右クリックし、[**新規**、] をクリックし、**ビジネス プロファイル**します。  
 
-4. をクリックして**ホスト インスタンス**下、**プラットフォームの設定**ノードを右クリックして**BizTalkServerApplication**、順にクリックします**再起動**。  
+4. **プロファイル プロパティ**] ダイアログ ボックスの [、**全般**ページで、入力**PartyA_Profile**で、**名前**テキスト ボックス。  
 
    > [!NOTE]
    >  パーティを作成すると、プロファイルも作成されます。 新しいプロファイルを作成する代わりに、そのプロファイルの名前を変更して使用できます。 プロファイルの名前を変更するには、プロファイルを右クリックして**プロパティ**します。 **全般** ページで、プロファイルの名前を指定します。  
@@ -178,20 +178,20 @@ ms.locfileid: "36973219"
 
 3. パーティ名を右クリックし、[**新規**、] をクリックし、**ビジネス プロファイル**します。  
 
-4. バッチ EDI インターチェンジの分割  
+4. **プロファイル プロパティ**] ダイアログ ボックスの [、**全般**ページで、入力 **「partyb_profile」** で、**名前**テキスト ボックス。  
 
    > [!NOTE]
    >  パーティを作成すると、プロファイルも作成されます。 新しいプロファイルを作成する代わりに、そのプロファイルの名前を変更して使用できます。 プロファイルの名前を変更するには、プロファイルを右クリックして**プロパティ**します。 **全般** ページで、プロファイルの名前を指定します。  
 
 ##### <a name="to-create-an-agreement-between-the-two-business-profiles"></a>2 つのビジネス プロファイル間のアグリーメントを作成するには  
 
-1. チュートリアル (X12): バッチ EDI インターチェンジの送信  
+1. 右クリックして**PartyA_Profile**、 をポイント**新規**、順にクリックします**契約**します。  
 
 2. **全般プロパティ** ページの**名前**テキスト ボックスに、アグリーメントの名前を入力します。  
 
 3. **プロトコル**ドロップダウン リストで、 **X12**します。  
 
-4. チュートリアル (X12): インターチェンジの EDI の受信と受信確認の送信  
+4. **2 番目のパートナー**セクションから、**名前**ドロップダウン リストで、**パーティ b**します。  
 
 5. **2 番目のパートナー**セクションから、**プロファイル**ドロップダウン リストで、 **PartyB_Profile**します。  
 
@@ -241,14 +241,14 @@ ms.locfileid: "36973219"
 
       |       プロパティ       |                                                                                                                                    目的                                                                                                                                    |
       |----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-      |     **[Default]**      |   選択**既定**します。 **注:** の値、既定値としてこの行を選択すると**GS1**、 **GS2**、 **GS3**、 **GS7**、および**GS8**される場合でもの値は、**トランザクションの種類**、**バージョン/リリース**と**ターゲットの名前空間**と一致するメッセージではありません。    |
+      |     **[Default]**      |   選択**既定**します。 **注:** 既定の値としてこの行を選択すると**GS1**、 **GS2**、 **GS3**、 **GS7**、および**GS8**は使用されている場合であってもの値は、**トランザクションの種類**、**バージョン/リリース**と**ターゲットの名前空間**と一致するメッセージではありません。    |
       | **トランザクションの種類** |                                                                                                     テスト メッセージのメッセージの種類を選択します。 **850 - 注文書**します。                                                                                                      |
       | **バージョン/リリース**  |                                                                                                                        EDI のバージョンを入力**00401**します。                                                                                                                         |
       | **ターゲットの名前空間** |                                                                                                         選択 **<http://schemas.microsoft.com/BizTalk/Edi/X12/2006>** します。                                                                                                          |
       |       **[GS1]**        |                                                                                           テスト メッセージのメッセージの種類が選択されていることを確認**PO - 注文書 (850)** します。                                                                                           |
       |       **[GS2]**        |                                                                                                      たとえば、アプリケーション送信者の値を入力**Purchasing**します。                                                                                                      |
       |       **[GS3]**        |                                                                                                    たとえば、アプリケーションの受信者の値を入力**OrderControl**します。                                                                                                    |
-      |       **GS4**        | 日付の形式を選択します。 **注:** あるドロップダウン リストで、値を選択するだけでなく、既定値を表示するフィールドをクリックします。 ドロップダウン リストから値を選択せずにフィールドをクリックしても、値は実際に選択されません。 |
+      |       **GS4**        | 日付の形式を選択します。 **注:** ドロップダウン リストで、値を選択し、だけでなく、既定値を表示するフィールドをクリックする必要があります。 ドロップダウン リストから値を選択せずにフィールドをクリックしても、値は実際に選択されません。 |
       |       **GS5**        |                                                                                                                      時刻の形式を選択します。                                                                                                                       |
       |       **GS7**        |                                                                                                                選択**X - 正式認可を受けた Standards Committee X12**します。                                                                                                                |
       |       **GS8**        |                                                                                                             EDI のバージョンが入力されていることを確認**00401**します。                                                                                                             |
@@ -327,5 +327,5 @@ ms.locfileid: "36973219"
  [送信バッチの構成](../core/configuring-an-outgoing-batch.md)   
  [バッチ EDI インターチェンジのアセンブル](../core/assembling-a-batched-edi-interchange.md)   
  [バッチ EDI インターチェンジのアセンブル](../core/assembling-a-batched-edi-interchange.md)   
- [チュートリアル (X12): インターチェンジの EDI の受信と受信確認の送信](../core/walkthrough-x12--receive-edi-interchanges-and-send-back-an-acknowledgement.md)   
- [チュートリアル (X12): EDI インターチェンジの送信](../core/walkthrough-x12-sending-edi-interchanges.md)
+ [チュートリアル (X12):EDI インターチェンジの受信と受信確認の送信](../core/walkthrough-x12--receive-edi-interchanges-and-send-back-an-acknowledgement.md)   
+ [チュートリアル (X12):EDI インターチェンジの送信](../core/walkthrough-x12-sending-edi-interchanges.md)

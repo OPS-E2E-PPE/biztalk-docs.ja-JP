@@ -1,5 +1,5 @@
 ---
-title: XSD ベース PIP のインポート |Microsoft ドキュメント
+title: XSD ベース PIP のインポート |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,40 +16,40 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7d8865d7a75bdb06895b963b8269ed457cd5804f
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: b8d1a0d6b4fe835a38dc5eaf19a328b14e0d288f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25961656"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65283667"
 ---
 # <a name="importing-an-xsd-based-pip"></a>XSD ベース PIP のインポート
-RosettaNet.org によって提供されるほとんどの PIP は DTD ベースですが、新しい PIP は XSD ベースです。 次の手順では、XSD ベースの PIP をインポートする方法を示します。  
+ほとんどの PIP を RosettaNet.org によって提供されるは DTD ベース、新しい PIP は XSD ベースです。 次の手順では、XSD ベース PIP をインポートする方法について説明します。  
   
-### <a name="to-import-an-xsd-based-pip"></a>XSD ベース PIP のインポートするには  
+### <a name="to-import-an-xsd-based-pip"></a>XSD ベース PIP をインポートするには  
   
-1.  XSD ベース PIP の .zip ファイルに RosettaNet.org からダウンロード[http://go.microsoft.com/FWLink/?LinkID=33859](http://go.microsoft.com/FWLink/?LinkID=33859)または CIDX.org から[http://go.microsoft.com/FWLink/?LinkID=33859](http://go.microsoft.com/FWLink/?LinkID=62361)です。 .zip ファイルからファイルを解凍します。 必要なファイルは、XML フォルダーのサブフォルダー内にあります。  
+1.  XSD ベース PIP の .zip ファイルをダウンロードで RosettaNet.org からダウンロードした[ http://go.microsoft.com/FWLink/?LinkID=33859 ](http://go.microsoft.com/FWLink/?LinkID=33859)または CIDX.org から[ http://go.microsoft.com/FWLink/?LinkID=33859](http://go.microsoft.com/FWLink/?LinkID=62361)します。 .Zip ファイルからファイルを抽出します。 必要なファイルは、XML フォルダーのサブフォルダーになります。  
   
 2.  Visual Studio を開きます。 新しい BizTalk プロジェクトを作成します。  
   
-3.  Windows エクスプローラーを開き、手順 1. で解凍した XML フォルダーに移動します。 XML フォルダー内の 1 番目のフォルダーを選択し、それを Visual Studio のソリューション エクスプローラーまでドラッグし、作成したプロジェクトにドロップします。 XML フォルダー内のすべてのサブフォルダーに対してこの手順を繰り返し、作成したプロジェクトに同じフォルダー構造を作成します。  
+3.  Windows エクスプ ローラーを開き、手順 1. で解凍した XML フォルダーに移動します。 XML フォルダーの下の最初のフォルダーを選択、Visual Studio で、ソリューション エクスプ ローラーにドラッグし、プロジェクトにドロップします。 プロジェクトと同じフォルダー構造を作成する、XML フォルダー内のサブフォルダーのごとに繰り返します。  
   
     > [!NOTE]
-    >  PIP7c7 PIP では、これらのフォルダーには Domain、Interchange、System、および Universal フォルダーが含まれています。 この PIP では、新しく作成したプロジェクトに Domain、Interchange、System、および Universal フォルダーがそのコンテンツと共に作成されている必要があります。  
+    >  PIP7c7 PIP のこれらのフォルダーが、ドメイン、インターチェンジ、システム、および Universal フォルダーが含まれます。 この pip では、プロジェクトは、ドメイン、インターチェンジ、システム、および Universal フォルダーとその内容を含める必要があります。  
   
-4.  System フォルダーに .xsd ファイルがある場合、ソリューション エクスプローラーでそのファイルを選択し、プロパティ ページに一覧表示されている名前空間を変更します。この操作によって、ファイルに ".System" という文字列は含まれなくなります。 たとえば、PIP7c7 PIP で、名前空間を "PIP7c7._System" に変更します。 System フォルダの各 .xsd ファイルでこの手順を繰り返します。 名前空間を変更しないと、次のようなエラーが発生します。  
+4.  システム フォルダーに .xsd ファイルがある場合は、ソリューション エクスプ ローラーで選択してプロパティ ページには、文字列が含まれていないように表示する名前空間を変更"。システム"。 たとえば、PIP7c7 pip で"pip7c7._system"に名前空間を変更します。 システム フォルダー内の各 .xsd ファイルに対して繰り返します。 名前空間を変更しない場合または、次のようなエラーが表示されます。  
   
     ```  
     The type or namespace name 'SerializableAttribute' does not exist in the class or namespace 'PIP7C7.System'.  
     ```  
   
-5.  いることを確認するすべての .xsd ファイルを確認、\<スキーマ\>TypeName およびルート ノード TypeName が同一でありません。 たとえば、PIP7C7 PIP の Universal フォルダで PartnerIdentification.xsd が 'partneridentification 'という TypeName の両方、\<スキーマ\>(PartnerIdentification.xsd を選択するとソリューション エクスプ ローラーで) とも、PartnerIdentification ルート ノードです。 この問題を修正するには、ソリューション エクスプローラーで PartnerIdentification.xsd を選択し、プロパティ ページ内で  TypeName プロパティを変更します。この操作によって、TypeName が PartnerIdentification ルート ノードと同一になることを回避できます。 たとえば、TypeName を "_PartnerIdentification" に変更します。 この手順を実行しないと、プロジェクトのビルドの実行時に次のエラーが発生します。  
+5.  いることを確認するすべての .xsd ファイルを確認、\<スキーマ\>TypeName およびルート ノード TypeName が同一でないです。 たとえば、PIP7C7 PIP の Universal フォルダで PartnerIdentification.xsd が 'partneridentification 'という TypeName 両方の\<スキーマ\>(PartnerIdentification.xsd を選択するとソリューション エクスプ ローラーで) とも、PartnerIdentification ルート ノードです。 これを修正するには、ソリューション エクスプ ローラーで PartnerIdentification.xsd を選択し、プロパティ ページで変更 TypeName プロパティ PartnerIdentification ルート ノードとして同じ型名が含まれていないようにします。 たとえば、TypeName を"_partneridentification"を変更します。 この手順を実行しない場合、プロジェクトをビルドするときに、次のエラーを受け取ります。  
   
     ```  
     Node "<Schema>" - This schema file has a TypeName that collides with the RootNode TypeName of one of its root Nodes. Make sure that they are different.  
     ```  
   
     > [!NOTE]
-    >  エラー一覧の [ファイル] 列には、どのファイルにこの問題が存在しているかが表示されます。  
+    >  エラー一覧 に ファイル 列では、この問題があるファイルを示します。  
   
-6.  プロジェクトをビルドし、展開します。
+6.  ビルドし、プロジェクトを配置します。

@@ -1,5 +1,5 @@
 ---
-title: HL7 メッセージで SFT |Microsoft ドキュメント
+title: HL7 メッセージの SFT |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,18 +12,18 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 58cf1536d8619e47a9a33c77e4f95387e0ebb559
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c8c53698a9ddce80ed466de17c67e6d5ebf7bf47
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22206170"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65289176"
 ---
-# <a name="sft-in-hl7-messages"></a>HL7 メッセージで SFT
-[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]メッセージへのソフトウェアのセグメント (SFT) の追加をサポートします。 SFT セグメントは、送信元アプリケーションとして使用されるソフトウェア製品に関する追加情報を提供します。 SFT セグメントは、主な診断に使用します。 、標準 HL7 v2.5 の一部として SFT セグメントは、アプリケーションの受信確認で表示されます。  
+# <a name="sft-in-hl7-messages"></a>HL7 メッセージの SFT
+[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)] メッセージへのソフトウェアのセグメント (SFT) の追加をサポートします。 SFT セグメントは、送信元アプリケーションとして使用するソフトウェア製品に関する追加情報を提供します。 SFT セグメントは、診断の主に使用されます。 、標準 HL7 v2.5 の一部としては、SFT セグメントは、アプリケーションの受信確認で表示されます。  
   
 ## <a name="message-instance-with-sft-segment"></a>SFT セグメントを持つメッセージ インスタンス  
- SFT セグメントを持つ ADT^A01.txt メッセージを作成するのにには、次の手順を使用します。  
+ 次の手順を使用して、SFT セグメントを持つ ADT^A01.txt メッセージを作成します。  
   
 > [!NOTE]
 >  メモ帳でこのメッセージを作成するときに、キャリッジ リターンの次の最後の行を削除します。  
@@ -104,9 +104,9 @@ ms.locfileid: "22206170"
   
 3.  ファイルを保存し、メモ帳を閉じます。  
   
-4.  送信元パーティの受信確認のフォルダーを確認してください。  
+4.  送信元パーティの受信確認のフォルダーを確認します。  
   
-     このメッセージの本文の受信確認には、メッセージの SFT セグメントが含まれています。 上記のメッセージに対する ACK は次のとおりです。  
+     このメッセージの受信確認本文にはには、メッセージの SFT セグメントが含まれています。 上記のメッセージに対する ACK は次のとおりです。  
   
     ```  
     MSH|^~\&|Tutorial_BatchDest||Tutorial_ADTSystem|MCM|20070508175311||ACK^A01^ACK|000001|P|2.5|||AL  
@@ -115,5 +115,5 @@ ms.locfileid: "22206170"
     ```  
   
 ## <a name="see-also"></a>参照  
- [HL7 メッセージ](../../adapters-and-accelerators/accelerator-hl7/hl7-messaging.md)   
-[HL7 アクセラレータと使用可能な BizTalk ツールを説明します。](../../adapters-and-accelerators/accelerator-hl7/learn-the-hl7-accelerator-and-the-biztalk-tools-available.md)
+ [HL7 メッセージング](../../adapters-and-accelerators/accelerator-hl7/hl7-messaging.md)   
+[使用可能な HL7 アクセラレータと BizTalk ツールの概要](../../adapters-and-accelerators/accelerator-hl7/learn-the-hl7-accelerator-and-the-biztalk-tools-available.md)

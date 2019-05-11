@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4adcb32367a42403e769111f7b3d3d343c604671
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3b09610d1c8952ae077fc872e7cd0c073a33eef4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36978691"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396450"
 ---
 # <a name="using-itinerary-based-routing"></a>スケジュールに基づくルーティングを使用します。
 [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]スケジュールに基づくメッセージのルーティング シナリオを有効にすると、特定のメッセージの処理のシーケンスのステップに回覧用紙がパターンを実装することでデザイン時に認識できないため、メッセージごとに異なる場合がありますを提供します。 このパターンの実装では、ルーティング スリップを使用して、XML 形式でこれらの手順のコレクションを表現するし、どの手順が実行時に発生する必要がありますを決定します。 「ESB 行程」と呼ばれる頻繁に回覧用紙の状態は、手順は、によって処理されるメッセージに対して実行する必要がありますを定義する宣言型の命令の順序付けされたセット[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]コンポーネントと BizTalk Server ランタイム。 ESB スケジュールで指定された特定の処理命令が関連付けられている、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]コンポーネントで、「ESB スケジュール サービス」ですとも呼ばれます。 ESB スケジュール サービスの目的は、処理命令を実行し、回覧先を示す次の命令の待機中の状態を更新するには。  

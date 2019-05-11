@@ -21,12 +21,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 73508f573e4584ae841779301c426fa06bb78144
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 47316199de1f155b98d66e51b7e62a00786a7a60
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36974251"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65290063"
 ---
 # <a name="msh-override"></a>MSH の上書き
 Microsoft BizTalk Accelerator for HL7 の前に ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 送信ポートに送信 HL7 メッセージのルーティング、MSH セグメント内の特定の値を置換することがあります。 メッセージのサブスクリプションには、複数の送信ポートが含まれているし、各送信ポートが受信アプリケーション フィールドに別の値を表示するときに実行することがあります。  

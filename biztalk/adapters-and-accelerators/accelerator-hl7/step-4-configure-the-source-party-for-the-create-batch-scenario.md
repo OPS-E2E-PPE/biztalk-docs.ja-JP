@@ -1,5 +1,5 @@
 ---
-title: '手順 4: バッチの作成シナリオでは、送信元パーティの構成 |Microsoft Docs'
+title: 手順 4:バッチの作成シナリオでは、送信元パーティの構成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,18 +12,18 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dbb4e172c88c179ea53f1e48d1e08dcb63458607
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1923e1527b619bd934056ae380e88a0fcb343b4b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36999827"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65288277"
 ---
-# <a name="step-4-configure-the-source-party-for-the-create-batch-scenario"></a>手順 4: バッチの作成シナリオでは、送信元パーティを構成します。
+# <a name="step-4-configure-the-source-party-for-the-create-batch-scenario"></a>手順 4:バッチの作成シナリオでは、送信元パーティを構成します。
 この手順では、バッチの作成シナリオでは、送信元パーティを構成します。 選択することも、受信確認を BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) バッチがこのパーティ用に定義されています。 受信確認のバッチのスケジュールを設定するように[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]メッセージ数が 2 に到達した後にバッチを作成します。  
   
 > [!NOTE]
->  作成した同じ送信元パーティを使用するこのシナリオで[手順 7: を作成し、送信元パーティを構成する](../../adapters-and-accelerators/accelerator-hl7/step-7-create-and-configure-a-source-party.md)(断片化された受信バッチのシナリオ) このチュートリアルの第 1 部の。  
+>  作成した同じ送信元パーティを使用するこのシナリオで[手順 7。作成および送信元パーティの構成](../../adapters-and-accelerators/accelerator-hl7/step-7-create-and-configure-a-source-party.md)(断片化された受信バッチのシナリオ) このチュートリアルの第 1 部の。  
   
 ### <a name="to-configure-the-source-party-for-the-create-batch-scenario"></a>バッチの作成シナリオでは、送信元パーティを構成するには  
   
@@ -37,4 +37,4 @@ ms.locfileid: "36999827"
   
 5. クリックして**スケジュールの開始**します。  
   
-   進みます[手順 5: メッセージ バッチの送信ポートを作成する](../../adapters-and-accelerators/accelerator-hl7/step-5-create-the-send-port-for-the-message-batch.md)します。
+   続行する[手順 5。メッセージ バッチの送信ポートを作成する](../../adapters-and-accelerators/accelerator-hl7/step-5-create-the-send-port-for-the-message-batch.md)します。

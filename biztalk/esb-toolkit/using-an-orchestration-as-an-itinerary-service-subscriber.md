@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dd787ec23e09bc420939d33c25005dd611f5fd38
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 707c9b37f671191b743912cb391c8e41d67d007b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37009563"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396465"
 ---
 # <a name="using-an-orchestration-as-an-itinerary-service-subscriber"></a>スケジュール サービス サブスクライバーとしてオーケストレーションを使用します。
 オーケストレーション スケジュール サービスとしても機能します。 スケジュールに参加するに直接バインドされた; としてオーケストレーションを最初にデザインする必要があります。これを行うと類似の前のトピックでは、送信ポート フィルター サブスクリプションを使用して、[送信ポートを使用して、スケジュール サービス サブスクライバーとして](../esb-toolkit/using-a-send-port-as-an-itinerary-service-subscriber.md)します。 図 1 は、次の条件を満たすすべてのメッセージを取得する適切なオーケストレーションのフィルター式の例を示します。  

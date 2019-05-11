@@ -1,5 +1,5 @@
 ---
-title: スキーマにノードを挿入 |Microsoft ドキュメント
+title: スキーマへのノードの挿入 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,15 +12,15 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4333f9c9b905c1006e7bcddc634cea908ec658bd
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d1afa31a83a345ffb06352b00cfc1b1a4c41549b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22256306"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65331985"
 ---
 # <a name="inserting-nodes-into-a-schema"></a>スキーマへのノードの挿入
-スキーマを作成する過程で最も実施頻度の高い作業の 1 つは、各種のノードをスキーマ ツリーのさまざまな位置や階層に挿入することによって、対応するインスタンス メッセージの構造を作成することです。 このセクションでは、ノードを挿入するための方法をいくつか説明します。  
+スキーマ ツリーの別の場所と深さ、対応するインスタンス メッセージを表す構造を作成するために、さまざまな種類のノードを挿入は、スキーマを開発する過程で実行するタスクの主な種類のいずれかです。 このセクションでは、いくつかのノードを挿入する方法について説明します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

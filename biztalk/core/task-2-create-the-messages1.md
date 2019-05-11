@@ -1,5 +1,5 @@
 ---
-title: 'タスク 2: 作成、Messages1 |Microsoft ドキュメント'
+title: タスク 2:作成、Messages1 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,21 +12,21 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3e326662737919e325f95d82b86aa8824e4e3a06
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c0af56f8a289498e44129ca02b669bb76d88a268
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22278850"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65291481"
 ---
-# <a name="task-2-create-the-messages"></a>タスク 2: メッセージを作成します。
-次のメッセージを作成します。これらのメッセージはオーケストレーションで使用されます。  
+# <a name="task-2-create-the-messages"></a>タスク 2:メッセージを作成します。
+次のメッセージを作成、オーケストレーションで使用されます。  
   
 ### <a name="to-create-the-messages"></a>メッセージを作成するには  
   
-1.  右クリック**メッセージ**、し、**新しいメッセージ**です。  
+1.  右クリックして**メッセージ**、し、**新しいメッセージ**します。  
   
-2.  [識別子] および [メッセージの種類] >&lt;a&gt;</ph>[スキーマ] に以下を入力し、各メッセージに対し表示される一覧から種類を選択します。  
+2.  識別子とメッセージの種類は、次を入力 > スキーマとメッセージごとに表示された一覧からタイプを選択します。  
   
     |[Identifier]|メッセージの種類 > スキーマ|  
     |----------------|--------------------------|  
@@ -41,7 +41,7 @@ ms.locfileid: "22278850"
     |EndDocSessionMsg|BeginDocTest.B4200310Service_1.F4211FSEndDoc|  
   
 ## <a name="see-also"></a>参照  
- [タスク 1: ポートを作成します。](../core/task-1-create-the-ports2.md)   
- [タスク 3: 送信、受信図形と構成](../core/task-3-configure-the-send-and-receive-shapes1.md)   
- [タスク 4: メッセージの構築図形を構成します。](../core/task-4-configure-the-construct-message-shape2.md)   
- [タスク 5: 変換図形を構成します。](../core/task-5-configure-the-transform-shape1.md)
+ [タスク 1:ポートを作成します。](../core/task-1-create-the-ports2.md)   
+ [タスク 3:受信図形と送信の構成](../core/task-3-configure-the-send-and-receive-shapes1.md)   
+ [タスク 4:メッセージの構築図形を構成します。](../core/task-4-configure-the-construct-message-shape2.md)   
+ [タスク 5:変換図形を構成します。](../core/task-5-configure-the-transform-shape1.md)

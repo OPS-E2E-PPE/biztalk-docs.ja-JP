@@ -15,54 +15,54 @@ caps.latest.revision: 32
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f4002fa7c1b310f5b77806eb0f1b222c015cd989
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2e204d1e15ec7483bf2ae2f10db30ffd019651bf
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37023208"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65332837"
 ---
 # <a name="http-adapter-biztalk-server-sample"></a>HTTP アダプター (BizTalk Server サンプル)
-HTTP アダプターのサンプルは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] で使用される要求 - 応答および送信請求 - 応答の通信パラダイムを実装する方法を示します。  
+HTTP アダプターのサンプルで使用される要求/応答および送信請求-応答の通信パラダイムを実装する方法を示します[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]します。  
 
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
- *\<パスのサンプル\>* \AdaptersDevelopment\HttpAdapter\  
+ *\<Samples Path\>* \AdaptersDevelopment\HttpAdapter\  
 
  次の表は、このサンプルのファイルとその目的を示しています。  
 
 |ファイル|説明|  
 |---------------|-----------------|  
-|\Design-Time\Adapter Management|このアダプターのデザイン時の部分を実装するプロジェクトが含まれます。|  
-|\Run-Time\HttpReceive|要求 - 応答アダプターの通信パターンを実装するプロジェクトが含まれます。 これは分離受信場所です。|  
-|\Run-Time\HttpSend|送信請求 - 応答アダプターの通信パターンを実装するプロジェクトが含まれます。|  
+|\Design-Time\Adapter Management|このアダプターのデザイン時の部分を実装するプロジェクトが含まれています。|  
+|\Run-Time\HttpReceive|アダプターの要求/応答通信パターンを実装するプロジェクトが含まれています。 これは、分離受信場所です。|  
+|\Run-Time\HttpSend|送信請求-応答アダプターの通信パターンを実装するプロジェクトが含まれています。|  
 
 ## <a name="how-to-use-this-sample"></a>このサンプルの使用方法  
- このサンプルは、カスタム アダプターを開発するときに使用するフレームワークです。 BizTalk Server はメッセージを特定のカスタム アプリケーションに送信したり、ネイティブ アダプターが存在しないプロトコルを使用する必要がある場合があります。 サードパーティの企業は、追加のプロトコルをサポートするアダプターを作成しています。 カスタム アダプターの作成を決定する前に、プロトコルに対するアダプターが存在するかどうかを確認することをお勧めします。 通信要件をサポートするためのアダプターが見つからない場合は、独自のカスタム アダプターを開発できます。  
+ このサンプルは、カスタム アダプターの開発で使用するためのフレームワークとしてものです。 場合によっては、BizTalk Server が特定のカスタム アプリケーションにメッセージを送信したりするプロトコルを使用する必要があります、ネイティブ アダプターが存在しません。 サードパーティの企業は、追加のプロトコルをサポートするアダプターを作成しています。 カスタム アダプターの作成を決定する前に、プロトコルに対するアダプターが存在するかどうかを確認することをお勧めします。 通信要件をサポートするためのアダプターが見つからない場合は、独自のカスタム アダプターを開発できます。  
 
- カスタム アダプターの作成は、難しい作業になる場合があります。 このプロセスを簡略化するために、マイクロソフトはアダプター フレームワークと呼ばれる基礎を開発しました。 このフレームワークを、BizTalk Server SDK のサンプルのアダプター ソース コードと共に開発の基礎として使用できます。  カスタム アダプターおよびアダプター フレームワークの詳細についてを参照してください、**参照**このドキュメントの最後のセクション。  
+ カスタム アダプターの作成は、難しい作業になる場合があります。 このプロセスを簡略化するために、マイクロソフトはアダプター フレームワークと呼ばれる基礎を開発しました。 このフレームワークは、BizTalk Server SDK のサンプルのアダプター ソース コードと共に開発の基礎として使用できます。  カスタム アダプターおよびアダプター フレームワークの詳細についてを参照してください、**参照**このドキュメントの最後のセクション。  
 
-## <a name="building-and-initializing-the-sample-adapter"></a>サンプル アダプターのビルドおよび初期化  
+## <a name="building-and-initializing-the-sample-adapter"></a>ビルドとサンプル アダプターの初期化  
 
 > [!IMPORTANT]
->  BizTalk 環境が 64 ビットである、またはインストール場所が変更されている場合は、それに合わせて OutboundAssemblyPath、InboundAssemblyPath、および AdapterMgmtAssemblyPath を変更する必要があります。  
+>  BizTalk のインストールが 64 ビット、またはインストールの場所が変更された、OutboundAssemblyPath、InboundAssemblyPath、AdapterMgmtAssemblyPath しなければ適切に変更します。  
 
-#### <a name="to-build-and-initialize-the-http-adapter-sample"></a>HTTP アダプターのサンプルをビルドして初期化するには  
+#### <a name="to-build-and-initialize-the-http-adapter-sample"></a>ビルドして、HTTP アダプタのサンプルの初期化  
 
 1. コマンド ウィンドウで、次のフォルダーに移動します。  
 
-    \<*パスのサンプル*\>\AdaptersDevelopment\HttpAdapter  
+    \<*Samples Path*\>\AdaptersDevelopment\HttpAdapter  
 
 2. ファイルは、次の操作を実行します。 Setup.bat を実行します。  
 
-   -   HTTPAdapter とそのすべての依存関係をコンパイルします。  
+   -   HTTPAdapter とその依存関係すべてをコンパイルします。  
 
    -   アダプターの受信側で使用されるインターネット インフォメーション サービス (IIS) アプリケーションを作成します。  
 
-   IIS 7.0 では、この IIS アプリケーションを実行するアプリケーション プールの ID が次のグループのメンバーであることを確認する必要があります。  
+   IIS 7.0 でこの IIS アプリケーションを実行するアプリケーション プールの id、次のグループのメンバーであることを確認する必要があります。  
 
--   BizTalk 分離ホスト ユーザー グループ  
+-   BizTalk 分離ホスト ユーザー グループ。  
 
--   IIS_WPG グループ  
+-   IIS_WPG グループ。  
 
 -   IIS 7.0 では、統合 .NET モードで動作するアプリケーションを移行する必要があります。 内容を含め、アプリケーションの構成を移行することができます、 \<httpHandlers\> (ウィンドウを管理者として実行する必要があります)、コマンド ライン ウィンドウから次を使用して、構成セクション。  
 
@@ -70,10 +70,10 @@ HTTP アダプターのサンプルは、[!INCLUDE[btsBizTalkServerNoVersion](..
     %systemroot%\system32\inetsrv\APPCMD.EXE migrate config "Default Web Site/HttpReceive"  
     ```  
 
--   移行したアプリケーションは、下位レベルのプラットフォームと同様に、クラシック モードと統合 .NET モードのいずれでも実行できます。  
+-   アプリケーションを移行した後は、クラシックと統合された .NET の両方のモードをおよびダウンレベルのプラットフォームに実行されます。  
 
 > [!NOTE]
->  このサンプルを実行する前に、ビルド処理および初期化処理でエラーが報告されていないことを確認してください。  
+>  エラーが報告されていないこと、ビルドおよび初期化プロセス中にこのサンプルを実行する前に確認してください。  
 
 > [!NOTE]
 >  開き、Setup.bat ファイルを実行することがなくこのサンプルでは、プロジェクトをビルドする場合は、まず、.NET Framework の厳密名ユーティリティ (sn.exe) を使用して厳密な名前キーのペアを作成する必要があります。 このキー ペアは、生成されたアセンブリの署名に使用します。  
@@ -90,7 +90,7 @@ HTTP アダプターのサンプルは、[!INCLUDE[btsBizTalkServerNoVersion](..
 2. サンプル アダプターをレジストリに追加するには、ダブルクリック**HTTP.NET.reg**します。  
 
    > [!NOTE]
-   >  HTTP.NET.reg には、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のインストール ディレクトリへのハードコードされたパスが含まれています。 既定の場所に [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] をインストールしなかった場合や、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のインストールを以前のバージョンの [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] からアップグレードした場合は、HTTP.NET.reg ファイルを変更して適切なパスを指定する必要があります。 "OutboundAssemblyPath" と "AdapterMgmtAssemblyPath" の値に関連付けられたパスを更新し、指定されたファイルの正しい場所を指すようにします。  
+   >  HTTP.NET.reg にハードコードされたパスが含まれています、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]インストール ディレクトリ。 インストールしていない場合[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]既定の場所にアップグレードした場合、または、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]の以前のバージョンからのインストール[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]、HTTP.NET.reg して適切なパスのファイルを変更する必要があります。 指定されたファイルの正しい場所を指す、"OutboundAssemblyPath"と"AdapterMgmtAssemblyPath"の値に関連付けられたパスを更新します。  
    > 
    > [!IMPORTANT]
    >  BizTalk を 64 ビット コンピューターにインストールすると、hkey_classes_root \clsid\ レジストリ エントリのすべてのインスタンスを hkey_classes_root \wow6432node\clsid\ に変更、 **HTTP.NET.reg**レジストリ ファイル。  
@@ -101,7 +101,7 @@ HTTP アダプターのサンプルは、[!INCLUDE[btsBizTalkServerNoVersion](..
 
 ## <a name="installing-the-sample-adapter"></a>サンプル アダプターのインストール  
 
-#### <a name="to-install-the-http-adapter-sample"></a>HTTP アダプターのサンプルをインストールするには  
+#### <a name="to-install-the-http-adapter-sample"></a>HTTP アダプター サンプルをインストールするには  
 
 1. をクリックして、**開始**メニューの **すべてのプログラム**を選択します[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、し、 **BizTalk Server 管理**します。  
 
@@ -121,11 +121,11 @@ HTTP アダプターのサンプルは、[!INCLUDE[btsBizTalkServerNoVersion](..
 
 5. **[OK]** をクリックします。  
 
-6. これで、BizTalk 管理コンソールの右ウィンドウにあるアダプターの一覧にアダプターが表示されます。  
+6. アダプターは、BizTalk 管理コンソールの右側のウィンドウにあるアダプターの一覧に表示されます。  
 
-## <a name="stopping-and-restarting-the-host-instance"></a>ホスト インスタンスの停止と再起動  
+## <a name="stopping-and-restarting-the-host-instance"></a>停止して、ホスト インスタンスの再起動  
 
-#### <a name="to-stop-and-restart-the-host-instance-for-the-http-adapter-sample"></a>HTTP アダプターのサンプルのホスト インスタンスを停止して再起動するには  
+#### <a name="to-stop-and-restart-the-host-instance-for-the-http-adapter-sample"></a>停止して、HTTP アダプタのサンプルのホスト インスタンスを再起動するには  
 
 1. をクリックして、**開始**メニューの **すべてのプログラム**を選択します[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]を選択し、[!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]します。  
 
@@ -137,10 +137,10 @@ HTTP アダプターのサンプルは、[!INCLUDE[btsBizTalkServerNoVersion](..
 
 4. 結果ウィンドウで、ホスト インスタンスを右クリックし をクリックし、**開始**します。  
 
-   これで、アプリケーションで HTTP.NET アダプターを使用する準備が整いました。 アダプターは、の形式を構成するときに、**仮想ディレクトリ**の形式は、トランスポートのプロパティ:/httpreceive/httpreceive.aspx?optionalQueryString します。  
+   HTTP.NET アダプターは、アプリケーションで使用する準備ができました。 アダプターは、の形式を構成するときに、**仮想ディレクトリ**の形式は、トランスポートのプロパティ:/httpreceive/httpreceive.aspx?optionalQueryString します。  
 
 ## <a name="comments"></a>コメント  
- 提供される BaseAdapter クラスを使用して HTTP.NET アダプターは*\<サンプル パス\>* \AdaptersDevelopment\BaseAdapter\v1.0.2\\します。 BaseAdapter プロジェクトで提供されるクラスは、アダプターの開発を迅速化するためのものです。 提供されるクラスの詳細については、BaseAdapter コードのコメントを参照してください。  
+ 提供される BaseAdapter クラスを使用して HTTP.NET アダプターは*\<サンプル パス\>* \AdaptersDevelopment\BaseAdapter\v1.0.2\\します。 BaseAdapter プロジェクトで提供されるクラスはアダプターの開発を加速するためのものです。 提供されるクラスの詳細については、BaseAdapter コードのコメントを参照してください。  
 
 ## <a name="see-also"></a>参照  
  [アダプターの登録](../core/registering-an-adapter.md)   

@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ecb6c6976493e05c9df747de4a358df7fff7809f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 43c773fcd093035f414fd4824a38e5b675484f51
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36983923"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65291496"
 ---
 # <a name="creating-a-custom-itinerary-messaging-service"></a>カスタム スケジュール メッセージング サービスを作成します。
 スケジュール オンランプ フレームワークの一部である、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]を実装するクラスを使用してスケジュールの手順の実行をサポート、 **IMessagingService**スケジュール メッセージング サービスを実行するインターフェイス。 次を担当するサービスの場合は、カスタムのメッセージング サービスを実装できます。  

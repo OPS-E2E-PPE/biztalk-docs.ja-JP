@@ -12,36 +12,36 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d54b66c42fae286ec748ef560c461a22124165b0
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b2c949f87f74881da64475c74c6e26099359f925
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36991779"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65282253"
 ---
 # <a name="rnifreceive"></a>RNIFReceive
-このサンプルは、作業 Microsoft® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] RNIFReceive.aspx ファイルを RNIF メッセージを受信して処理用に準備する、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]パブリック プロセス。 ASPX ページをカスタマイズして、次の操作を実行できます。  
+このサンプルは、作業 Microsoft® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] RNIFReceive.aspx ファイルを RNIF メッセージを受信して処理用に準備する、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]パブリック プロセス。 次の ASPX ページをカスタマイズできます。  
   
-- パフォーマンス カウンタの追加と削除  
+- 追加または削除のパフォーマンス カウンター  
   
-- 機能の追加 (データベースへのデータの書き込みや追跡機能のカスタマイズなど)  
+- データベースへのデータの書き込みや追跡機能のカスタマイズなど、ページに機能を追加します。  
   
-- 検証機能の追加  
+- 検証ページを追加します。  
   
   このサンプルにある*\<ドライブ\>*: \Program Files\Microsoft BizTalk\<バージョン\>\sdk\webapplication\rnifreceiver のアクセラレータです。  
   
 ## <a name="demonstrates"></a>使用例  
- このサンプルは、以下を含み、パブリック プロセス用に着信メッセージを準備する方法を示します。  
+ このサンプルでは、パブリック プロセスは、次のように受信メッセージを準備する方法を示しています。  
   
--   パートナーの RNIFSend.aspx からのメッセージの受信  
+-   パートナーの RNIFSend.aspx からメッセージを受信  
   
 -   MIME ヘッダーの検証  
   
--   メッセージからの MIME ヘッダーと境界の削除  
+-   メッセージから MIME ヘッダーと境界を削除します。  
   
--   パートナーの RNIFReceive.aspx へのメッセージのルーティング  
+-   パートナーの RNIFReceive.aspx にメッセージのルーティング  
   
--   シグナル メッセージの返信  
+-   シグナル メッセージを返す  
   
 ## <a name="see-also"></a>参照  
  [送信および受信 ASPX ページ](../../adapters-and-accelerators/accelerator-rosettanet/send-and-receive-aspx-pages.md)   

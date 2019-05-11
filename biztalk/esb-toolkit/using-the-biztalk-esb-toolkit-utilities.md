@@ -1,5 +1,5 @@
 ---
-title: BizTalk ESB Toolkit ユーティリティを使用して |Microsoft ドキュメント
+title: BizTalk ESB Toolkit ユーティリティを使用する |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,19 +12,19 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: db4a8ef2def05e0b77d272463d7a79f937623b1a
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 97fcea7d2d7818b59ffae75754d04f5102e5f91c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25976688"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396423"
 ---
 # <a name="using-the-biztalk-esb-toolkit-utilities"></a>BizTalk ESB Toolkit ユーティリティを使用します。
-このセクションの一部として含まれているさまざまなユーティリティの説明、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]です。  
+このセクションの一部として含まれているさまざまなユーティリティの説明、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]します。  
   
- **ESB Itinerary インポート ユーティリティ**  
+ **ESB スケジュール オンランプ Import ユーティリティ**  
   
- このユーティリティは、\bin ディレクトリの下にある、 [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] EsbImportUtil.exe という名前です。 このユーティリティを使用して、発行または ESBItineraryDB データベースに XML 旅程をデプロイすることができます。  
+ このユーティリティが \bin ディレクトリの下にある、 [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] EsbImportUtil.exe という名前です。 このユーティリティは、発行またはデプロイ ESBItineraryDB データベースに旅行プラン XML を使用できます。  
   
  ユーティリティの構文は次のとおりです。  
   
@@ -32,23 +32,23 @@ ms.locfileid: "25976688"
 >EsbImportUtil <Parameter1> <Value> <parameter2> <Value>...  
 ```  
   
- さまざまなパラメーターを受け入れる次に示します。  
+ 次に示します、さまざまなパラメーターを受け入れることができます。  
   
  /?:\<パラメーターのヘルプを表示します。\>  
   
- /f:\<行程 xml ファイルのパス\>  
+ /f:\<スケジュール オンランプ xml ファイルのパス\>  
   
- 展開/c\<発行 &#124; 展開\>  
+ c:\<発行&#124;展開\>  
   
- /n:\<行程の既定の名前\>  
+ /n:\<既定のスケジュール名\>  
   
- /v:\<行程の既定のバージョン ('<major.minor' の形式)\>  
+ /v:\<既定のスケジュールのバージョン ('major.minor' 形式)\>  
   
  /o:\<サイレントの上書き\>  
   
  このユーティリティを使用する方法の例を次に示します。  
   
- 行程データベースに発行します。  
+ 行程データベースを発行します。  
   
 ```  
 >EsbImportUtil /f:myitinerary.xml /c:published  
@@ -60,29 +60,29 @@ ms.locfileid: "25976688"
 >EsbImportUtil  /f:myitinerary.xml /c:deployed  
 ```  
   
- **SSO の構成ユーティリティを永続化します。**  
+ **SSO 構成ユーティリティを永続化します。**  
   
- このユーティリティは、\bin ディレクトリの下にある、 [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] Microsoft.Practices.ESB.PersistConfigurationTool.exe という名前です。 このユーティリティを使用して、BizTalk SSO データベースに ESB の構成情報を保持することができます。 これは、構成情報を表示および SSO データベースから構成情報を削除するも使用できます。  
+ このユーティリティが \bin ディレクトリの下にある、 [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] Microsoft.Practices.ESB.PersistConfigurationTool.exe という名前です。 このユーティリティは、BizTalk SSO データベースに、ESB の構成情報を永続化に使用できます。 これは、構成情報を表示および SSO データベースから構成情報を削除するも使用できます。  
   
  ユーティリティの構文は次のとおりです。  
   
- **構成セクションを追加します。**  
+ **構成セクションを追加するには。**  
   
 ```  
 >Microsoft.Practices.ESB.PersistConfigurationTool  /P /F:app.config /S:SectionName /A:ApplicationName  
 ```  
   
 > [!NOTE]
->  /S が指定されていない場合は、以下のセクションが追加されます: connectionStrings、esb、esb.resolver および cachingConfiguration です。  
+>  /S が指定されていない場合、次のセクションが追加されます: connectionStrings、esb、esb.resolver および cachingConfiguration します。  
   
- **セクションを削除します。**  
+ **セクションを削除するには。**  
   
 ```  
 >Microsoft.Practices.ESB.PersistConfigurationTool  /R /S:SectionName  
 ```  
   
- 既存のセクションを表示するには、/V スイッチを使用してアプリケーションとセクション スイッチを使用します。  
+ 既存のセクションを表示するには、/V スイッチを使用して、アプリケーションとセクション スイッチを使用します。  
   
  管理者グループ名を設定するには、AG:AdminGroupName スイッチを使用します。  
   
- ユーザー グループ名を設定するには、UG:UserGroupName スイッチを使用します。
+ ユーザー グループの名前を設定するには、UG:UserGroupName スイッチを使用します。

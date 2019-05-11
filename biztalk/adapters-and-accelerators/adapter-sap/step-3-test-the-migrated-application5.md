@@ -1,5 +1,5 @@
 ---
-title: '手順 3: テスト移行 Application5 |Microsoft Docs'
+title: 手順 3:テスト移行 Application5 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,14 +15,14 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 195b150dcbc3edcd1bfe0a18a17c6fe73cb4f50b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f8754056eeb173fc86201a108e95605074101dea
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37009147"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65372801"
 ---
-# <a name="step-3-test-the-migrated-application"></a>手順 3: 移行後のアプリケーションをテストします。
+# <a name="step-3-test-the-migrated-application"></a>手順 3:移行したアプリケーションをテストします。
 ![ステップ 3/3](../../adapters-and-accelerators/adapter-oracle-database/media/step-3of3.gif "Step_3of3")  
   
  **所要時間:** 5 分  

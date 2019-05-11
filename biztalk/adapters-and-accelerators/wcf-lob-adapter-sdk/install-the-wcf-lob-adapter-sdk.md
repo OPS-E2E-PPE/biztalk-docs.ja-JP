@@ -12,17 +12,17 @@ caps.latest.revision: 40
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 95fba9830bd97dd619cd16d18c0363a4525d1397
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a0987052ec5c29b321fdef8ec82a57ab582950dc
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36999707"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65363641"
 ---
 # <a name="install-the-wcf-lob-adapter-sdk"></a>WCF LOB Adapter SDK をインストールします。
 インストールし、構成、[!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)]します。 
 
-## <a name="requirements"></a>要件 
+## <a name="requirements"></a>必要条件 
 次のコンポーネントをインストールするシステムをインストール、[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]します。 
 
 > [!NOTE]
@@ -33,7 +33,7 @@ ms.locfileid: "36999707"
 
 |                                                                                          |                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 |------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|                                         Windows                                          | x86 または x64 <br/><br/>必要な OS リソースは次のとおりです。<br/> <ul><li>OleTx トランザクションをサポートするために必要な Microsoft 分散トランザクション コーディネーター (MSDTC)。</li><li>信頼性の高いメッセージングをサポートするために必要なメッセージ キュー (MSMQ)。</li><li>IIS でアプリケーションをホストするかどうかに必要なインターネット インフォメーション サービス (IIS)。</li><li>WAS でアプリケーションをホストするかどうかに必要な Windows プロセス アクティブ化サービス (WAS)。</li></ul> |
+|                                         Windows                                          | x86 または x64 <br/><br/>必要な OS リソースは次のとおりです。<br/> <ul><li>Microsoft は分散トランザクション コーディネーター (MSDTC) です。OleTx トランザクションをサポートするために必要</li><li>メッセージ キュー (MSMQ) をにします。信頼性の高いメッセージングをサポートするために必要な</li><li>インターネット インフォメーション サービス (IIS):IIS でアプリケーションをホストするために必要な</li><li>Windows プロセス アクティブ化サービス (WAS):WAS でアプリケーションをホストするために必要な</li></ul> |
 |                             Windows Communication Foundation                             |                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 |        [!INCLUDE[btsDotNetFramework_md](../../includes/btsdotnetframework-md.md)]        |                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 |       [!INCLUDE[btsVStudioNoVersion_md](../../includes/btsvstudionoversion-md.md)]       |                                                                                                                                     カスタム アダプターを構築しているかどうか、またはで構築された、アダプターを使用するソリューションの開発に必要な[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]します。                                                                                                                                      |
@@ -51,7 +51,7 @@ ms.locfileid: "36999707"
 
 3. **ようこそ**画面で、**次**します。  
 
-4. ライセンス契約に同意して、**[次へ]** を選択します。  
+4. ライセンス条項に同意し、選択**次**します。  
 
 5. **セットアップの種類の選択**インストールの種類を選択します。  
 

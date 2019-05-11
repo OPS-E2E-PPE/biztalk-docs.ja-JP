@@ -1,5 +1,5 @@
 ---
-title: SWIFT 受信アダプター URI |Microsoft ドキュメント
+title: SWIFT 受信アダプター URI |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,17 +12,17 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6988155f70bf197f9c468b3ee7eb48c8f2f5f53d
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 9c16742da0be4ba55932332c3e74d067c7c65284
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25963160"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65364369"
 ---
-# <a name="swift-receive-adapter-uri"></a>SWIFT 受信アダプター URI
-URI、受信アダプターが構築されたに基づいてタキシード エンド ポイント情報 (SWIFT://\<SwTuxSrv\>) SWIFTNet リンク (SNL)、およびメッセージのパートナー (SWIFT://\<SagMessagePartner\>)SWIFTAlliance ゲートウェイの詳細については、アダプター (SAG RA) の展開を受信します。  
+# <a name="swift-receive-adapter-uri"></a>SWIFT 受信アダプターの URI
+URI、受信アダプターの構築の情報に基づきタキシード終点 (SWIFT://\<SwTuxSrv\>) SWIFTNet リンク (SNL)、およびメッセージのパートナー (SWIFT://\<SagMessagePartner\>)SWIFTAlliance ゲートウェイの情報は、アダプター (SAG RA) の展開を受信します。  
   
- これとして表されます、**アプリケーション名**受信アダプターのプロパティ ページのプロパティです。  
+ これとして表されます、**アプリケーション名**受信アダプターのプロパティ ページのプロパティ。  
   
 ## <a name="see-also"></a>参照  
  [SWIFT 受信アダプターのアーキテクチャ](../../adapters-and-accelerators/fileact-interact/swift-receive-adapter-architecture.md)   

@@ -1,5 +1,5 @@
 ---
-title: '手順 7: サンプル LOB メッセージの作成 |Microsoft Docs'
+title: 手順 7:サンプル LOB メッセージの作成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,15 +17,15 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d2b8450f196a1619b55b08a0771508daafa421a4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c39df356056e8f8f5f9bcf7d136eda302003096e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36978003"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65280617"
 ---
-# <a name="step-7-create-a-sample-lob-message"></a>手順 7: サンプル LOB メッセージを作成します。
-ここでは、LOB アプリケーション ユーティリティを使用して、サンプルの基幹業務 (LOB) メッセージを作成します。  
+# <a name="step-7-create-a-sample-lob-message"></a>手順 7:サンプル LOB メッセージを作成します。
+この手順では、LOB アプリケーション ユーティリティを使用するサンプルの基幹業務 (LOB) メッセージを作成します。  
 
 ### <a name="to-create-a-sample-message-using-the-lob-application-utility"></a>LOB アプリケーション ユーティリティを使用してサンプル メッセージを作成するには  
 
@@ -46,10 +46,10 @@ ms.locfileid: "36978003"
 
 3. **LOB アプリケーション**ダイアログ ボックスで、をクリックして**Submit Message**します。  
 
-   LOB アプリケーションは、LOB アプリケーションが生成した元のメッセージをシミュレートして Microsoft [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] のメッセージを作成します。 メッセージの状態は [Status] ウィンドウで確認できます。  
+   Microsoft LOB アプリケーションがメッセージを生成[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]LOB アプリケーションによって生成された元のメッセージをシミュレートします。 ステータス ウィンドウには、メッセージの状態を表示できます。  
 
 > [!NOTE]
->  サンプル メッセージでは、"HOME" と "PARTNER" のグローバル ビジネス識別子 (GBI) は、それぞれ 123456789 と 987654321 です。 別の GBI を使用する場合は、これらのファイルの内容を変更する必要があります。  
+>  サンプル メッセージでは、"HOME"のグローバル ビジネス識別子 (GBI) と「パートナー」が 123456789 と 987654321、それぞれを前提としています。 別の GBI を使用するには、これらのファイルの内容を変更する必要があります。  
 
 ## <a name="see-also"></a>参照  
- [手順 8: BTARN データベース内のメッセージの表示](../../adapters-and-accelerators/accelerator-rosettanet/step-8-view-messages-in-the-btarn-databases.md)
+ [手順 8:BTARN データベース内のメッセージの表示](../../adapters-and-accelerators/accelerator-rosettanet/step-8-view-messages-in-the-btarn-databases.md)

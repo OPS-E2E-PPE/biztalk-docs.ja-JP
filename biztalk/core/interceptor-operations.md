@@ -1,5 +1,5 @@
 ---
-title: インターセプタの操作 |Microsoft ドキュメント
+title: インターセプタの操作 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,24 +12,24 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dd67f5e6245d4b16c83e030b3c9149c77b791153
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e976157821cf5047dc6353d0afb5a6eba0429bad
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22257154"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65331741"
 ---
 # <a name="interceptor-operations"></a>インターセプタの操作
-このセクションでは、インターセプタ構成ファイルの一般的な操作について説明します。 これらの操作は、Windows Workflow Foundation (WF) および Windows Communication Foundation (WCF) のインターセプタと、Common Interceptor Framework を基に構築されたその他のすべてのインターセプタで使用できます。 WF インターセプタおよび WCF インターセプタでは、インターセプタ データを取得して操作するための追加のドメイン固有の操作を定義することにより、これらの操作によって提供される共通の機能を拡張できます。  
+このセクションには、共通のインターセプター構成ファイルの操作に関する情報が含まれています。 これらの操作は、Windows Workflow Foundation (WF) および Windows Communication Framework (WCF) インターセプタおよび Common Interceptor Framework 上に構築されたその他のすべてのインターセプターを利用できます。 WCF と WF インターセプターは、取得し、インターセプターのデータを操作するため、追加のドメイン固有の操作を定義することで、これらの演算子によって提供される一般的な機能を拡張します。  
   
 > [!NOTE]
->  操作名の大文字と小文字は区別されます。  
+>  操作名は大文字小文字を区別します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [そして](../core/and.md)  
+-   [And](../core/and.md)  
   
--   [連結](../core/concatenate.md)  
+-   [Concatenate](../core/concatenate.md)  
   
 -   [定数](../core/constant.md)  
   

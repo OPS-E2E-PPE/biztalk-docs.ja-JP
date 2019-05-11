@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2bada45064e588748b25947e08b104dc79838ee0
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 424a3721b2ff12fb14be18c7d11a46de9a116338
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36975987"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65372963"
 ---
 # <a name="special-operations"></a>特別な操作
 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]サーフェスのいくつかの特別な操作です。 これらの操作は、SAP システムの成果物には基づいていません。 アダプターのクライアント アプリケーションの機能を提供するは表示されます。 特別な操作は次のとおりです。  
@@ -32,7 +32,7 @@ ms.locfileid: "36975987"
   
   - 言語  
   
-    そのメッセージのスキーマを含む RfcGetAttributes 操作に関する詳細については、[RFC 操作のメッセージ スキーマ](../../adapters-and-accelerators/adapter-sap/message-schemas-for-rfc-operations.md)を参照してください。  
+    そのメッセージのスキーマを含む RfcGetAttributes 操作に関する詳細については、次を参照してください。 [RFC 操作のメッセージ スキーマ](../../adapters-and-accelerators/adapter-sap/message-schemas-for-rfc-operations.md)します。  
   
 - **RfcConfirmTransID**します。 この操作は、TRFC ノードの下に表示され、RFC SDK の機能を公開します。 SAP システムでの SAP トランザクション Id を確認するのにには、この操作を使用します。  
   
@@ -44,7 +44,7 @@ ms.locfileid: "36975987"
   
    ただし、一部のシナリオに関連付けられた、tRFC TID を必要があります。 たとえば、特定の問題をトラブルシューティングする SAP システムで LUW たい場合があります。 このようなシナリオを呼び出すことができます**ConvertGuidToTid**します。 使用する**ConvertGuidToTid**コードをプロジェクトに SAP アダプターのアセンブリへの参照を追加する必要があります。  
   
-   Trfc を呼び出す方法の詳細については、[SAP の Trfc に対する操作](../../adapters-and-accelerators/adapter-sap/operations-on-trfcs-in-sap.md)を参照してください。 次の例を呼び出す方法を示しています。 **ConvertGuidToTid**します。  
+   Trfc を呼び出す方法の詳細については、次を参照してください。 [SAP の Trfc に対する操作](../../adapters-and-accelerators/adapter-sap/operations-on-trfcs-in-sap.md)します。 次の例を呼び出す方法を示しています。 **ConvertGuidToTid**します。  
   
   ```  
   // messageGuid is the GUID associated with a tRFC or IDOC  
@@ -53,4 +53,4 @@ ms.locfileid: "36975987"
   ```  
   
 ## <a name="see-also"></a>参照  
- [メッセージと BizTalk adapter for mySAP Business Suite のメッセージ スキーマ](../../adapters-and-accelerators/adapter-sap/messages-and-message-schemas-for-biztalk-adapter-for-mysap-business-suite.md)
+ [メッセージと BizTalk Adapter 用 mySAP Business Suite のメッセージ スキーマ](../../adapters-and-accelerators/adapter-sap/messages-and-message-schemas-for-biztalk-adapter-for-mysap-business-suite.md)

@@ -1,5 +1,5 @@
 ---
-title: BAM ポータルのユーザー補助機能 |Microsoft ドキュメント
+title: BAM ポータルのユーザー補助機能 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,15 +15,15 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 23475999e8e6f6872ce715fb8b3e2a24e8d0f3e6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 53b4229f68aabc7169da5caac15733e8f3e95bca
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22224466"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65362270"
 ---
 # <a name="accessibility-for-the-bam-portal"></a>BAM ポータルのユーザー補助機能
-BAM ポータルでは、Microsoft Internet Explorer の標準的なユーザー補助機能がサポートされています。 Internet Explorer のユーザー補助機能に関する詳細については、次を参照してください。 [Internet Explorer 7 のユーザー補助機能](https://www.microsoft.com/en-us/Accessibility/windows)します。  
+BAM ポータルでは、Microsoft Internet Explorer の標準のユーザー補助機能をサポートします。 Internet Explorer のユーザー補助機能の詳細については、次を参照してください。 [Internet Explorer 7 のユーザー補助機能](https://www.microsoft.com/en-us/Accessibility/windows)します。  
   
 ## <a name="see-also"></a>参照  
  [BAM ポータル](../core/bam-portal.md)

@@ -17,12 +17,12 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9bb93005f99a41fc1fa7717c45436ad860578f39
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 18eee656246069db7bfecfa3c32815628a1db256
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36999787"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65323047"
 ---
 # <a name="orchestration-schedule-view"></a>オーケストレーション スケジュール ビュー
 オーケストレーション ビューには、選択したオーケストレーションに含まれているビジネス プロセスを BAM でトランザクション処理する手順が表示されます。 このビューは、追跡プロファイル エディター (TPE) のユーザー インターフェイスの右ペインにあります。  
@@ -36,10 +36,10 @@ ms.locfileid: "36999787"
   
   オーケストレーション スケジュール ビュー内の図形を右クリックすると、メッセージ ペイロード、コンテキスト プロパティ、または図形に関連付けられているメッセージのプロパティを表示することができるコンテキスト メニューが開きます。  
   
-  オーケストレーション ビューで表示の詳細については、[オーケストレーション図形](../core/orchestration-shapes.md)を参照してください。  
+  オーケストレーション ビューで表示の詳細については、次を参照してください。[オーケストレーション図形](../core/orchestration-shapes.md)します。  
   
   使用できるオーケストレーションの一覧は広範にわたる場合があります。 検索対象のオーケストレーションの名前の一部がわかっている場合でを入力、**文字列**テキスト ボックスをクリックして、**検索**ボタンをクリックします。 このように検索すると、入力した文字列が名前に含まれているオーケストレーションのみが選択されます。  
   
 ## <a name="see-also"></a>参照  
  [イベント ソース ビューとは何ですか。](../core/what-is-the-source-event-view.md)   
- [Xml-data Reduced を参照してください。](../core/tracking-profile-editor.md)
+ [追跡プロファイル エディター](../core/tracking-profile-editor.md)

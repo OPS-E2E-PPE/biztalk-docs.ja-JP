@@ -1,5 +1,5 @@
 ---
-title: 送信 EDI メッセージの検証 |Microsoft ドキュメント
+title: 送信 EDI メッセージの検証 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,30 +12,30 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 946e90eb58c9b81e0cd7fa9bf2c02cc49af021ce
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 01e0afed109f3ea03e863e2813ca4f58d289eaa0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22287994"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65295654"
 ---
 # <a name="validation-of-outgoing-edi-messages"></a>送信 EDI メッセージの検証
-EDI 送信パイプラインは、送信対象のメッセージを処理するとき、エンベロープとメッセージ データに対して一連の検証を実行します。 これらの処理のうちの一部は常に実行されますが、有効にした場合にのみ実行される処理もあります。 これらの検証には、以下が含まれます。  
+EDI 送信パイプラインが送信されるメッセージを処理するとき、エンベロープとメッセージ データに対して一連の検証を実行します。 これらのプロセスの一部は常に実行します。一部は、それらを有効にした場合にのみ実行されます。 これらの検証を以下に示します。  
   
--   トランザクション セットのデータ要素のメッセージ スキーマに対するスキーマ検証。 これは常に実行されます。  
+-   メッセージ スキーマと照らし合わせたトランザクション セット データ要素のスキーマの検証。 これは常に実行します。  
   
--   トランザクション セットのデータ要素に対するクロスフィールド検証 (X12 でエンコードされたメッセージのみ)。 これは、メッセージ スキーマで有効になっている場合に実行されます。  
+-   クロス フィールド検証トランザクションでは、データ要素 (X12 でエンコードされたメッセージのみ) を設定します。 これは、メッセージのスキーマで有効になっている場合に実行されます。  
   
--   トランザクション セットのデータ要素に対して実行される EDI 検証。 これは、ような状況は、アグリーメントでプロパティが有効な場合に実行されます。  
+-   トランザクション セット データ要素に対して EDI の検証が実行されます。 これは、アグリーメントでプロパティを有効にした場合に実行されます。  
   
--   トランザクション セットのデータ要素に対して実行される拡張検証。 これは、ような状況は、アグリーメントでプロパティが有効な場合に実行されます。  
+-   トランザクション セット データ要素に対して実行される拡張検証。 これは、アグリーメントでプロパティを有効にした場合に実行されます。  
   
--   X12 標準に準拠した、トランザクション セットとグループのマッピングに基づく、単一のグループ内のトランザクション セットの検証。 これは、実行される場合にのみ、**受信バッチ処理オプション**プロパティに設定されている**インターチェンジの保存 - エラーでインターチェンジを中断**または**インターチェンジのトランザクションを中断エラーの設定**です。  
+-   トランザクションの検証の設定グループのマッピングに x12 トランザクション セットに基づく単一グループ内の標準です。 これを行う場合にのみ、**受信バッチ処理オプション**プロパティに設定されて**インターチェンジの保存 - エラーでインターチェンジを中断**または**インターチェンジの保存 - トランザクションを中断エラーの設定**します。  
   
 ## <a name="see-also"></a>参照  
  [EDI 構造検証](../core/edi-structural-validation.md)   
  [アグリーメントのプロパティの検証](../core/agreement-properties-validation.md)   
- [EDI の種類 (データ要素) の検証](../core/edi-type-data-element-validation.md)   
- [拡張 (BTS-XSD) 検証](../core/extended-bts-xsd-validation.md)   
+ [EDI の種類 (データ要素) 検証](../core/edi-type-data-element-validation.md)   
+ [拡張された (BTS-XSD) 検証](../core/extended-bts-xsd-validation.md)   
  [スキーマの検証](../core/schema-validation2.md)   
- [クロス フィールド セグメント検証](../core/cross-field-segment-validation.md)
+ [クロスフィールド/セグメント検証](../core/cross-field-segment-validation.md)

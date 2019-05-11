@@ -22,12 +22,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9c50c96934a36af89db442e1f2fae49535d4645b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 54ac803c11c304d444ead1ab06ce472d7d8e191f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37013347"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65284850"
 ---
 # <a name="biztalk-design-time-tools"></a>BizTalk のデザイン時ツール
 Microsoft で作業する開発者[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]一連の BizTalk Server に組み込まれているデザイン時ツールを使用することができます。 これらのツールは Microsoft に統合されて[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)][!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)]します。 詳細については[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]ツール、MicrosoftBizTalk Server のヘルプを参照してください。  
@@ -65,18 +65,18 @@ Microsoft で作業する開発者[!INCLUDE[BTARN_CurrentVersion_FirstRef](../..
   
   これらのスキーマは、「 \<*ドライブ*\>: \Program Files\\Microsoft BizTalk\<バージョン\>Accelerator for rosettanet \sdk\schemas します。  
   
-  複数のスキーマを追加するには、RosettaNet の Web サイトから Pip をダウンロードして[ http://go.microsoft.com/fwlink/?linkid=33859](http://go.microsoft.com/fwlink/?linkid=33859)します。 詳細については、[新しい Partner Interface Process の組み込み](../../adapters-and-accelerators/accelerator-rosettanet/incorporating-a-new-partner-interface-process.md)を参照してください。  
+  複数のスキーマを追加するには、RosettaNet の Web サイトから Pip をダウンロードして[ http://go.microsoft.com/fwlink/?linkid=33859](http://go.microsoft.com/fwlink/?linkid=33859)します。 詳細については、次を参照してください。[新しい Partner Interface Process の組み込み](../../adapters-and-accelerators/accelerator-rosettanet/incorporating-a-new-partner-interface-process.md)します。  
   
 ## <a name="biztalk-mapper"></a>BizTalk マッパー  
  BizTalk マッパーを使用して、データ変換を定義するマップの作成やカスタマイズを行います。 また、インバウンドおよびアウトバウンドの両方の RosettaNet メッセージの種類に対する変換をマップします。  
   
 ## <a name="biztalk-orchestration-designer"></a>BizTalk オーケストレーション デザイナ  
- BizTalk オーケストレーション デザイナを使用して、ビジネス プロセスの設計および実装を行います。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] SDK で提供されているプライベート プロセスをカスタマイズできます。 詳細については、[プライベート プロセス&#91;RN3&#93; ](../../adapters-and-accelerators/accelerator-rosettanet/private-processes.md)と[プライベート プロセスのカスタマイズ&#91;RN3&#93;](../../adapters-and-accelerators/accelerator-rosettanet/customizing-private-processes.md)を参照してください。 パブリック プロセスはカスタマイズできません。パブリック プロセスをカスタマイズすると、RosettaNet 準拠ではなくなります。  
+ BizTalk オーケストレーション デザイナを使用して、ビジネス プロセスの設計および実装を行います。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] SDK で提供されているプライベート プロセスをカスタマイズできます。 詳細については、次を参照してください。[プライベート プロセス&#91;RN3&#93; ](../../adapters-and-accelerators/accelerator-rosettanet/private-processes.md)と[プライベート プロセスのカスタマイズ&#91;RN3&#93;](../../adapters-and-accelerators/accelerator-rosettanet/customizing-private-processes.md)します。 パブリック プロセスはカスタマイズできません。パブリック プロセスをカスタマイズすると、RosettaNet 準拠ではなくなります。  
   
 ## <a name="biztalk-pipeline-designer"></a>BizTalk パイプライン デザイナ  
  BizTalk パイプライン デザイナを使用して、メッセージ処理手順を定義して関連付けるパイプラインを作成および構成します。 パイプラインは、メッセージ処理をステージに分割し、作業の各カテゴリを実行する順序を決定します。  
   
- [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] SDK には、受信用および送信用の 2 つの RNIF (RosettaNet Implementation Framework) パイプラインが含まれています。 詳細については、[RNIF パイプライン](../../adapters-and-accelerators/accelerator-rosettanet/rnif-pipelines.md)を参照してください。  
+ [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] SDK には、受信用および送信用の 2 つの RNIF (RosettaNet Implementation Framework) パイプラインが含まれています。 詳細については、次を参照してください。 [RNIF パイプライン](../../adapters-and-accelerators/accelerator-rosettanet/rnif-pipelines.md)します。  
   
 ## <a name="biztalk-adapter-framework"></a>BizTalk アダプタ フレームワーク  
  BizTalk アダプタ フレームワークとエンドポイント アダプタを使用して、パートナーおよびアプリケーションを統合します。  

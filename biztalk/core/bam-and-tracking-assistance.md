@@ -1,5 +1,5 @@
 ---
-title: BAM と追跡サポート |Microsoft ドキュメント
+title: BAM と追跡サポート |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,20 +15,20 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7b915d21111383ca32f2732f1a1bb86bd2c6c8f3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f1b59b4ef75db524557651552c13f511c0ec90e2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22230194"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65358850"
 ---
 # <a name="bam-and-tracking-assistance"></a>BAM と追跡サポート
-クリックして BAM ポータルによるアシスタンスを要求することができます、**アシスタンス**アクティビティの状態 ページでボタンをクリックします。  
+クリックして、BAM ポータルのアシスタンスを要求する、**アシスタンス**アクティビティの状態ページ上のボタン。  
   
- サポート要求はアプリケーション イベント ログに記録されます。 イベントのソースは BAM Web サービスであり、イベント ID は 1000 になります。  
+ アプリケーション イベント ログには、アシスタンスの要求が配置されます。 要求のソースは、BAM Web サービスと、イベント ID は 1000 です。  
   
- [説明] フィールドのメッセージ本文には、要求の件名、問題の説明、BizTalk サービス インスタンス ID、メッセージ ID、BizTalk 管理データベース サーバー名、および BizTalk 管理データベース名が含まれます。  
+ メッセージ本文が Description フィールドに、要求の件名、問題の説明、BizTalk サービスのインスタンス ID、メッセージ ID、BizTalk 管理データベース サーバー、および BizTalk 管理データベース名のテキストが含まれています。  
   
 ## <a name="see-also"></a>参照  
  [BizTalk Server の監視](../core/monitoring-biztalk-server.md)   
- [アシスタンスを要求します。](../core/request-assistance.md)
+ [サポートの要求](../core/request-assistance.md)

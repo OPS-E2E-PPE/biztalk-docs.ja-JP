@@ -1,5 +1,5 @@
 ---
-title: '手順 7: オーケストレーションの開始し、BizTalk Server の再起動 |Microsoft Docs'
+title: 手順 7:オーケストレーションの開始し、BizTalk Server の再起動 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7bf1541edcd5341461a2ff948ef82839c623ea51
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6421a4deb0883c1dcf3054b816020707c285f290
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37006491"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65287913"
 ---
-# <a name="step-7-start-the-orchestration-and-restart-biztalk-server"></a>手順 7: オーケストレーションの開始し、BizTalk Server の再起動
+# <a name="step-7-start-the-orchestration-and-restart-biztalk-server"></a>手順 7:オーケストレーションの開始し、BizTalk Server の再起動
 この手順で、オーケストレーションを開始し、再起動[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]このチュートリアルで行った変更を反映できるようにします。  
   
 ### <a name="to-start-the-orchestration-and-restart-biztalk-server"></a>オーケストレーションを開始して、BizTalk Server を再起動するには  
@@ -28,4 +28,4 @@ ms.locfileid: "37006491"
   
 2. 展開**プラットフォームの設定**、 をクリックし、**ホスト インスタンス**します。 右クリック**BizTalkServerApplication**、 をクリックし、**再起動**します。 状態があることを確認**Stopped**、し**を実行している**します。  
   
-   続行する[手順 8: バッチの作成シナリオをテスト](../../adapters-and-accelerators/accelerator-hl7/step-8-test-the-create-batch-scenario.md)します。
+   続行する[手順 8。バッチの作成シナリオをテスト](../../adapters-and-accelerators/accelerator-hl7/step-8-test-the-create-batch-scenario.md)します。

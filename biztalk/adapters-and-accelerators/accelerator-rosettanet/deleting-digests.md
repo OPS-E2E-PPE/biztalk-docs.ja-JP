@@ -18,20 +18,20 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 10e32f8d86d6723965e8a27ad51f7551fdda0b60
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a3564b89c69183133bcc31e692aff5b1c85af80d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37002403"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65283739"
 ---
 # <a name="deleting-digests"></a>ダイジェストの削除
-Microsoft[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]シグナル コンテンツと突き合わせて検証できますので、送信メッセージのダイジェストが格納されます。 ただし、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]検証後に、ダイジェストは削除されません。 定期的にこれらのダイジェストを削除して、システム パフォーマンスを維持する必要があります。  
+Microsoft[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]シグナル コンテンツと突き合わせて検証できますので、送信メッセージのダイジェストが格納されます。 ただし、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]検証後に、ダイジェストは削除されません。 定期的に、システムのパフォーマンスを維持するためにこれらのダイジェストを削除することがあります。  
   
-## <a name="when-and-how-to-delete-digests"></a>ダイジェストを削除する間隔と削除方法  
- ダイジェストは、BTARNDATA データベースの MessageDigestHelper テーブルに格納されます。 特定の期間以上経過したダイジェストだけを削除するストアド プロシージャを使用して、これらのダイジェストをテーブルから定期的に削除する必要があります。 MessageDigestHelper テーブルには、この目的のために使用する `TimeCreated` プロパティが含まれています。  
+## <a name="when-and-how-to-delete-digests"></a>ダイジェストを削除するタイミングと方法  
+ ダイジェストは、BTARNDATA データベースの MessageDigestHelper テーブルに格納されます。 定期的に、一定期間以上経過したダイジェストだけを削除するストアド プロシージャを使用して、テーブルからこれらのダイジェストを削除します。 MessageDigestHelper テーブルが含まれています、`TimeCreated`プロパティをこの目的で使用することができます。  
   
- (変更されたため、)、次の SQL ステートメントを使用してストアド プロシージャを作成し、古いダイジェストを削除するストアド プロシージャを実行します。 このサンプル ステートメントでは、8 日以上経過したすべてのダイジェストが削除されます。  
+ (変更されたため、)、次の SQL ステートメントを使用してストアド プロシージャを作成し、古いダイジェストを削除するストアド プロシージャを実行します。 このサンプル ステートメントは、7 日以上経過したすべてのダイジェストを削除します。  
   
 ```  
 delete from MessageDigestHelper where datediff(day, TimeCreated, getutcdate()) > 7  

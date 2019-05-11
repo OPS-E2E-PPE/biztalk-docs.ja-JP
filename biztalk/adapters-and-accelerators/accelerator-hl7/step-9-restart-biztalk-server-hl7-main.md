@@ -1,5 +1,5 @@
 ---
-title: '手順 9: BizTalk _hl7_main の再起動 |Microsoft Docs'
+title: 手順 9:BizTalk _hl7_main 再起動 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,14 +14,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2abc2b1b369c42155652e7d2ea737ddee87d4c8c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1ccd6f989a931cdd689be9753b513c752e633a1f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36986635"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65286651"
 ---
-# <a name="step-9-restart-biztalk-serverhl7main"></a>手順 9: 再起動 BizTalk _hl7_main
+# <a name="step-9-restart-biztalk-serverhl7main"></a>手順 9:再起動 BizTalk _hl7_main
 この手順で再起動する[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]を有効にするこのチュートリアルで行った変更の順序で。  
   
 ### <a name="to-restart-biztalk-server"></a>BizTalk Server を再起動するには  
@@ -32,4 +32,4 @@ ms.locfileid: "36986635"
   
 3. ホスト インスタンス ペインで右クリック**BizTalkServerApplication**、 をクリックし、**再起動**します。  
   
-   続行する[手順 10: Interrogative シナリオの確認](../../adapters-and-accelerators/accelerator-hl7/step-10-verify-the-interrogative-scenario.md)します。
+   続行する[手順 10。Interrogative シナリオの確認](../../adapters-and-accelerators/accelerator-hl7/step-10-verify-the-interrogative-scenario.md)します。

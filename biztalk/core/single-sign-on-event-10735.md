@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10735 |Microsoft Docs'
+title: シングル サインオン:イベント 10735 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ede774a4a212d71aa65165f7da1f6de5bb04103c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f3e7752733a437f3526af7d5ac2790d2ffac64fc
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36979227"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65291779"
 ---
-# <a name="single-sign-on-event-10735"></a>シングル サインオン: イベント 10735
+# <a name="single-sign-on-event-10735"></a>シングル サインオン:イベント 10735
 ## <a name="details"></a>詳細  
 
 |                 |                                                                                                                                                                                                                                                    |
@@ -28,15 +28,15 @@ ms.locfileid: "36979227"
 | 製品バージョン |                                                                                             [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                                                                                             |
 |    イベント ID     |                                                                                                                       10735                                                                                                                        |
 |  イベント ソース   |                                                                                                                       ENTSSO                                                                                                                       |
-|    コンポーネント    |                                                                                                                        N\A                                                                                                                         |
+|    コンポーネント    |                                                                                                                        該当なし                                                                                                                         |
 |  シンボル名  |                                                                                                              SSO_WARN_PS_APP_DISABLED                                                                                                              |
-|  メッセージ テキスト   | 外部パスワードが変更されています。 アプリケーションが無効になっているため、外部アカウントのパスワードは変更されませんでした。%r<br /><br /> 追跡 ID: %1 %r<br /><br /> アダプター: % 2 %r<br /><br /> アプリケーション名: % 3 %r<br /><br /> 外部アカウント: %4 |
+|  メッセージ テキスト   | 外部パスワード変更。 アプリケーションが disabled.%r であるため、外部アカウントのパスワードが変更されませんでした。<br /><br /> 追跡 ID: %1 %r<br /><br /> アダプター: % 2 %r<br /><br /> アプリケーション名: % 3 %r<br /><br /> 外部アカウント: %4 |
 
 ## <a name="explanation"></a>説明  
- この警告イベントは、アプリケーションが無効になっているため、外部アカウントのパスワードが変更されなかったことを示します。  
+ この警告イベントでは、パスワードが変更されていないこと、外部アカウントのため、アプリケーションが無効になっていることを示します。  
 
 ## <a name="user-action"></a>ユーザーの操作  
- この警告を解決するには、次の操作を行います:   
+ この警告を解決するには、次の操作を行います。  
 
 - 関連アプリケーションを有効にします。  
 

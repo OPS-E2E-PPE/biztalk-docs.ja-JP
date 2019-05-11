@@ -12,14 +12,14 @@ caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5f509676b17a04fdbe0f0934225b5dc64546fed8
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: bdfa5951ed261d3e8bd63811764595d1b7e3858c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36973547"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65330619"
 ---
-# <a name="invalid-proxy-address-for-send-handler-and-send-port"></a>無効なプロキシ アドレス (送信ハンドラーおよび送信ポート)
+# <a name="invalid-proxy-address-for-send-handler-and-send-port"></a>(送信ハンドラーと送信ポート) 用の無効なプロキシ アドレス
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                    |
@@ -33,10 +33,10 @@ ms.locfileid: "36973547"
 |  メッセージ テキスト   |                             無効なプロキシ アドレス: {0}                             |
   
 ## <a name="explanation"></a>説明  
- WCF 送信ハンドラーまたは WCF 送信ポートが、有効なプロキシ アドレスで指定されていませんでした。  
+ WCF 送信ハンドラーまたは WCF 送信ポートが有効なプロキシ アドレスでは提供しませんでした。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- プロキシ アドレスを構成するには、次の手順を実行します。  
+ プロキシ アドレスを構成するのにには、次の手順を使用します。  
   
 #### <a name="to-configure-a-proxy-address"></a>プロキシ アドレスを構成するには  
   
@@ -44,7 +44,7 @@ ms.locfileid: "36973547"
   
 2. コンソール ルートで展開**BizTalk Server 管理**、展開**BizTalk グループ**、展開**アプリケーション**します。  
   
-3. アプリケーションを特定し、次にトランスポートを特定します。  
+3. アプリケーションを見つけて、トランスポートを特定します。  
   
 4. トランスポート名を右クリックします。  
   
@@ -52,13 +52,13 @@ ms.locfileid: "36973547"
   
 6. ポート**型**一覧で、適切なポートを選択します。  
   
-7. クリックして**構成**します。  
+7. をクリックして**構成**です。  
   
 8. **WCF [**<em>トランスポートの種類</em>**] トランスポートのプロパティ**ダイアログ ボックスで、をクリックして、**プロキシ**タブ。  
   
 9. いることを確認でプロキシ アドレス、**プロキシ設定**セクションが正しく構成されています。  
   
-   送信ポートと送信ハンドラーの詳細については、次の情報を参照してください。  
+   送信ポートと送信ハンドラーの詳細については、次のリソースを参照してください。  
   
 -   [Wcf-wshttp 送信ポートを構成する方法](../core/how-to-configure-a-wcf-wshttp-send-port.md)  
   

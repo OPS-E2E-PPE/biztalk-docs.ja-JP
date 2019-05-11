@@ -1,5 +1,5 @@
 ---
-title: BAM ランタイムの設定を変更する |Microsoft ドキュメント
+title: BAM ランタイムの設定の変更 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,12 +15,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3bc90f401a562ed34e51035ddb8b86d8e9021b4c
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: ade7c6d92a1f2b5770f9ddd5c14835df9065b3a9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26004323"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65357545"
 ---
 # <a name="changing-bam-runtime-settings"></a>BAM ランタイムの設定の変更
 一般に、Microsoft® BizTalk Server をインストールするときに、BAM ランタイムのコンポーネントを構成します。 システムを拡張する場合やパスワードの有効期限に関するポリシーがある場合などに、BAM ランタイムの設定を変更することがあります。  
@@ -35,4 +35,4 @@ ms.locfileid: "26004323"
   
 -   [Analysis Services と BAM プライマリ インポート データベース間の暗号化を有効にする方法](../core/enable-encryption-between-analysis-services-and-bam-primary-import-database.md)  
   
--   [グループ内の他のコンピューター上の通知サービスを有効にする方法](../core/how-to-enable-notifications-services-on-additional-computers-in-a-group.md)
+-   [グループの他のコンピューターで通知サービスを有効にする方法](../core/how-to-enable-notifications-services-on-additional-computers-in-a-group.md)

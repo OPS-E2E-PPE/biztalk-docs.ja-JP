@@ -1,5 +1,5 @@
 ---
-title: '手順 5: ファイル アダプターを使用して ADT System に受信確認を配信する送信ポートの作成 |Microsoft Docs'
+title: 手順 5:ファイル アダプターを使用して ADT System に受信確認を配信する送信ポートの作成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -18,14 +18,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1421b39ed4bbd15fb82cb16ed55b23e5781eead6
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 15b9663f8203a9cf907de76df680eefe069a17ec
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37002099"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65288085"
 ---
-# <a name="step-5-create-a-send-port-to-deliver-acknowledgments-to-the-adt-system-using-the-file-adapter"></a>手順 5: ファイル アダプターを使用して ADT System に受信確認を配信する送信ポートを作成します。
+# <a name="step-5-create-a-send-port-to-deliver-acknowledgments-to-the-adt-system-using-the-file-adapter"></a>手順 5:ファイル アダプターを使用して ADT System に受信確認を配信する送信ポートの作成します。
 この手順では、ファイル アダプターを使用して受信確認を生成する送信ポートを作成します。  
 
 ### <a name="to-create-the-tutorialsendackadt-send-port"></a>Tutorial_sendAck_ADT 送信ポートを作成するには  
@@ -84,4 +84,4 @@ ms.locfileid: "37002099"
 
 8. 管理コンソールで、**送信ポート**を右クリックして**Tutorial_sendAck_ADT**、順にクリックします**開始**します。  
 
-   続行する[手順 6: ADT を配信する送信ポートを作成 ^ A03 メッセージをファイル アダプターを使用して RX System](../../adapters-and-accelerators/accelerator-hl7/step-6-create-send-port-to-deliver-adt^a03-message-to-rx-system-using-file.md)します。
+   続行する[手順 6。ADT を配信する送信ポートを作成 ^ A03 メッセージをファイル アダプターを使用して RX System](../../adapters-and-accelerators/accelerator-hl7/step-6-create-send-port-to-deliver-adt^a03-message-to-rx-system-using-file.md)します。

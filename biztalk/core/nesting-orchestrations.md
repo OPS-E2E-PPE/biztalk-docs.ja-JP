@@ -1,5 +1,5 @@
 ---
-title: オーケストレーションを入れ子に |Microsoft ドキュメント
+title: オーケストレーションを入れ子 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,15 +16,15 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4690aea9629e3e892e194167d8e5a5076725fdcc
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4ec5b00d7355100e0ff8bc557a0fed792984a5ee
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22263450"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65323601"
 ---
 # <a name="nesting-orchestrations"></a>オーケストレーションを入れ子
-使用することができます、**オーケストレーションの呼び出し**図形および**オーケストレーションの開始**図形を別の 1 つのオーケストレーションを呼び出します。 任意の深さもオーケストレーションのネストすることができます。 たとえば、呼び出し先オーケストレーションがことができる、4 つ目の呼び出しで 3 番目のオーケストレーションを呼び出すことができます。  
+使用することができます、**オーケストレーションの呼び出し**図形と**オーケストレーションの開始**図形を別の 1 つのオーケストレーションを呼び出します。 任意の深さもオーケストレーションのネストすることができます。 たとえば、呼び出し先オーケストレーションが、4 つ目の呼び出しと、3 番目のオーケストレーションを呼び出すことができます。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
@@ -34,4 +34,4 @@ ms.locfileid: "22263450"
   
 ## <a name="see-also"></a>参照  
  [オーケストレーションにパラメーターを追加する方法](../core/how-to-add-parameters-to-orchestrations.md)   
- [オーケストレーション フローのデザイン](../core/designing-orchestration-flow.md)
+ [オーケストレーション フローの設計](../core/designing-orchestration-flow.md)

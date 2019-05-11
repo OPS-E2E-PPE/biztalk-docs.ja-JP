@@ -1,5 +1,5 @@
 ---
-title: '手順 6: クエリ メッセージを配信する送信ポートの作成 |Microsoft Docs'
+title: 手順 6:クエリ メッセージを配信する送信ポートの作成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,14 +14,14 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 24e65ec7bc4e04850907609fc6d1d63e6f166593
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5039f73a71e0f34aa00069f4b6bfb1f536395529
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37004051"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65287984"
 ---
-# <a name="step-6-create-a-send-port-to-deliver-query-messages"></a>手順 6: クエリ メッセージを配信する送信ポートを作成します。
+# <a name="step-6-create-a-send-port-to-deliver-query-messages"></a>手順 6:クエリ メッセージを配信する送信ポートを作成します。
 この手順で受信クエリを配信する送信ポートを作成する (QRY ^ Q01 メッセージ) 病院情報システム (HIS) にします。  
 
 ### <a name="to-create-the-hissend-send-port"></a>HIS_Send 送信ポートを作成するには  
@@ -70,4 +70,4 @@ ms.locfileid: "37004051"
 
 7. 管理コンソールで、[**送信ポート**を右クリックして**HIS_Send**、] をクリックし、**開始**。  
 
-   続行する[手順 7: 応答メッセージを配信する送信ポートを作成](../../adapters-and-accelerators/accelerator-hl7/step-7-create-a-send-port-to-deliver-response-messages.md)です。
+   続行する[手順 7。応答メッセージを配信する送信ポートを作成](../../adapters-and-accelerators/accelerator-hl7/step-7-create-a-send-port-to-deliver-response-messages.md)です。

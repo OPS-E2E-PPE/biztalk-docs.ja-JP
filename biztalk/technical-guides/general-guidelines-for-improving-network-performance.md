@@ -12,12 +12,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b8cc4c27ef977a4bd8789adc569f9d8d78aa11ce
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 26a2617ac6a650ba958fc84116fd6af45fa94f14
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36997003"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65392022"
 ---
 # <a name="general-guidelines-for-improving-network-performance"></a>ネットワーク パフォーマンスを向上させるための一般的なガイドライン
 最適な値へのネットワーク設定を調整することが示されている効果的にネットワークのボトルネックに対処し、BizTalk Server ソリューションの全体的なネットワーク パフォーマンスが向上します。 これは、BizTalk Server コンピューター、SQL Server コンピューター、およびその他のサーバー コンピューターを含む、ソリューションに関連するすべてのコンピューターで実行する必要があります。  
@@ -119,7 +119,7 @@ ms.locfileid: "36997003"
   
 - **Wake On LAN (使用されている) 場合を除き、無効になっている**– lan でウェイク アップの機能を無効にするネットワーク アダプター ドライバーを構成します。 この機能がクライアント コンピューターの便利ですが、必要がありますほとんどもしコンピューターで使用する、BizTalk Server または SQL Server。  
   
-  ネットワーク アダプターのパフォーマンスのチューニングの詳細については、、**ネットワーク デバイスの設定**のセクション、 ["BizTalk Server データベースの最適化"ホワイト ペーパー](http://go.microsoft.com/fwlink/?LinkID=101578) (http://go.microsoft.com/fwlink/?LinkID=101578)を参照してください。  
+  ネットワーク アダプターのパフォーマンスのチューニングの詳細については、次を参照してください。、**ネットワーク デバイスの設定**のセクション、 ["BizTalk Server データベースの最適化"ホワイト ペーパー](http://go.microsoft.com/fwlink/?LinkID=101578) (http://go.microsoft.com/fwlink/?LinkID=101578)します。  
   
 ## <a name="see-also"></a>参照  
  [ネットワーク パフォーマンスを向上するために変更できる設定](../technical-guides/settings-that-can-be-modified-to-improve-network-performance.md)

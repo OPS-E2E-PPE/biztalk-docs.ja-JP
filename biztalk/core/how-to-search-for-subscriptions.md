@@ -17,24 +17,24 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 07230ace1e097d71e728110b8f2280e903ea67b8
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 475510273ec8d97c7aa848667967c6917fc2c61c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37023248"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65334801"
 ---
 # <a name="how-to-search-for-subscriptions"></a>サブスクリプションを検索する方法
-使用することができます、**クエリ** タブでサブスクリプションを検索するには、BizTalk Server 管理コンソール。 これは、システム内に定義されているすべてのサブスクリプションを確認する場合に便利です。 ルーティング エラーのトラブルシューティングを行う際、構成が正しくないためにエラーの原因となっているサブスクリプションがあるかどうかを確認できます。  
+使用することができます、**クエリ** タブでサブスクリプションを検索するには、BizTalk Server 管理コンソール。 これは、すべてのシステムで定義されているサブスクリプションを確認する場合に便利です。 ルーティング エラーのトラブルシューティングを行うため、ルーティング エラーの原因と、かどうかこれらのいずれかが正しく構成されていない、表示するサブスクリプションを確認できます。  
 
 ## <a name="prerequisites"></a>前提条件  
- ここで示す手順を実行するには、BizTalk Server Operators グループのメンバーとしてログオンする必要があります。  
+ この手順を実行するには、BizTalk Server Operators グループのメンバーとしてログオンする必要があります。  
 
 ### <a name="to-search-for-subscriptions"></a>サブスクリプションを検索するには  
 
 1. クリックして**開始**、 をクリックして**すべてのプログラム**、 をクリックして[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリックします[!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]します。  
 
-2. コンソール ツリーで、[!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)] を展開し、[BizTalk グループ] をクリックします。  
+2. コンソール ツリーで、展開[!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]、し、[BizTalk グループ] をクリックします。  
 
 3. 詳細ウィンドウでをクリックして、**新しいクエリ**タブ。  
 
@@ -45,10 +45,10 @@ ms.locfileid: "37023248"
 
    |          アイテム           |                                    説明                                    |
    |-------------------------|-----------------------------------------------------------------------------------|
-   |   **最大一致数**   |                         一致項目の表示数を指定します。                         |
-   | **サービス インスタンス ID** |               サブスクリプションをサービス インスタンス ID でフィルター選択できます。                |
-   |    **[サービス名]**     |                   サブスクリプションをサービス名でフィルター選択できます。                   |
-   |  **サブスクリプションの種類**  | サブスクリプションをアクティベーションのサブスクリプションまたはインスタンスのサブスクリプションでフィルター選択できます。 |
+   |   **最大一致数**   |                         表示する一致の数。                         |
+   | **サービス インスタンス ID** |               サービス インスタンス ID でサブスクリプションをフィルター処理できます。                |
+   |    **[サービス名]**     |                   サブスクリプションは、サービス名でフィルター処理できます。                   |
+   |  **サブスクリプションの種類**  | アクティベーションのサブスクリプションでサブスクリプションをフィルターすることも、インスタンスのサブスクリプションを処理することができます。 |
 
 
 6. 完了、**値**で行った選択の適切な列、**フィールド名**列。  

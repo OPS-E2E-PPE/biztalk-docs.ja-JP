@@ -15,15 +15,15 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 496e83311c4ede6446bad8893fbe37b22cf8420d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 09cfcebd3acd4a8b744bd14095f681f69e0c5e9f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37000771"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65283271"
 ---
 # <a name="maintaining-btarn-databases"></a>BTARN データベースの保守
-Microsoft®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]データベースの規模が大きいため、サイズがシステム パフォーマンスに影響する拡張可能です。 これは、孤立した添付ファイルや未使用のダイジェストなど、使用されないエントリがテーブルに残っているためです。 テーブルの古いエントリが削除されていないことが原因の場合もあります。 このセクションの手順に従って [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] データベースの保守を行い、パフォーマンスに影響が出ないようにしてください。  
+Microsoft®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]データベースの規模が大きいため、サイズがシステム パフォーマンスに影響する拡張可能です。 これにより、孤立した添付ファイルや未使用のダイジェストなど、テーブルに含まれる未使用エントリのままにする特定の状況から。 テーブルの古いエントリが削除されていないにも発生します。 維持するためには、このセクションの手順に従って、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]データベースのパフォーマンスに影響がありません。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

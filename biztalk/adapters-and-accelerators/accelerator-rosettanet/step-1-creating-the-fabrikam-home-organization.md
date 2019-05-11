@@ -1,5 +1,5 @@
 ---
-title: '手順 1: Fabrikam ホーム組織の作成 |Microsoft Docs'
+title: 手順 1:Fabrikam ホーム組織の作成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,17 +14,17 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7da8abbaf99dee8d0e4d328a26f5471e9e8750ad
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: dcbd52b20382268bcb07faa0b614df59bdb50c69
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36994227"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65281540"
 ---
-# <a name="step-1-creating-the-fabrikam-home-organization"></a>手順 1: Fabrikam ホーム組織の作成
+# <a name="step-1-creating-the-fabrikam-home-organization"></a>手順 1:Fabrikam ホーム組織の作成
 この手順で、Microsoft® を使用して[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]Fabrikam ホーム組織を作成する管理コンソール。  
 
-### <a name="to-start-the-btarn-management-console"></a>BTARN 管理コンソールを起動するには  
+### <a name="to-start-the-btarn-management-console"></a>BTARN 管理コンソールを開始するには  
 
 - クリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**Microsoft BizTalk\<バージョン\>Accelerator for RosettaNet**順にクリックします**[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]** 管理コンソール。  
 
@@ -32,7 +32,7 @@ ms.locfileid: "36994227"
 
 1. **[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]** 管理コンソールで、展開[!INCLUDE[btaBTARNNoVersionui](../../includes/btabtarnnoversionui-md.md)]を右クリックして**ホーム組織**、 をポイント**新規**、 をクリックし、**ホーム組織**します。  
 
-2. [新しいホーム組織のプロパティ] ダイアログ ボックスで、次の操作を行います。  
+2. 新しいホーム組織のプロパティ ダイアログ ボックスで、次の手順を実行します。  
 
 
    |               プロパティ               |                 目的                  |
@@ -57,4 +57,4 @@ ms.locfileid: "36994227"
 4. **[OK]** をクリックします。  
 
 ## <a name="see-also"></a>参照  
- [手順 2: Contoso 取引先組織の作成](../../adapters-and-accelerators/accelerator-rosettanet/step-2-creating-the-contoso-partner-organization.md)
+ [手順 2:Contoso 取引先組織の作成](../../adapters-and-accelerators/accelerator-rosettanet/step-2-creating-the-contoso-partner-organization.md)

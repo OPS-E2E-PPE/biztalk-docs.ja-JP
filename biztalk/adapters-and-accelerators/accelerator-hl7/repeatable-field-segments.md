@@ -19,12 +19,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9651b8d3414f792b81633cafbe41dd66559df04c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b5121952269715a27dcf7981e2ba44204fc5c856
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36981979"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65289910"
 ---
 # <a name="repeatable-field-segments"></a>反復可能なフィールド セグメント
 HL7 の Access データベース内のセグメント テーブルの列が格納 (ADD、RDT、および QPD) セグメントの最後のフィールドを Microsoft BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 反復可能として定義されています (**Last_field_repeatable**  =  **True**)。 [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] 追加はサポートされません。 ただし、RDT と QPD の両方がクエリのテーブルに存在して、テーブルの値で応答します。 次のサンプルではどのように[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]これらの列を処理します。  
@@ -61,7 +61,7 @@ RDT|555444222111^^^MPI^MR|Everyman^Adam|RE|00054384163^THEOPHYLLINE 80MG/15ML SO
 |---------|---------|--------|---------|------------|-----------|------------|------------------|  
 |1|250|CE|R||0471|01375|メッセージ クエリ名|  
 |2|32|ST|c|||00696|クエリのタグ|  
-|3-n|256|異なります||||01435|ユーザーのパラメーターを連続するフィールド|  
+|3-n|256|不定||||01435|ユーザーのパラメーターを連続するフィールド|  
   
 ## <a name="rdt---table-row-data"></a>RDT - テーブルの行データ  
  次の表では、HL7 仕様が RDT を定義する方法を示します。  

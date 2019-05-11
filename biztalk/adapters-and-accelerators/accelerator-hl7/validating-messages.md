@@ -19,12 +19,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 35894722d2c95f197a1fe4072c2229cf96fea64f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: fde2a092499f3e5c4c90d16af4043b532131de47
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37010059"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65286337"
 ---
 # <a name="validating-messages"></a>メッセージの検証
 Microsoft BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) エンコードされた ACK メッセージの受信メッセージの受信確認 (ACK) をアプリケーションから送信または取引先、HL7 への変換が必要な HL7 XML メッセージの形式でサポートしています。 [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] 通常、関連する受信 (取引先パートナー形式) ドキュメントの仕様に対する受信メッセージを確認した後は、受信確認を生成します。 すべてのセグメントの検証に合格すると[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]アプリケーションへの同意を示す受信確認を返します。 それ以外の場合、[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]エラーまたは障害/拒否を示す確認メッセージが生成されます。  

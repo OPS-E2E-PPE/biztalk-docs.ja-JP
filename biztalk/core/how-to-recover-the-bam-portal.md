@@ -12,12 +12,12 @@ caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 781191047e0ee99b0000c7b773d46aa035a7e1d7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a7f0d9a813b2a8cee115ba782131c2492ea14fff
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22254602"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65335593"
 ---
 # <a name="how-to-recover-the-bam-portal"></a>BAM ポータルを復旧する方法
 ビジネス アクティビティ監視 (BAM) を使用している場合は、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の復旧処理の一環として、BAM ポータルを復旧する必要があります。 BAM を使用していない場合は、この手順を省略できます。  

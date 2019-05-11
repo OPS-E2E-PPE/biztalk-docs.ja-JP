@@ -12,16 +12,16 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 55c86fafdab538dcf60f52265e10711b1a43340a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2ed7f6a3c9f20f112d5a976642d2cdd23a6890e7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37024152"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65291404"
 ---
 # <a name="optimizing-memory-usage-with-streaming"></a>ストリーミングによるメモリ使用量を最適化します。
 このトピックでは、ストリーミングのパターンを使用したオーケストレーションでメッセージを読み込むときに、WCF トランスポートを使用して、またはサイズの大きいメッセージを送受信する際にメッセージ メモリのフット プリントを最小限に抑えるための推奨事項を提供します。   
-メッセージの内容を読み取るをオーケストレーションでコードを使用する場合は、XmlDocument 変数を使用しないでください。 XmlDocument 変数にメッセージを読み込み、特にサイズの大きいメッセージ用の大きなオーバーヘッドが発生します。 このオーバーヘッドは、メモリ使用量とメモリ内構造を構築する処理の観点からです。 XmlDocument インスタンスの使用は、ドキュメント オブジェクト モジュール (DOM) のオブジェクト グラフを構築するためにメモリに読み込まれる全体のメッセージの内容を強制します。 このクラスのインスタンスによって使用されるメモリの総量では、実際のメッセージ サイズの約 10 倍の時間を指定できます。 メッセージを XmlDocument 変数に読み込むときに必要なメモリ使用量の詳細については、[第 9 章 – XML パフォーマンスの向上](http://go.microsoft.com/fwlink/?LinkId=139772)(http://go.microsoft.com/fwlink/?LinkId=139772) msdn を参照してください。   
+メッセージの内容を読み取るをオーケストレーションでコードを使用する場合は、XmlDocument 変数を使用しないでください。 XmlDocument 変数にメッセージを読み込み、特にサイズの大きいメッセージ用の大きなオーバーヘッドが発生します。 このオーバーヘッドは、メモリ使用量とメモリ内構造を構築する処理の観点からです。 XmlDocument インスタンスの使用は、ドキュメント オブジェクト モジュール (DOM) のオブジェクト グラフを構築するためにメモリに読み込まれる全体のメッセージの内容を強制します。 このクラスのインスタンスによって使用されるメモリの総量では、実際のメッセージ サイズの約 10 倍の時間を指定できます。 メッセージを XmlDocument 変数に読み込むときに必要なメモリ使用量の詳細については、次を参照してください。[第 9 章 – XML パフォーマンスの向上](http://go.microsoft.com/fwlink/?LinkId=139772)(http://go.microsoft.com/fwlink/?LinkId=139772) msdn です。   
 このトピックの残りの部分は、XmlDocument 変数へのメッセージの読み込みを必要としないメッセージの内容を読み取るための代替方法を提供します。  
   
 ## <a name="use-streaming-when-sending-or-receiving-large-messages-with-a-wcf-transport"></a>WCF トランスポートを使用してサイズの大きいメッセージを送受信する際にストリーミングを使用して、  

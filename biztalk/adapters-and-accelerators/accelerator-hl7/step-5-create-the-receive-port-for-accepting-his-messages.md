@@ -1,5 +1,5 @@
 ---
-title: '手順 5: 作成、受信ポートの HIS メッセージを受け入れる |Microsoft Docs'
+title: 手順 5:作成、受信ポートの HIS メッセージを受け入れる |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,14 +14,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dba867ef4b02be3ecc2102754e4d06105a56d03c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ec438b05e7e1e684f66d8f25d3d5692260a9fa5c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37002411"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65287995"
 ---
-# <a name="step-5-create-the-receive-port-for-accepting-his-messages"></a>手順 5: 作成、彼のメッセージを受け入れるための受信ポート
+# <a name="step-5-create-the-receive-port-for-accepting-his-messages"></a>手順 5:作成、彼のメッセージを受け入れるための受信ポート
 この手順では、病院情報システム (HIS) によって送信される受信メッセージの場所を指定する受信ポートを作成します。 次の手順を使用すると、最小限の下位レイヤー プロトコル (MLLP) アダプターを使用して ADT system からのクエリ応答メッセージを受け付ける受信ポートを作成できます。  
 
 ## <a name="create-the-hisreceiveport-receive-port"></a>作成、HIS_ReceivePort 受信ポート  
@@ -65,4 +65,4 @@ ms.locfileid: "37002411"
 12. 右クリックし、作成した受信場所を有効にし、**を有効にする**します。  
 
 ## <a name="next-step"></a>次の手順  
-[手順 6: クエリ メッセージを配信する送信ポートの作成](../../adapters-and-accelerators/accelerator-hl7/step-6-create-a-send-port-to-deliver-query-messages.md)
+[手順 6:クエリ メッセージを配信する送信ポートの作成](../../adapters-and-accelerators/accelerator-hl7/step-6-create-a-send-port-to-deliver-query-messages.md)

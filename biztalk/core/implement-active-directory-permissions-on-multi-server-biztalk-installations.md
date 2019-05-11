@@ -12,21 +12,21 @@ caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1d8fbd37438ef41c29ec2503a384fb3afff1545e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: dad79e7e3003f8ee66aab0838b10f44f8b519258
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37006787"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65332506"
 ---
 # <a name="guidelines-for-implementing-active-directory-permissions-on-multi-server-biztalk-installations"></a>複数サーバーの BizTalk インストールでの Active Directory アクセス許可の実装に関するガイドライン
-このトピックでは、Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] インストールで使用するユーザー アカウントとグループから構成される Active Directory 組織単位を作成する際のガイドラインを示します。  
+このトピックでは、Active Directory 組織単位をユーザー アカウントと、Microsoft で使用するグループの構成を作成するためのガイドラインを説明します。[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]インストールします。  
   
- ここに作成されたアカウントは、ドメインにおいて一般ユーザーのアクセス許可以上のアクセス許可を必要としません。 このドメイン アカウントは、次に示す信頼の境界内では高度な特権を必要とする場合があります。  
+ ここに作成されたアカウントでは、通常のユーザーのもの以外のドメインのアクセス許可は必要ありません。 ドメイン アカウントが含まれる信頼境界内で昇格された特権を必要があります。  
   
 - [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]  
   
-- Microsoft [!INCLUDE[btsSharePointSvcsNoVersion](../includes/btssharepointsvcsnoversion-md.md)] ([!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] サーバー上)  
+- Microsoft [!INCLUDE[btsSharePointSvcsNoVersion](../includes/btssharepointsvcsnoversion-md.md)] (上、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] server)  
   
 - Microsoft [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]  
   
@@ -36,37 +36,37 @@ ms.locfileid: "37006787"
   
 - 外部データベース*N*  
   
-  たとえば、ドメイン アカウントには、外部データベースをホストしているシステムで特定のアクションを実行する権限を付与する必要が生じる場合があります。 また、アカウントは、ファイル ドロップ フォルダーにファイルを書き込む必要があることもあり、この場合は、そのフォルダーへの書き込みアクセス許可が必要になります。  
+  たとえば、ドメイン アカウントでは、外部データベースをホストしているシステム上の特定のアクションを実行する権限を付与する必要があります。 別のケースでは、アカウントをフォルダーへの書き込みアクセスを必要とする、ファイル ドロップ フォルダーにファイルを書き込む必要があります。  
   
   使用して、 **Active Directory ユーザーとコンピューター**コンソールを作成してドメイン ユーザーおよびグループ アカウントを管理します。 クリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**管理ツール**、順にクリックします**Active Directory ユーザーとコンピューター**に開始、 **Active Directory ユーザーとコンピューター**コンソール。  
   
 ## <a name="biztalk-server-installation-and-configuration-account"></a>BizTalk Server のインストールと構成のアカウント  
- 開発環境で、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] インストール プログラムと [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 構成ウィザードを実行するには、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] システムおよび [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] システムの管理権限を持つアカウントを使用する必要があります。 セットアップと構成の完了後すぐに、権限を取り消したり、アカウントを無効にしたりすることができます。 アカウントは、いくつかの BizTalk グループに属する必要もあります。これについては、次のセクションで説明します。  
+ 開発環境で、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]インストール プログラムと[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]構成ウィザードで管理者権限を持つアカウントを使用する必要、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]と[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]システム。 権限を取り消すにはまたはのセットアップと構成が完了するとすぐに、アカウントが無効にします。 アカウントは、次のセクションで説明したいくつかの BizTalk グループにも属する必要があります。  
   
 > [!NOTE]
->  インストールに使用するアカウントがサーバーと異なる Active Directory フォレストに属している場合、SSO コンポーネントを構成することはできません。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] インストーラー アカウントがない場合は、SSO 構成用のローカル管理者アカウントを使用します。 この方法では、インストール中に、別の資格情報を使用してリソースにログオンすることが必要になるなど、別の問題が発生する可能性があります。  
+>  インストールに使用されるアカウントは、サーバーは異なる Active Directory フォレストに属している場合は、SSO コンポーネントを構成することはできません。 ない場合、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]インストーラー アカウントは、SSO 構成用のローカル管理者アカウントを使用します。 この方法論では、別の資格情報を使用してリソースにログオンする必要があるなどのインストール中に、その他の問題を作成できます。  
   
-## <a name="biztalk-server-development-accounts"></a>BizTalk Server 開発アカウント  
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 開発を行うユーザーは、アダプター、受信ハンドラーと送信ハンドラー、および受信場所へのアクセスが必要です。 このアクセスがドメインの開発者グループのメンバーである必要があります、 **BizTalk Server 管理者**と**SSO 関連管理者**グループ。  
+## <a name="biztalk-server-development-accounts"></a>BizTalk Server 開発アカウントします。  
+ 行うユーザー[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]開発アダプターへのアクセスを必要と、受信し送信ハンドラー、および受信場所。 このアクセスがドメインの開発者グループのメンバーである必要があります、 **BizTalk Server 管理者**と**SSO 関連管理者**グループ。  
   
 > [!NOTE]
->  Active Directory では、外部のドメイン ユーザーを含むことができるグループの種類と他のグループに含まれることが可能なグループの種類に関して制限があります。 以下で作成するグループとアカウントは、単一ドメインのマルチサーバー環境でテストされます。  
+>  Active Directory には、外部ドメインのユーザーを含むことのできるグループの種類とその他のグループに格納できるグループの種類に関する制限があります。 グループとの下に作成されたアカウントは、1 つのドメインのマルチ サーバー環境でテストされます。  
   
-## <a name="biztalk-server-deployment-accounts"></a>BizTalk Server 展開アカウント  
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] アプリケーションを展開するユーザーは、ローカル システムの管理者である必要があり、その環境の他のアクセス許可が必要になる場合もあります。 BizTalk Server 展開アカウントをこのトピックで示しているのはこのためです。  
+## <a name="biztalk-server-deployment-accounts"></a>BizTalk Server 展開アカウントします。  
+ 展開するユーザー[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]アプリケーションは、システムのローカル管理者である必要があり、環境内の他のアクセス許可を必要があります。 BizTalk Server 展開アカウントは、この目的のため、このトピックで参照されます。  
   
  このアクセスがドメインの配置グループのメンバーである必要があります、 **BizTalk Server 管理者**と**SSO 関連管理者**グループ。  
   
 > [!NOTE]
->  インストールに使用するアカウントがサーバーと異なる Active Directory フォレストに属している場合、SSO コンポーネントを構成することはできません。 BizTalk Server 展開アカウントがない場合は、SSO 構成用のローカル管理者アカウントを使用します。 この方法では、インストール中に、別の資格情報を使用してリソースにログオンすることが必要になるなど、別の問題が発生する可能性があります。  
+>  インストールに使用されるアカウントは、サーバーは異なる Active Directory フォレストに属している場合は、SSO コンポーネントを構成することはできません。 BizTalk Server 展開アカウントがいない場合は、SSO 構成用ローカル管理者アカウントを使用します。 この方法論では、別の資格情報を使用してリソースにログオンする必要があるなどのインストール中に、その他の問題を作成できます。  
   
-## <a name="biztalk-server-support-accounts"></a>BizTalk Server サポート アカウント  
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] アプリケーションをサポートするユーザーは、ローカル システムの管理者である必要があります。 BizTalk サポート アカウントをこのトピックで示しているのはこのためです。  
+## <a name="biztalk-server-support-accounts"></a>BizTalk Server サポート アカウントします。  
+ サポートしている個人[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]アプリケーションをシステムのローカル管理者である必要があります。 BizTalk サポート アカウントは、この目的のため、このトピックで参照されます。  
   
  このアクセスが、ドメインのサポート グループのメンバーである必要があります、 **BizTalk Server 管理者**グループ。  
   
 ## <a name="sql-server-service-accounts"></a>SQL Server サービス アカウント  
- [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] インスタンスを実行しているサービスは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] コンポーネントのインストール、開発、展開を行うアカウントと同じ Active Directory ドメインに属している必要があります。  
+ サービスの実行、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]インスタンスは、インストール、開発、および展開アカウントと同じ Active Directory ドメインに属している必要があります[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]コンポーネント。  
   
 - 使用**SQLAdmin**管理機能 (対話型ログオン)。  
   
@@ -74,40 +74,40 @@ ms.locfileid: "37006787"
   
 - 使用**SQLAccess**外部データベースにアクセスします。  
   
-- SQLAdmin は、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] システムのローカル管理者グループのメンバーである必要があります。  
+- SQLAdmin にローカルの Administrators グループのメンバーである必要があります、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]システム。  
   
 - SQLService でローカルの Administrators グループのメンバーである必要があります、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]システムと付与する必要がある、**サービスとしてログオン**ユーザー権限。  
   
-- SQLAccess には、リモート データベース サーバーに対する適切な権限が必要です。  
+- SQLAccess には、リモート データベース サーバーに対する適切な権限が必要があります。  
   
   **SQL アカウント:**  
   
 |**ユーザー名**|**[First Name]**|**[Last Name]**|**[名前]**|  
 |-------------------|--------------------|-------------------|-------------------|  
 |SQLService |SQL|SQLService |SQL サービス アカウント|  
-|SQLAdmin|管理|SQLService |SQL Admin アカウント|  
-|SQLAccess|アクセス|SQLService |SQL アクセス アカウント|  
+|SQLAdmin|管理|SQLService |SQL 管理者アカウント|  
+|Sqlaccess に|アクセス|SQLService |SQL アクセス アカウント|  
   
  社内基準に従ってアカウントのパスワードを設定します。  
   
 > [!IMPORTANT]
->  [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] を実行しているコンピューターで、SQLService アカウントと資格情報を使用するように SQL Server サービスおよび SQLServerAgent サービスのスタートアップ パラメーターを変更します。  
+>  実行するコンピューターで[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]、SQLService アカウントと資格情報を使用する SQL Server および SQLServerAgent サービス起動時のパラメーターを変更します。  
 > 
 > [!NOTE]
->  "ユーザー名" フィールドはサンプルです。他の Active Directory アカウントとの競合しないよう必要に応じて名前を変更します。  
+>  ユーザー名フィールドはサンプルです。その他の Active Directory アカウントと競合するを回避するために名前を変更する必要があります。  
   
 ## <a name="windows-sharepoint-services-account"></a>Windows SharePoint Services アカウント  
- Windows SharePoint Services アカウントは、[!INCLUDE[btsSharePointSvcsNoVersion](../includes/btssharepointsvcsnoversion-md.md)] をインストールする前に作成されている必要があります。  
+ インストールする前に、Windows SharePoint Services アカウントを作成する必要があります[!INCLUDE[btsSharePointSvcsNoVersion](../includes/btssharepointsvcsnoversion-md.md)]します。  
   
- [!INCLUDE[btsSharePointSvcsNoVersion](../includes/btssharepointsvcsnoversion-md.md)] アカウントに関する推奨事項と注意事項を次に示します。  
+ 推奨事項とに関する注意事項、[!INCLUDE[btsSharePointSvcsNoVersion](../includes/btssharepointsvcsnoversion-md.md)]アカウント。  
   
-- SharePoint Admin アカウント (SPAdmin) は、管理機能、SharePoint Timer Service およびすべての [!INCLUDE[btsSharePointSvcsNoVersion](../includes/btssharepointsvcsnoversion-md.md)] アクセスに使用します。  
+- SharePoint Admin アカウント (SPAdmin) を使用して、管理機能、SharePoint Timer Service とそのすべての[!INCLUDE[btsSharePointSvcsNoVersion](../includes/btssharepointsvcsnoversion-md.md)]アクセスします。  
   
-- SPAdmin はサイト所有者で、電子メール エイリアスが必要になります。  
+- SPAdmin はサイト所有者であり、電子メール エイリアスは必要があります。  
   
-- SPAdmin は、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] コンピューターのローカル管理者グループのメンバーである必要があります (これは、Windows SharePoint Services セットアップで行います)。  
+- SPAdmin は、ローカルのローカルの administrators グループのメンバーである必要があります[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]コンピューター (Windows SharePoint Services のセットアップは、これを行います)。  
   
-- SPAdmin は、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] コンピューターのセキュリティ管理者ロールとデータベース作成者ロールを持っている必要があります (これは、Windows SharePoint Services セットアップで行います)。  
+- SPAdmin は、セキュリティ管理者とデータベース作成者ロールをいる必要があります、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]コンピューター (Windows SharePoint Services のセットアップは、これを行います)。  
   
   **Sharepoint アカウント:**  
   
@@ -115,31 +115,31 @@ ms.locfileid: "37006787"
 |-------------------|--------------------|-------------------|-------------------|  
 |SPAdmin|管理|SPService|SharePoint Admin アカウント|  
   
- 社内基準に従ってアカウントのパスワードを設定し、構成手順の間にこのパスワードを取得できるようにします。 参照してください、**パスワード**に関する問題については、このトピックのセクションで生成されたパスワード。  
+ 社内基準に従ってアカウントのパスワードを設定し、構成手順中にこれらのパスワードを取得できるようにします。 参照してください、**パスワード**に関する問題については、このトピックのセクションで生成されたパスワード。  
   
 > [!NOTE]
->  この "ユーザー名" フィールドはサンプルです。他の AD アカウントを保護するため必要に応じてこの名前を変更します。  
+>  このユーザー名フィールドはサンプルです。その他の AD アカウントを保護するには、この名前を変更する必要があります。  
 > 
 > [!IMPORTANT]
->  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を実行しているコンピューターに Windows SharePoint Services をインストールしたら、SharePoint Timer Service のスタートアップ パラメーターが SPAdmin アカウントと資格情報を使用していることを確認します。  
+>  Windows SharePoint Services を実行しているコンピューターにインストールした後[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]、SharePoint Timer Service の起動時のパラメーターが SPAdmin アカウントと資格情報を使用していることを確認します。  
   
-## <a name="biztalk-groups-and-users"></a>BizTalk のグループとユーザー  
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のグループとユーザーは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 構成ウィザードを実行する前に作成されている必要があります。 単一システム インストールの [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、構成時に作成されたローカル グループとローカル アカウントを使用します。 ただし、別に [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ホストを展開している場合、または [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] と [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] を 2 つの異なるコンピューターにインストールしている場合は、ドメイン ユーザー アカウントとドメイン グループ アカウントを使用する必要があります。  
+## <a name="biztalk-groups-and-users"></a>BizTalk グループとユーザー  
+ [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] グループとユーザーは、実行する前に作成する必要があります、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]構成ウィザード。 単一システムのインストールで[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ローカル グループと構成中に作成されるアカウントを使用します。 ただし、別[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ホストが展開されている場合、または[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]と[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]がインストールされている 2 つの異なるコンピューター上には、ドメイン ユーザーおよびグループ アカウントを使用する必要があります。  
   
 > [!NOTE]
->  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 構成ウィザードでは、ドメイン アカウントを作成できません。  
+>  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]構成ウィザードは、ドメイン アカウントを作成できません。  
   
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] サービス アカウントとユーザー アカウントに関する推奨事項と注意事項を次に示します。  
+ 推奨事項と注意で[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]サービスとユーザー アカウント。  
   
-- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の組織単位 (OU) を作成します。 アカウントとグループは、すべてこの OU に属することになります。  
+- 組織単位 (OU) を作成する[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]します。 すべてのアカウントとグループは、この OU に属しています。  
   
-- フル ネームはわかりやすいものにします。次の表の名前は、構成時にインストーラーが適切なグループ/アカウント/ユーザーを選択できるようにする必要があります。  
+- わかりやすいもの; の完全名にします。次の表の名前には、構成時に適切なグループ/アカウント/ユーザーを選択するインストーラーが有効にする必要があります。  
   
-- 名と姓は省略可能で、単に一貫性のために用意されています。  
+- 名と姓は省略可能です。整合性のみに含まれています。  
   
 - 差別化要因**BTService**と**BTUser**はサービス アカウント (オートマトン) と汎用/共有の人間のユーザーを指します。  
   
-- ドメイン アカウントを作成して、アップ ラインの環境用のユーザー アカウントとグループ アカウントを生成するための ADSI スクリプトで、そのドメイン アカウントを設定します。  
+- ドメイン アカウントを作成し、ユーザーの ADSI スクリプトとアップ ラインの環境のグループ アカウントの作成を使用してそれらを設定します。  
   
   **BizTalk サービス アカウントします。**  
   
@@ -151,11 +151,11 @@ ms.locfileid: "37006787"
 |SSOService|SSO|BTService|エンタープライズ シングル サインオン サービス|  
 |BTServiceREU|REU|BTService|ルール エンジン更新サービス|  
   
- 社内や環境の基準に従ってユーザー名を設定します (devBTService、alphaBTService など)。 社内基準に従ってアカウントのパスワードを設定し、構成手順については、それらを取得できるようにします。 参照してください、**開発用のパスワードに関する考慮事項**に関する問題については、このトピックのセクションで生成されたパスワード。  
+ 会社と (たとえば、devBTService、alphabtservice など) 環境の基準に従ってユーザー名を設定します。 社内基準に従ってアカウントのパスワードを設定し、構成手順については、それらを取得できるようにします。 参照してください、**開発用のパスワードに関する考慮事項**に関する問題については、このトピックのセクションで生成されたパスワード。  
   
- インストール時、サービス アカウントが非常に細分化されており、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] で作成されるサービスとほぼ一対一でマッピングされていることを確認できます。 この細分化により、企業の IT セキュリティでは、必要に応じてアクセスを追跡したり制限したりできます。 アカウントは細分化することをお勧めしますが、エンタープライズ環境で必要かどうかは、システム デザイナーや企業のセキュリティ担当者の判断によります。  
+ インストーラーは、サービス アカウントが、非常に細分化された、によって作成されたサービスにほぼ一対一のマッピングに注意してください。[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]します。 粒度は、企業の IT セキュリティを追跡したり、必要に応じてアクセスを制限したりできます。 粒度を使用することをお勧めしますが、エンタープライズ環境で必要があるかを判断するには、システム デザイナーや企業のセキュリティ担当者の責任です。  
   
- 前のグループのサービス アカウントは、自動アクセス専用で、ユーザーによる対話形式でのログオンは想定していません。  
+ 前のグループのサービス アカウントは自動アクセス専用に、ユーザーが対話型ログオンの対象としています。  
   
 #### <a name="to-set-the-appropriate-account-options"></a>適切なアカウント オプションを設定するには  
   
@@ -183,7 +183,7 @@ ms.locfileid: "37006787"
   
 10. をクリックして**OK**を閉じる、**プロパティ**アカウントのダイアログ ボックス。  
   
-11. 各サービス アカウントについて、手順 3. ～ 10. を繰り返します。  
+11. サービス アカウントごとに手順 3 ~ 10 を繰り返します。  
   
     **BizTalk ユーザー アカウントします。**  
   
@@ -191,12 +191,12 @@ ms.locfileid: "37006787"
 |-------------------|--------------------|-------------------|-------------------|  
 |BTUserAdmin|管理|BTUser|BizTalk 管理ユーザー アカウント|  
 |BTUserDeploy|配置|BTUser|BizTalk 展開ユーザー アカウント|  
-|BTUserHostInstance|HostInstance|BTUser|BizTalk ホスト インスタンス アカウント|  
+|BTUserHostInstance|しています|BTUser|BizTalk ホスト インスタンス アカウント|  
 |BTUserHostIsolated|IsolatedlHost|BTUser|BizTalk 分離ホスト インスタンス アカウント|  
 |BTUserInstall|インストール|BTUser|BizTalk インストール ユーザー アカウント|  
 |BTUserSupport|サポート|BTUser|BizTalk サポート アクセス アカウント|  
   
-#### <a name="to-set-the-appropriate-account-options-follow-these-steps"></a>適切なアカウント オプションを設定するには、次の手順を実行します。  
+#### <a name="to-set-the-appropriate-account-options-follow-these-steps"></a>オプションを適切なアカウントを設定するには、以下の手順  
   
 1. **Active Directory ユーザーとコンピューター**コンソールをクリックして、ドメインを展開しをクリックして展開、**ユーザー**コンテナー。  
   
@@ -222,43 +222,43 @@ ms.locfileid: "37006787"
   
 10. をクリックして**OK**を閉じる、**プロパティ**アカウントのダイアログ ボックス。  
   
-11. 各ユーザー アカウントについて、手順 3. ～ 10. を繰り返します。  
+11. ユーザー アカウントごとに手順 3 ~ 10 を繰り返します。  
   
     > [!NOTE]
-    >  提供されるロールが現行のユーザーに割り当てられている場合、設定したアカウントは任意で無効にすることができます。 リリース 1 とリリース 2 の初期段階では、これらのアカウントは、開発環境、アルファ テスト環境、ベータ テスト環境で使用されることを前提としています。  
+    >  提供されるロールは、実際のユーザーに割り当てられている場合は、これらのアカウントを無効にできます。 リリース 1 と 2 つのリリースの初期の段階で開発、アルファ テスト、およびベータ版のテスト環境でこれらのアカウントを使用すると見なされます。  
   
     **BizTalk グループ アカウント**  
   
 |**グループ名**|**グループの種類**|**メンバー**|  
 |--------------------|--------------------|-----------------|  
-|BizTalk Application Users|グローバルまたはユニバーサル|-BTServiceHost<br />-BTUserHostInstance|  
-|BizTalk 開発ユーザー|グローバルまたはユニバーサル|(開発ユーザーのローカル ドメイン アカウント)**注:** ベスト プラクティスとして有効にしないアップラインの環境で BizTalk 開発ユーザー グループ。|  
+|BizTalk Application Users|グローバルまたはユニバーサル|-   BTServiceHost<br />-   BTUserHostInstance|  
+|BizTalk 開発ユーザー|グローバルまたはユニバーサル|(開発ユーザーのローカル ドメイン アカウント)**に注意してください。** ベスト プラクティスとして有効にしないアップラインの環境で BizTalk 開発ユーザー グループ。|  
 |BizTalk 展開ユーザー|グローバルまたはユニバーサル|(展開ユーザーのローカル ドメイン アカウント)|  
 |BizTalk ホスト ユーザー|グローバルまたはユニバーサル|BTUserHostInstance|  
-|BizTalk 分離ホスト ユーザー|グローバルまたはユニバーサル|-BTServiceHostIso<br />-BTUserHostInstance|  
+|BizTalk 分離ホスト ユーザー|グローバルまたはユニバーサル|-   BTServiceHostIso<br />-   BTUserHostInstance|  
 |BizTalk Server 管理者|グローバルまたはユニバーサル|-BTUserAdmin<br />-BTUserInstall<br />-BizTalk 開発ユーザー<br />BizTalk 展開ユーザー|  
 |BizTalk サポート ユーザー|グローバルまたはユニバーサル|BTUserSupport (サポート ユーザーのローカル ドメイン アカウント)|  
 |SSO 管理者|グローバルまたはユニバーサル|-SSOService<br />-BTUserInstall<br />ローカル管理者|  
-|SSO 関連管理者|グローバルまたはユニバーサル|-BizTalk 開発ユーザー<br />BizTalk 展開ユーザー<br />-BTServiceHostIso<br />-   \<コンソール ユーザー\>|  
-|Windows SharePoint Services 管理者|グローバルまたはユニバーサル|-SPAdmin<br />-BTUserInstall<br />-BTUserDeploy<br />-BizTalk 開発ユーザー<br />BizTalk 展開ユーザー|  
+|SSO 関連管理者|グローバルまたはユニバーサル|-BizTalk 開発ユーザー<br />BizTalk 展開ユーザー<br />-   BTServiceHostIso<br />-   \<コンソール ユーザー\>|  
+|Windows SharePoint Services 管理者|グローバルまたはユニバーサル|-SPAdmin<br />-BTUserInstall<br />-   BTUserDeploy<br />-BizTalk 開発ユーザー<br />BizTalk 展開ユーザー|  
   
- ドメイン グループに関する推奨事項と注意事項を次に示します。  
+ 推奨事項とドメイン グループに関する注意事項:  
   
-- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] をインストールする前に、グループを作成してメンバーを追加します。  
+- グループを作成してインストールする前にメンバーを追加する[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]します。  
   
-- ドメイン グループは、グローバル グループにもユニバーサル グループにもすることができます。  
+- ドメイン グループは、グローバルまたはユニバーサル グループにすることができます。  
   
 - 使用 *\<DomainName\>\\< ユーザー名\>* 構成ウィザードでドメイン アカウント情報を指定する場合。  
   
-- グループとユーザー アカウントおよびサービス アカウントは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] コンピューターが属しているドメインに属する必要があります (これは構成ウィザードで確認され、他のドメインのアカウントや他のドメインのアカウントを含むグループは表示されません)。  
+- グループおよびユーザー/サービス アカウントをドメインに属している必要があります、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]コンピューターが属している (構成ウィザードは、このフラグをチェックし、アカウントや他のドメイン アカウントを含むグループが表示されない)。  
   
-- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、すべてのクラスタリング シナリオに対応するドメイン アカウントが必要です。  
+- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] すべてのクラスタ リングのシナリオのドメイン アカウントが必要です。  
   
-- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のインストール時、コンソール ユーザーは次のグループのメンバーである必要があります。  
+- インストールするときに[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]コンソールのユーザーは、次のグループのメンバーである必要があります。  
   
   - BizTalk Server 管理者  
   
-  - SSO 管理者 (マスター シークレット サーバーを構成する場合のみ)  
+  - SSO 管理者 (マスタ シークレット サーバーを構成する) の場合のみ  
   
   - Windows 管理者  
   
@@ -266,79 +266,79 @@ ms.locfileid: "37006787"
   
   - OLAP 管理者  
   
-    BTUserInstall アカウントは、インストールと構成に使用し、構成が完了したら無効にする必要があります。  
+    BTUserInstall アカウントは、インストールと構成に使用する必要があり、構成が完了したら、無効にする必要があります。  
   
 - 開発者が必要、BizTalk Server 管理者グループに属している、セクションでは上記で説明したメッセージ イベントおよびサービス インスタンス追跡でオーケストレーションをデバッガーにアタッチできるように、 **BizTalk 開発アカウント**.  
   
 ## <a name="local-administrator-accounts"></a>ローカル管理者アカウント  
- [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] コンピューターで、次のアカウントとグループの中にローカル管理者グループに属していないものがあれば、追加します。  
+ 確認またはのローカル Administrators グループに次のアカウントとグループを追加、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]コンピューター。  
   
-- ドメイン\BTUserInstall (構成が完了したら無効にします)  
+- Domain\BTUserInstall (構成が完了したら無効にする)  
   
-- ドメイン\BTUserDeploy (構成が完了したら運用環境で無効にします)  
+- Domain\BTUserDeploy (展開が完了すると、実稼働環境で無効)  
   
-- ドメイン\SPAdmin  
+- Domain\SPAdmin  
   
-- ドメイン\SQLAdmin  
+- Domain\SQLAdmin  
   
-- ドメイン\SQLService  
+- Domain\SQLService  
   
 - ドメイン \biztalk 開発ユーザーが (アップ ラインの環境で省略)  
   
-- ドメイン\BizTalk 展開ユーザー (開発環境では除外します)  
+- ドメイン \biztalk 展開ユーザーが (開発環境での省略)  
   
-  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] コンピューターで、次のアカウントとグループの中にローカル管理者グループに属していないものがあれば、追加します。  
+  確認またはのローカル Administrators グループに次のアカウントとグループを追加、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]コンピューター。  
   
-- ドメイン\BTUserInstall (構成が完了したら無効にします)  
+- Domain\BTUserInstall (構成が完了したら無効にする)  
   
-- ドメイン\BTUserDeploy (構成が完了したら運用環境で無効にします)  
+- Domain\BTUserDeploy (展開が完了すると、実稼働環境で無効)  
   
-- ドメイン\BTUserSupport  
+- Domain\BTUserSupport  
   
-- ドメイン\SPAdmin  
+- Domain\SPAdmin  
   
-- ドメイン\BizTalk 開発ユーザー (アップラインの環境では除外します)  
+- ドメイン \biztalk 開発ユーザー (アップラインの環境で)  
   
-- ドメイン\BizTalk 展開ユーザー (開発環境では除外します)  
+- ドメイン \biztalk 展開ユーザーが (開発環境での省略)  
   
-## <a name="sql-server-administrator-accounts"></a>SQL Server 管理者アカウント  
- セットアップ プログラムによりインストーラーからの入力が受け付けられ、SQL ロールがユーザーとグループに割り当てられます。  
+## <a name="sql-server-administrator-accounts"></a>SQL Server の管理者アカウント  
+ セットアップ プログラムでは、インストーラーと割り当ての SQL ロールからユーザーとグループへの入力を受け入れます。  
   
-- [!INCLUDE[btsSharePointSvcsNoVersion](../includes/btssharepointsvcsnoversion-md.md)] のセットアップ中、SPAdmin アカウントには、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] コンピューターのセキュリティ管理者権限とデータベース作成者権限が付与されます。 SPAdmin アカウントがローカル管理者グループのメンバーの場合、この権限を削除することができます。  
+- 中に[!INCLUDE[btsSharePointSvcsNoVersion](../includes/btssharepointsvcsnoversion-md.md)]セットアップ、SPAdmin アカウント権限が与えられますセキュリティ管理者とデータベース作成者で、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]コンピューター。 SPAdmin アカウントがローカルの Administrators グループのメンバーである場合、これらの権利を削除できます。  
   
 ## <a name="e-mail-account"></a>電子メール アカウント  
- [!INCLUDE[btsSharePointSvcsNoVersion](../includes/btssharepointsvcsnoversion-md.md)] は、特定のシステム イベントに基づいてメールを送信します。 構成時に、電子メール アドレスの入力を求めるメッセージを設定します。 セットアップと単体テストの間に、電子メール エイリアスをこの目的で作成してエイリアスを監視します。 運用環境では、システムを監視しているシステム管理者がこのアカウントにアクセスできる必要があります。  
+ [!INCLUDE[btsSharePointSvcsNoVersion](../includes/btssharepointsvcsnoversion-md.md)] 特定のシステム イベントに基づいてメールを送信します。 セットアップは、構成プロセス中に、電子メール アドレスを求めます。 この目的のための電子メール エイリアスを作成し、セットアップと単体テスト中に、エイリアスを監視します。 運用環境でこのアカウントはシステムの監視はシステム管理者によってアクセス可能にする必要があります。  
   
  によって使用される電子メール アカウント[!INCLUDE[btsSharePointSvcsNoVersion](../includes/btssharepointsvcsnoversion-md.md)]は、 **WSS 管理者の電子メール**アカウント。  
   
-## <a name="password-considerations-for-development"></a>開発時のパスワードに関する考慮事項  
- 開発環境とテスト環境では、アカウントのパスワードは標準で設定され、配布可能です。 インストーラーの標準はさまざまです。このトピックでは、サービス コンポーネントの先頭の大文字を取り、その後にアカウントの残り (サービスまたはユーザー) の小文字部分を省略したものを続けたテンプレートを使用します。 このトピックでは、サービス アカウントには 'Serv' を、ユーザー アカウントには 'User' を使用します。  
+## <a name="password-considerations-for-development"></a>開発用のパスワードに関する考慮事項  
+ 開発およびテスト環境では、アカウントのパスワードは標準で設定できるし、する再頒布可能。 インストーラーの標準が異なります。このトピックでは、先頭の大文字、小文字の省略形 (サービスまたはユーザー) のアカウントの残りの部分で後に、サービス コンポーネントを続けたテンプレートを使用します。 、サービス アカウントは、このトピックでは、このトピックでは 'User' を使用してユーザー アカウントを 'Serv' を使用します。  
   
- 以下に例を示します。  
+ 例 :  
   
-- Windows SharePoint Services (SharePoint) サービスと管理者アカウント (SPAdmin) のパスワード: 'SPServ'。  
+- Windows SharePoint Services (SharePoint) サービスと管理者アカウント (SPAdmin) のパスワード:' SPServ'。  
   
-- BizTalk サービス アカウントのパスワード: 'BTServ'。  
+- BizTalk サービス アカウントのパスワード:' BTServ'。  
   
-- BizTalk ユーザー アカウントのパスワード: 'BTUser'。  
+- BizTalk ユーザー アカウントのパスワード:' BTUser'。  
   
-  IT 環境によっては、パスワードに英字以外の文字や数字を含める必要があります。 このシナリオでは、"s" の代わりにドル記号 ($) を使用したり、"a" の代わりに アット マーク (@) を使用することもできます。 これらの記号はサンプルです。半パブリックなパスワードの共有アカウントのために、最適なパターンを開発します。  
+  一部の IT 環境では、非英数字や数字の文字を含むパスワードが必要です。 このシナリオでは、"s"とに"at"記号のドル記号 ($) を置き換えることができます (@) の"a"です。 シンボルはサンプルです。半パブリックなパスワードでアカウントを共有するのに最適なパターンを開発します。  
   
-  開発環境で使用される再配布可能なサンプル パスワードを次に示します。  
+  開発環境で使用されている再頒布可能パッケージのパスワードをサンプルは次のとおりです。  
   
-- BT$erv99           BizTalk サービス アカウント  
+- BT erv99 BizTalk サービス アカウントします。  
   
-- BTU$er99          BizTalk ユーザー アカウント  
+- BTU er99 BizTalk ユーザー アカウントします。  
   
-- SP$erv99           WSS サービス アカウント (SPAdmin)  
+- SP erv99 WSS サービス アカウント (SPAdmin)  
   
-- SQL$erv99         SQL サービス/アクセス/Admin アカウント  
-  
-> [!NOTE]
->  これらの推奨事項は開発環境、共有環境に限定されるもので、社内のパスワード ポリシーの使用を勧めたり妨げるものではありません。 パスワードの要件については、ネットワーク管理者に確認してください。  
+- SQL erv99 SQL サービス/アクセス/admin アカウント  
   
 > [!NOTE]
->  社内のパスワード ポリシーに生成されたパスワードが含まれる場合、記号やその組み合わせには XML の特殊用途の文字もあることに注意してください。 これらの文字を不適切に使用すると、構成時に、構成 XML ファイルを開けなくなります。 これらのシンボルを含める"&"、"\<「,」\>"、1 つに、二重引用符、および他のユーザーを含めることができます。 ファイル ベースの構成を実行する前に、構成 XML ファイルをテストしてください。 生成されたパスワードを埋め込んだドキュメントを Internet Explorer (または XML エディター) で開くことで、適切な XML 書式設定について、これを確実にテストすることができます。  
+>  これらの推奨事項は、開発および共有環境でのみとをお勧めしますおよびありません企業のパスワード ポリシーの使用を防止します。 ネットワーク管理者のパスワード要件を参照してください。  
+  
+> [!NOTE]
+>  企業のパスワード ポリシーには、生成されたパスワードが含まれている場合は、いくつかの記号と記号の組み合わせのどちらが XML に特殊な用途の文字であることを推奨します。 これらの文字を不適切に使用すると、構成 XML ファイルが、構成プロセス中に開かれているできなくなります。 これらのシンボルを含める"&"、"\<「,」\>"、1 つに、二重引用符、および他のユーザーを含めることができます。 ファイル ベースの構成を実行する前に、構成 XML ファイルをテストします。 これをテストする確実に適切な XML の書式設定を Internet Explorer (または XML エディター) でドキュメントを開くことで、生成されたパスワードを埋め込んだとします。  
   
  アップラインの環境でセキュリティで保護されたパスワードの展開の詳細については (テストするメソッドを含む、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]構成ファイル) を参照してください[BizTalk Server 2013 および 2013 R2 の構成の概要](http://msdn.microsoft.com/library/aa58c43f-8f0e-4a5c-89b9-db7b8a852a72)します。  
   

@@ -12,12 +12,12 @@ caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0b593161e7a4e53ec378f0a2095ff57a45ad48ab
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8916f5c33d1d96cf9a1ce579a15e1894e651f89e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36975443"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65358828"
 ---
 # <a name="as2-support-in-biztalk-server"></a>BizTalk Server における AS2 のサポート
 このトピックでは、AS2 処理と BizTalk Server がそれを実装する方法の概要を説明します。  
@@ -29,7 +29,7 @@ ms.locfileid: "36975443"
   
  AS2 は HTTP POST 操作を使用して EDI や XML などのビジネス データを送信します。 AS2 が実行する処理は EDI データの送信だけではありません。 要求 URI は、メッセージ データのアンパックやハンドリングに使用する AS2 処理を指定します。 Message Disposition Notification (MDN) は、元の送信者の URL に対する HTTP 応答メッセージの本文か、または新しい HTTP POST 操作によって、確認として返されます。  
   
- EDI メッセージングの詳細については、[AS2 メッセージング](../core/as2-messaging.md)を参照してください。  
+ EDI メッセージングの詳細については、次を参照してください。 [AS2 メッセージング](../core/as2-messaging.md)します。  
   
 ## <a name="how-as2-is-implemented-in-biztalk-server"></a>BizTalk Server での AS2 の実装方法  
  BizTalk Server には、AS2 のサポートを提供するネイティブ機能が含まれています。 この機能は、アダプターやアクセラレータなどの製品へのアドインではなく、 製品に組み込まれ、次の機能を提供します。  
@@ -50,7 +50,7 @@ ms.locfileid: "36975443"
   
 - AS2 では、HTTP アダプターが受信側と送信側の両方で使用されていることが必要です。  
   
-- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、アグリーメントごとに証明書を定義して、AS2 メッセージの既定の署名証明書をオーバーライドできます。 パーティの別の証明書を指定する方法については、[AS2 プロパティを設定する](../core/configuring-as2-properties.md)を参照してください。  
+- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、アグリーメントごとに証明書を定義して、AS2 メッセージの既定の署名証明書をオーバーライドできます。 パーティの別の証明書を指定する方法については、次を参照してください。 [AS2 プロパティを設定する](../core/configuring-as2-properties.md)します。  
   
 ## <a name="as2-components-in-biztalk-server"></a>BizTalk Server の AS2 コンポーネント  
  AS2 トランスポートに使用される BizTalk Server コンポーネントを以下に示します。  
@@ -58,21 +58,21 @@ ms.locfileid: "36975443"
 - AS2 ドキュメントの処理に必要なアイテム (パイプラインとスキーマを含む) を含めた BizTalk EDI アプリケーション。  
   
   > [!NOTE]
-  >  BizTalk Server で AS2 機能を構成するときに、構成プログラムは、このアプリケーションを作成します。 AS2 メッセージを処理するアプリケーションを作成する場合は、アプリケーションから BizTalk EDI アプリケーションへの参照を追加する必要があります。 詳細については、[、BizTalk Server EDI アプリケーションへの参照を追加する方法](http://msdn.microsoft.com/library/7af066fb-372f-4709-b566-c8d6b4a9d782)を参照してください。  
+  >  BizTalk Server で AS2 機能を構成するときに、構成プログラムは、このアプリケーションを作成します。 AS2 メッセージを処理するアプリケーションを作成する場合は、アプリケーションから BizTalk EDI アプリケーションへの参照を追加する必要があります。 詳細については、次を参照してください。 [、BizTalk Server EDI アプリケーションへの参照を追加する方法](http://msdn.microsoft.com/library/7af066fb-372f-4709-b566-c8d6b4a9d782)します。  
   
-- AS2 経由で受信した EDI メッセージについて、AS2 処理、続いて EDI 処理を実行する AS2EdiReceive パイプライン。 詳細については、[AS2 の受信コンポーネント](../core/as2-receive-components.md)を参照してください。  
+- AS2 経由で受信した EDI メッセージについて、AS2 処理、続いて EDI 処理を実行する AS2EdiReceive パイプライン。 詳細については、次を参照してください。 [AS2 の受信コンポーネント](../core/as2-receive-components.md)します。  
   
-- AS2 経由で受信した非 EDI メッセージについて、AS2 処理を実行する AS2Receive パイプライン。 詳細については、[AS2 の受信コンポーネント](../core/as2-receive-components.md)を参照してください。  
+- AS2 経由で受信した非 EDI メッセージについて、AS2 処理を実行する AS2Receive パイプライン。 詳細については、次を参照してください。 [AS2 の受信コンポーネント](../core/as2-receive-components.md)します。  
   
-- AS2 経由で送信している EDI メッセージについて、EDI 処理、続いて AS2 処理を実行する AS2EdiSend パイプライン。 詳細については、[AS2 送信コンポーネント](../core/as2-send-components.md)を参照してください。  
+- AS2 経由で送信している EDI メッセージについて、EDI 処理、続いて AS2 処理を実行する AS2EdiSend パイプライン。 詳細については、次を参照してください。 [AS2 送信コンポーネント](../core/as2-send-components.md)します。  
   
-- AS2 経由で送信している非 EDI メッセージについて、AS2 処理を実行する AS2Send パイプライン。 詳細については、[AS2 送信コンポーネント](../core/as2-send-components.md)を参照してください。  
+- AS2 経由で送信している非 EDI メッセージについて、AS2 処理を実行する AS2Send パイプライン。 詳細については、次を参照してください。 [AS2 送信コンポーネント](../core/as2-send-components.md)します。  
   
-- AS2 ドキュメントのトランスポートに関与する取引先の処理プロパティを設定できる取引先管理 (TPM) のユーザー インターフェイス。 詳細については、[AS2 処理におけるアグリーメントのロール](../core/the-role-of-agreements-in-as2-processing.md)と**EDI および AS2 UI** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]を参照してください。
+- AS2 ドキュメントのトランスポートに関与する取引先の処理プロパティを設定できる取引先管理 (TPM) のユーザー インターフェイス。 詳細については、次を参照してください。 [AS2 処理におけるアグリーメントのロール](../core/the-role-of-agreements-in-as2-processing.md)と**EDI および AS2 UI** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]します。
   
-- AS2 インターチェンジおよび関連する確認の包括的な状態を提供する状態レポートのユーザー インターフェイス。 詳細については、[EDI および AS2 状態レポート](../core/edi-and-as2-status-reporting.md)を参照してください。  
+- AS2 インターチェンジおよび関連する確認の包括的な状態を提供する状態レポートのユーザー インターフェイス。 詳細については、次を参照してください。 [EDI および AS2 状態レポート](../core/edi-and-as2-status-reporting.md)します。  
   
-- 移行ツール (パーティ移行ツール) には、BizTalk Server 2006 R2 または BizTalk Server 2009 から BizTalk server の AS2 プロパティを含むパーティ データを移行することができます。 詳細については、[EDI アイテムを BizTalk Server の以前のバージョンから移行](http://msdn.microsoft.com/library/b956a97e-03d0-47ea-a2ce-c07a339c0f2c)を参照してください。  
+- 移行ツール (パーティ移行ツール) には、BizTalk Server 2006 R2 または BizTalk Server 2009 から BizTalk server の AS2 プロパティを含むパーティ データを移行することができます。 詳細については、次を参照してください。 [EDI アイテムを BizTalk Server の以前のバージョンから移行](http://msdn.microsoft.com/library/b956a97e-03d0-47ea-a2ce-c07a339c0f2c)します。  
   
 ## <a name="see-also"></a>参照  
  [AS2 ソリューションのアーキテクチャ](../core/as2-solution-architecture.md)   

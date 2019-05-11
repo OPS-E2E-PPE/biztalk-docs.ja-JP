@@ -15,12 +15,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8f481a5f71ea5677165390177eb809239961eb9e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1e0d5406ceb728d28906665fff262edab1623e3f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37018437"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65372434"
 ---
 # <a name="troubleshoot-issues-with-the-data-provider-for-sap"></a>Data Provider for SAP に関する問題をトラブルシューティングします。
 このセクションを使用する場合に発生する可能性のある操作のエラーを解決するのには、トラブルシューティングの手法を使用して説明します[!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)]します。  
@@ -40,7 +40,7 @@ Microsoft.Data.SAPClient.SAPException: Failed to retrieve data from SAP server -
   
  **解決方法**  
   
- カスタム RFC を最新のバージョンに更新する必要があります。 この RFC、Z_EXTRACT_DATA_OO は、adapterpacknoversion 利用できます。 インストールおよびカスタム RFC をアンインストールする方法の詳細については、[Data Provider for SAP のインストールのカスタム Rfc](../../adapters-and-accelerators/adapter-sap/install-custom-rfcs-for-the-data-provider-for-sap.md)を参照してください。
+ カスタム RFC を最新のバージョンに更新する必要があります。 この RFC、Z_EXTRACT_DATA_OO は、adapterpacknoversion 利用できます。 インストールおよびカスタム RFC をアンインストールする方法の詳細については、次を参照してください。 [Data Provider for SAP のインストールのカスタム Rfc](../../adapters-and-accelerators/adapter-sap/install-custom-rfcs-for-the-data-provider-for-sap.md)します。
   
 ##  <a name="BKMK_SAPOOM"></a> メモリ不足例外が SAP テーブルからデータを選択するときに  
  **問題**  

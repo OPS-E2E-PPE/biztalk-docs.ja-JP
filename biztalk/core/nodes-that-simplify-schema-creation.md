@@ -1,5 +1,5 @@
 ---
-title: スキーマの作成を簡略化するノード |Microsoft ドキュメント
+title: スキーマの作成を簡略化するノード |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,18 +12,18 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b013149d6ee501d0553f2d01698a862df2a50393
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 828edd04320b0986ab54289ec18e76c7b70464a6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22263210"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65325111"
 ---
-# <a name="nodes-that-simplify-schema-creation"></a>スキーマの作成を単純化するノード
-スキーマの作成を単純化するノードには、2 つの種類があります。これらのノードでは、他のカテゴリへの分類を無視して、スキーマの作成を単純化します。 最初のようなノード、**スキーマ**、ノードに対応、**スキーマ**XML スキーマ定義 (XSD) 言語は、すべての XSD スキーマで最も外側の要素として機能する要素内の要素。  
+# <a name="nodes-that-simplify-schema-creation"></a>ノードをスキーマの作成を簡略化します。
+スキーマの作成を簡略化するノードは、2 つのノード型、その他のカテゴリに分類を無視して、スキーマの作成を簡略化できるその他のカテゴリ。 最初、このようなノード、**スキーマ**、ノードに対応、**スキーマ**XML スキーマ定義 (XSD) 言語は、すべての XSD スキーマで最も外側の要素として機能する要素内の要素。  
   
- もう 1 つの単純化ノードには、さらに重要な機能があります。 **属性グループ**対応のノードに直接、 **attributeGroup** XSD、内の要素および関連する属性は、常に、内で同時に、1 つのグループを定義するためのメカニズムを提供場所、スキーマ全体で複数の場所でそのグループの定義を使用してください。 以降では、これらのノードについて詳しく説明します。  
+ その他の単純化ノードは、この点で重要な役割を果たします。 **属性グループ**対応のノードに直接、 **attributeGroup** XSD 内の要素および関連する属性は、常に 1 つの同時発生のグループを定義するためのメカニズムを提供します。場所と、スキーマ全体で複数の場所でそのグループの定義を使用します。 このセクションの残りの部分は、これらのノードに関する追加情報を提供します。  
   
 ## <a name="next"></a>Next
-- [スキーマ ノード](schema-node.md)  
--   [属性グループ ノード](../core/attribute-group-nodes.md)
+- [[スキーマ] ノード](schema-node.md)  
+-   [[属性グループ] ノード](../core/attribute-group-nodes.md)

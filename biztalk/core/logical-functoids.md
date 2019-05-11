@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 873e2b0ea1189586f9cabfbcb43c6ef276f34e0f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5b4fd7b2a38a5a5b4a8bbeb64ffd248502dcdb61
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37007595"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65328309"
 ---
 # <a name="logical-functoids"></a>論理演算 Functoid
 
@@ -30,7 +30,7 @@ ms.locfileid: "37007595"
 
    これらの functoid と組み合わせて使用することもできます、**ループ**functoid を何回、レコードのループを構成します。  
 
-- 実行時に特定のレコードを送信先インスタンス メッセージに作成するかどうかを制御します。 などの Functoid **IsNil**、**数値検査**、**未満**、および**より大きい**レコードが作成されたかどうか、コントロールを使用できます。  
+- 実行時に、送信先インスタンス メッセージに特定のレコードが作成されたかどうかを制御します。 などの Functoid **IsNil**、**数値検査**、**未満**、および**より大きい**レコードが作成されたかどうか、コントロールを使用できます。  
 
    これらの論理演算 functoid のいずれかの結果が**True**、送信先インスタンス メッセージに対応するレコードが生成されます。 結果は場合**False**を送信先インスタンス メッセージに対応するレコードは生成されません。  
 
@@ -44,13 +44,13 @@ ms.locfileid: "37007595"
 >  2 つの異なる 2 つのレコードまたは送信元スキーマ内のフィールドをリンクする場合**論理**functoid、し、それぞれのリンク、**論理**functoid を送信先スキーマで同じレコード最初のみ**論理**functoid ので、生成された XSLT Extensible Stylesheet Language Transformations () を使用します。 2 番目のリンクの 2 番目の**論理**functoid は無視されます。  
 
 > [!NOTE]
->  論理演算 functoid は、2 つの文字列を比較するときに大文字小文字を区別します。 たとえば、"Abc" と "abc" は、同じではありません。 このルールの例外は**論理**functoid は、ブール値を表す文字列を比較**True**と**False**します。 たとえば、"True" と "true" は同じです。  
+>  論理演算 functoid は、2 つの文字列を比較するときに大文字小文字を区別します。 たとえば、"Abc"と"abc"は等しくありません。 このルールの例外は**論理**functoid は、ブール値を表す文字列を比較**True**と**False**します。 たとえば、"True"と"true"は等しくなります。  
 
 ## <a name="available-functoids"></a>使用可能な functoid  
  **論理**functoid には。 
 
 * 等号
-* より大きい
+* 大きい
 * 大きいまたは等しい
 * IsNil
 * 小さい
@@ -58,7 +58,7 @@ ms.locfileid: "37007595"
 * 論理積
 * 日付検査
 * 論理的な実体
-* 論理否定
+* 論理 NOT
 * 数値検査
 * 論理和
 * 文字列検査

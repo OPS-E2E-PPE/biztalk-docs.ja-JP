@@ -21,23 +21,23 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2f9d0288defa0705c7e12f102011edbf9ee7e90d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 426884dd700ad5b7862b5c191339b8ca49388232
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36984723"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65282611"
 ---
 # <a name="public-processes"></a>パブリック プロセス
-Microsoft[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]パブリック プロセスとして取引先との統合に関係するビジネス プロセスを実装します。 組織内部のビジネス プロセスは、プライベート プロセスとして実装されます。 パブリック プロセスとプライベート プロセスを使用することで、RNIF (RosettaNet Implementation Framework) の処理 (パブリック プロセス内) は、Service Content 処理とバックエンドの統合 (プライベート プロセス内) から独立します。  
+Microsoft[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]パブリック プロセスとして取引先との統合に関係するビジネス プロセスを実装します。 プライベート プロセスとして、組織の内部ビジネス プロセスを実装します。 パブリックおよびプライベート プロセスを使用して、service content 処理とバックエンド統合 (プライベート プロセス) 内から Framework RNIF (RosettaNet Implementation) (パブリック プロセス) 内の処理を分離します。  
   
- [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] では、長期にわたって実行される BizTalk オーケストレーションとして、パブリック プロセスを実装しています。 1 つのパブリック プロセスのオーケストレーションは開始側で実行され、もう 1 つのオーケストレーションは応答側で実行されます。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] セットアップ プログラムからは、RNIF 1.1 および RNIF 2.01 用の開始側パブリック プロセス オーケストレーションと応答側パブリック プロセス オーケストレーションの各バージョンが提供されます。  
+ [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] パブリック プロセスは、長時間実行される BizTalk オーケストレーションとして実装します。 1 つのパブリック プロセス オーケストレーションは、発信側と応答側のいずれかで実行されます。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]セットアップ プログラムは、イニシエーターとレスポンダーのバージョンの RNIF 1.1 および RNIF 2.01 用のパブリック プロセス オーケストレーションを提供します。  
   
- これらのパブリック プロセス オーケストレーションにより、すべての RNIF プロセスが実装されます。 パブリック プロセスでは、RNIF の複雑な部分はコンポーネントの他の部分からは見えないようになっています。 パブリック プロセスは RNIF 準拠のメッセージの流れをスムーズにするだけでなく、既定の追跡設定を指定し、実行時にプロセス状態に関する情報を提供します。 メッセージの Service Content は処理されません。 これは、プライベート プロセスが行います。  
+ これらのパブリック プロセス オーケストレーションは、すべての RNIF プロセスを実装します。 パブリック プロセスには、残りのコンポーネントから RNIF の複雑さが非表示にします。 RNIF 準拠のメッセージ フローをするだけでなく、パブリック プロセスも既定の追跡設定を決定し、実行時にプロセス状態に関する情報を提供します。 メッセージの service content は処理されません。 プライベート プロセスで行われます。  
   
- 各取引先アグリーメントは単一のパブリック プロセスを参照して、PIP (Partner Interface Process) アクションを開始するか、アクションに応答します。 ただし、パブリック プロセスでは PIP は認識されません。  
+ 各取引先アグリーメントは、1 つのパブリック プロセスを開始またはプロセス PIP (Partner Interface) の操作に対する応答を参照します。 ただし、パブリック プロセスでは PIP は認識されません。  
   
- パブリック プロセスのデザインは、RosettaNet の仕様によって決定されます。 パブリック プロセスは変更しないことを推奨します。 パブリック プロセス オーケストレーションは、バージョン管理され、署名されています。 パブリック プロセスを変更すると、RNIF に準拠しなくなります。  
+ RosettaNet の仕様では、パブリック プロセスの設計を決定します。 パブリック プロセスを変更しないことをお勧めします。 パブリック プロセス オーケストレーションとは、バージョン管理され、署名付きです。 パブリック プロセスを変更することと、RNIF 準拠ができなくなります。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

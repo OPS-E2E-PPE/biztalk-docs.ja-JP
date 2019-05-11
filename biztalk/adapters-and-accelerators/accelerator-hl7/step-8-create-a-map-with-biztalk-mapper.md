@@ -1,5 +1,5 @@
 ---
-title: '手順 8: BizTalk マッパーでマップを作成する |Microsoft Docs'
+title: 手順 8:BizTalk マッパーでマップの作成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,14 +17,14 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d1b9edeca21fe9967f816f05d2ceb12ffe5c5ded
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 973dde183178be48feeea2613c0cf6964c9f3efa
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36968459"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65287866"
 ---
-# <a name="step-8-create-a-map-with-biztalk-mapper"></a>手順 8: BizTalk マッパーでマップを作成します。
+# <a name="step-8-create-a-map-with-biztalk-mapper"></a>手順 8:BizTalk マッパーでマップを作成します。
 この手順では、BizTalk マッパーを使用してマップを作成します。 データ (フィールド) に関連付けるリンクを作成するのにドキュメントが拒否された要求のデータに補充要求ドキュメントでこのマップを使用するとします。  
   
 ### <a name="to-create-a-map"></a>マップを作成するには  
@@ -59,7 +59,7 @@ ms.locfileid: "36968459"
   
     一般的なメッセージの強化のシナリオで、患者の情報が見つからない場合は、オーケストレーションで患者レコード データベースへの呼び出しを行うして、不足している情報を追加し、する追加の情報を使用してマッピングを完了します。 たとえば、XML ドアベル トリガー イベントの受信メッセージが提供していないために、患者レコードのデータベースから患者の自宅の住所を取得することが。  
   
-    進みます[手順 9: 検証し、マップのプロジェクトをビルド](../../adapters-and-accelerators/accelerator-hl7/step-9-validate-and-build-the-map-project.md)します。  
+    続行する[手順 9。検証し、マップのプロジェクトをビルド](../../adapters-and-accelerators/accelerator-hl7/step-9-validate-and-build-the-map-project.md)します。  
   
 ## <a name="see-also"></a>参照  
  [メッセージ強化のチュートリアル](../../adapters-and-accelerators/accelerator-hl7/message-enrichment-tutorial.md)

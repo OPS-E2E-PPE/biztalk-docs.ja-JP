@@ -19,14 +19,14 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bb9b3cbbd426227e21f16d5bde4186823164f1fa
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 250e262470325318a62236630542fd96ff0d4b52
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36999691"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65394830"
 ---
-# <a name="requirements-and-limitations-for-expressions"></a>式の要件と制限事項
+# <a name="requirements-and-limitations-for-expressions"></a>式の要件と制限
 オーケストレーション デザイナーの BizTalk 式エディターは、IntelliSense を備えた標準の Visual Studio テキスト エディターです。 BizTalk 式エディターは、テキスト形式で式を入力するために使用します。  
   
  テキスト形式で 1 つの式を入力するには、テキスト ボックスを使用します。 1 つの式を複数行に記述できますが、行を 1 つのセミコロンで終了する必要があります。  

@@ -1,5 +1,5 @@
 ---
-title: ノードのプロパティ |Microsoft ドキュメント
+title: ノードのプロパティ |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,56 +12,56 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d41f0f3b0fe0b302a763629b8777669b54f6cc86
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ec003c92f374489d59986bb5324f66100adf9e63
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22264218"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65323538"
 ---
 # <a name="node-properties"></a>ノードのプロパティ
 
 ## <a name="overview"></a>概要
-BizTalk エディターでノードのプロパティを調べたり設定したりする場合は、Visual Studio の [プロパティ] ウィンドウを使用します。 スキーマ ツリー ビューで別の種類のノードを選択すると、それに応じたプロパティが [プロパティ] ウィンドウに表示されます。 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] では、これらのプロパティをカテゴリ別またはアルファベット順に表示できます。アルファベット順に表示した場合、カテゴリは表示されません。 この設定は、[プロパティ] ウィンドウの上部にあるボタンを使って切り替えることができます。  
+BizTalk エディターでは、するを調べるし、Visual Studio プロパティ ウィンドウでノードのプロパティを設定します。 スキーマ ツリー ビューでさまざまな種類のノードを選択すると、異なるプロパティのセットは、[プロパティ] ウィンドウに表示されます。 Standard は[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]、カテゴリ、またはそのカテゴリが示されないアルファベット順に、これらのプロパティを表示できます。 [プロパティ] ウィンドウの上部にある標準のボタンを使用して、この設定を切り替えます。  
   
- 通常、ノードのプロパティは、XSD (XML Schema Definition) 言語では、対応する要素に関連付けられた属性および属性値として表されます (特にノードのプロパティが既定値以外に設定されている場合)。 たとえば、プロパティ設定されている場合の**Min Occurs**と**Max Occurs**プロパティで、いくつかの別のノード型、設定されている値に対して使用できる、の値として使用されます**minOccurs**と**maxOccurs**属性はそれぞれ、対象のノードが表す要素に関連付けられている、 **Min Occurs**と**Max発生**プロパティが設定されています。  
+ 特にが既定値以外の値に設定すると、ノードのプロパティは、属性として、XML スキーマ定義 (XSD) 言語で表される通常と属性の対応する要素に関連付けられている値。 たとえば、プロパティ設定されている場合の**Min Occurs**と**Max Occurs**のプロパティは、いくつかの別のノードの種類、設定されている値で使用できますが、の値として使用される**minOccurs**と**maxOccurs**属性はそれぞれ、対象のノードが表す要素に関連付けられた、 **Min Occurs**と**Max発生した**プロパティが設定されています。  
 
-## <a name="property-types"></a>プロパティの種類
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]開発者向けリファレンスには、さまざまなノード型をカテゴリ別およびアルファベット順に整理されているプロパティのリファレンス セクションが含まれています。 次の例は、各ノードの種類に関連付けられたプロパティをまとめています。  
+## <a name="property-types"></a>プロパティの型
+ [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]開発者向けリファレンスには、カテゴリ別およびアルファベット順に編成された、さまざまなノード型のプロパティのリファレンス セクションが含まれています。 次に、各ノードの種類に関連付けられているプロパティをまとめたものです。  
   
--   スキーマ ノードのプロパティ
+-   スキーマのノード プロパティ
   
--   [レコード] ノードのプロパティ
+-   レコード ノードのプロパティ
   
--   [フィールド要素] ノードのプロパティ
+-   [フィールド要素] ノード プロパティ
   
--   [フィールド属性] ノードのプロパティ
+-   [フィールド属性] ノード プロパティ
   
--   [シーケンス グループ] ノードのプロパティ
+-   シーケンス グループ ノードのプロパティ
   
--   [グループの選択] ノードのプロパティ 
+-   グループの選択 ノードのプロパティ 
   
--   [すべてのグループ] ノードのプロパティ
+-   すべてのグループ ノードのプロパティ
   
--   [属性グループ] ノードのプロパティ
+-   属性グループ ノードのプロパティ
   
--   [すべての要素] ノードのプロパティ
+-   すべての要素ノードのプロパティ
   
--   [すべての属性] ノードのプロパティ
+-   すべての属性ノードのプロパティ
   
--   [Equivalent] ノードのプロパティ
+-   等価のノード プロパティ
   
 -   [Equivalent Child] ノードのプロパティ
 
-これらのプロパティの詳細について[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]です。
+これらのプロパティについて詳しく[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]します。
   
- **ノードのプロパティ-アルファベット順**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]のすべてのさまざまな種類のノードに適用するいくつかのノードの各プロパティの個別の参照トピックが含まれています。 各リファレンス トピックは、すべての種類のスキーマに適用される基本的なプロパティであるか、スキーマ エディター拡張機能 (フラット ファイル拡張機能など) に関連した特別なプロパティであるかによって分類されています。 カテゴリ内では、各トピックがアルファベット順に記載されています。  
+ **ノードのプロパティ-アルファベット**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]すべてのノードの各プロパティのさまざまな種類のノードに適用うちいくつか個々 の参照トピックが含まれています。 個々 の参照トピックは、すべての種類のスキーマに適用される基本的なプロパティまたはフラット ファイル拡張機能など、スキーマ エディタ拡張機能に関連付けられている特殊なプロパティは分類されます。 これらのカテゴリ内でこれらがアルファベット順の一覧します。  
   
- BizTalk エディターでは、スキーマ ツリーに含まれるノードのプロパティを、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] のプロパティ ウィンドウで確認または設定できます。 ここには、いくつかの特性などの特別な考慮事項 [プロパティ] ウィンドウでプロパティの操作がについて説明します、**ノード名**プロパティ間の依存関係の説明、プロパティとについての最大長は許可されている特定のプロパティまたはプロパティの型。  
+ BizTalk エディターを使用して、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]プロパティ ウィンドウを使用すると、確認し、スキーマ ツリーで、ノードのプロパティを設定します。 このセクションの特別な考慮事項を含め、プロパティ ウィンドウでプロパティの操作の一部の特性を説明します、**ノード名**プロパティ間の相互依存関係の説明、プロパティとプロパティまたはプロパティの型については、最大の長さが特定の許可。  
   
- また、特殊なノード プロパティに関する補足情報や、ノードのプロパティ全般に関連するその他の情報についても説明しています。  
+ このセクションの残りの部分では、特定、特殊なノードのプロパティに関する追加情報およびノードのプロパティに通常適用されるその他の情報を提供します。  
   
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
   
 -   [ノード名プロパティ](../core/node-name-property.md)  
   

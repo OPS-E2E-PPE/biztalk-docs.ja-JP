@@ -1,5 +1,5 @@
 ---
-title: '手順 8 b: RX System 用にパーティ情報の構成 |Microsoft Docs'
+title: 手順 8 b:RX System 用にパーティ情報の構成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c2ed8dfaeb333c1b35ea64a5d52a53ebce509729
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ccc35ab8493be410edaf1f1faf5f653d4038daaa
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37008403"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65286570"
 ---
-# <a name="step-8b-configure-party-information-for-the-rx-system"></a>手順 8 b: RX System 用にパーティ情報を構成します。
+# <a name="step-8b-configure-party-information-for-the-rx-system"></a>手順 8 b:RX System 用にパーティ情報を構成します。
 この手順では、RX System 用のパーティ情報を構成します。  
 
 ### <a name="to-configure-the-rx-system-party-information"></a>RX System パーティ情報を構成するには  
@@ -45,4 +45,4 @@ ms.locfileid: "37008403"
 
 7. クリックして**保存**、BTAHL7 構成エクスプ ローラーを閉じます。  
 
-   続行する[手順 8 C: HI System 用にパーティ情報を構成する](../../adapters-and-accelerators/accelerator-hl7/step-8c-configure-party-information-for-the-hi-system.md)します。
+   続行する[手順 8 C:HI System 用にパーティ情報を構成する](../../adapters-and-accelerators/accelerator-hl7/step-8c-configure-party-information-for-the-hi-system.md)します。

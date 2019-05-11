@@ -12,15 +12,15 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 129a0d16100ed7f38f49d0cfa5cc329446c3e72e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2d0db026534a15b1c1e3cfe2f5582db8b9e1078f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36997187"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65331489"
 ---
 # <a name="interfaces-for-an-isolated-receive-adapter"></a>分離受信アダプター用のインターフェイス
-分離受信アダプターは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 以外のプロセス領域でホストされます。 メッセージング エンジンと連携するために、分離受信アダプターは、エンジンが分離受信アダプターを構成および制御できるように、起動時に分離受信アダプター自体を登録します。 アダプターのトランスポート プロキシを作成、インターフェイスのクエリ**IBTTransportProxy**、および呼び出し**IBTTransportProxy.RegisterIsolatedReceiver**を登録するその**IBTTransportConfig**メッセージング エンジンとコールバック インターフェイス。 この同期呼び出しは、アダプターが最初のメッセージを [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] に送信する前に発生します。 これによって、メッセージ エンジンは、アダプターへのコールバックを行い、どのエンドポイントがアクティブであるか、および受信メッセージの待ち受けの対象となる必要があるかをアダプターに示すことができます。 分離アダプターは次のインターフェイスを実装する必要があります。  
+分離受信アダプターが以外のプロセス空間内でホストされる、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]プロセス。 をメッセージング エンジンと対話するには、分離受信アダプターのレジスタ自体の起動時に、エンジンの構成および制御できるようにします。 アダプターのトランスポート プロキシを作成、インターフェイスのクエリ**IBTTransportProxy**、および呼び出し**IBTTransportProxy.RegisterIsolatedReceiver**を登録するその**IBTTransportConfig**メッセージング エンジンとコールバック インターフェイス。 アダプターは、その最初のメッセージを送信する前に、この同期呼び出しが発生した[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]します。 これにより、メッセージング エンジンでアダプターにコールバックして、エンドポイントがアクティブと受信メッセージをリッスンする必要があります。 分離アダプターは、次のインターフェイスを実装する必要があります。  
   
 - **IBTTransport**  
   
@@ -30,22 +30,22 @@ ms.locfileid: "36997187"
   
 - **IPersistPropertyBag**  
   
-  アダプターの登録では、構成および有効化された受信場所をアダプターが渡す必要があります。 アダプターのホスト プロセスは、BizTalk 分離ホスト ユーザー グループのメンバーである必要があります。 また、クラス ID が正しく、実行するように構成されているホスト インスタンスに対応したコンピューターで実行中であることを確認するための照会が、アダプターに対して行われます。  
+  アダプターを登録するには、アダプターが渡す、構成されている必要があり、有効になっている受信場所。 アダプターのホスト プロセスは、BizTalk 分離ホスト ユーザー グループのメンバーである必要があります。 さらに、アダプターを照会して、id が正しいクラスと、そのホスト インスタンス用に構成されたコンピューターで実行していることを確認します。  
   
   メッセージング エンジンは、構成情報を渡すし、呼び出すことによって、その他の受信場所、アダプターをアダプターがトランスポート プロキシで正常に登録した後、**ロード**のメソッド、 **IPersistPropertyBag**インターフェイスと**AddReceiveEndpoint**のメソッド、 **IBTTransportConfig**それぞれインターフェイスします。  
   
   呼び出す必要があります、分離受信アダプターがメッセージの処理を終了および終了する、 **TerminateIsolatedReceiver**のメソッド、 **IBTTransportProxy**インターフェイス。  
   
-  分離受信アダプターを作成するときのオブジェクト間の対話処理を次の図に示します。  
+  次の図は、受信アダプターの分離の作成に関連するオブジェクトの相互作用を示しています。  
   
   ![](../core/media/ebiz-sdk-devadapter9.gif "ebiz_sdk_devadapter9")  
-  分離受信アダプターの初期化のワークフロー  
+  受信アダプターの分離を初期化するためのワークフロー。  
   
 > [!NOTE]
->  アダプターでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] に対して現在実行している要求を追跡することをお勧めします。 アダプターをブロックする必要があります、 **Terminate**作業数が 0 に到達するまでメソッド。 受信側では、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] に対して公開されていない未処理の要求がこの作業に含まれます。 応答メッセージは通常できませんに配信されたこと後に受信アダプターに注意してください。 **Terminate**が呼び出されます。 一般に、アダプターの呼び出し後、 **Terminate**メソッド、メッセージング エンジンでは送信請求-応答の組み合わせに対する応答メッセージを除き、新しいメッセージを発行する要求が受け付けられません。  
+>  あるアダプターの追跡を現在実行中の要求をお勧めします。[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]します。 アダプターをブロックする必要があります、 **Terminate**作業数が 0 に到達するまでメソッド。 受信側では、この作業に公開されていない、未処理の要求が含まれています[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]します。 応答メッセージは通常できませんに配信されたこと後に受信アダプターに注意してください。 **Terminate**が呼び出されます。 一般に、アダプターの呼び出し後、 **Terminate**メソッド、メッセージング エンジンでは送信請求-応答の組み合わせに対する応答メッセージを除き、新しいメッセージを発行する要求が受け付けられません。  
 > 
 > [!NOTE]
->  1 つのプロセスは 1 つのアダプターしかホストできませんが、分離アダプターの複数のインスタンスをホストできます。  
+>  1 つだけのプロセスが 1 つのアダプターをホスト中に、1 つのプロセスは、分離アダプターの複数のインスタンスをホストできます。  
   
 ## <a name="see-also"></a>参照  
  [アダプター変数](../core/adapter-variables.md)   

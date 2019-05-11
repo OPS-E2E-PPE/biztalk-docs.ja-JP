@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9cf50a7ef1903d3839aaa9b810e145432b62b552
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: aa686dd149643c10760156018b72af141c2081ac
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37020463"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65291290"
 ---
 # <a name="restoring-analysis-services-and-supporting-databases"></a>Analysis Services を復元して、サポートするデータベース
 2 つ[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]Analysis Services データベースをディザスター リカバリーのシナリオで復元する必要があります。  
@@ -42,7 +42,7 @@ ms.locfileid: "37020463"
   **それ以外の場合、**  
   **BAM が有効にし、BM.exe を割り当てていることも、適切な BAM データベースのセットがセットとしてまとめて復元する必要があります。** アーカイブ済みのデータの完全なセットは、回復になっていることを確認するには、BAM アーカイブ データベースがバックアップに、BAM アーカイブ、パーティションをコピーした後が、パーティションを BAM プライマリ インポート データベースから削除する前にします。 これは、最後の手順「アーカイブ終了」です前に、BAM アーカイブ データベースをバックアップするステップを挿入することで各アクティビティのデータ保守 SSIS パッケージを変更することで実行します。  
   
-  BAM データベースの復元手順は、: BAM プライマリ インポート データベースは x の前回のバックアップと復元された場合、に、データ保守 SSIS パッケージが最新の日付に対応する BAM アーカイブおよび BAM スター スキーマ データベースのコピーを復元x の日付より前に実行します。  
+  BAM データベースの復元手順です。X の最後のバックアップ日、BAM プライマリ インポート データベースを復元する場合は、最新の日付が x の日付より前に、データ保守 SSIS パッケージが実行された日時を対応する BAM アーカイブおよび BAM スター スキーマ データベースのコピーを復元します。  
   
   適切な BAM データベースのセットを特定した後は、復元、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]と[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]に記載されている標準的な手順を使用して Analysis Services データベース、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]復元のオンライン ブックの「[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]データベースと[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]Analysis Services データベース。  
   

@@ -1,5 +1,5 @@
 ---
-title: '手順 9: BizTalk Server の再起動 |Microsoft Docs'
+title: 手順 9:BizTalk Server の再起動 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,14 +15,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3002411b4e503d2653a2d7d7a605bfdadb83488f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f046d31ca25f7c1fe7a7426d9af0cdd8107ae647
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37009115"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65286671"
 ---
-# <a name="step-9-restart-biztalk-server"></a>手順 9: BizTalk Server を再起動します。
+# <a name="step-9-restart-biztalk-server"></a>手順 9:BizTalk Server を再起動します。
 この手順で再起動して、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]を有効にするこのチュートリアルで行った変更の順序で。  
   
 ### <a name="to-restart-biztalk-server"></a>BizTalk Server を再起動するには  
@@ -33,4 +33,4 @@ ms.locfileid: "37009115"
   
 3. ホスト インスタンスで、右クリックして**BizTalkServerApplication**、順にクリックします**再起動**します。  
   
-   続行する[手順 10: エンド ツー エンド シナリオの確認](../../adapters-and-accelerators/accelerator-hl7/step-10-verify-the-end-to-end-scenario.md)します。
+   続行する[手順 10。エンド ツー エンド シナリオの確認](../../adapters-and-accelerators/accelerator-hl7/step-10-verify-the-end-to-end-scenario.md)します。

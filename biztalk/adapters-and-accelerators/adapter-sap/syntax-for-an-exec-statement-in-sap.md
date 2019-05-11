@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7da9395ec244f6877dc7902e0feae22f6d81b391
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7a48a043eb53b4ad4d8aeddcf27245766915699c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37020081"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65372728"
 ---
 # <a name="syntax-for-an-exec-statement-in-sap"></a>SAP の EXEC ステートメントの構文
 次のセクションの説明に対する EXEC ステートメントを実装するための文法の仕様、[!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)]します。 いくつかの場合、構文が少し異なる TRANSACT-SQL 構文に注意してください。  
@@ -36,11 +36,11 @@ EXEC rfc_name {<argument_element>} [ , …n ]  {;}[0,1] [ OPTION <disabledataval
   
   -   **param_name**関数インターフェイスで定義されたパラメーター名を指定します。  
   
-  -   **\<const\>**  :: = 整数&#124;実際&#124;文字列&#124;でしょうか。 &#124;NULL &#124; xml_element  
+  -   **\<const\>** ::= integer &#124; real &#124; string &#124; ? &#124; NULL &#124; xml_element  
   
 - **オプション**データを表示する方法のオプションを提供します。 使用可能なオプションは次のとおりです。  
   
-  - **disabledatavalidation**オプション セット、 **EnableSafeTyping** 、基になるプロパティのバインド[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]します。 安全な入力が有効にすると、DATS、TIM、および NUMC データ型は文字列として表されます。 このバインドのプロパティの詳細については、[mySAP Business Suite のバインドのプロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md)を参照してください。  
+  - **disabledatavalidation**オプション セット、 **EnableSafeTyping** 、基になるプロパティのバインド[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]します。 安全な入力が有効にすると、DATS、TIM、および NUMC データ型は文字列として表されます。 このバインドのプロパティの詳細については、次を参照してください。 [mySAP Business Suite のバインドのプロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md)します。  
   
   - **firstresultset**によって返される最初の結果セットを指定します、[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]します。 任意のステートメントは、ADO プロバイダーは、ソースで実行される、返される最初の結果だけが使用可能です。 RFC EXEC のシナリオで通常はテーブルの複数のパラメーターが返されますが最初の結果セットのみの場合は、クライアント プログラムが使用できない可能性があるために使用できます。 OPTION 句の一部として"firstresultset"キーワードを指定して、クライアントは、プロバイダーを返す必要な最初のテーブル パラメーターを指定できます。 以下に例を示します。  
   
@@ -131,7 +131,7 @@ EXEC rfc_name {<argument_element>} [ , …n ]  {;}[0,1] [ OPTION <disabledataval
   
   |RFC パラメーターの型|クエリ キーワード|パラメーターの方向|  
   |--------------------|-------------------|-------------------------|  
-  |パラメーターをインポートします。|何もない|Paramdirection.Input|  
+  |パラメーターをインポートします。|なし|Paramdirection.Input|  
   |パラメーターをエクスポートします。|[出力]|Paramdirection.Output|  
   |テーブル パラメーター|出力/何もしません。|InputOutput|  
   
@@ -139,7 +139,7 @@ EXEC rfc_name {<argument_element>} [ , …n ]  {;}[0,1] [ OPTION <disabledataval
   
 - 定数またはクエリ内のプレース ホルダーを使用して、パラメーター値を指定できます。  
   
-- 作成する必要があります、クエリ内のプレース ホルダーを使用する場合、`SAPParameter`オブジェクトおよび対応するコマンド オブジェクトに追加します。 コンストラクターにし、プレース ホルダー名を渡す方向と値は、コンテキストに依存します。  
+- 作成する必要があります、クエリ内のプレース ホルダーを使用する場合、`SAPParameter`オブジェクトおよび対応するコマンド オブジェクトに追加します。 コンス トラクターにし、プレース ホルダー名を渡す方向と値は、コンテキストに依存します。  
   
   -   `Input`パラメーターを指定しないクエリでパラメーターの方向のキーワード。 `value`パラメーター オブジェクトのフィールドを設定する必要があります、またはプロバイダー例外がスローされます。 明示的に設定する必要がありますいない、`direction`ため、プロバイダーの既定値は、パラメーター オブジェクトのフィールド`Input`します。  
   
@@ -157,7 +157,7 @@ EXEC rfc_name {<argument_element>} [ , …n ]  {;}[0,1] [ OPTION <disabledataval
 - EXEC ステートメントでは、[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]返します`TIMS`フィールドの値として .NET`System.DateTime`オブジェクト。  
   
   > [!NOTE]
-  >  SELECT ステートメントの[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]返します`TIMS`フィールドの値として .NET`System.TimeSpan`オブジェクト。 SELECT ステートメントの詳細については、[SAP で SELECT ステートメントの構文](../../adapters-and-accelerators/adapter-sap/syntax-for-a-select-statement-in-sap.md)を参照してください。  
+  >  SELECT ステートメントの[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]返します`TIMS`フィールドの値として .NET`System.TimeSpan`オブジェクト。 SELECT ステートメントの詳細については、次を参照してください。 [SAP で SELECT ステートメントの構文](../../adapters-and-accelerators/adapter-sap/syntax-for-a-select-statement-in-sap.md)します。  
   
 ## <a name="see-also"></a>参照  
  [.NET Framework Data Provider for mySAP Business Suite について](../../adapters-and-accelerators/adapter-sap/about-the-net-framework-data-provider-for-mysap-business-suite.md)

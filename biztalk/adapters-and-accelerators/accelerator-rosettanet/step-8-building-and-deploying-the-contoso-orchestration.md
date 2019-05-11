@@ -1,5 +1,5 @@
 ---
-title: '手順 8: ビルドと Contoso オーケストレーションの展開 |Microsoft ドキュメント'
+title: 手順 8:Contoso オーケストレーションのビルドと |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,38 +15,38 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 706c5ab2b52d30aeedfba7b3e002dc637fcece93
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 68708976c91d96b3729b1a39776981d9345eb519
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22209306"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65280650"
 ---
-# <a name="step-8-building-and-deploying-the-contoso-orchestration"></a>手順 8: ビルドと Contoso オーケストレーションの展開
-ここでは、オーケストレーション プロジェクトをビルドし、BizTalk 展開ウィザードを使用して展開します。 これにより、アセンブリが構成データベースに追加され、グローバル アセンブリ キャッシュ (GAC) にインストールされます。  
+# <a name="step-8-building-and-deploying-the-contoso-orchestration"></a>手順 8:ビルドと Contoso オーケストレーションの展開
+この手順では、オーケストレーション プロジェクトをビルドし、BizTalk 展開ウィザードを使用して展開します。 これは構成データベースにアセンブリを追加し、アセンブリをグローバル アセンブリ キャッシュ (GAC) にインストールします。  
   
-### <a name="to-assign-a-strong-name-to-your-assembly"></a>アセンブリに厳密な名前を割り当てるには  
+### <a name="to-assign-a-strong-name-to-your-assembly"></a>アセンブリに厳密な名前を割り当てる  
   
-1.  ソリューション エクスプ ローラーで右クリックし、 **PrivateResponder**プロジェクトをクリックして**プロパティ**です。  
+1.  ソリューション エクスプ ローラーで右クリックし、 **PrivateResponder**プロジェクトをクリックして**プロパティ**します。  
   
-2.  PrivateResponder プロパティ ページ] ダイアログ ボックスで、[**アセンブリ**左側のペインからです。  
+2.  PrivateResponder プロパティ ページ] ダイアログ ボックスで、[**アセンブリ**左側のウィンドウ。  
   
-3.  右側のペインでスクロールして、**厳密な名前**セクションで、フィールドの右側をクリックして、**アセンブリ キー ファイル**、省略記号ボタンをクリックして (**.**).  
+3.  右側のペインでスクロールして、**厳密な名前**セクションで、フィールドの右側をクリックして、**アセンブリ キー ファイル**、省略記号ボタンをクリックし、(**.**).  
   
-4.  プロジェクト フォルダで、選択、 **FabConPriceAvail.snk**ファイルを開き、をクリックして**開く**です。  
+4.  プロジェクト フォルダーを見つけ、選択、 **FabConPriceAvail.snk**ファイルを開き、をクリックし、**オープン**します。  
   
-5.  右側のペインで選択**False**から、**アセンブリの遅延署名**ドロップ ダウン リスト。  
+5.  右側のウィンドウで次のように選択します。 **False**から、**アセンブリの遅延署名**ドロップダウン リスト。  
   
-6.  をクリックして**OK**変更を保存します。  
+6.  **[OK]** をクリックして変更を保存します。  
   
-### <a name="to-build-and-deploy-the-orchestration-project"></a>オーケストレーション プロジェクトを構築および展開するには  
+### <a name="to-build-and-deploy-the-orchestration-project"></a>構築して、オーケストレーション プロジェクトをデプロイするには  
   
-1.  ソリューション エクスプ ローラーで右クリックし、 **PrivateResponder**プロジェクトをクリックして**ビルド**です。  
+1.  ソリューション エクスプ ローラーで右クリックし、 **PrivateResponder**プロジェクトをクリックして**ビルド**します。  
   
     > [!NOTE]
-    >  ビルド プロセス中に発生した警告は、すべて無視しても問題ありません。  
+    >  ビルド処理中に発生した警告を無視してかまいません。  
   
-2.  ビルドが完了すると、もう一度、プロジェクトを右クリックし、クリックして**展開**です。  
+2.  ビルドが完了すると、もう一度、プロジェクトを右クリックし、クリックして**デプロイ**します。  
   
 ## <a name="see-also"></a>参照  
- [手順 9: Contoso オーケストレーションの開始](../../adapters-and-accelerators/accelerator-rosettanet/step-9-starting-the-contoso-orchestration.md)
+ [手順 9:Contoso オーケストレーションの開始](../../adapters-and-accelerators/accelerator-rosettanet/step-9-starting-the-contoso-orchestration.md)

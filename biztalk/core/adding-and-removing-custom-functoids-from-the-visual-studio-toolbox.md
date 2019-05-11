@@ -12,34 +12,34 @@ caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8a0ddbab8a116369b6edb39623cd73a16362a3db
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7e3493608606df11a5237287a89cbf79d384800a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37013091"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65360905"
 ---
-# <a name="adding-and-removing-custom-functoids-from-the-visual-studio-toolbox"></a>Visual Studio ツールボックスに対するカスタム Functoid の追加と削除
-ここでは、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] ツールボックスに対し、カスタム Functoid を追加する方法と削除する方法について説明します。  
+# <a name="adding-and-removing-custom-functoids-from-the-visual-studio-toolbox"></a>追加して、Visual Studio のツールボックスからカスタム Functoid の削除
+このトピックでは、カスタム functoid を追加およびからカスタム functoid を削除する方法を説明します、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]ツールボックスです。  
   
-## <a name="adding-custom-functoids-to-visual-studio"></a>Visual Studio へのカスタム Functoid の追加  
- カスタム Functoid をマップ内で使用するには、事前に [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] ツールボックスに追加しておく必要があります。 カスタム Functoid を追加するには、次の操作を行います。  
+## <a name="adding-custom-functoids-to-visual-studio"></a>Visual Studio にカスタム Functoid の追加  
+ カスタム functoid を追加する必要があります、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]ツールボックス前に、これらは、マップで使用できます。 カスタム functoid を追加するのにには、次の手順を使用します。  
   
-#### <a name="to-add-a-custom-functoid"></a>カスタム Functoid を追加するには  
+#### <a name="to-add-a-custom-functoid"></a>カスタム functoid を追加するには  
   
-1. [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] ツールボックスに Functoid を追加します。  
+1. Functoid を追加、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]ツールボックスです。  
   
-   1. Windows エクスプローラーを使用して、カスタム Functoid が実装されているアセンブリを探します。  
+   1. Windows エクスプ ローラーを使用して、カスタム functoid を実装するアセンブリを検索します。  
   
-   2. アセンブリをコピー、 \< *BizTalk Server のインストール フォルダー*\>**\Developer Tools\Mapper 拡張**ディレクトリ。 BizTalk マッパーは、このフォルダーに対してカスタム Functoid を検索します。  
+   2. アセンブリをコピー、 \< *BizTalk Server のインストール フォルダー*\>**\Developer Tools\Mapper 拡張**ディレクトリ。 これは、BizTalk マッパーがカスタム functoid を検索する場所です。  
   
    3. [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] BizTalk プロジェクトで、**ツール** メニューをクリックして**ツールボックス アイテムの選択**です。  
   
    4. **ツールボックス アイテムの選択**ダイアログ ボックスで、をクリックして、 **BizTalk マッパー Functoid**タブ。  
   
-   5. クリックして**リセット**、順にクリックします**OK**します。 この処理は時間がかかる場合があります。  
+   5. クリックして**リセット**、順にクリックします**OK**します。 このプロセスには数分かかる場合があります。  
   
-       カスタム Functoid が、各カテゴリを示すタブの下にあるツールボックスに表示されます。  
+       カスタム functoid ツールボックスのタブの各カテゴリの下に表示されます。  
   
       \- または -  
   
@@ -50,7 +50,7 @@ ms.locfileid: "37013091"
    8. クリックして**リセット**、順にクリックします**OK**します。  
   
       > [!NOTE]
-      >  カスタム Functoid でインライン コードが公開されない場合は、アセンブリがグローバル アセンブリ キャッシュで使用可能になっているかどうかを確認してください。  
+      >  カスタム functoid でインライン コードが公開されない場合は、グローバル アセンブリ キャッシュに利用可能になってそのアセンブリを確認します。  
   
    9. **ファイル** メニューのをクリックして**終了**を閉じる[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]します。  
   
@@ -60,9 +60,9 @@ ms.locfileid: "37013091"
   
    12. 開始**Microsoft Visual Studio**します。  
   
-        カスタム Functoid が、該当するタブに表示されます。  
+        カスタム functoid は、適切なタブに表示されます。  
   
-2. アセンブリをグローバル アセンブリ キャッシュに追加します。 アセンブリにインライン型の Functoid だけが含まれる場合は、この手順を省略できます。  
+2. アセンブリをグローバル アセンブリ キャッシュに追加します。 アセンブリにのみインライン型の functoid が含まれている場合は、この手順をスキップすることができます。  
   
    1.  開始**Visual Studio コマンド プロンプト**します。  
   
@@ -73,9 +73,9 @@ ms.locfileid: "37013091"
    4.  入力が完了したら、**終了**します。  
   
 ## <a name="removing-custom-functoids-from-visual-studio"></a>Visual Studio からのカスタム Functoid の削除  
- カスタム Functoid を削除するには、次の操作を行います。  
+ カスタム functoid を削除するのにには、次の手順を使用します。  
   
-#### <a name="to-remove-a-custom-functoid"></a>カスタム Functoid を削除するには  
+#### <a name="to-remove-a-custom-functoid"></a>カスタム functoid を削除するには  
   
 1. Functoid を削除、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]ツールボックスです。  
   
@@ -89,23 +89,23 @@ ms.locfileid: "37013091"
   
    4. マップを編集中に、 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] BizTalk プロジェクト をクリックして、**ツールボックス**タブをツールボックス パレットを開きます。  
   
-   5. カスタム Functoid を含む Functoid グループをクリックします。  
+   5. カスタム functoid を含む functoid グループをクリックします。  
   
    6. 削除するをクリックする functoid を右クリックして**削除**または del キーを押します。  
   
 2. Functoid アセンブリの削除、 **Developer tools \mapper Extensions**ディレクトリ。  
   
    > [!CAUTION]
-   >  アセンブリにアクティブな Functoid が含まれている場合は、アセンブリを削除しないでください。 削除すると、他のマップが壊れます。  
+   >  アセンブリにアクティブな functoid が含まれている場合は削除されません。 そうと、その他のマップが解除されます。  
   
    1. Windows エクスプ ローラーを起動しに移動し、 **Developer tools \mapper Extensions**ディレクトリ[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]します。  
   
    2. 削除の functoid を含むアセンブリを右クリックし、をクリックし、**削除**ファイルを削除します。  
   
-3. グローバル アセンブリ キャッシュから Functoid アセンブリが削除されます。 アセンブリにインライン型の Functoid だけが含まれる場合は、この手順を省略できます。  
+3. Functoid のアセンブリをグローバル アセンブリ キャッシュから削除します。 アセンブリにのみインライン型の functoid が含まれている場合は、この手順をスキップすることができます。  
   
    > [!CAUTION]
-   >  アセンブリにアクティブな Functoid が含まれている場合は、グローバル アセンブリ キャッシュからアセンブリを削除しないでください。 削除すると、他のマップが壊れます。  
+   >  アセンブリにアクティブな functoid が含まれている場合、グローバル アセンブリ キャッシュから削除されません。 そうと、その他のマップが解除されます。  
   
    1.  開始**Visual Studio コマンド プロンプト**します。  
   

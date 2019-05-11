@@ -18,12 +18,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b417398786e602379d16d6734a5ed366b9d6f2ec
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 774764c030b2e6d6f74770f8a1aa2682e5eb6d65
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22210418"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65282063"
 ---
 # <a name="sample-hub-based-scenario"></a>サンプルのハブベース シナリオ
 多くのサプライ チェーン シナリオでは、企業が、各取引先に対して RNIF (RosettaNet Implementation Framework) 接続を構築します。 これにより、サプライ チェーン全体の通信を効率的に標準化できます。 このシナリオについては、「[サンプル サプライ チェーン シナリオ](../../adapters-and-accelerators/accelerator-rosettanet/sample-supply-chain-scenario.md)です。  
@@ -31,7 +31,7 @@ ms.locfileid: "22210418"
  サプライ チェーン全体のトランザクションを自動化するもう 1 つの選択肢として、統合システムのセットアップと管理を行う企業と契約するという方法があります。 これがハブベースのシナリオです。  
   
 ## <a name="how-a-hub-based-system-works"></a>ハブベース システムの動作  
- ハブベースのシステムでは、統合システムを契約している企業が RNIF 接続を使用してハブ企業に接続します。 次に、ハブ企業は必要とされる任意の電子的接続手段を使って、その企業のすべての取引先に接続します。 ハブ企業は、RNIF 接続、EDI、フラット ファイル、Web アプリケーション、および専用接続をすべての取引先に提供できます。 通信システムの管理は、ハブ企業が担当します。 次の図に、このようなハブベース システムのしくみを示します。  
+ ハブベースのシステムでは、統合システムを契約している企業が RNIF 接続を使用してハブ企業に接続します。 次に、ハブ企業は必要とされる任意の電子的接続手段を使って、その企業のすべての取引先に接続します。 ハブ企業は、接続オプションを使用して、すべての取引先パートナーを提供します。RNIF 接続、EDI、フラット ファイル、Web アプリケーション、または非準拠の独自の接続。 通信システムの管理は、ハブ企業が担当します。 次の図に、このようなハブベース システムのしくみを示します。  
   
  ![(& m); 60変更なし & #62;。](../../adapters-and-accelerators/accelerator-rosettanet/media/hub-based-scenario.gif "Hub_Based_Scenario")  
   

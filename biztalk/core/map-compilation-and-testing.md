@@ -1,5 +1,5 @@
 ---
-title: コンパイルとテスト マップ |Microsoft ドキュメント
+title: マップのコンパイルとテスト |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -19,12 +19,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3627d4e7614318fabf238b6dfb63456da7cf1efa
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d5f09e49bcaaab5e3e1498cce2d813c3d40e5fc3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22262298"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65327300"
 ---
 # <a name="map-compilation-and-testing"></a>マップのコンパイルとテスト
 BizTalk マッパーを使用すると、マップを検証してエラーや警告の状況を確認できます。 入力インスタンス データに対してマップをテストすることもできます。  

@@ -12,14 +12,14 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d27cc4321826c824e93e43f94408bc08afc386ee
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5afc45bc15087cdc3867250e2f9c56e3cb4f8990
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37005667"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65358398"
 ---
-# <a name="based-on-the-specified-delimiter-set-no-valid-id-could-be-generated"></a>指定された区切り記号セットに基づいて有効な ID を生成できませんでした
+# <a name="based-on-the-specified-delimiter-set-no-valid-id-could-be-generated"></a>指定された区切り記号セットに基づいて、有効な ID を生成できませんでした。
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                                         |

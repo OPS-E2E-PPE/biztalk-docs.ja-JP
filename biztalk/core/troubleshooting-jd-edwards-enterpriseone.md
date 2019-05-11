@@ -1,5 +1,5 @@
 ---
-title: JD Edwards EnterpriseOne アダプターのトラブルシューティング |Microsoft ドキュメント
+title: JD Edwards EnterpriseOne アダプターのトラブルシューティング |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,27 +12,27 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4d46fd3375f49f9fabd6ce8028cc226bce5885db
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: c92761a93dbbad66f8248c8b95a4f0247f64421c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
-ms.locfileid: "24015939"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65295756"
 ---
 # <a name="troubleshooting-jd-edwards-enterpriseone"></a>JD Edwards EnterpriseOne のトラブルシューティング
 
 ## <a name="overview"></a>概要
-ここでは、BizTalk Adapter for JD Edwards EnterpriseOne で発生する可能性がある一般的な問題およびエラー メッセージについて説明し、考えられる修正方法を示します。 さらに、Windows イベント トレーシングの使用について説明します。  
+このセクションでは、一般的な問題と BizTalk adapter for JD Edwards EnterpriseOne が発生する可能性があり、それらの考えられる修正方法を提供します。 エラー メッセージについて説明します。 さらに、Windows のイベント トレーシングの使用について説明します。  
   
- 以下のデバッグ/トレース ツールを使用して、アダプターのトラブルシューティングを行うことができます。  
+ 次のデバッグ/トレース ツールを使用すると、アダプターのトラブルシューティングします。  
   
--   BizTalk Server のネイティブなデバッグ機能 (たとえば、ポートの [追跡の種類] やオーケストレーション デバッガー)。  
+-   (たとえば、追跡の種類、ポート) またはオーケストレーション デバッガーの BizTalk Server デバッグ ネイティブです。  
   
 -   イベント ログに送信されるエラー メッセージ。  
   
--   BTAJDEEnterpriseOneTrace.cmd および .etl ファイル変換ツール (tracerpt.exe や tracedmp.exe など) による、送信元、受信元、および管理メッセージのキャプチャ。  
+-   BTAJDEEnterpriseOneTrace.cmd およびツールの送信、受信側、および管理メッセージのキャプチャ.etl ファイル変換、tracerpt.exe や tracedmp.exe などです。  
   
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
   
 -   [エラー メッセージ](../core/error-messages1.md)  
   

@@ -1,5 +1,5 @@
 ---
-title: Siebel ビジネス サービスの実行操作を実行 |Microsoft ドキュメント
+title: Siebel ビジネス サービスに対して EXECUTE 操作を実行 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,18 +15,18 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 644d915998e6c6e6f386d30021629f78dc109864
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8323de5d24100d4712e3919a37cfff090c612ea4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22221978"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65371214"
 ---
-# <a name="run-an-execute-operation-on-business-services-with-siebel"></a>Siebel ビジネス サービスの実行操作を実行します。
-このセクションでは、Siebel ビジネス サービスを使用して、操作を実行する方法を示します、[!INCLUDE[adoprovidersiebellong](../../includes/adoprovidersiebellong-md.md)]です。  
+# <a name="run-an-execute-operation-on-business-services-with-siebel"></a>Siebel ビジネス サービスに対して EXECUTE 操作を実行します。
+このセクションでは、Siebel ビジネス サービスを使用して、操作を実行する方法を示します、[!INCLUDE[adoprovidersiebellong](../../includes/adoprovidersiebellong-md.md)]します。  
   
 ## <a name="executing-a-siebel-business-service"></a>Siebel ビジネス サービスを実行します。  
- このセクションでは、Siebel リポジトリのビジネス サービスで操作を実行する方法を示します。  
+ このセクションでは、Siebel リポジトリ内のビジネス サービスの操作を実行する方法を示します。  
   
 ```  
 using System;  
@@ -86,5 +86,5 @@ namespace SiebelADOBS
 ```  
   
 ## <a name="see-also"></a>参照  
- [Siebel eBusiness Applications の .NET Framework データ プロバイダーを使用します。](../../adapters-and-accelerators/adapter-siebel/use-the-net-framework-data-provider-for-siebel-ebusiness-applications.md)   
+ [.NET Framework Data Provider 用 Siebel eBusiness Applications を使用して、](../../adapters-and-accelerators/adapter-siebel/use-the-net-framework-data-provider-for-siebel-ebusiness-applications.md)   
  [Siebel ビジネス コンポーネントで SELECT クエリを実行します。](../../adapters-and-accelerators/adapter-siebel/run-a-select-query-on-business-components-with-siebel.md)

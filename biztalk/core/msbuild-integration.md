@@ -1,5 +1,5 @@
 ---
-title: MSBUILD の統合 |Microsoft ドキュメント
+title: MSBUILD の統合 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,15 +12,15 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 24c049af6869377363d90bca50c8091b15c8041d
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: f569235627630bb7b12a00d2b6611efd429339be
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26007275"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65323662"
 ---
 # <a name="msbuild-integration"></a>MSBUILD の統合
-Visual Studio は MSBUILD プロジェクト ファイル形式を使用して BizTalk Server プロジェクトを含むマネージ プロジェクトに関するビルド情報を格納して、BizTalk プロジェクトをビルドするには、コンピューターの有無に[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]です。 このセクションでは、この新機能の詳細について説明します。  
+Visual Studio は MSBUILD プロジェクト ファイルの形式を使用して、BizTalk Server プロジェクトなどのマネージ プロジェクトに関するビルド情報を格納して、BizTalk プロジェクトをビルドするには、コンピューターの有無に[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]します。 このセクションでは、この新機能の詳細について説明します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

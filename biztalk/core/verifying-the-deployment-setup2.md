@@ -2,14 +2,14 @@
 redirect_url: /biztalk/core/deploying-biztalk-adapter-for-tibco-enterprise-message-service/
 redirect_document_id: true
 ROBOTS: NOINDEX
-ms.openlocfilehash: f5d383ed50a64f238c892db3d6a106c8a1a799a0
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: 8b4481130df56e5e1dc3e45988af3af9a9e3e992
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
-ms.locfileid: "24015574"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65292555"
 ---
-# <a name="verifying-the-deployment-setup"></a>展開セットアップの確認
+# <a name="verifying-the-deployment-setup"></a>展開セットアップを確認します。
 BizTalk Server を使用してバインド ファイルをインポートする前に、以下の項目について確認してください。  
   
 -   新しいコンピューターで、応答用のフォルダーが存在し、同じである。同じでない場合は、バインド ファイルを編集します。  

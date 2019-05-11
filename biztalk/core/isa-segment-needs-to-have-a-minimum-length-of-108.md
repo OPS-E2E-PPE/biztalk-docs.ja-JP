@@ -12,14 +12,14 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a67aa005be3107fde9ec617fc70f0d9e694e8599
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7d511e0a50d610313bbe1c7ce4b3137c55ad0328
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36975163"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65329685"
 ---
-# <a name="isa-segment-needs-to-have-a-minimum-length-of-108"></a>ISA セグメントは、108 文字以上の文字列から構成されている必要があります
+# <a name="isa-segment-needs-to-have-a-minimum-length-of-108"></a>ISA セグメントは、108 の最小の長さである必要があります。
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                        |

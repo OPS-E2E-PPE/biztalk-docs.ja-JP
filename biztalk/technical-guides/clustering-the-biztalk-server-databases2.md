@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bcdc4c2c628a031ab235ce5821c01b56e5f86851
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 676f3078974384579c113bdcd51d5d118d43b4f3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36991507"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65277325"
 ---
 # <a name="clustering-the-biztalk-server-databases"></a>BizTalk Server データベースのクラスター化
 BizTalk Server データベースに障害が発生すると、BizTalk Server 環境は正常に機能することができなくなります。 次の図に示すように、BizTalk Server データベースに対して、Microsoft SQL Server クラスターを作成することによって高可用性を確保できます。  
@@ -61,13 +61,13 @@ BizTalk Server データベースに障害が発生すると、BizTalk Server �
   
 4. BizTalk Server 構成を使用して、完了、[カスタム構成](../install-and-config-guides/configure-biztalk-server.md)します。
   
-   BizTalk Server データベースをクラスタ リングの詳細については、[Improving Fault Tolerance in Windows Server 2008 フェールオーバー クラスターまたは Windows Server 2003 サーバー クラスターを使用して BizTalk Server](https://www.microsoft.com/download/details.aspx?id=2290)を参照してください。  
+   BizTalk Server データベースをクラスタ リングの詳細については、次を参照してください。 [Improving Fault Tolerance in Windows Server 2008 フェールオーバー クラスターまたは Windows Server 2003 サーバー クラスターを使用して BizTalk Server](https://www.microsoft.com/download/details.aspx?id=2290)します。  
   
 ## <a name="behavior-of-biztalk-host-instances-during-sql-server-failover"></a>SQL Server フェールオーバー時の BizTalk ホスト インスタンスの動作  
- SQL Server フェールオーバー時の BizTalk ホスト インスタンスの動作の詳細については、[動作の BizTalk Server ホスト インスタンスを SQL Server フェールオーバー時](../core/behavior-of-biztalk-server-host-instances-during-sql-server-failover.md)を参照してください。  
+ SQL Server フェールオーバー時の BizTalk ホスト インスタンスの動作の詳細については、次を参照してください。[動作の BizTalk Server ホスト インスタンスを SQL Server フェールオーバー時](../core/behavior-of-biztalk-server-host-instances-during-sql-server-failover.md)します。  
   
 ## <a name="using-sql-server-database-mirroring"></a>SQL Server データベース ミラーリングの使用  
- 詳細については、BizTalk Server データベースのクラスタ リングに関する SQL Server データベース ミラーリングを使用して、[SQL Server データベース ミラーリング、ボリューム シャドウ コピー サービス、および AlwaysOn](../core/sql-server-database-mirroring-volume-shadow-copy-service-and-alwayson.md)を参照してください。  
+ 詳細については、BizTalk Server データベースのクラスタ リングに関する SQL Server データベース ミラーリングを使用して、次を参照してください。 [SQL Server データベース ミラーリング、ボリューム シャドウ コピー サービス、および AlwaysOn](../core/sql-server-database-mirroring-volume-shadow-copy-service-and-alwayson.md)します。  
   
 ## <a name="see-also"></a>参照  
  [BizTalk Server データベースのスケール アウト](../technical-guides/scaling-out-the-biztalk-server-databases.md)

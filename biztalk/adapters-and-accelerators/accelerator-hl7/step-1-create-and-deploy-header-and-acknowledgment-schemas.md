@@ -1,5 +1,5 @@
 ---
-title: '手順 1: を作成し、ヘッダーと確認スキーマの展開 |Microsoft Docs'
+title: 手順 1:ヘッダーと確認スキーマ作成および展開 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,14 +15,14 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 50aa394f033d935c3838e056c715ee74e296b063
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 03782a8c2692dea4af7df9e3e03526a919940257
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36989395"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65288897"
 ---
-# <a name="step-1-create-and-deploy-header-and-acknowledgment-schemas"></a>手順 1: を作成し、ヘッダーと確認スキーマをデプロイします。
+# <a name="step-1-create-and-deploy-header-and-acknowledgment-schemas"></a>手順 1:ヘッダーと確認スキーマ作成およびデプロイ
 メッセージ インスタンスのヘッダー (MSH セグメント) を検証するのにには、ヘッダー スキーマを使用します。 受信確認メッセージのインスタンスを生成するのにには、受信確認スキーマを使用します。 このプロセスは、すべてのスキーマ バージョンの間で共通[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]2.X。  
   
 ### <a name="to-create-the-header-and-acknowledgment-schemas"></a>ヘッダーと受信確認スキーマを作成するには  
@@ -37,7 +37,7 @@ ms.locfileid: "36989395"
   
     ソリューション エクスプ ローラーでは、(ACK_24_GLO_DEF.xsd ACK_25_GLO_DEF.xsd、および MSH_25_GLO_DEF.xsd) の 3 つのスキーマをプロジェクトに含まれることに注意してください。  
   
-## <a name="step-1a-assign-a-strong-key-to-the-assembly-and-deploy"></a>手順 1 a: アセンブリに厳密なキーを割り当てるとデプロイ  
+## <a name="step-1a-assign-a-strong-key-to-the-assembly-and-deploy"></a>手順 1 a:アセンブリに厳密なキーを割り当てるとデプロイ  
  アセンブリに厳密なキーを割り当てるし、アセンブリを配置するには、次の手順を使用します。  
   
 #### <a name="to-assign-a-strong-key-and-deploy-the-assembly"></a>強力なキーを割り当てるし、アセンブリを展開するには  
@@ -68,4 +68,4 @@ ms.locfileid: "36989395"
    > [!NOTE]
    >  デプロイの適切なメッセージが表示されない場合は、使用[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]デプロイのトラブルシューティングを行う。  
   
-   進みます[手順 2: V2.3.1 の一般的なスキーマを作成する](../../adapters-and-accelerators/accelerator-hl7/step-2-create-common-schemas-for-v2-3-1.md)します。
+   続行する[手順 2。V2.3.1 の一般的なスキーマを作成する](../../adapters-and-accelerators/accelerator-hl7/step-2-create-common-schemas-for-v2-3-1.md)します。

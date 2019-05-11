@@ -1,5 +1,5 @@
 ---
-title: HL7 のトラブルシューティングと既知の問題 |Microsoft ドキュメント
+title: HL7 のトラブルシューティングと既知の問題 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,15 +15,15 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 786c933d9caeb729b147fadc6282b56e4e6414e8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 914a977daa26a71c953077aa6ff3ac5bfd87a59b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22206418"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65286513"
 ---
 # <a name="troubleshooting-and-known-issues-in-hl7"></a>HL7 のトラブルシューティングと既知の問題
-問題のトラブルシューティング、解決策、およびに関する既知の問題、[!INCLUDE[HL7_CurrentVersion_FirstRef_md](../../includes/hl7-currentversion-firstref-md.md)]です。  
+トラブルシューティング、解決策、および既知の問題、[!INCLUDE[HL7_CurrentVersion_FirstRef_md](../../includes/hl7-currentversion-firstref-md.md)]します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

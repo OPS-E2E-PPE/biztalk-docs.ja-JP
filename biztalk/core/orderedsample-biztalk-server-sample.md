@@ -17,24 +17,24 @@ caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 96a8cd43f80e9bf6ef7b5a2628f276aa7ef6829c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 84490c48cc4f43f226cc65d4baa90ce7bca347f1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37013099"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65322248"
 ---
 # <a name="orderedsample-biztalk-server-sample"></a>OrderedSample (BizTalk Server サンプル)
-OrderedSample サンプルは、オーケストレーションを使用して、順序付けられた一連のメッセージをラウンド トリップ方式で送受信する方法を示します。  
+OrderedSample サンプルは、オーケストレーションを使用してラウンド トリップ方式で、順序付けられた一連のメッセージを送受信する方法を示します。  
   
 ## <a name="what-this-sample-does"></a>このサンプルの処理  
- このサンプルでは、サンプルにメッセージを配信する MQSeries キューにメッセージがあることを前提とします。 MQSeries キューのメッセージは、アダプターによって順番に読み取られて [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] に送信されます。  
+ サンプルでは、元のメッセージを受信する MQSeries キューにメッセージが前提としています。 順番に読み取らし、送信アダプターは、MQSeries キューからメッセージを読み取り、ときに[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]します。  
   
  オーケストレーションで受信ポート**mqreceive**がその**順次配送**プロパティに設定**True**します。  
   
- 送信側では、オーケストレーションによってメッセージが送信され、配信通知の受信後に次のメッセージが送信されます。 送信ポート、 **mqsend**がその**配信通知**プロパティに設定**送信**します。 サンプルをシンプルにするために、オーケストレーションでは無限ループが使用されています。  
+ 送信側のオーケストレーションはメッセージを送信し、次のメッセージを送信する前に、配信通知を待ちます。 送信ポート、 **mqsend**がその**配信通知**プロパティに設定**送信**します。 例を簡潔にするには、オーケストレーションでは、無限ループを使用しています。  
   
- オーケストレーションでは、メッセージのバッチおよび 1 つのメッセージを受信できます。  
+ オーケストレーションでは、1 つのメッセージおよびメッセージのバッチを受信できます。  
   
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
  *\<パスのサンプル\>* \AdaptersUsage\MQSeriesAdapter\OrderedSample  
@@ -44,11 +44,11 @@ OrderedSample サンプルは、オーケストレーションを使用して、
 |ファイル|説明|  
 |----------|-----------------|  
 |OrderedReceiveSend.btproj,<br /><br /> OrderedReceiveSend.sln|アプリケーションのプロジェクトおよびソリューション ファイル。|  
-|OrderedReceiveSendOrchestration.odx|アプリケーションのオーケストレーション。|  
+|OrderedReceiveSendOrchestration.odx|アプリケーションのオーケストレーションです。|  
 |OrderedSample.snk|厳密な名前のキー ファイル。|  
 |**Setup.bat**|このサンプルを作成および初期化します。|  
   
-## <a name="building-and-running-the-sample"></a>サンプルのビルドと実行  
+## <a name="building-and-running-the-sample"></a>ビルドとサンプルを実行します。  
   
 #### <a name="to-build-and-deploy-the-sample"></a>サンプルをビルドして展開するには  
   
@@ -70,7 +70,7 @@ OrderedSample サンプルは、オーケストレーションを使用して、
   
 1.  クリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**IBM WebSphere MQ**、順にクリックします**WebSphere MQ エクスプ ローラー**します。  
   
-2.  ダブルクリック**キュー マネージャー**、し、ダブルクリック、**既定のキュー マネージャー**します。 通常、既定のキュー マネージャーの名前は QM_<コンピューター名> です。<コンピューター名> は、使用しているコンピューターの名前です。  
+2.  ダブルクリック**キュー マネージャー**、し、ダブルクリック、**既定のキュー マネージャー**します。 Qm _ < コンピューター名 > コンピューター名が、コンピューターの名前を通常、既定のキュー マネージャーの名前します。  
   
 3.  右クリック**キュー**、 をポイント**新規**、 をクリックし、**ローカル キュー**します。  
   
@@ -103,7 +103,7 @@ OrderedSample サンプルは、オーケストレーションを使用して、
   
 9. **受信パイプライン**ボックスで、 **Microsoft.BizTalk.DefaultPipelines.PassThruReceive**します。  
   
-10. クリックして**構成**します。  
+10. をクリックして**構成**です。  
   
 11. **MQSeries トランスポートのプロパティ** ダイアログ ボックスで、**のポーリング間隔**ボックスに「 **「10」** します。  
   
@@ -129,7 +129,7 @@ OrderedSample サンプルは、オーケストレーションを使用して、
   
 4.  **送信パイプライン**ボックスで、 **Microsoft.BizTalk.DefaultPipelines.PassThruTransmit**します。  
   
-5.  クリックして**構成**します。  
+5.  をクリックして**構成**です。  
   
 6.  **MQSeries トランスポートのプロパティ**] ダイアログ ボックスで、**キュー定義**ボックスで、[、**省略記号 (...)** ボタンをクリックします。  
   
@@ -172,9 +172,9 @@ OrderedSample サンプルは、オーケストレーションを使用して、
   
 1.  オーケストレーションを開始します。  
   
-2.  受信場所で読み取るよう構成した MQSeries キューにメッセージを配置します。  
+2.  元の読み取り、受信場所を構成した MQSeries キューにメッセージを配置します。  
   
-3.  送信ポートでメッセージを送信するよう構成した送信キューのメッセージを WebSphere MQ エクスプローラーで表示します。  
+3.  WebSphere MQ エクスプ ローラーでメッセージを送信する送信ポートを構成する送信キューにメッセージを表示します。  
   
 ## <a name="see-also"></a>参照  
  [MQSeries アダプタ サンプル](../core/mqseries-adapter-samples.md)

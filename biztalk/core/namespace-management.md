@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fa476034a578be24bf388c87f38f910565cd2548
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f313ba2063e2184b4c0fe755c32bc0cbf07e0409
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37022472"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65323545"
 ---
 # <a name="namespace-management"></a>名前空間の管理
 BizTalk エディターは名前空間をサポートしています。 XML の名前空間は、XML メッセージにおける要素名または属性名として使用することのできる名前の集合です。 要素名や属性名を名前空間で修飾することにより、同じスキーマ内の別の部分で定義されている同じ要素名や同じ属性名の競合を防ぐことができます。  
@@ -38,11 +38,11 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema"
   
  次の 2 つの名前空間は、スキーマの XSD (XML Schema Definition) 言語表記では、schema 要素に名前空間宣言として自動的に追加されます。  
   
-- xmlns:b ="<http://schemas.microsoft.com/BizTalk/2003>"  
+- xmlns:b="<http://schemas.microsoft.com/BizTalk/2003>"  
   
-- xmlns:xs ="<http://www.w3.org/2001/XMLSchema>"  
+- xmlns:xs="<http://www.w3.org/2001/XMLSchema>"  
   
-  作成中のスキーマから他のスキーマを使用する場合は、それに該当する名前空間を宣言する必要があります。 これらの名前空間と、自動的に追加された名前空間を調べることができます、 **Imports**  ダイアログ ボックスを使用してアクセスできる、 **Imports**のプロパティ、 **スキーマ**ノード。 作成して、スキーマ内の他のスキーマで宣言されているその他のデータ型の使用の詳細については、[使用その他のスキーマを](../core/schemas-that-use-other-schemas.md)と[スキーマを使用して他のスキーマ作成](../core/how-to-create-schemas-that-use-other-schemas.md)を参照してください。  
+  作成中のスキーマから他のスキーマを使用する場合は、それに該当する名前空間を宣言する必要があります。 これらの名前空間と、自動的に追加された名前空間を調べることができます、 **Imports**  ダイアログ ボックスを使用してアクセスできる、 **Imports**のプロパティ、 **スキーマ**ノード。 作成して、スキーマ内の他のスキーマで宣言されているその他のデータ型の使用の詳細については、次を参照してください。[使用その他のスキーマを](../core/schemas-that-use-other-schemas.md)と[スキーマを使用して他のスキーマ作成](../core/how-to-create-schemas-that-use-other-schemas.md)です。  
   
   プロパティ スキーマに関連付けられている名前空間で調べることができます、**プロパティの昇格** ダイアログ ボックス。  
   

@@ -1,5 +1,5 @@
 ---
-title: '手順 1: エコー アダプターの送信ハンドラーのテスト |Microsoft ドキュメント'
+title: 手順 1:エコー アダプターの送信ハンドラーをテストする |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,73 +12,73 @@ caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ba2b1d6586588d17c58c0ca9a74cb11a7a9bd9f2
-ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
+ms.openlocfilehash: 597c4059cb2fc673a557a6e68c5d544db1700522
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2018
-ms.locfileid: "23450523"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65363355"
 ---
-# <a name="step-1-test-outbound-handler-of-the-echo-adapter"></a>手順 1: エコー アダプターの送信ハンドラーをテストします。
-![2 の手順 1.](../../adapters-and-accelerators/adapter-sql/media/step-1of2.gif "Step_1of2")  
+# <a name="step-1-test-outbound-handler-of-the-echo-adapter"></a>手順 1:エコー アダプターの送信ハンドラーをテストします。
+![手順 2 の 1](../../adapters-and-accelerators/adapter-sql/media/step-1of2.gif "Step_1of2")  
   
- **完了時間:** 15 分  
+ **完了までの時間:** 15 分  
   
- この手順では、エコー アダプターによって提供される 3 つの送信操作をテストします。 これを行う Visual Studio では、アダプター サービス参照を Visual Studio プラグインの追加とカスタム コードを使用します。  
+ この手順では、エコー アダプターによって提供される次の 3 つの送信操作をテストします。 Visual Studio では、アダプター サービス参照を Visual Studio プラグインの追加、カスタム コードを使用してこれが実行されます。  
   
 ## <a name="prerequisites"></a>前提条件  
- この手順を完了する必要がありますを行った[チュートリアル 1: エコー アダプターを開発](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-1-develop-the-echo-adapter.md)です。  
+ この手順を完了する必要がありますを行った[チュートリアル 1。エコー アダプターを開発](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-1-develop-the-echo-adapter.md)します。  
   
 ## <a name="create-a-visual-studio-project"></a>Visual Studio プロジェクトを作成します。  
   
 1.  Visual Studio を起動します。  
   
-2.  Visual Studio での**ファイル** メニューのをポイント**新規**、順にクリック**プロジェクト**です。  
+2.  Visual Studio での**ファイル**メニューで、**新規**、順にクリックします**プロジェクト**します。  
   
-3.  **新しいプロジェクト**  ダイアログ ボックスで、次の操作します。  
+3.  **新しいプロジェクト** ダイアログ ボックスで、次の操作を行います。  
   
     |プロパティ|目的|  
     |--------------|----------------|  
-    |**プロジェクトの種類**|クリックして **Visual c#** します。|  
-    |**テンプレート**|クリックして **コンソール アプリケーション**します。|  
-    |**名前**|型**ConsumeEchoAdapter_Outbound**です。|  
-    |**場所**|型**C:\Tutorials**です。|  
-    |**[ソリューション名]**|型**ConsumeEchoAdapter_Outbound**です。|  
+    |**プロジェクトの種類**|クリックして**Visual c#** します。|  
+    |**[テンプレート]**|クリックして**コンソール アプリケーション**します。|  
+    |**名前**|型**ConsumeEchoAdapter_Outbound**します。|  
+    |**場所**|型**C:\Tutorials**します。|  
+    |**[ソリューション名]**|型**ConsumeEchoAdapter_Outbound**します。|  
   
 4.  **[OK]** をクリックします。  
   
-5.  Visual Studio での**ファイル** メニューのをクリックして**すべて保存**です。  
+5.  Visual Studio での**ファイル** メニューのをクリックして**すべて保存**します。  
   
 ## <a name="browse-search-and-generate-the-wcf-client"></a>参照、検索、および WCF クライアントの生成  
   
-1.  ウィンドウで、Visual Studio のソリューションを右クリックして**ConsumeEchoAdapter_Outbound**を選択し、[プロジェクト]**アダプター サービス参照の追加**アダプター サービス参照の追加プラグインを起動します。  
+1.  Visual Studio ソリューション ウィンドウで右クリック**ConsumeEchoAdapter_Outbound**プロジェクトを選択し、**アダプター サービス参照の追加**アダプター サービス参照の追加プラグインを起動します。  
   
-2.  **アダプター サービス参照の追加**画面で、バインディングを選択します。 これは、選択で**echoAdapterBindingV2**です。  
+2.  **アダプター サービス参照の追加**画面で、バインドを選択します。 これは、選択で**echoAdapterBindingV2**します。  
   
 3.  次に、アダプターとの接続のプロパティを構成する をクリックして**構成しています**.  これが表示されます、**アダプターの構成**画面。  
   
-4.  **アダプターの構成**画面で、、 **URI プロパティ**タブで接続のプロパティを構成します。 カスタムのカテゴリのエコー アダプターが示されている通知:**接続**と**形式**です。 下にある、**形式**カテゴリで、変更**EchoInUpperCase**に**True**です。  
+4.  **アダプターの構成**画面で、、 **URI プロパティ**タブを接続のプロパティを構成します。 エコー アダプターのカスタム カテゴリに表示される通知-**接続**と**形式**します。 下、**形式**カテゴリで、変更**EchoInUpperCase**に**True**します。  
   
-5.  **アダプターの構成**画面で、、**バインド プロパティ**タブでアダプターのプロパティを構成します。 注意してカスタムのカテゴリのエコー アダプター**受信**と**その他**が表示されます。 下にある、**その他**カテゴリで、変更**カウント**に**3**です。  
+5.  **アダプターの構成**画面で、、**バインドのプロパティ**タブをアダプターのプロパティを構成します。 注意してエコー アダプターのカスタム カテゴリ**受信**と**Misc**が表示されます。 、 **Misc**カテゴリで、変更**数**に**3**。  
   
-6.  をクリックして **[ok]** を閉じる、**アダプターの構成**画面およびに戻り、**アダプター サービス参照の追加**画面。  
+6.  をクリックして**OK**を閉じる、**アダプターの構成**画面に戻って、**アダプター サービス参照の追加**画面。  
   
-7.  次に、をクリックして**接続**エコー アダプタ (およびの仮定の基幹業務システムをサポートしています) に接続します。 しばらくすると、接続の状態を変更する必要があります**接続**とカテゴリ ツリー (**カテゴリを選択**) 設定する必要があります。  
+7.  次に、クリックして**Connect**エコー アダプター (および仮定の基幹業務システムをサポートしています) に接続します。 しばらくすると、接続の状態を変更する必要があります**接続**とカテゴリ ツリー (**カテゴリを選択**) 設定する必要があります。  
   
-8.  分類ツリーで、をクリックして**メイン カテゴリ**です。 これにより、利用可能なカテゴリと操作と、次の 3 つの送信操作の一覧が表示されます。 カテゴリされません。  
+8.  カテゴリのツリーで、クリックして**メイン カテゴリ**します。 利用可能なカテゴリと操作と、次の 3 つの送信操作の一覧が設定されます。 カテゴリされません。  
   
     > [!NOTE]
-    >  既定のコントラクトの種類は、送信です。 カテゴリの結果には、このコントラクトの型は一致します。  
+    >  既定のコントラクトの種類は、送信します。 カテゴリの結果には、このコントラクトの型は一致します。  
   
-9. **利用可能なカテゴリと操作**、3 つすべての操作を選択します。 多数の操作が存在する場合、選択範囲を絞り込む検索を使用する可能性があります。この場合はのみ 3 つあります。 をクリックして**追加**生成した WCF インターフェイスの選択した操作の一部に取り入れるためです。  
+9. **利用可能なカテゴリと操作**、3 つすべての操作を選択します。 多数の操作が存在する場合、選択範囲を絞り込むために検索を使用する場合があります。ここでは 3 種類のみです。 クリックして**追加**選択した操作を生成した WCF インターフェイスの一部にします。  
   
-10. をクリックして**OK** WCF インターフェイスを生成します。 アプリケーション構成ファイル (app.config) と WCF クライアント プロキシ (EchoAdapterBindingClient.cs) は、プロジェクトにこの追加されます。  
+10. クリックして**OK** WCF インターフェイスを生成します。 アプリケーション構成ファイル (app.config) と WCF クライアント プロキシ (EchoAdapterBindingClient.cs) は、プロジェクトにこれと追加されます。  
   
-11. をクリックして**ファイル**Visual Studio のメニューで選択**すべてを保存**です。  
+11. をクリックして**ファイル**、Visual Studio のメニューで選択**すべて保存**します。  
   
 ## <a name="configure-adapter-authentication"></a>アダプターの認証を構成します。  
   
-1.  Visual Studio ソリューション ウィンドウで、ダブルクリック**app.config**です。  
+1.  Visual Studio ソリューションのウィンドウで**app.config**します。  
   
 2.  検索、`address`属性、`endpoint`要素。 これは次のようになります。  
   
@@ -88,7 +88,7 @@ ms.locfileid: "23450523"
         contract="EchoOutboundContract" name="EchoAdapterBinding_EchoOutboundContract" />  
     ```  
   
-     変更**enableAuthentication**から**False**に**True**次のようにします。 資格情報をアダプターに渡す呼び出し元のアプリケーションが必要になります。  
+     変更**enableAuthentication**から**False**に**True**次のようです。 アダプターに資格情報を渡すには、呼び出し元のアプリケーションが必要になります。  
   
     ```  
     <endpoint address="echov2://lobhostname/lobapplication?enableAuthentication=True&echoInUpperCase=True"  
@@ -96,13 +96,13 @@ ms.locfileid: "23450523"
         contract="EchoOutboundContract" name="EchoAdapterBinding_EchoOutboundContract" />  
     ```  
   
-3.  クリックして、ソリューションを保存**ファイル**Visual Studio でメニュー**すべて保存**です。  
+3.  クリックして、ソリューションを保存**ファイル**Visual Studio でメニューを選択し、**すべて保存**します。  
   
 ## <a name="create-a-sample-xml-file"></a>サンプル XML ファイルを作成します。  
   
-1.  メモ帳のインスタンスを起動します。 [スタート] メニューを使用してクリックして**すべてのプログラム** &#124; **アクセサリ**を選択し**メモ帳**です。  
+1.  メモ帳のインスタンスを起動します。 [スタート] メニューを使用してをクリックして**すべてのプログラム** &#124; **アクセサリ**選び、**メモ帳**。  
   
-2.  メモ帳などのエディターに次のサンプル データをコピーします。  
+2.  メモ帳などのエディターには、次のサンプル データをコピーします。  
   
     ```  
     <?xml version="1.0" encoding="utf-16"?>  
@@ -118,21 +118,21 @@ ms.locfileid: "23450523"
     </ns0:greeting>              
     ```  
   
-3.  メモ帳のメニューをクリックして**ファイル**を選択し**名前を付けて保存しています**. "CustomGreetingInstance.xml"ファイル名の入力しのエンコーディングの Unicode を選択し、プロジェクト ディレクトリまたは別の適切な場所に保存します。 完全なパスとファイル名の後で参照に注意してください。  
+3.  メモ帳のメニューをクリックして**ファイル**を選択し**名前を付けて保存しています**. "CustomGreetingInstance.xml"ファイル名の入力し、エンコーディングの Unicode を選択し、プロジェクト ディレクトリまたは別の適切な場所に保存します。 完全なパスとファイル名の後で参照に注意してください。  
   
-4.  ファイルが正常に保存されるときに、テキスト エディターを閉じます。  
+4.  ファイルが正常に保存するときに、テキスト エディターを閉じます。  
   
 ## <a name="test-the-echo-adapter"></a>エコー アダプターをテストします。  
   
 1.  ソリューション エクスプ ローラーで、 **Program.cs**ファイル。  
   
-2.  Visual Studio エディターで、内部、 **Main**メソッド、生成された WCF クライアントのインスタンスを作成するコードの次の行を追加します。  
+2.  Visual Studio エディターでの内部、 **Main**メソッド、生成された WCF クライアントのインスタンスを作成するコードの次の行を追加します。  
   
     ```csharp  
     EchoOutboundContractClient client = new EchoOutboundContractClient();  
     ```  
   
-3.  これでアダプター用の資格情報を確立するコードを追加します。 エコー アダプタで認証が有効の場合、ユーザー名の有無が確認されますが、値を確認できません。  
+3.  これで、アダプターの資格情報を確立するコードを追加します。 エコー アダプターで認証が有効な場合はユーザー名の存在が確認されますが、値は確認されません。  
   
     ```csharp  
     // pass client credentials  
@@ -187,9 +187,9 @@ ms.locfileid: "23450523"
     Console.ReadLine();  
     ```  
   
-7.  EchoCustomGreetingsFromFile テスト コードでカスタムの案内応答は、前の手順で作成したファイルを使用しているかどうかを確認します。 ファイルの場所を反映するようにコードを変更します。  
+7.  EchoCustomGreetingsFromFile テスト コードでカスタムあいさつ文は、前の手順で作成したファイルを使用しているかどうかを確認します。 ファイルの場所を反映するようにコードを変更します。  
   
-8.  Visual Studio での**ファイル** メニューのをクリックして**すべて保存**です。  
+8.  Visual Studio での**ファイル** メニューのをクリックして**すべて保存**します。  
   
 9. アプリケーションを実行します。 次のような出力が表示されます。  
   
@@ -207,28 +207,28 @@ ms.locfileid: "23450523"
   
      **アダプターに対する EchoGreetings() メソッドを呼び出す.**  
   
-     **179665bb-db21-42ac-810e-77ebfa99d460 9/13/2007 3時 18分: 07 PM Hello World!加藤さん**  
+     **179665bb-db21-42ac-810e-77ebfa99d460 2007 年 9 月 13 日午後 3時 18分: 07 Hello World!Jane**  
   
-     **179665bb-db21-42ac-810e-77ebfa99d460 9/13/2007 3時 18分: 07 PM Hello World!加藤さん**  
+     **179665bb-db21-42ac-810e-77ebfa99d460 2007 年 9 月 13 日午後 3時 18分: 07 Hello World!Jane**  
   
-     **179665bb-db21-42ac-810e-77ebfa99d460 9/13/2007 3時 18分: 07 PM Hello World!加藤さん**  
+     **179665bb-db21-42ac-810e-77ebfa99d460 2007 年 9 月 13 日午後 3時 18分: 07 Hello World!Jane**  
   
-     **179665bb-db21-42ac-810e-77ebfa99d460 9/13/2007 3時 18分: 07 PM Hello World!加藤さん**  
+     **179665bb-db21-42ac-810e-77ebfa99d460 2007 年 9 月 13 日午後 3時 18分: 07 Hello World!Jane**  
   
-     **179665bb-db21-42ac-810e-77ebfa99d460 9/13/2007 3時 18分: 07 PM Hello World!加藤さん**  
+     **179665bb-db21-42ac-810e-77ebfa99d460 2007 年 9 月 13 日午後 3時 18分: 07 Hello World!Jane**  
   
      **アダプターに対する EchoCustomGreetingFromFile() メソッドを呼び出す.**  
   
      **Redmond へようこそ!Redmond**  
   
-10. プログラムを停止するのには Enter キーを押します。  
+10. プログラムを停止して Enter キーを押します。  
   
-## <a name="what-did-i-just-do"></a>でしただけは何ですか。  
- このステップでは、チュートリアル 1 で開発されたエコー アダプターによって公開される 3 つの送信操作用のテスト アプリケーションを作成します。 これを行うには、WCF サービスを生成、および WCF サービスをホストするためのコードを提供する、Visual Studio プロジェクトを作成します。 最後に、テスト アプリケーションを実行しました。  
+## <a name="what-did-i-just-do"></a>でしただけ何か。  
+ この手順では、チュートリアル 1 で開発されたエコー アダプターによって公開される 3 つの送信操作のテスト アプリケーションを作成します。 これを行うには、WCF サービスでは、生成された、および WCF サービスをホストするためのコードを提供する Visual Studio プロジェクトを作成します。 最後に、テスト アプリケーションを実行します。  
   
 ## <a name="next-steps"></a>次の手順  
- 受信操作をテストするに進みます[手順 2: エコー アダプターの受信ハンドラーのテスト](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-2-test-inbound-handler-of-the-echo-adapter.md)です。  
+ 受信操作をテストに進みます[手順 2。エコー アダプターの受信ハンドラーをテストする](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-2-test-inbound-handler-of-the-echo-adapter.md)します。  
   
 ## <a name="see-also"></a>参照  
   [チュートリアル 2: .NET からエコー アダプターを使用します。](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-2-consume-the-echo-adapter-from-net.md)   
- [手順 2: エコー アダプターの受信ハンドラーをテストする](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-2-test-inbound-handler-of-the-echo-adapter.md)
+ [手順 2:エコー アダプターの受信ハンドラーをテストする](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-2-test-inbound-handler-of-the-echo-adapter.md)

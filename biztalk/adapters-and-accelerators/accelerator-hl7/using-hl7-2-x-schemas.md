@@ -16,12 +16,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 155710a421eaaf98f551729a00d724cd9a29ce3b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a5ea42c0479d852e9b5ee74c2ee76e83f3555970
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36979563"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65286353"
 ---
 # <a name="using-hl7-2x-schemas"></a>HL7 2.X スキーマの使用
 このセクションでは、Microsoft でサポートされている正常性レベル 7 (HL7) の標準の 2.X バージョンをについて説明します[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]します。  

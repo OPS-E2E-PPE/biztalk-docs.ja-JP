@@ -1,5 +1,5 @@
 ---
-title: リモートまたはローカルのアプリケーションへのログオン |Microsoft ドキュメント
+title: リモートまたはローカル アプリケーションへのログオン |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,17 +12,17 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9469c4b93f8d1182ceffb08ff08294f72e7d424e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8c587ef3a6161a54034e0f74a432a3710e3333e4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22261818"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65328395"
 ---
-# <a name="logging-on-to-a-remote-or-local-application"></a>リモートまたはローカルのアプリケーションへのログオン
-ユーザーの関連資格情報を設定すると、ENTSSO (エンタープライズ シングル サインオン) を使用してアプリケーションにアクセスできます。 ユーザーがローカルである場合は、ENTSSO を使用して、Windows 以外のアプリケーション用の資格情報を取得できます。 また、ユーザーがリモートである場合は、ENTSSO を使用してローカル アプリケーション用の資格情報を取得できます。  
+# <a name="logging-on-to-a-remote-or-local-application"></a>リモートまたはローカル アプリケーションへのログオン
+ユーザーの資格情報関連の設定が完了したら後、は、アプリケーションへのアクセスを提供するのにエンタープライズ シングル サインオン サービス (ENTSSO) を使用できます。 ユーザーがローカルの場合は、ENTSSO を使用して非 Windows アプリケーションの資格情報を取得することができます。 これに対し、ユーザーがリモートの場合は、ENTSSO を使用してローカル アプリケーションの資格情報を取得することができます。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
- [ローカル ユーザー、Windows 以外のアプリケーションにログオンする方法](../core/how-to-log-a-local-user-on-to-a-non-windows-application.md)  
+ [ローカル ユーザー非 Windows アプリケーションにログオンする方法](../core/how-to-log-a-local-user-on-to-a-non-windows-application.md)  
   
- [リモート ユーザー、ローカルのアプリケーションにログオンする方法](../core/how-to-log-a-remote-user-on-to-a-local-application.md)
+ [リモート ユーザー アプリケーションをローカルにログオンする方法](../core/how-to-log-a-remote-user-on-to-a-local-application.md)

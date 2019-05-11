@@ -15,18 +15,18 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ab2aa48e126aafc7b2202547fd72806b5d471ef4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f0dc316f039e56271f4d5540e3853aa82287b20d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36976939"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65283995"
 ---
 # <a name="defending-against-denial-of-service-attacks"></a>サービス拒否攻撃から保護
-サービス拒否攻撃は Microsoft® のインストールを開始ユーザーでした[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]によって生じて、RNIFReceive.aspx ページが表示されます。 そのページに多数の空のメッセージを送信する場合があります。 このような攻撃を放置すると、ASPX 受信ページで発行されたイベントがイベント ログに収まりきらなくなる場合があります。  
+サービス拒否攻撃は Microsoft® のインストールを開始ユーザーでした[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]によって生じて、RNIFReceive.aspx ページが表示されます。 そのページに多数の空のメッセージを送信する場合があります。 場合はオフの場合、このような攻撃は、ASPX によって発行されたイベントをイベント ログをあふれでした左には、ページが表示されます。  
   
 ## <a name="defending-against-an-attack"></a>攻撃からの保護  
- サービス拒否攻撃からサーバーを守るには、イベント ログを適度なサイズに維持し、また大量のイベント数を処理する手段をとることをお勧めします。 たとえば、最大ログ サイズを設定する、イベントの上書きが可能な手段をとる、[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]® Management Instrumentation (WMI) を使用してログのサイズを管理するなどの方法があります。 詳細については、Microsoft のヘルプを参照してください。 [!INCLUDE[btsWinSvrNoVersion](../../includes/btswinsvrnoversion-md.md)]™ します。  
+ サーバーに対するサービス拒否攻撃を防御するために、適切なサイズのイベント ログを維持し、過度のイベントを処理する手順を実行することをお勧めします。 これには、最大ログ サイズを設定して、イベントを上書きするかを使用する方法を選択する[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]® ログのサイズを管理する Management Instrumentation (WMI)。 詳細については、Microsoft のヘルプを参照してください。 [!INCLUDE[btsWinSvrNoVersion](../../includes/btswinsvrnoversion-md.md)]™ します。  
   
 ## <a name="see-also"></a>参照  
  [構成、証明書、データベース、セキュリティの管理](manage-configuration-certificates-databases-security.md)

@@ -16,12 +16,12 @@ caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 729aaddba023d854d7ecfeb5644357f2383bc6b1
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ceb64bc73969015dec331d321dced5850ecb7d50
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37011587"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65323424"
 ---
 # <a name="optimizing-performance-of-the-msmq-adapter"></a>MSMQ アダプターのパフォーマンスを最適化します。
 MSMQ アダプターの最適化は、送信側と受信側で異なります。 受信側では、受信場所のプロパティを設定して、最適化を制御します。 送信側では、オーケストレーションを使用して、最適化を制御できます。  
@@ -40,7 +40,7 @@ MSMQ アダプターの最適化は、送信側と受信側で異なります。
   送信ポートと受信場所を別のコンピューターに配置した場合も、メモリ使用量を削減できます。  
   
 ## <a name="send-optimization"></a>送信側の最適化  
- 送信側では、サンプル オーケストレーションを使用することで、同等の単一メッセージ処理をアーカイブできます。 このサンプルでは、1 つのメッセージを送信した後、受信確認を受け取るまで次のメッセージの送信を待機します。 詳細については、[コードから MSMQ 受信場所の作成と送信ポートを方法](../core/how-to-create-msmq-receive-locations-and-send-ports-from-code.md)を参照してください。  
+ 送信側では、サンプル オーケストレーションを使用することで、同等の単一メッセージ処理をアーカイブできます。 このサンプルでは、1 つのメッセージを送信した後、受信確認を受け取るまで次のメッセージの送信を待機します。 詳細については、次を参照してください。[コードから MSMQ 受信場所の作成と送信ポートを方法](../core/how-to-create-msmq-receive-locations-and-send-ports-from-code.md)します。  
   
 ## <a name="remote-transactional-read-operations"></a>リモート トランザクションの読み取り操作  
  BizTalk Server、MSMQ アダプターがトランザクション MSMQ キューからのリモート読み取り操作をすることが可能です。  MSMQ 4.0 以降のバージョンがリモート トランザクションの読み取り操作をサポートしているためです。  しかし、一般に、トランザクションの読み取り操作には時間がかかります。 パフォーマンスを最適化するために、この操作は、他の選択肢がない場合にのみ使用してください。  

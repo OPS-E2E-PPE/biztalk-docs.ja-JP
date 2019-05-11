@@ -12,12 +12,12 @@ caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2d62e4cf0896e755a0ec8ece00d6a2140210b463
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 0fa2cb8756ce5d00109fbb17d042f43ec4a782b5
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36974603"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65367284"
 ---
 # <a name="configure-the-fileact-and-interact-adapter"></a>構成 FileAct および InterAct アダプター
 使用されるさまざまな成果物を構成、[!INCLUDE[swift_adapter](../../includes/swift-adapter-md.md)]ランタイム。 
@@ -31,7 +31,7 @@ ms.locfileid: "36974603"
   
 - SQL Server が実行されていることを確認します。
   
-## <a name="step-1-configure-the-fileact-and-interact-adapter"></a>手順 1: FileAct および InterAct アダプターを構成します。  
+## <a name="step-1-configure-the-fileact-and-interact-adapter"></a>手順 1:FileAct および InterAct アダプターを構成します。  
   
 1.  **Microsoft BizTalk FileAct と対話するアダプターの構成**ウィザードに移動して**概要**します。 左側のウィンドウで次のように選択します。**ランタイム**アダプターのランタイム コンポーネントを構成します。  
   
@@ -55,7 +55,7 @@ ms.locfileid: "36974603"
 
 次に、これらのアダプターを実行するには、ホストとホスト インスタンスを作成します。
 
-## <a name="step-2-create-the-host-and-host-instances"></a>手順 2: ホストとホスト インスタンスを作成します。
+## <a name="step-2-create-the-host-and-host-instances"></a>手順 2:ホストとホスト インスタンスを作成します。
 
 FileAct アダプターの専用ホストと InterAct アダプターの個別の専用ホストを作成することをお勧めします。 アダプターごとに少なくとも 1 つのホスト インスタンスを作成します。  
 
@@ -63,7 +63,7 @@ FileAct アダプターの専用ホストと InterAct アダプターの個別�
 
 作成されたら、次の手順は、送信ハンドラーを追加し、SWIFT Alliance ゲートウェイ (SAG) で作成したクライアントのメッセージのパートナーを使用するがします。
 
-## <a name="step-3-create-the-send-handler"></a>手順 3: 送信ハンドラーを作成します。
+## <a name="step-3-create-the-send-handler"></a>手順 3:送信ハンドラーを作成します。
 
 FileAct および InterAct ハンドラーのプロパティとして送信、送信ポートの構成値、個々 の FileAct プロパティが設定されていないか InterAct 送信ポートします。 
   
@@ -91,7 +91,7 @@ FileAct および InterAct ハンドラーのプロパティとして送信、�
 
 次に、SWIFTNet に paramfile に FileAct を有効にする、サーバー メッセージ パートナーを入力し、InterAct アダプターの受信します。
   
-## <a name="step-4-configure-the-swiftnet-param-file"></a>手順 4: SWIFTNet param ファイルを構成します。
+## <a name="step-4-configure-the-swiftnet-param-file"></a>手順 4:SWIFTNet param ファイルを構成します。
 
 有効にするには、FileAct および InterAct アダプターは SWIFTNet に paramfile に入力する必要があります SAG で作成したパートナー サーバーのメッセージの値で初期化するためを受信します。 Paramfile に通常格納されて`c:\SWIFTAlliance\RA\<remote access instance name\>\cfg\paramfile`します。 開始する前に paramfile を構成する**SnlReceiver.exe**します。  
   
@@ -126,14 +126,14 @@ FileAct および InterAct ハンドラーのプロパティとして送信、�
 
     1.  デスクトップで、選択、**リモート API**リモート API のコマンド プロンプトを開くにはアイコン。  
   
-    2.  コマンド プロンプトで「`Swiftnet start`します。 SnlReceiver.exe を開始するには ENTER を選択します。  
+    2.  コマンド プロンプトで、「`Swiftnet start`」と入力します。 SnlReceiver.exe を開始するには ENTER を選択します。  
   
-    3.  コマンド プロンプトで「`Swiftnet stop`します。 SnlReceiver.exe を停止するには ENTER を選択します。  
+    3.  コマンド プロンプトで、「`Swiftnet stop`」と入力します。 SnlReceiver.exe を停止するには ENTER を選択します。  
 
   
 次に、ファイルを更新**autoexec.bat** SWIFT 環境変数を設定します。
 
-## <a name="step-5-update-autoexecbat-to-configure-the-receive-adapters"></a>手順 5: 更新プログラムの autoexec.bat 受信アダプタを構成するには
+## <a name="step-5-update-autoexecbat-to-configure-the-receive-adapters"></a>手順 5:受信アダプターを構成する更新プログラムの autoexec.bat です。
 
 更新プログラム、 **autoexec.bat**をインストールしたコンピューターで、SWIFT 環境変数を設定するファイル、[!INCLUDE[swift_adapter](../../includes/swift-adapter-md.md)]受信アダプター。 環境変数は、パスにインストールされている受信アダプターがあるシステムから生成される`c:\SWIFTAlliance`という名前の受信アダプターのインスタンスと**Ra1**します。 適切に構成の SWIFT 環境変数を更新します。  
   
@@ -169,7 +169,7 @@ SET Path=%PATH%;C:\SWIFTAlliance\RA\lib
 ```  
   
 ## <a name="see-some-examples"></a>いくつかの例を参照してください。
-FileAct および InterAct メッセージの例については、[サンプルを操作および FileAct メッセージ](../../adapters-and-accelerators/fileact-interact/sample-interact-and-fileact-messages.md)を参照してください。  
+FileAct および InterAct メッセージの例については、次を参照してください。[サンプルを操作および FileAct メッセージ](../../adapters-and-accelerators/fileact-interact/sample-interact-and-fileact-messages.md)します。  
   
 ## <a name="see-also"></a>参照  
 

@@ -12,12 +12,12 @@ caps.latest.revision: 27
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b6de75a2955632f4f8e0daae2a2035e90f1f2fca
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b8a03cf97fa031a1e5b141fab79c3711e744bd49
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36988395"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65375419"
 ---
 # <a name="limitations-of-biztalk-adapter-for-oracle-e-business-suite"></a>BizTalk adapter for Oracle E-business Suite の制限事項
 ## <a name="general-limitations"></a>一般的な制限事項  
@@ -64,7 +64,7 @@ ms.locfileid: "36988395"
   
 - [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] IN OUT パラメーターとして BLOB、CLOB、NCLOB データ型が含まれている Udt をサポートしていません。  
   
-- [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] Varray の Varray の次の単純型をサポートしていません: BFILE、IntervalDS、IntervalYM、TimeStampLTZ、および TimeStampTZ します。  
+- [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] Varray の Varray の次の単純型をサポートしていません。BFILE、IntervalDS、IntervalYM、TimeStampLTZ、および TimeStampTZ します。  
   
 - 連想配列の制限のため PL/SQL テーブルまたは次のデータ型のいずれかが含まれているレコードの PL/SQL テーブルでサポートされていない、 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]:  
   

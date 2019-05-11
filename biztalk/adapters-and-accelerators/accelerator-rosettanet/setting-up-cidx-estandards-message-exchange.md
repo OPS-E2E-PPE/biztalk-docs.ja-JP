@@ -14,12 +14,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f2aef1c49ca4bb87ef2e9388b9cdfcc86d2f35f1
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c6f1045e3a9562821c64e74df300ccbf9ab279d7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36988867"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65281729"
 ---
 # <a name="setting-up-cidx-estandards-message-exchange"></a>CIDX eStandards メッセージ交換
 ここでは、Chemical Data Exchange (CIDX) eStandards メッセージ交換のセットアップ方法を説明します。 CIDX では、次の 3 つのプロパティが次のように設定されている必要があります。  
@@ -30,7 +30,7 @@ ms.locfileid: "36988867"
   
 - `0A1 agreement` プロパティを取引先アグリーメントに**非 0A1**  
   
-  CIDX と RosettaNet の違いについては、[CIDX サポート](../../adapters-and-accelerators/accelerator-rosettanet/cidx-support.md)を参照してください。  
+  CIDX と RosettaNet の違いについては、次を参照してください。 [CIDX サポート](../../adapters-and-accelerators/accelerator-rosettanet/cidx-support.md)します。  
   
 ### <a name="to-set-up-cidx-message-exchange"></a>CIDX メッセージ交換をセットアップするには  
   

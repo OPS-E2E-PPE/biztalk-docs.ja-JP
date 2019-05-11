@@ -1,5 +1,5 @@
 ---
-title: 作成して、Contoso ソリューションの構成 |Microsoft ドキュメント
+title: 作成して、Contoso ソリューションの構成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,28 +15,28 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6cef247bff0c57bd39fbdda9d1a01710bcca0fab
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: fc1794dd91bd1e689c6e24d20ffe57369b67fdf4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22209738"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65284311"
 ---
 # <a name="creating-and-configuring-the-contoso-solution"></a>作成して、Contoso ソリューションを構成します。
-ここでは、Contoso 社側で従う必要のある手順の詳細について説明します。 Contoso 社はメーカーであるため、受信したすべての PIP (Partner Interface Process) 要求への応答側として機能します。 このチュートリアルでは、4 つの PIP 用のパートナー アグリーメントを作成し、PIP の種類に基づいて適切な応答を送信するためのオーケストレーションを構築および展開します。  
+このチュートリアルのこのセクションでは、Contoso 組織に従う必要のある手順について説明します。 Contoso 組織は、製造元を表し、ため、すべての受信プロセス PIP (Partner Interface) 要求に応答側として機能します。 このチュートリアルでビルドし、PIP の種類に基づいて適切な応答を送信するオーケストレーションを展開する 4 つの Pip 用のパートナー アグリーメントを作成します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [手順 1: Contoso ホーム組織の作成](../../adapters-and-accelerators/accelerator-rosettanet/step-1-creating-the-contoso-home-organization.md)  
+-   [ステップ 1: Contoso ホーム組織の作成](../../adapters-and-accelerators/accelerator-rosettanet/step-1-creating-the-contoso-home-organization.md)  
   
--   [手順 2: Fabrikam パートナー組織の作成](../../adapters-and-accelerators/accelerator-rosettanet/step-2-creating-the-fabrikam-partner-organization.md)  
+-   [手順 2:Fabrikam 取引先組織の作成](../../adapters-and-accelerators/accelerator-rosettanet/step-2-creating-the-fabrikam-partner-organization.md)  
   
--   [手順 3: Contoso 0 C 2 取引先アグリーメントの作成](../../adapters-and-accelerators/accelerator-rosettanet/step-3-creating-the-contoso-0c2-trading-partner-agreement.md)  
+-   [ステップ 3:Contoso 0C2 取引先契約の作成](../../adapters-and-accelerators/accelerator-rosettanet/step-3-creating-the-contoso-0c2-trading-partner-agreement.md)  
   
--   [手順 4: Contoso 0 C 4 取引先アグリーメントの作成](../../adapters-and-accelerators/accelerator-rosettanet/step-4-creating-the-contoso-0c4-trading-partner-agreement.md)  
+-   [手順 4:Contoso 0C4 取引先契約の作成](../../adapters-and-accelerators/accelerator-rosettanet/step-4-creating-the-contoso-0c4-trading-partner-agreement.md)  
   
--   [手順 5: Contoso 3 a 2 取引先アグリーメントの作成](../../adapters-and-accelerators/accelerator-rosettanet/step-5-creating-the-contoso-3a2-trading-partner-agreement.md)  
+-   [手順 5:Contoso 3A2 取引先契約の作成](../../adapters-and-accelerators/accelerator-rosettanet/step-5-creating-the-contoso-3a2-trading-partner-agreement.md)  
   
--   [手順 6: Contoso 3A4 取引先アグリーメントの作成](../../adapters-and-accelerators/accelerator-rosettanet/step-6-creating-the-contoso-3a4-trading-partner-agreement.md)  
+-   [手順 6:Contoso 3A4 取引先契約の作成](../../adapters-and-accelerators/accelerator-rosettanet/step-6-creating-the-contoso-3a4-trading-partner-agreement.md)  
   
--   [手順 7: ビルドと DoubleAction SDK サンプルの展開](../../adapters-and-accelerators/accelerator-rosettanet/step-7-building-and-deploying-the-doubleaction-sdk-sample.md)
+-   [手順 7:DoubleAction SDK サンプルのビルドと展開](../../adapters-and-accelerators/accelerator-rosettanet/step-7-building-and-deploying-the-doubleaction-sdk-sample.md)

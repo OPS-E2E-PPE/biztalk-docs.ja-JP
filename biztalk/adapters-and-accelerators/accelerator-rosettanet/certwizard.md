@@ -16,18 +16,18 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d1ec4cebd4172ce8f95cb4add2af084ab026d295
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b028deda4ef180a4983e1c58fa7a9487804a0232
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36992379"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65284779"
 ---
 # <a name="certwizard"></a>CertWizard
 CertWizard ユーティリティを使用して Microsoft® で使用するためのプライベートまたはパブリック ストアに .pfx または .cer ファイルから証明書をインポートする[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]します。  
   
 ## <a name="location-in-sdk"></a>SDK でのパス  
- \<*ドライブ*\>\Program Files (x86)\\Microsoft BizTalk\<バージョン\>Accelerator for rosettanet \sdk\  
+ \<*drive*\>\Program Files (x86)\\Microsoft  BizTalk \<version\> Accelerator for RosettaNet\SDK\  
   
 ## <a name="running-certwizard"></a>CertWizard の実行  
   
@@ -61,25 +61,25 @@ CertWizard /Rootkey <filename>.cer [/Thumbprint <thumbprint>]
 ```  
   
 ### <a name="syntax-description"></a>構文の説明  
- 次の表に、CertWizard ユーティリティが使用する構文の各要素について説明します。  
+ 次の表では、CertWizard ユーティリティを使用する構文の各部について説明します。  
   
 |**構文**|**[説明]**|  
 |----------------|---------------------|  
 |**プライベート キー**|秘密キーをインポートするために使用します。|  
 |**公開鍵**|公開キーをインポートするために使用します。|  
-|**Rootkey**|ルート キーを証明機関からインポートするために使用します。|  
-|**filename.pfx (または .cer)**|.pfx (秘密キー) ファイルまたは .cer (公開キー) ファイルの完全なパス。|  
-|**Filepassword**|.pfx ファイルのロックを解除するために必要なパスワード。|  
-|**割り当てられていません**|1 つまたは複数の BizTalk ホストが使用するサービス ID。 ホストを指定せずに、ユーザー アカウントを使用して証明書をインポートするには、適切なユーザー アカウントを入力します。 **注:** を追加しない場合、 **Useridentity**切り替えるには、このユーティリティをインポートし、すべてのユーザーの証明書を設定します。 **注:** を追加する場合、 **Useridentity**切り替えるが、値を入力しない WMI は、ユーザー id を自動的に生成されます。|  
-|**Password**|サービス ID ユーザーのパスワード。|  
-|**拇印**|ファイルに複数の証明書が含まれている場合に使用する、特定の証明書の拇印。 **注:** 公開証明書ファイルの場合、ファイルには 1 つ以上の証明書が含まれていて、拇印を指定しないユーティリティ インポート ファイル内のすべての証明書。 プライベート証明書ファイルの場合は、インポートする証明書を選択するように求めるメッセージが表示されます。|  
-|**使用方法**|インポートしたプライベート証明書の用途。 sign (署名証明書に使用可能)、decrypt (暗号化解除証明書に使用可能)、both (署名証明書と暗号化解除証明書のいずれでもある証明書に使用可能)、または none (署名証明書と暗号化解除証明書のいずれでもある証明書に使用可能) を指定できます。 **注:** 設定した場合、 **/Usage**スイッチを none に、ウィザードでは、BizTalk ホストと BizTalk グループに証明書の拇印は設定しません。|  
-|**エクスポート可能**|`True`または`False`します。 `True` に指定すると、秘密キーを再エクスポートできます。|  
+|**Rootkey**|ルート キーのインポートに使用される、証明機関から。|  
+|**filename.pfx (または .cer)**|.Pfx (秘密キー) または .cer (公開キー) ファイルの完全パス。|  
+|**Filepassword**|.Pfx ファイルのロック解除に必要なパスワード。|  
+|**割り当てられていません**|1 つまたは複数の BizTalk ホストを使用するサービス id を指定します。 ホストを指定したくないが、ユーザー アカウントで証明書をインポートする場合は、ユーザー アカウントを入力します。 **注:** 追加しない場合、 **Useridentity**切り替えるには、このユーティリティをインポートし、すべてのユーザーの証明書を設定します。 **注:** 追加する場合、 **Useridentity**切り替えるが、値を入力しない WMI は、ユーザー id を自動的に生成されます。|  
+|**Password**|サービス id ユーザーのパスワード。|  
+|**拇印**|ファイルの場合も、特定の証明書の拇印には、1 つ以上の証明書が含まれています。 **注:** 公開証明書ファイルの場合、ファイルには、1 つ以上の証明書が含まれていて、拇印を指定しない場合、ユーティリティは、ファイル内のすべての証明書をインポートします。 プライベート証明書ファイルの場合、ユーティリティにインポートする証明書を選択するように求められます。|  
+|**使用方法**|インポートしたプライベート証明書の用途。 Sign (署名証明書の場合)、decrypt (暗号化解除証明書)、両方 (証明書の署名証明書と暗号化解除証明書の両方である)、または none (も証明書は署名証明書と暗号化解除証明書の両方を指定できます。). **注:** 設定した場合、 **/Usage**スイッチを none に、ウィザードでは、BizTalk ホストと BizTalk グループに証明書の拇印は設定しません。|  
+|**エクスポート可能**|`True`または`False`します。 場合`True`、秘密キーを再エクスポートできます。|  
   
 ## <a name="remarks"></a>コメント  
- CertWizard は、.pfx ファイルの秘密キーを個人用ストアにインポートし、.cer ファイルの公開キーをパブリック ストアにインポートします。 秘密キーをインポートする場合は、着信メッセージの証明書に暗号化解除証明書を指定するか、送信メッセージの証明書に署名証明書を指定できます。  
+ CertWizard は、個人用ストアに秘密キーを .pfx ファイルからインポートし、.cer ファイルから公開キーをパブリック ストアにインポートします。 秘密キーをインポートするときに、証明書は受信メッセージの復号化証明書または送信メッセージの署名証明書を指定できます。  
   
- コマンド プロンプトで完全なコマンドを指定しないと、必須の値を指定するように求めるメッセージが表示されます。  
+ CertWizard は、コマンド プロンプトで完全なコマンドを指定しないと、必要な値を指定することが求められます。  
   
 ## <a name="see-also"></a>参照  
  [ユーティリティ](../../adapters-and-accelerators/accelerator-rosettanet/utilities1.md)   

@@ -1,5 +1,5 @@
 ---
-title: '手順 3: テストのシナリオをバッチ内に Batch |Microsoft Docs'
+title: 手順 3:テスト シナリオをバッチ内に Batch |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dcbbed83d8828aeb7169ea5fcdbe11ad343c353e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2c619c6f6ba1ee874c6b6eb54b9e499957d1dcee
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36999371"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65288190"
 ---
-# <a name="step-3-test-the-batch-inbatch-out-scenario"></a>手順 3: テストのバッチ処理/バッチ アウト シナリオ
+# <a name="step-3-test-the-batch-inbatch-out-scenario"></a>手順 3:テストのバッチ処理/バッチ アウト シナリオ
 この手順では、バッチをテストで/バッチ アウト チュートリアル で、バッチ内のテスト インスタンスを削除/フォルダーにメッセージをバッチ処理します。 送信ポートを設定することは、メッセージを送信、受信ポートによって受信されます、および受信パイプラインが処理され、コピー先のフォルダーにドロップします。  
   
 ### <a name="to-test-the-batch-inbatch-out-scenario"></a>バッチをテストするで/バッチ アウト シナリオ  
@@ -40,14 +40,14 @@ ms.locfileid: "36999371"
   
   |MSH.9|MSH.10|MSH.3|MSH.5|  
   |-----------|------------|-----------|-----------|  
-  |ADT ^ A03|000001|Tutorial_BatchSource|MESA_IS|  
-  |ADT ^ A03|000002|Tutorial_BatchSource|MESA_IS|  
+  |ADT^A03|000001|Tutorial_BatchSource|MESA_IS|  
+  |ADT^A03|000002|Tutorial_BatchSource|MESA_IS|  
   
    2 番目のメッセージは、次のフィールドで、バッチ メッセージへの応答で送信される 1 つのアプリケーションの受信確認をする必要があります。  
   
   |MSH.9|MSH.3|MSH.5|MSA.1|MSA.2|  
   |-----------|-----------|-----------|-----------|-----------|  
-  |ACK ^ A03 ^ ACK|MESA_IS|Tutorial_BatchSource|AA|000001|  
+  |ACK^A03^ACK|MESA_IS|Tutorial_BatchSource|AA|000001|  
   
 ## <a name="see-also"></a>参照  
  [パート 1: 断片化した受信バッチのシナリオ](../../adapters-and-accelerators/accelerator-hl7/part-1-fragmented-inbound-batch-scenario.md)   

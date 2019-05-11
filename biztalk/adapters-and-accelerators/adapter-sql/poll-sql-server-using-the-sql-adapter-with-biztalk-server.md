@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 971de39bff2149b1b6bdb5d20d6e8b721821a8ea
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f6fb95d5d070e53ae21e74ee101c04608b6599c5
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36996443"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65368487"
 ---
 # <a name="poll-sql-server-using-the-sql-adapter-with-biztalk-server"></a>BizTalk Server と SQL アダプタを使用して SQL Server をポーリング
 構成することができます、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]を SQL Server からのポーリングに基づいたデータ変更メッセージを受信します。 データベースをポーリングするアダプターを実行するポーリング ステートメントを指定することができます。 ポーリング ステートメントには、SELECT ステートメントまたはストアド プロシージャを返す結果セットを使用できます。 受信したメッセージのポーリングの種類に基づいて、アダプターは、ポーリングの 3 つの方法を公開します。  
@@ -26,9 +26,9 @@ ms.locfileid: "36996443"
   
 - **TypedPolling**します。 この操作は、厳密に型指定されたポーリング メッセージを返します。 デザイン時に、データベース オブジェクトのスキーマも使用できます。 別の操作である可能性がある別のスキーマにポーリング メッセージから特定の要素をマップする場合をポーリングするためには、この操作を使用する必要があります。  
   
-- **XmlPolling**します。 この操作は、XML メッセージとしてポーリング メッセージを返します。 SELECT ステートメントまたは XML メッセージとしてデータを返す FOR XML 句を使用するストアド プロシージャを使用する場合、この操作を使用する必要があります。 FOR XML 句の詳細については、[FOR XML (SQL Server)](https://msdn.microsoft.com/library/ms178107.aspx)を参照してください。 
+- **XmlPolling**します。 この操作は、XML メッセージとしてポーリング メッセージを返します。 SELECT ステートメントまたは XML メッセージとしてデータを返す FOR XML 句を使用するストアド プロシージャを使用する場合、この操作を使用する必要があります。 FOR XML 句の詳細については、次を参照してください。 [FOR XML (SQL Server)](https://msdn.microsoft.com/library/ms178107.aspx)します。 
   
-  これらのポーリング操作の詳細については、[のポーリング サポート](https://msdn.microsoft.com/library/dd788416.aspx)を参照してください。  
+  これらのポーリング操作の詳細については、次を参照してください。[のポーリング サポート](https://msdn.microsoft.com/library/dd788416.aspx)します。  
   
 > [!NOTE]
 >  [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]によりアダプターでクライアントに、同じデータベースまたはテーブルの 1 つ以上のポーリングや TypedPolling 操作を 1 つの BizTalk アプリケーションがあります。 アダプターには、このようなシナリオをサポートするには、一意の ID が含まれています — **InboundID**— 接続 URI。 接続 URI に追加されたときに、この ID になります一意、単一の BizTalk アプリケーションで複数のポーリング操作できるようにします。  

@@ -13,15 +13,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e8f09634-5adb-4782-bf48-8b24b0a7e630
 ms.author: mandia
-ms.openlocfilehash: 078b8d7304bfae50fa9084b4ecd4e482780d22d4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: fb725c887de1a9fc91f87d92d3176c6e06b2ece1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36978347"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65283372"
 ---
 # <a name="about-the-rosettanet-accelerator"></a>RosettaNet アクセラレータの概要
-Microsoft®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]ハイテク間のデータ交換の完全なソリューションが RosettaNet 規格に基づいてコンピューター アプリケーションを製造します。 この一連のドキュメントを参照して、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] のサービス、性能、および機能について理解してください。  
+Microsoft®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]ハイテク間のデータ交換の完全なソリューションが RosettaNet 規格に基づいてコンピューター アプリケーションを製造します。 このドキュメントは、サービス、機能、および機能の理解にセットを使用して、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]します。  
   
 ## <a name="next-steps"></a>次のステップ 
   
