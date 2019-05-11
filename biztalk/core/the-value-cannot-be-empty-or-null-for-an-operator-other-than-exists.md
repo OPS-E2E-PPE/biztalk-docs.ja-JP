@@ -12,28 +12,28 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: da58cdbb1ba351d5f9500587facc99026a503176
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 56f3e45a11ee6740f98ef277d95382eaa32c2126
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36977331"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65254380"
 ---
-# <a name="the-value-cannot-be-empty-or-null-for-an-operator-other-than-exists"></a><span data-ttu-id="a0498-102">Exists 以外の演算子の値は空または Null にできません</span><span class="sxs-lookup"><span data-stu-id="a0498-102">The value cannot be empty or null for an operator other than Exists</span></span>
-## <a name="details"></a><span data-ttu-id="a0498-103">詳細</span><span class="sxs-lookup"><span data-stu-id="a0498-103">Details</span></span>  
+# <a name="the-value-cannot-be-empty-or-null-for-an-operator-other-than-exists"></a><span data-ttu-id="dba9f-102">Exists 以外の演算子の値は空または Null にできません</span><span class="sxs-lookup"><span data-stu-id="dba9f-102">The value cannot be empty or null for an operator other than Exists</span></span>
+## <a name="details"></a><span data-ttu-id="dba9f-103">詳細</span><span class="sxs-lookup"><span data-stu-id="dba9f-103">Details</span></span>  
   
 |                 |                                                                                        |
 |-----------------|----------------------------------------------------------------------------------------|
-|  <span data-ttu-id="a0498-104">製品名</span><span class="sxs-lookup"><span data-stu-id="a0498-104">Product Name</span></span>   |   [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]   |
-| <span data-ttu-id="a0498-105">製品バージョン</span><span class="sxs-lookup"><span data-stu-id="a0498-105">Product Version</span></span> |               [!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]               |
-|    <span data-ttu-id="a0498-106">イベント ID</span><span class="sxs-lookup"><span data-stu-id="a0498-106">Event ID</span></span>     |                                           -                                            |
-|  <span data-ttu-id="a0498-107">イベント ソース</span><span class="sxs-lookup"><span data-stu-id="a0498-107">Event Source</span></span>   | [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="a0498-108"> EDI</span><span class="sxs-lookup"><span data-stu-id="a0498-108"> EDI</span></span> |
-|    <span data-ttu-id="a0498-109">コンポーネント</span><span class="sxs-lookup"><span data-stu-id="a0498-109">Component</span></span>    |                                    <span data-ttu-id="a0498-110">バッチ処理エンジン</span><span class="sxs-lookup"><span data-stu-id="a0498-110">Batching Engine</span></span>                                     |
-|  <span data-ttu-id="a0498-111">シンボル名</span><span class="sxs-lookup"><span data-stu-id="a0498-111">Symbolic Name</span></span>  |                                <span data-ttu-id="a0498-112">ValueCannotBeNullOrEmpty</span><span class="sxs-lookup"><span data-stu-id="a0498-112">ValueCannotBeNullOrEmpty</span></span>                                |
-|  <span data-ttu-id="a0498-113">メッセージ テキスト</span><span class="sxs-lookup"><span data-stu-id="a0498-113">Message Text</span></span>   |          <span data-ttu-id="a0498-114">Exists 以外の演算子の値は空または Null にできません</span><span class="sxs-lookup"><span data-stu-id="a0498-114">The value cannot be empty or null for an operator other than Exists</span></span>           |
+|  <span data-ttu-id="dba9f-104">製品名</span><span class="sxs-lookup"><span data-stu-id="dba9f-104">Product Name</span></span>   |   [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]   |
+| <span data-ttu-id="dba9f-105">製品バージョン</span><span class="sxs-lookup"><span data-stu-id="dba9f-105">Product Version</span></span> |               [!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]               |
+|    <span data-ttu-id="dba9f-106">イベント ID</span><span class="sxs-lookup"><span data-stu-id="dba9f-106">Event ID</span></span>     |                                           -                                            |
+|  <span data-ttu-id="dba9f-107">イベント ソース</span><span class="sxs-lookup"><span data-stu-id="dba9f-107">Event Source</span></span>   | [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] <span data-ttu-id="dba9f-108">EDI</span><span class="sxs-lookup"><span data-stu-id="dba9f-108">EDI</span></span> |
+|    <span data-ttu-id="dba9f-109">コンポーネント</span><span class="sxs-lookup"><span data-stu-id="dba9f-109">Component</span></span>    |                                    <span data-ttu-id="dba9f-110">バッチ処理エンジン</span><span class="sxs-lookup"><span data-stu-id="dba9f-110">Batching Engine</span></span>                                     |
+|  <span data-ttu-id="dba9f-111">シンボル名</span><span class="sxs-lookup"><span data-stu-id="dba9f-111">Symbolic Name</span></span>  |                                <span data-ttu-id="dba9f-112">ValueCannotBeNullOrEmpty</span><span class="sxs-lookup"><span data-stu-id="dba9f-112">ValueCannotBeNullOrEmpty</span></span>                                |
+|  <span data-ttu-id="dba9f-113">メッセージ テキスト</span><span class="sxs-lookup"><span data-stu-id="dba9f-113">Message Text</span></span>   |          <span data-ttu-id="dba9f-114">Exists 以外の演算子の値は空または Null にできません</span><span class="sxs-lookup"><span data-stu-id="dba9f-114">The value cannot be empty or null for an operator other than Exists</span></span>           |
   
-## <a name="explanation"></a><span data-ttu-id="a0498-115">説明</span><span class="sxs-lookup"><span data-stu-id="a0498-115">Explanation</span></span>  
- <span data-ttu-id="a0498-116">このエラー/警告/情報イベントは、[バッチ フィルター] ダイアログ ボックスのプロパティ行に入力された値が無効であったことを示します。演算子が Exists ではないにもかかわらず、入力された値が空または Null でした。</span><span class="sxs-lookup"><span data-stu-id="a0498-116">This Error/Warning/Information event indicates that a value entered for a property in a row of the Batch Filter dialog box was invalid, because the operator was not Exists, but the value entered was either empty or null.</span></span>  
+## <a name="explanation"></a><span data-ttu-id="dba9f-115">説明</span><span class="sxs-lookup"><span data-stu-id="dba9f-115">Explanation</span></span>  
+ <span data-ttu-id="dba9f-116">このエラー/警告/情報イベントは、[バッチ フィルター] ダイアログ ボックスのプロパティ行に入力された値が無効であったことを示します。演算子が Exists ではないにもかかわらず、入力された値が空または Null でした。</span><span class="sxs-lookup"><span data-stu-id="dba9f-116">This Error/Warning/Information event indicates that a value entered for a property in a row of the Batch Filter dialog box was invalid, because the operator was not Exists, but the value entered was either empty or null.</span></span>  
   
-## <a name="user-action"></a><span data-ttu-id="a0498-117">ユーザーの操作</span><span class="sxs-lookup"><span data-stu-id="a0498-117">User Action</span></span>  
- <span data-ttu-id="a0498-118">このエラーを解決するには、[EDI のプロパティ] ダイアログ ボックスの [インターチェンジ バッチ作成用の設定] ページで [バッチ フィルター] ダイアログ ボックスを開きます。</span><span class="sxs-lookup"><span data-stu-id="a0498-118">To resolve this error, open the Batch Filter dialog box from within the Interchange Batch Creation Settings page of the EDI Properties dialog box.</span></span> <span data-ttu-id="a0498-119">行の演算子が Exists ではない場合は、入力した値が空または Null のいずれでもないことを確認してください。</span><span class="sxs-lookup"><span data-stu-id="a0498-119">Make sure that if the operator for a row is not Exists, the value entered is neither empty nor null.</span></span>
+## <a name="user-action"></a><span data-ttu-id="dba9f-117">ユーザーの操作</span><span class="sxs-lookup"><span data-stu-id="dba9f-117">User Action</span></span>  
+ <span data-ttu-id="dba9f-118">このエラーを解決するには、[EDI のプロパティ] ダイアログ ボックスの [インターチェンジ バッチ作成用の設定] ページで [バッチ フィルター] ダイアログ ボックスを開きます。</span><span class="sxs-lookup"><span data-stu-id="dba9f-118">To resolve this error, open the Batch Filter dialog box from within the Interchange Batch Creation Settings page of the EDI Properties dialog box.</span></span> <span data-ttu-id="dba9f-119">行の演算子が Exists ではない場合は、入力した値が空または Null のいずれでもないことを確認してください。</span><span class="sxs-lookup"><span data-stu-id="dba9f-119">Make sure that if the operator for a row is not Exists, the value entered is neither empty nor null.</span></span>
