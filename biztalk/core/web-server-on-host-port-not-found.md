@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 62f9260f477669debf709ba592568a15fbaf7194
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: adad9ab9e2e5bbe3a23401a4c893a8d581b6c742
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36987147"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65250147"
 ---
 # <a name="web-server-on-host-port-not-found"></a>ホスト ポートの Web サーバーが見つかりません
 ## <a name="details"></a>詳細  
@@ -36,7 +36,7 @@ ms.locfileid: "36987147"
  このエラーは、World Wide Web (WWW) サービスが実行されていないことを示します。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- World Wide Web サービスを開始するには、次の手順に従います。  
+ World Wide Web サービスを開始するのにには、次の手順を使用します。  
   
 #### <a name="to-start-the-world-wide-web-service"></a>World Wide Web サービスを開始するには  
   
@@ -46,6 +46,6 @@ ms.locfileid: "36987147"
   
 3.  戻り、**管理ツール**ウィンドウ。 ダブルクリック**インターネット インフォメーション サービス**します。  
   
-4.  フォルダー領域を展開し、Web サイトを探します。  
+4.  フォルダーの領域を展開し、web サイトを探します。  
   
 5.  状態があることを確認**開始**します。

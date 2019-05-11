@@ -22,18 +22,18 @@ caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2b289e2c37797d10e8676f2d8d948090c9eb59fd
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2ebd27317b549e773fd9c1a1f5c8e24a4c1f0d12
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37005107"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65254487"
 ---
 # <a name="selectivebindingimport-application-deployment-sample"></a>SelectiveBindingImport (アプリケーションの展開サンプル)
 このトピックでは、SelectiveBindingImport サンプルの使用方法について説明します。 このサンプル スクリプトを使用すると、1 つのアプリケーションをさまざまな展開先環境にインポートするときに、異なるバインドをそのアプリケーションに適用できます。 この方法は、ネットワーク共有に格納されているバインド ファイルからバインドをインポートするときに使用できます。  
   
 > [!NOTE]
->  アプリケーションのインポート中にネットワーク共有からバインド ファイルを自動的にインポートする必要がない場合は、異なる展開先環境が指定されている各種のバインド ファイルをアプリケーションに追加できます。 アプリケーションをインポートするときは、環境を指定でき、その環境のバインドが自動的に適用されます。 詳細については、[バインド ファイルとアプリケーションの展開](../core/binding-files-and-application-deployment.md)を参照してください。  
+>  アプリケーションのインポート中にネットワーク共有からバインド ファイルを自動的にインポートする必要がない場合は、異なる展開先環境が指定されている各種のバインド ファイルをアプリケーションに追加できます。 アプリケーションをインポートするときは、環境を指定でき、その環境のバインドが自動的に適用されます。 詳細については、次を参照してください。[バインド ファイルとアプリケーションの展開](../core/binding-files-and-application-deployment.md)します。  
   
  BizTalk アプリケーションは、通常は開発環境からテスト環境、ステージング環境、実稼働環境へと順番に移動されます。 通常は、各環境で異なるバインドが使用されます。 このサンプルを使用すると、各種の環境のバインドを次のように適用できます。  
   
@@ -70,11 +70,11 @@ ms.locfileid: "37005107"
   
 ### <a name="to-run-the-sample"></a>サンプルを実行するには  
   
-1. 実行**から Build.Bat、 *\<サンプル パス\>* \Application Deployment\CreateApp**ディレクトリ。 これで、次のファイルを作成、 *\<サンプル パス\>* \Application Deployment\CreateApp\Dlls フォルダー: Schemas.dll、Maps.dll、および Orchestrations.dll します。  
+1. 実行**から Build.Bat、 *\<サンプル パス\>* \Application Deployment\CreateApp**ディレクトリ。 これで、次のファイルを作成、 *\<サンプル パス\>* \Application Deployment\CreateApp\Dlls フォルダー。Schemas.dll、Maps.dll、および Orchestrations.dll です。  
   
 2. **アプリケーションを作成します。** BizTalk Server 管理コンソールで必要」の説明に従って、アプリケーションを作成[アプリケーションを作成する方法](../core/how-to-create-an-application.md)します。  
   
-3. **.Dll ファイルが最初の手順で作成したアプリケーションを追加します。** 手順については、[アプリケーションに BizTalk アセンブリを追加する方法](../core/how-to-add-a-biztalk-assembly-to-an-application.md)を参照してください。  
+3. **.Dll ファイルが最初の手順で作成したアプリケーションを追加します。** 手順については、次を参照してください。[アプリケーションに BizTalk アセンブリを追加する方法](../core/how-to-add-a-biztalk-assembly-to-an-application.md)します。  
   
 4. **次のように、環境変数を作成します。**  
   
@@ -86,7 +86,7 @@ ms.locfileid: "37005107"
   
    4.  **変数名**、型**環境**します。  
   
-   5.  **変数値**、環境の次の値の型:**開発**、**運用**、**ステージング**、または**テスト**します。 これらの値では、大文字と小文字が区別されます。  
+   5.  **変数値**環境の次の値の型。**開発**、**運用**、**ステージング**、または**テスト**します。 これらの値では、大文字と小文字が区別されます。  
   
 5. クリックして**OK** 3 回です。  
   
@@ -106,13 +106,13 @@ ms.locfileid: "37005107"
   
         APPLICATION_Name=SelectiveBindingImport  
   
-8. **処理後のスクリプトとしてアプリケーションにスクリプトを追加します。** 手順については、[より前に追加する方法または処理後のスクリプトをアプリケーションに](../core/how-to-add-a-pre-or-post-processing-script-to-an-application.md)を参照してください。  
+8. **処理後のスクリプトとしてアプリケーションにスクリプトを追加します。** 手順については、次を参照してください。[より前に追加する方法または処理後のスクリプトをアプリケーションに](../core/how-to-add-a-pre-or-post-processing-script-to-an-application.md)します。  
   
-9. **アプリケーションをエクスポートします。** 手順については、[BizTalk アプリケーションのエクスポート方法](../core/how-to-export-a-biztalk-application.md)を参照してください。  
+9. **アプリケーションをエクスポートします。** 手順については、次を参照してください。 [BizTalk アプリケーションのエクスポート方法](../core/how-to-export-a-biztalk-application.md)します。  
   
-10. **アプリケーションを削除します。** 手順については、[BizTalk グループから BizTalk アプリケーションを削除する方法](../core/how-to-delete-a-biztalk-application-from-the-biztalk-group.md)を参照してください。  
+10. **アプリケーションを削除します。** 手順については、次を参照してください。 [BizTalk グループから BizTalk アプリケーションを削除する方法](../core/how-to-delete-a-biztalk-application-from-the-biztalk-group.md)します。  
   
-11. **アプリケーションをインポートします。** 手順については、[BizTalk アプリケーションをインポートする方法](../core/how-to-import-a-biztalk-application.md)を参照してください。 インポート先の環境を指定する必要はありません。  
+11. **アプリケーションをインポートします。** 手順については、次を参照してください。 [BizTalk アプリケーションをインポートする方法](../core/how-to-import-a-biztalk-application.md)します。 インポート先の環境を指定する必要はありません。  
   
 12. **正しいバインド ファイルが適用されたことを確認します。** 確認するには、受信場所の説明フィールドを次のようにチェックします。  
   
@@ -122,7 +122,7 @@ ms.locfileid: "37005107"
   
     3. 右ペインで、受信場所の説明を表示します。  
   
-13. **アプリケーションをインストールします。** 手順については、[BizTalk アプリケーションをインストールする方法](../core/how-to-install-a-biztalk-application.md)を参照してください。  
+13. **アプリケーションをインストールします。** 手順については、次を参照してください。 [BizTalk アプリケーションをインストールする方法](../core/how-to-install-a-biztalk-application.md)します。  
   
 ## <a name="see-also"></a>参照  
  [アプリケーションの展開 (BizTalk Server Samples フォルダー)](../core/application-deployment-biztalk-server-samples-folder.md)   
