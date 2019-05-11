@@ -1,5 +1,5 @@
 ---
-title: エラー - テーブル抽出 Functoid が有効でないへの最初の入力 |Microsoft ドキュメント
+title: エラー - テーブル抽出 Functoid の無効への最初の入力 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,22 +14,22 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 86d501c18bf104a0f538ef90d10510e7d9ec0f02
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 9b96e673f33bfa7478b633c8254a62d81335cd61
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25969016"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65348318"
 ---
-# <a name="error---first-input-to-table-extractor-functoid-not-valid"></a><span data-ttu-id="f6e0d-102">エラー - テーブル抽出 Functoid が有効でないへの最初の入力</span><span class="sxs-lookup"><span data-stu-id="f6e0d-102">Error - First Input to Table Extractor Functoid Not Valid</span></span>
-<span data-ttu-id="f6e0d-103">**エラー コード**</span><span class="sxs-lookup"><span data-stu-id="f6e0d-103">**Error Code**</span></span>  
+# <a name="error---first-input-to-table-extractor-functoid-not-valid"></a><span data-ttu-id="83a9e-102">エラー - テーブル抽出 Functoid の無効への最初の入力</span><span class="sxs-lookup"><span data-stu-id="83a9e-102">Error - First Input to Table Extractor Functoid Not Valid</span></span>
+<span data-ttu-id="83a9e-103">**エラー コード**</span><span class="sxs-lookup"><span data-stu-id="83a9e-103">**Error Code**</span></span>  
   
- <span data-ttu-id="f6e0d-104">btm1019</span><span class="sxs-lookup"><span data-stu-id="f6e0d-104">btm1019</span></span>  
+ <span data-ttu-id="83a9e-104">btm1019</span><span class="sxs-lookup"><span data-stu-id="83a9e-104">btm1019</span></span>  
   
- <span data-ttu-id="f6e0d-105">**説明**</span><span class="sxs-lookup"><span data-stu-id="f6e0d-105">**Explanation**</span></span>  
+ <span data-ttu-id="83a9e-105">**説明**</span><span class="sxs-lookup"><span data-stu-id="83a9e-105">**Explanation**</span></span>  
   
- <span data-ttu-id="f6e0d-106">最初の入力パラメーター**テーブル抽出**functoid がリンクからではなく、**テーブル ループ**functoid は、必要に応じて。</span><span class="sxs-lookup"><span data-stu-id="f6e0d-106">The first input parameter to the indicated **Table Extractor** functoid is not a link from a **Table Looping** functoid, as required.</span></span>  
+ <span data-ttu-id="83a9e-106">最初の入力パラメーターを指定された**テーブル抽出**functoid がリンクからではなく、**テーブル ループ**functoid は、必要に応じて。</span><span class="sxs-lookup"><span data-stu-id="83a9e-106">The first input parameter to the indicated **Table Extractor** functoid is not a link from a **Table Looping** functoid, as required.</span></span>  
   
- <span data-ttu-id="f6e0d-107">**ユーザーの操作**</span><span class="sxs-lookup"><span data-stu-id="f6e0d-107">**User Action**</span></span>  
+ <span data-ttu-id="83a9e-107">**ユーザーの操作**</span><span class="sxs-lookup"><span data-stu-id="83a9e-107">**User Action**</span></span>  
   
- <span data-ttu-id="f6e0d-108">指定された間のリンクを作成する**テーブル抽出**functoid と適切な**テーブル ループ**もう一方のうちの 1 つをドラッグして functoid です。</span><span class="sxs-lookup"><span data-stu-id="f6e0d-108">Create a link between the indicated **Table Extractor** functoid and the appropriate **Table Looping** functoid by dragging one of them to the other.</span></span> <span data-ttu-id="f6e0d-109">マップ グリッド ページでは、テーブル抽出 Functoid が、テーブル ループ Functoid の右側に配置されている必要があります。</span><span class="sxs-lookup"><span data-stu-id="f6e0d-109">The former functoid must be located to the right of the latter functoid in a map grid page.</span></span> <span data-ttu-id="f6e0d-110">またを使用して、**構成\<Functoid\> Functoid**  ダイアログ ボックスで、新しく作成したリンクがへの最初の入力パラメーターであることを確認**テーブル抽出**functoid です。</span><span class="sxs-lookup"><span data-stu-id="f6e0d-110">Also, using the **Configure \<Functoid\> Functoid** dialog box, ensure that the newly created link is the first input parameter to the indicated **Table Extractor** functoid.</span></span>
+ <span data-ttu-id="83a9e-108">指定された間リンクを作成**テーブル抽出**functoid、適切な**テーブル ループ**他のうち 1 つをドラッグして functoid。</span><span class="sxs-lookup"><span data-stu-id="83a9e-108">Create a link between the indicated **Table Extractor** functoid and the appropriate **Table Looping** functoid by dragging one of them to the other.</span></span> <span data-ttu-id="83a9e-109">元の functoid は、マップ グリッド ページで functoid の右側にあるである必要があります。</span><span class="sxs-lookup"><span data-stu-id="83a9e-109">The former functoid must be located to the right of the latter functoid in a map grid page.</span></span> <span data-ttu-id="83a9e-110">またを使用して、**構成\<Functoid\> Functoid**  ダイアログ ボックスで、新しく作成したリンクがへの最初の入力パラメーターであることを確認**テーブル抽出**functoid。</span><span class="sxs-lookup"><span data-stu-id="83a9e-110">Also, using the **Configure \<Functoid\> Functoid** dialog box, ensure that the newly created link is the first input parameter to the indicated **Table Extractor** functoid.</span></span>

@@ -1,5 +1,5 @@
 ---
-title: シングル サインオンのサポートされるプラットフォーム |Microsoft ドキュメント
+title: シングル サインオンのサポートされているプラットフォーム |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,15 +12,15 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f17c8c107897955b9ae014fe0ea47726d827ece2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7acff889362523a7ea7cdbdfd881159946cf90ec
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22278426"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65306561"
 ---
-# <a name="supported-platforms-for-single-sign-on"></a><span data-ttu-id="49c9f-102">シングル サインオンのサポートされているプラットフォーム</span><span class="sxs-lookup"><span data-stu-id="49c9f-102">Supported Platforms for Single Sign-On</span></span>
-<span data-ttu-id="49c9f-103">エンタープライズ シングル サインオンは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] に含まれています。</span><span class="sxs-lookup"><span data-stu-id="49c9f-103">Enterprise Single Sign-On is included with [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span> <span data-ttu-id="49c9f-104">したがって、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] をサポートするすべてのオペレーティング システムでサポートされます。</span><span class="sxs-lookup"><span data-stu-id="49c9f-104">Therefore, it is supported by all operating systems that support [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span>  
+# <a name="supported-platforms-for-single-sign-on"></a><span data-ttu-id="a1c84-102">シングル サインオンのサポートされるプラットフォーム</span><span class="sxs-lookup"><span data-stu-id="a1c84-102">Supported Platforms for Single Sign-On</span></span>
+<span data-ttu-id="a1c84-103">エンタープライズ シングル サインオンは付属[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]します。</span><span class="sxs-lookup"><span data-stu-id="a1c84-103">Enterprise Single Sign-On is included with [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span> <span data-ttu-id="a1c84-104">そのため、サポートするすべてのオペレーティング システムでサポートされて[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]します。</span><span class="sxs-lookup"><span data-stu-id="a1c84-104">Therefore, it is supported by all operating systems that support [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="49c9f-105">参照</span><span class="sxs-lookup"><span data-stu-id="49c9f-105">See Also</span></span>  
- [<span data-ttu-id="49c9f-106">プログラミングのシングル サインオンの概要</span><span class="sxs-lookup"><span data-stu-id="49c9f-106">Programming Single Sign-On Overview</span></span>](../core/programming-single-sign-on-overview.md)
+## <a name="see-also"></a><span data-ttu-id="a1c84-105">参照</span><span class="sxs-lookup"><span data-stu-id="a1c84-105">See Also</span></span>  
+ [<span data-ttu-id="a1c84-106">シングル サインオンのプログラミングの概要</span><span class="sxs-lookup"><span data-stu-id="a1c84-106">Programming Single Sign-On Overview</span></span>](../core/programming-single-sign-on-overview.md)

@@ -1,5 +1,5 @@
 ---
-title: アダプター構成のカスタム モデル ダイアログ エディター |Microsoft ドキュメント
+title: アダプター構成のカスタム モデル ダイアログ エディター |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,17 +12,17 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3408df319f6c90fb75099463422fb1a7687bdd27
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 29556f71c830336e95c3cf8d738da929f9bb4ff8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22239234"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65353340"
 ---
-# <a name="custom-modal-dialog-editor-for-adapter-configuration"></a><span data-ttu-id="c030e-102">アダプター構成のカスタム モデル ダイアログ エディター</span><span class="sxs-lookup"><span data-stu-id="c030e-102">Custom Modal Dialog Editor for Adapter Configuration</span></span>
-<span data-ttu-id="c030e-103">カスタム エディターのコードから派生したエディターを示しています、 **System.Drawing.Design.UITypeEditor**パスワード入力用のモーダル ポップアップ ダイアログ ボックスを表示するクラス。</span><span class="sxs-lookup"><span data-stu-id="c030e-103">The code for the custom editor shows an editor derived from the **System.Drawing.Design.UITypeEditor** class that displays a modal pop-up dialog box for entering a password.</span></span> <span data-ttu-id="c030e-104">**GetEditStyle**メソッドのオーバーライド**UIEditorEditStyle.Modal**モーダル フォームのサブコントロールを示すです。</span><span class="sxs-lookup"><span data-stu-id="c030e-104">The **GetEditStyle** method override returns **UIEditorEditStyle.Modal** to indicate a modal form subcontrol.</span></span> <span data-ttu-id="c030e-105">サービス メソッド**ShowDialog**で作成されたコントロールを管理する**CreatePassword**です。</span><span class="sxs-lookup"><span data-stu-id="c030e-105">The service method **ShowDialog** manages the control created with **CreatePassword**.</span></span> <span data-ttu-id="c030e-106">**ShowDialog**を返します、 **DialogResult**で通常の方法 (switch ステートメントなど) で処理されている、 **DialogResult.OK**値のみが変更される場合。</span><span class="sxs-lookup"><span data-stu-id="c030e-106">**ShowDialog** returns a **DialogResult** that is handled in the usual way (for example, a switch statement) with the **DialogResult.OK** case changing value only.</span></span>  
+# <a name="custom-modal-dialog-editor-for-adapter-configuration"></a><span data-ttu-id="a1697-102">アダプター構成のカスタム モデル ダイアログ エディター</span><span class="sxs-lookup"><span data-stu-id="a1697-102">Custom Modal Dialog Editor for Adapter Configuration</span></span>
+<span data-ttu-id="a1697-103">カスタム エディターのコードから派生したエディターを示しています、 **System.Drawing.Design.UITypeEditor**パスワード入力用のモーダル ポップアップ ダイアログ ボックスを表示するクラス。</span><span class="sxs-lookup"><span data-stu-id="a1697-103">The code for the custom editor shows an editor derived from the **System.Drawing.Design.UITypeEditor** class that displays a modal pop-up dialog box for entering a password.</span></span> <span data-ttu-id="a1697-104">**GetEditStyle**メソッドのオーバーライド**UIEditorEditStyle.Modal**をモーダル フォームのサブコントロールを示すためにします。</span><span class="sxs-lookup"><span data-stu-id="a1697-104">The **GetEditStyle** method override returns **UIEditorEditStyle.Modal** to indicate a modal form subcontrol.</span></span> <span data-ttu-id="a1697-105">サービス メソッド**ShowDialog**で作成されたコントロール**CreatePassword**します。</span><span class="sxs-lookup"><span data-stu-id="a1697-105">The service method **ShowDialog** manages the control created with **CreatePassword**.</span></span> <span data-ttu-id="a1697-106">**ShowDialog**を返します、 **DialogResult**で通常の方法 (switch ステートメントなど) で処理されている、 **DialogResult.OK**値のみが変更される場合。</span><span class="sxs-lookup"><span data-stu-id="a1697-106">**ShowDialog** returns a **DialogResult** that is handled in the usual way (for example, a switch statement) with the **DialogResult.OK** case changing value only.</span></span>  
   
- <span data-ttu-id="c030e-107">次のコードはカスタム モデル エディターのクラス定義です。</span><span class="sxs-lookup"><span data-stu-id="c030e-107">The following code is the class definition for the custom modal editor:</span></span>  
+ <span data-ttu-id="a1697-107">次のコードでは、カスタム モデル エディターのクラス定義を示します。</span><span class="sxs-lookup"><span data-stu-id="a1697-107">The following code is the class definition for the custom modal editor:</span></span>  
   
 ```  
 /*************************************************************************  
@@ -100,7 +100,7 @@ namespace AdapterManagement.ComponentModel
             return new PasswordForm(PasswordUITypeEditor.PasswordChar);  
 ```  
   
- <span data-ttu-id="c030e-108">次のコードはカスタム ダイアログ ボックスのクラス定義です。</span><span class="sxs-lookup"><span data-stu-id="c030e-108">The following code is the class definition for the custom dialog box:</span></span>  
+ <span data-ttu-id="a1697-108">次のコードでは、カスタム ダイアログ ボックスのクラス定義を示します。</span><span class="sxs-lookup"><span data-stu-id="a1697-108">The following code is the class definition for the custom dialog box:</span></span>  
   
 ```  
 /*************************************************************************  
@@ -307,8 +307,8 @@ namespace Microsoft.BizTalk.Samples.CustomUITypeEditors
 }  
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="c030e-109">参照</span><span class="sxs-lookup"><span data-stu-id="c030e-109">See Also</span></span>  
- <span data-ttu-id="c030e-110">[カスタム アダプター構成デザイナー](../core/custom-adapter-configuration-designer.md) </span><span class="sxs-lookup"><span data-stu-id="c030e-110">[Custom Adapter Configuration Designer](../core/custom-adapter-configuration-designer.md) </span></span>  
- <span data-ttu-id="c030e-111">[アダプター構成のカスタム ドロップダウン エディター](../core/custom-drop-down-editor-for-adapter-configuration.md) </span><span class="sxs-lookup"><span data-stu-id="c030e-111">[Custom Drop-Down Editor for Adapter Configuration](../core/custom-drop-down-editor-for-adapter-configuration.md) </span></span>  
- <span data-ttu-id="c030e-112">[アダプターの構成のカスタム型コンバーター](../core/custom-type-converter-for-adapter-configuration.md) </span><span class="sxs-lookup"><span data-stu-id="c030e-112">[Custom Type Converter for Adapter Configuration](../core/custom-type-converter-for-adapter-configuration.md) </span></span>  
- [<span data-ttu-id="c030e-113">アダプターの高度な構成コンポーネント</span><span class="sxs-lookup"><span data-stu-id="c030e-113">Advanced Configuration Components for Adapters</span></span>](../core/advanced-configuration-components-for-adapters.md)
+## <a name="see-also"></a><span data-ttu-id="a1697-109">参照</span><span class="sxs-lookup"><span data-stu-id="a1697-109">See Also</span></span>  
+ <span data-ttu-id="a1697-110">[カスタム アダプター構成デザイナー](../core/custom-adapter-configuration-designer.md) </span><span class="sxs-lookup"><span data-stu-id="a1697-110">[Custom Adapter Configuration Designer](../core/custom-adapter-configuration-designer.md) </span></span>  
+ <span data-ttu-id="a1697-111">[アダプター構成のカスタム ドロップダウン エディター](../core/custom-drop-down-editor-for-adapter-configuration.md) </span><span class="sxs-lookup"><span data-stu-id="a1697-111">[Custom Drop-Down Editor for Adapter Configuration](../core/custom-drop-down-editor-for-adapter-configuration.md) </span></span>  
+ <span data-ttu-id="a1697-112">[アダプターの構成のカスタム型コンバーター](../core/custom-type-converter-for-adapter-configuration.md) </span><span class="sxs-lookup"><span data-stu-id="a1697-112">[Custom Type Converter for Adapter Configuration](../core/custom-type-converter-for-adapter-configuration.md) </span></span>  
+ [<span data-ttu-id="a1697-113">アダプターの詳細構成コンポーネント</span><span class="sxs-lookup"><span data-stu-id="a1697-113">Advanced Configuration Components for Adapters</span></span>](../core/advanced-configuration-components-for-adapters.md)

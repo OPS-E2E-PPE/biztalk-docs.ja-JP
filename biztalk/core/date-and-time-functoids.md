@@ -12,32 +12,32 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5224c409a6d705806cccc493009ce2c32062f0a1
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1bcf2352177c56292007af7d639437b801b278d2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37010667"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65352557"
 ---
-# <a name="date-and-time-functoids"></a><span data-ttu-id="b02bf-102">日時 Functoid</span><span class="sxs-lookup"><span data-stu-id="b02bf-102">Date and Time Functoids</span></span>
+# <a name="date-and-time-functoids"></a><span data-ttu-id="b5319-102">日時 Functoid</span><span class="sxs-lookup"><span data-stu-id="b5319-102">Date and Time Functoids</span></span>
 
-## <a name="overview"></a><span data-ttu-id="b02bf-103">概要</span><span class="sxs-lookup"><span data-stu-id="b02bf-103">Overview</span></span>
-<span data-ttu-id="b02bf-104">**日付/時刻**functoid は 2 つのカテゴリに分類できます。</span><span class="sxs-lookup"><span data-stu-id="b02bf-104">**Date / Time** functoids can be divided into two categories.</span></span> <span data-ttu-id="b02bf-105">最初のカテゴリには、1 つの functoid が含まれています。**日数加算**、を使用して、指定した日付と時刻の値を指定した日数を追加します。</span><span class="sxs-lookup"><span data-stu-id="b02bf-105">The first category contains a single functoid, **Add Days**, which is used to add a specified number of days to a specified date and time value.</span></span> <span data-ttu-id="b02bf-106">これは、出力インスタンス メッセージのフィールドが将来の日時の推定値を含む場合に役立ちます。</span><span class="sxs-lookup"><span data-stu-id="b02bf-106">This can be useful when a field in the output instance message is supposed to include a date and time estimate in the future.</span></span> <span data-ttu-id="b02bf-107">たとえば、**日数加算**functoid を使用して推定できます注文が受信した日付からの固定の差分をに基づいて出荷日。</span><span class="sxs-lookup"><span data-stu-id="b02bf-107">For example, the **Add Days** functoid can be used to generate an estimated shipping date based a fixed delta from the date that an order was received.</span></span>  
+## <a name="overview"></a><span data-ttu-id="b5319-103">概要</span><span class="sxs-lookup"><span data-stu-id="b5319-103">Overview</span></span>
+<span data-ttu-id="b5319-104">**日付/時刻**functoid は 2 つのカテゴリに分類できます。</span><span class="sxs-lookup"><span data-stu-id="b5319-104">**Date / Time** functoids can be divided into two categories.</span></span> <span data-ttu-id="b5319-105">最初のカテゴリには、1 つの functoid が含まれています。**日数加算**、を使用して、指定した日付と時刻の値を指定した日数を追加します。</span><span class="sxs-lookup"><span data-stu-id="b5319-105">The first category contains a single functoid, **Add Days**, which is used to add a specified number of days to a specified date and time value.</span></span> <span data-ttu-id="b5319-106">これは、出力インスタンス メッセージ内のフィールドに、将来の日付と時刻の推定値を含めることは想定されているときに役立ちます。</span><span class="sxs-lookup"><span data-stu-id="b5319-106">This can be useful when a field in the output instance message is supposed to include a date and time estimate in the future.</span></span> <span data-ttu-id="b5319-107">たとえば、**日数加算**functoid を使用して推定できます注文が受信した日付からの固定の差分をに基づいて出荷日。</span><span class="sxs-lookup"><span data-stu-id="b5319-107">For example, the **Add Days** functoid can be used to generate an estimated shipping date based a fixed delta from the date that an order was received.</span></span>  
 
- <span data-ttu-id="b02bf-108">2 番目のカテゴリには、すべての残りの functoid が含まれています、**日付と時刻**カテゴリ。</span><span class="sxs-lookup"><span data-stu-id="b02bf-108">The second category includes all of the remaining functoids in the **Date and Time** category.</span></span> <span data-ttu-id="b02bf-109">これらの Functoid を使用して実行時にタイムスタンプを提供することで、メッセージ変換が行われる日時を出力インスタンス メッセージに格納できます。</span><span class="sxs-lookup"><span data-stu-id="b02bf-109">They are used to provide a timestamp at run time, so that the date and time at which message transformation is being performed can be included in the output instance message.</span></span>  
+ <span data-ttu-id="b5319-108">2 番目のカテゴリには、すべての残りの functoid が含まれています、**日付と時刻**カテゴリ。</span><span class="sxs-lookup"><span data-stu-id="b5319-108">The second category includes all of the remaining functoids in the **Date and Time** category.</span></span> <span data-ttu-id="b5319-109">日付と時刻の変換が行われるメッセージでは、出力インスタンス メッセージに含めることができるように、実行時にタイムスタンプを提供に使用されます。</span><span class="sxs-lookup"><span data-stu-id="b5319-109">They are used to provide a timestamp at run time, so that the date and time at which message transformation is being performed can be included in the output instance message.</span></span>  
 
- <span data-ttu-id="b02bf-110">**日数加算**functoid が、2 つの入力パラメーターを受け入れる、**日付**、**日付と時刻**、および**時間**functoid の入力があるないです。パラメーター。</span><span class="sxs-lookup"><span data-stu-id="b02bf-110">The **Add Days** functoid accepts two input parameters, whereas the **Date**, **Date and Time**, and **Time** functoids have no input parameters.</span></span>  
+ <span data-ttu-id="b5319-110">**日数加算**functoid が、2 つの入力パラメーターを受け入れる、**日付**、**日付と時刻**、および**時間**functoid の入力があるないです。パラメーター。</span><span class="sxs-lookup"><span data-stu-id="b5319-110">The **Add Days** functoid accepts two input parameters, whereas the **Date**, **Date and Time**, and **Time** functoids have no input parameters.</span></span>  
 
-## <a name="available-functoids"></a><span data-ttu-id="b02bf-111">使用可能な functoid</span><span class="sxs-lookup"><span data-stu-id="b02bf-111">Available functoids</span></span>  
- <span data-ttu-id="b02bf-112">**日付/時刻**functoid には。</span><span class="sxs-lookup"><span data-stu-id="b02bf-112">The **Date / Time** functoids are:</span></span> 
+## <a name="available-functoids"></a><span data-ttu-id="b5319-111">使用可能な functoid</span><span class="sxs-lookup"><span data-stu-id="b5319-111">Available functoids</span></span>  
+ <span data-ttu-id="b5319-112">**日付/時刻**functoid には。</span><span class="sxs-lookup"><span data-stu-id="b5319-112">The **Date / Time** functoids are:</span></span> 
 
-* <span data-ttu-id="b02bf-113">日数加算</span><span class="sxs-lookup"><span data-stu-id="b02bf-113">Add Days</span></span>
-* <span data-ttu-id="b02bf-114">date</span><span class="sxs-lookup"><span data-stu-id="b02bf-114">Date</span></span>
-* <span data-ttu-id="b02bf-115">日時</span><span class="sxs-lookup"><span data-stu-id="b02bf-115">Date and Time</span></span>
-* <span data-ttu-id="b02bf-116">[時刻]</span><span class="sxs-lookup"><span data-stu-id="b02bf-116">Time</span></span>
+* <span data-ttu-id="b5319-113">日数を加算します。</span><span class="sxs-lookup"><span data-stu-id="b5319-113">Add Days</span></span>
+* <span data-ttu-id="b5319-114">date</span><span class="sxs-lookup"><span data-stu-id="b5319-114">Date</span></span>
+* <span data-ttu-id="b5319-115">日時</span><span class="sxs-lookup"><span data-stu-id="b5319-115">Date and Time</span></span>
+* <span data-ttu-id="b5319-116">Time</span><span class="sxs-lookup"><span data-stu-id="b5319-116">Time</span></span>
 
-<span data-ttu-id="b02bf-117">これらの functoid の詳細については**Functoid リファレンス**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]します。</span><span class="sxs-lookup"><span data-stu-id="b02bf-117">More details on these functoids are available **Functoid Reference** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)].</span></span>
+<span data-ttu-id="b5319-117">これらの functoid の詳細については**Functoid リファレンス**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]します。</span><span class="sxs-lookup"><span data-stu-id="b5319-117">More details on these functoids are available **Functoid Reference** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)].</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="b02bf-118">参照</span><span class="sxs-lookup"><span data-stu-id="b02bf-118">See Also</span></span>  
-- [<span data-ttu-id="b02bf-119">マップに基本 Functoid を追加する方法</span><span class="sxs-lookup"><span data-stu-id="b02bf-119">How to Add Basic Functoids to a Map</span></span>](../core/how-to-add-basic-functoids-to-a-map.md)   
-- <span data-ttu-id="b02bf-120">**日時 Functoid のリファレンス** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]</span><span class="sxs-lookup"><span data-stu-id="b02bf-120">**Date and Time Functoids Reference** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]</span></span>
+## <a name="see-also"></a><span data-ttu-id="b5319-118">参照</span><span class="sxs-lookup"><span data-stu-id="b5319-118">See Also</span></span>  
+- [<span data-ttu-id="b5319-119">マップに基本 Functoid を追加する方法</span><span class="sxs-lookup"><span data-stu-id="b5319-119">How to Add Basic Functoids to a Map</span></span>](../core/how-to-add-basic-functoids-to-a-map.md)   
+- <span data-ttu-id="b5319-120">**日時 Functoid のリファレンス** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]</span><span class="sxs-lookup"><span data-stu-id="b5319-120">**Date and Time Functoids Reference** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]</span></span>

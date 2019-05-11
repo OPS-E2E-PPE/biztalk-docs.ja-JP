@@ -1,5 +1,5 @@
 ---
-title: アダプターで証明書の構成 |Microsoft ドキュメント
+title: アダプターで証明書の構成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,22 +12,22 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 39268a3197277015554c59549b8cdc692bd385e8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 30e5142dfd341349e665452cbd17be64b00e4902
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22300090"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65253563"
 ---
-# <a name="configuring-certificates-with-adapters"></a><span data-ttu-id="805e8-102">アダプターで証明書の構成</span><span class="sxs-lookup"><span data-stu-id="805e8-102">Configuring Certificates with Adapters</span></span>
-<span data-ttu-id="805e8-103">次のセクションでは、用の証明書を構成する方法を説明する[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]アダプター。</span><span class="sxs-lookup"><span data-stu-id="805e8-103">The following sections describe how to configure certificates for [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] adapters.</span></span>  
+# <a name="configuring-certificates-with-adapters"></a><span data-ttu-id="1168d-102">アダプターで証明書の構成</span><span class="sxs-lookup"><span data-stu-id="1168d-102">Configuring Certificates with Adapters</span></span>
+<span data-ttu-id="1168d-103">次のセクションでは、証明書を構成する方法を説明する[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]アダプター。</span><span class="sxs-lookup"><span data-stu-id="1168d-103">The following sections describe how to configure certificates for [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] adapters.</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="805e8-104">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="805e8-104">In This Section</span></span>  
+## <a name="in-this-section"></a><span data-ttu-id="1168d-104">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="1168d-104">In This Section</span></span>  
   
--   [<span data-ttu-id="805e8-105">HTTP アダプターでの証明書を構成する方法</span><span class="sxs-lookup"><span data-stu-id="805e8-105">How to Configure Certificates with an HTTP Adapter</span></span>](../technical-guides/how-to-configure-certificates-with-an-http-adapter.md)  
+-   [<span data-ttu-id="1168d-105">HTTP アダプターを使用した証明書の構成方法</span><span class="sxs-lookup"><span data-stu-id="1168d-105">How to Configure Certificates with an HTTP Adapter</span></span>](../technical-guides/how-to-configure-certificates-with-an-http-adapter.md)  
   
--   [<span data-ttu-id="805e8-106">MSMQ アダプターでの証明書を構成する方法</span><span class="sxs-lookup"><span data-stu-id="805e8-106">How to Configure Certificates with an MSMQ Adapter</span></span>](../technical-guides/how-to-configure-certificates-with-an-msmq-adapter.md)  
+-   [<span data-ttu-id="1168d-106">MSMQ アダプターを使用した証明書の構成方法</span><span class="sxs-lookup"><span data-stu-id="1168d-106">How to Configure Certificates with an MSMQ Adapter</span></span>](../technical-guides/how-to-configure-certificates-with-an-msmq-adapter.md)  
   
--   [<span data-ttu-id="805e8-107">SOAP アダプターと証明書を構成する方法</span><span class="sxs-lookup"><span data-stu-id="805e8-107">How to Configure Certificates with a SOAP Adapter</span></span>](../technical-guides/how-to-configure-certificates-with-a-soap-adapter.md)  
+-   [<span data-ttu-id="1168d-107">SOAP アダプターを使用した証明書の構成方法</span><span class="sxs-lookup"><span data-stu-id="1168d-107">How to Configure Certificates with a SOAP Adapter</span></span>](../technical-guides/how-to-configure-certificates-with-a-soap-adapter.md)  
   
--   [<span data-ttu-id="805e8-108">インストールして、WCF アダプターを持つ証明書を構成する方法</span><span class="sxs-lookup"><span data-stu-id="805e8-108">How to Install and Configure Certificates with a WCF Adapter</span></span>](../technical-guides/how-to-install-and-configure-certificates-with-a-wcf-adapter.md)
+-   [<span data-ttu-id="1168d-108">WCF アダプターを使用した証明書の構成方法</span><span class="sxs-lookup"><span data-stu-id="1168d-108">How to Install and Configure Certificates with a WCF Adapter</span></span>](../technical-guides/how-to-install-and-configure-certificates-with-a-wcf-adapter.md)

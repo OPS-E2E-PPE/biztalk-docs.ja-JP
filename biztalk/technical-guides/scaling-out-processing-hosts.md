@@ -1,5 +1,5 @@
 ---
-title: スケール アウト処理の各ホスト |Microsoft ドキュメント
+title: スケール アウト処理の各ホスト |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,17 +12,17 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 493ac2318d734c4b6ef5686db1b1f1e9ee3cca3f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b3eb1afcc99658d500cf5ca306748bdfe4262d8f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22302074"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65305465"
 ---
-# <a name="scaling-out-processing-hosts"></a><span data-ttu-id="968bc-102">スケール アウト処理の各ホスト</span><span class="sxs-lookup"><span data-stu-id="968bc-102">Scaling Out Processing Hosts</span></span>
-<span data-ttu-id="968bc-103">スケール アウト処理の各ホストについては、次を参照してください。 [Scaled-Out 処理ホスト](http://go.microsoft.com/fwlink/?LinkId=151285)(http://go.microsoft.com/fwlink/?LinkId=151285)。</span><span class="sxs-lookup"><span data-stu-id="968bc-103">For information about scaling out processing hosts, see [Scaled-Out Processing Hosts](http://go.microsoft.com/fwlink/?LinkId=151285) (http://go.microsoft.com/fwlink/?LinkId=151285).</span></span>  
+# <a name="scaling-out-processing-hosts"></a><span data-ttu-id="96a29-102">スケール アウト処理ホスト</span><span class="sxs-lookup"><span data-stu-id="96a29-102">Scaling Out Processing Hosts</span></span>
+<span data-ttu-id="96a29-103">スケール アウト処理の各ホストについては、次を参照してください。 [Scaled-Out 処理ホスト](http://go.microsoft.com/fwlink/?LinkId=151285)(http://go.microsoft.com/fwlink/?LinkId=151285)します。</span><span class="sxs-lookup"><span data-stu-id="96a29-103">For information about scaling out processing hosts, see [Scaled-Out Processing Hosts](http://go.microsoft.com/fwlink/?LinkId=151285) (http://go.microsoft.com/fwlink/?LinkId=151285).</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="968bc-104">参照</span><span class="sxs-lookup"><span data-stu-id="968bc-104">See Also</span></span>  
- <span data-ttu-id="968bc-105">[スケール アウト受信ホスト](../technical-guides/scaling-out-receiving-hosts.md) </span><span class="sxs-lookup"><span data-stu-id="968bc-105">[Scaling Out Receiving Hosts](../technical-guides/scaling-out-receiving-hosts.md) </span></span>  
- <span data-ttu-id="968bc-106">[受信ホストをクラスタ リング](../technical-guides/clustering-receiving-hosts.md) </span><span class="sxs-lookup"><span data-stu-id="968bc-106">[Clustering Receiving Hosts](../technical-guides/clustering-receiving-hosts.md) </span></span>  
- [<span data-ttu-id="968bc-107">スケール アウト送信ホスト</span><span class="sxs-lookup"><span data-stu-id="968bc-107">Scaling Out Sending Hosts</span></span>](../technical-guides/scaling-out-sending-hosts.md)
+## <a name="see-also"></a><span data-ttu-id="96a29-104">参照</span><span class="sxs-lookup"><span data-stu-id="96a29-104">See Also</span></span>  
+ <span data-ttu-id="96a29-105">[スケール アウト、受信ホスト](../technical-guides/scaling-out-receiving-hosts.md) </span><span class="sxs-lookup"><span data-stu-id="96a29-105">[Scaling Out Receiving Hosts](../technical-guides/scaling-out-receiving-hosts.md) </span></span>  
+ <span data-ttu-id="96a29-106">[受信ホストをクラスタ リング](../technical-guides/clustering-receiving-hosts.md) </span><span class="sxs-lookup"><span data-stu-id="96a29-106">[Clustering Receiving Hosts](../technical-guides/clustering-receiving-hosts.md) </span></span>  
+ [<span data-ttu-id="96a29-107">送信ホストのスケールアウト</span><span class="sxs-lookup"><span data-stu-id="96a29-107">Scaling Out Sending Hosts</span></span>](../technical-guides/scaling-out-sending-hosts.md)

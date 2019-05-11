@@ -1,5 +1,5 @@
 ---
-title: エラー - インデックス Functoid に負のインデックス |Microsoft ドキュメント
+title: エラー - インデックス Functoid に負のインデックス |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,18 +14,18 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: daf70fb266717e1df36a80f14e32ddb8385e2aec
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: bc1df74259a6f7c6c156f4706348a1df7ee3eed1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22240586"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65348156"
 ---
-# <a name="error---index-functoid-has-negative-index"></a><span data-ttu-id="a4ab5-102">エラー - インデックス Functoid に負のインデックス</span><span class="sxs-lookup"><span data-stu-id="a4ab5-102">Error - Index Functoid Has Negative Index</span></span>
-<span data-ttu-id="a4ab5-103">**エラー コード**</span><span class="sxs-lookup"><span data-stu-id="a4ab5-103">**Error Code**</span></span>  
+# <a name="error---index-functoid-has-negative-index"></a><span data-ttu-id="13571-102">エラー - インデックス Functoid に負のインデックス</span><span class="sxs-lookup"><span data-stu-id="13571-102">Error - Index Functoid Has Negative Index</span></span>
+<span data-ttu-id="13571-103">**エラー コード**</span><span class="sxs-lookup"><span data-stu-id="13571-103">**Error Code**</span></span>  
   
- <span data-ttu-id="a4ab5-104">btm1017</span><span class="sxs-lookup"><span data-stu-id="a4ab5-104">btm1017</span></span>  
+ <span data-ttu-id="13571-104">btm1017</span><span class="sxs-lookup"><span data-stu-id="13571-104">btm1017</span></span>  
   
- <span data-ttu-id="a4ab5-105">**説明**</span><span class="sxs-lookup"><span data-stu-id="a4ab5-105">**Explanation**</span></span>  
+ <span data-ttu-id="13571-105">**説明**</span><span class="sxs-lookup"><span data-stu-id="13571-105">**Explanation**</span></span>  
   
- <span data-ttu-id="a4ab5-106">入力されたパラメーターの 1 つまたは複数のインデックス**インデックス**functoid が有効ではありません。</span><span class="sxs-lookup"><span data-stu-id="a4ab5-106">One or more of the index input parameters provided for the indicated **Index** functoid is not valid.</span></span> <span data-ttu-id="a4ab5-107">インデックス入力パラメーターは正の整数である必要があります。</span><span class="sxs-lookup"><span data-stu-id="a4ab5-107">Index input parameters must be positive integers.</span></span>
+ <span data-ttu-id="13571-106">入力されたパラメーターを 1 つまたは複数のインデックス**インデックス**functoid が無効です。</span><span class="sxs-lookup"><span data-stu-id="13571-106">One or more of the index input parameters provided for the indicated **Index** functoid is not valid.</span></span> <span data-ttu-id="13571-107">インデックス入力パラメーターには、正の整数を指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="13571-107">Index input parameters must be positive integers.</span></span>

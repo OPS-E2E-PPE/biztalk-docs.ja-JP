@@ -1,5 +1,5 @@
 ---
-title: GetUserKey |Microsoft ドキュメント
+title: GetUserKey |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,34 +12,34 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0701ff1df912cc113205bad573b6cebc0f02a13a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: cc4f163d35901a0cec9919e3053f84fd21cb712f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22246122"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65344895"
 ---
-# <a name="getuserkey"></a><span data-ttu-id="7db74-102">GetUserKey</span><span class="sxs-lookup"><span data-stu-id="7db74-102">GetUserKey</span></span>
-<span data-ttu-id="7db74-103">現在のユーザー キーをスタックにプッシュします。</span><span class="sxs-lookup"><span data-stu-id="7db74-103">Pushes the current user key onto the stack.</span></span>  
+# <a name="getuserkey"></a><span data-ttu-id="2884f-102">GetUserKey</span><span class="sxs-lookup"><span data-stu-id="2884f-102">GetUserKey</span></span>
+<span data-ttu-id="2884f-103">現在のユーザー キーをスタックにプッシュします。</span><span class="sxs-lookup"><span data-stu-id="2884f-103">Pushes the current user key onto the stack.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="7db74-104">構文</span><span class="sxs-lookup"><span data-stu-id="7db74-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="2884f-104">構文</span><span class="sxs-lookup"><span data-stu-id="2884f-104">Syntax</span></span>  
   
 ```  
   
 <wf:Operation Name="GetUserKey" />  
 ```  
   
-#### <a name="parameters"></a><span data-ttu-id="7db74-105">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7db74-105">Parameters</span></span>  
- <span data-ttu-id="7db74-106">[なし] :</span><span class="sxs-lookup"><span data-stu-id="7db74-106">None.</span></span>  
+#### <a name="parameters"></a><span data-ttu-id="2884f-105">パラメーター</span><span class="sxs-lookup"><span data-stu-id="2884f-105">Parameters</span></span>  
+ <span data-ttu-id="2884f-106">[なし] :</span><span class="sxs-lookup"><span data-stu-id="2884f-106">None.</span></span>  
   
-## <a name="pushed-value"></a><span data-ttu-id="7db74-107">プッシュされた値</span><span class="sxs-lookup"><span data-stu-id="7db74-107">Pushed Value</span></span>  
- <span data-ttu-id="7db74-108">現在のユーザー キーが含まれた文字列です。</span><span class="sxs-lookup"><span data-stu-id="7db74-108">String containing the current user key.</span></span>  
+## <a name="pushed-value"></a><span data-ttu-id="2884f-107">プッシュされた値</span><span class="sxs-lookup"><span data-stu-id="2884f-107">Pushed Value</span></span>  
+ <span data-ttu-id="2884f-108">現在のユーザー キーが含まれた文字列です。</span><span class="sxs-lookup"><span data-stu-id="2884f-108">String containing the current user key.</span></span>  
   
-## <a name="remarks"></a><span data-ttu-id="7db74-109">解説</span><span class="sxs-lookup"><span data-stu-id="7db74-109">Remarks</span></span>  
- <span data-ttu-id="7db74-110">この操作は、ユーザー追跡ポイントでのみ有効です。</span><span class="sxs-lookup"><span data-stu-id="7db74-110">This operation is valid only in user track points.</span></span>  
+## <a name="remarks"></a><span data-ttu-id="2884f-109">コメント</span><span class="sxs-lookup"><span data-stu-id="2884f-109">Remarks</span></span>  
+ <span data-ttu-id="2884f-110">この操作は、ユーザー追跡ポイントでのみ有効です。</span><span class="sxs-lookup"><span data-stu-id="2884f-110">This operation is valid only in user track points.</span></span>  
   
-## <a name="example"></a><span data-ttu-id="7db74-111">例</span><span class="sxs-lookup"><span data-stu-id="7db74-111">Example</span></span>  
- <span data-ttu-id="7db74-112">次のサンプルには、ユーザー キーが "DocumentUrl" と等しいときに `true` と評価されるイベント フィルタ式が含まれています。</span><span class="sxs-lookup"><span data-stu-id="7db74-112">The following sample contains an event filter expression that will evaluate to `true` when the user key is equal to "DocumentUrl".</span></span>  
+## <a name="example"></a><span data-ttu-id="2884f-111">例</span><span class="sxs-lookup"><span data-stu-id="2884f-111">Example</span></span>  
+ <span data-ttu-id="2884f-112">次のサンプルには、ユーザー キーが "DocumentUrl" と等しいときに `true` と評価されるイベント フィルタ式が含まれています。</span><span class="sxs-lookup"><span data-stu-id="2884f-112">The following sample contains an event filter expression that will evaluate to `true` when the user key is equal to "DocumentUrl".</span></span>  
   
 ```  
 <ic:Filter>  

@@ -1,5 +1,5 @@
 ---
-title: エラー、ターゲット ノード &#39;{0} &#39;複数の無条件の Nil 値 functoid がそれに接続します。 数を 1 つに減らしてください。 | Microsoft Docs
+title: エラー - ターゲット ノード&#39; {0} &#39;に複数の Nil 値 functoid が無条件に接続しています。 1 つに減らしてください。 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,18 +12,18 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 79b8c0178bd0504760a21b344c85325d7028f816
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 460e0801648ba9280a54c39b3830774aecfb93cd
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22240578"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65346297"
 ---
-# <a name="error--the-target-node-39039-has-more-than-one-unconditional-nil-value-functoid-connected-to-it-reduce-the-number-to-one"></a><span data-ttu-id="b894c-104">エラー、ターゲット ノード &#39;{0} &#39;複数の無条件の Nil 値 functoid がそれに接続します。</span><span class="sxs-lookup"><span data-stu-id="b894c-104">Error- The target node &#39;{0}&#39; has more than one unconditional Nil-Value functoid connected to it.</span></span> <span data-ttu-id="b894c-105">数を 1 つに減らしてください。</span><span class="sxs-lookup"><span data-stu-id="b894c-105">Reduce the number to one.</span></span>
-<span data-ttu-id="b894c-106">**エラー コード**</span><span class="sxs-lookup"><span data-stu-id="b894c-106">**Error Code**</span></span>  
+# <a name="error--the-target-node-39039-has-more-than-one-unconditional-nil-value-functoid-connected-to-it-reduce-the-number-to-one"></a><span data-ttu-id="80374-104">エラー - ターゲット ノード&#39; {0} &#39;に複数の Nil 値 functoid が無条件に接続しています。</span><span class="sxs-lookup"><span data-stu-id="80374-104">Error- The target node &#39;{0}&#39; has more than one unconditional Nil-Value functoid connected to it.</span></span> <span data-ttu-id="80374-105">1 つに減らしてください。</span><span class="sxs-lookup"><span data-stu-id="80374-105">Reduce the number to one.</span></span>
+<span data-ttu-id="80374-106">**エラー コード**</span><span class="sxs-lookup"><span data-stu-id="80374-106">**Error Code**</span></span>  
   
- <span data-ttu-id="b894c-107">btm1084</span><span class="sxs-lookup"><span data-stu-id="b894c-107">btm1084</span></span>  
+ <span data-ttu-id="80374-107">btm1084</span><span class="sxs-lookup"><span data-stu-id="80374-107">btm1084</span></span>  
   
- <span data-ttu-id="b894c-108">**ユーザーの操作**</span><span class="sxs-lookup"><span data-stu-id="b894c-108">**User Action**</span></span>  
+ <span data-ttu-id="80374-108">**ユーザーの操作**</span><span class="sxs-lookup"><span data-stu-id="80374-108">**User Action**</span></span>  
   
- <span data-ttu-id="b894c-109">このリンクを確認する追加の詳細 (論理 functoid または一部のブール値のいずれかから入力を追加します)、Nil 値 functoid に条件を追加[マップに Nil 値 Functoid を追加する方法](http://go.microsoft.com/fwlink/?LinkId=196675)です。</span><span class="sxs-lookup"><span data-stu-id="b894c-109">Add conditions to the Nil-Value functoids (add an input from either a logical functoid or some boolean)For additional details check this link [How to Add Nil Value Functoids to a Map](http://go.microsoft.com/fwlink/?LinkId=196675).</span></span>
+ <span data-ttu-id="80374-109">詳細については、このリンクを確認 (論理演算 functoid または一部のブール値のいずれかから入力の追加) Nil 値 functoid に条件を追加[マップに Nil 値 Functoid を追加する方法](http://go.microsoft.com/fwlink/?LinkId=196675)します。</span><span class="sxs-lookup"><span data-stu-id="80374-109">Add conditions to the Nil-Value functoids (add an input from either a logical functoid or some boolean)For additional details check this link [How to Add Nil Value Functoids to a Map](http://go.microsoft.com/fwlink/?LinkId=196675).</span></span>

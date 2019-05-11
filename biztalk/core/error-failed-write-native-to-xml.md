@@ -1,5 +1,5 @@
 ---
-title: エラー - XML へのネイティブな書き込みに失敗しました |Microsoft ドキュメント
+title: エラー - XML へのネイティブな書き込みに失敗しました |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,22 +14,22 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e44304ee3386f35e6dda360a253202ef3542657e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 711c09b5d1af7db008e590909802123861eaccf9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22239810"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65348287"
 ---
-# <a name="error---failed-write-native-to-xml"></a><span data-ttu-id="ee268-102">エラー - XML へのネイティブな書き込みに失敗しました</span><span class="sxs-lookup"><span data-stu-id="ee268-102">Error - Failed Write Native to XML</span></span>
-<span data-ttu-id="ee268-103">**エラー コード**</span><span class="sxs-lookup"><span data-stu-id="ee268-103">**Error Code**</span></span>  
+# <a name="error---failed-write-native-to-xml"></a><span data-ttu-id="2a727-102">エラー - XML へのネイティブな書き込みに失敗しました</span><span class="sxs-lookup"><span data-stu-id="2a727-102">Error - Failed Write Native to XML</span></span>
+<span data-ttu-id="2a727-103">**エラー コード**</span><span class="sxs-lookup"><span data-stu-id="2a727-103">**Error Code**</span></span>  
   
- <span data-ttu-id="ee268-104">btm1043</span><span class="sxs-lookup"><span data-stu-id="ee268-104">btm1043</span></span>  
+ <span data-ttu-id="2a727-104">btm1043</span><span class="sxs-lookup"><span data-stu-id="2a727-104">btm1043</span></span>  
   
- <span data-ttu-id="ee268-105">**説明**</span><span class="sxs-lookup"><span data-stu-id="ee268-105">**Explanation**</span></span>  
+ <span data-ttu-id="2a727-105">**説明**</span><span class="sxs-lookup"><span data-stu-id="2a727-105">**Explanation**</span></span>  
   
- <span data-ttu-id="ee268-106">XML ファイルの書き込み中に、ファイルの書き込みエラーが発生しました。</span><span class="sxs-lookup"><span data-stu-id="ee268-106">A file write error was encountered while writing the indicated XML file.</span></span>  
+ <span data-ttu-id="2a727-106">XML ファイルの書き込み中に、ファイルの書き込みエラーが発生しました。</span><span class="sxs-lookup"><span data-stu-id="2a727-106">A file write error was encountered while writing the indicated XML file.</span></span>  
   
- <span data-ttu-id="ee268-107">**ユーザーの操作**</span><span class="sxs-lookup"><span data-stu-id="ee268-107">**User Action**</span></span>  
+ <span data-ttu-id="2a727-107">**ユーザーの操作**</span><span class="sxs-lookup"><span data-stu-id="2a727-107">**User Action**</span></span>  
   
- <span data-ttu-id="ee268-108">ディスクに十分な空き領域があることと、表示されたファイルを作成できるアクセス許可があることを確認します。</span><span class="sxs-lookup"><span data-stu-id="ee268-108">Verify that you have sufficient disk space and permissions to create the indicated file.</span></span>
+ <span data-ttu-id="2a727-108">ディスクに十分な空き領域があることと、表示されたファイルを作成できるアクセス許可があることを確認します。</span><span class="sxs-lookup"><span data-stu-id="2a727-108">Verify that you have sufficient disk space and permissions to create the indicated file.</span></span>

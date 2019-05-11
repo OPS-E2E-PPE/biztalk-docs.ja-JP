@@ -1,5 +1,5 @@
 ---
-title: エラー - インデックス Functoid にインデックスが多すぎる |Microsoft ドキュメント
+title: エラー - インデックス Functoid のインデックスが多すぎますが |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,22 +14,22 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3a22b49a921b957c0fb36f9e6b6925c991cc3cf6
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 800d8ca920dac64ee2d9c603bfcb949188824764
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25968944"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65348137"
 ---
-# <a name="error---index-functoid-has-too-many-indexes"></a><span data-ttu-id="39922-102">エラー - インデックス Functoid にインデックスが多すぎます</span><span class="sxs-lookup"><span data-stu-id="39922-102">Error - Index Functoid Has Too Many Indexes</span></span>
-<span data-ttu-id="39922-103">**エラー コード**</span><span class="sxs-lookup"><span data-stu-id="39922-103">**Error Code**</span></span>  
+# <a name="error---index-functoid-has-too-many-indexes"></a><span data-ttu-id="39b1e-102">エラー - インデックス Functoid にインデックスが多すぎます</span><span class="sxs-lookup"><span data-stu-id="39b1e-102">Error - Index Functoid Has Too Many Indexes</span></span>
+<span data-ttu-id="39b1e-103">**エラー コード**</span><span class="sxs-lookup"><span data-stu-id="39b1e-103">**Error Code**</span></span>  
   
- <span data-ttu-id="39922-104">btm1016</span><span class="sxs-lookup"><span data-stu-id="39922-104">btm1016</span></span>  
+ <span data-ttu-id="39b1e-104">btm1016</span><span class="sxs-lookup"><span data-stu-id="39b1e-104">btm1016</span></span>  
   
- <span data-ttu-id="39922-105">**説明**</span><span class="sxs-lookup"><span data-stu-id="39922-105">**Explanation**</span></span>  
+ <span data-ttu-id="39b1e-105">**説明**</span><span class="sxs-lookup"><span data-stu-id="39b1e-105">**Explanation**</span></span>  
   
- <span data-ttu-id="39922-106">指定された**インデックス**functoid が多すぎますインデックス入力パラメーターを指定します。</span><span class="sxs-lookup"><span data-stu-id="39922-106">The indicated **Index** functoid has too many index input parameters specified.</span></span> <span data-ttu-id="39922-107">インデックス入力パラメーターの数が、祖先のループの数を超えない**レコード**を内のノード、**フィールド**最初の入力パラメーターが入れ子になったとして指定されたノード。</span><span class="sxs-lookup"><span data-stu-id="39922-107">The number of index input parameters must not exceed the number of ancestor looping **Record** nodes within which the **Field** node specified as the first input parameter is nested.</span></span>  
+ <span data-ttu-id="39b1e-106">指定された**インデックス**functoid が多すぎるインデックス入力パラメーターを指定します。</span><span class="sxs-lookup"><span data-stu-id="39b1e-106">The indicated **Index** functoid has too many index input parameters specified.</span></span> <span data-ttu-id="39b1e-107">インデックス入力パラメーターの数が、祖先のループの数を超えない**レコード**を内のノード、**フィールド**最初の入力パラメーターが入れ子になったように指定されたノード。</span><span class="sxs-lookup"><span data-stu-id="39b1e-107">The number of index input parameters must not exceed the number of ancestor looping **Record** nodes within which the **Field** node specified as the first input parameter is nested.</span></span>  
   
- <span data-ttu-id="39922-108">**ユーザーの操作**</span><span class="sxs-lookup"><span data-stu-id="39922-108">**User Action**</span></span>  
+ <span data-ttu-id="39b1e-108">**ユーザーの操作**</span><span class="sxs-lookup"><span data-stu-id="39b1e-108">**User Action**</span></span>  
   
- <span data-ttu-id="39922-109">選択し**インデックス**functoid は、省略記号ボタン (**.**) に関連付けられたボタン、**入力パラメーター**プロパティで、Microsoft[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]プロパティ ウィンドウにし、**構成\<Functoid\>Functoid**ダイアログ ボックスで、削除を選択しをクリックすると、余分なインデックス入力パラメーター、 ![](../core/media/bts-tls-paramdelete.gif "bts_tls_paramdelete")それぞれのボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="39922-109">Select the indicated **Index** functoid, click the ellipsis (**...**) button associated with the **Input Parameters** property in the Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] Properties window, and then in the **Configure \<Functoid\> Functoid** dialog box, delete the excess index input parameters by selecting and clicking the  ![](../core/media/bts-tls-paramdelete.gif "bts_tls_paramdelete") button for each of them.</span></span>
+ <span data-ttu-id="39b1e-109">選択**インデックス**functoid は、省略記号をクリックします (**.**) ボタンに関連付けられている、**入力パラメーター**プロパティで、Microsoft[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]プロパティ ウィンドウで、し、**構成\<Functoid\>Functoid**ダイアログ ボックスで、余分なインデックス入力パラメーターを選択してクリックすると削除、 ![](../core/media/bts-tls-paramdelete.gif "bts_tls_paramdelete")それぞれのボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="39b1e-109">Select the indicated **Index** functoid, click the ellipsis (**...**) button associated with the **Input Parameters** property in the Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] Properties window, and then in the **Configure \<Functoid\> Functoid** dialog box, delete the excess index input parameters by selecting and clicking the  ![](../core/media/bts-tls-paramdelete.gif "bts_tls_paramdelete") button for each of them.</span></span>

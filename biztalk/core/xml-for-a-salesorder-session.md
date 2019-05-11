@@ -1,5 +1,5 @@
 ---
-title: SalesOrder セッション用の XML |Microsoft ドキュメント
+title: SalesOrder セッション用の XML |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,17 +15,17 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 36b0a2b0fd5570a2daee83f07463d4cd67385427
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e3d5a3c816a553b312192d3d16bea7c415416f56
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22289778"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65246389"
 ---
-# <a name="xml-for-a-salesorder-session"></a><span data-ttu-id="8c01b-102">SalesOrder セッション用の XML</span><span class="sxs-lookup"><span data-stu-id="8c01b-102">XML for a SalesOrder Session</span></span>
-<span data-ttu-id="8c01b-103">以下のセクションでは、SalesOrder セッションで使用する XML のサンプルを示します。</span><span class="sxs-lookup"><span data-stu-id="8c01b-103">The following sections provide samples of XML for a SalesOrder session.</span></span>  
+# <a name="xml-for-a-salesorder-session"></a><span data-ttu-id="15b9f-102">SalesOrder セッション用の XML</span><span class="sxs-lookup"><span data-stu-id="15b9f-102">XML for a SalesOrder Session</span></span>
+<span data-ttu-id="15b9f-103">次のセクションでは、SalesOrder セッション用の XML のサンプルを提供します。</span><span class="sxs-lookup"><span data-stu-id="15b9f-103">The following sections provide samples of XML for a SalesOrder session.</span></span>  
   
-## <a name="begindoc-xml-sample"></a><span data-ttu-id="8c01b-104">BeginDoc XML サンプル</span><span class="sxs-lookup"><span data-stu-id="8c01b-104">BeginDoc XML Sample</span></span>  
+## <a name="begindoc-xml-sample"></a><span data-ttu-id="15b9f-104">BeginDoc XML サンプル</span><span class="sxs-lookup"><span data-stu-id="15b9f-104">BeginDoc XML Sample</span></span>  
   
 ```  
 <ns0:F4211FSBeginDoc xmlns:ns0=  
@@ -58,7 +58,7 @@ ms.locfileid: "22289778"
   
 ```  
   
-## <a name="editline-xml-sample"></a><span data-ttu-id="8c01b-105">EditLine XML サンプル</span><span class="sxs-lookup"><span data-stu-id="8c01b-105">EditLine XML Sample</span></span>  
+## <a name="editline-xml-sample"></a><span data-ttu-id="15b9f-105">EditLine XML サンプル</span><span class="sxs-lookup"><span data-stu-id="15b9f-105">EditLine XML Sample</span></span>  
   
 ```  
 <?xml version="1.0" encoding="utf-8" ?>   
@@ -83,7 +83,7 @@ ms.locfileid: "22289778"
   
 ```  
   
-## <a name="enddoc-xml-sample"></a><span data-ttu-id="8c01b-106">EndDoc XML サンプル</span><span class="sxs-lookup"><span data-stu-id="8c01b-106">EndDoc XML Sample</span></span>  
+## <a name="enddoc-xml-sample"></a><span data-ttu-id="15b9f-106">EndDoc XML サンプル</span><span class="sxs-lookup"><span data-stu-id="15b9f-106">EndDoc XML Sample</span></span>  
   
 ```  
 <?xml version="1.0" encoding="utf-8" ?>   
@@ -106,5 +106,5 @@ ms.locfileid: "22289778"
   
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="8c01b-107">参照</span><span class="sxs-lookup"><span data-stu-id="8c01b-107">See Also</span></span>  
- [<span data-ttu-id="8c01b-108">付録 a: サンプル ファイル</span><span class="sxs-lookup"><span data-stu-id="8c01b-108">Appendix A: Sample Files</span></span>](../core/appendix-a-sample-files.md)
+## <a name="see-also"></a><span data-ttu-id="15b9f-107">参照</span><span class="sxs-lookup"><span data-stu-id="15b9f-107">See Also</span></span>  
+ [<span data-ttu-id="15b9f-108">付録 a:サンプル ファイル</span><span class="sxs-lookup"><span data-stu-id="15b9f-108">Appendix A: Sample Files</span></span>](../core/appendix-a-sample-files.md)
