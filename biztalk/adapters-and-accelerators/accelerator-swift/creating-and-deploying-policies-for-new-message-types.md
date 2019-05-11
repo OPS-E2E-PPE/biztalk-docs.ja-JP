@@ -13,11 +13,11 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 570afc1035b9b9430c7f223df4dcec8b82eab756
-ms.sourcegitcommit: 0e14c3e018b091d81d0e4a68fafc10f6e31697e7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "25966312"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65378463"
 ---
 # <a name="creating-and-deploying-policies-for-new-message-types"></a>作成して、新しいメッセージの種類のポリシーを展開します。
 作成して、新しいメッセージの種類のポリシーを展開します。  
@@ -34,7 +34,7 @@ ms.locfileid: "25966312"
   
 2.  結果として得られるマスターと共にスキーマ ファイル (*.xsd) の配置/検証ポリシーは、このフォルダーにこのメッセージの種類のファイルします。  
   
-3.  キーワードの名前を持つ MXMessageTypeKeywordList.xml (C:\Program files \microsoft BizTalk Accelerator for swift \sdk\tools) を更新します。 この名前は、メッセージ フォルダー名の最初の 4 つの文字である必要があります。 例えば以下のようにします。  
+3.  キーワードの名前を持つ MXMessageTypeKeywordList.xml (C:\Program files \microsoft BizTalk Accelerator for swift \sdk\tools) を更新します。 この名前は、メッセージ フォルダー名の最初の 4 つの文字である必要があります。 例を次に示します。  
   
     ```csharp  
     (<Keyword name ="setr" />)  

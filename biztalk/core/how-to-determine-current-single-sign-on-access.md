@@ -12,27 +12,27 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c57cfae2c2b7545854fa7891f099a19ff7bb0098
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 781fde1a4b7af82c851fb80a9df32a6eb93d8ce7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37014771"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65338586"
 ---
 # <a name="how-to-determine-current-single-sign-on-access"></a>現在のシングル サインオン アクセスを確認する方法
-ユーザーのために実行する必要のある最初の作業の 1 つは、どの関連アプリケーションが現在のユーザーに対して設定済みであるかを判断することです。 この判断を行うには、ISSOMapper.GetApplications を呼び出します。  
+ユーザーに対して実行する必要があります最初のタスクの 1 つは、どのような関連アプリケーションが既に設定されて現在のユーザーを決定します。 ISSOMapper.GetApplications への呼び出しでは、このクエリを実行することができます。  
   
-### <a name="to-query-the-single-sign-on-database-for-the-applications-available-to-the-current-user"></a>現在のユーザーが利用可能なアプリケーションについてシングル サインオン データベースを照会するには  
+### <a name="to-query-the-single-sign-on-database-for-the-applications-available-to-the-current-user"></a>現在のユーザーに使用可能なアプリケーションのシングル サインオン データベースに照会するには  
   
 1. 新しいインスタンスを作成`ISSOMapper`です。  
   
-    `ISSOMapper` はシングル サインオン (SSO) から情報を取得するために設計されたインターフェイスです。 同様な照会を行う場合は、`ISSOMapper` を使用するのが一般的です。  
+    一般に、`ISSOMapper`はからシングル サインオン (SSO) の情報を取得するためのインターフェイスです。 使用するほとんどの場合`ISSOMapper`で同様な照会します。  
   
-2. GetApplications を呼び出して、現在のユーザーに関連するアプリケーションをすべて取得します。  
+2. GetApplications を呼び出して、現在のユーザーに関連しているすべてのアプリケーションを取得します。  
   
-    GetApplications は、自動的に、現在のユーザーに関連するアプリケーションのみを返します。  
+    GetApplications は、自動的に現在のユーザーの関連アプリケーションのみを返します。  
   
-   次のコード例は、シングル サインオン データベースを照会する方法を示しています。  
+   次のコード例では、シングル サインオン データベースに照会する方法を示します。  
   
 ```  
 private static string[] Applications=null;  

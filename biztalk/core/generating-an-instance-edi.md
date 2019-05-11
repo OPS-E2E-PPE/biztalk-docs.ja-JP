@@ -12,12 +12,12 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 82674b175ad1c408b6ddb9f7823427a550288e96
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4eea6263fe104da17cfe9cea7f5cc7da8b08a2be
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36999299"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65345238"
 ---
 # <a name="generating-an-instance-edi"></a>インスタンスの生成 (EDI)
 デザイン時に、EDI スキーマからメッセージ インスタンスを生成できます。 それには、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 環境で [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] の XML ツール拡張を使用します。  
@@ -64,7 +64,7 @@ ms.locfileid: "36999299"
 8. ファイルを表示するには、キーを押して**コントロール**のリンクをクリックし、**出力**ウィンドウ。 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] の [BizTalk エディター] ウィンドウにファイルの内容が表示されます。  
   
    > [!NOTE]
-   >  837I、837D、または 837P を含むインスタンスを生成すると、GS08 の値は誤って 00401 に設定されます。 詳細については、[EDI ソリューションで XML ツールの使用に関する既知の問題](../core/known-issues-with-xml-tools-used-with-edi-solutions.md)を参照してください。  
+   >  837I、837D、または 837P を含むインスタンスを生成すると、GS08 の値は誤って 00401 に設定されます。 詳細については、次を参照してください。 [EDI ソリューションで XML ツールの使用に関する既知の問題](../core/known-issues-with-xml-tools-used-with-edi-solutions.md)します。  
   
 ### <a name="to-generate-an-instance-of-a-transaction-set"></a>トランザクション セットのインスタンスを生成するには  
   

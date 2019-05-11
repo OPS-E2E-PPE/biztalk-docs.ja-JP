@@ -1,5 +1,5 @@
 ---
-title: 'エラー - XML Type Blob が、次のファイルに格納されている出力 (&lt;file:---{0}&gt;)。 エラー: {1} |Microsoft ドキュメント'
+title: 'エラー - XML Type Blob が次のファイルに格納されている出力 (&lt;file:---{0}&gt;)。 エラー: {1} |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c88e09abba042de08a14b1fa2c8921b78f613e07
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5d57974264805623468ec85e23832b625f132d86
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22239626"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65349222"
 ---
-# <a name="error---the-output-xml-type-blob-is-stored-in-the-following-file-ltfile---0gt-error-1"></a>エラー - XML Type Blob が、次のファイルに格納されている出力 (&lt;file:---{0}&gt;)。 エラー: {1}
+# <a name="error---the-output-xml-type-blob-is-stored-in-the-following-file-ltfile---0gt-error-1"></a>エラー - XML Type Blob が次のファイルに格納されている出力 (&lt;file:---{0}&gt;)。 エラー: {1}
 **エラー コード**  
   
  btm1061  

@@ -1,5 +1,5 @@
 ---
-title: ログ配布 |Microsoft ドキュメント
+title: ログ配布 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,22 +15,22 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5bd90e23fc99988bb134a77befe3195ca507037d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9fb0eb7d8c10d8e186f009cda82480490ef0df9e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22262114"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65380554"
 ---
 # <a name="log-shipping"></a>ログ配布
-ログ配布は、システム障害時のダウンタイムを短縮することを目的とした、スタンバイ サーバーの機能です。ウォーム バックアップと呼ばれることもあります。  
+ログ配布は、ダウンタイムを短縮する、システム障害が発生した場合、ウォーム バックアップとも呼ばれるスタンバイ サーバーの機能を提供します。  
   
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] には分散データベース設計が採用されているため、バックアップを作成する際は、その復元ポイントをデータベース間で同期させる必要があります。 トランザクションは、複数のデータベースにまたがる場合もあります。いずれか 1 つのデータベースで障害が発生し、復元する必要が生じた場合、関連するすべてのデータベースを特定のポイントまで復元しないと、システムの一貫した状態を維持することができなくなります。 ただし、必ずしもすべてのデータベースが分散トランザクションに参加しているとは限りません。 詳細については、次を参照してください。[をバックアップおよび BizTalk Server データベースの復元](../core/backing-up-and-restoring-the-biztalk-server-databases.md)です。  
+ 分散データベース設計が[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]あります間で同期させる特定のバックアップを作成するときに、バックアップを復元できます をポイントします。 トランザクションが複数のデータベースにまたがることができます。場合、1 つのデータベースがオフラインになり、復元する必要がありますし、関連のすべてのデータベース復元しなければなりません 1 つのポイントでシステムが一貫性のある状態であることを確認します。 すべてのデータベースは、分散トランザクションに参加します。 詳細については、次を参照してください。[バックアップと、BizTalk Server データベースを復元](../core/backing-up-and-restoring-the-biztalk-server-databases.md)します。  
   
- BizTalk Server のバックアップ ジョブでは、データベースのバックアップ セットを生成するプロセスを自動化するために、Microsoft SQL Server のログ マーキング機能を使用しています。 バックアップ セットには、同期された復元ポイントが定義されています。 BizTalk Server のバックアップ ジョブによって生成された一連のデータベースを復元するプロセスでは、各データベースの最後のログ バックアップ ファイルが、特定のログ マーク (最後から 2 番目のマーク) まで復元されます。 これにより、各データベースの状態が確実に復元され、データの損失を最小限に抑えることが可能となります。 重要なことは、最後から 2 番目のログ マークが使用されるという点です。 ログ配布機能は SQL Server にも備わっていますが、BizTalk Server のデータベースをバックアップおよび復元する場合は、BizTalk Server のログ配布機能のみを使用してください。  
+ Microsoft SQL Server のログ マーキングを使用してデータベースのバックアップ セットを生成する自動プロセスを提供する BizTalk Server のバックアップ ジョブ。 これらのバックアップ セットには、復元プロセス中に使用する同期ポイントが含まれます。 BizTalk Server のバックアップ ジョブによって生成されたデータベースのセットを復元するプロセスの一環として、各データベースの前回のログ バックアップ ファイルは、2 番目の最後の記号を使用して、特定のログ マークに復元されます。 これにより、データベースを一貫性のある状態に復元し、失われたデータの量を大幅に短縮することができます。 ログ マーク前に、最後の 1 つを使用する必要があります。 SQL Server には、ログ配布機能が含まれますが、のみをバックアップして、BizTalk Server データベースを復元するときの BizTalk Server ログ配布機能を使用する必要があります。  
   
 > [!NOTE]
->  単純復旧モデルはトランザクション ログをバックアップせず、したがって最新のバックアップ以降のアクティビティの記録を保持していないので、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] データベースでの SQL Server 単純復旧モデルの使用はサポートされません。  完全復旧モデルを使用するように SQL Server を構成して、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] データベース バックアップ セットのデータの整合性を確保します。  
+>  使用するため、SQL Server 単純復旧モデルがサポートされていません[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]データベースを単純復旧モデル、トランザクション ログをバックアップできませんし、そのため、最新のバックアップ以降のアクティビティのレコードを保持はしないためです。  内のデータの整合性を確保する、完全復旧モデルを使用する SQL Server を構成する[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]データベース バックアップ セットです。  
   
 ## <a name="see-also"></a>参照  
- [バックアップと復元に関する詳細情報](../core/advanced-information-about-backup-and-restore1.md)
+ [バックアップおよび復元に関する詳細情報](../core/advanced-information-about-backup-and-restore1.md)

@@ -1,5 +1,5 @@
 ---
-title: Web サービスの有効化 |Microsoft ドキュメント
+title: Web サービスの有効化 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,38 +17,38 @@ caps.latest.revision: 23
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1b7cd0b1694422caf04285206f0bd7411ff5de20
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 59a811fe61a6a5b17e8c5cbf803b35d630836d05
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22242458"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65349697"
 ---
-# <a name="enabling-web-services"></a>Web サービスの有効化
-Web サービスを公開するには、インターネット インフォメーション サービス (IIS)、BizTalk 分離ホスト、および Windows のユーザー アカウントとグループ アカウントを構成する必要があります。 このセクションでは、IIS の Web サービスを有効にする方法について説明します。 Web サービスの有効化の詳細については、IIS のドキュメントを参照してください。  
+# <a name="enabling-web-services"></a>Web サービスを有効にします。
+Web サービスを発行するには、インターネット インフォメーション サービス (IIS)、BizTalk 分離ホスト、および Windows ユーザーおよびグループ アカウントを構成する必要があります。 このセクションでは、IIS の Web サービスを有効にする方法について説明します。 Web サービスを有効にする方法の詳細については、IIS のマニュアルを参照してください。  
   
  **[インターネット インフォメーション サービス]**  
   
- IIS と ASP.NET が構成されている Windows システムには、Web サービスを公開することができます。 サーバーごとに、すべての Web サービスが ASP.NET ワーカー プロセス内で実行されます。  
+ ASP.NET で構成された IIS を搭載する Windows システムに Web サービスを発行することができます。 各サーバーでは、すべての Web サービスは、ASP.NET ワーカー プロセス内で実行します。  
   
- 既定では、ASP.NET ワーカー プロセスは、ローカルの ASPNET アカウントを使用します。 IIS では、Web サービス要求を処理するアプリケーション プールを使用します。  
+ ASP.NET ワーカー プロセスは、既定では、ローカルの ASPNET アカウントを使用します。 IIS は、Web サービス要求を処理するためのアプリケーション プールを使用します。  
   
  **BizTalk 分離ホスト**  
   
- Web サービスを有効にするには、BizTalk Server で少なくとも 1 つの分離ホストを作成する必要があります。 分離ホストは、ISAPI 拡張プロセスや ASP.NET プロセスなどの、BizTalk Server で作成、コントロールしない外部プロセスといえます。 このような種類の外部プロセスは、HTTP/S や SOAP などの特定のアダプタをホストする必要があります。  
+ Web サービスを有効には、BizTalk Server で少なくとも 1 つの分離ホストを作成する必要があります。 分離ホストは、ISAPI 拡張機能と BizTalk Server は作成または制御する ASP.NET プロセスなどの外部プロセスを表します。 これらの種類の外部プロセスでは、HTTP/S や SOAP などの特定のアダプターをホストする必要があります。  
   
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 構成マネージャにより、BizTalk が既定の分離ホストとして使用する BizTalkServerIsolatedHost が作成されます。 BizTalk 分離ホスト ユーザー グループは、このホストに関連付けられている既定の Windows グループ名です。 ホストとホスト インスタンスの詳細については、次を参照してください。[を管理する BizTalk ホストとホスト インスタンス](../core/managing-biztalk-hosts-and-host-instances.md)です。  
+ [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Configuration Manager は、BizTalk が既定値として使用する BizTalkServerIsolatedHost を作成します。 分離ホスト。 BizTalk 分離ホスト ユーザー グループは、既定では、このホストに関連付けられている Windows グループの名前です。 ホストとホスト インスタンスの詳細については、次を参照してください。 [BizTalk ホストの管理およびホスト インスタンス](../core/managing-biztalk-hosts-and-host-instances.md)します。  
   
- 分離ホスト インスタンスは、1 つのアダプターでのみ実行できます。 1 つの分離ホストで HTTP アダプタと SOAP アダプタの受信ハンドラを構成する場合、2 つのアプリケーション プール (各アダプタに 1 つのアプリケーション プール) を作成する必要があります。  
+ 分離ホスト インスタンスは、1 つのアダプターでのみ実行できます。 1 つの分離ホストで HTTP および SOAP アダプターの受信ハンドラーを構成する場合は、2 つのアプリケーション プール、アダプターごとに 1 つのアプリケーション プールを作成する必要があります。  
   
- たとえば、次の 2 つの分離ホストを構成するとします。  
+ たとえば、次の 2 つの分離ホストを構成する予定の場合。  
   
 |分離ホスト名|受信場所|  
 |------------------------|-----------------------|  
-|分離ホスト 1|HTTP_ReceiveLocation1A<br /><br /> HTTP_ReceiveLocation1B<br /><br /> SOAP_ReceiveLocation1**注:** 、 **Isolated Host 1**の使用は、SOAP および HTTP アダプターの受信ハンドラー。|  
+|分離ホスト 1|HTTP_ReceiveLocation1A<br /><br /> HTTP_ReceiveLocation1B<br /><br /> SOAP_ReceiveLocation1**に注意してください。****Isolated Host 1**の使用は、SOAP および HTTP アダプターの受信ハンドラー。|  
 |分離ホスト 2|HTTP_ReceiveLocation2|  
   
- 仮想ディレクトリを 4 つ (次の受信場所ごとに 1 つ) 作成するとします。  
+ ごとに 1 つの受信場所を次のように、4 つの仮想ディレクトリを作成することがあります。  
   
 |受信場所|仮想ディレクトリ|  
 |----------------------|-----------------------|  
@@ -57,42 +57,42 @@ Web サービスを公開するには、インターネット インフォメー
 |SOAP_ReceiveLocation1|IIS_Virtual_Directory1C|  
 |HTTP_ReceiveLocation2|IIS_Virtual_Directory2|  
   
- 次のように、仮想ディレクトリに、少なくとも 3 つのアプリケーション プールを作成する必要があります。  
+ 次に、よう、仮想ディレクトリの少なくとも 3 つのアプリケーション プールを作成する必要があります。  
   
 > [!NOTE]
->  分離ホストごとに、少なくとも 1 つのアプリケーション プールを作成する必要があります。  
+>  分離ホストごとに少なくとも 1 つのアプリケーション プールを作成する必要があります。  
   
-|仮想ディレクトリ|アプリケーション プール|Description|  
+|仮想ディレクトリ|アプリケーション プール|説明|  
 |-------------------------|----------------------|-----------------|  
-|IIS_Virtual_Directory1A<br /><br /> IIS_Virtual_Directory1B|AppPool_Host1_HTTP|すべての受信場所で同じ分離ホスト (分離ホスト 1) と同じプロトコルを使用するため、個別のアプリケーション プールは不要です。|  
-|IIS_Virtual_Directory1C|AppPool_Host1_SOAP|この受信場所で使用するプロトコル (SOAP) は、同じホスト (Isolated Host 1) の他の受信場所で使用するプロトコルと異なるため、個別のアプリケーション プールが必要です。|  
-|IIS_Virtual_Directory2|AppPool_Host2_HTTP|この受信場所は、Isolated Host 1 と異なるホストで実行されるため、個別のアプリケーション プールが必要です。|  
+|IIS_Virtual_Directory1A<br /><br /> IIS_Virtual_Directory1B|AppPool_Host1_HTTP|同じ分離ホスト (Isolated Host 1) と同じプロトコルのすべての受信場所があるために、個別のアプリケーション プールは必要ありません。|  
+|IIS_Virtual_Directory1C|AppPool_Host1_SOAP|受信場所は、同じホスト (Isolated Host 1) で他の受信場所から別のプロトコル (SOAP) を使用するため、個別のアプリケーション プールが必要です。|  
+|IIS_Virtual_Directory2|AppPool_Host2_HTTP|受信場所は、分離ホスト 1 から別のホストで実行されるので、個別のアプリケーション プールが必要です。|  
   
 > [!NOTE]
->  アプリケーション プールのユーザー アカウントを、適切な分離ホストのローカル グループまたはドメイン グループに追加する必要があります。 詳細については、次を参照してください。 [Windows グループと BizTalk Server でのユーザー アカウント](../core/windows-groups-and-user-accounts-in-biztalk-server.md)です。  
+>  分離ホストの適切なローカルまたはドメイン グループには、アプリケーション プールのユーザー アカウントを追加する必要があります。 詳細については、次を参照してください。 [Windows グループと BizTalk Server でのユーザー アカウント](../core/windows-groups-and-user-accounts-in-biztalk-server.md)します。  
   
 > [!NOTE]
->  分離ホスト インスタンスと前の表に従って、対応するアプリケーション プールのユーザー アカウントと一致する必要があります。 分離ホスト インスタンスとアプリケーション プールのユーザー アカウントの間のリレーションシップの詳細については、次を参照してください。[サービス アカウントの変更をパスワード](../core/how-to-change-service-accounts-and-passwords.md)です。  
+>  分離ホスト インスタンスと前の表に従って、対応するアプリケーション プールのユーザー アカウントと一致する必要があります。 分離ホスト インスタンスとアプリケーション プールのユーザー アカウントの間のリレーションシップの詳細については、次を参照してください。[変更サービス アカウントおよびパスワード方法](../core/how-to-change-service-accounts-and-passwords.md)します。  
   
  **単一サーバー インストールのデータベースへのアクセス**  
   
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] および BizTalk 管理データベースが同じサーバーに存在する場合、ASP.NET ワーカー プロセスまたは IIS アプリケーション プールのユーザー コンテキストを、ローカルの ASPNET ユーザー アカウント、または最小限の権限を持つローカルのユーザー アカウントかドメイン ユーザー アカウントに設定します。  
+ 場合[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]と BizTalk 管理データベースが同じサーバー上に、ローカルの ASPNET ユーザー アカウント、または最小限の特権を持つローカルまたはドメイン ユーザー アカウントに、ASP.NET ワーカー プロセスまたは IIS アプリケーション プールのユーザー コンテキストを設定する必要があります。  
   
  **複数のサーバー インストールでのデータベースへのアクセス**  
   
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] および BizTalk 管理データベースが異なるサーバーに存在する場合、ASP.NET ワーカー プロセスまたは IIS アプリケーション プールのユーザー コンテキストをドメイン ユーザー アカウントに変更します。  
+ 場合[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]と BizTalk 管理データベースが別のサーバーに存在する、ドメイン ユーザー アカウントに、ASP.NET ワーカー プロセスまたは IIS アプリケーション プールのユーザー コンテキストを変更する必要があります。  
   
- マルチ サーバー展開を実装するときに、分離ホスト Windows グループが BizTalk データベース サーバーが属するドメインに存在する必要があります。  
+ マルチ サーバー展開を実装する場合は、分離ホスト Windows グループが BizTalk データベース サーバーが属するドメインに存在する必要があります。  
   
  **アカウントの特権およびユーザー権限を最小限に抑える**  
   
- 分離ホストを使用すると、外部プロセスで実行するアダプタに、BizTalk Server との連携に必要な最小限のリソースへのアクセス権が付与されます。 セキュリティで保護された展開を行うために、外部プロセスのユーザー コンテキストに最小限の権限を付与します。  
+ 分離ホストを使用して、BizTalk Server との対話に必要なリソース量が最小限に外部プロセスへのアクセスで実行されるアダプターを与えます。 セキュリティで保護された展開は、するようにユーザー コンテキスト、外部プロセスの最小限の特権します。  
   
  **BizTalk Web サービス公開ウィザードのセキュリティに関する推奨事項**  
   
- BizTalk Web サービス公開ウィザードで作成する仮想ディレクトリは、親仮想ディレクトリまたは Web サイトからアクセス制御リスト (ACL) および認証要件を継承します。 親仮想ディレクトリまたは Web サイトへの匿名アクセスが許可されている場合、仮想ディレクトリを作成するときに、BizTalk Web サービス公開ウィザードによってその機能は削除されます。  
+ BizTalk Web サービス公開ウィザードによって作成された仮想ディレクトリでは、アクセス制御リスト (ACL) と認証の要件を親仮想ディレクトリまたは Web サイトから継承されます。 親仮想ディレクトリまたは Web サイトへの匿名アクセスを許可している場合、BizTalk Web サービス公開ウィザードは、仮想ディレクトリを作成するときにその機能を削除します。  
   
- 次のトピックには、[!INCLUDE[btsPlatformsComApis](../includes/btsplatformscomapis-md.md)] のセキュリティに関する注意事項と推奨事項が記載されています。  
+ 次には、セキュリティに関する注意事項と推奨事項が含まれます。[!INCLUDE[btsPlatformsComApis](../includes/btsplatformscomapis-md.md)]します。  
   
 ## <a name="next"></a>Next
   

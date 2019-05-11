@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e6580441f828f04697c1d3896d37a6fe8c6ce356
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f7664a85d0cb1bb0c83ef53c6c584c51b532d6c4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37008931"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65344880"
 ---
 # <a name="group-control-number-violates-syntax"></a>グループ制御番号が構文に違反しています
 ## <a name="details"></a>詳細  

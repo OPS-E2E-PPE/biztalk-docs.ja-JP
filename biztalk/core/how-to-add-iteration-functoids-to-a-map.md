@@ -12,23 +12,23 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8ed2dfe33feb7d5e0e6f43be61742bfbbddfc98c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5b6e9bef21aa2dd268982abddd39cd0257d2bc80
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36997195"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65343277"
 ---
 # <a name="how-to-add-iteration-functoids-to-a-map"></a>マップに繰り返し Functoid を追加する方法
 **イテレーション**functoid の出力、ループの現在のレコードのインデックスが構造体の最初のレコードでは、2、2 つ目のレコードを 1 から始まる具合です。  
   
  概念情報については、**イテレーション**functoid を参照してください[繰り返し Functoid](../core/iteration-functoid.md)します。  
   
-### <a name="to-add-the-index-functoid-to-a-map-and-configure-it"></a>マップにインデックス Functoid を追加して構成するには  
+### <a name="to-add-the-index-functoid-to-a-map-and-configure-it"></a>マップにインデックス functoid を追加し、構成するには  
   
 1. [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]ツールボックス active をクリックして、**高度な Functoid** functoid のカテゴリを選択するタブ。  
   
-    選択したカテゴリに含まれる高度な Functoid の一覧が表示されます。  
+    選択したカテゴリでの高度な functoid の一覧が表示されます。  
   
 2. ドラッグ、**インデックス**functoid (![](../core/media/bts-tls-iteration.gif "bts_tls_iteration")) ツールボックスからグリッド ページの適切な場所にします。  
   

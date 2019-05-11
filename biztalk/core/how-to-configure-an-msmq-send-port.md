@@ -16,12 +16,12 @@ caps.latest.revision: 29
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: aad4a63a11f415c57778db726af0559858eab05c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3badea91ac3d573a5db44e4810d8a427d2c876c9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36992019"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65341709"
 ---
 # <a name="how-to-configure-an-msmq-send-port"></a>MSMQ 送信ポートを構成する方法
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールで、MSMQ 送信ポートのアダプターの変数を設定できます。 プロパティが送信ポートに設定されていない場合は、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールで設定されている既定の送信ハンドラーの値が使用されます。  
@@ -49,7 +49,7 @@ ms.locfileid: "36992019"
    |        **管理キュー**         |                                                                                                受信確認メッセージを受信するキュー名を指定します。                                                                                                 |   String    |     空白     |
    |              **本文の種類**              |                                                                               MSMQ のメッセージ本文の種類を指定します。 有効な値は、.NET のメンバー **VarEnum**列挙体。                                                                               |     Int     |     8209      |
    |       **証明書の拇印**        |    メッセージ認証に使用する証明書の拇印を指定します。 組み合わせてこのプロパティを使用して、**認証を使用する**メッセージを確認するプロパティ。 使用して、**ユーザー名**と**パスワード**キューにアクセスするプロパティ。     |   String    |     空白     |
-   |          **送信先キュー**          |                     送信先キューを指定します。 キューの詳細については、[メッセージ キューのキュー](../core/message-queuing-queues.md)を参照してください。 **注:** の URI を送信ポートまたは受信場所が 256 文字を超えることはできません。                      |   String    |     空白     |
+   |          **送信先キュー**          |                     送信先キューを指定します。 キューの詳細については、次を参照してください。[メッセージ キューのキュー](../core/message-queuing-queues.md)します。 **注:** URI を送信ポートまたは受信場所が 256 文字を超えることはできません。                      |   String    |     空白     |
    |        **暗号化アルゴリズム**         |                                                                                                選択**RC2**、 **RC4**、または**None**暗号化アルゴリズム用。                                                                                                |    Enum     |     なし      |
    | **メッセージの最大サイズ (単位: キロバイト)** |                                                                                       指定したキューに送信するメッセージの最大サイズを指定します。                                                                                        | UnsignedInt |     1024      |
    |          **メッセージの優先順位**           |                                                                                                                    メッセージの優先度を設定します。                                                                                                                     |    Enum     |    標準     |

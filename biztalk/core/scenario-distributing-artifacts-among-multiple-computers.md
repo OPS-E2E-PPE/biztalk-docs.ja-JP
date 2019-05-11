@@ -1,5 +1,5 @@
 ---
-title: 'シナリオ: 複数のコンピューター間でのアイテムの分散 |Microsoft ドキュメント'
+title: シナリオ:複数のコンピューター間でのアイテムの分散 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -20,21 +20,21 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: abedc60ad13c7e8b2be3ce4caa7b8d34262b4e5c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e64cdf9ac474697961d4f8fd41bb75057d27aa54
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22269162"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65308319"
 ---
-# <a name="scenario-distributing-artifacts-among-multiple-computers"></a>シナリオ: 複数のコンピューター間での成果物を配布します。
-このトピックでは、アプリケーション内のアイテムを、別々のコンピューターに選択的にインストールする場合のアプリケーション展開シナリオについて説明します。 これを行うのは、アプリケーション内の特定のアセンブリまたはその他の種類のアイテムを、BizTalk グループ内の特定のコンピューターにのみインストールする場合です。 そのためには、アプリケーションに含まれているアイテムを、物理コンピューターに同時にインストールするアイテムに応じて、複数の .msi ファイルにエクスポートします。  
+# <a name="scenario-distributing-artifacts-among-multiple-computers"></a>シナリオ:複数のコンピューター間でのアイテムを配布します。
+このトピックではアプリケーションでアイテムが選択的に別のコンピューターにインストールされているアプリケーションの展開シナリオについて説明します。 特定のアセンブリまたはその他の種類の BizTalk グループ内の特定のコンピューターにのみインストールするアプリケーションでアイテムをする場合は、これを行う可能性があります。 これを行うには、これに基づいてアイテムをまとめてインストール、物理コンピューター上の複数の .msi ファイルにアプリケーションに含まれるアイテムをエクスポートできます。  
   
- 次の図は、BizTalk グループ 1 の BizTalk 管理データベースにインポートする .msi ファイルを示します。 これにより、そのグループで、Order Processing アプリケーションとすべてのアイテムが作成されます。 アプリケーションのアイテムは、2 つの .msi ファイルに分けてエクスポートします。 一方の .msi ファイルは、Assembly1、Certificate1、および Script1 を含みます。 もう一方の .msi ファイルは、Assembly2、Script2、および VirtualDirectory1 を含みます。  
+ 次の図は、BizTalk グループ 1 の BizTalk 管理データベースにインポートする .msi ファイルを示します。 これにより、そのグループの Order Processing アプリケーションとすべてのアーティファクトが作成されます。 アプリケーションのアイテムは、2 つの複数の .msi ファイルにエクスポートされます。 1 つの .msi ファイルには、Assembly1、Certificate1、および Script1 が含まれています。 その他の .msi ファイルには、Assembly2、Script2、および virtualdirectory1 を含みますが含まれています。  
   
- 両方の .msi ファイルは、BizTalk グループ 2 にインポートされます。 両方に所属するため、Order Processing アプリケーションは、新しいグループの注文処理をという同じアプリケーションに両方の .msi ファイル内の成果物のすべてインポートされます。  
+ 両方の .msi ファイルは、BizTalk グループ 2 にインポートされます。 どちらも Order Processing アプリケーションに属している、ために、注文処理をという新しいグループに同じアプリケーションに両方の .msi ファイル内の成果物のすべてインポートされます。  
   
- また、アプリケーションのアイテムは、.msi ファイルから、グループ内でアイテムを実行するコンピューターにインストールされます。 仮想ディレクトリが格納されている .msi ファイルは BizTalk Server B および BizTalk Server C にインストールされます (両方が IIS を実行しています)。  
+ さらに、アプリケーションのアイテムは、それらを実行するグループ内のコンピューターに .msi ファイルからインストールされます。 どちらも IIS を実行している BizTalk Server B および BizTalk Server C に仮想ディレクトリを含む .msi ファイルがインストールされていることに注意してください。  
   
  ![別のコンピューターにインストールされている成果物](../core/media/distributionofartifacts.gif "DistributionOfArtifacts")  
   

@@ -13,12 +13,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3ce37fbf72f07bc3610a88096098722e8be55d6b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d050a2f2b4435daa0ea2bff8b7f2a2f19456d624
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37015715"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65309419"
 ---
 # <a name="sb-messaging-adapter"></a>SB-Messaging アダプター
 Service Bus (**Sb-messaging**) を受信し、キュー、トピック、およびリレーなど、Service Bus エンティティから送信アダプターが使用されます。 使用することができます、 **Sb-messaging**アダプターで、オンプレミスの接続を[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]を Azure にします。
@@ -113,7 +113,7 @@ Service Bus 名前空間を作成するときに、Access Control (ACS) 名前�
    |         プロパティ         |                                                                                                                                                                                                                                             目的                                                                                                                                                                                                                                              |
    |--------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
    |   **送信先 URL**    |                                                                                                                                                               Service Bus キューを配置する場所の URL を入力します。 通常、URL は次のような形式になっています。<br /><br /> `sb://<namespace>.servicebus.windows.net/<queue_name>`                                                                                                                                                               |
-   | **バッチのフラッシュ間隔** | キューまたはトピックに送られたメッセージ バッチがフラッシュされる間隔を示す期間値を指定します。 既定値は、20 ミリ秒です。<br /><br /> Service Bus キューおよびトピックに関するバッチ処理の詳細については、、**クライアント側のバッチ処理**セクションで[ https://azure.microsoft.com/documentation/articles/service-bus-performance-improvements](https://azure.microsoft.com/documentation/articles/service-bus-performance-improvements)を参照してください。 |
+   | **バッチのフラッシュ間隔** | キューまたはトピックに送られたメッセージ バッチがフラッシュされる間隔を示す期間値を指定します。 既定値は、20 ミリ秒です。<br /><br /> Service Bus キューおよびトピックに関するバッチ処理の詳細については、次を参照してください。、**クライアント側のバッチ処理**セクションで[ https://azure.microsoft.com/documentation/articles/service-bus-performance-improvements](https://azure.microsoft.com/documentation/articles/service-bus-performance-improvements)します。 |
    |     **オープン タイムアウト**     |                                                                                                                                                                                チャネルを開く操作が完了するまでの時間を示す期間値を指定します。<br /><br /> **既定値:** 1 分                                                                                                                                                                                |
    |     **送信タイムアウト**     |                                                                                                                                                                                    送信操作が完了するまでの時間を示す期間値を指定します。<br /><br /> **既定値:** 1 分                                                                                                                                                                                    |
    |    **クローズ タイムアウト**     |                                                                                                                                                                               チャネルを閉じる操作が完了するまでの時間を示す期間値を指定します。<br /><br /> **既定値:** 1 分                                                                                                                                                                                |

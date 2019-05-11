@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10856 |Microsoft Docs'
+title: シングル サインオン:イベント 10856 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 707160ddfededefd5f0ef47e77df08844b38abcf
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1ce753c055ed274624a08f5725dff5129b87f6b2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36989347"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65306578"
 ---
-# <a name="single-sign-on-event-10856"></a>シングル サインオン: イベント 10856
+# <a name="single-sign-on-event-10856"></a>シングル サインオン:イベント 10856
 ## <a name="details"></a>詳細  
   
 |                 |                                                                |
@@ -33,7 +33,7 @@ ms.locfileid: "36989347"
 |  メッセージ テキスト   | アプリケーションのユーザーには、このアプリケーションのマッピングを作成できません。 |
   
 ## <a name="explanation"></a>説明  
- このアプリケーションは、Application Users グループのメンバーにマッピングの作成を許可するように構成されていませんでした。  
+ このアプリケーションは、アプリケーション ユーザー グループのメンバーは、マッピングを作成するのには許可されていませんように構成されました。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- 十分な特権を持つユーザーにこのようなマッピングの作成を依頼する必要があります。
+ これらのマッピングを作成するための十分な特権を持つユーザーを確認する必要があります。

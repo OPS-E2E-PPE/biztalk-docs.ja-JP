@@ -1,5 +1,5 @@
 ---
-title: エラー - XML インスタンスの生成ジェネリック |Microsoft ドキュメント
+title: エラー - XML インスタンスを生成するジェネリック |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,22 +14,22 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c859cfc775e74ab817e66dbb8b896f51458f0301
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 79a24f4143e2619809071d3b414c9a122c8121b2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22241234"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65348252"
 ---
-# <a name="error---generic-generate-xml-instance"></a>エラー - XML インスタンスの生成ジェネリック
+# <a name="error---generic-generate-xml-instance"></a>エラー - XML インスタンスを生成するジェネリック
 **エラー コード**  
   
  btm1038  
   
  **説明**  
   
- BizTalk マッパーで、マップの送信元スキーマの XML インスタンス メッセージ ファイルを生成できませんでした。 マップに関連付けられている送信元スキーマに問題があります。  
+ BizTalk マッパーは、マップの送信元スキーマの XML インスタンス メッセージ ファイルを生成できませんでした。 これは、マップに関連付けられている送信元スキーマに問題があることを示しています。  
   
  **ユーザーの操作**  
   
- BizTalk エディターを使用して、マップに関連付けられた送信元スキーマを開き、送信元スキーマに問題があるかどうかを調査します。 また、**スキーマの検証**と**インスタンスの生成**ソリューション エクスプ ローラーでスキーマを右クリックしたときに使用できるコマンドは、スキーマ エラーの検出に便利です。
+ BizTalk エディターを使用して、マップに関連付けられている送信元スキーマを開き、送信元スキーマの問題があるかどうかの調査を開始します。 また、**スキーマの検証**と**インスタンスの生成**コマンド、使用できるは、ソリューション エクスプ ローラーでスキーマを右クリックしたときにスキーマ エラーの検出に役立ちます。

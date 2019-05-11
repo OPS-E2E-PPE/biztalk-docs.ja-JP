@@ -1,5 +1,5 @@
 ---
-title: エラー - リンク オプション競合しています |Microsoft ドキュメント
+title: エラー - リンク オプションが競合 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,14 +14,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 31f5829f971e524a5e4d2c0f443174c6511a6314
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3abbafbc33681ed043e55fb4ad2aa19199b1736f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22240370"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65347898"
 ---
-# <a name="error---link-option-conflict"></a>エラー - リンク オプション競合しています
+# <a name="error---link-option-conflict"></a>エラー - リンク オプションが競合
 **エラー コード**  
   
  btm1022  

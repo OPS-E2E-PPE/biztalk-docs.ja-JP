@@ -18,12 +18,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 14559d888bc020a5772fbbc6eddf3ba4fdb4beb0
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6e1d4b8d33824d6eca25c52207b8aaa9473df5e9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36989603"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65255309"
 ---
 # <a name="get-started-with-the-biztalk-accelerator-for-hl7"></a>BizTalk accelerator for HL7 開始します。
 Microsoft を使用して[!INCLUDE[HL7_CurrentVersion_FirstRef_md](../../includes/hl7-currentversion-firstref-md.md)]、医療のコンピューター システム間でビジネス プロセスを開発することができます。 使用して[!INCLUDE[HL7_CurrentVersion_abbrev_md](../../includes/hl7-currentversion-abbrev-md.md)]開発者、IT プロフェッショナル、およびインターフェイス アナリストは、医療アプリケーション間でのエンド ツー エンドの統合 BTAHL7 ベース ソリューションの開発に共通の環境で作業できます。  
@@ -83,6 +83,6 @@ Microsoft を使用して[!INCLUDE[HL7_CurrentVersion_FirstRef_md](../../include
   
 -   [バッチ処理のチュートリアル](../../adapters-and-accelerators/accelerator-hl7/batching-tutorial.md)
   
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
   
 [障碍がある方のためのユーザー補助機能](../../adapters-and-accelerators/accelerator-hl7/accessibility-for-people-with-disabilities5.md)

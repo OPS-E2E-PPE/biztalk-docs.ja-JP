@@ -1,5 +1,5 @@
 ---
-title: 通信方向 |Microsoft ドキュメント
+title: 通信方向 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,19 +15,19 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9d6c664643629971366805d08600677d22d7c419
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 307c8bae32aa7be0fee74f2f25c1bf4a2252ed0b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22231378"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65357096"
 ---
-# <a name="communication-direction"></a>[通信方向]
-各*ポート*独自通信の方向がします。 通信方向は、ポートの種類の通信方式と組み合わせて、ポートの使用方法の定義に使用されます。 通信方向、つまり極性によって、そのポートでメッセージが送信される方向が決定します。  
+# <a name="communication-direction"></a>通信方向
+各*ポート*が独自の通信方向。 通信方向は、ポートの使用方法の定義を完了するに、ポートの種類の通信方式と組み合わせて使用します。 通信方向、つまり極性によって、そのポート経由で、メッセージを送信する方向を決定します。  
   
- ポートの種類で一方向の通信方式が使用できる場合、通信方向は送信または受信のどちらかにできます。 ポートの種類で双方向 (要求 - 応答) の通信方式が使用できる場合、通信方向は、要求を送信して応答を受信する "送信と受信"、または要求を受信して応答を送信する "受信と送信" のどちらかにできます。  
+ ポートの種類の一方向通信パターンの場合、通信方向は送信または受信のいずれかにすることができます。 ポートの種類の双方向 (要求-応答) の通信パターンの場合、通信方向は送信と受信要求を送信し、応答を受信すると、または受信、送信、要求を受信し、応答の送信を指定できます。  
   
 ## <a name="see-also"></a>参照  
  [通信方式](../core/communication-pattern.md)  
  [ポート構成ウィザードを実行する方法](../core/how-to-run-the-port-configuration-wizard.md)   
- [オーケストレーションでポートを使用します。](../core/using-ports-in-orchestrations.md)
+ [オーケストレーションでのポートの使用](../core/using-ports-in-orchestrations.md)

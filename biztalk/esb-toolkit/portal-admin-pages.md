@@ -1,5 +1,5 @@
 ---
-title: ポータルの管理ページ |Microsoft ドキュメント
+title: 管理ポータル ページ |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,20 +12,20 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b9c3d134088db561139c03d3f7fc75bb95a754d5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 62b99c1fab9a2792135f365fc85d5aa8a160f5f5
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22294474"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65246406"
 ---
 # <a name="portal-admin-pages"></a>管理ポータル ページ
-上でマウスを移動すると、 **Admin**  タブで、ポップアップ メニューは、ポータルの管理タスクの一覧を示します。 **Admin**タブはだけ (Microsoft BizTalk Server 管理者アカウント グループのメンバー) の管理者アクセス許可を持っているユーザーに表示します。 次のオプションは、ポップアップ メニューには。  
+上でマウスを移動すると、**管理者** タブで、ポップアップ メニューは、ポータルの管理タスクの一覧を示します。 **管理者** タブは (Microsoft BizTalk Server 管理者アカウントのグループのメンバー) の管理アクセス許可を持つユーザーに表示されるのみです。 次のオプションは、ポップアップ メニューには。  
   
--   **監査ログ管理**です。 このメニュー項目が開きます、[監査ログ ページ](../esb-toolkit/audit-log-page.md)監査イベントのリストを格納します。 このページから、監査イベントに関連付けられているメッセージの詳細を表示できます。  
+-   **監査ログ管理**します。 このメニュー項目が表示されます、[監査ログ ページ](../esb-toolkit/audit-log-page.md)監査イベントの一覧を格納しています。 このページでは、監査イベントに関連付けられたメッセージの詳細を表示できます。  
   
--   **設定をフォールト**です。 このメニュー項目が開きます、[フォールトの設定 ページ](../esb-toolkit/fault-settings-page.md)監査、アラート サービス キュー、およびアラートの電子メール サービスの管理設定の範囲を指定できます。  
+-   **設定エラー**します。 このメニュー項目が表示されます、[エラー設定ページ](../esb-toolkit/fault-settings-page.md)監査、アラート サービス キュー、およびアラートの電子メール サービスの管理設定の範囲を指定できます。  
   
--   **アラートを管理する**([管理] ビュー)。 このメニュー項目が開きます、[ポータル アラート ページ](../esb-toolkit/portal-alerts-page.md)管理ビュー。 管理者は、このページを使用して、アラートと、システム内でのサブスクリプションをすべて表示および編集することができます。 これらも表示して特定のアラートに関連付けられているサブスクリプションを編集します。  
+-   **アラートを管理する**([管理] ビュー)。 このメニュー項目が表示されます、[ポータル アラート ページ](../esb-toolkit/portal-alerts-page.md)管理ビュー。 管理者は、このページを使用して、アラートと、システム内のサブスクリプションをすべて表示および編集することができます。 表示し、特定のアラートに関連付けられているサブスクリプションの編集もできます。  
   
--   **レジストリ設定**です。 このメニュー項目が開きます、[レジストリ設定 ページ](../esb-toolkit/registry-settings-page.md)レジストリ統合、電子メール通知、およびテンプレートの管理設定の範囲を指定できます。
+-   **レジストリ設定**します。 このメニュー項目が表示されます、[レジストリ設定 ページ](../esb-toolkit/registry-settings-page.md)レジストリ統合、電子メールの通知、およびテンプレートの管理設定の範囲を指定することができます。

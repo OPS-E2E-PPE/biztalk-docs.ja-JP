@@ -1,5 +1,5 @@
 ---
-title: タイムアウト エラー |Microsoft ドキュメント
+title: タイムアウト エラー |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,24 +12,24 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6f537b0eeffa3bbc9634a81a92803fdee4ec769e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5b16b031a73221c2401408317403f335bc41eff0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22279210"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65303012"
 ---
 # <a name="timeout-errors"></a>タイムアウト エラー
 ここでは、WCF のタイムアウト エラーを診断および解決するための詳細について説明します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [クローズ タイムアウトが無効です。](../core/invalid-close-timeout.md)  
+-   [クローズ タイムアウトが無効です](../core/invalid-close-timeout.md)  
   
--   [無効なリース タイムアウト](../core/invalid-lease-timeout.md)  
+-   [リース タイムアウトが無効です](../core/invalid-lease-timeout.md)  
   
--   [オープン タイムアウトが無効です。](../core/invalid-open-timeout.md)  
+-   [オープン タイムアウトが無効です](../core/invalid-open-timeout.md)  
   
--   [無効な送信タイムアウト](../core/invalid-send-timeout.md)  
+-   [送信タイムアウトが無効です](../core/invalid-send-timeout.md)  
   
--   [有効期限のタイムアウト時間が無効です。](../core/invalid-time-to-live-timeout.md)
+-   [有効期限タイムアウトが無効です](../core/invalid-time-to-live-timeout.md)

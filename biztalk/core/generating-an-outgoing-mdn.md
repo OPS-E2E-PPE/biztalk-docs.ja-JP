@@ -12,12 +12,12 @@ caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b9fdd5b5d52d5d741b71ec46be276b4926528a67
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a002383265b0b8d4001c89f61131c6749668cdd6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36984475"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65345219"
 ---
 # <a name="generating-an-outgoing-mdn"></a>送信 MDN の生成
 AS2 受信パイプラインは、受信メッセージに対する MDN (Message Disposition Notification) 応答を生成します。 これは、AS2EDIReceive 受信パイプラインの EDI 逆アセンブラー パイプライン コンポーネント (EDI エンコード メッセージに応答する場合) または AS2Receive 受信パイプラインの AS2 逆アセンブラー パイプライン コンポーネント (EDI でエンコードされていないメッセージに応答する場合) によって行われます。  
@@ -58,7 +58,7 @@ AS2 受信パイプラインは、受信メッセージに対する MDN (Message
   
 - `EdiIntAS.DispositionType`  
   
-  MDN を生成するには、これらのコンテキスト プロパティを両方とも昇格させる必要があります。 これらのコンテキスト プロパティの詳細については、[AS2 コンテキスト プロパティ](../core/as2-context-properties.md)を参照してください。  
+  MDN を生成するには、これらのコンテキスト プロパティを両方とも昇格させる必要があります。 これらのコンテキスト プロパティの詳細については、次を参照してください。 [AS2 コンテキスト プロパティ](../core/as2-context-properties.md)します。  
   
   受信メッセージの構成設定とヘッダーの間に一貫性がない場合、パイプラインは否定 MDN を生成します。  
   

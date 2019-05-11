@@ -1,5 +1,5 @@
 ---
-title: XML メッセージ エンベロープを入れ子になった |Microsoft ドキュメント
+title: XML メッセージ エンベロープを入れ子になった |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,15 +12,15 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 46b0f505dd9ba7da71df1cb460f9c9a6610763d3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b341930a30c8653cb2db378a24c6600f48de0891
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22263842"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65263355"
 ---
 # <a name="nested-xml-message-envelopes"></a>入れ子になった XML メッセージ エンベロープ
-XML エンベロープを入れ子にすることによって、複雑なドキュメント構造を作成できます。 入れ子になった XML エンベロープには、柔軟型と正規型の 2 つの形態があります。 次の例は、柔軟型のエンベロープ ドキュメントを示しています。ドキュメントおよびエンベロープ (太字部分) が上位のエンベロープ内の同じレベルに出現しています。  
+複雑なドキュメント構造を作成する XML エンベロープを入れ子にすることができます。 入れ子になった XML エンベロープに柔軟で canonical と呼ばれる 2 つの形式で発生します。 次の例では、エンベロープ ドキュメントをドキュメントおよびエンベロープ (太字で表示する) ことができますが表示される上位のエンベロープ内の同じレベルでの柔軟な形式を示します。  
   
 ```  
 <envelope1>  
@@ -31,7 +31,7 @@ XML エンベロープを入れ子にすることによって、複雑なドキ�
 </envelope1>  
 ```  
   
- 次の例は、正規型のエンベロープ ドキュメントに準拠した、同様のインスタンス メッセージを示しています。すべてのドキュメントが最下位のエンベロープ内の同じレベルに出現しています。  
+ 次の例では、最も内側のエンベロープ内の同じレベルに表示されるすべてのドキュメントのエンベロープのドキュメントの正規の形式に準拠している同様のインスタンス メッセージを示します。  
   
 ```  
 <envelope1>  
@@ -45,13 +45,13 @@ XML エンベロープを入れ子にすることによって、複雑なドキ�
   
 ```  
   
- XML 逆アセンブラーは、前述の 2 つの形態のインスタンス メッセージを受け取ると、いずれも document1、document2、document3、および document4 を生成します。 各ドキュメントのメッセージ コンテキストには、対応するドキュメントから昇格されたプロパティのほかに、上位の各エンベロープ内で昇格されたプロパティが含まれます。 次の表は、昇格されるプロパティを示しています。これらのプロパティは、柔軟型および正規型の例で、各エンベロープおよびドキュメントの最初の列で指定されたプロパティ昇格に基づき、ラップ解除された各ドキュメントのメッセージ コンテキストに追加されます。  
+ フォームの説明のいずれかで、インスタンス メッセージを指定する、XML 逆アセンブラーは document1、document2、document3、および document4 を生成を生成します。 これらのドキュメントのそれぞれのメッセージ コンテキストには、外側のエンベロープの各内で昇格させたプロパティと、対応するドキュメントから昇格されたプロパティが含まれます。 次の表に表示される昇格させたプロパティが両方、柔軟で標準的な例については、さまざまなエンベロープの最初の列で指定されたプロパティ昇格に基づきラップされていない各ドキュメントのメッセージ コンテキストに含めるとドキュメント。  
   
-|指定されたプロパティ昇格|結果のメッセージ コンテキスト プロパティ (柔軟型の例)|結果のメッセージ コンテキスト プロパティ (正規型の例)|  
+|指定したプロパティの昇格|柔軟な例については、結果のメッセージ コンテキスト プロパティ|標準的な例の結果のメッセージ コンテキスト プロパティ|  
 |-----------------------------------|---------------------------------------------------------------|----------------------------------------------------------------|  
-|envelope1: p1<br /><br /> envelope2: p3<br /><br /> document1: p2<br /><br /> document2: p4 および p5<br /><br /> document3: プロモーションがありません<br /><br /> document4 を生成: プロモーションがありません|document1: p1、p2<br /><br /> document2: p1、p3、p4、p5<br /><br /> document3: p1、p3<br /><br /> document4 を生成: p1|document1: p1、p2、p3<br /><br /> document2: p1、p3、p4、p5<br /><br /> document3: p1、p3<br /><br /> document4 を生成: p1、p3|  
+|envelope1: p1<br /><br /> envelope2: p3<br /><br /> 文書 1: p2<br /><br /> 文書 2: p4 および p5<br /><br /> document3: no promotions<br /><br /> document4: no promotions|文書 1: p1、p2<br /><br /> 文書 2: p1、p3、p4、p5<br /><br /> document3: p1、p3<br /><br /> document4 を生成: p1|文書 1: p1、p2、p3<br /><br /> 文書 2: p1、p3、p4、p5<br /><br /> document3: p1、p3<br /><br /> document4 を生成: p1、p3|  
   
 ## <a name="see-also"></a>参照  
  [XML メッセージ エンベロープ](../core/xml-message-envelopes.md)   
  [XML メッセージの構造](../core/structure-of-an-xml-message.md)   
- [エンベロープ用スキーマを作成する方法](../core/how-to-create-schemas-for-envelopes.md)
+ [エンベロープ用スキーマの作成方法](../core/how-to-create-schemas-for-envelopes.md)

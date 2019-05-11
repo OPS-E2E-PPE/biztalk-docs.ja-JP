@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c5f656fd28ec464aeceb5f8603b872c888494ae0
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9ab75425b33024a3778584049a9fb9dd2732ba83
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37009539"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65376912"
 ---
 # <a name="unconfigure-or-remove-biztalk-accelerator-for-swift"></a>構成を解除または for SWIFT の BizTalk アクセラレータの削除
 変更したり、Microsoft の削除[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]を実行して、コンピューターから、**セットアップ ウィザード**またはを使用して、**コントロール パネルの **します。  

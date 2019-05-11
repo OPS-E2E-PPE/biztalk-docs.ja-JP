@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10838 |Microsoft Docs'
+title: シングル サインオン:イベント 10838 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4f286f5a2560180b70e9595e1a028975c284baa5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 11665ca8843d26af8518d391f1846ec9b3b69e70
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37006267"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65307554"
 ---
-# <a name="single-sign-on-event-10838"></a>シングル サインオン: イベント 10838
+# <a name="single-sign-on-event-10838"></a>シングル サインオン:イベント 10838
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                                                     |
@@ -30,10 +30,10 @@ ms.locfileid: "37006267"
 |  イベント ソース   |                                                       ENTSSO                                                        |
 |    コンポーネント    |                                                         なし                                                         |
 |  シンボル名  |                                          ENTSSO_E_MAX_SSO_DATABASE_CREATE                                           |
-|  メッセージ テキスト   | 既定のログ ファイル名を使用する場合は、SSO で作成可能な SQL データベース名の最大文字数は 123 文字です。 |
+|  メッセージ テキスト   | SSO で作成できる最大 SQL データベースの名前長さは、既定のログ ファイル名を許可する 123 文字です。 |
   
 ## <a name="explanation"></a>説明  
- 既定のログ ファイル名を使用する場合は、SSO で作成可能な SQL データベース名の最大文字数は 123 文字です。  
+ SSO で作成できる最大 SQL データベースの名前長さは、既定のログ ファイル名を許可する 123 文字です。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- これらのガイドラインに沿った名前を使用します。
+ 次のガイドラインに沿った名前を使用します。

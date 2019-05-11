@@ -12,23 +12,23 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 659b9b39beea4bf5efed4c6d1553fca173191cc5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2621287c35a60f57c4706e0901c7f786166d6cee
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36988763"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65343270"
 ---
-# <a name="how-to-add-looping-functoids-to-a-map"></a>マップにループ Functoid を追加する方法
+# <a name="how-to-add-looping-functoids-to-a-map"></a>ループ マップに Functoid を追加する方法
 
 ## <a name="overview"></a>概要
 **ループ**functoid が複数のレコードまたは送信元スキーマ内のフィールドを送信先スキーマの 1 つのレコードに結合します。  
 
  概念情報については、**ループ**functoid を参照してください[ループ Functoid](../core/looping-functoid.md)します。  
 
- 特定の状況では、一部の functoid が正常に動作しないと共にマップで使用している場合、**ループ**functoid。 次の条件下では、期待どおりの結果が生成されません。  
+ 特定の状況では、一部の functoid が正常に動作しないと共にマップで使用している場合、**ループ**functoid。 このような functoid が、次の条件を満たしている場合、期待される結果は生成されません。  
 
--   Functoid に複数の入力リンクが存在する。  
+-   Functoid には、1 つ以上の入力リンクがあります。  
 
 -   2 つまたは複数の functoid の入力リンクは、入力レコードの子フィールドにリンクされて、**ループ**functoid は、子フィールドが兄弟ではないです。  
 
@@ -38,7 +38,7 @@ ms.locfileid: "36988763"
 
 1. [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]ツールボックス active をクリックして、**高度な Functoid** functoid のカテゴリを選択するタブ。  
 
-    選択したカテゴリに含まれる高度な Functoid の一覧が表示されます。  
+    選択したカテゴリでの高度な functoid の一覧が表示されます。  
 
 2. ドラッグ、**ループ**ツールボックスから functoid をグリッド ページの適切な場所にします。  
 

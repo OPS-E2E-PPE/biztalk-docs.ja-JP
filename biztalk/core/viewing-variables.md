@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6a09c586e535d8670a0e130e23a6f90d38c1ab23
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9c2993de1711d47553638b47048d319d65b3ae6b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37004939"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65320774"
 ---
 # <a name="viewing-variables"></a>変数の表示
 変数は、次の 2 つのモードで確認できます。  

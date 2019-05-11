@@ -16,12 +16,12 @@ caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 41f728126f14193ad8fc584a94574dab61f7140f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ca8761237aa255322d9aa1a15fb04abcd2ac9df6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36996875"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65354905"
 ---
 # <a name="considerations-and-known-issues-for-tpe"></a>TPE の考慮事項と既知の問題
 追跡プロファイルと TPE を操作する際に留意しなければならない点は次のとおりです。  
@@ -67,7 +67,7 @@ ms.locfileid: "36996875"
 - ドラッグ アンド ドロップ操作が許可されていない図形を使用してスケジュールの開始または終了を行わないでください。  
   
 ## <a name="applying-tracking-profiles-that-monitor-running-processes"></a>実行中のプロセスを監視する追跡プロファイルの適用  
- 追跡プロファイルを更新する場合に、アクティビティに BAM の Continuation が含まれていると、実行中のアクティビティ インスタンスに影響することがあります。 具体的には、追跡プロファイルの更新によって、既に記録されているアクティビティ項目に対してデータの下流傍受が指定されると、元の値が上書きされる可能性があります。 各ストリーム オブジェクトは、アクティビティまたはストリームが開始された時点で配置されたプロファイルの特定のバージョンに関連付けられているため、すべての単一のイベント ストリームは、実質的には追跡プロファイルの更新対象のアプリケーションによる影響を受けません。 ただし、Continuation は複数のイベント ストリームを関連付ける手段なので、プロファイルの更新の時点でまだ開始されていなかったストリームは、更新中に変更内容を取得します。その結果、上記のようなデータの上書きが発生する可能性があります。 Continuation の詳細については、[アクティビティ Continuation](../core/activity-continuation.md)と[Continuation を作成する方法](../core/how-to-create-a-continuation.md)を参照してください。  
+ 追跡プロファイルを更新する場合に、アクティビティに BAM の Continuation が含まれていると、実行中のアクティビティ インスタンスに影響することがあります。 具体的には、追跡プロファイルの更新によって、既に記録されているアクティビティ項目に対してデータの下流傍受が指定されると、元の値が上書きされる可能性があります。 各ストリーム オブジェクトは、アクティビティまたはストリームが開始された時点で配置されたプロファイルの特定のバージョンに関連付けられているため、すべての単一のイベント ストリームは、実質的には追跡プロファイルの更新対象のアプリケーションによる影響を受けません。 ただし、Continuation は複数のイベント ストリームを関連付ける手段なので、プロファイルの更新の時点でまだ開始されていなかったストリームは、更新中に変更内容を取得します。その結果、上記のようなデータの上書きが発生する可能性があります。 Continuation の詳細については、次を参照してください。[アクティビティ Continuation](../core/activity-continuation.md)と[Continuation を作成する方法](../core/how-to-create-a-continuation.md)します。  
   
 ## <a name="tracking-profiles-without-a-send-or-receive-shape-from-which-to-draw-message-properties"></a>メッセージ プロパティを作成するときの起点となる送信図形や受信図形のないプロファイルの追跡  
  Continuation は、アクティビティ間で共通するコンテキスト プロパティまたはペイロード データを通じてアクティビティを追跡するプロセスです。 メッセージ ID、サービス ID、インスタンス ID などのプロパティの値は、アクティビティ間で変化します。  
@@ -103,7 +103,7 @@ ms.locfileid: "36996875"
 ## <a name="availability-of-message-properties-at-design-time"></a>デザイン時のメッセージ プロパティの可用性  
  追跡プロファイルを作成する際、一部のメッセージ プロパティを利用できない場合があります。 たとえば、メッセージ プロパティのマップ元となる図形がオーケストレーションの最上部に位置している場合などです。 このようなオーケストレーション インスタンスでは、メッセージ プロパティの値は NULL 値になります。  
   
- その例として、待ち受け図形がオーケストレーションの最初の図形である場合が挙げられます。 この図形からメッセージのプロパティがマップされているだけで、次のプロパティ値がある場合: InstanceID、ServiceID、ServiceClassID します。 ただし、MessageID はこの時点ではスコープ外となるので、NULL 値を持ちます。  
+ その例として、待ち受け図形がオーケストレーションの最初の図形である場合が挙げられます。 メッセージのプロパティが、この図形からマップされるときに、次のプロパティのみが値を持ちます。InstanceID、ServiceID、ServiceClassID ただし、MessageID はこの時点ではスコープ外となるので、NULL 値を持ちます。  
   
 ## <a name="you-cannot-map-shapes-inside-a-loop-shape-to-report-a-milestone"></a>ループ図形内部の図形をマップしてマイルストーンを報告することはできない  
  TPE では、ループ図形内部にあるソースを、ループ図形外部の項目にマップされているアクティビティに割り当てることはできません。  
@@ -191,4 +191,4 @@ ms.locfileid: "36996875"
   
 ## <a name="see-also"></a>参照  
  [TPE の使用](../core/using-the-tpe.md)   
- [Xml-data Reduced を参照してください。](../core/tracking-profile-editor.md)
+ [追跡プロファイル エディター](../core/tracking-profile-editor.md)

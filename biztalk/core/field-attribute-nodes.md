@@ -12,17 +12,17 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ef3cbf401ce5408c59ae164ca528c41a647eba2f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b804223622a197f9de0b18cce34f8ab57d6a6fc3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36972141"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65345628"
 ---
 # <a name="field-attribute-nodes"></a>[フィールド属性] ノード
 
 ## <a name="overview"></a>概要
-BizTalk エディターを使用する**フィールド属性**ノードは、単純な文字列や数値などの情報項目を表すため。 また、このノードは、目的の情報が、XML 要素の内容としてではなく、実際のメッセージ インスタンスに属性の値として現れる場合に使用されます。 要素の内容として格納されている情報の詳細については、[フィールド要素 ノード](../core/field-element-nodes.md)を参照してください。  
+BizTalk エディターを使用する**フィールド属性**ノードは、単純な文字列や数値などの情報項目を表すため。 また、このノードは、目的の情報が、XML 要素の内容としてではなく、実際のメッセージ インスタンスに属性の値として現れる場合に使用されます。 要素の内容として格納されている情報の詳細については、次を参照してください。[フィールド要素 ノード](../core/field-element-nodes.md)します。  
 
  最も基本的な用途の**フィールド属性**の子ノードとしてノードの場合は**レコード**、ノードの子ノードとしても使用**属性グループ**ノード。 後者の場合、**フィールド属性**ノードの子である、**属性グループ**ノードは、いずれかの属性として使用**レコード**そのを含むノード**属性グループ**ノード。 詳細については**属性グループ**ノードを参照してください[属性グループ ノード](../core/attribute-group-nodes.md)します。  
 

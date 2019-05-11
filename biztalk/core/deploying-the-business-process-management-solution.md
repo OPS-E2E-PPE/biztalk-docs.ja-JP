@@ -1,5 +1,5 @@
 ---
-title: ビジネス プロセス管理ソリューションの展開 |Microsoft ドキュメント
+title: ビジネス プロセス管理ソリューションの展開 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,24 +15,24 @@ caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a0a61048ecb90876b251657f00361c35587a7ec1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a58f9d2be88cb2dde91906db8db663a1dc280e40
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22239442"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65351894"
 ---
 # <a name="deploying-the-business-process-management-solution"></a>ビジネス プロセス管理ソリューションの展開
-ビジネス プロセス管理 (BPM) ソリューションは、BizTalk アプリケーションのプロセス マネージャを構築する方法の 1 つです。 このソリューションでは、1 つのコンポーネントを使用して、注文処理に含まれる一連のステージを選択および制御します。 ソリューションが注文を取得: 新しいサービス、アップグレード、またはサービスの終了の可能性もあります-ログの記録、および処理するため渡す前に、順序を確認します。 注文処理は、注文を扱う 1 つ以上のステージで構成されます。 処理が終わったら、元の注文要求に応答を返します。  
+ビジネス プロセス管理 (BPM) ソリューションは、BizTalk アプリケーションでプロセス マネージャを構築する方法を示しています。 ソリューションを選択し、注文処理ステージの順序を制御するコンポーネントを使用します。 ソリューションが注文を取得、新しいサービスをアップグレード、またはサービスの終了になる可能性がある-、ログに記録し、処理のため渡す前に、順序を確認します。 処理は、注文を処理する 1 つまたは複数のステージで構成されます。 最後に、ソリューションは、元の注文要求に応答を返します。  
   
- この展開ガイドでは、開発用コンピュータおよび複数の実稼働サーバーにビジネス プロセス管理ソリューションをインストールして実行する方法について説明します。  
+ このデプロイ ガイドでは、インストールして、開発用コンピューターおよび複数の実稼働サーバーで、ビジネス プロセス管理ソリューションを実行する方法について説明します。  
   
- ビジネス プロセス管理ソリューションの詳細については、次を参照してください。[ビジネス プロセス管理ソリューションを理解する](../core/understanding-the-business-process-management-solution.md)です。  
+ ビジネス プロセス管理ソリューションの詳細については、次を参照してください。 [、ビジネス プロセス管理ソリューションを理解する](../core/understanding-the-business-process-management-solution.md)します。  
   
  **対象読者**  
   
- このドキュメントは、BizTalk Server、Windows Server、および Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] に関する知識があることを前提としています。 また、エンタープライズ アプリケーション統合と Web サービスの基本的な概念についても理解していることを前提としています。 さらに、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] を使用してアプリケーションを作成する方法や、プロジェクトの作成、参照の設定、デバッグ モードを使用したソリューションのデバッグおよびテストに関しても理解しておいてください。 IT 担当者および開発者の必要なスキルと知識の詳細については、次を参照してください。[前提条件のスキルと知識](../core/prerequisite-skills-and-knowledge5.md)です。  
+ このドキュメントは、BizTalk Server、Windows Server、および Microsoft に精通していることを前提としています。[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]します。 また、エンタープライズ アプリケーション統合と Web サービスの基本的な概念についても理解していることを前提としています。 またを使用してアプリケーションをビルドする方法について理解しているが推奨[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]した参照の設定、デバッグおよびテスト ソリューションをデバッグ モードを使用してプロジェクトの作成について理解しているとします。 IT プロフェッショナルと開発者のスキルと知識の詳細については、次を参照してください。[前提条件のスキルと知識](../core/prerequisite-skills-and-knowledge5.md)します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [ビジネス プロセス管理ソリューションの開発者のコンピュータ設定](../core/developer-machine-setup-for-the-business-process-management-solution.md)
+-   [ビジネス プロセス管理ソリューションに対する開発者のコンピューター設定](../core/developer-machine-setup-for-the-business-process-management-solution.md)

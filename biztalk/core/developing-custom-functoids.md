@@ -12,12 +12,12 @@ caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fc424533a859f33a139c081897164e9f5db25b2e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6e751036edf8fc74c33c492dee310df232134dec
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37019897"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65351158"
 ---
 # <a name="developing-custom-functoids"></a>カスタム Functoid の開発
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] には、さまざまな種類の操作をサポートする多くの Functoid が用意されていますが、あらかじめ用意されている Functoid ではなく、別のアプローチが必要になる場合もあります。 カスタム Functoid を使用すると、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のマッピング環境内で、さらに多くの種類の操作を実行できるようになります。 派生したクラスを使用して .NET アセンブリとして、各カスタム functoid がデプロイされた**Microsoft.BizTalk.BaseFunctoids**します。 1 つのアセンブリには複数のカスタム Functoid を含めることができます。  
@@ -48,7 +48,7 @@ ms.locfileid: "37019897"
   
 4. リソース ファイルを作成してプロジェクトに追加し、 Functoid 名、ツールヒント、および説明用の文字列リソースを追加します。 マップ デザイナー パレットの上で functoid を表す 16 x 16 ピクセルのイメージ リソースを追加します。  
   
-5. 派生することで、functoid のクラスを実装**BaseFunctoid**、コンストラクターの基本的なパラメーターを確立して、functoid のメソッドとサポート メソッドを記述します。 アセンブリには複数のカスタム Functoid を含めることができます。  
+5. 派生することで、functoid のクラスを実装**BaseFunctoid**、コンス トラクターの基本的なパラメーターを確立して、functoid のメソッドとサポート メソッドを記述します。 アセンブリには複数のカスタム Functoid を含めることができます。  
   
 6. アセンブリを展開し、ツールボックス パレットから新しい Functoid を使用できることを確認します。 参照してください[を追加して、Visual Studio のツールボックスからカスタム Functoid を削除する](../core/adding-and-removing-custom-functoids-from-the-visual-studio-toolbox.md)します。  
   
@@ -133,7 +133,7 @@ SetBitmap("IMAGE_FLOOR");
   
  適切なリソース キーを指定しないか SetName メソッドを削除した場合、名前のないカスタム Functoid が作成されますが、これはお勧めできません。 SetDescription メソッドと SetTooltip メソッドについても同様です。 常にこれらのメソッドを適切に使用し、望ましくない操作は避けてください。 ただし、Functoid アイコンとして使用するのに適した画像がない場合は、SetBitmap メソッドをスキップすることができます。 そのような場合、既定のアイコンがカスタム Functoid により使用されますが、これは問題ありません (複数の Functoid にアイコンがない場合を除く)。  
   
- カスタム functoid を作成する方法の詳細については、[カスタム Functoid (BizTalk Server サンプル)](../core/custom-functoid-biztalk-server-sample.md)を参照してください。  
+ カスタム functoid を作成する方法の詳細については、次を参照してください。[カスタム Functoid (BizTalk Server サンプル)](../core/custom-functoid-biztalk-server-sample.md)します。  
   
 > [!IMPORTANT]
 >  一部の Functoid ID は標準/組み込みマッパー Functoid 用に予約されています。 通常、標準マッパー functoid は、1 から 10000 の Id を使用します。 カスタム functoid を作成するときに、functoid 10000 未満の Id を使用しません。  

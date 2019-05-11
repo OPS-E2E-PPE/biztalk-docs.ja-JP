@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0415fda29737c68811f9a6ad51a58e05e26436cc
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 75e0c3c1667fc0f329f1402ebcd2aba545a007b6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36977987"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65251257"
 ---
 # <a name="create-the-qryq01txt-file"></a>Qry ^ q01.txt ファイルを作成します。
 患者クエリ qry ^ q01.txt メッセージ ファイルを作成するのにには、次の手順を使用します。 このチュートリアルのシナリオを確認するのには、このファイルを後で使用します。  

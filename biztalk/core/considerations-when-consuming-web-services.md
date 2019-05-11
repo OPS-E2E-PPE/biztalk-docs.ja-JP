@@ -12,12 +12,12 @@ caps.latest.revision: 31
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: aa1bbb536890a518248f2b328de71172a5df7186
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e7747e04357f041451e8aa6651704f815cba562a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36997747"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65354710"
 ---
 # <a name="considerations-when-consuming-web-services"></a>Web サービスを使用する際の考慮事項
 ここでは、Web サービスを使用する際に考慮すべき情報について説明します。  
@@ -29,10 +29,10 @@ ms.locfileid: "36997747"
  使用することはできません、**任意**要素または**anyAttribute** Web メソッドのスキーマ内の属性。  
   
 ## <a name="using-xlangs-keywords"></a>XLANG/s キーワードの使用  
- Web サービス名または Web メソッド名に XLANG/s のキーワードを使用することはできません。 Web サービス名または Web メソッド名で XLANG/s のキーワードを使用すると、Web サービスを追加するときにコンパイル エラーが発生します。 Xlang/s 言語の予約語の一覧は、[xlang-s の予約語](../core/xlang-s-reserved-words.md)を参照してください。  
+ Web サービス名または Web メソッド名に XLANG/s のキーワードを使用することはできません。 Web サービス名または Web メソッド名で XLANG/s のキーワードを使用すると、Web サービスを追加するときにコンパイル エラーが発生します。 Xlang/s 言語の予約語の一覧は、次を参照してください。 [xlang-s の予約語](../core/xlang-s-reserved-words.md)します。  
   
 ## <a name="required-xlangs-support-for-parameter-types"></a>パラメータの型は XLANG/s でサポートされる必要がある  
- Web メソッドにおいて、XLANG/s でサポートされていないパラメータの型を使用すると、コンパイル エラーが発生します。 たとえば、BizTalk Server では 1 次元配列のスキーマの種類で構成されるパラメータはサポートされていません。 また、BizTalk Server では多次元配列もサポートされていません。 Xlang/s 言語は、BizTalk server によって予約されている単語の一覧は、[xlang-s の予約語](../core/xlang-s-reserved-words.md)を参照してください。  
+ Web メソッドにおいて、XLANG/s でサポートされていないパラメータの型を使用すると、コンパイル エラーが発生します。 たとえば、BizTalk Server では 1 次元配列のスキーマの種類で構成されるパラメータはサポートされていません。 また、BizTalk Server では多次元配列もサポートされていません。 Xlang/s 言語は、BizTalk server によって予約されている単語の一覧は、次を参照してください。 [xlang-s の予約語](../core/xlang-s-reserved-words.md)します。  
   
 ## <a name="avoiding-compilation-errors-caused-by-adding-web-references-containing-c-keywords-or-identifiers"></a>C# のキーワードまたは識別子を含む Web 参照を追加することによって発生するコンパイル エラーの回避  
  使用すると、**サービス参照の追加**を BizTalk プロジェクトにサービス参照を追加するには、BizTalk Server はスキーマに対して各 Web メソッドを呼び出すために必要なスキーマ型に変換します。 変換後のスキーマは Reference.xsd に追加されます。 スキーマに C# のキーワードと同じ要素名や C# の識別子として有効でない要素名が含まれる場合は、ランタイム エラーが発生することがあります。 ランタイム エラーを回避するには、使用する Web サービスに C# のキーワードと同じ要素名や C# の識別子として無効な要素名を含めないようにしてください。  
@@ -43,7 +43,7 @@ ms.locfileid: "36997747"
  "BizTalk ファイルを生成できませんでした。 オブジェクト参照がオブジェクト インスタンスに設定されていません。"  
   
 ## <a name="support-for-consuming-arrays-exposed-by-web-services"></a>Web サービスで公開される配列の使用に関するサポート  
- BizTalk Server では、BizTalk Web サービス以外の Web サービスによって公開される 1 次元のジャグ配列を使用できます。 Web サービスの配列を使用する方法の詳細については、[Web サービスの配列を使用する方法](../core/how-to-consume-web-service-arrays.md)を参照してください。  
+ BizTalk Server では、BizTalk Web サービス以外の Web サービスによって公開される 1 次元のジャグ配列を使用できます。 Web サービスの配列を使用する方法の詳細については、次を参照してください。 [Web サービスの配列を使用する方法](../core/how-to-consume-web-service-arrays.md)します。  
   
 > [!NOTE]
 >  多次元配列の構文はサポートされていません。 たとえば、 `MyArray[1,5]`のようにします。  
@@ -64,7 +64,7 @@ ms.locfileid: "36997747"
   
  "パラメータ "%1" のメッセージ部分を取得できませんでした。"  
   
- 詳細については、[メッセージングのみのシナリオで Web サービスを使用する方法](../core/how-to-consume-web-services-in-a-messaging-only-scenario.md)を参照してください。  
+ 詳細については、次を参照してください。[メッセージングのみのシナリオで Web サービスを使用する方法](../core/how-to-consume-web-services-in-a-messaging-only-scenario.md)します。  
   
 ## <a name="configuring-a-soap-send-port-programmatically"></a>プログラムによる SOAP 送信ポートの構成  
  プログラムを使って、構成プロパティをメッセージ コンテキストに設定できます。 これらのプロパティは、送信ポートが静的であるか動的であるかにかかわらず、オーケストレーションまたはカスタム パイプライン コンポーネントに設定できます。  
@@ -87,9 +87,9 @@ ms.locfileid: "36997747"
   
 - メッセージを送信する送信ポートが静的か動的かにかかわらず、プロパティ値は上書きされません。 つまり、送信パイプライン コンポーネントは、設定されているかどうかにかかわらず、構成プロパティを上書きします。  
   
-- カスタム パイプライン コンポーネントの詳細については、[カスタム パイプライン コンポーネントの開発](../core/developing-custom-pipeline-components.md)を参照してください。  
+- カスタム パイプライン コンポーネントの詳細については、次を参照してください。[カスタム パイプライン コンポーネントの開発](../core/developing-custom-pipeline-components.md)します。  
   
-- SOAP 送信アダプタの構成プロパティの詳細については、[消費する Web サービスの URI を動的に設定する方法](../core/how-to-dynamically-set-the-uri-of-a-consumed-web-service.md)を参照してください。  
+- SOAP 送信アダプタの構成プロパティの詳細については、次を参照してください。[消費する Web サービスの URI を動的に設定する方法](../core/how-to-dynamically-set-the-uri-of-a-consumed-web-service.md)します。  
   
 ## <a name="adding-a-web-reference-to-a-consumed-web-service-that-contains-a-multi-rooted-schema-will-cause-a-compilation-error"></a>使用する Web サービスに複数ルートのスキーマが含まれており、その Web サービスへの Web 参照を追加すると、コンパイル エラーが発生する  
  公開済みの BizTalk オーケストレーションから派生した Web サービスの Web 参照をプロジェクトに追加し、そのオーケストレーションに複数ルートのスキーマが含まれる場合は、プロジェクトのコンパイル時にエラーが発生します。 公開済みの BizTalk オーケストレーションから派生した Web 参照をプロジェクトに追加する場合は、オーケストレーションに複数ルートのスキーマが含まれていないことを確認してください。  
@@ -103,7 +103,7 @@ ms.locfileid: "36997747"
   
 3. オーケストレーションで、遅延バインディング ポートとメッセージの種類を定義します。 ほとんどの場合は、プロパティの昇格や識別フィールドへのアクセスは必要ありません、として、型を定義できます**XMLDocument**します。 この種類に対応したパススルー パイプラインを選択してください。  
   
-4. BizTalk Server 管理コンソールで、 **Web サービス** タブで、 **SOAP トランスポートのプロパティ**SOAP のダイアログ ボックスで送信ポート、その作成したプロキシを使用することを指定します。 アセンブリ、型、メソッドも指定する必要があります。 詳細については、、 **SOAP トランスポートのプロパティ ダイアログ ボックス、Web サービス**タブ[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]を参照してください。
+4. BizTalk Server 管理コンソールで、 **Web サービス** タブで、 **SOAP トランスポートのプロパティ**SOAP のダイアログ ボックスで送信ポート、その作成したプロキシを使用することを指定します。 アセンブリ、型、メソッドも指定する必要があります。 詳細については、次を参照してください。、 **SOAP トランスポートのプロパティ ダイアログ ボックス、Web サービス**タブ[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]します。
   
 ## <a name="adding-a-web-reference-to-a-consumed-web-service-that-contains-a-web-method-expecting-generic-based-parameters-will-cause-a-compilation-error"></a>使用する Web サービスにジェネリック パラメータを想定した Web メソッドが含まれており、その Web サービスへの Web 参照を追加すると、コンパイル エラーが発生する  
  NULL 許容パラメータなどのジェネリック パラメータを想定した Web メソッドを含む Web サービスの Web 参照をプロジェクトに追加すると、プロジェクトのコンパイル時にエラーが発生します。 これはサポートされていません。 ジェネリック クラスは XLANG/s から明示的な特殊化によって呼び出す必要があります。  

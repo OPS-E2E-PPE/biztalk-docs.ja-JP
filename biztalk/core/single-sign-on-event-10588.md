@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10588 |Microsoft Docs'
+title: シングル サインオン:イベント 10588 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f5476904ff7eb3ec84eb8c0b194162201aad639b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4cef0950a2779218049ca2929c147901bc395432
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36989947"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65322015"
 ---
-# <a name="single-sign-on-event-10588"></a>シングル サインオン: イベント 10588
+# <a name="single-sign-on-event-10588"></a>シングル サインオン:イベント 10588
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                                                                                                      |
@@ -30,10 +30,10 @@ ms.locfileid: "36989947"
 |  イベント ソース   |                                                                                ENTSSO                                                                                |
 |    コンポーネント    |                                                                                 なし                                                                                  |
 |  シンボル名  |                                                                        SSO_WARN_SQL_NOT_FOUND                                                                        |
-|  メッセージ テキスト   | 指定された SQL Server が見つかりませんでした。 SQL Server 名が正しいことと、そのコンピューターで SQL Server が実行されていることを確認してください。%r<br /><br /> SQL Server 名: %1 |
+|  メッセージ テキスト   | 指定された SQL Server が見つかりませんでした。 SQL Server 名が正しいことと、その computer.%r で SQL Server が実行されていることを確認してください。<br /><br /> SQL Server 名: %1 |
   
 ## <a name="explanation"></a>説明  
  メッセージで指定された SQL Server が見つかりませんでした。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- SQL Server 名が正しいことと、そのコンピューターで SQL Server が実行されていることを確認してください。
+ SQL Server 名が正しいことと、そのコンピューターで SQL Server が実行されていることを確認します。

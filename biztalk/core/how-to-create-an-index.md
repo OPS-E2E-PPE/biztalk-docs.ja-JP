@@ -18,19 +18,19 @@ caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b15fd07049ee31162b2ed69f38a99d26100e08c4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 764456fa0f58c1bc5fe526b0ceede2e85ff6f85b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36989699"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65339528"
 ---
 # <a name="how-to-create-an-index"></a>インデックスを作成する方法
 管理者を使用して、**インデックスの作成**コマンドを特定のチェックポイントで指定したアクティビティにインデックスを作成します。  
   
 ### <a name="to-create-an-index-on-an-activity"></a>アクティビティにインデックスを作成するには  
   
-1. コマンド プロンプトから次のディレクトリを参照:[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]追跡します。  
+1. コマンド プロンプトから次のディレクトリを参照してください。[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]追跡します。  
   
 2. 型**bm インデックスの作成-indexname:\<インデックス名\>-アクティビティ:\<アクティビティ名\>-チェックポイント:\<チェックポイント 1\>** します。  
   

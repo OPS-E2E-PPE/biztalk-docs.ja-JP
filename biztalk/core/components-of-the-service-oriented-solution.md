@@ -24,12 +24,12 @@ caps.latest.revision: 22
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 888372550e62e72f21e9d397ac35d17f68c1a187
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 77d8560a9dd9862ec2a265de729afd1879fb206f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37017151"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65356727"
 ---
 # <a name="components-of-the-service-oriented-solution"></a>サービスのコンポーネント指向のソリューション
 このセクションでは、サービス指向ソリューションの主な BizTalk Server コンポーネントについて説明します。 次の図は、ソリューションの主なコンポーネントを示しています。  
@@ -48,7 +48,7 @@ ms.locfileid: "37017151"
   
   インライン バージョンのオーケストレーションでは、ソリューション内で要求と応答の間の待機時間が最短になります。  
   
-  ソース ファイルについては、[サービス指向ソリューションのファイルの在庫](../core/file-inventory-for-the-service-oriented-solution.md)を参照してください。  
+  ソース ファイルについては、次を参照してください。[サービス指向ソリューションのファイルの在庫](../core/file-inventory-for-the-service-oriented-solution.md)します。  
   
 ## <a name="orchestrations-in-the-service-oriented-solution"></a>サービス指向ソリューションのオーケストレーション  
  3 つのオーケストレーション**CustomerServiceReceiveSend**、 **CustomerServiceNativeRequestResponse**、および**CustomerService**ソリューションの大部分を作成します。 **CustomerServiceReceiveSend**と**CustomerServiceNativeRequestResponse**オーケストレーションが呼び出すフロント エンドとして機能、 **CustomerService**オーケストレーションします。 **CustomerService**オーケストレーション作業のほとんどでは、バックエンド アプリケーションに要求を送信、返信を収集、1 つのメッセージに返信を結合すること、およびフロント エンドを適切なメッセージを送信します。オーケストレーションです。 フロント エンド オーケストレーションを呼び出すため、 **CustomerService**オーケストレーション、フロント エンド オーケストレーションまで、 **CustomerService**オーケストレーションが終了します。  

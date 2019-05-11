@@ -12,14 +12,14 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 87b44f68168570c229b66cb6ee767cf38229dc74
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c1a9a6495400869a3c8adaf15d935e03b1ed2bcc
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36989715"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65298868"
 ---
-# <a name="the-comparison-operator-is-not-valid"></a>比較演算子が無効です
+# <a name="the-comparison-operator-is-not-valid"></a>比較演算子が無効です。
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                        |

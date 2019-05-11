@@ -1,5 +1,5 @@
 ---
-title: エラー - 送信元スキーマが |Microsoft ドキュメント
+title: エラー - 送信元スキーマが |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 434a3dd5bbe4a1f491392a11068de6e9c6f78a35
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9725e9453f02d51a60ce31218fa062723a81de4b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22240722"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65346246"
 ---
 # <a name="error---unreferenced-source-schema"></a>エラー - 送信元スキーマ
 **エラー コード**  
@@ -28,8 +28,8 @@ ms.locfileid: "22240722"
   
  **説明**  
   
- 必要な送信元スキーマが、マップを含んでいる Microsoft BizTalk Server プロジェクト内にありません。  
+ 送信元スキーマは、必要に応じて、マップを含んでいる Microsoft BizTalk Server プロジェクトでないです。  
   
  **ユーザーの操作**  
   
- 使用して、マップを含む BizTalk プロジェクトに、送信元スキーマを追加、**既存項目の追加**で利用可能なコマンド、**ファイル**メニューおよびソリューション内の BizTalk プロジェクトのショートカット メニューエクスプ ローラー。
+ ソースのスキーマを使用して、マップを含む BizTalk プロジェクトを追加、**既存項目の追加**で利用可能なコマンド、**ファイル**] メニューの [ソリューションの BizTalk プロジェクトのショートカット メニューエクスプ ローラー。

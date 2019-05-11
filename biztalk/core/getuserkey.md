@@ -1,5 +1,5 @@
 ---
-title: GetUserKey |Microsoft ドキュメント
+title: GetUserKey |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0701ff1df912cc113205bad573b6cebc0f02a13a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: cc4f163d35901a0cec9919e3053f84fd21cb712f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22246122"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65344895"
 ---
 # <a name="getuserkey"></a>GetUserKey
 現在のユーザー キーをスタックにプッシュします。  
@@ -35,7 +35,7 @@ ms.locfileid: "22246122"
 ## <a name="pushed-value"></a>プッシュされた値  
  現在のユーザー キーが含まれた文字列です。  
   
-## <a name="remarks"></a>解説  
+## <a name="remarks"></a>コメント  
  この操作は、ユーザー追跡ポイントでのみ有効です。  
   
 ## <a name="example"></a>例  

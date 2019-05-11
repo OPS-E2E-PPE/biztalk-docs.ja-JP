@@ -1,5 +1,5 @@
 ---
-title: SMTP アダプタの構成 |Microsoft ドキュメント
+title: SMTP アダプタの構成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,15 +15,15 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4eb8673b9f3e3497b28b03a4c90b479cf9a875b7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d13b1a88a5fee95d878ae0c51035c4f5dfdcd1f1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22232586"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65355142"
 ---
 # <a name="configuring-the-smtp-adapter"></a>SMTP アダプタの構成
-このセクションでは、SMTP アダプタを構成する方法について説明します。  
+このセクションには、SMTP アダプタを構成する方法について説明します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

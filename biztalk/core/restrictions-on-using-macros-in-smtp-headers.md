@@ -21,12 +21,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5162de289f9c9e7798e5a24aa75fa9305763b401
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 03587ad44117d9bef9dbd14de4a4928f07f17592
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36977979"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65322005"
 ---
 # <a name="restrictions-on-using-macros-in-smtp-headers"></a>SMTP ヘッダーでのマクロの使用に関する制限事項
 定義済みのマクロを使用して、SMTP メッセージ ヘッダーの **Subject**、 **To**、 **From**、および **CC** プロパティを動的に形成できます。 メッセージを送信する前に、SMTP 送信ハンドラーによってヘッダー内のすべてのマクロが値に置き換えられます。 1 つのヘッダーを形成するときに、複数の異なるマクロを使用できます。  
@@ -53,7 +53,7 @@ ms.locfileid: "36977979"
 |%time.tz%|ローカルの日付に GMT のタイム ゾーンを加えた hhmmssTZD 形式の日付 (例、124525+530)。|いいえ|いいえ|はい|  
 |%SourceParty%|ファイル アダプタが受信したメッセージの受信元パーティの名前。|いいえ|いいえ|はい|  
 |%SourcePartyQualifier%|ファイル アダプタが受信したメッセージの受信元パーティの修飾子。|いいえ|いいえ|はい|  
-|%DestinationParty%|送信先パーティの名前。 この値は、メッセージ コンテキスト プロパティ **BTS.DestinationParty**から取得されます。|はい|はい|はい|  
+|%DestinationParty%|送信先パーティの名前。 この値は、メッセージ コンテキスト プロパティ **BTS.DestinationParty**から取得されます。|はい|[はい]|はい|  
 |%DestinationPartyQualifier%|送信先パーティの修飾子。 この値は、メッセージ コンテキスト プロパティ **BTS.DestinationPartyQualifier**から取得されます。|いいえ|いいえ|はい|  
   
 ## <a name="see-also"></a>参照  

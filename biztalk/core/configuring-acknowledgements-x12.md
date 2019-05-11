@@ -12,12 +12,12 @@ caps.latest.revision: 26
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 28df03b8955c17888a4722c361a2e4481c63b413
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9cd9497c6367ae757206ba91d60575476fbfd05e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36970699"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65356319"
 ---
 # <a name="configuring-acknowledgements-x12"></a>受信確認の構成 (X12)
 パートナー アグリーメントで、パートナーから受信した X12 エンコード インターチェンジへの応答として、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] で確認を生成する方法、およびパーティーに返す確認の種類を指定できます。 また、確認をバッチ処理するかどうかと、受理されたトランザクション セットに AK2 ループを生成するかどうかを指定できます。 このセクションでは、これらの操作の実行手順について説明します。  
@@ -45,7 +45,7 @@ ms.locfileid: "36970699"
   
 4.  選択**997 が必要**機能 (997) 確認をインターチェンジの送信者に戻ります。 選択した場合、選択**997 をバッチ処理しない**とは別に、各機能確認を送信したり、チェック ボックスを機能確認をバッチ処理をオフのままにします。  
   
-5.  受理されたトランザクション セットの 997 確認で AK2 ループの生成を有効にするのには、選択**受理されたトランザクション セットに含める AK2 ループ (オフの場合、ループが生成されます AK501 が A と等しくない場合にのみ)** します。 AK2 ループの詳細については、[X12 997 受信確認](../core/x12-997-acknowledgment.md)を参照してください。  
+5.  受理されたトランザクション セットの 997 確認で AK2 ループの生成を有効にするのには、選択**受理されたトランザクション セットに含める AK2 ループ (オフの場合、ループが生成されます AK501 が A と等しくない場合にのみ)** します。 AK2 ループの詳細については、次を参照してください。 [X12 997 受信確認](../core/x12-997-acknowledgment.md)します。  
   
 6.  をクリックして**適用**構成では、続行する前に、変更を受け入れるか、をクリックする**OK**変更を検証し、ダイアログ ボックスを閉じます。  
   

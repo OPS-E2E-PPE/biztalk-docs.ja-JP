@@ -1,25 +1,25 @@
 ---
-title: アダプターにアプリケーションを割り当てる方法 |Microsoft ドキュメント
+title: アプリケーションをアダプターに割り当てる方法 |Microsoft Docs
 ms.custom: ''
-ms.date: 06/08/2017
-ms.prod: biztalk-server
+ms.date: 11/30/2017
+ms.prod: host-integration-server
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
-ms.assetid: f1ea2773-c53c-40a0-a312-015191746451
-caps.latest.revision: 4
-author: MandiOhlinger
-ms.author: mandia
+ms.assetid: a2ca8850-6789-455b-be53-56f126605c06
+caps.latest.revision: 3
+author: gplarsen
+ms.author: hisdocs; plarsen
 manager: anneta
-ms.openlocfilehash: bf5052d06576988ed71da8458a9d55115fb0b1c8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8e473c10f8e0828389f83293bc7dd219786548c7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22246674"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65342723"
 ---
-# <a name="how-to-assign-an-application-to-an-adapter"></a>アダプターにアプリケーションを割り当てる方法
+# <a name="how-to-assign-an-application-to-an-adapter"></a>アプリケーションをアダプターに割り当てる方法
 ローカル アプリケーションとリモート サーバー間でやり取りされる情報を処理するためには、アダプターに少なくとも 1 つのアプリケーションを割り当てる必要があります。  
   
 ### <a name="to-assign-an-application-to-an-adapter"></a>アダプターにアプリケーションを割り当てるには  

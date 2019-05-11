@@ -1,5 +1,5 @@
 ---
-title: エラー - インデックス Functoid に負のインデックス |Microsoft ドキュメント
+title: エラー - インデックス Functoid に負のインデックス |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: daf70fb266717e1df36a80f14e32ddb8385e2aec
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: bc1df74259a6f7c6c156f4706348a1df7ee3eed1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22240586"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65348156"
 ---
 # <a name="error---index-functoid-has-negative-index"></a>エラー - インデックス Functoid に負のインデックス
 **エラー コード**  
@@ -28,4 +28,4 @@ ms.locfileid: "22240586"
   
  **説明**  
   
- 入力されたパラメーターの 1 つまたは複数のインデックス**インデックス**functoid が有効ではありません。 インデックス入力パラメーターは正の整数である必要があります。
+ 入力されたパラメーターを 1 つまたは複数のインデックス**インデックス**functoid が無効です。 インデックス入力パラメーターには、正の整数を指定する必要があります。

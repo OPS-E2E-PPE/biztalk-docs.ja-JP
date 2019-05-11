@@ -1,5 +1,5 @@
 ---
-title: シングル サインオンのサポートされるプラットフォーム |Microsoft ドキュメント
+title: シングル サインオンのサポートされているプラットフォーム |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,15 +12,15 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f17c8c107897955b9ae014fe0ea47726d827ece2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7acff889362523a7ea7cdbdfd881159946cf90ec
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22278426"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65306561"
 ---
-# <a name="supported-platforms-for-single-sign-on"></a>シングル サインオンのサポートされているプラットフォーム
-エンタープライズ シングル サインオンは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] に含まれています。 したがって、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] をサポートするすべてのオペレーティング システムでサポートされます。  
+# <a name="supported-platforms-for-single-sign-on"></a>シングル サインオンのサポートされるプラットフォーム
+エンタープライズ シングル サインオンは付属[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]します。 そのため、サポートするすべてのオペレーティング システムでサポートされて[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]します。  
   
 ## <a name="see-also"></a>参照  
- [プログラミングのシングル サインオンの概要](../core/programming-single-sign-on-overview.md)
+ [シングル サインオンのプログラミングの概要](../core/programming-single-sign-on-overview.md)

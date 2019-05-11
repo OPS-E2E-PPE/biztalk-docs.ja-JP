@@ -1,5 +1,5 @@
 ---
-title: System.Net のログ記録を有効化 |Microsoft ドキュメント
+title: System.Net のログ記録を有効にする |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,20 +12,20 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7e672f2b9e7ae8b0ef3889493273660c8ef9140c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b7044d1455905c45995a3096b7ec3cc6c153adb3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22239938"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65349624"
 ---
-# <a name="enabling-systemnet-logging"></a>System.Net のログ記録の有効化
-ログ記録を有効にすることができます、`System.Net`と`System.Net.Sockets` [!INCLUDE[btsDotNetFramework](../includes/btsdotnetframework-md.md)] BTSNtSvc.exe サービスの名前空間。 これにより、BizTalk Server のインストールでの問題の特定に役立つ情報が記録された詳細なログ ファイルを作成できます。  
+# <a name="enabling-systemnet-logging"></a>System.Net のログ記録を有効にします。
+ログ記録を有効にすることができます、`System.Net`と`System.Net.Sockets` [!INCLUDE[btsDotNetFramework](../includes/btsdotnetframework-md.md)] BTSNtSvc.exe サービスの名前空間。 これを BizTalk Server インストールで問題を特定するのに役立つ情報を含むを作成する詳細なログ ファイルとなります。  
   
 > [!NOTE]
->  これは、Microsoft [!INCLUDE[btsDotNetFramework](../includes/btsdotnetframework-md.md)] の機能の 1 つであり、[!INCLUDE[btsBizTalkServer2006](../includes/btsbiztalkserver2006-md.md)] 以降に対応しています。  
+>  これは、Microsoft の機能[!INCLUDE[btsDotNetFramework](../includes/btsdotnetframework-md.md)]で動作[!INCLUDE[btsBizTalkServer2006](../includes/btsbiztalkserver2006-md.md)]またはそれ以降。  
   
- アプリケーション構成ファイルを変更することでトレースが有効になっている**BTSNtSvc.exe**、 **BTSNtSvc.exe.config**です。このファイルは BizTalk Server のインストール パスにあります。つまり、BizTalk Server が既定の場所にインストールされていれば、BtsNtSvc.exe は [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)] ディレクトリにあります。  
+ アプリケーション構成ファイルを変更することでトレースが有効になっている**BTSNtSvc.exe**、 **BTSNtSvc.exe.config**します。BizTalk Server のインストール パスで見つかんだことができます。既定の場所に BizTalk Server をインストールした場合 BtsNtSvc.exe はディレクトリには[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]します。  
   
  変更する**BTSNtSvc.exe.config**構成ファイルを開き、以下のコードを貼り付け、`<configuration>`メモ帳または使い慣れたテキスト エディターを使用して要素。  
   

@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5e95e6d3c4c026038c8118bff3a00e6ddde824df
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ab37b96a8579b97e1ed6eec76a963fbb0c725ca8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36982379"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65350030"
 ---
 # <a name="editing-functoid-properties-and-input-parameters"></a>Functoid のプロパティおよび入力パラメーターの編集
 Functoid のプロパティは、次のように分類できます。  
@@ -28,7 +28,7 @@ Functoid のプロパティは、次のように分類できます。
   
 - **名前**、**ヘルプ**、**最大入力パラメーター**、および**最小入力パラメーター**します。 : これらの 4 つのプロパティは参照用で常に読み取り専用です。  
   
-  これらの functoid プロパティの概念については、[Functoid プロパティ](../core/functoid-properties.md)を参照してください。  
+  これらの functoid プロパティの概念については、次を参照してください。 [Functoid プロパティ](../core/functoid-properties.md)します。  
   
   このセクションで、操作と変更具体的には、構成用のスクリプト functoid の入力パラメーターを構成するための一般的な手順を含む、functoid のプロパティのための手順について説明します、**スクリプト** functoid のテーブル グリッドを構成して、**テーブル ループ**functoid。  
   

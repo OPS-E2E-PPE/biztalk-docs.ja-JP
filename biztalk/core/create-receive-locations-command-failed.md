@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 95b50fcb051b77b4d6516145a2c7fabfc52c2e7f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 559b2bee91cde68afa307de8d25fc89e4ceabcb7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36976251"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65354272"
 ---
 # <a name="create-receive-locations-command-failed"></a>受信場所の作成コマンドが失敗しました
 ## <a name="details"></a>詳細  
@@ -30,15 +30,15 @@ ms.locfileid: "36976251"
 |  イベント ソース   |                                         0                                          |
 |    コンポーネント    |                                         0                                          |
 |  シンボル名  |                                         0                                          |
-|  メッセージ テキスト   |  作成する受信場所のコマンドが失敗しました: FileName ={0}引数 ={1} ExitCode ={2}  |
+|  メッセージ テキスト   |  作成する受信場所のコマンドが失敗しました。ファイル名 ={0}引数 ={1} ExitCode ={2}  |
   
 ## <a name="explanation"></a>説明  
- 公開ウィザードが受信場所の作成に失敗しました。  
+ 発行ウィザードは、受信場所を作成できませんでした。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- このエラーを解決するのには、次の操作: BizTalk 管理コンソールで生成される BizTalk WCF 公開ウィザードが存在し、開始は、Web.config ファイルの receiveLocationName 属性で、受信場所が指定されていることを確認します。  
+ このエラーを解決するには、次の操作を行います。BizTalk 管理コンソールで生成される BizTalk WCF 公開ウィザードが存在し、開始は、Web.config ファイルの receiveLocationName 属性で、受信場所が指定されているいることを確認します。  
   
- 受信場所の作成の詳細については、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ヘルプで次の情報を参照してください。  
+ 作成の詳細については、受信場所、次のリソースを参照してください、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプします。  
   
 -   [分離 WCF 受信アダプターでの WCF サービスの公開](../core/publishing-wcf-services-with-the-isolated-wcf-receive-adapters.md)  
   
@@ -48,4 +48,4 @@ ms.locfileid: "36976251"
   
 -   [Wcf-customisolated 受信場所を構成する方法](../core/how-to-configure-a-wcf-customisolated-receive-location.md)  
   
--   [チュートリアル: WCF-BasicHttp アダプターを使用した WCF サービスの公開](../core/walkthrough-publishing-wcf-services-with-the-wcf-basichttp-adapter.md)
+-   [チュートリアル: Wcf-basichttp アダプターで WCF サービスの公開](../core/walkthrough-publishing-wcf-services-with-the-wcf-basichttp-adapter.md)

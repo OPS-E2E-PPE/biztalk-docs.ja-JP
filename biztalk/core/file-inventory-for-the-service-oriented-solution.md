@@ -1,5 +1,5 @@
 ---
-title: ファイル インベントリ サービス指向ソリューション |Microsoft ドキュメント
+title: ファイルのインベントリ サービス指向ソリューション |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,112 +14,112 @@ caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 39d18b32e1b499009e7559a68d7e60e6ba43f28c
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 172d3d1495b14655f66a9ce11e616a3cb456dcab
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25975456"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65345491"
 ---
-# <a name="file-inventory-for-the-service-oriented-solution"></a>ファイル インベントリ サービス指向ソリューション
-このセクションでは、サービス指向ソリューションのサブディレクトリおよびソース ファイルについて説明します。 サービス指向ソリューションのソース ファイルの既定のインストール ディレクトリは、[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\Scenarios\SO です。 次の表では、このパスを交換する前に説明\<インストール ディレクトリ\>です。  
+# <a name="file-inventory-for-the-service-oriented-solution"></a>ファイルのインベントリ サービス指向ソリューション
+このセクションでは、サブディレクトリ、およびサービス指向ソリューションのソース ファイルを示します。 サービス指向ソリューションのソース ファイルの既定のインストール ディレクトリは[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]sdk \scenarios\so です。 次の表では、このパスを交換する前に説明\<インストール ディレクトリ\>します。  
   
  内のファイル\<インストール ディレクトリ\>\BTSSoln  
   
-|ファイル|Description|  
+|ファイル|説明|  
 |----------|-----------------|  
-|Microsoft.Samples.BizTalk.WoodgroveBank.sln|Visual Studio ソリューション ファイル。|  
-|ReplacePKToken.vbs|ソリューションのビルド時に、ソリューション ファイル内の公開キー トークンを修正する VBScript です。|  
-|ReplacePKToken.wsf|ReplacePKToken VBScript 用の Windows スクリプト ファイルです。|  
-|SetupBTSSoln.bat|公開キーを作成し、公開キーへの参照を更新し、ソリューションをコンパイルします。 ソリューションを展開する方法の詳細については、次を参照してください。[サービス指向ソリューションの配置](../core/deploying-the-service-oriented-solution.md)です。|  
+|Microsoft.Samples.BizTalk.WoodgroveBank.sln|Visual Studio ソリューション ファイルです。|  
+|ReplacePKToken.vbs|ソリューションのビルド時に、ソリューション ファイルに公開キー トークンを修正する VBScript です。|  
+|ReplacePKToken.wsf|ReplacePKToken VBScript 用の Windows スクリプト ファイル。|  
+|SetupBTSSoln.bat|公開キーを作成し、公開キーへの参照の更新ソリューションをコンパイルします。 ソリューションのデプロイについては、次を参照してください。[サービス指向ソリューションを展開する](../core/deploying-the-service-oriented-solution.md)します。|  
   
  内のファイル\<インストール ディレクトリ\>\BTSSoln\BAM  
   
-|ファイル|Description|  
+|ファイル|説明|  
 |----------|-----------------|  
 |ServiceLevelTracking.xls|BAM データの Excel スプレッドシートです。|  
-|ServiceLevelTracking.xml|BAM データ項目の型を定義するスキーマです。|  
+|ServiceLevelTracking.xml|BAM のデータ項目の種類を定義するスキーマです。|  
   
  内のファイル\<インストール ディレクトリ\>\BTSSoln\Bindings  
   
-|ファイル|Description|  
+|ファイル|説明|  
 |----------|-----------------|  
-|AdapterSOAOrchBindings.xml|ソリューションのアダプタ バージョンのバインド ファイルです。|  
-|InlineSOAOrchBindings.xml|ソリューションのインライン バージョンのバインド ファイルです。|  
-|StubSOAOrchBindings.xml|ソリューションのスタブ バージョンのバインド ファイルです。|  
+|AdapterSOAOrchBindings.xml|ソリューションのアダプター バージョンのファイルをバインドします。|  
+|InlineSOAOrchBindings.xml|ソリューションのインライン バージョンのファイルをバインドします。|  
+|StubSOAOrchBindings.xml|バインド ファイル、ソリューションのスタブ バージョン用です。|  
   
  内のファイル\<インストール ディレクトリ\>\BTSSoln\ConfigHelper  
   
-|ファイル|Description|  
+|ファイル|説明|  
 |----------|-----------------|  
 |AssemblyInfo.cs|アセンブリ情報ファイルです。|  
-|ConfigHelper.csproj|C# のプロジェクト ファイルです。|  
-|ConfigParameters.cs|SSO 構成ヘルパ メソッドの C# コード ファイルです。|  
-|ConfigPropertyBag.cs|SSO 構成ヘルパ メソッドで使用されるプロパティ バッグの C# コード ファイルです。|  
+|ConfigHelper.csproj|C#プロジェクト ファイルです。|  
+|ConfigParameters.cs|C#SSO 構成ヘルパ メソッドのコード ファイルです。|  
+|ConfigPropertyBag.cs|C#SSO 構成ヘルパ メソッドで使用されるプロパティ バッグのコード ファイルです。|  
   
  内のファイル\<インストール ディレクトリ\>\BTSSoln\ErrorHelper  
   
-|ファイル|Description|  
+|ファイル|説明|  
 |----------|-----------------|  
-|CustomerServiceErrors.cs|カスタマー サービス エラーの C# コード ファイルです。|  
-|ErrorHelper.csproj|C# のプロジェクト ファイルです。|  
+|CustomerServiceErrors.cs|C#カスタマー サービス エラーのコード ファイルです。|  
+|ErrorHelper.csproj|C#プロジェクト ファイルです。|  
   
  内のファイル\<インストール ディレクトリ\>\BTSSoln\InPipeline  
   
-|ファイル|Description|  
+|ファイル|説明|  
 |----------|-----------------|  
-|InPipeline.btp|SSO チケットをメッセージに追加する受信パイプラインです。|  
+|InPipeline.btp|SSO チケットをメッセージに追加するパイプラインが表示されます。|  
 |InPipeline.btproj|BizTalk プロジェクト ファイルです。|  
   
  内のファイル\<インストール ディレクトリ\>\BTSSoln\InPipelineComp  
   
-|ファイル|Description|  
+|ファイル|説明|  
 |----------|-----------------|  
 |AssemblyInfo.cs|アセンブリ情報ファイルです。|  
-|InPipelineComp.csproj|C# のプロジェクト ファイルです。|  
-|SSOTicketIssuer.cs|SSO チケットを発行するパイプライン コンポーネントの C# コード ファイルです。|  
-|SSOTicketIssuer.resx|リソース ファイルです。|  
+|InPipelineComp.csproj|C#プロジェクト ファイルです。|  
+|SSOTicketIssuer.cs|C#SSO チケットを発行するパイプライン コンポーネントのコード ファイルです。|  
+|SSOTicketIssuer.resx|リソース ファイル。|  
 |SSOTicketIssuerIcon.bmp|パイプライン コンポーネントのアイコン ファイルです。|  
   
- 内のファイル\<インストール ディレクトリ\>\BTSSoln\Maps  
+ Files in \<Install Directory\>\BTSSoln\Maps  
   
-|ファイル|Description|  
+|ファイル|説明|  
 |----------|-----------------|  
 |Aggregate_To_CustomerServiceResponse.btm|バックエンド システムからの 3 つの応答の集計を 1 つの応答メッセージに変換するマップです。|  
-|Aggregate_To_ErrorResponse.btm|エラーが発生した場合に、3 つの応答の集計を 1 つのエラー応答に変換するマップです。|  
-|CustomerServiceRequest_To_CreditLimiRequest.btm|カスタマー サービス要求を、クレジット限度額を要求するメッセージに変換するマップです。|  
-|CustomerServiceRequest_To_CreditLimitResponse.btm|カスタマー サービス要求を、クレジット限度額を使用して応答するメッセージに変換するマップです。|  
-|CustomerServiceRequest_To_CustomerServiceResponseDenied.btm|カスタマー サービス要求を、要求拒否メッセージに変換するマップです。|  
-|CustomerServiceRequest_To_LastPaymentRequest.btm|カスタマー サービス要求を、最新支払い情報を要求するメッセージに変換するマップです。|  
-|CustomerServiceRequest_To_LastPaymentResponseTimeout.btm|カスタマー サービス要求を最新支払い応答メッセージに変換するマップです。|  
-|CustomerServiceRequest_To_PendingTransactionResponse.btm|カスタマー サービス要求を Pending Transaction 応答メッセージに変換するマップです。|  
-|CustomerServiceRequest_To_PendingTransactionsRequest.btm|カスタマー サービス要求を、Pending Transaction 情報を要求するメッセージに変換するマップです。|  
+|Aggregate_To_ErrorResponse.btm|エラーが発生したときに、1 つのエラー応答に 3 つの応答の集計を変換するマップです。|  
+|CustomerServiceRequest_To_CreditLimiRequest.btm|カスタマー サービス要求をクレジット限度額を要求するメッセージに変換するマップです。|  
+|CustomerServiceRequest_To_CreditLimitResponse.btm|カスタマー サービス要求をクレジットの上限で応答メッセージに変換するマップです。|  
+|CustomerServiceRequest_To_CustomerServiceResponseDenied.btm|要求拒否メッセージをカスタマー サービス要求を変換するマップします。|  
+|CustomerServiceRequest_To_LastPaymentRequest.btm|最後の支払い情報を要求するメッセージをカスタマー サービス要求を変換するマップします。|  
+|CustomerServiceRequest_To_LastPaymentResponseTimeout.btm|最新支払い応答メッセージをカスタマー サービス要求を変換するマップします。|  
+|CustomerServiceRequest_To_PendingTransactionResponse.btm|カスタマー サービス要求を pending transaction 応答メッセージに変換するマップです。|  
+|CustomerServiceRequest_To_PendingTransactionsRequest.btm|カスタマー サービス要求を保留中のトランザクション情報を要求するメッセージに変換するマップです。|  
 |Maps.btproj|BizTalk プロジェクト ファイルです。|  
   
- 内のファイル\<インストール ディレクトリ\>\BTSSoln\Orchestrations\Adapter  
+ Files in \<Install Directory\>\BTSSoln\Orchestrations\Adapter  
   
-|ファイル|Description|  
+|ファイル|説明|  
 |----------|-----------------|  
-|CustomerService.odx|アダプター バージョンの**CustomerService**オーケストレーションです。|  
-|CustomerServiceNativeRequestResponse.odx|フロント エンドとして機能するオーケストレーションのアダプタ バージョン、 **CustomerService**オーケストレーションです。|  
-|CustomerServiceReceiveSend.odx|フロント エンドとして機能するオーケストレーションのアダプタ バージョン、 **CustomerService**オーケストレーションです。|  
+|CustomerService.odx|アダプター バージョンの**CustomerService**オーケストレーションします。|  
+|CustomerServiceNativeRequestResponse.odx|フロント エンドとして機能するオーケストレーションのアダプタ バージョン、 **CustomerService**オーケストレーションします。|  
+|CustomerServiceReceiveSend.odx|フロント エンドとして機能するオーケストレーションのアダプタ バージョン、 **CustomerService**オーケストレーションします。|  
 |Orchestrations.Adapter.btproj|BizTalk プロジェクト ファイルです。|  
   
- 内のファイル\<インストール ディレクトリ\>\btssoln\orchestrations\adapter\web  
+ Files in \<Install Directory\>\BTSSoln\Orchestrations\Adapter\Web References\PendTransWS  
   
-|ファイル|Description|  
+|ファイル|説明|  
 |----------|-----------------|  
 |PendTransWS.disco|生成されたファイルです。|  
 |PendTransWS.wsdl|生成されたファイルです。|  
 |Reference.map|生成されたファイルです。|  
-|Reference.map.cs|生成されたファイルです。|  
+|Reference.map.cs|生成されたファイル|  
 |Reference.odx|生成されたファイルです。|  
 |Reference.xsd|生成されたファイルです。|  
 |Reference1.xsd|生成されたファイルです。|  
   
  内のファイル\<インストール ディレクトリ\>\btssoln\orchestrations\adapter\web  
   
-|ファイル|Description|  
+|ファイル|説明|  
 |----------|-----------------|  
 |Reference.map|生成されたファイルです。|  
 |Reference.map.cs|生成されたファイルです。|  
@@ -128,26 +128,26 @@ ms.locfileid: "25975456"
 |StubSAPWS.disco|生成されたファイルです。|  
 |StubSAPWS.wsdl|生成されたファイルです。|  
   
- 内のファイル\<インストール ディレクトリ\>\BTSSoln\Orchestrations\Inline  
+ Files in \<Install Directory\>\BTSSoln\Orchestrations\Inline  
   
-|ファイル|Description|  
+|ファイル|説明|  
 |----------|-----------------|  
-|CustomerService.odx|インライン バージョンの**CustomerService**オーケストレーションです。|  
-|CustomerServiceNativeRequestResponse.odx|フロント エンドとして機能するオーケストレーションのインライン バージョン、 **CustomerService**オーケストレーションです。|  
-|CustomerServiceReceiveSend.odx|フロント エンドとして機能するオーケストレーションのインライン バージョン、 **CustomerService**オーケストレーションです。|  
+|CustomerService.odx|インライン バージョンの**CustomerService**オーケストレーションします。|  
+|CustomerServiceNativeRequestResponse.odx|フロント エンドとして機能するオーケストレーションのインライン バージョン、 **CustomerService**オーケストレーションします。|  
+|CustomerServiceReceiveSend.odx|フロント エンドとして機能するオーケストレーションのインライン バージョン、 **CustomerService**オーケストレーションします。|  
 |Orchestrations.Inline.btproj|BizTalk プロジェクト ファイルです。|  
   
- 内のファイル\<インストール ディレクトリ\>\BTSSoln\Orchestrations\Stub  
+ Files in \<Install Directory\>\BTSSoln\Orchestrations\Stub  
   
-|ファイル|Description|  
+|ファイル|説明|  
 |----------|-----------------|  
-|CustomerService.odx|スタブ バージョン、 **CustomerService**オーケストレーションです。|  
-|CustomerServiceNativeRequestResponse.odx|フロント エンドとして機能するオーケストレーションのスタブ バージョン、 **CustomerService**オーケストレーションです。|  
+|CustomerService.odx|スタブ バージョンの**CustomerService**オーケストレーションします。|  
+|CustomerServiceNativeRequestResponse.odx|フロント エンドとして機能するオーケストレーションのスタブ バージョン、 **CustomerService**オーケストレーションします。|  
 |Orchestrations.Stub.btproj|BizTalk プロジェクト ファイルです。|  
   
- 内のファイル\<インストール ディレクトリ\>\btssoln\orchestrations\stub\web  
+ Files in \<Install Directory\>\BTSSoln\Orchestrations\Stub\Web References\StubPendTransWS  
   
-|ファイル|Description|  
+|ファイル|説明|  
 |----------|-----------------|  
 |Reference.map|生成されたファイルです。|  
 |Reference.map.cs|生成されたファイルです。|  
@@ -157,9 +157,9 @@ ms.locfileid: "25975456"
 |StubPendTransWS.disco|生成されたファイルです。|  
 |StubPendTransWS.wsdl|生成されたファイルです。|  
   
- 内のファイル\<インストール ディレクトリ\>\btssoln\orchestrations\stub\web  
+ Files in \<Install Directory\>\BTSSoln\Orchestrations\Stub\Web References\StubPmntTrckWS  
   
-|ファイル|Description|  
+|ファイル|説明|  
 |----------|-----------------|  
 |Reference.map|生成されたファイルです。|  
 |Reference.map.cs|生成されたファイルです。|  
@@ -171,7 +171,7 @@ ms.locfileid: "25975456"
   
  内のファイル\<インストール ディレクトリ\>\btssoln\orchestrations\stub\web  
   
-|ファイル|Description|  
+|ファイル|説明|  
 |----------|-----------------|  
 |Reference.map|生成されたファイルです。|  
 |Reference.map.cs|生成されたファイルです。|  
@@ -180,9 +180,9 @@ ms.locfileid: "25975456"
 |StubSAPWS.disco|生成されたファイルです。|  
 |StubSAPWS.wsdl|生成されたファイルです。|  
   
- 内のファイル\<インストール ディレクトリ\>\BTSSoln\OrchProxy\Adapter  
+ Files in \<Install Directory\>\BTSSoln\OrchProxy\Adapter  
   
-|ファイル|Description|  
+|ファイル|説明|  
 |----------|-----------------|  
 |CustomerServicePort.asmx|生成されたファイルです。|  
 |Global.asax|生成されたファイルです。|  
@@ -192,18 +192,18 @@ ms.locfileid: "25975456"
 |Web.config|生成されたファイルです。|  
 |WsdlExtension.cs|生成されたファイルです。|  
   
- 内のファイル\<インストール ディレクトリ\>\BTSSoln\OrchProxy\Adapter\app_code  
+ Files in \<Install Directory\>\BTSSoln\OrchProxy\Adapter\app_code  
   
-|ファイル|Description|  
+|ファイル|説明|  
 |----------|-----------------|  
 |assemblyinfo.cs|生成されたファイルです。|  
 |customerserviceport.asmx.cs|生成されたファイルです。|  
 |datatypes.cs|生成されたファイルです。|  
 |global.asax.cs|生成されたファイルです。|  
   
- 内のファイル\<インストール ディレクトリ\>\BTSSoln\OrchProxy\Inline  
+ Files in \<Install Directory\>\BTSSoln\OrchProxy\Inline  
   
-|ファイル|Description|  
+|ファイル|説明|  
 |----------|-----------------|  
 |CustomerServicePort.asmx|生成されたファイルです。|  
 |Global.asax|生成されたファイルです。|  
@@ -213,18 +213,18 @@ ms.locfileid: "25975456"
 |Web.config|生成されたファイルです。|  
 |WsdlExtension.cs|生成されたファイルです。|  
   
- 内のファイル\<インストール ディレクトリ\>\BTSSoln\OrchProxy\Inline\app_code  
+ Files in \<Install Directory\>\BTSSoln\OrchProxy\Inline\app_code  
   
-|ファイル|Description|  
+|ファイル|説明|  
 |----------|-----------------|  
 |assemblyinfo.cs|生成されたファイルです。|  
 |customerserviceport.asmx.cs|生成されたファイルです。|  
 |datatypes.cs|生成されたファイルです。|  
 |global.asax.cs|生成されたファイルです。|  
   
- 内のファイル\<インストール ディレクトリ\>\BTSSoln\OrchProxy\Stub  
+ Files in \<Install Directory\>\BTSSoln\OrchProxy\Stub  
   
-|ファイル|Description|  
+|ファイル|説明|  
 |----------|-----------------|  
 |CustomerServicePort.asmx|生成されたファイルです。|  
 |Global.asax|生成されたファイルです。|  
@@ -234,126 +234,126 @@ ms.locfileid: "25975456"
 |Web.config|生成されたファイルです。|  
 |WsdlExtension.cs|生成されたファイルです。|  
   
- 内のファイル\<インストール ディレクトリ\>\BTSSoln\OrchProxy\Stub\app_code  
+ Files in \<Install Directory\>\BTSSoln\OrchProxy\Stub\app_code  
   
-|ファイル|Description|  
+|ファイル|説明|  
 |----------|-----------------|  
 |assemblyinfo.cs|生成されたファイルです。|  
 |customerserviceport.asmx.cs|生成されたファイルです。|  
 |datatypes.cs|生成されたファイルです。|  
 |global.asax.cs|生成されたファイルです。|  
   
- 内のファイル\<インストール ディレクトリ\>\BTSSoln\PaymentTracker  
+ Files in \<Install Directory\>\BTSSoln\PaymentTracker  
   
-|ファイル|Description|  
+|ファイル|説明|  
 |----------|-----------------|  
-|App.ico|Payment Tracker シミュレーターのアイコン ファイルです。|  
+|App.ico|Payment tracker シミュレーターのアイコン ファイルです。|  
 |AssemblyInfo.cs|アセンブリ情報ファイルです。|  
-|MessageProcessor.cs|Payment Tracker メッセージを処理して適切な応答を返すクラスの C# コードです。|  
-|PaymentTracker.cs|Payment Tracker システムをシミュレートするクラスの C# コードです。|  
-|PaymentTracker.csproj|C# のプロジェクト ファイルです。|  
-|PaymentTrackerSimulator.cs|Payment Tracker シミュレーターのサーバーの C# コードです。|  
-|runit.cmd|Payment Tracker シミュレーターを起動するコマンド ファイルです。|  
+|MessageProcessor.cs|C#payment tracker メッセージを処理し、適切な応答を返すクラスのコードです。|  
+|PaymentTracker.cs|C#payment tracker システムをシミュレートするクラスのコードです。|  
+|PaymentTracker.csproj|C#プロジェクト ファイルです。|  
+|PaymentTrackerSimulator.cs|C#payment tracker シミュレーター用のサーバーのコードです。|  
+|runit.cmd|Payment tracker シミュレーターを開始するコマンド ファイルです。|  
   
- 内のファイル\<インストール ディレクトリ\>\BTSSoln\PaymentTrackerCall  
+ Files in \<Install Directory\>\BTSSoln\PaymentTrackerCall  
   
-|ファイル|Description|  
-|----------|-----------------|  
-|AssemblyInfo.cs|アセンブリ情報ファイルです。|  
-|Exceptions.cs|Payment Tracking システムの例外を定義する C# コードです。|  
-|PaymentTrackerCall.csproj|C# のプロジェクト ファイルです。|  
-|PaymentTrackerCaller.cs|オーケストレーションから Payment Tracking システム インラインを呼び出す C# コードです。|  
-  
- 内のファイル\<インストール ディレクトリ\>\BTSSoln\PendTransCall  
-  
-|ファイル|Description|  
+|ファイル|説明|  
 |----------|-----------------|  
 |AssemblyInfo.cs|アセンブリ情報ファイルです。|  
-|Exceptions.cs|Pending Transaction システムの例外を定義する C# コードです。|  
-|PendingTransactionsCaller.cs|オーケストレーションから Pending Transactions システム インラインを呼び出す C# コードです。|  
+|Exceptions.cs|C#payment tracking システムの例外を定義するコードです。|  
+|PaymentTrackerCall.csproj|C#プロジェクト ファイルです。|  
+|PaymentTrackerCaller.cs|C#payment tracking システム インラインをオーケストレーションからを呼び出すコードです。|  
+  
+ Files in \<Install Directory\>\BTSSoln\PendTransCall  
+  
+|ファイル|説明|  
+|----------|-----------------|  
+|AssemblyInfo.cs|アセンブリ情報ファイルです。|  
+|Exceptions.cs|C#例外、pending transactions システムを定義するコードです。|  
+|PendingTransactionsCaller.cs|C#オーケストレーションから pending transaction システム インラインを呼び出すコードです。|  
 |PendingTransactionsWebService.disco|生成されたファイルです。|  
 |PendingTransactionsWebService.wsdl|生成されたファイルです。|  
-|PendTransCall.csproj|C# のプロジェクト ファイルです。|  
+|PendTransCall.csproj|C#プロジェクト ファイルです。|  
 |WebServiceReference.cs|生成されたファイルです。|  
   
  内のファイル\<インストール ディレクトリ\>\BTSSoln\PmTrkPipeline  
   
-|ファイル|Description|  
+|ファイル|説明|  
 |----------|-----------------|  
-|PaymentTrackerReceivePipeline.btp|Payment Tracking システムの受信パイプラインです。|  
-|PaymentTrackerSendPipeline.btp|Payment Tracking システムの送信パイプラインです。|  
+|PaymentTrackerReceivePipeline.btp|Payment tracking システムのパイプラインが表示されます。|  
+|PaymentTrackerSendPipeline.btp|Payment tracking システムのパイプラインを送信します。|  
 |PmTrkPipeline.btproj|BizTalk プロジェクト ファイルです。|  
   
  内のファイル\<インストール ディレクトリ\>\BTSSoln\PmTrkPipelineComp  
   
-|ファイル|Description|  
+|ファイル|説明|  
 |----------|-----------------|  
 |AssemblyInfo.cs|アセンブリ情報ファイルです。|  
-|MQSeriesHeaderSetter.cs|Payment Tracking システムの受信および送信メッセージ用の MQSeries メッセージ ヘッダー設定を処理するパイプライン コンポーネントの C# コードです。|  
-|MQSeriesHeaderSetter.resx|リソース ファイルです。|  
-|PmTrkPipelineComp.csproj|C# のプロジェクト ファイルです。|  
+|MQSeriesHeaderSetter.cs|C#メッセージの受信および送信 payment tracking システムからのいくつかの MQSeries メッセージ ヘッダーの設定を処理するパイプライン コンポーネントのコードは.|  
+|MQSeriesHeaderSetter.resx|リソース ファイル。|  
+|PmTrkPipelineComp.csproj|C#プロジェクト ファイルです。|  
   
  内のファイル\<インストール ディレクトリ\>\BTSSoln\SchemaClasses  
   
-|ファイル|Description|  
+|ファイル|説明|  
 |----------|-----------------|  
 |AssemblyInfo.cs|アセンブリ情報ファイルです。|  
-|BAPI_BANKACCT_GET_DETAIL.cs|対応するスキーマ (.xsd) ファイルから生成されました。|  
-|CustomerServiceRequest.cs|対応するスキーマ (.xsd) ファイルから生成されました。|  
-|CustomerServiceResponse.cs|対応するスキーマ (.xsd) ファイルから生成されました。|  
-|LastPaymentRequest.cs|対応するスキーマ (.xsd) ファイルから生成されました。|  
-|LastPaymentResponse.cs|対応するスキーマ (.xsd) ファイルから生成されました。|  
-|PendingTransactionsRequest.cs|対応するスキーマ (.xsd) ファイルから生成されました。|  
-|PendingTransactionsResponse.cs|対応するスキーマ (.xsd) ファイルから生成されました。|  
-|SchemaClasses.csproj|C# のプロジェクト ファイルです。|  
+|BAPI_BANKACCT_GET_DETAIL.cs|対応するスキーマ (.xsd) ファイルから生成されます。|  
+|CustomerServiceRequest.cs|対応するスキーマ (.xsd) ファイルから生成されます。|  
+|CustomerServiceResponse.cs|対応するスキーマ (.xsd) ファイルから生成されます。|  
+|LastPaymentRequest.cs|対応するスキーマ (.xsd) ファイルから生成されます。|  
+|LastPaymentResponse.cs|対応するスキーマ (.xsd) ファイルから生成されます。|  
+|PendingTransactionsRequest.cs|対応するスキーマ (.xsd) ファイルから生成されます。|  
+|PendingTransactionsResponse.cs|対応するスキーマ (.xsd) ファイルから生成されます。|  
+|SchemaClasses.csproj|C#プロジェクト ファイルです。|  
   
  内のファイル\<インストール ディレクトリ\>\BTSSoln\Schemas  
   
-|ファイル|Description|  
+|ファイル|説明|  
 |----------|-----------------|  
-|BAPI_BANKACCT_GET_DETAIL.xsd|SAP の要求メッセージと応答メッセージのスキーマです。|  
+|BAPI_BANKACCT_GET_DETAIL.xsd|SAP の要求と応答メッセージのスキーマです。|  
 |CustomerServiceRequest.xsd|カスタマー サービス要求メッセージのスキーマです。|  
 |CustomerServiceResponse.xsd|カスタマー サービス応答メッセージのスキーマです。|  
-|genClasses.cmd|スキーマから C# クラス ファイルを生成するコマンド ファイルです。|  
+|genClasses.cmd|コマンド ファイルを生成するC#クラス スキーマからのファイル。|  
 |LastPaymentRequest.xsd|最新支払い要求メッセージのスキーマです。|  
 |LastPaymentResponse.xsd|最新支払い応答メッセージのスキーマです。|  
-|PendingTransactionsRequest.xsd|Pending Transaction 要求メッセージのスキーマです。|  
-|PendingTransactionsResponse.xsd|Pending Transaction 応答メッセージのスキーマです。|  
+|PendingTransactionsRequest.xsd|保留中のトランザクション要求メッセージのスキーマです。|  
+|PendingTransactionsResponse.xsd|Pending transaction 応答メッセージのスキーマです。|  
 |Schemas.btproj|BizTalk プロジェクト ファイルです。|  
   
- 内のファイル\<インストール ディレクトリ\>\BTSSoln\Scripts  
+ Files in \<Install Directory\>\BTSSoln\Scripts  
   
-|ファイル|Description|  
+|ファイル|説明|  
 |----------|-----------------|  
 |ConfigStoreApp.xml|SSO 構成値を定義する XML ファイルです。|  
 |CreateInitialConfigInSSO.cmd|初期 SSO 構成値を作成するコマンド ファイルです。|  
-|DeployAllBinding.cmd|アセンブリをすべて展開するコマンド ファイルです。|  
+|DeployAllBinding.cmd|すべてのアセンブリを展開するコマンド ファイルです。|  
 |DeployStubBinding.cmd|アセンブリのスタブ バージョンを展開するコマンド ファイルです。|  
-|PendTransAffApp.xml|Pending Transactions 関連アプリケーションの値を定義する XML ファイルです。|  
-|PendTransUserMap.xml|Pending Transactions 関連アプリケーションの資格情報のマッピングを定義する XML ファイルです。|  
-|PmntTrckAffApp.xml|Pending Transactions 関連アプリケーションの値を定義する XML ファイルです。|  
-|PmntTrckUserMap.xml|Payment Tracking 関連アプリケーションの資格情報のマッピングを定義する XML ファイルです。|  
+|PendTransAffApp.xml|保留中のトランザクションの値を定義する XML ファイルには、アプリケーションが関連します。|  
+|PendTransUserMap.xml|保留中のトランザクションの関連アプリケーションのユーザーの資格情報のマッピングを定義する XML ファイル。|  
+|PmntTrckAffApp.xml|保留中のトランザクションの値を定義する XML ファイルには、アプリケーションが関連します。|  
+|PmntTrckUserMap.xml|Payment tracking 関連アプリケーションのユーザーの資格情報のマッピングを定義する XML ファイル。|  
 |RemoveReceivePort.vbs|受信ポートを削除する汎用 VBScript です。|  
 |RemoveSendPort.vbs|送信ポートを削除する汎用 VBScript です。|  
-|SetConfigValuesInSSO.cmd|SSO 内の構成値を設定するコマンド ファイルです。|  
-|StartAll.vbs|すべてのオーケストレーションを参加させ、開始するコマンド ファイルです。|  
-|StartStub.vbs|オーケストレーションのスタブ バージョンを参加させ、開始するコマンド ファイルです。|  
-|UndeployAll.cmd|アセンブリをすべて展開解除するコマンド ファイルです。|  
+|SetConfigValuesInSSO.cmd|Sso 構成値を設定するコマンド ファイルです。|  
+|StartAll.vbs|参加させ、すべてのオーケストレーションを開始するコマンド ファイルです。|  
+|StartStub.vbs|参加させ、オーケストレーションのスタブ バージョンを開始するコマンド ファイルです。|  
+|UndeployAll.cmd|すべてのアセンブリの展開を解除するコマンド ファイルです。|  
 |UndeployStub.cmd|アセンブリのスタブ バージョンを展開解除するコマンド ファイルです。|  
-|UnEnlistAll.vbs|すべてのオーケストレーションを参加解除するコマンド ファイルです。|  
-|UnEnlistStub.vbs|オーケストレーションのスタブ バージョンを展開解除するコマンド ファイルです。|  
+|UnEnlistAll.vbs|すべてのオーケストレーションの参加を解除するコマンド ファイルです。|  
+|UnEnlistStub.vbs|オーケストレーションのスタブ バージョンの参加を解除するコマンド ファイルです。|  
   
- 内のファイル\<インストール ディレクトリ\>\BTSSoln\ServiceLevelTracking  
+ Files in \<Install Directory\>\BTSSoln\ServiceLevelTracking  
   
-|ファイル|Description|  
+|ファイル|説明|  
 |----------|-----------------|  
 |AssemblyInfo.cs|アセンブリ情報ファイルです。|  
-|ServiceLevelTracking.cs|サービス レベル BAM 追跡の C# ヘルパ関数です。|  
-|ServiceLevelTracking.csproj|C# のプロジェクト ファイルです。|  
+|ServiceLevelTracking.cs|C#サービス レベル BAM 追跡のためのヘルパー関数です。|  
+|ServiceLevelTracking.csproj|C#プロジェクト ファイルです。|  
   
- 内のファイル\<インストール ディレクトリ\>\BTSSoln\SimpleClient  
+ Files in \<Install Directory\>\BTSSoln\SimpleClient  
   
-|ファイル|Description|  
+|ファイル|説明|  
 |----------|-----------------|  
 |AdapterCustomerServicePort.disco|生成されたファイルです。|  
 |AdapterCustomerServicePort.wsdl|生成されたファイルです。|  
@@ -361,14 +361,14 @@ ms.locfileid: "25975456"
 |AssemblyInfo.cs|アセンブリ情報ファイルです。|  
 |InlineCustomerServicePort.disco|生成されたファイルです。|  
 |InlineCustomerServicePort.wsdl|生成されたファイルです。|  
-|SimpleClient.cs|要求を行うための簡単な Windows フォーム アプリケーションです。|  
-|SimpleClient.csproj|C# のプロジェクト ファイルです。|  
-|SimpleClient.resx|リソース ファイルです。|  
+|SimpleClient.cs|要求を行うための単純な Windows フォーム アプリケーション。|  
+|SimpleClient.csproj|C#プロジェクト ファイルです。|  
+|SimpleClient.resx|リソース ファイル。|  
 |WebServiceReferences.cs|生成されたファイルです。|  
   
- 内のファイル\<インストール ディレクトリ\>\BTSSoln\StubWebServices\PaymentTrack  
+ Files in \<Install Directory\>\BTSSoln\StubWebServices\PaymentTrack  
   
-|ファイル|Description|  
+|ファイル|説明|  
 |----------|-----------------|  
 |Global.asax|生成されたファイルです。|  
 |Global.asax.resx|生成されたファイルです。|  
@@ -377,17 +377,17 @@ ms.locfileid: "25975456"
 |StubPmntTrckWS.asmx.resx|生成されたファイルです。|  
 |Web.config|生成されたファイルです。|  
   
- 内のファイル\<インストール ディレクトリ\>\BTSSoln\StubWebServices\PaymentTrack\app_code  
+ Files in \<Install Directory\>\BTSSoln\StubWebServices\PaymentTrack\app_code  
   
-|ファイル|Description|  
+|ファイル|説明|  
 |----------|-----------------|  
 |assemblyinfo.cs|アセンブリ情報ファイルです。|  
 |global.asax.cs|生成されたファイルです。|  
 |StubPmntTrckWS.asmx.cs|生成されたファイルです。|  
   
- 内のファイル\<インストール ディレクトリ\>\BTSSoln\StubWebServices\PendingTrans  
+ Files in \<Install Directory\>\BTSSoln\StubWebServices\PendingTrans  
   
-|ファイル|Description|  
+|ファイル|説明|  
 |----------|-----------------|  
 |Global.asax|生成されたファイルです。|  
 |Global.asax.resx|生成されたファイルです。|  
@@ -396,17 +396,17 @@ ms.locfileid: "25975456"
 |StubPendTransWS.csproj.webinfo|生成されたファイルです。|  
 |Web.config|生成されたファイルです。|  
   
- 内のファイル\<インストール ディレクトリ\>\BTSSoln\StubWebServices\PendingTrans\app_code  
+ Files in \<Install Directory\>\BTSSoln\StubWebServices\PendingTrans\app_code  
   
-|ファイル|Description|  
+|ファイル|説明|  
 |----------|-----------------|  
 |assemblyinfo.cs|生成されたファイルです。|  
 |global.asax.cs|生成されたファイルです。|  
 |StubPendTransWS.asmx.cs|生成されたファイルです。|  
   
- 内のファイル\<インストール ディレクトリ\>\BTSSoln\StubWebServices\SAP  
+ Files in \<Install Directory\>\BTSSoln\StubWebServices\SAP  
   
-|ファイル|Description|  
+|ファイル|説明|  
 |----------|-----------------|  
 |Global.asax|生成されたファイルです。|  
 |Global.asax.resx|生成されたファイルです。|  
@@ -415,69 +415,69 @@ ms.locfileid: "25975456"
 |StubSAPWS.asmx.resx|生成されたファイルです。|  
 |Web.config|生成されたファイルです。|  
   
- 内のファイル\<インストール ディレクトリ\>\BTSSoln\StubWebServices\SAP\app_code  
+ Files in \<Install Directory\>\BTSSoln\StubWebServices\SAP\app_code  
   
-|ファイル|Description|  
+|ファイル|説明|  
 |----------|-----------------|  
 |assemblyinfo.cs|アセンブリ情報ファイルです。|  
 |global.asax.cs|生成されたファイルです。|  
 |stubsapws.asmx.cs|生成されたファイルです。|  
   
- 内のファイル\<インストール ディレクトリ\>\BTSSoln\StubWebServices\StubSAPCall  
+ Files in \<Install Directory\>\BTSSoln\StubWebServices\StubSAPCall  
   
-|ファイル|Description|  
+|ファイル|説明|  
 |----------|-----------------|  
 |AssemblyInfo.cs|アセンブリ情報ファイルです。|  
-|Exceptions.cs|スタブ SAP 呼び出しのタイムアウト例外を定義する C# コードです。|  
-|StubSAPCall.csproj|C# のプロジェクト ファイルです。|  
-|StubSAPCallHelper.cs|スタブ SAP Web サービスを呼び出すヘルパ アセンブリの C# コードです。|  
-|StubSAPWSProxy.cs|スタブ SAP Web サービスを呼び出すヘルパ アセンブリの C# コードです。|  
+|Exceptions.cs|C#スタブ SAP 呼び出しのタイムアウト例外を定義するコードです。|  
+|StubSAPCall.csproj|C#プロジェクト ファイルです。|  
+|StubSAPCallHelper.cs|C#スタブ SAP web サービスを呼び出すヘルパ アセンブリのコードです。|  
+|StubSAPWSProxy.cs|C#スタブ SAP web サービスを呼び出すヘルパ アセンブリのコードです。|  
   
- 内のファイル\<インストール ディレクトリ\>\BTSSoln\Utilities  
+ Files in \<Install Directory\>\BTSSoln\Utilities  
   
-|ファイル|Description|  
+|ファイル|説明|  
 |----------|-----------------|  
 |AssemblyInfo.cs|アセンブリ情報ファイルです。|  
-|CustomerServiceHelper.cs|ヘルパ メソッドおよびクラスの C# コード ファイルです。|  
-|ReceivePipelineHelper.cs|オーケストレーションからパイプラインを呼び出すためのヘルパ アセンブリの C# コードです。|  
-|Utilities.csproj|C# のプロジェクト ファイルです。|  
+|CustomerServiceHelper.cs|C#ヘルパー メソッドとクラスのコードです。|  
+|ReceivePipelineHelper.cs|C#オーケストレーションからパイプラインを呼び出すためのヘルパ アセンブリのコードです。|  
+|Utilities.csproj|C#プロジェクト ファイルです。|  
   
  内のファイル\<インストール ディレクトリ\>\MFAccess  
   
-|ファイル|Description|  
+|ファイル|説明|  
 |----------|-----------------|  
-|Microsoft.Samples.BizTalk.WoodgroveBank.MainframeAccess.sln|Visual Studio ソリューション ファイル。|  
+|Microsoft.Samples.BizTalk.WoodgroveBank.MainframeAccess.sln|Visual Studio ソリューション ファイルです。|  
 |SetupMFAccess.bat|ソリューションのメインフレーム アクセス コンポーネントをビルドするバッチ ファイルです。|  
   
  内のファイル\<インストール ディレクトリ\>\MFAccess\HISTIComponent  
   
-|ファイル|Description|  
+|ファイル|説明|  
 |----------|-----------------|  
 |bizcbl.txt|メインフレームで実行する COBOL プログラムです。|  
 |HISTIComponent.tiproj|トランザクション インテグレータのプロジェクト ファイルです。|  
 |MainFrameProgramVTCS2Description.txt|トランザクション インテグレータのエクスポート ファイルです。|  
-|SOHISTIUsingCOM.TLB|タイプ ライブラリです。|  
+|SOHISTIUsingCOM.TLB|タイプ ライブラリ。|  
   
  内のファイル\<インストール ディレクトリ\>\MFAccess\HISTISimpleTester  
   
-|ファイル|Description|  
+|ファイル|説明|  
 |----------|-----------------|  
-|App.ico|アイコン ファイルです。|  
+|App.ico|アイコン ファイル|  
 |AssemblyInfo.cs|アセンブリ情報ファイルです。|  
 |Form1.cs|メインフレームへの接続をテストする Windows フォーム プログラムです。|  
 |Form1.resx|リソース ファイル|  
-|HISTISimpleTester.csproj|C# のプロジェクト ファイルです。|  
+|HISTISimpleTester.csproj|C#プロジェクト ファイルです。|  
 |Interop.SOHISTIUsingCOM.dll.reg|DLL 登録ファイルです。|  
   
  内のファイル\<インストール ディレクトリ\>\MFAccess\PendingTransactions  
   
-|ファイル|Description|  
+|ファイル|説明|  
 |----------|-----------------|  
 |AssemblyInfo.cs|アセンブリ情報ファイルです。|  
 |Global.asax|生成されたファイルです。|  
-|Global.asax.cs|生成されたファイルです。|  
+|global.asax.cs|生成されたファイルです。|  
 |Global.asax.resx|生成されたファイルです。|  
-|PendingTransactions.csproj|C# のプロジェクト ファイルです。|  
+|PendingTransactions.csproj|C#プロジェクト ファイルです。|  
 |PendingTransactions.csproj.webinfo|生成されたファイルです。|  
 |PendTransWS.asmx|生成されたファイルです。|  
 |PendTransWS.asmx.cs|生成されたファイルです。|  
@@ -486,18 +486,18 @@ ms.locfileid: "25975456"
   
  内のファイル\<インストール ディレクトリ\>\MFAccess\SchemaClasses  
   
-|ファイル|Description|  
+|ファイル|説明|  
 |----------|-----------------|  
 |AssemblyInfo.cs|アセンブリ情報ファイルです。|  
-|BAPI_BANKACCT_GET_DETAIL.cs|対応するスキーマ (.xsd) ファイルから生成された C# クラスです。|  
-|CustomerServiceRequest.cs|対応するスキーマ (.xsd) ファイルから生成された C# クラスです。|  
-|CustomerServiceResponse.cs|対応するスキーマ (.xsd) ファイルから生成された C# クラスです。|  
-|LastPaymentRequest.cs|対応するスキーマ (.xsd) ファイルから生成された C# クラスです。|  
-|LastPaymentResponse.cs|対応するスキーマ (.xsd) ファイルから生成された C# クラスです。|  
-|PendingTransactionsRequest.cs|対応するスキーマ (.xsd) ファイルから生成された C# クラスです。|  
-|PendingTransactionsResponse.cs|対応するスキーマ (.xsd) ファイルから生成された C# クラスです。|  
-|SchemaClasses.csproj|C# のプロジェクト ファイルです。|  
+|BAPI_BANKACCT_GET_DETAIL.cs|C#対応するスキーマ (.xsd) ファイルから生成されるクラス。|  
+|CustomerServiceRequest.cs|C#対応するスキーマ (.xsd) ファイルから生成されるクラス。|  
+|CustomerServiceResponse.cs|C#対応するスキーマ (.xsd) ファイルから生成されるクラス。|  
+|LastPaymentRequest.cs|C#対応するスキーマ (.xsd) ファイルから生成されるクラス。|  
+|LastPaymentResponse.cs|C#対応するスキーマ (.xsd) ファイルから生成されるクラス。|  
+|PendingTransactionsRequest.cs|C#対応するスキーマ (.xsd) ファイルから生成されるクラス。|  
+|PendingTransactionsResponse.cs|C#対応するスキーマ (.xsd) ファイルから生成されるクラス。|  
+|SchemaClasses.csproj|C#プロジェクト ファイルです。|  
   
 ## <a name="see-also"></a>参照  
- [コンポーネントのサービス指向ソリューション](../core/components-of-the-service-oriented-solution.md)   
+ [サービスのコンポーネント指向のソリューション](../core/components-of-the-service-oriented-solution.md)   
  [サービス指向ソリューション リファレンス](../core/service-oriented-solution-reference.md)

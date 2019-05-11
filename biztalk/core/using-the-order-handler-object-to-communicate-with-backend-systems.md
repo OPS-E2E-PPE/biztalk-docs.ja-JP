@@ -1,5 +1,5 @@
 ---
-title: Order Handler オブジェクトを使用して、バックエンド システムと通信する |Microsoft ドキュメント
+title: Order Handler オブジェクトを使用してバックエンド システムと通信 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,28 +15,28 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8d7621c4e5737def0e9fc0682de709ae57f98790
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 919013bbae989d588033437be54ce705179a44f8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22288066"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65303005"
 ---
-# <a name="using-the-order-handler-object-to-communicate-with-backend-systems"></a>Order Handler オブジェクトを使用して、バックエンド システムと通信するには
-最終的な注文を受信する既存のバックエンド システムである Cable Provisioning System とビジネス プロセス管理ソリューションが通信する方法は多数存在します。 このソリューションでは、Microsoft [!INCLUDE[btsDotNetFramework](../includes/btsdotnetframework-md.md)] で提供されている .NET リモート処理機能を使用して Provisioning System と通信します。  
+# <a name="using-the-order-handler-object-to-communicate-with-backend-systems"></a>Order Handler オブジェクトを使用してバックエンド システムと通信
+ビジネス プロセス管理ソリューションがある cable provisioning system 最終的な注文を受信する、従来のバックエンド注文システムと通信でした多くの方法はあります。 ソリューションについては、Microsoft .NET リモート処理機能を使用する[!INCLUDE[btsDotNetFramework](../includes/btsdotnetframework-md.md)]provisioning system と通信します。  
   
- このソリューションでは、インターフェイスを使用してバックエンド システムに対するアクセス オブジェクトを定義する一般的な方法を使用します。 独立したアセンブリにインターフェイスを配置することにより、クライアント アセンブリは、コンパイルされたアセンブリにアクセスする必要なく、リモート オブジェクトにアクセスできます。  
+ ソリューションでは、インターフェイスを使用して、バックエンド システムに対するアクセス オブジェクトを定義する一般的な手法を使用します。 アセンブリは、別のアセンブリでは、クライアントで、インターフェイスを配置することで、コンパイルされたアセンブリにアクセスすることがなくリモート オブジェクトへのアクセスができます。  
   
- **IOrderHandler**インターフェイスが、バックエンド注文システムと通信するメソッドを定義します。 このインターフェイスには、注文の分析、アクティブ化、取り消し、および完了を行うためのメソッドが含まれています。 サービスの種類、注文が取り消されたときに必要なメソッドを識別するためのメソッドも用意されています。  
+ **IOrderHandler**インターフェイスは、バックエンド注文システムと通信するメソッドを定義します。 インターフェイスには、分析、アクティブ化、取り消し中、および注文を完了するためのメソッドが含まれています。 サービスの種類、注文がキャンセルされた場合に必要なメソッドを識別するためのメソッドも提供します。  
   
- **CableOrder1**、 **CableOrder2**、サテライト オーケストレーションを使用して、 **OrderHandlerWrapper**を実装するオブジェクト**IOrderHandler**. **OrderHandlerWrapper**オブジェクト、さらのリモート インスタンスを起動、 **OrderHandler**オブジェクトによって提供される、 **CableProvisioningSystemServer**実行可能ファイルです。 ラッパー オブジェクトを使用することにより、バックエンドの注文システムと通信するために .NET リモート処理を使用するビジネス要件が満たされ、例外処理コンポーネントの再試行機能の使用が有効になります。  
+ **CableOrder1**、 **CableOrder2**、サテライト オーケストレーションを使用して、 **OrderHandlerWrapper**を実装するオブジェクト**IOrderHandler**. **OrderHandlerWrapper**オブジェクト、さらのリモート インスタンスを呼び出す、 **OrderHandler**オブジェクトによって提供される、 **CableProvisioningSystemServer**実行可能ファイルです。 使用した .NET リモート処理通信中に、バックエンド注文システムを同時に、例外処理コンポーネントの再試行機能の使用を有効にするのビジネス要件を満たしている、ラッパー オブジェクトを使用します。  
   
- いずれかのオーケストレーションで参照されているすべてのオブジェクトをシリアル化できる必要がありますので、 **OrderHandlerWrapper**もシリアル化することができます。 使用して、 **OrderHandlerWrapper**オーケストレーションからシリアル化コードを分離します。  
+ 1 つ、オーケストレーションで参照されているすべてのオブジェクトをシリアル化できる必要がありますので、 **OrderHandlerWrapper**もシリアル化することができます。 使用して、 **OrderHandlerWrapper**はシリアル化コードをオーケストレーションから分離します。  
   
- Se がわかる場合は、コードを見るを**OrderHandlerWrapper**オブジェクトが明示的に実装する、 **ISerializable**インターフェイスです。 このオブジェクトは既定以外のコンストラクタを使用するので、自身のシリアル化を処理する必要があるのです。  
+ 場合は、コードを見ることがわかりますが、 **OrderHandlerWrapper**オブジェクトを明示的に実装して、 **ISerializable**インターフェイス。 オブジェクトは、既定以外のコンス トラクターを使用しているために、独自のシリアル化を処理する必要があります。  
   
- バックエンド システムと通信するために .NET リモート処理を使用することは、メッセージングを使用するよりも効率的で、 単純なメッセージング ソリューションを使用した場合よりも、オーケストレーションがバックエンド システムに緊密にバインドされます。 また、.NET リモート処理を使用することにより、BizTalk Server の組み込みの機能が再試行要求に対して使用される状況を回避できます。  
+ .NET リモート処理を使用して、バックエンド システムとの通信には、メッセージングを使用するよりも効率的です。 一方で、オーケストレーションのバインドより緊密にバックエンド システムによりも、純粋なメッセージング ソリューションの可能性があります。 .NET リモート処理を使用しても防止ソリューション再試行要求に対して組み込みの BizTalk Server の機能を活用します。  
   
 ## <a name="see-also"></a>参照  
  [ビジネス プロセス管理ソリューションの実装の要点](../core/implementation-highlights-of-the-business-process-management-solution.md)   
- [プロセス マネージャのロジック](../core/process-manager-logic.md)
+ [プロセス マネージャーのロジック](../core/process-manager-logic.md)

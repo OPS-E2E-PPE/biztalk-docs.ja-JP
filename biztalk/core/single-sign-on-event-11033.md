@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 11033 |Microsoft Docs'
+title: シングル サインオン:イベント 11033 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 25db9678dbef67672c2d86273f8938e94de09000
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: da9c77a8d8ea41a12e8b122dc21e4f0b8d3adce0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37011723"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65303407"
 ---
-# <a name="single-sign-on-event-11033"></a>シングル サインオン: イベント 11033
+# <a name="single-sign-on-event-11033"></a>シングル サインオン:イベント 11033
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                                                                                                                                                                                                                               |
@@ -30,10 +30,10 @@ ms.locfileid: "37011723"
 |  イベント ソース   |                                                                                                                                            ENTSSO                                                                                                                                             |
 |    コンポーネント    |                                                                                                                                              なし                                                                                                                                              |
 |  シンボル名  |                                                                                                                              SSO_INFO_PS_WIN_CHANGE_APP_DISABLED                                                                                                                              |
-|  メッセージ テキスト   | Windows パスワードが変更されています。 この Windows アカウントに対するマッピングが検出されましたが、アプリケーションが無効であるために無視されました。%r<br /><br /> 追跡 ID: %1 %r<br /><br /> Windows アカウント: % 2 %r<br /><br /> アプリケーションの場合: % 3 %r<br /><br /> 外部アカウント: % 4 %r<br /><br /> クライアント ユーザー: %5 |
+|  メッセージ テキスト   | Windows パスワードが変更されています。 この Windows アカウントのマッピングが検出されましたので、アプリケーションが disabled.%r は無視されます。<br /><br /> 追跡 ID: %1 %r<br /><br /> Windows アカウント: % 2 %r<br /><br /> アプリケーションの場合: % 3 %r<br /><br /> 外部アカウント: % 4 %r<br /><br /> クライアント ユーザー: %5 |
   
 ## <a name="explanation"></a>説明  
- この Windows アカウントに対するマッピングが検出されましたが、アプリケーションが無効であるために無視されました。  
+ この Windows アカウントのマッピングが検出されましたが、アプリケーションが無効になっているため、無視されます。  
   
 ## <a name="user-action"></a>ユーザーの操作  
  アプリケーションを有効にするのを参照してください。[関連アプリケーションを有効にする方法](../core/how-to-enable-an-affiliate-application.md)します。

@@ -1,5 +1,5 @@
 ---
-title: アダプターで証明書の構成 |Microsoft ドキュメント
+title: アダプターで証明書の構成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,22 +12,22 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 39268a3197277015554c59549b8cdc692bd385e8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 30e5142dfd341349e665452cbd17be64b00e4902
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22300090"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65253563"
 ---
 # <a name="configuring-certificates-with-adapters"></a>アダプターで証明書の構成
-次のセクションでは、用の証明書を構成する方法を説明する[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]アダプター。  
+次のセクションでは、証明書を構成する方法を説明する[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]アダプター。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [HTTP アダプターでの証明書を構成する方法](../technical-guides/how-to-configure-certificates-with-an-http-adapter.md)  
+-   [HTTP アダプターを使用した証明書の構成方法](../technical-guides/how-to-configure-certificates-with-an-http-adapter.md)  
   
--   [MSMQ アダプターでの証明書を構成する方法](../technical-guides/how-to-configure-certificates-with-an-msmq-adapter.md)  
+-   [MSMQ アダプターを使用した証明書の構成方法](../technical-guides/how-to-configure-certificates-with-an-msmq-adapter.md)  
   
--   [SOAP アダプターと証明書を構成する方法](../technical-guides/how-to-configure-certificates-with-a-soap-adapter.md)  
+-   [SOAP アダプターを使用した証明書の構成方法](../technical-guides/how-to-configure-certificates-with-a-soap-adapter.md)  
   
--   [インストールして、WCF アダプターを持つ証明書を構成する方法](../technical-guides/how-to-install-and-configure-certificates-with-a-wcf-adapter.md)
+-   [WCF アダプターを使用した証明書の構成方法](../technical-guides/how-to-install-and-configure-certificates-with-a-wcf-adapter.md)

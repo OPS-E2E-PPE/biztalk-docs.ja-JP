@@ -12,29 +12,29 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5224c409a6d705806cccc493009ce2c32062f0a1
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1bcf2352177c56292007af7d639437b801b278d2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37010667"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65352557"
 ---
 # <a name="date-and-time-functoids"></a>日時 Functoid
 
 ## <a name="overview"></a>概要
-**日付/時刻**functoid は 2 つのカテゴリに分類できます。 最初のカテゴリには、1 つの functoid が含まれています。**日数加算**、を使用して、指定した日付と時刻の値を指定した日数を追加します。 これは、出力インスタンス メッセージのフィールドが将来の日時の推定値を含む場合に役立ちます。 たとえば、**日数加算**functoid を使用して推定できます注文が受信した日付からの固定の差分をに基づいて出荷日。  
+**日付/時刻**functoid は 2 つのカテゴリに分類できます。 最初のカテゴリには、1 つの functoid が含まれています。**日数加算**、を使用して、指定した日付と時刻の値を指定した日数を追加します。 これは、出力インスタンス メッセージ内のフィールドに、将来の日付と時刻の推定値を含めることは想定されているときに役立ちます。 たとえば、**日数加算**functoid を使用して推定できます注文が受信した日付からの固定の差分をに基づいて出荷日。  
 
- 2 番目のカテゴリには、すべての残りの functoid が含まれています、**日付と時刻**カテゴリ。 これらの Functoid を使用して実行時にタイムスタンプを提供することで、メッセージ変換が行われる日時を出力インスタンス メッセージに格納できます。  
+ 2 番目のカテゴリには、すべての残りの functoid が含まれています、**日付と時刻**カテゴリ。 日付と時刻の変換が行われるメッセージでは、出力インスタンス メッセージに含めることができるように、実行時にタイムスタンプを提供に使用されます。  
 
  **日数加算**functoid が、2 つの入力パラメーターを受け入れる、**日付**、**日付と時刻**、および**時間**functoid の入力があるないです。パラメーター。  
 
 ## <a name="available-functoids"></a>使用可能な functoid  
  **日付/時刻**functoid には。 
 
-* 日数加算
+* 日数を加算します。
 * date
 * 日時
-* [時刻]
+* Time
 
 これらの functoid の詳細については**Functoid リファレンス**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]します。
 

@@ -1,5 +1,5 @@
 ---
-title: データ ディメンション |Microsoft ドキュメント
+title: データ ディメンション |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,22 +15,22 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b7138cf31a9cb86a9ba949142129ac5c906754b1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 036491d9f0fdb946c748850b7c25c959854f2098
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22238354"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65353195"
 ---
 # <a name="data-dimension"></a>データ ディメンション
-行と列に使用する BAM アクティビティ内のテキスト項目の値をデータ ディメンションを定義できます。 たとえば、製品という名前のデータ ディメンションを使用して、次のテーブルを作成できます。  
+行または列で使用する BAM アクティビティ内のテキスト項目の値をデータ ディメンションを定義できます。 たとえば、次の表を作成する製品の名前のデータ ディメンションを使用できます。  
   
-|Product|Count|  
+|製品|Count|  
 |-------------|-----------|  
 |テニス ラケット|100|  
 |サッカー ボール|200|  
   
- また、BAM ビュー ウィザードで複数のデータ ディメンションを定義できます。 たとえば、という名前のデータ ディメンションを定義する**場所**のレベルを持つ**状態**と**市区町村**次の表の作成に使用できます。  
+ また、BAM ビュー ウィザードでは、複数のデータ ディメンションを定義できます。 たとえば、という名前のデータ ディメンションを定義する**場所**レベルが含ま**状態**と**市区町村**次の表を作成するために使用できます。  
   
 |||||  
 |-|-|-|-|  
@@ -39,7 +39,7 @@ ms.locfileid: "22238354"
 |テニス ラケット|50|20|30|  
 |サッカー ボール|130|50|20|  
   
- このテーブルでは、製品ディメンションは行として使用され、場所ディメンションは列として使用されています。  
+ この表で、Product ディメンションは、行として使用され、場所ディメンションは列として使用されました。  
   
 ## <a name="see-also"></a>参照  
  [時間ディメンション](../core/time-dimension.md)   

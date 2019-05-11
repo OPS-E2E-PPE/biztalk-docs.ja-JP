@@ -1,5 +1,5 @@
 ---
-title: BizTalk Server 管理コンソールから公開 |Microsoft ドキュメント
+title: BizTalk Server 管理コンソールからの発行 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,32 +12,32 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fbe03b1a8df67581ce73db31cd5ed4b80b7a109c
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 5423c228b4ea9b8cd16bdac35a0e72c2fecbc232
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26009099"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65301855"
 ---
 # <a name="publishing-from-the-biztalk-server-administration-console"></a>BizTalk Server 管理コンソールからの発行
-ESB の管理ポータルではなく、BizTalk Server 管理コンソールを通じて公開エンドポイントを管理する場合は、これを行うエンドポイントの説明 フィールドに Universal Description, Discovery, and Integration (UDDI) モニカーを入力してUDDI を発行します。 例モニカーを次に示します。  
+ESB 管理ポータルではなく BizTalk Server 管理コンソールを通して公開エンドポイントを管理する場合は、これを行うエンドポイントの説明フィールドに Universal Description, Discovery, and Integration (UDDI) モニカーを入力してUDDI を発行します。 次に、例のモニカーを示します。  
   
 ```  
 uddi://TransportType=other;Status=Published.  
 ```  
   
- 使用して、次の UDDI プロパティを設定することができます、**説明**フィールドで、BizTalk Server 管理コンソール。  
+ 使用して、次の UDDI プロパティを設定することができます、**説明**フィールドに、BizTalk Server 管理コンソール。  
   
--   **ModifiedBy**です。 このオプションのプロパティには、エンドポイントを変更したユーザーのアカウント名が含まれていますたとえば、MyDomainName\MyUserName です。  
+-   **ModifiedBy**します。 この省略可能なプロパティには、エンドポイントを変更したユーザーのアカウント名が含まれています。たとえば、MyDomainName\MyUserName です。  
   
--   **UDDIContact**です。 このオプションのプロパティは、UDDI Business プロバイダーに対して定義されているユーザーの連絡先の名前です。  
+-   **UDDIContact**します。 この省略可能なプロパティは、UDDI ビジネス プロバイダーに対して定義されているユーザーの連絡先の名前です。  
   
--   **UDDIUserType**です。 このオプションのプロパティは、UDDI Business プロバイダーに対して定義されているユーザーのユーザーの種類です。  
+-   **UDDIUserType**します。 この省略可能なプロパティは、UDDI ビジネス プロバイダーに対して定義されているユーザーのユーザーの種類です。  
   
--   **UDDIEmail**です。 このオプションのプロパティは、UDDI Business プロバイダーに対して定義されているユーザーの電子メール アドレスです。  
+-   **UDDIEmail**します。 この省略可能なプロパティは、UDDI ビジネス プロバイダーに対して定義されているユーザーの電子メール アドレスです。  
   
--   **TransportType**です。 省略可能なこのプロパティは、エンドポイント アダプターの種類など**ファイル、MQS、Wcf-wshttp、SOAP、HTTP、** または**FTP**です。  
+-   **TransportType**します。 この省略可能なプロパティは、エンドポイントのアダプターの種類をなど、**ファイル、MQS、Wcf-wshttp、SOAP、HTTP、** または**FTP**します。  
   
--   **ステータス**です。 省略可能なこのプロパティは、エンドポイントの状態など**Published**または**保留**です。 UDDI 発行サービスでは、この属性を使用して、エンドポイントの状態を検出します。  
+-   **ステータス**します。 この省略可能なプロパティなど、エンドポイントの状態は、 **Published**または**保留**します。 UDDI 発行サービスでは、この属性を使用して、エンドポイントの状態を検出します。  
   
--   **BindingType**です。 この省略可能なプロパティは、UDDI バインディングをサポートするなど、特定のプロトコル (URL の種類) **mailto、http、https、ftp、fax、電話、** または**他の**します。 UDDI 発行サービスでは、この属性を使用して、エンドポイントのバインディングを作成します。
+-   **BindingType**します。 この省略可能なプロパティは、UDDI バインドをサポートするなど特定のプロトコル (URL の種類) **mailto、http、https、ftp、fax、電話番号、** または**他**します。 UDDI 発行サービスでは、この属性を使用して、エンドポイントのバインディングを作成します。

@@ -15,12 +15,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6de686d136d0158315dfd00eba9690b8ffcbdccc
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5b7a9c95318f3c95f65ef7b0fdfe616e71bfe3af
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36985651"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65255521"
 ---
 # <a name="delimiters-known-issues"></a>区切り記号の既知の問題
 このセクションには、区切り記号のエラーを回避するために役立つ有用な情報が含まれています。  

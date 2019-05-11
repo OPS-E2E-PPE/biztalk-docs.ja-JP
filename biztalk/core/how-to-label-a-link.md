@@ -1,5 +1,5 @@
 ---
-title: リンクのラベルを付ける方法 |Microsoft ドキュメント
+title: リンクのラベル付けする方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,36 +12,36 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c0e47a776fdbc8eccbc1037b3c73b069d810eee0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ba6bbe74c77cba09ba5098810d8782cde592e55f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22253794"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65336937"
 ---
 # <a name="how-to-label-a-link"></a>リンクにラベル付けする方法
-ラベルは、マップの Functoid またはリンクの目的を文書化するのに役立ちます。 使用することができます、**ラベル**プロパティをリンクの名前を付けます。 これは、マップに大きいスキーマ構造が含まれ、Functoid への入力リンクと出力リンクの識別が困難な場合に便利です。  
+ラベルは、functoid またはマップ内のリンクの目的を文書化すると便利です。 使用することができます、**ラベル**リンクに名前を付けるプロパティ。 これは、機能は、マップに大きいスキーマ構造が含まれていて、入力と出力へのリンク、functoid を識別するが難しくなるときに便利です。  
   
 > [!NOTE]
->  Functoid のラベルとコメントをする方法については、次を参照してください。[方法、Functoid ラベルとコメント](../core/how-to-label-and-comment-a-functoid.md)です。  
+>  Functoid のラベルとコメントする方法については、次を参照してください。[方法、Functoid ラベルとコメント](../core/how-to-label-and-comment-a-functoid.md)します。  
   
- 次の図ではリンク ラベルを示します。  
+ 次の図は、リンクのラベルを示します。  
   
  ![リンクのラベル付け](../core/media/new-labelling-link.gif "New_Labelling_link")  
   
 ## <a name="prerequisites"></a>前提条件  
  これらの手順では、BizTalk マッパーが実行されている必要があります。  
   
-### <a name="to-add-a-label-to-a-link"></a>ラベルをリンクに追加するには  
+### <a name="to-add-a-label-to-a-link"></a>リンクにラベルを追加するには  
   
-1.  ラベルを指定するリンクを選択します。  
+1.  ラベルを付けるリンクを選択します。  
   
-2.  **プロパティ** ウィンドウで新しい名前を指定、**ラベル**フィールドです。  
+2.  **プロパティ** ウィンドウで新しい名前を指定、**ラベル**フィールド。  
   
     > [!IMPORTANT]
-    >  使用できる文字の最大数は 256 です。 数は 256 文字の文字列が指定されている場合は、最初の 256 文字が受け入れられ、残りの部分は破棄されます。  
+    >  許可される文字の最大数には 256 です。 数は 256 文字の文字列が指定されている場合は、最初の 256 文字が受け入れられ、残りは破棄されます。  
   
      ![ラベルのプロパティをリンク](../core/media/new-to-label-link.gif "New_To_Label_Link")  
   
 ## <a name="see-also"></a>参照  
- [リンクを使用してレコードを指定してフィールドのマッピング](../core/using-links-to-specify-record-and-field-mappings.md)
+ [リンクを使用してレコードとフィールド マッピングを指定する](../core/using-links-to-specify-record-and-field-mappings.md)

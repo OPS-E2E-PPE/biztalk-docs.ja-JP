@@ -12,14 +12,14 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: feb6a4cc1e5272a4a2c6760ca4585dd0dc10c031
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f452ff362a11a824f749fc1a9c87b0905340c467
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37001363"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65348963"
 ---
-# <a name="the-certificate-used-for-signing-a-message-cannot-be-located-in-the-local-certificate-store"></a>メッセージの署名に使用される証明書を、ローカルの証明書ストアに配置できません
+# <a name="the-certificate-used-for-signing-a-message-cannot-be-located-in-the-local-certificate-store"></a>メッセージの署名に使用する証明書は、ローカル証明書ストアにあることはできません。
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                                                          |

@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4eaa3d227a2f02990befeafbd9ead5313fed3c7f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 372c3b7e7ce839729af416385b1404c09a7ca5dd
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37009835"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65322362"
 ---
 # <a name="orchestrationbinding-biztalk-server-sample"></a>OrchestrationBinding (BizTalk Server サンプル)
 オーケストレーションのバインドのサンプルでは、 [Microsoft.BizTalk.ExplorerOM](http://msdn.microsoft.com/library/microsoft.biztalk.explorerom.aspx) 管理オブジェクトを使用してオーケストレーションを構成および管理します。  
@@ -44,7 +44,7 @@ ms.locfileid: "37009835"
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
  このサンプルは、SDK がある次の場所にあります。  
 
- \<*パスのサンプル*\>\Admin\ExplorerOM\OrchestrationBinding  
+ \<*Samples Path*\>\Admin\ExplorerOM\OrchestrationBinding  
 
  次の表は、このサンプルのファイルとその目的を示しています。  
 
@@ -60,7 +60,7 @@ ms.locfileid: "37009835"
 
 1. HelloWorld サンプルのビルドおよび初期化の手順が完了していることを確認します。 これらの手順が記載[HelloWorld (BizTalk Server サンプル)](../core/helloworld-biztalk-server-sample.md)します。  
 
-2. [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] で、ソリューション ファイル OrchestrationBinding.sln を開きます。  
+2. [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]で、ソリューション ファイル OrchestrationBinding.sln を開きます。  
 
 3. **[ビルド]** メニューの **[ソリューションのビルド]** をクリックします。  
 
@@ -68,7 +68,7 @@ ms.locfileid: "37009835"
 
 1.  コマンド ウィンドウを開き、次のフォルダーに移動します。  
 
-     \<*パスのサンプル*\>\Admin\ExplorerOM\OrchestrationBinding\bin\Debug  
+     \<*Samples Path*\>\Admin\ExplorerOM\OrchestrationBinding\bin\Debug  
 
 2.  OrchestrationBinding.exe を実行して、サンプルの指示に従います。  
 

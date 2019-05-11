@@ -16,12 +16,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7e7665a5101f5b49abd9ba087bd07cf799384c2a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d2122e1f3f4e6f583c3ce796695d87d1b0c46170
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36993291"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65268969"
 ---
 # <a name="hl7-24-xml-folders-and-events"></a>HL7 2.4 XML のフォルダーとイベント
 次の表は、XML エンコード メッセージの HL7 バージョン 2.4 のフォルダー内のセットアップ ウィザードによって作成されるサブフォルダーを一覧表示します。 これらのサブフォルダーは、Microsoft BizTalk Accelerator for HL7 のために使用するスキーマを含めることが ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) を検証する、解析し、このテーブルの [イベント] 列に表示されるイベントをシリアル化します。 サブフォルダー名には、これらのスキーマをサポートするイベントの種類について説明します。  
@@ -39,7 +39,7 @@ ms.locfileid: "36993291"
 |患者の紹介|I01 I15|  
 |患者のケア|PC1 PCH PCJ、問題、PCL|  
 |臨床試験の自動化|U01 U13|  
-|アプリケーション管理|N01、N02|  
+|アプリケーションの管理|N01,N02|  
 |人事管理|B01 B06 K25、Q25|  
   
 ## <a name="see-also"></a>参照  

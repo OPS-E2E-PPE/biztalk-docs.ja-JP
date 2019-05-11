@@ -1,5 +1,5 @@
 ---
-title: 追跡メッセージおよびインスタンス データの表示 |Microsoft ドキュメント
+title: 追跡メッセージおよびインスタンス データの表示 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,37 +15,37 @@ caps.latest.revision: 27
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 592fa5c85913a69f4536055cdd790d638b15bc32
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 18e08e4f7aa98941dcd859557661d2e5883c76ad
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22288218"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65253586"
 ---
-# <a name="viewing-tracked-message-and-instance-data"></a>追跡メッセージおよびインスタンス データの表示
-履歴データおよび追跡データは、BizTalk Server アプリケーションのトラブルシューティングに役立ちます。 たとえば、システム管理者は履歴データおよび追跡データを次の目的で使用できます。  
+# <a name="viewing-tracked-message-and-instance-data"></a>追跡メッセージを表示し、インスタンス データ
+履歴および追跡データを使用して、BizTalk Server アプリケーションのトラブルシューティングに役立つことができます。 たとえば、システム管理者は、履歴および追跡データを使用できます。  
   
--   メッセージ フローのさまざまなステージで、追跡したメッセージ イベント、メッセージ プロパティ、およびメッセージ本文を参照する。 このデータは、トラブルシューティングまたは監査のために使用できます。  
+-   メッセージのフローのさまざまな段階では、追跡メッセージ イベント、メッセージ プロパティ、およびメッセージ本文を表示します。 このデータは、トラブルシューティングまたは監査のために使用できます。  
   
--   特定のオーケストレーション インスタンスの実行を再生する。  
+-   特定のオーケストレーション インスタンスの実行を再生します。  
   
--   イベントを発生させたルールを追跡して、後でイベントのシーケンスを再構築する。  
+-   時間で、後でイベントのシーケンスを再構築にイベントを発生させたルールを追跡します。  
   
--   メッセージ スキーマやメッセージ プロパティと値の組み合わせなどの条件を指定してメッセージのクエリを実行する。 このようにメッセージを特定することで、ユーザーは、メッセージがメッセージ フローのどの時点まで処理されたのかを判断できます。 また、詳しい知識のあるユーザーは、メッセージに対して独自の SQL Server クエリを作成することもできます。  
+-   メッセージ スキーマやメッセージ プロパティと値のペアなどの条件を指定してメッセージを照会します。 メッセージ置いているため、ユーザーは、メッセージが進んだ先のメッセージ フロー内の位置を判断できます。 高度なユーザーには、メッセージのカスタムの SQL Server クエリも作成できます。  
   
--   アーカイブ済みデータベースに格納されているアーカイブ済みデータを検索する。  
+-   アーカイブ済みのデータベースにアーカイブされたデータを検索します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [チェックリスト: メッセージとインスタンス データの追跡](../core/checklist-message-and-instance-data-tracking.md)  
+-   [チェックリスト:メッセージとインスタンス データ追跡](../core/checklist-message-and-instance-data-tracking.md)  
   
--   [メッセージとインスタンス データの追跡のベスト プラクティス](../core/best-practices-for-message-and-instance-data-tracking.md)  
+-   [メッセージとインスタンス データ追跡のベスト プラクティス](../core/best-practices-for-message-and-instance-data-tracking.md)  
   
--   [メッセージとインスタンス データ追跡のセキュリティに関する考慮事項](../core/security-considerations-for-message-and-instance-data-tracking.md)  
+-   [メッセージとインスタンス データの追跡のセキュリティに関する考慮事項](../core/security-considerations-for-message-and-instance-data-tracking.md)  
   
 -   [追跡データについて](../core/understanding-tracked-data.md)  
   
--   [履歴および追跡データを表示します。](../core/viewing-historical-and-tracked-data.md)  
+-   [履歴および追跡データの表示](../core/viewing-historical-and-tracked-data.md)  
   
 -   [ライブまたはアーカイブ済みのデータ ソースを選択する方法](../core/how-to-select-a-live-or-archived-data-source.md)  
   
@@ -59,4 +59,4 @@ ms.locfileid: "22288218"
   
 -   [オーケストレーションのデバッグ](../core/debugging-an-orchestration.md)  
   
--   [結果リストの使用](../core/working-with-the-results-list.md)
+-   [結果一覧を使用した作業](../core/working-with-the-results-list.md)

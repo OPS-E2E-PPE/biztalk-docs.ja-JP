@@ -1,5 +1,5 @@
 ---
-title: アプリケーションの展開時の成果物の処理 |Microsoft ドキュメント
+title: アプリケーション展開中にアイテムの処理 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,12 +15,12 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a5b16266d90c0119a6dd5217319a697efbc365c9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: aa1bf277a482e6504af6d791c87b76d9bc878653
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22288490"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65302313"
 ---
 # <a name="what-happens-to-artifacts-during-application-deployment"></a>アプリケーション展開時のアイテムの処理
 このセクションのトピックでは、アイテムの追加と削除、アプリケーションやアイテムのエクスポートとインポート、およびアプリケーションのインストールとアンインストールを行う場合に、アプリケーションに関連付けられたアイテムに対して行われる処理について説明します。 説明の内容として、次の項目が含まれています。  
@@ -37,10 +37,10 @@ ms.locfileid: "22288490"
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [成果物の追加または削除されるときの動作します。](../core/what-happens-when-artifacts-are-added-and-removed.md)  
+-   [アイテムを追加または削除した場合の動作](../core/what-happens-when-artifacts-are-added-and-removed.md)  
   
--   [アイテムのエクスポート時の動作します。](../core/what-happens-when-artifacts-are-exported.md)  
+-   [アイテムのエクスポート時の動作](../core/what-happens-when-artifacts-are-exported.md)  
   
--   [アイテムのインポート時の動作します。](../core/what-happens-when-artifacts-are-imported.md)  
+-   [アイテムのインポート時の動作](../core/what-happens-when-artifacts-are-imported.md)  
   
--   [インストールおよびアンインストール中にアイテムを処理します。](../core/what-happens-to-artifacts-during-installation-and-uninstallation.md)
+-   [インストールおよびアンインストール時のアイテムの処理](../core/what-happens-to-artifacts-during-installation-and-uninstallation.md)

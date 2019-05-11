@@ -16,18 +16,18 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5620bc481f5350e752b71a1706e187016ed25977
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 0937e286e0416fbc4d56d155428872144034febc
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36992443"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65342454"
 ---
 # <a name="how-to-change-the-name-of-an-application"></a>アプリケーションの名前を変更する方法
-このトピックでは、BizTalk Server 管理コンソールを使用して、アプリケーションの名前を変更する方法について説明します。 アプリケーションには、グループ内に既に存在するアプリケーション名を付けることはできません。  
+このトピックでは、BizTalk Server 管理コンソールを使用して、アプリケーションの名前を変更する方法を説明します。 使用するアプリケーション名は、グループに既に存在できません。  
   
 > [!NOTE]
->  名前を変更したアプリケーションへの参照を持つアプリケーションの .msi ファイルをエクスポートした場合、その参照はその .msi ファイルをインポートしたときには機能しなくなります。 新しいアプリケーション名を使用して参照を更新する必要があります。  
+>  名前が変更されたアプリケーションへの参照を含むアプリケーションの .msi ファイルをエクスポートした場合、.msi ファイルをインポートするときに、参照が機能しなくなります。 新しいアプリケーション名で参照を更新する必要があります。  
   
 ## <a name="prerequisites"></a>前提条件  
  このトピックの手順を実行するには、BizTalk Server 管理者グループのメンバーであるアカウントでログオンする必要があります。 詳細なアクセス許可についてを参照してください。[を展開すると、BizTalk アプリケーションの管理に必要なアクセス許可](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)します。  

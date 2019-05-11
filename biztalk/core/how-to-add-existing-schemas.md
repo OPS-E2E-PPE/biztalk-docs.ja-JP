@@ -1,5 +1,5 @@
 ---
-title: 既存のスキーマを追加する方法 |Microsoft ドキュメント
+title: 既存のスキーマを追加する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b6ba8f76bd0f306c23ce270217ac3b2aca8b9ccc
-ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
+ms.openlocfilehash: 16b17949a2babe220db53ed091ffaa7d103c7622
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2018
-ms.locfileid: "25968776"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65343293"
 ---
 # <a name="how-to-add-existing-schemas"></a>既存のスキーマを追加する方法
-既存のスキーマを既存の BizTalk プロジェクトに追加したい場合があります。 このトピックでは、必要な手順について説明します。  
+既存の BizTalk プロジェクトに既存のスキーマを追加することがあります。 このトピックでは、必要な手順について説明します。  
   
 ### <a name="to-add-an-existing-schema"></a>既存のスキーマを追加するには  
   
-1.  **ソリューション エクスプ ローラー**, 、既存のスキーマを追加する BizTalk プロジェクトを選択します。  
+1.  **ソリューション エクスプ ローラー**、既存のスキーマを追加する BizTalk プロジェクトを選択します。  
   
 2.  **[プロジェクト]** メニューの **[既存項目の追加]** をクリックします。  
   
-3.  **既存項目の追加 - \< *BizTalk ProjectName* \>** ダイアログ ボックスで、スキーマの場所を参照、スキーマを選択してをクリックして**を開く**.  
+3.  **既存項目の追加 - \< *BizTalk ProjectName* \>** ダイアログ ボックスで、スキーマの場所を参照、スキーマを選択およびクリックして**を開く**.  
   
-     既存のスキーマが BizTalk プロジェクトに追加されます。BizTalk エディターで表示するには、手動で開く必要があります。  
+     既存のスキーマは、BizTalk プロジェクトに追加されますが、BizTalk エディターが自動的に開いていません。  
   
 ## <a name="see-also"></a>参照  
  [プロジェクト内のスキーマの管理](../core/managing-schemas-within-projects.md)

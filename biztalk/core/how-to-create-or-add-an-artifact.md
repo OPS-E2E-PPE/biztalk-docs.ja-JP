@@ -1,5 +1,5 @@
 ---
-title: 成果物を追加または作成する方法 |Microsoft ドキュメント
+title: 成果物を追加または作成する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,20 +16,20 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b231cdf6a25c4ca316c9620ee789e6e3a715fd6c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b0d206566cf47363ab52b540a55a5a3bc0d5014c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22249490"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65339091"
 ---
-# <a name="how-to-create-or-add-an-artifact"></a>アイテムを作成または追加する方法
-BizTalk アプリケーションを作成した後は、ファイル システムからファイル ベースのアイテム (BizTalk アセンブリ、.NET アセンブリ、スクリプト、証明書など) を追加したり、ルール エンジン データベースからポリシーを追加したりできます。 また、送信ポート、送信ポート グループ、受信場所、および受信ポートをアプリケーション内に作成することもできます。 アイテムを作成または追加すると、そのアイテムは BizTalk 管理データベースに追加されます。 できますし、展開するアプリケーションとそのアイテム 1 つのエンティティとして」の説明に従って[BizTalk アプリケーションの配置](../core/deploying-biztalk-applications.md)です。  
+# <a name="how-to-create-or-add-an-artifact"></a>成果物を追加または作成する方法
+BizTalk アプリケーションを作成した後は、ファイル システムからファイル ベースのアイテム (たとえば BizTalk アセンブリ、.NET アセンブリ、スクリプト、および証明書) を追加またはルール エンジン データベースからポリシーを追加できます。 作成することも送信ポート、送信ポート グループ、受信場所、およびアプリケーション内のポートを受信します。 作成または成果物の追加は、BizTalk 管理データベースに追加します。 できますし、展開するアプリケーションとそのアイテム 1 つのエンティティとして」の説明に従って[BizTalk アプリケーションの配置](../core/deploying-biztalk-applications.md)します。  
   
 > [!NOTE]
->  特定の種類のアイテムは、BizTalk アプリケーションまたはグループ内で一意であることが必要です。 詳細については、次を参照してください。[成果物をする必要がありますする内で一意のアプリケーションまたはグループ](../core/artifacts-that-must-be-unique-in-an-application-or-group.md)です。  
+>  特定の種類のアイテムは、BizTalk アプリケーションまたはグループ内で一意である必要があります。 詳細については、次を参照してください。[成果物をする必要がありますする内で一意で、アプリケーションまたはグループ](../core/artifacts-that-must-be-unique-in-an-application-or-group.md)します。  
   
- 各アイテムの種類を追加または作成する手順については、以下のトピックを参照してください。  
+ 手順の追加や各成果物の種類の作成については、次のトピックを参照してください。  
   
 -   [送信ポートを作成する方法](../core/how-to-create-a-send-port2.md)  
   
@@ -43,7 +43,7 @@ BizTalk アプリケーションを作成した後は、ファイル システ�
   
 -   [BizTalk アセンブリをアプリケーションに追加する方法](../core/how-to-add-a-biztalk-assembly-to-an-application.md)  
   
--   [前または処理後のスクリプトをアプリケーションに追加する方法](../core/how-to-add-a-pre-or-post-processing-script-to-an-application.md)  
+-   [処理前または処理後のスクリプトをアプリケーションに追加する方法](../core/how-to-add-a-pre-or-post-processing-script-to-an-application.md)  
   
 -   [アプリケーションにファイルを追加する方法](../core/how-to-add-a-file-to-an-application.md)  
   
@@ -55,10 +55,10 @@ BizTalk アプリケーションを作成した後は、ファイル システ�
   
 -   [アプリケーションに BAM アイテムを追加する方法](../core/how-to-add-a-bam-artifact-to-an-application.md)  
   
--   [バインド ファイルをアプリケーションに追加する方法](../core/how-to-add-a-binding-file-to-an-application2.md)  
+-   [アプリケーションにバインド ファイルを追加する方法](../core/how-to-add-a-binding-file-to-an-application2.md)  
   
 > [!NOTE]
->  追加するアイテムのパス (パスとファイル名など) が極端に長いと、アイテムをアプリケーションに追加するときにエラーが発生する場合があります。 パスに使用できるのは 260 文字までです。  
+>  追加するアイテムに非常に長いパス (たとえば、パスとファイル名) がある場合は、アプリケーションにアイテムを追加する操作が失敗します。 パスは 260 文字を超えることはできません。  
   
 ## <a name="see-also"></a>参照  
  [作成して、BizTalk アプリケーションの変更](../core/creating-and-modifying-biztalk-applications.md)   

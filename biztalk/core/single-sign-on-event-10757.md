@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10757 |Microsoft Docs'
+title: シングル サインオン:イベント 10757 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 08a75a95a3804ee429baaf24c6b89bbb68a0ce6a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8f62cdb2cbf0e5c3ba3477fdfc79376d1c22d3d2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37008147"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65307711"
 ---
-# <a name="single-sign-on-event-10757"></a>シングル サインオン: イベント 10757
+# <a name="single-sign-on-event-10757"></a>シングル サインオン:イベント 10757
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                              |
@@ -38,4 +38,4 @@ ms.locfileid: "37008147"
  これが構成ストア アプリケーションである場合は、構成データが設定されていません。 このような状況は、SSO データベースが再初期化されているが、BizTalk 管理データベースは再初期化されていない場合、またはその逆の場合に発生します。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- これが単独アプリケーションまたはグループ アプリケーションである場合は、目的のマッピングを作成します。 詳細については、[ユーザー マッピングを作成する方法](../core/how-to-create-user-mappings.md)を参照してください。
+ これが単独アプリケーションまたはグループ アプリケーションである場合は、目的のマッピングを作成します。 詳細については、次を参照してください。[ユーザー マッピングを作成する方法](../core/how-to-create-user-mappings.md)します。

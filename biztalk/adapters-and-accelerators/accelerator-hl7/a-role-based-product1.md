@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 93f11765394c6e7750d6d810f1f3a3a0220b23fb
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9d159dddb69413864dbca25ec2a8bf6548a3545b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36974211"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65244480"
 ---
 # <a name="a-role-based-product"></a>ロール ベースの製品
 Microsoft BizTalk Server と Microsoft BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) で、次の説明に従って、ユーザーのロールの適切な環境の機能とツールを提供します。  
@@ -28,7 +28,7 @@ Microsoft BizTalk Server と Microsoft BizTalk Accelerator 用 HL7 ([!INCLUDE[bt
   
 - Microsoft 管理コンソール (MMC) では、IT プロフェッショナル向けのツールをホストします。 インターフェイス アナリスト、IT インプリメンタ、および IT オペレーターは、管理、 [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] MMC ベースの BizTalk 管理コンソール、BizTalk エクスプ ローラーを使用して、システム[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]構成エクスプ ローラー、およびその他の実行時のツール。  
   
-- ビジネス アナリストや他のインフォメーション ワーカーは独自の [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] ツールのセットを使用して、ビジネスの状態を分析し、ビジネス データにアクセスすることができます。  
+- ビジネス アナリストおよびその他のインフォメーション ワーカーがビジネスの状態を分析し、独自の一連のビジネス データにアクセスできる[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]ツール。  
   
 ## <a name="see-also"></a>参照  
  [デザイン時ツール](../../adapters-and-accelerators/accelerator-hl7/design-time-tools.md)   

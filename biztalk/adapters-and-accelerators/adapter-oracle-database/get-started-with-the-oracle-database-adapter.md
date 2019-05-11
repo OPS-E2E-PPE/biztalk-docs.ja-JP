@@ -16,12 +16,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: daead7b52c17fe5a045d6681a7aa957aaa23133c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 54d80b4e0f345a81d2b34215dec27085bad665dc
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36966859"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65376533"
 ---
 # <a name="get-started-with-the-oracle-database-adapter"></a>Oracle データベース アダプターを概要します。
 このセクションでは、ユーザーが Microsoft に新しいアダプター、前提条件、およびトピックの概要を示します[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]します。 機能について説明します[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]とアダプターを使用して Oracle データベースで実行できるさまざまな操作です。  

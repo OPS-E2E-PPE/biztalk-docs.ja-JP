@@ -13,12 +13,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9ca65c71e14d488b264d861616fe170220ac249b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b84730a5f88b36897114fb068b0d2ebbabf3f717
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36999219"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65352132"
 ---
 # <a name="import-the-jd-edwards-enterpriseone-application"></a>JD Edwards EnterpriseOne アプリケーションをインポートします。
   
@@ -97,5 +97,5 @@ cscript RemoveSendPort.vbs \<Send port name\>
   
 2.  論理システムと送信および受信サービスを確認します。  
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 [BizTalk Server 例外処理を使用して、オーケストレーションで](../core/using-biztalk-server-exception-handling1.md)

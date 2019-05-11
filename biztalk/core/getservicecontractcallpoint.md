@@ -1,5 +1,5 @@
 ---
-title: GetServiceContractCallPoint |Microsoft ドキュメント
+title: GetServiceContractCallPoint |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2e291bcf733129991f6d3b5000ca8e9bc1353057
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 53ebac10c1d690f47ab79c12affa3505b22f2e49
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22246410"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65345191"
 ---
 # <a name="getservicecontractcallpoint"></a>GetServiceContractCallPoint
 現在のサービス コントラクト呼び出しポイントの名前をスタックにプッシュします。  
@@ -35,10 +35,10 @@ ms.locfileid: "22246410"
 ## <a name="pushed-value"></a>プッシュされた値  
  現在のコントラクト呼び出しポイントを表す文字列です。  
   
-## <a name="remarks"></a>解説  
+## <a name="remarks"></a>コメント  
  Windows Communication Framework のサービスは、サービス コントラクトの有効期間中のさまざまなポイントで傍受できます。 これらのポイントは、`System.BizTalk.Bam.Interceptors.Wcf.ContractCallPoint` 列挙体によって定義されます。  
   
-|コントラクト呼び出しポイント|Description|  
+|コントラクト呼び出しポイント|説明|  
 |-------------------------|-----------------|  
 |ClientReply|クライアント応答呼び出しポイントです。|  
 |ClientRequest|クライアント要求呼び出しポイントです。|  

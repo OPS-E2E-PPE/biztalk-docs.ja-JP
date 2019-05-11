@@ -1,5 +1,5 @@
 ---
-title: エラー - テーブル抽出 Functoid が有効でないへの最初の入力 |Microsoft ドキュメント
+title: エラー - テーブル抽出 Functoid の無効への最初の入力 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,22 +14,22 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 86d501c18bf104a0f538ef90d10510e7d9ec0f02
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 9b96e673f33bfa7478b633c8254a62d81335cd61
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25969016"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65348318"
 ---
-# <a name="error---first-input-to-table-extractor-functoid-not-valid"></a>エラー - テーブル抽出 Functoid が有効でないへの最初の入力
+# <a name="error---first-input-to-table-extractor-functoid-not-valid"></a>エラー - テーブル抽出 Functoid の無効への最初の入力
 **エラー コード**  
   
  btm1019  
   
  **説明**  
   
- 最初の入力パラメーター**テーブル抽出**functoid がリンクからではなく、**テーブル ループ**functoid は、必要に応じて。  
+ 最初の入力パラメーターを指定された**テーブル抽出**functoid がリンクからではなく、**テーブル ループ**functoid は、必要に応じて。  
   
  **ユーザーの操作**  
   
- 指定された間のリンクを作成する**テーブル抽出**functoid と適切な**テーブル ループ**もう一方のうちの 1 つをドラッグして functoid です。 マップ グリッド ページでは、テーブル抽出 Functoid が、テーブル ループ Functoid の右側に配置されている必要があります。 またを使用して、**構成\<Functoid\> Functoid**  ダイアログ ボックスで、新しく作成したリンクがへの最初の入力パラメーターであることを確認**テーブル抽出**functoid です。
+ 指定された間リンクを作成**テーブル抽出**functoid、適切な**テーブル ループ**他のうち 1 つをドラッグして functoid。 元の functoid は、マップ グリッド ページで functoid の右側にあるである必要があります。 またを使用して、**構成\<Functoid\> Functoid**  ダイアログ ボックスで、新しく作成したリンクがへの最初の入力パラメーターであることを確認**テーブル抽出**functoid。

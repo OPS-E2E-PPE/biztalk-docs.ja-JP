@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10841 |Microsoft Docs'
+title: シングル サインオン:イベント 10841 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1919b2c164263883ba71560b16440fc8652a6d78
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c7b48523a725b059e73048fe726ecacd7cd7b783
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37007483"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65307374"
 ---
-# <a name="single-sign-on-event-10841"></a>シングル サインオン: イベント 10841
+# <a name="single-sign-on-event-10841"></a>シングル サインオン:イベント 10841
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                |
@@ -36,4 +36,4 @@ ms.locfileid: "37007483"
  マッピングはローカル アカウントに対してではなく、Windows ドメイン アカウントに対してのみ作成できます。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- 詳細については、[SSO マッピング](../core/sso-mappings.md)を参照してください。
+ 詳細については、次を参照してください。 [SSO マッピング](../core/sso-mappings.md)します。

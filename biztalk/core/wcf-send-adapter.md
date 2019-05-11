@@ -22,48 +22,48 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b7f36bca73ebd178d8d4052bfbcfa837c0d548ab
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: cc48f4da993c4e19c0053342c56b00deff16ead1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37020678"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65266250"
 ---
 # <a name="wcf-send-adapter"></a>WCF 送信アダプタ
-WCF 送信アダプタでは、型宣言が不要なコントラクトを使用して WCF サービスを呼び出すことができます。  
+WCF 送信アダプタでは、型宣言不要なコントラクトを介して WCF サービスの呼び出しを行うことができます。  
   
 ## <a name="specifying-the-wcf-message-body"></a>WCF メッセージ本文の指定  
- BizTalk Server から送信する必要があるメッセージ本文は、次のオプションのいずれかを使用して、SOAP メッセージに挿入することができます。  
+ BizTalk Server から送信する必要があるメッセージの本文は、次のオプションのいずれかを使用して、SOAP メッセージに挿入できます。  
   
-- Extract the content of the BizTalk message body (BizTalk メッセージ本文の内容を抽出)  
+- BizTalk メッセージ本文のコンテンツを抽出します。  
   
-- Specify the content by using the template (テンプレートを使用して内容を指定)  
+- テンプレートを使用してコンテンツを指定します。  
   
-  送信ポートのトランスポート プロパティ ダイアログ ボックスで、これらのオプションを構成できます。  
+  送信ポート トランスポートのプロパティ ダイアログ ボックスで、これらのオプションを構成できます。  
   
-#### <a name="extract-the-content-of-the-biztalk-message-body"></a>Extract the Content of the BizTalk Message Body (BizTalk メッセージ本文の内容を抽出)  
- このオプションを選択すると、BizTalk メッセージ本文の内容が、送信 WCF メッセージ本文の SOAP Body 要素に挿入されます。  
+#### <a name="extract-the-content-of-the-biztalk-message-body"></a>BizTalk メッセージ本文のコンテンツを抽出します。  
+ このオプションを選択すると、BizTalk メッセージ本文の内容は、送信 WCF メッセージ本文の SOAP Body 要素に挿入されます。  
   
-#### <a name="specify-the-content-by-using-the-template"></a>Specify the Content by Using the Template (テンプレートを使用して内容を指定)  
- このオプションを選択すると、BizTalk メッセージ本文が、送信 WCF メッセージ本文の指定された XML テンプレートの下にある SOAP Body 要素に配置されます。  
+#### <a name="specify-the-content-by-using-the-template"></a>テンプレートを使用してコンテンツを指定します。  
+ このオプションを選択すると、BizTalk メッセージ本文は、送信 WCF メッセージ本文の指定された XML テンプレートでの SOAP body 要素に配置されます。  
   
-## <a name="serializing-the-biztalk-message-into-a-soap-message"></a>BizTalk メッセージの SOAP メッセージへのシリアル化  
- 送信アダプタは、BizTalk メッセージを送信する前に SOAP メッセージにシリアル化します。メッセージのシリアル化中に、次の規則が適用されます。  
+## <a name="serializing-the-biztalk-message-into-a-soap-message"></a>BizTalk メッセージの SOAP メッセージにシリアル化  
+ 送信アダプターは、SOAP メッセージに BizTalk メッセージ送信する前にシリアル化します。メッセージのシリアル化中に、次の規則が適用されます。  
   
--   BizTalk メッセージがマルチパート メッセージの場合、ボディ部のみが使用されます。  
+-   BizTalk メッセージがマルチパート メッセージの場合は、ボディ部のみが使用されます。  
   
--   BizTalk メッセージに SOAP エンベロープ全体が含まれる場合は、別の SOAP エンベロープにラップされます。  
+-   BizTalk メッセージに SOAP エンベロープ全体が含まれている場合は、別の SOAP エンベロープにラップされます。  
   
 -   BizTalk メッセージに任意の XML データが含まれている場合、BizTalk メッセージは SOAP 本文要素に配置されます。  
   
-## <a name="handling-web-services-headers"></a>Web サービス ヘッダーの処理  
- 送信操作中、BizTalk Server は Web サービスの標準ヘッダーを制御できません。 これらのヘッダーは、WCF によって設定され、処理されます。 BizTalk Server アプリケーションによって変更可能な唯一の標準ヘッダーは、**を: アクション**ヘッダー。 場合、コンテキスト プロパティ**アクション**、WCF 送信アダプタは、プロパティの値を使用して設定するのには、アダプタの名前空間で指定されて、**アクション**SOAP メッセージにします。  
+## <a name="handling-web-services-headers"></a>処理の Web サービス ヘッダー  
+ BizTalk Server が送信操作中にコントロールを Web 経由でサービスの標準ヘッダー。 これらのヘッダーが設定され、WCF によって処理されます。 BizTalk Server アプリケーションによって変更可能な唯一の標準ヘッダーは、**を: アクション**ヘッダー。 場合、コンテキスト プロパティ**アクション**、WCF 送信アダプタは、プロパティの値を使用して設定するのには、アダプタの名前空間で指定されて、**アクション**SOAP メッセージにします。  
   
 > [!NOTE]
 >  動的送信ポート場合、**アクション**で指定された、 **OutboundHeaders**、コンテキスト プロパティを設定する、 **WCF です。アクション**は無視されます。  
   
-## <a name="specifying-the-btsisdynamicsend-context-property"></a>BTS.IsDynamicSend コンテキスト プロパティの指定  
- WCF 送信アダプタは、送信ポートの構成をキャッシュします。 場合、 **BTS します。IsDynamicSend**プロパティが true に、WCF 送信アダプターはキャッシュされた構成を使用しませんが、代わりにすべての構成情報メッセージから読み取り、送信メッセージのコンテキスト プロパティ。 静的送信ポートでは、WCF 送信アダプタが使用**BTS します。SPLastUpdatedTime**、これは、静的送信ポートの設定に最後に変更された、任意の構成があるかどうかを検出するために、静的に変更の送信ポート。 この方法では、WCF 送信アダプタは、すべてのメッセージ コンテキストからのすべての設定を読み取る必要はありません。  
+## <a name="specifying-the-btsisdynamicsend-context-property"></a>BTS を指定します。IsDynamicSend コンテキスト プロパティ  
+ WCF 送信アダプタでは、送信ポートの構成をキャッシュします。 場合、 **BTS します。IsDynamicSend**プロパティが true に、WCF 送信アダプターはキャッシュされた構成を使用しませんが、代わりにすべての構成情報メッセージから読み取り、送信メッセージのコンテキスト プロパティ。 静的送信ポートでは、WCF 送信アダプタが使用**BTS します。SPLastUpdatedTime**、これは、静的送信ポートの設定に最後に変更された、任意の構成があるかどうかを検出するために、静的に変更の送信ポート。 すべてのメッセージ コンテキストからすべての設定を読み取るには、このように、WCF 送信アダプターは必要はありません。  
   
  他にも、静的送信ポートのプロパティをオーバーライドするかどうか、 **WCF です。アクション**送信パイプラインのプロパティを設定する必要があります、 **BTS します。IsDynamicSend** true の場合でも、最終更新タイムスタンプは、WCF 送信アダプターにキャッシュされた構成は使用しないようにするプロパティが変更されていません。  
   

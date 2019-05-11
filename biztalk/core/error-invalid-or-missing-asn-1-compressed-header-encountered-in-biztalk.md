@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 682b30bdb513aa9318dbc56cd592aa0009d56e39
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5f1329fd8afd46ad48d014a173dd1680d12462e2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37011963"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65348011"
 ---
 # <a name="invalid-or-missing-asn1-compressed-header-encountered-during-decompression-processing"></a>圧縮解除処理中に無効な ASN.1 圧縮ヘッダーが検出されたか、ASN.1 圧縮ヘッダーが見つかりませんでした
 ## <a name="details"></a>詳細  

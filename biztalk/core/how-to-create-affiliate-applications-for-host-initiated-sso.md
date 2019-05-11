@@ -1,5 +1,5 @@
 ---
-title: 側開始 SSO 関連アプリケーション ホストを作成する方法 |Microsoft ドキュメント
+title: 側開始 SSO 関連アプリケーション ホストを作成する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,44 +16,44 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ce8a5cf43cd1d6e455492a74985edb91f2cb0a94
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: d207766ce830da973a4767213810f07432c743fc
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25971288"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65339832"
 ---
 # <a name="how-to-create-affiliate-applications-for-host-initiated-sso"></a>ホスト側開始 SSO 関連アプリケーションを作成する方法
-定義できるアプリケーションには、次の 2 種類があります。  
+2 種類のアプリケーションを定義できます。  
   
--   **各**Windows および Windows 以外のユーザー間で 1 対 1 リレーションシップが存在します。  
+-   **個別**は Windows および Windows 以外のユーザーに一対一のリレーションシップがあります。  
   
--   **ホスト グループ**複数の Windows ではないユーザーは、同じ Windows アカウントにマップすることができます。  
+-   **ホスト グループ**同じ Windows アカウントに複数の Windows 以外のユーザーをマップすることができます。  
   
 ### <a name="to-create-an-affiliate-application-using-the-mmc-snap-in"></a>MMC スナップインを使用して関連アプリケーションを作成するには  
   
-1.  **開始** メニューのをクリックして**すべてのプログラム**、 をクリックして**Microsoft エンタープライズ シングル サインオン**、クリックして**SSO 管理**です。  
+1.  **開始** メニューのをクリックして**すべてのプログラム**、 をクリックして**Microsoft エンタープライズ シングル サインオン**、 をクリックし、 **SSO 管理**。  
   
-2.  ENTSSO MMC スナップインの [スコープ] ウィンドウで、展開、**エンタープライズ シングル サインオン**ノード。  
+2.  ENTSSO MMC スナップインの [スコープ] ウィンドウで、**エンタープライズ シングル サインオン**ノード。  
   
-3.  右クリック**関連アプリケーション**、クリックして**アプリケーションの作成**を開くには、**エンタープライズ シングル サインオン アプリケーション ウィザード**です。  
+3.  右クリック**関連アプリケーション**、 をクリックし、**アプリケーションの作成**を開く、**エンタープライズ シングル サインオン アプリケーション ウィザード**します。  
   
-4.  このウィザードを使用して、関連アプリケーションのプロパティを選択します。  
+4.  ウィザードを使用して、関連アプリケーションのプロパティ を選択します。  
   
-### <a name="to-create-an-individual-type-affiliate-application-using-the-command-line"></a>コマンド ラインを使用して単独タイプの関連アプリケーションを作成するには  
+### <a name="to-create-an-individual-type-affiliate-application-using-the-command-line"></a>コマンドラインを使用してアプリケーションを関連する個々 の型を作成するには  
   
 1.  **[スタート]** メニューの **[ファイル名を指定して実行]** をクリックします。  
   
-2.  **実行** ダイアログ ボックスで、「 **cmd**、順にクリック**OK**です。  
+2.  **実行**ダイアログ ボックスに「 **cmd**、順にクリックします**OK**します。  
   
-3.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定値は\<ドライブ\>: \program files \common files \enterprise シングル サインオンします。  
+3.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定値は\<ドライブ\>: \Program Files\Common \enterprise シングル サインオンします。  
   
-4.  型**ssomanage – createapps」と入力\<AffApp.xml\>** AffApp.xml は xml ファイルの名前を指定します。  
+4.  型**ssomanage – createapps \<AffApp.xml\>** AffApp.xml は xml ファイルの名前です。  
   
     > [!NOTE]
     >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  
   
-     サンプル ファイルを次に示します。  
+     サンプル ファイルは、以下に示します。  
   
     ```  
     <?xml version="1.0"?>  
@@ -71,20 +71,20 @@ ms.locfileid: "25971288"
   
     ```  
   
-### <a name="to-create-a-host-group-type-affiliate-application-using-the-command-line"></a>コマンド ラインを使用してホスト グループ タイプの関連アプリケーションを作成するには  
+### <a name="to-create-a-host-group-type-affiliate-application-using-the-command-line"></a>グループ タイプの関連アプリケーションのコマンドラインを使用してホストを作成するには  
   
 1.  **[スタート]** メニューの **[ファイル名を指定して実行]** をクリックします。  
   
-2.  **実行** ダイアログ ボックスで、「 **cmd**、順にクリック**OK**です。  
+2.  **実行**ダイアログ ボックスに「 **cmd**、順にクリックします**OK**します。  
   
-3.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定値は\<ドライブ\>: \program files \common files \enterprise シングル サインオンします。  
+3.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定値は\<ドライブ\>: \Program Files\Common \enterprise シングル サインオンします。  
   
-4.  型**ssomanage – createapps」と入力\<AffApp.xml\>** AffApp.xml は xml ファイルの名前を指定します。  
+4.  型**ssomanage – createapps \<AffApp.xml\>** AffApp.xml は xml ファイルの名前です。  
   
     > [!NOTE]
     >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  
   
-     サンプル ファイルを次に示します。  
+     サンプル ファイルは、以下に示します。  
   
     ```  
     <?xml version="1.0"?>  
@@ -102,20 +102,20 @@ ms.locfileid: "25971288"
   
     ```  
   
-### <a name="to-create-an-affiliate-application-supporting-both-windows-initiated-sso-and-host-initiated-sso-using-the-command-line"></a>コマンド ラインを使用して Windows 側開始 SSO とホスト側開始 SSO の両方をサポートする関連アプリケーションを作成するには  
+### <a name="to-create-an-affiliate-application-supporting-both-windows-initiated-sso-and-host-initiated-sso-using-the-command-line"></a>両方の Windows をサポートしているアプリケーションが SSO を開始する、関連を作成して、ホスト側開始 SSO のコマンドラインを使用  
   
 1.  **[スタート]** メニューの **[ファイル名を指定して実行]** をクリックします。  
   
-2.  **実行** ダイアログ ボックスで、「 **cmd**、順にクリック**OK**です。  
+2.  **実行**ダイアログ ボックスに「 **cmd**、順にクリックします**OK**します。  
   
-3.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定値は\<ドライブ\>: \program files \common files \enterprise シングル サインオンします。  
+3.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定値は\<ドライブ\>: \Program Files\Common \enterprise シングル サインオンします。  
   
-4.  型**ssomanage – createapps」と入力\<AffApp.xml\>** AffApp.xml は xml ファイルの名前を指定します。  
+4.  型**ssomanage – createapps \<AffApp.xml\>** AffApp.xml は xml ファイルの名前です。  
   
     > [!NOTE]
     >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  
   
-     サンプル ファイルを次に示します。  
+     サンプル ファイルは、以下に示します。  
   
     ```  
     <?xml version="1.0" ?>   

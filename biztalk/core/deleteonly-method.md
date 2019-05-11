@@ -14,15 +14,15 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 42366a273fd65348daa9364a39c57c3fec3dff90
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: bf006e4ba2db1378a207c4e20136310b6977c928
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36983451"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65352274"
 ---
 # <a name="deleteonly-method"></a>DeleteOnly メソッド
-コレクション内のアイテムを削除できます。  
+コレクション内の項目を削除することができます。  
   
 ## <a name="syntax"></a>構文  
   
@@ -35,15 +35,15 @@ DeleteOnly(key1, key2, ..., keyn, correctionMode, interactiveMode,
   
 |パラメーター|説明|  
 |---------------|-----------------|  
-|`key`|指定する必要があるパラメーター セットです。 このキー セットはサーバー データベースに存在する必要があります。存在しない場合、エラーが発生します。 これらのキーは、特定のコンポーネント インターフェイスに定義された一連の Get キーに対応します。|  
-|`correctionMode`|ブール型のフラグ。 true に設定すると、コレクションの有効日が過去になったアイテムを削除できます。 具体的には、EFFDT が現在の有効日より前になっているアイテムを削除できます。 このフラグを TRUE に設定しない場合、これらの項目への変更により、PeopleSoft サーバーからエラーが返されます。 **注:** 、`correctionMode`引数は、effective-dated 項目を含むコンポーネント インターフェイスに対してのみ公開されます。 それ以外の場合、引数の一部としては表示されません。|  
-|`interactiveMode`|エラー処理に使用されます。<br /><br /> コンポーネント インターフェイスでプロパティにアクセスする場合、BizTalk Adapter for PeopleSoft Enterprise では、PeopleSoft から提供されている API を使用してコンポーネント インターフェイス内の個々のフィールドを読み書きします。ただし、これらの変更は一度に 1 つずつ PeopleSoft サーバーに伝達されるわけではありません。 代わりに、psjoa.jar (BizTalk Adapter for PeopleSoft Enterprise と対話) が、すべての変更を 1 つのパッケージにしてサーバーに送信します。 個別の更新が失敗した場合、汎用エラーが返されます。このエラーは、実際のエラーを特定しません。 対話モードを TRUE に設定することで、すべてのフィールド更新がサーバーに個別に送信されます。 これによってパフォーマンスに大きな影響が及びますが、更新が失敗した場合 (たとえば、フィールドの設定に無効な値が使用された場合) には、具体的なエラー情報が提供されます。<br /><br /> `interactiveMode` パラメーターを使用すると、パフォーマンスを最大限に発揮し、フィールド更新レベルでエラーが報告されます。 この機能を適切に使用するには、`interactiveMode` を FALSE に設定して通常の呼び出しを行うことをお勧めします。 パフォーマンスへの影響はありません。 エラーが返された場合は、interactiveMode フラグを TRUE に設定して同じ呼び出しを再試行できます。 呼び出しが失敗した場合、サーバーはより正確なエラー メッセージを返します。|  
-|`properties`|サーバーに存在する構造のサブセットが入ります。 リーフであるアイテムはすべて削除されます。|  
+|`key`|一連のパラメーターを指定する必要があります。 この一連のキーは、サーバー データベースに存在する必要があります。 またはエラーが発生します。 これらのキーは、特定のコンポーネント インターフェイスに対して定義されている一連の Get キーに対応します。|  
+|`correctionMode`|ブール型のフラグ。 True の場合、コレクションの過去の発効アイテムの削除を可能に設定するとします。 具体的には、EFFDT が現在有効な日付より前にある項目の削除ができます。 なしこのフラグを TRUE に設定すると、これらの項目を変更しても結果 PeopleSoft サーバーから返されるエラー。 **注:**`correctionMode`引数は、effective-dated 項目を含むコンポーネント インターフェイスに対してのみ公開されます。 それ以外の場合、引数の一部としては表示されません。|  
+|`interactiveMode`|エラー処理に使用されます。<br /><br /> BizTalk Adapter for PeopleSoft Enterprise が PeopleSoft が提供する Api、;、コンポーネント インターフェイスで個々 のフィールドを読み書きするを使用してコンポーネント インターフェイスでプロパティにアクセスするときただし、これらの変更は、一度に 1 つずつ PeopleSoft サーバーに反映されませんが。 代わりに、psjoa.jar (BizTalk Adapter for PeopleSoft Enterprise と連携する) では、すべての変更をパッケージ化し、1 つのパッケージ内のサーバーに変更を送信します。 個々 の更新プログラムのいずれかが失敗した場合、汎用的なエラーが返されますが、実際のエラーを特定していません。 対話モードを TRUE に設定、すべてのフィールドの更新プログラムは、サーバーに個別に送信されます。 これは、パフォーマンスに大きな影響がありますが (たとえば、フィールドを設定するために無効な値が使用されます) 場合、更新が失敗した場合は、特定のエラー情報は提供します。<br /><br /> `interactiveMode`パラメーターは、最大のパフォーマンスを提供し、フィールド更新レベルでエラーを報告を提供します。 この機能を正しく使用するをお勧めして通常の呼び出しを行った`interactiveMode`を FALSE に設定します。 あるは影響はないパフォーマンスにします。 エラーが返された場合、interactiveMode フラグを TRUE に設定と同じ呼び出しを再試行できます。 呼び出しが失敗したときに、サーバーより正確なエラー メッセージを返します。|  
+|`properties`|サーバーに存在する構造のサブセットが含まれています。 リーフであるすべての項目が削除されます。|  
   
 ## <a name="remarks"></a>コメント  
- プロパティのデータ型はコンポーネント インターフェイスの `CreateEx` メソッドまたは `UpdateEx` メソッドと同じです。ただし、キー値のみが重要です。 キー以外の値は無視されます。 キー値はサーバーのキー値と一致する必要があります。一致しない場合、例外が発生します。  
+ プロパティは、同じデータとして型を持つ、`CreateEx`または`UpdateEx`はコンポーネント インターフェイスのメソッドただし、キー値のみが重要です。 キー以外の値は無視されます。 キーの値で、サーバー上のものと一致する必要があります、それ以外の場合、例外が発生します。  
   
- 次に、キー値の使用方法を示します。 コレクションに次のアイテムがあるとします。  
+ キーの値の使用を次に示します。 場合は、コレクションには、項目が含まれています。  
   
 - item0  
   
@@ -53,19 +53,19 @@ DeleteOnly(key1, key2, ..., keyn, correctionMode, interactiveMode,
   
 - item3  
   
-  プロパティの item1 と item3 のキーを指定すると、item1 と item3 を削除できます。  
+  Item1 と item3 を削除するには、プロパティの item1 と item3 のキーを指定します。  
   
 - item1  
   
 - item3  
   
-  呼び出し後、サーバーのコレクションには次のアイテムが残ります。  
+  呼び出しの後は、サーバーは、残りの項目をコレクション内に。  
   
 - item0  
   
 - item2  
   
-  2 番目の例では、他のコレクションが入ったアイテムを示します。  
+  2 番目の例では、他のコレクションを格納している項目を示します。  
   
 - item0  
   
@@ -85,7 +85,7 @@ DeleteOnly(key1, key2, ..., keyn, correctionMode, interactiveMode,
   
   -   item2b  
   
-  item1b と item2 へのキーを指定することで item1b とすべての item2 を削除できます。  
+  Item1b と item2 のすべてを削除するには、item1b と item2 へのキーを提供します。  
   
 - item1  
   
@@ -93,7 +93,7 @@ DeleteOnly(key1, key2, ..., keyn, correctionMode, interactiveMode,
   
 - item2  
   
-  item2 の空のサブコレクションを指定することで、item2 をリーフにし、そのサブブランチ全体が削除されます。 呼び出し後、サーバーには次のアイテムが残ります。  
+  Item2 の空のサブ コレクションを用意すると、リーフに有効にしてそのサブブランチ全体が削除されます。 呼び出しの後、サーバーは、残りの項目があります。  
   
 - item0  
   
@@ -106,4 +106,4 @@ DeleteOnly(key1, key2, ..., keyn, correctionMode, interactiveMode,
   -   item1c  
   
 ## <a name="see-also"></a>参照  
- [付録 A: コンポーネント インターフェイス メソッド](../core/appendix-a-component-interface-methods.md)
+ [付録 a:コンポーネント インターフェイス メソッド](../core/appendix-a-component-interface-methods.md)

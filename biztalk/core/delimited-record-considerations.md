@@ -1,5 +1,5 @@
 ---
-title: 区切られたレコードの考慮事項 |Microsoft ドキュメント
+title: 区切りのレコードの考慮事項 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,15 +12,15 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bc6cbd642717b485a1be5cefab07f6a8298d638a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 98c42d1307340dfad47933fbe1e9bfcc1c2256dd
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22238394"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65352186"
 ---
-# <a name="delimited-record-considerations"></a>区切り記号付きレコードに関する注意点
-おかなければならないことに注意を操作するときに区切り記号付きの考慮事項の数がある**レコード**スキーマ内のノードです。 注意事項には、区切り記号に関連した下位ノードの順序、フラット ファイル形式のメッセージをアセンブルするときに区切り記号を省略してよいかどうかの判断、区切り記号付きレコードと位置指定レコードを混在させる際の制約などがあります。 このセクションでは、これらの注意事項に関する情報について説明します。  
+# <a name="delimited-record-considerations"></a>区切り記号付きレコードに関する注意
+おく必要がありますに注意を使用する場合で区切られた考慮事項がいくつか**レコード**スキーマ内のノード。 これにより、その区切り記号の場合、メッセージのフラット ファイル表現をアセンブルするときに、区切り記号を省略することもでき、の混在に関する制限事項が区切られた関連した下位ノードの順序に関する考慮事項が含まれます。位置指定レコード。 このセクションでは、これらの考慮事項についての情報を提供します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

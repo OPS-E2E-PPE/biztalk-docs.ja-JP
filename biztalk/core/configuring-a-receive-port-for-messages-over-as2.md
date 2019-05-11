@@ -12,12 +12,12 @@ caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 85499228eb7bb9622f07be353d8bc0705d25adc8
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 23e4e0989c93bb107f0530c6719484ace4ca9dad
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36983947"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65356368"
 ---
 # <a name="configuring-a-receive-port-for-messages-over-as2"></a>AS2 経由でのメッセージの受信ポートの構成
 EDI または非 EDI ペイロードを持つ AS2 メッセージを受信するには、メッセージを受信してパーティに応答を返すための HTTP 受信ポートを作成します。  
@@ -34,11 +34,11 @@ EDI または非 EDI ペイロードを持つ AS2 メッセージを受信する
 
 |                 場所                 |                プロパティ                |                                                                                                                                                                                                                                                                                           設定                                                                                                                                                                                                                                                                                           |
 |------------------------------------------|----------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|   **受信ポートのプロパティ: 全般**   |               [ポートの種類]                |                                                                                                                                                                                                                                                                                      要求-応答                                                                                                                                                                                                                                                                                       |
-| **受信場所のプロパティ: 全般** |             トランスポートの種類             |                                                                                                                                                                                                          HTTP**注:** EDIINT/AS2 でエンコードされたメッセージを転送するため、HTTP アダプタのみを使用できます。 このトランスポートは、HTTP アダプタ以外のアダプタでは使用できません。                                                                                                                                                                                                          |
-| **受信場所のプロパティ: 全般** |            [受信ハンドラー]             |                                                                                                                                                                                                                                                                                  BizTalkServerIsolatedHost                                                                                                                                                                                                                                                                                  |
-| **受信場所のプロパティ: 全般** |            受信パイプライン。            | -AS2EdiReceive (ペイロードが場合 EDI でエンコードされた)<br />-AS2Receive (ペイロードが EDI でエンコードされた) 場合**注:** AS2EdiReceive パイプラインを使用する場合は、BizTalk 分離ホスト インスタンス プロセスは、BizTalk Application Users グループで実行されているユーザー アカウントを追加する必要があります。 AS2EdiReceive パイプラインは、BizTalk 分離ホスト インスタンス プロセスで実行されます。 AS2EdiReceive パイプラインは SSO ストアにアクセスします。この場合、ユーザーは [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Application Users グループに属している必要があります。 |
-| **受信場所のプロパティ: 全般** |             [送信パイプライン]              |                                                                                                                                                                                                                                                                                           AS2Send                                                                                                                                                                                                                                                                                           |
+|   **受信ポートのプロパティ。[全般]**   |               [ポートの種類]                |                                                                                                                                                                                                                                                                                      要求-応答                                                                                                                                                                                                                                                                                       |
+| **受信場所のプロパティ。[全般]** |             トランスポートの種類             |                                                                                                                                                                                                          HTTP**に注意してください。** EDIINT/AS2 でエンコードされたメッセージには、HTTP アダプタのみ使用できます。 このトランスポートは、HTTP アダプタ以外のアダプタでは使用できません。                                                                                                                                                                                                          |
+| **受信場所のプロパティ。[全般]** |            [受信ハンドラー]             |                                                                                                                                                                                                                                                                                  BizTalkServerIsolatedHost                                                                                                                                                                                                                                                                                  |
+| **受信場所のプロパティ。[全般]** |            受信パイプライン。            | -AS2EdiReceive (ペイロードが場合 EDI でエンコードされた)<br />-AS2Receive (ペイロードが EDI でエンコードされた) 場合**に注意してください。** AS2EdiReceive パイプラインを使用する場合、BizTalk Application Users グループに、BizTalk 分離ホスト インスタンス プロセスが実行されているユーザー アカウントを追加する必要があります。 AS2EdiReceive パイプラインは、BizTalk 分離ホスト インスタンス プロセスで実行されます。 AS2EdiReceive パイプラインは SSO ストアにアクセスします。この場合、ユーザーは [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Application Users グループに属している必要があります。 |
+| **受信場所のプロパティ。[全般]** |             [送信パイプライン]              |                                                                                                                                                                                                                                                                                           AS2Send                                                                                                                                                                                                                                                                                           |
 |      **HTTP トランスポートのプロパティ**       | 仮想ディレクトリと ISAPI 拡張 |                                                                                                                                                                                                                                                                      /\<仮想ディレクトリの名前\>>/btshttpreceive.dll                                                                                                                                                                                                                                                                      |
 |      **HTTP トランスポートのプロパティ**       |  要求 - 応答の返すコンテンツの種類  |                                                                                                                                                                                                                                                                                          text/xml                                                                                                                                                                                                                                                                                           |
 
@@ -47,7 +47,7 @@ EDI または非 EDI ペイロードを持つ AS2 メッセージを受信する
 
 -   HTTP 経由で AS2 メッセージを受信します。  
 
--   AS2EDIReceive 受信パイプライン (EDI エンコード メッセージの場合) または AS2Receive 受信パイプライン (EDI でエンコードされていないメッセージの場合) を使用して、AS2 メッセージを処理します。 このプロセスの詳細については、[受信 AS2 メッセージの処理](../core/processing-an-incoming-as2-message.md)を参照してください。  
+-   AS2EDIReceive 受信パイプライン (EDI エンコード メッセージの場合) または AS2Receive 受信パイプライン (EDI でエンコードされていないメッセージの場合) を使用して、AS2 メッセージを処理します。 このプロセスの詳細については、次を参照してください。[受信 AS2 メッセージの処理](../core/processing-an-incoming-as2-message.md)します。  
 
 -   受信メッセージの次のコンテキスト プロパティを設定します。  
 
@@ -59,13 +59,13 @@ EDI または非 EDI ペイロードを持つ AS2 メッセージを受信する
 
 -   メッセージが EDI エンコードではない場合は、ネイティブ形式のメッセージを MessageBox にドロップします。  
 
--   AS2EdiReceive 受信パイプラインを使用して MDN ファイルを生成します (有効になっている場合)。 このプロセスの詳細については、[送信 MDN の生成](../core/generating-an-outgoing-mdn.md)を参照してください。 メッセージの次のコンテキスト プロパティを設定します。  
+-   AS2EdiReceive 受信パイプラインを使用して MDN ファイルを生成します (有効になっている場合)。 このプロセスの詳細については、次を参照してください。[送信 MDN の生成](../core/generating-an-outgoing-mdn.md)します。 メッセージの次のコンテキスト プロパティを設定します。  
 
     -   `EdiIntAS.IsAS2AsynchronousMdn == False` (同期モードの場合)  
 
     -   `EdiIntAS.IsAS2AsynchronousMdn== True` (非同期モードの場合)  
 
--   同期モードの場合、AS2Send 送信パイプラインを使用して MDN ファイルを送信します (有効になっている場合)。 このプロセスの詳細については、[送信 MDN の送信](../core/sending-an-outgoing-mdn.md)を参照してください。  
+-   同期モードの場合、AS2Send 送信パイプラインを使用して MDN ファイルを送信します (有効になっている場合)。 このプロセスの詳細については、次を参照してください。[送信 MDN の送信](../core/sending-an-outgoing-mdn.md)します。  
 
 -   非同期モードの場合、MDN ファイルが有効な場合は、そのファイルを MessageBox にルーティングします (MDN ファイルの取得および送信に使用される個別の動的送信ポート)。  
 

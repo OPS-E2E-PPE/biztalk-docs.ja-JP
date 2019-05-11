@@ -1,5 +1,5 @@
 ---
-title: ファクトの選択 |Microsoft ドキュメント
+title: ファクトの選択 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,12 +15,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cd7548f6fa74b0457cc54a122eedf9912382470c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 26a7504df14f843beceebb2dcb5b00fbb683ea68
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22269170"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65250848"
 ---
 # <a name="selecting-facts"></a>ファクトの選択
 データ ソース参照を指定できます。この参照はルール ストアに保存され、ルールやボキャブラリのファクトとして後で使用できます。 XSD スキーマおよびその XML ドキュメントの要素と属性、.NET アセンブリおよびそのクラスとクラス メンバー、または、データベースおよびそのテーブルとテーブル列を指定できます。  
@@ -31,4 +31,4 @@ ms.locfileid: "22269170"
   
 -   [データ ソースとしてデータベースを使用する方法](../core/how-to-use-a-database-as-a-data-source.md)  
   
--   [データ ソースとして、.NET アセンブリを使用する方法](../core/how-to-use-a-net-assembly-as-a-data-source.md)
+-   [.NET アセンブリをデータ ソースとして使用する方法](../core/how-to-use-a-net-assembly-as-a-data-source.md)

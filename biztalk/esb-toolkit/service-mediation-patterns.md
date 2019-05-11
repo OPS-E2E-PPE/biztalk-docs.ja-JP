@@ -1,5 +1,5 @@
 ---
-title: 仲介のパターンをサービス |Microsoft ドキュメント
+title: サービス仲介パターン |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,22 +12,22 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: af76e6c123a3a273bc2e100b1008f40523762695
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8b11d58393ea90f840a1193106c4c01376a5c1a0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22294634"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65268943"
 ---
-# <a name="service-mediation-patterns"></a>仲介のパターンでサービス
+# <a name="service-mediation-patterns"></a>サービス仲介パターン
 ## <a name="vetovetro"></a>拒否/VETRO  
- VETRO パターンを受信すると、メッセージで実行される複数の操作を結合する一般的な複合パターンです。 用語 VETRO は、検証、強化、変換、ルート操作を表す頭字語です。 [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]、受信場所に関連付けられているパイプライン内の個々 の段階としてこれらのアクションを処理することができます。 これらの各段階を実装する方法の詳細については、主要なシナリオと開発タスクを参照してください。  
+ VETRO パターンは、受信したときに、メッセージで行われた複数の操作を結合する一般的な複合パターンです。 用語 VETRO は、検証、強化、変換、ルート操作を表す頭字語です。 [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]、受信場所に関連付けられたパイプライン内の個々 の段階としてこれらのアクションを処理することができます。 これらの各段階を実装する方法の詳細については、主要なシナリオおよび開発タスクを参照してください。  
   
 ## <a name="request-response"></a>要求-応答  
- 要求-応答パターンでは、要求をサービスまたはパーティの送信がメッセージし、転送先サービスから応答メッセージを戻り値が必要ですが、ソリューションを定義します。 このパターンの詳細については、次を参照してください。[要求/応答](http://go.microsoft.com/fwlink/?LinkId=186849)([http://go.microsoft.com/fwlink/?LinkId=186849](http://go.microsoft.com/fwlink/?LinkId=186849)) エンタープライズ統合パターン サイトです。  
+ 要求-応答パターンでは、要求をサービス、またはパーティに送信しますがメッセージし、応答メッセージを転送先サービスからの戻り値が必要ですが、ソリューションを定義します。 このパターンの詳細については、次を参照してください。[要求/応答](http://go.microsoft.com/fwlink/?LinkId=186849)([http://go.microsoft.com/fwlink/?LinkId=186849](http://go.microsoft.com/fwlink/?LinkId=186849))、エンタープライズ統合パターン サイト。  
   
  このパターンを実装する方法の詳細については、次のリソースを参照してください。  
   
--   [方法: メッセージを変換して、要求-応答メッセージ交換パターンを使用してサービス エンドポイントへのルート](../esb-toolkit/transform-message-and-route-to-service-endpoint-using-request-response-message.md)  
+-   [方法: メッセージと要求-応答のメッセージ交換パターンを使用してサービス エンドポイントへのルートを変換します。](../esb-toolkit/transform-message-and-route-to-service-endpoint-using-request-response-message.md)  
   
--   [インストールして、Itinerary ランプでサンプルを実行します。](../esb-toolkit/installing-and-running-the-itinerary-on-ramp-sample.md)
+-   [スケジュール オンランプ サンプルをインストールし、実行する](../esb-toolkit/installing-and-running-the-itinerary-on-ramp-sample.md)

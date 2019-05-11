@@ -1,5 +1,5 @@
 ---
-title: MQSeries アダプタ用コマンドライン構成ウィザード |Microsoft ドキュメント
+title: MQSeries アダプター用コマンドライン構成ウィザード |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -18,33 +18,33 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ee73b890fca43a3651f22092486e5898862b0b72
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 174e40f413be4ae3fab89965b842dee8fb8ba513
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22232058"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65357714"
 ---
-# <a name="command-line-configuration-wizard-for-the-mqseries-adapter"></a>MQSeries アダプタ用コマンドライン構成ウィザード
-このウィザードには、インストール、アンインストール、アクションのログ記録に関する 4 つのオプションがあります。  
+# <a name="command-line-configuration-wizard-for-the-mqseries-adapter"></a>MQSeries アダプター用コマンドライン構成ウィザード
+ウィザードでは、インストール、アンインストール、およびアクションのログ記録の 4 つのオプションがあります。  
   
 ## <a name="syntax"></a>構文  
  **mqsconfigwiz [/u] [/i config.xml] [/l logfile] [/?]**  
   
-|オプション|Description|  
+|オプション|説明|  
 |------------|-----------------|  
 |**/u**|MQSAgent をアンインストールします。|  
-|**/i** *config.xml*|ファイルの情報を使用して、MQSAgent がインストール*config.xml*です。|  
-|**/l** *ログ ファイル*|ファイルに操作を記録*logfile*です。|  
-|**/?**|コマンド ライン オプションを説明するダイアログ ボックスを表示します。|  
+|**/i** *config.xml*|ファイルの情報を使用して、MQSAgent がインストール*config.xml*します。|  
+|**/l** *logfile*|操作がファイルにログ記録*logfile*します。|  
+|**/?**|コマンド ライン オプションを説明するダイアログ ボックスが表示されます。|  
   
- 構成情報が含まれている XML ファイルの内容は、使用している Windows のバージョンによって異なる場合があります。 構成ファイルの形式の詳細については、次を参照してください。 [、MQSeries アダプターの構成ファイルを XML](../core/xml-configuration-file-for-the-mqseries-adapter.md)です。  
+ 構成情報を含む XML ファイルの内容は、使用している Windows のバージョンによって異なる場合があります。 構成ファイルの形式の詳細については、次を参照してください。 [MQSeries アダプターの構成ファイルを XML](../core/xml-configuration-file-for-the-mqseries-adapter.md)します。  
   
 > [!IMPORTANT]
->  アダプタは構成ウィザードの実行中は動作しません。  
+>  アダプターでは、構成ウィザードの実行中には機能しません。  
   
 > [!NOTE]
->  コマンド ライン構成ウィザードを使用して MQSAgent を再構成することはできません。 まず、エージェントをアンインストール ウィザードを実行する必要があります (**/u**)、構成を実行し (**/i**)。  
+>  コマンドライン構成ウィザードを使用して、MQSAgent を再構成することはできません。 エージェントをアンインストール ウィザードを初めて実行する必要があります (**/u**)、し構成する際に実行 (**/i**)。  
   
 ## <a name="see-also"></a>参照  
- [MQSeries アダプタのサイレント構成](../core/silent-configuration-of-the-mqseries-adapter.md)
+ [MQSeries アダプターのサイレント構成](../core/silent-configuration-of-the-mqseries-adapter.md)

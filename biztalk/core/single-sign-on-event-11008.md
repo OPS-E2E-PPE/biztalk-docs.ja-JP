@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 11008 |Microsoft Docs'
+title: シングル サインオン:イベント 11008 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7f3a77dcfb89a3040cf6c1acb71a053d57393591
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 367bb91906d659f0848e1745796c639d5e08f0b3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36983731"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65306654"
 ---
-# <a name="single-sign-on-event-11008"></a>シングル サインオン: イベント 11008
+# <a name="single-sign-on-event-11008"></a>シングル サインオン:イベント 11008
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                                                                                           |
@@ -30,10 +30,10 @@ ms.locfileid: "36983731"
 |  イベント ソース   |                                                                          ENTSSO                                                                           |
 |    コンポーネント    |                                                                            なし                                                                            |
 |  シンボル名  |                                                                   SSO_WARN_CHECK_GROUP                                                                    |
-|  メッセージ テキスト   | グループ メンバーシップの確認が失敗しました。%r<br /><br /> グループ名: %1 %r<br /><br /> アカウント名: % 2 %r<br /><br /> 追加データ: % 3 %r<br /><br /> エラー コード: %4 |
+|  メッセージ テキスト   | グループ メンバーシップ failed.%r を確認してください。<br /><br /> グループ名: %1 %r<br /><br /> アカウント名: % 2 %r<br /><br /> 追加データ: % 3 %r<br /><br /> エラー コード: %4 |
   
 ## <a name="explanation"></a>説明  
- 最も可能性が高い原因は、ネットワークの問題、クロスドメインの使用、またはドメイン コントローラーのレベルの混在 (たとえば、システムが [!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] と [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] の両方のドメイン コントローラーを使用している場合) です。  
+ 最も可能性の高い原因は、ネットワークの問題、クロス ドメインの使用、またはドメイン コント ローラーのレベルが混在 (システムは、両方のドメイン コント ローラーを使用している場合など、[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]と[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)])。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- ネットワーク管理者と協力して、ネットワークに問題があるかどうか、またはシステムにクロスドメインの使用またはドメイン コントローラーのレベルの混在があるかどうかを確認します。
+ ネットワークの問題がある場合、または任意のクロス ドメインの使用またはレベルのドメイン コント ローラーの混在がある場合、ネットワーク管理者に確認してください。

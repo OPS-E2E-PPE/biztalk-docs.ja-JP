@@ -1,5 +1,5 @@
 ---
-title: スコープ Shape5 を追加する方法 |Microsoft ドキュメント
+title: スコープ Shape5 を追加する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,33 +15,33 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c7bbe3f5fbb267fee618ac7f0b91c35ad33e1758
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 35301e9e3cd66ab26d06208501c535b73305f5a6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22246738"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65343396"
 ---
 # <a name="how-to-add-a-scope-shape"></a>スコープ図形を追加する方法
-次の手順を追加するに従って、**スコープ**図形です。  
+追加する次の手順に従って、**スコープ**図形。  
   
 ### <a name="to-add-a-scope-shape"></a>スコープ図形を追加するには  
   
-1.  下の矢印を右クリックし、 **ReceiveFromIn**ポートでは、順にポイント**図形の挿入**、クリックして**スコープ**です。  
+1.  下の矢印を右クリックし、 **ReceiveFromIn**ポートをポイントして、**図形の挿入**、 をクリックし、**スコープ**。  
   
      **スコープ**図形、エラーが発生する操作を設定します。  
   
-     たとえば、SQLExecute オーケストレーションで、送信、受信および送信ポートを追加します。 この例では、SERVER にメッセージを送信します。 SERVER は応答して、 オーケストレーションの残りの部分を実行し、OutFile ポートに情報を返します。  
+     たとえば、SQLExecute オーケストレーション、送信、受信および送信ポートを追加します。 この例では、サーバーにメッセージを送信します。 サーバーは応答して、 これにより、オーケストレーションの残りの部分を実行し、OutFile ポートに情報を返します。  
   
-2.  **スコープ**図形は、設定、**トランザクション タイプ**に**なし**です。  
+2.  **スコープ**図形は、設定、**トランザクションの種類**に**None**します。  
   
-3.  内部を右クリックし、**スコープ**の整形し、選択**新しい例外ハンドラー**です。  
+3.  内側を右クリックし、**スコープ**図形し、選択**新しい例外ハンドラー**します。  
   
-     これを作成、`Catch Exception`ブロックします。 内でキャッチこれは、例外がバックエンドから発生する場合、`Catch Exception`ブロックします。  
+     これを作成、`Catch Exception`ブロックします。 バック エンドから例外が発生した、内でキャッチされます、`Catch Exception`ブロックします。  
   
-4.  `Catch Exception` ブロックには、ロジックを追加する必要があります。  
+4.  `Catch Exception`ブロックのロジックを追加する必要があります。  
   
-     この場合、設定する必要がある最も重要なロジックは、受信するエラー メッセージの種類についてです。  
+     設定する必要がある最も重要なロジックは、受信するエラー メッセージの種類です。  
   
 ## <a name="see-also"></a>参照  
  [BizTalk Server 例外処理の使用](../core/using-biztalk-server-exception-handling5.md)

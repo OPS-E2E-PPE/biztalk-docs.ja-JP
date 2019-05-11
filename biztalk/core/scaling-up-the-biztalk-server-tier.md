@@ -1,5 +1,5 @@
 ---
-title: BizTalk Server 層のスケール アップ |Microsoft ドキュメント
+title: BizTalk Server 層のスケール アップ |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,51 +16,51 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d55176072cd33e20dd1024bf2d9d1c39bca4567a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6debecada3269374e2fd6f91a06d9e120c2538e6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22270138"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65308808"
 ---
 # <a name="scaling-up-the-biztalk-server-tier"></a>BizTalk Server 層のスケール アップ
-BizTalk 層をスケール アップするには、CPU、メモリ、I/O、およびその他のリソースをアップグレードします。 次の図は、BizTalk 層を 2 台のプロセッサを搭載したコンピューターから 4 台のプロセッサを搭載したコンピューターにスケール アップする方法の例を示しています。  
+BizTalk 層を拡大するには、CPU、メモリ、IO、およびその他のリソースをアップグレードします。 次の図は、次の 4 つのプロセッサのコンピューターに 2 つのプロセッサのコンピューターから、BizTalk 層をスケールとする方法の例を示します。  
   
- ![スケール &#45; 最大 BTS](../core/media/scaleupbts.gif "ScaleUpBTS")  
+ ![スケール&#45;を BTS](../core/media/scaleupbts.gif "ScaleUpBTS")  
   
- BizTalk 層のスケール アップのシナリオは、スケール アウトを選択したときのシナリオに似ています。  
+ BizTalk 層のスケール アップのシナリオでは、スケール アウトを選択したときに似ています。  
   
--   BizTalk Server がボトルネックになります。 ボトルネックは、次のいずれかの問題によって引き起こされる可能性があります。  
+-   BizTalk Server では、ボトルネックになります。 次の問題のいずれかでは、ボトルネックが考えられます。  
   
--   CPU: CPU を集中的に使用するパイプライン、マップ、またはオーケストレーションをシナリオで使用する場合に、BizTalk Server に余分な CPU ヘッドルームがない。  
+-   CPU:シナリオでは、CPU 負荷のかかるパイプライン、マップ、またはオーケストレーションを使用する場合、BizTalk server には余分な CPU ヘッドルームはありません。  
   
--   メモリおよび I/O: 既存のコンピューターでメモリおよび I/O の最大値に達した場合は、コンピューターをアップグレードする必要があります。  
+-   メモリと I/O:既存のコンピューター メモリ、IO、およびコンピューターの最大値に達した場合は、アップグレードする必要があります。  
   
--   スケール アウトは、非常にコストがかかります。  
+-   スケール アウトは、コストが高すぎます。  
   
--   スケールアウトしてもボトルネックが改善されない場合があります。 たとえば、次のボトルネックはスケール アウトでは改善されません。  
+-   スケール アウトの場合は、ボトルネックを解消していません。 たとえば、スケール アウト扱いません次のボトルネック。  
   
-    -   サイズの大きいメッセージを変換する。  
+    -   サイズの大きいメッセージの変換  
   
-    -   1 回のインターチェンジに多数のメッセージを処理する。  
+    -   インターチェンジごとのメッセージの数が多い  
   
-    -   パイプラインやアダプターなど、一部の BTS コンポーネントで多くのメモリを使用する。  
+    -   一部のパイプラインやアダプターなどの BTS コンポーネントで高いメモリ使用率  
   
     -   EDI などのトランスポート。  
   
-## <a name="when-you-cant-scale-up-the-biztalk-tier"></a>BizTalk 層をスケール アップできないケース  
+## <a name="when-you-cant-scale-up-the-biztalk-tier"></a>ときに、BizTalk 層をスケールすることはできません。  
   
--   メッセージ ボックス データベースがボトルネックの場合。  
+-   メッセージ ボックス データベースでは、ボトルネックです。  
   
--   アダプターがボトルネックになる場合。 たとえば、BizTalk の受信者数を増やした後、アダプターを使用している、ロックの競合が、BizTalk アダプターがデータを抽出するバックエンド アプリケーションで高まる可能性があります。 このため、アダプターのスケール アップが制限されます。  
+-   アダプターがボトルネックになります。 たとえば、BizTalk の受信者数を増やした後、アダプターを使用する場合ロックの競合を BizTalk アダプターがデータを抽出するバックエンド アプリケーションで増やす可能性があります。 これは、アダプターのスケール アップする能力を制限します。  
   
 ## <a name="see-also"></a>参照  
  [BizTalk Server 層のスケール アウト](../core/scaling-out-the-biztalk-server-tier.md)   
  [SQL Server 層のスケール アップ](../core/scaling-up-the-sql-server-tier.md)   
  [SQL Server 層のスケール アウト](../core/scaling-out-the-sql-server-tier.md)   
- [スケール アウト受信ホスト](../core/scaled-out-receiving-hosts.md)   
+ [受信ホスト スケール アウト](../core/scaled-out-receiving-hosts.md)   
  [スケール アウトされた処理ホスト](../core/scaled-out-processing-hosts.md)   
  [スケール アウトされた送信ホスト](../core/scaled-out-sending-hosts.md)   
  [Windows Server クラスターを使用して BizTalk Server Hosts2 の高可用性を実現するには](../core/use-windows-cluster-to-provide-high-availability-for-biztalk-hosts.md)   
  [スケール アウト データベース](../core/scaled-out-databases.md)   
- [BizTalk Server データベースをクラスタ リング](../core/clustering-the-biztalk-server-databases1.md)
+ [BizTalk Server データベースのクラスタリング](../core/clustering-the-biztalk-server-databases1.md)

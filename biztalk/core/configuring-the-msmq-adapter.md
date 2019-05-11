@@ -1,5 +1,5 @@
 ---
-title: MSMQ アダプターの構成 |Microsoft ドキュメント
+title: MSMQ アダプターの構成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,18 +15,18 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 74e2cac70171a22dad391addc81daa696e204fd6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5615178f5eb5248f74b0991075e159df70c89a09
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22232954"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65355172"
 ---
 # <a name="configuring-the-msmq-adapter"></a>MSMQ アダプターの構成
-このセクションでは、MSMQ アダプタの構成情報について説明します。 MSMQ アダプタは、受信場所と送信ポートの両方に構成できます。  
+このセクションには、MSMQ アダプターの構成に関する情報が含まれます。 受信場所と送信ポートの両方については、MSMQ アダプターを構成できます。  
   
 > [!NOTE]
->  などのプロパティ シートで、特定のフィールドをクリアする**ユーザー名**と**パスワード**(値) ではなくプロパティ名を右クリックし、クリックして**無効化**です。  
+>  などのプロパティ シートで、特定のフィールドをクリアする**ユーザー名**と**パスワード**(値ではなく)、プロパティ名を右クリックし、クリックして**無効化**します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
@@ -40,10 +40,10 @@ ms.locfileid: "22232954"
   
 -   [MSMQ 送信ポートを構成する方法](../core/how-to-configure-an-msmq-send-port.md)  
   
--   [複数の受信、MSMQ アダプタを使用して場所を管理する方法](../core/how-to-manage-multiple-receive-locations-using-the-msmq-adapter.md)  
+-   [複数の MSMQ アダプターを使用して場所の受信を管理する方法](../core/how-to-manage-multiple-receive-locations-using-the-msmq-adapter.md)  
   
 -   [メッセージ キューのキュー](../core/message-queuing-queues.md)  
   
--   [MSMQ アダプターのパフォーマンスを最適化します。](../core/optimizing-performance-of-the-msmq-adapter.md)  
+-   [MSMQ アダプターのパフォーマンスの最適化](../core/optimizing-performance-of-the-msmq-adapter.md)  
   
--   [MSMQ アダプターを使用してサイズの大きいメッセージを送受信します。](../core/sending-and-receiving-large-messages-using-the-msmq-adapter.md)
+-   [MSMQ アダプターを使用したサイズの大きいメッセージの送受信](../core/sending-and-receiving-large-messages-using-the-msmq-adapter.md)

@@ -17,12 +17,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f749a06c694007008f3d8138b2b087b77b2c4f03
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 84bc0cde2b41d5518c7bd15bdc35b148c658a63e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36996115"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65376946"
 ---
 # <a name="swift-schemas"></a>SWIFT スキーマ
 [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] 送信し、SWIFT ネットワーク経由で個々 のフラット ファイルとして SWIFT の財務 (FIN) メッセージを受け取ります。 各メッセージは、一連のヘッダーのブロックの定義済みの一連のラベル付きのフィールドと位置指定または順序付きのサブフィールドとトレーラーのブロック内でトレーラーのセットから成るテキスト ブロックで構成されます。 テキスト ブロックの内容は、メッセージの種類によって異なります。  

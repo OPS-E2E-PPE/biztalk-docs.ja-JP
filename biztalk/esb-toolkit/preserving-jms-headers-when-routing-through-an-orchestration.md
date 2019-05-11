@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 142bd0d2e5ff86362fe3c3ffa7ef8ec256202708
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 51bb6af0647c2fde7409cb2414b8707d41b0e353
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36979715"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65301842"
 ---
 # <a name="preserving-jms-headers-when-routing-through-an-orchestration"></a>オーケストレーション経由でルーティングするときに、JMS ヘッダーを保持
 このユース ケースでは、コンポーネントがで提供される[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]受信メッセージから Java Message Service (JMS) ヘッダーを抽出し、送信メッセージの再構築します。 JMS メッセージのヘッダー情報保持図 1 に示すようには、オーケストレーション内からヘッダーのコンテキストへのアクセスを示します。  
@@ -36,4 +36,4 @@ ms.locfileid: "36979715"
   
 - 第 3 部は、一括読み込みのキューでメッセージを示し、アプリケーションがメッセージの内容の一部として指定された送信先キューにメッセージをルーティングする方法を示しています。  
   
-  詳細については、[インストールして、JMS MQRFH2 コンポーネント サンプルを実行する](../esb-toolkit/installing-and-running-the-jms-mqrfh2-component-sample.md)を参照してください。
+  詳細については、次を参照してください。[インストールして、JMS MQRFH2 コンポーネント サンプルを実行する](../esb-toolkit/installing-and-running-the-jms-mqrfh2-component-sample.md)します。

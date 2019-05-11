@@ -14,11 +14,11 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 6a267b9deac31d729d580cde79c62be96a612b4c
-ms.sourcegitcommit: be6273d612669adfbb9dc9208aaae0a8437d4017
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "24014353"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65353551"
 ---
 # <a name="create-tibco-rendezvous-send-handlers"></a>TIBCO Rendezvous 送信ハンドラーを作成します。
 このセクションでは、スキーマを作成して BizTalk Server のオーケストレーションで TIBCO Rendezvous を使用する方法について説明します。  
@@ -114,7 +114,7 @@ TIBCO Rendezvous トランスポートのプロパティは、実行時に使用
          エンタープライズ シングル サインオン ツールで作成された関連アプリケーションは TIBCO Rendezvous などのアプリケーションを表します。 Microsoft BizTalk Adapter for TIBCO Rendezvous では、アプリケーション ユーザーの資格情報が使用されます。 これらの資格情報は、指定された関連アプリケーションのサーバー システムの SSO データベースから取得されます。  
   
         > [!NOTE]
-        >  関連アプリケーションを作成する方法については、[関連アプリケーションを作成する](../core/creating-affiliate-applications1.md)を参照してください。  
+        >  関連アプリケーションを作成する方法については、次を参照してください。[関連アプリケーションを作成する](../core/creating-affiliate-applications1.md)します。  
   
 6.  クリックして**適用**、順にクリックします**OK**接続情報を受け入れるように必要なすべての情報を入力したら。  
   

@@ -12,28 +12,28 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0d5fda3565d2b7c3302b5ae3cb596bfed6781609
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5f2c63d0278d4962141791a7c7a98d689e84c268
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36980331"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65343203"
 ---
 # <a name="how-to-add-record-count-functoids-to-a-map"></a>マップにレコード カウント Functoid を追加する方法
 **レコード カウント**functoid では、インスタンス メッセージ内のレコードの出現回数の合計数を生成することができます。  
   
  概念情報については、**レコード カウント**functoid を参照してください[レコード カウント Functoid](../core/record-count-functoid.md)します。  
   
-### <a name="to-add-the-record-count-functoid-to-a-map-and-configure-it"></a>マップにレコード カウント Functoid を追加して構成するには  
+### <a name="to-add-the-record-count-functoid-to-a-map-and-configure-it"></a>マップにレコード カウント functoid を追加し、構成するには  
   
 1. [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]ツールボックス active をクリックして、**高度な Functoid** functoid のカテゴリを選択するタブ。  
   
-    選択したカテゴリに含まれる高度な Functoid の一覧が表示されます。  
+    選択したカテゴリでの高度な functoid の一覧が表示されます。  
   
 2. ドラッグ、**レコード カウント**functoid (![](../core/media/bts-tls-recordcount.gif "bts_tls_recordcount")) ツールボックスからグリッド ページの適切な場所にします。  
   
    > [!NOTE]
-   >  Functoid は表示されているグリッド ページに配置されます。 別のグリッド ページに Functoid を配置する場合は、先にそのグリッド ページを表示する必要があります。  
+   >  Functoid は表示されているグリッド ページに配置されます。 別のグリッド ページに functoid を配置する場合は、最初に、その他のグリッド ページを表示する必要があります。  
   
    > [!NOTE]
    >  複数の Functoid を同時に使用するマップを構築する場合は、相対的な位置 (左右) に注意する必要があります。 Functoids は左から順に実行されます。 1 つの Functoid からの出力は、これよりも右にある Functoid にのみ入力することができます。  

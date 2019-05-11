@@ -1,5 +1,5 @@
 ---
-title: オーケストレーションの退避のパフォーマンス カウンター |Microsoft ドキュメント
+title: オーケストレーションの退避のパフォーマンス カウンター |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4e81052f0061ff4ad802a084536c09d48cb6cb55
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d7e00a5c6c0adb1e964d9872d048a22d1d8b7eae
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22263786"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65262859"
 ---
 # <a name="orchestration-dehydration-performance-counters"></a>オーケストレーションの退避のパフォーマンス カウンター
-次の表に、退避の動作を監視するために使用される、オーケストレーション エンジンのパフォーマンス カウンターを示します。 パフォーマンス モニターを使用すると、これらのカウンターを監視しながら退避パラメーターを調整できます。  
+次の表は、オーケストレーション エンジンのパフォーマンス カウンターは、退避の動作の監視に固有の名前を一覧表示します。 パフォーマンス モニターを使用して、退避パラメーターをチューニング中にこれらのカウンターを監視します。  
   
-|退避のパフォーマンス カウンター|Description|  
+|退避のパフォーマンス カウンター|説明|  
 |-------------------------------------|-----------------|  
-|Dehydratable orchestrations|ホスト インスタンスが現在ホストしている、待避可能なオーケストレーション インスタンスの数。|  
-|Dehydrating orchestrations|待避処理中のオーケストレーション数。|  
-|Dehydration cycle in progress|待避サイクルが現在進行中であるかどうか。|  
-|Dehydration cycles|完了した待避サイクルの数。|  
-|Dehydration threshold|オーケストレーションを待避する頻度を決定するしきい値 (ミリ秒)。 オーケストレーション エンジンによって推定された待避可能時間が、このしきい値を超えた場合、インスタンス待避されます。|  
-|Orchestrations dehydrated|ホスト インスタンスの起動以降に待避されたオーケストレーション インスタンスの数。|  
+|待避可能なオーケストレーション|数、ホスト インスタンスによって現在ホストされているができるインスタンスのオーケストレーションの退避します。|  
+|オーケストレーションの退避|待避処理中のオーケストレーションの数。|  
+|進行中の退避サイクル|現在進行中の退避サイクルがあるかどうかを示します。|  
+|退避サイクル|完了した退避サイクルの数。|  
+|退避のしきい値|どの程度積極的にオーケストレーションが退避されているかを決定するミリ秒数。 インスタンスをこのしきい値より長い時間の量の推定された待避可能するは、オーケストレーション エンジンを予測する場合、インスタンス待避されます。|  
+|退避されたオーケストレーション|オーケストレーション インスタンスの数は、ホスト インスタンスの起動以降に待避されました。|  
 |Orchestrations dehydrated/sec|1 秒あたりの平均待避数。|  
-|Orchestrations rehydrated|ホスト インスタンスの起動以降に復元されたオーケストレーション インスタンスの数。|  
-|Orchestrations rehydrated/sec|1 秒あたりに復元した数の平均値|  
-|Orchestrations scheduled for dehydration|保留中の待避要求が存在する、待避可能なオーケストレーション数。|
+|リハイド レートされたオーケストレーション|ホスト インスタンスの起動後にリハイド レートされたオーケストレーション インスタンスの数。|  
+|Orchestrations rehydrated/sec|1 秒あたりにリハイド レートされた数の平均値|  
+|オーケストレーションの退避のスケジュール|対象の保留中の退避要求が、待避可能なオーケストレーションの数。|

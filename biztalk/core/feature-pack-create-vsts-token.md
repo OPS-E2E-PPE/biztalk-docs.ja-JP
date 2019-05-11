@@ -11,14 +11,14 @@ ms.topic: article
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1d26a218b6de83b1ab2e5a2dd46be215dcbb0f49
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: bf548b7eab2aff8118087366a31b9cdda3975a43
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36979347"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65345819"
 ---
-# <a name="step-2-create-the-token--install-the-agent"></a>手順 2: トークンの作成し、エージェントのインストール
+# <a name="step-2-create-the-token--install-the-agent"></a>手順 2:トークンの作成 (&)、エージェントのインストール
 
 個人用アクセス トークン (PAT) は、Visual Studio Team Services で作成されます。 このトークンは、パスワードし、VSTS のビルド エージェントでの認証に使用します。 トークンが作成するときにのみ表示されます。 その後、表示されないできなくなります。 これを作成すると、保存できる場所に別のファイルに保存します。 
 
@@ -65,7 +65,7 @@ PAT の詳細については[VSTS と TFS の個人用アクセス トークン�
 
 ## <a name="install-the-build-agent"></a>ビルド エージェントをインストールします。
 
-ビルド エージェントは、BizTalk 開発用コンピューターにインストールされます。 配置グループを使用する場合、ビルド エージェントを展開するすべての BizTalk server にインストールされます。 次の手順では、1 台のコンピューターにビルド エージェントをインストールする方法を説明します。 配置グループの使用に関する詳細については、[配置グループ](https://docs.microsoft.com/vsts/build-release/concepts/definitions/release/deployment-groups/index)を参照してください。
+ビルド エージェントは、BizTalk 開発用コンピューターにインストールされます。 配置グループを使用する場合、ビルド エージェントを展開するすべての BizTalk server にインストールされます。 次の手順では、1 台のコンピューターにビルド エージェントをインストールする方法を説明します。 配置グループの使用に関する詳細については、次を参照してください。[配置グループ](https://docs.microsoft.com/vsts/build-release/concepts/definitions/release/deployment-groups/index)します。
 
 1. VSTS アカウントとは何か、プロジェクトを開くなどの *https://YourAccountName.visualstudio.com/MyFirstProject* します。 設定アイコンを選択し、選択**エージェント キュー**:  
 
@@ -125,5 +125,5 @@ PAT の詳細については[VSTS と TFS の個人用アクセス トークン�
 VSTS アカウントにサインインし、セキュリティ トークンを作成します。 このセキュリティ トークンは、パスワードのように、VSTS プロジェクトにアクセスできます。 のでことを確認する、保存、1 回のみ表示されます。 またに Visual Studio、VSTS プロジェクトを複製し、BizTalk 開発用コンピューターでサービスとして実行されているエージェントを作成します。 このエージェントは、セキュリティ トークンを使用します。 
 
 ## <a name="next-steps"></a>次のステップ
-[手順 3: 作成、ビルドとリリース定義](feature-pack-add-build-release-definitions.md)  
+[ステップ 3:ビルドとリリース定義を作成します。](feature-pack-add-build-release-definitions.md)  
 [環境トークンと変数を構成します。](configure-environmental-tokens-and-variables-for-automatic-deployment.md)

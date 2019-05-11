@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル (X12): EDI インターチェンジの送信 |Microsoft Docs'
+title: チュートリアル (X12):EDI インターチェンジの送信 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 36
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 032fffbe22d397597288d11590995ec5c74708d5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 50db444708b4960f1e3e12236b3f3006fd2567e0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37007563"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65246469"
 ---
-# <a name="walkthrough-x12-sending-edi-interchanges"></a>チュートリアル (X12): EDI インターチェンジの送信
+# <a name="walkthrough-x12-sending-edi-interchanges"></a>チュートリアル (X12):EDI インターチェンジの送信
 このチュートリアルでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を使用して EDI インターチェンジの送信用のソリューションを作成する一連の手順について説明します。  
 
 ## <a name="prerequisites"></a>前提条件  
@@ -39,7 +39,7 @@ ms.locfileid: "37007563"
 ## <a name="the-functionality-in-this-solution"></a>このソリューションの機能  
  このチュートリアルでは、以下の機能を使用します。  
 
-- このチュートリアルでは、受信確認の受信はテストされません。 受信確認を受信する方法については、「実証[チュートリアル (X12): EDI インターチェンジの受信と送信、受信確認を返す](../core/walkthrough-x12--receive-edi-interchanges-and-send-back-an-acknowledgement.md)  
+- このチュートリアルでは、受信確認の受信はテストされません。 受信確認を受信する方法については、「実証[チュートリアル (X12):EDI インターチェンジの受信と受信確認の送信](../core/walkthrough-x12--receive-edi-interchanges-and-send-back-an-acknowledgement.md)  
 
 - このソリューションは、EDIFACT エンコードではなく X12 エンコードを使用するインターチェンジを対象に設計されています。  
 
@@ -51,10 +51,10 @@ ms.locfileid: "37007563"
 - このソリューションでは、トランスポートの種類が FILE である静的な一方向の送信ポートが使用されます。  
 
   > [!NOTE]
-  >  静的な一方向の送信ポートの代わりに、静的な双方向の送信ポートを使用して、インターチェンジの送信および受信確認の受信を行うこともできます。 また、動的な一方向の送信ポートを使用してインターチェンジを送信することもできます。 動的送信ポートの使用に関する詳細については、[EDI インターチェンジの送信と受信確認を動的送信ポートを構成する](../core/configuring-a-dynamic-send-port-to-send-edi-interchanges-and-acknowledgments.md)を参照してください。  
+  >  静的な一方向の送信ポートの代わりに、静的な双方向の送信ポートを使用して、インターチェンジの送信および受信確認の受信を行うこともできます。 また、動的な一方向の送信ポートを使用してインターチェンジを送信することもできます。 動的送信ポートの使用に関する詳細については、次を参照してください。 [EDI インターチェンジの送信と受信確認を動的送信ポートを構成する](../core/configuring-a-dynamic-send-port-to-send-edi-interchanges-and-acknowledgments.md)します。  
 
   > [!NOTE]
-  >  HTTP アダプターと AS2 トランスポートを使用できます。 その方法の詳細については、[チュートリアル (AS2): 同期 MDN による AS2 経由で送信する EDI](../core/walkthrough-as2-sending-edi-over-as2-with-a-synchronous-mdn.md)または[チュートリアル (AS2): 非同期 MDN による AS2 経由で送信する EDI](../core/walkthrough-as2-sending-edi-over-as2-with-an-asynchronous-mdn.md)を参照してください。  
+  >  HTTP アダプターと AS2 トランスポートを使用できます。 その方法の詳細については、次を参照してください。[チュートリアル (AS2)。同期 MDN による AS2 経由での EDI の送信](../core/walkthrough-as2-sending-edi-over-as2-with-a-synchronous-mdn.md)または[チュートリアル (AS2)。非同期 MDN による AS2 経由での EDI の送信](../core/walkthrough-as2-sending-edi-over-as2-with-an-asynchronous-mdn.md)します。  
 
 - EDI レポートが有効になり、インターチェンジの状態レポートに表示するトランザクション セットが保存されます。  
 
@@ -92,7 +92,7 @@ ms.locfileid: "37007563"
 1. [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] で、BizTalk プロジェクトを作成するか、開きます。  
 
    > [!NOTE]
-   >  このトピックは、EDI スキーマ、パイプライン、およびオーケストレーションを含む BizTalk EDI アプリケーションに別のアプリケーションから参照を既に追加していることを前提としています。 そうでない場合は、[、BizTalk Server EDI アプリケーションへの参照を追加する方法](http://msdn.microsoft.com/library/7af066fb-372f-4709-b566-c8d6b4a9d782)を参照してください。  
+   >  このトピックは、EDI スキーマ、パイプライン、およびオーケストレーションを含む BizTalk EDI アプリケーションに別のアプリケーションから参照を既に追加していることを前提としています。 そうでない場合は、次を参照してください。 [、BizTalk Server EDI アプリケーションへの参照を追加する方法](http://msdn.microsoft.com/library/7af066fb-372f-4709-b566-c8d6b4a9d782)します。  
 
 2. プロジェクトを右クリックし、[**追加**、] をクリックし、**既存項目の**します。 スキーマが [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]XSD_Schema\EDI にあるフォルダーに移動し、スキーマをダブルクリックします。  
 
@@ -236,14 +236,14 @@ ms.locfileid: "37007563"
 
       |       プロパティ       |                                                                                                                                               目的                                                                                                                                               |
       |----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-      |     **[Default]**      | チェック ボックスをオン、**既定**列。 **注:** の値、既定値としてこの行を選択すると**GS1**、 **GS2**、 **GS3**、 **GS7**、および**GS8**される場合でもの値は、**トランザクションの種類**、**バージョン/リリース**と**ターゲットの名前空間**と一致するメッセージではありません。 |
+      |     **[Default]**      | チェック ボックスをオン、**既定**列。 **注:** 既定の値としてこの行を選択すると**GS1**、 **GS2**、 **GS3**、 **GS7**、および**GS8**は使用されている場合であってもの値は、**トランザクションの種類**、**バージョン/リリース**と**ターゲットの名前空間**と一致するメッセージではありません。 |
       | **トランザクションの種類** |                                                                                                                テスト メッセージのメッセージの種類を選択します。 **850 - 注文書**します。                                                                                                                 |
       | **バージョン/リリース**  |                                                                                                                                   EDI のバージョンを入力**00401**します。                                                                                                                                    |
       | **ターゲットの名前空間** |                                                                                                                    選択 **<http://schemas.microsoft.com/BizTalk/Edi/X12/2006>** します。                                                                                                                     |
       |       **[GS1]**        |                                                                                                      テスト メッセージのメッセージの種類が選択されていることを確認**PO - 注文書 (850)** します。                                                                                                      |
       |       **[GS2]**        |                                                                                                                               アプリケーション送信者を表す値を入力します。                                                                                                                                |
       |       **[GS3]**        |                                                                                                                              アプリケーション受信者を表す値を入力します。                                                                                                                               |
-      |       **GS4**        |            日付の形式を選択します。 **注:** あるドロップダウン リストで、値を選択するだけでなく、既定値を表示するフィールドをクリックします。 ドロップダウン リストから値を選択せずにフィールドをクリックしても、値は実際に選択されません。            |
+      |       **GS4**        |            日付の形式を選択します。 **注:** ドロップダウン リストで、値を選択し、だけでなく、既定値を表示するフィールドをクリックする必要があります。 ドロップダウン リストから値を選択せずにフィールドをクリックしても、値は実際に選択されません。            |
       |       **GS5**        |                                                                                                                                 時刻の形式を選択します。                                                                                                                                  |
       |       **GS7**        |                                                                                                                           選択**X - 正式認可を受けた Standards Committee X12**します。                                                                                                                           |
       |       **GS8**        |                                                                                                                        EDI のバージョンが入力されていることを確認**00401**します。                                                                                                                        |

@@ -1,5 +1,5 @@
 ---
-title: GetActivityProperty |Microsoft ドキュメント
+title: GetActivityProperty |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a55f0d24da85088fb8f13693c8c71d32bee1bef7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9ca7eef66216eb8a3a2aae79d34fa7619ef96ef3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22246586"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65345095"
 ---
 # <a name="getactivityproperty"></a>GetActivityProperty
 追跡イベントに関連するアクティビティから抽出されたプロパティをスタックにプッシュします。  
@@ -37,7 +37,7 @@ ms.locfileid: "22246586"
 ## <a name="return-value"></a>戻り値  
  プロパティの値を格納している文字列。  
   
-## <a name="remarks"></a>解説  
+## <a name="remarks"></a>コメント  
  取得するプロパティ名を修飾するために、ドット付き表記を使用することができます。 これにより、プロパティを通じて公開される他のオブジェクト内のオブジェクトにアクセスできます。 たとえば、注文書の Address インスタンスの City プロパティにアクセスするには、"purchaseOrder.Address.City" を使用します。  
   
  プロパティ名は、最初は大文字と小文字が区別され、その後は大文字と小文字が区別されません。 これは、WF アプリケーションで、大文字と小文字の区別のみが異なる複数のアクティビティ プロパティを使用する場合に重要です。 たとえば、ワークフロー アプリケーションで "myWorkflow" プロパティと "MyWorkflow" プロパティを定義している場合に "MyWorkflow" を検索すると、大文字と小文字を区別する照合において "MyWorkflow" プロパティが検索されます。 "MYWORKFLOW" と指定すると、大文字と小文字を区別する照合に失敗してから、大文字と小文字を区別しない照合において "myWorkflow" プロパティが検索されます。  

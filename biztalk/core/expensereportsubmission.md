@@ -15,12 +15,12 @@ caps.latest.revision: 29
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 09cec8e16b8b145206a2cd6b2a30859e502ce8b3
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 195aa719fbea17839fae33340af81d9ecc626462
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36967899"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65346162"
 ---
 # <a name="expensereportsubmission"></a>ExpenseReportSubmission
 ExpenseReportSubmission サンプルは、Microsoft Excel などのリッチ クライアントのドキュメントを [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] オーケストレーションに送信する方法を示すものです。  
@@ -28,7 +28,7 @@ ExpenseReportSubmission サンプルは、Microsoft Excel などのリッチ ク
  リッチ クライアントを使用すると、データ検証、準備計算など多くのアクションをクライアント上で実行できます。 これによりバックエンド サーバーとの対話処理を最小限に抑えることができるので、低帯域幅接続しか使用できない場合に便利です。  
 
 ## <a name="prerequisites"></a>前提条件  
- 開発環境が構成済みで、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Web サービスが利用可能になっていることを確認する必要があります。 詳細については、[Web サービスを有効にする](../core/enabling-web-services.md)を参照してください。  
+ 開発環境が構成済みで、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Web サービスが利用可能になっていることを確認する必要があります。 詳細については、次を参照してください。 [Web サービスを有効にする](../core/enabling-web-services.md)します。  
 
 ## <a name="what-this-sample-does"></a>このサンプルの処理  
  このサンプルでは、次の一連の手順で、経費報告書を Excel から [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] に直接送信します。  
@@ -88,7 +88,7 @@ ExpenseReportSubmission サンプルは、Microsoft Excel などのリッチ ク
    - HTTP アドレスを、Excel ワークシートで想定されている場所に設定します。  
 
    > [!NOTE]
-   >  BizTalk ISAPI フィルターの詳細については、[IIS の HTTP 受信場所を構成する方法](../core/how-to-configure-iis-for-an-http-receive-location.md)を参照してください。  
+   >  BizTalk ISAPI フィルターの詳細については、次を参照してください。 [IIS の HTTP 受信場所を構成する方法](../core/how-to-configure-iis-for-an-http-receive-location.md)します。  
    > 
    > [!NOTE]
    >  このサンプルを実行する前に、ビルドと初期化のプロセス中に [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] でエラーが報告されていないことを確認する必要があります。  

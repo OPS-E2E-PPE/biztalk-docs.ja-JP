@@ -12,28 +12,28 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b7547e646e166a9ec438da246242a2d460d77d63
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 12185022eb7af494fa01a3643d7486fc0c253577
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37013075"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65355674"
 ---
-# <a name="configuring-fallback-envelope-properties-edifact-interchange-settngs"></a>フォールバック エンベロープ プロパティの構成 (EDIFACT インターチェンジの設定)
+# <a name="configuring-fallback-envelope-properties-edifact-interchange-settngs"></a>フォールバック エンベロープ プロパティ (EDIFACT インターチェンジの設定) の構成
 このセクションでは、送信 EDIFACT メッセージのエンベロープを構成する方法について説明します。  
   
 ## <a name="prerequisites"></a>前提条件  
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者グループまたは [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] B2B Operators グループのメンバーとしてログオンしている必要があります。  
   
-### <a name="to-configure-the-interchange-envelope"></a>インターチェンジ エンベロープを構成するには  
+### <a name="to-configure-the-interchange-envelope"></a>インターチェンジのエンベロープを構成するには  
   
 1. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールを右クリックし、**パーティ**ノード、およびクリック**EDIFACT フォールバックの設定**します。  
   
 2. **EDIFACT フォールバックの設定**] ダイアログ ボックスで、 **EDIFACT アグリーメント ページ**] タブの [、**インターチェンジの設定**セクションで、[**封筒**.  
   
-3. **処理優先度コード (UNB8)**、1 つの文字の最小値、1 つの文字のアルファベット順の値を入力します。 このフィールドの入力は省略可能です。  
+3. **処理優先度コード (UNB8)**、1 つの文字の最小値、1 つの文字のアルファベット順の値を入力します。 これは、オプションのフィールドです。  
   
-4. **通信アグリーメント (UNB10)**、1 つの文字の最小値、最大 35 文字の英数字を入力します。 このフィールドは省略可能です。   
+4. **通信アグリーメント (UNB10)**、1 つの文字の最小値、最大 35 文字の英数字を入力します。 これは省略可能なフィールド  
   
 5. 選択**テスト インジケーター (UNB11)** で、インターチェンジが生成されることを示す[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]がテスト データ。  
   

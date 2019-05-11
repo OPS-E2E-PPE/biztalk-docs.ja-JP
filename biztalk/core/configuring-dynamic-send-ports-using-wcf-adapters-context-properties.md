@@ -17,12 +17,12 @@ caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ca781dc1d101e3eef0976229b3d1b986c2f4498d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 956c66ae42d2c0239a8ca6f8b84dd8e11685ed08
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36995275"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65356102"
 ---
 # <a name="configuring-dynamic-send-ports-using-wcf-adapters-context-properties"></a>WCF アダプタ コンテキスト プロパティによる動的送信ポートの構成
 WCF アダプタ用の動的送信ポートを構成することができます。 URI、アクション、およびバインド、受信メッセージのプロパティから決定されで指定された可能性があります、**式**図形、Wcf-nettcp アダプターを次に示すようにします。  
@@ -74,7 +74,7 @@ DynamicSendPort(Microsoft.XLANGs.BaseTypes.TransportType)="WCF-Custom";
   
 - **WCF です。BindingConfiguration**のバインドの種類のバインド構成を指定します。 このプロパティは、コンピュータの構成ファイルに登録されているバインドを受け取ります。 WCF 構成ファイルのバインド構成で使用される形式と同じ形式の XML 構成ファイルも受け取ります。  
   
-- 追加の WCF プロパティの指定が必要になる場合があります。 入力**WCF**式エディターで IntelliSense 機能がすべての利用可能なコンテキスト プロパティを一覧する必要があります。 WCF コンテキスト プロパティの詳細については、[WCF アダプター プロパティ スキーマおよびプロパティ](../core/wcf-adapters-property-schema-and-properties.md)を参照してください。  
+- 追加の WCF プロパティの指定が必要になる場合があります。 入力**WCF**式エディターで IntelliSense 機能がすべての利用可能なコンテキスト プロパティを一覧する必要があります。 WCF コンテキスト プロパティの詳細については、次を参照してください。 [WCF アダプター プロパティ スキーマおよびプロパティ](../core/wcf-adapters-property-schema-and-properties.md)します。  
   
   上記の例は、構成する方法を示す**WCF です。アクション**1 つのアクションを使用します。 複数アクションのマッピング シナリオの場合、WCF アダプタは、動的送信ポートでの複数アクションのマッピングの使用をサポートしていません。 設定できるは、実際のアクションだけ、 **WCF です。アクション**コンテキスト プロパティの上に示すようにします。  
   

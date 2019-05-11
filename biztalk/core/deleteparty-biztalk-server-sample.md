@@ -19,12 +19,12 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a6d6d488bf7431f805e8719e10fe17cef7d13fa4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1f188fb4b77babeb6e64260bc37004a6b15b7d28
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36982963"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65352194"
 ---
 # <a name="deleteparty-biztalk-server-sample"></a>DeleteParty (BizTalk Server サンプル)
 DeleteParty サンプルは、指定したパーティを削除する方法を示します。  
@@ -39,7 +39,7 @@ DeleteParty サンプルは、指定したパーティを削除する方法を�
   
 - このサンプルの管理オブジェクトを使用するには、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者特権が必要です。  
   
-- Windows PowerShell スクリプトを実行するには、Windows PowerShell 実行ポリシーが必要です。 詳細については、:[実行ポリシーの確認](http://go.microsoft.com/fwlink/?LinkId=128930)を参照してください。  
+- Windows PowerShell スクリプトを実行するには、Windows PowerShell 実行ポリシーが必要です。 詳しくは、次のトピックをご覧ください。[実行ポリシーの確認](http://go.microsoft.com/fwlink/?LinkId=128930)します。  
   
 ## <a name="what-this-sample-does"></a>このサンプルの処理  
  このサンプルは、BizTalk エクスプローラー オブジェクト モデル (ExplorerOM) のオブジェクトを使用して Microsoft Visual C# で記述されており、以下の操作を実行します。  
@@ -53,7 +53,7 @@ DeleteParty サンプルは、指定したパーティを削除する方法を�
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
  このサンプルは、次の SDK の場所にあります。  
   
- \<*パスのサンプル*\>\Admin\ExplorerOM\DeleteParty\  
+ \<*Samples Path*\>\Admin\ExplorerOM\DeleteParty\  
   
  次の表は、このサンプルのファイルとその目的を示しています。  
   
@@ -71,7 +71,7 @@ DeleteParty サンプルは、指定したパーティを削除する方法を�
   
 1. コマンド ウィンドウで、次のフォルダーに移動します。  
   
-    \<*パスのサンプル*\>\Admin\ExplorerOM\DeleteParty\bin\Debug\  
+    \<*Samples Path*\>\Admin\ExplorerOM\DeleteParty\bin\Debug\  
   
 2. ファイル DeleteParty.exe を実行し、次の 2 つのコマンド ライン引数の 1 つを渡します。  
   

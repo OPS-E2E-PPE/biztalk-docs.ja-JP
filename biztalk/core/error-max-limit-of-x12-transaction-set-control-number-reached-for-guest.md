@@ -12,14 +12,14 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2b90021a672b3aec71198d8fd6533a2037772346
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1f35efea65a1ee4741c86679797f5f218a1cbaf0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37014083"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65347442"
 ---
-# <a name="max-limit-of-acceptable-x12-transaction-set-control-number-has-reached-for-guest-settings"></a>Guest の設定の X12 トランザクション セット制御番号が、許容される上限に到達しました
+# <a name="max-limit-of-acceptable-x12-transaction-set-control-number-has-reached-for-guest-settings"></a>許容される X12 トランザクション セット制御番号に達した Guest の設定の上限
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                                                                                                                                            |

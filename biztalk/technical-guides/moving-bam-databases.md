@@ -1,5 +1,5 @@
 ---
-title: BAM データベースの移動 |Microsoft ドキュメント
+title: BAM データベースの移動 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,27 +12,27 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fe3bbaaa999ab6d0e2faf5639c8ab85c02bc3325
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 438a4379cac07c61e1a9c5e05de16bc8f721fd85
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22299138"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65298439"
 ---
 # <a name="moving-bam-databases"></a>BAM データベースの移動
-このセクションに BAM 関連を移動する方法について説明[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]から 1 つのデータベース[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]別のコンピューターにします。  
+このセクションは、BAM に関連する移動する方法を説明します[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]から 1 つのデータベース[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]別のコンピューターにします。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [BAM プライマリ インポート Database2 を移動する方法](../technical-guides/how-to-move-the-bam-primary-import-database2.md)  
+-   [BAM プライマリ インポートの Database2 を移動する方法](../technical-guides/how-to-move-the-bam-primary-import-database2.md)  
   
--   [BAM アーカイブ データベース 1 に移動する方法](../technical-guides/how-to-move-the-bam-archive-database1.md)  
+-   [BAM アーカイブ データベースを 1 に移動する方法](../technical-guides/how-to-move-the-bam-archive-database1.md)  
   
--   [BAM スター スキーマ Database2 を移動する方法](../technical-guides/how-to-move-the-bam-star-schema-database2.md)  
+-   [BAM スター スキーマの Database2 を移動する方法](../technical-guides/how-to-move-the-bam-star-schema-database2.md)  
   
--   [BAM 分析データベース 1 に移動する方法](../technical-guides/how-to-move-the-bam-analysis-database1.md)  
+-   [BAM Analysis の Database1 を移動する方法](../technical-guides/how-to-move-the-bam-analysis-database1.md)  
   
--   [BAM Notification Services Databases1 を移動する方法](../technical-guides/how-to-move-the-bam-notification-services-databases1.md)  
+-   [BAM Notification Services の Databases1 を移動する方法](../technical-guides/how-to-move-the-bam-notification-services-databases1.md)  
   
 ## <a name="see-also"></a>参照  
  [データベースの移動](../technical-guides/moving-databases.md)

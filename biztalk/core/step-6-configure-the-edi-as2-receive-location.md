@@ -1,5 +1,5 @@
 ---
-title: '手順 6: 構成 edi-as2 の受信場所 |Microsoft Docs'
+title: 手順 6:EDI AS2 を構成する受信場所 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,19 +12,19 @@ caps.latest.revision: 27
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0d5ec3a7c253ab37a76846962cb348cd8b203a23
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 0d72735d128a2afbad003eacb0662dba3c98fde0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37009851"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65244312"
 ---
-# <a name="step-6-configure-the-edi-as2-receive-location"></a>手順 6: 構成 edi-as2 の受信場所
+# <a name="step-6-configure-the-edi-as2-receive-location"></a>手順 6:EDI AS2 を構成する受信場所
 ![手順 11 の 6](../core/media/tut-step6-of-11.gif "Tut_Step6_of_11")  
   
- このステップでは、Fabrikam パーティからの EDI メッセージを受信する一方向の受信場所を設定します。 この受信場所では、AS2EdiReceive 受信パイプラインを使用して、送信されてくる EDI および AS2 メッセージを処理します。 このメッセージは、sender.exe アプリケーションにより、Contoso 仮想ディレクトリを通じ、BTSHTTPReceive.dll ISAPI 拡張を使用して受信場所に送信されます。  
+ セットアップでは、一方向の受信を Fabrikam パーティから EDI メッセージを受け取る場所。 これは、受信場所は、AS2EdiReceive 受信パイプラインを受信 EDI および AS2 メッセージを処理します。 メッセージは、BTSHTTPReceive.dll ISAPI 拡張機能を使用して、Contoso 仮想ディレクトリ経由で sender.exe アプリケーションによって受信場所に送信されします。  
   
- このチュートリアルでは、MDN 応答を非同期で送信する動的送信ポートを設定します。 このシナリオで必要となるのは、一方向の受信ポートだけです。 しかし、同期 MDN を指定する AS2 メッセージを送信するよう Sender.exe を変更することもできます。 この場合、MDN を返信するため、双方向の要求応答受信ポートを作成する必要があります。 詳細については、のソリューションのテスト"するには」セクションを参照してください。[チュートリアル (AS2): 同期 MDN による AS2 経由での EDI の受信](../core/walkthrough-as2-receiving-edi-over-as2-with-a-synchronous-mdn.md)します。  
+ このチュートリアルでは、MDN 応答を非同期に送信に動的送信ポートを設定します。 このシナリオで、一方向受信ポートのみが必要です。 ただし、同期 MDN を指定する AS2 メッセージを送信する Sender.exe を変更することもできます。 双方向を作成する必要がありますし、要求応答の受信 MDN を返すためのポート。 詳細については、のソリューションのテスト"するには」セクションを参照してください。[チュートリアル (AS2)。同期 MDN による AS2 経由での EDI の受信](../core/walkthrough-as2-receiving-edi-over-as2-with-a-synchronous-mdn.md)します。  
   
 ## <a name="prerequisites"></a>前提条件  
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者グループのメンバーとしてログオンしている必要があります。  
@@ -44,12 +44,12 @@ ms.locfileid: "37009851"
 6. 選択**AS2EdiReceive**の**受信パイプライン**します。 をクリックして**OK**、順にクリックします**OK**もう一度です。  
   
    > [!NOTE]
-   >  AS2EdiReceive 受信パイプラインは、AS2 のデコードと EDI の逆アセンブルを実行します。  
+   >  AS2EdiReceive 受信パイプラインは AS2 のデコードと EDI の逆アセンブルを実行します。  
   
 7. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、をクリックして**受信場所**[BizTalk アプリケーション 1] ノードを右クリックして**Receive_AS2**、 をクリックし、**を有効にする**.  
   
 ## <a name="next-steps"></a>次の手順  
- 送信ポートを構成する (**Send_Asynch_MDN**)」の説明に従って、非同期 MDN を Fabrikam に送信するポートを送信[手順 7: MDN 送信ポートの構成](../core/step-7-configure-the-mdn-send-port.md)します。  
+ 送信ポートを構成する (**Send_Asynch_MDN**)」の説明に従って、非同期 MDN を Fabrikam に送信するポートを送信[手順 7。MDN の送信ポート構成](../core/step-7-configure-the-mdn-send-port.md)します。  
   
 ## <a name="see-also"></a>参照  
  [BizTalk Server が AS2 メッセージを受信する方法](../core/how-biztalk-server-receives-as2-messages.md)   

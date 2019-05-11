@@ -1,5 +1,5 @@
 ---
-title: 行程ベースのルーティングと処理 |Microsoft ドキュメント
+title: ルーティングと処理のスケジュールに基づく |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7600408837ed2ef40e11bc179bf0739fb15c5a61
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 6593a9ff2a90f9b906352ecad1bec70e4f601994
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26006747"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65261544"
 ---
-# <a name="itinerary-based-routing-and-processing"></a>行程ベースのルーティングと処理
-[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]カスタム パイプライン コンポーネントを使用してルーティング スリップ パターンを実装します。 メッセージのメタデータとその他の要因は、適切な回覧、各メッセージに使用する、日程とも呼ばれるを決定に使用されます。 この回覧では、メッセージ変換を実行する、オーケストレーション サービスを呼び出す、およびメッセージを BizTalk Server が実行するステップをルーティング、中核となる BizTalk Server エンジンからメッセージの処理命令を効果的に分離することを定義することができます。  
+# <a name="itinerary-based-routing-and-processing"></a>スケジュールに基づくルーティングと処理
+[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]カスタム パイプライン コンポーネントを使用してルーティング スリップ パターンを実装します。 メッセージのメタデータとその他の要因は、適切なルーティング スリップを各メッセージに使用する、スケジュールとも呼ばれますの決定に使用されます。 回覧用紙がこのでは、メッセージ変換を実行、オーケストレーションのサービスを呼び出す、およびメッセージを BizTalk Server を実行する手順のルーティング、中核となる BizTalk Server エンジンからのメッセージの処理命令を効果的に分離することを定義することができます。  
   
- 行程の処理方法の詳細については、次を参照してください。[主要なシナリオと開発タスク](../esb-toolkit/key-scenarios-and-development-tasks.md)です。
+ スケジュールの処理方法の詳細については、次を参照してください。[主要なシナリオおよび開発タスク](../esb-toolkit/key-scenarios-and-development-tasks.md)します。

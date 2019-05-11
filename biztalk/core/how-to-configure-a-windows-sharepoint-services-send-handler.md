@@ -16,22 +16,22 @@ caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 90ac23759558549122f31a793852b479b67744d4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2385999e8a3a36f57b8b04ef0077658757674ce1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36988555"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65341903"
 ---
-# <a name="how-to-configure-a-windows-sharepoint-services-send-handler"></a>Windows SharePoint Services 送信ハンドラを構成する方法
-次の手順を使用して、Windows SharePoint Services 送信ハンドラが関連付けられているホストを変更します。  
+# <a name="how-to-configure-a-windows-sharepoint-services-send-handler"></a>Windows SharePoint Services 送信ハンドラーを構成する方法
+Windows SharePoint Services 送信ハンドラが関連付けられているホストを変更するのにには、次の手順を使用します。  
   
 > [!NOTE]
->  各ホストに関連付けられる送信ハンドラーは 1 つだけです。  
+>  各ホストには、1 つだけ送信ハンドラーが関連付けられていることができます。  
   
-### <a name="to-change-global-variables-for-a-windows-sharepoint-services-send-handler"></a>Windows SharePoint Services 送信ハンドラのグローバル変数を変更するには  
+### <a name="to-change-global-variables-for-a-windows-sharepoint-services-send-handler"></a>グローバル変数を Windows SharePoint Services 送信ハンドラーを変更するには  
   
-1. BizTalk Server 管理コンソールで、クリックして展開[!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)]**管理**をクリックして展開と**BizTalk グループ [\<servername\>:\<管理データベース\>]** をクリックして展開**プラットフォームの設定**をクリックして展開と**アダプター**します。 フォルダの下にアダプタの一覧が表示されます。  
+1. BizTalk Server 管理コンソールで、クリックして展開[!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)]**管理**をクリックして展開と**BizTalk グループ [\<servername\>:\<管理データベース\>]** をクリックして展開**プラットフォームの設定**をクリックして展開と**アダプター**します。 フォルダーの下に、アダプターの一覧が表示されます。  
   
 2. クリックして**Windows SharePoint Services**、右側のウィンドウで、構成、およびクリックする送信ハンドラーを右クリック**プロパティ**します。  
   
@@ -43,7 +43,7 @@ ms.locfileid: "36988555"
   
    |プロパティ|目的|  
    |--------------|----------------|  
-   |[送信バッチ サイズ]|Windows SharePoint Services の Web サービスがバッチとして処理するドキュメントの最大数を指定します。 既定値は 20 です。 **注:** 最小値は 1 です。|  
+   |送信バッチ サイズ|Windows SharePoint Services Web サービスがバッチとして処理するドキュメントの最大数。 既定値は 20 です。 **注:** 最小値は 1 です。|  
   
 ## <a name="see-also"></a>参照  
  [サービスの受信場所を Windows SharePoint を構成する方法](../core/how-to-configure-a-windows-sharepoint-services-receive-location.md)   

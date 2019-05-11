@@ -17,17 +17,17 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c8d7e68e4df5a729aae7f84932b53d319fea0114
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 48133eaa50fed0062b17d9e3b25fe180d7495f89
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37009947"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65342194"
 ---
 # <a name="how-to-configure-a-wcf-nettcp-receive-handler"></a>WCF-NetTcp 受信ハンドラーを構成する方法
-WCF-NetTcp 受信ハンドラーを構成するには、次の手順を使用します。  
+受信ハンドラーを Wcf-nettcp を構成するのには、次の手順を使用します。  
 
-### <a name="to-change-global-variables-for-a-wcf-nettcp-receive-handler"></a>WCF-NetTcp 受信ハンドラーのグローバル変数を変更するには  
+### <a name="to-change-global-variables-for-a-wcf-nettcp-receive-handler"></a>グローバル変数を Wcf-nettcp 受信ハンドラーを変更するには  
 
 1. BizTalk 管理コンソールで、 [!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)] **管理**、展開**BizTalk グループ**、展開**プラットフォームの設定**を展開し**アダプター**します。  
 

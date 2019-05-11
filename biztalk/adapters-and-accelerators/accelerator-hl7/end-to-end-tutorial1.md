@@ -18,18 +18,18 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 264a6eee008b9b327185c931ad4e5ac60cdc995a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 284d3cd4d1d3a9a5e0a77b9f9b21d85cb8eff41f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37000739"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65255484"
 ---
 # <a name="end-to-end-tutorial"></a>エンド ツー エンドのチュートリアル
 このチュートリアルには、Microsoft の使用方法を説明する詳細な手順が含まれています。[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]サブスクライバーとパブリッシャーのシナリオでビジネス プロセスを容易にします。  
   
 > [!IMPORTANT]
->  このチュートリアルを使用するには、BTAHL7 をインストールするときに、テスト ツールをインストールする必要があります。 コード型の BTAHL7 をインストールする一般的なインストールを実行した場合、カスタム インストールを実行テスト ツールを正常に動作するには、このチュートリアルの順序でインストールし、する必要があります。 **カスタム セットアップ**、BTAHL7 カスタム インストールの選択画面**MLLP テスト ツール**から、**アダプター**フォルダー、および選択**テスト インスタンス**から、**成果物**フォルダー。 詳細については、[BizTalk Accelerator for HL7 のインストール](../../adapters-and-accelerators/accelerator-hl7/install-biztalk-accelerator-for-hl7.md)を参照してください。  
+>  このチュートリアルを使用するには、BTAHL7 をインストールするときに、テスト ツールをインストールする必要があります。 コード型の BTAHL7 をインストールする一般的なインストールを実行した場合、カスタム インストールを実行テスト ツールを正常に動作するには、このチュートリアルの順序でインストールし、する必要があります。 **カスタム セットアップ**、BTAHL7 カスタム インストールの選択画面**MLLP テスト ツール**から、**アダプター**フォルダー、および選択**テスト インスタンス**から、**成果物**フォルダー。 詳細については、次を参照してください。 [BizTalk Accelerator for HL7 のインストール](../../adapters-and-accelerators/accelerator-hl7/install-biztalk-accelerator-for-hl7.md)します。  
   
 ## <a name="declarative-scenario"></a>宣言型のシナリオ  
  このチュートリアルでは、パブリッシュ/サブスクライブまたは宣言型のシナリオを使用します。 宣言型のシナリオでは、ビジネスのフローは次の図に示されている似ています。 次の図は、番号付きリストでは、ワークフローについて説明します。  
@@ -61,25 +61,25 @@ ms.locfileid: "37000739"
   
 -   [チュートリアルを使用する準備](../../adapters-and-accelerators/accelerator-hl7/preparing-to-use-the-tutorial2.md)  
   
--   [手順 1: ヘッダーと確認スキーマの作成と展開](../../adapters-and-accelerators/accelerator-hl7/step-1-create-and-deploy-header-and-acknowledgment-schemas.md)  
+-   [ステップ 1: ヘッダーと確認スキーマの作成と展開](../../adapters-and-accelerators/accelerator-hl7/step-1-create-and-deploy-header-and-acknowledgment-schemas.md)  
   
--   [手順 2: v2.3.1 の一般的なスキーマを作成します。](../../adapters-and-accelerators/accelerator-hl7/step-2-create-common-schemas-for-v2-3-1.md)  
+-   [手順 2:V2.3.1 の一般的なスキーマを作成します。](../../adapters-and-accelerators/accelerator-hl7/step-2-create-common-schemas-for-v2-3-1.md)  
   
--   [手順 3: トリガー イベント (メッセージ) プロジェクトの作成と展開](../../adapters-and-accelerators/accelerator-hl7/step-3-create-and-deploy-a-trigger-event-message-project.md)  
+-   [ステップ 3:トリガー イベント (メッセージ) プロジェクトの作成と展開](../../adapters-and-accelerators/accelerator-hl7/step-3-create-and-deploy-a-trigger-event-message-project.md)  
   
--   [手順 4: MLLP Adapter を使用して ADT System から ADT^A03 メッセージを受け入れるための受信ポートの作成](../../adapters-and-accelerators/accelerator-hl7/step-4-create-receive-port-to-accept-adt^a03-messages-from-adt-using-mllp.md)  
+-   [手順 4:MLLP アダプターを使用して ADT System から ADT^A03 メッセージを受け入れるための受信ポートの作成](../../adapters-and-accelerators/accelerator-hl7/step-4-create-receive-port-to-accept-adt^a03-messages-from-adt-using-mllp.md)  
   
--   [手順 5: ファイル アダプターを使用して ADT System に受診確認を配信する送信ポートの作成](../../adapters-and-accelerators/accelerator-hl7/step-5-create-send-port-to-deliver-acknowledgments-to-adt-system-using-file.md)  
+-   [手順 5:ファイル アダプターを使用して ADT System に受信確認を配信する送信ポートの作成](../../adapters-and-accelerators/accelerator-hl7/step-5-create-send-port-to-deliver-acknowledgments-to-adt-system-using-file.md)  
   
--   [手順 6: ファイル アダプターを使用して RX System に ADT^A03 メッセージを配信する送信ポートの作成](../../adapters-and-accelerators/accelerator-hl7/step-6-create-send-port-to-deliver-adt^a03-message-to-rx-system-using-file.md)  
+-   [手順 6:ファイル アダプターを使用して RX System に ADT^A03 メッセージを配信する送信ポートの作成](../../adapters-and-accelerators/accelerator-hl7/step-6-create-send-port-to-deliver-adt^a03-message-to-rx-system-using-file.md)  
   
--   [手順 7: MLLP アダプターを使用して HIS に ADT^A03 メッセージを配信する送信ポートの作成](../../adapters-and-accelerators/accelerator-hl7/step-7-create-send-port-to-deliver-adt^a03-message-to-his-using-mllp-adapter.md)  
+-   [手順 7:MLLP アダプターを使用して HIS に ADT^A03 メッセージを配信する送信ポートの作成](../../adapters-and-accelerators/accelerator-hl7/step-7-create-send-port-to-deliver-adt^a03-message-to-his-using-mllp-adapter.md)  
   
--   [手順 8: パーティ情報の構成](../../adapters-and-accelerators/accelerator-hl7/step-8-configure-party-information.md)  
+-   [手順 8:パーティ情報の構成](../../adapters-and-accelerators/accelerator-hl7/step-8-configure-party-information.md)  
   
--   [手順 9: BizTalk Server の再起動](../../adapters-and-accelerators/accelerator-hl7/step-9-restart-biztalk-server.md)  
+-   [手順 9:BizTalk Server の再起動](../../adapters-and-accelerators/accelerator-hl7/step-9-restart-biztalk-server.md)  
   
 -   [手順 10: エンド ツー エンド シナリオの確認](../../adapters-and-accelerators/accelerator-hl7/step-10-verify-the-end-to-end-scenario.md)
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 [BizTalk Accelerator for HL7 の概要](../../adapters-and-accelerators/accelerator-hl7/get-started-with-the-biztalk-accelerator-for-hl7.md)

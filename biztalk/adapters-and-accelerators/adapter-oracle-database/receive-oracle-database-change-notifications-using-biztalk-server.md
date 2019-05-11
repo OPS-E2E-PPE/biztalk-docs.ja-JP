@@ -12,15 +12,15 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a8bd67791e56d941d58cb0b221bf7ad63bb3778f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: fb82671226aa6e9c913167335ebb10c1a066455c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36985043"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65376222"
 ---
 # <a name="receive-oracle-database-change-notifications-using-biztalk-server"></a>BizTalk Server を使用して Oracle データベースの変更通知を受信します。
-構成することができます、 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] Oracle データベースからデータベース変更通知のメッセージを受信します。 アダプターが Oracle データベースを使用した通知の登録を使用する SELECT ステートメントを指定することができます。 登録通知の場合、SELECT ステートメントの結果セットが変更されたときに通知メッセージを受信します。 アダプターが通知をサポートする方法の詳細については、[データベース変更通知の受信、Oracle データベース アダプターの使用に関する考慮事項](../../adapters-and-accelerators/adapter-oracle-database/before-you-receive-database-change-notifications-using-the-oracle-db-adapter.md)を参照してください。  
+構成することができます、 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] Oracle データベースからデータベース変更通知のメッセージを受信します。 アダプターが Oracle データベースを使用した通知の登録を使用する SELECT ステートメントを指定することができます。 登録通知の場合、SELECT ステートメントの結果セットが変更されたときに通知メッセージを受信します。 アダプターが通知をサポートする方法の詳細については、次を参照してください。[データベース変更通知の受信、Oracle データベース アダプターの使用に関する考慮事項](../../adapters-and-accelerators/adapter-oracle-database/before-you-receive-database-change-notifications-using-the-oracle-db-adapter.md)します。  
   
  構成することがいくつかのシナリオを次に、[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]で[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]Oracle データベースから通知を受け取る。  
   
@@ -33,7 +33,7 @@ ms.locfileid: "36985043"
 > [!CAUTION]
 >  Oracle データベースとアダプター クライアントの間のネットワークの停止がある場合、通知は送信されませんアダプター クライアントのネットワークの停止の期間中に Oracle データベースで行われた変更で、その後です。 したがって、重要なシナリオの通知の操作ではなく、ポーリング操作を使用する必要があります。  
   
- このセクションのトピックでは、これらの各シナリオのアダプターを構成する方法について説明します。 使用して Oracle データベースからの通知の取得を開始する、 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]、特定のバインド プロパティを指定する必要があります。 通知に関連するバインド プロパティの詳細については、[バインドのプロパティの操作](https://msdn.microsoft.com/library/dd788467.aspx)を参照してください。 通知メッセージの構造に関する詳細については、[通知操作のメッセージ スキーマ](../../adapters-and-accelerators/adapter-oracle-database/message-schemas-for-the-notification-operation1.md)を参照してください。  
+ このセクションのトピックでは、これらの各シナリオのアダプターを構成する方法について説明します。 使用して Oracle データベースからの通知の取得を開始する、 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]、特定のバインド プロパティを指定する必要があります。 通知に関連するバインド プロパティの詳細については、次を参照してください。[バインドのプロパティの操作](https://msdn.microsoft.com/library/dd788467.aspx)します。 通知メッセージの構造に関する詳細については、次を参照してください。[通知操作のメッセージ スキーマ](../../adapters-and-accelerators/adapter-oracle-database/message-schemas-for-the-notification-operation1.md)します。  
   
  Oracle データベースから通知を受信することを確認します。  
   
@@ -45,7 +45,7 @@ ms.locfileid: "36985043"
     grant change notification to <user name>  
     ```  
   
--   Oracle データベースからデータベース変更通知を受信するために使用する ODP.NET する TCP ポートで決定します。 Windows ファイアウォールの例外リストには、そのポートを追加します。 Windows ファイアウォールの例外リストにポートを追加する方法については、[ http://go.microsoft.com/fwlink/?LinkID=196959](http://go.microsoft.com/fwlink/?LinkID=196959)を参照してください。 同じポート番号を指定する必要があります、 **NotificationPort**プロパティをバインドします。 バインディング プロパティの詳細については、[バインドのプロパティの操作](https://msdn.microsoft.com/library/dd788467.aspx)を参照してください。  
+-   Oracle データベースからデータベース変更通知を受信するために使用する ODP.NET する TCP ポートで決定します。 Windows ファイアウォールの例外リストには、そのポートを追加します。 Windows ファイアウォールの例外リストにポートを追加する方法については、次を参照してください。 [ http://go.microsoft.com/fwlink/?LinkID=196959](http://go.microsoft.com/fwlink/?LinkID=196959)します。 同じポート番号を指定する必要があります、 **NotificationPort**プロパティをバインドします。 バインディング プロパティの詳細については、次を参照してください。[バインドのプロパティの操作](https://msdn.microsoft.com/library/dd788467.aspx)します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

@@ -1,5 +1,5 @@
 ---
-title: トランスポートの種類の分離と処理 |Microsoft ドキュメント
+title: トランスポートの種類の分離と処理 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -23,29 +23,29 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0b14522c6bbf9393bc22f632c4db5eeb5e4a22a6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 23a65f525664d44a53760e5cb905e4db10f0f8a1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22238602"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65352467"
 ---
 # <a name="decoupling-transport-type-and-processing"></a>トランスポートの種類の分離と処理
-サービス指向ソリューションでは、ビジネス プロセスとメッセージの送受信の詳細を明確に区別することがよくあります。 これによって、ビジネス プロセスまたはソリューションのメッセージ処理部分を個別に変更できます。  
+サービス指向ソリューションでは、クリア行は、多くの場合、ビジネス プロセスとメッセージの送受信の詳細の間存在します。 これにより、ビジネス プロセスまたはソリューションのメッセージ処理部分を個別に変更することができます。  
   
- サービス指向ソリューションには、この設計方針に違反する箇所が 1 か所あります。 このセクションでは、状況、可能性のある代替方法、および選択された構造について説明します。  
+ サービス指向ソリューションでは、1 つの場所では、この設計原則に違反します。 このセクションでは、状況、代替、および選択されている構造について説明します。  
   
-## <a name="correlation-and-the-mqseries-adapter"></a>関連付けと MQSeries アダプタ  
- MQSeries アダプタを使用するため、標準の BizTalk Server 関連付け識別子は使用できません。 独自の関連付け識別子システムを持つ IBM バックエンド システムに関連付け識別子が使用されるためです。 代わりに、使用する必要があります、 **MQSeries.MQMD_CorrelId**と**MQSeries.MQMD_MsgID**プロパティです。 これらのプロパティを使用すると、トランスポート固有の情報がオーケストレーション (つまり、ビジネス プロセス) に配置されることがあります。  
+## <a name="correlation-and-the-mqseries-adapter"></a>関連付けと MQSeries アダプター  
+ MQSeries アダプターを使用するには、標準の BizTalk Server 関連付け識別子を使用できません。 これは、相関関係 id を独自の関連付け識別子システムを持つ IBM バックエンド システムに移動するためです。 代わりに、使用する必要があります、 **MQSeries.MQMD_CorrelId**と**MQSeries.MQMD_MsgID**プロパティ。 オーケストレーションで、そのため、ビジネス プロセスのトランスポートに固有の情報を配置する可能性があるこれらのプロパティを使用します。  
   
- この依存関係を処理するには、BizTalk Server の関連付け識別子を使用し、カスタム パイプライン コンポーネントを使用して MQSeries の関連付け識別子を変換する方法があります。 これにより、シナリオが複雑になります。 また、トランスポートが変更された場合、2 つのパイプライン コンポーネントを変更する必要があります。 最終的に、パイプライン コンポーネントの依存関係が解決されないで再配置されます。  
+ この依存関係を処理する方法の 1 つは、BizTalk Server 関連付け識別子を使用して、for MQSeries 関連付け識別子を変換するカスタム パイプライン コンポーネントを使用することです。 これにより、複雑さがシナリオに追加します。 さらに、トランスポートが変更された場合、2 つのパイプライン コンポーネントを変更する必要があります。 また、それを解決するのではなく、(パイプラインのコンポーネント) 内の依存関係を再配置が最終的には。  
   
- 別の方法として、MQSeries 固有の関連付け処理を個別のオーケストレーションに分離し、そのオーケストレーションを呼び出す方法があります。 これにより、ビジネス プロセスの独立性が確保されます。 ただし、オーケストレーション間のコンパイル時の依存関係が発生します。 トランスポートを変更する場合、両方のオーケストレーションの再コンパイルが必要です (ソリューションのスタブ バージョンからアダプタ バージョンへの移行など)。 また、この呼び出しにより、ソリューションの応答時間が長くなります。  
+ 別のオプションは、MQSeries 固有の関連付けを個別のオーケストレーション処理を分離し、そのオーケストレーションの呼び出しになります。 これにより、ビジネス プロセスの独立性が保持されます。 ただし、これは、オーケストレーションのコンパイル時の依存関係について説明します。 トランスポートを変更するには、両方のオーケストレーション (として、たとえばの移行のスタブからソリューションのアダプター バージョンに) 再コンパイルする必要があります。 呼び出しは、ソリューションの応答時間にも追加します。  
   
- 複雑になりパフォーマンスが低下する可能性を考慮した場合、オーケストレーションの MQSeries の関連付けを直接使用することが最も簡単です。  
+ 追加の複雑性とパフォーマンスが低下することを指定するには、ことが最も簡単、オーケストレーションから直接 MQSeries の関連付けを使用します。  
   
- アダプターとオーケストレーションの相関関係に関する詳細については、次を参照してください。 [MQSCorrelationSetOrchestration (BizTalk Server サンプル)](../core/mqscorrelationsetorchestration-biztalk-server-sample.md)です。  
+ アダプターとオーケストレーションの相関関係の詳細については、次を参照してください。 [MQSCorrelationSetOrchestration (BizTalk Server サンプル)](../core/mqscorrelationsetorchestration-biztalk-server-sample.md)します。  
   
 ## <a name="see-also"></a>参照  
- [指向ソリューションのサービスの実装の要点](../core/implementation-highlights-of-the-service-oriented-solution.md)   
+ [サービスの実装の要点指向のソリューション](../core/implementation-highlights-of-the-service-oriented-solution.md)   
  [MQSCorrelationSetOrchestration (BizTalk Server サンプル)](../core/mqscorrelationsetorchestration-biztalk-server-sample.md)

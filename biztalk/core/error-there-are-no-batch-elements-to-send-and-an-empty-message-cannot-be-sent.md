@@ -12,14 +12,14 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 73d0d44c8a5a206748eb128cd2461d1d04b54c93
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2a224625122fa498410dc9aed9036fe875e4b739
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36976667"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65346318"
 ---
-# <a name="there-are-no-batch-elements-to-send-and-an-empty-message-cannot-be-sent-as-it-is-not-configured-for-party"></a>空のメッセージがパーティ用に構成されていないため、送信するバッチ要素がないので空のメッセージを送信できません
+# <a name="there-are-no-batch-elements-to-send-and-an-empty-message-cannot-be-sent-as-it-is-not-configured-for-party"></a>送信するバッチ要素がないと、パーティが構成されていないので、空のメッセージを送信できません。
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                                               |

@@ -1,5 +1,5 @@
 ---
-title: EDI スキーマ |Microsoft ドキュメント
+title: EDI スキーマ |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,23 +12,23 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0b456b54050506fded81dd8d7d5c2582cc8be586
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: cdddced0b4927b13303abab57785472979a3216e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22239178"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65350331"
 ---
 # <a name="edi-schemas"></a>EDI スキーマ
-Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の EDI および AS2 は、次の種類のスキーマを使用して受信メッセージを処理し、送信メッセージを作成します。  
+Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI および AS2 は、次の種類のスキーマを使用して、受信メッセージを処理し、送信メッセージを生成します。  
   
--   ドキュメント スキーマ (メッセージのボディを定義します)。  
+-   メッセージ本文を定義するドキュメント スキーマ  
   
--   ヘッダー サービス スキーマ (メッセージのエンベロープを定義します) と確認管理スキーマ (技術確認と機能確認のエンベロープとボディを定義します)。  
+-   メッセージのエンベロープを定義するヘッダー サービス スキーマとエンベロープとの技術的および機能的な確認の本文を定義する受信確認管理スキーマ  
   
--   インターチェンジ XML (バッチ) スキーマ (保存されたバッチのエンベロープを定義します)。  
+-   インターチェンジの保存されたバッチのエンベロープを定義する XML (バッチ) スキーマ。  
   
--   プロパティ スキーマ (EDI コンテキストのプロパティを定義します)。 詳細については、次を参照してください。 [EDI コンテキスト プロパティ](../core/edi-context-properties.md)です。  
+-   EDI コンテキスト プロパティを定義するプロパティ スキーマです。 詳細については、次を参照してください。 [EDI コンテキスト プロパティ](../core/edi-context-properties.md)します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
@@ -36,6 +36,6 @@ Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernover
   
 -   [EDI サービスと管理スキーマ](../core/edi-service-and-control-schemas.md)  
   
--   [EDI バッチ スキーマ](../core/edi-batch-schemas.md)  
+-   [EDI のバッチ スキーマ](../core/edi-batch-schemas.md)  
   
 -   [HIPAA スキーマのトリガー フィールドの注釈](../core/hipaa-schema-trigger-field-annotations.md)

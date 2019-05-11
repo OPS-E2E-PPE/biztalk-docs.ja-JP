@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10538 |Microsoft Docs'
+title: シングル サインオン:イベント 10538 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9f4b7fba63d26fde664e14470eb95b41a1580ae7
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d9d1a1b8b09d9bc4725c55060aebe705f256e691
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36975779"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65250378"
 ---
-# <a name="single-sign-on-event-10538"></a>シングル サインオン: イベント 10538
+# <a name="single-sign-on-event-10538"></a>シングル サインオン:イベント 10538
 ## <a name="details"></a>詳細  
 
 |                 |                                                                           |
@@ -30,17 +30,17 @@ ms.locfileid: "36975779"
 |  イベント ソース   |                                  ENTSSO                                   |
 |    コンポーネント    |                                    CO                                     |
 |  シンボル名  |                           SSO_WARN_APP_DISABLED                           |
-|  メッセージ テキスト   | このアプリケーションは現在無効になっています。%r<br /><br /> アプリケーション名: %1 |
+|  メッセージ テキスト   | アプリケーションは、現在 disabled.%r です。<br /><br /> アプリケーション名: %1 |
 
 ## <a name="explanation"></a>説明  
- この警告イベントは、アプリケーション管理者が SSO 関連アプリケーションを無効にしていることを示します。  
+ この警告イベントは、SSO 関連アプリケーションが無効になっている、アプリケーション管理者によってを示します。  
 
 ## <a name="user-action"></a>ユーザーの操作  
- この警告を解消するには、次の操作を行います:   
+ この警告を解決するには、次の 1 つ以上の操作を行います。  
 
-- アプリケーション管理者に問い合わせて、SSO 関連アプリケーションを有効にします。 SSO 管理ツール (GUI またはコマンド ライン) を使用して行うことができます。  
+- SSO 関連アプリケーションを有効にする、アプリケーション管理者に問い合わせてください。 これ行う SSO 管理ツール (GUI またはコマンドライン) を使用します。  
 
-  詳細については、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ヘルプの次の情報を参照してください:   
+  詳細については、の次のリソースを参照してください。[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプ。  
 
 - [関連アプリケーションを有効にする方法](../core/how-to-enable-an-affiliate-application.md)  
 

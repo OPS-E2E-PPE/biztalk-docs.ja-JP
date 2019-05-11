@@ -1,5 +1,5 @@
 ---
-title: BizTalk Server Integration2 |Microsoft ドキュメント
+title: BizTalk Server Integration2 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,29 +12,29 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c47976873fcdd4efbb63bbceca653802cb8b9962
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: aa771b568123a9aedaf7e6d53928a20a0c659270
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26007083"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65302322"
 ---
 # <a name="biztalk-server-integration"></a>BizTalk Server の統合
-AmberPoint は、カスタム BizTalk パイプライン コンポーネントとして、Microsoft BizTalk Server の統合製品をパッケージ化します。 図 1 に示すように、Visual Studio を使用して、既存のカスタム パイプラインにこのコンポーネントを追加できます。  
+AmberPoint では、カスタム BizTalk パイプライン コンポーネントとして、Microsoft BizTalk Server 統合製品をパッケージ化します。 図 1 に示すように、Visual Studio を使用して、既存のカスタム パイプラインにこのコンポーネントを追加できます。  
   
- ![VisualStudio パイプライン](../esb-toolkit/media/ch9-visualstudiopipeline.jpg "Ch9 VisualStudioPipeline")  
+ ![VisualStudio Pipeline](../esb-toolkit/media/ch9-visualstudiopipeline.jpg "Ch9-VisualStudioPipeline")  
   
  **図 1**  
   
  **送信パイプラインに AmberPoint コンポーネントをインストールします。**  
   
- さらに、AmberPoint 船 4 つ定義済みパイプライン既存に直接バインドできる受信場所および送信ポートが BizTalk 管理コンソールを使用します。 図 2 は、アダプターに、受信パイプラインのバインディングを示します。  
+ さらに、AmberPoint 船 4 つ定義済みパイプライン既存に直接バインドできる受信場所と送信ポートが BizTalk 管理コンソールを使用します。 図 2 は、アダプター、受信パイプラインのバインドを示します。  
   
  ![AmberPoint のバインド](../esb-toolkit/media/ch9-bindingamberpoint.jpg "Ch9 BindingAmberPoint")  
   
  **図 2**  
   
- **受信アダプターにパイプラインの AmberPoint のバインド**  
+ **受信アダプターにパイプラインを AmberPoint のバインド**  
   
 > [!NOTE]
->  AmberPoint SOA 管理システム (SMS) の製品は、BizTalk Server と統合 AmberPoint, Inc. の製品です。 AmberPoint や、SOA ガバナンス製品に関する詳細については、次を参照してください。、 [AmberPoint](http://go.microsoft.com/fwlink/?LinkId=188561) Web サイトです。
+>  AmberPoint SOA 管理システム (SMS) 製品は、BizTalk Server と統合 AmberPoint, Inc. の製品です。 AmberPoint と SOA ガバナンス製品の詳細については、次を参照してください。、 [AmberPoint](http://go.microsoft.com/fwlink/?LinkId=188561) Web サイト。

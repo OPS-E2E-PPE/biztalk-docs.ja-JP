@@ -1,5 +1,5 @@
 ---
-title: 定数 |Microsoft ドキュメント
+title: 定数 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 674307acea439bc260399cc01da4165eedaa2da5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ba1da4a690ca37a5012f5abb2e31f1229cb1b4bb
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22237794"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65354649"
 ---
 # <a name="constant"></a>定数
 1 つの定数値をスタックにプッシュします。  
@@ -35,12 +35,12 @@ ms.locfileid: "22237794"
  定数値。  
   
 ## <a name="pushed-value"></a>プッシュされた値  
- 定数値が含まれた文字列。  
+ 定数の値を表す文字列です。  
   
-## <a name="remarks"></a>解説  
+## <a name="remarks"></a>コメント  
   
 ## <a name="example"></a>例  
- 次のサンプル フィルター式を使用して、**定数**で使用される、値をプッシュする操作、 **Equals**操作が現在のアクティビティ名が"FoodAndDrinksPolicy"であることを確認します。  
+ 次のサンプルのフィルター式を使用して、**定数**でを使用して値をプッシュする操作、 **Equals**操作が現在のアクティビティ名が"FoodAndDrinksPolicy"であることを確認します。  
   
 ```  
 <ic:Filter>  
@@ -54,7 +54,7 @@ ms.locfileid: "22237794"
 </ic:Filter>  
 ```  
   
- これは、一般的な使用パターン、**定数**操作します。  
+ これは、一般的な使用パターン、**定数**操作。  
   
 ## <a name="see-also"></a>参照  
- [インターセプタの操作](../core/interceptor-operations.md)
+ [インターセプターの操作](../core/interceptor-operations.md)

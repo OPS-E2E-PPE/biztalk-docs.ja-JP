@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10527 |Microsoft Docs'
+title: シングル サインオン:イベント 10527 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ac787d375e8ccc4c578c2450b7cc6128dd427483
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 57f5ac8452d96e3af54ff4d5cfc21f6664435bc6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36972995"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65262508"
 ---
-# <a name="single-sign-on-event-10527"></a>シングル サインオン: イベント 10527
+# <a name="single-sign-on-event-10527"></a>シングル サインオン:イベント 10527
 ## <a name="details"></a>詳細  
 
 |                 |                                                                                                                                                                                                     |
@@ -30,17 +30,17 @@ ms.locfileid: "36972995"
 |  イベント ソース   |                                                                                               ENTSSO                                                                                                |
 |    コンポーネント    |                                                                                                  0                                                                                                  |
 |  シンボル名  |                                                                                     SSO_ERROR_GET_SECRET_FAILED                                                                                     |
-|  メッセージ テキスト   | マスター シークレットの取得要求が失敗しました。%r<br /><br /> シークレット番号: % 1 %r<br /><br /> クライアント ユーザー: % 2 %r<br /><br /> クライアント コンピューターの場合: % 3 %r<br /><br /> 追跡 ID: % 4 %r<br /><br /> エラー コード: %5 |
+|  メッセージ テキスト   | マスター シークレット failed.%r を取得する要求<br /><br /> シークレット番号: % 1 %r<br /><br /> クライアント ユーザー: % 2 %r<br /><br /> クライアント コンピューターの場合: % 3 %r<br /><br /> 追跡 ID: % 4 %r<br /><br /> エラー コード: %5 |
 
 ## <a name="explanation"></a>説明  
- このエラー イベントは、マスター シークレットの取得要求が失敗したことを示します。 これらの場合、アプリケーション イベント ログに関連するメッセージがあります。  
+ このエラー イベントは、マスター シークレットを取得する要求が失敗したことを示します。 このような場合があります関連するメッセージ、アプリケーション イベント ログ。  
 
 ## <a name="user-action"></a>ユーザーの操作  
  このエラーを解決するには、次の操作を行います。  
 
-- 関連するイベントまたはエラーについては、アプリケーション イベント ログを確認します。  
+- アプリケーション イベント ログの関連するイベントまたはエラーを確認します。  
 
-  詳細については、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ヘルプの次の情報を参照してください:   
+  詳細については、の次のリソースを参照してください。[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプ。  
 
 - [マスター シークレットを生成する方法](../core/how-to-generate-the-master-secret.md)  
 

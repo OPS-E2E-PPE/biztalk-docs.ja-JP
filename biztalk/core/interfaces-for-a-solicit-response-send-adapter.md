@@ -12,20 +12,20 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f5056092886ad9d73d3db3dcc910038bc7dcd6e4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3958629596a11bbfcb6ae109c36ab0237a780542
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37024136"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65381869"
 ---
-# <a name="interfaces-for-a-solicit-response-send-adapter"></a>送信請求 - 応答送信アダプター用のインターフェイス
+# <a name="interfaces-for-a-solicit-response-send-adapter"></a>送信アダプターの送信請求応答用のインターフェイス
 送信アダプターが受信サーバーに応答メッセージを送信するアダプターと同じバッチ メカニズムを使用します。  
   
 > [!NOTE]
->  送信請求 - 応答アダプターではメッセージを非同期で処理することをお勧めします。 同期的に処理した場合、メッセージが重複する危険性があります。  
+>  メッセージの処理を非同期的に送信請求-応答アダプターをお勧めします。 同期的にメッセージの処理、メッセージの重複のリスクがあります。  
   
- 送信アダプターが送信請求 - 応答モードで動作するには、アダプターに次のインターフェイスを実装する必要があります。  
+ 送信請求-応答モードで動作する次のインターフェイスを実装するアダプターの必要性を送信するには。  
   
 - **IBTTransport**  
   
@@ -41,9 +41,9 @@ ms.locfileid: "37024136"
   
 - **IBTBatchCallBack**  
   
-  オブジェクト間では次の対話処理が行われます。  
+  オブジェクトの相互作用するための手順は次のとおりです。  
   
-1. 送信アダプターは、送信請求メッセージを送信した後、送信先のサーバーから応答メッセージを受け取ります。 その後、トランスポート プロキシからバッチを取得します。  
+1. アダプターは、送信請求メッセージを送信した後に戻す応答メッセージを受信送信先のサーバーから。 トランスポート プロキシからバッチを取得します。  
   
 2. アダプターのバッチに呼び出すことによって、応答メッセージを追加する**ibttransportproxy::submitresponsemessage**します。  
   
@@ -51,10 +51,10 @@ ms.locfileid: "37024136"
   
 4. メッセージング エンジンがアダプターの**ibtbatchcallback::batchcomplete**送信操作の結果を通知するトランスポート プロキシを使用してコールバック メソッド。  
   
-   送信請求 - 応答送信アダプターを作成するときの、オブジェクト間の対話処理を次に示します。  
+   次の図は、送信アダプターの送信請求-応答の作成に関連するオブジェクトの相互作用を示しています。  
   
    ![](../core/media/ebiz-sdk-devadapter13.gif "ebiz_sdk_devadapter13")  
-   送信請求 - 応答送信アダプターにおける対話処理  
+   送信請求-応答送信アダプターにおける対話  
   
 ## <a name="see-also"></a>参照  
  [アダプター変数](../core/adapter-variables.md)   

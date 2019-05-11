@@ -1,5 +1,5 @@
 ---
-title: フラット ファイル アセンブラー パイプライン コンポーネントにおける構造の強化を文書化 |Microsoft ドキュメント
+title: ドキュメントのフラット ファイル アセンブラー パイプライン コンポーネントにおける構造の強化 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,12 +15,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bb35c7b31eda69d03d532d13d975d618d4f36f76
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 028f09b50cf4abd40475163d568e220087fd1f44
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22238706"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65350942"
 ---
 # <a name="document-structure-enforcement-in-the-flat-file-assembler-pipeline-component"></a>フラット ファイル アセンブラー パイプライン コンポーネントにおけるドキュメント構造の強化
 フラット ファイル アセンブラーでドキュメントまたはエンベロープ スキーマが明示的に参照されている場合、参照されたスキーマに対応するメッセージ タイプのドキュメントだけが処理されます。 その他すべてのドキュメントは、該当するスキーマが配置されていたとしても、処理から除外されます。  

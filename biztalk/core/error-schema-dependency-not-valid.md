@@ -1,5 +1,5 @@
 ---
-title: エラー - スキーマの依存関係が有効ではありません |Microsoft ドキュメント
+title: エラー - スキーマの依存関係が無効です |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,22 +14,22 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 36326608f191b520c41cb42890aec029c432fd30
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: bcee29e7074ca012c11aea738c5fa44c6e702352
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22241394"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65346958"
 ---
-# <a name="error---schema-dependency-not-valid"></a>エラー - スキーマの依存関係が有効ではありません。
+# <a name="error---schema-dependency-not-valid"></a>エラー - スキーマの依存関係が無効です。
 **エラー コード**  
   
  BEC2009  
   
  **説明**  
   
- すべての依存スキーマ (現在のスキーマにインポート、包含、再定義された依存スキーマなど) は、この BizTalk プロジェクトに追加するか、このプロジェクトによって参照されるアセンブリ内に存在する必要があります。 偶数スキーマ**インポート**、**を含める**、および**を再定義**リモート Web サイト上で指定するディレクティブは、この BizTalk プロジェクトに追加する必要があります。  
+ 含まれる、現在のスキーマで再定義または BizTalk プロジェクトに追加する必要があります。 またはこのプロジェクトで参照されるアセンブリ内に存在にインポートされているものなど、すべての依存スキーマ。 スキーマ**インポート**、**含める**、および**再定義**リモート Web サイト上で指定するディレクティブは、この BizTalk プロジェクトに追加する必要があります。  
   
  **ユーザーの操作**  
   
- 使用して、**既存項目の追加**コマンドを**ファイル**メニューと BizTalk プロジェクトにこのスキーマが依存しているすべてのスキーマを追加する Microsoft® BizTalk® Server プロジェクトのショートカット メニュー。 BizTalk プロジェクトにスキーマを追加する前に、スキーマを Web サイトからローカル ハード ディスクにダウンロードする必要が生じる場合もあります。
+ 使用して、**既存項目の追加**コマンドを**ファイル**メニューと BizTalk プロジェクトにこのスキーマが依存しているすべてのスキーマを追加する Microsoft® BizTalk® Server プロジェクトのショートカット メニュー。 BizTalk プロジェクトに追加する前に、ローカル ハード_ディスクに Web サイトからこのようなスキーマをダウンロードする必要があります。

@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3d20e2fa78d921c160b8dfe6b96c79c1b15d353e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9fb37b7ea61fed79e0d6dafc8762be719df4a9bf
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37004995"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65296304"
 ---
 # <a name="install-biztalk-accelerator-for-hl7"></a>HL7 の BizTalk アクセラレータをインストールします。
 
@@ -59,7 +59,7 @@ ms.locfileid: "37004995"
    > [!TIP]
    >  以降で[!INCLUDE[bts2013r2](../../includes/bts2013r2-md.md)]以降のバージョン、[!INCLUDE[HL7_CurrentVersion_abbrev_md](../../includes/hl7-currentversion-abbrev-md.md)]インストールには、32 ビット インストール パッケージと 64 ビット インストール パッケージが含まれています。
    > 
-   > 32 ビット コンピューターでは、32 ビット パッケージのみをインストールします。 64 ビット コンピューターでは、32 ビット インストール**または**64 ビット パッケージ。 64 ビット パッケージでは、アダプターとパイプラインの実行を 32 ビット モードと 64 ビット モードの両方で有効にできます。  
+   > 32 ビット コンピューターで 32 ビット パッケージのみをインストールします。 64 ビット コンピューターでは、32 ビット インストール**または**64 ビット パッケージ。 64 ビット パッケージは、アダプターと 32 ビットと 64 ビットの両方のモードで実行するパイプラインを使用できます。  
 
 2. [ようこそ] ページで、次のように選択します。**次**します。  
 
@@ -73,7 +73,7 @@ ms.locfileid: "37004995"
 
    * BizTalk Server 管理者
    * BizTalk Application Users
-   * [BizTalk Server B2B Operators]
+   * BizTalk Server B2B Operators
    * BizTalk Server オペレータ
 
    **[次へ]** を選択します。 
@@ -92,7 +92,7 @@ ms.locfileid: "37004995"
    |   **接続のテスト**    |                                                                                                                                                                                              選択すると、SQL Server の接続があることを確認します。                                                                                                                                                                                               |
 
     > [!NOTE]
-    >  既に選択されているデータベースが存在する場合は、メッセージ ボックスが表示されます。 **[OK]** をクリックし、続行します。  
+    >  既に選択されているデータベースが存在する場合は、メッセージ ボックスが表示されます。 選択**OK**を続行します。  
 
 10. **[インストール]** を選択します。
 
@@ -107,7 +107,7 @@ ms.locfileid: "37004995"
    > [!TIP]
    >  以降で[!INCLUDE[bts2013r2](../../includes/bts2013r2-md.md)]以降のバージョン、[!INCLUDE[HL7_CurrentVersion_abbrev_md](../../includes/hl7-currentversion-abbrev-md.md)]インストールには、32 ビット インストール パッケージと 64 ビット インストール パッケージが含まれています。 
    > 
-   > 32 ビット コンピューターでは、32 ビット パッケージのみをインストールします。 64 ビット コンピューターでは、32 ビット インストール**または**64 ビット パッケージ。 64 ビット パッケージでは、アダプターとパイプラインの実行を 32 ビット モードと 64 ビット モードの両方で有効にできます。  
+   > 32 ビット コンピューターで 32 ビット パッケージのみをインストールします。 64 ビット コンピューターでは、32 ビット インストール**または**64 ビット パッケージ。 64 ビット パッケージは、アダプターと 32 ビットと 64 ビットの両方のモードで実行するパイプラインを使用できます。  
 
 2. [ようこそ] ページで、次のように選択します。**次**します。  
 

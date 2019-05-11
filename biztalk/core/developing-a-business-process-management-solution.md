@@ -1,5 +1,5 @@
 ---
-title: ビジネス プロセス管理ソリューションの開発 |Microsoft ドキュメント
+title: ビジネス プロセス管理ソリューションの開発 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,15 +15,15 @@ caps.latest.revision: 26
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 60632efe6cfc8d48d395d20949012354874c7e46
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e040d7a62628871e1daa45bb3aaf7bdec873bfd4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22239642"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65351577"
 ---
 # <a name="developing-a-business-process-management-solution"></a>ビジネス プロセス管理ソリューションの開発
-このセクションでは、このソリューションの設計に関係する基本的なパターン、および、パターンを BizTalk コンポーネントや構造に変換する方法について説明します。 ここでは、ソリューションでの処理を通じた注文メッセージを扱い、追加実装の詳細、ソリューションのバージョン管理とサイズ調整、およびメッセージとファイル参照についても説明します。 ソリューションとその設計の背後にあるビジネス要件に関する詳細については、「ビジネス要件」を参照してください[ビジネス プロセス管理ソリューションを理解する](../core/understanding-the-business-process-management-solution.md)です。  
+このセクションでは、ソリューションの設計に関連する基本的なパターンとこれらのパターンを BizTalk コンポーネントと構造体に変換する方法について説明します。 注文メッセージにも従うことソリューションでは、処理は、追加実装の詳細がわかりますバージョンと、ソリューションをスケールする方法と、メッセージとファイルの参照を提供します。 ソリューションとその設計の背後にあるビジネス要件の詳細については、「ビジネス要件」を参照してください[、ビジネス プロセス管理ソリューションを理解する](../core/understanding-the-business-process-management-solution.md)します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
@@ -33,7 +33,7 @@ ms.locfileid: "22239642"
   
 -   [ビジネス プロセス管理ソリューションでの処理](../core/processing-in-the-business-process-management-solution.md)  
   
--   [ビジネス プロセス管理ソリューションの実装の要点](../core/implementation-highlights-of-the-business-process-management-solution.md)  
+-   [ビジネス プロセス管理ソリューションの実装の重要なポイント](../core/implementation-highlights-of-the-business-process-management-solution.md)  
   
 -   [BAM によるビジネス プロセス管理ソリューションの監視](../core/monitoring-the-business-process-management-solution-with-bam.md)  
   

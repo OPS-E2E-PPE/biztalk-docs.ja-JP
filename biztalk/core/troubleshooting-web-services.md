@@ -12,17 +12,17 @@ caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5166616600fd0748e6f49650f0f462ca2c678e2c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7d50e7e47b1e774aca8fc0f2a63e8cd86e2a33af
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37024480"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65253636"
 ---
 # <a name="troubleshooting-web-services"></a>Web サービスのトラブルシューティング
-Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] には Web サービスが広く採用され、SOAP アダプターで使用したり、オーケストレーションを Web サービスとして公開したりできるようになっています。 このトピックでは、Web サービスをトラブルシューティングするための手順、Web サービスの一般的な問題とその解決方法について説明します。  
+Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] には Web サービスが広く採用され、SOAP アダプターで使用したり、オーケストレーションを Web サービスとして公開したりできるようになっています。 このトピックでは、Web サービスだけでなく Web サービスの一般的な問題とそれらの問題を解決する方法のトラブルシューティングに利用できるいくつかの手順を説明します。  
   
-## <a name="use-net-framework-tracing-to-capture-and-log-errors-in-a-web-service"></a>.NET Framework トレースで Web サービスのエラーをキャプチャしてログに記録する方法  
+## <a name="use-net-framework-tracing-to-capture-and-log-errors-in-a-web-service"></a>.NET Framework のトレースを使用してキャプチャし、Web サービスでエラーのログ  
  .NET Framework **System.Diagnostics.Trace**をキャプチャしてテキスト ファイルにエラーを書き込むクラスを使用できます。  
   
 #### <a name="to-use-the-systemdiagnosticstrace-class-to-capture-and-write-errors-to-a-text-file"></a>System.Diagnostics.Trace クラスでエラーをキャプチャしてテキスト ファイルに書き込むには  
@@ -137,7 +137,7 @@ Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernover
 -   XmlSerializer で生成されたコードにコンパイル エラーがある。  
   
 ##### <a name="resolution"></a>解決策  
- このエラーは、マイクロソフト サポート技術情報の資料 823196、記載されて[PRB: Web サービスを"System.IO.FileNotFoundException"エラー時に、クライアント アプリケーションの呼び出しを受信する](http://go.microsoft.com/fwlink/?LinkID=84694)"。 このエラーを解決するには、このサポート技術情報の記事の「解決方法」のセクションの手順に従ってください。  
+ このエラーは、マイクロソフト サポート技術情報の資料 823196、記載されて[PRB:クライアント アプリケーションが Web サービスを呼び出すと"System.IO.FileNotFoundException"エラーが発生する](http://go.microsoft.com/fwlink/?LinkID=84694)"。 このエラーを解決するには、このサポート技術情報の記事の「解決方法」のセクションの手順に従ってください。  
   
 #### <a name="date-fields-are-removed-from-documents-processed-by-a-web-service-generated-with-the-biztalk-server-web-services-publishing-wizard"></a>BizTalk Server の Web サービス公開ウィザードで生成した Web サービスでドキュメントを処理すると、日付フィールドが削除される  
   
@@ -145,10 +145,10 @@ Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernover
  BizTalk Server Web サービス公開ウィザードで、フィールドに含まれるデータが生成された web サービスを持つドキュメントを処理する場合、**データ型**の**xs:date**と**Nillable**プロパティの**True**ドキュメントから削除されます。  
   
 ##### <a name="cause"></a>原因  
- この問題は、Microsoft .NET Framework クラス ライブラリの名前空間 System.Xml.Serialization で使用可能な XmlSerializer クラスの既知の問題が原因で発生します。  
+ この問題は、Microsoft .NET Framework クラス ライブラリの名前空間 System.Xml.Serialization で提供されている XmlSerializer クラスを使用して既知の問題により発生します。  
   
 ##### <a name="resolution"></a>解決策  
- この問題を解決するには、Microsoft サポート技術情報の資料 925272 に記載されている .NET Framework 2.0 修正プログラムのインストール"[修正: XML シリアル化は、.NET Framework 2.0 の XSD スキーマの一部の省略可能な要素を失う可能性があります](http://go.microsoft.com/fwlink/?LinkId=84696)"。  
+ この問題を解決するには、Microsoft サポート技術情報の資料 925272 に記載されている .NET Framework 2.0 修正プログラムのインストール"[修正します。XML シリアル化は、.NET Framework 2.0 の XSD スキーマの一部の省略可能な要素を失う可能性があります](http://go.microsoft.com/fwlink/?LinkId=84696)"。  
   
 ## <a name="see-also"></a>参照  
  [IIS のアクセス許可の問題を解決するためのガイドライン](../core/guidelines-for-resolving-iis-permissions-problems.md)   

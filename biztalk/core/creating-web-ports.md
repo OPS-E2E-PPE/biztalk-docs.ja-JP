@@ -1,5 +1,5 @@
 ---
-title: Web ポートの作成 |Microsoft ドキュメント
+title: Web ポートの作成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -18,12 +18,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d73c30e7ef0f4b31a4bcca79099a08353594c124
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 745f575b4208e3c382dfa66dd1f268f60fb94327
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22238202"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65353508"
 ---
 # <a name="creating-web-ports"></a>Web ポートの作成
 Web ポートは、Web サービスを利用する (呼び出す) ために使用する、特別に構成されたポートです。 Web ポートには、一方向 (要求のみ) および双方向 (要求 - 応答) の Web メソッドを表す複数の操作を含めることができます。 Web ポート内の各操作は、Web サービス内の 1 つのメソッドを表します。  

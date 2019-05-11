@@ -12,14 +12,14 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 947a557a81c6857b5d31f447acb2ec5a46cfcef9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 762aa7fbbb76cb97e796fa85e89158cd594d8ce0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36993355"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65253875"
 ---
-# <a name="the-x12-transaction-set-had-a-mismatched-count-in-se01"></a>X12 トランザクション セットの SE01 に一致しないカウントがあります
+# <a name="the-x12-transaction-set-had-a-mismatched-count-in-se01"></a>X12 トランザクション セットは、SE01 に一致しないカウントが
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                                                               |
@@ -30,10 +30,10 @@ ms.locfileid: "36993355"
 |  イベント ソース   |                    [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI                     |
 |    コンポーネント    |                                                          EDI エンジン                                                           |
 |  シンボル名  |                                                     X12StSeCountMismatch                                                      |
-|  メッセージ テキスト   | X12 トランザクション セットの SE01 に一致しないカウントがあります。 SE01 が{0}されている一方、{1}します。 問題の修正が完了しました。 |
+|  メッセージ テキスト   | X12 トランザクション セットは、SE01 に一致しないカウントが。 SE01 が{0}されている一方、{1}します。 修正されています。 |
   
 ## <a name="explanation"></a>説明  
- この警告は、トランザクション セット トレーラー (SE01 フィールド) の数値が、インターチェンジのトランザクション セットのセグメント数と一致しなかったことを示します。 送信パイプラインは、SE01 フィールドのカウントを修正し、警告を表示します。  
+ この警告は、トランザクション セット トレーラー (SE01 フィールド) 内の数が、インターチェンジのトランザクション セットのセグメントの数と一致しないことを示します。 送信パイプラインは、SE01 フィールドのカウントを修正し、警告を表示します。  
   
 ## <a name="user-action"></a>ユーザーの操作  
  必要なアクションはありません。

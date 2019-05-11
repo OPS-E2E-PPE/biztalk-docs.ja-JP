@@ -14,52 +14,52 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f4663fa2615803b50bd8d9172c599665a787ecc2
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 96890b0778e5e7c0684e1e5e326f245460487dd9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37008459"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65345295"
 ---
-# <a name="ftp-adapter"></a>FTP アダプタ
-FTP アダプターを使用すると、FTP サーバーと Microsoft BizTalk Server の間でデータを交換できます。これにより、基幹業務アプリケーションを搭載したさまざまなプラットフォームに保存されている重要なデータを統合できます。 アダプターは、SOCKS4 経由での FTP サーバーまたは SOCKS5 プロキシ サーバーに接続できます。  
+# <a name="ftp-adapter"></a>FTP アダプター
+FTP アダプターは、FTP サーバーと Microsoft BizTalk Server の間でデータを交換しのさまざまな基幹業務アプリケーションとプラットフォームに格納されている重要なデータを統合できます。 アダプターは、SOCKS4 経由での FTP サーバーまたは SOCKS5 プロキシ サーバーに接続できます。  
   
- FTP アダプターでは、FTP サーバーから BizTalk Server に多数のファイルを送信できます。 また、ファイルをオーケストレーションの一部として送信できます。  
+ FTP アダプターは、FTP サーバーから BizTalk Server の多数のファイルを転送できます。 ファイルは、オーケストレーションの一部としてそのも転送できます。  
   
  FTP アダプターは、2 つのアダプターで構成されます-受信アダプタと送信アダプター。  
 
-このセクションでは、FTP 受信アダプタと FTP 送信アダプタ、およびセキュリティとベスト プラクティス情報について説明します。  
+このセクションの説明、FTP 受信し、送信アダプター、およびセキュリティとベスト プラクティスの情報。  
   
  ## <a name="receive-adapter"></a>受信アダプター  
   
- FTP 受信アダプターを使用すると、FTP サーバーから [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] にデータを移動できます。 主な機能は次のとおりです。  
+ FTP 受信アダプターを使用する FTP サーバーからデータを移動する[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]します。 主な機能は次のとおりです。  
   
-- 要求時に FTP サーバーからファイルを取得します。  
+- 必要に応じて、FTP サーバーからファイルを取得します。  
   
 - 構成可能なスケジュールに基づいてポーリングを実行しています。  
   
-- FTP サーバーにポーリングし、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] にデータを直接送信します。  
+- FTP サーバーにポーリングし、データに直接送信します。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]  
   
-- FTP サーバーを IP アドレス、ポート、パスワード、およびホスト名で指定します。  
+- IP アドレス、ポート、パスワード、およびホスト名として FTP サーバーを指定します。  
   
 - ファイルの配信を保証  
   
-   また、FTP 受信アダプターは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールおよび BizTalk エクスプローラーと連動し、各受信機能を構成および管理します。この機能は、次の構成項目で構成されます。  
+   また、FTP 受信アダプターとの連携、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールと BizTalk エクスプローラを構成および管理する各受信関数で、次の構成項目で構成されます。  
   
-- FTP コマンドを実行するためのポーリング間隔 (例、60 分)  
+- FTP コマンド (たとえば、60 分) を実行するポーリング間隔  
   
-- ドキュメントを特定の BizTalk 送信ポートまたは受信場所にルーティングする際に使用する情報  
+- 特定の BizTalk へのドキュメントをルーティングする際に使用して情報の送信ポートまたは受信場所  
   
 > [!NOTE]
->  FTP 受信アダプターは、パーティション分割されたデータ セットからのファイルの受信をサポートしていません。  
+>  FTP 受信アダプタは、パーティション分割されたデータ セットからのファイルの受信をサポートしていません。  
   
 ## <a name="send-adapter"></a>送信アダプター  
   
- FTP 送信アダプターを使用すると、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] から FTP サーバーにデータを移動できます。 主な機能は次のとおりです。  
+ FTP 送信アダプタからデータを移動することができます[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]FTP サーバーにします。 主な機能は次のとおりです。  
   
--   要求時に送信を実行する機能  
+-   オンデマンドで送信を実行するには  
   
--   配信の保証  
+-   保証された配信  
   
 ## <a name="supported-platforms"></a>サポートされているプラットフォーム  
 FTP サーバーに、次のプラットフォームのいずれかに格納されている情報にアクセスします。  
@@ -82,23 +82,23 @@ FTP サーバーに、次のプラットフォームのいずれかに格納さ�
   
 - HP-UX  
   
-- Linux (Redhat 7.x)  
+- LINUX (Redhat 7.x)  
   
-- IBM z/OS v1.9 (MVS)  
+- IBM Z/OS v1.9 (MVS)  
   
 - MVS を実行している IBM O/S 390  
   
 - AS/400 OS/400 V5R1  
   
-- i5/OS V5R4 (AS400)  
+- OS/i5 V5R4 (AS400)  
   
-- i5/OS V6R1 (AS400)  
+- OS/i5 V6R1 (AS400)  
   
 - GXS ICS  
   
 - AIX  
   
-  サービス パックが特に記載されていない限り、すべてのサービス パックがサポートされます。  
+  サービス パックが具体的にはされている場合を除き、すべてのサービス パックがサポートされます。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

@@ -2,12 +2,12 @@
 redirect_url: /biztalk/core/deploying-biztalk-adapter-for-jd-edwards-enterpriseone/
 redirect_document_id: true
 ROBOTS: NOINDEX
-ms.openlocfilehash: d2989e2e638a4d7f5c1fc56935578b04d75acfa0
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 91260fbb5a5ec1258ba76314ed36f480a201e5f3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36986275"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65352005"
 ---
 # <a name="deploying-ports-and-assemblies"></a>ポートとアセンブリの展開
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ポートとターゲット コンピューター上のアセンブリを複製することができます。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] により、送信ポートおよび受信場所の構成が XML ファイルにエクスポートされます。  

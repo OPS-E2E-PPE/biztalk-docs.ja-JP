@@ -19,12 +19,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: df24dced4d7075e85b8b002bf90b821ce745f91e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0e0cc2b49c154f930c925ae88ee66889107a63f2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22289162"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65379699"
 ---
 # <a name="what-is-an-aggregation"></a>集計とは何ですか。
 Excel では、集計を事前計算された要約データとして定義し、質問の答えをあらかじめ用意しておくことで、クエリの応答時間を短縮します。 たとえば、数十万行が格納されているデータ ウェアハウスのファクト テーブルに対して、特定の 2 つの製品の出荷スケジュールを要求するクエリがあるとします。この計算でファクト テーブルをスキャンする必要があると、応答に時間がかかります。 ただし、このクエリの回答となる集計データがあらかじめ計算されていれば、即座に応答できます。  

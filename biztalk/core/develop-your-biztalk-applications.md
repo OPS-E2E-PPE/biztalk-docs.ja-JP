@@ -1,5 +1,5 @@
 ---
-title: BizTalk アプリケーションの開発 |Microsoft ドキュメント
+title: BizTalk アプリケーションの開発 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,19 +12,19 @@ caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e813805b264a8bb6d813b20a6c72ce7cd4db5e56
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6b97766c48433983536e5cd7c4f7be696d8e2bba
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22238818"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65351624"
 ---
 # <a name="develop-your-biztalk-applications"></a>BizTalk アプリケーションを開発します。
-このセクションでは、BizTalk アプリケーションの作成に携わる開発者向けの情報が記載されています。 これらのアプリケーションが作成されると、通常、オペレーション コンソールと管理タスクの情報を使用して、管理者によって管理されます。  
+このセクションには、BizTalk アプリケーションの作成に携わる開発者向けの情報が含まれています。 これらのアプリケーションが作成されると、通常、操作や管理タスクで情報を使用して、管理者によって管理されます。  
   
- 「BizTalk Server アプリケーションの開発」のトピックでは、BizTalk Server アプリケーションの開発に伴う各種の作業 (スキーマ定義、メッセージのマッピング、受信/送信パイプライン、メッセージのサブスクリプション、オーケストレーションなど) について説明しています。  
+ トピックの「BizTalk Server アプリケーションの開発がスキーマ定義メッセージのマッピング、受信/送信パイプライン、メッセージのサブスクリプション、このようなもので構成される、BizTalk Server アプリケーションの開発に伴う作業について説明し、、オーケストレーションします。  
   
- 「カスタム コンポーネントの作成」のトピックでは、BizTalk Server インフラストラクチャの特定の要素を変更したり拡張したりするためのコンポーネント (送信/受信アダプター コンポーネント、送信/受信パイプライン コンポーネント、Functoid コンポーネントなど) を開発する方法について説明しています。 これらのインフラストラクチャ要素は、あくまで BizTalk Server アプリケーションによって使用されるものであり、それ自体が BizTalk Server アプリケーションに組み込まれるものではありません。  
+ トピックを作成するカスタム コンポーネントが変更または BizTalk Server インフラストラクチャの特定の要素を拡張するなどを送信または受信アダプター コンポーネント、送信または受信パイプライン コンポーネント、および functoid に使用されるコンポーネントの開発について説明しますコンポーネント。 これらのインフラストラクチャ要素は、BizTalk Server アプリケーションで使用されますが、BizTalk Server アプリケーションのパーツ自体ではありませんが。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

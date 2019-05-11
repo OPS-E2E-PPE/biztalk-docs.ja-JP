@@ -1,5 +1,5 @@
 ---
-title: 'インターチェンジで構造エラーが見つかりました。 最後の構造上有効な機能グループ ID が: |Microsoft Docs'
+title: 'インターチェンジで構造エラーが。 最後の構造上有効な機能グループ ID が: |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a3da8a701e543fe5bfb9453af3cfa2514414f5c2
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 23055c421a847835ceac3ea96286794e73cb5dcc
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36988099"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65346220"
 ---
-# <a name="the-interchange-had-structural-error-last-structurally-valid-functional-group-id-was"></a>インターチェンジで構造エラーが見つかりました。 構造上有効な最後の機能グループ ID: 
+# <a name="the-interchange-had-structural-error-last-structurally-valid-functional-group-id-was"></a>インターチェンジで構造エラーが。 最後の機能グループの構造上有効な ID は次のとおりでした。
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                                                                                    |
@@ -30,10 +30,10 @@ ms.locfileid: "36988099"
 |  イベント ソース   |                               [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI                               |
 |    コンポーネント    |                                                                     EDI エンジン                                                                     |
 |  シンボル名  |                                                     X12InterchangeStructuralErrorAfter1stGroup                                                     |
-|  メッセージ テキスト   | Id を持つインターチェンジ '{0}'、送信者 id'{1}'、受信者 id '{2}' 構造エラーが発生します。 構造上有効な最後の機能グループ ID は '{3}' でした。 |
+|  メッセージ テキスト   | Id を持つインターチェンジ '{0}'、送信者 id'{1}'、受信者 id '{2}' 構造エラーが発生します。 最後の構造上有効な機能グループ ID が '{3}' |
   
 ## <a name="explanation"></a>説明  
- このエラー/警告/情報イベントは、表示された機能グループの後にインターチェンジで構造エラーが発生したため、受信パイプラインで受信 X12 インターチェンジを処理できなかったことを示します。 このイベントは保存中のインターチェンジで発生し、トランザクション セットはエラー時に中断された可能性があります。 このエラーにより、このエラーを含むトランザクション セット (複数可) は中断されましたが、それ以外のトランザクション セットは保存されたバッチの一部として処理されました。  
+ このエラー/警告/情報イベントは、受信パイプラインで受信を処理できなかったことを示します X12 インターチェンジで構造エラーが表示された機能グループの後に、インターチェンジで発生したためです。 これは、エラーで中断されたトランザクション セットを持つ、保持されているインターチェンジで発生した可能性があります。 このエラーをトランザクション セット (またはセット) の結果であり、エラーが含まれているが中断されたが、トランザクションの残りの部分の設定は、保存されたバッチの一部として処理されました。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- このエラーを解決するには、インターチェンジの送信者が構造上のエラーを修正した上で、インターチェンジを再送信してもらいます。
+ このエラーを解決するには、構造のエラーでは、インターチェンジの送信者し、インターチェンジを再送信します。

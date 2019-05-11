@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6a47cfd0bc1d2de1ad044712c12b97260981e610
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 373d8cd1c140426427490202d0c8590488a2fcda
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37010651"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65345245"
 ---
 # <a name="general-troubleshooting-questions-and-answers"></a>一般的なトラブルシューティングに関する質問と回答
 このトピックでは、質問と回答は、BizTalk マッパーに関する問題を解決するためには。  
@@ -54,7 +54,7 @@ ms.locfileid: "37010651"
 ## <a name="why-is-my-map-failing-when-calling-my-custom-functoid"></a>カスタム Functoid を呼び出すとマップで障害が発生するのはなぜですか。  
  マップでカスタム Functoid を呼び出せるようにするには、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] コンピューターのグローバル アセンブリ キャッシュ (GAC) にそれらのカスタム Functoid をインストールしておく必要があります。 カスタム Functoid を含むアセンブリが署名されており、GAC に配置されていることを確認してください。 また、アセンブリを "%BTSINSTALLPATH%\Developer Tools\Mapper Extensions" フォルダーにコピーします。  
   
- アセンブリを GAC にインストールの詳細については、[GAC でアセンブリのインストール](../core/assembly-installation-in-the-gac.md)を参照してください。 GAC にインストールされたアセンブリを表示するには、[!INCLUDE[btsWinNoVersion](../includes/btswinnoversion-md.md)] のインストール ディレクトリの Assembly ディレクトリに移動します。  
+ アセンブリを GAC にインストールの詳細については、次を参照してください。 [GAC でアセンブリのインストール](../core/assembly-installation-in-the-gac.md)します。 GAC にインストールされたアセンブリを表示するには、[!INCLUDE[btsWinNoVersion](../includes/btswinnoversion-md.md)] のインストール ディレクトリの Assembly ディレクトリに移動します。  
   
 ## <a name="see-also"></a>参照  
  [マップのトラブルシューティング](../core/troubleshooting-maps.md)

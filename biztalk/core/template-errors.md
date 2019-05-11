@@ -1,5 +1,5 @@
 ---
-title: テンプレート エラー |Microsoft ドキュメント
+title: テンプレート エラー |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,20 +12,20 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e0c17750077824768007ce3de9b6792bffd6aed4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4944d45f5eace6e4ca53076283bb2b2f053c7edd
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22278410"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65299204"
 ---
 # <a name="template-errors"></a>テンプレート エラー
 ここでは、WCF のテンプレート エラーを診断および解決するための詳細について説明します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [BizTalk メッセージ本文要素のエンコードが正しくありません。](../core/biztalk-message-body-element-encoding-is-invalid.md)  
+-   [BizTalk メッセージ本文要素のエンコードは無効です](../core/biztalk-message-body-element-encoding-is-invalid.md)  
   
--   [BizTalk メッセージ本文の要素が指定されていません](../core/biztalk-message-body-element-not-specified.md)  
+-   [BizTalk メッセージ本文要素が指定されていません](../core/biztalk-message-body-element-not-specified.md)  
   
--   [送信 XML テンプレートが無効です。](../core/invalid-outbound-xml-template.md)
+-   [送信 XML テンプレートが無効です](../core/invalid-outbound-xml-template.md)

@@ -1,5 +1,5 @@
 ---
-title: ポータルのフォールト メッセージ ビューアー |Microsoft ドキュメント
+title: ポータルのエラー メッセージ ビューアー |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,15 +12,15 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 91b160d9ad7e6df66835a95c7ed576589ea37296
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 835162135ba46b9eee083c42ede1d4a10a499265
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22294482"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65295257"
 ---
-# <a name="portal-fault-message-viewer"></a>ポータルのフォールト メッセージ ビューアー
-ESB フォールト メッセージ ビューアでは、ESB の管理ポータル内でカスタム例外エンコーダー パイプライン コンポーネントによって生成されたすべてのメッセージを表示します。 次のビューを使用できます。  
+# <a name="portal-fault-message-viewer"></a>ポータルのエラー メッセージ ビューアー
+ESB のエラー メッセージ ビューアーは、ESB 管理ポータル内で例外のカスタム エンコーダー パイプライン コンポーネントによって生成されたすべてのメッセージを表示します。 次のビューを使用できます。  
   
 -   [エラーの詳細ビュー](../esb-toolkit/fault-details-view.md)  
   

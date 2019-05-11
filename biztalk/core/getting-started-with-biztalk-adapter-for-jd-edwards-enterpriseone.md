@@ -1,5 +1,5 @@
 ---
-title: BizTalk adapter for JD Edwards EnterpriseOne 開始 |Microsoft ドキュメント
+title: BizTalk Adapter JD Edwards EnterpriseOne を開始する |Microsoft Docs
 description: インストールし、BizTalk Server で JD Edwards EnterpriseOne の BizTalk アダプターのチュートリアルを行う手順
 ms.custom: ''
 ms.date: 10/16/2017
@@ -13,20 +13,20 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1d91ba64f9ab139b7173d462f7f83de9e2309bc1
-ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
+ms.openlocfilehash: 43072a1e56cee6e11f654eddc814ec796b84db1d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2017
-ms.locfileid: "23450595"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65345187"
 ---
-# <a name="get-started-with-biztalk-adapter-for-jd-edwards-enterpriseone"></a>BizTalk adapter for JD Edwards EnterpriseOne の開始します。
+# <a name="get-started-with-biztalk-adapter-for-jd-edwards-enterpriseone"></a>BizTalk Adapter JD Edwards EnterpriseOne を開始します。
 
 ## <a name="overview"></a>概要
-Microsoft BizTalk Adapter for JD Edwards EnterpriseOne を使用すると、JD Edwards EnterpriseOne のビジネス関数を BizTalk Server で使用できます。 ここでは、アダプターの重要な機能、JD Edwards EnterpriseOne 固有の情報にアクセスするようにアダプターを設定する方法、および基本的な使用方法のチュートリアルについて説明します。  
+Microsoft の BizTalk Adapter for JD Edwards EnterpriseOne では、BizTalk Server で JD Edwards EnterpriseOne のビジネス関数を使用することができます。 このセクションは、アダプターの主要な機能について説明します、JD Edwards EnterpriseOne 固有のアクセスについては、ように設定する方法を説明し、基本的な使用に関するチュートリアルを提供します。  
   
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
   
--   [BizTalk Adapter for JD Edwards EnterpriseOne をインストールします。](../core/installing-biztalk-adapter-for-jd-edwards-enterpriseone.md)  
+-   [BizTalk Adapter for JD Edwards EnterpriseOne のインストール](../core/installing-biztalk-adapter-for-jd-edwards-enterpriseone.md)  
   
--   [チュートリアル: BizTalk アダプターを使用して JD Edwards EnterpriseOne の](../core/tutorial-using-the-biztalk-adapter-for-jd-edwards-enterpriseone.md)
+-   [チュートリアル: BizTalk Adapter for JD Edwards EnterpriseOne の使用](../core/tutorial-using-the-biztalk-adapter-for-jd-edwards-enterpriseone.md)

@@ -1,5 +1,5 @@
 ---
-title: エンジンのパフォーマンスと容量 |Microsoft ドキュメント
+title: エンジンのパフォーマンスと容量 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -19,20 +19,20 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 14f5b9ef6bd313eb3d43132bd02d65156a870885
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 34a7dafb779ac712b6be4f3e0b41b8863074876a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22239522"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65349468"
 ---
 # <a name="engine-performance-and-capacity"></a>エンジンのパフォーマンスおよび容量
-エンジンのパフォーマンスと容量は、BizTalk Server ソリューションを計画するときの重要な考慮事項です。 エンジンのパフォーマンスとは、ドキュメントを長時間にわたって処理する能力で、エンジンの容量とは、受信したもののまだ処理されていないドキュメントのバックログを BizTalk Server システムで維持する能力です。  
+エンジンのパフォーマンスと容量は、BizTalk Server ソリューションを計画するときに、重要な考慮事項が。 エンジンのパフォーマンスは、時間の経過と共にドキュメントを処理する機能をおよびエンジンの容量が受信したもののまだ処理するドキュメントのバックログを維持するために、BizTalk Server システムの機能です。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [維持可能なパフォーマンスとは何ですか。](../core/what-is-sustainable-performance.md)  
+-   [維持可能なパフォーマンスとは](../core/what-is-sustainable-performance.md)  
   
--   [エンジンの永続性と持続性](../core/engine-persistence-and-durability.md)  
+-   [エンジンの永続性と耐久性](../core/engine-persistence-and-durability.md)  
   
 -   [維持可能な最大のエンジン スループットの測定](../core/measuring-maximum-sustainable-engine-throughput.md)

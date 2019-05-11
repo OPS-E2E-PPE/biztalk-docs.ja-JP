@@ -1,5 +1,5 @@
 ---
-title: エラー - スキーマ ファイル名が有効ではありません |Microsoft ドキュメント
+title: エラー - スキーマ ファイル名が無効です |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,14 +14,14 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 85c560a5bdcc6947fa68d60f9dfe78cff49f44f3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ad02e826c592ac30d550297cf88a7f9015083252
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22240650"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65346968"
 ---
-# <a name="error---schema-file-name-not-valid"></a>エラー - スキーマ ファイル名が有効ではありません。
+# <a name="error---schema-file-name-not-valid"></a>エラー - スキーマ ファイル名が無効です。
 **説明**  
   
  スキーマ ファイル名が無効です。  

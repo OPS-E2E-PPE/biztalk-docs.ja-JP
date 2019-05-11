@@ -1,5 +1,5 @@
 ---
-title: '手順 6 (オンプレミス): 挿入スキーマに、キューからメッセージをマップする変換を作成する |Microsoft Docs'
+title: 手順 6 (オンプレミス):キューから Insert スキーマにメッセージをマップする変換を作成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,15 +12,15 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ae0bc6826bda147d4af6ccb47d81eb2513eea640
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 382d408e1fdacbbdc6efe151eb7cf53286d497e8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36981307"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65244294"
 ---
-# <a name="step-6-on-premises-create-a-transform-to-map-the-message-from-the-queue-to-the-insert-schema"></a>手順 6 (オンプレミス): 挿入スキーマに、キューからメッセージをマップする変換を作成します。
-受信されるメッセージ[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]、Service Bus キューからになります、 **ECommerceSalesOrder.xsd**スキーマ。 ただしにメッセージを挿入する、 **SalesOrder**テーブルのメッセージがある必要があります**挿入**で生成したスキーマ[手順 5 (オンプレミス): メッセージするを挿入するためのスキーマの生成SalesOrder テーブル](../core/step-5-generate-the-schema-for-inserting-a-message-into-salesorder-table.md)します。 変換するマップを作成このトピックで、 **ECommerceSalesOrder.xsd** Insert 操作スキーマにスキーマ。  
+# <a name="step-6-on-premises-create-a-transform-to-map-the-message-from-the-queue-to-the-insert-schema"></a>手順 6 (オンプレミス):キューから Insert スキーマにメッセージをマップする変換を作成します。
+受信されるメッセージ[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]、Service Bus キューからになります、 **ECommerceSalesOrder.xsd**スキーマ。 ただしにメッセージを挿入する、 **SalesOrder**テーブルのメッセージがある必要があります**挿入**で生成したスキーマ[手順 5 (オンプレミス)。メッセージする SalesOrder テーブルを挿入するためのスキーマを生成](../core/step-5-generate-the-schema-for-inserting-a-message-into-salesorder-table.md)します。 変換するマップを作成このトピックで、 **ECommerceSalesOrder.xsd** Insert 操作スキーマにスキーマ。  
 
 ### <a name="to-create-a-map"></a>マップを作成するには  
 
@@ -28,7 +28,7 @@ ms.locfileid: "36981307"
 
 2. 送信元スキーマ、マップで選択**ECommerceSalesOrder.xsd**します。 送信先スキーマでは、選択**TableOperations.SalesOrder.xsd (Insert)** スキーマ。  
 
-3. 送信元スキーマと送信先スキーマで次のノードを直接マップします。  
+3. 元と送信先スキーマの次のノードを直接マップするには。  
 
 
    | 送信元スキーマ | 送信先スキーマ |
@@ -40,7 +40,7 @@ ms.locfileid: "36981307"
    |   コメント    |  CustomerComments  |
 
 
-4. 使用して、**日付と時刻**に値をマップの functoid、 **DateRequested**と**ShipDate**送信先スキーマ内の要素。 これらのノードは送信元スキーマの各ノードにマップされません。 代わりに、現在の日付と時刻に渡されますが、これらのノードを使用して、**日付と時刻**functoid。  
+4. 使用して、**日付と時刻**に値をマップの functoid、 **DateRequested**と**ShipDate**送信先スキーマ内の要素。 これらのノードは、送信元スキーマ内の各ノードにマップされていません。 代わりに、現在の日付と時刻に渡されますが、これらのノードを使用して、**日付と時刻**functoid。  
 
    1.  ドラッグ アンド ドロップ、**日付と時刻**マッパー画面にツールボックスから functoid。  
 
@@ -61,7 +61,7 @@ ms.locfileid: "36981307"
    |Contact\FirstName|PartnerContact|  
    |Contact\LastName||  
 
-    文字列連結マッピング セットごとに、次の手順を実行します。  
+    文字列の連結マッピング セットごとに、次の手順に従います。  
 
    1.  ドラッグ アンド ドロップ、**文字列連結**マッパー画面にツールボックスから functoid。  
 
@@ -69,7 +69,7 @@ ms.locfileid: "36981307"
 
    3.  ドラッグ アンドの出力を構成、**文字列連結**functoid を送信先スキーマ内の要素。  
 
-        完成したマップは次のようになります。  
+        完成したマップには、次のようになります。  
 
         ![スキーマを変換するマップ](../core/media/bts2010r2-tut1-map.jpg "BTS2010R2_Tut1_Map")  
 

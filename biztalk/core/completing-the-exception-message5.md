@@ -1,5 +1,5 @@
 ---
-title: 完了例外 Message5 |Microsoft ドキュメント
+title: 例外 Message5 の完了 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,15 +14,15 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8c1d690723809927e8d1aa11c2a764981b67e2c1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 05526dcfcea78b0a034b2eac4359116e61015fa5
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22231258"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65356812"
 ---
 # <a name="completing-the-exception-message"></a>例外完了メッセージ
-例外のフローを完了するには、エラー メッセージ_3 を監視対象フォルダーにリダイレクトするための送信図形を作成します。  
+例外のフローを完了するには、エラー メッセージ _ 3 を監視対象フォルダーにリダイレクトする送信図形を作成します。  
   
 ## <a name="see-also"></a>参照  
  [例外のキャッチ ブロックを追加する方法](../core/how-to-add-a-catch-exception-block1.md)   

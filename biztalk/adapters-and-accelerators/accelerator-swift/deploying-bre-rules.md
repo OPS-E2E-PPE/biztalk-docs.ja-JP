@@ -15,12 +15,12 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 311a15690dfa63fe18f67ce320310a0ed3339e6f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1074ed2fb4236ddb5fec83a711850ad7ca4efa85
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36977963"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65378018"
 ---
 # <a name="deploying-bre-rules"></a>BRE ルールの展開
 使用される BRE ルールを展開する必要があります[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]SWIFT メッセージを処理するオーケストレーションです。  
@@ -37,7 +37,7 @@ ms.locfileid: "36977963"
 
 - 関連付けられているマスターと検証のポリシーは、メッセージ スキーマ (MTxxx_Master_Policy.xml および MTxxx_Validation_Policy.xml) を展開します。 これらにある\<ドライブ\>: Microsoft BizTalk Accelerator for SWIFT \Program Files\\<バージョン\>メッセージ Pack\SWIFT Messages\A4SWIFT-SRG\<バージョン\>\Category 1\MTxxx します。 発行し、BRE 配置ユーティリティを使用してこれらを展開します。  
 
-- BIC 検証が必要な場合は、BIC 検証 (BIC_Master_Policy.xml および BIC_Validation_Policy.xml) に関連付けられているマスターと検証のポリシー。 これらにある\<ドライブ\>: Microsoft BizTalk Accelerator for SWIFT \Program Files\\<バージョン\>メッセージ Pack\SWIFT Messages\A4SWIFT-SRG\<バージョン\>\Base ポリシー。 発行と、これらのポリシーを展開する前に、BIC データベース名である SQL Server の名前を持つ BIC_Master_Policy.xml をカスタマイズする必要があり、セキュリティの値を統合します。 詳細については、[を有効にする検証の銀行識別コード](../../adapters-and-accelerators/accelerator-swift/enabling-validation-of-bank-identifier-codes.md)を参照してください。 発行し、ルール エンジン展開ウィザードを使用して、これらを展開します。  
+- BIC 検証が必要な場合は、BIC 検証 (BIC_Master_Policy.xml および BIC_Validation_Policy.xml) に関連付けられているマスターと検証のポリシー。 これらにある\<ドライブ\>: Microsoft BizTalk Accelerator for SWIFT \Program Files\\<バージョン\>メッセージ Pack\SWIFT Messages\A4SWIFT-SRG\<バージョン\>\Base ポリシー。 発行と、これらのポリシーを展開する前に、BIC データベース名である SQL Server の名前を持つ BIC_Master_Policy.xml をカスタマイズする必要があり、セキュリティの値を統合します。 詳細については、次を参照してください。[を有効にする検証の銀行識別コード](../../adapters-and-accelerators/accelerator-swift/enabling-validation-of-bank-identifier-codes.md)します。 発行し、ルール エンジン展開ウィザードを使用して、これらを展開します。  
 
 ### <a name="to-deploy-bre-rules"></a>BRE ルールを展開するには  
 
@@ -45,11 +45,11 @@ ms.locfileid: "36977963"
 
     -   A4SWIFT_CodeLists.xml と A4SWIFT_Functions.xml ボキャブラリ  
 
-    -   SWIFT の基本ポリシーの SWIFT_Reference_Policy.xml、SWIFT_PartyIdentifier_Policy.xml、ネットワーク ルールのポリシー (SWIFT_NetworkRulexxx_Policy.xml) などのメッセージ スキーマ  
+    -   SWIFT base policies for message schema, including SWIFT_Reference_Policy.xml, SWIFT_PartyIdentifier_Policy.xml, and network rule policies (SWIFT_NetworkRulexxx_Policy.xml)  
 
     -   関連付けられているマスターと検証のポリシーは、メッセージ スキーマ (MTxxx_Master_Policy.xml および MTxxx_Validation_Policy.xml) を展開します。  
 
-2.  SQL server, BIC データベースの名前、および統合のセキュリティの値の名前を持つ BIC_Master_Policy.xml をカスタマイズします。 詳細については、[を有効にする検証の銀行識別コード](../../adapters-and-accelerators/accelerator-swift/enabling-validation-of-bank-identifier-codes.md)を参照してください。  
+2.  SQL server, BIC データベースの名前、および統合のセキュリティの値の名前を持つ BIC_Master_Policy.xml をカスタマイズします。 詳細については、次を参照してください。[を有効にする検証の銀行識別コード](../../adapters-and-accelerators/accelerator-swift/enabling-validation-of-bank-identifier-codes.md)します。  
 
 3.  BIC_Master_Policy.xml と BIC_Validation_Policy.xml を発行して、展開には、ルール エンジン展開ウィザードの実行 (で\<ドライブ\>: Microsoft BizTalk Accelerator for SWIFT \Program Files\\<バージョン\>メッセージ Pack\SWIFT Messages\A4SWIFT-SRG\<バージョン\>\Base ポリシー)。 詳細については、「展開 BRE ルール 1 つ同時に」次を参照してください。  
 

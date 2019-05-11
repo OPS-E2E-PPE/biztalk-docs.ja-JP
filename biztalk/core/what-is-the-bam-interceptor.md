@@ -17,12 +17,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bc78c5ae3f653e76652373767e60ec1dcaefba8c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2dbd9b3a2bff2d6a858de372de5e06b1ff6cbbde
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37013443"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65243065"
 ---
 # <a name="what-is-the-bam-interceptor"></a>BAM インターセプターについて
 ## <a name="overview"></a>概要 
@@ -34,7 +34,7 @@ BAM インターセプター
   
  ユーザーは、対象のデータが発生するアプリケーションのステップごとにインターセプター OnStep を呼び出し、ステップの識別子を指定して、アプリケーションで使用するデータや任意のオブジェクトを指定します。  
   
- コールバックが発生した場合に現在のステップ ID およびデータ オブジェクトをコールバック プロシージャで取得するためのコールバック関数を実装する必要があります。 BAM インターセプターの役割は基本的に、データ オブジェクトをコールバック関数に渡すという単純なものです。 データを抽出する実際のロジックはアプリケーション内に存在しています。 たとえば、データが XML メッセージの形式である場合、コールバックは XPath を使用します。 Xpath の詳細については、[メッセージ割り当てにおける Xpath の使用](../core/using-xpaths-in-message-assignments.md)を参照してください。  
+ コールバックが発生した場合に現在のステップ ID およびデータ オブジェクトをコールバック プロシージャで取得するためのコールバック関数を実装する必要があります。 BAM インターセプターの役割は基本的に、データ オブジェクトをコールバック関数に渡すという単純なものです。 データを抽出する実際のロジックはアプリケーション内に存在しています。 たとえば、データが XML メッセージの形式である場合、コールバックは XPath を使用します。 Xpath の詳細については、次を参照してください。[メッセージ割り当てにおける Xpath の使用](../core/using-xpaths-in-message-assignments.md)します。  
   
  BAM インターセプターは、構成に基づいて各ステップでどのデータを要求するかを判断します。この構成はプログラムで作成できます。 次に BAM インターセプターは取得したデータを使用して DirectEventStream または BufferedEventStream を呼び出します。これらのクラスを保持し、引数として OnStep インターセプターに渡す必要があります。  
   

@@ -1,5 +1,5 @@
 ---
-title: バッチ ID と関連付けられているアグリーメントが有効ではないか、または期限切れです。 バッチ処理を続行できません |Microsoft Docs
+title: バッチ Id に関連付けられているアグリーメントが有効でないか、有効期限が切れた。 バッチ処理を続行できません |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ace947d1c05774882b1e8f78f7b093f0795ba919
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ee993aeab2f3edc6ef092cea38acfc86a3dc2574
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37018292"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65346790"
 ---
-# <a name="the-agreement-associated-with-batchid-is-not-enabled-or-has-expired-batching-cannot-continue"></a>バッチ ID と関連付けられているアグリーメントが有効ではないか、または期限切れです。 バッチ処理を続行できません
+# <a name="the-agreement-associated-with-batchid-is-not-enabled-or-has-expired-batching-cannot-continue"></a>バッチ Id に関連付けられているアグリーメントが有効でないか、有効期限が切れた。 バッチ処理を続行できません。
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                                    |

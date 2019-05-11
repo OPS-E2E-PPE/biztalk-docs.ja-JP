@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10840 |Microsoft Docs'
+title: シングル サインオン:イベント 10840 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 703695c4dabd6f65664f2ebd8d4b344b2b418f0d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1bfe65f1bc128c3ba595b4079ec8f390d1dd3d0d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37021776"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65307344"
 ---
-# <a name="single-sign-on-event-10840"></a>シングル サインオン: イベント 10840
+# <a name="single-sign-on-event-10840"></a>シングル サインオン:イベント 10840
 ## <a name="details"></a>詳細  
   
 |                 |                                                            |
@@ -30,10 +30,10 @@ ms.locfileid: "37021776"
 |  イベント ソース   |                           ENTSSO                           |
 |    コンポーネント    |                            なし                             |
 |  シンボル名  |               ENTSSO_E_MAX_PASSWORD_REMINDER               |
-|  メッセージ テキスト   |  パスワード関連語句の最大文字数は、512 文字です。   |
+|  メッセージ テキスト   |  パスワード関連語句の長さは、512 文字です。   |
   
 ## <a name="explanation"></a>説明  
- パスワード関連語句の最大文字数は、512 文字です。  
+ パスワード関連語句の長さは、512 文字です。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- これらのガイドラインに従ったアラームを使用します。
+ 次のガイドラインに従ったアラームを使用します。

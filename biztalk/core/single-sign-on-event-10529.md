@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10529 |Microsoft Docs'
+title: シングル サインオン:イベント 10529 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 74bc28f01db257c06223e1b1f79268ca63e3ca49
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 204e5d2ff2093b5980176d1696fd9bd45b892023
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36976947"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65262428"
 ---
-# <a name="single-sign-on-event-10529"></a>シングル サインオン: イベント 10529
+# <a name="single-sign-on-event-10529"></a>シングル サインオン:イベント 10529
 ## <a name="details"></a>詳細  
 
 |                 |                                                                                                                   |
@@ -28,18 +28,18 @@ ms.locfileid: "36976947"
 | 製品バージョン |                            [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                             |
 |    イベント ID     |                                                       10529                                                       |
 |  イベント ソース   |                                                      ENTSSO                                                       |
-|    コンポーネント    |                                                        N\A                                                        |
+|    コンポーネント    |                                                        該当なし                                                        |
 |  シンボル名  |                                            SSO_INFO_GOT_CURRENT_SECRET                                            |
-|  メッセージ テキスト   | マスター シークレット サーバーから現在のシークレットを取得しました。%r<br /><br /> シークレット サーバー名: %1 %r<br /><br /> MSID: %2 |
+|  メッセージ テキスト   | マスター シークレット server.%r から現在のシークレットを取得しました<br /><br /> シークレット サーバー名: %1 %r<br /><br /> MSID: %2 |
 
 ## <a name="explanation"></a>説明  
- この情報イベントは、SSO がマスター シークレット サーバーにマスター シークレットを要求したことを示します。  
+ この情報イベントは、SSO がマスター シークレット サーバーから要求されたマスター シークレットを示します。  
 
 ## <a name="user-action"></a>ユーザーの操作  
 
-- ユーザーの操作は必要ありません。  
+- ユーザー操作は必要ありません。  
 
-  詳細については、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ヘルプの次の情報を参照してください:   
+  詳細については、の次のリソースを参照してください。[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプ。  
 
 - [マスター シークレットを生成する方法](../core/how-to-generate-the-master-secret.md)  
 

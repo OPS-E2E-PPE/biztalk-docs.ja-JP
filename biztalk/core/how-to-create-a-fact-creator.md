@@ -1,5 +1,5 @@
 ---
-title: ファクト作成コンポーネントを作成する方法 |Microsoft ドキュメント
+title: ファクト作成コンポーネントを作成する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -19,15 +19,15 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5cba9c46a147d912ae22644a30ef65c0b0213202
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9784be0a26fd6f5b60cf68401faf36e816b54c08
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22248666"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65340045"
 ---
 # <a name="how-to-create-a-fact-creator"></a>ファクト作成コンポーネントを作成する方法
-ファクト作成コンポーネントを記述して、ファクトのインスタンスを作成できます。 ファクト作成コンポーネントを実装する必要があります**IFactCreator**とその**CreateFacts**メソッドおよび**GetFactTypes**メソッドです。 ファクト作成コンポーネントの dll を作成すると、ポリシー テスター内から参照できます。 次に、ファクト作成コンポーネントの実装例を示します。  
+ファクトのインスタンスを作成するファクト作成コンポーネントを記述することができます。 ファクト作成コンポーネントを実装する必要があります**IFactCreator**とその**CreateFacts**メソッドと**GetFactTypes**メソッド。 ファクト作成コンポーネントの dll を作成した後、ポリシー テスター内から参照できます。 次は、ファクトの作成者の実装の例です。  
   
 ```  
 public class MyFactCreator : IFactCreator  

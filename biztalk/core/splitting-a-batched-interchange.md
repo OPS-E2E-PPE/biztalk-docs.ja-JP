@@ -12,15 +12,15 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b1cb3c6c912985a81a2265afa11bebc636381c5a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7d7f8da0fafe80b96368388d667a5a0934364c83
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37024064"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65243134"
 ---
 # <a name="splitting-a-batched-interchange"></a>バッチ インターチェンジの分割
-このトピックでは、バッチ EDI インターチェンジのトランザクション セットを分割して、インターチェンジを処理するアグリーメントを構成する方法について説明します。  
+このトピックでは、インターチェンジのトランザクション セットを分割することにより、バッチ EDI インターチェンジを処理するアグリーメントを構成する方法について説明します。  
   
 ## <a name="prerequisites"></a>前提条件  
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者グループまたは [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] B2B Operators グループのメンバーとしてログオンしている必要があります。  
@@ -31,27 +31,27 @@ ms.locfileid: "37024064"
   
    1.  **識別子** ページを受信したバッチ インターチェンジがこのアグリーメントに解決できるように、適切な値を入力するかどうかを確認します。  
   
-       -   場合に**X12**: 設定の ISA5、ISA6、ISA7、ISA8、します。  
+       -   場合に**X12**:ISA5、ISA6、ISA7、ISA8 を設定します。  
   
-       -   場合に**Edifact**: 設定 UNB2.1、UNB2.2、UNB3.1、および [unb3.2]。  
+       -   場合に**Edifact**:UNB2.1、UNB2.2、UNB3.1、および [unb3.2] に設定します。  
   
    2.  **ローカル ホスト設定**ページ (**インターチェンジの設定**) 下で、**受信者の設定**セクションの**受信バッチ処理オプション**、1 つに、次のオプションを選択します。  
   
-       -   **トランザクション セットとして分割されたインターチェンジがエラーのトランザクション セットを中断**– BizTalk Server がインターチェンジを個別の XML ドキュメントの各トランザクション セットを解析する必要がありますを指定するには、このオプションを選択します。 こうすることによって、適切なエンベロープがトランザクション セットに適用され、トランザクション セット ドキュメントがメッセージ ボックスにルーティングされるようになります。 このオプションを使用すると、インターチェンジ内の 1 つまたは複数のトランザクション セットが検証に失敗した場合に、BizTalk Server はこれらのトランザクション セットだけを中断します。  
+       -   **トランザクション セットとして分割されたインターチェンジがエラーのトランザクション セットを中断**– BizTalk Server がインターチェンジを個別の XML ドキュメントの各トランザクション セットを解析する必要がありますを指定するには、このオプションを選択します。 BizTalk Server は、トランザクション セットに適切なエンベロープを適用し、メッセージ ボックス データベースにトランザクション セットのドキュメントをルーティングします。 このオプションで、インターチェンジ内の 1 つまたは複数のトランザクション セットが失敗した BizTalk Server がそのトランザクション セットのみを中断します。  
   
-       -   **トランザクション セットとして分割されたインターチェンジがエラーでインターチェンジを中断**– BizTalk Server がインターチェンジを個別の XML ドキュメントの各トランザクション セットを解析する必要がありますを指定するには、このオプションを選択します。 こうすることによって、適切なエンベロープがトランザクション セットに適用され、トランザクション セット ドキュメントがメッセージ ボックスにルーティングされるようになります。 このオプションを使用すると、インターチェンジ内の 1 つまたは複数のトランザクション セットが検証に失敗した場合に、BizTalk Server がインターチェンジ全体を保留するようになります。  
+       -   **トランザクション セットとして分割されたインターチェンジがエラーでインターチェンジを中断**– BizTalk Server がインターチェンジを個別の XML ドキュメントの各トランザクション セットを解析する必要がありますを指定するには、このオプションを選択します。 BizTalk Server は、トランザクション セットに適切なエンベロープを適用し、メッセージ ボックス データベースにトランザクション セットのドキュメントをルーティングします。 このオプションで、インターチェンジ内の 1 つまたは複数のトランザクション セットが失敗した BizTalk Server がそのインターチェンジ全体を中断します。  
   
-2. 保存されたバッチの Visual Studio プロジェクトを次のように作成します。  
+2. 次のように保存されたバッチ用の Visual Studio プロジェクトを作成します。  
   
-   1. [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] で、BizTalk プロジェクトを作成し、バッチ内のすべてのメッセージ用のスキーマを追加します。  
+   1. [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]BizTalk プロジェクトを作成し、バッチ内のすべてのメッセージのスキーマを追加します。  
   
    2. プロジェクトをビルドし、配置します。  
   
-3. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールで、分割されたバッチを送信するための送信ポートを次のように作成します。  
+3. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、次のように分割されたバッチを送信する送信ポートを作成します。  
   
    1.  送信パイプラインを設定**EdiSend**または**AS2EdiSend**します。  
   
-   2.  送信ポートのフィルターを、各トランザクション セットを取得するのに必要な値に設定します。たとえば、BTS.MessageType に設定します。  
+   2.  各トランザクション セット、たとえば、BTS を取得するのに必要な値には、送信ポートのフィルターを設定します。メッセージの種類。  
   
 ## <a name="see-also"></a>参照  
  [EDI バッチの構成](../core/configuring-edi-batches.md)   

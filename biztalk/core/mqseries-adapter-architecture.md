@@ -1,5 +1,5 @@
 ---
-title: MQSeries アダプターのアーキテクチャ |Microsoft ドキュメント
+title: MQSeries アダプターのアーキテクチャ |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,15 +15,15 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cf1d6dd42e47457cf4af83eb7b4669e872db2914
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3d92d1b549586276e285b2ed7d11f7f995ca8476
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22263330"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65264553"
 ---
 # <a name="mqseries-adapter-architecture"></a>MQSeries アダプターのアーキテクチャ
-このセクションでは、MQSeries アダプタの各部分と、その対話方法を紹介します。 また、MQSeries キューの一部の要素についても簡単に説明します。  
+このセクションでは、MQSeries アダプターと対話する方法の一部について説明します。 MQSeries キューの一部の要素も簡単に説明します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
@@ -31,4 +31,4 @@ ms.locfileid: "22263330"
   
 -   [MQSeries キュー](../core/mqseries-queues.md)  
   
--   [キューの管理のサポート](../core/support-for-queue-management.md)
+-   [キュー管理のサポート](../core/support-for-queue-management.md)

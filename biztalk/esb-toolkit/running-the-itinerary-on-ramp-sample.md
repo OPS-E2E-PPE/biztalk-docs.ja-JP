@@ -1,5 +1,5 @@
 ---
-title: Itinerary ランプでサンプルを実行して |Microsoft ドキュメント
+title: スケジュール オンランプ ランプでサンプルを実行する |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,22 +12,22 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f872f9deab4418172a7c8908a43d820c6d0675ae
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a11e4e27835885cc5c6b6f8ad51ee2de8c8f13e3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22294578"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65242773"
 ---
-# <a name="running-the-itinerary-on-ramp-sample"></a>Itinerary ランプでサンプルを実行します。
-行程入り口サンプル行程サービスの機能を示す Windows フォームのテスト クライアント アプリケーション (行程テスト クライアント) を使用して実行できる 20 の定義済みの itinerary ユース ケースが付属しています。  
+# <a name="running-the-itinerary-on-ramp-sample"></a>スケジュール オンランプ ランプでサンプルを実行します。
+行程導入サンプル、旅行プラン サービスの機能を示す Windows フォームのテスト クライアント アプリケーション (旅行プランをテスト クライアント) を使用しており、20 の定義済みのスケジュール オンランプ ユース ケースを実行することができます。  
   
- このセクションのトピックは次のとおりです。  
+ このセクションでは、次のトピックについて説明します。  
   
--   [定義済みの Itinerary ランプでサンプルを実行します。](../esb-toolkit/run-a-predefined-itinerary-on-ramp-sample.md)  
+-   [定義済みスケジュール オンランプ サンプルを実行する](../esb-toolkit/run-a-predefined-itinerary-on-ramp-sample.md)  
   
--   [サンプルの Itinerary シナリオ](../esb-toolkit/the-sample-itinerary-scenarios.md)  
+-   [サンプル スケジュール シナリオ](../esb-toolkit/the-sample-itinerary-scenarios.md)  
   
--   [カスタムの Itinerary シナリオを実行します。](../esb-toolkit/execute-a-custom-itinerary-scenario.md)  
+-   [カスタム スケジュール シナリオを実行する](../esb-toolkit/execute-a-custom-itinerary-scenario.md)  
   
--   [Itinerary 入り口サンプルの動作](../esb-toolkit/how-the-itinerary-on-ramp-sample-works.md)
+-   [スケジュール オンランプ サンプルのしくみ](../esb-toolkit/how-the-itinerary-on-ramp-sample-works.md)

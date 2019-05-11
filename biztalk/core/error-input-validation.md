@@ -1,5 +1,5 @@
 ---
-title: エラー - 入力検証 |Microsoft ドキュメント
+title: エラー - 入力の検証 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b7f6392c6f5aad85442659beb9f6f1e3ef989299
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 500bf24833391290f816ba9b68532c35f931eff9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22240426"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65348029"
 ---
 # <a name="error---input-validation"></a>エラー - 入力検証
 **エラー コード**  
@@ -28,8 +28,8 @@ ms.locfileid: "22240426"
   
  **説明**  
   
- 表示された理由により、マップのテスト操作用に指定されている入力インスタンス メッセージ ファイルを、送信元スキーマに対して検証できませんでした。  
+ 表示された理由により、マップのテスト操作用に指定する入力インスタンス メッセージ ファイルを送信元スキーマに対して検証できませんでした。  
   
  **ユーザーの操作**  
   
- 表示された理由に基づいて、入力インスタンス メッセージ ファイルか送信元スキーマ、またはその両方を適宜修正してください。 送信元スキーマを BizTalk エディターで開き、使用すると役立つ場合があります、**スキーマの検証**と**インスタンスの生成**ソリューション エクスプ ローラーでスキーマを右クリックしたときに使用できるコマンド。
+ 入力インスタンス メッセージ ファイルまたは送信元スキーマ、または両方に、適切な修正を行う表示された理由に基づいて、します。 BizTalk エディターで、送信元スキーマを開きを使用するのに役立ちますがある可能性があります、**スキーマの検証**と**インスタンスの生成**ソリューション エクスプ ローラーでスキーマを右クリックしたときに使用できるコマンド。

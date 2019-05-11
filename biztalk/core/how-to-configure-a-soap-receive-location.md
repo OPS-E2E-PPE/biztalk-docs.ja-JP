@@ -22,12 +22,12 @@ caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4de95a4d414cddde0812f590c84c237866772741
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 0e30d505450103258ffea837f16de14319f38729
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36999267"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65342298"
 ---
 # <a name="how-to-configure-a-soap-receive-location"></a>SOAP の受信場所を構成する方法
 SOAP の受信場所は、プログラムから、または [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールを使用して構成できます。  
@@ -43,8 +43,8 @@ SOAP の受信場所は、プログラムから、または [!INCLUDE[btsBizTalk
 |プロパティ名|型|説明|  
 |-------------------|----------|-----------------|  
 |**URI**|String|展開サーバーの Web サービスを含んでいる仮想ディレクトリです。|  
-|**AddressableURI**|String|呼び出し可能な URL 全体を含むパブリック アドレス フィールドです。<br /><br /> 既定値: 空白|  
-|**UseSSO**|ブール値|SOAP アダプターが、この受信場所で受信するメッセージにシングル サインオン チケットを発行するかどうかを指定します。<br /><br /> 既定値: False|  
+|**AddressableURI**|String|呼び出し可能な URL 全体を含むパブリック アドレス フィールドです。<br /><br /> 既定値:空白|  
+|**UseSSO**|ブール値|SOAP アダプターが、この受信場所で受信するメッセージにシングル サインオン チケットを発行するかどうかを指定します。<br /><br /> 既定値:False|  
 
  これらのプロパティを設定するには、以下の形式を使用します。  
 
@@ -94,7 +94,7 @@ explorer.SaveChanges();
  SOAP の受信場所のアダプター変数は、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールで設定できます。 受信場所のプロパティが設定されていない場合は、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールで設定された既定の受信ハンドラーの値が使用されます。  
 
 > [!NOTE]
->  次の手順を実行する前に、受信ポートを追加しておく必要があります。 詳細については、[受信ポートを作成する方法](../core/how-to-create-a-receive-port.md)を参照してください。  
+>  次の手順を実行する前に、受信ポートを追加しておく必要があります。 詳細については、「 [受信ポートを作成する方法](../core/how-to-create-a-receive-port.md)」を参照してください。  
 
 ### <a name="to-configure-variables-for-a-soap-receive-location"></a>SOAP の受信場所の変数を構成するには  
 
@@ -111,14 +111,14 @@ explorer.SaveChanges();
 
    |                     プロパティ                      |                                                                                                                                                                                                                                                                                                              目的                                                                                                                                                                                                                                                                                                               |
    |---------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-   | **仮想ディレクトリと Web サービス .asmx ファイル** |                                                                                                                 Microsoft BizTalk Web サービス公開ウィザードで作成された .asmx ファイルを示します。<br /><br /> このメッセージの形式は次のようになります。 <br /><br /> /PurchaseOrder/POOrchestration.asmx<br /><br /> .Asmx ファイルの完全な場所は http://localhost/PurchaseOrder/POOrchestration.asmx します。 **注:** の URI を送信ポートまたは受信場所が 256 文字を超えることはできません。                                                                                                                 |
+   | **仮想ディレクトリと Web サービス .asmx ファイル** |                                                                                                                 Microsoft BizTalk Web サービス公開ウィザードで作成された .asmx ファイルを示します。<br /><br /> このメッセージの形式は次のようになります。 <br /><br /> /PurchaseOrder/POOrchestration.asmx<br /><br /> .Asmx ファイルの完全な場所は http://localhost/PurchaseOrder/POOrchestration.asmx します。 **注:** URI を送信ポートまたは受信場所が 256 文字を超えることはできません。                                                                                                                 |
    |                **パブリック アドレス**                 | この受信場所の完全修飾 URI を指定します。 このプロパティの値は、サーバー名と仮想ディレクトリの組み合わせです。 指定した URI は、取引先が [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] にメッセージを送信するときに接続するパブリック Web サイトの URL を示す必要があります。<br /><br /> この情報は省略可能であり、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では使用されません。 このパラメーターを使用すると、管理者は、受信場所が関連付けられているパブリック URL を記述できます。 |
-   |              **シングル サインオンの使用**               |                                                                                                                                                                                                 SOAP アダプターがエンタープライズ シングル サインオンを使用することを示します。 **注:** BizTalk Web サービス公開ウィザードでは、SharePoint Portal Server シングル サインオンを使用できます。 は、このプロパティは、エンタープライズ シングル サインオンのみ有効です。                                                                                                                                                                                                 |
+   |              **シングル サインオンの使用**               |                                                                                                                                                                                                 SOAP アダプターがエンタープライズ シングル サインオンを使用することを示します。 **注:** BizTalk Web サービス公開ウィザードでは、SharePoint Portal Server シングル サインオン; を使用できます。このプロパティは、エンタープライズ シングル サインオンのみできます。                                                                                                                                                                                                 |
 
 
 6. **[OK]** をクリックします。  
 
-7. **受信場所のプロパティ** ダイアログ ボックスで、クリックして、受信場所の構成を完了するには、適切な値を入力して**OK**設定を保存します。 については、**受信場所のプロパティ**ダイアログ ボックスを参照してください[受信場所を作成する方法](../core/how-to-create-a-receive-location.md)します。  
+7. **受信場所のプロパティ** ダイアログ ボックスで、クリックして、受信場所の構成を完了するには、適切な値を入力して**OK**設定を保存します。 **[受信場所のプロパティ]** ダイアログ ボックスの詳細については、「 [受信場所を作成する方法](../core/how-to-create-a-receive-location.md)」を参照してください。  
 
    SOAP の受信場所で使用されるセキュリティ設定は IIS で設定します。 既定では、SOAP の受信場所は、匿名認証を使用するように設定されていません。  
 

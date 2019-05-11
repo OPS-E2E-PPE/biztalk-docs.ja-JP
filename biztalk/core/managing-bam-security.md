@@ -1,5 +1,5 @@
 ---
-title: BAM セキュリティの管理 |Microsoft ドキュメント
+title: BAM セキュリティの管理 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,19 +15,19 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1486df4b766a8e77b23a0d7e5c135f6c17f85a29
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4c372abd429a44c4ef78b4d8d4712efa1c7e391a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22262322"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65380357"
 ---
 # <a name="managing-bam-security"></a>BAM セキュリティの管理
-このセクションでは、BAM セキュリティについて説明します。 BAM ビューのユーザー アカウントの管理手順と、警告に対するサブスクリプションの管理手順が記載されています。  
+このセクションでは、BAM セキュリティについての情報を提供します。 BAM ビューのユーザー アカウントの管理およびアラートへのサブスクリプションを管理する手順が含まれています。  
   
- BAM ポータルのセキュリティについては、次を参照してください。 [BAM ポータルのセキュリティに関する考慮事項](../core/security-considerations-for-the-bam-portal.md)です。  
+ BAM ポータルのセキュリティについては、次を参照してください。 [BAM ポータルのセキュリティに関する考慮事項](../core/security-considerations-for-the-bam-portal.md)します。  
   
- セキュリティについては追跡プロファイル エディター (TPE) を次を参照してください。[管理 TPE のユーザー権利](../core/user-rights-for-managing-tpe.md)です。  
+ セキュリティについて追跡プロファイル エディター (TPE) を次を参照してください。 [TPE を管理するためのユーザー権利](../core/user-rights-for-managing-tpe.md)します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

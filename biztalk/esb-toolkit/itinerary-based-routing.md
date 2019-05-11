@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 13be8ab9078a2c12e110c5d80b65b2930d805952
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: fe1132920b18cc331786d515b916de2861409339
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36970883"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65261561"
 ---
 # <a name="itinerary-based-routing"></a>スケジュールに基づくルーティング
 コア機能の 1 つ、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]はエンタープライズ レベルのメッセージング アプリケーションの開発を簡略化し、多数の静的なを維持するためのコストを削減するスケジュールに基づくルーティングのプロビジョニングは送信ポートと受信場所。  
@@ -34,4 +34,4 @@ ms.locfileid: "36970883"
   
   日程が受信メッセージの解決された後、受信パイプラインをスケジュールのデータへのアクセスがこのメッセージをサブスクライブする Microsoft BizTalk Server コンポーネントを使用できるプロパティをそれによって、メッセージ コンテキストに昇格させます。 BizTalk Server コンポーネントはスケジュールの現在のステップの詳細を取得、必要な処理を完了または旅行プランを次の手順に進みます。 に従って、発行、メッセージを処理するスケジュールで次のサービスこれにより、BizTalk Server の機能をサブスクライブします。  
   
-  ESB の動的な解決メカニズム、変換、スケジュールの処理、およびメッセージの作成については、[主要なシナリオおよび開発タスク](../esb-toolkit/key-scenarios-and-development-tasks.md)を参照してください。
+  ESB の動的な解決メカニズム、変換、スケジュールの処理、およびメッセージの作成については、次を参照してください。[主要なシナリオおよび開発タスク](../esb-toolkit/key-scenarios-and-development-tasks.md)します。

@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8f03391660e7f06892294a84ba2be3fdabbc4703
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3841b300647a7a0b5859fca828f8aa5a840e9755
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37012019"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65352573"
 ---
 # <a name="debugging-custom-pipelines"></a>カスタム パイプラインのデバッグ
 カスタム パイプラインでメッセージ処理が失敗するときは、ソース レベルのデバッグを使用して、問題の特定と修正を行うことができます。 ソース レベルのデバッグは、BTSNTSVC.exe (カスタム パイプラインを配置している場合) または Pipeline.exe (スタンドアロン パイプライン ツールを使用している場合) にアタッチすることにより、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] デバッガーを使用して行います。  
@@ -59,7 +59,7 @@ ms.locfileid: "37012019"
   
 2. ソリューションは、出力パスを変更して*\<インストール フォルダー\>* \Pipeline Components です。 ソリューション エクスプ ローラーでプロジェクトを右クリックし、ビルド タブをクリックしておよびクリックして、出力パスを変更、**参照**ボタンをクリックしを選択すると、 *\<インストール フォルダー\>* \Pipeline components ディレクトリ。  
   
-3. ソリューションの開始アクションを変更します。 ソリューション エクスプ ローラーでプロジェクトを右クリックを [デバッグ] タブをクリックし、[外部プログラムの開始] をクリックしてをクリックして **.** 移動します*\<インストール フォルダー\>* \SDK\Utilities\PipelineTools Pipeline.exe を選択します。 [開始オプション]、コンポーネントの適切なコマンドライン引数を入力します。 Pipeline.exe の詳細については、[パイプライン ツール](../core/pipeline-tools.md)を参照してください。 一般的な構成では、パイプラインとサンプル ファイルを指定します。  
+3. ソリューションの開始アクションを変更します。 ソリューション エクスプ ローラーでプロジェクトを右クリックを [デバッグ] タブをクリックし、[外部プログラムの開始] をクリックしてをクリックして **.** 移動します*\<インストール フォルダー\>* \SDK\Utilities\PipelineTools Pipeline.exe を選択します。 [開始オプション]、コンポーネントの適切なコマンドライン引数を入力します。 Pipeline.exe の詳細については、次を参照してください。[パイプライン ツール](../core/pipeline-tools.md)します。 一般的な構成では、パイプラインとサンプル ファイルを指定します。  
   
    ```  
    <Path>\YourPipeline.btp -d <Path>\YourTestFile.txt -c  

@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8fb167c0bf704aee869e81798116377608fde0c2
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 160e28e23de6c792e3669831e84e582dd07c7318
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36983027"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65345591"
 ---
 # <a name="field-position-calculation"></a>フィールド位置の計算
 
@@ -29,7 +29,7 @@ ms.locfileid: "36983027"
 
  一般に、特定のフィールドの開始位置*N*は、前のフィールドの開始位置と、前のフィールドとフィールドに指定した (位置指定) オフセットの長さ*N*.  
 
- Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のすべてのフィールド位置の計算は、自動的にまとめて行われるので、コマンドを実行する必要はありません (以前のバージョンの BizTalk Server では、コマンドを実行していました)。  
+ Microsoft のすべてのフィールド位置の計算[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]は (BizTalk Server の以前のバージョンで必要となった) コマンドを実行することがなく、-その場で、実行、自動的にします。  
 
 ## <a name="see-also"></a>参照  
 - [位置指定レコードに関する注意](../core/positional-record-considerations.md)   

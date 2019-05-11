@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10524 |Microsoft Docs'
+title: シングル サインオン:イベント 10524 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3f873dab5d4d5f00897e498e2bb88b6ae9a2f040
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d135f8856707527eb3368b579b6f77d541cbb84b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37009507"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65262551"
 ---
-# <a name="single-sign-on-event-10524"></a>シングル サインオン: イベント 10524
+# <a name="single-sign-on-event-10524"></a>シングル サインオン:イベント 10524
 ## <a name="details"></a>詳細  
 
 |                 |                                                                                                                                                                                             |
@@ -28,21 +28,21 @@ ms.locfileid: "37009507"
 | 製品バージョン |                                                                 [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                                                                  |
 |    イベント ID     |                                                                                            10524                                                                                            |
 |  イベント ソース   |                                                                                           ENTSSO                                                                                            |
-|    コンポーネント    |                                                                                             N\A                                                                                             |
+|    コンポーネント    |                                                                                             該当なし                                                                                             |
 |  シンボル名  |                                                                               SSO_ERROR_RESTORE_SECRET_FAILED                                                                               |
-|  メッセージ テキスト   | マスター シークレットを復元できませんでした。%r<br /><br /> ファイル名: %1 %r<br /><br /> 現在の MSID: % 2 %r<br /><br /> 以前の MSID: % 3 %r<br /><br /> クライアント ユーザー: % 4 %r<br /><br /> エラー コード: %5 |
+|  メッセージ テキスト   | マスター secrets.%r の復元に失敗しました<br /><br /> ファイル名: %1 %r<br /><br /> 現在の MSID: % 2 %r<br /><br /> 以前の MSID: % 3 %r<br /><br /> クライアント ユーザー: % 4 %r<br /><br /> エラー コード: %5 |
 
 ## <a name="explanation"></a>説明  
- このエラー イベントは、ユーザーがバックアップ ファイルからマスター シークレットを復元しようとしたが、失敗したことを示します。 原因としては、アクセス許可 (マスター シークレットを復元するのには、SSO 管理者である必要があります) の問題またはバックアップ ファイルのファイルの破損原因として考えられます。 これらの場合、アプリケーション イベント ログに関連するメッセージがあります。  
+ このエラー イベントは、バックアップ ファイルからマスター シークレットを復元するユーザーの試行が失敗したことを示します。 原因としては、アクセス許可 (マスター シークレットを復元するのには、SSO 管理者である必要があります) の問題またはバックアップ ファイルのファイルの破損原因として考えられます。 このような場合があります関連するメッセージ、アプリケーション イベント ログ。  
 
 ## <a name="user-action"></a>ユーザーの操作  
  このエラーを解決するには、以下の 1 つ以上の操作を実行します。  
 
-- 関連するイベントまたはエラーについては、アプリケーション イベント ログを確認します。  
+- アプリケーション イベント ログの関連するイベントまたはエラーを確認します。  
 
 - 適切な SSO 管理者のアクセス許可があることを確認します。  
 
-  詳細については、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ヘルプの次の情報を参照してください:   
+  詳細については、の次のリソースを参照してください。[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプ。  
 
 - [マスター シークレットを復元する方法](../core/how-to-restore-the-master-secret.md)  
 

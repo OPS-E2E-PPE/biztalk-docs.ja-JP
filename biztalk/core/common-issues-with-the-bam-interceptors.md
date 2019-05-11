@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5e6217a96bfbbe0a9dfddef6e8cec5a82cb93254
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 787ed9f5fd2f94f719e224db471bde8c2aad9829
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37004075"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65357103"
 ---
 # <a name="common-issues-with-the-bam-interceptors"></a>BAM インターセプタにおける一般的な問題
 このトピックでは、BAM インターセプタを使用する際に発生する可能性がある、以下の一般的な問題について説明します。  
@@ -33,7 +33,7 @@ ms.locfileid: "37004075"
   
   この問題をトラブルシューティングする方法としては、以下が推奨されます。  
   
-- BAM トレースを有効にします。 このトレースでは、エラーの根本原因を含むすべての関連メッセージが対象となります。 BAM トレースの詳細については、[BAM のトレースの有効化する方法](../core/how-to-enable-tracing-in-bam.md)を参照してください。  
+- BAM トレースを有効にします。 このトレースでは、エラーの根本原因を含むすべての関連メッセージが対象となります。 BAM トレースの詳細については、次を参照してください。 [BAM のトレースの有効化する方法](../core/how-to-enable-tracing-in-bam.md)します。  
   
 - この分散トランザクション コーディネータ (DTC) 例外が表示される場合は、完全に同一なシナリオをトランザクションなしで返すことを試みます。  
   
