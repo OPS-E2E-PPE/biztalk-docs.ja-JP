@@ -1,5 +1,5 @@
 ---
-title: WCF LOB Adapter SDK では、WSDL PortType ドキュメント スキーマの説明 |Microsoft ドキュメント
+title: WCF LOB Adapter SDK と WSDL PortType ドキュメント スキーマについて説明します |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,18 +12,18 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 81e4977403da18229aea19beef21f361dfdd9391
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: f24476e97807900b686dc471276de76f92212a3e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25965152"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65363668"
 ---
-# <a name="describe-the-wsdl-porttype-documentation-schema-with-the-wcf-lob-adapter-sdk"></a><span data-ttu-id="de966-102">WCF LOB Adapter SDK では、WSDL PortType ドキュメント スキーマを説明します。</span><span class="sxs-lookup"><span data-stu-id="de966-102">Describe the WSDL PortType Documentation Schema with the WCF LOB Adapter SDK</span></span>
-<span data-ttu-id="de966-103">WSDL を[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]生成の各 portType 追加の説明情報が含まれています。</span><span class="sxs-lookup"><span data-stu-id="de966-103">The WSDL that the  [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] generates contains additional descriptive information for each portType.</span></span> <span data-ttu-id="de966-104">この追加情報のスキーマはこのトピックで説明します。</span><span class="sxs-lookup"><span data-stu-id="de966-104">The schema for this additional information is described in this topic.</span></span>  
+# <a name="describe-the-wsdl-porttype-documentation-schema-with-the-wcf-lob-adapter-sdk"></a><span data-ttu-id="db62d-102">WCF LOB Adapter SDK と WSDL PortType ドキュメント スキーマについて説明します</span><span class="sxs-lookup"><span data-stu-id="db62d-102">Describe the WSDL PortType Documentation Schema with the WCF LOB Adapter SDK</span></span>
+<span data-ttu-id="db62d-103">WSDL を[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]生成各 portType の追加のわかりやすい情報が含まれています。</span><span class="sxs-lookup"><span data-stu-id="db62d-103">The WSDL that the  [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] generates contains additional descriptive information for each portType.</span></span> <span data-ttu-id="db62d-104">このトピックでは、この追加情報のスキーマを説明します。</span><span class="sxs-lookup"><span data-stu-id="db62d-104">The schema for this additional information is described in this topic.</span></span>  
   
-## <a name="documentation-xml-schema"></a><span data-ttu-id="de966-105">ドキュメントの XML スキーマ</span><span class="sxs-lookup"><span data-stu-id="de966-105">Documentation XML Schema</span></span>  
- <span data-ttu-id="de966-106">操作のドキュメントは、操作のアダプターのドキュメントを表すノードを追加する portType の注釈を使用して実装されます。</span><span class="sxs-lookup"><span data-stu-id="de966-106">The operation documentation is implemented using annotation of the portType to add a node that represents the adapter documentation for the operation.</span></span> <span data-ttu-id="de966-107">このノードには、さらに、操作とパラメーターを記述するサブノードが含まれています。</span><span class="sxs-lookup"><span data-stu-id="de966-107">This node contains subnodes that further describe the operation and parameters.</span></span> <span data-ttu-id="de966-108">このスキーマの定義は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="de966-108">This schema is defined as follows.</span></span>  
+## <a name="documentation-xml-schema"></a><span data-ttu-id="db62d-105">XML スキーマのドキュメント</span><span class="sxs-lookup"><span data-stu-id="db62d-105">Documentation XML Schema</span></span>  
+ <span data-ttu-id="db62d-106">操作のドキュメントは、アダプターのドキュメントの操作を表すノードを追加する、portType の注釈を使用して実装されます。</span><span class="sxs-lookup"><span data-stu-id="db62d-106">The operation documentation is implemented using annotation of the portType to add a node that represents the adapter documentation for the operation.</span></span> <span data-ttu-id="db62d-107">このノードには、操作とパラメーターの詳細に説明するサブノードが含まれています。</span><span class="sxs-lookup"><span data-stu-id="db62d-107">This node contains subnodes that further describe the operation and parameters.</span></span> <span data-ttu-id="db62d-108">このスキーマの定義は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="db62d-108">This schema is defined as follows.</span></span>  
   
 ```  
 <?xml version="1.0" encoding="utf-8"?>  
@@ -48,7 +48,7 @@ ms.locfileid: "25965152"
 </xs:schema>  
 ```  
   
- <span data-ttu-id="de966-109">特定の操作の WSDL が生成されると、人間の判読できる形式で追加の説明情報を提供する、前のスキーマが使用されます。</span><span class="sxs-lookup"><span data-stu-id="de966-109">When WSDL is generated for a given operation, the preceding schema is used to provide additional descriptive information in human readable format.</span></span> <span data-ttu-id="de966-110">たとえば、エコー アダプターの EchoString 操作のため portType の次の情報が返されます。</span><span class="sxs-lookup"><span data-stu-id="de966-110">For example, the following portType information is returned for the EchoString operation of the Echo Adapter.</span></span>  
+ <span data-ttu-id="db62d-109">指定した操作で生成される WSDL は、人間が読める形式で追加のわかりやすい情報を提供する、前のスキーマが使用されます。</span><span class="sxs-lookup"><span data-stu-id="db62d-109">When WSDL is generated for a given operation, the preceding schema is used to provide additional descriptive information in human readable format.</span></span> <span data-ttu-id="db62d-110">たとえば、エコー アダプターの EchoString 操作の portType は次の情報が返されます。</span><span class="sxs-lookup"><span data-stu-id="db62d-110">For example, the following portType information is returned for the EchoString operation of the Echo Adapter.</span></span>  
   
 ```  
 <wsdl:portType name="EchoService">  
@@ -66,7 +66,7 @@ ms.locfileid: "25965152"
 </wsdl:portType>  
 ```  
   
- <span data-ttu-id="de966-111">ドキュメント要素の値がから取得した`Microsoft.ServiceModel.Channels.Common.ParameterizedOperationMetadata`操作します。</span><span class="sxs-lookup"><span data-stu-id="de966-111">The values for the documentation elements are obtained from `Microsoft.ServiceModel.Channels.Common.ParameterizedOperationMetadata` for the operation.</span></span> <span data-ttu-id="de966-112">前の例は、次の例の結果として生成されました。</span><span class="sxs-lookup"><span data-stu-id="de966-112">The preceding example was generated as a result of the following example.</span></span>  
+ <span data-ttu-id="db62d-111">ドキュメント要素の値がから取得した`Microsoft.ServiceModel.Channels.Common.ParameterizedOperationMetadata`操作。</span><span class="sxs-lookup"><span data-stu-id="db62d-111">The values for the documentation elements are obtained from `Microsoft.ServiceModel.Channels.Common.ParameterizedOperationMetadata` for the operation.</span></span> <span data-ttu-id="db62d-112">前の例は、次の例の結果として生成されました。</span><span class="sxs-lookup"><span data-stu-id="db62d-112">The preceding example was generated as a result of the following example.</span></span>  
   
 ```csharp  
 ParameterizedOperationMetadata om = new ParameterizedOperationMetadata(operationId, operationId);  
@@ -91,5 +91,5 @@ switch (operationId)
        return om;   
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="de966-113">参照</span><span class="sxs-lookup"><span data-stu-id="de966-113">See Also</span></span>  
- [<span data-ttu-id="de966-114">WCF LOB Adapter SDK を使用して、開発のベスト プラクティス</span><span class="sxs-lookup"><span data-stu-id="de966-114">Development best practices using the WCF LOB Adapter SDK</span></span>](../../adapters-and-accelerators/wcf-lob-adapter-sdk/development-best-practices-using-the-wcf-lob-adapter-sdk.md)
+## <a name="see-also"></a><span data-ttu-id="db62d-113">参照</span><span class="sxs-lookup"><span data-stu-id="db62d-113">See Also</span></span>  
+ [<span data-ttu-id="db62d-114">WCF LOB Adapter SDK を使用して開発のベスト プラクティス</span><span class="sxs-lookup"><span data-stu-id="db62d-114">Development best practices using the WCF LOB Adapter SDK</span></span>](../../adapters-and-accelerators/wcf-lob-adapter-sdk/development-best-practices-using-the-wcf-lob-adapter-sdk.md)

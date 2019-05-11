@@ -1,5 +1,5 @@
 ---
-title: ホストのパスワードを検証する側開始 SSO |Microsoft ドキュメント
+title: ホストのパスワードを検証側開始 SSO |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,17 +15,17 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 03a33eb83630831863f231ff9594e3082f0faa98
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6ac003083157c69be0fcabaeb37ff7064b76a6e9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22287858"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65279563"
 ---
-# <a name="validating-passwords-for-host-initiated-sso"></a><span data-ttu-id="77cae-102">ホストのパスワードを検証する側開始 SSO</span><span class="sxs-lookup"><span data-stu-id="77cae-102">Validating Passwords for Host Initiated SSO</span></span>
-<span data-ttu-id="77cae-103">ホスト側開始 SSO の関連アプリケーションを作成するときは、Windows 以外のユーザーのパスワードの検証が既定で有効になります。</span><span class="sxs-lookup"><span data-stu-id="77cae-103">When an affiliate application for host initiated SSO is created, password validation for the non-Windows user is enabled by default.</span></span> <span data-ttu-id="77cae-104">このため、アプリケーションでリソースにアクセスするための Windows ユーザー トークンを取得するために SSO を呼び出すときは、アプリケーションで Windows 以外のユーザー アカウントとパスワードを指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="77cae-104">This means when applications call SSO to obtain the Windows user token to access resources, they must provide the non-Windows user account and the non-Windows password.</span></span> <span data-ttu-id="77cae-105">パスワードが SSO データベースに格納されている、その Windows 以外のユーザーのパスワードと一致しない場合は、アクセスが拒否されます。</span><span class="sxs-lookup"><span data-stu-id="77cae-105">If the password does not match the password in the SSO database for that non-Windows user, access is denied.</span></span> <span data-ttu-id="77cae-106">関連アプリケーションのパスワードの検証機能は、必要に応じて無効にできます。</span><span class="sxs-lookup"><span data-stu-id="77cae-106">If necessary, the password validation feature can be disabled for the affiliate application.</span></span> <span data-ttu-id="77cae-107">パスワードの検証機能は、ホスト側開始 SSO の関連アプリケーションの種類が単独であっても、ホスト グループであってもどちらにも適用されます。</span><span class="sxs-lookup"><span data-stu-id="77cae-107">The password validation feature applies to both individual and host group type affiliate applications for host initiated SSO.</span></span>  
+# <a name="validating-passwords-for-host-initiated-sso"></a><span data-ttu-id="0fda0-102">ホストのパスワードを検証側開始 SSO</span><span class="sxs-lookup"><span data-stu-id="0fda0-102">Validating Passwords for Host Initiated SSO</span></span>
+<span data-ttu-id="0fda0-103">ホスト側開始 SSO が作成される関連アプリケーションは、ときに Windows 以外のユーザーのパスワードの検証は既定で有効にします。</span><span class="sxs-lookup"><span data-stu-id="0fda0-103">When an affiliate application for host initiated SSO is created, password validation for the non-Windows user is enabled by default.</span></span> <span data-ttu-id="0fda0-104">このため、アプリケーションがリソースにアクセスする Windows ユーザー トークンの取得に SSO を呼び出すと、Windows 以外のユーザー アカウントと非 Windows パスワードを提供する必要があります、します。</span><span class="sxs-lookup"><span data-stu-id="0fda0-104">This means when applications call SSO to obtain the Windows user token to access resources, they must provide the non-Windows user account and the non-Windows password.</span></span> <span data-ttu-id="0fda0-105">パスワードがその Windows 以外のユーザーの SSO データベースにパスワードが一致しない場合は、アクセスが拒否されました。</span><span class="sxs-lookup"><span data-stu-id="0fda0-105">If the password does not match the password in the SSO database for that non-Windows user, access is denied.</span></span> <span data-ttu-id="0fda0-106">必要に応じて、関連アプリケーションのパスワードの検証機能を無効にできます。</span><span class="sxs-lookup"><span data-stu-id="0fda0-106">If necessary, the password validation feature can be disabled for the affiliate application.</span></span> <span data-ttu-id="0fda0-107">パスワードの検証機能は、個人の両方に適用され、ホスト グループ タイプの関連アプリケーションのホスト側開始 SSO。</span><span class="sxs-lookup"><span data-stu-id="0fda0-107">The password validation feature applies to both individual and host group type affiliate applications for host initiated SSO.</span></span>  
   
- <span data-ttu-id="77cae-108">ホスト側開始 SSO 関連アプリケーションの種類が単独の場合の XML ファイルの例を以下に示します。</span><span class="sxs-lookup"><span data-stu-id="77cae-108">An example XML file for Individual type host initiated SSO affiliate application is:</span></span>  
+ <span data-ttu-id="0fda0-108">XML ファイルの例の個々 の型のホスト側開始 SSO 関連アプリケーションは。</span><span class="sxs-lookup"><span data-stu-id="0fda0-108">An example XML file for Individual type host initiated SSO affiliate application is:</span></span>  
   
 ```  
 <sso>  
@@ -42,9 +42,9 @@ ms.locfileid: "22287858"
   
 ```  
   
- <span data-ttu-id="77cae-109">ホスト側開始 SSO の単独アプリケーションの場合、上記の appUserAccount は、Windows ドメイン アカウント ユーザーの一覧を含むグループ アカウントです。一覧の Windows ドメイン アカウント ユーザーは、それぞれ対応する Windows 以外のアカウントに 1 対 1 でマッピングされます。</span><span class="sxs-lookup"><span data-stu-id="77cae-109">In the case of individual applications for host initiated SSO, the appUserAccount is a group account that contains the list of Windows domain account users that have a 1 to 1 mapping with their corresponding non-Windows accounts.</span></span>  
+ <span data-ttu-id="0fda0-109">個々 のアプリケーションの場合ホスト側開始 SSO を上記の appUserAccount は、グループ アカウントの 1 対 1 マッピングが、対応する Windows 以外のアカウントである Windows ドメイン アカウントのユーザーの一覧を含むです。</span><span class="sxs-lookup"><span data-stu-id="0fda0-109">In the case of individual applications for host initiated SSO, the appUserAccount is a group account that contains the list of Windows domain account users that have a 1 to 1 mapping with their corresponding non-Windows accounts.</span></span>  
   
- <span data-ttu-id="77cae-110">ホスト側開始 SSO 関連アプリケーションの種類がホスト グループの場合の XML ファイルの例を以下に示します。</span><span class="sxs-lookup"><span data-stu-id="77cae-110">An example XML file for host group type host initiated SSO affiliate application is:</span></span>  
+ <span data-ttu-id="0fda0-110">XML ファイルの例の開始された SSO 関連アプリケーションのホスト グループ タイプのホストは。</span><span class="sxs-lookup"><span data-stu-id="0fda0-110">An example XML file for host group type host initiated SSO affiliate application is:</span></span>  
   
 ```  
 <sso>  
@@ -61,7 +61,7 @@ ms.locfileid: "22287858"
   
 ```  
   
- <span data-ttu-id="77cae-111">ホスト側開始 SSO のグループ アプリケーションでは、上記の appUserAccount を、個別のユーザー アカウントにする必要があります。</span><span class="sxs-lookup"><span data-stu-id="77cae-111">In group applications for host initiated SSO, the appUserAccount must be an individual user account.</span></span> <span data-ttu-id="77cae-112">このアカウントは、Windows 以外のアカウントがすべてマップされるアカウントです。</span><span class="sxs-lookup"><span data-stu-id="77cae-112">It is this account that all non-Windows accounts are mapped to.</span></span>  
+ <span data-ttu-id="0fda0-111">グループ アプリケーションのホスト側開始 SSO の、上記の appUserAccount は個々 のユーザー アカウントである必要があります。</span><span class="sxs-lookup"><span data-stu-id="0fda0-111">In group applications for host initiated SSO, the appUserAccount must be an individual user account.</span></span> <span data-ttu-id="0fda0-112">Windows 以外のすべてのアカウントにマップされるこのアカウントになります。</span><span class="sxs-lookup"><span data-stu-id="0fda0-112">It is this account that all non-Windows accounts are mapped to.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="77cae-113">参照</span><span class="sxs-lookup"><span data-stu-id="77cae-113">See Also</span></span>  
- [<span data-ttu-id="77cae-114">ホスト側開始 SSO</span><span class="sxs-lookup"><span data-stu-id="77cae-114">Host Initiated SSO</span></span>](../core/host-initiated-sso.md)
+## <a name="see-also"></a><span data-ttu-id="0fda0-113">参照</span><span class="sxs-lookup"><span data-stu-id="0fda0-113">See Also</span></span>  
+ [<span data-ttu-id="0fda0-114">ホスト側開始 SSO</span><span class="sxs-lookup"><span data-stu-id="0fda0-114">Host Initiated SSO</span></span>](../core/host-initiated-sso.md)

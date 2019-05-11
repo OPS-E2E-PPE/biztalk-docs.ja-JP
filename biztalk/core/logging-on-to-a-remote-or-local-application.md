@@ -1,5 +1,5 @@
 ---
-title: リモートまたはローカルのアプリケーションへのログオン |Microsoft ドキュメント
+title: リモートまたはローカル アプリケーションへのログオン |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,17 +12,17 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9469c4b93f8d1182ceffb08ff08294f72e7d424e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8c587ef3a6161a54034e0f74a432a3710e3333e4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22261818"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65328395"
 ---
-# <a name="logging-on-to-a-remote-or-local-application"></a><span data-ttu-id="5d1b0-102">リモートまたはローカルのアプリケーションへのログオン</span><span class="sxs-lookup"><span data-stu-id="5d1b0-102">Logging on to a Remote or Local Application</span></span>
-<span data-ttu-id="5d1b0-103">ユーザーの関連資格情報を設定すると、ENTSSO (エンタープライズ シングル サインオン) を使用してアプリケーションにアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="5d1b0-103">After you finish setting affiliate credentials for your user, you can use Enterprise Single Sign-On service (ENTSSO) to provide access to applications.</span></span> <span data-ttu-id="5d1b0-104">ユーザーがローカルである場合は、ENTSSO を使用して、Windows 以外のアプリケーション用の資格情報を取得できます。</span><span class="sxs-lookup"><span data-stu-id="5d1b0-104">If the user is local, you can use ENTSSO to retrieve credentials for a non-Windows application.</span></span> <span data-ttu-id="5d1b0-105">また、ユーザーがリモートである場合は、ENTSSO を使用してローカル アプリケーション用の資格情報を取得できます。</span><span class="sxs-lookup"><span data-stu-id="5d1b0-105">In contrast, if the user is remote, you can use ENTSSO to retrieve credentials for a local application.</span></span>  
+# <a name="logging-on-to-a-remote-or-local-application"></a><span data-ttu-id="06ae4-102">リモートまたはローカル アプリケーションへのログオン</span><span class="sxs-lookup"><span data-stu-id="06ae4-102">Logging on to a Remote or Local Application</span></span>
+<span data-ttu-id="06ae4-103">ユーザーの資格情報関連の設定が完了したら後、は、アプリケーションへのアクセスを提供するのにエンタープライズ シングル サインオン サービス (ENTSSO) を使用できます。</span><span class="sxs-lookup"><span data-stu-id="06ae4-103">After you finish setting affiliate credentials for your user, you can use Enterprise Single Sign-On service (ENTSSO) to provide access to applications.</span></span> <span data-ttu-id="06ae4-104">ユーザーがローカルの場合は、ENTSSO を使用して非 Windows アプリケーションの資格情報を取得することができます。</span><span class="sxs-lookup"><span data-stu-id="06ae4-104">If the user is local, you can use ENTSSO to retrieve credentials for a non-Windows application.</span></span> <span data-ttu-id="06ae4-105">これに対し、ユーザーがリモートの場合は、ENTSSO を使用してローカル アプリケーションの資格情報を取得することができます。</span><span class="sxs-lookup"><span data-stu-id="06ae4-105">In contrast, if the user is remote, you can use ENTSSO to retrieve credentials for a local application.</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="5d1b0-106">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="5d1b0-106">In This Section</span></span>  
- [<span data-ttu-id="5d1b0-107">ローカル ユーザー、Windows 以外のアプリケーションにログオンする方法</span><span class="sxs-lookup"><span data-stu-id="5d1b0-107">How to Log a Local User on to a Non-Windows Application</span></span>](../core/how-to-log-a-local-user-on-to-a-non-windows-application.md)  
+## <a name="in-this-section"></a><span data-ttu-id="06ae4-106">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="06ae4-106">In This Section</span></span>  
+ [<span data-ttu-id="06ae4-107">ローカル ユーザー非 Windows アプリケーションにログオンする方法</span><span class="sxs-lookup"><span data-stu-id="06ae4-107">How to Log a Local User on to a Non-Windows Application</span></span>](../core/how-to-log-a-local-user-on-to-a-non-windows-application.md)  
   
- [<span data-ttu-id="5d1b0-108">リモート ユーザー、ローカルのアプリケーションにログオンする方法</span><span class="sxs-lookup"><span data-stu-id="5d1b0-108">How to Log a Remote User on to a Local Application</span></span>](../core/how-to-log-a-remote-user-on-to-a-local-application.md)
+ [<span data-ttu-id="06ae4-108">リモート ユーザー アプリケーションをローカルにログオンする方法</span><span class="sxs-lookup"><span data-stu-id="06ae4-108">How to Log a Remote User on to a Local Application</span></span>](../core/how-to-log-a-remote-user-on-to-a-local-application.md)

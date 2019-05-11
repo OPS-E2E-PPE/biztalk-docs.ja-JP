@@ -1,5 +1,5 @@
 ---
-title: '手順 4: Contoso 0 C 4 つの取引先アグリーメントの作成 |Microsoft Docs'
+title: 手順 4:Contoso 0 C 4 つの取引先アグリーメントの作成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,51 +16,51 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 90344af2c2aa1198ecdf95a69a5e411d6097cbc8
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3b9815c56aec25bcc5a6163a09ba7c37e4bdec08
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37002091"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65280965"
 ---
-# <a name="step-4-creating-the-contoso-0c4-trading-partner-agreement"></a><span data-ttu-id="6c619-102">手順 4: Contoso 0 C 4 つの取引先アグリーメントの作成</span><span class="sxs-lookup"><span data-stu-id="6c619-102">Step 4: Creating the Contoso 0C4 Trading Partner Agreement</span></span>
-<span data-ttu-id="6c619-103">Contoso と Fabrikam、Microsoft® を使用して間の取引先パートナー契約を作成するこの手順で[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]管理コンソール。</span><span class="sxs-lookup"><span data-stu-id="6c619-103">In this step, you create a trading partner agreement between Contoso and Fabrikam using the Microsoft® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] Management Console.</span></span> <span data-ttu-id="6c619-104">0C4 PIP (Partner Interface Process) のための新しい取引先アグリーメントを作成します。</span><span class="sxs-lookup"><span data-stu-id="6c619-104">You create a new trading partner agreement for the 0C4 Partner Interface Process (PIP).</span></span>  
+# <a name="step-4-creating-the-contoso-0c4-trading-partner-agreement"></a><span data-ttu-id="2e168-102">手順 4:Contoso 0 C 4 つの取引先アグリーメントを作成します。</span><span class="sxs-lookup"><span data-stu-id="2e168-102">Step 4: Creating the Contoso 0C4 Trading Partner Agreement</span></span>
+<span data-ttu-id="2e168-103">Contoso と Fabrikam、Microsoft® を使用して間の取引先パートナー契約を作成するこの手順で[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]管理コンソール。</span><span class="sxs-lookup"><span data-stu-id="2e168-103">In this step, you create a trading partner agreement between Contoso and Fabrikam using the Microsoft® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] Management Console.</span></span> <span data-ttu-id="2e168-104">0 C 4 の新しい取引先パートナー アグリーメントを作成するプロセス PIP (Partner Interface)。</span><span class="sxs-lookup"><span data-stu-id="2e168-104">You create a new trading partner agreement for the 0C4 Partner Interface Process (PIP).</span></span>  
 
-### <a name="to-start-the-btarn-management-console"></a><span data-ttu-id="6c619-105">BTARN 管理コンソールを起動するには</span><span class="sxs-lookup"><span data-stu-id="6c619-105">To start the BTARN Management Console</span></span>  
+### <a name="to-start-the-btarn-management-console"></a><span data-ttu-id="2e168-105">BTARN 管理コンソールを開始するには</span><span class="sxs-lookup"><span data-stu-id="2e168-105">To start the BTARN Management Console</span></span>  
 
-- <span data-ttu-id="6c619-106">クリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**Microsoft BizTalk\<バージョン\>Accelerator for RosettaNet**順にクリックします[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]管理コンソールです。</span><span class="sxs-lookup"><span data-stu-id="6c619-106">Click **Start**, point to **All Programs**, point to **Microsoft BizTalk \<version\> Accelerator for RosettaNet**, and then click [!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)] Management Console.</span></span>  
+- <span data-ttu-id="2e168-106">クリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**Microsoft BizTalk\<バージョン\>Accelerator for RosettaNet**順にクリックします[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]管理コンソールです。</span><span class="sxs-lookup"><span data-stu-id="2e168-106">Click **Start**, point to **All Programs**, point to **Microsoft BizTalk \<version\> Accelerator for RosettaNet**, and then click [!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)] Management Console.</span></span>  
 
-### <a name="to-create-the-0c4-trading-partner-agreement"></a><span data-ttu-id="6c619-107">0C4 取引先アグリーメントを作成するには</span><span class="sxs-lookup"><span data-stu-id="6c619-107">To create the 0C4 trading partner agreement</span></span>  
+### <a name="to-create-the-0c4-trading-partner-agreement"></a><span data-ttu-id="2e168-107">4 の取引先パートナー契約の 0 C を作成するには</span><span class="sxs-lookup"><span data-stu-id="2e168-107">To create the 0C4 trading partner agreement</span></span>  
 
-1. <span data-ttu-id="6c619-108">**[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]** 管理コンソールで、展開[!INCLUDE[btaBTARNNoVersionui](../../includes/btabtarnnoversionui-md.md)]、右クリックして**契約**、 をポイント**新規**、順にクリックします**アグリーメント**.</span><span class="sxs-lookup"><span data-stu-id="6c619-108">In the **[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]** Management Console, expand [!INCLUDE[btaBTARNNoVersionui](../../includes/btabtarnnoversionui-md.md)], right-click **Agreements**, point to **New**, and then click **Agreement**.</span></span>  
+1. <span data-ttu-id="2e168-108">**[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]** 管理コンソールで、展開[!INCLUDE[btaBTARNNoVersionui](../../includes/btabtarnnoversionui-md.md)]、右クリックして**契約**、 をポイント**新規**、順にクリックします**アグリーメント**.</span><span class="sxs-lookup"><span data-stu-id="2e168-108">In the **[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]** Management Console, expand [!INCLUDE[btaBTARNNoVersionui](../../includes/btabtarnnoversionui-md.md)], right-click **Agreements**, point to **New**, and then click **Agreement**.</span></span>  
 
-2. <span data-ttu-id="6c619-109">新しいアグリーメントのプロパティ ダイアログ ボックスで、上、**全般** タブで、次の操作を行います。</span><span class="sxs-lookup"><span data-stu-id="6c619-109">In the New Agreement Properties dialog box, on the **General** tab, do the following:</span></span>  
+2. <span data-ttu-id="2e168-109">新しいアグリーメントのプロパティ ダイアログ ボックスで、上、**全般** タブで、次の操作を行います。</span><span class="sxs-lookup"><span data-stu-id="2e168-109">In the New Agreement Properties dialog box, on the **General** tab, do the following:</span></span>  
 
 
-   |         <span data-ttu-id="6c619-110">プロパティ</span><span class="sxs-lookup"><span data-stu-id="6c619-110">Use this</span></span>          |                        <span data-ttu-id="6c619-111">目的</span><span class="sxs-lookup"><span data-stu-id="6c619-111">To do this</span></span>                         |
+   |         <span data-ttu-id="2e168-110">プロパティ</span><span class="sxs-lookup"><span data-stu-id="2e168-110">Use this</span></span>          |                        <span data-ttu-id="2e168-111">目的</span><span class="sxs-lookup"><span data-stu-id="2e168-111">To do this</span></span>                         |
    |---------------------------|-----------------------------------------------------------|
-   |         <span data-ttu-id="6c619-112">**名前**</span><span class="sxs-lookup"><span data-stu-id="6c619-112">**Name**</span></span>          |             <span data-ttu-id="6c619-113">型**Fabrikam_To_Contoso_0C4**します。</span><span class="sxs-lookup"><span data-stu-id="6c619-113">Type **Fabrikam_To_Contoso_0C4**.</span></span>             |
-   | <span data-ttu-id="6c619-114">**プロセスの構成**</span><span class="sxs-lookup"><span data-stu-id="6c619-114">**Process Configuration**</span></span> |    <span data-ttu-id="6c619-115">選択**STD_0C4_R01.02**ドロップダウン リストから。</span><span class="sxs-lookup"><span data-stu-id="6c619-115">Select **STD_0C4_R01.02** from the drop-down list.</span></span>     |
-   |    <span data-ttu-id="6c619-116">**自分の所属組織**</span><span class="sxs-lookup"><span data-stu-id="6c619-116">**My Organization**</span></span>    |        <span data-ttu-id="6c619-117">選択**Contoso**ドロップダウン リストから。</span><span class="sxs-lookup"><span data-stu-id="6c619-117">Select **Contoso** from the drop-down list.</span></span>        |
-   | <span data-ttu-id="6c619-118">**取引先組織**</span><span class="sxs-lookup"><span data-stu-id="6c619-118">**Partner Organization**</span></span>  |       <span data-ttu-id="6c619-119">選択**Fabrikam**ドロップダウン リストから。</span><span class="sxs-lookup"><span data-stu-id="6c619-119">Select **Fabrikam** from the drop-down list.</span></span>        |
-   |     <span data-ttu-id="6c619-120">**RNIF のバージョン**</span><span class="sxs-lookup"><span data-stu-id="6c619-120">**RNIF Version**</span></span>      |       <span data-ttu-id="6c619-121">選択**V02.00.01**ドロップダウン リストから。</span><span class="sxs-lookup"><span data-stu-id="6c619-121">Select **V02.00.01** from the drop-down list.</span></span>       |
-   |       <span data-ttu-id="6c619-122">**ホーム ロール**</span><span class="sxs-lookup"><span data-stu-id="6c619-122">**Home Role**</span></span>       | <span data-ttu-id="6c619-123">選択**Responder (応答)** ドロップダウン リストから。</span><span class="sxs-lookup"><span data-stu-id="6c619-123">Select **Responder (Responder)** from the drop-down list.</span></span> |
-   |         <span data-ttu-id="6c619-124">**使用方法**</span><span class="sxs-lookup"><span data-stu-id="6c619-124">**Usage**</span></span>         |         <span data-ttu-id="6c619-125">選択**テスト**ドロップダウン リストから。</span><span class="sxs-lookup"><span data-stu-id="6c619-125">Select **Test** from the drop-down list.</span></span>          |
+   |         <span data-ttu-id="2e168-112">**名前**</span><span class="sxs-lookup"><span data-stu-id="2e168-112">**Name**</span></span>          |             <span data-ttu-id="2e168-113">型**Fabrikam_To_Contoso_0C4**します。</span><span class="sxs-lookup"><span data-stu-id="2e168-113">Type **Fabrikam_To_Contoso_0C4**.</span></span>             |
+   | <span data-ttu-id="2e168-114">**プロセスの構成**</span><span class="sxs-lookup"><span data-stu-id="2e168-114">**Process Configuration**</span></span> |    <span data-ttu-id="2e168-115">選択**STD_0C4_R01.02**ドロップダウン リストから。</span><span class="sxs-lookup"><span data-stu-id="2e168-115">Select **STD_0C4_R01.02** from the drop-down list.</span></span>     |
+   |    <span data-ttu-id="2e168-116">**自分の所属組織**</span><span class="sxs-lookup"><span data-stu-id="2e168-116">**My Organization**</span></span>    |        <span data-ttu-id="2e168-117">選択**Contoso**ドロップダウン リストから。</span><span class="sxs-lookup"><span data-stu-id="2e168-117">Select **Contoso** from the drop-down list.</span></span>        |
+   | <span data-ttu-id="2e168-118">**取引先組織**</span><span class="sxs-lookup"><span data-stu-id="2e168-118">**Partner Organization**</span></span>  |       <span data-ttu-id="2e168-119">選択**Fabrikam**ドロップダウン リストから。</span><span class="sxs-lookup"><span data-stu-id="2e168-119">Select **Fabrikam** from the drop-down list.</span></span>        |
+   |     <span data-ttu-id="2e168-120">**RNIF のバージョン**</span><span class="sxs-lookup"><span data-stu-id="2e168-120">**RNIF Version**</span></span>      |       <span data-ttu-id="2e168-121">選択**V02.00.01**ドロップダウン リストから。</span><span class="sxs-lookup"><span data-stu-id="2e168-121">Select **V02.00.01** from the drop-down list.</span></span>       |
+   |       <span data-ttu-id="2e168-122">**ホーム ロール**</span><span class="sxs-lookup"><span data-stu-id="2e168-122">**Home Role**</span></span>       | <span data-ttu-id="2e168-123">選択**Responder (応答)** ドロップダウン リストから。</span><span class="sxs-lookup"><span data-stu-id="2e168-123">Select **Responder (Responder)** from the drop-down list.</span></span> |
+   |         <span data-ttu-id="2e168-124">**使用方法**</span><span class="sxs-lookup"><span data-stu-id="2e168-124">**Usage**</span></span>         |         <span data-ttu-id="2e168-125">選択**テスト**ドロップダウン リストから。</span><span class="sxs-lookup"><span data-stu-id="2e168-125">Select **Test** from the drop-down list.</span></span>          |
 
 
-3. <span data-ttu-id="6c619-126">をクリックして、**ポート**タブをクリックし、次の操作を行います。</span><span class="sxs-lookup"><span data-stu-id="6c619-126">Click the **Ports** tab, and then do the following:</span></span>  
+3. <span data-ttu-id="2e168-126">をクリックして、**ポート**タブをクリックし、次の操作を行います。</span><span class="sxs-lookup"><span data-stu-id="2e168-126">Click the **Ports** tab, and then do the following:</span></span>  
 
 
-   |    <span data-ttu-id="6c619-127">プロパティ</span><span class="sxs-lookup"><span data-stu-id="6c619-127">Use this</span></span>    |                          <span data-ttu-id="6c619-128">目的</span><span class="sxs-lookup"><span data-stu-id="6c619-128">To do this</span></span>                           |
+   |    <span data-ttu-id="2e168-127">プロパティ</span><span class="sxs-lookup"><span data-stu-id="2e168-127">Use this</span></span>    |                          <span data-ttu-id="2e168-128">目的</span><span class="sxs-lookup"><span data-stu-id="2e168-128">To do this</span></span>                           |
    |----------------|---------------------------------------------------------------|
-   | <span data-ttu-id="6c619-129">**アクションの URL**</span><span class="sxs-lookup"><span data-stu-id="6c619-129">**Action URL**</span></span> | <span data-ttu-id="6c619-130">型**https://<fabrikam_machine>/BTARNApp/RNIFReceive.aspx**</span><span class="sxs-lookup"><span data-stu-id="6c619-130">Type **https://<fabrikam_machine>/BTARNApp/RNIFReceive.aspx**</span></span> |
-   | <span data-ttu-id="6c619-131">**シグナル URL**</span><span class="sxs-lookup"><span data-stu-id="6c619-131">**Signal URL**</span></span> | <span data-ttu-id="6c619-132">型**https://<fabrikam_machine>/BTARNApp/RNIFReceive.aspx**</span><span class="sxs-lookup"><span data-stu-id="6c619-132">Type **https://<fabrikam_machine>/BTARNApp/RNIFReceive.aspx**</span></span> |
-   |  <span data-ttu-id="6c619-133">**同期 URL**</span><span class="sxs-lookup"><span data-stu-id="6c619-133">**Sync URL**</span></span>  | <span data-ttu-id="6c619-134">型**https://<fabrikam_machine>/BTARNApp/RNIFReceive.aspx**</span><span class="sxs-lookup"><span data-stu-id="6c619-134">Type **https://<fabrikam_machine>/BTARNApp/RNIFReceive.aspx**</span></span> |
+   | <span data-ttu-id="2e168-129">**アクションの URL**</span><span class="sxs-lookup"><span data-stu-id="2e168-129">**Action URL**</span></span> | <span data-ttu-id="2e168-130">型**https://<fabrikam_machine>/BTARNApp/RNIFReceive.aspx**</span><span class="sxs-lookup"><span data-stu-id="2e168-130">Type **https://<fabrikam_machine>/BTARNApp/RNIFReceive.aspx**</span></span> |
+   | <span data-ttu-id="2e168-131">**シグナル URL**</span><span class="sxs-lookup"><span data-stu-id="2e168-131">**Signal URL**</span></span> | <span data-ttu-id="2e168-132">型**https://<fabrikam_machine>/BTARNApp/RNIFReceive.aspx**</span><span class="sxs-lookup"><span data-stu-id="2e168-132">Type **https://<fabrikam_machine>/BTARNApp/RNIFReceive.aspx**</span></span> |
+   |  <span data-ttu-id="2e168-133">**同期 URL**</span><span class="sxs-lookup"><span data-stu-id="2e168-133">**Sync URL**</span></span>  | <span data-ttu-id="2e168-134">型**https://<fabrikam_machine>/BTARNApp/RNIFReceive.aspx**</span><span class="sxs-lookup"><span data-stu-id="2e168-134">Type **https://<fabrikam_machine>/BTARNApp/RNIFReceive.aspx**</span></span> |
 
 
-4. <span data-ttu-id="6c619-135">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6c619-135">Click **OK**.</span></span>  
+4. <span data-ttu-id="2e168-135">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2e168-135">Click **OK**.</span></span>  
 
-5. <span data-ttu-id="6c619-136">右クリックし、 **Fabrikam_To_Contoso_0C4**アグリーメント、およびクリック**Activate**します。</span><span class="sxs-lookup"><span data-stu-id="6c619-136">Right-click the **Fabrikam_To_Contoso_0C4** agreement, and then click **Activate**.</span></span>  
+5. <span data-ttu-id="2e168-136">右クリックし、 **Fabrikam_To_Contoso_0C4**アグリーメント、およびクリック**Activate**します。</span><span class="sxs-lookup"><span data-stu-id="2e168-136">Right-click the **Fabrikam_To_Contoso_0C4** agreement, and then click **Activate**.</span></span>  
 
-## <a name="see-also"></a><span data-ttu-id="6c619-137">参照</span><span class="sxs-lookup"><span data-stu-id="6c619-137">See Also</span></span>  
- [<span data-ttu-id="6c619-138">手順 5: Contoso 3A2 取引先契約の作成</span><span class="sxs-lookup"><span data-stu-id="6c619-138">Step 5: Creating the Contoso 3A2 Trading Partner Agreement</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/step-5-creating-the-contoso-3a2-trading-partner-agreement.md)
+## <a name="see-also"></a><span data-ttu-id="2e168-137">参照</span><span class="sxs-lookup"><span data-stu-id="2e168-137">See Also</span></span>  
+ [<span data-ttu-id="2e168-138">手順 5:Contoso 3A2 取引先契約の作成</span><span class="sxs-lookup"><span data-stu-id="2e168-138">Step 5: Creating the Contoso 3A2 Trading Partner Agreement</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/step-5-creating-the-contoso-3a2-trading-partner-agreement.md)

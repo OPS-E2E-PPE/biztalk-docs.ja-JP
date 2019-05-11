@@ -1,5 +1,5 @@
 ---
-title: '付録 b: データの種類 |Microsoft ドキュメント'
+title: 付録 B:データの種類 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,20 +16,20 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6062b7fe3947d368ce8173daa28527dd5a68da03
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: aa7fe2c608b68b02a3bfba4d4a93bf377e734964
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22230090"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65359534"
 ---
-# <a name="appendix-b-data-types"></a><span data-ttu-id="b90b0-102">付録 b: データ型</span><span class="sxs-lookup"><span data-stu-id="b90b0-102">Appendix B: Data Types</span></span>
-<span data-ttu-id="b90b0-103">ここでは、Microsoft BizTalk Server 用に生成されたスキームの使用に関する JD Edwards EnterpriseOne 固有の情報を説明します。</span><span class="sxs-lookup"><span data-stu-id="b90b0-103">This section provides JD Edwards EnterpriseOne-specific information about using generated schemas for Microsoft BizTalk Server.</span></span>  
+# <a name="appendix-b-data-types"></a><span data-ttu-id="1d348-102">付録 B:データ型</span><span class="sxs-lookup"><span data-stu-id="1d348-102">Appendix B: Data Types</span></span>
+<span data-ttu-id="1d348-103">このセクションでは、JD Edwards EnterpriseOne 固有の情報を使用しての詳細については、Microsoft BizTalk Server のスキーマを生成します。</span><span class="sxs-lookup"><span data-stu-id="1d348-103">This section provides JD Edwards EnterpriseOne-specific information about using generated schemas for Microsoft BizTalk Server.</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="b90b0-104">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="b90b0-104">In This Section</span></span>  
+## <a name="in-this-section"></a><span data-ttu-id="1d348-104">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="1d348-104">In This Section</span></span>  
   
--   [<span data-ttu-id="b90b0-105">基本型</span><span class="sxs-lookup"><span data-stu-id="b90b0-105">Basic Types</span></span>](../core/basic-types2.md)  
+-   [<span data-ttu-id="1d348-105">基本の型</span><span class="sxs-lookup"><span data-stu-id="1d348-105">Basic Types</span></span>](../core/basic-types2.md)  
   
--   [<span data-ttu-id="b90b0-106">文字列値の処理</span><span class="sxs-lookup"><span data-stu-id="b90b0-106">Handling String Values</span></span>](../core/handling-string-values2.md)  
+-   [<span data-ttu-id="1d348-106">文字列値の処理</span><span class="sxs-lookup"><span data-stu-id="1d348-106">Handling String Values</span></span>](../core/handling-string-values2.md)  
   
--   [<span data-ttu-id="b90b0-107">MATH_NUMERIC 型の使用</span><span class="sxs-lookup"><span data-stu-id="b90b0-107">Using the MATH_NUMERIC Type</span></span>](../core/using-the-math-numeric-type1.md)
+-   [<span data-ttu-id="1d348-107">MATH_NUMERIC 型の使用</span><span class="sxs-lookup"><span data-stu-id="1d348-107">Using the MATH_NUMERIC Type</span></span>](../core/using-the-math-numeric-type1.md)

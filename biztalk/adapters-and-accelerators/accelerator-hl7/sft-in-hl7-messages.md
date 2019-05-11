@@ -1,5 +1,5 @@
 ---
-title: HL7 メッセージで SFT |Microsoft ドキュメント
+title: HL7 メッセージの SFT |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,27 +12,27 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 58cf1536d8619e47a9a33c77e4f95387e0ebb559
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c8c53698a9ddce80ed466de17c67e6d5ebf7bf47
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22206170"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65289176"
 ---
-# <a name="sft-in-hl7-messages"></a><span data-ttu-id="44eac-102">HL7 メッセージで SFT</span><span class="sxs-lookup"><span data-stu-id="44eac-102">SFT in HL7 Messages</span></span>
-[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]<span data-ttu-id="44eac-103">メッセージへのソフトウェアのセグメント (SFT) の追加をサポートします。</span><span class="sxs-lookup"><span data-stu-id="44eac-103"> supports adding software segments (SFT) to messages.</span></span> <span data-ttu-id="44eac-104">SFT セグメントは、送信元アプリケーションとして使用されるソフトウェア製品に関する追加情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="44eac-104">SFT segments provide additional information about the software products used as sending applications.</span></span> <span data-ttu-id="44eac-105">SFT セグメントは、主な診断に使用します。</span><span class="sxs-lookup"><span data-stu-id="44eac-105">SFT segments are primarily used for diagnostics.</span></span> <span data-ttu-id="44eac-106">、標準 HL7 v2.5 の一部として SFT セグメントは、アプリケーションの受信確認で表示されます。</span><span class="sxs-lookup"><span data-stu-id="44eac-106">As a part of the HL7 v2.5 standard, SFT segments are displayed in the application acknowledgement.</span></span>  
+# <a name="sft-in-hl7-messages"></a><span data-ttu-id="06d62-102">HL7 メッセージの SFT</span><span class="sxs-lookup"><span data-stu-id="06d62-102">SFT in HL7 Messages</span></span>
+[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)] <span data-ttu-id="06d62-103">メッセージへのソフトウェアのセグメント (SFT) の追加をサポートします。</span><span class="sxs-lookup"><span data-stu-id="06d62-103">supports adding software segments (SFT) to messages.</span></span> <span data-ttu-id="06d62-104">SFT セグメントは、送信元アプリケーションとして使用するソフトウェア製品に関する追加情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="06d62-104">SFT segments provide additional information about the software products used as sending applications.</span></span> <span data-ttu-id="06d62-105">SFT セグメントは、診断の主に使用されます。</span><span class="sxs-lookup"><span data-stu-id="06d62-105">SFT segments are primarily used for diagnostics.</span></span> <span data-ttu-id="06d62-106">、標準 HL7 v2.5 の一部としては、SFT セグメントは、アプリケーションの受信確認で表示されます。</span><span class="sxs-lookup"><span data-stu-id="06d62-106">As a part of the HL7 v2.5 standard, SFT segments are displayed in the application acknowledgement.</span></span>  
   
-## <a name="message-instance-with-sft-segment"></a><span data-ttu-id="44eac-107">SFT セグメントを持つメッセージ インスタンス</span><span class="sxs-lookup"><span data-stu-id="44eac-107">Message instance with SFT segment</span></span>  
- <span data-ttu-id="44eac-108">SFT セグメントを持つ ADT^A01.txt メッセージを作成するのにには、次の手順を使用します。</span><span class="sxs-lookup"><span data-stu-id="44eac-108">Use the following procedure to create an ADT^A01.txt message with an SFT segment.</span></span>  
+## <a name="message-instance-with-sft-segment"></a><span data-ttu-id="06d62-107">SFT セグメントを持つメッセージ インスタンス</span><span class="sxs-lookup"><span data-stu-id="06d62-107">Message instance with SFT segment</span></span>  
+ <span data-ttu-id="06d62-108">次の手順を使用して、SFT セグメントを持つ ADT^A01.txt メッセージを作成します。</span><span class="sxs-lookup"><span data-stu-id="06d62-108">Use the following procedure to create an ADT^A01.txt message with an SFT segment.</span></span>  
   
 > [!NOTE]
->  <span data-ttu-id="44eac-109">メモ帳でこのメッセージを作成するときに、キャリッジ リターンの次の最後の行を削除します。</span><span class="sxs-lookup"><span data-stu-id="44eac-109">When you create this message in Notepad, delete the carriage return following the last line.</span></span>  
+>  <span data-ttu-id="06d62-109">メモ帳でこのメッセージを作成するときに、キャリッジ リターンの次の最後の行を削除します。</span><span class="sxs-lookup"><span data-stu-id="06d62-109">When you create this message in Notepad, delete the carriage return following the last line.</span></span>  
   
-#### <a name="to-create-an-adta01txt-message-with-an-sft-segment"></a><span data-ttu-id="44eac-110">SFT セグメントを持つ ADT^A01.txt メッセージを作成するには</span><span class="sxs-lookup"><span data-stu-id="44eac-110">To create an ADT^A01.txt message with an SFT segment</span></span>  
+#### <a name="to-create-an-adta01txt-message-with-an-sft-segment"></a><span data-ttu-id="06d62-110">SFT セグメントを持つ ADT^A01.txt メッセージを作成するには</span><span class="sxs-lookup"><span data-stu-id="06d62-110">To create an ADT^A01.txt message with an SFT segment</span></span>  
   
-1.  <span data-ttu-id="44eac-111">メモ帳を開きます。</span><span class="sxs-lookup"><span data-stu-id="44eac-111">Open Notepad.</span></span>  
+1.  <span data-ttu-id="06d62-111">メモ帳を開きます。</span><span class="sxs-lookup"><span data-stu-id="06d62-111">Open Notepad.</span></span>  
   
-2.  <span data-ttu-id="44eac-112">次のテキストをメモ帳にコピーします。</span><span class="sxs-lookup"><span data-stu-id="44eac-112">Copy the following text into Notepad:</span></span>  
+2.  <span data-ttu-id="06d62-112">次のテキストをメモ帳にコピーします。</span><span class="sxs-lookup"><span data-stu-id="06d62-112">Copy the following text into Notepad:</span></span>  
   
     ```  
     MSH|^~\&|Tutorial_ADTSystem|MCM|Tutorial_BatchDest||199112311501||  
@@ -102,11 +102,11 @@ ms.locfileid: "22206170"
     ST^surnamr&prefix&own&partner&spouse|N  
     ```  
   
-3.  <span data-ttu-id="44eac-113">ファイルを保存し、メモ帳を閉じます。</span><span class="sxs-lookup"><span data-stu-id="44eac-113">Save the file, and then close Notepad.</span></span>  
+3.  <span data-ttu-id="06d62-113">ファイルを保存し、メモ帳を閉じます。</span><span class="sxs-lookup"><span data-stu-id="06d62-113">Save the file, and then close Notepad.</span></span>  
   
-4.  <span data-ttu-id="44eac-114">送信元パーティの受信確認のフォルダーを確認してください。</span><span class="sxs-lookup"><span data-stu-id="44eac-114">Check the Acknowledgement folder of the source party.</span></span>  
+4.  <span data-ttu-id="06d62-114">送信元パーティの受信確認のフォルダーを確認します。</span><span class="sxs-lookup"><span data-stu-id="06d62-114">Check the Acknowledgement folder of the source party.</span></span>  
   
-     <span data-ttu-id="44eac-115">このメッセージの本文の受信確認には、メッセージの SFT セグメントが含まれています。</span><span class="sxs-lookup"><span data-stu-id="44eac-115">The body acknowledgement of this message contains the SFT segments of the message.</span></span> <span data-ttu-id="44eac-116">上記のメッセージに対する ACK は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="44eac-116">The ACK for the above message is:</span></span>  
+     <span data-ttu-id="06d62-115">このメッセージの受信確認本文にはには、メッセージの SFT セグメントが含まれています。</span><span class="sxs-lookup"><span data-stu-id="06d62-115">The body acknowledgement of this message contains the SFT segments of the message.</span></span> <span data-ttu-id="06d62-116">上記のメッセージに対する ACK は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="06d62-116">The ACK for the above message is:</span></span>  
   
     ```  
     MSH|^~\&|Tutorial_BatchDest||Tutorial_ADTSystem|MCM|20070508175311||ACK^A01^ACK|000001|P|2.5|||AL  
@@ -114,6 +114,6 @@ ms.locfileid: "22206170"
     SFT|ST^A^1^2^ISO^String&String&DNS^AM^String&String&DNS^P^String|String|String|String|String|DTM^H  
     ```  
   
-## <a name="see-also"></a><span data-ttu-id="44eac-117">参照</span><span class="sxs-lookup"><span data-stu-id="44eac-117">See Also</span></span>  
- <span data-ttu-id="44eac-118">[HL7 メッセージ](../../adapters-and-accelerators/accelerator-hl7/hl7-messaging.md) </span><span class="sxs-lookup"><span data-stu-id="44eac-118">[HL7 Messaging](../../adapters-and-accelerators/accelerator-hl7/hl7-messaging.md) </span></span>  
-[<span data-ttu-id="44eac-119">HL7 アクセラレータと使用可能な BizTalk ツールを説明します。</span><span class="sxs-lookup"><span data-stu-id="44eac-119">Learn the HL7 accelerator and the BizTalk tools available</span></span>](../../adapters-and-accelerators/accelerator-hl7/learn-the-hl7-accelerator-and-the-biztalk-tools-available.md)
+## <a name="see-also"></a><span data-ttu-id="06d62-117">参照</span><span class="sxs-lookup"><span data-stu-id="06d62-117">See Also</span></span>  
+ <span data-ttu-id="06d62-118">[HL7 メッセージング](../../adapters-and-accelerators/accelerator-hl7/hl7-messaging.md) </span><span class="sxs-lookup"><span data-stu-id="06d62-118">[HL7 Messaging](../../adapters-and-accelerators/accelerator-hl7/hl7-messaging.md) </span></span>  
+[<span data-ttu-id="06d62-119">使用可能な HL7 アクセラレータと BizTalk ツールの概要</span><span class="sxs-lookup"><span data-stu-id="06d62-119">Learn the HL7 accelerator and the BizTalk tools available</span></span>](../../adapters-and-accelerators/accelerator-hl7/learn-the-hl7-accelerator-and-the-biztalk-tools-available.md)

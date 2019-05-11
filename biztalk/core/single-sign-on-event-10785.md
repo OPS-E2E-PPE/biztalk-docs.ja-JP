@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10785 |Microsoft Docs'
+title: シングル サインオン:イベント 10785 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,28 +12,28 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 96194f9ab4a057301e9c0a20d4c222f730e70bfb
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: fed42624f0efc2c4ae2d13c35d48ca47a87e35cb
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36991515"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65278020"
 ---
-# <a name="single-sign-on-event-10785"></a><span data-ttu-id="229b3-102">シングル サインオン: イベント 10785</span><span class="sxs-lookup"><span data-stu-id="229b3-102">Single Sign-On: Event 10785</span></span>
-## <a name="details"></a><span data-ttu-id="229b3-103">詳細</span><span class="sxs-lookup"><span data-stu-id="229b3-103">Details</span></span>  
+# <a name="single-sign-on-event-10785"></a><span data-ttu-id="74eb6-102">シングル サインオン:イベント 10785</span><span class="sxs-lookup"><span data-stu-id="74eb6-102">Single Sign-On: Event 10785</span></span>
+## <a name="details"></a><span data-ttu-id="74eb6-103">詳細</span><span class="sxs-lookup"><span data-stu-id="74eb6-103">Details</span></span>  
   
 |                 |                                                                |
 |-----------------|----------------------------------------------------------------|
-|  <span data-ttu-id="229b3-104">製品名</span><span class="sxs-lookup"><span data-stu-id="229b3-104">Product Name</span></span>   |                   <span data-ttu-id="229b3-105">エンタープライズ シングル サインオン</span><span class="sxs-lookup"><span data-stu-id="229b3-105">Enterprise Single Sign-On</span></span>                    |
-| <span data-ttu-id="229b3-106">製品バージョン</span><span class="sxs-lookup"><span data-stu-id="229b3-106">Product Version</span></span> |   [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]   |
-|    <span data-ttu-id="229b3-107">イベント ID</span><span class="sxs-lookup"><span data-stu-id="229b3-107">Event ID</span></span>     |                             <span data-ttu-id="229b3-108">10785</span><span class="sxs-lookup"><span data-stu-id="229b3-108">10785</span></span>                              |
-|  <span data-ttu-id="229b3-109">イベント ソース</span><span class="sxs-lookup"><span data-stu-id="229b3-109">Event Source</span></span>   |                             <span data-ttu-id="229b3-110">ENTSSO</span><span class="sxs-lookup"><span data-stu-id="229b3-110">ENTSSO</span></span>                             |
-|    <span data-ttu-id="229b3-111">コンポーネント</span><span class="sxs-lookup"><span data-stu-id="229b3-111">Component</span></span>    |                              <span data-ttu-id="229b3-112">なし</span><span class="sxs-lookup"><span data-stu-id="229b3-112">N/A</span></span>                               |
-|  <span data-ttu-id="229b3-113">シンボル名</span><span class="sxs-lookup"><span data-stu-id="229b3-113">Symbolic Name</span></span>  |                       <span data-ttu-id="229b3-114">ENTSSO_E_DB_ACCESS</span><span class="sxs-lookup"><span data-stu-id="229b3-114">ENTSSO_E_DB_ACCESS</span></span>                       |
-|  <span data-ttu-id="229b3-115">メッセージ テキスト</span><span class="sxs-lookup"><span data-stu-id="229b3-115">Message Text</span></span>   | <span data-ttu-id="229b3-116">SSO データベースへのアクセスを試みているときにエラーが発生しました。</span><span class="sxs-lookup"><span data-stu-id="229b3-116">An error occurred while attempting to access the SSO database.</span></span> |
+|  <span data-ttu-id="74eb6-104">製品名</span><span class="sxs-lookup"><span data-stu-id="74eb6-104">Product Name</span></span>   |                   <span data-ttu-id="74eb6-105">エンタープライズ シングル サインオン</span><span class="sxs-lookup"><span data-stu-id="74eb6-105">Enterprise Single Sign-On</span></span>                    |
+| <span data-ttu-id="74eb6-106">製品バージョン</span><span class="sxs-lookup"><span data-stu-id="74eb6-106">Product Version</span></span> |   [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]   |
+|    <span data-ttu-id="74eb6-107">イベント ID</span><span class="sxs-lookup"><span data-stu-id="74eb6-107">Event ID</span></span>     |                             <span data-ttu-id="74eb6-108">10785</span><span class="sxs-lookup"><span data-stu-id="74eb6-108">10785</span></span>                              |
+|  <span data-ttu-id="74eb6-109">イベント ソース</span><span class="sxs-lookup"><span data-stu-id="74eb6-109">Event Source</span></span>   |                             <span data-ttu-id="74eb6-110">ENTSSO</span><span class="sxs-lookup"><span data-stu-id="74eb6-110">ENTSSO</span></span>                             |
+|    <span data-ttu-id="74eb6-111">コンポーネント</span><span class="sxs-lookup"><span data-stu-id="74eb6-111">Component</span></span>    |                              <span data-ttu-id="74eb6-112">なし</span><span class="sxs-lookup"><span data-stu-id="74eb6-112">N/A</span></span>                               |
+|  <span data-ttu-id="74eb6-113">シンボル名</span><span class="sxs-lookup"><span data-stu-id="74eb6-113">Symbolic Name</span></span>  |                       <span data-ttu-id="74eb6-114">ENTSSO_E_DB_ACCESS</span><span class="sxs-lookup"><span data-stu-id="74eb6-114">ENTSSO_E_DB_ACCESS</span></span>                       |
+|  <span data-ttu-id="74eb6-115">メッセージ テキスト</span><span class="sxs-lookup"><span data-stu-id="74eb6-115">Message Text</span></span>   | <span data-ttu-id="74eb6-116">SSO データベースへのアクセスを試みているときにエラーが発生しました。</span><span class="sxs-lookup"><span data-stu-id="74eb6-116">An error occurred while attempting to access the SSO database.</span></span> |
   
-## <a name="explanation"></a><span data-ttu-id="229b3-117">説明</span><span class="sxs-lookup"><span data-stu-id="229b3-117">Explanation</span></span>  
- <span data-ttu-id="229b3-118">ENTSSO データベースがオフラインの可能性があります。</span><span class="sxs-lookup"><span data-stu-id="229b3-118">The ENTSSO database may be offline.</span></span>  
+## <a name="explanation"></a><span data-ttu-id="74eb6-117">説明</span><span class="sxs-lookup"><span data-stu-id="74eb6-117">Explanation</span></span>  
+ <span data-ttu-id="74eb6-118">ENTSSO データベースはオフラインの可能性があります。</span><span class="sxs-lookup"><span data-stu-id="74eb6-118">The ENTSSO database may be offline.</span></span>  
   
-## <a name="user-action"></a><span data-ttu-id="229b3-119">ユーザーの操作</span><span class="sxs-lookup"><span data-stu-id="229b3-119">User Action</span></span>  
- <span data-ttu-id="229b3-120">システム管理者に ENTSSO サーバーのイベント ログの確認を依頼します。</span><span class="sxs-lookup"><span data-stu-id="229b3-120">Have your system administrator check the Event Log on the ENTSSO server.</span></span>
+## <a name="user-action"></a><span data-ttu-id="74eb6-119">ユーザーの操作</span><span class="sxs-lookup"><span data-stu-id="74eb6-119">User Action</span></span>  
+ <span data-ttu-id="74eb6-120">ENTSSO サーバーのイベント ログを確認、システム管理者に依頼します。</span><span class="sxs-lookup"><span data-stu-id="74eb6-120">Have your system administrator check the Event Log on the ENTSSO server.</span></span>

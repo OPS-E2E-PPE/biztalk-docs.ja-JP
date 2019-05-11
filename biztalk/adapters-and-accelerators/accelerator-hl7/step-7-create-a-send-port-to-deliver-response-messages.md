@@ -1,5 +1,5 @@
 ---
-title: '手順 7: 応答メッセージを配信する送信ポートの作成 |Microsoft Docs'
+title: 手順 7:応答メッセージを配信する送信ポートの作成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,60 +14,60 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4139e07c5ca503a8cb58b1aa88fe8e602a92ee07
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a07e4a084fecd17bc2fbe2ec05b5fe17a046bfba
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36987827"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65287982"
 ---
-# <a name="step-7-create-a-send-port-to-deliver-response-messages"></a><span data-ttu-id="24e52-102">手順 7: 応答メッセージを配信する送信ポートを作成します。</span><span class="sxs-lookup"><span data-stu-id="24e52-102">Step 7: Create a Send Port to Deliver Response Messages</span></span>
-<span data-ttu-id="24e52-103">この手順で入学、放電、および転送 (ADT) へのクエリ応答を配信する送信ポートを作成するシステムです。</span><span class="sxs-lookup"><span data-stu-id="24e52-103">In this step, you create the send port to deliver the query responses back to the Admissions, Discharge, and Transfer (ADT) system.</span></span>  
+# <a name="step-7-create-a-send-port-to-deliver-response-messages"></a><span data-ttu-id="b4860-102">手順 7:応答メッセージを配信する送信ポートを作成します。</span><span class="sxs-lookup"><span data-stu-id="b4860-102">Step 7: Create a Send Port to Deliver Response Messages</span></span>
+<span data-ttu-id="b4860-103">この手順で入学、放電、および転送 (ADT) へのクエリ応答を配信する送信ポートを作成するシステムです。</span><span class="sxs-lookup"><span data-stu-id="b4860-103">In this step, you create the send port to deliver the query responses back to the Admissions, Discharge, and Transfer (ADT) system.</span></span>  
 
-### <a name="to-create-the-adtsend-send-port"></a><span data-ttu-id="24e52-104">ADT_Send 送信ポートを作成するには</span><span class="sxs-lookup"><span data-stu-id="24e52-104">To create the ADT_Send send port</span></span>  
+### <a name="to-create-the-adtsend-send-port"></a><span data-ttu-id="b4860-104">ADT_Send 送信ポートを作成するには</span><span class="sxs-lookup"><span data-stu-id="b4860-104">To create the ADT_Send send port</span></span>  
 
-1. <span data-ttu-id="24e52-105">右クリックし、BizTalk Server 管理コンソールで**送信ポート**、] をポイント**新規**、し、[**静的な一方向送信ポート**します。</span><span class="sxs-lookup"><span data-stu-id="24e52-105">In the BizTalk Server Administration Console, right-click **Send Ports**, point to **New**, and then select **Static One-way Send Port**.</span></span>  
+1. <span data-ttu-id="b4860-105">右クリックし、BizTalk Server 管理コンソールで**送信ポート**、] をポイント**新規**、し、[**静的な一方向送信ポート**します。</span><span class="sxs-lookup"><span data-stu-id="b4860-105">In the BizTalk Server Administration Console, right-click **Send Ports**, point to **New**, and then select **Static One-way Send Port**.</span></span>  
 
-2. <span data-ttu-id="24e52-106">[送信ポートのプロパティ] ダイアログ ボックスで、次の操作を行います。</span><span class="sxs-lookup"><span data-stu-id="24e52-106">In the Send Port Properties dialog box, do the following:</span></span>  
+2. <span data-ttu-id="b4860-106">[送信ポートのプロパティ] ダイアログ ボックスで、次の操作を行います。</span><span class="sxs-lookup"><span data-stu-id="b4860-106">In the Send Port Properties dialog box, do the following:</span></span>  
 
 
-   |      <span data-ttu-id="24e52-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="24e52-107">Use this</span></span>      |                        <span data-ttu-id="24e52-108">目的</span><span class="sxs-lookup"><span data-stu-id="24e52-108">To do this</span></span>                        |
+   |      <span data-ttu-id="b4860-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="b4860-107">Use this</span></span>      |                        <span data-ttu-id="b4860-108">目的</span><span class="sxs-lookup"><span data-stu-id="b4860-108">To do this</span></span>                        |
    |--------------------|----------------------------------------------------------|
-   |      <span data-ttu-id="24e52-109">**名前**</span><span class="sxs-lookup"><span data-stu-id="24e52-109">**Name**</span></span>      |                    <span data-ttu-id="24e52-110">型**ADT_Send**します。</span><span class="sxs-lookup"><span data-stu-id="24e52-110">Type **ADT_Send**.</span></span>                    |
-   | <span data-ttu-id="24e52-111">**トランスポートの種類**</span><span class="sxs-lookup"><span data-stu-id="24e52-111">**Transport type**</span></span> |                     <span data-ttu-id="24e52-112">選択**MLLP**します。</span><span class="sxs-lookup"><span data-stu-id="24e52-112">Select **MLLP**.</span></span>                     |
-   |   <span data-ttu-id="24e52-113">**構成**</span><span class="sxs-lookup"><span data-stu-id="24e52-113">**Configure**</span></span>    | <span data-ttu-id="24e52-114">をクリックして、**構成**ボタンの右側に**型**します。</span><span class="sxs-lookup"><span data-stu-id="24e52-114">Click the **Configure** button to the right of **Type**.</span></span> |
+   |      <span data-ttu-id="b4860-109">**名前**</span><span class="sxs-lookup"><span data-stu-id="b4860-109">**Name**</span></span>      |                    <span data-ttu-id="b4860-110">型**ADT_Send**します。</span><span class="sxs-lookup"><span data-stu-id="b4860-110">Type **ADT_Send**.</span></span>                    |
+   | <span data-ttu-id="b4860-111">**トランスポートの種類**</span><span class="sxs-lookup"><span data-stu-id="b4860-111">**Transport type**</span></span> |                     <span data-ttu-id="b4860-112">選択**MLLP**します。</span><span class="sxs-lookup"><span data-stu-id="b4860-112">Select **MLLP**.</span></span>                     |
+   |   <span data-ttu-id="b4860-113">**構成**</span><span class="sxs-lookup"><span data-stu-id="b4860-113">**Configure**</span></span>    | <span data-ttu-id="b4860-114">をクリックして、**構成**ボタンの右側に**型**します。</span><span class="sxs-lookup"><span data-stu-id="b4860-114">Click the **Configure** button to the right of **Type**.</span></span> |
 
 
-3. <span data-ttu-id="24e52-115">MLLP トランスポートのプロパティ ダイアログ ボックスで、次の情報を入力し、クリックして**OK**します。</span><span class="sxs-lookup"><span data-stu-id="24e52-115">In the MLLP Transport Properties dialog box, enter the following information, and then click **OK**.</span></span>  
+3. <span data-ttu-id="b4860-115">MLLP トランスポートのプロパティ ダイアログ ボックスで、次の情報を入力し、クリックして**OK**します。</span><span class="sxs-lookup"><span data-stu-id="b4860-115">In the MLLP Transport Properties dialog box, enter the following information, and then click **OK**.</span></span>  
 
 
-   |      <span data-ttu-id="24e52-116">プロパティ</span><span class="sxs-lookup"><span data-stu-id="24e52-116">Use this</span></span>       |       <span data-ttu-id="24e52-117">目的</span><span class="sxs-lookup"><span data-stu-id="24e52-117">To do this</span></span>       |
+   |      <span data-ttu-id="b4860-116">プロパティ</span><span class="sxs-lookup"><span data-stu-id="b4860-116">Use this</span></span>       |       <span data-ttu-id="b4860-117">目的</span><span class="sxs-lookup"><span data-stu-id="b4860-117">To do this</span></span>       |
    |---------------------|------------------------|
-   | <span data-ttu-id="24e52-118">**接続名**</span><span class="sxs-lookup"><span data-stu-id="24e52-118">**Connection Name**</span></span> | <span data-ttu-id="24e52-119">型**ADT_SendMLLP**します。</span><span class="sxs-lookup"><span data-stu-id="24e52-119">Type **ADT_SendMLLP**.</span></span> |
-   |      <span data-ttu-id="24e52-120">**ホスト**</span><span class="sxs-lookup"><span data-stu-id="24e52-120">**Host**</span></span>       |  <span data-ttu-id="24e52-121">型**localhost**します。</span><span class="sxs-lookup"><span data-stu-id="24e52-121">Type **localhost**.</span></span>   |
-   |      <span data-ttu-id="24e52-122">**[ポート]**</span><span class="sxs-lookup"><span data-stu-id="24e52-122">**Port**</span></span>       |    <span data-ttu-id="24e52-123">型**25000**します。</span><span class="sxs-lookup"><span data-stu-id="24e52-123">Type **25000**.</span></span>     |
+   | <span data-ttu-id="b4860-118">**接続名**</span><span class="sxs-lookup"><span data-stu-id="b4860-118">**Connection Name**</span></span> | <span data-ttu-id="b4860-119">型**ADT_SendMLLP**します。</span><span class="sxs-lookup"><span data-stu-id="b4860-119">Type **ADT_SendMLLP**.</span></span> |
+   |      <span data-ttu-id="b4860-120">**ホスト**</span><span class="sxs-lookup"><span data-stu-id="b4860-120">**Host**</span></span>       |  <span data-ttu-id="b4860-121">型**localhost**します。</span><span class="sxs-lookup"><span data-stu-id="b4860-121">Type **localhost**.</span></span>   |
+   |      <span data-ttu-id="b4860-122">**[ポート]**</span><span class="sxs-lookup"><span data-stu-id="b4860-122">**Port**</span></span>       |    <span data-ttu-id="b4860-123">型**25000**します。</span><span class="sxs-lookup"><span data-stu-id="b4860-123">Type **25000**.</span></span>     |
 
 
-4. <span data-ttu-id="24e52-124">送信ポートのプロパティ ダイアログ ボックスでの**送信パイプライン**、 **BTAHL72XPipelines.BTAHL72XSendPipeline**します。</span><span class="sxs-lookup"><span data-stu-id="24e52-124">In the Send Port Properties dialog box, for **Send Pipeline**, select **BTAHL72XPipelines.BTAHL72XSendPipeline**.</span></span>  
+4. <span data-ttu-id="b4860-124">送信ポートのプロパティ ダイアログ ボックスでの**送信パイプライン**、 **BTAHL72XPipelines.BTAHL72XSendPipeline**します。</span><span class="sxs-lookup"><span data-stu-id="b4860-124">In the Send Port Properties dialog box, for **Send Pipeline**, select **BTAHL72XPipelines.BTAHL72XSendPipeline**.</span></span>  
 
-5. <span data-ttu-id="24e52-125">コンソール ツリーで、クリックして**フィルター**、し、次の操作を行います。</span><span class="sxs-lookup"><span data-stu-id="24e52-125">In the Console Tree, click **Filters**, and then do the following:</span></span>  
+5. <span data-ttu-id="b4860-125">コンソール ツリーで、クリックして**フィルター**、し、次の操作を行います。</span><span class="sxs-lookup"><span data-stu-id="b4860-125">In the Console Tree, click **Filters**, and then do the following:</span></span>  
 
 
-   |   <span data-ttu-id="24e52-126">プロパティ</span><span class="sxs-lookup"><span data-stu-id="24e52-126">Use this</span></span>   |                                        <span data-ttu-id="24e52-127">目的</span><span class="sxs-lookup"><span data-stu-id="24e52-127">To do this</span></span>                                        |
+   |   <span data-ttu-id="b4860-126">プロパティ</span><span class="sxs-lookup"><span data-stu-id="b4860-126">Use this</span></span>   |                                        <span data-ttu-id="b4860-127">目的</span><span class="sxs-lookup"><span data-stu-id="b4860-127">To do this</span></span>                                        |
    |--------------|------------------------------------------------------------------------------------------|
-   | <span data-ttu-id="24e52-128">**プロパティ**</span><span class="sxs-lookup"><span data-stu-id="24e52-128">**Property**</span></span> |                               <span data-ttu-id="24e52-129">選択**BTS します。MessageType**します。</span><span class="sxs-lookup"><span data-stu-id="24e52-129">Select **BTS.MessageType**.</span></span>                                |
-   | <span data-ttu-id="24e52-130">**[演算子]**</span><span class="sxs-lookup"><span data-stu-id="24e52-130">**Operator**</span></span> |                          <span data-ttu-id="24e52-131">選択**==** ドロップダウン リストから。</span><span class="sxs-lookup"><span data-stu-id="24e52-131">Select **==** from the drop-down list.</span></span>                          |
-   |  <span data-ttu-id="24e52-132">**[値]**</span><span class="sxs-lookup"><span data-stu-id="24e52-132">**Value**</span></span>   |          <span data-ttu-id="24e52-133">型 **<http://microsoft.com/HealthCare/HL7/2X#DSR_Q01_24_GLO_DEF>** します。</span><span class="sxs-lookup"><span data-stu-id="24e52-133">Type **<http://microsoft.com/HealthCare/HL7/2X#DSR_Q01_24_GLO_DEF>**.</span></span>           |
-   | <span data-ttu-id="24e52-134">**グループ化**</span><span class="sxs-lookup"><span data-stu-id="24e52-134">**Group By**</span></span> |                         <span data-ttu-id="24e52-135">選択**AND**ドロップダウン リストから。</span><span class="sxs-lookup"><span data-stu-id="24e52-135">Select **AND** from the drop-down list.</span></span>                          |
-   | <span data-ttu-id="24e52-136">**プロパティ**</span><span class="sxs-lookup"><span data-stu-id="24e52-136">**Property**</span></span> | <span data-ttu-id="24e52-137">最初のプロパティの下の空のボックスをクリックし、 **BTAHL7Schemas.MSH5_1**します。</span><span class="sxs-lookup"><span data-stu-id="24e52-137">Under the first property, click the blank box, and then select **BTAHL7Schemas.MSH5_1**.</span></span> |
-   | <span data-ttu-id="24e52-138">**[演算子]**</span><span class="sxs-lookup"><span data-stu-id="24e52-138">**Operator**</span></span> |                          <span data-ttu-id="24e52-139">選択**==** ドロップダウン リストから。</span><span class="sxs-lookup"><span data-stu-id="24e52-139">Select **==** from the drop-down list.</span></span>                          |
-   |  <span data-ttu-id="24e52-140">**[値]**</span><span class="sxs-lookup"><span data-stu-id="24e52-140">**Value**</span></span>   |                                      <span data-ttu-id="24e52-141">型**ADT**します。</span><span class="sxs-lookup"><span data-stu-id="24e52-141">Type **ADT**.</span></span>                                       |
+   | <span data-ttu-id="b4860-128">**プロパティ**</span><span class="sxs-lookup"><span data-stu-id="b4860-128">**Property**</span></span> |                               <span data-ttu-id="b4860-129">選択**BTS します。MessageType**します。</span><span class="sxs-lookup"><span data-stu-id="b4860-129">Select **BTS.MessageType**.</span></span>                                |
+   | <span data-ttu-id="b4860-130">**[演算子]**</span><span class="sxs-lookup"><span data-stu-id="b4860-130">**Operator**</span></span> |                          <span data-ttu-id="b4860-131">選択**==** ドロップダウン リストから。</span><span class="sxs-lookup"><span data-stu-id="b4860-131">Select **==** from the drop-down list.</span></span>                          |
+   |  <span data-ttu-id="b4860-132">**[値]**</span><span class="sxs-lookup"><span data-stu-id="b4860-132">**Value**</span></span>   |          <span data-ttu-id="b4860-133">型 **<http://microsoft.com/HealthCare/HL7/2X#DSR_Q01_24_GLO_DEF>** します。</span><span class="sxs-lookup"><span data-stu-id="b4860-133">Type **<http://microsoft.com/HealthCare/HL7/2X#DSR_Q01_24_GLO_DEF>**.</span></span>           |
+   | <span data-ttu-id="b4860-134">**グループ化**</span><span class="sxs-lookup"><span data-stu-id="b4860-134">**Group By**</span></span> |                         <span data-ttu-id="b4860-135">選択**AND**ドロップダウン リストから。</span><span class="sxs-lookup"><span data-stu-id="b4860-135">Select **AND** from the drop-down list.</span></span>                          |
+   | <span data-ttu-id="b4860-136">**プロパティ**</span><span class="sxs-lookup"><span data-stu-id="b4860-136">**Property**</span></span> | <span data-ttu-id="b4860-137">最初のプロパティの下の空のボックスをクリックし、 **BTAHL7Schemas.MSH5_1**します。</span><span class="sxs-lookup"><span data-stu-id="b4860-137">Under the first property, click the blank box, and then select **BTAHL7Schemas.MSH5_1**.</span></span> |
+   | <span data-ttu-id="b4860-138">**[演算子]**</span><span class="sxs-lookup"><span data-stu-id="b4860-138">**Operator**</span></span> |                          <span data-ttu-id="b4860-139">選択**==** ドロップダウン リストから。</span><span class="sxs-lookup"><span data-stu-id="b4860-139">Select **==** from the drop-down list.</span></span>                          |
+   |  <span data-ttu-id="b4860-140">**[値]**</span><span class="sxs-lookup"><span data-stu-id="b4860-140">**Value**</span></span>   |                                      <span data-ttu-id="b4860-141">型**ADT**します。</span><span class="sxs-lookup"><span data-stu-id="b4860-141">Type **ADT**.</span></span>                                       |
 
    > [!NOTE]
-   >  <span data-ttu-id="24e52-142">最初のフィルターは、送信ポートのみ DSR に準拠したメッセージを選択することを指定します ^ 手順 3 a. で作成した Q01 スキーマ。</span><span class="sxs-lookup"><span data-stu-id="24e52-142">The first filter specifies that the send port only selects messages conforming to the DSR^Q01 schema you created in step 3A.</span></span> <span data-ttu-id="24e52-143">2 番目のフィルターが先を指定します、[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]インターフェイス エンジンはこれらのメッセージを送信します。</span><span class="sxs-lookup"><span data-stu-id="24e52-143">The second filter specifies the destination to which the [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] Interface Engine sends these messages.</span></span>  
+   >  <span data-ttu-id="b4860-142">最初のフィルターは、送信ポートのみ DSR に準拠したメッセージを選択することを指定します ^ 手順 3 a. で作成した Q01 スキーマ。</span><span class="sxs-lookup"><span data-stu-id="b4860-142">The first filter specifies that the send port only selects messages conforming to the DSR^Q01 schema you created in step 3A.</span></span> <span data-ttu-id="b4860-143">2 番目のフィルターが先を指定します、[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]インターフェイス エンジンはこれらのメッセージを送信します。</span><span class="sxs-lookup"><span data-stu-id="b4860-143">The second filter specifies the destination to which the [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] Interface Engine sends these messages.</span></span>  
 
-6. <span data-ttu-id="24e52-144">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="24e52-144">Click **OK**.</span></span>  
+6. <span data-ttu-id="b4860-144">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b4860-144">Click **OK**.</span></span>  
 
-7. <span data-ttu-id="24e52-145">管理コンソールで、**送信ポート**を右クリックして**ADT_Send**、順にクリックします**開始**します。</span><span class="sxs-lookup"><span data-stu-id="24e52-145">In the Administration Console, click **Send Ports**, right-click **ADT_Send**, and then click **Start**.</span></span>  
+7. <span data-ttu-id="b4860-145">管理コンソールで、**送信ポート**を右クリックして**ADT_Send**、順にクリックします**開始**します。</span><span class="sxs-lookup"><span data-stu-id="b4860-145">In the Administration Console, click **Send Ports**, right-click **ADT_Send**, and then click **Start**.</span></span>  
 
-   <span data-ttu-id="24e52-146">続行する[手順 8: パーティ情報の構成](../../adapters-and-accelerators/accelerator-hl7/step-8-configure-party-information-hl7-main.md)します。</span><span class="sxs-lookup"><span data-stu-id="24e52-146">Proceed to [Step 8: Configure Party Information](../../adapters-and-accelerators/accelerator-hl7/step-8-configure-party-information-hl7-main.md).</span></span>
+   <span data-ttu-id="b4860-146">続行する[手順 8。パーティ情報の構成](../../adapters-and-accelerators/accelerator-hl7/step-8-configure-party-information-hl7-main.md)します。</span><span class="sxs-lookup"><span data-stu-id="b4860-146">Proceed to [Step 8: Configure Party Information](../../adapters-and-accelerators/accelerator-hl7/step-8-configure-party-information-hl7-main.md).</span></span>

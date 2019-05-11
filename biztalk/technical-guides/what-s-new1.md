@@ -12,18 +12,18 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 000d787e4a8b00d8d4539a043a36a8c4013fcc67
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 62984f6041823c2132ce06090739b39dd2eda48f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37020313"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65291229"
 ---
-# <a name="what39s-new"></a><span data-ttu-id="94414-102">どのような&#39;s New</span><span class="sxs-lookup"><span data-stu-id="94414-102">What&#39;s New</span></span>
-<span data-ttu-id="94414-103">次の機能はの今回のリリースの新機能、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理パック。</span><span class="sxs-lookup"><span data-stu-id="94414-103">The following features are new in this release of the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Management Pack:</span></span>  
+# <a name="what39s-new"></a><span data-ttu-id="7cebb-102">新機能</span><span class="sxs-lookup"><span data-stu-id="7cebb-102">What&#39;s New</span></span>
+<span data-ttu-id="7cebb-103">次の機能はの今回のリリースの新機能、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理パック。</span><span class="sxs-lookup"><span data-stu-id="7cebb-103">The following features are new in this release of the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Management Pack:</span></span>  
 
-- <span data-ttu-id="94414-104">大量の処理するために更新された探索[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]成果物</span><span class="sxs-lookup"><span data-stu-id="94414-104">Updated discovery to handle a large amount of [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] artifacts</span></span>  
+- <span data-ttu-id="7cebb-104">大量の処理するために更新された探索[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]成果物</span><span class="sxs-lookup"><span data-stu-id="7cebb-104">Updated discovery to handle a large amount of [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] artifacts</span></span>  
 
-- <span data-ttu-id="94414-105">重要なメッセージのみを表示するためのルールの増加の抑制</span><span class="sxs-lookup"><span data-stu-id="94414-105">Increased suppression on rules to show only the important messages</span></span>  
+- <span data-ttu-id="7cebb-105">重要なメッセージのみを表示するためのルールの増加の抑制</span><span class="sxs-lookup"><span data-stu-id="7cebb-105">Increased suppression on rules to show only the important messages</span></span>  
 
-- <span data-ttu-id="94414-106">インストール済みの検出、問題を修正しました[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]バージョン。</span><span class="sxs-lookup"><span data-stu-id="94414-106">Fixed the issue with the discovery of the installed [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] version</span></span>
+- <span data-ttu-id="7cebb-106">インストール済みの検出、問題を修正しました[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]バージョン。</span><span class="sxs-lookup"><span data-stu-id="7cebb-106">Fixed the issue with the discovery of the installed [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] version</span></span>

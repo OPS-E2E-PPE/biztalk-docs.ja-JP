@@ -2,13 +2,13 @@
 redirect_url: /biztalk/core/adding-biztalk-adapter-for-jd-edwards-oneworld/
 redirect_document_id: true
 ROBOTS: NOINDEX
-ms.openlocfilehash: 1a1762d73d0370fe8d448462a470a50cbc5fc798
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: 7bbbc83e4a3f534c8b4c3a064e9b4e5eae768d73
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
-ms.locfileid: "24014401"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65390448"
 ---
-# <a name="creating-jd-edwards-oneworld-send-handlers"></a><span data-ttu-id="bff18-101">JD Edwards OneWorld 送信ハンドラーの作成</span><span class="sxs-lookup"><span data-stu-id="bff18-101">Creating JD Edwards OneWorld Send Handlers</span></span>
-<span data-ttu-id="bff18-102">このセクションでは、BizTalk Server 管理コンソールを使用して送信ポートおよび送信パイプラインを作成する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="bff18-102">This section explains how to create send ports and send pipelines using BizTalk Server Administration Console.</span></span>  
+# <a name="creating-jd-edwards-oneworld-send-handlers"></a><span data-ttu-id="e7b3c-101">JD Edwards OneWorld 送信ハンドラーの作成</span><span class="sxs-lookup"><span data-stu-id="e7b3c-101">Creating JD Edwards OneWorld Send Handlers</span></span>
+<span data-ttu-id="e7b3c-102">このセクションでは、送信ポートを作成し、BizTalk Server 管理コンソールを使用してパイプラインを送信する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="e7b3c-102">This section explains how to create send ports and send pipelines using BizTalk Server Administration Console.</span></span>  
   

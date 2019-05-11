@@ -1,5 +1,5 @@
 ---
-title: 組織の作成と取引先アグリーメント Contoso の |Microsoft ドキュメント
+title: および Contoso のパートナー アグリーメントを取引先組織の作成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,24 +15,24 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b137b4da73e583f9be1109164ba48888467b8a05
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: aa9367b230051765671c449fd8254a09b9045b4a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22209810"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65284267"
 ---
-# <a name="creating-organizations-and-trading-partner-agreement-for-contoso"></a><span data-ttu-id="0ac10-102">組織の作成と取引先アグリーメントの Contoso</span><span class="sxs-lookup"><span data-stu-id="0ac10-102">Creating Organizations and Trading Partner Agreement for Contoso</span></span>
-<span data-ttu-id="0ac10-103">ここでは、BizTalk Accelerator for RosettaNet 管理コンソールを使用して、必要な組織情報を追加します。</span><span class="sxs-lookup"><span data-stu-id="0ac10-103">In this section, you add the necessary organization information using the BizTalk Accelerator for RosettaNet Management Console.</span></span> <span data-ttu-id="0ac10-104">両方の組織の連絡先情報を追加したら、最後に 3A2 PIP (Partner Interface Process) のための取引先アグリーメントをセットアップします。</span><span class="sxs-lookup"><span data-stu-id="0ac10-104">After you add the contact information for both organizations, the final step is to set up a trading partner agreement for the 3A2 Partner Interface Process (PIP).</span></span> <span data-ttu-id="0ac10-105">ダブル アクション チュートリアルでこの手順を完了している場合は、必要な手順は既に実行されています。</span><span class="sxs-lookup"><span data-stu-id="0ac10-105">If you completed the steps in the Double Action Tutorial, then you have already performed the necessary steps.</span></span> <span data-ttu-id="0ac10-106">移動できます[Contoso LOB スキーマとマップの作成](../../adapters-and-accelerators/accelerator-rosettanet/creating-the-contoso-lob-schemas-and-maps.md)です。</span><span class="sxs-lookup"><span data-stu-id="0ac10-106">You can move to [Creating the Contoso LOB Schemas and Maps](../../adapters-and-accelerators/accelerator-rosettanet/creating-the-contoso-lob-schemas-and-maps.md).</span></span> <span data-ttu-id="0ac10-107">組織と取引先アグリーメントを作成するには、次の項目を参照してください。</span><span class="sxs-lookup"><span data-stu-id="0ac10-107">To create the organizations and the trading partner agreement, see the following:</span></span>  
+# <a name="creating-organizations-and-trading-partner-agreement-for-contoso"></a><span data-ttu-id="fca38-102">および Contoso のパートナー アグリーメントを取引先組織の作成</span><span class="sxs-lookup"><span data-stu-id="fca38-102">Creating Organizations and Trading Partner Agreement for Contoso</span></span>
+<span data-ttu-id="fca38-103">このセクションでは、for RosettaNet 管理コンソール、BizTalk Accelerator を使用して、組織のために必要な情報を追加します。</span><span class="sxs-lookup"><span data-stu-id="fca38-103">In this section, you add the necessary organization information using the BizTalk Accelerator for RosettaNet Management Console.</span></span> <span data-ttu-id="fca38-104">両方の組織の連絡先情報を追加すると後の最後の手順では、、3 a 2 PIP Partner Interface Process () を取引先アグリーメントを設定します。</span><span class="sxs-lookup"><span data-stu-id="fca38-104">After you add the contact information for both organizations, the final step is to set up a trading partner agreement for the 3A2 Partner Interface Process (PIP).</span></span> <span data-ttu-id="fca38-105">ダブル アクション チュートリアルの手順を完了する場合、必要な手順既に実行してきました。</span><span class="sxs-lookup"><span data-stu-id="fca38-105">If you completed the steps in the Double Action Tutorial, then you have already performed the necessary steps.</span></span> <span data-ttu-id="fca38-106">移動できます[Contoso LOB スキーマとマップの作成](../../adapters-and-accelerators/accelerator-rosettanet/creating-the-contoso-lob-schemas-and-maps.md)です。</span><span class="sxs-lookup"><span data-stu-id="fca38-106">You can move to [Creating the Contoso LOB Schemas and Maps](../../adapters-and-accelerators/accelerator-rosettanet/creating-the-contoso-lob-schemas-and-maps.md).</span></span> <span data-ttu-id="fca38-107">組織と取引先アグリーメントを作成するには、次を参照してください。</span><span class="sxs-lookup"><span data-stu-id="fca38-107">To create the organizations and the trading partner agreement, see the following:</span></span>  
   
--   [<span data-ttu-id="0ac10-108">手順 1: Contoso ホーム組織の作成</span><span class="sxs-lookup"><span data-stu-id="0ac10-108">Step 1: Creating the Contoso Home Organization</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/step-1-creating-the-contoso-home-organization.md)  
+-   [<span data-ttu-id="fca38-108">ステップ 1: Contoso ホーム組織の作成</span><span class="sxs-lookup"><span data-stu-id="fca38-108">Step 1: Creating the Contoso Home Organization</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/step-1-creating-the-contoso-home-organization.md)  
   
--   [<span data-ttu-id="0ac10-109">手順 2: Fabrikam パートナー組織の作成</span><span class="sxs-lookup"><span data-stu-id="0ac10-109">Step 2: Creating the Fabrikam Partner Organization</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/step-2-creating-the-fabrikam-partner-organization.md)  
+-   [<span data-ttu-id="fca38-109">手順 2:Fabrikam 取引先組織の作成</span><span class="sxs-lookup"><span data-stu-id="fca38-109">Step 2: Creating the Fabrikam Partner Organization</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/step-2-creating-the-fabrikam-partner-organization.md)  
   
--   [<span data-ttu-id="0ac10-110">手順 5: Contoso 3 a 2 取引先アグリーメントの作成</span><span class="sxs-lookup"><span data-stu-id="0ac10-110">Step 5: Creating the Contoso 3A2 Trading Partner Agreement</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/step-5-creating-the-contoso-3a2-trading-partner-agreement.md)  
+-   [<span data-ttu-id="fca38-110">手順 5:Contoso 3A2 取引先契約の作成</span><span class="sxs-lookup"><span data-stu-id="fca38-110">Step 5: Creating the Contoso 3A2 Trading Partner Agreement</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/step-5-creating-the-contoso-3a2-trading-partner-agreement.md)  
   
 > [!IMPORTANT]
->  <span data-ttu-id="0ac10-111">これらの手順は、ダブル アクション チュートリアルにあります。</span><span class="sxs-lookup"><span data-stu-id="0ac10-111">These steps are in the Double Action Tutorial.</span></span> <span data-ttu-id="0ac10-112">各手順を完了したら、このトピックに戻り、プライベート プロセス チュートリアルを続行します。</span><span class="sxs-lookup"><span data-stu-id="0ac10-112">After completing each step, return to this topic to continue the Private Process Tutorial.</span></span>  
+>  <span data-ttu-id="fca38-111">これらの手順では、ダブル アクション チュートリアルです。</span><span class="sxs-lookup"><span data-stu-id="fca38-111">These steps are in the Double Action Tutorial.</span></span> <span data-ttu-id="fca38-112">各手順を完了するには、プライベート プロセス チュートリアルを続行するには、このトピックに戻ります。</span><span class="sxs-lookup"><span data-stu-id="fca38-112">After completing each step, return to this topic to continue the Private Process Tutorial.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="0ac10-113">参照</span><span class="sxs-lookup"><span data-stu-id="0ac10-113">See Also</span></span>  
- [<span data-ttu-id="0ac10-114">Contoso LOB スキーマとマップの作成</span><span class="sxs-lookup"><span data-stu-id="0ac10-114">Creating the Contoso LOB Schemas and Maps</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/creating-the-contoso-lob-schemas-and-maps.md)
+## <a name="see-also"></a><span data-ttu-id="fca38-113">参照</span><span class="sxs-lookup"><span data-stu-id="fca38-113">See Also</span></span>  
+ [<span data-ttu-id="fca38-114">Contoso LOB スキーマとマップの作成</span><span class="sxs-lookup"><span data-stu-id="fca38-114">Creating the Contoso LOB Schemas and Maps</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/creating-the-contoso-lob-schemas-and-maps.md)

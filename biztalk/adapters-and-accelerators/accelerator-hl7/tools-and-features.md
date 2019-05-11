@@ -15,22 +15,22 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f1d93b0d614d0db16dc2e6ab615171b4e47bd9a9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1ec7e3056a9470fc341bf0739c7a8d06c8e64dbf
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36974691"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65286582"
 ---
-# <a name="tools-and-features"></a><span data-ttu-id="64c2d-102">ツールと機能</span><span class="sxs-lookup"><span data-stu-id="64c2d-102">Tools and Features</span></span>
-<span data-ttu-id="64c2d-103">Microsoft BizTalk Accelerator for HL7 のユーザー ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)])、Microsoft へのアクセスがある[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]、ロール ベースの機能とツールだけでなく[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]-特定のツールと機能は、医療業界に合わせて調整します。</span><span class="sxs-lookup"><span data-stu-id="64c2d-103">Users of Microsoft BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) have access to the Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] role-based features and tools, as well as [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]-specific tools and features tailored to the health care industry.</span></span> <span data-ttu-id="64c2d-104">ここでは、それらの機能やツールについて説明します。</span><span class="sxs-lookup"><span data-stu-id="64c2d-104">This section describes those features and tools.</span></span>  
+# <a name="tools-and-features"></a><span data-ttu-id="549ea-102">ツールと機能</span><span class="sxs-lookup"><span data-stu-id="549ea-102">Tools and Features</span></span>
+<span data-ttu-id="549ea-103">Microsoft BizTalk Accelerator for HL7 のユーザー ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)])、Microsoft へのアクセスがある[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]、ロール ベースの機能とツールだけでなく[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]-特定のツールと機能は、医療業界に合わせて調整します。</span><span class="sxs-lookup"><span data-stu-id="549ea-103">Users of Microsoft BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) have access to the Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] role-based features and tools, as well as [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]-specific tools and features tailored to the health care industry.</span></span> <span data-ttu-id="549ea-104">このセクションでは、これらの機能とツールについて説明します。</span><span class="sxs-lookup"><span data-stu-id="549ea-104">This section describes those features and tools.</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="64c2d-105">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="64c2d-105">In This Section</span></span>  
+## <a name="in-this-section"></a><span data-ttu-id="549ea-105">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="549ea-105">In This Section</span></span>  
   
--   [<span data-ttu-id="64c2d-106">ロール ベースの製品</span><span class="sxs-lookup"><span data-stu-id="64c2d-106">A Role-based Product</span></span>](../../adapters-and-accelerators/accelerator-hl7/a-role-based-product1.md)  
+-   [<span data-ttu-id="549ea-106">ロール ベースの製品</span><span class="sxs-lookup"><span data-stu-id="549ea-106">A Role-based Product</span></span>](../../adapters-and-accelerators/accelerator-hl7/a-role-based-product1.md)  
   
--   [<span data-ttu-id="64c2d-107">デザイン時ツール</span><span class="sxs-lookup"><span data-stu-id="64c2d-107">Design Time Tools</span></span>](../../adapters-and-accelerators/accelerator-hl7/design-time-tools.md)  
+-   [<span data-ttu-id="549ea-107">デザイン時ツール</span><span class="sxs-lookup"><span data-stu-id="549ea-107">Design Time Tools</span></span>](../../adapters-and-accelerators/accelerator-hl7/design-time-tools.md)  
   
--   [<span data-ttu-id="64c2d-108">管理およびランタイム ツール</span><span class="sxs-lookup"><span data-stu-id="64c2d-108">Administration and Run Time Tools</span></span>](../../adapters-and-accelerators/accelerator-hl7/administration-and-run-time-tools.md)  
+-   [<span data-ttu-id="549ea-108">管理およびランタイム ツール</span><span class="sxs-lookup"><span data-stu-id="549ea-108">Administration and Run Time Tools</span></span>](../../adapters-and-accelerators/accelerator-hl7/administration-and-run-time-tools.md)  
   
--   [<span data-ttu-id="64c2d-109">分析ツール</span><span class="sxs-lookup"><span data-stu-id="64c2d-109">Analysis Tools</span></span>](../../adapters-and-accelerators/accelerator-hl7/analysis-tools2.md)
+-   [<span data-ttu-id="549ea-109">分析ツール</span><span class="sxs-lookup"><span data-stu-id="549ea-109">Analysis Tools</span></span>](../../adapters-and-accelerators/accelerator-hl7/analysis-tools2.md)

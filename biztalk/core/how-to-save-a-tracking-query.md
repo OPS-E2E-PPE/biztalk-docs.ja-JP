@@ -15,26 +15,26 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d8049f62e243aa6162901e2cb53b2ebc45a521dc
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 23fa68815e8786fdbea8be9e4eace0ecc6dce18a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36975803"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65334881"
 ---
-# <a name="how-to-save-a-tracking-query"></a><span data-ttu-id="ab688-102">追跡するクエリを保存する方法</span><span class="sxs-lookup"><span data-stu-id="ab688-102">How to Save a Tracking Query</span></span>
-<span data-ttu-id="ab688-103">BizTalk Server 管理コンソール内から、クエリ ビルダー インターフェイスを使用してメッセージやサービス インスタンスのクエリを保存できます。</span><span class="sxs-lookup"><span data-stu-id="ab688-103">You can save a message or service instances query using the Query Builder interface from within the BizTalk Server Administration console.</span></span>  
+# <a name="how-to-save-a-tracking-query"></a><span data-ttu-id="c4ff4-102">追跡クエリを保存する方法</span><span class="sxs-lookup"><span data-stu-id="c4ff4-102">How to Save a Tracking Query</span></span>
+<span data-ttu-id="c4ff4-103">BizTalk Server 管理コンソール内からクエリ ビルダー インターフェイスを使用してメッセージまたはサービス インスタンス クエリを保存することができます。</span><span class="sxs-lookup"><span data-stu-id="c4ff4-103">You can save a message or service instances query using the Query Builder interface from within the BizTalk Server Administration console.</span></span>  
   
-## <a name="prerequisites"></a><span data-ttu-id="ab688-104">前提条件</span><span class="sxs-lookup"><span data-stu-id="ab688-104">Prerequisites</span></span>  
- <span data-ttu-id="ab688-105">この手順を実行する BizTalk Server Operators グループのメンバーとしてログオンする必要があります。</span><span class="sxs-lookup"><span data-stu-id="ab688-105">You must be logged on as a member of the BizTalk Server Operators group to perform this procedure.</span></span>  
+## <a name="prerequisites"></a><span data-ttu-id="c4ff4-104">前提条件</span><span class="sxs-lookup"><span data-stu-id="c4ff4-104">Prerequisites</span></span>  
+ <span data-ttu-id="c4ff4-105">この手順を実行する BizTalk Server Operators グループのメンバーとしてログオンする必要があります。</span><span class="sxs-lookup"><span data-stu-id="c4ff4-105">You must be logged on as a member of the BizTalk Server Operators group to perform this procedure.</span></span>  
   
-### <a name="to-save-a-tracking-query"></a><span data-ttu-id="ab688-106">追跡するクエリを保存するには</span><span class="sxs-lookup"><span data-stu-id="ab688-106">To save a tracking query</span></span>  
+### <a name="to-save-a-tracking-query"></a><span data-ttu-id="c4ff4-106">追跡クエリを保存するには</span><span class="sxs-lookup"><span data-stu-id="c4ff4-106">To save a tracking query</span></span>  
   
-1. <span data-ttu-id="ab688-107">クリックして**開始**、 をクリックして**プログラム**、 をクリックして[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリックします**BizTalk Server 管理**します。</span><span class="sxs-lookup"><span data-stu-id="ab688-107">Click **Start**, click **Programs**, click [!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)], and then click **BizTalk Server Administration**.</span></span>  
+1. <span data-ttu-id="c4ff4-107">クリックして**開始**、 をクリックして**プログラム**、 をクリックして[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリックします**BizTalk Server 管理**します。</span><span class="sxs-lookup"><span data-stu-id="c4ff4-107">Click **Start**, click **Programs**, click [!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)], and then click **BizTalk Server Administration**.</span></span>  
   
-2. <span data-ttu-id="ab688-108">**グループ ハブ**] ページの [、**新しいクエリ**] タブで [**名前を付けて保存**での SQL コマンドを保存する、**クエリ式**領域。</span><span class="sxs-lookup"><span data-stu-id="ab688-108">On the **Group Hub** page, on the **New Query** tab, click **Save As** to save the SQL commands in the **Query Expression** area.</span></span>  
+2. <span data-ttu-id="c4ff4-108">**グループ ハブ**] ページの [、**新しいクエリ**] タブで [**名前を付けて保存**での SQL コマンドを保存する、**クエリ式**領域。</span><span class="sxs-lookup"><span data-stu-id="c4ff4-108">On the **Group Hub** page, on the **New Query** tab, click **Save As** to save the SQL commands in the **Query Expression** area.</span></span>  
   
-3. <span data-ttu-id="ab688-109">**クエリに名前を付けて** ダイアログ ボックスで、クエリを保存する変換先ディレクトリを参照します。</span><span class="sxs-lookup"><span data-stu-id="ab688-109">In the **Save Query As** dialog box, browse to the destination directory where you want to save the query.</span></span> <span data-ttu-id="ab688-110">クエリに適切なファイル名が入力されていることを確認してください。</span><span class="sxs-lookup"><span data-stu-id="ab688-110">Be sure to include an appropriate file name for the query.</span></span>  
+3. <span data-ttu-id="c4ff4-109">**クエリに名前を付けて** ダイアログ ボックスで、クエリを保存する変換先ディレクトリを参照します。</span><span class="sxs-lookup"><span data-stu-id="c4ff4-109">In the **Save Query As** dialog box, browse to the destination directory where you want to save the query.</span></span> <span data-ttu-id="c4ff4-110">クエリの適切なファイル名を指定してください。</span><span class="sxs-lookup"><span data-stu-id="c4ff4-110">Be sure to include an appropriate file name for the query.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="ab688-111">参照</span><span class="sxs-lookup"><span data-stu-id="ab688-111">See Also</span></span>  
- [<span data-ttu-id="ab688-112">履歴および追跡データの表示</span><span class="sxs-lookup"><span data-stu-id="ab688-112">Viewing Historical and Tracked Data</span></span>](../core/viewing-historical-and-tracked-data.md)
+## <a name="see-also"></a><span data-ttu-id="c4ff4-111">参照</span><span class="sxs-lookup"><span data-stu-id="c4ff4-111">See Also</span></span>  
+ [<span data-ttu-id="c4ff4-112">履歴および追跡データの表示</span><span class="sxs-lookup"><span data-stu-id="c4ff4-112">Viewing Historical and Tracked Data</span></span>](../core/viewing-historical-and-tracked-data.md)

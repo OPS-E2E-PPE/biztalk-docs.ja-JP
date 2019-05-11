@@ -1,5 +1,5 @@
 ---
-title: SAP の EXECQUERY コマンド オプション |Microsoft ドキュメント
+title: SAP での EXECQUERY コマンド オプション |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,21 +12,21 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0ae3bfc139b0290bc18d03fa7121a018d3668900
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 22260b750a56e36e33449182d9c4f6ecf38a40af
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22216226"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373420"
 ---
-# <a name="execquery-command-options-in-sap"></a><span data-ttu-id="fb0b6-102">SAP の EXECQUERY コマンド オプション</span><span class="sxs-lookup"><span data-stu-id="fb0b6-102">EXECQUERY command options in SAP</span></span>
-<span data-ttu-id="fb0b6-103">[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)] EXECQUERY コマンドを使用して ADO.NET アプリケーションからの SAP クエリを呼び出すクライアントを有効にします。</span><span class="sxs-lookup"><span data-stu-id="fb0b6-103">The [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)] enables clients to invoke SAP queries from ADO.NET applications by using the EXECQUERY command.</span></span> <span data-ttu-id="fb0b6-104">このセクションでは、EXECQUERY コマンドの構文に関する情報とその使用方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="fb0b6-104">This section provides information on the syntax of EXECQUERY command and how to use it.</span></span> <span data-ttu-id="fb0b6-105">このセクションには、SAP システムで、クエリの定義を調べることで EXECQUERY 構文をフレームにについての情報も説明します。</span><span class="sxs-lookup"><span data-stu-id="fb0b6-105">This section also provides information on how to frame EXECQUERY syntax by looking at the definition of the query in the SAP system.</span></span>  
+# <a name="execquery-command-options-in-sap"></a><span data-ttu-id="ff8b9-102">SAP での EXECQUERY コマンド オプション</span><span class="sxs-lookup"><span data-stu-id="ff8b9-102">EXECQUERY command options in SAP</span></span>
+<span data-ttu-id="ff8b9-103">[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]を EXECQUERY コマンドを使用して ADO.NET アプリケーションからの SAP クエリを呼び出すクライアントを使用します。</span><span class="sxs-lookup"><span data-stu-id="ff8b9-103">The [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)] enables clients to invoke SAP queries from ADO.NET applications by using the EXECQUERY command.</span></span> <span data-ttu-id="ff8b9-104">このセクションでは、EXECQUERY コマンドの構文に関する情報とその使用方法を提供します。</span><span class="sxs-lookup"><span data-stu-id="ff8b9-104">This section provides information on the syntax of EXECQUERY command and how to use it.</span></span> <span data-ttu-id="ff8b9-105">このセクションでは、フレーム EXECQUERY 構文、クエリの定義で、SAP システムを検索する方法の情報も提供します。</span><span class="sxs-lookup"><span data-stu-id="ff8b9-105">This section also provides information on how to frame EXECQUERY syntax by looking at the definition of the query in the SAP system.</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="fb0b6-106">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="fb0b6-106">In This Section</span></span>  
+## <a name="in-this-section"></a><span data-ttu-id="ff8b9-106">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="ff8b9-106">In This Section</span></span>  
   
--   [<span data-ttu-id="fb0b6-107">SAP の EXECQUERY ステートメントの構文</span><span class="sxs-lookup"><span data-stu-id="fb0b6-107">Syntax for an EXECQUERY Statement in SAP</span></span>](../../adapters-and-accelerators/adapter-sap/syntax-for-an-execquery-statement-in-sap.md)  
+-   [<span data-ttu-id="ff8b9-107">SAP に EXECQUERY ステートメントの構文</span><span class="sxs-lookup"><span data-stu-id="ff8b9-107">Syntax for an EXECQUERY Statement in SAP</span></span>](../../adapters-and-accelerators/adapter-sap/syntax-for-an-execquery-statement-in-sap.md)  
   
--   [<span data-ttu-id="fb0b6-108">SAP クエリのパラメーターを EXECQUERY コマンドに変換します。</span><span class="sxs-lookup"><span data-stu-id="fb0b6-108">Translate SAP query parameters into EXECQUERY command</span></span>](../../adapters-and-accelerators/adapter-sap/translate-sap-query-parameters-into-execquery-command.md)  
+-   [<span data-ttu-id="ff8b9-108">SAP クエリのパラメーターを EXECQUERY コマンドに変換する</span><span class="sxs-lookup"><span data-stu-id="ff8b9-108">Translate SAP query parameters into EXECQUERY command</span></span>](../../adapters-and-accelerators/adapter-sap/translate-sap-query-parameters-into-execquery-command.md)  
   
-## <a name="see-also"></a><span data-ttu-id="fb0b6-109">参照</span><span class="sxs-lookup"><span data-stu-id="fb0b6-109">See Also</span></span>  
- [<span data-ttu-id="fb0b6-110">使用して、.NET Framework Data Provider 用 mySAP Business Suite</span><span class="sxs-lookup"><span data-stu-id="fb0b6-110">Use the .NET Framework Data Provider for mySAP Business Suite</span></span>](../../adapters-and-accelerators/adapter-sap/use-the-net-framework-data-provider-for-mysap-business-suite.md)
+## <a name="see-also"></a><span data-ttu-id="ff8b9-109">参照</span><span class="sxs-lookup"><span data-stu-id="ff8b9-109">See Also</span></span>  
+ [<span data-ttu-id="ff8b9-110">.NET Framework Data Provider for mySAP Business Suite の使用</span><span class="sxs-lookup"><span data-stu-id="ff8b9-110">Use the .NET Framework Data Provider for mySAP Business Suite</span></span>](../../adapters-and-accelerators/adapter-sap/use-the-net-framework-data-provider-for-mysap-business-suite.md)

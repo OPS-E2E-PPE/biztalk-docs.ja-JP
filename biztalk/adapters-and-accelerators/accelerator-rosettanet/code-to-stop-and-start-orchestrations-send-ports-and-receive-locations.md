@@ -22,40 +22,40 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2736f76e3292c6e21a05c995afdd2808a9f60590
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 95864f4134f616e67e33c6b168eb119a3dc5e25f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36995475"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65284808"
 ---
-# <a name="stopping-and-starting-orchestrations-send-ports-and-receive-locations-programmatically"></a><span data-ttu-id="52045-102">停止し開始オーケストレーション、送信ポート、および受信場所をプログラムで</span><span class="sxs-lookup"><span data-stu-id="52045-102">Stopping and Starting Orchestrations, Send Ports, and Receive Locations Programmatically</span></span>
-<span data-ttu-id="52045-103">ここでは、プログラミングによってオーケストレーション、送信ポート、および受信場所を停止および開始するサンプル コードを紹介します。</span><span class="sxs-lookup"><span data-stu-id="52045-103">This topic provides sample code for programmatically stopping and starting orchestrations, send ports, and receive locations.</span></span> <span data-ttu-id="52045-104">これらのアクションは、すべてのオーケストレーション、送信ポート、および受信場所で、個々にまたは複数同時に実行することができます。</span><span class="sxs-lookup"><span data-stu-id="52045-104">You can perform these actions on all orchestrations, send ports, and receive locations as a group or individually.</span></span> <span data-ttu-id="52045-105">このコードをプログラムに組み込んで、これらのアクションを動的に実行できます。</span><span class="sxs-lookup"><span data-stu-id="52045-105">You can include this code in a program to perform these actions dynamically.</span></span> <span data-ttu-id="52045-106">Microsoft では、デザイン時のグラフィカル ユーザー インターフェイスでアクションを実行する[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]、または BizTalk 管理コンソールでの実行時にします。</span><span class="sxs-lookup"><span data-stu-id="52045-106">You perform these actions in the graphical user interface at design time in Microsoft [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)], or at run time in the BizTalk Administration console.</span></span>  
+# <a name="stopping-and-starting-orchestrations-send-ports-and-receive-locations-programmatically"></a><span data-ttu-id="3cdd6-102">停止し開始オーケストレーション、送信ポート、および受信場所をプログラムで</span><span class="sxs-lookup"><span data-stu-id="3cdd6-102">Stopping and Starting Orchestrations, Send Ports, and Receive Locations Programmatically</span></span>
+<span data-ttu-id="3cdd6-103">このトピックでは、プログラムを停止するサンプル コードを提供し、オーケストレーションを開始するには、送信ポート、および受信場所。</span><span class="sxs-lookup"><span data-stu-id="3cdd6-103">This topic provides sample code for programmatically stopping and starting orchestrations, send ports, and receive locations.</span></span> <span data-ttu-id="3cdd6-104">すべてのオーケストレーションでこれらの操作を実行、送信ポート、および受信場所、グループ、または個別にすることができます。</span><span class="sxs-lookup"><span data-stu-id="3cdd6-104">You can perform these actions on all orchestrations, send ports, and receive locations as a group or individually.</span></span> <span data-ttu-id="3cdd6-105">これらのアクションを動的に実行するプログラムでは、このコードを含めることができます。</span><span class="sxs-lookup"><span data-stu-id="3cdd6-105">You can include this code in a program to perform these actions dynamically.</span></span> <span data-ttu-id="3cdd6-106">Microsoft では、デザイン時のグラフィカル ユーザー インターフェイスでアクションを実行する[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]、または BizTalk 管理コンソールでの実行時にします。</span><span class="sxs-lookup"><span data-stu-id="3cdd6-106">You perform these actions in the graphical user interface at design time in Microsoft [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)], or at run time in the BizTalk Administration console.</span></span>  
   
 > [!NOTE]
->  <span data-ttu-id="52045-107">オーケストレーションを開始または停止するコードの場合、オーケストレーション、送信ポート、または受信場所を指定する必要はありません。</span><span class="sxs-lookup"><span data-stu-id="52045-107">For the code to start and stop orchestrations, you do not have to designate the orchestrations, send ports, or receive locations.</span></span> <span data-ttu-id="52045-108">サンプル コードは、セットアップ時に [!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)] によってインストールされたすべてのオーケストレーション、送信ポート、および受信場所でアクションを実行します。</span><span class="sxs-lookup"><span data-stu-id="52045-108">The sample code performs the action on all orchestrations, send ports, and receive locations that [!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)] installed at set up.</span></span> <span data-ttu-id="52045-109">単一のオーケストレーション、送信ポート、または受信場所でアクションを実行するコードの場合、コードを実行するオーケストレーション、送信ポート、または受信場所を指定するパラメーターを追加します。</span><span class="sxs-lookup"><span data-stu-id="52045-109">For the code that acts on a single orchestration, send port, or receive location, add a parameter indicating on which orchestration, send port, or receive location you want the code to run.</span></span>  
+>  <span data-ttu-id="3cdd6-107">開始およびオーケストレーションを停止するコードの指定、オーケストレーション、送信ポート、または受信場所する必要はありません。</span><span class="sxs-lookup"><span data-stu-id="3cdd6-107">For the code to start and stop orchestrations, you do not have to designate the orchestrations, send ports, or receive locations.</span></span> <span data-ttu-id="3cdd6-108">サンプル コードでは、すべてのオーケストレーションに対してアクションを実行、送信ポート、および受信場所を[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]をセットにインストールします。</span><span class="sxs-lookup"><span data-stu-id="3cdd6-108">The sample code performs the action on all orchestrations, send ports, and receive locations that [!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)] installed at set up.</span></span> <span data-ttu-id="3cdd6-109">1 つのオーケストレーションで動作するコードの送信ポート、受信場所、オーケストレーションを示すパラメーターを追加、送信ポート、または受信場所を実行するコードを取得します。</span><span class="sxs-lookup"><span data-stu-id="3cdd6-109">For the code that acts on a single orchestration, send port, or receive location, add a parameter indicating on which orchestration, send port, or receive location you want the code to run.</span></span>  
   
-## <a name="demonstrates"></a><span data-ttu-id="52045-110">使用例</span><span class="sxs-lookup"><span data-stu-id="52045-110">Demonstrates</span></span>  
- <span data-ttu-id="52045-111">このトピックのサンプル コードには、以下のアクションを実行する個別のコード セクションが含まれています。</span><span class="sxs-lookup"><span data-stu-id="52045-111">The sample code in this topic includes separate code sections to do the following:</span></span>  
+## <a name="demonstrates"></a><span data-ttu-id="3cdd6-110">使用例</span><span class="sxs-lookup"><span data-stu-id="3cdd6-110">Demonstrates</span></span>  
+ <span data-ttu-id="3cdd6-111">このトピックのサンプル コードには、個別のコード セクションには、次が含まれています。</span><span class="sxs-lookup"><span data-stu-id="3cdd6-111">The sample code in this topic includes separate code sections to do the following:</span></span>  
   
--   <span data-ttu-id="52045-112">オーケストレーションの開始 — すべての送信ポートおよび受信場所を開始し、すべてのオーケストレーションを登録して開始します。</span><span class="sxs-lookup"><span data-stu-id="52045-112">Start orchestrations—start all the send ports and receive locations, and enlist and start all orchestrations</span></span>  
+-   <span data-ttu-id="3cdd6-112">オーケストレーションの開始 — すべての送信ポートの開始し受信場所、および参加およびすべてのオーケストレーションを開始</span><span class="sxs-lookup"><span data-stu-id="3cdd6-112">Start orchestrations—start all the send ports and receive locations, and enlist and start all orchestrations</span></span>  
   
--   <span data-ttu-id="52045-113">オーケストレーションの停止 — すべてのオーケストレーションと送信ポートの登録を解除し、すべての受信場所を無効にします。</span><span class="sxs-lookup"><span data-stu-id="52045-113">Stop orchestrations—unenlist all orchestrations, unenlist all send ports, and disable all receive locations</span></span>  
+-   <span data-ttu-id="3cdd6-113">オーケストレーションを停止 — すべてのオーケストレーションを参加解除、すべての送信ポートを参加解除、および受信場所をすべて無効にします。</span><span class="sxs-lookup"><span data-stu-id="3cdd6-113">Stop orchestrations—unenlist all orchestrations, unenlist all send ports, and disable all receive locations</span></span>  
   
--   <span data-ttu-id="52045-114">単一の送信ポートの開始</span><span class="sxs-lookup"><span data-stu-id="52045-114">Start a single send port</span></span>  
+-   <span data-ttu-id="3cdd6-114">単一の送信ポートを開始します。</span><span class="sxs-lookup"><span data-stu-id="3cdd6-114">Start a single send port</span></span>  
   
--   <span data-ttu-id="52045-115">単一の受信場所の有効化</span><span class="sxs-lookup"><span data-stu-id="52045-115">Enable a single receive location</span></span>  
+-   <span data-ttu-id="3cdd6-115">受信場所の 1 つ有効にします。</span><span class="sxs-lookup"><span data-stu-id="3cdd6-115">Enable a single receive location</span></span>  
   
--   <span data-ttu-id="52045-116">単一の送信ポートの登録解除</span><span class="sxs-lookup"><span data-stu-id="52045-116">Unenlist a single send port</span></span>  
+-   <span data-ttu-id="3cdd6-116">単一の送信ポートを参加解除します。</span><span class="sxs-lookup"><span data-stu-id="3cdd6-116">Unenlist a single send port</span></span>  
   
--   <span data-ttu-id="52045-117">単一の受信場所の無効化</span><span class="sxs-lookup"><span data-stu-id="52045-117">Disable a single receive location</span></span>  
+-   <span data-ttu-id="3cdd6-117">無効にする 1 つの受信場所</span><span class="sxs-lookup"><span data-stu-id="3cdd6-117">Disable a single receive location</span></span>  
   
--   <span data-ttu-id="52045-118">単一のオーケストレーションの開始</span><span class="sxs-lookup"><span data-stu-id="52045-118">Start a single orchestration</span></span>  
+-   <span data-ttu-id="3cdd6-118">1 つのオーケストレーションを開始します。</span><span class="sxs-lookup"><span data-stu-id="3cdd6-118">Start a single orchestration</span></span>  
   
--   <span data-ttu-id="52045-119">単一のオーケストレーションの登録解除</span><span class="sxs-lookup"><span data-stu-id="52045-119">Unenlist a single orchestration</span></span>  
+-   <span data-ttu-id="3cdd6-119">1 つのオーケストレーションを参加解除します。</span><span class="sxs-lookup"><span data-stu-id="3cdd6-119">Unenlist a single orchestration</span></span>  
   
-## <a name="example"></a><span data-ttu-id="52045-120">例</span><span class="sxs-lookup"><span data-stu-id="52045-120">Example</span></span>  
- <span data-ttu-id="52045-121">このトピックのサンプル コードには、「デモ」セクションに一覧表示されている機能を実行する個別のコード セクションが含まれています。</span><span class="sxs-lookup"><span data-stu-id="52045-121">The sample code in this topic includes separate code sections to do the functions listed in the "Demonstrates" section.</span></span>  
+## <a name="example"></a><span data-ttu-id="3cdd6-120">例</span><span class="sxs-lookup"><span data-stu-id="3cdd6-120">Example</span></span>  
+ <span data-ttu-id="3cdd6-121">このトピックのサンプル コードには、「デモ」セクションに示す関数を実行する別のコード セクションにはが含まれています。</span><span class="sxs-lookup"><span data-stu-id="3cdd6-121">The sample code in this topic includes separate code sections to do the functions listed in the "Demonstrates" section.</span></span>  
   
 ```  
 using System;  
@@ -316,5 +316,5 @@ return false;
 }  
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="52045-122">参照</span><span class="sxs-lookup"><span data-stu-id="52045-122">See Also</span></span>  
- [<span data-ttu-id="52045-123">サンプル</span><span class="sxs-lookup"><span data-stu-id="52045-123">Samples</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/samples3.md)
+## <a name="see-also"></a><span data-ttu-id="3cdd6-122">参照</span><span class="sxs-lookup"><span data-stu-id="3cdd6-122">See Also</span></span>  
+ [<span data-ttu-id="3cdd6-123">サンプル</span><span class="sxs-lookup"><span data-stu-id="3cdd6-123">Samples</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/samples3.md)

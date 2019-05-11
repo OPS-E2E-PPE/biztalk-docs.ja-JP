@@ -1,5 +1,5 @@
 ---
-title: 生成して、証明書の有効化 |Microsoft ドキュメント
+title: 生成と証明書の有効化 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,26 +16,26 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 93293939ae509dcb2af04e17fcdd35e9cf6d03cb
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: faf4218919ec2c47729ce1002f17d73ac79584ad
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22209786"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65283687"
 ---
-# <a name="generating-and-enabling-certificates"></a><span data-ttu-id="8c7f4-102">生成して、証明書の有効化</span><span class="sxs-lookup"><span data-stu-id="8c7f4-102">Generating and Enabling Certificates</span></span>
-<span data-ttu-id="8c7f4-103">このチュートリアルでは、Contoso 組織と Fabrikam 組織によって送信されたメッセージに署名し、暗号化するために、証明書を使用します。</span><span class="sxs-lookup"><span data-stu-id="8c7f4-103">This tutorial uses certificates to sign and encrypt messages sent by the Contoso and Fabrikam organizations.</span></span> <span data-ttu-id="8c7f4-104">ダブル アクション チュートリアルを既に実行している場合は、この手順をスキップしてに移動することが[Contoso ソリューションの作成](../../adapters-and-accelerators/accelerator-rosettanet/creating-the-contoso-solution.md)です。</span><span class="sxs-lookup"><span data-stu-id="8c7f4-104">If you have already completed the Double Action Tutorial, you may skip this step and move on to [Creating the Contoso Solution](../../adapters-and-accelerators/accelerator-rosettanet/creating-the-contoso-solution.md).</span></span> <span data-ttu-id="8c7f4-105">このチュートリアルで使う証明書を生成して使用するには、以下のトピックの順番で手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="8c7f4-105">To generate and use certificates for this tutorial, follow the procedures in the following topics:</span></span>  
+# <a name="generating-and-enabling-certificates"></a><span data-ttu-id="5a5c4-102">生成と証明書の有効化</span><span class="sxs-lookup"><span data-stu-id="5a5c4-102">Generating and Enabling Certificates</span></span>
+<span data-ttu-id="5a5c4-103">このチュートリアルでは、署名し、Contoso と Fabrikam 組織によって送信されたメッセージの暗号化に証明書を使用します。</span><span class="sxs-lookup"><span data-stu-id="5a5c4-103">This tutorial uses certificates to sign and encrypt messages sent by the Contoso and Fabrikam organizations.</span></span> <span data-ttu-id="5a5c4-104">ダブル アクション チュートリアルを既に完了この手順をスキップしに移動する可能性があります[Contoso ソリューションの作成](../../adapters-and-accelerators/accelerator-rosettanet/creating-the-contoso-solution.md)です。</span><span class="sxs-lookup"><span data-stu-id="5a5c4-104">If you have already completed the Double Action Tutorial, you may skip this step and move on to [Creating the Contoso Solution](../../adapters-and-accelerators/accelerator-rosettanet/creating-the-contoso-solution.md).</span></span> <span data-ttu-id="5a5c4-105">生成して、証明書を使用して、このチュートリアルでは、次のトピックの手順に従います。</span><span class="sxs-lookup"><span data-stu-id="5a5c4-105">To generate and use certificates for this tutorial, follow the procedures in the following topics:</span></span>  
   
--   [<span data-ttu-id="8c7f4-106">手順 1: 証明機関の作成</span><span class="sxs-lookup"><span data-stu-id="8c7f4-106">Step 1: Creating a Certification Authority</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/step-1-creating-a-certification-authority.md)  
+-   [<span data-ttu-id="5a5c4-106">ステップ 1: 証明機関の作成</span><span class="sxs-lookup"><span data-stu-id="5a5c4-106">Step 1: Creating a Certification Authority</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/step-1-creating-a-certification-authority.md)  
   
--   [<span data-ttu-id="8c7f4-107">手順 2: パブリックおよびプライベート証明書の作成</span><span class="sxs-lookup"><span data-stu-id="8c7f4-107">Step 2: Creating Public and Private Certificates</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/step-2-creating-public-and-private-certificates.md)  
+-   [<span data-ttu-id="5a5c4-107">手順 2:パブリックおよびプライベート証明書の作成</span><span class="sxs-lookup"><span data-stu-id="5a5c4-107">Step 2: Creating Public and Private Certificates</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/step-2-creating-public-and-private-certificates.md)  
   
--   [<span data-ttu-id="8c7f4-108">手順 3: パブリックおよびプライベート証明書のインポート</span><span class="sxs-lookup"><span data-stu-id="8c7f4-108">Step 3: Importing Public and Private Certificates</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/step-3-importing-public-and-private-certificates.md)  
+-   [<span data-ttu-id="5a5c4-108">ステップ 3:パブリック証明書とプライベート証明書のインポート</span><span class="sxs-lookup"><span data-stu-id="5a5c4-108">Step 3: Importing Public and Private Certificates</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/step-3-importing-public-and-private-certificates.md)  
   
--   [<span data-ttu-id="8c7f4-109">手順 4: IIS でレイヤーをソケット セキュリティで保護を有効にします。</span><span class="sxs-lookup"><span data-stu-id="8c7f4-109">Step 4: Enabling Secure Sockets Layer in IIS</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/step-4-enabling-secure-sockets-layer-in-iis.md)  
+-   [<span data-ttu-id="5a5c4-109">手順 4:IIS での SSL (Secure Sockets Layer) の有効化</span><span class="sxs-lookup"><span data-stu-id="5a5c4-109">Step 4: Enabling Secure Sockets Layer in IIS</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/step-4-enabling-secure-sockets-layer-in-iis.md)  
   
 > [!IMPORTANT]
->  <span data-ttu-id="8c7f4-110">これらの手順は、ダブル アクション チュートリアルにあります。</span><span class="sxs-lookup"><span data-stu-id="8c7f4-110">These steps are in the Double Action Tutorial.</span></span> <span data-ttu-id="8c7f4-111">各手順を完了したら、このトピックに戻り、プライベート プロセス チュートリアルを続行します。</span><span class="sxs-lookup"><span data-stu-id="8c7f4-111">After completing each step, return to this topic to continue the Private Process Tutorial.</span></span>  
+>  <span data-ttu-id="5a5c4-110">これらの手順では、ダブル アクション チュートリアルです。</span><span class="sxs-lookup"><span data-stu-id="5a5c4-110">These steps are in the Double Action Tutorial.</span></span> <span data-ttu-id="5a5c4-111">各手順を完了するには、プライベート プロセス チュートリアルを続行するには、このトピックに戻ります。</span><span class="sxs-lookup"><span data-stu-id="5a5c4-111">After completing each step, return to this topic to continue the Private Process Tutorial.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="8c7f4-112">参照</span><span class="sxs-lookup"><span data-stu-id="8c7f4-112">See Also</span></span>  
- [<span data-ttu-id="8c7f4-113">Contoso ソリューションの作成</span><span class="sxs-lookup"><span data-stu-id="8c7f4-113">Creating the Contoso Solution</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/creating-the-contoso-solution.md)
+## <a name="see-also"></a><span data-ttu-id="5a5c4-112">参照</span><span class="sxs-lookup"><span data-stu-id="5a5c4-112">See Also</span></span>  
+ [<span data-ttu-id="5a5c4-113">Contoso ソリューションの作成</span><span class="sxs-lookup"><span data-stu-id="5a5c4-113">Creating the Contoso Solution</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/creating-the-contoso-solution.md)

@@ -1,13 +1,13 @@
 ---
 redirect_url: /biztalk/adapters-and-accelerators/adapter-oracle-ebs/microsoft-biztalk-adapter-for-oracle-e-business-suite-documentation
 redirect_document_id: true
-ms.openlocfilehash: f0028dddead85be120b82dafeaaa2b4c725bb9f1
-ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
+ms.openlocfilehash: cab4507abda3f464242aca26b4a5d60fbd711974
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2017
-ms.locfileid: "23449948"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65323394"
 ---
-# <a name="oracle-e-business-suite-odbc-adapter"></a><span data-ttu-id="64ee0-101">Oracle E-Business Suite ODBC アダプタ</span><span class="sxs-lookup"><span data-stu-id="64ee0-101">Oracle E-Business Suite ODBC Adapter</span></span>
+# <a name="oracle-e-business-suite-odbc-adapter"></a><span data-ttu-id="9c64f-101">Oracle E-business Suite ODBC アダプター</span><span class="sxs-lookup"><span data-stu-id="9c64f-101">Oracle E-Business Suite ODBC Adapter</span></span>
 
-[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="64ee0-102"> は現在、Oracle E-Business Suite ODBC アダプターをサポートしていません。</span><span class="sxs-lookup"><span data-stu-id="64ee0-102"> no longer supports the Oracle E-Business Suite ODBC Adapter.</span></span> <span data-ttu-id="64ee0-103">同じ機能を実現するには、Microsoft [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)] を使用することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="64ee0-103">We recommend you use Microsoft [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)] to achieve the same functionality.</span></span>  
+[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] <span data-ttu-id="9c64f-102">不要になった、Oracle E-business Suite ODBC アダプターをサポートします。</span><span class="sxs-lookup"><span data-stu-id="9c64f-102">no longer supports the Oracle E-Business Suite ODBC Adapter.</span></span> <span data-ttu-id="9c64f-103">Microsoft を使用することをお勧めします。[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]同じ機能を実現します。</span><span class="sxs-lookup"><span data-stu-id="9c64f-103">We recommend you use Microsoft [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)] to achieve the same functionality.</span></span>  

@@ -12,31 +12,31 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a36a41e5bb60169632072445ff4685e1df5dbce9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f1c9a527b932e2ed532d20840f522328da9d4e78
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36979595"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65282995"
 ---
-# <a name="message-submission-aspx-sample"></a><span data-ttu-id="349a7-102">メッセージ送信 ASPX サンプル</span><span class="sxs-lookup"><span data-stu-id="349a7-102">Message Submission ASPX Sample</span></span>
-<span data-ttu-id="349a7-103">ここでは、サービス内容をプライベート プロセスに送信するために使用するサンプル .aspx コードを提供します。</span><span class="sxs-lookup"><span data-stu-id="349a7-103">This topic provides sample .aspx code that you can use to submit service content to a private process.</span></span> <span data-ttu-id="349a7-104">line-of-business (LOB) アプリケーションの代わりに、この .aspx コードを使用できます。</span><span class="sxs-lookup"><span data-stu-id="349a7-104">You can use this .aspx code instead of a line-of-business (LOB) application.</span></span>  
+# <a name="message-submission-aspx-sample"></a><span data-ttu-id="0c800-102">メッセージ送信 ASPX サンプル</span><span class="sxs-lookup"><span data-stu-id="0c800-102">Message Submission ASPX Sample</span></span>
+<span data-ttu-id="0c800-103">ここでは、サービス内容をプライベート プロセスに送信するために使用するサンプル .aspx コードを提供します。</span><span class="sxs-lookup"><span data-stu-id="0c800-103">This topic provides sample .aspx code that you can use to submit service content to a private process.</span></span> <span data-ttu-id="0c800-104">line-of-business (LOB) アプリケーションの代わりに、この .aspx コードを使用できます。</span><span class="sxs-lookup"><span data-stu-id="0c800-104">You can use this .aspx code instead of a line-of-business (LOB) application.</span></span>  
   
-## <a name="demonstrates"></a><span data-ttu-id="349a7-105">使用例</span><span class="sxs-lookup"><span data-stu-id="349a7-105">Demonstrates</span></span>  
- <span data-ttu-id="349a7-106">このコードは、メッセージを送信するために、以下のような `SubmitRNIF` メソッドを呼び出す方法を示します。</span><span class="sxs-lookup"><span data-stu-id="349a7-106">This code demonstrates how to call the `SubmitRNIF` method to submit a message, including the following:</span></span>  
+## <a name="demonstrates"></a><span data-ttu-id="0c800-105">使用例</span><span class="sxs-lookup"><span data-stu-id="0c800-105">Demonstrates</span></span>  
+ <span data-ttu-id="0c800-106">このコードは、メッセージを送信するために、以下のような `SubmitRNIF` メソッドを呼び出す方法を示します。</span><span class="sxs-lookup"><span data-stu-id="0c800-106">This code demonstrates how to call the `SubmitRNIF` method to submit a message, including the following:</span></span>  
   
--   <span data-ttu-id="349a7-107">アプリケーションからのメッセージ パラメーターの入力を設定する</span><span class="sxs-lookup"><span data-stu-id="349a7-107">Setting message parameters input from an application</span></span>  
+-   <span data-ttu-id="0c800-107">アプリケーションからのメッセージ パラメーターの入力を設定する</span><span class="sxs-lookup"><span data-stu-id="0c800-107">Setting message parameters input from an application</span></span>  
   
--   <span data-ttu-id="349a7-108">メッセージ カテゴリを設定する</span><span class="sxs-lookup"><span data-stu-id="349a7-108">Setting the message category</span></span>  
+-   <span data-ttu-id="0c800-108">メッセージ カテゴリを設定する</span><span class="sxs-lookup"><span data-stu-id="0c800-108">Setting the message category</span></span>  
   
--   <span data-ttu-id="349a7-109">送信された値が null または空の場合にメッセージの Partner Interface Process (PIP) インスタンスを生成する</span><span class="sxs-lookup"><span data-stu-id="349a7-109">Generating a Partner Interface Process (PIP) instance for the message if the submitted value is null or empty</span></span>  
+-   <span data-ttu-id="0c800-109">送信された値が null または空の場合にメッセージの Partner Interface Process (PIP) インスタンスを生成する</span><span class="sxs-lookup"><span data-stu-id="0c800-109">Generating a Partner Interface Process (PIP) instance for the message if the submitted value is null or empty</span></span>  
   
--   <span data-ttu-id="349a7-110">入力添付ファイルの配列と注釈を生成する</span><span class="sxs-lookup"><span data-stu-id="349a7-110">Generating the input attachment files array and remarks</span></span>  
+-   <span data-ttu-id="0c800-110">入力添付ファイルの配列と注釈を生成する</span><span class="sxs-lookup"><span data-stu-id="0c800-110">Generating the input attachment files array and remarks</span></span>  
   
-## <a name="example"></a><span data-ttu-id="349a7-111">例</span><span class="sxs-lookup"><span data-stu-id="349a7-111">Example</span></span>  
- <span data-ttu-id="349a7-112">このコードは、ブラウザーなどのフロント エンド アプリケーションからの入力を受け付ける[!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]®、または Microsoft® Word では、開始側プライベート プロセスが消費できる XML ドキュメントを生成します。</span><span class="sxs-lookup"><span data-stu-id="349a7-112">This code accepts input from a front-end application, such as a browser, [!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]®, or Microsoft® Word, and generates the XML document that the initiator private process can consume.</span></span>  
+## <a name="example"></a><span data-ttu-id="0c800-111">例</span><span class="sxs-lookup"><span data-stu-id="0c800-111">Example</span></span>  
+ <span data-ttu-id="0c800-112">このコードは、ブラウザーなどのフロント エンド アプリケーションからの入力を受け付ける[!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]®、または Microsoft® Word では、開始側プライベート プロセスが消費できる XML ドキュメントを生成します。</span><span class="sxs-lookup"><span data-stu-id="0c800-112">This code accepts input from a front-end application, such as a browser, [!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]®, or Microsoft® Word, and generates the XML document that the initiator private process can consume.</span></span>  
   
- <span data-ttu-id="349a7-113">LOBWebApplication ユーティリティには次のコードが含まれています。</span><span class="sxs-lookup"><span data-stu-id="349a7-113">The LOBWebApplication utility includes the following code.</span></span> <span data-ttu-id="349a7-114">詳細については、[LOBWebApplication](../../adapters-and-accelerators/accelerator-rosettanet/lobwebapplication.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="349a7-114">For more information, see [LOBWebApplication](../../adapters-and-accelerators/accelerator-rosettanet/lobwebapplication.md).</span></span>  
+ <span data-ttu-id="0c800-113">LOBWebApplication ユーティリティには次のコードが含まれています。</span><span class="sxs-lookup"><span data-stu-id="0c800-113">The LOBWebApplication utility includes the following code.</span></span> <span data-ttu-id="0c800-114">詳細については、次を参照してください。 [LOBWebApplication](../../adapters-and-accelerators/accelerator-rosettanet/lobwebapplication.md)します。</span><span class="sxs-lookup"><span data-stu-id="0c800-114">For more information, see [LOBWebApplication](../../adapters-and-accelerators/accelerator-rosettanet/lobwebapplication.md).</span></span>  
   
 ```  
 using System;  
@@ -109,6 +109,6 @@ namespace Microsoft.Solutions.BTARN.SDK
 }  
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="349a7-115">参照</span><span class="sxs-lookup"><span data-stu-id="349a7-115">See Also</span></span>  
- <span data-ttu-id="349a7-116">[LOBWebApplication](../../adapters-and-accelerators/accelerator-rosettanet/lobwebapplication.md) </span><span class="sxs-lookup"><span data-stu-id="349a7-116">[LOBWebApplication](../../adapters-and-accelerators/accelerator-rosettanet/lobwebapplication.md) </span></span>  
- [<span data-ttu-id="349a7-117">メッセージ サンプル</span><span class="sxs-lookup"><span data-stu-id="349a7-117">Messaging Samples</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/messaging-samples.md)
+## <a name="see-also"></a><span data-ttu-id="0c800-115">参照</span><span class="sxs-lookup"><span data-stu-id="0c800-115">See Also</span></span>  
+ <span data-ttu-id="0c800-116">[LOBWebApplication](../../adapters-and-accelerators/accelerator-rosettanet/lobwebapplication.md) </span><span class="sxs-lookup"><span data-stu-id="0c800-116">[LOBWebApplication](../../adapters-and-accelerators/accelerator-rosettanet/lobwebapplication.md) </span></span>  
+ [<span data-ttu-id="0c800-117">メッセージ サンプル</span><span class="sxs-lookup"><span data-stu-id="0c800-117">Messaging Samples</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/messaging-samples.md)

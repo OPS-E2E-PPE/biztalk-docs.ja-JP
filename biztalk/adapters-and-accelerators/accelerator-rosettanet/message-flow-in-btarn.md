@@ -15,18 +15,18 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ad6cda8f6c0c25a9030a2382b3308b0137d204ea
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9f3fb395d5df36dd7fe71943af125411b281afc6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37007819"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65283205"
 ---
-# <a name="message-flow-in-btarn"></a><span data-ttu-id="29ad6-102">BTARN でのメッセージ フロー</span><span class="sxs-lookup"><span data-stu-id="29ad6-102">Message Flow in BTARN</span></span>
-<span data-ttu-id="29ad6-103">このセクションでは、イニシエーターとレスポンダー コンピューター、1 つの Microsoft から渡すことを介したメッセージの流れについて説明します[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]コンポーネントを別にします。</span><span class="sxs-lookup"><span data-stu-id="29ad6-103">This section describes how a message flows through the initiator and responder computers, passing from one Microsoft [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] component to another.</span></span> <span data-ttu-id="29ad6-104">各 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] コンポーネントがメッセージを処理する方法については説明しません。</span><span class="sxs-lookup"><span data-stu-id="29ad6-104">It does not describe how each [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] component processes the message.</span></span> <span data-ttu-id="29ad6-105">これらのプロセスの詳細については、[BTARN でのメッセージ処理](../../adapters-and-accelerators/accelerator-rosettanet/message-processing-in-btarn.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="29ad6-105">For more information about those processes, see [Message Processing in BTARN](../../adapters-and-accelerators/accelerator-rosettanet/message-processing-in-btarn.md).</span></span>  
+# <a name="message-flow-in-btarn"></a><span data-ttu-id="4fdc1-102">BTARN でのメッセージ フロー</span><span class="sxs-lookup"><span data-stu-id="4fdc1-102">Message Flow in BTARN</span></span>
+<span data-ttu-id="4fdc1-103">このセクションでは、イニシエーターとレスポンダー コンピューター、1 つの Microsoft から渡すことを介したメッセージの流れについて説明します[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]コンポーネントを別にします。</span><span class="sxs-lookup"><span data-stu-id="4fdc1-103">This section describes how a message flows through the initiator and responder computers, passing from one Microsoft [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] component to another.</span></span> <span data-ttu-id="4fdc1-104">各 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] コンポーネントがメッセージを処理する方法については説明しません。</span><span class="sxs-lookup"><span data-stu-id="4fdc1-104">It does not describe how each [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] component processes the message.</span></span> <span data-ttu-id="4fdc1-105">これらのプロセスの詳細については、次を参照してください。 [BTARN でのメッセージ処理](../../adapters-and-accelerators/accelerator-rosettanet/message-processing-in-btarn.md)します。</span><span class="sxs-lookup"><span data-stu-id="4fdc1-105">For more information about those processes, see [Message Processing in BTARN](../../adapters-and-accelerators/accelerator-rosettanet/message-processing-in-btarn.md).</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="29ad6-106">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="29ad6-106">In This Section</span></span>  
+## <a name="in-this-section"></a><span data-ttu-id="4fdc1-106">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="4fdc1-106">In This Section</span></span>  
   
--   [<span data-ttu-id="29ad6-107">イニシエーター BTARN でのメッセージ フロー</span><span class="sxs-lookup"><span data-stu-id="29ad6-107">Message Flow in the Initiator BTARN</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/message-flow-in-the-initiator-btarn.md)  
+-   [<span data-ttu-id="4fdc1-107">イニシエーター BTARN でのメッセージ フロー</span><span class="sxs-lookup"><span data-stu-id="4fdc1-107">Message Flow in the Initiator BTARN</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/message-flow-in-the-initiator-btarn.md)  
   
--   [<span data-ttu-id="29ad6-108">レスポンダー BTARN でのメッセージ フロー</span><span class="sxs-lookup"><span data-stu-id="29ad6-108">Message Flow in the Responder BTARN</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/message-flow-in-the-responder-btarn.md)
+-   [<span data-ttu-id="4fdc1-108">レスポンダー BTARN でのメッセージ フロー</span><span class="sxs-lookup"><span data-stu-id="4fdc1-108">Message Flow in the Responder BTARN</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/message-flow-in-the-responder-btarn.md)

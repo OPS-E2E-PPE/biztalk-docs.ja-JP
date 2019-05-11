@@ -1,5 +1,5 @@
 ---
-title: '手順 3: Siebel アダプターを使用して移行されたアプリケーションのテスト |Microsoft Docs'
+title: 手順 3:Siebel アダプターを使用して移行されたアプリケーションのテスト |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,29 +12,29 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c1669ed459dffbd8746936ffa1ba8c23677173e5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 0eaed7d5beb9fffe30f435fa0a1fff0c0349f4e4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36989587"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65370543"
 ---
-# <a name="step-3-test-the-migrated-application-with-the-siebel-adapter"></a><span data-ttu-id="7dd57-102">手順 3: Siebel アダプターを使用して移行されたアプリケーションをテストします。</span><span class="sxs-lookup"><span data-stu-id="7dd57-102">Step 3: Test the Migrated Application with the Siebel adapter</span></span>
-<span data-ttu-id="7dd57-103">![ステップ 3/3](../../adapters-and-accelerators/adapter-oracle-database/media/step-3of3.gif "Step_3of3")</span><span class="sxs-lookup"><span data-stu-id="7dd57-103">![Step 3 of 3](../../adapters-and-accelerators/adapter-oracle-database/media/step-3of3.gif "Step_3of3")</span></span>  
+# <a name="step-3-test-the-migrated-application-with-the-siebel-adapter"></a><span data-ttu-id="83dfb-102">手順 3:Siebel アダプターを使用した移行されたアプリケーションをテストします。</span><span class="sxs-lookup"><span data-stu-id="83dfb-102">Step 3: Test the Migrated Application with the Siebel adapter</span></span>
+<span data-ttu-id="83dfb-103">![ステップ 3/3](../../adapters-and-accelerators/adapter-oracle-database/media/step-3of3.gif "Step_3of3")</span><span class="sxs-lookup"><span data-stu-id="83dfb-103">![Step 3 of 3](../../adapters-and-accelerators/adapter-oracle-database/media/step-3of3.gif "Step_3of3")</span></span>  
   
- <span data-ttu-id="7dd57-104">**所要時間:** 5 分</span><span class="sxs-lookup"><span data-stu-id="7dd57-104">**Time to complete:** 5 minutes</span></span>  
+ <span data-ttu-id="83dfb-104">**所要時間:** 5 分</span><span class="sxs-lookup"><span data-stu-id="83dfb-104">**Time to complete:** 5 minutes</span></span>  
   
- <span data-ttu-id="7dd57-105">**目標:** この手順では、アカウントのビジネス コンポーネントに対して、挿入操作を実行することによって移行済みのアプリケーションをテストします。</span><span class="sxs-lookup"><span data-stu-id="7dd57-105">**Objective:** In this step, you will test the migrated application by performing an Insert operation on the Account business component.</span></span> <span data-ttu-id="7dd57-106">これを行うには、vPrev Siebel アダプターを使用して生成されたスキーマに準拠した要求メッセージをドロップします。</span><span class="sxs-lookup"><span data-stu-id="7dd57-106">To do this, you drop a request message that conforms to the schema generated using the vPrev Siebel adapter.</span></span>  
+ <span data-ttu-id="83dfb-105">**目標:** この手順では、アカウントのビジネス コンポーネントに対して、挿入操作を実行することによって移行済みのアプリケーションをテストします。</span><span class="sxs-lookup"><span data-stu-id="83dfb-105">**Objective:** In this step, you will test the migrated application by performing an Insert operation on the Account business component.</span></span> <span data-ttu-id="83dfb-106">これを行うには、vPrev Siebel アダプターを使用して生成されたスキーマに準拠した要求メッセージをドロップします。</span><span class="sxs-lookup"><span data-stu-id="83dfb-106">To do this, you drop a request message that conforms to the schema generated using the vPrev Siebel adapter.</span></span>  
   
-## <a name="prerequisites"></a><span data-ttu-id="7dd57-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="7dd57-107">Prerequisites</span></span>  
+## <a name="prerequisites"></a><span data-ttu-id="83dfb-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="83dfb-107">Prerequisites</span></span>  
   
-- <span data-ttu-id="7dd57-108">BizTalk アプリケーションを構成するには、BizTalk オーケストレーションの論理ポートを BizTalk Server 管理コンソールで物理ポートにマッピングします。</span><span class="sxs-lookup"><span data-stu-id="7dd57-108">Configure the BizTalk application by mapping the logical ports in the BizTalk orchestration to physical ports in the BizTalk Server Administration console.</span></span>  
+- <span data-ttu-id="83dfb-108">BizTalk アプリケーションを構成するには、BizTalk オーケストレーションの論理ポートを BizTalk Server 管理コンソールで物理ポートにマッピングします。</span><span class="sxs-lookup"><span data-stu-id="83dfb-108">Configure the BizTalk application by mapping the logical ports in the BizTalk orchestration to physical ports in the BizTalk Server Administration console.</span></span>  
   
-- <span data-ttu-id="7dd57-109">WCF ベースの Wcf-custom 送信ポートを使用する BizTalk アプリケーションを構成する[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]します。</span><span class="sxs-lookup"><span data-stu-id="7dd57-109">Configure the BizTalk application to use the WCF-Custom send port for the WCF-based [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)].</span></span>  
+- <span data-ttu-id="83dfb-109">WCF ベースの Wcf-custom 送信ポートを使用する BizTalk アプリケーションを構成する[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]します。</span><span class="sxs-lookup"><span data-stu-id="83dfb-109">Configure the BizTalk application to use the WCF-Custom send port for the WCF-based [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)].</span></span>  
   
-### <a name="to-test-the-migrated-application"></a><span data-ttu-id="7dd57-110">移行したアプリケーションをテストするには</span><span class="sxs-lookup"><span data-stu-id="7dd57-110">To test the migrated application</span></span>  
+### <a name="to-test-the-migrated-application"></a><span data-ttu-id="83dfb-110">移行したアプリケーションをテストするには</span><span class="sxs-lookup"><span data-stu-id="83dfb-110">To test the migrated application</span></span>  
   
-1. <span data-ttu-id="7dd57-111">Siebel_BussComp_Migration フォルダーから AccountInsert.xml 要求メッセージをコピーします。</span><span class="sxs-lookup"><span data-stu-id="7dd57-111">From the Siebel_BussComp_Migration folder, copy the AccountInsert.xml request message.</span></span> <span data-ttu-id="7dd57-112">この要求メッセージは、vPrev Siebel アダプターによって生成されたスキーマに準拠しています。</span><span class="sxs-lookup"><span data-stu-id="7dd57-112">This request message conforms to the schema generated by the vPrev Siebel adapter.</span></span> <span data-ttu-id="7dd57-113">送信マップを使用して、Wcf-custom 送信ポートに変換します WCF ベースのスキーマに準拠するようにこの[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]Siebel システムに送信します。</span><span class="sxs-lookup"><span data-stu-id="7dd57-113">Using the outbound map, the WCF-Custom send port converts this to conform to the schema for the WCF-based [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] and sends it to the Siebel system.</span></span>  
+1. <span data-ttu-id="83dfb-111">Siebel_BussComp_Migration フォルダーから AccountInsert.xml 要求メッセージをコピーします。</span><span class="sxs-lookup"><span data-stu-id="83dfb-111">From the Siebel_BussComp_Migration folder, copy the AccountInsert.xml request message.</span></span> <span data-ttu-id="83dfb-112">この要求メッセージは、vPrev Siebel アダプターによって生成されたスキーマに準拠しています。</span><span class="sxs-lookup"><span data-stu-id="83dfb-112">This request message conforms to the schema generated by the vPrev Siebel adapter.</span></span> <span data-ttu-id="83dfb-113">送信マップを使用して、Wcf-custom 送信ポートに変換します WCF ベースのスキーマに準拠するようにこの[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]Siebel システムに送信します。</span><span class="sxs-lookup"><span data-stu-id="83dfb-113">Using the outbound map, the WCF-Custom send port converts this to conform to the schema for the WCF-based [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] and sends it to the Siebel system.</span></span>  
   
    ```  
    <Insert xmlns="http://schemas.microsoft.com/[Siebel://Business Objects/Account/Account]">  
@@ -52,9 +52,9 @@ ms.locfileid: "36989587"
    </Insert>  
    ```  
   
-2. <span data-ttu-id="7dd57-114">貼り付け、ファイルにマップされているフォルダーに要求メッセージの受信場所。</span><span class="sxs-lookup"><span data-stu-id="7dd57-114">Paste the request message to the folder mapped to the file receive location.</span></span>  
+2. <span data-ttu-id="83dfb-114">貼り付け、ファイルにマップされているフォルダーに要求メッセージの受信場所。</span><span class="sxs-lookup"><span data-stu-id="83dfb-114">Paste the request message to the folder mapped to the file receive location.</span></span>  
   
-3. <span data-ttu-id="7dd57-115">オーケストレーションでは、要求メッセージを使用し、Siebel システムに送信します。</span><span class="sxs-lookup"><span data-stu-id="7dd57-115">The orchestration consumes the request message and sends it to the Siebel system.</span></span> <span data-ttu-id="7dd57-116">WCF ベースのスキーマに準拠するスキーマで Siebel システムからの応答が受信した[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]します。</span><span class="sxs-lookup"><span data-stu-id="7dd57-116">The response from the Siebel system is received in the schema that conforms with the schema of the WCF-based [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)].</span></span> <span data-ttu-id="7dd57-117">受信マップを使用して、Wcf-custom 送信ポートに変換しますこの vPrev Siebel アダプターのスキーマにします。</span><span class="sxs-lookup"><span data-stu-id="7dd57-117">Using the inbound map, the WCF-Custom send port converts this to the schema for the vPrev Siebel adapter.</span></span> <span data-ttu-id="7dd57-118">Siebel システムからの応答は、オーケストレーションの一部として定義されているその他のファイルの場所に保存されます。</span><span class="sxs-lookup"><span data-stu-id="7dd57-118">The response from the Siebel system is saved to the other file location defined as part of the orchestration.</span></span> <span data-ttu-id="7dd57-119">前の要求メッセージに対する応答は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="7dd57-119">The response for the preceding request message is:</span></span>  
+3. <span data-ttu-id="83dfb-115">オーケストレーションでは、要求メッセージを使用し、Siebel システムに送信します。</span><span class="sxs-lookup"><span data-stu-id="83dfb-115">The orchestration consumes the request message and sends it to the Siebel system.</span></span> <span data-ttu-id="83dfb-116">WCF ベースのスキーマに準拠するスキーマで Siebel システムからの応答が受信した[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]します。</span><span class="sxs-lookup"><span data-stu-id="83dfb-116">The response from the Siebel system is received in the schema that conforms with the schema of the WCF-based [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)].</span></span> <span data-ttu-id="83dfb-117">受信マップを使用して、Wcf-custom 送信ポートに変換しますこの vPrev Siebel アダプターのスキーマにします。</span><span class="sxs-lookup"><span data-stu-id="83dfb-117">Using the inbound map, the WCF-Custom send port converts this to the schema for the vPrev Siebel adapter.</span></span> <span data-ttu-id="83dfb-118">Siebel システムからの応答は、オーケストレーションの一部として定義されているその他のファイルの場所に保存されます。</span><span class="sxs-lookup"><span data-stu-id="83dfb-118">The response from the Siebel system is saved to the other file location defined as part of the orchestration.</span></span> <span data-ttu-id="83dfb-119">前の要求メッセージに対する応答は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="83dfb-119">The response for the preceding request message is:</span></span>  
   
    ```  
    <?xml version="1.0" encoding="utf-8"?>  
@@ -65,5 +65,5 @@ ms.locfileid: "36989587"
    </ns0:InsertResponse>  
    ```  
   
-## <a name="see-also"></a><span data-ttu-id="7dd57-120">参照</span><span class="sxs-lookup"><span data-stu-id="7dd57-120">See Also</span></span>  
- [<span data-ttu-id="7dd57-121">チュートリアル 2: Siebel の BizTalk プロジェクトを移行します。</span><span class="sxs-lookup"><span data-stu-id="7dd57-121">Tutorial 2: Migrating BizTalk Projects in Siebel</span></span>](../../adapters-and-accelerators/adapter-siebel/tutorial-2-migrating-biztalk-projects-in-siebel.md)
+## <a name="see-also"></a><span data-ttu-id="83dfb-120">参照</span><span class="sxs-lookup"><span data-stu-id="83dfb-120">See Also</span></span>  
+ [<span data-ttu-id="83dfb-121">チュートリアル 2: Siebel の BizTalk プロジェクトの移行</span><span class="sxs-lookup"><span data-stu-id="83dfb-121">Tutorial 2: Migrating BizTalk Projects in Siebel</span></span>](../../adapters-and-accelerators/adapter-siebel/tutorial-2-migrating-biztalk-projects-in-siebel.md)

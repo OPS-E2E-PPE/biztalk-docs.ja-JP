@@ -17,27 +17,27 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d2a7ef27ec23fb7470aff74df2915150f892e07a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6949861ffa6197e6a0061a1a565bea3711e617d1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36988811"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65357493"
 ---
-# <a name="character-encoding-in-the-flat-file-disassembler-pipeline-component"></a><span data-ttu-id="27f45-102">フラット ファイル逆アセンブラー パイプライン コンポーネントでの文字エン コード</span><span class="sxs-lookup"><span data-stu-id="27f45-102">Character Encoding in the Flat File Disassembler Pipeline Component</span></span>
-<span data-ttu-id="27f45-103">フラット ファイル逆アセンブラーでは、次のアルゴリズムに基づいて、入力メッセージを処理するためのエンコードに使用する文字セットを決定します。</span><span class="sxs-lookup"><span data-stu-id="27f45-103">The following algorithm is used by the Flat File Disassembler component to determine which encoding to use for processing an incoming message:</span></span>  
+# <a name="character-encoding-in-the-flat-file-disassembler-pipeline-component"></a><span data-ttu-id="7fbee-102">フラット ファイル逆アセンブラー パイプライン コンポーネントでの文字エン コード</span><span class="sxs-lookup"><span data-stu-id="7fbee-102">Character Encoding in the Flat File Disassembler Pipeline Component</span></span>
+<span data-ttu-id="7fbee-103">次のアルゴリズムは、受信メッセージの処理に使用するエンコードを決定、フラット ファイル逆アセンブラー コンポーネントによって使用されます。</span><span class="sxs-lookup"><span data-stu-id="7fbee-103">The following algorithm is used by the Flat File Disassembler component to determine which encoding to use for processing an incoming message:</span></span>  
   
-1. <span data-ttu-id="27f45-104">バイト順マークがデータ内に存在する場合、これによってエンコード情報が決定されます。</span><span class="sxs-lookup"><span data-stu-id="27f45-104">If a byte order mark exists in the data, encoding information is determined from it.</span></span> <span data-ttu-id="27f45-105">このエンコード情報は、逆アセンブラーでは保持されません (つまり、これは保存されません、 **XMLNorm.SourceCharset**プロパティ)。</span><span class="sxs-lookup"><span data-stu-id="27f45-105">This encoding information is not preserved by the disassembler (that is, it is not saved to the **XMLNorm.SourceCharset** property).</span></span>  
+1. <span data-ttu-id="7fbee-104">データのバイト順マークが存在する場合、そこからはエンコード情報が判断されます。</span><span class="sxs-lookup"><span data-stu-id="7fbee-104">If a byte order mark exists in the data, encoding information is determined from it.</span></span> <span data-ttu-id="7fbee-105">このエンコード情報は、逆アセンブラーでは保持されません (つまり、これは保存されません、 **XMLNorm.SourceCharset**プロパティ)。</span><span class="sxs-lookup"><span data-stu-id="7fbee-105">This encoding information is not preserved by the disassembler (that is, it is not saved to the **XMLNorm.SourceCharset** property).</span></span>  
   
-2. <span data-ttu-id="27f45-106">の場合、 **IBaseMessagePart.Charset**プロパティが設定されて、が指定されてエンコードが使用されます。</span><span class="sxs-lookup"><span data-stu-id="27f45-106">Otherwise, if the **IBaseMessagePart.Charset** property is set, the encoding specified there is used.</span></span>  
+2. <span data-ttu-id="7fbee-106">の場合、 **IBaseMessagePart.Charset**プロパティが設定されて、が指定されてエンコードが使用されます。</span><span class="sxs-lookup"><span data-stu-id="7fbee-106">Otherwise, if the **IBaseMessagePart.Charset** property is set, the encoding specified there is used.</span></span>  
   
-3. <span data-ttu-id="27f45-107">IBaseMessagePart.Charset プロパティも設定されていない場合、ヘッダーまたはドキュメント スキーマにコードページ情報が含まれていれば、これが使用されます。</span><span class="sxs-lookup"><span data-stu-id="27f45-107">Otherwise, if the header or document schema contains codepage information, it is used.</span></span>  
+3. <span data-ttu-id="7fbee-107">それ以外の場合、ヘッダーまたはドキュメント スキーマにコードページ情報が含まれる場合に使用されます。</span><span class="sxs-lookup"><span data-stu-id="7fbee-107">Otherwise, if the header or document schema contains codepage information, it is used.</span></span>  
   
-4. <span data-ttu-id="27f45-108">上記のいずれにも該当しない場合は、UTF-8 エンコードが使用されます。</span><span class="sxs-lookup"><span data-stu-id="27f45-108">Otherwise, UTF-8 encoding is used.</span></span>  
+4. <span data-ttu-id="7fbee-108">それ以外の場合、utf-8 エンコードが使用されます。</span><span class="sxs-lookup"><span data-stu-id="7fbee-108">Otherwise, UTF-8 encoding is used.</span></span>  
   
-   <span data-ttu-id="27f45-109">逆アセンブラーがでメッセージ コンテキストにエンコード情報を保存の前に、2、3、および 4 の場合、 **XMLNorm.SourceCharset**プロパティ。</span><span class="sxs-lookup"><span data-stu-id="27f45-109">For the preceding cases 2, 3, and 4, the disassembler saves the encoding information on the message context in the **XMLNorm.SourceCharset** property.</span></span>  
+   <span data-ttu-id="7fbee-109">逆アセンブラーがでメッセージ コンテキストにエンコード情報を保存の前に、2、3、および 4 の場合、 **XMLNorm.SourceCharset**プロパティ。</span><span class="sxs-lookup"><span data-stu-id="7fbee-109">For the preceding cases 2, 3, and 4, the disassembler saves the encoding information on the message context in the **XMLNorm.SourceCharset** property.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="27f45-110">参照</span><span class="sxs-lookup"><span data-stu-id="27f45-110">See Also</span></span>  
- <span data-ttu-id="27f45-111">[フラット ファイル逆アセンブラー パイプライン コンポーネント](../core/flat-file-disassembler-pipeline-component.md) </span><span class="sxs-lookup"><span data-stu-id="27f45-111">[Flat File Disassembler Pipeline Component](../core/flat-file-disassembler-pipeline-component.md) </span></span>  
- <span data-ttu-id="27f45-112">[フラット ファイル逆アセンブラー パイプライン コンポーネントを構成する方法](../core/how-to-configure-the-flat-file-disassembler-pipeline-component.md) </span><span class="sxs-lookup"><span data-stu-id="27f45-112">[How to Configure the Flat File Disassembler Pipeline Component](../core/how-to-configure-the-flat-file-disassembler-pipeline-component.md) </span></span>  
- [<span data-ttu-id="27f45-113">Pipelines-AssemblerDisassembler (BizTalk Server サンプル フォルダー)</span><span class="sxs-lookup"><span data-stu-id="27f45-113">Pipelines-AssemblerDisassembler (BizTalk Server Samples Folder)</span></span>](../core/pipelines-assemblerdisassembler-biztalk-server-samples-folder.md)
+## <a name="see-also"></a><span data-ttu-id="7fbee-110">参照</span><span class="sxs-lookup"><span data-stu-id="7fbee-110">See Also</span></span>  
+ <span data-ttu-id="7fbee-111">[フラット ファイル逆アセンブラー パイプライン コンポーネント](../core/flat-file-disassembler-pipeline-component.md) </span><span class="sxs-lookup"><span data-stu-id="7fbee-111">[Flat File Disassembler Pipeline Component](../core/flat-file-disassembler-pipeline-component.md) </span></span>  
+ <span data-ttu-id="7fbee-112">[フラット ファイル逆アセンブラー パイプライン コンポーネントを構成する方法](../core/how-to-configure-the-flat-file-disassembler-pipeline-component.md) </span><span class="sxs-lookup"><span data-stu-id="7fbee-112">[How to Configure the Flat File Disassembler Pipeline Component](../core/how-to-configure-the-flat-file-disassembler-pipeline-component.md) </span></span>  
+ [<span data-ttu-id="7fbee-113">Pipelines-AssemblerDisassembler (BizTalk Server サンプル フォルダー)</span><span class="sxs-lookup"><span data-stu-id="7fbee-113">Pipelines-AssemblerDisassembler (BizTalk Server Samples Folder)</span></span>](../core/pipelines-assemblerdisassembler-biztalk-server-samples-folder.md)

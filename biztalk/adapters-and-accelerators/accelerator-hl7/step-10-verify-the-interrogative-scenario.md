@@ -1,5 +1,5 @@
 ---
-title: '手順 10: Interrogative シナリオの確認 |Microsoft Docs'
+title: 手順 10:Interrogative シナリオの確認 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,43 +14,43 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1e235ceddeb251a7182975dd54a128b33b4ee2be
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a7d716ad28e7833885291c43d5870e6430624065
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36990787"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65288963"
 ---
-# <a name="step-10-verify-the-interrogative-scenario"></a><span data-ttu-id="b0983-102">手順 10: Interrogative シナリオを確認します。</span><span class="sxs-lookup"><span data-stu-id="b0983-102">Step 10: Verify the Interrogative Scenario</span></span>
-<span data-ttu-id="b0983-103">この手順では、このチュートリアルでは、エンド ツー エンド シナリオを確認します。</span><span class="sxs-lookup"><span data-stu-id="b0983-103">In this step, you verify the end-to-end scenario for this tutorial.</span></span>  
+# <a name="step-10-verify-the-interrogative-scenario"></a><span data-ttu-id="6d285-102">手順 10:Interrogative シナリオを確認します。</span><span class="sxs-lookup"><span data-stu-id="6d285-102">Step 10: Verify the Interrogative Scenario</span></span>
+<span data-ttu-id="6d285-103">この手順では、このチュートリアルでは、エンド ツー エンド シナリオを確認します。</span><span class="sxs-lookup"><span data-stu-id="6d285-103">In this step, you verify the end-to-end scenario for this tutorial.</span></span>  
   
-### <a name="to-send-the-query-message"></a><span data-ttu-id="b0983-104">クエリ メッセージを送信するには</span><span class="sxs-lookup"><span data-stu-id="b0983-104">To send the query message</span></span>  
+### <a name="to-send-the-query-message"></a><span data-ttu-id="6d285-104">クエリ メッセージを送信するには</span><span class="sxs-lookup"><span data-stu-id="6d285-104">To send the query message</span></span>  
   
-1.  <span data-ttu-id="b0983-105">コマンド プロンプトを開きます。</span><span class="sxs-lookup"><span data-stu-id="b0983-105">Open a command prompt.</span></span>  
+1.  <span data-ttu-id="6d285-105">コマンド プロンプトを開きます。</span><span class="sxs-lookup"><span data-stu-id="6d285-105">Open a command prompt.</span></span>  
   
-2.  <span data-ttu-id="b0983-106">コマンド プロンプトに移動 **\<*ドライブ*\>: \Program Files\Microsoft BizTalk\<バージョン\>HL7\SDK\MLLP ユーティリティのアクセラレータ**します。</span><span class="sxs-lookup"><span data-stu-id="b0983-106">In the command prompt, move to **\<*drive*\>:\Program Files\Microsoft BizTalk \<version\> Accelerator for HL7\SDK\MLLP Utilities**.</span></span>  
+2.  <span data-ttu-id="6d285-106">コマンド プロンプトに移動 **\<*ドライブ*\>: \Program Files\Microsoft BizTalk\<バージョン\>HL7\SDK\MLLP ユーティリティのアクセラレータ**します。</span><span class="sxs-lookup"><span data-stu-id="6d285-106">In the command prompt, move to **\<*drive*\>:\Program Files\Microsoft BizTalk \<version\> Accelerator for HL7\SDK\MLLP Utilities**.</span></span>  
   
-3.  <span data-ttu-id="b0983-107">コマンド プロンプトで「 **MllpReceive/P 24000**、およびキーを押します **」と入力**します。</span><span class="sxs-lookup"><span data-stu-id="b0983-107">In the command prompt, type **MllpReceive /P 24000**, and then press **Enter**.</span></span> <span data-ttu-id="b0983-108">これをリッスンするポート 24000 MLLP リスナー アプリケーションを実行し、他の画面に受信メッセージを表示します。</span><span class="sxs-lookup"><span data-stu-id="b0983-108">This runs the MLLP listener application listening to port 24000 and displays any messages received to the screen.</span></span> <span data-ttu-id="b0983-109">このアプリケーションでは、病院の情報システムをシミュレートします。</span><span class="sxs-lookup"><span data-stu-id="b0983-109">This application is simulating the Hospital Information System.</span></span>  
+3.  <span data-ttu-id="6d285-107">コマンド プロンプトで「 **MllpReceive/P 24000**、およびキーを押します **」と入力**します。</span><span class="sxs-lookup"><span data-stu-id="6d285-107">In the command prompt, type **MllpReceive /P 24000**, and then press **Enter**.</span></span> <span data-ttu-id="6d285-108">これをリッスンするポート 24000 MLLP リスナー アプリケーションを実行し、他の画面に受信メッセージを表示します。</span><span class="sxs-lookup"><span data-stu-id="6d285-108">This runs the MLLP listener application listening to port 24000 and displays any messages received to the screen.</span></span> <span data-ttu-id="6d285-109">このアプリケーションでは、病院の情報システムをシミュレートします。</span><span class="sxs-lookup"><span data-stu-id="6d285-109">This application is simulating the Hospital Information System.</span></span>  
   
-4.  <span data-ttu-id="b0983-110">追加のコマンド プロンプトを開きます。</span><span class="sxs-lookup"><span data-stu-id="b0983-110">Open an additional command prompt.</span></span>  
+4.  <span data-ttu-id="6d285-110">追加のコマンド プロンプトを開きます。</span><span class="sxs-lookup"><span data-stu-id="6d285-110">Open an additional command prompt.</span></span>  
   
-5.  <span data-ttu-id="b0983-111">2 番目のコマンド プロンプト ウィンドウに移動 **\<*ドライブ*\>: \Program Files\Microsoft BizTalk\<バージョン\>HL7\SDK\MLLP ユーティリティのアクセラレータ**.</span><span class="sxs-lookup"><span data-stu-id="b0983-111">In the second Command Prompt window, move to **\<*drive*\>:\Program Files\Microsoft BizTalk \<version\> Accelerator for HL7\SDK\MLLP Utilities**.</span></span>  
+5.  <span data-ttu-id="6d285-111">2 番目のコマンド プロンプト ウィンドウに移動 **\<*ドライブ*\>: \Program Files\Microsoft BizTalk\<バージョン\>HL7\SDK\MLLP ユーティリティのアクセラレータ**.</span><span class="sxs-lookup"><span data-stu-id="6d285-111">In the second Command Prompt window, move to **\<*drive*\>:\Program Files\Microsoft BizTalk \<version\> Accelerator for HL7\SDK\MLLP Utilities**.</span></span>  
   
-6.  <span data-ttu-id="b0983-112">2 番目のコマンド プロンプトで次のように入力します**MllpSend/SB 11/EB 28/CR 13/TWOWAY/P 22000/F"\<*ドライブ*\>: \Program Files\Microsoft BizTalk\<バージョン\>。HL7\SDK\Interrogative Tutorial\QRY^Q01.txt のアクセラレータ**、キーを押しますと **」と入力します。**</span><span class="sxs-lookup"><span data-stu-id="b0983-112">In the second command prompt, type **MllpSend /SB 11 /EB 28 /CR 13 /TWOWAY /P 22000 /F "\<*drive*\>:\Program Files\Microsoft BizTalk \<version\> Accelerator for HL7\SDK\Interrogative Tutorial\QRY^Q01.txt**, and then press **Enter.**</span></span>  
+6.  <span data-ttu-id="6d285-112">2 番目のコマンド プロンプトで次のように入力します**MllpSend/SB 11/EB 28/CR 13/TWOWAY/P 22000/F"\<*ドライブ*\>: \Program Files\Microsoft BizTalk\<バージョン\>。HL7\SDK\Interrogative Tutorial\QRY^Q01.txt のアクセラレータ**、キーを押しますと **」と入力します。**</span><span class="sxs-lookup"><span data-stu-id="6d285-112">In the second command prompt, type **MllpSend /SB 11 /EB 28 /CR 13 /TWOWAY /P 22000 /F "\<*drive*\>:\Program Files\Microsoft BizTalk \<version\> Accelerator for HL7\SDK\Interrogative Tutorial\QRY^Q01.txt**, and then press **Enter.**</span></span>  
   
     > [!NOTE]
-    >  <span data-ttu-id="b0983-113">このコマンドは、MLLP ポート 22000 と (確認) の応答を待機するには、このチュートリアルの先頭で作成したクエリ メッセージを送信します。</span><span class="sxs-lookup"><span data-stu-id="b0983-113">This command sends the query message you created at the beginning of this tutorial to MLLP port 22000 and waits for a response (acknowledgment).</span></span> <span data-ttu-id="b0983-114">ADT では、受信ポートがこのメッセージを取得し、それを処理します。</span><span class="sxs-lookup"><span data-stu-id="b0983-114">The ADT receive port picks up this message and processes it.</span></span>  
+    >  <span data-ttu-id="6d285-113">このコマンドは、MLLP ポート 22000 と (確認) の応答を待機するには、このチュートリアルの先頭で作成したクエリ メッセージを送信します。</span><span class="sxs-lookup"><span data-stu-id="6d285-113">This command sends the query message you created at the beginning of this tutorial to MLLP port 22000 and waits for a response (acknowledgment).</span></span> <span data-ttu-id="6d285-114">ADT では、受信ポートがこのメッセージを取得し、それを処理します。</span><span class="sxs-lookup"><span data-stu-id="6d285-114">The ADT receive port picks up this message and processes it.</span></span>  
   
-7.  <span data-ttu-id="b0983-115">次の結果があることを確認します。</span><span class="sxs-lookup"><span data-stu-id="b0983-115">Verify that you have the following results:</span></span>  
+7.  <span data-ttu-id="6d285-115">次の結果があることを確認します。</span><span class="sxs-lookup"><span data-stu-id="6d285-115">Verify that you have the following results:</span></span>  
   
-    -   <span data-ttu-id="b0983-116">MLLP リスナー アプリケーションには、次の値を持つメッセージを表示する必要があります。</span><span class="sxs-lookup"><span data-stu-id="b0983-116">The MLLP listener application should display a message with the following values:</span></span>  
+    -   <span data-ttu-id="6d285-116">MLLP リスナー アプリケーションには、次の値を持つメッセージを表示する必要があります。</span><span class="sxs-lookup"><span data-stu-id="6d285-116">The MLLP listener application should display a message with the following values:</span></span>  
   
         ```  
         MSH|^~\&|ADT||HIS||19990303||QRY^Q01|MSG00001|P|2.4  
         QRD|200307231012|D|I|4387|||20^LI|12233|RES|ALL  
         ```  
   
-    -   <span data-ttu-id="b0983-117">MllpSend ユーティリティがさらに、受信確認ファイルを作成、 \<*ドライブ*\>: \Program Files\Microsoft BizTalk\<バージョン\>HL7\SDK\ のアクセラレータQRY^Q01.txt.RESPONSE をという名前の interrogative チュートリアル フォルダー。</span><span class="sxs-lookup"><span data-stu-id="b0983-117">In addition, the MllpSend utility creates an acknowledgment file in the \<*drive*\>:\Program Files\Microsoft BizTalk \<version\> Accelerator for HL7\SDK\Interrogative Tutorial folder named QRY^Q01.txt.RESPONSE.</span></span> <span data-ttu-id="b0983-118">このファイルには、受信確認として、次の情報が含まれています。</span><span class="sxs-lookup"><span data-stu-id="b0983-118">This file contains the following information as the acknowledgment:</span></span>  
+    -   <span data-ttu-id="6d285-117">MllpSend ユーティリティがさらに、受信確認ファイルを作成、 \<*ドライブ*\>: \Program Files\Microsoft BizTalk\<バージョン\>HL7\SDK\ のアクセラレータQRY^Q01.txt.RESPONSE をという名前の interrogative チュートリアル フォルダー。</span><span class="sxs-lookup"><span data-stu-id="6d285-117">In addition, the MllpSend utility creates an acknowledgment file in the \<*drive*\>:\Program Files\Microsoft BizTalk \<version\> Accelerator for HL7\SDK\Interrogative Tutorial folder named QRY^Q01.txt.RESPONSE.</span></span> <span data-ttu-id="6d285-118">このファイルには、受信確認として、次の情報が含まれています。</span><span class="sxs-lookup"><span data-stu-id="6d285-118">This file contains the following information as the acknowledgment:</span></span>  
   
         ```  
         MSH|^~\&|HIS||ADT||20040331154031.2222-0800||ACK^Q01^ACK|10000GSM|P|2.4  
@@ -58,23 +58,23 @@ ms.locfileid: "36990787"
         ****END ACK****  
         ```  
   
-### <a name="to-send-the-response-message"></a><span data-ttu-id="b0983-119">応答メッセージを送信するには</span><span class="sxs-lookup"><span data-stu-id="b0983-119">To send the response message</span></span>  
+### <a name="to-send-the-response-message"></a><span data-ttu-id="6d285-119">応答メッセージを送信するには</span><span class="sxs-lookup"><span data-stu-id="6d285-119">To send the response message</span></span>  
   
-1. <span data-ttu-id="b0983-120">MllpReceive アプリケーションを実行しているコマンド プロンプトでキーを押して**Ctrl + C**前の操作をキャンセルします。</span><span class="sxs-lookup"><span data-stu-id="b0983-120">In the command prompt running the MllpReceive application, press **Ctrl-C** to cancel the previous operation.</span></span>  
+1. <span data-ttu-id="6d285-120">MllpReceive アプリケーションを実行しているコマンド プロンプトでキーを押して**Ctrl + C**前の操作をキャンセルします。</span><span class="sxs-lookup"><span data-stu-id="6d285-120">In the command prompt running the MllpReceive application, press **Ctrl-C** to cancel the previous operation.</span></span>  
   
-2. <span data-ttu-id="b0983-121">コマンド プロンプトで「 **MllpReceive/P 25000**、押します **」と入力**します。</span><span class="sxs-lookup"><span data-stu-id="b0983-121">At the command prompt, type **MllpReceive /P 25000**, and then press **Enter**.</span></span>  
-  
-   > [!NOTE]
-   >  <span data-ttu-id="b0983-122">手順 2 をリッスンするポート 25000 MLLP リスナー アプリケーションを実行し、他の画面に受信メッセージを表示します。</span><span class="sxs-lookup"><span data-stu-id="b0983-122">Step 2 runs the MLLP listener application listening to port 25000 and displays any messages received to the screen.</span></span> <span data-ttu-id="b0983-123">このアプリケーションでは、ADT system をシミュレートします。</span><span class="sxs-lookup"><span data-stu-id="b0983-123">This application is simulating the ADT system.</span></span>  
-  
-3. <span data-ttu-id="b0983-124">2 番目のコマンド プロンプトで次のように入力します**MllpSend/SB 11/EB 28/CR 13/P 23000/F"\<*ドライブ*\>: \Program Files\Microsoft BizTalk\<バージョン\>のアクセラレータ。HL7\SDK\Interrogative Tutorial\DSR.txt"**、キーを押します**Enter**します。</span><span class="sxs-lookup"><span data-stu-id="b0983-124">In the second command prompt, type **MllpSend /SB 11 /EB 28 /CR 13 /P 23000 /F "\<*drive*\>:\Program Files\Microsoft BizTalk \<version\> Accelerator for HL7\SDK\Interrogative Tutorial\DSR.txt"**, then press **Enter**.</span></span>  
+2. <span data-ttu-id="6d285-121">コマンド プロンプトで「 **MllpReceive/P 25000**、押します **」と入力**します。</span><span class="sxs-lookup"><span data-stu-id="6d285-121">At the command prompt, type **MllpReceive /P 25000**, and then press **Enter**.</span></span>  
   
    > [!NOTE]
-   >  <span data-ttu-id="b0983-125">手順 3 では、MLLP ポート 23000 には、このチュートリアルの先頭で作成した応答メッセージを送信します。</span><span class="sxs-lookup"><span data-stu-id="b0983-125">Step 3 sends the response message you created at the beginning of this tutorial to MLLP port 23000.</span></span> <span data-ttu-id="b0983-126">HIS では、受信ポートがこのメッセージを取得し、それを処理します。</span><span class="sxs-lookup"><span data-stu-id="b0983-126">The HIS receive port picks up this message and processes it.</span></span>  
+   >  <span data-ttu-id="6d285-122">手順 2 をリッスンするポート 25000 MLLP リスナー アプリケーションを実行し、他の画面に受信メッセージを表示します。</span><span class="sxs-lookup"><span data-stu-id="6d285-122">Step 2 runs the MLLP listener application listening to port 25000 and displays any messages received to the screen.</span></span> <span data-ttu-id="6d285-123">このアプリケーションでは、ADT system をシミュレートします。</span><span class="sxs-lookup"><span data-stu-id="6d285-123">This application is simulating the ADT system.</span></span>  
   
-4. <span data-ttu-id="b0983-127">次の結果があることを確認します。</span><span class="sxs-lookup"><span data-stu-id="b0983-127">Verify that you have the following results:</span></span>  
+3. <span data-ttu-id="6d285-124">2 番目のコマンド プロンプトで次のように入力します**MllpSend/SB 11/EB 28/CR 13/P 23000/F"\<*ドライブ*\>: \Program Files\Microsoft BizTalk\<バージョン\>のアクセラレータ。HL7\SDK\Interrogative Tutorial\DSR.txt"**、キーを押します**Enter**します。</span><span class="sxs-lookup"><span data-stu-id="6d285-124">In the second command prompt, type **MllpSend /SB 11 /EB 28 /CR 13 /P 23000 /F "\<*drive*\>:\Program Files\Microsoft BizTalk \<version\> Accelerator for HL7\SDK\Interrogative Tutorial\DSR.txt"**, then press **Enter**.</span></span>  
   
-   -   <span data-ttu-id="b0983-128">MLLP リスナー アプリケーションには、次の値を持つメッセージを表示する必要があります。</span><span class="sxs-lookup"><span data-stu-id="b0983-128">The MLLP listener application should display a message with the following values:</span></span>  
+   > [!NOTE]
+   >  <span data-ttu-id="6d285-125">手順 3 では、MLLP ポート 23000 には、このチュートリアルの先頭で作成した応答メッセージを送信します。</span><span class="sxs-lookup"><span data-stu-id="6d285-125">Step 3 sends the response message you created at the beginning of this tutorial to MLLP port 23000.</span></span> <span data-ttu-id="6d285-126">HIS では、受信ポートがこのメッセージを取得し、それを処理します。</span><span class="sxs-lookup"><span data-stu-id="6d285-126">The HIS receive port picks up this message and processes it.</span></span>  
+  
+4. <span data-ttu-id="6d285-127">次の結果があることを確認します。</span><span class="sxs-lookup"><span data-stu-id="6d285-127">Verify that you have the following results:</span></span>  
+  
+   -   <span data-ttu-id="6d285-128">MLLP リスナー アプリケーションには、次の値を持つメッセージを表示する必要があります。</span><span class="sxs-lookup"><span data-stu-id="6d285-128">The MLLP listener application should display a message with the following values:</span></span>  
   
        ```  
        MSH|^~\&|HIS||ADT||19990505||DSR^Q01|ZXT23469|P|2.4  
@@ -91,11 +91,11 @@ ms.locfileid: "36990787"
        ```  
   
    > [!NOTE]
-   >  <span data-ttu-id="b0983-129">上記のメッセージが正しく表示されない場合は、状態と動作状況の追跡 (HAT) ツールを使用して、エラーをトラブルシューティングします。</span><span class="sxs-lookup"><span data-stu-id="b0983-129">If the messages above do not appear correctly, use the Health and Activity Tracking (HAT) tool to troubleshoot the error.</span></span>  
+   >  <span data-ttu-id="6d285-129">上記のメッセージが正しく表示されない場合は、状態と動作状況の追跡 (HAT) ツールを使用して、エラーをトラブルシューティングします。</span><span class="sxs-lookup"><span data-stu-id="6d285-129">If the messages above do not appear correctly, use the Health and Activity Tracking (HAT) tool to troubleshoot the error.</span></span>  
   
-   <span data-ttu-id="b0983-130">おめでとうございます!</span><span class="sxs-lookup"><span data-stu-id="b0983-130">Congratulations!</span></span> <span data-ttu-id="b0983-131">BTAHL7 Interrogative チュートリアルが正常に完了しました。</span><span class="sxs-lookup"><span data-stu-id="b0983-131">You have successfully completed the BTAHL7 Interrogative Tutorial.</span></span>  
+   <span data-ttu-id="6d285-130">おめでとうございます!</span><span class="sxs-lookup"><span data-stu-id="6d285-130">Congratulations!</span></span> <span data-ttu-id="6d285-131">BTAHL7 Interrogative チュートリアルが正常に完了しました。</span><span class="sxs-lookup"><span data-stu-id="6d285-131">You have successfully completed the BTAHL7 Interrogative Tutorial.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="b0983-132">参照</span><span class="sxs-lookup"><span data-stu-id="b0983-132">See Also</span></span>  
- <span data-ttu-id="b0983-133">[バッチ処理のチュートリアル](../../adapters-and-accelerators/accelerator-hl7/batching-tutorial.md) </span><span class="sxs-lookup"><span data-stu-id="b0983-133">[Batching Tutorial](../../adapters-and-accelerators/accelerator-hl7/batching-tutorial.md) </span></span>  
- <span data-ttu-id="b0983-134">[エンド ツー エンドのチュートリアル](../../adapters-and-accelerators/accelerator-hl7/end-to-end-tutorial1.md) </span><span class="sxs-lookup"><span data-stu-id="b0983-134">[End-to-End Tutorial](../../adapters-and-accelerators/accelerator-hl7/end-to-end-tutorial1.md) </span></span>  
- [<span data-ttu-id="b0983-135">メッセージ強化のチュートリアル</span><span class="sxs-lookup"><span data-stu-id="b0983-135">Message Enrichment Tutorial</span></span>](../../adapters-and-accelerators/accelerator-hl7/message-enrichment-tutorial.md)
+## <a name="see-also"></a><span data-ttu-id="6d285-132">参照</span><span class="sxs-lookup"><span data-stu-id="6d285-132">See Also</span></span>  
+ <span data-ttu-id="6d285-133">[バッチ処理のチュートリアル](../../adapters-and-accelerators/accelerator-hl7/batching-tutorial.md) </span><span class="sxs-lookup"><span data-stu-id="6d285-133">[Batching Tutorial](../../adapters-and-accelerators/accelerator-hl7/batching-tutorial.md) </span></span>  
+ <span data-ttu-id="6d285-134">[エンド ツー エンドのチュートリアル](../../adapters-and-accelerators/accelerator-hl7/end-to-end-tutorial1.md) </span><span class="sxs-lookup"><span data-stu-id="6d285-134">[End-to-End Tutorial](../../adapters-and-accelerators/accelerator-hl7/end-to-end-tutorial1.md) </span></span>  
+ [<span data-ttu-id="6d285-135">メッセージ強化のチュートリアル</span><span class="sxs-lookup"><span data-stu-id="6d285-135">Message Enrichment Tutorial</span></span>](../../adapters-and-accelerators/accelerator-hl7/message-enrichment-tutorial.md)
