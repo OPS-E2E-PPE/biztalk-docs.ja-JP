@@ -15,12 +15,12 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 36b5def2e4cca694e63040cfc8721be3a8819222
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 10eb723c671a94fd95c7ed21a14c93fad3f907c0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36966875"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65371945"
 ---
 # <a name="configure-a-physical-port-binding-using-a-port-binding-file-to-siebel"></a>Siebel にポートのバインド ファイルを使用して物理的なポート バインドを構成します。
 使用すると、[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]メタデータ スキーマ ファイル以外の Siebel 成果物を生成する、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]ポートのバインド ファイルも生成されます。 物理送信ポートを作成する BizTalk アプリケーションには、このバインド ファイルをインポートできます。 参照してください[Siebel アダプターのアダプターのバインドを再利用](../../adapters-and-accelerators/adapter-siebel/reuse-adapter-bindings-in-the-siebel-adapter.md)します。 このバインド ファイルをインポートする場合、物理送信ポートを手動で作成することはありません。  
@@ -72,4 +72,4 @@ ms.locfileid: "36966875"
 ## <a name="see-also"></a>参照  
 [の構成要素、Siebel を BizTalk アプリケーションを作成するには 
 
-アダプター] (../../adapters-and-accelerators/adapter-siebel/building-blocks-to-create-biztalk-applications-with-the-siebel-adapter.md)
+adapter](../../adapters-and-accelerators/adapter-siebel/building-blocks-to-create-biztalk-applications-with-the-siebel-adapter.md)

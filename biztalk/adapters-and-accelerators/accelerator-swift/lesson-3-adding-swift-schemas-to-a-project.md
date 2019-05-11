@@ -15,17 +15,17 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3fcaa7f9af0dd802f457f84d7661f92bcdf08157
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ba000b90196fb625981244420269274804c24836
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36982043"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65530341"
 ---
 # <a name="lesson-3-adding-swift-schemas-to-a-project"></a>レッスン 3: SWIFT スキーマをプロジェクトに追加します。
 ソリューションと新しいプロジェクトをプロジェクトに項目を追加できます。 追加する最初の項目は、MT103 SWIFT 支払いメッセージのスキーマです。 スキーマ テンプレートを選択すると、BizTalk エディターが起動します。  
   
-### <a name="to-add-a-new-schema-to-the-project"></a>新しいスキーマをプロジェクトに追加するには、次の操作を行います。  
+### <a name="to-add-a-new-schema-to-the-project"></a>新しいスキーマをプロジェクトに追加するには  
   
 1. ソリューション エクスプ ローラーで右クリックし、 **SWIFTSchemas**プロジェクトをポイントして、**追加**、 をクリックし、**既存項目の**。  
   
@@ -52,4 +52,4 @@ ms.locfileid: "36982043"
   
 8. **ファイル** メニューのをクリックして**すべて保存**変更を保存します。  
   
-   進みます[レッスン 4: アセンブリの配置のビルドと](../../adapters-and-accelerators/accelerator-swift/lesson-4-building-and-deploying-the-assembly.md)します。
+   続行する[レッスン 4。アセンブリの配置のビルドと](../../adapters-and-accelerators/accelerator-swift/lesson-4-building-and-deploying-the-assembly.md)します。

@@ -1,5 +1,5 @@
 ---
-title: ビジネス ルール フレームワークのセキュリティ |Microsoft ドキュメント
+title: ビジネス ルール フレームワークのセキュリティ |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -18,38 +18,38 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c2c3a38190d242c85b134a791a8c2cd05c208050
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 078c4671fbc587b56ce1dafed0e9676ddadbd7d0
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22232690"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65530427"
 ---
 # <a name="business-rules-framework-security"></a>ビジネス ルール フレームワークのセキュリティ
-ビジネス ルール エンジンは、ホスト アプリケーションのセキュリティ コンテキストで動作します。 実行中にルール エンジン インスタンスの id は、スレッド コンテキストを呼び出す、 **Policy.Execute**メソッドです。  
+ビジネス ルール エンジンは、ホスト アプリケーションのセキュリティ コンテキストで動作します。 実行中にルール エンジン インスタンスの id は、スレッド コンテキストを呼び出す、 **Policy.Execute**メソッド。  
   
 ## <a name="default-security-configuration"></a>既定のセキュリティ構成  
- Microsoft をインストールするときに[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]2、Microsoft Windows グループは、default、管理者およびユーザーによって作成されます:「BizTalk Server 管理者」と"BizTalk Application Users" BTS_ADMIN_USERS および BTS_HOST_USERS は、それぞれ SQL ロールの RE_ADMIN_USERS および RE_HOST_USERS のメンバーです。  
+ Microsoft をインストールするときに[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]、2 つの管理者とユーザーの既定で Microsoft Windows グループが作成されます。「BizTalk Server 管理者」と"BizTalk Application Users" これら 2 つの Windows グループは、BTS_ADMIN_USERS および BTS_HOST_USERS SQL ロールの RE_ADMIN_USERS および RE_HOST_USERS SQL ロールのメンバーは、それぞれのメンバーです。  
   
- ルール ストアが作成されるたびに既定の SQL ロールが作成されます: BTS_ADMIN_USERS、BTS_HOST_USERS、RE_ADMIN_USERS および RE_HOST_USERS です。  
+ ルール ストアが作成されるたびに、既定の SQL ロールが作成されます。BTS_ADMIN_USERS、BTS_HOST_USERS、RE_ADMIN_USERS および RE_HOST_USERS します。  
   
 |既定の Windows グループ|SQL ロール|  
 |----------------------------|---------------|  
 |BizTalk Server 管理者|RE_ADMIN_USERS|  
 |BizTalk Application Users|RE_HOST_USERS|  
   
- RE_ADMIN_USERS ロールのユーザーだけが、展開とエンティティ アクセスの保護に関する構成テーブルを更新するストアド プロシージャを実行できます。 つまり、ルール エンジンの管理者によってのみ、展開、展開解除、および保護の構成が行われます。 RE_HOST_USERS ロールのユーザーは、SQL ルール ストアの他のストアド プロシージャを実行できます。  
+ RE_ADMIN_USERS ロールのユーザーだけでは、展開とエンティティへのアクセスの保護構成のテーブルを更新するストアド プロシージャを実行できます。 つまり、展開、展開解除、および保護の構成がすべて行われること、ルール エンジン管理者だけです。 RE_HOST_USERS ロールのユーザーは、SQL ルール ストアで他のストアド プロシージャを実行できます。  
   
- ルール エンジンのインストールの順序に関係なく、データベース アクセスがまだ許可されていない場合に、ルール エンジン構成のプロセスは、ルール エンジン更新サービスのアカウント メンバーシップに RE_HOST_USERS SQL ロールを与えます。 ただし、BizTalk を最初にインストールした後にルール エンジンをインストールすると、ホストの作成が既に行われているため、ホスト固有のユーザー グループは、ルール エンジン データベースの BTS_HOST_USERS SQL ロールに追加されません。 この手順を手動で実行する必要があります。  
+ ルール エンジンのインストールの順序に関係なく、ルール エンジンの構成プロセスは、それが既にデータベース アクセスできない場合、RE_HOST_USERS SQL ロールにルール エンジン更新サービスのアカウント メンバシップを付与します。 ただし、ルール エンジンがインストールされている場合、最初 BizTalk のインストール後、BizTalk、ホスト固有のユーザー グループは追加されませんルール エンジン データベースの BTS_HOST_USERS SQL ロールにホストの作成が既に完了したためです。 この手順を手動で実行する必要があります。  
   
 ## <a name="artifact-level-security"></a>アイテム レベルのセキュリティ  
- 既定のセキュリティ構成に加えて、ビジネス ルール エンジンも成果物でセキュリティを提供、ポリシーおよびボキャブラリ レベル。  
+ 既定のセキュリティ構成だけでなく、ビジネス ルール エンジンはまた、成果物でセキュリティを提供、ポリシーおよびボキャブラリ レベル。  
   
- 各ポリシーのバージョンまたは各ボキャブラリのバージョンには、関連する 1 つ以上の認証グループがあります。 認証グループは、Microsoft Windows ユーザー、SQL ユーザー、SQL ロール、および Windows グループの名前付きのリストです。それぞれ特定のアクセス レベルを持っています。  
+ 各ポリシーまたはボキャブラリのバージョンでは、関連付けられている 1 つまたは複数の認証グループがあります。 認証グループでは、Microsoft Windows ユーザー、SQL ユーザー、SQL ロール、および各種類で特定のアクセス レベルでの Windows グループの名前付きの一覧を示します。  
   
- 新しいポリシーまたはボキャブラリがルール ストアに作成されると、既定で、ポリシーまたはボキャブラリを作成したユーザーとルール エンジン管理者だけが、読み取り/実行および変更/削除の処理を行うことができます。 ルール エンジン管理者がある (プロセスは、ユーザーの資格情報で動作) ユーザーは、アクセス レベル、または別の操作を実行するための権限を構成することができます: 読み取り/実行、変更/削除、完全なアクセス許可、またはアクセス許可がありません。  
+ 新しいポリシーまたはボキャブラリがルール ストアに作成されると、し、ルール エンジン管理者を作成したユーザーのみが読み取り/実行と既定のアクセスの変更/削除します。 (プロセスは、ユーザーの資格情報で動作) ユーザーは、アクセス レベルやさまざまな操作を実行するための権限がある、ルール エンジン管理者を構成できます: 読み取り/実行、変更/削除、完全なアクセス許可、またはアクセス許可がありません。  
   
- 既定では、アイテム固有のセキュリティは無効です。 アイテム レベルのセキュリティは、現在、ユーザー インターフェイスを通じては設定できません。 ただし、ビジネス ルール エンジン管理者の資格情報を使用して、プログラムによって設定できます。 次のコードは、新しい認証を作成してグループをルール セットに関連付ける方法を示しています。  
+ 既定では、アイテム固有のセキュリティが有効になっていません。 アイテム レベルのセキュリティを設定することは、現在使用できるユーザー インターフェイスではありません。 ただし、設定できますプログラムでビジネス ルール エンジン管理者の資格情報を使用します。 次のコード フラグメントでは、新しい承認を作成してルール セットにグループを関連付ける方法を示します。  
   
 ```  
 RuleSet rs;  
@@ -83,7 +83,7 @@ RuleSetInfoCollection rsInfo = m_sqlRS.GetRuleSets("myRuleSet", RuleStore.Filter
 ```  
   
 > [!NOTE]
->  アイテム レベル 1 のセキュリティを使用すると、パフォーマンスが低下することがあります。ルール エンジンのインスタンスを返す前に、ポリシーが実行ごとにデータベース検索を行い、アプリケーションのアクセス レベルを評価する必要があるためです。  
+>  成果物レベル l のセキュリティを使用したことができます、ポリシーをルール エンジンのインスタンスを返す前に、アプリケーションのアクセス レベルを評価するには、各実行でデータベースの検索を行う必要があるために、パフォーマンスが低下します。  
   
 ## <a name="see-also"></a>参照  
- [ビジネス ルール エンジンの重要なセキュリティに関する注意事項](../core/important-security-notes-for-the-business-rule-engine.md)
+ [ビジネス ルール エンジンに関する重要なセキュリティ メモ](../core/important-security-notes-for-the-business-rule-engine.md)

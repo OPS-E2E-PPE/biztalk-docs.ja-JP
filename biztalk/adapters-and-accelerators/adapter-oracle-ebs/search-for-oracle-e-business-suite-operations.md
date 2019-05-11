@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9e861f23a13f6c3e7d5ac500de3b7750429a9cfd
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b6b2e55465d61448a88db025ab1343fa7dd4029c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36977211"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65374600"
 ---
 # <a name="search-for-oracle-e-business-suite-operations"></a>Oracle E-business Suite 操作の検索
 使用することができます、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]または[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]Oracle E-business Suite での特定の成果物を検索します。 さまざまなビューとその内容の検索がサポートされている方法を説明しています Oracle アイテムを検索するためのワイルドカード文字を使用できます。 このトピックを使用して検索する方法の情報を提供することも、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]または[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]します。  
@@ -27,7 +27,7 @@ ms.locfileid: "36977211"
 > [!NOTE]
 >  [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] 、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]参照操作については、検索するため、両方のコンポーネントは、同じトピックで説明すると、基本的に同じインターフェイスを提供します。  
   
- 詳細については、[Oracle E-business Suite アダプターを使用して、SharePoint と](../../adapters-and-accelerators/adapter-oracle-ebs/use-the-oracle-e-business-suite-adapter-with-sharepoint.md)を参照してください。  
+ 詳細については、次を参照してください。 [Oracle E-business Suite アダプターを使用して、SharePoint と](../../adapters-and-accelerators/adapter-oracle-ebs/use-the-oracle-e-business-suite-adapter-with-sharepoint.md)します。  
   
 ## <a name="prerequisites"></a>前提条件  
  対象の操作のメタデータを検索する前に、Oracle E-business Suite に接続する必要があります。 使用する時に、データベース、Oracle に接続する方法については、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]または[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]を参照してください[Visual Studio での Oracle E-business Suite への接続](../../adapters-and-accelerators/adapter-oracle-ebs/connect-to-the-oracle-e-business-suite-in-visual-studio.md)します。  
@@ -39,7 +39,7 @@ ms.locfileid: "36977211"
 |-----------------------|--------------------|  
 |_ (アンダースコア)|1 文字と一致します。<br /><br /> たとえば、<curses.h は AB、AC、AD と一致します。|  
 |% (割合)|0 個以上の文字と一致します。<br /><br /> たとえば、%a、AB ABC に一致します。|  
-|\ (エスケープ)|% と _ の特別な意味でのエスケープします。<br /><br /> たとえば、A\\_B A_B に一致します。|  
+|\ (escape)|% と _ の特別な意味でのエスケープします。<br /><br /> たとえば、A\\_B A_B に一致します。|  
   
 > [!NOTE]
 >  エスケープ文字は、ワイルドカードではなく、通常の文字として、ワイルドカードを解釈することを示すワイルドカード文字の前に挿入されている文字です。  

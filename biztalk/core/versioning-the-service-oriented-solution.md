@@ -1,5 +1,5 @@
 ---
-title: バージョン管理、サービス指向ソリューション |Microsoft ドキュメント
+title: バージョン管理、サービス指向ソリューション |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,19 +15,19 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: af1c5d1475fc37322be9a8483963bbfd1432fbb4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 34896f02ac6335c8f5041ca959b25fe9ab2716c3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22287642"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65393733"
 ---
 # <a name="versioning-the-service-oriented-solution"></a>バージョン管理、サービス指向ソリューション
-ソリューションのフロント エンドとして機能する 2 つのオーケストレーション**CustomerServiceReceiveSend**と**CustomerServiceNativeRequestResponse**、central、動作中のオーケストレーションを呼び出して**CustomerService**です。 オーケストレーションの呼び出しは、オーケストレーションを含むアセンブリのバージョン番号に依存します。 この 3 つのオーケストレーションはすべて同じアセンブリにあるので、バージョン管理の問題はありません。  
+ソリューションのフロント エンドとして機能する 2 つのオーケストレーション**CustomerServiceReceiveSend**と**CustomerServiceNativeRequestResponse**、中央の動作中のオーケストレーションを呼び出す**CustomerService**します。 オーケストレーションの呼び出しは、オーケストレーションを含むアセンブリのバージョン番号に依存します。 すべての 3 つのオーケストレーションは、同じアセンブリにあるために、バージョン管理の問題はありません。  
   
- また、オーケストレーションによって実装されるビジネス プロセスは、すぐに終了する非常に期間が短い要求 - 応答プロセスです。 したがって、バージョン管理、ビジネス プロセスの質問がこのソリューションでは発生しません-別のアセンブリの異なるバージョンに異なるオーケストレーションはありません。  
+ さらに、オーケストレーションによって実装されるビジネス プロセスは、すぐに終了する非常に短時間の要求-応答プロセスです。 したがって、バージョン管理、ビジネス プロセスの質問がこのソリューションでは発生しません-さまざまなバージョンでさまざまなアセンブリ内の別のオーケストレーションがありません。  
   
- ただし、オーケストレーションは、スキーマ アセンブリのスキーマを使用します。 スキーマを変更して別のバージョンとしてコンパイルした場合、新しいバージョンのスキーマ アセンブリでオーケストレーションを再コンパイルする必要があります。  
+ ただし、オーケストレーションでは、スキーマ アセンブリでスキーマを使用しないでください。 場合は、スキーマが変更され、別のバージョンにコンパイル、スキーマ アセンブリの新しいバージョンでオーケストレーションを再コンパイルする必要があります。  
   
 ## <a name="see-also"></a>参照  
- [指向ソリューションのサービスの開発](../core/developing-a-service-oriented-solution.md)
+ [開発、サービス指向ソリューション](../core/developing-a-service-oriented-solution.md)

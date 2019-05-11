@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10745 |Microsoft Docs'
+title: シングル サインオン:イベント 10745 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4bb3afa69e4a959b189347ac20b71acfc58208f4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1d75304b54a9ebd2484b36273a165cf8fa1cc998
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36984755"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395502"
 ---
-# <a name="single-sign-on-event-10745"></a>シングル サインオン: イベント 10745
+# <a name="single-sign-on-event-10745"></a>シングル サインオン:イベント 10745
 ## <a name="details"></a>詳細  
 
 |                 |                                                                                                                                              |
@@ -28,9 +28,9 @@ ms.locfileid: "36984755"
 | 製品バージョン |                                          [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                                          |
 |    イベント ID     |                                                                    10745                                                                     |
 |  イベント ソース   |                                                                    ENTSSO                                                                    |
-|    コンポーネント    |                                                                     N\A                                                                      |
+|    コンポーネント    |                                                                     該当なし                                                                      |
 |  シンボル名  |                                                          SSO_ERROR_ADAPTER_OFFLINE                                                           |
-|  メッセージ テキスト   | アダプターがオフラインです。%r<br /><br /> 追跡 ID: %1 %r<br /><br /> アダプター: % 2 %r<br /><br /> エラー メッセージ: % 3 %r<br /><br /> エラー コード: %4 |
+|  メッセージ テキスト   | アダプターが offline.%r<br /><br /> 追跡 ID: %1 %r<br /><br /> アダプター: % 2 %r<br /><br /> エラー メッセージ: % 3 %r<br /><br /> エラー コード: %4 |
 
 ## <a name="explanation"></a>説明  
  このエラー イベントは、指定されたアダプターがオフラインであることを示します。  
@@ -38,9 +38,9 @@ ms.locfileid: "36984755"
 ## <a name="user-action"></a>ユーザーの操作  
  このエラーを解決するには、以下の 1 つ以上の操作を実行します。  
 
-- 関連するエラーについては、システムおよびアプリケーションのイベント ログを確認します。  
+- 関連付けられているエラーのシステムおよびアプリケーション イベント ログを確認します。  
 
-- 外部アダプターでエラーを調べます。  
+- 外部アダプターでエラーを確認します。  
 
   詳細については、次のリソースを参照してください。  
 

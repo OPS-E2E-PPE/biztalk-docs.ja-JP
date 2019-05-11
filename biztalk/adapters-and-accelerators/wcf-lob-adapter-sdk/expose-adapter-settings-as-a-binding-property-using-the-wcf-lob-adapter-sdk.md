@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a51833c9f1a27185654bf8f0ddaca0fdd8ac0b57
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: bae73accfb6e65624f672ce1674b9e0429b6f3da
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37002339"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65363636"
 ---
 # <a name="expose-adapter-settings-as-a-binding-property-using-the-wcf-lob-adapter-sdk"></a>WCF LOB Adapter SDK を使用してバインドのプロパティとしてアダプターの設定を公開します。
 [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]接続プール、メタデータのキャッシュ、およびその他のアダプターの動作を構成するためのさまざまなクラスで定義されたプロパティを使用します。 このトピックでは、アダプターのコンシューマーが、構成ファイルで設定できるようにバインドのプロパティとしてこれらのプロパティを表示する方法について説明します。  
@@ -50,4 +50,4 @@ ms.locfileid: "37002339"
 8. Visual Studio での**ファイル** メニューのをクリックして**すべて保存**します。  
   
 ## <a name="see-also"></a>参照  
- [チュートリアル 1: エコー アダプターを開発する](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-1-develop-the-echo-adapter.md)[開発アクティビティ](../../esb-toolkit/development-activities.md)
+ [チュートリアル 1:エコー アダプターを開発](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-1-develop-the-echo-adapter.md)[開発アクティビティ](../../esb-toolkit/development-activities.md)

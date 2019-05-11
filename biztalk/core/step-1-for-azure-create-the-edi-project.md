@@ -1,5 +1,5 @@
 ---
-title: '手順 1 (Azure 用): EDI プロジェクトを作成する |Microsoft Docs'
+title: 手順 1 (Azure 用):EDI プロジェクトを作成する |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ec854bc6edecb59e9cb721c71dafa09c3e0bc2dc
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d0428ae4c288234607c0de3372b8515de162339d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37018132"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65392888"
 ---
-# <a name="step-1-for-azure-create-the-edi-project"></a>手順 1 (Azure 用): EDI プロジェクトを作成します。
+# <a name="step-1-for-azure-create-the-edi-project"></a>手順 1 (Azure 用):EDI プロジェクトを作成します。
 このセクションでは、Contoso が、[!INCLUDE[appfabricintegration](../includes/appfabricintegration-md.md)] の 2012 年 4 月リリース版を使用して EDI プロジェクトを作成します。 プロジェクトの一部として、Contoso は以下の項目を追加します。  
   
 - 内部の販売注文スキーマ (**ECommerceSalesOrder.xsd**) を X12 840 EDI 販売注文スキーマに変換されます。 Contoso は、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] で受信した後のメッセージの処理に内部スキーマを使用します。  
@@ -81,7 +81,7 @@ ms.locfileid: "37018132"
     </xs:schema>  
     ```  
   
-     スキーマの構築にはスキーマ エディターを使用することができます。 詳細については、[BizTalk エディターを使用して](../core/using-biztalk-editor.md)を参照してください。  
+     スキーマの構築にはスキーマ エディターを使用することができます。 詳細については、次を参照してください。 [BizTalk エディターを使用して](../core/using-biztalk-editor.md)します。  
   
 4.  スキーマを保存します。  
   

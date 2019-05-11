@@ -12,18 +12,18 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6f436c9c3193a895d38df630c1bec88abfadc12c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ca67c8637f3738169e9818795eebefd9faeabe70
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37022888"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65390007"
 ---
 # <a name="creating-affiliate-applications"></a>関連アプリケーションの作成
 次の手順では、関連アプリケーションとシングル サインオン (SSO) の使用を開始する方法を示します。  
   
 > [!NOTE]
->  SSO エラーが発生した場合は、ときに使用したドメイン アカウントを BizTalk Server を構成するように、エンタープライズ SSO サービスの機能に影響を確認します。 SSO はドメイン アカウントでのみ機能します。  
+>  SSO エラーが発生した場合は、ときに使用したドメイン アカウントを BizTalk Server を構成するように、エンタープライズ SSO サービスの機能に影響を確認します。 ドメイン アカウントでの SSO のみ機能します。  
   
 ## <a name="create-an-affiliate-application"></a>関連アプリケーションを作成します。  
   
@@ -31,9 +31,9 @@ ms.locfileid: "37022888"
   
 2. コマンド プロンプトでは、エンタープライズ シングル サインオン フォルダーにディレクトリを変更します。  
   
-    以下に例を示します。  
+    例 :  
   
-    **C:\Program files \common files \enterprise でシングル サインオン >**  
+    **C:\Program Files\Common Files\Enterprise Single Sign-On>**  
   
 3. エンタープライズ シングル サインオン コマンドを使用します。 コマンドの一覧は、使用、 **-ヘルプ**スイッチします。  
   
@@ -47,7 +47,7 @@ ms.locfileid: "37022888"
   
    - C:\SSOtest はアプリケーション XML を含むフォルダーです。  
   
-   - AffiliateApplication.xml は、自分で作成した、サインオン情報を含むアプリケーション XML です。  
+   - AffiliateApplication.xml は、アプリケーションを作成したシングル サインオン情報を含む XML です。  
   
      以下に例を示します。  
   
@@ -70,17 +70,17 @@ ms.locfileid: "37022888"
   
 ## <a name="create-single-sign-on-tickets"></a>シングル サインオン チケットを作成します。  
   
-1.  次のコマンドを入力し、SSO チケットの動作を制御します。  
+1.  SSO チケットの動作を制御する次のコマンドを入力します。  
   
      `ssomanage.exe -tickets yes yes`  
   
-2.  次の質問に回答します。  
+2.  質問に答えます。  
   
      `ssomanage -tickets <allowed yes | no> <validate yes | no>`  
   
      完了時に確認メッセージが表示されます。  
   
-     **このコンピューターで使用中の SSO。操作が完了しました。**  
+     **このコンピューターでは、SSO サーバーを使用します。操作が完了しました。**  
   
 ## <a name="enable-the-affiliate-application-xml"></a>関連アプリケーション XML を有効にします。  
   
@@ -88,11 +88,11 @@ ms.locfileid: "37022888"
   
      `ssomanage -enableapp PeopleSoftApp`  
   
-2.  次のコマンドを入力してアプリケーションを一覧表示し、アプリケーションが作成されたことを確認します。  
+2.  アプリケーションを一覧表示し、アプリケーションが作成されたことを確認するのには、次のコマンドを入力します。  
   
      `ssoclient.exe –listapps`  
   
-     使用可能な関連アプリケーションが一覧内に表示されます。  
+     使用可能な関連アプリケーションは、一覧に表示されます。  
   
      **Ibi \yourid-peoplesoftapp に使用可能なアプリケーション**  
   
@@ -100,7 +100,7 @@ ms.locfileid: "37022888"
   
      `ssoclient.exe -setcredentials PeopleSoftApp`  
   
-4.  プロンプトで、ユーザー名とパスワードを入力します。 PeopleSoftApp 関連アプリケーションのログオン資格情報を入力します。  
+4.  ユーザー名と、プロンプトでパスワードを入力します。 PeopleSoftApp 関連アプリケーションのログオン資格情報を入力します。  
   
      たとえば、ユーザー id と、SSO サーバーを使用してシステムに入力するには、そのユーザーのパスワードを入力します。  
   
@@ -108,9 +108,9 @@ ms.locfileid: "37022888"
   
     -   **パスワード:** `******`  
   
-    -   **パスワードのパスワード:** `******`  
+    -   **確認しますか。パスワード:** `******`  
   
-5.  関連アプリケーションが [BizTalk Adapter for PeopleSoft Enterprise トランスポートのプロパティ] ダイアログ ボックスに表示されます。  
+5.  関連アプリケーションは、BizTalk Adapter for PeopleSoft Enterprise トランスポートのプロパティ ダイアログ ボックスに表示されます。  
   
 ## <a name="see-also"></a>参照  
  [アダプターのセキュリティ保護](../core/security-in-biztalk-adapter-for-peoplesoft-enterprise.md)

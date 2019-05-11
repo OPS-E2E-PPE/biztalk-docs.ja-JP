@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bce48244f67fd757fae5c2657634274625677850
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 298949e7d8f5fa30578f98cfd41dbab158893396
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36996619"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65394608"
 ---
 # <a name="planning-for-database-testing"></a>データベースのテストの計画
 Ultimate の成功または失敗のソリューションで目立つようを図、BizTalk ソリューションの徹底的な負荷をテストします。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]パフォーマンスのためのパフォーマンスに依存しているが、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]データベース、テストしソリューションのテストに頻繁に重点を置いています BizTalk の最適化、および実行しているコンピューターの最適化[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]が収容[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]データベース。  

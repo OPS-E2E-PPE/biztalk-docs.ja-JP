@@ -1,5 +1,5 @@
 ---
-title: XLANG のデータ タイプ |Microsoft ドキュメント
+title: Xlang-s データ型 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -18,29 +18,29 @@ caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c21ed77c5fdd56485514d17ed75e921c63a56212
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6cc0d20336169ec1198c21dcbe932ff5a823a568
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22290442"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65394712"
 ---
-# <a name="xlang-s-data-types"></a>XLANG のデータ型
-XLANG/s は、C# の対応する型のリフレクションである、値の標準型を定義します。 これらが含まれます**ブール**、**バイト**、 **Char**、 **Decimal**、**二重**、 **Int16**、 **Int32**、 **Int64**、 **SByte**、**単一**、**文字列**、 **UInt16**、 **UInt32**、および**UInt64**です。 XLANG/s は 1 次元配列をサポートしますが、配列リテラルをサポートしません。  
+# <a name="xlang-s-data-types"></a>Xlang-s データ型
+XLANG/秒の反射効果が標準値の型を定義します。 そのC#の対応します。 以下の**ブール**、**バイト**、 **Char**、 **Decimal**、**二重**、 **Int16**、 **Int32**、 **Int64**、 **SByte**、**単一**、**文字列**、 **UInt16**、 **UInt32**、および**UInt64**します。 XLANG/秒では、1 次元の配列をサポートしていますが、配列リテラルがサポートされません。  
   
- XLANG/s では、メッセージ処理に対するさまざまなサポートも提供されます。 メッセージは、スキーマ、.NET クラス、Web メッセージの種類 (WSDL)、または複雑なメッセージの種類に基づいて作成できます。 XLANG/s は、次の複合データ型をサポートします。  
+ XLANG/秒では、メッセージの処理の豊富なサポートもあります。 メッセージは、スキーマ、.NET クラス、Web メッセージの種類 (WSDL)、または複雑なメッセージの種類に基づいて作成できます。 XLANG/秒には、次の複合データ型がサポートされています。  
   
--   **messagetype です。** このデータ型は、データ要素および XSD ベース メッセージの組み合わせとして定義されるマルチパート メッセージの種類と、メソッド メッセージの種類 (クラスまたはインターフェイスのメソッドの署名形式に一致するメッセージ) を定義します。  
+-   **メッセージの種類。** このデータ型は、データ要素および XSD ベースのメッセージの組み合わせとして定義されているマルチパート メッセージの種類およびメソッド メッセージの種類 (クラスまたはインターフェイスのメソッドのシグネチャの形式に一致するメッセージ) を定義します。  
   
--   **porttype。** このデータ型は、その型のポート インスタンスが動作できるポートの操作のコレクションを定義します。  
+-   **porttype。** このデータ型は、その種類のポートのインスタンスが対処できるポート operations のコレクションを定義します。  
   
--   **correlationsettype です。** このデータ型は、関連付けセット変数のインスタンスで使用されるデータを定義します。 関連付けセットのデータは、システム内を移動するメッセージがビジネス プロセスの適切な実行中インスタンスに送信されるようにするためのルーティング メカニズムです。 たとえば、注文書が処理のために取引先に送信された場合は、戻り時に、その注文書に対応するビジネス プロセスの正しいインスタンスが呼び出されることが重要になります。  
+-   **correlationsettype.** このデータ型は、関連付けセット変数の任意のインスタンスで使用されるデータを定義します。 関連付けセットのデータは、システムを移動するメッセージがビジネス プロセスの適切な実行中のインスタンスにディスパッチされることを確認するためのルーティング メカニズムです。 たとえば、注文書を処理するため、取引先に送信する場合、その発注に対応するビジネス プロセスの適切なインスタンスが、戻り値で呼び出される命令型は。  
   
--   **servicelinktype です。** このデータ型のセットを定義する**porttype**ビジネス プロセスで使用するポートの論理的な一貫性のグループを形成する値。 サービス リンクを使用することによって、実行時にポートのグループの動的な割り当てを可能にする強力なメカニズムが提供されます。 これによって、複数の取引先とやり取りするために使用できる 1 つのビジネス プロセスを定義できます。  
+-   **servicelinktype.** このデータ型のセットを定義する**porttype**ビジネス プロセスで使用されるポートの論理的に一貫したグループを形成する値。 サービス リンクの使用は、実行時にポートのグループに動的に割り当てることができる強力なメカニズムです。 これにより、複数の取引先パートナーとの対話に使用できる 1 つのビジネス プロセスを定義することができます。  
   
 ## <a name="see-also"></a>参照  
- [XLANG のステートメント](../core/xlang-s-statements.md)   
- [XLANG の変数および演算子](../core/xlang-s-variables-and-operators.md)   
- [XLANG の式](../core/xlang-s-expressions.md)   
- [XLANG s の予約語](../core/xlang-s-reserved-words.md)   
- [XLANG-s BPEL4WS 型への変換から](../core/xlang-s-to-bpel4ws-type-conversions.md)
+ [Xlang-s ステートメント](../core/xlang-s-statements.md)   
+ [Xlang-s の変数および演算子](../core/xlang-s-variables-and-operators.md)   
+ [Xlang-s 式](../core/xlang-s-expressions.md)   
+ [Xlang-s の予約語](../core/xlang-s-reserved-words.md)   
+ [XLANG-s から BPEL4WS への種類の変換](../core/xlang-s-to-bpel4ws-type-conversions.md)

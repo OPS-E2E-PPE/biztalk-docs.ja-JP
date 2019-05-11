@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d9dd7bdeac01660cc95c0992ef01028c91cc75df
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: bc197479f20453225d70d425a0f59290c79e5d84
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36988443"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65280478"
 ---
 # <a name="trading-partner-agreements"></a>取引先アグリーメント
 Microsoft[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]取引先アグリーメント (TPA) して、パートナーとメッセージ交換を処理します。 TPA は、2 つのパートナー間のメッセージ処理と検証の詳細を定義します。 TPA は、2 つのパートナーが PIP (Partner Interface Process) を実装する方法を定義します。PIP は、特定のメッセージの種類のすべての実装に対するメッセージ コンテンツを指定します。 また、パートナーがインターネット経由でメッセージを交換する方法の詳細も定義します。  
@@ -47,18 +47,18 @@ Microsoft[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentve
   
  この設定は、標準 (RosettaNet または CIDX) を指定し、ホーム組織と取引先のロールの一般的な特徴も指定します。 RosettaNet 以外のコンテンツのプロセス構成も作成できます。 そのためには、コンテンツのスキーマを作成し、スキーマに基づいて構成を作成する必要があります。 RosettaNet 以外のコンテンツの値を入力メッセージ標準、標準のバージョン、およびペイロード バインド ID の設定、**全般** タブで、**プロセス構成設定** ダイアログ ボックス。 RosettaNet 以外のコンテンツは、RNIF 2.0 のみを使用して転送できます。  
   
- これらのプロパティを設定する方法についての詳細については、[を作成またはプロセス構成の編集方法](../../adapters-and-accelerators/accelerator-rosettanet/how-to-create-or-edit-a-process-configuration.md)を参照してください。  
+ これらのプロパティを設定する方法についての詳細については、次を参照してください。[を作成またはプロセス構成の編集方法](../../adapters-and-accelerators/accelerator-rosettanet/how-to-create-or-edit-a-process-configuration.md)します。  
   
 ### <a name="home-organization"></a>[ホーム組織]  
- この設定は、メッセージを開始するホーム組織を定義します。 設定には、グローバル ビジネス識別子 (GBI) (ビジネスの一意の識別子である DUN 番号) と、一部のトランザクションに必要な連絡先情報が含まれます。 これらのプロパティを設定する方法についての詳細については、[を作成または編集、ホーム組織](../../adapters-and-accelerators/accelerator-rosettanet/creating-or-editing-a-home-organization.md)を参照してください。  
+ この設定は、メッセージを開始するホーム組織を定義します。 設定には、グローバル ビジネス識別子 (GBI) (ビジネスの一意の識別子である DUN 番号) と、一部のトランザクションに必要な連絡先情報が含まれます。 これらのプロパティを設定する方法についての詳細については、次を参照してください。[を作成または編集、ホーム組織](../../adapters-and-accelerators/accelerator-rosettanet/creating-or-editing-a-home-organization.md)します。  
   
 ### <a name="partner-organization"></a>取引先組織  
- これらの設定を受信してメッセージに応答するパートナーを定義します。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] ホーム組織との契約を持つ有効なパーティから各着信 RNIF メッセージが発生したことを検証します。 ない場合は、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]を認証し、メッセージを処理は失敗します。 これらのプロパティを設定する方法についての詳細については、[を作成または編集するパートナー](../../adapters-and-accelerators/accelerator-rosettanet/creating-or-editing-a-partner.md)を参照してください。  
+ これらの設定を受信してメッセージに応答するパートナーを定義します。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] ホーム組織との契約を持つ有効なパーティから各着信 RNIF メッセージが発生したことを検証します。 ない場合は、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]を認証し、メッセージを処理は失敗します。 これらのプロパティを設定する方法についての詳細については、次を参照してください。[を作成または編集するパートナー](../../adapters-and-accelerators/accelerator-rosettanet/creating-or-editing-a-partner.md)します。  
   
 ### <a name="agreements-trading-partner-agreement-variables"></a>[アグリーメント] \(取引先アグリーメント変数)  
- このアグリーメントは、取引先とのすべての取引関係を指定します。 アグリーメントは、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 管理コンソールの定義に基づいてプロセス構成設定の表示コードを指定します。 RNIF バージョン、ポート URL、プロトコル設定 (エンコーディングと暗号化)、およびその他の変数も指定します。 これらのプロパティを設定する方法についての詳細については、[を作成または編集するアグリーメント](../../adapters-and-accelerators/accelerator-rosettanet/creating-or-editing-an-agreement.md)を参照してください。  
+ このアグリーメントは、取引先とのすべての取引関係を指定します。 アグリーメントは、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 管理コンソールの定義に基づいてプロセス構成設定の表示コードを指定します。 RNIF バージョン、ポート URL、プロトコル設定 (エンコーディングと暗号化)、およびその他の変数も指定します。 これらのプロパティを設定する方法についての詳細については、次を参照してください。[を作成または編集するアグリーメント](../../adapters-and-accelerators/accelerator-rosettanet/creating-or-editing-an-agreement.md)します。  
   
- 管理コンソールの詳細については、[構成、証明書、データベース、およびセキュリティを管理](manage-configuration-certificates-databases-security.md)を参照してください。 開発者用リファレンスの Microsoft.Solutions.BTARN.ConfigurationManager 名前空間のクラスとインターフェイスを使用して、プログラムによってこの設定に読み取り専用でアクセスすることもできます。  
+ 管理コンソールの詳細については、次を参照してください。[構成、証明書、データベース、およびセキュリティを管理](manage-configuration-certificates-databases-security.md)します。 開発者用リファレンスの Microsoft.Solutions.BTARN.ConfigurationManager 名前空間のクラスとインターフェイスを使用して、プログラムによってこの設定に読み取り専用でアクセスすることもできます。  
   
 ## <a name="see-also"></a>参照  
  [BizTalk Server に BizTalk Accelerator for RosettaNet の追加](../../adapters-and-accelerators/accelerator-rosettanet/what-biztalk-accelerator-for-rosettanet-adds-to-biztalk-server.md)   

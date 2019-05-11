@@ -12,12 +12,12 @@ caps.latest.revision: 30
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 30f76d18f79206fff217ab080c9e2b052aa4f73b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4bb61feb6b5c100a5cb99178029f3dedd3c3fc3b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36971099"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65370030"
 ---
 # <a name="browse-search-and-get-metadata-for-sql-operations-using-the-sql-adapter"></a>参照、検索、および SQL アダプターを使用して SQL 操作のメタデータを取得
 このセクションを使用する方法について説明します、 [!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]、 [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]、および[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]します。 これらを使用して[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]ことができます、コンポーネント。  
@@ -62,14 +62,14 @@ ms.locfileid: "36971099"
 -   **通知**から SQL Server クエリ通知を受信する操作。  
   
 > [!NOTE]
->  アダプターもサポートしています、 **XmlPolling** SELECT ステートメントと FOR XML 句を含むストアド プロシージャを使用して SQL Server データベースでのポーリングを有効にする操作を受信します。 ただし、アダプターは、この特定の受信操作を公開しません。 XmlPolling の詳細については、[と FOR XML 句から BizTalk Server を使用した SQL SELECT ステートメントを使用してポーリング メッセージを受信](../../adapters-and-accelerators/adapter-sql/receive-polling-messages-using-select-with-for-xml-clause-with-the-sql-adapter.md)を参照してください。  
+>  アダプターもサポートしています、 **XmlPolling** SELECT ステートメントと FOR XML 句を含むストアド プロシージャを使用して SQL Server データベースでのポーリングを有効にする操作を受信します。 ただし、アダプターは、この特定の受信操作を公開しません。 XmlPolling の詳細については、次を参照してください。[と FOR XML 句から BizTalk Server を使用した SQL SELECT ステートメントを使用してポーリング メッセージを受信](../../adapters-and-accelerators/adapter-sql/receive-polling-messages-using-select-with-for-xml-clause-with-the-sql-adapter.md)します。  
   
- これらの操作の詳細については、[アダプターを使用して SAP システムへの接続](../../adapters-and-accelerators/adapter-sap/connect-to-an-sap-system-using-the-adapter.md)を参照してください。  
+ これらの操作の詳細については、次を参照してください。[アダプターを使用して SAP システムへの接続](../../adapters-and-accelerators/adapter-sap/connect-to-an-sap-system-using-the-adapter.md)します。  
   
 > [!NOTE]
 >  使用して、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]または[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]、Windows インターフェイスを使用して、カテゴリと操作のノードを参照することができます。  
   
- 参照メタデータの詳細については、[SQL アダプタを使用して Visual Studio で SQL Server 操作のメタデータを取得](../../adapters-and-accelerators/adapter-sql/get-metadata-for-sql-server-operations-in-visual-studio-using-the-sql-adapter.md)を参照してください。  
+ 参照メタデータの詳細については、次を参照してください。 [SQL アダプタを使用して Visual Studio で SQL Server 操作のメタデータを取得](../../adapters-and-accelerators/adapter-sql/get-metadata-for-sql-server-operations-in-visual-studio-using-the-sql-adapter.md)します。  
   
 ##### <a name="to-browse-outbound-operations-on-sql-server"></a>SQL Server に対する送信操作を参照するには  
   
@@ -87,7 +87,7 @@ ms.locfileid: "36971099"
     ![ルート レベルの操作とカテゴリで利用可能な](../../adapters-and-accelerators/adapter-sql/media/3eef7b99-da8e-4b98-8b14-8e48fd7b3801.gif "3eef7b99-da8e-4b98-8b14-8e48fd7b3801")  
   
    > [!NOTE]
-   >  ルート レベルでは、ExecuteReader、ExecuteScalar、ExecuteNonQuery などの標準の SQL Server 操作を入手できます。 これらの操作の詳細については、[ExecuteNonQuery、ExecuteReader、ExecuteScalar 操作のサポート](../../adapters-and-accelerators/adapter-oracle-ebs/support-for-executenonquery-executereader-and-executescalar-operations.md)を参照してください。  
+   >  ルート レベルでは、ExecuteReader、ExecuteScalar、ExecuteNonQuery などの標準の SQL Server 操作を入手できます。 これらの操作の詳細については、次を参照してください。 [ExecuteNonQuery、ExecuteReader、ExecuteScalar 操作のサポート](../../adapters-and-accelerators/adapter-oracle-ebs/support-for-executenonquery-executereader-and-executescalar-operations.md)します。  
   
 4. SQL Server データベースで使用できる手順を表示するには、クリックして、**プロシージャ**ノード。 次の図に、**プロシージャ**でノードを選択、**カテゴリを選択** ボックスと対応する手順を次に、**ボックスの利用可能なカテゴリと操作**.  
   
@@ -159,7 +159,7 @@ ms.locfileid: "36971099"
 > [!NOTE]
 >  エスケープ文字は、ワイルドカードではなく、通常の文字として、ワイルドカードを解釈することを示すために、ワイルドカード文字の前に配置する文字です。  
   
- 詳細については、[SQL アダプタを使用して Visual Studio で SQL Server 操作のメタデータを取得](../../adapters-and-accelerators/adapter-sql/get-metadata-for-sql-server-operations-in-visual-studio-using-the-sql-adapter.md)を参照してください。  
+ 詳細については、次を参照してください。 [SQL アダプタを使用して Visual Studio で SQL Server 操作のメタデータを取得](../../adapters-and-accelerators/adapter-sql/get-metadata-for-sql-server-operations-in-visual-studio-using-the-sql-adapter.md)します。  
   
  SQL Server を使用してメタデータを検索する、 [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]、次の手順に従います。  
   
@@ -186,7 +186,7 @@ ms.locfileid: "36971099"
  使用することができます、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]または[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]SQL Server のアイテムの選択したスキーマを生成します。 参照を呼び出したいアーティファクトの検索し、それらの成果物のスキーマを生成し、SQL Server に、スキーマに準拠したメッセージを送信できます。  
   
 > [!NOTE]
->  そのカテゴリのサブ-ツリー内のすべての操作を取得するカテゴリ ノードを選択するなどを選択 (テーブルのすべての操作のスキーマの生成) をテーブル全体またはテーブル (たとえば、Insert および Delete) の特定の操作を選択にテーブルに対する操作のみのスキーマを生成します。 ノードの詳細については、[メタデータ ノード Id](../../adapters-and-accelerators/adapter-sql/metadata-node-ids2.md)を参照してください。  
+>  そのカテゴリのサブ-ツリー内のすべての操作を取得するカテゴリ ノードを選択するなどを選択 (テーブルのすべての操作のスキーマの生成) をテーブル全体またはテーブル (たとえば、Insert および Delete) の特定の操作を選択にテーブルに対する操作のみのスキーマを生成します。 ノードの詳細については、次を参照してください。[メタデータ ノード Id](../../adapters-and-accelerators/adapter-sql/metadata-node-ids2.md)します。  
   
 #### <a name="to-generate-schema-for-sql-server-artifacts"></a>SQL Server のアイテムのスキーマを生成するには  
   
@@ -219,7 +219,7 @@ ms.locfileid: "36971099"
    >  使用する場合、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]既定では、ファイルが特定の名前付け規則を作成、SQL Server アーティファクトのメタデータを生成します。 生成された WSDL が含まれています、 **fileNameHint** XSD ファイルに割り当てる必要がある名前を含む注釈タグ。 たとえば、テーブル操作のスキーマ ファイルのファイル名のヒントは TableOperation 規則に従います。\<スキーマ\>.\<tablename\>します。 生成される XSD ファイルの名前をカスタマイズする場合は、プレフィックスを行うことができます、**ファイル名のプレフィックス**ボックス。 最後に、XSD ファイルの名前はファイル名のプレフィックス + fileNameHint + (必要な場合、ファイル名が一意であることを確認する) の一意の整数に到着します。  
    > 
    > [!NOTE]
-   >  [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]ときに指定されたバインドのプロパティを含むバインド ファイル (XML ファイル) も作成操作と操作を呼び出すための SOAP アクションのスキーマを生成します。 このバインド ファイルをインポートすることができます、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]接続 URI のアダプターのポート、バインドのプロパティおよび SOAP アクションは、WCF カスタム ポートまたは BizTalk SQL を作成する管理コンソールで設定します。 詳細については、[SQL アダプターを使用するポートのバインド ファイルを使用して物理的なポート バインドを構成する](../../adapters-and-accelerators/adapter-sql/configure-a-physical-port-binding-using-a-port-binding-file-to-sql-adapter.md)を参照してください。
+   >  [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]ときに指定されたバインドのプロパティを含むバインド ファイル (XML ファイル) も作成操作と操作を呼び出すための SOAP アクションのスキーマを生成します。 このバインド ファイルをインポートすることができます、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]接続 URI のアダプターのポート、バインドのプロパティおよび SOAP アクションは、WCF カスタム ポートまたは BizTalk SQL を作成する管理コンソールで設定します。 詳細については、次を参照してください。 [SQL アダプターを使用するポートのバインド ファイルを使用して物理的なポート バインドを構成する](../../adapters-and-accelerators/adapter-sql/configure-a-physical-port-binding-using-a-port-binding-file-to-sql-adapter.md)します。
   
     SQL Server のアイテムのメタデータが正常に生成されました。 メタデータを使用すると、特定の操作を実行するのに SQL Server にメッセージを送信します。 参照してください[SQL アダプターを使用して開発の BizTalk アプリケーション](../../adapters-and-accelerators/adapter-sql/develop-biztalk-applications-using-the-sql-adapter.md)これらの操作を実行する方法の詳細について。  
   
@@ -244,7 +244,7 @@ ms.locfileid: "36971099"
     ![WCF クライアントまたはサービス コントラクトの生成](../../adapters-and-accelerators/adapter-sql/media/sql-adap-add-adap-serv-ref.gif "sql_adap_add_adap_serv_ref")  
   
    > [!IMPORTANT]
-   >  によって送信操作 (またはカテゴリ) を選択で、複数の 1 つの WCF クライアント クラスを生成できます。 詳細については、[SQL Server のアイテムの WCF クライアントまたは WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-sql/generate-a-wcf-client-or-wcf-service-contract-for-sql-server-artifacts.md)を参照してください。  
+   >  によって送信操作 (またはカテゴリ) を選択で、複数の 1 つの WCF クライアント クラスを生成できます。 詳細については、次を参照してください。 [SQL Server のアイテムの WCF クライアントまたは WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-sql/generate-a-wcf-client-or-wcf-service-contract-for-sql-server-artifacts.md)します。  
   
 4. ほとんどのシナリオで、既定のシリアル化オプションで十分です。ただし、必要な場合は、生成されたコードに関するいくつかの側面と使用されるシリアライザーの型を制御できます。 これらのオプションを設定するには  
   
@@ -258,9 +258,9 @@ ms.locfileid: "36971099"
   
       ![高度なオプションが既定の設定をボックス](../../adapters-and-accelerators/adapter-oracle-database/media/r2-net-adapters-oracle-msb-advanced-options.gif "R2_NET_Adapters_Oracle_MSB_Advanced_Options")  
   
-      オプションで構成できる、**詳細オプション**ServiceModel メタデータ ユーティリティ ツール (svcutil.exe) を使用する場合は、ボックスはいくつかの使用可能なオプションに相当します。 これらのオプションの詳細については、[ServiceModel メタデータ ユーティリティ ツール (Svcutil.exe)](https://msdn.microsoft.com/library/aa347733.aspx)を参照してください。 
+      オプションで構成できる、**詳細オプション**ServiceModel メタデータ ユーティリティ ツール (svcutil.exe) を使用する場合は、ボックスはいくつかの使用可能なオプションに相当します。 これらのオプションの詳細については、次を参照してください。 [ServiceModel メタデータ ユーティリティ ツール (Svcutil.exe)](https://msdn.microsoft.com/library/aa347733.aspx)します。 
   
-5. **[OK]** をクリックします。 [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] WCF クライアント クラス (または WCF サービスのインターフェイス) を保存し、操作と、プロジェクト ディレクトリで選択したカテゴリのヘルパー コード。 既定では、構成ファイルも保存されます。 受信と送信操作の若干異なるファイルが生成されます。詳細については、[SQL Server のアイテムの WCF クライアントまたは WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-sql/generate-a-wcf-client-or-wcf-service-contract-for-sql-server-artifacts.md)を参照してください。  
+5. **[OK]** をクリックします。 [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] WCF クライアント クラス (または WCF サービスのインターフェイス) を保存し、操作と、プロジェクト ディレクトリで選択したカテゴリのヘルパー コード。 既定では、構成ファイルも保存されます。 受信と送信操作の若干異なるファイルが生成されます。詳細については、次を参照してください。 [SQL Server のアイテムの WCF クライアントまたは WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-sql/generate-a-wcf-client-or-wcf-service-contract-for-sql-server-artifacts.md)します。  
   
    記載されている任意のノードを選択することができます、**利用可能なカテゴリと操作**ボックス。 カテゴリ ノードを選択する場合は、すべてのノードとそのサブ ノードで使用可能な操作が選択されます。 たとえば、Employee テーブルの表示操作のすべての WCF クライアントを生成するには、従業員ノードを選択できます。  
   

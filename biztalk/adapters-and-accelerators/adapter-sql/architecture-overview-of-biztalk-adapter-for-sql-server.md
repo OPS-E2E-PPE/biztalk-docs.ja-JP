@@ -12,12 +12,12 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 37b5a21380b3883967e4478940ee7abbee6760c2
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f837105c816124163bacec0dc15e96544d294dce
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36995491"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65370281"
 ---
 # <a name="architecture-overview-of-biztalk-adapter-for-sql-server"></a>BizTalk Adapter for SQL Server のアーキテクチャの概要
 [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]は、[!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)]カスタム バインドします。 このバインディングには、SQL Server データベースとの通信を実現する 1 つのカスタム トランスポート バインド要素が含まれています。 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]によってラップされて、[!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)]実行時間とを介してアプリケーションに公開されて、[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]チャネル アーキテクチャ。 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] ADO.NET を使用して、SQL Server データベースと通信します。  
@@ -69,7 +69,7 @@ ms.locfileid: "36995491"
 ## <a name="adonet"></a>ADO.NET  
  [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] ADO.NET を使用して、SQL Server データベースに接続します。 ADO.NET は、SQL Server などのデータ ソースに一貫してアクセスを提供し、取得、処理、およびデータ ソース内のデータの変更を容易にします。 詳細をご覧ください[ADO.NET](https://msdn.microsoft.com/library/e80y5yhx.aspx)します。
   
- SQL クライアントでは、SQL Server データベースへの接続を提供します。 接続 URI を提供することで、SQL Server データベースへの接続を確立する、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]します。 この接続の URI には、SQL Server がインストールされているコンピューターの名前とデータベースの名前。 接続 URI の詳細については、[SQL Server への接続を作成する](../../adapters-and-accelerators/adapter-sql/create-a-connection-to-sql-server.md)を参照してください。  
+ SQL クライアントでは、SQL Server データベースへの接続を提供します。 接続 URI を提供することで、SQL Server データベースへの接続を確立する、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]します。 この接続の URI には、SQL Server がインストールされているコンピューターの名前とデータベースの名前。 接続 URI の詳細については、次を参照してください。 [SQL Server への接続を作成する](../../adapters-and-accelerators/adapter-sql/create-a-connection-to-sql-server.md)します。  
   
 ## <a name="see-also"></a>参照  
 

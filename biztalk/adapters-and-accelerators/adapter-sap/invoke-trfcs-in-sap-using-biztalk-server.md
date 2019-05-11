@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: baebf2a3f1723265612974f4728797bca7a070a9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4795d8579f9fb2ac5aceac3c208db3676a82840d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36989755"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373270"
 ---
 # <a name="invoke-trfcs-in-sap-using-biztalk-server"></a>BizTalk Server を使用して SAP の Trfc を呼び出す
 トランザクション リモート関数呼び出し (Trfc) は、SAP システムの RFC の 1 つだけの時間実行を保証します。 いずれかの側に表示される、Rfc を呼び出すことができます、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] tRFC として。 RFC の呼び出しに似ていますが、tRFC を呼び出す (を参照してください[を使用して BizTalk Server での SAP の Rfc を呼び出す](../../adapters-and-accelerators/adapter-sap/invoke-rfcs-in-sap-using-biztalk-server.md))、次の点が異なります。  
@@ -50,12 +50,12 @@ ms.locfileid: "36989755"
    このトピックでは、これらのタスクを実行する手順を説明します。  
   
 ## <a name="sample-based-on-this-topic"></a>このトピックに基づくサンプル  
- サンプル tRFCClient、このトピックの「に基づいてが付属しても、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]します。 詳細については、[SAP アダプターのサンプルを](../../adapters-and-accelerators/adapter-sap/samples-for-the-sap-adapter.md)を参照してください。  
+ サンプル tRFCClient、このトピックの「に基づいてが付属しても、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]します。 詳細については、次を参照してください。 [SAP アダプターのサンプルを](../../adapters-and-accelerators/adapter-sap/samples-for-the-sap-adapter.md)します。  
   
 ## <a name="generating-schema"></a>スキーマを生成します。  
  使用して、tRFC を呼び出す方法を示すために、このトピックで、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]のスキーマを生成します。  
   
-- *BAPI_SALESORDER_CREATEFROMDAT2* tRFC します。  
+- *BAPI_SALESORDER_CREATEFROMDAT2* tRFC.  
   
 - RfcConfirmTransID 操作です。 この操作を使用して、SAP システムで作成される TID をコミットする必要があります。 SAP システムがこの呼び出しを受け取ると、システムから TID を削除します。  
   
@@ -143,9 +143,9 @@ TIDRequest.TransactionalRfcOperationIdentifier = xpath(Response,"string(/*[local
   
  上記のコード例を使用するには、が必要です。  
   
--   変数を作成した**XmlDoc**プロジェクトで、BizTalk、および、その型を System.Xml.XmlDocument に設定します。 変数の作成方法の詳細については、[オーケストレーションで変数を使用して](../../core/using-variables-in-orchestrations.md)を参照してください。
+-   変数を作成した**XmlDoc**プロジェクトで、BizTalk、および、その型を System.Xml.XmlDocument に設定します。 変数の作成方法の詳細については、次を参照してください。[オーケストレーションで変数を使用して](../../core/using-variables-in-orchestrations.md)します。
   
--   昇格、 **TransactionalRfcOperationIdentifier** RfcConfirmTransID 操作のスキーマ内のプロパティ。 プロパティを昇格させる方法についての詳細については、[プロパティの昇格](../../core/promoting-properties.md)を参照してください。
+-   昇格、 **TransactionalRfcOperationIdentifier** RfcConfirmTransID 操作のスキーマ内のプロパティ。 プロパティを昇格させる方法についての詳細については、次を参照してください。[プロパティの昇格](../../core/promoting-properties.md)します。
   
 ### <a name="adding-ports"></a>ポートの追加  
  論理ポートごとに、次のプロパティを指定することを確認します。 表示される名前、*ポート*列は、ポートの名前、オーケストレーションに表示されます。  
@@ -173,10 +173,10 @@ TIDRequest.TransactionalRfcOperationIdentifier = xpath(Response,"string(/*[local
   
  これらのプロパティを指定したら、メッセージの構築図形とポートが接続されているし、オーケストレーションが完了します。  
   
- BizTalk ソリューションを構築するようになりましたし、BizTalk Server にデプロイする必要があります。 詳細については、[を実行しているオーケストレーションのビルドと](../../core/building-and-running-orchestrations.md)を参照してください。  
+ BizTalk ソリューションを構築するようになりましたし、BizTalk Server にデプロイする必要があります。 詳細については、次を参照してください。[を実行しているオーケストレーションのビルドと](../../core/building-and-running-orchestrations.md)します。  
   
 ## <a name="configuring-the-biztalk-application"></a>BizTalk アプリケーションを構成します。  
- 先ほど作成したオーケストレーションが 下にある BizTalk プロジェクトを配置した後、**オーケストレーション**BizTalk Server 管理コンソール ウィンドウ。 BizTalk Server 管理コンソールを使用して、アプリケーションを構成する必要があります。 アプリケーションを構成する方法の詳細については、[アプリケーションを構成する方法](../../core/how-to-configure-an-application.md)を参照してください。
+ 先ほど作成したオーケストレーションが 下にある BizTalk プロジェクトを配置した後、**オーケストレーション**BizTalk Server 管理コンソール ウィンドウ。 BizTalk Server 管理コンソールを使用して、アプリケーションを構成する必要があります。 アプリケーションを構成する方法の詳細については、次を参照してください。[アプリケーションを構成する方法](../../core/how-to-configure-an-application.md)します。
   
  アプリケーションを構成する必要があります。  
   
@@ -188,13 +188,13 @@ TIDRequest.TransactionalRfcOperationIdentifier = xpath(Response,"string(/*[local
   
   - ハード ディスクと、対応するファイル ポートを BizTalk オーケストレーションでの SAP システムからの応答を含む応答メッセージをドロップする場所の場所を定義します。  
   
-  - 物理 WCF カスタム定義または WCF SAP が SAP システムにメッセージを送信ポート (1 つずつ、tRFC の要求メッセージと RfcConfirmTransID メッセージ) を送信します。 送信ポートでアクションを指定することも必要があります。 ポートを作成する方法については、[SAP アダプターを物理ポートのバインドを手動で構成](../../adapters-and-accelerators/adapter-sap/manually-configure-a-physical-port-binding-to-the-sap-adapter.md)を参照してください。
+  - 物理 WCF カスタム定義または WCF SAP が SAP システムにメッセージを送信ポート (1 つずつ、tRFC の要求メッセージと RfcConfirmTransID メッセージ) を送信します。 送信ポートでアクションを指定することも必要があります。 ポートを作成する方法については、次を参照してください。 [SAP アダプターを物理ポートのバインドを手動で構成](../../adapters-and-accelerators/adapter-sap/manually-configure-a-physical-port-binding-to-the-sap-adapter.md)します。
   
     > [!NOTE]
-    >  使用して、スキーマの生成、[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]ポートとそれらのポートに設定するアクションに関する情報を含むバインド ファイルも作成されます。 (発信) の送信ポートを作成または (着信) 用のポートを受信する BizTalk Server 管理コンソールから、このバインド ファイルをインポートできます。 詳細については、[sap ポートのバインド ファイルを使用して物理的なポート バインドを構成する](../../adapters-and-accelerators/adapter-sap/configure-a-physical-port-binding-using-a-port-binding-file-to-sap.md)を参照してください。
+    >  使用して、スキーマの生成、[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]ポートとそれらのポートに設定するアクションに関する情報を含むバインド ファイルも作成されます。 (発信) の送信ポートを作成または (着信) 用のポートを受信する BizTalk Server 管理コンソールから、このバインド ファイルをインポートできます。 詳細については、次を参照してください。 [sap ポートのバインド ファイルを使用して物理的なポート バインドを構成する](../../adapters-and-accelerators/adapter-sap/configure-a-physical-port-binding-using-a-port-binding-file-to-sap.md)します。
   
 ## <a name="starting-the-application"></a>アプリケーションの起動  
- SAP システムで Trfc を呼び出すための BizTalk アプリケーションを起動する必要があります。 BizTalk アプリケーションを開始する手順については、[オーケストレーションを開始する方法](../../core/how-to-start-an-orchestration.md)、または[アプリケーションを起動する方法](../../core/how-to-start-and-stop-a-biztalk-application.md)を参照してください。  
+ SAP システムで Trfc を呼び出すための BizTalk アプリケーションを起動する必要があります。 BizTalk アプリケーションを開始する手順については、次を参照してください。[オーケストレーションを開始する方法](../../core/how-to-start-an-orchestration.md)、または[アプリケーションを起動する方法](../../core/how-to-start-and-stop-a-biztalk-application.md)します。  
   
  この段階で、ことを確認します。  
   
@@ -259,13 +259,13 @@ TIDRequest.TransactionalRfcOperationIdentifier = xpath(Response,"string(/*[local
     ```  
   
 > [!NOTE]
->  使用することができます、 **ConvertGuidToTid()** GUID にマップされている SAP システムで TID を取得する SAP アダプターのアセンブリによって公開されるパブリック メソッド。 詳細については、[特別な操作](../../adapters-and-accelerators/adapter-sap/special-operations.md)を参照してください。  
+>  使用することができます、 **ConvertGuidToTid()** GUID にマップされている SAP システムで TID を取得する SAP アダプターのアセンブリによって公開されるパブリック メソッド。 詳細については、次を参照してください。[特別な操作](../../adapters-and-accelerators/adapter-sap/special-operations.md)します。  
   
 ## <a name="possible-exceptions"></a>可能性のある例外  
- BizTalk Server を使用して SAP システムで、tRFC の呼び出し中に発生する可能性が、例外については、[例外とエラーは、SAP アダプターを使用した処理](../../adapters-and-accelerators/adapter-sap/exceptions-and-error-handling-with-the-sap-adapter.md)を参照してください。  
+ BizTalk Server を使用して SAP システムで、tRFC の呼び出し中に発生する可能性が、例外については、次を参照してください。[例外とエラーは、SAP アダプターを使用した処理](../../adapters-and-accelerators/adapter-sap/exceptions-and-error-handling-with-the-sap-adapter.md)します。  
   
 ## <a name="best-practices"></a>ベスト プラクティス  
- 展開し、BizTalk プロジェクトの構成後は、バインド ファイルと呼ばれる XML ファイル構成設定をエクスポートできます。 バインド ファイルを生成した後は、受信ポートなど、同じオーケストレーションの送信ポートを作成する必要はありませんように、ファイルから構成設定をインポートできます。 バインド ファイルの詳細については、[再利用の SAP アダプター バインド](../../adapters-and-accelerators/adapter-sap/reuse-sap-adapter-bindings.md)を参照してください。
+ 展開し、BizTalk プロジェクトの構成後は、バインド ファイルと呼ばれる XML ファイル構成設定をエクスポートできます。 バインド ファイルを生成した後は、受信ポートなど、同じオーケストレーションの送信ポートを作成する必要はありませんように、ファイルから構成設定をインポートできます。 バインド ファイルの詳細については、次を参照してください。[再利用の SAP アダプター バインド](../../adapters-and-accelerators/adapter-sap/reuse-sap-adapter-bindings.md)します。
   
 ## <a name="see-also"></a>参照  
 [BizTalk アプリケーションを開発します。](../../adapters-and-accelerators/adapter-sap/develop-biztalk-applications-using-the-sap-adapter.md)

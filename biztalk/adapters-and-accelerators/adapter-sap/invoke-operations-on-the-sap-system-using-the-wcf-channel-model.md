@@ -15,17 +15,17 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 408d2ce053a30a4692b6e17a73087b13c648ab2a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6eeaa671bbcc1ad45ab06074d6cef6e362e66c41
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36997339"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373383"
 ---
 # <a name="invoke-operations-on-the-sap-system-using-the-wcf-channel-model"></a>WCF チャネル モデルを使用して、SAP システムに対する操作を呼び出す
 操作を呼び出す、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]を使用して、 **IRequestChannel**または**IOutputChannel**チャネル形状は、アダプターにメッセージを送信します。 基本的なパターンが、バインドを使用して、必要なチャネル形状をチャネル ファクトリを作成するには (**SAPBinding**) と接続 URI から作成されたエンドポイント。 作成し、**メッセージ**対象の操作のメッセージ スキーマに準拠した SOAP メッセージを表すインスタンス。 これを送信することができますし、**メッセージ**を[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]チャネル ファクトリから作成されたチャネルを使用しています。 使用する場合、 **IRequestChannel**応答が届きます。 SAP システムの操作の実行に問題がある場合、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]スロー、 **Microsoft.ServiceModel.Channels.Common.TargetSystemException**します。  
   
- 使用して操作を送信する方法の概要については、 **IRequestChannel** WCF では、[クライアント チャネル レベルのプログラミング](https://msdn.microsoft.com/library/ms788970.aspx)を参照してください。  
+ 使用して操作を送信する方法の概要については、 **IRequestChannel** WCF では、次を参照してください。[クライアント チャネル レベルのプログラミング](https://msdn.microsoft.com/library/ms788970.aspx)します。  
   
  このトピックのセクションでは、操作を呼び出してするのに役立つ情報を提供する、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] WCF チャネル モデルを使用します。  
   
@@ -36,17 +36,17 @@ ms.locfileid: "36997339"
   
 - チャネルで、[次へ] の BAPI を呼び出す前に、BAPI の受信した応答メッセージを閉じることを確認します。 (すべての操作に対して、これを行う必要がありますが Bapi にとって特に重要ですが)。  
   
-  BAPI トランザクションの詳細については、[SAP の Bapi に対する操作](../../adapters-and-accelerators/adapter-sap/operations-on-bapis-in-sap.md)を参照してください。  
+  BAPI トランザクションの詳細については、次を参照してください。 [SAP の Bapi に対する操作](../../adapters-and-accelerators/adapter-sap/operations-on-bapis-in-sap.md)します。  
   
 ## <a name="streaming-flat-file-idocs-to-the-sap-adapter"></a>ストリーミングのフラット ファイル Idoc を SAP アダプター  
- フラット ファイル (string) IDOC をアダプターに送信するのにには、SendIdoc 操作を使用します。 IDOC データは、この操作で 1 つのノードの下の文字列として表されます。 このため、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]ノード値の要求メッセージのストリーミングをサポートしています。 ノード値のストリーミングを実行するのを使用して SendIdoc 操作の要求メッセージを作成する必要があります、 **System.ServiceModel.Channels.BodyWriter**が IDOC データをストリーミングできます。 これを行う方法については、[WCF チャネル モデルを使用して SAP でのフラット ファイル Idoc のストリーミング](../../adapters-and-accelerators/adapter-sap/stream-flat-file-idocs-in-sap-using-the-wcf-channel-model.md)を参照してください。  
+ フラット ファイル (string) IDOC をアダプターに送信するのにには、SendIdoc 操作を使用します。 IDOC データは、この操作で 1 つのノードの下の文字列として表されます。 このため、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]ノード値の要求メッセージのストリーミングをサポートしています。 ノード値のストリーミングを実行するのを使用して SendIdoc 操作の要求メッセージを作成する必要があります、 **System.ServiceModel.Channels.BodyWriter**が IDOC データをストリーミングできます。 これを行う方法については、次を参照してください。 [WCF チャネル モデルを使用して SAP でのフラット ファイル Idoc のストリーミング](../../adapters-and-accelerators/adapter-sap/stream-flat-file-idocs-in-sap-using-the-wcf-channel-model.md)します。  
   
 ## <a name="how-do-i-invoke-an-operation-by-using-a-channel"></a>チャネルを使用して、操作を呼び出す方法  
  使用して、操作を呼び出す、 **IRequestChannel**、次の手順に従います。  
   
 #### <a name="how-to-invoke-an-operation-by-using-an-instance-of-irequestchannel"></a>IRequestChannel のインスタンスを使用して、操作を呼び出す方法  
   
-1. チャネル ファクトリの作成 (**ChannelFactory\<IRequestChannel\>**)。 これを行うには、バインドを指定する必要があります (**SAPBinding**) とエンドポイント アドレス。 コードで強制的に、または構成で宣言によって、バインディングとエンドポイント アドレスを指定できます。 プロパティは、送信すること、ファクトリを開く前に、操作に必要な任意のバインディングを設定する必要があります。 構成でバインディングとエンドポイント アドレスを指定する方法の詳細については、[SAP を使用してチャネルを作成](../../adapters-and-accelerators/adapter-sap/create-a-channel-using-sap.md)を参照してください。  
+1. チャネル ファクトリの作成 (**ChannelFactory\<IRequestChannel\>**)。 これを行うには、バインドを指定する必要があります (**SAPBinding**) とエンドポイント アドレス。 コードで強制的に、または構成で宣言によって、バインディングとエンドポイント アドレスを指定できます。 プロパティは、送信すること、ファクトリを開く前に、操作に必要な任意のバインディングを設定する必要があります。 構成でバインディングとエンドポイント アドレスを指定する方法の詳細については、次を参照してください。 [SAP を使用してチャネルを作成](../../adapters-and-accelerators/adapter-sap/create-a-channel-using-sap.md)です。  
   
    ```  
    // Create a binding  

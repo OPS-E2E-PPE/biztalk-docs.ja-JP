@@ -13,12 +13,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 02112b6974a537c9f66cc301014ae16bb4bf326f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e474d083c352e4fbc73076c4248db9a16cfa13ee
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36967473"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373399"
 ---
 # <a name="get-started-with-the-biztalk-adapter-for-mysap-business-suite"></a>BizTalk Adapter for mySAP Business Suite の概要します。
 このセクションでは、ユーザーが Microsoft に新しいアダプター、前提条件、およびトピックの概要を示します[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]します。 機能について説明します[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]とアダプターを使用して SAP システムで実行できるさまざまな操作です。  

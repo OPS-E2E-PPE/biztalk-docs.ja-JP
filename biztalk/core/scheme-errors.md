@@ -1,5 +1,5 @@
 ---
-title: スキーム エラー |Microsoft ドキュメント
+title: スキーム エラー |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,22 +12,22 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b05b2637b449f8bbd9d82950d853af707972a815
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 15a56af28ba6c1e10fe31bfad436c4ae9fd16ed4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22268898"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395542"
 ---
 # <a name="scheme-errors"></a>スキーム エラー
 ここでは、WCF のスキーム エラーを診断および解決するための詳細について説明します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [スキームを確認できません。](../core/cannot-determine-scheme.md)  
+-   [スキームを確認できません](../core/cannot-determine-scheme.md)  
   
--   [アドレスを検証するバインドのスキームを取得できません。](../core/cannot-obtain-scheme-from-binding-to-validate-address.md)  
+-   [アドレスを検証するためのスキームをバインドから取得できません](../core/cannot-obtain-scheme-from-binding-to-validate-address.md)  
   
--   [識別子が無効です。](../core/invalid-identifier.md)  
+-   [無効な識別子です](../core/invalid-identifier.md)  
   
--   [無効なスキーム](../core/invalid-scheme.md)
+-   [スキームが無効です](../core/invalid-scheme.md)

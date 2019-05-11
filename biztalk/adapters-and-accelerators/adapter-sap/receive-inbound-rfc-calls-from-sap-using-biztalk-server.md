@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6e70e2b81fd71a01ef6eae9e77ae3efea8cbf494
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c8e92d79aff5984517190f3f66382ec5d33caaed
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36986987"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373081"
 ---
 # <a name="receive-inbound-rfc-calls-from-sap-using-biztalk-server"></a>BizTalk Server を使用して SAP から受信 RFC 呼び出しを受信します。
 RFC サーバーのシナリオでは、3 つのエンティティがあります。  
@@ -56,9 +56,9 @@ RFC サーバーのシナリオでは、3 つのエンティティがありま�
 ## <a name="activities-on-the-sap-system"></a>SAP システムでのアクティビティ  
  使用する前に、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] SAP システムから受信 RFC 呼び出しを受信する SAP システムでは、次のタスクの完了を確認します。  
   
-- SAP アダプターの RFC 転送先が存在する必要があります。 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] Rfc を SAP システムで定義された RFC 転送先を使用して SAP システムから受信します。 RFC 転送先には、SAP ゲートウェイ ホスト、SAP ゲートウェイ サービス、および SAP プログラム ID をコードで接続 URI で指定する必要がありますが含まれています。 SAP で RFC 転送先をセットアップする方法については、[RFC を作成する、RFC 変換先、および RFC を送信する SAP システムから](creating-an-rfc-in-an-sap-system.md)を参照してください。  
+- SAP アダプターの RFC 転送先が存在する必要があります。 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] Rfc を SAP システムで定義された RFC 転送先を使用して SAP システムから受信します。 RFC 転送先には、SAP ゲートウェイ ホスト、SAP ゲートウェイ サービス、および SAP プログラム ID をコードで接続 URI で指定する必要がありますが含まれています。 SAP で RFC 転送先をセットアップする方法については、次を参照してください。 [RFC を作成する、RFC 変換先、および RFC を送信する SAP システムから](creating-an-rfc-in-an-sap-system.md)します。  
   
-- SAP システムに対する RFC を定義する関数モジュールを作成する必要があります。 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] (デザイン時および実行時の両方)、RFC に関するメタデータを取得する SAP システムの RFC 定義を使用します。 詳細については、[SAP システムでの RFC を作成する](../../adapters-and-accelerators/adapter-sap/creating-an-rfc-in-an-sap-system.md)を参照してください。  
+- SAP システムに対する RFC を定義する関数モジュールを作成する必要があります。 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] (デザイン時および実行時の両方)、RFC に関するメタデータを取得する SAP システムの RFC 定義を使用します。 詳細については、次を参照してください。 [SAP システムでの RFC を作成する](../../adapters-and-accelerators/adapter-sap/creating-an-rfc-in-an-sap-system.md)します。  
   
    次は、RFC を 2 つの整数を追加し、その結果を返しますの SAP システムのソース コードの例です。 コードは、指定した変換先をだけで、RFC を呼び出します。 関数の実装は、SAP アダプター クライアントのコードによって実行されます。  
   
@@ -83,7 +83,7 @@ RFC サーバーのシナリオでは、3 つのエンティティがありま�
   ```  
   
 ## <a name="sample-based-on-this-topic"></a>このトピックに基づくサンプル  
- サンプル RFCServer、このトピックの「に基づいてが付属しても、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]します。 詳細については、[SAP アダプターのサンプル](../../adapters-and-accelerators/adapter-sap/samples-for-the-sap-adapter.md)を参照してください。  
+ サンプル RFCServer、このトピックの「に基づいてが付属しても、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]します。 詳細については、次を参照してください。 [SAP アダプターのサンプル](../../adapters-and-accelerators/adapter-sap/samples-for-the-sap-adapter.md)します。  
   
 ## <a name="generating-the-schema"></a>スキーマを生成します。  
  このトピックで、SAP システムから受信 RFC 呼び出しを受信する方法を示すためにスキーマを生成*Z_RFC_ADD* RFC します。 この RFC は、前の手順で作成されます。 この RFC では、入力パラメーターとして 2 つの整数値を受け取ります。  
@@ -216,10 +216,10 @@ Response(WCF.Action) = "http://Microsoft.LobServices.Sap/2007/03/Rfc/Z_RFC_ADD/r
   
  これらのプロパティを指定したら、メッセージの構築図形とポートが接続されているし、オーケストレーションが完了します。  
   
- BizTalk ソリューションを構築するようになりましたし、BizTalk Server にデプロイする必要があります。 詳細については、[を実行しているオーケストレーションのビルドと](../../core/building-and-running-orchestrations.md)を参照してください。
+ BizTalk ソリューションを構築するようになりましたし、BizTalk Server にデプロイする必要があります。 詳細については、次を参照してください。[を実行しているオーケストレーションのビルドと](../../core/building-and-running-orchestrations.md)します。
   
 ## <a name="configuring-the-biztalk-application"></a>BizTalk アプリケーションを構成します。  
- 先ほど作成したオーケストレーションが 下にある BizTalk プロジェクトを配置した後、**オーケストレーション**BizTalk Server 管理コンソール ウィンドウ。 BizTalk Server 管理コンソールを使用して、アプリケーションを構成する必要があります。 アプリケーションを構成する方法の詳細については、[アプリケーションを構成する方法](../../core/how-to-configure-an-application.md)を参照してください。
+ 先ほど作成したオーケストレーションが 下にある BizTalk プロジェクトを配置した後、**オーケストレーション**BizTalk Server 管理コンソール ウィンドウ。 BizTalk Server 管理コンソールを使用して、アプリケーションを構成する必要があります。 アプリケーションを構成する方法の詳細については、次を参照してください。[アプリケーションを構成する方法](../../core/how-to-configure-an-application.md)します。
   
  アプリケーションを構成する必要があります。  
   
@@ -227,10 +227,10 @@ Response(WCF.Action) = "http://Microsoft.LobServices.Sap/2007/03/Rfc/Z_RFC_ADD/r
   
 - BizTalk Server 管理コンソールで物理ポートにオーケストレーションで作成したポートをマッピングします。 このオーケストレーションの次の操作を行う必要があります。  
   
-  - WCF カスタム定義または WCF SAP 受信ポート。 このポートでは、SAP システムから受信 RFC 呼び出しを受け取るし、SAP システムへの応答に送信されます。 ポートを作成する方法については、[SAP アダプターを物理ポートのバインドを手動で構成](../../adapters-and-accelerators/adapter-sap/manually-configure-a-physical-port-binding-to-the-sap-adapter.md)を参照してください。  
+  - WCF カスタム定義または WCF SAP 受信ポート。 このポートでは、SAP システムから受信 RFC 呼び出しを受け取るし、SAP システムへの応答に送信されます。 ポートを作成する方法については、次を参照してください。 [SAP アダプターを物理ポートのバインドを手動で構成](../../adapters-and-accelerators/adapter-sap/manually-configure-a-physical-port-binding-to-the-sap-adapter.md)します。  
   
     > [!NOTE]
-    >  使用して、スキーマの生成、[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]ポートとそれらのポートに設定するアクションに関する情報を含むバインド ファイルも作成されます。 (発信) の送信ポートを作成または (着信) 用のポートを受信する BizTalk 管理コンソールから、このバインド ファイルをインポートできます。 詳細については、[sap ポートのバインド ファイルを使用して物理的なポート バインドを構成する](../../adapters-and-accelerators/adapter-sap/configure-a-physical-port-binding-using-a-port-binding-file-to-sap.md)を参照してください。
+    >  使用して、スキーマの生成、[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]ポートとそれらのポートに設定するアクションに関する情報を含むバインド ファイルも作成されます。 (発信) の送信ポートを作成または (着信) 用のポートを受信する BizTalk 管理コンソールから、このバインド ファイルをインポートできます。 詳細については、次を参照してください。 [sap ポートのバインド ファイルを使用して物理的なポート バインドを構成する](../../adapters-and-accelerators/adapter-sap/configure-a-physical-port-binding-using-a-port-binding-file-to-sap.md)します。
   
   BizTalk アプリケーションに RFCServerResponseCreator プロジェクトのアセンブリを追加することも必要があります。 SAP システムから受信 RFC 呼び出しを処理するには、このプロジェクトを作成したとします。 そのためには次を行います。  
   
@@ -241,7 +241,7 @@ Response(WCF.Action) = "http://Microsoft.LobServices.Sap/2007/03/Rfc/Z_RFC_ADD/r
 3.  **リソースの追加**ダイアログ ボックスで、をクリックして**OK**。  
   
 ## <a name="starting-the-application"></a>アプリケーションの起動  
- SAP システムから受信 RFC 呼び出しを受信するための BizTalk アプリケーションを起動する必要があります。 BizTalk アプリケーションを開始する手順については、[オーケストレーションを開始する方法](../../core/how-to-start-an-orchestration.md)、および[アプリケーションを起動する方法](../../core/how-to-start-and-stop-a-biztalk-application.md)を参照してください。
+ SAP システムから受信 RFC 呼び出しを受信するための BizTalk アプリケーションを起動する必要があります。 BizTalk アプリケーションを開始する手順については、次を参照してください。[オーケストレーションを開始する方法](../../core/how-to-start-an-orchestration.md)、および[アプリケーションを起動する方法](../../core/how-to-start-and-stop-a-biztalk-application.md)します。
   
  この段階で、ことを確認します。  
   
@@ -253,10 +253,10 @@ Response(WCF.Action) = "http://Microsoft.LobServices.Sap/2007/03/Rfc/Z_RFC_ADD/r
  アプリケーションを実行した後に RFC を送信する必要があります、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]します。 SAP システムでトランザクション SE37 を実行することによって行うことができます。 RFC 呼び出しの入力パラメーターを指定することも必要があります。 アダプターは、パラメーターと呼び出しを受信、処理、および SAP システムへの応答を送信します。 RFC を送信してから、同じトランザクションで、応答が表示できるようにします。  
   
 ## <a name="possible-exceptions"></a>可能性のある例外  
- BizTalk Server を使用して SAP システムから RFC サーバー呼び出しを受信中に発生する可能性が、例外については、[例外とエラーは、SAP アダプターを使用した処理](../../adapters-and-accelerators/adapter-sap/exceptions-and-error-handling-with-the-sap-adapter.md)を参照してください。  
+ BizTalk Server を使用して SAP システムから RFC サーバー呼び出しを受信中に発生する可能性が、例外については、次を参照してください。[例外とエラーは、SAP アダプターを使用した処理](../../adapters-and-accelerators/adapter-sap/exceptions-and-error-handling-with-the-sap-adapter.md)します。  
   
 ## <a name="best-practices"></a>ベスト プラクティス  
- 展開し、BizTalk プロジェクトの構成後は、バインド ファイルと呼ばれる XML ファイル構成設定をエクスポートできます。 バインド ファイルを生成した後は、受信ポートなど、同じオーケストレーションの送信ポートを作成する必要はありませんように、ファイルから構成設定をインポートできます。 バインド ファイルの詳細については、[再利用の SAP アダプター バインド](../../adapters-and-accelerators/adapter-sap/reuse-sap-adapter-bindings.md)を参照してください。
+ 展開し、BizTalk プロジェクトの構成後は、バインド ファイルと呼ばれる XML ファイル構成設定をエクスポートできます。 バインド ファイルを生成した後は、受信ポートなど、同じオーケストレーションの送信ポートを作成する必要はありませんように、ファイルから構成設定をインポートできます。 バインド ファイルの詳細については、次を参照してください。[再利用の SAP アダプター バインド](../../adapters-and-accelerators/adapter-sap/reuse-sap-adapter-bindings.md)します。
   
 ## <a name="see-also"></a>参照  
 [BizTalk アプリケーションを開発します。](../../adapters-and-accelerators/adapter-sap/develop-biztalk-applications-using-the-sap-adapter.md)

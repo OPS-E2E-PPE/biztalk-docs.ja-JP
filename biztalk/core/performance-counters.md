@@ -1,5 +1,5 @@
 ---
-title: パフォーマンス カウンター |Microsoft ドキュメント
+title: パフォーマンス カウンター | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,19 +16,19 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1894757edfc2e51e6117ceef2fd22c72b2877561
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b21c7573a3590b9d08557896e5bbc8869a04e22c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22263938"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65394372"
 ---
 # <a name="performance-counters"></a>パフォーマンス カウンター
 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] には、ボトルネックの追跡に使用できるパフォーマンス カウンターが組み込まれています。 このセクションでは、これらのパフォーマンス カウンターについて説明します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [メッセージ ボックス パフォーマンス カウンター](../core/message-box-performance-counters.md)  
+-   [メッセージ ボックスのパフォーマンス カウンター](../core/message-box-performance-counters.md)  
   
 -   [オーケストレーション エンジンのパフォーマンス カウンター](../core/orchestration-engine-performance-counters.md)  
   

@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10715 |Microsoft Docs'
+title: シングル サインオン:イベント 10715 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f9bc461aa812c2c61844c11d54743335ac89321a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 72bb7740ee9c0edb1c5e3c35304c9e9633bb89f2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36994859"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65397197"
 ---
-# <a name="single-sign-on-event-10715"></a>シングル サインオン: イベント 10715
+# <a name="single-sign-on-event-10715"></a>シングル サインオン:イベント 10715
 ## <a name="details"></a>詳細  
 
 |                 |                                                                                                                                                                                                                  |
@@ -28,15 +28,15 @@ ms.locfileid: "36994859"
 | 製品バージョン |                                                                            [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                                                                            |
 |    イベント ID     |                                                                                                      10715                                                                                                       |
 |  イベント ソース   |                                                                                                      ENTSSO                                                                                                      |
-|    コンポーネント    |                                                                                                       N\A                                                                                                        |
+|    コンポーネント    |                                                                                                       該当なし                                                                                                        |
 |  シンボル名  |                                                                                            SSO_WARN_NO_CREATE_ADAPTER                                                                                            |
-|  メッセージ テキスト   | アダプターを作成するには、クライアント ユーザーは SSO 管理者アカウントのメンバーである必要があります。%r<br /><br /> クライアント ユーザー: 1 %r<br /><br /> SSO 管理者: % 2 %r<br /><br /> アダプター: % 3 %r<br /><br /> エラー コード: %4 |
+|  メッセージ テキスト   | クライアント ユーザーは adapters.%r を作成するには、SSO 管理者アカウントのメンバーである必要があります。<br /><br /> クライアント ユーザー: 1 %r<br /><br /> SSO 管理者: % 2 %r<br /><br /> アダプター: % 3 %r<br /><br /> エラー コード: %4 |
 
 ## <a name="explanation"></a>説明  
- この警告イベントは、アダプターを作成するにはクライアント ユーザーが SSO 管理者アカウントのメンバーである必要があることを示します。  
+ この警告イベントは、クライアント ユーザーはアダプターを作成するには、SSO 管理者アカウントのメンバーである必要がありますを示します。  
 
 ## <a name="user-action"></a>ユーザーの操作  
- この警告を解決するには、次の操作を行います:   
+ この警告を解決するには、次の操作を行います。  
 
 - SSO 管理者グループに属しているアカウントでログオンします。  
 

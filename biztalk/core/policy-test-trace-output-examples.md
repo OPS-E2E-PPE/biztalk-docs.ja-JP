@@ -1,5 +1,5 @@
 ---
-title: ポリシー テストのトレース出力例 |Microsoft ドキュメント
+title: ポリシー テストのトレース出力の例 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,18 +16,18 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6e3678769dffa03bb77c3e86fef02998a354b1fb
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 365d962c7a21721e75eb3c0c5abd6e2d93bfd5aa
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22266682"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65394948"
 ---
 # <a name="policy-test-trace-output-examples"></a>ポリシー テストのトレース出力例
-このセクションでは、さまざまな種類のファクトに関するポリシー テストの出力例について説明します。  
+このセクションでは、さまざまな種類のファクトをポリシーのテストの出力の例を示します。  
   
 ## <a name="net-class"></a>.Net クラス  
- "LoanProcessing" ポリシーの "TestRule1" ルールの例:  
+ "LoanProcessing"ポリシーの例のルール"TestRule1":  
   
 ```  
 IF test.get_ID > 0  
@@ -36,70 +36,70 @@ THEN <do something>
   
  **出力:**  
   
- ルール セットのルール エンジン トレース: LoanProcessing 2004/3/16 9時 50分: 28 AM  
+ セットのルール エンジン トレース:LoanProcessing 2004/3/16 9時 50分: 28 AM  
   
  ファクト アクティビティ 2004/3/16 9時 50分: 28 AM  
   
- ルール エンジン インスタンス識別子: 9effe3f9-d3ad-4125-99fa-56bb379188f7  
+ ルール エンジン インスタンス識別子:9effe3f9-d3ad-4125-99fa-56bb379188f7  
   
- ルール セット名: LoanProcessing  
+ ルール セット名:LoanProcessing  
   
- 操作: アサート  
+ 操作:Filter  
   
- オブジェクトの種類: MyTest.test  
+ オブジェクトの種類:MyTest.test  
   
- オブジェクト インスタンス識別子: 872  
+ オブジェクト インスタンス識別子:872  
   
  条件の評価テスト (一致) 2004/3/16 9時 50分: 28 AM  
   
- ルール エンジン インスタンス識別子: 9effe3f9-d3ad-4125-99fa-56bb379188f7  
+ ルール エンジン インスタンス識別子:9effe3f9-d3ad-4125-99fa-56bb379188f7  
   
- ルール セット名: LoanProcessing  
+ ルール セット名:LoanProcessing  
   
- テスト式: MyTest.test.get_ID > 0  
+ テスト式。MyTest.test.get_ID > 0  
   
- 左のオペランド値: 100  
+ 左側のオペランド値:100  
   
- 右のオペランド値: 0  
+ 右側のオペランド値:0  
   
- テスト結果: True  
+ テスト結果。True  
   
- 議題の更新 2004/3/16 9:50:28 AM  
+ 議題の更新 2004/3/16 9時 50分: 28 AM  
   
- ルール エンジン インスタンス識別子: 9effe3f9-d3ad-4125-99fa-56bb379188f7  
+ ルール エンジン インスタンス識別子:9effe3f9-d3ad-4125-99fa-56bb379188f7  
   
- ルール セット名: LoanProcessing  
+ ルール セット名:LoanProcessing  
   
- 操作: 追加  
+ 操作:[追加]  
   
- ルール名: TestRule1  
+ ルール名:TestRule1  
   
- 競合解決条件: 0  
+ 競合解決条件:0  
   
- 実行されたルール 2004/3/16 9:50:28 AM  
+ 2004/3/16 が実行されたルール 9時 50分: 28 AM  
   
- ルール エンジン インスタンス識別子: 9effe3f9-d3ad-4125-99fa-56bb379188f7  
+ ルール エンジン インスタンス識別子:9effe3f9-d3ad-4125-99fa-56bb379188f7  
   
- ルール セット名: LoanProcessing  
+ ルール セット名:LoanProcessing  
   
- ルール名: TestRule1  
+ ルール名:TestRule1  
   
- 競合解決条件: 0  
+ 競合解決条件:0  
   
  ファクト アクティビティ 2004/3/16 9時 50分: 28 AM  
   
- ルール エンジン インスタンス識別子: 9effe3f9-d3ad-4125-99fa-56bb379188f7  
+ ルール エンジン インスタンス識別子:9effe3f9-d3ad-4125-99fa-56bb379188f7  
   
- ルール セット名: LoanProcessing  
+ ルール セット名:LoanProcessing  
   
- 操作: 取り消し  
+ 操作:取り消し  
   
- オブジェクトの種類: MyTest.test  
+ オブジェクトの種類:MyTest.test  
   
- オブジェクト インスタンス識別子: 872  
+ オブジェクト インスタンス識別子:872  
   
 ## <a name="dataconnectiontypeddatarow"></a>DataConnection/TypedDataRow  
- "LoanProcessing" ポリシーの "TestRule1" ルールの例:  
+ "LoanProcessing"ポリシーの例のルール"TestRule1":  
   
 ```  
 IF NorthWind.CustInfo.CreditCardBalance > 0  
@@ -108,188 +108,188 @@ THEN <do something>
   
  **出力:**  
   
- ルール セットのルール エンジン トレース: LoanProcessing 2004/3/16 8時 30分: 16 AM  
+ セットのルール エンジン トレース:LoanProcessing 2004/3/16 8時 30分: 16 AM  
   
  ファクト アクティビティ 2004/3/16 8時 30分: 16 AM  
   
- ルール エンジン インスタンス識別子: 1aad35bb-0599-470b-b0fa-73b3fa1dfb83  
+ ルール エンジン インスタンス識別子:1aad35bb-0599-470b-b0fa-73b3fa1dfb83  
   
- ルール セット名: LoanProcessing  
+ ルール セット名:LoanProcessing  
   
- 操作: アサート  
+ 操作:Filter  
   
- オブジェクトの種類: DataConnection:Northwind:CustInfo  
+ オブジェクトの種類:DataConnection:Northwind:CustInfo  
   
- オブジェクト インスタンス識別子: 874  
+ オブジェクト インスタンス識別子:874  
   
- 条件の評価テスト (一致) 2004/3/16 8:30:16 AM  
+ 条件の評価テスト (一致) 2004/3/16 8時 30分: 16 AM  
   
- ルール エンジン インスタンス識別子: 1aad35bb-0599-470b-b0fa-73b3fa1dfb83  
+ ルール エンジン インスタンス識別子:1aad35bb-0599-470b-b0fa-73b3fa1dfb83  
   
- ルール セット名: LoanProcessing  
+ ルール セット名:LoanProcessing  
   
- テスト式: 選択 * [CustInfo] から、[CreditCardBalance] > 0  
+ Test Expression: select * from [CustInfo] where [CreditCardBalance] > 0  
   
- 左側のオペランド値:   
+ 左側のオペランド値:  
   
- 右側のオペランド値:   
+ 右側のオペランド値:  
   
- テスト結果: True  
+ テスト結果。True  
   
  ファクト アクティビティ 2004/3/16 8時 30分: 16 AM  
   
- ルール エンジン インスタンス識別子: 1aad35bb-0599-470b-b0fa-73b3fa1dfb83  
+ ルール エンジン インスタンス識別子:1aad35bb-0599-470b-b0fa-73b3fa1dfb83  
   
- ルール セット名: LoanProcessing  
+ ルール セット名:LoanProcessing  
   
- 操作: アサート  
+ 操作:Filter  
   
- オブジェクトの種類: TypedDataRow:Northwind:CustInfo  
+ オブジェクトの種類:TypedDataRow:Northwind:CustInfo  
   
- オブジェクト インスタンス識別子: 177556  
+ オブジェクト インスタンス識別子:177556  
   
  議題の更新 2004/3/16 8時 30分: 16 AM  
   
- ルール エンジン インスタンス識別子: 1aad35bb-0599-470b-b0fa-73b3fa1dfb83  
+ ルール エンジン インスタンス識別子:1aad35bb-0599-470b-b0fa-73b3fa1dfb83  
   
- ルール セット名: LoanProcessing  
+ ルール セット名:LoanProcessing  
   
- 操作: 追加  
+ 操作:[追加]  
   
- ルール名: TestRule1  
+ ルール名:TestRule1  
   
- 競合解決条件: 0  
+ 競合解決条件:0  
   
  ファクト アクティビティ 2004/3/16 8時 30分: 16 AM  
   
- ルール エンジン インスタンス識別子: 1aad35bb-0599-470b-b0fa-73b3fa1dfb83  
+ ルール エンジン インスタンス識別子:1aad35bb-0599-470b-b0fa-73b3fa1dfb83  
   
- ルール セット名: LoanProcessing  
+ ルール セット名:LoanProcessing  
   
- 操作: アサート  
+ 操作:Filter  
   
- オブジェクトの種類: TypedDataRow:Northwind:CustInfo  
+ オブジェクトの種類:TypedDataRow:Northwind:CustInfo  
   
- オブジェクト インスタンス識別子: 177559  
+ オブジェクト インスタンス識別子:177559  
   
  議題の更新 2004/3/16 8時 30分: 16 AM  
   
- ルール エンジン インスタンス識別子: 1aad35bb-0599-470b-b0fa-73b3fa1dfb83  
+ ルール エンジン インスタンス識別子:1aad35bb-0599-470b-b0fa-73b3fa1dfb83  
   
- ルール セット名: LoanProcessing  
+ ルール セット名:LoanProcessing  
   
- 操作: 追加  
+ 操作:[追加]  
   
- ルール名: TestRule1  
+ ルール名:TestRule1  
   
- 競合解決条件: 0  
+ 競合解決条件:0  
   
  ファクト アクティビティ 2004/3/16 8時 30分: 16 AM  
   
- ルール エンジン インスタンス識別子: 1aad35bb-0599-470b-b0fa-73b3fa1dfb83  
+ ルール エンジン インスタンス識別子:1aad35bb-0599-470b-b0fa-73b3fa1dfb83  
   
- ルール セット名: LoanProcessing  
+ ルール セット名:LoanProcessing  
   
- 操作: アサート  
+ 操作:Filter  
   
- オブジェクトの種類: TypedDataRow:Northwind:CustInfo  
+ オブジェクトの種類:TypedDataRow:Northwind:CustInfo  
   
- オブジェクト インスタンス識別子: 177558  
+ オブジェクト インスタンス識別子:177558  
   
  議題の更新 2004/3/16 8時 30分: 16 AM  
   
- ルール エンジン インスタンス識別子: 1aad35bb-0599-470b-b0fa-73b3fa1dfb83  
+ ルール エンジン インスタンス識別子:1aad35bb-0599-470b-b0fa-73b3fa1dfb83  
   
- ルール セット名: LoanProcessing  
+ ルール セット名:LoanProcessing  
   
- 操作: 追加  
+ 操作:[追加]  
   
- ルール名: TestRule1  
+ ルール名:TestRule1  
   
- 競合解決条件: 0  
-  
- 2004/3/16 が実行されたルール 8時 30分: 16 AM  
-  
- ルール エンジン インスタンス識別子: 1aad35bb-0599-470b-b0fa-73b3fa1dfb83  
-  
- ルール セット名: LoanProcessing  
-  
- ルール名: TestRule1  
-  
- 競合解決条件: 0  
+ 競合解決条件:0  
   
  2004/3/16 が実行されたルール 8時 30分: 16 AM  
   
- ルール エンジン インスタンス識別子: 1aad35bb-0599-470b-b0fa-73b3fa1dfb83  
+ ルール エンジン インスタンス識別子:1aad35bb-0599-470b-b0fa-73b3fa1dfb83  
   
- ルール セット名: LoanProcessing  
+ ルール セット名:LoanProcessing  
   
- ルール名: TestRule1  
+ ルール名:TestRule1  
   
- 競合解決条件: 0  
+ 競合解決条件:0  
   
  2004/3/16 が実行されたルール 8時 30分: 16 AM  
   
- ルール エンジン インスタンス識別子: 1aad35bb-0599-470b-b0fa-73b3fa1dfb83  
+ ルール エンジン インスタンス識別子:1aad35bb-0599-470b-b0fa-73b3fa1dfb83  
   
- ルール セット名: LoanProcessing  
+ ルール セット名:LoanProcessing  
   
- ルール名: TestRule1  
+ ルール名:TestRule1  
   
- 競合解決条件: 0  
+ 競合解決条件:0  
   
- ファクト アクティビティ 2004/3/16 8時 30分: 16 AM  
+ 2004/3/16 が実行されたルール 8時 30分: 16 AM  
   
- ルール エンジン インスタンス識別子: 1aad35bb-0599-470b-b0fa-73b3fa1dfb83  
+ ルール エンジン インスタンス識別子:1aad35bb-0599-470b-b0fa-73b3fa1dfb83  
   
- ルール セット名: LoanProcessing  
+ ルール セット名:LoanProcessing  
   
- 操作: 取り消し  
+ ルール名:TestRule1  
   
- オブジェクトの種類: DataConnection:Northwind:CustInfo  
-  
- オブジェクト インスタンス識別子: 874  
+ 競合解決条件:0  
   
  ファクト アクティビティ 2004/3/16 8時 30分: 16 AM  
   
- ルール エンジン インスタンス識別子: 1aad35bb-0599-470b-b0fa-73b3fa1dfb83  
+ ルール エンジン インスタンス識別子:1aad35bb-0599-470b-b0fa-73b3fa1dfb83  
   
- ルール セット名: LoanProcessing  
+ ルール セット名:LoanProcessing  
   
- 操作: 取り消し  
+ 操作:取り消し  
   
- オブジェクトの種類: TypedDataRow:Northwind:CustInfo  
+ オブジェクトの種類:DataConnection:Northwind:CustInfo  
   
- オブジェクト インスタンス識別子: 177559  
-  
- ファクト アクティビティ 2004/3/16 8時 30分: 16 AM  
-  
- ルール エンジン インスタンス識別子: 1aad35bb-0599-470b-b0fa-73b3fa1dfb83  
-  
- ルール セット名: LoanProcessing  
-  
- 操作: 取り消し  
-  
- オブジェクトの種類: TypedDataRow:Northwind:CustInfo  
-  
- オブジェクト インスタンス識別子: 177558  
+ オブジェクト インスタンス識別子:874  
   
  ファクト アクティビティ 2004/3/16 8時 30分: 16 AM  
   
- ルール エンジン インスタンス識別子: 1aad35bb-0599-470b-b0fa-73b3fa1dfb83  
+ ルール エンジン インスタンス識別子:1aad35bb-0599-470b-b0fa-73b3fa1dfb83  
   
- ルール セット名: LoanProcessing  
+ ルール セット名:LoanProcessing  
   
- 操作: 取り消し  
+ 操作:取り消し  
   
- オブジェクトの種類: TypedDataRow:Northwind:CustInfo  
+ オブジェクトの種類:TypedDataRow:Northwind:CustInfo  
   
- オブジェクト インスタンス識別子: 177556  
+ オブジェクト インスタンス識別子:177559  
   
- 上記の例は、CustInfo テーブルの 3 つの行がルールの条件を満たしていることを示しています。  この結果、エンジンに 3 つの一意の TypedDataRows がアサートされ、議題の更新およびルール実行が各インスタンスで発生します。  
+ ファクト アクティビティ 2004/3/16 8時 30分: 16 AM  
+  
+ ルール エンジン インスタンス識別子:1aad35bb-0599-470b-b0fa-73b3fa1dfb83  
+  
+ ルール セット名:LoanProcessing  
+  
+ 操作:取り消し  
+  
+ オブジェクトの種類:TypedDataRow:Northwind:CustInfo  
+  
+ オブジェクト インスタンス識別子:177558  
+  
+ ファクト アクティビティ 2004/3/16 8時 30分: 16 AM  
+  
+ ルール エンジン インスタンス識別子:1aad35bb-0599-470b-b0fa-73b3fa1dfb83  
+  
+ ルール セット名:LoanProcessing  
+  
+ 操作:取り消し  
+  
+ オブジェクトの種類:TypedDataRow:Northwind:CustInfo  
+  
+ オブジェクト インスタンス識別子:177556  
+  
+ 上記の例では、CustInfo テーブルの 3 つの行に、ルールの条件が満たされていることを示します。  これにより、エンジンと、議題の更新と各インスタンスに対して発生するルールの実行がアサートする 3 つの一意な TypedDataRows が発生します。  
   
 ## <a name="typedatatabletypeddatarow"></a>TypeDataTable/TypedDataRow  
- "LoanProcessing" ポリシーの "TestRule1" ルールの例:  
+ "LoanProcessing"ポリシーの例のルール"TestRule1":  
   
 ```  
 IF NorthWind.CustInfo.CreditCardBalance > 0  
@@ -298,217 +298,217 @@ THEN <do something>
   
  **出力:**  
   
- ルール セットのルール エンジン トレース: LoanProcessing 2004/3/17 午前 11時 27分: 35  
+ セットのルール エンジン トレース:LoanProcessing 2004/3/17 午前 11時 27分: 35  
   
  ファクト アクティビティ 2004/3/17 午前 11時 27分: 35  
   
- ルール エンジン インスタンス識別子: 0f7bcdf3-8103-4990-a740-acaeee386439  
+ ルール エンジン インスタンス識別子:0f7bcdf3-8103-4990-a740-acaeee386439  
   
- ルール セット名: LoanProcessing  
+ ルール セット名:LoanProcessing  
   
- 操作: アサート  
+ 操作:Filter  
   
- オブジェクトの種類: TypedDataTable:Northwind:CustInfo  
+ オブジェクトの種類:TypedDataTable:Northwind:CustInfo  
   
- オブジェクト インスタンス識別子: 377  
+ オブジェクト インスタンス識別子:377  
   
  ファクト アクティビティ 2004/3/17 午前 11時 27分: 35  
   
- ルール エンジン インスタンス識別子: 0f7bcdf3-8103-4990-a740-acaeee386439  
+ ルール エンジン インスタンス識別子:0f7bcdf3-8103-4990-a740-acaeee386439  
   
- ルール セット名: LoanProcessing  
+ ルール セット名:LoanProcessing  
   
- 操作: アサート  
+ 操作:Filter  
   
- オブジェクトの種類: TypedDataRow:Northwind:CustInfo  
+ オブジェクトの種類:TypedDataRow:Northwind:CustInfo  
   
- オブジェクト インスタンス識別子: 376  
+ オブジェクト インスタンス識別子:376  
   
  条件の評価テスト (一致) 2004/3/17 午前 11時 27分: 35  
   
- ルール エンジン インスタンス識別子: 0f7bcdf3-8103-4990-a740-acaeee386439  
+ ルール エンジン インスタンス識別子:0f7bcdf3-8103-4990-a740-acaeee386439  
   
- ルール セット名: LoanProcessing  
+ ルール セット名:LoanProcessing  
   
- テスト式: TypedDataRow:Northwind:CustInfo.CreditCardBalance > 0  
+ テスト式。TypedDataRow:Northwind:CustInfo.CreditCardBalance > 0  
   
- 左のオペランド値: 500  
+ 左側のオペランド値:500  
   
- 右のオペランド値: 0  
+ 右側のオペランド値:0  
   
- テスト結果: True  
+ テスト結果。True  
   
  議題の更新 2004/3/17 午前 11時 27分: 35  
   
- ルール エンジン インスタンス識別子: 0f7bcdf3-8103-4990-a740-acaeee386439  
+ ルール エンジン インスタンス識別子:0f7bcdf3-8103-4990-a740-acaeee386439  
   
- ルール セット名: LoanProcessing  
+ ルール セット名:LoanProcessing  
   
- 操作: 追加  
+ 操作:[追加]  
   
- ルール名: TestRule1  
+ ルール名:TestRule1  
   
- 競合解決条件: 0  
+ 競合解決条件:0  
   
  ファクト アクティビティ 2004/3/17 午前 11時 27分: 35  
   
- ルール エンジン インスタンス識別子: 0f7bcdf3-8103-4990-a740-acaeee386439  
+ ルール エンジン インスタンス識別子:0f7bcdf3-8103-4990-a740-acaeee386439  
   
- ルール セット名: LoanProcessing  
+ ルール セット名:LoanProcessing  
   
- 操作: アサート  
+ 操作:Filter  
   
- オブジェクトの種類: TypedDataRow:Northwind:CustInfo  
+ オブジェクトの種類:TypedDataRow:Northwind:CustInfo  
   
- オブジェクト インスタンス識別子: 375  
+ オブジェクト インスタンス識別子:375  
   
  条件の評価テスト (一致) 2004/3/17 午前 11時 27分: 35  
   
- ルール エンジン インスタンス識別子: 0f7bcdf3-8103-4990-a740-acaeee386439  
+ ルール エンジン インスタンス識別子:0f7bcdf3-8103-4990-a740-acaeee386439  
   
- ルール セット名: LoanProcessing  
+ ルール セット名:LoanProcessing  
   
- テスト式: TypedDataRow:Northwind:CustInfo.CreditCardBalance > 0  
+ テスト式。TypedDataRow:Northwind:CustInfo.CreditCardBalance > 0  
   
- 左のオペランド値: 1000  
+ 左側のオペランド値:1000  
   
- 右のオペランド値: 0  
+ 右側のオペランド値:0  
   
- テスト結果: True  
+ テスト結果。True  
   
  議題の更新 2004/3/17 午前 11時 27分: 35  
   
- ルール エンジン インスタンス識別子: 0f7bcdf3-8103-4990-a740-acaeee386439  
+ ルール エンジン インスタンス識別子:0f7bcdf3-8103-4990-a740-acaeee386439  
   
- ルール セット名: LoanProcessing  
+ ルール セット名:LoanProcessing  
   
- 操作: 追加  
+ 操作:[追加]  
   
- ルール名: TestRule1  
+ ルール名:TestRule1  
   
- 競合解決条件: 0  
+ 競合解決条件:0  
   
  ファクト アクティビティ 2004/3/17 午前 11時 27分: 35  
   
- ルール エンジン インスタンス識別子: 0f7bcdf3-8103-4990-a740-acaeee386439  
+ ルール エンジン インスタンス識別子:0f7bcdf3-8103-4990-a740-acaeee386439  
   
- ルール セット名: LoanProcessing  
+ ルール セット名:LoanProcessing  
   
- 操作: アサート  
+ 操作:Filter  
   
- オブジェクトの種類: TypedDataRow:Northwind:CustInfo  
+ オブジェクトの種類:TypedDataRow:Northwind:CustInfo  
   
- オブジェクト インスタンス識別子: 374  
+ オブジェクト インスタンス識別子:374  
   
  条件の評価テスト (一致) 2004/3/17 午前 11時 27分: 35  
   
- ルール エンジン インスタンス識別子: 0f7bcdf3-8103-4990-a740-acaeee386439  
+ ルール エンジン インスタンス識別子:0f7bcdf3-8103-4990-a740-acaeee386439  
   
- ルール セット名: LoanProcessing  
+ ルール セット名:LoanProcessing  
   
- テスト式: TypedDataRow:Northwind:CustInfo.CreditCardBalance > 0  
+ テスト式。TypedDataRow:Northwind:CustInfo.CreditCardBalance > 0  
   
- 左のオペランド値: 35000  
+ 左側のオペランド値:35000  
   
- 右のオペランド値: 0  
+ 右側のオペランド値:0  
   
- テスト結果: True  
+ テスト結果。True  
   
  議題の更新 2004/3/17 午前 11時 27分: 35  
   
- ルール エンジン インスタンス識別子: 0f7bcdf3-8103-4990-a740-acaeee386439  
+ ルール エンジン インスタンス識別子:0f7bcdf3-8103-4990-a740-acaeee386439  
   
- ルール セット名: LoanProcessing  
+ ルール セット名:LoanProcessing  
   
- 操作: 追加  
+ 操作:[追加]  
   
- ルール名: TestRule1  
+ ルール名:TestRule1  
   
- 競合解決条件: 0  
-  
- 2004/3/17 が実行されたルール午前 11時 27分: 35  
-  
- ルール エンジン インスタンス識別子: 0f7bcdf3-8103-4990-a740-acaeee386439  
-  
- ルール セット名: LoanProcessing  
-  
- ルール名: TestRule1  
-  
- 競合解決条件: 0  
+ 競合解決条件:0  
   
  2004/3/17 が実行されたルール午前 11時 27分: 35  
   
- ルール エンジン インスタンス識別子: 0f7bcdf3-8103-4990-a740-acaeee386439  
+ ルール エンジン インスタンス識別子:0f7bcdf3-8103-4990-a740-acaeee386439  
   
- ルール セット名: LoanProcessing  
+ ルール セット名:LoanProcessing  
   
- ルール名: TestRule1  
+ ルール名:TestRule1  
   
- 競合解決条件: 0  
+ 競合解決条件:0  
   
  2004/3/17 が実行されたルール午前 11時 27分: 35  
   
- ルール エンジン インスタンス識別子: 0f7bcdf3-8103-4990-a740-acaeee386439  
+ ルール エンジン インスタンス識別子:0f7bcdf3-8103-4990-a740-acaeee386439  
   
- ルール セット名: LoanProcessing  
+ ルール セット名:LoanProcessing  
   
- ルール名: TestRule1  
+ ルール名:TestRule1  
   
- 競合解決条件: 0  
+ 競合解決条件:0  
   
- ファクト アクティビティ 2004/3/17 午前 11時 27分: 35  
+ 2004/3/17 が実行されたルール午前 11時 27分: 35  
   
- ルール エンジン インスタンス識別子: 0f7bcdf3-8103-4990-a740-acaeee386439  
+ ルール エンジン インスタンス識別子:0f7bcdf3-8103-4990-a740-acaeee386439  
   
- ルール セット名: LoanProcessing  
+ ルール セット名:LoanProcessing  
   
- 操作: 取り消し  
+ ルール名:TestRule1  
   
- オブジェクトの種類: TypedDataTable:Northwind:CustInfo  
-  
- オブジェクト インスタンス識別子: 377  
+ 競合解決条件:0  
   
  ファクト アクティビティ 2004/3/17 午前 11時 27分: 35  
   
- ルール エンジン インスタンス識別子: 0f7bcdf3-8103-4990-a740-acaeee386439  
+ ルール エンジン インスタンス識別子:0f7bcdf3-8103-4990-a740-acaeee386439  
   
- ルール セット名: LoanProcessing  
+ ルール セット名:LoanProcessing  
   
- 操作: 取り消し  
+ 操作:取り消し  
   
- オブジェクトの種類: TypedDataRow:Northwind:CustInfo  
+ オブジェクトの種類:TypedDataTable:Northwind:CustInfo  
   
- オブジェクト インスタンス識別子: 375  
-  
- ファクト アクティビティ 2004/3/17 午前 11時 27分: 35  
-  
- ルール エンジン インスタンス識別子: 0f7bcdf3-8103-4990-a740-acaeee386439  
-  
- ルール セット名: LoanProcessing  
-  
- 操作: 取り消し  
-  
- オブジェクトの種類: TypedDataRow:Northwind:CustInfo  
-  
- オブジェクト インスタンス識別子: 374  
+ オブジェクト インスタンス識別子:377  
   
  ファクト アクティビティ 2004/3/17 午前 11時 27分: 35  
   
- ルール エンジン インスタンス識別子: 0f7bcdf3-8103-4990-a740-acaeee386439  
+ ルール エンジン インスタンス識別子:0f7bcdf3-8103-4990-a740-acaeee386439  
   
- ルール セット名: LoanProcessing  
+ ルール セット名:LoanProcessing  
   
- 操作: 取り消し  
+ 操作:取り消し  
   
- オブジェクトの種類: TypedDataRow:Northwind:CustInfo  
+ オブジェクトの種類:TypedDataRow:Northwind:CustInfo  
   
- オブジェクト インスタンス識別子: 376  
+ オブジェクト インスタンス識別子:375  
+  
+ ファクト アクティビティ 2004/3/17 午前 11時 27分: 35  
+  
+ ルール エンジン インスタンス識別子:0f7bcdf3-8103-4990-a740-acaeee386439  
+  
+ ルール セット名:LoanProcessing  
+  
+ 操作:取り消し  
+  
+ オブジェクトの種類:TypedDataRow:Northwind:CustInfo  
+  
+ オブジェクト インスタンス識別子:374  
+  
+ ファクト アクティビティ 2004/3/17 午前 11時 27分: 35  
+  
+ ルール エンジン インスタンス識別子:0f7bcdf3-8103-4990-a740-acaeee386439  
+  
+ ルール セット名:LoanProcessing  
+  
+ 操作:取り消し  
+  
+ オブジェクトの種類:TypedDataRow:Northwind:CustInfo  
+  
+ オブジェクト インスタンス識別子:376  
   
 > [!NOTE]
->  上記の例は、TypedDataTable に 3 つの行が含まれていることを示しています。各行は、TypedDataRow としてアサートされています。  各行は、条件で True として評価され、ルールが議題に追加されて実行されます。  
+>  上記の例は、TypedDataTable に 3 つの行が含まれているし、それぞれが、TypedDataRow としてアサートされたことを示します。  ルールが議題に追加して、発生した各条件で True に評価します。  
   
 ## <a name="typedxmldocument"></a>TypedXmlDocument  
- "LoanProcessing" ポリシーの "TestRule1" ルールの例:  
+ "LoanProcessing"ポリシーの例のルール"TestRule1":  
   
 ```  
 IF Microsoft.Samples.BizTalk.LoansProcessor.Case:/Root/EmploymentType.TimeInMonths >= 4  
@@ -517,98 +517,98 @@ THEN <do something>
   
  **出力:**  
   
- ルール セットのルール エンジン トレース: LoanProcessing 2004/3/17 9時 23分: 05 AM  
+ セットのルール エンジン トレース:LoanProcessing 2004/3/17 9時 23分: 05 AM  
   
- ファクト アクティビティ 2004/3/17 9:23:05 AM  
+ ファクト アクティビティ 2004/3/17 9時 23分: 05 AM  
   
- ルール エンジン インスタンス識別子: 51ffbea4-468f-4ce8-8ab7-977cadda2e2b  
+ ルール エンジン インスタンス識別子:51ffbea4-468f-4ce8-8ab7-977cadda2e2b  
   
- ルール セット名: LoanProcessing  
+ ルール セット名:LoanProcessing  
   
- 操作: アサート  
+ 操作:Filter  
   
- オブジェクトの種類: TypedXmlDocument:Microsoft.Samples.BizTalk.LoansProcessor.Case  
+ オブジェクトの種類:TypedXmlDocument:Microsoft.Samples.BizTalk.LoansProcessor.Case  
   
- オブジェクト インスタンス識別子: 858  
+ オブジェクト インスタンス識別子:858  
   
- ファクト アクティビティ 2004/3/17 9:23:05 AM  
+ ファクト アクティビティ 2004/3/17 9時 23分: 05 AM  
   
- ルール エンジン インスタンス識別子: 51ffbea4-468f-4ce8-8ab7-977cadda2e2b  
+ ルール エンジン インスタンス識別子:51ffbea4-468f-4ce8-8ab7-977cadda2e2b  
   
- ルール セット名: LoanProcessing  
+ ルール セット名:LoanProcessing  
   
- 操作: アサート  
+ 操作:Filter  
   
- オブジェクトの種類: TypedXmlDocument:Microsoft.Samples.BizTalk.LoansProcessor.Case:/Root/EmploymentType  
+ オブジェクトの種類:TypedXmlDocument:Microsoft.Samples.BizTalk.LoansProcessor.Case:/Root/EmploymentType  
   
- オブジェクト インスタンス識別子: 853  
+ オブジェクト インスタンス識別子:853  
   
  条件の評価テスト (一致) 2004/3/17 9時 23分: 05 AM  
   
- ルール エンジン インスタンス識別子: 51ffbea4-468f-4ce8-8ab7-977cadda2e2b  
+ ルール エンジン インスタンス識別子:51ffbea4-468f-4ce8-8ab7-977cadda2e2b  
   
- ルール セット名: LoanProcessing  
+ ルール セット名:LoanProcessing  
   
- テスト式: TypedXmlDocument:Microsoft.Samples.BizTalk.LoansProcessor.Case:/Root/EmploymentType.TimeInMonths > 4 を =  
+ テスト式。TypedXmlDocument:Microsoft.Samples.BizTalk.LoansProcessor.Case:/Root/EmploymentType.TimeInMonths >= 4  
   
- 左のオペランド値: 6  
+ 左側のオペランド値:6  
   
- 右のオペランド値: 4  
+ 右側のオペランド値:4  
   
- テスト結果: True  
+ テスト結果。True  
   
  議題の更新 2004/3/17 9時 23分: 05 AM  
   
- ルール エンジン インスタンス識別子: 51ffbea4-468f-4ce8-8ab7-977cadda2e2b  
+ ルール エンジン インスタンス識別子:51ffbea4-468f-4ce8-8ab7-977cadda2e2b  
   
- ルール セット名: LoanProcessing  
+ ルール セット名:LoanProcessing  
   
- 操作: 追加  
+ 操作:[追加]  
   
- ルール名: TestRule1  
+ ルール名:TestRule1  
   
- 競合解決条件: 0  
+ 競合解決条件:0  
   
  2004/3/17 が実行されたルール 9時 23分: 05 AM  
   
- ルール エンジン インスタンス識別子: 51ffbea4-468f-4ce8-8ab7-977cadda2e2b  
+ ルール エンジン インスタンス識別子:51ffbea4-468f-4ce8-8ab7-977cadda2e2b  
   
- ルール セット名: LoanProcessing  
+ ルール セット名:LoanProcessing  
   
- ルール名: TestRule1  
+ ルール名:TestRule1  
   
- 競合解決条件: 0  
+ 競合解決条件:0  
   
- ファクト アクティビティ 2004/3/17 9:23:05 AM  
+ ファクト アクティビティ 2004/3/17 9時 23分: 05 AM  
   
- ルール エンジン インスタンス識別子: 51ffbea4-468f-4ce8-8ab7-977cadda2e2b  
+ ルール エンジン インスタンス識別子:51ffbea4-468f-4ce8-8ab7-977cadda2e2b  
   
- ルール セット名: LoanProcessing  
+ ルール セット名:LoanProcessing  
   
- 操作: 取り消し  
+ 操作:取り消し  
   
- オブジェクトの種類: TypedXmlDocument:Microsoft.Samples.BizTalk.LoansProcessor.Case  
+ オブジェクトの種類:TypedXmlDocument:Microsoft.Samples.BizTalk.LoansProcessor.Case  
   
- オブジェクト インスタンス識別子: 858  
+ オブジェクト インスタンス識別子:858  
   
- ファクト アクティビティ 2004/3/17 9:23:05 AM  
+ ファクト アクティビティ 2004/3/17 9時 23分: 05 AM  
   
- ルール エンジン インスタンス識別子: 51ffbea4-468f-4ce8-8ab7-977cadda2e2b  
+ ルール エンジン インスタンス識別子:51ffbea4-468f-4ce8-8ab7-977cadda2e2b  
   
- ルール セット名: LoanProcessing  
+ ルール セット名:LoanProcessing  
   
- 操作: 取り消し  
+ 操作:取り消し  
   
- オブジェクトの種類: TypedXmlDocument:Microsoft.Samples.BizTalk.LoansProcessor.Case:/Root/EmploymentType  
+ オブジェクトの種類:TypedXmlDocument:Microsoft.Samples.BizTalk.LoansProcessor.Case:/Root/EmploymentType  
   
- オブジェクト インスタンス識別子: 853  
+ オブジェクト インスタンス識別子:853  
   
- 次の例、 **TypedXmlDocument** "microsoft.samples.biztalk.loansprocessor.case"というのドキュメントの種類を使用してエンジンにアサートされました。  次に、ルールで定義された XPath セレクターに応じて、エンジンは、ドキュメントの種類とセレクターの文字列に基づいた "Microsoft.Samples.BizTalk.LoansProcessor.Case:/Root/EmploymentType" の子 TypedXmlDocument を作成してアサートします。  
+ この例では、 **TypedXmlDocument** "microsoft.samples.biztalk.loansprocessor.case"というのドキュメントの種類を使用してエンジンにアサートされました。  ルールで定義された XPath セレクターに基づいて、エンジンを作成し、ドキュメントの種類とセレクターの文字列に基づいて"Microsoft.Samples.BizTalk.LoansProcessor.Case:/Root/EmploymentType"の種類と子 TypedXmlDocument をアサートします。  
   
- この子 TypedXmlDocument は、条件で True に評価されたため、議題の更新やルールの実行が行われます。  親と子**TypedXmlDocument**が取り消されます。  
+ この子 TypedXmlDocument 条件で True に評価された、議題の更新とルールの実行が原因です。  親と子**TypedXmlDocument**の取り消されたします。  
   
 ## <a name="update-function"></a>Update 関数  
- "Order" ポリシーの例  
+ "Order"のポリシーの例  
   
  **"InventoryCheck"ルール**  
   
@@ -627,179 +627,179 @@ THEN Shipment.ShipOrder
   
  **出力:**  
   
- ルール セットのルール エンジン トレース: Order 2004/3/17 10時 31分: 17 AM  
+ セットのルール エンジン トレース:2004/3/17 の注文 10時 31分: 17 AM  
   
  ファクト アクティビティ 2004/3/17 10時 31分: 17 AM  
   
- ルール エンジン インスタンス識別子: 533f2fb6-a91f-49c1-8f36-e03a27ca9d72  
+ ルール エンジン インスタンス識別子:533f2fb6-a91f-49c1-8f36-e03a27ca9d72  
   
- ルール セット名: 順序  
+ ルール セット名:[オーダー]  
   
- 操作: アサート  
+ 操作:Filter  
   
- オブジェクトの種類: TestClasses.Order  
+ オブジェクトの種類:TestClasses.Order  
   
- オブジェクト インスタンス識別子: 448  
+ オブジェクト インスタンス識別子:448  
   
  条件の評価テスト (一致) 2004/3/17 10時 31分: 17 AM  
   
- ルール エンジン インスタンス識別子: 533f2fb6-a91f-49c1-8f36-e03a27ca9d72  
+ ルール エンジン インスタンス識別子:533f2fb6-a91f-49c1-8f36-e03a27ca9d72  
   
- ルール セット名: 順序  
+ ルール セット名:[オーダー]  
   
- テスト式: TestClasses.Order.inventoryAvailable = = True  
+ テスト式。TestClasses.Order.inventoryAvailable == True  
   
  左のオペランド値: null  
   
- 右のオペランド値: True  
+ 右側のオペランド値:True  
   
- テスト結果: False  
-  
- ファクト アクティビティ 2004/3/17 10時 31分: 17 AM  
-  
- ルール エンジン インスタンス識別子: 533f2fb6-a91f-49c1-8f36-e03a27ca9d72  
-  
- ルール セット名: 順序  
-  
- 操作: アサート  
-  
- オブジェクトの種類: TestClasses.Shipment  
-  
- オブジェクト インスタンス識別子: 447  
+ テスト結果。False  
   
  ファクト アクティビティ 2004/3/17 10時 31分: 17 AM  
   
- ルール エンジン インスタンス識別子: 533f2fb6-a91f-49c1-8f36-e03a27ca9d72  
+ ルール エンジン インスタンス識別子:533f2fb6-a91f-49c1-8f36-e03a27ca9d72  
   
- ルール セット名: 順序  
+ ルール セット名:[オーダー]  
   
- 操作: アサート  
+ 操作:Filter  
   
- オブジェクトの種類: TestClasses.Inventory  
+ オブジェクトの種類:TestClasses.Shipment  
   
- オブジェクト インスタンス識別子: 446  
+ オブジェクト インスタンス識別子:447  
+  
+ ファクト アクティビティ 2004/3/17 10時 31分: 17 AM  
+  
+ ルール エンジン インスタンス識別子:533f2fb6-a91f-49c1-8f36-e03a27ca9d72  
+  
+ ルール セット名:[オーダー]  
+  
+ 操作:Filter  
+  
+ オブジェクトの種類:TestClasses.Inventory  
+  
+ オブジェクト インスタンス識別子:446  
   
  条件の評価テスト (一致) 2004/3/17 10時 31分: 17 AM  
   
- ルール エンジン インスタンス識別子: 533f2fb6-a91f-49c1-8f36-e03a27ca9d72  
+ ルール エンジン インスタンス識別子:533f2fb6-a91f-49c1-8f36-e03a27ca9d72  
   
- ルール セット名: 順序  
+ ルール セット名:[オーダー]  
   
- テスト式: TestClasses.Inventory.AllocateInventory = = True  
+ テスト式。TestClasses.Inventory.AllocateInventory == True  
   
- 左のオペランド値: True  
+ 左側のオペランド値:True  
   
- 右のオペランド値: True  
+ 右側のオペランド値:True  
   
- テスト結果: True  
+ テスト結果。True  
   
  議題の更新 2004/3/17 10時 31分: 17 AM  
   
- ルール エンジン インスタンス識別子: 533f2fb6-a91f-49c1-8f36-e03a27ca9d72  
+ ルール エンジン インスタンス識別子:533f2fb6-a91f-49c1-8f36-e03a27ca9d72  
   
- ルール セット名: 順序  
+ ルール セット名:[オーダー]  
   
- 操作: 追加  
+ 操作:[追加]  
   
- ルール名: InventoryCheck  
+ ルール名:InventoryCheck  
   
- 競合解決条件: 0  
+ 競合解決条件:0  
   
  2004/3/17 が実行されたルール 10時 31分: 17 AM  
   
- ルール エンジン インスタンス識別子: 533f2fb6-a91f-49c1-8f36-e03a27ca9d72  
+ ルール エンジン インスタンス識別子:533f2fb6-a91f-49c1-8f36-e03a27ca9d72  
   
- ルール セット名: 順序  
+ ルール セット名:[オーダー]  
   
- ルール名: InventoryCheck  
+ ルール名:InventoryCheck  
   
- 競合解決条件: 0  
+ 競合解決条件:0  
   
  ファクト アクティビティ 2004/3/17 10時 31分: 17 AM  
   
- ルール エンジン インスタンス識別子: 533f2fb6-a91f-49c1-8f36-e03a27ca9d72  
+ ルール エンジン インスタンス識別子:533f2fb6-a91f-49c1-8f36-e03a27ca9d72  
   
- ルール セット名: 順序  
+ ルール セット名:[オーダー]  
   
- 操作: 更新プログラム  
+ 操作:更新  
   
- オブジェクトの種類: TestClasses.Order  
+ オブジェクトの種類:TestClasses.Order  
   
- オブジェクト インスタンス識別子: 448  
+ オブジェクト インスタンス識別子:448  
   
  条件の評価テスト (一致) 2004/3/17 10時 31分: 17 AM  
   
- ルール エンジン インスタンス識別子: 533f2fb6-a91f-49c1-8f36-e03a27ca9d72  
+ ルール エンジン インスタンス識別子:533f2fb6-a91f-49c1-8f36-e03a27ca9d72  
   
- ルール セット名: 順序  
+ ルール セット名:[オーダー]  
   
- テスト式: TestClasses.Order.inventoryAvailable = = True  
+ テスト式。TestClasses.Order.inventoryAvailable == True  
   
- 左のオペランド値: True  
+ 左側のオペランド値:True  
   
- 右のオペランド値: True  
+ 右側のオペランド値:True  
   
- テスト結果: True  
+ テスト結果。True  
   
  議題の更新 2004/3/17 10時 31分: 17 AM  
   
- ルール エンジン インスタンス識別子: 533f2fb6-a91f-49c1-8f36-e03a27ca9d72  
+ ルール エンジン インスタンス識別子:533f2fb6-a91f-49c1-8f36-e03a27ca9d72  
   
- ルール セット名: 順序  
+ ルール セット名:[オーダー]  
   
- 操作: 追加  
+ 操作:[追加]  
   
- ルール名: 出荷  
+ ルール名:出荷  
   
- 競合解決条件: 0  
+ 競合解決条件:0  
   
  2004/3/17 が実行されたルール 10時 31分: 17 AM  
   
- ルール エンジン インスタンス識別子: 533f2fb6-a91f-49c1-8f36-e03a27ca9d72  
+ ルール エンジン インスタンス識別子:533f2fb6-a91f-49c1-8f36-e03a27ca9d72  
   
- ルール セット名: 順序  
+ ルール セット名:[オーダー]  
   
- ルール名: 出荷  
+ ルール名:出荷  
   
- 競合解決条件: 0  
-  
- ファクト アクティビティ 2004/3/17 10時 31分: 17 AM  
-  
- ルール エンジン インスタンス識別子: 533f2fb6-a91f-49c1-8f36-e03a27ca9d72  
-  
- ルール セット名: 順序  
-  
- 操作: 取り消し  
-  
- オブジェクトの種類: TestClasses.Order  
-  
- オブジェクト インスタンス識別子: 448  
+ 競合解決条件:0  
   
  ファクト アクティビティ 2004/3/17 10時 31分: 17 AM  
   
- ルール エンジン インスタンス識別子: 533f2fb6-a91f-49c1-8f36-e03a27ca9d72  
+ ルール エンジン インスタンス識別子:533f2fb6-a91f-49c1-8f36-e03a27ca9d72  
   
- ルール セット名: 順序  
+ ルール セット名:[オーダー]  
   
- 操作: 取り消し  
+ 操作:取り消し  
   
- オブジェクトの種類: TestClasses.Shipment  
+ オブジェクトの種類:TestClasses.Order  
   
- オブジェクト インスタンス識別子: 447  
+ オブジェクト インスタンス識別子:448  
   
  ファクト アクティビティ 2004/3/17 10時 31分: 17 AM  
   
- ルール エンジン インスタンス識別子: 533f2fb6-a91f-49c1-8f36-e03a27ca9d72  
+ ルール エンジン インスタンス識別子:533f2fb6-a91f-49c1-8f36-e03a27ca9d72  
   
- ルール セット名: 順序  
+ ルール セット名:[オーダー]  
   
- 操作: 取り消し  
+ 操作:取り消し  
   
- オブジェクトの種類: TestClasses.Inventory  
+ オブジェクトの種類:TestClasses.Shipment  
   
- オブジェクト インスタンス識別子: 446  
+ オブジェクト インスタンス識別子:447  
   
- この例では、Ship ルールに関連付けられている条件が最初に確認されるときに False と評価されます。  ただし、InventoryCheck ルールが実行されると、Order オブジェクトの inventoryAvailable フィールドが変更され、Update コマンドが Order オブジェクトのエンジンで発行されます。  このため、Ship ルールが再評価されます。  今回の条件は True に評価され、Ship ルールが実行されます。  
+ ファクト アクティビティ 2004/3/17 10時 31分: 17 AM  
+  
+ ルール エンジン インスタンス識別子:533f2fb6-a91f-49c1-8f36-e03a27ca9d72  
+  
+ ルール セット名:[オーダー]  
+  
+ 操作:取り消し  
+  
+ オブジェクトの種類:TestClasses.Inventory  
+  
+ オブジェクト インスタンス識別子:446  
+  
+ この例では、Ship ルールに関連付けられている条件は、最初に確認されるときを False に評価されます。  ただし、InventoryCheck ルールが発生したときは、順序の inventoryAvailable フィールドが変更され、Order オブジェクトのエンジンに対して、Update コマンドが実行されました。  これにより、Ship ルールが再評価されます。  この時間条件を true と評価、Ship ルールが起動します。  
   
 > [!NOTE]
->  ルールが不正確に書き込まれると、Update 関数の前向き連鎖で、無限ループに陥る可能性があります。  無限ループが発生すると、ビジネス ルール作成ツールのポリシーをテストするときに、"ルール エンジンが実行ループを検出しました。" というエラー メッセージが表示されます。
+>  ルールが正しく書き込まれた、前向き連鎖更新関数で、無限ループことがあります。  この場合、メッセージが表示されます、エラー テキストを含むビジネス ルール作成ツールでポリシーをテストするときに「ルール エンジンの検出は実行ループを」

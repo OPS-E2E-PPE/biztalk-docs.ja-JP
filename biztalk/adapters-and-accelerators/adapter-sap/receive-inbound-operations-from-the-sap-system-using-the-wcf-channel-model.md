@@ -16,12 +16,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f7c0c819372cf23842eb5311df8636e55e28c72a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f13a75346fd419f18de1d9574d96c3dafde3046c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36969683"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373056"
 ---
 # <a name="receive-inbound-operations-from-the-sap-system-using-the-wcf-channel-model"></a>WCF チャネル モデルを使用して、SAP システムからの受信操作を受信します。
 RFC サーバーとして動作し、SAP システム (IDOC を送信、RFC を呼び出すなど) によって呼び出された操作の受信、経由での SAP プログラム ID からのメッセージをリッスンできるチャネル リスナーを作成する必要があります、 **System.ServiceModel.Channels.IReplyChannel**チャネル形状です。  
@@ -30,7 +30,7 @@ RFC サーバーとして動作し、SAP システム (IDOC を送信、RFC を�
   
  [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]サポート、 **IReplyChannel**チャネル形状です。 **IReplyChannel**チャネルが受信要求-応答メッセージ交換パターンをサポートします。 つまり、外部プログラムが、チャネルとプログラム経由で要求メッセージを送信するパターンは、応答を返します。  
   
- 受信操作を使用する方法の概要については、 **IReplyChannel** WCF では、[サービス チャネル レベルのプログラミング](https://msdn.microsoft.com/library/ms789029.aspx)を参照してください。
+ 受信操作を使用する方法の概要については、 **IReplyChannel** WCF では、次を参照してください。[サービス チャネル レベルのプログラミング](https://msdn.microsoft.com/library/ms789029.aspx)します。
   
  このセクションでは、SAP システムからの操作の受信に固有の次のトピックについて説明します。  
   
@@ -49,7 +49,7 @@ RFC サーバーとして動作し、SAP システム (IDOC を送信、RFC を�
   
  場合は、SAP システムでは、受信アクションのコレクションではない操作を呼び出します。  
   
-- [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] SAP システムを次のメッセージで例外の例外を呼び出し元に返します。"受信 RFC 呼び出し [RFC_NAME] を Rfc サーバーが処理されない"。 このメッセージの [RFC_NAME] は、RFC (たとえば、IDOC_INBOUND_ASYNCHRONOUS) の名前です。  
+- [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] SAP システムを次のメッセージで例外の例外を呼び出し元に返します。「受信 RFC 呼び出し [RFC_NAME] を Rfc サーバーは処理されません。」 このメッセージの [RFC_NAME] は、RFC (たとえば、IDOC_INBOUND_ASYNCHRONOUS) の名前です。  
   
 - アダプターがスローされます、 **Microsoft.ServiceModel.Channels.Common.AdapterException**受信した操作を示すメッセージを使用します。 この例外を使用する方法の例は、このトピックの最後の例を参照してください。  
   
@@ -150,21 +150,21 @@ rc.Reply(faultMessage);
 ```  
   
 ## <a name="streaming-inbound-flat-file-idocs-from-the-sap-adapter"></a>受信フラット ファイル Idoc を SAP アダプターからストリーミング  
- (String) Idoc 受信 ReceiveIdoc 操作でアダプターからのフラット ファイルが表示されます。 IDOC データは、この操作で 1 つのノードの下の文字列として表されます。 このため、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]ノード値の要求メッセージのストリーミングをサポートしています。 ノード値のストリーミングを実行するのには、呼び出すことによって ReceiveIdoc 操作の要求メッセージを使用する必要があります、 **Message.WriteBodyContents**メソッドを**System.Xml.XmlDictionaryWriter**ですIDOC データをストリーミングすることができます。 これを行う方法については、[WCF チャネル モデルを使用して SAP でのフラット ファイル Idoc のストリーミング](../../adapters-and-accelerators/adapter-sap/stream-flat-file-idocs-in-sap-using-the-wcf-channel-model.md)を参照してください。  
+ (String) Idoc 受信 ReceiveIdoc 操作でアダプターからのフラット ファイルが表示されます。 IDOC データは、この操作で 1 つのノードの下の文字列として表されます。 このため、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]ノード値の要求メッセージのストリーミングをサポートしています。 ノード値のストリーミングを実行するのには、呼び出すことによって ReceiveIdoc 操作の要求メッセージを使用する必要があります、 **Message.WriteBodyContents**メソッドを**System.Xml.XmlDictionaryWriter**ですIDOC データをストリーミングすることができます。 これを行う方法については、次を参照してください。 [WCF チャネル モデルを使用して SAP でのフラット ファイル Idoc のストリーミング](../../adapters-and-accelerators/adapter-sap/stream-flat-file-idocs-in-sap-using-the-wcf-channel-model.md)します。  
   
 ## <a name="how-do-i-receive-operations-from-a-sap-system-using-an-ireplychannel"></a>IReplyChannel を使用して SAP システムから操作を受信する方法  
  WCF チャネル モデルを使用して、SAP システムから操作を受信するには、次の手順を実行します。  
   
 #### <a name="to-receive-operations-from-the-sap-system-using-an-ireplychannel"></a>操作を IReplyChannel を使用して、SAP システムから受信するには  
   
-1.  インスタンスを作成**SAPBinding**を受信する操作に必要なバインドのプロパティを設定します。 設定する必要がありますには、少なくとも、 **AcceptCredentialsInUri**プロパティを true にバインドします。 TRFC サーバーとして機能しを設定する必要があります、 **TidDatabaseConnectionString**プロパティをバインドします。 バインド プロパティの詳細については、[mySAP Business Suite バインド プロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md)を参照してください。  
+1.  インスタンスを作成**SAPBinding**を受信する操作に必要なバインドのプロパティを設定します。 設定する必要がありますには、少なくとも、 **AcceptCredentialsInUri**プロパティを true にバインドします。 TRFC サーバーとして機能しを設定する必要があります、 **TidDatabaseConnectionString**プロパティをバインドします。 バインド プロパティの詳細については、次を参照してください。 [mySAP Business Suite バインド プロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md)します。  
   
     ```  
     SAPBinding binding = new SAPBinding();  
     binding.AcceptCredentialsInUri = true;  
     ```  
   
-2.  作成、 **BindingParameterCollection**を追加し、 **InboundActionCollection**を受信する操作のアクションを格納しています。 アダプターでは、その他のすべての操作の SAP システムに例外を返します。 このステップは省略可能です。 詳細については、[WCF チャネル モデルを使用して、SAP システムからの受信操作の受信](../../adapters-and-accelerators/adapter-sap/receive-inbound-operations-from-the-sap-system-using-the-wcf-channel-model.md)を参照してください。  
+2.  作成、 **BindingParameterCollection**を追加し、 **InboundActionCollection**を受信する操作のアクションを格納しています。 アダプターでは、その他のすべての操作の SAP システムに例外を返します。 このステップは省略可能です。 詳細については、次を参照してください。 [WCF チャネル モデルを使用して、SAP システムからの受信操作の受信](../../adapters-and-accelerators/adapter-sap/receive-inbound-operations-from-the-sap-system-using-the-wcf-channel-model.md)します。  
   
     ```  
     InboundActionCollection actions = new InboundActionCollection(listeneraddress);  
@@ -173,7 +173,7 @@ rc.Reply(faultMessage);
     bpcol.Add(actions);  
     ```  
   
-3.  呼び出してチャネル リスナーを作成して**BuildChannelListener < IReplyChannel\>** メソッドを**SAPBinding**を開きます。 このメソッドにパラメーターの 1 つとして、SAP 接続 URI を指定します。 接続 URI は、SAP システムの RFC 転送先のパラメーターを含める必要があります。 SAP 接続 URI の詳細については、[SAP システム接続 URI の作成](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md)を参照してください。 作成した場合、 **BindingParameterCollection**手順 3 で指定することもこのチャネル リスナーを作成するときにします。  
+3.  呼び出してチャネル リスナーを作成して**BuildChannelListener < IReplyChannel\>** メソッドを**SAPBinding**を開きます。 このメソッドにパラメーターの 1 つとして、SAP 接続 URI を指定します。 接続 URI は、SAP システムの RFC 転送先のパラメーターを含める必要があります。 SAP 接続 URI の詳細については、次を参照してください。 [SAP システム接続 URI の作成](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md)です。 作成した場合、 **BindingParameterCollection**手順 3 で指定することもこのチャネル リスナーを作成するときにします。  
   
     ```  
     Uri listeneraddress =  

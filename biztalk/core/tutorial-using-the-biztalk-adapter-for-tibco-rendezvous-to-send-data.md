@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル: TIBCO Rendezvous アダプターを使用して送信する |Microsoft Docs'
+title: チュートリアル:TIBCO Rendezvous アダプターを使用して送信する |Microsoft Docs
 description: BizTalk Server で TIBCO Rendezvous の BizTalk アダプターを使用して、TIBCO システムにデータを送信するステップ バイ ステップ ガイド
 ms.custom: ''
 ms.date: 06/08/2017
@@ -13,21 +13,21 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ef842eacf261904173b90728ba2702513973cf53
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8b883f6ec3529a7a0a1acce538f2d878210d7c01
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36966939"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65393812"
 ---
-# <a name="tutorial-using-the-biztalk-adapter-for-tibco-rendezvous-to-send-data"></a>チュートリアル: BizTalk Adapter for TIBCO Rendezvous を使用したデータの送信
+# <a name="tutorial-using-the-biztalk-adapter-for-tibco-rendezvous-to-send-data"></a>チュートリアル:BizTalk Adapter for TIBCO Rendezvous を使用してデータを送信するには
 BizTalk Adapter for TIBCO Rendezvous を使用して TIBCO システムにデータを送信できます。 このチュートリアルでは、これを示す SDK サンプルについて説明します。  
 
 ## <a name="prerequisites"></a>前提条件  
 
 - このサンプルをビルドして展開するには、アダプターが実行されている [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] に [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] をインストールしてください。  
 
-- サンプルでは、メッセージ コンテキストのプロパティを含んでいる Microsoft.BizTalk.Adapters.TibRV.Properties.dll という DLL を使用します。 ソリューションからこのライブラリへの参照を更新する必要がある場合があります。 詳細については、[BizTalk Server のメッセージ コンテキスト プロパティ (送信ハンドラー)](../core/biztalk-server-message-context-properties-send-handlers.md)を参照してください。  
+- サンプルでは、メッセージ コンテキスト プロパティを含んでいる DLL を使用します。Microsoft.BizTalk.Adapters.TibRV.Properties.dll します。 ソリューションからこのライブラリへの参照を更新する必要がある場合があります。 詳細については、次を参照してください。 [BizTalk Server のメッセージ コンテキスト プロパティ (送信ハンドラー)](../core/biztalk-server-message-context-properties-send-handlers.md)します。  
 
 ## <a name="about-the-sample"></a>サンプルについて 
 
@@ -44,7 +44,7 @@ BizTalk Adapter for TIBCO Rendezvous を使用して TIBCO システムにデー
     |Orchestration.odx|アプリケーションが使用するオーケストレーション。|  
     |TIBCORendezvousOneWaySend.snk|厳密な名前のキー ファイル。|  
 
-## <a name="step-1-add-the-adapter-to-biztalk-administration"></a>手順 1: アダプターを BizTalk 管理コンソールを追加します。
+## <a name="step-1-add-the-adapter-to-biztalk-administration"></a>手順 1:アダプターを BizTalk 管理コンソールに追加します。
 
 1.  **BizTalk Server 管理**、展開**BizTalk グループ**、展開**プラットフォームの設定**、 をクリックし、**アダプター**します。  
 
@@ -54,7 +54,7 @@ BizTalk Adapter for TIBCO Rendezvous を使用して TIBCO システムにデー
 
 5.  選択**TIBCO(r) Rendezvous(r)** で利用可能なアダプターの一覧から、**アダプター**ドロップダウンをクリック **[ok]**。  
 
-## <a name="step-2-create-a-send-port"></a>手順 2: 送信ポートを作成します。  
+## <a name="step-2-create-a-send-port"></a>手順 2:送信ポートを作成します。  
 
 1. **BizTalk Server 管理**、展開**BizTalk グループ**、展開**アプリケーション**、展開**BizTalk アプリケーション 1**、 をクリック**送信ポート**します。  
 
@@ -93,7 +93,7 @@ BizTalk Adapter for TIBCO Rendezvous を使用して TIBCO システムにデー
    |ネットワーク|Rendezvous トランスポート ネットワーク パラメーター。|  
    |サービス|Rendezvous トランスポート サービス パラメーター。|  
 
-    プロパティの詳細については、[送信アイテムの作成](../core/creating-tibco-rendezvous-send-handlers.md)を参照してください。  
+    プロパティの詳細については、次を参照してください。[送信アイテムの作成](../core/creating-tibco-rendezvous-send-handlers.md)です。  
 
 8. **[OK]** をクリックします。  
 
@@ -101,7 +101,7 @@ BizTalk Adapter for TIBCO Rendezvous を使用して TIBCO システムにデー
 
 10. 送信ポートを右クリックし、をクリックして**開始**を参加させて、送信ポートを開始します。  
 
-## <a name="step-3-create-a-receive-port"></a>手順 3: 受信ポートを作成します。  
+## <a name="step-3-create-a-receive-port"></a>手順 3:受信ポートを作成する  
 
 1.  **BizTalk Server 管理**、展開**BizTalk グループ**、展開**アプリケーション**、展開**BizTalk アプリケーション 1**、 をクリック**受信ポート**します。  
 
@@ -109,7 +109,7 @@ BizTalk Adapter for TIBCO Rendezvous を使用して TIBCO システムにデー
 
 3.  値を入力、**名前**フィールドに**TIBCORndOneWayFileRP**、 をクリック**OK**します。  
 
-## <a name="step-4-create-a-receive-location"></a>手順 4: 受信場所を作成します。  
+## <a name="step-4-create-a-receive-location"></a>手順 4:受信場所を作成します。  
 
 1.  監視対象のファイル受信場所となるフォルダー (たとえば C:\Filesource) を作成します。  
 
@@ -125,7 +125,7 @@ BizTalk Adapter for TIBCO Rendezvous を使用して TIBCO システムにデー
 
 7.  受信場所を右クリックし、をクリックして**を有効にする**します。  
 
-## <a name="step-5-generate-a-document-instance-from-the-schema"></a>手順 5: スキーマからドキュメント インスタンスを生成します。  
+## <a name="step-5-generate-a-document-instance-from-the-schema"></a>手順 5:スキーマからドキュメント インスタンスを生成します。  
 
 1.  Visual Studio で、ソリューション エクスプ ローラーで、Schema.xsd を右クリックし、をクリックして**プロパティ**します。  
 
@@ -140,7 +140,7 @@ BizTalk Adapter for TIBCO Rendezvous を使用して TIBCO システムにデー
 
 5.  ソリューション エクスプ ローラーで、Schema.xsd を右クリックし、をクリックして**インスタンスの生成**指定された場所にドキュメント インスタンスを生成します。  
 
-## <a name="step-6-update-the-generated-document-instance"></a>手順 6: 生成されたドキュメント インスタンスを更新します。  
+## <a name="step-6-update-the-generated-document-instance"></a>手順 6:生成されたドキュメント インスタンスを更新します。  
 
 1.  テキスト エディター (メモ帳動作) で生成されたドキュメント インスタンスを開き、データが TIBCO システムに一意のレコードを生成することを確認するドキュメント インスタンスの内容を編集します。 たとえば、次のコードは、データ ファイルの最初の部分を示しています。  
 
@@ -153,7 +153,7 @@ BizTalk Adapter for TIBCO Rendezvous を使用して TIBCO システムにデー
 
 2.  変更したドキュメント インスタンスを保存します。  
 
-## <a name="step-7-build-and-deploy-the-project"></a>手順 7: 構築し、プロジェクトの配置  
+## <a name="step-7-build-and-deploy-the-project"></a>手順 7:プロジェクトのビルドと展開  
 
 1. 右クリックし、 **OneWaySend**ソリューション エクスプ ローラーでプロジェクトを**プロパティ**をプロジェクトのプロジェクト デザイナーを起動します。  
 
@@ -163,7 +163,7 @@ BizTalk Adapter for TIBCO Rendezvous を使用して TIBCO システムにデー
 
 4. ソリューション エクスプ ローラーで OneWaySend プロジェクトを右クリックし、をクリックして**デプロイ**プロジェクトをビルドしてアセンブリを展開する、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]構成データベース。  
 
-## <a name="step-8-bind-enlist-and-start-the-orchestration"></a>手順 8: バインド、参加、およびオーケストレーションを開始します  
+## <a name="step-8-bind-enlist-and-start-the-orchestration"></a>手順 8:バインド、参加、およびオーケストレーションを開始します  
 
 1. **BizTalk Server 管理**、展開**BizTalk グループ**、展開**アプリケーション**、展開**BizTalk アプリケーション 1**、 をクリック**オーケストレーション**します。  
 
@@ -187,7 +187,7 @@ BizTalk Adapter for TIBCO Rendezvous を使用して TIBCO システムにデー
 
 7. オーケストレーションを右クリックし、をクリックして**開始**を参加させて、オーケストレーションを開始します。  
 
-## <a name="step-9-drop-a-document-and-check-the-tibco-system"></a>手順 9: ドキュメントを削除して TIBCO システムを確認します。
+## <a name="step-9-drop-a-document-and-check-the-tibco-system"></a>手順 9:ドキュメントを削除して TIBCO システムを確認します。
 
 -   先ほど作成したドキュメント インスタンスを、アプリケーションが監視するファイル受信フォルダーにコピーします。  
 
@@ -210,5 +210,5 @@ BizTalk Adapter for TIBCO Rendezvous を使用して TIBCO システムにデー
 
 ## <a name="see-also"></a>参照  
  [チュートリアル: BizTalk Adapter for TIBCO Rendezvous を使用してデータを受信するには](../core/tutorial-using-the-biztalk-adapter-for-tibco-rendezvous-to-receive-data.md)   
- [チュートリアル: TIBCO Rendezvous 用の Microsoft BizTalk Adapter の使用](../core/tutorials-using-the-microsoft-biztalk-adapter-for-tibco-rendezvous.md)   
+ [チュートリアル:TIBCO Rendezvous の Microsoft BizTalk Adapter の使用](../core/tutorials-using-the-microsoft-biztalk-adapter-for-tibco-rendezvous.md)   
  [作業の開始](../core/getting-started-with-biztalk-adapter-for-tibco-rendezvous.md)

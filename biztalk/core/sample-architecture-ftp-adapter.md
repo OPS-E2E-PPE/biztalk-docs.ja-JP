@@ -1,5 +1,5 @@
 ---
-title: 'サンプル アーキテクチャ: FTP アダプター |Microsoft ドキュメント'
+title: サンプル アーキテクチャ:FTP アダプター |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -22,49 +22,49 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bed15e06027bec5e73c19cf73548674bc51ce68a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: baa9a9514d7e1524cd277e3e822f7b15a2904d7d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22269850"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65393941"
 ---
-# <a name="sample-architecture-ftp-adapter"></a>FTP アダプターのサンプル アーキテクチャ:
-このトピックでは、FTP アダプターを使用してメッセージを送受信する場合のサンプル アーキテクチャについて説明します。  
+# <a name="sample-architecture-ftp-adapter"></a>サンプル アーキテクチャ:FTP アダプター
+このトピックでは、FTP アダプターを使用してメッセージを送信する場合、サンプル アーキテクチャについて説明します。  
   
- 次の図は、FTP アダプタを使用する場合の BizTalk サンプル アーキテクチャのコンポーネントを示しています。  
+ 次の図は、FTP アダプターを使用する場合に、BizTalk Server のコンポーネントのサンプル アーキテクチャを示します。  
   
- **FTP アダプタを示すサンプル アーキテクチャを図 1**  
+ **FTP アダプタを示す図 1 サンプル アーキテクチャ**  
   
- ![FTP アダプターのアーキテクチャをサンプル](../core/media/tdi-sec-refarch-ftp.gif "TDI_Sec_RefArch_FTP")  
+ ![FTP アダプターのアーキテクチャのサンプル](../core/media/tdi-sec-refarch-ftp.gif "TDI_Sec_RefArch_FTP")  
   
  このサンプル アーキテクチャには、次のセクションで説明したように、コンポーネントが含まれています。  
   
-## <a name="perimeter-networkinternet"></a>境界ネットワーク - インターネット  
- FTP アダプタを使用する場合、インターネットの境界ネットワーク内に FTP サーバーがあります。  
+## <a name="perimeter-networkinternet"></a>境界ネットワーク-インターネット  
+ FTP サーバーが、FTP アダプターを使用すると、インターネット境界ネットワークであります。  
   
 > [!NOTE]
->  環境の外部、FTP サーバーを配置することも — ネットワークでは、パートナーのまたはサード パーティの独立系ソフトウェア ベンダー (ISV) によってホストされています。  
+>  環境の外部、FTP サーバーを配置することも、パートナーのネットワークに、またはサード パーティの独立系ソフトウェア ベンダー (ISV) によってホストされています。  
   
-## <a name="perimeter-networkintranet"></a>境界ネットワーク - イントラネット  
- 企業ではインターネット ベースの通信に FTP プロトコルを使用することが多いので、このシナリオをサポートするためにイントラネットの境界ネットワーク内にサーバーを配置する必要はありません。  
+## <a name="perimeter-networkintranet"></a>境界ネットワーク-イントラネット  
+ 企業は、インターネット ベースの通信に FTP プロトコルを使用する一般的と、このシナリオをサポートするためにイントラネット境界ネットワーク内のサーバーでそのため必要がありません。  
   
 ## <a name="e-business-domain"></a>E ビジネス ドメイン  
  このドメイン内のサーバーは次のとおりです。  
   
--   **BizTalk Server (処理、FTP アダプター、および追跡ホスト)。** このサーバーには、BizTalk Server ランタイムがインストールされており、BizTalk オーケストレーション、パイプライン、ビジネス ルール エンジン、およびその他のビジネス プロセスを含むホストのインスタンスが格納されています。 ここには、BizTalk Server のポート、受信場所、パイプライン、マップ、スキーマ、およびアセンブリがメッセージを受信、ルーティング、処理、および送信するために配置されています。 このサーバーでは、正常性監視とビジネスの監視データの追跡をサポートするホストのホスト インスタンスもあります。 さらに、FTP 送信アダプタと FTP 受信アダプタを実行するホストのインスタンスが含まれています。  
+-   **BizTalk Server (処理、FTP アダプター、および追跡ホスト)。** このサーバーは、BizTalk Server ランタイムのインストールされてし、BizTalk オーケストレーション、パイプライン、ビジネス ルール エンジン、および他のビジネス プロセスが含まれているホストのインスタンスが存在します。 これは、BizTalk Server のポート、受信場所、パイプライン、マップ、スキーマ、およびアセンブリが存在する受信、ルーティング、処理、およびメッセージを送信します。 このサーバーでは、正常性の監視とビジネスの監視データの追跡をサポートするホストのホスト インスタンスもあります。 さらに、このホストは、FTP 送信を実行するホストのインスタンスが含まれ、受信アダプター。  
   
     > [!NOTE]
-    >  パフォーマンスを向上させる必要がある場合、処理ホストのホスト インスタンス用の環境に BizTalk Server をさらに追加できます。 BizTalk Server の高可用性を構成する方法の詳細については、次を参照してください。[高可用性の計画](../core/planning-for-high-availability3.md)です。  
+    >  パフォーマンス ニーズの増加に応じて、処理ホストのホスト インスタンスの環境に BizTalk Server を追加できます。 高可用性のための BizTalk Server を構成する方法の詳細については、次を参照してください。[高可用性の計画](../core/planning-for-high-availability3.md)します。  
   
--   **マスター シークレット サーバーです。** 同じように、[サンプル アーキテクチャ: 基盤となる BizTalk Server](../core/sample-architecture-base-biztalk-server.md)です。  
+-   **マスター シークレット サーバーです。** 同じように、[サンプル アーキテクチャ。基盤となる BizTalk Server](../core/sample-architecture-base-biztalk-server.md)します。  
   
--   **SQL Server。** 同じ、[サンプル アーキテクチャ: 基盤となる BizTalk Server](../core/sample-architecture-base-biztalk-server.md)です。  
+-   **SQL Server。** 同じ、[サンプル アーキテクチャ。基盤となる BizTalk Server](../core/sample-architecture-base-biztalk-server.md)します。  
   
--   **ドメイン コント ローラー。** 場合と同じように同じ、[サンプル アーキテクチャ: 基盤となる BizTalk Server](../core/sample-architecture-base-biztalk-server.md)です。  
+-   **ドメイン コント ローラー。** 同じものと同じように、[サンプル アーキテクチャ。基盤となる BizTalk Server](../core/sample-architecture-base-biztalk-server.md)します。  
   
--   **管理ツールです。** 同じように、[サンプル アーキテクチャ: 基盤となる BizTalk Server](../core/sample-architecture-base-biztalk-server.md)です。  
+-   **管理ツールです。** 同じように、[サンプル アーキテクチャ。基盤となる BizTalk Server](../core/sample-architecture-base-biztalk-server.md)します。  
   
 ## <a name="see-also"></a>参照  
- [小規模および中規模企業向けのサンプル アーキテクチャ](../core/sample-architectures-for-small-medium-sized-companies.md)   
+ [中小規模の企業向けのサンプル アーキテクチャ](../core/sample-architectures-for-small-medium-sized-companies.md)   
  [脅威モデル分析のサンプル シナリオ](../core/sample-scenarios-for-threat-model-analysis.md)

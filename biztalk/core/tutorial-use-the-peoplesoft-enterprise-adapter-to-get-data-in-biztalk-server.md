@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル: BizTalk Adapter for PeopleSoft Enterprise を使用して PeopleSoft Enterprise からデータを取得する |Microsoft Docs'
+title: チュートリアル:BizTalk Adapter for PeopleSoft Enterprise を使用して、PeopleSoft Enterprise からデータを取得する |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,15 +12,15 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9728e642a1ad9e03e550a652757d33038cbab79d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 447e447dd261ad49f4dd5588bf602512f45768fb
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36993427"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395411"
 ---
-# <a name="tutorial-using-the-biztalk-adapter-for-peoplesoft-enterprise-to-retrieve-data-from-peoplesoft-enterprise"></a>チュートリアル: BizTalk Adapter for PeopleSoft Enterprise を使用した PeopleSoft Enterprise からのデータの取得
-BizTalk Adapter for PeopleSoft Enterprise を使用すると、PeopleSoft システムに対してクエリを実行し、そのクエリの結果を返すことができます。 ここでは、この機能を示す SDK サンプルについて説明します。  
+# <a name="tutorial-using-the-biztalk-adapter-for-peoplesoft-enterprise-to-retrieve-data-from-peoplesoft-enterprise"></a>チュートリアル:BizTalk Adapter for PeopleSoft Enterprise を使用して、PeopleSoft Enterprise からデータを取得するには
+PeopleSoft システムに対してクエリを実行し、クエリの結果を返すには、BizTalk Adapter for PeopleSoft Enterprise を使用できます。 このチュートリアルでは、この機能を示す SDK サンプルについて説明します。  
 
 ## <a name="prerequisites"></a>前提条件  
 
@@ -28,16 +28,16 @@ BizTalk Adapter for PeopleSoft Enterprise を使用すると、PeopleSoft シス
 
 - PeopleSoft Java Object Adapter JAR ファイル、 **psjoa.jar**にアクセスできるフォルダーにコピーするか、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]で BizTalk Adapter for PeopleSoft Enterprise が実行されています。  
 
-- サンプルをビルドして展開するには、BizTalk Adapter for PeopleSoft Enterprise を実行する [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] に [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] がインストールされている必要があります。  
+- [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] インストールする必要があります、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]の構築し、サンプルをデプロイするには、BizTalk Adapter for PeopleSoft Enterprise が実行されていること。  
 
 ## <a name="what-this-sample-does"></a>このサンプルの処理  
- このサンプルでは、フォルダーから XML ファイルを取得し、そのファイルをオーケストレーションに送信し、BizTalk Adapter for PeopleSoft Enterprise を使用して PeopleSoft システムに対してクエリを実行します。 クエリの結果は、XML ファイルに書き込まれます。  
+ このサンプルは、フォルダーから XML ファイルを取得するには、ファイルをオーケストレーションに送信およびし、BizTalk Adapter for PeopleSoft Enterprise を使用して PeopleSoft システムに対してクエリを実行します。 クエリの結果は、XML ファイルに書き込まれます。  
 
 ## <a name="how-this-sample-is-designed-and-why"></a>このサンプルのデザイン方法とその理由  
- このサンプルは、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] でデザインされ、BizTalk Adapter for PeopleSoft Enterprise を BizTalk オーケストレーションと組み合わせて使用する基本的な機能を紹介する目的で作成されました。  
+ このサンプルでデザインした[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]for PeopleSoft Enterprise を BizTalk オーケストレーションと BizTalk アダプターを使用した基本機能を説明するために作成されました。  
 
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
- このサンプルは、次のフォルダーにあります。  
+ サンプルは、次のフォルダーにあります。  
 
  \Program Files\Microsoft BizTalk Adapters for Enterprise Applications\PeopleSoft Enterprise(r)\Sdk\PeopleSoftTwoWaySend  
 
@@ -46,14 +46,14 @@ BizTalk Adapter for PeopleSoft Enterprise を使用すると、PeopleSoft シス
 
 |                               **ランタイム プロジェクト ファイル名**                                |                                                                                                                                                                           **ランタイム プロジェクト ファイルの説明**                                                                                                                                                                            |
 |-------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|                       TwoWaySend.btproj、<br /><br /> TwoWaySend.sln                       |                                                                                                                                                                      アプリケーションのプロジェクトおよびソリューション ファイル。                                                                                                                                                                      |
-| LOCATIONService.xsd、<br /><br /> LOCATIONService_1.xsd、<br /><br /> LOCATIONService_2.xsd | アプリケーションのスキーマ ファイル。 **注:** プロジェクトのアダプター スキーマ ファイルは、使用してもともと作成された、**アダプター メタデータの追加ウィザード**します。 アダプター メタデータの追加ウィザードの詳細については、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] マニュアルの「アダプター メタデータを BizTalk プロジェクトに追加する方法」を参照してください。 |
+|                       TwoWaySend.btproj,<br /><br /> TwoWaySend.sln                       |                                                                                                                                                                      アプリケーションのプロジェクトおよびソリューション ファイル。                                                                                                                                                                      |
+| LOCATIONService.xsd,<br /><br /> LOCATIONService_1.xsd,<br /><br /> LOCATIONService_2.xsd | アプリケーションのスキーマ ファイル。 **注:** プロジェクトのアダプター スキーマ ファイルは、使用してもともと作成された、**アダプター メタデータの追加ウィザード**します。 アダプター メタデータの追加ウィザードの詳細については、トピック「する方法を追加アダプター メタデータを BizTalk プロジェクトに」を参照してください、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ドキュメント。 |
 |                                 PeopleSoftTwoWaySend.odx                                  |                                                                                                                                                                        アプリケーションが使用するオーケストレーション。                                                                                                                                                                         |
 |                                 PeopleSoftTwoWaySend.snk                                  |                                                                                                                                                                                厳密な名前のキー ファイル。                                                                                                                                                                                |
 
 ## <a name="how-to-use-this-sample"></a>このサンプルの使用方法  
 
-#### <a name="create-a-new-instance-of-the-peoplesoft-enterprise-adapter"></a>PeopleSoft Enterprise アダプターの新しいインスタンスを作成する  
+#### <a name="create-a-new-instance-of-the-peoplesoft-enterprise-adapter"></a>PeopleSoft Enterprise アダプターの新しいインスタンスを作成します。  
 
 1. 起動、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソール。 クリックして**開始**、**プログラム**、 **Microsoft** [!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)]、 **BizTalk Server 管理**します。  
 
@@ -65,7 +65,7 @@ BizTalk Adapter for PeopleSoft Enterprise を使用すると、PeopleSoft シス
 
 5. 選択**PeopleSoft enterprise (r)** で利用可能なアダプターの一覧から、**アダプター**ドロップダウンをクリック **[ok]**。  
 
-#### <a name="create-a-solicit-response-biztalk-send-port"></a>送信請求 - 応答の BizTalk 送信ポートを作成する  
+#### <a name="create-a-solicit-response-biztalk-send-port"></a>送信請求-応答の BizTalk 送信ポートを作成します。  
 
 1. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、展開**BizTalk Server 管理**、展開**BizTalk グループ**、展開**アプリケーション**、展開**BizTalk アプリケーション 1**、 をクリック**送信ポート**します。  
 
@@ -76,18 +76,18 @@ BizTalk Adapter for PeopleSoft Enterprise を使用すると、PeopleSoft シス
 4. 使用可能なアダプターの一覧から PeopleSoft アダプターを選択、**型**ドロップダウン ボックスし、をクリックして、**構成**アダプターを表示するボタン**トランスポートのプロパティ** ダイアログ ボックス。  
 
    > [!NOTE]
-   >  この値は、管理コンソールで PeopleSoft Enterprise アダプターを作成したときに指定した名前です。  
+   >  この値は、管理コンソールで PeopleSoft Enterprise アダプターの作成時に指定された名前です。  
 
 5. 次の値を入力、**アダプターに必要なプロパティ**:  
 
 
    |       **プロパティ**       |                                                                                                                                        **[値]**                                                                                                                                         |
    |--------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-   | アプリケーション サーバーのパス  | PeopleSoft Server のコンピューターおよびポートの場所 (例: //PSServer:8888)。 **注:** する上記の例ででした入力ように//psserver 値、PeopleSoft サーバーは、既定のポート値 9000 を使用している場合、既定のポート 9000 が使用されるポート番号を指定しない場合。 |
-   |        JAVA_HOME         |                                                                                          Java 2 Platform SDK ファイルに関連付けられているホーム ディレクトリへのパス (例: C:\j2sdk1.4.2_08)。                                                                                          |
-   |         パスワード         |                                                                                                                 PeopleSoft システムへの接続時に使用するパスワード。                                                                                                                  |
+   | アプリケーション サーバーのパス  | PeopleSoft Server のコンピューターおよびポートの場所、たとえば//PSServer:8888 します。 **注:** ポート番号を指定しない場合、これにより上記の例ででした入力//psserver 値、PeopleSoft サーバーは、既定のポート値 9000 を使用している場合に既定のポート 9000 が使用されます。 |
+   |        JAVA_HOME         |                                                                                          Java 2 Platform SDK のファイル、たとえば C:\j2sdk1.4.2_08 に関連付けられているホーム ディレクトリへのパス                                                                                          |
+   |         パスワード         |                                                                                                                 PeopleSoft システムに接続するときに使用するパスワード。                                                                                                                  |
    | PeopleSoft 8.x JAR ファイル |                                                                                          PeopleSoft Java Object Adapter JAR ファイルの場所**psjoa.jar**、C:\JARS\psjoa.jar など。                                                                                          |
-   |        [ユーザー名]         |                                                                                                                    PeopleSoft システムへの接続時に使用するユーザー名。                                                                                                                     |
+   |        [ユーザー名]         |                                                                                                                    PeopleSoft システムに接続するためのユーザー名。                                                                                                                     |
 
 
 6. **[OK]** をクリックします。  
@@ -98,9 +98,9 @@ BizTalk Adapter for PeopleSoft Enterprise を使用すると、PeopleSoft シス
 
 9. 送信ポートを右クリックし、をクリックして**開始**を参加させて、送信ポートを開始します。  
 
-#### <a name="create-a-one-way-biztalk-send-port"></a>一方向 BizTalk 送信ポートを作成する  
+#### <a name="create-a-one-way-biztalk-send-port"></a>一方向 BizTalk 送信ポートを作成します。  
 
-1. 送信ポートで使用されるターゲット フォルダーを作成します (例: C:\Files\Out)。  
+1. たとえば C:\Files\Out、送信ポートで使用するターゲット フォルダーを作成します。  
 
 2. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、展開**BizTalk Server 管理**、展開**BizTalk グループ**、展開**アプリケーション**、展開**BizTalk アプリケーション 1**、 をクリック**送信ポート**します。  
 
@@ -126,7 +126,7 @@ BizTalk Adapter for PeopleSoft Enterprise を使用すると、PeopleSoft シス
 
 #### <a name="create-a-file-receive-location"></a>ファイル受信場所を作成する  
 
-1.  ファイル受信場所で監視されるフォルダー (C:\Files\In など) を作成します。  
+1.  フォルダーを作成して、ファイルによって監視される受信場所、C:\Files\In など。  
 
 2.  右クリックし、新しい受信ポート をクリックし、**新規**、**受信場所**を表示する、**受信場所のプロパティ**ダイアログ。  
 
@@ -140,15 +140,15 @@ BizTalk Adapter for PeopleSoft Enterprise を使用すると、PeopleSoft シス
 
 7.  受信場所を右クリックし、をクリックして**を有効にする**します。  
 
-#### <a name="modify-the-adapter-schema-target-namespace-property"></a>アダプター スキーマのターゲットの名前空間プロパティを変更する  
+#### <a name="modify-the-adapter-schema-target-namespace-property"></a>アダプター スキーマのターゲット名前空間のプロパティを変更します。  
 
-1. [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] を起動し、TwoWaySend.sln を開きます。 クリックして**ファイル**、**オープン**、**プロジェクト/ソリューション**を表示する、**プロジェクトを開く**ダイアログ。  
+1. 起動[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]TwoWaySend.sln を開きます。 クリックして**ファイル**、**オープン**、**プロジェクト/ソリューション**を表示する、**プロジェクトを開く**ダイアログ。  
 
 2. TwoWaySend.sln ファイルを [参照] をクリックし、このファイルを選択し、をクリックして**開く**サンプル プロジェクトを含むソリューションを開きます。  
 
 3. をクリックして、**ビュー**メニュー選択し、**ソリューション エクスプ ローラー**ソリューション エクスプ ローラーを表示します。  
 
-4. ソリューション エクスプローラーで、LOCATIONService_1.xsd ファイルをダブルクリックして開きます。  
+4. ソリューション エクスプ ローラーを開くことで、LOCATIONService_1.xsd ファイルをダブルクリックします。  
 
 5. 右クリックし、**スキーマ**LOCATIONService_1.xsd のノード、**プロパティ**スキーマのプロパティを表示するメニュー オプション。  
 
@@ -190,7 +190,7 @@ BizTalk Adapter for PeopleSoft Enterprise を使用すると、PeopleSoft シス
 
 #### <a name="modify-the-generated-document-instance"></a>生成されたドキュメント インスタンスを変更する  
 
-1.  生成されたドキュメント インスタンスをメモ帳などのテキスト エディターで開き、ドキュメント インスタンスの内容を編集して、これらのフィールドのデータによって既存のレコードが返されるようにします。  
+1.  メモ帳などのテキスト エディターで生成されたドキュメント インスタンスを開き、これらのフィールドのデータが既存のレコードを返すことを確認するドキュメント インスタンスの内容を編集します。  
 
     ```  
     <ns0:Get xmlns:ns0="http://schemas.microsoft.com/[PeopleSoft://CI/LOCATION]">  
@@ -244,11 +244,11 @@ BizTalk Adapter for PeopleSoft Enterprise を使用すると、PeopleSoft シス
 
 #### <a name="drop-a-document-instance-into-the-folder-monitored-by-the-file-receive-location"></a>ファイル受信場所の監視対象フォルダーにドキュメント インスタンスをドロップする  
 
--   先ほど作成したドキュメント インスタンスを、ファイル受信場所の監視対象として構成されているフォルダーにコピーします。  
+-   ファイルの受信場所のフォルダーに作成したドキュメント インスタンスが監視するよう構成をコピーします。  
 
-#### <a name="verify-that-the-document-instance-was-processed-by-the-biztalk-adapter-for-peoplesoft-enterprise"></a>ドキュメント インスタンスが BizTalk Adapter for PeopleSoft Enterprise によって処理されたことを確認する  
+#### <a name="verify-that-the-document-instance-was-processed-by-the-biztalk-adapter-for-peoplesoft-enterprise"></a>ドキュメント インスタンスは、PeopleSoft Enterprise の BizTalk アダプターによって処理されたことを確認します。  
 
-- ファイル送信ポートの送信先として構成されているフォルダーを開いて、出力ドキュメントが生成されていることを確認します。 このファイルには、BizTalk Adapter for PeopleSoft Enterprise によって処理されたクエリの結果が含まれている必要があります。  
+- ファイル送信ポートの送信先として構成されているフォルダーを開いて、出力ドキュメントが生成されていることを確認します。 このファイルで BizTalk Adapter for PeopleSoft Enterprise の処理されたクエリの結果を含める必要があります。  
 
   ドキュメント インスタンスが正常に処理された場合、次の一連のイベントが発生します。  
 
@@ -258,19 +258,19 @@ BizTalk Adapter for PeopleSoft Enterprise を使用すると、PeopleSoft シス
 
 3.  オーケストレーション インスタンスがメッセージ ボックスにメッセージを返します。  
 
-4.  送信請求 - 応答の送信ポートがこの公開されたメッセージをサブスクライブし、BizTalk メッセージング エンジンがメッセージを PeopleSoft 送信ポートに送信します。  
+4.  送信請求-応答の送信ポートは、BizTalk メッセージング エンジンは、PeopleSoft 送信ポートにメッセージを送信するために、この公開されたメッセージをサブスクライブします。  
 
-5.  送信ポートがメッセージを BizTalk Adapter for PeopleSoft Enterprise に渡します。  
+5.  送信ポートを BizTalk Adapter for PeopleSoft Enterprise のメッセージを渡します。  
 
-6.  入力ファイルで定義されたパラメーターを使用して、BizTalk Adapter for PeopleSoft Enterprise が PeopleSoft システムに対して Get ステートメントを実行します。  
+6.  BizTalk Adapter for PeopleSoft Enterprise は、入力ファイルで定義されているパラメーターを使用して PeopleSoft システムに対して Get ステートメントを実行します。  
 
-7.  BizTalk Adapter for PeopleSoft Enterprise が、オーケストレーションの送信請求 - 応答ポートへの応答メッセージとして Get ステートメントの結果を返します。  
+7.  BizTalk Adapter for PeopleSoft Enterprise では、オーケストレーションの送信請求-応答ポートの応答メッセージとして Get ステートメントの結果を返します。  
 
-8.  オーケストレーションがメッセージ ボックスに結果セットを公開します。  
+8.  オーケストレーションでは、メッセージ ボックスに結果セットを公開します。  
 
 9. ファイル送信ポートがこのメッセージをサブスクライブし、BizTalk がメッセージをファイル アダプターに送信します。  
 
 10. ファイル アダプターが、結果セットを含むメッセージを指定の出力フォルダーに書き込みます。  
 
 ## <a name="see-also"></a>参照  
- [チュートリアル: BizTalk Adapter for PeopleSoft Enterprise の使用](../core/tutorials-using-biztalk-adapter-for-peoplesoft-enterprise.md)
+ [チュートリアル:BizTalk Adapter for PeopleSoft Enterprise の使用](../core/tutorials-using-biztalk-adapter-for-peoplesoft-enterprise.md)

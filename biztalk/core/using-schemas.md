@@ -1,5 +1,5 @@
 ---
-title: スキーマを使用して |Microsoft ドキュメント
+title: スキーマの使用 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,25 +16,25 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6a7cb71319fef61d3b6cb854b04b41e3815a6129
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d0343514562effd3de12141f5c569ece1f5de29b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22287242"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395376"
 ---
 # <a name="using-schemas"></a>スキーマの使用
-ここでは、スキーマの使用に関連する一般的なタスクのコード例を示します。  
+このセクションでは、スキーマの使用に関連する一般的なタスクのコード例を示します。  
   
 ## <a name="using-xsd-schemas"></a>XSD スキーマの使用  
- `IDocumentSpec Interface`インターフェイスは、XML スキーマ定義言語 (XSD) スキーマで定義されているドキュメント図形を表します。 図形は、XSD の最上位の要素をルートとします。 スキーマのインストール後に呼び出すことによって取得できます、`IPipelineContext.GetDocumentSpecByType Method`または`IPipelineContext.GetDocumentSpecByName Method`内のメソッド、 **IPipelineContext**インターフェイスです。  
+ `IDocumentSpec Interface`インターフェイスは、XML スキーマ定義言語 (XSD) スキーマで定義されているドキュメント図形を表します。 図形がルート、XSD の最上位要素になります。 スキーマがインストールされている場合、その後呼び出すことによって取得できます、`IPipelineContext.GetDocumentSpecByType Method`または`IPipelineContext.GetDocumentSpecByName Method`メソッド、 **IPipelineContext**インターフェイス。  
   
 ```  
 IDocumentSpec docspec = pipeineContext.GetDocumentSpecByType("myschema#root");  
 ```  
   
 ## <a name="using-xsd-flat-file-schemas"></a>XSD フラット ファイル スキーマの使用  
- 両方の**GetDocumentSpecByType**と**GetDocumentSpecByName**を返し、 **IDocumentSpec**インターフェイスです。 型キャストできますスキーマが実際には、(1 つ追加のフラット ファイル固有の注釈が含まれている) フラット ファイル スキーマの場合、 **IDocumentSpec**に**IFFDocumentSpec**解析とシリアル化を開始そこからのシーケンス。  
+ 両方の**GetDocumentSpecByType**と**GetDocumentSpecByName**メソッドを返す、 **IDocumentSpec**インターフェイス。 型キャストできますスキーマが実際には、(1 つ追加のフラット ファイル固有の注釈が含まれている) フラット ファイル スキーマの場合、 **IDocumentSpec**に**IFFDocumentSpec**解析とシリアル化を開始そこからシーケンス。  
   
 ```  
 IFFDocumentSpec docspec = (IFFDocumentSpec) pipeineContext.GetDocumentSpecByType("myschema#root");  
@@ -42,4 +42,4 @@ IFFDocumentSpec docspec = (IFFDocumentSpec) pipeineContext.GetDocumentSpecByType
   
 ## <a name="see-also"></a>参照  
 
-[解析およびシリアル化エンジンを使用します。](../core/using-the-parsing-and-serializing-engines.md)
+[解析エンジンおよびシリアル化エンジンの使用](../core/using-the-parsing-and-serializing-engines.md)

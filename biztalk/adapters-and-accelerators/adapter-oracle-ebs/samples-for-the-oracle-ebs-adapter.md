@@ -13,12 +13,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a4fdffd6d24ce18c38c45a086ea0f6376241d21d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5c26bbf30ff3552ed3de5e6ca49871d1c4c7e3f7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37000891"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65374739"
 ---
 # <a name="samples-for-the-oracle-ebs-adapter"></a>Oracle EBS アダプター用のサンプル
 サンプルは[!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]に分類されます。  
@@ -31,7 +31,7 @@ ms.locfileid: "37000891"
   
 - Microsoft Office SharePoint Server のサンプル  
   
-  サンプルについては、「 [BizTalk Adapter Pack 2010: Oracle E-business Suite アダプター サンプル](https://www.microsoft.com/download/details.aspx?id=6464)します。 インターフェイス テーブル、同時実行プログラム、テーブル、およびサンプルで使用されるパッケージを作成するための SQL スクリプトが含まれます。 
+  サンプルについては、「 [BizTalk Adapter Pack 2010。Oracle E-business Suite アダプター サンプル](https://www.microsoft.com/download/details.aspx?id=6464)します。 インターフェイス テーブル、同時実行プログラム、テーブル、およびサンプルで使用されるパッケージを作成するための SQL スクリプトが含まれます。 
   
 > [!NOTE]
 > [!INCLUDE[files-need-updated](../../includes/files-need-updated.md)]

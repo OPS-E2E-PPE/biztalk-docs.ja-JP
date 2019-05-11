@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10600 |Microsoft Docs'
+title: シングル サインオン:イベント 10600 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 86a4bf3671da5b49e981a652d311136a9ae5c0eb
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4a21895db822c39ab364e95a78b71e9c4fe086dc
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36972051"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65397804"
 ---
-# <a name="single-sign-on-event-10600"></a>シングル サインオン: イベント 10600
+# <a name="single-sign-on-event-10600"></a>シングル サインオン:イベント 10600
 ## <a name="details"></a>詳細  
   
 |                 |                                                            |
@@ -30,10 +30,10 @@ ms.locfileid: "36972051"
 |  イベント ソース   |                           ENTSSO                           |
 |    コンポーネント    |                            なし                             |
 |  シンボル名  |            SSO_ERROR_CS_CALLBACK_ACCESS_DENIED             |
-|  メッセージ テキスト   |            構成ストア サーバーへのアクセスが拒否されました。%r            |
+|  メッセージ テキスト   |            構成ストア サーバーへのアクセス denied.%r            |
   
 ## <a name="explanation"></a>説明  
- 構成ストア サーバーに対してメッセージが送信されましたが、受け付けられませんでした。 原因として、プロトコルが正しくない、セキュリティ アクセス許可が不十分など、さまざまな理由が考えられます。  
+ メッセージは、構成ストア サーバーに送信されましたが、受け付けられませんでした。 さまざまなプロトコルが正しくないかが不足しているセキュリティのアクセス許可など、さまざまな理由の可能性があります。  
   
 ## <a name="user-action"></a>ユーザーの操作  
  このメッセージの情報と、イベント ログで関連情報をメモし、マイクロソフト製品サポート サービスにお問い合わせください。

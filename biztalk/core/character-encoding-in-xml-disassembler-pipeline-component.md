@@ -17,25 +17,25 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6fee26bdab8566010981e72585358b060009785f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d299ac6a1261160cbd3844c3f0201e55affa5655
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36977579"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65391673"
 ---
 # <a name="character-encoding-in-xml-disassembler-pipeline-component"></a>XML 逆アセンブラー パイプライン コンポーネントでの文字エン コード
-XML 逆アセンブラーでは、次のアルゴリズムに基づいて、受信メッセージを処理するためのエンコードを決定します。  
+XML 逆アセンブラーは、受信メッセージを処理するために使用するのにエンコードを決定するのに、次のアルゴリズムを使用します。  
   
-1. バイト順マークがデータ内に存在する場合、これによってエンコード情報が決定されます。  
+1. データのバイト順マークが存在する場合、そこからはエンコード情報が判断されます。  
   
 2. の場合、 **IBaseMessagePart.Charset**プロパティが設定されて、が指定されてエンコードが使用されます。  
   
-3. 上記のいずれにも該当せず、XML ドキュメント内に ANSI を指定する XML 宣言が存在する場合は、その宣言に指定されているエンコードが使用されます。  
+3. それ以外の場合、XML 宣言が XML ドキュメント内にある場合が指定されてエンコードされる、指定された XML 宣言が ANSI。  
   
-4. 上記のいずれにも該当しない場合は、UTF-8 エンコードが使用されます。  
+4. それ以外の場合、utf-8 エンコードが使用されます。  
   
-   メッセージ コンテキストに保存、上記の場合に 2、3、および 4、エンコーディング、XML 逆アセンブラーが決定した後の**XMLNorm.SourceCharset**プロパティ。 XML 逆アセンブラー パイプライン コンポーネントにより生成されるメッセージには、常に UTF-8 エンコードが使用されます。 バイト オーダー マークから取得されたエンコード (上記 1 のケース) は保持されません。  
+   メッセージ コンテキストに保存、上記の場合に 2、3、および 4、エンコーディング、XML 逆アセンブラーが決定した後の**XMLNorm.SourceCharset**プロパティ。 常に、XML 逆アセンブラー パイプライン コンポーネントによって生成されたメッセージは、utf-8 エンコードを使用します。 1 の場合、バイト オーダー マークから取得されたエンコードは保持されません。  
   
 ## <a name="see-also"></a>参照  
  [XML 逆アセンブラー パイプライン コンポーネント](../core/xml-disassembler-pipeline-component.md)   

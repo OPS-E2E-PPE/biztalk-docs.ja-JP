@@ -28,37 +28,37 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9c53791906e64930b39b15a89ca20bc269dc8cd9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b5d9a2aeff4b73eebb95b8be8a76b92fb9c7848d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37017047"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395761"
 ---
 # <a name="pipeline-tools"></a>パイプライン ツール
-Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ソフトウェア開発キット (SDK) 付属のパイプライン ツールを使用すると、送信ポートや受信ポートなどの BizTalk Server 環境を構成することなく、パイプラインが正しく機能するかどうかを確認できます。 パイプライン ツールは次の用途にも使用できます。  
+Microsoft 付属のパイプライン ツール[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ソフトウェア開発キット (SDK) を使用すると、送信/受信ポートなど、BizTalk Server 環境を構成することがなく、パイプラインが正しく機能することを確認します。 パイプライン ツールを使用することもできます。  
 
--   サード パーティのパイプライン コンポーネントを、サーバー環境外でデバッグします。  
+-   Server 環境の外部のサード パーティのパイプライン コンポーネントをデバッグします。  
 
 -   解析エンジンのエラー メッセージを診断します。  
 
--   コンパイル、展開、展開解除、および再コンパイルを行うことなく、さまざまなスキーマをテストします。  
+-   コンパイル、展開、展開解除、および再コンパイルする負担が解消され、さまざまなスキーマを試してください。  
 
--   フラット ファイルおよび XML のアセンブラー/逆アセンブラーの動作を検討します。  
+-   フラット ファイルと XML のアセンブラー/逆アセンブラーの動作について説明します。  
 
--   逆アセンブラーの出力を表示し、昇格したメッセージ コンテキスト プロパティとその値を確認します。  
+-   逆アセンブラーの出力を表示し、メッセージ コンテキスト プロパティが昇格され、その値を検出します。  
 
--   逆アセンブラー コンポーネントやアセンブラー コンポーネントが含まれない送受信パイプラインを実行します (たとえば、S/MIME デコーダーの出力を表示できます)。  
+-   逆アセンブラーおよびアセンブラー コンポーネントなしの送信/受信パイプラインを実行する (たとえば、S/MIME デコーダーの出力を表示できます)。  
 
--   メッセージング サブシステム全体ではなく、パイプラインのみに対し、詳細なパフォーマンス測定を行います。  
+-   (メッセージング サブシステム全体) ではなくだけで、パイプラインの詳細なパフォーマンスの測定値を確認します。  
 
 ## <a name="location-in-sdk"></a>SDK でのパス  
- \<*インストール パス*\>\SDK\Utilities\PipelineTools  
+ \<*Installation Path*\>\SDK\Utilities\PipelineTools  
 
- パイプライン ツールは、パイプラインとパイプライン コンポーネント (フラット ファイルおよび XML のアセンブラー/逆アセンブラー コンポーネント) の実行、デバッグ、およびプロファイルに使用します。  
+ 実行、デバッグ、およびパイプライン、プロファイリングのパイプライン ツールを使用してパイプライン コンポーネント (つまり、フラット ファイル、XML アセンブラ/逆アセンブラ コンポーネント)。  
 
 ## <a name="file-inventory"></a>ファイルのインベントリ  
- 次の表は、パイプライン ツールのファイルとその目的を示しています。  
+ 次の表では、パイプライン ツール ファイルの一覧し、その目的について説明します。  
 
 
 |   ファイル    |                                                                                                                                                                                                                                説明                                                                                                                                                                                                                                 |
@@ -66,15 +66,15 @@ Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernover
 |  DSDump.exe  |                                                ドキュメント スキーマ構造をダンプするために使用します。この構造は、1 つ以上の XSD スキーマのメモリ内簡易表現で、フラット ファイルの注釈を含む場合と含まない場合があります。 $Root$0$3$2 などの解析エンジン エラーが発生し、デコードする必要がある場合に、このツールが役立ちます。 $ 後の数値は、ドキュメント スキーマに表示される、0 から始まるインデックスまたはレコードを意味します。                                                |
 |  FFAsm.exe   |                                                                                                                                     送信パイプラインをエミュレートすることにより、フラット ファイル アセンブラー コンポーネントを直接呼び出して実行し、ユーザーの XML ドキュメント (複数可) をフラット ファイル ドキュメントにシリアル化またはアセンブルするようすを表示します。                                                                                                                                      |
 |  FFDasm.exe  |                                                                                                                               受信パイプラインをエミュレートすることにより、フラット ファイル逆アセンブラー コンポーネントを直接呼び出して実行し、ユーザーのフラット ファイル ドキュメントを 1 つ以上の XML ドキュメントに解析または逆アセンブルするようすを表示します。                                                                                                                               |
-| Pipeline.exe | 送信パイプラインまたは受信パイプラインを実行し、1 つ以上の入力ドキュメントとその部分、XSD スキーマ、および関連情報を受け取り、パイプラインの実行後に出力ドキュメントを生成します。 Pipeline.exe は BizTalk Server データベースにアクセスしないので、実行時に [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] データベースにアクセスする BizTalk Framework アセンブラー コンポーネントや逆アセンブラー コンポーネントが含まれるパイプラインは、サポートされません。 |
+| Pipeline.exe | 実行を送信または受信パイプラインです。1 つまたは複数の入力ドキュメントと部分、XSD スキーマと関連情報を受け取ります生成、パイプラインの後の出力ドキュメントを実行します。 Pipeline.exe は BizTalk Framework アセンブラーおよび逆アセンブラー コンポーネントを含むパイプラインにアクセスするために BizTalk Server のデータベースをアクセスしない[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]実行中にデータベースがサポートされていません。 |
 |  XMLAsm.exe  |                                                                                                                                 送信パイプラインをエミュレートすることにより、XML アセンブラー コンポーネントを直接呼び出して実行し、ユーザーの XML ドキュメント (複数可) を 1 つの出力 XML ドキュメントにシリアル化、アセンブル、またはエンベロープするようすを表示します。                                                                                                                                  |
 | XMLDasm.exe  |                                                                                                                             受信パイプラインをエミュレートすることにより、XML 逆アセンブラー コンポーネントを直接呼び出して実行し、ユーザーの XML ドキュメントを 1 つ以上の XML ドキュメントに解析、逆アセンブル、またはエンベロープ解除するようすを表示します。                                                                                                                              |
 
 ## <a name="usage"></a>使用方法  
- 以下のセクションで、各ファイルについてさらに詳しく説明します。  
+ 各ファイルの詳細については、次のセクションで提供されます。  
 
 ### <a name="dsdumpexe"></a>DSDump.exe  
- DSDump.exe を使用すると、ドキュメント スキーマ構造をダンプできます。この構造は、1 つ以上の XSD スキーマのメモリ内簡易表現で、フラット ファイルの注釈を含む場合と含まない場合があります。  
+ DSDump.exe を使用すると、フラット ファイルの注釈の有無など、1 つまたは複数の XSD スキーマのメモリ内簡易表現には、ドキュメント スキーマ構造をダンプできます。  
 
  DSDump.exe (ドキュメント スキーマ ダンプ ツール) は、次のコマンド ライン パラメーターをサポートしています。  
 
@@ -82,7 +82,7 @@ Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernover
 DSDump.exe schemaFileName  
 ```  
 
- DSDump が成功すると、コンソールにドキュメント スキーマが出力されます。  
+ DSDump を成功するが発生した場合に、コンソールにドキュメント スキーマを出力します。  
 
 ### <a name="ffasmexe"></a>FFAsm.exe  
  FFAsm.exe (フラット ファイル アセンブラー) は、次のコマンド ライン パラメーターをサポートしています。  
@@ -110,14 +110,14 @@ file name macros:
 
 ```  
 
- たとえば、3 つの入力 XML ドキュメントを、ヘッダーを持つ 1 つのフラット ファイル ドキュメントにアセンブルし、プロパティを降格するには、次のコマンドを使用します。  
+ たとえば、ヘッダーとプロパティの降格を単一のフラット ファイル ドキュメントに 3 つの入力 XML ドキュメントをアセンブルする場合は、次のコマンドを使用します。  
 
 ```  
 FFAsm.exe file_in1.xml file_in2.xml file_in3.xml –hs myHeaderSchema.xsd –bs myBodySchema.xsd -d  
 ```  
 
 ### <a name="ffdasmexe"></a>FFDasm.exe  
- FFDasm.exe (フラット ファイル 逆アセンブラー) は、次のコマンド ライン パラメーターをサポートしています。  
+ FFDasm.exe (フラット ファイル逆アセンブラー) は、次のコマンド ライン パラメーターをサポートしています。  
 
 ```  
 usage: ffdasm document -bs bodySchema [ -hs headerSchema ] [ -ts trailerSchema ] [ -s ] [ -c ] [ -p ] [ -m filenamemask ] [ -en encoding ] [ -v ]  
@@ -140,7 +140,7 @@ file name macros:
 
 ```  
 
- たとえば、ヘッダー、ボディ、およびトレーラーを持つフラット ファイル ドキュメントを逆アセンブルし、結果をコンソールに表示するには、次のコマンドを使用します。  
+ たとえば、ヘッダー、本文、およびトレーラーのあるフラット ファイル ドキュメントを逆アセンブルし、結果をコンソールに表示する場合は、次のコマンドを使用します。  
 
 ```  
 FFDasm.exe file_in.txt –hs myHeaderSchema.xsd –bs myBodySchema.xsd –ts myTrailerSchema.xsd –c  
@@ -193,7 +193,7 @@ file name macros:
 
 ```  
 
- たとえば、ファイル ReceivePipeline.btp (XML 逆アセンブラー コンポーネントと XML 検証コンポーネントが含まれる) から mySchema.xsd を使用して受信パイプラインを実行し、結果をコンソールに表示するには、次のコマンドを使用します。  
+ たとえば、ファイル ReceivePipeline.btp (XML 逆アセンブラーおよび XML 検証ツール コンポーネントがある) から受信パイプラインを実行する mySchema.xsd と表示を使用して、コンソールに結果は次のコマンドを使用します。  
 
 ```  
 Pipeline.exe ReceivePipeline.btp –d file_in.xml –s MySchema.xsd:MyProject.MySchema -c  
@@ -207,29 +207,29 @@ Pipeline.exe ReceivePipeline.btp –d file_in.xml –s MySchema.xsd –proj MyPr
 
 ```  
 
- 最初の例では、修飾型名 (**MyProject.MySchema**)、スキーマは、コマンドラインの引数として含まれています。 2 番目の例では、指定した BizTalk プロジェクト ファイルからスキーマが取得されます。  
+ 最初の例では、修飾型名 (**MyProject.MySchema**)、スキーマは、コマンドラインの引数として含まれています。 2 番目の例では、スキーマが指定した BizTalk プロジェクト ファイルから取得されます。  
 
- コンパイルされた [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] プロジェクト ファイルからパイプラインを実行することもできます。次に例を示します (パイプラインはアセンブリ修飾型名によって参照されています)。  
+ コンパイルされたからパイプラインを実行することもできます。[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]プロジェクト (パイプラインはアセンブリ修飾型名で参照されている) 次の例のように、ファイル。  
 
 ```  
 Pipeline.exe -pt "TestBtsProject.ReceivePipeline, TestBtsProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e03965cb5971ad66" -d in.xml -s PO.xsd -proj TestBtsProject.btproj –c  
 ```  
 
- 次の例では、型名とアセンブリ ファイル名でそれぞれ個別にパイプラインが参照されています。  
+ 次の例では、パイプラインは、型名とアセンブリ ファイル名によって個別に参照されます。  
 
 ```  
 Pipeline.exe -pt TestBtsProject.ReceivePipeline –an TestBtsProject.dll -d in.xml -s PO.xsd -proj TestBtsProject.btproj –c   
 ```  
 
- 次の例では、アセンブリ名によってパイプラインが参照されています。  
+ 次の例は、アセンブリ名によって参照されているパイプラインを示します。  
 
 ```  
 Pipeline.exe -pt TestBtsProject.ReceivePipeline –an "TestBtsProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e03965cb5971ad66" -d in.xml -s PO.xsd -proj TestBtsProject.btproj –c  
 ```  
 
- Pipeline.exe は、起動時に使用した資格情報で実行されます。 通常の [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ホスト インスタンスを実行するアカウントは使用されません。このため、データベース アクセスを必要とするコンポーネントが含まれているパイプラインは、実行できないことがあります。 Pipeline.exe を実行するアカウントに、必要な特権がすべて含まれていることを確認してください。  
+ Pipeline.exe は、起動時に使用した資格情報では実行されます。 通常のアカウントが使用しない[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]データベースへのアクセスを必要とするコンポーネントを含むパイプラインを実行することができないため、ホスト インスタンスを実行します。 必要なすべての特権を持つアカウントで Pipeline.exe を実行することを確認します。  
 
- Pipeline.exe は、サード パーティのカスタム コンポーネントが含まれないカスタム パイプラインを確認するためにのみ使用してください。 サード パーティのカスタム コンポーネントが含まれたカスタム パイプラインを確認するために Pipeline.exe を使用しても、必要な出力は生成されます。 しかし、サード パーティのカスタム コンポーネントが含まれたカスタム パイプラインを展開した場合、受信ポートまたは送信ポートでこのパイプラインを使用し、その後 Pipeline.exe を使用してパイプラインにメッセージを送信すると、パイプラインは失敗し、BizTalk Server からエラーが返されます。  
+ Pipeline.exe を使用して、サード パーティ製のカスタム コンポーネントなしのカスタム パイプラインを確認する必要がありますのみです。 Pipeline.exe を使用してサード パーティのカスタム コンポーネントを使用するカスタム パイプラインを確認する場合、Pipeline.exe は、目的の出力を生成します。 ただし、展開する場合のサード パーティ カスタム コンポーネントでは、同じカスタム パイプラインで受信パイプラインを使用して、または送信ポート、および Pipeline.exe を使用して、パイプラインにメッセージを送信、パイプラインは失敗し、BizTalk Server はエラーを返します。  
 
 ### <a name="xmlasmexe"></a>XMLAsm.exe  
  XMLAsm.exe (XML アセンブラー ツール) は、次のコマンド ライン パラメーターをサポートしています。  
@@ -255,7 +255,7 @@ file name macros:
 
 ```  
 
- たとえば、2 つの入力 XML ドキュメントを、エンベロープを持つ 1 つの XML ドキュメントにアセンブルし、結果をコンソールに表示するには、次のコマンドを使用します。  
+ など、エンベロープを持つ 1 つの XML ドキュメントに 2 つの入力 XML ドキュメントをアセンブルし、結果をコンソールに表示する場合は、次のコマンドを使用します。  
 
 ```  
 FFAsm.exe file_in1.xml file_in2.xml–es myEnvelopeSchema.xsd –ds myBodySchema.xsd –c  
@@ -287,7 +287,7 @@ file name macros:
 
 ```  
 
- たとえば、2 つのネストされたエンベロープを持つ XML ドキュメントを逆アセンブルし、結果をコンソールに表示するには、次のコマンドを使用します。  
+ たとえば、2 つのネストされたエンベロープを持つ XML ドキュメントを逆アセンブルし、結果をコンソールに表示する場合は、次のコマンドを使用します。  
 
 ```  
 XmlDasm.exe file_in.txt –ds myDocumentSchema.xsd –es myEnvelopeSchema1.xsd –es myEnvelopeSchema2.xsd –c  

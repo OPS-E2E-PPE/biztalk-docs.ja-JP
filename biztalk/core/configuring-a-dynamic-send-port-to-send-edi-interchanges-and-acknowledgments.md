@@ -1,5 +1,5 @@
 ---
-title: EDI インターチェンジと確認を送信する動的送信ポートの構成 |Microsoft ドキュメント
+title: EDI インターチェンジと確認を送信する動的送信ポートの構成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,36 +12,36 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9a793fc22394c2b4d294bcd48fae1f9403ae9278
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d4883eb78a24eb7ad7254e319c901602dfcb97a4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22232818"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65391398"
 ---
 # <a name="configuring-a-dynamic-send-port-to-send-edi-interchanges-and-acknowledgments"></a>EDI インターチェンジと確認を送信するための動的送信ポートの構成
-EDI 確認またはインターチェンジを送信するには、静的送信ポートまたは動的送信ポートを使用できます。 動的送信ポートは、アグリーメントを解決して、DestinationPartyName コンテキスト プロパティ内の値に基づいて送信先アドレスを特定します。そのため、動的送信ポートを使用すると、複数の送信先のいずれにもインターチェンジを送信できるようになります。  
+を、EDI 受信確認またはインターチェンジを送信するには、静的な送信ポートまたは動的送信ポートのいずれかを使用できます。 動的送信ポートでは、アグリーメントを解決し、DestinationPartyName コンテキスト プロパティの値に基づいて送信先アドレスを決定するために複数の送信先のいずれかにインターチェンジを送信することができます。  
   
 > [!NOTE]
->  受信した XML メッセージに基づく EDI インターチェンジを送信し、そのアプリケーションを受信するためにパススルー受信パイプラインを使用する場合は、DestinationPartyName コンテキスト プロパティを昇格させる必要があります。 詳細については、次を参照してください。[アグリーメントの解決と送信 EDI メッセージのスキーマの決定](../core/agreement-resolution-and-schema-determination-for-outgoing-edi-messages.md)です。  
+>  受信されると、XML メッセージに基づく EDI インターチェンジを送信して、パススルーを使用している場合は、そのアプリケーションを受信するためのパイプラインの受信、DestinationPartyName コンテキスト プロパティを昇格させる必要があります。 詳細については、次を参照してください。[アグリーメントの解決と送信 EDI メッセージのスキーマ決定](../core/agreement-resolution-and-schema-determination-for-outgoing-edi-messages.md)します。  
   
 > [!NOTE]
->  動的送信ポートが確認を送信する場合は、インターチェンジを受信したポートの EDI 逆アセンブラーによって確認の DestinationPartyName プロパティが設定されるため、DestinationPartyName コンテキスト プロパティが既に昇格されています。  
+>  インターチェンジを受信したポートで EDI 逆アセンブラーの DestinationPartyName プロパティが設定するため、動的送信ポートが受信確認を送信する場合は、DestinationPartyName コンテキスト プロパティが昇格する既に、受信確認。  
   
- 一方向の動的送信ポートを作成するには、次の構成を使用します。  
+ 動的な一方向の送信ポートを作成するには、次の構成を使用します。  
   
 |場所|プロパティ|設定|  
 |--------------|--------------|-------------|  
-|**送信ポートのプロパティ: 全般**|[ポートの種類]|動的な一方向|  
-|**送信ポートのプロパティ: 全般**|送信ハンドラー|BizTalkServerApplication|  
-|**送信ポートのプロパティ: 全般**|[送信パイプライン]|EdiSend|  
-|**ファイル トランスポートのプロパティ: 認証**|ホストにネットワーク共有へのアクセス権がない場合に、これらの資格情報を (ユーザー名およびパスワードと共に) 使用します。|認証が必要な場合に設定します。|  
-|**送信ポートのプロパティ: フィルター**|プロパティ|BTS.MessageType|  
-|**送信ポートのプロパティ: フィルター**|演算子|==|  
-|**送信ポートのプロパティ: フィルター**|値|**インターチェンジの**:<br /><br /> - `http://schemas.microsoft.com/Edi/X12/2006#<schema name>`、または<br /><br /> -                   `http://schemas.microsoft.com/Edi/Edifact/2006#<schema name>`、または<br /><br /> **Ack の**:<br /><br /> -                   `http://schemas.microsoft.com/Edi/X12#X12_997_Root`、または<br /><br /> -                   `http://schemas.microsoft.com/Edi/X12#X12_TA1_Root`、または<br /><br /> -                   `http://schemas.microsoft.com/Edi/Edifact#Efact_Contrl_Root`|  
+|**送信ポートのプロパティ:[全般]**|[ポートの種類]|動的な一方向|  
+|**送信ポートのプロパティ:[全般]**|送信ハンドラー|BizTalkServerApplication|  
+|**送信ポートのプロパティ:[全般]**|[送信パイプライン]|EdiSend|  
+|**ファイル トランスポートのプロパティ:認証**|ホストに (ユーザー名とパスワード) を持つネットワーク共有へのアクセスがあるない場合に、これらの資格情報を使用します。|認証が必要な場合に設定します。|  
+|**送信ポートのプロパティ:フィルター**|プロパティ|BTS.MessageType|  
+|**送信ポートのプロパティ:フィルター**|演算子|==|  
+|**送信ポートのプロパティ:フィルター**|値|**インターチェンジの**:<br /><br /> - `http://schemas.microsoft.com/Edi/X12/2006#<schema name>`、または<br /><br /> -                   `http://schemas.microsoft.com/Edi/Edifact/2006#<schema name>`、または<br /><br /> **Ack の**:<br /><br /> -                   `http://schemas.microsoft.com/Edi/X12#X12_997_Root`、または<br /><br /> -                   `http://schemas.microsoft.com/Edi/X12#X12_TA1_Root`、または<br /><br /> -                   `http://schemas.microsoft.com/Edi/Edifact#Efact_Contrl_Root`|  
   
 ## <a name="setting-agreement-properties"></a>アグリーメント プロパティの設定  
- 送信ポートを作成したら、送信パイプラインを正しく機能させるために必要となるアグリーメント プロパティを設定する必要があります。 さまざまなページでこれらのプロパティが設定されて、**アグリーメントのプロパティ** ダイアログ ボックス。  
+ 送信ポートを作成した後は、関数への送信パイプラインに必要なアグリーメントのプロパティを設定する必要があります。 これらのプロパティのさまざまなページの設定、**アグリーメントのプロパティ** ダイアログ ボックス。  
   
 ## <a name="see-also"></a>参照  
- [EDI ソリューションのポートを構成します。](../core/configuring-ports-for-an-edi-solution.md)
+ [EDI ソリューションのポートの構成](../core/configuring-ports-for-an-edi-solution.md)

@@ -1,5 +1,5 @@
 ---
-title: MQSeries アダプターを使用して |Microsoft ドキュメント
+title: MQSeries アダプターの使用 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,24 +12,24 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a7e774a951ad13f4c0c6b9050cfc03358114fb6f
-ms.sourcegitcommit: 32f380810b90b70e5df7be72a6a14988a747868e
+ms.openlocfilehash: 1e03454c28153df86296278ec3b573b60a02fdeb
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/28/2018
-ms.locfileid: "29710609"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395976"
 ---
-# <a name="using-the-mqseries-adapter"></a>MQSeries アダプタの使用
+# <a name="using-the-mqseries-adapter"></a>MQSeries アダプターの使用
 
 ## <a name="overvew"></a>概要
-MQSeries アダプターには、BizTalk Server との統合を必要として、主要なメッセージング システムとして MQSeries Server を使用して組織が機能します。  
+MQSeries アダプターでは、BizTalk Server との統合を必要として、主要なメッセージング システムとして MQSeries Server を使用して、組織は機能します。  
   
- アダプタの展開と構成は、ネットワーク管理者の作業です。 ソフトウェア開発者は、アダプタ コンポーネントを作成することでアダプタの機能を拡張できます。  
+ ネットワーク管理者を展開し、アダプターを構成します。 ソフトウェア開発者は、アダプター コンポーネントを作成して機能を拡張することができます。  
   
 > [!NOTE]
->  BizTalk Server にアダプターが構成されている MQSeries は、複数のコンピューターを使用できます。  
+>  BizTalk server アダプターが構成されている MQSeries は、複数のコンピューターを使用できます。  
   
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
   
 -   [MQSeries アダプターの展開オプション](../core/mqseries-adapter-deployment-options.md)  
   

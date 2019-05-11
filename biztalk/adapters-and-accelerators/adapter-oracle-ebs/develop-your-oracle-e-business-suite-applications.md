@@ -13,12 +13,12 @@ caps.latest.revision: 32
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2bc00f1b22777829b314ccd1171cbc7fb6b4e5ff
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f756a983dcdd8753b55bca1844f1fea5527ee692
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36972819"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65375823"
 ---
 # <a name="develop-your-oracle-e-business-suite-applications"></a>Oracle E-business Suite アプリケーションを開発します。
 
@@ -39,7 +39,7 @@ ms.locfileid: "36972819"
   
 - 選択した方法を使用して、タスクの実行に関する情報を格納しているトピックへのリンクを提供します ([!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]、WCF サービス モデルまたは WCF チャネル モデル)。  
   
-|演算|BizTalk Server|WCF サービス モデル|WCF チャネル モデル|  
+|操作|BizTalk Server|WCF サービス モデル|WCF チャネル モデル|  
 |---|---|---|---|  
 |インターフェイス テーブルとビューに対する操作の実行 | [挿入、更新、削除、またはインターフェイス テーブルと Oracle E-business suite のインターフェイス ビューに対する select](../../adapters-and-accelerators/adapter-oracle-ebs/insert-update-delete-or-select-on-interface-tables-and-views-with-oracle-ebs.md) |[挿入、更新、削除、またはインターフェイス テーブルと、WCF サービス モデルを使用してビューで操作を選択します。](../../adapters-and-accelerators/adapter-oracle-ebs/insert-update-delete-select-on-interface-tables-and-views-with-a-wcf-service.md)|[WCF チャネル モデルを使用して Oracle E-business Suite でのインターフェイス テーブルで挿入操作を実行します。](../../adapters-and-accelerators/adapter-oracle-ebs/insert-on-an-interface-table-in-oracle-ebs-using-the-wcf-channel-model.md)|  
 |大規模なデータ型を持つテーブルとビューの操作を実行します。 | [WCF サービス モデルを使用して Oracle E-business Suite での大規模なデータ型を持つテーブルに対する操作を完了します。](../../adapters-and-accelerators/adapter-oracle-ebs/run-table-operations-with-large-data-types-in-oracle-ebs-using-a-wcf-service.md) |[WCF サービス モデルを使用して Oracle E-business Suite での大規模なデータ型を持つテーブルに対する操作を完了します。](../../adapters-and-accelerators/adapter-oracle-ebs/run-table-operations-with-large-data-types-in-oracle-ebs-using-a-wcf-service.md)||  

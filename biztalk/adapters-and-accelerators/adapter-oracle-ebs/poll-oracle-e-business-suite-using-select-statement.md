@@ -12,17 +12,17 @@ caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c1eda3c0afb5998485977efddb8a69d47ed4b92a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: cb6c7ff189ffe711e34d087f0a00cff72abed082
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37015421"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65374994"
 ---
 # <a name="poll-oracle-e-business-suite-using-select-statement"></a>SELECT ステートメントを使用してポーリング Oracle E-business Suite
 構成することができます、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]を継続的に、インターフェイス テーブルをポーリングする SELECT ステートメントを使用して、定期的なデータ変更メッセージを受信するビュー、テーブル、および Oracle E-business Suite でのビューのインターフェイスします。 Oracle E-business Suite をポーリングするアダプターを定期的に実行するポーリング ステートメントと SELECT ステートメントを指定できます。 ポスト ポーリング PL/SQL コード ブロックを指定することも、アダプターがポーリング ステートメントが実行された後に実行します。  
 
- ポーリングを有効にするには、Wcf-custom または Wcf-oracleebs 特定のバインド プロパティの受信ポートを指定する必要があります。  アダプターがポーリングをサポートする方法の詳細については、[受信呼び出しのポーリングを使用してサポート](../../adapters-and-accelerators/adapter-oracle-ebs/support-for-inbound-calls-using-polling.md)を参照してください。 ポーリング操作用の SOAP メッセージの構造については、[ポーリング操作のメッセージ スキーマ](../../adapters-and-accelerators/adapter-oracle-ebs/message-schemas-for-the-polling-operations1.md)を参照してください。  
+ ポーリングを有効にするには、Wcf-custom または Wcf-oracleebs 特定のバインド プロパティの受信ポートを指定する必要があります。  アダプターがポーリングをサポートする方法の詳細については、次を参照してください。[受信呼び出しのポーリングを使用してサポート](../../adapters-and-accelerators/adapter-oracle-ebs/support-for-inbound-calls-using-polling.md)します。 ポーリング操作用の SOAP メッセージの構造については、次を参照してください。[ポーリング操作のメッセージ スキーマ](../../adapters-and-accelerators/adapter-oracle-ebs/message-schemas-for-the-polling-operations1.md)します。  
 
 ## <a name="configuring-a-polling-operation-with-oracle-e-business-suite-adapter-binding-properties"></a>Oracle E-business Suite アダプターのバインドのプロパティをポーリング操作を構成します。  
  次の表にまとめたものです、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]メッセージのバインドのプロパティを使用するデータを受信するアダプターの構成を変更します。 受信ポートを構成するときにこれらのバインドのプロパティを指定する必要があります[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソール。  
@@ -38,7 +38,7 @@ ms.locfileid: "37015421"
 |      **PostPollStatement**       |                                                                                                                                                                  指定されたステートメントの後に実行されるステートメント ブロックを指定します、 **PollingInput**プロパティのバインドを実行します。                                                                                                                                                                  |
 |      **PollWhileDataFound**      |                                    指定するかどうか、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]ポーリング間隔を無視し、継続的にデータがポーリングされるテーブルで使用できる場合に、ポーリング ステートメントを実行します。 テーブルのデータがない場合は、アダプターは、指定されたポーリング間隔でポーリング ステートメントを実行する元に戻します。 既定値は false です。                                     |
 
- これらのプロパティの詳細については、[for Oracle E-business Suite バインド プロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-oracle-ebs/read-about-the-biztalk-adapter-for-oracle-e-business-suite-binding-properties.md)を参照してください。 使用する方法の詳細については、 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] Oracle データベースをポーリングするさらに読み進める。  
+ これらのプロパティの詳細については、次を参照してください。 [for Oracle E-business Suite バインド プロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-oracle-ebs/read-about-the-biztalk-adapter-for-oracle-e-business-suite-binding-properties.md)します。 使用する方法の詳細については、 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] Oracle データベースをポーリングするさらに読み進める。  
 
 ## <a name="how-this-topic-demonstrates-polling"></a>このトピックでポーリングしていますか  
  示すために、このトピックでどのように[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]データの受信をサポートは、SELECT ステートメントを使用してメッセージを変更、BizTalk プロジェクトを作成し、スキーマを生成、**ポーリング**ポーリングするテーブルの操作。 このトピックでのスキーマを生成、**ポーリング**の操作、 **MS_SAMPLE_EMPLOYEE**インターフェイス テーブルで、**アプリケーション オブジェクト ライブラリ**アプリケーション。 Oracle E-business Suite でこれらのオブジェクトを作成するサンプルで提供される create_apps_artifacts.sql スクリプトを実行するときに、このテーブルが作成されます。  
@@ -62,7 +62,7 @@ ms.locfileid: "37015421"
     ```  
 
     > [!NOTE]
-    >  SELECT ステートメントで使用される FOR UPDATE 句の詳細については、[SELECT ステートメントを使用してポーリング Oracle E-business Suite](../../adapters-and-accelerators/adapter-oracle-ebs/poll-oracle-e-business-suite-using-select-statement.md)を参照してください。  
+    >  SELECT ステートメントで使用される FOR UPDATE 句の詳細については、次を参照してください。 [SELECT ステートメントを使用してポーリング Oracle E-business Suite](../../adapters-and-accelerators/adapter-oracle-ebs/poll-oracle-e-business-suite-using-select-statement.md)します。  
 
 -   DELETE ステートメントを指定の一部として、 **PostPollStatement**プロパティをバインドします。 このステートメントは、すべてのデータを MS_SAMPLE_EMPLOYEE インターフェイス テーブルから削除されます。 この例では、としては、このバインド プロパティを設定できます。  
 
@@ -91,7 +91,7 @@ ms.locfileid: "37015421"
    このトピックでは、これらのタスクを実行する手順を説明します。  
 
 ## <a name="sample-based-on-this-topic"></a>このトピックに基づくサンプル  
- サンプル PollingUsingSelectStatement、ベースのこのトピックでは、BizTalk Adapter Pack 付きも提供されます。 詳細については、[サンプル](../../adapters-and-accelerators/adapter-oracle-ebs/samples-for-the-oracle-ebs-adapter.md)を参照してください。  
+ サンプル PollingUsingSelectStatement、ベースのこのトピックでは、BizTalk Adapter Pack 付きも提供されます。 詳細については、次を参照してください。[サンプル](../../adapters-and-accelerators/adapter-oracle-ebs/samples-for-the-oracle-ebs-adapter.md)します。  
 
 ## <a name="generating-schema"></a>スキーマを生成します。  
  スキーマを生成する必要があります、**ポーリング**MS_SAMPLE_EMPLOYEE インターフェイス テーブルでの操作、**アプリケーション オブジェクト ライブラリ**アプリケーション。 使用して、スキーマの生成中に、次のタスクを実行、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]します。  
@@ -100,10 +100,10 @@ ms.locfileid: "37015421"
 
 - スキーマの生成、**ポーリング**MS_SAMPLE_EMPLOYEE インターフェイス テーブルで操作します。 選択できます。 操作と、インターフェイス テーブルから、**アプリケーション ベースのビュー**ノードまたは**成果物のビューのベース**ノード。  
 
-  スキーマを生成する方法の詳細については、[参照、検索、および Oracle E-business Suite 操作のメタデータを取得](../../adapters-and-accelerators/adapter-oracle-ebs/browse-search-and-get-metadata-for-oracle-e-business-suite-operations.md)を参照してください。  
+  スキーマを生成する方法の詳細については、次を参照してください。[参照、検索、および Oracle E-business Suite 操作のメタデータを取得](../../adapters-and-accelerators/adapter-oracle-ebs/browse-search-and-get-metadata-for-oracle-e-business-suite-operations.md)します。  
 
 ## <a name="building-and-deploying-the-biztalk-project"></a>ビルドして、BizTalk プロジェクトを配置します。  
- BizTalk ソリューションをビルドし、BizTalk サーバーに配置する必要がありますようになりました。 BizTalk Server にソリューションを展開する方法の詳細については、[BizTalk アプリケーションに Visual Studio から BizTalk アセンブリを展開する](../../core/deploying-biztalk-assemblies-from-visual-studio-into-a-biztalk-application.md)を参照してください。
+ BizTalk ソリューションをビルドし、BizTalk サーバーに配置する必要がありますようになりました。 BizTalk Server にソリューションを展開する方法の詳細については、次を参照してください。 [BizTalk アプリケーションに Visual Studio から BizTalk アセンブリを展開する](../../core/deploying-biztalk-assemblies-from-visual-studio-into-a-biztalk-application.md)します。
 
 ## <a name="configuring-the-biztalk-application"></a>BizTalk アプリケーションを構成します。  
  BizTalk プロジェクトを配置した後、アプリケーションが下に表示されます、**アプリケーション**BizTalk Server 管理コンソール内のノード。 BizTalk Server 管理コンソールを使用して、アプリケーションを構成する必要があります。 アプリケーションの構成の一環としては、アプリケーションでは、受信ポートと送信ポートを作成し、受信ポートからのすべてのメッセージが送信ポートにルーティングされるように、送信ポートにフィルターを追加する必要があります。  
@@ -129,15 +129,15 @@ ms.locfileid: "37015421"
 
  **アプリケーションのコンテキストを設定します。**  
 
- Oracle E-business Suite の成果物の操作を実行している場合は、アプリケーションのコンテキストを設定する適切なバインドのプロパティの値を指定する必要があります。 アプリケーションのコンテキストとアプリケーション コンテキストの設定に必要なバインドのプロパティの詳細については、[アプリケーション コンテキストの設定](../../adapters-and-accelerators/adapter-oracle-ebs/set-application-context.md)を参照してください。  
+ Oracle E-business Suite の成果物の操作を実行している場合は、アプリケーションのコンテキストを設定する適切なバインドのプロパティの値を指定する必要があります。 アプリケーションのコンテキストとアプリケーション コンテキストの設定に必要なバインドのプロパティの詳細については、次を参照してください。[アプリケーション コンテキストの設定](../../adapters-and-accelerators/adapter-oracle-ebs/set-application-context.md)します。  
 
  この例では、適切な値を指定します、 **oracleUserName**、 **oraclePassword**、および**oracleEBSResponsibility**プロパティをバインドします。  
 
 > [!NOTE]
->  使用して受信操作の実行中に、トランザクション分離レベルとトランザクションのタイムアウトを構成することをお勧めします。、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]します。 受信ポートを構成するときに、サービスの動作を追加することで行うことができます。 サービスの動作を追加する方法については、[トランザクション分離レベルの構成と Oracle E-business Suite でのトランザクション タイムアウト](../../adapters-and-accelerators/adapter-oracle-ebs/configure-transaction-isolation-level-and-transaction-timeout-with-oracle-ebs.md)を参照してください。  
+>  使用して受信操作の実行中に、トランザクション分離レベルとトランザクションのタイムアウトを構成することをお勧めします。、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]します。 受信ポートを構成するときに、サービスの動作を追加することで行うことができます。 サービスの動作を追加する方法については、次を参照してください。[トランザクション分離レベルの構成と Oracle E-business Suite でのトランザクション タイムアウト](../../adapters-and-accelerators/adapter-oracle-ebs/configure-transaction-isolation-level-and-transaction-timeout-with-oracle-ebs.md)します。  
 
 ### <a name="creating-a-send-port"></a>送信ポートの作成  
- ハード_ディスク上の場所を定義し、対応する FILE 送信ポートを作成、 [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Oracle からのメッセージをドロップします。 これらのメッセージは、受信ポートの指定したポーリング ステートメントへの応答になります。 送信ポートを作成する方法については、[、Oracle E-business アダプターを物理ポート バインドを手動で構成](../../adapters-and-accelerators/adapter-oracle-ebs/manually-configure-a-physical-port-binding-to-the-oracle-e-business-adapter.md)を参照してください。  
+ ハード_ディスク上の場所を定義し、対応する FILE 送信ポートを作成、 [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Oracle からのメッセージをドロップします。 これらのメッセージは、受信ポートの指定したポーリング ステートメントへの応答になります。 送信ポートを作成する方法については、次を参照してください。 [、Oracle E-business アダプターを物理ポート バインドを手動で構成](../../adapters-and-accelerators/adapter-oracle-ebs/manually-configure-a-physical-port-binding-to-the-oracle-e-business-adapter.md)します。  
 
  受信場所から送信ポートでメッセージをルーティングするフィルターを追加する必要がありますも。 送信ポートにフィルターを追加します。  
 
@@ -156,7 +156,7 @@ ms.locfileid: "37015421"
 4.  **送信ポートのプロパティ**ダイアログ ボックスで、をクリックして**OK**します。  
 
 ## <a name="starting-the-application"></a>アプリケーションの起動  
- Oracle E-business Suite をポーリングするための BizTalk アプリケーションを起動する必要があります。 BizTalk アプリケーションを開始する手順については、[オーケストレーションを開始する方法](../../core/how-to-start-an-orchestration.md)を参照してください。  
+ Oracle E-business Suite をポーリングするための BizTalk アプリケーションを起動する必要があります。 BizTalk アプリケーションを開始する手順については、次を参照してください。[オーケストレーションを開始する方法](../../core/how-to-start-an-orchestration.md)します。  
 
  この段階で、ことを確認します。  
 
@@ -208,7 +208,7 @@ ms.locfileid: "37015421"
 >  [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]ポーリングからの受信ポートを明示的に無効にするまでは引き続き、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソール。  
 
 ## <a name="best-practices"></a>ベスト プラクティス  
- 展開し、BizTalk プロジェクトの構成後は、バインド ファイルと呼ばれる XML ファイル構成設定をエクスポートできます。 バインド ファイルを生成した後は、ポートと受信ポート、送信ポートを作成する必要はありませんように、ファイルから構成設定をインポートできます。 バインド ファイルの詳細については、[Oracle E-business suite アダプターのバインドを再利用](../../adapters-and-accelerators/adapter-oracle-ebs/reuse-adapter-bindings-with-oracle-e-business-suite.md)を参照してください。  
+ 展開し、BizTalk プロジェクトの構成後は、バインド ファイルと呼ばれる XML ファイル構成設定をエクスポートできます。 バインド ファイルを生成した後は、ポートと受信ポート、送信ポートを作成する必要はありませんように、ファイルから構成設定をインポートできます。 バインド ファイルの詳細については、次を参照してください。 [Oracle E-business suite アダプターのバインドを再利用](../../adapters-and-accelerators/adapter-oracle-ebs/reuse-adapter-bindings-with-oracle-e-business-suite.md)します。  
 
 ## <a name="see-also"></a>参照  
  [BizTalk Server を使用して Oracle E-business Suite のポーリング](../../adapters-and-accelerators/adapter-oracle-ebs/poll-oracle-e-business-suite-using-biztalk-server.md)

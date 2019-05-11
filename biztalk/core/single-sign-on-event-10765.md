@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10765 |Microsoft Docs'
+title: シングル サインオン:イベント 10765 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bd49ead3fc30d3b98ea804a98a5882696ea749d7
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f509bb4a00bc4f1e77b09fa0b93ccaf7d50ad0ca
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36975107"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65394303"
 ---
-# <a name="single-sign-on-event-10765"></a>シングル サインオン: イベント 10765
+# <a name="single-sign-on-event-10765"></a>シングル サインオン:イベント 10765
 ## <a name="details"></a>詳細  
   
 |                 |                                                            |
@@ -30,10 +30,10 @@ ms.locfileid: "36975107"
 |  イベント ソース   |                           ENTSSO                           |
 |    コンポーネント    |                            なし                             |
 |  シンボル名  |                  ENTSSO_E_NO_CREDENTIALS                   |
-|  メッセージ テキスト   |       マッピングに対して資格情報が設定されていません。        |
+|  メッセージ テキスト   |       マッピングの資格情報が設定されていません。        |
   
 ## <a name="explanation"></a>説明  
- マッピングに対して GetCredentials が要求されましたが、指定されたマッピングには資格情報がありません。  
+ マッピングに対して getcredentials が要求したされ、指定されたマッピングには、資格情報はありません。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- コマンド ラインまたは MMC スナップインを使用して、マッピングに資格情報を設定します。
+ コマンドラインまたは MMC スナップインを使用して、マッピングの資格情報を設定します。

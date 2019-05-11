@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 199726853eae4faf6efe67f622a8df2cbab1ccd1
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4814cda3568d724664bd98556d46e5ae3552683c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36986035"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65289183"
 ---
 # <a name="selecting-the-logging-store"></a>ログ ストアの選択
 Microsoft[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]など、さまざまなログ記録ストアの組み合わせを選択するオプションの[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]Management Instrumentation (WMI)、 [!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)]、および[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]イベント ログ。  
@@ -43,7 +43,7 @@ Microsoft[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversio
    |     プロパティ      |                                                                                                                                     目的                                                                                                                                     |
    |-------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
    |      **WMI**      |                                                                                                      BTAHL7 の WMI 通知を生成する場合は、このオプションを選択します。                                                                                                      |
-   |      **SQL**      |                     使用する場合は、このオプションを選択[!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)]ログ ストアとして。 **注:** BTAHL7 が存在しない場合は、ログに必要なテーブルを自動的に作成されます。                     |
+   |      **SQL**      |                     使用する場合は、このオプションを選択[!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)]ログ ストアとして。 **注:** BTAHL7 では、存在しない場合は、ログに必要なテーブルが自動的に作成されます。                     |
    |  **SQL Server**   | 型、[!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)]名。 これは、選択したときに必要な**SQL**オプション。 許容最大長は、64 文字です。<br /><br /> 既定のサーバーとデータベース名は、構成されている BTAHL7 データベースです。 |
    | **データベース名** |                                      型、[!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)]データベース名。 これは、選択したときに必要な**SQL**オプション。 許容最大長は 128 文字です。                                      |
    |  **イベント ログ**   |          使用する場合は、このオプションを選択、[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]ログ ストアとしてのイベント ログ。 使用する、[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]イベント ビューアーでイベント メッセージを表示します。          |

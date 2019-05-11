@@ -12,12 +12,12 @@ caps.latest.revision: 27
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 46fd9ffab7aa4f8617e08a18824cc251ad9f4173
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6d31124c5e7da2550767dd87f8fcf53768362322
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37008011"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395594"
 ---
 # <a name="schema-categories-in-the-add-adapter-metadata-wizard"></a>アダプター メタデータの追加ウィザードのスキーマ カテゴリ
 
@@ -136,4 +136,4 @@ ms.locfileid: "37008011"
   
  CategorySchema.xml ファイルを修正したら、AdapterManagement プロジェクトをリビルドし、アダプター メタデータの追加ウィザードを実行して、CategorySchema.xml のツリーが正しく表示されることを確認します。  
   
- アダプター メタデータの追加ウィザードを実行する方法の詳細については、、**アダプター メタデータのウィザード ダイアログ ボックスを追加**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]を参照してください。
+ アダプター メタデータの追加ウィザードを実行する方法の詳細については、次を参照してください。、**アダプター メタデータのウィザード ダイアログ ボックスを追加**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]します。

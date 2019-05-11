@@ -1,5 +1,5 @@
 ---
-title: '方法: LDAP クエリを使用する電子メール アドレスにメッセージを動的にルーティングするスケジュールを作成 |Microsoft Docs'
+title: 操作方法:LDAP クエリを使用する電子メール アドレスにメッセージを動的にルーティングするスケジュールを作成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 93a2237b76524488d7a3903468ebb321d19ae623
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 10e9ca97e52ef901301d141a278d49e4026a2fcb
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36987603"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396518"
 ---
-# <a name="how-to-create-an-itinerary-to-dynamically-route-a-message-to-an-email-address-using-an-ldap-query"></a>方法: LDAP クエリを使用する電子メール アドレスにメッセージを動的にルーティングするスケジュールを作成
+# <a name="how-to-create-an-itinerary-to-dynamically-route-a-message-to-an-email-address-using-an-ldap-query"></a>操作方法:LDAP クエリを使用する電子メール アドレスにメッセージを動的にルーティングするスケジュールを作成します。
 ## <a name="goal"></a>[目標]  
  このセクションでは、LDAP (ライトウェイト ディレクトリ アクセス プロトコル) 経由の電子メール アドレスを照会し、BizTalk Server の SMTP アダプターを使用してエンドポイントを解決する電子メール メッセージを送信するスケジュールを作成する方法を示します。  
   

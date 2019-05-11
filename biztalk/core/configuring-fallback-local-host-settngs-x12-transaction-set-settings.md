@@ -12,18 +12,18 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3eb13da3e0bc9e0c3ee676a8bf01d484a4201a80
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f3eb3ed007a30e2d65c4d65aebe98ebabf2f93c6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36979027"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65391215"
 ---
 # <a name="configuring-fallback-local-host-settngs-x12-transaction-set-settings"></a>フォールバック ローカル ホスト設定の構成 (X12 トランザクションセットの設定)
-受信したインターチェンジを処理するには、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] はインターチェンジの処理および検証に使用するスキーマを決定する必要があります。 この場合、スキーマに関連付けられたターゲット名前空間および使用するスキーマを決定します。 フォールバック アグリーメントに関するこのページで、フォールバック ターゲットの名前空間を指定します。 どの[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]決定スキーマについては、「[アグリーメントの解決、スキーマ探索、および EDI メッセージの受信を承認](../core/agreement-resolution-schema-discovery-and-authorization-for-received-edi.md)します。  
+受信インターチェンジを処理する[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]処理およびインターチェンジの検証に使用する必要があるスキーマを決定する必要があります。 多数のドキュメント、スキーマに関連付けられたターゲット名前空間の決定し、使用するスキーマを決定します。 フォールバック アグリーメントのこのページでは、フォールバック ターゲットの名前空間を指定します。 どの[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]決定スキーマについては、「[アグリーメントの解決、スキーマ探索、および EDI メッセージの受信を承認](../core/agreement-resolution-schema-discovery-and-authorization-for-received-edi.md)します。  
   
 > [!NOTE]
->  このトピックは、HIPAA 関連の設定にも当てはまります。  
+>  このトピックでは、HIPAA 関連の設定にも適用されます。  
   
 ## <a name="prerequisites"></a>前提条件  
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者グループまたは [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] B2B Operators グループのメンバーとしてログオンしている必要があります。  
@@ -37,7 +37,7 @@ ms.locfileid: "36979027"
 3. 選択**変換には 10 進形式 Nn を底 10 の数値が含まれる**を BizTalk Server での中間 XML で底 10 の数値形式 Nn で指定されている EDI 番号を変換します。  
   
    > [!NOTE]
-   >  この変換の後、中間 XML は長さの検証でエラーになる可能性があります。 これは、底 10 の数値形式の番号に 10 進数が含まれるために発生するもので、その番号の長さは Nn 形式の番号より 1 だけ大きくなります。 値を追加することで、この問題を解決できます**1**最小値/最大長の値にします。  
+   >  この変換後の中間 XML に長さの検証は失敗します。 これは、底 10 の数値書式の数値は、Nn 形式で、長さ、数より大きい値のいずれかを行う、10 進数を含まれているために発生します。 値を追加することで、この問題を解決できます**1**最小値/最大長の値にします。  
   
 4. 選択**末尾の区切り記号に空の XML タグを作成する**がインターチェンジの送信者が末尾の区切り記号に空の XML タグが含まれます。  
   

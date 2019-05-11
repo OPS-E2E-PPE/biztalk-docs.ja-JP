@@ -1,5 +1,5 @@
 ---
-title: 高可用性を実現して |Microsoft ドキュメント
+title: 高可用性の実現 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,17 +12,17 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c4521981bc3df67553c244a55c91c1eb045c8e0d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 47e482709ae5a9c6b1ea67446773eaadcdc26a25
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22302042"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395100"
 ---
-# <a name="providing-high-availability"></a>高可用性を提供します。
-高可用性が提供される、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]環境内の各機能コンポーネントの冗長性を実装することによって環境。 実行している複数のコンピューターをインストールすることで、BizTalk ホストの冗長性を実現できます[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]BizTalk グループとで実行しているコンピューターの 1 つ以上を実行するホストのインスタンスを構成してから、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]グループにします。 その他のコンポーネントの冗長性、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]環境でリソースとして、コンポーネントを構成することによって実現できます、[!INCLUDE[btsWinSvrNoVersion](../includes/btswinsvrnoversion-md.md)]クラスター。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]リソースとして BizTalk ホストの構成にも対応して、[!INCLUDE[btsWinSvrNoVersion](../includes/btswinsvrnoversion-md.md)]クラスターで、特定の BizTalk アダプターの高可用性を実現することをお勧めします。  
+# <a name="providing-high-availability"></a>高可用性の実現
+高可用性を実現する[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]環境内の各機能コンポーネントの冗長性を実装することで環境。 実行している複数のコンピューターにインストールすることで、BizTalk ホストの冗長性を実現できます[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]BizTalk グループで実行しているコンピューターの 1 つ以上を実行するホストのインスタンスの構成で[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]グループ。 他のコンポーネントの冗長性、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]にリソースとして、コンポーネントを構成することで環境を実現できます、[!INCLUDE[btsWinSvrNoVersion](../includes/btswinsvrnoversion-md.md)]クラスター。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 内のリソースとして BizTalk ホストの構成にも対応して、[!INCLUDE[btsWinSvrNoVersion](../includes/btswinsvrnoversion-md.md)]クラスターで、特定の BizTalk アダプターの高可用性を実現するをお勧めします。  
   
- このセクションの機能コンポーネントの高可用性を実現する方法について説明、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]環境。  
+ このセクションの機能コンポーネントの高可用性を実現する方法を説明します、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]環境。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
@@ -35,4 +35,4 @@ ms.locfileid: "22302042"
 -   [マスター シークレット サーバーの高可用性](../technical-guides/high-availability-for-the-master-secret-server.md)  
   
 ## <a name="see-also"></a>参照  
- [災害復旧](../technical-guides/disaster-recovery.md)
+ [ディザスター リカバリー](../technical-guides/disaster-recovery.md)

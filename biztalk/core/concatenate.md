@@ -1,5 +1,5 @@
 ---
-title: 連結 |Microsoft ドキュメント
+title: 連結 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4766f65fb0cbe26c8f3c545c38235d83abb283a4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4d47db49e60b95071b48393735b3b4b0e7cee528
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22231698"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65391629"
 ---
 # <a name="concatenate"></a>連結
 スタックから上位 2 項目を削除し、その 2 つの項目を連結して、結果をスタックにプッシュします。  
@@ -35,7 +35,7 @@ ms.locfileid: "22231698"
 ## <a name="pushed-value"></a>プッシュされた値  
  連結操作の結果の文字列。  
   
-## <a name="remarks"></a>解説  
+## <a name="remarks"></a>コメント  
   
 ## <a name="example"></a>例  
  次に示す更新された式の例では、定数文字列 "Start:" が "EventTime" コンテキスト プロパティの値と連結され、データベース列 NewOrderCreateTime に保存されます。  
@@ -55,4 +55,4 @@ ms.locfileid: "22231698"
 ```  
   
 ## <a name="see-also"></a>参照  
- [インターセプタの操作](../core/interceptor-operations.md)
+ [インターセプターの操作](../core/interceptor-operations.md)

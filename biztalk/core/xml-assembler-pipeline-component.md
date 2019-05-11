@@ -1,5 +1,5 @@
 ---
-title: XML アセンブラー パイプライン コンポーネント |Microsoft ドキュメント
+title: XML アセンブラー パイプライン コンポーネント |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,39 +15,39 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 22348b61ca32567190fa99e103fe536f5199af58
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7ed0d334539ae013a87d8caa293b55288e24becd
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22289490"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65295600"
 ---
 # <a name="xml-assembler-pipeline-component"></a>XML アセンブラー パイプライン コンポーネント
-XML アセンブラー パイプライン コンポーネントは、XML のシリアル化とアセンブルを 1 つのコンポーネントで実行します。 XML アセンブラー パイプライン コンポーネントの主要な機能は、メッセージ コンテキストからエンベロープおよびドキュメントにプロパティを転送することです。  
+XML アセンブラー パイプライン コンポーネントは、XML シリアル化して、1 つのコンポーネントにアセンブルを結合します。 その主な機能では、プロパティをメッセージ コンテキストからエンベロープおよびドキュメントに転送します。  
   
- XML アセンブラー コンポーネントは、一連のメッセージを受け取った後で、次の処理を実行することによりデータ交換を実現します。  
+ 次の操作は、メッセージをインターチェンジのバッチを受信した後、XML アセンブラー コンポーネントで発生します。  
   
-1.  指定されたエンベロープ仕様に基づいてエンベロープを作成します。  
+1.  アセンブラーは、指定されたエンベロープ仕様を使用してエンベロープを作成します。  
   
-2.  メッセージに関連付けられている XSD スキーマ内に注釈としてコーディングされている、定義済みの XPath を使用して、メッセージ インスタンスのコンテンツ プロパティを設定します。  
+2.  コンポーネントは、メッセージに関連付けられている XSD スキーマに注釈としてコーディングされている、事前定義された Xpath を使用して、メッセージ インスタンスのコンテンツのプロパティを設定します。  
   
-3.  メッセージをエンベロープに追加します。  
+3.  コンポーネントは、メッセージをエンベロープに追加します。  
   
-4.  エンベロープに関連付けられている XSD スキーマ内に注釈としてコーディングされている、定義済みの XPath を使用して、エンベロープのコンテンツ プロパティを設定します。  
+4.  コンポーネントは、エンベロープに関連付けられている XSD スキーマ内に注釈としてコーディングされている、事前定義された Xpath を使用して、エンベロープのコンテンツのプロパティを設定します。  
   
 > [!NOTE]
->  XML アセンブラー パイプライン コンポーネントでは、欠落している属性フィールドに値を設定することはありません。ただし、空の要素フィールドについては、既定値や固定値の割り当てられていない省略可能なフィールドの場合にのみ値が設定されます。  
+>  XML アセンブラー パイプライン コンポーネントは、不足している属性フィールドでは設定されませんが、フィールドは省略可能ですが、既定値はありませんまたは固定値と、空の要素のフィールドを設定は。  
   
- XML アセンブラー パイプライン コンポーネントの構成方法の詳細については、次を参照してください。 [、XML アセンブラー パイプライン コンポーネントを構成する方法](../core/how-to-configure-the-xml-assembler-pipeline-component.md)です。  
+ XML アセンブラー パイプライン コンポーネントの構成方法の詳細については、次を参照してください。 [、XML アセンブラー パイプライン コンポーネントを構成する方法](../core/how-to-configure-the-xml-assembler-pipeline-component.md)します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [XML アセンブラー パイプライン コンポーネントでの文字エン コード](../core/character-encoding-in-the-xml-assembler-pipeline-component.md)  
+-   [XML アセンブラー パイプライン コンポーネントでの文字エンコード](../core/character-encoding-in-the-xml-assembler-pipeline-component.md)  
   
--   [XML アセンブラー パイプライン コンポーネントで処理命令](../core/processing-instructions-in-the-xml-assembler-pipeline-component.md)  
+-   [XML アセンブラー パイプライン コンポーネントの処理命令](../core/processing-instructions-in-the-xml-assembler-pipeline-component.md)  
   
 -   [XML アセンブラー パイプライン コンポーネントで認識されないメッセージ](../core/unrecognized-messages-in-the-xml-assembler-pipeline-component.md)  
   
--   [XML 情報は、XML アセンブラー パイプライン コンポーネントで要素を設定](../core/xml-information-set-elements-in-the-xml-assembler-pipeline-component.md)  
+-   [XML アセンブラー パイプライン コンポーネントにおける XML 要素](../core/xml-information-set-elements-in-the-xml-assembler-pipeline-component.md)  
   
 -   [XML アセンブラー パイプライン コンポーネントにおけるドキュメント構造の強化](../core/document-structure-enforcement-in-the-xml-assembler-pipeline-component.md)

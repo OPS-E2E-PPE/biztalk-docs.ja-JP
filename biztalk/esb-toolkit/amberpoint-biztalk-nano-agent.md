@@ -1,5 +1,5 @@
 ---
-title: AmberPoint BizTalk Nano Agent |Microsoft ドキュメント
+title: AmberPoint BizTalk Nano エージェント |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,22 +12,22 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fc25c00b642c73de4f904daaf53f9504f593b780
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6876dd47da25021842de2d9c95ad26fd0e0491e7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22289866"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65392373"
 ---
-# <a name="amberpoint-biztalk-nano-agent"></a>AmberPoint BizTalk Nano エージェント
-AmberPoint SOA 管理システム (SMS) では、包括的な視覚エフェクトと実行時のガバナンスの課題に対応する分析ツールを提供します。 [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]と Microsoft BizTalk Server 統合 SOA ビジネス アプリケーションおよびサービスに簡単になりますの分析の結果として得られる複合アプリケーションおよびオーケストレーションはより困難です。 BizTalk Nano エージェントを通じて BizTalk Server の統合の AmberPoint の既存の実行時の拡張機能の BizTalk Server にガバナンスの受信場所と送信ポートは、その基になるアダプターのバインドに関係なく。  
+# <a name="amberpoint-biztalk-nano-agent"></a>AmberPoint BizTalk Nano Agent
+AmberPoint SOA 管理システム (SMS) では、包括的な視覚化と実行時のガバナンスの課題に対処する分析ツールを提供します。 [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]を Microsoft BizTalk Server、容易に統合の SOA ビジネス アプリケーションやサービスが、結果として得られる複合アプリケーションとオーケストレーションの分析にはより困難になります。 AmberPoint の BizTalk Server の統合、BizTalk Nano エージェントを介して既存の実行時の拡張のガバナンス機能を BizTalk Server を含めるには、受信場所と送信ポート、その基になるアダプター バインドに関係なく。  
   
- このセクションのトピックは次のとおりです。  
+ このセクションでは、次のトピックについて説明します。  
   
--   [サービスのネットワーク管理](../esb-toolkit/service-network-management.md)  
+-   [サービス ネットワーク管理](../esb-toolkit/service-network-management.md)  
   
 -   [サービス レベル管理](../esb-toolkit/service-level-management.md)  
   
--   [エンド ツー エンドのトランザクションの追跡](../esb-toolkit/end-to-end-transaction-tracking.md)  
+-   [エンドツーエンドのトランザクション追跡](../esb-toolkit/end-to-end-transaction-tracking.md)  
   
--   [BizTalk Server の統合](../esb-toolkit/biztalk-server-integration2.md)
+-   [BizTalk Server 統合](../esb-toolkit/biztalk-server-integration2.md)

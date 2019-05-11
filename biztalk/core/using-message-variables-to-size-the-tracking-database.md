@@ -24,46 +24,46 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9ef731d12155ae20d7f78aaaf4a5f990b76affba
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8ac96e6784ed73dce415c78ff5f559d52be42395
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36985683"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396833"
 ---
-# <a name="using-message-variables-to-size-the-tracking-database"></a>メッセージ変数を使用して追跡データベースのサイズを求める方法
-Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、BizTalk の追跡 (BizTalkDTADb) データベースのサイズが一定期間経過後にどのくらいのサイズになるかを、各種の変数を使って求めることができます。 これらの変数を次に示します。  
+# <a name="using-message-variables-to-size-the-tracking-database"></a>追跡データベースのサイズにメッセージ変数を使用します。
+Microsoft で[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]、大きさ、BizTalk 追跡 (BizTalkDTADb) データベースになるか、指定した期間にわたって変数の数を使用することができます。 これらの変数は次のとおりです。  
   
 - 使用パイプライン数  
   
-- 関連するオーケストレーション数  
+- 関連するオーケストレーションの数  
   
 - 生成されたイベント数  
   
-- 追跡対象のメッセージ プロパティ数  
+- 追跡メッセージのプロパティの数  
   
-- 追加的に作成されるメッセージ数  
+- 作成された追加のメッセージの数  
   
-- 指定の期間に受け取ったメッセージの推定数  
+- 指定した時間帯で受信したメッセージの推定数  
   
-  BizTalk の追跡データベースのサイズを見積もるための式はそれほど複雑なものではありません。ただし、この式は、BizTalk Server 環境で使用されるすべての受信/送信メッセージ プロセスに対して適用する必要があります。 つまり、個々のメッセージ シナリオに対してこの式を適用し、その結果を総計して初めて、最終的な推定データベース サイズを得ることができます。 このドキュメントでは、次の 2 つのシナリオを想定しています。 シナリオでは、次のとおりです。  
+  BizTalk 追跡データベースのサイズの見積もりに使用する数式は容易ですが、中には、BizTalk Server の実装を使用する各メッセージの受信および送信プロセスに適用する必要があります。 つまり、個々 のメッセージ シナリオのこの式を適用し、最終的な推定データベース サイズを取得する結果を追加する必要があります。 このドキュメントでは、2 つのシナリオに注目します。 シナリオでは、次のとおりです。  
   
-1. メッセージを受信し、そのメッセージを変換して、結果のメッセージを送信する  
+1. メッセージの受信や、メッセージに変換し、結果のメッセージを送信します。  
   
-2. メッセージを受信し、そのメッセージを使ってビジネス プロセスを実行して、結果のメッセージを送信する  
+2. 結果のメッセージを送信し、メッセージを使用してビジネス プロセスを実行しているメッセージを受信します。  
   
-   どちらも、BizTalk Server 環境で想定されるシナリオですが、追跡データの量はシナリオによって異なります。 BizTalk Server 環境で生成される総追跡データは、これらすべてのシナリオを合計した値になります。  
+   BizTalk Server のインストールに存在するこれら両方のシナリオがあり、各シナリオは、追跡データのさまざまな量を生成します。 BizTalk Server のインストール用に生成されたデータの追跡の合計は、すべてのシナリオの合計です。  
   
-   式に用いられている変数には、次のようなものがあります。  
+   以下は、式で使用されるいくつかの変数です。  
   
 |変数|説明|  
 |--------------|-----------------|  
-|**Nserv**|サービス数 (パイプライン数 + オーケストレーション数)|  
-|**イベント**|生成されるメッセージ イベント数|  
-|**Properties**|追跡対象のメッセージ プロパティ数|  
-|**PropSize**|昇格させたプロパティ (フィールド) のサイズ (バイト単位)|  
-|**CMsgs**|1 つの受信メッセージにつき追加的に作成されるメッセージ数|  
-|**メッセージ数**|一定期間における受信メッセージの推定数|  
+|**Nserv**|複数のサービス (パイプラインの数) + オーケストレーション数|  
+|**イベント**|生成されたメッセージのイベントの数|  
+|**Properties**|追跡メッセージのプロパティの数|  
+|**PropSize**|サイズ (バイト単位)、昇格させたプロパティ (フィールド)|  
+|**CMsgs**|受信メッセージごとに作成された追加のメッセージの数|  
+|**メッセージ数**|特定の期間中に受信メッセージの推定数|  
 |**式の MsgSize**|メッセージ サイズ|  
 |**MsgNum**|受信メッセージごとに追跡されるメッセージ数|  
   
@@ -73,11 +73,11 @@ Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernover
 [((Nserv * 150 bytes) + (Events * 230 bytes) + (Properties * CMsgs*(52 bytes + PropSize))) * Msgs]/1024/1024 = Data size in MB  
 ```  
   
- この式では、メッセージによって生成される追跡データのみが計算されます。オーケストレーション デバッガー用に生成される追跡データは含まれません。 BizTalk の追跡データベースのサイズを見積もるには、各メッセージ プロセスに対してこの式を適用する必要があります。  
+ この式は、メッセージによって生成される追跡データのみを計算し、オーケストレーション デバッガーに対して生成された追跡データは含まれません。 BizTalk 追跡データベースのサイズを推定するには、各メッセージ プロセスには、次の数式を適用する必要があります。  
   
 ## <a name="see-also"></a>参照  
  [メッセージ本文を追跡する追跡データベースのサイズ調整](../core/sizing-the-tracking-database-to-track-message-bodies.md)   
  [シナリオ 1: 単純な BizTalk メッセージの追跡データベースのサイズ調整](../core/scenario-1-sizing-the-tracking-database-for-simple-biztalk-messages.md)   
  [シナリオ 2: オーケストレーション内のメッセージの追跡データベースのサイズ調整](../core/scenario-2-sizing-the-tracking-database-for-messages-in-orchestrations.md)   
- [シナリオ 4: すべてのメッセージの追跡データベースのサイズ調整](../core/scenario-4-sizing-the-tracking-database-for-all-messages.md)   
- [シナリオ 3: 同報リストに送信されるメッセージの追跡データベースのサイズ調整](../core/scenario-3-size-the-tracking-database-for-messages-sent-to-distribution-lists.md)
+ [シナリオ 4:すべてのメッセージの追跡データベースのサイズ調整](../core/scenario-4-sizing-the-tracking-database-for-all-messages.md)   
+ [シナリオ 3:配布リストに送信されるメッセージの追跡データベースのサイズ調整](../core/scenario-3-size-the-tracking-database-for-messages-sent-to-distribution-lists.md)

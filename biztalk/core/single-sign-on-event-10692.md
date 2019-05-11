@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10692 |Microsoft Docs'
+title: シングル サインオン:イベント 10692 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 37148a774504599b99665b57691316c35d0783bf
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: fdfd3359baec8f4dbecaaafc6acd0e614956ffcc
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36987283"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65397351"
 ---
-# <a name="single-sign-on-event-10692"></a>シングル サインオン: イベント 10692
+# <a name="single-sign-on-event-10692"></a>シングル サインオン:イベント 10692
 ## <a name="details"></a>詳細  
 
 |                 |                                                                                                                                                                                                                                                                     |
@@ -28,21 +28,21 @@ ms.locfileid: "36987283"
 | 製品バージョン |                                                                                                     [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                                                                                                      |
 |    イベント ID     |                                                                                                                                10692                                                                                                                                |
 |  イベント ソース   |                                                                                                                               ENTSSO                                                                                                                                |
-|    コンポーネント    |                                                                                                                                 N\A                                                                                                                                 |
+|    コンポーネント    |                                                                                                                                 該当なし                                                                                                                                 |
 |  シンボル名  |                                                                                                                    SSO_WARN_REPLAY_ACCESS_DENIED                                                                                                                    |
-|  メッセージ テキスト   | 元の呼び出し元がアダプターのアクセス アカウントのメンバーではなくなったため、外部パスワード変更を再生できません。%r<br /><br /> 再生ファイル: % 1 %r<br /><br /> アダプター: % 2 %r<br /><br /> 最初の呼び出し元: % 3 %r<br /><br /> アクセス アカウント: %4 |
+|  メッセージ テキスト   | 最初の呼び出し元が adapter.%r アクセス アカウントのメンバーではなくなったために、外部パスワード変更を再生することはできません。<br /><br /> 再生ファイル: % 1 %r<br /><br /> アダプター: % 2 %r<br /><br /> 最初の呼び出し元: % 3 %r<br /><br /> アクセス アカウント: %4 |
 
 ## <a name="explanation"></a>説明  
- この警告イベントは、SSO が SSO データベースとの接続を再び確立したが、当初変更を指定したアカウントが有効ではなくなったため、再生ファイルで指定された (SSO データベースでの) 変更を実行できなかったことを示します。  
+ この警告イベントは、こと SSO が SSO データベースとの接続を再確立が (SSO データベース) に変更を加えることができません指定再生ファイルで、変更を最初に指定されたアカウントが有効ではなくなったためにを示します。  
 
- ENTSSO サーバーから SSO データベースに接続できない場合、パスワード同期で再生ファイルが使用されます。 進行ファイルでは、SSO データベースとの接続が再度失われた場合に SSO で再生ファイルをどこまで読み取ることができるかを示します。  
+ 再生ファイルは、ENTSSO サーバーが SSO データベースに接続できない場合、パスワード同期で使用されます。 進行状況ファイルがどこまで方法を示します SSO が SSO データベースと再生ファイルのケースで連絡先が再度失われたを読めるようにします。  
 
 ## <a name="user-action"></a>ユーザーの操作  
- この警告を解決するには、次の操作を行います:   
+ この警告を解決するには、次の操作を行います。  
 
-- 関連するイベントについては、システムおよびアプリケーションのイベント ログを確認します。  
+- システムおよびアプリケーションのイベント ログで関連するイベントを確認します。  
 
-  詳細については、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ヘルプの次の情報を参照してください:   
+  詳細については、の次のリソースを参照してください。[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプ。  
 
 - [パスワード同期を構成する方法](../core/how-to-configure-password-synchronization.md)  
 

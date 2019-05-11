@@ -1,5 +1,5 @@
 ---
-title: BizTalk Server データベースの移動 |Microsoft ドキュメント
+title: BizTalk Server データベースの移動 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -18,12 +18,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fb2effe8f274ab2d4f564a431d2c068fd8c55bcb
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 372083383dd7d20b448d3f03623b12045bcf4a0b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22263170"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65394356"
 ---
 # <a name="moving-biztalk-server-databases"></a>BizTalk Server データベースの移動
 さまざまなニーズに積極的に対応するデータ センターにおいて、データベースを別のハードウェアに移動することは決して珍しいことではありません。 データベースの移動が必要となるケースとしては、データベースがハードウェアの容量を超えてしまったり、ハードウェアを新しいハードウェアにアップグレードしたりする場合などが考えられます。 ここでは、いくつかの BizTalk Server データベースを対象に、その移動方法を紹介します。  
@@ -40,4 +40,4 @@ ms.locfileid: "22263170"
   
 -   [BAM 分析データベースを移動する方法](../core/how-to-move-the-bam-analysis-database2.md)  
   
--   [Services データベースに BAM Notification を移動する方法](../core/how-to-move-the-bam-notification-services-databases2.md)
+-   [BAM Notification Services データベースを移動する方法](../core/how-to-move-the-bam-notification-services-databases2.md)

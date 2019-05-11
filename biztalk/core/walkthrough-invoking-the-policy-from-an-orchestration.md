@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル: オーケストレーションからのポリシーの呼び出し |Microsoft Docs'
+title: 'チュートリアル: オーケストレーションからポリシーを呼び出す |Microsoft Docs'
 ms.custom: ''
 ms.date: 2016-04-05
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 30
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 33bef51b2c702e71fcf6ef0ea0c4fd63b28fbde8
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 21872a8ecab002c15cd8a108887a0a7bbb3a2b9d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36976561"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395342"
 ---
-# <a name="walkthrough-invoking-the-policy-from-an-orchestration"></a>チュートリアル: オーケストレーションからのポリシーの呼び出し
+# <a name="walkthrough-invoking-the-policy-from-an-orchestration"></a>チュートリアル: オーケストレーションからポリシーを呼び出す
 ポリシーは、次のいずれかの方法でオーケストレーションから呼び出すことができます。  
 
 - 使用して、**ルールの呼び出し**図形  
@@ -29,7 +29,7 @@ ms.locfileid: "36976561"
   使用して、**ルールの呼び出し**図形は、最も一般的な方法ともオーケストレーションからポリシーを呼び出すをお勧めします。 このチュートリアルでは、詳細な手順を使用して、**ルールの呼び出し**図形を呼び出す、 **ProcessPurchaseOrder**ポリシー。  
 
 ## <a name="prerequisites"></a>前提条件  
- 完了する必要があります、[チュートリアル: ポリシーのテスト](../core/walkthrough-testing-the-policy.md)このチュートリアルを実行する前にチュートリアル。  
+ 完了する必要があります、[チュートリアル。ポリシーのテスト](../core/walkthrough-testing-the-policy.md)このチュートリアルを実行する前にチュートリアル。  
 
 ## <a name="overview-of-this-walkthrough"></a>このチュートリアルの概要  
  次の表に示すように、このチュートリアルには 7 つの手順が含まれています。  
@@ -67,7 +67,7 @@ ms.locfileid: "36976561"
 
 5. ソリューション エクスプ ローラーで右クリック**RuleTest**、 をポイント**追加**、 をクリックし、**既存項目の**。  
 
-6. 参照し、追加、 **PO.xsd**で作成したスキーマ ファイル、[チュートリアル: 単純なビジネス ポリシーを作成する](../core/walkthrough-creating-a-simple-business-policy.md)チュートリアル。 Visual Studio でのコピー、 **PO.xsd**ファイルを開き、プロジェクトに追加します。  
+6. 参照し、追加、 **PO.xsd**で作成したスキーマ ファイル、[チュートリアル。単純なビジネス ポリシーを作成する](../core/walkthrough-creating-a-simple-business-policy.md)チュートリアル。 Visual Studio でのコピー、 **PO.xsd**ファイルを開き、プロジェクトに追加します。  
 
 7. ソリューション エクスプ ローラーで右クリック**RuleTest**、 をポイント**追加**、 をクリックし、**新しい項目の**。  
 
@@ -232,7 +232,7 @@ ms.locfileid: "36976561"
 
 -   構成、**ルールの呼び出し**図形が使用される型を決定するときに保存されている最新バージョンは。 実行時に、展開されている最新のバージョンが使用されます。  
 
--   使用する必要が展開されている最新バージョン以外のポリシー バージョンを使用する場合は、**式**図形し、その特定のバージョンのポリシーを実行するには、プログラムによってルール エンジンを呼び出しています。 詳細については、[ポリシーの実行方法](../core/how-to-execute-policies.md)を参照してください。  
+-   使用する必要が展開されている最新バージョン以外のポリシー バージョンを使用する場合は、**式**図形し、その特定のバージョンのポリシーを実行するには、プログラムによってルール エンジンを呼び出しています。 詳細については、次を参照してください。[ポリシーの実行方法](../core/how-to-execute-policies.md)します。  
 
 -   **ルールの呼び出し**図形を使用したかのように、メッセージを再構築、**メッセージの構築**図形、失われたメッセージのコンテキスト プロパティがさらに可能性があります。  
 
@@ -241,7 +241,7 @@ ms.locfileid: "36976561"
 -   クライアント アプリケーションは、展開されているポリシーのみにアクセスできます。 ルール エンジンを生成するクライアント アプリケーションに展開されていないポリシーが呼び出される場合、 **RuleEngineDeploymentNotDeployedException**例外。 アプリケーション イベント ログで、詳細エラー メッセージを確認できます。  
 
 ## <a name="next-steps"></a>次の手順  
- これで、このチュートリアルを完了すると、実行、[チュートリアル: ポリシーでのボキャブラリの作成と](../core/walkthrough-creating-and-using-a-vocabulary-in-the-policy.md)ボキャブラリを作成すると、では、ボキャブラリを使用して詳細な手順を説明するチュートリアル、**ProcessPurchaseOrder**ポリシー。  
+ これで、このチュートリアルを完了すると、実行、[チュートリアル。作成して、ボキャブラリを使用して、ポリシーで](../core/walkthrough-creating-and-using-a-vocabulary-in-the-policy.md)ボキャブラリを作成すると、では、ボキャブラリを使用して詳細な手順を説明するチュートリアル、 **ProcessPurchaseOrder**ポリシー。  
 
 ## <a name="see-also"></a>参照  
  [条件の評価とアクションの実行](../core/condition-evaluation-and-action-execution.md)   

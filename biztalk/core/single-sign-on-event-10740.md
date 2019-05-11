@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10740 |Microsoft Docs'
+title: シングル サインオン:イベント 10740 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b9bf7c2cdaae3cffe280035f007cd1b49d2c70c8
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: db19b81cb024ff6dfee2196cdefc33f8f977dea9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36970059"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65291756"
 ---
-# <a name="single-sign-on-event-10740"></a>シングル サインオン: イベント 10740
+# <a name="single-sign-on-event-10740"></a>シングル サインオン:イベント 10740
 ## <a name="details"></a>詳細  
 
 |                 |                                                                                                                                                            |
@@ -28,19 +28,19 @@ ms.locfileid: "36970059"
 | 製品バージョン |                                                 [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                                                 |
 |    イベント ID     |                                                                           10740                                                                            |
 |  イベント ソース   |                                                                           ENTSSO                                                                           |
-|    コンポーネント    |                                                                            N\A                                                                             |
+|    コンポーネント    |                                                                            該当なし                                                                             |
 |  シンボル名  |                                                               SSO_WARN_INVALID_WINDOWS_USER                                                                |
-|  メッセージ テキスト   | Windows アカウントがアプリケーションの更新について有効ではありません。%r<br /><br /> アプリケーション名: %1 %r<br /><br /> Windows アカウント: % 2 %r<br /><br /> エラー コード: %3 |
+|  メッセージ テキスト   | Windows アカウントがアプリケーション update.%r のため無効です。<br /><br /> アプリケーション名: %1 %r<br /><br /> Windows アカウント: % 2 %r<br /><br /> エラー コード: %3 |
 
 ## <a name="explanation"></a>説明  
- この警告イベントは、(イベント メッセージに示されている) Windows アカウントがアプリケーションの更新について有効ではないことを示します。 これは、ホスト グループ アプリケーションの Windows アカウントを変更したときに発生する可能性があります。 ホスト グループ アプリケーションは、外部システムから Windows システムへのシングル サインオンに使用されます。 ホスト グループ アプリケーションは、外部ユーザーのセットを 1 つの Windows アカウントにマッピングすることができます。 ホスト グループ アプリケーションがマッピングされる Windows アカウントは、アプリケーションのアプリケーション ユーザー フィールドで定義されます。  
+ この警告イベントは、(イベント メッセージで指定された) Windows アカウントがアプリケーションの更新プログラムに対して有効ではないことを示します。 これは、ホスト グループ アプリケーションの Windows アカウントを変更するときに発生します。 ホスト グループ アプリケーションは、シングル サインオンの外部システムから Windows システムに使用されます。 1 つの Windows アカウントに、一連の外部ユーザーをマップできます。 Windows アカウントにマップされますが、アプリケーションのアプリケーション ユーザー フィールドで定義されます。  
 
 ## <a name="user-action"></a>ユーザーの操作  
- この警告を解決するには、次の操作を行います:   
+ この警告を解決するには、次の操作を行います。  
 
-- 使用している Windows アカウントが有効であることを確認します。  
+- Windows アカウントの中であることを確認が有効でを使用します。  
 
-- 正しい Windows アカウントのプロパティを使用して Windows アカウントを再作成します。  
+- Windows アカウントに適切なプロパティを持つ Windows アカウントを再作成します。  
 
   詳細については、次のリソースを参照してください。  
 

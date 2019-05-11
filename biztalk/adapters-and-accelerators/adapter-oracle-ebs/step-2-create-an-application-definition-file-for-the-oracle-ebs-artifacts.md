@@ -1,5 +1,5 @@
 ---
-title: '手順 2: Oracle E-business Suite の成果物のアプリケーション定義ファイルの作成 |Microsoft Docs'
+title: 手順 2:Oracle E-business Suite の成果物のアプリケーション定義ファイルの作成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,19 +12,19 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f0bd73da129e978bfe2d4ad5af2b4f26fb9bcc16
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ad908429c8daccef990377c953fda334558440aa
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36970755"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65374565"
 ---
-# <a name="step-2-create-an-application-definition-file-for-the-oracle-e-business-suite-artifacts"></a>手順 2: Oracle E-business Suite の成果物のアプリケーション定義ファイルを作成します。
+# <a name="step-2-create-an-application-definition-file-for-the-oracle-e-business-suite-artifacts"></a>手順 2:Oracle E-business Suite の成果物のアプリケーション定義ファイルを作成します。
 ![手順 4 2](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-2of4.gif "Step_2of4")  
   
  **所要時間:** 15 分  
   
- **目標:** Microsoft SharePoint Server でビジネス データ カタログ機能を公開し、基幹業務 (LOB) アプリケーションからのデータがポータルに組み込まれています。 ポータル サイトにこのデータを組み込むには、Microsoft Office SharePoint Server を使用するアプリケーション定義ファイルをビルドする必要があります。  
+ **目標:** Microsoft SharePoint Server のビジネス データ カタログ機能は、公開し、基幹業務 (LOB) アプリケーションからのデータがポータルに組み込まれています。 ポータル サイトにこのデータを組み込むには、Microsoft Office SharePoint Server を使用するアプリケーション定義ファイルをビルドする必要があります。  
   
  Microsoft Office SharePoint Server 2007 SDK で使用可能なビジネス データ カタログ定義エディター ツールでは、ビジネス データ カタログ アプリケーション定義ファイルを作成することができます。 このツールでは、手動でファイルを作成するには、XML エディター必要はありませんので、定義ファイルの XML ファイルが自動的に生成されます。  
   
@@ -40,7 +40,7 @@ ms.locfileid: "36970755"
   
 -   Microsoft Office SharePoint Server 2007 SDK の一部としてインストールされているビジネス データ カタログ定義エディターであることを確認します。 SDK をダウンロードする[ http://go.microsoft.com/fwlink/?LinkId=104130](http://go.microsoft.com/fwlink/?LinkId=104130)します。  
   
--   WCF サービスに発行する」の説明に従って[手順 1: 作成する Oracle E-business アダプターを使用し、WCF サービスの発行](../../adapters-and-accelerators/adapter-oracle-ebs/step-1-use-the-oracle-e-business-adapter-to-create-and-publish-a-wcf-service.md)します。  
+-   WCF サービスに発行する」の説明に従って[手順 1。Oracle E-business アダプターを使用して作成および WCF サービス発行](../../adapters-and-accelerators/adapter-oracle-ebs/step-1-use-the-oracle-e-business-adapter-to-create-and-publish-a-wcf-service.md)します。  
   
 
   
@@ -61,11 +61,11 @@ ms.locfileid: "36970755"
     https://<COMPUTER_NAME>:<PORT_NUMBER>/MS_SAMPLE_EMPLOYEE/InterfaceTables_FND_APPS_MS_SAMPLE_EMPLOYEE.svc  
     ```  
   
-     WCF サービスが」の説明に従って、正常に発行されるかどうかをテストするときに、URL が使用可能な[手順 1: 作成する Oracle E-business アダプターを使用し、WCF サービスの発行](../../adapters-and-accelerators/adapter-oracle-ebs/step-1-use-the-oracle-e-business-adapter-to-create-and-publish-a-wcf-service.md)します。  
+     WCF サービスが」の説明に従って、正常に発行されるかどうかをテストするときに、URL が使用可能な[手順 1。Oracle E-business アダプターを使用して作成および WCF サービス発行](../../adapters-and-accelerators/adapter-oracle-ebs/step-1-use-the-oracle-e-business-adapter-to-create-and-publish-a-wcf-service.md)します。  
   
 5.  **[接続]** をクリックします。  
   
-6.  WCF アダプター サービス開発ウィザードで選択した操作を表示するには、クリックして、 **Web メソッドの追加**タブ。次のメソッドが表示されます:**選択**します。  
+6.  WCF アダプター サービス開発ウィザードで選択した操作を表示するには、クリックして、 **Web メソッドの追加**タブ。次のメソッドが表示されます。**選択**します。  
   
 7.  ドラッグ、**選択**メソッドは、デザイン サーフェイスにします。 メソッドをデザイン サーフェイスにドラッグすると、エンティティを作成して、メソッドがそのエンティティの一部になります。  
   
@@ -86,7 +86,7 @@ ms.locfileid: "36970755"
          ![エンティティの名前変更](../../adapters-and-accelerators/adapter-oracle-ebs/media/06-entity-name.gif "06 _ entity_name")  
   
 ##  <a name="Headers"></a> メソッドのユーザー名とパスワードのヘッダーを指定します。  
- Oracle E-business Suite で MS_SAMPLE_EMPLOYEE インターフェイス テーブルの選択操作の WCF サービスを作成するときにユーザー名とパスワードのヘッダーを指定したでエンドポイント動作の構成の一部として[手順 1: Oracle の使用作成して WCF サービスを発行する E-business アダプター](../../adapters-and-accelerators/adapter-oracle-ebs/step-1-use-the-oracle-e-business-adapter-to-create-and-publish-a-wcf-service.md)します。 Select メソッドのプロパティの同じ値を指定する必要があります。  
+ Oracle E-business Suite で MS_SAMPLE_EMPLOYEE インターフェイス テーブルの選択操作の WCF サービスを作成するときにユーザー名とパスワードのヘッダーを指定したでエンドポイント動作の構成の一部として[手順 1。Oracle E-business アダプターを使用して作成および WCF サービス発行](../../adapters-and-accelerators/adapter-oracle-ebs/step-1-use-the-oracle-e-business-adapter-to-create-and-publish-a-wcf-service.md)します。 Select メソッドのプロパティの同じ値を指定する必要があります。  
   
 #### <a name="to-specify-user-name-and-password-headers-for-the-select-method"></a>Select メソッドのユーザー名とパスワードのヘッダーを指定するには  
   
@@ -102,7 +102,7 @@ ms.locfileid: "36970755"
   
 5.  **[OK]** をクリックします。  
   
-##  <a name="Scenario1"></a> ビジネス データ一覧 Web パーツを使用している従業員のシナリオ 1: クエリ  
+##  <a name="Scenario1"></a> シナリオ 1:ビジネス データ一覧 Web パーツを使用している従業員のクエリ  
  ビジネス データ一覧 Web パーツから従業員を検索するために使用して従業員の名前に基づくできるアプリケーション定義ファイルを作成するには、次の一連のタスクを行う必要があります。  
   
 1.  **選択**メソッド フィルターを作成し、マップ、**フィルター**パラメーター。  
@@ -155,7 +155,7 @@ ms.locfileid: "36970755"
   
      ![Finder メソッド インスタンスの名前を指定](../../adapters-and-accelerators/adapter-oracle-ebs/media/13-instance-property.gif "13 _ instance_property")  
   
-##  <a name="Scenario2"></a> Microsoft Office SharePoint Server から MS_SAMPLE_EMPLOYEE インターフェイス テーブルでフルテキスト検索のシナリオ 2:  
+##  <a name="Scenario2"></a> シナリオ 2:Microsoft Office SharePoint Server から MS_SAMPLE_EMPLOYEE インターフェイス テーブルでフルテキスト検索  
  Microsoft Office SharePoint Server MS_SAMPLE_EMPLOYEE インターフェイスのテーブルに対してフルテキスト検索を実行するために使用するアプリケーション定義ファイルを作成するには、次の一連のタスクを実行する必要があります。  
   
 -   **選択**メソッドは、識別子を作成し、フィルター パラメーターと従業員の名前を格納する戻り値にマップします。  
@@ -296,7 +296,7 @@ ms.locfileid: "36970755"
 2.  Employee.xml として保存します。  
   
 ## <a name="next-steps"></a>次の手順  
- Oracle E-business Suite からデータを取得する SharePoint アプリケーションが作成する必要があります。 手順については、[手順 3: Oracle E-business Suite からデータを取得する SharePoint アプリケーションを作成](../../adapters-and-accelerators/adapter-oracle-ebs/step-3-create-a-sharepoint-application-to-retrieve-data-from-oracle-ebs.md)を参照してください。  
+ Oracle E-business Suite からデータを取得する SharePoint アプリケーションが作成する必要があります。 手順については、次を参照してください。[手順 3。Oracle E-business Suite からデータを取得する SharePoint アプリケーションを作成](../../adapters-and-accelerators/adapter-oracle-ebs/step-3-create-a-sharepoint-application-to-retrieve-data-from-oracle-ebs.md)です。  
   
 ## <a name="see-also"></a>参照  
  [チュートリアル: SharePoint サイト上の Oracle E-business Suite からデータを表示します。](Tutorial:%20Present%20data%20from%20Oracle%20E-Business%20Suite%20on%20a%20SharePoint%20Site.md)

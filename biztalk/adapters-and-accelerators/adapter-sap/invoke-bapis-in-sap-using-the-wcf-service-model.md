@@ -15,12 +15,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b6f5cab88b0f672f9f09bdeb7795c0a58213f92f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8742f31d494874f30bbae9c8963c1370e91f484f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37002443"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373333"
 ---
 # <a name="invoke-bapis-in-sap-using-the-wcf-service-model"></a>WCF サービス モデルを使用して SAP の Bapi を呼び出す
 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]として Bapi 明らかになります。  
@@ -48,7 +48,7 @@ ms.locfileid: "37002443"
   
   BAPI_TRANSACTION_COMMIT と BAPI_TRANSACTION_ROLLBACK が各ビジネス オブジェクトの表示し、WCF クライアントでこれらを常に含める必要があります。  
   
-  次のコードでは、販売注文のビジネス オブジェクトに対して生成された WCF クライアント クラスの一部を示します。 このクライアントには、メソッド呼び出す CREATEFROMDAT2、BAPI_TRANSACTION_COMMIT および BAPI_TRANSACTION_ROLLBACK にはが含まれています。 わかりやすくするためには、コンストラクターと他のコードを省略されています。  
+  次のコードでは、販売注文のビジネス オブジェクトに対して生成された WCF クライアント クラスの一部を示します。 このクライアントには、メソッド呼び出す CREATEFROMDAT2、BAPI_TRANSACTION_COMMIT および BAPI_TRANSACTION_ROLLBACK にはが含まれています。 わかりやすくするためには、コンス トラクターと他のコードを省略されています。  
   
 ```  
 [System.Diagnostics.DebuggerStepThroughAttribute()]  
@@ -124,7 +124,7 @@ public partial class BapiBUS2032Client : System.ServiceModel.ClientBase<BapiBUS2
   
 - 各ビジネス オブジェクト。  
   
-  アダプターが SAP の BAPI トランザクションをサポートする方法の詳細については、[SAP の Bapi に対する操作](../../adapters-and-accelerators/adapter-sap/operations-on-bapis-in-sap.md)を参照してください。  
+  アダプターが SAP の BAPI トランザクションをサポートする方法の詳細については、次を参照してください。 [SAP の Bapi に対する操作](../../adapters-and-accelerators/adapter-sap/operations-on-bapis-in-sap.md)します。  
   
 ## <a name="how-to-create-an-application-that-invokes-bapis-as-methods-of-business-objects"></a>ビジネス オブジェクトのメソッドとして Bapi を起動するアプリケーションを作成する方法  
  このセクションでは、ビジネス オブジェクトのメソッドとして Bapi を呼び出す方法について説明します。 同じ基本手順は、WCF クライアントを対象とする RFC 操作として Bapi を作成し、各 BAPI を呼び出すために使用する点を除いて RFC の操作として Bapi を呼び出すに従う必要があります。  
@@ -133,9 +133,9 @@ public partial class BapiBUS2032Client : System.ServiceModel.ClientBase<BapiBUS2
   
 #### <a name="to-create-an-bapi-client-application"></a>BAPI クライアント アプリケーションを作成するには  
   
-1. WCF クライアント クラスを生成します。 使用して、 [!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)] ServiceModel メタデータ ユーティリティ ツール (svcutil.exe) を WCF クライアント クラス (またはクラス) を生成するビジネス オブジェクトを対象として Bapi を操作するか。 必ず、BAPI_TRANSACTION_COMMIT とターゲットのビジネス オブジェクトごとに公開される BAPI_TRANSACTION_ROLLBACK メソッド (Bapi) が含まれます。 WCF クライアントを生成する方法の詳細については、[SAP ソリューションの成果物の WCF クライアントまたは WCF サービス コントラクトを生成する](../../adapters-and-accelerators/adapter-sap/generate-a-wcf-client-or-a-wcf-service-contract-for-sap-solution-artifacts.md)を参照してください。  
+1. WCF クライアント クラスを生成します。 使用して、 [!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)] ServiceModel メタデータ ユーティリティ ツール (svcutil.exe) を WCF クライアント クラス (またはクラス) を生成するビジネス オブジェクトを対象として Bapi を操作するか。 必ず、BAPI_TRANSACTION_COMMIT とターゲットのビジネス オブジェクトごとに公開される BAPI_TRANSACTION_ROLLBACK メソッド (Bapi) が含まれます。 WCF クライアントを生成する方法の詳細については、次を参照してください。 [SAP ソリューションの成果物の WCF クライアントまたは WCF サービス コントラクトを生成する](../../adapters-and-accelerators/adapter-sap/generate-a-wcf-client-or-a-wcf-service-contract-for-sap-solution-artifacts.md)します。  
   
-2. 手順 1 で生成された WCF クライアント クラスのインスタンスを作成し、作成し、WCF クライアントを構成します。 WCF クライアントを構成するには、バインドと、クライアントが使用するエンドポイント アドレスを指定する必要があります。 コードで強制的に、または構成で宣言的に、これを行うことができます。 クライアントのバインディングを指定する方法の詳細については、[SAP システムのクライアントのバインディングを構成する](../../adapters-and-accelerators/adapter-sap/configure-a-client-binding-for-the-sap-system.md)を参照してください。 次のコードでは、構成から販売注文 (BUS2032) SAP ビジネス オブジェクト用の WCF クライアントを初期化し、SAP システムの資格情報を設定します。  
+2. 手順 1 で生成された WCF クライアント クラスのインスタンスを作成し、作成し、WCF クライアントを構成します。 WCF クライアントを構成するには、バインドと、クライアントが使用するエンドポイント アドレスを指定する必要があります。 コードで強制的に、または構成で宣言的に、これを行うことができます。 クライアントのバインディングを指定する方法の詳細については、次を参照してください。 [SAP システムのクライアントのバインディングを構成する](../../adapters-and-accelerators/adapter-sap/configure-a-client-binding-for-the-sap-system.md)します。 次のコードでは、構成から販売注文 (BUS2032) SAP ビジネス オブジェクト用の WCF クライアントを初期化し、SAP システムの資格情報を設定します。  
   
    ```  
    BapiBUS2032Client bapiClient = new BapiBUS2032Client("SAPBinding_BapiBUS2032");  
@@ -175,7 +175,7 @@ public partial class BapiBUS2032Client : System.ServiceModel.ClientBase<BapiBUS2
 ### <a name="example"></a>例  
  次の例では、販売注文のビジネス オブジェクトで CREATEFROMDAT2 BAPI を呼び出します。 複数回、BAPI を呼び出すし、トランザクションをコミットする BAPI_TRANSACTION_COMMIT を呼び出します。 BAPI を呼び出すときにエラーが発生する場合は、トランザクションをロールバックして、例外ハンドラーの BAPI_TRANSACTION_ROLLBACK が呼び出されます。  
   
- CREATEFROMDAT2 メソッドは、多くのパラメーターを受け取ります。これらは、簡潔にする例では省略されます。 Microsoft に付属のサンプルでの BAPI トランザクションを示すサンプルが見つかります[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]します。 詳細については、[SAP アダプターのサンプル](../../adapters-and-accelerators/adapter-sap/samples-for-the-sap-adapter.md)を参照してください。  
+ CREATEFROMDAT2 メソッドは、多くのパラメーターを受け取ります。これらは、簡潔にする例では省略されます。 Microsoft に付属のサンプルでの BAPI トランザクションを示すサンプルが見つかります[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]します。 詳細については、次を参照してください。 [SAP アダプターのサンプル](../../adapters-and-accelerators/adapter-sap/samples-for-the-sap-adapter.md)します。  
   
 ```  
 using System;  

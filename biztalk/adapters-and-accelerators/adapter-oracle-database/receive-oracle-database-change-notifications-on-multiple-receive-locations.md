@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9da4eac1c08768e5c4c349ae12de26dce2266d1e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ce52404e04b8820d63035c0328969100967c4e16
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37011323"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65529589"
 ---
 # <a name="receive-oracle-database-change-notifications-on-multiple-receive-locations"></a>Oracle データベースの変更が複数の通知の受信場所
 同じデータベース内の複数の受信場所が同じテーブル (例: ACCOUNTACTIVITY) のクエリ通知を受信するように構成の異なる BizTalk アプリケーションの一部として作成する必要があるシナリオを検討してください。 100 個のレコードを挿入して、同じテーブルに、すべての受信場所で、通知メッセージが表示されます。 効果的に間での通知を受信する複数の受信場所、その受信場所のいずれかで通知を受信した場合、このような方法で BizTalk アプリケーションから操作を呼び出すことが、その他の受信場所と同じ通知を取得できません。 そのため、複数の場所で受信した負荷分散通知すること効果的にできます。  
@@ -55,8 +55,8 @@ END NOTIFY_LOAD_BALANCE;
    |     プロパティのバインド      |                                                                                                                                                                                                                                                                         値                                                                                                                                                                                                                                                                         |
    |---------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
    | **InboundOperationType**  |                                                                                                                                                                                                                                                             これを設定**通知**します。                                                                                                                                                                                                                                                             |
-   |   **NotificationPort**    | Oracle データベースからのデータベース変更通知をリッスンする ODP.NET を開く必要があるポート番号を指定します。 これは、Windows ファイアウォールの例外リストに追加する必要があります、同じポート番号に設定します。 Windows ファイアウォールの例外リストにポートを追加する方法については、[ http://go.microsoft.com/fwlink/?LinkID=196959](http://go.microsoft.com/fwlink/?LinkID=196959)を参照してください。 **重要:** これを既定値は-1 に設定すると、通知メッセージを受信する Windows ファイアウォールを完全に無効にする必要があります。 |
-   | **NotificationStatement** |                                                                                                                                                                 これを設定します。<br /><br /> `SELECT TID,ACCOUNT,PROCESSED FROM SCOTT.ACCOUNTACTIVITY WHERE PROCESSED = ‘n’` **注:** スキーマ名とテーブル名を指定する必要があります。 たとえば、 `SCOTT.ACCOUNTACTIVITY`のようにします。                                                                                                                                                                 |
+   |   **NotificationPort**    | Oracle データベースからのデータベース変更通知をリッスンする ODP.NET を開く必要があるポート番号を指定します。 これは、Windows ファイアウォールの例外リストに追加する必要があります、同じポート番号に設定します。 Windows ファイアウォールの例外リストにポートを追加する方法については、次を参照してください。 [ http://go.microsoft.com/fwlink/?LinkID=196959](http://go.microsoft.com/fwlink/?LinkID=196959)します。 **重要:** これを既定値は-1 に設定した場合は通知メッセージを受信する Windows ファイアウォールを完全に無効にする必要があります。 |
+   | **NotificationStatement** |                                                                                                                                                                 これを設定します。<br /><br /> `SELECT TID,ACCOUNT,PROCESSED FROM SCOTT.ACCOUNTACTIVITY WHERE PROCESSED = ‘n’` **注:** スキーマ名とテーブル名を指定する必要があります。 たとえば、`SCOTT.ACCOUNTACTIVITY` のようにします。                                                                                                                                                                 |
    | **NotifyOnListenerStart** |                                                                                                                                                                                                                                                                 これを設定**True**します。                                                                                                                                                                                                                                                                 |
 
 

@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10776 |Microsoft Docs'
+title: シングル サインオン:イベント 10776 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 94823df7375b918502c706ac843a544aede8603c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9fd90909f05417ef8780f220e71079c09f5cca01
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37009451"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65394206"
 ---
-# <a name="single-sign-on-event-10776"></a>シングル サインオン: イベント 10776
+# <a name="single-sign-on-event-10776"></a>シングル サインオン:イベント 10776
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                                                                                       |
@@ -30,10 +30,10 @@ ms.locfileid: "37009451"
 |  イベント ソース   |                                                                        ENTSSO                                                                         |
 |    コンポーネント    |                                                                          なし                                                                          |
 |  シンボル名  |                                                            ENTSSO_E_INVALID_ACCOUNT_FORMAT                                                            |
-|  メッセージ テキスト   | アカウント名の形式が無効です。 ドメイン アカウントにはドメイン名が必要です。 ローカル アカウントにドメイン名またはコンピューター名を含めないでください。 |
+|  メッセージ テキスト   | アカウント名の形式が無効です。 ドメイン アカウントでは、ドメイン名を含める必要があります。 ローカル アカウントでは、ドメインまたはコンピューター名を含めることはできません。 |
   
 ## <a name="explanation"></a>説明  
- アカウント名の形式が無効です。 ドメイン アカウントにはドメイン名が必要です。 ローカル アカウントにドメイン名またはコンピューター名を含めないでください。  
+ アカウント名の形式が無効です。 ドメイン アカウントでは、ドメイン名を含める必要があります。 ローカル アカウントでは、ドメインまたはコンピューター名を含めることはできません。  
   
 ## <a name="user-action"></a>ユーザーの操作  
  別のアカウント名を指定します。

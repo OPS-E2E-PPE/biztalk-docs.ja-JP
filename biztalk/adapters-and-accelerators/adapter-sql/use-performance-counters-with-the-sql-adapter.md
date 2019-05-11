@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cb28399887452688e084f5f2858745958fd85991
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 29e6bdb107a845682aae8d587ccaa619ac075a45
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36993755"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65367408"
 ---
 # <a name="use-performance-counters-with-the-sql-adapter"></a>SQL アダプターを使用したパフォーマンス カウンターを使用します。
 [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] クライアントは、アダプターのパフォーマンスを測定するのにパフォーマンス カウンターを使用できます。 [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]セットアップ プログラムは、パフォーマンス カウンター カテゴリを作成します。"[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]"アダプター パックのインストールと共にします。  
@@ -49,7 +49,7 @@ ms.locfileid: "36993755"
 >  LOB の時間 (累積) パフォーマンス カウンターの有効桁数は、16 ミリ秒です。  
   
 ## <a name="enabling-performance-counters"></a>パフォーマンス カウンターを有効にします。  
- パフォーマンス カウンターを有効またはバインドのプロパティを設定して無効にできる**EnablePerformanceCounters**します。 パフォーマンス カウンターを有効にするには設定、 **EnablePerformanceCounters**プロパティをバインド**True**します。 パフォーマンス カウンターを無効にするには設定**EnablePerformanceCounters**に**False**します。 既定では、プロパティに設定が**False**します。 このバインドのプロパティの詳細については、[for SQL Server のアダプターのバインド プロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md)を参照してください。  
+ パフォーマンス カウンターを有効またはバインドのプロパティを設定して無効にできる**EnablePerformanceCounters**します。 パフォーマンス カウンターを有効にするには設定、 **EnablePerformanceCounters**プロパティをバインド**True**します。 パフォーマンス カウンターを無効にするには設定**EnablePerformanceCounters**に**False**します。 既定では、プロパティに設定が**False**します。 このバインドのプロパティの詳細については、次を参照してください。 [for SQL Server のアダプターのバインド プロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md)します。  
   
 ## <a name="performance-counters-and-the-wcf-lob-adapter-sdk"></a>パフォーマンス カウンターと WCF LOB Adapter SDK  
  値を変更する、 **EnablePerformanceCounters**に対応するパフォーマンス カウンターの値を変更してもプロパティをバインド、[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]します。 バインド プロパティも、[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]は静的で一方の場合、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]は動的です。 そのため、2 つのインスタンスがある場合、 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] 、アプリケーション ドメインでのバインドと**EnablePerformanceCounters**に設定されているプロパティのバインド**True**いずれかでと**False**アダプター固有のパフォーマンス カウンターのいずれかで有効にし、他の無効になっているで、他のです。 ただし、ためのバインディング プロパティ[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]は静的で、いずれかに設定されます**True**または**False**によってどのような値を最後に指定されました。  

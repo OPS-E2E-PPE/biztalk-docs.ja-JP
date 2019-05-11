@@ -12,18 +12,18 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d916b51e57d05fade93c4efc32eb4f6d544f2c94
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 686b8f5764c0d4832770f777cdf65b5287bd848e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37005083"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65394507"
 ---
 # <a name="messages-in-biztalk-adapter-for-tibco-rendezvous"></a>BizTalk Adapter for TIBCO Rendezvous のメッセージ
 BizTalk Adapter for TIBCO Rendezvous は、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] と TIBCO Rendezvous 間に双方向の接続を提供します。 このアダプターは、TIBCO Rendezvous API と BizTalk Adapter Framework API の両方を使用して、緊密な統合を提供します。  
   
 ## <a name="about-tibco-rendezvous"></a>TIBCO Rendezvous について  
- TIBCO Rendezvous は、エンタープライズ アプリケーション統合 (EAI) のメッセージ バスを提供するプログラムです。 TIBCO には、C、C++、Java、Visual Basic および Microsoft Office Excel ワークシート上のデータ フィードおよびその他の任意のアプリケーションを受信する Microsoft .NET Framework のメッセージング Api が提供されます。 詳細については、[TIBCO Rendezvous の概念](../core/tibco-rendezvous-concepts.md)を参照してください。  
+ TIBCO Rendezvous は、エンタープライズ アプリケーション統合 (EAI) のメッセージ バスを提供するプログラムです。 TIBCO には、C、C++、Java、Visual Basic および Microsoft Office Excel ワークシート上のデータ フィードおよびその他の任意のアプリケーションを受信する Microsoft .NET Framework のメッセージング Api が提供されます。 詳細については、次を参照してください。 [TIBCO Rendezvous の概念](../core/tibco-rendezvous-concepts.md)します。  
   
 ## <a name="message-passing"></a>メッセージの受け渡し  
  メッセージを渡す概念はとても簡単です。  

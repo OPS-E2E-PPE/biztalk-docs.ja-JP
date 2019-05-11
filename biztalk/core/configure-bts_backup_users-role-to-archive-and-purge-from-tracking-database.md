@@ -1,5 +1,5 @@
 ---
-title: アーカイブおよび BizTalk 追跡データベースからデータを削除するために BTS_BACKUP_USERS ロールを構成する方法 |Microsoft ドキュメント
+title: アーカイブおよび BizTalk 追跡データベースからデータを削除のために BTS_BACKUP_USERS ロールを構成する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -22,32 +22,32 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 923fb083f3755259ab2176541213d1637ce872c6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3717372e4c421636c601f7b34d1a6b2667a4a1ca
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22232450"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65391457"
 ---
-# <a name="how-to-configure-the-btsbackupusers-role-for-archiving-and-purging-data-from-the-biztalk-tracking-database"></a>BizTalk 追跡データベースのデータをアーカイブおよび削除するための BTS_BACKUP_USERS ロールの構成方法
-DTA Purge and Archive (BizTAlkDTADb) ジョブの実行には、通常はログオン中の SQL Server エージェント サービス アカウントのユーザーの資格情報が使用されます。 ただし、セキュリティを高めるため、BTS_BACKUP_USERS ロールのメンバーであるアカウントの資格情報で実行されるように DTA Purge and Archive (BizTalkDTADb) ジョブを構成できます。 その結果、最低限必要なアクセス許可しかないアカウントで SQL Server エージェントのジョブが実行され、特権の昇格を防ぐことができます。  
+# <a name="how-to-configure-the-btsbackupusers-role-for-archiving-and-purging-data-from-the-biztalk-tracking-database"></a>アーカイブおよび BizTalk 追跡データベースからデータを削除のために BTS_BACKUP_USERS ロールを構成する方法
+DTA Purge and Archive (BizTAlkDTADb) ジョブの正常ログオンしている SQL Server エージェント サービス アカウントのユーザーの資格情報を使用して実行します。 セキュリティの強化、ただし、構成できます DTA Purge and Archive (BizTalkDTADb) ジョブ、BTS_BACKUP_USERS ロールのメンバーであるアカウントの資格情報を使用して実行します。 これは、重要なアクセス許可を持つアカウントで SQL Server エージェント ジョブを実行して特権の昇格を防ぐのに役立ちます。  
   
 ## <a name="prerequisites"></a>前提条件  
  この手順を実行するには、SQL Server sysadmin 固定サーバーの役割のメンバーであるアカウントを使用してログオンする必要があります。  
   
-### <a name="to-configure-the-btsbackupusers-role-for-archiving-and-purging-data-from-the-biztalk-tracking-database"></a>BizTalk 追跡データベースのデータをアーカイブおよび削除するために BTS_BACKUP_USERS ロールを構成するには  
+### <a name="to-configure-the-btsbackupusers-role-for-archiving-and-purging-data-from-the-biztalk-tracking-database"></a>アーカイブおよび BizTalk 追跡データベースからデータを削除のために BTS_BACKUP_USERS ロールを構成するには  
   
-1.  をクリックして**開始**、 をクリックして**すべてのプログラム**、 をクリックして**Microsoft SQL Server 2008 SP2**、順にクリック**SQL Server Management Studio**です。  
+1.  クリックして**開始**、 をクリックして**すべてのプログラム**、 をクリックして**Microsoft SQL Server 2008 SP2**、順にクリックします**SQL Server Management Studio**します。  
   
-2.  **サーバーへの接続**ダイアログ ボックスでは、BizTalk 追跡 (BizTalkDTADb) データベースが存在する SQL server および適切な認証の種類の名前を指定し、をクリックして**接続**に適切な SQL Server に接続します。  
+2.  **サーバーへの接続**ダイアログ ボックスで、SQL server が BizTalk 追跡 (BizTalkDTADb) データベースが存在し、適切な認証の種類の名前を指定し、順にクリックします**Connect**に適切な SQL Server に接続します。  
   
-3.  **Microsoft SQL Server Management Studio**をダブルクリックして**BizTalkDTADb**をダブルクリックして**セキュリティ**をダブルクリックして**ロール**、およびダブルクリックし、**データベース ロール**です。  
+3.  **Microsoft SQL Server Management Studio**、 をダブルクリックします**BizTalkDTADb**、 をダブルクリックします**セキュリティ**、ダブルクリックして**ロール**とダブルクリックし、**データベース ロール**します。  
   
-4.  **オブジェクト エクスプ ローラーの詳細** ウィンドウをダブルクリックして**BTS_BACKUP_USERS**です。  
+4.  **オブジェクト エクスプ ローラーの詳細**ウィンドウで、ダブルクリックして**BTS_BACKUP_USERS**します。  
   
-5.  **データベース ロールのプロパティ-BTS_BACKUP_USERS**ダイアログ ボックスで、**このロールのメンバー**をクリックして**追加**です。  
+5.  **データベース ロールのプロパティ-BTS_BACKUP_USERS**ダイアログ ボックスで、**このロールのメンバー**、 をクリックして**追加**します。  
   
-6.  **データベース ユーザーまたはロール**ダイアログ ボックスでは、SQL Server エージェント サービスの資格情報を持つユーザー アカウントを入力し、をクリックして**OK**です。  
+6.  **データベース ユーザーまたはロール**ダイアログ ボックスで、SQL Server エージェント サービスの資格情報を持つユーザー アカウントを入力し、順にクリックします**OK**します。  
   
 ## <a name="see-also"></a>参照  
  [BizTalk 追跡データベースのアーカイブおよび削除](../core/archiving-and-purging-the-biztalk-tracking-database.md)

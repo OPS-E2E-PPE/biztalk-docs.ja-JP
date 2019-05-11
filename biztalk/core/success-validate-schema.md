@@ -1,5 +1,5 @@
 ---
-title: 成功 - スキーマの検証 |Microsoft ドキュメント
+title: 成功 - スキーマの検証 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 924da3a605363b3f15d9e3597d2813e7b148c100
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7e58b98cbb5f84d3a43a494beae1c38eddb1896b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22277674"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395221"
 ---
 # <a name="success---validate-schema"></a>成功 - スキーマの検証
 **説明**  

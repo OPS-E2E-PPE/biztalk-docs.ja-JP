@@ -1,5 +1,5 @@
 ---
-title: BizTalk ESB Toolkit の管理 |Microsoft ドキュメント
+title: BizTalk ESB Toolkit による管理 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,18 +12,18 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f3d1c0a973bd7f286628c735564b00138396c115
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4bc9b05f67d4c02c1af37893d4b520a4299ecbc2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22290202"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65397132"
 ---
-# <a name="administration-with-the-biztalk-esb-toolkit"></a>BizTalk ESB Toolkit を使用した管理
-このセクションで説明に基づくアプリケーションに関連する管理アクティビティの重要な領域、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]と Microsoft BizTalk Server です。 具体的には、ESB の管理ポータルについても説明します。 ESB の管理ポータルは、例外が発生して、BizTalk ESB Toolkit の Universal Description, Discovery, の登録などの特定の機能を管理する場合にアラートを生成する BizTalk Server アプリケーションを監視する Web ベース ユーティリティとIntegration (UDDI) のエントリ。  
+# <a name="administration-with-the-biztalk-esb-toolkit"></a>BizTalk ESB Toolkit による管理
+このセクションでは、ベースのアプリケーションに関連する管理アクティビティの重要な領域をについて説明します、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]と Microsoft BizTalk Server は具体的には、ESB 管理ポータルについて説明します。 ESB 管理ポータルは、例外が発生して、BizTalk ESB Toolkit の Universal Description, Discovery, の登録などの特定の機能を管理するときにアラートを生成する BizTalk Server アプリケーションを監視する Web ベース ユーティリティとIntegration (UDDI) エントリ。  
   
- このセクションの内容は次のとおりです。  
+ ここでは、次のトピックについて説明します。  
   
--   [ESB の管理ポータルを使用して管理](../esb-toolkit/administration-using-the-esb-management-portal.md)  
+-   [ESB 管理ポータルを利用した管理](../esb-toolkit/administration-using-the-esb-management-portal.md)  
   
 -   [ESB 管理ポータル機能リファレンス](../esb-toolkit/esb-management-portal-feature-reference.md)

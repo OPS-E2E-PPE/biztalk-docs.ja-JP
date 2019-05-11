@@ -1,5 +1,5 @@
 ---
-title: サンプルの BizTalk Server アーキテクチャ |Microsoft ドキュメント
+title: BizTalk Server アーキテクチャのサンプル |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 17f512015d5f2c1fd1a3bedc002140628fde4969
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: db0ba518280f4273211eb0bba16aa6b097eb078c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22269018"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65393929"
 ---
 # <a name="sample-biztalk-server-architectures"></a>BizTalk Server のサンプル アーキテクチャ
 Microsoft® BizTalk® Server 環境に最大限のセキュリティを提供するために、BizTalk Server に含まれているデータとサービスの重要度、および攻撃者がサーバーに侵入した場合に生じる影響に基づいて、BizTalk Server を分散するアーキテクチャを使用することをお勧めします。  
@@ -30,14 +30,14 @@ Microsoft® BizTalk® Server 環境に最大限のセキュリティを提供す
   
 -   [大規模な分散アーキテクチャ](../core/large-distributed-architecture.md)  
   
--   [インフォメーション ワーカー サービスで大規模な分散アーキテクチャ](../core/large-distributed-architecture-with-information-worker-services.md)  
+-   [インフォメーション ワーカー サービスを使用した大規模な分散アーキテクチャ](../core/large-distributed-architecture-with-information-worker-services.md)  
   
 -   [サーバーの名前付け規則](../core/server-naming-conventions.md)  
   
 -   [縮小されたアーキテクチャ](../core/scaled-down-architecture.md)  
   
--   [縮小されたインフォメーション ワーカー サービスのアーキテクチャ](../core/scaled-down-architecture-with-information-worker-services.md)  
+-   [インフォメーション ワーカー サービスを使用した縮小されたアーキテクチャ](../core/scaled-down-architecture-with-information-worker-services.md)  
   
--   [セキュリティで保護された Windows アカウントは、BizTalk Server の展開を分散](../core/windows-accounts-for-a-secure-distributed-biztalk-server-deployment.md)  
+-   [セキュリティで保護された分散型 BizTalk Server 展開向けの Windows アカウント](../core/windows-accounts-for-a-secure-distributed-biztalk-server-deployment.md)  
   
 -   [BizTalk Server に必要なポート](../core/required-ports-for-biztalk-server.md)

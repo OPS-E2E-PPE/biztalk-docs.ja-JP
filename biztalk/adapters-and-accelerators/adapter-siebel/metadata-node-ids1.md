@@ -13,12 +13,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: abce1288be6c706d71bf644325a9cfd7200155c4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2f244f4089da5e2135b2a085c3f79f194230f31a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36991483"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65371315"
 ---
 # <a name="node-types-and-ids-for-the-siebel-adapter"></a>ノードの種類と Siebel アダプターの Id
 
@@ -31,16 +31,16 @@ ms.locfileid: "36991483"
 | ビジネス オブジェクト (すべてのビジネス オブジェクト) | カテゴリ  |                        [バージョン]/BusinessObjects                         |                http://Microsoft.LobServices.Siebel/2007/03/BusinessObjects                |                         すべてのビジネス オブジェクトを返します。                          |
 |          ビジネス オブジェクト (BO)           | カテゴリ  |                      [バージョン]/BusinessObjects/[BO]                      |            http://Microsoft.LobServices.Siebel/2007/03/BusinessObjects/Account            | 指定されたビジネス オブジェクトに関連付けられたすべてのビジネス コンポーネントを返します。 |
 |         ビジネス コンポーネント (BC)         | カテゴリ  |                   [バージョン]/BusinessObjects/[BO]/[BC]                    |        http://Microsoft.LobServices.Siebel/2007/03/BusinessObjects/Account/Account        |    指定されたビジネス コンポーネントに関連付けられているすべての操作を返します。    |
-|                 Insert                  | OPERATION |                [バージョン]/BusinessObjects/[BO]/[BC]/挿入                |    http://Microsoft.LobServices.Siebel/2007/03/BusinessObjects/Account/Account/Insert     |       指定されたビジネス コンポーネントの挿入操作を返します。       |
-|                  Query                  | OPERATION |                [バージョン]/BusinessObjects/[BO]/[BC]/[クエリ]                 |     http://Microsoft.LobServices.Siebel/2007/03/BusinessObjects/Account/Account/Query     |       指定されたビジネス コンポーネントのクエリ操作を返します。        |
-|                 更新                  | OPERATION |                [バージョン]/BusinessObjects/[BO]/[BC]/[更新]                |    http://Microsoft.LobServices.Siebel/2007/03/BusinessObjects/Account/Account/Update     |       指定されたビジネス コンポーネントの更新操作を返します。       |
-|                 DELETE                  | OPERATION |                [バージョン]/BusinessObjects/[BO]/[BC]/削除                |    http://Microsoft.LobServices.Siebel/2007/03/BusinessObjects/Account/Account/Delete     |       指定されたビジネス コンポーネントの削除操作を返します。       |
-|                関連付け                | OPERATION |              [バージョン]/BusinessObjects/[BO]/[BC]/[関連付ける]               |   http://Microsoft.LobServices.Siebel/2007/03/BusinessObjects/Account/Account/Associate   |     指定されたビジネス コンポーネントに関連付ける操作を返します。      |
-|               関連付けを解除します。                | OPERATION |              [バージョン]/BusinessObjects/[BO]/[BC]/[との関連付けを解除]              |  http://Microsoft.LobServices.Siebel/2007/03/BusinessObjects/Account/Account/Dissociate   |     指定されたビジネス コンポーネントの関連付け解除操作を返します。     |
-|  Query_ [MVG Child Business Component]   | OPERATION | [バージョン]/BusinessObjects/[BO]/[BC]/[MVG Child Business Component] Query_ | http://Microsoft.LobServices.Siebel/2007/03/BusinessObjects/Account/Account/Query_Contact |          Child business component のクエリ操作を返します          |
+|                 Insert                  | 操作 |                [バージョン]/BusinessObjects/[BO]/[BC]/挿入                |    http://Microsoft.LobServices.Siebel/2007/03/BusinessObjects/Account/Account/Insert     |       指定されたビジネス コンポーネントの挿入操作を返します。       |
+|                  Query                  | 操作 |                [バージョン]/BusinessObjects/[BO]/[BC]/[クエリ]                 |     http://Microsoft.LobServices.Siebel/2007/03/BusinessObjects/Account/Account/Query     |       指定されたビジネス コンポーネントのクエリ操作を返します。        |
+|                 更新                  | 操作 |                [バージョン]/BusinessObjects/[BO]/[BC]/[更新]                |    http://Microsoft.LobServices.Siebel/2007/03/BusinessObjects/Account/Account/Update     |       指定されたビジネス コンポーネントの更新操作を返します。       |
+|                 DELETE                  | 操作 |                [バージョン]/BusinessObjects/[BO]/[BC]/削除                |    http://Microsoft.LobServices.Siebel/2007/03/BusinessObjects/Account/Account/Delete     |       指定されたビジネス コンポーネントの削除操作を返します。       |
+|                関連付け                | 操作 |              [バージョン]/BusinessObjects/[BO]/[BC]/[関連付ける]               |   http://Microsoft.LobServices.Siebel/2007/03/BusinessObjects/Account/Account/Associate   |     指定されたビジネス コンポーネントに関連付ける操作を返します。      |
+|               関連付けを解除します。                | 操作 |              [バージョン]/BusinessObjects/[BO]/[BC]/[との関連付けを解除]              |  http://Microsoft.LobServices.Siebel/2007/03/BusinessObjects/Account/Account/Dissociate   |     指定されたビジネス コンポーネントの関連付け解除操作を返します。     |
+|  Query_ [MVG Child Business Component]   | 操作 | [バージョン]/BusinessObjects/[BO]/[BC]/[MVG Child Business Component] Query_ | http://Microsoft.LobServices.Siebel/2007/03/BusinessObjects/Account/Account/Query_Contact |          Child business component のクエリ操作を返します          |
 |            ビジネス サービス            | カテゴリ  |                        [バージョン]/ビジネス サービス                        |               http://Microsoft.LobServices.Siebel/2007/03/BusinessServices                |                         すべてのビジネス サービスを返します。                         |
 |            ビジネス サービス             | カテゴリ  |              [バージョン]/BusinessServices/[ビジネス サービス]               |             http://Microsoft.LobServices.Siebel/2007/03/BusinessServices/ATP              |        指定されたビジネス サービスのすべてのビジネス メソッドを返します。        |
-|         ビジネス サービス メソッド         | OPERATION | [バージョン]/BusinessServices/[ビジネス サービス]/[ビジネス サービス メソッド]  |       http://Microsoft.LobServices.Siebel/2007/03/BusinessServices/ATP/ATPRunCheck        |                 指定されたビジネス サービス メソッドを返します。                 |
+|         ビジネス サービス メソッド         | 操作 | [バージョン]/BusinessServices/[ビジネス サービス]/[ビジネス サービス メソッド]  |       http://Microsoft.LobServices.Siebel/2007/03/BusinessServices/ATP/ATPRunCheck        |                 指定されたビジネス サービス メソッドを返します。                 |
 
  [バージョン] バージョンの文字列を =たとえば http://Microsoft.LobServices.Siebel/2007/03 します。  
 

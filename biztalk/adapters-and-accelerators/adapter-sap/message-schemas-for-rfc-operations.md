@@ -15,15 +15,15 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 156b8e8c218c4ad23d49959323ed324b0c7cdfd0
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ccc0e3c37ab74e4682c0eaa209580507ba7628c3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36972851"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373214"
 ---
 # <a name="message-schemas-for-rfc-operations"></a>RFC 操作のメッセージ スキーマ
-[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]操作として SAP リモート関数呼び出し (RFC) を表示します。 このトピックには、メッセージのスキーマおよび RFC 操作のためのメッセージ アクションに関する情報が含まれています。 メッセージの構造は、受信と送信の RFC 操作のと同じです。 アダプターをサポートする RFC 操作の概要については、[SAP で Rfc に対する操作](../../adapters-and-accelerators/adapter-sap/operations-on-rfcs-in-sap.md)を参照してください。  
+[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]操作として SAP リモート関数呼び出し (RFC) を表示します。 このトピックには、メッセージのスキーマおよび RFC 操作のためのメッセージ アクションに関する情報が含まれています。 メッセージの構造は、受信と送信の RFC 操作のと同じです。 アダプターをサポートする RFC 操作の概要については、次を参照してください。 [SAP で Rfc に対する操作](../../adapters-and-accelerators/adapter-sap/operations-on-rfcs-in-sap.md)します。  
 
  アダプターの RFC 操作として、Bapi を呼び出すこともできます。 このトピックでは、このような呼び出しメッセージ構造の例が含まれます。  
 
@@ -34,7 +34,7 @@ ms.locfileid: "36972851"
 |                             メッセージ                              |                                                                                                                                                                                                                         XML メッセージの構造                                                                                                                                                                                                                          |                                                                                                                                                                                                     説明                                                                                                                                                                                                      |
 |------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |                   RFC<br /><br /> ([RFC_NAME])                   | `<[RFC_NAME] xmlns="[VERSION]/Rfc/">   <IN1_PARAM_NAME>v1</IN1_PARAM_NAME>   <IN2_PARAM_NAME>v2</IN2_PARAM_NAME>   …   <INOUT1_PARAM_NAME>v3</INOUT1_PARAM_NAME>   <INOUT2_PARAM_NAME>v4</INOUT2_PARAM_NAME>   …   <TABLE1_PARAM_NAME xmlns="[VERSION]/Types/Rfc/">     <STRUCT1_PARAM_NAME>       <[FIELD1_NAME]>value1</[FIELD1_NAME]>       <[FIELD2_NAME]>value2</[FIELD2_NAME]>       …     </STRUCT1_PARAM_NAME>     …   </TABLE1_PARAM_NAME>   … </[RFC_NAME]>` |                                                                                              SAP システムの RFC を呼び出します。<br /><br /> -インポート、変更、およびテーブル パラメーターがサポートされます。<br /><br /> -インポート SAP 構造体の型、テーブル型の SAP または SAP の単純なデータ型のパラメーターを変更できます。                                                                                              |
-|                RFC 応答 ([RFC_NAME] 応答)                 |     `<[RFC_NAME]Response xmlns="[VERSION]/Rfc/">   <OUT1_PARAM_NAME>v1</OUT1_PARAM_NAME>   <OUT2_PARAM_NAME>v2</OUT2_PARAM_NAME>   …   <INOUT1_PARAM_NAME>v3</INOUT1_PARAM_NAME>   <INOUT2_PARAM_NAME>v4</INOUT2_PARAM_NAME>   …   <TABLE1_PARAM_NAME>     <STRUCT1_PARAM_NAME>       <[FIELD1_NAME]>value1</[FIELD1_NAME]>       <[FIELD2_NAME]>value2</[FIELD2_NAME]>       …     </STRUCT1_PARAM_NAME>     …   </TABLE1_PARAM_NAME>   … </[RFC_NAME]Response>`      | RFC を返します。<br /><br /> -エクスポート、変更、およびテーブル パラメーターがサポートされます。<br /><br /> **注:** 応答メッセージに表示しないテーブル パラメーターの既定では、します。 応答メッセージのテーブルのパラメーターが必要な場合は、要求メッセージ内で空のテーブルのパラメーターを渡す必要があります。<br /><br /> -インポート SAP 構造体の型、テーブル型の SAP または SAP の単純なデータ型のパラメーターを変更できます。 |
+|                RFC 応答 ([RFC_NAME] 応答)                 |     `<[RFC_NAME]Response xmlns="[VERSION]/Rfc/">   <OUT1_PARAM_NAME>v1</OUT1_PARAM_NAME>   <OUT2_PARAM_NAME>v2</OUT2_PARAM_NAME>   …   <INOUT1_PARAM_NAME>v3</INOUT1_PARAM_NAME>   <INOUT2_PARAM_NAME>v4</INOUT2_PARAM_NAME>   …   <TABLE1_PARAM_NAME>     <STRUCT1_PARAM_NAME>       <[FIELD1_NAME]>value1</[FIELD1_NAME]>       <[FIELD2_NAME]>value2</[FIELD2_NAME]>       …     </STRUCT1_PARAM_NAME>     …   </TABLE1_PARAM_NAME>   … </[RFC_NAME]Response>`      | RFC を返します。<br /><br /> -エクスポート、変更、およびテーブル パラメーターがサポートされます。<br /><br /> **注:** 既定では、テーブル パラメーターは、応答メッセージに表示されません。 応答メッセージのテーブルのパラメーターが必要な場合は、要求メッセージ内で空のテーブルのパラメーターを渡す必要があります。<br /><br /> -インポート SAP 構造体の型、テーブル型の SAP または SAP の単純なデータ型のパラメーターを変更できます。 |
 |         RfcGetAttributes<br /><br /> (RfcGetAttributes)          |                                                                                                                                                                                                                `<RfcGetAttributes> </RfcGetAttributes>`                                                                                                                                                                                                                |                                                  RfcGetAttributes RFC SDK の API 操作によって表示されるは、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]します。 RfcGetAttributes 操作により、クライアント プログラムが、言語、システム ID、および RFC 接続に関連付けられているパートナーのコード ページを取得します。                                                   |
 | RfcGetAttributes 応答<br /><br /> (RfcGetAttributesResponse) |                                                                                                                                                          `<RfcGetAttributesResponse>   <Language>lang</Language>   <SysId>id</SysId>   <PartnerCodePage>pnrcp</PartnerCodePage> </RfcGetAttributesResponse>`                                                                                                                                                           |                                                                                                                              RfcGetAttributes 操作に対する応答は、言語、システム ID、および RFC 接続に関連付けられているパートナーのコード ページを返します。                                                                                                                              |
 
@@ -68,7 +68,7 @@ ms.locfileid: "36972851"
  [RFC_NAME]; 呼び出す RFC の名前を =たとえば、RFC_CUSTOMER_GET です。  
 
 ## <a name="invoking-a-bapi-as-an-rfc-operation"></a>RFC 操作として BAPI を呼び出す  
- [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] RFC 操作、およびビジネス オブジェクトのメソッドとして Bapi 明らかになります。 RFC の操作として Bapi は名前で表示されます。 ビジネス オブジェクトのインターフェイスを使用して Bapi を呼び出す方法の詳細については、[SAP の Bapi に対する操作](../../adapters-and-accelerators/adapter-sap/operations-on-bapis-in-sap.md)を参照してください。  
+ [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] RFC 操作、およびビジネス オブジェクトのメソッドとして Bapi 明らかになります。 RFC の操作として Bapi は名前で表示されます。 ビジネス オブジェクトのインターフェイスを使用して Bapi を呼び出す方法の詳細については、次を参照してください。 [SAP の Bapi に対する操作](../../adapters-and-accelerators/adapter-sap/operations-on-bapis-in-sap.md)します。  
 
  次の XML では、RFC として呼び出される BAPI (BAPI_CUSTOMER_GETDETAIL2) のメッセージ構造を示します。 この操作のメッセージ アクション: http://Microsoft.LobServices.Sap/2007/03/Rfc/BAPI_CUSTOMER_GETDETAIL2 します。  
 
@@ -92,4 +92,4 @@ ms.locfileid: "36972851"
 ```  
 
 ## <a name="see-also"></a>参照  
- [メッセージと BizTalk adapter for mySAP Business Suite のメッセージ スキーマ](../../adapters-and-accelerators/adapter-sap/messages-and-message-schemas-for-biztalk-adapter-for-mysap-business-suite.md)
+ [メッセージと BizTalk Adapter 用 mySAP Business Suite のメッセージ スキーマ](../../adapters-and-accelerators/adapter-sap/messages-and-message-schemas-for-biztalk-adapter-for-mysap-business-suite.md)

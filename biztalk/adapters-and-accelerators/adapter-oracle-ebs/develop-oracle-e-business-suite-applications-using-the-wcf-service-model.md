@@ -12,29 +12,29 @@ caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b290ef99349d970179b07ecfce45c72499d88c5c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7eb66cf9405a54eb550ea7c235e23f4808b5ee50
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36996019"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65375833"
 ---
 # <a name="develop-oracle-e-business-suite-applications-using-the-wcf-service-model"></a>WCF サービス モデルを使用して Oracle E-business Suite のアプリケーションを開発します。
 [!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)] 接続するための WCF サービス モデルと呼ばれるプログラミング モデルを提供、[!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]します。 サービス モデルに追加された WCF の一部に対処する、WCF チャネルのプログラミング モデルの制限の一部です。  
   
- WCF サービス モデルでは、チャネル経由で SOAP メッセージを交換するための複雑さを隠ぺいするのに使い慣れた .NET パラダイムを使用します。 サービス モデルでは、.NET データ構造体に情報をコピーする前に、SOAP メッセージ全体をメモリに読み取るでこの簡略化を実現します。 時間の長いメッセージをメモリに読み込むことがありますは現実的でない一部のアプリケーション。 このような場合は、開発者は、WCF チャネル モデルを使用してください。 WCF チャネル モデルの使用に関する詳細については、[WCF チャネル モデルを使用して Oracle E-business Suite アプリケーションを開発](../../adapters-and-accelerators/adapter-oracle-ebs/develop-oracle-e-business-suite-applications-using-the-wcf-channel-model.md)を参照してください。  
+ WCF サービス モデルでは、チャネル経由で SOAP メッセージを交換するための複雑さを隠ぺいするのに使い慣れた .NET パラダイムを使用します。 サービス モデルでは、.NET データ構造体に情報をコピーする前に、SOAP メッセージ全体をメモリに読み取るでこの簡略化を実現します。 時間の長いメッセージをメモリに読み込むことがありますは現実的でない一部のアプリケーション。 このような場合は、開発者は、WCF チャネル モデルを使用してください。 WCF チャネル モデルの使用に関する詳細については、次を参照してください。 [WCF チャネル モデルを使用して Oracle E-business Suite アプリケーションを開発](../../adapters-and-accelerators/adapter-oracle-ebs/develop-oracle-e-business-suite-applications-using-the-wcf-channel-model.md)します。  
   
  最下位レベルで、[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]をクライアントがクライアントとサービスのエンドポイント間で確立されたチャネル経由で SOAP メッセージを交換することで、サービスで操作を呼び出す、WCF チャネル モデルを表示します。 WCF チャネル モデルでは、データ型と、WCF チャネルのアーキテクチャを直接操作するためのメソッドを公開します。 WCF チャネル モデルを作成する SOAP メッセージの内容と、両方方法、アプリケーションを直接制御とを提供します。 および[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]これらを使用できます。 ただし、チャネル経由で送信する適切な形式で SOAP メッセージを作成して、返される応答メッセージの検証は、詳細かつ面倒な作業をすることができます。  
   
  WCF サービス モデルは、発信先サービスに対する操作を呼び出すか、クライアントからの受信操作に、プロキシ クラスを使用します。 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] Oracle E-business Suite をするには、操作を呼び出すことができます、WCF サービスとして公開します。  
   
-- ターゲット サービスで操作を呼び出すために使用するプロキシ クラスには、WCF クライアント クラスが呼び出されます。 このクラスは、厳密に型指定されたパラメーターを持つ .NET メソッドとして、サービスによって公開される操作をモデル化します。 WCF サービス モデルを使用すると、公開操作を呼び出すことができます、 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] WCF クライアントでの .NET メソッドとして。 WCF クライアントの詳細については、[WCF Client Overview](https://msdn.microsoft.com/library/ms735103.aspx)を参照してください。
+- ターゲット サービスで操作を呼び出すために使用するプロキシ クラスには、WCF クライアント クラスが呼び出されます。 このクラスは、厳密に型指定されたパラメーターを持つ .NET メソッドとして、サービスによって公開される操作をモデル化します。 WCF サービス モデルを使用すると、公開操作を呼び出すことができます、 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] WCF クライアントでの .NET メソッドとして。 WCF クライアントの詳細については、次を参照してください。 [WCF Client Overview](https://msdn.microsoft.com/library/ms735103.aspx)します。
   
   WCF クライアント クラスを生成する、次のツールのいずれかを使用し、関連付けられているサービス メタデータからヘルパー コードを[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]を公開します。  
   
 - **ServiceModel メタデータ ユーティリティ ツール (svcutil.exe)** WCF が付属しています。  
   
-- **[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]** が付属していますが、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]と統合、[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]エクスペリエンスを設計します。 このツールは、強力な閲覧と検索機能を備えた、アダプターを公開する操作を提供する標準の Microsoft Windows インターフェイスを表示します。 WCF クライアントを生成する方法の詳細については、[Oracle E-business Suite ソリューションの成果物の WCF クライアントまたは WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-oracle-ebs/create-a-wcf-client-or-wcf-service-contract-for-oracle-ebs-solution-artifacts.md)を参照してください。  
+- **[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]** が付属していますが、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]と統合、[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]エクスペリエンスを設計します。 このツールは、強力な閲覧と検索機能を備えた、アダプターを公開する操作を提供する標準の Microsoft Windows インターフェイスを表示します。 WCF クライアントを生成する方法の詳細については、次を参照してください。 [Oracle E-business Suite ソリューションの成果物の WCF クライアントまたは WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-oracle-ebs/create-a-wcf-client-or-wcf-service-contract-for-oracle-ebs-solution-artifacts.md)します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
  次のトピックでは、WCF サービス モデルを使用するアプリケーションを開発する方法に関する情報を提供します。  

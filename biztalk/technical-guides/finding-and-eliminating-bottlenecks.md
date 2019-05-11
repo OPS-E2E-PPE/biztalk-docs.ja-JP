@@ -1,5 +1,5 @@
 ---
-title: 検索して、ボトルネックを解消する |Microsoft ドキュメント
+title: 検索とボトルネックを解消 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,23 +12,23 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8cd6822c4d3842c856910f93a104777850d14ed4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: aa87b6f26524b61999ca8c4ad200d63e2117a2f5
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22297602"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65393528"
 ---
 # <a name="finding-and-eliminating-bottlenecks"></a>検索して、ボトルネックを解消します。
-成功した BizTalk Server のパフォーマンス評価は大きくの存在を検出し、スループットを増やすか、それに合わせてボトルネックを解決し、問題は、または、待機時間を短縮します。 このセクションでは、BizTalk Server ソリューションと、ボトルネックを解決する方法に関する情報に関連するさまざまな種類のパフォーマンスのボトルネックをについて説明します。  
+成功した BizTalk Server パフォーマンス評価は大きくの存在を検出して、し、解決するに合わせてより多くのスループットのボトルネックの問題または待機時間の短縮します。 このセクションには、BizTalk Server ソリューションと、ボトルネックを解決する方法についての情報に関連するさまざまな種類のパフォーマンスのボトルネックがについて説明します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
 -   [ボトルネックを回避するためのベスト プラクティス](../technical-guides/best-practices-for-avoiding-bottlenecks.md)  
   
--   [ボトルネックを調査](../technical-guides/investigating-bottlenecks.md)  
+-   [ボトルネックの調査](../technical-guides/investigating-bottlenecks.md)  
   
--   [システム レベルのボトルネック](~/technical-guides/system-level-bottlenecks.md)  
+-   [システムレベルのボトルネック](~/technical-guides/system-level-bottlenecks.md)  
   
 -   [BizTalk Server 層のボトルネック](../technical-guides/bottlenecks-in-the-biztalk-server-tier.md)  
   

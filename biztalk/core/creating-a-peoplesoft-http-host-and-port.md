@@ -15,15 +15,15 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d991642b45a636c50ea12148d07efd8b93917754
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 18675298b03e380ed53629a74fff31dfb4680068
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36997163"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65390103"
 ---
-# <a name="creating-a-peoplesoft-http-host-and-port"></a>PeopleSoft の HTTP ホストとポートを作成する
-PeopleSoft のメッセージ公開アーキテクチャは、Integration Broker と呼ばれています。 Integration Broker の主なコンポーネントは次のとおりです。  
+# <a name="creating-a-peoplesoft-http-host-and-port"></a>PeopleSoft の HTTP ホストとポートを作成します。
+PeopleSoft のメッセージ公開アーキテクチャは、統合ブローカーと呼ばれます。 統合ブローカーの主要なコンポーネントは次のとおりです。  
   
 - ゲートウェイ  
   
@@ -31,9 +31,9 @@ PeopleSoft のメッセージ公開アーキテクチャは、Integration Broker
   
 - サブスクライバー ノード  
   
-  これら 3 つが連携して、HTTP リスナーの URL にメッセージを公開します。 公開ノードを設定する必要があります。 PeopleSoft には既定の公開ノードがあり、ローカル メッセージ ノードとも呼ばれます。 ノードおよび公開ノードのトランザクションをアクティブ化する必要があります。 サブスクリプション ノードの種類を外部ノードとして設定した後、ノードとトランザクションをアクティブ化する必要があります。 このノードの場合は、また、タイプを HTTP に設定し、接続情報も設定します。  
+  3 つすべてが連携して、HTTP リスナーの URL にメッセージを発行します。 発行を設定する必要がありますノード。 PeopleSoft が、既定の公開ノード、ローカル メッセージ ノードとも呼ばれます。 ノードおよび公開ノードのトランザクションを有効にする必要があります。 サブスクリプション ノードの種類を外部ノードとして設定して、ノードと、トランザクションをアクティブ化する必要があります。 このノードに対しても HTTP 接続情報を設定でき、型を設定します。  
   
-  PeopleSoft によってイベントの送信に使用される PeopleSoft HTTP ホストおよびポートを作成するには、PeopleSoft Integration Broker を使用します。 メッセージでの手順を使用して、アクティブおよびルーティングが確認する[メッセージのアクティビティの状態を確認する方法](../core/how-to-verify-activity-status-of-a-message.md)します。  
+  PeopleSoft の HTTP ホストおよび PeopleSoft がイベントを送信ポートを作成するのにには、PeopleSoft Integration Broker を使用します。 メッセージでの手順を使用して、アクティブおよびルーティングが確認する[メッセージのアクティビティの状態を確認する方法](../core/how-to-verify-activity-status-of-a-message.md)します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

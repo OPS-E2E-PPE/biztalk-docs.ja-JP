@@ -12,17 +12,17 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 60faad9e9e2905da963ee911dc9d7f13a39d2c67
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b41d67b45c8d3fa18761154e61b449fdf17df9dc
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36997467"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65391824"
 ---
 # <a name="instrumentation-best-practices-for-high-performance-biztalk-solutions"></a>高パフォーマンスの BizTalk ソリューションのインストルメンテーションのベスト プラクティス
 このホワイト ペーパーのコピーをダウンロードするには[ http://go.microsoft.com/fwlink/?LinkId=205874](http://go.microsoft.com/fwlink/?LinkId=205874)します。  
   
- **公開日:** 2010 年 11 月  
+ **公開日。** 2010 年 11 月  
   
  **作成者:** Valery Mizonov、Microsoft Corporation  
   
@@ -34,9 +34,9 @@ ms.locfileid: "36997467"
   
 - Krish Srinivasan、Microsoft Corporation  
   
-  **適用対象:** Microsoft BizTalk Server  
+  **適用対象します。** Microsoft BizTalk Server  
   
-  **概要:** BizTalk ソリューションのインストルメント化する従来の方法とは限りませんパフォーマンスの観点から最も効果的です。 一般的に使用されるインストルメンテーションとトレーシング コンポーネントのデバッグの Win32 Api を活用することは可能性があります、潜在的なボトルネックが生じるし、ストレス条件下で実行されているマルチ スレッドの BizTalk アプリケーションのパフォーマンス低下の責任になります。  
+  **概要:** BizTalk ソリューションのインストルメント化する従来の方法常に有効ではありません、最もパフォーマンスの観点から。 一般的に使用されるインストルメンテーションとトレーシング コンポーネントのデバッグの Win32 Api を活用することは可能性があります、潜在的なボトルネックが生じるし、ストレス条件下で実行されているマルチ スレッドの BizTalk アプリケーションのパフォーマンス低下の責任になります。  
   
   相手側からソース コードのインストルメンテーションは高いアプリケーションの動作を可視化を提供し、全体的なトラブルシューティング作業を軽減します。 そのため、高パフォーマンスの BizTalk ソリューションのインストルメント化を根本的に新しいアプローチが重要な点が重要になりますほぼオーバーヘッドなしとまったく影響のない非侵入型の方法で多機能かつ詳細な診断情報の収集を有効にするにはアプリケーションのパフォーマンス。  
   

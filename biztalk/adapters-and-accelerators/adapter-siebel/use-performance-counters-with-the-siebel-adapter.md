@@ -1,5 +1,5 @@
 ---
-title: Siebel アダプターのパフォーマンス カウンターを使用して |Microsoft ドキュメント
+title: Siebel アダプターを使用したパフォーマンス カウンターの使用 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,41 +16,41 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bebbd605df52e023c78112b78ad51db13d896cc7
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 79bb582ca3f79dc20f537551d9aeb98db5cd6cc0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25962480"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65370349"
 ---
-# <a name="use-performance-counters-with-the-siebel-adapter"></a>Siebel アダプターのパフォーマンス カウンターを使用します。
-[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]クライアントは、アダプターのパフォーマンスを測定するのにパフォーマンス カウンターを使用できます。 [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]セットアップ プログラムによって作成のパフォーマンス カウンター カテゴリ"[!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]"アダプター パックのインストールと共にします。  
+# <a name="use-performance-counters-with-the-siebel-adapter"></a>Siebel アダプターを使用したパフォーマンス カウンターを使用します。
+[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] クライアントは、アダプターのパフォーマンスを測定するのにパフォーマンス カウンターを使用できます。 [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]セットアップ プログラムは、パフォーマンス カウンター カテゴリを作成します。"[!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]"アダプター パックのインストールと共にします。  
   
-## <a name="the-lob-time-cumulative-performance-counter"></a>LOB (累積) 時間のパフォーマンス カウンター  
- **BizTalk .NET Adapter for Siebel**カテゴリには 1 つのパフォーマンス カウンター「LOB 時間 (累積)」と呼ばれます。 このパフォーマンス カウンターは、LOB クライアント ライブラリは、アダプターを開始する操作が完了する時間をミリ秒単位で、時間を表します。 [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]特定 Siebel サーバー名については、各操作のパフォーマンス カウンターのインスタンスを作成します。 次のパターンでは、インスタンスが作成されます。  
+## <a name="the-lob-time-cumulative-performance-counter"></a>LOB の時間 (累積) パフォーマンス カウンター  
+ **BizTalk .NET Adapter for Siebel**カテゴリには 1 つのパフォーマンス カウンター"LOB Time (累積)"と呼ばれます。 このパフォーマンス カウンターは、LOB クライアント ライブラリは、アダプターを起動する操作を完了するまでをミリ秒単位の時間を示します。 [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]特定 Siebel サーバー名の各操作のパフォーマンス カウンターのインスタンスを作成します。 次のパターンでは、インスタンスが作成されます。  
   
 ```  
 <process id>:<app domain id>:<endpoint id>:<action id>  
 ```  
   
- 場合、 [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]、エンドポイント id は、接続 URI で指定されている、Siebel サーバーの名前。 操作 id は、によって実行されたアクション、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]など、ログイン、ログオフ、メタデータ、\<ビジネス コンポーネント名\>.\<操作\>、\<ビジネス サービス名\>.\<ビジネス サービス メソッド\>です。 上記の名前付け規則の結果を 127 文字を超える名に次の形式でアクション ID のみが表示されます。  
+ 場合、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]エンドポイントの id は、接続 URI で指定されている、Siebel サーバーの名前。 アクション id の操作によって実行される可能性があります、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]など、ログイン、ログオフ、メタデータ、\<ビジネス コンポーネント名\>.\<操作\>、\<ビジネス サービス名\>.\<ビジネス サービス メソッド\>します。 前の名前付け規則の結果を 127 文字を超える名前の場合は、次の形式でアクション ID のみが表示されます。  
   
 ```  
 :::<action id>  
 ```  
   
- 場合`:::<action id>`も 127 文字を超える場合、これは 127 文字まで切り捨てられます。  
+ 場合`:::<action id>`もが 127 文字を超える、127 文字までには切り捨てられます。  
   
- パフォーマンス カウンターは、アダプターは、Siebel システムへの最初の呼び出し後にのみ初期化されます。 また、 **InstanceLifetime**パフォーマンス カウンターのプロパティが 'Process' は、パフォーマンス カウンターは、カウンターを作成するプログラムが終了するとすぐに存在しなくなることを意味します。 
+ パフォーマンス カウンターは、アダプターは、Siebel システムへの最初の呼び出しを後でのみ初期化されます。 また、 **InstanceLifetime** 'Process' は、パフォーマンス カウンターは、カウンターを作成するプログラムが終了すると、すぐに存在しなくなることを意味するパフォーマンス カウンターのプロパティが設定されています。 
   
 > [!NOTE]
->  LOB Time (累積) パフォーマンス カウンターの有効桁数は、16 ミリ秒です。  
+>  LOB の時間 (累積) パフォーマンス カウンターの有効桁数は、16 ミリ秒です。  
   
 ## <a name="enabling-performance-counters"></a>パフォーマンス カウンターを有効にします。  
- パフォーマンス カウンターを有効になっているやバインド プロパティを設定して無効になっている**EnablePerformanceCounters**です。 設定**EnablePerformanceCounters**にプロパティのバインド**True**パフォーマンス カウンターを有効にします。 パフォーマンス カウンターを無効にする設定**EnablePerformanceCounters**に**False**です。 既定では、 **EnablePerformanceCounters**に設定されている**False**です。  
+ パフォーマンス カウンターを有効またはバインドのプロパティを設定して無効にできる**EnablePerformanceCounters**します。 設定**EnablePerformanceCounters**プロパティをバインド**True**パフォーマンス カウンターを有効にします。 パフォーマンス カウンターを無効にするには設定**EnablePerformanceCounters**に**False**します。 既定では、 **EnablePerformanceCounters**に設定されている**False**します。  
   
 ## <a name="performance-counters-and-the-wcf-lob-adapter-sdk"></a>パフォーマンス カウンターと WCF LOB Adapter SDK  
- 値を変更する、 **EnablePerformanceCounters**バインディング プロパティの対応するパフォーマンス カウンターの値が変更[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]です。 バインディング プロパティも、[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]静的では、一方の[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]は動的です。 そのため、2 つのインスタンスがある場合、 [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] 、AppDomain にバインドされ、 **EnablePerformanceCounters**に設定されているプロパティのバインド**True**いずれかでと**False**アダプター固有のパフォーマンス カウンターのいずれかで有効にし、他の無効になっているは、それ以外のです。 ただし、ためのバインディング プロパティ、[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]は静的で、いずれかに設定されます**True**または**False**にどのような値を最後に指定された依存します。  
+ 値を変更する、 **EnablePerformanceCounters**バインディング プロパティの対応するパフォーマンス カウンターの値を変更する[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]します。 バインド プロパティも、[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]は静的で一方の場合、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]は動的です。 そのため、2 つのインスタンスがある場合、 [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] 、appdomain のバインドと**EnablePerformanceCounters**に設定されているプロパティのバインド**True**で 1 つと**False**アダプター固有のパフォーマンス カウンターのいずれかで有効にし、他の無効になっているで、他のです。 ただし、ためのバインディング プロパティ、[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]は静的で、いずれかに設定されます**True**または**False**にどのような値を最後に指定された依存します。  
   
 ## <a name="see-also"></a>参照  
 [Siebel アダプターをトラブルシューティングします。](../../adapters-and-accelerators/adapter-siebel/troubleshoot-the-siebel-adapter.md)

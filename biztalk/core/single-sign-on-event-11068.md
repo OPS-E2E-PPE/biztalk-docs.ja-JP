@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 11068 |Microsoft Docs'
+title: シングル サインオン:イベント 11068 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 218da642493981211de4a0e10b504ea8f434945f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 634fdcb87698628e2a579028ea8fad11ac035d27
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37020496"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65530771"
 ---
-# <a name="single-sign-on-event-11068"></a>シングル サインオン: イベント 11068
+# <a name="single-sign-on-event-11068"></a>シングル サインオン:イベント 11068
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                                                                                                     |
@@ -38,4 +38,4 @@ ms.locfileid: "37020496"
 ## <a name="user-action"></a>ユーザーの操作  
  リモートの検索を可能にする、**サーバー スナップイン**、**詳細**] タブで [**リモート検索を許可する**します。  
   
- 詳細については、[サーバー スナップインを使用する](../core/how-to-use-the-servers-snap-in.md)を参照してください。
+ 詳細については、次を参照してください。[サーバー スナップインを使用する](../core/how-to-use-the-servers-snap-in.md)します。

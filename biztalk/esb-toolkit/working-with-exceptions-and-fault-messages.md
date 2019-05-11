@@ -1,5 +1,5 @@
 ---
-title: 例外とエラー メッセージの操作 |Microsoft ドキュメント
+title: 例外とエラー メッセージの操作 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,18 +12,18 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ee582db6360678d79b550f0c31e50170904044cb
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f70b0480d14c4c9fc7a38fc47d2c463066cb628b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22295034"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396323"
 ---
-# <a name="working-with-exceptions-and-fault-messages"></a>例外とエラー メッセージを使用します。
-このセクションでは、ESB の管理ポータルを使用して、次の一般的なタスクに従って、エラーが発生したときに生成されるエラー メッセージを表示することによってアプリケーションの動作の監視をメソッドについて説明します。  
+# <a name="working-with-exceptions-and-fault-messages"></a>例外とエラー メッセージの操作
+このセクションには、ESB の管理ポータルを使用してに従って、次の一般的なタスクのエラーが発生したときに生成されるエラー メッセージを表示することによって、アプリケーションの動作を監視する方法について説明します。  
   
--   [一覧表示、検索、および並べ替えのエラー メッセージ](../esb-toolkit/listing-searching-and-sorting-fault-messages.md)  
+-   [エラー メッセージの一覧表示、検索、並べ替え](../esb-toolkit/listing-searching-and-sorting-fault-messages.md)  
   
--   [表示して、元のメッセージをダウンロードします。](../esb-toolkit/viewing-and-downloading-the-original-messages.md)  
+-   [元のメッセージを表示し、ダウンロードする](../esb-toolkit/viewing-and-downloading-the-original-messages.md)  
   
--   [修復と再送信するメッセージ](../esb-toolkit/repairing-and-resubmitting-messages.md)
+-   [メッセージを修復し、再送信する](../esb-toolkit/repairing-and-resubmitting-messages.md)

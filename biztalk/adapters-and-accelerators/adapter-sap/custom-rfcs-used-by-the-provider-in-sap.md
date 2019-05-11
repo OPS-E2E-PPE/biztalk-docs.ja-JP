@@ -18,19 +18,19 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 36b359fc893b8616fd4fb7339e9efbc42d7d3e13
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 0e28ea61e09eb8098b98e7396deea0662090eb98
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36992723"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373555"
 ---
 # <a name="custom-rfcs-used-by-the-provider-in-sap"></a>SAP でプロバイダーによって使用されるカスタム Rfc
 [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)] SAP システムの操作を実行するために内部的に使用する次のカスタム Rfc を提供します。  
   
 - **Z_EXTRACT_DATA_OO RFC**します。 データの抽出、RFC Z_EXTRACT_DATA_OO は、テーブルからデータを抽出、SAP R/3 システム ビューまたはデータ、および返すか、SQL Server テーブルの同期的にデータを変換します、またはフラット ファイルへのデータをダンプをします。 WHERE 句で SELECT 操作を実行する、Z_EXTRACT_DATA_OO が使用されます。 この RFC のパフォーマンスは、SAP システムのハードウェアに依存します。  
   
-   Z_EXTRACT_DATA_OO RFC の .NET と SAP のデータ型をマップする方法については、[Data Type Mapping for カスタム Rfc](../../adapters-and-accelerators/adapter-sap/data-type-mapping-for-custom-rfcs.md)を参照してください。  
+   Z_EXTRACT_DATA_OO RFC の .NET と SAP のデータ型をマップする方法については、次を参照してください。 [Data Type Mapping for カスタム Rfc](../../adapters-and-accelerators/adapter-sap/data-type-mapping-for-custom-rfcs.md)します。  
   
 - **Z_EXECUTE_SAP_QUERY RFC**します。 この RFC を使って、 [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)] SAP システムで既に定義されているクエリを実行します。 この RFC では、内部的には、SAP の RFC RSAQ_REMOTE_QUERY_CALL を実行します。 SAP クエリは、テーブル、列、入力パラメーター、結果セットの並べ替え順序を選択して、SAP GUI を使用してグラフィカルに作成されるクエリです。使用して、 [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)] ADO.NET クライアントからこのような SAP クエリを実行するようになりました。  
   
@@ -72,17 +72,17 @@ ms.locfileid: "36992723"
   
 ## <a name="security-considerations-with-the-custom-rfc"></a>カスタム RFC のセキュリティに関する考慮事項  
   
--   `Security Issue`: はそれらのファイルを保護するためサポートしていない場合は、フラット ファイルに書き込まれたデータを公開する可能性があります。  
+-   `Security Issue`:これらのファイルを保護するためサポートしていない場合は、フラット ファイルに書き込まれたデータを公開する可能性があります。  
   
-     `Best practice`: フラット ファイル モードで Z_EXTRACT_DATA_OO 関数の呼び出しによってデータが書き込まれるファイル共有のセキュリティを強化します。  
+     `Best practice`:フラット ファイル モードで Z_EXTRACT_DATA_OO 関数の呼び出しによってデータが書き込まれるファイル共有のセキュリティを強化します。  
   
--   `Security Issue`: ファイル モードで Z_EXTRACT_DATA_OO 関数の呼び出しを使用してに書き込まれる任意の共有上のファイルを上書きする可能性があります。 これは、SAP のドメイン アカウントがアクセスを持っている任意の共有上の任意のファイルに発生します。  
+-   `Security Issue`:ファイル モードで Z_EXTRACT_DATA_OO 関数の呼び出しを使用してに書き込まれる任意の共有上のファイルを上書きする可能性があります。 これは、SAP のドメイン アカウントがアクセスを持っている任意の共有上の任意のファイルに発生します。  
   
-     `Best practice`: SAP のドメイン アカウントがアクセスを持っているすべての共有の保護に努めてください。  
+     `Best practice`:SAP のドメイン アカウントがアクセスを持っているすべての共有の保護に努めてください。  
   
--   `Security Issue`: ユーザーには、ターゲットが別の物理マシン上の場合、SAP アプリケーション サーバーからそのターゲット ファイル共有に転送中にデータを検査する (または「スニッフィング」) に機能があります。  
+-   `Security Issue`:ユーザーには、ターゲットが別の物理マシン上の場合、SAP アプリケーション サーバーからそのターゲット ファイル共有に転送中にデータを検査する (または「スニッフィング」) に機能があります。  
   
-     `Best practice`: 通信を SAP サーバーとターゲット間でセキュリティを強化するため、IPsec または別の適切なメソッドを使用します。  
+     `Best practice`:IPsec または別の適切なメソッドを使用して、通信の SAP サーバーとターゲット間でセキュリティを強化します。  
   
 ## <a name="see-also"></a>参照  
  [.NET Framework Data Provider for mySAP Business Suite について](../../adapters-and-accelerators/adapter-sap/about-the-net-framework-data-provider-for-mysap-business-suite.md)

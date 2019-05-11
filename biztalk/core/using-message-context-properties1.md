@@ -1,5 +1,5 @@
 ---
-title: メッセージ コンテキスト Properties1 を使用して |Microsoft ドキュメント
+title: メッセージ コンテキスト Properties1 を使用して |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cf36c3135dccb5e0dcae788fe191d15f38e1a28f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d7e02c944690e50f87535fc7cec8e06e0dd27c48
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22287114"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396821"
 ---
-# <a name="using-message-context-properties"></a>メッセージ コンテキストのプロパティの使用
+# <a name="using-message-context-properties"></a>メッセージ コンテキスト プロパティの使用
 このセクションでは、BizTalk メッセージ コンテキストのプロパティを使用して接続セッションを制御する方法について説明します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  

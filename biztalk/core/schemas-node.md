@@ -1,5 +1,5 @@
 ---
-title: '[スキーマ] ノード |Microsoft ドキュメント'
+title: スキーマ ノード |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,21 +14,21 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a37d5b09fec62cacef1e691994b019560b6ee88e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f85a6ccc53ff6e4b4b8b43065809170864a13695
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22269314"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395573"
 ---
 # <a name="schemas-node"></a>[スキーマ] ノード
-使用して、**スキーマ**BizTalk で使用できる現在のアプリケーションおよびシステム スキーマで展開されているスキーマを表示するノードです。 右クリックし、**スキーマ**次のコマンドを表示するノード。  
+使用して、**スキーマ**BizTalk で利用できる現在のアプリケーションおよびシステム スキーマで展開されているスキーマを表示するノード。 右クリックし、**スキーマ**次のコマンドを表示するノード。  
   
--   **プロパティ スキーマを非表示に**です。 選択すると、インスタンス メッセージの内部からメッセージ コンテキストへの特定の値の昇格に使用されるスキーマが除外されます。 置き換えられるこのメニュー項目を選択すると、**スキーマ**ノード メニュー **プロパティ スキーマの**します。  
+-   **プロパティ スキーマを非表示に**します。 選択した場合、メッセージ コンテキストからインスタンス メッセージ内の特定の値を昇格させるために使用するスキーマが除外されます。 置き換えられるこのメニュー項目を選択すると、**スキーマ**ノード メニュー **プロパティ スキーマの**します。  
   
--   **プロパティ スキーマの表示**です。 選択すると、プロパティ スキーマが除外されます。 置き換えられるこのメニュー項目を選択すると、**スキーマ**ノード メニュー**プロパティ スキーマの非表示に**です。  
+-   **プロパティ スキーマの表示**します。 選択した場合、プロパティ スキーマが除外されます。 置き換えられるこのメニュー項目を選択すると、**スキーマ**ノード メニュー**プロパティ スキーマの非表示**します。  
   
 ## <a name="see-also"></a>参照  
  [プロパティ スキーマ](../core/property-schemas.md)   
  [スキーマについて](../core/about-schemas.md)   
- [BizTalk エディターを使用してスキーマを作成します。](../core/creating-schemas-using-biztalk-editor.md)
+ [BizTalk エディターを使用したスキーマの作成](../core/creating-schemas-using-biztalk-editor.md)

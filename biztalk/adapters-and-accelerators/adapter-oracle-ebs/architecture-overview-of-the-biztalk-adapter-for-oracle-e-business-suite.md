@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cc82d65b477cf1ac9ea7f7451c3521cc5a00a72c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e5360a26fc0df13548b7c0e6b26e5a59cb5eba50
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37007643"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65375798"
 ---
 # <a name="architecture-overview-of-the-biztalk-adapter-for-oracle-e-business-suite"></a>BizTalk Adapter for Oracle E-business Suite のアーキテクチャの概要
 [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]は、[!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)]カスタム バインドします。 このバインディングには、Oracle E-business Suite との通信を有効にする 1 つのカスタム トランスポート バインド要素が含まれています。 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]によってラップされて、[!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)]ランタイムを使ってアプリケーションに公開されると、[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]チャネル アーキテクチャ。 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] .NET (ODP.NET) と、Oracle クライアントでは、Windows の Oracle Data Access Components (ODAC) の一部であるは、Oracle データ プロバイダーを介して、Oracle E-business Suite と通信します。  
@@ -76,7 +76,7 @@ ms.locfileid: "37007643"
   
 - **Tnsnames.ora を使用せず**します。 この方法では、アダプターのクライアントは、直接接続 URI の接続パラメーターを指定します。 これは、クライアント コンピューターの tnsnames.ora ファイルに存在する net サービス名には必要ありません。 この方法は、クライアント コンピューターに存在している、tnsnames.ora ファイルをも必要ありません。  
   
-  接続 URI の詳細については、[Oracle E-business Suite への接続を作成する](../../adapters-and-accelerators/adapter-oracle-ebs/create-a-connection-to-oracle-e-business-suite.md)を参照してください。  
+  接続 URI の詳細については、次を参照してください。 [Oracle E-business Suite への接続を作成する](../../adapters-and-accelerators/adapter-oracle-ebs/create-a-connection-to-oracle-e-business-suite.md)します。  
   
 ## <a name="next"></a>Next
 [Oracle EBS アプリケーションをセキュリティで保護する](../../adapters-and-accelerators/adapter-oracle-ebs/secure-your-oracle-ebs-applications.md)

@@ -1,5 +1,5 @@
 ---
-title: 高 Availability3 の計画 |Microsoft ドキュメント
+title: 高 Availability3 の計画 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,33 +17,33 @@ caps.latest.revision: 30
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3a6a8a69af5fd1ff59a4e69e02a52124d89db1ab
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 79b4993522725d1a42fd8777fbfd21f91edc0940
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22264346"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395701"
 ---
 # <a name="planning-for-high-availability"></a>高可用性の計画
-[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は、重要なビジネス データを処理する目的で多くの企業によって使用されています。 こうした企業にとって、ハードウェア障害に起因する長時間にわたる中断は、生産性や収益性の低下を意味します。 ここでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ソリューションの稼働時間を最大化するための [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 環境の可用性向上に関するガイダンスを提供します。  
+多くの企業を使用して、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ビジネスが依存しているデータを処理します。 これらの企業の生産性の低下や収益性、ハードウェア障害が原因の長期にわたるダウンタイムの影響を意味します。 このセクションでは可用性を高めるため、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]のアップタイムを最大化するための環境、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ソリューション。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
--   [SQL Server Always On 可用性グループを使用して高可用性](../core/high-availability-using-sql-server-always-on-availability-groups.md)
+-   [SQL Server Always On 可用性グループを使用した高可用性](../core/high-availability-using-sql-server-always-on-availability-groups.md)
   
--   [フォールト トレランスのためには、プラットフォームの計画](../core/planning-your-platform-for-fault-tolerance.md)  
+-   [プラットフォームのフォールト トレランスの計画](../core/planning-your-platform-for-fault-tolerance.md)  
   
--   [高可用性の BizTalk Server 環境を作成します。](../core/creating-a-highly-available-biztalk-server-environment.md)  
+-   [高可用性 BizTalk Server 環境を作成します。](../core/creating-a-highly-available-biztalk-server-environment.md)  
   
--   [サンプル BizTalk Server の高可用性のシナリオ](../core/sample-biztalk-server-high-availability-scenarios.md)  
+-   [BizTalk Server の高可用性を実現するサンプル シナリオ](../core/sample-biztalk-server-high-availability-scenarios.md)  
   
--   [エンタープライズ シングル サインオンの高可用性](../core/high-availability-for-enterprise-single-sign-on.md)  
+-   [Enterprise Single Sign-On の高可用性](../core/high-availability-for-enterprise-single-sign-on.md)  
   
--   [高可用性と、Microsoft Operations Framework](../core/high-availability-and-the-microsoft-operations-framework.md)  
+-   [高可用性と MOF](../core/high-availability-and-the-microsoft-operations-framework.md)  
   
 ## <a name="reference"></a>リファレンス  
   
 -   [SQL Server 2008 フェールオーバー クラスタ リングの概要](http://go.microsoft.com/fwlink/?LinkId=130375)(http://go.microsoft.com/fwlink/?LinkId=130375)  
   
--   [ホワイト ペーパー: SQL Server 2008 フェールオーバー クラスタ リング](http://go.microsoft.com/fwlink/?LinkId=189522)(http://go.microsoft.com/fwlink/?LinkId=189522)  
+-   [ホワイト ペーパー:SQL Server 2008 フェールオーバー クラスタ リング](http://go.microsoft.com/fwlink/?LinkId=189522)(http://go.microsoft.com/fwlink/?LinkId=189522)  
   
 -   [Windows Server 2008 ステップ バイ ステップ ガイド](http://go.microsoft.com/fwlink/?LinkId=189545)(http://go.microsoft.com/fwlink/?LinkId=189545)

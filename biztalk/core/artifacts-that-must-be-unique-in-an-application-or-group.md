@@ -16,12 +16,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fb81ffe1f97681f82ddc3d45b9d93ff34b5e172a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1dc28a438dff5e2fe21dc00d207da64fbdd2fc69
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37023264"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65359260"
 ---
 # <a name="artifacts-that-must-be-unique-in-an-application-or-group"></a>アプリケーションまたはグループ内で一意である必要があるアイテム
 次に示すように、BizTalk グループまたはアプリケーション内の特定の種類のアイテムは一意であることが必要です。  
@@ -44,7 +44,7 @@ ms.locfileid: "37023264"
   
   アプリケーション内で一意でなければならない種類のアイテムをアプリケーションにインポートまたは追加する場合に、そのアイテムが既にアプリケーションに存在するときは、上書きオプションを指定できます。 グループ内で一意でなければならない種類のアイテムがグループ内の別のアプリケーションに存在する場合は、そのアイテムを追加またはインポートできません。  
   
-  グループ内のあるアプリケーションで使用する必要があるアイテムが別のアプリケーションに既に存在する場合は、そのアイテムを含んでいるアプリケーションへの参照を作成できます。 詳細については、[別のアプリケーションへの参照を追加する方法](../core/how-to-add-a-reference-to-another-application.md)を参照してください。  
+  グループ内のあるアプリケーションで使用する必要があるアイテムが別のアプリケーションに既に存在する場合は、そのアイテムを含んでいるアプリケーションへの参照を作成できます。 詳細については、次を参照してください。[別のアプリケーションへの参照を追加する方法](../core/how-to-add-a-reference-to-another-application.md)します。  
   
 > [!NOTE]
 >  表示するほとんどの種類のアイテムの完全名、アプリケーションで、BTSTask の ListApp コマンドを使用して」の説明に従って[ListApp コマンド](../core/listapp-command.md)します。  

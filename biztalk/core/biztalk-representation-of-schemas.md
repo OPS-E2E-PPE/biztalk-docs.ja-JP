@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e0951a0191a0cd6bf4d1d14c9c3aed19890004d2
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 189ece3b7b79c0272a435ba7b3ef1a40b9eac883
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36978427"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65357961"
 ---
 # <a name="biztalk-representation-of-schemas"></a>スキーマの BizTalk 表記
 
@@ -47,7 +47,7 @@ BizTalk スキーマは、最終的には XSD (XML Schema Definition) 言語で�
 
  全体的に見て、BizTalk エディターは、レコードの汎用的な概念を使用して XSD スキーマの作成を簡略化されたアプローチを結合しなどの特定の XSD より明示的に制御を持つフィールドが構築**シーケンス**、 **選択した**、**任意**、および**anyattribute**要素。  
 
- 各ノードには、その種類によって異なる一連のプロパティが割り当てられています。これらのプロパティは、Visual Studio の [プロパティ] ウィンドウで構成できます。 一般に、これらのプロパティは、XSD スキーマでは XSD 要素の属性に対応しています。 ノードのプロパティの詳細については、**ノード プロパティ**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]を参照してください。
+ 各ノードには、その種類によって異なる一連のプロパティが割り当てられています。これらのプロパティは、Visual Studio の [プロパティ] ウィンドウで構成できます。 一般に、これらのプロパティは、XSD スキーマでは XSD 要素の属性に対応しています。 ノードのプロパティの詳細については、次を参照してください。**ノード プロパティ**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]します。
 
  このセクションでは、BizTalk エディターで使用されるノードの種類とそのプロパティについて説明し、関連するリファレンスへのリンクを紹介しています。  
 

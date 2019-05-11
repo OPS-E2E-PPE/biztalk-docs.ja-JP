@@ -16,15 +16,15 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 796e7beb428e6f9a4f0df63eff9cf45e9d5410bb
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9b654d5d5932f91b11d89632e8c5b52ba5d4c1c7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36995219"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373290"
 ---
 # <a name="message-schemas-for-bapi-operations"></a>BAPI 操作のメッセージ スキーマ
-次のセクションでは、メッセージ スキーマやメッセージのアクションでの Bapi を呼び出すために使用について説明します、[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]ビジネス オブジェクトのメソッドとして。 アダプターの RFC 操作として、Bapi を呼び出すこともできます。 Rfc の呼び出しに使用するメッセージの詳細については、[RFC 操作のメッセージ スキーマ](../../adapters-and-accelerators/adapter-sap/message-schemas-for-rfc-operations.md)を参照してください。 常に、アダプターは、アダプターでの BAPI の起動方法に関係なく、SAP システムの RFC として、BAPI を呼び出します。 方法の概要については[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]サポート Bapi を参照してください[SAP の Bapi に対する操作](../../adapters-and-accelerators/adapter-sap/operations-on-bapis-in-sap.md)します。  
+次のセクションでは、メッセージ スキーマやメッセージのアクションでの Bapi を呼び出すために使用について説明します、[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]ビジネス オブジェクトのメソッドとして。 アダプターの RFC 操作として、Bapi を呼び出すこともできます。 Rfc の呼び出しに使用するメッセージの詳細については、次を参照してください。 [RFC 操作のメッセージ スキーマ](../../adapters-and-accelerators/adapter-sap/message-schemas-for-rfc-operations.md)します。 常に、アダプターは、アダプターでの BAPI の起動方法に関係なく、SAP システムの RFC として、BAPI を呼び出します。 方法の概要については[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]サポート Bapi を参照してください[SAP の Bapi に対する操作](../../adapters-and-accelerators/adapter-sap/operations-on-bapis-in-sap.md)します。  
 
 ## <a name="message-structure-for-business-object-operations"></a>ビジネス オブジェクトの操作のメッセージの構造  
  次の表では、ビジネス オブジェクト メソッドとして BAPI を呼び出すために使用するメッセージ スキーマを示します。  
@@ -66,4 +66,4 @@ ms.locfileid: "36995219"
  [BAPI_RFC_NAME] BAPI; の名前を「RFC を =たとえば、BAPI_SALESORDER_CREATEFROMDAT2 です。  
 
 ## <a name="see-also"></a>参照  
- [メッセージと BizTalk adapter for mySAP Business Suite のメッセージ スキーマ](../../adapters-and-accelerators/adapter-sap/messages-and-message-schemas-for-biztalk-adapter-for-mysap-business-suite.md)
+ [メッセージと BizTalk Adapter 用 mySAP Business Suite のメッセージ スキーマ](../../adapters-and-accelerators/adapter-sap/messages-and-message-schemas-for-biztalk-adapter-for-mysap-business-suite.md)

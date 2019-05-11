@@ -22,12 +22,12 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d4f6821f252bf2854b7ed64f57cbdf742c378c5c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6a5edfbf9a5f1433721b3ce11a63d38aa259a4c3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36991419"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65371979"
 ---
 # <a name="browse-search-and-get-metadata-for-siebel-operations"></a>参照、検索、および Siebel 操作のメタデータを取得
 このセクションを使用する方法について説明します、 [!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]、 [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]、および[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]します。 これらを使用して[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]ことができます、コンポーネント。  
@@ -133,7 +133,7 @@ ms.locfileid: "36991419"
  使用することができます、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]または[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]Siebel 成果物を選択したスキーマを生成します。 参照を呼び出したいアーティファクトの検索し、それらの成果物のスキーマを生成し、Siebel に、スキーマに準拠したメッセージを送信できます。  
   
 > [!NOTE]
->  そのカテゴリのサブ-ツリー内のすべての操作を取得するカテゴリ ノードを選択することができます: たとえば、ビジネス コンポーネント (ビジネス コンポーネントのすべての操作のスキーマの生成) をまたは (ビジネス コンポーネントで特定の操作を選択を選択できます例、Insert および Delete) これらの操作のスキーマを生成します。 ノードの詳細については、[メタデータ ノード Id](../../adapters-and-accelerators/adapter-siebel/metadata-node-ids1.md)を参照してください。  
+>  そのカテゴリのサブ-ツリー内のすべての操作を取得するカテゴリ ノードを選択することができます: たとえば、ビジネス コンポーネント (ビジネス コンポーネントのすべての操作のスキーマの生成) をまたは (ビジネス コンポーネントで特定の操作を選択を選択できます例、Insert および Delete) これらの操作のスキーマを生成します。 ノードの詳細については、次を参照してください。[メタデータ ノード Id](../../adapters-and-accelerators/adapter-siebel/metadata-node-ids1.md)します。  
   
 #### <a name="to-generate-schema-for-siebel-artifacts"></a>Siebel の成果物のスキーマを生成するには  
   
@@ -160,7 +160,7 @@ ms.locfileid: "36991419"
     既定では、名前付け規則で、ファイルが作成"SiebelBindingSchema\<n\>.xsd"ここで、' n ' 1、2、およびでは、作成されたスキーマ ファイルの数によってにすることができます。 または、スキーマ ファイルにカスタム名を提供の名前を入力、**ファイル名のプレフィックス**テキスト ボックス。 [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]名前付け規則で今すぐスキーマ ファイルを作成します\<ファイル名のプレフィックス\>スキーマ\<n\>.xsd。  
   
    > [!NOTE]
-   >  [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]ときに指定されたバインドのプロパティを含むバインド ファイル (XML ファイル) も作成操作と操作を呼び出すための SOAP アクションのスキーマを生成します。 接続 URI、バインドのプロパティを持つ WCF カスタム ポートを作成する BizTalk Server 管理コンソールでこのバインド ファイルをインポートして、SOAP アクションを設定します。 詳細については、[Siebel にポートのバインド ファイルを使用して物理的なポート バインドを構成する](../../adapters-and-accelerators/adapter-siebel/configure-a-physical-port-binding-using-a-port-binding-file-to-siebel.md)を参照してください。  
+   >  [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]ときに指定されたバインドのプロパティを含むバインド ファイル (XML ファイル) も作成操作と操作を呼び出すための SOAP アクションのスキーマを生成します。 接続 URI、バインドのプロパティを持つ WCF カスタム ポートを作成する BizTalk Server 管理コンソールでこのバインド ファイルをインポートして、SOAP アクションを設定します。 詳細については、次を参照してください。 [Siebel にポートのバインド ファイルを使用して物理的なポート バインドを構成する](../../adapters-and-accelerators/adapter-siebel/configure-a-physical-port-binding-using-a-port-binding-file-to-siebel.md)します。  
   
 6. **[ファイル]** メニューの **[すべてを保存]** をクリックします。  
   
@@ -176,7 +176,7 @@ ms.locfileid: "36991419"
 3. **利用可能なカテゴリと操作**ボックスで、ビジネス コンポーネント、ビジネス サービス、またはをクリックして、WCF クライアントを生成する、対応する操作を選択**追加**します。 選択した機能領域または操作に表示されます、**カテゴリと操作を追加**ボックス。 記載されている任意のノードを選択することができます、**利用可能なカテゴリと操作**ボックス。 カテゴリのノードを選択した場合は、すべてのノードとそのサブ ノードで使用可能な操作が選択されます。  
   
    > [!IMPORTANT]
-   >  によって、カテゴリと、選択した操作は、複数の WCF クライアント クラスが生成されます。 詳細については、[WCF クライアントまたは Siebel ソリューションの成果物の WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-siebel/generate-a-wcf-client-or-a-wcf-service-contract-for-siebel-solution-artifacts.md)を参照してください。  
+   >  によって、カテゴリと、選択した操作は、複数の WCF クライアント クラスが生成されます。 詳細については、次を参照してください。 [WCF クライアントまたは Siebel ソリューションの成果物の WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-siebel/generate-a-wcf-client-or-a-wcf-service-contract-for-siebel-solution-artifacts.md)します。  
   
 4. ほとんどのシナリオで、既定のシリアル化オプションで十分です。ただし、必要な場合は、生成されたコードに関するいくつかの側面と使用されるシリアライザーの型を制御できます。 これらのオプションを設定するには  
   
@@ -190,9 +190,9 @@ ms.locfileid: "36991419"
   
       ![高度なオプションが既定の設定をボックス](../../adapters-and-accelerators/adapter-oracle-database/media/r2-net-adapters-oracle-msb-advanced-options.gif "R2_NET_Adapters_Oracle_MSB_Advanced_Options")  
   
-      オプションで構成できる、**詳細オプション**ServiceModel メタデータ ユーティリティ ツール (svcutil.exe) を使用する場合は、ボックスはいくつかの使用可能なオプションに相当します。 これらのオプションの詳細については、[ServiceModel メタデータ ユーティリティ ツール (Svcutil.exe)](https://msdn.microsoft.com/library/aa347733.aspx)を参照してください。
+      オプションで構成できる、**詳細オプション**ServiceModel メタデータ ユーティリティ ツール (svcutil.exe) を使用する場合は、ボックスはいくつかの使用可能なオプションに相当します。 これらのオプションの詳細については、次を参照してください。 [ServiceModel メタデータ ユーティリティ ツール (Svcutil.exe)](https://msdn.microsoft.com/library/aa347733.aspx)します。
   
-5. **[OK]** をクリックします。 [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] WCF クライアントの操作と、プロジェクト ディレクトリに選択したカテゴリのクラスとヘルパー コードを保存します。 既定では、構成ファイルも保存されます。 詳細については、[WCF クライアントまたは Siebel ソリューションの成果物の WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-siebel/generate-a-wcf-client-or-a-wcf-service-contract-for-siebel-solution-artifacts.md)を参照してください。  
+5. **[OK]** をクリックします。 [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] WCF クライアントの操作と、プロジェクト ディレクトリに選択したカテゴリのクラスとヘルパー コードを保存します。 既定では、構成ファイルも保存されます。 詳細については、次を参照してください。 [WCF クライアントまたは Siebel ソリューションの成果物の WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-siebel/generate-a-wcf-client-or-a-wcf-service-contract-for-siebel-solution-artifacts.md)します。  
   
 ## <a name="see-also"></a>参照  
  [Visual Studio で Siebel 操作のメタデータを取得する](../../adapters-and-accelerators/adapter-siebel/get-metadata-for-siebel-operations-in-visual-studio.md)

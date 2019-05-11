@@ -12,17 +12,17 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1cc8174db5193702e512f5f8b01c2a8ecfbeeee5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: cc64165dcdf642e1ce9a0166b4f38c1c229e391f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36988891"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65368235"
 ---
 # <a name="receive-sql-query-notifications-using-biztalk-server"></a>BizTalk Server を使用して SQL クエリ通知を受け取る
 構成することができます、 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] SQL Server テーブルまたはビューの通知メッセージを受信します。 アダプターが SQL Server を使用した通知の登録に使用する SQL ステートメントを指定することができます。 通知のステートメントには、SELECT ステートメントまたはストアド プロシージャを返す結果セットを使用できます。 クエリ通知の詳細についてを参照してください「を使用してクエリ通知」 [ http://go.microsoft.com/fwlink/?LinkId=122159](http://go.microsoft.com/fwlink/?LinkId=122159)します。 クエリ通知の使用できるクエリについてを参照してください「を作成するクエリ通知の」 [ http://go.microsoft.com/fwlink/?LinkId=122160](http://go.microsoft.com/fwlink/?LinkId=122160)します。  
   
- SQL Server からクエリ通知を受信することは、いくつかの主な相違点と、SQL Server をポーリングに似ています。 相違点の一覧で、[に関する考慮事項を受け取るクエリ通知を使用して、SQL アダプター](../../adapters-and-accelerators/adapter-sql/considerations-for-receiving-query-notifications-using-the-sql-adapter.md)を参照してください。  
+ SQL Server からクエリ通知を受信することは、いくつかの主な相違点と、SQL Server をポーリングに似ています。 相違点の一覧で、次を参照してください。[に関する考慮事項を受け取るクエリ通知を使用して、SQL アダプター](../../adapters-and-accelerators/adapter-sql/considerations-for-receiving-query-notifications-using-the-sql-adapter.md)します。  
   
  構成することがいくつかのシナリオを次に、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]で[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]SQL Server から通知を受け取る。  
   
@@ -34,7 +34,7 @@ ms.locfileid: "36988891"
   
   アダプターのクライアントは、通知メッセージを受信、受信した通知の種類に基づいて特定のタスクを実行できます。 たとえばが実行される挿入の通知を受信した場合、タスクの 1 つのセットと別の一連のタスク、更新通知を受信した場合は、このような方法で、BizTalk オーケストレーションを設計できます。  
   
-  このセクションのトピックでは、これらの各シナリオのアダプターを構成する方法に関する情報を提供します。 使用して SQL Server からの通知の取得を開始する、 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]、特定のバインド プロパティを指定する必要があります。 アダプターがメッセージの受信がサポートする方法の詳細については、[に関する考慮事項を受け取るクエリ通知を使用して、SQL アダプター](../../adapters-and-accelerators/adapter-sql/considerations-for-receiving-query-notifications-using-the-sql-adapter.md)を参照してください。 通知に関連するバインド プロパティの詳細については、[for SQL Server のアダプターのバインド プロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md)を参照してください。 通知メッセージの構造の詳細については、[クエリ通知のメッセージ スキーマ](../../adapters-and-accelerators/adapter-sql/message-schemas-for-query-notification.md)を参照してください。  
+  このセクションのトピックでは、これらの各シナリオのアダプターを構成する方法に関する情報を提供します。 使用して SQL Server からの通知の取得を開始する、 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]、特定のバインド プロパティを指定する必要があります。 アダプターがメッセージの受信がサポートする方法の詳細については、次を参照してください。[に関する考慮事項を受け取るクエリ通知を使用して、SQL アダプター](../../adapters-and-accelerators/adapter-sql/considerations-for-receiving-query-notifications-using-the-sql-adapter.md)します。 通知に関連するバインド プロパティの詳細については、次を参照してください。 [for SQL Server のアダプターのバインド プロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md)します。 通知メッセージの構造の詳細については、次を参照してください。[クエリ通知のメッセージ スキーマ](../../adapters-and-accelerators/adapter-sql/message-schemas-for-query-notification.md)します。  
   
   クエリ通知を有効にする SQL Server で、次のタスクを実行することも必要があります。  
   

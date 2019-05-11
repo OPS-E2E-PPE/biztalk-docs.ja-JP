@@ -12,12 +12,12 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 37308bf4f5a1d6bedba061337b2352f198354dd7
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 13d8746a78ffc57fa282abaa8891fda429bb8b86
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36994155"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65370079"
 ---
 # <a name="browse-search-and-get-sql-server-metadata"></a>参照、検索、および SQL Server のメタデータを取得します。
 メタデータを[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]SQL Server データベースからのサーフェスがアダプターを使用して SQL Server データベースと通信するためのメッセージの構造について説明します。 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]メタデータを取得するための 2 つのインターフェイスをサポートしています。  
@@ -29,7 +29,7 @@ ms.locfileid: "36994155"
   [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]サーフェス SQL Server データベースの成果物とそれぞれの操作をアダプターのクライアントが呼び出すことができます。 アダプターでは、SQL Server データベースの特定の操作を実行するために使用できます (ExecuteNonQuery、ExecuteReader、executescalar) などの操作も表示されます。 このトピックの後半では、これらの操作について説明します。  
   
 > [!NOTE]
->  [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]を現在接続しているユーザーへのアクセスを持つ SQL Server データベース内のすべてのスキーマ内のアイテムを表示します。 つまり、こととは別に既定のスキーマ (dbo) では、アダプターのクライアント操作も実行できます成果物に、SQL Server データベースの他のスキーマでユーザーの資格情報を使用して接続するために使用される、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]これらのスキーマにアクセスします。SQL Server データベース。 SQL Server データベース内のスキーマについては、[ http://go.microsoft.com/fwlink/?LinkId=130148](http://go.microsoft.com/fwlink/?LinkId=130148)を参照してください。  
+>  [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]を現在接続しているユーザーへのアクセスを持つ SQL Server データベース内のすべてのスキーマ内のアイテムを表示します。 つまり、こととは別に既定のスキーマ (dbo) では、アダプターのクライアント操作も実行できます成果物に、SQL Server データベースの他のスキーマでユーザーの資格情報を使用して接続するために使用される、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]これらのスキーマにアクセスします。SQL Server データベース。 SQL Server データベース内のスキーマについては、次を参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=130148](http://go.microsoft.com/fwlink/?LinkId=130148)します。  
   
  アダプターのクライアントを使用して、参照、検索、および、メタデータを取得することができます。  
   
@@ -46,13 +46,13 @@ ms.locfileid: "36994155"
   
 - テーブル、ビュー、プロシージャ、スカラー関数、およびテーブル値関数に対する操作。 たとえば、[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]サーフェスの Insert、Update、Select、および従業員テーブルに対する削除操作を可能性があります。  
   
-- セット\<列名\>アダプター クライアント ストリーミング方式で大きなデータ値を書き込むことができるテーブルおよびビューの操作。 設定操作は、これらのテーブルと、次のデータ型の列を含むビューにのみ返されます。 varchar (max)、nvarchar (max) または varbinary (max)。 詳細については、[テーブルと、SQL アダプターを使用して大規模なデータ型を含むビューで操作](../../adapters-and-accelerators/adapter-sql/supported-operations-on-tables-and-views-with-large-data-types-with-sql-adapter.md)を参照してください。  
+- セット\<列名\>アダプター クライアント ストリーミング方式で大きなデータ値を書き込むことができるテーブルおよびビューの操作。 設定操作は、これらのテーブルと、次のデータ型の列を含むビューのみ返されます。Varchar (max)、nvarchar (max) または varbinary (max)。 詳細については、次を参照してください。[テーブルと、SQL アダプターを使用して大規模なデータ型を含むビューで操作](../../adapters-and-accelerators/adapter-sql/supported-operations-on-tables-and-views-with-large-data-types-with-sql-adapter.md)します。  
   
-- SQL Server の任意の SQL ステートメントを実行するアダプターのクライアントを有効にする ExecuteNonQuery、ExecuteReader、executescalar 操作。 これらの操作の詳細については、[ExecuteNonQuery、ExecuteReader、ExecuteScalar 操作のサポート](../../adapters-and-accelerators/adapter-oracle-ebs/support-for-executenonquery-executereader-and-executescalar-operations.md)を参照してください。  
+- SQL Server の任意の SQL ステートメントを実行するアダプターのクライアントを有効にする ExecuteNonQuery、ExecuteReader、executescalar 操作。 これらの操作の詳細については、次を参照してください。 [ExecuteNonQuery、ExecuteReader、ExecuteScalar 操作のサポート](../../adapters-and-accelerators/adapter-oracle-ebs/support-for-executenonquery-executereader-and-executescalar-operations.md)します。  
   
 - SQL Server から受信メッセージを受信するポーリングと通知の操作です。 ポーリング操作については、次を参照してください[受信呼び出しのポーリングを使用してサポート](../../adapters-and-accelerators/adapter-oracle-ebs/support-for-inbound-calls-using-polling.md)通知の操作に関する情報を参照してください。 [SQL 使用クエリ通知の受信に関する考慮事項。アダプター](../../adapters-and-accelerators/adapter-sql/considerations-for-receiving-query-notifications-using-the-sql-adapter.md)します。  
   
-  メタデータの分類方法の詳細については、[メタデータ ノード Id](../../adapters-and-accelerators/adapter-sql/metadata-node-ids2.md)を参照してください。  
+  メタデータの分類方法の詳細については、次を参照してください。[メタデータ ノード Id](../../adapters-and-accelerators/adapter-sql/metadata-node-ids2.md)します。  
   
 ## <a name="searching-metadata"></a>メタデータの検索  
  [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]、LIKE 演算子と互換性がある SQL Server 検索式を使用して、SQL Server データベースの検索クエリを実行することができます。 アダプター クライアントが「EMP %」など、検索式を使用するなど、以降では、EMP テーブルを取得します。 アダプターは、SQL クエリを次に、これを変換します。  

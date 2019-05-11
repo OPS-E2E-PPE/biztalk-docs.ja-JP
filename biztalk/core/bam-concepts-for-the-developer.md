@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9fc6d74eb8b14479776febea1530e142e6897729
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ec027ef80ebaa9f1c8954e09722156a48c843a70
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36967451"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65358613"
 ---
 # <a name="bam-concepts-for-the-developer"></a>開発者のための BAM 概念
 BAM 開発者は、アクティビティ、Continuation、参照など重要な BAM 概念を十分に理解する必要があります。 また、追跡とトランザクション処理の違いについても理解する必要があります。  
@@ -40,7 +40,7 @@ BAM 開発者は、アクティビティ、Continuation、参照など重要な 
   
 - イベント項目が関連付けられている一意 ID が変更された場合の処理方法  
   
-  継続タスクとその使用方法の詳細については、[Continuation ノードと ContinuationID ノード](../core/continuation-and-continuationid-nodes.md)を参照してください。  
+  継続タスクとその使用方法の詳細については、次を参照してください。 [Continuation ノードと ContinuationID ノード](../core/continuation-and-continuationid-nodes.md)します。  
   
 ## <a name="what-is-a-reference"></a>参照について  
  参照 (関連アクティビティとも呼びます) は、アクティビティと他の項目間の関係を指定します。 関連付けることができる項目には、別のアクティビティやドキュメントの場所などがあります。  

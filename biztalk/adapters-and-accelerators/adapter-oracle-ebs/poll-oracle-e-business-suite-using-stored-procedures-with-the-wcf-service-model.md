@@ -12,17 +12,17 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c2d01bcfd2b004042ce69f4843bb9ae7bb2f323f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2938d8057f4ca7a1239d7bc050333bb8d800912d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37007411"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65374973"
 ---
 # <a name="poll-oracle-e-business-suite-using-stored-procedures-with-the-wcf-service-model"></a>ストアド プロシージャを使用して WCF サービス モデルとポーリング Oracle E-business Suite
 構成することができます、 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] Oracle データベースを定期的にポーリングするストアド プロシージャを使用して、定期的なデータ変更メッセージを受信します。 ストアド プロシージャは、Oracle データベースをポーリングするアダプターを定期的に実行するポーリング ステートメントとして指定できます。  
 
- ポーリングを有効にする、このトピックの説明に従って、特定のバインド プロパティの条件を指定する必要があります。  アダプターがポーリングをサポートする方法の詳細については、[受信呼び出しのポーリングを使用してサポート](../../adapters-and-accelerators/adapter-oracle-ebs/support-for-inbound-calls-using-polling.md)を参照してください。  
+ ポーリングを有効にする、このトピックの説明に従って、特定のバインド プロパティの条件を指定する必要があります。  アダプターがポーリングをサポートする方法の詳細については、次を参照してください。[受信呼び出しのポーリングを使用してサポート](../../adapters-and-accelerators/adapter-oracle-ebs/support-for-inbound-calls-using-polling.md)します。  
 
 ## <a name="configuring-a-polling-operation-with-oracle-e-business-adapter-binding-properties"></a>Oracle E-business アダプターのバインドのプロパティをポーリング操作を構成します。  
  次の表にまとめたものです、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]バインドのプロパティのデータ変更メッセージを受信するアダプターを構成するために使用します。 ポーリング アプリケーションを実行中に、これらのバインドのプロパティを指定する必要があります。  
@@ -38,7 +38,7 @@ ms.locfileid: "37007411"
 |      **PostPollStatement**       |                                                                                                                                                                                                            指定されたステートメントの後に実行されるステートメント ブロックを指定します、 **PollingInput**プロパティのバインドを実行します。                                                                                                                                                                                                             |
 |      **PollWhileDataFound**      |                                                                               指定するかどうか、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]ポーリング間隔を無視し、継続的にデータがポーリングされるテーブルで使用できる場合に、ポーリング ステートメントを実行します。 テーブルのデータがない場合は、アダプターは、指定されたポーリング間隔でポーリング ステートメントを実行する元に戻します。 既定値は false です。                                                                               |
 
- これらのプロパティの詳細については、[Oracle E-business Suite バインド プロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-oracle-ebs/read-about-the-biztalk-adapter-for-oracle-e-business-suite-binding-properties.md)を参照してください。 使用する方法の詳細については、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]をポーリングするには、次のセクションを参照しています。  
+ これらのプロパティの詳細については、次を参照してください。 [Oracle E-business Suite バインド プロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-oracle-ebs/read-about-the-biztalk-adapter-for-oracle-e-business-suite-binding-properties.md)します。 使用する方法の詳細については、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]をポーリングするには、次のセクションを参照しています。  
 
 ## <a name="how-this-topic-demonstrates-polling"></a>このトピックでポーリングしていますか  
  示すために、このトピックでどのように[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]データの変更、GET_ACTIVITYS を使用するストアド プロシージャを使用して、メッセージの受信をサポートには、Oracle データベースで ACCOUNTACTIVITY テーブルをポーリングするプロシージャが格納されています。 このストアド プロシージャは ACCOUNT_PKG パッケージで使用できます。 データベースでこれらのオブジェクトを作成するサンプルに付属の SQL スクリプトを実行することができます。  
@@ -72,10 +72,10 @@ ms.locfileid: "37007411"
 - サービス ホストを使用してこの WCF サービス ホスト (**System.ServiceModel.ServiceHost**)。  
 
 ## <a name="about-the-examples-used-in-this-topic"></a>このトピックで使用する例について  
- このトピックでのポーリング、GET_ACTIVITYS を使用して ACCOUNTACTIVITY データベース テーブルの例はストアド プロシージャです。 テーブルとストアド プロシージャを生成するスクリプトは、サンプルで提供されます。 サンプルの詳細については、[Oracle EBS アダプター用のサンプル](../../adapters-and-accelerators/adapter-oracle-ebs/samples-for-the-oracle-ebs-adapter.md)を参照してください。 サンプルについては、 **StoredProcPolling_ServiceModel**、これは、このトピックに基づいてがで提供されていることも、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]サンプル。  
+ このトピックでのポーリング、GET_ACTIVITYS を使用して ACCOUNTACTIVITY データベース テーブルの例はストアド プロシージャです。 テーブルとストアド プロシージャを生成するスクリプトは、サンプルで提供されます。 サンプルの詳細については、次を参照してください。 [Oracle EBS アダプター用のサンプル](../../adapters-and-accelerators/adapter-oracle-ebs/samples-for-the-oracle-ebs-adapter.md)します。 サンプルについては、 **StoredProcPolling_ServiceModel**、これは、このトピックに基づいてがで提供されていることも、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]サンプル。  
 
 ## <a name="the-wcf-service-contract-and-class"></a>WCF サービス コントラクトとクラス  
- 使用することができます、 [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] WCF サービス コントラクト (インターフェイス) とサポートのクラスを作成する、 **GET_ACTIVITYS**操作を受信します。 WCF サービス コントラクトを生成する詳細については、[WCF クライアントまたは Oracle E-business Suite ソリューションの成果物の WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-oracle-ebs/create-a-wcf-client-or-wcf-service-contract-for-oracle-ebs-solution-artifacts.md)を参照してください。  
+ 使用することができます、 [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] WCF サービス コントラクト (インターフェイス) とサポートのクラスを作成する、 **GET_ACTIVITYS**操作を受信します。 WCF サービス コントラクトを生成する詳細については、次を参照してください。 [WCF クライアントまたは Oracle E-business Suite ソリューションの成果物の WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-oracle-ebs/create-a-wcf-client-or-wcf-service-contract-for-oracle-ebs-solution-artifacts.md)します。  
 
 ### <a name="the-wcf-service-contract-interface"></a>WCF サービス コントラクト (インターフェイス)  
  次のコードに対して生成された WCF サービス コントラクト (インターフェイス) を示しています、 **GET_ACTIVITYS**操作を受信します。  
@@ -137,7 +137,7 @@ namespace OracleEBSBindingNamespace {
 
 #### <a name="to-receive-polling-messages-using-a-stored-procedure"></a>ストアド プロシージャを使用してポーリング メッセージを受信するには  
 
-1. 使用して、 [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] WCF サービス コントラクト (インターフェイス) とのヘルパー クラスを生成する、 **GET_ACTIVITYS**操作を受信します。 詳細については、[WCF クライアントまたは Oracle E-business Suite ソリューションの成果物の WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-oracle-ebs/create-a-wcf-client-or-wcf-service-contract-for-oracle-ebs-solution-artifacts.md)を参照してください。 必要に応じて、サービス コントラクトとヘルパー クラスを生成するときにバインドのプロパティを指定することができます。 これは、生成された構成ファイルで設定は正しくことを保証します。  
+1. 使用して、 [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] WCF サービス コントラクト (インターフェイス) とのヘルパー クラスを生成する、 **GET_ACTIVITYS**操作を受信します。 詳細については、次を参照してください。 [WCF クライアントまたは Oracle E-business Suite ソリューションの成果物の WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-oracle-ebs/create-a-wcf-client-or-wcf-service-contract-for-oracle-ebs-solution-artifacts.md)します。 必要に応じて、サービス コントラクトとヘルパー クラスを生成するときにバインドのプロパティを指定することができます。 これは、生成された構成ファイルで設定は正しくことを保証します。  
 
 2. 手順 1. で生成されたインターフェイスとヘルパー クラスからの WCF サービスを実装します。 **GET_ACTIVITYS**から受信したデータの処理エラーが発生した場合、このクラスのメソッドは、ポーリング トランザクションを中止する例外をスローできます、 **GET_ACTIVITYS**操作です。メソッドは何も返しません。 次のように、WCF サービス クラスを属性する必要があります。  
 
@@ -212,7 +212,7 @@ namespace OracleEBSBindingNamespace {
    >  注意の値、 **PollingInput**を呼び出すための要求メッセージにはプロパティのバインドが含まれています、 **GET_ACTIVITYS**送信操作としてストアド プロシージャ。  
 
    > [!IMPORTANT]
-   >  この例ではデータベース テーブルをポーリングするため必要はありませんアプリケーション コンテキストを設定します。 ただし場合は、インターフェイス テーブルをポーリングする必要がありますコンテキストを設定するアプリケーションを指定して、 **OracleUserName**、 **OraclePassword**、および**OracleEBSResponsibilityName**プロパティをバインドします。 アプリケーションのコンテキストの詳細については、[アプリケーション コンテキストの設定](../../adapters-and-accelerators/adapter-oracle-ebs/set-application-context.md)を参照してください。  
+   >  この例ではデータベース テーブルをポーリングするため必要はありませんアプリケーション コンテキストを設定します。 ただし場合は、インターフェイス テーブルをポーリングする必要がありますコンテキストを設定するアプリケーションを指定して、 **OracleUserName**、 **OraclePassword**、および**OracleEBSResponsibilityName**プロパティをバインドします。 アプリケーションのコンテキストの詳細については、次を参照してください。[アプリケーション コンテキストの設定](../../adapters-and-accelerators/adapter-oracle-ebs/set-application-context.md)します。  
 
 5. Oracle E-business Suite の資格情報を指定するには、インスタンス化する、 **PollingCredentials**手順 3 で作成したクラス。  
 

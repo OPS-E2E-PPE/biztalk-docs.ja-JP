@@ -13,31 +13,31 @@ caps.latest.revision: 23
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a5dc386b29a2b6070a50570080697d2a54ed537b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7f33d291893fe46cae5a083adf96a52da8e848b6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37009459"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395579"
 ---
 # <a name="samples-in-the-sdk"></a>SDK 内のサンプル
 
 ## <a name="folder-paths"></a>フォルダーのパス
-このセクションでは、Microsoft では含まれている 30 以上のサンプルをについて説明します[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ソフトウェア開発キット (SDK)。 ここでは、サンプルの構築手順、実行方法、および予想される実行結果など、各サンプルについて詳しく説明します。  
+このセクションでは、Microsoft では含まれている 30 以上のサンプルをについて説明します[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ソフトウェア開発キット (SDK)。 サンプル、これを実行する方法、および期待する結果を構築するための手順を含む、各サンプルについて詳しく説明します。  
 
- サンプル ドキュメント パスの省略形を使用して\<*サンプル パス*\>をサンプルのインストールへのパスを示すためにします。 パスの既定値は、インストール時の判断によって変わる可能性があります。 次の表に、一般的なインストール シナリオの既定のパスを示します。  
+ サンプル ドキュメント パスの省略形を使用して\<*サンプル パス*\>をサンプルのインストールへのパスを示すためにします。 パスの既定値は、インストール中に行われた決定によって異なります。 次の表は、一般的なインストール シナリオの既定のパスを提供します。  
 
 
-|            説明             |                                            [パス]                                            |
+|            説明             |                                            パス                                            |
 |------------------------------------|--------------------------------------------------------------------------------------------|
 |  32 ビット プラットフォームでのインストール   |    [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]\SDK\Samples    |
-| 64 ビット プラットフォームでのインストール | [!INCLUDE[btsBizTalkServerPathx64](../includes/btsbiztalkserverpathx64-md.md)]\SDK\Samples |
+| 64 ビット プラットフォームでインストールします。 | [!INCLUDE[btsBizTalkServerPathx64](../includes/btsbiztalkserverpathx64-md.md)]\SDK\Samples |
 
 > [!IMPORTANT]
->  説明を簡略化するために、この SDK 内のサンプル、およびこのドキュメントでは、単一のコンピューターに、開発者向けに BizTalk Server がインストールされた状態を前提としています。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の完全インストールを実行していない場合は、一部のサンプルが正常に機能しないことがあります。  
+>  わかりやすく、サンプルでは、この SDK では、およびこのドキュメントでは、1 台のコンピューター開発者向けに BizTalk Server のインストールを使用していることを想定しています。 完全なインストールを実行していない場合[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]、一部のサンプルが正常に動作しない可能性があります。  
 > 
 > [!NOTE]
->  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] SDK のすべての項目は、英語で示されており、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の英語版インストールについてのみサポートされています。  
+>  すべての[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]SDK 項目は、英語で提供され、英語版のインストールについてのみサポートされます[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]します。  
 
 ## <a name="available-samples"></a>使用可能なサンプル 
 

@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9ad584571f7ef746a43032935e42e377ceb6cd70
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6e82d749bc14df07fe5fa282ed9289c0150504ce
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37012619"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65371765"
 ---
 # <a name="dbdatareader-class-in-the-siebel-adapter"></a>Siebel アダプターの DbDataReader クラス
 [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]提供、 `DbDataReader` XML データ リーダーを活用することです。 これは、Siebel データ ソースのコンシューマーに、行の順方向専用ストリームを読み取る機能を提供します。  
@@ -28,7 +28,7 @@ ms.locfileid: "37012619"
 ## <a name="supported-properties"></a>サポートされているプロパティ  
  [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]は、次をサポート`DbDataReader`プロパティ。  
 
-|名前|取得/設定|説明|  
+|名前|Get/Set|説明|  
 |----------|--------------|-----------------|  
 |**HasRows**|取得|このプロパティはサポートされていません、アクセスする場合は例外がスローされます。|  
 |**IsClosed**|取得|示す値を取得するかどうか、`DbDataReader`が閉じられました。|  
@@ -42,13 +42,13 @@ ms.locfileid: "37012619"
 
 |        名前        |                                                                                                                                                                                                                            説明                                                                                                                                                                                                                             |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **GetSchemaTable** | `DbDataReader` の列メタデータを表す `DataTable` を返します。 によってサポートされるスキーマの列属性、[!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]は。<br /><br /> -ColumnName<br />-ColumnOrdinal<br />.NET データ型<br />長さ<br />-有効桁数 (該当する場合)<br />-スケール (該当する場合)<br />-AllowDBNull<br />-LocalName<br />-拡張 LocalName<br />-Namespace |
-|   **GetString**    |                                                                                                                                                                                                 指定した列の値を `String` のインスタンスとして取得します。                                                                                                                                                                                                 |
-|    **GetValue**    |                                                                                                                                                                                                 指定した列の値を `String` のインスタンスとして取得します。                                                                                                                                                                                                 |
-|    **データ型**    |                                                                                                                                                                                       列に存在しないか、不足している値が含まれるかどうかを示す値を取得します。                                                                                                                                                                                       |
+| **GetSchemaTable** | 返します、`DataTable`の列のメタデータを記述する、`DbDataReader`します。 によってサポートされるスキーマの列属性、[!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]は。<br /><br /> -ColumnName<br />-   ColumnOrdinal<br />-   .NET DataType<br />長さ<br />-有効桁数 (該当する場合)<br />-スケール (該当する場合)<br />-   AllowDBNull<br />-   LocalName<br />-   Extended LocalName<br />-Namespace |
+|   **GetString**    |                                                                                                                                                                                                 インスタンスとして指定された列の値を取得`String`します。                                                                                                                                                                                                 |
+|    **GetValue**    |                                                                                                                                                                                                 インスタンスとして指定された列の値を取得`String`します。                                                                                                                                                                                                 |
+|    **isDbNull**    |                                                                                                                                                                                       列に存在しないか、不足している値が含まれるかどうかを示す値を取得します。                                                                                                                                                                                       |
 |   **NextResult**   |                                                                                                                                                           Siebel データ プロバイダーは常に、1 つの結果セットを返しますそのためこの呼び出しは、現在の結果セットを返す前に完全を達した**false**します。                                                                                                                                                           |
-|      **読み取り**      |                                                                                                                                                         リーダーを結果セットの次のレコードに進めます。  返されます**true**成功した場合と**false**左レコードを持つ読者場合。                                                                                                                                                         |
-|     **Close**      |                                                                                                         閉じる、`DbDataReader`オブジェクト。 **注意:** したらを使用して、`DbDataReader`オブジェクト、Siebel の COM ライブラリのオブジェクトを解放するために、それを閉じる必要があります。 それ以外の場合、クライアント アプリケーションのメモリやハンドルの使用状況参照してください。                                                                                                          |
+|      **読み取り**      |                                                                                                                                                         結果セット内の次のレコードにリーダーを進めます。  返されます**true**成功した場合と**false**左レコードを持つ読者場合。                                                                                                                                                         |
+|     **Close**      |                                                                                                         閉じる、`DbDataReader`オブジェクト。 **注意が必要です。** 完了したらを使用して、`DbDataReader`オブジェクト、Siebel の COM ライブラリのオブジェクトを解放するために、それを閉じる必要があります。 それ以外の場合、クライアント アプリケーションのメモリやハンドルの使用状況参照してください。                                                                                                          |
 
 ## <a name="see-also"></a>参照  
  [Siebel アダプターを使用した ADO.NET インターフェイスを拡張します。](../../adapters-and-accelerators/adapter-siebel/extend-ado-net-interfaces-with-the-siebel-adapter.md)

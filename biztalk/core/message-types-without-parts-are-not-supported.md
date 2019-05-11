@@ -12,14 +12,14 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 60bb78e2bbf06ff80315bd9bbc2b33346ed18d5d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7ef2ef118aab93f10d766aeaf34af74a23908822
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37024168"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65394535"
 ---
-# <a name="message-types-without-parts-are-not-supported"></a>部分が空のメッセージの種類はサポートされていません
+# <a name="message-types-without-parts-are-not-supported"></a>メッセージの種類の部分はサポートされていません
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                                                           |
@@ -30,12 +30,12 @@ ms.locfileid: "37024168"
 |  イベント ソース   |                                                             0                                                             |
 |    コンポーネント    |                                                             0                                                             |
 |  シンボル名  |                                                             0                                                             |
-|  メッセージ テキスト   | 部分が空のメッセージの種類はサポートされていません。 サービスの説明を修正"{0}「メッセージの種類」{1}"、ウィザードを再度実行します。 |
+|  メッセージ テキスト   | メッセージの種類の部分は、サポートされていません。 サービスの説明を修正"{0}「メッセージの種類」{1}"、ウィザードを再度実行します。 |
   
 ## <a name="explanation"></a>説明  
- このエラーは、使用するサービスに、メッセージの種類が定義されていないことを示します。  
+ このエラーは、使用しようとするサービスに定義されているメッセージ型がないことを示します。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- サービスを適切なメッセージの種類に修正し、使用します (使用しようとしている WCF サービスを所有している場合)。 それ以外の場合は、サービス プロバイダーに問い合わせてください。  メッセージの詳細についてで、次のリソースを参照してください、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプします。  
+ 適切なメッセージの種類、サービスを修正して、(使用しようとしている WCF サービスを所有) 場合に使用する再試行してください。 それ以外の場合、サービス プロバイダーに問い合わせてください。  メッセージの詳細についてで、次のリソースを参照してください、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプします。  
   
 -   [Web メッセージの構築](../core/constructing-web-messages.md)

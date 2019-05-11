@@ -15,12 +15,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5e457ec1eb3b3c79ef1fc1a4618bb6a0ef37755d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3006aef526f00a0bed59bca69e39c9a748a05037
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36981971"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65371953"
 ---
 # <a name="building-blocks-to-create-biztalk-applications-with-the-siebel-adapter"></a>Siebel アダプターを使用した BizTalk アプリケーションを作成する構成要素
 Siebel システムを使用して操作を実行する[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]アクティビティの 2 つのセットが含まれます: デザイン時および実行時のアクティビティ。 使用して Siebel システムの操作を実行する、[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]で[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]を使用して、デザイン時および実行時のタスクのセットを実行する必要があります[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]と[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールでそれぞれします。 このセクションでは、これらのタスクの概要を示します。 このセクションでを使用して Siebel システムに対して特定の操作を実行する方法を示すすべてのトピック[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]、これらの高度なタスクをモデル化されます。  
@@ -28,7 +28,7 @@ Siebel システムを使用して操作を実行する[!INCLUDE[adaptersiebel_s
 ## <a name="design-time-tasks"></a>デザイン時のタスク  
  [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]参照、検索、および Siebel ビジネス コンポーネントとビジネス サービスを使用して XML スキーマ定義言語 (Xsd) の形式でメタデータを取得する機能を提供、[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]または[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]します。 Xsd は、Siebel システムで実行する操作に固有と[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]または[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]は BizTalk プロジェクトを作成する場合にのみ使用できます。 デザイン時に、次のタスクを実行する必要があります。  
   
-- **BizTalk プロジェクトを作成し、スキーマ生成**します。 最初に、Microsoft で BizTalk プロジェクトを作成する必要があります[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]とビジネス コンポーネントまたは Siebel システムで呼び出すことがビジネス サービスのスキーマを生成します。 たとえば、アカウントのビジネス コンポーネントにレコードを挿入する場合は、アカウント ビジネス コンポーネントの挿入操作のメタデータを生成する必要があります。 この手順で使用して、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]または[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]スキーマを生成します。 詳細については、[Visual Studio で Siebel 操作のメタデータの取得](../../adapters-and-accelerators/adapter-siebel/get-metadata-for-siebel-operations-in-visual-studio.md)を参照してください。  
+- **BizTalk プロジェクトを作成し、スキーマ生成**します。 最初に、Microsoft で BizTalk プロジェクトを作成する必要があります[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]とビジネス コンポーネントまたは Siebel システムで呼び出すことがビジネス サービスのスキーマを生成します。 たとえば、アカウントのビジネス コンポーネントにレコードを挿入する場合は、アカウント ビジネス コンポーネントの挿入操作のメタデータを生成する必要があります。 この手順で使用して、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]または[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]スキーマを生成します。 詳細については、次を参照してください。 [Visual Studio で Siebel 操作のメタデータの取得](../../adapters-and-accelerators/adapter-siebel/get-metadata-for-siebel-operations-in-visual-studio.md)します。  
   
 - **オーケストレーションを設定**します。 スキーマを生成した後、オーケストレーション デザイナーを使用してオーケストレーションを設定する必要があります。 基本的なオーケストレーションには、受信と送信図形とし、受信論理ポートの送信を追加します。 後の手順では、BizTalk Server 管理コンソールを使用してこれらの論理ポートを物理ポートにマップします。 オーケストレーションでは、これらのポートを使用して、クライアントがアダプターによって送信されたメッセージを取得します。 オーケストレーションは、Siebel システムへのメッセージを渡します。 Siebel システムからの応答が受信されると、オーケストレーションは、アダプターのクライアントへの応答を渡します。  
   

@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7233c5d5f5a3669cf23931afc29dfaac8548dc3d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e1a393fc6df4674cd34e0b9131950b06e1a720ae
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37022088"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395912"
 ---
 # <a name="message-routing-patterns"></a>メッセージのルーティング パターン
 メッセージのルーティング パターンでは、メッセージをそのターゲット エンドポイントにルーティングするための実証済みのガイドラインを定義します。 静的構成の結果であることができますルーティングまたは動的に構成できるさまざまな条件とさまざまなメソッドを使用してに基づいています。  
@@ -37,9 +37,9 @@ ms.locfileid: "37022088"
   
   このパターンの実装の例については、 [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]、次のリソースを参照してください。  
   
-- [方法: UDDI バインド キー検索を利用し、サービス エンドポイントを解決する](../esb-toolkit/how-to-resolve-a-service-endpoint-using-a-uddi-binding-key-search.md)  
+- [方法: UDDI バインド キー検索を使用してサービス エンドポイントを解決するには](../esb-toolkit/how-to-resolve-a-service-endpoint-using-a-uddi-binding-key-search.md)  
   
-- [方法: UDDI カテゴリ検索を利用し、サービス エンドポイントを解決する](../esb-toolkit/how-to-resolve-a-service-endpoint-using-a-uddi-category-search.md)  
+- [方法: UDDI カテゴリ検索を使用してサービス エンドポイントを解決するには](../esb-toolkit/how-to-resolve-a-service-endpoint-using-a-uddi-category-search.md)  
   
 ## <a name="content-based-router"></a>コンテンツ ベースのルーター  
  コンテンツ ベースのルーター パターンは、メッセージの内容に基づいてメッセージの受信者を決定します。 このパターンの詳細については、次を参照してください。[コンテンツ ベースのルーター](http://go.microsoft.com/fwlink/?LinkId=186839) ([http://go.microsoft.com/fwlink/?LinkId=186839](http://go.microsoft.com/fwlink/?LinkId=186839))、エンタープライズ統合パターン サイト。  
@@ -69,9 +69,9 @@ ms.locfileid: "37022088"
   
 - [スケジュール オンランプ サンプルをインストールし、実行する](../esb-toolkit/installing-and-running-the-itinerary-on-ramp-sample.md)  
   
-- [方法: 既知のメッセージ タイプに関するビジネス ルール ポリシーを利用し、コンテンツベースのルーティングを実装する](../esb-toolkit/apply-content-based-routing-using-business-rules-policy-for-known-message-type.md)  
+- [方法: コンテンツ ベース ルーティング ポリシーを使用してビジネス ルールの既知のメッセージの種類の実装します。](../esb-toolkit/apply-content-based-routing-using-business-rules-policy-for-known-message-type.md)  
   
-- [方法: ビジネス ルール ポリシーを利用し、メッセージ コンテキストに基づき、メッセージの経路を動的に決定する](../esb-toolkit/dynamically-route-messages-based-on-message-context-using-business-rules-policy.md)  
+- [方法: ビジネス ルール ポリシーを使用してメッセージのコンテキストに基づいてメッセージを動的にルーティングします。](../esb-toolkit/dynamically-route-messages-based-on-message-context-using-business-rules-policy.md)  
   
 ## <a name="routing-slip"></a>回覧  
  ルーティング スリップ パターンでは、一連のデザイン時に認識されていない可能性があります、事前定義された順序でコンポーネントをメッセージをルーティングする必要がありますシナリオについて説明します。 このパターンの詳細については、次を参照してください。[回覧用紙](http://go.microsoft.com/fwlink/?LinkId=186840)([http://go.microsoft.com/fwlink/?LinkId=186840](http://go.microsoft.com/fwlink/?LinkId=186840))、エンタープライズ統合パターン サイト。  
@@ -86,9 +86,9 @@ ms.locfileid: "37022088"
   
   このパターンの実装の詳細については、次のリソースを参照してください。  
   
-- [方法: ビジネス ルール ポリシーを使用して、日程を選択](../esb-toolkit/how-to-select-an-itinerary-using-a-business-rules-policy.md)  
+- [方法: ビジネス ルール ポリシーを使用するスケジュールを選択します。](../esb-toolkit/how-to-select-an-itinerary-using-a-business-rules-policy.md)  
   
-- [方法: メッセージを変換し、スケジュール ルーティング スリップを利用してファイルの場所に送信する](../esb-toolkit/transform-message-and-route-the-message-to-a-location-using-itinerary-routing.md)  
+- [方法: メッセージを変換し、スケジュール ルーティング スリップを使用してファイルの場所に、結果のメッセージをルーティング](../esb-toolkit/transform-message-and-route-the-message-to-a-location-using-itinerary-routing.md)  
   
   > [!NOTE]
   >  前述のシナリオだけでなく、カスタム スケジュール オンランプ競合回避モジュールとスケジュールのルーティング サービスを開発できます。 旅行プラン デザイナーでカスタム スケジュール サービスとして使用するためのデザイナーのエクステンダーを作成を検討することがあります。  
@@ -111,9 +111,9 @@ ms.locfileid: "37022088"
   
   スケジュールのルーティング サービスに関連付けられている競合回避モジュールは、メッセージの内容に基づいてメッセージの受信者を決定します。 によって提供される競合回避モジュールのセットを選択することができます、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]このシナリオを実装します。 このパターンの実装の詳細については、次のリソースを参照してください。  
   
-- [方法: スケジュール ルーティング スリップを利用し、1 つのメッセージを複数の受信者に送信する](../esb-toolkit/route-a-single-message-to-multiple-recipients-using-an-itinerary-routing-slip.md)  
+- [方法: 1 つのメッセージをスケジュール ルーティング スリップを使用して複数の受信者にルーティングします。](../esb-toolkit/route-a-single-message-to-multiple-recipients-using-an-itinerary-routing-slip.md)  
   
-## <a name="splitter"></a>スプリッター  
+## <a name="splitter"></a>分割線  
  分割パターンは、1 つのメッセージは、複数のメッセージに分割する必要がある場合、問題を解決します。 このパターンの詳細については、次を参照してください。[スプリッター](http://go.microsoft.com/fwlink/?LinkId=186843) ([http://go.microsoft.com/fwlink/?LinkId=186843](http://go.microsoft.com/fwlink/?LinkId=186843))、エンタープライズ統合パターン サイト。 このパターンの実装の詳細については、次のリソースを参照してください。  
   
--   [方法: 別個のスケジュールを利用し、インターチェンジを分割して結果的に生成されたメッセージを複数のファイルの場所に送る](../esb-toolkit/split-an-interchange-and-route-messages-to-multiple-locations-using-itineraries.md)
+-   [方法: インターチェンジを分割し、個別のスケジュールを使用して複数のファイルの場所に作成されるメッセージをルーティング](../esb-toolkit/split-an-interchange-and-route-messages-to-multiple-locations-using-itineraries.md)

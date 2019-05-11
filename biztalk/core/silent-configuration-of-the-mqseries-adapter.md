@@ -1,5 +1,5 @@
 ---
-title: MQSeries アダプタのサイレント構成 |Microsoft ドキュメント
+title: MQSeries アダプターのサイレント構成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,18 +16,18 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d79395aff88bc71853922bd3dd0d305d6783cee7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3b7dc77a087bff55c4f5dce81c8850e1d0b5009d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22269546"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65393164"
 ---
-# <a name="silent-configuration-of-the-mqseries-adapter"></a>MQSeries アダプタのサイレント構成
-コマンド ラインから MQSAgent COM+ 構成ウィザードを使用して、サイレント構成を実行できます。 ウィザードのコマンド ライン バージョンを使用して、MQSAgent を削除することもできます。 このウィザードでは、XML ファイルから構成情報を読み取ります。  
+# <a name="silent-configuration-of-the-mqseries-adapter"></a>MQSeries アダプターのサイレント構成
+MQSAgent COM + 構成ウィザードをコマンド ラインを使用して、サイレント構成を実行することができます。 MQSAgent を削除するのにコマンド ライン バージョンのウィザードを使用することもできます。 ウィザードでは、XML ファイルから構成情報を読み取ります。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [MQSeries アダプタ用コマンドライン構成ウィザード](../core/command-line-configuration-wizard-for-the-mqseries-adapter.md)  
+-   [MQSeries アダプター用コマンド ライン構成ウィザード](../core/command-line-configuration-wizard-for-the-mqseries-adapter.md)  
   
--   [MQSeries アダプターの XML 構成ファイル](../core/xml-configuration-file-for-the-mqseries-adapter.md)
+-   [MQSeries アダプター用の XML 構成ファイル](../core/xml-configuration-file-for-the-mqseries-adapter.md)

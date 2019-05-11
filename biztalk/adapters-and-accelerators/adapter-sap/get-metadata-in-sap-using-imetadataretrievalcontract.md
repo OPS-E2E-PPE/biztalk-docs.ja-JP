@@ -17,12 +17,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d9ff0828635b16cfc94d134f17e5210a255e862a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 20050b397f52589221857953fdb857c3f1837a24
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37007467"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373377"
 ---
 # <a name="get-metadata-in-sap-using-imetadataretrievalcontract"></a>IMetadataRetrievalContract を使用して sap メタデータを取得します。
 [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]公開、 **IMetadataRetrievalContract**SAP システムのアイテムを検索および参照して、Web サービス記述言語 (WSDL) ドキュメントの形式でメタデータを取得するを使用するエンドポイント操作です。  
@@ -50,7 +50,7 @@ ms.locfileid: "37007467"
   
 - **カテゴリ ノード**アダプターでの操作に SAP アイテムと直接対応しない SAP アイテムのグループを表します。 カテゴリのノードは、ツリーの分岐その他のカテゴリ ノードやノードの操作が含まれます。 たとえば、RFC 機能グループまたは SAP ビジネス オブジェクトは、カテゴリのノードとして表されます。  
   
-  アダプター メタデータの各ノードは、一意のノード ID によって識別されます。 メタデータ ノード Id のアダプターの詳細については、[メタデータ ノード Id](../../adapters-and-accelerators/adapter-sap/metadata-node-ids4.md)を参照してください。 これらのノード Id を使用して、使用するときに、SAP アイテムのターゲットを指定する、 **IMetadataRetrievalContract**参照、検索、およびメタデータを取得するインターフェイス。 定義された定数を使用する`Microsoft.Adapters.SAP.SAPAdapterConstants.MetadataConstants`と`Microsoft.Adapters.SAP.SAPAdapterConstants.ActionConstants`メタデータ ノード Id を作成するお手伝いをします。  
+  アダプター メタデータの各ノードは、一意のノード ID によって識別されます。 メタデータ ノード Id のアダプターの詳細については、次を参照してください。[メタデータ ノード Id](../../adapters-and-accelerators/adapter-sap/metadata-node-ids4.md)します。 これらのノード Id を使用して、使用するときに、SAP アイテムのターゲットを指定する、 **IMetadataRetrievalContract**参照、検索、およびメタデータを取得するインターフェイス。 定義された定数を使用する`Microsoft.Adapters.SAP.SAPAdapterConstants.MetadataConstants`と`Microsoft.Adapters.SAP.SAPAdapterConstants.ActionConstants`メタデータ ノード Id を作成するお手伝いをします。  
   
 ### <a name="binding-properties"></a>バインドのプロパティ  
  使用するかどうか、 **IMetadataRetrievalContract**チャネルまたは**IMetadataRetrievalClient**メタデータを使用することを指定する必要があります、 **SAPBinding**を作成すると、インスタンス。  
@@ -59,13 +59,13 @@ ms.locfileid: "37007467"
   
 - **GenerateFlatfileCompatibleIdocSchema**  
   
-- **receiveIDocFormat**  
+- **ReceiveIDocFormat**  
   
 - **EnableSafeTyping**  
   
-- **flatFileSegmentIndicator**  
+- **FlatFileSegmentIndicator**  
   
-  これらのバインドのプロパティがメタデータの取得オブジェクトを開く前に、アプリケーションに必要な値に設定されているを確認してください。 SAP アダプターのバインド プロパティの詳細については、[mySAP Business Suite バインド プロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md)を参照してください。  
+  これらのバインドのプロパティがメタデータの取得オブジェクトを開く前に、アプリケーションに必要な値に設定されているを確認してください。 SAP アダプターのバインド プロパティの詳細については、次を参照してください。 [mySAP Business Suite バインド プロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md)します。  
   
 ### <a name="browsing-metadata-nodes"></a>メタデータのノードを参照  
  使用する、**参照**を親ノードに含まれているすべてのメタデータのノードを返すメソッド。 次の例は、SAP システムでは、最初の 3 つの RFC 機能グループの参照します。 この例で**クライアント**のインスタンスである**MetadataRetrievalClient**します。  
@@ -91,7 +91,7 @@ IMetadataRetrievalNode[] nodes = client.Search(Microsoft.Adapters.SAP.SAPAdapter
 ```  
   
 > [!IMPORTANT]
->  検索は限られた一連のノードでのみサポートします。 検索式でサポートされているワイルドカード文字および検索がサポートされているノードに関する詳細については、[メタデータ ノード Id](../../adapters-and-accelerators/adapter-sap/metadata-node-ids4.md)を参照してください。  
+>  検索は限られた一連のノードでのみサポートします。 検索式でサポートされているワイルドカード文字および検索がサポートされているノードに関する詳細については、次を参照してください。[メタデータ ノード Id](../../adapters-and-accelerators/adapter-sap/metadata-node-ids4.md)します。  
   
 ### <a name="retrieving-metadata-wsdl-for-operations"></a>操作のメタデータ (WSDL) を取得します。  
  使用する、 **GetMetadata**操作のノードのグループのサービスの説明 (WSDL ドキュメント) を取得します。 次の例では、BAPI_TRANSACTION_COMMIT RFC のサービスの説明を取得します。 この例で**クライアント**のインスタンスである**MetadataRetrievalClient**します。 ノードの操作のノード ID がその操作のメッセージ アクションと同じことに注意してください。  

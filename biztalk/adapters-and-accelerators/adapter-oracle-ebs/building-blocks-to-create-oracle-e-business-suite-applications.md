@@ -12,19 +12,19 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b615f5a1e021a0db1d9dcc4b5780a8e6c55a547c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2fb8d882901bddf0b9d91b7adb734f535e09f404
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37013147"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65376022"
 ---
 # <a name="building-blocks-to-create-oracle-e-business-suite-applications"></a>Oracle E-business Suite のアプリケーションを作成する構成要素
 使用して Oracle E-business Suite での操作を実行する、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]で[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]を使用して、デザイン時および実行時のタスクのセットを実行する必要があります[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]と[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソールでそれぞれします。 このセクションでは、これらのタスクの概要を示します。 このセクションでの Oracle E-business Suite を使用して特定の操作を実行する方法を示すすべてのトピック[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]、これらの高度なタスクをモデル化されます。  
   
 ## <a name="using-visual-studio"></a>Visual Studio の使用  
   
-1. **BizTalk プロジェクトを作成し、スキーマの生成**します。 BizTalk プロジェクトを作成する必要があります[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]、Oracle E-business Suite で実行する操作のスキーマを生成します。 たとえば、Oracle E-business Suite のインターフェイス テーブルからレコードを選択する場合は、そのテーブルの選択操作のスキーマを生成する必要があります。 スキーマを生成するには、使用する必要があります、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]または[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]します。 詳細については、[Visual Studio での Oracle E-business Suite 操作のメタデータを取得する](../../adapters-and-accelerators/adapter-oracle-ebs/get-metadata-for-oracle-e-business-suite-operations-in-visual-studio.md)を参照してください。  
+1. **BizTalk プロジェクトを作成し、スキーマの生成**します。 BizTalk プロジェクトを作成する必要があります[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]、Oracle E-business Suite で実行する操作のスキーマを生成します。 たとえば、Oracle E-business Suite のインターフェイス テーブルからレコードを選択する場合は、そのテーブルの選択操作のスキーマを生成する必要があります。 スキーマを生成するには、使用する必要があります、[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]または[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]します。 詳細については、次を参照してください。 [Visual Studio での Oracle E-business Suite 操作のメタデータを取得する](../../adapters-and-accelerators/adapter-oracle-ebs/get-metadata-for-oracle-e-business-suite-operations-in-visual-studio.md)します。  
   
 2. **オーケストレーションを設定**します。 スキーマを生成した後、オーケストレーション デザイナーを使用してオーケストレーションを設定する必要があります。 基本的なオーケストレーションには、受信と送信図形とし、受信論理ポートの送信を追加します。 後の手順でマップするこれらの論理ポートを物理ポートを使用して、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソール。 オーケストレーションでは、これらのポートを使用して、クライアントがアダプターから送信されるメッセージを選択します。 オーケストレーションは、Oracle E-business Suite へのメッセージを渡します。 Oracle E-business Suite では、応答を送信、オーケストレーションは、アダプターのクライアントに応答を渡します。  
   
@@ -45,7 +45,7 @@ ms.locfileid: "37013147"
   
 1. **アプリケーションを構成**します。 デプロイを使用した BizTalk プロジェクト[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]に表示されます、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]オーケストレーションとして、管理コンソール。 作成した論理ポートをマッピングすることによって、このオーケストレーションを構成する必要があります[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]を物理ポートを使用して今すぐ作成する必要があります、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理コンソール。  
   
-    物理ポートでは、"action"または「アクション マッピング」を指定する必要があります。 このアクションは、Oracle E-business Suite で実行する操作に対応します。 動的アクションを使用していない場合は、アクションを指定する必要があります。 アクションの詳細については、[for Oracle E-business Suite の SOAP アクションを構成する](../../adapters-and-accelerators/adapter-oracle-ebs/configure-the-soap-action-for-oracle-e-business-suite.md)を参照してください。  
+    物理ポートでは、"action"または「アクション マッピング」を指定する必要があります。 このアクションは、Oracle E-business Suite で実行する操作に対応します。 動的アクションを使用していない場合は、アクションを指定する必要があります。 アクションの詳細については、次を参照してください。 [for Oracle E-business Suite の SOAP アクションを構成する](../../adapters-and-accelerators/adapter-oracle-ebs/configure-the-soap-action-for-oracle-e-business-suite.md)します。  
   
 2. **アプリケーションを起動**します。 アプリケーションを構成した後、アプリケーションを起動し、定義済みのファイルの場所に要求メッセージを削除する必要があります。 オーケストレーション要求メッセージを使用するには、Oracle E-business Suite に渡しますおよび応答を受信します。 この応答は、別の定義済みのファイルの場所のアダプター クライアントの使用可能です。  
   

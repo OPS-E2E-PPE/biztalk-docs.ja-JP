@@ -21,15 +21,15 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 56fd7d05f6970d8086b9180b0af867c0dcf84119
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 600129d79af7d02fcb39588ad9388052000ba271
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37000139"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65393792"
 ---
 # <a name="typed-facts"></a>型指定されたファクト
-*型指定されたファクト*クラスを実装するには、 **ITypedFact**インターフェイス: **TypedXmlDocument**、 **DataConnection**、 **TypedDataTable**、および**TypedDataRow**します。  
+*型指定されたファクト*クラスを実装するには、 **ITypedFact**インターフェイス。**TypedXmlDocument**、 **DataConnection**、 **TypedDataTable**、および**TypedDataRow**します。  
 
 ## <a name="typedxmldocument"></a>TypedXmlDocument  
  **TypedXmlDocument**クラスは、ビジネス ルール フレームワークで XML ドキュメントの種類を表します。 ルールの引数として、XML ドキュメントのノードを使用すると 2 つの XPath 式が作成されます: セレクターとフィールド バインドします。  
@@ -52,8 +52,8 @@ Case.xsd
 
 |      プロパティ      |                                    値                                    |
 |--------------------|-----------------------------------------------------------------------------|
-|  **XPath フィールド**   |               \*[ローカル名 () = 'Name' and namespace-uri() = ']                |
-| **XPath セレクター** | /\*[ローカル名 () = 'Root' and namespace-uri() ='<http://LoansProcessor.Case>'] |
+|  **XPath フィールド**   |               \*[local-name()='Name' and namespace-uri()='']                |
+| **XPath セレクター** | /\*[local-name()='Root' and namespace-uri()='<http://LoansProcessor.Case>'] |
 
  ノードをルールの引数にドラッグする前に、XML ノードに対する既定の XPath 式を変更することもできます。これにより、新しいバインド情報がポリシーに含められます。 ただし、XPath 式に加えた編集はすべて、スキーマを再読み込みするときにビジネス ルール作成ツールで再入力する必要があります。  
 
@@ -88,7 +88,7 @@ Select * From [Product] Where [UnitPrice] >= 0
 ## <a name="typeddatatable"></a>TypedDataTable  
  ADO.NET をアサートする**DataTable**よう他の任意の .NET オブジェクトに、エンジンがオブジェクトに処理されます。 ほとんどの場合は代わりにするルール エンジンのクラスをアサートする**TypedDataTable**します。  
 
- **TypedDataTable** ADO.NET を含むラッパー クラスは、 **DataTable**します。 コンストラクターは単には、 **DataTable**します。 テーブルまたはテーブルの列がルールの引数として使用される、個人に対して式が評価される**TypedDataRow**ラッパーとに対してではなく、 **TypedDataTable**します。  
+ **TypedDataTable** ADO.NET を含むラッパー クラスは、 **DataTable**します。 コンス トラクターは単には、 **DataTable**します。 テーブルまたはテーブルの列がルールの引数として使用される、個人に対して式が評価される**TypedDataRow**ラッパーとに対してではなく、 **TypedDataTable**します。  
 
 ## <a name="typeddatarow"></a>TypedDataRow  
  これは、ADO の型指定されたファクト ラッパー **DataRow**オブジェクト。 結果、返されたに対してルールが作成、テーブルまたは列をビジネス ルール作成ツールでルールの引数にドラッグ**TypedDataRow**ラッパー。  

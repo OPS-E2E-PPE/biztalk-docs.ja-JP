@@ -1,5 +1,5 @@
 ---
-title: '手順 4: 作成のサンプル XML BeginDoc2 |Microsoft ドキュメント'
+title: 手順 4:サンプルの XML BeginDoc2 の作成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,18 +12,18 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 65598296f7136dc47c747165c9f7aba20602be4f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7eea7067581391404fbb9c61afc5c340ec26d05e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22277538"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65392526"
 ---
-# <a name="step-4-create-a-sample-xml-begindoc"></a>手順 4: サンプル XML BeginDoc を作成します。
-次のコードを XML ファイルに保存します。 テストで、この例のステップを使用し、コード例で選択されている J.D. Edwards EnterpriseOne オブジェクト [JDE://CSALES/B4200310] を使用する場合、これを入力フォルダにドロップします。結果は、指定した出力フォルダ (EndDocOut ポートにバインドされたフォルダ) に書き込まれます。  
+# <a name="step-4-create-a-sample-xml-begindoc"></a>手順 4:サンプル XML BeginDoc を作成します。
+次のコードは、XML ファイルに保存します。 場合は、テスト、この例では、手順を使用し、例の j. d. Edwards EnterpriseOne オブジェクトの選択 [jde://csales/b4200310] を入力フォルダーと指定した出力フォルダー (EndDocOut ポートにバインドされているフォルダー) には何にこれをドロップすることができます。  
   
 > [!NOTE]
->  一部の値は、J.D. Edwards EnterpriseOne サーバーを指すように変更する必要があります。たとえば、szCMComputerID に設定されている値がこれに該当します。  
+>  J. d. を指す値の一部を変更する必要があります。 Edwards EnterpriseOne サーバー、たとえば、値設定 szCMComputerID にします。  
   
 ```  
 <ns0:F4211FSBeginDoc xmlns:ns0="http://schemas.microsoft.com/  
@@ -54,6 +54,6 @@ ms.locfileid: "22277538"
 ```  
   
 ## <a name="see-also"></a>参照  
- [手順 1: スキーマ DLL を参照します。](../core/step-1-reference-the-schema-dll1.md)   
- [手順 2: オーケストレーションを作成します。](../core/step-2-create-the-orchestration2.md)   
- [手順 3: が完了し、プロジェクトを実行](../core/step-3-complete-and-run-the-project1.md)
+ [ステップ 1: スキーマ DLL を参照します。](../core/step-1-reference-the-schema-dll1.md)   
+ [手順 2:オーケストレーションを作成します。](../core/step-2-create-the-orchestration2.md)   
+ [ステップ 3:完了して、プロジェクトを実行](../core/step-3-complete-and-run-the-project1.md)

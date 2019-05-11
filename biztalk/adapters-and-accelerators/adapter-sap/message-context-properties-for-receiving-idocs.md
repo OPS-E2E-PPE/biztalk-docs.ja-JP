@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1f99c403648ec2fae7fd9ee93f349f7c1fe69434
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5468a1944ecfb4e2ae3da2ded5d941d19ac37712
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36999803"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373258"
 ---
 # <a name="message-context-properties-for-receiving-idocs"></a>Idoc を受信するためのメッセージ コンテキスト プロパティ
 Microsoft を使用して IDOC を受信するため[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]、[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]次のメッセージ コンテキスト プロパティがサポートされます。  
@@ -105,4 +105,4 @@ Microsoft を使用して IDOC を受信するため[!INCLUDE[btsBizTalkServerNo
   **GUID** : GUID を表します[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]は内部的に使用します。 これは、SAP システムから受け取った TID で一対一のマッピングがあります。  
   
 ## <a name="see-also"></a>参照  
- [メッセージと BizTalk adapter for mySAP Business Suite のメッセージ スキーマ](../../adapters-and-accelerators/adapter-sap/messages-and-message-schemas-for-biztalk-adapter-for-mysap-business-suite.md)
+ [メッセージと BizTalk Adapter 用 mySAP Business Suite のメッセージ スキーマ](../../adapters-and-accelerators/adapter-sap/messages-and-message-schemas-for-biztalk-adapter-for-mysap-business-suite.md)

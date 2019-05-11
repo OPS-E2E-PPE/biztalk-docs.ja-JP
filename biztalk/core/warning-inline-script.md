@@ -1,5 +1,5 @@
 ---
-title: 警告 - インライン スクリプト |Microsoft ドキュメント
+title: 警告 - インライン スクリプト |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 714683fd74d4105df5af13a4c80feedd12587a27
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 952b56c74003f1251d41de82809670bd32b19902
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22288250"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65393694"
 ---
 # <a name="warning---inline-script"></a>警告 - インライン スクリプト
 **エラー コード**  
@@ -28,8 +28,8 @@ ms.locfileid: "22288250"
   
  **説明**  
   
- 指定された、指定されたインライン スクリプト**スクリプト**functoid には、構文に関する警告が含まれています。  
+ 指定された、指定されたインライン スクリプト**Scripting** functoid には、構文に関する警告が含まれています。  
   
  **ユーザーの操作**  
   
- 選択し**スクリプト**functoid は、省略記号ボタン (**.**) に関連付けられたボタン、**スクリプト**プロパティで、Microsoft[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]プロパティ] ウィンドウでし、 **[Functoid スクリプトの**ダイアログ ボックスで、正しい、構文に関する警告です。
+ 選択**Scripting** functoid は、省略記号をクリックします (**.**) ボタンに関連付けられている、**スクリプト**プロパティで、Microsoft[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]プロパティ ウィンドウで、し、 **Functoid スクリプトの構成** ダイアログ ボックスで、適切な構文に関する警告。

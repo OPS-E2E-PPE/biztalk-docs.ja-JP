@@ -16,12 +16,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2a8bdbf2a3b3a3c359a4c3e4912e2b6e18928023
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 12a7317ca742c6ce1909890a98738e36852f445d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37003179"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65372027"
 ---
 # <a name="using-the-servicemodel-metadata-utility-tool-with-the-biztalk-adapter-for-mysap-business-suite"></a>BizTalk adapter for mySAP Business Suite、ServiceModel メタデータ ユーティリティ ツールを使用してください。
 ServiceModel メタデータ ユーティリティ ツール (svcutil.exe) を使用して WCF クライアント クラスまたは操作用の WCF サービス コントラクト (インターフェイス) を生成することができる[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]を公開します。 WCF クライアント クラスまたは WCF サービス コントラクトを生成する svcutil.exe を実行した後、コードで生成されたファイルを含めると、生成されたクラスのインスタンスを作成したり、SAP の操作を実行する生成されたインターフェイスから WCF サービスの実装システム。  
@@ -74,7 +74,7 @@ ServiceModel メタデータ ユーティリティ ツール (svcutil.exe) を�
 </bindings>  
 ```  
   
- Svcutil.exe の既定以外のバインディングを構成する方法の詳細については、、[メタデータ エンドポイントのセキュリティで保護されたカスタム](https://msdn.microsoft.com/library/aa395212.aspx)を参照してください。
+ Svcutil.exe の既定以外のバインディングを構成する方法の詳細については、次を参照してください。、[メタデータ エンドポイントのセキュリティで保護されたカスタム](https://msdn.microsoft.com/library/aa395212.aspx)します。
   
 ## <a name="creating-a-wcf-client-class-or-a-wcf-service-contract-with-svcutilexe"></a>Svcutil.exe で WCF クライアント クラスまたは WCF サービス コントラクトを作成します。  
  Svcutil.exe を使用しての WCF クライアント コードまたは WCF サービス コントラクト (インターフェイス) を生成する、 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]、Ws-metadata Exchange (MEX) エンドポイントと操作、または svcutil.exe に操作を指定する URI の接続を指定する必要がありますコードを生成します。 接続 URI の SAP システムの接続の資格情報を指定することも必要があります。  

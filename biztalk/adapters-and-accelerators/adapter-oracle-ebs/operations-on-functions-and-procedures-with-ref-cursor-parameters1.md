@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f7227d6fd100714c0b467f0b43537b364af98d37
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7ee9eba5aae898ddc57352ed3bb30b4e5b1b8cbe
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36978651"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65375359"
 ---
 # <a name="operations-on-functions-and-procedures-with-ref-cursor-parameters"></a>関数および REF CURSOR パラメーターを使用したプロシージャに対する操作
 REF CURSOR は、クエリの実行によって生成されるサーバー側の結果セットへのポインターを表す PL/SQL データ型です。 REF CURSOR 型はにより、入力データのストリーミングを出力して、大量の PL/SQL コードとの間のデータを転送するために最適です。 

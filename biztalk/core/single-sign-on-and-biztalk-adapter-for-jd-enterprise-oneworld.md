@@ -1,5 +1,5 @@
 ---
-title: シングル サインオンと BizTalk Adapter JD Enterprise OneWorld for |Microsoft ドキュメント
+title: シングル サインオンと BizTalk Adapter JD Enterprise OneWorld 単一 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,26 +14,26 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e3b0fbe7aa671d543a0fd6cd7da78e05d18c63c3
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: ec5be842305bbad1fb6e6963b4fcdd770a989224
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
-ms.locfileid: "24016069"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65393040"
 ---
-# <a name="single-sign-on-and-biztalk-adapter-for-jd-enterprise-oneworld"></a>シングル サインオンと BizTalk Adapter for JD Enterprise OneWorld
-シングル サインオン (SSO) 資格情報がデータベースから取得した、SSO 資格情報です。したがって、する必要はありませんでサーバー システムのログオン資格情報を入力する、**トランスポートのプロパティ**ウィンドウです。  
+# <a name="single-sign-on-and-biztalk-adapter-for-jd-enterprise-oneworld"></a>単一でサインオンと BizTalk Adapter JD Enterprise OneWorld
+シングル サインオン (SSO) 資格情報は、SSO 資格情報データベースから取得されます。そのためでサーバー システムのログオン資格情報を入力する必要はありません、**トランスポートのプロパティ**ウィンドウ。  
   
- デザイン時には、Microsoft BizTalk Adapter for JD Edwards OneWorld が、BizTalk Server プロジェクトを開始したユーザーのコンテキストで (指定された関連アプリケーションの) システムの資格情報を取得します。 このユーザーは、アプリケーション ユーザーである必要があります。  
+ デザイン時に、Microsoft BizTalk Adapter for JD Edwards OneWorld は、BizTalk Server プロジェクトを開始したユーザーのコンテキストで (指定された関連アプリケーション) のシステムの資格情報を取得します。 そのユーザーは、アプリケーション ユーザーである必要があります。  
   
- 実行時には、SSO を使用するときにパススルーのシナリオで受信場所として BizTalk Adapter for JD Edwards OneWorld を使用してください。  
+ 実行時にを使用して、BizTalk Adapter for JD Edwards OneWorld パススルーのシナリオで受信場所としての SSO を使用する場合。  
   
- インターネット インフォメーション サービス (IIS) は、Web クライアントから HTTP 要求を受信すると、ユーザーを認証します。 ISAPI 拡張機能では、Windows ユーザーを偽装し、ストアを呼び出して、SSO 資格情報を暗号化されたチケットを取得します。 このチケットは、SSOTicket プロパティとしてメッセージのコンテキストに保存されます。  
+ インターネット インフォメーション サービス (IIS) Web クライアントから HTTP 要求の受信、IIS は、ユーザーを認証します。 ISAPI 拡張機能では、Windows ユーザーを偽装し、暗号化されたチケットを取得する SSO 資格情報ストアを呼び出します。 このチケットは、メッセージのコンテキストでは、SSOTicket プロパティとして格納されます。  
   
- 次に、メッセージがメッセージ ボックス データベースに転送されます。 アダプタは、メッセージ ボックス データベースからメッセージを受信すると、暗号化されたチケットと関連アプリケーション名を指定して IBTSTicket.ValidateAndRedeemTicket メソッドを呼び出し、ログオン資格情報を SSO ストアから取得します。 その後、BizTalk Adapter for JD Edwards OneWorld は外部の資格情報を使用してシステムに接続し、要求を処理します。  
+ メッセージは、メッセージ ボックス データベースに送られます。 アダプターはメッセージを受信、メッセージ ボックス データベースから、ログオン資格情報を SSO ストアから取得する関連アプリケーション名と共に、暗号化されたチケットを指定して IBTSTicket.ValidateAndRedeemTicket メソッドを呼び出します。 BizTalk Adapter for JD Edwards OneWorld には、外部の資格情報がシステムに接続し、要求を処理します。  
   
 > [!NOTE]
->  SSO の構成は BizTalk Server のセットアップの一部として行います。 SSO エラーが発生した場合は、あるアカウントを使用したドメイン BizTalk Server を構成したときに、エンタープライズ SSO サービスの機能に影響するためことを確認します。 SSO はドメイン アカウントでのみ機能します。  
+>  SSO の構成は、BizTalk Server のセットアップの一部です。 SSO エラーが発生した場合は、あるアカウントを使用したドメイン、BizTalk Server を構成したときに、エンタープライズ SSO サービスの機能に影響するためことを確認します。 ドメイン アカウントでの SSO のみ機能します。  
   
 ## <a name="see-also"></a>参照  
  [関連アプリケーションの作成](../core/creating-affiliate-applications3.md)   

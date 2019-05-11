@@ -1,5 +1,5 @@
 ---
-title: 'シナリオ 2: 検索、検索ボックス web パーツの使用 |Microsoft Docs'
+title: 'シナリオ 2: 検索ボックス web パーツを使用して検索 |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,20 +12,20 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6ac446f83af49d8d2faa06c7b43b1f59d343679b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6f8eff487547ad3c7e101c7cf002b0dca1833e71
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36991707"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65374638"
 ---
-# <a name="scenario-2--search-using-the-search-box-web-part"></a>シナリオ 2: 検索、検索ボックス web パーツの使用
+# <a name="scenario-2--search-using-the-search-box-web-part"></a>シナリオ 2: 検索ボックス web パーツを使用して検索します。
 検索設定を使用してのフル テキスト検索を実行できる検索アプリケーションを構成する Microsoft Office SharePoint Server で構成が Oracle E-business Suite で MS_SAMPLE_EMPLOYEE インターフェイス テーブル。 後で、検索を実行するからに検索ボックス Web パーツを追加します。  
   
  
   
 ##  <a name="Define"></a> コンテンツ ソースを定義します。  
- このセクションから Microsoft Office SharePoint Server がデータをクロールできるコンテンツ ソースの定義について説明します。 これは、メソッドのインスタンスに作成される Id の列挙子へのコンテンツのマッピング[手順 2: Oracle E-business Suite の成果物のアプリケーション定義ファイルを作成](../../adapters-and-accelerators/adapter-oracle-ebs/step-2-create-an-application-definition-file-for-the-oracle-ebs-artifacts.md)です。  
+ このセクションから Microsoft Office SharePoint Server がデータをクロールできるコンテンツ ソースの定義について説明します。 メソッドのインスタンスに作成される Id の列挙子へのコンテンツのマッピングは、[手順 2。Oracle E-business Suite の成果物のアプリケーション定義ファイルを作成](../../adapters-and-accelerators/adapter-oracle-ebs/step-2-create-an-application-definition-file-for-the-oracle-ebs-artifacts.md)です。  
   
 #### <a name="to-define-a-content-source"></a>コンテンツ ソースを定義するには  
   
@@ -125,7 +125,7 @@ ms.locfileid: "36991707"
   
 #### <a name="to-add-the-search-box-web-part"></a>検索ボックス Web パーツを追加するには  
   
-1.  呼ばれる Web パーツ ページを作成する**MS_SAMPLE_EMPLOYEE_Search**します。 Web パーツ ページを作成する手順については、[シナリオ 1: ビジネス データ一覧 web パーツを使用してデータを表示](../../adapters-and-accelerators/adapter-oracle-ebs/scenario-1-display-data-using-business-data-list-web-part.md)で[シナリオ 1: ビジネス データ一覧 web パーツを使用してデータを表示](../../adapters-and-accelerators/adapter-oracle-ebs/scenario-1-display-data-using-business-data-list-web-part.md)を参照してください。  
+1.  呼ばれる Web パーツ ページを作成する**MS_SAMPLE_EMPLOYEE_Search**します。 Web パーツ ページを作成する手順については、次を参照してください。[シナリオ 1。ビジネス データ一覧 web パーツを使用してデータを表示](../../adapters-and-accelerators/adapter-oracle-ebs/scenario-1-display-data-using-business-data-list-web-part.md)で[シナリオ 1。ビジネス データ一覧 web パーツを使用してデータを表示](../../adapters-and-accelerators/adapter-oracle-ebs/scenario-1-display-data-using-business-data-list-web-part.md)します。  
   
 2.  MS_SAMPLE_EMPLOYEE_Search ページで、次のようにクリックします。 **Web パーツの追加**します。  
   
@@ -138,5 +138,5 @@ ms.locfileid: "36991707"
      ![検索ボックス Web パーツ](../../adapters-and-accelerators/adapter-oracle-ebs/media/33-search-web-part-final.gif "33 _ search_web_part_final")  
   
 ## <a name="see-also"></a>参照  
- [手順 3: Oracle E-business Suite からデータを取得する SharePoint アプリケーションを作成します。](../../adapters-and-accelerators/adapter-oracle-ebs/step-3-create-a-sharepoint-application-to-retrieve-data-from-oracle-ebs.md)  
+ [ステップ 3:Oracle E-business Suite からデータを取得する SharePoint アプリケーションを作成します。](../../adapters-and-accelerators/adapter-oracle-ebs/step-3-create-a-sharepoint-application-to-retrieve-data-from-oracle-ebs.md)  
  [シナリオ 1: ビジネス データ リスト Web パーツを使用してデータを表示する](../../adapters-and-accelerators/adapter-oracle-ebs/scenario-1-display-data-using-business-data-list-web-part.md)

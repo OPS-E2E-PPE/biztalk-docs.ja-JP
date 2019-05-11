@@ -16,48 +16,48 @@ caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0ef3869161c699c48648bc0c22f1d9f40c9bde73
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 78e190920695ebfb1f5654dcb4abcf95beab085f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36986875"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65394498"
 ---
 # <a name="methodcall-biztalk-server-sample"></a>MethodCall (BizTalk Server サンプル)
-MethodCall サンプルは、BizTalk Server オーケストレーションから .NET ベースのメソッドを呼び出す方法を示すものです。  
+MethodCall サンプルを呼び出す方法を示します、します。BizTalk Server オーケストレーションからの NET ベースのメソッド。  
 
 ## <a name="what-this-sample-does"></a>このサンプルの処理  
- このサンプルでは、次の一連の手順を実行して .NET ベースのメソッドと連携します。  
+ このサンプルのやり取りをします。次の一連の手順を使用して、NET ベースのメソッド:  
 
-1. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] オーケストレーションで、In フォルダーから XML 入力ファイルを取得します。 このファイルには、数値演算ライブラリで実行する加算または減算に関する情報が含まれています。  
+1. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]オーケストレーションは、In フォルダから XML 入力ファイルを取得します。 このファイルの追加に関する情報を格納する、または減算を実行する数値演算ライブラリをします。  
 
-2. オーケストレーションで、インクルードされた数値演算ライブラリを呼び出し、XML 入力ファイルに指定されている加算または減算を実行します。  
+2. オーケストレーションでは、加算または減算を XML 入力ファイルで指定された実行に含まれる数値演算ライブラリを呼び出します。  
 
 3. 数値演算ライブラリのメソッドを適切な**追加**または**減算**要求された計算を行い、結果を XML ドキュメントとしてパッケージ化します。  
 
-4. オーケストレーションで、生成された .xml ファイルを Out フォルダに格納します。  
+4. オーケストレーションは、生成された .xml ファイルを Out フォルダに配置します。  
 
 ## <a name="how-this-sample-is-designed-and-why"></a>このサンプルのデザイン方法とその理由  
- このサンプルは、次の機能を実行します。  
+ このサンプルでは、次の機能を使用します。  
 
--   昇格させたプロパティをオーケストレーション内で使用します。 InputSchema.xsd の 3 つの要素は、識別フィールドとして昇格されています。 オーケストレーションでは、入力メッセージの受信時にこれら 3 つのフィールドの値を取得し、オーケストレーション内で対応する宣言済みの変数に割り当てます。  
+-   オーケストレーションで昇格させたプロパティを活用できます。 InputSchema.xsd の 3 つの要素は、識別フィールドとして昇格されます。 オーケストレーションでは、入力メッセージを受信したときにこれら 3 つのフィールドの値を取得し、オーケストレーションで宣言された対応する変数に割り当てます。  
 
--   使用して、**判断**図形をオーケストレーションに"if then else"ロジックを表現します。 入力した後、オーケストレーションは、識別フィールドの値を内部変数に割り当てる、**判断**図形を加算または減算を実行するかどうかを確認します。 演算を実行する必要がない場合、オーケストレーションは終了します。  
+-   使用して、**判断**図形をオーケストレーションに"if then else"ロジックを表現します。 入力した後、オーケストレーションは、識別フィールドの値を内部変数に割り当てる、**判断**図形を加算または減算を実行するかどうかを確認します。 実行する操作が必要がない場合、オーケストレーションは終了します。  
 
--   オーケストレーションから外部アセンブリを呼び出します。 加算を実行する場合、オーケストレーションでは外部 C# アセンブリを呼び出し、2 つのパラメータを渡して加算を実行します。 減算も同様の手順です。  
+-   オーケストレーションから外部アセンブリを呼び出します。 オーケストレーションが外部を呼び出し、加算が実行する場合は、C#加算を実行するには、アセンブリと 2 つのパラメーターに渡されます。 減算に同じ手順が適用されます。  
 
     > [!NOTE]
-    >  アセンブリをオーケストレーションから呼び出すには、アセンブリをグローバル アセンブリ キャッシュにインストールしておく必要があります。グローバル アセンブリ キャッシュにアセンブリがない場合、実行時に XLANG エラーが返されます。  
+    >  オーケストレーション; からを呼び出すには、グローバル アセンブリ キャッシュにアセンブリをインストールする必要があります。それ以外の場合、XLANG エラーが実行時に表示されます。  
 
 -   使用して、**メッセージの割り当て**図形を出力メッセージを構築します。  
 
--   次のコードを式図形に配置することにより、オーケストレーションをデバッグします。  
+-   式図形で次のコードを配置することで、オーケストレーションをデバッグします。  
 
     ```  
     System.Diagnostics.Debug.WriteLine(iResult);  
     ```  
 
-     次のコードを使用して、結果をイベント ログに書き込むこともできます。  
+     使用して、イベント ログに、結果を記述することもできます。  
 
     ```  
     System.Diagnostics.EventLog.WriteEntry("MethodCall SDK Sample Debug", System.String.Format("Result = {0}", iResult);  
@@ -74,15 +74,15 @@ MethodCall サンプルは、BizTalk Server オーケストレーションから
 |                                        Cleanup.bat                                         | アセンブリの展開を解除し、グローバル アセンブリ キャッシュからアセンブリを削除するために使用されます。 送信ポートと受信ポートが削除されます。 必要に応じて、Microsoft インターネット インフォメーション サービス (IIS) の仮想ディレクトリが削除されます。 |
 |                                         Input.xml                                          |                                                                                        サンプル入力ファイルです。                                                                                        |
 |                                         Setup.bat                                          |                                                                            このサンプルをビルドおよび初期化するために使用されます。                                                                             |
-| \MathLibrary フォルダには、次のファイルが含まれます。<br /><br /> AssemblyInfo.cs、MathHelper.cs、MathLibrary.csproj |                                                                このサンプルで使用する数値演算ライブラリのプロジェクト ファイルとソース ファイルです。                                                                |
-|       \MethodCallSample フォルダには、次のファイルが含まれます。<br /><br /> InputSchema.xsd、OutputSchema.xsd       |                                                                    それぞれ、入力 .xml ファイルと出力 .xml ファイルのスキーマです。                                                                    |
-| \MethodCallSample フォルダには、次のファイルが含まれます。<br /><br /> MethodCallSample.btproj、MethodCallSample.sln |                                                                           このサンプルのプロジェクト ファイルとソリューション ファイルです。                                                                            |
-|          \MethodCallSample フォルダには、次のファイルが含まれます。<br /><br /> MethodCallSampleBinding.xml          |                                                                          ポートのバインドなど、自動化されたセットアップに使用されます。                                                                          |
-|             \MethodCallSample フォルダには、次のファイルが含まれます。<br /><br /> MethodCallService.odx             |                数値演算ライブラリを呼び出し、要求された計算を実行する [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] オーケストレーションです。                |
+| \MathLibrary フォルダー。<br /><br /> AssemblyInfo.cs, MathHelper.cs, MathLibrary.csproj |                                                                このサンプルで使用される数値演算ライブラリのプロジェクトおよびソース ファイル。                                                                |
+|       \MethodCallSample フォルダー。<br /><br /> InputSchema.xsd、OutputSchema.xsd       |                                                                    入力と出力 .xml のスキーマ ファイルをそれぞれします。                                                                    |
+| \MethodCallSample フォルダー。<br /><br /> MethodCallSample.btproj、MethodCallSample.sln |                                                                           このサンプルのプロジェクト ファイルとソリューション ファイルです。                                                                            |
+|          \MethodCallSample フォルダー。<br /><br /> MethodCallSampleBinding.xml          |                                                                          ポートのバインドなど、自動化されたセットアップに使用されます。                                                                          |
+|             \MethodCallSample フォルダー。<br /><br /> MethodCallService.odx             |                [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 要求された計算を実行する数値演算ライブラリを呼び出すオーケストレーションです。                |
 
 ## <a name="building-and-initializing-this-sample"></a>このサンプルのビルドと初期化  
 
-#### <a name="to-build-and-initialize-the-methodcall-sample"></a>MethodCall サンプルをビルドおよび初期化するには  
+#### <a name="to-build-and-initialize-the-methodcall-sample"></a>ビルドして初期化 MethodCall サンプル  
 
 1. コマンド ウィンドウで、次のフォルダーに移動します。  
 
@@ -90,7 +90,7 @@ MethodCall サンプルは、BizTalk Server オーケストレーションから
 
 2. ファイルは、次の操作を実行します。 Setup.bat を実行します。  
 
-   - MethodCall フォルダに、このサンプルの入力 (In) フォルダと出力 (Out) フォルダを作成します。  
+   - 入力 (In) フォルダと出力 (Out) フォルダ MethodCall フォルダに、このサンプルを作成します。  
 
    - このサンプル用に [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] プロジェクトをコンパイルし、生成されたアセンブリを展開します。  
 
@@ -105,11 +105,11 @@ MethodCall サンプルは、BizTalk Server オーケストレーションから
 
 #### <a name="to-run-the-methodcall-sample"></a>MethodCall サンプルを実行するには  
 
-1.  ファイル Input.xml を In フォルダにコピーします。  
+1.  Input.xml ファイルのコピーを In フォルダに貼り付けます。  
 
-2.  .xml ファイルが Out フォルダに作成されることを確認します。 このファイルには、要求された加算または減算の計算結果が含まれています。 このファイルの名前の形式が\< *MessageID*\>、.xml、 *\<MessageID\>* メッセージを一意に識別するために生成される GUID.  
+2.  .Xml ファイルが Out フォルダに作成されたことを確認します。 このファイルには、要求された加算または減算の計算の結果が含まれています。 このファイルの名前の形式が\< *MessageID*\>、.xml、 *\<MessageID\>* メッセージを一意に識別するために生成される GUID.  
 
-3.  入力ファイルを変更し、別の加算または減算を要求することもできます。  
+3.  別の加算または減算を要求する入力ファイルを変更することができます。  
 
 ## <a name="uninstalling-this-sample"></a>このサンプルのアンインストール  
 

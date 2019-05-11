@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 33fc168ff5461ffc4145e83efaf2192cbc785820
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: dccb5aebb19895e05ed424f64b4f2ba431174f6d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36975067"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65397110"
 ---
 # <a name="how-the-add-namespace-sample-works"></a>どの Namespace サンプルは、動作を追加
 1、2、および 4 番目のテストを使用して、**追加 Namespace** NamespaceSampleReceivePipeline パイプラインにコンポーネントがあります。 として、次のよう、ルート ノードの名前空間のないドキュメントを入力します。  
@@ -31,10 +31,10 @@ ms.locfileid: "36975067"
 
 |      プロパティ       |  型   |                          値                           |
 |---------------------|---------|----------------------------------------------------------|
-| ExtractionNodeXPath | 静的  |                         (空)                          |
-|    NamespaceBase    | 静的  |    http://schemas.microsoft.biztalk.esb.test.com/test    |
-|   NamespacePrefix   | 静的  |                         esbTest                          |
-|      [区切り記号]      | 静的  |                            /                             |
+| ExtractionNodeXPath | スタティック  |                         (空)                          |
+|    NamespaceBase    | スタティック  |    http://schemas.microsoft.biztalk.esb.test.com/test    |
+|   NamespacePrefix   | スタティック  |                         esbTest                          |
+|      [区切り記号]      | スタティック  |                            /                             |
 |       Xpath        | 動的 | /CanonicalOrder/@OrderID&#124;/CanonicalOrder/@OrderDate |
 
  表に示したプロパティの設定により、2 つの XPath クエリを実行することによって、XML ドキュメントを検索するコンポーネント/CanonicalOrder/@OrderIDと/CanonicalOrder/@OrderDate(指定された 2 つのクエリ、 **Xpath** 「パイプ」で区切られたプロパティ文字)。 これらのクエリの値を返す、 **OrderID**と**OrderDate**属性は、ドキュメントのこの例では、ルート ノードの 2 つの値は、"OrderID_0"および"OrderDate_1"。  

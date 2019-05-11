@@ -12,12 +12,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6a85e5c134e9fbbd2d1b6880fdb9e5cd866bc512
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 83551e31bfd822473e639c12abcf440c154dc826
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37024384"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395124"
 ---
 # <a name="executing-an-itinerary-service"></a>スケジュールのサービスを実行します。
 ESB スケジュールは、オーケストレーションとして実装されているか、次のタスクを実行するメッセージング可能性のある任意のスケジュール サービスを含めることができます。  
@@ -99,7 +99,7 @@ uri()='http://globalbank.esb.dynamicresolution.com/northamericanservices/']/*
 uri()='http://globalbank.esb.dynamicresolution.com/northamericanservices/'];  
 ```  
   
- リゾルバーとアダプターのプロバイダー フレームワークの競合回避モジュールのマネージャーは、エンドポイントを解決し、メッセージのエンドポイントのプロパティを設定できます。 このしくみの詳細については、[を使用して動的な解決とルーティング](../esb-toolkit/using-dynamic-resolution-and-routing.md)を参照してください。  
+ リゾルバーとアダプターのプロバイダー フレームワークの競合回避モジュールのマネージャーは、エンドポイントを解決し、メッセージのエンドポイントのプロパティを設定できます。 このしくみの詳細については、次を参照してください。[を使用して動的な解決とルーティング](../esb-toolkit/using-dynamic-resolution-and-routing.md)します。  
   
  サービスでは、メッセージの処理が完了すると後、は、送信メッセージで旅行計画を進める必要があり、メッセージをメッセージ ボックス データベースに発行します。 次の例では、オーケストレーションの式図形のプロセスを示します。  
   

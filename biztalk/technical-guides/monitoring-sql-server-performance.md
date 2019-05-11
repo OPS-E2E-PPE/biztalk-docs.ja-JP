@@ -13,12 +13,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 730896dc1cf0a465f68965f812da7311dd8664ab
-ms.sourcegitcommit: ed9590dbcd97c12a1fe5ce2cdf8d826492cccdff
+ms.openlocfilehash: 917471344859cb7fca6a04df2236221fe780b3a8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39640118"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395311"
 ---
 # <a name="monitor-sql-server-performance"></a>SQL Server のパフォーマンスの監視
 SQL Server は、SQL Server のイベントの監視と物理データベース デザインをチューニングするためのいくつかのツールを提供します。 [パフォーマンスの監視およびチューニング ツール](https://docs.microsoft.com/sql/relational-databases/performance/performance-monitoring-and-tuning-tools)これらのツールについて説明します。 
@@ -26,7 +26,7 @@ SQL Server は、SQL Server のイベントの監視と物理データベース 
 BizTalk Server は、データベース処理を要するプロセスです。 BizTalk Server パフォーマンスの問題をトラブルシューティングするときも、SQL Server のパフォーマンスを確認すると解消できます。 次のツールが役立ちます。  
   
 ## <a name="sql-server-activity-monitor"></a>SQL Server の利用状況モニター  
-SQL Server の利用状況モニターは、SQL Server のプロセスおよびこれらのプロセスが現在の SQL Server インスタンスに与える影響についての情報を提供します。 詳細については、[の利用状況モニター](https://docs.microsoft.com/sql/relational-databases/performance-monitor/activity-monitor)、および[方法: 利用状況モニターを開く (SQL Server Management Studio](https://docs.microsoft.com/sql/relational-databases/performance-monitor/open-activity-monitor-sql-server-management-studio)を参照してください。 
+SQL Server の利用状況モニターは、SQL Server のプロセスおよびこれらのプロセスが現在の SQL Server インスタンスに与える影響についての情報を提供します。 詳細については、次を参照してください。[の利用状況モニター](https://docs.microsoft.com/sql/relational-databases/performance-monitor/activity-monitor)、および[方法。利用状況モニターを開く (SQL Server Management Studio](https://docs.microsoft.com/sql/relational-databases/performance-monitor/open-activity-monitor-sql-server-management-studio)します。 
   
 ## <a name="sql-serverdata-collection"></a>SQL ServerData コレクション  
 SQL Server を取得し、複数のソースから収集されるデータの保存に使用できるデータ コレクターを提供します。 データ コレクターでは、範囲と SQL Server を実行しているコンピューター上のデータ収集の頻度を決定するためのデータのコレクション コンテナーを使用することができます。 参照してください[データ コレクション](https://docs.microsoft.com/sql/relational-databases/data-collection/data-collection)します。

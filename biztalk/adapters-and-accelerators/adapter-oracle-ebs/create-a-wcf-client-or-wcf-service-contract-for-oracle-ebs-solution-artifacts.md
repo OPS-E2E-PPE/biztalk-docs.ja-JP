@@ -12,12 +12,12 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9824e99014431c452f49d4a80e45efe4852c519f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e5076360f7f91da1bf3fe127953c8fa6d58ae1d8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36986899"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65375857"
 ---
 # <a name="generate-a-wcf-client-or-a-wcf-service-contract-for-oracle-e-business-suite-solution-artifacts"></a>WCF クライアントまたは Oracle E-business Suite ソリューションの成果物の WCF サービス コントラクトを生成します。
 使用することができます、 [!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)] WCF クライアント クラスまたは Oracle E-business Suite の成果物を選択した操作を対象とした WCF サービス コントラクト (インターフェイス) を生成します。 ServiceModel メタデータ ユーティリティ ツール (svcutil.exe) を WCF クライアント クラスを生成または WCF サービス コントラクトを使用することもできます。ただし、[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]標準の Microsoft Windows インターフェイスから ServiceModel メタデータ ユーティリティ ツールの機能を公開します。 Svcutil.exe ツールを使用できない参照と検索の機能も提供し、Oracle E-business Suite に接続するときに選択したバインドのプロパティに基づいて構成ファイルを生成します。  
@@ -55,7 +55,7 @@ ms.locfileid: "36986899"
   
 3. Oracle E-business Suite に接続すると、選択**サービス (受信操作)** から、**選択コントラクト型**ドロップダウン リスト。  
   
-4. **カテゴリを選択**ボックスに、サービス コントラクトを生成する受信操作を参照します。 たとえば、**通知**操作、ルート ノードをクリックします (**/**) を選択します**通知**から、**利用可能なカテゴリと操作**ボックスをクリックして**追加**します。 受信操作を参照する方法の詳細については、[参照、検索、および Oracle E-business Suite 操作のメタデータを取得する](../../adapters-and-accelerators/adapter-oracle-ebs/browse-search-and-get-metadata-for-oracle-e-business-suite-operations.md)を参照してください。  
+4. **カテゴリを選択**ボックスに、サービス コントラクトを生成する受信操作を参照します。 たとえば、**通知**操作、ルート ノードをクリックします (**/**) を選択します**通知**から、**利用可能なカテゴリと操作**ボックスをクリックして**追加**します。 受信操作を参照する方法の詳細については、次を参照してください。[参照、検索、および Oracle E-business Suite 操作のメタデータを取得する](../../adapters-and-accelerators/adapter-oracle-ebs/browse-search-and-get-metadata-for-oracle-e-business-suite-operations.md)します。  
   
 5. 操作の WCF サービス コントラクトを生成する をクリックして**OK**します。  
   
@@ -73,4 +73,4 @@ ms.locfileid: "36986899"
 ## <a name="using-svcutilexe-to-generate-a-wcf-client-class-or-a-wcf-service-contract"></a>Svcutil.exe を使用して WCF クライアント クラスまたは WCF サービス コントラクトを生成するには  
  Svcutil.exe を使用して、アプリケーションの WCF クライアント クラスまたは WCF サービスのインターフェイスを生成することができます。 Svcutil.exe を使用すればを構成する必要があります、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]します。  
   
- Svcutil.exe は、出力ファイルで、WCF クライアント クラスまたは WCF サービス コントラクトを生成します。 既定のファイル名は、output.cs です。 このファイルを手動で含める必要があります、[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]プロジェクト。 Svcutil.exe の詳細については、[ http://go.microsoft.com/fwlink/?LinkId=139432](http://go.microsoft.com/fwlink/?LinkId=139432)を参照してください。
+ Svcutil.exe は、出力ファイルで、WCF クライアント クラスまたは WCF サービス コントラクトを生成します。 既定のファイル名は、output.cs です。 このファイルを手動で含める必要があります、[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]プロジェクト。 Svcutil.exe の詳細については、次を参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=139432](http://go.microsoft.com/fwlink/?LinkId=139432)します。

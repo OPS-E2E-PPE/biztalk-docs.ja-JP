@@ -15,16 +15,16 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c174b62abfd59bbcffe6735e00d49b6513cc21bf
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2526b83702dc41c5f81e7194d97fa68753b1a248
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22290018"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395160"
 ---
 # <a name="what-is-a-real-time-aggregation"></a>リアルタイム集計について
 ビジネス アナリストは、ピボットテーブルをリアルタイム集計 (RTA) またはスケジュール済み集計として定義できます。 RTA を使用すると、たとえば特定の PO が出荷処理中であるなど、データの現時点のビューを表示できます。 1 日のうちいつでも画面を更新して、データのビューを最新の状態にできます。  
   
 ## <a name="see-also"></a>参照  
  [BAM 集計を表示する方法](../core/how-to-view-bam-aggregations.md)   
- [スケジュール済み集計とは何ですか。](../core/what-is-a-scheduled-aggregation.md)
+ [スケジュール済みの集計について](../core/what-is-a-scheduled-aggregation.md)

@@ -1,5 +1,5 @@
 ---
-title: トランザクションを使用して、例外の処理 |Microsoft ドキュメント
+title: トランザクションを使用して、例外の処理 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -22,47 +22,47 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ab32729aa6b4f12aada623587f52728c6bd23240
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: eac1ae71e9ff176156691fbb30a79c9d423b58da
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22288434"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396749"
 ---
 # <a name="using-transactions-and-handling-exceptions"></a>トランザクションを使用して、例外の処理
-オーケストレーションのデザイン時には、問題が発生する可能性のある場所とその最善の対処方法について十分に考慮する必要があります。 オーケストレーションの多くは、エラーが発生する可能性のあるいくつかの処理を抱えています。 問題が発生する理由は他にも考えられます。たとえば、サーバーのダウンやメッセージ形式の誤りなどです。  
+オーケストレーションを設計するときは慎重に考慮する問題が発生する可能性とそれらに対処する最適な方法です。 多くのオーケストレーションでは、いくつかの潜在的な障害点があります。 問題は、任意の数の他の理由が発生します。たとえば、サーバー ダウンまたはメッセージの形式が正しくありません。  
   
- 長時間実行または複雑なオーケストレーションでは、状態を追跡してエラー発生時に報告し、問題を的確に、最小限の労力で解決できるようにすることが特に重要です。 これは、方法と考えたようバックアップ全体のトランザクションをロールバックできます行われるトランザクションの一部別されない場合は、できるように、密接に関連するアクションのセットの整合性を維持するためのオーケストレーションの同様に重要です。  
+ これは、方法は、正確かつ最小限の労力で、問題を解決できるように、発生したエラーを報告して、状態の追跡を維持する時間の長い実行または複雑なオーケストレーションの特に重要です。 考えたものとしてバックアップ、トランザクションの一部が行われる別されない場合は、トランザクション全体をロールバックできるように、密接に関連する操作の一連の整合性を維持するためのオーケストレーションにも同様に重要です。  
   
- BizTalk オーケストレーションでは、トランザクションに外部システムがかかわっている場合でも、作業の原子性 (関連するアクションの整合性) が確保されます。 エラーを処理し、オーケストレーションの状態を維持し、トランザクション、補正、および例外処理を通じて発生する問題を修正する手段を提供します。  
+ BizTalk オーケストレーションでは、作業の原子性を保証することができます、つまり、関連するアクションの整合性も外部システムに参加しているトランザクションです。 トランザクション、補正、および例外処理を通じて発生する問題を解決して、オーケストレーションの状態を維持するために、エラーを処理する手段を提供します。  
   
- オーケストレーション デザイナーにはトランザクションと例外処理のフレームワーク、として、**スコープ**図形です。 スコープには、トランザクションの種類、補正、および任意の数の例外ハンドラーを設定できます。  
+ オーケストレーション デザイナーには、トランザクションと例外処理のフレームワークとして、**スコープ**図形。 スコープには、トランザクションの種類、補正、および任意の数の例外ハンドラーを設定できます。  
   
- トランザクションと例外処理を設定する手順を次に示します。  
+ トランザクションと例外処理を設定するための手順は次のとおりです。  
   
 -   スコープを作成します。  
   
--   必要なトランザクションの種類を特定します。  
+-   必要なトランザクションの種類を識別します。  
   
--   補正する必要のあるものを決定します。  
+-   補正する必要がありますを決定します。  
   
--   発生する可能性のあるエラーを特定します。  
+-   潜在的なエラーを特定します。  
   
 -   適切な例外ハンドラーと補正コードを追加します。  
   
-## <a name="examples-of-using-transactions-exception-handlings-and-compensations"></a>トランザクションの使用、例外処理および補正の例  
+## <a name="examples-of-using-transactions-exception-handlings-and-compensations"></a>トランザクション、例外処理および補正の使用例  
   
--   [エラー処理 (BizTalk Server Samples フォルダ)](../core/error-handling-biztalk-server-samples-folder.md)  
+-   [エラー処理 (BizTalk Server サンプル フォルダー)](../core/error-handling-biztalk-server-samples-folder.md)  
   
 -   [補正 (BizTalk Server サンプル)](../core/compensation-biztalk-server-sample.md)  
   
--   サンプルをダウンロードする SDK「オーケストレーション アトミック トランザクションと COM + サービス コンポーネントで」から[http://go.microsoft.com/fwlink/?LinkId=73703](http://go.microsoft.com/fwlink/?LinkId=73703)です。  
+-   SDK サンプル「オーケストレーション アトミック トランザクションと COM + サービス コンポーネントで」からダウンロード[ http://go.microsoft.com/fwlink/?LinkId=73703](http://go.microsoft.com/fwlink/?LinkId=73703)します。  
   
--   サンプルをダウンロードする SDK「を使用して、アダプターとアトミック トランザクション オーケストレーションでの SQL」から[http://go.microsoft.com/fwlink/?LinkId=73703](http://go.microsoft.com/fwlink/?LinkId=73703)です。  
+-   「を使用して、SQL アダプターとアトミック トランザクション オーケストレーションでの」SDK サンプルからダウンロード[ http://go.microsoft.com/fwlink/?LinkId=73703](http://go.microsoft.com/fwlink/?LinkId=73703)します。  
   
--   サンプルをダウンロードする SDK「オーケストレーションでの実行時間の長いトランザクションの使用」から[http://go.microsoft.com/fwlink/?LinkId=73703](http://go.microsoft.com/fwlink/?LinkId=73703)です。  
+-   SDK サンプル「オーケストレーションでの実行時間の長いトランザクションの使用」をからダウンロード[ http://go.microsoft.com/fwlink/?LinkId=73703](http://go.microsoft.com/fwlink/?LinkId=73703)します。  
   
--   SDK サンプル「オーケストレーションで例外を処理」をダウンロード[http://go.microsoft.com/fwlink/?LinkId=73703](http://go.microsoft.com/fwlink/?LinkId=73703)です。  
+-   SDK サンプル「オーケストレーションで例外を処理」をからダウンロード[ http://go.microsoft.com/fwlink/?LinkId=73703](http://go.microsoft.com/fwlink/?LinkId=73703)します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
@@ -70,7 +70,7 @@ ms.locfileid: "22288434"
   
 -   [スコープ図形を構成する方法](../core/how-to-configure-the-scope-shape.md)  
   
--   [トランザクション オーケストレーションを行う](../core/making-orchestrations-transactional.md)  
+-   [オーケストレーションのトランザクション化](../core/making-orchestrations-transactional.md)  
   
 -   [例外](../core/exceptions.md)  
   

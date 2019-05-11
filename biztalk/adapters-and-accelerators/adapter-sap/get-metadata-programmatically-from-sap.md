@@ -16,12 +16,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c0bf41b8213afd1c1af00c113e4a5406e6289dac
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4e03b4ecaee949b3d8fbceeb4929a88b3d5ee004
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37013851"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373368"
 ---
 # <a name="get-metadata-programmatically-from-sap"></a>SAP からプログラムでメタデータを取得します。
 [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)] WCF サービスとしての SAP システムを公開するカスタム WCF バインドします。 アダプターは、自己記述型のサービスとしての SAP システムを公開しますサポートされる操作についてのメタデータを公開できるサービスは、します。 メタデータが、WCF サービスに論理インターフェイスについて説明しますつまり、サービス コントラクト、メッセージ、およびメッセージ スキーマ、サービスと対話するために使用する必要があります。  

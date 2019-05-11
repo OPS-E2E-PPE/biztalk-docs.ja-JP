@@ -13,12 +13,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 45ef2f5de5a9e7e13eb2fb53918cb1208a0aeeee
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2ff2135fe19c5dc9ac96be694220ac3c1762bf73
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36980027"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373237"
 ---
 # <a name="message-schemas-for-idoc-operations"></a>IDOC 操作のメッセージ スキーマ
 中間ドキュメント (IDOC) は、SAP と SAP 以外のシステムと非同期的に通信するために、SAP でサポートされる標準の EDI のようなドキュメントです。 IDOC は、取引先の SAP システムまたは外部プログラムの間の販売注文のようなビジネス ドキュメントの送受信に使用されます。  
@@ -179,7 +179,7 @@ ms.locfileid: "36980027"
 
  [SEG_HEADER_FIELD] = 各セグメントには、標準的な一連のヘッダー フィールドによって、セグメント データで構成されるセグメント ヘッダーを取得します。 セグメントのデータは、すべてのセグメント フィールドとデータで構成されます。 このノードが表すセグメント ヘッダー フィールド。たとえば、SEGNAM、MANDT、および DOCNUM にします。  
 
- TRFC 操作の詳細形式の詳細については、[tRFC 操作のメッセージ スキーマ](../../adapters-and-accelerators/adapter-sap/message-schemas-for-trfc-operations.md)を参照してください。  
+ TRFC 操作の詳細形式の詳細については、次を参照してください。 [tRFC 操作のメッセージ スキーマ](../../adapters-and-accelerators/adapter-sap/message-schemas-for-trfc-operations.md)します。  
 
 ### <a name="message-actions-for-idoc-receive-operations"></a>メッセージのアクションの IDOC の受信操作  
  次の表では、受信と ReceiveIdoc の操作のためのメッセージのアクションを示します。  

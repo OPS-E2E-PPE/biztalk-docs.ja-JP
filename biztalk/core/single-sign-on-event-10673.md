@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10673 |Microsoft Docs'
+title: シングル サインオン:イベント 10673 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3fb923d1e137a00eed4ba87e65df71b226287aa2
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7d6481684fdb53aed156703a52e472c3fe1f06d4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36975139"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65397496"
 ---
-# <a name="single-sign-on-event-10673"></a>シングル サインオン: イベント 10673
+# <a name="single-sign-on-event-10673"></a>シングル サインオン:イベント 10673
 ## <a name="details"></a>詳細  
 
 |                 |                                                                                                                                                                                                                                                                                                                                                                          |
@@ -28,21 +28,21 @@ ms.locfileid: "36975139"
 | 製品バージョン |                                                                                                                                                        [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                                                                                                                                                        |
 |    イベント ID     |                                                                                                                                                                                  10673                                                                                                                                                                                   |
 |  イベント ソース   |                                                                                                                                                                                  ENTSSO                                                                                                                                                                                  |
-|    コンポーネント    |                                                                                                                                                                                   N\A                                                                                                                                                                                    |
+|    コンポーネント    |                                                                                                                                                                                   該当なし                                                                                                                                                                                    |
 |  シンボル名  |                                                                                                                                                                SSO_INFO_WINDOWS_MAPPING_CONFLICT_ALLOWED                                                                                                                                                                 |
-|  メッセージ テキスト   | 外部パスワード変更により、複数の Windows アカウントが変更されます。%r<br /><br /> この外部システムのアダプターは、マッピングの競合を許可するように構成されているため、これは許可されます。%r<br /><br /> 追跡 ID: %1 %r<br /><br /> アダプター: % 2 %r<br /><br /> 外部アカウント: % 3 %r<br /><br /> Windows アカウント 1: % 4 %r<br /><br /> Windows アカウント 2: %5 |
+|  メッセージ テキスト   | 外部パスワード変更が発生する 1 つ以上の Windows account.%r への変更<br /><br /> この外部システムのアダプタで構成されているマッピング conflicts.%r を許可するため、これは許可します。<br /><br /> 追跡 ID: %1 %r<br /><br /> アダプター: % 2 %r<br /><br /> 外部アカウント: % 3 %r<br /><br /> Windows アカウント 1: % 4 %r<br /><br /> Windows アカウント 2: %5 |
 
 ## <a name="explanation"></a>説明  
- この情報イベントは、外部パスワード変更により複数の Windows アカウントが変更されることを示します。  
+ この情報イベントは、外部パスワード変更は 1 つ以上の Windows アカウントへの変更が発生することを示します。  
 
 ## <a name="user-action"></a>ユーザーの操作  
 
--   ユーザーの操作は必要ありません。  
+-   ユーザー操作は必要ありません。  
 
-## <a name="more-info"></a>詳細
+## <a name="more-info"></a>詳細情報
 
 - [パスワード同期を管理する方法](../core/how-to-administer-password-synchronization.md)  
 
-- **パスワード同期アダプターのプロパティ: オプション** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]
+- **パスワード同期アダプターのプロパティ:オプション** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]
 
 - [パスワード同期](../core/password-synchronization2.md)

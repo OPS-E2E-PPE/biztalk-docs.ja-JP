@@ -1,5 +1,5 @@
 ---
-title: TPE のコンポーネント |Microsoft ドキュメント
+title: TPE のコンポーネント |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 79a693a5c5d77fd331a500049560de3aba1f5311
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d5443b469a334cd02a80d499f8c638071ead25e4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22231834"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65391657"
 ---
 # <a name="components-of-the-tpe"></a>TPE のコンポーネント
 このセクションでは、TPE のユーザー インターフェイスおよび実行される機能について説明します。  
@@ -28,8 +28,8 @@ ms.locfileid: "22231834"
   
 -   [TPE のメニュー オプション](../core/tpe-menu-options.md)  
   
--   [アクティビティ ビューとは何ですか。](../core/what-is-an-activity-view.md)  
+-   [アクティビティ ビューについて](../core/what-is-an-activity-view.md)  
   
--   [イベント ソース ビューとは何ですか。](../core/what-is-the-source-event-view.md)  
+-   [イベント ソース ビューについて](../core/what-is-the-source-event-view.md)  
   
 -   [TPE アクティビティ ビューのノード](../core/tpe-activity-view-nodes.md)

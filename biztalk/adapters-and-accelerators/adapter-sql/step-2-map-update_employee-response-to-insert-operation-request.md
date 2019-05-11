@@ -1,5 +1,5 @@
 ---
-title: '手順 2: UPDATE_EMPLOYEE 応答メッセージを挿入操作要求メッセージのマップ |Microsoft Docs'
+title: 手順 2:操作要求メッセージを挿入する UPDATE_EMPLOYEE 応答メッセージのマップ |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,22 +12,22 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1d158e0f7eed50a40d2696712bacee65a8de946a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 825eea8ba60d6b7767f9ea9b7536f8ed65470928
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37009019"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65367793"
 ---
-# <a name="step-2-map-the-updateemployee-response-message-to-insert-operation-request-message"></a>手順 2: UPDATE_EMPLOYEE 応答メッセージを挿入操作要求メッセージをマップします。
+# <a name="step-2-map-the-updateemployee-response-message-to-insert-operation-request-message"></a>手順 2:操作要求メッセージを挿入する UPDATE_EMPLOYEE 応答メッセージをマップします。
 ![手順 4 2](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-2of4.gif "Step_2of4")  
 
  **所要時間:** 10 分  
 
- **目標:** 、挿入操作を実行する要求メッセージを作成するこの手順で、 **Purchase_Order**テーブルし、の応答メッセージをマップし、 **UPDATE_EMPLOYEE**格納されています。プロシージャは、挿入操作の要求メッセージです。 これにより、挿入する応答メッセージの値で渡す、 **Purchase_Order**テーブル。  
+ **目標:** この手順で、挿入操作を実行する要求メッセージを作成する、 **Purchase_Order**テーブルし、の応答メッセージをマップし、 **UPDATE_EMPLOYEE**ストアド プロシージャを要求する挿入操作のメッセージ。 これにより、挿入する応答メッセージの値で渡す、 **Purchase_Order**テーブル。  
 
 ## <a name="prerequisites"></a>前提条件  
- 完了する必要があります[手順 1: Purchase_Order テーブルに対する挿入操作の要求メッセージを作成](../../adapters-and-accelerators/adapter-sql/step-1-create-the-request-message-for-insert-operation-on-purchase-order-table.md)です。  
+ 完了する必要があります[手順 1。Purchase_Order テーブルに対する挿入操作の要求メッセージを作成](../../adapters-and-accelerators/adapter-sql/step-1-create-the-request-message-for-insert-operation-on-purchase-order-table.md)です。  
 
 ### <a name="to-map-the-messages"></a>メッセージにマップするには  
 
@@ -56,7 +56,7 @@ ms.locfileid: "37009019"
    InsertPO(WCF.Action) = "TableOp/Insert/dbo/Purchase_Order";  
    ```  
 
-    ここでは、 **InsertPO**で作成したメッセージは、[手順 2: BizTalk オーケストレーションのメッセージの作成](../../adapters-and-accelerators/adapter-sql/step-2-create-messages-for-biztalk-orchestrations.md)挿入操作の要求メッセージを送信するため、 **Purchase_Order**テーブル。 **MessageAssignment**図形を呼び出す、 **UpdatePOMessageCreator**要求メッセージを作成するクラス。 また、要求メッセージの WCF アクションを設定します。  
+    ここでは、 **InsertPO**で作成したメッセージは、[手順 2。BizTalk オーケストレーションのメッセージを作成する](../../adapters-and-accelerators/adapter-sql/step-2-create-messages-for-biztalk-orchestrations.md)挿入操作の要求メッセージを送信するため、 **Purchase_Order**テーブル。 **MessageAssignment**図形を呼び出す、 **UpdatePOMessageCreator**要求メッセージを作成するクラス。 また、要求メッセージの WCF アクションを設定します。  
 
 6. 内で、**メッセージの構築**図形以降、**メッセージの割り当て**図形を追加、**変換**図形。  
 
@@ -96,8 +96,8 @@ ms.locfileid: "37009019"
  この手順では、レコードの挿入先のメッセージを作成、 **Purchase_Order**テーブルし、からの応答メッセージをマップし、 **UPDATE_EMPLOYEE**挿入ストアド プロシージャ、要求メッセージを操作です。  
 
 ## <a name="next-steps"></a>次の手順  
- 挿入操作を実行する要求メッセージを送信する、 **Purchase_Order**テーブルし、」の説明に従って、応答を受信[手順 3: 応答に挿入するレコードと受信要求メッセージを送信](../../adapters-and-accelerators/adapter-sql/step-3-send-the-request-message-to-insert-records-and-receive-a-response.md)します。  
+ 挿入操作を実行する要求メッセージを送信する、 **Purchase_Order**テーブルし、」の説明に従って、応答を受信[手順 3。レコードを挿入し、応答を受信する要求メッセージの送信](../../adapters-and-accelerators/adapter-sql/step-3-send-the-request-message-to-insert-records-and-receive-a-response.md)します。  
 
 ## <a name="see-also"></a>参照  
- [手順 1: Purchase_Order テーブルに対する挿入操作の要求メッセージを作成します。](../../adapters-and-accelerators/adapter-sql/step-1-create-the-request-message-for-insert-operation-on-purchase-order-table.md)   
- [レッスン 4: 注文テーブルに対して挿入操作を実行する](../../adapters-and-accelerators/adapter-sql/lesson-4-perform-an-insert-operation-on-the-purchase-order-table.md)
+ [ステップ 1: Purchase_Order テーブルに対する挿入操作の要求メッセージを作成します。](../../adapters-and-accelerators/adapter-sql/step-1-create-the-request-message-for-insert-operation-on-purchase-order-table.md)   
+ [レッスン 4:注文テーブルに対して挿入操作を実行する](../../adapters-and-accelerators/adapter-sql/lesson-4-perform-an-insert-operation-on-the-purchase-order-table.md)

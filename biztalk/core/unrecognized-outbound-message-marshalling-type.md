@@ -12,14 +12,14 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cda3e7bd3d20e39bb59c2c1fbe14dfc964fd541a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 46ce69344cc642836f4eb82af6eda84bf40798a6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37023432"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396049"
 ---
-# <a name="unrecognized-outbound-message-marshalling-type"></a>送信メッセージのマーシャリングの種類が認識されません
+# <a name="unrecognized-outbound-message-marshalling-type"></a>認識されない送信メッセージの型をマーシャ リング
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                        |
@@ -30,13 +30,13 @@ ms.locfileid: "37023432"
 |  イベント ソース   |                                           0                                            |
 |    コンポーネント    |                                           0                                            |
 |  シンボル名  |                                           0                                            |
-|  メッセージ テキスト   | 送信メッセージのマーシャリングの種類が認識されません。UseBodyElement または UseTemplate が必要です。 |
+|  メッセージ テキスト   | 認識されない送信メッセージの型をマーシャ リングUseBodyElement または UseTemplate が必要です |
   
 ## <a name="explanation"></a>説明  
- WCF.OutboundBodyLocation プロパティが、カスタムのパイプライン コンポーネントまたはオーケストレーションの UseBodyElement または UseTemplate とは異なる値に設定されています。  
+ WCF です。OutboundBodyLocation プロパティは、カスタム パイプライン コンポーネントまたはオーケストレーションの UseBodyElement または UseTemplate とは異なる値に設定されます。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- WCF.OutboundBodyLocation プロパティを有効な値に設定します。 有効な値は "UseBodyElement" または "UseTemplate" です。これはコードの変更です。   
+ WCF を設定します。有効な値に OutboundBodyLocation プロパティです。 有効な値は"UseBodyElement"または"UseTemplate"これは、コードを変更します。   
 送信メッセージの詳細については、の次のリソースを参照してください、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプします。  
   
 -   [WCF アダプター コンテキスト プロパティによる動的送信ポートの構成](../core/configuring-dynamic-send-ports-using-wcf-adapters-context-properties.md)  

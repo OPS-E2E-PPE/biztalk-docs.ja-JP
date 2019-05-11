@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10595 |Microsoft Docs'
+title: シングル サインオン:イベント 10595 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0cbc952197971f4e0db0586bc4f1d2d6c37aba44
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5b6aecfef61ece56075c4eb0c47ba7852380d4c1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36995227"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65397849"
 ---
-# <a name="single-sign-on-event-10595"></a>シングル サインオン: イベント 10595
+# <a name="single-sign-on-event-10595"></a>シングル サインオン:イベント 10595
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                                                                                                                                                    |
@@ -30,10 +30,10 @@ ms.locfileid: "36995227"
 |  イベント ソース   |                                                                                                       ENTSSO                                                                                                       |
 |    コンポーネント    |                                                                                                        なし                                                                                                         |
 |  シンボル名  |                                                                                           SSO_WARN_APP_INCOMPLETE_FIELDS                                                                                           |
-|  メッセージ テキスト   | このアプリケーションのフィールドが入力されていないので、アプリケーションを有効にすることができません。%r<br /><br /> アプリケーション名: %1 %r<br /><br /> 定義したフィールドの数: % 2 %r<br /><br /> 作成されたフィールドの数: %3 |
+|  メッセージ テキスト   | フィールドがこの application.%r 不完全なため、アプリケーションを有効にすることはできません。<br /><br /> アプリケーション名: %1 %r<br /><br /> 定義したフィールドの数: % 2 %r<br /><br /> 作成されたフィールドの数: %3 |
   
 ## <a name="explanation"></a>説明  
- API レベルでアプリケーションを作成するときに、アプリケーションで定義するフィールド (UserID、Password) を指定しました。 定義した各フィールドは、作成することも必要です。 この警告メッセージは、アプリケーション名、定義されているフィールド数、および作成されたフィールド数の一覧を表示します。  
+ レベル API でアプリケーションを作成、するときに、アプリケーションでは定義フィールド (UserID、Password) の数を指定します。 定義されている各フィールドを作成する必要があります。 この警告メッセージは、アプリケーション名、定義されている場合、フィールドの数と作成されたフィールドの数を示します。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- 定義済みだが作成されていないフィールドを特定し、前の手順に戻ってフィールドを作成します。
+ 定義済みだが作成されていないフィールドを決定し、戻ってそれらを作成します。

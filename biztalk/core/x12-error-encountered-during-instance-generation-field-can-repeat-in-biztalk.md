@@ -12,14 +12,14 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c6e5ed96162adac55de0bda042a12d45b4243eef
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1c589c4abfe957b2b6515a1508bdf2da3cadd75a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36971147"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65394771"
 ---
-# <a name="error-encountered-during-instance-generation--field-can-repeat-but-repetition-delimiter-has-not-been-defined"></a>インスタンスの生成中にエラーが発生しました。フィールドを繰り返すことはできますが、繰り返し区切り記号が定義されていません
+# <a name="error-encountered-during-instance-generation--field-can-repeat-but-repetition-delimiter-has-not-been-defined"></a>インスタンスの生成中に発生したエラー フィールドが繰り返すことができますが、繰り返し区切り記号が定義されていません
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                                                       |

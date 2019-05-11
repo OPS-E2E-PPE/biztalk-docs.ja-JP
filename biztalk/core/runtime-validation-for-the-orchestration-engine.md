@@ -24,12 +24,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 01c597cce40e962c9a62ba0cc21d12d52dae80f2
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 89423ce9b08aee8ed500b599a912f898c7284968
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37023120"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65393969"
 ---
 # <a name="runtime-validation-for-the-orchestration-engine"></a>オーケストレーション エンジンの実行時の検証
 オーケストレーション エンジンを構成して、オーケストレーションのテスト、および構成やデータの潜在的なエラーの診断をサポートする、さまざまな実行時検証を実行できます。  
@@ -44,7 +44,7 @@ ms.locfileid: "37023120"
   
 - 設定した場合、 **ExtendedLogging**フラグを`True`エンジンは、昇格させたプロパティを公開に失敗したメッセージをスローする Microsoft.XLANGs.BaseTypes.PublishMessageException の情報が表示されます。  
   
-  フラグを構成ファイルから完全に削除すれば、検証を無効にできます。 すべての検証が有効化されている場合は、アセンブリ、スキーマ、および関連付けの検証がオーケストレーション エンジンによって実行されます。 詳細と BTSNTSvc.exe.config の例については、[オーケストレーション エンジンの構成](../core/orchestration-engine-configuration.md)を参照してください。  
+  フラグを構成ファイルから完全に削除すれば、検証を無効にできます。 すべての検証が有効化されている場合は、アセンブリ、スキーマ、および関連付けの検証がオーケストレーション エンジンによって実行されます。 詳細と BTSNTSvc.exe.config の例については、次を参照してください。[オーケストレーション エンジンの構成](../core/orchestration-engine-configuration.md)します。  
   
 ## <a name="validate-assemblies"></a>アセンブリを検証します。  
  オーケストレーション エンジンでは、オーケストレーションによって参照され、かつアクセスの可能なすべてのアセンブリが検証されます。 検証に合格するためには、オーケストレーションの最初のインスタンスがアクティブ化されるときに、すべての参照アセンブリがグローバル アセンブリ キャッシュ (GAC) に存在する必要があります。 検証に失敗すると、アプリケーション ログにエラーが記録され、オーケストレーションが中断されます。  

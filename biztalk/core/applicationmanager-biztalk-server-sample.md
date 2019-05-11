@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b926f9e848ab86f5b168d46b3b0e84d85356f592
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1b5a95766edbe1610c1e209734529f33f0eb759d
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37010739"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65530702"
 ---
 # <a name="applicationmanager-biztalk-server-sample"></a>ApplicationManager (BizTalk Server サンプル)
 ApplicationManager サンプルでは、管理オブジェクトを使用して BizTalk アプリケーションを開始または停止する方法を示します。  
@@ -26,7 +26,7 @@ ApplicationManager サンプルでは、管理オブジェクトを使用して 
 
 - このサンプルの管理オブジェクトを使用するには、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者特権が必要です。  
 
-- Windows PowerShell スクリプトを実行するには、Windows PowerShell 実行ポリシーが必要です。 詳細については、:[実行ポリシーの確認](http://go.microsoft.com/fwlink/?LinkId=128930)を参照してください。  
+- Windows PowerShell スクリプトを実行するには、Windows PowerShell 実行ポリシーが必要です。 詳しくは、次のトピックをご覧ください。[実行ポリシーの確認](http://go.microsoft.com/fwlink/?LinkId=128930)します。  
 
 ## <a name="what-this-sample-does"></a>このサンプルの処理  
  このサンプルを使用して、 **BtsCatalogExplorer**と**アプリケーション**クラスを**Microsoft.BizTalk.ExplorerOM**を開始および停止、展開済みの名前空間 BizTalk アプリケーション。 サンプルは Microsoft [!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)] で作成されています。 このトピックには、Windows PowerShell のスクリプト例も含まれています。 このサンプルは次の操作を示します。  
@@ -40,7 +40,7 @@ ApplicationManager サンプルでは、管理オブジェクトを使用して 
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
  このサンプルは、SDK がある次の場所にあります。  
 
- \<*パスのサンプル*\>\Admin\ExplorerOM\ApplicationManager  
+ \<*Samples Path*\>\Admin\ExplorerOM\ApplicationManager  
 
  次の表は、このサンプルのファイルとその目的を示しています。  
 
@@ -62,7 +62,7 @@ ApplicationManager サンプルでは、管理オブジェクトを使用して 
 
 1. コマンド ウィンドウを開き、次のフォルダーに移動します。  
 
-    \<*パスのサンプル*\>\Admin\ExplorerOM\ApplicationManager\bin\Debug  
+    \<*Samples Path*\>\Admin\ExplorerOM\ApplicationManager\bin\Debug  
 
 2. 次の 2 つのコマンドライン引数を順番どおりに指定して、ApplicationManager.exe ファイルを実行します。  
 

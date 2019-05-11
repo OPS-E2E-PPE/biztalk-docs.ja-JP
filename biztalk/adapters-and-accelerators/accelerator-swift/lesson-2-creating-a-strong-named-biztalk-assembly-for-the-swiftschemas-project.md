@@ -1,5 +1,5 @@
 ---
-title: 'レッスン 2: SWIFTSchemas プロジェクト用の厳密な名前の BizTalk アセンブリを作成する |Microsoft Docs'
+title: レッスン 2:SWIFTSchemas プロジェクト用の厳密な名前の BizTalk アセンブリを作成する |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,14 +15,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d8e5b9ccc56b6b75ea574f956faac462e5b35dca
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 98739cfa16aa519bc67ca5a4c2b5dfa5bd2af371
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36995523"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65530347"
 ---
-# <a name="lesson-2-creating-a-strong-named-biztalk-assembly-for-the-swiftschemas-project"></a>レッスン 2: SWIFTSchemas プロジェクト用の厳密な名前の BizTalk アセンブリを作成します。
+# <a name="lesson-2-creating-a-strong-named-biztalk-assembly-for-the-swiftschemas-project"></a>レッスン 2:SWIFTSchemas プロジェクト用の厳密な名前の BizTalk アセンブリを作成します。
 このレッスンでは、BizTalk アセンブリをコンパイルおよび展開する、厳密な名前を作成します。 厳密な名前のアセンブリには、いくつかのセキュリティの利点があります。  
   
 - 厳密な名前では、デジタル署名と一意キーのペアを割り当てることで、アセンブリの一意性を保証します。  
@@ -58,4 +58,4 @@ ms.locfileid: "36995523"
   
 10. **ファイル** メニューのをクリックして**すべて保存**変更を保存します。  
   
-    続行する[レッスン 3: SWIFT スキーマをプロジェクトに追加する](../../adapters-and-accelerators/accelerator-swift/lesson-3-adding-swift-schemas-to-a-project.md)します。
+    続行する[レッスン 3。SWIFT スキーマをプロジェクトに追加する](../../adapters-and-accelerators/accelerator-swift/lesson-3-adding-swift-schemas-to-a-project.md)します。

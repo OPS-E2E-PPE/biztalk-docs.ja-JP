@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7b8843a3336c6cec17120bef109aa5119509aed9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d7da481b326c434890d18d08b4a1625602ba0e3e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36999763"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65370367"
 ---
 # <a name="use-a-custom-web-part-with-the-siebel-adapter"></a>Siebel アダプターを使用したカスタム Web パーツを使用します。
 このセクションでは、Microsoft Office SharePoint Server でカスタム Web パーツの使用に関する情報を提供します。 カスタム Web パーツを使用するには、次の操作を行う必要があります。  
@@ -31,11 +31,11 @@ ms.locfileid: "36999763"
 ## <a name="before-you-begin"></a>はじめに  
  カスタム Web パーツを作成する前に。  
   
--   WCF サービスとしての Siebel 成果物を発行します。 詳細については、[手順 1: WCF サービスとしての Siebel ビジネス コンポーネント操作を発行](../../adapters-and-accelerators/adapter-siebel/step-1-publish-the-siebel-business-component-operations-as-a-wcf-service.md)で[チュートリアル 1: 提示データ Siebel システムから SharePoint サイトで](../../adapters-and-accelerators/adapter-siebel/tutorial-1-presenting-data-from-a-siebel-system-on-a-sharepoint-site.md)を参照してください。  
+-   WCF サービスとしての Siebel 成果物を発行します。 詳細については、次を参照してください。[手順 1。Siebel ビジネス コンポーネントの操作を WCF サービスとして発行](../../adapters-and-accelerators/adapter-siebel/step-1-publish-the-siebel-business-component-operations-as-a-wcf-service.md)で[チュートリアル 1。SharePoint サイト上の Siebel システムからのデータを表示する](../../adapters-and-accelerators/adapter-siebel/tutorial-1-presenting-data-from-a-siebel-system-on-a-sharepoint-site.md)します。  
   
--   Microsoft Office SharePoint Server でビジネス データ カタログを使用して Siebel アイテム用のアプリケーション定義ファイルを作成します。 詳細については、[手順 2: Siebel ビジネス コンポーネント操作用のアプリケーション定義ファイルの作成](../../adapters-and-accelerators/adapter-siebel/step-2-create-an-application-definition-file-for-siebel-business-component.md)で[チュートリアル 1: 提示データ Siebel システムから SharePoint サイトで](../../adapters-and-accelerators/adapter-siebel/tutorial-1-presenting-data-from-a-siebel-system-on-a-sharepoint-site.md)を参照してください。  
+-   Microsoft Office SharePoint Server でビジネス データ カタログを使用して Siebel アイテム用のアプリケーション定義ファイルを作成します。 詳細については、次を参照してください。[手順 2。Siebel ビジネス コンポーネント操作用のアプリケーション定義ファイルの作成](../../adapters-and-accelerators/adapter-siebel/step-2-create-an-application-definition-file-for-siebel-business-component.md)で[チュートリアル 1。SharePoint サイト上の Siebel システムからのデータを表示する](../../adapters-and-accelerators/adapter-siebel/tutorial-1-presenting-data-from-a-siebel-system-on-a-sharepoint-site.md)します。  
   
-##  <a name="Create_a_Custom_Web_Part"></a> 手順 1: カスタム Web パーツを作成します。  
+##  <a name="Create_a_Custom_Web_Part"></a> ステップ 1:カスタム Web パーツを作成します。  
  Visual Studio を使用して、カスタム Web パーツを作成するには、次の操作を行います。  
   
 1.  Visual Studio を起動し、プロジェクトを作成します。  
@@ -50,15 +50,15 @@ ms.locfileid: "36999763"
   
 6.  プロジェクトをビルドする。 プロジェクトの成功したビルドで CustomWebPart.dll、.dll ファイルが生成されます、 \<*プロジェクト フォルダー*\>bin/デバッグ フォルダー。  
   
-## <a name="step-2-deploy-the-custom-web-part-to-a-sharepoint-portal"></a>手順 2: SharePoint ポータルにカスタム Web パーツを展開します。  
- 作成される CustomWebPart.dll ファイル (カスタム Web パーツ) を作成するには、次を行う必要があります"手順 1: カスタム Web パーツの作成"のこのトピックでは、SharePoint ポータル上で使用。  
+## <a name="step-2-deploy-the-custom-web-part-to-a-sharepoint-portal"></a>手順 2:SharePoint ポータルにカスタム Web パーツを展開します。  
+ 作成される CustomWebPart.dll ファイル (カスタム Web パーツ) を作成するには、次を行う必要があります"手順 1。カスタム Web パーツを作成"このトピックでの SharePoint ポータルの使用:  
   
--   **SharePoint Portal の bin フォルダーに CustomWebPart.dll ファイルをコピー**: Microsoft Office SharePoint Server は、ポータルを作成、 \<*ドライブのルート*\>: \Inetpub\wwwroot\wss\VirtualDirectories フォルダーです。 フォルダーは、それぞれのポータルが作成され、ポート番号で識別できます。 作成した CustomWebPart.dll ファイルをコピーする必要があります"手順 1: カスタム Web パーツの作成"するには、このトピックの\<*ドライブのルート*\>: \Inetpub\wwwroot\wss\VirtualDirectories\\ <*Port_Number*\>\bin フォルダー。 たとえば、SharePoint ポータルのポート番号が 13614 の場合に CustomWebPart.dll ファイルをコピーする必要があります、 \<*ドライブのルート*\>: \Inetpub\wwwroot\wss\VirtualDirectories\13614\bin フォルダー。  
+-   **SharePoint Portal の bin フォルダーに CustomWebPart.dll ファイルをコピー**:Microsoft Office SharePoint Server は、ポータルを作成、 \<*ドライブのルート*\>: \Inetpub\wwwroot\wss\VirtualDirectories フォルダー。 フォルダーは、それぞれのポータルが作成され、ポート番号で識別できます。 作成した CustomWebPart.dll ファイルをコピーする必要があります"手順 1。カスタム Web パーツの作成"するには、このトピックの\<*ドライブのルート*\>: \Inetpub\wwwroot\wss\VirtualDirectories\\<*Port_Number* \>\bin フォルダー。 たとえば、SharePoint ポータルのポート番号が 13614 の場合に CustomWebPart.dll ファイルをコピーする必要があります、 \<*ドライブのルート*\>: \Inetpub\wwwroot\wss\VirtualDirectories\13614\bin フォルダー。  
   
     > [!TIP]
     >  使用して、SharePoint ポータルのフォルダーの場所を検索する別の方法は、**インターネット インフォメーション サービス (IIS) マネージャー**ウィンドウ (**開始** > **実行** >  **inetmgr**)。 SharePoint ポータルの検索、**インターネット インフォメーション サービス (IIS) マネージャー**ウィンドウ ([*computer_name*] > の Web サイト > [*ポータル名*]) を右クリックしとクリックして**プロパティ**ショートカット メニュー。 SharePoint ポータルの [プロパティ] ダイアログ ボックスでをクリックして、**ホーム ディレクトリ**、タブを選び、**ローカル パス**ボックス。  
   
--   **Web.config ファイルの安全なコントロール エントリを追加**: CustomWebPart.dll ファイルを別のコンピューターと、複数のユーザーが使用するため、"safe"としてファイルを宣言する必要があります。 これを行うには、SharePoint portal フォルダーにある web.config ファイルを開く\<*ドライブのルート*\>: \Inetpub\wwwroot\wss\VirtualDirectories\\< Port_Number\>します。 下、`<SafeControls>`セクション、web.config ファイルの次の安全なコントロール エントリを追加します。  
+-   **Web.config ファイルに安全なコントロール エントリを追加**:CustomWebPart.dll ファイルを別のコンピューターと、複数のユーザーが使用するため、「安全」としてファイルを宣言する必要があります。 これを行うには、SharePoint portal フォルダーにある web.config ファイルを開く\<*ドライブのルート*\>: \Inetpub\wwwroot\wss\VirtualDirectories\\< Port_Number\>します。 下、`<SafeControls>`セクション、web.config ファイルの次の安全なコントロール エントリを追加します。  
   
     ```  
     <SafeControl Assembly="CustomWebPart" Namespace="CustomWebPart" TypeName="*" Safe="True" />  
@@ -66,7 +66,7 @@ ms.locfileid: "36999763"
   
      Web.config ファイルを保存して、閉じます。  
   
-## <a name="step-3-configure-the-sharepoint-portal-to-use-the-custom-web-part"></a>手順 3: カスタムの Web パーツを使用する SharePoint ポータルを構成します。  
+## <a name="step-3-configure-the-sharepoint-portal-to-use-the-custom-web-part"></a>手順 3:カスタム Web パーツを使用する SharePoint ポータルを構成します。  
  これを使用するには、SharePoint ポータルにするために、Microsoft Office SharePoint Server Web パーツ ギャラリーでカスタム Web パーツを追加する必要があります。 そのためには次を行います。  
   
 1. SharePoint 3.0 サーバーの全体管理を開始します。 クリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**Microsoft Office Server**、順にクリックします**SharePoint 3.0 サーバーの全体管理**.  

@@ -20,15 +20,15 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: df3b56a3703e56dd4b3f474b4846999bae9858f0
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3366ed738020ebf90fadfb104f860f0cdb952168
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37016108"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396988"
 ---
 # <a name="processing-instructions-in-the-xml-assembler-pipeline-component"></a>手順については、XML アセンブラー パイプライン コンポーネントでの処理
-処理命令は、XML ドキュメントを処理するアプリケーションに対する情報を提供します。 この情報には、ドキュメントの処理方法や表示方法などの命令が含まれます。  
+処理命令は、XML ドキュメントを処理するアプリケーションに情報を提供します。 このような情報は、ドキュメントを処理する方法に関する指示を含めることができ、それを表示する方法。  
   
  処理命令は、XML ドキュメントに追加、**処理命令の追加**プロパティ (または同等の**XMLNorm.ProcessingInstructionOption**メッセージ コンテキストのプロパティ)。 処理命令テキストを指定した、**処理命令テキストの追加**プロパティ (または同等の**XMLNorm.ProcessingInstruction**メッセージ コンテキストのプロパティ)。  
   
@@ -36,18 +36,18 @@ ms.locfileid: "37016108"
   
 |値|値|説明|  
 |-----------|-----------|-----------------|  
-|追加|0|XML アセンブラーからの新しい処理命令は、ドキュメントの最初の処理命令に追加されます。|  
-|新規作成します。|1|XML アセンブラーからの新しい処理命令は、ドキュメントの最初の既存の処理命令を上書きします。|  
-|Ignore|2|ドキュメントの最初の処理命令は、削除されます。|  
+|追加|0|XML アセンブラーからの新しい処理命令は、ドキュメントの先頭にある処理命令に付加されます。|  
+|新規作成します。|1|XML アセンブラーからの新しい処理命令は、ドキュメントの先頭にある既存の処理命令を上書きします。|  
+|Ignore|2|ドキュメントの先頭にある処理命令が削除されます。|  
   
- メッセージ コンテキストで指定される処理命令 (またはメッセージ コンテキスト プロパティ) のペアは、パイプライン デザイナーで指定されるプロパティ ペアよりも優先されます。 たとえば場合、 **XMLNorm.ProcessingInstructionOption**として指定されて**新規作成**(1) と**XMLNorm.ProcessingInstruction**が指定されていない空の処理命令は、既存の処理命令が置き換えられます。  
+ 処理命令 (またはメッセージ コンテキストのプロパティ) のメッセージ コンテキストで指定されたペアは、パイプライン デザイナーで指定されるプロパティ ペアよりも優先されます。 たとえば場合、 **XMLNorm.ProcessingInstructionOption**として指定されて**新規作成**(1) と**XMLNorm.ProcessingInstruction**が指定されていない空の処理命令は、既存の処理命令が置き換えられます。  
   
  別の例として場合**XMLNorm.ProcessingInstruction**が指定されて、 **XMLNorm.ProcessingInstructionOption**は、メッセージ コンテキストからプロパティのいずれもが使用されます。 この場合、パイプライン デザイナーからの処理命令が使用されます。  
   
  既定では、**処理命令の追加**に設定されている**Append**、および**処理命令テキストの追加**が空です。  
   
 ## <a name="processing-properties-and-envelopes"></a>プロパティおよびエンベロープの処理  
- 処理命令はエンベロープ用に維持されないので、フラット ファイル アセンブラー設定の次の組み合わせは、処理命令を持つ最も外側にあるエンベロープのみに適用されます。  
+ 処理命令はエンベロープ用保持されず、ため、処理命令を持つ最も外側にあるエンベロープのみにフラット ファイル アセンブラー設定の次の組み合わせが発生します。  
   
 - **処理命令スコープ**プロパティが「エンベロープ」に設定  
   

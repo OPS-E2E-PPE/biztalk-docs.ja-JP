@@ -16,70 +16,70 @@ caps.latest.revision: 23
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fb385fef1f71d247e09ca2ee5a67d2c19fb29d86
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: dce1313fd851d04a490a31b602611072ade2242d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36994427"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396055"
 ---
 # <a name="submitdirect-biztalk-server-sample"></a>SubmitDirect (BizTalk Server サンプル)
-SubmitDirect サンプルは、.NET ベースのアプリケーションから Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] に一方向のメッセージおよび要求 - 応答メッセージをプログラムで送信する方法を示します。 このサンプルでは、アダプターに [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] API を使用する例を示します。 また、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] にメッセージを送信するために使用できる、Submit という名前の受信アダプターを提供します。  
+SubmitDirect サンプル プログラムで、一方向送信する方法と要求/応答メッセージを Microsoft[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]から。NET ベースのアプリケーション。 サンプルの使用[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]アダプター Api。 メッセージを送信するために使用できる、Submit という名前の受信アダプターも用意されています。[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]します。  
 
 ## <a name="prerequisites"></a>前提条件  
- このサンプルを実行する前に、BizTalk 分離ホスト ユーザー グループに属するユーザーとしてログオンしていることを確認してください。  
+ このサンプルを実行する前に、BizTalk 分離ホスト ユーザー グループに属するユーザーとしてログオンしていることを確認します。  
 
 ## <a name="what-this-sample-does"></a>このサンプルの処理  
- このサンプルでは、BizTalk アダプタに関連するさまざまな作業を実行する方法を示します。 具体的には、表示する方法。  
+ このサンプルでは、BizTalk アダプターに関連するさまざまなタスクを実行する方法を示します。 具体的には、表示する方法。  
 
-- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] プロセスの外部で実行される分離アダプターを操作します。 Submit アダプターは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] プロセスの外部のプロセスによって作成されるので、分離アダプターです (Submit アダプターは .NET アプリケーションとして起動されます)。  
+- 外部で実行される分離アダプターの動作、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]プロセス。 外部プロセスによって作成されるので、送信アダプターは分離アダプター、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]プロセス (起動する .NET アプリケーションとして)。  
 
-- メッセージのバッチを [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] に送信します。 Submit アダプタは、バッチ メッセージ送信機能を使用して複数のメッセージを同時に送信します。  
+- メッセージのバッチを送信[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]します。 Submit アダプタは、一度に複数のメッセージを送信するのにバッチ メッセージ送信機能を使用します。  
 
-- 要求 - 応答パラダイムを使用したメッセージの同期送信と、一方向パラダイムを使用したメッセージの非同期送信を行います。  
+- 同期的に、要求/応答パラダイムを使用して、非同期的に一方向パラダイムを使用してメッセージを送信します。  
 
-- アダプターを [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] に登録します。 このサンプルでは、アダプタの登録方法を示し、アダプタの登録を自動化する登録実行可能ファイルを提供します。  
+- 登録のアダプターが[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]します。 このサンプルでは、アダプターを登録する方法を示していて、アダプターの登録を自動化する登録実行可能ファイルを提供します。  
 
-  このサンプルは、次の 2 つのサンプルを 1 つにまとめたものです。  
+  このサンプルでは、1 つは、実際には 2 つのサンプルをとおりです。  
 
-- **一方向のメッセージのバッチを送信します。** コンソール アプリケーション SubmitMessages.exe は、コマンドラインから文字列を受け取るし、それぞれを別々 のメッセージとして送信する[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]します。 送信された各メッセージは、受信場所で [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] によって取得され、パススルー受信パイプラインおよびパススルー送信パイプライン経由で送信された後、テキスト ファイルに書き込まれます。  
+- **一方向のメッセージのバッチを送信します。** コンソール アプリケーション SubmitMessages.exe は、コマンドラインから文字列を受け取るし、それぞれを別々 のメッセージとして送信する[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]します。 メッセージは、受信場所で取得が送信された各[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]、パススルー受信パイプラインおよび送信パイプラインを通じて送信され、テキスト ファイルに書き込まれます。  
 
-- **要求/応答メッセージの送信。** コンソール アプリケーション SubmitRequest.exe はコマンドラインで指定された .xml ファイルを受け取るし、それに送信[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]します。 この .xml ファイルのスキーマは、2 つの整数フィールドを含む要素を定義します。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は .xml ファイルを取得し、それを 1 つの要求 - 応答ポートを使用するオーケストレーションによって処理します。 このとき、マップを使用して、要求に含まれる 2 つの整数の積を表す整数を返す XML 応答メッセージを生成します。 コンソール アプリケーションが応答を受け取ると、結果が表示されます。  
+- **要求/応答メッセージの送信。** コンソール アプリケーション SubmitRequest.exe はコマンドラインで指定された .xml ファイルを受け取るし、それに送信[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]します。 この .xml ファイルのスキーマでは、2 つの整数フィールドが含まれている要素を定義します。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] .xml ファイルを取得し、それを (1 つの要求/応答のポート) を使用したオーケストレーションによって処理します。 マップを使用して、要求で 2 つの整数の積である整数を返す XML 応答メッセージを生成します。 コンソール アプリケーションは、応答を受信すると、結果が表示されます。  
 
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
- \<*パスのサンプル*\>\AdaptersDevelopment\SubmitDirect\  
+ \<*Samples Path*\>\AdaptersDevelopment\SubmitDirect\  
 
- 次の表は、このサンプルのファイルとその目的を示しています。  
+ 次の表では、このサンプルではファイルの一覧し、その目的について説明します。  
 
 
 |                                                                                                                     ファイル                                                                                                                      |                                                                                              説明                                                                                               |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |                                                                                                                   Cleanup.bat                                                                                                                    |    必要に応じて、アセンブリの展開の解除とグローバル アセンブリ キャッシュ (GAC) からのアセンブリの削除、送信および受信ポートの削除、Microsoft インターネット インフォメーション サービス (IIS) の仮想ディレクトリの削除などを行います。    |
 |                                                                                                                    Setup.bat                                                                                                                     |                                                                                  このサンプルを作成および初期化します。                                                                                   |
-|                                                                                                                 SubmitDirect.sln                                                                                                                 |                                ProcessRequest フォルダの BizTalk プロジェクトとその他のフォルダの Microsoft Visual C# プロジェクトを含むソリューション ファイルです。                                 |
-|                                                                                               SubmitMessagesBinding.xml、SubmitRequestBinding.xml                                                                                                |                                                                             ポートのバインドなど、自動化されたセットアップに使用されます。                                                                             |
-|                                                              \ProcessRequest フォルダには、次のファイルが含まれます。<br /><br /> DocIn.xsd、DocOut.xsd、Multiplier.odx、Multiply.btm、ProcessRequest.btproj                                                               |                                               要求 - 応答シナリオで整数の乗算を実行する BizTalk プロジェクトを提供します。                                                |
-|                                                                       \SubmitMessages フォルダには、次のファイルが含まれます。<br /><br /> AssemblyInfo.cs、SubmitMessages.cs、SubmitMessages.csproj                                                                       |                                コマンド ライン文字列パラメータを別々のメッセージのバッチとして渡すコンソール アプリケーションの Visual C# プロジェクトを提供します。                                |
-|                                                                \SubmitRequest フォルダには、次のファイルが含まれます。<br /><br /> AssemblyInfo.cs、DocInstance.xml、SubmitRequest.cs、SubmitRequest.csproj                                                                |                                 乗算する 2 つの整数を含む .xml ファイル (DocInstance.xml) を渡すコンソール アプリケーションの C# プロジェクトを提供します。                                 |
-| \TransportProxyUtils フォルダには、次のファイルが含まれます。<br /><br /> AssemblyInfo.cs、MessageHelper.cs、MessagingAPIInterface.cs、MessagingAPIs.cs、ResponseCallBack.cs、TpBatchAsyncCallback.cs、TpBatchAsyncResult.cs、TpBatchStatus.cs、TransportProxyUtils.csproj | Submit アダプタの、同期および非同期のメッセージ送信を行うメソッドとバッチおよび単一の要求メッセージ送信を行うメソッドを実装するランタイム部分の C# プロジェクトを提供します。 |
-|                                                              \TransportProxyUtilsReg フォルダには、次のファイルが含まれます。<br /><br /> AssemblyInfo.cs、RegisterAdapter.cs、TransportProxyUtilsReg.csproj                                                               |           [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] にアダプターを登録するために使用するコードを示す Visual C# プロジェクトを提供します。           |
-|                                                           \TransportProxyUtilsUI フォルダには、次のファイルが含まれます。<br /><br /> AssemblyInfo.cs、TransportProxyUtilsMgmt.cs、TransportProxyUtilsUI.csproj                                                            |                                                           Submit アダプターのユーザー インターフェイス部分の Visual C# プロジェクトを提供します。                                                           |
+|                                                                                                                 SubmitDirect.sln                                                                                                                 |                                ProcessRequest フォルダと Microsoft Visual で BizTalk プロジェクトを含むソリューション ファイルC#他のフォルダー内のプロジェクト。                                 |
+|                                                                                               SubmitMessagesBinding.xml, SubmitRequestBinding.xml                                                                                                |                                                                             ポートのバインドなど、自動化されたセットアップに使用されます。                                                                             |
+|                                                              \ProcessRequest フォルダー。<br /><br /> DocIn.xsd, DocOut.xsd, Multiplier.odx, Multiply.btm, ProcessRequest.btproj                                                               |                                               要求/応答シナリオで整数の乗算を実行する BizTalk プロジェクトを提供します。                                                |
+|                                                                       \SubmitMessages フォルダー。<br /><br /> AssemblyInfo.cs, SubmitMessages.cs, SubmitMessages.csproj                                                                       |                                ビジュアルを提供します。C#を別々 のメッセージのバッチとしてそのコマンドライン文字列パラメータを渡すコンソール アプリケーション用のプロジェクト。                                |
+|                                                                In the \SubmitRequest folder:<br /><br /> AssemblyInfo.cs, DocInstance.xml, SubmitRequest.cs, SubmitRequest.csproj                                                                |                                 提供、C#を乗算する 2 つの整数を含む .xml ファイル (DocInstance.xml) を渡すコンソール アプリケーション用のプロジェクト。                                 |
+| \TransportProxyUtils フォルダー。<br /><br /> AssemblyInfo.cs, MessageHelper.cs, MessagingAPIInterface.cs, MessagingAPIs.cs, ResponseCallBack.cs, TpBatchAsyncCallback.cs, TpBatchAsyncResult.cs, TpBatchStatus.cs, TransportProxyUtils.csproj | 提供、 C# 、同期および非同期メッセージを送信し、バッチおよび 1 つの要求メッセージの送信メソッドを実装する送信アダプターのランタイム部分のプロジェクト。 |
+|                                                              \TransportProxyUtilsReg フォルダー。<br /><br /> AssemblyInfo.cs, RegisterAdapter.cs, TransportProxyUtilsReg.csproj                                                               |           ビジュアルを提供します。C#アダプターを登録するために使用できるコードを示すプロジェクト[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]します。           |
+|                                                           \TransportProxyUtilsUI フォルダー。<br /><br /> AssemblyInfo.cs, TransportProxyUtilsMgmt.cs, TransportProxyUtilsUI.csproj                                                            |                                                           ビジュアルを提供します。 C# Submit アダプタのユーザー インターフェイス部分のプロジェクト。                                                           |
 
 ## <a name="building-and-initializing-the-sample"></a>サンプルのビルドおよび初期化  
 
-#### <a name="to-build-and-initialize-the-submitdirect-sample"></a>SubmitDirect サンプルをビルドおよび初期化するには  
+#### <a name="to-build-and-initialize-the-submitdirect-sample"></a>ビルドして、SubmitDirect サンプルの初期化  
 
 1. コマンド ウィンドウで、次のフォルダーに移動します。  
 
-    \<*パスのサンプル*\>\AdaptersDevelopment\SubmitDirect  
+    \<*Samples Path*\>\AdaptersDevelopment\SubmitDirect  
 
 2. ファイルは、次の操作を実行します。 Setup.bat を実行します。  
 
-   - このサンプルのバッチ送信部分用に、次の出力フォルダを作成します。  
+   - このサンプルのバッチ送信部分の次の出力フォルダーを作成します。  
 
-      \<*パスのサンプル*\>\AdaptersDevelopment\SubmitDirect\Out  
+      \<*Samples Path*\>\AdaptersDevelopment\SubmitDirect\Out  
 
-   - このサンプル用に、さまざまな [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] プロジェクトをコンパイルします。  
+   - さまざまなコンパイル[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]このサンプルのプロジェクト。  
 
    - Submit アダプターを登録します[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]します。  
 
@@ -94,7 +94,7 @@ SubmitDirect サンプルは、.NET ベースのアプリケーションから M
      >   
      >  これらの警告は、無視してもかまいません  (インストールでの名前付け方法はユーザーによって異なる可能性があるため、ホスト名と受信ハンドラーはバインド ファイルから除外されています。)  
 
-   - 受信場所を有効にし、送信ポートとオーケストレーションを開始します。  
+   - 受信場所を使用し、送信ポートおよびオーケストレーションを開始します。  
 
      > [!NOTE]
      >  このサンプルを実行する前に、ビルドと初期化のプロセス中に [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] でエラーが報告されていないことを確認する必要があります。  
@@ -106,58 +106,58 @@ SubmitDirect サンプルは、.NET ベースのアプリケーションから M
      >  Setup.bat によって行われた変更を元に戻すには、Cleanup.bat を実行します。 Setup.bat を 2 回目に実行する場合は、その前に Cleanup.bat を実行してください。  
 
 ## <a name="running-the-sample"></a>サンプルを実行します。  
- このサンプルではファイル アダプタを使用するため、BizTalk ホスト (BizTalkServerApplication) が実行されている必要があります。 次の手順を使用して、SubmitDirect サンプルを実行します。  
+ このサンプルでは、ファイル アダプターを使用するためには、BizTalk ホスト (BizTalkServerApplication) を実行する必要があります。 SubmitDirect サンプルを実行するのにには、次の手順を使用します。  
 
 #### <a name="to-run-the-batch-submission-portion-of-the-submitdirect-sample"></a>SubmitDirect サンプルのバッチ送信部分を実行するには  
 
 1.  コマンド ウィンドウで、次のフォルダーに移動します。  
 
-     \<*パスのサンプル*\>\AdaptersDevelopment\SubmitDirect\SubmitMessages\bin\Debug  
+     \<*Samples Path*\>\AdaptersDevelopment\SubmitDirect\SubmitMessages\bin\Debug  
 
-2.  ファイル SubmitMessages.exe を実行し、コマンド ラインで複数の文字列を渡します。  
+2.  ファイル SubmitMessages.exe、コマンドラインで複数の文字列を渡すことを実行します。  
 
-     例: SubmitMessages msg1 msg2 msg3  
+     例:SubmitMessages msg1 msg2 msg3  
 
-3.  複数のテキスト ファイルが Out 出力フォルダに作成されることを確認します。これらのファイルには、ファイルごとに 1 つずつ、コマンド ラインで渡された文字列が含まれています。  
+3.  Out 出力フォルダに作成された複数のテキスト ファイルを確認します。これらのファイルには、ファイルごとに 1 つのコマンド ラインで渡された文字列が含まれます。  
 
-#### <a name="to-run-the-requestresponse-portion-of-the-submitdirect-sample"></a>SubmitDirect サンプルの要求 - 応答部分を実行するには  
+#### <a name="to-run-the-requestresponse-portion-of-the-submitdirect-sample"></a>SubmitDirect サンプルの要求/応答の部分を実行するには  
 
 1.  コマンド ウィンドウで、次のフォルダーに移動します。  
 
-     \<*パスのサンプル*\>\AdaptersDevelopment\SubmitDirect\SubmitRequest\bin\Debug  
+     \<*Samples Path*\>\AdaptersDevelopment\SubmitDirect\SubmitRequest\bin\Debug  
 
-2.  ファイル SubmitRequest.exe を実行し、コマンド ラインで適切な .xml ファイル名を渡します。  
+2.  ファイル SubmitRequest.exe、コマンドラインで、適切な .xml ファイル名を渡すことを実行します。  
 
-     例: SubmitRequest.\\..\DocInstance.xml  
+     例:SubmitRequest ..\\..\DocInstance.xml  
 
-3.  乗算演算の結果を含む応答 XML メッセージがコンソールに表示されることを確認します。  
+3.  コンソールに表示される乗算演算の結果を含む応答 XML メッセージを確認します。  
 
 ## <a name="comments"></a>コメント  
- Submit アダプタは、他のアプリケーションでも使用できます。 このアダプターを任意の .NET ベースのコードから使用すると、プログラムで [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] にメッセージを送信できます。 このアダプタをコードで使用するには、次の手順を実行します。  
+ Submit アダプタは、その他のアプリケーションで使用できます。 いずれかから使用できます。NET ベースのコードにメッセージを送信、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]プログラムを使用します。 で、コードをこのアダプターを使用するには、次の手順を使用します。  
 
-#### <a name="to-use-the-sample-adapter-with-your-code"></a>サンプル アダプタをコードで使用するには  
+#### <a name="to-use-the-sample-adapter-with-your-code"></a>サンプル アダプターをコードで使用するには  
 
-1. Submit アダプターを [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] に登録します。 このサンプルで提供されているファイル Setup.bat を実行済みの場合、このアダプタは既に登録されて使用できる状態になっています。 それ以外の場合は、TransportProxyUtils.csproj、TransportProxyUtilsUI.csproj、および TransportProxyUtilsReg.csproj プロジェクトをビルドし、TransportProxyUtilsReg.csproj プロジェクトによって生成された実行可能ファイル RegisterAdapter.exe を実行するとアダプタを登録できます。  
+1. Submit アダプターを登録、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]します。 このサンプルに付属する Setup.bat ファイルを実行する場合、アダプターが登録され、使用する準備になります。 それ以外の場合、TransportProxyUtils.csproj、TransportProxyUtilsUI.csproj、および TransportProxyUtilsReg.csproj プロジェクトをビルドし、プロジェクト、RegisterAdapter.exe によって生成された実行可能ファイルを実行して登録できます。  
 
    > [!IMPORTANT]
    >  BizTalk を 64 ビット コンピューターにインストールすると、hkey_classes_root \clsid\ レジストリ エントリのすべてのインスタンスを hkey_classes_root \wow6432node\clsid\ に変更、 **RegisterAdapter.cs**ファイル。  
 
-2. Submit アダプタを使用する受信場所を指定して、受信ポートを作成します。 受信場所のアドレスを指定します。 アドレスには、このアダプタを使用する受信場所内で一意の、任意の文字列を指定できます。  
+2. Submit アダプタを使用する受信場所と受信ポートを作成します。 受信場所のアドレスを指定します。 アドレスは、このアダプターを使用する受信場所内で一意である任意の文字列を指定できます。  
 
-3. [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] プロジェクト内でアセンブリ Microsoft.BizTalk.SDKSamples.AdaptersDevelopment.TransportProxyUtils.dll を参照します。  
+3. アセンブリ Microsoft.BizTalk.SDKSamples.AdaptersDevelopment.TransportProxyUtils.dll を参照で、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]プロジェクト。  
 
-4. このアセンブリによって提供される次のメソッドを 1 つ以上使用して、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] にメッセージを送信します。  
+4. メッセージを送信、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]このアセンブリによって提供される次のメソッドの 1 つ以上を使用しています。  
 
 
    |                                                メソッド                                                |                                                                                                                                                                                       説明                                                                                                                                                                                       |
    |---------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-   |       **SubmitMessage()**<br /><br /> **BeginSubmitMessage()**<br /><br /> **EndSubmitMessage()**       |              一方向のメッセージを [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] に送信するための同期メソッドおよび非同期メソッドです。 メッセージが送信される受信場所のアドレスは、メッセージ コンテキストに設定する必要があります。<br /><br /> 送信の状態 (成功または失敗) を示すブール値が返されます。              |
-   |     **SubmitMessages()**<br /><br /> **BeginSubmitMessages()**<br /><br /> **EndSubmitMessages()**      | 一方向のメッセージの配列を [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] に送信するための同期メソッドおよび非同期メソッドです。 メッセージが受信される受信場所のアドレスをメッセージのコンテキストで設定する必要があります。<br /><br /> 送信の状態 (成功または失敗) を示すブール値が返されます。 |
-   | **SubmitSyncMessage()**<br /><br /> **BeginSubmitSyncMessage()**<br /><br /> **EndSubmitSyncMessage()** |                                     要求メッセージを [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] に送信するための同期メソッドおよび非同期メソッドです。 メッセージが受信される受信場所のアドレスをメッセージ コンテキストで設定する必要があります。<br /><br /> 応答メッセージが返されます。                                      |
-   |                                      **CreateMessageFromString()**                                      |                                                                     文字列から [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] メッセージ オブジェクトを作成し、メッセージ コンテキストで受信場所のアドレスのプロパティを設定します。<br /><br /> BizTalk メッセージ オブジェクトを返します。                                                                      |
-   |                                      **CreateMessageFromStream()**                                      |                                ストリームから [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] メッセージ オブジェクトを作成し、メッセージ コンテキストで受信場所のアドレスのプロパティを設定します。<br /><br /> [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] メッセージ オブジェクトを返します。                                |
+   |       **SubmitMessage()**<br /><br /> **BeginSubmitMessage()**<br /><br /> **EndSubmitMessage()**       |              同期および非同期のメソッドに一方向のメッセージを送信する[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]します。 メッセージが送信される受信場所のアドレスは、メッセージ コンテキストに設定する必要があります。<br /><br /> 送信 (成功/失敗) の状態を示すブール値が返されます。              |
+   |     **SubmitMessages()**<br /><br /> **BeginSubmitMessages()**<br /><br /> **EndSubmitMessages()**      | 同期および非同期のメソッドに一方向のメッセージの配列を送信する[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]します。 メッセージのコンテキストでは、メッセージが受信する受信場所のアドレスを設定してください。<br /><br /> 送信 (成功/失敗) の状態を示すブール値が返されます。 |
+   | **SubmitSyncMessage()**<br /><br /> **BeginSubmitSyncMessage()**<br /><br /> **EndSubmitSyncMessage()** |                                     同期および非同期のメソッドを要求を送信するメッセージを[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]します。 メッセージ コンテキストでメッセージが送信される受信場所のアドレスを設定する必要があります。<br /><br /> 応答メッセージが返されます。                                      |
+   |                                      **CreateMessageFromString()**                                      |                                                                     作成、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]文字列からオブジェクトをメッセージおよびメッセージのコンテキストで受信場所のアドレスのプロパティを設定します。<br /><br /> BizTalk メッセージ オブジェクトを返します。                                                                      |
+   |                                      **CreateMessageFromStream()**                                      |                                作成、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]メッセージ オブジェクトをストリームからメッセージ コンテキストで受信場所のアドレスのプロパティを設定するとします。<br /><br /> 返します、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]メッセージ オブジェクト。                                |
 
-    これらのメソッドのパラメータおよび戻り値の型の詳細については、TransportProxyUtils フォルダの MessagingAPIInterface.cs ファイルを参照してください。  
+    詳細については、パラメーターおよびこれらのメソッドの戻り値の型は、TransportProxyUtils フォルダの MessagingAPIInterface.cs ファイルを参照してください。  
 
 ## <a name="see-also"></a>参照  
  [アダプタ サンプル - 開発](../core/adapter-samples-development.md)   

@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 142afd61966640e004e3dc1160c5ce486984d8e6
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4c21602308a8163e81d04e60474072d521554a5c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37013427"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373092"
 ---
 # <a name="read-about-data-provider-types-for-the-sap-connection-string"></a>SAP 接続文字列のデータ プロバイダーの種類をについてください。
 SAP システムへの接続を確立するために、ADO.NET クライアントは接続文字列の形式で SAP 接続プロパティを指定する必要があります。 SAP の ADO 接続文字列の形式は、ようになります。  
@@ -31,11 +31,11 @@ SAP システムへの接続を確立するために、ADO.NET クライアン�
 
  SAP システムを使用して接続する接続文字列、[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]次の種類を持つことができます。  
 
-- **タイプ a:** アプリケーション ホスト ベース接続を使用して、アプリケーション サーバーを指定する接続 URI を[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]は SAP システムに接続します。  
+- **タイプ A:** アプリケーションのホスト ベース接続を使用して、アプリケーション サーバーを指定する接続 URI、[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]は SAP システムに接続します。  
 
-- **型 b:** 負荷分散された接続 URI の接続が経由するメッセージ サーバーを指定します、[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]は SAP システムに接続します。  
+- **型 B:** 負荷分散された接続 URI の接続が経由するメッセージ サーバーを指定します、[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]は SAP システムに接続します。  
 
-- **型の d:** 先ベース接続を接続 URI が、SAP システムの接続パラメーターを含む saprfc.ini ファイルの宛先を指定します。  
+- **型の D:** 宛先に基づく接続接続 URI が、SAP システムの接続パラメーターを含む saprfc.ini ファイルの宛先を指定します。  
 
   次の表では、接続 URI でこれらの接続を指定する方法について説明します。  
 
@@ -43,7 +43,7 @@ SAP システムへの接続を確立するために、ADO.NET クライアン�
 |----------|----------------|----------------|-----------------|  
 |A|ASHOST (アプリケーション サーバーのホスト)|SYSNR (SAP システム数)|アプリケーションのホスト ベース接続を指定します。|  
 |B|MSHOST (メッセージ サーバー ホスト)|R3NAME (SAP R3 名)|負荷分散のメッセージ サーバー経由の接続を指定します。 を負荷の接続を分散する場合、省略可能なサーバー グループを指定できます。|  
-|D|DEST (Destination saprfc.ini ファイルの接続パラメーターが含まれています)|-|移行先ベースの接続を指定します。 Saprfc.ini ファイルで指定したコピー先は、SAP 接続パラメーターに格納されます。 マップ先では、タイプ A および B の種類の接続のみを指定できます。 **注:** saprfc.ini ファイルの接続値を指定する場合は、.exe ファイルにアクセスすると、または SAP システムで必要と標準的な場所にある同じフォルダーに保存されていることを確認してください。 詳細については、SAP のマニュアルを参照してください。|  
+|D|DEST (Destination saprfc.ini ファイルの接続パラメーターが含まれています)|-|移行先ベースの接続を指定します。 Saprfc.ini ファイルで指定したコピー先は、SAP 接続パラメーターに格納されます。 マップ先では、タイプ A および B の種類の接続のみを指定できます。 **注:** Saprfc.ini ファイルの接続値を指定する場合、ファイルにアクセスする .exe または SAP システムで必要と標準的な場所にある同じフォルダーに保存されていることを確認します。 詳細については、SAP のマニュアルを参照してください。|  
 
  SAP システムを使用して接続する接続文字列、接続の種類に基づいて、[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]次のプロパティを含めることができます。  
 
@@ -62,7 +62,7 @@ SAP システムへの接続を確立するために、ADO.NET クライアン�
 |           パスワード (パスワード)           |     A、B、D     |                                                                                                                                                                                                                                          SAP ユーザーのパスワード                                                                                                                                                                                                                                           |
 |            ユーザー名 (ユーザー)            |     A、B、D     |                                                                                                                                                                                                                                SAP システムに接続するユーザー名                                                                                                                                                                                                                                 |
 | SAP の GUI (AbapDebug) のデバッグを有効にします。  |     A、B、D     |                                                                                      省略可能なパラメーターを指定するかどうか ABAP からデバッグを[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]を有効にし、デバッグするため、アダプターが、SAP GUI を使用するかどうか。 値は True または False です。True の場合は、ABAP デバッグを有効にされ、SAP GUI が開かれます。 既定値は False です。                                                                                      |
-|      トレースの RFC SDK(RfcSdkTrace)       |     A、B、D     |                                                                                                                                                                 RFC ライブラリ トレースが有効になっているかどうかを指定する省略可能なパラメーター。 値は True または False です。True の場合は、RFC ライブラリ トレースが有効にします。 既定値は False です。                                                                                                                                                                 |
+|      Trace RFC SDK(RfcSdkTrace)       |     A、B、D     |                                                                                                                                                                 RFC ライブラリ トレースが有効になっているかどうかを指定する省略可能なパラメーター。 値は True または False です。True の場合は、RFC ライブラリ トレースが有効にします。 既定値は False です。                                                                                                                                                                 |
 
 > [!NOTE]
 >  [プロパティ] 列では、かっこ内で提供される値は、プログラミング ソリューション経由の接続 URI を提供するときに、指定する必要があります接続のプロパティの名前です。 ただし、ADO インターフェイスを使用して、DDEX プラグインまたは SQL Server インポートおよびエクスポート ウィザードを使用する場合、接続のプロパティは、フレンドリ名として表示されます。  
@@ -100,7 +100,7 @@ ASHOST=ADAPSAP47
 SYSNR=00  
 ```  
 
- Saprfc.ini ファイルの詳細については、[ http://go.microsoft.com/fwlink/?LinkId=91457](http://go.microsoft.com/fwlink/?LinkId=91457)を参照してください。  
+ Saprfc.ini ファイルの詳細については、次を参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=91457](http://go.microsoft.com/fwlink/?LinkId=91457)します。  
 
  すべての 3 つの接続の種類のパスワードは、二重引用符を含めることはできません。 ただし、パスワードに他の特殊文字が含まれている場合、パスワードを二重引用符で囲む必要があります。 以下に例を示します。  
 

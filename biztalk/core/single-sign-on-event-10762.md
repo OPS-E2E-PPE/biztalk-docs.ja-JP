@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10762 |Microsoft Docs'
+title: シングル サインオン:イベント 10762 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 905c59062f8f4af397872f3f7d4434a67b19842e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b26f196e2431f0229ac28b9d8f2718b551a58b1c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36996011"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396652"
 ---
-# <a name="single-sign-on-event-10762"></a>シングル サインオン: イベント 10762
+# <a name="single-sign-on-event-10762"></a>シングル サインオン:イベント 10762
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                                                                |
@@ -30,10 +30,10 @@ ms.locfileid: "36996011"
 |  イベント ソース   |                                                             ENTSSO                                                             |
 |    コンポーネント    |                                                              なし                                                               |
 |  シンボル名  |                                                     ENTSSO_E_WRONG_THREAD                                                      |
-|  メッセージ テキスト   | SSO クライアント コンポーネントが不適切なスレッドで呼び出されました。 コンポーネントにトランザクションがあるため、現在コンポーネントはスレッドにロックされています。 |
+|  メッセージ テキスト   | SSO クライアント コンポーネントは間違ったスレッドで呼び出されました。 トランザクションがあるため、現在のスレッドにロックします。 |
   
 ## <a name="explanation"></a>説明  
- コンポーネントは、トランザクションがない場合にのみマルチスレッド化することができます。 このコンポーネントにはトランザクションがあるので、スレッドにロックされています。  
+ コンポーネントはできるトランザクションがあるない場合、マルチ スレッドにのみ。 このコンポーネントでは、スレッドにロックされているため、トランザクションがあります。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- トランザクションを使用しているときには複数のスレッドで SSO クライアント コンポーネントを呼び出さないようにアプリケーションを構成します。
+ 呼び出さない SSO クライアント コンポーネント複数のスレッドでトランザクションを使用する場合、アプリケーションを構成します。

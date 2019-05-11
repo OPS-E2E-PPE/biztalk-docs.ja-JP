@@ -1,5 +1,5 @@
 ---
-title: 公開された Web サービスをテストする .NET アプリケーションの作成 |Microsoft ドキュメント
+title: 公開済み Web サービスをテストする .NET アプリケーションの作成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,19 +15,19 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d13c69a471d546fe8d2b70363dad5cced8bbe62f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 323ba7b5cce1d7cd83c9031f51ca7944ae5f5bb1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22237954"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65390126"
 ---
-# <a name="creating-a-net-application-to-test-a-published-web-service"></a>公開された Web サービスをテストする .NET アプリケーションを作成します。
-公開対象 Web サービスをテストするには、公開対象 Web サービスを使用する ASP.NET Web クライアント アプリケーションを作成します。 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] ヘルプ コレクションには、ASP.NET Web クライアント アプリケーションを作成するための有用なチュートリアルが含まれています。 このチュートリアルを使用して、公開対象 Web サービスをテストできます。  
+# <a name="creating-a-net-application-to-test-a-published-web-service"></a>公開済み Web サービスをテストする .NET アプリケーションを作成します。
+公開された Web サービスをテストするには、公開済み Web サービスを使用する ASP.NET Web クライアント アプリケーションを作成できます。 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]ヘルプ コレクションには、ASP.NET Web クライアント アプリケーションを作成するため貴重なチュートリアルが含まれています。 このチュートリアルを使用して、公開済み Web サービスをテストすることができます。  
   
- このチュートリアルでは、ASP.NET Web クライアント アプリケーションが作成され、Web 参照が追加されるほか、公開対象 Web サービスにアクセスする方法を示すサンプル コードが提供されます。 アプリケーションの実行は、デバッグ モードで行われます。  
+ チュートリアルでは、ASP.NET Web クライアント アプリケーションを作成し、Web 参照の場合を追加して、公開された Web サービスにアクセスする方法について説明するサンプル コードを提供します。 このチュートリアルは、デバッグ モードでアプリケーションを実行します。  
   
- XML Web サービス クライアント プロジェクトの作成に関する情報および手順を参照してください「チュートリアル: へのアクセス、XML Web サービスを使用して Visual Basic または Visual c#」で、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]ヘルプ コレクション[http://go.microsoft.com/fwlink/?LinkId=62263](http://go.microsoft.com/fwlink/?LinkId=62263)です。 この例で使用される、TempConvert1 という Web サービスは、BizTalk で公開する Web サービスで置換できます。  
+ 情報および XML Web サービス クライアント プロジェクトを作成する方法の手順では、次を参照してください。"チュートリアル。Visual Basic または Visual を使用して XML Web サービスへのアクセスC#"で、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]ヘルプ コレクション[ http://go.microsoft.com/fwlink/?LinkId=62263](http://go.microsoft.com/fwlink/?LinkId=62263)します。 この例では、tempconvert1 というで使用する Web サービスを置き換えることができます、biztalk Web サービスを公開します。  
   
 ## <a name="see-also"></a>参照  
  [公開済み Web サービスのテスト](../core/testing-published-web-services.md)

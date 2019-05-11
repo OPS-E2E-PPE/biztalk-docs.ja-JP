@@ -1,5 +1,5 @@
 ---
-title: 設定の EDIFACT フォールバック アグリーメント プロパティのインターチェンジ処理 |Microsoft ドキュメント
+title: インターチェンジ処理の構成の EDIFACT フォールバック アグリーメント プロパティの |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,29 +12,29 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: eab4905e2f6615fdba8a93150646309f0b7856e5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3b9ea5499ecc87b289fbd40648d04ba83bf348b8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22232290"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65391279"
 ---
 # <a name="configuring-edifact-fallback-agreement-properties-for-interchange-processing"></a>インターチェンジ処理に対する EDIFACT フォールバック アグリーメント プロパティの構成
 EDIFACT インターチェンジ処理のプロパティを定義する方法[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]パーティから受信した EDIFACT エンコード インターチェンジのエンベロープを処理します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [フォールバック識別子 (EDIFACT) の構成](../core/configuring-fallback-identifiers-edifact.md)  
+-   [フォールバック識別子の構成 (EDIFACT)](../core/configuring-fallback-identifiers-edifact.md)  
   
--   [フォールバック受信確認プロパティ (EDIFACT) を構成します。](../core/configuring-fallback-acknowledgement-properties-edifact.md)  
+-   [フォールバック受信確認プロパティを構成する (EDIFACT)](../core/configuring-fallback-acknowledgement-properties-edifact.md)  
   
--   [フォールバック エンベロープ プロパティ (EDIFACT インターチェンジの設定) を構成します。](../core/configuring-fallback-envelope-properties-edifact-interchange-settngs.md)  
+-   [フォールバック エンベロープ プロパティの構成 (EDIFACT インターチェンジの設定)](../core/configuring-fallback-envelope-properties-edifact-interchange-settngs.md)  
   
--   [フォールバック検証プロパティ (EDIFACT) を構成します。](../core/configuring-fallback-validation-properties-edifact.md)  
+-   [フォールバック検証プロパティの構成 (EDIFACT)](../core/configuring-fallback-validation-properties-edifact.md)  
   
--   [フォールバック文字セットと区切り記号 (EDIFACT) のプロパティを構成します。](../core/configuring-fallback-charset-and-separator-properties-edifact.md)  
+-   [フォールバック文字セットと区切り記号のプロパティの構成 (EDIFACT)](../core/configuring-fallback-charset-and-separator-properties-edifact.md)  
   
 -   [フォールバック ローカル ホスト設定の構成 (EDIFACT インターチェンジの設定)](../core/configuring-fallback-local-host-settings-edifact-interchange-settings.md)  
   
 ## <a name="see-also"></a>参照  
- [EDIFACT フォールバック アグリーメント プロパティの構成](../core/configuring-edifact-fallback-agreement-properties.md)
+ [EDIFACT フォールバック アグリーメントのプロパティの構成](../core/configuring-edifact-fallback-agreement-properties.md)

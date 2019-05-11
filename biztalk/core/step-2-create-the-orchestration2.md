@@ -1,5 +1,5 @@
 ---
-title: '手順 2: 作成、Orchestration2 |Microsoft ドキュメント'
+title: 手順 2:作成、Orchestration2 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,15 +12,15 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 13973edb14fbaed331a33eff429d623a33c3ff71
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2510505e52b336a41578834bbd71d69ede6621c9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22276754"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65392736"
 ---
-# <a name="step-2-create-the-orchestration"></a>手順 2: オーケストレーションを作成します。
-次に示すオーケストレーションのセットアップには、BeginDocTest という名前のプロジェクトを使用します。  
+# <a name="step-2-create-the-orchestration"></a>手順 2:オーケストレーションを作成します。
+オーケストレーションのセットアップは、BeginDocTest というプロジェクトを使用して次のようには。  
   
  • ポート  
   
@@ -32,16 +32,16 @@ ms.locfileid: "22276754"
   
  • 変換  
   
- オーケストレーションは、例外処理を行いません。 J. D. Edwards EnterpriseOne では、BeginDoc とことはロールバックされます、接続がタイムアウトした場合、暗黙のトランザクション内の後続の操作を実行します。BizTalk オーケストレーションが j. d. の変更をロールバックのために何もする必要はありませんので Edwards EnterpriseOne で行ったです。 ただし、タイムアウトになった場合、BizTalk オーケストレーションで例外が発生します。 例外は、BizTalk によってイベント ログに記録されます。 オーケストレーションに例外処理を追加する場合、Microsoft BizTalk 2006 メイン ヘルプの「例外のキャッチ ブロックを追加する方法」および「補正ブロックを追加する方法」を参照してください。  
+ オーケストレーションは、例外処理を行いません。 J. D. Edwards EnterpriseOne では、BeginDoc およびロールバックは、接続がタイムアウトした場合、暗黙のトランザクション内の後続の操作を実行します。BizTalk オーケストレーションが j. d. の変更をロールバックすることが何もする必要はありませんので Edwards EnterpriseOne は、します。 ただし、タイムアウトでは、BizTalk オーケストレーションで例外が発生します。 BizTalk は、例外をイベント ログに記録されます。 例外処理オーケストレーションを追加する場合は、「方法を追加、例外のキャッチ ブロック」と「方法に補正ブロックを追加」で、Microsoft BizTalk 2006 メイン ヘルプを参照してください。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [タスク 1: ポートを作成します。](../core/task-1-create-the-ports1.md)  
+-   [タスク 1:ポートを作成します。](../core/task-1-create-the-ports1.md)  
   
--   [タスク 2: メッセージを作成します。](../core/task-2-create-the-messages2.md)  
+-   [タスク 2:メッセージを作成します。](../core/task-2-create-the-messages2.md)  
   
--   [タスク 3: 送信、受信図形と構成](../core/task-3-configure-the-send-and-receive-shapes2.md)  
+-   [タスク 3:受信図形と送信の構成](../core/task-3-configure-the-send-and-receive-shapes2.md)  
   
--   [タスク 4: メッセージの構築図形を構成します。](../core/task-4-configure-the-construct-message-shape1.md)  
+-   [タスク 4:メッセージの構築図形を構成します。](../core/task-4-configure-the-construct-message-shape1.md)  
   
--   [タスク 5: 変換図形を構成します。](../core/task-5-configure-the-transform-shape2.md)
+-   [タスク 5:変換図形を構成します。](../core/task-5-configure-the-transform-shape2.md)

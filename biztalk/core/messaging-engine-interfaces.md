@@ -1,5 +1,5 @@
 ---
-title: メッセージング エンジン インターフェイス |Microsoft ドキュメント
+title: メッセージング エンジンのインターフェイス |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a135505240e94fb42e5810a3e7ac71d4c99c34a8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 08b8d795b6df72f3e555f527e3d995cab1d288e8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22263290"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65394526"
 ---
 # <a name="messaging-engine-interfaces"></a>メッセージング エンジンのインターフェイス
 アダプターがメッセージング エンジンとの対話を許可するために使用できるパブリック インターフェイスが 3 つあります。 これらのインターフェイスについて、以下のセクションで説明します。  

@@ -18,12 +18,12 @@ caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8e78a7be954165d9f8d1a4aaf9697209127ee93f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e8d9a1d00735d867aa73493a7eff257947749fee
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36977595"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65391326"
 ---
 # <a name="configuring-bam-alerts"></a>BAM 警告の構成
 管理者は、BAM 警告フレームワークの特定の要素を変更できます。 このトピックでは、管理者が使用できる構成オプションについて説明します。  
@@ -36,13 +36,13 @@ ms.locfileid: "36977595"
   
  bm.exe.config の CommandTimeout の値を変更しても、変更前に展開したビューの CommandTimeout の値は変更されません。  
   
- 次の手順では、ProcessBamNSFiles.vbs を使用して、構成と Notification Services アプリケーションの定義ファイルを取得します。 スクリプトの詳細については、[通知サービス構成ファイル用の BAM コマンド ライン スクリプト](../core/bam-command-line-script-for-notification-services-configuration-files.md)を参照してください。  
+ 次の手順では、ProcessBamNSFiles.vbs を使用して、構成と Notification Services アプリケーションの定義ファイルを取得します。 スクリプトの詳細については、次を参照してください。[通知サービス構成ファイル用の BAM コマンド ライン スクリプト](../core/bam-command-line-script-for-notification-services-configuration-files.md)します。  
   
  既に展開されているビューの NS の ActionTimeout を変更する方法  
   
 #### <a name="to-change-the-command-timeout-value"></a>コマンドのタイムアウト値を変更するには  
   
-1.  次のように、コマンド プロンプトを開きます: をクリックして**開始**、 をクリックして**実行**、型**cmd**、順にクリックします**OK**。  
+1.  次のように、コマンド プロンプトを開きます。をクリックして**開始**、 をクリックして**実行**、型**cmd**、順にクリックします**OK**。  
   
 2.  コマンド プロンプトで入力して、追跡フォルダーに移動します**cd"C:\Program files \microsoft BizTalk Server\<バージョン\>\Tracking"** または**cd"C:\Program Files (x86) \Microsoft BizTalkServer\<バージョン\>\Tracking"** 64 ビット コンピューターにします。 **Enter**キーを押します。  
   
@@ -57,7 +57,7 @@ ms.locfileid: "36977595"
 7.  **Enter**キーを押します。  
   
 ### <a name="notification-service-configuration-tips"></a>Notification Service の構成に関するヒント  
- [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] を実行しているリモート コンピューターに警告データベースを配置するように BAM 警告を構成する場合、SQL Server インスタンスに Notification Services データベース コンポーネントをインストールする必要があります。 これらのコンポーネントが SQL インスタンス上に存在しない場合、BAM 警告の構成は失敗し、Notification Services 拡張ストアド プロシージャに権限を与えることができなかったことを示すエラーが発生します。 Notification Services コンポーネントをインストールする方法の詳細については、[ http://go.microsoft.com/fwlink/?LinkId=61999](http://go.microsoft.com/fwlink/?LinkId=61999)を参照してください。  
+ [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] を実行しているリモート コンピューターに警告データベースを配置するように BAM 警告を構成する場合、SQL Server インスタンスに Notification Services データベース コンポーネントをインストールする必要があります。 これらのコンポーネントが SQL インスタンス上に存在しない場合、BAM 警告の構成は失敗し、Notification Services 拡張ストアド プロシージャに権限を与えることができなかったことを示すエラーが発生します。 Notification Services コンポーネントをインストールする方法の詳細については、次を参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=61999](http://go.microsoft.com/fwlink/?LinkId=61999)します。  
   
  BAM では Notification Services へのアクセスに使用されるアカウントを変更できます。 NSControl を実行する方法以外でこのアカウントを変更すると、アカウントの変更に NSControl を使用することを通知するエラーが表示されます。  
   
@@ -92,4 +92,4 @@ ms.locfileid: "36977595"
   
    \<プロパティ名 ="FileDropUNC"\>\\\\< コンピューター名\>\alerts\</Property\>  
   
-   BAM 管理ユーティリティの詳細については、[BAM 管理ユーティリティ](../core/bam-management-utility.md)を参照してください。
+   BAM 管理ユーティリティの詳細については、次を参照してください。 [BAM 管理ユーティリティ](../core/bam-management-utility.md)します。

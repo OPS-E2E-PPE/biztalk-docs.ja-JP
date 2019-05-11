@@ -2,15 +2,15 @@
 redirect_url: /biztalk/core/security-in-biztalk-adapter-for-tibco-rendezvous/
 redirect_document_id: true
 ROBOTS: NOINDEX
-ms.openlocfilehash: db213735202e893f8207952994a5dc7f4fddb3ac
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: 2fb773d0c965a909e8317ad4848b53ee34face1b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
-ms.locfileid: "24015049"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395207"
 ---
-# <a name="using-single-sign-on"></a>シングル サインオンを使用します。
-Microsoft BizTalk Adapter for TIBCO Rendezvous ではシングル サインオン (SSO) をサポートしています。 エンタープライズ シングル サインオン ツールによって作成される関連アプリケーションは、TIBCO Rendezvous などのサーバー システムを表します。  
+# <a name="using-single-sign-on"></a>シングル サインオンを使用してください。
+Microsoft BizTalk Adapter for TIBCO Rendezvous は、シングル サインオン (SSO) サポートを提供します。 エンタープライズ シングル サインオン ツールによって作成される関連アプリケーションは、TIBCO Rendezvous などのサーバー システムを表します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

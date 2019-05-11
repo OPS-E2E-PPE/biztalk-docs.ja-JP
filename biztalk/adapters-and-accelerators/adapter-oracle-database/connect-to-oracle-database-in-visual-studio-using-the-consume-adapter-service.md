@@ -15,12 +15,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 19e83b518e188528b357e52f6397045baeb3ed76
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6e459878a54fd91784443f0712f70567edcbf92d
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37010481"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65529485"
 ---
 # <a name="connect-to-oracle-database-in-visual-studio-using-the-consume-adapter-service"></a>Consume Adapter Service を使用して Visual Studio での Oracle データベースへの接続します。
 Consume Adapter Service アドインがインストールされている WCF LOB Adapter SDK をインストールするときにします。 Consume Adapter Service アドインをコンピューターにインストールされているすべての WCF カスタム バインドを読み込みます。 WCF ベースを使用して Oracle データベースへの接続に[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]BizTalk プロジェクトで使用する必要があります、 **oracleDBBinding**します。  
@@ -32,7 +32,7 @@ Consume Adapter Service アドインがインストールされている WCF LOB
 
 1. 使用して接続する、 [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] BizTalk ソリューションで。  
 
-   1. ソリューション エクスプ ローラーでプロジェクトを右クリックし、[**追加**、] をクリックし、**生成した項目の追加**します。  
+   1. ソリューション エクスプ ローラーでプロジェクトを右クリックし、**追加** をクリックし、**生成した項目の追加**します。  
 
    2. **生成した項目の追加** ダイアログ ボックスで、次の操作を行います。  
 
@@ -51,7 +51,7 @@ Consume Adapter Service アドインがインストールされている WCF LOB
 
    1. Oracle データベースの資格情報を使用して接続するでデータベースの資格情報を入力、**ユーザー名**と**パスワード**テキスト ボックス。 ユーザー名と Oracle データベースに接続するためのパスワードを指定するときに、次の考慮事項に従うことを確認します。  
 
-      - **ユーザー名**します。 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] Oracle データベースでの接続を開くときにユーザー名を入力する値の大文字小文字を保持します。 Oracle データベースでのユーザー名は大文字小文字を区別します。 Oracle ユーザー名を指定することを確認してください、 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] Oracle データベースで想定されている場合。 通常、これは SCOTT/TIGER 資格情報にユーザー名は大文字である必要があります。"SCOTT"。  
+      - **ユーザー名**します。 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] Oracle データベースでの接続を開くときにユーザー名を入力する値の大文字小文字を保持します。 Oracle データベースでのユーザー名は大文字小文字を区別します。 Oracle ユーザー名を指定することを確認してください、 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] Oracle データベースで想定されている場合。 つまり、通常 SCOTT/TIGER 資格情報にユーザー名は大文字である必要があります。"SCOTT"。  
 
       - **パスワード**します。 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] Oracle データベースでの接続を開くときにパスワードを入力する値の大文字小文字を保持します。 リリース 10 g、前の Oracle システム上のパスワードは大文字小文字を区別しない.  
 
@@ -59,7 +59,7 @@ Consume Adapter Service アドインがインストールされている WCF LOB
 
 4. をクリックして、 **URI プロパティ**タブをクリックし、接続パラメーターの値を指定します。 接続 URI の詳細についてはの[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]を参照してください[Oracle Database 接続 URI の作成](../../adapters-and-accelerators/adapter-oracle-database/create-the-oracle-database-connection-uri.md)です。  
 
-5. をクリックして、**バインド プロパティ**タブをクリックし、対象と操作に必要な場合、バインドのプロパティの値を指定します。 たとえば、POLLINGSTMT 操作の対象とする場合は、する必要があります設定、 **PollingStatement**プロパティをバインドします。 バインド プロパティの詳細については、[Oracle データベース アダプターのバインドのプロパティについて](../../adapters-and-accelerators/adapter-oracle-database/read-about-the-oracle-database-adapter-binding-properties.md)を参照してください。  
+5. をクリックして、**バインド プロパティ**タブをクリックし、対象と操作に必要な場合、バインドのプロパティの値を指定します。 たとえば、POLLINGSTMT 操作の対象とする場合は、する必要があります設定、 **PollingStatement**プロパティをバインドします。 バインド プロパティの詳細については、次を参照してください。 [Oracle データベース アダプターのバインドのプロパティについて](../../adapters-and-accelerators/adapter-oracle-database/read-about-the-oracle-database-adapter-binding-properties.md)します。  
 
 6. **[OK]** をクリックします。  
 

@@ -12,17 +12,17 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 77701083272da9e09c21cb05daf3c4e9764b604c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 025d83e8a7bd6c5a3c324bd5dae8354ac43321ed
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36993043"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65393906"
 ---
 # <a name="sample-dehydration-calculation"></a>退避の計算のサンプル
-次に示す例は、BizTalk が退避するかどうかをプライベート バイトを使用して計算するサンプルです。 ここでは、既定の構成値と、いくつかの実行時値の例を使用します。  
+プライベート (バイト単位) を使用していない、または BizTalk が退避を決定する、サンプルの計算の例を示します。 既定の構成値、およびいくつかの例の実行時値を使用します。  
   
- 退避プロパティとしては次の値を想定します。  
+ 次の退避プロパティの値があるとします。  
   
 - **TimeBlocked** = 60 (秒単位でブロック時間の例である場合)  
   
@@ -50,11 +50,11 @@ TestThreshold = 1 + 599.66
 TestThreshold = 600.66  
 ```  
   
- 最後に、退避するかどうかを判断します。  
+ 最後に、かどうかを退避するかどうかを確認します。  
   
 ```  
 Dehydrate = (90 == -1 OR 90 > 600 OR 60 > (2 * 600))  
 Dehydrate = false  
 ```  
   
- この例を使用すると、オーケストレーションはこの時点では退避されないと判断できます。
+ この例を使用して、オーケストレーションができないこと退避この時点で確認できます。

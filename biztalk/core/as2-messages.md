@@ -12,12 +12,12 @@ caps.latest.revision: 26
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 68ada5722e7b64d6ceaf3b511af5ac500a4dcce7
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ed6348fcda1c219064d6b84bcf6da53833084020
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37022600"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65528613"
 ---
 # <a name="as2-messages"></a>AS2 メッセージ
 このトピックでは、AS2 メッセージの構造、コンテキスト プロパティ、ヘッダーなど、AS2 メッセージについて説明します。  
@@ -62,7 +62,7 @@ ms.locfileid: "37022600"
 |圧縮されました。<br /><br /> -暗号化<br /><br /> 署名付き|`HTTP, AS2, MIME Header       CMS-PKCS7 MIME Encryption           PKCS7-MIME Compression (encrypted)                MIME Security Multiparts (signed)(compressed)(encrypted)                     MIME Multipart/related                          EDI/XML Payload (compressed)(encrypted)                     CMS-PKCS7 Signature (compressed)(encrypted)`|  
   
 ## <a name="as2-context-properties"></a>AS2 のコンテキスト プロパティ  
- AS2 メッセージの処理に使用されるコンテキスト プロパティには、昇格できるプロパティや非公開のプロパティが含まれますが、これらのプロパティは中断されたメッセージや追跡メッセージで表示できます。 AS2 コンテキスト プロパティの一覧は、[AS2 コンテキスト プロパティ](../core/as2-context-properties.md)を参照してください。  
+ AS2 メッセージの処理に使用されるコンテキスト プロパティには、昇格できるプロパティや非公開のプロパティが含まれますが、これらのプロパティは中断されたメッセージや追跡メッセージで表示できます。 AS2 コンテキスト プロパティの一覧は、次を参照してください。 [AS2 コンテキスト プロパティ](../core/as2-context-properties.md)します。  
   
 ## <a name="as2-headers"></a>AS2 のヘッダー  
  AS2 メッセージの AS2 ヘッダーは受信側パーティと送信元パーティを記述し、受信側パーティが MDN 応答を送信するために必要な情報を提供します。 しない限り、受信側パーティは MDN ヘッダーを使用は、**検証および MDN に対してメッセージ ヘッダーの代わりにアグリーメントの設定を使用して**AS2 アグリーメントのプロパティが選択されている情報が、アグリーメントで使用できない場合またはプロパティ。  

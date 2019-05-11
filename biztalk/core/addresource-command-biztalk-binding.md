@@ -1,5 +1,5 @@
 ---
-title: 'AddResource コマンド: BizTalk バインディング |Microsoft Docs'
+title: AddResource コマンド:BizTalk バインド |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7ac8990810b4d1675dad4ee54d9c55bdea1086f1
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f1a8d114d474e1c9033778bb7903c2d1d9e5f1ef
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37003579"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65360652"
 ---
-# <a name="addresource-command-biztalk-binding"></a>AddResource コマンド: BizTalk バインディング
+# <a name="addresource-command-biztalk-binding"></a>AddResource コマンド:BizTalk バインド
 使用する BizTalk アプリケーションには、バインド ファイルを追加するには**AddResource**コマンドを指定**System.BizTalk:BizTalkBinding**の**型**パラメーター。 バインド ファイルを追加するときに、展開環境を指定できます。 後でアプリケーションをインポートするときに、この展開環境を選択して、バインドを適用できます。 バインド ファイルはいくつでも BizTalk アプリケーションに追加できます。また、バインド ファイルは、各種の展開環境に合わせてカスタマイズできます。 複数のバインド ファイルを追加するには、追加する各ファイルについて、このコマンドを実行します。  
   
  アセンブリ、アプリケーション、またはグループをエクスポートしたバインド ファイルを追加するには、」の説明に従って[ExportBindings コマンド](../core/exportbindings-command.md)、し、AddResource コマンドを使用して、バインド ファイルをアプリケーションに追加します。  
@@ -38,10 +38,10 @@ ms.locfileid: "37003579"
   
 3. 明示的に追加されたバインドのうち、対象の (アプリケーションのインポート用に選択された展開環境と一致する) 展開環境が関連付けられているもの。 この一連のバインド内での適用順序は特に決まっていません。  
   
-   詳細については、[BizTalk アプリケーションをインポートする方法](../core/how-to-import-a-biztalk-application.md)を参照してください。 バインド ファイルの使用に関する背景情報は、[バインド ファイルとアプリケーションの展開](../core/binding-files-and-application-deployment.md)を参照してください。  
+   詳細については、次を参照してください。 [BizTalk アプリケーションをインポートする方法](../core/how-to-import-a-biztalk-application.md)します。 バインド ファイルの使用に関する背景情報は、次を参照してください。[バインド ファイルとアプリケーションの展開](../core/binding-files-and-application-deployment.md)します。  
   
 ## <a name="usage"></a>使用方法  
- **BTSTask AddResource** [**/applicationname は:"**<em>値</em>**"**] **/Type:System.BizTalk:BizTalkBinding/Property:TargetEnvironment ="**<em>値</em>**"** **[/overwrite]** **/source:**<em>値</em>[**/Server:**<em>値</em>] [**/database:**<em>値</em>]  
+ **BTSTask AddResource** [**/applicationname は:"**<em>値</em>**"**] **/Type:System.BizTalk:BizTalkBinding/Property:TargetEnvironment="**<em>値</em>**"** **[/overwrite]** **/source:**<em>値</em>[**/Server:**<em>値</em>] [**/database:**<em>値</em>]  
   
 ## <a name="parameters"></a>パラメーター  
   

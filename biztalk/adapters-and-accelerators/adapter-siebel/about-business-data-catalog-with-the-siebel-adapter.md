@@ -1,5 +1,5 @@
 ---
-title: Siebel アダプターとビジネス データ カタログの |Microsoft ドキュメント
+title: Siebel アダプターを使用したビジネス データ カタログについて |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,17 +12,17 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1c7553d26f9270594b9df740413800ae513a16ea
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: fd7346c451113f7822768a19d2dba888c87f6a63
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22216170"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65372127"
 ---
-# <a name="about-business-data-catalog-with-the-siebel-adapter"></a>Siebel アダプターとビジネス データ カタログについて
-ビジネス データ カタログは、SharePoint の統合コンポーネントです。 ビジネス データ カタログは、共有サービスおよびサーフェス ビジネス アプリケーションからデータをバックエンド経由のデータベース、および Web サービスのコードを記述する必要はありません。 これは、顧客、請求書、および注文書などのビジネス エンティティを定義するメタデータ リポジトリです。 定義した後、クライアントは、これらのエンティティを使用できます。  
+# <a name="about-business-data-catalog-with-the-siebel-adapter"></a>Siebel アダプターを使用したビジネス データ カタログについて
+ビジネス データ カタログは、SharePoint の統合コンポーネントです。 ビジネス データ カタログとは、共有サービスとデータベースと、コードを記述する必要はありません、Web サービスを使用してバックエンド アプリケーションからのサーフェスのビジネス データです。 これは、顧客、請求書、および注文書などのビジネス エンティティを定義するメタデータ リポジトリです。 定義した後、クライアントは、これらのエンティティを使用できます。  
   
- ビジネス データ カタログを提供するビジネス データ カタログ定義エディターの sharepoint ビジネス データ カタログ アプリケーション定義ファイルを作成します。 エディターを使用して、ビジネス データ カタログの定義を作成および、ビジネス アプリケーションのメタデータを編集できます。  
+ ビジネス データ カタログの提供に役立つビジネス データ カタログ定義エディターの SharePoint のビジネス データ カタログ アプリケーション定義ファイルを作成します。 ビジネス データ カタログ定義エディターを使用して作成し、ビジネス アプリケーションのメタデータを編集できます。  
   
 ## <a name="see-also"></a>参照  
- [SharePoint での Siebel アダプターを使用します。](../../adapters-and-accelerators/adapter-siebel/use-the-siebel-adapter-with-sharepoint.md)
+ [SharePoint での Siebel アダプターの使用](../../adapters-and-accelerators/adapter-siebel/use-the-siebel-adapter-with-sharepoint.md)

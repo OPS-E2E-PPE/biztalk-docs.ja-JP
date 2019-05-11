@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a5291327cfe037a38283a984015c0027b7fdc7c3
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f7e5f1d18ac5a27b6a0977fb1c5f018e0dd1dc41
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36969067"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395827"
 ---
 # <a name="known-issues-with-certificates-in-biztalk-server"></a>BizTalk Server での証明書に関する既知の問題
 このセクションで使用されるデジタル証明書の管理に関する既知の問題を説明します[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]します。  
@@ -25,12 +25,12 @@ ms.locfileid: "36969067"
 ## <a name="general-certificate-issues"></a>証明書の一般的な問題  
   
 ### <a name="lack-of-connectivity-to-the-certificate-revocation-list-will-cause-a-certificate-to-be-rejected"></a>拒否される証明書により、証明書失効リストに接続できません。  
- この問題は、次のエラー:"認証エラーが発生しました。 メッセージの署名に使用する証明書を発行した証明機関 (CA) の状態は不明です。" このエラーは、署名証明書が MMC で表示したときに有効な場合でも発生することができます (を使用して、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ユーザー) で、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]します。  
+ この問題には、次のエラーが含まれます。"認証エラーが発生しました。 メッセージの署名に使用する証明書を発行した証明機関 (CA) の状態は不明です。" このエラーは、署名証明書が MMC で表示したときに有効な場合でも発生することができます (を使用して、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ユーザー) で、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]します。  
   
  この状態は、受信パイプラインで S/MIME デコーダー コンポーネントで「証明書の失効を確認する」プロパティが有効な場合に発生することができます。 このプロパティが true の場合、BizTalk Server に設定している場合は、受信した証明書が失効しているかどうかに証明書失効リスト (CRL) のクエリを試みます。 これは、証明書自体が失効していない場合に関係ありません。 BizTalk Server は、接続の問題があるため、対応する CRL を照会することはできない場合、は、証明書を受け付けることができません。 このエラーをトラブルシューティングするには、使用する証明書をダブルクリックして、証明書のプロパティを表示します。 [詳細] タブでは、「CRL 配布ポイント」フィールドの一覧内の属性が表示されます。 この属性で、CA サーバーで CRL をポイントするいくつかの Url が必要です。 BizTalk server は、CRL を取得する次の Url のいずれかにアクセスできる必要があります。 それ以外の場合、失効確認は失敗し、上記のエラーが通知されます。  
   
 ### <a name="the-other-people-certificate-store-is-not-initialized-until-accessed"></a>アクセスされるまで、その他のユーザー証明書ストアが初期化されていません  
- この問題は、次の証明書ストアのエラーを追加または送信/受信ポート/を使用して場所を変更しようとすると、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理者がリモートからコンソール:「を開けませんでした証明書ストア」。 "システムは、指定されたファイルを見つけることができません。 (システム)"。  
+ この問題は、次の証明書ストアのエラーを追加または送信/受信ポート/を使用して場所を変更しようとすると、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理者がリモートからコンソールします。「を開けませんでした証明書ストア。」 "システムは、指定されたファイルを見つけることができません。 (システム)"。  
   
 > [!NOTE]
 >  直接ログオンしている場合は、管理コンソールを使用してこれらの成果物を変更することができます、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]します。  
@@ -43,20 +43,20 @@ ms.locfileid: "36969067"
 ## <a name="as2-certificate-issues"></a>AS2 の証明書の問題  
   
 ### <a name="the-as2-decoder-will-not-validate-that-a-certificate-is-configured-on-the-host-or-for-the-destination-party"></a>AS2 デコーダーは、ホストまたは送信先パーティの証明書が構成されていることを検証できません。  
- AS2 デコーダーは、メッセージのプライベート証明書が証明書ストアで構成されていれば、そのメッセージを解読します。 ただし、AS2 デコーダーは、暗号化解除証明書がホストで構成されている証明書と同じであるかどうかは検証しません。 受信したメッセージは、複数の証明書を使用して暗号化できます。  
+ 証明書ストアにそのメッセージのプライベート証明書が構成されている限り、AS2 デコーダーはメッセージの解読します。 ただし、AS2 デコーダーでは、暗号化解除証明書がホストに構成されている証明書と同じであるが無効です。 1 つ以上の証明書では、受信したメッセージを暗号化できます。  
   
 ### <a name="biztalk-server-will-be-unable-to-decrypt-a-message-saved-in-wire-format-if-the-certificate-is-not-valid"></a>BizTalk Server を証明書が有効でない場合は、ワイヤ形式で保存されたメッセージを復号化することはできません。  
  **現象**  
   
- BizTalk Server が、ワイヤ形式で否認不可データベースに保存された受信 AS2 メッセージを解読できません。  
+ BizTalk Server がワイヤ形式で否認不可データベースに保存された受信 AS2 メッセージを復号化できません。  
   
  **考えられる原因**  
   
- メッセージの解読に必要な証明書の有効期限が切れているか、証明書が失効しています。 これは、AS2 メッセージが否認不可データベースに保存されてから一定期間が経過している場合に発生する傾向があります。 この現象が発生した場合、メッセージの有効な証明書に直接アクセスする権限がない可能性があります。  
+ メッセージを復号化するために必要な証明書が期限切れか、失効しています。 これは、AS2 メッセージが否認不可データベースに保存されてから一定の時間が経過している場合に発生する可能性が高くなります。 このような場合として、メッセージの有効な証明書にすぐにアクセスしていない必要があります。  
   
  **解決方法**  
   
- メッセージを解読するための有効な証明書を取得してください。  
+ メッセージの復号化の有効な証明書を取得します。  
   
 ### <a name="if-an-as2-message-cannot-be-decrypted-the-problem-may-be-fixed-by-re-importing-the-certificate"></a>証明書を再インポートすることの問題が修正される場合は、AS2 メッセージを解読できません。  
  **現象**  
@@ -78,16 +78,16 @@ at Microsoft.BizTalk.EdiInt.Reporting.AS2MessageActivity.Create()"
   
  **考えられる原因**  
   
- AS2 メッセージの解読に使用する証明書を個人証明書ストアに再度読み込む必要があります。  
+ AS2 メッセージの解読に使用する証明書は、[個人] ストアに再読み込みする必要があります。  
   
  **解決方法**  
   
- 個人証明書ストアから既存の証明書を削除し、証明書のインポート ウィザードで証明書を個人証明書ストアに再インポートします。 右クリック、**証明書**の下のフォルダー、 **個人 ストア**をポイントして、**すべてのタスク**、 をクリックし、**インポート**します。  
+ 既存の証明書、[個人] ストアから削除し、証明書のインポート ウィザードを使用して、[個人] ストアに証明書を再インポートします。 右クリック、**証明書**の下のフォルダー、 **個人 ストア**をポイントして、**すべてのタスク**、 をクリックし、**インポート**します。  
   
 ### <a name="use-the-same-logon-for-the-in-process-host-instance-and-the-isolated-host-instance-to-ensure-that-personal-store-is-recognized"></a>インプロセス ホスト インスタンスと分離ホスト インスタンスの同じログオンを使用して、その個人ストアが認識されることを確認するには  
- 個人証明書ストアは、ログオン資格情報がホスト インスタンスに関連付けられているユーザーのユーザー プロファイルが読み込まれた場合にのみ、メッセージ処理に使用できます。 個人証明書ストアは、証明書 (ユーザー独自の秘密キー) の署名と解読に使用されます。 ユーザー プロファイルは、インプロセス ホスト インスタンスでは既定で読み込まれますが、分離ホスト インスタンスでは既定で読み込まれません。 分離ホストのユーザー プロファイルは、アプリケーションで読み込むことができます。 インプロセス ホスト インスタンスと分離ホスト インスタンスに同じログオンを使用することで、この問題を回避することもできます。  
+ 個人証明書ストアは、メッセージ ログオン資格情報を持つが、ホスト インスタンスに関連付けられたユーザーのユーザー プロファイルが読み込まれている場合にのみを処理できるようにします。 署名と暗号化解除証明書 (ユーザーの秘密キー) の個人用ストアが使用されます。 既定では、インプロセス ホスト インスタンスのユーザー プロファイルが読み込まれるただし、ユーザー プロファイルは、分離ホスト インスタンスの既定では読み込まれません。 分離ホストのユーザー プロファイル、アプリケーションで読み込むことができます。 または、インプロセス ホスト インスタンスと分離ホスト インスタンスを同じログオンを使用してこの問題を回避することができます。  
   
- アプリケーションによってユーザー プロファイルを読み込む代わりに、プロファイルを読み込むための空のサービスを作成することもできます。 空のサービスを作成する方法の詳細については、次を参照してください。[方法: Windows サービスの作成](http://go.microsoft.com/fwlink/?LinkId=155149)(http://go.microsoft.com/fwlink/?LinkId=155149)で Visual Studio のヘルプ。  
+ アプリケーションの負荷、ユーザー プロファイルするのではなく、プロファイルの読み込みに空のサービスを作成できます。 空のサービスを作成する方法の詳細については、次を参照してください。[方法。Windows サービスの作成](http://go.microsoft.com/fwlink/?LinkId=155149)(http://go.microsoft.com/fwlink/?LinkId=155149) Visual Studio のヘルプ。  
   
  プロファイルを読み込むには、空のサービスを作成した後に従います。  
   
@@ -103,8 +103,8 @@ at Microsoft.BizTalk.EdiInt.Reporting.AS2MessageActivity.Create()"
   
 6.  そのログオン ユーザーのユーザー プロファイルの読み込みにサービスを手動で開始します。  
   
-### <a name="the-key-usage-attribute-of-a-certificate-must-match-the-certificates-use"></a>証明書のキーの使用法属性が、証明書の使用法に一致する必要がある  
- AS2 トランスポートに使用する証明書には、その使用目的に必要な属性が設定されている必要があります。 署名および署名の検証を行うには、証明書の [キーの使用法] 属性が [デジタル署名] である必要があります。 暗号化および解読を行うには、証明書の [キーの使用法] 属性が [データの暗号化] または [キーの暗号化] である必要があります。 キー使用法属性を確認するにはクリックすると、証明書をダブルクリックして、**詳細** タブで、**証明書** ダイアログ ボックスとチェック、**キー使用法**フィールド.  
+### <a name="the-key-usage-attribute-of-a-certificate-must-match-the-certificates-use"></a>証明書のキー使用法 属性は、証明書の使用と一致する必要があります。  
+ AS2 トランスポートに使用される証明書には、その使用目的に必要な属性が必要です。 署名および署名の検証を行う証明書のキー使用法 属性は、デジタル署名をする必要があります。 暗号化と復号化は、証明書のキー使用法 属性はデータの暗号化またはキーの暗号化である必要があります。 キー使用法属性を確認するにはクリックすると、証明書をダブルクリックして、**詳細** タブで、**証明書** ダイアログ ボックスとチェック、**キー使用法**フィールド.  
   
-### <a name="the-certificate-resolution-list-will-be-verified-for-an-outgoing-mdn-if-the-as2-to-property-is-not-set-for-the-party"></a>AS2-To プロパティがパーティに対して設定されていない場合、送信 MDN に対して証明書解決の一覧が検証される  
- 送出 MDN の既定のアグリーメントでは、証明書解決の一覧の検証が実行されます。 この検証を実行する必要がない場合は、受信側パーティを解決できるようにするため、およびパーティのプロパティを特定できるようにするために、正しい AS2-To パーティ プロパティが設定されていることを確認します。 これにより、証明書解決の一覧の検証を要求する既定のアグリーメントが使用されなくなります。 また、AS2 パーティ プロパティの [全般] ページで、"証明書失効リストを確認する" プロパティを無効にする必要もあります。
+### <a name="the-certificate-resolution-list-will-be-verified-for-an-outgoing-mdn-if-the-as2-to-property-is-not-set-for-the-party"></a>場合、送信 MDN に対して証明書解決の一覧を確認するは、AS2 のプロパティに設定されていないパーティの  
+ 送信 MDN の既定のアグリーメントでは、証明書解決の一覧の検証が実行されます。 この検証を実行しないようにする場合、ことを確認します。 適切な AS2、パーティ プロパティを設定すると、受信側パーティを解決できると、パーティのプロパティを特定できるようにします。 そうである場合、証明書の解像度リストの検証を要求する既定のアグリーメントは使用されません。 また、AS2 パーティ プロパティの [全般] ページで、証明書失効リストのチェック プロパティを無効にする必要があります。

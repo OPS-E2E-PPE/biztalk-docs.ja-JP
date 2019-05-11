@@ -12,52 +12,52 @@ caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fcab9b35759d491c0732cfb2613a2fd4fe992a3e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 682e87e2cfca4906b0f9c582d5e33a235525e293
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37022488"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65329108"
 ---
 # <a name="known-issues-with-the-ftp-adapter"></a>FTP アダプターに関する既知の問題
 ここでは、エラー回避に役立つ情報を記載します。  
   
 ## <a name="known-issues"></a>既知の問題  
   
-#### <a name="data-may-be-duplicated-or-lost-when-you-receive-data-in-biztalk-server-by-using-the-ftp-adapter"></a>BizTalk Server で FTP アダプターを使用してデータを受信すると、データが重複または損失する場合がある  
+#### <a name="data-may-be-duplicated-or-lost-when-you-receive-data-in-biztalk-server-by-using-the-ftp-adapter"></a>データを複製または BizTalk Server で FTP アダプターを使用してデータを受信するときに失われる可能性があります。  
   
 ##### <a name="problem"></a>問題  
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] で FTP アダプターを使用してデータを受信すると、データの重複または損失が発生します。  
+ データの重複またはデータを受信するときに失われる[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]FTP アダプターを使用します。  
   
 ##### <a name="cause"></a>原因  
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] FTP アダプターは、指定された FTP サーバーを FTP クライアント プロトコルを使用してポーリングし、サーバーからデータを "そのまま" の状態で取得します。 FTP アダプターは、取得するデータを検証しません。 FTP アダプターは、取得したドキュメントを処理のため BizTalk メッセージング エンジンに送信した後、FTP サーバーから元のドキュメントを削除します。 FTP アダプターが、ホスト アプリケーションが書き込み中のドキュメントを FTP サーバーから取得すると、取得したドキュメントは不完全になります。 元のドキュメントの不完全なコピーを取得した場合、次のシナリオでデータの重複やデータの損失が発生することがあります。  
+ [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] FTP アダプター、FTP クライアント プロトコルを使用して、指定された FTP サーバーをポーリングおよび"です。」と、サーバーからデータを取得します。 FTP アダプターでは、取得したデータは検証されません。 FTP アダプターが、BizTalk メッセージング エンジンで処理するために取得したドキュメントを送信し、元のドキュメント、FTP サーバーから削除します。 FTP アダプターは、ホスト アプリケーションによってにまだ書き込まれている FTP サーバーからドキュメントを取得する場合、取得したドキュメントは完了できません。 FTP アダプターは、元のドキュメントの不完全なコピーを取得する場合、次のシナリオでデータの重複やデータの損失は発生します。  
   
--   元のドキュメントがホスト アプリケーションから FTP サーバーに書き込まれている最中の場合、FTP アダプターはそのドキュメントを削除できないので、受信場所に構成された次のポーリング間隔でそのドキュメントのコピーをもう 1 つ取得します。 この動作により、ドキュメントの重複が発生します。  
+-   場合は、元のドキュメントは、ホスト アプリケーションによって FTP サーバーにまだ書き込まれるは、FTP アダプター、ドキュメントを削除することはできず、次のポーリング間隔で構成されている受信場所のドキュメントの別のコピーを取得します。 この動作により、ドキュメントの重複が発生します。  
   
--   ホスト アプリケーションから FTP サーバーへのドキュメントの書き込みが完了すると、そのドキュメントは削除されます。 この動作により、データの損失が発生します。  
+-   ホスト アプリケーションが FTP サーバーへのドキュメントの書き込みを終了すると、ドキュメントが削除されます。 この動作には、発生するデータの損失が発生します。  
   
 ##### <a name="resolution"></a>解決策  
- この動作を回避するには、以下のいずれかの方法を使用します。  
+ この問題を回避するには、次のメソッドのいずれかを使用します。  
   
-- パブリック FTP フォルダーと同じハード ディスク上の一時フォルダーに書き込み、一時フォルダーの内容を定期的に FTP フォルダーに移動するように、ホスト アプリケーションを構成します。 移動操作がアトミックになるように、一時フォルダーを、パブリック FTP フォルダーと同じハード ディスク上に配置する必要があります。 アトミック操作とは、機能的にそれ以上分割できない操作のことです。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] FTP アダプターを使用してデータをパブリック FTP フォルダーに書き込む場合、この操作を行うには、送信ポートの構成時に [FTP トランスポートのプロパティ] ダイアログ ボックスで "一時フォルダー" プロパティを指定します。 "一時フォルダー" プロパティを指定する場合は、このフォルダーがパブリック FTP フォルダーと同じ物理ディスク上にあることを確認します。  
+- パブリック FTP フォルダーと同じハード_ディスク上の一時フォルダーに書き込むと、定期的に一時フォルダーの内容を FTP フォルダーに移動するホスト アプリケーションを構成します。 一時フォルダーは、移動操作がアトミックであることを確認するパブリック FTP フォルダーと同じハード_ディスクになければなりません。 分割不可能な操作は、機能的割り切れない操作です。 使用して、パブリック FTP フォルダーにデータを記述するかどうか、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] FTP アダプターでは、これを行う送信ポートを構成するときに、FTP トランスポートのプロパティ ダイアログ ボックスの一時フォルダのプロパティを指定しています。 一時フォルダーのプロパティを指定する場合は、このフォルダーがパブリック FTP フォルダーと同じ物理ディスクにあることを確認してください。  
   
-- ホスト アプリケーションがデータを FTP サーバーに書き込まない場合、サービス時間帯に動作するように FTP 受信場所を構成します。 サービス時間帯は、受信場所のプロパティを構成する際に指定できます。  
+- 構成、FTP 受信場所でホスト アプリケーションが FTP サーバーへのデータを書き込んでいないときに、サービス時間帯内で動作します。 受信場所のプロパティを構成するときに、サービス時間帯を指定できます。  
   
-#### <a name="ftp-adapter-does-not-support-revocation-checks-on-the-server-certificates"></a>FTP アダプターではサーバー証明書の失効の確認をサポートしていない  
+#### <a name="ftp-adapter-does-not-support-revocation-checks-on-the-server-certificates"></a>FTP アダプターがサーバー証明書の失効の確認をサポートしていません  
   
 ##### <a name="problem"></a>問題  
- BizTalk Server で FTP アダプターが拡張され、SSL や TLS を使用して、FTPS サーバーとの間にセキュリティで保護されたファイル転送をサポートします。 証明書失効リスト (CRL) には失効し、無効になった証明書のリストが入っています。 FTP アダプターでは、サーバー証明書を認証するために CRL を参照しません。  
+ BizTalk Server で FTP アダプターが拡張され、SSL や TLS を使用して、FTPS サーバーとの間にセキュリティで保護されたファイル転送をサポートします。 証明書失効リスト (CRL) には、失効し、無効になっている証明書の一覧が含まれています。 FTP アダプターでは、サーバー証明書を認証するため、CRL は参照しません。  
   
 ##### <a name="cause"></a>原因  
- 仕様上、FTP アダプターではサーバー証明書を受け取る前に CRL を参照しません。  
+ 仕様上、FTP アダプターは、サーバー証明書を受け入れる前に CRL を参照しません。  
   
 ##### <a name="resolution"></a>解決策  
  操作は不要です。この動作は仕様です。  
   
-#### <a name="ftp-adapter-downloads-files-larger-than-max-file-size"></a>FTP アダプターで最大ファイル サイズを超えるファイルがダウンロードされる  
+#### <a name="ftp-adapter-downloads-files-larger-than-max-file-size"></a>FTP アダプターがファイルの最大サイズより大きいファイルをダウンロードします。  
   
 ##### <a name="problem"></a>問題  
- FTP 受信アダプターでは、指定した最大ファイル サイズ プロパティを超えるサイズのファイルが次の FTP サーバーからダウンロードされます。  
+ FTP は、アダプターのダウンロード ファイルのサイズが次の FTP サーバーから指定した最大ファイル サイズ プロパティよりも大きいが表示されます。  
   
 -   AIX  
   
@@ -68,7 +68,7 @@ ms.locfileid: "37022488"
 -   GXS  
   
 ##### <a name="cause"></a>原因  
- 仕様上、FTP アダプターでは上記の FTP サーバーからファイルをダウンロードするとき、最大ファイル サイズの設定に従いません。  
+ 仕様では、FTP アダプターはファイルの最大サイズを考慮しないこれらの FTP サーバーからファイルをダウンロードするときに。  
   
 ##### <a name="resolution"></a>解決策  
  操作は不要です。この動作は仕様です。  

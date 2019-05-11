@@ -13,17 +13,17 @@ caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d119afaea2382e1ede6c780a40bbe2bf4329860f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d8f018012106f5b0394cd893a87d99af89282841
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36989992"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65374384"
 ---
 # <a name="troubleshoot-operational-issues-with-the-oracle-e-business-suite-adapter"></a>Oracle E-business Suite アダプターを使用した運用上の問題のトラブルシューティングします。
 このセクションを使用する場合に発生する可能性のある操作のエラーを解決するのには、トラブルシューティングの手法を使用して説明します[!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]します。  
   
-## <a name="enabling-tracing"></a>トレースを有効にします。  
+## <a name="enabling-tracing"></a>トレースの有効化  
  トレースのサポートの詳細については、 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]、[診断トレースとメッセージ ログの Oracle E-business Suite アダプターで](../../adapters-and-accelerators/adapter-oracle-ebs/diagnostic-tracing-and-message-logging-in-the-oracle-e-business-suite-adapter.md)します。  
   
 ## <a name="known-issues"></a>既知の問題  
@@ -85,7 +85,7 @@ ConfigurationErrorsException: Exception has been thrown by the target of an invo
   
   **解決方法**  
   
-  送信ポートまたは BizTalk オーケストレーションでメッセージ コンテキスト プロパティとしては、SOAP アクションを指定します。 手順については、[for Oracle E-business Suite の SOAP アクションを構成する](../../adapters-and-accelerators/adapter-oracle-ebs/configure-the-soap-action-for-oracle-e-business-suite.md)を参照してください。 参照してください[メッセージと Oracle EBS アダプターのメッセージ スキーマ](messages-and-message-schemas-for-biztalk-adapter-for-oracle-e-business-suite.md)各操作のアクションの一覧を表示します。  
+  送信ポートまたは BizTalk オーケストレーションでメッセージ コンテキスト プロパティとしては、SOAP アクションを指定します。 手順については、次を参照してください。 [for Oracle E-business Suite の SOAP アクションを構成する](../../adapters-and-accelerators/adapter-oracle-ebs/configure-the-soap-action-for-oracle-e-business-suite.md)します。 参照してください[メッセージと Oracle EBS アダプターのメッセージ スキーマ](messages-and-message-schemas-for-biztalk-adapter-for-oracle-e-business-suite.md)各操作のアクションの一覧を表示します。  
   
 ###  <a name="BKMK_WrongClient"></a> 要求メッセージが受信場所で削除されるとき、BizTalk プロセスが不適切な Oracle クライアントのバージョンのためクラッシュ  
  **問題**  
@@ -135,7 +135,7 @@ C:\oracle\product\11.1.0\client_1\bin;C:\oracle\product\10.2.0\db_2\bin;
 ###  <a name="BKMK_Arithmetic"></a> アダプター、ExecuteScalar 操作の実行に算術オーバーフロー例外をスロー  
  **問題**  
   
- 大きな数を取得、ExecuteScalar 操作で SELECT ステートメントを実行しようとする場合、アダプターを使用して、アダプターは、次の例外がスローされます"System.overflowexception:: 算術演算結果オーバーフローが発生します。"。  
+ 大きな数を取得、ExecuteScalar 操作で SELECT ステートメントを実行しようとする場合、アダプターを使用して、アダプターは、次の例外がスローされます。"System.overflowexception::算術演算結果オーバーフローが発生します。"  
   
  **原因**  
   
@@ -145,14 +145,14 @@ C:\oracle\product\11.1.0\client_1\bin;C:\oracle\product\10.2.0\db_2\bin;
   
  ExecuteScalar 操作で SELECT ステートメントで TO_CHAR() を使用して、文字列として返されるデータを変換します。  
   
-###  <a name="BKMK_AppContext"></a> アダプター クライアントの操作の実行では、次の例外がスロー:"を取得できませんでしたユーザー id、責任の id、アプリケーション id。確認の正しい値が渡されたかどうか。"  
+###  <a name="BKMK_AppContext"></a> アダプターのクライアント操作の実行では、次の例外がスロー可能性があります。"を取得できませんでしたユーザー id、責任の id、アプリケーション id。確認の正しい値が渡されたかどうか。"  
  **問題**  
   
  アダプターのクライアントは、Oracle E-business Suite アーティファクト (インターフェイス テーブル、インターフェイス ビュー、同時実行プログラム、および要求のセット) に対する操作を実行している場合、この例外をスロー可能性があります。  
   
  **原因**  
   
- これは、インターフェイス テーブル、インターフェイス ビュー、同時実行プログラム、および要求セットに対する操作の実行中に Oracle ユーザー名、パスワード、および責任の名前の組み合わせが正しくないを指定する場合に発生します。 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]これらの成果物のアプリケーションのコンテキストを設定するにはこれらの値が必要です。 アプリケーション コンテキストの設定の詳細については、[アプリケーション コンテキストの設定](../../adapters-and-accelerators/adapter-oracle-ebs/set-application-context.md)を参照してください。  
+ これは、インターフェイス テーブル、インターフェイス ビュー、同時実行プログラム、および要求セットに対する操作の実行中に Oracle ユーザー名、パスワード、および責任の名前の組み合わせが正しくないを指定する場合に発生します。 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]これらの成果物のアプリケーションのコンテキストを設定するにはこれらの値が必要です。 アプリケーション コンテキストの設定の詳細については、次を参照してください。[アプリケーション コンテキストの設定](../../adapters-and-accelerators/adapter-oracle-ebs/set-application-context.md)します。  
   
  **解決方法**  
   
@@ -221,7 +221,7 @@ The element 'bindings' has invalid child element 'oracleEBSBinding'. List of pos
   
  値を大きくかを選択できます、 **SendTimeout**に検索式を入力、またはプロパティのバインド、**カテゴリで検索**成果物の数を削減するテキスト ボックスをアダプター取得します。  
   
- バインドのプロパティを指定する方法については、[for Oracle E-business Suite のバインドのプロパティを構成する](../../adapters-and-accelerators/adapter-oracle-ebs/configure-the-binding-properties-for-oracle-e-business-suite.md)を参照してください。 Oracle E-business Suite でアーティファクトの検索に関する詳細については、[参照、検索、および Oracle E-business Suite 操作のメタデータを取得](../../adapters-and-accelerators/adapter-oracle-ebs/browse-search-and-get-metadata-for-oracle-e-business-suite-operations.md)を参照してください。  
+ バインドのプロパティを指定する方法については、次を参照してください。 [for Oracle E-business Suite のバインドのプロパティを構成する](../../adapters-and-accelerators/adapter-oracle-ebs/configure-the-binding-properties-for-oracle-e-business-suite.md)します。 Oracle E-business Suite でアーティファクトの検索に関する詳細については、次を参照してください。[参照、検索、および Oracle E-business Suite 操作のメタデータを取得](../../adapters-and-accelerators/adapter-oracle-ebs/browse-search-and-get-metadata-for-oracle-e-business-suite-operations.md)します。  
   
 ###  <a name="BKMK_MemUsage"></a> メモリ使用量とスレッド数の増加、トランザクション受信操作で、アダプターを使用する場合  
  **問題**  
@@ -236,7 +236,7 @@ The element 'bindings' has invalid child element 'oracleEBSBinding'. List of pos
   
  設定をお勧め、 **ReceiveTimeout**に最大の可能な値である 24.20:31:23.6470000 (24 日)、新しいスレッドは 24 日間にのみを生成できるようにします。 メモリ使用量とスレッドの数が大きくが多すぎるが早すぎるようになります。  
   
- 詳細については、 **ReceiveTimeout**プロパティ、バインドを参照してください[Oracle E-business Suite バインド プロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-oracle-ebs/read-about-the-biztalk-adapter-for-oracle-e-business-suite-binding-properties.md)します。 バインドのプロパティを指定する方法の詳細については、[for Oracle E-business Suite のバインドのプロパティを構成する](../../adapters-and-accelerators/adapter-oracle-ebs/configure-the-binding-properties-for-oracle-e-business-suite.md)を参照してください。  
+ 詳細については、 **ReceiveTimeout**プロパティ、バインドを参照してください[Oracle E-business Suite バインド プロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-oracle-ebs/read-about-the-biztalk-adapter-for-oracle-e-business-suite-binding-properties.md)します。 バインドのプロパティを指定する方法の詳細については、次を参照してください。 [for Oracle E-business Suite のバインドのプロパティを構成する](../../adapters-and-accelerators/adapter-oracle-ebs/configure-the-binding-properties-for-oracle-e-business-suite.md)します。  
   
 > [!NOTE]
 >  アダプターを使用する場合[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]、タイムアウトを大きな値に設定した場合、アダプターの機能は影響しません。  

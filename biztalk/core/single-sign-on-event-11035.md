@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 11035 |Microsoft Docs'
+title: シングル サインオン:イベント 11035 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 194d3069f0b74022e6b16a28de1c7f81ae3030f1
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 39b07359061b7e855e8ea53abee64ef567668395
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37001723"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395249"
 ---
-# <a name="single-sign-on-event-11035"></a>シングル サインオン: イベント 11035
+# <a name="single-sign-on-event-11035"></a>シングル サインオン:イベント 11035
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                                                                                                                                                                                                                                                        |
@@ -36,4 +36,4 @@ ms.locfileid: "37001723"
  この Windows アカウントに対するマッピングが検出されましたが、このアプリケーションに対してはパスワード同期が構成されていないため無視されました。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- パスワード同期の構成方法の詳細については、[パスワード同期](../core/password-synchronization2.md)を参照してください。
+ パスワード同期の構成方法の詳細については、次を参照してください。[パスワード同期](../core/password-synchronization2.md)します。

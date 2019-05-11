@@ -1,5 +1,5 @@
 ---
-title: シングル サインオン アプリケーション |Microsoft ドキュメント
+title: シングル サインオン アプリケーション |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,17 +12,17 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8ad471fe717103b146f1a1034db291c3cf84d40b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5a23a4a38a8ea338357555072b6991ed58bf80d5
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22269810"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65392844"
 ---
 # <a name="single-sign-on-applications"></a>シングル サインオン アプリケーション
-プログラミングの観点から、2 つのさまざまな種類のシングル サインオンを使用してアプリケーションを記述することができます従来でのシングル サインオン アプリケーション、リモート アプリケーションと対話するシングル サインオン インターフェイスを使用すると、パスワード同期アダプターを使用する、。エンタープライズ全体でパスワードを同期するためにパスワード同期 (PS) ヘルパー インターフェイスです。  
+プログラミングの観点からは、シングル サインオンを使用してアプリケーションの 2 つのさまざまな種類を記述することができます従来でシングル サインオン アプリケーションでシングル サインオン インターフェイスを使用して、リモート アプリケーションと対話し、パスワード同期アダプターを使用する、。企業全体でパスワードを同期するパスワード同期 (PS) ヘルパー インターフェイスです。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
- [従来シングル サインオン アプリケーション](../core/traditional-single-sign-on-applications.md)  
+ [従来のシングル サインオン アプリケーション](../core/traditional-single-sign-on-applications.md)  
   
- [パスワード同期アダプタについて](../core/password-sync-adapters.md)
+ [パスワード同期アダプターについて](../core/password-sync-adapters.md)

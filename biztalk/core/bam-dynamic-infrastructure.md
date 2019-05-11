@@ -1,5 +1,5 @@
 ---
-title: BAM 動的インフラストラクチャ |Microsoft ドキュメント
+title: BAM 動的インフラストラクチャ |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,31 +15,31 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3660eeb6f85fb21ff78b7b833b21adbb3af87385
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2ed2c99ad52068d26a1144bb47cf3d247c6456d7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22230450"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65358558"
 ---
 # <a name="bam-dynamic-infrastructure"></a>BAM 動的インフラストラクチャ
-SQL Server のテーブル、BAM ビュー、ストアド プロシージャ、および構成され、増分使用して管理される BAM データベース (プライマリ インポート、アーカイブ、スター スキーマ、および分析) でデータ変換サービス (DTS) パッケージの BAM インフラストラクチャの構成します。BAM 定義を展開します。 インフラストラクチャは、ここで、実行時に、イベントは、相関、集計、および、ユーザーによるクエリの利用できるようです。  
+SQL Server のテーブル、BAM ビュー、ストアド プロシージャ、およびデータ変換サービス (DTS) パッケージとして構成され、増分使用して管理される BAM データベース (プライマリ インポート、アーカイブ、スター スキーマ、および分析) での BAM インフラストラクチャの構成します。BAM 定義の展開。 インフラストラクチャは、ここで、実行時に、イベント、相関、集計、およびユーザーがクエリで使用可能になります。  
   
- このセクションでは、このインフラストラクチャ プロセスの一部について説明します。 たとえば、アプリケーションから目的のデータ (BAM 定義) を抽出すると、そのデータを保存して、クエリに使用できるようになります。 また、集計クエリの処理速度を上げるために、事前作成済みの特定のデータ集計を保持できます。  
+ このセクションでは、このインフラストラクチャ プロセスの一部について説明します。 たとえば、(BAM 定義)、アプリケーションから目的のデータを抽出するとできます保存するクエリで使用できるようにします。 さらに、集計クエリの高速のデータの特定の事前に作成した集計を維持することができます。  
   
- 通常、データ ウェアハウスを実装する場合、膨大な開発作業を行ってこのような機能を実現します。 しかし、Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の BAM では、アクティビティやビューの定義に基づいて SQL および OLAP のインフラストラクチャを自動的に生成することで、このプロセスを大幅に簡略化しています。  
+ 通常、データ ウェアハウスを実装するために膨大な開発作業でこのような機能を実現します。 Microsoft で BAM[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]大幅に簡略化このプロセスは、ただし、アクティビティとビューの定義に基づいて SQL および OLAP のインフラストラクチャを自動的に生成しています。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [BAM 定義とは何ですか。](../core/what-is-a-bam-definition.md)  
+-   [BAM 定義について](../core/what-is-a-bam-definition.md)  
   
--   [BAM 定義スキーマとは何ですか。](../core/what-is-a-bam-definition-schema.md)  
+-   [BAM 定義スキーマについて](../core/what-is-a-bam-definition-schema.md)  
   
 -   [アクティビティ データのストレージ](../core/activity-data-storage.md)  
   
--   [集計とは何ですか。](../core/what-is-an-aggregation.md)  
+-   [集計について](../core/what-is-an-aggregation.md)  
   
--   [BAM データを照会します。](../core/querying-bam-data.md)  
+-   [BAM データのクエリ](../core/querying-bam-data.md)  
   
 -   [BAM インフラストラクチャの制限](../core/bam-infrastructure-limitations.md)  
   

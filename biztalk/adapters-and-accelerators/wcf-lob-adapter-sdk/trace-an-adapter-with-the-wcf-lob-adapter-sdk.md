@@ -1,5 +1,5 @@
 ---
-title: WCF LOB Adapter SDK を持つアダプターのトレース |Microsoft ドキュメント
+title: WCF LOB Adapter SDK のアダプターのトレース |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,23 +12,23 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8ca4b68f23f791de3ecd68bc69b85c2908b6d7a0
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: b03e56127071215a33b81f1d16ad653a9764d1d7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25965360"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65363170"
 ---
-# <a name="trace-an-adapter-with-the-wcf-lob-adapter-sdk"></a>WCF LOB Adapter SDK を持つアダプターをトレースします。
-[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]トレースは、Systems.Diagnostics 上に作成されています。 Microsoft.ServiceModel.Channels トレース ソースを使用する、[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]ランタイム。  Microsoft.ServiceModel.Channels.Tools.MetadataSearchBrowse トレース ソースを使用する[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]と[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]です。 WCF トレースは、System.ServiceModel をという名前のソースに書き込まれます。  
+# <a name="trace-an-adapter-with-the-wcf-lob-adapter-sdk"></a>WCF LOB Adapter SDK のアダプターをトレースします。
+[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] トレースは、Systems.Diagnostics 上に構築されます。 Microsoft.ServiceModel.Channels のトレース ソースを使用して、[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]ランタイム。  Microsoft.ServiceModel.Channels.Tools.MetadataSearchBrowse のトレース ソースを使用する[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]と[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]します。 WCF トレースは、System.ServiceModel をという名前のソースに書き込まれます。  
   
- アダプター開発者は、Microsoft.ServiceModel.Channels.Common.AdapterTrace クラスを使用してアダプターのトレース ソース名を提供できます。 [!INCLUDE[afdevwizardnameshort](../../includes/afdevwizardnameshort-md.md)]アダプター開発者によっては、アダプター コード内の実装を提供するために使用するトレース ラッパー クラスを生成します。  
+ アダプター開発者は、Microsoft.ServiceModel.Channels.Common.AdapterTrace クラスを使用して、アダプターのトレース ソース名を提供できます。 [!INCLUDE[afdevwizardnameshort](../../includes/afdevwizardnameshort-md.md)]アダプター開発者によって、アダプター コード内のインストルメンテーションを提供するのに使用できるトレース ラッパー クラスを生成します。  
   
- WCF トレースの概要については、次を参照してください。[トレース](https://msdn.microsoft.com/library/ms730342.aspx)です。
+ WCF トレースについては、次を参照してください。[トレース](https://msdn.microsoft.com/library/ms730342.aspx)します。
   
- WCF でのトレースを分析する方法については、次を参照してください。[サービス トレース ビューアー ツール (SvcTraceViewer.exe)](https://msdn.microsoft.com/library/ms732023.aspx)です。 
+ WCF でのトレースを分析する方法の詳細については、次を参照してください。[サービス トレース ビューアー ツール (SvcTraceViewer.exe)](https://msdn.microsoft.com/library/ms732023.aspx)します。 
   
-## <a name="sample-trace-wrapper-utility-class"></a>サンプルのトレース ラッパーのユーティリティ クラス  
+## <a name="sample-trace-wrapper-utility-class"></a>サンプル トレース ラッパー ユーティリティ クラス  
   
 ```  
 public class EchoAdapterUtilities  
@@ -48,12 +48,12 @@ public class EchoAdapterUtilities
 }  
 ```  
   
- 以前のユーティリティ クラスは、アダプターのコンシューマーのインストルメンテーション データを提供するアダプター コード全体で、アダプター開発者によって使用できます。  
+ 前のユーティリティ クラスは、アダプターのコンシューマー向けのインストルメンテーション データを提供するアダプター コード全体で、アダプター開発者によって使用できます。  
   
- EchoAdapterUtilities.Trace.Trace (System.Diagnostics.TraceEventType.Information、"EchoAdapterConnection::Open"、「接続が正常に開かれた!」) です。  
+ EchoAdapterUtilities.Trace.Trace(System.Diagnostics.TraceEventType.Information, "EchoAdapterConnection::Open", "Connection successfully opened!");  
   
-## <a name="enable-tracing-for-the-adapter-and-wcf-lob-adapter-sdk-runtime"></a>アダプターと WCF LOB アダプター SDK ランタイムに対してトレースを有効にします。  
- 提供されるトレースを有効にすることができます、[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]アダプターを使用して、アプリケーションの app.config ファイルで、次のセクションを追加しています。  
+## <a name="enable-tracing-for-the-adapter-and-wcf-lob-adapter-sdk-runtime"></a>アダプターと WCF LOB アダプター SDK ランタイム トレースを有効にします。  
+ 提供されるトレースを有効にすることができます、[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]アダプターを使用してアプリケーションの app.config ファイルで、次のセクションを追加します。  
   
 ```  
 <system.diagnostics>  
@@ -78,10 +78,10 @@ public class EchoAdapterUtilities
 </system.diagnostics>  
 ```  
   
- Add 要素を使用すると、使用するトレース リスナーの種類と名前を指定します。 この例の構成は、リスナーを"xmlTrace"という名前されを使用する種類として標準の .NET Framework トレース リスナー (System.Diagnostics.XmlWriterTraceListener) を追加します。 任意の数の各ソースのトレース リスナーを追加することができます。 たとえば、次の例でも追加しました System.Diagnostics.TextWriterTraceListener の .NET Framework トレース リスナーを使用して"textTrace"という名前の別のリスナー。 トレース リスナーは、ファイルにトレースを出力、構成ファイルで、出力ファイルの場所と名前を指定する必要があります。 これは、そのリスナー initializeData をファイルの名前に設定します。  
+ 使用するトレース リスナーの種類と名前を指定するのに追加要素を使用することができます。 この例の構成は、という名前のリスナー"xmlTrace"しを使用する型として標準の .NET Framework トレース リスナー (System.Diagnostics.XmlWriterTraceListener) を追加します。 任意の数の各ソースのトレース リスナーを追加することができます。 たとえば、次の例でも追加しました System.Diagnostics.TextWriterTraceListener の .NET Framework トレース リスナーを使用して"textTrace"という名前の別のリスナー。 ファイルにトレースを出力するトレース リスナーに、構成ファイルで、出力ファイルの場所と名前を指定する必要があります。 これは、ファイルの名前をリスナーの initializeData に設定します。  
   
-## <a name="enabling-tracing-for-the-add-adapter-service-reference-plug-in"></a>トレースを有効にすると、プラグイン アダプター サービス参照の追加  
- Devenv.exe.config ファイルで、次のセクションを追加することでこのプラグインであるは、トレースを有効にすることができます`\Program Files (x86)\Microsoft Visual Studio\Common7\IDE`です。
+## <a name="enabling-tracing-for-the-add-adapter-service-reference-plug-in"></a>トレースを有効にすると、プラグインのアダプター サービス参照の追加  
+ Devenv.exe.config ファイルで、次のセクションを追加することでこのプラグインであるは、トレースを有効にすることができます`\Program Files (x86)\Microsoft Visual Studio\Common7\IDE`します。
   
 ```  
 <system.diagnostics>  
@@ -105,7 +105,7 @@ public class EchoAdapterUtilities
 ```  
   
 ## <a name="enable-tracing-for-the-consume-adapter-service-add-in"></a>トレースを有効にする、アダプターを使用する追加のサービス  
- ある BTSNTSVC.exe.config ファイルで、次のセクションを追加することでこのアドインでのトレースを有効にすることができます`\Program Files (x86)\Microsoft BizTalk Server`です。  
+ ある BTSNTSVC.exe.config ファイルで、次のセクションを追加することでこのアドインでのトレースを有効にすることができます`\Program Files (x86)\Microsoft BizTalk Server`します。  
   
 ```  
 <system.diagnostics>  

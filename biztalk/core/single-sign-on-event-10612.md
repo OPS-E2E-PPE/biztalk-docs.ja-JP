@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10612 |Microsoft Docs'
+title: シングル サインオン:イベント 10612 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3fdc86dd2143bf8b2b4c27dab66cc4c06ddff5ae
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9b73a601e883f651b5333224c557a1344d32943c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36973019"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65397712"
 ---
-# <a name="single-sign-on-event-10612"></a>シングル サインオン: イベント 10612
+# <a name="single-sign-on-event-10612"></a>シングル サインオン:イベント 10612
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                                                                                                                                                                                                                 |
@@ -30,10 +30,10 @@ ms.locfileid: "36973019"
 |  イベント ソース   |                                                                                                                                     ENTSSO                                                                                                                                      |
 |    コンポーネント    |                                                                                                                                       なし                                                                                                                                       |
 |  シンボル名  |                                                                                                                          SSO_WARN_TRANSACTION_TIMEOUT                                                                                                                           |
-|  メッセージ テキスト   | トランザクションのタイムアウト値が、この操作で推奨される最大値を超えています。 Details.%r のドキュメントを参照してください。<br /><br /> トランザクション ID: %1 %r<br /><br /> トランザクションのタイムアウト: %2 分 (0 には、無限のタイムアウトことを示します) %r<br /><br /> 推奨される最大値: %3 分 |
+|  メッセージ テキスト   | トランザクションのタイムアウトは、この操作に推奨される最大値を超えています。 Details.%r のドキュメントを参照してください。<br /><br /> トランザクション ID: %1 %r<br /><br /> トランザクションのタイムアウト: %2 分 (0 には、無限のタイムアウトことを示します) %r<br /><br /> 推奨される最大値: %3 分 |
   
 ## <a name="explanation"></a>説明  
- 非常に大きなタイムアウト値が設定されたトランザクションがシステムで処理されています。 実行時間の長いトランザクションによってロックされているときに ENTSSO システムが SSO データベースをポーリングした場合、システムは最終的にはオフラインになります。  
+ トランザクションには、非常に大きなタイムアウト値を持つシステムが入力されます。 場合は、ENTSSO システムは、実行時間の長いトランザクションによってロックされている SSO データベースをポーリングし、システムは最終的にオフラインになります。  
   
 ## <a name="user-action"></a>ユーザーの操作  
  ユーザーによる操作は不要です。

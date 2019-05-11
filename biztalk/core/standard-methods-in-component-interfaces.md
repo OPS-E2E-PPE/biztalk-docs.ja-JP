@@ -17,15 +17,15 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: eecb56f262a56e6567b44b146c631542cb1ceda6
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 308e099f6e16cadd671785947300ada4e113e7a7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36994827"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65392902"
 ---
 # <a name="standard-methods-in-component-interfaces"></a>コンポーネント インターフェイスの標準メソッド
-コンポーネント インターフェイスの標準メソッドを次に示します。  
+コンポーネント インターフェイスの標準的な方法は次のとおりです。  
   
 - `Create`  
   
@@ -35,11 +35,11 @@ ms.locfileid: "36994827"
   
 - `Save`  
   
-  使用できるのは、基になるコンポーネントに含まれている上記のメソッドだけです。 たとえば、基になるコンポーネントに `Add` 機能が含まれていない場合、`Create` は使用できません。  
+  基になるコンポーネントでこれらのメソッドにのみ利用できます。 たとえば、基になるコンポーネントが含まれていない`Add`機能、`Create`は使用できません。  
   
-## <a name="viewing-or-changing-available-methods"></a>使用可能なメソッドの表示または変更  
+## <a name="viewing-or-changing-available-methods"></a>表示または使用可能なメソッドを変更します。  
   
-#### <a name="to-view-or-change-available-methods"></a>使用可能なメソッドを表示または変更するには  
+#### <a name="to-view-or-change-available-methods"></a>表示または使用可能なメソッドを変更するには  
   
 1.  コンポーネント インターフェイスを開く**プロパティ** ダイアログ ボックス。  
   
@@ -51,4 +51,4 @@ ms.locfileid: "36994827"
   
 ## <a name="see-also"></a>参照  
  [コンポーネント インターフェイスを作成する方法](../core/how-to-create-component-interfaces.md)   
- [付録 C: コンポーネント インターフェイスの使用](../core/appendix-c-using-component-interfaces.md)
+ [付録 c:コンポーネント インターフェイスの使用](../core/appendix-c-using-component-interfaces.md)

@@ -13,12 +13,12 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5d6957a4f3d73c5f59df5cd36f70a7ed34631fa6
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a00e4abf979b7e52cd649c8ef663af22016967bc
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37019832"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531096"
 ---
 # <a name="manage-maps"></a>マップを管理します。
 
@@ -34,10 +34,10 @@ ms.locfileid: "37019832"
   
 - 開発者が展開したときに、アプリケーションからマップを含むアセンブリ[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]」の説明に従って、 [BizTalk アプリケーションに Visual Studio から BizTalk アセンブリを展開する](../core/deploying-biztalk-assemblies-from-visual-studio-into-a-biztalk-application.md)します。  
   
-  マップの背景については、[マップ](../core/maps.md)を参照してください。 マップを作成する方法の詳細については、[を作成するマップを使用して BizTalk マッパー](../core/creating-maps-using-biztalk-mapper.md)を参照してください。  
+  マップの背景については、次を参照してください。[マップ](../core/maps.md)します。 マップを作成する方法の詳細については、次を参照してください。[を作成するマップを使用して BizTalk マッパー](../core/creating-maps-using-biztalk-mapper.md)します。  
   
 > [!NOTE]
->  Microsoft Windows Management Instrumentation (WMI) のオブジェクト モデルを使用して、管理タスクを自動化するスクリプトを作成および実行できます。 WMI の使用方法の詳細については、、 **WMI クラスの参照**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]を参照してください。
+>  Microsoft Windows Management Instrumentation (WMI) のオブジェクト モデルを使用して、管理タスクを自動化するスクリプトを作成および実行できます。 WMI の使用方法の詳細については、次を参照してください。、 **WMI クラスの参照**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]します。
   
 ## <a name="next-steps"></a>次のステップ 
   

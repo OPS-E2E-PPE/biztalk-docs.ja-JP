@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2f337efa7b72a40c37a4cc3f42a2bd5d846923dc
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8579726d4e97d7bce91dce2a27687528e6064794
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36970955"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65397036"
 ---
 # <a name="plan-for-your-biztalk-solution"></a>BizTalk ソリューションを計画します。
 主な設計目標の 1 つ[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]できるだけ多くの処理のシナリオに対応するために最大限の柔軟性を提供することです。 この柔軟性により機能の最適な使用で使用できるようにする方法を決定する BizTalk ソリューションの開発者が直面する主な課題の 1 つは[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ビジネスに合わせて必要があります。 計画、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]は以下に示す種類のフェーズに分けることができます。  
@@ -31,9 +31,9 @@ ms.locfileid: "36970955"
   
 - ソリューションにオーケストレーションを実装するための要件とは  
   
-- スループットの要件を文書化: ソリューションの最大持続可能スループットの要件は何ですか?  
+- ドキュメントのスループットの要件:ソリューションの最大持続可能スループットの要件とは  
   
-- 待機時間の要件: どのように応答性の高いソリューションにする必要は送信請求-応答と要求-応答のシナリオのでしょうか。  
+- 待機時間の要件:応答性の高い方法は、ソリューション必要があります送信請求-応答と要求-応答のシナリオのでしょうか。  
   
 - ソリューションは、ピーク時のドキュメントの読み込みの期間からどの程度回復か。  
   
@@ -156,7 +156,7 @@ ms.locfileid: "36970955"
   
   -   SAN ディスク割り当て、書式設定、およびパーティション分割  
   
-- [ディスク]  
+- Disk  
   
   -   各コンピューターのローカル ディスクの詳細  
   

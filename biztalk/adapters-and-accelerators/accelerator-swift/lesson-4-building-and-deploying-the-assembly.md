@@ -1,5 +1,5 @@
 ---
-title: 'レッスン 4: 構築と、アセンブリの配置 |Microsoft Docs'
+title: レッスン 4:ビルドと、アセンブリの展開 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,14 +17,14 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 867fe91ad0dd8dcb00c0293da08753f38e5005d6
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d180180f178defe4fc4d93de36fb8ac8f6ed88a0
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36988275"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65530298"
 ---
-# <a name="lesson-4-building-and-deploying-the-assembly"></a>レッスン 4: 構築と、アセンブリの配置
+# <a name="lesson-4-building-and-deploying-the-assembly"></a>レッスン 4:構築およびアセンブリを展開します。
 このレッスンでは、ビルドし、前のレッスンで作成したスキーマを含むアセンブリを生成するプロジェクトを配置します。 このタスクにより、これまでに作成した作業でコンパイル エラーがないです。  
   
  アセンブリを展開する構成データベースにアセンブリのコピーを格納し、そのグローバル アセンブリ キャッシュ (GAC) にインストールします。 次の手順では、ソリューション エクスプ ローラーから直接デプロイします。  
@@ -53,4 +53,4 @@ ms.locfileid: "36988275"
   
     SWIFTSchemas が一覧に表示された場合、アセンブリが正常に展開されていると参照および使用できる他の[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]プロジェクト。  
   
-   続行する[モジュール 3: パイプライン プロジェクトの追加](../../adapters-and-accelerators/accelerator-swift/module-3-adding-a-pipeline-project.md)します。
+   続行する[モジュール 3。パイプライン プロジェクトの追加](../../adapters-and-accelerators/accelerator-swift/module-3-adding-a-pipeline-project.md)します。

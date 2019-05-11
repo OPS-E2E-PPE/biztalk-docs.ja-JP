@@ -1,5 +1,5 @@
 ---
-title: '手順 5: BizTalk メッセージング サーバーの構成 |Microsoft Docs'
+title: 手順 5:BizTalk メッセージング サーバーの構成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,14 +15,14 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9baea2c567148ead98abf6b3aca3f5cad8258e60
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 72211a5570d40e1eaae7ad3974496937ca9aed2a
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36980003"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65530081"
 ---
-# <a name="step-5-configuring-the-biztalk-messaging-servers"></a>手順 5: BizTalk メッセージング サーバーを構成します。
+# <a name="step-5-configuring-the-biztalk-messaging-servers"></a>手順 5:BizTalk メッセージング サーバーを構成します。
 このセクションでは、BizTalk メッセージング サーバーの構成のガイドラインを示します。  
   
 ### <a name="to-configure-the-biztalk-messaging-servers"></a>BizTalk メッセージング サーバーを構成するには  
@@ -35,7 +35,7 @@ ms.locfileid: "36980003"
   
    - DTC をファイアウォールの背後にある場合は、「を構成する Microsoft 分散トランザクション コーディネーター (DTC) をファイアウォール経由で動作」にあるを参照してください。 [ http://go.microsoft.com/fwlink/?linkid=48872](http://go.microsoft.com/fwlink/?linkid=48872)します。  
   
-2. 構成し、BizTalk のネットワーク負荷分散の確認」の説明に従ってサーバーが表示される[手順 2: サーバー上の NLB の構成](../../adapters-and-accelerators/accelerator-swift/step-2-configuring-nlb-on-the-servers.md)。  
+2. 構成し、BizTalk のネットワーク負荷分散の確認」の説明に従ってサーバーが表示される[手順 2。サーバーに NLB を構成する](../../adapters-and-accelerators/accelerator-swift/step-2-configuring-nlb-on-the-servers.md)します。  
   
 3. インストールし、構成[!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)]」の説明に従って[BizTalk Accelerator for SWIFT のメッセージング サーバーに構成をインストールおよび](../../adapters-and-accelerators/accelerator-swift/installing-and-configuring-biztalk-accelerator-for-swift-on-messaging-servers.md)します。  
   

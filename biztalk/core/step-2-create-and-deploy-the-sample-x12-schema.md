@@ -1,5 +1,5 @@
 ---
-title: '手順 2: が作成およびデプロイのサンプル X12 スキーマ |Microsoft Docs'
+title: 手順 2:作成およびデプロイのサンプル X12 スキーマ |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 31
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 671a2ce81946b2d2e4bd4125f8b236740f566f72
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a99083a5b0d4cc416f611e94ac35039921c8deba
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36968203"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65392765"
 ---
-# <a name="step-2-create-and-deploy-the-sample-x12-schema"></a>手順 2: が作成およびデプロイのサンプル X12 スキーマ
+# <a name="step-2-create-and-deploy-the-sample-x12-schema"></a>手順 2:作成およびデプロイのサンプル X12 スキーマ
 ![手順 11 の 2](../core/media/tut-step2-of-11.gif "Tut_Step2_of_11")  
   
  このステップでは、AS2 トランスポートを経由した受信 EDI X12 インターチェンジを処理するために必要な、サンプル EDI X12 スキーマを提供するプロジェクトをビルドし、展開します。 このチュートリアルでは、スキーマ X12_00401_864.xsd を使用します。 AS2 チュートリアルに付属のプロジェクトを変更する必要はありません。実行する必要があるのはビルドだけです。  
@@ -37,14 +37,14 @@ ms.locfileid: "36968203"
 2. [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] で、ソリューション [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\AS2 Tutorial\Schemas\Schemas.sln を開きます。  
   
    > [!NOTE]
-   >  このトピックは、EDI スキーマ、パイプライン、およびオーケストレーションを含む BizTalk EDI アプリケーションに別のアプリケーションから参照を既に追加していることを前提としています。 そうでない場合は、[、BizTalk Server EDI アプリケーションへの参照を追加する方法](http://msdn.microsoft.com/library/7af066fb-372f-4709-b566-c8d6b4a9d782)を参照してください。  
+   >  このトピックは、EDI スキーマ、パイプライン、およびオーケストレーションを含む BizTalk EDI アプリケーションに別のアプリケーションから参照を既に追加していることを前提としています。 そうでない場合は、次を参照してください。 [、BizTalk Server EDI アプリケーションへの参照を追加する方法](http://msdn.microsoft.com/library/7af066fb-372f-4709-b566-c8d6b4a9d782)します。  
   
 3. スキーマ プロジェクトを右クリックし、**プロパティ**します。 をクリックして、**署名**プロジェクト デザイナー タブ。 チェック、**アセンブリに署名**チェック ボックスをオンの**厳密なキー名のファイルを選択して**を選択します**\<新規.\>** 入力`Schemas.snk`します。 クリア**キーファイルをパスワードで保護する**順にクリックします**OK**します。 プロジェクトのプロパティのダイアログ ボックスを閉じ、変更を保存します。  
   
 4. Schemas.btproj をビルドおよび展開します。  
   
 ## <a name="next-steps"></a>次の手順  
- 組織 (Contoso) のパーティとビジネス プロファイルを構成する」の説明に従って[手順 3: 組織のパーティとビジネス プロファイルを構成する](../core/step-3-configure-a-party-and-business-profile-for-your-organization2.md)します。  
+ 組織 (Contoso) のパーティとビジネス プロファイルを構成する」の説明に従って[手順 3。組織のパーティとビジネス プロファイルを構成する](../core/step-3-configure-a-party-and-business-profile-for-your-organization2.md)します。  
   
 ## <a name="see-also"></a>参照  
  [EDI ドキュメント スキーマ](../core/edi-document-schemas.md)

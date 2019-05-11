@@ -15,12 +15,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 991fec074369e774a9eef9ab2ae34f10436c6a4f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a741ac41c86258567a22bb3a8a8d9ec699064dd0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36973699"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373317"
 ---
 # <a name="invoke-rfcs-in-sap-using-the-wcf-service-model"></a>WCF サービス モデルを使用して SAP で Rfc を呼び出す
 [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]クライアント プログラムで呼び出すことができる操作として、SAP システムで Rfc を表示します。 WCF サービス モデルでは、これらの操作が生成された WCF クライアント クラスのメソッドとして呼び出されます。 使用することができます、[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]のコードで呼び出す RFC の各メソッドを格納する WCF クライアント クラスを生成します。 [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]も RFC の各によって使用されているパラメーターおよびデータ型をカプセル化する .NET 型を生成します。 この WCF クライアント クラスのインスタンスを作成し、ターゲットの Rfc を呼び出すメソッドを呼び出すことができます。  
@@ -59,9 +59,9 @@ public partial class RfcClient : System.ServiceModel.ClientBase<Rfc>, Rfc {
   
 #### <a name="to-create-an-rfc-client-application"></a>RFC クライアント アプリケーションを作成するには  
   
-1. 生成、 **RfcClient**クラス。 使用して、 [!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)] 、ServiceModel メタデータ ユーティリティ ツール (svcutil.exe) を生成するか、 **RfcClient**を操作する Rfc を対象とするクラス。 WCF クライアントを生成する方法の詳細については、[SAP ソリューションの成果物の WCF クライアントまたは WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-sap/generate-a-wcf-client-or-a-wcf-service-contract-for-sap-solution-artifacts.md)を参照してください。  
+1. 生成、 **RfcClient**クラス。 使用して、 [!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)] 、ServiceModel メタデータ ユーティリティ ツール (svcutil.exe) を生成するか、 **RfcClient**を操作する Rfc を対象とするクラス。 WCF クライアントを生成する方法の詳細については、次を参照してください。 [SAP ソリューションの成果物の WCF クライアントまたは WCF サービス コントラクトを生成](../../adapters-and-accelerators/adapter-sap/generate-a-wcf-client-or-a-wcf-service-contract-for-sap-solution-artifacts.md)します。  
   
-2. インスタンスを作成、 **RfcClient**クラスで生成されたステップ 1、およびクライアントのバインディングを指定します。 クライアントのバインディングを指定するには、バインディングとエンドポイント アドレスを指定する必要があります、 **RfcClient**が使用されます。 コードで強制的に、または構成で宣言的に、これを行うことができます。 クライアントのバインディングを指定する方法の詳細については、[SAP システムのクライアントのバインディングを構成する](../../adapters-and-accelerators/adapter-sap/configure-a-client-binding-for-the-sap-system.md)を参照してください。 次のコードを初期化します、 **RfcClient**から構成し、SAP システムの資格情報を設定します。  
+2. インスタンスを作成、 **RfcClient**クラスで生成されたステップ 1、およびクライアントのバインディングを指定します。 クライアントのバインディングを指定するには、バインディングとエンドポイント アドレスを指定する必要があります、 **RfcClient**が使用されます。 コードで強制的に、または構成で宣言的に、これを行うことができます。 クライアントのバインディングを指定する方法の詳細については、次を参照してください。 [SAP システムのクライアントのバインディングを構成する](../../adapters-and-accelerators/adapter-sap/configure-a-client-binding-for-the-sap-system.md)します。 次のコードを初期化します、 **RfcClient**から構成し、SAP システムの資格情報を設定します。  
   
    ```  
    RfcClient rfcClient = new RfcClient("SAPBinding_Rfc");  

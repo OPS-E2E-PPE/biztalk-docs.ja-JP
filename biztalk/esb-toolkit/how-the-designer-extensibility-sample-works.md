@@ -1,5 +1,5 @@
 ---
-title: デザイナーの機能拡張のサンプルの動作 |Microsoft ドキュメント
+title: デザイナー機能拡張サンプルのしくみ |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,18 +12,18 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f78e5ab2c8a274b53b3cc580b37842772924af94
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 963c5ae2f778f193135fa73366d81cc359f5a798
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25975874"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65397118"
 ---
-# <a name="how-the-designer-extensibility-sample-works"></a>デザイナーの機能拡張のサンプルのしくみ
-デザイナーの機能拡張のサンプルでは、各プロジェクトには、2 つのクラスが含まれています。 **Extender**クラスおよび**拡張プロバイダー**クラスです。 これらのクラスが、機能を拡張しのプロパティを定義するように設計、 **ItineraryDsl**モデル要素。  
+# <a name="how-the-designer-extensibility-sample-works"></a>デザイナー機能拡張サンプルのしくみ
+デザイナーの機能拡張サンプル内の各プロジェクトに 2 つのクラスが含まれています。**エクステンダー**クラスおよび**拡張機能プロバイダー**クラス。 これらのクラスが、機能を拡張し、のプロパティを定義するように設計、 **ItineraryDsl**モデル要素。  
   
- **拡張プロバイダー**クラスから派生し、 **ExtensionProviderBase**クラスし、いる、 **ExtensionProviderAttribute**プロパティを持つそれらに適用します。拡張機能とその目的を識別します。 これらの値が表示されます、デザイナー内のユーザーにユーザーを設定するときに、 **Extender**モデル要素のプロパティです。 ときに、**拡張プロバイダー**のコンス トラクターを呼び出すクラスの初期化、 **ExtensionProviderBase** extender クラスの型を渡す。  
+ **拡張機能プロバイダー**クラスから派生、 **ExtensionProviderBase**クラスし、いる、 **ExtensionProviderAttribute**プロパティとそれらに適用します。拡張機能とその目的を特定します。 ユーザーが設定されるときにそのこれらの値が、デザイナーでユーザーに表示される、**エクステンダー**モデル要素のプロパティ。 ときに、**拡張機能プロバイダー**のコンス トラクターを呼び出すクラスの初期化、 **ExtensionProviderBase**エクステンダー クラスの型を渡すとします。  
   
- **Extender**クラスがある、 **ObjectExtender**属性はそれらへの適用、 **ObjectExtender**内のオブジェクトの種類を通過するとき、属性、 **ItineraryDsl**拡張します。 これらのクラスの基底クラスは、extender の種類によって異なります。 基本クラスは、競合回避モジュールのエクステンダーの**ObjectExtender\<リゾルバー\>** です。 基本クラスは、行程サービス エクステンダーの**ItineraryServiceExtenderBase**です。 **Extender**クラス、次の属性は、プロパティに適用されます属性、プロパティ グリッドで適切な表示に必要な検証のために、Microsoft Enterprise Library に含まれる属性。適切なシリアル化に必要な属性やプロパティを永続化する方法を決定する属性。  
+ **エクステンダー**クラスが、 **ObjectExtender** ; に適用される属性、 **ObjectExtender**内のオブジェクトの型を渡される、属性、 **ItineraryDsl**拡張するものです。 これらのクラスの基本クラスは、エクステンダーの種類によって異なります。 基本クラスは、競合回避モジュールのエクステンダーの**ObjectExtender\<リゾルバー\>** します。 基本クラスは、旅行プラン サービスのエクステンダーの**ItineraryServiceExtenderBase**します。 **エクステンダー**クラスでは、次の属性がプロパティに適用されます属性プロパティ グリッドで適切に表示するために必要な検証のために、Microsoft Enterprise Library に含まれる属性。適切なシリアル化に必要な属性やプロパティを永続化する方法を決定する属性。  
   
- これらのアセンブリでは、コンパイルされ、Lib フォルダーに配置することが、ときに、読み込まれ、デザイナーによって実行時にキャッシュします。 Extender は、必要に応じて、 **ItineraryDsl**アセンブリを読み込む、適用可能なキャッシュからエクスポートされた型とそれらの型の属性を調べることでリフレクションを使用します。
+ これらのアセンブリがコンパイルされ、Lib フォルダーに配置の読み込み時と実行時に、デザイナーによってキャッシュされます。 エクステンダーは、必要に応じて、 **ItineraryDsl**リフレクションを使用してキャッシュからエクスポートされた型とそれらの型の属性を調べることで適用可能なアセンブリを読み込みます。

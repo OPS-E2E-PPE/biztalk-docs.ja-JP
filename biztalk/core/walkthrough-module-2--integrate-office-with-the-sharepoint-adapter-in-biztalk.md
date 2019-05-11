@@ -19,24 +19,24 @@ caps.latest.revision: 48
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 79297c55152688821ba5b472335eade1d31b0ffe
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 72496ab6b61de15cba1eee201b9a9dfb058810b5
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37022392"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395318"
 ---
 # <a name="walkthrough-module-2---integrating-office-with-the-windows-sharepoint-services-adapter"></a>チュートリアル: モジュール 2 - Windows SharePoint Services アダプターと Office の統合
-このチュートリアルの続きでは、[チュートリアル: モジュール 1 - Windows SharePoint Services アダプターでメッセージを送受信する](../core/walkthrough-module-1--send-and-receive-messages-with-the-sharepoint-adapter.md)Microsoft Office と統合する方法と、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]コンテンツ ベースルーティング (CBR) アプリケーションを作成します。 Windows SharePoint Services アダプターの概要についてを参照してください。 [、Windows SharePoint Services アダプターとは何ですか?](../core/what-is-the-windows-sharepoint-services-adapter.md)します。  
+このチュートリアルの続きでは、[チュートリアル。モジュール 1 - Windows SharePoint Services アダプターでメッセージを送受信する](../core/walkthrough-module-1--send-and-receive-messages-with-the-sharepoint-adapter.md)Microsoft Office と統合する方法と、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]コンテンツ ベース ルーティング (CBR) アプリケーションを使用する作成しました。 Windows SharePoint Services アダプターの概要についてを参照してください。 [、Windows SharePoint Services アダプターとは何ですか?](../core/what-is-the-windows-sharepoint-services-adapter.md)します。  
   
 ## <a name="prerequisites"></a>前提条件  
  このトピックの手順を実行するための前提条件は、次のとおりです。  
   
 - [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] が完全インストールされたシングル サーバー展開が必要です。  
   
-- 次のチュートリアルを完了する必要があります:[チュートリアル: モジュール 1 - Windows SharePoint Services アダプターでメッセージを送受信します。](../core/walkthrough-module-1--send-and-receive-messages-with-the-sharepoint-adapter.md)  
+- 次のチュートリアルを完了する必要があります。[チュートリアル: モジュール 1 - Windows SharePoint Services アダプターでメッセージを送受信します。](../core/walkthrough-module-1--send-and-receive-messages-with-the-sharepoint-adapter.md)  
   
-  マルチ サーバー展開で、Windows SharePoint Services アダプターを使用する方法の詳細については、[設定と、Windows SharePoint Services アダプターを展開する](../core/setting-up-and-deploying-the-windows-sharepoint-services-adapter.md)を参照してください。  
+  マルチ サーバー展開で、Windows SharePoint Services アダプターを使用する方法の詳細については、次を参照してください。[設定と、Windows SharePoint Services アダプターを展開する](../core/setting-up-and-deploying-the-windows-sharepoint-services-adapter.md)します。  
   
 ## <a name="create-a-biztalk-project"></a>BizTalk プロジェクトの作成  
  ここでは、BizTalk エディターを使用して、空の BizTalk プロジェクトとスキーマを作成します。 これは、後で使用する InfoPath フォームのスキーマを作成するために必要な手順です。  
@@ -45,7 +45,7 @@ ms.locfileid: "37022392"
   
 1.  開始**Visual Studio コマンド プロンプト**します。  
   
-2.  型`sn -k C:\WSSAdapterWalkthrough\OrderProcess.snk`、し、キーを押します**Enter**します。 キー ペアが書き込まれます。  
+2.  型`sn -k C:\WSSAdapterWalkthrough\OrderProcess.snk`、キーを押します**Enter**です。 キー ペアが書き込まれます。  
   
 3.  コマンド プロンプトを閉じます。  
   
@@ -107,7 +107,7 @@ ms.locfileid: "37022392"
   
 14. [プロパティ] ウィンドウで次のように設定します。、**データ型**プロパティ`PurchaseOrderDate`xs:dateTime にします。  
   
-15. をクリックして**ファイル**、 をクリックし、**すべて保存**します。  
+15. をクリックして**ファイル**、クリックして**すべてを保存**です。  
   
 16. [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]を終了します。  
   
@@ -283,7 +283,7 @@ ms.locfileid: "37022392"
  このチュートリアルでは、Windows SharePoint Services アダプターとコンテンツ ベースのルーティング (CBR) を使用して、Microsoft Office InfoPath とのより緊密な統合を実現する方法を確認しました。  
   
 ## <a name="next-steps"></a>次の手順  
- これで、このチュートリアルを完了すると、実行、[チュートリアル: モジュール 3 - オーケストレーションからの SharePoint プロパティへのアクセス](../core/walkthrough-module-3-accessing-sharepoint-properties-from-an-orchestration.md)チュートリアルでは、このチュートリアルでは、行った作業の発展を統合します。プロジェクトに、オーケストレーション内から SharePoint プロパティにアクセスする方法について説明します。  
+ これで、このチュートリアルを完了すると、実行、[チュートリアル。モジュール 3 - オーケストレーションから SharePoint プロパティへのアクセス](../core/walkthrough-module-3-accessing-sharepoint-properties-from-an-orchestration.md)チュートリアルでは、このチュートリアルでは、行った作業の発展として、プロジェクトにオーケストレーションを統合し、内から SharePoint プロパティにアクセスする方法を示しますです。  
   
 ## <a name="see-also"></a>参照  
  [Windows SharePoint Services アダプターとは何ですか。](../core/what-is-the-windows-sharepoint-services-adapter.md)   

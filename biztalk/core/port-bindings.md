@@ -23,12 +23,12 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f74e60db9b3a5994ff04f13fe2f242792cf2dcc7
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c39dbaa807c68d5964dde973ab12c6fc91f7805c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36972539"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65394889"
 ---
 # <a name="port-bindings"></a>ポートのバインド
 ポートのバインドとは、メッセージを送受信する場所と方法を定義した構成情報です。 ポートのバインドの参照先は、物理的な場所、パイプライン、他のオーケストレーションなど、バインドの種類によって異なります。  
@@ -68,7 +68,7 @@ ms.locfileid: "36972539"
   
 - パートナー オーケストレーションの直接バインド ポート  
   
-  直接バインド ポートを操作する方法の詳細については、[オーケストレーションでの直接バインド ポートの操作](../core/working-with-direct-bound-ports-in-orchestrations.md)を参照してください。  
+  直接バインド ポートを操作する方法の詳細については、次を参照してください。[オーケストレーションでの直接バインド ポートの操作](../core/working-with-direct-bound-ports-in-orchestrations.md)します。  
   
 > [!NOTE]
 >  直接バインドを使用する場合、1 つの要求 - 応答ポートと 2 つの一方向ポートの間でメッセージを交換することはできません。  
@@ -83,10 +83,10 @@ ms.locfileid: "36972539"
 DynamicSendPort(Microsoft.XLANGs.BaseTypes.Address)="mailto:johnd@contoso.com";  
 ```  
   
- ポートに値を動的に割り当てる方法については、[動的ポートに値を割り当てる方法](../core/how-to-use-expressions-to-assign-values-to-dynamic-ports.md)を参照してください。  
+ ポートに値を動的に割り当てる方法については、次を参照してください。[動的ポートに値を割り当てる方法](../core/how-to-use-expressions-to-assign-values-to-dynamic-ports.md)します。  
   
 ## <a name="web-ports"></a>Web ポート  
- プロジェクトに Web サービスへの参照が含まれる場合、オーケストレーション デザイナーで参照が検出されて、対応する Web ポートの種類が使用できるようになります。 Web ポートを作成するには、オーケストレーションにポートを追加して、既存の Web ポートの種類を割り当てます。 詳細については、[Web ポートの作成](../core/creating-web-ports.md)を参照してください。  
+ プロジェクトに Web サービスへの参照が含まれる場合、オーケストレーション デザイナーで参照が検出されて、対応する Web ポートの種類が使用できるようになります。 Web ポートを作成するには、オーケストレーションにポートを追加して、既存の Web ポートの種類を割り当てます。 詳細については、次を参照してください。 [Web ポートの作成](../core/creating-web-ports.md)です。  
   
 ## <a name="see-also"></a>参照  
  [ポートの種類を操作する方法](../core/how-to-work-with-port-types.md)   

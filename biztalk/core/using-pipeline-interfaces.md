@@ -1,5 +1,5 @@
 ---
-title: パイプライン インターフェイスを使用して |Microsoft ドキュメント
+title: パイプライン インターフェイスの使用 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,102 +12,102 @@ caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c365a8d7bdf37564d3d9b2dceac1c8615e126ebc
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a9d76df29720f33d8c7433bc34f9be239cfee0a4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22289146"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395399"
 ---
-# <a name="using-pipeline-interfaces"></a>パイプライン インターフェイスを使用します。
-パイプライン コンポーネントは、BizTalk メッセージング エンジンとの対話用にあらかじめ定義された一連のインターフェイスを実装する .NET コンポーネントまたは COM コンポーネントです。 実装する必要のあるインターフェイスは、コンポーネントの機能によって異なります。 このトピックでは、これらのインターフェイスとそのメソッドの一部について説明します。  
+# <a name="using-pipeline-interfaces"></a>パイプライン インターフェイスの使用
+パイプライン コンポーネントは、BizTalk メッセージング エンジンと対話するための定義済みのインターフェイスのセットを実装する .NET または COM コンポーネントです。 コンポーネントの機能、に応じて異なるインターフェイスを実装しなければなりません。 このトピックでは、これらのインターフェイスとそのメソッドの一部について説明します。  
   
 > [!WARNING]
->  COM を使用してカスタム パイプライン コンポーネントを作成する場合は、マルチスレッド アパートメント (MTA) モデルを使用するようにコンポーネントを構成する必要があります。 この構成を行わないと、コンポーネントの呼び出しは失敗し、E_NOINTERFACE エラーが返されます。  
+>  COM を使用して、カスタム パイプライン コンポーネントを構築する場合は、マルチ スレッド アパートメント (MTA) モデルを使用するコンポーネントを構成する必要があります。 そうでない場合、コンポーネントの呼び出しは E_NOINTERFACE エラーで失敗します。  
   
 ## <a name="ipipelinecontext"></a>IPipelineContext  
- すべてのパイプライン コンポーネントで使用できる**IPipelineContext**ドキュメント処理に固有のすべてのインターフェイスにアクセスするメソッド。 **IPipelineContext**インターフェイスには、次の機能が用意されています。  
+ すべてのパイプライン コンポーネントで使用できる**IPipelineContext**ドキュメント処理に固有のすべてのインターフェイスにアクセスするメソッド。 **IPipelineContext**インターフェイスは、次の機能を提供します。  
   
--   アンビエント パイプラインとステージの設定をコンポーネントで取得できるようにします。  
+-   アンビエント パイプラインとステージの設定を取得するコンポーネントを使用します。  
   
--   メッセージとメッセージ ファクトリをコンポーネントで取得できるようにします。 コンポーネントでこれらのファクトリを使用することにより、コンポーネントの実行に必要なさまざまなオブジェクトを作成することができます。  
+-   メッセージとメッセージ ファクトリを取得するコンポーネントを使用します。 これらのファクトリでは、コンポーネントは、コンポーネントの実行に必要なさまざまなオブジェクトを作成できます。  
   
--   ドキュメント仕様をコンポーネントで取得できるようにします。 ドキュメント仕様とは、XSD スキーマに注釈を加えたものを指します。  
+-   ドキュメント仕様を取得するコンポーネントを使用します。 ドキュメント仕様とは、XSD スキーマと注釈を追加します。  
   
 ## <a name="ibasecomponent"></a>IBaseComponent  
- コンポーネントの基本情報を指定するために、すべてのパイプライン コンポーネントに実装する必要のあるインターフェイスです。  
+ すべてのパイプライン コンポーネントは、コンポーネントに関する基本的な情報を提供するには、このインターフェイスを実装する必要があります。  
   
 ## <a name="icomponent"></a>IComponent  
- 処理するメッセージを [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] エンジンから取得し、処理されたメッセージをエンジンに返すために、アセンブラーと逆アセンブラーを除くすべてのパイプライン コンポーネントに実装されるインターフェイスです。  
+ すべてのパイプライン コンポーネントはアセンブラーを除くと、逆アセンブラーからのメッセージを取得するには、このインターフェイスを実装する、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]処理エンジンし、エンジンに渡す処理されたメッセージを返します。  
   
- **実行します。** 入力メッセージをコンポーネントに渡し、処理されたメッセージをコンポーネントから取得するために、エンジンによって呼び出されるメソッドです。  
+ **実行します。** 入力メッセージをコンポーネントに渡すし、コンポーネントから処理済みのメッセージを取得する、エンジンによって呼び出されたメソッド。  
   
 ## <a name="ipropertybag-ipersistpropertybag"></a>IPropertyBag、IPersistPropertyBag  
- パイプライン コンポーネントを実装する必要があります**IPersistPropertyBag**その構成情報を受信します。 このインターフェイスと**IPropertyBag**は標準のインターフェイスです。 これらのインターフェイスの詳細については、Microsoft .NET Framework ソフトウェア開発キット (SDK) のドキュメントを参照してください。  
+ パイプライン コンポーネントを実装する必要があります**IPersistPropertyBag**その構成情報を受信します。 このインターフェイスと**IPropertyBag**は標準的なインターフェイスです。 これらのインターフェイスの詳細については、Microsoft .NET Framework ソフトウェア開発キット (SDK) ドキュメントを参照してください。  
   
 ## <a name="idisassemblercomponent"></a>IDisassemblerComponent  
- 逆アセンブラー コンポーネントは、入力時に 1 通のメッセージを受け取り、出力時に 0 通以上のメッセージを生成するパイプライン コンポーネントです。 逆アセンブラー コンポーネントは、メッセージのインターチェンジを個別のドキュメントに分割するために使用されます。 逆アセンブラー コンポーネントのメソッドを実装する必要があります、 **IDisassemblerComponent**からのメッセージを取得するインターフェイス[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]処理との逆アセンブルしたドキュメント バックアップ[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]です。  
+ 逆アセンブラー コンポーネントは、入力に 1 つのメッセージを受信し、出力で、0 個以上のメッセージが生成するパイプライン コンポーネントです。 逆アセンブラー コンポーネントは、個別のドキュメントにメッセージのインターチェンジの分割に使用されます。 逆アセンブラー コンポーネントのメソッドを実装する必要があります、 **IDisassemblerComponent**からのメッセージを取得するインターフェイス[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]にドキュメントがバックアップ処理のため、逆アセンブルした[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]します。  
   
-|方法|Description|  
+|方法|説明|  
 |------------|-----------------|  
-|**逆アセンブルします。**|受信ドキュメントの逆アセンブルを実行**pInMsg**です。|  
-|**GetNext**|逆アセンブラーを実行して生成されたメッセージ セットから次のメッセージを取得します。 返します**NULL**これ以上メッセージがある場合。|  
+|**逆アセンブルします。**|受信ドキュメントの逆アセンブルを実行します。 **pInMsg**します。|  
+|**GetNext**|逆アセンブラーを実行して生成されたメッセージ セットから次のメッセージを取得します。 返します**NULL**以上メッセージがある場合。|  
   
- 回復可能なインターチェンジ処理をサポートする逆アセンブラー コンポーネントを記述する場合は、次の作業を行う必要があります。  
+ 回復可能なインターチェンジ処理をサポートする逆アセンブラー コンポーネントを作成する場合は、次の操作を行う必要があります。  
   
-1.  入力ストリームを VirtualStream() でラップすることによって、シークできるようにします。  
+1.  VirtualStream() でラップすることによって、シーク可能な入力ストリームを行います。  
   
-2.  GetNext() 内に、メッセージに問題があるかどうかを判断するロジックを記述します。 メッセージに問題がある場合は、BTS.MessageDestination = "SuspendQueue" と設定して GetNext() でそのメッセージを返します。  
+2.  GetNext() でメッセージが不適切な場合を判断するロジックがあります。 メッセージが不良に設定して、BTS の場合は。MessageDestination ="SuspendQueue"と GetNext() でメッセージを返します。  
   
-3.  メッセージに問題がない場合は、BTS.SuspendMessageOnRoutingFailure = True と設定して GetNext() でメッセージを返します。  
+3.  メッセージが適切に設定 BTS の場合は。SuspendMessageOnRoutingFailure = True と GetNext() でメッセージを返します。  
   
 ## <a name="iassemblercomponent"></a>IAssemblerComponent  
- アセンブラー コンポーネントは、入力時に複数のメッセージを受け取り、出力時に 1 通のメッセージを生成するパイプライン コンポーネントです。 アセンブラー コンポーネントは、個別のドキュメントをまとめてメッセージ インターチェンジのバッチを作成するために使用されます。  
+ アセンブラー コンポーネントは、パイプライン コンポーネントの入力に複数のメッセージを受信し、出力の 1 つのメッセージが生成されます。 アセンブラー コンポーネントは、メッセージのインターチェンジ バッチに個々 のドキュメントを収集するために使用されます。  
   
 > [!NOTE]
->  このリリースの [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ではアセンブル機能は使用されていないため、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は常に 1 つのドキュメントをコンポーネントの入力として渡します。  
+>  このリリースで[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]、アセンブル機能が使用されないため、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]常に 1 つのドキュメントをコンポーネントの入力に渡します。  
   
- アセンブラー コンポーネントを実装して、 **IAssemblerComponent**メソッドによって呼び出される、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]実行時にエンジンです。  
+ アセンブラー コンポーネントを実装して、 **IAssemblerComponent**メソッドによって呼び出される、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]実行時にエンジン。  
   
-|方法|Description|  
+|方法|説明|  
 |------------|-----------------|  
-|**AddDocument**|ドキュメントに追加**pInMsg**インターチェンジに含まれるメッセージの一覧にします。|  
+|**AddDocument**|ドキュメントを追加します**pInMsg**インターチェンジに含まれるメッセージの一覧にします。|  
 |**アセンブル**|前のメソッドによって追加されたメッセージからインターチェンジを構築します。 アセンブルされたメッセージへのポインターを返します。|  
   
 ## <a name="iprobemessage"></a>IProbeMessage  
- 任意のパイプライン コンポーネント (全般、アセンブル、または逆アセンブル) を実装できます**IProbeMessage**メッセージ プローブ機能が必要とする場合。 プローブ コンポーネントはされているパイプライン ステージで使用**FirstMatch**実行モードです。 、このような段階的に[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]コンポーネントへのメッセージを提供し、**プローブ**メソッドは、コンポーネントにメッセージの形式が認識されるかどうかを決定するメッセージの先頭を検査します。  
+ 任意のパイプライン コンポーネント (全般、アセンブル、または逆アセンブル) を実装できます**IProbeMessage**メッセージ プローブ機能が必要な場合。 プローブ コンポーネントがされているパイプライン ステージで使用される**FirstMatch**実行モード。 、このような段階的に[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]コンポーネントへのメッセージを提供し、**プローブ**メソッドは、コンポーネントのかどうか、メッセージの形式を認識を確認するメッセージの先頭を検査します。  
   
-|方法|Description|  
+|方法|説明|  
 |------------|-----------------|  
-|**プローブ**|このメソッドは、 **pInMsg**メッセージ、および返します**True**形式が認識された場合または**False**それ以外の場合。|  
+|**プローブ**|このメソッドは**pInMsg**メッセージ、および返します**True**形式が認識された場合または**False**それ以外の場合。|  
   
 ## <a name="inameditem"></a>INamedItem  
- マネージ コードおよびアンマネージ コードからドキュメント スキーマにアクセスするためのヘルパー インターフェイスです。  
+ これは、マネージ コードとアンマネージ コードからドキュメント スキーマにアクセスするためのヘルパー インターフェイスです。  
   
 ## <a name="inameditemlist"></a>INamedItemList  
- マネージ コードおよびアンマネージ コードからドキュメント スキーマにアクセスするためのヘルパー インターフェイスです。  
+ これは、マネージ コードとアンマネージ コードからドキュメント スキーマにアクセスするためのヘルパー インターフェイスです。  
   
 ## <a name="idocumentspec"></a>IDocumentSpec  
- パイプライン コンポーネントのメソッドを使用できる、 **IDocumentSpec**コンテキストと、ドキュメント スキーマにアクセスするコンテンツのプロパティの移動など、ドキュメントに固有の操作を実行するためのインターフェイスし、などです。  
+ パイプライン コンポーネントのメソッドを使用できる、 **IDocumentSpec**し、コンテンツのプロパティをコンテキストと、ドキュメント スキーマへのアクセスに移動するなどのドキュメントに固有の操作を実行するためのインターフェイスします。  
   
-|方法|Description|  
+|方法|説明|  
 |------------|-----------------|  
-|**DocType**|現在のドキュメントの型を返します。|  
-|**DocSpecName**|現在のドキュメントの仕様名を返します。|  
+|**DocType**|現在のドキュメントの種類を返します。|  
+|**しない docspecname を含む**|現在のドキュメントの仕様の名前を返します。|  
 |**GetSchemaCollection**|現在のドキュメントのドキュメント スキーマの一覧を返します。|  
-|**GetBodyPath**|ボディ部が開始されるドキュメント内ノードへの XPath を返します。|  
+|**GetBodyPath**|ボディ部が開始されるドキュメント内のノードに、XPath を返します。|  
 |**GetDistinguishedPropertyAnnotationEnumerator**|すべての識別フィールド プロパティ注釈のディクショナリ列挙子を返します。|  
 |**GetPropertyAnnotationEnumerator**|すべてのプロパティ注釈の列挙子を返します。|  
   
 ## <a name="icomponentui"></a>IComponentUI  
- パイプライン コンポーネントをパイプライン デザイナー環境で使用できるようにするには、このインターフェイスを実装する必要があります。  
+ パイプライン コンポーネントは、パイプライン デザイナー環境で使用するには、このインターフェイスを実装する必要があります。  
   
-|方法|Description|  
+|方法|説明|  
 |------------|-----------------|  
-|**アイコン**|このコンポーネントに関連付けられたアイコンを指定します。|  
-|**[検証]**|パイプライン デザイナーは、パイプラインのコンパイル前にこのメソッドを呼び出して、すべての構成プロパティが正しく設定されていることを確認します。|  
+|**アイコン**|このコンポーネントに関連付けられているアイコンを提供します。|  
+|**[検証]**|パイプライン デザイナーでは、すべての構成プロパティが正しく設定されていることを確認するパイプラインのコンパイル前にこのメソッドを呼び出します。|  
   
- **アイコン**プロパティから返される、 **IntPtr**です。 次の c# の例を返す方法を示しています、 **IntPtr**です。  
+ **アイコン**プロパティが返す、 **IntPtr**します。 次C#を返す方法を示します、 **IntPtr**します。  
   
 ```csharp  
 static   ResourceManager resManager = new ResourceManager("ResourceManager", Assembly.GetExecutingAssembly());  
@@ -122,7 +122,7 @@ public IntPtr Icon
 }  
 ```  
   
- 詳細については、次を参照してください。 **IComponentUI インターフェイス (COM)** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]です。 
+ 詳細については、次を参照してください。 **IComponentUI インターフェイス (COM)** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]します。 
   
 ## <a name="see-also"></a>参照  
  [カスタム パイプライン コンポーネントの開発](../core/developing-custom-pipeline-components.md)   

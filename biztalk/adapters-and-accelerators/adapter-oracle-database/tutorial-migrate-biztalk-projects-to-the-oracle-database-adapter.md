@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル: Oracle データベース アダプターを BizTalk プロジェクトの移行 |Microsoft Docs'
+title: チュートリアル:Oracle データベース アダプターを BizTalk プロジェクトの移行 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cdde0ae8992fc9ae0c7dd30b91b7f38733c1de2b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1aca70228a53e88ab143820e3a6bf07409844392
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36999843"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65375889"
 ---
-# <a name="tutorial-migrate-biztalk-projects-to-the-oracle-database-adapter"></a>チュートリアル: Oracle データベース アダプターを BizTalk プロジェクトを移行します。
+# <a name="tutorial-migrate-biztalk-projects-to-the-oracle-database-adapter"></a>チュートリアル:Oracle データベース アダプターを BizTalk プロジェクトを移行します。
 Microsoft BizTalk Server に付属している Oracle データベースの BizTalk ODBC アダプターは WCF ベース異なります[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]など、多くの点で。  
   
 - BizTalk プロジェクトの作成、デザイン時エクスペリエンス。  
@@ -44,7 +44,7 @@ Microsoft BizTalk Server に付属している Oracle データベースの BizT
 >  説明を簡潔にするため、このチュートリアルでは、BizTalk ODBC Adapter for Oracle Database が参照されます「vPrev Oracle データベース アダプター」として 同様に、vPrev Oracle データベース アダプタを使用する BizTalk プロジェクトとして参照される「vPrev BizTalk プロジェクトです」  
   
 ## <a name="sample-used-for-the-tutorial"></a>このチュートリアルで使用されるサンプル  
- このチュートリアルは、vPrev BizTalk プロジェクトを移行する方法を示すサンプル (Oracle_Migration) に基づいています。 Microsoft とサンプルが提供される[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]します。 詳細については、[アダプタ サンプル](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md)を参照してください。  
+ このチュートリアルは、vPrev BizTalk プロジェクトを移行する方法を示すサンプル (Oracle_Migration) に基づいています。 Microsoft とサンプルが提供される[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]します。 詳細については、次を参照してください。[アダプタ サンプル](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md)します。  
   
 ## <a name="prerequisites"></a>前提条件  
   

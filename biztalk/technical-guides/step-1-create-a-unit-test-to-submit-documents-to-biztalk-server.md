@@ -1,5 +1,5 @@
 ---
-title: '手順 1: BizTalk Server にドキュメントを送信する単体テストの作成 |Microsoft ドキュメント'
+title: 手順 1:BizTalk Server にドキュメントを送信する単体テストの作成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,50 +12,50 @@ caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8016bc237b55c2404a21c91e2e68d78fdd21bcf9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: cfd70b3b7c5e79940cbf2f877d2a01dcecf5541f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22302698"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65394596"
 ---
-# <a name="step-1-create-a-unit-test-to-submit-documents-to-biztalk-server"></a>手順 1: BizTalk Server にドキュメントを送信する単体テストを作成します。
-BizTalk Server などのアプリケーション サーバーのコンピューターは、ユーザーに代わって特定のタスクを実行する設計されています。 これらのタスクは、アプリケーション サーバーを認識するプロトコルを使用して、アプリケーション サーバーを理解している標準に準拠するメッセージとして、アプリケーション サーバーに送信されるクライアント要求として開始されます。 たとえば、クライアントは、SMTP プロトコル経由での電子メール サーバーにインターネット電子メール メッセージを送信して電子メールの処理を開始する可能性があります。 同様に、HTML クライアントを処理する web サーバーまたはデータベース サーバーの ASP 要求がクライアント SQL 要求を処理され、BizTalk Server はクライアントのさまざまな業界標準プロトコルを使用して複数の業界メッセージ標準に準拠して書式設定のメッセージを処理できます。 通常、アプリケーション サーバーのワークロードの容量は、一定時間内で、アプリケーション サーバーを処理できるメッセージの数によって測定されます。 BizTalk Server のワークロードの容量が、時間、ビジー状態で workday なども長期間にわたっての「1 秒あたりに受信したドキュメント」、「1 秒あたりに処理されたドキュメント」、「1 秒あたりに完了したオーケストレーション」数の平均として測定同様に、作業 1 週間です。 Visual Studio 2010 ロード テストの機能は、最大数百台のサーバー アプリケーションに同時にアクセスするユーザーのロード プロファイルをシミュレートできます。 このロード テスト機能は、今後の分析用のデータベースでこれらのメトリックを保存する機能と、選択した主要業績評価指標のリアルタイムのメトリックを提供します。 このドキュメントの説明のロード ユニットを作成する方法など、BizTalk Server アプリケーションをテストするために Visual Studio のテスト プロジェクトの使用をテスト、ロード テストを作成する方法に必要なパフォーマンス カウンター データをキャプチャするロード テストを構成する方法BizTalk Server アプリケーションの最大持続可能なスループット (MST) を決定します。  
+# <a name="step-1-create-a-unit-test-to-submit-documents-to-biztalk-server"></a>手順 1:BizTalk Server にドキュメントを送信する単体テストを作成します。
+BizTalk Server などのアプリケーション サーバーのコンピューターは、ユーザーに代わって特定のタスクを実行する設計されています。 これらのタスクは、アプリケーション サーバーで認識されるプロトコルを使用して、アプリケーション サーバーで認識される標準に準拠するメッセージとして、アプリケーション サーバーに送信されたクライアント要求として開始されます。 たとえば、クライアントでは、SMTP プロトコルを使用して電子メール サーバーにインターネット電子メール メッセージを送信することによって電子メールの処理を開始する可能性があります。 同様に、web サーバーがクライアント HTML を処理またはデータベース サーバーの ASP 要求がクライアントの SQL 要求を処理し、BizTalk Server は、多数の業界標準プロトコルを使用して複数の業界メッセージ標準に準拠している書式設定されたクライアントのメッセージを処理できます。 アプリケーション サーバーのワークロードの容量は通常、アプリケーション サーバーは、一定時間内で処理できるメッセージの数で測定されます。 BizTalk Server のワークロードの容量が、時間、またはビジー状態の workday などにも長期間にわたっての「1 秒あたりに受信したドキュメント」、「1 秒あたりに処理されたドキュメント」および「1 秒あたりに完了したオーケストレーション」の平均数として測定同様に、作業 1 週間です。 Visual Studio 2010 のロード テスト機能は、数百個の同時にサーバー アプリケーションにアクセスするユーザーのプロファイルの読み込みをシミュレートできます。 このロード テスト機能は、将来の分析用のデータベースにこれらのメトリックを格納する機能と、選択した主要業績評価指標のリアルタイムのメトリックを提供します。 このドキュメントは、ユニットを作成する方法など、BizTalk Server アプリケーションのロード テストの目的で Visual Studio のテスト プロジェクトの使用について説明しますテスト、ロード テストを作成する方法に必要なパフォーマンス カウンター データをキャプチャするロード テストを構成する方法BizTalk Server アプリケーションの最大持続可能なスループット (MST) を決定します。  
   
-## <a name="creating-a-visual-studio-unit-test-to-submit-documents-to-biztalk-server"></a>BizTalk Server にドキュメントを送信する Visual Studio 単体テストの作成  
- Visual Studio の単体テストを参照して、 [Microsoft.VisualStudio.TestTools.UnitTesting](http://go.microsoft.com/fwlink/?LinkID=132293) (http://go.microsoft.com/fwlink/?LinkID=132293) の名前空間は単体テストのサポートを提供するいくつかのクラスを提供します。 特定の重要度、 [UnitTesting](http://go.microsoft.com/fwlink/?LinkID=132293) (http://go.microsoft.com/fwlink/?LinkID = 132293) 名前空間が含まれています、[また Microsoft.VisualStudio.TestTools.UnitTesting.TestContext](http://go.microsoft.com/fwlink/?LinkID=208233) (http://go.microsoft.com/fwlink/?LinkID = 208233) を単体テストに提供される情報を格納するクラスと[Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute](http://go.microsoft.com/fwlink/?LinkID=208235) (http://go.microsoft.com/fwlink/?LinkID = 208235) テスト メソッドを定義するクラスを使用します。 ロード テストの BizTalk Server のために、テスト メソッドが読み込まれるメッセージとメッセージの送信先となるエンドポイントまたは URL で必要があります指定します。 エンドポイントの URL/は、対応する BizTalk 受信場所と、BizTalk Server にメッセージ エントリ ポイントが作成されると、機能します。  
+## <a name="creating-a-visual-studio-unit-test-to-submit-documents-to-biztalk-server"></a>BizTalk Server にドキュメントを送信する Visual Studio の単体テストを作成します。  
+ Visual Studio の単体テストの参照、 [Microsoft.VisualStudio.TestTools.UnitTesting](http://go.microsoft.com/fwlink/?LinkID=132293) (http://go.microsoft.com/fwlink/?LinkID=132293)単体テスト サポートを提供するいくつかのクラスを提供する名前空間。 特定の重要度の[UnitTesting](http://go.microsoft.com/fwlink/?LinkID=132293) (http://go.microsoft.com/fwlink/?LinkID=132293)名前空間が含まれています、 [Microsoft.VisualStudio.TestTools.UnitTesting.TestContext](http://go.microsoft.com/fwlink/?LinkID=208233) (http://go.microsoft.com/fwlink/?LinkID=208233)情報を格納するクラス単体テストに提供し、 [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute](http://go.microsoft.com/fwlink/?LinkID=208235) (http://go.microsoft.com/fwlink/?LinkID=208235)テスト メソッドを定義するクラスを使用します。 ロード テストの BizTalk Server のために、テスト メソッドは、メッセージを読み込むと、メッセージを送信するエンドポイントまたは URL を指定する必要があります。 エンドポイント URL は、対応する BizTalk 受信場所と、BizTalk Server へのメッセージのエントリ ポイントが作成されるとし、機能します。  
   
- わかりやすくするため、このトピックのサンプル コードについて説明を利用したテスト メソッド、 [System.ServiceModel.ChannelFactory(TChannel)](http://go.microsoft.com/fwlink/?LinkId=208238) (http://go.microsoft.com/fwlink/?LinkID = 208238) 受信アダプターのクラスが監視して、BizTalk WCF カスタムおよび WCF net.tcp エンドポイントを使用するサービス エンドポイントにメッセージを送信します。 テスト メッセージのサービス エンドポイントは、テスト プロジェクトのアプリケーション構成 (app.config) ファイルで定義されます。  
+ このトピックのサンプル コードをわかりやすくするためのテスト メソッドを利用するをについて説明します、 [System.ServiceModel.ChannelFactory(TChannel)](http://go.microsoft.com/fwlink/?LinkId=208238) (http://go.microsoft.com/fwlink/?LinkID=208238)クラスは、WCF を使用するサービス エンドポイントにメッセージを送信するにはnet.tcp エンドポイントとは、監視によって BizTalk Wcf-custom 受信アダプター。 テスト メッセージのサービス エンドポイントは、テスト プロジェクトのアプリケーションの構成 (app.config) ファイルで定義されます。  
   
- Visual Studio の単体テストの詳細については、次を参照してください。[単体テストの構造](http://go.microsoft.com/fwlink/?LinkID=208232)(http://go.microsoft.com/fwlink/?LinkID=208232)。  
+ Visual Studio の単体テストの詳細については、次を参照してください。[単体テストの構造](http://go.microsoft.com/fwlink/?LinkID=208232)(http://go.microsoft.com/fwlink/?LinkID=208232)します。  
   
- 1 つまたは複数の BizTalk Server コンピューターにドキュメントを送信する単体テストでテスト プロジェクトを作成するには以下のセクションの手順に従います。 Visual Studio 2010 Ultimate Edition を使用してこれらの手順が完了しました。  
+ 1 つまたは複数の BizTalk Server コンピューターにドキュメントを送信する単体テストをテスト プロジェクトを作成するには、以下のセクションの手順に従います。 Visual Studio 2010 Ultimate Edition を使用してこれらの手順が完了しました。  
   
 ### <a name="set-visual-studio-2010-test-project-options"></a>Visual Studio 2010 テスト プロジェクトのオプションを設定します。  
   
-1.  Visual Studio 2010 Ultimate edition を起動します。 をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**Microsoft Visual Studio 2010**  をクリックし、 **Microsoft Visual Studio 2010**です。  
+1.  Visual Studio 2010 Ultimate edition を起動します。 クリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**Microsoft Visual Studio 2010**順にクリックします**Microsoft Visual Studio 2010**します。  
   
-2.  Visual Studio 2010 でクリックして**ツール** をクリックし、**オプション**を表示する、**オプション** ダイアログ ボックス。  
+2.  Visual Studio 2010 では、次のようにクリックします。**ツール** をクリックし、**オプション**を表示する、**オプション** ダイアログ ボックス。  
   
-3.  クリックして展開**テスト ツール** をクリックし、**テスト プロジェクト**新しいテスト プロジェクトを作成するためのオプションを表示します。  
+3.  クリックして展開**テスト ツール** をクリックし、**テスト プロジェクト**新しいテスト プロジェクトの作成のオプションを表示します。  
   
-4.  設定、**テスト プロジェクトの既定の言語:** に**Visual c# テスト プロジェクト**です。  
+4.  設定、**テスト プロジェクトの既定の言語:** に**VisualC#テスト プロジェクト**します。  
   
-5.  オプションを **は既定では、新しいテスト プロジェクトに追加するファイルを選択:** 選択**Visual c# テスト プロジェクト**、Visual c# 用のテストの種類のすべてのテストを除くプロジェクトをオフに**単体テスト**です。  
+5.  オプションで**既定では、新しい各テスト プロジェクトに追加されるファイルを選択します:** 選択**VisualC#テスト プロジェクト**、ビジュアルのすべてのテストの種類をオフにしますC#テスト プロジェクト除く**単体テスト**します。  
   
 6.  **[OK]** をクリックして、 **[オプション]** ダイアログ ボックスを閉じます。  
   
-### <a name="create-a-new-visual-studio-2010-solution-with-a-test-project"></a>テスト プロジェクトで、新しい Visual Studio 2010 ソリューションを作成します。  
+### <a name="create-a-new-visual-studio-2010-solution-with-a-test-project"></a>テスト プロジェクトで新しい Visual Studio 2010 ソリューションを作成します。  
   
-1.  フォルダーを作成して**C:\Projects** Visual Studio 2010 Ultimate のコンピューターにします。  
+1.  フォルダーを作成**C:\Projects** Visual Studio 2010 Ultimate のコンピューターにします。  
   
-2.  Visual Studio 2010 でをクリックして**ファイル**、指す**新規**、 をクリック**プロジェクト**を表示する、**新しいプロジェクト** ダイアログ ボックス。  
+2.  Visual Studio 2010 でクリックして**ファイル**、 をポイント**新規**、 をクリック**プロジェクト**を表示する、**新しいプロジェクト** ダイアログ ボックス。  
   
-3.  [**インストールされたテンプレート**をクリックして展開**Visual c#**、] をクリック**テスト**です。  
+3.  [**インストールされたテンプレート**をクリックして展開**Visual C#** 、] をクリック**テスト**します。  
   
-4.  下部にある、**新しいプロジェクト** ダイアログ ボックスは、次のオプションを指定します。  
+4.  下部にある、**新しいプロジェクト**ダイアログ ボックスでは、次のオプションを指定します。  
   
-    -   **[名前]:**  
+    -   **名:**  
          **BTSLoad**  
   
     -   **場所:**  
@@ -64,13 +64,13 @@ BizTalk Server などのアプリケーション サーバーのコンピュー�
     -   **ソリューション名:**  
          **ロード テスト**  
   
-5.  いることを確認するためのオプション**ソリューションのディレクトリを作成**がチェックされ、をクリックして**OK**です。  
+5.  いることを確認するためのオプション**ソリューションのディレクトリを作成**チェックされ、クリックして**OK**。  
   
-6.  BTSLoad プロジェクトにフォルダーを追加します。このフォルダーは、BizTalk Server に送信するテスト メッセージが格納されます。 ソリューション エクスプ ローラーでプロジェクトを右クリックして、BTSLoad をポイントし、**追加**、 をクリック**新しいフォルダー**です。 フォルダー アイコンを強調表示されたテキストを**NewFolder1** BTSLoad プロジェクトの種類の下に表示されます**TestMessages**キーを押すと強調表示されたテキストを変更、 **Enter**キーC:\Projects\LoadTest\BTSLoad\TestMessages フォルダーを作成します。  
+6.  BTSLoad プロジェクトにフォルダーを追加します。このフォルダーは、BizTalk Server に送信するテスト メッセージが格納されます。 ソリューション エクスプ ローラーで BTSLoad プロジェクトを右クリックして**追加**、 をクリック**新しいフォルダー**します。 強調表示されたテキストでフォルダー アイコン**NewFolder1** BTSLoad プロジェクトの種類の下に表示されます**TestMessages**強調表示されたテキストとキーを押して変更を**Enter**キーC:\Projects\LoadTest\BTSLoad\TestMessages フォルダーを作成します。  
   
-### <a name="update-the-code-in-the-test-project-and-add-an-application-configuration-file-to-the-test-project"></a>テスト プロジェクトでコードを更新し、テスト プロジェクトに、アプリケーション構成ファイルを追加  
+### <a name="update-the-code-in-the-test-project-and-add-an-application-configuration-file-to-the-test-project"></a>テスト プロジェクトのコードを更新し、テスト プロジェクトに、アプリケーション構成ファイルを追加  
   
-1.  ソリューション エクスプ ローラーをクリックして選択で**UnitTest1.cs**し、既存のコードを次のサンプル コードの一覧に置き換えます。  
+1.  ソリューション エクスプ ローラーをクリックして選択に**UnitTest1.cs**と、次のサンプル コードの一覧で、既存のコードを置き換えます。  
   
     ```csharp  
     #region Using Directives  
@@ -303,16 +303,16 @@ BizTalk Server などのアプリケーション サーバーのコンピュー�
   
 2.  テスト プロジェクトには、アプリケーション構成ファイルを追加します。  
   
-    1.  ソリューション エクスプ ローラーでプロジェクトを右クリックして、BTSLoad をポイントし、**追加** をクリック**新しい項目の**します。  
+    1.  ソリューション エクスプ ローラーで BTSLoad プロジェクトを右クリックして**追加**クリック**新しい項目の**します。  
   
-    2.  **新しい項目の追加**ダイアログ ボックスで、**インストールされたテンプレート**をクリックして**全般**です。  
+    2.  **新しい項目の追加**ダイアログ ボックスで、**インストールされたテンプレート**、 をクリックして**全般**します。  
   
-    3.  表示される項目の一覧でクリックして選択**アプリケーション構成ファイル** をクリックし、**追加**です。  
+    3.  表示される項目の一覧でをクリックして選択**アプリケーション構成ファイル** をクリックし、**追加**します。  
   
-    4.  ソリューション エクスプ ローラーで、app.config ファイルを選択し、app.config ファイルの内容を以下に一覧表示するサンプル コードに置き換えます。  
+    4.  ソリューション エクスプ ローラーで、app.config ファイルを選択し、app.config ファイルの内容を以下の一覧を表示するサンプル コードに置き換えます。  
   
         > [!IMPORTANT]  
-        >  このファイルで定義されている各クライアント エンドポイントの*BizTalk Server コンピューター*に対するテストが実行するコンピューターを読み込む、BizTalk Server の実際の名前のプレース ホルダーです。  
+        >  このファイルで定義されているクライアント エンドポイントごとに*BizTalk Server コンピューター*を実行するコンピューターに対するテストをロードする BizTalk Server の実際の名前のプレース ホルダーです。  
   
         ```xml  
   
@@ -350,10 +350,10 @@ BizTalk Server などのアプリケーション サーバーのコンピュー�
         </configuration>  
         ```  
   
-    5.  クリックして、**ファイル**メニューをクリックして Visual Studio 2010**すべて保存**です。  
+    5.  をクリックして、**ファイル**メニューをクリックして Visual Studio 2010 で**すべて保存**します。  
   
 ### <a name="add-a-test-message-to-the-project"></a>テスト メッセージをプロジェクトに追加します。  
- この例の目的は、BizTalk Server の場所の送受信ポートが使用するよう構成するパイプラインを通過し、任意のドキュメントの検証は行われません。 プロジェクトにテスト メッセージを追加する手順に従います。  
+ この例のために、BizTalk Server 受信場所と送信ポートが使用するよう構成するパイプラインを通過し、ドキュメント検証は実行されません。 プロジェクトにテスト メッセージを追加するこれらの手順に従います。  
   
 1.  メモ帳を起動します。 をクリックして**開始**、 をクリックして**実行**と種類**メモ帳**で、**実行** ダイアログ ボックス。  
   
@@ -384,13 +384,13 @@ BizTalk Server などのアプリケーション サーバーのコンピュー�
 3.  メモ帳を閉じます。  
   
 > [!IMPORTANT]  
->  このファイルは、複数のロード テスト エージェント コンピューターがロード テストのために使用される場合は、すべてのロード テスト エージェント コンピューターで同じファイル名を使用して同じパスに保存する必要があります。  
+>  このファイルは、ロード テストに複数のロード テスト エージェント コンピューターを使用する場合、すべてのロード テスト エージェント コンピューターで同じファイル名を使用して同じパスに保存する必要があります。  
   
 ### <a name="add-necessary-references-to-the-project-and-build-the-test-project"></a>プロジェクトに必要な参照を追加し、テスト プロジェクトをビルド  
   
-1.  ソリューション エクスプ ローラーで右クリックし、**参照**フォルダーをクリックして BTSLoad プロジェクト**参照の追加**です。  
+1.  ソリューション エクスプ ローラーで右クリックし、**参照**BTSLoad プロジェクトとクリック フォルダー**参照の追加**します。  
   
-2.  参照の追加 ダイアログ ボックス、 **.NET**  タブを使用して、ctrl キーを押しながらクリック キーボードとマウスの組み合わせを同時に次の .NET 名前空間を選択します。  
+2.  [参照の追加] ダイアログ ボックスで、 **.NET**タブし、ctrl キーを押しながらクリック キーボード/マウス操作の組み合わせを使用して、同時に次の .NET 名前空間を選択します。  
   
     -   System.Configuration  
   
@@ -406,4 +406,4 @@ BizTalk Server などのアプリケーション サーバーのコンピュー�
   
 3.  名前空間を選択してからクリックして**OK** BTSLoad テスト プロジェクトへの参照としてこれらのアセンブリを追加します。  
   
-4.  右クリックして、 **BTSLoad**クリックしてプロジェクト**ビルド**BTSLoad アセンブリにプロジェクトをコンパイルします。
+4.  右クリックして、 **BTSLoad**プロジェクトをクリックして**ビルド**BTSLoad アセンブリにプロジェクトをコンパイルします。

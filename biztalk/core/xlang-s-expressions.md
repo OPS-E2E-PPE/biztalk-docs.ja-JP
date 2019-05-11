@@ -1,5 +1,5 @@
 ---
-title: XLANG の式 |Microsoft ドキュメント
+title: Xlang-s 式 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,17 +12,17 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 37d6099757998b0428d761f124785c363a24f2b9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: fe22d2ed03f213e8240aba867fff545a2e488b73
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22289362"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65394700"
 ---
-# <a name="xlang-s-expressions"></a>XLANG の式
-式は一連の演算子とオペランドで構成されます。 このトピックでは、XLANG/s が各種の式に対してサポートしている構文を示します。  
+# <a name="xlang-s-expressions"></a>Xlang-s 式
+式は、演算子とオペランドのシーケンスです。 このトピックでは、xlang/s が各種の式に対してサポートする構文を示しています。  
   
-## <a name="basic-expressions"></a>基本式  
+## <a name="basic-expressions"></a>基本的な式  
  次のコードは、基本式の構文を示しています。  
   
 ```  
@@ -185,8 +185,8 @@ string-expression:
 ```  
   
 ## <a name="see-also"></a>参照  
- [XLANG のデータ型](../core/xlang-s-data-types.md)   
- [XLANG のステートメント](../core/xlang-s-statements.md)   
- [XLANG の変数および演算子](../core/xlang-s-variables-and-operators.md)   
- [XLANG s の予約語](../core/xlang-s-reserved-words.md)   
- [XLANG-s BPEL4WS 型への変換から](../core/xlang-s-to-bpel4ws-type-conversions.md)
+ [Xlang-s データ型](../core/xlang-s-data-types.md)   
+ [Xlang-s ステートメント](../core/xlang-s-statements.md)   
+ [Xlang-s の変数および演算子](../core/xlang-s-variables-and-operators.md)   
+ [Xlang-s の予約語](../core/xlang-s-reserved-words.md)   
+ [XLANG-s から BPEL4WS への種類の変換](../core/xlang-s-to-bpel4ws-type-conversions.md)

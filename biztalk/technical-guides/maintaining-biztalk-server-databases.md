@@ -1,5 +1,5 @@
 ---
-title: BizTalk Server データベースの保守 |Microsoft ドキュメント
+title: BizTalk Server データベースのメンテナンス |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,15 +12,15 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dd736be70fd184d47b9b0973398d93bf22ca3254
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 76490334ce5e02f51f26f916432be73e3f858e6b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22298234"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396288"
 ---
 # <a name="maintaining-biztalk-server-databases"></a>BizTalk Server データベースの保守
-保守に関する情報の[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]データベースを参照してください[チェックリスト: BizTalk Server データベースの管理とトラブルシューティング](~/technical-guides/checklist-maintaining-and-troubleshooting-biztalk-server-databases.md)です。  
+保守について[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]データベースを参照してください[チェックリスト。メンテナンスとトラブルシューティングの BizTalk Server データベース](~/technical-guides/checklist-maintaining-and-troubleshooting-biztalk-server-databases.md)します。  
   
 ## <a name="see-also"></a>参照  
- [BizTalk Server2 を維持します。](../technical-guides/maintaining-biztalk-server2.md)
+ [BizTalk Server2 のメンテナンス](../technical-guides/maintaining-biztalk-server2.md)

@@ -12,14 +12,14 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 637224e0519a181c71b12e390c39c821ad354ac6
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: bc5de3b9791c8561f1a2f9e04b2f4915e39454a8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37009251"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65394097"
 ---
-# <a name="the-party-for-this-as2-interchange-must-contain-a-value-for-as2-from"></a>この AS2 インターチェンジのパーティには、AS2-From の値が含まれている必要があります
+# <a name="the-party-for-this-as2-interchange-must-contain-a-value-for-as2-from"></a>この AS2 インターチェンジのパーティが AS2 の値を含める必要があります-から
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                        |

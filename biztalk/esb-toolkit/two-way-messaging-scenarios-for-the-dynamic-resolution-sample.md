@@ -12,12 +12,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6787edc22c06d6935518be9d223f5968a595d6cf
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6141ccc31943844c87182a6682a705a62bf06382
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36997019"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396542"
 ---
 # <a name="two-way-messaging-scenarios-for-the-dynamic-resolution-sample"></a>動的解決サンプルの双方向のメッセージング シナリオ
 このトピックでは、双方向のメッセージング シナリオを実行する方法、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]動的解決サンプル。  
@@ -93,4 +93,4 @@ ms.locfileid: "36997019"
 
 6. 返されたメッセージの応答を参照してください。 指定した場合、 **submitOrder**アクションのテキスト"Submit Order"の値が前に、 **ID**フィールドに返されたメッセージ。 指定した場合、 **submitPurchase**アクションの [購入の送信] のテキストの値が前に、 **ID**フィールドに返されたメッセージ。  
 
-   ESB ディスパッチャーと ESB ディスパッチャー逆アセンブラー パイプライン コンポーネントのサンプルの使用については、[、動的解決サンプルのしくみ](../esb-toolkit/how-the-dynamic-resolution-sample-works.md)を参照してください。
+   ESB ディスパッチャーと ESB ディスパッチャー逆アセンブラー パイプライン コンポーネントのサンプルの使用については、次を参照してください。 [、動的解決サンプルのしくみ](../esb-toolkit/how-the-dynamic-resolution-sample-works.md)します。

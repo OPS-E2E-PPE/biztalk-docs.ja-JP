@@ -1,5 +1,5 @@
 ---
-title: ヘルパー クラスを使用して |Microsoft ドキュメント
+title: ヘルパー クラスを使用して |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,24 +12,24 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0e015627591077d7b8d4d63f2fef978827f4497d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6aac6a6cf0163d3d3cd0e5fc8d9b5551b4bbe116
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22294858"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396399"
 ---
 # <a name="using-the-helper-classes"></a>ヘルパー クラスを使用します。
-[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]他のプロセス、サービス、および、ツールキットでのコンポーネントで使用されるヘルパー クラスのセットが含まれます。 これらのヘルパー クラスがパブリックでもため、必要に応じて、独自のコードで使用することができます。  
+[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] 一連、その他のプロセス、サービス、およびツールキットのコンポーネントで使用されるヘルパー クラスにはが含まれます。 これらのヘルパー クラスがパブリックでもため、必要に応じて、独自のコードで使用することができます。  
   
- 場合によっては、する必要がありますを使用して、ESB の他のクラスのメソッドの適切な型のパラメーターを指定します。 たとえば、競合回避モジュールの Web サービス メソッドがのインスタンスのジェネリック コレクションを返す、**リゾルバー**クラスです。  
+ 場合によってで、ESB では、その他のクラスのメソッドの適切な型のパラメーターを指定して使用する必要があります。 たとえば、リゾルバー Web サービス メソッドがのインスタンスのジェネリック コレクションを返す、**リゾルバー**クラス。  
   
- 次のセクションでは、説明のクラスが含まれているヘルパー [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]:  
+ 次のセクションでは、説明、ヘルパー クラスを含めます[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]:  
   
 -   [MapHelper クラス](../esb-toolkit/the-maphelper-class.md)  
   
--   [競合回避モジュール クラス](../esb-toolkit/the-resolver-class.md)  
+-   [Resolver クラス](../esb-toolkit/the-resolver-class.md)  
   
 -   [ResolverDictionary クラス](../esb-toolkit/the-resolverdictionary-class.md)  
   
--   [競合回避モジュール マネージャー (ResolverMgr) クラス](../esb-toolkit/the-resolver-manager-resolvermgr-class.md)
+-   [Resolver Manager (ResolverMgr) クラス](../esb-toolkit/the-resolver-manager-resolvermgr-class.md)

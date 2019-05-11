@@ -1,5 +1,5 @@
 ---
-title: アシスタンスを要求する |Microsoft ドキュメント
+title: アシスタンスを要求する |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -18,18 +18,18 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1fd39d82dd62aadb2b56f7a8579433397b117d34
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 22303a549bb9c25b834bf6c53b1cf9467620cf43
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22268594"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65397863"
 ---
 # <a name="request-assistance"></a>アシスタンスを要求します。
-システム管理者またはその他のサポート担当者にアシスタンスを要求するとき、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]実装では、使用できます、**アシスタンス**の下部にあるボタン、**結果**詳細アシスタンスを要求するページです。  
+システム管理者または他のサポートの担当者と、アシスタンスを必要とする場合、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]使用することができます、実装、**アシスタンス**の下部にあるボタン、**結果**詳細ページのサポートを要求します。  
   
-## <a name="how-to-request-assistance"></a>サポートを要求する方法  
- クリックすると、**アシスタンス**ボタンが表示されます、**テクニカル アシスタンスの要求 Web**ページ ダイアログ ボックス。 問題を示す件名を入力するアシスタンスを要求する、**サブジェクト**テキスト ボックス。 **問題の説明**テキスト ボックスの内容をシステム管理者が問題に対処する必要がありますで発生する問題を説明します。 問題の説明に満足したらをクリックして、**レポートの送信**アシスタンスの要求を送信するボタンをクリックします。 この要求は、サーバー アプリケーションのイベント ログに記録されます。システム管理者は [グループの概要] ページからメッセージとサービス インスタンスの追跡機能を使用して要求を取得できます。  
+## <a name="how-to-request-assistance"></a>アシスタンスを要求する方法  
+ クリックすると、**アシスタンス**ボタンが表示されます、**テクニカル サポートの要求 Web**ページ ダイアログ ボックス。 アシスタンスを要求で問題を示す件名を入力する、**サブジェクト**テキスト ボックス。 **問題の説明**テキスト ボックスのシステム管理者が問題に対処する必要があります詳細で発生する問題を説明します。 問題の説明に満足したら、クリックして、**レポートの送信**アシスタンスの要求を送信するボタンをクリックします。 要求は、サーバー アプリケーション イベント ログに配置され、システム管理者には、メッセージと、グループの概要ページからサービス インスタンスの追跡を使用して取得できます.  
   
 ## <a name="see-also"></a>参照  
- [追跡メッセージを表示し、インスタンス データ](../core/viewing-tracked-message-and-instance-data.md)
+ [追跡メッセージおよびインスタンス データの表示](../core/viewing-tracked-message-and-instance-data.md)

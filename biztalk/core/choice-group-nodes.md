@@ -12,15 +12,15 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 226a0197f1f66313de994269039107b47ed03b9b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c61dc6e070e6dd4832cdba999c44b74d9e80e05f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37002059"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65357335"
 ---
 # <a name="choice-group-nodes"></a>ノードのグループの選択
-BizTalk エディターでは、挿入できる、**グループの選択**を他のノード (またはノードのサブツリー全体) を含むノード インスタンス メッセージにうちの 1 つだけ表示されることができます。 この場合、インスタンス メッセージには、選択されたいずれかのノードだけが含まれます。 取り込むノードは、XML 要素に対応するノードであることが必要です。ただし、XML 属性に対応するノードではありません。  
+BizTalk エディターでは、挿入できる、**グループの選択**を他のノード (またはノードのサブツリー全体) を含むノード インスタンス メッセージにうちの 1 つだけ表示されることができます。 指定されたインスタンス メッセージでは、有効な場合、必要があります存在の選択肢の 1 つだけです。 含まれているノードは、XML 要素に対応するノードである必要がありますが、XML 属性に対応するノードをすることはできません。  
 
 > [!NOTE]
 >  BizTalk エディターで、**グループの選択**ノードが文字列で表される\<選択肢\>スキーマ ツリー ビューで。 参照を設定した場合、**グループの選択**x などのノードとして表されます\<グループ: x\>スキーマ ツリー ビューで。  

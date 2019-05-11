@@ -1,5 +1,5 @@
 ---
-title: BizTalk アプリケーションを配置するためのベスト プラクティス |Microsoft ドキュメント
+title: BizTalk アプリケーションの展開のベスト プラクティス |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,46 +17,46 @@ caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e3b50ff0a6e64633090e562b6ca8e3ae66eb8683
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 03221335dcb41e8496c6808a8f20f0da364979ea
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22233066"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65529122"
 ---
 # <a name="best-practices-for-deploying-a-biztalk-application"></a>BizTalk アプリケーション展開のベスト プラクティス
-ここでは、BizTalk アプリケーションを展開するときのベスト プラクティスについて説明します。  
+このトピックでは、BizTalk アプリケーションの展開のベスト プラクティスについて説明します。  
   
-## <a name="group-related-artifacts-together-in-a-single-application"></a>関連アイテムを 1 つのアプリケーションにグループ化する  
+## <a name="group-related-artifacts-together-in-a-single-application"></a>1 つのアプリケーションで関連する成果物をグループ化します。  
  できるだけ多くの関連アイテムを、同じ BizTalk アプリケーションにまとめます。 こうすることで、複数のアイテムを 1 つのエンティティとして管理および展開できるようになり、管理が容易になります。 同じビジネス プロセスをサポートするアイテムや、類似の機能を実行するアイテムは、1 つのアプリケーションにグループ化できます。  
   
-## <a name="deploy-shared-artifacts-in-a-separate-application"></a>共有アイテムを独立したアプリケーションで展開する  
- 複数のアプリケーションで共有されるアイテムは、独立したアプリケーションで展開します。 たとえば、2 つのアプリケーションでスキーマを共有している場合は、そのスキーマを独立したアプリケーションに配置します。 この理由は、BizTalk グループ内で複数のアイテムに同じローカル一意識別子 (LUID) を使用できないためです (ローカル一意識別子はアイテム名と、省略可能なその他の属性から成ります)。 アイテムを 1 つのアプリケーションに含め、別のアプリケーションからそのアイテムへの参照を作成した場合は、アイテムが含まれるアプリケーションを停止すると、そのアイテムを参照するアプリケーションが正しく機能しなくなるなどの問題が発生する可能性があります。  
+## <a name="deploy-shared-artifacts-in-a-separate-application"></a>別のアプリケーションで共有の成果物を配置します。  
+ 複数のアプリケーションで共有されるアイテムは、独立したアプリケーションで展開します。 たとえば、2 つのアプリケーションでスキーマを共有している場合は、そのスキーマを独立したアプリケーションに配置します。 これは、同じローカル一意識別子 (LUID)----成果物の名前と必要に応じてその他の属性で構成される複数のアイテムが BizTalk グループに存在できるためです。 場合は、1 つのアプリケーションにアイテムを含めるし、別のアプリケーションへの参照を作成し、成果物を含むアプリケーションを停止するときに正しく機能していないを参照するアプリケーションなどの問題が発生する可能性があります。  
   
- このベスト プラクティスは、種類が File としてアプリケーションに追加されるファイル アイテム (Readme ファイル、スクリプトなど) 以外の、すべての種類のアイテムに適用できます。 ファイル アイテムは、BizTalk グループ内に同じ名前で複数展開でき、 したがって複数のアプリケーションで同じ名前のファイルを使用できるので、このベスト プラクティスは当てはまりません。 1 つのアプリケーションを停止しても、他のアプリケーションには影響しません。 ファイル アイテムの追加の詳細については、次を参照してください。[ファイルをアプリケーションに追加する方法](../core/how-to-add-a-file-to-an-application.md)です。  
+ このベスト プラクティスは、種類が File としてアプリケーションに追加されるファイル アイテム (Readme ファイル、スクリプトなど) 以外の、すべての種類のアイテムに適用できます。 同じ名前を持つ 1 つ以上のファイル成果物は、BizTalk グループにデプロイできるためです。 したがって複数のアプリケーションで同じ名前のファイルを使用できるので、このベスト プラクティスは当てはまりません。 1 つのアプリケーションを停止しても、その他のアプリケーションに影響はありません。 ファイル アイテムを追加する方法の詳細については、次を参照してください。[アプリケーションにファイルを追加する方法](../core/how-to-add-a-file-to-an-application.md)します。  
   
- 特定種類のアイテムの共有に関するベスト プラクティスについては、後の「共有 Web サイトを独立したアプリケーションで展開する」、「共有ポリシーを独立したアプリケーションで展開する」、および「共有証明書を独立したアプリケーションで展開する」を参照してください。  
+ 特定の成果物の種類の共有に関するベスト プラクティスについては、「別のアプリケーションで共有 Web サイトのデプロイ」を参照してください「デプロイは、別のアプリケーションでポリシーを共有」と、このセクションで「展開共有の別のアプリケーションで証明書」。  
   
-## <a name="deploy-a-shared-web-site-in-a-separate-application"></a>共有 Web サイトを独立したアプリケーションで展開する  
+## <a name="deploy-a-shared-web-site-in-a-separate-application"></a>別のアプリケーションで共有 Web サイトのデプロイします。  
  複数のビジネス アプリケーションで共有される Web サイトは、独立したアプリケーションで展開します。 この理由は、BizTalk アプリケーションをアンインストールすると、アプリケーションに含まれる Web サイトは実行中であっても削除されるためです。 削除した Web サイトが他のビジネス ソリューションと共有されていた場合、そのビジネス ソリューションは正常に機能しなくなります。  
   
-## <a name="deploy-shared-policies-in-a-separate-application"></a>共有ポリシーを独立したアプリケーションで展開する  
+## <a name="deploy-shared-policies-in-a-separate-application"></a>別のアプリケーションでの共有ポリシーを展開します。  
  複数のアプリケーションで使用されるポリシーは、1 つのアプリケーションから別のアプリケーションへの参照を作成せずに、独立したアプリケーションで展開します。 この理由は、アプリケーションを停止すると、そのアプリケーションのポリシーは展開解除されるためです。 他のアプリケーションで使用されているポリシーを含むアプリケーションを停止すると、どちらのアプリケーションでもポリシーは機能しなくなります。  
   
-## <a name="deploy-shared-certificates-in-a-separate-application"></a>共有証明書を独立したアプリケーションで展開する  
- 複数アプリケーションの送信ポートまたは受信ポートで使用される証明書は、独立したアプリケーションで展開します。その後、展開したアプリケーションに対し、その証明書を使用するアプリケーションから参照を作成します。 この理由は、BizTalk グループ内で複数のアイテムに同じ LUID を使用できないためです。したがって、2 つの異なるアプリケーションの同じ証明書をインポートすることはできません。 同じ証明書を使用する 2 つのアプリケーションをインポートしようとすると、最初のインポートは成功しますが、2 番目のインポートは成功しません。 [上書き] インポート オプションを使って既存の証明書を上書きしようとしても、その証明書は別のアプリケーションに含まれているため上書きできません。  
+## <a name="deploy-shared-certificates-in-a-separate-application"></a>別のアプリケーションで共有証明書を展開します。  
+ 複数アプリケーションの送信ポートまたは受信ポートで使用される証明書は、独立したアプリケーションで展開します。その後、展開したアプリケーションに対し、その証明書を使用するアプリケーションから参照を作成します。 これは、複数のアイテムの luid ことができます、BizTalk グループに存在しないため、2 つのアプリケーションで同じ証明書をインポートすることはできませんので。 同じ証明書を使用する 2 つのアプリケーションをインポートしようとすると、最初のインポートは成功しますが、2 番目のインポートは成功しません。 [上書き] インポート オプションを使って既存の証明書を上書きしようとしても、その証明書は別のアプリケーションに含まれているため上書きできません。  
   
-## <a name="never-deploy-an-assembly-from-visual-studio-on-a-production-computer"></a>実稼働コンピューターの Visual Studio からアセンブリを展開しない  
- 開発の過程ではしばしば、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] からのアセンブリの再展開が必要になります。 再展開を可能にするため、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] ではアセンブリに含まれるアイテムの展開解除、バインド解除、停止、および参加解除が行われます。 これは開発環境では必要であり適切なことですが、実稼働環境では予期しない結果や結果や好ましくない結果を引き起こす可能性があります。 この理由から、実稼働コンピューター上の [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] からはアセンブリを展開できないようにしてください。実稼働コンピューターには [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] をインストールしないことをお勧めします。  
+## <a name="never-deploy-an-assembly-from-visual-studio-on-a-production-computer"></a>実稼働コンピューターには、Visual Studio からアセンブリを展開できません。  
+ 開発の過程ではしばしば、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] からのアセンブリの再展開が必要になります。 再展開を有効にする[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]展開解除、バインド解除、停止、およびアセンブリに含まれるアイテムの参加を解除することがあります。 これは開発環境では必要であり適切なことですが、実稼働環境では予期しない結果や結果や好ましくない結果を引き起こす可能性があります。 このためもからアセンブリを展開しようとしてすべてのユーザーの可能性を回避したり[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]実稼働コンピューターでは、インストールすること勧めすることはありません[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]実稼働コンピューター。  
   
- また、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] を実行しているコンピューターからは実稼働データベースを参照しないでください。  
+ さらを参照しないでください、実稼働データベースを実行するコンピューターから[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]します。  
   
-## <a name="when-deploying-large-msi-files-you-may-need-to-increase-the-default-transaction-timeout-of-the-com-components-used-by-biztalk-to-deploy-applications"></a>大きなサイズの MSI ファイルを展開する場合、アプリケーションを展開するには BizTalk で使用される COM+ コンポーネントの既定のトランザクション タイムアウトを大きくする必要がある場合があります。  
- 展開する MSI ファイルのサイズが非常に大きい (100 MB 以上) 場合は、展開時に BizTalk で使用される COM+ コンポーネントの既定のトランザクション タイムアウトまでにアプリケーションの展開が完了しない場合があります。 展開が完了する前に COM+ コンポーネント関連のトランザクションがタイムアウトになると、展開は失敗します。 非常に大きなサイズの MSI ファイルを展開する場合は、この問題を緩和するため、次のいずれかの方法を使用することを検討してください。  
+## <a name="when-deploying-large-msi-files-you-may-need-to-increase-the-default-transaction-timeout-of-the-com-components-used-by-biztalk-to-deploy-applications"></a>大きな MSI ファイルを展開する場合は、BizTalk アプリケーションをデプロイするため、COM + コンポーネントの既定のトランザクション タイムアウトを増加する必要があります。  
+ 展開する MSI ファイルが非常に大きい場合 (100 MB を超える) アプリケーションの展開中に、BizTalk で使用される COM + コンポーネントの既定のトランザクション タイムアウト内でアプリケーションを展開しない可能性があります。 デプロイが完了する前に、トランザクションに関連付けられたこれら COM + コンポーネントがタイムアウトする場合、デプロイは失敗します。 非常に大きなを展開する場合、MSI ファイルがこの問題を軽減するためにこれらのアプローチの 1 つを検討します。  
   
-1.  1 つの大きな MSI ファイルを展開するのではなく、複数の小さな MSI ファイルを展開する。  
+1.  1 つの大きな MSI ファイルの代わりにいくつかの小さな MSI ファイルをデプロイします。  
   
-2.  関連付けられている 3,000 秒の既定のトランザクション タイムアウトを増やす、 **Microsoft.BizTalk.ApplicationDeployment.Group**と**Microsoft.BizTalk.Deployment.DeployerComponent**内のコンポーネント、**コンポーネント サービス**管理インターフェイスです。 これらのコンポーネントが属している、 **Microsoft.BizTalk.ApplicationDeployment.Engine**と**Microsoft.Biztalk.Deployment** COM + アプリケーションそれぞれします。 トランザクションを変更する方法の詳細については、COM + コンポーネントのタイムアウト値を参照してください[MTS または COM + のトランザクション タイムアウト値を変更する方法](http://go.microsoft.com/fwlink/?LinkId=67691)です。  
+2.  関連付けられている 3,000 秒の既定のトランザクション タイムアウト値を増やし、 **Microsoft.BizTalk.ApplicationDeployment.Group**と**Microsoft.BizTalk.Deployment.DeployerComponent**内のコンポーネント、**コンポーネント サービス**管理インターフェイスです。 属しているこれらのコンポーネント、 **Microsoft.BizTalk.ApplicationDeployment.Engine**と**Microsoft.Biztalk.Deployment** COM + アプリケーションそれぞれします。 詳細については、トランザクションを変更する方法についての COM + コンポーネントのタイムアウト値を参照してください[MTS または COM + のトランザクションのタイムアウト値を変更する方法](http://go.microsoft.com/fwlink/?LinkId=67691)します。  
   
 ## <a name="see-also"></a>参照  
- [展開して、BizTalk アプリケーションの管理](../core/deploying-and-managing-biztalk-applications.md)
+ [BizTalk アプリケーション展開、管理](../core/deploying-and-managing-biztalk-applications.md)

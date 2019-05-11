@@ -16,12 +16,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 55ba97f7757ff6f61a98002c496d9b6b26fc7be9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4f5ae9cebdef84870379d3fe28c0ef72bc1dea71
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37002067"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373391"
 ---
 # <a name="get-metadata-using-ws-metadata-exchange-in-sap"></a>SAP で Ws-metadata Exchange を使用してメタデータを取得します。
 として、[!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)]カスタム バインドを[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]から特定の操作のメタデータの取得に使用できる Ws-metadata Exchange (MEX) エンドポイントを公開して、[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]します。  
@@ -57,7 +57,7 @@ ms.locfileid: "37002067"
   
  この接続の URI を渡す方法を**MetadataExchangeClient**のどのクライアントを作成して、アダプターからのメタデータの取得に使用するオーバー ロードされたメソッドに依存します。  
   
- SAP 接続 URI の詳細については、[SAP システム接続 URI を使用すると、作成](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md)を参照してください。  
+ SAP 接続 URI の詳細については、次を参照してください。 [SAP システム接続 URI を使用すると、作成](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md)です。  
   
 ### <a name="binding-properties"></a>バインドのプロパティ  
  作成するときに、 **MetadataExchangeClient**を指定する必要があります、 **SAPBinding**します。  
@@ -66,13 +66,13 @@ ms.locfileid: "37002067"
   
 - **GenerateFlatfileCompatibleIdocSchema**  
   
-- **receiveIDocFormat**  
+- **ReceiveIDocFormat**  
   
 - **EnableSafeTyping**  
   
-- **flatFileSegmentIndicator**  
+- **FlatFileSegmentIndicator**  
   
-  これらのバインドのプロパティを呼び出す前に、アプリケーションに必要な値に設定されていることを確認する必要があります、 **GetMetadata**メソッドを**MetadataExchangeClient**します。 SAP アダプターのバインド プロパティの詳細については、[mySAP Business Suite バインド プロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md)を参照してください。  
+  これらのバインドのプロパティを呼び出す前に、アプリケーションに必要な値に設定されていることを確認する必要があります、 **GetMetadata**メソッドを**MetadataExchangeClient**します。 SAP アダプターのバインド プロパティの詳細については、次を参照してください。 [mySAP Business Suite バインド プロパティの BizTalk アダプターについて](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md)します。  
   
 ### <a name="example"></a>例  
  次の例では、 **MetadataExchangeClient** BAPI_TRANSACTION_COMMIT と BAPI_TRANSACTION_ROLLBACK の操作のためのサービスの説明 (WSDL ドキュメント) を作成します。  

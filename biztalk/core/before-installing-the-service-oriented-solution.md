@@ -14,12 +14,12 @@ caps.latest.revision: 36
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b3a735ed832051c24e5ccd253df61c42c07ed6e6
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ed78cdffeb93f22bb42f3af999608ea01559d7b6
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36982387"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65530505"
 ---
 # <a name="before-installing-the-service-oriented-solution"></a>サービス指向ソリューションをインストールする前に
 単一のコンピューターにサービス指向ソリューションのスタブ バージョンをインストールするために必要な次のコンポーネントを用意する必要があります。  
@@ -55,7 +55,7 @@ ms.locfileid: "36982387"
   
 - メインフレームに必要なソリューションのバリエーションを使用している場合の CICS および Transaction X 対応の IBM メインフレーム。 この場合、CICS アプリケーション (COBOL コード) をメインフレームにインストールする必要があります。また、メインフレームにアクセスするには、Microsoft Host Integration Server (HIS) が必要です。  
   
-   このソリューションに対応するメインフレームがない場合、ポートのバインドを変更して、Pending Transactions のスタブ Web サービスを使用できます。 メインフレームのトランザクションをエミュレートするため、Web サービスは、ローカルにトランザクションを生成します。 スタブ Pending Transactions Web サービスのポートのバインドを変更する方法の詳細については、[インライン バージョンおよびアダプター バージョンのサービス指向ソリューションのインストール方法](../core/how-to-install-the-inline-and-adapter-versions-of-the-service-oriented-solution.md)を参照してください。  
+   このソリューションに対応するメインフレームがない場合、ポートのバインドを変更して、Pending Transactions のスタブ Web サービスを使用できます。 メインフレームのトランザクションをエミュレートするため、Web サービスは、ローカルにトランザクションを生成します。 スタブ Pending Transactions Web サービスのポートのバインドを変更する方法の詳細については、次を参照してください。[インライン バージョンおよびアダプター バージョンのサービス指向ソリューションのインストール方法](../core/how-to-install-the-inline-and-adapter-versions-of-the-service-oriented-solution.md)します。  
   
 - Host Integration Server は、メインフレームに接続するために必要です。  
   

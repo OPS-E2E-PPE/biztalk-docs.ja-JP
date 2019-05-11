@@ -12,12 +12,12 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ac5830f12351bd5441411fe54598e55894216fa6
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ebe89a18538cb09c88ecb3098ca556c75422c803
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36998627"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65530802"
 ---
 # <a name="edi-document-schemas"></a>EDI ドキュメント スキーマ
 ドキュメント スキーマは、EDI トランザクション ドキュメントの種類のボディを定義します。  
@@ -40,7 +40,7 @@ ms.locfileid: "36998627"
 ## <a name="schema-contents"></a>スキーマ コンテンツ  
  ドキュメント スキーマは、X12 エンコード ドキュメントの場合、ST トランザクション セット ヘッダーで開始し、ST トランザクション セット トレーラーで終了します。 EDIFACT エンコード ドキュメントの場合は、UNH メッセージ ヘッダーで開始し、UNT メッセージ トレーラーで終了します。 スキーマは、これらのヘッダーとトレーラーのデータ要素を定義します。  
   
- ドキュメント スキーマは、次に、トランザクション セット/メッセージ内の各セグメント、およびこれらのセグメント内のデータ要素を定義します。 たとえば、X12_00401_864.xsd スキーマは、BMG セグメントの BMG01、BMG02、および BMG03 要素を定義します。 スキーマは、フィールドの順序、区切り記号の種類、名前空間など、セグメントの複合データ型の特性を指定します。 スキーマのクロス フィールド検証がある場合は、スキーマがそのルールを定義します。 詳細については、[クロス フィールド/セグメント検証](../core/cross-field-segment-validation.md)を参照してください。  
+ ドキュメント スキーマは、次に、トランザクション セット/メッセージ内の各セグメント、およびこれらのセグメント内のデータ要素を定義します。 たとえば、X12_00401_864.xsd スキーマは、BMG セグメントの BMG01、BMG02、および BMG03 要素を定義します。 スキーマは、フィールドの順序、区切り記号の種類、名前空間など、セグメントの複合データ型の特性を指定します。 スキーマのクロス フィールド検証がある場合は、スキーマがそのルールを定義します。 詳細については、次を参照してください。[クロス フィールド/セグメント検証](../core/cross-field-segment-validation.md)です。  
   
  スキーマは、単純データ型、最小出現回数、最小長、および最大長など、セグメント内の各データ要素の特性を指定します。  
   

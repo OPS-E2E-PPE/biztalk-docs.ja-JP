@@ -1,5 +1,5 @@
 ---
-title: データベース層の計画 |Microsoft ドキュメント
+title: データベース層の計画 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,20 +12,20 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f4e815e58d993096ace47057249f16427f4e6bdb
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c212e9759d225fdc6f030fb780602025d4658f3c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22302178"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65397030"
 ---
 # <a name="planning-the-database-tier"></a>データベース層の計画
-このセクションには、データベース層の BizTalk ソリューションのための推奨事項の計画に関するトピックが含まれています。  
+このセクションには、BizTalk ソリューションのデータベース層の推奨事項を計画トピックが含まれています。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [データベースのパフォーマンスの計画](../technical-guides/planning-for-database-performance.md)  
+-   [データベース パフォーマンスの計画](../technical-guides/planning-for-database-performance.md)  
   
--   [データベースの可用性の計画](../technical-guides/planning-for-database-availability.md)  
+-   [データベース可用性の計画](../technical-guides/planning-for-database-availability.md)  
   
--   [データベースのテストの計画](../technical-guides/planning-for-database-testing.md)
+-   [データベース テストの計画](../technical-guides/planning-for-database-testing.md)
