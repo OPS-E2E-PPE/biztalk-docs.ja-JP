@@ -17,12 +17,12 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4ed3f25f7e029b26730264f98f4ed79a6def7997
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 12ef79b1381186d56fd5241bf15efff7008ef93b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22289946"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65240357"
 ---
 # <a name="windows-of-the-business-rule-composer"></a>ビジネス ルール作成ツールの Windows
 ビジネス ルール作成ツールは、作成、バージョン管理、および展開するポリシーとボキャブラリを使用するグラフィカル ツールです。 このセクションでは、ビジネス ルール作成ツールのさまざまなウィンドウについて説明します。  

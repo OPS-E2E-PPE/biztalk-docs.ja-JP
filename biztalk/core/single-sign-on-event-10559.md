@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10559 |Microsoft Docs'
+title: シングル サインオン:イベント 10559 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2b93b4445b960e059e7f272b76136a4ea2a636c7
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6780006c4b586d911d2779523e381d1deea49a28
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36978233"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65240342"
 ---
-# <a name="single-sign-on-event-10559"></a>シングル サインオン: イベント 10559
+# <a name="single-sign-on-event-10559"></a>シングル サインオン:イベント 10559
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                                                                                                                                            |
@@ -30,10 +30,10 @@ ms.locfileid: "36978233"
 |  イベント ソース   |                                                                                                   ENTSSO                                                                                                   |
 |    コンポーネント    |                                                                                                    なし                                                                                                     |
 |  シンボル名  |                                                                                         SSO_INFO_BACKUP_SECRET_OK                                                                                          |
-|  メッセージ テキスト   | マスター シークレットは正常にバックアップされました。%r<br /><br /> ファイル名: %1 %r<br /><br /> 現在の MSID: % 2 %r<br /><br /> 以前の MSID: % 3 %r<br /><br /> クライアント ユーザー: % 4 %r<br /><br /> クライアント コンピュータ: %5 |
+|  メッセージ テキスト   | マスタ シークレットが正常にバックアップ up.%r<br /><br /> ファイル名: %1 %r<br /><br /> 現在の MSID: % 2 %r<br /><br /> 以前の MSID: % 3 %r<br /><br /> クライアント ユーザー: % 4 %r<br /><br /> クライアント コンピュータ: %5 |
   
 ## <a name="explanation"></a>説明  
- このイベントは正常に行われました。  
+ イベントが正常に行われました。  
   
 ## <a name="user-action"></a>ユーザーの操作  
  ユーザーによる操作は不要です。

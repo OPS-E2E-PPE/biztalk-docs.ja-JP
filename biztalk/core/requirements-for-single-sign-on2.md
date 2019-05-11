@@ -12,12 +12,12 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 96a4101dc5380168db60e687ddc450f98f9192f4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 62bc38cadb304f753a408c9c9573056c70b34671
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36987315"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65240308"
 ---
 # <a name="requirements-for-single-sign-on"></a>シングル サインオンの要件
 シングル サインオン (SSO) を使用するには、次の必要があります。  
@@ -38,7 +38,7 @@ ms.locfileid: "36987315"
   
 2. トランスポートのプロパティを指定するときに、適切な関連アプリケーションを選択します。  
   
-   関連アプリケーションを作成する方法については、[関連アプリケーションを作成する](../core/creating-affiliate-applications2.md)を参照してください。  
+   関連アプリケーションを作成する方法については、次を参照してください。[関連アプリケーションを作成する](../core/creating-affiliate-applications2.md)します。  
   
 > [!NOTE]
 >  作業が完了したら、SSO を使用してへの任意の Web 共有フォルダーに戻してください**を共有しない**します。 フォルダーが共有されていると、そのフォルダーは使用中と見なされるので、フォルダーを使用するアプリケーションが正しく更新またはアンインストールされません。  

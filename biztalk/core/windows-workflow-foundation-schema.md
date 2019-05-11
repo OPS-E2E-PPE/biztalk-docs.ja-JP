@@ -1,5 +1,5 @@
 ---
-title: Windows Workflow Foundation スキーマ |Microsoft ドキュメント
+title: Windows Workflow Foundation スキーマ |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2b680a21fe892c2599cb43643cadc68fbb74f89c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2d595f7d9ebddb8e9c94fc70876bd49be85f4b3d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22289066"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65240379"
 ---
 # <a name="windows-workflow-foundation-schema"></a>Windows Workflow Foundation スキーマ
 このセクションでは、Windows Workflow Foundation インターセプタのスキーマを示します。  

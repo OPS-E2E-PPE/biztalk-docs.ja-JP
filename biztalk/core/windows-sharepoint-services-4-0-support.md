@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b6920de947165f7f3065f190d077d55dcbef30c7
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 36c1e22d33076516bf04282f65586af0ea737930
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36971035"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65240302"
 ---
 # <a name="windows-sharepoint-services-40-support"></a>Windows SharePoint Services 4.0 のサポート
 BizTalk Server の Windows SharePoint Services アダプターは、Windows SharePoint Services アダプタで同等の機能を提供します[!INCLUDE[btsBizTalkServer2006](../includes/btsbiztalkserver2006-md.md)]します。 BizTalk Server の Windows SharePoint Services アダプターでは、Windows SharePoint Services 4.0 で使用できる次の機能もサポートしています。  
@@ -28,9 +28,9 @@ BizTalk Server の Windows SharePoint Services アダプターは、Windows Shar
 
   BizTalk Server の Windows SharePoint Services アダプターでは、Windows SharePoint Services 4.0 で使用できる次の機能のサポートは提供されません。  
 
-- **ごみ箱**: BizTalk Server アダプター用の Windows SharePoint Services アダプターが受信をサポートしていないか、ごみ箱との間にメッセージを明示的に送信します。  
+- **ごみ箱**:BizTalk Server アダプター用の Windows SharePoint Services アダプターは、受信またはごみ箱を明示的にメッセージを送信をサポートしていません。  
 
-- **フォルダーを一覧表示**: BizTalk Server 用の Windows SharePoint Services アダプターはリストにメッセージを送信することができますが、リストからメッセージを受信できません。 Windows SharePoint Services 4.0 は、リスト内のフォルダーをサポートしていますが、BizTalk Server の Windows SharePoint Services アダプタがこの機能をサポートしていません。 そのため、BizTalk Server の Windows SharePoint Services アダプターでは、ルート フォルダー以外のフォルダーの一覧でリスト項目を作成することはできません。  
+- **フォルダーを一覧表示**:BizTalk Server の Windows SharePoint Services アダプターはリストにメッセージを送信することができますが、リストからメッセージを受信できません。 Windows SharePoint Services 4.0 は、リスト内のフォルダーをサポートしていますが、BizTalk Server の Windows SharePoint Services アダプタがこの機能をサポートしていません。 そのため、BizTalk Server の Windows SharePoint Services アダプターでは、ルート フォルダー以外のフォルダーの一覧でリスト項目を作成することはできません。  
 
 - BizTalk Server の Windows SharePoint Services アダプターを使用して、Windows SharePoint Services 4.0 ブログ サイトにメッセージを送信する方法とメッセージを送信し、Windows SharePoint Services からメッセージを受信する方法、さらに詳しく、次のセクションについて説明します4.0 Wiki サイトです。  
 
@@ -77,10 +77,10 @@ Message_Out(WSS.ConfigPropertiesXml) = “<ConfigPropertiesXml>
 
  この方法で作成された後の状態に設定されます**承認されていない**サイトに表示される前に、ブログ所有者の承認が必要です。  
 
- リストでサポートされている列の種類は、リストの設定ページに表示されます。 Windows SharePoint Services アダプターによってサポートされている Windows SharePoint Services 列の種類の詳細については、[Windows SharePoint Services アダプターのプロパティに関するリファレンス](../core/windows-sharepoint-services-adapter-properties-reference.md)を参照してください。  
+ リストでサポートされている列の種類は、リストの設定ページに表示されます。 Windows SharePoint Services アダプターによってサポートされている Windows SharePoint Services 列の種類の詳細については、次を参照してください。 [Windows SharePoint Services アダプターのプロパティに関するリファレンス](../core/windows-sharepoint-services-adapter-properties-reference.md)します。  
 
 ## <a name="sending-to-and-receiving-from-a-windows-sharepoint-services-40-wiki-document-library"></a>Windows SharePoint Services 4.0 Wiki ドキュメント ライブラリとの送受信  
- Wiki サイトを使用して、Windows SharePoint Services 4.0 サイトで、 **Wiki ページ**ドキュメント ライブラリです。 Wiki ページのドキュメント ライブラリ、Wiki ページのテキストを格納する、 **Wiki Content**の UI 型を使用する列**複数行のテキスト**します。 **複数行のテキスト**UI 型、 **SPFieldType.Note** SharePoint オブジェクト モデルの種類。 Windows SharePoint Services アダプターによってサポートされている Windows SharePoint Services 列の型の詳細については、[Windows SharePoint Services アダプターのプロパティに関するリファレンス](../core/windows-sharepoint-services-adapter-properties-reference.md)を参照してください。  
+ Wiki サイトを使用して、Windows SharePoint Services 4.0 サイトで、 **Wiki ページ**ドキュメント ライブラリです。 Wiki ページのドキュメント ライブラリ、Wiki ページのテキストを格納する、 **Wiki Content**の UI 型を使用する列**複数行のテキスト**します。 **複数行のテキスト**UI 型、 **SPFieldType.Note** SharePoint オブジェクト モデルの種類。 Windows SharePoint Services アダプターによってサポートされている Windows SharePoint Services 列の型の詳細については、次を参照してください。 [Windows SharePoint Services アダプターのプロパティに関するリファレンス](../core/windows-sharepoint-services-adapter-properties-reference.md)します。  
 
 ### <a name="sending-to-a-windows-sharepoint-services-40-wiki-document-library"></a>Windows SharePoint Services 4.0 Wiki ドキュメント ライブラリへの送信  
  Wiki ページの内容がという名前の Windows SharePoint Services アダプター コンテキスト プロパティ内に格納されている Windows SharePoint Services 4.0 Wiki サイトにメッセージを送信するときに**WSS。ConfigPropertiesXml**します。 Windows SharePoint Services 4.0 Wiki サイトにメッセージを投稿、アダプターで、次の値を入力します。**トランスポートのプロパティ**Windows SharePoint Services アダプターを使用する送信ポートを構成するときに、ダイアログ ボックス。  

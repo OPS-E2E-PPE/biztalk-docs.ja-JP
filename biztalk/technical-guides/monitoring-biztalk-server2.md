@@ -1,5 +1,5 @@
 ---
-title: BizTalk Server2 の監視 |Microsoft ドキュメント
+title: BizTalk Server2 の監視 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,24 +12,24 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 46615d139064b9086cf2b65a84c9e7d05cc3f3f1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1e76afff1ff1c37de808ffe17f8b6fb5190abbed
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22298498"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65240413"
 ---
 # <a name="monitoring-biztalk-server"></a>BizTalk Server の監視
-このセクションでは、BizTalk アプリケーションとインフラストラクチャを監視するための必須タスクについて説明します。 監視[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]を定期的と、BizTalk アプリケーションがアクセスできるようにすることができますを検索する問題の解決でします。 監視の目的は、時間を最小限に抑えるために、問題が検出されないし、そのため、未解決のことです。 さらに、監視を使用して問題を引き起こす可能性のある状況を検出できます。  
+このセクションでは、BizTalk アプリケーションとインフラストラクチャを監視するための必須タスクについて説明します。 監視[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]を定期的に、BizTalk アプリケーションがアクセスできるようにするために役立ちますを検索する問題の解決でします。 監視する目的は、時間を最小限に抑えるには問題が検出されないし、そのため、未解決のことです。 さらに、監視を使用して問題を引き起こす可能性がある状況を検出できます。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [BizTalk Server 環境を監視します。](../technical-guides/monitoring-the-biztalk-server-environment.md)  
+-   [BizTalk Server 環境の監視](../technical-guides/monitoring-the-biztalk-server-environment.md)  
   
--   [監視のベスト プラクティス](../technical-guides/best-practices-for-monitoring.md)  
+-   [監視に関するベスト プラクティス](../technical-guides/best-practices-for-monitoring.md)  
   
--   [日常的な監視タスク](../technical-guides/routine-monitoring-tasks.md)  
+-   [定期的な監視タスク](../technical-guides/routine-monitoring-tasks.md)  
   
--   [ログ (PAL) のツールのパフォーマンス分析の使用](../technical-guides/using-the-performance-analysis-of-logs-pal-tool.md)  
+-   [ログ (PAL) ツールのパフォーマンス分析の使用](../technical-guides/using-the-performance-analysis-of-logs-pal-tool.md)  
   
--   [System Center Operations Manager 2007 での BizTalk Server の監視](../technical-guides/monitoring-biztalk-server-with-system-center-operations-manager-2007.md)
+-   [System Center Operations Manager 2007 による BizTalk Server の監視](../technical-guides/monitoring-biztalk-server-with-system-center-operations-manager-2007.md)
