@@ -1,5 +1,5 @@
 ---
-title: '方法: 動的にビジネス ルール ポリシーを使用して、メッセージ コンテキストに基づくメッセージのルーティング |Microsoft Docs'
+title: 操作方法:ビジネス ルール ポリシーを使用してメッセージのコンテキストに基づいてメッセージを動的にルーティング |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7406b0daed4374241bb92fdcb4afcdcd5acd77b9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4e13a2e214622027ee8e28980c4d7cbc97714bd7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36973891"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65306296"
 ---
-# <a name="how-to-dynamically-route-a-message-based-on-message-context-using-a-business-rules-policy"></a>方法: ビジネス ルール ポリシーを使用してメッセージのコンテキストに基づいてメッセージを動的にルーティング
+# <a name="how-to-dynamically-route-a-message-based-on-message-context-using-a-business-rules-policy"></a>操作方法:ビジネス ルール ポリシーを使用してメッセージのコンテキストに基づいてメッセージを動的にルーティングします。
 ## <a name="goal"></a>[目標]  
  このセクションでは、BizTalk Server ビジネス ルール エンジン (BRE) ポリシーを使用して、メッセージ コンテキスト プロパティに基づく、メッセージのエンドポイントを決定し、BizTalk Server ファイル アダプターを使用してメッセージをルーティングし、旅行プランを作成する方法を示します。  
   
@@ -180,11 +180,11 @@ ms.locfileid: "36973891"
 ## <a name="additional-resources"></a>その他のリソース  
  詳細については、次の関連項目を参照してください。  
   
--   [方法: ビジネス ルール ポリシーを使用して、日程を選択](../esb-toolkit/how-to-select-an-itinerary-using-a-business-rules-policy.md)  
+-   [方法: ビジネス ルール ポリシーを使用するスケジュールを選択します。](../esb-toolkit/how-to-select-an-itinerary-using-a-business-rules-policy.md)  
   
--   [方法: メッセージを変換し、スケジュール ルーティング スリップを利用してファイルの場所に送信する](../esb-toolkit/transform-message-and-route-the-message-to-a-location-using-itinerary-routing.md)  
+-   [方法: メッセージを変換し、スケジュール ルーティング スリップを使用してファイルの場所に、結果のメッセージをルーティング](../esb-toolkit/transform-message-and-route-the-message-to-a-location-using-itinerary-routing.md)  
   
--   [方法: 既知のメッセージ タイプに関するビジネス ルール ポリシーを利用し、コンテンツベースのルーティングを実装する](../esb-toolkit/apply-content-based-routing-using-business-rules-policy-for-known-message-type.md)  
+-   [方法: コンテンツ ベース ルーティング ポリシーを使用してビジネス ルールの既知のメッセージの種類の実装します。](../esb-toolkit/apply-content-based-routing-using-business-rules-policy-for-known-message-type.md)  
   
 -   [開発アクティビティ](../esb-toolkit/development-activities.md)  
   

@@ -1,5 +1,5 @@
 ---
-title: エラー Messages1 |Microsoft ドキュメント
+title: エラー Messages1 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,22 +14,22 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 80a44049c43c499ac05a8a6f296d11add934267a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 98c6c3f8e6b4e648d8f40add23ec45bb3821579f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22241618"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65347394"
 ---
 # <a name="error-messages"></a>エラー メッセージ
-次の表に、JD Edwards EnterpriseOne システムのエラー メッセージおよび可能な対応策を示します。  
+次の表では、JD Edwards EnterpriseOne システムのエラー メッセージについて説明し、それらの考えられる修正方法を提供します。  
   
 |エラー ID|考えられる原因/エラーの説明|考えられる修正|  
 |--------------|-----------------------------------------|-------------------------|  
-|E-JDE0027|JD Edwards EnterpriseOne JAR ファイルが見つかりません。 JD Edwards EnterpriseOne 接続オブジェクトを取得できません。|資格情報を確認してください。 CLASSPATH 設定およびログオン資格情報を確認します。 環境変数を参照してください。|  
-|I-JDE0043|アプリケーション サーバー、ポート、環境、構成ファイルのパス、ユーザー、パスワードが間違っています。 ログインに失敗しました。|ログイン資格情報を確認します。 環境変数を参照してください。|  
-|I-JDE0048|Microsoft BizTalk Adapter for JD Edwards EnterpriseOne が開いているときに、jdearglist.txt ファイルが存在しないか、または空の場合、ログに情報メッセージが表示されます。|パラメーターの一覧を入力するには、自動的に右揃えになり左側に空白が埋め込まれるように、jdearglist.txt ファイルを更新してください。 詳細については、次を参照してください。[文字列値の処理](../core/handling-string-values2.md)です。 jdearglist を変更するごとに、そのビジネス オブジェクトのスキーマを再生成する必要があります。|  
-|E-JDE0027|JD Edwards EnterpriseOne 接続オブジェクトを取得できません。 CLASSPATH および資格情報を確認してください。|jdeinterop.ini の場所を確認します。|  
+|E-JDE0027|JD Edwards EnterpriseOne JAR ファイルがありません。 JD Edwards EnterpriseOne 接続オブジェクトを取得できません。|資格情報を確認します。 CLASSPATH 設定およびログオン資格情報を確認します。 環境変数を参照してください。|  
+|JDE0043|構成ファイル、ユーザー、パスワードをアプリ サーバー、ポート、環境、パスが正しくありません。 ログインに失敗しました。|ログイン資格情報を確認します。 環境変数を参照してください。|  
+|JDE0048|Jdearglist.txt ファイルが存在しないか、空では場合、Microsoft BizTalk Adapter for JD Edwards EnterpriseOne を開いたときにログに情報メッセージが表示されます。|右揃えで配置して、左に空白が埋め込まれて自動的には、パラメーターの一覧を入力する、jdearglist.txt ファイルを更新します。 詳細については、次を参照してください。[文字列値の処理](../core/handling-string-values2.md)します。 Jdearglist を変更するたびに、そのビジネス オブジェクトのスキーマを再生成する必要があります。|  
+|E-JDE0027|JD Edwards EnterpriseOne 接続オブジェクトを取得できません。 CLASSPATH および資格情報を確認してください。|Jdeinterop.ini の場所を確認します。|  
   
 ## <a name="see-also"></a>参照  
  [JD Edwards EnterpriseOne のトラブルシューティング](../core/troubleshooting-jd-edwards-enterpriseone.md)   

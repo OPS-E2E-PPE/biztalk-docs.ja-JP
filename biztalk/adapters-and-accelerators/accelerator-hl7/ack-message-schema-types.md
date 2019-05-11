@@ -16,12 +16,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a556155e364fe56b66f7938fd49036b47085aeac
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 923cd9122f1b0d322f5a12d3be38f660a67d054e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36967469"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65247570"
 ---
 # <a name="ack-message-schema-types"></a>ACK メッセージ スキーマの種類
 受信確認メッセージのスキーマは 2 つの形式があります。  
@@ -29,7 +29,7 @@ ms.locfileid: "36967469"
 - **一般的な確認 (ACK)** します。 一般的な確認 (ACK) を使用するには、アプリケーションが特別な基幹業務アプリケーション レベルの受信確認メッセージを定義していない、またはアプリケーションの処理にエラーが発生しました。 これを使用することもできますの受信確認のレベルをそのまま使用します。 次の表では、ACK メッセージの構造を示します。  
 
 
-  | ACK ^ 異なります ^ ACK | 一般的な受信確認 | 章 |
+  | ACK^varies^ACK | 一般的な受信確認 | 」の章 |
   |----------------|------------------------|---------|
   |      MSH       |     メッセージ ヘッダー     |    2    |
   |      MSA       | メッセージの受信確認 |    2    |
@@ -38,7 +38,7 @@ ms.locfileid: "36967469"
 
 - **遅延確認応答 (mcf という)** します。 このメッセージは、HL7 バージョン 2.1 の旧バージョンと互換性のためにのみ存在します。 非同期のアプリケーション レベル確認、MCF メッセージの一般的なフォームを作成するプロトコルの一部として使用するとします。 次の表では、MCF メッセージの構造を示します。  
 
-  |MCF ^ 異なります ^ ACK|受信確認の遅延|章|  
+  |MCF^varies^ACK|受信確認の遅延|」の章|  
   |--------------------|----------------------------|-------------|  
   |MSH|メッセージ ヘッダー|2|  
   |MSA|メッセージの受信確認|2|  

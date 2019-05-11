@@ -1,5 +1,5 @@
 ---
-title: 'タスク 5: 構成変換 Shape2 |Microsoft Docs'
+title: タスク 5:変換 Shape2 の構成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,15 +12,15 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 39ccfdff1f175942dfc5b3ce5c6ba75c87dcf2de
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4a41921914c2018da9e43442dfa94763fb4dc4f2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37000163"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65299805"
 ---
-# <a name="task-5-configure-the-transform-shape"></a>タスク 5: 変換図形を構成します。
-変換図形を構成するには、次の手順に従います。  
+# <a name="task-5-configure-the-transform-shape"></a>タスク 5:変換図形を構成します。
+変換図形を構成するのにには、次の手順を使用します。  
   
 ### <a name="to-configure-the-transform-shape"></a>変換図形を構成するには  
   
@@ -28,17 +28,17 @@ ms.locfileid: "37000163"
   
    -   **構築メッセージ:** EditLineMsg  
   
-   -   **名前:** ConstructEditLineMessageWithData  
+   -   **名:** ConstructEditLineMessageWithData  
   
    1. 右クリックし、真ん中の**図形の挿入**、し、**変換**します。  
   
        ![変換図形の挿入](../core/media/insert-shape-transform.gif "insert_shape_transform")  
   
-   2. 変換を使用して、送信データと受信データをマップします。  
+   2. 変換を使用して送信されるデータを送信するデータからデータをマップします。  
   
-      作業環境では、(BeginDoc の代わりに) ドキュメントを、すべてのメッセージを構築するために使用できるすべての値、BeginDoc、EditLine、および EndDoc と共に送信する場合があります。 ただし、この例ではハードコードされたデータが使用されています。  
+      作業環境にはドキュメントを送信する (BeginDoc) ではなくすべての値を持つことのすべての可能なメッセージ、BeginDoc、EditLine、および EndDoc を構築することができます。 この例では、ただし、データがあるのみハード コード化されました。  
   
-2. [Transform_1] をダブルクリックして開きます。  
+2. [Transform_1] を開くをダブルクリックします。  
   
    1.  ソースを選択し、下の追加行をクリックして**変数名**選択**BeginDocResponseMsg**します。  
   
@@ -48,7 +48,7 @@ ms.locfileid: "37000163"
   
         ![変換先](../core/media/transform-destination.gif "transform_destination")  
   
-3. ソリューション エクスプ ローラーでダブルクリック **[transform_1.btm]** マッピング ツールを開きます。 次の 4 つのアイテムをリンクします。  
+3. ソリューション エクスプ ローラーでダブルクリック **[transform_1.btm]** マッピング ツールを開きます。 次の 4 つの項目をリンクするには。  
   
    - mnCMJobNo  
   
@@ -60,7 +60,7 @@ ms.locfileid: "37000163"
   
      ![変換マッピングの例](../core/media/example-transformmapping.gif "example_transformmapping")  
   
-     使いやすいように、この例では値がハードコードされています。 送信先スキーマでアイテムをクリックし、次の値を設定します。  
+     この例では、使いやすさのハードコーディングされた値があります。 送信先スキーマ内の項目をクリックし、次の値を設定します。  
   
      ![ハードコードされたマッピング](../core/media/hardcoded-mapping-example.gif "hardcoded_mapping_example")  
   
@@ -80,21 +80,21 @@ ms.locfileid: "37000163"
    </ns0:F4211FSEditLine>  
    ```  
   
-4. メッセージの構築図形を [ReceiveEditLine] の後へドラッグします。  
+4. ReceiveEditLine の後に、メッセージの構築をドラッグします。  
   
    -   **構築メッセージ:** EndDocMsg  
   
-   -   **名前:** ConstructEndDocMessageWithData  
+   -   **名:** ConstructEndDocMessageWithData  
   
         クリックし、中央で右クリックして**図形の挿入**、し、**変換**します。  
   
-5. [Transform_2] をダブルクリックして開きます。  
+5. 開くには、[transform_2] をダブルクリックします。  
   
    1.  選択**ソース**[行の追加] をクリック**変数名**選択と**BeginDocResponseMsg**します。  
   
    2.  選択**先**行の追加 をクリック**変数名**を選択します**EndDocMsg**、 をクリック**ok**します。  
   
-6. ソリューション エクスプ ローラーでダブルクリック **[transform_2.btm]** マッピング ツールを開きます。 次の 4 つのアイテムをリンクします。  
+6. ソリューション エクスプ ローラーでダブルクリック **[transform_2.btm]** マッピング ツールを開きます。 次の 4 つの項目をリンクするには。  
   
    - mnCMJobNo  
   
@@ -104,7 +104,7 @@ ms.locfileid: "37000163"
   
    - mnTransactionID  
   
-     使いやすいように、この例では値がハードコードされています。 送信先スキーマでアイテムをクリックし、次の値を設定します。  
+     この例では、使いやすさのハードコーディングされた値があります。 送信先スキーマ内の項目をクリックし、次の値を設定します。  
   
    ```  
    <?xml version="1.0" encoding="utf-8"?>  
@@ -117,7 +117,7 @@ ms.locfileid: "37000163"
    ```  
   
 ## <a name="see-also"></a>参照  
- [タスク 1: ポートを作成します。](../core/task-1-create-the-ports1.md)   
- [タスク 2: メッセージを作成します。](../core/task-2-create-the-messages2.md)   
- [タスク 3: 構成、送信と受信図形](../core/task-3-configure-the-send-and-receive-shapes2.md)   
- [タスク 4: メッセージの構築図形の構成](../core/task-4-configure-the-construct-message-shape1.md)
+ [タスク 1:ポートを作成します。](../core/task-1-create-the-ports1.md)   
+ [タスク 2:メッセージを作成します。](../core/task-2-create-the-messages2.md)   
+ [タスク 3:受信図形と送信の構成](../core/task-3-configure-the-send-and-receive-shapes2.md)   
+ [タスク 4:メッセージの構築図形を構成します。](../core/task-4-configure-the-construct-message-shape1.md)

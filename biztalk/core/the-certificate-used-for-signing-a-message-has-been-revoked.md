@@ -12,14 +12,14 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b2e05acaa5a1bca68952072f90364ac3890be9af
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b9a122f5b8d340ba1bed2dca5062edabf2d46e84
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37022720"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65298911"
 ---
-# <a name="the-certificate-used-for-signing-a-message-has-been-revoked"></a>メッセージの署名に使用する証明書が無効にされています
+# <a name="the-certificate-used-for-signing-a-message-has-been-revoked"></a>メッセージの署名に使用する証明書が失効しています
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                          |

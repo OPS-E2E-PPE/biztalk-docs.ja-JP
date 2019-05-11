@@ -19,15 +19,15 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 764853a43f29910727b302d6554cb3bbd741abd8
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a391759b0a05d4266e38ae0eed6d25fded834f0d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36986419"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65343968"
 ---
 # <a name="how-to-add-a-certificate-to-an-application"></a>証明書をアプリケーションに追加する方法
-ここでは、コマンド ラインを使用して、BizTalk アプリケーションに証明書を追加する方法について説明します。 このオプションは、BizTalk Server 管理コンソールでは利用できません。 BizTalk アプリケーションに証明書を追加することで、証明書をアプリケーションと一緒にパッケージ化して、BizTalk グループの 1 つから別のグループに送信することができるようになります。 証明書を使用すると、ID を検証して送信ポートと受信場所へのセキュリティで保護されたリンクを確立することができます。 詳細については、[送信ポートに証明書を割り当てる方法](../core/how-to-assign-a-certificate-to-a-send-port.md)と[受信場所に証明書を割り当てる方法](../core/how-to-assign-a-certificate-to-a-receive-location.md)を参照してください。  
+ここでは、コマンド ラインを使用して、BizTalk アプリケーションに証明書を追加する方法について説明します。 このオプションは、BizTalk Server 管理コンソールでは利用できません。 BizTalk アプリケーションに証明書を追加することで、証明書をアプリケーションと一緒にパッケージ化して、BizTalk グループの 1 つから別のグループに送信することができるようになります。 証明書を使用すると、ID を検証して送信ポートと受信場所へのセキュリティで保護されたリンクを確立することができます。 詳細については、次を参照してください。[送信ポートに証明書を割り当てる方法](../core/how-to-assign-a-certificate-to-a-send-port.md)と[受信場所に証明書を割り当てる方法](../core/how-to-assign-a-certificate-to-a-receive-location.md)します。  
   
  証明書をアプリケーションに追加する際には、次の重要事項を念頭に置いてください。  
   
@@ -43,7 +43,7 @@ ms.locfileid: "36986419"
   
 ### <a name="to-add-a-certificate-to-an-application"></a>証明書をアプリケーションに追加するには  
   
-1. 次のように、コマンド プロンプトを開きます: をクリックして**開始**、 をクリックして**実行**、型`cmd`、順にクリックします**OK**。  
+1. 次のように、コマンド プロンプトを開きます。をクリックして**開始**、 をクリックして**実行**、型`cmd`、順にクリックします**OK**。  
   
 2. 次の表に示すように、適切な値を置き換えて、次のコマンドを入力します。  
   
@@ -56,13 +56,13 @@ ms.locfileid: "36986419"
    |パラメーター|値|  
    |---------------|-----------|  
    |**/ApplicationName**|証明書を追加する BizTalk アプリケーションの名前。 アプリケーション名が指定されなかった場合、グループの既定の BizTalk アプリケーションが使用されます。 名前にスペースが含まれている場合は、二重引用符 (") で囲む必要があります。|  
-   |**/型**|**System.BizTalk:Certificate** (この値小文字は区別されません)。|  
-   |**/上書き**|既存の証明書を更新するためのオプション。 指定しなかった場合、追加する証明書と同じ拇印 (Thumbprint) プロパティを持つ証明書が既にアプリケーションに存在した場合、追加操作は失敗します。 Thumbprint プロパティは、証明書スナップインで証明書をダブルクリックし、[詳細] タブをクリックして表示できます。詳細については、証明書スナップインのドキュメントで「証明書情報の表示」を参照してください。|  
-   |**/拇印**|証明書の拇印プロパティ (、*拇印*はデータのダイジェストです)。 この値は、二重引用符 (") で囲む必要があります。|  
+   |**/Type**|**System.BizTalk:Certificate** (この値小文字は区別されません)。|  
+   |**/Overwrite**|既存の証明書を更新するためのオプション。 指定しなかった場合、追加する証明書と同じ拇印 (Thumbprint) プロパティを持つ証明書が既にアプリケーションに存在した場合、追加操作は失敗します。 Thumbprint プロパティは、証明書スナップインで証明書をダブルクリックし、[詳細] タブをクリックして表示できます。詳細については、証明書スナップインのドキュメントで「証明書情報の表示」を参照してください。|  
+   |**/Thumbprint**|証明書の拇印プロパティ (、*拇印*はデータのダイジェストです)。 この値は、二重引用符 (") で囲む必要があります。|  
    |**/サーバー**|BizTalk 管理データベースをホストする SQL Server インスタンスの名前。ServerName\InstanceName,Port の形式で指定します。<br /><br /> インスタンス名の指定は、そのインスタンス名がサーバー名と異なる場合にのみ必要です。 ポートの指定は、SQL Server で使用するポート番号が既定値 (1433) と異なる場合にのみ必要です。<br /><br /> 例 :<br /><br /> Server=MyServer<br /><br /> Server=MyServer\MySQLServer,1533<br /><br /> 指定しなかった場合、ローカル コンピューターで実行されている SQL Server インスタンスの名前が使用されます。|  
-   |**/データベース**|BizTalk 管理データベースの名前。 指定しなかった場合、SQL Server のローカル インスタンスで実行されている BizTalk 管理データベースが使用されます。|  
+   |**/Database**|BizTalk 管理データベースの名前。 指定しなかった場合、SQL Server のローカル インスタンスで実行されている BizTalk 管理データベースが使用されます。|  
   
 ## <a name="see-also"></a>参照  
  [.NET アセンブリ、証明書、およびその他のリソースを管理します。](../core/managing-net-assemblies-certificates-and-other-resources.md)   
- [AddResource コマンド: 証明書](../core/addresource-command-certificate.md)   
+ [AddResource コマンド:証明書](../core/addresource-command-certificate.md)   
  [BizTalk アプリケーションの作成と変更](../core/creating-and-modifying-biztalk-applications.md)

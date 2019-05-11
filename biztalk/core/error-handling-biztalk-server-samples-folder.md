@@ -18,12 +18,12 @@ caps.latest.revision: 27
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4e5df828fc8227030a2837bfdfe0aebff5b6f1d2
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: dfff362d6d12e68ad7c0ef9258cccfd68dff1a0e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36997707"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65348197"
 ---
 # <a name="error-handling-biztalk-server-samples-folder"></a>エラー処理 (BizTalk Server サンプル フォルダー)
 このサンプルの目的は、コンテンツ ベースのルーティング (CBR) アプリケーション用のエラー処理機能を構築することです。  
@@ -97,7 +97,7 @@ ms.locfileid: "36997707"
 
 2. 実行**Setup.bat**、次の操作を実行します。  
 
-   - 3 つのフォルダーを作成します: **ExpenseReportIn**、 **ExpenseReportOut**、および**ResubmittedReportIn**次のパス。  
+   - 3 つのフォルダーを作成します。**ExpenseReportIn**、 **ExpenseReportOut**、および**ResubmittedReportIn**次のパス。  
 
       <`Samples Path`>**\Messaging\ErrorHandling**  
 
@@ -142,7 +142,7 @@ ms.locfileid: "36997707"
 
    9. 仮想ディレクトリの構成**ExpenseReport**ローカル パスを使用する[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]HTTPReceive  
 
-      詳細については、[IIS の HTTP 受信場所を構成する方法](../core/how-to-configure-iis-for-an-http-receive-location.md)を参照してください。  
+      詳細については、次を参照してください。 [IIS の HTTP 受信場所を構成する方法](../core/how-to-configure-iis-for-an-http-receive-location.md)します。  
 
 ## <a name="running-the-sample"></a>サンプルを実行します。  
  正しい経費報告書でサンプルを実行する前に、次の手順に従って、"エラーなし" のケース サンプルが正しく機能することを確認します。  

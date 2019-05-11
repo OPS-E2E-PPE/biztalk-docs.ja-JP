@@ -1,5 +1,5 @@
 ---
-title: 呼び出すオーケストレーション デバッガーとメッセージ フロー ビュー方法 |Microsoft ドキュメント
+title: 呼び出すオーケストレーション デバッガーとメッセージ フロー ビュー方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,24 +15,24 @@ caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 235aa9af5ca56a63cdc1d5fa3ab3d3be10003887
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1904b80297f4220fd45e2f7902151b0523e6690d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22253930"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65336955"
 ---
 # <a name="how-to-invoke-the-orchestration-debugger-and-the-message-flow-views"></a>オーケストレーション デバッガーとメッセージ フロー ビューを呼び出す方法
-BizTalk Server 管理コンソールの [グループ ハブ] ページの [クエリ結果] ウィンドウにクエリの出力が表示されます。 ショートカット メニューから、オーケストレーション デバッガーまたはメッセージ フロー ビューを表示できます。  
+BizTalk Server 管理コンソールの [グループ ハブ] ページでは、クエリ結果ペインには、クエリの出力が表示されます。 コンテキスト メニューから、オーケストレーション デバッガーまたはメッセージ フロー ビューを表示できます。  
   
 ## <a name="prerequisites"></a>前提条件  
- ここで示す手順を実行するには、BizTalk Server Administrators グループのメンバーとしてログオンする必要があります。  
+ この手順を実行する BizTalk Server 管理者グループのメンバーとしてログオンする必要があります。  
   
 ### <a name="to-display-the-orchestration-debugger-or-message-flow-views"></a>オーケストレーション デバッガーまたはメッセージ フロー ビューを表示するには  
   
-1.  表示するには、メッセージ フロー ビューでオーケストレーション インスタンスに関連付けられているセルを右クリックし、**クエリの結果**選択**メッセージ フロー**です。  
+1.  メッセージ フロー ビューを表示するでオーケストレーション インスタンスに関連付けられているセルを右クリックし、**クエリ結果**選択**メッセージ フロー**します。  
   
-2.  表示するには、オーケストレーション デバッガーでオーケストレーション インスタンスに関連付けられているセルを右クリックし、**クエリの結果**選択**オーケストレーション デバッガー**です。  
+2.  オーケストレーション デバッガーを表示するでオーケストレーション インスタンスに関連付けられているセルを右クリックし、**クエリ結果**選択**オーケストレーション デバッガー**します。  
   
 ## <a name="see-also"></a>参照  
  [メッセージ フローの表示](../core/viewing-message-flow.md)   

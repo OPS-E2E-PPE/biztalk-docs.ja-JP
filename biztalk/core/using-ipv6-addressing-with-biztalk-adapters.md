@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 73047c13c5ea328dd71807a3ba7eea79ddee87ce
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 82dd615f5da897ae3091fc4742e97e28b1651a59
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37003691"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65246454"
 ---
 # <a name="using-ipv6-addressing-with-biztalk-adapters"></a>BizTalk アダプターにおける IPv6 アドレス指定の使用
 BizTalk Server アダプターでは、IPv6 のアドレス指定の使用をサポートします。 このトピックでは、UNC パスに対して IPv6 アドレスを指定するために使用される命名規則、リテラル IPv6 アドレスを指定するための命名規則、および HTTP アダプターと SOAP アダプターでの IPv6 スコープ識別子の使用について説明します。  
@@ -38,7 +38,7 @@ BizTalk Server アダプターでは、IPv6 のアドレス指定の使用をサ
  場所\< *sharename* \>ターゲット コンピューター上のファイル共有の名前を指定します。  
   
 > [!NOTE]
->  ファイル送信ハンドラーとファイル受信ハンドラーが実行されているホスト インスタンスのユーザー アカウントが、ファイル共有に対する適切なアクセス許可を持っていることを確認します。 ファイル アダプターを使用したファイルを受信するために必要なフォルダーのアクセス許可の詳細については、[ファイル受信ハンドラーを構成](../core/configure-the-file-adapter.md)を参照してください。 ファイル アダプターを使用したファイルを送信するときに必要なフォルダーのアクセス許可の詳細については、[ファイル アダプターに関する既知の問題](../core/known-issues-with-the-file-adapter.md)を参照してください。 ファイル アダプターで使用するためにサポートされているファイル システムについては、[ http://support.microsoft.com/kb/815070](http://support.microsoft.com/kb/815070)を参照してください。  
+>  ファイル送信ハンドラーとファイル受信ハンドラーが実行されているホスト インスタンスのユーザー アカウントが、ファイル共有に対する適切なアクセス許可を持っていることを確認します。 ファイル アダプターを使用したファイルを受信するために必要なフォルダーのアクセス許可の詳細については、次を参照してください。[ファイル受信ハンドラーを構成](../core/configure-the-file-adapter.md)します。 ファイル アダプターを使用したファイルを送信するときに必要なフォルダーのアクセス許可の詳細については、次を参照してください。[ファイル アダプターに関する既知の問題](../core/known-issues-with-the-file-adapter.md)します。 ファイル アダプターで使用するためにサポートされているファイル システムについては、次を参照してください。 [ http://support.microsoft.com/kb/815070](http://support.microsoft.com/kb/815070)します。  
   
 ## <a name="using-ipv6-scope-identifiers-with-the-http-adapter-and-the-soap-send-adapter"></a>HTTP アダプターおよび SOAP 送信アダプターにおける IPv6 スコープ識別子の使用  
  HTTP 送受信アダプターと SOAP 送信アダプタは、IPv6 アドレスで、スコープ識別子を使用する場合、スコープ識別子する必要がありますでエスケープするエスケープ コードを必要としています。 **%25**します。 たとえば、 **fe80::550c:489f:e65e:aef3 %8**は、スコープ識別子 (%8) を含む有効な IPv6 アドレスです。 HTTP 送受信アダプターまたは SOAP 送信アダプターと共にこの IPv6 アドレスを使用するには、スコープ識別子を次のようにエスケープさせる必要があります。  

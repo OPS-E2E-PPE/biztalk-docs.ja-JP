@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10532 |Microsoft Docs'
+title: シングル サインオン:イベント 10532 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 135060013686ff24e4f2692bda0e8829189e1c4a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3ea52d8e64f5a59a633a6e22eef7220f44b36f77
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36974851"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65262338"
 ---
-# <a name="single-sign-on-event-10532"></a>シングル サインオン: イベント 10532
+# <a name="single-sign-on-event-10532"></a>シングル サインオン:イベント 10532
 ## <a name="details"></a>詳細  
 
 |                 |                                                                                                                                                                                     |
@@ -30,21 +30,21 @@ ms.locfileid: "36974851"
 |  イベント ソース   |                                                                                       ENTSSO                                                                                        |
 |    コンポーネント    |                                                                                         CO                                                                                          |
 |  シンボル名  |                                                                             SSO_WARN_LOST_SECRET_SERVER                                                                             |
-|  メッセージ テキスト   | マスター シークレットを取得できませんでした。 マスター シークレット サーバー名が正しいこと、および利用可能であることを確認してください。%r<br /><br /> シークレット サーバー名: %1 %r<br /><br /> エラー コード: %2 |
+|  メッセージ テキスト   | マスター シークレットを取得できませんでした。 マスター シークレット サーバー名が正しいことおよび available.%r であることを確認します。<br /><br /> シークレット サーバー名: %1 %r<br /><br /> エラー コード: %2 |
 
 ## <a name="explanation"></a>説明  
- この警告イベントは、マスター シークレットの取得要求が失敗したことを示します。 エンタープライズ シングル サインオン サービスがサーバー上で実行されていないことが原因である可能性があります。  
+ この警告イベントは、マスター シークレットを取得する要求が失敗したことを示します。 エンタープライズ シングル サインオン サービスがサーバーで実行されていない可能性があります。  
 
 ## <a name="user-action"></a>ユーザーの操作  
- この警告を解消するには、次の操作を行います:   
+ この警告を解決するには、次の 1 つ以上の操作を行います。  
 
-- 関連するイベントまたはエラーについては、アプリケーション イベント ログを確認します。  
+- アプリケーション イベント ログの関連するイベントまたはエラーを確認します。  
 
 - マスター シークレット サーバー名が正しいことを確認します。  
 
 - マスター シークレット サーバーがオンラインであり、エンタープライズ シングル サインオン サービスが実行されていることを確認します。  
 
-  詳細については、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ヘルプの次の情報を参照してください:   
+  詳細については、の次のリソースを参照してください。[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプ。  
 
 - [マスター シークレットを生成する方法](../core/how-to-generate-the-master-secret.md)  
 

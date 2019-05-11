@@ -12,12 +12,12 @@ caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ba137cd221d6cfa0ac373213d0c43dd49eafd756
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8ea5bbf1e819ae95cc0c0cc44de0992ae7994b04
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37003763"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65267589"
 ---
 # <a name="required-service-certificate-thumbprint-not-specified"></a>必要なサービス証明書の拇印が指定されていません
 ## <a name="details"></a>詳細  
@@ -33,18 +33,18 @@ ms.locfileid: "37003763"
 |  メッセージ テキスト   |               必要なサービス証明書の拇印が指定されていません                |
   
 ## <a name="explanation"></a>説明  
- WCF 送信ポートのセキュリティ設定に必要なサービス証明書のプロパティが設定されていませんでした。  
+ WCF 送信ポートのセキュリティ設定に必要な証明書のプロパティ、サービスを設定するができません。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- サービス証明書のプロパティを構成するには、次の手順を実行します。  
+ サービス証明書のプロパティを構成するのにには、次の手順を使用します。  
   
-#### <a name="to-configure-the-service-certificate-property"></a>サービス証明書プロパティを構成するには  
+#### <a name="to-configure-the-service-certificate-property"></a>サービス証明書のプロパティを構成するには  
   
 1. クリックして**開始**、 をクリックして**すべてのプログラム**、 をクリックして[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、 をクリック**BizTalk Server 管理**します。  
   
 2. コンソール ルートで  [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]、展開**BizTalk グループ**、展開**アプリケーション**します。  
   
-3. アプリケーションを特定し、次にトランスポートを特定します。  
+3. アプリケーションを見つけて、トランスポートを特定します。  
   
 4. トランスポート名を右クリックします。  
   
@@ -52,12 +52,12 @@ ms.locfileid: "37003763"
   
 6. ポート**型**一覧で、適切なポートを選択します。  
   
-7. クリックして**構成**します。  
+7. をクリックして**構成**です。  
   
 8. **WCF [**<em>トランスポートの種類</em>**] トランスポートのプロパティ**ダイアログ ボックスで、をクリックして、**セキュリティ**タブ。  
   
 9. いることを確認、**サービス証明書**プロパティを構成します。  
   
-   証明書の詳細については、次の情報を参照してください。  
+   証明書の詳細については、次のリソースを参照してください。  
   
 -   [WCF アダプターの証明書のインストール](../core/installing-certificates-for-the-wcf-adapters.md)

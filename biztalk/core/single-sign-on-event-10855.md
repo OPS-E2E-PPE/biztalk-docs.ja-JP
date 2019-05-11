@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10855 |Microsoft Docs'
+title: シングル サインオン:イベント 10855 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c2d5914cc119a68c109b883c888b3898bc7db07e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9519453d0209caf46fa75c1bce52d60fe792d0e3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36986451"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65306647"
 ---
-# <a name="single-sign-on-event-10855"></a>シングル サインオン: イベント 10855
+# <a name="single-sign-on-event-10855"></a>シングル サインオン:イベント 10855
 
 |                 |                                                                        |
 |-----------------|------------------------------------------------------------------------|
@@ -29,10 +29,10 @@ ms.locfileid: "36986451"
 |  イベント ソース   |                                 ENTSSO                                 |
 |    コンポーネント    |                                  なし                                   |
 |  シンボル名  |                    ENTSSO_E_PASSWORD_FILTER_FAILED                     |
-|  メッセージ テキスト   | パスワード フィルターが失敗したため、資格情報を返すことができません。 |
+|  メッセージ テキスト   | 資格情報は、パスワード フィルターが失敗したため、返されることはできません。 |
 
 ## <a name="explanation"></a>説明  
- パスワード フィルターが有効ではありません。 最も可能性が高い原因は、フィルターを手動で作成したことです。これは推奨されていません。  
+ パスワード フィルターが無効です。 これの最も可能性の高い原因は、フィルターが作成されたことを手動では推奨されません。  
 
 ## <a name="user-action"></a>ユーザーの操作  
- フィルターの作成ウィザードを使用して、もう一度パスワード フィルターを作成します。
+ フィルターの作成ウィザードを使用してもう一度パスワード フィルターを作成します。

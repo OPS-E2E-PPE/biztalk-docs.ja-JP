@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7068f86f3e6be2cd71741a6afe5f2438ac3800b4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ad1a88c7f497d236a8e11456cfbc48de45494e1b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36985715"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65295126"
 ---
 # <a name="installing-the-designer-extensibility-sample"></a>デザイナー機能拡張サンプルをインストールします。
 このセクションでは、デザイナーの機能拡張サンプルをインストールするプロセスについて説明します。 サンプルをインストールする必要があります[をインストールして、日程ランプでサンプルを実行する](../esb-toolkit/installing-and-running-the-itinerary-on-ramp-sample.md)と[をインストールして、動的解決サンプルを実行している](../esb-toolkit/installing-and-running-the-dynamic-resolution-sample.md)インストールしてこのサンプルを使用する前にします。  

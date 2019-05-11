@@ -16,15 +16,15 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a8abeb606ea422af4d04ca6e527795d722b58464
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f0a64026dcf699c1d643aa50eca797111bac3227
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36981955"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65338146"
 ---
 # <a name="how-to-disable-an-affiliate-application"></a>関連アプリケーションを無効にする方法
-MMC スナップインまたはコマンド ラインを使用して、指定した関連アプリケーションを無効にすることができます。  
+MMC スナップインまたはコマンドラインを使用すると、指定された関連アプリケーションを無効にします。  
   
 ### <a name="to-disable-an-affiliate-application-using-the-mmc-snap-in"></a>MMC スナップインを使用して関連アプリケーションを無効にするには  
   
@@ -34,7 +34,7 @@ MMC スナップインまたはコマンド ラインを使用して、指定し
   
 3.  関連アプリケーションを右クリックし、をクリックし、**を無効にする**します。  
   
-### <a name="to-disable-an-affiliate-application-using-the-command-line"></a>コマンド ラインを使用して関連アプリケーションを無効にするには  
+### <a name="to-disable-an-affiliate-application-using-the-command-line"></a>コマンドラインを使用して関連アプリケーションを無効にするには  
   
 1. クリックして**開始**、 をクリックして**実行**、し、入力**cmd**します。  
   

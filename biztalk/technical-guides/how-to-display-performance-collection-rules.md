@@ -1,5 +1,5 @@
 ---
-title: パフォーマンス収集ルールを表示する方法 |Microsoft ドキュメント
+title: パフォーマンス収集ルールを表示する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,24 +12,24 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cd7b7d1d2e368572740a3c7a54799bc56b2330e3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9ddb8f0482864945a6dd89cc953523d0fb6642cb
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22298186"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65253377"
 ---
 # <a name="how-to-display-performance-collection-rules"></a>パフォーマンス収集ルールを表示する方法
-パフォーマンス収集ルールを表示するには、このセクションのスクリプトを使用します。 このスクリプトは、規則の大部分に対して機能します。 次の表で示されている列を含む .csv ファイルを作成し、Office Excel を使用して表示できます。  
+パフォーマンス収集ルールを表示するには、このセクションでは、スクリプトを使用します。 このスクリプトは、ほとんどの規則は機能します。 次の表に示されている列を含む .csv ファイルを作成し、Office Excel を使用して表示できます。  
   
-|列|Description|  
+|[列]|説明|  
 |------------|-----------------|  
 |WriteToDB または CollectionPerformanceData|Operations Manager データベースに書き込みます。|  
 |WriteToDW または CollectPerfDataWarehouse|データ ウェアハウスに書き込みます。|  
 |WC|パフォーマンス カウンタのベースライン データをオペレーション データベースに格納します。|  
   
 #### <a name="to-display-performance-collection-rules"></a>パフォーマンス収集ルールを表示するには  
- 管理グループでのパフォーマンス収集ルールを表示するには、次のスクリプトを実行します。  
+ 管理グループのパフォーマンス収集ルールを表示するには、次のスクリプトを実行します。  
   
 ```  
 function GetPerfCounterName ([String] $configuration)   

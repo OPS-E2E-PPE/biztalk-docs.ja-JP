@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dd869d69ca11a41daac459229d7b58684e43afe7
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: deaf8e6e6bc968e9666dce9b12c056f4ea3584f3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36992947"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65305936"
 ---
 # <a name="defining-testing-using-an-xml-configuration-file"></a>XML 構成ファイルを使用したテストを定義します。
 BizUnit テストを定義する 2 つの方法を提供しています: および Excel ワークシートを使用して、XML 構成ファイル。 このトピックのねらい XML 構成ファイルを使用してテストを定義するにはただしも見てください BizUnit SDK では、Excel を使用するための BizUnit テスト_ケースを定義する方法の興味深い例が用意されています。 さらに、BizUnit テスト_ケースを迅速に作成できる GUI を提供するための BizUnit デザイナー ツールを調査したい場合があります。 このトピックでは、非常に単純なシナリオを使用して XML 構成を使用してテスト_ケースを定義する方法の概要を示します。  

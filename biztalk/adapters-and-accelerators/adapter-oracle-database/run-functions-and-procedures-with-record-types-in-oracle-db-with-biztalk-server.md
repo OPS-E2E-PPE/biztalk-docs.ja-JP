@@ -12,15 +12,15 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2ee3a55907fe2528e411ca11447e19fce9e79958
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 27fd1cbc9ce20f7412db46f94a255304937b5de5
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36998755"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65376096"
 ---
 # <a name="invoke-functions-and-procedures-with-record-types-in-oracle-database-using-biztalk-server"></a>BizTalk Server を使用して Oracle データベースでレコードの種類で関数とプロシージャを呼び出す
-Oracle のレコードの種類は、PL/SQL 関数およびプロシージャに渡されるパラメーターで階層的な情報を表すために使用されます。 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]サーフェスの複雑な XML 型としてレコードの種類。 方法の詳細については[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]サポートのレコードの種類を参照してください[関数と Oracle データベースでレコードの種類を使用したプロシージャに対する操作。](../../adapters-and-accelerators/adapter-oracle-database/operations-on-functions-and-procedures-with-record-types-in-oracle-database.md)します。 レコードの種類の XML 構造については、[レコードの種類のメッセージ スキーマ](../../adapters-and-accelerators/adapter-oracle-database/message-schemas-for-record-types.md)を参照してください。  
+Oracle のレコードの種類は、PL/SQL 関数およびプロシージャに渡されるパラメーターで階層的な情報を表すために使用されます。 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]サーフェスの複雑な XML 型としてレコードの種類。 方法の詳細については[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]サポートのレコードの種類を参照してください[関数と Oracle データベースでレコードの種類を使用したプロシージャに対する操作。](../../adapters-and-accelerators/adapter-oracle-database/operations-on-functions-and-procedures-with-record-types-in-oracle-database.md)します。 レコードの種類の XML 構造については、次を参照してください。[レコードの種類のメッセージ スキーマ](../../adapters-and-accelerators/adapter-oracle-database/message-schemas-for-record-types.md)します。  
   
 ## <a name="how-to-invoke-functions-in-an-oracle-database"></a>Oracle データベースでの関数を呼び出す方法でしょうか。  
  使用して Oracle データベースでの操作を実行する[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]で[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]で説明されている手順のタスクが含まれます[Oracle データベースと BizTalk アプリケーションを開発する構成要素](../../adapters-and-accelerators/adapter-oracle-database/building-blocks-to-develop-biztalk-applications-with-oracle-database.md)します。 レコードの種類、これらのタスクはシンプルで入れ子になったが返す Oracle データベースでの関数の呼び出しには。  
@@ -40,7 +40,7 @@ Oracle のレコードの種類は、PL/SQL 関数およびプロシージャに
    このトピックでは、これらのタスクを実行する手順を説明します。  
   
 ## <a name="sample-based-on-this-topic"></a>このトピックに基づくサンプル  
- サンプル Func_RecordTypes、このトピックの「に基づいてが付属しても、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]します。 詳細については、[アダプタ サンプル](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md)を参照してください。  
+ サンプル Func_RecordTypes、このトピックの「に基づいてが付属しても、[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]します。 詳細については、次を参照してください。[アダプタ サンプル](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md)します。  
   
 ## <a name="generating-schema"></a>スキーマを生成します。  
  示すために、このトピックでどのように[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]型を呼び出すパラメーターをレコードを返す関数を呼び出したサポート。  
@@ -49,7 +49,7 @@ Oracle のレコードの種類は、PL/SQL 関数およびプロシージャに
   
 - 入れ子になったレコード型を返す GET_ACCOUNTINFO 関数。  
   
-  これらの関数は使用可能なサンプルで提供される SQL スクリプトを実行して作成された ACCOUNT_PKG の一部として。 サンプルとの SQL スクリプトの詳細については、[スキーマのサンプル](../../adapters-and-accelerators/accelerator-rosettanet/schema-samples.md)を参照してください。  
+  これらの関数は使用可能なサンプルで提供される SQL スクリプトを実行して作成された ACCOUNT_PKG の一部として。 サンプルとの SQL スクリプトの詳細については、次を参照してください。[スキーマのサンプル](../../adapters-and-accelerators/accelerator-rosettanet/schema-samples.md)します。  
   
   そのため、両方の関数では、GET_ACCOUNTADDRESS と GET_ACCOUNTINFO、SCOTT\Package\ACCOUNT_PKG スキーマで使用可能なスキーマを生成する必要があります。 参照してください[Visual Studio での Oracle 操作のメタデータを取得](../../adapters-and-accelerators/adapter-oracle-database/get-metadata-for-oracle-database-operations-in-visual-studio.md)スキーマを生成する方法の詳細について。  
   
@@ -141,7 +141,7 @@ Oracle のレコードの種類は、PL/SQL 関数およびプロシージャに
   
 1.  各関数の生成スキーマからプロパティを昇格します。 たとえば、GET_ACCOUNTADDRESS 関数のスキーマから CUSTNAME プロパティを昇格させますGET_ACCOUNTINFO 関数のスキーマから支援プロパティを昇格させます。 プロパティを昇格させるには、スキーマ ビューでプロパティを右クリックして**昇格**、し、**クイック昇格**します。 これにより、PropertySchema.xsd ファイルが BizTalk プロジェクトに追加します。  
   
-     プロパティを昇格する方法の詳細については、[プロパティの昇格](../../core/promoting-properties.md)を参照してください。  
+     プロパティを昇格する方法の詳細については、次を参照してください。[プロパティの昇格](../../core/promoting-properties.md)します。  
   
 2.  オーケストレーションの種類を右クリックして**関連付けの種類**、し、**新しい関連付けの種類**します。  
   
@@ -185,10 +185,10 @@ Oracle のレコードの種類は、PL/SQL 関数およびプロシージャに
   
  これらのプロパティを指定したら、メッセージの構築図形とポートが接続されているし、オーケストレーションが完了します。  
   
- ここで、BizTalk ソリューションをビルドしに配置する必要があります、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]します。 詳細については、[を実行しているオーケストレーションのビルドと](../../core/building-and-running-orchestrations.md)を参照してください。  
+ ここで、BizTalk ソリューションをビルドしに配置する必要があります、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]します。 詳細については、次を参照してください。[を実行しているオーケストレーションのビルドと](../../core/building-and-running-orchestrations.md)します。  
   
 ## <a name="configuring-the-biztalk-application"></a>BizTalk アプリケーションを構成します。  
- 先ほど作成したオーケストレーションが 下にある BizTalk プロジェクトを配置した後、**オーケストレーション**BizTalk Server 管理コンソール ウィンドウ。 BizTalk Server 管理コンソールを使用して、アプリケーションを構成する必要があります。 チュートリアルについては、[チュートリアル: 基本的な BizTalk アプリケーションの展開](Walkthrough:%20Deploying%20a%20Basic%20BizTalk%20Application.md)を参照してください。
+ 先ほど作成したオーケストレーションが 下にある BizTalk プロジェクトを配置した後、**オーケストレーション**BizTalk Server 管理コンソール ウィンドウ。 BizTalk Server 管理コンソールを使用して、アプリケーションを構成する必要があります。 チュートリアルについては、次を参照してください。[チュートリアル。基本的な BizTalk アプリケーション展開](Walkthrough:%20Deploying%20a%20Basic%20BizTalk%20Application.md)します。
   
  アプリケーションを構成する必要があります。  
   
@@ -200,7 +200,7 @@ Oracle のレコードの種類は、PL/SQL 関数およびプロシージャに
   
 - ハード ディスクと、BizTalk オーケストレーションが、Oracle データベースからの応答を含む、関数ごとに 1 つの応答メッセージをドロップする場所、対応するファイル ポートでの場所を定義します。  
   
-  - Oracle データベースにメッセージを送信する物理 Wcf-custom または Wcf-oracledb 送信ポートを定義します。 送信ポートでアクションを指定することも必要があります。 Wcf-custom または Wcf-oracledb のポートを作成する方法については、[、Oracle データベース アダプターを物理ポートのバインドを手動で構成](../../adapters-and-accelerators/adapter-oracle-database/manually-configure-a-physical-port-binding-to-the-oracle-database-adapter.md)を参照してください。 Wcf-custom または Wcf-oracledb 送信ポートは 1 つ以上のスキーマに準拠したメッセージの送受信および 2 つの操作を実行、ためには、両方の操作のための動的アクションを設定する必要があります。 アクションの詳細については、[Oracle データベースの SOAP アクションを構成する](../../adapters-and-accelerators/adapter-oracle-database/configure-the-soap-action-for-oracle-database.md)を参照してください。 このオーケストレーションでは、アクションをよう設定する必要があります。  
+  - Oracle データベースにメッセージを送信する物理 Wcf-custom または Wcf-oracledb 送信ポートを定義します。 送信ポートでアクションを指定することも必要があります。 Wcf-custom または Wcf-oracledb のポートを作成する方法については、次を参照してください。 [、Oracle データベース アダプターを物理ポートのバインドを手動で構成](../../adapters-and-accelerators/adapter-oracle-database/manually-configure-a-physical-port-binding-to-the-oracle-database-adapter.md)します。 Wcf-custom または Wcf-oracledb 送信ポートは 1 つ以上のスキーマに準拠したメッセージの送受信および 2 つの操作を実行、ためには、両方の操作のための動的アクションを設定する必要があります。 アクションの詳細については、次を参照してください。 [Oracle データベースの SOAP アクションを構成する](../../adapters-and-accelerators/adapter-oracle-database/configure-the-soap-action-for-oracle-database.md)します。 このオーケストレーションでは、アクションをよう設定する必要があります。  
   
     ```  
     <BtsActionMapping>  
@@ -210,10 +210,10 @@ Oracle のレコードの種類は、PL/SQL 関数およびプロシージャに
     ```  
   
     > [!NOTE]
-    >  使用して、スキーマの生成、[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]ポートとそれらのポートに設定するアクションに関する情報を含むバインド ファイルも作成されます。 (発信) の送信ポートを作成または (着信) 用のポートを受信する BizTalk Server 管理コンソールから、このバインド ファイルをインポートできます。 詳細については、[Oracle データベースへのポート バインド ファイルを使用して物理的なポート バインドを構成する](../../adapters-and-accelerators/adapter-oracle-database/configure-a-physical-port-binding-using-a-port-binding-file-to-oracle-database.md)を参照してください。
+    >  使用して、スキーマの生成、[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]ポートとそれらのポートに設定するアクションに関する情報を含むバインド ファイルも作成されます。 (発信) の送信ポートを作成または (着信) 用のポートを受信する BizTalk Server 管理コンソールから、このバインド ファイルをインポートできます。 詳細については、次を参照してください。 [Oracle データベースへのポート バインド ファイルを使用して物理的なポート バインドを構成する](../../adapters-and-accelerators/adapter-oracle-database/configure-a-physical-port-binding-using-a-port-binding-file-to-oracle-database.md)します。
   
 ## <a name="starting-the-application"></a>アプリケーションの起動  
- Oracle のデータベース テーブル内の関数を呼び出す BizTalk アプリケーションを起動する必要があります。 BizTalk アプリケーションを開始する手順については、[オーケストレーションを開始する方法](../../core/how-to-start-an-orchestration.md)を参照してください。  
+ Oracle のデータベース テーブル内の関数を呼び出す BizTalk アプリケーションを起動する必要があります。 BizTalk アプリケーションを開始する手順については、次を参照してください。[オーケストレーションを開始する方法](../../core/how-to-start-an-orchestration.md)します。  
   
  この段階で、ことを確認します。  
   
@@ -285,7 +285,7 @@ Oracle のレコードの種類は、PL/SQL 関数およびプロシージャに
  例外に関する情報の関数またはを使用してプロシージャの呼び出し中に発生する可能性が[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]を参照してください[例外と、Oracle Database アダプターによるエラー処理](../../adapters-and-accelerators/adapter-oracle-database/exceptions-and-error-handling-with-the-oracle-database-adapter.md)します。  
   
 ## <a name="best-practices"></a>ベスト プラクティス  
- 展開し、BizTalk プロジェクトの構成後は、バインド ファイルと呼ばれる XML ファイル構成設定をエクスポートできます。 バインド ファイルを生成した後は、受信ポートなど、同じオーケストレーションの送信ポートを作成する必要はありませんように、ファイルから構成設定をインポートできます。 バインド ファイルの詳細については、[Oracle データベース アダプターの再利用バインド](../../adapters-and-accelerators/adapter-oracle-database/reuse-oracle-database-adapter-bindings.md)を参照してください。  
+ 展開し、BizTalk プロジェクトの構成後は、バインド ファイルと呼ばれる XML ファイル構成設定をエクスポートできます。 バインド ファイルを生成した後は、受信ポートなど、同じオーケストレーションの送信ポートを作成する必要はありませんように、ファイルから構成設定をインポートできます。 バインド ファイルの詳細については、次を参照してください。 [Oracle データベース アダプターの再利用バインド](../../adapters-and-accelerators/adapter-oracle-database/reuse-oracle-database-adapter-bindings.md)します。  
   
 ## <a name="see-also"></a>参照  
 [Oracle Database による開発の BizTalk アプリケーションを構成要素](../../adapters-and-accelerators/adapter-oracle-database/building-blocks-to-develop-biztalk-applications-with-oracle-database.md)

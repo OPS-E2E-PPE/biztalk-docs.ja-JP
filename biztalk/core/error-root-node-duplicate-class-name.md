@@ -1,5 +1,5 @@
 ---
-title: エラー - ルート ノードの重複するクラス名 |Microsoft ドキュメント
+title: エラー - ルート ノードの重複するクラス名 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2011ac3f1295d3eb63d036645f30938c299adff2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7e49bbfe2737e341110d0ad452dd8d54ee0dbad8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22241714"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65347043"
 ---
 # <a name="error---root-node-duplicate-class-name"></a>エラー - ルート ノードの重複するクラス名
 **エラー コード**  
@@ -28,8 +28,8 @@ ms.locfileid: "22241714"
   
  **説明**  
   
- **RootNode TypeName**スキーマのルート ノードのすべてのプロパティを一意にする必要があります。 このスキーマのルート ノードの 2 つ以上見つかりましたの同じ値を持つ、 **RootNode TypeName**プロパティです。  
+ **RootNode TypeName**のスキーマのルート ノードのすべてのプロパティは一意である必要があります。 2 つ以上のこのスキーマのルート ノードのことが検出されましたに対して同じ値を持つ、 **RootNode TypeName**プロパティ。  
   
  **ユーザーの操作**  
   
- 関連するルート ノードの順に選択、ことを指定する値を確認する、 **RootNode TypeName**プロパティが有効かつ一意です。
+ 関連するルート ノードをさらに、選択、値を指定することを確認する、 **RootNode TypeName**プロパティが有効かつ一意です。

@@ -38,12 +38,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0a0220d44386eed94efbddc1a5a22fe6704a7780
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: bd0755b31e56474a4cfde05264b0e1696d3aece7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36975555"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65251489"
 ---
 # <a name="btahl72x-flat-file-processing"></a>BTAHL72X フラット ファイル処理
 Microsoft BizTalk Accelerator for HL7 の次のコンポーネント ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) プロセス HL7 2.X (HL7 でエンコードされた) メッセージ。  
@@ -104,7 +104,7 @@ Microsoft BizTalk Accelerator for HL7 の次のコンポーネント ([!INCLUDE[
   
    サポートされている XSD と XSD 以外の型 (TS (タイムスタンプ)、DT (date)、TM (時間)、および TN (電話番号)  
   
-- 列挙型  
+- 列挙  
   
    ID (HL7 定義テーブル) とは (ユーザー定義テーブル)  
   

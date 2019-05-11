@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1ef443c74c47883d04bcad2c1da5bb9423f7c01d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9e69924f220c159092765333a153bf903ac002dc
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36977853"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65298954"
 ---
 # <a name="the-byte-property-value-is-not-valid"></a>バイト型プロパティの値が無効です
 ## <a name="details"></a>詳細  

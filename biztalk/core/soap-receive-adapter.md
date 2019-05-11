@@ -1,5 +1,5 @@
 ---
-title: SOAP 受信アダプター |Microsoft ドキュメント
+title: SOAP 受信アダプター |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,20 +15,20 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 06fac19580d6083ed1b0d4be315d3285acf14fcc
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 908554ad129fed6c99f4b8bb7e1b197cb4bc0ca6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22278394"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65244438"
 ---
 # <a name="soap-receive-adapter"></a>SOAP 受信アダプター
-SOAP 受信アダプターは、Web サービス要求を受信するために使用します。 BizTalk メッセージ オブジェクトの作成、および関連するプロパティのメッセージ コンテキストへの昇格を行います。  
+SOAP を使用する受信アダプタ Web サービス要求を受信します。 SOAP 受信アダプターは、BizTalk メッセージ オブジェクトを作成し、メッセージ コンテキストに関連付けられているプロパティを昇格させます。  
   
- SOAP 受信アダプター URI は、1 つまたは複数の BizTalk オーケストレーションに関連付ける必要がありますまたはスキーマを持つ web サービスとして公開されている、 **BizTalk Web サービス公開ウィザード**です。 公開された Web サービスは、BizTalk アセンブリ内の 1 つ以上の BizTalk Server オーケストレーションまたはスキーマと関連付けられている 1 つ以上の Web メソッドを公開します。 事実上、公開された Web サービスは、BizTalk オーケストレーションまたはスキーマのサーバー プロキシとして機能し、クライアントと BizTalk オーケストレーションまたはスキーマの間で要求と応答を転送します。 BizTalk オーケストレーションまたはスキーマを web サービスとして公開の詳細については、次を参照してください。 [Web サービスの公開](../core/publishing-web-services.md)です。  
+ SOAP 受信アダプター URI は、1 つまたは複数の BizTalk オーケストレーションに関連付ける必要がありますまたはスキーマを持つ web サービスとして公開されている、 **BizTalk Web サービス公開ウィザード**します。 公開済み web サービスは、BizTalk Server オーケストレーションまたはスキーマを BizTalk アセンブリ内の 1 つまたは複数と関連付けられている 1 つまたは複数の web メソッドを公開します。 実際には、公開された web サービスは、BizTalk オーケストレーションまたはスキーマと転送の要求と、クライアントと、BizTalk オーケストレーションまたはスキーマの間の応答、サーバーのプロキシとして機能します。 BizTalk オーケストレーションまたはスキーマを web サービスとしての発行の詳細については、次を参照してください。 [Web サービスの公開](../core/publishing-web-services.md)します。  
   
- SOAP アダプターを使用する受信場所は、一方向または要求 - 応答 (双方向) として構成できます。 SOAP アダプターを使用するように一方向の受信場所を構成した場合、関連する Web サービスによって受信ポートにバインドされた BizTalk アセンブリが呼び出され、クライアントに要求の状態が返されます。 SOAP アダプターを使用するように要求 - 応答 (双方向) の受信場所を構成した場合、関連する Web サービスによって受信ポートにバインドされた BizTalk アセンブリが呼び出され、クライアントに応答ドキュメントが返されます。 要求-応答メッセージングの詳細については、次を参照してください。[要求-応答のメッセージング](../core/request-response-messaging.md)です。  
+ SOAP アダプタを使用する受信場所は、一方向として構成するか、要求-応答 (双方向)。 一方向の受信場所を構成するには、SOAP アダプターを使用すると関連付けられている web サービス、受信ポートにバインドされた BizTalk アセンブリを呼び出すクライアントに要求の状態を返します。 要求応答 (双方向) の受信場所を構成するには、SOAP アダプターを使用すると関連付けられている web サービス、受信ポートにバインドされた BizTalk アセンブリを呼び出すクライアントに応答ドキュメントを返します。 要求-応答メッセージングの詳細については、次を参照してください。[要求-応答メッセージング](../core/request-response-messaging.md)します。  
   
 ## <a name="see-also"></a>参照  
  [SOAP アダプターとは何ですか。](../core/what-is-the-soap-adapter.md)   
- [SOAP アダプタのセキュリティに関する推奨事項](../core/soap-adapter-security-recommendations.md)
+ [SOAP アダプターのセキュリティに関する推奨事項](../core/soap-adapter-security-recommendations.md)

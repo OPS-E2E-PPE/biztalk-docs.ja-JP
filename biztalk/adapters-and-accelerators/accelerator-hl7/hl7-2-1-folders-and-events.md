@@ -16,12 +16,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2015fd8116060eb63eed168f4dae1e6cf1e0391c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9bf0381e04d0a9444f2aeb71f9a8a16c050c3e2b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36996163"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65255171"
 ---
 # <a name="hl7-21-folders-and-events"></a>HL7 2.1 のフォルダーとイベント
 次の表は、HL7 でエンコードされたメッセージの HL7 バージョン 2.1 のフォルダー内のセットアップ ウィザードによって作成されるサブフォルダーを一覧表示します。 これらのサブフォルダーは、Microsoft BizTalk Accelerator for HL7 のために使用するスキーマを含めることが ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) を検証する、解析し、このテーブルの [イベント] 列に表示されるイベントをシリアル化します。 サブフォルダー名には、これらのスキーマをサポートするイベントの種類について説明します。  
@@ -29,7 +29,7 @@ ms.locfileid: "36996163"
 |サブフォルダー|イベント|  
 |---------------|------------|  
 |認めざるを得ません|A01 A24|  
-|書|O01 O02|  
+|[オーダー]|O01 O02|  
 |患者のアカウンティング|P01 P04|  
 |Query|Q01 Q03 Q05|  
 |補助的なデータ レポート|R01 R03|  

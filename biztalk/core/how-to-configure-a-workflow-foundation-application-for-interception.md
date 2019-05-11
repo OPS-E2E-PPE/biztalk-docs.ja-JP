@@ -12,18 +12,18 @@ caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2a6929161360b2b3af1bfe221e9fa3583d93b566
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 445a83fc4b1e88c4c0c7cb938cabd0e7df5fca25
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36967806"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65341828"
 ---
 # <a name="how-to-configure-a-workflow-foundation-application-for-interception"></a>傍受のために Workflow Foundation アプリケーションを構成する方法
 BAM アクティビティ データの収集を開始するには、まず、BAM インターセプター ソフトウェアをインストールし、[!INCLUDE[firstref_btsWinWorkflowFoundation](../includes/firstref-btswinworkflowfoundation-md.md)] インターセプターを使用するようにアプリケーションを構成する必要があります。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] およびその依存関係がインストールされ、BizTalk グループが少なくとも 1 つ作成されていることを前提とします。  
   
 ## <a name="installing-the-bam-eventing-software"></a>BAM イベント ソフトウェアのインストール  
- [!INCLUDE[nextref_btsWinWorkflowFoundation](../includes/nextref-btswinworkflowfoundation-md.md)] 用の BAM インターセプターを使用するように [!INCLUDE[nextref_btsWinWorkflowFoundation](../includes/nextref-btswinworkflowfoundation-md.md)] アプリケーションを構成するには、まず、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] セットアップ プログラムを使用して BAM イベント ソフトウェアをインストールする必要があります。 BAM イベント ソフトウェアをインストールして、パフォーマンス カウンターの登録の詳細については、[BAM イベント ソフトウェアをインストールする](../core/installing-the-bam-eventing-software.md)を参照してください。  
+ [!INCLUDE[nextref_btsWinWorkflowFoundation](../includes/nextref-btswinworkflowfoundation-md.md)] 用の BAM インターセプターを使用するように [!INCLUDE[nextref_btsWinWorkflowFoundation](../includes/nextref-btswinworkflowfoundation-md.md)] アプリケーションを構成するには、まず、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] セットアップ プログラムを使用して BAM イベント ソフトウェアをインストールする必要があります。 BAM イベント ソフトウェアをインストールして、パフォーマンス カウンターの登録の詳細については、次を参照してください。 [BAM イベント ソフトウェアをインストールする](../core/installing-the-bam-eventing-software.md)します。  
   
 ## <a name="configuring-a-windows-workflow-foundation-application-for-tracking"></a>追跡のために Windows Workflow Foundation アプリケーションを構成する方法  
  [!INCLUDE[nextref_btsWinWorkflowFoundation](../includes/nextref-btswinworkflowfoundation-md.md)] アプリケーションで BAM イベント情報の書き込みを開始するには、次の 4 つのタスクを完了する必要があります。  
@@ -113,7 +113,7 @@ BAM アクティビティ データの収集を開始するには、まず、BAM
   
 - アプリケーション ドメインで最後の BamTrackingService が停止すると、インターセプターは IC ポーリング スレッドを停止します。  
   
-  WorkflowRuntime と構成情報の読み込みの詳細については、[ http://go.microsoft.com/fwlink/?LinkId=83314](http://go.microsoft.com/fwlink/?LinkId=83314)を参照してください。  
+  WorkflowRuntime と構成情報の読み込みの詳細については、次を参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=83314](http://go.microsoft.com/fwlink/?LinkId=83314)します。  
   
 ##### <a name="to-configure-the-appconfig-file-for-the-bam-tracking-service"></a>BAM 追跡サービスのために App.config ファイルを構成するには  
   

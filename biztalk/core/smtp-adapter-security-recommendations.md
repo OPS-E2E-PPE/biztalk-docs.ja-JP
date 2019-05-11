@@ -1,5 +1,5 @@
 ---
-title: SMTP アダプタのセキュリティに関する推奨事項 |Microsoft ドキュメント
+title: SMTP アダプタのセキュリティに関する推奨事項 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,24 +16,24 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ca1aeed0ad8c80cc32d333aeef37d1da6feabfc2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d1b89406529c2a112d667888a67df02e9ab9a693
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22276498"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65314409"
 ---
 # <a name="smtp-adapter-security-recommendations"></a>SMTP アダプタのセキュリティに関する推奨事項
-SMTP アダプタは、BizTalk Server を実行しているサーバーと他のアプリケーション間で簡易メール転送プロトコル (SMTP) を介して情報を交換するために使用します。 BizTalk Server から他のアプリケーションにメッセージを送信するには、電子メール メッセージを作成し、指定した電子メール アドレスに配信します。 SMTP アダプタは、メッセージの送信のみに使用できます。 SMTP アダプターに関する詳細については、次を参照してください。 [SMTP アダプター](../core/smtp-adapter.md)です。  
+簡易メール転送プロトコル (SMTP) プロトコルを使用して BizTalk Server と他のアプリケーションを実行するサーバーの間で情報を交換するのにには、SMTP アダプタを使用します。 BizTalk Server は、電子メール メッセージを作成し、指定した電子メール アドレスに配信して、他のアプリケーションにメッセージを送信できます。 SMTP アダプタは、メッセージの送信のみ使用できます。 SMTP アダプターに関する詳細については、次を参照してください。 [SMTP アダプター](../core/smtp-adapter.md)します。  
   
- SMTP アダプタを実行しているホスト インスタンス用のサービス アカウントを構成する場合、リモートの SMTP サーバーで使用する認証の種類を指定する必要があります。 認証オプションには、基本認証 (クリア テキスト)、NTLM (現在の資格情報を使用) があります。SMTP サーバーで認証が不要な場合には指定しません。  
+ SMTP アダプタを実行するホスト インスタンスのサービス アカウントを構成するときに、リモートの SMTP サーバーで使用する認証の種類を指定する必要があります。 認証オプションは、SMTP サーバーで認証が不要な場合は基本認証 (クリア テキスト)、NTLM (を現在の資格情報を使用)、または none。  
   
- SMTP アダプタを使用してメッセージを送信する場合、既定では、メッセージはクリア テキストで送信されます。 S/MIME エンコーダ コンポーネントのあるパイプラインを使用する場合、メッセージは暗号化してから SMTP サーバーに送信できます。 ただし、SMTP ヘッダーはクリア テキストのままです。  
+ SMTP アダプターを使用してメッセージを送信するときに BizTalk Server は、既定ではクリア テキストでメッセージを送信します。 S/MIME エンコーダー コンポーネントを含むパイプラインを使用する場合は、SMTP サーバーに送信する前に、メッセージを暗号化できます。 ただし、SMTP ヘッダーはクリア テキストです。  
   
- BizTalk Server から送信される電子メール メッセージを監査する場合、SMTP アダプタを使用して、独自の SMTP サーバーに接続する必要があります。接続したら、メッセージを監査できるようになります。  
+ BizTalk Server が送信する電子メール メッセージを監査する場合は、する必要がありますアダプターを使用する、SMTP、独自の SMTP サーバーへの接続にメッセージを監査できます。  
   
  SMTP アダプタは、Secure Sockets Layer (SSL) をサポートしていません。  
   
 ## <a name="see-also"></a>参照  
  [受信と送信サーバーのポート](../core/ports-for-the-receive-and-send-servers.md)   
- [セキュリティの最小ユーザー権限](../core/minimum-security-user-rights.md)
+ [セキュリティ保護のための最小ユーザー権限](../core/minimum-security-user-rights.md)

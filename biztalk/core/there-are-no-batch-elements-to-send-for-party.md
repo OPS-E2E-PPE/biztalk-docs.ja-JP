@@ -12,14 +12,14 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 096f180ada0ae99eb4ed3ce00050809f0f39ac75
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9768a06f270e64eadc6bd3c00df337e96c2f1799
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36997035"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65253999"
 ---
-# <a name="there-are-no-batch-elements-to-send-for-party"></a>パーティ用に送信するバッチ要素がありません
+# <a name="there-are-no-batch-elements-to-send-for-party"></a>パーティに送信するバッチ要素がないです。
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                        |

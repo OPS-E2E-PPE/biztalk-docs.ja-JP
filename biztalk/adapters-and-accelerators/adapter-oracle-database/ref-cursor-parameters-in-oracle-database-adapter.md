@@ -17,12 +17,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 27b1d3ac6ff54fa15c300962e7ecfdae91414bff
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 847bf5f06f573b717a5845741fec35d163b66139
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37014811"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65376160"
 ---
 # <a name="operations-on-functions-and-procedures-with-ref-cursor-parameters-in-oracle-database"></a>関数と Oracle データベースの REF CURSOR パラメーターを使用したプロシージャに対する操作
 REF CURSOR は、クエリの実行によって生成されるサーバー側の結果セットへのポインターを表す PL/SQL データ型です。 REF CURSOR 型はにより、入力データのストリーミングを出力して、大量の PL/SQL コードとの間のデータを転送するために最適です。 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] PL/SQL プロシージャと、関数、渡すことができる厳密に型指定された、厳密に型指定の (SYS_REFCURSOR) REF カーソルまたはローカルの OUT パラメーターのサポートを提供します。  

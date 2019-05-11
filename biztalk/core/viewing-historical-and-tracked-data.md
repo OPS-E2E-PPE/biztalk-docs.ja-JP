@@ -1,5 +1,5 @@
 ---
-title: 履歴および追跡データの表示 |Microsoft ドキュメント
+title: 履歴および追跡データの表示 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,20 +14,20 @@ caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 66a6a8e13c6f1d4d3a12b63eb454ebfb6b7cabf2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e6417aabf8c8f1843fd42c812b0f865b8d24f0e0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22287690"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65243104"
 ---
-# <a name="viewing-historical-and-tracked-data"></a>履歴および追跡データの表示
-ここでは、BizTalk Server 管理コンソールの [グループ ハブ] ページでの履歴データおよび追跡データの表示方法に関するタスク固有の情報について説明します。  
+# <a name="viewing-historical-and-tracked-data"></a>履歴および追跡データを表示します。
+ここでは、BizTalk Server 管理コンソールで、[グループ ハブ] ページから履歴および追跡データを表示する方法の使用に関するタスク固有の情報を示します。  
   
--   メッセージで実行される処理手順を表示します。 メッセージの処理手順の詳細については、次を参照してください。[を表示するメッセージ フロー](../core/viewing-message-flow.md)です。  
+-   メッセージで実行される処理手順が表示されます。 メッセージの処理手順の詳細については、次を参照してください。[を表示するメッセージ フロー](../core/viewing-message-flow.md)します。  
   
--   現在 BizTalk 追跡データベースにあるデータと、データ アーカイブから復元されたデータが表示されます。 詳細についてはアーカイブ、および追跡データを参照してください[ライブまたはアーカイブ済みのデータ ソースの選択方法](../core/how-to-select-a-live-or-archived-data-source.md)です。  
+-   現在、BizTalk 追跡データベースだけでなくデータのアーカイブから復元されたデータでデータを表示します。 アーカイブし、追跡データについての詳細についてを参照してください[ライブまたはアーカイブ済みのデータ ソースの選択方法](../core/how-to-select-a-live-or-archived-data-source.md)します。  
   
--   適切なアクセス許可を持つユーザーにデータ アクセスを制限します。 データ アクセスの詳細については、次を参照してください。[アクセス制御とデータ セキュリティ](../core/access-control-and-data-security.md)です。  
+-   適切なアクセス許可を持つユーザーにデータ アクセスを制限します。 データ アクセスの詳細については、次を参照してください。[アクセス制御とデータ セキュリティ](../core/access-control-and-data-security.md)します。  
   
--   使用すると、オーケストレーションのリアルタイム デバッグを実行します。 詳細についてはリアルタイム デバッグは、次を参照してください。[オーケストレーション デバッガー ビューで作業して](../core/working-with-the-orchestration-debugger-view.md)です。
+-   オーケストレーションのリアルタイム デバッグを実行できます。 詳細についてはリアルタイム デバッグは、次を参照してください。[オーケストレーション デバッガー ビューの操作](../core/working-with-the-orchestration-debugger-view.md)します。

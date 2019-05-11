@@ -12,14 +12,14 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e4476249160f71e20012ff92f749042775132d5e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6a3ba1c413d70aa37b519d3eb868f2f3692df47f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36971435"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65298921"
 ---
-# <a name="the-certificate-used-to-encrypt-a-message-has-been-revoked"></a>メッセージの暗号化に使用する証明書は失効しています
+# <a name="the-certificate-used-to-encrypt-a-message-has-been-revoked"></a>メッセージの暗号化に使用する証明書が失効しています
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                         |

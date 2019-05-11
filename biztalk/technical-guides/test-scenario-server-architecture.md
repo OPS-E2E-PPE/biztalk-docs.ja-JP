@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 369286ea2c5c42a53a8e22a7e0b03ac5701db0d5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4394ab90c9a20ebb081f5d8844a2ad727ac1c71b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36981267"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65301648"
 ---
 # <a name="test-scenario-server-architecture"></a>テスト シナリオ サーバー アーキテクチャ
 このトピックでは、ロード テスト中にサーバーとロード テストの実行対象のサーバー アーキテクチャ間でメッセージ フローの概要を示します。  

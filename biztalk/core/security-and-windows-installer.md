@@ -15,12 +15,12 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e9d452fc92e9fcd1c238086513a08b4b392caaa5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: fad36a25bac5d3319a55529cbedb02a5c5803070
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37017524"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65251123"
 ---
 # <a name="security-and-windows-installer"></a>セキュリティと Windows インストーラー
 Windows インストーラーは、BizTalk アプリケーションをインストールおよび更新するための強力なツールです。 Windows インストーラーを使用する場合は、悪意を持って作成された Windows インストーラー (.msi) ファイルがもたらす可能性のあるセキュリティ上の問題に注意し、これを回避するための適切な措置をとる必要があります。  

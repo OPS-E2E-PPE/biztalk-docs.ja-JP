@@ -12,14 +12,14 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9668694f5cde2e99775d1392c8722bad0645b251
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: fd58b772afe9695d526038f622d968c75b75d252
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36966211"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65263391"
 ---
-# <a name="no-matching-transform-found-for-doctype-in-send-port"></a>送信ポートに DocType と一致する変換が見つかりません
+# <a name="no-matching-transform-found-for-doctype-in-send-port"></a>送信ポートで DocType の検出と一致するない変換
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                                        |
@@ -38,12 +38,12 @@ ms.locfileid: "36966211"
 ## <a name="user-action"></a>ユーザーの操作  
  このエラーを解決するには、ように進めます。  
   
-1.  BizTalk 管理コンソールを開き、変換を探してトランスポート名を右クリックします。  
+1.  BizTalk 管理コンソールを開き、トランスポートを特定トランスポート名を右クリックします。  
   
 2.  **[プロパティ]** をクリックします。  
   
-3.  ポートの [種類] の一覧で、正しいポートを選択します。 クリックして**構成**します。  
+3.  ポートの種類の一覧で、適切なポートを選択します。 をクリックして**構成**です。  
   
 4.  [ポート名] 送信ポートのプロパティ ダイアログ ボックスでをクリックして**送信マップ**左側のウィンドウでします。  
   
-5.  マップがここに表示されており、正しいドキュメントの種類に対応していることを確認します。
+5.  マップがここに記載されていると、適切なドキュメントの種類に対応していることを確認します。

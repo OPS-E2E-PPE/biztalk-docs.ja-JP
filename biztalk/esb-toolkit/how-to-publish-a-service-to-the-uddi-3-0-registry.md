@@ -1,5 +1,5 @@
 ---
-title: '方法: UDDI 3.0 サービスを発行レジストリ |Microsoft Docs'
+title: 操作方法:UDDI 3.0 サービスを発行レジストリ |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: eb5ab38da9c78831b319d8c64e789b442fb6eef5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 03c24e6f3dc650325f8e93a6d7a61dfcc77bfbd4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37008019"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65258500"
 ---
-# <a name="how-to-publish-a-service-to-the-uddi-30-registry"></a>方法: UDDI 3.0 サービスを発行レジストリ
+# <a name="how-to-publish-a-service-to-the-uddi-30-registry"></a>操作方法:UDDI 3.0 サービスを発行レジストリ
 ## <a name="goal"></a>[目標]  
  このセクションでは、UDDI サービス サイトを使用してから、ESB のメッセージをルーティングするために、旅行プラン内で解決できる Web サービス エンドポイントを公開する方法を示します。 現在、レジストリに発行された既存の PurchaseOrderSubmitOrderService サービスが複製されます。  
 
@@ -274,8 +274,8 @@ ms.locfileid: "37008019"
 ## <a name="additional-resources"></a>その他のリソース  
  詳細については、次の関連項目を参照してください。  
 
--   [方法: UDDI バインド キー検索を利用し、サービス エンドポイントを解決する](../esb-toolkit/how-to-resolve-a-service-endpoint-using-a-uddi-binding-key-search.md)  
+-   [方法: UDDI バインド キー検索を使用してサービス エンドポイントを解決するには](../esb-toolkit/how-to-resolve-a-service-endpoint-using-a-uddi-binding-key-search.md)  
 
--   [方法: UDDI カテゴリ検索を利用し、サービス エンドポイントを解決する](../esb-toolkit/how-to-resolve-a-service-endpoint-using-a-uddi-category-search.md)  
+-   [方法: UDDI カテゴリ検索を使用してサービス エンドポイントを解決するには](../esb-toolkit/how-to-resolve-a-service-endpoint-using-a-uddi-category-search.md)  
 
 -   [開発アクティビティ](../esb-toolkit/development-activities.md)

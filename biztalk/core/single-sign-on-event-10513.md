@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10513 |Microsoft Docs'
+title: シングル サインオン:イベント 10513 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c61b1b861cb14ec0d16dce27fd26360df7fcdc98
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7ec0cb1df806771e3676bcd580be2965498b618a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36981627"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65243399"
 ---
-# <a name="single-sign-on-event-10513"></a>シングル サインオン: イベント 10513
+# <a name="single-sign-on-event-10513"></a>シングル サインオン:イベント 10513
 ## <a name="details"></a>詳細  
 
 |                 |                                                                                      |
@@ -28,23 +28,23 @@ ms.locfileid: "36981627"
 | 製品バージョン |              [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]              |
 |    イベント ID     |                                        10513                                         |
 |  イベント ソース   |                                        ENTSSO                                        |
-|    コンポーネント    |                                         N\A                                          |
+|    コンポーネント    |                                         該当なし                                          |
 |  シンボル名  |                              SSO_ERROR_DB_FIRST_ACCESS                               |
-|  メッセージ テキスト   | SSO データベースに接続に失敗しました: % 1 %r<br /><br /> %2%r<br /><br /> エラー コード: %3 |
+|  メッセージ テキスト   | SSO データベースに接続に失敗しました: % 1 %r<br /><br /> % 2 %r<br /><br /> エラー コード: %3 |
 
 ## <a name="explanation"></a>説明  
- このエラー イベントは、SSO サービスの開始時に SSO データベースに接続できないことを示します。 イベント メッセージには、指定された SQL Server 名とデータベース名を示すデータ ソース名 (DSN) 文字列、および SQL 接続ライブラリから返されたエラー メッセージが含まれます。  
+ このエラー イベントは、開始するときに、SSO サービスが、SSO データベースに接続できないことを示します。 イベント メッセージには、SQL 接続ライブラリから返されたエラー メッセージと同様に、指定した SQL Server とデータベースの名前を示すデータ ソース名 (DSN) 文字列が含まれています。  
 
- SSO サービスは、開始時に、レジストリで指定された SQL Server 名と SSO データベース名を使用して SSO データベースに接続しようとします。 SSO サービスは、接続が失敗するたびに 5 秒間待機しながら 12 回、合計で 1 分間、接続を試行します。  
+ SSO サービスの開始時に、レジストリで指定された SQL Server および SSO データベース名を使用して SSO データベースへの接続を試みます。 SSO サービスでは 12 回、接続を 5 秒間、合計で 1 分の各失敗した試行を待機しているがされます。  
 
 ## <a name="user-action"></a>ユーザーの操作  
  このエラーを解決するには、以下の 1 つ以上の操作を実行します。  
 
 - SQL Server (MSSQLSERVER) サービスが実行されていることを確認します。  
 
-- エラー メッセージに示されているデータ ソース名 (DSN) 文字列が正しく、適切な SQL Server 名とデータベース名が含まれていることを確認します。  
+- エラー メッセージに示されているデータ ソース名 (DSN) 文字列が正しいと適切な SQL Server とデータベース名を確認します。  
 
-  詳細については、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ヘルプの次の情報を参照してください:   
+  詳細については、の次のリソースを参照してください。[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプ。  
 
 - [Enterprise Single Sign-On の実装](../core/implementing-enterprise-single-sign-on.md)  
 

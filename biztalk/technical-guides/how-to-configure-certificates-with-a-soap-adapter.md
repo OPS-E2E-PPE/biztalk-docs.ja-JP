@@ -12,17 +12,17 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f0a709ab6b28796328677e7e8ae009e3273565a3
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 0e7f45ae5cec3d0921a4fbc32456c5856a8f5159
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37012283"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65253415"
 ---
 # <a name="how-to-configure-certificates-with-a-soap-adapter"></a>SOAP アダプターを使用した証明書を構成する方法
-SOAP 送信アダプタを受け付けるか、クライアント証明書を必要とするサーバーとの接続をセキュリティで保護できます。 クライアント証明書を指定した場合、SOAP 送信アダプタではクライアント証明書を必要とするか受け付けるサーバーに接続するときに、この証明書を使用します。 クライアント証明書を指定しないと、移行先サーバーには、クライアント証明書が必要です、送信者が認証されていないと、SOAP 送信アダプターはメッセージを送信に失敗し、標準の再試行ロジックに従います。  
+SOAP 送信アダプタを受け付けるか、クライアント証明書を必要とするサーバーとの接続をセキュリティで保護できます。 クライアント証明書を指定する場合、SOAP 送信アダプタが使用、証明書を必要とするか、クライアント証明書をそのまま使用するサーバーに接続するときにします。 クライアント証明書を指定しないと、移行先サーバーには、クライアント証明書が必要です、送信者が認証されていないと、SOAP 送信アダプターはメッセージを送信に失敗し、標準の再試行ロジックに従います。  
 
- SOAP 送信アダプターでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] プロセスの実行に使用されているアカウントの個人用ストアにあるクライアント証明書を使用します。 SOAP アダプタは拇印によって証明書を特定します。 SOAP 送信アダプタによる証明書の読み込みが何らかの理由で失敗した場合、送信中だったメッセージは中断されます。  
+ SOAP 送信アダプタのクライアント証明書を使用するアカウントの個人用ストア、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]プロセスが実行されています。 SOAP アダプターでは、その拇印によって証明書を指定します。 SOAP 送信アダプタは、何らかの理由で証明書の読み込みに失敗した場合、送信中だったメッセージは中断されます。  
 
  を暗号化または署名されたメッセージを送信する SOAP アダプタを使用する場合は、送信ポートのクライアント証明書の拇印の SOAP トランスポートのプロパティを構成します。  
 

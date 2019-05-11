@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5cfab980a869029d565d378aaf0f75a147403f3e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 94ceb9afa836af951331cbb9f1649ab23f816024
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36986723"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65262045"
 ---
 # <a name="introduction-to-the-biztalk-esb-toolkit"></a>BizTalk ESB Toolkit の概要
 アーキテクチャと、Microsoft の内容について説明します[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]します。 ドキュメントは、および再利用可能なサービスと新しいエンド ツー エンドに既存のサービスの迅速な組織の柔軟で、セキュリティで保護を有効にするエンタープライズ アプリケーションを開発の Enterprise Service Bus (ESB) アーキテクチャ パターンを適用する方法も示していますビジネス プロセス。  

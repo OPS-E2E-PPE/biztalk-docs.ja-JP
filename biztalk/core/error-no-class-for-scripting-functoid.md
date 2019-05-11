@@ -1,5 +1,5 @@
 ---
-title: エラー - スクリプト Functoid のクラスが存在しません |Microsoft ドキュメント
+title: エラー - スクリプト Functoid のクラスはありません |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1668f4d29dc5748290e24b85a6f1a2623393e1b8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1e328c2ace0dae325553789a1662075fa58395ab
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22240754"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65347284"
 ---
 # <a name="error---no-class-for-scripting-functoid"></a>エラー - スクリプト Functoid のクラスが存在しません
 **エラー コード**  
@@ -28,8 +28,8 @@ ms.locfileid: "22240754"
   
  **説明**  
   
- **スクリプト クラス**の指定されたプロパティ**スクリプト**functoid がいなくても設定されていない、**スクリプトの種類**プロパティは、外部アセンブリが含まれていることを示しますこのスクリプト**スクリプト**functoid です。  
+ **スクリプト クラス**の指定されたプロパティ**Scripting** functoid がも設定されていない、**スクリプトの種類**プロパティは、外部のアセンブリが含まれていることを示しますこのスクリプト**Scripting** functoid。  
   
  **ユーザーの操作**  
   
- 選択し**スクリプト**functoid は、省略記号ボタン (**.**) に関連付けられたボタン、**スクリプト**プロパティに、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]プロパティ] ウィンドウで適切な値を設定し、 **[Functoid スクリプトの**ダイアログ ボックスで、含む、**スクリプト クラス**プロパティです。
+ 選択**Scripting** functoid は、省略記号をクリックします (**.**) ボタンに関連付けられている、**スクリプト**プロパティ、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]プロパティ ウィンドウで、適切な値を設定し、 **Functoid スクリプトの構成**ダイアログ ボックスで、など、**スクリプト クラス**プロパティ。

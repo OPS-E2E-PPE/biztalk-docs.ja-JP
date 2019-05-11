@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10587 |Microsoft Docs'
+title: シングル サインオン:イベント 10587 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 33b8de68cec25dbd6ef6508dcc8a39246fb9992d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 08f72f866a465f5519d1507ac4f13e15d59cb8a0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37014259"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65270999"
 ---
-# <a name="single-sign-on-event-10587"></a>シングル サインオン: イベント 10587
+# <a name="single-sign-on-event-10587"></a>シングル サインオン:イベント 10587
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                                         |
@@ -30,10 +30,10 @@ ms.locfileid: "37014259"
 |  イベント ソース   |                                                 ENTSSO                                                  |
 |    コンポーネント    |                                                   なし                                                   |
 |  シンボル名  |                                    SSO_INFO_CRED_CACHE_SIZE_CHANGED                                     |
-|  メッセージ テキスト   | この SSO サーバーについて資格情報キャッシュのサイズが変更されました。%r<br /><br /> 資格情報のキャッシュ サイズ: %1 |
+|  メッセージ テキスト   | この SSO server.%r の資格情報キャッシュのサイズが変更されました。<br /><br /> 資格情報のキャッシュ サイズ: %1 |
   
 ## <a name="explanation"></a>説明  
- 資格情報キャッシュのサイズが、メッセージに示されている新しい値に変更されました。  
+ メッセージに示されている新しい値に資格情報キャッシュのサイズが変更されました。  
   
 ## <a name="user-action"></a>ユーザーの操作  
  ユーザーによる操作は不要です。

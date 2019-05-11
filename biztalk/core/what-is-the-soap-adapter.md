@@ -17,24 +17,24 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c20aff52f971304dc694e2c2fb019f84747cd382
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b5954f748345d783fb6b78567758a51d0f3e3d05
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22289922"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65242835"
 ---
 # <a name="what-is-the-soap-adapter"></a>SOAP アダプターとは何ですか。
-Web サービスは、WSDL (Web Services Description Language) に規定されている標準準拠のインターフェイスを備えたプログラムです。 Microsoft BizTalk Server オーケストレーションを使用すると、操作しやすく直感的な方法で、関連する個々のビジネス機能を組み合わせて Web サービスを作成および使用できます。 Web サービス、およびオーケストレーションの詳細については、次を参照してください。 [Web サービスを使用する](../core/using-web-services.md)です。  
+Web サービスは、Web サービス記述言語 (WSDL) で規定されている標準に準拠しているインターフェイスを持つプログラムです。 Microsoft BizTalk Server オーケストレーションを使用して、作成および管理しやすく、直感的な方法で独立したが、関連するビジネス機能を結合する Web サービスを使用することができます。 Web サービスおよびオーケストレーションの詳細については、次を参照してください。 [Web サービスを使用する](../core/using-web-services.md)します。  
   
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] には BizTalk Web サービス公開ウィザードが含まれており、このウィザードを使用すると、Web サービスを公開するための開発プロセスをスピードアップできます。 Web サービスとして公開するオーケストレーションを作成した後、BizTalk Web サービス公開ウィザードによって Web サービス プロジェクトが生成されます。 BizTalk Web サービス公開ウィザードの詳細については、次を参照してください。[オーケストレーション Web サービスとして公開](../core/publishing-an-orchestration-as-a-web-service.md)です。 BizTalk Web サービス公開ウィザードを実行する前に、BizTalk Web サービスを有効にする必要があります。 BizTalk Web サービスを有効にする方法の詳細については、次を参照してください。 [Web サービスを有効にすると](../core/enabling-web-services.md)です。  
+ BizTalk Web サービス公開ウィザードが付属[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]Web サービスを公開するための開発プロセスを効率化します。 Web サービスとして公開するオーケストレーションを作成すると、BizTalk Web サービス公開ウィザードによって Web サービスのプロジェクトが生成されます。 BizTalk Web サービス公開ウィザードの詳細については、次を参照してください。 [Web サービスとしてのオーケストレーションの公開](../core/publishing-an-orchestration-as-a-web-service.md)します。 BizTalk Web サービス公開ウィザードを実行する前に BizTalk Web サービスを有効する必要がありますに注意してください。 BizTalk Web サービスを有効にする方法の詳細については、次を参照してください。 [Web サービスを有効にする](../core/enabling-web-services.md)します。  
   
- SOAP アダプタは、2 つのアダプタ (送信アダプタと受信アダプタ) で構成されます。  
+ SOAP アダプターは、2 つのアダプターで構成されます — 送信アダプターと受信アダプタ。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
 -   [SOAP 受信アダプター](../core/soap-receive-adapter.md)  
   
--   [SOAP 送信アダプタ](../core/soap-send-adapter.md)  
+-   [SOAP 送信アダプター](../core/soap-send-adapter.md)  
   
--   [SOAP アダプターのシングル サインオン サポート](../core/single-sign-on-support-for-the-soap-adapter.md)
+-   [SOAP アダプターのシングル サインオンのサポート](../core/single-sign-on-support-for-the-soap-adapter.md)

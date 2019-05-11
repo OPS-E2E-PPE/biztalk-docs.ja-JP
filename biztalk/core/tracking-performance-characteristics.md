@@ -1,5 +1,5 @@
 ---
-title: パフォーマンス特性の追跡 |Microsoft ドキュメント
+title: パフォーマンス特性の追跡 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,12 +15,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d82da5dd18a78221de823ad2d5df790b277e94a3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 05bf8e89978b4ca9aaebb2e76f48c6f771bda831
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22278754"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65313822"
 ---
 # <a name="tracking-performance-characteristics"></a>パフォーマンス特性の追跡
 このセクションでは、維持可能な最大の追跡スループットを測定する方法と、BizTalk 追跡データベースのサイズを変更する方法について説明します。  

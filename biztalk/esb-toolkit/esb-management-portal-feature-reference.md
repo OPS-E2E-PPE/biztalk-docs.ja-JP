@@ -12,15 +12,15 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bdb9bd39ed46a7307d7fa6a6f57e5559a2fe46d0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ae048a3a0cbcd12d7ca81dc46eaae9636d94f6b6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22294410"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65306157"
 ---
 # <a name="esb-management-portal-feature-reference"></a>ESB 管理ポータル機能リファレンス
-ESB 管理ポータルでは、簡単に監視、管理、および ESB アプリケーションをデバッグするエラー情報のビューを提供します。 アラートの管理、UDDI 情報を発行し、ポータルの管理に使用できる機能も用意されています。 ポータルを開くには、 http://localhost/ESB.Portal/ に移動します。  
+ESB 管理ポータルでは、簡単に監視、管理、および ESB アプリケーションをデバッグするエラー情報のビューを提供します。 アラートの管理、UDDI 情報を発行し、ポータルの管理に使用できる機能も用意されています。 ポータルを開くには、 http://localhost/ESB.Portal/します。  
   
  ポータルで、次のビューがあります。  
   

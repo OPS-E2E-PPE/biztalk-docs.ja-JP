@@ -12,31 +12,31 @@ caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7817e3b69edd0a34c13b92128f7ddba0f28a5586
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 06d59b485553f2a994dc3dcc47ce14f58a469735
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37014763"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65344355"
 ---
 # <a name="hipaa-support-in-biztalk-server"></a>BizTalk Server における HIPAA のサポート
-このトピックでは、HIPAA の概要を示し、[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)] がどのようにして HIPAA をサポートしているかについて簡単に説明します。  
+このトピックでは、HIPAA の概要を提供します。 どのように[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]HIPAA をサポートしています。  
   
 ## <a name="introduction-to-hipaa"></a>HIPAA の概要  
- 1996 年に施行された医療保険の携行性と責任に関する法律 (Health Insurance Portability and Accountability Act: HIPAA) では、適用対象事業者が医療保険の支払請求、送金、受給資格、支払請求の状況に関する要求や応答などのトランザクションを電子的に行うときに強制基準に従うことを義務付けています。 HIPAA の適用対象事業は、正常性の計画、クリアリング ハウス、およびほとんどの医療プロバイダーです。  
+ Health Insurance Portability と Accountability Act of 1996 (HIPAA) など、要求、送金、適格性、要求の状態の要求および応答のトランザクションを電子的に行うときに、必須の標準を使用する管理対象のエンティティが必要ですし、その他。 HIPAA の適用対象事業は、正常性の計画、クリアリング ハウス、およびほとんどの医療プロバイダーです。  
   
-## <a name="hipaa-support-in-biztalk-server"></a>BizTalk Server での HIPAA サポート  
- Microsoft は、医療機関およびそれに準ずる組織が医療サービスの提供と資金調達の方法を向上させることができるように、力を注いでいます。 また、組織が HIPAA の規制に準拠するために費やす必要のある時間と費用を削減することを目指しています。  
+## <a name="hipaa-support-in-biztalk-server"></a>BizTalk Server における HIPAA のサポート  
+ マイクロソフトは医療を支援して、準ずる組織が医療が配信され、機関の効率を向上します。 Microsoft は、時間と HIPAA の規制を遵守する必要がありますの組織で費やすコストを削減する予定です。  
   
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は、多様な医療システムにまたがって接続および相互運用されるビジネス プロセスを自動化する課題に組織が対応することを支援します。 HIPAA が適用される組織は [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の機能を使用して、連邦法およびトランザクションに準拠したソリューションの開発、実装、および統合に役立てることができます。  
+ [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] により組織が対応する自動化されたビジネス プロセスを作成するという課題は、接続し、多様な医療システム間で相互運用。 HIPAA 影響を受けた組織を使用して[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]の開発、実装、および連邦法とも準拠しているトランザクションに準拠したソリューションの統合に役立つ機能です。  
   
-[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)] には HIPAA をサポートするネイティブ機能が含まれています。 この機能は、アダプターやアクセラレータなどの製品へのアドインではなく、 製品自体に組み込まれています。 [!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)] は、HIPAA 規制に準拠すると共に、適切に管理および評価されたビジネス プロセスとしての HIPAA を導入するために必要な、EDI のコンポーネントと機能を備えています。  
+[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)] HIPAA のサポートを提供するネイティブ機能が含まれています。 この機能は、アダプターやアクセラレータなどの製品へのアドインではなく、 これは、製品に組み込まれています。 [!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)] EDI を含むコンポーネントとするために必要な機能に準拠すると共に、HIPAA 規制を適切に管理および評価されたビジネス プロセスとしての HIPAA を導入します。  
   
 > [!NOTE]
->  [!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)] は、HIPAA Version 5010 と 4010 をサポートしています。  
+>  [!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)] HIPAA version 5010 と 4010 をサポートしています。  
   
 ## <a name="hipaa-documentation-in-biztalk-server"></a>BizTalk Server の HIPAA ドキュメント  
- 主要な EDI 標準は、X12 と EDIFACT です。X12 は ANSI によって標準化され、主に北米で使用されています。EDIFACT は国連によって標準化され、主に米国外で使用されています。 HIPAA は X12 から派生した標準です。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] はネイティブの X12 EDI 機能の一部として HIPAA サポートを提供します。 したがって、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のドキュメントで X12 処理のサポートについて記載されていれば、特に明記されていない限り、それは HIPAA 処理にも当てはまります。  
+ 主要な EDI 標準は、(ANSI によって標準化され、主に北米で使用)、X12 と EDIFACT (国連によって標準化されていると、主に米国外で使用)。 HIPAA は X12 から派生した標準です。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ネイティブの X12 の一部として HIPAA サポートを提供します。 EDI 機能。 そのため、サポート、X12 への参照を表示場所、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ドキュメントについては、このサポートにも当てはまります HIPAA 処理、特に明示しない限り、します。  
   
  次のセクションは[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]HIPAA に関する具体的な情報があります。  
   

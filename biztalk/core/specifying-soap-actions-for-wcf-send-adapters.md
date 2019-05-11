@@ -17,12 +17,12 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 47781b2b8add675207136248b38b0dadfe6b5610
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d90fded8882fffd8abc1c5729a4ccd69c2a448a9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37023496"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65243135"
 ---
 # <a name="specifying-soap-actions-for-wcf-send-adapters"></a>WCF 送信アダプタ用の SOAP アクションの指定
 設定することができます、 **WCF です。アクション**WCF 送信アダプターのトランスポートのプロパティ ダイアログ ボックスまたはオーケストレーションのコンテキスト プロパティ**式**図形。 設定した場合、 **WCF です。アクション**オーケストレーションのコンテキスト プロパティのままにする必要があります、**アクション**静的送信ポートの WCF アダプター トランスポートのプロパティ ダイアログ ボックスでフィールドを空白。 また、静的送信ポートでアクションを指定した場合、 **WCF です。アクション**オーケストレーションで設定したコンテキスト プロパティは上書きされます。  
@@ -53,7 +53,7 @@ BtsActionMapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd
   
 - アクション フィールドを空白のままにして、受信メッセージのアクションを使用します。  
   
-  BizTalk WCF サービス使用ウィザードを使用して、シングル アクションまたはアクション マッピングで WCF サービスを使用 (消費) することもできます。 詳細については、[BizTalk WCF サービス使用ウィザードを使用して WCF サービスを使用する方法](../core/how-to-use-the-biztalk-wcf-service-consuming-wizard-to-consume-a-wcf-service.md)を参照してください。  
+  BizTalk WCF サービス使用ウィザードを使用して、シングル アクションまたはアクション マッピングで WCF サービスを使用 (消費) することもできます。 詳細については、次を参照してください。 [BizTalk WCF サービス使用ウィザードを使用して WCF サービスを使用する方法](../core/how-to-use-the-biztalk-wcf-service-consuming-wizard-to-consume-a-wcf-service.md)します。  
   
 ## <a name="see-also"></a>参照  
  [WCF アダプター コンテキスト プロパティによる動的送信ポートの構成](../core/configuring-dynamic-send-ports-using-wcf-adapters-context-properties.md)

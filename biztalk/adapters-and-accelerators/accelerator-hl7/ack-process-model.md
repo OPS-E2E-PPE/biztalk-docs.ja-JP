@@ -15,12 +15,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 98fac157c3c3bfa62825fd3c5cb59c68aac528e6
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4775605dc9b8eb41e60e39bee5a763913ce04901
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36970635"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65247709"
 ---
 # <a name="ack-process-model"></a>ACK プロセス モデル
 次の一連の手順では、受信確認 (ACK) プロセス モデルについて説明します。  

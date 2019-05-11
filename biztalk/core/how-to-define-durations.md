@@ -1,5 +1,5 @@
 ---
-title: 期間を定義する方法 |Microsoft ドキュメント
+title: 期間を定義する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,29 +15,29 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: abb5677c3fb5a7456b74973c0bb988c599bcaeff
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5f6662c139fc08af98190bd6e526f65602399c79
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22248786"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65338754"
 ---
 # <a name="how-to-define-durations"></a>期間を定義する方法
-期間には時間の長さを指定します。これは特定のアクティビティ項目の開始と終了を示すマイルストーンで定義します。 たとえば、注文が有効な日数などを定義できます。  
+期間は、開始と終了の特定のアクティビティ項目をマイルス トーンで定義された時間数を指定します。 たとえば、PO が有効な日数の数。  
   
- 設定または期間を変更するには、BAM ビュー ウィザードを使用します。 期間を設定する前に、BAM アクティビティ ウィザードを使用してビジネス アクティビティや項目を作成する必要があります。 詳細については、ウィザードを使用して、次を参照してください。[ビジネス アクティビティの定義および Excel でビュー](../core/defining-business-activities-and-views-in-excel.md)です。  
+ 設定または期間を変更するには、BAM ビュー ウィザードを使用します。 期間を設定するには、BAM アクティビティ ウィザードを使用して、ビジネス アクティビティや項目を作成します。 詳細については、ウィザードを使用して、次を参照してください。[ビジネス アクティビティの定義および Excel でのビュー](../core/defining-business-activities-and-views-in-excel.md)します。  
   
 ### <a name="to-define-durations"></a>期間を定義するには  
   
-1.  BAM ビュー ウィザードで、をクリックして**次へ** 、2 番目に表示されるまで**BAM ビューの編集: アイテムの表示** ページで、クリックして**新しい期間**です。  
+1.  BAM ビュー ウィザードで、**次**、2 つ目が表示されるまで**BAM ビューの編集します。項目の表示**] ページの [クリックして**新しい期間**します。  
   
     > [!NOTE]
-    >  期間を作成する前に、少なくとも 2 つのマイルストーンまたはグループを作成しておく必要があります。  
+    >  期間を作成する前に、少なくとも 2 つのマイルス トーンまたはグループをいる必要があります。  
   
-2.  名前を入力**期間の名前**です。  
+2.  名前を入力**期間名**します。  
   
-3.  ドロップダウン リストから選択**ビジネス マイルス トーンの開始**、**ビジネス マイルス トーンの終了**、**解決時間** をクリックし、 **OK**です。  
+3.  ドロップダウン リストから選択**ビジネス マイルス トーンの開始**、**ビジネス マイルス トーンの終了**、**期間の精度**順にクリックします**OK**します。  
   
 ## <a name="see-also"></a>参照  
  [マイルス トーン グループを定義する方法](../core/how-to-define-milestone-groups.md)   
- [BAM ビューを定義します。](../core/defining-a-bam-view.md)
+ [BAM ビューの定義](../core/defining-a-bam-view.md)

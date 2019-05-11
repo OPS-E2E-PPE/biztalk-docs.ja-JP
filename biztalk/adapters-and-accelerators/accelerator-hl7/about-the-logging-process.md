@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 110c7d4505e6518836fa481ed268771aef72d4c4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e12b1d3505da37294fa50e7f1570d6b8566664da
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36981059"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65247501"
 ---
 # <a name="about-the-logging-process"></a>ログ処理の概要
 重要なアプリケーションを処理するための監査、機密性の高いや通貨のデータを時間は、アプリケーションの重要な部分になります。 エンタープライズ レベルの管理性と可用性を Microsoft に有効にする[!INCLUDE[HL7_CurrentVersion_abbrev](../../includes/hl7-currentversion-abbrev-md.md)]次の共有ランタイムと管理のコンポーネントに依存しています。  
@@ -36,16 +36,16 @@ ms.locfileid: "36981059"
 ## <a name="types-of-data"></a>データの種類  
  このトピックでは、さまざまな種類のログ記録機能によって、このデータの保存場所を使用するログ データについて説明します。  
   
-- 構成データ: 構成データのログ記録は、構成データベース (BizTalk 管理データベースとも呼ばれます) に格納され、SQL 監査情報と監査データが含まれています ([!INCLUDE[btsWinNTNoVersion](../../includes/btswinntnoversion-md.md)]イベント ビューアーでは、集中管理されたデータベースの WMI) の場所。  
+- 構成データ。構成データのログ記録は、構成データベース (BizTalk 管理データベースとも呼ばれます) に格納され、SQL 監査情報と監査データが含まれています ([!INCLUDE[btsWinNTNoVersion](../../includes/btswinntnoversion-md.md)]イベント ビューアーでは、集中管理されたデータベースの WMI) の場所。  
   
-- アーカイブ データ: SQL ログで、EventLog テーブルが 'ログ' のデータを格納します。  
+- アーカイブ データ:SQL ログのイベント ログ テーブルには、'ログ' のデータが格納されます。  
   
 ## <a name="how-logging-works"></a>ログ記録のしくみ  
  このトピックでは、3 種類のイベント ログに記録されたデータを格納する 3 つの場所と、ソフトウェアのログについて説明します。  
   
-|コンポーネント|用途|  
+|コンポーネント|目的|  
 |---------------|-------------|  
-|構成エディター|ログ データを保存する場所を指定します。 BTAHL7 は、次の任意の組み合わせへのログ記録をサポートしています。 イベント ビューアー、WMI、および SQL Server のログ記録します。|  
+|構成エディター|ログ データを保存する場所を指定します。 BTAHL7 では、次の任意の組み合わせへのログ記録をサポートします。イベント ビューアー、WMI、および SQL Server のログ記録します。|  
 |イベント ブローカー|ログを受信するには、イベントは、他のコンポーネントによって生成されると、構成データのログ記録に基づいたログインします。|  
 |ロギング API|ログ記録のインターフェイスが BTAHL7 のすべてのアセンブリによって呼び出されます。|  
   
@@ -90,14 +90,14 @@ ms.locfileid: "36981059"
 |CategoryNumber|カテゴリの数|  
 |EntryType|イベントの種類|  
 |イベント Id|イベント ID|  
-|MachineName|[コンピューター名]|  
+|MachineName|コンピューター名|  
 |メッセージ|メッセージの詳細|  
-|Source|作成、更新、読み取り、削除、展開、またはデータのアーカイブ|  
+|ソース|作成、更新、読み取り、削除、展開、またはデータのアーカイブ|  
 |TimeGenerated|成功または失敗|  
 |UserName|[ユーザー名]|  
-|MsgGuid|メッセージの GUID|  
-|SvcGuid|Service/ServiceGUID|  
-|演算|操作の詳細|  
+|MsgGuid|メッセージ GUID|  
+|SvcGuid|サービス GUID|  
+|操作|操作の詳細|  
   
 ## <a name="see-also"></a>参照  
  [ログ記録の構成](../../adapters-and-accelerators/accelerator-hl7/configuring-logging.md)

@@ -13,12 +13,12 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f6064103964257f295d90188b0d0387031d67804
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 0f3d4e2853db84d90a34e14b0fdc984ff6983344
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36976643"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377177"
 ---
 # <a name="microsoft-biztalk-accelerator-for-swift-documentation"></a>Microsoft BizTalk Accelerator for SWIFT ドキュメント
 Microsoft[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]は Microsoft BizTalk server では、アドインとオープン標準ベースのツールと世界銀行間金融電気通信 (SWIFT) メッセージの社会のサポートを実装する BizTalk Server の実行時の機能を活用書式設定します。  
@@ -36,7 +36,7 @@ Microsoft[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-curre
 ## <a name="messaging"></a>メッセージング  
 [ランタイム、メッセージの修復、FIN 応答、およびメッセージング](../../adapters-and-accelerators/accelerator-swift/runtime-message-repair-fin-response-and-messaging.md)SWIFT アセンブラーと逆アセンブラーを介したデータの流れについて説明します、メッセージの修復について説明します、メッセージ、およびその他のさまざまな成果物の処理について説明します。 
 
-## <a name="security"></a>Security  
+## <a name="security"></a>セキュリティ  
 [セキュリティおよびプライバシーに関する基準](../../adapters-and-accelerators/accelerator-swift/security-and-privacy-standards.md)詳細については、BizTalk Server、ランタイム、および、SWIFT セキュリティ ユーザーとグループ化します。 
 
 ## <a name="developing-apps"></a>アプリの開発  

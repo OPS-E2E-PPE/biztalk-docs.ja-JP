@@ -1,5 +1,5 @@
 ---
-title: SOAP アダプター |Microsoft ドキュメント
+title: SOAP アダプター |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,20 +14,20 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0305359cf505baf6967eec3825a59304fdfc9d73
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 57cd807b504f4235285acb9f06a994514ab69051
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22277866"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65243368"
 ---
 # <a name="soap-adapter"></a>SOAP アダプター
-Microsoft BizTalk Server Web サービスでは、Web サービス要求の送受信時に SOAP アダプタを使用します。 SOAP アダプタを使用すると、オーケストレーションを Web サービスとして公開し、外部 Web サービスを利用できます。  
+Microsoft BizTalk Server Web サービスは、Web サービス要求の受信と送信時に、SOAP アダプタを使用します。 SOAP アダプターを使用すると、オーケストレーションを Web サービスとして公開し、外部の Web サービスを使用できます。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [SOAP アダプターとは何ですか。](../core/what-is-the-soap-adapter.md)  
+-   [SOAP アダプターについて](../core/what-is-the-soap-adapter.md)  
   
 -   [SOAP アダプターの構成](../core/configuring-the-soap-adapter.md)  
   
--   [SOAP アダプタのセキュリティに関する推奨事項](../core/soap-adapter-security-recommendations.md)
+-   [SOAP アダプターのセキュリティに関する推奨事項](../core/soap-adapter-security-recommendations.md)

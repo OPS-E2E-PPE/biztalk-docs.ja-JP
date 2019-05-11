@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3fd5b3713c5570b3580abbb71d51d8dabf422c24
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 10bece42e313e58940ba5af7be3b26d0e786268a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37001163"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65298835"
 ---
 # <a name="the-boolean-property-value-is-not-valid"></a>ブール型プロパティの値が無効です
 ## <a name="details"></a>詳細  

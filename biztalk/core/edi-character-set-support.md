@@ -1,5 +1,5 @@
 ---
-title: EDI 文字セットのサポート |Microsoft ドキュメント
+title: EDI 文字セットのサポート |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,35 +12,35 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: da903e0cde796c6b12c30ea32dfe4012215a231e
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 5c38e7a8115be79d44e39cb4b1c60ef975219ad7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26005835"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65350457"
 ---
 # <a name="edi-character-set-support"></a>EDI 文字セットのサポート
 このトピックでは、文字セットが BizTalk Server の EDI 機能でサポートされていることを示します。  
   
 |EDI エンコード|サポートされている文字セット|  
 |------------------|------------------------------|  
-|X12 (HIPAA を含む)|X12 - 基本文字セット (ASCII のサブセット)|  
-|-|X12- 拡張文字セット (ASCII のサブセットに加えて ISO8859-1 文字も含まれます)|  
-|-|UTF8/UNICODE|  
+|X12 (HIPAA を含む)|X12-基本文字セット (ASCII のサブセット)|  
+|-|X12-拡張文字セット (ASCII のサブセットも ISO8859 1 文字含まれています)|  
+|-|UTF8 または UNICODE|  
 |EDIFACT|UNOA|  
 |-|UNOB|  
-|-|Unoc-ISO 8859-1: 情報処理 - パート 1: ラテン語アルファベット No. 1|  
-|-|KECA - KS_C_5601-1987 (Windows 949 コード ページ)|  
-|-|UNOX (ISO2022 - JP)|  
-|-|Unoy-utf 8 でエンコードされたデータ**注:** UNOD UNOK の文字からの設定をサポートする UTF8 でエンコードされたデータもサポートされています。|  
+|-|UNOC-ISO 8859-1:情報処理 - Part 1:ラテン語アルファベット No. 1|  
+|-|KECA - KS_C_5601 1987 (Windows 949 コード ページ)|  
+|-|UNOX (ISO2022 – JP)|  
+|-|Unoy-utf 8 でエンコードされたデータ**に注意してください。** UNOD UNOK の文字からは、UTF8 でエンコードされたデータはサポートされてもそのサポートを設定します。|  
   
 ## <a name="setting-the-edi-character-set"></a>EDI 文字セットの設定  
- X12 エンコード インターチェンジの場合、CharacterSet パイプライン プロパティを設定することで、パイプラインの文字セットを設定できます。 詳細については、次を参照してください。 [EDI パイプライン プロパティを設定する](../core/configuring-edi-pipeline-properties.md)です。  
+ X12 エンコード インターチェンジの文字、CharacterSet パイプライン プロパティを設定して、パイプラインのセットを設定できます。 詳細については、次を参照してください。 [EDI パイプライン プロパティを設定する](../core/configuring-edi-pipeline-properties.md)します。  
   
 > [!NOTE]
->  BizTalk Server 管理コンソールの [X12 EDI のプロパティ] ダイアログ ボックスにある [X12 インターチェンジのエンベロープの生成] ページには X12 文字セット コントロールがありますが、このコントロールは [EDI のプロパティ] ダイアログ ボックスでプロパティに入力した値の検証にしか使用できません。  
+>  X12 EDI のプロパティ ダイアログ ボックスは、コントロールは値の検証にのみ使用されますが、BizTalk Server 管理コンソールで、ボックスの x12 インターチェンジのエンベロープの生成 ページで、EDI プロパティに入力した X12 文字セット コントロールがあります。プロパティ ダイアログ ボックス。  
   
- EDIFACT エンコード インターチェンジの場合、パーティの文字セットを設定するには、[UNB セグメントの定義] プロパティ ページで、インターチェンジの受信者であるパーティの UNB1.1 パーティ プロパティを設定します。 受信インターチェンジで使用されるエンコードは、インターチェンジのヘッダーにある UNB1.1 フィールドの値によって指定されます。 詳細については、次を参照してください。[エンベロープの構成 (EDIFACT トランザクション セットの設定)](../core/configuring-envelopes-edifact-transaction-set-settings.md)です。  
+ EDIFACT エンコード インターチェンジの場合、文字の UNB セグメントの定義のプロパティ ページでインターチェンジの受信者としてのパーティの UNB1.1 パーティ プロパティを設定して、パーティの設定を設定できます。 受信したインターチェンジで使用するエンコーディングは、インターチェンジのヘッダーにある UNB1.1 フィールドの値によって決まります。 詳細については、次を参照してください。[エンベロープの構成 (EDIFACT トランザクション セットの設定)](../core/configuring-envelopes-edifact-transaction-set-settings.md)します。  
   
 ## <a name="see-also"></a>参照  
  [EDI パイプラインのプロパティを構成します。](../core/configuring-edi-pipeline-properties.md)   

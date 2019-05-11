@@ -1,5 +1,5 @@
 ---
-title: 作成して、受信確認の処理 |Microsoft ドキュメント
+title: 作成して、受信確認の処理 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,15 +16,15 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 065bbd14f725ed82917dc70393b8b3354bb9b3d2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4d21adbb78cdbcfd0be54d82f6c18ee54a694c97
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22204466"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65255647"
 ---
 # <a name="creating-and-processing-acknowledgments"></a>作成して、受信確認の処理
-次のトピックでは、ACK メッセージのスキーマについては、どのように BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 確認を処理します。  
+次のトピックでは、ACK メッセージのスキーマに関する情報を提供してどのように BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 確認を処理します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
@@ -32,8 +32,8 @@ ms.locfileid: "22204466"
   
 -   [メッセージ受信確認セグメント](../../adapters-and-accelerators/accelerator-hl7/message-acknowledgment-segment.md)  
   
--   [静的な受信確認](../../adapters-and-accelerators/accelerator-hl7/static-acknowledgments.md)  
+-   [静的受信確認](../../adapters-and-accelerators/accelerator-hl7/static-acknowledgments.md)  
   
--   [Ack を受信するための送信ポートの設定](../../adapters-and-accelerators/accelerator-hl7/setting-up-a-send-port-for-receiving-acks.md)  
+-   [ACK を受信するための送信ポートの設定](../../adapters-and-accelerators/accelerator-hl7/setting-up-a-send-port-for-receiving-acks.md)  
   
--   [受信確認エラー条件](../../adapters-and-accelerators/accelerator-hl7/acknowledgment-error-conditions.md)
+-   [受信確認エラーの条件](../../adapters-and-accelerators/accelerator-hl7/acknowledgment-error-conditions.md)

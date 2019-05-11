@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10727 |Microsoft Docs'
+title: シングル サインオン:イベント 10727 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5f25dd71e223452707ff00e23b6a3a3bc797d10f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b4a6dcf108030a1679601e7c7a39a0f09b13d81a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36970547"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65259014"
 ---
-# <a name="single-sign-on-event-10727"></a>シングル サインオン: イベント 10727
+# <a name="single-sign-on-event-10727"></a>シングル サインオン:イベント 10727
 ## <a name="details"></a>詳細  
 
 |                 |                                                                                                                                          |
@@ -28,19 +28,19 @@ ms.locfileid: "36970547"
 | 製品バージョン |                                        [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                                        |
 |    イベント ID     |                                                                  10727                                                                   |
 |  イベント ソース   |                                                                  ENTSSO                                                                  |
-|    コンポーネント    |                                                                   N\A                                                                    |
+|    コンポーネント    |                                                                   該当なし                                                                    |
 |  シンボル名  |                                                      SSO_WARN_REPLAY_RECORD_FAILED                                                       |
-|  メッセージ テキスト   | 保存された外部パスワード変更の再生が失敗しました。%r<br /><br /> アダプター: % 1 %r<br /><br /> ファイル名: % 2 %r<br /><br /> エラー コード: %3 |
+|  メッセージ テキスト   | 再生の保存された外部パスワード変更 failed.%r<br /><br /> アダプター: % 1 %r<br /><br /> ファイル名: % 2 %r<br /><br /> エラー コード: %3 |
 
 ## <a name="explanation"></a>説明  
- この警告は、再生ファイルに記録されたパスワード変更を SSO が再生できなかったことを示します。  
+ この警告は、SSO が再生ファイルに記録されたパスワードの変更を再生することを示します。  
 
- ENTSSO サーバーから SSO データベースに接続できない場合、パスワード同期で再生ファイルが使用されます。 進行ファイルでは、SSO データベースとの接続が再度失われた場合に SSO で再生ファイルをどこまで読み取ることができるかを示します。  
+ 再生ファイルは、ENTSSO サーバーが SSO データベースに接続できない場合、パスワード同期で使用されます。 進行状況ファイルがどこまで方法を示します SSO が SSO データベースと再生ファイルのケースで連絡先が再度失われたを読めるようにします。  
 
 ## <a name="user-action"></a>ユーザーの操作  
- この警告を解決するには、次の操作を行います:   
+ この警告を解決するには、次の操作を行います。  
 
-- 関連するイベントについては、システムおよびアプリケーションのイベント ログを確認します。  
+- システムおよびアプリケーションのイベント ログで関連するイベントを確認します。  
 
   詳細については、次のリソースを参照してください。  
 

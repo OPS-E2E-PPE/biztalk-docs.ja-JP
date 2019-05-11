@@ -12,14 +12,14 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 23bc06cd5f7a7b1e46b34daf5cac2106dcbd543a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b6ce98988b8e52b808a5deaa9a8199bb37deb85e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37002139"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65254342"
 ---
-# <a name="the-ta1-contained-in-interchange-had-the-following-errors"></a>インターチェンジに含まれている TA1 で次のエラーが発生しました
+# <a name="the-ta1-contained-in-interchange-had-the-following-errors"></a>TA1 インターチェンジに含まれる次のエラーが
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                                                  |
@@ -33,7 +33,7 @@ ms.locfileid: "37002139"
 |  メッセージ テキスト   | {0} Id を持つインターチェンジに含まれている TA1 '{1}'、送信者 id'{2}'、受信者 id '{3}' 次のエラーが発生しました。 |
   
 ## <a name="explanation"></a>説明  
- このエラー/警告/情報イベントは、示されたエラー状態のため、受信パイプラインで受信 TA1 受信確認を処理できなかったことを示します。 これは、受信確認が TA1Schema に準拠していないことを示している可能性があります。  
+ このエラー/警告/情報イベントは、受信パイプラインが表示されているエラー状態のため受信 TA1 受信確認を処理できなかったことを示します。 受信確認が TA1Schema に準拠していない可能性があります。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- このエラーを解決するには、受信確認の送信者に対して、受信確認の問題を解決し、受信確認が TA1Schema に準拠していることを確認して、受信確認を再送信するように依頼します。
+ このエラーを解決するには、受信確認が、TA1Schema に準拠していることを確認、受信確認で問題を解決して、受信確認を再送信して、受信確認の送信者を依頼します。

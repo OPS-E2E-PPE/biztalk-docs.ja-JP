@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 11063 |Microsoft Docs'
+title: シングル サインオン:イベント 11063 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5a653b8c5cf27925c65d8922a5a561855fdb6a4c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a5971a2ace4307128d094a6b88c4928616173694
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36975571"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65258681"
 ---
-# <a name="single-sign-on-event-11063"></a>シングル サインオン: イベント 11063
+# <a name="single-sign-on-event-11063"></a>シングル サインオン:イベント 11063
 ## <a name="details"></a>詳細  
   
 |                 |                                                            |
@@ -36,4 +36,4 @@ ms.locfileid: "36975571"
  MIIS コールバックのアクセスが拒否されました。 このエラーの原因として最も可能性が高いのは、ENTSSO システムと MIIS の間での Kerberos 認証の使用の失敗です。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- ENTSSO システムが Kerberos 認証を使用していることを確認します。 詳細については、[SSO のセキュリティに関する推奨事項](../core/sso-security-recommendations.md)を参照してください。
+ ENTSSO システムが Kerberos 認証を使用していることを確認します。 詳細については、次を参照してください。 [SSO のセキュリティに関する推奨事項](../core/sso-security-recommendations.md)します。

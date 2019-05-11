@@ -12,15 +12,15 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0e27f4fae142f4c781f95be148ec80e2dff51383
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 27051cdb72d4cae58edaf5e78d091ea973caf988
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37003099"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65353726"
 ---
 # <a name="creating-maps"></a>マップの作成
-BizTalk マッパーの主要なユーザー インターフェイスは、内のタブに表示される、 [!INCLUDE[btsCoName](../includes/btsconame-md.md)] [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]ウィンドウを編集します。 この表示は、3 つのペインに分割されています。 左ペインでは、送信元スキーマがツリーとして表示されます。 右ペインでは、送信先スキーマがツリーとして表示されます。 中央のペインでは、グリッドが複数のページに表示されます。 送信元スキーマのデータを送信先スキーマにどのようにマップするかを示すには、マップする対象のレコードとフィールドの間に線を引きます。 これらの行が呼び出される*リンク*、し、これはデータのマッピングを指定する最も基本的な方法です。 レコードおよびフィールドをリンクする方法についての詳細については、[マップのリンク](../core/links-in-maps.md)を参照してください。  
+BizTalk マッパーの主要なユーザー インターフェイスは、内のタブに表示される、 [!INCLUDE[btsCoName](../includes/btsconame-md.md)] [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]ウィンドウを編集します。 この表示は、3 つのペインに分割されています。 左ペインでは、送信元スキーマがツリーとして表示されます。 右ペインでは、送信先スキーマがツリーとして表示されます。 中央のペインでは、グリッドが複数のページに表示されます。 送信元スキーマのデータを送信先スキーマにどのようにマップするかを示すには、マップする対象のレコードとフィールドの間に線を引きます。 これらの行が呼び出される*リンク*、し、これはデータのマッピングを指定する最も基本的な方法です。 レコードおよびフィールドをリンクする方法についての詳細については、次を参照してください。[マップのリンク](../core/links-in-maps.md)します。  
   
  高度なマッピング手法を実装する場合は Functoid を使用できます。 Functoid は [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] ツールボックス内の BizTalk マッパー タブで使用できるツールです。 これを使用すると、次のような複雑な操作を実行するマップを作成できます。  
   
@@ -30,7 +30,7 @@ BizTalk マッパーの主要なユーザー インターフェイスは、内�
   
 - ビジネス ニーズに応じて、インスタンス データを操作するカスタム スクリプトを記述する。  
   
-  Functoid の詳細については、[マップの Functoid](../core/functoids-in-maps.md)を参照してください。  
+  Functoid の詳細については、次を参照してください。[マップの Functoid](../core/functoids-in-maps.md)します。  
   
   BizTalk マッパーは、単純な親子関係から、レコードと階層の詳細で複雑なルーピングまで、さまざまなマッピング シナリオをサポートできます。 マップを作成するときは、次の点を考慮してください。  
   

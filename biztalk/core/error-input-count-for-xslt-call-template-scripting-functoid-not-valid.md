@@ -1,5 +1,5 @@
 ---
-title: エラー - XSLT 呼び出しテンプレート スクリプト Functoid の無効の入力数が |Microsoft ドキュメント
+title: エラー - XSLT 呼び出しテンプレート スクリプト Functoid の無効の入力数が |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: aa7a67192a73801155e64922f805f1164e2d7b4a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d22de40e0391e14ecded5099bb3af4abd9976aa3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22241034"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65348109"
 ---
 # <a name="error---input-count-for-xslt-call-template-scripting-functoid-not-valid"></a>エラー - XSLT 呼び出しテンプレート スクリプト Functoid の無効の入力数
 **エラー コード**  
@@ -28,8 +28,8 @@ ms.locfileid: "22241034"
   
  **説明**  
   
- 関連する入力パラメーター数**スクリプト**functoid は、インライン XSLT 呼び出しテンプレートを使用するように構成が、そのテンプレートで想定されているパラメーターの数と一致しません。  
+ 関連する入力パラメーター数**Scripting**インライン XSLT 呼び出しテンプレートを使用するように構成されている functoid が、そのテンプレートで想定されているパラメーターの数と一致しません。  
   
  **ユーザーの操作**  
   
- これに渡す入力パラメーターの数を確認してください**スクリプト**functoid がインライン XSLT 呼び出しテンプレートがこの構成で想定されているパラメーターの数と一致する**スクリプト**functoid です。
+ この入力パラメーターの数を必ず**Scripting** functoid がインライン XSLT 呼び出しテンプレートがこの構成で想定されているパラメーターの数と一致する**Scripting** functoid。

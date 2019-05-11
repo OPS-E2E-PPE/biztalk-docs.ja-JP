@@ -1,5 +1,5 @@
 ---
-title: トラブルシューティング、Adapter2 |Microsoft ドキュメント
+title: トラブルシューティング、Adapter2 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,12 +17,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 991278813d2183795239d1a75c08e474b2f8159a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 556cf4eea03af072e5b42a5748482c4e60a5a5d0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22279194"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65306400"
 ---
 # <a name="troubleshooting-the-adapter"></a>アダプターのトラブルシューティング
 このトピックでは、Microsoft BizTalk Adapter for PeopleSoft Enterprise の使用中に発生する可能性がある問題の特定と解決に役立つ情報を提供します。  

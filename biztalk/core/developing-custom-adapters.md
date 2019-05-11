@@ -12,12 +12,12 @@ caps.latest.revision: 29
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 60f901800cb1d7426a364a87b0f3f915d8436244
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 85f0ea739e8ddfe4ee4294f3db33187fecb811b9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37022560"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65351121"
 ---
 # <a name="developing-custom-adapters"></a>カスタム アダプターの開発
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、外部のシステム、アプリケーション、およびエンティティとメッセージを交換するために、アダプターの概念を使用します。 アダプターは、COM または[!INCLUDE[btsDotNetFramework](../includes/btsdotnetframework-md.md)]とビジネスの最後のメッセージを転送するコンポーネント。 さまざまな通信プロトコルを使用して (ファイル システム、データベース、カスタム ビジネス アプリケーションなど) のポイント。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] さまざまなプロトコルをサポートするネイティブ アダプターを提供します。 たとえば、次のオブジェクトにアクセスできます。  
@@ -28,7 +28,7 @@ ms.locfileid: "37022560"
   
 - [!INCLUDE[btsWinSharePointSvcsNoVersion](../includes/btswinsharepointsvcsnoversion-md.md)] のアダプター  
   
-  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] はメッセージを特定のカスタム アプリケーションに送信したり、ネイティブ アダプターが存在しないプロトコルを使用する必要がある場合があります。 サードパーティの企業は、追加のプロトコルをサポートするアダプターを作成しています。 カスタム アダプターの作成を決定する前に、プロトコルに対するアダプターが存在するかどうかを確認することをお勧めします。 アダプターと関連付けられているベンダーの一覧については、[ http://go.microsoft.com/fwlink/?LinkId=47140](http://go.microsoft.com/fwlink/?LinkId=47140)を参照してください。 通信要件をサポートするためのアダプターが見つからない場合は、独自のカスタム アダプターを開発できます。  
+  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] はメッセージを特定のカスタム アプリケーションに送信したり、ネイティブ アダプターが存在しないプロトコルを使用する必要がある場合があります。 サードパーティの企業は、追加のプロトコルをサポートするアダプターを作成しています。 カスタム アダプターの作成を決定する前に、プロトコルに対するアダプターが存在するかどうかを確認することをお勧めします。 アダプターと関連付けられているベンダーの一覧については、次を参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=47140](http://go.microsoft.com/fwlink/?LinkId=47140)します。 通信要件をサポートするためのアダプターが見つからない場合は、独自のカスタム アダプターを開発できます。  
   
   カスタム アダプターの作成は、難しい作業になる場合があります。 このプロセスを簡略化するために、マイクロソフトはアダプター フレームワークと呼ばれる基礎を開発しました。 このフレームワークを、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] SDK のサンプルのアダプター ソース コードと共に開発の基礎として使用できます。  
   

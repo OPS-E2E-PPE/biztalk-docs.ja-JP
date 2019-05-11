@@ -17,17 +17,17 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f187572f671328c77576749b1bf8f3564f025005
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 312d5c295981bf7af5ec4ed45140fa6c915a7ae6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36979323"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65337966"
 ---
 # <a name="how-to-enable-and-disable-host-initiated-sso"></a>側開始 SSO を有効にし、ホストを無効にする方法
-既定では、ホスト側開始シングル サインオンはシングル サインオン システムで有効になっていないため、SSO 管理者が有効化する必要があります。  
+既定ではホスト側開始シングル サインオン、シングル サインオン システムを有効にしないと、SSO 管理者によって有効にする必要があります。  
   
-### <a name="to-enable-host-initiated-sso-using-the-mmc-snap-in"></a>MMC スナップインを使用してホスト側開始 SSO を有効にするには  
+### <a name="to-enable-host-initiated-sso-using-the-mmc-snap-in"></a>側開始 SSO を MMC スナップインを使用してホストを有効にします。  
   
 1.  **開始** メニューのをクリックして**プログラム**、 をクリックして**Microsoft エンタープライズ シングル サインオン**、 をクリックし、 **SSO 管理**。  
   
@@ -39,7 +39,7 @@ ms.locfileid: "36979323"
   
 5.  選択、**有効にするホスト側開始 SSO**ボックスし、をクリックして**OK**します。  
   
-### <a name="to-enable-host-initiated-sso-using-the-command-line"></a>コマンド ラインを使用してホスト側開始 SSO を有効にするには  
+### <a name="to-enable-host-initiated-sso-using-the-command-line"></a>側開始 SSO をコマンドラインを使用してホストを有効にします。  
   
 1. **[スタート]** メニューの **[ファイル名を指定して実行]** をクリックします。  
   
@@ -52,9 +52,9 @@ ms.locfileid: "36979323"
    > [!NOTE]
    >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  
   
-   SSO を無効にすると SSO システム全体に適用されるので、ホスト側開始 SSO に関連するすべての操作が無効になります。  
+   SSO を無効にすると、SSO システム全体に適用され、ホスト側開始 SSO に関連するすべての操作がオフになります。  
   
-#### <a name="to-disable-host-initiated-sso-using-the-mmc-snap-in"></a>MMC スナップインを使用してホスト側開始 SSO を無効にするには  
+#### <a name="to-disable-host-initiated-sso-using-the-mmc-snap-in"></a>側開始 SSO を MMC スナップインを使用してホストを無効にします。  
   
 1.  **開始** メニューのをクリックして**プログラム**、 をクリックして**Microsoft エンタープライズ シングル サインオン**、 をクリックし、 **SSO 管理**。  
   
@@ -66,7 +66,7 @@ ms.locfileid: "36979323"
   
 5.  クリア、**有効にするホスト側開始 SSO**ボックスし、をクリックして**OK**します。  
   
-#### <a name="to-disable-host-initiated-sso-using-the-command-line"></a>コマンド ラインを使用してホスト側開始 SSO を無効にするには  
+#### <a name="to-disable-host-initiated-sso-using-the-command-line"></a>側開始 SSO をコマンドラインを使用してホストを無効にします。  
   
 1.  **[スタート]** メニューの **[ファイル名を指定して実行]** をクリックします。  
   

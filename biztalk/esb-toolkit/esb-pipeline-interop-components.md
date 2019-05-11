@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 794ce6407d10fc820444384550357f10d24f7723
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1dc0693ca97928b4b5977a9969da667423d13ce1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37024246"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65306098"
 ---
 # <a name="esb-pipeline-interop-components"></a>ESB パイプライン相互運用機能コンポーネント
 [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]サポート コンポーネントと、次を含むサービスを提供します。  
@@ -26,4 +26,4 @@ ms.locfileid: "37024246"
   
 - **Namespace パイプライン コンポーネント。** これらのコンポーネントでは、追加したり、名前空間で XML メッセージの内容を削除することができます。 これにより、アプリケーションを競合する名前空間を修復またはメッセージ ボックス データベースとアプリケーションのオーケストレーション内で名前空間の競合を防ぐために不足している名前空間を追加できます。 コンポーネントでは、BizTalk Server 外部の発行システムを変更することがなく、POX (Plain Old XML) を使用することもできます。  
   
-  ESB パイプライン コンポーネントの詳細については、[パイプライン サポート コンポーネントを使用して](../esb-toolkit/using-the-pipeline-support-components.md)を参照してください。
+  ESB パイプライン コンポーネントの詳細については、次を参照してください。[パイプライン サポート コンポーネントを使用して](../esb-toolkit/using-the-pipeline-support-components.md)します。

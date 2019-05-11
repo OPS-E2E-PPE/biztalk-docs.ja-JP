@@ -12,38 +12,38 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2051cff7fcffc0876bfc45ad59578d08d538265f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7bd63c7ad8c121cbbaf086be4bff9dd1fbc1becc
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37002939"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65244360"
 ---
 # <a name="soap-send-adapter"></a>SOAP 送信アダプタ
-SOAP 送信アダプタは、Web サービスを呼び出すときに使用します。 SOAP 送信アダプタは、BizTalk メッセージ オブジェクトのメッセージ コンテキストを読み取ってプロキシ名を取得し、関連付けられた外部の Web サービス プロキシを呼び出します。  
+Web サービスを呼び出すには、SOAP 送信アダプタを使用します。 SOAP 送信アダプタは、メッセージ コンテキストをプロキシの名前を取得する BizTalk メッセージ オブジェクトを読み取って、関連付けられている外部 Web サービス プロキシを呼び出します。  
   
-## <a name="client-authentication-for-the-soap-send-adapter"></a>SOAP 送信アダプタのクライアント認証  
- SOAP 送信アダプタは、送信先のサーバーでの認証に、次のいずれかの認証の種類を使用します。  
+## <a name="client-authentication-for-the-soap-send-adapter"></a>クライアント認証、soap 送信アダプター  
+ SOAP 送信アダプタは、次の認証の種類のいずれかを使用して、移行先サーバーで認証を行います。  
   
 - **匿名です。** 既定の設定です。  
   
 - **基本的な。** SOAP 接続で、プレーンテキストでユーザー名とパスワードを送信します。  
   
-- **ダイジェスト。** SOAP 接続で、暗号化形式でユーザー名とパスワードを送信します。  
+- **ダイジェスト。** SOAP 接続では、暗号化された形式でユーザー名とパスワードを送信します。  
   
 - **Kerberos または NTLM。** ユーザー名もパスワードも、SOAP 接続経由では送信されません。 SOAP アダプタは常に、SOAP 送信アダプタがこの認証の種類に対して実行するプロセスの資格情報を使用します。  
   
-  また、SOAP 送信アダプタでは、Web サーバーでクライアントの Secure Sockets Layer (SSL) 証明書を必要としているか受け付ける場合に、Web サーバーに SSL 証明書を提供できます。  
+  さらに、SOAP 送信アダプタできるクライアント、Web サーバーに Secure Sockets Layer (SSL) 証明書、サーバーが必要ですか受け付ける場合。  
   
-  SOAP 送信アダプタへの要求にメッセージを受信すると、エンタープライズ シングル サインオン (SSO) を有効にした場合、 **SSOTicket**プロパティ、アダプターは、検証し、チケットを引き換えるには、SSO サーバーに接続します。 チケットの検証後、チケットは解読され、関連システムの資格情報が資格情報ストアから取得されます。 その後、SOAP アダプタが資格情報を使用して関連システムに接続し、SOAP 要求が処理されます。  
+  SOAP 送信アダプタへの要求にメッセージを受信すると、エンタープライズ シングル サインオン (SSO) を有効にした場合、 **SSOTicket**プロパティ、アダプターは、検証し、チケットを引き換えるには、SSO サーバーに接続します。 SOAP アダプターが、チケットを検証した後は復号化し、関連システムの資格情報は、資格情報ストアから取得されます。 SOAP アダプターは、関連システムに接続する資格情報を使用し、SOAP 要求が処理されます。  
   
-## <a name="client-certificates-for-the-soap-send-adapter"></a>SOAP 送信アダプタのクライアント証明書  
- SOAP 送信アダプタでは、クライアント証明書を受け付けるか必要とするサーバー間に、セキュリティで保護された接続を確立できます。 クライアント証明書を指定した場合、SOAP 送信アダプタではクライアント証明書を必要とするか受け付けるサーバーに接続するときに、この証明書を使用します。 クライアント証明書を指定しなかった場合に、送信先のサーバーでクライアント証明書が要求されると、SOAP 送信アダプタはメッセージの送信に失敗し、標準の再試行ロジックが実行されます。  
+## <a name="client-certificates-for-the-soap-send-adapter"></a>クライアント証明書を SOAP 送信アダプター  
+ SOAP 送信アダプタを受け付けるか、クライアント証明書を必要とするサーバーをセキュリティで保護された接続を確立できます。 クライアント証明書を指定する場合、SOAP 送信アダプタが使用、証明書を必要とするか、クライアント証明書をそのまま使用するサーバーに接続するときにします。 クライアント証明書を指定しない、移行先サーバーにクライアント証明書が必要な場合は、SOAP 送信アダプターがメッセージの送信に失敗して、標準の再試行ロジックに従っています。  
   
- SOAP 送信アダプターでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] プロセスの実行に使用されているアカウントの個人用ストアにあるクライアント証明書を使用します。 SOAP アダプタは拇印によって証明書を特定します。 SOAP 送信アダプタによる証明書の読み込みが何らかの理由で失敗した場合、送信中だったメッセージは中断されます。  
+ SOAP 送信アダプタのクライアント証明書を使用するアカウントの個人用ストア、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]プロセスが実行されています。 SOAP アダプターでは、その拇印によって証明書を指定します。 SOAP 送信アダプタは、何らかの理由で証明書の読み込みに失敗した場合、送信中だったメッセージは中断されます。  
   
-## <a name="negative-acknowledgement-nack-messages-generated-for-failed-transmissions-by-the-http-or-soap-adapters"></a>HTTP アダプタまたは SOAP アダプタによる送信が失敗した場合に生成される否定受信確認 (NACK) メッセージ  
- 配信通知を有効にしている場合、メッセージが正常に送信されると、BizTalk メッセージング エンジンからメッセージ ボックス データベースに、関連付けられた受信確認 (ACK) メッセージがパブリッシュされます。 同様に、BizTalk メッセージング エンジンによってメッセージが中断されたり、オーケストレーション エンジンによってオーケストレーションが中断された場合、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は関連付けられた否定受信確認 (NACK) メッセージを MessageBox にパブリッシュします。 NACK メッセージには、コンテキスト プロパティおよび SOAP エラーで構成されるメッセージのボディ部が含まれます。 SOAP エラーを含む場合は、HTTP または SOAP アダプターの送信に失敗したためには、NACK メッセージが生成、**ヘッダー**要素と**本文**先 Web からの応答の要素サーバー。 SOAP 送信が失敗した場合に生成される NACK の SOAP エラーの例を次に示します。  
+## <a name="negative-acknowledgement-nack-messages-generated-for-failed-transmissions-by-the-http-or-soap-adapters"></a>HTTP アダプタまたは SOAP アダプタによる送信の失敗の生成される否定受信確認 (NACK) メッセージ  
+ メッセージの送信が正常にとき、BizTalk メッセージング エンジンは配信通知が有効になっている場合、メッセージ ボックス データベースに関連付けられた受信確認 (ACK) メッセージを公開します。 同様に、BizTalk メッセージング エンジンによってメッセージが中断またはと、オーケストレーション エンジンによってオーケストレーションが中断された[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]メッセージ ボックスに関連付けられた否定受信確認 (NACK) メッセージがパブリッシュされます。 NACK メッセージには、コンテキスト プロパティと SOAP エラーで構成されるメッセージのボディ部が含まれています。 SOAP エラーを含む場合は、HTTP または SOAP アダプターの送信に失敗したためには、NACK メッセージが生成、**ヘッダー**要素と**本文**先 Web からの応答の要素サーバー。 SOAP 送信に失敗したに対して生成される NACK の SOAP エラーの例を次に示します。  
   
 ```  
 <SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/" SOAP:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">  
@@ -75,7 +75,7 @@ SOAP 送信アダプタは、Web サービスを呼び出すときに使用し�
 >  **ヘッダー**要素と**本文**要素は 48 KB に制限されています。 **ヘッダー**要素は、制限を超えないサイズの最も近いの完全なヘッダー値のペアに丸められます。 **本文**要素は 48 KB に切り捨てられます。  
   
 > [!NOTE]
->  NACK メッセージと ACK メッセージは、それらのメッセージに一致するサブスクリプションがなければ破棄されます。 これらのメッセージがメッセージング エンジンによって中断されることはありません。  
+>  NACK メッセージと ACK メッセージは、それらのメッセージに一致するサブスクリプションがなければ破棄されます。 これらのメッセージはメッセージング エンジンによって中断されません。  
   
  NACK メッセージをサブスクライブするには、次のいずれかの操作を実行します。  
   

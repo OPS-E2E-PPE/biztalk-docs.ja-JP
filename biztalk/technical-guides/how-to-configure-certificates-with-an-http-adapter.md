@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 520204a6c0f411f8f622838b846a3af41b6c60a1
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 26c5eb628f62d54321b99be2f8b8f6c712ae30a9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37007099"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65253370"
 ---
 # <a name="how-to-configure-certificates-with-an-http-adapter"></a>HTTP アダプターを使用した証明書を構成する方法
 HTTP 送信アダプターを受け付けるか、クライアント証明書を必要とするサーバーとの接続をセキュリティで保護できます。 クライアント証明書を指定した場合、HTTP 送信アダプタではクライアント証明書を必要とするか受け付けるサーバーに接続するときに、この証明書を使用します。 クライアント証明書が指定されていない、移行先サーバーにクライアント証明書が必要な場合は、送信者が認証されていないと、HTTP 送信アダプターがメッセージの送信に失敗して、標準の再試行ロジックに従います。  

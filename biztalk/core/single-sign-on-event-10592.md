@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10592 |Microsoft Docs'
+title: シングル サインオン:イベント 10592 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b9fdf7259de2217c2e6cd616f58b3b1118bf991c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 0bfd622db90bbafcb4d2af1b45ae2b2286e3345c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37017258"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65270949"
 ---
-# <a name="single-sign-on-event-10592"></a>シングル サインオン: イベント 10592
+# <a name="single-sign-on-event-10592"></a>シングル サインオン:イベント 10592
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                                                                                    |
@@ -30,10 +30,10 @@ ms.locfileid: "37017258"
 |  イベント ソース   |                                                                       ENTSSO                                                                       |
 |    コンポーネント    |                                                                        なし                                                                         |
 |  シンボル名  |                                                           SSO_WARN_TICKET_DECRYPT_FAILED                                                           |
-|  メッセージ テキスト   | チケットを暗号化解除できませんでした。 チケットが有効ではないか、期限切れの可能性があります。%r<br /><br /> アプリケーション名: %1 %r<br /><br /> エラー コード: %2 |
+|  メッセージ テキスト   | チケットの暗号化を解除できませんでした。 チケットが無効か expired.%r する可能性があります。<br /><br /> アプリケーション名: %1 %r<br /><br /> エラー コード: %2 |
   
 ## <a name="explanation"></a>説明  
- チケットが有効ではないか、期限切れの可能性があります。  
+ チケットが無効であるか、期限が切れている可能性があります。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- 使用するチケットが有効で、期限が切れていないことを確認します。
+ 使用するチケットが有効でありが切れていないことを確認します。

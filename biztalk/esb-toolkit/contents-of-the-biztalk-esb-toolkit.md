@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: af25a536152544f26d55eebab1d11ee76493187c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 10b511339d97d5708b60b90027fb80fbb3651341
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37009435"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65302179"
 ---
 # <a name="contents-of-the-biztalk-esb-toolkit"></a>BizTalk ESB Toolkit の内容
 [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]アーキテクチャに関するガイダンス、パターンとプラクティス、および Microsoft プラットフォームでのエンタープライズ規模のソリューションの開発を簡略化の BizTalk Server と .NET Framework のコンポーネントのコレクションを提供します。 このツールキットには、開発者が既存のメッセージングの拡張機能と統合ソリューションも提供します。 [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]をサポートし、メッセージ ベースの動的なエンタープライズ アプリケーションを構築するプロセスを簡素化する疎結合メッセージング環境を実装するコンポーネントの相互運用のコレクションで構成されます。  

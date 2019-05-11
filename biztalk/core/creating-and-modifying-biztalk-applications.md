@@ -1,5 +1,5 @@
 ---
-title: 作成して、BizTalk アプリケーションの変更 |Microsoft ドキュメント
+title: 作成して、BizTalk アプリケーションの変更 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -19,17 +19,17 @@ caps.latest.revision: 22
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5daa9630fb8ad742d34421478a19081ad5c83f50
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 79724d74baf3a5cddee910e7144c06c94680ac17
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22238146"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65353784"
 ---
-# <a name="creating-and-modifying-biztalk-applications"></a>BizTalk アプリケーションの作成と変更
-ここでは、BizTalk Server 管理コンソールまたは BTSTask コマンド ライン ツールを使用して、BizTalk アプリケーションを作成、構成、および変更する方法について説明します。  
+# <a name="creating-and-modifying-biztalk-applications"></a>作成して、BizTalk アプリケーションの変更
+このセクションでは、BizTalk Server 管理コンソールまたは BTSTask コマンド ライン ツールを使用して、作成、構成、および BizTalk アプリケーションを変更する方法について説明します。  
   
- 作成に関する背景情報については、管理、配置、および BizTalk アプリケーションの更新を参照してください[Understanding BizTalk アプリケーションの展開と管理](../core/understanding-biztalk-application-deployment-and-management.md)です。 それらのプロパティの編集など、アイテムを管理する方法についてを参照してください。[成果物の管理](../core/managing-artifacts.md)です。 BizTalk アプリケーションの展開方法の詳細については、次を参照してください。 [BizTalk アプリケーションの配置](../core/deploying-biztalk-applications.md)です。  
+ 作成に関する背景情報は、管理、展開、および BizTalk のアプリケーションの更新が参照[Understanding BizTalk アプリケーションの展開と管理](../core/understanding-biztalk-application-deployment-and-management.md)します。 それらのプロパティの編集など、アイテムの管理については、次を参照してください。[管理成果物](../core/managing-artifacts.md)します。 BizTalk アプリケーションの展開方法の詳細については、次を参照してください。 [BizTalk アプリケーションの配置](../core/deploying-biztalk-applications.md)します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

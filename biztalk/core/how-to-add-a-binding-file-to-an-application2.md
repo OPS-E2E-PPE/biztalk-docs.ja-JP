@@ -13,12 +13,12 @@ caps.latest.revision: 22
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 772bd4d90087f681ebd6a7934fb56caddb986e91
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 302bb98f93f4b0e165d04db1210875bd7737ed28
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37010619"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65344087"
 ---
 # <a name="add-a-binding-file-to-an-application"></a>バインド ファイルをアプリケーションに追加します。
 
@@ -45,7 +45,7 @@ BizTalk アプリケーションにバインド ファイルを追加するの�
   
 3. 明示的に追加されたバインドのうち、対象の (アプリケーションのインポート用に選択された展開環境と一致する) 展開環境が関連付けられているもの。 この一連のバインド内での適用順序は特に決まっていません。  
   
-   アプリケーションのインポートとバインドの適用の詳細については、[BizTalk アプリケーションをインポート](../core/how-to-import-a-biztalk-application.md)を参照してください。  
+   アプリケーションのインポートとバインドの適用の詳細については、次を参照してください。 [BizTalk アプリケーションをインポート](../core/how-to-import-a-biztalk-application.md)します。  
   
 ## <a name="prerequisites"></a>前提条件  
 BizTalk Server 管理者グループのメンバーであるアカウントでサインインします。 [展開して、BizTalk アプリケーションの管理に必要なアクセス許可](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)について詳しく説明します。
@@ -86,14 +86,14 @@ BizTalk Server 管理者グループのメンバーであるアカウントで�
    |パラメーター|値|  
    |---------------|-----------|  
    |**/ApplicationName**|バインド ファイルを追加する BizTalk アプリケーションの名前。 アプリケーション名が指定されなかった場合、既定の BizTalk アプリケーションが使用されます。 名前にスペースが含まれている場合は、二重引用符 (") で囲む必要があります。|  
-   |**/型**|**[System.biztalk:biztalkbinding]** (この値小文字は区別されません)。|  
-   |**/上書き**|既存のバインド ファイルを更新するためのオプション。 いない場合は、指定、およびバインド ファイルを追加するファイルと同じファイル名を持つアプリケーションに既に存在、AddResource 操作は失敗します。|  
+   |**/Type**|**[System.biztalk:biztalkbinding]** (この値小文字は区別されません)。|  
+   |**/Overwrite**|既存のバインド ファイルを更新するためのオプション。 いない場合は、指定、およびバインド ファイルを追加するファイルと同じファイル名を持つアプリケーションに既に存在、AddResource 操作は失敗します。|  
    |**/ソース**|バインド ファイルの完全パス (ファイル名を含む)。 パスにスペースが含まれている場合は、二重引用符 (") で囲む必要があります。|  
-   |**/Property:TargetEnvironment =**|対象の展開環境を指定する文字列。 "Production" など、任意の文字列を使用できます。 例: **/Property:TargetEnvironment"Production"を =**<br /><br /> 値を指定しない場合\<既定\>が自動的に適用します。 値は大文字小文字を区別します。 値にスペースが含まれる場合は、二重引用符 (") で囲む必要があります。 環境値の最大長は 128 文字です。|  
+   |**/Property:TargetEnvironment=**|対象の展開環境を指定する文字列。 "Production" など、任意の文字列を使用できます。 例: **/Property:TargetEnvironment"Production"を =**<br /><br /> 値を指定しない場合\<既定\>が自動的に適用します。 値は大文字小文字を区別します。 値にスペースが含まれる場合は、二重引用符 (") で囲む必要があります。 環境値の最大長は 128 文字です。|  
    |**/サーバー**|BizTalk 管理データベースをホストする SQL Server インスタンスの名前。ServerName\InstanceName,Port の形式で指定します。<br /><br /> インスタンス名の指定は、そのインスタンス名がサーバー名と異なる場合にのみ必要です。 ポートの指定は、SQL Server で使用するポート番号が既定値 (1433) と異なる場合にのみ必要です。<br /><br /> 例 :<br /><br /> Server=MyServer<br /><br /> Server=MyServer\MySQLServer,1533<br /><br /> 指定しなかった場合、ローカル コンピューターで実行されている SQL Server インスタンスの名前が使用されます。|  
-   |**/データベース**|BizTalk 管理データベースの名前。 指定しなかった場合、SQL Server のローカル インスタンスで実行されている BizTalk 管理データベースが使用されます。|  
+   |**/Database**|BizTalk 管理データベースの名前。 指定しなかった場合、SQL Server のローカル インスタンスで実行されている BizTalk 管理データベースが使用されます。|  
   
 ## <a name="see-also"></a>参照  
  [.NET アセンブリ、証明書、およびその他のリソースを管理します。](../core/managing-net-assemblies-certificates-and-other-resources.md)   
- [AddResource コマンド: BizTalk バインディング](../core/addresource-command-biztalk-binding.md)   
+ [AddResource コマンド:BizTalk バインド](../core/addresource-command-biztalk-binding.md)   
  [BizTalk アプリケーションの作成と変更](../core/creating-and-modifying-biztalk-applications.md)

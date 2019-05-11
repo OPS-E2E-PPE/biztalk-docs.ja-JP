@@ -16,12 +16,12 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6bdd26a8fe5f90b1fd12937d19483e25f1a1e19f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 634d007e2545dfd89457239fe4d05f86a1c90aeb
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37011291"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65246382"
 ---
 # <a name="xml-disassembler-pipeline-component"></a>XML 逆アセンブラー パイプライン コンポーネント
 XML 逆アセンブラー パイプライン コンポーネントは、XML 解析および XML 逆アセンブラーを 1 つのコンポーネントに組み込んでいます。 主要な機能を次に示します。  
@@ -43,7 +43,7 @@ XML 逆アセンブラー パイプライン コンポーネントは、XML 解�
 > [!NOTE]
 >  XML 逆アセンブラー パイプライン コンポーネントは、メッセージ ストアに達する前に、すべての日時プロパティを UTC に強制的に変換します。 BizTalk Server は、内部的に SQL datetime (タイム ゾーンの情報は含まれない) を使用します。 オーケストレーションで日時プロパティを生成し、生成したプロパティを後続のメッセージと相互に関連付けようとすると、正しく機能しない場合があります。XML 逆アセンブラー パイプライン コンポーネントにより応答時に日時プロパティが UTC に変換され、Microsoft SQL Server で元の日時プロパティと応答時間フィールドを同一のものとして認識できなくなるためです。 同様に、メッセージ イベントおよびサービス インスタンスの追跡データの表示で不整合が発生する場合があります。  
   
- XML 逆アセンブラー パイプライン コンポーネントの構成方法の詳細については、[XML 逆アセンブラー パイプライン コンポーネントを構成する方法](../core/how-to-configure-the-xml-disassembler-pipeline-component.md)を参照してください。  
+ XML 逆アセンブラー パイプライン コンポーネントの構成方法の詳細については、次を参照してください。 [XML 逆アセンブラー パイプライン コンポーネントを構成する方法](../core/how-to-configure-the-xml-disassembler-pipeline-component.md)します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
@@ -57,4 +57,4 @@ XML 逆アセンブラー パイプライン コンポーネントは、XML 解�
   
 -   [XML 逆アセンブラー パイプライン コンポーネントでの文字エンコード](../core/character-encoding-in-xml-disassembler-pipeline-component.md)  
   
--   [チュートリアル: XML エンベロープの使用 (基本)](../core/walkthrough-using-xml-envelopes-basic.md)
+-   [チュートリアル: XML エンベロープ (Basic) の使用](../core/walkthrough-using-xml-envelopes-basic.md)

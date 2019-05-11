@@ -1,5 +1,5 @@
 ---
-title: WCF-Custom アダプタについて | Microsoft Docs
+title: Wcf-custom アダプターとは何ですか。 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,28 +14,28 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5e090f82bc43d96dc14295af2fac2807cf1fd137
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: eba1882957ed6974420d4827a43f90e1ef7ecba9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22288898"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65242760"
 ---
-# <a name="what-is-the-wcf-custom-adapter"></a>WCF-Custom アダプタについて
-WCF-Custom アダプタを使用すると、BizTalk Server で WCF 拡張機能コンポーネントを使用できるようになります。 このアダプタによって、WCF フレームワークの完全な柔軟性が有効になります。 これにより、ユーザーが、受信場所や送信ポートの WCF バインドを選択して構成できるようになります。 また、エンドポイント動作やセキュリティ設定を指定することもできます。  
+# <a name="what-is-the-wcf-custom-adapter"></a>Wcf-custom アダプターとは何ですか。
+Wcf-custom アダプターは BizTalk Server で WCF 拡張機能コンポーネントの使用を有効にするために使用します。 アダプターは、WCF フレームワークの完全な柔軟性を使用します。 受信場所の WCF バインドを構成および送信ポートを選択することができます。 また、エンドポイント動作やセキュリティ設定を設定することもできます。  
   
- WCF-Custom アダプタは、2 つのアダプタ (受信アダプタと送信アダプタ) で構成されます。  
+ Wcf-custom アダプターは、2 つのアダプターで構成されます-受信アダプタと送信アダプター。  
   
  **Wcf-custom 受信アダプター**  
   
- この WCF-Custom 受信アダプタは、受信場所の [トランスポートのプロパティ] ダイアログ ボックスで選択および構成したバインド、サービス動作、エンドポイント動作、セキュリティ メカニズム、および受信メッセージ本文のソースを使用して WCF サービス要求を受信するために使用されます。 WCF-Custom 受信アダプタを使用する受信場所は、一方向または要求 - 応答 (双方向) として構成できます。  
+ WCF カスタムを使用する受信アダプターは、バインド、サービス動作、エンドポイントの動作、セキュリティ メカニズムを介して WCF サービス要求を受信して、本文の受信メッセージのソースを選択して、トランスポート プロパティ ダイアログで構成します。受信場所。 Wcf-custom 受信アダプタを使用する受信場所は、一方向として構成できますまたは要求-応答 (双方向)。  
   
  **Wcf-custom 送信アダプタ**  
   
- この WCF-Custom 受信アダプタは、型宣言が不要なコントラクトと、選択および構成したバインド、サービス動作、エンドポイント動作、セキュリティ メカニズム、および送信メッセージ本文のソースを使用して WCF サービスを呼び出すために使用されます。  
+ Wcf-custom 送信アダプターを使用して、バインド、サービス動作、エンドポイントの動作、セキュリティ メカニズム、および選択および構成する送信メッセージの本文のソースを型宣言不要なコントラクトを介して WCF サービスを呼び出します。  
   
- WCF の詳細については、受信し送信アダプターを参照してください[WCF アダプタは何ですか?](../core/what-are-the-wcf-adapters.md)です。  
+ WCF の詳細については、受信し送信アダプターを参照してください[WCF アダプタは何ですか?](../core/what-are-the-wcf-adapters.md)します。  
   
 ## <a name="see-also"></a>参照  
- [WCF カスタム アダプターを構成します。](../core/configuring-the-wcf-custom-adapter.md)   
- [WCF アダプタ](../core/wcf-adapters.md)
+ [Wcf-custom アダプターを構成します。](../core/configuring-the-wcf-custom-adapter.md)   
+ [WCF アダプター](../core/wcf-adapters.md)

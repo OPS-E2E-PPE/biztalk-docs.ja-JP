@@ -1,5 +1,5 @@
 ---
-title: SOAP アダプター構成プロパティ |Microsoft ドキュメント
+title: SOAP アダプター構成プロパティ |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -19,21 +19,21 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f52fde9d80717d192d3a5b90548ccc01e87d2044
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: fe4ef2a17df290c78c821d85995d450e8af90ca9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22279818"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65314033"
 ---
 # <a name="soap-adapter-configuration-properties"></a>SOAP アダプター構成プロパティ
-次の表に、SOAP アダプターの受信場所に設定できる構成プロパティを示します。  
+次の表 SOAP アダプターの設定できる構成プロパティには、場所が表示されます。  
   
-|プロパティ名|型|Description|制限|コメント|  
+|プロパティ名|型|説明|制限|コメント|  
 |-------------------|----------|-----------------|------------------|--------------|  
-|UseSSO|VT_BOOL|シングル サインオンを使用するかどうかを指定します。|-有効な値は次のとおりです。<br />-1 (true)<br />-0 (false)|既定値は 0 (false) です。|  
+|UseSSO|VT_BOOL|シングル サインオンを使用するかどうかを指定します。|-有効な値は次のとおりです。<br />-   -1 (true)<br />-0 (false)|既定値は 0 (false です)。|  
   
- 次のコード例は、プロパティの設定に使用する XML 文字列の形式を示しています。  
+ 次のコードでは、プロパティの設定に使用する XML 文字列の形式を示します。  
   
 ```  
 <CustomProps>  
@@ -41,28 +41,28 @@ ms.locfileid: "22279818"
 </CustomProps>  
 ```  
   
- 次の表に、SOAP アダプターの送信ポートに設定できる構成プロパティを示します。  
+ SOAP アダプターの設定できる構成プロパティ送信ポートに次の表に示します。  
   
-|プロパティ名|型|Description|制限|コメント|  
+|プロパティ名|型|説明|制限|コメント|  
 |-------------------|----------|-----------------|------------------|--------------|  
-|ProxyPort|VT_I4|この送信ポートのプロキシ サーバー ポートを指定します。|なし|UseProxy プロパティが -1 (true) 以外の値に設定されている場合、このプロパティの値は必要ありません。<br /><br /> 既定値は 80 です。|  
-|AuthenticationScheme|VT_BSTR|接続先のサーバーで使用する認証の種類を指定します。|有効な値は、<br /><br /> 匿名<br />-基本<br />ダイジェスト<br />-NTLM|既定値は "Anonymous" です。|  
-|[ユーザー名]|VT_BSTR|接続先のサーバーで認証に使用するユーザー名を指定します。|最小長: 0<br /><br /> 最大長: 256|AuthenticationScheme プロパティが [基本] または [ダイジェスト] 以外の値に設定されており、UseSSO プロパティが 0 (false) 以外の値に設定されている場合、このプロパティの値は必要ありません。|  
-|UseProxy|VT_BOOL|SOAP 送信ハンドラーがプロキシ サーバーを使用するかどうかを指定します。|有効な値は、<br /><br /> -1 (true)<br />-0 (false)|既定値は 0 (false) です。|  
-|UseSoap12|VT_BOOL|SOAP 1.2 プロトコルをサポートするプロキシ コードを生成する場合に指定します。|このオプションを指定しなかった場合は、SOAP 1.1 準拠のプロキシ コードが生成されます。<br /><br /> 有効な値は、<br /><br /> -1 (true)<br />-0 (false)|既定値は 0 (false) です。|  
-|UsingOrchestration|VT_BOOL|この送信ポートのアドレスに関連付けられている Web サービス プロキシを使用するかどうかを指定します。|有効な値は、<br /><br /> -1 (true)<br />-0 (false)|既定値は -1 (true) です。|  
-|UseSSO|VT_BOOL|エンタープライズ シングル サインオンを使用するように指定します。|有効な値は、<br /><br /> -1 (true)<br />-0 (false)|既定値は 0 (false) です。|  
-|ProxyAddress|VT_BSTR|プロキシ サーバーの名前を指定します。|このプロパティは、UseProxy プロパティが -1 (true) に設定されている場合にのみ有効です。|なし|  
-|Password|VT_NULL|接続先サーバーでの認証に使用するパスワードを指定します。|バインド ファイルをエクスポートする場合は、この値を必ず Null に設定します。 ターゲットの BizTalk Server 構成にバインド ファイルをインポートする前に、このフィールドにパスワードを手動で設定する必要があります。|AuthenticationScheme プロパティが [基本] または [ダイジェスト] 以外の値に設定されており、UseSSO プロパティが 0 (false) 以外の値に設定されている場合、このプロパティの値は必要ありません。|  
-|AssemblyPath|VT_BSTR|Web サービスのプロキシを含んでいるアセンブリへのパスを指定します。|なし|なし|  
+|ProxyPort|VT_I4|この送信ポートのプロキシ サーバー ポートを指定します。|なし|このプロパティでは、UseProxy プロパティが-1 (true) に設定しない限り、値は必要ありません。<br /><br /> 既定値は 80 です。|  
+|AuthenticationScheme|VT_BSTR|接続先のサーバーで使用する認証の種類を指定します。|有効な値は、<br /><br /> 匿名<br />-基本<br />-ダイジェスト<br />-NTLM|既定値には Anonymous です。|  
+|Username|VT_BSTR|移行先サーバーでの認証に使用するユーザー名を指定します。|最小長:0<br /><br /> 最大長:256|このプロパティでは基本認証またはダイジェストを AuthenticationScheme プロパティが設定され、UseSSO プロパティが 0 (false) に設定しない限り、値は必要ありません。|  
+|UseProxy|VT_BOOL|SOAP 送信ハンドラーがプロキシ サーバーを使用するかどうかを指定します。|有効な値は、<br /><br /> -   -1 (true)<br />-0 (false)|既定値は 0 (false です)。|  
+|UseSoap12|VT_BOOL|SOAP 1.2 プロトコルをサポートするプロキシ コードを生成する場合に指定します。|このオプションが選択されていない場合、SOAP 1.1 準拠のプロキシ コードが生成されます。<br /><br /> 有効な値は、<br /><br /> -   -1 (true)<br />-0 (false)|既定値は 0 (false です)。|  
+|UsingOrchestration|VT_BOOL|この送信ポートのアドレスに関連付けられている Web サービス プロキシを使用するかどうかを指定します。|有効な値は、<br /><br /> -   -1 (true)<br />-0 (false)|既定値は-1 (true です)。|  
+|UseSSO|VT_BOOL|エンタープライズ シングル サインオンが使用されることを指定します。|有効な値は、<br /><br /> -   -1 (true)<br />-0 (false)|既定値は 0 (false です)。|  
+|ProxyAddress|VT_BSTR|プロキシ サーバーの名前を指定します。|このプロパティは、UseProxy プロパティが-1 (true) に設定されている場合のみ有効です。|なし|  
+|パスワード|VT_NULL|移行先サーバーでの認証に使用するパスワードを指定します。|この値は常に、バインド ファイルをエクスポートする場合は null に設定します。 このフィールドは、ターゲットの BizTalk Server の構成にバインド ファイルをインポートする前に、パスワードを使用して手動設定する必要があります。|このプロパティでは基本認証またはダイジェストを AuthenticationScheme プロパティが設定され、UseSSO プロパティが 0 (false) に設定しない限り、値は必要ありません。|  
+|AssemblyPath|VT_BSTR|Web サービス プロキシを含んでいるアセンブリへのパスを指定します。|なし|なし|  
 |TypeName|VT_BSTR|呼び出す Web メソッドを含むクラスの名前を指定します。|なし|なし|  
 |MethodName|VT_BSTR|呼び出すクラスのメソッドを指定します。|なし|なし|  
-|UseHandlerSetting|VT_BOOL|SOAP 送信ハンドラーの既定のプロキシ構成を使用するかどうかを指定します。|有効な値は、<br /><br /> -1 (true)<br />-0 (false)|既定値は -1 (true) です。|  
-|ClientCertificate|VT_BSTR|接続の確立に使用するクライアント証明書の拇印を指定します。|最小長: 0<br /><br /> 最大長: 59|なし|  
-|ProxyPassword|VT_NULL|プロキシ サーバーで認証に使用するパスワードを指定します。|バインド ファイルをエクスポートする場合は、この値を必ず Null に設定します。 ターゲットの BizTalk Server 構成にバインド ファイルをインポートする前に、このフィールドにパスワードを手動で設定する必要があります。|UseProxy プロパティが 0 (false) に設定されている場合、このプロパティの値は必要ありません。|  
-|ProxyUsername|VT_BSTR|プロキシ サーバーで認証に使用するユーザー名を指定します。|なし|UseProxy プロパティが -1 (true) 以外の値に設定されている場合、このプロパティの値は必要ありません。|  
+|UseHandlerSetting|VT_BOOL|使用するかどうかと、SOAP 送信ハンドラーの既定のプロキシ構成を指定します。|有効な値は、<br /><br /> -   -1 (true)<br />-0 (false)|既定値は-1 (true です)。|  
+|ClientCertificate|VT_BSTR|接続の確立に使用するクライアント証明書の拇印を指定します。|最小長:0<br /><br /> 最大長:59|なし|  
+|ProxyPassword|VT_NULL|プロキシ サーバーでの認証に使用するパスワードを指定します。|この値は常に、バインド ファイルをエクスポートする場合は null に設定します。 このフィールドは、ターゲットの BizTalk Server の構成にバインド ファイルをインポートする前に、パスワードを使用して手動設定する必要があります。|UseProxy が 0 (false) に設定されている場合、このプロパティは、値を必要ありません。|  
+|ProxyUsername|VT_BSTR|プロキシ サーバーで認証に使用するユーザー名を指定します。|なし|このプロパティでは、UseProxy プロパティが-1 (true) に設定しない限り、値は必要ありません。|  
   
- 次のコード例は、プロパティの設定に使用する XML 文字列の形式を示しています。  
+ 次のコードでは、プロパティの設定に使用する XML 文字列の形式を示します。  
   
 ```  
 <CustomProps>  

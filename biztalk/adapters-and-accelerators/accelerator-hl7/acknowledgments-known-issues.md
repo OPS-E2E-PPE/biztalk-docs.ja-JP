@@ -15,12 +15,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1f585c9f0b147f50bd915bb757a3ed3c09a56ee8
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 708d809b57afb3d435da4eb9be247ab3e6c24b6a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36966155"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65248259"
 ---
 # <a name="acknowledgments-known-issues"></a>受信確認の既知の問題
 このセクションには、受信確認 (ACK) エラーを回避するために役立つ有用な情報が含まれています。  

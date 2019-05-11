@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5947b527dea1206255daf52f128569fd7a4f659c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 155c7ab792dd77918561f3ebf630f6e13956d3e9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36987915"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65306053"
 ---
 # <a name="corrupt-backup-files"></a>バックアップ ファイルが壊れています
 バックアップ ファイルは、破損している、壊れているか、または不明になる可能性があります。 このような場合は、少なくとも 1 つのファイルを復元できません。 エラーを検出しました。 システム上の復元ジョブは、[次へ] の有効な完全バックアップ セットを検索します。 ほとんどの場合、ソース システムの完全バックアップを強制する必要があります。 そのようなセットが存在しない場合は、復元ジョブは失敗し、有効な完全バックアップ セットが到着するまでにもそれぞれ後続の実行が失敗しました。 セットが存在する場合、環境を修復に使用されます。  

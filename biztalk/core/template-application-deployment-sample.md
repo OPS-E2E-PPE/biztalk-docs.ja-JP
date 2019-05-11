@@ -17,19 +17,19 @@ caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7d096dac4d1c51101ddadff9eb6c49c04202d375
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 11933fe580b52ce63589c0906f0f9c17694b5c1f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37000059"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65299475"
 ---
 # <a name="template-application-deployment-sample"></a>Template (アプリケーションの展開サンプル)
 このトピックでは、Template サンプルを使用してアプリケーションを展開する方法について説明します。  
   
  2 種類の展開スクリプト (処理前のスクリプトと処理後のスクリプト) を作成して使用し、BizTalk アプリケーションの展開をカスタマイズできます。 処理前のスクリプトは、アプリケーションのインストールおよびインポートの開始前およびアンインストールの完了後に呼び出されます。 処理後のスクリプトは、アプリケーションのインストールおよびインポートの完了後およびアンインストールの開始前に呼び出されます。  
   
- 処理前と処理後のスクリプトは、これらの個々の操作で呼び出されるように記述できます。 別の方法として、いずれかの操作の後にだけ実行するようスクリプトを構成することもできます。 スクリプトの作成の詳細については、[アプリケーション展開のカスタマイズを前処理および後処理のスクリプトを使用して](../core/using-pre-and-post-processing-scripts-to-customize-application-deployment.md)を参照してください。  
+ 処理前と処理後のスクリプトは、これらの個々の操作で呼び出されるように記述できます。 別の方法として、いずれかの操作の後にだけ実行するようスクリプトを構成することもできます。 スクリプトの作成の詳細については、次を参照してください。[アプリケーション展開のカスタマイズを前処理および後処理のスクリプトを使用して](../core/using-pre-and-post-processing-scripts-to-customize-application-deployment.md)します。  
   
  このトピックでは、1 つの操作の前または後にのみ呼び出されるようスクリプトを記述して展開する方法について説明します。 3 つの環境変数の値をチェックして、自身が呼び出されるコンテキストの操作を判断するスクリプトを記述します。 そのコンテキストに基づいて、スクリプトは実行を継続または停止します。  
   
@@ -82,7 +82,7 @@ ms.locfileid: "37000059"
   
      例:  
   
-     設定のログ ファイル ="*\<サンプル パス\>* \ApplicationDeployment\Templates\SampleLogOut.txt"  
+     set LogFile="*\<Samples Path\>* \ApplicationDeployment\Templates\SampleLogOut.txt"  
   
 ### <a name="to-create-a-new-application"></a>新しいアプリケーションの作成  
   
@@ -132,7 +132,7 @@ ms.locfileid: "37000059"
   
 6.  変換先 ページで**送信先アプリケーション名**アプリケーション名を入力します。  
   
-7.  **を生成する MSI ファイル**、MSI ファイルの完全なパスを入力し、クリックして**エクスポート**します。 例: C:\MSI\SamplesTemplate.msi  
+7.  **を生成する MSI ファイル**、MSI ファイルの完全なパスを入力し、クリックして**エクスポート**します。 例:C:\MSI\SamplesTemplate.msi  
   
 8.  [概要] ページで、次のようにクリックします。**完了**します。  
   
@@ -153,7 +153,7 @@ ms.locfileid: "37000059"
 5.  アプリケーションのターゲット環境の設定 ページで、次のようにクリックします。**次**します。  
   
     > [!NOTE]
-    >  このサンプルではターゲット環境を指定する必要はありません。 この機能の背景については、[バインド ファイルとアプリケーションの展開](../core/binding-files-and-application-deployment.md)を参照してください。 バインド ファイルを追加する手順については、[アプリケーションにバインド ファイルを追加する方法](../core/how-to-add-a-binding-file-to-an-application2.md)を参照してください。  
+    >  このサンプルではターゲット環境を指定する必要はありません。 この機能の背景については、次を参照してください。[バインド ファイルとアプリケーションの展開](../core/binding-files-and-application-deployment.md)します。 バインド ファイルを追加する手順については、次を参照してください。[アプリケーションにバインド ファイルを追加する方法](../core/how-to-add-a-binding-file-to-an-application2.md)します。  
   
 6.  インポートの概要 ページで、概要情報が正しいことを確認し、**インポート**します。  
   

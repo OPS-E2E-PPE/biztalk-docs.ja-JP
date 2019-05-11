@@ -1,5 +1,5 @@
 ---
-title: 受信バッチを断片化 |Microsoft ドキュメント
+title: 受信バッチを断片化 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,23 +16,23 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0807bbe83ea2f477a7e1625488ebbecf578f3adc
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ac8e0d99bfa9ea8696a7cd9f6eeed8a6be16006d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22204890"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65267817"
 ---
-# <a name="fragmented-inbound-batch"></a>受信バッチの断片化
-構成することができます[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]メッセージ バッチを受信するには、バッチからメッセージを抽出し、送信先システムに個々 のメッセージをルーティングします。 受信のバッチが個別のメッセージにフラグメントの断片化を有効にした場合それ以外の場合、バッチが処理され、1 つのバッチまたはインターチェンジとしてルーティングします。 バッチ処理を有効にするのにには、BTAHL7 構成エクスプ ローラーを使用します。 バッチ処理を有効にする方法の詳細については、次を参照してください。[バッチ処理構成](../../adapters-and-accelerators/accelerator-hl7/configuring-batching.md)です。  
+# <a name="fragmented-inbound-batch"></a>断片化した受信バッチ
+構成できる[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]メッセージ バッチを受信する、バッチからのメッセージを抽出し、送信先システムに、個々 のメッセージをルーティングします。 受信のバッチが個別のメッセージにフラグメントの断片化を有効にした場合それ以外の場合、バッチが処理され、1 つのバッチまたはインターチェンジとしてルーティングします。 バッチ処理を有効にするのにには、BTAHL7 構成エクスプ ローラーを使用します。 バッチ処理を有効にする方法の詳細については、次を参照してください。[バッチ処理構成](../../adapters-and-accelerators/accelerator-hl7/configuring-batching.md)します。  
   
- 次に、断片化された受信バッチを一般的なシナリオについて説明します。  
+ 一般的な断片化した受信バッチのシナリオを次に示します。  
   
-1.  A、システムで実行されている、基幹業務アプリケーションは、BTAHL7 をメッセージのバッチを送信します。  
+1.  システム A で実行されている、基幹業務アプリケーションでは、BTAHL7 をメッセージのバッチを送信します。  
   
-     バッチのメッセージは、次の 2 つの異なる形式で指定できます。 BTAHL7 では、次の形式を処理できます。  
+     バッチのメッセージは、2 つの異なる形式で指定できます。 BTAHL7 では、次の形式を処理できます。  
   
-    -   形式 1:、1 つのファイルのヘッダーとトレーラー (FHS/FTS) の組み合わせと 1 つまたは複数バッチ ヘッダーとトレーラー (BHS/BTS) が含まれています。  
+    -   形式 1:1 つのファイルのヘッダーとトレーラー (FHS/FTS) の組み合わせと 1 つまたは複数バッチ ヘッダーとトレーラー (BHS/BTS) が含まれています。  
   
         ```  
         FHS  
@@ -51,7 +51,7 @@ ms.locfileid: "22204890"
         FTS  
         ```  
   
-    -   形式 2: HL7 が定義されているファイルとバッチのラッパーが含まれていないと、一連の中断がストリーム内のメッセージ。  
+    -   形式 2:HL7 の定義ファイルとバッチのラッパーが含まれていないと、一連の中断がストリーム内のメッセージ。  
   
         ```  
         MSH  
@@ -62,14 +62,14 @@ ms.locfileid: "22204890"
         .........  
         ```  
   
-2.  BTAHL7 では、バッチから個々 のメッセージを作成し、適切なスキーマに対して個別のメッセージを確認します。  
+2.  BTAHL7 では、バッチから個々 のメッセージを作成し、適切なスキーマに対して、個々 のメッセージを確認します。  
   
-3.  BTAHL7 では、バッチから抽出されたメッセージごとにシステムを別の受信確認メッセージを送信します。  
+3.  BTAHL7 では、バッチから抽出された各メッセージをシステム A に、個別の受信確認メッセージを送信します。  
   
-4.  BTAHL7 では、メッセージ バッチ ヘッダーではなく、個々 のメッセージのルーティング情報に基づいて、送信先システムに個々 のメッセージをルーティングします。  
+4.  BTAHL7 では、メッセージ バッチのヘッダーではなく、個々 のメッセージのルーティング情報に基づいて、送信先システムに、個々 のメッセージをルーティングします。  
   
     > [!NOTE]
-    >  BTAHL7 では、バッチとファイルのヘッダー/トレーラーは検証されないときに、 **FHS3**フィールド (送信元パーティ) には、断片化が有効になっている取引先が含まれています。  
+    >  BTAHL7 がバッチとファイルのヘッダー/トレーラーを検証していないときに、 **FHS3**フィールド (送信元パーティ) を持つ断片化が有効になっている取引先が含まれています。  
   
 ## <a name="see-also"></a>参照  
  [バッチ処理の構成](../../adapters-and-accelerators/accelerator-hl7/configuring-batching.md)

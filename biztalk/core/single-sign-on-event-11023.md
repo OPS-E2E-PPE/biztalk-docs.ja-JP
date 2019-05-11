@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 11023 |Microsoft Docs'
+title: シングル サインオン:イベント 11023 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cecf9536babaf2510444abade571149c5fc0e0a2
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 525c2bd0759aa24c191991e075276bd75233d6d0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36991539"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65266540"
 ---
-# <a name="single-sign-on-event-11023"></a>シングル サインオン: イベント 11023
+# <a name="single-sign-on-event-11023"></a>シングル サインオン:イベント 11023
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                                                                                                                                                                                                                            |
@@ -36,4 +36,4 @@ ms.locfileid: "36991539"
  無効な Windows パスワードを削除しました。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- SSO 管理ツールを使用して、この Windows アカウントの外部資格情報を設定します。 詳細については、[を使用して SSO](../core/using-sso.md)を参照してください。
+ SSO 管理ツールを使用して、この Windows アカウントの外部資格情報を設定します。 詳細については、次を参照してください。[を使用して SSO](../core/using-sso.md)します。

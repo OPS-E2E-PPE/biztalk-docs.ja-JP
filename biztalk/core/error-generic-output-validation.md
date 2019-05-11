@@ -1,5 +1,5 @@
 ---
-title: エラー - 出力検証の汎用 |Microsoft ドキュメント
+title: エラー - 出力検証の一般的な |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,22 +14,22 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6c1bac5235788f6e369cc316ed1236357a51c004
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3b776561e1e6034242fa74c4d401e5e2b775ed8d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22239874"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65348165"
 ---
-# <a name="error---generic-output-validation"></a>エラー - 出力検証のジェネリック
+# <a name="error---generic-output-validation"></a>エラー - 出力検証の一般的な
 **エラー コード**  
   
  btm1047  
   
  **説明**  
   
- 特定できない理由により、マップのテストの操作によって作成された出力インスタンス メッセージ ファイルを、送信先スキーマに対して検証できませんでした。  
+ 不明な理由により、マップのテスト操作によって作成された出力インスタンス メッセージ ファイルを送信先スキーマに対して検証できませんでした。  
   
  **ユーザーの操作**  
   
- BizTalk エディターで、送信先スキーマを開いて使用して、**スキーマの検証**、**インスタンスの検証**と**インスタンスの生成** コマンドを右クリックしたときに使用します。ソリューション エクスプ ローラーで、問題を特定するスキーマです。
+ 送信先スキーマを BizTalk エディターで開くしを使用して、**スキーマの検証**、**インスタンスの検証**と**インスタンスの生成**コマンドを使用できるは、右クリックすると、ソリューション エクスプ ローラーで、問題を分離するスキーマです。

@@ -32,12 +32,12 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bcbb3e36122af0bae4809435b8cc1d74b46ea1ba
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2f873c9dcd38c476ea47ea57e412aeec51e239b7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37011371"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65243273"
 ---
 # <a name="source-and-destination-schemas"></a>送信元スキーマと送信先スキーマ
 各 BizTalk マップには、2 つのスキーマが使用されます。 送信元スキーマと送信先スキーマです。 送信元スキーマは、データの取得元となるインスタンス メッセージの構造を定義します。 送信先スキーマは、マップによって生成されるインスタンス メッセージの構造を定義します。 たとえば、注文書から請求書に出荷先情報および請求先情報をマップする場合、送信元スキーマに注文書を定義するスキーマ、送信先スキーマに請求書を定義するスキーマが必要です。  
@@ -46,7 +46,7 @@ ms.locfileid: "37011371"
   
 - 現在の BizTalk プロジェクトの一部に送信元スキーマおよび送信先スキーマを組み込む必要があります。また、実行中にスキーマへアクセスするために、アセンブリにスキーマへの参照を組み込む必要があります。  
   
-- BizTalk マッパーで使用されるスキーマは、XSD (XML Schema Definition) 言語に基づいている必要があります。 BizTalk エディターを使用すると、このようなスキーマを簡単に作成できます。 BizTalk エディターでスキーマの作成の詳細については、[BizTalk エディターを使用してスキーマを作成する](../core/creating-schemas-using-biztalk-editor.md)を参照してください。 参照してください[スキーマの作成](../core/creating-schemas.md)です。  
+- BizTalk マッパーで使用されるスキーマは、XSD (XML Schema Definition) 言語に基づいている必要があります。 BizTalk エディターを使用すると、このようなスキーマを簡単に作成できます。 BizTalk エディターでスキーマの作成の詳細については、次を参照してください。 [BizTalk エディターを使用してスキーマを作成する](../core/creating-schemas-using-biztalk-editor.md)します。 参照してください[スキーマの作成](../core/creating-schemas.md)です。  
   
   BizTalk エディターでは、複数のルート ノードがあるスキーマを作成できます。 ただし、BizTalk マップで複数のルート ノードがあるスキーマを使用する場合は、マップで使用するルート ノード (および対応するサブ構造体) を選択する必要があります。 スキーマが、**ルート参照**ルートを識別するプロパティが主キー。 スキーマに複数のルートと**ルート参照**スキーマ最初として開く場合は、ソースまたは変換先スキーマの BizTalk マッパーは、指定したルート プロパティが設定されます。 スキーマに複数のルートと**ルート参照**プロパティが設定されていない、BizTalk マッパーでは、ルートを選択するように求められます。  
   

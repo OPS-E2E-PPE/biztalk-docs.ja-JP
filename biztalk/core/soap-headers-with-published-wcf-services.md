@@ -16,23 +16,23 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ea48ab7afeae2b54136c9134d3ef92878b802924
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d8a133dc15f88d35fe55d82c651738b15af69133
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36985371"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65244326"
 ---
 # <a name="soap-headers-with-published-wcf-services"></a>公開済み WCF サービスでの SOAP ヘッダー
-WCF 受信アダプタへの受信メッセージですべての SOAP ヘッダーの値をコピーすることができます、 **InboundHeaders**プロパティ、またはこれらできます記述または指定された値を BizTalk メッセージ コンテキストに昇格します。 WCF アダプタでは、カスタムの SOAP ヘッダーと、WCF インフラストラクチャが使用する WS-Addressing、WS-Security、WS-AtomicTransaction などの標準 SOAP ヘッダーの両方を処理できます。 **InboundHeaders**コンテキスト プロパティは、ターゲットの名前空間**http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties**、受信メッセージの SOAP ヘッダーの値の文字列表現が含まれています。  
+WCF 受信アダプタへの受信メッセージですべての SOAP ヘッダーの値をコピーすることができます、 **InboundHeaders**プロパティ、またはこれらできます記述または指定された値を BizTalk メッセージ コンテキストに昇格します。 アダプターは、カスタム SOAP ヘッダーと WS アドレス指定など、WCF インフラストラクチャが使用する標準 SOAP ヘッダーの両方で作業でき、Ws-security、WS-AtomicTransaction します。 **InboundHeaders**コンテキスト プロパティは、ターゲットの名前空間**http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties**、受信メッセージの SOAP ヘッダーの値の文字列表現が含まれています。  
   
 > [!NOTE]
->  指定した SOAP ヘッダーの値を昇格させる場合は、昇格対象の値に対応するプロパティ スキーマが、BizTalk プロジェクト内で展開されている必要があります。  
+>  指定した SOAP ヘッダーの値を昇格する場合は、必要があります配置されたプロパティ スキーマで昇格する値に対応する BizTalk プロジェクト。  
   
 > [!NOTE]
->  昇格されたプロパティの長さは 256 文字以下にしてください。  
+>  昇格させたプロパティは、256 文字より長くすることはできません。  
   
- 次の XML データの SOAP ヘッダーの文字列表現の例を示しています、 **InboundHeaders**プロパティ。 これはクライアントから渡されて、BizTalk 受信場所に送信されます。  
+ 次の XML データの SOAP ヘッダーの文字列表現の例を示しています、 **InboundHeaders**プロパティ。 これが、クライアントから取得され、BizTalk に送信される受信場所。  
   
 ```  
 <headers>  
@@ -44,7 +44,7 @@ WCF 受信アダプタへの受信メッセージですべての SOAP ヘッダ�
 </headers>  
 ```  
   
- SOAP ヘッダーの値を BizTalk メッセージ コンテキストに書き込む、または昇格させるには、プロパティ名と名前空間で構成される値ペアのコレクションを WCF メッセージに挿入することにより、ヘッダー値の書き込みまたは昇格を実行する必要があることを、WCF アダプタが認識できるようにする必要があります。 WCF アダプターで SOAP ヘッダーの値を BizTalk メッセージ コンテキストに書き込む、または昇格させるには、WCF メッセージで次のメッセージ プロパティを指定する必要があります。  
+ SOAP ヘッダーの値を BizTalk メッセージ コンテキストに昇格を書き込んだり、WCF アダプターはヘッダーの値が書き込みまたは昇格することを認識できるように、WCF メッセージにプロパティ名と名前空間で構成される値のペアのコレクションを配置する必要があります。 WCF アダプターで SOAP ヘッダーの値を BizTalk メッセージ コンテキストに書き込む、または昇格させるには、WCF メッセージで次のメッセージ プロパティを指定する必要があります。  
   
 - BizTalk メッセージ コンテキストに SOAP ヘッダーの値を昇格するには、WCF アダプターを検索して、キーのペアを**http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties/Promote**と値**一覧\<KeyValuePair\<XmlQualifiedName、オブジェクト\>\>**.  
   
@@ -54,7 +54,7 @@ WCF 受信アダプタへの受信メッセージですべての SOAP ヘッダ�
   
    WCF アダプターは、このペアを使用して、値をメッセージ コンテキストに書き込みます。  
   
-  次のコードは、SOAP ヘッダーの値を BizTalk メッセージ コンテキストに書き込む、または昇格させる方法を示しています。  
+  次のコードでは、書き込みまたは SOAP ヘッダーの値を BizTalk メッセージ コンテキストに昇格する方法を示します。  
   
 ```  
 const string PropertiesToPromoteKey="http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties/Promote";  
@@ -75,9 +75,9 @@ writeProps.Add(new KeyValuePair<XmlQualifiedName, object>(PropName2, "Property v
 wcfMessage.Properties[PropertiesToWriteKey]=writeProps;  
 ```  
   
- BizTalk WCF サービス公開ウィザードで生成されたメタデータには、カスタム SOAP ヘッダーの定義が含まれません。 カスタム SOAP ヘッダーを使用して、WCF サービスにメタデータを公開するには、Web サービス記述言語 (WSDL) ファイルを手動で作成する必要があります。 使用することができます、 **externalMetadataLocation**の属性、 [ \<serviceMetadata\> ](http://go.microsoft.com/fwlink/?LinkId=89121)の場所を指定して、ウィザードが生成する Web.config ファイル内の要素、WSDL ファイルです。 この WSDL ファイルは、WSDL およびメタデータ交換 (MEX) 要求の応答として、自動生成された WSDL の代わりにユーザーに返されます。  
+ BizTalk WCF サービス公開ウィザードでは、生成されたメタデータでのカスタム SOAP ヘッダーの定義が含まれません。 カスタム SOAP ヘッダーを使用して WCF サービスのメタデータを公開するには、手動で Web サービス記述言語 (WSDL) ファイルを作成する必要があります。 使用することができます、 **externalMetadataLocation**の属性、 [ \<serviceMetadata\> ](http://go.microsoft.com/fwlink/?LinkId=89121)の場所を指定して、ウィザードが生成する Web.config ファイル内の要素、WSDL ファイルです。 WSDL ファイルをユーザーに応答で返される WSDL およびメタデータを自動生成された WSDL ではなく exchange (MEX) 要求します。  
   
- 次の XML データは、カスタム SOAP ヘッダーを定義する WSDL ファイルの一部を示しています。  
+ 次の XML データは、カスタム SOAP ヘッダーを定義する WSDL ファイルの一部の例を示します。  
   
 ```  
 <wsdl:operation name="Request">  

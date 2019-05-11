@@ -1,5 +1,5 @@
 ---
-title: 高可用性 SSO インストール オプション |Microsoft ドキュメント
+title: 高可用性 SSO インストール オプション |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,19 +15,19 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 88cfcdfb96818223e21daa17b22c0632be75cce8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3fa923e01f52bf445b769487556bc4c4bba4ce61
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22246154"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65344333"
 ---
 # <a name="high-availability-sso-installation-options"></a>高可用性 SSO インストール オプション
-このセクションの各トピックでは、複数コンピュータ展開など、エンタープライズ シングル サインオンの高可用性に注目したインストールについて説明します。  
+このセクションのトピックでは、複数コンピュータ展開などのエンタープライズ シングル サインオン、高可用性に注目したインストールについて説明します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [ディスク、IP アドレス名リソースとクラスター グループを作成する方法](../core/how-to-create-a-cluster-group-with-a-disk-ip-address-and-name-resource1.md)  
+-   [ディスク、IP アドレス、および名前リソースをクラスター グループを作成する方法](../core/how-to-create-a-cluster-group-with-a-disk-ip-address-and-name-resource1.md)  
   
 -   [マスター シークレット サーバーをクラスター化する方法](../core/how-to-cluster-the-master-secret-server1.md)  
   
@@ -35,4 +35,4 @@ ms.locfileid: "22246154"
   
 -   [SSO と同じクラスター グループ内の BizTalk ホストをクラスター化する方法](../core/how-to-cluster-sso-and-a-biztalk-host-in-the-same-cluster-group1.md)  
   
--   [複数コンピューター環境のシナリオで SSO を構成する方法](../core/how-to-configure-sso-in-a-multicomputer-scenario.md)
+-   [複数コンピューターのシナリオで SSO を構成する方法](../core/how-to-configure-sso-in-a-multicomputer-scenario.md)

@@ -1,5 +1,5 @@
 ---
-title: レコードおよびフィールドの順序 |Microsoft ドキュメント
+title: レコードとフィールドの順序 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,12 +15,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5826d46fef73400a5d54e2d1154a1647af85294e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8bd47208d772489b322d1f23c6b44d7ed552dee2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22263858"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65262612"
 ---
 # <a name="order-of-records-and-fields"></a>レコードとフィールドの順序
 BizTalk マッパーで使用する XSLT (Extensible Stylesheet Language Transformations) では、出力要素および属性の出力順が保証されません。 これは、BizTalk マッパーが XSLT を生成するときに、送信先スキーマ構造を調べてからグリッド ページをとおして要素を反映し、送信元スキーマ構造からの値を抽出するためです。 たとえば、BillTo Address レコードを ShipTo Address レコードの前にリストされるように出力を作成するには、送信先スキーマで BillTo Address を ShipTo Address レコードより前に配置する必要があります。  

@@ -1,5 +1,5 @@
 ---
-title: スケール アウト送信ホスト |Microsoft ドキュメント
+title: スケール アウト送信ホスト |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,17 +12,17 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d50007623ee00b27e6fc98ad6f02e9b59e4a29d7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 93c6ff23f7073a83a0ad8201a36f2ad3768a4dbb
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22302962"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65270368"
 ---
 # <a name="scaling-out-sending-hosts"></a>スケール アウト送信ホスト
-スケール アウト送信ホストの詳細については、次を参照してください。 [Scaled-Out 送信ホスト](http://go.microsoft.com/fwlink/?LinkId=151286)(http://go.microsoft.com/fwlink/?LinkId=151286)。  
+スケール アウト送信ホストの詳細については、次を参照してください。 [Scaled-Out 送信ホスト](http://go.microsoft.com/fwlink/?LinkId=151286)(http://go.microsoft.com/fwlink/?LinkId=151286)します。  
   
 ## <a name="see-also"></a>参照  
- [スケール アウト受信ホスト](../technical-guides/scaling-out-receiving-hosts.md)   
+ [スケール アウト、受信ホスト](../technical-guides/scaling-out-receiving-hosts.md)   
  [受信ホストをクラスタ リング](../technical-guides/clustering-receiving-hosts.md)   
- [スケール アウト処理の各ホスト](../technical-guides/scaling-out-processing-hosts.md)
+ [処理ホストのスケールアウト](../technical-guides/scaling-out-processing-hosts.md)

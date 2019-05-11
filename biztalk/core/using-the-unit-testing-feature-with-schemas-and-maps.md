@@ -1,5 +1,5 @@
 ---
-title: 単体テストのスキーマおよびマップの機能を使用して |Microsoft ドキュメント
+title: 単体テストのスキーマとマップを含む機能を使用して |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,55 +12,55 @@ caps.latest.revision: 22
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fbc14621a1830f15da02336b7b82e9df475cfe9b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 576974b71b5f5312fdcea792458b86ea1590d42d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22288994"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65302827"
 ---
-# <a name="using-the-unit-testing-feature-with-schemas-and-maps"></a>スキーマとマップを含む単体テスト機能の使用
-このトピックでは、単体テスト機能を使用してスキーマとマップの単体テストを HelloWorld オーケストレーション サンプルに追加する方法を示します。  
+# <a name="using-the-unit-testing-feature-with-schemas-and-maps"></a>単体テストのスキーマとマップを含む機能を使用します。
+このトピックでは、単体テスト機能を使用して、HelloWorld オーケストレーションの例では、スキーマやマップの単体テストを追加する方法を示します。  
   
 > [!NOTE]
->  現時点において、マップ用の単体テスト機能では、複数の入力マップはサポートされていません。  
+>  単体テストのマップの機能を現時点では、複数の入力マップはサポートされていません。  
   
 ## <a name="prerequisites"></a>前提条件  
- 最初に、HelloWorld サンプルの作成手順に従う必要があります。 これらの手順をご覧ください: [HelloWorld (BizTalk Server サンプル)](../core/helloworld-biztalk-server-sample.md)  
+ まず、HelloWorld サンプルを構築するための手順に従ってください。 これらの手順はここにあります。[HelloWorld (BizTalk Server サンプル)](../core/helloworld-biztalk-server-sample.md)  
   
 ### <a name="adding-a-unit-test-project-to-the-helloworld-sample"></a>HelloWorld サンプルへの単体テスト プロジェクトの追加  
   
 1.  Visual Studio で、HelloWorld.sln ソリューション ファイルを開きます。  
   
-2.  ソリューション エクスプ ローラーで右クリックし、 **HelloWorld**プロジェクトをクリックして**プロパティ**です。  
+2.  ソリューション エクスプ ローラーで右クリックし、 **HelloWorld**プロジェクトをクリックして**プロパティ**します。  
   
-3.  プロジェクト デザイナーで、をクリックして、**展開**プロパティ ページ タブとセット**単体テストを有効にする**に`True`です。  
+3.  プロジェクト デザイナーで、をクリックして、**展開**プロパティ ページのタブおよびセット**Unit Testing を有効にする**に`True`します。  
   
 4.  変更内容を保存し、プロジェクト プロパティ ページを閉じます。  
   
-5.  メイン メニューでクリックして**ビルド**、順にクリック**ソリューションのリビルド**です。  
+5.  メイン メニューで、次のようにクリックします。**ビルド**、 をクリックし、**ソリューションのリビルド**します。  
   
-6.  メイン メニューで、をクリックして**テスト**、クリックして**新しいテスト**です。  
+6.  メイン メニューで、次のようにクリックします。**テスト**、 をクリックし、**新しいテスト**します。  
   
-7.  **新しいテストの追加**ダイアログ ボックスで、**新しい Visual c# テスト プロジェクトを作成する**の**テスト プロジェクトに追加**フィールドです。 選択**単体テスト ウィザード**で、**テンプレート**ボックスの一覧し、をクリックして**OK**です。  
+7.  **新しいテストの追加**ダイアログ ボックスで、**新しいビジュアルを作成C#テスト プロジェクト**の**テスト プロジェクトに追加**フィールド。 選択**単体テスト ウィザード**で、**テンプレート**ボックスの一覧をクリックして**OK**します。  
   
-8.  **新しいテスト プロジェクト** ダイアログ ボックスで、プロジェクト名としてのままにして**TestProject1**  をクリック**作成**です。  
+8.  **新しいテスト プロジェクト** ダイアログ ボックスで、プロジェクト名としてのままに**TestProject1**  をクリック**作成**です。  
   
-9. **単体テストの作成** ダイアログ ボックスで、種類を展開し、選択、 **POSchema()** 下でコンス トラクター、 **poschema()** ノード。 選択も**POToInvoice()** 下でコンス トラクター、 **Microsoft.Samples.BizTalk.HelloWorld.POToInvoice**ノード。 次の図は、選択する要素を示しています。 次に、選択した場合、キーを押して**OK**です。  
+9. **単体テストの作成** ダイアログ ボックスで、型を展開し、選択、 **POSchema()** 下でコンス トラクター、 **Microsoft.Samples.BizTalk.HelloWorld.POSchema**ノード。 選択も**POToInvoice()** 下でコンス トラクター、 **[potoinvoice()]** ノード。 次の図は、選択する必要があります。 下に表示される選択した場合、キーを押して**OK**します。  
   
      ![](../core/media/schemaandmapsunittestwizardselection.gif "SchemaAndMapsUnitTestWizardSelection")  
   
-### <a name="adding-test-code-to-test-the-schemas-and-map"></a>スキーマとマップをテストするテスト コードの追加  
+### <a name="adding-test-code-to-test-the-schemas-and-map"></a>スキーマとマップをテストするテスト コードを追加します。  
   
-1.  次の参照を追加、 **TestProject1**プロジェクトから、 **.NET**  タブで 参照の追加 ダイアログ。  
+1.  次の参照を追加、 **TestProject1**からプロジェクトを **.NET**  タブで 参照の追加 ダイアログ。  
   
     -   Microsoft.BizTalk.TestTools  
   
     -   Microsoft XLANG/s ベース型  
   
-2.  ソリューション エクスプローラーで、POSchemaTest.cs を開きます。  
+2.  ソリューション エクスプローラで、poschematest.cs します。  
   
-3.  ファイルの一番下までスクロールし、置換、 **POSchemaConstructorTest**を次のコード サンプルの注文書を検証するメソッドは、メッセージを入力します。  
+3.  ファイルの一番下までスクロールし、置換、 **POSchemaConstructorTest**を次のコード サンプルの注文書を検証メソッドは、メッセージを入力します。  
   
     ```  
     [TestMethod()]  
@@ -76,7 +76,7 @@ ms.locfileid: "22288994"
     }  
     ```  
   
-4.  ソリューション エクスプローラーで POToInvoiceTest.cs を開き、次のディレクティブをそのファイルの先頭に追加します。  
+4.  ソリューション エクスプ ローラーで potoinvoicetest.cs を開き、次のディレクティブをそのファイルの先頭に追加します。  
   
     ```  
   
@@ -113,21 +113,21 @@ ms.locfileid: "22288994"
   
 ### <a name="building-and-running-the-unit-test"></a>単体テストのビルドと実行  
   
-1.  ソリューション エクスプ ローラーで右クリック**TestProject1**、クリックして**ビルド**です。  
+1.  ソリューション エクスプ ローラーで右クリックして**TestProject1**、 をクリックし、**ビルド**します。  
   
-2.  メイン メニューで、をクリックして**テスト**、し、 **Windows**一覧で、クリックして**テスト ビュー**です。  
+2.  メイン メニューで、次のようにクリックします。**テスト**、し、 **Windows**一覧で、**テスト ビュー**します。  
   
-3.  テスト ビュー ウィンドウで右クリック**poschemainstancevalidationtest**、クリックして**選択範囲の実行**です。 されることを確認**成功**テスト結果 ウィンドウでします。  
+3.  テスト ビュー ウィンドウで右クリック**poschemainstancevalidationtest**、 をクリックし、**選択範囲の実行**します。 あることを確認**成功**テスト結果 ウィンドウにします。  
   
-4.  テスト ビュー ウィンドウで右クリック**POToInvoiceMapTest**、クリックして**選択範囲の実行**です。 されることを確認**成功**テスト結果 ウィンドウでします。  
+4.  テスト ビュー ウィンドウで右クリック**POToInvoiceMapTest**、 をクリックし、**選択範囲の実行**します。 あることを確認**成功**テスト結果 ウィンドウにします。  
   
 5.  テストが不合格の場合、[テスト結果] ウィンドウのテストをダブルクリックして、不合格の原因となったアサートまたは例外を確認します。  
   
 ## <a name="test-code-summary"></a>テスト コードのまとめ  
- 単体テストが有効にすると、 **HelloWorld**プロジェクト、c# のクラスに関連付けられている**POSchema.xsd**から派生した、 **Microsoft.BizTalk.TestTools.Schema.TestableSchemaBase**クラスです。 **[Poschemainstancevalidationtest]** メソッド**TestProject1**使用、 **ValidateInstance**のメソッド、 **POSchema**にクラスPO スキーマに対する SamplePOInput.xml を検証します。  
+ 単体テストが有効な場合に、 **HelloWorld**プロジェクト、C#クラスに関連付けられている**POSchema.xsd**から派生した、 **Microsoft.BizTalk.TestTools.Schema.TestableSchemaBase**クラス。 **[Poschemainstancevalidationtest]** メソッド**TestProject1**使用、 **ValidateInstance**のメソッド、 **POSchema**クラスPO スキーマに対する SamplePOInput.xml を検証します。  
   
- 同様に、単体テストが有効な場合の**HelloWorld**プロジェクト、c# のクラスに関連付けられている、 **POToInvoice.btm**マップの派生元の**Microsoft.BizTalk.TestTools.Mapper.TestableMapBase**クラスです。 **POToInvoiceMaptest**使用する方法、 **TestMap**のメソッド、 **POToInvoice**同じ SamplePOInput.xml メッセージを使用してマップをテストするクラス。 これにより、SampleInvoiceOutput.xml が HelloWorld ディレクトリで作成されました。  
+ 同様に、単体テストが有効な場合の**HelloWorld**プロジェクト、C#クラスに関連付けられている、 **POToInvoice.btm**マップがから派生した、 **Microsoft.BizTalk.TestTools.Mapper.TestableMapBase**クラス。 **POToInvoiceMaptest**メソッドの使用、 **TestMap**のメソッド、 **POToInvoice**同じ SamplePOInput.xml メッセージを使用してマップをテストするクラス。 これにより、SampleInvoiceOutput.xml が HelloWorld ディレクトリで作成されています。  
   
 ## <a name="see-also"></a>参照  
- [単体テストのパイプラインを持つ機能の使用](../core/using-the-unit-testing-feature-with-pipelines.md)   
+ [単体テストのパイプラインを持つ機能を使用します。](../core/using-the-unit-testing-feature-with-pipelines.md)   
  [単体テスト (Visual Studio) の操作](http://go.microsoft.com/fwlink/?LinkId=128890)

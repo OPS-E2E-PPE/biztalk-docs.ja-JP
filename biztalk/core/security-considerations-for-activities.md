@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3bca070662feb0731abb5adbf2147a2e24b5a6e2
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e6c6faca1adf03c216cc0ce6fd4510c937cb1963
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36974115"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65250990"
 ---
 # <a name="security-considerations-for-activities"></a>アクティビティのセキュリティに関する考慮事項
 WCF アダプタの通信データを受信するときに使用するセキュリティ ロールは、他の BAM ソリューションで使用するものと同じです。 このため、WCF アダプタの通信データを受信するときは、使用するユーザーとライタ ロールの適切な選択にも注意を払う必要があります。  
@@ -36,25 +36,25 @@ WCF アダプタの通信データを受信するときに使用するセキュ�
   > [!NOTE]
   >  この場合、ユーザーを各アクティビティに固有のイベント ライタ ロールに追加する必要があります。  
   
-  BAM イベント ライター ロールを構成する方法の詳細については、[かを確認し、アクティビティ イベント ライター ロールを設定する方法](../core/how-to-determine-and-set-event-writer-roles-for-activities.md)を参照してください。  
+  BAM イベント ライター ロールを構成する方法の詳細については、次を参照してください。[かを確認し、アクティビティ イベント ライター ロールを設定する方法](../core/how-to-determine-and-set-event-writer-roles-for-activities.md)します。  
   
 > [!IMPORTANT]
 >  BizTalk Application Users グループのメンバーがあります。  
   
  IIS 使用時の偽装対策のために BAM WCF インターセプタを構成する場合に使用するユーザー アカウントを選択するときは、次のシナリオに基づいて判断する必要があります。  
   
-- 自己ホスト型: コンピューターでの実行を実行可能ファイルを保持する WCF サービス開く。  
+- 自己ホスト型。コンピューターで実行可能ファイル実行を保持している WCF サービス開きます。  
   
-- WCF アダプター: を使用して作成したソリューション、 **Biztalk WCF サービス公開ウィザード**します。  
+- WCF アダプター:使用して作成したソリューション、 **Biztalk WCF サービス公開ウィザード**します。  
   
-- IIS でホストされる: WCF サービスを使用して、IIS アプリケーションでホストされるソリューションです。  
+- IIS でホストされます。WCF サービスを使用して、IIS アプリケーションでホストされているソリューションです。  
   
   次の表を基準に、使用するアカウントを決定してください。  
   
 |ソリューションの種類|使用するアカウント|  
 |-------------------|--------------------|  
 |自己ホスト型|サービスをオープンな状態で格納する実行可能ファイルの実行に使用するアカウント。|  
-|WCF アダプター|AppPool id を使用します。 これは、受信場所が存在する Vroot に関連付けられた AppPool です。 使用する場合、この id が自動的に作成、 **BizTalk WCF サービス公開ウィザード**サイトを発行します。 これは、IIS ホスト型ソリューションの特殊なケースと考えることができます。|  
+|WCF アダプター|AppPool id を使用します。これは、受信場所が存在する Vroot に関連付けられた AppPool です。 使用する場合、この id が自動的に作成、 **BizTalk WCF サービス公開ウィザード**サイトを発行します。 これは、IIS ホスト型ソリューションの特殊なケースと考えることができます。|  
 |IIS ホスト型|WCF サービスの VRoot/Application を実行する AppPool ユーザーの ID。|  
   
 ## <a name="see-also"></a>参照  

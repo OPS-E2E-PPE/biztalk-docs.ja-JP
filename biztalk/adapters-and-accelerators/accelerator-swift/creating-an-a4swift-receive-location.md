@@ -15,19 +15,19 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b19330a4d4ab207c7d5e0f920dadb432b733df19
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6754b53bc12e7231b35327017831d3591fbde6b9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36968371"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65378484"
 ---
 # <a name="creating-an-a4swift-receive-location"></a>受信場所を A4SWIFT の作成
 作成する必要があります、[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]受信場所で行う SWIFT ネットワークからのメッセージの受信を有効にする[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]、次の図に示すようにします。 受信場所は、受信ファイルのフォルダーからフラット ファイル メッセージを受信します。  
 
  ![](../../adapters-and-accelerators/accelerator-swift/media/a4swift-receive-location-configuration.gif "A4SWIFT_Receive_Location_Configuration")  
 
- **概要**  
+ **まとめ**  
 
  作成し、一方向の受信ポートのバインドを作成し、次のプロパティおよびコンポーネントの受信場所を有効にします。  
 

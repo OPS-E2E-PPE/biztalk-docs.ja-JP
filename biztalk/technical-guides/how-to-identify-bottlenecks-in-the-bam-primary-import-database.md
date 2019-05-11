@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 613bfa623110a4792894da71365c1a40d7856c15
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 541e5bcce9420fdbca8af25de9bee24bfb607435
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37003627"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65253470"
 ---
 # <a name="how-to-identify-bottlenecks-in-the-bam-primary-import-database"></a>BAM プライマリ インポート データベースのボトルネックを特定する方法
 ビジネス アクティビティ監視 (BAM) データベースのボトルネックを識別するために、次の手順に従います。  

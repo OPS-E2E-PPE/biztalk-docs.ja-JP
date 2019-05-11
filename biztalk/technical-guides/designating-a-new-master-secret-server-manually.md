@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2b9453ade3d447e874609d1357e2383a5c21686f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f0e198d5aa82b22170fe4ed52115bf7c72b0c55f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36975099"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65305785"
 ---
 # <a name="designating-a-new-master-secret-server-manually"></a>新しいマスター シークレット サーバーを手動で指定します。
 クラスターのハードウェアは高価にすることはできます。 ハードウェアのコストが重要である場合は、障害のシナリオの中にマスター シークレット サーバーに別のエンタープライズ シングル サインオン (SSO) サーバーを手動で指定することを検討できます。 このオプションを使用して、SSO グループの他の SSO サーバーは、マスター シークレット サーバーに昇格できます。 マスターは、ときに、マスター シークレット サーバーを使用する SSO サーバーのいずれかを手動で昇格できます。 この手法の最大の欠点は、既存の展開を編集、既存を再起動できません[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]サービス、または新しいマスター シークレット サーバーを昇格するまで、新しい BizTalk アプリケーションをデプロイします。  

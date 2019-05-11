@@ -1,5 +1,5 @@
 ---
-title: Microsoft BizTalk Accelerator 用 HL7 にアップグレードをインストールまたは |Microsoft ドキュメント
+title: Microsoft BizTalk Accelerator for HL7 にアップグレードをインストールまたは |Microsoft Docs
 description: インストールの概要を構成、アップグレード、アンインストール、および BizTalk Server で HL7 アクセラレータのトラブルシューティング
 caps.latest.revision: 2
 author: MandiOhlinger
@@ -13,24 +13,24 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c984fbad-43a6-459d-9583-d0acf77e0ef8
 ms.author: mandia
-ms.openlocfilehash: 31ff375cedf6945638b3ee1161403340f5935df0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8201041e14c128077f90a1ff8c7a562c2cea0361
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22204738"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65296301"
 ---
-# <a name="install-or-upgrade-microsoft-biztalk-accelerator-for-hl7"></a>インストールまたは Microsoft BizTalk Accelerator 用 HL7 にアップグレード
-[!INCLUDE[HL7_CurrentVersion_FirstRef_md](../../includes/hl7-currentversion-firstref-md.md)]含むプラットフォームで動作[!INCLUDE[btsBizTalkServerNoVersion_md](../../includes/btsbiztalkservernoversion-md.md)]、 [!INCLUDE[btsVStudioNoVersion_md](../../includes/btsvstudionoversion-md.md)]、および[!INCLUDE[btsSQLServerNoVersion_md](../../includes/btssqlservernoversion-md.md)]です。 
+# <a name="install-or-upgrade-microsoft-biztalk-accelerator-for-hl7"></a>インストールまたは Microsoft BizTalk Accelerator for HL7 にアップグレード
+[!INCLUDE[HL7_CurrentVersion_FirstRef_md](../../includes/hl7-currentversion-firstref-md.md)] などのプラットフォームで動作[!INCLUDE[btsBizTalkServerNoVersion_md](../../includes/btsbiztalkservernoversion-md.md)]、 [!INCLUDE[btsVStudioNoVersion_md](../../includes/btsvstudionoversion-md.md)]、および[!INCLUDE[btsSQLServerNoVersion_md](../../includes/btssqlservernoversion-md.md)]します。 
 
-このセクションでは、インストール、アップグレード、または更新または修復する方法を示します[!INCLUDE[HL7_CurrentVersion_abbrev_md](../../includes/hl7-currentversion-abbrev-md.md)]です。 インストールに関する既知の問題も一覧表示します。
+このセクションでは、インストール、アップグレード、または更新または修復する方法を示します[!INCLUDE[HL7_CurrentVersion_abbrev_md](../../includes/hl7-currentversion-abbrev-md.md)]します。 インストールに関する既知の問題もリストします。
 
 ## <a name="in-this-section"></a>このセクションの内容
 
-* [HL7 の BizTalk アクセラレータをインストールします。](../../adapters-and-accelerators/accelerator-hl7/install-biztalk-accelerator-for-hl7.md)
+* [BizTalk Accelerator for HL7 のインストール](../../adapters-and-accelerators/accelerator-hl7/install-biztalk-accelerator-for-hl7.md)
 
-* [アップグレードの BizTalk Accelerator 用 HL7](../../adapters-and-accelerators/accelerator-hl7/upgrade-biztalk-accelerator-for-hl7.md)
+* [BizTalk Accelerator for HL7 のアップグレード](../../adapters-and-accelerators/accelerator-hl7/upgrade-biztalk-accelerator-for-hl7.md)
 
-* [更新、修復、または BizTalk Accelerator を HL7 のアンインストール](../../adapters-and-accelerators/accelerator-hl7/update-repair-or-uninstall-biztalk-accelerator-for-hl7.md)
+* [BizTalk Accelerator for HL7 の更新、修復、またはアンインストール](../../adapters-and-accelerators/accelerator-hl7/update-repair-or-uninstall-biztalk-accelerator-for-hl7.md)
 
-* [インストールの既知の問題](../../adapters-and-accelerators/accelerator-hl7/installation-known-issues.md)
+* [インストールに関する既知の問題](../../adapters-and-accelerators/accelerator-hl7/installation-known-issues.md)

@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 110dced7d3931e1987ccf966efffb700e1c5555b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 450e333503f15eec25dd7a5964223599c3928ef9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37020520"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65277145"
 ---
 # <a name="installing-com-hotfix-rollup-packages"></a>COM + 修正プログラム ロールアップ パッケージをインストールします。
 > [!NOTE]  

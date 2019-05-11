@@ -1,5 +1,5 @@
 ---
-title: データ損失の解決 |Microsoft ドキュメント
+title: データ損失の解決 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,20 +15,20 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e22c445880c69c63f5dd086b2e86968fd0c62f55
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: da63f108218a803b8d82f03d75a1a05a5924043e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22268690"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65255160"
 ---
 # <a name="resolving-data-loss"></a>データ損失の解決
 データを損失すると、その復旧が困難または不可能になる場合があります。 このセクションの各トピックでは、データ損失を最小限に抑えるためのプロセスについて説明します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [実行中のオーケストレーションのデータ損失の解決](../core/resolving-data-loss-of-in-progress-orchestrations.md)  
+-   [進行中のオーケストレーションのデータ損失の解決](../core/resolving-data-loss-of-in-progress-orchestrations.md)  
   
--   [識別するには、追跡データが失われる](../core/identifying-lost-tracking-data.md)  
+-   [失われた追跡データの特定](../core/identifying-lost-tracking-data.md)  
   
--   [BAM で完了済みとして実行中のトランザクションのマークを付ける](../core/marking-in-progress-transactions-as-complete-in-bam.md)
+-   [BAM の進行中トランザクションを "完了" としてマークする](../core/marking-in-progress-transactions-as-complete-in-bam.md)

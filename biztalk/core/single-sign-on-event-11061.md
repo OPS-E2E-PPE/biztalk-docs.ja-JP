@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 11061 |Microsoft Docs'
+title: シングル サインオン:イベント 11061 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1733e444ecdfdaf54b20beb2de6894ade3466f4c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5da9ae664cd16a9fe6fe528650775877bd2322f7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37011331"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65258747"
 ---
-# <a name="single-sign-on-event-11061"></a>シングル サインオン: イベント 11061
+# <a name="single-sign-on-event-11061"></a>シングル サインオン:イベント 11061
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                                                                                                                                                                                                   |
@@ -30,10 +30,10 @@ ms.locfileid: "37011331"
 |  イベント ソース   |                                                                                                                              ENTSSO                                                                                                                               |
 |    コンポーネント    |                                                                                                                                なし                                                                                                                                |
 |  シンボル名  |                                                                                                                   SSO_WARN_BAD_PASSWORD_FILTER                                                                                                                    |
-|  メッセージ テキスト   | パスワード フィルター文字列が有効ではありません。 パスワード フィルターは使用されません。%r<br /><br /> アプリケーション名: %1 %r<br /><br /> パスワード フィルタ文字列: % 2 %r<br /><br /> 処理されたトークンの数: % 3 %r<br /><br /> 追加データ: % 4 %r<br /><br /> エラー コード: %5 |
+|  メッセージ テキスト   | パスワード フィルタ文字列が無効です。 パスワード フィルターが used.%r はありません。<br /><br /> アプリケーション名: %1 %r<br /><br /> パスワード フィルタ文字列: % 2 %r<br /><br /> 処理されたトークンの数: % 3 %r<br /><br /> 追加データ: % 4 %r<br /><br /> エラー コード: %5 |
   
 ## <a name="explanation"></a>説明  
- 無効なパスワード フィルターが手動で作成されました。 このプロセスの途中で、エラーが発生しました (エラーの場所については、警告テキストの "パスワード フィルター文字列" を参照してください)。  
+ 無効なパスワード フィルターを手動で作成されました。 このプロセスでは、ある時点で、エラーが発生しました (エラーの場所の警告テキストでパスワード フィルター文字列を参照してください)。  
   
 ## <a name="user-action"></a>ユーザーの操作  
  パスワード フィルターの作成ウィザードを使用して、パスワード フィルターを作成するを参照してください。[パスワード フィルターを使用する方法](../core/how-to-use-password-filters.md)します。

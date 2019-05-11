@@ -16,12 +16,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0d7251ce1c041ebfd2f523e3304bd253fec22fb9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f90b215857f0d0fea5e1bd899e1101b117b8ecbe
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36983011"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65255597"
 ---
 # <a name="data-type-id-in-hl7"></a>HL7 のデータ型の ID
 HL7 の V2.1 の場合は、データ型の ID は、未定義のデータ型のプレース ホルダーは。 その使用法の例を次に示します。  
@@ -32,13 +32,13 @@ HL7 の V2.1 の場合は、データ型の ID は、未定義のデータ型の
   
   具体的には定義された複合データ型の例を次に示します。  
   
-- チェック ディジット CK: 複合 ID。 以下に例を示します。  
+- CK:チェック ディジット複合 ID。 例 :  
   
   ```  
   |128952^6^M11|  
   ```  
   
-- CN: 複合 ID 番号と名前です。 以下に例を示します。  
+- CN:複合の ID 番号と名前です。 以下に例を示します。  
   
   ```  
   |12372^RIGGINS^JOHN^""^MD|  
@@ -46,13 +46,13 @@ HL7 の V2.1 の場合は、データ型の ID は、未定義のデータ型の
   |^RIGGINS^JOHN^""^MD|  
   ```  
   
-- 単位付き CQ: 複合数量です。 以下に例を示します。  
+- CQ:単位付きの複合数量です。 以下に例を示します。  
   
   ```  
   |123.7^ML|  
   ```  
   
-- CE: コード化された要素。 以下に例を示します。  
+- CE:コード化された要素。 例 :  
   
   ```  
   |54.21^Laparoscopy^I9C^42112^^AS4|  

@@ -12,17 +12,17 @@ caps.latest.revision: 49
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2d72ccdb39bec5e063f48206df0bfcc54364d11c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: dd4997c26328721e5ff10218a8ebe07ea52987f1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36981427"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65250242"
 ---
 # <a name="walkthrough-consuming-wcf-services-with-the-wcf-basichttp-adapter"></a>チュートリアル: Wcf-basichttp アダプターを使用した WCF サービスの使用
   
 > [!NOTE]
->  アダプターの詳細については、[BizTalk Server のアダプター](../core/adapters-in-biztalk-server.md)を参照してください。  
+>  アダプターの詳細については、次を参照してください。 [BizTalk Server のアダプター](../core/adapters-in-biztalk-server.md)します。  
   
 ## <a name="introduction"></a>概要
   
@@ -131,7 +131,7 @@ ms.locfileid: "36981427"
   
    - 2 番目のスキーマ ファイル (**OrderProcessServiceType_schemas_microsoft_com_2003_10_Serialization.xsd**) によってエクスポート[DataContractSerializer](http://go.microsoft.com/fwlink/?LinkId=81722)型、要素、および属性から、名前空間、 http://schemas.microsoft.com/2003/10/Serialization/ します。  
   
-   - BizTalk アプリケーションの作成後で使用される、2 つのバインド ファイルが生成されます: **OrderProcessServiceType.BindingInfo.xml**と**OrderProcessServiceType_Custom.BindingInfo.xml**します。 通常は、非カスタム バインド ファイルを使用します。 ただし、カスタム バインド要素を使用する一部の特別な状況では、カスタム バインド ファイルを使用します。 カスタム バインド要素は、アプリケーション用の送信ポートを作成します。 ダブルクリックして、 **OrderProcessServiceType.BindingInfo.xml**ファイルを検索、 **SendPort**定義線、およびレビューにこのバインドをインポートするときに作成される送信ポートのファイル[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]:  
+   - BizTalk アプリケーションの作成後で使用される 2 つのバインド ファイルが生成されます。**OrderProcessServiceType.BindingInfo.xml**と**OrderProcessServiceType_Custom.BindingInfo.xml**します。 通常は、非カスタム バインド ファイルを使用します。 ただし、カスタム バインド要素を使用する一部の特別な状況では、カスタム バインド ファイルを使用します。 カスタム バインド要素は、アプリケーション用の送信ポートを作成します。 ダブルクリックして、 **OrderProcessServiceType.BindingInfo.xml**ファイルを検索、 **SendPort**定義線、およびレビューにこのバインドをインポートするときに作成される送信ポートのファイル[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]:  
   
      ```  
      <SendPort Name="WCFSendPort_OrderProcessServiceType_ServiceEndpoint" …  >  
@@ -178,7 +178,7 @@ ms.locfileid: "36981427"
        このフィールドは、送信 SOAP HTTP 要求メッセージの目的を示します。 ここでは、Microsoft.Samples.BizTalk.WCF.BasicHttpSendAdapter.BasicHttpWcfServiceConsuming 名前空間の IOrderProcess インターフェイスで送信操作を呼び出します。  
   
       > [!NOTE]
-      >  バインド ファイルで、 **BizTalk WCF サービス使用ウィザード**アクション マッピング形式の使用を生成、 **StaticAction**プロパティ。 設定する必要があります、WCF 送信アダプターの WCF サービスにメッセージを送信するコンテンツ ベース ルーティングを使用する場合、 **BTS します。操作**コンテンツ ベースのルーティングに使用するフィールドとアクション マッピング形式のパイプライン コンポーネントのプロパティ。 または、コンテンツ ベースのルーティングに対しシングル アクション形式も使用できます。 このチュートリアルでは、シングル アクション形式を使用します。 シングル アクション形式とアクション マッピング形式の詳細については、、 **Wcf-basichttp トランスポートのプロパティ ダイアログ ボックス、送信、一般的な**タブ[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]を参照してください。  
+      >  バインド ファイルで、 **BizTalk WCF サービス使用ウィザード**アクション マッピング形式の使用を生成、 **StaticAction**プロパティ。 設定する必要があります、WCF 送信アダプターの WCF サービスにメッセージを送信するコンテンツ ベース ルーティングを使用する場合、 **BTS します。操作**コンテンツ ベースのルーティングに使用するフィールドとアクション マッピング形式のパイプライン コンポーネントのプロパティ。 または、コンテンツ ベースのルーティングに対しシングル アクション形式も使用できます。 このチュートリアルでは、シングル アクション形式を使用します。 シングル アクション形式とアクション マッピング形式の詳細については、次を参照してください。、 **Wcf-basichttp トランスポートのプロパティ ダイアログ ボックス、送信、一般的な**タブ[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]します。  
   
    9. クリックして**OK**に戻るには 2 回、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソール。  
   
@@ -251,6 +251,6 @@ ms.locfileid: "36981427"
 8. チェック、 **C:\WCFBasicHttpSendAdapter\WCFAdapterErrorOut**からのエラー メッセージを含む XML ファイルのフォルダー、[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]サービス。 見て、 \< **faultstring** \>フィールドに、無効なメッセージ本文のエラー メッセージの原因を表示します。  
   
 ## <a name="see-also"></a>参照  
- [チュートリアル: Wcf-basichttp アダプターを使用した WCF サービスの発行](../core/walkthrough-publishing-wcf-services-with-the-wcf-basichttp-adapter.md)   
+ [チュートリアル: Wcf-basichttp アダプターで WCF サービスの公開](../core/walkthrough-publishing-wcf-services-with-the-wcf-basichttp-adapter.md)   
  [BizTalk WCF サービス使用ウィザードを使用して WCF サービスを使用する方法](../core/how-to-use-the-biztalk-wcf-service-consuming-wizard-to-consume-a-wcf-service.md)   
  [WCF アダプターのメッセージ本文の指定](../core/specifying-the-message-body-for-the-wcf-adapters.md)

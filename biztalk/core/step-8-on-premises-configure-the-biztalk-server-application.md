@@ -1,5 +1,5 @@
 ---
-title: '手順 8 (オンプレミス): BizTalk Server アプリケーションの構成 |Microsoft Docs'
+title: 手順 8 (オンプレミス):BizTalk Server アプリケーションの構成 |Microsoft Docs
 ms.custom: ''
 ms.date: 2015-12-08
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 93b3eafcc5e49bb6fa360f1db4b6e92d9393068a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ccff5ca7f7f101eb5b203196449ce1cbb1834b49
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36996843"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65258638"
 ---
-# <a name="step-8-on-premises-configure-the-biztalk-server-application"></a>手順 8 (オンプレミス): BizTalk Server アプリケーションを構成します。
+# <a name="step-8-on-premises-configure-the-biztalk-server-application"></a>手順 8 (オンプレミス):BizTalk Server アプリケーションを構成します。
 前のステップでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] オーケストレーションを作成しました。 このステップでは、アプリケーションをビルドし、展開し、構成します。  
 
 ## <a name="build-and-deploy-the-application"></a>アプリのビルドと配置  
@@ -82,9 +82,9 @@ ms.locfileid: "36996843"
       | **受信パイプライン** |        選択**XMLReceive**します。        |
 
 
-   5. クリックして**構成**します。  
+   5. をクリックして**構成**です。  
 
-   6. Sb-messaging トランスポートのプロパティ ダイアログ ボックスで 、**全般** タブの**キューまたはサブスクリプション URL**、入力**sb://mynamespace.servicebus.appfabriclabs.com/queueordersedi**. ここでは、 *mynamespace*は Service Bus 名前空間と*queueordersedi*で作成した Service Bus キューは、[手順 3 (Azure 用): Service Bus キューを作成](../core/step-3-for-azure-create-a-service-bus-queue.md)です。  
+   6. Sb-messaging トランスポートのプロパティ ダイアログ ボックスで 、**全般** タブの**キューまたはサブスクリプション URL**、入力**sb://mynamespace.servicebus.appfabriclabs.com/queueordersedi**. ここでは、 *mynamespace*は Service Bus 名前空間と*queueordersedi*で作成した Service Bus キューは、[手順 3 (Azure 用)。Service Bus のキュー作成](../core/step-3-for-azure-create-a-service-bus-queue.md)です。  
 
    7. Sb-messaging トランスポートのプロパティ ダイアログ ボックスでの**認証** タブで、次の値を指定します。  
 
@@ -111,17 +111,17 @@ ms.locfileid: "36996843"
       |     **名前**      |         型**SendToSQL**します。          |
       |     **型**      |         選択**WCF-SQL**します。          |
       | **送信ハンドラー**  | 選択**BizTAlkServerApplication**します。 |
-      | **送信パイプライン** |     選択**PassThruTransmit**します。     |
+      | **送信パイプライン** |     選択**PassThruTransmit**です。     |
 
 
-   3. クリックして**構成**します。  
+   3. をクリックして**構成**です。  
 
    4. WCF-SQL トランスポートのプロパティで、**全般** タブで、次の操作を行います。  
 
 
       |     プロパティ      |                                                                                                                                                                                    目的                                                                                                                                                                                    |
       |-------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-      | **アドレス (URI)** | 型 **//computername/database_instance_name/databasename**します。 たとえばに接続するため、 **DemoDB**既定のデータベース インスタンスで実行されているローカル コンピューター上のデータベースに、入力します `mssql://.//DemoDB`<br /><br /> 詳細については、[SQL Server 接続 URI の作成](../adapters-and-accelerators/adapter-sql/create-the-sql-server-connection-uri.md)を参照してください。 |
+      | **アドレス (URI)** | 型 **//computername/database_instance_name/databasename**します。 たとえばに接続するため、 **DemoDB**既定のデータベース インスタンスで実行されているローカル コンピューター上のデータベースに、入力します `mssql://.//DemoDB`<br /><br /> 詳細については、次を参照してください。 [SQL Server 接続 URI の作成](../adapters-and-accelerators/adapter-sql/create-the-sql-server-connection-uri.md)です。 |
       |    **操作**     |                                                                                                                                                                     型**TableOp/挿入/dbo/SalesOrder**します。                                                                                                                                                                      |
 
 
@@ -144,7 +144,7 @@ ms.locfileid: "36996843"
       | **送信パイプライン** |       選択**XML Transmit**します。       |
 
 
-   3. クリックして**構成**します。  
+   3. をクリックして**構成**です。  
 
    4. [FILE トランスポートのプロパティ] で、次の操作を行います。  
 

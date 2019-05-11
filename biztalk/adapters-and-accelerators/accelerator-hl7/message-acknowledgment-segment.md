@@ -15,17 +15,17 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a8f771968e6d7c7f58ccd8d3e68b43aac0eb64e0
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 20c0e8377666d551867148ebff871b6728e8b561
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36968499"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65309584"
 ---
 # <a name="message-acknowledgment-segment"></a>メッセージの受信確認セグメント
 受信確認 (ACK) メッセージのメッセージ受信確認 (MSA) セグメントでは、ACK を受信する、システムが送信を示し、どのようなメッセージの受信確認の種類を識別します。 2 つの必須セグメントで構成されています。 受信確認、コードとメッセージのコントロール id。  
 
-## <a name="acknowledgment-code-msa1"></a>受信確認コード: MSA1  
+## <a name="acknowledgment-code-msa1"></a>受信確認コード:MSA1  
  次の表では、メッセージの受信の結果を示す MSA1 の使用可能なフィールド値を示します。  
 
 |値|説明|説明|  
@@ -41,8 +41,8 @@ ms.locfileid: "36968499"
 |            受信確認のモード            |                                                           MSA2 内の値                                                            |
 |-------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
 |               元のモード               |                  転置、MSH10 内の値の値 (コントロールの ID をメッセージ)、元のメッセージのフィールド                   |
-|   拡張モード: コミットの確認    |                  転置、MSH10 内の値の値 (コントロールの ID をメッセージ)、元のメッセージのフィールド                   |
-| 拡張モード: アプリケーションの受信確認 | によって生成された GUID[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]受信確認の場合 |
+|   拡張モード:受信確認をコミットします。    |                  転置、MSH10 内の値の値 (コントロールの ID をメッセージ)、元のメッセージのフィールド                   |
+| 拡張モード:アプリケーションの受信確認 | によって生成された GUID[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]受信確認の場合 |
 
 ## <a name="see-also"></a>参照  
  [作成して、受信確認の処理](../../adapters-and-accelerators/accelerator-hl7/creating-and-processing-acknowledgments.md)   

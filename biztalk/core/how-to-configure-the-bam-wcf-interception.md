@@ -1,5 +1,5 @@
 ---
-title: BAM WCF インターセプションを構成する方法 |Microsoft ドキュメント
+title: BAM WCF インターセプションを構成する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,132 +12,132 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e90577a73abc0291635bf4b7d9bad34a11d1f806
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 51eb7a1a5e7fc8ac6c94af3f16051d85dd8731b9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22249210"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65341231"
 ---
 # <a name="how-to-configure-the-bam-wcf-interception"></a>BAM WCF インターセプションを構成する方法
-BAM を WCF インターセプション用に構成するには、イベント ソースに対する正しいアセンブリ マニフェストにアクセスするようにインターセプター構成ファイルを変更する必要があります。  
+で BAM を WCF インターセプションを構成するには、イベント ソースに対する正しいアセンブリ マニフェストにアクセスするインターセプター構成ファイルを変更する必要があります。  
   
- 正しく書式設定された指定する必要があります、イベントを構成する際、 [XPath](../core/xpath.md)アクションの式。  
+ 正しく書式設定されたを指定する必要があります、イベントを構成するときに[XPath](../core/xpath.md)アクションの式。  
   
- 適切な形式を作成することができます[XPath](../core/xpath.md)メッセージが含まれるサンプル WCF ログを生成するために WCF トレースとアプリケーションの実行を有効にすると、インターセプタ構成で使用する式。 使用することができます、 **Microsoft Service Trace Viewer** (SvcTraceViewer.exe) をログを表示して、メッセージを展開します。 このビューアは、WCF SDK に付属しています。 必要な[XPath](../core/xpath.md)式は、メッセージ ベースの形式し、インターセプター構成に適用します。  
+ 適切な形式を作成する[XPath](../core/xpath.md)メッセージが含まれるサンプル WCF ログを生成するために WCF トレースとアプリケーションの実行を有効にすると、インターセプター構成に使用する式。 使用することができます、 **Microsoft Service Trace Viewer** (SvcTraceViewer.exe) をログを表示し、メッセージを抽出します。 ビューアーは、WCF SDK に含まれています。 必要な[XPath](../core/xpath.md)式は、メッセージ ベースの形式し、インターセプター構成に適用します。  
   
- BAM WCF インターセプションを構成するときには、machine.config ファイルで使用されている動作拡張機能が、受信場所のカスタム動作構成で使用されている拡張機能に一致することが不可欠です。 machine.config ファイルで構成されている受信場所の拡張子の名前を変更すると、動作が読み込みに失敗します。 また、受信場所の構成 UI が失敗します。  
+ BAM WCF インターセプションを構成する場合は、machine.config ファイルで使用されている動作拡張機能が、受信場所のカスタム動作構成で使用される拡張機能と一致することが重要です。 構成の拡張機能の名前を変更するメッセージが表示される場所、machine.config ファイルで読み込みに失敗します。 さらに、受信場所の構成 UI は失敗します。  
   
- クラスタ化されたシナリオでは、カスタム動作は一度だけ構成されるため、クラスタ内のコンピュータ上のすべての machine.config ファイルで同じファイル名拡張子を指定する必要があります。  
+ クラスタ化されたシナリオでは、することが必要に 1 回だけカスタム動作が構成されているために、クラスター内のコンピューター上のすべての machine.config ファイルは、同じファイル名拡張子を指定します。  
   
 ### <a name="to-set-the-manifest"></a>マニフェストを設定するには  
   
-1.  インターセプション構成内の EventSource のマニフェストに、「Microsoft.BizTalk.Adapter.Wcf.Runtime.ITwoWayAsyncVoid, Microsoft.BizTalk.Adapter.Wcf.Runtime, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35」を設定します。  
+1.  インターセプション構成内の EventSource のマニフェストを設定 ' Microsoft.BizTalk.Adapter.Wcf.Runtime.ITwoWayAsyncVoid、, Microsoft.BizTalk.Adapter.Wcf.Runtime, バージョン =, Culture = neutral, PublicKeyToken = 31bf3856ad364e35'  
   
     > [!NOTE]
-    >  使用するサービスと受信ポートの種類に基づいてインターフェイスが変更されます。 次の表に従って、使用するポートの種類を反映するようにマニフェスト行を変更します。  
+    >  使用するサービス/受信ポートの種類に基づいてインターフェイスが変更されます。 次の表に従って、使用するポートの種類を反映するようにマニフェスト行を変更します。  
   
     |ポートの種類|新しく使用する機能|  
     |---------------|---------|  
-    |双方向ポート|ITwoWayAsync|  
-    |本質的に 2 つの双方向のバインドを持つ一方向のポート (たとえば HTTP)。|ITwoWayAsyncVoid|  
-    |トランザクションを使用する、本質的に 2 つの双方向のバインドを持つ一方向のポート。|ITwoWayAsyncVoidTxn|  
-    |一方向のバインド (たとえば MSMQ)。|IOneWayAsync|  
+    |双方向のポート|ITwoWayAsync|  
+    |バインドを持つ一方向のポートは、本質的に、2 の 2 つの方法 (HTTP など) です。|ITwoWayAsyncVoid|  
+    |バインドを持つ一方向のポートは、本質的に 2 つのトランザクションで双方向です。|ITwoWayAsyncVoidTxn|  
+    |1 つの方法 (たとえば、MSMQ) のバインド。|IOneWayAsync|  
     |トランザクションを使用する一方向のバインド。|IOneWayAsyncTxn|  
   
     > [!IMPORTANT]
-    >  使用する代わりに、フィルターで、 [GetOperationName](../core/getoperationname.md)操作、次の例で強調表示されている XPath 操作を使用します。 汎用の契約では、すべてのメッセージが汎用の操作に到着し、そこでメッセージ自身 (Action 属性) に基づいて個別の操作にルーティングされます。  
+    >  フィルターで使用する代わりに、 [GetOperationName](../core/getoperationname.md)操作では、次の例で強調表示されている XPath 操作を使用します。 汎用の契約は、すべてのメッセージはメッセージ自身 (Action 属性) に基づいて特定の操作にルーティングされますがこの時点で、汎用の操作に到着します。  
   
-2.  この時点では操作名は常に同じです。 WCF アダプタ (汎用の契約を使用) の場合、メソッド BizTalkSubmit が使用されます。 GetOperationName の代わりに Action ノードに対する XPath を使用して操作名を取得できます。 その後、操作名に対してフィルタを適用できます。  
+2.  操作名が必ず同じこの時点でします。 WCF アダプタ (汎用の契約を使用) する場合は、使用されるメソッドは、BizTalkSubmit を示します。 GetOperationName の代わりにアクション ノードの XPath を使用すると、操作名を取得します。 操作名でフィルター処理できます。  
   
 ## <a name="sample-interceptor-configurations"></a>インターセプタ構成のサンプル  
- このサンプルは、WCF アダプタの ServiceRequest と ServiceReply の使用方法を示します。 強調表示されたセクションで、 [XPath](../core/xpath.md)フィルターを使用せずに操作を適用するアクションの式が使用される[GetOperationName](../core/getoperationname.md)です。 応答に対してフィルタを適用することもできますが、ITwoWayAsync の場合だけです。 その他すべてのインターフェイスは、何も返さないか void を返します。  
+ このサンプルでは、WCF アダプタの ServiceRequest と ServiceReply の使用状況を示します。 強調表示されたセクションでは、 [XPath](../core/xpath.md)アクションに式を使用して、操作を使用する代わりにフィルター処理を[GetOperationName](../core/getoperationname.md)します。 同様に、応答が、ITwoWayAsync の場合だけをフィルター処理することができます。 その他のすべてのインターフェイスは、何も返しませんまたはを無効にします。  
   
 ### <a name="servicerequest"></a>ServiceRequest  
   
 ```  
 <ic:OnEvent IsBegin="true" IsEnd ="false" Name ="WCFServiceRequest" Source="WCFService">  
-      <ic:Filter>  
-        <ic:Expression>  
-          <wcf:Operation Name="GetServiceContractCallPoint"/>  
-          <ic:Operation Name ="Constant">  
-            <ic:Argument>ServiceRequest</ic:Argument>  
-          </ic:Operation>  
-          <ic:Operation Name ="Equals" />  
-          <wcf:Operation Name ="XPath">  
-            <wcf:Argument>//s:Header/a:Action</wcf:Argument>  
-          </wcf:Operation>  
-          <ic:Operation Name ="Constant">  
-            <ic:Argument>Operation1</ic:Argument>  
-          </ic:Operation>  
-          <ic:Operation Name ="Equals" />  
-          <ic:Operation Name ="And" />  
-        </ic:Expression>  
-      </ic:Filter>  
+      <ic:Filter>  
+        <ic:Expression>  
+          <wcf:Operation Name="GetServiceContractCallPoint"/>  
+          <ic:Operation Name ="Constant">  
+            <ic:Argument>ServiceRequest</ic:Argument>  
+          </ic:Operation>  
+          <ic:Operation Name ="Equals" />  
+          <wcf:Operation Name ="XPath">  
+            <wcf:Argument>//s:Header/a:Action</wcf:Argument>  
+          </wcf:Operation>  
+          <ic:Operation Name ="Constant">  
+            <ic:Argument>Operation1</ic:Argument>  
+          </ic:Operation>  
+          <ic:Operation Name ="Equals" />  
+          <ic:Operation Name ="And" />  
+        </ic:Expression>  
+      </ic:Filter>  
   
-      <ic:CorrelationID>  
-        <ic:Expression>  
-          <wcf:Operation Name="AutoGenerateCorrelationToken"/>  
-        </ic:Expression>  
-      </ic:CorrelationID>  
+      <ic:CorrelationID>  
+        <ic:Expression>  
+          <wcf:Operation Name="AutoGenerateCorrelationToken"/>  
+        </ic:Expression>  
+      </ic:CorrelationID>  
   
-      <ic:Update DataItemName ="Activity Date" Type ="DATETIME">  
-        <ic:Expression>  
-          <wcf:Operation Name ="GetContextProperty">  
-            <wcf:Argument>EventTime</wcf:Argument>  
-          </wcf:Operation>  
-        </ic:Expression>  
-      </ic:Update>  
+      <ic:Update DataItemName ="Activity Date" Type ="DATETIME">  
+        <ic:Expression>  
+          <wcf:Operation Name ="GetContextProperty">  
+            <wcf:Argument>EventTime</wcf:Argument>  
+          </wcf:Operation>  
+        </ic:Expression>  
+      </ic:Update>  
   
-      <ic:Update DataItemName ="Source" Type ="NVARCHAR">  
-        <ic:Expression>  
-          <ic:Operation Name="Constant">  
-            <ic:Argument>WcfAdapter_ServiceRequest</ic:Argument>  
-          </ic:Operation>  
-        </ic:Expression>  
-      </ic:Update>  
+      <ic:Update DataItemName ="Source" Type ="NVARCHAR">  
+        <ic:Expression>  
+          <ic:Operation Name="Constant">  
+            <ic:Argument>WcfAdapter_ServiceRequest</ic:Argument>  
+          </ic:Operation>  
+        </ic:Expression>  
+      </ic:Update>  
   
-    </ic:OnEvent>  
+    </ic:OnEvent>  
 ```  
   
 ### <a name="servicereply"></a>ServiceReply  
   
 ```  
 <ic:OnEvent IsBegin="true" IsEnd ="false" Name ="WCFServiceReply" Source="WCFService">  
-      <ic:Filter>  
-        <ic:Expression>  
-          <wcf:Operation Name="GetServiceContractCallPoint"/>  
-          <ic:Operation Name ="Constant">  
-            <ic:Argument>ServiceReply</ic:Argument>  
-          </ic:Operation>  
-          <ic:Operation Name ="Equals" />  
-        </ic:Expression>  
-      </ic:Filter>  
+      <ic:Filter>  
+        <ic:Expression>  
+          <wcf:Operation Name="GetServiceContractCallPoint"/>  
+          <ic:Operation Name ="Constant">  
+            <ic:Argument>ServiceReply</ic:Argument>  
+          </ic:Operation>  
+          <ic:Operation Name ="Equals" />  
+        </ic:Expression>  
+      </ic:Filter>  
   
-      <ic:CorrelationID>  
-        <ic:Expression>  
-          <wcf:Operation Name="AutoGenerateCorrelationToken"/>  
-        </ic:Expression>  
-      </ic:CorrelationID>  
+      <ic:CorrelationID>  
+        <ic:Expression>  
+          <wcf:Operation Name="AutoGenerateCorrelationToken"/>  
+        </ic:Expression>  
+      </ic:CorrelationID>  
   
-      <ic:Update DataItemName ="Activity Date" Type ="DATETIME">  
-        <ic:Expression>  
-          <wcf:Operation Name ="GetContextProperty">  
-            <wcf:Argument>EventTime</wcf:Argument>  
-          </wcf:Operation>  
-        </ic:Expression>  
-      </ic:Update>  
+      <ic:Update DataItemName ="Activity Date" Type ="DATETIME">  
+        <ic:Expression>  
+          <wcf:Operation Name ="GetContextProperty">  
+            <wcf:Argument>EventTime</wcf:Argument>  
+          </wcf:Operation>  
+        </ic:Expression>  
+      </ic:Update>  
   
-      <ic:Update DataItemName ="Name" Type ="NVARCHAR">  
-        <ic:Expression>  
-          <ic:Operation Name="Constant">  
-            <ic:Argument>WcfAdapter_ServiceReply</ic:Argument>  
-          </ic:Operation>  
-        </ic:Expression>  
-      </ic:Update>  
+      <ic:Update DataItemName ="Name" Type ="NVARCHAR">  
+        <ic:Expression>  
+          <ic:Operation Name="Constant">  
+            <ic:Argument>WcfAdapter_ServiceReply</ic:Argument>  
+          </ic:Operation>  
+        </ic:Expression>  
+      </ic:Update>  
   
-    </ic:OnEvent>  
+    </ic:OnEvent>  
 ```  
   
 ## <a name="see-also"></a>参照  
- [BAM データを受信する WCF アダプタの構成](../core/configuring-the-wcf-adapter-to-intercept-bam-data.md)
+ [BAM データを受信するための WCF アダプターの構成](../core/configuring-the-wcf-adapter-to-intercept-bam-data.md)

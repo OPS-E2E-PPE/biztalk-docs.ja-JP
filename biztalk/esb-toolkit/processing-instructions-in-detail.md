@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d867737599369ad8ff07780080b16f5ce0f6f2fe
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2d65b3e7489171236acdee6313bda2485f31553a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37005579"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65301769"
 ---
 # <a name="processing-instructions-in-detail"></a>処理命令の詳細
 このトピックでは、形式およびスケジュールの処理に必要ないくつかのコンテキスト プロパティを定義するシステム Properties.xsd プロパティ スキーマの構造について説明します。 これらのプロパティは、メッセージが受信され、BizTalk Server パイプライン; を通して処理されたときに昇格されます。昇格させたプロパティはため、BizTalk Server コンポーネントからアクセスされます。 次のプロパティは、システム Properties.xsd プロパティ スキーマで定義されます。  
@@ -26,7 +26,7 @@ ms.locfileid: "37005579"
   
 - **サービス名。** このプロパティには、処理する現在のスケジュール サービスの名前が含まれています。  
   
-- **ServiceState します。** このプロパティには、現在のスケジュール サービスの状態が含まれています:**保留**、**完了**、または**Active**します。 すべてのサービスのサブスクライブを含むスケジュール オンランプの手順に、 **ServiceState** @property**保留中**します。  
+- **ServiceState します。** このプロパティには、現在のスケジュール サービスの状態が含まれています。**保留中**、**完了**、または**Active**します。 すべてのサービスのサブスクライブを含むスケジュール オンランプの手順に、 **ServiceState** @property**保留中**します。  
   
 - **ServiceType します。** このプロパティは、スケジュールのステップの種類を定義します (**メッセージング**または**オーケストレーション**)。  
   
@@ -42,6 +42,6 @@ ms.locfileid: "37005579"
   
   スケジュール オンランプ処理メカニズムは、1 つのスケジュール内のメッセージングおよびオーケストレーションの itinerary 手順の組み合わせをサポートします。 開発者はことができますも、カスタム スケジュール サービスを定義し、カスタム スケジュール ステップを構成します。  
   
-  スケジュールの詳細については、[をインストールすると、日程ランプでサンプルを実行する](../esb-toolkit/installing-and-running-the-itinerary-on-ramp-sample.md)を参照してください。  
+  スケジュールの詳細については、次を参照してください。[をインストールすると、日程ランプでサンプルを実行する](../esb-toolkit/installing-and-running-the-itinerary-on-ramp-sample.md)します。  
   
-  カスタム スケジュール サービスとカスタム スケジュール オンランプ手順の詳細については、[カスタム スケジュール サービスを作成する](../esb-toolkit/creating-a-custom-itinerary-service.md)を参照してください。
+  カスタム スケジュール サービスとカスタム スケジュール オンランプ手順の詳細については、次を参照してください。[カスタム スケジュール サービスを作成する](../esb-toolkit/creating-a-custom-itinerary-service.md)します。

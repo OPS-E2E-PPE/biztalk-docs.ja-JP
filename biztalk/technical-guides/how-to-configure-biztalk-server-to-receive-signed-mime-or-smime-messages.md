@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2df073a27cb9e17851c9afec4b5531424d913fab
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 26882e196fe90d87b9e63bc13d487f60ac99627c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37009187"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65253322"
 ---
 # <a name="how-to-configure-biztalk-server-to-receive-signed-mime-or-smime-messages"></a>MIME または SMIME メッセージに署名された受信する BizTalk Server を構成する方法
 このトピックでは、構成する方法を説明[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]証明書を使用して署名された MIME/SMIME メッセージを受信します。 以下の手順は、AS2 トランスポート経由での署名付きメッセージの受信の構成にも適用されます。  

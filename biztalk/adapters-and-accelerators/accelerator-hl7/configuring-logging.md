@@ -1,5 +1,5 @@
 ---
-title: ログの構成 |Microsoft ドキュメント
+title: ログの構成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,24 +17,24 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 54600ec16d33524af04fb0e4a308172db82a48ec
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d53076588a621d1f7d646a9dd98ec8e0bdd9ab64
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22204706"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65251346"
 ---
-# <a name="configuring-logging"></a>ログ記録の構成
-医療アプリケーションでは、メッセージの完全なログ記録が必要です。 これらのアプリケーションは、重要な処理するために機密情報および通貨のデータ、ログは、アプリケーションの重要な部分になります。 システム管理者は、次を実行できる必要があります。  
+# <a name="configuring-logging"></a>ログの構成
+医療アプリケーションでは、メッセージの完全なログ記録が必要です。 これらのアプリケーションは、重要な処理、ために機密性の高いや通貨のデータ、ログは、アプリケーションの重要な部分になります。 システム管理者は、以下を実行できる必要があります。  
   
--   構成されている場所にメッセージを保存します。  
+-   メッセージを構成されている場所に保管します。  
   
 -   実際のメッセージをログに記録されたメッセージを関連付ける  
   
--   パートナーごと、またはプロセスの種類ごとに、メッセージ ボックスの一覧します。  
+-   パートナーごとまたは処理の種類ごとに、メッセージ ボックスの一覧します。  
   
 -   これらのログに記録されたメッセージの特定の時点にレポートの実行  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [ログ ストアを選択します。](../../adapters-and-accelerators/accelerator-hl7/selecting-the-logging-store.md)
+-   [ログ記録ストアの選択](../../adapters-and-accelerators/accelerator-hl7/selecting-the-logging-store.md)

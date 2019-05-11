@@ -13,12 +13,12 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e5fe619b78bae05d373293293366cafc117c3ea8
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5f7b45169a80b0acbb1a51ca410932815c1bd773
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36980427"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65337905"
 ---
 # <a name="how-to-enable-the-wcf-extensibility-points-with-the-wcf-adapters"></a>WCF アダプターを使用して WCF 機能拡張ポイントを有効にする方法
 次の 3 つの WCF 機能拡張ポイントを有効にする、動作拡張機能、バインド要素拡張機能、およびバインド拡張機能-Wcf-custom および Wcf-customisolated アダプタを使用します。 これを行うには、まず WCF 機能拡張ポイントを実装するアセンブリをグローバル アセンブリ キャッシュ (GAC) にインストールし、コンピューターの machine.config ファイルを変更した後に、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールを使用して WCF-Custom アダプターまたは WCF-CustomIsolated アダプターを構成します。  
@@ -217,4 +217,4 @@ ms.locfileid: "36980427"
   
 ## <a name="configure-a-wcf-custom-receive-location-with-an-ssl-certificate"></a>WCF カスタム SSL 証明書を使用して受信場所  
   
--   HTTP カーネル モード ドライバー (HTTP.sys) を使用する場合は、Wcf-custom 受信場所、 **httpsTransport** Secure Sockets Layer (SSL) 通信で、受信場所のバインド要素: 証明書が必要ですソケット (IP アドレスとポートの組み合わせ) ごとに登録します。 SSL 証明書をコンピューター上のポートにバインドするには、HttpCfg.exe ツールを使用します。 詳細については、[How To: SSL 証明書を使用して、ポート構成](https://docs.microsoft.com/dotnet/framework/wcf/feature-details/how-to-configure-a-port-with-an-ssl-certificate)を参照してください。
+-   HTTP カーネル モード ドライバー (HTTP.sys) を使用する場合は、Wcf-custom 受信場所、 **httpsTransport** Secure Sockets Layer (SSL) 通信で、受信場所のバインド要素: 証明書が必要ですソケット (IP アドレスとポートの組み合わせ) ごとに登録します。 SSL 証明書をコンピューター上のポートにバインドするには、HttpCfg.exe ツールを使用します。 詳細については、このトピックの「[方法: SSL 証明書でポートを構成](https://docs.microsoft.com/dotnet/framework/wcf/feature-details/how-to-configure-a-port-with-an-ssl-certificate)します。

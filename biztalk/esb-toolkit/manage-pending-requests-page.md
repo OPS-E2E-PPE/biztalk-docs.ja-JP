@@ -1,5 +1,5 @@
 ---
-title: 保留中の要求 ページの管理 |Microsoft ドキュメント
+title: 保留中の要求 ページの管理 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,28 +12,28 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 246916f7987faa088781186387e41a369e44e252
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 53a22e30d2613181c30806891cd9791af0881431
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22294258"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65261588"
 ---
-# <a name="manage-pending-requests-page"></a>[保留中の要求の管理] ページ
-図 1 は、保留中の登録の一覧を要求し、要求の履歴の表示へのリンクを表示する保留中の要求の管理ページを示します。  
+# <a name="manage-pending-requests-page"></a>保留中の要求 ページを管理します。
+図 1 は、保留中の要求の管理ページで、表示の保留中の登録の一覧を要求と要求の履歴を表示するリンクを示します。  
   
- ![[管理] ページの保留中の要求](../esb-toolkit/media/ch8-managependingrequestspage.gif "Ch8 ManagePendingRequestsPage")  
+ ![保留中の要求 ページを管理](../esb-toolkit/media/ch8-managependingrequestspage.gif "Ch8 ManagePendingRequestsPage")  
   
  **図 1**  
   
- **ESB 管理ポータルの管理保留中の要求 ページ**  
+ **ESB 管理ポータル管理保留中の要求 ページ**  
   
- 次の一覧では、ESB 管理ポータル保留要求の管理ページの機能を使用する方法について説明します。  
+ 次の一覧では、ESB 管理ポータル保留中要求の管理ページの機能を使用する方法について説明します。  
   
--   クリックして、 **ViewDetails**アイコン (虫眼鏡) を開くには、[レジストリ詳細 ページ](../esb-toolkit/registry-details-page.md)、ここで保留中の要求の詳細を表示、発行、更新、または削除できますがします。  
+-   をクリックして、 **ViewDetails**アイコン (虫眼鏡) を開く、[レジストリ詳細ページ](../esb-toolkit/registry-details-page.md)、場所、保留中の要求の詳細を表示、発行、更新、または削除できますが。  
   
--   クリックして、**承認**保留中の要求を承認するアイコン (チェック マーク)。  
+-   をクリックして、**承認**アイコン (チェック マーク) を保留中の要求を承認します。  
   
 -   をクリックして、**拒否**アイコン (クロス マーク) を保留中の要求を拒否します。  
   
--   クリックして、**要求履歴を表示する**以前 Universal Description, Discovery, and Integration (UDDI) の登録要求の情報の範囲を表示するページを開くためのリンク。
+-   をクリックして、**要求履歴を表示する**の以前の Universal Description, Discovery, and Integration (UDDI) の登録要求の情報を表示するページを開くためのリンク。

@@ -12,62 +12,62 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 794558af8a6f947bb9ab8d9a29bd30dc3699e60c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f5f633383b4e57133fc3b39bec804e376e1c6542
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36975395"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65266170"
 ---
-# <a name="consolidate-the-biztalk-server-databases2"></a>BizTalk Server データベース2 の統合
-Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] のさまざまな機能で使用するデータを格納するため、Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 内に最大 13 個のデータベースを個別に作成する必要があります。 これらのデータベースを管理し保守するにはオーバーヘッドが必要になるため、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、これらのデータベースのいくつかを 1 つのデータベースに統合することができます。 ここでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] データベースの統合を実現する方法と、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] データベースの統合を実現するための考慮事項について説明します。  
+# <a name="consolidate-the-biztalk-server-databases2"></a>BizTalk Server Databases2 を統合します。
+Microsoft[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]インストールには、Microsoft では最大 13 個の独立したデータベースの作成が必要です[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]データとして使用するためのさまざまな格納[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]機能します。 管理し、これらのデータベースを維持するために必要なオーバーヘッドが原因で[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]では、1 つのデータベースにこれらのデータベースのいくつかの統合。 このセクションを実行する方法を説明します[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]データベースを統合し、実装に関する考慮事項について説明します[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]データベースを統合します。  
 
 > [!NOTE]
->  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のインストール時に必要なすべてのデータベースの完全なリストについては、「[BizTalk Server のデータベース](../core/databases-in-biztalk-server.md)」を参照してください。  
+>  すべてをインストールするときに必要なデータベースの完全な一覧については[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]を参照してください[BizTalk Server でのデータベース](../core/databases-in-biztalk-server.md)します。  
 
-## <a name="implementing-biztalk-database-consolidation"></a>BizTalk データベース統合の実施  
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] データベースの統合は、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] をインストールした後、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の構成中に実行します。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] データベースを統合するには、以下の手順を実行します。  
+## <a name="implementing-biztalk-database-consolidation"></a>BizTalk データベースの統合を実装します。  
+ [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] インストールした後にデータベースの統合が実行される[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]、中に[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]構成します。 実装する次の手順に従って[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]データベースを統合します。  
 
-1. **[スタート]** をクリックし、**[プログラム]** をポイントします。次に、[[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]] をポイントし、**[BizTalk Server 構成]** をクリックします。 構成の種類を選択するよう求めるメッセージが表示されたら、**[ユーザー構成]** をクリックします。  
+1. クリックして**開始**、 をポイント**プログラム**、 をポイント[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]、順にクリックします**BizTalk Server 構成**します。 構成の種類を選択するメッセージが表示されたら、クリックして**カスタム構成**します。  
 
-2. 以下のデータ ストアの 1 つ以上に対し、同じ [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] の **[サーバー名]** と **[データベース名]** (たとえば、*BizTalkConsolidatedDb*) を入力します。  
+2. 同じ入力[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]**サーバー名**と**データベース名**(たとえば*BizTalkConsolidatedDb*) の 1 つ以上の次のデータの保存します。  
 
-   |機能名|データ ストア名|  
+   |機能名|データ ストアの名前|  
    |------------------|---------------------|  
-   |エンタープライズ SSO|SSO データベース|  
-   |[グループ]|BizTalk 管理データベース|  
-   |[グループ]|BizTalk メッセージ ボックス データベース|  
-   |[グループ]|BizTalk 追跡データベース|  
+   |Enterprise SSO|SSO データベース|  
+   |グループ化|BizTalk 管理データベース|  
+   |グループ化|BizTalk メッセージ ボックス データベース|  
+   |グループ化|BizTalk 追跡データベース|  
    |ビジネス ルール エンジン|ルール エンジン データベース|  
 
-    以下のデータ ストアは、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] データベースを共有するように構成**しない**ようにしてください。  
+    次のデータ ストアが必要がある注意**いない**を共有するように構成、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]データベース。  
 
 
-   | 機能名 |       データ ストア名       |
+   | 機能名 |       データ ストアの名前       |
    |--------------|-----------------------------|
    |  BAM ツール   | BAM プライマリ インポート データベース |
    |  BAM ツール   |    BAM アーカイブ データベース     |
 
 
-3. 残りの構成オプションを設定し、構成を適用します。 構成ツールによって、共有 [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] データベース内に、同じ [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] の **[サーバー名]** と **[データベース名]** を指定したデータ ストア用のテーブルが作成されます。  
+3. 残りの構成オプションを設定し、構成を適用します。 構成ツールは、共有でテーブルを作成[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]データ ストアの同じを指定したデータベース[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]**サーバー名**と**データベース名**します。  
 
-## <a name="considerations-for-implementing-biztalk-database-consolidation"></a>BizTalk データベースを統合する際の考慮事項  
- BizTalk データベースを統合するときは、以下の点を考慮してください。  
+## <a name="considerations-for-implementing-biztalk-database-consolidation"></a>BizTalk データベース統合の実装に関する考慮事項  
+ BizTalk データベースを統合する場合は、次を考慮してください。  
 
-1. データベース統合により、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] データベースの管理と保守に関するオーバーヘッドが減少しますが、適切な環境でのみ実施してください。 実稼働環境で [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] データベースを統合する前に、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の持続的なパフォーマンスに対する影響をステージング環境で計測することをお勧めします。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] データベース統合は、以下のシナリオでデータベースの管理と保守を単純化するために検討してください。  
+1. データベースの統合の管理と保守に関連するオーバーヘッドの削減、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]データベースしますが、適切な環境でのみ実装する必要があります。 実装する前に[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]でデータベースを効果、運用環境で統合[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ステージング環境で継続的なパフォーマンスを測定する必要があります。 実装を検討[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]データベースをデータベースの管理と、次のシナリオでのメンテナンスを簡単に統合します。  
 
-   - 小規模でデータ量の少ない [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の実稼働環境で、データベースのパフォーマンスがパフォーマンス上のボトルネックになる可能性がきわめて低い場合。  
+   - 小規模な量の少ない[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]運用環境のデータベースのパフォーマンスが非常にパフォーマンスのボトルネックになる可能性があります。  
 
-   - 中規模でデータ量が中程度の [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 実稼働環境において、BizTalk 追跡データベースが統合に含まれない場合。BizTalk 追跡デーベースは、統合されたデータベースとは別の物理ディスク上に作成することが理想的です。  
+   - 中規模、中程度のボリューム[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]統合で、BizTalk 追跡データベースが含まれていない場合、運用環境と、理想的には、統合データベースから別の物理ディスクで、BizTalk 追跡データベースが作成されたかどうか。  
 
-   - 大規模でデータ量の多い [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 実稼働環境において、共有された [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] データベースが、非常にパフォーマンスが高いストレージ エリア ネットワーク (SAN) デバイスに配置されており、データベースがパフォーマンス上のボトルネックになる可能性が非常に低い場合。  
+   - 大規模なスケール、高ボリューム[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]実稼働環境場合、共有[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]データベースがパフォーマンス ボトルネックになるデータベースの可能性が非常に高パフォーマンス記憶域エリア ネットワーク (SAN) デバイス上にある物理的に非常に低いです。  
 
-   - 概念実証環境または開発環境で、データベースのパフォーマンスがあまり重要でない場合。  
+   - あまりが、データベースのパフォーマンスの概念や開発環境を実証します。  
 
-2. 一般に、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 全体のパフォーマンスは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] データベースのパフォーマンスに依存します。 そのため、データが大量であるか、将来データが大量になることが予想される [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の実稼働環境では、データベースを統合しないことをお勧めします。 例外は、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] データベースが、非常にパフォーマンスが高いストレージ エリア ネットワーク (SAN) デバイス上に配置され、データベースがパフォーマンスのボトルネックになる可能性が非常に低い場合です。 データベース ディスクがストレージ エリア ネットワーク (SAN) に格納されていない場合に統合データベースの高いパフォーマンスを実現するには、分散データベースを使用します。分散データベースを使用した場合、優れたパフォーマンスは、負荷発生時に特に顕著になります。  
+2. 全体的な[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]パフォーマンスが通常のパフォーマンスに依存する、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]データベース。 したがってデータベースの統合に実装していない[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]運用環境が発生しているか、大量に発生するのです。 1 つの例外は場合、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]データベースは、データベースがパフォーマンスのボトルネックが発生する可能性が非常に低い非常に高パフォーマンス ストレージ エリア ネットワーク (SAN) デバイス上に配置します。 データベースのディスクは、高性能の SAN 上にあるありません、分散データベースは、特に負荷の下で、統合データベースに優れたパフォーマンスを提供します。  
 
-3. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理データベースをデータベース統合に含め、統合データベースの名前が **BizTalkMgmtDb** でない場合は、その統合データベースを指すように BizTalk 管理コンソールを構成する必要があります。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] グループを管理するには、「[既存のグループに接続する方法](../core/how-to-connect-to-an-existing-group.md)」の手順に従い、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールを構成して、統合データベースを指すようにしてください。  
+3. 場合、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理データベースがデータベースの統合に含まれており、統合データベースの名前がない**BizTalkMgmtDb**、BizTalk 管理コンソールをポイントするように構成する必要があり、統合データベース。 手順に従って[既存グループへの接続方法](../core/how-to-connect-to-an-existing-group.md)を構成して、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールを管理するために、統合データベースを指す、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]グループ。  
 
-4. 持続可能な [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のパフォーマンスの詳細については、「[パフォーマンス維持の計画](../core/planning-for-sustained-performance.md)」を参照してください。  
+4. 維持可能なの詳細については[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]パフォーマンスを参照してください[パフォーマンス維持の計画](../core/planning-for-sustained-performance.md)します。  
 
-   [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] データベースの保守に関する活動の詳細については、「[BizTalk Server1 を維持します](../core/maintaining-biztalk-server1.md)」を参照してください。
+   保守に関する活動の詳細については、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]データベースを参照してください[BizTalk Server1 を維持](../core/maintaining-biztalk-server1.md)します。

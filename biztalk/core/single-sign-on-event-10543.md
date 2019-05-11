@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10543 |Microsoft Docs'
+title: シングル サインオン:イベント 10543 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cf5c026384bf463f6ee0a33045dd1e7b1fca4188
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4f8a3b284910ea5555085a5617a2d2922d0231f3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36998449"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65243387"
 ---
-# <a name="single-sign-on-event-10543"></a>シングル サインオン: イベント 10543
+# <a name="single-sign-on-event-10543"></a>シングル サインオン:イベント 10543
 ## <a name="details"></a>詳細  
 
 |                 |                                                                                                                                                        |
@@ -30,19 +30,19 @@ ms.locfileid: "36998449"
 |  イベント ソース   |                                                                         ENTSSO                                                                         |
 |    コンポーネント    |                                                                           CO                                                                           |
 |  シンボル名  |                                                           SSO_WARN_ORIGINAL_TICKET_VALIDATED                                                           |
-|  メッセージ テキスト   | チケットは検証が必要な状態で発行されました。 検証を行わない場合、このアプリケーションと引き換えることはできません。%r<br /><br /> アプリケーション名: %1 |
+|  メッセージ テキスト   | 検証が必要なチケットが発行されました。 このアプリケーションの validated.%r せず引き換えることができません。<br /><br /> アプリケーション名: %1 |
 
 ## <a name="explanation"></a>説明  
- この警告イベントは、アプリケーション チケットが検証が必要な状態で発行されたことを示します。 チケットを引き換えるには、検証する必要があります。 チケットの検証は、関連アプリケーションごとに行われます。  
+ この警告イベントは、検証が必要なアプリケーション チケットが発行されたことを示します。 検証を行わず、チケットを引き換えることはできません。 チケットの検証は、関連アプリケーションごと。  
 
 ## <a name="user-action"></a>ユーザーの操作  
- この警告を解決するには、次の操作を行います:   
+ この警告を解決するには、次の操作を行います。  
 
-- エンタープライズ シングル サインオンを使用している場合は、メッセージが信頼されているホストのみを介して送信されていることを確認します。 メッセージのデータ改ざんのリスクが軽減されます。  
+- エンタープライズ シングル サインオンを使用する場合は、メッセージが 信頼されたホストのみを介して送信されていることを確認します。 これにより、メッセージのデータの改ざんのリスクが低減されます。  
 
-- シナリオで許可される場合は、このアプリケーションに対して検証をオフにしてください。 検証は、システムまたは特定のアプリケーションのみに対してオフにできる管理オプションです。  
+- 自分のシナリオにより、このアプリケーションの検証をオフにします。 検証は、管理オプションであり、システムまたはこの特定のアプリケーションに対してだけ、オフにすることです。  
 
-  詳細については、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ヘルプの次の情報を参照してください:   
+  詳細については、の次のリソースを参照してください。[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプ。  
 
 - [SSO チケット](../core/sso-tickets.md)  
 

@@ -1,5 +1,5 @@
 ---
-title: クライアント ユーティリティを使用して SSO サーバーを表示する方法 |Microsoft ドキュメント
+title: クライアント ユーティリティを使用して SSO サーバーを表示する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,23 +16,23 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1fa4394d3a45c7d0c273d82446b1a5e11d500348
-ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
+ms.openlocfilehash: 8d83a3d8cbe1fb6dbf819c368dcd67f622385d88
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "25970128"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65338066"
 ---
 # <a name="how-to-display-the-sso-server-using-the-client-utility"></a>クライアント ユーティリティを使用して SSO サーバーを表示する方法
-ここで示すコマンドを使用すると、ユーザーが現在接続しているシングル サインオン サーバーを表示できます。  
+ユーザーが現在指してシングル サインオン サーバーを表示するのにには、このコマンドを使用します。  
   
 ### <a name="to-display-the-sso-server-using-the-client-utility"></a>クライアント ユーティリティを使用して SSO サーバーを表示するには  
   
-1.  **開始**  メニューのをクリックして **実行**, 、し、入力 **cmd**します。  
+1.  **開始** メニューのをクリックして**実行**、し、入力**cmd**します。  
   
-2.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定のインストール ディレクトリは*\<ドライブ\>*: \program files \common files \enterprise シングル サインオンします。  
+2.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定のインストール ディレクトリは*\<ドライブ\>*: \Program Files\Common \enterprise シングル サインオンします。  
   
-3.  型 **ssoclient – showserver**します。  
+3.  型**ssoclient – showserver**します。  
   
     > [!NOTE]
     >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  

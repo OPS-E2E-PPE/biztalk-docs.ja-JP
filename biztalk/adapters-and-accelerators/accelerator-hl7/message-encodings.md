@@ -17,12 +17,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 013df4d29604e6dd7ce6d2e486612be303cc5898
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 186cd9293c69c21723c103ff265b933514c74de7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37007091"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65303709"
 ---
 # <a name="message-encodings"></a>メッセージ エンコーディング
 HL7 を使用するためにメッセージのセマンティクスを定義するのに十分ではありません。 メッセージの内容を確認すると、実際のインターフェイスでは、そのコンテンツを表す方法を説明する、標準を持ちます。 つまり、必要がある、指定した「メッセージをエンコードする」。 HL7 バージョン 2 では、2 つの形式のメッセージのエンコードと、カスタムの区切り記号ベースのエンコード、XML エンコーディングをサポートします。  
@@ -35,7 +35,7 @@ HL7 を使用するためにメッセージのセマンティクスを定義す�
   
 - フィールド  
   
-- Components  
+- コンポーネント  
   
 - サブコンポーネント  
   

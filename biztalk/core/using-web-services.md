@@ -1,5 +1,5 @@
 ---
-title: Web サービスの使用 |Microsoft ドキュメント
+title: Web サービスの使用 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,61 +17,61 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 236acb42c010effe5c3d45cde1daaf9a7097ede5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 24af6961e888f8cda21e8d280451382160e2b5af
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22288258"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65262114"
 ---
 # <a name="using-web-services"></a>Web サービスの使用
-Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、Web サービスの組み込みサポートが提供されています。 BizTalk Server は、既存のすべての Web サービスを再利用し、オーケストレーション内に集約できます。 また、オーケストレーションを Web サービスとして公開し、Web サービス ロジックとビジネス プロセス ロジックを区別することもできます。  
+Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Web サービスの組み込みサポートを提供します。 BizTalk Server は、再利用とすべての既存の Web サービス、オーケストレーション内で集計できます。 (公開) を公開することも、オーケストレーションを Web を分離する Web サービスとしてのサービス ロジックとビジネス プロセス ロジック。  
   
- BizTalk Server は、Web サービスのネイティブ アダプタのサポートを実装しています。 ネイティブ アダプタのサポートにより、コードを記述しなくても、Web サービスのスケーラビリティ、フォールト トレランス、および追跡の機能を利用できます。 SOAP アダプタについては、次を参照してください。 [SOAP アダプター](../core/soap-adapter.md)です。  
+ BizTalk Server では、Web サービスのネイティブ アダプターのサポートを実装します。 ネイティブ アダプタのサポートは、スケーラビリティ、フォールト トレランス、および Web サービスの機能を 1 行のコードを記述することがなく追跡を提供します。 SOAP アダプターについては、次を参照してください。 [SOAP アダプター](../core/soap-adapter.md)します。  
   
- BizTalk Server での Web サービスのサポートは、Web サービスの使用または呼び出しと、Web サービスの公開または作成の 2 つのカテゴリに分類されます。  
+ BizTalk Server での Web サービスのサポートが 2 つのカテゴリに分類されます。 Web サービスの使用または Web サービスを呼び出すと公開または作成します。  
   
- Web サービスを利用または公開する前に、ASP.NET の XML Web サービスについて理解しておく必要があります。 XML Web サービスの基本についての説明についてにある「XML Web サービスの基本事項」の記事を参照してください。 [http://go.microsoft.com/fwlink/?LinkId=193057](http://go.microsoft.com/fwlink/?LinkId=193057)です。  
+ 利用または Web サービスを発行する前に、asp.net XML Web サービスの理解が必要です。 XML Web サービスの基本についてにある「XML Web サービスの基本事項」の記事を参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=193057](http://go.microsoft.com/fwlink/?LinkId=193057)します。  
   
  **Web サービスの使用**  
   
- Web サービスは、オーケストレーション内から利用 (呼び出し) できます。 複数の Web サービスを 1 つのオーケストレーションに集約して、ビジネス プロセス全体を完了できます。  
+ オーケストレーション内から (呼び出し) Web サービスを使用することができます。 複数の Web サービスは、ビジネス プロセス全体を完了する 1 つのオーケストレーションに集計できます。  
   
  **Web サービスの公開**  
   
- BizTalk Web サービス公開ウィザードを使用して、Web サービスを公開できます。 オーケストレーションおよび送信アダプタでは、これらの公開された Web サービスを使用できます。  
+ BizTalk Web サービス公開ウィザードを使用して Web サービスを発行することができます。 オーケストレーションや送信アダプターは、これらの公開済み Web サービスを使用できます。  
   
  **SOAP ヘッダーの使用**  
   
- BizTalk Server では、定義済みの SOAP ヘッダーと不明な SOAP ヘッダーがサポートされています。 定義済みの各 SOAP ヘッダーのコンテキスト プロパティが BizTalk Server によって Web サービス内に作成されます。  
+ BizTalk Server では、定義されていると、不明な SOAP ヘッダーのサポートを提供します。 BizTalk Server では、Web サービスで定義されている各 SOAP ヘッダー コンテキスト プロパティを作成します。  
   
  **Web サービス標準**  
   
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は、送受信の際に任意の Web サービス標準に対応して動作します。 すべての標準がテストされているわけではありません。 一般的に、WCF によってサポートされる標準は [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] でもサポートされます。 サポートされる標準には、次のものがあります。  
+ [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 送受信するときに任意の Web サービス標準を使用する必要があります。 すべての標準がテストされています。 通常、WCF によってサポートされる標準でサポートされても[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]します。 サンプルの標準は次のとおりです。  
   
 -   WS-ReliableMessaging  
   
 -   WS-Security  
   
--   WS-SecureConversation  
+-   Ws-secureconversation  
   
--   WS-Trust  
+-   Ws-trust  
   
--   WS-Federation  
+-   WS フェデレーション  
   
 -   WS-Addressing  
   
--   WS-Policy  
+-   Ws-policy  
   
 -   WS-MetadataExchange  
   
--   WS-Coordination  
+-   Ws-coordination  
   
--   WS-Atomic  
+-   Ws-atomic  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [Web サービスの使用](../core/consuming-web-services.md)  
+-   [Web サービスの利用](../core/consuming-web-services.md)  
   
 -   [Web サービスの公開](../core/publishing-web-services.md)  
   

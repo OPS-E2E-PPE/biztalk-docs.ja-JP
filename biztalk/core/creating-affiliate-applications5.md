@@ -12,18 +12,18 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 914f966f2a5de3acd6daeddbd1912eefc9aa2fb8
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 325b663f569b9cfce6fab8a65cc8b1f400d9d263
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36966019"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65353929"
 ---
 # <a name="create-affiliate-applications"></a>関連アプリケーションを作成します。
 次の手順では、関連アプリケーションとシングル サインオン (SSO) の使用を開始する方法について説明します。  
   
 > [!NOTE]
->  SSO エラーが発生した場合は、BizTalk Server の構成時にドメイン アカウントを使用したかどうかを確認してください。これは Enterprise SSO サービスの機能に影響します。 ドメイン アカウントでの SSO のみ関数  
+>  SSO エラーが発生した場合は、BizTalk Server を構成したときに、ドメイン アカウントを使用したことを確認します。これは、エンタープライズ SSO サービスの機能に影響します。 ドメイン アカウントでの SSO のみ関数  
   
 ## <a name="create-an-affiliate-application"></a>関連アプリケーションを作成します。  
   
@@ -33,7 +33,7 @@ ms.locfileid: "36966019"
   
     以下に例を示します。  
   
-    **C:\Program files \common files \enterprise でシングル サインオン >**  
+    **C:\Program Files\Common Files\Enterprise Single Sign-On>**  
   
 3. エンタープライズ シングル サインオン コマンドを使用します。 コマンドの一覧は、使用、 **-ヘルプ**スイッチします。  
   
@@ -66,21 +66,21 @@ ms.locfileid: "36966019"
    </SSO>  
    ```  
   
-   XML の例を使用する場合、関連アプリケーションである TIBCO EMS App には、コマンド プロンプトに表示される値が含まれています。  
+   XML の例を使用すると、関連アプリケーションは、TIBCO EMS のアプリは、コマンド プロンプトで示すように値を格納します。  
   
 ## <a name="create-single-sign-on-tickets"></a>シングル サインオン チケットを作成します。  
   
-1.  次のコマンドを入力し、SSO チケットの動作を制御します。  
+1.  SSO チケットの動作を制御する次のコマンドを入力します。  
   
      `ssomanage.exe -tickets yes yes`  
   
-2.  次の質問に回答します。  
+2.  質問に答えます。  
   
      `ssomanage -tickets <allowed yes | no> <validate yes | no>`  
   
      完了時に確認メッセージが表示されます。  
   
-     **このコンピューターで使用中の SSO。操作が完了しました。**  
+     **このコンピューターでは、SSO サーバーを使用します。操作が完了しました。**  
   
 ## <a name="enable-affiliate-application-xml"></a>関連アプリケーション XML を有効にします。  
   
@@ -88,11 +88,11 @@ ms.locfileid: "36966019"
   
     `ssomanage -enableapp TIBCO EMSApp`  
   
-2. 次のコマンドを入力してアプリケーションを一覧表示し、アプリケーションが作成されたことを確認します。  
+2. アプリケーションを一覧表示し、アプリケーションが作成されたことを確認するのには、次のコマンドを入力します。  
   
     `ssoclient.exe –listapps`  
   
-    使用可能な関連アプリケーションが一覧に表示されます。  
+    使用可能な関連アプリケーションは、一覧に表示されます。  
   
     **Ibi \YOURID-TIBCO EMSApp に使用可能なアプリケーション**  
   
@@ -100,7 +100,7 @@ ms.locfileid: "36966019"
   
     `soclient.exe -setcredentials TIBCO EMSApp`  
   
-4. プロンプトで、ユーザー名とパスワードを入力します。 TIBCO EMS App 関連アプリケーションのログオン資格情報を入力します。  
+4. ユーザー名と、プロンプトでパスワードを入力します。 TIBCO EMS App 関連アプリケーションのログオン資格情報を入力します。  
   
     たとえば、ユーザー id と、SSO サーバーを使用してシステムに入力するには、そのユーザーのパスワードを入力します。  
   
@@ -108,7 +108,7 @@ ms.locfileid: "36966019"
   
    - パスワード: `******`  
   
-   - 確認入力  パスワード: `******`  
+   - 確認しますか。 パスワード: `******`  
   
      BizTalk adapter for TIBCO EMS の関連アプリケーションが表示されます**トランスポートのプロパティ** ダイアログ ボックス。  
   

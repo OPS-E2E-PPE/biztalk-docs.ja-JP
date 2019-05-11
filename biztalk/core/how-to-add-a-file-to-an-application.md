@@ -16,18 +16,18 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f7f07991c8ecb85f21eed4cf6fb59d11d3f6f15e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3723cd1b3a5e936220bb36268adfd592130a529f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37007675"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65343821"
 ---
 # <a name="how-to-add-a-file-to-an-application"></a>アプリケーションにファイルを追加する方法
 このトピックでは、BizTalk Server 管理コンソールまたはコマンド ラインを使用して、BizTalk アプリケーションにファイルを追加する方法について説明します。 アプリケーションをインストールすると、アプリケーションに追加するファイルはインストール フォルダーにコピーされます。 ファイルをアプリケーションの .msi ファイルにエクスポートして、アプリケーションと共にさまざまな環境に移動することもできます。  
   
 > [!NOTE]
->  Readme ファイルを追加する方法の詳細については、[Readme ファイルへのリンク方法](../core/how-to-link-to-a-readme-file.md)を参照してください。  
+>  Readme ファイルを追加する方法の詳細については、次を参照してください。 [Readme ファイルへのリンク方法](../core/how-to-link-to-a-readme-file.md)します。  
   
  アプリケーションに既に存在するファイルを上書きするには、[上書き] オプションを指定します。 [上書き] オプションは、両方のファイルが同じ名前の場合にのみ機能します。 このオプションを指定しなかった場合、追加するファイルと同じ名前のファイルが既にアプリケーションに存在すると、追加操作は失敗します。  
   
@@ -59,7 +59,7 @@ ms.locfileid: "37007675"
   
 #### <a name="using-the-command-line"></a>コマンドラインを使用  
   
-1. 次のように、コマンド プロンプトを開きます: をクリックして**開始**、 をクリックして**実行**、型`cmd`、順にクリックします**OK**。  
+1. 次のように、コマンド プロンプトを開きます。をクリックして**開始**、 をクリックして**実行**、型`cmd`、順にクリックします**OK**。  
   
 2. 次の表に示すように、適切な値を置き換えて、次のコマンドを入力します。  
   
@@ -72,14 +72,14 @@ ms.locfileid: "37007675"
    |パラメーター|値|  
    |---------------|-----------|  
    |**/ApplicationName**|ファイルを追加する BizTalk アプリケーションの名前。 アプリケーション名が指定されなかった場合、既定の BizTalk アプリケーションが使用されます。 名前にスペースが含まれている場合は、二重引用符 (") で囲む必要があります。|  
-   |**/型**|**System.BizTalk:File** (この値小文字は区別されません)。|  
-   |**/上書き**|既存のファイルを更新するためのオプション。 指定しなかった場合、追加するファイルと同じ名前のファイルが既にアプリケーションに存在した場合、AddResource 操作は失敗します。|  
+   |**/Type**|**System.BizTalk:File** (この値小文字は区別されません)。|  
+   |**/Overwrite**|既存のファイルを更新するためのオプション。 指定しなかった場合、追加するファイルと同じ名前のファイルが既にアプリケーションに存在した場合、AddResource 操作は失敗します。|  
    |**/ソース**|ファイルの完全パス (ファイル名を含む)。 パスにスペースが含まれている場合は、二重引用符 (") で囲む必要があります。|  
    |**/変換先**|アプリケーションを .msi ファイルからインストールしたときにファイルがコピーされる場所 (完全パス)。 パスにスペースが含まれている場合は、二重引用符 (") で囲む必要があります。 指定しなかった場合、インストール中、このファイルはローカル ファイル システムにコピーされません。|  
    |**/サーバー**|BizTalk 管理データベースをホストする SQL Server インスタンスの名前。ServerName\InstanceName,Port の形式で指定します。<br /><br /> インスタンス名の指定は、そのインスタンス名がサーバー名と異なる場合にのみ必要です。 ポートの指定は、SQL Server で使用するポート番号が既定値 (1433) と異なる場合にのみ必要です。<br /><br /> 例 :<br /><br /> Server=MyServer<br /><br /> Server=MyServer\MySQLServer,1533<br /><br /> 指定しなかった場合、ローカル コンピューターで実行されている SQL Server インスタンスの名前が使用されます。|  
-   |**/データベース**|BizTalk 管理データベースの名前。 指定しなかった場合、SQL Server のローカル インスタンスで実行されている BizTalk 管理データベースが使用されます。|  
+   |**/Database**|BizTalk 管理データベースの名前。 指定しなかった場合、SQL Server のローカル インスタンスで実行されている BizTalk 管理データベースが使用されます。|  
   
 ## <a name="see-also"></a>参照  
  [.NET アセンブリ、証明書、およびその他のリソースを管理します。](../core/managing-net-assemblies-certificates-and-other-resources.md)   
- [AddResource コマンド: ファイル](../core/addresource-command-file.md)   
+ [AddResource コマンド:ファイル](../core/addresource-command-file.md)   
  [BizTalk アプリケーションの作成と変更](../core/creating-and-modifying-biztalk-applications.md)

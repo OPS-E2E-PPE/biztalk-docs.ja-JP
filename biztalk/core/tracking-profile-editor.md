@@ -1,5 +1,5 @@
 ---
-title: 追跡プロファイル エディター |Microsoft ドキュメント
+title: 追跡プロファイル エディター |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -22,19 +22,19 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f36b7f05954ba279343cc68613ea4040808b82fa
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 23ff2decda1c71fc71e5c1dea77dfa1ba2561818
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22278378"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65313660"
 ---
 # <a name="tracking-profile-editor"></a>追跡プロファイル エディター
-このセクションでは、追跡プロファイル エディター (TPE) について説明します。 TPE は、開発者が BAM アクティビティ内の項目とその項目の BizTalk ソリューションとの間のマップ (追跡プロファイルとも呼ばれます) を作成または変更する際に使用するツールです。 TPE を構成するグラフィカル ユーザー インターフェイスを使用すると、開発者は、社内ビジネス プロセスの特定のビューおよび関連データをオーケストレーションやポートにマップできます。  
+このセクションでは、追跡プロファイル エディター (TPE) について説明します。 TPE は、開発者が作成または変更の追跡と BAM アクティビティ内の項目とそれらの項目の BizTalk ソリューションのソースの間のプロファイルと呼ばれる、マップを使用するツールです。 TPE は、により、開発者は、内部ビジネス プロセスの特定のビューにマップする、関連付けられているオーケストレーションやポートへのデータをグラフィカル ユーザー インターフェイスで構成されます。  
   
- ビジネス ユーザーがアクティビティを定義すると、開発者はアクティビティを BizTalk オーケストレーションなどの実装元に接続します。 TPE ではドラッグ アンド ドロップ操作を利用できるため、開発者はコードを作成する必要がなくなり、実装への接続が容易になります。  
+ ビジネス ユーザーは、アクティビティを定義には、開発者は、BizTalk オーケストレーションなどの実装元に、アクティビティを接続します。 TPE では、コードを提供する、開発者が不要なドラッグ アンド ドロップのエクスペリエンスを提供することで、実装の接続が容易になります。  
   
- TPE のキーボード ショートカットの使用方法の詳細については、次を参照してください。 [TPE のショートカット](../core/tpe-keyboard-shortcuts.md)です。  
+ TPE のキーボード ショートカットの使用方法の詳細については、次を参照してください。 [TPE のショートカット](../core/tpe-keyboard-shortcuts.md)します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
@@ -44,9 +44,9 @@ ms.locfileid: "22278378"
   
 -   [TPE を使用する前に](../core/before-you-use-the-tpe.md)  
   
--   [考慮事項と TPE の既知の問題](../core/considerations-and-known-issues-for-tpe.md)  
+-   [TPE の考慮事項と既知の問題](../core/considerations-and-known-issues-for-tpe.md)  
   
--   [追跡プロファイルとは何ですか。](../core/what-is-a-tracking-profile.md)  
+-   [追跡プロファイルについて](../core/what-is-a-tracking-profile.md)  
   
 -   [TPE のコンポーネント](../core/components-of-the-tpe.md)  
   
@@ -54,4 +54,4 @@ ms.locfileid: "22278378"
   
 -   [TPE を管理するためのユーザー権利](../core/user-rights-for-managing-tpe.md)  
   
--   [TPE のショートカット](../core/tpe-keyboard-shortcuts.md)
+-   [TPE のショートカット キー](../core/tpe-keyboard-shortcuts.md)

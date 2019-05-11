@@ -12,14 +12,14 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 527f6709d48124f7ffcc0823bdc5ff84e92256ff
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b5ba87e528063e8c4ba4159d9a0fbb299d55c236
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36978403"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65347457"
 ---
-# <a name="max-limit-of-acceptable-x12-functional-group-control-number-has-reached-for-party"></a>パーティの X12 機能グループ制御番号が、許容される上限に到達しました
+# <a name="max-limit-of-acceptable-x12-functional-group-control-number-has-reached-for-party"></a>許容される X12 機能グループ制御番号に達してパーティの上限
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                                                                                                                              |

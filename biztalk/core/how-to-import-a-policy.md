@@ -17,12 +17,12 @@ caps.latest.revision: 29
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c70038d23dc43a865a5fe30d80543f0d1a47149a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a994cfdf8ab98f13b86ff586d0d6517ea38e13df
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37000299"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65337063"
 ---
 # <a name="how-to-import-a-policy"></a>ポリシーをインポートする方法
 このトピックでは、BizTalk Server 管理コンソールを使用して BizTalk グループにポリシーをインポートする方法と、BTSTask コマンド ライン ツールを使用してポリシーを BizTalk アプリケーションにインポートする方法について説明します。  
@@ -39,7 +39,7 @@ ms.locfileid: "37000299"
   
 - BTSTask にはポリシーをインポートする専用のコマンドはありませんが、BTSTask の ExportApp コマンドを使用して、他のアプリケーション アイテムは含まずにアプリケーション内の目的のポリシーだけを選択的にエクスポートすることができます。 それから ImportApp コマンドを使用して、その .msi ファイルを別の BizTalk グループ内のアプリケーションにインポートできます。 この方法については、このトピックで説明します。 この方法では、ポリシーは BizTalk グループ内に自動的にインポートおよび公開されて、指定されたアプリケーションに追加されます。  
   
-  ポリシーの使用方法の詳細については、[ポリシーの管理](../core/managing-policies.md)を参照してください。 アプリケーションにポリシーを追加する方法のベスト プラクティスは、[BizTalk アプリケーションの展開のベスト プラクティス](../core/best-practices-for-deploying-a-biztalk-application.md)を参照してください。  
+  ポリシーの使用方法の詳細については、次を参照してください。[ポリシーの管理](../core/managing-policies.md)します。 アプリケーションにポリシーを追加する方法のベスト プラクティスは、次を参照してください。 [BizTalk アプリケーションの展開のベスト プラクティス](../core/best-practices-for-deploying-a-biztalk-application.md)します。  
   
 > [!NOTE]
 >  ソリューション開発者がポリシーを作成し、それらをインポート、グループのルール エンジン データベース、ルール エンジン展開ウィザードを使用して」の説明に従って[とボキャブラリを展開およびポリシーの展開を解除する方法](../core/how-to-deploy-and-undeploy-policies-and-vocabularies.md)します。  
@@ -49,11 +49,11 @@ ms.locfileid: "37000299"
   
 -   BizTalk Server 管理者グループに属するアカウントでログオンする必要があります。 詳細なアクセス許可についてを参照してください。[を展開すると、BizTalk アプリケーションの管理に必要なアクセス許可](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)します。  
   
--   ビジネス ルール エンジンがインストールされている必要があります。 詳細については、[BizTalk Server 2013 および 2013 R2 のインストールの概要](http://msdn.microsoft.com/library/8041926c-cfc9-4eaf-9c28-a2c6e8015bc5)を参照してください。  
+-   ビジネス ルール エンジンがインストールされている必要があります。 詳細については、次を参照してください。 [BizTalk Server 2013 および 2013 R2 のインストールの概要](http://msdn.microsoft.com/library/8041926c-cfc9-4eaf-9c28-a2c6e8015bc5)します。  
   
 -   BizTalk Server 管理コンソールを使用してポリシーをインポートする場合は、インポートするポリシーを含む使用可能な .xml ファイルが必要です。 」の説明に従って、別の BizTalk グループまたはアプリケーションからポリシーをエクスポートすることによってこのような .xml ファイルを生成できます[ポリシーをエクスポートする方法](../core/how-to-export-a-policy.md)、または」の説明に従って、ビジネス ルール作成ツールを使用して[インポートおよびエクスポートする方法ポリシーとボキャブラリ](../core/how-to-import-and-export-policies-and-vocabularies.md)します。  
   
--   BTSTask を使用してポリシーをインポートする場合は、インポートするポリシーを含む .msi ファイルが必要です。 手順については、[ポリシーをエクスポートする方法](../core/how-to-export-a-policy.md)を参照してください。  
+-   BTSTask を使用してポリシーをインポートする場合は、インポートするポリシーを含む .msi ファイルが必要です。 手順については、次を参照してください。[ポリシーをエクスポートする方法](../core/how-to-export-a-policy.md)します。  
   
 ## <a name="to-import-a-policy"></a>ポリシーをインポートするには  
   
@@ -71,23 +71,23 @@ ms.locfileid: "37000299"
   
 #### <a name="using-the-command-line"></a>コマンドラインを使用  
   
-1. 次のように、コマンド プロンプトを開きます: をクリックして**開始**、 をクリックして**実行**、型`cmd`、順にクリックします**OK**。  
+1. 次のように、コマンド プロンプトを開きます。をクリックして**開始**、 をクリックして**実行**、型`cmd`、順にクリックします**OK**。  
   
 2. 次の表に示すように、適切な値を置き換えて、次のコマンドを入力します。  
   
-    **BTSTask の ImportApp/Package:** *値*[**/applicationname は:**<em>値</em>] **[/overwrite]** [**/サーバー:**<em>値</em>] [**/database:**<em>値</em>]  
+    **BTSTask ImportApp /Package:** *value* [**/ApplicationName:**<em>value</em>] **[/Overwrite]** [**/Server:**<em>value</em>] [**/Database:**<em>value</em>]  
   
     例:  
   
-    **BTSTask ImportApp/Package:"C:\MSI \myapplication.msi"/Environment:Test applicationname: myapplication/overwrite**  
+    **BTSTask ImportApp /Package:"C:\MSI Files\MyApplication.msi"  /Environment:Test /ApplicationName:MyApplication /Overwrite**  
   
    |パラメーター|値|  
    |---------------|-----------|  
-   |**/パッケージ**|インポートするポリシーを含む .msi ファイルの完全パス。 パスにスペースが含まれている場合は、引用符 (") で囲む必要があります。|  
+   |**/Package**|インポートするポリシーを含む .msi ファイルの完全パス。 パスにスペースが含まれている場合は、引用符 (") で囲む必要があります。|  
    |**/ApplicationName**|ポリシーをインポートする BizTalk アプリケーションの名前。 アプリケーション名を指定すると、指定しない場合、.msi ファイルのエクスポートを使用する場合。 指定したアプリケーションが存在しない場合は、それが作成されます。 スペースが含まれるアプリケーションの名前は、二重引用符 (") で囲む必要があります。|  
-   |**/上書き**|アプリケーション内のポリシーを、.msi ファイル内の名前とバージョン番号が同じアイテムで上書きするオプション。 このオプションを省略した場合、.msi ファイル内のポリシーと同じ名前とバージョン番号を持つポリシーがアプリケーション内に 1 つ以上存在すると、インポートは失敗します。 使用して、アプリケーションでポリシーの名前とバージョン番号を表示することができます、 [ListApp コマンド](../core/listapp-command.md)します。|  
+   |**/Overwrite**|アプリケーション内のポリシーを、.msi ファイル内の名前とバージョン番号が同じアイテムで上書きするオプション。 このオプションを省略した場合、.msi ファイル内のポリシーと同じ名前とバージョン番号を持つポリシーがアプリケーション内に 1 つ以上存在すると、インポートは失敗します。 使用して、アプリケーションでポリシーの名前とバージョン番号を表示することができます、 [ListApp コマンド](../core/listapp-command.md)します。|  
    |**/サーバー**|BizTalk 管理データベースをホストする SQL Server インスタンスの名前。ServerName\InstanceName,Port の形式で指定します。<br /><br /> インスタンス名の指定は、そのインスタンス名がサーバー名と異なる場合にのみ必要です。 ポートの指定は、SQL Server で使用するポート番号が既定値 (1433) と異なる場合にのみ必要です。<br /><br /> 例 :<br /><br /> Server=MyServer<br /><br /> Server=MyServer\MySQLServer,1533<br /><br /> 指定しなかった場合、ローカル コンピューターで実行されている SQL Server インスタンスの名前が使用されます。|  
-   |**/データベース**|BizTalk 管理データベースの名前。 指定しなかった場合、SQL Server のローカル インスタンスで実行されている BizTalk 管理データベースが使用されます。|  
+   |**/Database**|BizTalk 管理データベースの名前。 指定しなかった場合、SQL Server のローカル インスタンスで実行されている BizTalk 管理データベースが使用されます。|  
   
    > [!NOTE]
    >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。 これを行うには、アプリケーションを右クリックし、**管理者として実行**します。  

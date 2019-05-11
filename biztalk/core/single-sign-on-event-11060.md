@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 11060 |Microsoft Docs'
+title: シングル サインオン:イベント 11060 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 74fd521f2b2dab27a3a408e8459d5bb4113252d7
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ded0ef8904e0a9def8d02ffe477ef7a3d846c14d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37022736"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65258688"
 ---
-# <a name="single-sign-on-event-11060"></a>シングル サインオン: イベント 11060
+# <a name="single-sign-on-event-11060"></a>シングル サインオン:イベント 11060
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                                                                                                                                                       |
@@ -36,4 +36,4 @@ ms.locfileid: "37022736"
  ENTSSO サーバーが、Microsoft Identity Integration Server (MIIS) からパスワード変更を受け取りました。 しかし、ENTSSO サーバーは、クライアント ユーザー (呼び出し元) が SSO サービス アカウントと同じアカウントの場合にのみ、MIIS からのパスワード変更を受け付けます。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- MIIS でのパスワード同期の呼び出し元の構成を確認します。 詳細については、[MIIS パスワード同期の ENTSSO を構成する方法](../core/how-to-configure-entsso-for-miis-password-sync.md)を参照してください。
+ MIIS でのパスワード同期の呼び出し元の構成を確認します。 詳細については、次を参照してください。 [MIIS パスワード同期の ENTSSO を構成する方法](../core/how-to-configure-entsso-for-miis-password-sync.md)します。

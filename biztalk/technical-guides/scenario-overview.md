@@ -12,12 +12,12 @@ caps.latest.revision: 22
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f5bbc23f4d6b9d1e2886059cf053a495562c1d01
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 31a5294c8bd7e5340b0fa66499055138e10984a5
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37007147"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65313315"
 ---
 # <a name="scenario-overview"></a>シナリオの概要
 このトピックでは、最新のエンタープライズ クラスのハードウェアで実行されているときに、BizTalk Server のスケーラビリティを評価するための製品グループのロードは、BizTalk Server で完了したテストの概要を示します。  
@@ -38,7 +38,7 @@ ms.locfileid: "37007147"
     2.  BizTalk Server グループに追加の BizTalk メッセージ ボックス データベースを追加することの影響を定量化します。 このテストのため、BizTalk Server ソリューションのパフォーマンスは、1 つのメッセージ ボックス データベースまたは 4 つのメッセージ ボックス データベースを使用して、グループの構成時に測定されました。  
 
         > [!NOTE]  
-        >  1 から 2 つのメッセージ ボックス データベースにスケーリングするときにわずかであるか、パフォーマンス上の利点があるために、2 つのメッセージ ボックス データベースでのテストは実行されませんでした。 実際には、1 から 2 つのメッセージ ボックス データベースにスケーリングできますパフォーマンスが低下します。 スケール アウト メッセージ ボックスの詳細については、[スケール アウト SQL Server 層](../core/scaling-up-the-sql-server-tier.md)を参照してください。
+        >  1 から 2 つのメッセージ ボックス データベースにスケーリングするときにわずかであるか、パフォーマンス上の利点があるために、2 つのメッセージ ボックス データベースでのテストは実行されませんでした。 実際には、1 から 2 つのメッセージ ボックス データベースにスケーリングできますパフォーマンスが低下します。 スケール アウト メッセージ ボックスの詳細については、次を参照してください。[スケール アウト SQL Server 層](../core/scaling-up-the-sql-server-tier.md)します。
 
 2.  次のシナリオのサイズとスケールのガイダンスを提供するには。  
 
@@ -69,7 +69,7 @@ BizTalk Server のスケール アウトのメトリックを提供するには�
     > [!NOTE]  
     >  Visual Studio 2010 Ultimate edition のロード テストの詳細については、ハイパーリンクを参照してください。""[アプリケーションのテスト](http://go.microsoft.com/fwlink/?LinkID=208247)(http://go.microsoft.com/fwlink/?LinkID=208247)します。  
     >   
-    >  このテスト環境で機能のテスト、Visual Studio 2010 Ultimate edition ロードを使用して方法の詳細については、[テスト自動化を容易にする Visual Studio を使用して](../technical-guides/using-visual-studio-to-facilitate-automated-testing.md)を参照してください。  
+    >  このテスト環境で機能のテスト、Visual Studio 2010 Ultimate edition ロードを使用して方法の詳細については、次を参照してください。[テスト自動化を容易にする Visual Studio を使用して](../technical-guides/using-visual-studio-to-facilitate-automated-testing.md)します。  
 
 2.  BizTalk Server で XML メッセージが受信した受信場所を使用して、Wcf-nettcp 受信アダプターであること。 受信場所を構成して、メッセージの処理を行わず、PassThruReceive パイプラインを使用します。  
 
@@ -133,7 +133,7 @@ BizTalk Server のスケール アウトのメトリックを提供するには�
 
 |サービスのプロセッサおよびキャッシュ情報|LUN の構成|  
 |---------------------------------------------|-----------------------|  
-|2 つサービスのプロセッサ、それぞれに:<br /><br /> -読み取りキャッシュ サイズ: 2000 MB です。<br />-キャッシュ サイズを作成する: 8000 MB です。<br />-2 つのフロント エンド ポート ファイバ スイッチに接続されています。 ポートごとの 4 Gbps です。|-64 個のディスク (268 GB、15 k RPM、ファイバー チャネル、Seagate します。<br />-8 8 ディスクは RAID 1 + 0 64 個のディスクではこれらから分割したグループです。<br />-各 DB のサーバーには、これらの RAID グループから均等に構成されている 5 Metalun が割り当てられました。|  
+|2 つサービスのプロセッサ、それぞれに:<br /><br /> -読み取りキャッシュ サイズ。2000 MB です。<br />-キャッシュ サイズを記述します。8000 MB です。<br />-2 つのフロント エンド ポート ファイバ スイッチに接続されています。 ポートごとの 4 Gbps です。|-64 個のディスク (268 GB、15 k RPM、ファイバー チャネル、Seagate します。<br />-8 8 ディスクは RAID 1 + 0 64 個のディスクではこれらから分割したグループです。<br />-各 DB のサーバーには、これらの RAID グループから均等に構成されている 5 Metalun が割り当てられました。|  
 
  SAN の達成可能な最大スループットを確認し、運用環境での SAN に対して予想される負荷は、この値を比較する重要です。 これにより、アプリケーションをテスト/品質保証 (QA) の環境から運用環境に移行する場合は、SAN に関連するハードウェアの経費を予期しないを防ぐことは役立ちます。 たとえば、SAN の使用可能な最大のスループットは、サンド ボックス化されたテスト環境でアプリケーションの複数のための十分な可能性があります。 ただし、他のサーバー アプリケーションは、SAN を使用して、運用環境では、SAN の使用可能なスループットは十分でない可能性があり、ボトルネックになる可能性があります。  
 
@@ -159,7 +159,7 @@ BizTalk Server のスケール アウトのメトリックを提供するには�
 ### <a name="sqlio-test-results"></a>SQLIO テスト結果  
  SQLIO ツールを使用してベンチマークを実行およびラボ環境で使用される記憶域領域ネットワーク (SAN) の構成の入力/出力の能力を測定しました。 ツールの名前が示すように、SQLIO、SQL Server のパフォーマンス上のファイル システム I/O の影響を測定するため貴重なツールです。 
 
-SQL Server データベース アプリケーション ストレージ エリア ネットワーク (SAN) の構成の入力/出力の能力を測定するには、[I/O 特性の分析と SQL Server データベース アプリケーションの記憶域システムのサイズ変更](https://msdn.microsoft.com/library/ee410782(SQL.100).aspx)を参照してください。  
+SQL Server データベース アプリケーション ストレージ エリア ネットワーク (SAN) の構成の入力/出力の能力を測定するには、次を参照してください。 [I/O 特性の分析と SQL Server データベース アプリケーションの記憶域システムのサイズ変更](https://msdn.microsoft.com/library/ee410782(SQL.100).aspx)します。  
 
  SQLIO、テストでは、sqlio.exe ユーティリティ問題 8 K は 8 つのスレッドからの読み取り要求と 8 の I/O キューの深さを維持します。 次のパラメーターを使用しました。  
 
@@ -175,13 +175,13 @@ SQL Server データベース アプリケーション ストレージ エリア
 
   使用 SQLIO コマンドラインは、次のとおりです。  
 
-- **読み取り**: sqlio 韓国-s60 frandom-o8-t8-b8 LS-FParam.txt  
+- **For reads**: sqlio -kR -s60 -frandom -o8 -t8 -b8 -LS -FParam.txt  
 
-- **書き込み**: sqlio -kW-s60 frandom-o8-t8-b8 LS-FParam.txt  
+- **For writes**: sqlio -kW -s60 -frandom -o8 -t8 -b8 -LS -FParam.txt  
 
   Param.txt ファイルには、次のものが含まれています。  
 
-- **ドライブの数:** : %m:、操作、j:、K  
+- **ドライブの数:** H:、操作、j:、K  
 
 - **テスト ファイルの物理的な場所**:  
 

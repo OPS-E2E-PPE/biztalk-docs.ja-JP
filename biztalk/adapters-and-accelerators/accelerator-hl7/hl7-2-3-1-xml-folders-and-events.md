@@ -16,12 +16,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6bbe1d472f844d57c7770ec4ae425fc6aef44a20
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 29b98dbc5b0b234d56984fc606d05dffcab7e6ce
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36991731"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65271167"
 ---
 # <a name="hl7-231-xml-folders-and-events"></a>HL7 2.3.1 XML のフォルダーとイベント
 次の表は、XML エンコード メッセージの HL7 version 2.3.1 のフォルダー内のセットアップ ウィザードによって作成されるサブフォルダーを一覧表示します。 これらのサブフォルダーは、Microsoft BizTalk Accelerator for HL7 のために使用するスキーマを含めることが ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) を検証する、解析し、このテーブルの [イベント] 列に表示されるイベントをシリアル化します。 サブフォルダー名には、これらのスキーマをサポートするイベントの種類について説明します。  
@@ -38,7 +38,7 @@ ms.locfileid: "36991731"
 |[スケジュール]|S01 S26|  
 |患者の紹介|I01 I15|  
 |患者のケア|PC1 PCH PCJ、問題、PCL|  
-|ネットワークの管理|N01、N02|  
+|ネットワークの管理|N01,N02|  
   
 ## <a name="see-also"></a>参照  
  [HL7 2. XML スキーマの使用](../../adapters-and-accelerators/accelerator-hl7/using-hl7-2-xml-schemas.md)

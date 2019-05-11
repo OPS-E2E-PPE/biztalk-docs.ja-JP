@@ -16,19 +16,19 @@ caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: db394722afcdf9e5972a925963b5200b4eba157e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b3e82e51d79e78f42881e288be02476f66405943
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36974523"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65343758"
 ---
 # <a name="how-to-add-a-new-messagebox-database"></a>新しいメッセージ ボックス データベースを追加する方法
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールを使用すると、BizTalk Server 環境に新しいメッセージ ボックス データベースを追加できます。 メッセージ ボックス データベースは、協調動作するサーバー間で作業項目の負荷分散を行う基盤です。 システムで処理可能なメッセージの数を増加するには、新しいメッセージ ボックス データベースの追加が必要になることがあります。  
   
  新しいメッセージ ボックス データベースの作成時に、オーケストレーション、送信ポート、または送信ポート グループを参加させることはできません。 オーケストレーション、送信ポート、または送信ポート グループを参加させると、BizTalk Server により新しいメッセージ ボックス データベースにコピーすべきデータに対して、アクセスが生じます。 このデータへのアクセスが発生している間、BizTalk Server では、そのデータを新しいメッセージ ボックス データベースにコピーすることができません。  
   
- メッセージ ボックス データベースとして指定するデータベースは、ローカルでもリモートでもかまいません。 BizTalk Server データベースについては、[BizTalk Server でのデータベース](../core/databases-in-biztalk-server.md)を参照してください。  
+ メッセージ ボックス データベースとして指定するデータベースは、ローカルでもリモートでもかまいません。 BizTalk Server データベースについては、次を参照してください。 [BizTalk Server でのデータベース](../core/databases-in-biztalk-server.md)します。  
   
 > [!IMPORTANT]
 >  新しいメッセージ ボックスを追加するすべての SQL Server コンピューターで、SQL Server エージェントが実行されている必要があります。  

@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9f7ce59f356cfbc6b1804dc033f40aa732691342
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 708939189ea11e40752a6bff08e4ce850553207d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36982539"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65251332"
 ---
 # <a name="create-the-message-instances"></a>メッセージ インスタンスを作成します。
 次の手順を使用して、ADT^A03.txt メッセージ ファイルを作成して、バッチ処理のチュートリアルを実行するときに使用する必要があるメッセージ インスタンスを作成します。  
@@ -99,4 +99,4 @@ ms.locfileid: "36982539"
   
 5. ファイルに保存します**CreateBatchMessage2.txt**で、 \<*ドライブ*:\>\Batching Tutorial\Instances フォルダー、および終値のメモ帳。  
   
-   進みます[パート 1: 受信バッチのシナリオを断片化](../../adapters-and-accelerators/accelerator-hl7/part-1-fragmented-inbound-batch-scenario.md)します。
+   続行する[パート 1。受信バッチのシナリオを断片化](../../adapters-and-accelerators/accelerator-hl7/part-1-fragmented-inbound-batch-scenario.md)します。

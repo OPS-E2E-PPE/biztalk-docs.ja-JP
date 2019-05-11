@@ -1,5 +1,5 @@
 ---
-title: 不完全な BAM アクティビティ インスタンスを解決する方法 |Microsoft ドキュメント
+title: 不完全な BAM アクティビティ インスタンスを解決する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,15 +12,15 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e6a2a9fad2b7230e9846325c3d4d0c75d473fb86
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0b22447d0903acf4ee542b69d93d2cff73b4ff3a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22298202"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65270483"
 ---
 # <a name="how-to-resolve-incomplete-bam-activity-instances"></a>不完全な BAM アクティビティ インスタンスを解決する方法
-不完全な BAM アクティビティ インスタンスを解決する方法については、次を参照してください。[不完全なアクティビティ インスタンスの解決方法](http://go.microsoft.com/fwlink/?LinkId=151475)(http://go.microsoft.com/fwlink/?LinkId=151475)。  
+不完全な BAM アクティビティ インスタンスの解決方法の詳細については、次を参照してください。[不完全なアクティビティ インスタンスの解決方法](http://go.microsoft.com/fwlink/?LinkId=151475)(http://go.microsoft.com/fwlink/?LinkId=151475)します。  
   
 ## <a name="see-also"></a>参照  
- [BAM 分析をバックアップして、追跡分析サーバー データベース](../technical-guides/backing-up-the-bam-analysis-and-tracking-analysis-server-databases.md)
+ [BAM 分析および Tracking Analysis Server データベースのバックアップ](../technical-guides/backing-up-the-bam-analysis-and-tracking-analysis-server-databases.md)

@@ -16,21 +16,21 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e562e1580f616d8298b07c17a950edecc7f2c13e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7cd175c4bc4f96a9717371ad3fe72433231cbc44
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36993547"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65337638"
 ---
-# <a name="how-to-get-the-duration-on-an-activity-window"></a>アクティビティ時間帯の期間を取得する方法
-管理者を使用して、 **get activitywindow**コマンドを指定したアクティビティの期間を取得します。 このコマンドにより、期間の長さと、その期間の基準となる単位が返されます。  
+# <a name="how-to-get-the-duration-on-an-activity-window"></a>アクティビティ ウィンドウの期間を取得する方法
+管理者を使用して、 **get activitywindow**コマンドを指定したアクティビティの期間を取得します。 コマンドは、期間と期間の測定単位の長さを返します。  
   
 ### <a name="to-get-the-duration-on-an-activity"></a>アクティビティの期間を取得するには  
   
-1. 次のように、コマンド プロンプトを開きます: をクリックして**開始**、 をクリックして**実行**、型**cmd**、順にクリックします**OK**。  
+1. 次のように、コマンド プロンプトを開きます。をクリックして**開始**、 をクリックして**実行**、型**cmd**、順にクリックします**OK**。  
   
-2. [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking に移動します。  
+2. 移動します[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]追跡します。  
   
 3. Bm の get activitywindow の入力-アクティビティ:\<アクティビティ名\>します。  
   

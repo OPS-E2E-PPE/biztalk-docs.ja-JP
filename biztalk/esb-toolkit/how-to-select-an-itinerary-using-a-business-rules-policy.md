@@ -1,5 +1,5 @@
 ---
-title: '方法: ビジネス ルール ポリシーを使用するスケジュールを選択します |。Microsoft Docs'
+title: 操作方法:ビジネス ルール ポリシーを使用するスケジュールを選択します |。Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 12496da0de4057e96be0b714ad1af048ee6b8ef1
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1fa3ace22ccbb503e48355162e845218dd68f1e8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36976963"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65258488"
 ---
-# <a name="how-to-select-an-itinerary-using-a-business-rules-policy"></a>方法: ビジネス ルール ポリシーを使用するスケジュールを選択します。
+# <a name="how-to-select-an-itinerary-using-a-business-rules-policy"></a>操作方法:ビジネス ルール ポリシーを使用するスケジュールを選択します。
 ## <a name="goal"></a>[目標]  
  このセクションでは、受信したメッセージの内容に基づいて、旅行プランを選択するのに使用できるビジネス ルールを作成する方法と、汎用的なスケジュールに導入これらのルールの呼び出し内での旅程セレクター パイプライン コンポーネントを構成する方法を示します。 このセクションでメッセージがルーティングされる異なる方法で、顧客が存在するリージョンに基づくビジネス シナリオについて説明します。  
   
@@ -72,7 +72,7 @@ ms.locfileid: "36976963"
 2.  ポリシー エクスプ ローラーで右クリック**ポリシー**、 をクリックし、**新しいポリシーの追加**します。 ポリシーの名前**ResolveItineraryBasedOnCustomer**します。  
   
     > [!NOTE]
-    >  このトピックのトピックで作成されたものと同じビジネス ルール ポリシーとスケジュールを使用して[方法: インターチェンジを分割し、結果として得られるメッセージをルーティング、複数ファイルの場所を使用して異なる日程](../esb-toolkit/split-an-interchange-and-route-messages-to-multiple-locations-using-itineraries.md)します。 そのセクションを完了している場合は、このトピックの「"を作成して、ESB 入り口を構成する 手順を省略できます。  
+    >  このトピックのトピックで作成されたものと同じビジネス ルール ポリシーとスケジュールを使用して[方法。インターチェンジを分割し、個別のスケジュールを使用して複数のファイルの場所に作成されるメッセージをルーティング](../esb-toolkit/split-an-interchange-and-route-messages-to-multiple-locations-using-itineraries.md)します。 そのセクションを完了している場合は、このトピックの「"を作成して、ESB 入り口を構成する 手順を省略できます。  
   
 #### <a name="to-add-a-selection-rule-for-customer-globalbank-west"></a>GlobalBank 西部の顧客の選択規則を追加するには  
   
@@ -338,7 +338,7 @@ ms.locfileid: "36976963"
 ## <a name="additional-resources"></a>その他のリソース  
  詳細については、次の関連項目を参照してください。  
   
--   [方法: 別個のスケジュールを利用し、インターチェンジを分割して結果的に生成されたメッセージを複数のファイルの場所に送る](../esb-toolkit/split-an-interchange-and-route-messages-to-multiple-locations-using-itineraries.md)  
+-   [方法: インターチェンジを分割し、個別のスケジュールを使用して複数のファイルの場所に作成されるメッセージをルーティング](../esb-toolkit/split-an-interchange-and-route-messages-to-multiple-locations-using-itineraries.md)  
   
 -   [開発アクティビティ](../esb-toolkit/development-activities.md)  
   

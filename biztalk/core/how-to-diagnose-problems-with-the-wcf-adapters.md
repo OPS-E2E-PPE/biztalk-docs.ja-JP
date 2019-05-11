@@ -12,12 +12,12 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c9bcb513704753363e054d689d2409925ffcd483
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ab36d7f5873237a3fb895e3ab378b9d637896027
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36995387"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65338219"
 ---
 # <a name="how-to-diagnose-problems-with-the-wcf-adapters"></a>WCF アダプタに関する問題の診断方法
 このセクションでは、WCF アダプタに関する問題の診断手順について説明します。  
@@ -26,7 +26,7 @@ ms.locfileid: "36995387"
   
 - ソースまたはターゲットの IIS サーバー ログ ファイルには、WCF 分離アダプタに関する問題のトラブルシューティングに役立つ情報が含まれています。 既定では、[!INCLUDE[btsWinSvrNoVersion](../includes/btswinsvrnoversion-md.md)] コンピューターの IIS ログ ファイルは次のディレクトリにあります。  
   
-   <em>%Windir%\\</em>system32\LogFiles\W3SVC1\  
+   <em>%WinDir%\\</em>system32\LogFiles\W3SVC1\  
   
   > [!NOTE]
   >  *%Windir%* の場所のプレース ホルダー、[!INCLUDE[btsWinNoVersion](../includes/btswinnoversion-md.md)]ディレクトリ、IIS サーバーにします。  
@@ -36,7 +36,7 @@ ms.locfileid: "36995387"
   > [!NOTE]
   >  HTTPERR ログ ファイルは、[!INCLUDE[btsWinSvr2k3](../includes/btswinsvr2k3-md.md)] と [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] ベースのコンピューターでのみ使用できます。  
   
-   <em>%Windir%\\</em>system32\LogFiles\HTTPERR\  
+   <em>%WinDir%\\</em>system32\LogFiles\HTTPERR\  
   
 ### <a name="use-wcf-message-logging-for-fault-monitoring-and-diagnosis-of-problems-from-the-wcf-adapters"></a>WCF メッセージ ログの記録を WCF アダプタの障害監視と問題の診断に使用する  
   
@@ -77,7 +77,7 @@ ms.locfileid: "36995387"
    </configuration>  
    ```  
   
-5. Windows Communication Foundation (WCF) Service Trace Viewer ツールを使用すると、WCF によって記録されたメッセージを分析できます。 Service Trace Viewer は、Windows Vista の Microsoft Windows ソフトウェア開発キット (SDK) および [!INCLUDE[btsDotNetFramework](../includes/btsdotnetframework-md.md)] ランタイム コンポーネントに含まれています。 Windows SDK をダウンロードするには、Microsoft ダウンロード センターから[ http://go.microsoft.com/fwlink/?LinkID=75636](http://go.microsoft.com/fwlink/?LinkID=75636)します。 詳細については、このツールを使用して、"Service Trace Viewer Tool (SvcTraceViewer.exe)"at [ http://go.microsoft.com/fwlink/?LinkId=88991](http://go.microsoft.com/fwlink/?LinkId=88991)を参照してください。  
+5. Windows Communication Foundation (WCF) Service Trace Viewer ツールを使用すると、WCF によって記録されたメッセージを分析できます。 Service Trace Viewer は、Windows Vista の Microsoft Windows ソフトウェア開発キット (SDK) および [!INCLUDE[btsDotNetFramework](../includes/btsdotnetframework-md.md)] ランタイム コンポーネントに含まれています。 Windows SDK をダウンロードするには、Microsoft ダウンロード センターから[ http://go.microsoft.com/fwlink/?LinkID=75636](http://go.microsoft.com/fwlink/?LinkID=75636)します。 詳細については、このツールを使用して、次を参照してください。"Service Trace Viewer Tool (SvcTraceViewer.exe)"at [ http://go.microsoft.com/fwlink/?LinkId=88991](http://go.microsoft.com/fwlink/?LinkId=88991)します。  
   
 ### <a name="return-managed-exception-information-to-the-client-in-a-soap-fault-to-ease-debugging"></a>マネージド例外情報を SOAP エラーの発生しているクライアントに返してデバッグ処理を軽減する  
   

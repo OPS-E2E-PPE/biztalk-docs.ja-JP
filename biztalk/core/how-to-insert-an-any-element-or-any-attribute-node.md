@@ -12,15 +12,15 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8bce55126fe800841aef325f22de0afe62e03cec
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c00aa62a118b0da30deba77f7a4ceb2c1cc1cf7e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37021077"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65337097"
 ---
 # <a name="how-to-insert-an-any-element-or-any-attribute-node"></a>すべての要素または属性の任意のノードを挿入する方法
-BizTalk エディターは、2 種類のすべてのノードをサポートしています: **Any 要素**と**すべての属性**します。 これらのノードを使用すると、インスタンス メッセージ内の特定の位置にどのような要素または属性が出現するかわからないときに、それらの要素や属性のための場所をスキーマ内で確保できます。 これらのノードがインスタンス メッセージの処理時にどのように解釈されるかについては、Web 上で XSD (XML Schema Definition) 言語に関する情報を参照してください。 この情報へのリンクを参照してください。 [Web 上の XSD リソース](../core/xsd-resources-on-the-web.md)します。  
+BizTalk エディターでは、任意のノードの 2 つの種類をサポートします。**任意の要素**と**属性**します。 これらのノードを使用すると、対応するインスタンス メッセージ内の場所を不明な表示がある要素または属性に対応する、スキーマ内の場所を作成できます。 これらのノードを解釈する方法の詳細については、インスタンス メッセージを処理するときは、Web 上の XML スキーマ定義 (XSD) 言語に関する情報を直接参照してください。 この情報へのリンクを参照してください。 [Web 上の XSD リソース](../core/xsd-resources-on-the-web.md)します。  
 
 ## <a name="insert-an-any-element-node-or-an-any-attribute-node"></a>Any 要素ノードまたはすべての属性ノードを挿入します。  
 

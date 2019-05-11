@@ -1,5 +1,5 @@
 ---
-title: Windows SharePoint Services のセキュリティ |Microsoft ドキュメント
+title: Windows SharePoint Services のセキュリティ |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,22 +17,22 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 184f5a237f796eac69de6c481e69a87a4a5358df
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0979e0a7c75cf3f1450500253569fc47b3dae8b7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22214490"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65376900"
 ---
 # <a name="windows-sharepoint-services-security"></a>Windows SharePoint Services のセキュリティ
-Windows SharePoint Services 3.0 は、サイト全体のセキュリティを管理するのに Windows SharePoint Services サイト グループを使用します。 各サイト グループでは、対応する権限が適用されます。 権限とはユーザーが実行できる操作などの表示など、編集、およびサイトのリソースを削除します。 リソースには、サイトのリスト、ドキュメント ライブラリ、およびサイトの管理が含まれます。 プロファイルする Web クライアントを Windows SharePoint サービス サイト グループを定義し、それに応じて権利を割り当てる必要があるには、各リソースにグループ化で作成された各ロールにアクセスしています。  
+Windows SharePoint Services 3.0 では、Windows SharePoint Services サイト グループを使用して、サイト全体のセキュリティを管理します。 各サイトのグループは、対応する権限を持ちます。 権限は、ユーザーが実行できるアクションをなどの表示など、編集、およびサイトのリソースを削除します。 リソースには、サイトのリスト、ドキュメント ライブラリ、およびサイトの管理が含まれます。 各ロールを作成するには、各リソースをグループ化するには、Windows SharePoint サービス サイト グループを定義し、それに応じて権利を割り当てる必要がありますのプロファイル Web クライアントでのアクセスを持っています。  
   
- WSS 3.0 セキュリティの詳細については、WSS 3.0 の評価ガイドを参照してください。 [http://go.microsoft.com/fwlink/?LinkID=94370](http://go.microsoft.com/fwlink/?LinkID=94370)です。  
+ WSS 3.0 のセキュリティの詳細については、WSS 3.0 の評価ガイドを参照してください。 [ http://go.microsoft.com/fwlink/?LinkID=94370](http://go.microsoft.com/fwlink/?LinkID=94370)します。  
   
  このセクションには、次のトピックが含まれています。  
   
--   [A4SWIFT のユーザーを構成します。](../../adapters-and-accelerators/accelerator-swift/configuring-a4swift-users.md)  
+-   [A4SWIFT ユーザーの構成](../../adapters-and-accelerators/accelerator-swift/configuring-a4swift-users.md)  
   
 -   [A4SWIFT サイト グループの構成](../../adapters-and-accelerators/accelerator-swift/configuring-a4swift-site-groups.md)  
   
--   [権利の割り当てください。](../../adapters-and-accelerators/accelerator-swift/assigning-rights.md)
+-   [権限の割り当て](../../adapters-and-accelerators/accelerator-swift/assigning-rights.md)

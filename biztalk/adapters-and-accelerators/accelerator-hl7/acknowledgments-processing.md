@@ -14,12 +14,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cb8bf0620c3e336317382cbeb299cf2d6d17faa2
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 198f2abf046eec28d75ef6486eaa89ec5f4df004
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36969467"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65247566"
 ---
 # <a name="acknowledgments-processing"></a>受信確認処理
 HL7 仕様では、2 つの形式のメッセージの交換をサポートしています。  
@@ -34,7 +34,7 @@ HL7 仕様では、2 つの形式のメッセージの交換をサポートし�
  要請されていない更新プログラムでは、基幹業務 (LOB) のアプリケーションがメッセージを発行またはトリガー イベントが発生したときに、情報の転送を開始するときに発生します。 たとえば、患者の実験の結果が使用できる場合は、実験結果を他のいくつかのシステムに送信する必要があります。 これらの更新プログラムは、ACK が応答する要請されていない更新プログラムです。  
   
 ## <a name="queries"></a>クエリ  
- 場合は、クエリ情報を必要とするアプリケーションでは、別のアプリケーションにクエリを送信し、受信側アプリケーションがクエリに応答します。 たとえば、薬局用アプリケーションは注文エントリ (組織) システムの患者の ID 番号を含む要求メッセージの送信し、注文の処理を許可するように、必要なデータを含む応答を受信可能性があります。 この要求を行ったトランザクションは、クエリであり、要請していない更新プログラムとは異なります。 2 つのアプリケーション間で行われる情報は、応答に含まれます。 応答自体では、4 番目のメッセージの受信確認は必要ありません。 ただし、ACK で応答する一部の環境で変更することができます。 Microsoft BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) ように構成されている場合は、ACK で応答します。 クエリ/応答の交換の例は、[Interrogative チュートリアル](../../adapters-and-accelerators/accelerator-hl7/interrogative-tutorial.md)を参照してください。  
+ 場合は、クエリ情報を必要とするアプリケーションでは、別のアプリケーションにクエリを送信し、受信側アプリケーションがクエリに応答します。 たとえば、薬局用アプリケーションは注文エントリ (組織) システムの患者の ID 番号を含む要求メッセージの送信し、注文の処理を許可するように、必要なデータを含む応答を受信可能性があります。 この要求を行ったトランザクションは、クエリであり、要請していない更新プログラムとは異なります。 2 つのアプリケーション間で行われる情報は、応答に含まれます。 応答自体では、4 番目のメッセージの受信確認は必要ありません。 ただし、ACK で応答する一部の環境で変更することができます。 Microsoft BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) ように構成されている場合は、ACK で応答します。 クエリ/応答の交換の例は、次を参照してください。 [Interrogative チュートリアル](../../adapters-and-accelerators/accelerator-hl7/interrogative-tutorial.md)します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

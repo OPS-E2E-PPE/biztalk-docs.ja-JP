@@ -1,5 +1,5 @@
 ---
-title: アダプターのセキュリティに関する考慮事項 |Microsoft ドキュメント
+title: アダプターのセキュリティに関する考慮事項 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,12 +15,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6e306f8607c4128c8cb84df8bf421615c0e2e92b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7a9d2dfb17f43f3c21a4eda6ed687adc3128fa17
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22269482"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65250942"
 ---
 # <a name="security-considerations-for-adapters"></a>アダプターのセキュリティに関する考慮事項
 このセクションでは、アダプタのセキュリティを構成および管理するための情報について説明します。  

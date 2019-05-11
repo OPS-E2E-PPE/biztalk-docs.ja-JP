@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8ab9dd60b37c16169f76e052706adb43c4606fcf
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b1a9868fab993578d5b62c0606a68ffce4b2d3fb
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36982219"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65253482"
 ---
 # <a name="how-to-export-bindings-to-a-binding-file"></a>バインド ファイルにバインドをエクスポートする方法
 バインド ファイルを使用して既存の別の BizTalk アプリケーションに BizTalk アプリケーションのバインドをエクスポートすることができます。 グループ内のすべてのバインドまたはアセンブリのバインドをエクスポートすることもできます。 その後、アプリケーションまたはグループにこれらのバインドをインポートできます。  
@@ -58,4 +58,4 @@ ms.locfileid: "36982219"
   
  バインド ファイルの情報により既存の構成情報が置き換えられます。 バインド ファイルのアイテムの名前が既存の構成のアイテムの名前と一致する場合は、バインド ファイルをインポートすると、バインド ファイルのアイテムで既存の構成のアイテムが更新されます。  
   
- バインド ファイル内のホストと信頼レベルを格納する方法については、アプリケーション、およびバインドが適用される順序でレベル ホストと信頼レベルをバインド ファイルを照合してホストと信頼する方法は、「[バインド ファイルとアプリケーションの展開](http://go.microsoft.com/fwlink/?LinkID=154726)(http://go.microsoft.com/fwlink/?LinkID=154726)します。 BizTalk アプリケーションのバインドをエクスポートする方法の詳細については、[BizTalk アプリケーションのバインドのエクスポート方法](http://go.microsoft.com/fwlink/?LinkId=155009)(http://go.microsoft.com/fwlink/?LinkId=155009)を参照してください。
+ バインド ファイル内のホストと信頼レベルを格納する方法については、アプリケーション、およびバインドが適用される順序でレベル ホストと信頼レベルをバインド ファイルを照合してホストと信頼する方法は、「[バインド ファイルとアプリケーションの展開](http://go.microsoft.com/fwlink/?LinkID=154726)(http://go.microsoft.com/fwlink/?LinkID=154726)します。 BizTalk アプリケーションのバインドをエクスポートする方法の詳細については、次を参照してください。 [BizTalk アプリケーションのバインドのエクスポート方法](http://go.microsoft.com/fwlink/?LinkId=155009)(http://go.microsoft.com/fwlink/?LinkId=155009)します。

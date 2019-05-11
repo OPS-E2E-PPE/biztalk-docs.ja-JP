@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5911a971eebf76502ec3b3f1c6a271c3323d8efc
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1d33237374f455fe33d5b5b14ab52b7c2957e4f1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37010819"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65299978"
 ---
 # <a name="utilities"></a>ユーティリティ
 このセクションでは、Microsoft® に含まれるいくつかのユーティリティを使用するための説明[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]ソフトウェア開発キット (SDK)。  

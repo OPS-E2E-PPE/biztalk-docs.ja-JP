@@ -1,5 +1,5 @@
 ---
-title: ポリシーを展開する方法 |Microsoft ドキュメント
+title: ポリシーを展開する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,15 +12,15 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1c3b07b0a8cebdd3322b49732ef4f32c04cbfede
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3d318437c6ddb62b52599ce6da51022775ad1fcd
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22249186"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65338629"
 ---
 # <a name="how-to-deploy-policies"></a>ポリシーを展開する方法
-使用してポリシーをプログラムで配置することができます、 [Microsoft.RuleEngine.RuleSetDeploymentDriver](http://msdn.microsoft.com/library/microsoft.ruleengine.rulesetdeploymentdriver.aspx)クラス内で、 **Microsoft.RuleEngine.RuleEngineExtensions**名前空間。 次のサンプル コードを使用する方法を示しています、 [Microsoft.RuleEngine.RuleSetDeploymentDriver](http://msdn.microsoft.com/library/microsoft.ruleengine.rulesetdeploymentdriver.aspx)という名前のポリシーを展開するクラス**LoanProcessing**:  
+使用してプログラムでポリシーを展開することができます、 [Microsoft.RuleEngine.RuleSetDeploymentDriver](http://msdn.microsoft.com/library/microsoft.ruleengine.rulesetdeploymentdriver.aspx)クラス、 **Microsoft.RuleEngine.RuleEngineExtensions**名前空間。 次のサンプル コードを使用する方法を示します、 [Microsoft.RuleEngine.RuleSetDeploymentDriver](http://msdn.microsoft.com/library/microsoft.ruleengine.rulesetdeploymentdriver.aspx)という名前のポリシーを展開するにはクラス**LoanProcessing**:  
   
 ```  
 string policyName = “LoanProcessing”;  
@@ -33,21 +33,21 @@ dd.Deploy(rsi);
 ```  
   
 > [!NOTE]
->  オーバー ロードされたコンス トラクター、 [Microsoft.RuleEngine.RuleSetDeploymentDriver](http://msdn.microsoft.com/library/microsoft.ruleengine.rulesetdeploymentdriver.aspx)クラスは、パラメーターとして、ルール ストア データベースの名前を受け取ります。 これにより、BizTalk Server 環境で使用するように構成されていないデータベースにポリシーを展開することができます。  
+>  オーバー ロードされたコンス トラクター、 [Microsoft.RuleEngine.RuleSetDeploymentDriver](http://msdn.microsoft.com/library/microsoft.ruleengine.rulesetdeploymentdriver.aspx)クラスは、パラメーターとして、ルール ストア データベースの名前を受け取ります。 BizTalk Server 環境は構成されていないデータベースにポリシーを展開することができますを使用します。  
   
 ## <a name="using-the-getdeploymentdriver-method"></a>GetDeploymentDriver メソッドの使用  
- データベースにポリシーを展開する場合、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]を使用する環境が構成されている、作成する必要はありません、 **RuleSetDeploymentDriver**コード内のオブジェクト。 作成するルール エンジンを要求する代わりに、 **RuleSetDeploymentDriver**オブジェクトを呼び出すことによって、 **GetDeploymentDriver**のメソッド、**構成**クラスの**System.RuleEngine**名前空間。 次のサンプル コードを呼び出す方法を示しています、 **GetDeploymentDriver**メソッド。  
+ データベースにポリシーを展開する場合、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]を使用する環境が構成されている、作成する必要はありません、 **RuleSetDeploymentDriver**コード内のオブジェクト。 代わりに、作成するルール エンジンを要求することができます、 **RuleSetDeploymentDriver**オブジェクトを呼び出すことによって、 **GetDeploymentDriver**のメソッド、**構成**クラス、 **System.RuleEngine**名前空間。 次のサンプル コードが呼び出す方法を示します、 **GetDeploymentDriver**メソッド。  
   
 ```  
 Microsoft.BizTalk.RuleEngineExtensions.RuleSetDeploymentDriver dd;  
 dd = new Microsoft.RuleEngine.Configuration.GetDeploymentDriver();  
 ```  
   
- **GetDeploymentDriver**メソッドの値を取得、 **\software\microsoft\businessrules\3.0**と**DeploymentDriverClass**下のレジストリ キー **HKEY_LOCAL_MACHINE\Software\Microsoft\BusinessRules\3.0**のインスタンスを作成し、 **DeploymentDriverClass**です。 次の表に、これら 2 つのレジストリ キーの既定値を示します。  
+ **GetDeploymentDriver**メソッドの値を取得、 **\software\microsoft\businessrules\3.0**と**DeploymentDriverClass**下のレジストリ キー **hkey _LOCAL_MACHINE\Software\Microsoft\BusinessRules\3.0**のインスタンスを作成および**DeploymentDriverClass**します。 次の表では、これらの 2 つのレジストリ キーの既定値を示します。  
   
 |レジストリ キー|値|  
 |------------------|-----------|  
 |DeploymentDriverAssembly|Microsoft.BizTalk.RuleEngineExtensions|  
 |DeploymentDriverClass|Microsoft.BizTalk.RuleEngineExtensions.RuleSetDeploymentDriver|  
   
- **RuleSetDeploymentDriver**クラスが実装する、 **IRuleSetDeploymentDriver**インターフェイスです。 実装するクラスを作成することで、独自のポリシー展開ドライバーを開発することができます、 **IRuleSetDeploymentDriver**インターフェイスと変更として上のレジストリ キーの値で説明した適切な。
+ **RuleSetDeploymentDriver**クラスが実装する、 **IRuleSetDeploymentDriver**インターフェイス。 実装するクラスを作成して、独自のポリシー展開ドライバーを開発することができます、 **IRuleSetDeploymentDriver**インターフェイスおよびとして上記のレジストリ キーの値で説明した変更が適切な。

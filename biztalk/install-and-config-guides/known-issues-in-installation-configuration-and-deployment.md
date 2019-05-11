@@ -12,51 +12,51 @@ caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 067d579317f9f034c65fe0f23cbf2f2d7f7b77f6
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 040b1921228608deddb3e950613f447d984121c9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36982651"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65266205"
 ---
-# <a name="known-issues-in-installation-configuration-and-deployment"></a>インストール、構成、および展開での既知の問題
-## <a name="some-biztalk-edias2-artifacts-are-still-active-after-unconfiguring"></a>一部の BizTalk EDI/AS2 アイテムが構成解除した後もアクティブになっている  
+# <a name="known-issues-in-installation-configuration-and-deployment"></a>インストール、構成、および展開に関する既知の問題
+## <a name="some-biztalk-edias2-artifacts-are-still-active-after-unconfiguring"></a>構成解除した後、一部の BizTalk edi/as2 アイテムがまだアクティブ  
   
 ##### <a name="problem"></a>問題  
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の BizTalk EDI/AS2 機能を構成解除した後、EDI 処理および AS2 処理に関連する一部の BizTalk Server アイテムが、BizTalk グループ構成のコンテキストにおいてアクティブのままとなります。 これらのアイテムには、EDI パイプライン、AS2 パイプライン、バッチ処理オーケストレーションなどがあります。 このため、BizTalk EDI/AS2 機能を構成解除した後でも、基本的な EDI 処理および AS2 処理を実行できます。  
+ BizTalk edi/as2 機能を構成解除した後[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]、EDI および AS2 処理に関連する一部の BizTalk Server アイテムを BizTalk グループの構成のコンテキストでアクティブにすることができます。 これらの成果物には、EDI および AS2 のパイプラインとバッチ処理オーケストレーションが含まれます。 その結果、BizTalk edi/as2 機能を構成解除した後でも、基本的な EDI および AS2 処理を実行することができます。  
   
 ##### <a name="cause"></a>原因  
- EDI 処理および AS2 処理に関連付けられているアクティブなポートがあります。 一部のアイテムは、これらのポートがアクティブである間は、引き続き機能します。  
-  
-##### <a name="resolution"></a>解決方法  
- すべての EDI/AS2 アイテムを無効にするには、EDI 処理および AS2 処理に関連付けられているポートを無効化、停止、または削除する必要があります。  
-  
-## <a name="if-the-biztalk-server-computer-or-sql-server-computer-is-renamed-after-biztalk-server-configuration-the-configuration-wizard-will-fail"></a>BizTalk Server を構成した後に BizTalk Server のコンピューターまたは SQL Server のコンピューターの名前を変更すると、構成ウィザードが失敗する  
-  
-##### <a name="problem"></a>問題  
- この問題は、次のようにさまざまなケースで生じることがあります。  
-  
--   BizTalk Server 構成で概要ページを正しく読み込むことができましたが、機能を構成しようとすると、画面に機能オプションが表示されません。  
-  
--   構成ウィザードが SQL Server に接続できません。  
-  
--   すべての構成を解除しようとすると、一部の機能は解除されますが、すべての機能は解除されません。  
-  
-##### <a name="cause"></a>原因  
- BizTalk Server の構成では、コンピューターのネットワーク名を格納します。 BizTalk Server 構成のコンピューターの名前が変更されると、構成ウィザードは BizTalk Server を特定できなくなります。 BizTalk Server を構成した後に SQL Server コンピューターの名前を変更する場合も、同様の問題が発生します。  
+ EDI および AS2 処理に関連付けられているアクティブなポートがあります。 一部のアイテムは引き続きこれらのポートをアクティブにしたままに機能します。  
   
 ##### <a name="resolution"></a>解決策  
- BizTalk Server コンピューターまたは SQL Server コンピューターの名前を変更しないでください。 サーバーの名前を変更する必要がある場合は、コンピューターの名前を変更する前に、すべての BizTalk 機能の構成を解除します。 コンピューターの名前を変更してから、BizTalk Server の機能を再構成してください。  
+ すべての edi/as2 アイテムを無効にするを無効にし、停止、または EDI および AS2 処理に関連付けられているポートを削除する必要があります。  
   
-## <a name="the-biztalk-server-business-rules-configuration-wizard-fails"></a>BizTalk Server のビジネス ルール構成ウィザードが失敗する  
+## <a name="if-the-biztalk-server-computer-or-sql-server-computer-is-renamed-after-biztalk-server-configuration-the-configuration-wizard-will-fail"></a>BizTalk Server の構成後、BizTalk Server コンピューターまたは SQL Server コンピューターの名前が変更、構成ウィザードが失敗します。  
   
-### <a name="problem"></a>Problem  
+##### <a name="problem"></a>問題  
+ この問題は、いくつかの方法で問題を発生可能性があります。  
   
-- ビジネス ルール構成ウィザードが "一部のコンポーネントの構成に失敗しました。それらのコンポーネントにはどの設定も適用されませんでした" というエラーで失敗します。  
+-   BizTalk Server の構成が [概要] ページを正しく読み込むが、画面に機能を構成しようとしています。 機能のオプションは表示されません。  
   
-- BizTalk Server コンピューターにビジネス ルール エンジンが既に正常に構成されている場合、ルール エンジン更新サービスの開始は失敗し、手動で開始することはできません。  
+-   構成ウィザードは、SQL Server に接続できません。  
   
-  この問題が発生した場合は、BizTalk Server コンピューターのアプリケーション ログに次のようなエラーが生成されることがあります。  
+-   すべてではなく、一部の機能の構成を解除するすべての構成を解除しようとしています。  
+  
+##### <a name="cause"></a>原因  
+ BizTalk Server の構成では、コンピューターのネットワーク名を格納します。 コンピューターの名前変更は、BizTalk Server の構成と構成ウィザードは、BizTalk Server を特定できなくなります。 SQL Server コンピューターの名前が変更された後、BizTalk Server が構成されている場合、同様の問題が発生します。  
+  
+##### <a name="resolution"></a>解決策  
+ BizTalk Server コンピューター、または SQL Server コンピューターに名前を変更できません。 場合は、サーバーの名前を変更する必要があります、コンピューターの名前を変更する前にすべての BizTalk 機能の構成を解除します。 コンピューターの名前を変更するには後、は、BizTalk Server の機能を再構成します。  
+  
+## <a name="the-biztalk-server-business-rules-configuration-wizard-fails"></a>BizTalk Server ビジネス ルール構成ウィザードが失敗しました。  
+  
+### <a name="problem"></a>問題  
+  
+- ビジネス ルールの構成ウィザードは、「一部のコンポーネントの構成に失敗しましたし、それらのコンポーネントの設定は適用されませんでした」エラーで失敗します。  
+  
+- 対象のビジネス ルール エンジンが既に正常に構成されて、BizTalk サーバー コンピューターには、ルール エンジン更新サービスは開始に失敗し、手動で開始することはできません。  
+  
+  この問題が発生したときに、BizTalk Server コンピューターのアプリケーション ログには、次のようなエラーを生成可能性があります。  
   
 ```  
 Service could not be started. : System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it ::1:3132  
@@ -64,32 +64,32 @@ Service could not be started. : System.Net.Sockets.SocketException (10061): No c
 ```  
   
 ### <a name="cause"></a>原因  
- マイクロソフト マルウェア対応センターは、SettingsModifier:Win32/PossibleHostsFileHijack からの脅威の可能性に対処するために、更新されたシグネチャ ファイルを公開しました。 この更新されたシグネチャ ファイルにより、SettingsModifier:Win32/PossibleHostsFileHijack からの脅威を緩和するために、Windows Defender などのソフトウェアでローカル HOSTS ファイルが更新されます。 これらの変更の結果、BizTalk Server ルール エンジン更新サービスが正常に開始できない場合があります。  
+ Microsoft マルウェア プロテクション センター SettingsModifier:Win32 から潜在的な脅威に対処するための更新されたシグネチャ ファイルをリリースする/公開しました。 この更新されたシグネチャ ファイル SettingsModifier:Win32 からの脅威を軽減するためにローカルの HOSTS ファイルを更新する Windows Defender などの Microsoft マルウェア検出ソフトウェアが発生することができます/公開しました。 これらの変更の結果として、BizTalk Server ルール エンジン更新サービスを開始する失敗します。  
   
 ### <a name="resolution"></a>解決策  
- ローカル HOSTS ファイルを更新して次の行を追加してください。  
+ ローカルの HOSTS ファイルに含める、次の行を更新します。  
   
 ```  
 127.0.0.1         localhost  
 ```  
   
- HOSTS ファイルは %systemroot%\drivers\etc\ ディレクトリにあります。  
+ HOSTS ファイルは %systemroot%\drivers\etc\ ディレクトリ内にあります。  
   
 > [!NOTE]
 >  SettingsModifier:Win32 から可能な脅威に対処する Microsoft マルウェア プロテクション センターの署名の更新の詳細については/に移動して、公開しました[ http://go.microsoft.com/fwlink/?LinkId=146221](http://go.microsoft.com/fwlink/?LinkId=146221)します。  
   
-## <a name="enlistment-of-an-orchestration-fails-if-referenced-assemblies-are-missing-from-the-gacmgmt-db"></a>GAC/Mgmt db に参照アセンブリが見つからない場合、オーケストレーションの参加に失敗する  
+## <a name="enlistment-of-an-orchestration-fails-if-referenced-assemblies-are-missing-from-the-gacmgmt-db"></a>オーケストレーションが失敗した場合、参照アセンブリが見つからない Gac/mgmt DB からの参加  
   
 ##### <a name="problem"></a>問題  
- GAC/Mgmt db に参照 (オーケストレーションで参照される C# アセンブリ) が見つからない場合、オーケストレーションの参加に失敗します。 再展開中に、既存の状態に基づいたオーケストレーションの参加が必要になることがあります。 参照が見つからないと、展開も失敗します。  
+ 場合、オーケストレーションの参加が失敗した参照 (C#オーケストレーションに参照されるアセンブリ) Gac/mgmt db にはないです。 再展開時に、既存の状態に基づいてオーケストレーションを参加させる必要があります。 参照が不足している場合、展開も失敗します。  
   
 ##### <a name="cause"></a>原因  
- GAC/Mgmt db に参照アセンブリが見つかりません。  
+ Gac/mgmt db に参照されたアセンブリが表示されません。  
   
 ##### <a name="resolution"></a>解決策  
- オーケストレーションの参加時に Mgmt db に格納された参照アセンブリにアクセスできるように、参照アセンブリを GAC に追加するか、リソースとして追加します。  
+ 参照されたアセンブリを GAC に追加または Mgmt db に格納されますしたり、オーケストレーションの参加中にアクセスできるように、リソースとして追加します。  
 
-## <a name="community-blog-biztalk-2013-r2-bugs-issues--quirks"></a>コミュニティ ブログ: BizTalk 2013 R2 のバグ、問題、変わった現象
+## <a name="community-blog-biztalk-2013-r2-bugs-issues-quirks"></a>コミュニティのブログ:BizTalk 2013 R2 のバグ、問題、変わった現象
 
 [BizTalk Server 2013 R2 の既知のバグ、問題、変わった現象](https://cdijkgraaf.wordpress.com/2016/08/12/biztalk-2013-r2-known-bugs-issues-quirks/)
   
@@ -101,5 +101,5 @@ Service could not be started. : System.Net.Sockets.SocketException (10061): No c
   
   [BizTalk Server のクラスター構成](../install-and-config-guides/configure-biztalk-server-in-a-cluster.md)
   
- [BizTalk Server の安全な展開](../install-and-config-guides/securing-your-biztalk-server-deployment.md)  
+ [BizTalk Server の展開をセキュリティで保護します。](../install-and-config-guides/securing-your-biztalk-server-deployment.md)  
   

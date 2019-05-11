@@ -13,12 +13,12 @@ caps.latest.revision: 42
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 64a6222ffbabad54d8908a7d8da5517786d9a0cc
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3e91f409cd7a7b90cb992ebb38d01a21d8688c7f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36981091"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65341261"
 ---
 # <a name="configure-the-backup-biztalk-server-job"></a>バックアップ BizTalk Server ジョブを構成します。
 インストールして、BizTalk Server を構成した後は、バックアップを構成する[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]データをバックアップするジョブ。 
@@ -29,13 +29,13 @@ ms.locfileid: "36981091"
 ## <a name="overview"></a>概要
 **BizTalk Server のバックアップ (BizTalkMgmtDb)** ジョブには、次の手順が含まれています。
 
--   手順 1 –**圧縮オプションのセット**: を有効にするか、バックアップ中に圧縮を無効にします。
+-   手順 1 –**圧縮オプションを設定**:有効にするか、バックアップ中に圧縮を無効にします。
 
--   手順 2 – **BackupFull**: 完全なデータベース、BizTalk Server データベースのバックアップの実行
+-   手順 2 – **BackupFull**:BizTalk Server データベースのデータベースの完全バックアップの実行
 
--   手順 3 – **MarkAndBackUpLog**: BizTalk Server データベースのログをバックアップします。
+-   手順 3 – **MarkAndBackUpLog**:BizTalk Server データベースのログをバックアップします。
 
--   手順 4 –**バックアップ履歴を消去する**: バックアップの履歴が保持される期間を選択
+-   手順 4 –**バックアップ履歴を消去する**:バックアップ履歴が保持される期間を選択します。
 
 このジョブを構成するには、する必要があります。  
   
@@ -43,26 +43,26 @@ ms.locfileid: "36981091"
   
 -   データベースをバックアップする Windows ユーザー アカウントを選択し、このアカウントの SQL Server ログインを作成
   
--   SQL Server ログインを BizTalk Server データベース内の BTS_BACKUP_USERS データベース ロールにマップします。
+-   SQL Server ログインを BizTalk Server データベースの BTS_BACKUP_USERS データベース ロールにマップします。
   
--   すべてのノードで MSDTC サービスをアクティブにします。 それ以外の場合、ソース ノードと宛先ノードの間のリンク サーバーの追加は失敗します。
+-   MSDTC サービスがアクティブでは、すべてのノードを確認します。 それ以外の場合、ソース ノードと宛先ノードの間のリンク サーバーの追加は失敗します。
   
 ## <a name="before-you-begin"></a>アンインストールの準備  
   
 - 特定の構成およびバックアップ操作には、sysadmin SQL Server ロールのメンバーシップが必要とします。 バックアップするため、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]データベースが SQL Server の sysadmin サーバー ロールのメンバーであるアカウントを使用して、プライマリ サーバーにサインインします。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 構成では、BTS_BACKUP_USERS データベース ロールに追加します。 データベース バックアップに使用するユーザー アカウントでは、プライマリ サーバーを除いて、バックアップに関係するすべての SQL Server のシステム管理者 (sysadmin SQL Server ロール) のアクセス許可は必要ありません。  
   
-- 実行に使用するサインイン アカウントを決定する、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]データベースのバックアップ。 ローカル アカウントを使用して、1 つ以上のアカウントを使用することができます。 一般に簡素化され、この用途専用で専用の 1 つの Windows ドメイン ユーザー アカウントを作成した方が安全です。 このユーザー用の SQL Server ログオン アカウントを構成し、バックアップ プロセスに参加するすべての SQL Server について、プライマリ (送信元) サーバーかセカンダリ (送信先) サーバーかにかかわらず、ユーザーを SQL Server ログインにマップする必要があります。 各 BizTalk BTS_BACKUP_USERS データベース ロールにこのユーザーを割り当てる、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]をバックアップするデータベースします。  
+- 実行に使用するサインイン アカウントを決定する、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]データベースのバックアップ。 ローカル アカウントを使用して、1 つ以上のアカウントを使用することができます。 一般に簡素化され、この用途専用で専用の 1 つの Windows ドメイン ユーザー アカウントを作成した方が安全です。 このユーザーは、SQL Server ログオン アカウントを構成する必要があり、ユーザーは、プライマリ (ソース) またはセカンダリ (送信先) サーバーとして、バックアップ プロセスに参加している SQL サーバーのすべての SQL Server ログインにマップする必要があります。 各 BizTalk BTS_BACKUP_USERS データベース ロールにこのユーザーを割り当てる、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]をバックアップするデータベースします。  
   
-- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のバックアップ ジョブでは、期限切れのバックアップ ファイルが削除されないので、ディスク領域を節約するにはこれらのバックアップ ファイルを手動で管理する必要があります。 データベースの完全バックアップを新規作成した後で、プライマリ ディスクの領域を再利用できるように、期限切れのバックアップ ファイルをアーカイブ ストレージ デバイスに移動します。 参照してください、 [SSIS パッケージ](http://www.biztalkbill.com/2015/05/26/ssis-packages-to-help-management-biztalk-server-environments/)これらのファイルを管理します。  
+- バックアップ[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ジョブが期限切れのバックアップ ファイルを削除してされないので、ディスク領域を節約するために、これらのバックアップ ファイルを手動で管理する必要があります。 データベースの新しい完全バックアップを作成すると、期限切れのバックアップ ファイルをプライマリ ディスク上の領域を解放するアーカイブ ストレージ デバイスを移動する必要があります。 参照してください、 [SSIS パッケージ](http://www.biztalkbill.com/2015/05/26/ssis-packages-to-help-management-biztalk-server-environments/)これらのファイルを管理します。  
   
-- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] BizTalk 追跡データベースに直接追跡データを書き込みませんなく、メッセージ ボックス データベースにデータをキャッシュしてから、BizTalk 追跡データベースに移動します。 メッセージ ボックス データの損失が発生した場合は、追跡データも一部が失われている可能性があります。  
+- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] BizTalk 追跡データベースに直接追跡データを書き込みませんなく、メッセージ ボックス データベースにデータをキャッシュしてから、BizTalk 追跡データベースに移動します。 メッセージ ボックス データの損失が発生すると、いくつかの追跡データは、失われるも可能性があります。  
   
 ## <a name="prerequisites"></a>前提条件  
 * SQL Server の sysadmin SQL Server ロールのメンバーであるアカウントを使用してにサインインします。  
   
-* SQL Server エージェント サービスは、SQL Server の各インスタンス上にユーザー ログインがマップされたドメイン アカウントまたはローカル アカウントで実行されるように構成します。ローカル アカウントも使用できますが、ドメイン アカウントの使用をお勧めします。  
+* SQL Server の各インスタンスにマップされたユーザー ログインを持つ (推奨、ローカル アカウントを使用できますが、)、ドメイン アカウントで実行する SQL Server エージェント サービスを構成します。  
 
-* Azure blob ストレージ アカウントを使用する必要が、 [general purpose ストレージ アカウント](https://docs.microsoft.com/azure/storage/common/storage-create-storage-account#create-a-storage-account)、blob ストレージ アカウント内のコンテナーを[共有アクセス署名](https://docs.microsoft.com/sql/relational-databases/backup-restore/sql-server-backup-to-url#SAS)(SAS) と[SQL 資格情報SAS を使って](https://docs.microsoft.com/sql/relational-databases/backup-restore/sql-server-backup-to-url#credential)します。 作成されると、blob サービス エンドポイントの URL、https:// ようなものであるがある<em>yourstorageaccount</em>.blob.core.windows.net/*containername*します。 
+* Azure blob ストレージ アカウントを使用する必要が、 [general purpose ストレージ アカウント](https://docs.microsoft.com/azure/storage/common/storage-create-storage-account#create-a-storage-account)、blob ストレージ アカウント内のコンテナーを[共有アクセス署名](https://docs.microsoft.com/sql/relational-databases/backup-restore/sql-server-backup-to-url#SAS)(SAS) と[SQL 資格情報SAS を使って](https://docs.microsoft.com/sql/relational-databases/backup-restore/sql-server-backup-to-url#credential)します。 作成されると、blob サービス エンドポイントの URL、 https:// ようなものであるがある<em>yourstorageaccount</em>.blob.core.windows.net/*containername*します。 
 
     > [!TIP]
     > 既存の blob ストレージ アカウントの SAS を使用して構成していない場合、 [SAS PowerShell スクリプト](https://docs.microsoft.com/sql/relational-databases/backup-restore/sql-server-backup-to-url#SAS)およびコンテナーを作成できます。 [SQL Server Backup to URL](https://docs.microsoft.com/sql/relational-databases/backup-restore/sql-server-backup-to-url)概要についてと具体的な手順を提供します。
@@ -71,7 +71,7 @@ ms.locfileid: "36981091"
   
 1. BizTalk 管理データベースをホストする SQL Server で開きます**SQL Server Management Studio**に接続して、[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]します。  
   
-2. **[SQL Server エージェント]** を展開し、**[ジョブ]** を展開します。  
+2. 展開**SQL Server エージェント**、展開と**ジョブ**します。  
   
 3. 右クリック**BizTalk Server のバックアップ (BizTalkMgmtDb)** 選択**プロパティ**します。 ジョブのプロパティで選択**手順**します。  
   
@@ -87,26 +87,26 @@ ms.locfileid: "36981091"
   
 5. 選択、 **BackupFull**手順、および選択**編集**します。 **コマンド**ボックスに、パラメーター値を更新します。  
   
-   1. **頻度**: 既定値は**d** (毎日) です。 これは推奨の設定。 その他の値が含まれます**h** (時間)、 **w** (毎週)、 **m** (毎月)、または**y** (年単位)。  
+   1. **頻度**:既定値は**d** (毎日) です。 これは推奨の設定。 その他の値が含まれます**h** (時間)、 **w** (毎週)、 **m** (毎月)、または**y** (年単位)。  
   
-   2. **名前**: 既定値は**BTS**します。 この名前は、バックアップ ファイル名の一部として使用されます。  
+   2. **[名前]**:既定値は**BTS**します。 名前は、バックアップ ファイル名の一部として使用されます。  
   
-   3. **バックアップ ファイルの場所**: 置換 '*\<宛先パス\>*' をコンピューターと、をバックアップするフォルダーに完全パス(パスは、単一引用符を含める必要があります)で[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]データベース、または Azure blob storage アカウントに blob サービス エンドポイントの URL。  
+   3. **バックアップ ファイルの場所**:置換 '*\<宛先パス\>*' コンピューターとバックアップを作成フォルダーに完全なパス (パスは、単一引用符を含める必要があります) で、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]データベース、または blob service エンドポイントAzure blob ストレージ アカウントの URL。  
 
       > [!IMPORTANT]
       > - ローカル パスを入力するかどうかは、ターゲット システム上の同じフォルダーにすべてのファイルを手動でコピーする必要があるたびに、バックアップ[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ジョブには、新しいファイルが作成されます。  
       > 
       >      リモート パスを使用するには、UNC 共有をなど入力\\ \\  *\<ServerName\>*\\*\<SharedDrive\>* \\ここで、 *\<ServerName\>* 、ファイル サーバーの名前を指定し、 *\<SharedDrive\>* 共有ドライブまたはフォルダーの名前を指定します。  
       > 
-      >      ネットワーク経由でデータをバックアップする場合は、ネットワークの影響を受けます。 リモートの場所を使用する場合は、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のバックアップ ジョブの完了時にバックアップが成功したかどうか確認します。  
-      > - データ損失の可能性を回避するには、バックアップ ディスクを、データベースのデータ ディスクおよびログ ディスクとは異なるディスクに構成します。 これは、データやログのディスクに障害が発生した場合にバックアップにアクセスするために必須です。  
+      >      ネットワークの問題は、ネットワーク経由でデータのバックアップです。 バックアップがときに成功したことを確認、リモートの場所を使用するときに、バックアップ[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ジョブが完了します。  
+      > - データ損失の可能性を回避するには、データベースのデータとログのディスクとは異なるディスクにバックアップ ディスクを構成します。 これは、機能は、データまたはログのディスクが失敗した場合、バックアップにアクセスできるように必要です。  
       > - Azure blob アカウントへのバックアップの入力と、 **Blob service エンドポイント**で、blob サービスのプロパティに示されている URL と、コンテナー名、 [Azure portal](https://portal.azure.com)。
 
-   4. 任意。 **部分バックアップに失敗した後、完全バックアップを強制**(@ForceFullBackupAfterPartialSetFailure): 既定値は**0**します。 ログ バックアップに失敗した場合、次の完全バックアップ間隔に達するまで、完全バックアップは実行しません。 置き換える**1**ログ バックアップの失敗が発生するたびに、完全バックアップが実行された場合。
+   4. 任意。 **部分バックアップに失敗した後、完全バックアップを強制**(@ForceFullBackupAfterPartialSetFailure)。既定値は **0**です。 ログ バックアップに失敗した場合、次の完全バックアップ間隔に達するまで、完全バックアップは実行しません。 置き換える**1**ログ バックアップの失敗が発生するたびに、完全バックアップが実行された場合。
     
-   5. 任意。 **バックアップ プロセスの実行をローカル時刻に 1 時間**(@BackupHour): 既定値は**NULL**します。 バックアップ ジョブのタイム ゾーンに関連付けられていない、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]コンピューター、および実行時の午前 0 時 (utc) 時刻 (0000)。 する場合、特定の時間のタイム ゾーンでのバックアップ、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]コンピューターが現地時間として整数値を 0 (深夜) から 23 (11 PM) に入力します。 
+   5. 任意。 **バックアップ プロセスの実行をローカル時刻に 1 時間**(@BackupHour)。既定値は**NULL**します。 バックアップ ジョブのタイム ゾーンに関連付けられていない、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]コンピューター、および実行時の午前 0 時 (utc) 時刻 (0000)。 する場合、特定の時間のタイム ゾーンでのバックアップ、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]コンピューターが現地時間として整数値を 0 (深夜) から 23 (11 PM) に入力します。 
 
-   6. 任意。 **ローカル時刻を使用して、** (@UseLocalTime): ローカル時刻を使用する手順を示します。 既定値は**0**、現在の UTC 時刻 – GETUTCDATE() – 2007-05-04 01:34:11.933 を使用しています。 場合設定**1**、現地時刻 – GETDATE() – 2007-05-03 18:34:11.933 を使用して、
+   6. 任意。 **ローカル時刻を使用して、** (@UseLocalTime)。ローカル時刻を使用する手順を説明します。 既定値は**0**、現在の UTC 時刻 – GETUTCDATE() – 2007-05-04 01:34:11.933 を使用しています。 場合設定**1**、現地時刻 – GETDATE() – 2007-05-03 18:34:11.933 を使用して、
   
    次の例では、毎日のバックアップが午前 2 時に作成され、m:\ ドライブに格納されています。  
   
@@ -133,11 +133,11 @@ ms.locfileid: "36981091"
   
 6. 選択、 **MarkAndBackupLog**手順、および選択**編集**します。 **コマンド**ボックスに、パラメーター値を更新します。  
   
-   1. <strong>@MarkName</strong>: これは、バックアップ ファイルの名前付け規則の一部:\<サーバー名\>\_\<データベース名\>**\_ログ\_** \<ログ マーク名\> \_\<タイムスタンプ\>  
+   1. <strong>@MarkName</strong>:これは、バックアップ ファイルの名前付け規則の一部です。\<サーバー名\>\_\<データベース名\>**\_ログ\_** \<ログ マーク名\> \_ \<タイムスタンプ\>  
     
-   2. <strong>@BackupPath</strong>: コンピューターに格納するフォルダー完全な宛先パス (単一引用符を含む)、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]データベース ログ、または Azure blob ストレージ アカウントとコンテナー。 *\<宛先パス\>* ローカルまたは別のサーバーへの UNC パスにすることもできます。  
+   2. <strong>@BackupPath</strong>:コンピューターとを格納するフォルダーへのリンク先の完全パス (単一引用符を含む)、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]データベース ログ、または Azure blob ストレージ アカウントとコンテナー。 *\<宛先パス\>* ローカルまたは別のサーバーへの UNC パスにすることもできます。  
   
-      MarkAndBackupLog ステップで、バックアップのログをマークした後、バックアップします。  
+      MarkAndBackupLog ステップでは、バックアップ、ログをマークし、し、それらをバックアップします。  
   
    > [!IMPORTANT]
    >  回避するために**データ損失の可能性**および**パフォーマンスの向上**、 *\<宛先パス\>* 別のコンピューターに設定する必要がありますまたは、ハード ドライブ、元のデータベース ログの格納で使用したものと異なる。  
@@ -146,9 +146,9 @@ ms.locfileid: "36981091"
   
 7. 選択、 **Clear Backup History**手順、および選択**編集**します。 **コマンド**ボックスに、パラメーター値を更新します。  
   
-   1. <strong>@DaysToKeep</strong>: 既定値は**14 日間**します。 バックアップ履歴が保持される期間決定、`Adm_BackupHistory`テーブル。 定期的にバックアップ履歴の消去維持、`Adm_BackupHistory`テーブルに適切なサイズ。 
+   1. <strong>@DaysToKeep</strong>:既定値は**14 日間**します。 バックアップ履歴が保持される期間決定、`Adm_BackupHistory`テーブル。 定期的にバックアップ履歴の消去維持、`Adm_BackupHistory`テーブルに適切なサイズ。 
     
-   2. 任意。 <strong>@UseLocalTime</strong>: ローカル時刻を使用する手順を伝えます。 既定値は 0 です。 現在の UTC 時刻 – GETUTCDATE() – 2007-05-04 01:34:11.933 を使用します。 かどうか 1 に設定すると、次を使用してローカル時刻 – GETDATE() – 2007-05-03 18:34:11.933
+   2. 任意。 <strong>@UseLocalTime</strong>:ローカル時刻を使用する手順を説明します。 既定値は 0 です。 It uses current UTC time – GETUTCDATE() – 2007-05-04 01:34:11.933. かどうか 1 に設定すると、次を使用してローカル時刻 – GETDATE() – 2007-05-03 18:34:11.933
   
    ```  
    exec [dbo].[sp_DeleteBackupHistory] @DaysToKeep=14, @UseLocalTime =1 
@@ -159,7 +159,7 @@ ms.locfileid: "36981091"
     
     選択**OK**してすべてのプロパティ ウィンドウを閉じます。  
   
-8. 任意。 バックアップのスケジュールを変更します。 参照してください[バックアップ BizTalk Server のジョブをスケジュールする方法](../core/how-to-schedule-the-backup-biztalk-server-job.md)します。  
+8. 任意。 バックアップ スケジュールを変更します。 参照してください[バックアップ BizTalk Server のジョブをスケジュールする方法](../core/how-to-schedule-the-backup-biztalk-server-job.md)します。  
   
    > [!NOTE]
    >  バックアップ[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ジョブが初めて構成することを実行します。 既定では、その後の実行、バックアップ[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ジョブは 1 日に 1 回完全バックアップを完了して、15 分ごとにログ バックアップを完了します。  
@@ -182,7 +182,7 @@ BizTalk Server のバックアップ ジョブが既に構成されているし�
 
 ## <a name="spforcefullbackup-stored-procedure"></a>sp_ForceFullBackup ストアド プロシージャ  
   
-**Sp_ForceFullBackup**ストアド プロシージャ、 **BizTalkMgmtDb**データベースは、アドホックのデータとログ ファイルの完全バックアップを実行するために使用できます。 ストアド プロシージャで、adm_ForceFullBackup テーブルの値を 1 にして更新します。 次回のバックアップ[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ジョブが実行されると、データベースの完全バックアップ セットが作成されます。  
+**Sp_ForceFullBackup**ストアド プロシージャ、 **BizTalkMgmtDb**データベースは、アドホックのデータとログ ファイルの完全バックアップを実行するために使用できます。 ストアド プロシージャは、値 1 で、adm_ForceFullBackup テーブルを更新します。 次回のバックアップ[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ジョブが実行されると、データベースの完全バックアップ セットが作成されます。  
   
 ## <a name="next-steps"></a>次の手順  
  [ログ配布用の送信先システムを構成します。](../core/how-to-configure-the-destination-system-for-log-shipping.md)   

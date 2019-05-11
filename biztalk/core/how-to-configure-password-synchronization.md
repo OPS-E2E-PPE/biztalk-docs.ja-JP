@@ -1,5 +1,5 @@
 ---
-title: パスワード同期を構成する方法 |Microsoft ドキュメント
+title: パスワード同期を構成する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -19,41 +19,41 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b2e8348cdf78db3e95ed75e5d83e6ea53bdffdee
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: b1b18d6f59b364a12a9ffe775d64a57e310f76e9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25968912"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65341299"
 ---
 # <a name="how-to-configure-password-synchronization"></a>パスワード同期を構成する方法
-SSOCONFIG コマンド ライン ユーティリティを使用すると、パスワード同期の設定を構成できます。  
+SSOCONFIG コマンド ライン ユーティリティを使用して、パスワード同期設定を構成します。  
   
 ### <a name="to-specify-the-directory-for-replay-files"></a>再生ファイルのディレクトリを指定するには  
   
 1.  **[スタート]** メニューの **[ファイル名を指定して実行]** をクリックします。  
   
-2.  **実行** ダイアログ ボックスで、「 **cmd**、順にクリック**OK**です。  
+2.  **実行**ダイアログ ボックスに「 **cmd**、順にクリックします**OK**します。  
   
-3.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定値は\<ドライブ\>: \program files \common files \enterprise シングル サインオンします。  
+3.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定値は\<ドライブ\>: \Program Files\Common \enterprise シングル サインオンします。  
   
-4.  型**ssoconfig-replayfiles\<再生ファイル ディレクトリ\>(& a) #124; 既定**Enter キーを押します。  
+4.  型**ssoconfig-replayfiles\<再生ファイル ディレクトリ\> &#124; -既定**Enter キーを押します。  
   
 > [!NOTE]
->  サービス アカウントを変更すると、再生ファイルは検出されません。 このアカウントを変更する場合、再生ファイルを手動で削除することが必要になります。  
+>  サービス アカウントを変更すると、再生ファイルは削除されません。 このアカウントを変更する場合は、再生ファイルを手動で削除する必要があります。  
   
-#### <a name="to-display-or-change-maximum-password-synchronization-age"></a>パスワード同期の最大有効期間を表示または変更するには  
+#### <a name="to-display-or-change-maximum-password-synchronization-age"></a>表示またはパスワード同期の有効期間を変更するには  
   
 1.  **[スタート]** メニューの **[ファイル名を指定して実行]** をクリックします。  
   
-2.  **実行** ダイアログ ボックスで、「 **cmd**、順にクリック**OK**です。  
+2.  **実行**ダイアログ ボックスに「 **cmd**、順にクリックします**OK**します。  
   
-3.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定値は\<ドライブ\>: \program files \common files \enterprise シングル サインオンします。  
+3.  コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。 既定値は\<ドライブ\>: \Program Files\Common \enterprise シングル サインオンします。  
   
-4.  型**ssoconfig-syncage\<パスワードの最大保有期間を時間で\>** Enter キーを押します。  
+4.  型**ssoconfig-syncage」\<パスワードの最大保有期間を時間で\>** Enter キーを押します。  
   
 > [!NOTE]
->  SSOCONFIG ユーティリティでは、システム時刻として SQL Server コンピュータの時刻を使用します。 時刻に関連するコマンドを使用する際は、このことに注意してください。  
+>  SSOCONFIG ユーティリティは、システム時刻として SQL Server コンピューターの時刻を使用します。 時間に関連するコマンドを使用する場合は、このオプションを思い出してください。  
   
 ## <a name="see-also"></a>参照  
  [パスワード同期](../core/password-synchronization2.md)

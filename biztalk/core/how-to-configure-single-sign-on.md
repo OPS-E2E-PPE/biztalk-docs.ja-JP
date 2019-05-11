@@ -12,29 +12,29 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3b23e2bb61f4549e642bcd9a59f56bc232b40038
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f5175b0bec313246cb9de8d85869029053469327
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37019937"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65341245"
 ---
 # <a name="how-to-configure-single-sign-on"></a>シングル サインオンを構成する方法
-エンタープライズ シングル サインオンにアクセスする前に、エンタープライズ シングル サインオンが現在のユーザーに正しく設定されていることを確認する必要があります。 ほとんどの構成には、2 つのインターフェイスのいずれかを使用します。 `ISSOAdmin` 新しい関連アプリケーションを作成することができる一般的な管理インターフェイスです。 一方、ISSOAdmin.GetGlobalInfo と ISSOAdmin.UpdateGlobalInfo を使用すると、さまざまなフラグや管理値を設定できます。 次の手順で説明するように、たとえば SSO チケットが有効であることを保証するタスクに使用できます。  
+エンタープライズ シングル サインオン アクセスをする前に、エンタープライズ シングル サインオンが正しく設定されている現在のユーザーの確認する必要があります。 ほとんどの構成には、2 つのインターフェイスのいずれかを使用します。 `ISSOAdmin` 新しい関連アプリケーションを作成することができる一般的な管理インターフェイスです。 ただし、ISSOAdmin.GetGlobalInfo と ISSOAdmin.UpdateGlobalInfo を使用すると、さまざまなフラグや管理値を設定できます。 1 つの可能なタスクの次の手順に従って SSO チケットが有効であることを確認するのには。  
   
 ### <a name="to-enable-ticketing"></a>チケットを有効にするには  
   
 1. 新しいインスタンスを作成`ISSOAdmin`です。  
   
-2. `ISSOAdmin.GetGlobalInfo` を使用して現在の設定を取得します。  
+2. 現在の設定を取得`ISSOAdmin.GetGlobalInfo`します。  
   
-    必要に応じて、この時点で現在の値にフラグが設定されていることを確認できます。  
+    必要に応じて、フラグがこの時点で設定、適切な値にすることを確認したい場合があります。  
   
-3. `ISSOAdmin.UpdateGlobalInfo` を使用して、関連フラグを変更します。  
+3. 使用して、関連フラグを変更する`ISSOAdmin.UpdateGlobalInfo`します。  
   
-    この場合、チケットを検証して有効にするため、すべてのフラグが設定されています。  
+    このケースで検証し、チケットを有効にする、すべてのフラグは設定されています。  
   
-   次の例は、シングル サインオンを使用してチケットを有効にする方法を示しています。  
+   次の例では、シングル サインオンを使用してチケットを有効にする方法を示します。  
   
 ```  
 public static bool EnableTickets()  

@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 11059 |Microsoft Docs'
+title: シングル サインオン:イベント 11059 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4a22b2a68acc6cd4be3d5cf854a4d965d897e302
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b851e468db974456fe5f9eca00dc201fdfe1e12d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36965779"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65258772"
 ---
-# <a name="single-sign-on-event-11059"></a>シングル サインオン: イベント 11059
+# <a name="single-sign-on-event-11059"></a>シングル サインオン:イベント 11059
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                                                                                                                                                                                       |
@@ -30,10 +30,10 @@ ms.locfileid: "36965779"
 |  イベント ソース   |                                                                                                                        ENTSSO                                                                                                                         |
 |    コンポーネント    |                                                                                                                          なし                                                                                                                          |
 |  シンボル名  |                                                                                                          SSO_INFO_INVALID_USER_NOT_IN_GROUP                                                                                                           |
-|  メッセージ テキスト   | 指定されたユーザーが Application Users アカウントのメンバーではないため、マッピングを作成できませんでした。%r<br /><br /> Windows アカウント: %1\\% 2 %r<br /><br /> アプリケーション名: % 3 %r<br /><br /> アプリケーション ユーザー: % 4 %r<br /><br /> エラー コード: %5 |
+|  メッセージ テキスト   | 指定したユーザーがアプリケーション ユーザー account.%r のメンバーではないために、マッピングを作成できませんでした。<br /><br /> Windows アカウント: %1\\% 2 %r<br /><br /> アプリケーション名: % 3 %r<br /><br /> アプリケーション ユーザー: % 4 %r<br /><br /> エラー コード: %5 |
   
 ## <a name="explanation"></a>説明  
- 指定されたユーザーがアプリケーション ユーザー アカウントのメンバーではないために、マッピングを作成できませんでした。  
+ 指定したユーザーがアプリケーション ユーザー アカウントのメンバーではないために、マッピングを作成できませんでした。  
   
 ## <a name="user-action"></a>ユーザーの操作  
  アプリケーション ユーザー アカウントのメンバーになる方法については、ENTSSO 管理者に問い合わせてください。

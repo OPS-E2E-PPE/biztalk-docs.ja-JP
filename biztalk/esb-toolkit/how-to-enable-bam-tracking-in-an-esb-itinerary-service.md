@@ -1,5 +1,5 @@
 ---
-title: '方法: ESB スケジュール サービスで BAM の追跡を有効にする |Microsoft Docs'
+title: 操作方法:ESB スケジュール サービスで BAM の追跡を有効にする |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 27d0338ad56daa342fce1d339b9e7aa43fd7e25e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b685c1d1e670bec50f925c615a3a17222e0bfc92
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36991547"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65258481"
 ---
-# <a name="how-to-enable-bam-tracking-in-an-esb-itinerary-service"></a>方法: ESB スケジュール サービスで BAM の追跡を有効にします。
+# <a name="how-to-enable-bam-tracking-in-an-esb-itinerary-service"></a>操作方法:ESB スケジュール サービスで BAM の追跡を有効にします。
 ## <a name="goal"></a>[目標]  
  このセクションでは、ビジネス アクティビティ監視 (BAM) が既存のスケジュールの追跡を有効にする方法を示します。  
   

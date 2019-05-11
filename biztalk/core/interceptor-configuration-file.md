@@ -1,5 +1,5 @@
 ---
-title: インターセプター構成ファイル |Microsoft ドキュメント
+title: インターセプター構成ファイル |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1bb4a57272ebae5b831552d9446dbdbc937dca1f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4af3c9b91d7f8d5dc58cb40f4cb8d3a1f66dc657
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22256922"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65382045"
 ---
 # <a name="interceptor-configuration-file"></a>インターセプタ構成ファイル
 Windows Workflow Foundation 用の BAM インターセプタと Windows Communication Foundation 用の BAM インターセプタは、インターセプタ構成ファイルに基づいて、受信するイベントとデータ要素を決定します。 構成ファイルは、XML 形式であり、インターセプタ構成スキーマおよび Windows Workflow Foundation スキーマと Windows Communication Framework スキーマのどちらか一方 (ターゲットにするテクノロジに応じて) により定義されます。  
@@ -26,12 +26,12 @@ Windows Workflow Foundation 用の BAM インターセプタと Windows Communic
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [IntelliSense を使用して、インターセプター構成ファイルを作成するには](../core/using-intellisense-to-create-an-interceptor-configuration-file.md)  
+-   [IntelliSense を使用したインターセプター構成ファイルの作成](../core/using-intellisense-to-create-an-interceptor-configuration-file.md)  
   
--   [インターセプタ構成スキーマ](../core/interceptor-configuration-schema.md)  
+-   [インターセプター構成スキーマ](../core/interceptor-configuration-schema.md)  
   
--   [インターセプタ構成ファイルの構造](../core/structure-of-an-interceptor-configuration-file.md)  
+-   [インターセプター構成ファイルの構造](../core/structure-of-an-interceptor-configuration-file.md)  
   
 ## <a name="see-also"></a>参照  
- [BAM WF インターセプタ](../core/bam-wf-interceptor.md)   
- [BAM WCF インターセプタ](../core/bam-wcf-interceptor.md)
+ [BAM WF インターセプター](../core/bam-wf-interceptor.md)   
+ [BAM WCF インターセプター](../core/bam-wcf-interceptor.md)

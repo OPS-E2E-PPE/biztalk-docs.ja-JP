@@ -1,5 +1,5 @@
 ---
-title: ファイル アダプターのトラブルシューティング |Microsoft ドキュメント
+title: ファイル アダプターのトラブルシューティング |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 770412a8c3325bb4da0b934dbc79e774426d6e32
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a3a0811b8d6b76210165380be5dde79e08e36cd0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22279010"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65306410"
 ---
 # <a name="troubleshooting-the-file-adapter"></a>ファイル アダプターのトラブルシューティング
 このセクションでは、ファイル アダプターに関する問題の診断に使用できるトラブルシューティング手法と、ファイル アダプターを使用する際の既知の問題点について説明します。  

@@ -12,21 +12,21 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2f4b60dfbc128baead6b0a1ad38d319ba7b6e8fc
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8276e2986231c391479112b25e01bea778566093
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36972411"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65246414"
 ---
 # <a name="xml-message-envelopes"></a>XML メッセージ エンベロープ
-XML エンベロープには、Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] によって送受信される XML インスタンス メッセージに関連する 2 つの用途があります。  
+XML エンベロープは Microsoft によって送受信された、XML インスタンス メッセージ内で 2 つの目的を果たします[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]:  
   
-- XML エンベロープには、XML ドキュメント内のデータを補足するデータを格納できます。 XML 逆アセンブラーでこのデータをメッセージ コンテキストに昇格することにより、さまざまな BizTalk Server コンポーネントから簡単にアクセスすることが可能になります。 送信 XML インスタンス メッセージの場合、XML アセンブラーを使用すると、メッセージ コンテキストからインスタンス メッセージの送信に含めるエンベロープに値を降格できます。  
+- XML エンベロープには、XML ドキュメント内のデータを補完する、データを含めることができます。 このデータは、さまざまな BizTalk Server コンポーネントから簡単にアクセスを提供する XML 逆アセンブラーによってメッセージ コンテキストに昇格できます。 XML インスタンス メッセージの送信、XML アセンブラーは、エンベロープ インスタンス メッセージの送信に含めることに、メッセージ コンテキストから値を降格することができます。  
   
-- XML エンベロープを使用して、複数の XML ドキュメントを単一の有効な XML インスタンス メッセージに結合できます。 単一のルート タグ内にある複数のドキュメントをラップするエンベロープがない場合、複数のドキュメントを含む XML インスタンス メッセージは、整形式 XML として扱われません。  
+- XML エンベロープは、1 つ、有効な XML インスタンス メッセージを複数の XML ドキュメントに組み込んで使用できます。 単一のルート タグ内で複数のドキュメントをラップするエンベロープのないを複数のドキュメントを含む XML インスタンス メッセージは整形式 XML として扱われません。  
   
-  通常の XML エンベロープ (太字で示されている) には、エンベロープに含まれる 1 つ以上の XML ドキュメント (通常フォントで示されている) を区切るためのデータとタグの両方が格納されます。  
+  (太字で表示)、一般的な XML エンベロープには、データと (フォントで表示される正規表現) が含まれている 1 つまたは複数の XML ドキュメントを区切るために使用されるタグの両方が含まれています。  
   
 ```  
   
@@ -41,7 +41,7 @@ XML エンベロープには、Microsoft [!INCLUDE[btsBizTalkServerNoVersion](..
 </body>    ...</envelope>  
 ```  
   
- XML エンベロープ (太字で示されている) には、エンベロープに含まれる XML ドキュメント (通常フォントで示されている) を区切るデータやタグを格納する必要はありませんが、これは一般的な方法ではありません。  
+ あまり一般的ではまだ有効でない XML エンベロープ (太字で表示) は必要なすべてのデータや (参照の通常の型) が含まれている XML ドキュメントの区切り記号としてタグには含まれません。  
   
 ```  
   
@@ -56,7 +56,7 @@ XML エンベロープには、Microsoft [!INCLUDE[btsBizTalkServerNoVersion](..
 </envelope>  
 ```  
   
- この場合、XML エンベロープに含まれるのは、開始エンベロープ タグおよび終了エンベロープ タグだけです。  
+ このような場合は、XML エンベロープの開始および終了エンベロープ タグ以外は何で構成されます。  
   
 ## <a name="see-also"></a>参照  
  [入れ子になった XML メッセージ エンベロープ](../core/nested-xml-message-envelopes.md)   

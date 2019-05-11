@@ -1,5 +1,5 @@
 ---
-title: TIBCO Rendezvous 用のアプリケーションを作成する関連 |Microsoft ドキュメント
+title: 関連の TIBCO Rendezvous のアプリケーションを作成する |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,30 +12,30 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a286a80ef2c867dd196fcdce414f2d0ff3c8255c
-ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
+ms.openlocfilehash: ba94161fa534187392e64e6138b6f8ae18920377
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "24013641"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65354022"
 ---
 # <a name="creating-affiliate-applications"></a>関連アプリケーションの作成
-次の手順では、関連アプリケーションとシングル サインオン (SSO) の使用方法を説明します。 エンタープライズ シングル サインオンの使用方法の詳細については、Microsoft のドキュメントを参照してください。  
+次の手順では、関連アプリケーションとシングル サインオン (SSO) の使用を開始する方法について説明します。 エンタープライズ シングル サインオンを使用する方法については、Microsoft のドキュメントを参照してください。  
   
 > [!NOTE]
->  SSO エラーが発生した場合を使用したドメイン アカウント、BizTalk Server を構成したときにこれは、エンタープライズ SSO サービスの機能に影響を確認します。 SSO はドメイン アカウントでのみ機能します。  
+>  SSO エラーが発生した場合は、あるアカウントを使用したドメイン、BizTalk Server を構成したときに、これは、エンタープライズ SSO サービスの機能に影響を確認します。 ドメイン アカウントでの SSO のみ機能します。  
   
 ## <a name="create-an-affiliate-application"></a>関連アプリケーションを作成します。  
   
-1.  コントロール パネルで、開く **サービス**, 、エンタープライズ シングル サインオン サービスが実行されていることを確認します。  
+1.  コントロール パネルで、開く**サービス**、エンタープライズ シングル サインオン サービスが実行されていることを確認します。  
   
-2.  コマンド プロンプト では、エンタープライズ シングル サインオン フォルダーにディレクトリを変更します。 例:  
+2.  コマンド プロンプトでは、エンタープライズ シングル サインオン フォルダーにディレクトリを変更します。 以下に例を示します。  
   
-     **C:\Program files \common files files \common files \enterprise シングル サインオン >**  
+     **C:\Program Files\Common Files\Enterprise Single Sign-On>**  
   
-3.  エンタープライズ シングル サインオン コマンドを使用します。 コマンドの一覧を表示するには、使用、 **-ヘルプ** 切り替えます。  
+3.  エンタープライズ シングル サインオン コマンドを使用します。 コマンドの一覧は、使用、 **-ヘルプ**スイッチします。  
   
-4.  使用して関連アプリケーションを作成する * します。XML の開始としては、次のコマンドを入力します。  
+4.  使用して関連アプリケーションを作成する * です。開始、として XML では、次のコマンドを入力します。  
   
      `ssomanage.exe -createapps C:\SSOtest\AffiliateApplication.xml`  
   
@@ -43,7 +43,7 @@ ms.locfileid: "24013641"
   
      C:\SSOtest はアプリケーション XML を含むフォルダーです。  
   
-     AffiliateApplication.xml は、アプリケーションを作成した、サインオン情報を含む XML です。  
+     AffiliateApplication.xml は、アプリケーションを作成したシングル サインオン情報を含む XML です。  
   
      以下に例を示します。  
   
@@ -68,17 +68,17 @@ ms.locfileid: "24013641"
   
 ## <a name="create-single-sign-on-tickets"></a>シングル サインオン チケットを作成します。  
   
-1.  次のコマンドを入力し、SSO チケットの動作を制御します。  
+1.  SSO チケットの動作を制御する次のコマンドを入力します。  
   
      `ssomanage.exe -tickets yes yes`  
   
-2.  表示される次の質問に応答します。  
+2.  ように、次の質問に回答します。  
   
      `ssomanage -tickets <allowed yes | no> <validate yes | no>`  
   
 3.  完了時に、次の確認メッセージが表示されます。  
   
-     **このコンピューターで使用中の SSO。操作が正常に完了しました。**  
+     **このコンピューターでは、SSO サーバーを使用します。操作が完了しました。**  
   
 ## <a name="enable-affiliate-application-xml"></a>関連アプリケーション XML を有効にします。  
   
@@ -86,11 +86,11 @@ ms.locfileid: "24013641"
   
      `ssomanage -enableapp TIBCO RendezvousApp`  
   
-2.  次のコマンドを入力してアプリケーションを一覧表示し、アプリケーションが作成されたことを確認します。  
+2.  アプリケーションを一覧表示し、アプリケーションが作成されたことを確認するのには、次のコマンドを入力します。  
   
      `ssoclient.exe –listapps`  
   
-     使用可能な関連アプリケーションが一覧内に表示されます。  
+     使用可能な関連アプリケーションは、一覧に表示されます。  
   
      **Ibi \YOURID-TIBCO RendezvousApp に使用可能なアプリケーション**  
   
@@ -98,19 +98,19 @@ ms.locfileid: "24013641"
   
      `ssoclient.exe -setcredentials TIBCO RendezvousApp`  
   
-4.  ユーザー名とパスワードのプロンプトで入力します。  
+4.  ユーザー名と、プロンプトでパスワードを入力します。  
   
 5.  TIBCO RendezvousApp 関連アプリケーションのログオン資格情報を入力します。  
   
-     たとえば、そのユーザーが SSO サーバーを経由してシステムに入力するユーザー ID とパスワードを入力します。  
+     たとえば、ユーザー id と、SSO サーバーを使用してシステムに入力するユーザーのパスワードを入力します。  
   
-    -   ユーザー ID: user  
+    -   ユーザー ID: ユーザー  
   
-    -   パスワード: ******  
+    -   パスワード: * * *  
   
-    -   パスワードの確認入力: ******  
+    -   パスワードの確認入力: * * *  
   
-6.  TIBCO Rendezvous の BizTalk アダプターに関連アプリケーションが表示される **トランスポートのプロパティ**  ダイアログ ボックス。  
+6.  BizTalk adapter for TIBCO Rendezvous の関連アプリケーションが表示されます**トランスポートのプロパティ** ダイアログ ボックス。  
   
 ## <a name="see-also"></a>参照  
  [BizTalk Adapter for TIBCO Rendezvous のセキュリティ](../core/security-in-biztalk-adapter-for-tibco-rendezvous.md)   

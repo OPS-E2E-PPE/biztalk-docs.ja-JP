@@ -15,23 +15,23 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 41e7f000dbb53a054259ba18f5c1d118531c8138
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2104dae9d01ef56d4e0d99a2af887db8c68131e3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36978339"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65337704"
 ---
 # <a name="how-to-generate-the-master-secret"></a>マスター シークレットを生成する方法
-この作業を実行するには、マスター シークレット サーバーに対する管理者権限が必要です。 また、この作業はマスター シークレット サーバーから実行する必要があります。  
+このタスクを実行するために、マスタ シークレット サーバーで管理者権限が必要です。 さらに、マスター シークレット サーバーからこのタスクを実行する必要があります。  
   
- 最初にエンタープライズ シングル サインオンをインストールしたサーバーが、マスター シークレット サーバーになります。  
+ エンタープライズ シングル サインオンをインストールする最初のサーバーでは、マスター シークレット サーバーになります。  
   
 > [!IMPORTANT]
->  SSO システムに配置できるマスター シークレット サーバーは 1 台のみです。  
+>  SSO システムに 1 つだけのマスター シークレット サーバーがあります。  
 > 
 > [!NOTE]
->  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のインストール実行時にエンタープライズ シングル サインオンをインストールすると、マスター シークレットは構成ウィザードの手順の一部として生成されます。 この作業は、新しいマスター シークレットを生成する場合にのみ行う必要があります。  
+>  エンタープライズ シングル サインオンがインストールされている場合の一部として、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]構成ウィザードの一部としてインストールでは、マスター シークレットが生成されます。 のみ、新しいマスター シークレットを生成する場合は、このタスクを実行する必要があります。  
   
 ### <a name="to-generate-the-master-secret-using-the-mmc-snap-in"></a>MMC スナップインを使用してマスター シークレットを生成するには  
   
@@ -41,7 +41,7 @@ ms.locfileid: "36978339"
   
 3.  右クリック**システム**、 をクリックし、**シークレットの生成**します。  
   
-### <a name="to-generate-the-master-secret-using-the-command-line"></a>コマンド ラインを使用してマスター シークレットを生成するには  
+### <a name="to-generate-the-master-secret-using-the-command-line"></a>コマンドラインを使用してマスター シークレットを生成するには  
   
 1.  **開始** メニューのをクリックして**実行**、し、入力**cmd**します。  
   
@@ -49,7 +49,7 @@ ms.locfileid: "36978339"
   
 3.  型**ssoconfig – generateSecret \<*バックアップ ファイル*\>** ここで、 \<*バックアップ ファイル*\>の名前を指定しますマスター シークレットを含むファイルです。  
   
-     作成したファイルを保護するためのパスワードを入力するように求められます。  
+     作成したファイルを保護するパスワードを入力するように促されます。  
   
     > [!NOTE]
     >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  

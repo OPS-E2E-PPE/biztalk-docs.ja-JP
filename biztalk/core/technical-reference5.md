@@ -1,6 +1,6 @@
 ---
-title: UI のガイダンスと開発者リファレンス |Microsoft ドキュメント
-description: アダプター, BizTalk マッパーでは、オーケストレーション デザイナーは、ルール エンジン展開ウィザード、Web サービス公開ウィザード、および BizTalk Server で複数のユーザー インターフェイス (UI) のヘルプ
+title: UI ガイダンスと開発者リファレンス |Microsoft Docs
+description: アダプター, BizTalk マッパーでは、オーケストレーション デザイナーは、ルール エンジン展開ウィザード、Web サービス公開ウィザードと BizTalk Server で複数のユーザー インターフェイス (UI) ヘルプ
 ms.custom: ''
 ms.date: 09/04/2017
 ms.prod: biztalk-server
@@ -13,27 +13,27 @@ caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e32a146516b58bc29aea80b51c1dd3e65fdfc2b3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4aaa069e03b443b26464f8d503bac8bb6e74c10a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22279754"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65299769"
 ---
-# <a name="biztalk-server-ui-help--developers-reference"></a>開発者用リファレンス (&)、BizTalk Server の UI のヘルプ
+# <a name="biztalk-server-ui-help--developers-reference"></a>BizTalk Server の UI のヘルプおよび開発者用リファレンス
 
-開発者向けの BizTalk Server とリファレンスのトピックのさまざまな部分の UI のヘルプを取得[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]です。 
+BizTalk Server とリファレンスのトピックのさまざまな部分の開発者にとって、UI のヘルプを入手[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]します。 
 
 ## <a name="ui-help"></a>UI のヘルプ
 
-* アダプタ
+* アダプター
 * アセンブリ ビューアー
-* BizTalk 管理
+* BizTalk 管理コンソール
 * BizTalk エディター
 * BizTalk フラット ファイル スキーマ ウィザード
 * BizTalk マッパー
 * BPEL インポート ウィザード
-* ビジネス アクティビティ監視 (BAM) アドインを Excel 用
+* ビジネス アクティビティ監視 (BAM) 用のアドインの Excel
 * ビジネス アクティビティ監視 (BAM) ポータル
 * ビジネス ルール作成ツール
 * 構成ウィザード
@@ -51,7 +51,7 @@ ms.locfileid: "22279754"
 ## <a name="application-deployment-ui-help"></a>アプリケーション展開の UI ヘルプ
 
 * ポリシーを追加します。
-* ポリシーをエクスポート (&) バインドをエクスポートします。
+* ポリシーのエクスポート (&) バインドをエクスポートします。
 * MSI ファイルのエクスポート ウィザード
 * MSI のインポート ウィザード
 

@@ -19,18 +19,18 @@ caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 127673659878738a57045ea1b5bd9f1d1cf16d10
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2bb7ff544b1c6d5ae5559dd4b64348a92cacb56b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37016197"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65337893"
 ---
 # <a name="how-to-enlist-a-send-port-or-send-port-group"></a>送信ポートまたは送信ポート グループを参加させる方法
 このトピックでは、BizTalk Server 管理コンソールを使用して、送信ポートまたは送信ポート グループを参加させる方法について説明します。 送信ポートまたは送信ポート グループを参加させると、送信ポートまたは送信ポート グループが BizTalk ホストに関連付けられ、送信ポートまたは送信ポート グループのサブスクリプションが作成されます。 送信ポート グループに送信ポートが含まれていない場合は、送信ポート グループを参加させてもサブスクリプションは作成されません。 また、送信ポート グループを参加させても、送信ポート グループに含まれている送信ポートの状態は変わりません。  
   
 > [!NOTE]
->  送信ポートまたは送信ポート グループを開始すると、自動的に参加させることができます。 既定では、アプリケーションを開始すると、そこに含まれるすべてのアイテムを開始して参加させることができます。 詳細については、[送信ポートまたは送信ポート グループを開始する方法](../core/how-to-start-a-send-port-or-send-port-group.md)を参照してください。 参照してください[BizTalk アプリケーション開始および停止方法](../core/how-to-start-and-stop-a-biztalk-application.md)します。  
+>  送信ポートまたは送信ポート グループを開始すると、自動的に参加させることができます。 既定では、アプリケーションを開始すると、そこに含まれるすべてのアイテムを開始して参加させることができます。 詳細については、次を参照してください。[送信ポートまたは送信ポート グループを開始する方法](../core/how-to-start-a-send-port-or-send-port-group.md)します。 参照してください[BizTalk アプリケーション開始および停止方法](../core/how-to-start-and-stop-a-biztalk-application.md)します。  
   
 ## <a name="prerequisites"></a>前提条件  
  このトピックの手順を実行するには、BizTalk Server 管理者グループのメンバーとしてログオンする必要があります。 詳細なアクセス許可についてを参照してください。[を展開すると、BizTalk アプリケーションの管理に必要なアクセス許可](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)します。  

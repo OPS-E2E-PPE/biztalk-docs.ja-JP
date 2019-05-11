@@ -1,5 +1,5 @@
 ---
-title: TPE のショートカット |Microsoft ドキュメント
+title: TPE のキーボード ショートカット |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,12 +15,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2a2c74208a4ac452953c00530b1b2e1ef5ff4284
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0e4e90aa87eedd677c5270bb91b7cc942e49e64d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22279218"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65314064"
 ---
 # <a name="tpe-keyboard-shortcuts"></a>TPE のショートカット キー
 追跡プロファイル エディター (TPE) では、マウスの他に、ショートカット キーを使用してナビゲーションや編集を行うことができます。 TPE のすべての機能は、ショートカット キーで実行できます。 ここでは、TPE のショートカット キーについて説明し、キーボードを使用して TPE 内を移動する際のヒントをいくつか紹介します。  
@@ -40,7 +40,7 @@ ms.locfileid: "22279218"
 |追跡プロファイルの保存|Alt + F + S|  
 |[名前を付けて保存]|Alt + F + A|  
 |アクティビティ定義のインポート|Alt + F + I|  
-|ショートカット メニュー項目の削除|Del|  
+|ショートカット メニュー項目の削除|DELETE|  
 |ショートカット メニュー項目名の変更|F2|  
 |追跡プロファイル エディターのヘルプを開く|F1|  
 |追跡プロファイルの適用|Alt + T + A|  

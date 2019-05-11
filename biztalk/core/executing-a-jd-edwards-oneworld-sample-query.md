@@ -12,17 +12,17 @@ caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e4183124a5306b42fa4ef66eec7b0fe0a0390c0c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6e017be5c36766c6be0997c5dbcf1f1aef7d2384
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37001835"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65346038"
 ---
 # <a name="execute-a-jd-edwards-oneworld-sample-query"></a>JD Edwards OneWorld サンプル クエリを実行します。
-JD Edwards OneWorld (JDEOW) システムに [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] システムからアクセスするには、JD Edwards OneWorld アダプターを使用します。 このアダプターに含まれている[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]します。
+JD Edwards OneWorld (JDEOW) システムがからアクセスできる、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] JD Edwards OneWorld アダプターを使用してシステム。 このアダプターに含まれている[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]します。
   
- これは、JD Edwards OneWorld ラボ作業の 2 つめのパートです。 最初のパート (ラボ 1) では、JD Edwards OneWorld システムのデータに、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] などの Microsoft テクノロジーを使用せずに手動でアクセスしました。 このパート (ラボ 2) では、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] BizTalk プロジェクトの一部として、BizTalk オーケストレーションを作成します。 JD Edwards OneWorld アダプターを使用して JD Edwards OneWorld システムからデータを取得するように、このオーケストレーションのポートを構成します。  
+ これは、JD Edwards OneWorld ラボ作業の 2 番目の部分です。 支援を受けることがなく、JD Edwards OneWorld システム上のデータのアクセス手動で (ラボ 1) 最初の部分で[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]または他の Microsoft テクノロジです。 このパート (ラボ 2) では、 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] BizTalk プロジェクトの一部として、BizTalk オーケストレーションを作成します。 JD Edwards OneWorld アダプターを使用して JD Edwards OneWorld システムからデータを取得するには、このオーケストレーションのポートを構成します。  
   
 ## <a name="prerequisites"></a>前提条件  
   
@@ -32,19 +32,19 @@ JD Edwards OneWorld (JDEOW) システムに [!INCLUDE[btsBizTalkServerNoVersion]
   
 - JD Edwards OneWorld クライアント ソフトウェア  
   
-- 別のサーバー上にある JD Edwards OneWorld システムへのネットワーク接続  
+- 別のサーバー上の JD Edwards OneWorld システムへのネットワーク接続  
   
 - Microsoft BizTalk Adapters for Enterprise Applications  
   
 > [!NOTE]
 >  参照してください[をインストールし、エンタープライズ アプリケーション用のアダプターを構成](../adapters-and-accelerators/install-configure-biztalk-adapters-enterprise-applications.md)キーの構成については、JD Edwards、PeopleSoft、および TIBCO アダプター。  
   
-## <a name="lab-2---executing-a-jd-edwards-oneworld-sample-query"></a>ラボ 2 - JD Edwards OneWorld サンプル クエリの実行  
+## <a name="lab-2---executing-a-jd-edwards-oneworld-sample-query"></a>ラボ 2 - JD Edwards OneWorld サンプル クエリを実行します。  
  この演習では、実行、**取得**JD Edwards OneWorld システムに対して操作します。 具体的には、次のタスクを実行します。  
   
 - JD Edwards OneWorld の前提条件を確認します。  
   
-- JD Edwards OneWorld 送信ポートを [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] でセットアップ  
+- JD Edwards OneWorld 送信ポートを設定します。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]  
   
 - BizTalk オーケストレーション プロジェクトの作成  
   
@@ -52,33 +52,33 @@ JD Edwards OneWorld (JDEOW) システムに [!INCLUDE[btsBizTalkServerNoVersion]
   
 - アプリケーションのテストと XML 出力の表示  
   
-  JD Edwards OneWorld アダプターを使用して、JD Edwards OneWorld システム上のデータに [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] からアクセスします。  
+  JD Edwards OneWorld システムからのデータにアクセスする、JD Edwards OneWorld アダプターを使用する[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]します。  
   
-  このアダプターを使用すると、オーケストレーションによって実行される要求と応答を使用して JD Edwards OneWorld のオブジェクトの処理を行うことができます。 1 つのスキーマ オブジェクトに対して使用可能なメソッドは多数あります。 このラボは、使用する方法を示します、 **Address Book MBF**メソッド。  
+  このアダプターでは、要求と応答のオーケストレーションによって実行を使用して JD Edwards OneWorld オブジェクトの処理ができます。 多くのメソッドは、スキーマ オブジェクトを使用できます。 このラボは、使用する方法を示します、 **Address Book MBF**メソッド。  
   
-  サービス要求を実行する前に、対象の JD Edwards OneWorld オブジェクトに対するサービス要求と応答のスキーマを作成する必要があります。 これらのスキーマは、生成した項目の追加/アダプターの追加ウィザードによって、JD Edwards OneWorld 内のサポート メタデータ オブジェクトに直接問い合わせることによって作成されます。 このラボ用のスキーマを作成するために必要な手順を示しています、 **Address Book MBF**メソッドとクエリを処理します。  
+  サービス要求を実行する前に、JD Edwards OneWorld の特定のオブジェクトのサービスの要求および応答スキーマを作成する必要があります。 アダプターの追加生成項目/追加ウィザードは、JD Edwards oneworld のサポート メタデータ オブジェクトを直接調べることで、これらのスキーマを作成します。 このラボ用のスキーマを作成するために必要な手順を示しています、 **Address Book MBF**メソッドとクエリを処理します。  
   
-## <a name="step-1-verify-the-jd-edwards-oneworld-prerequisites"></a>手順 1: は、JD Edwards OneWorld の前提条件を確認します。  
- JD Edwards OneWorld アダプターと共に使用する BizTalk プロジェクトの作成を開始する前に、JD Edwards OneWorld システムにアクセスできるように適切にファイルとアダプターがセットアップされていることを確認する必要があります。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] コンピューター上の JD Edwards OneWorld アダプターと JD Edwards OneWorld システムとの通信には、Java インターフェイスが使用されます。    
+## <a name="step-1-verify-the-jd-edwards-oneworld-prerequisites"></a>手順 1:JD Edwards OneWorld の前提条件を確認します。  
+ JD Edwards OneWorld アダプターを使用するための BizTalk プロジェクトの作成を開始する前に、ファイルが必要にして、アダプターは、JD Edwards OneWorld システムへのアクセスに正しく設定されます。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]コンピューター、JD Edwards OneWorld アダプター JD Edwards OneWorld システムと Java インターフェイスを使用して通信します。    
 
-1. JD Edwards OneWorld アダプターを使用して JD Edwards OneWorld システムに適切にアクセスするには、Connector.jar、Kernel.jar、BTSLIBinterop.jar、JDEJAccess.jar の 4 つのファイルが必要です。  
+1. 4 つのファイルは、JD Edwards OneWorld アダプターを使用して JD Edwards OneWorld システムに適切なインターフェイスへのアクセスの必要があります。Connector.jar、Kernel.jar、BTSLIBinterop.jar、および JDEJAccess.jar します。  
   
-    -   Connector.jar と Kernel.jar は、JD Edwards OneWorld システムに付属しています。JD Edwards OneWorld 管理者から入手してください。 これらのファイルの場所は、C:\JDEOWJars フォルダーです。  
+    -   Connector.jar および Kernel.jar ファイルは、JD Edwards OneWorld システムに付属し、JD Edwards OneWorld 管理者から取得されます。 これらのファイルは、C:\JDEOWJars フォルダーにあります。  
   
-    -   BTSLIBinterop.jar ファイルは、アダプターのインストール ガイドに記載されている手順に従って JD Edwards OneWorld システムによって生成されます。 このファイルの場所は、C:\JDEOWJars フォルダーです。  
+    -   BTSLIBinterop.jar ファイルは、アダプターのインストール ガイドに含まれる手順に従って JD Edwards OneWorld システムによって生成されます。 このファイルは、C:\JDEOWJars フォルダーにあります。  
   
-    -   JDEJAccess.jar ファイルは JDEOW アダプターの一部であり、アダプターのインストール時に作成されます。 既定にある、C:\Program files \microsoft BizTalk Adapters for Enterprise applications \j.d. します。 Edwards OneWorld® \Classes フォルダーです。  
+    -   JDEJAccess.jar ファイルは JDEOW アダプターの一部であるし、アダプターのインストールに含まれています。 既定にある、C:\Program files \microsoft BizTalk Adapters for Enterprise applications \j.d. します。 Edwards OneWorld® \Classes フォルダーです。  
   
 2. Connector.jar、Kernel.jar、ことを確認し、BTSLIBinterop.jar ファイル上に存在、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] C:\JDEOWJars フォルダー内のコンピューター。  
   
 3. JDEJAccess.jar ファイルに存在することを確認、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] C:\Program files \microsoft BizTalk Adapters for Enterprise applications \j.d. 内のコンピューター。 Edwards OneWorld\Classes フォルダーです。  
   
-## <a name="step-2-configure-biztalk-send-ports"></a>手順 2: BizTalk 送信ポートを構成します。  
+## <a name="step-2-configure-biztalk-send-ports"></a>手順 2:BizTalk 送信ポートを構成します。  
 次に、JD Edwards OneWorld アダプターがインストールされているし、送信ポートの作成を確認します。  
 
 1. 開いている**BizTalk Server 管理**、展開**コンソール ルート**、展開**BizTalk Server 管理**、展開**BizTalk グループ**、展開**プラットフォームの設定**、順に展開**アダプター**します。  
   
-   確認、 **JDE_OneWorld**アダプターが一覧表示します。 JD Edwards OneWorld アダプターがインストールされていない場合は、BizTalk Adapters for Enterprise Applications をインストールしてください (前の「前提条件」の項を参照してください)。 右クリックし、アダプターがインストールされると**アダプター**順にクリックします**新規作成-アダプター** JD Edwards OneWorld アダプターをインストールします。 これを有効にするためにホスト インスタンスを再起動します。  
+   確認、 **JDE_OneWorld**アダプターが一覧表示します。 JD Edwards OneWorld アダプターがインストールされていない場合は、(前の「前提条件」セクションを参照してください)、エンタープライズ アプリケーション用 BizTalk アダプターをインストールします。 右クリックし、アダプターがインストールされると**アダプター**順にクリックします**新規作成-アダプター** JD Edwards OneWorld アダプターをインストールします。 これを有効にするためにホスト インスタンスを再起動します。  
   
 2. 展開**アプリケーション**、順に展開**BizTalk アプリケーション 1**します。  
   
@@ -116,7 +116,7 @@ JD Edwards OneWorld (JDEOW) システムに [!INCLUDE[btsBizTalkServerNoVersion]
   
 5. 選択**OK**を閉じる、**送信ポートのプロパティ**します。  
   
-## <a name="step-3-create-a-biztalk-orchestration-project"></a>手順 3: BizTalk オーケストレーション プロジェクトを作成します。  
+## <a name="step-3-create-a-biztalk-orchestration-project"></a>手順 3:BizTalk オーケストレーション プロジェクトを作成します。  
 次に、BizTalk プロジェクトを作成[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]、オーケストレーション間の通信を処理するためにプロジェクトを構成および[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]と JD Edwards OneWorld システム。 送信と受信のポートを追加し、プロジェクトをビルドしてから、プロジェクトを展開します。  
 
   
@@ -128,19 +128,19 @@ JD Edwards OneWorld (JDEOW) システムに [!INCLUDE[btsBizTalkServerNoVersion]
   
     ![](../core/media/jdeow-addadapterwizardselectadapter.gif "JDEOW_AddAdapterWizardSelectAdapter")  
   
-4. **[インポートするサービス**] ページで、開いている**JD Edwards OneWorld**します。 JDEOW システムへのアダプター経由でのアクセスには、BrowsingAgent プログラムが使用されます。 この BrowsingAgent からは、次に示すサービスが返されます。  
+4. **[インポートするサービス**] ページで、開いている**JD Edwards OneWorld**します。 JDEOW システムには、BrowsingAgent プログラムを使用してアダプターを介して接続します。 BrowsingAgent は、次のサービスを返します。  
   
     ![](../core/media/jdeow-callbsfn.gif "JDEOW_CALLBSFN")  
   
 5. 展開**CALLBSFN**まで下にスクロール**n0100041 - Address Book MBF**します。 [N0100041] を選択し、クリックして**完了**します。  
   
-6. ソリューション エクスプローラーに、新しい BizTalk オーケストレーションと、2 つの新しい関連スキーマ ファイルが表示されます。 これらのファイルはアダプターの追加ウィザードによって作成されます。 **BizTalk Orchestration.odx** ファイルをダブルクリックし、オーケストレーションを開きます。  
+6. ソリューション エクスプ ローラーで、新しい BizTalk オーケストレーションに 2 つの新しい関連スキーマ ファイルがあります。 これらのファイルはアダプターの追加ウィザードによって作成されます。 **BizTalk Orchestration.odx** ファイルをダブルクリックし、オーケストレーションを開きます。  
   
     ![](../core/media/jdeow-solution-explorer-jde-ow-test-schemas.gif "JDEOW_Solution_Explorer_JDE_OW_TEST_Schemas")  
   
-   このオーケストレーションは、JD Edwards OneWorld システムに合わせてフォーマットされた XML ファイルをファイル アダプターから受け取ります。 この XML ファイルは、JD Edwards OneWorld アダプターを使用して JD Edwards OneWorld システムに送信されます。 JD Edwards OneWorld は、クエリを処理して、結果が格納された出力 XML ファイルを生成します。 この XML ファイルは、JD Edwards OneWorld アダプターを介してオーケストレーションに返され、ファイル アダプターによってディスク上の出力場所に書き込まれます。  
+   このオーケストレーションは、JD Edwards OneWorld システムの書式設定された XML ファイル、ファイル アダプターからの入力として受け取ります。 オーケストレーションでは、JD Edwards OneWorld アダプターを使用して、XML ファイルを JD Edwards OneWorld システムに送信します。 JD Edwards OneWorld では、クエリを処理し、結果を含む出力 XML ファイルを生成します。 この XML ファイルは、JD Edwards OneWorld アダプターを介してオーケストレーションに返し、ファイル アダプターがディスク上の出力の場所に XML ファイルを書き込みます。  
   
-   オーケストレーションを完成させるには、XML の送信と受信のためのポートを作成および構成する必要があります。 初めに、受信ポートを構成します。これは、ファイル アダプターがディスクから読み取った XML ファイルをオーケストレーションに渡すのに使用されます。  
+   オーケストレーションを完成させるには、XML の送信と受信のためのポートを作成および構成する必要があります。 最初に、ファイル アダプターによってディスクからオーケストレーションにクエリを含む XML 入力に使用する受信ポートを構成します。  
   
 #### <a name="configure-a-receive-port-to-accept-the-input-xml-file"></a>入力 XML ファイルをそのまま使用する受信ポートを構成します。  
   
@@ -154,19 +154,19 @@ JD Edwards OneWorld (JDEOW) システムに [!INCLUDE[btsBizTalkServerNoVersion]
   
     **ポートの種類名**: `JDE_FileIn_Port`  
   
-    **[通信方式]**: **一方向**  
+    **通信方式**:**One Way**  
   
-    **[アクセスの制限]**: **[内部 - このプロジェクト限定]**  
+    **アクセス制限**:**内部 - このプロジェクト限定**  
   
 5. **[次へ]** をクリックして **[ポートのバインド]** ページに移動し、次のプロパティ値を選択します。  
   
-    **[ポートの通信方向]**: **常にこのポートでメッセージを受信する**  
+    **ポートの通信方向**:**常にこのポートでメッセージを受信します。**  
   
-    **[ポートのバインド]**: **[後で指定する]**  
+    **ポートのバインド**:**後で指定します。**  
   
 6. **[次へ]** をクリックし、 **[完了]** をクリックします。  
   
-   次に、送信/受信ポートを作成します。これは、クエリが格納された最初の XML 入力ファイルを JD Edwards OneWorld システムに送信するためのものです。 このポートは、クエリの結果が格納された出力 XML ファイルを JD Edwards OneWorld システムから受信するのにも使用されます。  
+   次に、JD Edwards OneWorld システムにクエリを含む最初の XML 入力ファイルを送信する送信/受信ポートを作成します。 このポートは、JD Edwards OneWorld システムへの呼び出しからのクエリ結果を含む出力 XML ファイルも受け取ります。  
   
 #### <a name="configure-a-sendreceive-port-to-interface-with-jd-edwards-oneworld"></a>JD Edwards oneworld インターフェイスへの送信/受信ポートを構成します。  
   
@@ -176,15 +176,15 @@ JD Edwards OneWorld (JDEOW) システムに [!INCLUDE[btsBizTalkServerNoVersion]
   
     ![](../core/media/a421358c-6e90-4fe0-b243-6beb1b51955a.gif "a421358c-6e90-4fe0-b243-6beb1b51955a")  
   
-3. プロパティ値を次のとおりに選択します。  
+3. 次のプロパティ値を選択します。  
   
     **ポートの通信方向**:**要求の送信と応答の受信を行います**  
   
-    **[ポートのバインド]**: **[後で指定する]**  
+    **ポートのバインド**:**後で指定します。**  
   
-4. **[次へ]** をクリックし、 **[完了]** をクリックします。 ポート画面に、ポートと使用可能なメソッドが表示されます。  
+4. **[次へ]** をクリックし、 **[完了]** をクリックします。 ポート画面で、ポートと使用可能なメソッドが表示されます。  
   
-   最後に、送信ポートを構成します。これは、クエリの結果を格納した XML ファイルをファイル アダプターがディスクに出力するときに使用されます。  
+   最後に、ファイル アダプターによってディスクにクエリ結果を含む XML 出力に使用する送信ポートを構成します。  
   
 #### <a name="configure-a-send-port-to-output-the-xml-file-to-disk"></a>XML ファイルをディスクに出力する送信ポートを構成します。  
   
@@ -196,19 +196,19 @@ JD Edwards OneWorld (JDEOW) システムに [!INCLUDE[btsBizTalkServerNoVersion]
   
     **ポートの種類名**: `JDE_FileOut_Port`  
   
-    **[通信方式]**: **一方向**  
+    **通信方式**:**One Way**  
   
-    **[アクセスの制限]**: **[内部 - このプロジェクト限定]**  
+    **アクセス制限**:**内部 - このプロジェクト限定**  
   
 4. **[次へ]** をクリックして **[ポートのバインド]** ページに移動し、次のプロパティ値を選択します。  
   
-    **[ポートの通信方向]**: **[常にこのポートでメッセージを送信する]**  
+    **ポートの通信方向**:**常にメッセージを送信しますこのポートで**  
   
-    **[ポートのバインド]**: **[後で指定する]**  
+    **ポートのバインド**:**後で指定します。**  
   
 5. **[次へ]** をクリックし、 **[完了]** をクリックします。  
   
-   ポート画面に、JD Edwards OneWorld のサービスのための新しいポートと使用できるメソッドが表示されます。 JD Edwards OneWorld システムとの間でファイルを送受信するように JD Edwards OneWorld アダプターを設定する作業は、後で行います。  
+   新しいポートと JD Edwards OneWorld のサービスの使用可能なメソッドには、ポート画面に表示されます。 後で、JD Edwards OneWorld システムからファイルを送受信するには、JD Edwards OneWorld アダプターを指定します。  
   
    **JDE_File_In**と**JDE_File_Out**必要性を作成したポートに関連付けられたメッセージの種類。  
   
@@ -248,14 +248,14 @@ JD Edwards OneWorld (JDEOW) システムに [!INCLUDE[btsBizTalkServerNoVersion]
   
      ![](../core/media/jdeow-portsurface-connectcomponentstoports.gif "JDEOW_PortSurface_ConnectComponentsToPorts")  
   
-## <a name="step-4-build-and-deploy-the-project"></a>手順 4: 構築し、プロジェクトの配置  
- BizTalk プロジェクトが完成したので、ビルドし、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] に展開できます。  
+## <a name="step-4-build-and-deploy-the-project"></a>手順 4:プロジェクトのビルドと展開  
+ BizTalk プロジェクトが完成したので、ビルドし、 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]に展開できます。  
   
 1.  開始**Visual Studio コマンド プロンプト**します。  
   
-2.  プロジェクトをビルドするには、厳密な名前のキー ファイルが必要です。 コマンド プロンプトで、次のとおりに入力して厳密な名前のキー ファイルを作成します。  
+2.  プロジェクトをビルドするには、厳密な名前キー ファイルが必要です。 コマンド プロンプトで、厳密な名前キー ファイルを作成するには、次を入力します。  
   
-     **sn-k labs.snk**  
+     **sn -k labs.snk**  
   
 3.  ソリューション エクスプ ローラーで右クリックし、 **[jd_ow_test]** プロジェクトをクリックして**プロパティ**をプロジェクトのプロジェクト デザイナーを起動します。  
   
@@ -273,11 +273,11 @@ JD Edwards OneWorld (JDEOW) システムに [!INCLUDE[btsBizTalkServerNoVersion]
   
      ![](../core/media/jdeow-buildcompleteoutput.gif "JDEOW_BuildCompleteOutput")  
   
-10. 右クリックし、ビルドが正常に完了した後、 **[XX_JD Edwards oneworldquery]** プロジェクトをクリックして**デプロイ**します。 出力ウィンドウに、次のように出力が表示されます。  
+10. 右クリックし、ビルドが正常に完了した後、 **[XX_JD Edwards oneworldquery]** プロジェクトをクリックして**デプロイ**します。 出力ウィンドウで、次の出力が表示されます。  
   
      ![](../core/media/jdeow-deployoutput.gif "JDEOW_DeployOutput")  
   
-## <a name="step-5-test-the-application-and-viewing-the-xml-output"></a>手順 5: テスト、アプリケーションと XML 出力を表示します。  
+## <a name="step-5-test-the-application-and-viewing-the-xml-output"></a>手順 5:テスト アプリケーションと XML 出力を表示します。  
  次に、作成して展開したアプリケーションをテストします。 初めに、オーケストレーション プロセスを開始する XML ファイルを作成します。次に、アプリケーション内で XML ファイルを送受信するためのフォルダーを構成します。 アプリケーションの構成後は、アプリケーションを実行し、オーケストレーションが返す XML ファイルを表示します。  
   
 #### <a name="generate-the-xml-file-for-the-query"></a>クエリの XML ファイルを生成します。  
@@ -314,13 +314,13 @@ JD Edwards OneWorld (JDEOW) システムに [!INCLUDE[btsBizTalkServerNoVersion]
   
 7. プロパティに次の値を入力または選択します。  
   
-    **名前**: JDE_`FileInLoc`  
+    **[名前]**:JDE_`FileInLoc`  
   
-    **種類**: **ファイル**  
+    **[種類]**:**[最近使ったファイル]**  
   
-    **受信ハンドラー**: **BizTalkServerApplication**  
+    **受信ハンドラー**:**[Biztalkserverapplication]**  
   
-    **受信パイプライン**: **XMLReceive**  
+    **受信パイプライン**:**[Xmlreceive]**  
   
     ![](../core/media/jdeow-filein-loc-receivelocationproperties.gif "JDEOW_FileIn_Loc_ReceiveLocationProperties")  
   
@@ -334,11 +334,11 @@ JD Edwards OneWorld (JDEOW) システムに [!INCLUDE[btsBizTalkServerNoVersion]
   
      **名前**: `JDE_OW_Port`  
   
-     **型**: **JDE_OneWorld**  
+     **[種類]**:**JDE_OneWorld**  
   
-     **[送信ハンドラー]**: **BizTalkServerApplication**  
+     **送信ハンドラー**:**[Biztalkserverapplication]**  
   
-     **[パイプライン]**: **XMLTransmit** および **XMLReceive**  
+     **パイプライン**:**XMLTransmit**と**XMLReceive**  
   
 11. **[構成]** をクリックし、次のプロパティ値を入力します。  
   
@@ -368,13 +368,13 @@ JD Edwards OneWorld (JDEOW) システムに [!INCLUDE[btsBizTalkServerNoVersion]
   
      **名前**: `FileOutPort`  
   
-     **種類**: **ファイル**  
+     **[種類]**:**[最近使ったファイル]**  
   
-     **[送信ハンドラー]**: **BizTalkServerApplication**  
+     **送信ハンドラー**:**[Biztalkserverapplication]**  
   
-     **送信パイプライン**: **XMLTransmit**  
+     **送信パイプライン**:**[Xmltransmit]**  
   
-15. をクリックして**構成**と種類`C:\Labs\JDE_OW_Test\FileOut`の**宛先フォルダー。** 」と入力します。 **[ファイル名]** に「 **%MessageID%.xml** because this results in a unique file に「 each message.  
+15. **[構成]** をクリックし、`C:\Labs\JDE_OW_Test\FileOut` に「 **C:\Labs\PS_Test\FileOut** 」と入力します。 **[ファイル名]** に「 **%MessageID%.xml** because this results in a unique file に「 each message.  
   
      ![](../core/media/jdeow-file-transport-properties-fileout.gif "JDEOW_File_Transport_Properties_FileOut")  
   
@@ -396,15 +396,15 @@ JD Edwards OneWorld (JDEOW) システムに [!INCLUDE[btsBizTalkServerNoVersion]
   
 4.  **MnAddressBookNumber**挿入数`500`します。  
   
-5.  変更を保存し、ファイルのコピー、 **C:\Labs\JDE_OW_Test\FileIn**フォルダー。 これが受信場所であり、ここからオーケストレーション プロセスが開始します。  
+5.  変更を保存し、ファイルのコピー、 **C:\Labs\JDE_OW_Test\FileIn**フォルダー。 これは、オーケストレーション プロセスを開始する受信場所です。  
   
-6.  表示する必要があります XML ファイル、数秒で、 **C:\Labs\JDE_OW_Test\FileOut**フォルダー。 このファイルには、アドレスが 500 であるすべてのレコードが格納されています。  
+6.  表示する必要があります XML ファイル、数秒で、 **C:\Labs\JDE_OW_Test\FileOut**フォルダー。 これは、すべてのレコード、アドレスが 500 を含める必要があります。  
   
      ![](../core/media/jdeow-xml-output-jde-callbsfn.gif "JDEOW_XML_Output_JDE_CALLBSFN")  
   
      この返されたレコード データは、ラボ 1 で JD Edwards OneWorld システムに対してクエリによって返されるデータと一致する必要があります。 ラボ 1 で取得したレコードを比較して、ことを確認できます、**取得**メソッドが正常に動作します。  
   
 ## <a name="summary"></a>まとめ  
- このラボでは、初めに、JD Edwards OneWorld システムにアクセスするための前提条件が適切にセットアップされていることを確認しました。 次に、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] を使用して、オーケストレーションが含まれる新しい BizTalk プロジェクトを作成しました。 JD Edwards OneWorld アダプターを使用して JD Edwards OneWorld システムからデータを取得するように、この BizTalk オーケストレーションを構成しました。 オーケストレーションを構成するために、送信ポート、受信ポート、および送信/受信ポートを作成しました。 これらのポートを JD Edwards OneWorld アダプターにバインドし、メッセージを該当するポートに割り当てました。  
+ この演習では、JD Edwards OneWorld システムにアクセスする前提条件が正しく設定されてことを確認最初。 次に、 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] を使用して、オーケストレーションが含まれる新しい BizTalk プロジェクトを作成しました。 JD Edwards OneWorld アダプターを使用して JD Edwards OneWorld システムからデータを取得する BizTalk オーケストレーションを構成したとします。 オーケストレーションを構成するために、送信ポート、受信ポート、および送信/受信ポートを作成しました。 JD Edwards OneWorld アダプターにこれらのポートをバインドし、メッセージを適切なポートに割り当てました。  
   
- BizTalk プロジェクトの作成後、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] を使用してプロジェクトをビルドして展開しました。 次に、新しいアプリケーションを構成して実行し、JD Edwards OneWorld システムからデータを取得しました。 アプリケーションが正しく動作したことを確認するために、出力 XML ファイルを、ラボ 1 で JD Edwards OneWorld システムから受信したファイルと比較しました。
+ BizTalk プロジェクトの作成後、 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] を使用してプロジェクトをビルドして展開しました。 新しいアプリケーションを構成し、JD Edwards OneWorld システムからデータを取得しました。 アプリケーションが正しく機能したことを確認するには、出力 XML ファイルをラボ 1 で JD Edwards OneWorld システムから受信したファイルを比較します。

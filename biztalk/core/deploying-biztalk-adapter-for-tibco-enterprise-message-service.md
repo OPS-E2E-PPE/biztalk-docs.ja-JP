@@ -13,12 +13,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e90d083833e7961770c6ecd535e9ed3e5143be30
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5b43cba0be4bde3c019859b4783bbf1428d366a8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36981363"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65352079"
 ---
 # <a name="deploy-tibco-ems-ports-and-assemblies"></a>TIBCO EMS のポートとアセンブリを展開します。
 
@@ -85,5 +85,5 @@ cscript RemoveSendPort.vbs \<Send port name\>
   
 -   論理システムと送信および受信サービスを確認します。  
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 [BizTalk Server 例外処理を使用して、オーケストレーションで](../core/using-biztalk-server-exception-handling5.md)

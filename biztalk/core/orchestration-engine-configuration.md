@@ -1,5 +1,5 @@
 ---
-title: オーケストレーション エンジンの構成 |Microsoft ドキュメント
+title: オーケストレーション エンジンの構成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,19 +17,19 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3c5d2fae252d1b99f1a6393dc2f2ebbd45ed70a2
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 8f45fbc1d4114fc6c20011a7b03670b0e874345f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25972680"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65262743"
 ---
 # <a name="orchestration-engine-configuration"></a>オーケストレーション エンジンの構成
-オーケストレーション エンジンでは、特定の動作を決定するために、BTSNTSvc.exe.config という XML ファイルが使用されます。 たとえば、退避プロパティとその既定値は、BTSNTSvc.exe.config ファイルで XML として構成され、オーケストレーションを含んでいるすべてのホスト インスタンスが開始されると読み取られます。 詳細については、次を参照してください。[オーケストレーションの退避と復元](../core/orchestration-dehydration-and-rehydration.md)です。  
+オーケストレーション エンジンでは、BTSNTSvc.exe.config という XML ファイルを使用して特定の動作を決定します。 たとえば、退避プロパティとその既定値は BTSNTSvc.exe.config ファイルに XML として構成し、は読み取り専用とすべてのホスト インスタンスがオーケストレーションの開始を含みます。 詳細については、次を参照してください。[オーケストレーションの退避と復元](../core/orchestration-dehydration-and-rehydration.md)します。  
   
- サービスは、開始時にこれらの構成情報を 1 回読み取ります。 サービスが停止され、再開されない限り、構成情報に加えられた変更は一切取得されません。  
+ サービスは、起動時に 1 回、この構成情報を読み取ります。 サービスが停止および再起動しない限りに変更内容が取得されません。  
   
- ノードごとに設定できる値については、下のサンプルを参照してください。  
+ 別のノードと使用可能な値は、以下の例を参照してください。  
   
 ## <a name="example-all-validations-on"></a>例: 上のすべての検証  
   
@@ -88,7 +88,7 @@ ms.locfileid: "25972680"
 </configuration>  
 ```  
   
-## <a name="example-remote-debugging-enabled"></a>例: リモート デバッグを有効になっています。  
+## <a name="example-remote-debugging-enabled"></a>例: 有効になっているリモート デバッグ  
   
 ```  
 <?xml version="1.0" ?>  
@@ -122,8 +122,8 @@ ms.locfileid: "25972680"
 </configuration>  
 ```  
   
-## <a name="example-appdomain-configuration"></a>例: AppDomain の構成  
- アセンブリは、割り当て規則によって名前付きドメインに割り当てられます。詳細については下のサンプルを参照してください。 規則が指定されないアセンブリが存在する場合、そのアセンブリはアド ホック ドメインに割り当てられます。 1 つのアド ホック ドメインに対してこのように割り当てられるアセンブリの数は、AssembliesPerDomain の値によって決まります。  
+## <a name="example-appdomain-configuration"></a>例:AppDomain の構成  
+ 割り当ての規則を使用して名前付きドメインに割り当てられているアセンブリ (以下を参照)。 いくつかのアセンブリのルールが指定されていない場合、アセンブリはアド ホック ドメインに割り当てられます。 このような割り当てられたアセンブリ アド ホック ドメインあたりの数については、AssembliesPerDomain の値によって決まります。  
   
 ```  
 <?xml version="1.0" ?>  
@@ -224,12 +224,12 @@ A pattern assignment rule specifies a regular expression and an app domain name.
 </configuration>  
 ```  
   
-## <a name="modifying-other-sections-of-the-btsntsvcexeconfig-file"></a>BTSNTSvc.exe.config ファイルの他のセクションの変更  
- BTSNTSvc.exe.config における退避値を変更する方法については、次を参照してください。[既定の退避プロパティ](../core/dehydration-default-properties.md)です。  
+## <a name="modifying-other-sections-of-the-btsntsvcexeconfig-file"></a>BTSNTSvc.exe.config ファイルの他のセクションを変更します。  
+ BTSNTSvc.exe.config における退避値を変更する方法の詳細については、次を参照してください。[既定の退避プロパティ](../core/dehydration-default-properties.md)します。  
   
- BTSNTSvc.exe 構成ファイルには、「.NET Framework 全般リファレンス」で説明するその他のセクションもいくつか含まれています。 これらのセクションの変更の詳細については、次を参照してください。、**構成ファイル スキーマ**、.NET Framework 全般リファレンスの[http://go.microsoft.com/FWLink/?LinkID=52964](http://go.microsoft.com/FWLink/?LinkID=52964)です。  
+ BTSNTSvc.exe 構成ファイルには、.NET Framework 全般リファレンスに記載されているその他のいくつかのセクションが含まれています。 これらのセクションの変更の詳細については、次を参照してください。、**構成ファイル スキーマ**で .NET Framework 全般リファレンスの[ http://go.microsoft.com/FWLink/?LinkID=52964](http://go.microsoft.com/FWLink/?LinkID=52964)します。  
   
- BizTalk 固有の構成情報に加えて、BTSNTSvc.exe.config ファイルも、オーケストレーション、アダプターまたはパイプラインのコンテキストで実行される .NET アプリケーション コンポーネントが使用して実行時に構成情報を取得します標準 .NET  **\<appSettings\>** 下にあるタグ付け、 **\<構成\>** タグ。 BizTalk は、カスタム アダプターとパイプライン コンポーネントの構成情報を取得するためのメカニズムを既に提供されているため、  **\<appSettings\>**  BTSNTSvc.exe.config ファイル内のタグは通常はオーケストレーション内から呼び出されたカスタム .NET コンポーネントで使用します。 例:  
+ BizTalk 固有の構成情報に加え、BTSNTSvc.exe.config ファイルも、オーケストレーション、アダプターまたはパイプラインのコンテキストで実行される .NET アプリケーション コンポーネントが使用して実行時に構成情報を取得します標準 .NET **\<appSettings\>** でタグ付け、 **\<構成\>** タグ。 BizTalk が既にカスタム アダプターとパイプライン コンポーネントの構成情報を取得するためのメカニズムを提供するため、 **\<appSettings\>** BTSNTSvc.exe.config ファイル内のタグは通常はオーケストレーション内から呼び出されるカスタムの .NET コンポーネントで使用されます。 例 :  
   
 ```  
 <appSettings>  
@@ -238,9 +238,9 @@ A pattern assignment rule specifies a regular expression and an app domain name.
 ```  
   
 ## <a name="throttling-messages-per-orchestration"></a>オーケストレーションごとのメッセージの制限  
- このプロパティは BTSNTSvc.exe.config ファイル内で指定され、オーケストレーションが保持できる未処理のメッセージ数を制限することで、オーケストレーションによって過剰なメモリが消費されるのを防ぎます。 すべてのメッセージは引き続き; メッセージ ボックスに配信します。ただし、キューに置かれたメッセージは配信されませんをオーケストレーションに未処理のメッセージの一部が処理されるまでです。  
+ このプロパティは、btsntsvc.exe.config ファイルで指定により、オーケストレーションが保持できる未処理のメッセージの数を制限することによって過度のメモリを消費できなくなります。 。 メッセージ ボックス データベースに配信されるすべてのメッセージが引き続きただし、キューに置かれたメッセージは配信されませんをオーケストレーションに未処理のメッセージの一部が処理されるまでです。  
   
- BTSNTSvc.exe.config ファイル内でこのプロパティを指定するには、Application ノードの下に次のパラメーターを追加します。BTSNTSvc.exe.config ファイルは [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のルート ディレクトリにあります。  
+ Btsntsvc.exe.config ファイルでこのプロパティを指定する (内にある、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ルート ディレクトリ)、アプリケーション ノードの下の次のパラメーターを追加します。  
   
 ```  
 <configuration>  
@@ -250,9 +250,9 @@ A pattern assignment rule specifies a regular expression and an app domain name.
 </configuration>  
 ```  
   
- この例では、オーケストレーションにある未処理のメッセージが 100 件に到達すると、メッセージ ボックスからの追加メッセージの送信が停止します。 未処理のメッセージのオーケストレーションの数は 50 件まで下がるが、そのメッセージを送信するメッセージ ボックス データベースを再開できますを指定します。 他の値も指定できます。  
+ この例では、オーケストレーションがある 100 件の未解決のメッセージとメッセージ ボックスは停止追加メッセージを送信します。 オーケストレーションの未処理のメッセージ数が 50 件まで下がると、メッセージを送信するメッセージ ボックス データベースを再開できることを指定します。 その他の値を指定できます。  
   
- また、この機能を有効にすることも必要があります。 ホスト単位で、データベースにします。 ホスト単位でメッセージ数の制限を有効にするには、BizTalkMsgBoxDb データベースの dbo.Applications テーブルを編集する必要があります。 メッセージがオーケストレーションごとに調整を有効にする各ホストに対して、fAttributes フラグのビットを 1 に設定します。 オーケストレーションごとに調整メッセージを 1 に設定されたホストのみが許可されます。  
+ また、この機能が有効にする必要があります、ホスト、データベースにします。 メッセージをホストの数の制限を有効にするには、dbo を編集する必要があります。BizTalkMsgBoxDb データベース内のテーブルをアプリケーション。 、メッセージがオーケストレーションごとに調整を有効にする各ホストに対して、fAttributes フラグのビットを 1 に設定します。 1 に設定されたホストのみにより、メッセージがオーケストレーションごとに調整できます。  
   
 ## <a name="see-also"></a>参照  
  [オーケストレーションのデバッグ](../core/debugging-orchestrations.md)   

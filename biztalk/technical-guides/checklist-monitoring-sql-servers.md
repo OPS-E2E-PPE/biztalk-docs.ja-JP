@@ -1,5 +1,5 @@
 ---
-title: 'チェックリスト: SQL Server の監視 |Microsoft Docs'
+title: チェックリスト:SQL Server の監視 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8835af94ec16d344cd85c0321731ac4150451acf
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 12ee05a8f18c06516ecb6542b003a74537995894
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36993395"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65270639"
 ---
-# <a name="checklist-monitoring-sql-servers"></a>チェックリスト: SQL Server の監視
+# <a name="checklist-monitoring-sql-servers"></a>チェックリスト:SQL Server の監視
 このトピックでは、監視するために従う必要がある手順を説明します。 [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] 、運用環境で[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]環境。  
 
 

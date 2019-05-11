@@ -1,5 +1,5 @@
 ---
-title: 'サンプル アーキテクチャ: ファイル アダプターの |Microsoft ドキュメント'
+title: サンプル アーキテクチャ:ファイル アダプター |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -21,50 +21,50 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 11884786f743ece21a8009ea339a251b107420c9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 961c4e3f7820f88c4935e070c739aacaab5d1a63
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22269610"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65271154"
 ---
-# <a name="sample-architecture-file-adapter"></a>ファイル アダプターのサンプル アーキテクチャ:
-このトピックでは、ファイル アダプターを使用してメッセージを送受信する場合のサンプル アーキテクチャについて説明します。  
+# <a name="sample-architecture-file-adapter"></a>サンプル アーキテクチャ:ファイル アダプター
+このトピックでは、ファイル アダプターを使用してメッセージを送受信するときに、サンプル アーキテクチャについて説明します。  
   
 ## <a name="file-adapter-components"></a>ファイル アダプタ コンポーネント  
- 次の図は、ファイル アダプタを使用する場合の BizTalk サンプル アーキテクチャのコンポーネントを示しています。  
+ 次の図は、ファイル アダプターを使用する場合に、BizTalk Server のコンポーネントのサンプル アーキテクチャを示します。  
   
 > [!NOTE]
->  このサンプル アーキテクチャは、EDI アダプタを使用する場合にも適用できます。  
+>  このサンプルのアーキテクチャは、EDI アダプタを使用する場合にも適用できます。  
   
- **ファイル アダプタを示すサンプル アーキテクチャを図 1**  
+ **ファイル アダプタを示す図 1 サンプル アーキテクチャ**  
   
  ![サンプル ファイル アダプターのアーキテクチャ](../core/media/tdi-sec-refarch-file.gif "TDI_Sec_RefArch_File")  
   
  このサンプル アーキテクチャには、次のセクションで説明されているコンポーネントが含まれています。  
   
 ## <a name="perimeter-network-internet"></a>境界ネットワーク-インターネット  
- 企業ではイントラネット ベースの通信にファイル プロトコルを使用することが多いので、このシナリオをサポートするためにインターネットの境界ネットワーク内にサーバーを配置する必要はありません。  
+ 企業は、イントラネット ベースの通信では、ファイル プロトコルを使用する一般的と、このシナリオをサポートするためにインターネット境界ネットワーク内のサーバーでそのため必要がありません。  
   
 ## <a name="perimeter-network-intranet"></a>境界ネットワーク-イントラネット  
- ファイル アダプタを使用する場合、イントラネットの境界ネットワーク内にファイル サーバーがあります。 これはパートナーがメッセージをドロップするサーバーです。BizTalk ファイル受信アダプタはこのサーバーからメッセージを取得します。  
+ ファイル サーバーがファイル アダプターを使用すると、イントラネット境界ネットワークであります。 これは、場所、パートナーは、メッセージをドロップされ、BizTalk ファイル受信アダプターがメッセージ取得このサーバーからサーバーです。  
   
 ## <a name="e-business-domain"></a>E ビジネス ドメイン  
  このドメイン内のサーバーは次のとおりです。  
   
--   **BizTalk Server (処理、ファイル アダプター、および追跡ホスト)。** このサーバーには、BizTalk Server ランタイムがインストールされており、BizTalk オーケストレーション、パイプライン、ビジネス ルール エンジン、およびその他のビジネス プロセスを含むホストのインスタンスが格納されています。 ここには、BizTalk Server のポート、受信場所、パイプライン、マップ、スキーマ、およびアセンブリがメッセージを受信、ルーティング、処理、および送信するために配置されています。 このサーバーでは、正常性監視とビジネスの監視データの追跡をサポートするホストのホスト インスタンスもあります。 さらに、このホストには、ファイル送信アダプタとファイル受信アダプタを実行するホストのインスタンスが含まれています。  
+-   **BizTalk Server (処理、ファイル アダプター、および追跡ホスト)。** このサーバーは、BizTalk Server ランタイムのインストールされてし、BizTalk オーケストレーション、パイプライン、ビジネス ルール エンジン、および他のビジネス プロセスが含まれているホストのインスタンスが存在します。 これは、BizTalk Server のポート、受信場所、パイプライン、マップ、スキーマ、およびアセンブリが存在する受信、ルーティング、処理、およびメッセージを送信します。 このサーバーでは、正常性の監視とビジネスの監視データの追跡をサポートするホストのホスト インスタンスもあります。 さらに、このホストは、ファイルの送信を実行するホストのインスタンスが含まれ、受信アダプター。  
   
     > [!NOTE]
-    >  パフォーマンスを向上させる必要がある場合、処理ホストのホスト インスタンス用の環境に BizTalk Server をさらに追加できます。 BizTalk Server の高可用性を構成する方法の詳細については、次を参照してください。[高可用性の計画](../core/planning-for-high-availability3.md)です。  
+    >  パフォーマンス ニーズの増加に応じて、処理ホストのホスト インスタンスの環境に BizTalk Server を追加できます。 高可用性のための BizTalk Server を構成する方法の詳細については、次を参照してください。[高可用性の計画](../core/planning-for-high-availability3.md)します。  
   
--   **マスター シークレット サーバーです。** 同じように、[サンプル アーキテクチャ: 基盤となる BizTalk Server](../core/sample-architecture-base-biztalk-server.md)です。  
+-   **マスター シークレット サーバーです。** 同じように、[サンプル アーキテクチャ。基盤となる BizTalk Server](../core/sample-architecture-base-biztalk-server.md)します。  
   
--   **SQL Server。** 同じように、[サンプル アーキテクチャ: 基盤となる BizTalk Server](../core/sample-architecture-base-biztalk-server.md)です。  
+-   **SQL Server。** 同じように、[サンプル アーキテクチャ。基盤となる BizTalk Server](../core/sample-architecture-base-biztalk-server.md)します。  
   
--   **ドメイン コント ローラー。** 同じように、[サンプル アーキテクチャ: 基盤となる BizTalk Server](../core/sample-architecture-base-biztalk-server.md)です。  
+-   **ドメイン コント ローラー。** 同じように、[サンプル アーキテクチャ。基盤となる BizTalk Server](../core/sample-architecture-base-biztalk-server.md)します。  
   
--   **管理ツールです。** 同じように、[サンプル アーキテクチャ: 基盤となる BizTalk Server](../core/sample-architecture-base-biztalk-server.md)です。  
+-   **管理ツールです。** 同じように、[サンプル アーキテクチャ。基盤となる BizTalk Server](../core/sample-architecture-base-biztalk-server.md)します。  
   
 ## <a name="see-also"></a>参照  
- [小規模および中規模企業向けのサンプル アーキテクチャ](../core/sample-architectures-for-small-medium-sized-companies.md)   
+ [中小規模の企業向けのサンプル アーキテクチャ](../core/sample-architectures-for-small-medium-sized-companies.md)   
  [脅威モデル分析のサンプル シナリオ](../core/sample-scenarios-for-threat-model-analysis.md)

@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 765d9785bde94f363ea56178f3cc0f500381d4e9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 52915c751f8857f26195c7df033dcf2327989760
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36997523"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65242728"
 ---
 # <a name="running-the-multiple-web-services-sample"></a>複数の Web サービス サンプルを実行します。
 複数の Web サービス サンプルでは、行程導入サンプルで提供される Windows フォームのテスト クライアント アプリケーションを使用します。  
@@ -38,4 +38,4 @@ ms.locfileid: "36997523"
   
 7. をクリックして、 **SubmitRequest**行程入口サービスに要求を送信するボタンをクリックします。 表示される応答メッセージの待機、**結果**ボックス。  
   
-   ESB スケジュール サービスを複数の Web サービス サンプルで使用する方法については、[、複数 Web サービス サンプルのしくみ](../esb-toolkit/how-the-multiple-web-services-sample-works.md)を参照してください。
+   ESB スケジュール サービスを複数の Web サービス サンプルで使用する方法については、次を参照してください。 [、複数 Web サービス サンプルのしくみ](../esb-toolkit/how-the-multiple-web-services-sample-works.md)します。

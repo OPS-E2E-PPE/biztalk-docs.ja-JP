@@ -12,17 +12,17 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 959160bdf8e4e81715c77946663a9e4fc70fb077
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: cd3f0ccb30290874d4720e03d0583894ada36fb7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36978667"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65277212"
 ---
 # <a name="high-availability-for-biztalk-hosts"></a>BizTalk ホストの高可用性
 BizTalk Server は、受信メッセージを送信して、物理的には、オーケストレーションの処理などの機能の特定の領域を実行するホストが論理を戦略的に割り当てることができますので、高可用性をアドレス指定の柔軟性を提供します。複数のサーバーに配置されます。  
   
- 内の論理コンテナーされた BizTalk ホストは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]収容でき、グループ[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]アダプターなどの項目の送信ハンドラー (パイプラインを含む)、受信場所、オーケストレーションします。 通常は、拡張性の観点から似た特性を持つアイテムを特定のホストにグループ化します。  
+ 内の論理コンテナーされた BizTalk ホストは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]収容でき、グループ[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]アダプターなどの項目の送信ハンドラー (パイプラインを含む)、受信場所、オーケストレーションします。 通常は、特定のホストに同様のスケールのプロパティのある項目をグループ化します。  
   
  ホストを作成した後は、物理的にデプロイできます[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ホスト インスタンスとコンピューター。 指定したホスト インスタンスが、BTSNTSvc.exe (または 64 ビット ホスト インスタンスの BTSNTSvc64.exe) Windows サービスとして実行[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]コンピューター。 各ホストでは、特定の 1 つだけのインスタンスがあることができます[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]コンピューター。 ただし、1 つ以上の特定のホストのインスタンスを設定できます[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]して、コンピューターは、特定のさまざまなホストのインスタンスを配置できます[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]コンピューター。  
   
@@ -36,11 +36,11 @@ BizTalk Server は、受信メッセージを送信して、物理的には、�
   
   1 つの BizTalk ホストに、メッセージの受信、送信、および処理の機能をすべて割り当てることもできます。 管理とスケーラビリティが容易に、各関数の指定された別のホストを作成することをお勧めします。 具体的には、処理および受信/送信操作は、さまざまなホストを使用することをお勧めします。  
   
-  たとえば、1 つのメッセージを受け取って、オーケストレーションを実行し、10 個のメッセージを送信する場合、送信には受信と比べて 10 倍のトラフィックが発生するため、受信機能と送信機能は 2 つのホストに分ける必要があります。 1 つのメッセージを受信し、オーケストレーションを実行して、1 つのメッセージを送信する場合は、3 つの機能を 1 つの作業単位と捉え、単一のホストとしてグループ化することができます。 また、管理コストは高くなりますが、3 つの機能を別々のホストに分ければ、パフォーマンスと柔軟性を高めることができます。  
+  たとえば、1 つのメッセージを受け取って、オーケストレーションを実行し、10 個のメッセージを送信する場合、送信には受信と比べて 10 倍のトラフィックが発生するため、受信機能と送信機能は 2 つのホストに分ける必要があります。 1 つのメッセージを受信し、オーケストレーションを実行して、1 つのメッセージを送信する場合は、3 つの機能を 1 つの作業単位と捉え、単一のホストとしてグループ化することができます。 または、することができますに分割する 3 つの異なるホスト パフォーマンスと柔軟性を高めるこれも、管理コストが増加しますが。  
   
   BizTalk ホストは、2 つの型の 1 つ*インプロセス*または*Isolated*します。 内のインプロセス ホストの実行、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ランタイム プロセス (BTSNTSvc.exe または BTSNTSvc64.exe) と分離ホスト実行しないでください、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ランタイム プロセス。 分離ホストは、分離受信アダプターの受信側でのみ使用します。 次の表は、2 種類のホストに割り当てることのできる機能をまとめたものです。  
   
-|ホストの種類|論理コンテナーに割り当てることのできる機能|  
+|ホストの種類|論理コンテナー|  
 |---------------|---------------------------|  
 |インプロセス|オーケストレーション<br />のアダプター送信ハンドラー<br />・ インプロセス アダプターの受信ハンドラー|  
 |分離されます。|HTTP、SOAP の受信ハンドラー<br />-その他の分離アダプターの受信ハンドラー|  

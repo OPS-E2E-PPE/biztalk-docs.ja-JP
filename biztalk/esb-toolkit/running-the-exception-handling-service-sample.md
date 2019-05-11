@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dabab8678d8ee8b65854e494ce0a2ec53eba78fb
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 17a1460b1248aa64ba043e8e6c01a66dc6215490
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36999395"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65242849"
 ---
 # <a name="running-the-exception-handling-service-sample"></a>例外処理サービス サンプルを実行しています。
 例外処理サービス サンプルでは、外部アプリケーションから、例外処理の ESB フレームワークにエラーを送信するには、例外処理の Web サービスを使用する方法を示します。 このサンプルを実行するには、次の手順が必要です[例外管理サンプルをインストールする](../esb-toolkit/installing-the-exception-management-samples.md)します。  
@@ -34,4 +34,4 @@ ms.locfileid: "36999395"
   
 5. 生成された例外の内容を確認します。  
   
-   例外処理サービス サンプルが、例外管理サービスを使用する方法についての詳細については、[、例外処理サービス サンプルのしくみ](../esb-toolkit/how-the-exception-handling-service-sample-works.md)を参照してください。
+   例外処理サービス サンプルが、例外管理サービスを使用する方法についての詳細については、次を参照してください。 [、例外処理サービス サンプルのしくみ](../esb-toolkit/how-the-exception-handling-service-sample-works.md)します。

@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bd5bc7e1454cb00b3f163ec7201de327fccbd637
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9a9728f456e6f3cf3ad95a392a5fdc45d6cf9265
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37001443"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65376119"
 ---
 # <a name="run-composite-operations-in-oracle-database"></a>Oracle データベースで複合操作を実行します。
 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]により、任意の順序と、次の操作の任意の数を含めることができる複合操作を実行するクライアントはアダプター。  

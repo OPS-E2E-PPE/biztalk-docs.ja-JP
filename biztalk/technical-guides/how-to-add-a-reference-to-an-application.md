@@ -12,15 +12,15 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bff93f2380a78ee55dfe323761c1549d4b0b9442
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7ace1bdf12e9a094d667b6372eceb1d90801d357
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37008259"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65277130"
 ---
 # <a name="how-to-add-a-reference-to-an-application"></a>アプリケーションへの参照を追加する方法
-このトピックでは、BizTalk Server 管理コンソールを使用してから別のアプリケーションへの参照を追加する方法の情報を提供します。 同じ BizTalk グループの別のアプリケーション内に既に存在するアイテムを、現在のアプリケーションで使用する場合は、参照を追加します。 EDI に固有のスキーマ、パイプライン、および BizTalk アプリケーション 1 などの別のアプリケーションからのオーケストレーション (BizTalk EDI アプリケーションに展開) を使用する場合は、BizTalk EDI アプリケーションへの参照を追加する必要があります。 カスタム アイテムを BizTalk EDI アプリケーションに追加することはできません。  
+このトピックでは、BizTalk Server 管理コンソールを使用してから別のアプリケーションへの参照を追加する方法の情報を提供します。 同じ BizTalk グループの別のアプリケーション内に既に存在するアイテムを、現在のアプリケーションで使用する場合は、参照を追加します。 EDI に固有のスキーマ、パイプライン、および BizTalk アプリケーション 1 などの別のアプリケーションからのオーケストレーション (BizTalk EDI アプリケーションに展開) を使用する場合は、BizTalk EDI アプリケーションへの参照を追加する必要があります。 BizTalk EDI アプリケーションするカスタム アーティファクトを追加しないでください。  
 
  詳細については。  
 

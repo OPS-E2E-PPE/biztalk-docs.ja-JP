@@ -1,5 +1,5 @@
 ---
-title: BizTalk Adapter for PeopleSoft Enterprise の UI リファレンス |Microsoft ドキュメント
+title: BizTalk Adapter for PeopleSoft Enterprise の UI リファレンス |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,18 +15,18 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1f4f0c156e88165965e5846e4752b65e419739e8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2f36fb49697cb8f8082b2c4488fbb20923663ec9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22284266"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65258572"
 ---
 # <a name="ui-reference-for-biztalk-adapter-for-peoplesoft-enterprise"></a>BizTalk Adapter for PeopleSoft Enterprise の UI リファレンス
-このセクションの各トピックでは、BizTalk Adapter for PeopleSoft Enterprise のユーザー インターフェイスについて説明します。  
+このセクションのトピックでは、PeopleSoft Enterprise の BizTalk アダプターのユーザー インターフェイスをについて説明します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [PeopleSoft トランスポートのプロパティ ダイアログ ボックス](../core/peoplesoft-transport-properties-dialog-box.md)  
+-   [[PeopleSoft トランスポートのプロパティ] ダイアログ ボックス](../core/peoplesoft-transport-properties-dialog-box.md)  
   
 -   [PeopleSoft アダプターの追加ウィザード](../core/peoplesoft-add-adapter-wizard.md)

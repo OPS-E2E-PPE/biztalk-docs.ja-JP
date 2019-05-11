@@ -16,12 +16,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cfce63f527dbe9643228b3b47a509b404e78c510
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a0480d4742076b0c99b29a6f34054cf713e09bf2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37009139"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65303767"
 ---
 # <a name="message-modes"></a>メッセージ モード
 すべての HL7 メッセージの基になる 2 つの基本的な概念があります。 これらの概念はアドレス データを交換する独立したシステムの相互作用し、分散医療システム内で時間の経過と共に相互運用性の要件をサポートする構造を提供する、さまざまな方法です。 以下に示す概念は、HL7 デザインの背後にある基になるテーマを定義します。  

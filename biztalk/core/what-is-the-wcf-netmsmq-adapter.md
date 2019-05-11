@@ -1,5 +1,5 @@
 ---
-title: WCF-NetMsmq アダプタについて | Microsoft Docs
+title: Wcf-netmsmq アダプターとは何ですか。 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,48 +14,48 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1008cc7178c38532f1781890080eacf4b5dfb56c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ba6cfcba8858e894b83b5ec45fcd51406db93fcc
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22289434"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65242787"
 ---
-# <a name="what-is-the-wcf-netmsmq-adapter"></a>WCF-NetMsmq アダプタについて
-WCF-NetMsmq アダプタは、サービスとクライアントの両方が WCF ベースである環境でキュー テクノロジを使用して、接続が切断されたコンピュータ間の通信を実現します。 このアダプタはメッセージ キュー (MSMQ) トランスポートを使用し、メッセージではバイナリ エンコードを使用します。  
+# <a name="what-is-the-wcf-netmsmq-adapter"></a>Wcf-netmsmq アダプターとは何ですか。
+Wcf-netmsmq アダプタは、サービスとクライアントの両方が WCF ベースの環境でキュー テクノロジを使用して、切断されているコンピュータ間の通信を提供します。 メッセージ キュー (MSMQ) トランスポートを使用して、メッセージはバイナリ エンコードします。  
   
- 次の表に、WCF-NetMsmq アダプタの特性をまとめます。  
+ 次の表では、Wcf-netmsmq アダプタの特性をまとめたものです。  
   
-|Description|特性|  
+|説明|特性|  
 |-----------------|--------------------|  
 |相互運用性レベル|.NET プロファイル|  
 |[メッセージ エンコード]|Binary|  
 |[境界]|コンピュータ間|  
 |トランスポート プロトコル|MSMQ (MSMQ)|  
-|[セキュリティ モード]|なし、メッセージ、トランスポート、および両方|  
+|[セキュリティ モード]|None、メッセージ、トランスポート、および両方。|  
 |クライアント認証のメカニズム|トランスポート セキュリティとメッセージ セキュリティ|  
 |WS-ReliableMessaging のサポート|適用なし|  
 |WS-AtomicTransaction のサポート|はい|  
 |一方向メッセージングのサポート|はい|  
-|双方向メッセージングのサポート|不可|  
+|双方向メッセージングのサポート|いいえ|  
 |受信アダプタのホストの種類|インプロセス|  
 |送信アダプタのホストの種類|インプロセス|  
   
 > [!NOTE]
->  WCF-NetMsmq 受信アダプタによるメッセージの抽出元のキューを事前に作成しておく必要があります。 キュー内のメッセージは WCF ベースである必要があります。それ以外の場合、これらのメッセージは配信不能キューに送信されます。  
+>  Wcf-netmsmq 受信アダプターによるメッセージの抽出を元のキューは、事前に作成する必要があります。 キュー内のメッセージが WCF ベース; にある必要があります。それ以外の場合、これらのメッセージを配信不能キューに送信されます。  
   
- WCF-NetMsmq アダプタは、2 つのアダプタ (受信アダプタと送信アダプタ) で構成されます。  
+ Wcf-netmsmq アダプターは、2 つのアダプターで構成されます-受信アダプタと送信アダプター。  
   
  **Wcf-netmsmq 受信アダプター**  
   
- WCF-NetMsmq 受信アダプタは、MSMQ 経由で WCF サービス要求を受信するために使用します。 WCF-NetMsmq 受信アダプタを使用する受信場所は、一方向の受信場所としてのみ構成できます。  
+ Wcf-netmsmq を使用する受信アダプターを MSMQ 経由で WCF サービス要求を受信します。 Wcf-netmsmq 受信アダプタを使用する受信場所は、一方向の受信としてのみ構成できます。  
   
  **Wcf-netmsmq 送信アダプター**  
   
- WCF-NetMsmq 送信アダプタは、MSMQ 経由で型宣言が不要なコントラクトを使用して WCF サービスを呼び出すために使用します。  
+ Wcf-netmsmq 送信アダプターを使用して、MSMQ 経由で型宣言不要なコントラクトを介して WCF サービスを呼び出します。  
   
- WCF の詳細については、受信し送信アダプターを参照してください[WCF アダプタは何ですか?](../core/what-are-the-wcf-adapters.md)です。  
+ WCF の詳細については、受信し送信アダプターを参照してください[WCF アダプタは何ですか?](../core/what-are-the-wcf-adapters.md)します。  
   
 ## <a name="see-also"></a>参照  
- [Wcf-netmsmq アダプタを構成します。](../core/configuring-the-wcf-netmsmq-adapter.md)   
- [WCF アダプタ](../core/wcf-adapters.md)
+ [Wcf-netmsmq アダプターを構成します。](../core/configuring-the-wcf-netmsmq-adapter.md)   
+ [WCF アダプター](../core/wcf-adapters.md)

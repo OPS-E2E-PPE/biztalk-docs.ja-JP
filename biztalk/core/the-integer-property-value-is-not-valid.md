@@ -12,14 +12,14 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0f376cb7742aed676d8f834f2fa7f813f6754854
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5c99c9830087c7a0659466cfaad589aea3cf41b2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37024392"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65258646"
 ---
-# <a name="the-integer-property-value-is-not-valid"></a>整数プロパティの値が無効です
+# <a name="the-integer-property-value-is-not-valid"></a>整数プロパティの値が無効です。
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                        |

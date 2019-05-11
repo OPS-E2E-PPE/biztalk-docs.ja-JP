@@ -19,18 +19,18 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bbfedd5067be1de443c20ce522cbe30f27395db1
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c512b6346608105e1a67cce76c36b8fd705bcc5b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36989963"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65340344"
 ---
 # <a name="how-to-configure-the-send-shape"></a>送信図形を構成する方法
 ![](../core/media/ebiz-orch-send.gif "ebiz_orch_send")  
 送信図形  
   
- 送信したメッセージへの応答を間接的または非同期的に受信する (要求 - 応答ポートを使用しないで受信する) 場合は、応答者が適切なインスタンスに応答できるように、送信したメッセージを現在実行中のオーケストレーションのインスタンスに関連付ける必要があります。 フォロー関連付けセット適用することができます、**送信**既にイニシャライズするかの図形にイニシャライズ関連付けセットを適用できます。 詳細については、[オーケストレーションでの相関関係を使用して](../core/using-correlations-in-orchestrations.md)を参照してください。  
+ 送信したメッセージへの応答を間接的または非同期的に受信する (要求 - 応答ポートを使用しないで受信する) 場合は、応答者が適切なインスタンスに応答できるように、送信したメッセージを現在実行中のオーケストレーションのインスタンスに関連付ける必要があります。 フォロー関連付けセット適用することができます、**送信**既にイニシャライズするかの図形にイニシャライズ関連付けセットを適用できます。 詳細については、次を参照してください。[オーケストレーションでの相関関係を使用して](../core/using-correlations-in-orchestrations.md)します。  
   
 ### <a name="to-configure-a-send-shape"></a>送信図形を構成するには  
   

@@ -12,16 +12,16 @@ caps.latest.revision: 23
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ed1a3591314634c41cfd598aa074e497dd19ec03
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7e78055229a522afcc0af02e5ea4ff0ea66b6189
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36983723"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65313343"
 ---
 # <a name="trading-partner-management-using-biztalk-server"></a>BizTalk Server を使用した取引先管理
 ## <a name="introduction-to-tpm"></a>TPM の概要
-[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 取引先管理 (TPM) は、パートナーとそのビジネスに関する情報の管理方法と保存方法の基本的な概念を再構築するものです。 拡張 TPM ソリューションには、フィールドのビジネス エンティティとリレーションシップが反映されます。これにより組織は、取引先とのビジネス パートナーシップをより高度に管理することができます。 TPM ソリューションによる取引パートナーシップ BizTalk 環境でのモデルの詳細については、[、取引先管理ソリューションのビルド ブロック](../core/building-blocks-of-a-trading-partner-management-solution.md)を参照してください。  
+[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 取引先管理 (TPM) は、パートナーとそのビジネスに関する情報の管理方法と保存方法の基本的な概念を再構築するものです。 拡張 TPM ソリューションには、フィールドのビジネス エンティティとリレーションシップが反映されます。これにより組織は、取引先とのビジネス パートナーシップをより高度に管理することができます。 TPM ソリューションによる取引パートナーシップ BizTalk 環境でのモデルの詳細については、次を参照してください。 [、取引先管理ソリューションのビルド ブロック](../core/building-blocks-of-a-trading-partner-management-solution.md)します。  
   
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 電子データ交換 (EDI) データ交換および AS2 データ トランスポートのネイティブ サポートが含まれています。 このサポートにより、企業は、EDI トランザクションの自動交換によって実現される生産性の向上を図りながら EDI ベースのビジネス プロセス管理ソリューションを拡張できます。 BizTalk Server は、EDI および EDIINT/AS2 を使用して、重要なサプライ チェーン ビジネス プロセスに対し、パートナー接続におけるセキュリティ保護と信頼性を高める手段を提供します。  
   

@@ -13,12 +13,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b632f494766974079ec13dd0803ae776c96adfe2
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9445614fd0048056a139a8c9768820b216a0290a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36997883"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65267925"
 ---
 # <a name="glossary"></a>用語集
 Microsoft BizTalk Accelerator 用 HL7 は、次の用語と定義を使用します。

@@ -19,15 +19,15 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 874e30f6d1cb56880dc9b15cce9c815305430871
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d611c6ace56d4d61c891c9c156bd7263edf4622b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37012339"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65243162"
 ---
-# <a name="valid-biztalk-mapper-xslt-encoding-types"></a>BizTalk マッパーでの有効な XSLT エンコードの種類
-BizTalk マッパーは、各種の XSLT (Extensible Stylesheet Language Transformations) エンコードをサポートしています。 使用する、 **XSLT エンコード**グリッド プロパティを XSLT エンコードの種類を設定します。 次の一覧に関連付けられているドロップダウン リストで使用できるエンコード形式を示しています、 **XSLT エンコード**グリッドのプロパティ。  
+# <a name="valid-biztalk-mapper-xslt-encoding-types"></a>BizTalk マッパーの有効な XSLT エンコードの種類
+BizTalk マッパーでは、さまざまな種類の拡張可能なスタイル シート言語変換 (XSLT) エンコーディングをサポートします。 使用する、 **XSLT エンコード**グリッド プロパティを XSLT エンコードの種類を設定します。 次の一覧に関連付けられているドロップダウン リストで使用できるエンコード形式を示しています、 **XSLT エンコード**グリッドのプロパティ。  
   
 - なし  
   
@@ -35,7 +35,7 @@ BizTalk マッパーは、各種の XSLT (Extensible Stylesheet Language Transfo
   
 - バルト語 (windows-1257)  
   
-- 中央ヨーロッパ言語 (windows-1250)  
+- 中央ヨーロッパ言語 (windows 1250)  
   
 - 中国語 (GB18030)  
   
@@ -47,13 +47,13 @@ BizTalk マッパーは、各種の XSLT (Extensible Stylesheet Language Transfo
   
 - 日本語 (Shift_JIS)  
   
-- 韓国語 (ks_c_5601-1987)  
+- 韓国語 (ks_c_5601 1987))  
   
-- リトル エンディアン Unicode (UTF-16)  
+- リトル エンディアン Unicode (utf-16)  
   
 - 簡体字中国語 (GBK)  
   
-- タイ語 (windows-874)  
+- タイ語 (windows 874)  
   
 - 繁体字中国語 (Big5)  
   
@@ -63,9 +63,9 @@ BizTalk マッパーは、各種の XSLT (Extensible Stylesheet Language Transfo
   
 - ベトナム語 (windows-1258)  
   
-- 西ヨーロッパ言語 (windows-1252)  
+- 西ヨーロッパ言語 (1252 windows)  
   
-  必要なエンコードがこの一覧に含まれていない場合、別のエンコード値を入力できます。 BizTalk マッパーはその値のテストを行わないので、適切な値を入力していることを確認してください。  
+  この一覧に使用するエンコーディングが見つからない場合は、別のエンコード値を入力できます。 BizTalk マッパーはその値をテストしていないため、有効では、指定した値ようにしてください。  
   
 > [!NOTE]
 >  **コード ページ**のプロパティ、**スキーマ**ノード マップで使用するスキーマのエンコーディング形式を定義します。 構成する、**コード ページ**プロパティ、スキーマを BizTalk エディターで開くしの値を指定、**コード ページ**プロパティ。  

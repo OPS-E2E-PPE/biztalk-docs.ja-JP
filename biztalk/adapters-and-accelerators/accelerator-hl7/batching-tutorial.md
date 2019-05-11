@@ -17,12 +17,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 790303ac2026cbbce2fdb1c436e3dc8c7e9ff7f7
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1c9576d8406aa7bc0988fe961ce9b6750791fa77
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36980091"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65251658"
 ---
 # <a name="batching-tutorial"></a>バッチ処理のチュートリアル
 このチュートリアルは、Microsoft の使用に関する詳しい手順を示します[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]を受信し、バッチ処理されたメッセージを送信します。 バッチ処理と、1 つの複合メッセージとしてグループの個々 のメッセージ (または受信確認) を送受信する必要があります。  

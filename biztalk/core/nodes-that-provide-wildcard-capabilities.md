@@ -1,5 +1,5 @@
 ---
-title: ワイルドカードの機能を提供するノード |Microsoft ドキュメント
+title: ワイルドカードの機能を提供するノード |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,18 +12,18 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1555f9a320a29528a52b3fe23da6dfba21173bc7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 92590040128b17a79b0493d06af7453447949c7d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22263002"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65263397"
 ---
 # <a name="nodes-that-provide-wildcard-capabilities"></a>ワイルドカードの機能を提供するノード
-BizTalk エディターでは、要素や属性に関するワイルドカード文字機能を提供する、XSD の構成要素に直接マッピングすることができます。 **Any 要素**ノードが XML Schema definition (XSD) 言語に直接マップ**任意**要素および**すべての属性**ノードを XSD に直接マップ**anyAttribute**要素。 以降では、これらのノードについて詳しく説明します。  
+BizTalk エディターでは、要素と属性のワイルドカード文字機能を提供する XSD 概念に直接マッピングを提供します。 **Any 要素**ノードが、XML スキーマ定義 (XSD) 言語に直接マップ**任意**要素と**すべての属性**ノードの XSD に直接マップ**anyAttribute**要素。 このセクションの残りの部分は、これらのノードに関する追加情報を提供します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [すべての要素ノード](../core/any-element-nodes.md)  
+-   [[すべての要素] ノード](../core/any-element-nodes.md)  
   
--   [任意の属性ノード](../core/any-attribute-nodes.md)
+-   [[すべての属性] ノード](../core/any-attribute-nodes.md)

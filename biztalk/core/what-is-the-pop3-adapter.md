@@ -23,12 +23,12 @@ caps.latest.revision: 30
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: aa0f4679cb898f9ce2c4008505bd1ec4a2540dab
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c298af8c35aaea90c9f078dbf43d5ff8483bc742
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36974331"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65242816"
 ---
 # <a name="what-is-the-pop3-adapter"></a>POP3 アダプターについて
 このセクションでは POP3 受信アダプターについて説明します。  
@@ -59,11 +59,11 @@ ms.locfileid: "36974331"
   
 - **RFC 1734 します。** POP3 AUTHentication command (を参照してください[ http://go.microsoft.com/fwlink/?LinkId=58809 ](http://go.microsoft.com/fwlink/?LinkId=58809))  
   
-- **RFC 2045 します。** Multipurpose Internet Mail Extensions (MIME) Part One: 形式 of Internet Message Bodies (を参照してください[ http://go.microsoft.com/fwlink/?LinkId=58810 ](http://go.microsoft.com/fwlink/?LinkId=58810))  
+- **RFC 2045 します。** Multipurpose Internet Mail Extensions (MIME) パート 1。インターネット メッセージ本文の形式 (を参照してください[ http://go.microsoft.com/fwlink/?LinkId=58810 ](http://go.microsoft.com/fwlink/?LinkId=58810))  
   
-- **RFC 2046 です。** Multipurpose Internet Mail Extensions (MIME) Part Two: メディアの種類 (を参照してください[ http://go.microsoft.com/fwlink/?LinkId=58811 ](http://go.microsoft.com/fwlink/?LinkId=58811))  
+- **RFC 2046 です。** Multipurpose Internet Mail Extensions (MIME) を第 2 部します。メディアの種類 (を参照してください[ http://go.microsoft.com/fwlink/?LinkId=58811 ](http://go.microsoft.com/fwlink/?LinkId=58811))  
   
-- **RFC 2047 です。** MIME (Multipurpose Internet Mail Extensions) Part Three: の Message Header Extensions for NON-ASCII Text (を参照してください[ http://go.microsoft.com/fwlink/?LinkId=58812 ](http://go.microsoft.com/fwlink/?LinkId=58812))  
+- **RFC 2047 です。** MIME (Multipurpose Internet Mail Extensions) 第 3 部。非 ASCII テキストの message Header Extensions (を参照してください[ http://go.microsoft.com/fwlink/?LinkId=58812 ](http://go.microsoft.com/fwlink/?LinkId=58812))  
   
   POP3 アダプターは、Microsoft Exchange Server 2003 に対して十分にテストされています。  
   
@@ -77,7 +77,7 @@ ms.locfileid: "36974331"
 ## <a name="high-availability-for-the-pop3-adapter"></a>POP3 アダプターの高可用性  
  一部の POP3 サーバーでは、特定のメールボックスに対する複数の同時接続を許可しています。 POP3 アダプターの複数のインスタンスが、そのような POP3 サーバー上のメールボックスからメールを取得するように構成されている場合、データの重複が発生することがあります。 このため、複数の同時接続を許可しているメールボックスからメールを取得するように構成する POP3 アダプターのインスタンスは、1 つのみにする必要があります。  
   
- このシナリオの POP3 アダプターにフォールト トレランスを提供するには、単一の POP3 アダプターの受信ハンドラーを、クラスター化された BizTalk ホストで実行されるように構成する必要があります。 詳細については、[されたクラスター化されたホストでアダプター ハンドラーの実行に関する考慮事項](../core/considerations-for-running-adapter-handlers-within-a-clustered-host1.md)を参照してください。  
+ このシナリオの POP3 アダプターにフォールト トレランスを提供するには、単一の POP3 アダプターの受信ハンドラーを、クラスター化された BizTalk ホストで実行されるように構成する必要があります。 詳細については、次を参照してください。[されたクラスター化されたホストでアダプター ハンドラーの実行に関する考慮事項](../core/considerations-for-running-adapter-handlers-within-a-clustered-host1.md)します。  
   
 ## <a name="authentication-warnings-when-multiple-instances-of-the-pop3-adapter-connect-to-the-same-mailbox"></a>POP3 アダプターの複数のインスタンスから同じメールボックスへの接続が行われたときに発生する認証警告  
  BizTalk Server が、POP3 アダプターの複数のインスタンスで同じメールボックスからメールを取得するように構成されている場合があります。 そのような場合、一部の POP3 サーバーで使用されているロック メカニズムが原因で、BizTalk Server アプリケーション ログに認証警告が記録される場合があります。 これらの警告による POP3 アダプターの機能への影響はありません。そのため、このシナリオではこれらの警告を無視してもかまいません。  

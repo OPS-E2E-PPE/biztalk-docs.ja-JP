@@ -1,5 +1,5 @@
 ---
-title: MQSeries キュー |Microsoft ドキュメント
+title: MQSeries キュー |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,22 +16,22 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9a5a05adc62f021ca0194dd20278f0fbfa5f7df6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4c42b95a5be5f55aa9437c64b59f63592af27509
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22262874"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65263684"
 ---
 # <a name="mqseries-queues"></a>MQSeries キュー
-MQSeries キューにメッセージを送信する際、キュー マネージャで、リモート定義のキュー、エイリアス キュー、送信キュー、またはローカル キューを指定できます。  
+MQSeries キューにメッセージを送信するには、指定できますリモート定義のキュー、エイリアス キュー、転送キューでは、ローカル キューまたはキュー マネージャーでします。  
   
- MQSeries Server からメッセージを受信する場合は、キュー マネージャで、送信キュー、エイリアス キュー、またはローカル キューを指定できます。  
+ MQSeries Server からメッセージを受信するため指定できます転送キュー、エイリアス キュー、またはローカル キューのキュー マネージャー。  
   
- 通常、送信キューにはリモート定義のキューを使用し、メッセージの受信には送信キューを使用します。  
+ 通常、リモート キュー定義を使用して、送信キューでは、およびメッセージを受信するための転送キュー。  
   
- その他の MQSeries キューの詳細については、IBM WebSphere MQ のドキュメントを参照してください。  
+ 別の MQSeries キューについては、IBM WebSphere MQ のドキュメントを参照してください。  
   
 ## <a name="see-also"></a>参照  
  [MQSeries アダプターのアーキテクチャ](../core/mqseries-adapter-architecture.md)   
- [MQSeries アダプターとは何ですか。](../core/what-is-the-mqseries-adapter.md)
+ [MQSeries アダプターとは](../core/what-is-the-mqseries-adapter.md)

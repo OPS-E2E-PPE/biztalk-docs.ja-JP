@@ -16,12 +16,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 73456b8938faa52403149e3d20523eb1e1de8f57
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ca89a355a8642a287fc79f9dafe6fbccbcd0bf18
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37003683"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65300097"
 ---
 # <a name="learn-the-hl7-accelerator-and-the-biztalk-tools-available"></a>HL7 アクセラレータと BizTalk ツールの使用について説明します
 Microsoft[!INCLUDE[btaBTAHL7NoNumber](../../includes/btabtahl7nonumber-md.md)]は高い汎用性とパフォーマンスの高い包括的な医療ソリューションを医療コンピューター アプリケーション間でデータの交換が正常性レベル 7 (HL7) の標準に基づきます。  

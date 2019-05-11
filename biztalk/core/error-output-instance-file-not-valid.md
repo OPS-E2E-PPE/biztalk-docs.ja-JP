@@ -1,5 +1,5 @@
 ---
-title: エラー - 出力インスタンス ファイルが有効ではありません |Microsoft ドキュメント
+title: エラー - 出力インスタンス ファイルが無効です |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,18 +14,18 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a5d2fe96823c16df72b204ec56b174dbd8364d97
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 17b55bf6ba0a5823092ff47ea7e2eebd9325a74e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22240362"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65347201"
 ---
-# <a name="error---output-instance-file-not-valid"></a>エラー - 出力インスタンス ファイルが有効ではありません。
+# <a name="error---output-instance-file-not-valid"></a>エラー - 出力インスタンス ファイルが無効です。
 **説明**  
   
  指定された値、**出力インスタンス ファイル名**スキーマ ファイルのプロパティが有効なファイル名ではありません。  
   
  **ユーザーの操作**  
   
- Microsoft では、関連するスキーマ ファイルを右クリックして[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]ソリューション エクスプ ローラーで、クリックして**プロパティ**を開くには、**プロパティ ページ**このスキーマのダイアログ ボックス。 このダイアログ ボックスでの**全般** タブで、省略記号ボタン (**...**) の値フィールドのボタン、**出力インスタンス ファイル名**プロパティ、およびしを使用して、 **出力ファイルの**出力インスタンスを格納するファイルを識別する ダイアログ ボックスメッセージ。 値フィールドに直接ファイル名を入力することも、**出力インスタンス ファイル名**プロパティです。
+ Microsoft の関連するスキーマ ファイルを右クリックして[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]ソリューション エクスプ ローラーをクリック**プロパティ**を開く、**プロパティ ページ**このスキーマのダイアログ ボックス。 このダイアログ ボックスで、**一般的な** タブで、省略記号をクリックします (**...**) の値フィールドのボタン、**出力インスタンス ファイル名**プロパティでは、次を使用して、**出力ファイルの選択**出力インスタンスを格納するファイルを識別するためにダイアログ ボックスメッセージ。 値フィールドに直接ファイル名を入力することも、**出力インスタンス ファイル名**プロパティ。

@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 505f60d287b82b5650855870329e9a18496d63f1
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7208878da8a2d88b89d1a9ed6a23ac6aaaa5e9a1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36979075"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65268799"
 ---
 # <a name="running-the-sql-adapter-sample"></a>SQL アダプター サンプルを実行します。
 SQL Adapter サンプルは、行程導入サンプルで提供される Windows フォームのテスト クライアント アプリケーションを使用します。  
@@ -40,4 +40,4 @@ SQL Adapter サンプルは、行程導入サンプルで提供される Windows
   
 8. GlobalBankESB データベースの Product テーブル内 1 つの行が挿入されることを確認します。  
   
-   SQL アダプター サンプルのしくみについては、[、SQL アダプター サンプルのしくみ](../esb-toolkit/how-the-sql-adapter-sample-works.md)を参照してください。
+   SQL アダプター サンプルのしくみについては、次を参照してください。 [、SQL アダプター サンプルのしくみ](../esb-toolkit/how-the-sql-adapter-sample-works.md)します。

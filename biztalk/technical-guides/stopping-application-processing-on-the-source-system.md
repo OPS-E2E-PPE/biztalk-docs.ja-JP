@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c92fe07371be2abb44c314eb77eb38c6c853bebe
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 38f5f2fe1c3341d694b2c9ee3aeec0e2ce97bbb9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36982459"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65301636"
 ---
 # <a name="stopping-application-processing-on-the-source-system"></a>ソース システムで処理するアプリケーションを停止しています
 ときにアプリケーションの処理を停止するか、ソース[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ランタイム サーバーに既存のデータベース サーバーを使用してドキュメントの処理に参加することはできます。 このシナリオでアクティビティを処理する必要があります停止するため、整合性の復元操作を行うことができます。  

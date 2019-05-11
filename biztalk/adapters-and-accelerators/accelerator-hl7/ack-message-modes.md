@@ -17,12 +17,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 181617a41ba892a8ac04f2bf2154bbe78e8c892e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 66636704ccbe63be2a47fb56dd43f797174fc89a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36967857"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65247473"
 ---
 # <a name="ack-message-modes"></a>ACK メッセージ モード
 確認 (ACK) メッセージ、Microsoft BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 受信確認モードおよび生成する ACK の MSH15 および MSH16 フィールドを設定するために使用する値を決定します。 これらの値は、取引先管理 (TPM) の構成に存在します。 次の値は ACK モードのことです。  
@@ -40,9 +40,9 @@ ms.locfileid: "36967857"
   
 3. 遅延された - 2 つの ACK メッセージを送信します。  
   
-   - 元のモード: ヘッダーと本文の検証後に、この種類の確認が受信側のシステムに送信します。 このモードには、スキーマの検証が含まれます。  
+   - 元のモード:受信側システムでは、ヘッダーと本文の検証後にこの種類の確認を送信します。 このモードには、スキーマの検証が含まれます。  
   
-   - 遅延モード: 基幹業務アプリケーションは、処理した後、メッセージを確認します。 アプリケーションに遅延メッセージを配信する[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]、スタンドアロンのメッセージとして処理することと、変換先に配信します。  
+   - 遅延モード:基幹業務アプリケーションは、処理した後、メッセージを確認します。 アプリケーションに遅延メッセージを配信する[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]、スタンドアロンのメッセージとして処理することと、変換先に配信します。  
   
 4. 静的 - 成功した場合にまたはエラー発生時の確認を送信します。  
   

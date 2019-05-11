@@ -10,12 +10,12 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ''
 ms.author: mandia
-ms.openlocfilehash: 80e813ced767cdd56910027b655060e1db9f91fe
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6149a1afd765aa2b030394ec15b73c7dd6072231
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37011310"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65300001"
 ---
 # <a name="upgrade-the-rosettanet-accelerator"></a>RosettaNet アクセラレータをアップグレードします。
 
@@ -24,7 +24,7 @@ BizTalk Accelerator for RosettaNet (BTARN) のインストールの以前のバ�
   
  BTARN の以前のバージョンからアップグレードすることができます、BTARN のインストール プログラムを実行しています。 セットアップでは、BTRAN の構成情報を現在のバージョンに移行します。  
   
- BTARN マルチ サーバー環境では、してから BTARN には、すべての BizTalk Server をアップグレードする必要があります。 次の順序でサーバーを移行します。  
+ BTARN マルチ サーバー環境では、してから BTARN には、すべての BizTalk Server をアップグレードする必要があります。 次の順序で、サーバーを移行するには。  
   
 - BizTalk グループをホストするサーバー  
   
@@ -34,9 +34,9 @@ BizTalk Accelerator for RosettaNet (BTARN) のインストールの以前のバ�
   
   BTARN では、アップグレード プロセスで、次のことを確認します。  
   
-- SQL Server (MSSQLSERVER) サービスが実行中であることを確認します。  
+- SQL Server (MSSQLSERVER) サービスが実行されていることを確認します。  
   
-- サイレント インストールは実行しないでください。  
+- サイレント インストールは実行されません。  
   
 ## <a name="upgrade-steps"></a>アップグレード手順  
   
@@ -49,7 +49,7 @@ BizTalk Accelerator for RosettaNet (BTARN) のインストールの以前のバ�
   
 3.  すべてのファイルをバックアップ、 *< ドライブ\>*: \Program Files\\Microsoft BizTalk Accelerator の RosettaNet フォルダーに対して行ったが、変更、ファイルなど、sdk。  
   
-4.  以前のバージョンの BTRAN アセンブリを参照している場合は、該当するプロジェクトまたはアセンブリの展開を解除します。  
+4.  該当するプロジェクトまたは 1 つ以上の BTARN アセンブリの以前のバージョンへの参照を持つアセンブリを展開解除します。  
   
 5.  Visual Studio で、次の順序で、すべての BTARN アセンブリを手動で解除します。  
   
@@ -106,11 +106,11 @@ BizTalk Accelerator for RosettaNet (BTARN) のインストールの以前のバ�
   
 8.  該当するプロジェクトまたは 1 つまたは複数の [BTARN アセンブリへの参照を持つアセンブリを再構築します。 使用**BTSTask.exe**を手動でこれらのプロジェクトを再デプロイします。  
   
-9. 次のコンポーネントについて、IIS の仮想フォルダーを ASP.NET 2.0 から ASP.NET 4.0 にアップグレードします。  
+9. 次のような IIS で仮想フォルダーを ASP.NET 2.0 から ASP.NET 4.0 をアップグレードします。  
   
     -   BTARNApp  
   
     -   BTARNHttpReceive  
   
-10. コンピューターを再起動してすべての変更を適用します。  
+10. すべての変更を適用するには、コンピューターを再起動します。  
   

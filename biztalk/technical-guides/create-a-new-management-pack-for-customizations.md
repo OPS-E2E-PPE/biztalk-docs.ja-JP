@@ -12,12 +12,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3108696e89e6a411049c11929c8e7dcb7f48db34
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 53ff5ede763b8a8b9b0e4de55231f1b1bd70b946
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37016799"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65306059"
 ---
 # <a name="create-a-new-management-pack-for-customizations"></a>カスタマイズの新しい管理パックを作成します。
 管理パック ファイルの元の設定のいずれかを変更できないように、ほとんどのベンダー管理パックをシールされています。 ただし、オーバーライドや新しい監視オブジェクトなどのカスタム設定を作成して、別の管理パックに保存することができます。 既定では、Operations Manager 2007 R2 または 2012 はすべてのカスタマイズを既定の管理パックに保存されます。 ベスト プラクティスとしては、代わりにカスタマイズする封印された管理パックごとの個別の管理パックを作成する必要があります。  
@@ -30,4 +30,4 @@ ms.locfileid: "37016799"
   
 - 個々の管理パックに対するカスタマイズの追跡および更新が簡単になります。  
   
-  シールし、封印されていない管理パックについての詳細についてを参照してください。[管理パックの形式](http://go.microsoft.com/fwlink/?LinkID=198193)(http://go.microsoft.com/fwlink/?LinkId=198193)します。 管理パックのカスタマイズの詳細については、[管理パックのカスタマイズ](http://go.microsoft.com/fwlink/?LinkID=198194)(http://go.microsoft.com/fwlink/?LinkID=198194)を参照してください。
+  シールし、封印されていない管理パックについての詳細についてを参照してください。[管理パックの形式](http://go.microsoft.com/fwlink/?LinkID=198193)(http://go.microsoft.com/fwlink/?LinkId=198193)します。 管理パックのカスタマイズの詳細については、次を参照してください。[管理パックのカスタマイズ](http://go.microsoft.com/fwlink/?LinkID=198194)(http://go.microsoft.com/fwlink/?LinkID=198194)します。

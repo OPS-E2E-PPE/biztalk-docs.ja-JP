@@ -1,5 +1,5 @@
 ---
-title: HYPER-V の BizTalk Server のパフォーマンスを評価する |Microsoft ドキュメント
+title: Hyper V 上の BizTalk Server パフォーマンスの評価 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,20 +12,20 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2da65169d83a42ee9bdf818e440bc5d67f941a92
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: a1a2d67cf1e714b56e14cbbc0bd80c31e7113da2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26010675"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65305720"
 ---
-# <a name="evaluating-biztalk-server-performance-on-hyper-v"></a>HYPER-V の BizTalk Server のパフォーマンスを評価します。
-このセクションでは、評価するためのチェックリストを提供し、Hyper-v を実行に関連付けられている HYPER-V 仮想マシンとシステム リソースのコストの概要にインストールされているゲスト オペレーティング システムで実行されている BizTalk Server アプリケーションのパフォーマンスを最適化します。  
+# <a name="evaluating-biztalk-server-performance-on-hyper-v"></a>Hyper V 上の BizTalk Server のパフォーマンスを評価します。
+このセクションで評価するためのチェックリストを提供して、HYPER-V を実行に関連付けられている HYPER-V 仮想マシンとシステム リソースのコストの概要にインストールされているゲスト オペレーティング システムで実行されている BizTalk Server アプリケーションのパフォーマンスを最適化します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [チェックリスト: Hyper-V のパフォーマンスの測定](../technical-guides/checklist-measuring-performance-on-hyper-v.md)  
+-   [チェックリスト:HYPER-V のパフォーマンスを測定します。](../technical-guides/checklist-measuring-performance-on-hyper-v.md)  
   
--   [チェックリスト: Hyper-V のパフォーマンスの最適化](~/technical-guides/checklist-optimizing-performance-on-hyper-v.md)  
+-   [チェックリスト:HYPER-V のパフォーマンスの最適化](~/technical-guides/checklist-optimizing-performance-on-hyper-v.md)  
   
 -   [Hyper-V のシステム リソース コスト](../technical-guides/system-resource-costs-on-hyper-v.md)

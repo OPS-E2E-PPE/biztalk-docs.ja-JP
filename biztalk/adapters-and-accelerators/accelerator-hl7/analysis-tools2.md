@@ -19,24 +19,24 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 683387fcbb6596fb84b836c119c6a3c2ac23788c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 61874d0e3598990c7a204d6ddd827d041be539cd
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36968979"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65247467"
 ---
 # <a name="analysis-tools"></a>分析ツール
 Microsoft BizTalk Server は、ビジネス アナリストやインフォメーション ワーカーは、一連の分析ツールを提供します。 これらのツールの詳細については、MicrosoftBizTalk Server のヘルプを参照してください。  
   
 ## <a name="business-activity-monitoring"></a>ビジネス アクティビティの監視  
- BizTalk ビジネス アクティビティ監視 (BAM) は、異種ビジネス プロセスのリアルタイム ビューをビジネス ユーザーに提供します。 ビジネスの意思決定する必要があるデータを提供します。  
+ BizTalk ビジネス アクティビティ監視 (BAM) では、ビジネス ユーザーが、異種ビジネス プロセスのリアルタイム ビューを提供します。 ビジネスの意思決定する必要があるデータを提供します。  
   
 ## <a name="business-activity-services"></a>ビジネス アクティビティ サービス  
  BizTalk ビジネス アクティビティ サービス (BAS) では、ビジネス ユーザーが、ビジネス プロセスを構成し、ビジネス パートナーと共同作業をできるようにします。 ポータルでは、整理し、ビジネス パートナーに関連付けられているすべての情報を構成できます。  
   
 ## <a name="human-workflow-services"></a>ヒューマン ワークフロー サービス  
- BizTalk ヒューマン ワークフロー サービス (HWS) により、インフォメーション ワーカーは、自分のアプリケーションを使用して、ヒューマンベースのワークフロー プロセスの作成、変更、参加、およびその進行状況の追跡ができるようになります。 具体的には、ワークフロー アクティビティを実行し、日常のワークフローの一部としてワークフローの参加者が実行する作業を監視し、ビジネス プロセスの状態を見ながらワークフロー アクティビティの状態を追跡できます。  
+ BizTalk ヒューマン ワークフロー サービス (HWS) を作成、変更、参加、インフォメーション ワーカーをでき、アプリケーションから人間ベースのワークフロー プロセスの進行状況を追跡します。 ワークフロー アクティビティを実行し、監視ワークフローの参加者が日常のワークフローの一部としては、ビジネス プロセスの状態を可視化のワークフロー活動の状態を追跡できます。  
   
 ## <a name="see-also"></a>参照  
  [ツールと機能](../../adapters-and-accelerators/accelerator-hl7/tools-and-features.md)   

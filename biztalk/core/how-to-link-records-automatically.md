@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 77d4c703a890398516ccbb9a9b4d1fafff22a8f5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 489a826bb9251a3fcbfe6152363e06950cf9c1f0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37018165"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65336960"
 ---
 # <a name="how-to-link-records-automatically"></a>レコードを自動的にリンクする方法
 BizTalk マッパーでは、ショートカットを使用して、送信元スキーマと送信先スキーマの 2 つのレコード要素間のリンクを効率的に作成することができます。 このトピックでは、ショートカット メニューを使用してリンク操作を実行する方法について説明します。  
@@ -30,7 +30,7 @@ BizTalk マッパーでは、ショートカットを使用して、送信元ス
   
 - **名前によるリンク。** この手法を使用して、一致すると、BizTalk マッパー、**レコード**と**フィールド**内のノード、**レコード**ノードの名前に従って、リンクする、内で、その構造に関係なく、ノードを対応する、**レコード**リンクされているノード。  
   
-- **一括コピーします。** **一括コピー**により、マップが含まれるスキーマを使用して、functoid**任意**と**anyAttribute**要素。 BizTalk マッパーで使用できる functoid については、[Functoid 作成複雑なマッピングを使用した](../core/using-functoids-to-create-more-complex-mappings.md)を参照してください。  
+- **一括コピーします。** **一括コピー**により、マップが含まれるスキーマを使用して、functoid**任意**と**anyAttribute**要素。 BizTalk マッパーで使用できる functoid については、次を参照してください。 [Functoid 作成複雑なマッピングを使用した](../core/using-functoids-to-create-more-complex-mappings.md)します。  
   
   ショートカット メニューを使用するには、リンクがサブ階層親ノードから開始され、別のサブ階層親ノードで終了する必要があります。 ショートカット メニューを使用すると、2 つのスキーマ ノード間でどの種類のリンクを作成すべきかがわかります。 次に、ショートカット メニューで使用できるオプションの一覧を示します。  
   

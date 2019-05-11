@@ -14,20 +14,20 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2fdf5a646f586030df6c9492fc6fb2999e49527a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1b60cc39092961703f45921c34a518f3da89691c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22289698"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65242793"
 ---
 # <a name="what-is-the-wcf-customisolated-adapter"></a>Wcf-customisolated アダプターとは何ですか。
-WCF-CustomIsolated アダプタは、分離ホストを使用して、BizTalk Server における WCF 拡張機能コンポーネントの使用を有効にするために使用されます。 このアダプタによって、WCF フレームワークの完全な柔軟性が有効になります。 そのためユーザーは、受信場所の WCF バインドを選択して構成したり、エンドポイント動作やセキュリティ設定を指定したりできるようになります。 このアダプタを使用できるのは、インターネット インフォメーション サービス (IIS) でホストされているトランスポートのみです。  
+Wcf-customisolated アダプターは、分離ホストで BizTalk Server で WCF 拡張機能コンポーネントの使用できるように使用されます。 アダプターは、WCF フレームワークの完全な柔軟性を使用します。 ユーザーを選択し、受信場所の WCF バインドを構成し、エンドポイントの動作とセキュリティ設定を指定できます。 このアダプターは、インターネット インフォメーション サービス (IIS) でホストされているトランスポートでのみ使用できます。  
   
- WCF-CustomIsolated アダプタは、1 つの受信アダプタのみで構成されています。 この WCF-CustomIsolated 受信アダプタは、分離ホストで実行されている受信場所に対して選択および構成した WCF バインド、サービス動作、エンドポイント動作、セキュリティ メカニズム、および受信メッセージ本文のソースを介して、WCF サービス要求を受信するために使用されます。 WCF-CustomIsolated 受信アダプタを使用する受信場所は、一方向または要求 - 応答 (双方向) として構成できます。  
+ Wcf-customisolated アダプタは、受信アダプタのみで構成されます。 受信場所の WCF バインド、サービス動作、エンドポイントの動作、セキュリティ メカニズム、および選択および構成する受信メッセージ本文のソースから Wcf-customisolated 受信アダプターは WCF サービス要求の受信を使用します。分離ホストで実行されています。 Wcf-customisolated 受信アダプタを使用する受信場所は、一方向として構成できますまたは要求-応答 (双方向)。  
   
- 受信アダプターの WCF の詳細についてを参照してください[WCF アダプターとは?](../core/what-are-the-wcf-adapters.md)です。  
+ WCF の詳細については、受信アダプターを参照してください[WCF アダプタは何ですか?](../core/what-are-the-wcf-adapters.md)。  
   
 ## <a name="see-also"></a>参照  
- [Wcf-customisolated アダプタを構成します。](../core/configuring-the-wcf-customisolated-adapter.md)   
- [WCF アダプタ](../core/wcf-adapters.md)
+ [Wcf-customisolated アダプターを構成します。](../core/configuring-the-wcf-customisolated-adapter.md)   
+ [WCF アダプター](../core/wcf-adapters.md)

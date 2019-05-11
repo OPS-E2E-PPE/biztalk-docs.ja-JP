@@ -1,5 +1,5 @@
 ---
-title: JD Edwards EnterpriseOne のサンプル ファイルとデータの種類 |Microsoft ドキュメント
+title: JD Edwards EnterpriseOne のサンプル ファイルとデータの種類 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,18 +12,18 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 74783da2c21500cfa31435037a6a8c0b0b4c32a6
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: d2bb6bc70c350cca144dadfd232f99cbea4723c5
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
-ms.locfileid: "24014513"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65299762"
 ---
 # <a name="technical-reference"></a>テクニカル リファレンス
-このセクションでは、Microsoft BizTalk Adapter for JD Edwards EnterpriseOne に関するテクニカル リファレンス情報を提供します。  
+このセクションでは、技術的な情報については、Microsoft BizTalk Adapter for JD Edwards EnterpriseOne を提供します。  
   
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
   
--   [付録 A: サンプル ファイル](../core/appendix-a-sample-files.md)  
+-   [付録 a:サンプル ファイル](../core/appendix-a-sample-files.md)  
   
--   [付録 B: データ型](../core/appendix-b-data-types.md)
+-   [付録 b:データ型](../core/appendix-b-data-types.md)

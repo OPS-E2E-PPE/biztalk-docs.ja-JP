@@ -1,5 +1,5 @@
 ---
-title: エラー - ネイティブ シリアライズ |Microsoft ドキュメント
+title: エラー - ネイティブ シリアライズ |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c0d4a842a3f9a10703fb47bf21edb01ab92bd93c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 80d6d9df379b93a11d4d736161029684ec175cb1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22241066"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65347268"
 ---
 # <a name="error---native-serialization"></a>エラー - ネイティブ シリアライズ
 **エラー コード**  
@@ -28,8 +28,8 @@ ms.locfileid: "22241066"
   
  **説明**  
   
- マップにより作成された XML 出力インスタンス メッセージを、送信先スキーマで指定されているネイティブ形式に変換する際に、シリアライズ エラーが発生しました。  
+ 送信先スキーマで指定されたネイティブ形式にマップで生成される XML 出力インスタンス メッセージの変換中にシリアライズ エラーが発生しました。  
   
  **ユーザーの操作**  
   
- シリアライズ エラーを参考にして、マップに指定されている変換または送信先スキーマ、あるいはその両方を適宜修正してください。 送信先スキーマの BizTalk エディターで開きを使用すると役立つ場合があります、**スキーマの検証**、**インスタンスの検証**、および**インスタンスの生成**ときに利用可能なコマンドソリューション エクスプ ローラーでスキーマを右クリックするとします。
+ マップでは、指定されている、いずれかの変換または送信先スキーマ、または両方に、適切な修正を行うシリアライズ エラーに基づき、します。 BizTalk エディターで送信先スキーマを開きを使用するのに役立ちますがある可能性があります、**スキーマの検証**、**インスタンスの検証**、および**インスタンスの生成**ときに利用可能なコマンドソリューション エクスプ ローラーでスキーマを右クリックするとします。

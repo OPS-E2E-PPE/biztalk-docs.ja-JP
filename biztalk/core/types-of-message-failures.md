@@ -23,12 +23,12 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c8a3dc40d2b82e90332b27719adce36b27f78ebd
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 34c72db5870f89525a6a0db5f88a54bbe2db3f24
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36984011"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65268807"
 ---
 # <a name="types-of-message-failures"></a>メッセージ エラーの種類
 このトピックでは、メッセージ エラーが発生する可能性のあるさまざまな状況を示します。  
@@ -41,7 +41,7 @@ ms.locfileid: "36984011"
   
  メッセージが正常に逆アセンブルされた後、次にエラーが発生する可能性のある処理はルーティングです。たとえば、ユーザーがオーケストレーションの対応する受信場所を有効にしたにもかかわらず、オーケストレーションに参加させるのを忘れた場合などが挙げられます。 この場合、受信場所から取得したメッセージはルーティングに失敗し、メッセージ ボックス データベースによってルーティング エラー報告が生成されます。  
   
- ルーティング エラー報告は、再開不可の保留メッセージとして BizTalk Server 管理コンソールに表示されます。 各ルーティング エラー報告には、ルーティング エラーの発生時に作成された、メッセージ プロパティのスナップショットが含まれます。 各エラー報告に示されている情報を使用して、関連メッセージのルーティングが失敗した原因を判断できます。 関連メッセージが再開可能である場合は、ルーティングの問題を修正し、メッセージを再開して、処理を続行できます。 サービス名とサービスの種類が空白の状態でルーティング エラー報告が結果一覧に表示されます。 中断されているインスタンスを終了すると、既定では毎分実行される Operations_OperateOnInstances_OnMaster_BizTalkMsgBoxDb ジョブによって、そのインスタンスに関連付けられているルーティング エラー報告が自動的に削除されます。 Operations_OperateOnInstances_OnMaster_BizTalkMsgBoxDb ジョブの詳細については、[データベース構造とジョブ](../core/database-structure-and-jobs.md)を参照してください。  
+ ルーティング エラー報告は、再開不可の保留メッセージとして BizTalk Server 管理コンソールに表示されます。 各ルーティング エラー報告には、ルーティング エラーの発生時に作成された、メッセージ プロパティのスナップショットが含まれます。 各エラー報告に示されている情報を使用して、関連メッセージのルーティングが失敗した原因を判断できます。 関連メッセージが再開可能である場合は、ルーティングの問題を修正し、メッセージを再開して、処理を続行できます。 サービス名とサービスの種類が空白の状態でルーティング エラー報告が結果一覧に表示されます。 中断されているインスタンスを終了すると、既定では毎分実行される Operations_OperateOnInstances_OnMaster_BizTalkMsgBoxDb ジョブによって、そのインスタンスに関連付けられているルーティング エラー報告が自動的に削除されます。 Operations_OperateOnInstances_OnMaster_BizTalkMsgBoxDb ジョブの詳細については、次を参照してください。[データベース構造とジョブ](../core/database-structure-and-jobs.md)します。  
   
  **変換フェーズ中にエラー**  
   

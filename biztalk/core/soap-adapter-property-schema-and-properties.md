@@ -1,5 +1,5 @@
 ---
-title: SOAP アダプター プロパティ スキーマおよびプロパティ |Microsoft ドキュメント
+title: SOAP アダプター プロパティ スキーマおよびプロパティ |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -36,36 +36,36 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7a24a9ccfc3a07abe925761fe2d6886646981be9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 681a7f529d1326b3301a5cc09dc31e94c8bfbb96
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22277514"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65314052"
 ---
 # <a name="soap-adapter-property-schema-and-properties"></a>SOAP アダプター プロパティ スキーマおよびプロパティ
-SOAP アダプタ プロパティ スキーマのプロパティを次の表に示します。  
+次の表は、SOAP アダプタ プロパティ スキーマのプロパティを一覧表示します。  
   
- **Namespace:** http://schemas.microsoft.com/BizTalk/2003/soap-properties  
+ **名前空間:** http://schemas.microsoft.com/BizTalk/2003/soap-properties  
   
-|名前|型|Description|  
+|名前|型|説明|  
 |----------|----------|-----------------|  
 |**AssemblyName**|xs:string|読み込んで実行する .NET 型およびアセンブリを識別します。|  
-|**MethodName**|xs:string|.NET アセンブリの呼び出す対象メソッドを識別します。|  
+|**MethodName**|xs:string|対象のメソッドを呼び出す .NET アセンブリを識別します。|  
 |**ユーザー名**|xs:string|サーバーで認証に使用するユーザー名。|  
 |**Password**|xs:string|サーバーでの認証に使用するユーザーのパスワード。|  
 |**ClientCertificate**|xs:string|SSL クライアント証明書の拇印。|  
-|**UseProxy**|xs:Boolean|SOAP アダプタでプロキシ サーバーを使用するかどうかを指定します。|  
+|**UseProxy**|xs:Boolean|SOAP アダプターでプロキシ サーバーを使用するかどうかを指定します。|  
 |**ProxyAddress**|xs:string|プロキシ サーバーのアドレスを指定します。|  
 |**ProxyPort**|xs:int|プロキシ サーバーのポートを指定します。|  
 |**ProxyUsername**|xs:string|プロキシ サーバーで認証のユーザー名を指定します。|  
-|**ProxyPassword**|xs:string|プロキシ サーバーで認証用のユーザー パスワードを指定します。|  
+|**ProxyPassword**|xs:string|プロキシ サーバーで認証のユーザーのパスワードを指定します。|  
 |**UnknownHeaders**|xs:string|不明な SOAP ヘッダーのシリアル化された一覧を指定します。|  
 |**AffiliateApplicationName**|xs:string|SSO に使用する関連アプリケーションの名前を定義します。|  
 |**AuthenticationScheme**|xs:string|移行先サーバーで使用する認証の種類を指定します。|  
-|**UseSSO**|xs:boolean|SOAP アダプタで送信ポートに SSO を使用するかどうかを指定します。|  
-|**UseHandlerSetting**|xs:boolean|SOAP 送信ポートでハンドラのプロキシ構成を使用するかどうかを指定します。|  
-|**ClientConnectionTimeout**|xs:int|サーバーからの応答を待機する際のタイムアウト期間を指定します。 ゼロ (0) に設定すると、システムは要求メッセージのサイズに基づくタイムアウト値を計算します。|  
+|**UseSSO**|xs:boolean|SOAP アダプターが送信ポートの SSO を使用するかどうかを指定します。|  
+|**UseHandlerSetting**|xs:boolean|SOAP 送信ポートが、ハンドラーのプロキシ構成を使用するかどうかを指定します。|  
+|**ClientConnectionTimeout**|xs:int|サーバーからの応答の待機のタイムアウト期間を指定します。 ゼロ (0) に設定すると、システムは要求メッセージのサイズに基づいて、タイムアウトを計算します。|  
 |**UserDefined**|xs:string|ユーザー定義のクラスを定義します。|  
 |**UseSoap12**|xs:boolean|SOAP 1.2 プロトコルをサポートするプロキシ コードを生成するかどうかを指定します。|  
   

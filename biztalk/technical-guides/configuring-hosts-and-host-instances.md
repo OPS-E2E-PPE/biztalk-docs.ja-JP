@@ -12,19 +12,19 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 286bdaaff66cf0b85caa3bb169bb506501ff386f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: eff7a8536155da3d1ed1d4830fdab024bacefa96
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36969003"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65253527"
 ---
 # <a name="configuring-hosts-and-host-instances"></a>ホストとホスト インスタンスを構成します。
 BizTalk ホストは、展開することができますを 0 個以上の実行時プロセスの論理セットを表します[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]サービスおよび成果物 (アダプター ハンドラー、受信場所、およびオーケストレーション)。 ホスト インスタンスが実行しているコンピューター上のホストの物理インスタンス[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]します。 BizTalk ホストとホスト インスタンスの詳細については、次を参照してください。[ホスト](http://go.microsoft.com/fwlink/?LinkId=154189)(<http://go.microsoft.com/fwlink/?LinkId=154189>) と[ホスト インスタンス](http://go.microsoft.com/fwlink/?LinkId=154190)(<http://go.microsoft.com/fwlink/?LinkId=154190>)。  
   
- BizTalk ホストとホスト インスタンスの管理に関する詳細については、[BizTalk ホストの管理およびホスト インスタンス](http://go.microsoft.com/fwlink/?LinkId=154191)(http://go.microsoft.com/fwlink/?LinkId=154191)を参照してください。  
+ BizTalk ホストとホスト インスタンスの管理に関する詳細については、次を参照してください。 [BizTalk ホストの管理およびホスト インスタンス](http://go.microsoft.com/fwlink/?LinkId=154191)(http://go.microsoft.com/fwlink/?LinkId=154191)します。  
   
- 専用の追跡ホストを構成する方法については、[専用の追跡ホストを構成する](../technical-guides/configuring-a-dedicated-tracking-host.md)を参照してください。  
+ 専用の追跡ホストを構成する方法については、次を参照してください。[専用の追跡ホストを構成する](../technical-guides/configuring-a-dedicated-tracking-host.md)します。  
   
 ## <a name="separating-host-instances-by-functionality"></a>機能別のホスト インスタンスを分離します。  
  ホスト インスタンスの構成の高可用性の側面だけでなく送信、受信、処理、および複数のホストに追跡機能を分離する必要があります。 これは柔軟に、BizTalk グループで、ワークロードを構成するときに、BizTalk グループ間での処理の分散の主要な手段です。 これにより他のホストに影響を与えずに 1 つのホストを停止することもできます。 たとえば、停止できるようにメッセージを送信するキュー メッセージ ボックス データベースで発生するメッセージの受信の受信を許可する一方する可能性があります。  
@@ -63,5 +63,5 @@ BizTalk ホストは、展開することができますを 0 個以上の実行
 -   [Windows のリリースのメモリ制限](http://go.microsoft.com/fwlink/?LinkId=151857)(http://go.microsoft.com/fwlink/?LinkId=151857)  
   
 ## <a name="see-also"></a>参照  
- [チェックリスト: BizTalk Server の構成](../technical-guides/checklist-configuring-biztalk-server.md)   
+ [チェックリスト:BizTalk Server の構成](../technical-guides/checklist-configuring-biztalk-server.md)   
  [専用の追跡ホストの構成](../technical-guides/configuring-a-dedicated-tracking-host.md)

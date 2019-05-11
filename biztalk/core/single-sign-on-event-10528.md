@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10528 |Microsoft Docs'
+title: シングル サインオン:イベント 10528 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d2e91944de7399f8bee3e03f3facdb91263d2761
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f7e39b0c781b417bcf8eca635e9a47b1fd2f2b18
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36974827"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65262385"
 ---
-# <a name="single-sign-on-event-10528"></a>シングル サインオン: イベント 10528
+# <a name="single-sign-on-event-10528"></a>シングル サインオン:イベント 10528
 ## <a name="details"></a>詳細  
 
 |                 |                                                                                                                                                                            |
@@ -28,18 +28,18 @@ ms.locfileid: "36974827"
 | 製品バージョン |                                                         [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                                                         |
 |    イベント ID     |                                                                                   10528                                                                                    |
 |  イベント ソース   |                                                                                   ENTSSO                                                                                   |
-|    コンポーネント    |                                                                                    N\A                                                                                     |
+|    コンポーネント    |                                                                                    該当なし                                                                                     |
 |  シンボル名  |                                                                           SSO_INFO_REENCRYPT_OK                                                                            |
-|  メッセージ テキスト   | SSO データベースの再暗号化が正常に完了しました。%r<br /><br /> 再暗号化された資格情報の数: 1 %r<br /><br /> 現在の MSID: % 2 %r<br /><br /> 以前の MSID: %3 |
+|  メッセージ テキスト   | SSO データベースを再暗号化は successfully.%r に完了します。<br /><br /> 再暗号化された資格情報の数: 1 %r<br /><br /> 現在の MSID: % 2 %r<br /><br /> 以前の MSID: %3 |
 
 ## <a name="explanation"></a>説明  
- この情報イベントは、SSO データベースの再暗号化が正常に完了したことを示します。  
+ この情報イベントが再暗号化することを示します、SSO のデータベースが正常に完了します。  
 
 ## <a name="user-action"></a>ユーザーの操作  
 
-- ユーザーの操作は必要ありません。  
+- ユーザー操作は必要ありません。  
 
-  詳細については、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ヘルプの次の情報を参照してください:   
+  詳細については、の次のリソースを参照してください。[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプ。  
 
 - [SSO データベースを更新する方法](../core/how-to-update-the-sso-database.md)  
 

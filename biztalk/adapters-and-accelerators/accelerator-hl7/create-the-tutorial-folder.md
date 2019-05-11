@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4345daef579d228983e475828193ae2637fc0e48
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9c7948292cd9195389128990ef64cec297b5a627
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36978683"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65251317"
 ---
 # <a name="create-the-tutorial-folder"></a>チュートリアル フォルダーを作成します。
 使用して次のフォルダーを作成する[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]エクスプ ローラー。  

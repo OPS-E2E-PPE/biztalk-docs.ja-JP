@@ -16,11 +16,11 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: e1ada7b36453945b676db8aa897d7e0e862d3907
-ms.sourcegitcommit: ec7013f5ddcd2da4291ae29ac28f965d89aa277a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2019
-ms.locfileid: "22263610"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65262950"
 ---
 # <a name="optimizing-resource-usage-through-host-throttling"></a>ホスト制限によるリソース使用の最適化
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] それぞれのメモリ、ディスク、および BizTalk server と BizTalk Server データベースを含む SQL server で使用できる CPU リソースのかなりの部分を使用できる、いくつかのさまざまな Microsoft テクノロジを利用します。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] リソース使用の競合を最小限に抑えるに使用可能なリソースの使用を管理するために調整メカニズムを採用しています。 このトピックでは、このメカニズムの設計について説明します。 制限値を調整する方法については、次を参照してください。[設定ダッシュ ボードの BizTalk Server のパフォーマンス チューニングを使用して](../core/using-settings-dashboard-for-biztalk-server-performance-tuning.md)します。  

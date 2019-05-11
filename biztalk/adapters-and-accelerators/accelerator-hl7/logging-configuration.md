@@ -17,12 +17,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 83e15247158dd21c237064692931a83f6885f05e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7e90054dc7316cc0fcae2179845ce56c6254f251
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37002459"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65300032"
 ---
 # <a name="logging-configuration"></a>ログの構成
 同時に、MicrosoftBizTalk サーバーと[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]病院、診療所、看護の現場自宅などの医療のトランザクションとデジタル エンタープライズ アプリケーション統合 (EAI) 通信をセキュリティで保護を提供します。 [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] アプリケーションの動作とトランザクション処理の調整、動的にメッセージをルーティング、検証、およびデータを変換する機能を提供し、さまざまなアダプターのトランスポート。 [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] 米国規格協会 ANSI 認定された正常性レベル 7 (HL7) をリアルタイムでの医療データを交換プロバイダーのネットワークで臨床および管理アプリケーションで使用される標準のメッセージングをサポートします。  

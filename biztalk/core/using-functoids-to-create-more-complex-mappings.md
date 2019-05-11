@@ -1,5 +1,5 @@
 ---
-title: Functoid を使用して、複雑なマッピングを作成する |Microsoft ドキュメント
+title: Functoid を使用して、複雑なマッピングを作成する |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 736b6fa99844182c59db582182056faea1d3f322
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4e16b692f3f91aff47e978080be124220db68a89
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22287162"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65247228"
 ---
 # <a name="using-functoids-to-create-more-complex-mappings"></a>Functoid を使用した複雑なマッピングの作成
 
 ## <a name="overview"></a>概要
-Functoid は、マッピング シナリオの多くで重要な役割を果たします。 Functoid を使用しなくても要素と属性データをコピーできますが、値自体を操作することはできません。 Functoid を使用すると、ほとんどすべての変換が可能です。 たとえば、Functoid を使用して、異なる場所から 2 つの値を取得し、これらの値を加算して、合計を送信先スキーマに配置できます。  
+Functoid は、多くのマッピング シナリオで重要な役割を果たします。 Functoid、せず要素と属性のデータをコピーすることができますがすることはできません、重要な程度、操作値自体。 Functoid を使用して、ほとんどの変換が可能です。 たとえば、functoid を使用することができますまったく別の場所から 2 つの値を取得、追加合計を送信先スキーマの配置。  
   
- BizTalk マップを編集するとき、Functoid は [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] ツールボックスに表示されます。カテゴリごとにツールボックス タブが 1 つ表示されます。 ツールボックスを開き、対応するタブをクリックして Functoid のカテゴリを選択してから、Functoid をグリッド ページにドラッグします。 次に、Functoid とスキーマ ノード間、または Functoid と別の Functoid 間に入力リンクや出力リンクを作成します。 入力リンクは入力パラメーターに対応し、Functoid の左側から入ります。出力リンクは出力パラメーターに対応し、Functoid の右側に出て行きます。  
+ 表示されます、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]ツールボックス、BizTalk マップを編集している場合は、カテゴリごとに 1 つのツールボックス タブ。 ツールボックスを開くし、対応するタブをクリックして functoid のカテゴリを選択すると後、は、グリッド ページに functoid をドラッグします。 入力を作成し、functoid、スキーマ ノードまたは別の functoid とリンクを出力します。 入力リンク入力パラメーターと左から functoid に潜在顧客に対応します。出力リンクは、出力パラメーターに対応し、右側に functoid を残します。  
   
- 他のマップ要素と同じように、Functoid にはプロパティがあります。 Functoid の最も重要なプロパティの 1 つは、入力パラメーターのセットです。 詳細については、次を参照してください。[マップに基本 Functoid を追加する方法](../core/how-to-add-basic-functoids-to-a-map.md)です。  
+ Functoid は、他のマップ要素のようなプロパティがあります。 Functoid の最も重要なプロパティの 1 つは、入力パラメーターのセットです。 詳細については、次を参照してください。[マップに基本 Functoid を追加する方法](../core/how-to-add-basic-functoids-to-a-map.md)します。  
   
- このセクションでは、BizTalk マップでの Functoid の操作手順について説明します。 Functoid のリファレンスについては、次を参照してください。、 **Functoid リファレンス**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]です。
+ このセクションには、BizTalk マップでの functoid を使用するための手順が説明します。 Functoid のリファレンスについては、次を参照してください。、 **Functoid リファレンス**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]します。
   
-## <a name="next-steps"></a>次の手順 
+## <a name="next-steps"></a>次のステップ 
   
 -   [Functoid のツールボックスを開く方法](../core/how-to-open-the-functoid-toolbox.md)  
   
@@ -44,4 +44,4 @@ Functoid は、マッピング シナリオの多くで重要な役割を果た�
   
 -   [Functoid を削除する方法](../core/how-to-delete-functoids.md)  
   
--   [コピー、切り取り、および Functoid を貼り付けする方法](../core/how-to-copy-cut-and-paste-a-functoid.md)
+-   [コピー、切り取り、および貼り付けする方法](../core/how-to-copy-cut-and-paste-a-functoid.md)

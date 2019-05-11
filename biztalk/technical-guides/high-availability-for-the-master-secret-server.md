@@ -12,12 +12,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9227715e30405217cdb9c13c2dc83dc0e236eef8
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c27f5ad770f2127dfaecd9551cdfa37b18e6748b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36975851"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65277195"
 ---
 # <a name="high-availability-for-the-master-secret-server"></a>マスター シークレット サーバーの高可用性
 は SSO 資格情報と、シングル サインオンをマッピングするため、エンタープライズ シングル サインオン (SSO) 機能を使用しない場合でも、Microsoft BizTalk Server インフラストラクチャ全体の重要な部分、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]でポートの情報をセキュリティで保護する構成します。 ポートの構成データが暗号化され、SSO データベースに格納されています。 各 BizTalk サーバーでは、ポートの構成データを暗号化および暗号化に使用する SSO サービス (ENTSSO.exe) があります。  

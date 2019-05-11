@@ -1,5 +1,5 @@
 ---
-title: 災害復旧のための構成 |Microsoft ドキュメント
+title: ディザスター リカバリーのための構成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,22 +12,22 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3899b27324fa00e0b5c630c7be4433f65a917a1b
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: f0bce395a5873947d006aa84b620b921a4a8e943
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26010955"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65253555"
 ---
-# <a name="configuring-for-disaster-recovery"></a>災害復旧のための構成
-既存のバックアップを拡張する BizTalk Server のログ配布機能[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ジョブです。 BizTalk Server のログ配布バックアップ ジョブによって生成されるバックアップ セットの系列を手動で復元する必要があるし、システム障害時のダウンタイムを短縮します。 BizTalk Server のログ配布は、BizTalk の障害復旧手順の重要なコンポーネントです。  
+# <a name="configuring-for-disaster-recovery"></a>ディザスター リカバリーを構成します。
+既存のバックアップを拡張する BizTalk Server のログ配布機能[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ジョブ。 BizTalk Server のログ配布、一連のバックアップのジョブによって生成されたバックアップ セットを手動で復元する必要はありませんし、システム障害が発生した場合のダウンタイムを短縮します。 BizTalk Server のログ配布は、BizTalk のディザスター リカバリーの手順の重要なコンポーネントです。  
   
 > [!NOTE]  
->  各アプリケーション チームは、文書化されたバックアップがあるし、復元のこのトピックで説明する概念を補足する災害復旧の計画する必要があります。 全体的な計画は、アプリケーションおよびオペレーティング システムのコンポーネントを含め、システム全体に対処する必要があります。  
+>  各アプリケーション チームがこのトピックで説明する概念を補完するディザスター リカバリー計画を復元し、文書化されているバックアップがある必要があります。 全体的な計画は、アプリケーションやオペレーティング システムのコンポーネントを含めて、システム全体に対処する必要があります。  
   
- 新しいセットを BizTalk グループの復元を手動で実行するとよく似ていますが、障害復旧操作を実行する[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]データベース インスタンスです。 主な違いは、その BizTalk Server ログ配布は継続的に、障害復旧サイトで、多くの手動処理の保存ログを適用します。 そのため、ログの最後のセットにのみ必要があります手動で復元するときに BizTalk Server のログ配布を実装します。 それ以外の場合、前回の完全バックアップ以降のすべてのログ バックアップ後に、最後の完全バックアップは、手動で復元する必要があります。 BizTalk Server ログ配布がこの手動プロセスで、障害復旧サイトの復元を迅速化労力を削減します。  
+ 手動での新しいセットを BizTalk グループの復元を実行するとよく似ていますディザスター リカバリー操作を実行して[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]データベース インスタンス。 主な違いは、その BizTalk Server ログ配布には、多くの手動手順を保存、ディザスター リカバリー サイトに継続的にログが適用されます。 そのため、ログの最後のセットにのみ必要があります手動で復元するときに BizTalk Server のログ配布を実装します。 それ以外の場合、前回の完全バックアップ以降のすべてのログ バックアップ後に、前回の完全バックアップは、手動で復元する必要があります。 BizTalk Server ログ配布は、この手動プロセスで、ディザスター リカバリー サイトの復元を高速化労力を減らします。  
   
- このセクションでは、障害復旧プロセスを容易にする production 構成に関する推奨事項について説明します。  
+ このセクションでは、ディザスター リカバリーのプロセスを容易に運用環境の構成に関する推奨事項について説明します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

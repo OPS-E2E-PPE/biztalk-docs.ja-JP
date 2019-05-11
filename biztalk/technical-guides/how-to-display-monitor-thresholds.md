@@ -1,5 +1,5 @@
 ---
-title: モニタのしきい値を表示する方法 |Microsoft ドキュメント
+title: モニターのしきい値を表示する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,23 +12,23 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: be3818512f76e95655e0441f039176fe6f855344
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 92db77c3e13bd479d71f845bd0854d721d2d6938
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22297706"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65253310"
 ---
-# <a name="how-to-display-monitor-thresholds"></a>モニタのしきい値を表示する方法
-モニタのしきい値を表示するには、このセクションで説明されているスクリプトを使用します。 このスクリプトは、ほとんどのモニタに対して機能します。 次の表で説明する列を含む .csv ファイルを作成し、Office Excel を使用して表示できます。  
+# <a name="how-to-display-monitor-thresholds"></a>モニターのしきい値を表示する方法
+モニタのしきい値を表示するには、このセクションで説明するスクリプトを使用します。 このスクリプトは、ほとんどのモニタによって適しています。 次の表で説明する列を含む .csv ファイルを作成し、Office Excel を使用して表示できます。  
   
-|列|Description|  
+|[列]|説明|  
 |------------|-----------------|  
 |型|モニターが対象となるオブジェクトの型。|  
 |DisplayName|モニターの表示名。|  
-|しきい値|モニターによって使用されるしきい値。|  
+|しきい値|モニターで使用されるしきい値。|  
 |AlertOnState|状態が変更されたときに、モニターがアラートを生成するかどうかを判断します。|  
-|AutoResolveAlert|かどうか、生成されたアラートを自動的に解決するモニターの状態が緑色に戻ったときに決定します。|  
+|AutoResolveAlert|モニターの状態が緑色に戻ったとき生成されたアラートに自動的に解決するかどうかを判断します。|  
 |AlertSeverity|生成されたアラートの重大度。|  
   
 #### <a name="to-display-monitor-thresholds"></a>モニターのしきい値を表示するには  

@@ -1,5 +1,5 @@
 ---
-title: '手順 6: データを組織に送信する送信ポートの構成 |Microsoft Docs'
+title: 手順 6:組織にデータを送信する送信ポートの構成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,17 +12,17 @@ caps.latest.revision: 26
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3b38182ff9f46688447e11f444ab543d8e0aa1d3
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1bdf1e798db4ef6da8b32194a781e8d56076ceab
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36975179"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65244366"
 ---
-# <a name="step-6-configure-a-send-port-to-send-data-to-your-organization"></a>手順 6: データを組織に送信する送信ポートを構成します。
+# <a name="step-6-configure-a-send-port-to-send-data-to-your-organization"></a>手順 6:組織にデータを送信する送信ポートの構成します。
 ![手順 9 の 6](../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-6of9.gif "Step_6of9")  
 
- このステップでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] から組織を表す OrderSystem パーティに 850 メッセージを送信するように送信ポートを構成します。 この送信ポートに適用されます、 **Inbound4010850_to_OrderFile**入力メッセージの形式からマップで指定された形式への出力メッセージを変換するマップ。  
+ この手順でから 850 メッセージを送信する送信ポートを構成する[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]組織を表す OrderSystem パーティにします。 この送信ポートに適用されます、 **Inbound4010850_to_OrderFile**入力メッセージの形式からマップで指定された形式への出力メッセージを変換するマップ。  
 
 ## <a name="prerequisites"></a>前提条件  
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者グループのメンバーとしてログオンしている必要があります。  
@@ -32,7 +32,7 @@ ms.locfileid: "36975179"
 1. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、右クリック**パイプライン**、 をクリックし、**更新**。  
 
    > [!NOTE]
-   >  作成する送信ポートに SendOrderFilePipeline を選択できるようにするには、パイプラインの一覧の更新が必要な場合があります。  
+   >  パイプラインの一覧を更新すると、作成する送信ポートに SendOrderFilePipeline を選択できるようにするために必要なことがあります。  
 
 2. 右クリック**送信ポート**、 をポイント**新規**、 をクリックし、**静的な一方向送信ポート**します。  
 
@@ -42,10 +42,10 @@ ms.locfileid: "36975179"
    |--------------|----------------|  
    |**名前**|入力`toOrderSystem`します。|  
    |**型**|選択**ファイル**します。|  
-   |**構成**|クリックして**構成**します。|  
+   |**構成**|をクリックして**構成**です。|  
 
    > [!NOTE]
-   >  テスト メッセージはフォルダに配信されるフラット ファイルであるため、送信ポートのトランスポートの種類は FILE です。  
+   >  テスト メッセージがフォルダーに配信されるフラット ファイルであるために、送信ポートのトランスポートの種類はファイルです。  
 
 4. **FILE トランスポートのプロパティ** ダイアログ ボックスで、次の操作をクリックして**OK**:  
 
@@ -61,7 +61,7 @@ ms.locfileid: "36975179"
 5. **送信ポートのプロパティ** ダイアログ ボックスの**送信パイプライン**を選択します**SendOrderFilePipeline**します。  
 
    > [!NOTE]
-   >  **SendOrderFilePipeline**送信パイプラインには、入力 850 メッセージからマップされたデータを使用して .txt 出力ファイルを作成フラット ファイル アセンブラーが含まれています。 出力ファイルは .txt ファイルのため、インターチェンジ/確認の状態レポートには表示されません。  
+   >  **SendOrderFilePipeline**送信パイプラインには、入力 850 メッセージからマップされたデータを使用して .txt 出力ファイルを作成フラット ファイル アセンブラーが含まれています。 出力ファイルは、.txt ファイルであるためには表示されませんインターチェンジ/確認の状態レポート。  
 
 6. コンソール ツリーで、クリックして**フィルター**、し、次の操作を行います。  
 
@@ -76,7 +76,7 @@ ms.locfileid: "36975179"
    |**[値]**|入力`http://schemas.microsoft.com/Edi/X12#X12_997_Root`します。|  
 
    > [!NOTE]
-   >  フィルターにより、送信ポートは Receive_EDI_fromTHEM_A 受信場所で受信されたメッセージを取得し、997 受信確認ではなく 850 メッセージのみを取得します。  
+   >  フィルターにより送信ポートは選択して、Receive_EDI_fromTHEM_A 受信したメッセージを受信場所と送信ポートは、997 受信確認は認識されませんが 850 メッセージのみを選択します。  
 
 7. コンソール ツリーで、クリックして **[outboundmaps]** します。 **送信マップ** ウィンドウで、**マップ**列の選択の最初の行で**Inbound4010850_to_OrderFile**します。 (エントリ、**ソース ドキュメント**列は X12_00401_850 になります)。  
 
@@ -88,7 +88,7 @@ ms.locfileid: "36975179"
 9. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、をクリックして**送信ポート**します。 右クリックして**toOrderSystem**、順にクリックします**開始**を参加させて、ポートを開始します。  
 
 ## <a name="next-steps"></a>次の手順  
- 送信ポートを構成する (**toTHEM_997**) を 997 受信確認を Fabrikam に返信」の説明に従って[手順 7:、取引先パートナーに、受信確認を送信する送信ポート構成](../core/step-7-configure-a-send-port-to-send-the-acknowledgment-to-trading-partner.md)します。  
+ 送信ポートを構成する (**toTHEM_997**) を 997 受信確認を Fabrikam に返信」の説明に従って[手順 7。取引先に、受信確認を送信する送信ポート構成](../core/step-7-configure-a-send-port-to-send-the-acknowledgment-to-trading-partner.md)します。  
 
 ## <a name="see-also"></a>参照  
  [EDI インターチェンジと受信確認を送信するための静的送信ポートの構成](../core/configuring-a-static-send-port-to-send-edi-interchanges-and-acknowledgments.md)

@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 192d300702b8194096f40e5f54b57717669730ac
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: afa17db3817a485f11c63a88c796c93e6ec5354b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37015131"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65242862"
 ---
 # <a name="running-the-message-enrichment-sample"></a>メッセージ強化サンプルを実行しています。
 メッセージ強化サンプルでは、行程導入サンプルで提供される Windows フォームのテスト クライアント アプリケーションを使用します。  
@@ -38,4 +38,4 @@ ms.locfileid: "37015131"
   
 7. C:\Projects\Microsoft.Practices.ESB\Source\Samples\DynamicResolution\Test\Filedrop\Out 参照\\%MessageID%.xml 出力メッセージを確認します。  
   
-   メッセージ強化サンプルのしくみについては、[、メッセージ強化サンプルのしくみ](../esb-toolkit/how-the-message-enrichment-sample-works.md)を参照してください。
+   メッセージ強化サンプルのしくみについては、次を参照してください。 [、メッセージ強化サンプルのしくみ](../esb-toolkit/how-the-message-enrichment-sample-works.md)します。

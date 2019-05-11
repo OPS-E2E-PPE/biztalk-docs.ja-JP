@@ -1,5 +1,5 @@
 ---
-title: エラー - 必須ターゲットに省略可能なソース |Microsoft ドキュメント
+title: エラー - 必須ターゲットに省略可能なソース |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 76dd96f61766a475db6385e306bc64bc36db4fcf
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 942a73185c608df664fa41c3c44d9d1016f3bf41
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22241402"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65347005"
 ---
 # <a name="error---required-target-with-optional-source"></a>エラー - 必須ターゲットに省略可能なソース
 **エラー コード**  

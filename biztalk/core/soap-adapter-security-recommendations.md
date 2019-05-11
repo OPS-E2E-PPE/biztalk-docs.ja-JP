@@ -15,19 +15,19 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f61b68ce0fd174dfbb766889e544c9b1005468d5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 77b8636793d1001aad671b9bc1b8493daee71687
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36985315"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65244401"
 ---
 # <a name="soap-adapter-security-recommendations"></a>SOAP アダプタのセキュリティに関する推奨事項
-[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、SOAP アダプターを使用して Web サービスを公開 (受信) および使用 (送信) できます。 SOAP アダプターに関する詳細については、[SOAP アダプター](../core/soap-adapter.md)を参照してください。 Web サービスの詳細については、[Web サービスを使用する](../core/using-web-services.md)を参照してください。 SOAP アダプターをセキュリティで保護して環境に展開するには、次のガイドラインに従うことをお勧めします。  
+[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、SOAP アダプターを使用して Web サービスを公開 (受信) および使用 (送信) できます。 SOAP アダプターに関する詳細については、次を参照してください。 [SOAP アダプター](../core/soap-adapter.md)します。 Web サービスの詳細については、次を参照してください。 [Web サービスを使用する](../core/using-web-services.md)します。 SOAP アダプターをセキュリティで保護して環境に展開するには、次のガイドラインに従うことをお勧めします。  
   
-- Web サービスを公開するためのセキュリティの推奨事項については、[Web サービスを有効にする](../core/enabling-web-services.md)を参照してください。  
+- Web サービスを公開するためのセキュリティの推奨事項については、次を参照してください。 [Web サービスを有効にする](../core/enabling-web-services.md)します。  
   
-- SOAP アダプターでは、HTTP (Hypertext Transfer Protocol) を利用して、BizTalk Server との間でメッセージを送受信できます。 そのため、インターネット インフォメーション サービス (IIS) を保護するためのセキュリティの推奨事項に従う必要があります。 IIS 7.0 を使用している場合、アプリケーション分離を構成する方法について IIS 7.0 の推奨事項に従ってください。 詳細については、[アプリケーション プール (IIS 7) を作成](http://go.microsoft.com/fwlink/?LinkId=196674)を参照してください。  
+- SOAP アダプターでは、HTTP (Hypertext Transfer Protocol) を利用して、BizTalk Server との間でメッセージを送受信できます。 そのため、インターネット インフォメーション サービス (IIS) を保護するためのセキュリティの推奨事項に従う必要があります。 IIS 7.0 を使用している場合、アプリケーション分離を構成する方法について IIS 7.0 の推奨事項に従ってください。 詳細については、次を参照してください。[アプリケーション プール (IIS 7) を作成](http://go.microsoft.com/fwlink/?LinkId=196674)です。  
   
 - SOAP 受信場所用のアプリケーション プールを作成する場合、SOAP 受信アダプターを実行している分離ホストの Windows グループおよびインターネット インフォメーション サービスのワーカー プロセス グループ (IIS_WPG グループ) のメンバーであるアカウントで実行するように構成する必要があります。 その後、SOAP 受信アダプターのホスト インスタンスを、このアカウントを使用するように構成してください。 IIS_WPG グループのアカウントを変更する場合は、新しいアカウントで実行されるようにホスト インスタンスを更新する必要もあります。  
   
@@ -35,7 +35,7 @@ ms.locfileid: "36985315"
   
 - Web サービスを利用する場合、認証のために、匿名認証、基本認証、ダイジェスト認証、Windows 統合認証、またはクライアント証明書に基づく認証を使用できます。 基本認証を使用して Web サービスを利用する場合、未認証のユーザーがメッセージからユーザーの資格情報を読み取ることができないように、SSL を使用することをお勧めします。  
   
-- フロントエンド ユーザーのコンテンツをバックエンド システムの資格情報にマップする必要がある場合、エンタープライズ シングル サインオン (SSO) を使用できます。 詳細については、[マップ シングル サインオン資格情報を方法](../core/how-to-map-single-sign-on-credentials.md)を参照してください。  
+- フロントエンド ユーザーのコンテンツをバックエンド システムの資格情報にマップする必要がある場合、エンタープライズ シングル サインオン (SSO) を使用できます。 詳細については、次を参照してください。[マップ シングル サインオン資格情報を方法](../core/how-to-map-single-sign-on-credentials.md)します。  
   
 - 基本認証を使用する場合、またはメッセージ レベルでの暗号化を使用しない場合、未認証のユーザーがユーザーの資格情報を読み取ることができないように、メッセージの送受信に SSL を使用することをお勧めします。  
   

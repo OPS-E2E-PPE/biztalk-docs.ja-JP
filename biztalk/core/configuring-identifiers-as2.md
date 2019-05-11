@@ -12,15 +12,15 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4f4ec3f66a2cdbacf99650620551b7762bcd56df
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d03245414aeb849f84a95bbd36dc891618ec528e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36978363"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65355347"
 ---
 # <a name="configuring-identifiers-as2"></a>識別子の構成 (AS2)
-パートナー アグリーメントで、送信パーティおよび受信パーティを指定する必要があります。 これらの値は、受信メッセージおよび送信メッセージのアグリーメントの解決にも使用されます。  
+パートナー アグリーメントで送信者と受信者のパーティを指定する必要があります。 これらの値は、受信または送信メッセージのアグリーメントの解決にも使用されます。  
   
 > [!IMPORTANT]
 >  オフにした場合、このページで、次のプロパティが無効に、**ローカルの BizTalk パーティまたはこのパーティからのメッセージの送信をサポートして受信したメッセージを処理する**チェック ボックスを作成するパーティを作成するときに、契約です。  
@@ -45,7 +45,7 @@ ms.locfileid: "36978363"
 5. 下、**追加のアグリーメント リゾルバー**セクションの**AS2To**プロパティ、メッセージを受信するパートナーの追加の別名を入力します。  
   
    > [!NOTE]
-   >  このプロパティは省略可能です。 このプロパティは下位互換用に使用されます。 BizTalk Server の以前のバージョンでパーティの名前まで BizTalk Server 2006 R2 または BizTalk Server 2009 からパーティ定義が移行したときに[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]はこのプロパティの値として含まれます。 これにより、アグリーメントの解決の動作を BizTalk サーバーでは、既存のアプリケーションと取引先の定義を使用することができます。  
+   >  このプロパティは省略可能です。 このプロパティは、旧バージョンとの互換性のために使用できます。 BizTalk Server の以前のバージョンでパーティの名前まで BizTalk Server 2006 R2 または BizTalk Server 2009 からパーティ定義が移行したときに[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]はこのプロパティの値として含まれます。 これにより、アグリーメントの解決の動作を BizTalk サーバーでは、既存のアプリケーションと取引先の定義を使用することができます。  
   
 6. をクリックして**適用**構成では、続行する前に、変更を受け入れるか、をクリックする**OK**変更を検証し、ダイアログ ボックスを閉じます。  
   

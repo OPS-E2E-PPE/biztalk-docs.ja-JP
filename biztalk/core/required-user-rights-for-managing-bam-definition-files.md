@@ -1,5 +1,5 @@
 ---
-title: BAM 定義ファイルを管理するためのユーザー権利を必要な |Microsoft ドキュメント
+title: BAM 定義ファイルを管理するためのユーザー権利が必要 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d5e39c86eec0cf198a5b879cbc98d29321de71dc
-ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
+ms.openlocfilehash: e12997684bb934e4e5f2891046afe07c749b2a70
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2018
-ms.locfileid: "22268754"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65267667"
 ---
 # <a name="required-user-rights-for-managing-bam-definition-files"></a>BAM 定義ファイルの管理に必要なユーザー権利
 BAM 定義ファイルは、どのロールのユーザーでも作成、管理、および表示を行うことができます。 BAM 定義ファイルの管理には、これらのファイルの展開と削除だけでなく、定義ファイルに関連付けられているアクティビティ、ビュー、警告、およびアイテムの管理も伴います。  

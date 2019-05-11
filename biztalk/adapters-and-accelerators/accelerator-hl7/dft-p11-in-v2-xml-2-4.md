@@ -1,5 +1,5 @@
 ---
-title: V2 DFT_P11 です。XML 2.4 |Microsoft ドキュメント
+title: V2 の DFT_P11 します。2.4 XML |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,15 +14,15 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8142e3b878fbffa782e467d64906076b06320318
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7ce08e9142a64c268390d61a36fac49dd5be9b16
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22204714"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65255464"
 ---
-# <a name="dftp11-in-v2xml-24"></a>V2 DFT_P11 です。XML 2.4
-V2 DFT_P11 スキーマで次のコードを手動で変更する必要があります。Update2XMLSchema ツールの実行後の XML 2.4:  
+# <a name="dftp11-in-v2xml-24"></a>V2 の DFT_P11 します。2.4 XML
+V2 での DFT_P11 スキーマでは、次のコードを手動で変更する必要があります。Update2XMLSchema ツールの実行後の XML 2.4:  
   
 ```  
 <xsd:element ref="ROL" minOccurs="0" maxOccurs="unbounded" />  
@@ -31,7 +31,7 @@ V2 DFT_P11 スキーマで次のコードを手動で変更する必要があり
 <xsd:element ref="ROL" minOccurs="0" maxOccurs="unbounded" />  
 ```  
   
- 複数の発生によるあいまいさを解決するために、次に、上記のコードを置き換える必要があります、**ロール**要素の定義。  
+ 複数回出現によるあいまいさを解決するために、次に、上記のコードを置き換える必要があります、 **ROL**要素の定義。  
   
 ```  
 <xsd:element minOccurs="0" maxOccurs="unbounded" ref="ROL" />  
@@ -49,5 +49,5 @@ V2 DFT_P11 スキーマで次のコードを手動で変更する必要があり
 ```  
   
 ## <a name="see-also"></a>参照  
- [必須の手動更新](../../adapters-and-accelerators/accelerator-hl7/required-manual-updates.md)   
+ [必要な手動の更新プログラム](../../adapters-and-accelerators/accelerator-hl7/required-manual-updates.md)   
  [ユーティリティ](../../adapters-and-accelerators/accelerator-hl7/utilities2.md)

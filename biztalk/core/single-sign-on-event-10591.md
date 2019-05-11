@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10591 |Microsoft Docs'
+title: シングル サインオン:イベント 10591 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0f7ee8ffc559bd7196f86401296f773ec46122d3
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4e1993ba318ed7b13b31ad6b5009cbe2594e64ab
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37004979"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65270943"
 ---
-# <a name="single-sign-on-event-10591"></a>シングル サインオン: イベント 10591
+# <a name="single-sign-on-event-10591"></a>シングル サインオン:イベント 10591
 ## <a name="details"></a>詳細  
   
 |                 |                                                            |
@@ -30,7 +30,7 @@ ms.locfileid: "37004979"
 |  イベント ソース   |                           ENTSSO                           |
 |    コンポーネント    |                            なし                             |
 |  シンボル名  |                    SSO_INFO_IN_SERVICE                     |
-|  メッセージ テキスト   |         エンタープライズ シングル サインオンが再びオンラインになりました。          |
+|  メッセージ テキスト   |         エンタープライズ シングル サインオンがオンラインに戻るです。          |
   
 ## <a name="explanation"></a>説明  
  このメッセージは情報提供だけを目的としています。  

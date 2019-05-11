@@ -1,5 +1,5 @@
 ---
-title: WCF-WSHttp アダプタについて | Microsoft Docs
+title: Wcf-wshttp アダプターとは何ですか。 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,45 +14,45 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: eb5d244dcfe26cf10bc4ae10c63374eef0824444
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d3d82d26e03163d856bc4ce9d0cc8d948d07e54a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22289338"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65242803"
 ---
-# <a name="what-is-the-wcf-wshttp-adapter"></a>WCF-WSHttp アダプタについて
-WCF-WSHttp アダプタを使用すると、テキストまたは Message Transmission Optimization Mechanism (MTOM) エンコードによる HTTP または HTTPS トランスポートを使用して、次世代 Web サービス標準を理解できるサービスおよびクライアントとコンピュータ間通信を実行できます。 WCF-WSHttp アダプタにより、SOAP セキュリティ、信頼性、およびトランザクションの各機能にフル アクセスできます。  
+# <a name="what-is-the-wcf-wshttp-adapter"></a>Wcf-wshttp アダプターとは何ですか。
+Wcf-wshttp アダプターを使用してサービスとクライアントは、テキストまたは Message Transmission Optimization Mechanism (HTTP または HTTPS トランスポートを使用して、次世代 Web サービス標準が理解できると、コンピューター間の通信を行うことができます。MTOM) エンコードです。 Wcf-wshttp アダプタは、SOAP セキュリティ、信頼性、およびトランザクションの各機能へのフル アクセスを提供します。  
   
- 次の表に、WCF-WSHttp アダプタの特性をまとめます。  
+ 次の表では、Wcf-wshttp アダプタの特性をまとめたものです。  
   
-|Description|特性|  
+|説明|特性|  
 |-----------------|--------------------|  
-|相互運用性レベル|WS-Profile|  
+|相互運用性レベル|WS プロファイル|  
 |[メッセージ エンコード]|テキストまたは MTOM|  
 |[境界]|コンピュータ間|  
 |トランスポート プロトコル|HTTP または HTTPS|  
-|[セキュリティ モード]|None、Message、Transport、および TransportWithMessageCredential|  
+|[セキュリティ モード]|None、メッセージ、トランスポート、および TransportWithMessageCredential します。|  
 |クライアント認証のメカニズム|トランスポート セキュリティとメッセージ セキュリティ|  
-|WS-ReliableMessaging のサポート|不可|  
+|WS-ReliableMessaging のサポート|いいえ|  
 |WS-AtomicTransaction のサポート|はい|  
 |一方向メッセージングのサポート|はい|  
 |双方向メッセージングのサポート|はい|  
 |受信アダプタのホストの種類|分離されます。|  
 |送信アダプタのホストの種類|インプロセス|  
   
- WCF-WSHttp アダプタは、受信アダプタと送信アダプタの 2 つのアダプタで構成されます。  
+ Wcf-wshttp アダプターは、2 つのアダプターで構成されます-受信アダプタと送信アダプター。  
   
  **Wcf-wshttp 受信アダプター**  
   
- WCF-WSHttp 受信アダプタを使用すると、HTTP プロトコルまたは HTTPS プロトコルを介して WCF サービス要求を受信できます。 WCF-WSHttp 受信アダプタを使用する受信場所は、一方向または要求 - 応答 (双方向) として構成できます。  
+ Wcf-wshttp を使用する受信アダプタは、HTTP または HTTPS プロトコルを介して WCF サービス要求を受信します。 Wcf-wshttp 受信アダプタを使用する受信場所は、一方向として構成できますまたは要求-応答 (双方向)。  
   
  **Wcf-wshttp 送信アダプター**  
   
- WCF-WSHttp 送信アダプタを使用すると、HTTP プロトコルまたは HTTPS プロトコルを使用して、型宣言が不要なコントラクトを介して WCF サービスを呼び出すことができます。  
+ Wcf-wshttp 送信アダプターを使用すると、HTTP または HTTPS プロトコルを使用して、型宣言不要なコントラクトを介して WCF サービスを呼び出します。  
   
- WCF の詳細については、受信し送信アダプターを参照してください[WCF アダプタは何ですか?](../core/what-are-the-wcf-adapters.md)です。  
+ WCF の詳細については、受信し送信アダプターを参照してください[WCF アダプタは何ですか?](../core/what-are-the-wcf-adapters.md)します。  
   
 ## <a name="see-also"></a>参照  
- [Wcf-wshttp アダプタを構成します。](../core/configuring-the-wcf-wshttp-adapter.md)   
- [WCF アダプタ](../core/wcf-adapters.md)
+ [Wcf-wshttp アダプタの構成](../core/configuring-the-wcf-wshttp-adapter.md)   
+ [WCF アダプター](../core/wcf-adapters.md)

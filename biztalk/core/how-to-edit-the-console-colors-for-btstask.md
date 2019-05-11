@@ -12,58 +12,58 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f52c727d2606898084d6397e6eb1b96ddc129b6d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 71d902e18c851d3ae2ae432fa1e39d5db4e75206
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36974873"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65338076"
 ---
 # <a name="how-to-edit-the-console-colors-for-btstask"></a>BTSTask のコンソールの色を編集する方法
-ここでは、BTSTask がコンソールに出力する際に使用される前景色の編集方法について説明します。 コンソールの背景色が白だと、既定の BTSTask コンソールの出力が読みづらくなってしまうため、前景色の変更が必要になります。  
+このトピックでは、BTSTask がコンソールに出力する、前景色を編集する方法について説明します。 コンソールの背景色が白の場合、既定の BTSTask コンソールの出力を読むことが困難になり、コンソールの前景色の色を変更する必要があります。  
   
 ## <a name="prerequisites"></a>前提条件  
- このトピックの手順を実行するには、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] インストール フォルダーに格納されている BTSTask.exe.config ファイルに対する読み取り/書き込みアクセス許可が必要です。  
+ このトピックの手順を実行するに含まれている BTSTask.exe.config ファイルに対する読み取り/書き込みアクセス許可が必要、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]インストール フォルダーです。  
   
 ### <a name="to-edit-the-console-foreground-colors-for-btstask"></a>BTSTask のコンソールの前景色を編集するには  
   
-1. BTSTask を実行するコンピューターから、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]、テキスト エディター、または XML エディターを使用して、BTSTask.exe.config を開きます。 このファイルは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] のインストール フォルダーに格納されています。  
+1. BTSTask を実行するコンピューターで、BTSTask.exe.config を開きます[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]またはテキスト エディターまたは XML エディター。 このファイルにある、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]インストール フォルダーです。  
   
-2. エラー メッセージ、警告、情報など、各種のコンソール出力に使用する前景色に応じて、Console.ForegroundColor.Error、Console.ForegroundColor.Warning、Console.ForegroundColor.Info の各キーの値を編集し、ファイルを保存します。 (モノクロの場合は、値を編集するのではなく、これらの 3 つのエントリを削除してください。)  
+2. に従って必要なエラー メッセージ、警告、およびについては、それぞれ、コンソールの前景の色など、Console.ForegroundColor.Warning、console.foregroundcolor.info のキーの値を編集し、ファイルを保存します。 (モノクロの場合、削除、値を編集するのではなく、これら 3 つのエントリ)。  
   
-    前景色に使用できる値は次のとおりです。  
+    前景の色に使用できる値は次のとおりです。  
   
-    0: 黒  
+    0:黒  
   
-    1: DarkBlue  
+    1:DarkBlue  
   
-    2: DarkGreen  
+    2:DarkGreen  
   
-    3: DarkCyan  
+    3:DarkCyan  
   
-    4: DarkRed  
+    4:DarkRed  
   
-    5: DarkMagenta  
+    5:DarkMagenta  
   
-    6: DarkYellow  
+    6:DarkYellow  
   
-    7: 灰色  
+    7:灰色  
   
-    8: DarkGray  
+    8:濃い灰色  
   
-    9: 青  
+    9:[青]  
   
-    10: 緑  
+    10:[緑]  
   
-    11: シアン  
+    11:シアン  
   
-    12: 赤  
+    12:[赤]  
   
-    13: マゼンタ  
+    13:赤紫  
   
-    14: 黄色  
+    14:黄  
   
-    15: 白  
+    15:White  
   
 ## <a name="see-also"></a>参照  
  [BTSTask コマンド ライン リファレンス](../core/btstask-command-line-reference.md)

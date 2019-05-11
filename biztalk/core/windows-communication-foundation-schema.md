@@ -1,5 +1,5 @@
 ---
-title: Windows Communication Foundation スキーマ |Microsoft ドキュメント
+title: Windows Communication Foundation スキーマ |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5094e2d7544a88ebfd759fcb3c39fedd1dd411d3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c40ede53410a2b75b1d63b86c7ed4eacc0f085be
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22288602"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65242844"
 ---
 # <a name="windows-communication-foundation-schema"></a>Windows Communication Foundation スキーマ
 このセクションでは、Windows Communication Foundation インターセプタのスキーマを示します。  
@@ -69,4 +69,4 @@ ms.locfileid: "22288602"
   
 ## <a name="see-also"></a>参照  
  [Windows Workflow Foundation スキーマ](../core/windows-workflow-foundation-schema.md)   
- [インターセプタ構成スキーマ](../core/interceptor-configuration-schema.md)
+ [インターセプター構成スキーマ](../core/interceptor-configuration-schema.md)

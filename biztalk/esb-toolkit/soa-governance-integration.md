@@ -13,12 +13,12 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ccb5ac2d-cd90-414d-a6c7-045a8fe9450b
 ms.author: mandia
-ms.openlocfilehash: 1b989373f4e0f10439374842c2dcf6c8b8226165
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c2dcdc9f40d31a8ea037b1475cdb7a9a1380de44
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37023048"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65268793"
 ---
 # <a name="soa-governance-integration"></a>SOA ガバナンス統合
 エンタープライズ レベルのアプリケーションでは、ビジネス要件、政府の法律制定、サービス レベル アグリーメント (Sla) など、顧客およびパートナーの要望を取引先に準拠できる堅牢で信頼性の高い管理機能をサポートする必要があります。 実行時のガバナンスについて重点的に具体的には、課題と要件、サービス指向アーキテクチャ (SOA) を正常に実行 – ベースのシステムをこれらの要件を満たします。 ビジネス システムによって提供されるサービスの品質は、その成功または失敗を定義する主要な要素です。  

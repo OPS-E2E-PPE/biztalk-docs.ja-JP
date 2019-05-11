@@ -12,12 +12,12 @@ caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4883f6c6df9042d40b82138a4d3a871797a5fa1f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9b323c575b1778e73704f499cd59020b97603b32
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36985779"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65299904"
 ---
 # <a name="preserving-a-received-batched-edi-interchange"></a>受信したバッチ EDI インターチェンジの保存
 > [!NOTE]
@@ -27,7 +27,7 @@ ms.locfileid: "36985779"
 
  **スキーマの検証**  
 
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は、保存されたバッチのエンベロープを、バッチ スキーマとサービス スキーマを使用して検証します。 保存されたメッセージのルート ノードの検証にはバッチ スキーマが使用され、インターチェンジ、グループ、およびトランザクション セットのヘッダーとトレーラーの検証にはサービス スキーマが使用されます。 バッチ スキーマの詳細については、[EDI のバッチ スキーマ](../core/edi-batch-schemas.md)を参照してください。 サービス スキーマの詳細については、[EDI サービスと管理スキーマ](../core/edi-service-and-control-schemas.md)を参照してください。  
+ [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は、保存されたバッチのエンベロープを、バッチ スキーマとサービス スキーマを使用して検証します。 保存されたメッセージのルート ノードの検証にはバッチ スキーマが使用され、インターチェンジ、グループ、およびトランザクション セットのヘッダーとトレーラーの検証にはサービス スキーマが使用されます。 バッチ スキーマの詳細については、次を参照してください。 [EDI のバッチ スキーマ](../core/edi-batch-schemas.md)します。 サービス スキーマの詳細については、次を参照してください。 [EDI サービスと管理スキーマ](../core/edi-service-and-control-schemas.md)します。  
 
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は、バッチ インターチェンジ内のドキュメントを、プロジェクト内のドキュメント スキーマを使用して検証します。  
 

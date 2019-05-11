@@ -13,12 +13,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 85dd0ce3143373428a810a4e24b3c8b4f679cc14
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 27b29ccb1c4e249200bc409b36d1ee383b664a68
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36969419"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65314625"
 ---
 # <a name="systems-integration-with-biztalk-server"></a>BizTalk Server とのシステム統合
 BizTalk Server が使用する統合サーバー、[パブリッシュ/サブスクライブ アーキテクチャ](../../core/publish-and-subscribe-architecture.md)します。 EBusiness アプリケーション用に設計されていますを[アダプターを使用して](../../core/using-adapters.md)メッセージを送受信するには、次のように実装します[オーケストレーションを通じて、ビジネス プロセス](../../core/defining-business-processes.md)、含める[管理および追跡。](../../core/management-and-tracking-architecture.md)の 3 つのパーツ。 BizTalk Server も含まれています[取引先の管理](../../core/trading-partner-management-using-biztalk-server.md)企業間メッセージングの[高可用性](../../core/planning-for-high-availability3.md)する開発プラットフォームのアップタイムを最大化する[独自に作成。コンポーネント](../../core/developing-custom-components.md)、管理コンソールを[、アーティファクトの管理](../../core/operational-and-administrative-tasks-in-your-biztalk-environment.md)、およびビジネス アクティビティの監視を管理する[集計、警告、およびプロファイル](../../core/using-business-activity-monitoring.md)します。 このようなテクノロジを組み合わせることにより、幅広い機能を使用してソリューションの開発、実装、運用、および保守を行うことができます。  
@@ -37,12 +37,12 @@ BizTalk Server が使用する統合サーバー、[パブリッシュ/サブス
   
   
 ## <a name="integration-of-heterogeneous-systems"></a>異機種システムの統合  
- [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] は、異なる通信プロトコルでデータを転送する異機種システム混在環境で IT システムを統合できます。 これは、アダプターを使用して、さまざまなプロトコルを使用しているシステムに接続することにより実現します。 サポートされているのは、File、FTP、HTTP、SMTP、SOAP、および SQL アダプターです。 BizTalk アダプター フレームワークを使用して、カスタム アダプターを作成できます。 詳細については、[カスタム アダプターを作成する](../../core/developing-custom-adapters.md)を参照してください。
+ [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] は、異なる通信プロトコルでデータを転送する異機種システム混在環境で IT システムを統合できます。 これは、アダプターを使用して、さまざまなプロトコルを使用しているシステムに接続することにより実現します。 サポートされているのは、File、FTP、HTTP、SMTP、SOAP、および SQL アダプターです。 BizTalk アダプター フレームワークを使用して、カスタム アダプターを作成できます。 詳細については、次を参照してください。[カスタム アダプターを作成する](../../core/developing-custom-adapters.md)します。
   
 ## <a name="role-based-tools"></a>ロールベースのツール  
  [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] 開発と実行環境を作成、実装、運用、保守、およびシステムをカスタマイズして、開発者、IT プロフェッショナル、ビジネスの専門家が共同作業します。 [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] それらを使用するようにカスタマイズ ツールを使用して、これらの各ロールを提供します。  
   
- 詳細については、[ロールベース製品](../../adapters-and-accelerators/accelerator-rosettanet/a-role-based-product2.md)、および[について、RosettaNet アクセラレータ](../../adapters-and-accelerators/accelerator-rosettanet/learn-the-rosettanet-accelerator-and-the-biztalk-tools-available.md)を参照してください。
+ 詳細については、次を参照してください。[ロールベース製品](../../adapters-and-accelerators/accelerator-rosettanet/a-role-based-product2.md)、および[について、RosettaNet アクセラレータ](../../adapters-and-accelerators/accelerator-rosettanet/learn-the-rosettanet-accelerator-and-the-biztalk-tools-available.md)します。
   
 ## <a name="see-also"></a>参照  
  [BizTalk Server がビジネス ニーズを解決する方法](../../adapters-and-accelerators/accelerator-rosettanet/how-biztalk-server-solves-the-business-need1.md)   

@@ -16,12 +16,12 @@ caps.latest.revision: 30
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 71d697d378e48b516e3afd2ebae82cb897af12a9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 80a6f199ebda349192e8b950af7023c45b4e4c97
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37011467"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65337813"
 ---
 # <a name="how-to-export-a-policy"></a>ポリシーをエクスポートする方法
 ここでは、BizTalk Server 管理コンソールまたはコマンド ラインを使用して、1 つ以上のポリシーと関連付けられたボキャブラリをエクスポートする方法について説明します。  
@@ -38,7 +38,7 @@ ms.locfileid: "37011467"
 -   ポリシーをエクスポートするには、そのポリシーが BizTalk グループのルール エンジン データベースにあらかじめ存在している必要があります。 」の説明に従って、ルール エンジン データベースにポリシーをインポートするためにいくつかの方法がある[ポリシーをインポートする方法](../core/how-to-import-a-policy.md)します。  
   
     > [!NOTE]
-    >  ルール エンジン展開ウィザードを使用してルール エンジン データベースからポリシーを削除すると、そのポリシーは、管理コンソールでは表示されたままになりますが、エクスポートすることはできなくなります。 ルール エンジン展開ウィザードの詳細については、[とボキャブラリを展開およびポリシーの展開を解除する方法](../core/how-to-deploy-and-undeploy-policies-and-vocabularies.md)を参照してください。  
+    >  ルール エンジン展開ウィザードを使用してルール エンジン データベースからポリシーを削除すると、そのポリシーは、管理コンソールでは表示されたままになりますが、エクスポートすることはできなくなります。 ルール エンジン展開ウィザードの詳細については、次を参照してください。[とボキャブラリを展開およびポリシーの展開を解除する方法](../core/how-to-deploy-and-undeploy-policies-and-vocabularies.md)します。  
   
 -   エクスポートに管理コンソールを使用する場合、ポリシーとボキャブラリは .xml ファイルにエクスポートされます。 エクスポートに BTSTask コマンド ライン ツールを使用する場合、ポリシーとボキャブラリはアプリケーションの .msi ファイルにエクスポートされます。  
   
@@ -49,7 +49,7 @@ ms.locfileid: "37011467"
   
 -   BizTalk Server 管理者グループに属するアカウントでログオンする必要があります。 詳細なアクセス許可についてを参照してください。[を展開すると、BizTalk アプリケーションの管理に必要なアクセス許可](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)します。  
   
--   ビジネス ルール エンジンがインストールされている必要があります。 詳細については、[BizTalk Server 2013 および 2013 R2 のインストールの概要](http://msdn.microsoft.com/library/8041926c-cfc9-4eaf-9c28-a2c6e8015bc5)を参照してください。  
+-   ビジネス ルール エンジンがインストールされている必要があります。 詳細については、次を参照してください。 [BizTalk Server 2013 および 2013 R2 のインストールの概要](http://msdn.microsoft.com/library/8041926c-cfc9-4eaf-9c28-a2c6e8015bc5)します。  
   
 -   エクスポートするポリシーが、BizTalk グループのルール エンジン データベースに存在している必要があります。 アプリケーションからポリシーをエクスポートする場合は、アプリケーションにも追加されている必要があります。  
   
@@ -83,7 +83,7 @@ ms.locfileid: "37011467"
   
 2.  前の手順で生成した XML ファイルを編集して、エクスポートするポリシー以外のアイテムをすべて削除します。  
   
-3.  BTSTask の ExportApp コマンドを使用します。ここでは、/ResourceSpec パラメーターに変更後の XML ファイルを指定します。 詳細については、[ExportApp コマンド](../core/exportapp-command.md)を参照してください。  
+3.  BTSTask の ExportApp コマンドを使用します。ここでは、/ResourceSpec パラメーターに変更後の XML ファイルを指定します。 詳細については、次を参照してください。 [ExportApp コマンド](../core/exportapp-command.md)します。  
   
      BTSTask によって、指定したポリシーとそれに関連付けられているすべてのボキャブラリがアプリケーションの .msi ファイルにエクスポートされます。  
   

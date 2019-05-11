@@ -1,5 +1,5 @@
 ---
-title: パフォーマンスに関するヒントし、コツ |Microsoft ドキュメント
+title: パフォーマンスのヒントし、テクニック |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,12 +15,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 398e32ddcfec2a0f401fbae7629fe9fb2541c63a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3d875ecf5bf288cf10e18292bac95518bcfa084c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22263594"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65262619"
 ---
 # <a name="performance-tips-and-tricks"></a>パフォーマンスのヒントとテクニック
 このセクションでは、BizTalk Server システムで最適なパフォーマンスを確保するために役立つヒントを説明します。  
@@ -29,7 +29,7 @@ ms.locfileid: "22263594"
   
 -   [パフォーマンスのボトルネックを特定します。](../core/identifying-performance-bottlenecks.md)  
   
--   [EPM スレッド プール サイズを設定](../core/setting-the-epm-threadpool-size.md)  
+-   [EPM スレッド プールのサイズを設定](../core/setting-the-epm-threadpool-size.md)  
   
 -   [DBNETLIB 例外の回避](../core/avoiding-dbnetlib-exceptions.md)  
   

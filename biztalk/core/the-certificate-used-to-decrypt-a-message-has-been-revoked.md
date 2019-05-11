@@ -12,14 +12,14 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3d23ce9304cf6688c9d81238edefb12b0c5b58fa
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a8302b4893b6014a260ce5f26e96138f7093bbf0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36979699"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65298853"
 ---
-# <a name="the-certificate-used-to-decrypt-a-message-has-been-revoked"></a>メッセージの解読に使用する証明書は失効しています
+# <a name="the-certificate-used-to-decrypt-a-message-has-been-revoked"></a>メッセージの解読に使用する証明書が失効しています
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                         |
@@ -30,14 +30,14 @@ ms.locfileid: "36979699"
 |  イベント ソース   | [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI  |
 |    コンポーネント    |                                       AS2 エンジン                                        |
 |  シンボル名  |                        DecryptionCertificateHasBeenRevokedError                         |
-|  メッセージ テキスト   | メッセージの解読に使用する証明書は失効しています。 証明書の拇印: {0} |
+|  メッセージ テキスト   | メッセージの解読に使用する証明書が失効しています。 証明書の拇印: {0} |
   
 ## <a name="explanation"></a>説明  
- このエラー/警告/情報イベントは、メッセージの暗号化解除に使用する証明書が失効しているため、受信パイプラインで受信メッセージを処理できなかったことを示します。  
+ このエラー/警告/情報イベントは、メッセージの解読に使用される証明書が失効しているためにで、受信メッセージが受信パイプラインでした処理することを示します。  
   
 ## <a name="user-action"></a>ユーザーの操作  
  このエラーを解決するには、次のいずれかの操作を行います。  
   
--   失効した証明書を置換する新しい証明書を作成します。 作成した証明書を "現在のユーザー/個人用" 証明書ストアに追加し、証明書の公開キーを AS2 メッセージの送信元に送信します。  
+-   失効した証明書を置換する新しい証明書を作成します。 現在のユーザー/個人用証明書ストアに証明書を追加し、AS2 メッセージを送信する証明書の公開キーを送信します。  
   
 -   失効リストの確認を無効にします。それには、BizTalk Server 管理コンソールを開き、送信メッセージについて解決されたパーティの [AS2 のプロパティ] ダイアログ ボックスを開きます。次に、[全般] ノードをクリックし、[証明書失効リストを確認する] プロパティをオフにします。

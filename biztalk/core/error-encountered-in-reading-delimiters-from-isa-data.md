@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c3cb0dac30c18cb2c6da9c5a57818ce301fe95ec
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e99412ee1d0048aa3d7d6db373d20fe9af0ac57e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37015739"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65348491"
 ---
 # <a name="error-encountered-in-reading-delimiters-from-isa-data"></a>ISA データから区切り記号を読み取り中にエラーが発生しました
 ## <a name="details"></a>詳細  

@@ -1,5 +1,5 @@
 ---
-title: エラー - 値抽出 Functoid が有効でないへの最初の入力 |Microsoft ドキュメント
+title: エラー - 値抽出 Functoid 無効への最初の入力 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,22 +14,22 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 68b143cea7e1d7e99c1d5b378bd9d6619270fb70
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8a419cb522a385d83c5e877b14625f8e93c30775
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22239578"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65348352"
 ---
-# <a name="error---first-input-to-value-extractor-functoid-not-valid"></a>エラー - 値抽出 Functoid が有効でないへの最初の入力
+# <a name="error---first-input-to-value-extractor-functoid-not-valid"></a>エラー - 値抽出 Functoid 無効への最初の入力
 **エラー コード**  
   
  btm1002  
   
  **説明**  
   
- 最初の入力パラメーター**値抽出**functoid からの出力 (ADO レコード セット) があります、**データベース検索**functoid です。  
+ 最初の入力パラメーターを指定された**値抽出**functoid からの出力 (ADO レコード セット) があります、**データベース検索**functoid。  
   
  **ユーザーの操作**  
   
- すべてに、最初の入力を確認してください**値抽出**functoid からのリンクは、**データベース検索**マップ グリッド ページの左側の functoid です。
+ 最初の入力をすべて確認**値抽出**functoid からのリンクを**データベース検索**functoid をマップのグリッド ページの左側の。

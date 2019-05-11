@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cbaef31e6bf47538e57b4c509efcb7a8cf565162
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5597788d20ad1f1e75b35a81ea7294de75830662
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36970099"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65378475"
 ---
 # <a name="creating-and-submitting-a-new-message"></a>作成して、新しいメッセージを送信します。
 このセクションでは、新しいメッセージを送信する方法について説明します。 として修復されたメッセージを表示して、新しいメッセージをする必要がありますは、確認し、メッセージの作成者は、他のユーザーによって承認します。  
@@ -45,15 +45,15 @@ ms.locfileid: "36970099"
 
 5. [!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)] 2007年 ウィンドウのメッセージで、フォームの (アスタリスク書きます) として必要なすべてのフィールドを使用する省略可能なフィールドの種類のメッセージ データ。  
 
-6. 現在のロールで、BIC を検索する: ウィンドウの作成 をクリックして**BIC 参照**します。  
+6. 現在のロールで、BIC: 検索するにはウィンドウの作成 をクリックして**BIC 参照**します。  
 
 7. 金融機関、銀行コード、および国/地域の名前を入力し、クリックして**検索**します。  
 
 8. BIC 参照ペインで、メッセージの形式で、適切な銀行コード フィールドに、BIC をコピーします。  
 
-9. 現在のロールで: ウィンドウの作成 をクリックして**検証**、順にクリックします**検証メッセージ**します。  
+9. 内の現在の役割。ウィンドウの作成 をクリックして**検証**、 をクリックし、**検証メッセージ**します。  
 
-10. 現在のロールの結果ウィンドウで: ウィンドウを作成、メッセージを修正する必要があるエラーを確認します。  
+10. 現在のロールの [結果] ウィンドウで。メッセージを修正する必要があるエラーを確認する、ウィンドウを作成します。  
 
     > [!NOTE]
     >  メッセージのすべての検証エラーを修正した場合にのみ、新しいメッセージを送信できます。  

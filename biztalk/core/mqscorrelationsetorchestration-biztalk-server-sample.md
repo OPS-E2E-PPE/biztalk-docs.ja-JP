@@ -19,24 +19,24 @@ caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9d0057e9a9276de5eb3724f1af298822b03065a3
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 80884a9855bbabc06a8e417da99976a4eda34694
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37011779"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65264510"
 ---
 # <a name="mqscorrelationsetorchestration-biztalk-server-sample"></a>MQSCorrelationSetOrchestration (BizTalk Server サンプル)
-MQSCorrelationSetOrchestration サンプルは、実行中のオーケストレーションに MQSeries キューをルーティングして戻すために送信されるメッセージを関連付けるための MQSeries 関連付け識別子を使用する方法を示します。 オーケストレーションが、識別子の値を使用して MQSeries 関連付け識別子とメッセージを設定、 **MQMD_CorrelId**と**MQMD_MsgID**プロパティ。 MQSeries キュー マネージャーは、MessageID の値をメッセージの CorrelationID プロパティにコピーします。  
+MQSCorrelationSetOrchestration サンプルでは、実行中のオーケストレーションに MQSeries キューに送信されるメッセージの関連付けの MQSeries 関連付け識別子を使用する方法を示します。 オーケストレーションが、識別子の値を使用して MQSeries 関連付け識別子とメッセージを設定、 **MQMD_CorrelId**と**MQMD_MsgID**プロパティ。 MQSeries キュー マネージャーは、メッセージの CorrelationID プロパティに、MessageID の値をコピーします。  
 
 ## <a name="prerequisites"></a>前提条件  
- このサンプルでは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を実行しているのと同じサーバー上に IBM WebSphere MQSeries がインストールされていることを前提としています。  
+ このサンプルは、実行しているのと同じサーバー上の IBM WebSphere MQSeries がインストールされている前提としています。[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]します。  
 
 ## <a name="what-this-sample-does"></a>このサンプルの処理  
- このサンプルは、IBM WebSphere MQSeries サーバーに送信されるメッセージにメッセージ識別子と関連付け識別子を設定する方法について示します。 これは、実行中のオーケストレーションにルーティングして戻すメッセージを関連付けるための 1 つの方法として挙げられます。 MQSeries キュー マネージャーはメッセージを受信すると、その MessageID の値をメッセージの CorrelationID プロパティにコピーします。 この CorrelationID (**MQMD_CorrelId**) を使用して、オーケストレーションの MQSeries の応答メッセージを MQSeries にメッセージを送信するために使用するインスタンスに関連付けます。  
+ このサンプルでは、IBM WebSphere MQSeries サーバーに送信されるメッセージのメッセージ識別子と関連付け識別子を設定する方法を示します。 これは、実行中のオーケストレーション インスタンスにメッセージを関連付けるために使用できる方法の 1 つです。 MQSeries キュー マネージャーは、メッセージを受信すると、メッセージの CorrelationID プロパティに、MessageID の値をコピーします。 この CorrelationID (**MQMD_CorrelId**) を使用して、オーケストレーションの MQSeries の応答メッセージを MQSeries にメッセージを送信するために使用するインスタンスに関連付けます。  
 
 ## <a name="how-this-sample-is-designed-and-why"></a>このサンプルのデザイン方法とその理由  
- このサンプルは、オーケストレーションで処理中のドキュメントを MQSeries キューに送信可能であり (多くの場合、追加の処理を行うため)、実行中のオーケストレーションにルーティングして戻されるというシナリオを示します。  
+ このサンプルでは、オーケストレーションによって処理されているドキュメントを (おそらく、追加の処理では)、MQSeries キューに送信され、実行中のオーケストレーションに返されるシナリオを示します。  
 
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
  *\<パスのサンプル\>* \AdaptersUsage\MQSeriesAdapter\MQSCorrelationSetOrchestration  
@@ -45,15 +45,15 @@ MQSCorrelationSetOrchestration サンプルは、実行中のオーケストレ�
 
 |**[最近使ったファイル]**|**[説明]**|  
 |--------------|---------------------|  
-|**MQSCorrelationSetOrchestration.btproj、**<br /><br /> **MQSCorrelationSetOrchestration.sln**|アプリケーションのプロジェクトおよびソリューション ファイル。|  
-|**MQSCorrelationSetOrchestration.odx**|アプリケーションのオーケストレーション。|  
+|**MQSCorrelationSetOrchestration.btproj,**<br /><br /> **MQSCorrelationSetOrchestration.sln**|アプリケーションのプロジェクトおよびソリューション ファイル。|  
+|**MQSCorrelationSetOrchestration.odx**|アプリケーションのオーケストレーションです。|  
 |**MQSCorrelationSetOrchestration.snk**|厳密な名前のキー ファイル。|  
 |**Setup.bat**|このサンプルを作成および初期化します。|  
 
 ## <a name="how-to-use-this-sample"></a>このサンプルの使用方法  
- 全体的なワークフローの 1 つのステップとして MQSeries サーバーにメッセージを送信する必要がある場合は、このサンプルで採用されているロジックを組み込みます。  
+ 全体的なワークフローの手順の 1 つとして MQSeries サーバーにメッセージを送信する必要がある場合に、このサンプルで採用されているロジックを組み込みます。  
 
-### <a name="to-create-the-mqseries-queue-through-the-websphere-mq-explorer"></a>WebSphere MQ エクスプローラーを使用して MQSeries キューを作成するには  
+### <a name="to-create-the-mqseries-queue-through-the-websphere-mq-explorer"></a>WebSphere MQ エクスプ ローラーを使用して MQSeries キューを作成するには  
 
 1.  クリックして**開始**、 をポイント**プログラム**、 をポイント**IBM WebSphere MQ**、順にクリックします**WebSphere MQ エクスプ ローラー**します。  
 
@@ -83,7 +83,7 @@ MQSCorrelationSetOrchestration サンプルは、実行中のオーケストレ�
 
 9. **受信パイプライン**ボックスで、 **Microsoft.BizTalk.DefaultPipelines.PassThruReceive**します。  
 
-10. クリックして**構成**します。  
+10. をクリックして**構成**です。  
 
 11. **MQSeries トランスポートのプロパティ** ダイアログ ボックスで、**のポーリング間隔**ボックスに、「10」を入力します。  
 
@@ -97,7 +97,7 @@ MQSCorrelationSetOrchestration サンプルは、実行中のオーケストレ�
 
 16. **エクスポート**ダイアログ ボックスで、をクリックして**キューの作成**、順にクリックします **[ok]** または**完了**すべてのダイアログ ボックスを終了します。  
 
-### <a name="to-create-the-send-port-to-mqseries"></a>MQSeries に対する送信ポートを作成するには  
+### <a name="to-create-the-send-port-to-mqseries"></a>MQSeries に送信ポートを作成するには  
 
 1.  右クリック**送信ポート**、 をポイント**新規**、 をクリックし、**静的な一方向送信ポート**します。  
 
@@ -107,7 +107,7 @@ MQSCorrelationSetOrchestration サンプルは、実行中のオーケストレ�
 
 4.  **送信パイプライン**ボックスで、 **Microsoft.BizTalk.DefaultPipelines.PassThruTransmit**します。  
 
-5.  クリックして**構成**します。  
+5.  をクリックして**構成**です。  
 
 6.  **MQSeries トランスポートのプロパティ** ダイアログ ボックスで、**キュー定義**ボックスで、省略記号 (...) ボタンをクリックします。  
 
@@ -133,7 +133,7 @@ MQSCorrelationSetOrchestration サンプルは、実行中のオーケストレ�
 
 2.  で、 **C:\temp**ディレクトリ、"Pickup"および"Dropit"という名前のフォルダーを作成します。  
 
-### <a name="building-and-deploying-this-sample"></a>サンプルのビルドと展開  
+### <a name="building-and-deploying-this-sample"></a>このサンプルのビルドと  
 
 1.  コマンド ウィンドウで、次のフォルダーに移動します。  
 
@@ -147,7 +147,7 @@ MQSCorrelationSetOrchestration サンプルは、実行中のオーケストレ�
 
     3.  ファイル アダプター用の送信ポートと受信ポートを作成します。  
 
-### <a name="bind-and-start-the-orchestration"></a>オーケストレーションのバインドと開始  
+### <a name="bind-and-start-the-orchestration"></a>バインドし、オーケストレーションを開始します  
 
 1.  BizTalk Server 管理コンソールで、**オーケストレーション**フォルダー。  
 
@@ -157,7 +157,7 @@ MQSCorrelationSetOrchestration サンプルは、実行中のオーケストレ�
 
     |**オーケストレーション ポート**|**メッセージ ポート/受信場所**|  
     |----------------------------|--------------------------------------------|  
-    |FileReceivePort|MQSCorrelationSetOrchestration.FileReceivePort|  
+    |FileReceivePort|[Mqscorrelationsetorchestration.filereceiveport]|  
     |MQSeriesResponseReceivePort|MQIn|  
     |MQSeriesRequestSendPort|MQOut|  
     |FileSendPort|MQSCorrelationSetOrchestration.FileSendPort|  
@@ -185,7 +185,7 @@ MQSCorrelationSetOrchestration サンプルは、実行中のオーケストレ�
     >  無効にした場合、 **MQIn**受信場所は、WebSphere MQ エクスプ ローラーでメッセージを確認し、メッセージと関連付け識別子が設定されていることができます。 これを行うには、起動、 **WebSphere MQ エクスプ ローラー**にメッセージを調べ、 **MQCorrelation**キュー。 メッセージ識別子と関連付け識別子が表示されます、**識別子**のタブ、**メッセージ プロパティ** ダイアログ ボックス。  
 
     > [!NOTE]
-    >  実稼働環境では、MQSeries キューに送信されるメッセージごとに一意の ID を割り当てる必要があります。 これを行うには、オーケストレーションの式図形を変更します。 次の行を変更してこれらのプロパティを一意の 24 バイト ID に設定します。  
+    >  実稼働のシナリオでは、MQSeries キューに送信されるメッセージごとに一意の ID を割り当てるされます。 これは、オーケストレーションの式図形を変更することで実行できます。 一意の 24 バイト ID にこれらのプロパティを設定するのには、次の行を変更します。  
     >   
     >  MQSeriesRequestSendMessageModified(MQSeries.MQMD_MsgId) = "111213141516171819202122232425262728293031323334";  
     >   
@@ -193,11 +193,11 @@ MQSCorrelationSetOrchestration サンプルは、実行中のオーケストレ�
     >   
     >  これらのプロパティは、セクションを参照してください。 一意の 24 バイト ID を設定する場合**MQSeries に送信されるメッセージの一意の 24 バイト ID を作成する**します。  
 
-### <a name="to-create-a-unique-24-byte-id-for-messages-sent-to-mqseries"></a>MQSeries に送信されるメッセージに一意の 24 バイト ID を作成するには  
+### <a name="to-create-a-unique-24-byte-id-for-messages-sent-to-mqseries"></a>MQSeries に送信されるメッセージの一意の 24 バイト ID を作成するには  
 
-1. 新しい C# クラス ライブラリ プロジェクトを [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] で作成します。  
+1. 新規作成C#クラス ライブラリ プロジェクト[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]します。  
 
-2. クラスの .cs ファイルに次のコードを貼り付けます。  
+2. クラスの .cs ファイルには、次のコードを貼り付けます。  
 
    ```  
    using System;  
@@ -245,16 +245,16 @@ MQSCorrelationSetOrchestration サンプルは、実行中のオーケストレ�
 
 6. このサンプルの BizTalk プロジェクトに GetId アセンブリへの参照を追加します。  
 
-7. このサンプルで使用するオーケストレーションに 2 つの変数を追加します。  
+7. このサンプルで使用されるオーケストレーションに 2 つの変数を追加します。  
 
 
-   | 変数名 (ID) |     型      |
+   | 変数名 (Id) |     型      |
    |----------------------------|---------------|
    |           GetId            |  MQId.GetId   |
    |          strGuid           | System.String |
 
 
-8. このサンプルのオーケストレーションに使用する式図形に次のコードを貼り付けます。このコードで既存のコードを上書きします。  
+8. このサンプルのオーケストレーションで使用される式図形に次のコードを貼り付け、このコードは、既存のコードを上書きする必要があります。  
 
    ```  
    GetId = new MQId.GetId();  
@@ -264,13 +264,13 @@ MQSCorrelationSetOrchestration サンプルは、実行中のオーケストレ�
    MQSeriesRequestSendMessageModified(MQSeries.MQMD_CorrelId) = strGuid;  
    ```  
 
-9. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理コンソールのオーケストレーションが展開済みの場合、停止して削除します。 セクションの手順に従います**のビルドとこのサンプルをデプロイ**、**のバインドと開始オーケストレーション**と**アプリケーションをテストする**します。  
+9. 停止し、オーケストレーションでの削除、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールが既に展開されている場合。 セクションの手順に従います**のビルドとこのサンプルをデプロイ**、**のバインドと開始オーケストレーション**と**アプリケーションをテストする**します。  
 
     > [!NOTE]
-    >  この方法で MQSeries に送信されるメッセージに一意の 24 バイト ID を作成しても、送信されるすべてのメッセージに対して一意の ID が 100% 保証されるわけではありません。ただし、メッセージ ID が重複する可能性は非常に低くなります。 ビジネス要件により、重複するメッセージ ID がないことを 100% 保証する必要がある場合、別のカスタム コードを使用してこの機能を確保する必要があります。  
+    >  メッセージの一意の 24 バイト ID を作成するには、このメソッドの使用は 100% 保証送信されるすべてのメッセージの一意の Id が重複するメッセージ Id の確率が非常に低い MQSeries に送信されます。 ビジネス ニーズの 100% を保証する Id が重複していないメッセージを要求する場合は、この機能を別のカスタム コードを使用する必要があります。  
 
-## <a name="classes-or-methods-used-in-this-sample"></a>このサンプルで使用されるクラスまたはメソッド  
- このサンプルでは、クラスやメソッドを明示的に使用しません。  
+## <a name="classes-or-methods-used-in-this-sample"></a>クラスまたはメソッドのこのサンプルで使用  
+ このサンプルでは、クラスやメソッドの明示的な使用をことはありません。  
 
 ## <a name="see-also"></a>参照  
  [要求/応答を使用してメッセージの関連付け](../core/correlating-messages-using-request-reply.md)   

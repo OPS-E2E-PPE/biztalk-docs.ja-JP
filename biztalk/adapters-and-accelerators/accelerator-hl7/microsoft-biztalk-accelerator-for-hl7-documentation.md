@@ -13,12 +13,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 82ec20bc1b1b7958aca0730bd113c4c5c37a0828
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b462ec77897959382f94eb310b02a8f0b3e8d229
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37006507"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65303641"
 ---
 # <a name="microsoft-biztalk-accelerator-for-hl7-documentation"></a>Microsoft BizTalk Accelerator for HL7 ドキュメント
 Microsoft[!INCLUDE[btaBTAHL7NoNumber](../../includes/btabtahl7nonumber-md.md)]ドキュメントでは、さまざまなのでは新機能について説明します[!INCLUDE[btsBizTalkServerNoVersion_md](../../includes/btsbiztalkservernoversion-md.md)]バージョンをインストールする方法を示します[!INCLUDE[HL7_CurrentVersion_abbrev_md](../../includes/hl7-currentversion-abbrev-md.md)]ステップバイ ステップ チュートリアルが含まれています、HL7、開発タスクについての情報を提供し、操作のタスク。   

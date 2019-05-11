@@ -1,5 +1,5 @@
 ---
-title: 使用してホスト側開始 SSO 機能 |Microsoft ドキュメント
+title: 側開始 SSO 機能のホストを使用して |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,15 +14,15 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3825fd6846896fd460e3942b25116144107312ea
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 828d30ef24a532531d7b089f851f6ec9042cf44f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22286922"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65246478"
 ---
-# <a name="using-host-initiated-sso-functionality"></a>使用してホスト側開始 SSO 機能
-ホスト側開始シングル サインオンには、Windows Server 2008 のプロトコル遷移機能を使用して、Windows 以外のユーザーのシングル サインオンを実行します。 この機能は、ため Server 2008 を必要としがドメインにある必要があります、**ドメインの機能レベル**'éý' **Windows Server 2008**です。  
+# <a name="using-host-initiated-sso-functionality"></a>側開始 SSO 機能のホストを使用します。
+ホスト側開始シングル サインオンは、Windows 以外のユーザーのシングル サインオンを実行するのに Windows Server 2008 のプロトコル遷移機能を使用します。 この機能は、ため Server 2008 が必要ですし、あるドメインにある必要があります、**ドメインの機能レベル**設定**Windows Server 2008**します。  
   
 ## <a name="see-also"></a>参照  
- [SSO の以前のバージョンからアップグレードします。](../core/upgrading-from-a-previous-version-of-sso.md)
+ [以前のバージョンの SSO からのアップグレード](../core/upgrading-from-a-previous-version-of-sso.md)

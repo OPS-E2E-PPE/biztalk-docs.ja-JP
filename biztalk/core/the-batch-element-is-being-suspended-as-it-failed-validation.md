@@ -12,14 +12,14 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 90f82c88adc18899aac6d481b7a5d3e31e1a72c8
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 0198f6091b1d7dd6e4ade10260e8f8ffe5b59765
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37021968"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65298981"
 ---
-# <a name="the-batch-element-is-being-suspended-as-it-failed-validation"></a>検証に失敗したため、バッチ要素を中断しています
+# <a name="the-batch-element-is-being-suspended-as-it-failed-validation"></a>検証に失敗したため、バッチ要素が中断されています
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                        |
@@ -30,10 +30,10 @@ ms.locfileid: "37021968"
 |  イベント ソース   | [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI |
 |    コンポーネント    |                                    バッチ処理エンジン                                     |
 |  シンボル名  |                                 BatchElementSuspended                                  |
-|  メッセージ テキスト   |    検証に失敗したため、バッチ要素を中断しています。 エラーです。 {0}    |
+|  メッセージ テキスト   |    検証に失敗したため、バッチ要素を中断されています。 エラーです。 {0}    |
   
 ## <a name="explanation"></a>説明  
- このエラー/警告/情報イベントは、トランザクション セットが、バッチ処理オーケストレーションによって実行された検証に失敗したため、バッチ処理オーケストレーションが、バッチ化されたインターチェンジにトランザクション セットを追加できなかったことを示します。 インターチェンジは、検証に失敗したトランザクション セットなしで生成されます。 バッチ処理オーケストレーションは EDI.BatchElementValidationFailure コンテキスト プロパティを "True" に設定します。 BatchSuspend オーケストレーションは、そのコンテキスト プロパティに基づいてメッセージを取得し、エラー情報を送信してから中断します。  
+ このエラー/警告/情報イベントは、バッチ処理オーケストレーションが、トランザクション セットをバッチ インターチェンジをトランザクション セットには、バッチ処理オーケストレーションによって行われる検証が失敗したために追加できなかったことを示します。 検証に失敗したトランザクションが設定されていないインターチェンジが生成されます。 バッチ処理オーケストレーションは、EDI を設定します。"True"に BatchElementValidationFailure コンテキスト プロパティです。 BatchSuspend オーケストレーションはそのコンテキスト プロパティに基づいてメッセージを取得するには、エラー情報を送信しは中断されます。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- このエラーを解決するには、エラー メッセージに示されているように、発生したエラーをトランザクション セットの送信者に示します。 送信者に対して、検証に失敗する理由となった問題を解決し、トランザクション セットを再送信するように依頼します。
+ このエラーを解決するを示す、トランザクション セットの送信者にどのようなエラーが発生したエラー メッセージに記載されています。 検証が失敗する原因となった問題を解決して、トランザクション セットを再送信し、送信者に依頼します。

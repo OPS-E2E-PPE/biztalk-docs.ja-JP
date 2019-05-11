@@ -1,5 +1,5 @@
 ---
-title: MQSeries アダプタ サンプル |Microsoft ドキュメント
+title: MQSeries アダプタ サンプル |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,12 +15,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9b027302391cf0084339673713f147bace81bcd2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 37b343f1c273f77ade7703312bba6b63bee6c480
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22263218"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65263748"
 ---
 # <a name="mqseries-adapter-samples"></a>MQSeries アダプタ サンプル
 このセクションは、BizTalk MQSeries アダプタを使用するときに実行できる高度な機能を示すサンプルを提供します。  

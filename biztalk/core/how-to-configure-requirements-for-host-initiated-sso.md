@@ -31,33 +31,33 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 829deaba6782cb6e72f004c4fa96a6f8e2831be4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7f3319c0d8157ebe0c71c36a2494b3bda641181c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36982827"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65341220"
 ---
-# <a name="how-to-configure-requirements-for-host-initiated-sso"></a>ホスト側開始 SSO の要件を構成する方法
-エンタープライズ SSO とホスト側開始 SSO にはある共通点がありますが、特定のプラットフォームおよび Active Directory の要件はホスト側開始 SSO に対して一意です。 このトピックでは、これらの要件について説明し、システムで要件を確認または作成する手順を示します。  
+# <a name="how-to-configure-requirements-for-host-initiated-sso"></a>側開始 SSO のホストの要件を構成する方法
+エンタープライズ SSO とホスト側開始 SSO 共通の特定の側面がありますが、特定のプラットフォームおよび Active Directory の要件はホスト側開始 SSO に固有です。 このトピックでは、これらの要件について説明しを確認するか、システムを作成する手順について説明します。  
   
 - ホスト側開始 SSO は、ネイティブの Windows Server 2008 ドメイン環境でのみ実行できます。  
   
-- ホスト側開始 SSO を実行している SSO サービスのサービス アカウントは、TCB 特権が付与されるように構成する必要があります (これは、ドメイン セキュリティ ポリシーのサービス アカウントに対して構成できます)。  
+- ホストが実行している SSO サービスのサービス アカウント側開始 SSO は、TCB 特権を構成する必要があります。 (することができますこれを構成、ドメイン セキュリティ ポリシー内のサービス アカウント。)  
   
-  また、ホスト側開始処理にトランザクション インテグレータを使用する場合は、特定の要件が必要です。 HIP の TI は、ホスト側開始 SSO を利用して、Windows 以外のユーザーのシングル サインオンを実現します。  
+  さらに、ホスト側開始処理をトランザクション インテグレーターを使用する場合は、特定の要件は必要です。 TI ホストが Windows 以外のユーザーのシングル サインオンを実現するために SSO を開始の HIP を活用します。  
   
-  たとえば、HIP サービスの TI のサービス アカウントは、domainname\hipsvc サービス アカウントで実行されます。 このサービスは、Windows 以外のアカウントに対応する Windows アカウントを使用して Windows 上のリモート リソースまたはローカル リソースにアクセスするアプリケーションをホストできます。  
+  たとえば、HIP サービスの TI のサービス アカウントは、domainname \hipsvc サービス アカウントで実行されます。 このサービスは、リソースにアクセスするリモートまたはローカル Windows で Windows アカウントを使用して、Windows 以外のアカウントに対応する必要があるアプリケーションをホストできます。  
   
-  domainname\hipsvc アカウントは、シングル サインオンに使用される関連アプリケーションのアプリケーション管理者グループ アカウントに属している必要があります。  
+  Domainname \hipsvc アカウントは、シングル サインオン用に使用されている関連アプリケーションのアプリケーション管理者グループのアカウントに属する必要があります。  
   
-  domainname\hipsvc アカウントには、ホスト側開始シングル サインオンを使用するための制約付き委任の特権を付与する必要があります。 これは、Active Directory のドメイン管理者が構成できます。 委任は、SPN を登録したアカウントに対して構成できます。 制約付き委任が付与されたサービス アカウントは、管理者が指定するコンポーネントにのみアクセスできます。  
+  Domainname \hipsvc アカウントに委任を制限する必要がありますが、シングル サインオンが開始したホストを使用する特権。 これは、Active Directory でドメイン管理者によって構成できます。 Spn を登録したアカウントの委任を構成できます。 制約付き委任は、管理者が指定されているコンポーネントのみにアクセスするサービス アカウントを許可します。  
   
 ### <a name="to-check-your-domain-function-level"></a>ドメインの機能レベルを確認するには  
   
 1.  **Active Directory Domains and Trusts** MMC スナップインで、適切なノードをクリックします。 **Active Directory Domains and Trusts**、 をクリックし、**フォレスト機能レベルを上げる**します。  
   
-2.  機能レベルがあることを確認**Windows Server 2008**します。 機能レベルが異なる場合は、設定を変更する前に Active Directory のドキュメントを参照してください。  
+2.  機能レベルがあることを確認**Windows Server 2008**します。 そうでない場合は、設定を変更しようとする前に、Active Directory のドキュメントを参照します。  
   
 ### <a name="to-create-an-spn"></a>SPN を作成するには  
   
@@ -73,7 +73,7 @@ ms.locfileid: "36982827"
   
     場所**hipsvc\computername.domain.com**で実行されているコンピューターと、操作を実行するサービスと**domain \hissvc** hipsvc のサービス アカウントします。  
   
-   この操作後、Active Directory でこのサービス アカウント (domain\hissvc) 用の制約付き委任を、ネットワーク内の適切なリソースにアクセスするように構成できます。  
+   これを行うには、ネットワーク内の適切なリソースにアクセスするこのサービス アカウント (domain \hissvc) 用の Active Directory で制約付き委任を構成できます。  
   
 #### <a name="to-give-tcb-privileges-for-the-sso-service-account"></a>SSO サービス アカウントの TCB 特権を付与するには  
   

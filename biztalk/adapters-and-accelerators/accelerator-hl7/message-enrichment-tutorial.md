@@ -17,12 +17,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f60a6cc6bcb98e01489e981a39370215744ab860
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c2760cfa52fc7e761829d3005bfecbb8bb40a728
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37004043"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65303696"
 ---
 # <a name="message-enrichment-tutorial"></a>メッセージ強化のチュートリアル
 このチュートリアルは、Microsoft の使用に関する詳しい手順を示します[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]特定のビジネス問題を解決する: メッセージの強化に関する問題。 メッセージ強化のチュートリアルを追加、または強化する必要がある場合は HL7 に準拠していないことが完了していないメッセージについて説明します。 これは、患者の登録アプリケーションなど、アプリケーションで発生する可能性や、Microsoft からの XML データを含むメッセージを作成する場合に発生することができます[!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)]します。  
@@ -43,23 +43,23 @@ ms.locfileid: "37004043"
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [手順 1: アプリケーション プール ID の構成](../../adapters-and-accelerators/accelerator-hl7/step-1-configure-application-pool-identity.md)  
+-   [ステップ 1: アプリケーション プール ID の構成](../../adapters-and-accelerators/accelerator-hl7/step-1-configure-application-pool-identity.md)  
   
--   [手順 2: 新しいプロジェクトの作成](../../adapters-and-accelerators/accelerator-hl7/step-2-create-a-new-project.md)  
+-   [手順 2:新しいプロジェクトの作成](../../adapters-and-accelerators/accelerator-hl7/step-2-create-a-new-project.md)  
   
--   [手順 3: アセンブリへの厳密な名前の割り当て](../../adapters-and-accelerators/accelerator-hl7/step-3-assign-a-strong-name-to-the-assembly.md)  
+-   [ステップ 3:アセンブリへの厳密な名前の割り当て](../../adapters-and-accelerators/accelerator-hl7/step-3-assign-a-strong-name-to-the-assembly.md)  
   
--   [手順 4: スキーマの作成](../../adapters-and-accelerators/accelerator-hl7/step-4-create-the-schemas.md)  
+-   [手順 4:スキーマの作成](../../adapters-and-accelerators/accelerator-hl7/step-4-create-the-schemas.md)  
   
--   [手順 5: スキーマのプロパティの昇格](../../adapters-and-accelerators/accelerator-hl7/step-5-promote-schema-properties.md)  
+-   [手順 5:スキーマのプロパティの昇格](../../adapters-and-accelerators/accelerator-hl7/step-5-promote-schema-properties.md)  
   
--   [手順 6: スキーマの検証](../../adapters-and-accelerators/accelerator-hl7/step-6-validate-the-schemas.md)  
+-   [手順 6:スキーマの検証](../../adapters-and-accelerators/accelerator-hl7/step-6-validate-the-schemas.md)  
   
--   [手順 7: プロジェクトの署名とビルド](../../adapters-and-accelerators/accelerator-hl7/step-7-sign-and-build-the-projects.md)  
+-   [手順 7:プロジェクトの署名とビルド](../../adapters-and-accelerators/accelerator-hl7/step-7-sign-and-build-the-projects.md)  
   
--   [手順 8: BizTalk マッパーを使用したマップの作成](../../adapters-and-accelerators/accelerator-hl7/step-8-create-a-map-with-biztalk-mapper.md)  
+-   [手順 8:BizTalk マッパーを使用したマップの作成](../../adapters-and-accelerators/accelerator-hl7/step-8-create-a-map-with-biztalk-mapper.md)  
   
--   [手順 9: マップ プロジェクトの検証とビルド](../../adapters-and-accelerators/accelerator-hl7/step-9-validate-and-build-the-map-project.md)  
+-   [手順 9:マップ プロジェクトの検証とビルド](../../adapters-and-accelerators/accelerator-hl7/step-9-validate-and-build-the-map-project.md)  
   
 -   [手順 10: オーケストレーションの作成](../../adapters-and-accelerators/accelerator-hl7/step-10-create-an-orchestration.md)  
   

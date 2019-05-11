@@ -15,39 +15,39 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6ecc25d09e94ab4e5238c1d4dab4e36745916a93
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 10157d2e29b9ab3b23f1f938cdc55a2c1b7d7f5b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36991611"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65243059"
 ---
 # <a name="what-is-the-mqseries-adapter"></a>MQSeries アダプターとは何ですか。
-MQSeries アダプターを使用すると、MQSeries システムに対するメッセージの送受信を Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] で行うことができます。  
+MQSeries アダプターの送信し、Microsoft を使用して MQSeries システムに対するメッセージを受信[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]します。  
   
- このアダプターは、MQSeries Server for Windows に依存しています。 MQSeries Server for Windows が Microsoft 分散トランザクション コーディネーター (MSDTC) をサポートしているため、この依存関係によって信頼性の高いメッセージングが保証されます。  
+ アダプターは、Windows の MQSeries サーバーに依存します。 この設計は、信頼性の高い MQSeries Server for Windows が Microsoft 分散トランザクション コーディネーター (MSDTC) をサポートするためのメッセージングが保証されます。  
   
- アダプターでは、クラスター化された MQSeries Server、クラスター化された MQSeries キュー マネージャーに加え、クラスター化された BizTalk Server もサポートされます。  
+ アダプターには、クラスター化された MQSeries サーバーとクラスター化された MQSeries キュー マネージャー、およびクラスター化された BizTalk サーバーがサポートしています。  
   
- MQSeries アダプターでは、次の操作を実行できます。  
+ MQSeries アダプターを使用して、次を行うことができます。  
   
-- メッセージを、BizTalk Server から MQSeries のリモート定義のキュー、ローカル キュー、転送キュー、およびエイリアス キューに送信します。  
+- BizTalk Server から MQSeries のリモート定義のキュー、ローカル キュー、転送キュー、およびエイリアス キューにメッセージを送信します。  
   
-- MQSeries の転送キュー、ローカル キュー、およびエイリアス キューからメッセージを受信します。  
+- MQSeries 転送キュー、ローカル キュー、およびエイリアス キューからメッセージを受信します。  
   
-- MQSeries Server for Windows からのメッセージを送受信します (MQSeries Server は、BizTalk Server と同じコンピューターまたはリモート インストールで実行できます)。 MQSAgent (アダプターの COM+ コンポーネント) のコピーを 1 つ配置するだけで、BizTalk Server のすべてのインストールがサポートされます。  
+- Windows 用の MQSeries Server からメッセージを送受信 (BizTalk Server と同じコンピューターまたはリモート インストール、MQSeries Server を実行できます)。 のみ、BizTalk Server のすべてのインストールをサポートするために MQSAgent (COM + コンポーネントのアダプター) の 1 つのコピーを展開する必要があるとします。  
   
-- 待機間隔を指定して MQSeries Server をポーリングします。  
+- 待機間隔と MQSeries Server をポーリングします。  
   
-- 動的送信ポートを使用してアダプターを制御します。  
+- アダプターを制御するポートを使用して動的に送信します。  
   
 - 実行時にキューを動的に作成します。  
   
-- MQSeries MatchOptions に基づいてキューからメッセージを動的に受信します。  
+- MQSeries matchoptions に基づいてキューからメッセージを動的に受信します。  
   
-- メッセージの送信と受信のどちらも、コンテキスト プロパティをヘッダー プロパティにマップします。 MQSeries ヘッダー プロパティ (MQMD、MQXQH、MQCIH、MQIIH など) は、BizTalk Server コンテキスト プロパティを使用して取得および設定できます。  
+- ヘッダーのプロパティの両方の送信とメッセージを受信するには、コンテキスト プロパティをマップします。 取得し、コンテキスト プロパティを BizTalk Server から MQSeries ヘッダーのプロパティ (MQMD、MQXQH、MQCIH、MQIIH など) を設定できます。  
   
-- 関連付け識別子を作成して、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] または MQSeries Server との関連付けを有効にします。  
+- いずれかとの相関関係を有効にする[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]または MQSeries Server の関連付け識別子を作成します。  
   
 - 送信メッセージのトランザクションおよび非トランザクション配信を要求して受信します。  
   

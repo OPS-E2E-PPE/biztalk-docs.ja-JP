@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10540 |Microsoft Docs'
+title: シングル サインオン:イベント 10540 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b1bcd7cc64a79634aa7868791d7e74e92cd1c4a3
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: dd18184dbf06934600231a6bbb75abdc1709f5ec
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36990947"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65243408"
 ---
-# <a name="single-sign-on-event-10540"></a>シングル サインオン: イベント 10540
+# <a name="single-sign-on-event-10540"></a>シングル サインオン:イベント 10540
 ## <a name="details"></a>詳細  
 
 |                 |                                                                                  |
@@ -30,17 +30,17 @@ ms.locfileid: "36990947"
 |  イベント ソース   |                                      ENTSSO                                      |
 |    コンポーネント    |                                        CO                                        |
 |  シンボル名  |                         SSO_WARN_APP_TICKETS_NOT_ALLOWED                         |
-|  メッセージ テキスト   | チケットはこのアプリケーションに対して有効になっていません。%r<br /><br /> アプリケーション名: %1 |
+|  メッセージ テキスト   | この application.%r チケットが有効でないです。<br /><br /> アプリケーション名: %1 |
 
 ## <a name="explanation"></a>説明  
- この警告イベントは、チケット機能がこのアプリケーションで有効になっていないことを示します。 SSO チケットの使用は、SSO アプリケーションごとのオプション機能です。  
+ この警告イベントは、チケット機能が有効になっていないこのアプリケーションを示します。 SSO チケットの使用は、SSO アプリケーションごとの省略可能な機能です。  
 
 ## <a name="user-action"></a>ユーザーの操作  
- この警告を解決するには、次の操作を行います:   
+ この警告を解決するには、次の操作を行います。  
 
-- アプリケーション管理者に連絡し、この SSO アプリケーションのチケットを有効にしてもらいます。 SSO 管理ツール (GUI またはコマンド ライン) を使用して行うことができます。  
+- この SSO アプリケーションのチケットを有効にする、アプリケーション管理者に問い合わせてください。 これ行う SSO 管理ツール (GUI またはコマンドライン) を使用します。  
 
-  詳細については、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ヘルプの次の情報を参照してください:   
+  詳細については、の次のリソースを参照してください。[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプ。  
 
 - [SSO チケット](../core/sso-tickets.md)  
 

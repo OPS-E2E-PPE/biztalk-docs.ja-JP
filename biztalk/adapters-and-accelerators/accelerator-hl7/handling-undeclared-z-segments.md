@@ -17,12 +17,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 633c1d338a87bef7c0fe53ff5df7f53438eac843
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 0903945fc9fdae1618f8548660c320187a0a71b8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36990019"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65255272"
 ---
 # <a name="handling-undeclared-z-segments"></a>未宣言の Z セグメントの処理
 Z セグメントの 2 種類があります: Z セグメントで宣言されていない Z セグメントを宣言します。 似ているローカルの目的で使用することで、使用する方法に非常に異なるです。  

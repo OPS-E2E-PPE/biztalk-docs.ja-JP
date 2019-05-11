@@ -12,12 +12,12 @@ caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c24cd9c34fef3c7d984874cc72da13030b167d0f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: dc82981f142fa70ebdc852ae6629f6ffc2bb1208
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36994099"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65336973"
 ---
 # <a name="how-to-install-the-certificates-for-encrypted-messages"></a>暗号化されたメッセージ用の証明書をインストールする方法
 暗号化されたメッセージを送受信するための証明書をインストールする手順の概要を次に示します。  
@@ -68,7 +68,7 @@ ms.locfileid: "36994099"
    3.  **証明書の選択**ダイアログ ボックスがインストールした解読証明書を選択し、すべてのダイアログ ボックスを閉じます。  
   
        > [!NOTE]
-       >  詳細については、[ホスト プロパティを変更する方法](../core/how-to-modify-host-properties.md)を参照してください。  
+       >  詳細については、次を参照してください。[ホスト プロパティを変更する方法](../core/how-to-modify-host-properties.md)します。  
   
 ## <a name="next-steps"></a>次の手順  
  暗号化されたメッセージを受信するためのパイプラインを作成する[暗号化されたメッセージの受信用の BizTalk Server を構成する方法](../core/how-to-configure-biztalk-server-for-receiving-encrypted-messages.md)  

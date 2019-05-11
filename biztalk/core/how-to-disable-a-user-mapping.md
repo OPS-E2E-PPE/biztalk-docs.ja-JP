@@ -16,15 +16,15 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3e49f524337fffde9261af4aa2cd64c75e307ccb
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 14d1715268630f4eed26f8004fc3d61cde15830b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36972635"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65338116"
 ---
 # <a name="how-to-disable-a-user-mapping"></a>ユーザー マッピングを無効にする方法
-指定したマッピングに関連付けられたすべての操作を無効にするときに、ユーザー マッピングを無効にすることができます。 ユーザー マッピングは、削除する前に無効にする必要があります。  
+指定したマッピングに関連付けられているすべての操作をオフにする場合に、ユーザーのマッピングを無効にすることができます。 削除する前に、ユーザーのマッピングを無効にする必要があります。  
   
  ユーザー マッピングを無効にすると、(D) として表示されます*\<ドメイン\>\\< ユーザー名\>* ユーザー マッピングの一覧を表示する場合。  
   

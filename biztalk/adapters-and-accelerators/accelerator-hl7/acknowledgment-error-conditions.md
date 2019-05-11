@@ -15,12 +15,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 26bc0524e76521fcb673c6d5d3dc70f43cb12798
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ae28a26d62ec18f6cfb81db55442b8e440b5a93c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36970259"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65247719"
 ---
 # <a name="acknowledgment-error-conditions"></a>受信確認エラーの状態
 致命的なエラーで、次の条件が発生条件の場合に Microsoft BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) (ACK) メッセージを受信確認の処理には。  

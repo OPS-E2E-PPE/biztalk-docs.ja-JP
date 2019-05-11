@@ -18,19 +18,19 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 046e51424427973534d9e4defdbf6e8d58eb8b2f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 095a1c2a180c0592641cd791875f23d633d908c8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36966251"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65337834"
 ---
 # <a name="how-to-enlist-or-unenlist-a-party-for-a-role"></a>ロールに対してパーティを参加させる、または参加解除する方法
 このトピックでは、BizTalk Server 管理コンソールを使用して、ロールに対してパーティを参加させる、または参加解除する方法について説明します。 ロールにパーティを参加させるとパーティがロールに割り当てられ、パーティを参加解除するとパーティがロールから削除されます。  
   
  ロールに対してパーティを参加させる、または参加解除する場合は、次の点に注意してください。  
   
--   参加させるパーティをあらかじめ作成しておく必要があります。 手順については、[パーティを作成する方法](http://msdn.microsoft.com/library/f6feca1d-bc83-4fb6-981d-26c9e0d53044)を参照してください。  
+-   参加させるパーティをあらかじめ作成しておく必要があります。 手順については、次を参照してください。[パーティを作成する方法](http://msdn.microsoft.com/library/f6feca1d-bc83-4fb6-981d-26c9e0d53044)します。  
   
 -   ロールに対してパーティを参加させる、または参加解除する場合、アプリケーションを再起動する必要はありません。  
   

@@ -12,14 +12,14 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: def67be8b1c146bd6da37b669a71f2be15e22e2d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 814da0db8dce26e9078126ede767f623b59b6401
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36985963"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65251012"
 ---
-# <a name="segment-should-have-a-name-with-at-least-two-characters"></a>セグメントには 2 文字以上の名前を指定する必要があります
+# <a name="segment-should-have-a-name-with-at-least-two-characters"></a>セグメントは、少なくとも 2 つの文字の名前が必要
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                        |
@@ -33,7 +33,7 @@ ms.locfileid: "36985963"
 |  メッセージ テキスト   |                 セグメントは少なくとも 2 つの文字の名前である必要があります。                  |
   
 ## <a name="explanation"></a>説明  
- このエラー/警告/情報イベントは、インターチェンジのセグメントに 2 文字以上の名前が指定されていなかったため、受信パイプラインで受信インターチェンジを処理できなかったことを示します。  
+ このエラー/警告/情報イベントは、インターチェンジ内のセグメントの名前に、少なくとも 2 つの文字があるないためにで受信インターチェンジでした、受信パイプラインによって処理することを示します。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- このエラーを解決するには、インターチェンジの送信者に対して、インターチェンジの各セグメントに少なくとも 2 文字以上の名前を指定し、インターチェンジを再送信するように依頼します。
+ このエラーを解決するには、インターチェンジ内の各セグメントの名前に、少なくとも 2 つの文字があることを確認してもらい、インターチェンジのインターチェンジの送信者を依頼します。

@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7735617b0d70aa3c693b1808b07d7670e6137f15
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 27885498dab635ebd8cb1923932c274b468e1d76
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36999339"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65301684"
 ---
 # <a name="what-is-biztalk-server-log-shipping"></a>BizTalk Server ログ配布とですか。
 BizTalk Server のディザスター リカバリーの手順は、BizTalk を中心に構築された、ログ配布します。 BizTalk ログ配布は継続的に障害回復サイトのデータベースにトランザクション ログの更新プログラムを適用することで、災害発生時のデータベースの復元を簡略化します。  

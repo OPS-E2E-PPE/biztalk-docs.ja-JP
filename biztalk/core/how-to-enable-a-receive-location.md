@@ -16,17 +16,17 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: db58c80e3148e71eaf69c2712cda094772bfe5a7
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e9e3936c4c849efc0e6bbd44f3cb1161487f820d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36969520"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65337997"
 ---
 # <a name="how-to-enable-a-receive-location"></a>受信場所を有効にする方法
 このトピックでは、BizTalk Server 管理コンソールを使用して、受信場所を有効にする方法について説明します。 受信場所を有効にしないと、メッセージは受信できません。  
   
- 受信場所の作成方法の詳細については、[受信場所を作成する方法](../core/how-to-create-a-receive-location.md)を参照してください。  
+ 受信場所の作成方法の詳細については、次を参照してください。[受信場所を作成する方法](../core/how-to-create-a-receive-location.md)します。  
   
 ## <a name="prerequisites"></a>前提条件  
  このトピックの手順を実行するには、BizTalk Server Operators グループまたは BizTalk Server 管理者グループのメンバー アカウントでログオンする必要があります。 詳細なアクセス許可についてを参照してください。[を展開すると、BizTalk アプリケーションの管理に必要なアクセス許可](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)します。  

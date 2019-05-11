@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5a1281fa77956d96e4461a91fffb737499327ef2
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4a51092ace594033ae559e536cb65240ac44e063
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36982091"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65270419"
 ---
 # <a name="run-as-profiles"></a>実行プロファイル
 BizTalk Server コア ライブラリ管理パックが最初にインポートされた 2 つの新しい実行プロファイルが作成されます。  

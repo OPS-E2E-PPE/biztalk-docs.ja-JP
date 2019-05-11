@@ -1,5 +1,5 @@
 ---
-title: MQSeries アダプター |Microsoft ドキュメント
+title: MQSeries アダプター |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,30 +14,30 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8be4fc83906a46af17924ddfe440b5bc1c1fd650
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8978f3ace91b40f48d0983e8ce0b7183082c4bb2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22263178"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65264519"
 ---
-# <a name="mqseries-adapter"></a>MQSeries アダプタ
-MQSeries アダプタは、Microsoft BizTalk Server と IBM MQSeries サーバーの間の仲介役として機能します。これにより、ビジネス プロセスの作成時にすべてのオプションを使用できます。  
+# <a name="mqseries-adapter"></a>MQSeries アダプター
+MQSeries アダプターは、広範なビジネス プロセスを作成するオプションを使用できるように、Microsoft BizTalk Server と IBM MQSeries サーバー間のブリッジとして機能します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [MQSeries アダプターとは何ですか。](../core/what-is-the-mqseries-adapter.md)  
+-   [MQSeries アダプターとは](../core/what-is-the-mqseries-adapter.md)  
   
 -   [MQSeries アダプターの構成](../core/configuring-the-mqseries-adapter.md)  
   
 -   [チュートリアル: MQSeries アダプターを使用する BizTalk アプリケーションの作成](../core/walkthrough-creating-a-biztalk-application-that-uses-the-mqseries-adapter.md)  
   
--   [MQSeries アダプタのバッチ処理とトランザクション処理](../core/mqseries-adapter-batching-and-transaction-handling.md)  
+-   [MQSeries アダプターのバッチ処理とトランザクション処理](../core/mqseries-adapter-batching-and-transaction-handling.md)  
   
--   [要求/応答を使用してメッセージを相互に関連付ける](../core/correlating-messages-using-request-reply.md)  
+-   [要求 - 応答を使用したメッセージの関連付け](../core/correlating-messages-using-request-reply.md)  
   
 -   [MQSeries アダプターのカスタム ヘッダー](../core/mqseries-adapter-custom-headers.md)  
   
--   [トレース ツールを使用して MQSeries アダプターのエラーの分析](../core/analyzing-mqseries-adapter-errors-with-the-trace-tools.md)  
+-   [トレース ツールを使用した MQSeries アダプターのエラーの分析](../core/analyzing-mqseries-adapter-errors-with-the-trace-tools.md)  
   
--   [MQSeries アダプタでメッセージの配信を順序付け](../core/ordered-delivery-of-messages-with-the-mqseries-adapter.md)
+-   [MQSeries アダプターを使用したメッセージの順次配送](../core/ordered-delivery-of-messages-with-the-mqseries-adapter.md)

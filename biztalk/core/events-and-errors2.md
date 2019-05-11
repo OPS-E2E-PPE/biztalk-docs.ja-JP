@@ -12,15 +12,15 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d2299e8145fc302f41e9ea640381e82a6f52be06
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: cb9250b09d5e6a797e5f78438621ec4486697d1d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37010043"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65346213"
 ---
 # <a name="events-and-errors"></a>イベントとエラー
-このセクションでは、BizTalk Server テクノロジに関するイベントおよびエラーを示します。 エラーおよびユーザーの適切な対処方法について説明します。  
+このセクションでは、BizTalk Server のテクノロジのイベントとエラーで構成されます。 エラーと実行する適切なユーザー操作がについて説明します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

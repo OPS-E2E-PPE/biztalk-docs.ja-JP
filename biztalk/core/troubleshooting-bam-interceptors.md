@@ -1,5 +1,5 @@
 ---
-title: BAM インターセプタのトラブルシューティング |Microsoft ドキュメント
+title: BAM インターセプタのトラブルシューティング |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,18 +12,18 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 516ff97a39d77a0180059453a4e7f79e2c9ab4be
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5368c328253c78629e609d6eda1cfdc05f044277
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22278922"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65243356"
 ---
 # <a name="troubleshooting-bam-interceptors"></a>BAM インターセプタのトラブルシューティング
 このセクションでは、BAM インターセプタ構成のトラブルシューティングに加え、インターセプタ構成ファイルの展開時およびアプリケーションの実行時に返される可能性があるエラーの分析と解決について説明します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [BAM インターセプタにおける一般的な問題](../core/common-issues-with-the-bam-interceptors.md)  
+-   [BAM インターセプターにおける一般的な問題](../core/common-issues-with-the-bam-interceptors.md)  
   
 -   [BAM インターセプターのエラー メッセージ](../core/bam-interceptor-error-messages.md)

@@ -1,5 +1,5 @@
 ---
-title: BizTalk Server のポートに必要な |Microsoft ドキュメント
+title: BizTalk Server のポートに必要な |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,23 +12,23 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a3024d0a4b2012318b52b4ad51c328dd55124241
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f7f30257a85b19bf952672a5a27cc943fc50a68b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22268354"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65267790"
 ---
 # <a name="required-ports-for-biztalk-server"></a>BizTalk Server に必要なポート
-詳細については、BizTalk Server の展開をセキュリティで保護する、次を参照してください。[サンプル BizTalk Server アーキテクチャ](../core/sample-biztalk-server-architectures.md)です。  
+BizTalk Server の展開をセキュリティで保護する方法の詳細については、「 [Sample BizTalk Server Architectures](../core/sample-biztalk-server-architectures.md)」を参照してください。  
   
- このセクションでは、BizTalk Server コンポーネントが相互に通信できるようにファイアウォールで開く必要のあるポートについて説明します。  
+ このセクションでは、BizTalk Server コンポーネントが互いに通信できるように、ファイアウォールで開く必要があるポートについて説明します。  
   
- 実稼働環境に BizTalk Server で使用するサーバー以外のサーバーがある場合、他のポートを開くことが必要になる可能性があります。 詳細について、Windows Server System™ のポートの要件は、次を参照してください。 [http://go.microsoft.com/fwlink/?LinkId=25713](http://go.microsoft.com/fwlink/?LinkId=25713)です。  
+ BizTalk Server で使用するだけでなく、運用環境でその他のサーバーがある場合は、追加のポートを開く必要があります。 Windows Server System™ ポートの要件の詳細については、次を参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=25713](http://go.microsoft.com/fwlink/?LinkId=25713)します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
--   [受信と送信サーバーのポート](../core/ports-for-the-receive-and-send-servers.md)  
+-   [受信サーバーと送信サーバーのポート](../core/ports-for-the-receive-and-send-servers.md)  
   
 -   [管理サーバーのポート](../core/ports-for-the-administration-server.md)  
   
@@ -36,6 +36,6 @@ ms.locfileid: "22268354"
   
 -   [処理サーバーのポート](../core/ports-for-the-processing-servers.md)  
   
--   [エンタープライズ シングル サインオン サーバーのポート](../core/ports-for-the-enterprise-single-sign-on-servers.md)  
+-   [Enterprise Single Sign-On サーバーのポート](../core/ports-for-the-enterprise-single-sign-on-servers.md)  
   
 -   [BAM ポータル サーバーのポート](../core/ports-for-the-bam-portal-server.md)

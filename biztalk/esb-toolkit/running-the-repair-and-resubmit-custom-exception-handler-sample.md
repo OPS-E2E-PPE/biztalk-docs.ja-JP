@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 34bb03565f7b044f9c6c2f29332862ae8aafef7e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e24551a9f3590562b3095a51b0f99895dff94b68
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37004483"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65242715"
 ---
 # <a name="running-the-repair-and-resubmit-custom-exception-handler-sample"></a>修復と再送信のカスタム例外ハンドラーのサンプルを実行します。
 修復と再送信のカスタム例外ハンドラーのサンプルでは、ESB と Microsoft BizTalk ベースのアプリケーションを処理し、便利なデザイン パターンを実装に人間の介入を統合するために非常に効果的な方法を示します。 サンプル コードは、ESB 例外管理システムにシームレスに統合します。  
@@ -51,7 +51,7 @@ ms.locfileid: "37004483"
   さらに、すべてをという名前の汎用的な送信ポートがあります。GlobalFaultProcessor パイプラインを使用するように構成された Exceptions_FILE します。 このポートが、システムではすべての例外をサブスクライブ、両方の BizTalk は、メッセージのメッセージをルーティングし、ESB エラー メッセージが失敗しました。 例外管理フレームワークでは、それらすべてを 1 つの形式に正規化し、フォルダー \Source\Samples\Exception Handling\Test\Filedrop\All_Exceptions に InfoPath 処理命令を使用してシリアル化します。  
   
 ## <a name="installation"></a>インストール  
- すべての例外管理サンプルでは、同じコア サービスと BizTalk アプリケーションのアイテムのセットを使用します。 そのため、すべての例外管理サンプルを実行できる例外管理サンプル アイテム 1 回だけをインストールする必要があります。 例外管理サンプルをインストールする方法については、[例外管理サンプルをインストールする](../esb-toolkit/installing-the-exception-management-samples.md)を参照してください。  
+ すべての例外管理サンプルでは、同じコア サービスと BizTalk アプリケーションのアイテムのセットを使用します。 そのため、すべての例外管理サンプルを実行できる例外管理サンプル アイテム 1 回だけをインストールする必要があります。 例外管理サンプルをインストールする方法については、次を参照してください。[例外管理サンプルをインストールする](../esb-toolkit/installing-the-exception-management-samples.md)します。  
   
 ## <a name="running-the-sample-application"></a>サンプル アプリケーションを実行します。  
  **修復と再送信のカスタム例外ハンドラーのサンプルを実行するには**  

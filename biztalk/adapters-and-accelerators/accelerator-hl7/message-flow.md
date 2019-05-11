@@ -15,12 +15,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1bb6520a142a7498dd36ac74e266e1d856e832f5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9d53c1038653a411666af4891a542e90fe988519
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36968995"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65303701"
 ---
 # <a name="message-flow"></a>メッセージ フロー
 次のセクションでは、を通じて Microsoft BizTalk Accelerator for HL7 ケアのヘルス メッセージのフローについて説明します ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)])、どのように[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]メッセージングのルーティングのしくみ。 このルーティングで Microsoft[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]プランには、データの検証、メッセージ ヘッダーの上書き、および受信確認の機能が強化されています。  

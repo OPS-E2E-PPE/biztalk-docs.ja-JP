@@ -1,5 +1,5 @@
 ---
-title: バインド ファイルからバインドをインポートする方法 |Microsoft ドキュメント
+title: バインド ファイルからバインドをインポートする方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,16 +12,16 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 78c798b6db217b1fa582dc57028ffaf4e46e9721
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 887efb1d7c2557b730f816d6d6909f7828a03fbb
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22298362"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65270494"
 ---
 # <a name="how-to-import-bindings-from-a-binding-file"></a>バインド ファイルからバインドをインポートする方法
-バインド ファイルを使用して、別の既存の BizTalk アプリケーションに BizTalk アプリケーションのバインドをインポートできます。 アプリケーションにアセンブリのバインディングまたはグループにグループのすべてのバインドをインポートすることもできます。  
+バインド ファイルを使用して、もう 1 つの既存の BizTalk アプリケーションに BizTalk アプリケーションのバインドをインポートできます。 グループにグループのすべてのバインドまたはアプリケーションにアセンブリのバインドをインポートすることもできます。  
   
--   バインドをインポートするときに注意するさまざまな考慮事項については、次を参照してください。[バインドのインポート](http://go.microsoft.com/fwlink/?LinkId=155012)(http://go.microsoft.com/fwlink/?LinkId=155012)。  
+-   バインドをインポートするときに留意するさまざまな考慮事項については、次を参照してください。[バインドのインポート](http://go.microsoft.com/fwlink/?LinkId=155012)(http://go.microsoft.com/fwlink/?LinkId=155012)します。  
   
--   BizTalk アプリケーションにバインドをインポートする方法の詳細については、次を参照してください。 [BizTalk アプリケーションにバインドのインポート方法](http://go.microsoft.com/fwlink/?LinkId=155013)(http://go.microsoft.com/fwlink/?LinkId=155013)。
+-   BizTalk アプリケーションにバインドをインポートする方法の詳細については、次を参照してください。 [BizTalk アプリケーションにバインドのインポート方法](http://go.microsoft.com/fwlink/?LinkId=155013)(http://go.microsoft.com/fwlink/?LinkId=155013)します。

@@ -12,21 +12,21 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ffc04f31544a48f0ab25338c95beefaf14d5097c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ca799b6fc97262d1e7e3af4f4d73b09ca24eb444
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37010627"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65337174"
 ---
 # <a name="how-to-identify-bottlenecks-in-the-messagebox-database"></a>メッセージ ボックス データベースのボトルネックを特定する方法
 メッセージ ボックス データベースのボトルネックを特定するには、まず SQL Server エージェント サービスが開始されていることを確認します。 サービスのスタートアップ状態を [手動] から [自動] に変更して、サーバーを再起動してもサービスが自動的に再開されるようにします。  
   
  既定では、Spool、TrackingData、または ApplicationQ テーブルのサイズが増加すると、BizTalk サービスによって制限されるようになっています。 これらのテーブルの切り捨てを行う SQL エージェント ジョブが実行されていない場合は、Spool テーブルのサイズが増加し、データベースにさらに負荷がかかるのを防ぐために制限が作動することになります。 以下のパフォーマンス カウンターの状態を確認します。  
   
-- BizTalk:Message Agent (Host Name) Message Delivery Throttling State  
+- BizTalk:Message Agent (ホスト名) メッセージの配信制限の状態  
   
-- BizTalk:Message Agent (Host Name) Message Publishing Throttling State  
+- BizTalk:Message Agent (ホスト名) メッセージの公開の制限の状態  
   
   値 0 は、制限が発生していないことを示します。 値 6 は、データベース サイズの増加に起因する制限が発生していることを示します。 これらのカウンターの値を解釈する方法については、ドキュメントを参照してください。  
   

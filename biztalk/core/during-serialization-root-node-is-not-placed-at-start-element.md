@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ce91021f966ac1179a5137373df09fe7f3c4cece
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4403e9fb895ca05d4438f1e280d79008519918d9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36978419"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65350672"
 ---
 # <a name="during-serialization-root-node-is-not-placed-at-start-element"></a>シリアル化中にルート ノードが開始要素に配置されません
 ## <a name="details"></a>詳細  

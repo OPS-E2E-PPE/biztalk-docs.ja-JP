@@ -1,5 +1,5 @@
 ---
-title: Itinerary 入り口サンプルのインストール |Microsoft ドキュメント
+title: スケジュール オンランプ ランプでサンプルをインストールする |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,23 +12,23 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 00dd0b820b006d681be6049cab1fd603e029dae4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 74bef54370f076d3777f825c89ab828f0f2413d9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22294402"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65258438"
 ---
-# <a name="installing-the-itinerary-on-ramp-sample"></a>Itinerary ランプでサンプルをインストールします。
-行程入り口サンプルによって異なります、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]コア ソリューション、動的な解決サンプルとリゾルバー サービスのサンプルです。 インストール、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]コアは自動的にコピーして、適切な場所にこのサンプルに必要な中核となるアセンブリをインストールします。 Web サービスと旅程入り口サンプルで使用するビジネス ルール エンジン ポリシーが正しくインストールし、構成こと動的解決のサンプルとリゾルバー サービスのサンプルをインストールすることを確認します。  
+# <a name="installing-the-itinerary-on-ramp-sample"></a>スケジュール オンランプ ランプでサンプルをインストールします。
+行程導入サンプルによって異なります、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]ソリューションや動的解決サンプルでは、リゾルバー サービス サンプルのコアします。 インストール、 [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] core は自動的にコピーして、適切な場所には、このサンプルに必要なコア アセンブリをインストールします。 動的解決サンプルとリゾルバー サービス サンプルをインストールすることで、Web サービスと、日程サンプルで使用されるビジネス ルール エンジン ポリシーが正しくインストールされ構成されています。  
   
 > [!NOTE]
->  インストールする必要があります、[動的の解決サンプルをインストールする](../esb-toolkit/installing-the-dynamic-resolution-sample.md)と[リゾルバー サービスのサンプルをインストールする](../esb-toolkit/installing-the-resolver-service-sample.md)このサンプルをインストールする前にします。  
+>  インストールする必要があります、[動的解決サンプルをインストールする](../esb-toolkit/installing-the-dynamic-resolution-sample.md)と[リゾルバー サービス サンプルをインストールする](../esb-toolkit/installing-the-resolver-service-sample.md)このサンプルをインストールする前にします。  
 >   
->  ESB サンプル アプリケーションでは、GlobalBank.ESB をという名前の Microsoft BizTalk アプリケーションに存在します。 さらに、このサンプルは、コア Microsoft.Practices.ESB アプリケーションにインストールされているアーティファクトを使用します。 行程入り口サンプルをインストールする前に、GlobalBank.ESB アプリケーションに Microsoft.Practices.ESB アプリケーションへの参照を追加する必要があります。  
+>  ESB のサンプル アプリケーションでは、GlobalBank.ESB という名前の Microsoft BizTalk アプリケーションに存在します。 さらに、このサンプルは、コア Microsoft.Practices.ESB アプリケーションにインストールされている成果物を使用します。 行程導入サンプルをインストールする前に、GlobalBank.ESB アプリケーションに Microsoft.Practices.ESB アプリケーションへの参照を追加する必要があります。  
   
- 付属するインストール スクリプトを使用して行程入り口サンプルをインストールすることができます、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]です。 このセクションのトピックは次のとおりです。  
+ 日程サンプルに含まれているインストール スクリプトを使用してをインストールすることができます、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]します。 このセクションでは、次のトピックについて説明します。  
   
--   [インストール スクリプトを使用して、Itinerary ランプでサンプルをインストールします。](../esb-toolkit/install-the-itinerary-on-ramp-sample-using-the-install-scripts.md)  
+-   [インストール スクリプトを利用し、スケジュール オンランプ サンプルをインストールする](../esb-toolkit/install-the-itinerary-on-ramp-sample-using-the-install-scripts.md)  
   
--   [アセンブリおよび Itinerary 入り口サンプルがインストールされているアイテム](../esb-toolkit/assemblies-and-artifacts-installed-by-the-itinerary-on-ramp-sample.md)
+-   [スケジュール オンランプ サンプルによりインストールされるアセンブリとアイテム](../esb-toolkit/assemblies-and-artifacts-installed-by-the-itinerary-on-ramp-sample.md)

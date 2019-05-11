@@ -15,12 +15,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b6fb901186dddf69a94fca4467b543f047c27719
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6ac920751fc8f653433525150be5684f93d2eb2b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37013811"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65337723"
 ---
 # <a name="how-to-extend-the-schema-generator-wizard"></a>スキーマ生成ウィザードを拡張する方法
 スキーマの生成用の新規作成ウィザードを作成する方法と、既存のスキーマ生成ウィザードを拡張する方法。  
@@ -46,23 +46,23 @@ ms.locfileid: "37013811"
    }  
    ```  
   
-2. 次の Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] インストール フォルダーに、結果として得られるアセンブリをドロップします。  
+2. 次の Microsoft では、生成されたアセンブリをドロップ[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]インストール フォルダー。  
   
-    [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]\Developer Tools\Schema エディター拡張機能  
+    [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]\Developer Tools\Schema Editor Extensions  
   
-    次にスキーマ生成ウィザードを実行すると、新しいスキーマ生成モジュールが自動的に選択されます。  
+    次に、スキーマ生成ウィザードを実行したときは自動的に選択、新しいスキーマ生成モジュール。  
   
-   新しいスキーマ ウィザードを作成するには、次の手順を実行します。  
+   新しいスキーマ ウィザードを作成するのにには、次の手順を使用します。  
   
    **SDK の場所**  
   
-   [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]\SDK\Utilities\Schema generator  
+   [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]\SDK\Utilities\Schema Generator  
   
 ### <a name="create-a-new-schema-wizard"></a>新しいスキーマ ウィザードを作成します。  
   
-1. InstallDTD.vbs を Microsoft.BizTalk.DTDToXSDGenerator.dll のインストールを実行して[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]\Developer Tools\Schema エディター拡張機能。 DTDToXSDGenerator.dll は、DTD ファイルを XSD に変換するために使用できるクラスを公開します。  
+1. InstallDTD.vbs を Microsoft.BizTalk.DTDToXSDGenerator.dll のインストールを実行して[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]\Developer Tools\Schema エディター拡張機能。 DTDToXSDGenerator.dll は、DTD ファイルを XSD に変換するのに使用できるクラスを公開します。  
   
-2. InstallWFX.vbs を Microsoft.BizTalk.WFXToXSDGenerator.dll のインストールを実行して[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]\Developer Tools\Schema エディター拡張機能。 WFXToXSDGenerator.dll は、WFX ファイルを XSD に変換するために使用できるクラスを公開します。  
+2. InstallWFX.vbs を Microsoft.BizTalk.WFXToXSDGenerator.dll のインストールを実行して[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]\Developer Tools\Schema エディター拡張機能。 WFXToXSDGenerator.dll は、WFX ファイルを XSD に変換するのに使用できるクラスを公開します。  
   
 ## <a name="see-also"></a>参照  
  [SDK のユーティリティ](../core/utilities-in-the-sdk.md)

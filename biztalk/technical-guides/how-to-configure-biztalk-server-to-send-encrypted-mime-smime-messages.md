@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 02f8bb1c1cb11df4d3438f6a8d8af38edf547ea7
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2dded85a219f5a32ce83ebc4da96f0f0566bf8c7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36981283"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65253390"
 ---
 # <a name="how-to-configure-biztalk-server-to-send-encrypted-mimesmime-messages"></a>暗号化された MIME/SMIME メッセージを送信する BizTalk Server を構成する方法
 このトピックでは、証明書を使用して暗号化された MIME/SMIME メッセージを送信する BizTalk Server を構成する方法について説明します。 以下の手順は、AS2 トランスポート経由で暗号化されたメッセージの送信の構成にも適用されます。  
@@ -37,7 +37,7 @@ ms.locfileid: "36981283"
    2.  **プロパティ**ウィンドウで、MIME/SMIME エンコーダー パイプライン コンポーネントを有効にする暗号化プロパティを構成**True**します。  
   
        > [!NOTE]  
-       >  BizTalk グループにパイプラインを展開した後、BizTalk Server 管理コンソールを使用して送信パイプライン コンポーネントのプロパティを構成できます。  
+       >  BizTalk グループにパイプラインを展開した後、BizTalk Server 管理コンソールを使用して、送信パイプライン コンポーネントのプロパティを構成することができます。  
   
    3.  送信パイプラインをビルドして配置します。  
   
@@ -53,4 +53,4 @@ ms.locfileid: "36981283"
    3.  クリックすると、送信ポートを右クリックしてインストールされている暗号化証明書を割り当てる**プロパティ**、 をクリックし、**証明書**します。 をクリックして**参照**、この送信ポートに割り当てるし をクリックしたい証明書を参照**OK**します。  
   
        > [!NOTE]  
-       >  かどうか、証明書がありません、ローカル コンピューター上で、**拇印**ボックスに入力し、証明書の拇印を貼り付けますまたはクリックして**OK**。 証明書の拇印の形式は、HHHH HHHH HHHH HHHH HHHH HHHH HHHH HHHH HHHH HHHH です。H は 16 進数です。
+       >  かどうか、証明書がありません、ローカル コンピューター上で、**拇印**ボックスに入力し、証明書の拇印を貼り付けますまたはクリックして**OK**。 証明書の拇印は、HHHH HHHH HHHH HHHH HHHH HHHH HHHH HHHH HHHH HHHH、H は 16 進形式を持ちます。

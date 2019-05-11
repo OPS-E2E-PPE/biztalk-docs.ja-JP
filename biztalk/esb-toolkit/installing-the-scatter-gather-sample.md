@@ -1,5 +1,5 @@
 ---
-title: スキャッター/ギャザー サンプルのインストール |Microsoft ドキュメント
+title: スキャッター/ギャザー サンプルをインストールする |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,18 +12,18 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4f85d6ca314c2287e0ba22f08166e4a28568e225
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 70e23a9b8beb1e64e9ce4e9252d783512f30e797
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22294362"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65261602"
 ---
 # <a name="installing-the-scatter-gather-sample"></a>スキャッター/ギャザー サンプルをインストールします。
-このセクションでは、スキャッター/ギャザー サンプルをインストールするためのプロセスについて説明します。 サンプルをインストールする必要があります[のインストールと旅程ランプでサンプルを実行して](../esb-toolkit/installing-and-running-the-itinerary-on-ramp-sample.md)と[をインストールして、動的の解決サンプルを実行している](../esb-toolkit/installing-and-running-the-dynamic-resolution-sample.md)をインストールして、このサンプルを使用する前にします。  
+このセクションでは、スキャッター/ギャザー サンプルをインストールするプロセスについて説明します。 サンプルをインストールする必要があります[をインストールして、日程ランプでサンプルを実行する](../esb-toolkit/installing-and-running-the-itinerary-on-ramp-sample.md)と[をインストールして、動的解決サンプルを実行している](../esb-toolkit/installing-and-running-the-dynamic-resolution-sample.md)インストールしてこのサンプルを使用する前にします。  
   
  **スキャッター/ギャザー サンプルをインストールするには**  
   
-1.  Windows エクスプローラで、\Source\Samples\ScatterGather\Install\Scripts フォルダーを開きます。  
+1.  Windows エクスプ ローラーで、\Source\Samples\ScatterGather\Install\Scripts フォルダーを開きます。  
   
-2.  という名前のスクリプト ファイルをダブルクリックして**Setup_bin.cmd**です。
+2.  という名前のスクリプト ファイルをダブルクリックして**Setup_bin.cmd**します。

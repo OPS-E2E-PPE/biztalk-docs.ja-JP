@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cda345b5a96f36125432e454b5f239f756a76652
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f824730d284724b3504c969b371877cad5250066
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37023760"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65242687"
 ---
 # <a name="running-the-scatter-gather-sample"></a>スキャッター/ギャザー サンプルを実行します。
 スキャッター/ギャザー サンプルを使用して、Windows フォームは、旅行プラン サービスの機能がこのパターンでどのように適用されるかを示すために、旅行プラン サンプルで提供されるクライアント アプリケーションをテストします。  
@@ -38,4 +38,4 @@ ms.locfileid: "37023760"
   
 7. をクリックして、 **SubmitRequest**行程入口サービスに要求を送信するボタンをクリックします。 応答メッセージを表示するフォルダー \Source\Samples\DynamicResolution\Test\FileDrop\Out を開きます。  
   
-   散布図を収集サンプルが ESB スケジュール サービスを使用する方法については、[、スキャッター/ギャザー サンプルのしくみ](../esb-toolkit/how-the-scatter-gather-sample-works.md)を参照してください。
+   散布図を収集サンプルが ESB スケジュール サービスを使用する方法については、次を参照してください。 [、スキャッター/ギャザー サンプルのしくみ](../esb-toolkit/how-the-scatter-gather-sample-works.md)します。

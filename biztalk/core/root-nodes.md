@@ -12,17 +12,17 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d8b2746e9e1886b676e656db883579b28898e3d5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 0886e1098c3cdc561f878c0a99615f197f937ef5
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37019667"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65254763"
 ---
 # <a name="root-nodes"></a>ルート ノード
 BizTalk エディターの子ノード、**スキーマ**ノードと呼ばれる**ルート**ノード。 **ルート**ノードは、特殊な種類の**レコード**ノードで、通常よりもいくつかのプロパティがあると**レコード**ノード。 **ルート**ノードは、スキーマによって示されるドキュメントの種類を表すし、必要に応じて変更できます。 たとえば、変更、**ルート**ノードその it が purchaseOrder、orderAcknowledgment、shipnotice など、スキーマが表すメッセージの種類について説明します。  
 
- BizTalk エディターで、新しい XML スキーマを作成するときに、**スキーマ**ノードと 1 つ**ルート**ノードが自動的に作成されます。 その他を作成することができます**ルート**ノードの子として、**スキーマ**ノードである 1 つの XML スキーマ定義 (XSD) 言語表記でスキーマのライブラリを作成できます。 たとえば、スキーマのライブラリを作成して、注文書の送信やさまざまなルート ノードの名前付け (purchaseOrder、orderAcknowledgment、shipNotice など) に関連するメッセージのスキーマを表すことができます。  
+ BizTalk エディターで、新しい XML スキーマを作成するときに、**スキーマ**ノードと 1 つ**ルート**ノードが自動的に作成されます。 その他を作成することができます**ルート**ノードの子として、**スキーマ**ノードである 1 つの XML スキーマ定義 (XSD) 言語表記でスキーマのライブラリを作成できます。 たとえば、関連の注文を送信するメッセージのさまざまなスキーマを記述するスキーマのライブラリを作成する、さまざまなルート ノード purchaseOrder、orderAcknowledgment、および shipNotice 名前付け。  
 
 ## <a name="xsd-representation"></a>XSD 表記  
  次の例に対応するスキーマの XSD 表記で、行を示しています、**ルート**スキーマのツリー ビューでノード。  
@@ -55,7 +55,7 @@ BizTalk エディターの子ノード、**スキーマ**ノードと呼ばれ�
 </xs:schema>  
 ```  
 
- 対応する XML インスタンス メッセージには、次の基本構造が必要です。  
+ 対応する XML インスタンス メッセージには、次の基本的な構造をいる必要があります。  
 
 ```  
 <?xml version="1.0"?>  

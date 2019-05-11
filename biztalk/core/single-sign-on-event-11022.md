@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 11022 |Microsoft Docs'
+title: シングル サインオン:イベント 11022 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5c21128bb7804eae88eacc87cffb0fd0d2c0490c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6ee404410a4c1a03b4e910e8f1154edb82e90c11
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36966787"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65266551"
 ---
-# <a name="single-sign-on-event-11022"></a>シングル サインオン: イベント 11022
+# <a name="single-sign-on-event-11022"></a>シングル サインオン:イベント 11022
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                                                                                                                                                                                                                                                                                                                                |
@@ -30,10 +30,10 @@ ms.locfileid: "36966787"
 |  イベント ソース   |                                                                                                                                                                                             ENTSSO                                                                                                                                                                                             |
 |    コンポーネント    |                                                                                                                                                                                              なし                                                                                                                                                                                               |
 |  シンボル名  |                                                                                                                                                                   SSO_WARN_EXTERNAL_TO_EXTERNAL_MAPPING_CONFLICT_NOT_ALLOWED                                                                                                                                                                   |
-|  メッセージ テキスト   | 外部パスワード変更により、異なる外部アカウントが変更される可能性がありました。%r<br /><br /> この外部システムのアダプターは、マッピングの競合を許可しないよう構成されているため、実行できません。%r<br /><br /> 追跡 ID: %1 %r<br /><br /> アダプター: % 2 %r<br /><br /> Windows アカウント: % 3 %r<br /><br /> 外部アカウント 1: % 4 %r<br /><br /> 外部アカウント 2: %5 |
+|  メッセージ テキスト   | 外部パスワード変更が原因で別の外部アカウント changed.%r を<br /><br /> この外部システムのアダプタがマッピング conflicts.%r を許可しないように構成されているため、これは、許可されていません<br /><br /> 追跡 ID: %1 %r<br /><br /> アダプター: % 2 %r<br /><br /> Windows アカウント: % 3 %r<br /><br /> 外部アカウント 1: % 4 %r<br /><br /> 外部アカウント 2: %5 |
   
 ## <a name="explanation"></a>説明  
- これは、別の外部アカウントを変更する可能性があった外部パスワード変更の失敗を通知する情報メッセージです。  
+ これは、情報メッセージを別の外部アカウントを変更する原因となる外部パスワード変更の失敗を報告します。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- 変更は行われませんでしたが (このシステムはマッピングの競合を許可しないように構成されているため)、この試みが事前にわかっていて承認したものであることを直ちに確認する必要があります。 そうである場合は、何もする必要はありません。 そうでなかった場合は、この変更がどこで行われたのかを調べ、システム内の安全な場所であることを確認してください。
+ (このシステムは、マッピングの競合を許可しないように構成されている) ために、変更は行われませんを確認してくださいすぐに、サポート技術情報の承認と、この試行が行われたことです。 場合は、アクションは必要ありません。 それ以外の場合は、変更が開始されると、システム内の安全な場所があることを確認します。

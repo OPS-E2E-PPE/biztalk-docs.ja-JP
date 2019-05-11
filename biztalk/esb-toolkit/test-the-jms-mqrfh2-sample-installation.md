@@ -1,5 +1,5 @@
 ---
-title: JMS MQRFH2 サンプルのインストールをテスト |Microsoft ドキュメント
+title: JMS MQRFH2 サンプル インストールのテスト |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,18 +12,18 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5970f12479cddfb6a635cbd00dd139495a2f6242
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d22f609ef8de65845ff36cc1e60b2942faa956de
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22294618"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65268670"
 ---
-# <a name="test-the-jms-mqrfh2-sample-installation"></a>JMS MQRFH2 サンプルのインストールをテストします。
-インストールが成功したのと操作をチェックすることができます、 [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] JMS MQRFH2 サンプル サンプル シナリオのいずれかを実行する前にします。  
+# <a name="test-the-jms-mqrfh2-sample-installation"></a>JMS MQRFH2 サンプル インストールをテストします。
+正常にインストールしの操作を確認できます、 [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] JMS MQRFH2 サンプル サンプル シナリオのいずれかを実行する前にします。  
   
- **JMS MQRFH2 サンプルのインストールをテストするには**  
+ **JMS MQRFH2 サンプル インストールをテストするには**  
   
-1.  "RFHUtil"を使用して JMS \Source\Samples\JMS\Test\Data\Load フォルダーで ESB をという名前のキューにテスト メッセージを記述するユーティリティをテストします。JMS です。サンプルです。SENDTOBIZTALK です。  
+1.  "RFHUtil"を使用して、JMS \Source\Samples\JMS\Test\Data\Load フォルダーで ESB という名前のキューにテスト メッセージを記述するためのユーティリティをテストします。JMS します。サンプルです。SENDTOBIZTALK します。  
   
-2.  このサンプルでは、送信先キューおよび、応答キューにメッセージのコピーに、メッセージを送信します。
+2.  このサンプルでは、送信先キューを返信キューにメッセージのコピーをメッセージを送信します。

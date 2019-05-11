@@ -16,12 +16,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 62747b5f1669026b3b1eaf7b2f48f87242947890
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8758f174e3a98a4502104da2d7e79adfc5b93270
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36992363"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65269080"
 ---
 # <a name="hl7-24-folders-and-events"></a>HL7 2.4 のフォルダーとイベント
 次の表は、HL7 でエンコードされたメッセージの HL7 バージョン 2.4 のフォルダー内のセットアップ ウィザードによって作成されるサブフォルダーを一覧表示します。 これらのサブフォルダーは、Microsoft BizTalk Accelerator for HL7 のために使用するスキーマを含めることが ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) を検証する、解析し、このテーブルの [イベント] 列に表示されるイベントをシリアル化します。 サブフォルダー名には、これらのスキーマをサポートするイベントの種類について説明します。  
@@ -35,7 +35,7 @@ ms.locfileid: "36992363"
 |Query|J01、J02、K11、K13、K15、Q01 Q05、Q07 Q09、Q11、Q13、Q15 Q17、R07 R09、Z75 Z99|  
 |Master ファイル|M01 M12 の MFA|  
 |注文エントリ|O01 O22、Q06、Q26 Q30、RAR、RDR、RER、RGR、権限が必要です、V01 V04、Z73 Z74|  
-|アプリケーション管理|N01 N02|  
+|アプリケーションの管理|N01 N02|  
 |財務管理|P01 P06 P10|  
 |患者のケア|PC1 PCH PCJ PCL|  
 |スケジューリング|S01 S26|  

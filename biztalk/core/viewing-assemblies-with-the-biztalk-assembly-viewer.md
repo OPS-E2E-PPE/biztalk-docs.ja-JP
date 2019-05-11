@@ -1,5 +1,5 @@
 ---
-title: BizTalk アセンブリ ビューアーを使用してアセンブリの表示 |Microsoft ドキュメント
+title: BizTalk アセンブリ ビューアーを使用したアセンブリの表示 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7567a5fad06137626fa371790778917b2f92a1bb
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f548bca847aba8e15cd464a6699f894e15fe8d65
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22287746"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65243183"
 ---
 # <a name="viewing-assemblies-with-the-biztalk-assembly-viewer"></a>BizTalk アセンブリ ビューアーを使用したアセンブリの表示
 アプリケーションの開発時やアセンブリの展開時には、どのアセンブリが展開されていて使用可能であるかを表示できる必要があります。 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] には、このための便利なツールとして BizTalk アセンブリ ビューアーが用意されています。  
@@ -46,4 +46,4 @@ ms.locfileid: "22287746"
   
 -   [登録および BizTalk アセンブリ ビューアーを削除する方法](../core/how-to-register-and-remove-the-biztalk-assembly-viewer.md)  
   
--   [ローカル サーバー上のアセンブリと型を表示する方法](../core/how-to-view-assemblies-and-types-on-the-local-server.md)
+-   [ローカル サーバーにアセンブリおよび型を表示する方法](../core/how-to-view-assemblies-and-types-on-the-local-server.md)

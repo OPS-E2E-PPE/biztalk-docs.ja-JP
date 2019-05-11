@@ -1,5 +1,5 @@
 ---
-title: JD Edwards OneWorld アダプターのトラブルシューティング |Microsoft ドキュメント
+title: JD Edwards OneWorld アダプターのトラブルシューティング |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9ba2dd62e1d4b6dc0af1845d3129e69dbe582226
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: 4ac3c1d96de7faaf4200f9ee93387cc4a9a36933
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
-ms.locfileid: "24015989"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65306419"
 ---
 # <a name="troubleshooting-the-adapter"></a>アダプターのトラブルシューティング
 このトピックでは、Microsoft BizTalk Adapter for JD Edwards OneWorld の使用中に発生する可能性がある問題の特定と解決に役立つ情報を提供します。  
@@ -27,10 +27,10 @@ ms.locfileid: "24015989"
   
 |送信ポートのプロパティ|受信ポートのプロパティ|  
 |------------------------|---------------------------|  
-|[ユーザー名]|イベント ファイル パス|  
+|Username|イベント ファイル パス|  
 |JDE 環境|イベント ターゲット名のプレフィックス|  
 |Host||  
-|ポート||  
+|Port||  
 |Java_Home||  
 |JDE JAR ファイル||  
   

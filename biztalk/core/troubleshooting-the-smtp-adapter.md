@@ -1,5 +1,5 @@
 ---
-title: SMTP アダプターのトラブルシューティング |Microsoft ドキュメント
+title: SMTP アダプターのトラブルシューティング |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 59a973a598b6f2663db67d8d4659cdda0c21688b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 45cb32744ff30d5277e9cc4cae6fc80787c55839
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22284234"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65253882"
 ---
 # <a name="troubleshooting-the-smtp-adapter"></a>SMTP アダプターのトラブルシューティング
 このセクションでは、SMTP アダプターに関する問題の診断に使用できるトラブルシューティング手法と SMTP アダプターを使用する際の既知の問題点について説明します。  

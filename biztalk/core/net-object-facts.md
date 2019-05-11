@@ -1,5 +1,5 @@
 ---
-title: .NET オブジェクト ファクト |Microsoft ドキュメント
+title: .NET オブジェクト ファクト |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,17 +16,17 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 37c72404200acbda9f49d64fd95863e5b06eb416
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 19a73a5c74227262116322edbf9ffe8f4a030e93
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22262954"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65263456"
 ---
 # <a name="net-object-facts"></a>.NET オブジェクトのファクト
 ビジネス ルール作成ツールで、データ ソースとして .NET アセンブリを指定できます。 アセンブリからクラスまたはクラス メンバーを続けて選択して、ボキャブラリの定義やルール上にドラッグできます。  
   
- アサートされた .NET オブジェクトの処理は、処理の種類の中で最も一般的です。 エンジンは、一意のインスタンスとして各オブジェクトを処理します。 詳細については、**Assert**関数を参照してください[エンジンの制御関数](../core/engine-control-functions.md)です。  
+ アサートされた .NET オブジェクトの処理は、処理の種類の最も簡単です。 エンジンは、一意のインスタンスとして、各オブジェクトを処理します。 詳細については、**Assert**関数を参照してください[エンジン制御関数](../core/engine-control-functions.md)します。  
   
 ## <a name="see-also"></a>参照  
  [ファクト](../core/facts.md)

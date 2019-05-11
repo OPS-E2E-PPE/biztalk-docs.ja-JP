@@ -1,5 +1,5 @@
 ---
-title: 実行中のオーケストレーションのデータ損失の解決 |Microsoft ドキュメント
+title: 進行中のオーケストレーションのデータ損失の解決 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -22,12 +22,12 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5eca757b80e31ee5db829d2d2079bf657d01079b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: caef8b0cb30b739406a64a6f1ee5add8939ac38e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22269002"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65254975"
 ---
 # <a name="resolving-data-loss-of-in-progress-orchestrations"></a>進行中のオーケストレーションのデータ損失の解決
 メッセージ ボックス データベースには、現在進行中のオーケストレーションの状態情報が格納されます。 メッセージ ボックス データベースで正確にどのデータの損失があったかを検出する方法はありませんが、損失データの情報を収集するための手段はあります。  

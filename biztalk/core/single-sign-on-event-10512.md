@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10512 |Microsoft Docs'
+title: シングル サインオン:イベント 10512 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 54ba5a340a1a7590dae72016a3e747726ea68125
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: bf29293c12a566a82835510e07f23e52ba0ba243
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36980963"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65243393"
 ---
-# <a name="single-sign-on-event-10512"></a>シングル サインオン: イベント 10512
+# <a name="single-sign-on-event-10512"></a>シングル サインオン:イベント 10512
 ## <a name="details"></a>詳細  
 
 |                 |                                                            |
@@ -28,20 +28,20 @@ ms.locfileid: "36980963"
 | 製品バージョン | [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)] |
 |    イベント ID     |                           10512                            |
 |  イベント ソース   |                           ENTSSO                           |
-|    コンポーネント    |                            N\A                             |
+|    コンポーネント    |                            該当なし                             |
 |  シンボル名  |                   SSO_ERROR_LOADLIBRARY                    |
-|  メッセージ テキスト   |      %1 を読み込めませんでした。%r<br /><br /> エラー コード: %2。       |
+|  メッセージ テキスト   |      %1 を読み込めませんでした %r<br /><br /> エラー コード: %2。       |
 
 ## <a name="explanation"></a>説明  
- このエラー イベントは、指定されたダイナミック リンク ライブラリ (DLL) を SSO サーバー プロセスに読み込めなかったことを示します。 DLL が SSO インストール ディレクトリ (通常、C:\Program Files\Common Files\Enterprise Single Sign-On) に存在しない場合、セットアップが正常に完了していないか、セットアップ完了後に DLL が削除されたを示している可能性があります。 DLL が存在する場合は、SSO サービスで DLL への適切なパスを解決できないという問題が発生している可能性があります。 さらに、DLL 自体が壊れている可能性もあります。  
+ このエラー イベントは、SSO サーバー プロセスに指定されたダイナミック リンク ライブラリ (DLL) を読み込めなかったことを示します。 セットアップが正常に完了していないこと、またはセットアップ後に、DLL が削除されたことが完了した DLL が SSO インストール ディレクトリの通常 C:\Program files \common files \enterprise でシングル サインオン、不足している可能性があります。 DLL が存在する場合、DLL への正しいパスを解決する SSO サービスに問題があります。 さらに、DLL 自体が破損する可能性があります。  
 
 ## <a name="user-action"></a>ユーザーの操作  
  このエラーを解決するには、以下の 1 つ以上の操作を実行します。  
 
-- 広い範囲でセットアップの失敗が疑われる場合は、製品のアンインストールと再インストールが必要になることがあります。  
+- 多くの障害のセットアップが疑われるをアンインストールして、製品を再インストールする必要があります。  
 
-- 1 つの DLL が不足または破損している場合は、DLL の置き換えを試みてからサービスを再起動してください。  
+- 1 つの DLL が見つからないか壊れている場合、しようとして、サービスを再起動します。  
 
-  詳細については、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ヘルプの次の情報を参照してください:   
+  詳細については、の次のリソースを参照してください。[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプ。  
 
 - [Enterprise Single Sign-On の実装](../core/implementing-enterprise-single-sign-on.md)

@@ -1,5 +1,5 @@
 ---
-title: Namespace コンポーネントのテストを実行している |Microsoft ドキュメント
+title: Namespace コンポーネントのテストを実行している |。Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,42 +12,42 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a0ae865e91fd6ff796cb870c71840bde8a95831e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7e60a4ee44d80747bdeb50ac199c2d5354482abb
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22294938"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65242705"
 ---
 # <a name="running-the-namespace-component-tests"></a>Namespace コンポーネントのテストを実行しています。
-次の手順は 4 つのテスト シナリオのすべてを実行する方法を示しています、 [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] Namespace コンポーネント サンプルです。  
+次の手順は 4 つのテスト シナリオのすべてを実行する方法を示しています、 [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] Namespace コンポーネント サンプル。  
   
- **Namespace コンポーネント サンプルのテストのシナリオを実行するには**  
+ **Namespace コンポーネント サンプルのテスト シナリオを実行するには**  
   
-1.  最初にこのサンプルを実行する前に、受信場所と送信ポートの URL を指しているソース配布ファイルに適切なサブフォルダーを確認します。 受信場所のサブフォルダー \Source\Samples\Namespace\Test\Filedrop\In とサブフォルダー \Source\Samples\Namespace\Test\Filedrop\Out 送信ポートの URL を指定します。  
+1.  最初にこのサンプルを実行する前に、受信場所と送信ポートの URL を指しているソース配布ファイルの適切なサブフォルダーを確認します。 受信場所のサブフォルダー \Source\Samples\Namespace\Test\Filedrop\In と送信ポートの URL のサブフォルダー \Source\Samples\Namespace\Test\Filedrop\Out を指定します。  
   
-2.  GlobalBank.ESB アプリケーションが既に実行されていない場合は、Microsoft BizTalk 管理コンソールを使用して、開始します。  
+2.  GlobalBank.ESB アプリケーションが実行されていない場合は、Microsoft の BizTalk 管理コンソールを使用して、開始します。  
   
-3.  (ESB インストール フォルダーの \Source\Samples\Namespace\Test\Data\ サブフォルダーにあります)、TEST_Add_to_PassThrough.0000.ns.xml をという名前のファイルのコピーを作成し、「test _」プレフィックスを削除することで、コピーの名前を変更します。  
+3.  (、ESB のインストール フォルダーの \Source\Samples\Namespace\Test\Data\ サブフォルダーにあります)、TEST_Add_to_PassThrough.0000.ns.xml という名前のファイルのコピーを作成し、「test _」プレフィックスを削除することで、コピーの名前を変更します。  
   
 4.  \Source\Samples\Namespace\Test\Filedrop\In サブフォルダーに名前が変更されたファイルをコピーします。  
   
-5.  ESB は、メッセージを取得、名前空間を追加し、\Source\Samples\Namespace\Test\Filedrop\Out サブフォルダーに、更新されたメッセージをドロップします。 入力を開き、このテストの結果を確認するためのテキスト エディターでファイルを出力します。  
+5.  ESB メッセージを取得するには、名前空間を追加および \Source\Samples\Namespace\Test\Filedrop\Out サブフォルダーに更新されたメッセージをドロップします。 入力を開き、このテストの効果を表示するテキスト エディターでファイルを出力します。  
   
-6.  2 つ目のテストを実行します。 TEST_Add_to_Remove.0000.ns.xml をという名前のファイルのコピーを作成し、「test _」プレフィックスを削除することで名前を変更します。  
+6.  2 つ目のテストを実行します。 TEST_Add_to_Remove.0000.ns.xml という名前のファイルのコピーを作成し、「test _」プレフィックスを削除して名前を変更します。  
   
 7.  \Source\Samples\Namespace\Test\Filedrop\In サブフォルダーに名前が変更されたファイルをコピーします。  
   
-8.  ESB は、メッセージを取得、名前空間を追加、新しい名前空間を削除、および \Source\Samples\Namespace\Test\Filedrop\Out サブフォルダーに、更新されたメッセージをドロップをします。 入力を開き、このテストの結果を確認するためのテキスト エディターでファイルを出力します。  
+8.  ESB でメッセージを取得、名前空間を追加、新しい名前空間を削除しますおよび \Source\Samples\Namespace\Test\Filedrop\Out サブフォルダーに更新されたメッセージをドロップします。 入力を開き、このテストの効果を表示するテキスト エディターでファイルを出力します。  
   
-9. 3 番目のテストを実行します。 TEST_PassThrough_to_Remove.0000.ns.xml をという名前のファイルのコピーを作成し、「test _」プレフィックスを削除することで名前を変更します。  
+9. 3 番目のテストを実行します。 TEST_PassThrough_to_Remove.0000.ns.xml という名前のファイルのコピーを作成し、「test _」プレフィックスを削除して名前を変更します。  
   
 10. \Source\Samples\Namespace\Test\Filedrop\In サブフォルダーに名前が変更されたファイルをコピーします。  
   
-11. ESB は、メッセージを取得、既存の名前空間を削除し、\Source\Samples\Namespace\Test\Filedrop\Out サブフォルダーに、更新されたメッセージをドロップします。 入力を開き、このテストの結果を確認するためのテキスト エディターでファイルを出力します。  
+11. ESB メッセージを取得するには、既存の名前空間を削除および \Source\Samples\Namespace\Test\Filedrop\Out サブフォルダーに更新されたメッセージをドロップします。 入力を開き、このテストの効果を表示するテキスト エディターでファイルを出力します。  
   
-12. 最後に、4 つ目のテストを実行します。 TEST_AddViaExtraction_to_PassThrough.0000.ns.xml をという名前のファイルのコピーを作成し、「test _」プレフィックスを削除することで名前を変更します。  
+12. 最後に、4 番目のテストを実行します。 TEST_AddViaExtraction_to_PassThrough.0000.ns.xml という名前のファイルのコピーを作成し、「test _」プレフィックスを削除して名前を変更します。  
   
 13. \Source\Samples\Namespace\Test\Filedrop\In サブフォルダーに名前が変更されたファイルをコピーします。  
   
-14. ESB は、メッセージを取得で指定された要素を抽出し、 **ExtractionNodeXPath**プロパティがこの要素で指定された名前空間の値からメッセージを作成し、\Source\Samples\ に更新されたメッセージをドロップします。Namespace\Test\Filedrop\Out サブフォルダーです。 入力を開き、このテストの結果を確認するためのテキスト エディターでファイルを出力します。
+14. ESB は、メッセージを取得で指定された要素を抽出し、 **ExtractionNodeXPath**プロパティ、この要素で指定された名前空間の値からメッセージを作成し、\Source\Samples\ に更新されたメッセージをドロップします。Namespace\Test\Filedrop\Out サブフォルダーです。 入力を開き、このテストの効果を表示するテキスト エディターでファイルを出力します。
