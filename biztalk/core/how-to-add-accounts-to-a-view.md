@@ -16,36 +16,36 @@ caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 39d1d6b29c7f0b2b7704d6634b49b93a0aede738
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 53e1811e30ed1c74023b4402bcfc0f0d86b2c516
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36985443"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65343327"
 ---
-# <a name="how-to-add-accounts-to-a-view"></a><span data-ttu-id="92a95-102">アカウントをビューに追加する方法</span><span class="sxs-lookup"><span data-stu-id="92a95-102">How to Add Accounts to a View</span></span>
-<span data-ttu-id="92a95-103">管理者を使用して、**アカウントの追加**BAM ビューにユーザーを関連付けるし、BAM Excel ワークシートを不正アクセスから保護するコマンド。</span><span class="sxs-lookup"><span data-stu-id="92a95-103">Administrators use the **add-account** command to associate users with BAM views and protect BAM Excel Spreadsheet views from unauthorized access.</span></span> <span data-ttu-id="92a95-104">ユーザーが BAM ビューを保存するときに、ビューはブック内で非表示になっている SQL 接続文字列を参照します。</span><span class="sxs-lookup"><span data-stu-id="92a95-104">When users save BAM views, the views reference a SQL connection string that is hidden within the workbook.</span></span> <span data-ttu-id="92a95-105">ブックは保護されていますが、さらにドキュメントが確実に保護されるようにする必要があります。</span><span class="sxs-lookup"><span data-stu-id="92a95-105">The workbook is protected, but you must ensure that the document is protected.</span></span>  
+# <a name="how-to-add-accounts-to-a-view"></a><span data-ttu-id="8a0b1-102">アカウントをビューに追加する方法</span><span class="sxs-lookup"><span data-stu-id="8a0b1-102">How to Add Accounts to a View</span></span>
+<span data-ttu-id="8a0b1-103">管理者を使用して、**アカウントの追加**BAM ビューにユーザーを関連付けるし、BAM Excel ワークシートを不正アクセスから保護するコマンド。</span><span class="sxs-lookup"><span data-stu-id="8a0b1-103">Administrators use the **add-account** command to associate users with BAM views and protect BAM Excel Spreadsheet views from unauthorized access.</span></span> <span data-ttu-id="8a0b1-104">ユーザーが BAM ビューを保存するときに、ビューはブック内で非表示になっている SQL 接続文字列を参照します。</span><span class="sxs-lookup"><span data-stu-id="8a0b1-104">When users save BAM views, the views reference a SQL connection string that is hidden within the workbook.</span></span> <span data-ttu-id="8a0b1-105">ブックは保護されていますが、さらにドキュメントが確実に保護されるようにする必要があります。</span><span class="sxs-lookup"><span data-stu-id="8a0b1-105">The workbook is protected, but you must ensure that the document is protected.</span></span>  
   
- <span data-ttu-id="92a95-106">ユーザーを BAM ビューに関連付けるときに、アクセスを許可したユーザーまたはグループのみにビューへのアクセスを制限します。</span><span class="sxs-lookup"><span data-stu-id="92a95-106">When you associate users with BAM views, you restrict access to the views to only the users or groups to whom you grant access.</span></span>  
+ <span data-ttu-id="8a0b1-106">ユーザーを BAM ビューに関連付けるときに、アクセスを許可したユーザーまたはグループのみにビューへのアクセスを制限します。</span><span class="sxs-lookup"><span data-stu-id="8a0b1-106">When you associate users with BAM views, you restrict access to the views to only the users or groups to whom you grant access.</span></span>  
   
 > [!IMPORTANT]
->  <span data-ttu-id="92a95-107">リアルタイム集計 (Rta) を使用している場合で追加されたユーザー**アカウントの追加**SQL Server を実行しているコンピューターへのログオン権限を自動的に付与することはできません。</span><span class="sxs-lookup"><span data-stu-id="92a95-107">If you are using real-time aggregations (RTAs), users added with **add-account** are not automatically granted logon rights to the computer running SQL Server.</span></span> <span data-ttu-id="92a95-108">RTA を使用している場合は、RTA のビューを表示しなければならないすべてのユーザーを含む、Windows ユーザー グループの作成を検討してください。</span><span class="sxs-lookup"><span data-stu-id="92a95-108">If you are using RTAs, consider establishing a Windows user group that contains all of the users that need to see views of the RTAs.</span></span> <span data-ttu-id="92a95-109">そのグループ、BAM プライマリ インポート データベースをホストする SQL server で SQL Server ログオン権限を明示的に許可します。</span><span class="sxs-lookup"><span data-stu-id="92a95-109">Grant that group explicit SQL Server logon rights on the SQL server hosting the BAM Primary Import database.</span></span>  
+>  <span data-ttu-id="8a0b1-107">リアルタイム集計 (Rta) を使用している場合で追加されたユーザー**アカウントの追加**SQL Server を実行しているコンピューターへのログオン権限を自動的に付与することはできません。</span><span class="sxs-lookup"><span data-stu-id="8a0b1-107">If you are using real-time aggregations (RTAs), users added with **add-account** are not automatically granted logon rights to the computer running SQL Server.</span></span> <span data-ttu-id="8a0b1-108">RTA を使用している場合は、RTA のビューを表示しなければならないすべてのユーザーを含む、Windows ユーザー グループの作成を検討してください。</span><span class="sxs-lookup"><span data-stu-id="8a0b1-108">If you are using RTAs, consider establishing a Windows user group that contains all of the users that need to see views of the RTAs.</span></span> <span data-ttu-id="8a0b1-109">そのグループ、BAM プライマリ インポート データベースをホストする SQL server で SQL Server ログオン権限を明示的に許可します。</span><span class="sxs-lookup"><span data-stu-id="8a0b1-109">Grant that group explicit SQL Server logon rights on the SQL server hosting the BAM Primary Import database.</span></span>  
   
- <span data-ttu-id="92a95-110">BAM ビューを表示する方法については、[BAM ビューをリストする方法](../core/how-to-list-bam-views.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="92a95-110">For information about viewing BAM views, see [How to List BAM Views](../core/how-to-list-bam-views.md).</span></span>  
+ <span data-ttu-id="8a0b1-110">BAM ビューを表示する方法については、次を参照してください。 [BAM ビューをリストする方法](../core/how-to-list-bam-views.md)します。</span><span class="sxs-lookup"><span data-stu-id="8a0b1-110">For information about viewing BAM views, see [How to List BAM Views](../core/how-to-list-bam-views.md).</span></span>  
   
-### <a name="to-add-an-account-to-a-view"></a><span data-ttu-id="92a95-111">アカウントをビューに追加するには</span><span class="sxs-lookup"><span data-stu-id="92a95-111">To add an account to a view</span></span>  
+### <a name="to-add-an-account-to-a-view"></a><span data-ttu-id="8a0b1-111">アカウントをビューに追加するには</span><span class="sxs-lookup"><span data-stu-id="8a0b1-111">To add an account to a view</span></span>  
   
-1. <span data-ttu-id="92a95-112">次のように、コマンド プロンプトを開きます: をクリックして**開始**、 をクリックして**実行**、型**cmd**、順にクリックします**OK**。</span><span class="sxs-lookup"><span data-stu-id="92a95-112">Open a command prompt as follows: Click **Start**, click **Run**, type **cmd**, and then click **OK**.</span></span>  
+1. <span data-ttu-id="8a0b1-112">次のように、コマンド プロンプトを開きます。をクリックして**開始**、 をクリックして**実行**、型**cmd**、順にクリックします**OK**。</span><span class="sxs-lookup"><span data-stu-id="8a0b1-112">Open a command prompt as follows: Click **Start**, click **Run**, type **cmd**, and then click **OK**.</span></span>  
   
-2. <span data-ttu-id="92a95-113">コマンド プロンプトで「[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking」と入力して、追跡フォルダーに移動し、</span><span class="sxs-lookup"><span data-stu-id="92a95-113">Navigate to the tracking folder by typing [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking at the command prompt.</span></span> <span data-ttu-id="92a95-114">**Enter**キーを押します。</span><span class="sxs-lookup"><span data-stu-id="92a95-114">Press **ENTER**.</span></span>  
+2. <span data-ttu-id="8a0b1-113">コマンド プロンプトで「[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking」と入力して、追跡フォルダーに移動し、</span><span class="sxs-lookup"><span data-stu-id="8a0b1-113">Navigate to the tracking folder by typing [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking at the command prompt.</span></span> <span data-ttu-id="8a0b1-114">**Enter**キーを押します。</span><span class="sxs-lookup"><span data-stu-id="8a0b1-114">Press **ENTER**.</span></span>  
   
-3. <span data-ttu-id="92a95-115">型**bm アカウントの追加-accountname:\<アカウント名\>-ビュー:\<ビュー名\>** します。</span><span class="sxs-lookup"><span data-stu-id="92a95-115">Type **bm add-account -AccountName:\<account name\> -View:\<view name\>**.</span></span>  
+3. <span data-ttu-id="8a0b1-115">型**bm アカウントの追加-accountname:\<アカウント名\>-ビュー:\<ビュー名\>** します。</span><span class="sxs-lookup"><span data-stu-id="8a0b1-115">Type **bm add-account -AccountName:\<account name\> -View:\<view name\>**.</span></span>  
   
    > [!NOTE]
-   >  <span data-ttu-id="92a95-116">ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。</span><span class="sxs-lookup"><span data-stu-id="92a95-116">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  
+   >  <span data-ttu-id="8a0b1-116">ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。</span><span class="sxs-lookup"><span data-stu-id="8a0b1-116">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  
   
-4. <span data-ttu-id="92a95-117">**Enter**キーを押します。</span><span class="sxs-lookup"><span data-stu-id="92a95-117">Press **ENTER**.</span></span>  
+4. <span data-ttu-id="8a0b1-117">**Enter**キーを押します。</span><span class="sxs-lookup"><span data-stu-id="8a0b1-117">Press **ENTER**.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="92a95-118">参照</span><span class="sxs-lookup"><span data-stu-id="92a95-118">See Also</span></span>  
- <span data-ttu-id="92a95-119">[BAM 動的インフラストラクチャの管理](../core/managing-the-bam-dynamic-infrastructure.md) </span><span class="sxs-lookup"><span data-stu-id="92a95-119">[Managing the BAM Dynamic Infrastructure](../core/managing-the-bam-dynamic-infrastructure.md) </span></span>  
- [<span data-ttu-id="92a95-120">BAM 管理ユーティリティ</span><span class="sxs-lookup"><span data-stu-id="92a95-120">BAM Management Utility</span></span>](../core/bam-management-utility.md)
+## <a name="see-also"></a><span data-ttu-id="8a0b1-118">参照</span><span class="sxs-lookup"><span data-stu-id="8a0b1-118">See Also</span></span>  
+ <span data-ttu-id="8a0b1-119">[BAM 動的インフラストラクチャの管理](../core/managing-the-bam-dynamic-infrastructure.md) </span><span class="sxs-lookup"><span data-stu-id="8a0b1-119">[Managing the BAM Dynamic Infrastructure](../core/managing-the-bam-dynamic-infrastructure.md) </span></span>  
+ [<span data-ttu-id="8a0b1-120">BAM 管理ユーティリティ</span><span class="sxs-lookup"><span data-stu-id="8a0b1-120">BAM Management Utility</span></span>](../core/bam-management-utility.md)

@@ -1,5 +1,5 @@
 ---
-title: OLAP および RTA 接続文字列プロパティの更新 |Microsoft ドキュメント
+title: OLAP および RTA 接続文字列プロパティの更新 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,19 +17,19 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bd36f84bab1d703479e11b0c6f1ffdd2cff69305
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 09acef6a0d97c437b1d25aa0f9f7e86c72c1e01c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22286858"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65398558"
 ---
-# <a name="updating-olap-and-rta-connection-string-properties"></a><span data-ttu-id="adcbe-102">OLAP 接続文字列および RTA 接続文字列のプロパティの更新</span><span class="sxs-lookup"><span data-stu-id="adcbe-102">Updating OLAP and RTA Connection String Properties</span></span>
-<span data-ttu-id="adcbe-103">OLAP 接続文字列およびリアルタイム集計 (RTA) 接続文字列の更新の詳細については、次のトピックを参照してください。これらのトピックでは、代替コンピューターへの BAM データベースの復元について説明しています。</span><span class="sxs-lookup"><span data-stu-id="adcbe-103">For information about updating the OLAP and real-time aggregation (RTA) connection strings, see the following topics that describe restoring BAM databases to alternate computers:</span></span>  
+# <a name="updating-olap-and-rta-connection-string-properties"></a><span data-ttu-id="5a518-102">OLAP 接続文字列および RTA 接続文字列のプロパティの更新</span><span class="sxs-lookup"><span data-stu-id="5a518-102">Updating OLAP and RTA Connection String Properties</span></span>
+<span data-ttu-id="5a518-103">OLAP 接続文字列およびリアルタイム集計 (RTA) 接続文字列の更新の詳細については、次のトピックを参照してください。これらのトピックでは、代替コンピューターへの BAM データベースの復元について説明しています。</span><span class="sxs-lookup"><span data-stu-id="5a518-103">For information about updating the OLAP and real-time aggregation (RTA) connection strings, see the following topics that describe restoring BAM databases to alternate computers:</span></span>  
   
--   [<span data-ttu-id="adcbe-104">BAM プライマリ インポート データベース名および接続文字列への参照を更新する方法</span><span class="sxs-lookup"><span data-stu-id="adcbe-104">How to Update References to the BAM Primary Import Database Name and Connection String</span></span>](../core/update-references-to-bam-primary-import-database-name-and-connection-string.md)  
+-   [<span data-ttu-id="5a518-104">BAM プライマリ インポート データベース名および接続文字列への参照を更新する方法</span><span class="sxs-lookup"><span data-stu-id="5a518-104">How to Update References to the BAM Primary Import Database Name and Connection String</span></span>](../core/update-references-to-bam-primary-import-database-name-and-connection-string.md)  
   
--   [<span data-ttu-id="adcbe-105">BAM Analysis Server およびスター スキーマ データベース名への参照を更新する方法</span><span class="sxs-lookup"><span data-stu-id="adcbe-105">How to Update References to the BAM Analysis Server and Star Schema Database Names</span></span>](../core/update-references-to-the-bam-analysis-server-and-star-schema-database-names.md)  
+-   [<span data-ttu-id="5a518-105">BAM Analysis Server およびスター スキーマ データベース名への参照を更新する方法</span><span class="sxs-lookup"><span data-stu-id="5a518-105">How to Update References to the BAM Analysis Server and Star Schema Database Names</span></span>](../core/update-references-to-the-bam-analysis-server-and-star-schema-database-names.md)  
   
-## <a name="see-also"></a><span data-ttu-id="adcbe-106">参照</span><span class="sxs-lookup"><span data-stu-id="adcbe-106">See Also</span></span>  
- [<span data-ttu-id="adcbe-107">BAM ランタイムの設定を変更します。</span><span class="sxs-lookup"><span data-stu-id="adcbe-107">Changing BAM Runtime Settings</span></span>](../core/changing-bam-runtime-settings.md)
+## <a name="see-also"></a><span data-ttu-id="5a518-106">参照</span><span class="sxs-lookup"><span data-stu-id="5a518-106">See Also</span></span>  
+ [<span data-ttu-id="5a518-107">BAM ランタイムの設定の変更</span><span class="sxs-lookup"><span data-stu-id="5a518-107">Changing BAM Runtime Settings</span></span>](../core/changing-bam-runtime-settings.md)

@@ -12,19 +12,19 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4f5fd535b1a4db0a960c8f993cd6daf22ee9d1b0
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 59c5dca63e5d4120aad364afe6ca2da740196ab2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36976883"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65251283"
 ---
-# <a name="create-the-dsrtxt-file"></a><span data-ttu-id="43b2f-102">DSR.txt ファイルを作成します。</span><span class="sxs-lookup"><span data-stu-id="43b2f-102">Create the DSR.txt File</span></span>
-<span data-ttu-id="43b2f-103">応答 DSR.txt メッセージ ファイルを作成するのにには、次の手順を使用します。</span><span class="sxs-lookup"><span data-stu-id="43b2f-103">Use the following procedure to create the response DSR.txt message file.</span></span> <span data-ttu-id="43b2f-104">このチュートリアルのシナリオを確認するのには、このファイルを後で使用します。</span><span class="sxs-lookup"><span data-stu-id="43b2f-104">You will use this file later to verify the tutorial scenario.</span></span>  
+# <a name="create-the-dsrtxt-file"></a><span data-ttu-id="ed876-102">DSR.txt ファイルを作成します。</span><span class="sxs-lookup"><span data-stu-id="ed876-102">Create the DSR.txt File</span></span>
+<span data-ttu-id="ed876-103">応答 DSR.txt メッセージ ファイルを作成するのにには、次の手順を使用します。</span><span class="sxs-lookup"><span data-stu-id="ed876-103">Use the following procedure to create the response DSR.txt message file.</span></span> <span data-ttu-id="ed876-104">このチュートリアルのシナリオを確認するのには、このファイルを後で使用します。</span><span class="sxs-lookup"><span data-stu-id="ed876-104">You will use this file later to verify the tutorial scenario.</span></span>  
   
-### <a name="to-create-the-dsrtxt-file"></a><span data-ttu-id="43b2f-105">DSR.txt ファイルを作成するには</span><span class="sxs-lookup"><span data-stu-id="43b2f-105">To create the DSR.txt file</span></span>  
+### <a name="to-create-the-dsrtxt-file"></a><span data-ttu-id="ed876-105">DSR.txt ファイルを作成するには</span><span class="sxs-lookup"><span data-stu-id="ed876-105">To create the DSR.txt file</span></span>  
   
-1. <span data-ttu-id="43b2f-106">メモ帳などのエディターを開き、エディターに次のテキストをコピーします。</span><span class="sxs-lookup"><span data-stu-id="43b2f-106">Open an editor, such as Notepad, and copy the following text into the editor:</span></span>  
+1. <span data-ttu-id="ed876-106">メモ帳などのエディターを開き、エディターに次のテキストをコピーします。</span><span class="sxs-lookup"><span data-stu-id="ed876-106">Open an editor, such as Notepad, and copy the following text into the editor:</span></span>  
   
    ```  
    MSH|^~\&|HIS||ADT||19990505||DSR^Q01|ZXT23469|P|2.4  
@@ -40,6 +40,6 @@ ms.locfileid: "36976883"
    DSP|||CO2 25 [20-30] MEQ/L STAT|LB  
    ```  
   
-2. <span data-ttu-id="43b2f-107">ファイルに保存します**DSR.txt**で、 \<*ドライブ*:\>\Program Files\Microsoft BizTalk\<バージョン\>HL7\SDK\Interrogative のアクセラレータチュートリアルのフォルダーと、エディターを閉じます。</span><span class="sxs-lookup"><span data-stu-id="43b2f-107">Save the file as **DSR.txt** in the \<*drive*:\>\Program Files\Microsoft BizTalk \<version\> Accelerator for HL7\SDK\Interrogative Tutorial folder, and then close the editor.</span></span>  
+2. <span data-ttu-id="ed876-107">ファイルに保存します**DSR.txt**で、 \<*ドライブ*:\>\Program Files\Microsoft BizTalk\<バージョン\>HL7\SDK\Interrogative のアクセラレータチュートリアルのフォルダーと、エディターを閉じます。</span><span class="sxs-lookup"><span data-stu-id="ed876-107">Save the file as **DSR.txt** in the \<*drive*:\>\Program Files\Microsoft BizTalk \<version\> Accelerator for HL7\SDK\Interrogative Tutorial folder, and then close the editor.</span></span>  
   
-   <span data-ttu-id="43b2f-108">進みます[手順 1: 一般的なヘッダーと確認スキーマ作成して展開](../../adapters-and-accelerators/accelerator-hl7/step-1-create-and-deploy-common-header-and-acknowledgment-schemas.md)します。</span><span class="sxs-lookup"><span data-stu-id="43b2f-108">Proceed to [Step 1: Create and Deploy Common Header and Acknowledgment Schemas](../../adapters-and-accelerators/accelerator-hl7/step-1-create-and-deploy-common-header-and-acknowledgment-schemas.md).</span></span>
+   <span data-ttu-id="ed876-108">続行する[手順 1。作成および展開の一般的なヘッダーと確認スキーマ](../../adapters-and-accelerators/accelerator-hl7/step-1-create-and-deploy-common-header-and-acknowledgment-schemas.md)します。</span><span class="sxs-lookup"><span data-stu-id="ed876-108">Proceed to [Step 1: Create and Deploy Common Header and Acknowledgment Schemas](../../adapters-and-accelerators/accelerator-hl7/step-1-create-and-deploy-common-header-and-acknowledgment-schemas.md).</span></span>

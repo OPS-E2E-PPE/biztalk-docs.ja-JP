@@ -15,15 +15,15 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 034f587d8c7d87f5fa6aa7e5e33ca4ef147d9f9b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b9a61a35059ff313506aca09898f489819f5064f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37014387"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65385327"
 ---
-# <a name="how-to-delete-user-mappings"></a><span data-ttu-id="cdfe8-102">ユーザー マッピングを削除する方法</span><span class="sxs-lookup"><span data-stu-id="cdfe8-102">How to Delete User Mappings</span></span>
-<span data-ttu-id="cdfe8-103">以下のコマンドを使用して、XML ファイルで指定された 1 つ以上のユーザー マッピングを削除できます。</span><span class="sxs-lookup"><span data-stu-id="cdfe8-103">Use these commands to delete one or more user mappings, as specified in the XML file.</span></span> <span data-ttu-id="cdfe8-104">XML ファイルの例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="cdfe8-104">The following is an example XML file.</span></span>  
+# <a name="how-to-delete-user-mappings"></a><span data-ttu-id="f4366-102">ユーザー マッピングを削除する方法</span><span class="sxs-lookup"><span data-stu-id="f4366-102">How to Delete User Mappings</span></span>
+<span data-ttu-id="f4366-103">以下のコマンドを使用して、XML ファイルで指定された 1 つ以上のユーザー マッピングを削除できます。</span><span class="sxs-lookup"><span data-stu-id="f4366-103">Use these commands to delete one or more user mappings, as specified in the XML file.</span></span> <span data-ttu-id="f4366-104">XML ファイルの例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="f4366-104">The following is an example XML file.</span></span>  
   
 ```  
 <sso>  
@@ -42,44 +42,44 @@ ms.locfileid: "37014387"
 </sso>  
 ```  
   
- <span data-ttu-id="cdfe8-105">ユーザーが、アプリケーション ユーザー アカウントのメンバーでないか Active Directory に登録されていない場合、このコマンドを使用してユーザー マッピングを SSO データベースから削除します。</span><span class="sxs-lookup"><span data-stu-id="cdfe8-105">If a user is not a member of the Application Users account, or does not exist in Active Directory, you should use this command to remove the user mapping from the SSO database.</span></span>  
+ <span data-ttu-id="f4366-105">ユーザーが、アプリケーション ユーザー アカウントのメンバーでないか Active Directory に登録されていない場合、このコマンドを使用してユーザー マッピングを SSO データベースから削除します。</span><span class="sxs-lookup"><span data-stu-id="f4366-105">If a user is not a member of the Application Users account, or does not exist in Active Directory, you should use this command to remove the user mapping from the SSO database.</span></span>  
   
- <span data-ttu-id="cdfe8-106">ユーザー アカウントを変更する場合は、このコマンドを使用して、古いユーザー マッピングを削除してから、新しいユーザー アカウントのマッピングを作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="cdfe8-106">If a user account is changed, you must use this command to remove the old user mapping, and then create a new user mapping for the new user account.</span></span> <span data-ttu-id="cdfe8-107">マッピングを作成する詳細については、[ユーザー マッピングを作成する方法](../core/how-to-create-user-mappings.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="cdfe8-107">For more information about creating a mapping, see [How to Create User Mappings](../core/how-to-create-user-mappings.md).</span></span>  
+ <span data-ttu-id="f4366-106">ユーザー アカウントを変更する場合は、このコマンドを使用して、古いユーザー マッピングを削除してから、新しいユーザー アカウントのマッピングを作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="f4366-106">If a user account is changed, you must use this command to remove the old user mapping, and then create a new user mapping for the new user account.</span></span> <span data-ttu-id="f4366-107">マッピングを作成する詳細については、次を参照してください。[ユーザー マッピングを作成する方法](../core/how-to-create-user-mappings.md)します。</span><span class="sxs-lookup"><span data-stu-id="f4366-107">For more information about creating a mapping, see [How to Create User Mappings](../core/how-to-create-user-mappings.md).</span></span>  
   
-### <a name="to-delete-user-mappings-using-the-administration-utility"></a><span data-ttu-id="cdfe8-108">管理ユーティリティを使用してユーザー マッピングを削除するには</span><span class="sxs-lookup"><span data-stu-id="cdfe8-108">To delete user mappings using the administration utility</span></span>  
+### <a name="to-delete-user-mappings-using-the-administration-utility"></a><span data-ttu-id="f4366-108">管理ユーティリティを使用してユーザー マッピングを削除するには</span><span class="sxs-lookup"><span data-stu-id="f4366-108">To delete user mappings using the administration utility</span></span>  
   
-1. <span data-ttu-id="cdfe8-109">**開始** メニューのをクリックして**実行**、し、入力**cmd**します。</span><span class="sxs-lookup"><span data-stu-id="cdfe8-109">On the **Start** menu, click **Run**, and then type **cmd**.</span></span>  
+1. <span data-ttu-id="f4366-109">**開始** メニューのをクリックして**実行**、し、入力**cmd**します。</span><span class="sxs-lookup"><span data-stu-id="f4366-109">On the **Start** menu, click **Run**, and then type **cmd**.</span></span>  
   
-2. <span data-ttu-id="cdfe8-110">コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。</span><span class="sxs-lookup"><span data-stu-id="cdfe8-110">At the command line, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="cdfe8-111">既定のインストール ディレクトリは\<*ドライブ*\>: \Program Files\Common \enterprise シングル サインオンします。</span><span class="sxs-lookup"><span data-stu-id="cdfe8-111">The default installation directory is \<*drive*\>:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
+2. <span data-ttu-id="f4366-110">コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。</span><span class="sxs-lookup"><span data-stu-id="f4366-110">At the command line, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="f4366-111">既定のインストール ディレクトリは\<*ドライブ*\>: \Program Files\Common \enterprise シングル サインオンします。</span><span class="sxs-lookup"><span data-stu-id="f4366-111">The default installation directory is \<*drive*\>:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
   
-3. <span data-ttu-id="cdfe8-112">型<strong>ssomanage – deletemappings *\<ファイル名をマッピング\></strong><em>ここで、 \<</em>ファイル名をマッピング*\>は削除するユーザー マッピングを格納しているファイルの名前。</span><span class="sxs-lookup"><span data-stu-id="cdfe8-112">Type <strong>ssomanage –deletemappings *\<mappings file name\></strong><em>, where \<</em>mappings file name*\> is the name of the file that contains the user mapping(s) you want to delete.</span></span>  
-  
-   > [!NOTE]
-   >  <span data-ttu-id="cdfe8-113">ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。</span><span class="sxs-lookup"><span data-stu-id="cdfe8-113">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  
-  
-### <a name="to-delete-a-specific-user-mapping-using-the-administration-utility"></a><span data-ttu-id="cdfe8-114">管理ユーティリティを使用して特定のユーザー マッピングを削除するには</span><span class="sxs-lookup"><span data-stu-id="cdfe8-114">To delete a specific user mapping using the administration utility</span></span>  
-  
-1. <span data-ttu-id="cdfe8-115">**開始** メニューのをクリックして**実行**、し、入力**cmd**します。</span><span class="sxs-lookup"><span data-stu-id="cdfe8-115">On the **Start** menu, click **Run**, and then type **cmd**.</span></span>  
-  
-2. <span data-ttu-id="cdfe8-116">コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。</span><span class="sxs-lookup"><span data-stu-id="cdfe8-116">At the command line, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="cdfe8-117">既定のインストール ディレクトリは*\<ドライブ*\>: \Program Files\Common \enterprise シングル サインオンします。</span><span class="sxs-lookup"><span data-stu-id="cdfe8-117">The default installation directory is *\<drive*\>:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
-  
-3. <span data-ttu-id="cdfe8-118">型 \**ssomanage – deletemapping *\<ドメイン\>*\\*\<username\> \*   *\<アプリケーション名\>\*\*<em>ここで、 *\<ドメイン\></em>が Windows ドメイン ユーザー アカウントの *\<ユーザー名\>* は、Windows ユーザー名と\<* アプリケーション名*\>はユーザー マッピングを削除する特定のアプリケーションです。</span><span class="sxs-lookup"><span data-stu-id="cdfe8-118">Type \**ssomanage –deletemapping *\<domain\>*\\*\<username\>\* *\<application name\>\*\*<em>, where *\<domain\></em> is the Windows domain for the user account, *\<username\>* is the Windows user name, and \<* application name*\> is the specific application for which you want to remove the user mapping.</span></span>  
+3. <span data-ttu-id="f4366-112">型<strong>ssomanage – deletemappings *\<ファイル名をマッピング\></strong><em>ここで、 \<</em>ファイル名をマッピング*\>は削除するユーザー マッピングを格納しているファイルの名前。</span><span class="sxs-lookup"><span data-stu-id="f4366-112">Type <strong>ssomanage –deletemappings *\<mappings file name\></strong><em>, where \<</em>mappings file name*\> is the name of the file that contains the user mapping(s) you want to delete.</span></span>  
   
    > [!NOTE]
-   >  <span data-ttu-id="cdfe8-119">ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。</span><span class="sxs-lookup"><span data-stu-id="cdfe8-119">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  
+   >  <span data-ttu-id="f4366-113">ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。</span><span class="sxs-lookup"><span data-stu-id="f4366-113">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  
   
-### <a name="to-delete-a-user-mapping-using-the-client-utility"></a><span data-ttu-id="cdfe8-120">クライアント ユーティリティを使用してユーザー マッピングを削除するには</span><span class="sxs-lookup"><span data-stu-id="cdfe8-120">To delete a user mapping using the client utility</span></span>  
+### <a name="to-delete-a-specific-user-mapping-using-the-administration-utility"></a><span data-ttu-id="f4366-114">管理ユーティリティを使用して特定のユーザー マッピングを削除するには</span><span class="sxs-lookup"><span data-stu-id="f4366-114">To delete a specific user mapping using the administration utility</span></span>  
   
-1. <span data-ttu-id="cdfe8-121">**開始** メニューのをクリックして**実行**、し、入力**cmd**します。</span><span class="sxs-lookup"><span data-stu-id="cdfe8-121">On the **Start** menu, click **Run**, and then type **cmd**.</span></span>  
+1. <span data-ttu-id="f4366-115">**開始** メニューのをクリックして**実行**、し、入力**cmd**します。</span><span class="sxs-lookup"><span data-stu-id="f4366-115">On the **Start** menu, click **Run**, and then type **cmd**.</span></span>  
   
-2. <span data-ttu-id="cdfe8-122">コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。</span><span class="sxs-lookup"><span data-stu-id="cdfe8-122">At the command line, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="cdfe8-123">既定のインストール ディレクトリは*\<ドライブ*\>: \Program Files\Common \enterprise シングル サインオンします。</span><span class="sxs-lookup"><span data-stu-id="cdfe8-123">The default installation directory is *\<drive*\>:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
+2. <span data-ttu-id="f4366-116">コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。</span><span class="sxs-lookup"><span data-stu-id="f4366-116">At the command line, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="f4366-117">既定のインストール ディレクトリは*\<ドライブ*\>: \Program Files\Common \enterprise シングル サインオンします。</span><span class="sxs-lookup"><span data-stu-id="f4366-117">The default installation directory is *\<drive*\>:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
   
-3. <span data-ttu-id="cdfe8-124">型 \* \* ssoclient – deletemapping *\<アプリケーション名\>\*\*<em>ここで、*\<アプリケーション名\></em>を削除する関連アプリケーションの名前を指定しますユーザーのマッピング。</span><span class="sxs-lookup"><span data-stu-id="cdfe8-124">Type \*\*ssoclient –deletemapping \*\<application name\>\*\*<em>, where \*\<application name\></em> is the name of the affiliate application you want to remove the user mapping for.</span></span>  
+3. <span data-ttu-id="f4366-118">型 \**ssomanage – deletemapping *\<ドメイン\>*\\*\<username\> \*   *\<アプリケーション名\>\*\*<em>ここで、 *\<ドメイン\></em>が Windows ドメイン ユーザー アカウントの *\<ユーザー名\>* は、Windows ユーザー名と\<* アプリケーション名*\>はユーザー マッピングを削除する特定のアプリケーションです。</span><span class="sxs-lookup"><span data-stu-id="f4366-118">Type \**ssomanage –deletemapping *\<domain\>*\\*\<username\>\* *\<application name\>\*\*<em>, where *\<domain\></em> is the Windows domain for the user account, *\<username\>* is the Windows user name, and \<* application name*\> is the specific application for which you want to remove the user mapping.</span></span>  
   
    > [!NOTE]
-   >  <span data-ttu-id="cdfe8-125">ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。</span><span class="sxs-lookup"><span data-stu-id="cdfe8-125">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  
+   >  <span data-ttu-id="f4366-119">ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。</span><span class="sxs-lookup"><span data-stu-id="f4366-119">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="cdfe8-126">参照</span><span class="sxs-lookup"><span data-stu-id="cdfe8-126">See Also</span></span>  
- <span data-ttu-id="cdfe8-127">[SSO マッピング](../core/sso-mappings.md) </span><span class="sxs-lookup"><span data-stu-id="cdfe8-127">[SSO Mappings](../core/sso-mappings.md) </span></span>  
- <span data-ttu-id="cdfe8-128">[関連アプリケーションの管理](../core/managing-affiliate-applications.md) </span><span class="sxs-lookup"><span data-stu-id="cdfe8-128">[Managing Affiliate Applications](../core/managing-affiliate-applications.md) </span></span>  
- [<span data-ttu-id="cdfe8-129">ユーザー マッピングの管理</span><span class="sxs-lookup"><span data-stu-id="cdfe8-129">Managing User Mappings</span></span>](../core/managing-user-mappings.md)
+### <a name="to-delete-a-user-mapping-using-the-client-utility"></a><span data-ttu-id="f4366-120">クライアント ユーティリティを使用してユーザー マッピングを削除するには</span><span class="sxs-lookup"><span data-stu-id="f4366-120">To delete a user mapping using the client utility</span></span>  
+  
+1. <span data-ttu-id="f4366-121">**開始** メニューのをクリックして**実行**、し、入力**cmd**します。</span><span class="sxs-lookup"><span data-stu-id="f4366-121">On the **Start** menu, click **Run**, and then type **cmd**.</span></span>  
+  
+2. <span data-ttu-id="f4366-122">コマンド ラインで、エンタープライズ シングル サインオンのインストール ディレクトリに移動します。</span><span class="sxs-lookup"><span data-stu-id="f4366-122">At the command line, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="f4366-123">既定のインストール ディレクトリは*\<ドライブ*\>: \Program Files\Common \enterprise シングル サインオンします。</span><span class="sxs-lookup"><span data-stu-id="f4366-123">The default installation directory is *\<drive*\>:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
+  
+3. <span data-ttu-id="f4366-124">型 \* \* ssoclient – deletemapping *\<アプリケーション名\>\*\*<em>ここで、*\<アプリケーション名\></em>を削除する関連アプリケーションの名前を指定しますユーザーのマッピング。</span><span class="sxs-lookup"><span data-stu-id="f4366-124">Type \*\*ssoclient –deletemapping \*\<application name\>\*\*<em>, where \*\<application name\></em> is the name of the affiliate application you want to remove the user mapping for.</span></span>  
+  
+   > [!NOTE]
+   >  <span data-ttu-id="f4366-125">ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。</span><span class="sxs-lookup"><span data-stu-id="f4366-125">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="f4366-126">参照</span><span class="sxs-lookup"><span data-stu-id="f4366-126">See Also</span></span>  
+ <span data-ttu-id="f4366-127">[SSO マッピング](../core/sso-mappings.md) </span><span class="sxs-lookup"><span data-stu-id="f4366-127">[SSO Mappings](../core/sso-mappings.md) </span></span>  
+ <span data-ttu-id="f4366-128">[関連アプリケーションの管理](../core/managing-affiliate-applications.md) </span><span class="sxs-lookup"><span data-stu-id="f4366-128">[Managing Affiliate Applications](../core/managing-affiliate-applications.md) </span></span>  
+ [<span data-ttu-id="f4366-129">ユーザー マッピングの管理</span><span class="sxs-lookup"><span data-stu-id="f4366-129">Managing User Mappings</span></span>](../core/managing-user-mappings.md)

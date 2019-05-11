@@ -16,20 +16,20 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7a61b07d34a27d7ceebd5b8d8e0b5171d1659e22
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2066207bd5c09bb3d6f1b1ba6f6802e5120a0e3a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37014179"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65379245"
 ---
-# <a name="web-application-samples"></a><span data-ttu-id="9578b-102">Web アプリケーションのサンプル</span><span class="sxs-lookup"><span data-stu-id="9578b-102">Web Application Samples</span></span>
-<span data-ttu-id="9578b-103">The Microsoft®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]ソフトウェア開発キット (SDK) には、RNIFSend.aspx サンプルおよび RNIFReceive.aspx サンプルが含まれています。</span><span class="sxs-lookup"><span data-stu-id="9578b-103">The Microsoft® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] Software Development Kit (SDK) includes an RNIFSend.aspx sample and an RNIFReceive.aspx sample.</span></span> <span data-ttu-id="9578b-104">これらの ASPX ページは、開始側から応答側への RNIF メッセージの送信、または受信側での RNIF メッセージの受信を行います。</span><span class="sxs-lookup"><span data-stu-id="9578b-104">These ASPX pages send RNIF messages from the initiator to the responder, or receive RNIF messages at the responder.</span></span>  
+# <a name="web-application-samples"></a><span data-ttu-id="76ad1-102">Web アプリケーションのサンプル</span><span class="sxs-lookup"><span data-stu-id="76ad1-102">Web Application Samples</span></span>
+<span data-ttu-id="76ad1-103">The Microsoft®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]ソフトウェア開発キット (SDK) には、RNIFSend.aspx サンプルおよび RNIFReceive.aspx サンプルが含まれています。</span><span class="sxs-lookup"><span data-stu-id="76ad1-103">The Microsoft® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] Software Development Kit (SDK) includes an RNIFSend.aspx sample and an RNIFReceive.aspx sample.</span></span> <span data-ttu-id="76ad1-104">これらの ASPX ページは、開始側から応答側への RNIF メッセージの送信、または受信側での RNIF メッセージの受信を行います。</span><span class="sxs-lookup"><span data-stu-id="76ad1-104">These ASPX pages send RNIF messages from the initiator to the responder, or receive RNIF messages at the responder.</span></span>  
   
- <span data-ttu-id="9578b-105">ASPX ページの機能の詳細については、[送信および受信 ASPX ページ](../../adapters-and-accelerators/accelerator-rosettanet/send-and-receive-aspx-pages.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="9578b-105">For more information about the functionality of the ASPX pages, see [Send and Receive ASPX Pages](../../adapters-and-accelerators/accelerator-rosettanet/send-and-receive-aspx-pages.md).</span></span> <span data-ttu-id="9578b-106">ここでは、サンプルを構築および実行する手順について説明します。</span><span class="sxs-lookup"><span data-stu-id="9578b-106">This section provides instructions for building and running the samples.</span></span>  
+ <span data-ttu-id="76ad1-105">ASPX ページの機能の詳細については、次を参照してください。[送信および受信 ASPX ページ](../../adapters-and-accelerators/accelerator-rosettanet/send-and-receive-aspx-pages.md)します。</span><span class="sxs-lookup"><span data-stu-id="76ad1-105">For more information about the functionality of the ASPX pages, see [Send and Receive ASPX Pages](../../adapters-and-accelerators/accelerator-rosettanet/send-and-receive-aspx-pages.md).</span></span> <span data-ttu-id="76ad1-106">ここでは、サンプルを構築および実行する手順について説明します。</span><span class="sxs-lookup"><span data-stu-id="76ad1-106">This section provides instructions for building and running the samples.</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="9578b-107">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="9578b-107">In This Section</span></span>  
+## <a name="in-this-section"></a><span data-ttu-id="76ad1-107">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="76ad1-107">In This Section</span></span>  
   
--   [<span data-ttu-id="9578b-108">RNIFSend</span><span class="sxs-lookup"><span data-stu-id="9578b-108">RNIFSend</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/rnifsend.md)  
+-   [<span data-ttu-id="76ad1-108">RNIFSend</span><span class="sxs-lookup"><span data-stu-id="76ad1-108">RNIFSend</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/rnifsend.md)  
   
--   [<span data-ttu-id="9578b-109">RNIFReceive</span><span class="sxs-lookup"><span data-stu-id="9578b-109">RNIFReceive</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/rnifreceive.md)
+-   [<span data-ttu-id="76ad1-109">RNIFReceive</span><span class="sxs-lookup"><span data-stu-id="76ad1-109">RNIFReceive</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/rnifreceive.md)

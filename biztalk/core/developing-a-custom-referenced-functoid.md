@@ -1,5 +1,5 @@
 ---
-title: Functoid が参照されているカスタムの開発 |Microsoft ドキュメント
+title: 参照 Functoid、カスタムの開発 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,18 +12,18 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c70f9cfcfaf50d92758f808346380b0a351a2f45
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9942af739bd0708f9b3cd4017eded7b3033770f9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22239226"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65389438"
 ---
-# <a name="developing-a-custom-referenced-functoid"></a><span data-ttu-id="2517b-102">参照型のカスタム Functoid の開発</span><span class="sxs-lookup"><span data-stu-id="2517b-102">Developing a Custom Referenced Functoid</span></span>
-<span data-ttu-id="2517b-103">参照型のカスタム Functoid は、インラインの実装コードをマップにコピーしません。</span><span class="sxs-lookup"><span data-stu-id="2517b-103">Custom referenced functoids do not copy implementation code inline into the map.</span></span> <span data-ttu-id="2517b-104">代わりに、生成されたスタイル シートに関連付けられた拡張オブジェクト ファイルにアセンブリ、クラス、およびメソッドへの参照が配置され、実行時に呼び出されます。</span><span class="sxs-lookup"><span data-stu-id="2517b-104">Instead, a reference to the assembly, class, and method is placed in the extension object file associated with the generated style sheet and called at run time.</span></span>  
+# <a name="developing-a-custom-referenced-functoid"></a><span data-ttu-id="1776f-102">参照 Functoid、カスタムの開発</span><span class="sxs-lookup"><span data-stu-id="1776f-102">Developing a Custom Referenced Functoid</span></span>
+<span data-ttu-id="1776f-103">参照先のカスタム functoid は、マップにインラインの実装コードをコピーしないでください。</span><span class="sxs-lookup"><span data-stu-id="1776f-103">Custom referenced functoids do not copy implementation code inline into the map.</span></span> <span data-ttu-id="1776f-104">代わりに、アセンブリ、クラス、およびメソッドへの参照は、拡張オブジェクト ファイルが生成されたスタイル シートに関連付けられているし、実行時に呼び出さに配置されます。</span><span class="sxs-lookup"><span data-stu-id="1776f-104">Instead, a reference to the assembly, class, and method is placed in the extension object file associated with the generated style sheet and called at run time.</span></span>  
   
-## <a name="example"></a><span data-ttu-id="2517b-105">例</span><span class="sxs-lookup"><span data-stu-id="2517b-105">Example</span></span>  
- <span data-ttu-id="2517b-106">2 つの文字列を連結する参照型のカスタム Functoid の作成方法を次に示します。</span><span class="sxs-lookup"><span data-stu-id="2517b-106">The following example illustrates how to create a custom referenced functoid for concatenating two strings.</span></span> <span data-ttu-id="2517b-107">ここでは、3 つの文字列リソースと 16x16 ピクセルのビットマップ リソースが格納されたリソース ファイルがあることを前提としています。</span><span class="sxs-lookup"><span data-stu-id="2517b-107">It relies on a resource file containing three string resources and a 16x16-pixel bitmap resource.</span></span>  
+## <a name="example"></a><span data-ttu-id="1776f-105">例</span><span class="sxs-lookup"><span data-stu-id="1776f-105">Example</span></span>  
+ <span data-ttu-id="1776f-106">次の例では、2 つの文字列を連結する場合のカスタム参照されている functoid を作成する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="1776f-106">The following example illustrates how to create a custom referenced functoid for concatenating two strings.</span></span> <span data-ttu-id="1776f-107">ここでは、3 つの文字列リソースと 16x16 ピクセルのビットマップ リソースが格納されたリソース ファイルがあることを前提としています。</span><span class="sxs-lookup"><span data-stu-id="1776f-107">It relies on a resource file containing three string resources and a 16x16-pixel bitmap resource.</span></span>  
   
 ```  
 using System;  
@@ -84,8 +84,8 @@ namespace Microsoft.Samples.BizTalk.CustomFunctoid
 }  
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="2517b-108">参照</span><span class="sxs-lookup"><span data-stu-id="2517b-108">See Also</span></span>  
- <span data-ttu-id="2517b-109">[BaseFunctoid の使用](../core/using-basefunctoid.md) </span><span class="sxs-lookup"><span data-stu-id="2517b-109">[Using BaseFunctoid](../core/using-basefunctoid.md) </span></span>  
- <span data-ttu-id="2517b-110">[インラインのカスタム Functoid の開発](../core/developing-a-custom-inline-functoid.md) </span><span class="sxs-lookup"><span data-stu-id="2517b-110">[Developing a Custom Inline Functoid](../core/developing-a-custom-inline-functoid.md) </span></span>  
- <span data-ttu-id="2517b-111">[カスタムの累積 Functoid の開発](../core/developing-a-custom-cumulative-functoid.md) </span><span class="sxs-lookup"><span data-stu-id="2517b-111">[Developing a Custom Cumulative Functoid](../core/developing-a-custom-cumulative-functoid.md) </span></span>  
- [<span data-ttu-id="2517b-112">カスタム Functoid (BizTalk Server サンプル)</span><span class="sxs-lookup"><span data-stu-id="2517b-112">Custom Functoid (BizTalk Server Sample)</span></span>](../core/custom-functoid-biztalk-server-sample.md)
+## <a name="see-also"></a><span data-ttu-id="1776f-108">参照</span><span class="sxs-lookup"><span data-stu-id="1776f-108">See Also</span></span>  
+ <span data-ttu-id="1776f-109">[BaseFunctoid の使用](../core/using-basefunctoid.md) </span><span class="sxs-lookup"><span data-stu-id="1776f-109">[Using BaseFunctoid](../core/using-basefunctoid.md) </span></span>  
+ <span data-ttu-id="1776f-110">[インラインのカスタム Functoid の開発](../core/developing-a-custom-inline-functoid.md) </span><span class="sxs-lookup"><span data-stu-id="1776f-110">[Developing a Custom Inline Functoid](../core/developing-a-custom-inline-functoid.md) </span></span>  
+ <span data-ttu-id="1776f-111">[カスタムの累積 Functoid の開発](../core/developing-a-custom-cumulative-functoid.md) </span><span class="sxs-lookup"><span data-stu-id="1776f-111">[Developing a Custom Cumulative Functoid](../core/developing-a-custom-cumulative-functoid.md) </span></span>  
+ [<span data-ttu-id="1776f-112">カスタム Functoid (BizTalk Server サンプル)</span><span class="sxs-lookup"><span data-stu-id="1776f-112">Custom Functoid (BizTalk Server Sample)</span></span>](../core/custom-functoid-biztalk-server-sample.md)

@@ -15,32 +15,32 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 111bd267bc7d0bc12d582c3b74846b8874ed8b4d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4d1593c28186e0b5f96c749e67469257592e291d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37012547"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377292"
 ---
-# <a name="installing-certificates"></a><span data-ttu-id="94902-102">証明書のインストール</span><span class="sxs-lookup"><span data-stu-id="94902-102">Installing Certificates</span></span>
-<span data-ttu-id="94902-103">送信、修復、またはメッセージの送信するには、インストールされている適切な証明書が必要です。</span><span class="sxs-lookup"><span data-stu-id="94902-103">To send, repair, or submit messages, you must have the proper certificates installed.</span></span> <span data-ttu-id="94902-104">このトピックでは、証明書を追加する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="94902-104">This topic describes how to add certificates.</span></span> <span data-ttu-id="94902-105">運用環境では、証明書用に IT 部門を参照してください。</span><span class="sxs-lookup"><span data-stu-id="94902-105">In a production environment, see your IT department for certificates.</span></span>  
+# <a name="installing-certificates"></a><span data-ttu-id="1c00c-102">証明書のインストール</span><span class="sxs-lookup"><span data-stu-id="1c00c-102">Installing Certificates</span></span>
+<span data-ttu-id="1c00c-103">送信、修復、またはメッセージの送信するには、インストールされている適切な証明書が必要です。</span><span class="sxs-lookup"><span data-stu-id="1c00c-103">To send, repair, or submit messages, you must have the proper certificates installed.</span></span> <span data-ttu-id="1c00c-104">このトピックでは、証明書を追加する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="1c00c-104">This topic describes how to add certificates.</span></span> <span data-ttu-id="1c00c-105">運用環境では、証明書用に IT 部門を参照してください。</span><span class="sxs-lookup"><span data-stu-id="1c00c-105">In a production environment, see your IT department for certificates.</span></span>  
 
- <span data-ttu-id="94902-106">**概要**</span><span class="sxs-lookup"><span data-stu-id="94902-106">**Summary**</span></span>  
+ <span data-ttu-id="1c00c-106">**まとめ**</span><span class="sxs-lookup"><span data-stu-id="1c00c-106">**Summary**</span></span>  
 
- <span data-ttu-id="94902-107">ここでは、作成し、次の証明書を格納する方法の手順を示します。</span><span class="sxs-lookup"><span data-stu-id="94902-107">This section provides instructions on how to create and store the following certificates:</span></span>  
+ <span data-ttu-id="1c00c-107">ここでは、作成し、次の証明書を格納する方法の手順を示します。</span><span class="sxs-lookup"><span data-stu-id="1c00c-107">This section provides instructions on how to create and store the following certificates:</span></span>  
 
-- <span data-ttu-id="94902-108">Message Repair and New Submission ロール証明書 - 現在のユーザーの個人用フォルダー内の各証明書は、各クライアント コンピューターに保存します。</span><span class="sxs-lookup"><span data-stu-id="94902-108">Certificates for each of the Message Repair and New Submission roles in the Personal folder of the Certificates - Current User store on each client computer</span></span>  
+- <span data-ttu-id="1c00c-108">Message Repair and New Submission ロール証明書 - 現在のユーザーの個人用フォルダー内の各証明書は、各クライアント コンピューターに保存します。</span><span class="sxs-lookup"><span data-stu-id="1c00c-108">Certificates for each of the Message Repair and New Submission roles in the Personal folder of the Certificates - Current User store on each client computer</span></span>  
 
-- <span data-ttu-id="94902-109">Message Repair and New Submission ロール証明書 (ローカル コンピューター) の他のユーザー フォルダー内の各証明書を BizTalk オーケストレーション サーバーの各コンピューターで保存します。</span><span class="sxs-lookup"><span data-stu-id="94902-109">Certificates for each of the Message Repair and New Submission roles in the Other People folder of the Certificates (Local Computer) store on each BizTalk orchestration server computer</span></span>  
+- <span data-ttu-id="1c00c-109">Message Repair and New Submission ロール証明書 (ローカル コンピューター) の他のユーザー フォルダー内の各証明書を BizTalk オーケストレーション サーバーの各コンピューターで保存します。</span><span class="sxs-lookup"><span data-stu-id="1c00c-109">Certificates for each of the Message Repair and New Submission roles in the Other People folder of the Certificates (Local Computer) store on each BizTalk orchestration server computer</span></span>  
 
-- <span data-ttu-id="94902-110">各クライアント コンピューター (ローカル コンピューター) の証明書ストアの信頼されたルート証明機関のフォルダーに証明機関の証明書</span><span class="sxs-lookup"><span data-stu-id="94902-110">Certification Authority's certificate into the Trusted Root Certification Authorities folder in the Certificates (Local Computer) store on each client computer</span></span>  
+- <span data-ttu-id="1c00c-110">各クライアント コンピューター (ローカル コンピューター) の証明書ストアの信頼されたルート証明機関のフォルダーに証明機関の証明書</span><span class="sxs-lookup"><span data-stu-id="1c00c-110">Certification Authority's certificate into the Trusted Root Certification Authorities folder in the Certificates (Local Computer) store on each client computer</span></span>  
 
-  <span data-ttu-id="94902-111">デプロイした場合[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]1 台のコンピューターにも、同じコンピューターにインストールされている証明書サーバーがあるとは、Microsoft SharePoint Server の管理パスから証明書サーバーを除外する必要があります。</span><span class="sxs-lookup"><span data-stu-id="94902-111">If you have deployed [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] on a single computer, and also have a certificate server installed on the same computer, you need to exclude the certificate server from the managed paths for Microsoft SharePoint Server.</span></span>  
+  <span data-ttu-id="1c00c-111">デプロイした場合[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]1 台のコンピューターにも、同じコンピューターにインストールされている証明書サーバーがあるとは、Microsoft SharePoint Server の管理パスから証明書サーバーを除外する必要があります。</span><span class="sxs-lookup"><span data-stu-id="1c00c-111">If you have deployed [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] on a single computer, and also have a certificate server installed on the same computer, you need to exclude the certificate server from the managed paths for Microsoft SharePoint Server.</span></span>  
 
-  <span data-ttu-id="94902-112">このセクションには、次のトピックが含まれています。</span><span class="sxs-lookup"><span data-stu-id="94902-112">This section contains:</span></span>  
+  <span data-ttu-id="1c00c-112">このセクションには、次のトピックが含まれています。</span><span class="sxs-lookup"><span data-stu-id="1c00c-112">This section contains:</span></span>  
 
-- [<span data-ttu-id="94902-113">クライアント上の証明書ストアに証明書を追加する</span><span class="sxs-lookup"><span data-stu-id="94902-113">Adding Certificates to the Certificates Store on the Client</span></span>](../../adapters-and-accelerators/accelerator-swift/adding-certificates-to-the-certificates-store-on-the-client.md)  
+- [<span data-ttu-id="1c00c-113">クライアント上の証明書ストアに証明書を追加する</span><span class="sxs-lookup"><span data-stu-id="1c00c-113">Adding Certificates to the Certificates Store on the Client</span></span>](../../adapters-and-accelerators/accelerator-swift/adding-certificates-to-the-certificates-store-on-the-client.md)  
 
-- [<span data-ttu-id="94902-114">サーバー上の証明書ストアに証明書を追加する</span><span class="sxs-lookup"><span data-stu-id="94902-114">Adding Certificates to the Certificates Store on the Server</span></span>](../../adapters-and-accelerators/accelerator-swift/adding-certificates-to-the-certificates-store-on-the-server.md)  
+- [<span data-ttu-id="1c00c-114">サーバー上の証明書ストアに証明書を追加する</span><span class="sxs-lookup"><span data-stu-id="1c00c-114">Adding Certificates to the Certificates Store on the Server</span></span>](../../adapters-and-accelerators/accelerator-swift/adding-certificates-to-the-certificates-store-on-the-server.md)  
 
-- [<span data-ttu-id="94902-115">1 台のコンピューターの展開の管理パスから CertSrv を除外する</span><span class="sxs-lookup"><span data-stu-id="94902-115">Excluding CertSrv from Managed Paths on a Single-Computer Deployment</span></span>](../../adapters-and-accelerators/accelerator-swift/excluding-certsrv-from-managed-paths-on-a-single-computer-deployment.md)
+- [<span data-ttu-id="1c00c-115">1 台のコンピューターの展開の管理パスから CertSrv を除外する</span><span class="sxs-lookup"><span data-stu-id="1c00c-115">Excluding CertSrv from Managed Paths on a Single-Computer Deployment</span></span>](../../adapters-and-accelerators/accelerator-swift/excluding-certsrv-from-managed-paths-on-a-single-computer-deployment.md)

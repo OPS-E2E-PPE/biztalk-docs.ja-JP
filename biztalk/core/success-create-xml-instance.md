@@ -1,5 +1,5 @@
 ---
-title: 成功 - XML インスタンスの作成 |Microsoft ドキュメント
+title: 成功 - XML インスタンスの作成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,18 +14,18 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6ef12214b75f718de105034f841d004af6516ffd
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 68b0f900c853c28671f5468c6ee5d68eb44231f2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22277898"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65379915"
 ---
-# <a name="success---create-xml-instance"></a><span data-ttu-id="0302c-102">成功 - XML インスタンスの作成</span><span class="sxs-lookup"><span data-stu-id="0302c-102">Success - Create XML Instance</span></span>
-<span data-ttu-id="0302c-103">**説明**</span><span class="sxs-lookup"><span data-stu-id="0302c-103">**Explanation**</span></span>  
+# <a name="success---create-xml-instance"></a><span data-ttu-id="575c7-102">成功 - XML インスタンスの作成</span><span class="sxs-lookup"><span data-stu-id="575c7-102">Success - Create XML Instance</span></span>
+<span data-ttu-id="575c7-103">**説明**</span><span class="sxs-lookup"><span data-stu-id="575c7-103">**Explanation**</span></span>  
   
- <span data-ttu-id="0302c-104">スキーマのインスタンスが正常に生成され、XML 出力ファイルが作成されました。作成された XML 出力ファイルには、インスタンス メッセージが含まれています。</span><span class="sxs-lookup"><span data-stu-id="0302c-104">The instance generation succeeded for the indicated schema, producing the indicated XML output file that contains the instance message.</span></span>  
+ <span data-ttu-id="575c7-104">スキーマのインスタンスが正常に生成され、XML 出力ファイルが作成されました。作成された XML 出力ファイルには、インスタンス メッセージが含まれています。</span><span class="sxs-lookup"><span data-stu-id="575c7-104">The instance generation succeeded for the indicated schema, producing the indicated XML output file that contains the instance message.</span></span>  
   
- <span data-ttu-id="0302c-105">**ユーザーの操作**</span><span class="sxs-lookup"><span data-stu-id="0302c-105">**User Action**</span></span>  
+ <span data-ttu-id="575c7-105">**ユーザーの操作**</span><span class="sxs-lookup"><span data-stu-id="575c7-105">**User Action**</span></span>  
   
- <span data-ttu-id="0302c-106">適宜、生成された XML 出力のインスタンス メッセージ ファイルを調査します。</span><span class="sxs-lookup"><span data-stu-id="0302c-106">As appropriate, inspect the generated XML output instance message file.</span></span>
+ <span data-ttu-id="575c7-106">適宜、生成された XML 出力のインスタンス メッセージ ファイルを調査します。</span><span class="sxs-lookup"><span data-stu-id="575c7-106">As appropriate, inspect the generated XML output instance message file.</span></span>

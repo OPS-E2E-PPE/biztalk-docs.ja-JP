@@ -14,37 +14,37 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 960397bdce5090f57b9f2fe6882a27d313631df6
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 27f6b95aa723f15f9290ac86fd9dc47f1cc4f9bb
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37000835"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65356314"
 ---
-# <a name="configuring-as2-agreement-properties"></a><span data-ttu-id="10b9d-102">AS2 アグリーメントのプロパティの構成</span><span class="sxs-lookup"><span data-stu-id="10b9d-102">Configuring AS2 Agreement Properties</span></span>
-<span data-ttu-id="10b9d-103">このセクションでは、AS2 トランスポート アグリーメントのプロパティについて説明します。</span><span class="sxs-lookup"><span data-stu-id="10b9d-103">This section describes AS2 transport agreement properties.</span></span> <span data-ttu-id="10b9d-104">トランスポート プロトコルの設定の一部として、メッセージに署名する必要があるかどうか、メッセージを暗号化する必要があるかどうか、なども定義できます。</span><span class="sxs-lookup"><span data-stu-id="10b9d-104">As part of the transport protocol settings, you can also define whether the message should be signed, whether the message should be encrypted, etc.</span></span>  
+# <a name="configuring-as2-agreement-properties"></a><span data-ttu-id="144af-102">AS2 アグリーメントのプロパティの構成</span><span class="sxs-lookup"><span data-stu-id="144af-102">Configuring AS2 Agreement Properties</span></span>
+<span data-ttu-id="144af-103">このセクションでは、AS2 トランスポート アグリーメントのプロパティについて説明します。</span><span class="sxs-lookup"><span data-stu-id="144af-103">This section describes AS2 transport agreement properties.</span></span> <span data-ttu-id="144af-104">トランスポート プロトコルの設定の一部として、メッセージに署名する必要があるかどうか、メッセージを暗号化する必要があるかどうか、なども定義できます。</span><span class="sxs-lookup"><span data-stu-id="144af-104">As part of the transport protocol settings, you can also define whether the message should be signed, whether the message should be encrypted, etc.</span></span>  
   
 > [!NOTE]
->  <span data-ttu-id="10b9d-105">AS2 アグリーメントの構成は省略可能です。</span><span class="sxs-lookup"><span data-stu-id="10b9d-105">Configuring an AS2 agreement is optional.</span></span> <span data-ttu-id="10b9d-106">AS2 アグリーメントにより、AS2 プロトコルによるメッセージの転送方法が定義されます。</span><span class="sxs-lookup"><span data-stu-id="10b9d-106">An AS2 agreement defines how the messages are transferred using the AS2 protocol.</span></span> <span data-ttu-id="10b9d-107">取引先の判断により他のプロトコルを使用してメッセージを転送する場合は、AS2 アグリーメントを定義しないことを選択できます。</span><span class="sxs-lookup"><span data-stu-id="10b9d-107">If the trading partners decide to use any other transport protocol to transfer messages, they can choose not to define an AS2 agreement.</span></span> <span data-ttu-id="10b9d-108">ただし、その場合の取引先は、メッセージの形式とエンコード方法を制御するエンコード アグリーメントを定義する必要があります。</span><span class="sxs-lookup"><span data-stu-id="10b9d-108">However, the trading partners must define an encoding agreement that governs how the messages are formed and encoded.</span></span> <span data-ttu-id="10b9d-109">エンコード アグリーメントの詳細については、[エンコード アグリーメントのプロパティを構成する](../core/configuring-encoding-agreement-properties.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="10b9d-109">For more information about encoding agreements, see [Configuring Encoding Agreement Properties](../core/configuring-encoding-agreement-properties.md).</span></span>  
+>  <span data-ttu-id="144af-105">AS2 アグリーメントの構成は省略可能です。</span><span class="sxs-lookup"><span data-stu-id="144af-105">Configuring an AS2 agreement is optional.</span></span> <span data-ttu-id="144af-106">AS2 アグリーメントにより、AS2 プロトコルによるメッセージの転送方法が定義されます。</span><span class="sxs-lookup"><span data-stu-id="144af-106">An AS2 agreement defines how the messages are transferred using the AS2 protocol.</span></span> <span data-ttu-id="144af-107">取引先の判断により他のプロトコルを使用してメッセージを転送する場合は、AS2 アグリーメントを定義しないことを選択できます。</span><span class="sxs-lookup"><span data-stu-id="144af-107">If the trading partners decide to use any other transport protocol to transfer messages, they can choose not to define an AS2 agreement.</span></span> <span data-ttu-id="144af-108">ただし、その場合の取引先は、メッセージの形式とエンコード方法を制御するエンコード アグリーメントを定義する必要があります。</span><span class="sxs-lookup"><span data-stu-id="144af-108">However, the trading partners must define an encoding agreement that governs how the messages are formed and encoded.</span></span> <span data-ttu-id="144af-109">エンコード アグリーメントの詳細については、次を参照してください。[エンコード アグリーメントのプロパティを構成する](../core/configuring-encoding-agreement-properties.md)します。</span><span class="sxs-lookup"><span data-stu-id="144af-109">For more information about encoding agreements, see [Configuring Encoding Agreement Properties](../core/configuring-encoding-agreement-properties.md).</span></span>  
 > 
 > [!IMPORTANT]
->  <span data-ttu-id="10b9d-110">アグリーメントの AS2 設定を変更するたびに、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ホスト インスタンスを再起動して変更を有効にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="10b9d-110">Every time you change an AS2 setting in an agreement, you must restart the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Host Instance for the changes to take effect.</span></span>  
+>  <span data-ttu-id="144af-110">アグリーメントの AS2 設定を変更するたびに、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ホスト インスタンスを再起動して変更を有効にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="144af-110">Every time you change an AS2 setting in an agreement, you must restart the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Host Instance for the changes to take effect.</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="10b9d-111">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="10b9d-111">In This Section</span></span>  
+## <a name="in-this-section"></a><span data-ttu-id="144af-111">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="144af-111">In This Section</span></span>  
   
--   [<span data-ttu-id="10b9d-112">全般的な設定の構成 (AS2)</span><span class="sxs-lookup"><span data-stu-id="10b9d-112">Configuring General Settings (AS2)</span></span>](../core/configuring-general-settings-as2.md)  
+-   [<span data-ttu-id="144af-112">全般的な設定の構成 (AS2)</span><span class="sxs-lookup"><span data-stu-id="144af-112">Configuring General Settings (AS2)</span></span>](../core/configuring-general-settings-as2.md)  
   
--   [<span data-ttu-id="10b9d-113">識別子の構成 (AS2)</span><span class="sxs-lookup"><span data-stu-id="10b9d-113">Configuring Identifiers (AS2)</span></span>](../core/configuring-identifiers-as2.md)  
+-   [<span data-ttu-id="144af-113">識別子の構成 (AS2)</span><span class="sxs-lookup"><span data-stu-id="144af-113">Configuring Identifiers (AS2)</span></span>](../core/configuring-identifiers-as2.md)  
   
--   [<span data-ttu-id="10b9d-114">検証の構成 (AS2)</span><span class="sxs-lookup"><span data-stu-id="10b9d-114">Configuring Validation (AS2)</span></span>](../core/configuring-validation-as2.md)  
+-   [<span data-ttu-id="144af-114">検証の構成 (AS2)</span><span class="sxs-lookup"><span data-stu-id="144af-114">Configuring Validation (AS2)</span></span>](../core/configuring-validation-as2.md)  
   
--   [<span data-ttu-id="10b9d-115">受信確認 (MDN) の構成 (AS2)</span><span class="sxs-lookup"><span data-stu-id="10b9d-115">Configuring Acknowledgements (MDNs) (AS2)</span></span>](../core/configuring-acknowledgements-mdns-as2.md)  
+-   [<span data-ttu-id="144af-115">受信確認 (MDN) の構成 (AS2)</span><span class="sxs-lookup"><span data-stu-id="144af-115">Configuring Acknowledgements (MDNs) (AS2)</span></span>](../core/configuring-acknowledgements-mdns-as2.md)  
   
--   [<span data-ttu-id="10b9d-116">ローカル ホスト設定の構成 (AS2)</span><span class="sxs-lookup"><span data-stu-id="10b9d-116">Configuring Local Host Settings (AS2)</span></span>](../core/configuring-local-host-settings-as2.md)  
+-   [<span data-ttu-id="144af-116">ローカル ホスト設定の構成 (AS2)</span><span class="sxs-lookup"><span data-stu-id="144af-116">Configuring Local Host Settings (AS2)</span></span>](../core/configuring-local-host-settings-as2.md)  
   
--   [<span data-ttu-id="10b9d-117">署名証明書の構成 (AS2)</span><span class="sxs-lookup"><span data-stu-id="10b9d-117">Configuring Signature Certificates (AS2)</span></span>](../core/configuring-signature-certificates-as2.md)  
+-   [<span data-ttu-id="144af-117">署名証明書の構成 (AS2)</span><span class="sxs-lookup"><span data-stu-id="144af-117">Configuring Signature Certificates (AS2)</span></span>](../core/configuring-signature-certificates-as2.md)  
   
--   [<span data-ttu-id="10b9d-118">送信ポートの関連付けの構成 (AS2)</span><span class="sxs-lookup"><span data-stu-id="10b9d-118">Configuring Send Port Association (AS2)</span></span>](../core/configuring-send-port-association-as2.md)  
+-   [<span data-ttu-id="144af-118">送信ポートの関連付けの構成 (AS2)</span><span class="sxs-lookup"><span data-stu-id="144af-118">Configuring Send Port Association (AS2)</span></span>](../core/configuring-send-port-association-as2.md)  
   
-## <a name="see-also"></a><span data-ttu-id="10b9d-119">参照</span><span class="sxs-lookup"><span data-stu-id="10b9d-119">See Also</span></span>  
- [<span data-ttu-id="10b9d-120">AS2 プロパティの構成</span><span class="sxs-lookup"><span data-stu-id="10b9d-120">Configuring AS2 Properties</span></span>](../core/configuring-as2-properties.md)
+## <a name="see-also"></a><span data-ttu-id="144af-119">参照</span><span class="sxs-lookup"><span data-stu-id="144af-119">See Also</span></span>  
+ [<span data-ttu-id="144af-120">AS2 プロパティの構成</span><span class="sxs-lookup"><span data-stu-id="144af-120">Configuring AS2 Properties</span></span>](../core/configuring-as2-properties.md)

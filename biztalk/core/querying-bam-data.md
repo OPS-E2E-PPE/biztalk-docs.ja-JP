@@ -1,5 +1,5 @@
 ---
-title: BAM データの照会 |Microsoft ドキュメント
+title: BAM データのクエリ |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,22 +15,22 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c92f53e649f2a7dd651104bd3e78622d2f021606
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 23d1341cf48297e6175005fe1a749f1651c7b19d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22268306"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65398313"
 ---
-# <a name="querying-bam-data"></a><span data-ttu-id="ff4ee-102">BAM データのクエリ</span><span class="sxs-lookup"><span data-stu-id="ff4ee-102">Querying BAM Data</span></span>
-<span data-ttu-id="ff4ee-103">このセクションでは、インスタンス データや集計データなど、BAM データをクエリする方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="ff4ee-103">This section describes the way you query BAM data, including instance and aggregated data.</span></span>  
+# <a name="querying-bam-data"></a><span data-ttu-id="42afa-102">BAM データのクエリ</span><span class="sxs-lookup"><span data-stu-id="42afa-102">Querying BAM Data</span></span>
+<span data-ttu-id="42afa-103">このセクションでは、インスタンス データや集計データなど、BAM データをクエリする方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="42afa-103">This section describes the way you query BAM data, including instance and aggregated data.</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="ff4ee-104">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="ff4ee-104">In This Section</span></span>  
+## <a name="in-this-section"></a><span data-ttu-id="42afa-104">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="42afa-104">In This Section</span></span>  
   
--   [<span data-ttu-id="ff4ee-105">インスタンス データのクエリを実行します。</span><span class="sxs-lookup"><span data-stu-id="ff4ee-105">Querying Instance Data</span></span>](../core/querying-instance-data.md)  
+-   [<span data-ttu-id="42afa-105">インスタンス データへのクエリ</span><span class="sxs-lookup"><span data-stu-id="42afa-105">Querying Instance Data</span></span>](../core/querying-instance-data.md)  
   
--   [<span data-ttu-id="ff4ee-106">リアルタイム集計データを照会します。</span><span class="sxs-lookup"><span data-stu-id="ff4ee-106">Querying Real-Time Aggregated Data</span></span>](../core/querying-real-time-aggregated-data.md)  
+-   [<span data-ttu-id="42afa-106">リアルタイム集計データに対するクエリの実行</span><span class="sxs-lookup"><span data-stu-id="42afa-106">Querying Real-Time Aggregated Data</span></span>](../core/querying-real-time-aggregated-data.md)  
   
--   [<span data-ttu-id="ff4ee-107">スケジュールされているクエリを実行する集計データ</span><span class="sxs-lookup"><span data-stu-id="ff4ee-107">Querying Scheduled Aggregated Data</span></span>](../core/querying-scheduled-aggregated-data.md)  
+-   [<span data-ttu-id="42afa-107">スケジュール済み集計データに対するクエリの実行</span><span class="sxs-lookup"><span data-stu-id="42afa-107">Querying Scheduled Aggregated Data</span></span>](../core/querying-scheduled-aggregated-data.md)  
   
--   [<span data-ttu-id="ff4ee-108">アクティビティの関係を照会します。</span><span class="sxs-lookup"><span data-stu-id="ff4ee-108">Querying Activity Relationships</span></span>](../core/querying-activity-relationships.md)
+-   [<span data-ttu-id="42afa-108">アクティビティ リレーションシップに対するクエリの実行</span><span class="sxs-lookup"><span data-stu-id="42afa-108">Querying Activity Relationships</span></span>](../core/querying-activity-relationships.md)

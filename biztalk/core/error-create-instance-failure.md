@@ -1,5 +1,5 @@
 ---
-title: エラー - インスタンスの作成エラー |Microsoft ドキュメント
+title: エラー - インスタンスの作成エラー |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,18 +14,18 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 10109052fe163a5c2529aac7de57fff94425efd7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1579d1b42b512e8e71b7c87f4e4b32863852fd98
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22239714"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65388942"
 ---
-# <a name="error---create-instance-failure"></a><span data-ttu-id="28bdb-102">エラー - インスタンスの作成エラー</span><span class="sxs-lookup"><span data-stu-id="28bdb-102">Error - Create Instance Failure</span></span>
-<span data-ttu-id="28bdb-103">**説明**</span><span class="sxs-lookup"><span data-stu-id="28bdb-103">**Explanation**</span></span>  
+# <a name="error---create-instance-failure"></a><span data-ttu-id="39948-102">エラー - インスタンスの作成エラー</span><span class="sxs-lookup"><span data-stu-id="39948-102">Error - Create Instance Failure</span></span>
+<span data-ttu-id="39948-103">**説明**</span><span class="sxs-lookup"><span data-stu-id="39948-103">**Explanation**</span></span>  
   
- <span data-ttu-id="28bdb-104">**インスタンスの生成**スキーマに対するコマンドが失敗しました。</span><span class="sxs-lookup"><span data-stu-id="28bdb-104">The **Generate Instance** command for the indicated schema failed.</span></span>  
+ <span data-ttu-id="39948-104">**インスタンスの生成**スキーマに対するコマンドが失敗しました。</span><span class="sxs-lookup"><span data-stu-id="39948-104">The **Generate Instance** command for the indicated schema failed.</span></span>  
   
- <span data-ttu-id="28bdb-105">**ユーザーの操作**</span><span class="sxs-lookup"><span data-stu-id="28bdb-105">**User Action**</span></span>  
+ <span data-ttu-id="39948-105">**ユーザーの操作**</span><span class="sxs-lookup"><span data-stu-id="39948-105">**User Action**</span></span>  
   
- <span data-ttu-id="28bdb-106">エラー メッセージを調査して、インスタンスの生成エラーの原因を特定します。</span><span class="sxs-lookup"><span data-stu-id="28bdb-106">Examine the accompanying error messages to determine the cause of the instance generation failure.</span></span>
+ <span data-ttu-id="39948-106">インスタンスの生成エラーの原因を特定するエラー メッセージを調査します。</span><span class="sxs-lookup"><span data-stu-id="39948-106">Examine the accompanying error messages to determine the cause of the instance generation failure.</span></span>

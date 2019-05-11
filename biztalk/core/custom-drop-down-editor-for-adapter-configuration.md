@@ -1,5 +1,5 @@
 ---
-title: アダプター構成のカスタム ドロップダウン エディター |Microsoft ドキュメント
+title: アダプター構成のカスタム ドロップダウン エディター |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,17 +12,17 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b88e5eb887c2177783611ada8e3ce2a80a0b6a66
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: fcf59a1692b8921d7e73799dcabafa4ad467f7c6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22238498"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65389822"
 ---
-# <a name="custom-drop-down-editor-for-adapter-configuration"></a><span data-ttu-id="2ef42-102">アダプター構成のカスタム ドロップダウン エディター</span><span class="sxs-lookup"><span data-stu-id="2ef42-102">Custom Drop-Down Editor for Adapter Configuration</span></span>
-<span data-ttu-id="2ef42-103">カスタム エディターのコードから派生したエディターを示しています、 **System.Drawing.Design.UITypeEditor**パスワードを入力するためのドロップダウン テキスト ボックスを表示するクラス。</span><span class="sxs-lookup"><span data-stu-id="2ef42-103">The code for the custom editor shows an editor derived from the **System.Drawing.Design.UITypeEditor** class that displays a drop-down text box for entering a password.</span></span> <span data-ttu-id="2ef42-104">**GetEditStyle**オーバーライド**UIEditorEditStyle.DropDown**ドロップダウン サブコントロールを示すです。</span><span class="sxs-lookup"><span data-stu-id="2ef42-104">The **GetEditStyle** override returns **UIEditorEditStyle.DropDown** to indicate a drop-down subcontrol.</span></span> <span data-ttu-id="2ef42-105">サービス メソッド**DropDownControl**と**CloseDropDown**で作成されたコントロールを管理**CreatePassword**です。</span><span class="sxs-lookup"><span data-stu-id="2ef42-105">The service methods **DropDownControl** and **CloseDropDown** manage the control created with **CreatePassword**.</span></span>  
+# <a name="custom-drop-down-editor-for-adapter-configuration"></a><span data-ttu-id="9f817-102">アダプター構成のカスタム ドロップダウン エディター</span><span class="sxs-lookup"><span data-stu-id="9f817-102">Custom Drop-Down Editor for Adapter Configuration</span></span>
+<span data-ttu-id="9f817-103">カスタム エディターのコードから派生したエディターを示しています、 **System.Drawing.Design.UITypeEditor**パスワードを入力するためのドロップダウン テキスト ボックスを表示するクラス。</span><span class="sxs-lookup"><span data-stu-id="9f817-103">The code for the custom editor shows an editor derived from the **System.Drawing.Design.UITypeEditor** class that displays a drop-down text box for entering a password.</span></span> <span data-ttu-id="9f817-104">**GetEditStyle**のオーバーライド**UIEditorEditStyle.DropDown**をドロップダウン サブコントロールを示すためにします。</span><span class="sxs-lookup"><span data-stu-id="9f817-104">The **GetEditStyle** override returns **UIEditorEditStyle.DropDown** to indicate a drop-down subcontrol.</span></span> <span data-ttu-id="9f817-105">サービス メソッドは、 **DropDownControl**と**CloseDropDown**で作成されたコントロールを管理**CreatePassword**します。</span><span class="sxs-lookup"><span data-stu-id="9f817-105">The service methods **DropDownControl** and **CloseDropDown** manage the control created with **CreatePassword**.</span></span>  
   
- <span data-ttu-id="2ef42-106">次のコードはカスタム ドロップダウン エディターのクラス定義です。</span><span class="sxs-lookup"><span data-stu-id="2ef42-106">The following code is the class definition for the custom drop-down editor:</span></span>  
+ <span data-ttu-id="9f817-106">次のコードでは、カスタム ドロップダウン エディターのクラス定義を示します。</span><span class="sxs-lookup"><span data-stu-id="9f817-106">The following code is the class definition for the custom drop-down editor:</span></span>  
   
 ```  
 /*************************************************************************  
@@ -94,8 +94,8 @@ namespace AdapterManagement.ComponentModel {
 } // Microsoft.BizTalk.Adapter.Framework.ComponentModel  
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="2ef42-107">参照</span><span class="sxs-lookup"><span data-stu-id="2ef42-107">See Also</span></span>  
- <span data-ttu-id="2ef42-108">[カスタム アダプター構成デザイナー](../core/custom-adapter-configuration-designer.md) </span><span class="sxs-lookup"><span data-stu-id="2ef42-108">[Custom Adapter Configuration Designer](../core/custom-adapter-configuration-designer.md) </span></span>  
- <span data-ttu-id="2ef42-109">[アダプター構成のカスタム モデル ダイアログ エディター](../core/custom-modal-dialog-editor-for-adapter-configuration.md) </span><span class="sxs-lookup"><span data-stu-id="2ef42-109">[Custom Modal Dialog Editor for Adapter Configuration](../core/custom-modal-dialog-editor-for-adapter-configuration.md) </span></span>  
- <span data-ttu-id="2ef42-110">[アダプターの構成のカスタム型コンバーター](../core/custom-type-converter-for-adapter-configuration.md) </span><span class="sxs-lookup"><span data-stu-id="2ef42-110">[Custom Type Converter for Adapter Configuration](../core/custom-type-converter-for-adapter-configuration.md) </span></span>  
- [<span data-ttu-id="2ef42-111">アダプターの高度な構成コンポーネント</span><span class="sxs-lookup"><span data-stu-id="2ef42-111">Advanced Configuration Components for Adapters</span></span>](../core/advanced-configuration-components-for-adapters.md)
+## <a name="see-also"></a><span data-ttu-id="9f817-107">参照</span><span class="sxs-lookup"><span data-stu-id="9f817-107">See Also</span></span>  
+ <span data-ttu-id="9f817-108">[カスタム アダプター構成デザイナー](../core/custom-adapter-configuration-designer.md) </span><span class="sxs-lookup"><span data-stu-id="9f817-108">[Custom Adapter Configuration Designer](../core/custom-adapter-configuration-designer.md) </span></span>  
+ <span data-ttu-id="9f817-109">[アダプター構成のカスタム モデル ダイアログ エディター](../core/custom-modal-dialog-editor-for-adapter-configuration.md) </span><span class="sxs-lookup"><span data-stu-id="9f817-109">[Custom Modal Dialog Editor for Adapter Configuration](../core/custom-modal-dialog-editor-for-adapter-configuration.md) </span></span>  
+ <span data-ttu-id="9f817-110">[アダプターの構成のカスタム型コンバーター](../core/custom-type-converter-for-adapter-configuration.md) </span><span class="sxs-lookup"><span data-stu-id="9f817-110">[Custom Type Converter for Adapter Configuration](../core/custom-type-converter-for-adapter-configuration.md) </span></span>  
+ [<span data-ttu-id="9f817-111">アダプターの詳細構成コンポーネント</span><span class="sxs-lookup"><span data-stu-id="9f817-111">Advanced Configuration Components for Adapters</span></span>](../core/advanced-configuration-components-for-adapters.md)

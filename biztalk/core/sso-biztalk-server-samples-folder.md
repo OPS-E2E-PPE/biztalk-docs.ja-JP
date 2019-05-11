@@ -16,18 +16,18 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fdcbe5ff9063db629da59bc98941350fe800b5db
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3c0608c48539e18b31235683d09e2da217c9b88c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36983083"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65401769"
 ---
-# <a name="sso-biztalk-server-samples-folder"></a><span data-ttu-id="23571-102">SSO (BizTalk Server Samples フォルダー)</span><span class="sxs-lookup"><span data-stu-id="23571-102">SSO (BizTalk Server Samples Folder)</span></span>
-<span data-ttu-id="23571-103">Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ソフトウェア開発キット (SDK) には、エンタープライズ シングル サインオン (SSO) のサンプルが 2 つ付属しています。</span><span class="sxs-lookup"><span data-stu-id="23571-103">Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] includes two Enterprise Single Sign-On (SSO) samples in its software development kit (SDK).</span></span> <span data-ttu-id="23571-104">このセクションでは、SSO のサンプルで示されている機能の詳細、サンプルのビルドと実行の手順、および予想される結果について説明します。</span><span class="sxs-lookup"><span data-stu-id="23571-104">This section provides detailed information about the functionality that the SSO samples demonstrate, instructions for building and running the samples, and the results you can expect.</span></span>  
+# <a name="sso-biztalk-server-samples-folder"></a><span data-ttu-id="2b228-102">SSO (BizTalk Server Samples フォルダー)</span><span class="sxs-lookup"><span data-stu-id="2b228-102">SSO (BizTalk Server Samples Folder)</span></span>
+<span data-ttu-id="2b228-103">Microsoft[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ソフトウェア開発キット (SDK) の 2 つのエンタープライズ シングル サインオン (SSO) のサンプルが含まれています。</span><span class="sxs-lookup"><span data-stu-id="2b228-103">Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] includes two Enterprise Single Sign-On (SSO) samples in its software development kit (SDK).</span></span> <span data-ttu-id="2b228-104">ここでは、SSO のサンプルで示されているビルドと、サンプルでは、および予想される結果の実行手順については、機能に関する詳細な情報を示します。</span><span class="sxs-lookup"><span data-stu-id="2b228-104">This section provides detailed information about the functionality that the SSO samples demonstrate, instructions for building and running the samples, and the results you can expect.</span></span>  
 
-## <a name="in-this-section"></a><span data-ttu-id="23571-105">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="23571-105">In This Section</span></span>  
+## <a name="in-this-section"></a><span data-ttu-id="2b228-105">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="2b228-105">In This Section</span></span>  
 
-- <span data-ttu-id="23571-106">[HTTPSSO (BizTalk Server サンプル)](../core/httpsso-biztalk-server-sample.md)します。</span><span class="sxs-lookup"><span data-stu-id="23571-106">[HTTPSSO (BizTalk Server Sample)](../core/httpsso-biztalk-server-sample.md).</span></span> <span data-ttu-id="23571-107">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] HTTP アダプタでエンタープライズ シングル サインオンを使用する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="23571-107">Demonstrates how to use Enterprise Single Sign-On with the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] HTTP adapter.</span></span>  
+- <span data-ttu-id="2b228-106">[HTTPSSO (BizTalk Server サンプル)](../core/httpsso-biztalk-server-sample.md)します。</span><span class="sxs-lookup"><span data-stu-id="2b228-106">[HTTPSSO (BizTalk Server Sample)](../core/httpsso-biztalk-server-sample.md).</span></span> <span data-ttu-id="2b228-107">エンタープライズ シングル サインオンを使用する方法を示します、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] HTTP アダプター。</span><span class="sxs-lookup"><span data-stu-id="2b228-107">Demonstrates how to use Enterprise Single Sign-On with the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] HTTP adapter.</span></span>  
 
-- <span data-ttu-id="23571-108">[管理 (BizTalk Server サンプル)](../core/manage-biztalk-server-sample.md)します。</span><span class="sxs-lookup"><span data-stu-id="23571-108">[Manage (BizTalk Server Sample)](../core/manage-biztalk-server-sample.md).</span></span> <span data-ttu-id="23571-109">コマンド ライン ユーティリティ ssomanage.exe で管理操作を実行するために使用できる .xml ファイルを構築する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="23571-109">Demonstrates how to construct .xml files that you can use with the command-line utility ssomanage.exe to perform administration operations.</span></span>
+- <span data-ttu-id="2b228-108">[管理 (BizTalk Server サンプル)](../core/manage-biztalk-server-sample.md)します。</span><span class="sxs-lookup"><span data-stu-id="2b228-108">[Manage (BizTalk Server Sample)](../core/manage-biztalk-server-sample.md).</span></span> <span data-ttu-id="2b228-109">コマンドラインで使用できる .xml ファイルを構築する方法を示しますユーティリティ ssomanage.exe 管理操作を実行します。</span><span class="sxs-lookup"><span data-stu-id="2b228-109">Demonstrates how to construct .xml files that you can use with the command-line utility ssomanage.exe to perform administration operations.</span></span>

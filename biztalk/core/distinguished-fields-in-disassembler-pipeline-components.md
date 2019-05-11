@@ -17,23 +17,23 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b08a5c3dd6b88351e67f678524a03052e8435439
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 63f3fd2dd8948e880af7b2135e8b4fef64f1b39d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37012291"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65389353"
 ---
-# <a name="distinguished-fields-in-disassembler-pipeline-components"></a><span data-ttu-id="ebda1-102">識別フィールドに逆アセンブラー パイプライン コンポーネント</span><span class="sxs-lookup"><span data-stu-id="ebda1-102">Distinguished Fields in Disassembler Pipeline Components</span></span>
-<span data-ttu-id="ebda1-103">スキーマで定義された識別フィールドは、XML 逆アセンブラー、BizTalk 逆アセンブラー、またはフラット ファイル逆アセンブラー パイプランによって、次の形式でメッセージ コンテキストに書き込まれます。</span><span class="sxs-lookup"><span data-stu-id="ebda1-103">Distinguished fields defined in a schema are written to the message context by the XML Disassembler, BizTalk Framework Disassembler, or Flat File Disassembler pipeline components in the following format:</span></span>  
+# <a name="distinguished-fields-in-disassembler-pipeline-components"></a><span data-ttu-id="9775e-102">識別フィールドに逆アセンブラー パイプライン コンポーネント</span><span class="sxs-lookup"><span data-stu-id="9775e-102">Distinguished Fields in Disassembler Pipeline Components</span></span>
+<span data-ttu-id="9775e-103">スキーマで定義されている識別フィールドは XML 逆アセンブラー、BizTalk Framework 逆アセンブラーまたは次の形式のフラット ファイル逆アセンブラー パイプライン コンポーネントによってメッセージ コンテキストに書き込まれます。</span><span class="sxs-lookup"><span data-stu-id="9775e-103">Distinguished fields defined in a schema are written to the message context by the XML Disassembler, BizTalk Framework Disassembler, or Flat File Disassembler pipeline components in the following format:</span></span>  
   
- <span data-ttu-id="ebda1-104">*使用される名前*XPath で識別フィールド</span><span class="sxs-lookup"><span data-stu-id="ebda1-104">*name used* is the distinguished field in XPath</span></span>  
+ <span data-ttu-id="9775e-104">*使用される名前*XPath で識別フィールド</span><span class="sxs-lookup"><span data-stu-id="9775e-104">*name used* is the distinguished field in XPath</span></span>  
   
- <span data-ttu-id="ebda1-105">*名前空間 URI*は"<http://schemas.microsoft.com/BizTalk/2003/btsDistinguishedFields>"</span><span class="sxs-lookup"><span data-stu-id="ebda1-105">*namespace URI* is "<http://schemas.microsoft.com/BizTalk/2003/btsDistinguishedFields>"</span></span>  
+ <span data-ttu-id="9775e-105">*名前空間 URI*は"<http://schemas.microsoft.com/BizTalk/2003/btsDistinguishedFields>"</span><span class="sxs-lookup"><span data-stu-id="9775e-105">*namespace URI* is "<http://schemas.microsoft.com/BizTalk/2003/btsDistinguishedFields>"</span></span>  
   
- <span data-ttu-id="ebda1-106">プロパティの値は、 **System.String**使用して XML ドキュメントから抽出された値は、XPath を指定します。</span><span class="sxs-lookup"><span data-stu-id="ebda1-106">The value of the property is the **System.String** value extracted from the XML document using specified XPath.</span></span>  
+ <span data-ttu-id="9775e-106">プロパティの値は、 **System.String**使用して XML ドキュメントから抽出された値は、XPath を指定します。</span><span class="sxs-lookup"><span data-stu-id="9775e-106">The value of the property is the **System.String** value extracted from the XML document using specified XPath.</span></span>  
   
- <span data-ttu-id="ebda1-107">次の例では、スキーマに識別フィールド Price があります。</span><span class="sxs-lookup"><span data-stu-id="ebda1-107">The following example schema has a distinguished field Price.</span></span>  
+ <span data-ttu-id="9775e-107">次の例のスキーマには、識別フィールド Price があります。</span><span class="sxs-lookup"><span data-stu-id="9775e-107">The following example schema has a distinguished field Price.</span></span>  
   
 ```  
 <?xml version="1.0" encoding="utf-16" ?>   
@@ -57,7 +57,7 @@ ms.locfileid: "37012291"
 </xs:schema>  
 ```  
   
- <span data-ttu-id="ebda1-108">次のようなドキュメント インスタンスの場合は、</span><span class="sxs-lookup"><span data-stu-id="ebda1-108">For the document instance</span></span>  
+ <span data-ttu-id="9775e-108">ドキュメント インスタンスの</span><span class="sxs-lookup"><span data-stu-id="9775e-108">For the document instance</span></span>  
   
 ```  
 <PO>  
@@ -66,17 +66,17 @@ ms.locfileid: "37012291"
 <PO>  
 ```  
   
- <span data-ttu-id="ebda1-109">XML 逆アセンブラーがメッセージ コンテキストで次のように識別フィールドを書き込みます。</span><span class="sxs-lookup"><span data-stu-id="ebda1-109">the XML Disassembler writes a distinguished field on a message context as follows:</span></span>  
+ <span data-ttu-id="9775e-109">XML 逆アセンブラーは、次のようにメッセージ コンテキストで識別フィールドを書き込みます。</span><span class="sxs-lookup"><span data-stu-id="9775e-109">the XML Disassembler writes a distinguished field on a message context as follows:</span></span>  
   
- <span data-ttu-id="ebda1-110">コンテキストのプロパティの名前。 `"/*[local-name()='PO' and namespace-uri()='http://SendHtmlMessage.PO']/\*[local-name()='Price' and namespace-uri()='']"`</span><span class="sxs-lookup"><span data-stu-id="ebda1-110">Name of the property on the context: `"/*[local-name()='PO' and namespace-uri()='http://SendHtmlMessage.PO']/\*[local-name()='Price' and namespace-uri()='']"`</span></span>  
+ <span data-ttu-id="9775e-110">コンテキストのプロパティの名前。 `"/*[local-name()='PO' and namespace-uri()='http://SendHtmlMessage.PO']/\*[local-name()='Price' and namespace-uri()='']"`</span><span class="sxs-lookup"><span data-stu-id="9775e-110">Name of the property on the context: `"/*[local-name()='PO' and namespace-uri()='http://SendHtmlMessage.PO']/\*[local-name()='Price' and namespace-uri()='']"`</span></span>  
   
- <span data-ttu-id="ebda1-111">プロパティの Namespace: http://schemas.microsoft.com/BizTalk/2003/btsDistinguishedFields</span><span class="sxs-lookup"><span data-stu-id="ebda1-111">Namespace of the property: http://schemas.microsoft.com/BizTalk/2003/btsDistinguishedFields</span></span>  
+ <span data-ttu-id="9775e-111">プロパティの Namespace: http://schemas.microsoft.com/BizTalk/2003/btsDistinguishedFields</span><span class="sxs-lookup"><span data-stu-id="9775e-111">Namespace of the property: http://schemas.microsoft.com/BizTalk/2003/btsDistinguishedFields</span></span>  
   
- <span data-ttu-id="ebda1-112">プロパティの値: 10</span><span class="sxs-lookup"><span data-stu-id="ebda1-112">Value of the property: 10</span></span>  
+ <span data-ttu-id="9775e-112">プロパティの値。10</span><span class="sxs-lookup"><span data-stu-id="9775e-112">Value of the property: 10</span></span>  
   
 > [!NOTE]
->  <span data-ttu-id="ebda1-113">いずれかの XML ドキュメント要素の値のサイズが 85 KB を超えると、ドキュメントの処理パフォーマンスが低下する場合があります。</span><span class="sxs-lookup"><span data-stu-id="ebda1-113">If the size of any XML document element values exceeds 85KB, a degradation in the performance of processing those documents may occur.</span></span>  
+>  <span data-ttu-id="9775e-113">任意の XML ドキュメント要素の値のサイズが 85 KB を超える場合、ドキュメントの処理パフォーマンスの低下が発生します。</span><span class="sxs-lookup"><span data-stu-id="9775e-113">If the size of any XML document element values exceeds 85KB, a degradation in the performance of processing those documents may occur.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="ebda1-114">参照</span><span class="sxs-lookup"><span data-stu-id="ebda1-114">See Also</span></span>  
- <span data-ttu-id="ebda1-115">[フラット ファイル逆アセンブラー パイプライン コンポーネント](../core/flat-file-disassembler-pipeline-component.md) </span><span class="sxs-lookup"><span data-stu-id="ebda1-115">[Flat File Disassembler Pipeline Component](../core/flat-file-disassembler-pipeline-component.md) </span></span>  
- [<span data-ttu-id="ebda1-116">フラット ファイル逆アセンブラー パイプライン コンポーネントを構成する方法</span><span class="sxs-lookup"><span data-stu-id="ebda1-116">How to Configure the Flat File Disassembler Pipeline Component</span></span>](../core/how-to-configure-the-flat-file-disassembler-pipeline-component.md)
+## <a name="see-also"></a><span data-ttu-id="9775e-114">参照</span><span class="sxs-lookup"><span data-stu-id="9775e-114">See Also</span></span>  
+ <span data-ttu-id="9775e-115">[フラット ファイル逆アセンブラー パイプライン コンポーネント](../core/flat-file-disassembler-pipeline-component.md) </span><span class="sxs-lookup"><span data-stu-id="9775e-115">[Flat File Disassembler Pipeline Component](../core/flat-file-disassembler-pipeline-component.md) </span></span>  
+ [<span data-ttu-id="9775e-116">フラット ファイル逆アセンブラー パイプライン コンポーネントを構成する方法</span><span class="sxs-lookup"><span data-stu-id="9775e-116">How to Configure the Flat File Disassembler Pipeline Component</span></span>](../core/how-to-configure-the-flat-file-disassembler-pipeline-component.md)

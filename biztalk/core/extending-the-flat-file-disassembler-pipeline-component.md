@@ -1,5 +1,5 @@
 ---
-title: フラット ファイル逆アセンブラー パイプライン コンポーネントを拡張 |Microsoft ドキュメント
+title: フラット ファイル逆アセンブラー パイプライン コンポーネントの拡張 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,17 +16,17 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 031189c0ecadfd8a7baff38200f044598e800437
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6f19184087c18b901944382c4a421c14c1911e4e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22246234"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65388222"
 ---
-# <a name="extending-the-flat-file-disassembler-pipeline-component"></a><span data-ttu-id="8a53b-102">フラット ファイル逆アセンブラー パイプライン コンポーネントを拡張します。</span><span class="sxs-lookup"><span data-stu-id="8a53b-102">Extending the Flat File Disassembler Pipeline Component</span></span>
-<span data-ttu-id="8a53b-103">次のサンプルは、UTF-7 でエンコードされたフラット ファイル ドキュメントを解析するカスタム逆アセンブラーを作成する方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="8a53b-103">The following sample illustrates how to create a custom disassembler to parse flat file documents that are UTF-7 encoded.</span></span> <span data-ttu-id="8a53b-104">Utf-7 ドキュメントを処理するには、このコンポーネントは、 **FFDasmComp**クラスとし、上書き、 **GetDataReader**メソッドです。</span><span class="sxs-lookup"><span data-stu-id="8a53b-104">To process UTF-7 documents, the component inherits from the **FFDasmComp** class and then overrides its **GetDataReader** method.</span></span>  
+# <a name="extending-the-flat-file-disassembler-pipeline-component"></a><span data-ttu-id="a0654-102">フラット ファイル逆アセンブラー パイプライン コンポーネントの拡張</span><span class="sxs-lookup"><span data-stu-id="a0654-102">Extending the Flat File Disassembler Pipeline Component</span></span>
+<span data-ttu-id="a0654-103">次の例は、utf-7 でエンコードされたフラット ファイル ドキュメントを解析するカスタム逆アセンブラーを作成する方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="a0654-103">The following sample illustrates how to create a custom disassembler to parse flat file documents that are UTF-7 encoded.</span></span> <span data-ttu-id="a0654-104">コンポーネントが継承、utf-7 ドキュメントを処理する、 **FFDasmComp**クラスとし、上書き、 **GetDataReader**メソッド。</span><span class="sxs-lookup"><span data-stu-id="a0654-104">To process UTF-7 documents, the component inherits from the **FFDasmComp** class and then overrides its **GetDataReader** method.</span></span>  
   
-## <a name="example"></a><span data-ttu-id="8a53b-105">例</span><span class="sxs-lookup"><span data-stu-id="8a53b-105">Example</span></span>  
+## <a name="example"></a><span data-ttu-id="a0654-105">例</span><span class="sxs-lookup"><span data-stu-id="a0654-105">Example</span></span>  
   
 ```  
 using System;  
@@ -107,11 +107,11 @@ namespace Microsoft.BizTalk.Test
 }  
 ```  
   
-## <a name="example"></a><span data-ttu-id="8a53b-106">例</span><span class="sxs-lookup"><span data-stu-id="8a53b-106">Example</span></span>  
- <span data-ttu-id="8a53b-107">フラット ファイル インターチェンジのトランザクション処理用のカスタム逆アセンブラーを作成する方法を次に示します。</span><span class="sxs-lookup"><span data-stu-id="8a53b-107">The following example illustrates how to create a custom disassembler for transactional processing of flat file interchanges.</span></span> <span data-ttu-id="8a53b-108">これは、入力されたインターチェンジ全体が完全に処理されるまで逆アセンブラー ドキュメントを生成しない点が、標準のフラット ファイル逆アセンブラーとは異なります。</span><span class="sxs-lookup"><span data-stu-id="8a53b-108">It differs from the standard Flat File Disassembler in that it does not produce any disassembled documents until the entire input interchange is completely processed.</span></span> <span data-ttu-id="8a53b-109">このコンポーネントの実装が継承、 **FFDasmComp**クラスおよびオーバーライド、 **GetNext**メソッドです。</span><span class="sxs-lookup"><span data-stu-id="8a53b-109">This component implementation inherits from the **FFDasmComp** class and overrides the **GetNext** method.</span></span> <span data-ttu-id="8a53b-110">最初の呼び出しで、 **GetNext**メソッドをインターチェンジ内のすべてのメッセージを処理してに保存、 **ArrayList**から最初のメッセージが返されます、 **ArrayList**です。</span><span class="sxs-lookup"><span data-stu-id="8a53b-110">On the first call to the **GetNext** method, it processes all messages in the interchange, stores them in an **ArrayList**, and returns the first message from the **ArrayList**.</span></span> <span data-ttu-id="8a53b-111">後続の呼び出しから次のメッセージを返す、 **ArrayList**です。</span><span class="sxs-lookup"><span data-stu-id="8a53b-111">On subsequent calls, it returns the next message from the **ArrayList**.</span></span>  
+## <a name="example"></a><span data-ttu-id="a0654-106">例</span><span class="sxs-lookup"><span data-stu-id="a0654-106">Example</span></span>  
+ <span data-ttu-id="a0654-107">次の例では、フラット ファイル インターチェンジのトランザクション処理のカスタム逆アセンブラーを作成する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="a0654-107">The following example illustrates how to create a custom disassembler for transactional processing of flat file interchanges.</span></span> <span data-ttu-id="a0654-108">入力されたインターチェンジ全体が完全に処理されるまで、逆アセンブルしたドキュメントを生成しないことで、標準のフラット ファイル逆アセンブラーとは異なります。</span><span class="sxs-lookup"><span data-stu-id="a0654-108">It differs from the standard Flat File Disassembler in that it does not produce any disassembled documents until the entire input interchange is completely processed.</span></span> <span data-ttu-id="a0654-109">このコンポーネントの実装が継承、 **FFDasmComp**クラスおよびオーバーライド、 **GetNext**メソッド。</span><span class="sxs-lookup"><span data-stu-id="a0654-109">This component implementation inherits from the **FFDasmComp** class and overrides the **GetNext** method.</span></span> <span data-ttu-id="a0654-110">最初の呼び出しで、 **GetNext**メソッドをインターチェンジ内のすべてのメッセージを処理してに保存、 **ArrayList**から、最初のメッセージを返します、 **ArrayList**します。</span><span class="sxs-lookup"><span data-stu-id="a0654-110">On the first call to the **GetNext** method, it processes all messages in the interchange, stores them in an **ArrayList**, and returns the first message from the **ArrayList**.</span></span> <span data-ttu-id="a0654-111">後続の呼び出しで次のメッセージを返します、 **ArrayList**します。</span><span class="sxs-lookup"><span data-stu-id="a0654-111">On subsequent calls, it returns the next message from the **ArrayList**.</span></span>  
   
 > [!NOTE]
->  <span data-ttu-id="8a53b-112">次のコード例の GetNext() メソッドの実装では、インターチェンジ全体をメモリ内に保持するため、大規模なドキュメントの処理には適していません。</span><span class="sxs-lookup"><span data-stu-id="8a53b-112">The implementation of the GetNext() method in the code sample below would not be suitable for the processing of large documents because it retains the entire interchange in memory.</span></span>  <span data-ttu-id="8a53b-113">大規模なドキュメントにこの技法を使用すると、メモリ リソースを著しく消費し、パフォーマンスが低下したり、動作が不安定になったりする可能性があります。</span><span class="sxs-lookup"><span data-stu-id="8a53b-113">Using this technique for large documents could exhaust memory resources and cause degraded performance or unstable behavior.</span></span>  
+>  <span data-ttu-id="a0654-112">次のコード例の GetNext() メソッドの実装はメモリ内全体のインターチェンジを保持しているので、サイズの大きいドキュメントの処理に適切でないです。</span><span class="sxs-lookup"><span data-stu-id="a0654-112">The implementation of the GetNext() method in the code sample below would not be suitable for the processing of large documents because it retains the entire interchange in memory.</span></span>  <span data-ttu-id="a0654-113">サイズの大きいドキュメントのこの手法を使用してリソースと原因低下パフォーマンスや動作が不安定なメモリを使い果たす可能性があります。</span><span class="sxs-lookup"><span data-stu-id="a0654-113">Using this technique for large documents could exhaust memory resources and cause degraded performance or unstable behavior.</span></span>  
   
 ```  
 using System;  
@@ -232,5 +232,5 @@ namespace Microsoft.BizTalk.Component
   
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="8a53b-114">参照</span><span class="sxs-lookup"><span data-stu-id="8a53b-114">See Also</span></span>  
- [<span data-ttu-id="8a53b-115">逆アセンブラー パイプライン コンポーネントの開発</span><span class="sxs-lookup"><span data-stu-id="8a53b-115">Developing a Disassembling Pipeline Component</span></span>](../core/developing-a-disassembling-pipeline-component.md)
+## <a name="see-also"></a><span data-ttu-id="a0654-114">参照</span><span class="sxs-lookup"><span data-stu-id="a0654-114">See Also</span></span>  
+ [<span data-ttu-id="a0654-115">逆アセンブラー パイプライン コンポーネントの開発</span><span class="sxs-lookup"><span data-stu-id="a0654-115">Developing a Disassembling Pipeline Component</span></span>](../core/developing-a-disassembling-pipeline-component.md)

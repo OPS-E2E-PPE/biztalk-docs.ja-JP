@@ -1,5 +1,5 @@
 ---
-title: ループ Functoid |Microsoft ドキュメント
+title: ループ Functoid |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,28 +12,28 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5ce2b66fd796708a0e8b24ee05e3a0b043af6808
-ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
+ms.openlocfilehash: ed86e27ebb2ff9a2eace4801906d61ed677c85af
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2018
-ms.locfileid: "22262842"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65380460"
 ---
-# <a name="looping-functoid"></a><span data-ttu-id="f4e35-102">ループ Functoid</span><span class="sxs-lookup"><span data-stu-id="f4e35-102">Looping Functoid</span></span>
+# <a name="looping-functoid"></a><span data-ttu-id="1df47-102">ループ Functoid</span><span class="sxs-lookup"><span data-stu-id="1df47-102">Looping Functoid</span></span>
 
-## <a name="overview--example"></a><span data-ttu-id="f4e35-103">概要 & の使用例</span><span class="sxs-lookup"><span data-stu-id="f4e35-103">Overview & example</span></span>
-<span data-ttu-id="f4e35-104">**ループ** functoid が複数のレコードまたは送信元スキーマ内のフィールドを送信先スキーマの 1 つのレコードに結合します。</span><span class="sxs-lookup"><span data-stu-id="f4e35-104">The **Looping** functoid combines multiple records or fields in the source schema into a single record in the destination schema.</span></span>  
+## <a name="overview--example"></a><span data-ttu-id="1df47-103">概要と例</span><span class="sxs-lookup"><span data-stu-id="1df47-103">Overview & example</span></span>
+<span data-ttu-id="1df47-104">**ループ**functoid が複数のレコードまたは送信元スキーマ内のフィールドを送信先スキーマの 1 つのレコードに結合します。</span><span class="sxs-lookup"><span data-stu-id="1df47-104">The **Looping** functoid combines multiple records or fields in the source schema into a single record in the destination schema.</span></span>  
   
- <span data-ttu-id="f4e35-105">次に示します、 **ループ**単一のマスター住所リストに 2 つの異なる調査から収集された functoid のマップ内でアドレスを結合するために使用します。</span><span class="sxs-lookup"><span data-stu-id="f4e35-105">The following figure shows a **Looping**functoid used in a map to combine addresses collected from two different surveys into a single master address list.</span></span>  
+ <span data-ttu-id="1df47-105">次に示します、**ループ**を 1 つのマスター住所リストに 2 つの異なる調査から functoid をマップ内でアドレスを結合するために使用を収集します。</span><span class="sxs-lookup"><span data-stu-id="1df47-105">The following figure shows a **Looping**functoid used in a map to combine addresses collected from two different surveys into a single master address list.</span></span>  
   
 > [!NOTE]
->  <span data-ttu-id="f4e35-106">**ループ** と **値のマッピング (フラット化)** functoid をまとめて使用しない必要があります。</span><span class="sxs-lookup"><span data-stu-id="f4e35-106">The **Looping** and **Value Mapping (Flattening)** functoids should not be used together.</span></span> <span data-ttu-id="f4e35-107">送信元の下にある対象ノードの依存関係のループがないと見なさコンパイル済みのマップの結果、両方をまとめて使用する場合、 **ループ** functoid です。</span><span class="sxs-lookup"><span data-stu-id="f4e35-107">If both are used together, it results in a compiled map that assumed there is no source looping dependency for the target nodes that are below the **Looping** functoid.</span></span>  
+>  <span data-ttu-id="1df47-106">**ループ**と**値のマッピング (フラット化)** functoid は一緒使用できません。</span><span class="sxs-lookup"><span data-stu-id="1df47-106">The **Looping** and **Value Mapping (Flattening)** functoids should not be used together.</span></span> <span data-ttu-id="1df47-107">元のループの下にあるターゲット ノードの依存関係がないと見なされます。 コンパイル済みのマップの両方をまとめて使用する場合になります、**ループ**functoid。</span><span class="sxs-lookup"><span data-stu-id="1df47-107">If both are used together, it results in a compiled map that assumed there is no source looping dependency for the target nodes that are below the **Looping** functoid.</span></span>  
   
- <span data-ttu-id="f4e35-108">![ループ functoid の使用方法を示すマップです。](../core/media/loopingfunctoid.gif "loopingfunctoid")</span><span class="sxs-lookup"><span data-stu-id="f4e35-108">![Map illustrating the use of the looping functoid.](../core/media/loopingfunctoid.gif "loopingfunctoid")</span></span>  
+ <span data-ttu-id="1df47-108">![ループ functoid の使用方法を示すマップです。](../core/media/loopingfunctoid.gif "loopingfunctoid")</span><span class="sxs-lookup"><span data-stu-id="1df47-108">![Map illustrating the use of the looping functoid.](../core/media/loopingfunctoid.gif "loopingfunctoid")</span></span>  
   
- <span data-ttu-id="f4e35-109">**FoodSurvey** と **FlowerSurvey** 、送信元スキーマのループ レコードは、ループにマップされる **アドレス** 、送信先スキーマのレコードです。</span><span class="sxs-lookup"><span data-stu-id="f4e35-109">The **FoodSurvey** and **FlowerSurvey** looping records of the source schema are mapped to the looping **Address** record of the destination schema.</span></span> <span data-ttu-id="f4e35-110">3 つの入力インスタンス メッセージがある場合 **FoodSurvey** レコードと 2 つ **FlowerSurvey** 、レコード、 **ループ**functoid では、これらの 5 つを作成する結合 **アドレス** 出力インスタンス メッセージ内のレコードです。</span><span class="sxs-lookup"><span data-stu-id="f4e35-110">If an input instance message has three **FoodSurvey** records and two **FlowerSurvey** records, the **Looping**functoid combines these to create five **Address** records in the output instance message.</span></span>  
+ <span data-ttu-id="1df47-109">**FoodSurvey**と**FlowerSurvey** 、送信元スキーマのループ レコードは、ループにマップされます**アドレス**送信先スキーマのレコード。</span><span class="sxs-lookup"><span data-stu-id="1df47-109">The **FoodSurvey** and **FlowerSurvey** looping records of the source schema are mapped to the looping **Address** record of the destination schema.</span></span> <span data-ttu-id="1df47-110">入力インスタンス メッセージを 3 つ**FoodSurvey**レコードと 2 つ**FlowerSurvey** 、レコード、**ループ**functoid では、これらの 5 つを作成する結合**アドレス**出力インスタンス メッセージ内のレコード。</span><span class="sxs-lookup"><span data-stu-id="1df47-110">If an input instance message has three **FoodSurvey** records and two **FlowerSurvey** records, the **Looping**functoid combines these to create five **Address** records in the output instance message.</span></span>  
   
- <span data-ttu-id="f4e35-111">次のコードは、入力インスタンス メッセージのサンプルです。</span><span class="sxs-lookup"><span data-stu-id="f4e35-111">The following code is a sample input instance message.</span></span>  
+ <span data-ttu-id="1df47-111">次のコードは、入力インスタンス メッセージのサンプルです。</span><span class="sxs-lookup"><span data-stu-id="1df47-111">The following code is a sample input instance message.</span></span>  
   
 ```  
 <ns0:Surveys xmlns:ns0="http://LoopingFunctoid.Surveys">  
@@ -45,7 +45,7 @@ ms.locfileid: "22262842"
 </ns0:Surveys>  
 ```  
   
- <span data-ttu-id="f4e35-112">この入力インスタンス メッセージを上の図に示したマップで処理すると、次の出力インスタンス メッセージが生成されます。</span><span class="sxs-lookup"><span data-stu-id="f4e35-112">This input instance message produces the following output instance message when processed by the map in the preceding figure.</span></span>  
+ <span data-ttu-id="1df47-112">この入力インスタンス メッセージでは、前の図に、マップによって処理されるときに次の出力インスタンス メッセージを生成します。</span><span class="sxs-lookup"><span data-stu-id="1df47-112">This input instance message produces the following output instance message when processed by the map in the preceding figure.</span></span>  
   
 ```  
 <ns0:MasterAddresses xmlns:ns0="http://LoopingFunctoid.MasterAddresses">  
@@ -57,7 +57,7 @@ ms.locfileid: "22262842"
 </ns0:MasterAddresses>  
 ```  
   
- <span data-ttu-id="f4e35-113">**FoodSurvey** と **FlowerSurvey** メッセージのアドレスがまとめられます。</span><span class="sxs-lookup"><span data-stu-id="f4e35-113">The **FoodSurvey** and **FlowerSurvey** message addresses have been combined.</span></span> <span data-ttu-id="f4e35-114">まとめられたメッセージでは、各アドレスの送信元は示されません。</span><span class="sxs-lookup"><span data-stu-id="f4e35-114">The combined message does not indicate the source of each address.</span></span> <span data-ttu-id="f4e35-115">元を追跡する場合は、追加、 **ソース** 属性を **アドレス** のレコード、 **MasterAddress** スキーマとマップを定数値です。</span><span class="sxs-lookup"><span data-stu-id="f4e35-115">If you want to track the source, add a **Source** attribute to the **Address** record of the **MasterAddress** schema and map a constant value.</span></span> <span data-ttu-id="f4e35-116">この値を設定するには、接続、 **FoodSurvey** フィールドを新しい **ソース** フィールドです。</span><span class="sxs-lookup"><span data-stu-id="f4e35-116">To set this value, connect the **FoodSurvey** field to the new **Source** field.</span></span> <span data-ttu-id="f4e35-117">コネクタ線上では、変更、 **リンク プロパティ** &#124; **コンパイラ** &#124; **リンクのソース** を「名前のコピー」プロパティです。</span><span class="sxs-lookup"><span data-stu-id="f4e35-117">On the connector line, modify the **Link Properties** &#124; **Compiler** &#124; **Source Links** property to "Copy name".</span></span> <span data-ttu-id="f4e35-118">に対して、このプロセスを繰り返して、 **FlowerSurvey** フィールドです。</span><span class="sxs-lookup"><span data-stu-id="f4e35-118">Repeat this process for the **FlowerSurvey** field.</span></span> <span data-ttu-id="f4e35-119">ここから入力メッセージを再処理すると、次の出力が得られます。</span><span class="sxs-lookup"><span data-stu-id="f4e35-119">Reprocessing the input message from above yields the following output:</span></span>  
+ <span data-ttu-id="1df47-113">**FoodSurvey**と**FlowerSurvey**メッセージのアドレスが統合されました。</span><span class="sxs-lookup"><span data-stu-id="1df47-113">The **FoodSurvey** and **FlowerSurvey** message addresses have been combined.</span></span> <span data-ttu-id="1df47-114">結合されたメッセージには、各アドレスのソースは示しません。</span><span class="sxs-lookup"><span data-stu-id="1df47-114">The combined message does not indicate the source of each address.</span></span> <span data-ttu-id="1df47-115">元を追跡する場合は、追加、**ソース**属性を**アドレス**のレコード、 **MasterAddress**スキーマおよびマップ定数値。</span><span class="sxs-lookup"><span data-stu-id="1df47-115">If you want to track the source, add a **Source** attribute to the **Address** record of the **MasterAddress** schema and map a constant value.</span></span> <span data-ttu-id="1df47-116">この値を設定するには、接続、 **FoodSurvey**フィールドを新しい**ソース**フィールド。</span><span class="sxs-lookup"><span data-stu-id="1df47-116">To set this value, connect the **FoodSurvey** field to the new **Source** field.</span></span> <span data-ttu-id="1df47-117">コネクタ線上では、変更、 **リンク プロパティ** &#124; **コンパイラ** &#124; **リンクのソース** を「名前のコピー」プロパティです。</span><span class="sxs-lookup"><span data-stu-id="1df47-117">On the connector line, modify the **Link Properties** &#124; **Compiler** &#124; **Source Links** property to "Copy name".</span></span> <span data-ttu-id="1df47-118">この手順を繰り返します、 **FlowerSurvey**フィールド。</span><span class="sxs-lookup"><span data-stu-id="1df47-118">Repeat this process for the **FlowerSurvey** field.</span></span> <span data-ttu-id="1df47-119">上記の入力メッセージを再処理には、次の出力が得られます。</span><span class="sxs-lookup"><span data-stu-id="1df47-119">Reprocessing the input message from above yields the following output:</span></span>  
   
 ```  
 <ns0:MasterAddresses xmlns:ns0="http://LoopingFunctoid.MasterAddresses">  
@@ -69,11 +69,11 @@ ms.locfileid: "22262842"
 </ns0:MasterAddresses>  
 ```  
 
-## <a name="relationships-with-nodes"></a><span data-ttu-id="f4e35-120">ノードとの関係</span><span class="sxs-lookup"><span data-stu-id="f4e35-120">Relationships with nodes</span></span>
+## <a name="relationships-with-nodes"></a><span data-ttu-id="1df47-120">ノードとの関係</span><span class="sxs-lookup"><span data-stu-id="1df47-120">Relationships with nodes</span></span>
 
- <span data-ttu-id="f4e35-121">ノード間のリレーションシップの動作に影響する、 **ループ** functoid です。</span><span class="sxs-lookup"><span data-stu-id="f4e35-121">Relationships among nodes affect the behavior of the **Looping** functoid.</span></span> <span data-ttu-id="f4e35-122">たとえば、子ノードと、ソース スキーマ内の親の両方のリンク、 **ループ** functoid により、宛先ノードが作成されます。</span><span class="sxs-lookup"><span data-stu-id="f4e35-122">For example, linking both a child node and its parent in the source schema to the **Looping** functoid prevents the destination node from being created.</span></span>  
+ <span data-ttu-id="1df47-121">ノード間のリレーションシップの動作に影響を与える、**ループ**functoid。</span><span class="sxs-lookup"><span data-stu-id="1df47-121">Relationships among nodes affect the behavior of the **Looping** functoid.</span></span> <span data-ttu-id="1df47-122">たとえば、子ノードとその親に送信元スキーマの両方のリンク、**ループ**functoid は、移行先ノードが作成されないようにためです。</span><span class="sxs-lookup"><span data-stu-id="1df47-122">For example, linking both a child node and its parent in the source schema to the **Looping** functoid prevents the destination node from being created.</span></span>  
   
- <span data-ttu-id="f4e35-123">Functoid は、送信元ノード間のリレーションシップにも影響を受けます。</span><span class="sxs-lookup"><span data-stu-id="f4e35-123">Functoids are also affected by the relationships among source nodes.</span></span> <span data-ttu-id="f4e35-124">ソース ノードの兄弟ではない子フィールドに、functoid を接続する、 **ループ** functoid が予期しない結果を生成します。</span><span class="sxs-lookup"><span data-stu-id="f4e35-124">Connecting a functoid to non-sibling child fields of source nodes of the **Looping** functoid may produce unexpected results.</span></span> <span data-ttu-id="f4e35-125">使用例を **文字列連結** を組み合わせる functoid、 **FoodSurvey** 名 フィールドと **FlowerSurvey** Address フィールドのアドレス フィールドに **MasterAddress** と次の出力インスタンス メッセージが生成します。</span><span class="sxs-lookup"><span data-stu-id="f4e35-125">For example, using the **String Concatenate** functoid to combine the **FoodSurvey** Name field and **FlowerSurvey** Address field into the Address Name field in **MasterAddress** would produce the following output instance message:</span></span>  
+ <span data-ttu-id="1df47-123">Functoid は、ソース ノード間のリレーションシップの影響を受けます。</span><span class="sxs-lookup"><span data-stu-id="1df47-123">Functoids are also affected by the relationships among source nodes.</span></span> <span data-ttu-id="1df47-124">Functoid のソース ノードの兄弟ではない子フィールドに接続する、**ループ**functoid は、予期しない結果を生成可能性があります。</span><span class="sxs-lookup"><span data-stu-id="1df47-124">Connecting a functoid to non-sibling child fields of source nodes of the **Looping** functoid may produce unexpected results.</span></span> <span data-ttu-id="1df47-125">を使用するなど、**文字列連結**functoid、 **FoodSurvey**名フィールドと**FlowerSurvey** のアドレスの名前フィールドに、アドレスフィールド**MasterAddress**次の出力インスタンス メッセージが生成されます。</span><span class="sxs-lookup"><span data-stu-id="1df47-125">For example, using the **String Concatenate** functoid to combine the **FoodSurvey** Name field and **FlowerSurvey** Address field into the Address Name field in **MasterAddress** would produce the following output instance message:</span></span>  
   
 ```  
 <ns0:MasterAddresses xmlns:ns0="http://LoopingFunctoid.MasterAddresses">  
@@ -85,20 +85,20 @@ ms.locfileid: "22262842"
 </ns0:MasterAddresses>  
 ```  
   
- <span data-ttu-id="f4e35-126">注意してください方法 **名前** フィールドが **FoodSurvey** ソース メッセージになくがの存在 **FlowerSurvey** メッセージのソースします。</span><span class="sxs-lookup"><span data-stu-id="f4e35-126">Notice how the **Name** field is missing for **FoodSurvey** source messages but is present for **FlowerSurvey** source messages.</span></span>  
+ <span data-ttu-id="1df47-126">注意してください方法、**名前**フィールドが**FoodSurvey**ソース メッセージには、存在なく**FlowerSurvey**メッセージのソースします。</span><span class="sxs-lookup"><span data-stu-id="1df47-126">Notice how the **Name** field is missing for **FoodSurvey** source messages but is present for **FlowerSurvey** source messages.</span></span>  
   
 > [!IMPORTANT]
->  <span data-ttu-id="f4e35-127">ソース ノードの子フィールドに、functoid を接続する、 **ループ** functoid は、送信元ノードは兄弟ではない場合に、予期しない結果になる可能性があります。</span><span class="sxs-lookup"><span data-stu-id="f4e35-127">Connecting a functoid to child fields of source nodes of the **Looping** functoid may produce unexpected results if the source nodes are not siblings.</span></span>  
+>  <span data-ttu-id="1df47-127">Functoid のソース ノードの子フィールドに接続する、**ループ**ソース ノードは兄弟ではない場合、functoid が予期しない結果を生成可能性があります。</span><span class="sxs-lookup"><span data-stu-id="1df47-127">Connecting a functoid to child fields of source nodes of the **Looping** functoid may produce unexpected results if the source nodes are not siblings.</span></span>  
   
- <span data-ttu-id="f4e35-128">**ループ** functoid は、条件付きループを作成し、カタログにスキーマのマップに使用できる強力な構造です。</span><span class="sxs-lookup"><span data-stu-id="f4e35-128">The **Looping** functoid is a powerful construct that you can use to create conditional loops and to map schemas to catalogs.</span></span> <span data-ttu-id="f4e35-129">重複するいくつかの影響もあります **ループ** functoid のパスを考慮する必要があります。</span><span class="sxs-lookup"><span data-stu-id="f4e35-129">There are also some effects of overlapping **Looping** functoid paths you need to take into account.</span></span>  
+ <span data-ttu-id="1df47-128">**ループ**functoid は、条件付きループを作成して、カタログにスキーマのマップに使用できる強力な構造です。</span><span class="sxs-lookup"><span data-stu-id="1df47-128">The **Looping** functoid is a powerful construct that you can use to create conditional loops and to map schemas to catalogs.</span></span> <span data-ttu-id="1df47-129">重複のいくつかの効果もあります**ループ**functoid のパスを考慮する必要があります。</span><span class="sxs-lookup"><span data-stu-id="1df47-129">There are also some effects of overlapping **Looping** functoid paths you need to take into account.</span></span>  
   
-## <a name="next-steps"></a><span data-ttu-id="f4e35-130">次の手順</span><span class="sxs-lookup"><span data-stu-id="f4e35-130">Next steps</span></span>
+## <a name="next-steps"></a><span data-ttu-id="1df47-130">次のステップ</span><span class="sxs-lookup"><span data-stu-id="1df47-130">Next steps</span></span>
   
--   [<span data-ttu-id="f4e35-131">条件付きループ</span><span class="sxs-lookup"><span data-stu-id="f4e35-131">Conditional Looping</span></span>](../core/conditional-looping.md)  
+-   [<span data-ttu-id="1df47-131">条件付きループ</span><span class="sxs-lookup"><span data-stu-id="1df47-131">Conditional Looping</span></span>](../core/conditional-looping.md)  
   
--   [<span data-ttu-id="f4e35-132">カタログに対するフラット スキーマ</span><span class="sxs-lookup"><span data-stu-id="f4e35-132">Flat Schema to Catalog</span></span>](../core/flat-schema-to-catalog.md)  
+-   [<span data-ttu-id="1df47-132">カタログに対するフラット スキーマ</span><span class="sxs-lookup"><span data-stu-id="1df47-132">Flat Schema to Catalog</span></span>](../core/flat-schema-to-catalog.md)  
   
--   [<span data-ttu-id="f4e35-133">ループ パス</span><span class="sxs-lookup"><span data-stu-id="f4e35-133">Loop Paths</span></span>](../core/loop-paths.md)  
+-   [<span data-ttu-id="1df47-133">ループ パス</span><span class="sxs-lookup"><span data-stu-id="1df47-133">Loop Paths</span></span>](../core/loop-paths.md)  
   
-## <a name="see-also"></a><span data-ttu-id="f4e35-134">参照</span><span class="sxs-lookup"><span data-stu-id="f4e35-134">See Also</span></span>  
- <span data-ttu-id="f4e35-135">**テーブル ループ Functoid リファレンス** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]</span><span class="sxs-lookup"><span data-stu-id="f4e35-135">**Table Looping Functoid Reference** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]</span></span>
+## <a name="see-also"></a><span data-ttu-id="1df47-134">参照</span><span class="sxs-lookup"><span data-stu-id="1df47-134">See Also</span></span>  
+ <span data-ttu-id="1df47-135">**テーブル ループ Functoid のリファレンス** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]</span><span class="sxs-lookup"><span data-stu-id="1df47-135">**Table Looping Functoid Reference** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]</span></span>

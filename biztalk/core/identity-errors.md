@@ -1,5 +1,5 @@
 ---
-title: Id エラー |Microsoft ドキュメント
+title: Id エラー |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,20 +12,20 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 85f39eceb99da6f029d63aa209bb35837f562c3e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 73e147e5967a85ff4766b801a46c505af5d5214e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22256394"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65382821"
 ---
-# <a name="identity-errors"></a><span data-ttu-id="c293c-102">ID エラー</span><span class="sxs-lookup"><span data-stu-id="c293c-102">Identity Errors</span></span>
-<span data-ttu-id="c293c-103">ここでは、WCF の ID エラーを診断および解決するための詳細について説明します。</span><span class="sxs-lookup"><span data-stu-id="c293c-103">This section contains detailed information for diagnosing and resolving WCF Identity errors.</span></span>  
+# <a name="identity-errors"></a><span data-ttu-id="4ceb1-102">ID エラー</span><span class="sxs-lookup"><span data-stu-id="4ceb1-102">Identity Errors</span></span>
+<span data-ttu-id="4ceb1-103">ここでは、WCF の ID エラーを診断および解決するための詳細について説明します。</span><span class="sxs-lookup"><span data-stu-id="4ceb1-103">This section contains detailed information for diagnosing and resolving WCF Identity errors.</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="c293c-104">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="c293c-104">In This Section</span></span>  
+## <a name="in-this-section"></a><span data-ttu-id="4ceb1-104">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="4ceb1-104">In This Section</span></span>  
   
--   [<span data-ttu-id="c293c-105">Id の作成に失敗しました</span><span class="sxs-lookup"><span data-stu-id="c293c-105">Failed to create identity</span></span>](../core/failed-to-create-identity.md)  
+-   [<span data-ttu-id="4ceb1-105">ID を作成できませんでした</span><span class="sxs-lookup"><span data-stu-id="4ceb1-105">Failed to create identity</span></span>](../core/failed-to-create-identity.md)  
   
--   [<span data-ttu-id="c293c-106">Base 64 エンコードされた証明書から X509CertificateIdentity を作成できませんでした。</span><span class="sxs-lookup"><span data-stu-id="c293c-106">Failed to create X509CertificateIdentity from base-64 encoded certificate</span></span>](../core/failed-to-create-x509certificateidentity-from-base-64-encoded-certificate.md)  
+-   [<span data-ttu-id="4ceb1-106">Base-64 でエンコードされた証明書から X509CertificateIdentity を作成できませんでした</span><span class="sxs-lookup"><span data-stu-id="4ceb1-106">Failed to create X509CertificateIdentity from base-64 encoded certificate</span></span>](../core/failed-to-create-x509certificateidentity-from-base-64-encoded-certificate.md)  
   
--   [<span data-ttu-id="c293c-107">証明書参照から X509CertificateIdentity を作成できませんでした。</span><span class="sxs-lookup"><span data-stu-id="c293c-107">Failed to create X509CertificateIdentity from certificate reference</span></span>](../core/failed-to-create-x509certificateidentity-from-certificate-reference.md)
+-   [<span data-ttu-id="4ceb1-107">証明書参照から X509CertificateIdentity を作成できませんでした</span><span class="sxs-lookup"><span data-stu-id="4ceb1-107">Failed to create X509CertificateIdentity from certificate reference</span></span>](../core/failed-to-create-x509certificateidentity-from-certificate-reference.md)

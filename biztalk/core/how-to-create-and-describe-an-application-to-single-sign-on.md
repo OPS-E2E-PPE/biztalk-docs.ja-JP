@@ -12,38 +12,38 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 874f3c0235d4a0a84d98905796de6db8b544b1bd
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9b914cc54e48aaa4a58d3f370f50132265f97def
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36990259"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65385517"
 ---
-# <a name="how-to-create-and-describe-an-application-to-single-sign-on"></a><span data-ttu-id="19913-102">作成して、シングル サインオンにアプリケーションを記述する方法</span><span class="sxs-lookup"><span data-stu-id="19913-102">How to Create and Describe an Application to Single Sign-On</span></span>
-<span data-ttu-id="19913-103">一般的な管理タスクとして、関連アプリケーションをエンタープライズ シングル サインオン (SSO) データベースに追加することが挙げられます。</span><span class="sxs-lookup"><span data-stu-id="19913-103">A common administrative task that you might need to perform is adding an affiliate application into the Enterprise Single Sign-On (SSO) database.</span></span> <span data-ttu-id="19913-104">関連アプリケーションをエンタープライズ SSO データベースに追加することによって、ユーザーおよび資格情報を関連アプリケーションに関連付けることができます。</span><span class="sxs-lookup"><span data-stu-id="19913-104">Adding an affiliate application to the Enterprise SSO database enables you to associate users and credentials with the affiliated application.</span></span>  
+# <a name="how-to-create-and-describe-an-application-to-single-sign-on"></a><span data-ttu-id="c0ce1-102">作成して、シングル サインオンにアプリケーションを記述する方法</span><span class="sxs-lookup"><span data-stu-id="c0ce1-102">How to Create and Describe an Application to Single Sign-On</span></span>
+<span data-ttu-id="c0ce1-103">一般的な管理タスクを実行する必要がありますが、エンタープライズ シングル サインオン (SSO) データベースに関連アプリケーションを追加しています。</span><span class="sxs-lookup"><span data-stu-id="c0ce1-103">A common administrative task that you might need to perform is adding an affiliate application into the Enterprise Single Sign-On (SSO) database.</span></span> <span data-ttu-id="c0ce1-104">関連アプリケーション、エンタープライズ SSO データベースを追加するには、ユーザーと資格情報関連のアプリケーションに関連付けることができます。</span><span class="sxs-lookup"><span data-stu-id="c0ce1-104">Adding an affiliate application to the Enterprise SSO database enables you to associate users and credentials with the affiliated application.</span></span>  
   
 > [!NOTE]
->  <span data-ttu-id="19913-105">関連アプリケーションを作成するには、"SSO 関連管理者" 以上の権限を持つアカウントが必要です。</span><span class="sxs-lookup"><span data-stu-id="19913-105">Creating an affiliated application requires membership in the "SSO Affiliate Administrator" account or above.</span></span>  
+>  <span data-ttu-id="c0ce1-105">関連アプリケーションを作成するには、「SSO 関連管理者」アカウントまたはの上のメンバーシップが必要です。</span><span class="sxs-lookup"><span data-stu-id="c0ce1-105">Creating an affiliated application requires membership in the "SSO Affiliate Administrator" account or above.</span></span>  
   
-### <a name="to-create-and-describe-an-application-in-the-sso-database"></a><span data-ttu-id="19913-106">SSO データベースに対してアプリケーションを作成および記述するには</span><span class="sxs-lookup"><span data-stu-id="19913-106">To create and describe an application in the SSO database</span></span>  
+### <a name="to-create-and-describe-an-application-in-the-sso-database"></a><span data-ttu-id="c0ce1-106">作成し、SSO データベース内のアプリケーションを記述するには</span><span class="sxs-lookup"><span data-stu-id="c0ce1-106">To create and describe an application in the SSO database</span></span>  
   
-1. <span data-ttu-id="19913-107">`ISSOAdmin` オブジェクトを新規作成します。</span><span class="sxs-lookup"><span data-stu-id="19913-107">Create a new `ISSOAdmin` object.</span></span>  
+1. <span data-ttu-id="c0ce1-107">新規作成`ISSOAdmin`オブジェクト。</span><span class="sxs-lookup"><span data-stu-id="c0ce1-107">Create a new `ISSOAdmin` object.</span></span>  
   
-2. <span data-ttu-id="19913-108">`ISSOAdmin.CreateApplication` を呼び出し、新しいアプリケーションを作成します。</span><span class="sxs-lookup"><span data-stu-id="19913-108">Create a new application with a call to `ISSOAdmin.CreateApplication`.</span></span>  
+2. <span data-ttu-id="c0ce1-108">呼び出して、新しいアプリケーションを作成`ISSOAdmin.CreateApplication`です。</span><span class="sxs-lookup"><span data-stu-id="c0ce1-108">Create a new application with a call to `ISSOAdmin.CreateApplication`.</span></span>  
   
-3. <span data-ttu-id="19913-109">`ISSOAdmin.CreateFieldInfo` を呼び出し、アプリケーションについて記述するフィールドを追加します。</span><span class="sxs-lookup"><span data-stu-id="19913-109">Add the relevant fields describing the application with a call to `ISSOAdmin.CreateFieldInfo`.</span></span>  
+3. <span data-ttu-id="c0ce1-109">呼び出しを使用してアプリケーションを記述するフィールドを追加`ISSOAdmin.CreateFieldInfo`します。</span><span class="sxs-lookup"><span data-stu-id="c0ce1-109">Add the relevant fields describing the application with a call to `ISSOAdmin.CreateFieldInfo`.</span></span>  
   
-    <span data-ttu-id="19913-110">この手順で、アプリケーションのユーザーとパスワードがデータベースに伝達されます。</span><span class="sxs-lookup"><span data-stu-id="19913-110">During this step, you tell the database that an application has users and associated passwords.</span></span>  
+    <span data-ttu-id="c0ce1-110">この手順では、中にすることを伝えるデータベース アプリケーション ユーザーと関連付けられているパスワード。</span><span class="sxs-lookup"><span data-stu-id="c0ce1-110">During this step, you tell the database that an application has users and associated passwords.</span></span>  
   
-4. <span data-ttu-id="19913-111">`ISSOAdmin.UpdateApplication` または `ISSOAdmin2.UpdateApplication2` を呼び出し、新たに作成された情報をサーバーにプッシュします。</span><span class="sxs-lookup"><span data-stu-id="19913-111">Push the newly created description out to the server with a call to `ISSOAdmin.UpdateApplication` or `ISSOAdmin2.UpdateApplication2`.</span></span>  
+4. <span data-ttu-id="c0ce1-111">呼び出しを使用して、サーバーを新しく作成された説明にプッシュ`ISSOAdmin.UpdateApplication`または`ISSOAdmin2.UpdateApplication2`します。</span><span class="sxs-lookup"><span data-stu-id="c0ce1-111">Push the newly created description out to the server with a call to `ISSOAdmin.UpdateApplication` or `ISSOAdmin2.UpdateApplication2`.</span></span>  
   
-    <span data-ttu-id="19913-112">この 2 つのメソッドの違いは、アプリケーションの更新を記述する際の手段にあります。`UpdateApplication2` では `IPropertyBag` が使用されるのに対し、`UpdateApplication` では複数のパラメーターが使用されます。</span><span class="sxs-lookup"><span data-stu-id="19913-112">The difference between the two methods is that `UpdateApplication2` uses an `IPropertyBag` as the way to describe the application updates, while `UpdateApplication` has multiple parameters.</span></span>  
+    <span data-ttu-id="c0ce1-112">2 つのメソッド間の差は`UpdateApplication2`を使用して、`IPropertyBag`中にアプリケーションを記述する方法は、更新、`UpdateApplication`は複数のパラメーターがあります。</span><span class="sxs-lookup"><span data-stu-id="c0ce1-112">The difference between the two methods is that `UpdateApplication2` uses an `IPropertyBag` as the way to describe the application updates, while `UpdateApplication` has multiple parameters.</span></span>  
   
-5. <span data-ttu-id="19913-113">`ISSOAdmin.PurgeCacheForApplication` を呼び出して、変更内容のローカル キャッシュを削除します。</span><span class="sxs-lookup"><span data-stu-id="19913-113">Purge the local cache for the changes you made by calling `ISSOAdmin.PurgeCacheForApplication`.</span></span>  
+5. <span data-ttu-id="c0ce1-113">呼び出すことによって行われた変更のローカル キャッシュを消去`ISSOAdmin.PurgeCacheForApplication`します。</span><span class="sxs-lookup"><span data-stu-id="c0ce1-113">Purge the local cache for the changes you made by calling `ISSOAdmin.PurgeCacheForApplication`.</span></span>  
   
-    <span data-ttu-id="19913-114">ローカル キャッシュはセキュリティ上、決して安全な場所ではありません。手順 3. で記述した名前とパスワードを、ローカル キャッシュから確実に削除する必要があります。</span><span class="sxs-lookup"><span data-stu-id="19913-114">Purging the local cache is a security measure that prevents having the names and passwords that you describe in step 3 to exist in an unsecured location.</span></span>  
+    <span data-ttu-id="c0ce1-114">名とパスワードを安全な場所に存在する 3 の手順で説明することによってのセキュリティ対策は、ローカル キャッシュを消去します。</span><span class="sxs-lookup"><span data-stu-id="c0ce1-114">Purging the local cache is a security measure that prevents having the names and passwords that you describe in step 3 to exist in an unsecured location.</span></span>  
   
-   <span data-ttu-id="19913-115">次の例は、アプリケーションを作成して、フィールド情報を追加する方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="19913-115">The following example shows how to create an application and add field information.</span></span>  
+   <span data-ttu-id="c0ce1-115">次の例では、アプリケーションを作成し、フィールドの情報を追加する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="c0ce1-115">The following example shows how to create an application and add field information.</span></span>  
   
 ```  
 public static bool AddApplication(string name, string admins, string users)  
@@ -69,5 +69,5 @@ public static bool AddApplication(string name, string admins, string users)
     }  
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="19913-116">参照</span><span class="sxs-lookup"><span data-stu-id="19913-116">See Also</span></span>  
- [<span data-ttu-id="19913-117">Enterprise Single Sign-On によるプログラミング</span><span class="sxs-lookup"><span data-stu-id="19913-117">Programming with Enterprise Single Sign-On</span></span>](../core/programming-with-enterprise-single-sign-on.md)
+## <a name="see-also"></a><span data-ttu-id="c0ce1-116">参照</span><span class="sxs-lookup"><span data-stu-id="c0ce1-116">See Also</span></span>  
+ [<span data-ttu-id="c0ce1-117">Enterprise Single Sign-On によるプログラミング</span><span class="sxs-lookup"><span data-stu-id="c0ce1-117">Programming with Enterprise Single Sign-On</span></span>](../core/programming-with-enterprise-single-sign-on.md)

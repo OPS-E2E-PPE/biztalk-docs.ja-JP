@@ -17,30 +17,30 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6893200c498fc387d9a1948d332db409cf3b4d61
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a4b69ccb37e1104f78515e2974fc9ff791b45c39
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36992699"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65385019"
 ---
-# <a name="how-to-get-the-duration-on-an-rta-window"></a><span data-ttu-id="0c611-102">RTA 時間帯の期間を取得する方法</span><span class="sxs-lookup"><span data-stu-id="0c611-102">How to Get the Duration on an RTA Window</span></span>
-<span data-ttu-id="0c611-103">管理者を使用して、 **rtawindow プロパティの get**コマンドを指定されたリアルタイム集計 (RTA) の実行時間を取得します。</span><span class="sxs-lookup"><span data-stu-id="0c611-103">Administrators use the **get-rtawindow** command to get the duration for the specified real-time aggregation (RTA).</span></span> <span data-ttu-id="0c611-104">このコマンドにより、期間の長さと、その期間の基準となる単位が返されます。</span><span class="sxs-lookup"><span data-stu-id="0c611-104">The command returns the length of the duration and the units by which the duration is measured.</span></span>  
+# <a name="how-to-get-the-duration-on-an-rta-window"></a><span data-ttu-id="3bdbf-102">期間が RTA ウィンドウを取得する方法</span><span class="sxs-lookup"><span data-stu-id="3bdbf-102">How to Get the Duration on an RTA Window</span></span>
+<span data-ttu-id="3bdbf-103">管理者を使用して、 **rtawindow プロパティの get**コマンドを指定されたリアルタイム集計 (RTA) の実行時間を取得します。</span><span class="sxs-lookup"><span data-stu-id="3bdbf-103">Administrators use the **get-rtawindow** command to get the duration for the specified real-time aggregation (RTA).</span></span> <span data-ttu-id="3bdbf-104">コマンドは、期間と期間の測定単位の長さを返します。</span><span class="sxs-lookup"><span data-stu-id="3bdbf-104">The command returns the length of the duration and the units by which the duration is measured.</span></span>  
   
-### <a name="to-get-the-duration-on-an-aggregation"></a><span data-ttu-id="0c611-105">集計の期間を取得するには</span><span class="sxs-lookup"><span data-stu-id="0c611-105">To get the duration on an aggregation</span></span>  
+### <a name="to-get-the-duration-on-an-aggregation"></a><span data-ttu-id="3bdbf-105">集計の期間を取得するには</span><span class="sxs-lookup"><span data-stu-id="3bdbf-105">To get the duration on an aggregation</span></span>  
   
-1. <span data-ttu-id="0c611-106">次のように、コマンド プロンプトを開きます: をクリックして**開始**、 をクリックして**実行**、型**cmd**、順にクリックします**OK**。</span><span class="sxs-lookup"><span data-stu-id="0c611-106">Open a command prompt as follows: Click **Start**, click **Run**, type **cmd**, and then click **OK**.</span></span>  
+1. <span data-ttu-id="3bdbf-106">次のように、コマンド プロンプトを開きます。をクリックして**開始**、 をクリックして**実行**、型**cmd**、順にクリックします**OK**。</span><span class="sxs-lookup"><span data-stu-id="3bdbf-106">Open a command prompt as follows: Click **Start**, click **Run**, type **cmd**, and then click **OK**.</span></span>  
   
-2. <span data-ttu-id="0c611-107">[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking フォルダーに移動します。</span><span class="sxs-lookup"><span data-stu-id="0c611-107">Navigate to the folder [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking.</span></span>  
+2. <span data-ttu-id="3bdbf-107">フォルダーに移動[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]追跡します。</span><span class="sxs-lookup"><span data-stu-id="3bdbf-107">Navigate to the folder [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking.</span></span>  
   
-3. <span data-ttu-id="0c611-108">型**bm get-rtawindow プロパティの表示:\<ビュー名\>-アクティビティ:\<アクティビティ名\>Rta:\<RTA 名\>**。</span><span class="sxs-lookup"><span data-stu-id="0c611-108">Type **bm get-rtawindow -View:\<view name\> -Activity:\<activity name\> -Rta:\<RTA name\>**.</span></span>  
+3. <span data-ttu-id="3bdbf-108">型**bm get-rtawindow プロパティの表示:\<ビュー名\>-アクティビティ:\<アクティビティ名\>Rta:\<RTA 名\>**。</span><span class="sxs-lookup"><span data-stu-id="3bdbf-108">Type **bm get-rtawindow -View:\<view name\> -Activity:\<activity name\> -Rta:\<RTA name\>**.</span></span>  
   
    > [!NOTE]
-   >  <span data-ttu-id="0c611-109">ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。</span><span class="sxs-lookup"><span data-stu-id="0c611-109">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  
+   >  <span data-ttu-id="3bdbf-109">ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。</span><span class="sxs-lookup"><span data-stu-id="3bdbf-109">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  
   
-4. <span data-ttu-id="0c611-110">**Enter**キーを押します。</span><span class="sxs-lookup"><span data-stu-id="0c611-110">Press **ENTER**.</span></span>  
+4. <span data-ttu-id="3bdbf-110">**Enter**キーを押します。</span><span class="sxs-lookup"><span data-stu-id="3bdbf-110">Press **ENTER**.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="0c611-111">参照</span><span class="sxs-lookup"><span data-stu-id="0c611-111">See Also</span></span>  
- <span data-ttu-id="0c611-112">[BAM 動的インフラストラクチャの管理](../core/managing-the-bam-dynamic-infrastructure.md) </span><span class="sxs-lookup"><span data-stu-id="0c611-112">[Managing the BAM Dynamic Infrastructure](../core/managing-the-bam-dynamic-infrastructure.md) </span></span>  
- <span data-ttu-id="0c611-113">[BAM 管理ユーティリティ](../core/bam-management-utility.md) </span><span class="sxs-lookup"><span data-stu-id="0c611-113">[BAM Management Utility](../core/bam-management-utility.md) </span></span>  
- [<span data-ttu-id="0c611-114">RTA ウィンドウの期間を設定する方法</span><span class="sxs-lookup"><span data-stu-id="0c611-114">How to Set the Duration on an RTA Window</span></span>](../core/how-to-set-the-duration-on-an-rta-window.md)
+## <a name="see-also"></a><span data-ttu-id="3bdbf-111">参照</span><span class="sxs-lookup"><span data-stu-id="3bdbf-111">See Also</span></span>  
+ <span data-ttu-id="3bdbf-112">[BAM 動的インフラストラクチャの管理](../core/managing-the-bam-dynamic-infrastructure.md) </span><span class="sxs-lookup"><span data-stu-id="3bdbf-112">[Managing the BAM Dynamic Infrastructure](../core/managing-the-bam-dynamic-infrastructure.md) </span></span>  
+ <span data-ttu-id="3bdbf-113">[BAM 管理ユーティリティ](../core/bam-management-utility.md) </span><span class="sxs-lookup"><span data-stu-id="3bdbf-113">[BAM Management Utility](../core/bam-management-utility.md) </span></span>  
+ [<span data-ttu-id="3bdbf-114">RTA ウィンドウの期間を設定する方法</span><span class="sxs-lookup"><span data-stu-id="3bdbf-114">How to Set the Duration on an RTA Window</span></span>](../core/how-to-set-the-duration-on-an-rta-window.md)

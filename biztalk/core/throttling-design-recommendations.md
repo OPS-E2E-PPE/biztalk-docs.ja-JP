@@ -1,5 +1,5 @@
 ---
-title: 設計の推奨事項を調整 |Microsoft ドキュメント
+title: 制限の設計の推奨事項 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,20 +15,20 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ebc5fff27bf634480c1de3c5e28f1184e0a8d046
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 784953dbc8b9cf33a883997b13e83554666b3488
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22278546"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65379968"
 ---
-# <a name="throttling-design-recommendations"></a><span data-ttu-id="6c41c-102">制限の設計時の推奨事項</span><span class="sxs-lookup"><span data-stu-id="6c41c-102">Throttling Design Recommendations</span></span>
-<span data-ttu-id="6c41c-103">このセクションでは、制限を利用する場合のソリューションの設計方法に関する推奨事項について説明します。</span><span class="sxs-lookup"><span data-stu-id="6c41c-103">This section provides recommendations on how to design a solution to take advantage of throttling.</span></span> <span data-ttu-id="6c41c-104">[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の制限エンジンの機能強化は、BizTalk Server のパフォーマンスに大きな影響を与える可能性があります。</span><span class="sxs-lookup"><span data-stu-id="6c41c-104">The throttling engine enhancements in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] may significantly impact the performance of BizTalk Server</span></span>  
+# <a name="throttling-design-recommendations"></a><span data-ttu-id="31ac2-102">制限の設計の推奨事項</span><span class="sxs-lookup"><span data-stu-id="31ac2-102">Throttling Design Recommendations</span></span>
+<span data-ttu-id="31ac2-103">このセクションでは、調整を活用するためにソリューションを設計する方法の推奨事項を提供します。</span><span class="sxs-lookup"><span data-stu-id="31ac2-103">This section provides recommendations on how to design a solution to take advantage of throttling.</span></span> <span data-ttu-id="31ac2-104">調整のエンジンの機能強化で[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]BizTalk Server のパフォーマンスに大きく影響する可能性があります</span><span class="sxs-lookup"><span data-stu-id="31ac2-104">The throttling engine enhancements in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] may significantly impact the performance of BizTalk Server</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="6c41c-105">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="6c41c-105">In This Section</span></span>  
+## <a name="in-this-section"></a><span data-ttu-id="31ac2-105">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="31ac2-105">In This Section</span></span>  
   
--   [<span data-ttu-id="6c41c-106">関連付けられたメッセージの制限を回避する方法</span><span class="sxs-lookup"><span data-stu-id="6c41c-106">How to Avoid Throttling Correlated Messages</span></span>](../core/how-to-avoid-throttling-correlated-messages.md)  
+-   [<span data-ttu-id="31ac2-106">関連付けられたメッセージのスロットルを回避する方法</span><span class="sxs-lookup"><span data-stu-id="31ac2-106">How to Avoid Throttling Correlated Messages</span></span>](../core/how-to-avoid-throttling-correlated-messages.md)  
   
--   [<span data-ttu-id="6c41c-107">制限のしきい値の調整: タイミングと理由</span><span class="sxs-lookup"><span data-stu-id="6c41c-107">Adjusting Throttling Thresholds: When and Why</span></span>](../core/adjusting-throttling-thresholds-when-and-why.md)  
+-   [<span data-ttu-id="31ac2-107">調整のしきい値の調整。タイミングと理由</span><span class="sxs-lookup"><span data-stu-id="31ac2-107">Adjusting Throttling Thresholds: When and Why</span></span>](../core/adjusting-throttling-thresholds-when-and-why.md)  
   
--   <span data-ttu-id="6c41c-108">[[メッセージ カウント] データベースの制限のしきい値に含まれる保留メッセージ](../core/suspended-messages-included-in-message-count-in-database-throttling-threshold.md)</span><span class="sxs-lookup"><span data-stu-id="6c41c-108">[Suspended Messages are Included in the Message Count in Database Throttling Threshold](../core/suspended-messages-included-in-message-count-in-database-throttling-threshold.md)</span></span>
+-   <span data-ttu-id="31ac2-108">[[データベースのメッセージ カウント] の制限のしきい値に含まれる保留メッセージ](../core/suspended-messages-included-in-message-count-in-database-throttling-threshold.md)</span><span class="sxs-lookup"><span data-stu-id="31ac2-108">[Suspended Messages are Included in the Message Count in Database Throttling Threshold](../core/suspended-messages-included-in-message-count-in-database-throttling-threshold.md)</span></span>
