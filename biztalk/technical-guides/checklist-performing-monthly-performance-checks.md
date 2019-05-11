@@ -1,5 +1,5 @@
 ---
-title: 'チェックリスト: 毎月のパフォーマンス チェックの実行 |Microsoft Docs'
+title: チェックリスト:毎月のパフォーマンス チェックの実行 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,28 +12,28 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3e580b95288ec7ac23be93d99c56c3cfc781374c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f9f48fa1f7e61f59b5aab771e615f9c186395578
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36992531"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65242657"
 ---
-# <a name="checklist-performing-monthly-performance-checks"></a>チェックリスト: 毎月のパフォーマンス チェックの実行
+# <a name="checklist-performing-monthly-performance-checks"></a>チェックリスト:毎月のパフォーマンス チェックの実行
 このトピックでは毎月のパフォーマンスの問題を回避するために従う必要のあるベスト プラクティス、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]システム。  
 
 
 |                                     手順                                     |                                                                                                                                                                                                                                                                                                                              リファレンス                                                                                                                                                                                                                                                                                                                              |
 |-------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|          計画時に追跡する必要がある情報を決定します。          |       プロジェクトを展開した後に追跡オプションを指定し、追跡データの量を制限して必要な情報だけを取得するために、計画段階中に追跡する情報を決定する必要があります。 **注:** 追跡に関連するベスト プラクティスの詳細については、次を参照してください[追跡の計画](../technical-guides/planning-for-tracking.md)このガイドと[状態と動作状況の追跡](http://go.microsoft.com/fwlink/?LinkId=154187)(<http://go.microsoft.com/fwlink/?LinkId=154187>)、で[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。ドキュメント。        |
+|          計画時に追跡する必要がある情報を決定します。          |       プロジェクトを展開した後に追跡オプションを指定し、追跡データの量を制限して必要な情報だけを取得するために、計画段階中に追跡する情報を決定する必要があります。 **注:** 追跡に関連するベスト プラクティスの詳細については、次を参照してください。[追跡の計画](../technical-guides/planning-for-tracking.md)このガイドと[状態と動作状況の追跡](http://go.microsoft.com/fwlink/?LinkId=154187)(<http://go.microsoft.com/fwlink/?LinkId=154187>) で、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ドキュメント。        |
 |                           すべてのメッセージを追跡しません。                           |                                                                                                                                                    すべてのメッセージを追跡しないため、お勧めするたびにメッセージが操作された、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]別のコピーを作成します。 代わりに、特定のポートだけを追跡することによって、スコープを限定できます。 これにより、システムのパフォーマンスを最大化して、データベースをきちんと整頓します。                                                                                                                                                     |
-|                  オーケストレーションのすべてのイベントを追跡しません。                   |                                                                                                                                                                          オーケストレーションのすべてのイベントを追跡すると、dta_DebugTrace および dta_MessageInoutEvents テーブルのサイズを増やす可能性があります。 オーケストレーションの追跡を無効にする方法については、[オーケストレーションの追跡を無効にする](../technical-guides/how-to-disable-tracking.md#BKMK_DisableOrchTracking)を参照してください。                                                                                                                                                                           |
+|                  オーケストレーションのすべてのイベントを追跡しません。                   |                                                                                                                                                                          オーケストレーションのすべてのイベントを追跡すると、dta_DebugTrace および dta_MessageInoutEvents テーブルのサイズを増やす可能性があります。 オーケストレーションの追跡を無効にする方法については、次を参照してください。[オーケストレーションの追跡を無効にする](../technical-guides/how-to-disable-tracking.md#BKMK_DisableOrchTracking)します。                                                                                                                                                                           |
 |     送信ポートの追跡を設定し、受信パイプラインでの代わりにポート     |                                                                                                                                                                         パイプラインに追跡オプションを設定した場合は、パイプラインを使用するすべてのポートに対してグローバルに追跡オプションも設定します。 これは、さらに可能性より多くのデータが意図したものと、追跡されているシステムのパフォーマンスが低下します。 代わりに、ポートの送信に追跡オプションを設定して、ポートを受信できます。                                                                                                                                                                         |
-|                リソース使用率に基づく制限を調整します。                |     スロットル[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]既定では、システムの適切な保護を提供するように構成します。 制限のかどうかは調整が行われて、表示する状態のパフォーマンス カウンターを監視し、自分のゲージのスロットルを適用する上のリソースが基づいている場合 (たとえば、データベースのサイズまたはメモリ使用率) のまたは過大使用では、および調整を調整しますしきい値は切り上げまたは切り捨てです。 詳細については、次を参照してください。[制限のしきい値の調整: タイミングと理由](http://go.microsoft.com/fwlink/?LinkId=154188)(<http://go.microsoft.com/fwlink/?LinkId=154188>)。     |
+|                リソース使用率に基づく制限を調整します。                |     スロットル[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]既定では、システムの適切な保護を提供するように構成します。 制限のかどうかは調整が行われて、表示する状態のパフォーマンス カウンターを監視し、自分のゲージのスロットルを適用する上のリソースが基づいている場合 (たとえば、データベースのサイズまたはメモリ使用率) のまたは過大使用では、および調整を調整しますしきい値は切り上げまたは切り捨てです。 詳細については、次を参照してください。[制限のしきい値の調整。タイミングと理由](http://go.microsoft.com/fwlink/?LinkId=154188)(<http://go.microsoft.com/fwlink/?LinkId=154188>)。     |
 |                 可能であれば、PassThruTransmit パイプラインを使用します。                 |                                                                                                                                                                                                                                                       場合は、宛先にメッセージを送信する前にドキュメントの処理は必要ありませんが、XML 送信パイプラインではなく PassThruTransmit パイプラインを使用します。                                                                                                                                                                                                                                                        |
 | BizTalk 追跡データベースのサイズを変更するとき、さまざまな要因を考慮します。 | -BizTalk 追跡データベースのサイズを変更する場合、計算にコンティンジェンシーの乗数を追加することで、インデックス サイズなど、SQL Server の要因を考慮してください。<br />-場合は、BizTalk 追跡データベース内のメッセージのサイズを判断するには、メッセージ コンテキストの平均サイズに追加メッセージのサイズ場合、これは重要なメッセージ サイズと比較します。<br />、BizTalk 追跡データベース内のメッセージのサイズを制限するには昇格したプロパティの数を制限します。<br />-オーケストレーション デバッガーのオプションが有効になっている場合は、オーケストレーション内の各図形の状態は、BizTalk 追跡データベースに保存されているアカウントを考慮します。 |
 |               ディスクの競合を回避するためにハードウェア ソリューションを適用します。               |           メッセージ ボックス データベース内のディスクの競合を回避するには、次の操作を行います。<br /><br /> -高速なディスクを使用します。<br />-高速な SAN 上のデータベースをデプロイします。<br />-追跡データベースから分離された専用のサーバーにメッセージ ボックス データベースを分離します。<br />-スケール アップ、Cpu と、専用のメッセージ ボックス データベース サーバーに Cpu を追加<br />-ページファイルや MSDTC のログを別のドライブに移動します。<br /><br /> データベースの競合を避ける方法についての詳細については、次を参照してください。[ディスクの競合を回避する方法](http://go.microsoft.com/fwlink/?LinkId=158809)(<http://go.microsoft.com/fwlink/?LinkId=158809>)。           |
 
 ## <a name="see-also"></a>参照  
  [日常的なパフォーマンスのチェックリスト](../technical-guides/routine-performance-checklists.md)   
- [チェックリスト: 毎週のパフォーマンス チェックの実行](../technical-guides/checklist-performing-weekly-performance-checks.md)
+ [チェックリスト:毎週のパフォーマンス チェックの実行](../technical-guides/checklist-performing-weekly-performance-checks.md)

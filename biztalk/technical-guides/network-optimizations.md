@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 66419a1c864b4c22d4fb28a70c85cabf2eceb1a8
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 04c6f8250fb67b74c1faad2feeb46207aeb902e6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36994795"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65242608"
 ---
 # <a name="network-optimizations"></a>ネットワークの最適化
 BizTalk Server コンピューターが SQL Server コンピューターから独立した BizTalk Server 環境で BizTalk Server によって処理される各メッセージには、ネットワーク経由で通信が必要です。 この通信には、BizTalk Server コンピューターと BizTalk メッセージ ボックス データベース、BizTalk 管理データベース、BAM データベース、および他のデータベース間のかなりのトラフィックが含まれています。 高負荷のシナリオでこの通信により、かなりのネットワーク トラフィックとネットワークの設定が最適化されていない、十分なネットワーク インターフェイス カードがインストールされている場合、または十分なネットワーク帯域幅が場合は特に、ボトルネックになることができます。ご利用いただけます。  
@@ -182,4 +182,4 @@ BizTalk Server コンピューターが SQL Server コンピューターから�
   
 - **Wake On LAN (使用されている) 場合を除き、無効になっている**– lan でウェイク アップの機能を無効にするネットワーク アダプター ドライバーを構成します。 この機能がクライアント コンピューターの便利ですが、必要がありますほとんどもしコンピューターで使用する、BizTalk Server または SQL Server。  
   
-  ネットワーク アダプターのパフォーマンスのチューニングの詳細については、、**ネットワーク デバイスの設定**"BizTalk Server データベースの最適化"ホワイト ペーパーの「 [ http://go.microsoft.com/fwlink/?LinkID=101578](http://go.microsoft.com/fwlink/?LinkID=101578)を参照してください。
+  ネットワーク アダプターのパフォーマンスのチューニングの詳細については、次を参照してください。、**ネットワーク デバイスの設定**"BizTalk Server データベースの最適化"ホワイト ペーパーの「 [ http://go.microsoft.com/fwlink/?LinkID=101578](http://go.microsoft.com/fwlink/?LinkID=101578)します。

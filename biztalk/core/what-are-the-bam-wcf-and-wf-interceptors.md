@@ -12,57 +12,57 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c819d219a9796b485434101ee1c2f2d4be136ae0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d3cfa81307220a2685768e2ac13d1a4c922cf944
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22288890"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65244116"
 ---
 # <a name="what-are-the-bam-wcf-and-wf-interceptors"></a>BAM WCF インターセプターと WF インターセプターについて
-ビジネス アクティビティの監視 (BAM) は、集計、警告、およびプロファイルを管理し、イベント送信の自動プロセスをインストルメント化して関連するビジネス指標を監視するために使用できるツール、API、およびサービスのコレクションです。 これらによって、ビジネス プロセスを詳細に表示できるようになるため、ビジネス プロセスの状態と結果を常に把握できます。  
+ビジネス アクティビティ監視 (BAM) は、ツール、Api、および集計、警告、およびプロファイルを管理して、関連するビジネス指標を監視するイベントを送信する自動化されたプロセスをインストルメント化できるようにするサービスのコレクションです。 これら、ビジネス プロセスのエンド ツー エンドの可視性を提供し、ビジネス プロセスの状態と結果をできるようにします。  
   
- BAM インターセプターでは、この同じ機能が Windows Workflow Foundation (WF)、Windows Communication Foundation (WCF) などのランタイムの環境に拡張されます。 BAM インターセプタを使用すると、構成ファイルで統合処理が実行されるため、WF または WCF ソリューションを再コンパイルせずにビジネス プロセスを追跡できます。  
+ BAM インターセプターでは、Windows Workflow Foundation (WF)、Windows Communication Foundation (WCF) およびその他のランタイム環境にこれと同じ機能を拡張します。 BAM インターセプタを使用して、WF または WCF ソリューションを再コンパイルしなくても、ビジネス プロセスを追跡できます-統合が構成ファイルで行われます。  
   
- BAM WF または WCF インターセプターをプロジェクトで使用すると、次の処理を実行できます。  
+ BAM WF または WCF インターセプターを使用すると、プロジェクトで、次の操作を実行できます。  
   
--   BAM ポータルを使用して、WF または WCF アプリケーションで動作しているビジネス プロセスに関する情報を表示する。  
+-   BAM ポータルを使用して、WF または WCF アプリケーションで実行されているビジネス プロセスに関する情報を表示します。  
   
--   アプリケーションにコードを追加せずに BAM 機能を使用する。  
+-   アプリケーションに追加のコードを追加せずに BAM 機能を使用します。  
   
--   使い慣れた BizTalk Server のツールとユーティリティを使用して、ソリューションを展開する。  
+-   BizTalk Server の使い慣れたツールとユーティリティを使用してソリューションをデプロイします。  
   
--   既存および新しい WF および WCF アプリケーションに対して、既存の BizTalk Server 環境を利用する。  
+-   既存および新規の WF および WCF アプリケーションの既存の BizTalk Server 環境を活用します。  
   
 ## <a name="interceptor-components"></a>インターセプター コンポーネント  
- 各 BAM インターセプターの中核にあるのは、異種混合環境用のカスタム インターセプターを構築するための基盤となるコンポーネントのセットである Common Interceptor Foundation (共通インターセプター基盤) です。 Common Interceptor Foundation には、次の共有コンポーネントが含まれています。  
+ 各 BAM インターセプターの中核には、Common Interceptor Foundation、異機種混在環境用のカスタム インターセプターを構築するための基盤を提供するコンポーネントのセットです。 Common Interceptor Foundation には、次の共有コンポーネントが含まれています。  
   
--   **bm.exe**、BAM 展開ユーティリティの拡張のバージョンの拡張を追加、削除、更新、およびリストの機能を含むインターセプター構成を変更します。  
+-   **bm.exe**、BAM 展開ユーティリティの拡張のバージョンの拡張を追加、削除、更新、および機能の一覧を含むインターセプター構成を変更します。  
   
--   **CommonInterceptorConfiguration.xsd**、Common Interceptor Foundation 構成の XML スキーマです。 すべてのインターセプター構成は、少なくとも、このスキーマに対して有効でなければなりません。  
+-   **CommonInterceptorConfiguration.xsd**、Common Interceptor Foundation 構成の XML スキーマ。 少なくとも、すべてのインターセプター構成は、このスキーマに対して検証する必要があります。  
   
 ## <a name="windows-workflow-foundation-wf-interceptor"></a>Windows Workflow Foundation (WF) インターセプター  
- Windows Workflow Foundation インターセプターを使用すると、新しい WF アプリケーションおよび既存の WF アプリケーションに BAM 追跡機能を透過的に追加できます。 インターセプター構成を BAM プライマリ インポート データベースに展開し、BAM WF インターセプターを読み込むように WF アプリケーションの各インスタンスが構成されると、コードを追加しなくてもワークフロー データが BAM に書き込まれるようになります。 WF インターセプターには、次の機能があります。  
+ Windows Workflow Foundation インターセプターでは、新規および既存の WF アプリケーションに BAM 追跡機能を透過的に追加することができます。 BAM プライマリ インポート データベースにインターセプター後構成がデプロイされていると、BAM WF インターセプタの読み込みに WF アプリケーションの各インスタンスが構成されて、ワークフローのデータは、コードを追加せずに BAM に書き込まれます。 WF インターセプターは、次の機能を提供します。  
   
--   既存の WF アプリケーションにプラグインするときに、コードの変更や再コンパイルが不要です。  
+-   コードの変更や再コンパイルを必要とせず、既存の WF アプリケーションにプラグインするとき。  
   
--   変更された構成ファイルを実行時に検出し、使用できます。 新しいバージョンのインターセプト構成ファイルが検出された場合、新しいワークフロー インスタンスは、この新しい構成が使用しますが、古いワークフロー インスタンスは古い構成を使用して完了します。  
+-   実行時に検出し、変更された構成ファイルのサポートを使用できます。 古いワークフロー インスタンスは古い構成を使用して完了中に、インターセプター構成ファイルの新しいバージョンが検出された場合に、新しいワークフロー インスタンスで、新しい構成は使用します。  
   
--   トランザクションがサポートされます。 WF インターセプターでは、追跡された項目のトランザクション状態が WF トランザクションと同じように保存されます。 追跡された項目は、WF トランザクションとインターセプター トランザクションが正常に完了した場合にのみ保存されます。  
-  
-    > [!NOTE]
-    >  Windows Workflow インターセプターでは、追跡サービスと永続化サービスの両方に同じ SQL 接続を使用する SharedConnectionWorkflowCommitWorkBatchService はサポートされません。  
+-   トランザクションをサポートしています。 WF インターセプターは、WF トランザクションとトランザクション上一貫した方法で追跡された項目を保持します。 追跡された項目は、WF トランザクションとインターセプター トランザクションが正常に完了場合にのみ保存します。  
   
     > [!NOTE]
-    >  BizTalk Server で、Windows Workflow Foundation (WF) インターセプターは、.NET Framework 4 の新しい WF エンジンとは機能しません。 WF インターセプターは、.NET Framework 3.5 SP2 で動作し続けます。  
+    >  Windows Workflow インターセプターでは、追跡および永続化の両方のサービスの同じ SQL 接続を使用する SharedConnectionWorkflowCommitWorkBatchService はサポートされていません。  
   
-## <a name="windows-communication-foundation-wcf-interceptor"></a>WCF (Windows Communication Foundation) インターセプター  
- Windows Communication Foundation インターセプターを使用すると、WCF アプリケーションで BAM 追跡機能を利用できます。 WCF インターセプターには、次の機能があります。  
+    > [!NOTE]
+    >  BizTalk Server で、Windows Workflow Foundation (WF) インターセプターは、.NET Framework 4 の新しい WF エンジンとは機能しません。 WF インターセプターは引き続き .NET Framework 3.5 SP2 で動作します。  
   
--   既存の WCF アプリケーションにプラグインするときに、コードの変更や再コンパイルが不要です。  
+## <a name="windows-communication-foundation-wcf-interceptor"></a>Windows Communication Foundation (WCF) インターセプタ  
+ Windows Communication Foundation インターセプターは、WCF アプリケーションに BAM 追跡機能を提供します。 次の機能を提供します。  
   
--   WCF サービス呼び出し内のメッセージを追跡します。  
+-   コードの変更や再コンパイルを必要とせず、既存の WCF アプリケーションにプラグインするとき。  
+  
+-   WCF サービス呼び出し内に含まれているメッセージを追跡します。  
   
 -   WCF サービス呼び出し内のメッセージから情報を追跡します。  
   
--   クライアントからのトランザクション フロー、または実行されたサービス呼び出しのために内部で開始されたトランザクション フローに参加できます。
+-   トランザクションに参加しているクライアントからフローされた、またはトランザクション サービスの呼び出しを内部的に開始します。

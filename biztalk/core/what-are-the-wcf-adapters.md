@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4e57efe686b72fa42a173eb4f28bb8fb92a899b9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f82973bce0ae79a151d0336d788c07fa99b7e8d4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37012275"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65244081"
 ---
 # <a name="what-are-the-wcf-adapters"></a>WCF アダプタについて
 Windows Communication Foundation (WCF) アダプタには、受信アダプタと送信アダプタの 2 つがあります。 WCF 受信アダプタは、WCF サービス要求を受信するために使用します。 WCF 受信アダプタは、要求の受信、BizTalk メッセージ オブジェクトの作成、および関連するプロパティのメッセージ コンテキストへの昇格を行います。 WCF 送信アダプタは、WCF サービスを呼び出すときに使用します。 WCF 送信アダプタは、型宣言が不要なコントラクトを使用して WCF サービスを呼び出します。  
@@ -26,7 +26,7 @@ Windows Communication Foundation (WCF) アダプタには、受信アダプタ�
 >  WCF アダプタは、リモート プロシージャ コール (RPC) スタイルの Web サービスの使用をサポートしていません。これは、WCF アダプタがメッセージ部分の要素を使用しているメッセージ要素ではなく、メッセージの種類を RPC スタイルの Web サービスが参照するためです。 BizTalk プロジェクトで Web サービスを使用する場合、Web 参照の追加ウィザードを使用して RPC スタイルの Web サービスを追加することをお勧めします。  
 
 ## <a name="web-services-standards-support"></a>Web サービスの標準サポート  
- WCF アダプタは、WS-Addressing、WS-Security、WS-AtomicTransaction など、WS 標準のサポートを提供しています。 WCF アダプタの現在のリリースでは、WS-ReliableMessaging はサポートされていません。 WCF でサポートされている仕様の一覧は、[ http://go.microsoft.com/fwlink/?LinkId=88314](http://go.microsoft.com/fwlink/?LinkId=88314)を参照してください。  
+ WCF アダプタは、WS-Addressing、WS-Security、WS-AtomicTransaction など、WS 標準のサポートを提供しています。 WCF アダプタの現在のリリースでは、WS-ReliableMessaging はサポートされていません。 WCF でサポートされている仕様の一覧は、次を参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=88314](http://go.microsoft.com/fwlink/?LinkId=88314)します。  
 
 ### <a name="ws-addressing"></a>WS-Addressing  
  WCF アダプタは、WCF が提供している WS-Addressing 標準サポートに依存します。 WCF アダプタでは、次の機能を使用できます。  
@@ -40,7 +40,7 @@ Windows Communication Foundation (WCF) アダプタには、受信アダプタ�
 ### <a name="ws-security"></a>WS-Security  
  WCF アダプタは、WCF が提供しているセキュリティ標準サポートに依存します。 WCF アダプタでは、次の標準がサポートされています。  
 
--   Web Services Security: SOAP Message Security (Ws-security) 1.0 および 1.1  
+-   Web Services Security:SOAP Message Security (Ws-security) 1.0 および 1.1  
 
 -   Web Services Secure Conversation Language (WS-SecureConversation)  
 
@@ -105,7 +105,7 @@ Windows Communication Foundation (WCF) アダプタには、受信アダプタ�
  トランザクション機能が有効の場合、トランザクションでメッセージが送信され、そのメッセージがメッセージ ボックス データベースから削除されます。 メッセージ受信後、送信先サービスがなんらかの操作を実行した場合、メッセージはメッセージ ボックスから削除されず、トランザクションは中止され、サービスのすべてのトランザクション操作がロールバックされます。 トランザクション機能が無効の場合、トランザクションを使用せずにメッセージが送信され、そのメッセージがメッセージ ボックスから削除されます。  
 
 ## <a name="single-sign-on-support"></a>シングル サインオンのサポート  
- エンタープライズ シングル サインオン (SSO) チケットを借用および取得することで、SSO を WCF アダプタで使用できます。 WCF アダプタで SSO を使用する方法の詳細については、[WCF アダプターのシングル サインオン サポート](../core/single-sign-on-support-for-the-wcf-adapters.md)を参照してください。  
+ エンタープライズ シングル サインオン (SSO) チケットを借用および取得することで、SSO を WCF アダプタで使用できます。 WCF アダプタで SSO を使用する方法の詳細については、次を参照してください。 [WCF アダプターのシングル サインオン サポート](../core/single-sign-on-support-for-the-wcf-adapters.md)します。  
 
  次の表に、WCF 受信アダプタで SSO サポートを使用する場合にサポートされないシナリオを示します。  
 

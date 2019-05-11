@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10515 |Microsoft Docs'
+title: シングル サインオン:イベント 10515 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f1c3d7498bcd6a045936103d682d3643761a182c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3071aa76f6a1366c3a17c38a51f81da7048331b0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36980819"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65243446"
 ---
-# <a name="single-sign-on-event-10515"></a>シングル サインオン: イベント 10515
+# <a name="single-sign-on-event-10515"></a>シングル サインオン:イベント 10515
 ## <a name="details"></a>詳細  
   
 |                 |                                                                               |
@@ -28,21 +28,21 @@ ms.locfileid: "36980819"
 | 製品バージョン |          [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]           |
 |    イベント ID     |                                     10515                                     |
 |  イベント ソース   |                                    ENTSSO                                     |
-|    コンポーネント    |                                      N\A                                      |
+|    コンポーネント    |                                      該当なし                                      |
 |  シンボル名  |                            SSO_ERROR_POLL_DATABASE                            |
-|  メッセージ テキスト   | SSO データベースとの接続が切断されました。 SSO データベースが使用可能であることを確認してください。 |
+|  メッセージ テキスト   | SSO データベースとの接続が切断されました。 SSO データベースが使用可能なことを確認します。 |
   
 ## <a name="explanation"></a>説明  
- このエラー イベントは、SSO サービスと SSO データベースとの接続が切断されたことを示します。  
+ このエラー イベントは、SSO サービスが SSO データベースとの接続を失ったことを示します。  
   
 ## <a name="user-action"></a>ユーザーの操作  
  このエラーを解決するには、以下の 1 つ以上の操作を実行します。  
   
 - SQL Server (MSSQLSERVER) サービスが実行されていることを確認します。  
   
-- SQL Server がリモート サーバー上で実行されている場合は、ネットワーク接続を確認します。  
+- リモート サーバー上にある場合は、SQL Server へのネットワーク接続を確認します。  
   
-  詳細については、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ヘルプの次の情報を参照してください:   
+  詳細については、の次のリソースを参照してください。[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプ。  
   
 - [Enterprise Single Sign-On の実装](../core/implementing-enterprise-single-sign-on.md)  
   
