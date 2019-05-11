@@ -1,5 +1,5 @@
 ---
-title: BAM API を使用して BAM インターセプタの読み込み |Microsoft ドキュメント
+title: BAM API を使用して BAM インターセプタの読み込み |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,18 +12,18 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 363c4fc43092e63b664d42bb0420263bd7439dad
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1236d674a643224d2aaf5ca2cb5be2be15c2f2bb
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22261930"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65331147"
 ---
-# <a name="loading-bam-interceptors-using-the-bam-api"></a><span data-ttu-id="6ea0f-102">BAM API を使用した BAM インターセプタの読み込み</span><span class="sxs-lookup"><span data-stu-id="6ea0f-102">Loading BAM Interceptors Using the BAM API</span></span>
-<span data-ttu-id="6ea0f-103">このトピックでは、構成ファイルではなく、コードを使用した WF インターセプタおよび WCF インターセプタの読み込みについて説明します。</span><span class="sxs-lookup"><span data-stu-id="6ea0f-103">This topic provides information about loading the WF and WCF interceptors from your code rather than through a configuration file.</span></span>  
+# <a name="loading-bam-interceptors-using-the-bam-api"></a><span data-ttu-id="fb72a-102">BAM API を使用した BAM インターセプタの読み込み</span><span class="sxs-lookup"><span data-stu-id="fb72a-102">Loading BAM Interceptors Using the BAM API</span></span>
+<span data-ttu-id="fb72a-103">このトピックでは、構成ファイルではなく、コードを使用した WF インターセプタおよび WCF インターセプタの読み込みについて説明します。</span><span class="sxs-lookup"><span data-stu-id="fb72a-103">This topic provides information about loading the WF and WCF interceptors from your code rather than through a configuration file.</span></span>  
   
-## <a name="loading-the-wf-interceptor-from-code"></a><span data-ttu-id="6ea0f-104">コードからの WF インターセプタの読み込み</span><span class="sxs-lookup"><span data-stu-id="6ea0f-104">Loading the WF Interceptor from Code</span></span>  
- <span data-ttu-id="6ea0f-105">実行時にコードから WF インターセプタを読み込むには、WorkflowRuntime の新しいインスタンスを作成し、BamTrackingService の新しいインスタンスを使用して AddService メソッドを呼び出します。</span><span class="sxs-lookup"><span data-stu-id="6ea0f-105">To load the WF interceptor runtime from your code, you must create a new instance of WorkflowRuntime and call the AddService method with a new instance of BamTrackingService.</span></span> <span data-ttu-id="6ea0f-106">この処理について、次に例示します。</span><span class="sxs-lookup"><span data-stu-id="6ea0f-106">This is demonstrated below.</span></span>  
+## <a name="loading-the-wf-interceptor-from-code"></a><span data-ttu-id="fb72a-104">コードからの WF インターセプタの読み込み</span><span class="sxs-lookup"><span data-stu-id="fb72a-104">Loading the WF Interceptor from Code</span></span>  
+ <span data-ttu-id="fb72a-105">実行時にコードから WF インターセプタを読み込むには、WorkflowRuntime の新しいインスタンスを作成し、BamTrackingService の新しいインスタンスを使用して AddService メソッドを呼び出します。</span><span class="sxs-lookup"><span data-stu-id="fb72a-105">To load the WF interceptor runtime from your code, you must create a new instance of WorkflowRuntime and call the AddService method with a new instance of BamTrackingService.</span></span> <span data-ttu-id="fb72a-106">この処理について、次に例示します。</span><span class="sxs-lookup"><span data-stu-id="fb72a-106">This is demonstrated below.</span></span>  
   
 ```csharp  
 string connectionString = "Integrated Security=SSPI;Data Source=.;Initial Catalog=BAMPrimaryImport";  
@@ -33,8 +33,8 @@ WorkflowRuntime workflowRuntime = new WorkflowRuntime();
 workflowRuntime.AddService(new BamTrackingService(connectionString, interceptorConfigurationPollingInterval));  
 ```  
   
-## <a name="loading-the-wcf-interceptor-from-code"></a><span data-ttu-id="6ea0f-107">コードからの WCF インターセプタの読み込み</span><span class="sxs-lookup"><span data-stu-id="6ea0f-107">Loading the WCF Interceptor from Code</span></span>  
- <span data-ttu-id="6ea0f-108">WCF インターセプタを読み込むには、サービスを開いて実装にアクセスできる派生クラスを作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="6ea0f-108">To load the WCF interceptor, you must create a derived class that opens the service and is accessible to your implementation.</span></span> <span data-ttu-id="6ea0f-109">この処理について、次に例示します。</span><span class="sxs-lookup"><span data-stu-id="6ea0f-109">This is demonstrated below.</span></span>  
+## <a name="loading-the-wcf-interceptor-from-code"></a><span data-ttu-id="fb72a-107">コードからの WCF インターセプタの読み込み</span><span class="sxs-lookup"><span data-stu-id="fb72a-107">Loading the WCF Interceptor from Code</span></span>  
+ <span data-ttu-id="fb72a-108">WCF インターセプタを読み込むには、サービスを開いて実装にアクセスできる派生クラスを作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="fb72a-108">To load the WCF interceptor, you must create a derived class that opens the service and is accessible to your implementation.</span></span> <span data-ttu-id="fb72a-109">この処理について、次に例示します。</span><span class="sxs-lookup"><span data-stu-id="fb72a-109">This is demonstrated below.</span></span>  
   
 ```csharp  
 // Your project must have a reference to Microsoft.BizTalk.BAM.Interceptors.dll.  
@@ -65,5 +65,5 @@ foreach (System.ServiceModel.Description.ServiceEndpoint endpoint in myServiceHo
 }  
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="6ea0f-110">参照</span><span class="sxs-lookup"><span data-stu-id="6ea0f-110">See Also</span></span>  
- [<span data-ttu-id="6ea0f-111">BAM WCF インターセプタと WF インターセプタを使用します。</span><span class="sxs-lookup"><span data-stu-id="6ea0f-111">Using the BAM WCF and WF Interceptors</span></span>](../core/using-the-bam-wcf-and-wf-interceptors.md)
+## <a name="see-also"></a><span data-ttu-id="fb72a-110">参照</span><span class="sxs-lookup"><span data-stu-id="fb72a-110">See Also</span></span>  
+ [<span data-ttu-id="fb72a-111">BAM WCF インターセプターと WF インターセプターを使用します。</span><span class="sxs-lookup"><span data-stu-id="fb72a-111">Using the BAM WCF and WF Interceptors</span></span>](../core/using-the-bam-wcf-and-wf-interceptors.md)

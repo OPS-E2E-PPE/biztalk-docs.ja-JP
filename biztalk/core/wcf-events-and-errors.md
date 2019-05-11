@@ -1,5 +1,5 @@
 ---
-title: WCF イベントとエラー |Microsoft ドキュメント
+title: WCF イベントとエラー |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,18 +12,18 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2b49a71af9ac20f1c0e5f472c8bb2af4d2b9706e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f2cf2ae3a8694862345bb267ff633ff0f49abab5
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22287986"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65291510"
 ---
-# <a name="wcf-events-and-errors"></a><span data-ttu-id="2bee4-102">WCF イベントとエラー</span><span class="sxs-lookup"><span data-stu-id="2bee4-102">WCF Events and Errors</span></span>
-<span data-ttu-id="2bee4-103">ここでは、Windows Communication Foundation (WCF) アダプターのイベントについて説明します。</span><span class="sxs-lookup"><span data-stu-id="2bee4-103">This section contains event information for Windows Communication Foundation (WCF) adapters.</span></span>
+# <a name="wcf-events-and-errors"></a><span data-ttu-id="86370-102">WCF イベントとエラー</span><span class="sxs-lookup"><span data-stu-id="86370-102">WCF Events and Errors</span></span>
+<span data-ttu-id="86370-103">ここでは、Windows Communication Foundation (WCF) アダプターのイベントについて説明します。</span><span class="sxs-lookup"><span data-stu-id="86370-103">This section contains event information for Windows Communication Foundation (WCF) adapters.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="2bee4-104">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="2bee4-104">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="86370-104">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="86370-104">In this section</span></span>
 
-[<span data-ttu-id="2bee4-105">WCF の実行時エラー</span><span class="sxs-lookup"><span data-stu-id="2bee4-105">WCF Run-Time Errors</span></span>](../core/wcf-run-time-errors.md)
+[<span data-ttu-id="86370-105">WCF 実行時エラー</span><span class="sxs-lookup"><span data-stu-id="86370-105">WCF Run-Time Errors</span></span>](../core/wcf-run-time-errors.md)
 
-[<span data-ttu-id="2bee4-106">WCF のデザイン時エラー</span><span class="sxs-lookup"><span data-stu-id="2bee4-106">WCF Design-Time  Errors</span></span>](../core/wcf-design-time-errors.md)
+[<span data-ttu-id="86370-106">WCF デザイン時エラー</span><span class="sxs-lookup"><span data-stu-id="86370-106">WCF Design-Time  Errors</span></span>](../core/wcf-design-time-errors.md)
