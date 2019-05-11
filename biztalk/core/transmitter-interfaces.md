@@ -1,5 +1,5 @@
 ---
-title: 送信元インターフェイス |Microsoft ドキュメント
+title: 送信元インターフェイス |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,16 +12,16 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1e922cd2526002306928b2eae3418185986ed741
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9e0bab66be2867d8f0117d951b706953f2b541a2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22279722"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65243097"
 ---
-# <a name="transmitter-interfaces"></a><span data-ttu-id="8c62e-102">送信元インターフェイス</span><span class="sxs-lookup"><span data-stu-id="8c62e-102">Transmitter Interfaces</span></span>
-<span data-ttu-id="8c62e-103">必須のアダプター インターフェイスに加えて (送信) アダプターの送信、どちらかを実装する必要があります**IBTTransmitter**非バッチ処理している場合または**IBTBatchTransmitter**はバッチ処理する場合。</span><span class="sxs-lookup"><span data-stu-id="8c62e-103">In addition to the mandatory adapter interfaces, transmit (send) adapters, need to implement either **IBTTransmitter** if they are non-batched or **IBTBatchTransmitter** if they are batched.</span></span>  
+# <a name="transmitter-interfaces"></a><span data-ttu-id="8fc4a-102">送信元インターフェイス</span><span class="sxs-lookup"><span data-stu-id="8fc4a-102">Transmitter Interfaces</span></span>
+<span data-ttu-id="8fc4a-103">(送信) アダプターの送信の必須のアダプター インターフェイスに加えて、どちらかを実装する必要があります**IBTTransmitter**非バッチ処理している場合または**IBTBatchTransmitter**バッチ化されている場合。</span><span class="sxs-lookup"><span data-stu-id="8fc4a-103">In addition to the mandatory adapter interfaces, transmit (send) adapters, need to implement either **IBTTransmitter** if they are non-batched or **IBTBatchTransmitter** if they are batched.</span></span>  
   
- <span data-ttu-id="8c62e-104">バッチ化された送信アダプターおよびバッチ化されていない送信アダプターで実装する必要のあるインターフェイスを次の図に示します。</span><span class="sxs-lookup"><span data-stu-id="8c62e-104">The following figure shows the interfaces that batched and non-batched send adapters need to implement.</span></span>  
+ <span data-ttu-id="8fc4a-104">次の図は、バッチと非バッチ送信アダプターが実装する必要があるインターフェイスを示しています。</span><span class="sxs-lookup"><span data-stu-id="8fc4a-104">The following figure shows the interfaces that batched and non-batched send adapters need to implement.</span></span>  
   
- ![](../core/media/transmitterinterfaces.gif "TransmitterInterfaces")
+ <span data-ttu-id="8fc4a-105">![](../core/media/transmitterinterfaces.gif "TransmitterInterfaces")</span><span class="sxs-lookup"><span data-stu-id="8fc4a-105">![](../core/media/transmitterinterfaces.gif "TransmitterInterfaces")</span></span>

@@ -1,5 +1,5 @@
 ---
-title: MQSeries キュー |Microsoft ドキュメント
+title: MQSeries キュー |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,22 +16,22 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9a5a05adc62f021ca0194dd20278f0fbfa5f7df6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4c42b95a5be5f55aa9437c64b59f63592af27509
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22262874"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65263684"
 ---
-# <a name="mqseries-queues"></a><span data-ttu-id="189cb-102">MQSeries キュー</span><span class="sxs-lookup"><span data-stu-id="189cb-102">MQSeries Queues</span></span>
-<span data-ttu-id="189cb-103">MQSeries キューにメッセージを送信する際、キュー マネージャで、リモート定義のキュー、エイリアス キュー、送信キュー、またはローカル キューを指定できます。</span><span class="sxs-lookup"><span data-stu-id="189cb-103">To send messages to MQSeries queues, you can specify a remote definition queue, an alias queue, a transmission queue, or a local queue in the Queue Manager.</span></span>  
+# <a name="mqseries-queues"></a><span data-ttu-id="3f44b-102">MQSeries キュー</span><span class="sxs-lookup"><span data-stu-id="3f44b-102">MQSeries Queues</span></span>
+<span data-ttu-id="3f44b-103">MQSeries キューにメッセージを送信するには、指定できますリモート定義のキュー、エイリアス キュー、転送キューでは、ローカル キューまたはキュー マネージャーでします。</span><span class="sxs-lookup"><span data-stu-id="3f44b-103">To send messages to MQSeries queues, you can specify a remote definition queue, an alias queue, a transmission queue, or a local queue in the Queue Manager.</span></span>  
   
- <span data-ttu-id="189cb-104">MQSeries Server からメッセージを受信する場合は、キュー マネージャで、送信キュー、エイリアス キュー、またはローカル キューを指定できます。</span><span class="sxs-lookup"><span data-stu-id="189cb-104">For receiving messages from MQSeries Server, you can specify a transmission queue, an alias queue, or a local queue in the Queue Manager.</span></span>  
+ <span data-ttu-id="3f44b-104">MQSeries Server からメッセージを受信するため指定できます転送キュー、エイリアス キュー、またはローカル キューのキュー マネージャー。</span><span class="sxs-lookup"><span data-stu-id="3f44b-104">For receiving messages from MQSeries Server, you can specify a transmission queue, an alias queue, or a local queue in the Queue Manager.</span></span>  
   
- <span data-ttu-id="189cb-105">通常、送信キューにはリモート定義のキューを使用し、メッセージの受信には送信キューを使用します。</span><span class="sxs-lookup"><span data-stu-id="189cb-105">Typically, you use a remote queue definition for a send queue, and a transmission queue for receiving messages.</span></span>  
+ <span data-ttu-id="3f44b-105">通常、リモート キュー定義を使用して、送信キューでは、およびメッセージを受信するための転送キュー。</span><span class="sxs-lookup"><span data-stu-id="3f44b-105">Typically, you use a remote queue definition for a send queue, and a transmission queue for receiving messages.</span></span>  
   
- <span data-ttu-id="189cb-106">その他の MQSeries キューの詳細については、IBM WebSphere MQ のドキュメントを参照してください。</span><span class="sxs-lookup"><span data-stu-id="189cb-106">For information about the different MQSeries queues, see the IBM WebSphere MQ documentation.</span></span>  
+ <span data-ttu-id="3f44b-106">別の MQSeries キューについては、IBM WebSphere MQ のドキュメントを参照してください。</span><span class="sxs-lookup"><span data-stu-id="3f44b-106">For information about the different MQSeries queues, see the IBM WebSphere MQ documentation.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="189cb-107">参照</span><span class="sxs-lookup"><span data-stu-id="189cb-107">See Also</span></span>  
- <span data-ttu-id="189cb-108">[MQSeries アダプターのアーキテクチャ](../core/mqseries-adapter-architecture.md) </span><span class="sxs-lookup"><span data-stu-id="189cb-108">[MQSeries Adapter Architecture](../core/mqseries-adapter-architecture.md) </span></span>  
- [<span data-ttu-id="189cb-109">MQSeries アダプターとは何ですか。</span><span class="sxs-lookup"><span data-stu-id="189cb-109">What Is the MQSeries Adapter?</span></span>](../core/what-is-the-mqseries-adapter.md)
+## <a name="see-also"></a><span data-ttu-id="3f44b-107">参照</span><span class="sxs-lookup"><span data-stu-id="3f44b-107">See Also</span></span>  
+ <span data-ttu-id="3f44b-108">[MQSeries アダプターのアーキテクチャ](../core/mqseries-adapter-architecture.md) </span><span class="sxs-lookup"><span data-stu-id="3f44b-108">[MQSeries Adapter Architecture](../core/mqseries-adapter-architecture.md) </span></span>  
+ [<span data-ttu-id="3f44b-109">MQSeries アダプターとは</span><span class="sxs-lookup"><span data-stu-id="3f44b-109">What Is the MQSeries Adapter?</span></span>](../core/what-is-the-mqseries-adapter.md)

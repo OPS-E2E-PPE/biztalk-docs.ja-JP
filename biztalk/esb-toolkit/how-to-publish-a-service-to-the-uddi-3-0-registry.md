@@ -1,5 +1,5 @@
 ---
-title: '方法: UDDI 3.0 サービスを発行レジストリ |Microsoft Docs'
+title: 操作方法:UDDI 3.0 サービスを発行レジストリ |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,270 +12,270 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: eb5ab38da9c78831b319d8c64e789b442fb6eef5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 03c24e6f3dc650325f8e93a6d7a61dfcc77bfbd4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37008019"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65258500"
 ---
-# <a name="how-to-publish-a-service-to-the-uddi-30-registry"></a><span data-ttu-id="ce31d-102">方法: UDDI 3.0 サービスを発行レジストリ</span><span class="sxs-lookup"><span data-stu-id="ce31d-102">How to: Publish a Service to the UDDI 3.0 Registry</span></span>
-## <a name="goal"></a><span data-ttu-id="ce31d-103">[目標]</span><span class="sxs-lookup"><span data-stu-id="ce31d-103">Goal</span></span>  
- <span data-ttu-id="ce31d-104">このセクションでは、UDDI サービス サイトを使用してから、ESB のメッセージをルーティングするために、旅行プラン内で解決できる Web サービス エンドポイントを公開する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="ce31d-104">This section demonstrates how to use the UDDI Service site to publish a Web service endpoint that can be resolved from within an itinerary for the purpose of routing an ESB message.</span></span> <span data-ttu-id="ce31d-105">現在、レジストリに発行された既存の PurchaseOrderSubmitOrderService サービスが複製されます。</span><span class="sxs-lookup"><span data-stu-id="ce31d-105">You will duplicate the existing PurchaseOrderSubmitOrderService service presently published to the registry.</span></span>  
+# <a name="how-to-publish-a-service-to-the-uddi-30-registry"></a><span data-ttu-id="97666-102">操作方法:UDDI 3.0 サービスを発行レジストリ</span><span class="sxs-lookup"><span data-stu-id="97666-102">How to: Publish a Service to the UDDI 3.0 Registry</span></span>
+## <a name="goal"></a><span data-ttu-id="97666-103">[目標]</span><span class="sxs-lookup"><span data-stu-id="97666-103">Goal</span></span>  
+ <span data-ttu-id="97666-104">このセクションでは、UDDI サービス サイトを使用してから、ESB のメッセージをルーティングするために、旅行プラン内で解決できる Web サービス エンドポイントを公開する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="97666-104">This section demonstrates how to use the UDDI Service site to publish a Web service endpoint that can be resolved from within an itinerary for the purpose of routing an ESB message.</span></span> <span data-ttu-id="97666-105">現在、レジストリに発行された既存の PurchaseOrderSubmitOrderService サービスが複製されます。</span><span class="sxs-lookup"><span data-stu-id="97666-105">You will duplicate the existing PurchaseOrderSubmitOrderService service presently published to the registry.</span></span>  
 
- <span data-ttu-id="ce31d-106">このトピックでは、次の手順を行います。</span><span class="sxs-lookup"><span data-stu-id="ce31d-106">In this How-to topic, you will complete the following steps:</span></span>  
+ <span data-ttu-id="97666-106">このトピックでは、次の手順を行います。</span><span class="sxs-lookup"><span data-stu-id="97666-106">In this How-to topic, you will complete the following steps:</span></span>  
 
--   <span data-ttu-id="ce31d-107">Universal Description, Discovery, and Integration (UDDI) 3 にサービスを発行する UDDI 発行者のツールを使用してレジストリ。</span><span class="sxs-lookup"><span data-stu-id="ce31d-107">Publish a service to the Universal Description, Discovery, and Integration (UDDI) 3 registry using the UDDI Publisher tool.</span></span>  
+-   <span data-ttu-id="97666-107">Universal Description, Discovery, and Integration (UDDI) 3 にサービスを発行する UDDI 発行者のツールを使用してレジストリ。</span><span class="sxs-lookup"><span data-stu-id="97666-107">Publish a service to the Universal Description, Discovery, and Integration (UDDI) 3 registry using the UDDI Publisher tool.</span></span>  
 
--   <span data-ttu-id="ce31d-108">UDDI3 リゾルバーを使用してサービス エンドポイントを解決する、スケジュール ルーティング スリップを使用してサービスの公開をテストします。</span><span class="sxs-lookup"><span data-stu-id="ce31d-108">Test the service publication using an itinerary routing slip that resolves the service endpoint using a UDDI3 resolver.</span></span>  
+-   <span data-ttu-id="97666-108">UDDI3 リゾルバーを使用してサービス エンドポイントを解決する、スケジュール ルーティング スリップを使用してサービスの公開をテストします。</span><span class="sxs-lookup"><span data-stu-id="97666-108">Test the service publication using an itinerary routing slip that resolves the service endpoint using a UDDI3 resolver.</span></span>  
 
-## <a name="prerequisites"></a><span data-ttu-id="ce31d-109">前提条件</span><span class="sxs-lookup"><span data-stu-id="ce31d-109">Prerequisites</span></span>  
- <span data-ttu-id="ce31d-110">この操作方法に関するトピックの手順の完了が必要、[開発活動の前提条件](../esb-toolkit/prerequisites-for-the-development-activities.md)と (でインストールできるように、%esb インストール Folder%\Bin\ UDDI 発行者のツールの実行Microsoft.Practices.ESB.UDDIPublisher.exe)。</span><span class="sxs-lookup"><span data-stu-id="ce31d-110">The procedures in this How-to topic require the completion of the [Prerequisites for the Development Activities](../esb-toolkit/prerequisites-for-the-development-activities.md) and the execution of the UDDI Publisher tool (you can install it at %ESB Install Folder%\Bin\Microsoft.Practices.ESB.UDDIPublisher.exe).</span></span>  
+## <a name="prerequisites"></a><span data-ttu-id="97666-109">前提条件</span><span class="sxs-lookup"><span data-stu-id="97666-109">Prerequisites</span></span>  
+ <span data-ttu-id="97666-110">この操作方法に関するトピックの手順の完了が必要、[開発活動の前提条件](../esb-toolkit/prerequisites-for-the-development-activities.md)と (でインストールできるように、%esb インストール Folder%\Bin\ UDDI 発行者のツールの実行Microsoft.Practices.ESB.UDDIPublisher.exe)。</span><span class="sxs-lookup"><span data-stu-id="97666-110">The procedures in this How-to topic require the completion of the [Prerequisites for the Development Activities](../esb-toolkit/prerequisites-for-the-development-activities.md) and the execution of the UDDI Publisher tool (you can install it at %ESB Install Folder%\Bin\Microsoft.Practices.ESB.UDDIPublisher.exe).</span></span>  
 
-## <a name="steps"></a><span data-ttu-id="ce31d-111">手順</span><span class="sxs-lookup"><span data-stu-id="ce31d-111">Steps</span></span>  
+## <a name="steps"></a><span data-ttu-id="97666-111">手順</span><span class="sxs-lookup"><span data-stu-id="97666-111">Steps</span></span>  
 
-#### <a name="to-create-the-newposervice-in-the-uddi-registry"></a><span data-ttu-id="ce31d-112">UDDI レジストリで、NewPOService を作成するには</span><span class="sxs-lookup"><span data-stu-id="ce31d-112">To create the NewPOService in the UDDI registry</span></span>  
+#### <a name="to-create-the-newposervice-in-the-uddi-registry"></a><span data-ttu-id="97666-112">UDDI レジストリで、NewPOService を作成するには</span><span class="sxs-lookup"><span data-stu-id="97666-112">To create the NewPOService in the UDDI registry</span></span>  
 
-1.  <span data-ttu-id="ce31d-113">Internet Explorer で、UDDI サービス サイトを参照 (この URL は、既定では、 http://localhost/uddi) します。</span><span class="sxs-lookup"><span data-stu-id="ce31d-113">In Internet Explorer, browse to the UDDI Service site (by default, the URL for this is http://localhost/uddi).</span></span>  
+1.  <span data-ttu-id="97666-113">Internet Explorer で、UDDI サービス サイトを参照 (この URL は、既定では、 http://localhost/uddi) します。</span><span class="sxs-lookup"><span data-stu-id="97666-113">In Internet Explorer, browse to the UDDI Service site (by default, the URL for this is http://localhost/uddi).</span></span>  
 
-2.  <span data-ttu-id="ce31d-114">**Uddi Services** ] ページで [**発行**します。</span><span class="sxs-lookup"><span data-stu-id="ce31d-114">On the **uddi Services** page, click **Publish**.</span></span>  
+2.  <span data-ttu-id="97666-114">**Uddi Services** ] ページで [**発行**します。</span><span class="sxs-lookup"><span data-stu-id="97666-114">On the **uddi Services** page, click **Publish**.</span></span>  
 
-3.  <span data-ttu-id="ce31d-115">発行 ウィンドウで右クリック**Microsoft.Practices.ESB**、 をクリックし、**サービスの追加**します。</span><span class="sxs-lookup"><span data-stu-id="ce31d-115">In the Publish pane, right-click **Microsoft.Practices.ESB**, and then click **Add Service**.</span></span>  
+3.  <span data-ttu-id="97666-115">発行 ウィンドウで右クリック**Microsoft.Practices.ESB**、 をクリックし、**サービスの追加**します。</span><span class="sxs-lookup"><span data-stu-id="97666-115">In the Publish pane, right-click **Microsoft.Practices.ESB**, and then click **Add Service**.</span></span>  
 
-4.  <span data-ttu-id="ce31d-116">次のページで選択**を使用するキーを指定**、 をクリックし、**続行**。</span><span class="sxs-lookup"><span data-stu-id="ce31d-116">On the following page, select **Specify a key to use**, and then click **Continue**.</span></span>  
+4.  <span data-ttu-id="97666-116">次のページで選択**を使用するキーを指定**、 をクリックし、**続行**。</span><span class="sxs-lookup"><span data-stu-id="97666-116">On the following page, select **Specify a key to use**, and then click **Continue**.</span></span>  
 
-5.  <span data-ttu-id="ce31d-117">次のページでは、をクリックして、 **esb**パーティション キーします。</span><span class="sxs-lookup"><span data-stu-id="ce31d-117">On the following page, click the **esb** key partition.</span></span> <span data-ttu-id="ce31d-118">**キー サフィックス**ボックスに「 **newposervice**、 をクリックし、**続行**します。</span><span class="sxs-lookup"><span data-stu-id="ce31d-118">In the **Key Suffix** box, type **newposervice**, and then click **Continue**.</span></span>  
+5.  <span data-ttu-id="97666-117">次のページでは、をクリックして、 **esb**パーティション キーします。</span><span class="sxs-lookup"><span data-stu-id="97666-117">On the following page, click the **esb** key partition.</span></span> <span data-ttu-id="97666-118">**キー サフィックス**ボックスに「 **newposervice**、 をクリックし、**続行**します。</span><span class="sxs-lookup"><span data-stu-id="97666-118">In the **Key Suffix** box, type **newposervice**, and then click **Continue**.</span></span>  
 
-6.  <span data-ttu-id="ce31d-119">次のページの横に (**新しいサービス名**)、 をクリックして**編集**します。</span><span class="sxs-lookup"><span data-stu-id="ce31d-119">On the following page, next to (**New Service Name**), click **Edit**.</span></span> <span data-ttu-id="ce31d-120">サービスの名前を付けます**NewPOService**、順にクリックします**Update**します。</span><span class="sxs-lookup"><span data-stu-id="ce31d-120">Name the service **NewPOService**, and then click **Update**.</span></span>  
+6.  <span data-ttu-id="97666-119">次のページの横に (**新しいサービス名**)、 をクリックして**編集**します。</span><span class="sxs-lookup"><span data-stu-id="97666-119">On the following page, next to (**New Service Name**), click **Edit**.</span></span> <span data-ttu-id="97666-120">サービスの名前を付けます**NewPOService**、順にクリックします**Update**します。</span><span class="sxs-lookup"><span data-stu-id="97666-120">Name the service **NewPOService**, and then click **Update**.</span></span>  
 
-7.  <span data-ttu-id="ce31d-121">をクリックして**説明の追加**、サービスの説明を入力 (たとえば、**サンプル サービス**)、順にクリックします**更新**します。</span><span class="sxs-lookup"><span data-stu-id="ce31d-121">Click **Add Description**, type a description for the service (for example, **Sample Service**), and then click **Update**.</span></span>  
+7.  <span data-ttu-id="97666-121">をクリックして**説明の追加**、サービスの説明を入力 (たとえば、**サンプル サービス**)、順にクリックします**更新**します。</span><span class="sxs-lookup"><span data-stu-id="97666-121">Click **Add Description**, type a description for the service (for example, **Sample Service**), and then click **Update**.</span></span>  
 
-#### <a name="to-add-a-binding-for-the-newposervice"></a><span data-ttu-id="ce31d-122">NewPOService のバインドを追加するには</span><span class="sxs-lookup"><span data-stu-id="ce31d-122">To add a binding for the NewPOService</span></span>  
+#### <a name="to-add-a-binding-for-the-newposervice"></a><span data-ttu-id="97666-122">NewPOService のバインドを追加するには</span><span class="sxs-lookup"><span data-stu-id="97666-122">To add a binding for the NewPOService</span></span>  
 
-1.  <span data-ttu-id="ce31d-123">をクリックして、**バインド**タブをクリックし、をクリックし、**バインドの追加**します。</span><span class="sxs-lookup"><span data-stu-id="ce31d-123">Click the **Bindings** tab, and then click **Add Binding**.</span></span>  
+1.  <span data-ttu-id="97666-123">をクリックして、**バインド**タブをクリックし、をクリックし、**バインドの追加**します。</span><span class="sxs-lookup"><span data-stu-id="97666-123">Click the **Bindings** tab, and then click **Add Binding**.</span></span>  
 
-2.  <span data-ttu-id="ce31d-124">選択**を使用するキーを指定**、 をクリックし、**続行**します。</span><span class="sxs-lookup"><span data-stu-id="ce31d-124">Select **Specify a key to use**, and then click **Continue**.</span></span>  
+2.  <span data-ttu-id="97666-124">選択**を使用するキーを指定**、 をクリックし、**続行**します。</span><span class="sxs-lookup"><span data-stu-id="97666-124">Select **Specify a key to use**, and then click **Continue**.</span></span>  
 
-3.  <span data-ttu-id="ce31d-125">次のページでは、をクリックして、 **esb**パーティション キーします。</span><span class="sxs-lookup"><span data-stu-id="ce31d-125">On the following page, click the **esb** key partition.</span></span> <span data-ttu-id="ce31d-126">**キー サフィックス**ボックスに「 **newposervicebinding**、 をクリックし、**続行**します。</span><span class="sxs-lookup"><span data-stu-id="ce31d-126">In the **Key Suffix** box, type **newposervicebinding**, and then click **Continue**.</span></span>  
+3.  <span data-ttu-id="97666-125">次のページでは、をクリックして、 **esb**パーティション キーします。</span><span class="sxs-lookup"><span data-stu-id="97666-125">On the following page, click the **esb** key partition.</span></span> <span data-ttu-id="97666-126">**キー サフィックス**ボックスに「 **newposervicebinding**、 をクリックし、**続行**します。</span><span class="sxs-lookup"><span data-stu-id="97666-126">In the **Key Suffix** box, type **newposervicebinding**, and then click **Continue**.</span></span>  
 
-4.  <span data-ttu-id="ce31d-127">[**アクセス ポイント**、] をクリックして**編集**、次の手順と。</span><span class="sxs-lookup"><span data-stu-id="ce31d-127">Under **Access Point**, click **Edit**, and then complete the following:</span></span>  
+4.  <span data-ttu-id="97666-127">[**アクセス ポイント**、] をクリックして**編集**、次の手順と。</span><span class="sxs-lookup"><span data-stu-id="97666-127">Under **Access Point**, click **Edit**, and then complete the following:</span></span>  
 
-    1.  <span data-ttu-id="ce31d-128">**アクセス ポイント**ボックスに「  **http://localhost/ESB.CanadianServices/SubmitPOService.asmx**します。</span><span class="sxs-lookup"><span data-stu-id="ce31d-128">In the **Access Point** box, type **http://localhost/ESB.CanadianServices/SubmitPOService.asmx**.</span></span>  
+    1.  <span data-ttu-id="97666-128">**アクセス ポイント**ボックスに「  **http://localhost/ESB.CanadianServices/SubmitPOService.asmx**します。</span><span class="sxs-lookup"><span data-stu-id="97666-128">In the **Access Point** box, type **http://localhost/ESB.CanadianServices/SubmitPOService.asmx**.</span></span>  
 
-    2.  <span data-ttu-id="ce31d-129">**使用の種類**ドロップダウン リストでは、をクリックして**エンドポイント**、順にクリックします**更新**します。</span><span class="sxs-lookup"><span data-stu-id="ce31d-129">In the **Use Type** drop-down list, click **endpoint**, and then click **Update**.</span></span>  
+    2.  <span data-ttu-id="97666-129">**使用の種類**ドロップダウン リストでは、をクリックして**エンドポイント**、順にクリックします**更新**します。</span><span class="sxs-lookup"><span data-stu-id="97666-129">In the **Use Type** drop-down list, click **endpoint**, and then click **Update**.</span></span>  
 
-#### <a name="to-configure-the-binding-instance-information"></a><span data-ttu-id="ce31d-130">バインディングのインスタンス情報を構成するには</span><span class="sxs-lookup"><span data-stu-id="ce31d-130">To configure the binding instance information</span></span>  
+#### <a name="to-configure-the-binding-instance-information"></a><span data-ttu-id="97666-130">バインディングのインスタンス情報を構成するには</span><span class="sxs-lookup"><span data-stu-id="97666-130">To configure the binding instance information</span></span>  
 
-1. <span data-ttu-id="ce31d-131">をクリックして、**インスタンス情報**タブをクリックし、をクリックし、**インスタンス情報の追加**します。</span><span class="sxs-lookup"><span data-stu-id="ce31d-131">Click the **Instance Info** tab, and then click **Add Instance Info**.</span></span>  
+1. <span data-ttu-id="97666-131">をクリックして、**インスタンス情報**タブをクリックし、をクリックし、**インスタンス情報の追加**します。</span><span class="sxs-lookup"><span data-stu-id="97666-131">Click the **Instance Info** tab, and then click **Add Instance Info**.</span></span>  
 
-2. <span data-ttu-id="ce31d-132">**検索含む tModel 名を**ボックスに「 **% esb**順にクリックします**検索**します。</span><span class="sxs-lookup"><span data-stu-id="ce31d-132">In the **Search for tModel names containing** box, type **%esb%** and then click **Search**.</span></span>  
+2. <span data-ttu-id="97666-132">**検索含む tModel 名を**ボックスに「 **% esb**順にクリックします**検索**します。</span><span class="sxs-lookup"><span data-stu-id="97666-132">In the **Search for tModel names containing** box, type **%esb%** and then click **Search**.</span></span>  
 
-3. <span data-ttu-id="ce31d-133">見つけてクリックして、 **tModel**の**transporttype**します。</span><span class="sxs-lookup"><span data-stu-id="ce31d-133">Locate and click the **tModel** for **transporttype**.</span></span>  
+3. <span data-ttu-id="97666-133">見つけてクリックして、 **tModel**の**transporttype**します。</span><span class="sxs-lookup"><span data-stu-id="97666-133">Locate and click the **tModel** for **transporttype**.</span></span>  
 
    > [!NOTE]
-   >  <span data-ttu-id="ce31d-134">この手順の残りの手順を完了するには、1 ページ目と 2 ページ間で変更する必要する可能性があります。</span><span class="sxs-lookup"><span data-stu-id="ce31d-134">To complete the remaining steps in this procedure, you may be required to change between page 1 and page 2.</span></span>  
+   >  <span data-ttu-id="97666-134">この手順の残りの手順を完了するには、1 ページ目と 2 ページ間で変更する必要する可能性があります。</span><span class="sxs-lookup"><span data-stu-id="97666-134">To complete the remaining steps in this procedure, you may be required to change between page 1 and page 2.</span></span>  
 
-4. <span data-ttu-id="ce31d-135">**説明**セクションで、**説明の追加**します。</span><span class="sxs-lookup"><span data-stu-id="ce31d-135">In the **Descriptions** section, click **Add Description**.</span></span>  
+4. <span data-ttu-id="97666-135">**説明**セクションで、**説明の追加**します。</span><span class="sxs-lookup"><span data-stu-id="97666-135">In the **Descriptions** section, click **Add Description**.</span></span>  
 
-5. <span data-ttu-id="ce31d-136">**説明**ボックスに「 **ESB 行程使用するためトランスポートの種類**、 をクリックし、 **Update**。</span><span class="sxs-lookup"><span data-stu-id="ce31d-136">In the **Description** box, type **Transport Type for ESB Itinerary Use**, and then click **Update**.</span></span>  
+5. <span data-ttu-id="97666-136">**説明**ボックスに「 **ESB 行程使用するためトランスポートの種類**、 をクリックし、 **Update**。</span><span class="sxs-lookup"><span data-stu-id="97666-136">In the **Description** box, type **Transport Type for ESB Itinerary Use**, and then click **Update**.</span></span>  
 
-6. <span data-ttu-id="ce31d-137">をクリックして、**インスタンスの詳細**タブをクリックし、をクリックし、**編集**します。</span><span class="sxs-lookup"><span data-stu-id="ce31d-137">Click the **Instance Details** tab, and then click **Edit**.</span></span>  
+6. <span data-ttu-id="97666-137">をクリックして、**インスタンスの詳細**タブをクリックし、をクリックし、**編集**します。</span><span class="sxs-lookup"><span data-stu-id="97666-137">Click the **Instance Details** tab, and then click **Edit**.</span></span>  
 
-7. <span data-ttu-id="ce31d-138">**インスタンス パラメーター**ボックスに「 **Wcf-basichttp**、 をクリックし、**更新**。</span><span class="sxs-lookup"><span data-stu-id="ce31d-138">In the **Instance Parameters** box, type **WCF-BasicHttp**, and then click **Update**.</span></span>  
+7. <span data-ttu-id="97666-138">**インスタンス パラメーター**ボックスに「 **Wcf-basichttp**、 をクリックし、**更新**。</span><span class="sxs-lookup"><span data-stu-id="97666-138">In the **Instance Parameters** box, type **WCF-BasicHttp**, and then click **Update**.</span></span>  
 
-8. <span data-ttu-id="ce31d-139">**説明**セクションで、**説明の追加**します。</span><span class="sxs-lookup"><span data-stu-id="ce31d-139">In the **Descriptions** section, click **Add Description**.</span></span>  
+8. <span data-ttu-id="97666-139">**説明**セクションで、**説明の追加**します。</span><span class="sxs-lookup"><span data-stu-id="97666-139">In the **Descriptions** section, click **Add Description**.</span></span>  
 
-9. <span data-ttu-id="ce31d-140">**説明**ボックスに「 **HTTP トランスポートの基本的な WCF** をクリックし、**更新**。</span><span class="sxs-lookup"><span data-stu-id="ce31d-140">In the **Description** box, type **WCF Basic HTTP Transport**, and then click **Update**.</span></span>  
+9. <span data-ttu-id="97666-140">**説明**ボックスに「 **HTTP トランスポートの基本的な WCF** をクリックし、**更新**。</span><span class="sxs-lookup"><span data-stu-id="97666-140">In the **Description** box, type **WCF Basic HTTP Transport**, and then click **Update**.</span></span>  
 
-10. <span data-ttu-id="ce31d-141">[発行] ウィンドウで [ **NewPOService**、] をクリックして **http://localhost/esb.canadianservices/submitposervice.asmx**します。</span><span class="sxs-lookup"><span data-stu-id="ce31d-141">In the Publish pane, under **NewPOService**, click **http://localhost/esb.canadianservices/submitposervice.asmx**.</span></span>  
+10. <span data-ttu-id="97666-141">[発行] ウィンドウで [ **NewPOService**、] をクリックして **http://localhost/esb.canadianservices/submitposervice.asmx**します。</span><span class="sxs-lookup"><span data-stu-id="97666-141">In the Publish pane, under **NewPOService**, click **http://localhost/esb.canadianservices/submitposervice.asmx**.</span></span>  
 
-11. <span data-ttu-id="ce31d-142">**インスタンス情報**] タブで [**インスタンス情報の追加**します。</span><span class="sxs-lookup"><span data-stu-id="ce31d-142">On the **Instance Info** tab, click **Add Instance Info**.</span></span>  
+11. <span data-ttu-id="97666-142">**インスタンス情報**] タブで [**インスタンス情報の追加**します。</span><span class="sxs-lookup"><span data-stu-id="97666-142">On the **Instance Info** tab, click **Add Instance Info**.</span></span>  
 
-12. <span data-ttu-id="ce31d-143">前述の手順を使用して、次の表に示した値に従って、次のインスタンス情報を追加します。</span><span class="sxs-lookup"><span data-stu-id="ce31d-143">Using the steps described earlier, add the following instance information, according to the values shown in the following table.</span></span>  
+12. <span data-ttu-id="97666-143">前述の手順を使用して、次の表に示した値に従って、次のインスタンス情報を追加します。</span><span class="sxs-lookup"><span data-stu-id="97666-143">Using the steps described earlier, add the following instance information, according to the values shown in the following table.</span></span>  
 
 
-    |                           <span data-ttu-id="ce31d-144">tModel</span><span class="sxs-lookup"><span data-stu-id="ce31d-144">tModel</span></span>                           |       <span data-ttu-id="ce31d-145">説明</span><span class="sxs-lookup"><span data-stu-id="ce31d-145">Description</span></span>        |                          <span data-ttu-id="ce31d-146">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ce31d-146">Parameter</span></span>                           |         <span data-ttu-id="ce31d-147">パラメーターの説明</span><span class="sxs-lookup"><span data-stu-id="ce31d-147">Parameter description</span></span>          |
+    |                           <span data-ttu-id="97666-144">tModel</span><span class="sxs-lookup"><span data-stu-id="97666-144">tModel</span></span>                           |       <span data-ttu-id="97666-145">説明</span><span class="sxs-lookup"><span data-stu-id="97666-145">Description</span></span>        |                          <span data-ttu-id="97666-146">パラメーター</span><span class="sxs-lookup"><span data-stu-id="97666-146">Parameter</span></span>                           |         <span data-ttu-id="97666-147">パラメーターの説明</span><span class="sxs-lookup"><span data-stu-id="97666-147">Parameter description</span></span>          |
     |------------------------------------------------------------|--------------------------|--------------------------------------------------------------|----------------------------------------|
-    | <span data-ttu-id="ce31d-148">microsoft-com:esb:runtimeresolution:messageexchangepattern</span><span class="sxs-lookup"><span data-stu-id="ce31d-148">microsoft-com:esb:runtimeresolution:messageexchangepattern</span></span> | <span data-ttu-id="ce31d-149">メッセージ交換パターン</span><span class="sxs-lookup"><span data-stu-id="ce31d-149">Message Exchange Pattern</span></span> |                           <span data-ttu-id="ce31d-150">双方向</span><span class="sxs-lookup"><span data-stu-id="ce31d-150">Two-Way</span></span>                            |           <span data-ttu-id="ce31d-151">双方向の操作</span><span class="sxs-lookup"><span data-stu-id="ce31d-151">Two-way operation</span></span>            |
-    |      <span data-ttu-id="ce31d-152">microsoft-com:esb:runtimeresolution:cachetimeout</span><span class="sxs-lookup"><span data-stu-id="ce31d-152">microsoft-com:esb:runtimeresolution:cachetimeout</span></span>      |      <span data-ttu-id="ce31d-153">キャッシュのタイムアウト</span><span class="sxs-lookup"><span data-stu-id="ce31d-153">Cache Timeout</span></span>       |                              <span data-ttu-id="ce31d-154">-1</span><span class="sxs-lookup"><span data-stu-id="ce31d-154">-1</span></span>                              |           <span data-ttu-id="ce31d-155">現在無効になっています</span><span class="sxs-lookup"><span data-stu-id="ce31d-155">Currently disabled</span></span>           |
-    |     <span data-ttu-id="ce31d-156">microsoft-com:esb:runtimeresolution:jaxrpcresponse</span><span class="sxs-lookup"><span data-stu-id="ce31d-156">microsoft-com:esb:runtimeresolution:jaxrpcresponse</span></span>     |      <span data-ttu-id="ce31d-157">JaxRpcResponse</span><span class="sxs-lookup"><span data-stu-id="ce31d-157">JaxRpcResponse</span></span>      |                            <span data-ttu-id="ce31d-158">false</span><span class="sxs-lookup"><span data-stu-id="ce31d-158">false</span></span>                             |                                        |
-    |         <span data-ttu-id="ce31d-159">microsoft-com:esb:runtimeresolution:action</span><span class="sxs-lookup"><span data-stu-id="ce31d-159">microsoft-com:esb:runtimeresolution:action</span></span>         |      <span data-ttu-id="ce31d-160">サービス アクション</span><span class="sxs-lookup"><span data-stu-id="ce31d-160">Service Action</span></span>      |                         <span data-ttu-id="ce31d-161">submitOrder</span><span class="sxs-lookup"><span data-stu-id="ce31d-161">submitOrder</span></span>                          | <span data-ttu-id="ce31d-162">呼び出すサービス メソッドを指定します</span><span class="sxs-lookup"><span data-stu-id="ce31d-162">Specifies the service method to invoke</span></span> |
-    |    <span data-ttu-id="ce31d-163">microsoft-com:esb:runtimeresolution:targetnamespace</span><span class="sxs-lookup"><span data-stu-id="ce31d-163">microsoft-com:esb:runtimeresolution:targetnamespace</span></span>     |    <span data-ttu-id="ce31d-164">Service Namespace</span><span class="sxs-lookup"><span data-stu-id="ce31d-164">Service Namespace</span></span>     | http://globalbank.esb.dynamicresolution.com/canadianservices |            <span data-ttu-id="ce31d-165">ターゲットの名前空間</span><span class="sxs-lookup"><span data-stu-id="ce31d-165">Target namespace</span></span>            |
+    | <span data-ttu-id="97666-148">microsoft-com:esb:runtimeresolution:messageexchangepattern</span><span class="sxs-lookup"><span data-stu-id="97666-148">microsoft-com:esb:runtimeresolution:messageexchangepattern</span></span> | <span data-ttu-id="97666-149">メッセージ交換パターン</span><span class="sxs-lookup"><span data-stu-id="97666-149">Message Exchange Pattern</span></span> |                           <span data-ttu-id="97666-150">双方向</span><span class="sxs-lookup"><span data-stu-id="97666-150">Two-Way</span></span>                            |           <span data-ttu-id="97666-151">双方向の操作</span><span class="sxs-lookup"><span data-stu-id="97666-151">Two-way operation</span></span>            |
+    |      <span data-ttu-id="97666-152">microsoft-com:esb:runtimeresolution:cachetimeout</span><span class="sxs-lookup"><span data-stu-id="97666-152">microsoft-com:esb:runtimeresolution:cachetimeout</span></span>      |      <span data-ttu-id="97666-153">キャッシュのタイムアウト</span><span class="sxs-lookup"><span data-stu-id="97666-153">Cache Timeout</span></span>       |                              <span data-ttu-id="97666-154">-1</span><span class="sxs-lookup"><span data-stu-id="97666-154">-1</span></span>                              |           <span data-ttu-id="97666-155">現在無効になっています</span><span class="sxs-lookup"><span data-stu-id="97666-155">Currently disabled</span></span>           |
+    |     <span data-ttu-id="97666-156">microsoft-com:esb:runtimeresolution:jaxrpcresponse</span><span class="sxs-lookup"><span data-stu-id="97666-156">microsoft-com:esb:runtimeresolution:jaxrpcresponse</span></span>     |      <span data-ttu-id="97666-157">JaxRpcResponse</span><span class="sxs-lookup"><span data-stu-id="97666-157">JaxRpcResponse</span></span>      |                            <span data-ttu-id="97666-158">false</span><span class="sxs-lookup"><span data-stu-id="97666-158">false</span></span>                             |                                        |
+    |         <span data-ttu-id="97666-159">microsoft-com:esb:runtimeresolution:action</span><span class="sxs-lookup"><span data-stu-id="97666-159">microsoft-com:esb:runtimeresolution:action</span></span>         |      <span data-ttu-id="97666-160">サービス アクション</span><span class="sxs-lookup"><span data-stu-id="97666-160">Service Action</span></span>      |                         <span data-ttu-id="97666-161">submitOrder</span><span class="sxs-lookup"><span data-stu-id="97666-161">submitOrder</span></span>                          | <span data-ttu-id="97666-162">呼び出すサービス メソッドを指定します</span><span class="sxs-lookup"><span data-stu-id="97666-162">Specifies the service method to invoke</span></span> |
+    |    <span data-ttu-id="97666-163">microsoft-com:esb:runtimeresolution:targetnamespace</span><span class="sxs-lookup"><span data-stu-id="97666-163">microsoft-com:esb:runtimeresolution:targetnamespace</span></span>     |    <span data-ttu-id="97666-164">Service Namespace</span><span class="sxs-lookup"><span data-stu-id="97666-164">Service Namespace</span></span>     | http://globalbank.esb.dynamicresolution.com/canadianservices |            <span data-ttu-id="97666-165">ターゲットの名前空間</span><span class="sxs-lookup"><span data-stu-id="97666-165">Target namespace</span></span>            |
 
-#### <a name="to-configure-the-binding-categorization"></a><span data-ttu-id="ce31d-166">バインドの分類を構成するには</span><span class="sxs-lookup"><span data-stu-id="ce31d-166">To configure the binding categorization</span></span>  
+#### <a name="to-configure-the-binding-categorization"></a><span data-ttu-id="97666-166">バインドの分類を構成するには</span><span class="sxs-lookup"><span data-stu-id="97666-166">To configure the binding categorization</span></span>  
 
-1.  <span data-ttu-id="ce31d-167">[発行] ウィンドウで [ **NewPOService**、] をクリックして **http://localhost/esb.canadianservices/submitposervice.asmx**します。</span><span class="sxs-lookup"><span data-stu-id="ce31d-167">In the Publish pane, under **NewPOService**, click **http://localhost/esb.canadianservices/submitposervice.asmx**.</span></span>  
+1.  <span data-ttu-id="97666-167">[発行] ウィンドウで [ **NewPOService**、] をクリックして **http://localhost/esb.canadianservices/submitposervice.asmx**します。</span><span class="sxs-lookup"><span data-stu-id="97666-167">In the Publish pane, under **NewPOService**, click **http://localhost/esb.canadianservices/submitposervice.asmx**.</span></span>  
 
-2.  <span data-ttu-id="ce31d-168">**カテゴリ**] タブで [**カスタム カテゴリの追加**します。</span><span class="sxs-lookup"><span data-stu-id="ce31d-168">On the **Categories** tab, click **Add Custom Category**.</span></span>  
+2.  <span data-ttu-id="97666-168">**カテゴリ**] タブで [**カスタム カテゴリの追加**します。</span><span class="sxs-lookup"><span data-stu-id="97666-168">On the **Categories** tab, click **Add Custom Category**.</span></span>  
 
-3.  <span data-ttu-id="ce31d-169">**検索**ボックスに「 **% esb**  をクリックし、**検索**します。</span><span class="sxs-lookup"><span data-stu-id="ce31d-169">In the **Search** box, type **%esb%** and then click **Search**.</span></span>  
+3.  <span data-ttu-id="97666-169">**検索**ボックスに「 **% esb**  をクリックし、**検索**します。</span><span class="sxs-lookup"><span data-stu-id="97666-169">In the **Search** box, type **%esb%** and then click **Search**.</span></span>  
 
-4.  <span data-ttu-id="ce31d-170">見つけてクリックして、 **microsoft-com:esb:runtimeresolution:biztalkapplication** tModel します。</span><span class="sxs-lookup"><span data-stu-id="ce31d-170">Locate and click the **microsoft-com:esb:runtimeresolution:biztalkapplication** tModel.</span></span>  
+4.  <span data-ttu-id="97666-170">見つけてクリックして、 **microsoft-com:esb:runtimeresolution:biztalkapplication** tModel します。</span><span class="sxs-lookup"><span data-stu-id="97666-170">Locate and click the **microsoft-com:esb:runtimeresolution:biztalkapplication** tModel.</span></span>  
 
-5.  <span data-ttu-id="ce31d-171">**キー名**ボックスに「 **BizTalk アプリケーション**します。</span><span class="sxs-lookup"><span data-stu-id="ce31d-171">In the **Key Name** box, type **BizTalk Application**.</span></span>  
+5.  <span data-ttu-id="97666-171">**キー名**ボックスに「 **BizTalk アプリケーション**します。</span><span class="sxs-lookup"><span data-stu-id="97666-171">In the **Key Name** box, type **BizTalk Application**.</span></span>  
 
-6.  <span data-ttu-id="ce31d-172">**キー値**ボックスに「 **Microsoft.Practices.ESB**、 をクリックし、**カテゴリの追加**します。</span><span class="sxs-lookup"><span data-stu-id="ce31d-172">In the **Key Value** box, type **Microsoft.Practices.ESB**, and then click **Add Category**.</span></span>  
+6.  <span data-ttu-id="97666-172">**キー値**ボックスに「 **Microsoft.Practices.ESB**、 をクリックし、**カテゴリの追加**します。</span><span class="sxs-lookup"><span data-stu-id="97666-172">In the **Key Value** box, type **Microsoft.Practices.ESB**, and then click **Add Category**.</span></span>  
 
-7.  <span data-ttu-id="ce31d-173">前述の手順を使用して、次の表に示した値に従って、次のカスタム カテゴリを追加します。</span><span class="sxs-lookup"><span data-stu-id="ce31d-173">Using the steps described earlier, add the following custom categories, according to the values shown in the following table.</span></span>  
+7.  <span data-ttu-id="97666-173">前述の手順を使用して、次の表に示した値に従って、次のカスタム カテゴリを追加します。</span><span class="sxs-lookup"><span data-stu-id="97666-173">Using the steps described earlier, add the following custom categories, according to the values shown in the following table.</span></span>  
 
-    |<span data-ttu-id="ce31d-174">tModel</span><span class="sxs-lookup"><span data-stu-id="ce31d-174">tModel</span></span>|<span data-ttu-id="ce31d-175">キー名</span><span class="sxs-lookup"><span data-stu-id="ce31d-175">Key name</span></span>|<span data-ttu-id="ce31d-176">キーの値</span><span class="sxs-lookup"><span data-stu-id="ce31d-176">Key value</span></span>|  
+    |<span data-ttu-id="97666-174">tModel</span><span class="sxs-lookup"><span data-stu-id="97666-174">tModel</span></span>|<span data-ttu-id="97666-175">キー名</span><span class="sxs-lookup"><span data-stu-id="97666-175">Key name</span></span>|<span data-ttu-id="97666-176">キーの値</span><span class="sxs-lookup"><span data-stu-id="97666-176">Key value</span></span>|  
     |------------|--------------|---------------|  
-    |<span data-ttu-id="ce31d-177">microsoft-com:esb:runtimeresolution:portname</span><span class="sxs-lookup"><span data-stu-id="ce31d-177">microsoft-com:esb:runtimeresolution:portname</span></span>|<span data-ttu-id="ce31d-178">ポート名</span><span class="sxs-lookup"><span data-stu-id="ce31d-178">Port Name</span></span>|<span data-ttu-id="ce31d-179">NewPOService</span><span class="sxs-lookup"><span data-stu-id="ce31d-179">NewPOService</span></span>|  
-    |<span data-ttu-id="ce31d-180">microsoft-com:esb:runtimeresolution:transporttype</span><span class="sxs-lookup"><span data-stu-id="ce31d-180">microsoft-com:esb:runtimeresolution:transporttype</span></span>|<span data-ttu-id="ce31d-181">トランスポートの種類</span><span class="sxs-lookup"><span data-stu-id="ce31d-181">Transport Type</span></span>|<span data-ttu-id="ce31d-182">WCF-BasicHttp</span><span class="sxs-lookup"><span data-stu-id="ce31d-182">WCF-BasicHttp</span></span>|  
+    |<span data-ttu-id="97666-177">microsoft-com:esb:runtimeresolution:portname</span><span class="sxs-lookup"><span data-stu-id="97666-177">microsoft-com:esb:runtimeresolution:portname</span></span>|<span data-ttu-id="97666-178">ポート名</span><span class="sxs-lookup"><span data-stu-id="97666-178">Port Name</span></span>|<span data-ttu-id="97666-179">NewPOService</span><span class="sxs-lookup"><span data-stu-id="97666-179">NewPOService</span></span>|  
+    |<span data-ttu-id="97666-180">microsoft-com:esb:runtimeresolution:transporttype</span><span class="sxs-lookup"><span data-stu-id="97666-180">microsoft-com:esb:runtimeresolution:transporttype</span></span>|<span data-ttu-id="97666-181">トランスポートの種類</span><span class="sxs-lookup"><span data-stu-id="97666-181">Transport Type</span></span>|<span data-ttu-id="97666-182">WCF-BasicHttp</span><span class="sxs-lookup"><span data-stu-id="97666-182">WCF-BasicHttp</span></span>|  
 
-#### <a name="to-locate-the-service-in-the-uddi-registry"></a><span data-ttu-id="ce31d-183">UDDI レジストリ内でサービスを検索するには</span><span class="sxs-lookup"><span data-stu-id="ce31d-183">To locate the service in the UDDI registry</span></span>  
+#### <a name="to-locate-the-service-in-the-uddi-registry"></a><span data-ttu-id="97666-183">UDDI レジストリ内でサービスを検索するには</span><span class="sxs-lookup"><span data-stu-id="97666-183">To locate the service in the UDDI registry</span></span>  
 
-1.  <span data-ttu-id="ce31d-184">Internet Explorer で、上、 **uddi サービス**] ページで [**検索**します。</span><span class="sxs-lookup"><span data-stu-id="ce31d-184">In Internet Explorer, on the **uddi Services** page, click **Search**.</span></span>  
+1.  <span data-ttu-id="97666-184">Internet Explorer で、上、 **uddi サービス**] ページで [**検索**します。</span><span class="sxs-lookup"><span data-stu-id="97666-184">In Internet Explorer, on the **uddi Services** page, click **Search**.</span></span>  
 
-2.  <span data-ttu-id="ce31d-185">をクリックして、**サービス**タブ。</span><span class="sxs-lookup"><span data-stu-id="ce31d-185">Click the **Services** tab.</span></span>  
+2.  <span data-ttu-id="97666-185">をクリックして、**サービス**タブ。</span><span class="sxs-lookup"><span data-stu-id="97666-185">Click the **Services** tab.</span></span>  
 
-3.  <span data-ttu-id="ce31d-186">**サービス名**ボックスに「 **% PO** をクリックし、**検索**します。</span><span class="sxs-lookup"><span data-stu-id="ce31d-186">In the **Service Name** box, type **%PO%**, and then click **Search**.</span></span>  
+3.  <span data-ttu-id="97666-186">**サービス名**ボックスに「 **% PO** をクリックし、**検索**します。</span><span class="sxs-lookup"><span data-stu-id="97666-186">In the **Service Name** box, type **%PO%**, and then click **Search**.</span></span>  
 
-4.  <span data-ttu-id="ce31d-187">**検索**ウィンドウで、**結果**] タブで [ **NewPOService**。</span><span class="sxs-lookup"><span data-stu-id="ce31d-187">In the **Search** pane, on the **Results** tab, click **NewPOService**.</span></span>  
+4.  <span data-ttu-id="97666-187">**検索**ウィンドウで、**結果**] タブで [ **NewPOService**。</span><span class="sxs-lookup"><span data-stu-id="97666-187">In the **Search** pane, on the **Results** tab, click **NewPOService**.</span></span>  
 
     > [!NOTE]
-    >  <span data-ttu-id="ce31d-188">これは、サービスは、レジストリに正常に発行されたことを確認します。</span><span class="sxs-lookup"><span data-stu-id="ce31d-188">This confirms the service was successfully published to the registry.</span></span>  
+    >  <span data-ttu-id="97666-188">これは、サービスは、レジストリに正常に発行されたことを確認します。</span><span class="sxs-lookup"><span data-stu-id="97666-188">This confirms the service was successfully published to the registry.</span></span>  
 
-#### <a name="to-create-an-itinerary-model-to-test-the-uddi-service-publication"></a><span data-ttu-id="ce31d-189">UDDI サービスの公開をテストするスケジュールのモデルを作成するには</span><span class="sxs-lookup"><span data-stu-id="ce31d-189">To create an itinerary model to test the UDDI service publication</span></span>  
+#### <a name="to-create-an-itinerary-model-to-test-the-uddi-service-publication"></a><span data-ttu-id="97666-189">UDDI サービスの公開をテストするスケジュールのモデルを作成するには</span><span class="sxs-lookup"><span data-stu-id="97666-189">To create an itinerary model to test the UDDI service publication</span></span>  
 
-1.  <span data-ttu-id="ce31d-190">Visual Studio で、C:\HowTos\Patterns\Patterns.sln を開きます。</span><span class="sxs-lookup"><span data-stu-id="ce31d-190">In Visual Studio, open C:\HowTos\Patterns\Patterns.sln.</span></span>  
+1.  <span data-ttu-id="97666-190">Visual Studio で、C:\HowTos\Patterns\Patterns.sln を開きます。</span><span class="sxs-lookup"><span data-stu-id="97666-190">In Visual Studio, open C:\HowTos\Patterns\Patterns.sln.</span></span>  
 
-2.  <span data-ttu-id="ce31d-191">ソリューション エクスプ ローラーで右クリックし、 **ItineraryLibrary**プロジェクトをポイントして、**追加**、順にクリックします**新しい行程**します。</span><span class="sxs-lookup"><span data-stu-id="ce31d-191">In Solution Explorer, right-click the **ItineraryLibrary** project, point to **Add**, and then click **New Itinerary**.</span></span>  
+2.  <span data-ttu-id="97666-191">ソリューション エクスプ ローラーで右クリックし、 **ItineraryLibrary**プロジェクトをポイントして、**追加**、順にクリックします**新しい行程**します。</span><span class="sxs-lookup"><span data-stu-id="97666-191">In Solution Explorer, right-click the **ItineraryLibrary** project, point to **Add**, and then click **New Itinerary**.</span></span>  
 
-3.  <span data-ttu-id="ce31d-192">**新しい項目の追加** ダイアログ ボックスで、**名前**ボックスに「 **NewBindingKeySearch**、 をクリックし、**追加**。</span><span class="sxs-lookup"><span data-stu-id="ce31d-192">In the **Add New Item** dialog box, in the **Name** box, type **NewBindingKeySearch**, and then click **Add**.</span></span>  
+3.  <span data-ttu-id="97666-192">**新しい項目の追加** ダイアログ ボックスで、**名前**ボックスに「 **NewBindingKeySearch**、 をクリックし、**追加**。</span><span class="sxs-lookup"><span data-stu-id="97666-192">In the **Add New Item** dialog box, in the **Name** box, type **NewBindingKeySearch**, and then click **Add**.</span></span>  
 
-#### <a name="to-configure-the-properties-of-the-itinerary"></a><span data-ttu-id="ce31d-193">旅行プランのプロパティを構成するには</span><span class="sxs-lookup"><span data-stu-id="ce31d-193">To configure the properties of the itinerary</span></span>  
+#### <a name="to-configure-the-properties-of-the-itinerary"></a><span data-ttu-id="97666-193">旅行プランのプロパティを構成するには</span><span class="sxs-lookup"><span data-stu-id="97666-193">To configure the properties of the itinerary</span></span>  
 
-1.  <span data-ttu-id="ce31d-194">Visual Studio でのデザイン画面をクリックします。 **NewBindingKeySearch.itinerary**します。</span><span class="sxs-lookup"><span data-stu-id="ce31d-194">In Visual Studio, click the design surface of **NewBindingKeySearch.itinerary**.</span></span> <span data-ttu-id="ce31d-195">**NewBindingKeySearch**プロパティ ウィンドウで、次のプロパティを構成します。</span><span class="sxs-lookup"><span data-stu-id="ce31d-195">In the **NewBindingKeySearch** Properties window, configure the following properties:</span></span>  
+1.  <span data-ttu-id="97666-194">Visual Studio でのデザイン画面をクリックします。 **NewBindingKeySearch.itinerary**します。</span><span class="sxs-lookup"><span data-stu-id="97666-194">In Visual Studio, click the design surface of **NewBindingKeySearch.itinerary**.</span></span> <span data-ttu-id="97666-195">**NewBindingKeySearch**プロパティ ウィンドウで、次のプロパティを構成します。</span><span class="sxs-lookup"><span data-stu-id="97666-195">In the **NewBindingKeySearch** Properties window, configure the following properties:</span></span>  
 
-    1.  <span data-ttu-id="ce31d-196">**は Request Response**ドロップダウン リストでは、をクリックして**True**します。</span><span class="sxs-lookup"><span data-stu-id="ce31d-196">In the **Is Request Response** drop-down list, click **True**.</span></span>  
+    1.  <span data-ttu-id="97666-196">**は Request Response**ドロップダウン リストでは、をクリックして**True**します。</span><span class="sxs-lookup"><span data-stu-id="97666-196">In the **Is Request Response** drop-down list, click **True**.</span></span>  
 
-    2.  <span data-ttu-id="ce31d-197">**モデル エクスポーター**ドロップダウン リストでは、をクリックして**XML 行程エクスポーター**します。</span><span class="sxs-lookup"><span data-stu-id="ce31d-197">In the **Model Exporter** drop-down list, click **XML Itinerary Exporter**.</span></span>  
+    2.  <span data-ttu-id="97666-197">**モデル エクスポーター**ドロップダウン リストでは、をクリックして**XML 行程エクスポーター**します。</span><span class="sxs-lookup"><span data-stu-id="97666-197">In the **Model Exporter** drop-down list, click **XML Itinerary Exporter**.</span></span>  
 
-    3.  <span data-ttu-id="ce31d-198">**エクステンダー設定**セクションで、次に、**旅行プラン XML ファイル**プロパティ、省略記号ボタン (…) をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ce31d-198">In the **Extender Settings** section, next to the **Itinerary XML file** property, click the ellipsis button (...).</span></span>  
+    3.  <span data-ttu-id="97666-198">**エクステンダー設定**セクションで、次に、**旅行プラン XML ファイル**プロパティ、省略記号ボタン (…) をクリックします。</span><span class="sxs-lookup"><span data-stu-id="97666-198">In the **Extender Settings** section, next to the **Itinerary XML file** property, click the ellipsis button (...).</span></span>  
 
-    4.  <span data-ttu-id="ce31d-199">**XML ファイルの**ダイアログ ボックスに「 **C:\HowTos\Itineraries\NewBindingKeySearch**で、**ファイル名**ボックスをクリック**保存**.</span><span class="sxs-lookup"><span data-stu-id="ce31d-199">In the **Select XML File** dialog box, type **C:\HowTos\Itineraries\NewBindingKeySearch** in the **File name** box, and then click **Save**.</span></span>  
+    4.  <span data-ttu-id="97666-199">**XML ファイルの**ダイアログ ボックスに「 **C:\HowTos\Itineraries\NewBindingKeySearch**で、**ファイル名**ボックスをクリック**保存**.</span><span class="sxs-lookup"><span data-stu-id="97666-199">In the **Select XML File** dialog box, type **C:\HowTos\Itineraries\NewBindingKeySearch** in the **File name** box, and then click **Save**.</span></span>  
 
         > [!NOTE]
-        >  <span data-ttu-id="ce31d-200">この手順では、旅行プランを XML としてローカル ファイルの場所にエクスポートすることができます。</span><span class="sxs-lookup"><span data-stu-id="ce31d-200">This step enables you to export the itinerary as XML to a local file location.</span></span> <span data-ttu-id="ce31d-201">行程データベースの代わりにスケジュールをローカル ファイルの場所にエクスポートして、ESB のテスト用クライアント アプリケーションを使用してスケジュールのテストが可能です。</span><span class="sxs-lookup"><span data-stu-id="ce31d-201">By exporting an itinerary to a local file location, instead of to the itinerary database, enables testing of the itinerary using the ESB Test Client application.</span></span> <span data-ttu-id="ce31d-202">この操作方法に関するトピックの後半には、このプロセスを完了します。</span><span class="sxs-lookup"><span data-stu-id="ce31d-202">You will complete this process later in this How-to topic.</span></span>  
+        >  <span data-ttu-id="97666-200">この手順では、旅行プランを XML としてローカル ファイルの場所にエクスポートすることができます。</span><span class="sxs-lookup"><span data-stu-id="97666-200">This step enables you to export the itinerary as XML to a local file location.</span></span> <span data-ttu-id="97666-201">行程データベースの代わりにスケジュールをローカル ファイルの場所にエクスポートして、ESB のテスト用クライアント アプリケーションを使用してスケジュールのテストが可能です。</span><span class="sxs-lookup"><span data-stu-id="97666-201">By exporting an itinerary to a local file location, instead of to the itinerary database, enables testing of the itinerary using the ESB Test Client application.</span></span> <span data-ttu-id="97666-202">この操作方法に関するトピックの後半には、このプロセスを完了します。</span><span class="sxs-lookup"><span data-stu-id="97666-202">You will complete this process later in this How-to topic.</span></span>  
 
-#### <a name="to-define-the-structure-of-the-itinerary"></a><span data-ttu-id="ce31d-203">旅行プランの構造を定義するには</span><span class="sxs-lookup"><span data-stu-id="ce31d-203">To define the structure of the itinerary</span></span>  
+#### <a name="to-define-the-structure-of-the-itinerary"></a><span data-ttu-id="97666-203">旅行プランの構造を定義するには</span><span class="sxs-lookup"><span data-stu-id="97666-203">To define the structure of the itinerary</span></span>  
 
-1.  <span data-ttu-id="ce31d-204">ツールボックスからドラッグ、**入口**デザイン サーフェイスにモデル要素。</span><span class="sxs-lookup"><span data-stu-id="ce31d-204">From the Toolbox, drag an **On-Ramp** model element to the design surface.</span></span> <span data-ttu-id="ce31d-205">**OnRamp1**プロパティ ウィンドウで、次のプロパティを構成します。</span><span class="sxs-lookup"><span data-stu-id="ce31d-205">In the **OnRamp1** Properties window, configure the following properties:</span></span>  
+1.  <span data-ttu-id="97666-204">ツールボックスからドラッグ、**入口**デザイン サーフェイスにモデル要素。</span><span class="sxs-lookup"><span data-stu-id="97666-204">From the Toolbox, drag an **On-Ramp** model element to the design surface.</span></span> <span data-ttu-id="97666-205">**OnRamp1**プロパティ ウィンドウで、次のプロパティを構成します。</span><span class="sxs-lookup"><span data-stu-id="97666-205">In the **OnRamp1** Properties window, configure the following properties:</span></span>  
 
-    1.  <span data-ttu-id="ce31d-206">をクリックして、**名前**プロパティ、および入力**ReceiveNAOrder**します。</span><span class="sxs-lookup"><span data-stu-id="ce31d-206">Click the **Name** property, and then type **ReceiveNAOrder**.</span></span>  
+    1.  <span data-ttu-id="97666-206">をクリックして、**名前**プロパティ、および入力**ReceiveNAOrder**します。</span><span class="sxs-lookup"><span data-stu-id="97666-206">Click the **Name** property, and then type **ReceiveNAOrder**.</span></span>  
 
-    2.  <span data-ttu-id="ce31d-207">**エクステンダー**ドロップダウン リストでは、をクリックして**入口 ESB エクステンダー**します。</span><span class="sxs-lookup"><span data-stu-id="ce31d-207">In the **Extender** drop-down list, click **On-Ramp ESB Extender**.</span></span>  
+    2.  <span data-ttu-id="97666-207">**エクステンダー**ドロップダウン リストでは、をクリックして**入口 ESB エクステンダー**します。</span><span class="sxs-lookup"><span data-stu-id="97666-207">In the **Extender** drop-down list, click **On-Ramp ESB Extender**.</span></span>  
 
-    3.  <span data-ttu-id="ce31d-208">**BizTalk アプリケーション**ドロップダウン リストでは、をクリックして**Microsoft.Practices.ESB**します。</span><span class="sxs-lookup"><span data-stu-id="ce31d-208">In the **BizTalk Application** drop-down list, click **Microsoft.Practices.ESB**.</span></span>  
+    3.  <span data-ttu-id="97666-208">**BizTalk アプリケーション**ドロップダウン リストでは、をクリックして**Microsoft.Practices.ESB**します。</span><span class="sxs-lookup"><span data-stu-id="97666-208">In the **BizTalk Application** drop-down list, click **Microsoft.Practices.ESB**.</span></span>  
 
-    4.  <span data-ttu-id="ce31d-209">**受信ポート**ドロップダウン リストでは、をクリックして**OnRamp.Itinerary.Response**します。</span><span class="sxs-lookup"><span data-stu-id="ce31d-209">In the **Receive Port** drop-down list, click **OnRamp.Itinerary.Response**.</span></span>  
+    4.  <span data-ttu-id="97666-209">**受信ポート**ドロップダウン リストでは、をクリックして**OnRamp.Itinerary.Response**します。</span><span class="sxs-lookup"><span data-stu-id="97666-209">In the **Receive Port** drop-down list, click **OnRamp.Itinerary.Response**.</span></span>  
 
-2.  <span data-ttu-id="ce31d-210">ツールボックスからドラッグして、**スケジュール サービス**デザイン サーフェイスにモデル要素。</span><span class="sxs-lookup"><span data-stu-id="ce31d-210">From the Toolbox, drag an **Itinerary Service** model element to the design surface.</span></span> <span data-ttu-id="ce31d-211">**ItineraryService1**プロパティ ウィンドウで、次のプロパティを構成します。</span><span class="sxs-lookup"><span data-stu-id="ce31d-211">In the **ItineraryService1** Properties window, configure the following properties:</span></span>  
+2.  <span data-ttu-id="97666-210">ツールボックスからドラッグして、**スケジュール サービス**デザイン サーフェイスにモデル要素。</span><span class="sxs-lookup"><span data-stu-id="97666-210">From the Toolbox, drag an **Itinerary Service** model element to the design surface.</span></span> <span data-ttu-id="97666-211">**ItineraryService1**プロパティ ウィンドウで、次のプロパティを構成します。</span><span class="sxs-lookup"><span data-stu-id="97666-211">In the **ItineraryService1** Properties window, configure the following properties:</span></span>  
 
-    1.  <span data-ttu-id="ce31d-212">をクリックして、**名前**プロパティ、および入力**TransformNAOrder**します。</span><span class="sxs-lookup"><span data-stu-id="ce31d-212">Click the **Name** property, and then type **TransformNAOrder**.</span></span>  
+    1.  <span data-ttu-id="97666-212">をクリックして、**名前**プロパティ、および入力**TransformNAOrder**します。</span><span class="sxs-lookup"><span data-stu-id="97666-212">Click the **Name** property, and then type **TransformNAOrder**.</span></span>  
 
-    2.  <span data-ttu-id="ce31d-213">**行程サービス エクステンダー**ドロップダウン リストでは、をクリックして**エクステンダーのメッセージング**します。</span><span class="sxs-lookup"><span data-stu-id="ce31d-213">In the **Itinerary Service Extender** drop-down list, click **Messaging Extender**.</span></span>  
+    2.  <span data-ttu-id="97666-213">**行程サービス エクステンダー**ドロップダウン リストでは、をクリックして**エクステンダーのメッセージング**します。</span><span class="sxs-lookup"><span data-stu-id="97666-213">In the **Itinerary Service Extender** drop-down list, click **Messaging Extender**.</span></span>  
 
-    3.  <span data-ttu-id="ce31d-214">**コンテナー**ドロップダウン リストで、展開**ReceiveNAOrder**、 をクリックし、**受信ハンドラー**。</span><span class="sxs-lookup"><span data-stu-id="ce31d-214">In the **Container** drop-down list, expand **ReceiveNAOrder**, and then click **Receive Handlers**.</span></span>  
+    3.  <span data-ttu-id="97666-214">**コンテナー**ドロップダウン リストで、展開**ReceiveNAOrder**、 をクリックし、**受信ハンドラー**。</span><span class="sxs-lookup"><span data-stu-id="97666-214">In the **Container** drop-down list, expand **ReceiveNAOrder**, and then click **Receive Handlers**.</span></span>  
 
-    4.  <span data-ttu-id="ce31d-215">**サービス名**ドロップダウン リストでは、をクリックして**Microsoft.Practices.ESB.Services.Transform**します。</span><span class="sxs-lookup"><span data-stu-id="ce31d-215">In the **Service Name** drop-down list, click **Microsoft.Practices.ESB.Services.Transform**.</span></span>  
+    4.  <span data-ttu-id="97666-215">**サービス名**ドロップダウン リストでは、をクリックして**Microsoft.Practices.ESB.Services.Transform**します。</span><span class="sxs-lookup"><span data-stu-id="97666-215">In the **Service Name** drop-down list, click **Microsoft.Practices.ESB.Services.Transform**.</span></span>  
 
-3.  <span data-ttu-id="ce31d-216">右クリックし、**リゾルバー**のコレクション、 **TransformNAOrder**モデル要素をクリックして**新しいリゾルバーを追加**します。</span><span class="sxs-lookup"><span data-stu-id="ce31d-216">Right-click the **Resolver** collection of the **TransformNAOrder** model element, and then click **Add new Resolver**.</span></span> <span data-ttu-id="ce31d-217">**Resolver1**プロパティ ウィンドウで、次のプロパティを構成します。</span><span class="sxs-lookup"><span data-stu-id="ce31d-217">In the **Resolver1** Properties window, configure the following properties:</span></span>  
+3.  <span data-ttu-id="97666-216">右クリックし、**リゾルバー**のコレクション、 **TransformNAOrder**モデル要素をクリックして**新しいリゾルバーを追加**します。</span><span class="sxs-lookup"><span data-stu-id="97666-216">Right-click the **Resolver** collection of the **TransformNAOrder** model element, and then click **Add new Resolver**.</span></span> <span data-ttu-id="97666-217">**Resolver1**プロパティ ウィンドウで、次のプロパティを構成します。</span><span class="sxs-lookup"><span data-stu-id="97666-217">In the **Resolver1** Properties window, configure the following properties:</span></span>  
 
-    1.  <span data-ttu-id="ce31d-218">をクリックして、**名前**プロパティ、および入力**NAOrder_to_CNOrder**します。</span><span class="sxs-lookup"><span data-stu-id="ce31d-218">Click the **Name** property, and then type **NAOrder_to_CNOrder**.</span></span>  
+    1.  <span data-ttu-id="97666-218">をクリックして、**名前**プロパティ、および入力**NAOrder_to_CNOrder**します。</span><span class="sxs-lookup"><span data-stu-id="97666-218">Click the **Name** property, and then type **NAOrder_to_CNOrder**.</span></span>  
 
-    2.  <span data-ttu-id="ce31d-219">**リゾルバーの実装**ドロップダウン リストでは、をクリックして**静的な競合回避モジュール拡張**します。</span><span class="sxs-lookup"><span data-stu-id="ce31d-219">In the **Resolver Implementation** drop-down list, click **Static Resolver Extension**.</span></span>  
+    2.  <span data-ttu-id="97666-219">**リゾルバーの実装**ドロップダウン リストでは、をクリックして**静的な競合回避モジュール拡張**します。</span><span class="sxs-lookup"><span data-stu-id="97666-219">In the **Resolver Implementation** drop-down list, click **Static Resolver Extension**.</span></span>  
 
-    3.  <span data-ttu-id="ce31d-220">**型の変換**ドロップダウン リストでは、をクリックして**GlobalBank.ESB.DynamicResolution.Transforms.SubmitOrderRequestNA_To_SubmitOrderRequestCN**します。</span><span class="sxs-lookup"><span data-stu-id="ce31d-220">In the **Transform Type** drop-down list, click **GlobalBank.ESB.DynamicResolution.Transforms.SubmitOrderRequestNA_To_SubmitOrderRequestCN**.</span></span>  
+    3.  <span data-ttu-id="97666-220">**型の変換**ドロップダウン リストでは、をクリックして**GlobalBank.ESB.DynamicResolution.Transforms.SubmitOrderRequestNA_To_SubmitOrderRequestCN**します。</span><span class="sxs-lookup"><span data-stu-id="97666-220">In the **Transform Type** drop-down list, click **GlobalBank.ESB.DynamicResolution.Transforms.SubmitOrderRequestNA_To_SubmitOrderRequestCN**.</span></span>  
 
-4.  <span data-ttu-id="ce31d-221">ツールボックス、**コネクタ**します。</span><span class="sxs-lookup"><span data-stu-id="ce31d-221">In the Toolbox, click **Connector**.</span></span> <span data-ttu-id="ce31d-222">接続をドラッグして、 **ReceiveNAOrder**モデル要素に、 **TransformNAOrder**モデル要素。</span><span class="sxs-lookup"><span data-stu-id="ce31d-222">Drag a connection from the **ReceiveNAOrder** model element to the **TransformNAOrder** model element.</span></span>  
+4.  <span data-ttu-id="97666-221">ツールボックス、**コネクタ**します。</span><span class="sxs-lookup"><span data-stu-id="97666-221">In the Toolbox, click **Connector**.</span></span> <span data-ttu-id="97666-222">接続をドラッグして、 **ReceiveNAOrder**モデル要素に、 **TransformNAOrder**モデル要素。</span><span class="sxs-lookup"><span data-stu-id="97666-222">Drag a connection from the **ReceiveNAOrder** model element to the **TransformNAOrder** model element.</span></span>  
 
-5.  <span data-ttu-id="ce31d-223">ツールボックスからドラッグして、**スケジュール サービス**デザイン サーフェイスにモデル要素。</span><span class="sxs-lookup"><span data-stu-id="ce31d-223">From the Toolbox, drag an **Itinerary Service** model element to the design surface.</span></span> <span data-ttu-id="ce31d-224">**ItineraryService1**プロパティ ウィンドウで、次のプロパティを構成します。</span><span class="sxs-lookup"><span data-stu-id="ce31d-224">In the **ItineraryService1** Properties window, configure the following properties:</span></span>  
+5.  <span data-ttu-id="97666-223">ツールボックスからドラッグして、**スケジュール サービス**デザイン サーフェイスにモデル要素。</span><span class="sxs-lookup"><span data-stu-id="97666-223">From the Toolbox, drag an **Itinerary Service** model element to the design surface.</span></span> <span data-ttu-id="97666-224">**ItineraryService1**プロパティ ウィンドウで、次のプロパティを構成します。</span><span class="sxs-lookup"><span data-stu-id="97666-224">In the **ItineraryService1** Properties window, configure the following properties:</span></span>  
 
-    1.  <span data-ttu-id="ce31d-225">をクリックして、**名前**プロパティ、および入力**BindingKeyRoute**します。</span><span class="sxs-lookup"><span data-stu-id="ce31d-225">Click the **Name** property, and then type **BindingKeyRoute**.</span></span>  
+    1.  <span data-ttu-id="97666-225">をクリックして、**名前**プロパティ、および入力**BindingKeyRoute**します。</span><span class="sxs-lookup"><span data-stu-id="97666-225">Click the **Name** property, and then type **BindingKeyRoute**.</span></span>  
 
-    2.  <span data-ttu-id="ce31d-226">**行程サービス エクステンダー**ドロップダウン リストでは、をクリックして**エクステンダーのメッセージング**します。</span><span class="sxs-lookup"><span data-stu-id="ce31d-226">In the **Itinerary Service Extender** drop-down list, click **Messaging Extender**.</span></span>  
+    2.  <span data-ttu-id="97666-226">**行程サービス エクステンダー**ドロップダウン リストでは、をクリックして**エクステンダーのメッセージング**します。</span><span class="sxs-lookup"><span data-stu-id="97666-226">In the **Itinerary Service Extender** drop-down list, click **Messaging Extender**.</span></span>  
 
-    3.  <span data-ttu-id="ce31d-227">**コンテナー**ドロップダウン リストで、展開**ReceiveNAOrder**、 をクリックし、**受信ハンドラー**。</span><span class="sxs-lookup"><span data-stu-id="ce31d-227">In the **Container** drop-down list, expand **ReceiveNAOrder**, and then click **Receive Handlers**.</span></span>  
+    3.  <span data-ttu-id="97666-227">**コンテナー**ドロップダウン リストで、展開**ReceiveNAOrder**、 をクリックし、**受信ハンドラー**。</span><span class="sxs-lookup"><span data-stu-id="97666-227">In the **Container** drop-down list, expand **ReceiveNAOrder**, and then click **Receive Handlers**.</span></span>  
 
-    4.  <span data-ttu-id="ce31d-228">**サービス名**ドロップダウン リストでは、をクリックして**Microsoft.Practices.ESB.Services.Routing**します。</span><span class="sxs-lookup"><span data-stu-id="ce31d-228">In the **Service Name** drop-down list, click **Microsoft.Practices.ESB.Services.Routing**.</span></span>  
+    4.  <span data-ttu-id="97666-228">**サービス名**ドロップダウン リストでは、をクリックして**Microsoft.Practices.ESB.Services.Routing**します。</span><span class="sxs-lookup"><span data-stu-id="97666-228">In the **Service Name** drop-down list, click **Microsoft.Practices.ESB.Services.Routing**.</span></span>  
 
-6.  <span data-ttu-id="ce31d-229">右クリックし、**リゾルバー**のコレクション、 **BindingKeyRoute**モデル要素をクリックして**新しいリゾルバーを追加**します。</span><span class="sxs-lookup"><span data-stu-id="ce31d-229">Right-click the **Resolver** collection of the **BindingKeyRoute** model element, and then click **Add new Resolver**.</span></span> <span data-ttu-id="ce31d-230">**Resolver1**プロパティ ウィンドウで、次のプロパティを構成します。</span><span class="sxs-lookup"><span data-stu-id="ce31d-230">In the **Resolver1** Properties window, configure the following properties:</span></span>  
+6.  <span data-ttu-id="97666-229">右クリックし、**リゾルバー**のコレクション、 **BindingKeyRoute**モデル要素をクリックして**新しいリゾルバーを追加**します。</span><span class="sxs-lookup"><span data-stu-id="97666-229">Right-click the **Resolver** collection of the **BindingKeyRoute** model element, and then click **Add new Resolver**.</span></span> <span data-ttu-id="97666-230">**Resolver1**プロパティ ウィンドウで、次のプロパティを構成します。</span><span class="sxs-lookup"><span data-stu-id="97666-230">In the **Resolver1** Properties window, configure the following properties:</span></span>  
 
-    1.  <span data-ttu-id="ce31d-231">をクリックして、**名前**プロパティ、および入力**BindingKeySearch**します。</span><span class="sxs-lookup"><span data-stu-id="ce31d-231">Click the **Name** property, and then type **BindingKeySearch**.</span></span>  
+    1.  <span data-ttu-id="97666-231">をクリックして、**名前**プロパティ、および入力**BindingKeySearch**します。</span><span class="sxs-lookup"><span data-stu-id="97666-231">Click the **Name** property, and then type **BindingKeySearch**.</span></span>  
 
-    2.  <span data-ttu-id="ce31d-232">**リゾルバーの実装**ドロップダウン リストでは、をクリックして**Uddi3 競合回避モジュールの拡張機能**します。</span><span class="sxs-lookup"><span data-stu-id="ce31d-232">In the **Resolver Implementation** drop-down list, click **Uddi3 Resolver Extension**.</span></span>  
+    2.  <span data-ttu-id="97666-232">**リゾルバーの実装**ドロップダウン リストでは、をクリックして**Uddi3 競合回避モジュールの拡張機能**します。</span><span class="sxs-lookup"><span data-stu-id="97666-232">In the **Resolver Implementation** drop-down list, click **Uddi3 Resolver Extension**.</span></span>  
 
-    3.  <span data-ttu-id="ce31d-233">**リゾルバー モニカー**ドロップダウン リストでは、をクリックして**UDDI3**します。</span><span class="sxs-lookup"><span data-stu-id="ce31d-233">In the **Resolver Moniker** drop-down list, click **UDDI3**.</span></span>  
+    3.  <span data-ttu-id="97666-233">**リゾルバー モニカー**ドロップダウン リストでは、をクリックして**UDDI3**します。</span><span class="sxs-lookup"><span data-stu-id="97666-233">In the **Resolver Moniker** drop-down list, click **UDDI3**.</span></span>  
 
-    4.  <span data-ttu-id="ce31d-234">をクリックして、**バインド キー**プロパティ、および入力**uddi:esb:newposervicebinding**します。</span><span class="sxs-lookup"><span data-stu-id="ce31d-234">Click the **Binding key** property, and then type **uddi:esb:newposervicebinding**.</span></span> <span data-ttu-id="ce31d-235">キーの値を調べるには、 http://localhost/ESB.CanadianServices/SubmitPOService.asmx で、UDDI サービスを詳細 をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ce31d-235">To find the key value, click the http://localhost/ESB.CanadianServices/SubmitPOService.asmx service in UDDI, and then click More Details.</span></span>  
+    4.  <span data-ttu-id="97666-234">をクリックして、**バインド キー**プロパティ、および入力**uddi:esb:newposervicebinding**します。</span><span class="sxs-lookup"><span data-stu-id="97666-234">Click the **Binding key** property, and then type **uddi:esb:newposervicebinding**.</span></span> <span data-ttu-id="97666-235">キーの値を調べるには、 http://localhost/ESB.CanadianServices/SubmitPOService.asmx で、UDDI サービスを詳細 をクリックします。</span><span class="sxs-lookup"><span data-stu-id="97666-235">To find the key value, click the http://localhost/ESB.CanadianServices/SubmitPOService.asmx service in UDDI, and then click More Details.</span></span>  
 
-7.  <span data-ttu-id="ce31d-236">右クリックし、 **BindingKeySearch**リゾルバー、およびクリック**テスト構成の競合回避モジュール**します。</span><span class="sxs-lookup"><span data-stu-id="ce31d-236">Right-click the **BindingKeySearch** resolver, and then click **Test Resolver Configuration**.</span></span>  
-
-    > [!NOTE]
-    >  <span data-ttu-id="ce31d-237">出力ウィンドウに表示される出力を確認します。</span><span class="sxs-lookup"><span data-stu-id="ce31d-237">Verify the output displayed in the Output window.</span></span>  
-
-8.  <span data-ttu-id="ce31d-238">ツールボックス、**コネクタ**します。</span><span class="sxs-lookup"><span data-stu-id="ce31d-238">In the Toolbox, click **Connector**.</span></span> <span data-ttu-id="ce31d-239">接続をドラッグして、 **TransformNAOrder**モデル要素に、 **BindingKeyRoute**モデル要素。</span><span class="sxs-lookup"><span data-stu-id="ce31d-239">Drag a connection from the **TransformNAOrder** model element to the **BindingKeyRoute** model element.</span></span>  
-
-9. <span data-ttu-id="ce31d-240">ツールボックスからドラッグして、**傾斜オフ**の右側に配置し、デザイン画面に要素をモデル化し、 **BindingKeyRoute**モデル要素。</span><span class="sxs-lookup"><span data-stu-id="ce31d-240">From the Toolbox, drag an **Off-Ramp** model element to the design surface, and then place it to the right of the **BindingKeyRoute** model element.</span></span> <span data-ttu-id="ce31d-241">**OffRamp1**プロパティ ウィンドウで、次のプロパティを構成します。</span><span class="sxs-lookup"><span data-stu-id="ce31d-241">In the **OffRamp1** Properties window, configure the following properties:</span></span>  
-
-    1.  <span data-ttu-id="ce31d-242">をクリックして、**名前**プロパティ、および入力**SendCNOrder**します。</span><span class="sxs-lookup"><span data-stu-id="ce31d-242">Click the **Name** property, and then type **SendCNOrder**.</span></span>  
-
-    2.  <span data-ttu-id="ce31d-243">**エクステンダー**ドロップダウン リストでは、をクリックして**傾斜オフ ESB エクステンダー**します。</span><span class="sxs-lookup"><span data-stu-id="ce31d-243">In the **Extender** drop-down list, click **Off-Ramp ESB Extender**.</span></span>  
-
-    3.  <span data-ttu-id="ce31d-244">**BizTalk アプリケーション**ドロップダウン リストでは、をクリックして**GlobalBank.ESB**します。</span><span class="sxs-lookup"><span data-stu-id="ce31d-244">In the **BizTalk Application** drop-down list, click **GlobalBank.ESB**.</span></span>  
-
-    4.  <span data-ttu-id="ce31d-245">**送信ポート**ドロップダウン リストでは、をクリックして**DynamicResolutionSolicitResp**します。</span><span class="sxs-lookup"><span data-stu-id="ce31d-245">In the **Send Port** drop-down list, click **DynamicResolutionSolicitResp**.</span></span>  
-
-10. <span data-ttu-id="ce31d-246">ツールボックスからドラッグ、**スケジュール サービス**モデルのデザイン画面に要素との間に配置し、 **BindingKeyRoute**モデル要素と**SendCNOrder**モデル要素。</span><span class="sxs-lookup"><span data-stu-id="ce31d-246">From the Toolbox, drag an **Itinerary Service** model element to the design surface, and then place it between the **BindingKeyRoute** model element and the **SendCNOrder** model element.</span></span> <span data-ttu-id="ce31d-247">**ItineraryService1**プロパティ ウィンドウで、次のプロパティを構成します。</span><span class="sxs-lookup"><span data-stu-id="ce31d-247">In the **ItineraryService1** Properties window, configure the following properties:</span></span>  
-
-    1.  <span data-ttu-id="ce31d-248">をクリックして、**名前**プロパティ、および入力**SendPortFilter**します。</span><span class="sxs-lookup"><span data-stu-id="ce31d-248">Click the **Name** property, and then type **SendPortFilter**.</span></span>  
-
-    2.  <span data-ttu-id="ce31d-249">**行程サービス エクステンダー**ドロップダウン リストでは、をクリックして**傾斜オフ エクステンダー**。</span><span class="sxs-lookup"><span data-stu-id="ce31d-249">In the **Itinerary Service Extender** drop-down list, click **Off-Ramp Extender**.</span></span>  
-
-    3.  <span data-ttu-id="ce31d-250">**傾斜オフ**ドロップダウン リストで、展開**SendCNOrder**、順にクリックします**送信ハンドラー**します。</span><span class="sxs-lookup"><span data-stu-id="ce31d-250">In the **Off-Ramp** drop-down list, expand **SendCNOrder**, and then click **Send Handlers**.</span></span>  
-
-11. <span data-ttu-id="ce31d-251">ツールボックス、**コネクタ**します。</span><span class="sxs-lookup"><span data-stu-id="ce31d-251">In the Toolbox, click **Connector**.</span></span> <span data-ttu-id="ce31d-252">接続をドラッグして、 **BindingKeyRoute**モデル要素に、 **SendPortFilter**モデル要素。</span><span class="sxs-lookup"><span data-stu-id="ce31d-252">Drag a connection from the **BindingKeyRoute** model element to the **SendPortFilter** model element.</span></span>  
-
-12. <span data-ttu-id="ce31d-253">ツールボックス、**コネクタ**します。</span><span class="sxs-lookup"><span data-stu-id="ce31d-253">In the Toolbox, click **Connector**.</span></span> <span data-ttu-id="ce31d-254">接続をドラッグして、 **SendPortFilter**モデル要素に、 **SendNAOrder**モデル要素。</span><span class="sxs-lookup"><span data-stu-id="ce31d-254">Drag a connection from the **SendPortFilter** model element to the **SendNAOrder** model element.</span></span>  
-
-#### <a name="to-export-the-model-for-use-with-the-itinerary-test-client"></a><span data-ttu-id="ce31d-255">旅行プランのテスト クライアントで使用するモデルをエクスポートするには</span><span class="sxs-lookup"><span data-stu-id="ce31d-255">To export the model for use with the Itinerary Test Client</span></span>  
-
-1.  <span data-ttu-id="ce31d-256">Visual Studio でのデザイン画面を右クリックし、 **NewBindingKeySearch**旅行プランをクリックして**モデルのエクスポート**します。</span><span class="sxs-lookup"><span data-stu-id="ce31d-256">In Visual Studio, right-click the design surface of the **NewBindingKeySearch** itinerary, and then click **Export Model**.</span></span>  
+7.  <span data-ttu-id="97666-236">右クリックし、 **BindingKeySearch**リゾルバー、およびクリック**テスト構成の競合回避モジュール**します。</span><span class="sxs-lookup"><span data-stu-id="97666-236">Right-click the **BindingKeySearch** resolver, and then click **Test Resolver Configuration**.</span></span>  
 
     > [!NOTE]
-    >  <span data-ttu-id="ce31d-257">旅行プランの XML バージョンは、Visual Studio で開きます。</span><span class="sxs-lookup"><span data-stu-id="ce31d-257">The XML version of the itinerary opens in Visual Studio.</span></span>  
+    >  <span data-ttu-id="97666-237">出力ウィンドウに表示される出力を確認します。</span><span class="sxs-lookup"><span data-stu-id="97666-237">Verify the output displayed in the Output window.</span></span>  
 
-2.  <span data-ttu-id="ce31d-258">すべてのプロジェクト成果物を保存します。</span><span class="sxs-lookup"><span data-stu-id="ce31d-258">Save all project artifacts.</span></span>  
+8.  <span data-ttu-id="97666-238">ツールボックス、**コネクタ**します。</span><span class="sxs-lookup"><span data-stu-id="97666-238">In the Toolbox, click **Connector**.</span></span> <span data-ttu-id="97666-239">接続をドラッグして、 **TransformNAOrder**モデル要素に、 **BindingKeyRoute**モデル要素。</span><span class="sxs-lookup"><span data-stu-id="97666-239">Drag a connection from the **TransformNAOrder** model element to the **BindingKeyRoute** model element.</span></span>  
 
-3.  <span data-ttu-id="ce31d-259">Windows エクスプ ローラーでは、C:\HowTos\Itineraries を参照し、旅行プラン XML (NewBindingKeySearch.xml) の作成に注意してください。</span><span class="sxs-lookup"><span data-stu-id="ce31d-259">In Windows Explorer, browse to C:\HowTos\Itineraries and notice the creation of your itinerary XML (NewBindingKeySearch.xml).</span></span>  
+9. <span data-ttu-id="97666-240">ツールボックスからドラッグして、**傾斜オフ**の右側に配置し、デザイン画面に要素をモデル化し、 **BindingKeyRoute**モデル要素。</span><span class="sxs-lookup"><span data-stu-id="97666-240">From the Toolbox, drag an **Off-Ramp** model element to the design surface, and then place it to the right of the **BindingKeyRoute** model element.</span></span> <span data-ttu-id="97666-241">**OffRamp1**プロパティ ウィンドウで、次のプロパティを構成します。</span><span class="sxs-lookup"><span data-stu-id="97666-241">In the **OffRamp1** Properties window, configure the following properties:</span></span>  
 
-#### <a name="to-test-the-itinerary"></a><span data-ttu-id="ce31d-260">旅行プランをテストするには</span><span class="sxs-lookup"><span data-stu-id="ce31d-260">To test the itinerary</span></span>  
+    1.  <span data-ttu-id="97666-242">をクリックして、**名前**プロパティ、および入力**SendCNOrder**します。</span><span class="sxs-lookup"><span data-stu-id="97666-242">Click the **Name** property, and then type **SendCNOrder**.</span></span>  
 
-1.  <span data-ttu-id="ce31d-261">中に作成されたショートカットを使用してスケジュールのテスト用クライアントのサンプル アプリケーションを開く、[開発活動の前提条件](../esb-toolkit/prerequisites-for-the-development-activities.md)(C:\HowTos\ESB します。Itinerary.Test.exe - ショートカット)。</span><span class="sxs-lookup"><span data-stu-id="ce31d-261">Open the Itinerary Test Client sample application using the shortcut created during the [Prerequisites for the Development Activities](../esb-toolkit/prerequisites-for-the-development-activities.md) (C:\HowTos\ESB.Itinerary.Test.exe - Shortcut).</span></span>  
+    2.  <span data-ttu-id="97666-243">**エクステンダー**ドロップダウン リストでは、をクリックして**傾斜オフ ESB エクステンダー**します。</span><span class="sxs-lookup"><span data-stu-id="97666-243">In the **Extender** drop-down list, click **Off-Ramp ESB Extender**.</span></span>  
 
-2.  <span data-ttu-id="ce31d-262">旅行プランのテスト クライアントで、 **Web サービス オプション**グループ、クリア、 **WCF サービスを使用して**ボックスを選び、**双方向サービス**チェック ボックスをオンします。</span><span class="sxs-lookup"><span data-stu-id="ce31d-262">In the Itinerary Test Client, in the **Web Service Options** group, clear the **Use WCF Service** box and then select the **Two-Way Service** check box.</span></span>  
+    3.  <span data-ttu-id="97666-244">**BizTalk アプリケーション**ドロップダウン リストでは、をクリックして**GlobalBank.ESB**します。</span><span class="sxs-lookup"><span data-stu-id="97666-244">In the **BizTalk Application** drop-down list, click **GlobalBank.ESB**.</span></span>  
 
-3.  <span data-ttu-id="ce31d-263">をクリックして、**ロード行程**ボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="ce31d-263">Click the **Load Itinerary** button.</span></span>  
+    4.  <span data-ttu-id="97666-245">**送信ポート**ドロップダウン リストでは、をクリックして**DynamicResolutionSolicitResp**します。</span><span class="sxs-lookup"><span data-stu-id="97666-245">In the **Send Port** drop-down list, click **DynamicResolutionSolicitResp**.</span></span>  
 
-4.  <span data-ttu-id="ce31d-264">**行程ファイルを開く** ダイアログ ボックスで、C:\HowTos\Itineraries を参照します。</span><span class="sxs-lookup"><span data-stu-id="ce31d-264">In the **Open Itinerary File** dialog box, browse to C:\HowTos\Itineraries.</span></span> <span data-ttu-id="ce31d-265">選択**NewBindingKeySearch.xml**、順にクリックします**オープン**旅行プランを読み込めません。</span><span class="sxs-lookup"><span data-stu-id="ce31d-265">Select **NewBindingKeySearch.xml**, and then click **Open** to load the itinerary.</span></span>  
+10. <span data-ttu-id="97666-246">ツールボックスからドラッグ、**スケジュール サービス**モデルのデザイン画面に要素との間に配置し、 **BindingKeyRoute**モデル要素と**SendCNOrder**モデル要素。</span><span class="sxs-lookup"><span data-stu-id="97666-246">From the Toolbox, drag an **Itinerary Service** model element to the design surface, and then place it between the **BindingKeyRoute** model element and the **SendCNOrder** model element.</span></span> <span data-ttu-id="97666-247">**ItineraryService1**プロパティ ウィンドウで、次のプロパティを構成します。</span><span class="sxs-lookup"><span data-stu-id="97666-247">In the **ItineraryService1** Properties window, configure the following properties:</span></span>  
 
-5.  <span data-ttu-id="ce31d-266">をクリックして**OK**をオフに、**旅行プランは正常に読み込まれる**メッセージ。</span><span class="sxs-lookup"><span data-stu-id="ce31d-266">Click **OK** to clear the **Itinerary Loaded Successfully** message.</span></span>  
+    1.  <span data-ttu-id="97666-248">をクリックして、**名前**プロパティ、および入力**SendPortFilter**します。</span><span class="sxs-lookup"><span data-stu-id="97666-248">Click the **Name** property, and then type **SendPortFilter**.</span></span>  
 
-6.  <span data-ttu-id="ce31d-267">旅行プランのテスト クライアントで、横にある省略記号ボタン (…) をクリックします。、**ロード メッセージ**ボックス。</span><span class="sxs-lookup"><span data-stu-id="ce31d-267">In the Itinerary Test Client, click the ellipsis button (...) next to the **Load Message** box.</span></span>  
+    2.  <span data-ttu-id="97666-249">**行程サービス エクステンダー**ドロップダウン リストでは、をクリックして**傾斜オフ エクステンダー**。</span><span class="sxs-lookup"><span data-stu-id="97666-249">In the **Itinerary Service Extender** drop-down list, click **Off-Ramp Extender**.</span></span>  
 
-7.  <span data-ttu-id="ce31d-268">**を読み込む XML ドキュメントの選択** ダイアログ ボックスで、C:\HowTos を参照します。</span><span class="sxs-lookup"><span data-stu-id="ce31d-268">In the **Select XML Document to load** dialog box, browse to C:\HowTos.</span></span> <span data-ttu-id="ce31d-269">選択**NAOrderDoc.xml**、順にクリックします**オープン**テスト メッセージを読み込めません。</span><span class="sxs-lookup"><span data-stu-id="ce31d-269">Select **NAOrderDoc.xml**, and then click **Open** to load the test message.</span></span>  
+    3.  <span data-ttu-id="97666-250">**傾斜オフ**ドロップダウン リストで、展開**SendCNOrder**、順にクリックします**送信ハンドラー**します。</span><span class="sxs-lookup"><span data-stu-id="97666-250">In the **Off-Ramp** drop-down list, expand **SendCNOrder**, and then click **Send Handlers**.</span></span>  
 
-8.  <span data-ttu-id="ce31d-270">をクリックして、**要求を提出**ボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="ce31d-270">Click the **Submit Request** button.</span></span> <span data-ttu-id="ce31d-271">テストが完了したら、クリックして**OK**表示される確認メッセージを無視します。</span><span class="sxs-lookup"><span data-stu-id="ce31d-271">When the test completes, click **OK** to dismiss the confirmation that appears.</span></span>  
+11. <span data-ttu-id="97666-251">ツールボックス、**コネクタ**します。</span><span class="sxs-lookup"><span data-stu-id="97666-251">In the Toolbox, click **Connector**.</span></span> <span data-ttu-id="97666-252">接続をドラッグして、 **BindingKeyRoute**モデル要素に、 **SendPortFilter**モデル要素。</span><span class="sxs-lookup"><span data-stu-id="97666-252">Drag a connection from the **BindingKeyRoute** model element to the **SendPortFilter** model element.</span></span>  
 
-9. <span data-ttu-id="ce31d-272">適切な応答メッセージが表示されることを確認、**結果**のテキスト ボックス、 **Itineray テスト クライアント**します。</span><span class="sxs-lookup"><span data-stu-id="ce31d-272">Verify that the correct response message appears in the **Result** text box of the **Itineray Test Client**.</span></span>  
+12. <span data-ttu-id="97666-253">ツールボックス、**コネクタ**します。</span><span class="sxs-lookup"><span data-stu-id="97666-253">In the Toolbox, click **Connector**.</span></span> <span data-ttu-id="97666-254">接続をドラッグして、 **SendPortFilter**モデル要素に、 **SendNAOrder**モデル要素。</span><span class="sxs-lookup"><span data-stu-id="97666-254">Drag a connection from the **SendPortFilter** model element to the **SendNAOrder** model element.</span></span>  
 
-## <a name="additional-resources"></a><span data-ttu-id="ce31d-273">その他のリソース</span><span class="sxs-lookup"><span data-stu-id="ce31d-273">Additional Resources</span></span>  
- <span data-ttu-id="ce31d-274">詳細については、次の関連項目を参照してください。</span><span class="sxs-lookup"><span data-stu-id="ce31d-274">For more information, see the following related topics:</span></span>  
+#### <a name="to-export-the-model-for-use-with-the-itinerary-test-client"></a><span data-ttu-id="97666-255">旅行プランのテスト クライアントで使用するモデルをエクスポートするには</span><span class="sxs-lookup"><span data-stu-id="97666-255">To export the model for use with the Itinerary Test Client</span></span>  
 
--   [<span data-ttu-id="ce31d-275">方法: UDDI バインド キー検索を利用し、サービス エンドポイントを解決する</span><span class="sxs-lookup"><span data-stu-id="ce31d-275">How to: Resolve a Service Endpoint Using a UDDI Binding Key Search</span></span>](../esb-toolkit/how-to-resolve-a-service-endpoint-using-a-uddi-binding-key-search.md)  
+1.  <span data-ttu-id="97666-256">Visual Studio でのデザイン画面を右クリックし、 **NewBindingKeySearch**旅行プランをクリックして**モデルのエクスポート**します。</span><span class="sxs-lookup"><span data-stu-id="97666-256">In Visual Studio, right-click the design surface of the **NewBindingKeySearch** itinerary, and then click **Export Model**.</span></span>  
 
--   [<span data-ttu-id="ce31d-276">方法: UDDI カテゴリ検索を利用し、サービス エンドポイントを解決する</span><span class="sxs-lookup"><span data-stu-id="ce31d-276">How to: Resolve a Service Endpoint Using a UDDI Category Search</span></span>](../esb-toolkit/how-to-resolve-a-service-endpoint-using-a-uddi-category-search.md)  
+    > [!NOTE]
+    >  <span data-ttu-id="97666-257">旅行プランの XML バージョンは、Visual Studio で開きます。</span><span class="sxs-lookup"><span data-stu-id="97666-257">The XML version of the itinerary opens in Visual Studio.</span></span>  
 
--   [<span data-ttu-id="ce31d-277">開発アクティビティ</span><span class="sxs-lookup"><span data-stu-id="ce31d-277">Development Activities</span></span>](../esb-toolkit/development-activities.md)
+2.  <span data-ttu-id="97666-258">すべてのプロジェクト成果物を保存します。</span><span class="sxs-lookup"><span data-stu-id="97666-258">Save all project artifacts.</span></span>  
+
+3.  <span data-ttu-id="97666-259">Windows エクスプ ローラーでは、C:\HowTos\Itineraries を参照し、旅行プラン XML (NewBindingKeySearch.xml) の作成に注意してください。</span><span class="sxs-lookup"><span data-stu-id="97666-259">In Windows Explorer, browse to C:\HowTos\Itineraries and notice the creation of your itinerary XML (NewBindingKeySearch.xml).</span></span>  
+
+#### <a name="to-test-the-itinerary"></a><span data-ttu-id="97666-260">旅行プランをテストするには</span><span class="sxs-lookup"><span data-stu-id="97666-260">To test the itinerary</span></span>  
+
+1.  <span data-ttu-id="97666-261">中に作成されたショートカットを使用してスケジュールのテスト用クライアントのサンプル アプリケーションを開く、[開発活動の前提条件](../esb-toolkit/prerequisites-for-the-development-activities.md)(C:\HowTos\ESB します。Itinerary.Test.exe - ショートカット)。</span><span class="sxs-lookup"><span data-stu-id="97666-261">Open the Itinerary Test Client sample application using the shortcut created during the [Prerequisites for the Development Activities](../esb-toolkit/prerequisites-for-the-development-activities.md) (C:\HowTos\ESB.Itinerary.Test.exe - Shortcut).</span></span>  
+
+2.  <span data-ttu-id="97666-262">旅行プランのテスト クライアントで、 **Web サービス オプション**グループ、クリア、 **WCF サービスを使用して**ボックスを選び、**双方向サービス**チェック ボックスをオンします。</span><span class="sxs-lookup"><span data-stu-id="97666-262">In the Itinerary Test Client, in the **Web Service Options** group, clear the **Use WCF Service** box and then select the **Two-Way Service** check box.</span></span>  
+
+3.  <span data-ttu-id="97666-263">をクリックして、**ロード行程**ボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="97666-263">Click the **Load Itinerary** button.</span></span>  
+
+4.  <span data-ttu-id="97666-264">**行程ファイルを開く** ダイアログ ボックスで、C:\HowTos\Itineraries を参照します。</span><span class="sxs-lookup"><span data-stu-id="97666-264">In the **Open Itinerary File** dialog box, browse to C:\HowTos\Itineraries.</span></span> <span data-ttu-id="97666-265">選択**NewBindingKeySearch.xml**、順にクリックします**オープン**旅行プランを読み込めません。</span><span class="sxs-lookup"><span data-stu-id="97666-265">Select **NewBindingKeySearch.xml**, and then click **Open** to load the itinerary.</span></span>  
+
+5.  <span data-ttu-id="97666-266">をクリックして**OK**をオフに、**旅行プランは正常に読み込まれる**メッセージ。</span><span class="sxs-lookup"><span data-stu-id="97666-266">Click **OK** to clear the **Itinerary Loaded Successfully** message.</span></span>  
+
+6.  <span data-ttu-id="97666-267">旅行プランのテスト クライアントで、横にある省略記号ボタン (…) をクリックします。、**ロード メッセージ**ボックス。</span><span class="sxs-lookup"><span data-stu-id="97666-267">In the Itinerary Test Client, click the ellipsis button (...) next to the **Load Message** box.</span></span>  
+
+7.  <span data-ttu-id="97666-268">**を読み込む XML ドキュメントの選択** ダイアログ ボックスで、C:\HowTos を参照します。</span><span class="sxs-lookup"><span data-stu-id="97666-268">In the **Select XML Document to load** dialog box, browse to C:\HowTos.</span></span> <span data-ttu-id="97666-269">選択**NAOrderDoc.xml**、順にクリックします**オープン**テスト メッセージを読み込めません。</span><span class="sxs-lookup"><span data-stu-id="97666-269">Select **NAOrderDoc.xml**, and then click **Open** to load the test message.</span></span>  
+
+8.  <span data-ttu-id="97666-270">をクリックして、**要求を提出**ボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="97666-270">Click the **Submit Request** button.</span></span> <span data-ttu-id="97666-271">テストが完了したら、クリックして**OK**表示される確認メッセージを無視します。</span><span class="sxs-lookup"><span data-stu-id="97666-271">When the test completes, click **OK** to dismiss the confirmation that appears.</span></span>  
+
+9. <span data-ttu-id="97666-272">適切な応答メッセージが表示されることを確認、**結果**のテキスト ボックス、 **Itineray テスト クライアント**します。</span><span class="sxs-lookup"><span data-stu-id="97666-272">Verify that the correct response message appears in the **Result** text box of the **Itineray Test Client**.</span></span>  
+
+## <a name="additional-resources"></a><span data-ttu-id="97666-273">その他のリソース</span><span class="sxs-lookup"><span data-stu-id="97666-273">Additional Resources</span></span>  
+ <span data-ttu-id="97666-274">詳細については、次の関連項目を参照してください。</span><span class="sxs-lookup"><span data-stu-id="97666-274">For more information, see the following related topics:</span></span>  
+
+-   [<span data-ttu-id="97666-275">方法: UDDI バインド キー検索を使用してサービス エンドポイントを解決するには</span><span class="sxs-lookup"><span data-stu-id="97666-275">How to: Resolve a Service Endpoint Using a UDDI Binding Key Search</span></span>](../esb-toolkit/how-to-resolve-a-service-endpoint-using-a-uddi-binding-key-search.md)  
+
+-   [<span data-ttu-id="97666-276">方法: UDDI カテゴリ検索を使用してサービス エンドポイントを解決するには</span><span class="sxs-lookup"><span data-stu-id="97666-276">How to: Resolve a Service Endpoint Using a UDDI Category Search</span></span>](../esb-toolkit/how-to-resolve-a-service-endpoint-using-a-uddi-category-search.md)  
+
+-   [<span data-ttu-id="97666-277">開発アクティビティ</span><span class="sxs-lookup"><span data-stu-id="97666-277">Development Activities</span></span>](../esb-toolkit/development-activities.md)

@@ -1,5 +1,5 @@
 ---
-title: メッセージング エンジン |Microsoft ドキュメント
+title: メッセージング エンジン |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,24 +14,24 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a4419c1b6265e57b035f7cd690799a92de357446
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 02f0a76df0073d7791a0a284d2d3053caae11df6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22278802"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65247239"
 ---
-# <a name="the-messaging-engine"></a><span data-ttu-id="9d9fc-102">メッセージング エンジン</span><span class="sxs-lookup"><span data-stu-id="9d9fc-102">The Messaging Engine</span></span>
-<span data-ttu-id="9d9fc-103">このセクションでは、コンポーネントと、Microsoft BizTalk Server メッセージング エンジンを構成するアーキテクチャについて説明します。</span><span class="sxs-lookup"><span data-stu-id="9d9fc-103">This section discusses the components and architecture that comprise the Microsoft BizTalk Server Messaging engine.</span></span>  
+# <a name="the-messaging-engine"></a><span data-ttu-id="dba8e-102">メッセージング エンジン</span><span class="sxs-lookup"><span data-stu-id="dba8e-102">The Messaging Engine</span></span>
+<span data-ttu-id="dba8e-103">このセクションでは、コンポーネントと Microsoft BizTalk Server メッセージング エンジンを構成するアーキテクチャについて説明します。</span><span class="sxs-lookup"><span data-stu-id="dba8e-103">This section discusses the components and architecture that comprise the Microsoft BizTalk Server Messaging engine.</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="9d9fc-104">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="9d9fc-104">In This Section</span></span>  
+## <a name="in-this-section"></a><span data-ttu-id="dba8e-104">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="dba8e-104">In This Section</span></span>  
   
--   [<span data-ttu-id="9d9fc-105">パブリッシュ/サブスクライブ アーキテクチャ</span><span class="sxs-lookup"><span data-stu-id="9d9fc-105">Publish and Subscribe Architecture</span></span>](../core/publish-and-subscribe-architecture.md)  
+-   [<span data-ttu-id="dba8e-105">パブリッシュ/サブスクライブ アーキテクチャ</span><span class="sxs-lookup"><span data-stu-id="dba8e-105">Publish and Subscribe Architecture</span></span>](../core/publish-and-subscribe-architecture.md)  
   
--   [<span data-ttu-id="9d9fc-106">BizTalk Server でのデータベース</span><span class="sxs-lookup"><span data-stu-id="9d9fc-106">Databases in BizTalk Server</span></span>](../core/databases-in-biztalk-server.md)  
+-   [<span data-ttu-id="dba8e-106">BizTalk Server のデータベース</span><span class="sxs-lookup"><span data-stu-id="dba8e-106">Databases in BizTalk Server</span></span>](../core/databases-in-biztalk-server.md)  
   
--   [<span data-ttu-id="9d9fc-107">データベース構造とジョブ</span><span class="sxs-lookup"><span data-stu-id="9d9fc-107">Database Structure and Jobs</span></span>](../core/database-structure-and-jobs.md)  
+-   [<span data-ttu-id="dba8e-107">データベース構造とジョブ</span><span class="sxs-lookup"><span data-stu-id="dba8e-107">Database Structure and Jobs</span></span>](../core/database-structure-and-jobs.md)  
   
--   [<span data-ttu-id="9d9fc-108">メッセージ ボックス データベース</span><span class="sxs-lookup"><span data-stu-id="9d9fc-108">The MessageBox Database</span></span>](../core/the-messagebox-database.md)  
+-   [<span data-ttu-id="dba8e-108">メッセージ ボックス データベース</span><span class="sxs-lookup"><span data-stu-id="dba8e-108">The MessageBox Database</span></span>](../core/the-messagebox-database.md)  
   
--   [<span data-ttu-id="9d9fc-109">バッチ処理</span><span class="sxs-lookup"><span data-stu-id="9d9fc-109">Batching</span></span>](../core/batching.md)
+-   [<span data-ttu-id="dba8e-109">バッチ処理</span><span class="sxs-lookup"><span data-stu-id="dba8e-109">Batching</span></span>](../core/batching.md)

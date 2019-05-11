@@ -1,5 +1,5 @@
 ---
-title: MQSeries アダプター |Microsoft ドキュメント
+title: MQSeries アダプター |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,30 +14,30 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8be4fc83906a46af17924ddfe440b5bc1c1fd650
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8978f3ace91b40f48d0983e8ce0b7183082c4bb2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22263178"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65264519"
 ---
-# <a name="mqseries-adapter"></a><span data-ttu-id="b17e3-102">MQSeries アダプタ</span><span class="sxs-lookup"><span data-stu-id="b17e3-102">MQSeries Adapter</span></span>
-<span data-ttu-id="b17e3-103">MQSeries アダプタは、Microsoft BizTalk Server と IBM MQSeries サーバーの間の仲介役として機能します。これにより、ビジネス プロセスの作成時にすべてのオプションを使用できます。</span><span class="sxs-lookup"><span data-stu-id="b17e3-103">The MQSeries adapter serves as a bridge between Microsoft BizTalk Server and IBM MQSeries servers, enabling you to use a full range of options in creating your business processes.</span></span>  
+# <a name="mqseries-adapter"></a><span data-ttu-id="6d42d-102">MQSeries アダプター</span><span class="sxs-lookup"><span data-stu-id="6d42d-102">MQSeries Adapter</span></span>
+<span data-ttu-id="6d42d-103">MQSeries アダプターは、広範なビジネス プロセスを作成するオプションを使用できるように、Microsoft BizTalk Server と IBM MQSeries サーバー間のブリッジとして機能します。</span><span class="sxs-lookup"><span data-stu-id="6d42d-103">The MQSeries adapter serves as a bridge between Microsoft BizTalk Server and IBM MQSeries servers, enabling you to use a full range of options in creating your business processes.</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="b17e3-104">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="b17e3-104">In This Section</span></span>  
+## <a name="in-this-section"></a><span data-ttu-id="6d42d-104">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="6d42d-104">In This Section</span></span>  
   
--   [<span data-ttu-id="b17e3-105">MQSeries アダプターとは何ですか。</span><span class="sxs-lookup"><span data-stu-id="b17e3-105">What Is the MQSeries Adapter?</span></span>](../core/what-is-the-mqseries-adapter.md)  
+-   [<span data-ttu-id="6d42d-105">MQSeries アダプターとは</span><span class="sxs-lookup"><span data-stu-id="6d42d-105">What Is the MQSeries Adapter?</span></span>](../core/what-is-the-mqseries-adapter.md)  
   
--   [<span data-ttu-id="b17e3-106">MQSeries アダプターの構成</span><span class="sxs-lookup"><span data-stu-id="b17e3-106">Configuring the MQSeries Adapter</span></span>](../core/configuring-the-mqseries-adapter.md)  
+-   [<span data-ttu-id="6d42d-106">MQSeries アダプターの構成</span><span class="sxs-lookup"><span data-stu-id="6d42d-106">Configuring the MQSeries Adapter</span></span>](../core/configuring-the-mqseries-adapter.md)  
   
--   [<span data-ttu-id="b17e3-107">チュートリアル: MQSeries アダプターを使用する BizTalk アプリケーションの作成</span><span class="sxs-lookup"><span data-stu-id="b17e3-107">Walkthrough: Creating a BizTalk Application That Uses the MQSeries Adapter</span></span>](../core/walkthrough-creating-a-biztalk-application-that-uses-the-mqseries-adapter.md)  
+-   [<span data-ttu-id="6d42d-107">チュートリアル: MQSeries アダプターを使用する BizTalk アプリケーションの作成</span><span class="sxs-lookup"><span data-stu-id="6d42d-107">Walkthrough: Creating a BizTalk Application That Uses the MQSeries Adapter</span></span>](../core/walkthrough-creating-a-biztalk-application-that-uses-the-mqseries-adapter.md)  
   
--   [<span data-ttu-id="b17e3-108">MQSeries アダプタのバッチ処理とトランザクション処理</span><span class="sxs-lookup"><span data-stu-id="b17e3-108">MQSeries Adapter Batching and Transaction Handling</span></span>](../core/mqseries-adapter-batching-and-transaction-handling.md)  
+-   [<span data-ttu-id="6d42d-108">MQSeries アダプターのバッチ処理とトランザクション処理</span><span class="sxs-lookup"><span data-stu-id="6d42d-108">MQSeries Adapter Batching and Transaction Handling</span></span>](../core/mqseries-adapter-batching-and-transaction-handling.md)  
   
--   [<span data-ttu-id="b17e3-109">要求/応答を使用してメッセージを相互に関連付ける</span><span class="sxs-lookup"><span data-stu-id="b17e3-109">Correlating Messages Using Request-Reply</span></span>](../core/correlating-messages-using-request-reply.md)  
+-   [<span data-ttu-id="6d42d-109">要求 - 応答を使用したメッセージの関連付け</span><span class="sxs-lookup"><span data-stu-id="6d42d-109">Correlating Messages Using Request-Reply</span></span>](../core/correlating-messages-using-request-reply.md)  
   
--   [<span data-ttu-id="b17e3-110">MQSeries アダプターのカスタム ヘッダー</span><span class="sxs-lookup"><span data-stu-id="b17e3-110">MQSeries Adapter Custom Headers</span></span>](../core/mqseries-adapter-custom-headers.md)  
+-   [<span data-ttu-id="6d42d-110">MQSeries アダプターのカスタム ヘッダー</span><span class="sxs-lookup"><span data-stu-id="6d42d-110">MQSeries Adapter Custom Headers</span></span>](../core/mqseries-adapter-custom-headers.md)  
   
--   [<span data-ttu-id="b17e3-111">トレース ツールを使用して MQSeries アダプターのエラーの分析</span><span class="sxs-lookup"><span data-stu-id="b17e3-111">Analyzing MQSeries Adapter Errors with the Trace Tools</span></span>](../core/analyzing-mqseries-adapter-errors-with-the-trace-tools.md)  
+-   [<span data-ttu-id="6d42d-111">トレース ツールを使用した MQSeries アダプターのエラーの分析</span><span class="sxs-lookup"><span data-stu-id="6d42d-111">Analyzing MQSeries Adapter Errors with the Trace Tools</span></span>](../core/analyzing-mqseries-adapter-errors-with-the-trace-tools.md)  
   
--   [<span data-ttu-id="b17e3-112">MQSeries アダプタでメッセージの配信を順序付け</span><span class="sxs-lookup"><span data-stu-id="b17e3-112">Ordered Delivery of Messages with the MQSeries Adapter</span></span>](../core/ordered-delivery-of-messages-with-the-mqseries-adapter.md)
+-   [<span data-ttu-id="6d42d-112">MQSeries アダプターを使用したメッセージの順次配送</span><span class="sxs-lookup"><span data-stu-id="6d42d-112">Ordered Delivery of Messages with the MQSeries Adapter</span></span>](../core/ordered-delivery-of-messages-with-the-mqseries-adapter.md)

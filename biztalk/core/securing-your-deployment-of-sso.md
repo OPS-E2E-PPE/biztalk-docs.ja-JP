@@ -1,5 +1,5 @@
 ---
-title: SSO 展開のセキュリティで保護する |Microsoft ドキュメント
+title: SSO 展開のセキュリティで保護する |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,18 +15,18 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f7727ba7e93a14f6107856fb05cedaf4b8f0a4eb
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3eb05f95221567dc41605801bae1f1b499cc2ade
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22269474"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65251191"
 ---
-# <a name="securing-your-deployment-of-sso"></a><span data-ttu-id="a5804-102">SSO 展開のセキュリティで保護します。</span><span class="sxs-lookup"><span data-stu-id="a5804-102">Securing Your Deployment of SSO</span></span>
-<span data-ttu-id="a5804-103">このセクションでは、エンタープライズ シングル サインオンの展開をセキュリティで保護するための一般的なシナリオを紹介します。</span><span class="sxs-lookup"><span data-stu-id="a5804-103">This section outlines a typical scenario for secure deployment of Enterprise Single Sign-On.</span></span> <span data-ttu-id="a5804-104">SQL Server で実行する操作の詳細な手順については、SQL Server のドキュメントを参照してください。</span><span class="sxs-lookup"><span data-stu-id="a5804-104">For detailed procedures on the actions to take in SQL Server, see your SQL Server documentation.</span></span>  
+# <a name="securing-your-deployment-of-sso"></a><span data-ttu-id="3831c-102">SSO 展開のセキュリティで保護します。</span><span class="sxs-lookup"><span data-stu-id="3831c-102">Securing Your Deployment of SSO</span></span>
+<span data-ttu-id="3831c-103">このセクションでは、エンタープライズ シングル サインオンのセキュリティで保護された展開の一般的なシナリオについて説明します。</span><span class="sxs-lookup"><span data-stu-id="3831c-103">This section outlines a typical scenario for secure deployment of Enterprise Single Sign-On.</span></span> <span data-ttu-id="3831c-104">SQL Server で実行するアクションに関する詳細な手順は、SQL Server のドキュメントを参照してください。</span><span class="sxs-lookup"><span data-stu-id="3831c-104">For detailed procedures on the actions to take in SQL Server, see your SQL Server documentation.</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="a5804-105">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="a5804-105">In This Section</span></span>  
+## <a name="in-this-section"></a><span data-ttu-id="3831c-105">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="3831c-105">In This Section</span></span>  
   
--   [<span data-ttu-id="a5804-106">SSO 展開の概要</span><span class="sxs-lookup"><span data-stu-id="a5804-106">SSO Deployment Overview</span></span>](../core/sso-deployment-overview.md)  
+-   [<span data-ttu-id="3831c-106">SSO 展開の概要</span><span class="sxs-lookup"><span data-stu-id="3831c-106">SSO Deployment Overview</span></span>](../core/sso-deployment-overview.md)  
   
--   [<span data-ttu-id="a5804-107">展開プロセス</span><span class="sxs-lookup"><span data-stu-id="a5804-107">Deployment Process</span></span>](../core/deployment-process.md)
+-   [<span data-ttu-id="3831c-107">展開プロセス</span><span class="sxs-lookup"><span data-stu-id="3831c-107">Deployment Process</span></span>](../core/deployment-process.md)

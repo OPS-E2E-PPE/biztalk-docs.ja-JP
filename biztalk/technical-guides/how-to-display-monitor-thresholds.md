@@ -1,5 +1,5 @@
 ---
-title: モニタのしきい値を表示する方法 |Microsoft ドキュメント
+title: モニターのしきい値を表示する方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,27 +12,27 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: be3818512f76e95655e0441f039176fe6f855344
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 92db77c3e13bd479d71f845bd0854d721d2d6938
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22297706"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65253310"
 ---
-# <a name="how-to-display-monitor-thresholds"></a><span data-ttu-id="d4904-102">モニタのしきい値を表示する方法</span><span class="sxs-lookup"><span data-stu-id="d4904-102">How to Display Monitor Thresholds</span></span>
-<span data-ttu-id="d4904-103">モニタのしきい値を表示するには、このセクションで説明されているスクリプトを使用します。</span><span class="sxs-lookup"><span data-stu-id="d4904-103">To display monitor thresholds, use the script described in this section.</span></span> <span data-ttu-id="d4904-104">このスクリプトは、ほとんどのモニタに対して機能します。</span><span class="sxs-lookup"><span data-stu-id="d4904-104">This script works for the majority of monitors.</span></span> <span data-ttu-id="d4904-105">次の表で説明する列を含む .csv ファイルを作成し、Office Excel を使用して表示できます。</span><span class="sxs-lookup"><span data-stu-id="d4904-105">It creates a .csv file that includes the columns described in the following table, and can be viewed using Office Excel.</span></span>  
+# <a name="how-to-display-monitor-thresholds"></a><span data-ttu-id="b79e1-102">モニターのしきい値を表示する方法</span><span class="sxs-lookup"><span data-stu-id="b79e1-102">How to Display Monitor Thresholds</span></span>
+<span data-ttu-id="b79e1-103">モニタのしきい値を表示するには、このセクションで説明するスクリプトを使用します。</span><span class="sxs-lookup"><span data-stu-id="b79e1-103">To display monitor thresholds, use the script described in this section.</span></span> <span data-ttu-id="b79e1-104">このスクリプトは、ほとんどのモニタによって適しています。</span><span class="sxs-lookup"><span data-stu-id="b79e1-104">This script works for the majority of monitors.</span></span> <span data-ttu-id="b79e1-105">次の表で説明する列を含む .csv ファイルを作成し、Office Excel を使用して表示できます。</span><span class="sxs-lookup"><span data-stu-id="b79e1-105">It creates a .csv file that includes the columns described in the following table, and can be viewed using Office Excel.</span></span>  
   
-|<span data-ttu-id="d4904-106">列</span><span class="sxs-lookup"><span data-stu-id="d4904-106">Column</span></span>|<span data-ttu-id="d4904-107">Description</span><span class="sxs-lookup"><span data-stu-id="d4904-107">Description</span></span>|  
+|<span data-ttu-id="b79e1-106">[列]</span><span class="sxs-lookup"><span data-stu-id="b79e1-106">Column</span></span>|<span data-ttu-id="b79e1-107">説明</span><span class="sxs-lookup"><span data-stu-id="b79e1-107">Description</span></span>|  
 |------------|-----------------|  
-|<span data-ttu-id="d4904-108">型</span><span class="sxs-lookup"><span data-stu-id="d4904-108">Type</span></span>|<span data-ttu-id="d4904-109">モニターが対象となるオブジェクトの型。</span><span class="sxs-lookup"><span data-stu-id="d4904-109">The type of objects the monitor is targeted.</span></span>|  
-|<span data-ttu-id="d4904-110">DisplayName</span><span class="sxs-lookup"><span data-stu-id="d4904-110">DisplayName</span></span>|<span data-ttu-id="d4904-111">モニターの表示名。</span><span class="sxs-lookup"><span data-stu-id="d4904-111">The display name of the monitor.</span></span>|  
-|<span data-ttu-id="d4904-112">しきい値</span><span class="sxs-lookup"><span data-stu-id="d4904-112">Threshold</span></span>|<span data-ttu-id="d4904-113">モニターによって使用されるしきい値。</span><span class="sxs-lookup"><span data-stu-id="d4904-113">The threshold used by the monitor.</span></span>|  
-|<span data-ttu-id="d4904-114">AlertOnState</span><span class="sxs-lookup"><span data-stu-id="d4904-114">AlertOnState</span></span>|<span data-ttu-id="d4904-115">状態が変更されたときに、モニターがアラートを生成するかどうかを判断します。</span><span class="sxs-lookup"><span data-stu-id="d4904-115">Determines whether the monitor generates an alert when the state changes.</span></span>|  
-|<span data-ttu-id="d4904-116">AutoResolveAlert</span><span class="sxs-lookup"><span data-stu-id="d4904-116">AutoResolveAlert</span></span>|<span data-ttu-id="d4904-117">かどうか、生成されたアラートを自動的に解決するモニターの状態が緑色に戻ったときに決定します。</span><span class="sxs-lookup"><span data-stu-id="d4904-117">Determines whether the generated alert will be automatically resolved when the monitor state goes back to green.</span></span>|  
-|<span data-ttu-id="d4904-118">AlertSeverity</span><span class="sxs-lookup"><span data-stu-id="d4904-118">AlertSeverity</span></span>|<span data-ttu-id="d4904-119">生成されたアラートの重大度。</span><span class="sxs-lookup"><span data-stu-id="d4904-119">The severity of the generated alert.</span></span>|  
+|<span data-ttu-id="b79e1-108">型</span><span class="sxs-lookup"><span data-stu-id="b79e1-108">Type</span></span>|<span data-ttu-id="b79e1-109">モニターが対象となるオブジェクトの型。</span><span class="sxs-lookup"><span data-stu-id="b79e1-109">The type of objects the monitor is targeted.</span></span>|  
+|<span data-ttu-id="b79e1-110">DisplayName</span><span class="sxs-lookup"><span data-stu-id="b79e1-110">DisplayName</span></span>|<span data-ttu-id="b79e1-111">モニターの表示名。</span><span class="sxs-lookup"><span data-stu-id="b79e1-111">The display name of the monitor.</span></span>|  
+|<span data-ttu-id="b79e1-112">しきい値</span><span class="sxs-lookup"><span data-stu-id="b79e1-112">Threshold</span></span>|<span data-ttu-id="b79e1-113">モニターで使用されるしきい値。</span><span class="sxs-lookup"><span data-stu-id="b79e1-113">The threshold used by the monitor.</span></span>|  
+|<span data-ttu-id="b79e1-114">AlertOnState</span><span class="sxs-lookup"><span data-stu-id="b79e1-114">AlertOnState</span></span>|<span data-ttu-id="b79e1-115">状態が変更されたときに、モニターがアラートを生成するかどうかを判断します。</span><span class="sxs-lookup"><span data-stu-id="b79e1-115">Determines whether the monitor generates an alert when the state changes.</span></span>|  
+|<span data-ttu-id="b79e1-116">AutoResolveAlert</span><span class="sxs-lookup"><span data-stu-id="b79e1-116">AutoResolveAlert</span></span>|<span data-ttu-id="b79e1-117">モニターの状態が緑色に戻ったとき生成されたアラートに自動的に解決するかどうかを判断します。</span><span class="sxs-lookup"><span data-stu-id="b79e1-117">Determines whether the generated alert will be automatically resolved when the monitor state goes back to green.</span></span>|  
+|<span data-ttu-id="b79e1-118">AlertSeverity</span><span class="sxs-lookup"><span data-stu-id="b79e1-118">AlertSeverity</span></span>|<span data-ttu-id="b79e1-119">生成されたアラートの重大度。</span><span class="sxs-lookup"><span data-stu-id="b79e1-119">The severity of the generated alert.</span></span>|  
   
-#### <a name="to-display-monitor-thresholds"></a><span data-ttu-id="d4904-120">モニターのしきい値を表示するには</span><span class="sxs-lookup"><span data-stu-id="d4904-120">To display monitor thresholds</span></span>  
- <span data-ttu-id="d4904-121">モニタのしきい値を表示する .csv ファイルを作成する次のスクリプトを実行します。</span><span class="sxs-lookup"><span data-stu-id="d4904-121">Run the following script to create the .csv file that displays the monitor thresholds:</span></span>  
+#### <a name="to-display-monitor-thresholds"></a><span data-ttu-id="b79e1-120">モニターのしきい値を表示するには</span><span class="sxs-lookup"><span data-stu-id="b79e1-120">To display monitor thresholds</span></span>  
+ <span data-ttu-id="b79e1-121">モニタのしきい値を表示する .csv ファイルを作成する次のスクリプトを実行します。</span><span class="sxs-lookup"><span data-stu-id="b79e1-121">Run the following script to create the .csv file that displays the monitor thresholds:</span></span>  
   
 ```  
 function GetThreshold ([String] $configuration)   

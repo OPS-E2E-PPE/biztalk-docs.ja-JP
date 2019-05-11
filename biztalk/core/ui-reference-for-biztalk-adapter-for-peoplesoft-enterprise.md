@@ -1,5 +1,5 @@
 ---
-title: BizTalk Adapter for PeopleSoft Enterprise の UI リファレンス |Microsoft ドキュメント
+title: BizTalk Adapter for PeopleSoft Enterprise の UI リファレンス |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,18 +15,18 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1f4f0c156e88165965e5846e4752b65e419739e8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2f36fb49697cb8f8082b2c4488fbb20923663ec9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22284266"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65258572"
 ---
-# <a name="ui-reference-for-biztalk-adapter-for-peoplesoft-enterprise"></a><span data-ttu-id="78960-102">BizTalk Adapter for PeopleSoft Enterprise の UI リファレンス</span><span class="sxs-lookup"><span data-stu-id="78960-102">UI Reference for BizTalk Adapter for PeopleSoft Enterprise</span></span>
-<span data-ttu-id="78960-103">このセクションの各トピックでは、BizTalk Adapter for PeopleSoft Enterprise のユーザー インターフェイスについて説明します。</span><span class="sxs-lookup"><span data-stu-id="78960-103">The topics in this section describe the user interface for BizTalk Adapter for PeopleSoft Enterprise.</span></span>  
+# <a name="ui-reference-for-biztalk-adapter-for-peoplesoft-enterprise"></a><span data-ttu-id="a53ae-102">BizTalk Adapter for PeopleSoft Enterprise の UI リファレンス</span><span class="sxs-lookup"><span data-stu-id="a53ae-102">UI Reference for BizTalk Adapter for PeopleSoft Enterprise</span></span>
+<span data-ttu-id="a53ae-103">このセクションのトピックでは、PeopleSoft Enterprise の BizTalk アダプターのユーザー インターフェイスをについて説明します。</span><span class="sxs-lookup"><span data-stu-id="a53ae-103">The topics in this section describe the user interface for BizTalk Adapter for PeopleSoft Enterprise.</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="78960-104">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="78960-104">In This Section</span></span>  
+## <a name="in-this-section"></a><span data-ttu-id="a53ae-104">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="a53ae-104">In This Section</span></span>  
   
--   [<span data-ttu-id="78960-105">PeopleSoft トランスポートのプロパティ ダイアログ ボックス</span><span class="sxs-lookup"><span data-stu-id="78960-105">PeopleSoft Transport Properties Dialog Box</span></span>](../core/peoplesoft-transport-properties-dialog-box.md)  
+-   <span data-ttu-id="a53ae-105">[[PeopleSoft トランスポートのプロパティ] ダイアログ ボックス](../core/peoplesoft-transport-properties-dialog-box.md)</span><span class="sxs-lookup"><span data-stu-id="a53ae-105">[PeopleSoft Transport Properties Dialog Box](../core/peoplesoft-transport-properties-dialog-box.md)</span></span>  
   
--   [<span data-ttu-id="78960-106">PeopleSoft アダプターの追加ウィザード</span><span class="sxs-lookup"><span data-stu-id="78960-106">PeopleSoft Add Adapter Wizard</span></span>](../core/peoplesoft-add-adapter-wizard.md)
+-   [<span data-ttu-id="a53ae-106">PeopleSoft アダプターの追加ウィザード</span><span class="sxs-lookup"><span data-stu-id="a53ae-106">PeopleSoft Add Adapter Wizard</span></span>](../core/peoplesoft-add-adapter-wizard.md)
