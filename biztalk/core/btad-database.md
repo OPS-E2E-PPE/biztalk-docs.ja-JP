@@ -1,5 +1,5 @@
 ---
-title: BTAD_Database |Microsoft ドキュメント
+title: BTAD_Database |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,16 +14,16 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e3c3c8b7d479cb40abea5dcf58812ac6013d8fae
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d59556b7e73d61a12aa2d529f8bc1555b6c08ff4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22230594"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65358308"
 ---
-# <a name="btaddatabase"></a><span data-ttu-id="5a3c3-102">BTAD_Database</span><span class="sxs-lookup"><span data-stu-id="5a3c3-102">BTAD_Database</span></span>
-<span data-ttu-id="5a3c3-103">アプリケーションのインポート時に処理前および処理後のスクリプトを実行すると、BTAD_Database 環境変数が設定されます。</span><span class="sxs-lookup"><span data-stu-id="5a3c3-103">When pre- and post-processing scripts run on application import, the BTAD_Database environment variable is set.</span></span> <span data-ttu-id="5a3c3-104">この変数は、グループの BizTalk 管理データベースの名前を指定します。</span><span class="sxs-lookup"><span data-stu-id="5a3c3-104">It specifies the name of the BizTalk Management database for the group.</span></span>  
+# <a name="btaddatabase"></a><span data-ttu-id="f190b-102">BTAD_Database</span><span class="sxs-lookup"><span data-stu-id="f190b-102">BTAD_Database</span></span>
+<span data-ttu-id="f190b-103">アプリケーションのインポート時に処理前および処理後のスクリプトを実行すると、BTAD_Database 環境変数が設定されます。</span><span class="sxs-lookup"><span data-stu-id="f190b-103">When pre- and post-processing scripts run on application import, the BTAD_Database environment variable is set.</span></span> <span data-ttu-id="f190b-104">この変数は、グループの BizTalk 管理データベースの名前を指定します。</span><span class="sxs-lookup"><span data-stu-id="f190b-104">It specifies the name of the BizTalk Management database for the group.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="5a3c3-105">参照</span><span class="sxs-lookup"><span data-stu-id="5a3c3-105">See Also</span></span>  
- <span data-ttu-id="5a3c3-106">[前処理および後処理のスクリプト環境変数](../core/pre-and-post-processing-script-environment-variables.md) </span><span class="sxs-lookup"><span data-stu-id="5a3c3-106">[Pre- and Post-processing Script Environment Variables](../core/pre-and-post-processing-script-environment-variables.md) </span></span>  
- [<span data-ttu-id="5a3c3-107">環境変数が展開の状態を指定する方法</span><span class="sxs-lookup"><span data-stu-id="5a3c3-107">How Environment Variables Indicate Deployment State</span></span>](../core/how-environment-variables-indicate-deployment-state.md)
+## <a name="see-also"></a><span data-ttu-id="f190b-105">参照</span><span class="sxs-lookup"><span data-stu-id="f190b-105">See Also</span></span>  
+ <span data-ttu-id="f190b-106">[前処理および後処理のスクリプト環境変数](../core/pre-and-post-processing-script-environment-variables.md) </span><span class="sxs-lookup"><span data-stu-id="f190b-106">[Pre- and Post-processing Script Environment Variables](../core/pre-and-post-processing-script-environment-variables.md) </span></span>  
+ [<span data-ttu-id="f190b-107">環境変数と展開状態の対応関係</span><span class="sxs-lookup"><span data-stu-id="f190b-107">How Environment Variables Indicate Deployment State</span></span>](../core/how-environment-variables-indicate-deployment-state.md)

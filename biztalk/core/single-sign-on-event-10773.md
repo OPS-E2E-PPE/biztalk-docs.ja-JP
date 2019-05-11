@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10773 |Microsoft Docs'
+title: シングル サインオン:イベント 10773 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,28 +12,28 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2d3e277c2a4125825bdb6067dcf2ff86b96b011e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: db380612ba130f81e1a0179c80915cde79471162
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37022818"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65394244"
 ---
-# <a name="single-sign-on-event-10773"></a><span data-ttu-id="ca663-102">シングル サインオン: イベント 10773</span><span class="sxs-lookup"><span data-stu-id="ca663-102">Single Sign-On: Event 10773</span></span>
-## <a name="details"></a><span data-ttu-id="ca663-103">詳細</span><span class="sxs-lookup"><span data-stu-id="ca663-103">Details</span></span>  
+# <a name="single-sign-on-event-10773"></a><span data-ttu-id="a4bd9-102">シングル サインオン:イベント 10773</span><span class="sxs-lookup"><span data-stu-id="a4bd9-102">Single Sign-On: Event 10773</span></span>
+## <a name="details"></a><span data-ttu-id="a4bd9-103">詳細</span><span class="sxs-lookup"><span data-stu-id="a4bd9-103">Details</span></span>  
   
 |                 |                                                                             |
 |-----------------|-----------------------------------------------------------------------------|
-|  <span data-ttu-id="ca663-104">製品名</span><span class="sxs-lookup"><span data-stu-id="ca663-104">Product Name</span></span>   |                          <span data-ttu-id="ca663-105">エンタープライズ シングル サインオン</span><span class="sxs-lookup"><span data-stu-id="ca663-105">Enterprise Single Sign-On</span></span>                          |
-| <span data-ttu-id="ca663-106">製品バージョン</span><span class="sxs-lookup"><span data-stu-id="ca663-106">Product Version</span></span> |         [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]          |
-|    <span data-ttu-id="ca663-107">イベント ID</span><span class="sxs-lookup"><span data-stu-id="ca663-107">Event ID</span></span>     |                                    <span data-ttu-id="ca663-108">10773</span><span class="sxs-lookup"><span data-stu-id="ca663-108">10773</span></span>                                    |
-|  <span data-ttu-id="ca663-109">イベント ソース</span><span class="sxs-lookup"><span data-stu-id="ca663-109">Event Source</span></span>   |                                   <span data-ttu-id="ca663-110">ENTSSO</span><span class="sxs-lookup"><span data-stu-id="ca663-110">ENTSSO</span></span>                                    |
-|    <span data-ttu-id="ca663-111">コンポーネント</span><span class="sxs-lookup"><span data-stu-id="ca663-111">Component</span></span>    |                                     <span data-ttu-id="ca663-112">なし</span><span class="sxs-lookup"><span data-stu-id="ca663-112">N/A</span></span>                                     |
-|  <span data-ttu-id="ca663-113">シンボル名</span><span class="sxs-lookup"><span data-stu-id="ca663-113">Symbolic Name</span></span>  |                        <span data-ttu-id="ca663-114">ENTSSO_E_SSO_MUST_BE_DISABLED</span><span class="sxs-lookup"><span data-stu-id="ca663-114">ENTSSO_E_SSO_MUST_BE_DISABLED</span></span>                        |
-|  <span data-ttu-id="ca663-115">メッセージ テキスト</span><span class="sxs-lookup"><span data-stu-id="ca663-115">Message Text</span></span>   | <span data-ttu-id="ca663-116">この機能を実行する前に、エンタープライズ シングル サインオンを無効にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="ca663-116">Enterprise Single Sign-On must be disabled before performing this function.</span></span> |
+|  <span data-ttu-id="a4bd9-104">製品名</span><span class="sxs-lookup"><span data-stu-id="a4bd9-104">Product Name</span></span>   |                          <span data-ttu-id="a4bd9-105">エンタープライズ シングル サインオン</span><span class="sxs-lookup"><span data-stu-id="a4bd9-105">Enterprise Single Sign-On</span></span>                          |
+| <span data-ttu-id="a4bd9-106">製品バージョン</span><span class="sxs-lookup"><span data-stu-id="a4bd9-106">Product Version</span></span> |         [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]          |
+|    <span data-ttu-id="a4bd9-107">イベント ID</span><span class="sxs-lookup"><span data-stu-id="a4bd9-107">Event ID</span></span>     |                                    <span data-ttu-id="a4bd9-108">10773</span><span class="sxs-lookup"><span data-stu-id="a4bd9-108">10773</span></span>                                    |
+|  <span data-ttu-id="a4bd9-109">イベント ソース</span><span class="sxs-lookup"><span data-stu-id="a4bd9-109">Event Source</span></span>   |                                   <span data-ttu-id="a4bd9-110">ENTSSO</span><span class="sxs-lookup"><span data-stu-id="a4bd9-110">ENTSSO</span></span>                                    |
+|    <span data-ttu-id="a4bd9-111">コンポーネント</span><span class="sxs-lookup"><span data-stu-id="a4bd9-111">Component</span></span>    |                                     <span data-ttu-id="a4bd9-112">なし</span><span class="sxs-lookup"><span data-stu-id="a4bd9-112">N/A</span></span>                                     |
+|  <span data-ttu-id="a4bd9-113">シンボル名</span><span class="sxs-lookup"><span data-stu-id="a4bd9-113">Symbolic Name</span></span>  |                        <span data-ttu-id="a4bd9-114">ENTSSO_E_SSO_MUST_BE_DISABLED</span><span class="sxs-lookup"><span data-stu-id="a4bd9-114">ENTSSO_E_SSO_MUST_BE_DISABLED</span></span>                        |
+|  <span data-ttu-id="a4bd9-115">メッセージ テキスト</span><span class="sxs-lookup"><span data-stu-id="a4bd9-115">Message Text</span></span>   | <span data-ttu-id="a4bd9-116">この機能を実行する前に、エンタープライズ シングル サインオンを無効にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="a4bd9-116">Enterprise Single Sign-On must be disabled before performing this function.</span></span> |
   
-## <a name="explanation"></a><span data-ttu-id="ca663-117">説明</span><span class="sxs-lookup"><span data-stu-id="ca663-117">Explanation</span></span>  
- <span data-ttu-id="ca663-118">この機能を実行する前に、エンタープライズ シングル サインオンを無効にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="ca663-118">Enterprise Single Sign-On must be disabled before performing this function.</span></span>  
+## <a name="explanation"></a><span data-ttu-id="a4bd9-117">説明</span><span class="sxs-lookup"><span data-stu-id="a4bd9-117">Explanation</span></span>  
+ <span data-ttu-id="a4bd9-118">この機能を実行する前に、エンタープライズ シングル サインオンを無効にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="a4bd9-118">Enterprise Single Sign-On must be disabled before performing this function.</span></span>  
   
-## <a name="user-action"></a><span data-ttu-id="ca663-119">ユーザーの操作</span><span class="sxs-lookup"><span data-stu-id="ca663-119">User Action</span></span>  
- <span data-ttu-id="ca663-120">詳細については、[SSO を無効にする方法](../core/how-to-disable-sso.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="ca663-120">For more information, see [How to Disable SSO](../core/how-to-disable-sso.md).</span></span>
+## <a name="user-action"></a><span data-ttu-id="a4bd9-119">ユーザーの操作</span><span class="sxs-lookup"><span data-stu-id="a4bd9-119">User Action</span></span>  
+ <span data-ttu-id="a4bd9-120">詳細については、次を参照してください。 [SSO を無効にする方法](../core/how-to-disable-sso.md)します。</span><span class="sxs-lookup"><span data-stu-id="a4bd9-120">For more information, see [How to Disable SSO](../core/how-to-disable-sso.md).</span></span>

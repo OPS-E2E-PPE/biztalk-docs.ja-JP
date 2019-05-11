@@ -12,35 +12,35 @@ caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 500e3e2f6e9ee895c41145371cacc78467b8a64c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a30c4bedeab4041002a6ab225a441ac10d37de15
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37003595"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65358434"
 ---
-# <a name="before-installing-the-business-process-management-solution"></a><span data-ttu-id="cdece-102">ビジネス プロセス管理ソリューションをインストールする前に</span><span class="sxs-lookup"><span data-stu-id="cdece-102">Before Installing the Business Process Management Solution</span></span>
+# <a name="before-installing-the-business-process-management-solution"></a><span data-ttu-id="e58f7-102">ビジネス プロセス管理ソリューションをインストールする前に</span><span class="sxs-lookup"><span data-stu-id="e58f7-102">Before Installing the Business Process Management Solution</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="cdece-103">要件</span><span class="sxs-lookup"><span data-stu-id="cdece-103">Requirements</span></span>
-<span data-ttu-id="cdece-104">単一のコンピュータにビジネス プロセス管理ソリューションを展開するには、次のコンポーネントをインストールする必要があります。</span><span class="sxs-lookup"><span data-stu-id="cdece-104">The following prerequisites must be installed to deploy the Business Process Management solution on a single computer:</span></span>  
+## <a name="requirements"></a><span data-ttu-id="e58f7-103">必要条件</span><span class="sxs-lookup"><span data-stu-id="e58f7-103">Requirements</span></span>
+<span data-ttu-id="e58f7-104">1 台のコンピューターでビジネス プロセス管理ソリューションをデプロイするには、次の前提条件をインストールしてください。</span><span class="sxs-lookup"><span data-stu-id="e58f7-104">The following prerequisites must be installed to deploy the Business Process Management solution on a single computer:</span></span>  
   
-- <span data-ttu-id="cdece-105">Microsoft Windows</span><span class="sxs-lookup"><span data-stu-id="cdece-105">Microsoft Windows</span></span>
+- <span data-ttu-id="e58f7-105">Microsoft Windows</span><span class="sxs-lookup"><span data-stu-id="e58f7-105">Microsoft Windows</span></span>
   
-- <span data-ttu-id="cdece-106">Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]</span><span class="sxs-lookup"><span data-stu-id="cdece-106">Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]</span></span>  
+- <span data-ttu-id="e58f7-106">Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]</span><span class="sxs-lookup"><span data-stu-id="e58f7-106">Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]</span></span>  
   
-- <span data-ttu-id="cdece-107">Microsoft メッセージ キュー (MSMQ) を MSMQ HTTP サポート</span><span class="sxs-lookup"><span data-stu-id="cdece-107">Microsoft Message Queuing (MSMQ) with MSMQ HTTP Support</span></span>
+- <span data-ttu-id="e58f7-107">Microsoft メッセージ キュー (MSMQ) を MSMQ HTTP サポート</span><span class="sxs-lookup"><span data-stu-id="e58f7-107">Microsoft Message Queuing (MSMQ) with MSMQ HTTP Support</span></span>
   
-- <span data-ttu-id="cdece-108">Microsoft SQL Server</span><span class="sxs-lookup"><span data-stu-id="cdece-108">Microsoft SQL Server</span></span>
+- <span data-ttu-id="e58f7-108">Microsoft SQL Server</span><span class="sxs-lookup"><span data-stu-id="e58f7-108">Microsoft SQL Server</span></span>
   
-- <span data-ttu-id="cdece-109">WWW および FTP による Microsoft インターネット インフォメーション サービス</span><span class="sxs-lookup"><span data-stu-id="cdece-109">Microsoft Internet Information Services with WWW and FTP</span></span>  
+- <span data-ttu-id="e58f7-109">WWW および FTP による Microsoft インターネット インフォメーション サービス</span><span class="sxs-lookup"><span data-stu-id="e58f7-109">Microsoft Internet Information Services with WWW and FTP</span></span>  
   
-- <span data-ttu-id="cdece-110">ASP.NET を有効になっています。</span><span class="sxs-lookup"><span data-stu-id="cdece-110">ASP.NET enabled</span></span>  
+- <span data-ttu-id="e58f7-110">ASP.NET を有効になっています。</span><span class="sxs-lookup"><span data-stu-id="e58f7-110">ASP.NET enabled</span></span>  
   
-- <span data-ttu-id="cdece-111">Microsoft Visual Studio</span><span class="sxs-lookup"><span data-stu-id="cdece-111">Microsoft Visual Studio</span></span>  
+- <span data-ttu-id="e58f7-111">Microsoft Visual Studio</span><span class="sxs-lookup"><span data-stu-id="e58f7-111">Microsoft Visual Studio</span></span>  
   
-- <span data-ttu-id="cdece-112">Microsoft Excel</span><span class="sxs-lookup"><span data-stu-id="cdece-112">Microsoft Excel</span></span>  
+- <span data-ttu-id="e58f7-112">Microsoft Excel</span><span class="sxs-lookup"><span data-stu-id="e58f7-112">Microsoft Excel</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="cdece-113">参照</span><span class="sxs-lookup"><span data-stu-id="cdece-113">See Also</span></span>  
- <span data-ttu-id="cdece-114">[ビジネス プロセス管理ソリューションをインストールする方法](../core/how-to-install-the-business-process-management-solution.md) </span><span class="sxs-lookup"><span data-stu-id="cdece-114">[How to Install the Business Process Management Solution](../core/how-to-install-the-business-process-management-solution.md) </span></span>  
- <span data-ttu-id="cdece-115">[ビジネス プロセス管理ソリューションを実行する方法](../core/how-to-run-the-business-process-management-solution.md) </span><span class="sxs-lookup"><span data-stu-id="cdece-115">[How to Run the Business Process Management Solution](../core/how-to-run-the-business-process-management-solution.md) </span></span>  
- [<span data-ttu-id="cdece-116">ビジネス プロセス管理ソリューションに対する開発者のコンピューター設定</span><span class="sxs-lookup"><span data-stu-id="cdece-116">Developer Machine Setup for the Business Process Management Solution</span></span>](../core/developer-machine-setup-for-the-business-process-management-solution.md)
+## <a name="see-also"></a><span data-ttu-id="e58f7-113">参照</span><span class="sxs-lookup"><span data-stu-id="e58f7-113">See Also</span></span>  
+ <span data-ttu-id="e58f7-114">[ビジネス プロセス管理ソリューションをインストールする方法](../core/how-to-install-the-business-process-management-solution.md) </span><span class="sxs-lookup"><span data-stu-id="e58f7-114">[How to Install the Business Process Management Solution](../core/how-to-install-the-business-process-management-solution.md) </span></span>  
+ <span data-ttu-id="e58f7-115">[ビジネス プロセス管理ソリューションを実行する方法](../core/how-to-run-the-business-process-management-solution.md) </span><span class="sxs-lookup"><span data-stu-id="e58f7-115">[How to Run the Business Process Management Solution](../core/how-to-run-the-business-process-management-solution.md) </span></span>  
+ [<span data-ttu-id="e58f7-116">ビジネス プロセス管理ソリューションに対する開発者のコンピューター設定</span><span class="sxs-lookup"><span data-stu-id="e58f7-116">Developer Machine Setup for the Business Process Management Solution</span></span>](../core/developer-machine-setup-for-the-business-process-management-solution.md)

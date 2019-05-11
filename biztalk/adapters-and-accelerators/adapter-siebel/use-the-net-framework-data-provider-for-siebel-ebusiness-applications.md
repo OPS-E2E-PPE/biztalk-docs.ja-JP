@@ -15,36 +15,36 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4f593c1eb9f7158aa69d4fcd0278078caeca2dca
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 70d3d3850480cd3d3af8e0942590d919902b4378
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36993155"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65370239"
 ---
-# <a name="use-the-net-framework-data-provider-for-siebel-ebusiness-applications"></a><span data-ttu-id="02d91-102">.NET Framework Data Provider 用 Siebel eBusiness Applications を使用して、</span><span class="sxs-lookup"><span data-stu-id="02d91-102">Use the .NET Framework Data Provider for Siebel eBusiness Applications</span></span>
-<span data-ttu-id="02d91-103">このセクションで使用方法については、 [!INCLUDE[adoprovidersiebellong](../../includes/adoprovidersiebellong-md.md)] ([!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)])。</span><span class="sxs-lookup"><span data-stu-id="02d91-103">This section provides instructions on using the [!INCLUDE[adoprovidersiebellong](../../includes/adoprovidersiebellong-md.md)] ([!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]).</span></span> <span data-ttu-id="02d91-104">このセクションでは、に関する情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="02d91-104">This section provides information about:</span></span>  
+# <a name="use-the-net-framework-data-provider-for-siebel-ebusiness-applications"></a><span data-ttu-id="e1dd8-102">.NET Framework Data Provider 用 Siebel eBusiness Applications を使用して、</span><span class="sxs-lookup"><span data-stu-id="e1dd8-102">Use the .NET Framework Data Provider for Siebel eBusiness Applications</span></span>
+<span data-ttu-id="e1dd8-103">このセクションで使用方法については、 [!INCLUDE[adoprovidersiebellong](../../includes/adoprovidersiebellong-md.md)] ([!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)])。</span><span class="sxs-lookup"><span data-stu-id="e1dd8-103">This section provides instructions on using the [!INCLUDE[adoprovidersiebellong](../../includes/adoprovidersiebellong-md.md)] ([!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]).</span></span> <span data-ttu-id="e1dd8-104">このセクションでは、に関する情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="e1dd8-104">This section provides information about:</span></span>  
   
-- <span data-ttu-id="02d91-105">ADO.NET クライアントを使用して Siebel システムに接続する接続文字列。</span><span class="sxs-lookup"><span data-stu-id="02d91-105">The connection string to connect to a Siebel system using an ADO.NET client.</span></span>  
+- <span data-ttu-id="e1dd8-105">ADO.NET クライアントを使用して Siebel システムに接続する接続文字列。</span><span class="sxs-lookup"><span data-stu-id="e1dd8-105">The connection string to connect to a Siebel system using an ADO.NET client.</span></span>  
   
-- <span data-ttu-id="02d91-106">SELECT ステートメントと EXEC ステートメントの構文です。</span><span class="sxs-lookup"><span data-stu-id="02d91-106">The syntax for SELECT and EXEC statements.</span></span>  
+- <span data-ttu-id="e1dd8-106">SELECT ステートメントと EXEC ステートメントの構文です。</span><span class="sxs-lookup"><span data-stu-id="e1dd8-106">The syntax for SELECT and EXEC statements.</span></span>  
   
-- <span data-ttu-id="02d91-107">使用して、 [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)] SSIS を使用します。</span><span class="sxs-lookup"><span data-stu-id="02d91-107">Using the [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)] with SSIS.</span></span>  
+- <span data-ttu-id="e1dd8-107">使用して、 [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)] SSIS を使用します。</span><span class="sxs-lookup"><span data-stu-id="e1dd8-107">Using the [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)] with SSIS.</span></span>  
   
-- <span data-ttu-id="02d91-108">ADO.NET インターフェイスを[!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]を拡張します。</span><span class="sxs-lookup"><span data-stu-id="02d91-108">The ADO.NET interfaces that the [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)] extends.</span></span>  
+- <span data-ttu-id="e1dd8-108">ADO.NET インターフェイスを[!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]を拡張します。</span><span class="sxs-lookup"><span data-stu-id="e1dd8-108">The ADO.NET interfaces that the [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)] extends.</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="02d91-109">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="02d91-109">In This Section</span></span>  
+## <a name="in-this-section"></a><span data-ttu-id="e1dd8-109">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="e1dd8-109">In This Section</span></span>  
   
--   [<span data-ttu-id="02d91-110">Siebel アダプターを使用した ADO.NET インターフェイスを拡張します。</span><span class="sxs-lookup"><span data-stu-id="02d91-110">Extend ADO.NET Interfaces with the Siebel adapter</span></span>](../../adapters-and-accelerators/adapter-siebel/extend-ado-net-interfaces-with-the-siebel-adapter.md)  
+-   [<span data-ttu-id="e1dd8-110">Siebel アダプターを使用した ADO.NET インターフェイスを拡張します。</span><span class="sxs-lookup"><span data-stu-id="e1dd8-110">Extend ADO.NET Interfaces with the Siebel adapter</span></span>](../../adapters-and-accelerators/adapter-siebel/extend-ado-net-interfaces-with-the-siebel-adapter.md)  
   
--   [<span data-ttu-id="02d91-111">Siebel 接続文字列のデータ プロバイダーのプロパティ</span><span class="sxs-lookup"><span data-stu-id="02d91-111">Data Provider properties for the Siebel Connection String</span></span>](../../adapters-and-accelerators/adapter-siebel/data-provider-properties-for-the-siebel-connection-string.md)  
+-   [<span data-ttu-id="e1dd8-111">Siebel 接続文字列のデータ プロバイダーのプロパティ</span><span class="sxs-lookup"><span data-stu-id="e1dd8-111">Data Provider properties for the Siebel Connection String</span></span>](../../adapters-and-accelerators/adapter-siebel/data-provider-properties-for-the-siebel-connection-string.md)  
   
--   [<span data-ttu-id="02d91-112">Siebel の SELECT ステートメントの構文</span><span class="sxs-lookup"><span data-stu-id="02d91-112">Syntax for a SELECT Statement in Siebel</span></span>](../../adapters-and-accelerators/adapter-siebel/syntax-for-a-select-statement-in-siebel.md)  
+-   [<span data-ttu-id="e1dd8-112">Siebel の SELECT ステートメントの構文</span><span class="sxs-lookup"><span data-stu-id="e1dd8-112">Syntax for a SELECT Statement in Siebel</span></span>](../../adapters-and-accelerators/adapter-siebel/syntax-for-a-select-statement-in-siebel.md)  
   
--   [<span data-ttu-id="02d91-113">Siebel の EXEC ステートメントの構文</span><span class="sxs-lookup"><span data-stu-id="02d91-113">Syntax for an EXEC Statement in Siebel</span></span>](../../adapters-and-accelerators/adapter-siebel/syntax-for-an-exec-statement-in-siebel.md)  
+-   [<span data-ttu-id="e1dd8-113">Siebel の EXEC ステートメントの構文</span><span class="sxs-lookup"><span data-stu-id="e1dd8-113">Syntax for an EXEC Statement in Siebel</span></span>](../../adapters-and-accelerators/adapter-siebel/syntax-for-an-exec-statement-in-siebel.md)  
   
--   [<span data-ttu-id="02d91-114">Siebel ビジネス コンポーネントで SELECT クエリを実行します。</span><span class="sxs-lookup"><span data-stu-id="02d91-114">Run a SELECT Query on Business Components with Siebel</span></span>](../../adapters-and-accelerators/adapter-siebel/run-a-select-query-on-business-components-with-siebel.md)  
+-   [<span data-ttu-id="e1dd8-114">Siebel ビジネス コンポーネントで SELECT クエリを実行します。</span><span class="sxs-lookup"><span data-stu-id="e1dd8-114">Run a SELECT Query on Business Components with Siebel</span></span>](../../adapters-and-accelerators/adapter-siebel/run-a-select-query-on-business-components-with-siebel.md)  
   
--   [<span data-ttu-id="02d91-115">Siebel ビジネス サービスに対して EXECUTE 操作を実行します。</span><span class="sxs-lookup"><span data-stu-id="02d91-115">Run an EXECUTE Operation on Business Services with Siebel</span></span>](../../adapters-and-accelerators/adapter-siebel/run-an-execute-operation-on-business-services-with-siebel.md)  
+-   [<span data-ttu-id="e1dd8-115">Siebel ビジネス サービスに対して EXECUTE 操作を実行します。</span><span class="sxs-lookup"><span data-stu-id="e1dd8-115">Run an EXECUTE Operation on Business Services with Siebel</span></span>](../../adapters-and-accelerators/adapter-siebel/run-an-execute-operation-on-business-services-with-siebel.md)  
   
--   [<span data-ttu-id="02d91-116">Data Provider for Siebel を SSIS と一緒に使用する</span><span class="sxs-lookup"><span data-stu-id="02d91-116">Use the Data Provider for Siebel with SSIS</span></span>](../../adapters-and-accelerators/adapter-siebel/use-the-data-provider-for-siebel-with-ssis.md)
+-   [<span data-ttu-id="e1dd8-116">Data Provider for Siebel を SSIS と一緒に使用する</span><span class="sxs-lookup"><span data-stu-id="e1dd8-116">Use the Data Provider for Siebel with SSIS</span></span>](../../adapters-and-accelerators/adapter-siebel/use-the-data-provider-for-siebel-with-ssis.md)
