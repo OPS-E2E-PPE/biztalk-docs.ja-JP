@@ -1,5 +1,5 @@
 ---
-title: 監視 |Microsoft ドキュメント
+title: 監視 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,22 +12,22 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e9c45bb70e3f92f4c85def07add4390a0451cb87
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d8c7d6e8870d435163c83c053f981d42bad1858d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22298906"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65249630"
 ---
 # <a name="monitoring"></a>監視
-既定では、すべての BizTalk Server の監視およびタスクを使用して既定のアクション アカウントが、実行プロファイルで、BizTalk Server 監視アカウントのターゲットの特定の実行アカウントが定義されていない場合。 実行アカウントを BizTalk Server を監視するために必要なアクセス許可の最小セットを構成するのには、次のアクセス許可が必要です。  
+既定では、すべての BizTalk Server の監視とタスクを使用して、既定のアクション アカウント実行プロファイルで BizTalk Server 監視アカウントのターゲットの特定の実行アカウントが定義されていないがある場合。 実行アカウントを BizTalk Server の監視のために必要なアクセス許可の最小セットで構成するには、次のアクセス許可が必要です。  
   
--   アカウントは、監視対象のコンピューターの組み込みの Administrators グループとパフォーマンス モニターのユーザー グループのメンバーである必要があります。  
+-   アカウントは、監視対象のコンピューターのビルトイン Administrators グループとパフォーマンス モニター ユーザー グループのメンバーである必要があります。  
   
--   アカウントは、SQL インスタンスまたはデータベースとジョブが監視されている BizTalk グループをホストしているインスタンス内の SysAdmin ロールのメンバーである必要があります。  
+-   アカウントは、SQL インスタンスまたはデータベースとジョブ監視されている BizTalk グループをホストしているインスタンス内で SysAdmin ロールのメンバーである必要があります。  
   
--   BizTalk Server が監視するため、アカウントは、BizTalk Operators グループの一部をする必要があります。  
+-   BizTalk Server を監視するため、アカウントは BizTalk Operators グループの一部である必要があります。  
   
--   を、SCOM コンソールのタスクを実行するため、アカウントは、BizTalk Application Users グループの一部をする必要があります。  
+-   SCOM コンソールからタスクを実行するため、アカウントは、BizTalk Application Users グループの一部をある必要があります。  
   
--   管理タスクを実行するため、アカウントは、BizTalk 管理者グループの一部にする必要があります。
+-   管理タスクを実行するには、アカウントは、BizTalk 管理者グループの一部をある必要があります。

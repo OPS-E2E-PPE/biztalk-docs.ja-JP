@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9fbe9e24560f8f00f4b3d806c76ebc326240add5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a853328e955f017a370b3025adb52d8f8706f796
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36980747"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65249928"
 ---
 # <a name="extending-the-itinerary-designer"></a>Itinerary Designer を拡張します。
 旅行プラン デザイナーでは、ビジュアルなドメイン固有言語 (DSL) は for Microsoft Visual Studio で使用するためのスケジュールのグラフィカルなモデリングができる、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]します。 デザイナーでは、開発者が新しい機能や新しい構成オプションを有効にするカスタム拡張機能を記述できますのさまざまな拡張機能ポイントを公開します。  
@@ -32,19 +32,19 @@ ms.locfileid: "36980747"
   
  旅行プラン デザイナーのアーキテクチャでは、カスタム エクステンダーのプロパティを使用するためのプロパティ バッグに追加するメッセージング サービスで使用できるスケジュール サービス モデル要素を作成できます。  
   
- このようなエクステンダーを作成する方法のサンプルでは、[をインストールすると、デザイナーの機能拡張サンプルを実行している](../esb-toolkit/installing-and-running-the-designer-extensibility-sample.md)を参照してください。  
+ このようなエクステンダーを作成する方法のサンプルでは、次を参照してください。[をインストールすると、デザイナーの機能拡張サンプルを実行している](../esb-toolkit/installing-and-running-the-designer-extensibility-sample.md)します。  
   
  **オーケストレーションに基づくスケジュール サービスのカスタム エクステンダーを作成します。**  
   
  旅行プラン デザイナーのアーキテクチャでは、カスタム エクステンダーのプロパティを使用するためのプロパティ バッグに追加するオーケストレーションに基づくスケジュール サービスで使用できるスケジュール サービス モデル要素を作成できます。  
   
- このようなエクステンダーを作成する方法のサンプルでは、[をインストールすると、デザイナーの機能拡張サンプルを実行している](../esb-toolkit/installing-and-running-the-designer-extensibility-sample.md)を参照してください。  
+ このようなエクステンダーを作成する方法のサンプルでは、次を参照してください。[をインストールすると、デザイナーの機能拡張サンプルを実行している](../esb-toolkit/installing-and-running-the-designer-extensibility-sample.md)します。  
   
  **カスタム競合回避モジュールのエクステンダーを作成します。**  
   
  旅行プラン デザイナーのアーキテクチャでは、カスタム競合回避モジュールの構成のカスタム エクステンダーを作成できます。 これらのエクステンダーは、競合回避モジュールの特定のエクステンダー クラスのプロパティにマップされるに競合回避モジュールの接続文字列に名前/値ペアを構成するため、グラフィカル インターフェイスに提供します。  
   
- このようなエクステンダーを作成する方法のサンプルでは、[をインストールすると、デザイナーの機能拡張サンプルを実行している](../esb-toolkit/installing-and-running-the-designer-extensibility-sample.md)を参照してください。  
+ このようなエクステンダーを作成する方法のサンプルでは、次を参照してください。[をインストールすると、デザイナーの機能拡張サンプルを実行している](../esb-toolkit/installing-and-running-the-designer-extensibility-sample.md)します。  
   
  **カスタム アダプターのプロパティのマニフェスト ファイルを作成します。**  
   
@@ -73,7 +73,7 @@ ms.locfileid: "36980747"
   
  旅行プラン デザイナーのアーキテクチャでは、カスタム フィルターの構成のカスタム エクステンダーを作成できます。 これらのエクステンダーは、特定のフィルターのエクステンダー クラスのプロパティにマップされるにフィルター接続文字列に名前/値ペアを構成するため、グラフィカル インターフェイスに提供します。  
   
-- /サンプル/デザイナー機能拡張 Samples/Extenders.Itinerary.OrchestrationSample/Extenders.Itinerary.OrchestrationSample/Extenders.Itinerary.OrchestrationSample  
+- /Samples/Designer Extensibility Samples/Extenders.Itinerary.OrchestrationSample/Extenders.Itinerary.OrchestrationSample/Extenders.Itinerary.OrchestrationSample  
   
 - /サンプル/デザイナー機能拡張 Samples/Extenders.Resolvers.ResolverSample/Extenders.Resolvers.ResolverSample  
   
