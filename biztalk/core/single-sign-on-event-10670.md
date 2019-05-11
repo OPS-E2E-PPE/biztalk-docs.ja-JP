@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10670 |Microsoft Docs'
+title: シングル サインオン:イベント 10670 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,33 +12,33 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dca094f48f8b9c367d46af2dc3ca866888f42bbe
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e544a9707e2765502c79029d10e6facad4a354c6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37001765"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65397519"
 ---
-# <a name="single-sign-on-event-10670"></a><span data-ttu-id="b5c46-102">シングル サインオン: イベント 10670</span><span class="sxs-lookup"><span data-stu-id="b5c46-102">Single Sign-On: Event 10670</span></span>
-## <a name="details"></a><span data-ttu-id="b5c46-103">詳細</span><span class="sxs-lookup"><span data-stu-id="b5c46-103">Details</span></span>  
+# <a name="single-sign-on-event-10670"></a><span data-ttu-id="0d792-102">シングル サインオン:イベント 10670</span><span class="sxs-lookup"><span data-stu-id="0d792-102">Single Sign-On: Event 10670</span></span>
+## <a name="details"></a><span data-ttu-id="0d792-103">詳細</span><span class="sxs-lookup"><span data-stu-id="0d792-103">Details</span></span>  
 
 |                 |                                                                                                                                      |
 |-----------------|--------------------------------------------------------------------------------------------------------------------------------------|
-|  <span data-ttu-id="b5c46-104">製品名</span><span class="sxs-lookup"><span data-stu-id="b5c46-104">Product Name</span></span>   |                                                      <span data-ttu-id="b5c46-105">エンタープライズ シングル サインオン</span><span class="sxs-lookup"><span data-stu-id="b5c46-105">Enterprise Single Sign-On</span></span>                                                       |
-| <span data-ttu-id="b5c46-106">製品バージョン</span><span class="sxs-lookup"><span data-stu-id="b5c46-106">Product Version</span></span> |                                      [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                                      |
-|    <span data-ttu-id="b5c46-107">イベント ID</span><span class="sxs-lookup"><span data-stu-id="b5c46-107">Event ID</span></span>     |                                                                <span data-ttu-id="b5c46-108">10670</span><span class="sxs-lookup"><span data-stu-id="b5c46-108">10670</span></span>                                                                 |
-|  <span data-ttu-id="b5c46-109">イベント ソース</span><span class="sxs-lookup"><span data-stu-id="b5c46-109">Event Source</span></span>   |                                                                <span data-ttu-id="b5c46-110">ENTSSO</span><span class="sxs-lookup"><span data-stu-id="b5c46-110">ENTSSO</span></span>                                                                |
-|    <span data-ttu-id="b5c46-111">コンポーネント</span><span class="sxs-lookup"><span data-stu-id="b5c46-111">Component</span></span>    |                                                                 <span data-ttu-id="b5c46-112">N\A</span><span class="sxs-lookup"><span data-stu-id="b5c46-112">N\A</span></span>                                                                  |
-|  <span data-ttu-id="b5c46-113">シンボル名</span><span class="sxs-lookup"><span data-stu-id="b5c46-113">Symbolic Name</span></span>  |                                                  <span data-ttu-id="b5c46-114">SSO_INFO_CHANGED_WINDOWS_PASSWORD</span><span class="sxs-lookup"><span data-stu-id="b5c46-114">SSO_INFO_CHANGED_WINDOWS_PASSWORD</span></span>                                                   |
-|  <span data-ttu-id="b5c46-115">メッセージ テキスト</span><span class="sxs-lookup"><span data-stu-id="b5c46-115">Message Text</span></span>   | <span data-ttu-id="b5c46-116">Windows パスワードが正常に変更されました。%r</span><span class="sxs-lookup"><span data-stu-id="b5c46-116">Successfully changed the Windows password.%r</span></span><br /><br /> <span data-ttu-id="b5c46-117">追跡 ID: %1 %r</span><span class="sxs-lookup"><span data-stu-id="b5c46-117">Tracking ID: %1%r</span></span><br /><br /> <span data-ttu-id="b5c46-118">アダプター: % 2 %r</span><span class="sxs-lookup"><span data-stu-id="b5c46-118">Adapter: %2%r</span></span><br /><br /> <span data-ttu-id="b5c46-119">Windows アカウント: %3</span><span class="sxs-lookup"><span data-stu-id="b5c46-119">Windows Account: %3</span></span> |
+|  <span data-ttu-id="0d792-104">製品名</span><span class="sxs-lookup"><span data-stu-id="0d792-104">Product Name</span></span>   |                                                      <span data-ttu-id="0d792-105">エンタープライズ シングル サインオン</span><span class="sxs-lookup"><span data-stu-id="0d792-105">Enterprise Single Sign-On</span></span>                                                       |
+| <span data-ttu-id="0d792-106">製品バージョン</span><span class="sxs-lookup"><span data-stu-id="0d792-106">Product Version</span></span> |                                      [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                                      |
+|    <span data-ttu-id="0d792-107">イベント ID</span><span class="sxs-lookup"><span data-stu-id="0d792-107">Event ID</span></span>     |                                                                <span data-ttu-id="0d792-108">10670</span><span class="sxs-lookup"><span data-stu-id="0d792-108">10670</span></span>                                                                 |
+|  <span data-ttu-id="0d792-109">イベント ソース</span><span class="sxs-lookup"><span data-stu-id="0d792-109">Event Source</span></span>   |                                                                <span data-ttu-id="0d792-110">ENTSSO</span><span class="sxs-lookup"><span data-stu-id="0d792-110">ENTSSO</span></span>                                                                |
+|    <span data-ttu-id="0d792-111">コンポーネント</span><span class="sxs-lookup"><span data-stu-id="0d792-111">Component</span></span>    |                                                                 <span data-ttu-id="0d792-112">該当なし</span><span class="sxs-lookup"><span data-stu-id="0d792-112">N\A</span></span>                                                                  |
+|  <span data-ttu-id="0d792-113">シンボル名</span><span class="sxs-lookup"><span data-stu-id="0d792-113">Symbolic Name</span></span>  |                                                  <span data-ttu-id="0d792-114">SSO_INFO_CHANGED_WINDOWS_PASSWORD</span><span class="sxs-lookup"><span data-stu-id="0d792-114">SSO_INFO_CHANGED_WINDOWS_PASSWORD</span></span>                                                   |
+|  <span data-ttu-id="0d792-115">メッセージ テキスト</span><span class="sxs-lookup"><span data-stu-id="0d792-115">Message Text</span></span>   | <span data-ttu-id="0d792-116">Windows password.%r を正常に変更されました</span><span class="sxs-lookup"><span data-stu-id="0d792-116">Successfully changed the Windows password.%r</span></span><br /><br /> <span data-ttu-id="0d792-117">追跡 ID: %1 %r</span><span class="sxs-lookup"><span data-stu-id="0d792-117">Tracking ID: %1%r</span></span><br /><br /> <span data-ttu-id="0d792-118">アダプター: % 2 %r</span><span class="sxs-lookup"><span data-stu-id="0d792-118">Adapter: %2%r</span></span><br /><br /> <span data-ttu-id="0d792-119">Windows アカウント: %3</span><span class="sxs-lookup"><span data-stu-id="0d792-119">Windows Account: %3</span></span> |
 
-## <a name="explanation"></a><span data-ttu-id="b5c46-120">説明</span><span class="sxs-lookup"><span data-stu-id="b5c46-120">Explanation</span></span>  
- <span data-ttu-id="b5c46-121">この情報イベントは、SSO によって Windows パスワードが正常に変更されたことを示します。</span><span class="sxs-lookup"><span data-stu-id="b5c46-121">This Information event indicates that SSO successfully changed the Windows password.</span></span>  
+## <a name="explanation"></a><span data-ttu-id="0d792-120">説明</span><span class="sxs-lookup"><span data-stu-id="0d792-120">Explanation</span></span>  
+ <span data-ttu-id="0d792-121">この情報イベントは、SSO が Windows パスワードを正常に変更されたことを示します。</span><span class="sxs-lookup"><span data-stu-id="0d792-121">This Information event indicates that SSO successfully changed the Windows password.</span></span>  
 
-## <a name="user-action"></a><span data-ttu-id="b5c46-122">ユーザーの操作</span><span class="sxs-lookup"><span data-stu-id="b5c46-122">User Action</span></span>  
+## <a name="user-action"></a><span data-ttu-id="0d792-122">ユーザーの操作</span><span class="sxs-lookup"><span data-stu-id="0d792-122">User Action</span></span>  
 
-- <span data-ttu-id="b5c46-123">ユーザーの操作は必要ありません。</span><span class="sxs-lookup"><span data-stu-id="b5c46-123">No user action is necessary.</span></span>  
+- <span data-ttu-id="0d792-123">ユーザー操作は必要ありません。</span><span class="sxs-lookup"><span data-stu-id="0d792-123">No user action is necessary.</span></span>  
 
-  <span data-ttu-id="b5c46-124">詳細については、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ヘルプの次の情報を参照してください: </span><span class="sxs-lookup"><span data-stu-id="b5c46-124">For more information, see the following resources in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Help:</span></span>  
+  <span data-ttu-id="0d792-124">詳細については、の次のリソースを参照してください。[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプ。</span><span class="sxs-lookup"><span data-stu-id="0d792-124">For more information, see the following resources in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Help:</span></span>  
 
-- [<span data-ttu-id="b5c46-125">パスワード同期</span><span class="sxs-lookup"><span data-stu-id="b5c46-125">Password Synchronization</span></span>](../core/password-synchronization2.md)
+- [<span data-ttu-id="0d792-125">パスワード同期</span><span class="sxs-lookup"><span data-stu-id="0d792-125">Password Synchronization</span></span>](../core/password-synchronization2.md)

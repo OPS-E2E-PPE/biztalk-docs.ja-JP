@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10651 |Microsoft Docs'
+title: シングル サインオン:イベント 10651 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,35 +12,35 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fff78608420b9fc3856c29df214b33aa24ba3873
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9b9f3a91e219ada44ace3ec392ef59d0e3eb4548
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37007499"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65397670"
 ---
-# <a name="single-sign-on-event-10651"></a><span data-ttu-id="c5afc-102">シングル サインオン: イベント 10651</span><span class="sxs-lookup"><span data-stu-id="c5afc-102">Single Sign-On: Event 10651</span></span>
-## <a name="details"></a><span data-ttu-id="c5afc-103">詳細</span><span class="sxs-lookup"><span data-stu-id="c5afc-103">Details</span></span>  
+# <a name="single-sign-on-event-10651"></a><span data-ttu-id="98ec9-102">シングル サインオン:イベント 10651</span><span class="sxs-lookup"><span data-stu-id="98ec9-102">Single Sign-On: Event 10651</span></span>
+## <a name="details"></a><span data-ttu-id="98ec9-103">詳細</span><span class="sxs-lookup"><span data-stu-id="98ec9-103">Details</span></span>  
 
 |                 |                                                            |
 |-----------------|------------------------------------------------------------|
-|  <span data-ttu-id="c5afc-104">製品名</span><span class="sxs-lookup"><span data-stu-id="c5afc-104">Product Name</span></span>   |                 <span data-ttu-id="c5afc-105">エンタープライズ シングル サインオン</span><span class="sxs-lookup"><span data-stu-id="c5afc-105">Enterprise Single Sign-On</span></span>                  |
-| <span data-ttu-id="c5afc-106">製品バージョン</span><span class="sxs-lookup"><span data-stu-id="c5afc-106">Product Version</span></span> | [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)] |
-|    <span data-ttu-id="c5afc-107">イベント ID</span><span class="sxs-lookup"><span data-stu-id="c5afc-107">Event ID</span></span>     |                           <span data-ttu-id="c5afc-108">10651</span><span class="sxs-lookup"><span data-stu-id="c5afc-108">10651</span></span>                            |
-|  <span data-ttu-id="c5afc-109">イベント ソース</span><span class="sxs-lookup"><span data-stu-id="c5afc-109">Event Source</span></span>   |                           <span data-ttu-id="c5afc-110">ENTSSO</span><span class="sxs-lookup"><span data-stu-id="c5afc-110">ENTSSO</span></span>                           |
-|    <span data-ttu-id="c5afc-111">コンポーネント</span><span class="sxs-lookup"><span data-stu-id="c5afc-111">Component</span></span>    |                            <span data-ttu-id="c5afc-112">N\A</span><span class="sxs-lookup"><span data-stu-id="c5afc-112">N\A</span></span>                             |
-|  <span data-ttu-id="c5afc-113">シンボル名</span><span class="sxs-lookup"><span data-stu-id="c5afc-113">Symbolic Name</span></span>  |               <span data-ttu-id="c5afc-114">SSO_INFO_PASSWORD_SYNC_STARTED</span><span class="sxs-lookup"><span data-stu-id="c5afc-114">SSO_INFO_PASSWORD_SYNC_STARTED</span></span>               |
-|  <span data-ttu-id="c5afc-115">メッセージ テキスト</span><span class="sxs-lookup"><span data-stu-id="c5afc-115">Message Text</span></span>   |       <span data-ttu-id="c5afc-116">パスワード同期サービスが正常に初期化されました。%r</span><span class="sxs-lookup"><span data-stu-id="c5afc-116">Password sync services were initialized OK.%r</span></span>        |
+|  <span data-ttu-id="98ec9-104">製品名</span><span class="sxs-lookup"><span data-stu-id="98ec9-104">Product Name</span></span>   |                 <span data-ttu-id="98ec9-105">エンタープライズ シングル サインオン</span><span class="sxs-lookup"><span data-stu-id="98ec9-105">Enterprise Single Sign-On</span></span>                  |
+| <span data-ttu-id="98ec9-106">製品バージョン</span><span class="sxs-lookup"><span data-stu-id="98ec9-106">Product Version</span></span> | [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)] |
+|    <span data-ttu-id="98ec9-107">イベント ID</span><span class="sxs-lookup"><span data-stu-id="98ec9-107">Event ID</span></span>     |                           <span data-ttu-id="98ec9-108">10651</span><span class="sxs-lookup"><span data-stu-id="98ec9-108">10651</span></span>                            |
+|  <span data-ttu-id="98ec9-109">イベント ソース</span><span class="sxs-lookup"><span data-stu-id="98ec9-109">Event Source</span></span>   |                           <span data-ttu-id="98ec9-110">ENTSSO</span><span class="sxs-lookup"><span data-stu-id="98ec9-110">ENTSSO</span></span>                           |
+|    <span data-ttu-id="98ec9-111">コンポーネント</span><span class="sxs-lookup"><span data-stu-id="98ec9-111">Component</span></span>    |                            <span data-ttu-id="98ec9-112">該当なし</span><span class="sxs-lookup"><span data-stu-id="98ec9-112">N\A</span></span>                             |
+|  <span data-ttu-id="98ec9-113">シンボル名</span><span class="sxs-lookup"><span data-stu-id="98ec9-113">Symbolic Name</span></span>  |               <span data-ttu-id="98ec9-114">SSO_INFO_PASSWORD_SYNC_STARTED</span><span class="sxs-lookup"><span data-stu-id="98ec9-114">SSO_INFO_PASSWORD_SYNC_STARTED</span></span>               |
+|  <span data-ttu-id="98ec9-115">メッセージ テキスト</span><span class="sxs-lookup"><span data-stu-id="98ec9-115">Message Text</span></span>   |       <span data-ttu-id="98ec9-116">パスワード同期サービスが初期化 OK.%r</span><span class="sxs-lookup"><span data-stu-id="98ec9-116">Password sync services were initialized OK.%r</span></span>        |
 
-## <a name="explanation"></a><span data-ttu-id="c5afc-117">説明</span><span class="sxs-lookup"><span data-stu-id="c5afc-117">Explanation</span></span>  
- <span data-ttu-id="c5afc-118">この情報イベントは、パスワード同期サービスが初期化されたことを示します。</span><span class="sxs-lookup"><span data-stu-id="c5afc-118">This Information event indicates that Password Sync services were initialized.</span></span>  
+## <a name="explanation"></a><span data-ttu-id="98ec9-117">説明</span><span class="sxs-lookup"><span data-stu-id="98ec9-117">Explanation</span></span>  
+ <span data-ttu-id="98ec9-118">この情報イベントは、パスワード同期サービスが初期化されたことを示します。</span><span class="sxs-lookup"><span data-stu-id="98ec9-118">This Information event indicates that Password Sync services were initialized.</span></span>  
 
-## <a name="user-action"></a><span data-ttu-id="c5afc-119">ユーザーの操作</span><span class="sxs-lookup"><span data-stu-id="c5afc-119">User Action</span></span>  
+## <a name="user-action"></a><span data-ttu-id="98ec9-119">ユーザーの操作</span><span class="sxs-lookup"><span data-stu-id="98ec9-119">User Action</span></span>  
 
-- <span data-ttu-id="c5afc-120">ユーザーの操作は必要ありません。</span><span class="sxs-lookup"><span data-stu-id="c5afc-120">No user action is necessary.</span></span>  
+- <span data-ttu-id="98ec9-120">ユーザー操作は必要ありません。</span><span class="sxs-lookup"><span data-stu-id="98ec9-120">No user action is necessary.</span></span>  
 
-  <span data-ttu-id="c5afc-121">詳細については、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ヘルプの次の情報を参照してください: </span><span class="sxs-lookup"><span data-stu-id="c5afc-121">For more information, see the following resources in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Help:</span></span>  
+  <span data-ttu-id="98ec9-121">詳細については、の次のリソースを参照してください。[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプ。</span><span class="sxs-lookup"><span data-stu-id="98ec9-121">For more information, see the following resources in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Help:</span></span>  
 
-- [<span data-ttu-id="c5afc-122">パスワード同期</span><span class="sxs-lookup"><span data-stu-id="c5afc-122">Password Synchronization</span></span>](../core/password-synchronization2.md)  
+- [<span data-ttu-id="98ec9-122">パスワード同期</span><span class="sxs-lookup"><span data-stu-id="98ec9-122">Password Synchronization</span></span>](../core/password-synchronization2.md)  
 
-- [<span data-ttu-id="c5afc-123">パスワード同期を管理する方法</span><span class="sxs-lookup"><span data-stu-id="c5afc-123">How to Administer Password Synchronization</span></span>](../core/how-to-administer-password-synchronization.md)
+- [<span data-ttu-id="98ec9-123">パスワード同期を管理する方法</span><span class="sxs-lookup"><span data-stu-id="98ec9-123">How to Administer Password Synchronization</span></span>](../core/how-to-administer-password-synchronization.md)

@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10654 |Microsoft Docs'
+title: シングル サインオン:イベント 10654 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,34 +12,34 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6ca59040b340d033ab6c355c0440378f09d87000
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 703462b0d4988a60bc0d6fc6b11629fe3dbe0502
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36974483"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65397649"
 ---
-# <a name="single-sign-on-event-10654"></a><span data-ttu-id="657ae-102">シングル サインオン: イベント 10654</span><span class="sxs-lookup"><span data-stu-id="657ae-102">Single Sign-On: Event 10654</span></span>
-## <a name="details"></a><span data-ttu-id="657ae-103">詳細</span><span class="sxs-lookup"><span data-stu-id="657ae-103">Details</span></span>  
+# <a name="single-sign-on-event-10654"></a><span data-ttu-id="fe7fb-102">シングル サインオン:イベント 10654</span><span class="sxs-lookup"><span data-stu-id="fe7fb-102">Single Sign-On: Event 10654</span></span>
+## <a name="details"></a><span data-ttu-id="fe7fb-103">詳細</span><span class="sxs-lookup"><span data-stu-id="fe7fb-103">Details</span></span>  
 
 |                 |                                                            |
 |-----------------|------------------------------------------------------------|
-|  <span data-ttu-id="657ae-104">製品名</span><span class="sxs-lookup"><span data-stu-id="657ae-104">Product Name</span></span>   |                 <span data-ttu-id="657ae-105">エンタープライズ シングル サインオン</span><span class="sxs-lookup"><span data-stu-id="657ae-105">Enterprise Single Sign-On</span></span>                  |
-| <span data-ttu-id="657ae-106">製品バージョン</span><span class="sxs-lookup"><span data-stu-id="657ae-106">Product Version</span></span> | [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)] |
-|    <span data-ttu-id="657ae-107">イベント ID</span><span class="sxs-lookup"><span data-stu-id="657ae-107">Event ID</span></span>     |                           <span data-ttu-id="657ae-108">10654</span><span class="sxs-lookup"><span data-stu-id="657ae-108">10654</span></span>                            |
-|  <span data-ttu-id="657ae-109">イベント ソース</span><span class="sxs-lookup"><span data-stu-id="657ae-109">Event Source</span></span>   |                           <span data-ttu-id="657ae-110">ENTSSO</span><span class="sxs-lookup"><span data-stu-id="657ae-110">ENTSSO</span></span>                           |
-|    <span data-ttu-id="657ae-111">コンポーネント</span><span class="sxs-lookup"><span data-stu-id="657ae-111">Component</span></span>    |                            <span data-ttu-id="657ae-112">N\A</span><span class="sxs-lookup"><span data-stu-id="657ae-112">N\A</span></span>                             |
-|  <span data-ttu-id="657ae-113">シンボル名</span><span class="sxs-lookup"><span data-stu-id="657ae-113">Symbolic Name</span></span>  |        <span data-ttu-id="657ae-114">SSO_ERROR_PS_WINDOWS_CALLBACK_ACCESS_DENIED</span><span class="sxs-lookup"><span data-stu-id="657ae-114">SSO_ERROR_PS_WINDOWS_CALLBACK_ACCESS_DENIED</span></span>         |
-|  <span data-ttu-id="657ae-115">メッセージ テキスト</span><span class="sxs-lookup"><span data-stu-id="657ae-115">Message Text</span></span>   |    <span data-ttu-id="657ae-116">パスワード同期サーバーへの (Windows の) アクセスは拒否されました。%r</span><span class="sxs-lookup"><span data-stu-id="657ae-116">Password sync server (for Windows) access denied.%r</span></span>     |
+|  <span data-ttu-id="fe7fb-104">製品名</span><span class="sxs-lookup"><span data-stu-id="fe7fb-104">Product Name</span></span>   |                 <span data-ttu-id="fe7fb-105">エンタープライズ シングル サインオン</span><span class="sxs-lookup"><span data-stu-id="fe7fb-105">Enterprise Single Sign-On</span></span>                  |
+| <span data-ttu-id="fe7fb-106">製品バージョン</span><span class="sxs-lookup"><span data-stu-id="fe7fb-106">Product Version</span></span> | [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)] |
+|    <span data-ttu-id="fe7fb-107">イベント ID</span><span class="sxs-lookup"><span data-stu-id="fe7fb-107">Event ID</span></span>     |                           <span data-ttu-id="fe7fb-108">10654</span><span class="sxs-lookup"><span data-stu-id="fe7fb-108">10654</span></span>                            |
+|  <span data-ttu-id="fe7fb-109">イベント ソース</span><span class="sxs-lookup"><span data-stu-id="fe7fb-109">Event Source</span></span>   |                           <span data-ttu-id="fe7fb-110">ENTSSO</span><span class="sxs-lookup"><span data-stu-id="fe7fb-110">ENTSSO</span></span>                           |
+|    <span data-ttu-id="fe7fb-111">コンポーネント</span><span class="sxs-lookup"><span data-stu-id="fe7fb-111">Component</span></span>    |                            <span data-ttu-id="fe7fb-112">該当なし</span><span class="sxs-lookup"><span data-stu-id="fe7fb-112">N\A</span></span>                             |
+|  <span data-ttu-id="fe7fb-113">シンボル名</span><span class="sxs-lookup"><span data-stu-id="fe7fb-113">Symbolic Name</span></span>  |        <span data-ttu-id="fe7fb-114">SSO_ERROR_PS_WINDOWS_CALLBACK_ACCESS_DENIED</span><span class="sxs-lookup"><span data-stu-id="fe7fb-114">SSO_ERROR_PS_WINDOWS_CALLBACK_ACCESS_DENIED</span></span>         |
+|  <span data-ttu-id="fe7fb-115">メッセージ テキスト</span><span class="sxs-lookup"><span data-stu-id="fe7fb-115">Message Text</span></span>   |    <span data-ttu-id="fe7fb-116">パスワード同期サーバー (Windows) 用アクセス denied.%r</span><span class="sxs-lookup"><span data-stu-id="fe7fb-116">Password sync server (for Windows) access denied.%r</span></span>     |
 
-## <a name="explanation"></a><span data-ttu-id="657ae-117">説明</span><span class="sxs-lookup"><span data-stu-id="657ae-117">Explanation</span></span>  
- <span data-ttu-id="657ae-118">このエラー イベントは、メッセージが [名前] サーバーに送信されたが、応答がブロックされたことを示します。</span><span class="sxs-lookup"><span data-stu-id="657ae-118">This Error event indicates that a message was sent to the [name] server but the reply was blocked.</span></span> <span data-ttu-id="657ae-119">原因として、プロトコルが正しくない、サーバーのセキュリティ アクセス許可が不十分など、さまざまな理由が考えられます。</span><span class="sxs-lookup"><span data-stu-id="657ae-119">This can be caused by a number of different reasons, such as incorrect protocol or insufficient security permissions on the server.</span></span>  
+## <a name="explanation"></a><span data-ttu-id="fe7fb-117">説明</span><span class="sxs-lookup"><span data-stu-id="fe7fb-117">Explanation</span></span>  
+ <span data-ttu-id="fe7fb-118">このエラー イベントは、[名前] サーバーにメッセージが送信されましたが、応答がブロックされたことを示します。</span><span class="sxs-lookup"><span data-stu-id="fe7fb-118">This Error event indicates that a message was sent to the [name] server but the reply was blocked.</span></span> <span data-ttu-id="fe7fb-119">さまざまなプロトコルが正しくないやサーバー上の不十分なセキュリティ アクセス許可など、さまざまな理由の可能性があります。</span><span class="sxs-lookup"><span data-stu-id="fe7fb-119">This can be caused by a number of different reasons, such as incorrect protocol or insufficient security permissions on the server.</span></span>  
 
-## <a name="user-action"></a><span data-ttu-id="657ae-120">ユーザーの操作</span><span class="sxs-lookup"><span data-stu-id="657ae-120">User Action</span></span>  
- <span data-ttu-id="657ae-121">このエラーを解決するには、次の操作を行います。</span><span class="sxs-lookup"><span data-stu-id="657ae-121">To resolve this error, do the following:</span></span>  
+## <a name="user-action"></a><span data-ttu-id="fe7fb-120">ユーザーの操作</span><span class="sxs-lookup"><span data-stu-id="fe7fb-120">User Action</span></span>  
+ <span data-ttu-id="fe7fb-121">このエラーを解決するには、次の操作を行います。</span><span class="sxs-lookup"><span data-stu-id="fe7fb-121">To resolve this error, do the following:</span></span>  
 
-- <span data-ttu-id="657ae-122">このメッセージの情報と、イベント ログで関連情報をメモし、マイクロソフト製品サポート サービスにお問い合わせください。</span><span class="sxs-lookup"><span data-stu-id="657ae-122">Note the information in this message, and any relevant information in the event log, and contact Microsoft Product Support Services.</span></span>  
+- <span data-ttu-id="fe7fb-122">このメッセージの情報と、イベント ログで関連情報をメモし、マイクロソフト製品サポート サービスにお問い合わせください。</span><span class="sxs-lookup"><span data-stu-id="fe7fb-122">Note the information in this message, and any relevant information in the event log, and contact Microsoft Product Support Services.</span></span>  
 
-  <span data-ttu-id="657ae-123">詳細については、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ヘルプの次の情報を参照してください: </span><span class="sxs-lookup"><span data-stu-id="657ae-123">For more information, see the following resources in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Help:</span></span>  
+  <span data-ttu-id="fe7fb-123">詳細については、の次のリソースを参照してください。[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプ。</span><span class="sxs-lookup"><span data-stu-id="fe7fb-123">For more information, see the following resources in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Help:</span></span>  
 
-- [<span data-ttu-id="657ae-124">パスワード同期</span><span class="sxs-lookup"><span data-stu-id="657ae-124">Password Synchronization</span></span>](../core/password-synchronization2.md)
+- [<span data-ttu-id="fe7fb-124">パスワード同期</span><span class="sxs-lookup"><span data-stu-id="fe7fb-124">Password Synchronization</span></span>](../core/password-synchronization2.md)

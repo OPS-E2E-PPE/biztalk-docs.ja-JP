@@ -1,5 +1,5 @@
 ---
-title: 動的な解決を使用して、ルーティング |Microsoft ドキュメント
+title: 動的な解決を使用して、ルーティング |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,20 +12,20 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 50fef24f75b988bdd4d6ceab392d582365fcc802
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 842cc030fd6bc84e23d4c1b2e28af6724d2001c8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22295010"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396470"
 ---
-# <a name="using-dynamic-resolution-and-routing"></a><span data-ttu-id="8a830-102">動的な解決を使用して、ルーティング</span><span class="sxs-lookup"><span data-stu-id="8a830-102">Using Dynamic Resolution and Routing</span></span>
-<span data-ttu-id="8a830-103">行程ベースのルーティング、だけでなく、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]コンポーネントとサービスでルーティングについては、ハードコーディング要件を回避するには、構成ベースのルーティングと動的な解像度をサポートしています。</span><span class="sxs-lookup"><span data-stu-id="8a830-103">In addition to itinerary-based routing, the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] supports dynamic resolution as configuration-based routing to avoid the requirement for hard-coded routing information in components and services.</span></span> <span data-ttu-id="8a830-104">このセクションのトピックは次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="8a830-104">This section contains the following topics:</span></span>  
+# <a name="using-dynamic-resolution-and-routing"></a><span data-ttu-id="60f99-102">動的な解決を使用して、ルーティング</span><span class="sxs-lookup"><span data-stu-id="60f99-102">Using Dynamic Resolution and Routing</span></span>
+<span data-ttu-id="60f99-103">スケジュールに基づくルーティングだけでなく、[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]のコンポーネントとサービスのルーティング情報をハード コーディングされた要件を回避するには、構成ベースのルーティングと動的解像度をサポートしています。</span><span class="sxs-lookup"><span data-stu-id="60f99-103">In addition to itinerary-based routing, the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] supports dynamic resolution as configuration-based routing to avoid the requirement for hard-coded routing information in components and services.</span></span> <span data-ttu-id="60f99-104">このセクションでは、次のトピックについて説明します。</span><span class="sxs-lookup"><span data-stu-id="60f99-104">This section contains the following topics:</span></span>  
   
--   [<span data-ttu-id="8a830-105">動的な解像度とルーティングの概要</span><span class="sxs-lookup"><span data-stu-id="8a830-105">Dynamic Resolution and Routing Overview</span></span>](../esb-toolkit/dynamic-resolution-and-routing-overview.md)  
+-   [<span data-ttu-id="60f99-105">動的な解決とルーティングの概要</span><span class="sxs-lookup"><span data-stu-id="60f99-105">Dynamic Resolution and Routing Overview</span></span>](../esb-toolkit/dynamic-resolution-and-routing-overview.md)  
   
--   [<span data-ttu-id="8a830-106">競合回避モジュールとアダプターのプロバイダー フレームワーク</span><span class="sxs-lookup"><span data-stu-id="8a830-106">The Resolver and Adapter Provider Framework</span></span>](../esb-toolkit/the-resolver-and-adapter-provider-framework.md)  
+-   [<span data-ttu-id="60f99-106">リゾルバーとアダプターのプロバイダー フレームワーク</span><span class="sxs-lookup"><span data-stu-id="60f99-106">The Resolver and Adapter Provider Framework</span></span>](../esb-toolkit/the-resolver-and-adapter-provider-framework.md)  
   
--   [<span data-ttu-id="8a830-107">コード内の競合回避モジュール コンポーネントを使用します。</span><span class="sxs-lookup"><span data-stu-id="8a830-107">Using the Resolver Components in Your Code</span></span>](../esb-toolkit/using-the-resolver-components-in-your-code.md)  
+-   [<span data-ttu-id="60f99-107">コードのリゾルバー コンポーネントを利用する</span><span class="sxs-lookup"><span data-stu-id="60f99-107">Using the Resolver Components in Your Code</span></span>](../esb-toolkit/using-the-resolver-components-in-your-code.md)  
   
--   [<span data-ttu-id="8a830-108">動的ルーティングを使用します。</span><span class="sxs-lookup"><span data-stu-id="8a830-108">Using Dynamic Routing</span></span>](../esb-toolkit/using-dynamic-routing.md)
+-   [<span data-ttu-id="60f99-108">動的ルーティングを利用する</span><span class="sxs-lookup"><span data-stu-id="60f99-108">Using Dynamic Routing</span></span>](../esb-toolkit/using-dynamic-routing.md)

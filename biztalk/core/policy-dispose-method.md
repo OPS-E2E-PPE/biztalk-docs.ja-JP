@@ -1,5 +1,5 @@
 ---
-title: Policy.Dispose メソッド |Microsoft ドキュメント
+title: Policy.Dispose メソッド |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,19 +12,19 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ba4713616edf55c149a215a6f7842cd5d0353dfe
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1eba833edcedd814fffd823bfe01729b77f0f033
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22263634"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65394960"
 ---
-# <a name="policydispose-method"></a><span data-ttu-id="c255b-102">Policy.Dispose メソッド</span><span class="sxs-lookup"><span data-stu-id="c255b-102">Policy.Dispose Method</span></span>
-<span data-ttu-id="c255b-103">**Policy.Dispose**メソッドによって使用されているリソースを解放する、**ポリシー**クラス、さらにを返します、**ポリシー**キャッシュするオブジェクト。</span><span class="sxs-lookup"><span data-stu-id="c255b-103">The **Policy.Dispose** method releases resources used by the **Policy** class, and also returns the **Policy** object to the cache.</span></span> <span data-ttu-id="c255b-104">同じポリシーが再度呼び出される場合、キャッシュされた**ポリシー**オブジェクトを使用すると、新しいを作成するために必要な時間を節約**ポリシー**オブジェクト。</span><span class="sxs-lookup"><span data-stu-id="c255b-104">When the same policy is invoked again, the cached **Policy** object is used, which saves the time needed for creating a new **Policy** object.</span></span>  
+# <a name="policydispose-method"></a><span data-ttu-id="b49c9-102">Policy.Dispose メソッド</span><span class="sxs-lookup"><span data-stu-id="b49c9-102">Policy.Dispose Method</span></span>
+<span data-ttu-id="b49c9-103">**Policy.Dispose**メソッドで使用されるリソースを解放、**ポリシー**クラス、およびも返します、**ポリシー**キャッシュするオブジェクト。</span><span class="sxs-lookup"><span data-stu-id="b49c9-103">The **Policy.Dispose** method releases resources used by the **Policy** class, and also returns the **Policy** object to the cache.</span></span> <span data-ttu-id="b49c9-104">同じポリシーが再度呼び出されるとき、キャッシュされた**ポリシー**オブジェクトを使用すると、新しいを作成するために必要な時間を節約**ポリシー**オブジェクト。</span><span class="sxs-lookup"><span data-stu-id="b49c9-104">When the same policy is invoked again, the cached **Policy** object is used, which saves the time needed for creating a new **Policy** object.</span></span>  
   
- <span data-ttu-id="c255b-105">明示的に呼び出さない場合、 **Policy.Dispose**メソッド、ポリシーは返されませんをキャッシュに、.NET ランタイムがガベージ コレクション プロセス中に、オブジェクトが解放されるまでです。</span><span class="sxs-lookup"><span data-stu-id="c255b-105">If you do not explicitly call the **Policy.Dispose** method, then the policy is not returned to the cache until the .NET runtime frees up the object during the garbage collection process.</span></span> <span data-ttu-id="c255b-106">そのため、呼び出す必要は**Policy.Dispose**使用が終了したら、**ポリシー**オブジェクト。</span><span class="sxs-lookup"><span data-stu-id="c255b-106">Therefore, you should call **Policy.Dispose** when you are finished with the **Policy** object.</span></span>  
+ <span data-ttu-id="b49c9-105">明示的に呼び出さない場合、 **Policy.Dispose**メソッド、ポリシーは返されませんをキャッシュに、ガベージ コレクション プロセス中に、.NET ランタイムがオブジェクトを解放するまでです。</span><span class="sxs-lookup"><span data-stu-id="b49c9-105">If you do not explicitly call the **Policy.Dispose** method, then the policy is not returned to the cache until the .NET runtime frees up the object during the garbage collection process.</span></span> <span data-ttu-id="b49c9-106">そのため、呼び出す必要がある**Policy.Dispose**使用が終了したら、**ポリシー**オブジェクト。</span><span class="sxs-lookup"><span data-stu-id="b49c9-106">Therefore, you should call **Policy.Dispose** when you are finished with the **Policy** object.</span></span>  
   
- <span data-ttu-id="c255b-107">使用するサンプル コード、 **Policy.Dispose**メソッドを次に示します。</span><span class="sxs-lookup"><span data-stu-id="c255b-107">The sample code for using the **Policy.Dispose** method is as follows:</span></span>  
+ <span data-ttu-id="b49c9-107">使用するためのサンプル コード、 **Policy.Dispose**メソッドを次に示します。</span><span class="sxs-lookup"><span data-stu-id="b49c9-107">The sample code for using the **Policy.Dispose** method is as follows:</span></span>  
   
 ```  
 xmlDocument = IncomingXMLMessage.XMLCase;  

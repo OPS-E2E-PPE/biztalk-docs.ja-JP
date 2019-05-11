@@ -1,5 +1,5 @@
 ---
-title: BAM 定義スキーマについて | Microsoft Docs
+title: BAM 定義スキーマとは何ですか。 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,47 +17,47 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0d5780be22259fcd118ab70a0bc80174b53a9f27
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: b8968a30f9e78947cee20ddc10914413041fbac9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25975800"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395934"
 ---
-# <a name="what-is-a-bam-definition-schema"></a><span data-ttu-id="571d6-103">BAM 定義スキーマについて</span><span class="sxs-lookup"><span data-stu-id="571d6-103">What Is a BAM Definition Schema?</span></span>
-<span data-ttu-id="571d6-104">BAM 定義スキーマでは、ビジネス アナリストが作成した監視モデルの構造を定義します。</span><span class="sxs-lookup"><span data-stu-id="571d6-104">The BAM definition schema defines the structure of the observation model created by the business analyst.</span></span>  
+# <a name="what-is-a-bam-definition-schema"></a><span data-ttu-id="7e79f-103">BAM 定義スキーマとは何ですか。</span><span class="sxs-lookup"><span data-stu-id="7e79f-103">What Is a BAM Definition Schema?</span></span>
+<span data-ttu-id="7e79f-104">BAM 定義スキーマでは、ビジネス アナリストが作成した監視モデルの構造を定義します。</span><span class="sxs-lookup"><span data-stu-id="7e79f-104">The BAM definition schema defines the structure of the observation model created by the business analyst.</span></span>  
   
- <span data-ttu-id="571d6-105">このスキーマでは、ドキュメントの要素とサブ要素を含めて、BAM 定義の XML ドキュメントの構造を定義します。</span><span class="sxs-lookup"><span data-stu-id="571d6-105">The schema defines the structure of the BAM definition XML document including the document's elements and subelements.</span></span> <span data-ttu-id="571d6-106">たとえば、ルート要素は BAM 定義です。BAM 定義には次の要素があります。</span><span class="sxs-lookup"><span data-stu-id="571d6-106">For example, the root element is the BAM definition, and inside the BAM definition there are the following elements:</span></span>  
+ <span data-ttu-id="7e79f-105">スキーマは、ドキュメントの要素とサブ要素を含む BAM 定義 XML ドキュメントの構造を定義します。</span><span class="sxs-lookup"><span data-stu-id="7e79f-105">The schema defines the structure of the BAM definition XML document including the document's elements and subelements.</span></span> <span data-ttu-id="7e79f-106">ルート要素は、BAM 定義して、BAM 定義の内部では、次の要素があります。</span><span class="sxs-lookup"><span data-stu-id="7e79f-106">For example, the root element is the BAM definition, and inside the BAM definition there are the following elements:</span></span>  
   
--   <span data-ttu-id="571d6-107">アクティビティ</span><span class="sxs-lookup"><span data-stu-id="571d6-107">Activities</span></span>  
+-   <span data-ttu-id="7e79f-107">アクティビティ</span><span class="sxs-lookup"><span data-stu-id="7e79f-107">Activities</span></span>  
   
--   <span data-ttu-id="571d6-108">ビュー</span><span class="sxs-lookup"><span data-stu-id="571d6-108">Views</span></span>  
+-   <span data-ttu-id="7e79f-108">ビュー</span><span class="sxs-lookup"><span data-stu-id="7e79f-108">Views</span></span>  
   
--   <span data-ttu-id="571d6-109">キューブ</span><span class="sxs-lookup"><span data-stu-id="571d6-109">Cubes</span></span>  
+-   <span data-ttu-id="7e79f-109">キューブ</span><span class="sxs-lookup"><span data-stu-id="7e79f-109">Cubes</span></span>  
   
--   <span data-ttu-id="571d6-110">警告</span><span class="sxs-lookup"><span data-stu-id="571d6-110">Alerts</span></span>  
-  
-> [!NOTE]
->  <span data-ttu-id="571d6-111">BAM 定義 XML には、2 つのビューが含まれている、そのユーザーのみを呼び出すことで、ビューのいずれかに対して権限のある**GetViewDefinition**ユーザーが両方のビューの定義では返されます。</span><span class="sxs-lookup"><span data-stu-id="571d6-111">If the BAM definition XML contains two views and the user only has permission for one of the views, on making a call to **GetViewDefinition**, the user gets back the definition of both views.</span></span>  
-  
- <span data-ttu-id="571d6-112">スキーマでは、ドキュメントの制約を定義します。</span><span class="sxs-lookup"><span data-stu-id="571d6-112">The schema defines the document constraints.</span></span> <span data-ttu-id="571d6-113">制約では、一部の要素は他の特定の要素しか参照できないことなどが指定されます。</span><span class="sxs-lookup"><span data-stu-id="571d6-113">The constraints dictate, for example, that some elements can only reference certain other elements.</span></span>  
-  
- <span data-ttu-id="571d6-114">BAM アドインを使用して Excel 用 BAM アドインへのエクスポート XML 機能を使用して、XML ファイルにエクスポートできるワークシートを作成する、任意のテキスト エディターでは、BAM 定義 (このスキーマのインスタンス) を含む XML ファイルを作成できます。</span><span class="sxs-lookup"><span data-stu-id="571d6-114">You can create an XML file containing the BAM definitions (instances of this schema) with any text editor or by using BAM Add-in for Excel to create a worksheet that can be exported into an XML file by using the BAM add-in export to XML feature .</span></span>  
-  
- <span data-ttu-id="571d6-115">BAM アクティビティと BAM ビューを定義すれば、BAM 管理ユーティリティ (bm.exe) でこのワークシートを読み取り、ワークシートから XML を取得して、自動的にインフラストラクチャに展開することができるため、XML ファイルを手動でエクスポートする必要はありません。</span><span class="sxs-lookup"><span data-stu-id="571d6-115">Once you define the BAM activities and views, you do not have to manually export the XML file, since the BAM Management utility (bm.exe) can read this spreadsheet and get the XML from it to deploy your infrastructure automatically.</span></span> <span data-ttu-id="571d6-116">結果は、スプレッドシートという名前の別のコピー\<ブック名\>>_livedata.xls です。</span><span class="sxs-lookup"><span data-stu-id="571d6-116">The result is another copy of the spreadsheet named \<your workbook name\>_Livedata.xls.</span></span> <span data-ttu-id="571d6-117">この新しいワークシートを使用するには、ライブ データ ソースに接続し、ピボット テーブル レポートの集計を表示します。</span><span class="sxs-lookup"><span data-stu-id="571d6-117">You can use this new spreadsheet to connect to your live data source and view the aggregations in PivotTable reports.</span></span>  
+-   <span data-ttu-id="7e79f-110">オブジェクト エクスプローラーには</span><span class="sxs-lookup"><span data-stu-id="7e79f-110">Alerts</span></span>  
   
 > [!NOTE]
->  <span data-ttu-id="571d6-118">手動でエクスポートして XML ファイル、スプレッドシートの上部にある BAM のメニュー項目を使用して、BAM 管理ユーティリティ、エクスポートされた XML ファイルと Microsoft Excel ファイルではなく展開する場合は、Office ツールを使用してライブ データを表示することはできません。</span><span class="sxs-lookup"><span data-stu-id="571d6-118">If you manually export your XML file through the BAM menu item at the top of the spreadsheet and use the BAM Management utility to deploy the exported XML file and not the Microsoft Excel file, then you cannot view your live data using the Office tools.</span></span>  
+>  <span data-ttu-id="7e79f-111">BAM 定義 XML には、2 つのビューが含まれています。 いて、ユーザーがのみを呼び出すことで、ビューのいずれかの権限を持って**GetViewDefinition**、ユーザーが失意両方のビューの定義。</span><span class="sxs-lookup"><span data-stu-id="7e79f-111">If the BAM definition XML contains two views and the user only has permission for one of the views, on making a call to **GetViewDefinition**, the user gets back the definition of both views.</span></span>  
+  
+ <span data-ttu-id="7e79f-112">スキーマは、ドキュメントの制約を定義します。</span><span class="sxs-lookup"><span data-stu-id="7e79f-112">The schema defines the document constraints.</span></span> <span data-ttu-id="7e79f-113">制約、ディクテーションなど、いくつかの要素の場合、その他の特定の要素しか参照します。</span><span class="sxs-lookup"><span data-stu-id="7e79f-113">The constraints dictate, for example, that some elements can only reference certain other elements.</span></span>  
+  
+ <span data-ttu-id="7e79f-114">任意のテキスト エディターまたは XML 機能へのエクスポート BAM アドインを使用して XML ファイルにエクスポートできるワークシートを作成する BAM アドインの Excel を使用して、BAM 定義 (このスキーマのインスタンス) を含む XML ファイルを作成することができます。</span><span class="sxs-lookup"><span data-stu-id="7e79f-114">You can create an XML file containing the BAM definitions (instances of this schema) with any text editor or by using BAM Add-in for Excel to create a worksheet that can be exported into an XML file by using the BAM add-in export to XML feature .</span></span>  
+  
+ <span data-ttu-id="7e79f-115">BAM アクティビティとビューを定義すると、BAM 管理ユーティリティ (bm.exe) を読み取り、このスプレッドシート、インフラストラクチャを自動的に展開してから、XML を取得するために、XML ファイルを手動でエクスポートする必要はありません。</span><span class="sxs-lookup"><span data-stu-id="7e79f-115">Once you define the BAM activities and views, you do not have to manually export the XML file, since the BAM Management utility (bm.exe) can read this spreadsheet and get the XML from it to deploy your infrastructure automatically.</span></span> <span data-ttu-id="7e79f-116">結果は、スプレッドシートをという名前の別のコピー \<、ブック名\>>_livedata.xls します。</span><span class="sxs-lookup"><span data-stu-id="7e79f-116">The result is another copy of the spreadsheet named \<your workbook name\>_Livedata.xls.</span></span> <span data-ttu-id="7e79f-117">この新しいスプレッドシートを使用して、ライブ データ ソースに接続し、ピボット テーブル レポートの集計を表示することができます。</span><span class="sxs-lookup"><span data-stu-id="7e79f-117">You can use this new spreadsheet to connect to your live data source and view the aggregations in PivotTable reports.</span></span>  
   
 > [!NOTE]
->  <span data-ttu-id="571d6-119">BAM 定義を XML としてエクスポートするときは、BAM 定義をローカルホストにエクスポートできません。</span><span class="sxs-lookup"><span data-stu-id="571d6-119">When you export a BAM definition as XML, you cannot export the BAM definition to localhost.</span></span> <span data-ttu-id="571d6-120">たとえば、BAM 定義を `\\localhost\C$\definition1.xml` にエクスポートしようとすると、エラーになります。</span><span class="sxs-lookup"><span data-stu-id="571d6-120">For example, trying to export the BAM definition to `\\localhost\C$\definition1.xml` would result in an error.</span></span>  
+>  <span data-ttu-id="7e79f-118">手動でスプレッドシートの上部にある BAM メニュー項目を使用して XML ファイルをエクスポートし、BAM 管理ユーティリティを使用して、エクスポートされた XML ファイルと Microsoft Excel ファイルではなく展開する、Office ツールを使用して、ライブ データを表示できません。</span><span class="sxs-lookup"><span data-stu-id="7e79f-118">If you manually export your XML file through the BAM menu item at the top of the spreadsheet and use the BAM Management utility to deploy the exported XML file and not the Microsoft Excel file, then you cannot view your live data using the Office tools.</span></span>  
+  
+> [!NOTE]
+>  <span data-ttu-id="7e79f-119">BAM 定義を XML としてエクスポートするときに、localhost に BAM 定義をエクスポートできません。</span><span class="sxs-lookup"><span data-stu-id="7e79f-119">When you export a BAM definition as XML, you cannot export the BAM definition to localhost.</span></span> <span data-ttu-id="7e79f-120">BAM 定義をエクスポートしようとしてなど`\\localhost\C$\definition1.xml`エラーになります。</span><span class="sxs-lookup"><span data-stu-id="7e79f-120">For example, trying to export the BAM definition to `\\localhost\C$\definition1.xml` would result in an error.</span></span>  
 >   
->  <span data-ttu-id="571d6-121">同様に、ローカルホストからは BAM 定義をインポートできません。</span><span class="sxs-lookup"><span data-stu-id="571d6-121">Similarly, you cannot import a BAM definition from localhost.</span></span>  
+>  <span data-ttu-id="7e79f-121">同様に、localhost から BAM 定義をインポートすることはできません。</span><span class="sxs-lookup"><span data-stu-id="7e79f-121">Similarly, you cannot import a BAM definition from localhost.</span></span>  
   
 > [!NOTE]
->  <span data-ttu-id="571d6-122">アクティビティまたはビューを変更する場合は、BAM 定義を削除してから再展開する必要があります。</span><span class="sxs-lookup"><span data-stu-id="571d6-122">If you change the activities or views, you need to remove and then redeploy the BAM definition.</span></span>  
+>  <span data-ttu-id="7e79f-122">アクティビティまたはビューを変更する場合は、削除を BAM 定義を再デプロイする必要があります。</span><span class="sxs-lookup"><span data-stu-id="7e79f-122">If you change the activities or views, you need to remove and then redeploy the BAM definition.</span></span>  
   
- <span data-ttu-id="571d6-123">BAM 定義スキーマ自体のファイルを次に示します。</span><span class="sxs-lookup"><span data-stu-id="571d6-123">The following file is the BAM definition schema itself:</span></span>  
+ <span data-ttu-id="7e79f-123">次のファイルは、BAM 定義スキーマ自体を示します。</span><span class="sxs-lookup"><span data-stu-id="7e79f-123">The following file is the BAM definition schema itself:</span></span>  
   
 ```  
 <?xml version="1.0" encoding="utf-16"?>  
@@ -685,9 +685,9 @@ ms.locfileid: "25975800"
 </xs:schema>  
 ```  
   
- <span data-ttu-id="571d6-124">**XML の例**</span><span class="sxs-lookup"><span data-stu-id="571d6-124">**Example XML**</span></span>  
+ <span data-ttu-id="7e79f-124">**XML の例**</span><span class="sxs-lookup"><span data-stu-id="7e79f-124">**Example XML**</span></span>  
   
- <span data-ttu-id="571d6-125">BAM 定義スキーマに準拠した XML ファイルの例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="571d6-125">The following example is an XML file that conforms to the BAM definition schema.</span></span>  
+ <span data-ttu-id="7e79f-125">次の例は、BAM 定義スキーマに準拠した XML ファイルです。</span><span class="sxs-lookup"><span data-stu-id="7e79f-125">The following example is an XML file that conforms to the BAM definition schema.</span></span>  
   
 ```  
 <?xml version="1.0" encoding="utf-8" ?>  
@@ -924,6 +924,6 @@ ms.locfileid: "25975800"
 </BAM:BAMDefinition>  
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="571d6-126">参照</span><span class="sxs-lookup"><span data-stu-id="571d6-126">See Also</span></span>  
- <span data-ttu-id="571d6-127">[BAM 構成スキーマ](../core/bam-configuration-schema.md) </span><span class="sxs-lookup"><span data-stu-id="571d6-127">[BAM Configuration Schema](../core/bam-configuration-schema.md) </span></span>  
- [<span data-ttu-id="571d6-128">BAM 動的インフラストラクチャ</span><span class="sxs-lookup"><span data-stu-id="571d6-128">BAM Dynamic Infrastructure</span></span>](../core/bam-dynamic-infrastructure.md)
+## <a name="see-also"></a><span data-ttu-id="7e79f-126">参照</span><span class="sxs-lookup"><span data-stu-id="7e79f-126">See Also</span></span>  
+ <span data-ttu-id="7e79f-127">[BAM 構成スキーマ](../core/bam-configuration-schema.md) </span><span class="sxs-lookup"><span data-stu-id="7e79f-127">[BAM Configuration Schema](../core/bam-configuration-schema.md) </span></span>  
+ [<span data-ttu-id="7e79f-128">BAM 動的インフラストラクチャ</span><span class="sxs-lookup"><span data-stu-id="7e79f-128">BAM Dynamic Infrastructure</span></span>](../core/bam-dynamic-infrastructure.md)

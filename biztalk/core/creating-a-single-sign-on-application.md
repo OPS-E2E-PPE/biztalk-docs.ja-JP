@@ -1,5 +1,5 @@
 ---
-title: シングル サインオン アプリケーションを作成する |Microsoft ドキュメント
+title: シングル サインオン アプリケーションの作成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,18 +12,18 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5d941c7e890842c270ae109d3de6c8c0c007f668
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3a2ebbe50a0f4917e6cc7ccab2757991fb1241fe
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22237914"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65390080"
 ---
-# <a name="creating-a-single-sign-on-application"></a><span data-ttu-id="58455-102">シングル サインオン アプリケーションを作成します。</span><span class="sxs-lookup"><span data-stu-id="58455-102">Creating a Single Sign-On Application</span></span>
-<span data-ttu-id="58455-103">このセクションでは、エンタープライズ シングル サインオン (SSO) テクノロジについて説明します。</span><span class="sxs-lookup"><span data-stu-id="58455-103">This section provides information about Enterprise Single Sign-On (SSO) technology.</span></span>  
+# <a name="creating-a-single-sign-on-application"></a><span data-ttu-id="3444a-102">シングル サインオン アプリケーションの作成</span><span class="sxs-lookup"><span data-stu-id="3444a-102">Creating a Single Sign-On Application</span></span>
+<span data-ttu-id="3444a-103">このセクションでは、エンタープライズ シングル サインオン (SSO) テクノロジについての情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="3444a-103">This section provides information about Enterprise Single Sign-On (SSO) technology.</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="58455-104">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="58455-104">In This Section</span></span>  
+## <a name="in-this-section"></a><span data-ttu-id="3444a-104">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="3444a-104">In This Section</span></span>  
   
--   [<span data-ttu-id="58455-105">プログラミングのシングル サインオンの概要</span><span class="sxs-lookup"><span data-stu-id="58455-105">Programming Single Sign-On Overview</span></span>](../core/programming-single-sign-on-overview.md)  
+-   [<span data-ttu-id="3444a-105">シングル サインオンのプログラミングの概要</span><span class="sxs-lookup"><span data-stu-id="3444a-105">Programming Single Sign-On Overview</span></span>](../core/programming-single-sign-on-overview.md)  
   
--   [<span data-ttu-id="58455-106">エンタープライズ シングル サインオンを使用したプログラミング</span><span class="sxs-lookup"><span data-stu-id="58455-106">Programming with Enterprise Single Sign-On</span></span>](../core/programming-with-enterprise-single-sign-on.md)
+-   [<span data-ttu-id="3444a-106">Enterprise Single Sign-On によるプログラミング</span><span class="sxs-lookup"><span data-stu-id="3444a-106">Programming with Enterprise Single Sign-On</span></span>](../core/programming-with-enterprise-single-sign-on.md)

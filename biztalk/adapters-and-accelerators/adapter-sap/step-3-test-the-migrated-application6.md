@@ -1,5 +1,5 @@
 ---
-title: '手順 3: テスト移行 Application6 |Microsoft Docs'
+title: 手順 3:テスト移行 Application6 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,29 +15,29 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f2116888c3e56128b7e474e1370930a39e94a93a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 0ab38d728eeb5c947dbda1fd38706d0ac5257002
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37006914"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65372783"
 ---
-# <a name="step-3-test-the-migrated-application"></a><span data-ttu-id="0cfb6-102">手順 3: 移行後のアプリケーションをテストします。</span><span class="sxs-lookup"><span data-stu-id="0cfb6-102">Step 3: Test the Migrated Application</span></span>
-<span data-ttu-id="0cfb6-103">![ステップ 3/3](../../adapters-and-accelerators/adapter-oracle-database/media/step-3of3.gif "Step_3of3")</span><span class="sxs-lookup"><span data-stu-id="0cfb6-103">![Step 3 of 3](../../adapters-and-accelerators/adapter-oracle-database/media/step-3of3.gif "Step_3of3")</span></span>  
+# <a name="step-3-test-the-migrated-application"></a><span data-ttu-id="950d5-102">手順 3:移行したアプリケーションをテストします。</span><span class="sxs-lookup"><span data-stu-id="950d5-102">Step 3: Test the Migrated Application</span></span>
+<span data-ttu-id="950d5-103">![ステップ 3/3](../../adapters-and-accelerators/adapter-oracle-database/media/step-3of3.gif "Step_3of3")</span><span class="sxs-lookup"><span data-stu-id="950d5-103">![Step 3 of 3](../../adapters-and-accelerators/adapter-oracle-database/media/step-3of3.gif "Step_3of3")</span></span>  
   
- <span data-ttu-id="0cfb6-104">**所要時間:** 5 分</span><span class="sxs-lookup"><span data-stu-id="0cfb6-104">**Time to complete:** 5 minutes</span></span>  
+ <span data-ttu-id="950d5-104">**所要時間:** 5 分</span><span class="sxs-lookup"><span data-stu-id="950d5-104">**Time to complete:** 5 minutes</span></span>  
   
- <span data-ttu-id="0cfb6-105">**目標:** この手順では、SD_RFC_CUSTOMER_GET RFC を呼び出すことによって移行済みのアプリケーションをテストします。</span><span class="sxs-lookup"><span data-stu-id="0cfb6-105">**Objective:** In this step, you will test the migrated application by invoking the SD_RFC_CUSTOMER_GET RFC.</span></span> <span data-ttu-id="0cfb6-106">これを行うには、vPrev SAP アダプターを使用して生成されたスキーマに準拠した要求メッセージをドロップします。</span><span class="sxs-lookup"><span data-stu-id="0cfb6-106">To do this, you drop a request message that conforms to the schema generated using the vPrev SAP adapter.</span></span>  
+ <span data-ttu-id="950d5-105">**目標:** この手順では、SD_RFC_CUSTOMER_GET RFC を呼び出すことによって、移行済みのアプリケーションをテストします。</span><span class="sxs-lookup"><span data-stu-id="950d5-105">**Objective:** In this step, you will test the migrated application by invoking the SD_RFC_CUSTOMER_GET RFC.</span></span> <span data-ttu-id="950d5-106">これを行うには、vPrev SAP アダプターを使用して生成されたスキーマに準拠した要求メッセージをドロップします。</span><span class="sxs-lookup"><span data-stu-id="950d5-106">To do this, you drop a request message that conforms to the schema generated using the vPrev SAP adapter.</span></span>  
   
-## <a name="prerequisites"></a><span data-ttu-id="0cfb6-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="0cfb6-107">Prerequisites</span></span>  
+## <a name="prerequisites"></a><span data-ttu-id="950d5-107">前提条件</span><span class="sxs-lookup"><span data-stu-id="950d5-107">Prerequisites</span></span>  
   
-- <span data-ttu-id="0cfb6-108">BizTalk アプリケーションを構成するには、BizTalk オーケストレーションの論理ポートを BizTalk Server 管理コンソールで物理ポートにマッピングします。</span><span class="sxs-lookup"><span data-stu-id="0cfb6-108">Configure the BizTalk application by mapping the logical ports in the BizTalk orchestration to physical ports in the BizTalk Server Administration console.</span></span>  
+- <span data-ttu-id="950d5-108">BizTalk アプリケーションを構成するには、BizTalk オーケストレーションの論理ポートを BizTalk Server 管理コンソールで物理ポートにマッピングします。</span><span class="sxs-lookup"><span data-stu-id="950d5-108">Configure the BizTalk application by mapping the logical ports in the BizTalk orchestration to physical ports in the BizTalk Server Administration console.</span></span>  
   
-- <span data-ttu-id="0cfb6-109">WCF ベースの Wcf-custom 送信ポートを使用する BizTalk アプリケーションを構成する[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]します。</span><span class="sxs-lookup"><span data-stu-id="0cfb6-109">Configure the BizTalk application to use the WCF-Custom send port for the WCF-based [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)].</span></span>  
+- <span data-ttu-id="950d5-109">WCF ベースの Wcf-custom 送信ポートを使用する BizTalk アプリケーションを構成する[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]します。</span><span class="sxs-lookup"><span data-stu-id="950d5-109">Configure the BizTalk application to use the WCF-Custom send port for the WCF-based [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)].</span></span>  
   
-### <a name="to-test-the-migrated-application"></a><span data-ttu-id="0cfb6-110">移行したアプリケーションをテストするには</span><span class="sxs-lookup"><span data-stu-id="0cfb6-110">To test the migrated application</span></span>  
+### <a name="to-test-the-migrated-application"></a><span data-ttu-id="950d5-110">移行したアプリケーションをテストするには</span><span class="sxs-lookup"><span data-stu-id="950d5-110">To test the migrated application</span></span>  
   
-1. <span data-ttu-id="0cfb6-111">SAP_RFC_Migration フォルダーから Input.xml 要求メッセージをコピーします。</span><span class="sxs-lookup"><span data-stu-id="0cfb6-111">From the SAP_RFC_Migration folder, copy the Input.xml request message.</span></span> <span data-ttu-id="0cfb6-112">この要求メッセージは、vPrev SAP アダプターによって生成されたスキーマに準拠しています。</span><span class="sxs-lookup"><span data-stu-id="0cfb6-112">This request message conforms to the schema generated by the vPrev SAP adapter.</span></span> <span data-ttu-id="0cfb6-113">送信マップを使用して、Wcf-custom 送信ポートに変換します WCF ベースのスキーマに準拠するようにこの[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]SAP システムに送信します。</span><span class="sxs-lookup"><span data-stu-id="0cfb6-113">Using the outbound map, the WCF-Custom send port converts this to conform to the schema for the WCF-based [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] and sends it to the SAP system.</span></span>  
+1. <span data-ttu-id="950d5-111">SAP_RFC_Migration フォルダーから Input.xml 要求メッセージをコピーします。</span><span class="sxs-lookup"><span data-stu-id="950d5-111">From the SAP_RFC_Migration folder, copy the Input.xml request message.</span></span> <span data-ttu-id="950d5-112">この要求メッセージは、vPrev SAP アダプターによって生成されたスキーマに準拠しています。</span><span class="sxs-lookup"><span data-stu-id="950d5-112">This request message conforms to the schema generated by the vPrev SAP adapter.</span></span> <span data-ttu-id="950d5-113">送信マップを使用して、Wcf-custom 送信ポートに変換します WCF ベースのスキーマに準拠するようにこの[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]SAP システムに送信します。</span><span class="sxs-lookup"><span data-stu-id="950d5-113">Using the outbound map, the WCF-Custom send port converts this to conform to the schema for the WCF-based [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] and sends it to the SAP system.</span></span>  
   
    ```  
    <ns0:SD_RFC_CUSTOMER_GET_Request xmlns:ns0="http://schemas.microsoft.com/BizTalk/2003">  
@@ -47,9 +47,9 @@ ms.locfileid: "37006914"
    </ns0:SD_RFC_CUSTOMER_GET_Request>  
    ```  
   
-2. <span data-ttu-id="0cfb6-114">貼り付け、ファイルにマップされているフォルダーに要求メッセージの受信場所。</span><span class="sxs-lookup"><span data-stu-id="0cfb6-114">Paste the request message to the folder that is mapped to the file receive location.</span></span>  
+2. <span data-ttu-id="950d5-114">貼り付け、ファイルにマップされているフォルダーに要求メッセージの受信場所。</span><span class="sxs-lookup"><span data-stu-id="950d5-114">Paste the request message to the folder that is mapped to the file receive location.</span></span>  
   
-3. <span data-ttu-id="0cfb6-115">オーケストレーションでは、要求メッセージを使用し、SAP システムに送信します。</span><span class="sxs-lookup"><span data-stu-id="0cfb6-115">The orchestration consumes the request message and sends it to the SAP system.</span></span> <span data-ttu-id="0cfb6-116">WCF ベースのスキーマに準拠するスキーマでの SAP システムからの応答が受信した[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]します。</span><span class="sxs-lookup"><span data-stu-id="0cfb6-116">The response from the SAP system is received in the schema that conforms with the schema of the WCF-based [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)].</span></span> <span data-ttu-id="0cfb6-117">受信マップを使用して、Wcf-custom 送信ポートに変換しますこの vPrev SAP アダプター用のスキーマにします。</span><span class="sxs-lookup"><span data-stu-id="0cfb6-117">Using the inbound map, the WCF-Custom send port converts this to the schema for the vPrev SAP adapter.</span></span> <span data-ttu-id="0cfb6-118">SAP システムからの応答は、オーケストレーションの一部として定義されているその他のファイルの場所に保存されます。</span><span class="sxs-lookup"><span data-stu-id="0cfb6-118">The response from the SAP system is saved to the other file location defined as part of the orchestration.</span></span> <span data-ttu-id="0cfb6-119">前の要求メッセージに対する応答は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="0cfb6-119">The response for the previous request message is:</span></span>  
+3. <span data-ttu-id="950d5-115">オーケストレーションでは、要求メッセージを使用し、SAP システムに送信します。</span><span class="sxs-lookup"><span data-stu-id="950d5-115">The orchestration consumes the request message and sends it to the SAP system.</span></span> <span data-ttu-id="950d5-116">WCF ベースのスキーマに準拠するスキーマでの SAP システムからの応答が受信した[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]します。</span><span class="sxs-lookup"><span data-stu-id="950d5-116">The response from the SAP system is received in the schema that conforms with the schema of the WCF-based [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)].</span></span> <span data-ttu-id="950d5-117">受信マップを使用して、Wcf-custom 送信ポートに変換しますこの vPrev SAP アダプター用のスキーマにします。</span><span class="sxs-lookup"><span data-stu-id="950d5-117">Using the inbound map, the WCF-Custom send port converts this to the schema for the vPrev SAP adapter.</span></span> <span data-ttu-id="950d5-118">SAP システムからの応答は、オーケストレーションの一部として定義されているその他のファイルの場所に保存されます。</span><span class="sxs-lookup"><span data-stu-id="950d5-118">The response from the SAP system is saved to the other file location defined as part of the orchestration.</span></span> <span data-ttu-id="950d5-119">前の要求メッセージに対する応答は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="950d5-119">The response for the previous request message is:</span></span>  
   
    ```  
    <?xml version="1.0" encoding="utf-8" ?>   
@@ -68,5 +68,5 @@ ms.locfileid: "37006914"
    </ns0:SD_RFC_CUSTOMER_GET_Response>  
    ```  
   
-## <a name="see-also"></a><span data-ttu-id="0cfb6-120">参照</span><span class="sxs-lookup"><span data-stu-id="0cfb6-120">See Also</span></span>  
- [<span data-ttu-id="0cfb6-121">チュートリアル 2: SAP の RFC BizTalk プロジェクトを移行する</span><span class="sxs-lookup"><span data-stu-id="0cfb6-121">Tutorial 2: Migrating an SAP RFC BizTalk Project</span></span>](../../adapters-and-accelerators/adapter-sap/tutorial-2-migrating-an-sap-rfc-biztalk-project.md)
+## <a name="see-also"></a><span data-ttu-id="950d5-120">参照</span><span class="sxs-lookup"><span data-stu-id="950d5-120">See Also</span></span>  
+ [<span data-ttu-id="950d5-121">チュートリアル 2: SAP の RFC BizTalk プロジェクトを移行する</span><span class="sxs-lookup"><span data-stu-id="950d5-121">Tutorial 2: Migrating an SAP RFC BizTalk Project</span></span>](../../adapters-and-accelerators/adapter-sap/tutorial-2-migrating-an-sap-rfc-biztalk-project.md)

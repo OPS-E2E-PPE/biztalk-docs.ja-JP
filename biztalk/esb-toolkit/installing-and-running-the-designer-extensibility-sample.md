@@ -1,5 +1,5 @@
 ---
-title: インストールして、デザイナーの機能拡張のサンプルを実行している |Microsoft ドキュメント
+title: インストールして、デザイナー機能拡張サンプルを実行する |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,20 +12,20 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dccfe1ff9f6a6832b19b63498cfcce8323332a48
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 08954a2e1731c452241bae0e8a692344075bca10
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22293914"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395136"
 ---
-# <a name="installing-and-running-the-designer-extensibility-sample"></a><span data-ttu-id="394a0-102">インストールして、デザイナーの機能拡張のサンプルを実行します。</span><span class="sxs-lookup"><span data-stu-id="394a0-102">Installing and Running the Designer Extensibility Sample</span></span>
-<span data-ttu-id="394a0-103">デザイナーの機能拡張例は、どのデザイナーの拡張機能 itinerary サービスの構成とカスタム競合回避モジュールの構成のデザイン時サポートを提供するために開発できます。</span><span class="sxs-lookup"><span data-stu-id="394a0-103">The Designer Extensibility sample shows how designer extensions can be developed to provide design-time support for configuration of custom resolvers and configuration of itinerary services.</span></span>  
+# <a name="installing-and-running-the-designer-extensibility-sample"></a><span data-ttu-id="26c4b-102">インストールして、デザイナー機能拡張サンプルを実行します。</span><span class="sxs-lookup"><span data-stu-id="26c4b-102">Installing and Running the Designer Extensibility Sample</span></span>
+<span data-ttu-id="26c4b-103">デザイナーの機能拡張サンプルは、どのデザイナーの拡張機能を示しています。 カスタム競合回避モジュールの構成およびスケジュール サービスとしての構成のデザイン時サポートを提供するために開発できます。</span><span class="sxs-lookup"><span data-stu-id="26c4b-103">The Designer Extensibility sample shows how designer extensions can be developed to provide design-time support for configuration of custom resolvers and configuration of itinerary services.</span></span>  
   
- <span data-ttu-id="394a0-104">このセクションのトピックは次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="394a0-104">This section contains the following topics:</span></span>  
+ <span data-ttu-id="26c4b-104">このセクションでは、次のトピックについて説明します。</span><span class="sxs-lookup"><span data-stu-id="26c4b-104">This section contains the following topics:</span></span>  
   
--   [<span data-ttu-id="394a0-105">デザイナーの機能拡張のサンプルをインストールします。</span><span class="sxs-lookup"><span data-stu-id="394a0-105">Installing the Designer Extensibility Sample</span></span>](../esb-toolkit/installing-the-designer-extensibility-sample.md)  
+-   [<span data-ttu-id="26c4b-105">デザイナー機能拡張サンプルをインストールする</span><span class="sxs-lookup"><span data-stu-id="26c4b-105">Installing the Designer Extensibility Sample</span></span>](../esb-toolkit/installing-the-designer-extensibility-sample.md)  
   
--   [<span data-ttu-id="394a0-106">デザイナーの機能拡張のサンプルを実行します。</span><span class="sxs-lookup"><span data-stu-id="394a0-106">Running the Designer Extensibility Sample</span></span>](../esb-toolkit/running-the-designer-extensibility-sample.md)  
+-   [<span data-ttu-id="26c4b-106">デザイナー機能拡張サンプルを実行する</span><span class="sxs-lookup"><span data-stu-id="26c4b-106">Running the Designer Extensibility Sample</span></span>](../esb-toolkit/running-the-designer-extensibility-sample.md)  
   
--   [<span data-ttu-id="394a0-107">デザイナーの機能拡張のサンプルのしくみ</span><span class="sxs-lookup"><span data-stu-id="394a0-107">How the Designer Extensibility Sample Works</span></span>](../esb-toolkit/how-the-designer-extensibility-sample-works.md)
+-   [<span data-ttu-id="26c4b-107">デザイナー機能拡張サンプルのしくみ</span><span class="sxs-lookup"><span data-stu-id="26c4b-107">How the Designer Extensibility Sample Works</span></span>](../esb-toolkit/how-the-designer-extensibility-sample-works.md)

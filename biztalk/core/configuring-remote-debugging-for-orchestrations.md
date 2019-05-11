@@ -18,17 +18,17 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6f5d28c13cb9da4454efcad1a43a4048c8881ea8
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 96fa7775bc6e67e0c56e2b93e9ca334ac361794c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36967291"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65390910"
 ---
-# <a name="configuring-remote-debugging-for-orchestrations"></a><span data-ttu-id="a901d-102">オーケストレーションのリモート デバッグの構成</span><span class="sxs-lookup"><span data-stu-id="a901d-102">Configuring Remote Debugging for Orchestrations</span></span>
-<span data-ttu-id="a901d-103">クライアントとサーバーの間のリモート デバッグは詳細に構成することができます。</span><span class="sxs-lookup"><span data-stu-id="a901d-103">You can completely configure remote debugging between client and server.</span></span> <span data-ttu-id="a901d-104">クライアントの構成は、Microsoft.XLANGs.BizTalk.Client.dll.config で指定されます。サーバーの構成は、BTSNTSvc.exe.config で指定されます。それぞれの既定の構成の一覧を次に示します。</span><span class="sxs-lookup"><span data-stu-id="a901d-104">The client configuration is specified in Microsoft.XLANGs.BizTalk.Client.dll.config. The server configuration is specified in BTSNTSvc.exe.config. The following is a listing of the default configuration for each.</span></span>  
+# <a name="configuring-remote-debugging-for-orchestrations"></a><span data-ttu-id="b0306-102">オーケストレーションのリモート デバッグの構成</span><span class="sxs-lookup"><span data-stu-id="b0306-102">Configuring Remote Debugging for Orchestrations</span></span>
+<span data-ttu-id="b0306-103">クライアントとサーバー間のリモート デバッグを完全に構成することができます。</span><span class="sxs-lookup"><span data-stu-id="b0306-103">You can completely configure remote debugging between client and server.</span></span> <span data-ttu-id="b0306-104">クライアントの構成は、Microsoft.XLANGs.BizTalk.Client.dll.config で指定されます。サーバーの構成は、BTSNTSvc.exe.config で指定されます。それぞれの既定の構成の一覧を次に示します。</span><span class="sxs-lookup"><span data-stu-id="b0306-104">The client configuration is specified in Microsoft.XLANGs.BizTalk.Client.dll.config. The server configuration is specified in BTSNTSvc.exe.config. The following is a listing of the default configuration for each.</span></span>  
   
-## <a name="client-microsoftxlangsbiztalkclientdllconfig"></a><span data-ttu-id="a901d-105">クライアント (Microsoft.XLANGs.BizTalk.Client.dll.config)</span><span class="sxs-lookup"><span data-stu-id="a901d-105">Client (Microsoft.XLANGs.BizTalk.Client.dll.config)</span></span>  
+## <a name="client-microsoftxlangsbiztalkclientdllconfig"></a><span data-ttu-id="b0306-105">クライアント (Microsoft.XLANGs.BizTalk.Client.dll.config)</span><span class="sxs-lookup"><span data-stu-id="b0306-105">Client (Microsoft.XLANGs.BizTalk.Client.dll.config)</span></span>  
   
 ```  
 <configuration>  
@@ -57,7 +57,7 @@ ms.locfileid: "36967291"
 </configuration>  
 ```  
   
-## <a name="serverbtsntsvcexeconfig"></a><span data-ttu-id="a901d-106">サーバー (BTSNTSvc.exe.config)</span><span class="sxs-lookup"><span data-stu-id="a901d-106">Server(BTSNTSvc.exe.config)</span></span>  
+## <a name="serverbtsntsvcexeconfig"></a><span data-ttu-id="b0306-106">Server(BTSNTSvc.exe.config)</span><span class="sxs-lookup"><span data-stu-id="b0306-106">Server(BTSNTSvc.exe.config)</span></span>  
   
 ```  
 <?xml version="1.0" ?>  
@@ -91,32 +91,32 @@ ms.locfileid: "36967291"
 </configuration>  
 ```  
   
-## <a name="configurable-parameters"></a><span data-ttu-id="a901d-107">構成可能なパラメーター</span><span class="sxs-lookup"><span data-stu-id="a901d-107">Configurable Parameters</span></span>  
- <span data-ttu-id="a901d-108">既定値でも最大限のセキュリティ構成が保証されますが、</span><span class="sxs-lookup"><span data-stu-id="a901d-108">The default ensures maximum security configuration.</span></span> <span data-ttu-id="a901d-109">ユーザーがこれらの既定値を変更することが可能です。これらのファイルはプログラム ファイル フォルダーにあるため、ACL で制御されます。</span><span class="sxs-lookup"><span data-stu-id="a901d-109">However it is left to the user to change these defaults and these files are ACL'ed since they are in the program files folder.</span></span>  
+## <a name="configurable-parameters"></a><span data-ttu-id="b0306-107">構成可能なパラメーター</span><span class="sxs-lookup"><span data-stu-id="b0306-107">Configurable Parameters</span></span>  
+ <span data-ttu-id="b0306-108">既定値により、最大限のセキュリティ構成。</span><span class="sxs-lookup"><span data-stu-id="b0306-108">The default ensures maximum security configuration.</span></span> <span data-ttu-id="b0306-109">ただしこれらの既定値を変更するユーザーに任されており、プログラム ファイル フォルダーであるために、これらのファイルは acl を設定します。</span><span class="sxs-lookup"><span data-stu-id="b0306-109">However it is left to the user to change these defaults and these files are ACL'ed since they are in the program files folder.</span></span>  
   
- <span data-ttu-id="a901d-110">要素\<プロバイダー/> は省略可能とカスタム シンクを使用して相互に認証が、チャネルは指定されていない場合があるとします。</span><span class="sxs-lookup"><span data-stu-id="a901d-110">The element \<provider/> is optional and if not provided will cause the channels not to be mutually authenticated using the custom sinks.</span></span> <span data-ttu-id="a901d-111">しかし、このオプションを無効にすると、チャネルが開放されるため危険です。</span><span class="sxs-lookup"><span data-stu-id="a901d-111">However this is a dangerous option to turn off as it will open up the channels.</span></span> <span data-ttu-id="a901d-112">セキュリティ上の攻撃の心配がいらない場合、パフォーマンスを高めるにはこのオプションを無効にします。</span><span class="sxs-lookup"><span data-stu-id="a901d-112">This can be done for better performance and when security attacks are not a concern.</span></span>  
+ <span data-ttu-id="b0306-110">要素\<プロバイダー/> は省略可能とカスタム シンクを使用して相互に認証が、チャネルは指定されていない場合があるとします。</span><span class="sxs-lookup"><span data-stu-id="b0306-110">The element \<provider/> is optional and if not provided will cause the channels not to be mutually authenticated using the custom sinks.</span></span> <span data-ttu-id="b0306-111">ただし、これは、チャネルが開放されるとオフにする危険なオプションです。</span><span class="sxs-lookup"><span data-stu-id="b0306-111">However this is a dangerous option to turn off as it will open up the channels.</span></span> <span data-ttu-id="b0306-112">これは、パフォーマンスを向上させるときにセキュリティ攻撃に問題がないを実行できます。</span><span class="sxs-lookup"><span data-stu-id="b0306-112">This can be done for better performance and when security attacks are not a concern.</span></span>  
   
- <span data-ttu-id="a901d-113">チャネル要素には、プロパティ rejectRemoteRequests = true を指定することができます。このオプションを指定すると、ローカルな呼び出しだけが可能となり、リモート要求が拒否されます。</span><span class="sxs-lookup"><span data-stu-id="a901d-113">The channel element can have property rejectRemoteRequests = true which will enable only local calls and reject remote requests.</span></span>  
+ <span data-ttu-id="b0306-113">Channel 要素は、プロパティ rejectRemoteRequests を持つことができます = true をローカルな呼び出しだけを有効にしてリモート要求が拒否されます。</span><span class="sxs-lookup"><span data-stu-id="b0306-113">The channel element can have property rejectRemoteRequests = true which will enable only local calls and reject remote requests.</span></span>  
   
- <span data-ttu-id="a901d-114">内の securityPackage 属性、 \<serverProviders/> 要素には次の値を持つことができます。</span><span class="sxs-lookup"><span data-stu-id="a901d-114">The securityPackage attribute in the \<serverProviders/> element can have any of the following values:</span></span>  
+ <span data-ttu-id="b0306-114">内の securityPackage 属性、 \<serverProviders/> 要素には次の値を持つことができます。</span><span class="sxs-lookup"><span data-stu-id="b0306-114">The securityPackage attribute in the \<serverProviders/> element can have any of the following values:</span></span>  
   
-- <span data-ttu-id="a901d-115">negotiate</span><span class="sxs-lookup"><span data-stu-id="a901d-115">negotiate</span></span>  
+- <span data-ttu-id="b0306-115">ネゴシエート</span><span class="sxs-lookup"><span data-stu-id="b0306-115">negotiate</span></span>  
   
-- <span data-ttu-id="a901d-116">ntlm</span><span class="sxs-lookup"><span data-stu-id="a901d-116">ntlm</span></span>  
+- <span data-ttu-id="b0306-116">Ntlm</span><span class="sxs-lookup"><span data-stu-id="b0306-116">ntlm</span></span>  
   
-- <span data-ttu-id="a901d-117">Kerberos</span><span class="sxs-lookup"><span data-stu-id="a901d-117">Kerberos</span></span>  
+- <span data-ttu-id="b0306-117">Kerberos</span><span class="sxs-lookup"><span data-stu-id="b0306-117">Kerberos</span></span>  
   
-  <span data-ttu-id="a901d-118">AuthenticationLevel 属性は、 \<serverProviders/> 要素には次の値を持つことができます。</span><span class="sxs-lookup"><span data-stu-id="a901d-118">The authenticationLevel attribute in the \<serverProviders/> element can have any of the following values:</span></span>  
+  <span data-ttu-id="b0306-118">AuthenticationLevel 属性は、 \<serverProviders/> 要素には次の値を持つことができます。</span><span class="sxs-lookup"><span data-stu-id="b0306-118">The authenticationLevel attribute in the \<serverProviders/> element can have any of the following values:</span></span>  
   
-- <span data-ttu-id="a901d-119">packetPrivacy - メッセージの暗号化と復号化が行われます。</span><span class="sxs-lookup"><span data-stu-id="a901d-119">packetPrivacy  - the messages will be encrypted/decrypted</span></span>  
+- <span data-ttu-id="b0306-119">packetPrivacy - メッセージれます暗号化/復号化</span><span class="sxs-lookup"><span data-stu-id="b0306-119">packetPrivacy  - the messages will be encrypted/decrypted</span></span>  
   
-- <span data-ttu-id="a901d-120">packetIntegrity – メッセージの署名と検証が行われます。</span><span class="sxs-lookup"><span data-stu-id="a901d-120">packetIntegrity – the messages will be signed/verified</span></span>  
+- <span data-ttu-id="b0306-120">packetIntegrity – メッセージが署名と検証が</span><span class="sxs-lookup"><span data-stu-id="b0306-120">packetIntegrity – the messages will be signed/verified</span></span>  
   
-- <span data-ttu-id="a901d-121">call - メッセージはそのまま送信されます。</span><span class="sxs-lookup"><span data-stu-id="a901d-121">call  - the messages will be sent as is</span></span>  
+- <span data-ttu-id="b0306-121">呼び出しのまま、メッセージが送信されます。</span><span class="sxs-lookup"><span data-stu-id="b0306-121">call  - the messages will be sent as is</span></span>  
   
-  <span data-ttu-id="a901d-122">Ref 属性は、\<チャネル/> 要素は tcp または http に変更することができます。</span><span class="sxs-lookup"><span data-stu-id="a901d-122">The ref attribute in the \<channel/> element can be changed to tcp or http.</span></span> <span data-ttu-id="a901d-123">属性の名前とポート、\<チャネル/> 要素は明示的な値にも変更できます。</span><span class="sxs-lookup"><span data-stu-id="a901d-123">The port and name attribute in the \<channel/> element can be changed as well to explicit values.</span></span>  
+  <span data-ttu-id="b0306-122">Ref 属性は、\<チャネル/> 要素は tcp または http に変更することができます。</span><span class="sxs-lookup"><span data-stu-id="b0306-122">The ref attribute in the \<channel/> element can be changed to tcp or http.</span></span> <span data-ttu-id="b0306-123">属性の名前とポート、\<チャネル/> 要素は明示的な値にも変更できます。</span><span class="sxs-lookup"><span data-stu-id="b0306-123">The port and name attribute in the \<channel/> element can be changed as well to explicit values.</span></span>  
   
-  <span data-ttu-id="a901d-124">詳細については、『.NET Framework 開発者ガイド』の「チャネルとフォーマッタの構成プロパティ」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="a901d-124">For more information, see .NET Framework Developer's Guide (Channel and formatter configuration properties).</span></span>  
+  <span data-ttu-id="b0306-124">詳細については、.NET Framework 開発者ガイド (チャネルとフォーマッタの構成プロパティ) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b0306-124">For more information, see .NET Framework Developer's Guide (Channel and formatter configuration properties).</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="a901d-125">参照</span><span class="sxs-lookup"><span data-stu-id="a901d-125">See Also</span></span>  
- [<span data-ttu-id="a901d-126">オーケストレーションのデバッグ</span><span class="sxs-lookup"><span data-stu-id="a901d-126">Debugging Orchestrations</span></span>](../core/debugging-orchestrations.md)
+## <a name="see-also"></a><span data-ttu-id="b0306-125">参照</span><span class="sxs-lookup"><span data-stu-id="b0306-125">See Also</span></span>  
+ [<span data-ttu-id="b0306-126">オーケストレーションのデバッグ</span><span class="sxs-lookup"><span data-stu-id="b0306-126">Debugging Orchestrations</span></span>](../core/debugging-orchestrations.md)
