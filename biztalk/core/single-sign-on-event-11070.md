@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 11070 |Microsoft Docs'
+title: シングル サインオン:イベント 11070 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 799e175f6425b91c98f6e96ec9f0bd73d8d0ebdf
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1382d436528f630ec4abb51af98599371d69a297
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36994323"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65243518"
 ---
-# <a name="single-sign-on-event-11070"></a>シングル サインオン: イベント 11070
+# <a name="single-sign-on-event-11070"></a>シングル サインオン:イベント 11070
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                                                                                                                                                       |
@@ -38,4 +38,4 @@ ms.locfileid: "36994323"
 ## <a name="user-action"></a>ユーザーの操作  
  MIIS からの Windows パスワードの変更を許可する、**サーバー スナップイン**、**パスワード同期プロパティ**] タブで [ **MIIS からパスワード同期を許可します。**  
   
- 詳細については、[サーバー スナップインを使用する](../core/how-to-use-the-servers-snap-in.md)を参照してください。
+ 詳細については、次を参照してください。[サーバー スナップインを使用する](../core/how-to-use-the-servers-snap-in.md)します。

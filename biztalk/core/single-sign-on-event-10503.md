@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10503 |Microsoft Docs'
+title: シングル サインオン:イベント 10503 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b90af01551359b5caa1a5404facc9e3fece95673
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 72b82421d4c70833f085b8e95c75c60cb1944545
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36990715"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65243447"
 ---
-# <a name="single-sign-on-event-10503"></a>シングル サインオン: イベント 10503
+# <a name="single-sign-on-event-10503"></a>シングル サインオン:イベント 10503
 ## <a name="details"></a>詳細  
 
 |                 |                                                               |
@@ -28,18 +28,18 @@ ms.locfileid: "36990715"
 | 製品バージョン |  [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]   |
 |    イベント ID     |                             10503                             |
 |  イベント ソース   |                            ENTSSO                             |
-|    コンポーネント    |                              N\A                              |
+|    コンポーネント    |                              該当なし                              |
 |  シンボル名  |                SSO_ERROR_SERVICE_START_FAILED                 |
-|  メッセージ テキスト   | SSO サービスを開始できませんでした。%r<br /><br /> エラー コード: %1 |
+|  メッセージ テキスト   | Start.%r SSO サービスが失敗しました<br /><br /> エラー コード: %1 |
 
 ## <a name="explanation"></a>説明  
- このエラー イベントは、例外が発生したために ENTSSO サービスを開始できなかったことを示します。  
+ このエラー イベントは、例外により、ENTSSO サービスを開始できなかったことを示します。  
 
 ## <a name="user-action"></a>ユーザーの操作  
  このエラーを解決するには、次の操作を行います。  
 
-- ENTSSO または他のサービスからの関連するエラーについては、システムおよびアプリケーションのイベント ログを確認します。  
+- ENTSSO または他のサービスから関連するエラーのアプリケーションとシステムの両方のイベント ログを確認します。  
 
-  詳細については、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ヘルプの次の情報を参照してください:   
+  詳細については、の次のリソースを参照してください。[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプ。  
 
 - [SSO の使用](../core/using-sso.md)

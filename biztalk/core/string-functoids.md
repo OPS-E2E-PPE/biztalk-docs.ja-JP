@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 72e2651c38d3cc69e5c6d7c7d80c6e0d29136033
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f2da7881495d2c685faaba6f9c9cf00eb565a7af
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36966603"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65244155"
 ---
 # <a name="string-functoids"></a>文字列 Functoid
 
@@ -26,7 +26,7 @@ ms.locfileid: "36966603"
 
  Functoid**大文字**、**小文字**、**サイズ**、**文字列右スペース削除**、および**文字列左スペース削除**1 つだけの入力パラメーターをそのまま使用します。 Functoid**文字列位置検出**、**左文字列抽出**、および**文字列右**2 つの入力パラメーターをそのまま使用します。 **文字列抽出**functoid は 3 つの入力を受け取りませんが、**文字列連結**functoid は 1 から 100 までの入力パラメーターを受け取ります。  
 
- 2 つ**文字列**functoid は、文字列の文字の数値の位置を参照してください:**文字列抽出**と**文字列位置検出**します。 これらの Functoid は、文字位置を 1 (0 ではない) からカウントします。  
+ 2 つ**文字列**functoid は、文字列の文字の数値の位置を参照してください。**文字列抽出**と**文字列検索**します。 これらの functoid では、1、0 以外の文字位置のカウントを開始します。  
 
  文字列のトリミングの functoid の 2 つ**文字列左スペース削除**と**文字列右スペース削除**、すべての空白文字 (スペース、タブ、およびなど) から削除左または右 (場合もあります)、指定した文字列。  
 

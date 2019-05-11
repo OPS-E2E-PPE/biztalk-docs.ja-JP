@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10502 |Microsoft Docs'
+title: シングル サインオン:イベント 10502 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2ae2f5b11b4329ec94d4263b895b21e49d599c2d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3b56036a7997e8c83d235f05bdca07459fd655aa
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37011395"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65243697"
 ---
-# <a name="single-sign-on-event-10502"></a>シングル サインオン: イベント 10502
+# <a name="single-sign-on-event-10502"></a>シングル サインオン:イベント 10502
 ## <a name="details"></a>詳細  
 
 |                 |                                                            |
@@ -28,9 +28,9 @@ ms.locfileid: "37011395"
 | 製品バージョン | [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)] |
 |    イベント ID     |                           10502                            |
 |  イベント ソース   |                           ENTSSO                           |
-|    コンポーネント    |                            N\A                             |
+|    コンポーネント    |                            該当なし                             |
 |  シンボル名  |                  SSO_INFO_SERVICE_STARTED                  |
-|  メッセージ テキスト   |                SSO サービスが開始されました。                |
+|  メッセージ テキスト   |                SSO サービスが開始します。                |
 
 ## <a name="explanation"></a>説明  
  この情報イベントは、ENTSSO サービスが開始されたことを示します。  
@@ -39,6 +39,6 @@ ms.locfileid: "37011395"
 
 - 必要なアクションはありません。  
 
-  詳細については、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ヘルプの次の情報を参照してください:   
+  詳細については、の次のリソースを参照してください。[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプ。  
 
 - [SSO の使用](../core/using-sso.md)

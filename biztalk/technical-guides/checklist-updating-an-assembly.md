@@ -1,5 +1,5 @@
 ---
-title: 'チェックリスト: アセンブリの更新 |Microsoft ドキュメント'
+title: チェックリスト:アセンブリの更新 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,28 +12,28 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d9b20aa7d1b0b901176f090ab7636ef0b3eccfa9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 84cf2efe1d1115ed4b7c8ab50692db6f8d430482
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22300770"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65242549"
 ---
-# <a name="checklist-updating-an-assembly"></a>チェックリスト: アセンブリを更新します。
-次のチェックリストでは、既に配置されているアプリケーションで 1 つまたは複数のアイテムを更新し、アプリケーションを再配置し、プロセスについて説明します。  
+# <a name="checklist-updating-an-assembly"></a>チェックリスト:アセンブリの更新
+次のチェックリストでは、既にデプロイされているアプリケーションで 1 つまたは複数のアイテムを更新し、再度、アプリケーションをデプロイするプロセスについて説明します。  
   
 > [!NOTE]  
->  ダウンタイムをスケジュールまたは終了できません非常に長時間のインスタンスがあることはできませんは、サイド バイ サイドのバージョン管理を使用して更新します。  
+>  ダウンタイムのスケジュールを設定するか、または終了することはできません非常に時間の長い実行インスタンスがあることはできない場合、は、サイド バイ サイド バージョン管理を使用して更新します。  
   
 |手順|リファレンス|  
 |-----------|---------------|  
-|アプリケーションでアイテムを更新するための重要な考慮事項を確認します。|-   [アプリケーションを更新するための重要な考慮事項](http://go.microsoft.com/fwlink/?LinkId=154823)(http://go.microsoft.com/fwlink/?LinkId=154823)。<br />-   [アプリケーションの更新のベスト プラクティス](../technical-guides/best-practices-for-updating-applications.md)|  
-|展開を実行するための適切なアクセス許可があることを確認します。|[アプリケーションを管理するためのアクセス許可](../technical-guides/permissions-for-managing-an-application.md)|  
-|アセンブリの追加、削除、または必要に応じてアイテムを再構成するために必要な変更を加えます。<br /><br /> 開発環境で BizTalk アプリケーションに Visual Studio からアセンブリを展開します。|-   [アセンブリを更新する方法](../technical-guides/how-to-update-an-assembly.md)<br />-   [成果物の更新](../technical-guides/updating-an-artifact.md)<br />「アイテムの更新」と「アセンブリの更新」のセクション[アプリケーションの更新に関するベスト プラクティス](../technical-guides/best-practices-for-updating-applications.md)<br />-   [Visual Studio から BizTalk アセンブリを展開する方法](http://go.microsoft.com/fwlink/?LinkId=154824)(http://go.microsoft.com/fwlink/?LinkId=154824)。|  
-|新しいアイテムまたは変更されたアイテムをテストします。新しいアイテムまたは変更されたアイテムに依存する可能性があるすべてのアイテムもテストします。 **注:** をテストするときは必ずこのアプリケーションとその他のアプリケーション間に存在する依存関係を考慮します。|[BizTalk アプリケーションの展開のテスト作業](http://go.microsoft.com/fwlink/?LinkId=154825)(http://go.microsoft.com/fwlink/?LinkId=154825)。|  
-|BizTalk Server 管理コンソールで、追加、削除、または必要に応じて、アプリケーション内のアイテムを再構成します。|-   [成果物を追加または作成する方法](http://go.microsoft.com/fwlink/?LinkID=154724)(http://go.microsoft.com/fwlink/?LinkID=154724)。<br />-   [アプリケーションからアイテムを削除する方法](http://go.microsoft.com/fwlink/?LinkID=154688)(http://go.microsoft.com/fwlink/?LinkID=154688)。<br />-   [成果物の管理](http://go.microsoft.com/fwlink/?LinkID=154725)(http://go.microsoft.com/fwlink/?LinkID=154725)。<br />-   [成果物の更新](../technical-guides/updating-an-artifact.md)<br />-のセクションの「アイテムの更新」[アプリケーションの更新に関するベスト プラクティス](../technical-guides/best-practices-for-updating-applications.md)です。|  
-|新しいアイテムや変更されたアイテムを含むアプリケーションを .msi ファイルにエクスポートします。|-   [BizTalk アプリケーション、バインド、およびポリシーをエクスポートする](http://go.microsoft.com/fwlink/?LinkId=154826)(http://go.microsoft.com/fwlink/?LinkId=154826)。<br />-   [アプリケーションを .msi ファイルにエクスポートする方法](../technical-guides/how-to-export-an-application-to-an-msi-file.md)<br />-のセクションの「BizTalk アプリケーションをエクスポートする」[アプリケーションを展開するためのベスト プラクティス](../technical-guides/best-practices-for-deploying-an-application.md)です。|  
-|更新プログラムは、実行時に、アプリケーションが妨げられます場合、ダウンタイムをスケジュールし、更新するアプリケーションを停止します。|-   [BizTalk アプリケーション開始および停止する方法](http://go.microsoft.com/fwlink/?LinkID=154729)(http://go.microsoft.com/fwlink/?LinkID=154729)。<br />-「を開始またはアプリケーションの停止」のセクションの[アプリケーションの更新に関するベスト プラクティス](../technical-guides/best-practices-for-updating-applications.md)です。|  
-|.Msi ファイルから、アプリケーションのインストール、更新する、アプリケーションに変更または更新したアイテムをインポートします。 **注:** BizTalk アセンブリを更新するときに、停止し、.msi ファイルからインポートする前に成果物を参加解除する必要があります。 もう一度参加させるし、.msi からインポートした後、BizTalk アイテムを起動する必要があります。|-   [BizTalk アプリケーションをインポートする方法](http://go.microsoft.com/fwlink/?LinkId=154827)(http://go.microsoft.com/fwlink/?LinkId=154827)。<br />-   [アプリケーションを .msi ファイルからインポートする方法](../technical-guides/how-to-import-an-application-from-an-msi-file.md)<br />-のセクションの「BizTalk アプリケーションのインポート」[アプリケーションを展開するためのベスト プラクティス](../technical-guides/best-practices-for-deploying-an-application.md)です。<br />-   [BizTalk アプリケーションをインストールする方法](http://go.microsoft.com/fwlink/?LinkID=154728)(http://go.microsoft.com/fwlink/?LinkID=154728)。<br />-   [アセンブリを GAC にインストールする方法](http://go.microsoft.com/fwlink/?LinkId=154828)(http://go.microsoft.com/fwlink/?LinkId=154828)。|  
-|メッセージの公開を再開する、アプリケーションを起動します。 すべての BizTalk ホスト インスタンスを再起動します。|-   [BizTalk アプリケーション開始および停止する方法](http://go.microsoft.com/fwlink/?LinkID=154729)(http://go.microsoft.com/fwlink/?LinkID=154729)。|  
-|オーケストレーションを含むアセンブリをインポートした後に、インポート先のアプリケーションに、同じ名前、公開キー トークン、およびバージョンのアセンブリが既に存在する場合は、オーケストレーションのバインド先のホストのホスト インスタンスを停止および開始します。 これにより、アセンブリの新しいバージョンが BizTalk Server で使用されます。|-   [ホスト インスタンスを停止する方法](http://go.microsoft.com/fwlink/?LinkId=154829)(http://go.microsoft.com/fwlink/?LinkId=154829)。<br />-   [ホスト インスタンスを起動する方法](http://go.microsoft.com/fwlink/?LinkId=154830)(http://go.microsoft.com/fwlink/?LinkId=154830)。|
+|アプリケーションでアイテムを更新するための重要な考慮事項を確認します。|-   [アプリケーションを更新するための重要な考慮事項](http://go.microsoft.com/fwlink/?LinkId=154823)(http://go.microsoft.com/fwlink/?LinkId=154823)します。<br />-   [アプリケーションの更新のベスト プラクティス](../technical-guides/best-practices-for-updating-applications.md)|  
+|配置を実行する適切なアクセス許可があることを確認します。|[アプリケーションを管理するためのアクセス許可](../technical-guides/permissions-for-managing-an-application.md)|  
+|アセンブリ、追加、削除、または必要に応じてアイテムを再構成するために必要な変更を加えます。<br /><br /> Visual Studio からアセンブリを開発環境で BizTalk アプリケーションに展開します。|-   [アセンブリを更新する方法](../technical-guides/how-to-update-an-assembly.md)<br />-   [アイテムの更新](../technical-guides/updating-an-artifact.md)<br />-「アイテムの更新」と"アセンブリの更新 のセクションでは[アプリケーションの更新のベスト プラクティス](../technical-guides/best-practices-for-updating-applications.md)<br />-   [Visual Studio から BizTalk アセンブリを展開する方法](http://go.microsoft.com/fwlink/?LinkId=154824)(http://go.microsoft.com/fwlink/?LinkId=154824)します。|  
+|新規または変更された成果物に依存するすべてのアイテムもテストすることを確認、新しいまたは変更されたアイテムをテストします。 **注:** をテストする場合は、このアプリケーションとその他のアプリケーション間に存在する依存関係を考慮します。|[BizTalk アプリケーション展開のテスト作業](http://go.microsoft.com/fwlink/?LinkId=154825)(http://go.microsoft.com/fwlink/?LinkId=154825)します。|  
+|BizTalk Server 管理コンソールで追加、削除、または必要に応じて、アプリケーション内のアイテムを再構成します。|-   [成果物を追加または作成する方法](http://go.microsoft.com/fwlink/?LinkID=154724)(http://go.microsoft.com/fwlink/?LinkID=154724)します。<br />-   [アプリケーションからアイテムを削除する方法](http://go.microsoft.com/fwlink/?LinkID=154688)(http://go.microsoft.com/fwlink/?LinkID=154688)します。<br />-   [アイテムの管理](http://go.microsoft.com/fwlink/?LinkID=154725)(http://go.microsoft.com/fwlink/?LinkID=154725)します。<br />-   [アイテムの更新](../technical-guides/updating-an-artifact.md)<br />-「アイテムの更新」のセクションの[アプリケーションの更新のベスト プラクティス](../technical-guides/best-practices-for-updating-applications.md)します。|  
+|.Msi ファイルに追加または変更された成果物を含むアプリケーションをエクスポートします。|-   [BizTalk アプリケーション、バインド、およびポリシーのエクスポート](http://go.microsoft.com/fwlink/?LinkId=154826)(http://go.microsoft.com/fwlink/?LinkId=154826)します。<br />-   [アプリケーションを .msi ファイルにエクスポートする方法](../technical-guides/how-to-export-an-application-to-an-msi-file.md)<br />-「BizTalk アプリケーションをエクスポートする」のセクションの[アプリケーションを展開するためのベスト プラクティス](../technical-guides/best-practices-for-deploying-an-application.md)します。|  
+|実行時に、更新プログラムは、アプリケーションを妨げる、ダウンタイム、スケジュールを設定し、更新するアプリケーションを停止します。|-   [BizTalk アプリケーション開始および停止方法](http://go.microsoft.com/fwlink/?LinkID=154729)(http://go.microsoft.com/fwlink/?LinkID=154729)します。<br />-「を開始またはアプリケーションを停止しています」のセクションの[アプリケーションの更新のベスト プラクティス](../technical-guides/best-practices-for-updating-applications.md)します。|  
+|.Msi ファイルから、アプリケーションのインストール、更新するアプリケーションに変更または更新したアイテムをインポートします。 **注:** BizTalk アセンブリを更新するときに停止して、.msi ファイルからインポートする前に成果物を参加解除する必要があります。 再参加して、.msi からインポートした後、BizTalk アイテムを起動する必要があります。|-   [BizTalk アプリケーションをインポートする方法](http://go.microsoft.com/fwlink/?LinkId=154827)(http://go.microsoft.com/fwlink/?LinkId=154827)します。<br />-   [アプリケーションを .msi ファイルからインポートする方法](../technical-guides/how-to-import-an-application-from-an-msi-file.md)<br />-「BizTalk アプリケーションをインポートする」のセクションの[アプリケーションを展開するためのベスト プラクティス](../technical-guides/best-practices-for-deploying-an-application.md)します。<br />-   [BizTalk アプリケーションをインストールする方法](http://go.microsoft.com/fwlink/?LinkID=154728)(http://go.microsoft.com/fwlink/?LinkID=154728)します。<br />-   [アセンブリを GAC にインストールする方法](http://go.microsoft.com/fwlink/?LinkId=154828)(http://go.microsoft.com/fwlink/?LinkId=154828)します。|  
+|メッセージの公開を再開する、アプリケーションを起動します。 すべての BizTalk ホスト インスタンスを再起動します。|-   [BizTalk アプリケーション開始および停止方法](http://go.microsoft.com/fwlink/?LinkID=154729)(http://go.microsoft.com/fwlink/?LinkID=154729)します。|  
+|オーケストレーションを含むアセンブリをインポートした後、停止をインポートする、既にアプリケーションに同じ名前、公開キー トークン、およびバージョンを持つアセンブリが含まれている場合と、オーケストレーションをホストのホスト インスタンスを開始します。バインドされています。 これにより、BizTalk Server によって、アセンブリの新しいバージョンを使用します。|-   [ホスト インスタンスを停止する方法](http://go.microsoft.com/fwlink/?LinkId=154829)(http://go.microsoft.com/fwlink/?LinkId=154829)します。<br />-   [ホスト インスタンスを開始する方法](http://go.microsoft.com/fwlink/?LinkId=154830)(http://go.microsoft.com/fwlink/?LinkId=154830)します。|

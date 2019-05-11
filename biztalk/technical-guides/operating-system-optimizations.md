@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f69f020cd728192308ebf160c4836599283fb412
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 93222268e3d59bccfe8222e0e0e9b276e21f3dfd
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36992923"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65242644"
 ---
 # <a name="operating-system-optimizations"></a>オペレーティング システムの最適化
 このトピックではパフォーマンスの最適化に関する推奨事項、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 、運用環境で使用されるコンピューター[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]環境。 これらの最適化が後に適用されます[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]をインストールして構成します。  
@@ -66,7 +66,7 @@ ms.locfileid: "36992923"
     >  使用可能な PageDefrag ユーティリティを使用して[ http://go.microsoft.com/fwlink/?LinkId=108976 ](http://go.microsoft.com/fwlink/?LinkId=108976) Windows ページファイルを最適化し、マスター ファイル テーブルの事前割り当ています。  
   
 ### <a name="if-antivirus-software-is-installed-on-the-sql-server-computers-disable-real-time-scanning-of-data-and-transaction-files"></a>ウイルス対策ソフトウェアは、SQL Server コンピューターにインストールする場合は、データとトランザクションのファイルのリアルタイム スキャンを無効にします。  
- (.Mdf、.ndf、.ldf、.mdb ファイル) の SQL Server データとトランザクション ファイルのリアルタイム スキャン、ディスク I/O の競合が増加し、SQL Server のパフォーマンスが低下することができます。 SQL Server のデータとトランザクションのファイルの名前は、BizTalk Server 環境間で異なる場合がありますに注意してください。 既定の BizTalk Server 構成で作成されたデータとトランザクションのファイルの詳細については、[データベースのファイル グループを最適化する](http://msdn.microsoft.com/library/ee377060\(v=bts.70\).aspx)を参照してください。  
+ (.Mdf、.ndf、.ldf、.mdb ファイル) の SQL Server データとトランザクション ファイルのリアルタイム スキャン、ディスク I/O の競合が増加し、SQL Server のパフォーマンスが低下することができます。 SQL Server のデータとトランザクションのファイルの名前は、BizTalk Server 環境間で異なる場合がありますに注意してください。 既定の BizTalk Server 構成で作成されたデータとトランザクションのファイルの詳細については、次を参照してください。[データベースのファイル グループを最適化する](http://msdn.microsoft.com/library/ee377060\(v=bts.70\).aspx)します。  
   
 ### <a name="configure-msdtc-for-biztalk-server"></a>BizTalk サーバーの MSDTC を構成します。  
  BizTalk サーバーの MSDTC を構成するのには、次の情報を確認します。  
@@ -153,7 +153,7 @@ ms.locfileid: "36992923"
 ### <a name="synchronize-time-on-all-servers"></a>すべてのサーバー上の時刻を同期します。  
  チケットに関連する多くの操作では、配信確認メッセージとログ記録は、正確なされているローカル システム クロックに依存します。 これはシステムの間に不一致がログを同期または期限切れとして別に拒否される 1 つのシステムによって発行されたチケットを発生可能性があります、分散環境で特にまたは有効化されていません。  
   
- 時刻を自動的に同期するサーバーの設定の詳細については、[ http://go.microsoft.com/fwlink/?LinkId=99420](http://go.microsoft.com/fwlink/?LinkId=99420)を参照してください。  
+ 時刻を自動的に同期するサーバーの設定の詳細については、次を参照してください。 [ http://go.microsoft.com/fwlink/?LinkId=99420](http://go.microsoft.com/fwlink/?LinkId=99420)します。  
   
 ### <a name="configure-the-windows-pagefile-for-optimal-performance"></a>最適なパフォーマンス、Windows ページファイルを構成します。  
  最適なパフォーマンスには、Windows ページファイル (ページング ファイル) を構成する次のガイドラインに従います。  

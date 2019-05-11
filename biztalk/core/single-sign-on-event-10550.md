@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10550 |Microsoft Docs'
+title: シングル サインオン:イベント 10550 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 987e01d741ef49245c931f828f6cebeb3bf52cd2
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 77e5cbfe7e06973dfd96a78ce37072a7dd49c35c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37021960"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65243526"
 ---
-# <a name="single-sign-on-event-10550"></a>シングル サインオン: イベント 10550
+# <a name="single-sign-on-event-10550"></a>シングル サインオン:イベント 10550
 ## <a name="details"></a>詳細  
   
 |                 |                                                                                                                                                                                                               |
@@ -36,4 +36,4 @@ ms.locfileid: "37021960"
  SSO サービスは、SSO 管理者アカウントのメンバーであるサービス アカウントで実行する必要があります。  
   
 ## <a name="user-action"></a>ユーザーの操作  
- 詳細については、[SSO 管理者の指定および関連管理者アカウントを表示する方法](../core/how-to-specify-sso-administrators-and-affiliate-administrators-accounts.md)を参照してください。
+ 詳細については、次を参照してください。 [SSO 管理者の指定および関連管理者アカウントを表示する方法](../core/how-to-specify-sso-administrators-and-affiliate-administrators-accounts.md)します。

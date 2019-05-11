@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 21c569f0be544292b4a70d49f4c75a038e2fed65
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: adb7f35671534a3c425e962d4980d452368f79d7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37006675"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65242700"
 ---
 # <a name="running-the-resolver-service-sample"></a>リゾルバー サービス サンプルを実行しています。
 リゾルバー サービス サンプルでは、次のシナリオを使用します。  

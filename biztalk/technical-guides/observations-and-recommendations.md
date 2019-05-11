@@ -12,12 +12,12 @@ caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bf134382be6086a1a3ab96fa649fa6cbb41d9bad
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 023012cd3febf2113aad0c26fea2c6cec65b0640
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36980075"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65242542"
 ---
 # <a name="observations-and-recommendations"></a>所見と推奨事項
 ## <a name="test-results-summary"></a>テスト結果の概要  
@@ -68,11 +68,11 @@ ms.locfileid: "36980075"
   
  結果は、ことは、メッセージ ボックス SQL Server コンピューターがボトルネックでない場合に、効果的なスケール アウト戦略にはスケール アウトの BizTalk Server コンピューターの数を示します。 パフォーマンスの原因となった、結果を示す BizTalk Server コンピューターを追加するになる非効率的なスケール アウト手法で、メッセージ ボックス データベース内の共有テーブルでの競合ポイントが発生したことを観察しましたので、特定時点より後減少します。 BizTalk サーバー グループが 1 つのメッセージ ボックス データベースから取得できる結果を最大化するで説明されている最適化を実行する必要があります[データベースのパフォーマンスの最適化](../technical-guides/optimizing-database-performance.md)します。 具体的には、SQL Server の記憶域に対して高速記憶域サブシステムを使用して、メッセージ ボックス データベースのファイルを格納する SQL Server で使用する論理ディスクをできるだけ短時間で応答することを確認する必要があります。 許容可能な読み取り/書き込みのパフォーマンスを測定するための一般的に使用されるしきい値は 15 ミリ秒です。通常これは、平均で測定されます。ディスク読み取り秒数と平均論理ディスクのパフォーマンス オブジェクトの下にあるディスク書き込み秒数のカウンターです。 メッセージ ボックス データベースをホストする SQL Server コンピューターには、すべての利用可能な最適化が適用されたら、追加のメッセージ ボックス データベースを追加できます。 プライマリ メッセージ ボックス データベースに適用されている同じ最適化手法は、セカンダリ データベースにも適用する必要があります。 ガイドラインに従うことをお勧めします。[スケール アウト SQL Server 層](http://go.microsoft.com/fwlink/?LinkID=158075)(http://go.microsoft.com/fwlink/?LinkID=158075) 、BizTalk Server のドキュメントにします。  
   
- 最適な結果を得るためには、全体のハードウェアおよびソフトウェア スタックは適切な品質である必要があるし、も正しく構成されています。 最初に、適切な高品質なハードウェアを購入を含む、する必要がありますが、ギガビット ネットワーク、高速ストレージ (SAN または 15 K ローカル SQL ディスク) に限定されませんし、最新のコンピューターを複数のコア CPU ごとの複数の Cpu を持ちます。 SQL Server コンピューターは、BizTalk Server のみ処理を専用必要があります。 1 台の SQL Server コンピューターを実行するときに、BizTalk メッセージ ボックスのいずれかとその他のすべてのデータベースのいずれか、SQL の 2 つのインスタンスを作成をお勧めします。 これにより、メッセージ ボックス データベースのパフォーマンスを最適化用に構成するインスタンス全体の設定ができます。 推奨されている最適化[のパフォーマンスの最適化](../technical-guides/optimizing-performance.md)を適用する次の順序では、ステップ バイ ステップ:[オペレーティング システムのパフォーマンスの最適化](../technical-guides/optimizing-operating-system-performance.md)、[ネットワークの最適化パフォーマンス](../technical-guides/optimizing-network-performance.md)、[事前構成データベース Optimizations2](../technical-guides/pre-configuration-database-optimizations2.md)、[構成後のデータベース Optimizations2](../technical-guides/post-configuration-database-optimizations2.md)と[一般的な BizTalk ServerOptimizations1](../technical-guides/general-biztalk-server-optimizations1.md)します。 メッセージ ボックス データベースの専用のファイル グループを作成して、SAN Lun にわたってこれらの割り当て」の説明に従って[、Databases2 のファイル グループを最適化する](../technical-guides/optimizing-filegroups-for-the-databases2.md)、に応じて大幅なパフォーマンスの向上を提供することができます、SAN の構成と LUN のレイアウト。  
+ 最適な結果を得るためには、全体のハードウェアおよびソフトウェア スタックは適切な品質である必要があるし、も正しく構成されています。 最初に、適切な高品質なハードウェアを購入を含む、する必要がありますが、ギガビット ネットワーク、高速ストレージ (SAN または 15 K ローカル SQL ディスク) に限定されませんし、最新のコンピューターを複数のコア CPU ごとの複数の Cpu を持ちます。 SQL Server コンピューターは、BizTalk Server のみ処理を専用必要があります。 1 台の SQL Server コンピューターを実行するときに、BizTalk メッセージ ボックスのいずれかとその他のすべてのデータベースのいずれか、SQL の 2 つのインスタンスを作成をお勧めします。 これにより、メッセージ ボックス データベースのパフォーマンスを最適化用に構成するインスタンス全体の設定ができます。 推奨されている最適化[のパフォーマンスの最適化](../technical-guides/optimizing-performance.md)を適用する次の順序では、ステップ バイ ステップ。[オペレーティング システムのパフォーマンスを最適化する](../technical-guides/optimizing-operating-system-performance.md)、[ネットワーク パフォーマンスを最適化する](../technical-guides/optimizing-network-performance.md)、[事前構成データベース Optimizations2](../technical-guides/pre-configuration-database-optimizations2.md)、[構成後のデータベースOptimizations2](../technical-guides/post-configuration-database-optimizations2.md)と[BizTalk Server の一般的な Optimizations1](../technical-guides/general-biztalk-server-optimizations1.md)します。 メッセージ ボックス データベースの専用のファイル グループを作成して、SAN Lun にわたってこれらの割り当て」の説明に従って[、Databases2 のファイル グループを最適化する](../technical-guides/optimizing-filegroups-for-the-databases2.md)、に応じて大幅なパフォーマンスの向上を提供することができます、SAN の構成と LUN のレイアウト。  
   
  BizTalk Server または SQL の層をスケールする方法を効率的に特定するには、お勧めするロード テストの実際の運用データを近似するメッセージを使用して実行します。 BizTalk Server 層をスケールする前に SQL Server がしないように既にボトルネックで推奨している[SQL Server のパフォーマンスの監視](../technical-guides/monitoring-sql-server-performance.md)します。 SQL Server で、ボトルネックになっている、BizTalk Server コンピューター上の CPU ヘッドルームがある場合は、ホスト インスタンスのレイアウトを変更することによってスループットを向上させることができます。 4 または 5 つ主要業績評価指標 (Kpi)、すべてのテスト実行の大まかな比較のポイントとして使用されるを確立するために重要です。 このアドバイスは、次の特定の変更は、ソリューションの全体的なパフォーマンスを低下するかどうかをすばやく計測することができます。  
   
- SQL Server 層を拡大する前に適用での最適化のすべて[データベースのパフォーマンスの最適化](../technical-guides/optimizing-database-performance.md)します。 気付きましたが、メッセージ ボックス データベースのディスク記憶域構成を顧客パフォーマンス ラボの中で、でき、TempDb の各データベースで特に以上 30% スループットの向上。 複数のメッセージ ボックス データベースをスケーリングして、3 つおよび 4 つのメッセージ ボックス データベースは、1 つのメッセージ ボックス データベースから 2 つのメッセージ ボックス データベースをスケール アウトするほとんどのパフォーマンス上の利点があるため、使用されました。 スケール アウトは、BizTalk Server メッセージ ボックスの詳細については、[スケール アウト SQL Server 層](http://go.microsoft.com/fwlink/?LinkID=158075)(http://go.microsoft.com/fwlink/?LinkID=158075) 、BizTalk Server のドキュメントにを参照してください。  
+ SQL Server 層を拡大する前に適用での最適化のすべて[データベースのパフォーマンスの最適化](../technical-guides/optimizing-database-performance.md)します。 気付きましたが、メッセージ ボックス データベースのディスク記憶域構成を顧客パフォーマンス ラボの中で、でき、TempDb の各データベースで特に以上 30% スループットの向上。 複数のメッセージ ボックス データベースをスケーリングして、3 つおよび 4 つのメッセージ ボックス データベースは、1 つのメッセージ ボックス データベースから 2 つのメッセージ ボックス データベースをスケール アウトするほとんどのパフォーマンス上の利点があるため、使用されました。 スケール アウトは、BizTalk Server メッセージ ボックスの詳細については、次を参照してください。[スケール アウト SQL Server 層](http://go.microsoft.com/fwlink/?LinkID=158075)(http://go.microsoft.com/fwlink/?LinkID=158075) 、BizTalk Server のドキュメントにします。  
   
 ## <a name="implemented-optimizations"></a>実装の最適化  
  このセクションでは、ラボ テストのシナリオに適用されたすべての最適化のチェックリストを提供します。  
@@ -87,12 +87,12 @@ ms.locfileid: "36980075"
   
 |Optimization|リファレンス|  
 |------------------|---------------|  
-|BIOS: は、パフォーマンスの設定を構成します。|[オペレーティング システムのパフォーマンスの最適化](../technical-guides/optimizing-operating-system-performance.md)|  
+|BIOS:パフォーマンスの設定を構成します。|[オペレーティング システムのパフォーマンスの最適化](../technical-guides/optimizing-operating-system-performance.md)|  
 |SQL Server のファイルのリアルタイム スキャンを無効にします。|[オペレーティング システムのパフォーマンスの最適化](../technical-guides/optimizing-operating-system-performance.md)|  
 |「高パフォーマンス」を有効にするすべての BizTalk Server と SQL Server コンピューターの電源プランします。|[オペレーティング システムのパフォーマンスを向上するための一般的なガイドライン](../technical-guides/general-guidelines-for-improving-operating-system-performance.md)|  
 |すべての BizTalk Server と SQL Server のコンピューターでウイルス対策ソフトウェアを無効にします。|[オペレーティング システムのパフォーマンスを向上するための一般的なガイドライン](../technical-guides/general-guidelines-for-improving-operating-system-performance.md)|  
   
- **SQL Server の最適化: 全般**  
+ **SQL Server の最適化:[全般]**  
   
 |Optimization|リファレンス|  
 |------------------|---------------|  
@@ -109,7 +109,7 @@ ms.locfileid: "36980075"
 |MSDTC を構成し、DTC のトレースを無効にします。|[データベースの事前構成 Optimizations2](../technical-guides/pre-configuration-database-optimizations2.md)|  
 |SQL Server のすべてのインスタンスの起動時のパラメーターとしてトレース フラグ-t1118 を実装を有効にします。|[データベースの事前構成 Optimizations2](../technical-guides/pre-configuration-database-optimizations2.md)|  
   
- **BizTalk データベースの SQL Server の最適化:**  
+ **SQL Server の最適化:BizTalk データベース**  
   
 |Optimization|リファレンス|  
 |------------------|---------------|  
@@ -124,7 +124,7 @@ ms.locfileid: "36980075"
 |個別は、ポート、送信ポート、オーケストレーション、および追跡専用のホスト上に表示されます。|[BizTalk Server の一般的な Optimizations1](../technical-guides/general-biztalk-server-optimizations1.md)|  
 |ポーリング間隔を構成します。|[低待機時間シナリオ Optimizations2](../technical-guides/low-latency-scenario-optimizations2.md)|  
 |BizTalk 構成ファイルの最大接続プロパティを調整します。|セクションの「maxconnection パラメーターの値を変更することで許可される SOAP と HTTP の同時接続の数を増やす」[一般的な BizTalk Server Optimizations1](../technical-guides/general-biztalk-server-optimizations1.md)|  
-|BizTalk Server の各ノードで、各ホスト インスタンスの CLR をホストしているパラメーターを定義します。<br /><br /> 最大 IO スレッドの数: 250<br /><br /> ワーカー スレッド最大数: 100<br /><br /> 最小 IO スレッドの数: 25<br /><br /> 最小ワーカー スレッド: 25|「CLR ホストの BizTalk ホスト インスタンスのスレッドの値を定義する」のセクションの[一般的な BizTalk Server Optimizations1](../technical-guides/general-biztalk-server-optimizations1.md)|  
+|BizTalk Server の各ノードで、各ホスト インスタンスの CLR をホストしているパラメーターを定義します。<br /><br /> 最大 IO スレッドの数:250<br /><br /> 最大ワーカー スレッド数:100<br /><br /> 最小 IO スレッドの数:25<br /><br /> 最小ワーカー スレッド数:25|「CLR ホストの BizTalk ホスト インスタンスのスレッドの値を定義する」のセクションの[一般的な BizTalk Server Optimizations1](../technical-guides/general-biztalk-server-optimizations1.md)|  
 |10000 インプロセス メッセージと内部メッセージ キューのサイズを増やします。|[低待機時間シナリオ Optimizations2](../technical-guides/low-latency-scenario-optimizations2.md)|  
 |BizTalk Server グループ レベルの追跡を無効にします。|[BizTalk Server の一般的な Optimizations1](../technical-guides/general-biztalk-server-optimizations1.md)|  
 |同時に実行される分離受信場所、バックエンド Web サービス、および IIS 7.5 統合モードで実行されている IIS 7.0 での WCF サービスをホストできる ASP.NET 4 Web アプリケーションの要求数を管理します。|[BizTalk Server の一般的な Optimizations1](../technical-guides/general-biztalk-server-optimizations1.md)|  

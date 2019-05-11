@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10509 |Microsoft Docs'
+title: シングル サインオン:イベント 10509 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 12e21d19a4504ecebd14060c784a19f5f7446035
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2911358dd326c5fa7f2673567f53805edb898de0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36968723"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65243419"
 ---
-# <a name="single-sign-on-event-10509"></a>シングル サインオン: イベント 10509
+# <a name="single-sign-on-event-10509"></a>シングル サインオン:イベント 10509
 ## <a name="details"></a>詳細  
 
 |                 |                                                                |
@@ -28,19 +28,19 @@ ms.locfileid: "36968723"
 | 製品バージョン |   [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]   |
 |    イベント ID     |                             10509                              |
 |  イベント ソース   |                             ENTSSO                             |
-|    コンポーネント    |                              N\A                               |
+|    コンポーネント    |                              該当なし                               |
 |  シンボル名  |                 SSO_INFO_SERVICE_REMOVE_FAILED                 |
-|  メッセージ テキスト   | SSO サービスを削除できませんでした。%r<br /><br /> エラー コード: %1 |
+|  メッセージ テキスト   | SSO service.%r を削除できませんでした。<br /><br /> エラー コード: %1 |
 
 ## <a name="explanation"></a>説明  
- このイベントは、ENTSSO サービスのアンインストールが失敗したことを示します。 このイベントは、エンタープライズ シングル サインオンの手動アンインストールの間にのみ発生します。  
+ このイベントは、ENTSSO サービスがアンインストールに失敗したことを示します。 このイベントは、エンタープライズ シングル サインオンの手動アンインストール中にのみ実行できます。  
 
 ## <a name="user-action"></a>ユーザーの操作  
- このイベントを解決するには、次の手順を実行します。  
+ このイベントを解決するには、次の操作を行います。  
 
-- ENTSSO または他のサービスからの関連するエラーについては、システムおよびアプリケーションのイベント ログを確認します。  
+- ENTSSO または他のサービスから関連するエラーのアプリケーションとシステムの両方のイベント ログを確認します。  
 
-  詳細については、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ヘルプの次の情報を参照してください:   
+  詳細については、の次のリソースを参照してください。[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプ。  
 
 - [SSO のインストール](../core/installing-sso.md)  
 

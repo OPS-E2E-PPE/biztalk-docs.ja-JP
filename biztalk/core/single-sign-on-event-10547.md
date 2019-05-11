@@ -1,5 +1,5 @@
 ---
-title: 'シングル サインオン: イベント 10547 |Microsoft Docs'
+title: シングル サインオン:イベント 10547 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1af15d6a6259142d243738ab83cabe3e0c63e9c6
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a8ec8133a6d2456e2cdafca56ae956f6be1d31a0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37010947"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65243423"
 ---
-# <a name="single-sign-on-event-10547"></a>シングル サインオン: イベント 10547
+# <a name="single-sign-on-event-10547"></a>シングル サインオン:イベント 10547
 ## <a name="details"></a>詳細  
 
 |                 |                                                                           |
@@ -30,16 +30,16 @@ ms.locfileid: "37010947"
 |  イベント ソース   |                                  ENTSSO                                   |
 |    コンポーネント    |                                    CO                                     |
 |  シンボル名  |                          SSO_WARN_UPDATE_FAILED                           |
-|  メッセージ テキスト   | 再暗号化の間に SSO データベース内の資格情報を更新できませんでした |
+|  メッセージ テキスト   | 再暗号化中に、SSO データベース内の資格情報を更新できませんでした。 |
 
 ## <a name="explanation"></a>説明  
- この警告イベントは、新しい暗号化の結果で資格情報を更新できなかったことを示します。 新しいシークレットの入力または古いシークレットの復元によってマスター シークレットを変更すると、SSO データベースに格納されている古いシークレットで暗号化されたすべてのシークレットが復号化され、新しいシークレットで再暗号化されます。 再暗号化の過程で資格情報が削除された場合、このイベントが発生する可能性があります。  
+ この警告イベントは、新しい暗号化の結果で資格情報を更新することがないことを示します。 新しいシークレットを生成することによって、または古いシークレットを復元することで、マスター シークレットが変更されたときに、再暗号化は、以前のシークレットで暗号化されたすべてのシークレットの暗号化解除し、再暗号化して、新しいシークレットを SSO データベースで実行されます。 このイベントは、再暗号化の過程で、資格情報が削除された場合に発生することができます。  
 
 ## <a name="user-action"></a>ユーザーの操作  
- この警告を解決するには、次の操作を行います:   
+ この警告を解決するには、次の操作を行います。  
 
-- 別の再暗号化が行われるまでしばらく待ちます。自動的に行われない場合は、SSO サービスを再起動すると、必要な場合は新しい再暗号化が実行されます。  
+- 別の再暗号化に若干の遅延の後に発生するまで待ちます自動的を実行しない場合は、1 つが必要な場合に、新しい再暗号化をトリガーする SSO サービスを再起動します。  
 
-  詳細については、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ヘルプの次の情報を参照してください:   
+  詳細については、の次のリソースを参照してください。[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプ。  
 
 - [SSO について](../core/understanding-sso.md)

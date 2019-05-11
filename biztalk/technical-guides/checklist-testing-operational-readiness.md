@@ -1,5 +1,5 @@
 ---
-title: 'チェックリスト: 運用準備のテスト |Microsoft Docs'
+title: チェックリスト:運用準備のテスト |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 58a10610595b990e6fc2bae1838fa5653a4b2be0
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c8903e3c8885c846cd6ce810281eeae48e30482c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36982601"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65242587"
 ---
-# <a name="checklist-testing-operational-readiness"></a>チェックリスト: 運用準備のテスト
+# <a name="checklist-testing-operational-readiness"></a>チェックリスト:運用準備のテスト
 運用準備のためのテストは、見落とされがちまたは最小限に抑えるだけが実行される重要な手順です。 任意のエンタープライズ レベル アプリケーションの重要な要件を徹底的にテストおよび開発したソリューションを使用して[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]例外ではありません。 少なくとも、運用環境に BizTalk ソリューションを移行する前に次のテストを実行する必要があります。  
 
 
