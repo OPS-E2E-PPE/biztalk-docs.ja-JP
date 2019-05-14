@@ -23,12 +23,12 @@ caps.latest.revision: 33
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 35334b61199d758a5eafe8623ea576a047799925
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 06d0b60bb871ed25b344ef525bc85c90afaae04f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36984435"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395014"
 ---
 # <a name="partyresolution-biztalk-server-sample"></a>PartyResolution (BizTalk Server サンプル)
 PartyResolution サンプルは、パーティの解決で BizTalk オーケストレーションを使用して、2 つのうちいずれかの受信側にメッセージをルーティングする方法を示すものです。  
@@ -152,7 +152,7 @@ PartyResolution サンプルは、パーティの解決で BizTalk オーケス�
 ## <a name="building-and-initializing-this-sample"></a>このサンプルのビルドと初期化  
 
 > [!NOTE]
->  このサンプルをビルドおよび初期化する前に、既定の BizTalk インプロセス ホストが、信頼されている認証として構成されていることを確認する必要があります。 詳細については、[BizTalk Server ランタイムのセキュリティに関する推奨事項](../core/biztalk-server-runtime-security-recommendations.md)を参照してください。  
+>  このサンプルをビルドおよび初期化する前に、既定の BizTalk インプロセス ホストが、信頼されている認証として構成されていることを確認する必要があります。 詳細については、次を参照してください。 [BizTalk Server ランタイムのセキュリティに関する推奨事項](../core/biztalk-server-runtime-security-recommendations.md)します。  
 
  MIME パイプライン コンポーネントは 64 ビット ホスト インスタンスではサポートされていません。 ファイル アダプターの送信および受信ハンドラーと関連付けられているホストを、32 ビット専用ホストとして構成する必要があります。 この参照の詳細については[ホスト プロパティを変更する方法](../core/how-to-modify-host-properties.md)します。 既にしている場合、システムで構成されている 32 ビット専用ホストを参照してください、それを使用する[ファイル アダプタ構成](../core/configure-the-file-adapter.md)ファイル アダプターの関連付けられているホストを構成する手順については、送信および受信ハンドラー。  
 
@@ -278,13 +278,13 @@ btstask ImportBindings -ApplicationName:PartyResolutionSample -Source:%SupplierB
 
 1.  次のフォルダーから FilePolling.exe を実行します。  
 
-     *\<サンプル パス >* \Orchestrations\PartyResolution\FilePolling\bin\Debug  
+     *\<Samples Path>* \Orchestrations\PartyResolution\FilePolling\bin\Debug  
 
 2.  クリックして**ポーリングを開始**します。  
 
 3.  用意されている PO インスタンス ファイル PurchaseOrder.xml を、次のフォルダーにコピーします。  
 
-     *\<サンプル パス >* \Orchestrations\PartyResolution\FileDrop\PurchaseOrder  
+     *\<Samples Path>* \Orchestrations\PartyResolution\FileDrop\PurchaseOrder  
 
 4.  次の各時点でサンプルの進行状況を知らせるメッセージがメッセージ ボックスの形式で表示されるので、それを確認します。  
 

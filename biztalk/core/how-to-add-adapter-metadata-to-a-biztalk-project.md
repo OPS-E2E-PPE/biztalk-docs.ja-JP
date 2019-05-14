@@ -12,21 +12,21 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0c95cfac206dad58e0093945d2495c7e725c849c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 0f06b60b1dce1b0b9df785d25552f688f7793858
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36968809"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65387309"
 ---
 # <a name="how-to-add-adapter-metadata-to-a-biztalk-project"></a>アダプター メタデータを BizTalk プロジェクトに追加する方法
-アダプター メタデータの追加ウィザードを使用すると、アダプター メタデータを BizTalk プロジェクトに追加できます。 このデータには、オーケストレーションからアダプターと通信するために必要なスキーマ、メッセージの種類、およびポートの種類が含まれます。 FTP などのアプリケーション アダプターと共にアダプター メタデータの追加ウィザードを使用することで、これらのアプリケーション アダプターに対応するスキーマをシステムに取り込むことができます。 HTTP などのトランスポート アダプターでは通常、スキーマが使用されません。  
+アダプター メタデータの追加ウィザードでは、アダプター メタデータを BizTalk プロジェクトに追加することができます。 このデータには、スキーマ、メッセージの種類、およびオーケストレーションからアダプターと通信するために必要なポートの種類が含まれます。 アダプター メタデータの追加ウィザードを使用して、FTP などのアプリケーション アダプター、システムにこれらのアプリケーション アダプターに対応するプル スキーマを使用します。 HTTP などのトランスポート アダプターによってスキーマは通常使用しないように注意してください。  
   
- 次の手順は、アダプターのメタデータを追加する一般的な手順です。  
+ 次の手順では、アダプターのメタデータを追加する汎用的な手順について説明します。  
   
-### <a name="to-add-adapter-metadata-to-a-biztalk-project"></a>BizTalk プロジェクトにアダプター メタデータを追加するには  
+### <a name="to-add-adapter-metadata-to-a-biztalk-project"></a>アダプター メタデータを BizTalk プロジェクトに追加するには  
   
-1. [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] BizTalk プロジェクトをソリューション エクスプ ローラーでプロジェクトを右クリックし、をクリックして**追加**、] をクリックし、**生成した項目の追加**します。  
+1. [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] BizTalk プロジェクトをソリューション エクスプ ローラーでプロジェクトを右クリックし、をクリックして**追加**、 をクリックし、**生成した項目の追加**します。  
   
 2. **生成した項目の追加 - \<** <em>プロジェクト名</em>**\>**  ダイアログ ボックスで、**テンプレート** セクションで、選択**アダプターの追加**、 をクリックし、**オープン**。  
   
@@ -34,10 +34,10 @@ ms.locfileid: "36968809"
   
    |プロパティ|目的|  
    |--------------|----------------|  
-   |[アダプター] ボックス|プロジェクトに追加する登録済みのアダプターを選択します。|  
-   |SQL Server|BizTalk データベース サーバーの名前を入力します。|  
+   |アダプターのリスト ボックス|プロジェクトに追加する登録済みのアダプターを選択します。|  
+   |SQL Server|BizTalk データベース サーバー名を入力します。|  
    |[データベース]|選択したサーバーの BizTalk 管理データベースの一覧が表示されます。|  
-   |Port|任意。 作成されて、BizTalk 管理データベースに格納されているポートの一覧を表示します。 選択したアダプターで使用できるように構成されているポートだけが表示されます。|  
+   |Port|任意。 作成され、BizTalk 管理データベースに格納されているポートの一覧が表示されます。 選択したアダプターを使用するように構成ポートのみ表示されます。|  
   
     **[次へ]** をクリックします。  
   
@@ -48,6 +48,6 @@ ms.locfileid: "36968809"
   
     または、  
   
-    動的アダプターを使用している場合は、カスタム ユーザー インターフェイスの手順に従ってウィザードを実行します。  
+    動的アダプターを使用している場合は、ウィザードを完了するカスタム ユーザー インターフェイスの手順に従います。  
   
-   ウィザードが完了すると、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] のソリューション エクスプローラーに、.odx ファイルおよび .xsd ファイルが表示されます。
+   ウィザードを完了した後[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]ソリューション エクスプ ローラーで .odx および .xsd ファイルを示します。

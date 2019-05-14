@@ -12,12 +12,12 @@ caps.latest.revision: 22
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6418194021678080da3166c359e2b9e14072f221
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4e04854edd176a730addaf4c533e54bacef65465
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37004467"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65306427"
 ---
 # <a name="troubleshooting-sql-server"></a>SQL Server のトラブルシューティング
 Microsoft [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] に影響を与える Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] の問題の大部分は、次のカテゴリのいずれかに分類されます。  
@@ -97,7 +97,7 @@ Microsoft [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.
  この問題は、Microsoft [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] に実装されているセキュリティ機能により、サーバーへの同時 TCP/IP 接続のためのキューのサイズが減らされるために発生します。 この機能は、サービス拒否攻撃の回避に役立ちます。  
   
 ##### <a name="resolution"></a>解決策  
- この問題の解決方法の詳細については、[DBNETLIB 例外の回避](../core/avoiding-dbnetlib-exceptions.md)を参照してください。  
+ この問題の解決方法の詳細については、次を参照してください。 [DBNETLIB 例外の回避](../core/avoiding-dbnetlib-exceptions.md)します。  
   
 ## <a name="permissions-related-problems"></a>アクセス許可に関連した問題  
   
@@ -113,7 +113,7 @@ Microsoft [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.
  このエラーは、指定したアカウントが適切な Windows グループまたは [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] ロールに属していない場合に発生する可能性があります。  
   
 ##### <a name="resolution"></a>解決策  
- 指定したアカウントが適切な Windows グループまたは [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] ロールのメンバーであることを確認します。 適切なメンバーシップの詳細については、[Windows グループと BizTalk Server でのユーザー アカウント](../core/windows-groups-and-user-accounts-in-biztalk-server.md)を参照してください。  
+ 指定したアカウントが適切な Windows グループまたは [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] ロールのメンバーであることを確認します。 適切なメンバーシップの詳細については、次を参照してください。 [Windows グループと BizTalk Server でのユーザー アカウント](../core/windows-groups-and-user-accounts-in-biztalk-server.md)します。  
   
 ## <a name="database-sizing-problems"></a>データベース サイズに関連した問題  
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] データベースがチェックされない状態で肥大する場合は、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 環境のパフォーマンスが悪影響を受けます。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] データベースの肥大を制御するには、以下の手順を実行します。  

@@ -1,5 +1,5 @@
 ---
-title: '手順 3: アプリケーション定義ファイルの作成 |Microsoft Docs'
+title: 手順 3:アプリケーション定義ファイルの作成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e7a5e2919a4cfed649342fda82435211b059206d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 455a4423a1fe420ec9a46fe8cb8236086e3f4309
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36988219"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65363247"
 ---
-# <a name="step-3-create-an-application-definition-file"></a>手順 3: アプリケーション定義ファイルを作成します。
+# <a name="step-3-create-an-application-definition-file"></a>手順 3:アプリケーション定義ファイルを作成します。
 ![手順 4 の 3](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-3of4.gif "Step_3of4")  
   
  **所要時間:** 15 分  
@@ -31,7 +31,7 @@ ms.locfileid: "36988219"
  作成している Microsoft Office SharePoint Server アプリケーションの目的は、エコー アダプターの EchoGreetings メソッドの呼び出しを SharePoint Web パーツを使用して応答を返すことができるようにです。  
   
 ## <a name="prerequisites"></a>前提条件  
- 完了する必要があります[手順 2: Web プロジェクトを配置](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-2-deploy-the-web-project.md)します。 アクセスをビジネス データ カタログ定義エディター、Microsoft Office SharePoint Server 2007 SDK の一部としてインストールされている必要があります。 SDK をダウンロードする[ http://go.microsoft.com/fwlink/?LinkId=104130](http://go.microsoft.com/fwlink/?LinkId=104130)します。  
+ 完了する必要があります[手順 2。Web プロジェクトを配置](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-2-deploy-the-web-project.md)します。 アクセスをビジネス データ カタログ定義エディター、Microsoft Office SharePoint Server 2007 SDK の一部としてインストールされている必要があります。 SDK をダウンロードする[ http://go.microsoft.com/fwlink/?LinkId=104130](http://go.microsoft.com/fwlink/?LinkId=104130)します。  
   
 ## <a name="creating-an-application-definition-file"></a>アプリケーション定義ファイルを作成します。  
  このトピックでは、IIS でホストされる WCF アダプターを使用した SharePoint ビジネス データ カタログを接続するためのアプリケーション定義ファイルを作成する手順を提供します。  
@@ -56,10 +56,10 @@ ms.locfileid: "36988219"
   
 9. 展開、 **EchoWSLob**ノードの順に展開し、**エンティティ**ノード。 選択**Entity0**プロパティ ウィンドウの入力**EchoGreetings**の値として、**名前**プロパティ。  
   
-     ![エンティティ名](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/942e7853-451e-4cf5-8884-09fb7d8dc19d.gif "942e7853-451e-4cf5-8884-09fb7d8dc19d")  
+     ![Entity Name](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/942e7853-451e-4cf5-8884-09fb7d8dc19d.gif "942e7853-451e-4cf5-8884-09fb7d8dc19d")  
   
 ## <a name="specify-user-name-and-password-headers-for-the-method"></a>メソッドのユーザー名とパスワードのヘッダーを指定します。  
- WCF アダプターを呼び出すときに、LOB システムに渡されるユーザーの資格情報を提供する必要があります。 [手順 1: アダプター サービス開発ウィザードを使用して Web プロジェクトを作成](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-1-use-the-adapter-service-development-wizard-to-create-the-web-project.md)MyUserHeader と MyPassHeader フィールドにユーザー名とパスワード情報を提供することを要求するようにエコー アダプターを構成します。 このアプリケーションの定義ファイルの同じフィールド名を使用する必要がありますようになりました。  
+ WCF アダプターを呼び出すときに、LOB システムに渡されるユーザーの資格情報を提供する必要があります。 [手順 1。Web プロジェクトを作成するアダプター サービス開発ウィザードを使用して](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-1-use-the-adapter-service-development-wizard-to-create-the-web-project.md)MyUserHeader と MyPassHeader フィールドにユーザー名とパスワード情報を提供することを要求するようにエコー アダプターを構成します。 このアプリケーションの定義ファイルの同じフィールド名を使用する必要がありますようになりました。  
   
 #### <a name="to-specify-user-name-and-password-headers"></a>ユーザー名とパスワードのヘッダーを指定するには  
   
@@ -141,13 +141,13 @@ ms.locfileid: "36988219"
   
 5.  編集ウィンドウでは、次の手順フィールドの値を設定します。  
   
-    |設定対象|次の値に設定|  
+    |これを設定します。|これを|  
     |--------------|-------------|  
     |**id**|GUID 値では、たとえば 27829ed4 583a-40-c fb8cdd9dc98d ad87 4。|  
     |**sentDateTime**|現在の日付と時刻、に対する 05/15/08 のたとえば午前 9時 12分|  
     |**firstName**|First|  
-    |**middleName**|Middle|  
-    |**[氏名]**|Last|  
+    |**middleName**|中間|  
+    |**lastName**|Last|  
   
      ![既定のパラメーター](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/70250957-9680-48ce-8bce-420ff18bb47a.gif "70250957-9680-48ce-8bce-420ff18bb47a")  
   
@@ -163,7 +163,7 @@ ms.locfileid: "36988219"
  ビジネス データ カタログ定義エディター ツールを使用した IIS でホストされているアダプターとの接続を有効にするのに Microsoft Office SharePoint Server 2007 にインポートできるアプリケーション定義ファイルを作成します。  
   
 ## <a name="next-steps"></a>次の手順  
- この手順で作成したアプリケーション定義ファイルに基づく SharePoint アプリケーションが作成する必要があります。 参照してください[手順 4: アダプターにアクセスする Sharepoint アプリケーションを作成する](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-4-create-a-sharepoint-application-to-access-the-adapter.md)手順についてはします。  
+ この手順で作成したアプリケーション定義ファイルに基づく SharePoint アプリケーションが作成する必要があります。 参照してください[手順 4。アダプターにアクセスする Sharepoint アプリケーションを作成する](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-4-create-a-sharepoint-application-to-access-the-adapter.md)手順についてはします。  
   
 ## <a name="see-also"></a>参照  
  [チュートリアル 3: IIS でエコー アダプターをホストする](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-3-hosting-the-echo-adapter-in-iis.md)

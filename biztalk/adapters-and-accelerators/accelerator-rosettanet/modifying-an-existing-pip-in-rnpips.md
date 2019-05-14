@@ -17,17 +17,17 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3e3867c50e73c1747ed6e800f624b674e2ee737c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c9f7b7bf3f3095e5ac1f5bc87b730935de70d63e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37004867"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65282916"
 ---
 # <a name="modifying-an-existing-pip-in-rnpips"></a>Rnpip の既存の PIP の変更
-このトピックでは、変更し、Microsoft がインストールされているパートナー インターフェイス Process (PIP) スキーマの 1 つを再デプロイする方法を説明します[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]セットアップします。 スキーマは、RNPIP アセンブリの一部として展開します。  
+このトピックでは、変更し、Microsoft がインストールされているパートナー インターフェイス Process (PIP) スキーマの 1 つを再デプロイする方法を説明します[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]セットアップします。 Rnpip アセンブリの一部としてスキーマを展開するとします。  
   
-### <a name="to-modify-an-existing-pip-in-rnpips"></a>RNPIP の既存の PIP を変更するには  
+### <a name="to-modify-an-existing-pip-in-rnpips"></a>Rnpip の既存の PIP を変更するには  
   
 1. をクリックして**開始**、 をクリックして**実行**、型**cmd**、順にクリックします**OK**。  
   
@@ -56,7 +56,7 @@ ms.locfileid: "37004867"
   
 12. **プロパティ ページ**ダイアログ ボックスで、をクリックして**構成プロパティ**、 をクリックして**展開**、 をクリックして**再デプロイ**を選択します`True`。、 をクリックし、 **OK**します。  
   
-13. 必要に応じて RNPIP の既存のスキーマを編集します。  
+13. 必要に応じてで Rnpip の既存のスキーマのいずれかを編集します。  
   
 14. クリックして**ファイル**、 をクリックし、**保存**します。  
   
@@ -64,7 +64,7 @@ ms.locfileid: "37004867"
   
 16. プロジェクト名を右クリックし、**デプロイ**します。  
   
-17. をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**Microsoft** [!INCLUDE[btsBizTalkServer2006r3ui](../../includes/btsbiztalkserver2006r3ui-md.md)]、順にクリックします**BizTalk Server 管理**します。  
+17. **[スタート]** ボタンをクリックして、 **[すべてのプログラム]**、 **Microsoft**** [!INCLUDE[btsBizTalkServer2006r3ui](../../includes/btsbiztalkserver2006r3ui-md.md)]の順にポイントし、 **[BizTalk Server 管理]** をクリックします。  
   
 18. BizTalk 管理コンソールで  **Microsoft** [!INCLUDE[btsBizTalkServer2006r3ui](../../includes/btsbiztalkserver2006r3ui-md.md)] **(Local)**、順に展開**ホスト**します。  
   

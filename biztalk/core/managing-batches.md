@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: af801bd6ec61c883d81e7ea6fd15e92f2186b777
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d79d8814caeb43d4338815bd6e73cde742a3fca4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37021529"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65380488"
 ---
 # <a name="managing-batches"></a>バッチの管理
 リリースを手動で制御する方法の上部にあるコントロールを使用して、インターチェンジをバッチ処理、**バッチ構成**の一方向アグリーメント タブのページ、**アグリーメントのプロパティ** ダイアログ ボックス (で、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソール) X12 と EDIFACT エンコードの両方にします。 この作業には、次の制御が含まれます。  
@@ -30,12 +30,12 @@ ms.locfileid: "37021529"
   
   これらの制御は単一のバッチ構成に対して実行されます。  
   
-  キーを押すときに BizTalk がアクション、**開始**ボタンによって異なります、**フィルター**条件、**リリース**条件、および**アクティベーション**範囲の設定、**バッチ構成**ページ。 フィルター条件によって、バッチ処理の対象となるメッセージが決まります。 バッチがリリースされたときに、リリース条件を決定します。 アクティベーションの範囲のプロパティによって、バッチ処理オーケストレーションのアクティブなインスタンスがバッチ処理要素を収集するかどうかが決まります。 これらの設定の詳細については、[送信バッチの構成](../core/configuring-an-outgoing-batch.md)を参照してください。  
+  キーを押すときに BizTalk がアクション、**開始**ボタンによって異なります、**フィルター**条件、**リリース**条件、および**アクティベーション**範囲の設定、**バッチ構成**ページ。 フィルター条件によって、バッチ処理の対象となるメッセージが決まります。 バッチがリリースされたときに、リリース条件を決定します。 アクティベーションの範囲のプロパティによって、バッチ処理オーケストレーションのアクティブなインスタンスがバッチ処理要素を収集するかどうかが決まります。 これらの設定の詳細については、次を参照してください。[送信バッチの構成](../core/configuring-an-outgoing-batch.md)します。  
 
 このトピックでは、開始、停止、上書き、およびバッチを削除する方法を示します。  
 
 > [!NOTE]
->  バッチを構成する方法の詳細については、[構成 X12 バッチ処理](../core/configuring-batching-x12.md)または[EDIFACT バッチ処理の構成](../core/configuring-batching-edifact.md)を参照してください。 
+>  バッチを構成する方法の詳細については、次を参照してください。[構成 X12 バッチ処理](../core/configuring-batching-x12.md)または[EDIFACT バッチ処理の構成](../core/configuring-batching-edifact.md)します。 
   
 ## <a name="prerequisites"></a>前提条件  
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者グループまたは [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] B2B Operators グループのメンバーとしてログオンしている必要があります。  

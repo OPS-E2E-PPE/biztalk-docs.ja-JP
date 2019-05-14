@@ -28,12 +28,12 @@ caps.latest.revision: 23
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 52798c5f34c1f436d5c55954f61c6e18fcb2a398
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6068d3d4e84389022a07d315b808b7005b95a88c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37013019"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65262597"
 ---
 # <a name="ordered-delivery-of-messages"></a>メッセージの順次配送
 メッセージの順次配送とは、特定の順序でメッセージ ボックス データベースに公開されたメッセージを、それぞれ対応するサブスクライバーに (メッセージ ボックスに公開されたときと同じ順序で) 配送することです。  
@@ -51,14 +51,14 @@ ms.locfileid: "37013019"
 ### <a name="ordered-delivery-for-custom-adapters"></a>カスタム アダプターでの順次配送  
  カスタムの受信アダプターでは、特別に考慮しなければならない事柄があります。 順次配送をサポートするカスタム アダプターは、次のことを実行する必要があります。  
   
-- カスタムの受信メッセージのバッチを送信した後にアダプターが待機する必要があります、 **BatchComplete**次のバッチを送信する前に、BizTalk Server からのコールバック。 詳細については、[Batch-Supported の受信アダプター用のインターフェイス](../core/interfaces-for-a-batch-supported-receive-adapter.md)を参照してください。  
+- カスタムの受信メッセージのバッチを送信した後にアダプターが待機する必要があります、 **BatchComplete**次のバッチを送信する前に、BizTalk Server からのコールバック。 詳細については、次を参照してください。 [Batch-Supported の受信アダプター用のインターフェイス](../core/interfaces-for-a-batch-supported-receive-adapter.md)します。  
   
 - メッセージの処理がパイプラインで失敗した場合、そのメッセージを保留 (できれば再開不可に) する必要があります。 使用して、 **BTS します。SuspendAsNonResumable**メッセージ コンテキスト プロパティ[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]にメッセージを適切にフラグを設定します。  
   
 > [!NOTE]
 >  保留したメッセージが後で再開されると、メッセージの順序が破綻してしまいます。 このような事態を避けるためには、失敗したメッセージを再開不可として保留します。  
   
- カスタム アダプター作成の詳細については、[カスタム アダプターの開発](../core/developing-custom-adapters.md)を参照してください。  
+ カスタム アダプター作成の詳細については、次を参照してください。[カスタム アダプターの開発](../core/developing-custom-adapters.md)します。  
   
 ## <a name="conditions-for-end-to-end-ordered-message-processing"></a>エンド ツー エンドの順次メッセージ処理を実現するための条件  
  エンド ツー エンドの順次配送を実現するには、次の条件を満たす必要があります。  
@@ -108,9 +108,9 @@ ms.locfileid: "37013019"
   
  順次配送の詳細については、次の情報を参照してください。  
   
- [エンド ツー エンドのオプションを処理するメッセージの順次配送を BizTalk:](http://social.technet.microsoft.com/wiki/contents/articles/12887.biztalk-end-to-end-ordered-message-processing-options.aspx)  
+ [BizTalk:エンド ツー エンドの順次メッセージ処理オプション](http://social.technet.microsoft.com/wiki/contents/articles/12887.biztalk-end-to-end-ordered-message-processing-options.aspx)  
   
- [BizTalk: 順次配送](http://social.technet.microsoft.com/wiki/contents/articles/6681.biztalk-ordered-delivery.aspx)  
+ [BizTalk:順次配送](http://social.technet.microsoft.com/wiki/contents/articles/6681.biztalk-ordered-delivery.aspx)  
   
 ## <a name="see-also"></a>参照  
  [MSMQ アダプターでメッセージの配信を順序付け](../core/ordered-delivery-of-messages-with-the-msmq-adapter.md)   

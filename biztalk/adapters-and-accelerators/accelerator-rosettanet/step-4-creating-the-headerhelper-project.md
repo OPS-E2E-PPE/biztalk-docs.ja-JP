@@ -1,5 +1,5 @@
 ---
-title: '手順 4: HeaderHelper プロジェクトの作成 |Microsoft Docs'
+title: 手順 4:HeaderHelper プロジェクトの作成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,19 +15,19 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a01323dba6fba4673e4bcd2886df53d408421f9f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 850c3b5321c5b167bf3946a26d94db21bdb6ba35
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36970795"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65280918"
 ---
-# <a name="step-4-creating-the-headerhelper-project"></a>手順 4: HeaderHelper プロジェクトの作成
-ここでは、[!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)] クラス ライブラリを作成します。 プライベート プロセス オーケストレーションが受信メッセージを受信すると、HeaderHelper ライブラリは、ドキュメントの変換が必要かどうかを判断し、変換が必要な場合は変換を実行します。 これにより、オーケストレーションは別のバージョンの RNIF (RosettaNet Implementation Framework) ドキュメントでも使用できます。 また、3A2 応答メッセージを送信する際には、HeaderHelper ライブラリはメッセージを送信する前に追加のドキュメント変換を実行します。  
+# <a name="step-4-creating-the-headerhelper-project"></a>手順 4:HeaderHelper プロジェクトの作成
+この手順で作成、[!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)]クラス ライブラリ。 プライベート プロセス オーケストレーションが受信メッセージを受け取るときに、HeaderHelper ライブラリ ドキュメントの変換が必要し、必要な場合は、変換を実行します。 かどうかを判断します。 これにより、オーケストレーションの RosettaNet Implementation Framework (RNIF) ドキュメントの異なるバージョンを操作できます。 さらに、3 a 2 応答メッセージが送信されると、HeaderHelper ライブラリは、メッセージを送信する前に、追加のドキュメント変換を実行します。  
   
 ### <a name="to-create-the-headerhelper-project"></a>HeaderHelper プロジェクトを作成するには  
   
-1. [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]、ソリューション エクスプ ローラーでは、Contoso ソリューションを右クリックし、] をポイント**追加**、] をクリックし、**新しいプロジェクト**します。  
+1. [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]、ソリューション エクスプ ローラーでは、Contoso ソリューションを右クリックし、 をポイント**追加**、 をクリックし、**新しいプロジェクト**します。  
   
 2. 新しいプロジェクトの追加 ダイアログ ボックスで、プロジェクトの種類 ペインで、次のように選択します。 **Visual c#** します。  
   
@@ -41,7 +41,7 @@ ms.locfileid: "36970795"
   
 1.  ソリューション エクスプ ローラーで、 **HeaderHelper**プロジェクト、し、ダブルクリック、 **HeaderHelper.cs** node を HeaderHelper ソース ファイルを開きます。  
   
-2.  ソース ファイルに次のコードを入力し、既存のすべてのコードを上書きします。  
+2.  既存のすべてのコードをソース ファイルに次のコードを入力します。  
   
     ```  
     using System;  
@@ -105,7 +105,7 @@ ms.locfileid: "36970795"
   
 3.  **[ファイル]** メニューの **[すべてを保存]** をクリックします。  
   
-### <a name="to-create-a-strong-named-assembly-for-the-headerhelper-project"></a>HeaderHelper プロジェクトの厳密な名前のアセンブリを作成するには  
+### <a name="to-create-a-strong-named-assembly-for-the-headerhelper-project"></a>HeaderHelper プロジェクトの厳密な名前付きアセンブリを作成するには  
   
 1.  ソリューション エクスプ ローラーで右クリックし、 **HeaderHelper**プロジェクトをクリックして**プロパティ**します。  
   
@@ -121,7 +121,7 @@ ms.locfileid: "36970795"
   
 7.  ソリューション エクスプ ローラーで、 **HeaderHelper**プロジェクトで、展開、**プロパティ**ノードをクリックして、 **AssemblyInfo.cs**ノード、AssemblyInfo.csソース ファイルです。  
   
-8.  AssemblyInfo.cs ソース ファイルの AssemblyCulture 属性の後の行に、次のコードを入力します。  
+8.  AssemblyInfo.cs ソース ファイルで、行の AssemblyCulture 属性の後、次のコードを入力します。  
   
     ```  
     [assembly: AssemblyKeyFile("../../../FabConPriceAvail.snk")]  
@@ -129,7 +129,7 @@ ms.locfileid: "36970795"
   
 9. **[ファイル]** メニューの **[すべてを保存]** をクリックします。  
   
-### <a name="to-build-and-deploy-the-headerhelper-project"></a>HeaderHelper プロジェクトを構築および展開するには  
+### <a name="to-build-and-deploy-the-headerhelper-project"></a>HeaderHelper プロジェクト ビルドおよび配置するには  
   
 1.  ソリューション エクスプ ローラーで右クリックし、 **HeaderHelper**プロジェクトをクリックして**ビルド**します。  
   
@@ -140,4 +140,4 @@ ms.locfileid: "36970795"
 4.  コマンド プロンプトで「 **gacutil/if HeaderHelper.dll**キーを押します**Enter**をインストールする、 **HeaderHelper**アセンブリを、**グローバル アセンブリ キャッシュ**.  
   
 ## <a name="see-also"></a>参照  
- [手順 5: Contoso プライベート プロセス オーケストレーションの変更](../../adapters-and-accelerators/accelerator-rosettanet/step-5-modifying-the-contoso-private-process-orchestration.md)
+ [手順 5:Contoso プライベート プロセス オーケストレーションの変更](../../adapters-and-accelerators/accelerator-rosettanet/step-5-modifying-the-contoso-private-process-orchestration.md)

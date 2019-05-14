@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル (AS2): AS2 経由での非 EDI メッセージの送信 |Microsoft Docs'
+title: チュートリアル (AS2):AS2 経由で非 EDI メッセージの送信 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 33
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 78da76298e4443acfafa1893e6e4c5bb946bfd2f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f8b00f1b78ac994dbd9e5208996c0b46309aa1b5
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37002467"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65398563"
 ---
-# <a name="walkthrough-as2-sending-a-non-edi-message-over-as2"></a>チュートリアル (AS2): AS2 経由での 非 EDI メッセージの送信
+# <a name="walkthrough-as2-sending-a-non-edi-message-over-as2"></a>チュートリアル (AS2):AS2 経由で非 EDI メッセージを送信します。
 このチュートリアルでは、AS2 経由で非 EDI メッセージを送信するためのソリューションを作成する一連の手順について説明します。 このチュートリアルでは、PIDX メッセージを AS2 経由で送信します。 このソリューションでは、AS2Send 送信パイプラインと AS2Receive 受信パイプラインを持つ双方向の送信ポートが使用されます。 作成し、1 台のコンピューターには、このチュートリアルでは、完全なソリューションをテストできます。  
   
 ## <a name="prerequisites"></a>必須コンポーネント  
@@ -29,7 +29,7 @@ ms.locfileid: "37002467"
   
 - チュートリアルを実行するコンピューターには、インターネット インフォメーション サービス (IIS) 7 がインストールされている必要があります。  
   
-- チュートリアルを実行するコンピューターに 64 ビット版の Windows がインストールされている場合は、BizTalk ホストが 32 ビットのみとマークされていることを確認する必要があります。 IIS の [アプリケーション プールの 32 ビット アプリケーション設定を有効にする] を True に設定する必要があります。 詳細については、[チュートリアル 3: AS2 チュートリアル](../core/tutorial-3-as2-tutorial.md)を参照してください。  
+- チュートリアルを実行するコンピューターに 64 ビット版の Windows がインストールされている場合は、BizTalk ホストが 32 ビットのみとマークされていることを確認する必要があります。 IIS の [アプリケーション プールの 32 ビット アプリケーション設定を有効にする] を True に設定する必要があります。 詳細については、次を参照してください。[チュートリアル 3。AS2 チュートリアル](../core/tutorial-3-as2-tutorial.md)します。  
   
 ## <a name="how-the-solution-sends-a-non-edias2-message-and-returns-a-synchronous-mdn"></a>ソリューションが非 EDI/AS2 メッセージを送信して同期 MDN を返す方法  
  このソリューションは次の処理を実行します。  
@@ -73,7 +73,7 @@ ms.locfileid: "37002467"
   
 -   状態レポートが有効になっていません。  
   
--   このソリューションは、否認不可データベースに署名、圧縮、暗号化、およびメッセージ ストレージを構成しません。 これらのプロパティを構成する手順については、[AS2 プロパティを設定する](../core/configuring-as2-properties.md)を参照してください。  
+-   このソリューションは、否認不可データベースに署名、圧縮、暗号化、およびメッセージ ストレージを構成しません。 これらのプロパティを構成する手順については、次を参照してください。 [AS2 プロパティを設定する](../core/configuring-as2-properties.md)します。  
   
 ## <a name="configuring-and-testing-the-walkthrough"></a>チュートリアルの構成とテスト  
  このソリューションに必要な手順は以下のとおりです。  
@@ -118,7 +118,7 @@ ms.locfileid: "37002467"
 1. [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] で、BizTalk プロジェクトを作成するか、開きます。  
   
    > [!NOTE]
-   >  このトピックは、EDI スキーマ、パイプライン、およびオーケストレーションを含む BizTalk EDI アプリケーションに別のアプリケーションから参照を既に追加していることを前提としています。 そうでない場合は、[、BizTalk Server EDI アプリケーションへの参照を追加する方法](http://msdn.microsoft.com/library/7af066fb-372f-4709-b566-c8d6b4a9d782)を参照してください。  
+   >  このトピックは、EDI スキーマ、パイプライン、およびオーケストレーションを含む BizTalk EDI アプリケーションに別のアプリケーションから参照を既に追加していることを前提としています。 そうでない場合は、次を参照してください。 [、BizTalk Server EDI アプリケーションへの参照を追加する方法](http://msdn.microsoft.com/library/7af066fb-372f-4709-b566-c8d6b4a9d782)します。  
   
 2. プロジェクトを右クリックし、[**追加**、] をクリックし、**既存項目の**します。 XML ファイルを使用してソリューションをテストするには、XML テスト メッセージ用の XSD スキーマを含むローカル フォルダーに移動し、XSD ファイルを選択します。 **[追加]** をクリックします。  
   
@@ -222,7 +222,7 @@ ms.locfileid: "37002467"
 1. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールを右クリックし、**送信ポート**ノードの下、 **BizTalk アプリケーション 1**に**新規**をクリックして**静的な送信請求-応答送信ポート**します。  
   
    > [!NOTE]
-   >  BizTalk アプリケーション 1 を使用する場合は、BizTalk EDI アプリケーションのアイテムを使用できるようにするために、BizTalk EDI アプリケーションへの参照を BizTalk アプリケーション 1 に追加する必要があります。 詳細については、[、BizTalk Server EDI アプリケーションへの参照を追加する方法](http://msdn.microsoft.com/library/7af066fb-372f-4709-b566-c8d6b4a9d782)を参照してください。  
+   >  BizTalk アプリケーション 1 を使用する場合は、BizTalk EDI アプリケーションのアイテムを使用できるようにするために、BizTalk EDI アプリケーションへの参照を BizTalk アプリケーション 1 に追加する必要があります。 詳細については、次を参照してください。 [、BizTalk Server EDI アプリケーションへの参照を追加する方法](http://msdn.microsoft.com/library/7af066fb-372f-4709-b566-c8d6b4a9d782)します。  
   
 2. **送信ポートのプロパティ**ダイアログ ボックスで、送信ポートの名前として**SendToFab_RecvMDN**します。  
   
@@ -267,7 +267,7 @@ ms.locfileid: "37002467"
   
 1. Windows エクスプローラーで、EDI インターチェンジを送信する先のローカル フォルダーを作成します。  
   
-2. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、右クリックして**送信ポート**、] をポイント**新規**、順にクリックします**静的な一方向送信ポート**します。  
+2. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、右クリックして**送信ポート**、 をポイント**新規**、順にクリックします**静的な一方向送信ポート**します。  
   
 3. **送信ポートのプロパティ**ダイアログ ボックスで、送信ポートに名前**SendXMLPayload**します。 選択**ファイル**の**型**、 をクリックし、**構成**します。  
   
@@ -287,13 +287,13 @@ ms.locfileid: "37002467"
   
 1. Windows エクスプローラーを使用して、MDN を送信するローカル フォルダーを作成します。  
   
-2. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、右クリックして**送信ポート**、] をポイント**新規**、順にクリックします**静的な一方向送信ポート**します。  
+2. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、右クリックして**送信ポート**、 をポイント**新規**、順にクリックします**静的な一方向送信ポート**します。  
   
 3. **送信ポートのプロパティ**ダイアログ ボックスで、送信ポートに名前**SendMDNToContoso**します。 選択**ファイル**の**型**、 をクリックし、**構成**します。  
   
 4. **FILE トランスポートのプロパティ** ダイアログ ボックスの**先フォルダー**MDN を送信するために作成したローカル フォルダーを入力します。  
   
-5. **ファイル名**、入力 **%MessageID%.msg**します。クリックして**OK**します。  
+5. **ファイル名**、入力 **%MessageID%.msg**します。**[OK]** をクリックします。  
   
 6. 既定の**PassThruTransmit**の**送信パイプライン**します。  
   

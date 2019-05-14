@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル: Wcf-nettcp アダプターを使用したメッセージ セキュリティ モードの使用 |Microsoft Docs'
+title: 'チュートリアル: Wcf-nettcp アダプターでメッセージ セキュリティ モードの使用 |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,17 +12,17 @@ caps.latest.revision: 47
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ce117c852cc9ed2993c30f5c915d8ad5e11f73b6
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 52936b6110e5e04610e1a215103b558dcbe4c1e4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36990619"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399435"
 ---
-# <a name="walkthrough-using-the-message-security-mode-with-the-wcf-nettcp-adapter"></a>チュートリアル: Wcf-nettcp アダプターを使用したメッセージ セキュリティ モードを使用します。
+# <a name="walkthrough-using-the-message-security-mode-with-the-wcf-nettcp-adapter"></a>チュートリアル: Wcf-nettcp アダプターでメッセージ セキュリティ モードの使用
 
 > [!NOTE]
->  アダプターの詳細については、[BizTalk Server のアダプター](../core/adapters-in-biztalk-server.md)を参照してください。  
+>  アダプターの詳細については、次を参照してください。 [BizTalk Server のアダプター](../core/adapters-in-biztalk-server.md)します。  
 
 ## <a name="introduction"></a>概要
 
@@ -76,7 +76,7 @@ ms.locfileid: "36990619"
       > [!NOTE]
       >  使用する場合[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]証明機関から証明書の要求を要求すると、[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]コンピューター、エラーが発生する可能性があります **"証明書の登録を完了するには、CA の Web サイト構成必要がある HTTPS を使用するには認証"** します。 このエラーが発生した場合、登録 web サイトは Web 証明書 (SSL) を構成する必要があります。 この作業の詳細については、次のリンクを参照してください。  
       > 
-      >  [AD Cs:web 登録](http://technet.microsoft.com/library/cc732517.aspx)  
+      >  [AD CS:Web 登録](http://technet.microsoft.com/library/cc732517.aspx)  
       > 
       >  [IIS サーバー証明書のインストール手順](http://msdn.microsoft.com/library/ms751408.aspx)  
 
@@ -145,13 +145,13 @@ ms.locfileid: "36990619"
 
 1. をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリックします**BizTalk Server 管理**します。  
 
-2. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、[ **BizTalk グループ**を右クリックして**アプリケーション**、 をポイント**新規**、 をクリックし、**アプリケーション**.  
+2. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、 **BizTalk グループ**を右クリックして**アプリケーション**、 をポイント**新規**、 をクリックし、**アプリケーション**.  
 
 3. **アプリケーション プロパティ** ダイアログ ボックスで、**全般** タブで、入力`WcfMessageSecurity`、順にクリックします**ok**。  
 
 4. 次の手順に従って、BizTalk アプリケーションの WCF-NetTcp アダプターを使用する受信場所を作成します。  
 
-   1. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、[ **WcfMessageSecurity**を右クリックして**受信ポート**、 をポイント**新規**、 をクリックし、 **一方向受信ポート。**  
+   1. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、 **WcfMessageSecurity**を右クリックして**受信ポート**、 をポイント**新規**、 をクリックし、 **一方向受信ポート。**  
 
    2. **受信ポートのプロパティ** ダイアログ ボックスで、**名前**テキスト ボックスに「 `WcfMessageSecurity.OrderRequest.Receive`、順にクリックします**OK**します。 この受信ポートの名前は厳密には任意ですが、わかりやすい名前にする必要があります。  
 
@@ -174,7 +174,7 @@ ms.locfileid: "36990619"
 
 5. BizTalk アプリケーションの FILE 送信ポートを作成します。 これは、[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] サービスを表すオーケストレーションによって注文要求の出力メッセージが送信される場所です。  
 
-   1. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、[ **WcfMessageSecurity**を右クリックして**送信ポート**、 をポイント**新規**、 をクリックし、**静的一方向の送信ポートです。**  
+   1. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、 **WcfMessageSecurity**を右クリックして**送信ポート**、 をポイント**新規**、 をクリックし、**静的一方向の送信ポートです。**  
 
    2. **送信ポートのプロパティ** ダイアログ ボックスで、**全般** タブで、**名**テキスト ボックスに「 `WcfMessageSecurity.OrderRequest.Send.FILE`。  
 

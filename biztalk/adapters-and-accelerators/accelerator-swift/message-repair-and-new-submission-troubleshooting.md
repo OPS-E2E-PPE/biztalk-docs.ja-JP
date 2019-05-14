@@ -15,12 +15,12 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7bbf5114d26f4f3afd56e4a2a020238d4fe44fae
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4e3017b16f0558f40d7dce82724c65792483e4da
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37001483"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65530246"
 ---
 # <a name="message-repair-and-new-submission-troubleshooting"></a>Message Repair and New Submission のトラブルシューティング
 ## <a name="a-repaired-message-cannot-be-submitted-if-the-envelope-schema-is-not-deployed"></a>エンベロープ スキーマが展開されていない場合、修復されたメッセージを送信することはできません。  
@@ -34,7 +34,7 @@ ms.locfileid: "37001483"
  エンベロープ スキーマは展開されません。 これは、MT の true*xxx*メッセージまたはメッセージを解析に失敗しました。  
   
 ### <a name="solution"></a>解決方法  
- 使用している各メッセージ スキーマに対してエンベロープ スキーマを展開 (\<ドライブ\>: \Program Files\Microsoft BizTalk Accelerator for SWIFT\<バージョン\>メッセージ パック \SWIFT Messages\ A4SWIFT SRG\<バージョン\>\Category n\MTxxx.xsd)、未解析のエンベロープ スキーマ (\<ドライブ\>: \Program Files\Microsoft BizTalk Accelerator for SWIFT\<バージョン\>メッセージ パック \SWIFT Messages\ A4SWIFT-SRG\<バージョン\>\ 未解析 Message\EnvelopeUnparsedMessage.xsd)。 詳細については、[A4SWIFT スキーマの展開](../../adapters-and-accelerators/accelerator-swift/deploying-a4swift-schemas.md)を参照してください。  
+ 使用している各メッセージ スキーマに対してエンベロープ スキーマを展開 (\<ドライブ\>: \Program Files\Microsoft BizTalk Accelerator for SWIFT\<バージョン\>メッセージ パック \SWIFT Messages\ A4SWIFT SRG\<バージョン\>\Category n\MTxxx.xsd)、未解析のエンベロープ スキーマ (\<ドライブ\>: \Program Files\Microsoft BizTalk Accelerator for SWIFT\<バージョン\>メッセージ パック \SWIFT Messages\ A4SWIFT-SRG\<バージョン\>\ 未解析 Message\EnvelopeUnparsedMessage.xsd)。 詳細については、次を参照してください。 [A4SWIFT スキーマの展開](../../adapters-and-accelerators/accelerator-swift/deploying-a4swift-schemas.md)します。  
   
 ## <a name="you-cannot-submit-a-fixed-unparsed-message-from-a-mrsr-site-library-named-other-than-unparsed"></a>"Unparsed"以外をという名前の MRSR サイト ライブラリから固定未解析メッセージを送信することはできません。  
   
@@ -135,7 +135,7 @@ ms.locfileid: "37001483"
  BIC マスター ポリシーを修復するには、ように進めます。  
   
 > [!NOTE]
->  BIC マスター ポリシーの展開に関する詳細については、[BRE ルールの展開](../../adapters-and-accelerators/accelerator-swift/deploying-bre-rules.md)を参照してください。  
+>  BIC マスター ポリシーの展開に関する詳細については、次を参照してください。 [BRE ルールの展開](../../adapters-and-accelerators/accelerator-swift/deploying-bre-rules.md)します。  
   
 1.  ビジネス ルール作成ツール、BIC_Master_Policy のバージョン 1.0 の展開を解除し、BIC_Master_Policy を削除します。  
   
@@ -221,4 +221,4 @@ ms.locfileid: "37001483"
  実行、 **BTSharePointAdapterWSAppPool**と**DefaultAppPoolApplication** ]-> [し、管理者アカウントでインターネット情報サービス (iis) のプールします。  
   
 ## <a name="see-also"></a>参照  
- [トラブルシューティング: 問題と解決策](../../adapters-and-accelerators/accelerator-swift/troubleshooting-issues-and-resolutions1.md)
+ [トラブルシューティング: 問題と解決方法](../../adapters-and-accelerators/accelerator-swift/troubleshooting-issues-and-resolutions1.md)

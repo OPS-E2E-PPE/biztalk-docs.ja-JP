@@ -12,12 +12,12 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a770599e082d2f25062588247acfeb6a0449b974
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 74763e6bd88501e88606689075dbb701595abdad
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36977507"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65393539"
 ---
 # <a name="extending-biztalk-esb-toolkit-capabilities-with-soa-governance"></a>SOA ガバナンスによる BizTalk ESB Toolkit 機能の拡張
 [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]が付属して[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ツールと拡張ライブラリのコレクションであると[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]の疎結合および動的なメッセージング アーキテクチャをサポートしている機能です。 これは、サービスおよびそのコンシューマー間の迅速な仲介のツールを提供するミドルウェアとして機能します。 実行時に、最大限の柔軟性を有効にすると、[!INCLUDE[esbToolkit_short](../includes/esbtoolkit-short-md.md)]サービス エンドポイントの疎結合の構成とサービスの相互作用の管理を簡素化します。  
@@ -77,9 +77,9 @@ ms.locfileid: "36977507"
   
 -   Visual Studio 2012.  
   
--   BizTalk Server 2013。 手順については、[BizTalk Server 2013 のインストール](http://msdn.microsoft.com/library/jj248688\(v=bts.80\).aspx)を参照してください。  
+-   BizTalk Server 2013。 手順については、次を参照してください。 [BizTalk Server 2013 のインストール](http://msdn.microsoft.com/library/jj248688\(v=bts.80\).aspx)します。  
   
--   BizTalk Server ESB Toolkit です。 手順については、[のインストールと構成、Microsoft BizTalk ESB Toolkit](http://msdn.microsoft.com/library/jj684558\(v=bts.80\).aspx)を参照してください。  
+-   BizTalk Server ESB Toolkit です。 手順については、次を参照してください。[のインストールと構成、Microsoft BizTalk ESB Toolkit](http://msdn.microsoft.com/library/jj684558\(v=bts.80\).aspx)します。  
   
 -   Sentinet の BizTalk Server の拡張機能。 手順については、使用可能なドキュメントを参照します。 使用可能な製品のダウンロードの一環として[ここ](http://www.nevatech.com/download)。  
   
@@ -178,7 +178,7 @@ ms.locfileid: "36977507"
   
    3.  これで、同じキーワードを割り当てる (**TestKeyword**) に、 **basicHttpBinding**エンドポイント、**バージョン 2**の同じサービス。  
   
-3. Visual Studio に戻るし、もう一度競合回避モジュールの構成をテストします。 Sentinet 管理コンソールで、削除、 **TestKeyword**に関連付けられている、**バージョン 1**のCustomerSearchサービスし、関連付けるバージョン 2サービス。  
+3. Visual Studio に戻るし、もう一度競合回避モジュールの構成をテストします。 追加した Sentinet のリゾルバーを右クリックし、**行程サービス**図形をクリックして**テスト構成の競合回避モジュール**します。  
   
     出力ウィンドウには、抜粋を次に示すようなテスト結果が表示されます。  
   
@@ -192,7 +192,7 @@ ms.locfileid: "36977507"
    Endpoint Address               : http://btscloudcar/CustomerSearch/2  
    ```  
   
-4. もう一度テスト メッセージを送信、**行程クライアントのテスト**今回は、カウンターがインクリメントの basicHttpBinding と共に配置されているサービスのバージョン 2 を表す ダイアログ ボックスに注意してください。  
+4. 競合回避モジュールが現在の詳細を返す方法に注意してください、**バージョン 2**サービスの場合でも変更していない ESB 行程アプリケーションで何か。  
   
    キーワードを割り当てる (**TestKeyword**) サービスのバージョン 1 に戻す (で、 **WSHttpBinding**エンドポイント)。  
   

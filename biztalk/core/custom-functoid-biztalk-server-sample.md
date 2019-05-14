@@ -18,29 +18,29 @@ caps.latest.revision: 30
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: de71eb45faa6c5705cca2ef47061686608126577
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d115e0a0594bc236487cca62c9b61355a8535116
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37013392"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65353404"
 ---
 # <a name="custom-functoid-biztalk-server-sample"></a>カスタム Functoid (BizTalk Server サンプル)
-カスタム Functoid サンプルは、BizTalk マッパー用のカスタム Functoid を記述する方法を示します。 Functoid は [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] ツールボックスに追加できます。 Functoid は、BizTalk マッパーにフォーカスがある場合にツールボックスに表示されます。  
+カスタム Functoid サンプルでは、BizTalk マッパー用のカスタム functoid を記述する方法を示します。 Functoid を追加することができます、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]ツールボックスです。 BizTalk マッパーにフォーカスがときに、ツールボックスに functoid が表示されます。  
   
- カスタム Functoid が認識されるには、BizTalk マッパー アセンブリ内に存在する必要があります。 カスタム Functoid は、C# や Visual Basic などの .NET 準拠の任意の言語で記述できます。  
+ カスタム functoid は、認識する BizTalk マッパー アセンブリ内に存在する必要があります。 これは、いずれかで記述できます。C# または Visual Basic などの NET 準拠言語。  
   
- また、カスタム Functoid は、`Microsoft.BizTalk.BaseFunctoids` クラスから派生し、いくつかのメソッドをオーバーライドすることによって、それらのメソッドの実装を提供する必要があります  (`BaseFunctoid` クラスは、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] に含まれている Microsoft.BizTalk.BaseFunctoids.dll アセンブリで定義されます)。  
+ また、カスタム functoid がから派生する必要があります、`Microsoft.BizTalk.BaseFunctoids`クラス、およびは、それらをオーバーライドすることで一部のメソッドの実装を提供する必要があります。 (、`BaseFunctoid`クラスに含まれている Microsoft.BizTalk.BaseFunctoids.dll アセンブリで定義されます[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)])。  
   
 ## <a name="what-this-sample-does"></a>このサンプルの処理  
- カスタム Functoid サンプルは、いくつかの Functoid を実装します。それぞれの Functoid は、`BaseFunctoid` クラスから派生し、いくつかのメソッドをオーバーライドします。  
+ カスタム Functoid サンプルから派生する各いくつかの functoid を実装する、`BaseFunctoid`クラスといくつかのメソッドをオーバーライドします。  
   
- カスタム Functoid を実装する場合、そのインライン コードを公開できます。 インライン コードは、Functoid の計算を実行します。 プロジェクトのビルド時に、BizTalk マッパー コンパイラは Functoid からインライン コードを抽出し、コンパイル済みの XSLT に埋め込みます。  
+ カスタム functoid を実装する場合は、そのインライン コードを公開できます。 インライン コードは、functoid の計算を実行します。 BizTalk マッパーのコンパイラでは、functoid からインライン コードを抽出し、プロジェクトをビルドするときにコンパイルされた XSLT に埋め込みます。  
   
- カスタム Functoid がインライン コードを公開しない場合、カスタム Functoid を格納するアセンブリを呼び出す XSLT が BizTalk マッパーによって生成されます。 この場合、カスタム Functoid アセンブリは、XSLT エンジンで検出できるようにグローバル アセンブリ キャッシュ (GAC) で使用可能である必要があります。 また、カスタム Functoid の GUID 属性が一意であることも必要です。 BizTalk マッパーは GUID を使用して、読み込むアセンブリを識別します。  
+ カスタム functoid でインライン コードが公開されない場合、BizTalk マッパーには、カスタム functoid が存在するアセンブリを呼び出す XSLT が生成されます。 この場合は、カスタム functoid アセンブリがあることをグローバル アセンブリ キャッシュ (GAC) に、XSLT エンジンが検索できるようにする必要があります。 カスタム functoid は、一意の GUID 属性も必要です。 BizTalk マッパーでは、どのアセンブリを読み込むを識別するのに GUID を使用します。  
   
 > [!IMPORTANT]
->  カスタム Functoid サンプル コードを再利用して独自の Functoid を実装する場合は、GUID 属性を一意のものに変更する必要があります。  
+>  独自の functoid を実装するためにカスタム Functoid サンプル コードを再利用する場合は、一意である 1 つに GUID 属性を変更することを確認する必要があります。  
   
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
  *\<パスのサンプル\>* \XmlTools\CustomFunctoid  
@@ -49,21 +49,21 @@ ms.locfileid: "37013392"
   
 |ファイル|説明|  
 |---------------|-----------------|  
-|AssemblyInfo.cs|アセンブリ情報 C# ソース コード。|  
+|AssemblyInfo.cs|アセンブリ情報 c# ソース コード。|  
 |CBuildArray.bmp|ツールボックス ビットマップ。|  
 |CConcat.bmp|ツールボックス ビットマップ。|  
 |CExtractArray.bmp|ツールボックス ビットマップ。|  
-|Cleanup.bat|アセンブリの展開を解除し、アセンブリをグローバル アセンブリ キャッシュ (GAC) から削除して、CustomFunctoid.dll を削除するために使用されます。|  
+|Cleanup.bat|アセンブリを展開解除し、グローバル アセンブリ キャッシュ (GAC) から削除し、CustomFunctoid.dll を削除するために使用します。|  
 |CLongestString.bmp|ツールボックス ビットマップ。|  
 |CMultiply.bmp|ツールボックス ビットマップ。|  
-|CustomFunctoid.cs|カスタム Functoid C# ソース コード。|  
-|CustomFunctoid.csproj|カスタム Functoid C# プロジェクト。|  
-|CustomFunctoid.sln|カスタム Functoid ソリューション。|  
-|CustomFunctoidResources.resx|カスタム Functoid リソース。|  
-|Setup.bat|サンプルのビルド、展開、および起動を行うために使用します。|  
+|CustomFunctoid.cs|カスタム functoid c# ソース コードです。|  
+|CustomFunctoid.csproj|カスタム functoid c# プロジェクト。|  
+|CustomFunctoid.sln|カスタム functoid ソリューション。|  
+|CustomFunctoidResources.resx|カスタム functoid リソース。|  
+|Setup.bat|ビルド、配置、およびサンプルを開始するために使用します。|  
   
 ## <a name="building-and-initializing-this-sample"></a>このサンプルのビルドと初期化  
- 次の手順に従って、カスタム Functoid サンプルをビルドおよび初期化します。  
+ 次の手順を使用して、ビルドして、カスタム Functoid サンプルを初期化します。  
   
 #### <a name="to-build-and-initialize-this-sample"></a>このサンプルを作成および初期化するには  
   
@@ -75,26 +75,26 @@ ms.locfileid: "37013392"
   
     -   サンプル プロジェクトをビルドします。  
   
-    -   生成されたアセンブリを Developer Tools\Mapper Extensions ディレクトリにコピーします。  
+    -   生成されたアセンブリを Developer tools \mapper Extensions ディレクトリにコピーします。  
   
     -   生成されたアセンブリを GAC に追加します。  
   
         > [!NOTE]
-        >  このサンプルを実行する前に、ビルド処理および初期化処理でエラーが報告されていないことを確認してください。  
+        >  エラーが報告されていないこと、ビルドおよび初期化プロセス中にこのサンプルを実行する前に確認してください。  
   
 ## <a name="running-this-sample"></a>このサンプルの実行  
- 次の手順に従って、カスタム Functoid サンプルを実行します。  
+ カスタム Functoid サンプルを実行するのにには、次の手順を使用します。  
   
 #### <a name="to-run-this-sample"></a>このサンプルを実行するには  
   
-1. [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] BizTalk プロジェクトでは、をクリックして、**ツール**メニューを選択し、 **[ツールボックス アイテムの**します。  
+1. [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] BizTalk プロジェクトでは、をクリックして、**ツール**メニューを選択し、 **ツールボックス アイテムの**します。  
   
 2. **ツールボックス アイテムの選択**ダイアログ ボックスで、 **BizTalk マッパー Functoid**タブ。  
   
 3. クリックして**リセット**、順にクリックします**OK**します。  
   
    > [!NOTE]
-   >  カスタム Functoid でインライン コードが公開されない場合は、アセンブリが GAC で使用可能になっているかどうかを確認してください。  
+   >  カスタム functoid でインライン コードが公開されない場合は、そのアセンブリを GAC に利用可能になってを確認します。  
   
 4. **ファイル**メニューの **終了**を閉じる[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]します。  
   
@@ -107,22 +107,22 @@ ms.locfileid: "37013392"
     カスタム functoid (カスタム累積連結 functoid、最長文字列、配列作成 functoid、および配列抽出 functoid) が表示、**文字列 Functoid**ツールボックス、および累積乗算 functoid のタブを表示、 **累積 Functoid**タブ。  
   
 ## <a name="removing-this-sample"></a>このサンプルの削除  
- 次の手順に従って、カスタム Functoid サンプルを削除します。  
+ カスタム Functoid サンプルを削除するのにには、次の手順を使用します。  
   
 #### <a name="to-remove-this-sample"></a>このサンプルを削除するには  
   
-1. [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] ツールボックスから Functoid を削除します。  
+1. Functoid を削除、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]ツールボックスです。  
   
    > [!WARNING]
-   >  Cleanup.bat の実行後に、ツールボックスにまだ古いカスタム Functoid がある場合 (通常は Visual Studio の内部キャッシュのため)、下記の手順に従ってください。  
+   >  Cleanup.bat を実行した後は、まだ古いカスタム functoid を (おそらく内部キャッシュのため Visual Studio によって)、ツールボックスを表示、以下の手順に従います。  
   
-   1. [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] BizTalk プロジェクトでは、をクリックして、**ツール**メニューを選択し、 **[ツールボックス アイテムの**します。  
+   1. [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] BizTalk プロジェクトでは、をクリックして、**ツール**メニューを選択し、 **ツールボックス アイテムの**します。  
   
    2. **ツールボックス アイテムの選択**ダイアログ ボックスで、 **BizTalk マッパー Functoid**タブ。  
   
-   3. 一覧からカスタム Functoid (カスタム累積連結 Functoid、最長文字列、配列作成 Functoid、配列抽出 Functoid、累積乗算) を探します。 それぞれクリックして**チェック ボックスをオン**をクリックして、functoid を削除 **[ok]** します。  
+   3. リスト内のカスタム functoid (カスタム累積連結 functoid、最長文字列、配列作成 functoid、配列抽出 functoid、および累積乗算) を検索します。 それぞれクリックして**チェック ボックスをオン**をクリックして、functoid を削除 **[ok]** します。  
   
-      上記の手順でも問題が解決されない場合は、下記の手順に従ってください。  
+      上記の手順が機能しない場合は、次の手順の下。  
   
    4. [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] BizTalk プロジェクトでは、をクリックして、**ツールボックス**ツールボックス パレットを表示するマップの編集中のタブ。  
   
@@ -130,13 +130,13 @@ ms.locfileid: "37013392"
   
    6. [アイテムの選択] ダイアログ ボックスで、**リセット**、順にクリックします**OK**します。  
   
-   7. [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] のインスタンスをすべて閉じます。  
+   7. インスタンスをすべて閉じます[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]します。  
   
-      上記の手順でも問題が解決されない場合は、下記の手順に従ってください。  
+      上記の手順が機能しない場合は、次の手順の下。  
   
    8. 開始**Visual Studio コマンド プロンプト**に管理者として。  
   
-   9. 実行中の Visual Studio のインスタンスをすべて閉じます。  
+   9. Visual Studio の実行中のすべてのインスタンスを閉じます。  
   
    10. 次のコマンドを提供します。  
   
@@ -144,11 +144,11 @@ ms.locfileid: "37013392"
   
         `devenv /setup`  
   
-   11. ツールボックスから不要な Functoid を手動で選択できます。 次に、functoid を右クリックし、クリックして**削除**します。  
+   11. ツールボックスから不要な functoid を手動で選択することができます。 次に、functoid を右クリックし、クリックして**削除**します。  
   
-       上記の手順でも問題が解決されない場合は、下記の手順に従ってください。  
+       上記の手順が機能しない場合は、次の手順の下。  
   
-   12. [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] の BizTalk プロジェクトで、マップを編集しているときに [ツールボックス] タブをクリックして、ツールボックス パレットを開きます。  
+   12. [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] BizTalk プロジェクトで、ツールボックス パレットを表示するマップの編集中に、[ツールボックス] タブをクリックします。  
   
    13. をクリックして、**累積 Functoid**グループ。  
   
@@ -162,13 +162,13 @@ ms.locfileid: "37013392"
   
     \<*パスのサンプル*\>\XmlTools\CustomFunctoid  
   
-3. Cleanup.bat ファイルを実行します。処理内容は次のとおりです。  
+3. Cleanup.bat は、次の操作を実行するファイルを実行します。  
   
-   -   アセンブリが Developer Tools\Mapper Extensions ディレクトリから削除されます。  
+   -   Developer tools \mapper Extensions ディレクトリからアセンブリを削除します。  
   
-   -   アセンブリが GAC から削除されます。  
+   -   GAC からアセンブリを削除します。  
   
-## <a name="classes-or-methods-used-in-this-sample"></a>このサンプルで使用されるクラスまたはメソッド  
+## <a name="classes-or-methods-used-in-this-sample"></a>クラスまたはメソッドのこのサンプルで使用  
  [Microsoft.BizTalk.BaseFunctoids.BaseFunctoid](http://msdn.microsoft.com/library/microsoft.biztalk.basefunctoids.basefunctoid.aspx)  
   
 ## <a name="see-also"></a>参照  

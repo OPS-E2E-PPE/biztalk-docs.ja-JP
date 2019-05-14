@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル (AS2): 同期 MDN による AS2 経由で EDI の受信 |Microsoft Docs'
+title: チュートリアル (AS2):同期 MDN による AS2 経由での EDI の受信 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 53
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 971620284a8058663f7c054cd6286cbd01d81d84
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4486a45acb9d5a6fd9ed67ca23fa503e41b1d27c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37024016"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65320749"
 ---
-# <a name="walkthrough-as2-receiving-edi-over-as2-with-a-synchronous-mdn"></a>チュートリアル (AS2): 同期 MDN による AS2 経由での EDI の受信
+# <a name="walkthrough-as2-receiving-edi-over-as2-with-a-synchronous-mdn"></a>チュートリアル (AS2):同期 MDN による AS2 経由での EDI の受信
 このチュートリアルでは、AS2 トランスポート経由で EDI メッセージを受信して同期 MDN を返すソリューションを作成する、一連の手順について説明します。  
 
 ## <a name="prerequisites"></a>前提条件  
@@ -29,7 +29,7 @@ ms.locfileid: "37024016"
 
 - チュートリアルを実行するコンピューターには、インターネット インフォメーション サービス (IIS) 7 がインストールされている必要があります。  
 
-- チュートリアルを実行するコンピューターに 64 ビット版の Windows がインストールされている場合は、BizTalk ホストが 32 ビットのみとマークされていることを確認する必要があります。 アプリケーション プールの設定、IIS が有効にする 32 ビット アプリケーションの設定を確認する必要がありますも**True**します。 詳細については、[チュートリアル 3: AS2 チュートリアル](../core/tutorial-3-as2-tutorial.md)を参照してください。  
+- チュートリアルを実行するコンピューターに 64 ビット版の Windows がインストールされている場合は、BizTalk ホストが 32 ビットのみとマークされていることを確認する必要があります。 アプリケーション プールの設定、IIS が有効にする 32 ビット アプリケーションの設定を確認する必要がありますも**True**します。 詳細については、次を参照してください。[チュートリアル 3。AS2 チュートリアル](../core/tutorial-3-as2-tutorial.md)します。  
 
 ## <a name="how-the-solution-receives-an-edias2-message-and-returns-a-synchronous-mdn"></a>ソリューションで EDI/AS2 メッセージを受信して同期 MDN を返す方法  
  このソリューションが実行する内容は、次のとおりです。  
@@ -54,7 +54,7 @@ ms.locfileid: "37024016"
 ## <a name="the-functionality-in-this-solution"></a>このソリューションの機能  
  このチュートリアルの機能には、以下の条件が適用されます。  
 
--   EDI 受信確認は生成されません。 方法については、EDI 受信確認を生成する[チュートリアル (X12): EDI インターチェンジの受信と送信、受信確認を返す](../core/walkthrough-x12--receive-edi-interchanges-and-send-back-an-acknowledgement.md)します。 「AS2 トランスポート経由で EDI 受信確認を送信する[チュートリアル (AS2): 同期 MDN による AS2 経由で送信する EDI](../core/walkthrough-as2-sending-edi-over-as2-with-a-synchronous-mdn.md)します。  
+-   EDI 受信確認は生成されません。 方法については、EDI 受信確認を生成する[チュートリアル (X12):EDI インターチェンジの受信と受信確認の送信](../core/walkthrough-x12--receive-edi-interchanges-and-send-back-an-acknowledgement.md)します。 「AS2 トランスポート経由で EDI 受信確認を送信する[チュートリアル (AS2)。同期 MDN による AS2 経由での EDI の送信](../core/walkthrough-as2-sending-edi-over-as2-with-a-synchronous-mdn.md)します。  
 
 -   このソリューションは、EDIFACT エンコードではなく X12 エンコードを使用するインターチェンジを対象に設計されています。  
 
@@ -65,7 +65,7 @@ ms.locfileid: "37024016"
 
 -   AS2 レポートおよび EDI レポートが有効になり、インターチェンジの状態レポートに表示するトランザクション セットが保存されます。  
 
--   このソリューションは、否認不可データベースに署名、圧縮、暗号化、およびメッセージ ストレージを構成しません。 これらのプロパティを構成する手順については、[AS2 プロパティを設定する](../core/configuring-as2-properties.md)を参照してください。  
+-   このソリューションは、否認不可データベースに署名、圧縮、暗号化、およびメッセージ ストレージを構成しません。 これらのプロパティを構成する手順については、次を参照してください。 [AS2 プロパティを設定する](../core/configuring-as2-properties.md)します。  
 
 ## <a name="configuring-and-testing-the-walkthrough"></a>チュートリアルの構成とテスト  
  このソリューションに必要な手順は以下のとおりです。  
@@ -103,7 +103,7 @@ ms.locfileid: "37024016"
    >  このプロジェクトは AS2 チュートリアルに付属し、テスト メッセージと共に使用する 864 スキーマが含まれています。  
 
    > [!NOTE]
-   >  このトピックは、EDI スキーマ、パイプライン、およびオーケストレーションを含む BizTalk EDI アプリケーションに別のアプリケーションから参照を既に追加していることを前提としています。 そうでない場合は、[、BizTalk Server EDI アプリケーションへの参照を追加する方法](http://msdn.microsoft.com/library/7af066fb-372f-4709-b566-c8d6b4a9d782)を参照してください。  
+   >  このトピックは、EDI スキーマ、パイプライン、およびオーケストレーションを含む BizTalk EDI アプリケーションに別のアプリケーションから参照を既に追加していることを前提としています。 そうでない場合は、次を参照してください。 [、BizTalk Server EDI アプリケーションへの参照を追加する方法](http://msdn.microsoft.com/library/7af066fb-372f-4709-b566-c8d6b4a9d782)します。  
 
 2. 右クリックし、**スキーマ**ソリューション エクスプ ローラーでプロジェクトをクリックして**プロパティ**します。 をクリックして、**署名** タブで、プロジェクト デザイナー、**アセンブリに署名**チェック ボックスをオンし、ドロップダウン リストから選択します**新規**を作成するために必要な値を指定し、厳密な名前キー ファイルです。 変更を保存し、プロジェクトのプロパティ ウィンドウを閉じます。  
 

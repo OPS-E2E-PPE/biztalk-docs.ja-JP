@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: defed64020300ebe6843e8e06bb15a51af2c4ec3
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6feb950bccf51f61026a332b3b0fff4f3cceb458
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36986715"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65277171"
 ---
 # <a name="configuring-a-dedicated-tracking-host"></a>専用の追跡ホストの構成
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] メインのオーケストレーションとメッセージング エンジンは実際に移動イベントまたはメッセージ、BizTalk 追跡 (DTA) またはビジネス アクティビティ監視 (BAM) データベースに直接がプライマリからこれらのエンジンをそらすはこのため、スループットを最適化します。ビジネス プロセスを実行するジョブ。 代わりに、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]メッセージ ボックス データベース内のイベントとメッセージのままにし、BizTalk 追跡または BAM データベースへの移行を必要とするとしてマークを付けます。 バック グラウンド プロセス (追跡ホスト) し、BizTalk 追跡データベースに SQL Server エージェント ジョブのコピー追跡したメッセージの中に、BizTalk の追跡と BAM データベースにイベントを移動します。  
@@ -59,17 +59,17 @@ ms.locfileid: "36986715"
   
 #### <a name="to-enable-host-tracking"></a>ホストの追跡を有効にするには  
   
-1. クリックして**開始**、] をクリックして**プログラム**、] をクリックして**Microsoft** [!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)]、順にクリックします**BizTalk Server 管理**します。  
+1. クリックして**開始**、 をクリックして**プログラム**、 をクリックして**Microsoft** [!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)]、順にクリックします**BizTalk Server 管理**します。  
   
-2. コンソール ツリーで、展開[!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)]**管理**[BizTalk グループ]、をクリックして**プラットフォームの設定**、] をクリックし、**ホスト**します。  
+2. コンソール ツリーで、展開[!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)]**管理**[BizTalk グループ]、をクリックして**プラットフォームの設定**、 をクリックし、**ホスト**します。  
   
 3. 詳細ペインで、変更、およびクリックするホストを右クリックして**プロパティ**します。  
   
-4. **ホストのプロパティ**] ダイアログ ボックスで、**全般**タブ、オンまたはオフ**オプション]-[ホストの追跡を許可する**、順にクリックします **[ok]**。  
+4. **ホストのプロパティ** ダイアログ ボックスで、**全般**タブ、オンまたはオフ**オプション-ホストの追跡を許可する**、順にクリックします**ok**。  
   
     ホストで BizTalk の追跡コンポーネントを読み込んで、状態監視データおよびビジネス データを処理する場合は、このチェック ボックスをオンにします。 このチェック ボックスをオンにすると、メッセージ ボックス データベースの追跡テーブルおよび追跡データベースに対する読み取り/書き込みアクセスが現在のホストに許可されます。 これに伴い、このホスト内で実行されるオブジェクトにも、これらのデータベースに対する読み取りと書き込みのアクセス許可が与えられます。  
   
     チェック ボックスをオフにした場合、ホストはメッセージ ボックス データベースに追跡テーブルへの書き込みアクセス権のみし、追跡データベースへのアクセスはありません。  
   
 ## <a name="see-also"></a>参照  
- [チェックリスト: BizTalk Server の構成](../technical-guides/checklist-configuring-biztalk-server.md)
+ [チェックリスト:BizTalk Server の構成](../technical-guides/checklist-configuring-biztalk-server.md)

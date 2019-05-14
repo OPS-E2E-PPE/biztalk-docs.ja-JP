@@ -18,17 +18,17 @@ caps.latest.revision: 26
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e8edccbd9bec7c4ef027b1e185e3af6e56a19340
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d26d3133c6c81bddc04b9fbc8868066a538599cd
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36979371"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65343375"
 ---
 # <a name="how-to-add-a-server-to-a-group"></a>グループにサーバーを追加する方法
 BizTalk Server 構成ウィザードを使用して、BizTalk グループにサーバーを追加できます。 BizTalk グループにサーバーを追加して、BizTalk Server 環境をスケール アウトします。  
   
- サーバーは、1 つの BizTalk グループに関連付けられた場合のみできます。 サーバーが別のグループに既に属している場合、まず現在のグループからサーバーを削除し、その後でサーバーを新しいグループに追加する必要があります。 BizTalk グループからサーバーを削除する方法の詳細については、[グループからサーバーを削除する方法](../core/how-to-remove-a-server-from-a-group.md)を参照してください。  
+ サーバーは、1 つの BizTalk グループに関連付けられた場合のみできます。 サーバーが別のグループに既に属している場合、まず現在のグループからサーバーを削除し、その後でサーバーを新しいグループに追加する必要があります。 BizTalk グループからサーバーを削除する方法の詳細については、次を参照してください。[グループからサーバーを削除する方法](../core/how-to-remove-a-server-from-a-group.md)します。  
   
 > [!NOTE]
 >  BizTalk Server 環境内の異なるサーバーに関連付けられた BizTalk グループどうしは、メッセージの交換以外の連携を行いません。  

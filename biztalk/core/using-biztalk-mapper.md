@@ -14,12 +14,12 @@ caps.latest.revision: 29
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dfa3ac3d03e5f9537284ea4e4371ab5a443d2b42
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4bdefb8c35f817008d0727db82eaf0fe2b04b9fb
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36967531"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65401687"
 ---
 # <a name="using-biztalk-mapper"></a>BizTalk マッパーの使用
 
@@ -48,13 +48,13 @@ BizTalk マッパーは [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionov
   
    名前が示すように、このビューには、マッピングの送信元であるインスタンス メッセージを記述するスキーマが表示されます。 マッピングを定義するリンクは、グリッド ビューと、最終的には、送信先スキーマ ツリー ビューに、送信元スキーマのツリー ビューがあります。  
   
-   スキーマ ツリー ビューでの BizTalk スキーマの表現方法の詳細については、[スキーマの BizTalk 表記](../core/biztalk-representation-of-schemas.md)を参照してください。  
+   スキーマ ツリー ビューでの BizTalk スキーマの表現方法の詳細については、次を参照してください。[スキーマの BizTalk 表記](../core/biztalk-representation-of-schemas.md)します。  
   
 - **送信先スキーマ ツリー ビュー。** : このビューは、送信元スキーマ ツリー ビューおよびグリッド ビューと [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] のメイン編集ウィンドウを共有します。  
   
    名前が示すように、このビューには、マッピングの送信先であるインスタンス メッセージを記述するスキーマが表示されます。 マッピングを定義するリンクは、グリッド ビューから送信先スキーマ ツリー ビューに接続されており、送信元スキーマ ツリー ビューが始点となります。  
   
-   スキーマ ツリー ビューでの BizTalk スキーマの表現方法の詳細については、[スキーマの BizTalk 表記](../core/biztalk-representation-of-schemas.md)を参照してください。  
+   スキーマ ツリー ビューでの BizTalk スキーマの表現方法の詳細については、次を参照してください。[スキーマの BizTalk 表記](../core/biztalk-representation-of-schemas.md)します。  
   
 - **グリッドを表示します。** : 左側の送信元スキーマ ツリー ビューと右側の送信先スキーマ ツリー ビューの間にあるビューです。送信元スキーマ ツリー ビュー、送信先スキーマ ツリー ビュー、およびグリッド ビューは、[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] のメイン編集ウィンドウを共有します。  
   
@@ -66,13 +66,13 @@ BizTalk マッパーは [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionov
   
 - **Visual Studio ツールボックス ウィンドウ** : このビューには BizTalk マップで使用可能な Functoid が表示され、ここから Functoid をドラッグ アンド ドロップして、グリッド ページに配置できます。  
   
-   ツールボックスに表示される Functoid は、カテゴリに応じて分けられています。 使用可能な functoid の詳細については、[マップの Functoid](../core/functoids-in-maps.md)を参照してください。 また、 **Functoid リファレンス**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]します。 
+   ツールボックスに表示される Functoid は、カテゴリに応じて分けられています。 使用可能な functoid の詳細については、次を参照してください。[マップの Functoid](../core/functoids-in-maps.md)します。 また、 **Functoid リファレンス**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]します。 
   
 - **Visual Studio プロパティ ウィンドウ。** : このビューおよび関連付けられたダイアログ ボックスを使用して、マップを定義するために作成したリンクおよび Functoid のプロパティの確認と設定を行います。  
   
    グリッド ビューでグリッド ページでリンクまたは functoid を選択すると送信元または送信先スキーマ ツリー ビュー、スキーマのノードを選択するかでマップを選択、**ソリューション エクスプ ローラー**ウィンドウ; のリンク、functoid の対応するプロパティスキーマ ノード、またはマップに表示されます、**プロパティ**ウィンドウが Visual Studio の標準の規則を使用します。 たとえば、プロパティは、カテゴリごとにグループ化されていたり、カテゴリ順またはアルファベット順に従って表示されたりします。  
   
-   異なるリンク、functoid、スキーマのノードまたはマップ自体で利用可能なプロパティのセットの詳細については、次を参照してください、**マップ プロパティ参照**と**スキーマ プロパティのリファレンス**。[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)].  
+   異なるリンク、functoid、スキーマのノードまたはマップ自体で利用可能なプロパティのセットの詳細については、次を参照してください、**マップ プロパティ参照**と**スキーマ プロパティのリファレンス**。[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)].
   
 - **Visual Studio タスク一覧ウィンドウと出力ウィンドウ。** : これらのビューは、BizTalk マップの検証、コンパイルおよびテストの結果を確認するために使用します。使用方法は、ソース コードのコンパイル時や、その他の種類のプロジェクトのビルド時にこれらのビューを使用する方法とほぼ同じです。  
   

@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル: Wcf-netmsmq アダプターを使用した WCF サービスの発行 |Microsoft Docs'
+title: 'チュートリアル: Wcf-netmsmq アダプターを使用した WCF サービスの公開 |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,17 +12,17 @@ caps.latest.revision: 46
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 45f8b47b60663348c48ca398cedca464b3a2dd6b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 21bc04be1fd0e39a3e87ce9f347d5b4aeb1c5d99
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36995835"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65400134"
 ---
-# <a name="walkthrough-publishing-wcf-services-with-the-wcf-netmsmq-adapter"></a>チュートリアル: Wcf-netmsmq アダプターを使用した WCF サービスの発行
+# <a name="walkthrough-publishing-wcf-services-with-the-wcf-netmsmq-adapter"></a>チュートリアル: Wcf-netmsmq アダプターで WCF サービスの公開
   
 > [!NOTE]
->  アダプターの詳細については、[BizTalk Server のアダプター](../core/adapters-in-biztalk-server.md)を参照してください。  
+>  アダプターの詳細については、次を参照してください。 [BizTalk Server のアダプター](../core/adapters-in-biztalk-server.md)します。  
   
 ## <a name="introduction"></a>概要
   
@@ -99,7 +99,7 @@ ms.locfileid: "36995835"
   
    1. をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリックします**BizTalk Server 管理**します。  
   
-   2. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、**BizTalk グループ**、展開**アプリケーション**、展開**WCFNetMsmqAdapterPublishing**を右クリックして**受信ポート**、 をポイント**新規**、 をクリックし、**一方向の受信ポート。**  
+   2. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、 **BizTalk グループ**、展開**アプリケーション**、展開**WCFNetMsmqAdapterPublishing**を右クリックして**受信ポート**、 をポイント**新規**、 をクリックし、**一方向の受信ポート。**  
   
    3. **受信ポートのプロパティ** ダイアログ ボックスで、**名前**テキスト ボックスに「 `WCFNetMsmqAdapterPublishing.ReceivePurchaseOrder`、順にクリックします**OK**します。  
   
@@ -137,7 +137,7 @@ ms.locfileid: "36995835"
   
 6. 次の手順で、サンプル アプリケーションのホスト名とバインドを指定します。  
   
-   1. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、**WCFNetMsmqAdapterPublishing**、展開**オーケストレーション**は、サンプル オーケストレーションを右クリックし、**プロパティ**、 をクリックして**バインド**、設定と**ホスト**に**BizTalkServerApplication**または別の適切なホスト。  
+   1. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、 **WCFNetMsmqAdapterPublishing**、展開**オーケストレーション**は、サンプル オーケストレーションを右クリックし、 **プロパティ**、 をクリックして**バインド**、設定と**ホスト**に**BizTalkServerApplication**または別の適切なホスト。  
   
    2. **オーケストレーションのプロパティ**ダイアログ ボックスで、 **WCFNetMsmqAdapterPublishing.ReceivePurchaseOrder**から、**受信ポート**のドロップダウンリスト**PurchaseOrderRequestPort**します。  
   
@@ -157,7 +157,7 @@ ms.locfileid: "36995835"
   
 5. **BizTalk アセンブリ** ページの 、 **BizTalk アセンブリ ファイル (\*.dll)** テキスト ボックスで、をクリックして**参照**を参照する、 **C:\WCFNetMsmqAdapterPublishing\BizTalkApp\bin\Development**フォルダー をクリックし、サンプル オーケストレーションを含むアセンブリをダブルクリックして**次**します。  
   
-6. **オーケストレーションおよびポート**ことを確認します ページで、**ポート: PurchaseOrderRequestPort**ノード ページで、選択されている場合をクリックして**次**します。  
+6. **オーケストレーションおよびポート** ページで、必ず、**ポート。PurchaseOrderRequestPort**ノード ページで、選択されている場合をクリックして**次**します。  
   
     受信ポートの MEX が公開され、メッセージを受信場所に送信するためにクライアントによって使用されます。  
   

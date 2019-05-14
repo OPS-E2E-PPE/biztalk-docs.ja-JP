@@ -16,12 +16,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1e4cedf2d47c0bbe8e812795ad428a987d4c2014
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 0244ea33744d592377261c8e532d981cc5d828aa
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37014219"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65529670"
 ---
 # <a name="working-with-failed-message-subscriptions"></a>失敗したメッセージのサブスクリプションの使用
 ときに、Microsoft[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]逆アセンブラーのプロセス (解析および検証します)、メッセージをそのメッセージのプロパティを昇格します。 これらの昇格させたプロパティは、A4SWIFT 受信バッチの一環として、メッセージを受信した場合、バッチに関連する情報だけでなく、正確性と、メッセージの有効性についての情報を提供します。 これらのプロパティの完全な一覧を参照してください。 [a4swift _ * 昇格プロパティ](../../adapters-and-accelerators/accelerator-swift/a4swift-promoted-properties.md)します。  
@@ -38,7 +38,7 @@ ms.locfileid: "37014219"
   
 - **A4SWIFT_Failed**は**true**任意の数、上記のプロパティが 0 より大きい場合、または**false**カウントが 0 に等しい場合。  
   
-  これらのプロパティは、Microsoft のすべての一部です。Solutions.A4SWIFT.Property 名前空間。 これらおよびその他の昇格させたプロパティの詳細については、[a4swift _ * 昇格プロパティ](../../adapters-and-accelerators/accelerator-swift/a4swift-promoted-properties.md)を参照してください。  
+  これらのプロパティは、Microsoft のすべての一部です。Solutions.A4SWIFT.Property 名前空間。 これらおよびその他の昇格させたプロパティの詳細については、次を参照してください。 [a4swift _ * 昇格プロパティ](../../adapters-and-accelerators/accelerator-swift/a4swift-promoted-properties.md)します。  
   
   Catch または失敗したメッセージを取得、送信ポートのフィルター式 (サブスクリプション) を作成する必要があるまたはオーケストレーションの受信図形を含む、上記のプロパティの一部として**AND**式の句。  
   

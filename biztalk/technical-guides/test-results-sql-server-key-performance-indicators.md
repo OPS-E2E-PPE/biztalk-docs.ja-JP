@@ -1,5 +1,5 @@
 ---
-title: 'テスト結果: SQL Server の主要業績評価指標 |Microsoft Docs'
+title: テスト結果。SQL Server の主要業績評価指標 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ed7f1348a23e6c4b145748ccfc0832c97648bdff
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6ba49d2b4e62041a0b47361144c1293bf7d7edf6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37007515"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65301638"
 ---
-# <a name="test-results-sql-server-key-performance-indicators"></a>テスト結果: SQL Server の主要業績評価指標
+# <a name="test-results-sql-server-key-performance-indicators"></a>テスト結果。SQL Server の主要業績評価指標
 このトピックでは、SQL サーバー主要業績評価指標 (KPI) テスト シナリオの中に確認されたをまとめたものです。 これらのテストには、次の SQL Server KPI が評価されます。  
   
 -   SQL のプロセッサ使用率によって測定される、 **\SQL\Processor(_Total)\\% Processor Time**パフォーマンス モニター カウンター。  
@@ -37,7 +37,7 @@ ms.locfileid: "37007515"
   
 1. **専用仮想コント ローラーとチャネル – 追加の固定 VHD ディスクを割り当てる**を使用して追加の固定 VHD ディスクの割り当ては専用の仮想コント ローラーとチャネルの 1 つの VHD ディスクを使用すると、ディスクのスループットが増加します。  
   
-2. **ネットワークのパフォーマンスを最適化**の「ネットワークのパフォーマンスを最適化する」セクションに記載されている手順に従います[チェックリスト: hyper-v のパフォーマンスの最適化](~/technical-guides/checklist-optimizing-performance-on-hyper-v.md)します。 「同じ Hyper-v ホストで実行されている構成、HYPER-V 仮想マシンは、プライベート仮想ネットワークを使用するコンピューターをホスト」セクションで推奨事項に従ってに特に重要なは、同じ HYPER-V ホスト上の複数の HYPER-V 仮想マシンを実行している場合[ネットワーク最適化](../technical-guides/network-optimizations.md)します。  
+2. **ネットワークのパフォーマンスを最適化**の「ネットワークのパフォーマンスを最適化する」セクションに記載されている手順に従います[チェックリスト。HYPER-V のパフォーマンスを最適化する](~/technical-guides/checklist-optimizing-performance-on-hyper-v.md)します。 「同じ Hyper-v ホストで実行されている構成、HYPER-V 仮想マシンは、プライベート仮想ネットワークを使用するコンピューターをホスト」セクションで推奨事項に従ってに特に重要なは、同じ HYPER-V ホスト上の複数の HYPER-V 仮想マシンを実行している場合[ネットワーク最適化](../technical-guides/network-optimizations.md)します。  
   
    ステートレスな性質のため[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]追加[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]仮想マシンできます簡単に環境に追加して、スケール アウトを行い、システムの全体的なパフォーマンスを向上するためにします。  
   
@@ -53,6 +53,6 @@ ms.locfileid: "37007515"
 |\SQL\Processor(_Total)\\プロセッサ時間の割合|97.7%|98.4%|99.9%|  
 |\SQL server: SQL Statistics\Batch 要求/秒|97.1%|83.3%|71.2%|  
   
- ディスク I/O パフォーマンスを評価する方法の詳細については、、**ディスク I/O パフォーマンスを測定する**」の「[チェックリスト: Hyper-v のパフォーマンスを測定する](../technical-guides/checklist-measuring-performance-on-hyper-v.md)を参照してください。  
+ ディスク I/O パフォーマンスを評価する方法の詳細については、次を参照してください。、**ディスク I/O パフォーマンスを測定する**」の「[チェックリスト。HYPER-V のパフォーマンスを測定する](../technical-guides/checklist-measuring-performance-on-hyper-v.md)します。  
   
  SQL Server 2008 を HYPER-V 環境で実行する場合のベスト プラクティスの詳細については、「を実行している SQL Server 2008 in a HYPER-V 環境 – ベスト プラクティスとパフォーマンスに関する推奨事項」ダウンロードできるホワイト ペーパーを参照してください[ 。 http://go.microsoft.com/fwlink/?LinkId=144622](http://go.microsoft.com/fwlink/?LinkId=144622).

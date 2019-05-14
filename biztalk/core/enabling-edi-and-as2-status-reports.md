@@ -12,17 +12,17 @@ caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e5f0f76008fe7d5ae7bd5b868e9ad81fa9038e04
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6b06ae5e1fde570a9c27c1951a4eca7a7c5481e9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36978019"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65349909"
 ---
 # <a name="enabling-edi-and-as2-status-reports"></a>EDI および AS2 状態レポートの有効化
 このトピックでの EDI および AS2 状態レポートを構成する方法を説明します、**グループの概要**のページ、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソール。  
   
- 状態レポート追跡データは、以下の手順で選択するストレージのプロパティに従って、BizTalk 追跡データベース (BizTalkDTADb) に格納されます。 各アグリーメントの状態レポート機能を有効にするように [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を構成できます。 格納するデータ量に応じて、アクティブなストアからデータを定期的にアーカイブし、その後にアーカイブ ストアから適宜消去する必要があります。 BizTalkDTADb データベースの管理の詳細については、[アーカイブおよび BizTalk 追跡データベースの削除](../core/archiving-and-purging-the-biztalk-tracking-database.md)を参照してください。  
+ 状態レポート追跡データは、以下の手順で選択するストレージのプロパティに従って、BizTalk 追跡データベース (BizTalkDTADb) に格納されます。 各アグリーメントの状態レポート機能を有効にするように [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] を構成できます。 格納するデータ量に応じて、アクティブなストアからデータを定期的にアーカイブし、その後にアーカイブ ストアから適宜消去する必要があります。 BizTalkDTADb データベースの管理の詳細については、次を参照してください。[アーカイブおよび BizTalk 追跡データベースの削除](../core/archiving-and-purging-the-biztalk-tracking-database.md)します。  
   
  状態レポートは次の 3 種類の方法で有効にできます。  
   
@@ -75,7 +75,7 @@ ms.locfileid: "36978019"
 3. 選択**レポート用にトランザクション セット/ペイロードを格納**トランザクションを格納する、追跡 (BizTalkDTADb) データベースの EDI テーブルに設定します。  
   
    > [!NOTE]
-   >  **EDIFACT でエンコードされたメッセージ**: EDI グローバル プロパティ ダイアログ ボックスの UNB セグメントの定義 ページで unb3.2 フィールド (コード修飾子) の値を選択するこのプロパティを選択する場合もする必要があります。 既定では、このプロパティが設定されていないと場合、インターチェンジは中断されます**レポート用にトランザクション セット/ペイロードを格納**が選択されているが、UNB3.2 の値が選択されていません。  
+   >  **EDIFACT でエンコードされたメッセージ**:このプロパティを選択する場合は、EDI グローバル プロパティ ダイアログ ボックスの UNB セグメントの定義 ページで unb3.2 フィールド (コード修飾子) の値を選択することも必要があります。 既定では、このプロパティが設定されていないと場合、インターチェンジは中断されます**レポート用にトランザクション セット/ペイロードを格納**が選択されているが、UNB3.2 の値が選択されていません。  
   
 4. **[OK]** をクリックします。  
   

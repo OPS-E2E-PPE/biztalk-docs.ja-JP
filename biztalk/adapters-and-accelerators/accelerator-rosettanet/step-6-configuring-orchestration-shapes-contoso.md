@@ -1,5 +1,5 @@
 ---
-title: '手順 6: オーケストレーション図形 (Contoso) の構成 |Microsoft Docs'
+title: 手順 6:オーケストレーション図形 (Contoso) の構成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,15 +15,15 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 31ffbdbe5cea810f08b5dc08b8d3dcae265c9f04
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ec97411d1a6fa6fe9d2cfff98e3491e6d60845b8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36980651"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65280684"
 ---
-# <a name="step-6-configuring-orchestration-shapes-contoso"></a>手順 6: オーケストレーション図形 (Contoso) の構成
-作成した PrivateResponder オーケストレーションに追加したオーケストレーション図形を構成するこの手順で[手順 5: Contoso プライベート プロセス オーケストレーションの変更](../../adapters-and-accelerators/accelerator-rosettanet/step-5-modifying-the-contoso-private-process-orchestration.md)します。 これには、Contoso の Microsoft® BizTalk Server とエンタープライズ リソース プランニング (ERP) システム間の通信の設定が含まれます。  
+# <a name="step-6-configuring-orchestration-shapes-contoso"></a>手順 6:オーケストレーション図形 (Contoso) の構成
+作成した PrivateResponder オーケストレーションに追加したオーケストレーション図形を構成するこの手順で[手順 5。Contoso プライベート プロセス オーケストレーションの変更](../../adapters-and-accelerators/accelerator-rosettanet/step-5-modifying-the-contoso-private-process-orchestration.md)します。 これには、Contoso の Microsoft® BizTalk Server とエンタープライズ リソース プランニング (ERP) システム間の通信の設定が含まれます。  
   
 ### <a name="to-configure-the-constructmessagepip3a2requestmessage-shape"></a>ConstructMessagePIP3A2RequestMessage 図形を構成するには  
   
@@ -33,7 +33,7 @@ ms.locfileid: "36980651"
   
 3.  ダブルクリックして、**メッセージの割り当て**図形に、 **[constructpip3a2requestmessage]** 図形を BizTalk 式エディタを開きます。  
   
-4.  BizTalk 式エディターで、以下を入力します。  
+4.  BizTalk 式エディターでは、次を入力します。  
   
     ```  
     PIP3A2RequestMessage = Helper.NormalizeHeader(Microsoft.Solutions.BTARN.Shared.SCContainer.ConvertFromContainer(ActionMessage));  
@@ -154,13 +154,13 @@ ms.locfileid: "36980651"
   
 15. **[ファイル]** メニューの **[すべてを保存]** をクリックします。  
   
-### <a name="to-configure-the-expression1-shape"></a>式_1 図形を構成するには  
+### <a name="to-configure-the-expression1-shape"></a>式 _ 1 図形を構成するには  
   
 1.  ソリューション エクスプ ローラーでダブルクリック**PrivateResponder.odx**します。  
   
 2.  オーケストレーション デザイン画面で、ダブルクリックして、 **Expression_1**図形を BizTalk 式エディタを開きます。  
   
-3.  BizTalk 式エディターで、次のコードを入力します。  
+3.  BizTalk 式エディターでは、次のコードを入力します。  
   
     ```  
     contosoResponseXML = PIP3A2ResponseMessage;  
@@ -178,4 +178,4 @@ ms.locfileid: "36980651"
 4.  **[OK]** をクリックします。  
   
 ## <a name="see-also"></a>参照  
- [手順 7: ポートの作成と構成](../../adapters-and-accelerators/accelerator-rosettanet/step-7-creating-and-configuring-ports.md)
+ [手順 7:ポートの作成と構成](../../adapters-and-accelerators/accelerator-rosettanet/step-7-creating-and-configuring-ports.md)

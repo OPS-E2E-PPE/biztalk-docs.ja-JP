@@ -12,14 +12,14 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cdff3eed53ae042be064bd2e02ff5cecf68c6021
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 64b31650411fcdfdf3aaba70f3e25ee377d442cb
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36976417"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65292849"
 ---
-# <a name="unable-to-access-party-using-send-port"></a>送信ポートを使用してパーティにアクセスできません
+# <a name="unable-to-access-party-using-send-port"></a>パーティにアクセスできませんを使用してポートを送信。
 ## <a name="details"></a>詳細  
 
 |                 |                                                                                        |
@@ -33,21 +33,21 @@ ms.locfileid: "36976417"
 |  メッセージ テキスト   |                      パーティにアクセスできません。 を使用してポートを送信します。 {0}                       |
 
 ## <a name="explanation"></a>説明  
- このエラーは、送信パイプラインが、送信 AS2 メッセージに対して指定された送信ポートに関連付けられたパーティを見つけられなかったことを示します。  
+ このエラーは、送信パイプラインがパーティに関連付けられた、指定した送信ポート、送信 AS2 メッセージを見つけられなかったことを示します。  
 
 ## <a name="user-action"></a>ユーザーの操作  
- このエラーを解決するには、指定された送信ポートにパーティを関連付けます。  
+ このエラーを解決するには、指定された送信ポートとパーティを関連付けます。  
 
-1. クリックして**開始**、] をクリックして**すべてのプログラム**、] をクリックして[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリックします**BizTalk Server 管理**します。  
+1. クリックして**開始**、 をクリックして**すべてのプログラム**、 をクリックして[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリックします**BizTalk Server 管理**します。  
 
-2. [コンソール ルートで [ [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]、展開**BizTalk グループ**、] をクリック**パーティ**します。  
+2. コンソール ルートで  [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]、展開**BizTalk グループ**、 をクリック**パーティ**します。  
 
-3. 適切なパーティを右クリックします。  
+3. 正しいパーティを右クリックします。  
 
 4. **[プロパティ]** をクリックします。  
 
-5. [*パーティ名*]**パーティ プロパティ**] ダイアログ ボックスで、左側のウィンドウでクリックして**送信ポート**します。  
+5. [*パーティ名*]**パーティ プロパティ** ダイアログ ボックスで、左側のウィンドウでクリックして**送信ポート**します。  
 
 6. 送信ポート名を入力、**送信ポート**一覧。  
 
-7. [**OK**] をクリックします。
+7. **[OK]** をクリックします。

@@ -17,12 +17,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7c64cd0620dacf835d3765510ea74c2a8cc80c4a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6b4223648bc62cf748640a9528a831deafdafa2c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36999291"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65292930"
 ---
 # <a name="how-btahl7-routes-messages"></a>BTAHL7 によるメッセージのルーティング方法
 Microsoft BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) メッセージの処理の Microsoft の機能を活用して[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]が HL7 メッセージングの要件に固有のいくつかの方法で拡張することもできます。  
@@ -31,14 +31,14 @@ Microsoft BizTalk Accelerator 用 HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../
 
 HL7 は、基幹業務 (LOB) システムからメッセージを受信し、MLLP アダプターを使用してそれらを受信する可能性があります。 LOB システムに MLLP アダプターを接続する[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]over TCP ポート、およびし MLLP アダプターにメッセージを送信します。
 
-**[!INCLUDE[bts2013r2_md](../../includes/bts2013r2-md.md)]と以前のバージョン**、HL7 MLLP 受信 MLLP への接続に、リモート LOB システムのトランスポート アダプター待機します。 接続すると、リモート LOB システム、LOB システム送信に MLLP を使用して、メッセージ、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]します。 具体的な内容は次のとおりです。 
+ **[!INCLUDE[bts2013r2_md](../../includes/bts2013r2-md.md)]と以前のバージョン**、HL7 MLLP 受信 MLLP への接続に、リモート LOB システムのトランスポート アダプター待機します。 接続すると、リモート LOB システム、LOB システム送信に MLLP を使用して、メッセージ、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]します。 具体的な内容は次のとおりです。 
 
 1. リモートの LOB システムは、ローカルの MLLP アダプターに接続する[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]TCP ポートを使用 
 2. 受信場所が、BTA4HL7 MLLP アダプターは、接続を受け入れます 
 3. リモートの LOB システムに 1 つまたは複数のメッセージを配信します。 
 4. リモートの LOB システムを切断します。
 
-**[!INCLUDE[bts2016_md](../../includes/bts2016-md.md)]以降のバージョン**、MLLP アダプターで LOB システムへの接続が開始され、MLLP への LOB システム プッシュ メッセージを受信します。 つまり、リモート LOB システムは、メッセージングを MLLP に送信する前に、接続の待機します。 具体的な内容は次のとおりです。 
+ **[!INCLUDE[bts2016_md](../../includes/bts2016-md.md)]以降のバージョン**、MLLP アダプターで LOB システムへの接続が開始され、MLLP への LOB システム プッシュ メッセージを受信します。 つまり、リモート LOB システムは、メッセージングを MLLP に送信する前に、接続の待機します。 具体的な内容は次のとおりです。 
 
 1. ローカル[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]TCP ポートを使用して、リモート LOB システムに接続します。 
 2. BTA4HL7 接続の受信場所の MLLP アダプターを開始します 

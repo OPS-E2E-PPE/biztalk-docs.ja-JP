@@ -1,5 +1,5 @@
 ---
-title: '手順 8: パーティ間の取引先のパートナー アグリーメントの構成 |Microsoft Docs'
+title: 手順 8:当事者間で取引先アグリーメントの構成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,26 +12,26 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 72c4588130ddcef4089e5a08a420e5d6323ece54
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 01641d539f77c3cce60b11edee30ff81e7b43b80
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36990923"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65244243"
 ---
-# <a name="step-8-configure-the-trading-partner-agreement-between-the-parties"></a>手順 8: パーティ間の取引先のパートナー アグリーメントを構成します。
+# <a name="step-8-configure-the-trading-partner-agreement-between-the-parties"></a>手順 8:当事者間で取引先アグリーメントを構成します。
 ![手順 9 の 8](../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-8of9.gif "Step_8of9")  
 
  この手順で、X12 アグリーメント X12 を交換するためのパラメーターを定義する取引先を構成する OrderSystem と Fabrikam の 2 つの取引先パートナー間のメッセージ。  
 
-## <a name="prerequisites"></a>必須コンポーネント  
+## <a name="prerequisites"></a>前提条件  
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理者グループのメンバーとしてログオンしている必要があります。  
 
 ### <a name="to-configure-an-agreement"></a>アグリーメントを構成するには  
 
 1. クリックして**開始**、 をクリックして**すべてのプログラム**、 をクリックして**Microsoft BizTalk Server**、順にクリックします**BizTalk Server 管理**します。  
 
-2. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、をクリックして**パーティ**し、コンソール ツリーで、[、**パーティとビジネス プロファイル** ページで、右クリックして**Fabrikam_Profile**、 をポイント**新規**、 をクリックし、**契約**します。  
+2. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、をクリックして**パーティ**し、コンソール ツリーで、**パーティとビジネス プロファイル** ページで、右クリックして**Fabrikam_Profile**、 をポイント**新規**、 をクリックし、**契約**します。  
 
 3. **全般プロパティ** ページの**名前**テキスト ボックスに、アグリーメントの名前を入力します。  
 
@@ -59,7 +59,7 @@ ms.locfileid: "36990923"
       > [!NOTE]
       >  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、アグリーメントの解決を実行するために、送信者と受信者の修飾子フィールドおよび ID フィールドを必ず指定する必要があります。 値と一致します**ISA5**、 **ISA6**、 **ISA7**、および**ISA8**をアグリーメントのプロパティと、インターチェンジ ヘッダー。 また、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] は、送信者の修飾子および識別子を照合して (受信者の修飾子および識別子は不要)、アグリーメントを解決します。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] では、アグリーメントを解決できない場合、フォールバック アグリーメントのプロパティが使用されます。  
 
-   2. **受信確認**ページの**インターチェンジの設定**セクションで、 **997 が必要**します。 このチェック ボックスをオンにすることで、850 インターチェンジを受信したときに 997 受信確認を生成するという指示が受信パイプラインに対して出されます。  
+   2. **受信確認**ページの**インターチェンジの設定**セクションで、 **997 が必要**します。 このチェック ボックスをオンには、受信パイプライン、850 インターチェンジを受信したときに 997 受信確認を生成するように求められます.  
 
    3. **検証**ページで、**インターチェンジの設定**セクションをご確認ください**インターチェンジ制御番号 (重複している isa13 を確認)** オプションが選択されていません。  
 
@@ -106,14 +106,14 @@ ms.locfileid: "36990923"
 
       |       プロパティ       |                                                                                                                                               目的                                                                                                                                               |
       |----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-      |     **[Default]**      | チェック ボックスをオン、**既定**列。 **注:** の値、既定値としてこの行を選択すると**GS1**、 **GS2**、 **GS3**、 **GS7**、および**GS8**される場合でもの値は、**トランザクションの種類**、**バージョン/リリース**と**ターゲットの名前空間**と一致するメッセージではありません。 |
+      |     **[Default]**      | チェック ボックスをオン、**既定**列。 **注:** 既定の値としてこの行を選択すると**GS1**、 **GS2**、 **GS3**、 **GS7**、および**GS8**は使用されている場合であってもの値は、**トランザクションの種類**、**バージョン/リリース**と**ターゲットの名前空間**と一致するメッセージではありません。 |
       | **トランザクションの種類** |                                                                                                                テスト メッセージのメッセージの種類を選択します。 **850 - 注文書**します。                                                                                                                 |
       | **バージョン/リリース**  |                                                                                                                                   EDI のバージョンを入力**00401**します。                                                                                                                                    |
       | **ターゲットの名前空間** |                                                                                                                           選択 **<http://schemas.microsoft.com/Edi/X12>** します。                                                                                                                           |
       |       **[GS1]**        |                                                                                                                         いることを確認**PO - 注文書 (850)** が選択されています。                                                                                                                         |
       |       **[GS2]**        |                                                                                                                       入力**1234567**します。<br /><br /> **送信者アプリケーション id。**                                                                                                                        |
       |       **[GS3]**        |                                                                                                                      入力**0000000**します。<br /><br /> **受信者アプリケーション id。**                                                                                                                       |
-      |       **GS4**        |                    選択**CCYYMMDD**します。 **注:** あるドロップダウン リストで、値を選択するだけでなく、既定値を表示するフィールドをクリックします。 ドロップダウン リストから値を選択せずにフィールドをクリックしても、値は実際に選択されません。                     |
+      |       **GS4**        |                    選択**CCYYMMDD**します。 **注:** ドロップダウン リストで、値を選択し、だけでなく、既定値を表示するフィールドをクリックする必要があります。 ドロップダウン リストから値を選択せずにフィールドをクリックしても、値は実際に選択されません。                     |
       |       **GS5**        |                                                                                                                                            選択**HHMM**します。                                                                                                                                            |
       |       **GS7**        |                                                                                                                           選択**X - 正式認可を受けた Standards Committee X12**します。                                                                                                                           |
       |       **GS8**        |                                                                                                                                いることを確認**00401**が入力されました。                                                                                                                                 |
@@ -125,13 +125,13 @@ ms.locfileid: "36990923"
 
 11. **[OK]** をクリックします。 新しく追加したアグリーメントが一覧表示、**契約**のセクション、**パーティとビジネス プロファイル**ウィンドウ。 新しく追加したアグリーメントは既定で有効になります。  
 
-12. BizTalk サービスを再開します。 BizTalk Server 管理コンソールで [**プラットフォームの設定**、] をクリックして**ホスト インスタンス**、右クリック**BizTalkServerApplication**順にクリックします**再起動**します。  
+12. BizTalk サービスを再起動します。 BizTalk Server 管理コンソールで [**プラットフォームの設定**、] をクリックして**ホスト インスタンス**、右クリック**BizTalkServerApplication**順にクリックします**再起動**します。  
 
     > [!NOTE]
     >  EDI 状態レポートをアクティブ化または非アクティブ化した後は、変更を有効にするために、BizTalk サービスを再起動する必要があります。  
 
 ## <a name="next-steps"></a>次の手順  
- EDI ソリューションのテスト」の説明に従って[手順 9: EDI ソリューションのテスト](../core/step-9-test-the-edi-solution.md)  
+ EDI ソリューションのテスト」の説明に従って[手順 9。EDI ソリューションをテストします。](../core/step-9-test-the-edi-solution.md)  
 
 ## <a name="see-also"></a>参照  
  [エンコード アグリーメントのプロパティの構成](../core/configuring-encoding-agreement-properties.md)

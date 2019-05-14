@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 651a4fe57d4b7ef7c85cc9c195c0ec96c67d0e8f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: cc8461bf0f70515344206e677d2fa95d8c2858a1
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37014555"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65528958"
 ---
 # <a name="message-schemas-for-special-lob-operations"></a>特殊な LOB 操作のメッセージ スキーマ
 Read_\<LOBColName\>と Update_\<LOBColName\>テーブルと LOB の列を含むビューの操作が表示される場所\<LOBColName\>テーブルの LOB 列は、または表示します。 これらの操作では、base64Binary でエンコードされたデータのストリームとして LOB データを読み書きできます。 1 つの行の LOB データの 1 つの列で動作します。  
@@ -30,14 +30,14 @@ Read_\<LOBColName\>と Update_\<LOBColName\>テーブルと LOB の列を含む�
 > [!NOTE]
 >  表の後は、エンティティの説明を参照してください。  
   
-|           演算            |                                                                                  XML メッセージ                                                                                  |                                                                                                                                                                                                                                                              説明                                                                                                                                                                                                                                                              |
+|           操作            |                                                                                  XML メッセージ                                                                                  |                                                                                                                                                                                                                                                              説明                                                                                                                                                                                                                                                              |
 |--------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |      Read_\<LOBColName\>       |                           `<Read_[LOBColName] xmlns="[VERSION]/Tables/[SCHEMA]/[TABLE_NAME]">  <FILTER>[WHERE_clause]</FILTER></Read_[LOBColName]>`                           |                                                                                                           LOB データの場所に一致する行のフィルター要素で指定した句が返されます。 Where 句は 1 つの行と一致する必要があります。 1 つ以上の一致する行がある場合、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]例外がスローされます。                                                                                                            |
 |  Read_\<LOBColName\>応答  | `<Read_[LOBColName]Response xmlns="[VERSION]/Tables/[SCHEMA]/[TABLE_NAME]">  <Read_[LOBColName]Result>    [LOB_DATA]  </Read_[LOBColName]Result></Read_[LOBColName]Response>` |                                                                                                                                                                                                                                  LOB データは、base64Binary でエンコードされたデータのストリームとして返されます。                                                                                                                                                                                                                                   |
 |     Update_\<LOBColName\>      |            `<Update_[LOBColName] xmlns="[VERSION]/Tables/[SCHEMA]/[TABLE_NAME]">  <FILTER>[WHERE_clause]</LOB_COLUMN>  <DATA>[Value]</DATA></Update_[LOBColName]>`            | LOB データの場所に一致する行でフィルター要素で指定した句は内のデータで更新、\<データ\>要素。 Where 句は 1 つの行と一致する必要があります。 1 つ以上の一致する行がある場合、[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]例外をスローします。<br /><br /> **注**、BLOB 列の更新中に、\<データ\>要素が常に base64 でエンコードされた値を含めることが必要があります。 CLOB、NCLOB、ため、\<データ\>要素は、文字列値を持つことができます。 |
 | Update_\<LOBColName\>応答 |                                 `<Update_[LOBColName]Response xmlns="[VERSION]/Tables/[SCHEMA]/[TABLE_NAME]"></Update_[LOBColName]Response>`                                  |                                                                                                                                                                                                                                                    空の応答が返されます。                                                                                                                                                                                                                                                     |
   
- エンティティの説明:  
+ エンティティの説明  
   
  [バージョン] = メッセージ バージョン文字列。たとえば、"<http://schemas.microsoft.com/OracleEBS/2008/05>"。  
   
@@ -60,14 +60,14 @@ Read_\<LOBColName\>と Update_\<LOBColName\>テーブルと LOB の列を含む�
 > [!NOTE]
 >  表の後は、エンティティの説明を参照してください。  
   
-|演算|操作|例|  
+|操作|操作|例|  
 |---------------|------------|-------------|  
 |Read_\<LOBColName\>|`Tables/ReadLOB/[SCHEMA]/[TABLE_NAME]/[LOBColName]`|`Tables/ReadLOB/SCOTT/CUSTOMER/Photo`|  
 |Read_\<LOBColName\>応答|`Tables/ReadLOB/[SCHEMA]/[TABLE_NAME]/[LOBColName]/response`|`Tables/ReadLOB/SCOTT/CUSTOMER/Photo/response`|  
 |Update_\<LOBColName\>|**BLOB の**:<br /><br /> `Tables/UpdateBLOB/[SCHEMA]/[TABLE_NAME]/[LOBColName]`<br /><br /> **CLOB、NCLOB**:<br /><br /> `Tables/UpdateCLOB/[SCHEMA]/[TABLE_NAME]/[LOBColName]`|**BLOB の**:<br /><br /> `Tables/UpdateBLOB/SCOTT/CUSTOMER/Photo/`<br /><br /> **CLOB、NCLOB**:<br /><br /> `Tables/UpdateCLOB/SCOTT/CUSTOMER/Photo1/`|  
 |Update_\<LOBColName\>応答|**BLOB の**:<br /><br /> `Tables/UpdateBLOB/[SCHEMA]/[TABLE_NAME]/[LOBColName]/response`<br /><br /> **CLOB、NCLOB**:<br /><br /> `Tables/UpdateCLOB/[SCHEMA]/[TABLE_NAME]/[LOBColName]/response`|**BLOB の**:<br /><br /> `Tables/UpdateBLOB/SCOTT/CUSTOMER/Photo/response`<br /><br /> **CLOB、NCLOB**:<br /><br /> `Tables/UpdateCLOB/SCOTT/CUSTOMER/Photo1/response`|  
   
- エンティティの説明:  
+ エンティティの説明  
   
  [スキーマ] コレクションの Oracle の成果物を =たとえば、SCOTT です。  
   
@@ -79,4 +79,4 @@ Read_\<LOBColName\>と Update_\<LOBColName\>テーブルと LOB の列を含む�
 >  Read_ のメッセージ アクション\<LOBColName\>と Update_\<LOBColName\>操作ビューに似ていますが、テーブルは、使用されている操作のアクションは、テーブルではなく、ビューを指定します: `Views/ReadLOB/[SCHEMA]/[VIEW_NAME]/[LOBColName]` .  
   
 ## <a name="see-also"></a>参照  
- [BizTalk Adapter for Oracle E-Business Suite 用のメッセージとメッセージ スキーマ](../../adapters-and-accelerators/adapter-oracle-ebs/messages-and-message-schemas-for-biztalk-adapter-for-oracle-e-business-suite.md)
+ [メッセージと BizTalk Adapter for Oracle E-business Suite のメッセージ スキーマ](../../adapters-and-accelerators/adapter-oracle-ebs/messages-and-message-schemas-for-biztalk-adapter-for-oracle-e-business-suite.md)

@@ -1,5 +1,5 @@
 ---
-title: '手順 4: ロード テスト用の BizTalk Server 環境の構成 |Microsoft Docs'
+title: 手順 4:ロード テスト用の BizTalk Server 環境の構成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/29/2017
 ms.prod: biztalk-server
@@ -12,18 +12,18 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cf3ab4c913a55be391d1e92522c257c4cd82d272
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 046c79e5528accea92081415542c5b1aea1b1455
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36990355"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65400671"
 ---
-# <a name="step-4-configure-biztalk-server-environment-for-load-testing"></a>手順 4: ロード テスト用の BizTalk Server 環境を構成します。
-このトピックでは、BizTalk Server 受信場所、受信ポートを作成するための情報と、トピックで説明したサンプル コードを実行するために必要な送信ポート[手順 1: BizTalk Server にドキュメントを送信する単体テストを作成する](~/technical-guides/step-1-create-a-unit-test-to-submit-documents-to-biztalk-server.md)[手順 3: 複数の単体テストを同時に実行するロード テストの作成](~/technical-guides/step-3-create-a-load-test-to-perform-multiple-unit-tests-simultaneously.md)です。  
+# <a name="step-4-configure-biztalk-server-environment-for-load-testing"></a>手順 4:ロード テスト用の BizTalk Server 環境を構成します。
+このトピックでは、BizTalk Server 受信場所、受信ポートを作成するための情報と、トピックで説明したサンプル コードを実行するために必要な送信ポート[手順 1。BizTalk Server にドキュメントを送信する単体テスト作成](~/technical-guides/step-1-create-a-unit-test-to-submit-documents-to-biztalk-server.md)と[手順 3。同時に複数の単体テストを実行するロード テストの作成](~/technical-guides/step-3-create-a-load-test-to-perform-multiple-unit-tests-simultaneously.md)です。  
 
 ## <a name="configure-biztalk-server-environment-for-load-tests"></a>ロード テスト用の BizTalk Server 環境を構成します。  
- トピックの説明に従って[手順 3: を実行複数単体テストを同時にロード テストを作成](~/technical-guides/step-3-create-a-load-test-to-perform-multiple-unit-tests-simultaneously.md)、ロード テスト**BTS_Messaging_Step**単体テストを実行するように構成**BTSMessaging**と**BTSMessaging2**します。 さらに、これらの単体テストは C:\Projects\LoadTest\BTSLoad\TestMessages\TestXmlDocument.xml メッセージのコピーを読み込むし、エンドポイントへの送信**BTSMessagingEP**と**BTSMessagingEP2**で定義されています。プロジェクトのアプリケーションの構成 (app.config) ファイルの次のセクション:  
+ トピックの説明に従って[手順 3。実行複数単体テストを同時にロード テストを作成](~/technical-guides/step-3-create-a-load-test-to-perform-multiple-unit-tests-simultaneously.md)、ロード テスト**BTS_Messaging_Step**単体テストを実行するように構成**BTSMessaging**と**BTSMessaging2**します。 さらに、これらの単体テストは C:\Projects\LoadTest\BTSLoad\TestMessages\TestXmlDocument.xml メッセージのコピーを読み込むし、エンドポイントへの送信**BTSMessagingEP**と**BTSMessagingEP2**で定義されています。プロジェクトのアプリケーションの構成 (app.config) ファイルの次のセクション:  
 
  \<\!--BTSMessagingEP--\>\<エンドポイント address="net.tcp://*BizTalk Server コンピューター*: 8123/btsloadtest"バインド"netTcpBinding"bindingConfiguration ="netTcpBinding"コントラクトを = ="System.ServiceModel.Channels.IRequestChannel"名前 ="BTSMessagingEP"/\>\<エンドポイント address="net.tcp://*BizTalk Server コンピューター*: 8123/btsloadtest"バインド"netTcpBinding"を =bindingConfiguration ="netTcpBinding"contract="System.ServiceModel.Channels.IRequestChannel"名前 ="BTSMessagingEP2"/                  \>  
 
@@ -39,11 +39,11 @@ ms.locfileid: "36990355"
 |--------------|-----------|  
 |名前|TxHost|  
 |型|インプロセス|  
-|[ホストの追跡を許可する]|このボックスがオフであることを確認します。|  
-|[信頼されている認証]|このボックスがオフであることを確認します。|  
+|ホストの追跡を許可します。|このボックスがオフであることを確認します。|  
+|信頼された認証|このボックスがオフであることを確認します。|  
 |32 ビットのみ|このボックスがオフであることを確認します。|  
-|[グループの既定のホストにする]|このボックスがオフであることを確認します。|  
-|[Windows グループ]|このホストと関連付けられているホスト インスタンスへのアクセスを制御するために使用する Windows グループ。 用に作成された既定のインプロセス ホストがいずれかのウィンドウ グループ*\<コンピューター名\>* \BizTalk Application Users (用、1 台のサーバーの BizTalk Server インストールの場合) または *\<ドメイン名\>* \BizTalk Application Users (複数のサーバー、ドメイン グループの使用を必要とする BizTalk Server のインストールの場合) 用です。 **注:***\<コンピューター名\>* と*\<ドメイン名\>* 実際のコンピューター名または使用するドメイン名のプレース ホルダーグループの作成時にします。   <br /><br /> このホストの新しいグループを作成し、トピックで説明されている特権が必要かどうか[ホスト グループ](http://go.microsoft.com/fwlink/?LinkId=208803)(http://go.microsoft.com/fwlink/?LinkId=208803) BizTalk Server のドキュメントで。|  
+|既定のホスト グループにします。|このボックスがオフであることを確認します。|  
+|Windows グループ|このホストと関連付けられているホスト インスタンスへのアクセスを制御するために使用する Windows グループ。 用に作成された既定のインプロセス ホストがいずれかのウィンドウ グループ*\<コンピューター名\>* \BizTalk Application Users (用、1 台のサーバーの BizTalk Server インストールの場合) または *\<ドメイン名\>* \BizTalk Application Users (複数のサーバー、ドメイン グループの使用を必要とする BizTalk Server のインストールの場合) 用です。 **注:***\<コンピューター名\>* と*\<ドメイン名\>* 実際のコンピューター名またはグループの作成時に使用されるドメイン名のプレース ホルダーです。 <br /><br /> このホストの新しいグループを作成し、トピックで説明されている特権が必要かどうか[ホスト グループ](http://go.microsoft.com/fwlink/?LinkId=208803)(http://go.microsoft.com/fwlink/?LinkId=208803) BizTalk Server のドキュメントで。|  
 
  「受信」ホストを作成する「送信」ホストを作成するときに実行した手順を繰り返します。 次のプロパティ値を持つ、「受信」ホストを構成します。  
 
@@ -51,11 +51,11 @@ ms.locfileid: "36990355"
 |--------------|-----------|  
 |名前|RxHost|  
 |型|インプロセス|  
-|[ホストの追跡を許可する]|このボックスがオフであることを確認します。|  
-|[信頼されている認証]|このボックスがオフであることを確認します。|  
+|ホストの追跡を許可します。|このボックスがオフであることを確認します。|  
+|信頼された認証|このボックスがオフであることを確認します。|  
 |32 ビットのみ|このボックスがオフであることを確認します。|  
-|[グループの既定のホストにする]|このボックスがオフであることを確認します。|  
-|[Windows グループ]|このホストと関連付けられているホスト インスタンスへのアクセスを制御するために使用する Windows グループ。 用に作成された既定のインプロセス ホストがいずれかのウィンドウ グループ*\<コンピューター名\>* \BizTalk Application Users (用、1 台のサーバーの BizTalk Server インストールの場合) または *\<ドメイン名\>* \BizTalk Application Users (複数のサーバー、ドメイン グループの使用を必要とする BizTalk Server のインストールの場合) 用です。 **注:***\<コンピューター名\>* と*\<ドメイン名\>* 実際のコンピューター名または使用するドメイン名のプレース ホルダーグループの作成時にします。   <br /><br /> このホストの新しいグループを作成し、トピックで説明されている特権が必要かどうか[ホスト グループ](http://go.microsoft.com/fwlink/?LinkId=208803)(http://go.microsoft.com/fwlink/?LinkId=208803) BizTalk Server のドキュメントで。|  
+|既定のホスト グループにします。|このボックスがオフであることを確認します。|  
+|Windows グループ|このホストと関連付けられているホスト インスタンスへのアクセスを制御するために使用する Windows グループ。 用に作成された既定のインプロセス ホストがいずれかのウィンドウ グループ*\<コンピューター名\>* \BizTalk Application Users (用、1 台のサーバーの BizTalk Server インストールの場合) または *\<ドメイン名\>* \BizTalk Application Users (複数のサーバー、ドメイン グループの使用を必要とする BizTalk Server のインストールの場合) 用です。 **注:***\<コンピューター名\>* と*\<ドメイン名\>* 実際のコンピューター名またはグループの作成時に使用されるドメイン名のプレース ホルダーです。 <br /><br /> このホストの新しいグループを作成し、トピックで説明されている特権が必要かどうか[ホスト グループ](http://go.microsoft.com/fwlink/?LinkId=208803)(http://go.microsoft.com/fwlink/?LinkId=208803) BizTalk Server のドキュメントで。|  
 
 ### <a name="create-instances-of-the-biztalk-server-send-and-receive-hosts"></a>BizTalk Server 送信のインスタンスを作成し、受信ホスト  
  BizTalk Server のドキュメントのトピックの手順に従います[ホスト インスタンスを追加する方法](http://go.microsoft.com/fwlink/?LinkId=208596)(http://go.microsoft.com/fwlink/?LinkId=208596)を作成して、BizTalk Server の「送信」ホストのインスタンスを開始します。 BizTalk Server グループ内の各 BizTalk サーバー上で実行し、次のプロパティ値で各ホスト インスタンスを構成する「送信」ホストのインスタンスを構成します。  
@@ -64,7 +64,7 @@ ms.locfileid: "36990355"
 |--------------|-----------|  
 |**ホスト名**|選択**TxHost**横にドロップダウン リストからリスト**ホスト名**します。|  
 |**[サーバー]**|実行するホスト インスタンスはこのドロップダウン リストから横に、BizTalk Server を選択します。 **Server**します。|  
-|**ログオン**|1.をクリックして、**構成**を表示するボタン、**ログオン資格情報** ダイアログ ボックス。<br />2.**ログオン資格情報** ダイアログ ボックスが、指定したプロパティの次の値を入力します。<br />     **プロパティ**<br />     **ログオン**: この BizTalk Server ホストに関連付けられている Windows グループのメンバーであるユーザー アカウントの名前。<br />     **パスワード**: で指定されたユーザー アカウントのパスワード、**ログオン**テキスト ボックス。<br />3.をクリックして**OK**を閉じる、**ログオン資格情報** ダイアログ ボックス。|  
+|**ログオン**|1.をクリックして、**構成**を表示するボタン、**ログオン資格情報** ダイアログ ボックス。<br />2.**ログオン資格情報** ダイアログ ボックスが、指定したプロパティの次の値を入力します。<br />     **プロパティ**<br />     **ログオン**:この BizTalk Server ホストに関連付けられている Windows グループのメンバーであるユーザー アカウントの名前。<br />     **パスワード**:指定されたユーザー アカウントのパスワード、**ログオン**テキスト ボックス。<br />3.をクリックして**OK**を閉じる、**ログオン資格情報** ダイアログ ボックス。|  
 |**ホスト インスタンスの開始を無効にします。**|このボックスがオフであることを確認します。|  
 
  ホスト インスタンスを作成した後、ホスト インスタンスを右クリックし、選択**開始**コンテキスト メニュー。  
@@ -75,8 +75,8 @@ ms.locfileid: "36990355"
 |--------------|-----------|  
 |ホスト名|選択**RxHost**横にドロップダウン リストからリスト**ホスト名**します。|  
 |[サーバー]|実行するホスト インスタンスはこのドロップダウン リストから横に、BizTalk Server を選択します。 **Server**します。|  
-|ログオン|1.をクリックして、**構成**を表示するボタン、**ログオン資格情報** ダイアログ ボックス。<br />2.**ログオン資格情報** ダイアログ ボックスが、指定したプロパティの次の値を入力します。<br />     **プロパティ**<br />     **ログオン**: この BizTalk Server ホストに関連付けられている Windows グループのメンバーであるユーザー アカウントの名前。<br />     **パスワード**: で指定されたユーザー アカウントのパスワード、**ログオン**テキスト ボックス。<br />3.クリックして**OK**ログオン資格情報 ダイアログ ボックスを閉じます。|  
-|[ホスト インスタンスの開始を無効にする]|このボックスがオフであることを確認します。|  
+|ログオン|1.をクリックして、**構成**を表示するボタン、**ログオン資格情報** ダイアログ ボックス。<br />2.**ログオン資格情報** ダイアログ ボックスが、指定したプロパティの次の値を入力します。<br />     **プロパティ**<br />     **ログオン**:この BizTalk Server ホストに関連付けられている Windows グループのメンバーであるユーザー アカウントの名前。<br />     **パスワード**:指定されたユーザー アカウントのパスワード、**ログオン**テキスト ボックス。<br />3.クリックして**OK**ログオン資格情報 ダイアログ ボックスを閉じます。|  
+|ホスト インスタンスの開始を無効にします。|このボックスがオフであることを確認します。|  
 
  ホスト インスタンスを作成した後、ホスト インスタンスを右クリックし、選択**開始**コンテキスト メニュー。  
 
@@ -86,7 +86,7 @@ ms.locfileid: "36990355"
 |プロパティ|値|  
 |--------------|-----------|  
 |General\Name|BTSLoadTestMessaging.OneWay.ReceivePort|  
-|General\Port 型|一方向|  
+|General\Port Type|一方向|  
 |General\Authentication|認証なし|  
 |失敗したメッセージのルーティング General\Enable|このボックスがオフであることを確認します。|  
 |General\Description|空白のままに|  
@@ -110,13 +110,13 @@ ms.locfileid: "36990355"
 
 |プロパティ|値|  
 |--------------|-----------|  
-|General\Address (URI)|net.tcp://localhost: 8123/btsloadtest|  
+|General\Address (URI)|net.tcp://localhost:8123/btsloadtest|  
 |Binding\Binding 型|netTcpbinding|  
 |Binding\NetTcpBindingElement\listenBacklog|400|  
 |Binding\NetTcpBindingElement\maxConnections|400|  
 |Binding\Security\NetTcpSecurityElement\mode|なし|  
-|Behavior\ServiceBehavior\serviceThrottling\ServiceThrottlingElement**注:** serviceThrottling 動作を ServiceBehavior の右クリックして、動作の一覧に追加する をクリックして**追加拡張子**、 **serviceThrottling**クリックして、動作拡張機能の一覧から**OK**。|設定、 **ServiceThrottlingElement**プロパティを次の値にします。<br /><br /> -   **maxConcurrentCalls** 400<br />-   **maxConcurrentInstances** 400<br />-   **maxConcurrentSessions** 400|  
-|Behavior\ServiceBehavior\serviceDebug\ServiceDebugElement**注:** 、ServiceBehavior の右クリックして、動作の一覧にして serviceDebug の動作を追加する をクリックして**拡張機能の追加**を選択します。**serviceDebug**クリックして、動作拡張機能の一覧から**OK**します。|リストをそのまま**ServiceDebugElement**プロパティで、既定以外の値 (空)、次のプロパティが True の値に変更する必要があります。<br /><br /> -   **httpHelpPageEnabled**は True。<br />-   **httpsHelpPageEnabled**は True。<br />-   **includeExceptionDetailInFaults**は True。|  
+|Behavior\ServiceBehavior\serviceThrottling\ServiceThrottlingElement **Note:** 動作、ServiceBehavior の右クリックして、一覧に serviceThrottling 動作を追加する をクリックして**拡張機能の追加**、 **serviceThrottling**動作拡張機能の一覧から順にクリックします**Ok**します。|設定、 **ServiceThrottlingElement**プロパティを次の値にします。<br /><br /> -   **maxConcurrentCalls** 400<br />-   **maxConcurrentInstances** 400<br />-   **maxConcurrentSessions** 400|  
+|Behavior\ServiceBehavior\serviceDebug\ServiceDebugElement**に注意してください。** 動作、ServiceBehavior の右クリックして、一覧にして serviceDebug の動作を追加する をクリックして**拡張機能の追加**を選択します**serviceDebug**動作拡張機能の一覧からクリック**OK**します。|リストをそのまま**ServiceDebugElement**プロパティで、既定以外の値 (空)、次のプロパティが True の値に変更する必要があります。<br /><br /> -   **httpHelpPageEnabled**は True。<br />-   **httpsHelpPageEnabled**は True。<br />-   **includeExceptionDetailInFaults** True|  
 
  をクリックして**ok** Wcf-custom トランスポートのプロパティ ダイアログ ボックスを閉じて をクリックする**OK** 受信場所のプロパティ ダイアログ ボックスを閉じます。  
 
@@ -131,7 +131,7 @@ ms.locfileid: "36990355"
 |Filters\Name|BTS.ReceivePortName|  
 |Filters\Operator|==|  
 |Filters\Value|BTSLoadTest.Messaging.OneWay.ReceivePort|  
-|によって Filters\Group|**注:** としてフィルターを表示する場合、適切な値は、これらのプロパティが構成されている、 `BTS.ReceivePortName == BTSLoadTest.Messaging.OneWay.ReceivePort` b の送信ポートのプロパティ ダイアログ ボックスの [フィルタ] ページの下部に示すようox します。 このフィルターを適用すると、結果として、この送信ポートは BTSLoadTest.Messaging.OneWay.ReceivePort をという名前の受信ポートを使用して BizTalk Server で受信メッセージにサブスクライブします。|  
+|によって Filters\Group|**に注意してください。** フィルターとして表示する場合、適切な値は、これらのプロパティが構成されている、`BTS.ReceivePortName == BTSLoadTest.Messaging.OneWay.ReceivePort`送信ポートのプロパティ ダイアログ ボックスの フィルタ ページの下部に示すよう。 このフィルターを適用すると、結果として、この送信ポートは BTSLoadTest.Messaging.OneWay.ReceivePort をという名前の受信ポートを使用して BizTalk Server で受信メッセージにサブスクライブします。|  
 |Tracking|すべてのボックスがオフでないことを確認します。|  
 |General\Type|選択**Wcf-custom**クリックしてドロップダウン リストから、**構成**ボタンが表示されます、 **Wcf-custom トランスポートのプロパティ**として使用する ダイアログ ボックス次のセクションで説明したように構成**Wcf-custom 送信トランスポート構成**します。|  
 
@@ -140,7 +140,7 @@ ms.locfileid: "36990355"
 
 |プロパティ|値|  
 |--------------|-----------|  
-|General\Address (URI)|net.tcp://*\<コンピューター名\>*: 2001/TCP1**重要:***\<コンピューター名\>* プレース ホルダーですIndigoService.exe をホストするために使用する実際のコンピューター名、これは WCF 経由で送信されるメッセージを使用しています。 IndigoService.exe には、ごくわずかなリソースが必要であるため IndigoService.exe を BizTalk Server グループのデータベース用の SQL Server コンピューターで実行する完全に受け入れ可能です。 利用可能な BizTalk ベンチマーク ウィザードの一部である IndigoService.exe [BizTalk ベンチマーク ウィザード](http://go.microsoft.com/fwlink/?LinkID=186347)(http://go.microsoft.com/fwlink/?LinkID=186347)します。|  
+|General\Address (URI)|net.tcp://*\<コンピューター名\>*: 2001/TCP1**重要です。***\<コンピューター名\>* IndigoService.exe、WCF 経由で送信されるメッセージを使用するように設計がホストするために使用する実際のコンピューター名のプレース ホルダーです。 IndigoService.exe には、ごくわずかなリソースが必要であるため IndigoService.exe を BizTalk Server グループのデータベース用の SQL Server コンピューターで実行する完全に受け入れ可能です。 利用可能な BizTalk ベンチマーク ウィザードの一部である IndigoService.exe [BizTalk ベンチマーク ウィザード](http://go.microsoft.com/fwlink/?LinkID=186347)(http://go.microsoft.com/fwlink/?LinkID=186347)します。|  
 |Binding\Binding 型|**customBinding**|  
 
  WCF カスタム バインドの種類のほとんどと同様に、 **customBinding**バインドの種類は、次の値に設定する必要があります、いくつかのプロパティを公開します。  
@@ -215,7 +215,7 @@ ms.locfileid: "36990355"
    |     **Db のリソースに基づく Throttling\Message 数**      |        値を 0 に設定します。         |
    | **リソースに基づく Throttling\Memory Usage\Process の仮想** |        値を 0 に設定します。         |
    |  **割合に基づく Throttling\Publishing\Throttling の上書き**  |       制限しない に設定します。       |
-   |   **割合に基づく Throttling\Delivery\Throttling の上書き**   |       制限しない に設定します。       |
+   |   **Rate-Based Throttling\Delivery\Throttling override**   |       制限しない に設定します。       |
 
 
 7. パフォーマンス テストの実行中に使用されるすべてのホストについて、手順 6. で説明されているプロセスを繰り返します。  

@@ -15,12 +15,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b6e05cde05819edf1bbe1525d87797bf1131f1d5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 81b556f9d91a896fc0a544cd78bfc043588a274b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37006051"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65374261"
 ---
 # <a name="architecture-overview-of-the-biztalk-adapter-for-mysap-business-suite"></a>BizTalk Adapter for mySAP Business Suite のアーキテクチャの概要
 [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]実装、[!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)]カスタム バインドは、SAP システムと通信する 1 つのカスタム トランスポート バインド要素が含まれています。 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]によってラップされて、[!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)]ランタイムを使ってアプリケーションに公開されると、[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]チャネル アーキテクチャ。 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] SAP Unicode RFC SDK (librfc32u.dll) の 64 ビットまたは 32 ビット バージョンのいずれかを使用して SAP システムと通信します。 

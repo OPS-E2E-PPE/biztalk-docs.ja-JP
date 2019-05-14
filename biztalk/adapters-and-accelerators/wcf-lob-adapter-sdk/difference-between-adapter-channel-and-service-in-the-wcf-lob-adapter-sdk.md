@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8583b615e6a6e8fcd999e5120bca531d3c74090d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e7ec63ce59139d0a34aa66969bde1898c0981e94
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37010036"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65363676"
 ---
 # <a name="difference-between-adapter-channel-and-service-in-the-wcf-lob-adapter-sdk"></a>WCF LOB Adapter SDK のアダプターのチャネルとサービス間の違い
 [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]と[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]アプリケーション機能を使用する同じコンピューター上またはネットワーク経由でアプリケーションを公開するために使用できる Api のセットを提供します。 最適なフレームワークを選択するには、公開されている機能のビジネス要件および公開する対象のシステム アプリケーションのプロパティを考慮する必要があります。 このトピックでは、適切なフレームワークを選択する際のガイドラインを提供します。  

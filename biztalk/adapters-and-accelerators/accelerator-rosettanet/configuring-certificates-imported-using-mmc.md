@@ -19,12 +19,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7663d5df833635e557af699dd5ce5fc7de9c7d9d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 24753e13bb09cd44bbd9fa7bb20c3ca24e6b62e1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36996123"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65284677"
 ---
 # <a name="configuring-certificates-imported-using-mmc"></a>MMC を使用してインポートされた証明書を構成します。
 Microsoft 管理コンソール (MMC) の証明書スナップインを使用して証明書をインポートした後は、その使用を構成する必要があります。 そのためには、BizTalk グループ、BizTalk ホストと分離ホスト サービス アカウント、PIP (Partner Interface Processes)、取引先アグリーメント、およびパートナーを構成します。 次の手順を実行する必要があります。  
@@ -39,9 +39,9 @@ Microsoft 管理コンソール (MMC) の証明書スナップインを使用し
   > [!NOTE]
   >  BizTalk ホストと BizTalk 分離ホストは、暗号化された同じ着信メッセージの暗号化を解除できるように、同じ暗号化解除証明書を持つ必要があります。 HTTP アダプターを実行する BizTalk 分離ホストは、ホスト証明書にアクセスできないため、メッセージを受信する証明書を持つ必要があります。 BizTalk ホストも、[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] がメッセージを受信した後でそのメッセージを処理する証明書を持つ必要があります。  
   
-- 各パートナーに対して暗号化証明書および署名証明書を構成します。 これを行うには、証明書を入力する、**全般**のタブ、**パートナー**プロパティ ページで、Microsoft [!INCLUDE[btaBTARNNoVersion](../../includes/btabtarnnoversion-md.md)] ([!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]) 管理コンソール。 証明書には、パートナーへの送信メッセージを暗号化する公開キー暗号化証明書、および着信メッセージに記されたパートナーの ID を確認する公開キー署名証明書があります。 詳細については、[を作成または編集するパートナー](../../adapters-and-accelerators/accelerator-rosettanet/creating-or-editing-a-partner.md)を参照してください。  
+- 各パートナーに対して暗号化証明書および署名証明書を構成します。 これを行うには、証明書を入力する、**全般**のタブ、**パートナー**プロパティ ページで、Microsoft [!INCLUDE[btaBTARNNoVersion](../../includes/btabtarnnoversion-md.md)] ([!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]) 管理コンソール。 証明書には、パートナーへの送信メッセージを暗号化する公開キー暗号化証明書、および着信メッセージに記されたパートナーの ID を確認する公開キー署名証明書があります。 詳細については、次を参照してください。[を作成または編集するパートナー](../../adapters-and-accelerators/accelerator-rosettanet/creating-or-editing-a-partner.md)します。  
   
-- ホーム組織と取引先の間における暗号化ポリシーを構成します。 取引先アグリーメントを構成するには、**プロトコル**のタブ、**アグリーメントのプロパティ**ページで、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]管理コンソール。 詳細については、[を作成または編集するアグリーメント](../../adapters-and-accelerators/accelerator-rosettanet/creating-or-editing-an-agreement.md)を参照してください。  
+- ホーム組織と取引先の間における暗号化ポリシーを構成します。 取引先アグリーメントを構成するには、**プロトコル**のタブ、**アグリーメントのプロパティ**ページで、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]管理コンソール。 詳細については、次を参照してください。[を作成または編集するアグリーメント](../../adapters-and-accelerators/accelerator-rosettanet/creating-or-editing-an-agreement.md)します。  
   
 ### <a name="to-configure-the-signing-certificate-for-a-biztalk-group-or-the-decryption-certificate-for-a-biztalk-host"></a>BizTalk グループの署名証明書または BizTalk ホストの暗号化解除証明書を構成するには  
   
@@ -62,7 +62,7 @@ Microsoft 管理コンソール (MMC) の証明書スナップインを使用し
   
 7. をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**Microsoft**[!INCLUDE[btsBizTalkServer2006r3ui](../../includes/btsbiztalkserver2006r3ui-md.md)]、順にクリックします**BizTalk Server 管理**します。  
   
-8. BizTalk グループに対して署名証明書を構成するには右クリック**Microsoft** [!INCLUDE[btsBizTalkServer2006r3ui](../../includes/btsbiztalkserver2006r3ui-md.md)] **(Local)**、] をクリックし、**プロパティ**。 右側にテキスト ボックス内をクリックして**拇印**、クリックして、テキスト ボックスに拇印番号を貼り付けるには、CTRL + V キーを押して**OK**します。  
+8. BizTalk グループに対して署名証明書を構成するには右クリック**Microsoft** [!INCLUDE[btsBizTalkServer2006r3ui](../../includes/btsbiztalkserver2006r3ui-md.md)] **(Local)**、 をクリックし、**プロパティ**。 右側にテキスト ボックス内をクリックして**拇印**、クリックして、テキスト ボックスに拇印番号を貼り付けるには、CTRL + V キーを押して**OK**します。  
   
 9. BizTalk ホストの暗号化解除証明書を構成するには、展開**Microsoft** [!INCLUDE[btsBizTalkServer2006r3ui](../../includes/btsbiztalkserver2006r3ui-md.md)] **(Local)**、展開**ホスト**、するホストを右クリックして構成、およびクリックして**プロパティ**します。  
   

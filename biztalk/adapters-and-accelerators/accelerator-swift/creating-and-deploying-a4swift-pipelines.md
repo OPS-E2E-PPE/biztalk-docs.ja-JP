@@ -17,19 +17,19 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d337b97dfb1973ef10c113ae0a206a51dcd63b1a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 64c58e313b3b48b78c6a0788b9a104cff3d18d2b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37002451"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65378435"
 ---
 # <a name="creating-and-deploying-a4swift-pipelines"></a>A4SWIFT パイプラインの作成と
 次の図に示すように作成してメッセージ repair and new submission は、SWIFT パイプラインをデプロイするには、次の手順を実行します。  
 
  ![](../../adapters-and-accelerators/accelerator-swift/media/a4swift-pipeline-configuration.gif "A4SWIFT_Pipeline_Configuration")  
 
- **概要**  
+ **まとめ**  
 
  次のスキーマを展開します。  
 
@@ -64,7 +64,7 @@ ms.locfileid: "37002451"
 
 4. クリックして**追加**に BizTalk パイプライン デザイナで、空のパイプラインを開きます。  
 
-5. [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]、] をクリックして**ビュー**し**ツールボックス**します。  
+5. [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]、 をクリックして**ビュー**し**ツールボックス**します。  
 
 6. **BizTalk パイプライン コンポーネントのツールボックス**、ドラッグ、 **SWIFT 逆アセンブラー**を**ここにドロップ**下のボックス、**逆アセンブル**ステージ図形に**BizTalk パイプライン デザイナ**します。 ままに、 **SWIFT 逆アセンブラー**として選択された状態で、 **BizTalk パイプライン デザイナ**します。  
 
@@ -73,7 +73,7 @@ ms.locfileid: "37002451"
    > [!NOTE]
    >  SWIFT ヘッダー スキーマ プロパティに設定する必要があります **(なし)** します。  
 
-8. [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]、] をクリックして**ファイル**、し**すべて保存**します。  
+8. [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]、 をクリックして**ファイル**、し**すべて保存**します。  
 
 ### <a name="to-add-a-custom-send-pipeline"></a>カスタム送信パイプラインを追加するには  
 
@@ -88,11 +88,11 @@ ms.locfileid: "37002451"
    > [!NOTE]
    >  BizTalk パイプライン デザイナーで空のパイプラインが表示されます。 [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] ソリューション エクスプ ローラーに SWIFTPipelines プロジェクトの下の新しいパイプラインを追加します。  
 
-5. [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]、] をクリックして**ビュー**し**ツールボックス**します。  
+5. [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]、 をクリックして**ビュー**し**ツールボックス**します。  
 
 6. **BizTalk パイプライン コンポーネントのツールボックス**、ドラッグ**SWIFT アセンブラー**を**ここにドロップ**下のボックス、**アセンブル**で図形をステージ**BizTalk パイプライン デザイナ**します。  
 
-7. [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]、] をクリックして**ファイル**、し**すべて保存**します。  
+7. [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]、 をクリックして**ファイル**、し**すべて保存**します。  
 
 8. パイプライン プロジェクトを右クリックし、をクリックし、**ビルド**します。  
 

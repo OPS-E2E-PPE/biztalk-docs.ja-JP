@@ -15,17 +15,17 @@ caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 78ebeb83c16b16edec7ae4535f4b4ade4da061bf
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d8a5b305fbd72861383444836808e765e8313e90
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37014435"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65390408"
 ---
 # <a name="considerations-for-bam-code-maintenance"></a>BAM コードの管理に関する考慮事項
 BAM を使用するアプリケーションのインストルメント化の方法を決定する場合は、要件が変更になる可能性を考慮する必要があります。 [Microsoft.BizTalk.Bam.EventObservation.EventStream](http://msdn.microsoft.com/library/microsoft.biztalk.bam.eventobservation.eventstream.aspx) クラスの 1 つでメソッドを呼び出して監視対象データを書き込む場合、基本的には、アプリケーションに観測モデルをハードコーディングします。 監視対象データを変更する必要がある場合は、アプリケーションをオフラインにして、コードを変更し、アプリケーションを再コンパイルして、更新したアプリケーションを再展開する必要があります。  
   
- または、 [Microsoft.BizTalk.Bam.EventObservation.BAMInterceptor](http://msdn.microsoft.com/library/microsoft.biztalk.bam.eventobservation.baminterceptor.aspx) クラスでメソッドを呼び出すと、アプリケーションをインストルメント化できます。 [Microsoft.BizTalk.Bam.EventObservation.BAMInterceptor](http://msdn.microsoft.com/library/microsoft.biztalk.bam.eventobservation.baminterceptor.aspx) クラスは構成ファイルを参照し、監視対象のイベントとデータを決定します。 [Microsoft.BizTalk.Bam.EventObservation.BAMInterceptor](http://msdn.microsoft.com/library/microsoft.biztalk.bam.eventobservation.baminterceptor.aspx) クラスを使用すると、コードを一度インストルメント化すれば、メタデータを更新することによって監視対象データを変更できるので、アプリケーションをオフラインにする必要はありません。  
+ または、 [Microsoft.BizTalk.Bam.EventObservation.BAMInterceptor](http://msdn.microsoft.com/library/microsoft.biztalk.bam.eventobservation.baminterceptor.aspx) クラスでメソッドを呼び出すと、アプリケーションをインストルメント化できます。 [Microsoft.BizTalk.Bam.EventObservation.BAMInterceptor](http://msdn.microsoft.com/library/microsoft.biztalk.bam.eventobservation.baminterceptor.aspx) クラスは構成ファイルを参照し、監視対象のイベントとデータを決定します。  [Microsoft.BizTalk.Bam.EventObservation.BAMInterceptor](http://msdn.microsoft.com/library/microsoft.biztalk.bam.eventobservation.baminterceptor.aspx) クラスを使用すると、コードを一度インストルメント化すれば、メタデータを更新することによって監視対象データを変更できるので、アプリケーションをオフラインにする必要はありません。  
   
 ## <a name="instrumenting-your-application-by-using-the-eventstream-object"></a>EventStream オブジェクトを使用したアプリケーションのインストルメント化  
  この方法はより簡単で、特定の監視要件がよくわかっている専用アプリケーションをビルドする場合に適しています。 この方法を使用する場合は、次の点を明確にしておく必要があります。  

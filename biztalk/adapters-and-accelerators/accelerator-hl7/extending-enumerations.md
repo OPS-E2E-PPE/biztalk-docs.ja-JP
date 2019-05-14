@@ -15,12 +15,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dc5b91513833b76ba7dc3697f9eee409bf9752bf
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 60e8e5ab2b5072679e9d29f1c13f58c554e41c93
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36987851"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65268058"
 ---
 # <a name="extending-enumerations"></a>列挙の拡張
 HL7 メッセージの本文、受信確認、およびメッセージ本文のスキーマのフィールド、セグメント、およびデータのさまざまな種類の値を確立するための列挙体には、値を追加できます。 ユーザーが作業して、HL7 バージョン用の一般的なテーブル値スキーマ ファイルの特定のテーブル内の値のセットを変更する必要があります (、 **Tablevalues_\<**<em>バージョン</em> **\>.xsd**スキーマ ファイル)。  

@@ -1,5 +1,5 @@
 ---
-title: '手順 1: アダプター サービス開発ウィザードを使用して Web プロジェクトを作成する |Microsoft Docs'
+title: 手順 1:アダプター サービス開発ウィザードを使用して、Web プロジェクトを作成する |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5fb8737f51f9e0b6afe3d61218f69015c1cd5d72
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 121eb5c3c9b0782249ab338a520323b1a2fd6a9e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36984035"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65363346"
 ---
-# <a name="step-1-use-the-adapter-service-development-wizard-to-create-the-web-project"></a>手順 1: アダプター サービス開発ウィザードを使用して Web プロジェクトを作成するには
+# <a name="step-1-use-the-adapter-service-development-wizard-to-create-the-web-project"></a>手順 1:アダプター サービス開発ウィザードを使用して、Web プロジェクトを作成するには
 ![手順 4 の 1](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-1of4.gif "Step_1of4")  
   
  **所要時間:** 10 分  
@@ -27,7 +27,7 @@ ms.locfileid: "36984035"
  この手順では、Visual Studio を使用してプロジェクトを作成し、[!INCLUDE[afsvcdevwizshort](../../includes/afsvcdevwizshort-md.md)]します。 [!INCLUDE[afsvcdevwizshort](../../includes/afsvcdevwizshort-md.md)]アダプター、操作、およびエンドポイントの構成に関する情報を収集し、それからを IIS に配置する Web プロジェクトを生成します。  
   
 ## <a name="prerequisites"></a>前提条件  
- ビルドし、デプロイで説明されている Echo サンプル[チュートリアル 1: エコー アダプターを開発](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-1-develop-the-echo-adapter.md)このチュートリアルを開始する前にします。  
+ ビルドし、デプロイで説明されている Echo サンプル[チュートリアル 1。エコー アダプターを開発](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-1-develop-the-echo-adapter.md)このチュートリアルを開始する前にします。  
   
 ### <a name="to-start-the-adapter-service-development-wizard"></a>アダプター サービス開発ウィザードを開始するには  
   
@@ -117,7 +117,7 @@ ms.locfileid: "36984035"
   
      ![エンドポイント構成](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/3fd5784c-64e5-47c1-9a6f-10f12f77f726.gif "3fd5784c-64e5-47c1-9a6f-10f12f77f726")  
   
-3.  **[次へ]** をクリックします。  
+3.   **[次へ]** をクリックします。  
   
 ### <a name="to-configure-the-binding"></a>バインドを設定する  
   
@@ -130,10 +130,10 @@ ms.locfileid: "36984035"
 4. **概要**ページで、コントラクトと操作をこのプロジェクトで選択を確認し、クリックして**完了**します。 によって作成されたプロジェクト ファイルを含む EchoWeb ソリューションが表示されます、 [!INCLUDE[afsvcdevwizshort](../../includes/afsvcdevwizshort-md.md)]  
   
 ## <a name="what-did-i-just-do"></a>でしただけ何か。  
- この手順では使用して、 [!INCLUDE[afsvcdevwizshort](../../includes/afsvcdevwizshort-md.md)] Web の生成をホストでエコー アダプターの開発には、IIS に発行されると、プロジェクト[チュートリアル 1: エコー アダプターを開発](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-1-develop-the-echo-adapter.md)IIS で処理します。 結果として得られる Web プロジェクトでは、選択した操作にアクセスする Web サービスと WCF のクライアントを許可します。  
+ この手順では使用して、 [!INCLUDE[afsvcdevwizshort](../../includes/afsvcdevwizshort-md.md)] Web の生成をホストでエコー アダプターの開発には、IIS に発行されると、プロジェクト[チュートリアル 1。エコー アダプターを開発](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-1-develop-the-echo-adapter.md)IIS で処理します。 結果として得られる Web プロジェクトでは、選択した操作にアクセスする Web サービスと WCF のクライアントを許可します。  
   
 ## <a name="next-steps"></a>次の手順  
- をビルドし、Web プロジェクトのデプロイに進む[手順 2: Web プロジェクトのデプロイ](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-2-deploy-the-web-project.md)  
+ をビルドし、Web プロジェクトのデプロイに進む[手順 2。Web プロジェクトを展開する](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-2-deploy-the-web-project.md)  
   
 ## <a name="see-also"></a>参照  
- [チュートリアル 1: エコー アダプターを開発する](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-1-develop-the-echo-adapter.md)
+ [チュートリアル 1:エコー アダプターを開発する](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-1-develop-the-echo-adapter.md)

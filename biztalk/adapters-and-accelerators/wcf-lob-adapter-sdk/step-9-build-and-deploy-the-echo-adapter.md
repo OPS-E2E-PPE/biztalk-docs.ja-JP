@@ -1,5 +1,5 @@
 ---
-title: '手順 9: 構築し、エコー アダプターの展開 |Microsoft Docs'
+title: 手順 9:ビルドおよびエコー アダプターの展開 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 58e0bae620c43504091c29ed2b03a33e0c7710c5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 57cd647ebe8d8896a85c5a6a49cce95321da0bdb
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36980507"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65363110"
 ---
-# <a name="step-9-build-and-deploy-the-echo-adapter"></a>手順 9: 構築し、エコー アダプターの展開
+# <a name="step-9-build-and-deploy-the-echo-adapter"></a>手順 9:ビルドおよびエコー アダプターの展開
 ![手順 9 の 9](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-9of9.gif "Step_9of9")  
   
  **所要時間:** 10 分  
@@ -37,7 +37,7 @@ ms.locfileid: "36980507"
 ## <a name="prerequisites"></a>前提条件  
  この手順を正常に完了するには、厳密な名前のファイルと、GAC をよく理解します。 基本的な理解[!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)]構成は役立ちますが、必須ではありません。  
   
-### <a name="to-assign-a-strong-name-to-your-assembly"></a>アセンブリに厳密な名前を割り当てるには  
+### <a name="to-assign-a-strong-name-to-your-assembly"></a>アセンブリに厳密な名前を割り当てる  
   
 1.  ソリューション エクスプ ローラーで右クリックし、 **EchoAdapter**プロジェクトをクリックして**プロパティ**します。  
   
@@ -61,13 +61,13 @@ ms.locfileid: "36980507"
   
 3.  次のコマンドを入力します。  
   
-     **gacutil.exe/if"\<**  *assembly\Microsoft.Adapters.Samples.EchoV2.dll へのパス*  **\>"**  
+     **gacutil.exe /if "\<** *path to assembly\Microsoft.Adapters.Samples.EchoV2.dll* **\>"**  
   
      これにより、アセンブリが GAC にインストールされて、同じアセンブリ名を持つ既存のアセンブリは上書きされます。  
   
 ### <a name="to-register-the-echo-adapter-with-windows-communication-foundation"></a>Windows Communication Foundation でエコー アダプターを登録するには  
   
-1. Microsoft .NET 構成フォルダ内にある machine.config ファイルを編集します。 これを行うには、次のようにクリックします**開始**、 をクリック**実行**、型**メモ帳\<Windows インストール パス\>\Microsoft.NET\Framework\\< バージョン\>。\CONFIG\machine.config**、 をクリックし、 **OK**します。  
+1. Microsoft .NET の構成フォルダーにある machine.config ファイルを編集します。 これを行うには、次のようにクリックします**開始**、 をクリック**実行**、型**メモ帳\<Windows インストール パス\>\Microsoft.NET\Framework\\< バージョン\>。\CONFIG\machine.config**、 をクリックし、 **OK**します。  
   
 2. Machine.config ファイルを更新します。 Machine.config に system.serviceModel セクションが含まれていない場合は、終了タグをルートする前に、構成ファイルの末尾に次のセクションを追加します。  
   
@@ -119,8 +119,8 @@ ms.locfileid: "36980507"
  エコー アダプターのチュートリアルの最後の手順でしてエコー アダプターに厳密な名前を追加、構築された、アダプターを展開し、アダプター情報を含めるように Machine.config の変更します。 この時点では、エコー アダプターは、アプリケーションを使用できるようにします。  
   
 ## <a name="next-steps"></a>次の手順  
- このチュートリアルが完了しました。 .NET プロジェクトでエコー アダプターの機能をテストする場合は、「[チュートリアル 2: .NET からエコー アダプターを使用](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-2-consume-the-echo-adapter-from-net.md)します。  
+ このチュートリアルが完了しました。 .NET プロジェクトでエコー アダプターの機能をテストする場合は、「[チュートリアル 2.NET からエコー アダプターを使用](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-2-consume-the-echo-adapter-from-net.md)します。  
   
 ## <a name="see-also"></a>参照  
- [手順 8: エコー アダプターの同期受信ハンドラーを実装する.](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-8-implement-the-synchronous-inbound-handler-for-the-echo-adapter.md)   
+ [手順 8:エコー アダプターの同期受信ハンドラーを実装します。](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-8-implement-the-synchronous-inbound-handler-for-the-echo-adapter.md)   
  [チュートリアル 2: .NET からエコー アダプターを使用する](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-2-consume-the-echo-adapter-from-net.md)

@@ -1,5 +1,5 @@
 ---
-title: '手順 4: セキュリティで保護を有効にする IIS のレイヤーをソケット |Microsoft Docs'
+title: 手順 4:IIS 内のレイヤーをセキュリティで保護を有効にするソケット |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,18 +17,18 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: be53660b5632450d8fa8cb38480c9b728d460bad
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d12914621e8b9200f3f86e486caee964473f01d3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37009163"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65280911"
 ---
-# <a name="step-4-enabling-secure-sockets-layer-in-iis"></a>手順 4: IIS でレイヤーをソケット セキュリティで保護を有効にします。
-SSL (Secure Sockets Layer) は、クライアントとサーバーとの間の通信チャネルをセキュリティで保護するためのプロトコルです。 Contoso 組織と Fabrikam 組織は、Microsoft® インターネット インフォメーション サービス (IIS) 7.5 または 7.0 で SSL を有効にすることにより、すべてのデータ転送に認証と暗号化を使用して通信を行います。 ここでは、IIS 7.5 または 7.0 で SSL を有効にする手順について学びます。  
+# <a name="step-4-enabling-secure-sockets-layer-in-iis"></a>手順 4:Sockets Layer を IIS でのセキュリティで保護を有効にします。
+セキュリティで保護された Sockets Layer (SSL) は、クライアントとサーバー間の通信チャネルをセキュリティで保護するためのプロトコルです。 Microsoft® インターネット インフォメーション サービス (IIS) 7.5 または 7.0 の SSL を有効にすると、Contoso と Fabrikam 組織は、すべてのデータ転送の認証と暗号化を使用して通信します。 この手順では、IIS 7.5 または 7.0 で SSL を有効にする方法について説明します。  
   
 > [!NOTE]
->  Contoso のコンピューターと Fabrikam のコンピューターの両方でこの手順を実行する必要があります。  
+>  Contoso と Fabrikam の両方のコンピューターでこの手順を実行する必要があります。  
   
 ### <a name="to-prepare-a-new-server-certificate"></a>新しいサーバー証明書を準備するには  
   
@@ -74,7 +74,7 @@ SSL (Secure Sockets Layer) は、クライアントとサーバーとの間の�
 5.  **証明書の要求または更新要求を送信**] ページで [**ファイルを挿入する参照**します。  
   
     > [!NOTE]
-    >  メモ帳または別のテキスト エディターでファイル C:\certreq.txt を開き、リンクをクリックすると、セキュリティ エラーが発生した場合、ファイルの内容をコピーおよびでその情報を貼り付けて、**保存された要求**ボックスをクリックして**送信**します。 これで、手順 10. に進めます。  
+    >  メモ帳または別のテキスト エディターでファイル C:\certreq.txt を開き、リンクをクリックすると、セキュリティ エラーが発生した場合、ファイルの内容をコピーおよびでその情報を貼り付けて、**保存された要求**ボックスをクリックして**送信**します。 手順 10 に移動することができます、します。  
   
 6.  をクリックして**参照**を開く、 **Choose File**  ダイアログ ボックス。  
   
@@ -92,7 +92,7 @@ SSL (Secure Sockets Layer) は、クライアントとサーバーとの間の�
   
 13. クリックして**閉じます**を閉じる、**ダウンロードの完了** ダイアログ ボックス。  
   
-### <a name="to-prepare-a-new-server-certificate-for-iis"></a>IIS で新しいサーバー証明書を準備するには  
+### <a name="to-prepare-a-new-server-certificate-for-iis"></a>IIS の新しいサーバー証明書を準備するには  
   
 1.  クリックして**開始**、 をポイント**管理ツール**、順にクリックします**インターネット インフォメーション サービス (IIS) マネージャー**します。  
   
@@ -104,7 +104,7 @@ SSL (Secure Sockets Layer) は、クライアントとサーバーとの間の�
   
 5.  ファイル名 ダイアログ ボックスで、テキスト ボックスで C:\certreq.txt を指定する をクリックして**完了**します。  
   
-### <a name="to-generate-a-new-server-certificate-for-iis"></a>IIS で新しいサーバー証明書を生成するには  
+### <a name="to-generate-a-new-server-certificate-for-iis"></a>IIS の新しいサーバー証明書を生成するには  
   
 1.  Internet Explorer を http://<contoso_machine>/CertSrv を開きます。  
   
@@ -125,7 +125,7 @@ SSL (Secure Sockets Layer) は、クライアントとサーバーとの間の�
   
 8.  名前を付けて保存 ダイアログ ボックスで、保存する証明書を\<ドライブ\>: \Certs\SSLCert.cer をクリック**保存**します。  
   
-### <a name="to-import-the-server-certificate-into-iis"></a>サーバー証明書を IIS にインポートするには  
+### <a name="to-import-the-server-certificate-into-iis"></a>IIS にサーバー証明書をインポートするには  
   
 1.  クリックして**開始**、 をポイント**管理ツール**、順にクリックします**インターネット インフォメーション サービス (IIS) マネージャー**します。  
   
@@ -141,7 +141,7 @@ SSL (Secure Sockets Layer) は、クライアントとサーバーとの間の�
   
 3.  [サイト バインド] ダイアログ ボックス**追加**します。 サイト バインドの追加 ダイアログ ボックスで、次のように選択します**https**型ドロップダウンから、次のように選択します。 **ContosoSSLCert** SSL 証明書ドロップダウンから、次のようにクリックします。 **OK**、 をクリック**閉じる。**.  
   
-### <a name="to-import-the-server-certificate-into-iis"></a>サーバー証明書を IIS にインポートするには  
+### <a name="to-import-the-server-certificate-into-iis"></a>IIS にサーバー証明書をインポートするには  
   
 1. クリックして**開始**、 をポイント**管理ツール**、順にクリックします**インターネット インフォメーション サービス (IIS) マネージャー**します。  
   

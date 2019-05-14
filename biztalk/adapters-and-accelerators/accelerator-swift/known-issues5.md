@@ -16,12 +16,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f7c164e8c0d6713389fd317c8839d72770f07c56
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8f20477988a3a4f60522a7c05270e72ac525dead
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37000555"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377307"
 ---
 # <a name="known-issues"></a>既知の問題
 このセクションには、Microsoft によるエラーの回避に役立つ有用な情報が含まれています。[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]します。 既知の問題は次の分野に分かれています。  
@@ -29,7 +29,7 @@ ms.locfileid: "37000555"
 ## <a name="message-repair-and-new-submission"></a>Message Repair and New Submission
 
 #### <a name="printing-of-a-repair-document-is-recorded-in-the-history-log-even-if-canceled"></a>取り消された場合でも、修復ドキュメントの印刷が履歴ログに記録されます。  
- 修復受信トレイでドキュメントの印刷コマンドを実行して、印刷をキャンセルして、印刷は履歴ログにも入力されます。 これはで修復するドキュメントを開くときに発生します。 その[!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]フォームで、ファイル] メニューの [印刷] をクリックし、[印刷] ダイアログ ボックスで [キャンセル] をクリックします。 履歴ログのエントリを無視する必要があります。  
+ 修復受信トレイでドキュメントの印刷コマンドを実行して、印刷をキャンセルして、印刷は履歴ログにも入力されます。 これはで修復するドキュメントを開くときに発生します。 その[!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]フォームで、ファイル メニューの [印刷] をクリックし、[印刷] ダイアログ ボックスで [キャンセル] をクリックします。 履歴ログのエントリを無視する必要があります。  
   
 #### <a name="a-duplicate-signature-can-cause-an-xlangs-error-message"></a>重複する署名は、xlang/s エラー メッセージを表示できます。  
  検証機能の修理会社として、同じ証明書を使用するときに[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]メッセージを中断し、重複する署名は許可されていないエラー メッセージのことを示します。 ただし、[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]も xlang/s サービスが中断されたことを示す、xlang/s のイベント ソースを別のエラー メッセージが生成されます。 このメッセージは無視してかまいません。  
@@ -38,7 +38,7 @@ ms.locfileid: "37000555"
  XML ファイルを開く場合は、一般に大きい XML ファイルを修復しようとすると、システムのパフォーマンスが大幅に低下、[!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]メッセージの種類のフォームです。 メモリ消費量を増やすことができます、CPU 消費率が低下して、プロセスが十分な記憶域が、操作を完了したことを示すエラーで失敗します。  
   
 #### <a name="the-last-signature-used-to-sign-a-message-successfully-will-be-authenticated-by-authenticate-signatures"></a>署名の認証によってメッセージを正常に署名に使用する最後の署名を認証します。  
- 認証の署名] ボタンをクリックして、[!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]フォームにのみかどうか、フォームが署名済みステージの署名を検証します。 前のステージでは、署名を検証、それ以外の場合、1 つを使用する必要がある場合と、次のエラーを投稿します。  
+ 認証の署名 ボタンをクリックして、[!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]フォームにのみかどうか、フォームが署名済みステージの署名を検証します。 前のステージでは、署名を検証、それ以外の場合、1 つを使用する必要がある場合と、次のエラーを投稿します。  
   
  部門 < department_name > で < stage_name > ロールの署名が正しく構成されていません。  
   
@@ -59,7 +59,7 @@ ms.locfileid: "37000555"
  メッセージ修復オーケストレーションは、修正された未解析メッセージをメッセージ ボックスにルーティング、ときに設定されます、 [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]_MRSRDepartment プロパティに空の文字列と、昇格させることです。 送信ポートはこのプロパティでサブスクライブできません。  
   
 #### <a name="cannot-save-a-department-if-the-sso-service-has-been-stopped"></a>SSO サービスが停止された場合、部署を保存できません。  
- プライマリ SSO サーバーことを示すエラーを受信するが、SSO サービスが停止したときに、部門を追加しようとすると場合、 \<machinename\>できませんでした。 SSO が構成されていること、およびそのサーバーで SSO サービスが実行されていることを確認してください。  
+ プライマリ SSO サーバーことを示すエラーを受信するが、SSO サービスが停止したときに、部門を追加しようとすると場合、 \<machinename\>できませんでした。 SSO が構成されていることと、そのサーバーで SSO サービスが実行されていることを確認します。  
   
 #### <a name="a-department-name-must-not-contain-the-character-"></a>部門名には文字が含まれていない必要があります"~"  
  文字を含む部署名"~"A4SWIFT データベースに問題が発生します。  
@@ -67,7 +67,7 @@ ms.locfileid: "37000555"
 #### <a name="signing-infopath-forms"></a>Infopath フォームの署名  
  InfoPath フォームの署名は、手動で行う必要があります。  
   
-## <a name="security"></a>Security
+## <a name="security"></a>セキュリティ
 
 #### <a name="mixing-trusted-and-untrusted-hosts-can-enable-spoofing"></a>信頼と信頼されていないホストの混在できるようにスプーフィング  
 
@@ -85,7 +85,7 @@ ms.locfileid: "37000555"
  詳細については、BizTalk Server ヘルプの「ルール エンジンの構成およびチューニング パラメーター」トピックを参照してください。  
   
 #### <a name="building-a-pipeline-project-may-result-in-a-large-number-of-warnings"></a>パイプライン プロジェクトのビルドの警告の数が多い可能性があります。  
- 送信パイプラインまたは受信パイプラインに SWIFT 逆アセンブラーに SWIFT アセンブラーを追加し、これらのパイプラインを含むパイプライン プロジェクトをビルドすると、一連のパイプライン コンポーネントに関連する警告があります。 これらの警告は、Visual Studio が依存関係を見つけられなかったことを示します。 次のように、[参照] フォルダーで SWIFTAsm または SWIFTDasm アセンブリのローカル コピー] プロパティを変更することでこれらの警告につながる条件を修正できます。  
+ 送信パイプラインまたは受信パイプラインに SWIFT 逆アセンブラーに SWIFT アセンブラーを追加し、これらのパイプラインを含むパイプライン プロジェクトをビルドすると、一連のパイプライン コンポーネントに関連する警告があります。 これらの警告は、Visual Studio が依存関係を見つけられなかったことを示します。 次のように、参照 フォルダーで SWIFTAsm または SWIFTDasm アセンブリのローカル コピー プロパティを変更することでこれらの警告につながる条件を修正できます。  
   
 1.  ソリューション エクスプ ローラーの Visual Studio で、パイプライン プロジェクトを展開してから、**参照**ノード。  
   

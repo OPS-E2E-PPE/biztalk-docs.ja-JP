@@ -1,5 +1,5 @@
 ---
-title: 'WCF アダプターに関する FAQ: メッセージ フローとマッピング |Microsoft Docs'
+title: WCF アダプターに関する FAQ:メッセージ フローとマッピング |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ae55b6447923e9618a3e4776284659d48a2b25a9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5d80e16fc03ea7ed60f68cbacc9fb4f24b395b9e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36968179"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65393575"
 ---
-# <a name="wcf-adapter-faq-message-flow-and-mapping"></a>WCF アダプターに関する FAQ: メッセージ フローとマッピング
+# <a name="wcf-adapter-faq-message-flow-and-mapping"></a>WCF アダプターに関する FAQ:メッセージ フローとマッピング
 ## <a name="what-is-the-message-flow-within-the-wcf-and-biztalk-systems"></a>WCF と BizTalk システム内のメッセージ フローとはどのようなものですか。  
  次に、受信 WCF メッセージから BizTalk Server へのフローについて説明します。  
   
@@ -27,7 +27,7 @@ ms.locfileid: "36968179"
   
 2. WCF ランタイムはサービスのチャネル スタックとそのチャネル リスナーをインスタンス化します。 チャネル スタックは異なる処理タスクを処理する一連のステージです。 各チャネル スタックは少なくとも 1 つのトランスポート チャネル、多くの場合は 1 つのメッセージ エンコーダー、および 0 個以上のプロトコル チャネルから構成されます。 トランスポート チャネルでは受信メッセージ ストリームを受信時に読み取ります。 トランスポート チャネルではエンコーダーを呼び出してメッセージを解釈し、WCF メッセージ オブジェクトを生成します。 この時点で、各プロトコル チャネルでは順に WCF メッセージを操作する機会があります。  
   
-3. WCF メッセージはリスナーにより受信され、構成済みの WCF チャネル スタックを介して転送され、適切なサービス インスタンスにディスパッチされます。 この時点で、WCF メッセージは BizTalk メッセージに変換 (マップ) されます。 簡単に説明すると、WCF メッセージ ヘッダーは BizTalk メッセージ コンテキストに書き込まれ、WCF メッセージ本文は BizTalk メッセージのボディ部に書き込まれます。 マッピングの制御、WCF メッセージのどの部分が BizTalk メッセージ本文: エンベロープ、本文、またはサブ要素です。  
+3. WCF メッセージはリスナーにより受信され、構成済みの WCF チャネル スタックを介して転送され、適切なサービス インスタンスにディスパッチされます。 この時点で、WCF メッセージは BizTalk メッセージに変換 (マップ) されます。 簡単に説明すると、WCF メッセージ ヘッダーは BizTalk メッセージ コンテキストに書き込まれ、WCF メッセージ本文は BizTalk メッセージのボディ部に書き込まれます。 マッピングは、WCF メッセージのどの部分が BizTalk メッセージ本文を制御します。エンベロープ、本文、またはサブ要素です。  
   
 4. 受信場所に構成されたパイプライン コンポーネントで BizTalk メッセージが処理されます。  
   
@@ -62,7 +62,7 @@ ms.locfileid: "36968179"
   
   通信は双方向になることがあるため、WCF アダプターを使用すると、メッセージ交換の送信と受信の両方向に特定の変換またはマッピングを構成できます。 この構成は、BizTalk Server 内の受信場所と送信ポートの両方に行うことができます。  
   
-  BizTalk WCF アダプターでは、これら 2 つのメッセージ構造間の実行時変換について、さまざまな組み合わせをサポートしています。 マッピングはによって制御されます、**メッセージ** タブで、**トランスポートのプロパティ**WCF アダプターのダイアログ ボックス。 たとえば、最も基本的な変換 (既定値) は、受信 WCF メッセージの本文が BizTalk メッセージの本文になるときです。 マップ モードの詳細については、[ http://go.microsoft.com/fwlink/?LinkID=119792](http://go.microsoft.com/fwlink/?LinkID=119792)を参照してください。  
+  BizTalk WCF アダプターでは、これら 2 つのメッセージ構造間の実行時変換について、さまざまな組み合わせをサポートしています。 マッピングはによって制御されます、**メッセージ** タブで、**トランスポートのプロパティ**WCF アダプターのダイアログ ボックス。 たとえば、最も基本的な変換 (既定値) は、受信 WCF メッセージの本文が BizTalk メッセージの本文になるときです。 マップ モードの詳細については、次を参照してください。 [ http://go.microsoft.com/fwlink/?LinkID=119792](http://go.microsoft.com/fwlink/?LinkID=119792)します。  
   
 ## <a name="how-can-you-preserve-the-complete-incoming-wcf-message-inside-the-biztalk-message"></a>受信 WCF メッセージ全体を BizTalk メッセージ内に保存する方法  
  受信 BizTalk メッセージ本文オプションの 1 つ、**エンベロープ**オプション。 このオプションを選択すると、soap:Envelope 要素内に含まれている SOAP メッセージ全体が受信 BizTalk メッセージ本文に入ります。 生成される BizTalk メッセージにはエンベロープ タグ、すべてのヘッダー、および本文が含まれます。  

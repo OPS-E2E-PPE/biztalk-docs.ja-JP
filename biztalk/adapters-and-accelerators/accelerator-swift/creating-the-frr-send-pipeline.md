@@ -16,21 +16,21 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d16003e489944016a7b840b870d33d8ebcf671d5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 971fde4a2f0f743574e60911dcb091a325efd079
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37005747"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65378342"
 ---
 # <a name="creating-the-frr-send-pipeline"></a>FRR 送信パイプラインを作成します。
 FIN Response Reconciliation を実行するには、SWIFT アセンブラーに加え、SWIFTAsmFrrMQSeriesHelper パイプライン コンポーネントを含む送信パイプラインを作成する必要があります。  
 
- **概要**  
+ **まとめ**  
 
  次の段階では、送信パイプラインを作成します。  
 
-|段階|コンポーネント|  
+|ステージ|コンポーネント|  
 |-----------|---------------|  
 |アセンブル ステージ|SWIFT アセンブラー|  
 |エンコード ステージ|SWIFT Frr MQSeries の送信コンポーネント|  
@@ -43,7 +43,7 @@ FIN Response Reconciliation を実行するには、SWIFT アセンブラーに�
 
 3. **名前**など、受信パイプラインの名前を入力ボックスに、 **FRRSendPipeline.btp**します。 **[追加]** をクリックします。  
 
-4. [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]、] をクリックして**ビュー**し**ツールボックス**します。  
+4. [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]、 をクリックして**ビュー**し**ツールボックス**します。  
 
 5. BizTalk パイプライン コンポーネントのツールボックスからドラッグ**SWIFT アセンブラー**を**ここにドロップ**下のボックス、**アセンブル**で図形をステージ**BizTalk パイプラインデザイナー**します。  
 

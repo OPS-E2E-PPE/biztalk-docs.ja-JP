@@ -16,17 +16,17 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0904d6d427fb6c04ae911edf23edb653ba9cb734
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a3aa99d4bbf131587a48b5b0f417c4c08c142107
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37003651"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65283709"
 ---
 # <a name="extending-btarn-with-a-new-pip"></a>新しい PIP による BTARN の拡張
 このトピックでは、Microsoft を拡張する方法を説明します。[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]新しいパートナー インターフェイス Process (PIP) スキーマを使用します。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] を拡張すると、RosettaNet PIP が BTARN セットアップ プログラムによってインストールされるどのスキーマとも関連付けられていない場合に、その PIP に基づくスキーマを追加できるようになります。  
 
- 新しい PIP で [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] を拡張するには、新しいスキーマを独自のアセンブリで展開します。 また、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] RNPIP アセンブリ内に展開された既存のスキーマを変更することもできます。 詳細については、[Rnpip の既存の PIP 変更](../../adapters-and-accelerators/accelerator-rosettanet/modifying-an-existing-pip-in-rnpips.md)を参照してください。  
+ 新しい PIP で [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] を拡張するには、新しいスキーマを独自のアセンブリで展開します。 また、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] RNPIP アセンブリ内に展開された既存のスキーマを変更することもできます。 詳細については、次を参照してください。 [Rnpip の既存の PIP 変更](../../adapters-and-accelerators/accelerator-rosettanet/modifying-an-existing-pip-in-rnpips.md)します。  
 
 ### <a name="to-extend-btarn-with-a-new-pip"></a>BTARN を新しい PIP で拡張するには  
 
@@ -65,7 +65,7 @@ ms.locfileid: "37003651"
 
 16. **既存項目の追加** ダイアログ ボックスに移動\<*ドライブ*\>: \Program Files\\Microsoft の BizTalk 2013 Accelerator for rosettanet \sdk\schemas を選択します**xml.xsd**、 をクリックし、**追加**します。  
 
-17. RNPIP の拡張に使用する PIP を RosettaNet.org からダウンロードします。詳細については、[新しい Partner Interface Process の組み込み](../../adapters-and-accelerators/accelerator-rosettanet/incorporating-a-new-partner-interface-process.md)を参照してください。  
+17. RNPIP の拡張に使用する PIP を RosettaNet.org からダウンロードします。詳細については、次を参照してください。[新しい Partner Interface Process の組み込み](../../adapters-and-accelerators/accelerator-rosettanet/incorporating-a-new-partner-interface-process.md)します。  
 
 18. ソリューション エクスプ ローラーでプロジェクト名を展開し、右クリックして**参照**、 をクリックし、**参照の追加**します。  
 
@@ -108,7 +108,7 @@ ms.locfileid: "37003651"
 
 31. プロジェクト名を右クリックし、**デプロイ**します。  
 
-32. をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**Microsoft** [!INCLUDE[btsBizTalkServer2006r3ui](../../includes/btsbiztalkserver2006r3ui-md.md)]、順にクリックします**BizTalk Server 管理**します。  
+32. **[スタート]** ボタンをクリックして、 **[すべてのプログラム]**、 **Microsoft** [!INCLUDE[btsBizTalkServer2006r3ui](../../includes/btsbiztalkserver2006r3ui-md.md)]の順にポイントし、 **[BizTalk Server 管理]** をクリックします。  
 
 33. BizTalk 管理コンソールで  **Microsoft** [!INCLUDE[btsBizTalkServer2006r3ui](../../includes/btsbiztalkserver2006r3ui-md.md)] **(Local)**、順に展開**ホスト**します。 [**ホスト**、] をクリックして**BizTalkServerApplication**します。  
 

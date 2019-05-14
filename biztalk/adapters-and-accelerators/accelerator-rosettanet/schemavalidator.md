@@ -17,24 +17,24 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0bf31f22cc2b79e6dded22e04500655110f242ee
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2be96f3d87cb0744ca4e823942f7265bf6b3fa3e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36973875"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65281976"
 ---
 # <a name="schemavalidator"></a>SchemaValidator
-メッセージ インスタンスに関連した問題のトラブルシューティングを行うには、SchemaValidator ユーティリティを使用します。 検証に失敗したメッセージを受信した場合は、SchemaValidator ユーティリティを実行して、失敗の原因を特定できます。  
+メッセージ インスタンスに関する問題のトラブルシューティングを行うには、SchemaValidator ユーティリティを使用します。 検証に失敗したメッセージを受信する場合は、エラーの原因を特定、SchemaValidator ユーティリティを実行できます。  
   
- このユーティリティは、使用中のアセンブリにスキーマの .dll ファイルが含まれているが、スキーマの .xsd ファイルを持っていない場合に使用します。 SchemaValidator ユーティリティでは、スキーマの .dll ファイルを使用して検証できます。  
+ スキーマの .dll ファイルを含むアセンブリを使用している場合、このユーティリティを使用して、スキーマの .xsd ファイルがありません。 SchemaValidator ユーティリティを使用して、スキーマの .dll ファイルを使用して検証できます。  
   
 ## <a name="location-in-sdk"></a>SDK でのパス  
  \<*drive*\>\Program Files (x86)\Microsoft BizTalk \<version\> Accelerator for RosettaNet\SDK\SchemaValidator  
   
-## <a name="building-and-running-schemavalidator"></a>SchemaValidator のビルドと実行  
+## <a name="building-and-running-schemavalidator"></a>SchemaValidator のビルドと  
   
-#### <a name="to-build-the-schemavalidator-utility"></a>SchemaValidator ユーティリティをビルドするには  
+#### <a name="to-build-the-schemavalidator-utility"></a>SchemaValidator ユーティリティを構築するには  
   
 1. コマンド プロンプトを開きます。  
   
@@ -54,13 +54,13 @@ ms.locfileid: "36973875"
   
 9. クリックして**SchemaValidator.cs**します。  
   
-10. `Main` の次の既存のコード行に適切なメッセージ インスタンス パスを入力します。  
+10. 次の既存のコードの行に適切なメッセージ インスタンス パスを入力`Main`:  
   
     ```  
     const string xmlInstancePath = @"..\..\Sample3A4.xml";  
     ```  
   
-11. `Main` の次の既存のコード行を RNPIP アセンブリへの参照に置き換えて、適切なスキーマを選択します。  
+11. 次の既存のコードの行を置き換えます`Main`Rnpip アセンブリ、および選択し、適切なスキーマへの参照。  
   
     ```  
     _3A4_MS_V02_02_PurchaseOrderRequest BTSSchema = new _3A4_MS_V02_02_PurchaseOrderRequest();  
@@ -70,15 +70,15 @@ ms.locfileid: "36973875"
   
 13. メッセージ インスタンスを変更するのには削除して、テストする、 \< \!DOCTYPE.\>タグは、XML インスタンスのヘッダーから DTD ファイルを指定します。  
   
-14. メッセージ インスタンスのルート ノードに、検証に使用するスキーマの XML 名前空間を追加します。  
+14. メッセージ インスタンスのルート ノードに対して検証するスキーマの XML 名前空間を追加します。  
   
     > [!NOTE]
     >  SchemaValidator ユーティリティによる検証準備が整ったスキーマの例は、Sample3A4.xml を参照してください\<*ドライブ*\>\Program Files (x86) \Microsoft BizTalk\<バージョン\>。Accelerator for rosettanet \sdk\schemavalidator します。  
   
-15. [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]、] をクリックして**SchemaValidator.cs**とユーティリティを実行するには、ctrl キーと f5 キーを押します。  
+15. [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]、 をクリックして**SchemaValidator.cs**とユーティリティを実行するには、ctrl キーと f5 キーを押します。  
   
 ## <a name="remarks"></a>コメント  
- [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] SDK には SchemaValidator のコードが含まれているので、SchemaValidator にロジックを追加できます。 たとえば、SchemaValidator をコマンドライン ユーティリティにすることができます。  
+ [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] SDK には SchemaValidator のコードが含まれています、ロジックは、ユーティリティを追加することができます。 たとえば、行うことができますが、コマンド ライン ユーティリティ。  
   
 ## <a name="see-also"></a>参照  
  [ユーティリティ](../../adapters-and-accelerators/accelerator-rosettanet/utilities1.md)

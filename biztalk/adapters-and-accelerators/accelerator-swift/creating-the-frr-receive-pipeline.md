@@ -16,17 +16,17 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bbf4e735019c5399e1b7f1648f3adbcffe18fed2
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f82aef718422dc00c80d9f22343873780380a801
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36970803"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65378319"
 ---
 # <a name="creating-the-frr-receive-pipeline"></a>作成、FRR 受信パイプライン
 FIN Response Reconciliation を実行するには、SWIFT FRR デコーダーと SWIFT 逆アセンブラーに加え、SWIFT FRR CorrelationSet 競合回避モジュールのパイプライン コンポーネントを含む受信パイプラインを作成する必要があります。  
 
- **概要**  
+ **まとめ**  
 
  次のステージ/プロパティを持つ受信パイプラインを作成します。  
 
@@ -43,14 +43,14 @@ FIN Response Reconciliation を実行するには、SWIFT FRR デコーダーと
 
 1. ソリューション エクスプ ローラーの Visual Studio でプロジェクトを含むを右クリックし、[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]パイプラインが指す**追加**、順にクリックします**新しい項目の**します。  
 
-2. [新しい項目の追加] ダイアログ ボックスで、**パイプライン ファイル**カテゴリ] ウィンドウで選択し**受信パイプライン**テンプレート] ペインでします。  
+2. 新しい項目の追加 ダイアログ ボックスで、**パイプライン ファイル**カテゴリ ウィンドウで選択し**受信パイプライン**テンプレート ペインでします。  
 
 3. **名前**など、受信パイプラインの名前を入力ボックスに、 **FRRReceivePipeline.btp**します。 **[追加]** をクリックします。  
 
    > [!NOTE]
    >  手順 4 を実行する前に追加する必要があります、 [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] 」の説明に従って、FRR がツールボックスにコンポーネントをパイプライン[をツールボックスに SWIFT パイプライン コンポーネントを追加する](../../adapters-and-accelerators/accelerator-swift/adding-swift-pipeline-components-to-the-toolbox.md)します。  
 
-4. [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]、] をクリックして**ビュー**し**ツールボックス**します。  
+4. [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]、 をクリックして**ビュー**し**ツールボックス**します。  
 
 5. BizTalk パイプライン コンポーネントのツールボックス ウィンドウからドラッグ、 **SWIFT 逆アセンブラー**を**ここにドロップ**下のボックス、**逆アセンブル**パイプライン デザイナーで図形をステージングします。  
 
@@ -60,4 +60,4 @@ FIN Response Reconciliation を実行するには、SWIFT FRR デコーダーと
 
 8. BizTalk パイプライン コンポーネントのツールボックス ウィンドウからドラッグ**SWIFT FRR 相関設定リゾルバー**を**ここにドロップ**下のボックス、**パーティの解決**パイプライン内の図形をステージデザイナー。  
 
-9. [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]、] をクリックして**ファイル**、] をクリックし、**すべて保存**します。
+9. [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]、 をクリックして**ファイル**、 をクリックし、**すべて保存**します。

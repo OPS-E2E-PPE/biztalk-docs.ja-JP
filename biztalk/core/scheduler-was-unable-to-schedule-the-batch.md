@@ -12,14 +12,14 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bbd425c8f7faacaa38ac11375905f701f597faf6
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 91a10ff141205e534f43bb437343408aed5fa386
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36984403"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65308022"
 ---
-# <a name="scheduler-was-unable-to-schedule-the-batch"></a>スケジューラはバッチをスケジュールできませんでした
+# <a name="scheduler-was-unable-to-schedule-the-batch"></a>スケジューラはバッチをスケジュールできませんでした。
 ## <a name="details"></a>詳細  
 
 |                 |                                                                                        |
@@ -30,24 +30,24 @@ ms.locfileid: "36984403"
 |  イベント ソース   | [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI |
 |    コンポーネント    |                                    バッチ処理エンジン                                     |
 |  シンボル名  |                                           -                                            |
-|  メッセージ テキスト   |                       スケジューラはバッチをスケジュールできませんでした                       |
+|  メッセージ テキスト   |                       スケジューラはバッチをスケジュールできませんでした。                       |
 
 ## <a name="explanation"></a>説明  
- このエラーは、スケジューラが次回のバッチ リリースを特定できなかったことを示します。  
+ このエラーは、スケジューラはバッチのリリースの次の出現箇所を特定できませんでしたを示します。  
 
 ## <a name="user-action"></a>ユーザーの操作  
  このエラーを解決するには、バッチ リリース スケジュールが有効になっていることを確認します。  
 
-1. クリックして**開始**、] をクリックして**すべてのプログラム**、] をクリックして[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリックします**BizTalk Server 管理**します。  
+1. クリックして**開始**、 をクリックして**すべてのプログラム**、 をクリックして[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリックします**BizTalk Server 管理**します。  
 
-2. [コンソール ルートで [ [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]、展開**BizTalk グループ**、] をクリック**パーティ**します。  
+2. コンソール ルートで  [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]、展開**BizTalk グループ**、 をクリック**パーティ**します。  
 
-3. 適切なパーティを右クリックします。  
+3. 正しいパーティを右クリックします。  
 
 4. **[プロパティ]** をクリックします。  
 
-5. [*パーティ名*]**パーティ プロパティ**] ダイアログ ボックスで、左側のウィンドウでクリックして**送信ポート**します。  
+5. [*パーティ名*]**パーティ プロパティ** ダイアログ ボックスで、左側のウィンドウでクリックして**送信ポート**します。  
 
 6. 送信ポート名を入力、**送信ポート**一覧。  
 
-7. [**OK**] をクリックします。
+7. **[OK]** をクリックします。

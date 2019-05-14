@@ -1,5 +1,5 @@
 ---
-title: JD Edwards EnterpriseOne アダプターのトラブルシューティング |Microsoft ドキュメント
+title: JD Edwards EnterpriseOne アダプターのトラブルシューティング |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,26 +12,26 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: eac716a7567930509ebfd310cdaf9874286b349c
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: 1d6ba3fdb8789f7d258291aee05d9e7b481e905a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
-ms.locfileid: "24013129"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65306391"
 ---
 # <a name="troubleshooting-the-adapter"></a>アダプターのトラブルシューティング
-このトピックでは、Microsoft BizTalk Adapter for JD Edwards EnterpriseOne の使用中に発生する可能性がある問題の特定と解決に役立つ情報を提供します。  
+このトピックでには、特定し、JD Edwards EnterpriseOne の Microsoft BizTalk Adapter の使用中に発生する可能性がある問題を解決するのに役立つ情報が含まれています。  
   
-## <a name="cannot-use-wildcards-in-send-port-properties"></a>送信ポートのプロパティにワイルドカードを使用できない  
- Adapter for JD Edwards Enterprise One では、以下の送信ポート プロパティ フィールドにワイルドカードを使用できません。  
+## <a name="cannot-use-wildcards-in-send-port-properties"></a>送信ポートのプロパティでワイルドカードを使用することはできません。  
+ JD Edwards Enterprise One 用のアダプターでは、次の送信ポート プロパティ フィールドにワイルドカードを使用することはできません。  
   
 -   Username  
   
 -   JDE 環境  
   
--   Host  
+-   ホスト  
   
--   ポート  
+-   Port  
   
 -   Java_Home  
   
@@ -56,18 +56,18 @@ ms.locfileid: "24013129"
   
  次の内容を jdeinterop.ini ファイルに追加します。  
   
-1.  [JDBj-ORACLE] の下:   
+1.  [JDBJ-ORACLE]:   
   
     ```  
     tns=c:\Oracle\ora92\network\Admin\tnsnames.ora  
     ```  
   
-2.  [JDBj-BOOTSTRAP DATA SOURCE] の下:   
+2.  [JDBJ-BOOTSTRAP DATA SOURCE]:   
   
     ```  
     database=sys810 [hardcode the database name. This information is available in the JDE.ini file on the JD Edwards computer.]  
     ```  
   
 ## <a name="see-also"></a>参照  
- [アダプターを追加し、アイテムを作成します。](../core/adding-biztalk-adapter-for-jd-edwards-enterpriseone.md)   
+ [アダプターを追加し、成果物を作成](../core/adding-biztalk-adapter-for-jd-edwards-enterpriseone.md)   
  [JD Edwards EnterpriseOne のトラブルシューティング](../core/troubleshooting-jd-edwards-enterpriseone.md)

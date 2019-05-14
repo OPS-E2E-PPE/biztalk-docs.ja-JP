@@ -17,17 +17,17 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6f0ac419e64b8a1a949fb2e3044be9de670b387a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c8b010f9f1e8a1217e2928ef4cfd147b56bf7043
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36975427"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65283211"
 ---
-# <a name="message-editor-pipeline-component"></a>メッセージ エディター パイプライン コンポーネント
-このコンポーネントにより、送信または受信パイプライン内のマルチパート メッセージの一部を自動的に編集できます。 このコンポーネントは既存のパイプラインに追加して、通常の処理の一部として置換のためのパイプラインを設定します。  
+# <a name="message-editor-pipeline-component"></a>メッセージ エディタ パイプライン コンポーネント
+このコンポーネントでは、受信パイプラインまたは送信内のマルチパート メッセージの一部を自動的に編集することができます。 このコンポーネントを通常の処理の一部として置換を設定する既存のパイプラインに追加します。  
   
-## <a name="building-the-message-editor-pipeline-component-into-an-existing-pipeline"></a>既存のパイプラインへのメッセージ エディタ パイプライン コンポーネントの構築  
+## <a name="building-the-message-editor-pipeline-component-into-an-existing-pipeline"></a>メッセージ エディタ パイプライン コンポーネントを既存のパイプラインに組み込む  
  メッセージ エディタ パイプライン コンポーネントを使用するには、既存のパイプラインにコンポーネントを追加する必要があります。 詳細については、」を作成するパイプライン「パイプライン デザイナーで BizTalk Server のヘルプを参照してください。  
   
 #### <a name="to-add-the-message-editor-pipeline-component-to-an-existing-pipeline"></a>メッセージ エディタ パイプライン コンポーネントを既存のパイプラインに追加するには  
@@ -44,13 +44,13 @@ ms.locfileid: "36975427"
   
 6. コマンド プロンプトで「 **sn-k MessageEditor.snk**キーを作成し、ENTER キーを押します。  
   
-7. [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]、ソリューション エクスプ ローラーで右クリックして **[messageeditor]**、] をクリックし、**プロパティ**します。  
+7. [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]、ソリューション エクスプ ローラーで右クリックして **[messageeditor]**、 をクリックし、**プロパティ**します。  
   
 8. **MessageEditor プロパティ** ページで **署名** タブをクリックして**アセンブリに署名**チェック ボックスをオンします。  
   
 9. **厳密な名前キー ファイルを選択して**ドロップダウンで、C:\Program Files (x86) \microsoft BizTalk\<バージョン\>アクセラレータを選択してください Editor Pipeline component \obj\debug**MessageEditor.snk**し**オープン**します。  
   
-10. ソリューション エクスプ ローラーで右クリックして**messageeditor**、 をクリックし、**ビルド**します。 出力ペインで、ビルドが成功したことを確認します。  
+10. ソリューション エクスプ ローラーで右クリックして**messageeditor**、 をクリックし、**ビルド**します。 [出力] ウィンドウで、ビルドが成功したことを確認します。  
   
 11. をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**アクセサリ**、順にクリックします**Windows エクスプ ローラー**します。  
   
@@ -62,7 +62,7 @@ ms.locfileid: "36975427"
   
 15. エディターを追加するパイプラインを含んでいるプロジェクトを開きます。  
   
-16. ソリューション エクスプローラーで、パイプライン名をクリックし、パイプライン デザイナーでパイプラインを開きます。  
+16. ソリューション エクスプ ローラーでは、パイプライン デザイナーでパイプラインを開くパイプライン名をダブルクリックします。  
   
 17. ツールボックス ウィンドウの BizTalk パイプライン コンポーネント ペインで右クリックし をクリックし、**アイテムの追加/削除**します。  
   
@@ -73,7 +73,7 @@ ms.locfileid: "36975427"
 20. [ツールボックス] ウィンドウの [BizTalk パイプライン コンポーネント] ウィンドウで、クリックして押したまま**BTARN Message Editor Component**、コンポーネントをパイプライン内の目的の位置にドラッグします。  
   
     > [!NOTE]
-    >  メッセージ エディター パイプライン コンポーネントは、受信パイプライン コンポーネントの逆アセンブル ステージ、または送信パイプライン コンポーネントのプリアセンブル ステージの後で追加することをお勧めします。  
+    >  メッセージ エディタ パイプライン コンポーネントは、逆アセンブル ステージでは、受信パイプライン コンポーネント、または送信パイプライン コンポーネントのプリアセンブル ステージの後に追加することをお勧めします。  
   
 21. [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]、パイプライン デザイナーで、選択、 **BTARN Message Editor Component**図形。  
   
@@ -81,18 +81,18 @@ ms.locfileid: "36975427"
   
 23. 関連付けられているテキスト ボックスに**XPath 値**、XPath 要素を設定する値を入力します。  
   
-24. ソリューション エクスプ ローラーでプロジェクト名を右クリックし をクリックし、**ビルド**します。 ビルドが成功することを確認します。  
+24. ソリューション エクスプ ローラーでプロジェクト名を右クリックし をクリックし、**ビルド**します。 ビルドが成功したことを確認します。  
   
-25. ソリューション エクスプ ローラーでプロジェクト名を右クリックし をクリックし、**デプロイ**します。 展開が成功することを確認します。  
+25. ソリューション エクスプ ローラーでプロジェクト名を右クリックし をクリックし、**デプロイ**します。 デプロイが成功したことを確認します。  
   
 ## <a name="example"></a>例  
- 0C1 PIP スキーマで `ProprietaryDocumentIdentifier` 要素の値を変更するには、次のコード セクションに示された XPath クエリをメッセージ エディタ パイプライン コンポーネントの XPath クエリ プロパティに追加します。  
+ 要素の値を変更する`ProprietaryDocumentIdentifier`0c1 で PIP スキーマでは、メッセージ エディタ パイプライン コンポーネントの XPath クエリ プロパティに次のコード セクションに示すように XPath クエリを追加します。  
   
 ```  
 /*[local-name()='Pip0C1AsynchronousTestNotification' and namespace-uri()='http://schemas.microsoft.com/biztalk/btarn/2004/0C1_MS_R01_02_AsynchronousTestNotification.dtd']/*[local-name()='thisDocumentIdentifier' and namespace-uri()='http://schemas.microsoft.com/biztalk/btarn/2004/0C1_MS_R01_02_AsynchronousTestNotification.dtd']/*[local-name()='ProprietaryDocumentIdentifier' and namespace-uri()='http://schemas.microsoft.com/biztalk/btarn/2004/0C1_MS_R01_02_AsynchronousTestNotification.dtd']  
 ```  
   
- 完全な XPath クエリを取得するには、BizTalk エディターでスキーマを開き、プロパティ ウィンドウの `Instance XPath` プロパティから Xpath をコピーします。 指定する XPath クエリには、すべての名前空間参照が含まれている必要があります。  
+ 完全な XPath クエリを取得するスキーマを BizTalk エディターで開くしから Xpath をコピーし、`Instance XPath`プロパティ ウィンドウの下のプロパティ。 指定した XPath クエリでその名前空間のすべての参照が必要です。  
   
 ## <a name="see-also"></a>参照  
  [ユーティリティ](../../adapters-and-accelerators/accelerator-rosettanet/utilities1.md)

@@ -15,17 +15,17 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5f5a4390cc62fdb46cbad9993a106d98163c0838
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 00fb00a1b256be192ce591b2b11ec70ab9b9d398
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36975867"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65283726"
 ---
 # <a name="exporting-certificates"></a>証明書のエクスポート
-ここでは、証明書のエクスポート ウィザードを使用して証明書をエクスポートする方法について説明します。 このウィザードを使用すると、パブリック証明書またはプライベート証明書のいずれかをエクスポートできます。  
+このトピックでは、証明書のエクスポート ウィザードを使用して証明書をエクスポートする方法を説明します。 このウィザードを使用すると、パブリック証明書またはプライベート証明書をエクスポートします。  
   
-### <a name="to-export-a-partner-certificate"></a>パートナー証明書をエクスポートするには  
+### <a name="to-export-a-partner-certificate"></a>パートナーの証明書をエクスポートするには  
   
 1. をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**Microsoft** [!INCLUDE[btaBTARNNoVersionui](../../includes/btabtarnnoversionui-md.md)]順にクリックします[!INCLUDE[btaBTARNNoVersionui](../../includes/btabtarnnoversionui-md.md)]**管理コンソール**.  
   
@@ -35,16 +35,16 @@ ms.locfileid: "36975867"
   
 4. **証明書のエクスポート ウィザードへようこそ**] ページで [**次**します。  
   
-5. **エクスポート ファイルの形式** ページで、ファイルを使用する形式を選択します。 この形式は、通常、バイナリ エンコード ファイルをエクスポートする DER encoded binary x.509 か、Base-64 エンコード ファイルをエクスポートする Base-64 encoded x.509 のいずれかです。  
+5. **エクスポート ファイルの形式** ページで、ファイルを使用する形式を選択します。 この形式は、DER encoded binary x.509 バイナリ エンコードされたファイルをエクスポートするまたは Base 64 エンコード ファイルをエクスポートする base-64 でエンコードされた x.509 のいずれかでは、通常します。  
   
    > [!NOTE]
-   >  Base-64 で証明書をエンコードすると、その証明書を UNIX サーバーで使用できます。  
+   >  Base-64 で証明書をエンコードするには、UNIX サーバーの証明書を使用することができます。  
   
 6. **エクスポートするファイル** ページで **参照**、検索にファイルを保存するには、ファイルの名前を入力、 をクリックして**次へ**、順にクリックします**完了**.  
   
 ### <a name="to-export-the-home-organization-certificate"></a>ホーム組織証明書をエクスポートするには  
   
-1. クリックして**開始**、 をクリックして**実行**、型**runas/user:\<サービスをホスト\>mmc**ここで、 \< *hostservice* \> Microsoft をインストールしたときにホスト サービスに関連するサービスの名前を指定[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]、] をクリックし、 **OK**で Microsoft 管理コンソール (MMC) を実行する、ホスト サービスのコンテキスト。  
+1. クリックして**開始**、 をクリックして**実行**、型**runas/user:\<サービスをホスト\>mmc**ここで、 \< *hostservice* \> Microsoft をインストールしたときにホスト サービスに関連するサービスの名前を指定[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]、 をクリックし、 **OK**で Microsoft 管理コンソール (MMC) を実行する、ホスト サービスのコンテキスト。  
   
    > [!NOTE]
    >  実行する、 **runas**コマンドをホーム組織証明書にアクセスするために必要なホスト サービスの id を前提としています。  
@@ -63,10 +63,10 @@ ms.locfileid: "36975867"
    > [!NOTE]
    >  **はい、秘密キーをエクスポート**されませんを行った場合、秘密キー エクスポート可能な最初にインポートしたときにオプションを実行できなくなります。  
   
-6. **エクスポート ファイルの形式** ページで、ファイルを使用する形式を選択します。 この形式は、通常、バイナリ エンコード ファイルをエクスポートする DER encoded binary x.509 か、Base-64 エンコード ファイルをエクスポートする Base-64 encoded x.509 のいずれかです。  
+6. **エクスポート ファイルの形式** ページで、ファイルを使用する形式を選択します。 この形式は、DER encoded binary x.509 バイナリ エンコードされたファイルをエクスポートするまたは Base 64 エンコード ファイルをエクスポートする base-64 でエンコードされた x.509 のいずれかでは、通常します。  
   
    > [!NOTE]
-   >  Base-64 で証明書をエンコードすると、その証明書を UNIX サーバーで使用できます。  
+   >  Base-64 で証明書をエンコードするには、UNIX サーバーの証明書を使用することができます。  
   
 7. **エクスポートするファイル** ページで **参照**、検索にファイルを保存するには、ファイルの名前を入力、 をクリックして**次へ**、順にクリックします**完了**.  
   

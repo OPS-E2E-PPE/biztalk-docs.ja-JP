@@ -12,12 +12,12 @@ caps.latest.revision: 97
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fdbdb61d37f6828f6e738d438fe9087acbc4d26c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5c2c9a1cd01926f82e47441ab66fe7ce6400838b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37019543"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65384897"
 ---
 # <a name="how-to-install-the-inline-and-adapter-versions-of-the-service-oriented-solution"></a>サービス指向ソリューションのインライン バージョンおよびアダプター バージョンをインストールする方法
 次の手順では、サービス指向ソリューションのインライン バージョンおよびアダプタ バージョンをコンピュータにインストールするための準備を行う方法、およびコンピュータにソリューションをインストールする方法について説明します。  
@@ -28,7 +28,7 @@ ms.locfileid: "37019543"
 
 ##  <a name="step1"></a> サービス指向ソリューションのアダプターとインライン バージョンをインストールするコンピューターを準備します。  
 
-1. Windows SharePoint Services をインストールした場合を除外する (ルート) の既定の Web サイトの Windows SharePoint Services 管理パスから次のようにします をクリック**開始**、 をポイント**すべてのプログラム**、 をポイント。**管理ツール**、 をクリックし、 **SharePoint Central Administration**します。  
+1. Windows SharePoint Services をインストールした場合、次のように Windows SharePoint Services 管理パスから (ルート) の既定の Web サイトを除外します。をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**管理ツール**、順にクリックします**SharePoint Central Administration**。  
 
    1.  **仮想サーバーの構成**、**仮想サーバー設定を構成**します。  
 
@@ -56,7 +56,7 @@ ms.locfileid: "37019543"
 
 ##  <a name="step3"></a> サービス指向ソリューションのスタブ バージョンを削除します。  
 
-1. オープン、 **BizTalk Server 管理コンソール**次のように: クリックして**開始**、 をポイント**すべてのプログラム**、 をポイント[!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)]、順にクリックします**BizTalk Server 管理**します。  
+1. 開く、 **BizTalk Server 管理コンソール**次のようにします。をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント[!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)]、順にクリックします**BizTalk Server 管理**します。  
 
 2. **BizTalk Server 管理コンソール**、展開**BizTalk Server 管理**、展開**BizTalk グループ**、展開**アプリケーション**、右クリック**btsscn.so.customerservice**、 をクリックし、**停止**します。 **アプリケーションを停止**ダイアログ ボックスで、**完全停止 - インスタンスを終了**、 をクリックし、**停止**します。  
 
@@ -106,7 +106,7 @@ ms.locfileid: "37019543"
 
     -   `iisvdir /delete W3SVC/1/ROOT/Microsoft.Samples.BizTalk.WoodgroveBank.StubPaymentTracker`  
 
-11. 次のようにインターネット インフォメーション サービス (IIS) マネージャーを起動: をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**管理ツール**をクリックして**インターネット インフォメーション サービス (IIS) マネージャー**します。  
+11. 次のようにインターネット インフォメーション サービス (IIS) マネージャーを起動します。クリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**管理ツール**、順にクリックします**インターネット インフォメーション サービス (IIS) マネージャー**.  
 
     -   展開、**アプリケーション プール**、以前の Web アプリケーション用に作成したアプリケーション プールを右クリックし、をクリックして**削除**、順にクリックします**OK**確認でダイアログ ボックス。  
 
@@ -546,7 +546,7 @@ ms.locfileid: "37019543"
    >   
    >  SSO 関連アプリケーションのさまざまなグループを使用する場合は、Active Directory で (任意の名前) を持つ Windows グループを作成し、変更する必要があります、 **appAdminAccount**と**上記の appUserAccount**PendTransAffApp.xml 内のノード。 これを行う場合は、値を設定する必要があります**groupApp**属性の**フラグ**を"yes"のノード。  
    >   
-   >  SSO 関連アプリケーションの詳細については、[SSO 関連アプリケーション](../core/sso-affiliate-applications.md)を参照してください。  
+   >  SSO 関連アプリケーションの詳細については、次を参照してください。 [SSO 関連アプリケーション](../core/sso-affiliate-applications.md)します。  
 
 3. コマンド プロンプトで、メモ帳を使用して PendTransUserMap.xml ファイルを開き、次のように編集します。  
 
@@ -772,7 +772,7 @@ ms.locfileid: "37019543"
 
     -   `startAll.vbs`  
 
-2.  サービス指向ソリューションを実行します。 ソリューションの実行の詳細については、[サービス指向ソリューションを実行する方法](../core/how-to-run-the-service-oriented-solution.md)を参照してください。  
+2.  サービス指向ソリューションを実行します。 ソリューションの実行の詳細については、次を参照してください。[サービス指向ソリューションを実行する方法](../core/how-to-run-the-service-oriented-solution.md)します。  
 
 ## <a name="next-steps"></a>次の手順  
  サービス指向ソリューションのインラインおよびアダプター バージョンをテストする[サービス指向ソリューションを実行する方法](../core/how-to-run-the-service-oriented-solution.md)します。  

@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2a96c75ceadfeaf06dde2c3661dd00f435529dcc
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8e78edd01348707190b6a07a83f4b1685f597029
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37009523"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65242557"
 ---
 # <a name="planning-for-sending-and-receiving"></a>送受信の計画
 ほぼすべてのドキュメントで処理される[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]が受信した、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]受信アダプター、およびから送信された[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]を使用して、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]送信アダプター。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]アダプターは、いずれかで目立つように図[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]環境がどのアダプターやアクセラレータを使用して、これらのアダプターやアクセラレータを正しく構成する方法を決定することを事前に計画で重要です。  
@@ -82,7 +82,7 @@ ms.locfileid: "37009523"
 |TIBCO Enterprise Message Service|BizTalk Server と TIBCO EMS サーバー間での XML メッセージとバイナリ データ形式メッセージの交換を有効にします。TIBCO EMS サーバーは、緊密に統合され信頼性の高いアプリケーション インフラストラクチャを提供します。|4.2|  
 |WebSphere MQ|BizTalk Server と IBM WebSphere MQ 間でのメッセージの交換を有効にします。|5.3 フィックス パック 10 以降および 6.0 の修正パック 1.1 以降|  
   
- BizTalk Server で使用可能な LOB アダプタについての詳細については、[アダプターの BizTalk Server 2010 に含まれている](http://go.microsoft.com/fwlink/?LinkId=152664)(http://go.microsoft.com/fwlink/?LinkId=152664)を参照してください。  
+ BizTalk Server で使用可能な LOB アダプタについての詳細については、次を参照してください。[アダプターの BizTalk Server 2010 に含まれている](http://go.microsoft.com/fwlink/?LinkId=152664)(http://go.microsoft.com/fwlink/?LinkId=152664)します。  
   
 ## <a name="biztalk-adapter-pack"></a>BizTalk アダプター パック  
  Microsoft [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)] Oracle データベース、Oracle E-business Suite、SAP、Siebel、および SQL Server などの LOB アプリケーションへの接続を提供する WCF ベース アダプターが含まれます。 使用可能なアダプターの一覧については[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]を参照してください[BizTalk Adapter Pack](http://go.microsoft.com/fwlink/?LinkId=152665) (<http://go.microsoft.com/fwlink/?LinkId=152665>)。  
@@ -91,7 +91,7 @@ ms.locfileid: "37009523"
 >  使用することができます、[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]で利用可能な LOB の WCF ベース アダプターの BizTalk プロジェクトに LOB アダプターの BizTalk プロジェクトを移行する移行ツール、[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]します。 ダウンロードすることができます、[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]からの移行ツール[BizTalk アダプター パック移行ツール](http://go.microsoft.com/fwlink/?LinkID=153328)(<http://go.microsoft.com/fwlink/?LinkID=153328>)。 含まれている LOB の WCF ベース アダプターへの移行の LOB アダプタについての詳細は、[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]を参照してください、 [Microsoft BizTalk Adapter 2.0 の移行に関するホワイト ペーパー](http://go.microsoft.com/fwlink/?LinkId=158848) (<http://go.microsoft.com/fwlink/?LinkId=158848>)。  
   
 ## <a name="biztalk-accelerators"></a>BizTalk アクセラレータ  
- BizTalk アダプターでは、特定のプロトコルでの送信と受信ドキュメントに合わせて、中に BizTalk アクセラレータが特定の業界標準に従ってドキュメントの交換に対応するために設計されています。 使用可能な BizTalk アクセラレータの一覧は、[Microsoft BizTalk Server アクセラレータ](http://go.microsoft.com/fwlink/?LinkId=103609)(http://go.microsoft.com/fwlink/?LinkId=103609)を参照してください。  
+ BizTalk アダプターでは、特定のプロトコルでの送信と受信ドキュメントに合わせて、中に BizTalk アクセラレータが特定の業界標準に従ってドキュメントの交換に対応するために設計されています。 使用可能な BizTalk アクセラレータの一覧は、次を参照してください。 [Microsoft BizTalk Server アクセラレータ](http://go.microsoft.com/fwlink/?LinkId=103609)(http://go.microsoft.com/fwlink/?LinkId=103609)します。  
   
 ##  <a name="BKMK_InternetTrans"></a> トランスポートには、インターネットに公開するときに、ドメインの構成  
  送信とを組織と外部の取引先間のドキュメントの受信を容易にするためには、インターネットからアクセスできるパブリックに公開されたサイトでのトランスポートを公開する必要があります。 このような状況は、次のドメインの構成はお勧めします。  
@@ -137,12 +137,12 @@ ms.locfileid: "37009523"
 ## <a name="high-availability-considerations"></a>高可用性に関する考慮事項  
  BizTalk グループ内の複数の BizTalk server のアダプター ハンドラーのホスト インスタンスを実行して、ほとんどのアダプターの高可用性を提供できます。 これにより、1 つのアダプター ハンドラーのホスト インスタンスが失敗した場合、別のアダプター ハンドラーのホスト インスタンスは処理を続行します。 ただし、これを行う例外があります。 場合によっては複数のアダプター ハンドラーのホスト インスタンスを実行するいると、競合の問題が発生することができます。 たとえば、POP3、FTP アダプターの複数のインスタンスを実行するときに、競合の問題が発生します。 このような場合は、クラスター化された BizTalk ホストでアダプター ハンドラーのホスト インスタンスを実行して高可用性をアダプターに指定できます。  
   
- 高可用性を実現するホスト クラスタ リングをアダプター ハンドラーのホスト インスタンスの詳細については、[されたクラスター化されたホストでアダプター ハンドラーの実行に関する考慮事項](http://go.microsoft.com/fwlink/?LinkID=151284)(http://go.microsoft.com/fwlink/?LinkID=151284)を参照してください。 高可用性を実現する BizTalk ホストの詳細については、[BizTalk ホストの高可用性](../technical-guides/high-availability-for-biztalk-hosts.md)を参照してください。  
+ 高可用性を実現するホスト クラスタ リングをアダプター ハンドラーのホスト インスタンスの詳細については、次を参照してください。[されたクラスター化されたホストでアダプター ハンドラーの実行に関する考慮事項](http://go.microsoft.com/fwlink/?LinkID=151284)(http://go.microsoft.com/fwlink/?LinkID=151284)します。 高可用性を実現する BizTalk ホストの詳細については、次を参照してください。 [BizTalk ホストの高可用性](../technical-guides/high-availability-for-biztalk-hosts.md)します。  
   
 ## <a name="performance-considerations"></a>パフォーマンスに関する考慮事項  
  **SOAP アダプターのパフォーマンスに関する考慮事項**  
   
- SOAP アダプターのパフォーマンスを最適化する方法の詳細については、[構成パラメーターを アダプターのパフォーマンスの影響を与える](http://go.microsoft.com/fwlink/?LinkID=154200)(http://go.microsoft.com/fwlink/?LinkID=154200)を参照してください。  
+ SOAP アダプターのパフォーマンスを最適化する方法の詳細については、次を参照してください。[構成パラメーターを アダプターのパフォーマンスの影響を与える](http://go.microsoft.com/fwlink/?LinkID=154200)(http://go.microsoft.com/fwlink/?LinkID=154200)します。  
   
  **MQSeries アダプターのパフォーマンスに関する考慮事項**  
   
@@ -169,7 +169,7 @@ ms.locfileid: "37009523"
   
   カスタム受信アダプターが BizTalk Server に送信するメッセージの順序を保持するために、アダプターが、次の機能を使用して開発する必要があります。  
   
-- カスタムの受信メッセージのバッチを送信した後、次のバッチを送信する前に BizTalk Server から BatchComplete 呼び出しのアダプターを待機する必要があります。 詳細については、[Batch-Supported の受信アダプター用のインターフェイス](http://go.microsoft.com/fwlink/?LinkId=155752)(http://go.microsoft.com/fwlink/?LinkId=155752)を参照してください。  
+- カスタムの受信メッセージのバッチを送信した後、次のバッチを送信する前に BizTalk Server から BatchComplete 呼び出しのアダプターを待機する必要があります。 詳細については、次を参照してください。 [Batch-Supported の受信アダプター用のインターフェイス](http://go.microsoft.com/fwlink/?LinkId=155752)(http://go.microsoft.com/fwlink/?LinkId=155752)します。  
   
 - パイプラインでメッセージが失敗した場合、中断、できれば再開不可として。 BTS を使用します。SuspendAsNonResumable メッセージ コンテキスト プロパティ[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]にメッセージを適切にフラグを設定します。  
   

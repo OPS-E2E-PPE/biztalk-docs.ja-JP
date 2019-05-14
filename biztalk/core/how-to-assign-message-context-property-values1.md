@@ -12,31 +12,31 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4f9f5a42e208d81f8898ce85592402f675d1b361
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8e66d88a2e12bb0e2672c04df06df711746c5efe
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36979743"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65387191"
 ---
 # <a name="how-to-assign-message-context-property-values"></a>メッセージ コンテキスト プロパティの値を割り当てる方法
-BizTalk オーケストレーションから JD Edwards EnterpriseOne アダプター接続セッションを管理するには、Microsoft.BizTalk.Adapters.JDEProperties.dll への参照をプロジェクトに追加する必要があります。 このアセンブリは、%SystemDrive%\Program Files\Common Files\Microsoft BizTalk Adapters for Enterprise Applications\bin に配置されています。  
+を BizTalk オーケストレーションから JD Edwards EnterpriseOne アダプター接続セッションを管理するには、プロジェクトの Microsoft.BizTalk.Adapters.JDEProperties.dll に参照を追加する必要があります。 このアセンブリは %systemdrive%\program files \common files \microsoft BizTalk Adapters for Enterprise applications \bin にあります。  
   
- このプロパティ スキーマを参照すると、オーケストレーション デザイナのメッセージの割り当て図形など、さまざまな BizTalk 開発ツールで、追加のコンテキスト プロパティにアクセスできるようになります。  
+ このプロパティ スキーマを参照すると後、は、追加のコンテキスト プロパティをさまざまな BizTalk 開発ツール、たとえば、メッセージの割り当て図形をオーケストレーション デザイナー内でアクセスできます。  
   
- コンテキスト プロパティにアクセスするには、JD Edwards EnterpriseOne 名前空間で使用できるコンテキスト プロパティのうちいずれかを指定します。 Microsoft BizTalk Adapter for JD Edwards EnterpriseOne にバインドされたポートから受信したメッセージのコンテキスト プロパティを読み取るには、式の中で構文 Message(JDE.Property) を使用します。 プロパティの一覧については、JD Edwards EnterpriseOne アダプター セッション管理に関する説明を参照してください。  
+ コンテキスト プロパティにアクセスするには、JD Edwards EnterpriseOne 名前空間内で使用できるプロパティのいずれかを指定します。 Microsoft BizTalk Adapter for JD Edwards EnterpriseOne にバインドされたポートから受信したメッセージのコンテキスト プロパティを読み取りは、メッセージ (JDE の構文を使用します。プロパティの場合)、式で。 プロパティの一覧については、JD Edwards EnterpriseOne アダプター セッション管理を参照してください。  
   
- BizTalk では、メッセージを変更できません。  
+ BizTalk メッセージは変更できません。  
   
-### <a name="to-assign-context-property-value"></a>コンテキスト プロパティ値を割り当てるには  
+### <a name="to-assign-context-property-value"></a>コンテキスト プロパティの値を割り当てる  
   
 1. 新しいメッセージを作成します。  
   
-2. メッセージのコンテンツを設定します (既存のメッセージを割り当てるなど)。  
+2. コンテンツの設定、メッセージなどの既存のメッセージを割り当てます。  
   
 3. プロパティを設定します。  
   
-   Microsoft BizTalk Adapter for JD Edwards EnterpriseOne にバインドされた送信ポートに送信するメッセージにコンテキスト プロパティを割り当てるには、メッセージ代入演算子を使用します。 次に、JD Edwards EnterpriseOne 名前空間の使用可能ないずれかのコンテキスト プロパティを指定します。  
+   Microsoft BizTalk Adapter for JD Edwards EnterpriseOne にバインドされている送信ポートに送信メッセージにコンテキスト プロパティを割り当てるには、メッセージ代入演算子を使用します。 JD Edwards EnterpriseOne 名前空間内で使用できるプロパティのいずれかを指定します。  
   
    次の構文 `Message(JDE.Property) = value;`  
   

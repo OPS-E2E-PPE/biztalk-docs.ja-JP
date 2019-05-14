@@ -12,14 +12,14 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4b9c8d8126a7b38d95adfce1e813dd2a86ccde24
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a54bad582a7748f294a03eb87533655f44d95353
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37024536"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65292852"
 ---
-# <a name="unable-to-access-agreement"></a>アグリーメントにアクセスできません
+# <a name="unable-to-access-agreement"></a>アグリーメントにアクセスできません。
 ## <a name="details"></a>詳細  
 
 |                 |                                                                                        |
@@ -30,24 +30,24 @@ ms.locfileid: "37024536"
 |  イベント ソース   | [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI |
 |    コンポーネント    |                                       EDI エンジン                                       |
 |  シンボル名  |                              UnableToLocateAS2PartyError                               |
-|  メッセージ テキスト   |            アグリーメントにアクセスできません。 AS2From: {0} AS2To:{1}します。 エラー: {2}             |
+|  メッセージ テキスト   |            アグリーメントにアクセスできません。 AS2From:{0} AS2To:{1}します。 エラー: {2}             |
 
 ## <a name="explanation"></a>説明  
- このエラーは、BizTalk Server が、指定された修飾子と値のパーティを見つけられなかったことを示します。  
+ このエラーは、BizTalk Server パーティを特定の修飾子と値が見つかりませんでしたを示します。  
 
 ## <a name="user-action"></a>ユーザーの操作  
- このエラーを解決するには、特定の修飾子のパーティ エイリアスを作成します。  
+ このエラーを解決するには、特定の修飾子のパーティのエイリアスを作成します。  
 
-1. クリックして**開始**、] をクリックして**すべてのプログラム**、] をクリックして[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリックします**BizTalk Server 管理**します。  
+1. クリックして**開始**、 をクリックして**すべてのプログラム**、 をクリックして[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリックします**BizTalk Server 管理**します。  
 
-2. [コンソール ルートで [ [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]、展開**BizTalk グループ**、] をクリック**パーティ**します。  
+2. コンソール ルートで  [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]、展開**BizTalk グループ**、 をクリック**パーティ**します。  
 
-3. 適切なパーティを右クリックします。  
+3. 正しいパーティを右クリックします。  
 
 4. **[プロパティ]** をクリックします。  
 
-5. [*パーティ名*]**パーティ プロパティ**] ダイアログ ボックスに、入力**ediint-as2 From 値**で、**名前**列。  
+5. [*パーティ名*]**パーティ プロパティ** ダイアログ ボックスに、入力**ediint-as2 From 値**で、**名前**列。  
 
 6. パーティ名を入力、**値**列。  
 
-7. [**OK**] をクリックします。
+7. **[OK]** をクリックします。

@@ -1,5 +1,5 @@
 ---
-title: '手順 10: X12 および AS2 取引先アグリーメントの構成 |Microsoft Docs'
+title: 手順 10:X12 および AS2 取引先アグリーメントの構成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 46
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: beae325fa0a0cfcc2c4a63f3134ccb39e5e243d8
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 582c3ebcbbfe5878d3cffbda187c3f8fcab2d46a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36996043"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65392789"
 ---
-# <a name="step-10-configure-the-x12-and-as2-trading-partner-agreement"></a>手順 10: X12 および AS2 取引先アグリーメントを構成します。
+# <a name="step-10-configure-the-x12-and-as2-trading-partner-agreement"></a>手順 10:X12 および AS2 取引先アグリーメントを構成します。
 ![手順 10 の 11](../core/media/tut-step10-of-11.gif "Tut_Step10_of_11")  
 
  このステップでは、EDIINT/AS2 でエンコードされたメッセージを HTTP 経由で送信するように X12 および AS2 の取引先アグリーメントを設定します。 この Fabrikam パーティは、EDI インターチェンジを Contoso に送信します。これにより、997 受信確認と非同期 MDN が Fabrikam に返されます。  
@@ -31,7 +31,7 @@ ms.locfileid: "36996043"
 
 1. クリックして**開始**、 をクリックして**すべてのプログラム**、 をクリックして**Microsoft BizTalk Server**、順にクリックします**BizTalk Server 管理**します。  
 
-2. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、をクリックして**パーティ**し、コンソール ツリーで、[、**パーティとビジネス プロファイル** ページで、右クリックして**Fabrikam_Profile**、 をポイント**新規**、 をクリックし、**契約**します。  
+2. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、をクリックして**パーティ**し、コンソール ツリーで、**パーティとビジネス プロファイル** ページで、右クリックして**Fabrikam_Profile**、 をポイント**新規**、 をクリックし、**契約**します。  
 
 3. **全般プロパティ** ページの**名前**テキスト ボックスに、アグリーメントの名前を入力します。  
 
@@ -71,7 +71,7 @@ ms.locfileid: "36996043"
    2. **送信ポート**ページで、**インターチェンジの設定**セクションで、**送信ポート** ボックスの一覧の**名前**選択**Send_Async_997**します。  
 
       > [!NOTE]
-      >  入力される必要があります、Send_Async_997 送信ポート、**送信ポート**一覧ように[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]送信 997 メッセージのパーティを解決することができます。 送信パイプラインは、送信ポートの名前をアグリーメント プロパティの送信ポートと照合します。 これは、送信パイプラインがパーティの解決を試みる際に最初に照合する AS2-To プロパティがメッセージのコンテキストで昇格されないために必要になります。 詳細については、[送信 AS2 メッセージのアグリーメントの解決](../core/agreement-resolution-for-outgoing-as2-messages.md)を参照してください。  
+      >  入力される必要があります、Send_Async_997 送信ポート、**送信ポート**一覧ように[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]送信 997 メッセージのパーティを解決することができます。 送信パイプラインは、送信ポートの名前をアグリーメント プロパティの送信ポートと照合します。 これは、送信パイプラインがパーティの解決を試みる際に最初に照合する AS2-To プロパティがメッセージのコンテキストで昇格されないために必要になります。 詳細については、次を参照してください。[送信 AS2 メッセージのアグリーメントの解決](../core/agreement-resolution-for-outgoing-as2-messages.md)します。  
 
 10. **[適用]** をクリックします。  
 
@@ -123,14 +123,14 @@ ms.locfileid: "36996043"
 
       |       プロパティ       |                                                                                                                                              目的                                                                                                                                               |
       |----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-      |     **[Default]**      |              選択**既定**します。 **注:** の値、既定値としてこの行を選択すると**GS1**、 **GS2**、 **GS3**、 **GS7**、および**GS8**される場合でもの値は、**トランザクションの種類**、**バージョン/リリース**と**ターゲットの名前空間**と一致するメッセージではありません。              |
+      |     **[Default]**      |              選択**既定**します。 **注:** 既定の値としてこの行を選択すると**GS1**、 **GS2**、 **GS3**、 **GS7**、および**GS8**は使用されている場合であってもの値は、**トランザクションの種類**、**バージョン/リリース**と**ターゲットの名前空間**と一致するメッセージではありません。              |
       | **トランザクションの種類** |                                                                                                          たとえば、テスト メッセージのメッセージの種類を選択**864 – テキスト メッセージ**します。                                                                                                           |
       | **バージョン/リリース**  |                                                                                                                                           入力**00401**します。                                                                                                                                            |
       | **ターゲットの名前空間** |                                                                                                                    選択 **<http://schemas.microsoft.com/BizTalk/EDI/X12/2006>** します。                                                                                                                    |
       |       **[GS1]**        |                                                                                                テスト メッセージのメッセージの種類が選択されているなどを確認します。 **TX - テキスト メッセージ (864)** します。                                                                                                |
       |       **[GS2]**        |                                                                                                                                             入力**01**します。                                                                                                                                             |
       |       **[GS3]**        |                                                                                                                                          入力**7654321**します。                                                                                                                                           |
-      |       **GS4**        | 日付の形式を選択します。 選択**CCYYMMDD**します。 **注:** あるドロップダウン リストで、値を選択するだけでなく、既定値を表示するフィールドをクリックします。 ドロップダウン リストから値を選択せずにフィールドをクリックしても、値は実際に選択されません。 |
+      |       **GS4**        | 日付の形式を選択します。 選択**CCYYMMDD**します。 **注:** ドロップダウン リストで、値を選択し、だけでなく、既定値を表示するフィールドをクリックする必要があります。 ドロップダウン リストから値を選択せずにフィールドをクリックしても、値は実際に選択されません。 |
       |       **GS5**        |                                                                                                                      時刻の形式を選択します。 選択**HHMMSSdd**します。                                                                                                                       |
       |       **GS7**        |                                                                                                                   選択**T - 運輸データ調整委員会 (Tdcc)** します。                                                                                                                   |
       |       **GS8**        |                                                                                                                      EDI のバージョンとして入力されたことを確認します。 **00401**します。                                                                                                                       |
@@ -143,7 +143,7 @@ ms.locfileid: "36996043"
 11. BizTalk サービスを再起動します。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理コンソールで、[**プラットフォームの設定**、] をクリックして**ホスト インスタンス**、右クリックして**BizTalkServerApplication**順にクリックします**再起動**します。  
 
 ## <a name="next-steps"></a>次の手順  
- 」の説明に従って、AS2 ソリューションをテストする[手順 11: AS2 ソリューションのテスト](../core/step-11-test-the-as2-solution.md)します。  
+ 」の説明に従って、AS2 ソリューションをテストする[手順 11。AS2 ソリューションのテスト](../core/step-11-test-the-as2-solution.md)します。  
 
 ## <a name="see-also"></a>参照  
  [AS2 のプロパティを構成します。](../core/configuring-as2-properties.md)   

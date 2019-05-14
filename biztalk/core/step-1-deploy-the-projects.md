@@ -1,5 +1,5 @@
 ---
-title: '手順 1: プロジェクトの配置 |Microsoft Docs'
+title: 手順 1:プロジェクトの配置 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,34 +12,34 @@ caps.latest.revision: 44
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b25af8ee1095a5365fabd955f7185acbc79254db
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9d9a4fe56fe845ddbb98e4d19142fa732bbe250c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37007555"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65392853"
 ---
-# <a name="step-1-deploy-the-projects"></a>ステップ 1: プロジェクトの配置
+# <a name="step-1-deploy-the-projects"></a>手順 1:プロジェクトを配置します。
 ![ステップ 1/3](../adapters-and-accelerators/adapter-oracle-database/media/step-1of3.gif "Step_1of3")  
   
  **所要時間:** 5 分  
   
- **目標:** この手順では、EAISchemas および EAIOrchestration プロジェクトを展開します。  
+ **目標:** この手順では、EAISchemas および EAIOrchestration プロジェクトをデプロイします。  
   
- **目的:** アセンブリが自動的に構築され、指定したアプリケーションに展開されているプロジェクトまたは Visual Studio でソリューションを展開するときにします。 このプロセスの一部として、アセンブリは、アセンブリに含まれるオーケストレーション、スキーマ、およびマップ (これらは "アイテム" と呼ばれます) と共にローカルの BizTalk 管理データベースにインポートされ、データベース内で指定したアプリケーションに関連付けられます。  
+ **目的:** プロジェクトまたは Visual Studio でソリューションを展開するときに、アセンブリを自動的にビルドおよび指定したアプリケーションに配置します。 このプロセスの一環として、オーケストレーション、スキーマ、および (「アイテム」と呼ばれます) が含まれているマップと共にアセンブリはローカルの BizTalk 管理データベースにインポートし、指定したアプリケーションにデータベースに関連付けられています。  
   
-## <a name="prerequisites"></a>必須コンポーネント  
+## <a name="prerequisites"></a>前提条件  
   
-- [レッスン 1: スキーマおよびマップの定義](../core/lesson-1-define-schemas-and-a-map.md)  
+- [レッスン 1:スキーマおよびマップを定義します。](../core/lesson-1-define-schemas-and-a-map.md)  
   
-- [レッスン 2: ビジネス プロセスの定義](../core/lesson-2-define-the-business-process.md)  
+- [レッスン 2:ビジネス プロセスを定義します。](../core/lesson-2-define-the-business-process.md)  
   
 - メンバーとしてサインイン、 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administrators グループ
 
 - Visual Studio を管理者特権で実行します。
 
 > [!TIP]
-> 必要なチュートリアル ファイルをダウンロードする[チュートリアル 1: エンタープライズ アプリケーション統合](https://www.microsoft.com/download/details.aspx?id=22793)します。
+> 必要なチュートリアル ファイルをダウンロードする[チュートリアル 1。エンタープライズ アプリケーション統合](https://www.microsoft.com/download/details.aspx?id=22793)します。
 
 ## <a name="open-the-solution-with-administrative-rights"></a>管理者権限を持つソリューションを開きます  
   
@@ -47,7 +47,7 @@ ms.locfileid: "37007555"
   
 2. 開始**Microsoft Visual Studio**に管理者として。  
   
-3. [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]の**ファイル**メニューで、**オープン**、] をクリックし、**プロジェクト/ソリューション**。  
+3. [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]の**ファイル**メニューで、**オープン**、 をクリックし、**プロジェクト/ソリューション**。  
   
 4. **プロジェクトを開く** ダイアログ ボックスを参照、 **EAISolution.sln**プロジェクト ソリューション ファイル、およびクリックして**オープン**します。  
   
@@ -61,7 +61,7 @@ ms.locfileid: "37007555"
   
 2.  をクリックして、**署名**] タブで [**アセンブリに署名**します。  
   
-3.  ドロップダウン リストから、**厳密な名前キー ファイルを選択して**ボックスで、 **\<を参照しています.\>**.  
+3.  ドロップダウン リストから、**厳密な名前キー ファイルを選択して**ボックスで、 **\<を参照しています\>**.  
   
 4.  **ファイルの選択** ダイアログ ボックスに移動**C:\BTStutorials**、 をクリックして**btstutorials.snk**、順にクリックします**オープン**します。 
   
@@ -80,10 +80,10 @@ ms.locfileid: "37007555"
 8.  手順 1 ~ 7 EAIOrchestration プロジェクトを配置する.  
   
 ## <a name="what-did-i-just-do"></a>でしただけ何か。  
- このステップでは、EAISchemas プロジェクトおよび EAIOrchestration プロジェクトを配置しました。  
+ この手順では、EAISchemas および EAIOrchestration プロジェクトをデプロイします。  
   
 ## <a name="next-steps"></a>次の手順  
  物理ポートを作成し、オーケストレーションの論理ポートにバインドします。  
   
- [手順 2: 構成し、アプリケーションを起動します](../core/step-2-configure-and-start-the-application1.md)   
- [手順 3: ソリューションのテスト](../core/step-3-test-the-solution2.md)
+ [手順 2:構成し、アプリケーションを起動します](../core/step-2-configure-and-start-the-application1.md)   
+ [ステップ 3:ソリューションをテストします。](../core/step-3-test-the-solution2.md)

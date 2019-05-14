@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c77bead00b97bf6fa072223485f2d1cc422053b7
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 424dded28973b2e113c959eacd9141fbaf2fb95d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37001891"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65390293"
 ---
 # <a name="decompression-failed-while-processing-a-compressed-as2-message"></a>圧縮された AS2 メッセージの処理中に圧縮解除が失敗しました。
 ## <a name="details"></a>詳細  
@@ -33,13 +33,13 @@ ms.locfileid: "37001891"
 |  メッセージ テキスト   |       圧縮された AS2 メッセージの処理中に圧縮解除が失敗しました。 エラー: {0}       |
   
 ## <a name="explanation"></a>説明  
- このエラー/警告/情報イベントは、受信パイプラインの AS2 デコーダー コンポーネントが AS2 メッセージの圧縮を解除できなかったことを示します。  
+ このエラー/警告/情報イベントは、受信パイプラインの AS2 デコーダー コンポーネントが AS2 メッセージを解凍できませんでしたを示します。  
   
 ## <a name="user-action"></a>ユーザーの操作  
  このエラーを解決するには、次のいずれかの操作を行います。  
   
 -   AS2 メッセージの圧縮ラッパーが有効であることを確認します。  
   
--   ”メッセージの圧縮が必要" プロパティがパーティで AS2 プロパティ ダイアログ ボックスの AS2 メッセージ送信ページとしてチェックされていることを確認することにより、BizTalk Server に対して圧縮解除が有効になっていることを確認します (オーバーライドの受信メッセージ プロパティがチェックされていることを確認します)。  
+-   (受信メッセージのプロパティがプロパティのチェックを上書きする) 場合、「メッセージを圧縮する必要があります」プロパティが AS2 メッセージの送信者 ページ、AS2 のプロパティ ダイアログ ボックスのチェックされてパーティに対して確認することにより、BizTalk server、圧縮解除が有効になっていることを確認します.  
   
--   エラー メッセージ テキストに示されるエラーの説明を参照して、具体的な問題を特定してください。
+-   エラー メッセージ テキストで指定されたエラーの説明を使用すると、特定の問題を識別します。

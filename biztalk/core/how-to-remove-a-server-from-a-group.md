@@ -22,20 +22,20 @@ caps.latest.revision: 22
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 19c4381f7ca011698aa647f0d7a4a7ccf9ca91a4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7b8be9a991e70c3f1f4fb30673f2c1456a6fe3d0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37017629"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65384339"
 ---
 # <a name="how-to-remove-a-server-from-a-group"></a>サーバーをグループから削除する方法
 サーバーは、1 つの BizTalk グループに関連付けられた場合のみできます。 サーバーが別のグループに既に属している場合、まず現在のグループからサーバーを削除し、その後でサーバーを新しいグループに追加する必要があります。  
   
 ## <a name="prerequisites"></a>前提条件  
- ここで示す手順を実行するには、Windows 管理者グループのメンバーとしてログオンする必要があります。  
+ この手順を実行するには、Windows の Administrators グループのメンバーとしてログオンする必要があります。  
   
-### <a name="to-remove-a-server-from-a-group"></a>サーバーをグループから削除するには  
+### <a name="to-remove-a-server-from-a-group"></a>グループからサーバーを削除するには  
   
 1. BizTalk Server グループから削除するコンピューターで次のようにクリックします**開始**、 をクリック**すべてのプログラム**、 をクリック[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリックします**BizTalkServerの構成。**.  
   
@@ -44,13 +44,13 @@ ms.locfileid: "37017629"
 3. **機能の構成解除**ダイアログ ボックスで、**グループ**、 をクリックし、 **OK**。  
   
    > [!CAUTION]
-   >  グループの構成を解除すると、そのコンピューターで既に構成されているすべての依存機能の構成が解除されます。  
+   >  グループを構成解除のコンピューターに既に構成されているすべての依存機能構成が解除されます。  
   
 4. **[はい]** をクリックします。  
   
 5. Microsoft BizTalk Server 構成ウィザードで次のようにクリックします。**次**します。  
   
-    グループ、および、そのグループに依存する機能の構成が解除されます。  
+    グループとその依存する機能が構成されているではありません。  
   
 6. **[完了]** をクリックします。  
   
