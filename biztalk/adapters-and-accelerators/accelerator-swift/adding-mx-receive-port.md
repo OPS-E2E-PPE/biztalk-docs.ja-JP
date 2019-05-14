@@ -1,5 +1,5 @@
 ---
-title: 受信ポートの追加 MX |Microsoft ドキュメント
+title: 受信ポートの追加 MX |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,42 +12,42 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 69123b876bdda4b5f999277a1710cdeb1cb61fe7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d95c9b97b18e20e2a852c5a1507d1110733e481b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22209482"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65378715"
 ---
-# <a name="adding-mx-receive-port"></a><span data-ttu-id="7358a-102">MX を追加する受信ポート</span><span class="sxs-lookup"><span data-stu-id="7358a-102">Adding MX Receive Port</span></span>
-<span data-ttu-id="7358a-103">**追加するには、MX 受信ポート。**</span><span class="sxs-lookup"><span data-stu-id="7358a-103">**To add an MX receive port:**</span></span>  
+# <a name="adding-mx-receive-port"></a><span data-ttu-id="9041c-102">受信ポートの MX を追加します。</span><span class="sxs-lookup"><span data-stu-id="9041c-102">Adding MX Receive Port</span></span>
+<span data-ttu-id="9041c-103">**追加するには、MX 受信ポートを使用します。**</span><span class="sxs-lookup"><span data-stu-id="9041c-103">**To add an MX receive port:**</span></span>  
   
-1.  <span data-ttu-id="7358a-104">開始**BizTalk Server 管理コンソール**コンソールです。</span><span class="sxs-lookup"><span data-stu-id="7358a-104">Start **BizTalk Server Administration** console.</span></span>  
+1.  <span data-ttu-id="9041c-104">開始**BizTalk Server 管理**コンソール。</span><span class="sxs-lookup"><span data-stu-id="9041c-104">Start **BizTalk Server Administration** console.</span></span>  
   
-2.  <span data-ttu-id="7358a-105">BizTalk Server 管理コンソールで、展開**BizTalk Server 管理コンソール**、展開**BizTalk グループ**、展開**アプリケーション**の順に展開および**BizTalk アプリケーション 1**です。</span><span class="sxs-lookup"><span data-stu-id="7358a-105">In the BizTalk Server Administration Console, expand **BizTalk Server Administration**, expand **BizTalk Group**, expand **Applications**, and then expand **BizTalk Application 1**.</span></span>  
+2.  <span data-ttu-id="9041c-105">BizTalk Server 管理コンソールで  **BizTalk Server 管理**、展開**BizTalk グループ**、展開**アプリケーション**を展開し**BizTalk アプリケーション 1**します。</span><span class="sxs-lookup"><span data-stu-id="9041c-105">In the BizTalk Server Administration Console, expand **BizTalk Server Administration**, expand **BizTalk Group**, expand **Applications**, and then expand **BizTalk Application 1**.</span></span>  
   
-3.  <span data-ttu-id="7358a-106">右クリック**受信ポート**、 をポイント**新規**、クリックして**一方向の受信ポート**です。</span><span class="sxs-lookup"><span data-stu-id="7358a-106">Right-click **Receive Ports**, point to **New**, and then click **One-Way Receive Port**.</span></span>  
+3.  <span data-ttu-id="9041c-106">右クリック**受信ポート**、 をポイント**新規**、 をクリックし、**一方向の受信ポート**します。</span><span class="sxs-lookup"><span data-stu-id="9041c-106">Right-click **Receive Ports**, point to **New**, and then click **One-Way Receive Port**.</span></span>  
   
-4.  <span data-ttu-id="7358a-107">受信ポートのプロパティ ダイアログ ボックスの 名前 ボックスに入力**MX_ の受信ポート**です。</span><span class="sxs-lookup"><span data-stu-id="7358a-107">In the Receive Port Properties dialog box, in the Name box, type **MX_ Receive Port**.</span></span>  
+4.  <span data-ttu-id="9041c-107">受信ポートのプロパティ ダイアログ ボックスの 名前 ボックスに入力**MX_ の受信ポート**します。</span><span class="sxs-lookup"><span data-stu-id="9041c-107">In the Receive Port Properties dialog box, in the Name box, type **MX_ Receive Port**.</span></span>  
   
-5.  <span data-ttu-id="7358a-108">をクリックして**適用**をクリックして、ポートのバインド**OK**です。</span><span class="sxs-lookup"><span data-stu-id="7358a-108">Click **Apply** to bind the port, and then click **OK**.</span></span>  
+5.  <span data-ttu-id="9041c-108">をクリックして**適用**をクリックして、ポートのバインド**OK**します。</span><span class="sxs-lookup"><span data-stu-id="9041c-108">Click **Apply** to bind the port, and then click **OK**.</span></span>  
   
-6.  <span data-ttu-id="7358a-109">右クリック**受信場所**、 をポイント**新規**、クリックして**一方向の受信場所**です。</span><span class="sxs-lookup"><span data-stu-id="7358a-109">Right-click **Receive Locations**, point to **New**, and then click **One-way Receive Location**.</span></span>  
+6.  <span data-ttu-id="9041c-109">右クリック**受信場所**、 をポイント**新規**、 をクリックし、**一方向の受信場所**します。</span><span class="sxs-lookup"><span data-stu-id="9041c-109">Right-click **Receive Locations**, point to **New**, and then click **One-way Receive Location**.</span></span>  
   
-7.  <span data-ttu-id="7358a-110">[受信ポート] ダイアログ ボックスのをクリックして**MX_ の受信ポート**、順にクリック**OK**です。</span><span class="sxs-lookup"><span data-stu-id="7358a-110">In the Select a Receive Port dialog box, click **MX_ Receive Port**, and then click **OK**.</span></span>  
+7.  <span data-ttu-id="9041c-110">受信ポートのダイアログ ボックスのをクリックして**MX_ の受信ポート**、順にクリックします**OK**します。</span><span class="sxs-lookup"><span data-stu-id="9041c-110">In the Select a Receive Port dialog box, click **MX_ Receive Port**, and then click **OK**.</span></span>  
   
-8.  <span data-ttu-id="7358a-111">受信場所のプロパティ ダイアログ ボックスの 名前 ボックスに入力**MX_ 受信場所**です。</span><span class="sxs-lookup"><span data-stu-id="7358a-111">In the Receive Location Properties dialog box, in the Name box, type **MX_ Receive Location**.</span></span>  
+8.  <span data-ttu-id="9041c-111">受信場所のプロパティ ダイアログ ボックスの 名前 ボックスに入力**MX_ 受信場所**します。</span><span class="sxs-lookup"><span data-stu-id="9041c-111">In the Receive Location Properties dialog box, in the Name box, type **MX_ Receive Location**.</span></span>  
   
-9. <span data-ttu-id="7358a-112">セクションでは、トランスポート、テキスト ボックスのドロップダウン リストをクリックし、選択**ファイル**です。</span><span class="sxs-lookup"><span data-stu-id="7358a-112">In the Transport section, for the Type text box, click the drop-down list, and then select **FILE**.</span></span>  
+9. <span data-ttu-id="9041c-112">テキスト ボックスに、トランスポート セクションで、ドロップダウン リストをクリックし、**ファイル**します。</span><span class="sxs-lookup"><span data-stu-id="9041c-112">In the Transport section, for the Type text box, click the drop-down list, and then select **FILE**.</span></span>  
   
-10. <span data-ttu-id="7358a-113">クリックして、**構成**型のドロップダウン リストの右側にあるボタンです。</span><span class="sxs-lookup"><span data-stu-id="7358a-113">Click the **Configure** button to the right of the Type drop-down list.</span></span>  
+10. <span data-ttu-id="9041c-113">をクリックして、**構成**型のドロップダウン リストの右側にボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="9041c-113">Click the **Configure** button to the right of the Type drop-down list.</span></span>  
   
-11. <span data-ttu-id="7358a-114">[FILE トランスポートのプロパティ] ダイアログ ボックスで、**参照**、ファイルの場所を選択します。</span><span class="sxs-lookup"><span data-stu-id="7358a-114">In the FILE Transport Properties dialog box, click **Browse**, and then select a file location.</span></span>  
+11. <span data-ttu-id="9041c-114">[FILE トランスポートのプロパティ] ダイアログ ボックスで、**参照**、ファイルの場所を選択します。</span><span class="sxs-lookup"><span data-stu-id="9041c-114">In the FILE Transport Properties dialog box, click **Browse**, and then select a file location.</span></span>  
   
-12. <span data-ttu-id="7358a-115">ファイル トランスポートのプロパティ ダイアログ ボックスでいることを確認\*.xml は、ファイル マスク ボックスに入力し、をクリックして**OK**です。</span><span class="sxs-lookup"><span data-stu-id="7358a-115">In the FILE Transport Properties dialog box, ensure that \*.xml is entered in the File Mask box, and then click **OK**.</span></span>  
+12. <span data-ttu-id="9041c-115">FILE トランスポートのプロパティ ダイアログ ボックスで、ことを確認します\*.xml が、ファイル マスク ボックスに入力し、クリックして**OK**します。</span><span class="sxs-lookup"><span data-stu-id="9041c-115">In the FILE Transport Properties dialog box, ensure that \*.xml is entered in the File Mask box, and then click **OK**.</span></span>  
   
-13. <span data-ttu-id="7358a-116">受信場所のプロパティ ダイアログ ボックスで、BizTalkServerApplication を受信するハンドラー ボックスに入力することを確認します。</span><span class="sxs-lookup"><span data-stu-id="7358a-116">In the Receive Location Properties dialog box, ensure that BizTalkServerApplication is entered for the Receive handler box.</span></span>  
+13. <span data-ttu-id="9041c-116">受信場所のプロパティ ダイアログ ボックスで、受信ハンドラー ボックスの biztalkserverapplication を入力することを確認します。</span><span class="sxs-lookup"><span data-stu-id="9041c-116">In the Receive Location Properties dialog box, ensure that BizTalkServerApplication is entered for the Receive handler box.</span></span>  
   
-14. <span data-ttu-id="7358a-117">受信パイプライン ボックスで選択**受信パイプライン**(パイプライン プロジェクトに配置されている受信パイプライン) ドロップダウン リストからをクリックして**適用**、クリックして**ok**.</span><span class="sxs-lookup"><span data-stu-id="7358a-117">In the Receive Pipeline box, select **Receive Pipeline** (the receive pipeline that has been deployed in the Pipeline project) from the drop-down list, click **Apply**, and then click **OK**.</span></span>  
+14. <span data-ttu-id="9041c-117">パイプラインの受信ボックスに、次のように選択します**受信パイプライン**(パイプライン プロジェクトに配置されている受信パイプライン) ドロップダウン リストから、クリック**適用**、 をクリックし、 **ok。**.</span><span class="sxs-lookup"><span data-stu-id="9041c-117">In the Receive Pipeline box, select **Receive Pipeline** (the receive pipeline that has been deployed in the Pipeline project) from the drop-down list, click **Apply**, and then click **OK**.</span></span>  
   
-15. <span data-ttu-id="7358a-118">をクリックして、構成した場所を右クリックして**を有効にする**です。</span><span class="sxs-lookup"><span data-stu-id="7358a-118">Right-click the location you have just configured, and then click **Enable**.</span></span>
+15. <span data-ttu-id="9041c-118">構成したをクリックした場所を右クリックして**を有効にする**します。</span><span class="sxs-lookup"><span data-stu-id="9041c-118">Right-click the location you have just configured, and then click **Enable**.</span></span>
