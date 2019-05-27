@@ -28,7 +28,7 @@ Contoso と Fabrikam、Microsoft® を使用して間の取引先パートナー
 
 ### <a name="to-start-the-btarn-management-console"></a>BTARN 管理コンソールを開始するには  
 
-- クリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**Microsoft BizTalk\<バージョン\>Accelerator for RosettaNet**順にクリックします**[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]** 管理コンソール。  
+- クリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**Microsoft BizTalk\<バージョン\>Accelerator for RosettaNet**順にクリックします **[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]** 管理コンソール。  
 
 ### <a name="to-create-the-0c2-trading-partner-agreement"></a>2 取引先パートナー契約の 0 C を作成するには  
 
