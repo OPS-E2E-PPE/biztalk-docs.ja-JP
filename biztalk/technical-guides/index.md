@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 807ebe51580a8139453b6116e03c84de71a16988
-ms.sourcegitcommit: 208d033f269a579012c756dafa5b71ffbee73911
+ms.openlocfilehash: 52d044df9e8a57b3c9e48d64eaa62567c48bc523
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2018
-ms.locfileid: "35324195"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65401236"
 ---
 # <a name="biztalk-technical-guides"></a>BizTalk テクニカル ガイド
 
@@ -25,9 +25,9 @@ BizTalk ファミリには、[!INCLUDE[btsBizTalkServerNoVersion](../includes/bt
 
 ## <a name="microsoft-it-white-papers"></a>Microsoft IT ホワイト ペーパー
 
-- [MSCIT: BizTalk Server 2009 ハブから BizTalk Server 2013 R2 仮想化ハブへのサプライ チェーンの移行](mscit-supply-chain-migration-from-biztalk-2009-to-biztalk-2013-r2-virtualized.md)
-- [MSCIT: サプライ チェーン発注で Microsoft Azure BizTalk Services を使用する](mscit-using-microsoft-azure-biztalk-services-for-supply-chain-orders.md)
-- [MSIT: Gentran 5.1 から BizTalk 2010 への実際の移行事例](msit-real-world-migration-story-from-gentran-5-1-to-biztalk-2010.md)
+- [MSCIT:BizTalk Server 2009 ハブから BizTalk Server 2013 R2 仮想化ハブへのサプライ チェーンの移行](mscit-supply-chain-migration-from-biztalk-2009-to-biztalk-2013-r2-virtualized.md)
+- [MSCIT:サプライ チェーン発注で Microsoft Azure BizTalk Services を使用する](mscit-using-microsoft-azure-biztalk-services-for-supply-chain-orders.md)
+- [MSIT:Gentran 5.1 から BizTalk 2010 への実際の移行事例](msit-real-world-migration-story-from-gentran-5-1-to-biztalk-2010.md)
 
 ## <a name="performance-and-optimization"></a>パフォーマンスと最適化
 
@@ -52,12 +52,12 @@ BizTalk ファミリには、[!INCLUDE[btsBizTalkServerNoVersion](../includes/bt
 
 ## <a name="additional-links"></a>追加リンク
 
-- [BizTalk Server/BizTalk Services: ホワイト ペーパー ギャラリー](https://social.technet.microsoft.com/wiki/contents/articles/15469.biztalk-serverbiztalk-services-white-paper-gallery.aspx)
-- [BizTalk Server: サポートされるアップグレード パスとインストール ガイド](https://social.technet.microsoft.com/wiki/contents/articles/28554.biztalk-server-supported-upgrade-paths-and-installation-guides.aspx)
-- [BizTalk Server 2013: 価格とライセンスのサバイバル ガイド](https://social.technet.microsoft.com/wiki/contents/articles/20494.biztalk-server-2013-pricing-and-licensing-survival-guide.aspx)
-- [BizTalk Server: ESB サバイバル ガイド](https://social.technet.microsoft.com/wiki/contents/articles/7756.biztalk-server-esb-survival-guide.aspx)
-- [BizTalk Server: サポートされている基幹業務 (LOB) とエンタープライズ システム](https://social.technet.microsoft.com/wiki/contents/articles/17631.biztalk-server-supported-line-of-business-lob-and-enterprise-systems.aspx)
-- [BizTalk Server: 新しい BizTalk Health Monitor スナップインをインストールする方法](https://social.technet.microsoft.com/wiki/contents/articles/26466.biztalk-server-how-to-install-the-new-biztalk-health-monitor-snap-in.aspx)
-- [BizTalk Server: 高可用性のサバイバル ガイド](https://social.technet.microsoft.com/wiki/contents/articles/6532.biztalk-server-high-availability-survival-guide.aspx)
+- [BizTalk Server/BizTalk Services:ホワイト ペーパー ギャラリー](https://social.technet.microsoft.com/wiki/contents/articles/15469.biztalk-serverbiztalk-services-white-paper-gallery.aspx)
+- [BizTalk Server:サポートされるアップグレード パスとインストール ガイド](https://social.technet.microsoft.com/wiki/contents/articles/28554.biztalk-server-supported-upgrade-paths-and-installation-guides.aspx)
+- [BizTalk Server 2013:価格とライセンスのサバイバル ガイド](https://social.technet.microsoft.com/wiki/contents/articles/20494.biztalk-server-2013-pricing-and-licensing-survival-guide.aspx)
+- [BizTalk Server:ESB サバイバル ガイド](https://social.technet.microsoft.com/wiki/contents/articles/7756.biztalk-server-esb-survival-guide.aspx)
+- [BizTalk Server:サポートされている基幹業務 (LOB) とエンタープライズ システム](https://social.technet.microsoft.com/wiki/contents/articles/17631.biztalk-server-supported-line-of-business-lob-and-enterprise-systems.aspx)
+- [BizTalk Server:新しい BizTalk Health Monitor スナップインをインストールする方法](https://social.technet.microsoft.com/wiki/contents/articles/26466.biztalk-server-how-to-install-the-new-biztalk-health-monitor-snap-in.aspx)
+- [BizTalk Server:高可用性のサバイバル ガイド](https://social.technet.microsoft.com/wiki/contents/articles/6532.biztalk-server-high-availability-survival-guide.aspx)
 - [Microsoft Azure で複数の仮想マシンに BizTalk Server 2013 をインストールする](https://social.technet.microsoft.com/wiki/contents/articles/23968.installing-biztalk-server-2013-on-multiple-virtual-machine-on-windows-azure.aspx)
 - [BizTalk 監視ツール](https://social.technet.microsoft.com/wiki/contents/articles/5364.biztalk-monitoring-tools.aspx)
