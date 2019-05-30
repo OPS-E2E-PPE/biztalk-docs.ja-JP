@@ -59,7 +59,7 @@ ms.locfileid: "65400110"
   
 3.  メモ帳で Invalid.xml を開きます。  
   
-4.  変更**\<ns0:requestType\>10\</ns0:requestType\>に\<ns0:requestType\>10\</ns0:requestType\>**.  
+4.  変更 **\<ns0:requestType\>10\</ns0:requestType\>に\<ns0:requestType\>10\</ns0:requestType\>** .  
   
 5.  Invalid.xml を utf-8 として保存し、メモ帳を終了します。  
   
