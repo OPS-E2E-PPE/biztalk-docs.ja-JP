@@ -16,10 +16,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: d7df4606b9ba594a134bdba1e924543dbf6dbca6
-ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
+ms.lasthandoff: 06/10/2019
 ms.locfileid: "65336867"
 ---
 # <a name="how-to-list-user-mappings"></a>ユーザー マッピングを一覧表示する方法
@@ -37,15 +37,15 @@ ms.locfileid: "65336867"
   
 3. 次のいずれかの操作を行います。  
   
-   - 型**ssomanage – listmappings *\<ドメイン\>\\< ユーザー名\>* **  関連アプリケーションでの特定のユーザーがすべてのマッピングを一覧表示where に自分が属している *\<ドメイン\>* は Microsoft Windows ドメイン ユーザー アカウントと *\<username\>* が、Windows ユーザー名のユーザー マッピングを一覧表示します。 ユーザーが関連管理者または SSO 管理者の場合は、このコマンドはすべての関連アプリケーションでそのユーザーのすべてのマッピングを一覧表示します。  
+   - 型**ssomanage – listmappings *\<ドメイン\>\\< ユーザー名\>* ** 関連アプリケーションでの特定のユーザーがすべてのマッピングを一覧表示where に自分が属している *\<ドメイン\>* は Microsoft Windows ドメイン ユーザー アカウントと *\<username\>* が、Windows ユーザー名のユーザー マッピングを一覧表示します。 ユーザーが関連管理者または SSO 管理者の場合は、このコマンドはすべての関連アプリケーションでそのユーザーのすべてのマッピングを一覧表示します。  
   
       または  
   
-   - 型**ssomanage – listmappings *\<アプリケーション名\>* **  特定のアプリケーションのすべてのユーザー マッピングを一覧表示します。  
+   - 型**ssomanage – listmappings *\<アプリケーション名\>* ** 特定のアプリケーションのすべてのユーザー マッピングを一覧表示します。  
   
       または  
   
-   - アプリケーション管理者の場合は、入力**ssomanage – listmappings *\<ドメイン\>\\< ユーザー名\>*  *\<アプリケーション名\>* **  管理者は、関連アプリケーションで特定のユーザーをすべてのマッピングを一覧表示します。  
+   - アプリケーション管理者の場合は、入力**ssomanage – listmappings *\<ドメイン\>\\< ユーザー名\>*  *\<アプリケーション名\>* ** 管理者は、関連アプリケーションで特定のユーザーをすべてのマッピングを一覧表示します。  
   
    > [!NOTE]
    >  ユーザー アカウント制御 (UAC) をサポートするシステムでは、管理者特権を使用してこのツールを実行することが必要な場合があります。  
