@@ -214,7 +214,7 @@ ms.locfileid: "65399381"
   
 - [MQSeries アダプター](http://technet.microsoft.com/library/aa547973\(v=BTS.80\).aspx)異なるコンポーネント構成など、MQSeries アダプターについて詳しく説明します。 [BizTalk Server:MQSeries と MQSeries Client (MQSC) アダプター](http://social.technet.microsoft.com/wiki/contents/articles/18316.biztalk-server-mqseries-and-mqseries-client-mqsc-adapters.aspx) MQSeries と MQSC のアダプターの追加の詳細を提供します。  
   
-- IBM WebSphere はマイクロソフト製品ではないは Microsoft によってサポートされていません。 Microsoft では、このプログラムの適合性に関する保証はありません。 ダウンロードの手順を含む、IBM WebSphere MQ の詳細については、www.ibm.com を参照してください。  
+- IBM WebSphere はマイクロソフト製品ではないは Microsoft によってサポートされていません。 Microsoft では、このプログラムの適合性に関する保証はありません。 ダウンロードの手順を含む、IBM WebSphere MQ の詳細については、 www.ibm.com を参照してください。  
   
 ##  <a name="BKMK_BAMAlerts"></a> BAM 警告  
  BAM 警告の SQL Server 2012 と新しいバージョンでは、SQL Server でデータベース メールを使用します。 BAM 警告では、SQL Server 2008 R2 と以前のバージョンでは、SQL Notification Services を使用します。 インストールまたは BAM 警告の構成、前に SQL Server での Notification Services またはデータベース メールを構成する必要があります。  
