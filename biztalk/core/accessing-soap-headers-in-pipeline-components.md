@@ -23,10 +23,10 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 05/07/2019
 ms.locfileid: "65361921"
 ---
-# <a name="accessing-soap-headers-in-pipeline-components"></a><span data-ttu-id="c977f-102">パイプライン コンポーネントでの SOAP ヘッダーへのアクセス</span><span class="sxs-lookup"><span data-stu-id="c977f-102">Accessing SOAP Headers in Pipeline Components</span></span>
-<span data-ttu-id="c977f-103">パイプライン コンポーネントでは、SOAP ヘッダーのコンテキスト プロパティにアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="c977f-103">You can access SOAP header context properties in pipeline components.</span></span> <span data-ttu-id="c977f-104">コンテキスト プロパティ名とターゲットの名前空間の組み合わせを使用する **http://schemas.microsoft.com/BizTalk/2003/SOAPHeader**します。</span><span class="sxs-lookup"><span data-stu-id="c977f-104">You use a combination of the context property name and the target namespace **http://schemas.microsoft.com/BizTalk/2003/SOAPHeader**.</span></span>  
+# <a name="accessing-soap-headers-in-pipeline-components"></a><span data-ttu-id="f6acd-102">パイプライン コンポーネントでの SOAP ヘッダーへのアクセス</span><span class="sxs-lookup"><span data-stu-id="f6acd-102">Accessing SOAP Headers in Pipeline Components</span></span>
+<span data-ttu-id="f6acd-103">パイプライン コンポーネントでは、SOAP ヘッダーのコンテキスト プロパティにアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="f6acd-103">You can access SOAP header context properties in pipeline components.</span></span> <span data-ttu-id="f6acd-104">コンテキスト プロパティ名とターゲットの名前空間の組み合わせを使用する **http://schemas.microsoft.com/BizTalk/2003/SOAPHeader** します。</span><span class="sxs-lookup"><span data-stu-id="f6acd-104">You use a combination of the context property name and the target namespace **http://schemas.microsoft.com/BizTalk/2003/SOAPHeader**.</span></span>  
   
- <span data-ttu-id="c977f-105">次のコード例は、要求 SOAP ヘッダーを受信パイプライン コンポーネントのプロパティの取得**OrigDest**:</span><span class="sxs-lookup"><span data-stu-id="c977f-105">The following code example gets the request SOAP header in a receive pipeline component for the property **OrigDest**:</span></span>  
+ <span data-ttu-id="f6acd-105">次のコード例は、要求 SOAP ヘッダーを受信パイプライン コンポーネントのプロパティの取得**OrigDest**:</span><span class="sxs-lookup"><span data-stu-id="f6acd-105">The following code example gets the request SOAP header in a receive pipeline component for the property **OrigDest**:</span></span>  
   
 ```  
 public IBaseMessage Execute(IPipelineContext pc, IBaseMessage inmsg)  
@@ -43,7 +43,7 @@ return inmsg;
 }  
 ```  
   
- <span data-ttu-id="c977f-106">パイプライン コンポーネントの詳細については、次を参照してください。[カスタム パイプライン コンポーネントの開発](../core/developing-custom-pipeline-components.md)です。</span><span class="sxs-lookup"><span data-stu-id="c977f-106">For more information about pipeline components, see [Developing Custom Pipeline Components](../core/developing-custom-pipeline-components.md).</span></span>  
+ <span data-ttu-id="f6acd-106">パイプライン コンポーネントの詳細については、次を参照してください。[カスタム パイプライン コンポーネントの開発](../core/developing-custom-pipeline-components.md)です。</span><span class="sxs-lookup"><span data-stu-id="f6acd-106">For more information about pipeline components, see [Developing Custom Pipeline Components](../core/developing-custom-pipeline-components.md).</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="c977f-107">参照</span><span class="sxs-lookup"><span data-stu-id="c977f-107">See Also</span></span>  
- [<span data-ttu-id="c977f-108">公開済み Web サービスでの SOAP ヘッダー</span><span class="sxs-lookup"><span data-stu-id="c977f-108">SOAP Headers with Published Web Services</span></span>](../core/soap-headers-with-published-web-services.md)
+## <a name="see-also"></a><span data-ttu-id="f6acd-107">参照</span><span class="sxs-lookup"><span data-stu-id="f6acd-107">See Also</span></span>  
+ [<span data-ttu-id="f6acd-108">公開済み Web サービスでの SOAP ヘッダー</span><span class="sxs-lookup"><span data-stu-id="f6acd-108">SOAP Headers with Published Web Services</span></span>](../core/soap-headers-with-published-web-services.md)
