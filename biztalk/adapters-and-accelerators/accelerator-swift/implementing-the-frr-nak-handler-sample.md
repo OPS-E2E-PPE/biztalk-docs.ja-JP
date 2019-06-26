@@ -26,7 +26,7 @@ ms.locfileid: "65377386"
 
 1. [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]ソリューションを開きます。 ソリューション エクスプ ローラーでソリューションを右クリックして**追加**、 をクリックし、**既存のプロジェクト**します。  
 
-2. **既存プロジェクトの追加** ダイアログ ボックスに移動*\<ドライブ\>*: \Program Files\Microsoft BizTalk Accelerator for SWIFT\SDK\Samples\FrrHandler します。 選択**RepairSWIFTRejectedMessage.btproj**、 をクリックし、**オープン**します。  
+2. **既存プロジェクトの追加** ダイアログ ボックスに移動 *\<ドライブ\>* : \Program Files\Microsoft BizTalk Accelerator for SWIFT\SDK\Samples\FrrHandler します。 選択**RepairSWIFTRejectedMessage.btproj**、 をクリックし、**オープン**します。  
 
 3. キーを生成し、プロジェクトにキーを割り当てます。  
 

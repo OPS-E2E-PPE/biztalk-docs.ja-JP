@@ -45,7 +45,7 @@ Web サービスを発行するには、インターネット インフォメー
   
 |分離ホスト名|受信場所|  
 |------------------------|-----------------------|  
-|分離ホスト 1|HTTP_ReceiveLocation1A<br /><br /> HTTP_ReceiveLocation1B<br /><br /> SOAP_ReceiveLocation1**に注意してください。****Isolated Host 1**の使用は、SOAP および HTTP アダプターの受信ハンドラー。|  
+|分離ホスト 1|HTTP_ReceiveLocation1A<br /><br /> HTTP_ReceiveLocation1B<br /><br /> SOAP_ReceiveLocation1**に注意してください。** **Isolated Host 1**の使用は、SOAP および HTTP アダプターの受信ハンドラー。|  
 |分離ホスト 2|HTTP_ReceiveLocation2|  
   
  ごとに 1 つの受信場所を次のように、4 つの仮想ディレクトリを作成することがあります。  

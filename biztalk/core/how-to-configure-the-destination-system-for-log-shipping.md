@@ -86,10 +86,10 @@ ms.locfileid: "65340860"
   
    2.  クエリ ウィンドウに、 *\<MyLogShippingSolution\>* わかりやすい説明を単一引用符で囲みます。  
   
-   3.  クエリ ウィンドウに、 *\<BizTalkServerManagementDatabaseName\>* と*\<BizTalkServerManagementDatabaseServer\>* で名前と、単一引用符で囲まれたソース BizTalk 管理データベースの場所。  
+   3.  クエリ ウィンドウに、 *\<BizTalkServerManagementDatabaseName\>* と *\<BizTalkServerManagementDatabaseServer\>* で名前と、単一引用符で囲まれたソース BizTalk 管理データベースの場所。  
   
    > [!NOTE]
-   >  1 つ以上のソース サーバーがある場合は、独自の移行先サーバーに各送信元サーバーを復元できます。 各送信先サーバーでの **@SourceServerName = null**パラメーター、置換*null*適切なソース サーバーの名前を単一引用符で囲みます (たとえば、  **@SourceServerName = 'MySourceServer'**)。  
+   >  1 つ以上のソース サーバーがある場合は、独自の移行先サーバーに各送信元サーバーを復元できます。 各送信先サーバーでの **@SourceServerName = null**パラメーター、置換*null*適切なソース サーバーの名前を単一引用符で囲みます (たとえば、  **@SourceServerName = 'MySourceServer'** )。  
   
 8. **クエリ**メニューの  **Execute**します。  
   

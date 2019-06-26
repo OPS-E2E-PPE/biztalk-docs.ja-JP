@@ -22,7 +22,7 @@ ms.locfileid: "65400826"
 # <a name="creating-a-custom-resolver"></a>カスタム競合回避モジュールを作成します。
 リゾルバーとアダプターのプロバイダー フレームワーク実装[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]ディスパッチャーをという名前のパイプライン コンポーネントと ItineraryReceive および ItinerarySend という名前のパイプラインを使用します。  
   
- ディスパッチャーのパイプライン コンポーネントでは、次の 4 つのプロパティがあります。**検証、有効な場合は、エンドポイント、** と**MapName**します。 **エンドポイント**プロパティは、次のように値を持つ接続文字列の競合回避モジュールを含めることができます、 **UDDI:\\ \\**  (ルートを使用する解像度の種類を表しますモニカー)。  
+ ディスパッチャーのパイプライン コンポーネントでは、次の 4 つのプロパティがあります。**検証、有効な場合は、エンドポイント、** と**MapName**します。 **エンドポイント**プロパティは、次のように値を持つ接続文字列の競合回避モジュールを含めることができます、 **UDDI:\\ \\ ** (ルートを使用する解像度の種類を表しますモニカー)。  
   
 ```  
 UDDI:\\serverUrl=http://localhost/uddi;serviceName=OrderPurchaseToOrderPost;serviceProvider=Microsoft.Practices.ESB  

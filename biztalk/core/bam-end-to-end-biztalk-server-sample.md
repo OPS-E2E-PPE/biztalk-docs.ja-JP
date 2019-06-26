@@ -55,12 +55,12 @@ ms.locfileid: "65528636"
 
 5.  Orchestration2 によって入力メッセージが変更され、Orchestration3 をアクティブ化するメッセージ ボックス データベースに送信します。  
 
-6.  Orchestration3 のメッセージが変更され、フォルダーに書き込みます*\<サンプル パス\>* \BamEndToEnd\Output します。  
+6.  Orchestration3 のメッセージが変更され、フォルダーに書き込みます *\<サンプル パス\>* \BamEndToEnd\Output します。  
 
 7.  各オーケストレーションでは、BAM アクティビティ内のアクティビティ項目を更新します。  
 
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
- このサンプルで*\<サンプル パス\>* \BAM\BamEndToEnd します。  
+ このサンプルで *\<サンプル パス\>* \BAM\BamEndToEnd します。  
 
  次の表は、このサンプルのファイルとその目的を示しています。  
 
@@ -83,7 +83,7 @@ ms.locfileid: "65528636"
 |                             \Services\Orchestration1.odx                              |                                        オーケストレーションです。                                        |
 |                             \Services\Orchestration2.odx                              |                                        オーケストレーションです。                                        |
 |                             \Services\Orchestration3.odx                              |                                        オーケストレーションです。                                        |
-|                             \Services\PropertySchema.xsd                              |                                       プロパティ スキーマ :                                        |
+|                             \Services\PropertySchema.xsd                              |                                       プロパティ スキーマ :                                       |
 |                                 \Services\Schema1.xsd                                 |                                       メッセージ スキーマです。                                        |
 |                                 \Services\Schema2.xsd                                 |                                       メッセージ スキーマです。                                        |
 |                                 Services\Schema3.xsd                                  |                                       メッセージ スキーマです。                                        |
@@ -103,7 +103,7 @@ ms.locfileid: "65528636"
 
 ##  <a name="To_Build_Sample"></a>ビルドしてこのサンプルの初期化  
 
-1.  管理者は、コマンド プロンプトを開き、実行*\<サンプル パス\>* \BAM\BAMEndToEnd\Setup.bat します。 Setup.bat は、ビルドして、このサンプルの BAM インフラストラクチャを初期化します。 コマンド プロンプトは開いたままにしておきます。  
+1.  管理者は、コマンド プロンプトを開き、実行 *\<サンプル パス\>* \BAM\BAMEndToEnd\Setup.bat します。 Setup.bat は、ビルドして、このサンプルの BAM インフラストラクチャを初期化します。 コマンド プロンプトは開いたままにしておきます。  
 
 2.  Orchestration1、Orchestration2、および Orchestration3 を BAM アクティビティにマップする追跡プロファイルを作成します。 (詳細な手順がという別の手順では、追跡プロファイルの作成は複雑なプロセスなので**追跡プロファイルを作成する**します。 この手順が表示されますこのドキュメントで後述します。)  
 
@@ -139,7 +139,7 @@ ms.locfileid: "65528636"
    > [!NOTE]
    >  インストールしなかった場合[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]を C ドライブにインストールされている、ドライブ文字"C"を置き換えます[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]します。  
 
-2. 実行*\<サンプル パス\>* \BAM\BAMEndToEnd\Cleanup.bat します。 Cleanup.bat は、このサンプルの BAM インフラストラクチャを削除します。  
+2. 実行 *\<サンプル パス\>* \BAM\BAMEndToEnd\Cleanup.bat します。 Cleanup.bat は、このサンプルの BAM インフラストラクチャを削除します。  
 
 3. 手順に従います**このサンプルをビルドして初期化**このトピックの「します。  
 
@@ -157,7 +157,7 @@ ms.locfileid: "65528636"
 
 6. **オーケストレーション名**のセクション、**オーケストレーションの選択**ダイアログ ボックスで、 **BamEndToEnd.Services.Orchestration1**、 をクリックし、 **ok**.  
 
-7. 左側のウィンドウで、**追跡プロファイル エディター**ウィンドウで、右クリック **[endtoendactivity]**、順にクリックします**新しい ContinuationID**します。 新しい continuation ID の名前を付けます**orch1 _** します。 2 つの continuation Id という名前を作成するには、この手順を繰り返します**orch2 _** と**orch3 _** します。  
+7. 左側のウィンドウで、**追跡プロファイル エディター**ウィンドウで、右クリック **[endtoendactivity]** 、順にクリックします**新しい ContinuationID**します。 新しい continuation ID の名前を付けます**orch1 _** します。 2 つの continuation Id という名前を作成するには、この手順を繰り返します**orch2 _** と**orch3 _** します。  
 
 8. 右クリックして**endtoendactivity**、 をクリックし、**新しい Continuation**します。 新しい continuation の名前**orch2 _** します。 という名前のもう 1 つの continuation を作成するには、この手順を繰り返します**orch3 _** します。  
 
@@ -165,7 +165,7 @@ ms.locfileid: "65528636"
 
 10. 最後までスクロール、**コンテキスト プロパティ名**、一覧表示し、ダブルクリック**BAMEndToEnd.Services.PropertySchema.DocumentID**します。  
 
-11. 展開**\<スキーマ\>**、し、ドラッグ**DocumentID**を右側のウィンドウで**orch1 _** 左側のウィンドウでします。  
+11. 展開 **\<スキーマ\>** 、し、ドラッグ**DocumentID**を右側のウィンドウで**orch1 _** 左側のウィンドウでします。  
 
 12. 矢印の付いたフォルダー アイコンをクリックします (![フォルダーと上矢印ボタン](../core/media/abccd08b-2b01-49c6-80ed-a032bbbd10d4.gif "abccd08b-2b01-49c6-80ed-a032bbbd10d4"))、オーケストレーションを表示するには、2 回クリックします。  
 
@@ -185,7 +185,7 @@ ms.locfileid: "65528636"
 
 19. 最後までスクロール、**コンテキスト プロパティ名**、一覧表示し、ダブルクリック**BAMEndToEnd.Services.PropertySchema.DocumentID**します。  
 
-20. 展開**\<スキーマ\>**、し、ドラッグ**DocumentID**を**orch2 _** 左側のウィンドウで継続します。  
+20. 展開 **\<スキーマ\>** 、し、ドラッグ**DocumentID**を**orch2 _** 左側のウィンドウで継続します。  
 
     > [!NOTE]
     >  Orch2 _ continuation と orch2 _ continuation ID を混同しないでください。 Continuation ID を表すアイコンには、キーが含まれています (![continuation ID のアイコン](../core/media/2d04a714-ade9-4e96-b89e-00002da75bea.gif "2d04a714-ade9-4e96-b89e-00002da75bea"))、continuation を表すアイコンにキー (が含まれていません![continuation のアイコン](../core/media/test.gif "テスト"))。  
@@ -256,9 +256,9 @@ ms.locfileid: "65528636"
     > [!NOTE]
     >  Orch2 _ continuation と orch2 _ continuation ID を混同しないでください。 Continuation ID を表すアイコンには、キーが含まれています (![continuation ID のアイコン](../core/media/2d04a714-ade9-4e96-b89e-00002da75bea.gif "2d04a714-ade9-4e96-b89e-00002da75bea"))、continuation を表すアイコンにキー (が含まれていません![continuation のアイコン](../core/media/test.gif "テスト"))。  
 
-48. **ポートの選択**のセクション、**ポートの選択**ダイアログ ボックスで、 をクリックして**BamEndToEnd_ReceivePort**、クリックして-不等号 ( **>**)、をクリックし、 **OK**します。  
+48. **ポートの選択**のセクション、**ポートの選択**ダイアログ ボックスで、 をクリックして**BamEndToEnd_ReceivePort**、クリックして-不等号 ( **>** )、をクリックし、 **OK**します。  
 
-49. 追跡プロファイルを保存*\<サンプル パス\>* \BAM\BamEndToEnd\BamEndToEnd.btt します。  
+49. 追跡プロファイルを保存 *\<サンプル パス\>* \BAM\BamEndToEnd\BamEndToEnd.btt します。  
 
 ## <a name="important-details"></a>重要な詳細情報  
  パイプラインでは、追跡プロファイルはサポートされていません。 ただし、呼び出し**BeginActivity**パイプライン コンポーネントは、オーケストレーションで ActivityID の使用と同じです。 呼び出し**EnableContinuation**オーケストレーションでの continuation の使用と同じです。  

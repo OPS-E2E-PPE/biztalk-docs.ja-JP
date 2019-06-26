@@ -25,7 +25,7 @@ ms.locfileid: "65360720"
  AddResource コマンドを使用して BAM 定義を追加する BAM 定義をデプロイしません。 BAM 定義を含む .msi ファイルをインポート ウィザードを使用して、アプリケーションにインポートすると、ただし、BAM 定義は、ローカル コンピューターにデプロイされます。  
   
 ## <a name="usage"></a>使用方法  
- **BTSTask AddResource** [**/applicationname は:**<em>値</em>] **/Type:System.BizTalk:Bam****[/overwrite]** **/Source:**<em>値</em>[**/Destination:**<em>値</em>] [**/Server:** <em>値</em>] [**/database:**<em>値</em>]  
+ **BTSTask AddResource** [**/applicationname は:**<em>値</em>] **/Type:System.BizTalk:Bam**[**/overwrite**] **/Source:**<em>値</em>[**/Destination:**<em>値</em>] [**/Server:** <em>値</em>] [**/database:**<em>値</em>]  
   
 ## <a name="parameters"></a>パラメーター  
   

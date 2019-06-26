@@ -25,7 +25,7 @@ ms.locfileid: "65360500"
  処理後のスクリプトは、アプリケーションのインポート後、インストール後、またはアンインストール前に、.msi ファイルから実行されます。 」の説明に従って、アプリケーションのインポートまたはインストールする前に、または、アンインストールの後の実行処理のスクリプトを追加する、BTSTask を使用することもできます。 [AddResource コマンド。スクリプトを前処理](../core/addresource-command-preprocessing-script.md)します。 前処理と後処理スクリプトの詳細については、次を参照してください。[アプリケーション展開のカスタマイズを前処理および後処理のスクリプトを使用して](../core/using-pre-and-post-processing-scripts-to-customize-application-deployment.md)します。  
   
 ## <a name="usage"></a>使用方法  
- **BTSTask AddResource** [**/applicationname は:**<em>値</em>] **/Type:System.BizTalk:PostProcessingScript****[/Overwrite]****/Source:**<em>値</em>[**/Destination:**<em>値</em>] [**/Server:** <em>値</em>] [**/database:**<em>値</em>] [**/Property:Args ="**<em>引数リスト</em>**"**]  
+ **BTSTask AddResource** [**/applicationname は:**<em>値</em>] **/Type:System.BizTalk:PostProcessingScript**[**/Overwrite**]**/Source:**<em>値</em>[**/Destination:**<em>値</em>] [**/Server:** <em>値</em>] [**/database:**<em>値</em>] [**/Property:Args ="**<em>引数リスト</em>**"**]  
   
 ## <a name="parameters"></a>パラメーター  
   

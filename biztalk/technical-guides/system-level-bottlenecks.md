@@ -31,7 +31,7 @@ ms.locfileid: "65400678"
 ### <a name="run-the-baseline-security-analyzer"></a>Baseline Security Analyzer を実行します。  
  Baseline Security Analyzer を実行するこれらの手順に従います。  
   
-1.  ダウンロード、 [Microsoft Baseline Security Analyzer 2.2](http://go.microsoft.com/fwlink/?LinKID=204006) (http://go.microsoft.com/fwlink/?LinkId=204006)します。  
+1.  ダウンロード、 [Microsoft Baseline Security Analyzer 2.2](http://go.microsoft.com/fwlink/?LinKID=204006) (http://go.microsoft.com/fwlink/?LinkId=204006) します。  
   
 2.  ドメイン管理者アカウントを使用して、BizTalk Server と SQL Server コンピューターをホストしているのと同じネットワーク上のコンピューターにログオンします。  
   
@@ -44,7 +44,7 @@ ms.locfileid: "65400678"
 ### <a name="run-the-biztalk-server-best-practices-analyzer"></a>BizTalk Server のベスト プラクティス アナライザーを実行します。  
  BizTalk Server のベスト プラクティス アナライザーを実行するこれらの手順に従います。  
   
-1.  ダウンロード、 [BizTalk Server のベスト プラクティス アナライザー v1.2](http://go.microsoft.com/fwlink/?LinkID=83317) (http://go.microsoft.com/fwlink/?LinkID=83317)します。  
+1.  ダウンロード、 [BizTalk Server のベスト プラクティス アナライザー v1.2](http://go.microsoft.com/fwlink/?LinkID=83317) (http://go.microsoft.com/fwlink/?LinkID=83317) します。  
   
 2.  BizTalk Server 管理者セキュリティ グループの一部であるユーザー アカウントを使用して、BizTalk Server のノードにログオンします。  
   
@@ -91,7 +91,7 @@ ms.locfileid: "65400678"
 ### <a name="use-the-biztalk-msgboxviewer-tool-to-collect-information-about-the-messagebox-database"></a>BizTalk MsgBoxViewer ツールを使用して、メッセージ ボックス データベースに関する情報を収集  
  BizTalk MsgBoxViewer ツールを使用して、メッセージ ボックス データベースについての情報を収集するこれらの手順に従います。  
   
-1.  ダウンロード、 [BizTalk MsgBoxViewer ツール](http://go.microsoft.com/fwlink/?LinkID=117289)(http://go.microsoft.com/fwlink/?LinkID=117289)します。  
+1.  ダウンロード、 [BizTalk MsgBoxViewer ツール](http://go.microsoft.com/fwlink/?LinkID=117289)(http://go.microsoft.com/fwlink/?LinkID=117289) します。  
   
 2.  BizTalk Server 管理者セキュリティ グループの一部であるユーザー アカウントで BizTalk Server コンピューターにログオンします。  
   
@@ -121,7 +121,7 @@ ms.locfileid: "65400678"
   
 -   **BizTalk Server と SQL Server のイベント ログ -** の BizTalk Server または SQL Server イベント ログの簡単な調査によってかなりの診断し、解決に時間がかかる場合がありますそれ以外の場合の問題を特定します。  
   
--   **BizTalk Server ベスト プラクティス アナライザーの実行**BizTalk Server ベスト プラクティス アナライザーが BizTalk Server の展開に調べベスト プラクティス基準に関連する問題の一覧が生成されます。 ツールは、Windows Management Instrumentation (WMI) クラス、SQL Server データベース、およびレジストリ エントリなど、さまざまな情報のソースからデータを収集することにより構成レベルの検証を実行します。 データは、展開構成を評価するが使用されます。 ツールとレポートのみ、任意のシステム設定は変更されませんを読み取って自己調整ツールではありません。 BizTalk Server のダウンロードのベスト プラクティス アナライザー v1.2 から[BizTalk Server のベスト プラクティス アナライザー v1.2](http://go.microsoft.com/fwlink/?LinkID=83317) (http://go.microsoft.com/fwlink/?LinkID=83317)します。  
+-   **BizTalk Server ベスト プラクティス アナライザーの実行**BizTalk Server ベスト プラクティス アナライザーが BizTalk Server の展開に調べベスト プラクティス基準に関連する問題の一覧が生成されます。 ツールは、Windows Management Instrumentation (WMI) クラス、SQL Server データベース、およびレジストリ エントリなど、さまざまな情報のソースからデータを収集することにより構成レベルの検証を実行します。 データは、展開構成を評価するが使用されます。 ツールとレポートのみ、任意のシステム設定は変更されませんを読み取って自己調整ツールではありません。 BizTalk Server のダウンロードのベスト プラクティス アナライザー v1.2 から[BizTalk Server のベスト プラクティス アナライザー v1.2](http://go.microsoft.com/fwlink/?LinkID=83317) (http://go.microsoft.com/fwlink/?LinkID=83317) します。  
   
 ## <a name="high-level-system-bottlenecks"></a>高度なシステムのボトルネック  
  このセクションでは、BizTalk Server ソリューションと軽減策の戦略に存在する可能性のあるシステム レベルのボトルネックについて説明します。  
@@ -202,7 +202,7 @@ ms.locfileid: "65400678"
   
     -   しきい値:18 以上 (ミリ秒) することはできません。  
   
-    -   重要:このカウンターは、時間、ディスクの平均転送秒数を示します。 大量のディスクの断片化、ディスクが遅い場合、またはディスクの障害がある可能性があります。 値を乗算、 **Physical disk \avg. します。ディスク転送秒数**と**\pages/sec**カウンター。 使用可能な物理メモリを必要があるためこれらのカウンターの製品が 0.1 を超える場合に、ページングでのディスク アクセス時間、10% 以上がかかっています。  
+    -   重要:このカウンターは、時間、ディスクの平均転送秒数を示します。 大量のディスクの断片化、ディスクが遅い場合、またはディスクの障害がある可能性があります。 値を乗算、 **Physical disk \avg. します。ディスク転送秒数**と **\pages/sec**カウンター。 使用可能な物理メモリを必要があるためこれらのカウンターの製品が 0.1 を超える場合に、ページングでのディスク アクセス時間、10% 以上がかかっています。  
   
 -   **PhysicalDisk\Disk Writes/sec**  
   
@@ -238,7 +238,7 @@ ms.locfileid: "65400678"
   
 -   **-使用可能な最も効率的なディスク システムを使用して**のために使用される、物理ディスクに加えて使用されるディスク コント ローラー、ケーブル接続の種類を検討してください。 効率的なディスク サブシステムには、割り込み節度またはディスク I/O によるプロセッサの割り込み処理状況を軽減するために中断を回避することをサポートするドライバーも提供する必要があります。  
   
--   **適切な RAID 構成 - を使用していることを確認**最適なパフォーマンスとフォールト トレランスのための使用 RAID 10 (ストライピングとミラーリング)。 トレードオフは、RAID 10 を使用して高価です。 広範な書き込み操作がある場合は、RAID 5 を使用しないでください。 BizTalk Server 環境での RAID の実装に関する詳細については、「ディスク インフラストラクチャ」セクションを参照してください、 [BizTalk Server データベースの最適化に関するホワイト ペーパー](http://go.microsoft.com/fwlink/?LinkID=101578) (http://go.microsoft.com/fwlink/?LinkID=101578)します。  
+-   **適切な RAID 構成 - を使用していることを確認**最適なパフォーマンスとフォールト トレランスのための使用 RAID 10 (ストライピングとミラーリング)。 トレードオフは、RAID 10 を使用して高価です。 広範な書き込み操作がある場合は、RAID 5 を使用しないでください。 BizTalk Server 環境での RAID の実装に関する詳細については、「ディスク インフラストラクチャ」セクションを参照してください、 [BizTalk Server データベースの最適化に関するホワイト ペーパー](http://go.microsoft.com/fwlink/?LinkID=101578) (http://go.microsoft.com/fwlink/?LinkID=101578) します。  
   
 -   **検討してください - データベースのパーティションを使用して**データベース パーティションを使用して、特定のテーブルとトランザクション ログへのディスクのマッピングをデータベースのボトルネックがある場合を検討してください。 パーティションの主な目的は、大きなテーブルのディスクのボトルネックを克服するためにです。 多くの行を含むテーブルがあり、ボトルネックの原因があると判断した場合は、パーティションの使用を検討してください。 SQL server の I/O パフォーマンスを向上させるためにファイル グループを使用できます。 ファイル グループにテーブルを関連付けるし、特定のハード ディスク ファイル グループを関連付けることができます。 詳細については、BizTalk Server データベースの最適化ファイル グループを使用して、次を参照してください。[データベースのファイル グループを最適化する](~/technical-guides/optimizing-filegroups-for-the-databases2.md)します。  
   
@@ -309,7 +309,7 @@ ms.locfileid: "65400678"
   
 -   コンテキストの切り替えの率が高いを確認する場合は、プロセッサの数を増やす前に、プロセスのスレッド数を減らすことを検討してください。  
   
--   分析し、高い CPU 使用率が原因となっているアプリケーションを調整します。 ADPLUS ユーティリティを使用して、実行中のプロセスをダンプし、Windbg を使用して原因を分析することができます。 これらのユーティリティは、Windows のツールキットのデバッグの一部です。 これらのツールをダウンロードする[ツールを Windows のデバッグ](http://go.microsoft.com/fwlink/?LinkID=106624)(http://go.microsoft.com/fwlink/?LinkID=106624)します。  
+-   分析し、高い CPU 使用率が原因となっているアプリケーションを調整します。 ADPLUS ユーティリティを使用して、実行中のプロセスをダンプし、Windbg を使用して原因を分析することができます。 これらのユーティリティは、Windows のツールキットのデバッグの一部です。 これらのツールをダウンロードする[ツールを Windows のデバッグ](http://go.microsoft.com/fwlink/?LinkID=106624)(http://go.microsoft.com/fwlink/?LinkID=106624) します。  
   
 -   最長実行時間がかかっているサブシステムを分離するアプリケーションによって生成されるインストルメンテーション ログを分析します。 コード レビューを BizTalk Server 環境のチューニングだけよりは有益になるかどうかを決定します。  
   
@@ -346,7 +346,7 @@ ms.locfileid: "65400678"
   
     -   しきい値:6 つ以上の持続的な値には、ボトルネックになっていることを示します。  
   
-    -   重要:このカウンターは、ページの読み取り、ハード ページ フォールトを解決するのにはディスクに書き込まれる位置の速度を示します。 値を乗算、 **Physical disk \avg. します。ディスク転送秒数**と**\pages/sec**パフォーマンス カウンター。 これらの値の積を超えた場合**0.1**ページングが使用している 10% を超えるディスク アクセス時間は、十分な物理メモリが使用できることを示します。  
+    -   重要:このカウンターは、ページの読み取り、ハード ページ フォールトを解決するのにはディスクに書き込まれる位置の速度を示します。 値を乗算、 **Physical disk \avg. します。ディスク転送秒数**と **\pages/sec**パフォーマンス カウンター。 これらの値の積を超えた場合**0.1**ページングが使用している 10% を超えるディスク アクセス時間は、十分な物理メモリが使用できることを示します。  
   
 -   **Memory\Pool Nonpaged Bytes**  
   
@@ -410,7 +410,7 @@ ms.locfileid: "65400678"
 -   BizTalk Server 環境内のコンピューターでは、追加の物理メモリをインストールします。  
   
 > [!NOTE]
->  32 ビット システムでには、3 GB スイッチを使用する場合に BizTalk Server 2010 以降のバージョンと 3 GB、limit も増え、BizTalk が 2 GB のメモリの最大値を使用できます。 メモリ使用量の詳細については、次を参照してください。[メモリ制限の Windows リリース](http://go.microsoft.com/fwlink/?LinkId=118349)(http://go.microsoft.com/fwlink/?LinkId=118349)します。  
+>  32 ビット システムでには、3 GB スイッチを使用する場合に BizTalk Server 2010 以降のバージョンと 3 GB、limit も増え、BizTalk が 2 GB のメモリの最大値を使用できます。 メモリ使用量の詳細については、次を参照してください。[メモリ制限の Windows リリース](http://go.microsoft.com/fwlink/?LinkId=118349)(http://go.microsoft.com/fwlink/?LinkId=118349) します。  
   
 ### <a name="network-io-bottlenecks"></a>ネットワーク I/O のボトルネック  
   
@@ -445,7 +445,7 @@ ms.locfileid: "65400678"
   
     -   しきい値:ネットワーク容量の 50% 以上の持続的な値です。  
   
-    -   重要:このカウンターは、ネットワーク経由で送受信されたバイト数を示します。 高い値は、ネットワーク I/O のボトルネックを示します。 場合の合計**Bytes total/sec**すべてのサーバーがネットワークの最大転送速度をほぼ等しくなければならないのは、パフォーマンスを向上させるために、ネットワークのサブネットを検討してください。 パフォーマンスを向上させるために、ネットワークのサブネットの詳細については、次を参照してください。、**サブネット**のセクション、 [BizTalk Server データベースの最適化に関するホワイト ペーパー](http://go.microsoft.com/fwlink/?LinkID=101578) (http://go.microsoft.com/fwlink/?LinkID=101578)します。  
+    -   重要:このカウンターは、ネットワーク経由で送受信されたバイト数を示します。 高い値は、ネットワーク I/O のボトルネックを示します。 場合の合計**Bytes total/sec**すべてのサーバーがネットワークの最大転送速度をほぼ等しくなければならないのは、パフォーマンスを向上させるために、ネットワークのサブネットを検討してください。 パフォーマンスを向上させるために、ネットワークのサブネットの詳細については、次を参照してください。、**サブネット**のセクション、 [BizTalk Server データベースの最適化に関するホワイト ペーパー](http://go.microsoft.com/fwlink/?LinkID=101578) (http://go.microsoft.com/fwlink/?LinkID=101578) します。  
   
 #### <a name="resolving-network-io-bottlenecks"></a>ネットワーク I/O のボトルネックを解決します。  
  ネットワーク I/O が環境内のボトルネックであると判断した場合は、ボトルネックを解決するのには、次の方法の 1 つ以上を使用します。  

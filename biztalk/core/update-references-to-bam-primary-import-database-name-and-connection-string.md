@@ -51,13 +51,13 @@ BizTalk Server 管理者グループのメンバーとしてサインインし�
   
    - [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]\BAMPortal\BamManagementService\Web.Config.  
   
-      置換、 *\<ServerName\>* 、新しいサーバー名を含む文字列と*\<DatabaseName\>* で新しいデータベース名。 次の接続文字列を更新します。  
+      置換、 *\<ServerName\>* 、新しいサーバー名を含む文字列と *\<DatabaseName\>* で新しいデータベース名。 次の接続文字列を更新します。  
   
       \<appSettings\>  
   
-      <add key="BamServer" value="*\<ServerName\>*" /\>  
+      <add key="BamServer" value=" *\<ServerName\>* " /\>  
   
-      <add key="BamDatabase" value="*\<DatabaseName\>*" /\>  
+      <add key="BamDatabase" value=" *\<DatabaseName\>* " /\>  
   
       \<add key="MaxResultRows" value="2000" /\>  
   
@@ -65,13 +65,13 @@ BizTalk Server 管理者グループのメンバーとしてサインインし�
   
    - [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]\BAMPortal\BamQueryService\Web.Config.  
   
-      置換、 *\<ServerName\>* 、新しいサーバー名を含む文字列と*\<DatabaseName\>* で新しいデータベース名。 次の接続文字列を更新します。  
+      置換、 *\<ServerName\>* 、新しいサーバー名を含む文字列と *\<DatabaseName\>* で新しいデータベース名。 次の接続文字列を更新します。  
   
       \<appSettings\>  
   
-      \<キーの追加"BamServer"の値を = ="*\<ServerName\>*"/\>  
+      \<キーの追加"BamServer"の値を = =" *\<ServerName\>* "/\>  
   
-      \<add key="BamDatabase" value="*\<DatabaseName\>*" /\>  
+      \<add key="BamDatabase" value=" *\<DatabaseName\>* " /\>  
   
       \<add key="MaxResultRows" value="2000" /\>  
   

@@ -100,9 +100,9 @@ ms.locfileid: "65281561"
   
 1.  をクリックして**開始**、 をクリックして**実行**、型**cmd**、順にクリックします**OK**。  
   
-2.  コマンド プロンプトに移動します**\<ドライブ\>: \Program Files\MicrosoftBizTalk\<バージョン\>Accelerator for rosettanet \sdk**、キーを押しますと **」と入力。**.  
+2.  コマンド プロンプトに移動します **\<ドライブ\>: \Program Files\MicrosoftBizTalk\<バージョン\>Accelerator for rosettanet \sdk**、キーを押しますと **」と入力。** .  
   
-3.  コマンド プロンプトで「 **CertWizard/Rootkey"\<ドライブ\>: \Certs\Contoso-FabrikamCA.cer"**、押します **」と入力**します。  
+3.  コマンド プロンプトで「 **CertWizard/Rootkey"\<ドライブ\>: \Certs\Contoso-FabrikamCA.cer"** 、押します **」と入力**します。  
   
     > [!IMPORTANT]
     >  この手順は、Contoso と Fabrikam の両方のコンピューターで実行します。  

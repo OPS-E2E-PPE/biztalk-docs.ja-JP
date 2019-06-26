@@ -28,7 +28,7 @@ ms.locfileid: "65396405"
 
 - **ESB します。ExceptionHandling**します。 このプロジェクトには、オーケストレーションでメッセージ処理のエラーを処理するためのすべてのパブリック メソッドが含まれています。 ローカル サーバー上のグローバル アセンブリ キャッシュには、このプロジェクトには、アセンブリを登録する必要があります。  
 
-- **ESB します。ExceptionHandling.Schemas.Faults**します。 このプロジェクトには、名前空間で定義されたエラー メッセージのスキーマが含まれている**http://schemas.microsoft.biztalk.practices.esb.com/exceptionhandling**とシステム プロパティのスキーマ。 このプロジェクトは、Microsoft.Practices.ESB アプリケーション コンテナーをデプロイする必要があります。  
+- **ESB します。ExceptionHandling.Schemas.Faults**します。 このプロジェクトには、名前空間で定義されたエラー メッセージのスキーマが含まれている **http://schemas.microsoft.biztalk.practices.esb.com/exceptionhandling** とシステム プロパティのスキーマ。 このプロジェクトは、Microsoft.Practices.ESB アプリケーション コンテナーをデプロイする必要があります。  
 
   ESB 失敗オーケストレーションの例外ルーティング API を使用するすべてのプロジェクトでは、コア アセンブリを参照する必要があります。  
 

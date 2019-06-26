@@ -47,7 +47,7 @@ ms.locfileid: "65343968"
   
 2. 次の表に示すように、適切な値を置き換えて、次のコマンドを入力します。  
   
-    **BTSTask AddResource** [**/applicationname は:**<em>値</em>] **/Type:System.BizTalk:Certificate** **[/overwrite]****「/Thumbprint」:"**<em>値</em>**"** [**/Server:**<em>値</em>] [**/データベース:**<em>値</em>]  
+    **BTSTask AddResource** [ **/applicationname は:** <em>値</em>] **/Type:System.BizTalk:Certificate** **[/overwrite]** **「/Thumbprint」:"** <em>値</em> **"** [ **/Server:** <em>値</em>] [ **/データベース:** <em>値</em>]  
   
     例:  
   

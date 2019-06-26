@@ -65,7 +65,7 @@ MQSAgent COM + 構成ウィザードは、MQSAgent では、アダプターの C
 ## <a name="to-set-the-msdtc-security-configuration-on-the-windows-server-2008-computer-to-no-authentication-required"></a>認証を必要としないを Windows Server 2008 コンピューターで MSDTC のセキュリティ構成を設定するには  
  MQSAgent COM + アプリケーションがインストールされている場合、[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]でコンピューターと、MQSeries アダプター (これは BizTalk Server と共にインストールされます) がインストールされている、[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]または[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]コンピューター、MSDTC セキュリティ構成を[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]または[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]にコンピューターを設定する必要があります**認証を必要としない**します。 認証を必要としない MSDTC セキュリティ構成を設定する次の手順に従います。  
 
-1.  クリックして**開始**順にクリックします**コントロール パネルの **します。  
+1.  クリックして**開始**順にクリックします**コントロール パネルの** します。  
 
 2.  **［管理ツール］** をダブルクリックします。  
 
@@ -88,7 +88,7 @@ MQSAgent COM + 構成ウィザードは、MQSAgent では、アダプターの C
 
 1.  MQSAgent COM + コンポーネントの変更を有効にします。  
 
-    -   クリックして**開始**順にクリックします**コントロール パネルの **します。  
+    -   クリックして**開始**順にクリックします**コントロール パネルの** します。  
 
     -   **［管理ツール］** をダブルクリックします。  
 

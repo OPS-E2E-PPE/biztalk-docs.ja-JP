@@ -45,7 +45,7 @@ Microsoft BizTalk Adapter for TIBCO Enterprise Message Service (EMS) は、(オ�
   
 ## <a name="set-the-target-namespace"></a>ターゲットの名前空間を設定します。  
   
-1. BizTalk エディターで開き、スキーマ ファイルを右クリックして**\<スキーマ\>**、し、**プロパティ**します。  
+1. BizTalk エディターで開き、スキーマ ファイルを右クリックして **\<スキーマ\>** 、し、**プロパティ**します。  
   
 2. **プロパティ**ウィンドウで、検索、 **Namespace**フィールドし、たとえば、名前を入力`testNameSpace`します。  
   

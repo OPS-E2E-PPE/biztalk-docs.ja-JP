@@ -40,9 +40,9 @@ BizTalk 追跡 (BizTalkDTADb) データベースからデータを削除する�
   
 3.  ダブルクリックして**SQL Server エージェント**、し、**ジョブ**です。  
   
-4.  **オブジェクト エクスプ ローラーの詳細**を右クリックして**DTA Purge and Archive (BizTalkDTADb)**、し、**プロパティ**です。  
+4.  **オブジェクト エクスプ ローラーの詳細**を右クリックして**DTA Purge and Archive (BizTalkDTADb)** 、し、**プロパティ**です。  
   
-5.  **ジョブのプロパティ - DTA Purge and Archive (BizTalkDTADb)****ページの選択****手順**です。  
+5.  **ジョブのプロパティ - DTA Purge and Archive (BizTalkDTADb)** **ページの選択** **手順**です。  
   
 6.  **ジョブ ステップの一覧**を選択します**のアーカイブおよび削除**、し、**編集**します。  
   
@@ -72,7 +72,7 @@ BizTalk 追跡 (BizTalkDTADb) データベースからデータを削除する�
     declare @dtLastBackup datetime set @dtLastBackup = GetUTCDate() exec dtasp_PurgeTrackingDatabase 1, 0, 1, @dtLastBackup, 1  
     ```  
     
-9. **ジョブのプロパティ - DTA Purge and Archive (BizTalkDTADb)** ダイアログ ボックスで、**ページの選択****全般**を選択、**有効**チェック ボックスをオンし、 **OK**です。  
+9. **ジョブのプロパティ - DTA Purge and Archive (BizTalkDTADb)** ダイアログ ボックスで、**ページの選択** **全般**を選択、**有効**チェック ボックスをオンし、 **OK**です。  
   
 ## <a name="see-also"></a>参照  
  [BizTalk 追跡データベースのアーカイブおよび削除](../core/archiving-and-purging-the-biztalk-tracking-database.md)

@@ -51,15 +51,15 @@ ms.locfileid: "65377651"
 
 12. 発行ウィザード ウィンドウで、次のように選択します。**ネットワークの場所に** をクリック**次**します。  
 
-13. フォーム テンプレートのパスとファイル名 ボックスに、次のように入力します<strong>http://localhost/sites/BASSite/Templates/\<MessageType\>.xsn</strong>と種類**\<MessageType\>** フォーム テンプレートの名前をテキスト ボックスと [] をクリック **[次へ]**。  
+13. フォーム テンプレートのパスとファイル名 ボックスに、次のように入力します<strong>http://localhost/sites/BASSite/Templates/\<MessageType\>.xsn</strong>と種類 **\< MessageType\>** フォーム テンプレートの名前をテキスト ボックスと [] をクリック **[次へ]** 。  
 
 14. **[次へ]** をクリックします。  
 
 15. クリックして**パブリッシュと閉じる**します。  
 
-16. Internet Explorer で SharePoint サイトを開いて **http://localhost/sites/bassite/templates**します。  
+16. Internet Explorer で SharePoint サイトを開いて **http://localhost/sites/bassite/templates** します。  
 
-17. をポイント **\<MessageType\>**、その横にある下矢印をクリックし、順にクリックして、**プロパティの編集**します。  
+17. をポイント **\<MessageType\>** 、その横にある下矢印をクリックし、順にクリックして、**プロパティの編集**します。  
 
 18. テンプレート。\<MessageType\>ウィンドウで、[Namespace] ボックスで。  
 

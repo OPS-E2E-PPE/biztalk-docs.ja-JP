@@ -107,7 +107,7 @@ Extending Mapper サンプルを使用して、BizTalk マッパーを拡張す�
 
    2. 公開キー トークンの値をコピーします。  
 
-   3. テキスト エディターで開きます*\<サンプル パス\>* \XML Tools\ExtendingMapper\ExternalAssembly.xml します。  
+   3. テキスト エディターで開きます *\<サンプル パス\>* \XML Tools\ExtendingMapper\ExternalAssembly.xml します。  
 
    4. 選択、 <strong>assemblyname 1.0.0.0、カルチャを = = neutral, PublicKeyToken = 68496d20c737d84b"</strong>属性、および置換、 **PublicKeyToken**パブリック キー トークンの値を値でコピーした手順 c。  
 

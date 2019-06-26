@@ -29,7 +29,7 @@ ms.locfileid: "65378018"
 
  次のボキャブラリを公開するには。  
 
-- A4SWIFT_CodeLists.xml と A4SWIFT_Functions.xml ボキャブラリです。 これらにある*\<ドライブ\>*: \Program Files\Microsoft BizTalk Accelerator for SWIFT\<バージョン\>メッセージ Pack\SWIFT Messages\A4SWIFT-SRG\<バージョン\>\Base Policies\Vocabulary します。 発行し、BRE 配置ユーティリティを使用してこれらを展開します。  
+- A4SWIFT_CodeLists.xml と A4SWIFT_Functions.xml ボキャブラリです。 これらにある *\<ドライブ\>* : \Program Files\Microsoft BizTalk Accelerator for SWIFT\<バージョン\>メッセージ Pack\SWIFT Messages\A4SWIFT-SRG\<バージョン\>\Base Policies\Vocabulary します。 発行し、BRE 配置ユーティリティを使用してこれらを展開します。  
 
   発行し、次のポリシーの展開します。  
 

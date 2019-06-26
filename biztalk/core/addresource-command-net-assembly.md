@@ -25,7 +25,7 @@ ms.locfileid: "65360538"
  アプリケーションに同じ完全名の既存のアセンブリが存在する場合は、Overwrite パラメーターを指定できます。 完全名は、名前、公開キー トークン、カルチャ、およびバージョンから成ります。 この場合、既存のアセンブリは上書きされます。 依存関係の詳細については、次を参照してください。[依存関係とアプリケーションの展開](../core/dependencies-and-application-deployment.md)します。  
   
 ## <a name="usage"></a>使用方法  
- **BTSTask AddResource** [**/applicationname は:**<em>値</em>] **/Type:System.BizTalk:Assembly****[/overwrite]****/Source:**<em>値</em>[**/Destination:**<em>値</em>] [**/Options:GacOnAdd**<em>&#124;</em> **GacOnInstall**<em>&#124;</em>**GacOnImport**&#124;**RegasmOnInstall** &#124; **RegsvcsOnInstall**] [**/Server:**<em>値</em>] [**/database:** <em>値</em>]  
+ **BTSTask AddResource** [**/applicationname は:**<em>値</em>] **/Type:System.BizTalk:Assembly**[**/overwrite**]**/Source:**<em>値</em>[**/Destination:**<em>値</em>] [**/Options:GacOnAdd**<em> &#124; </em> **GacOnInstall**<em>&#124;</em>**GacOnImport**&#124;**RegasmOnInstall** &#124; **RegsvcsOnInstall**] [**/Server:**<em>値</em>] [**/database:** <em>値</em>]  
   
 ## <a name="parameters"></a>パラメーター  
   

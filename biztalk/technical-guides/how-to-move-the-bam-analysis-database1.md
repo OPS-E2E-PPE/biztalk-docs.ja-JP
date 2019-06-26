@@ -159,7 +159,7 @@ ms.locfileid: "65401817"
     > [!NOTE]  
     >  すべてのパッケージを更新するには、手順 18 ~ 21 を繰り返します。  
   
-22. をクリックして **[ok]**、順にクリック**はい**を上書きします。  
+22. をクリックして **[ok]** 、順にクリック**はい**を上書きします。  
   
 23. すべて開始[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]サービス。 詳細については、トピックを参照してください。[方法を開始、停止、一時停止、再開、または BizTalk Server サービスを再起動](http://go.microsoft.com/fwlink/?LinkId=154394)(<http://go.microsoft.com/fwlink/?LinkId=154394>) で[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]ヘルプ。  
   

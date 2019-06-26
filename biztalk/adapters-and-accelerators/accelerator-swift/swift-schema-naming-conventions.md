@@ -36,7 +36,7 @@ Microsoft[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-curre
   
 - ルートの名前は、各メッセージ スキーマ内で**SWIFT_CATEGORY*z*_MT*zxx*_Interchange**ここで、 *z*は、メッセージ カテゴリ (メッセージの種類の最初の桁) と*zxx*は、メッセージ型です。  
   
-- 各メッセージ スキーマのターゲット名前空間は**<http://schemas.microsoft.com/BizTalk/Solutions/FinancialServices/SWIFT/Category*z*/MT*zxx>**<em>ここで、* z</em>メッセージ カテゴリ (メッセージの種類の最初の桁) と*zxx*はメッセージの種類。  
+- 各メッセージ スキーマのターゲット名前空間は **<http://schemas.microsoft.com/BizTalk/Solutions/FinancialServices/SWIFT/Category*z*/MT*zxx>** <em>ここで、* z</em>メッセージ カテゴリ (メッセージの種類の最初の桁) と*zxx*はメッセージの種類。  
   
 - ドキュメントの種類が**MT * zxx**<em>ここで、* zxx</em>は、メッセージ型です。  
   
@@ -46,7 +46,7 @@ Microsoft[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-curre
   
 - 番号付き SWIFT フィールドのラベル、番号コードと省略可能な文字の書式設定後に続くシーケンス (ある場合)、わかりやすいタイトルを含める (たとえば、 **Reference_A_20C**)。  
   
-- ノードのラベルは、さまざまなフィールドの複数の形式では、  **\<*選択肢*\>**、し、各オプションは、番号付きフィールドと (たとえば、**日付_A_98A**と**DateTime_A_98C**)。  
+- ノードのラベルは、さまざまなフィールドの複数の形式では、  **\<*選択肢*\>** 、し、各オプションは、番号付きフィールドと (たとえば、**日付_A_98A**と**DateTime_A_98C**)。  
   
 - サブ フィールドの最下位レベルの要素定義の名前が続くサブ フィールドの名前から成る**型**(たとえば、 **accountType**アカウントの)。  
   

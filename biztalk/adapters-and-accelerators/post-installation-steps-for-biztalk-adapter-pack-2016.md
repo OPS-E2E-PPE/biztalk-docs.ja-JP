@@ -71,7 +71,7 @@ Wcf-oracledb アダプターを使用または生成されたアダプターを�
 > - *NewVersion* Oracle.DataAccess.dll ファイルをコンピューターにインストールされているのバージョンに基づいて更新する値が必要です。  Oracle.DataAccess.dll は、Oracle からインストールする Oracle クライアントと共に含まれます。  Oracle クライアント バージョンをインストールする必要がありますのみ[BizTalk Adapter Pack でサポートされている](http://social.technet.microsoft.com/wiki/contents/articles/17631.biztalk-server-supported-line-of-business-lob-and-enterprise-systems.aspx)します。  
 
 ## <a name="create-sql-server-database-objects-sap-adapter-only"></a>SQL Server データベース オブジェクト (SAP アダプターのみ) を作成します。  
- SAP システムで Trfc を呼び出すには、実行、 *SapAdapter-DbScript-Install.sql* SQL スクリプト。 このスクリプトがインストールされている、[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]インストールでは、SQL Server のデータベース オブジェクトを作成します。 スクリプトは通常にインストールされて*\<インストール ドライブ\>: \Program Files\Microsoft [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]* します。 Trfc を呼び出すため、アダプターを使用しているときにそのデータベース名を入力する場合に限り、任意の SQL Server データベースに対してこのスクリプトを実行できます。
+ SAP システムで Trfc を呼び出すには、実行、 *SapAdapter-DbScript-Install.sql* SQL スクリプト。 このスクリプトがインストールされている、[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]インストールでは、SQL Server のデータベース オブジェクトを作成します。 スクリプトは通常にインストールされて *\<インストール ドライブ\>: \Program Files\Microsoft [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]* します。 Trfc を呼び出すため、アダプターを使用しているときにそのデータベース名を入力する場合に限り、任意の SQL Server データベースに対してこのスクリプトを実行できます。
 
 ## <a name="register-the-adapter-bindings"></a>アダプターのバインドを登録します。
 中に、[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]インストール、セットアップ ウィザードがアダプター バインドまたは、.NET Framework Data Provider for mySAP Business Suite を登録に失敗する可能性があります。 アダプターのインストール、セットアップが続行されます。 これは、Windows Communication Foundation (WCF) のインストールによって発生する可能性があります、[!INCLUDE[afproductnamelong](../includes/afproductnamelong-md.md)]インストール、または壊れている machine.config ファイル。  
@@ -79,7 +79,7 @@ Wcf-oracledb アダプターを使用または生成されたアダプターを�
 > [!IMPORTANT]
 > 次の手順を完了*のみ*machine.config ファイルで、アダプターのバインド、または .NET Framework データ プロバイダーを登録するセットアップ ウィザードが失敗した場合。  
 
-1. コンピューターの machine.config ファイルに移動します。 たとえば、32 ビット プラットフォームで、machine.config はで使用可能な*\<システム ドライブ\>: \WINDOWS\Microsoft.NET\Framework\\< バージョン\>\CONFIG*します。  
+1. コンピューターの machine.config ファイルに移動します。 たとえば、32 ビット プラットフォームで、machine.config はで使用可能な *\<システム ドライブ\>: \WINDOWS\Microsoft.NET\Framework\\< バージョン\>\CONFIG*します。  
 
 2. テキスト エディターを使用してファイルを開きます。  
 

@@ -47,7 +47,7 @@ BAM イベント Api を使用して BAM ソリューションの実装、また
   
 ### <a name="to-register-bam-interceptor-performance-counters-by-using-installutilexe"></a>InstallUtil.exe を使用して BAM インターセプターのパフォーマンス カウンターを登録するには  
   
-1. 開始**[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]コマンド プロンプト**に管理者として。  
+1. 開始 **[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]コマンド プロンプト**に管理者として。  
   
 2. コマンド プロンプトで次のコマンドを入力します。  
   

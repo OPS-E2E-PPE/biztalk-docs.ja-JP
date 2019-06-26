@@ -61,13 +61,13 @@ ms.locfileid: "65337063"
   
 1. クリックして**開始**、 をクリックして**すべてのプログラム**、 をクリックして[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]、順にクリックします**BizTalk Server 管理**します。  
   
-2. コンソール ツリーで、展開[!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]、ポリシーをインポートするために展開する BizTalk グループを展開**アプリケーション**、順に展開**\<すべての成果物\>**.  
+2. コンソール ツリーで、展開[!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]、ポリシーをインポートするために展開する BizTalk グループを展開**アプリケーション**、順に展開 **\<すべての成果物\>** .  
   
 3. 右クリックして**ポリシー**、 をクリックし、**インポート**します。  
   
 4. [参照] をクリックして、ポリシーを含む .xml ファイルに**オープン**します。  
   
-    ポリシーがグループにインポートされに表示されます、**ポリシー**フォルダーの**\<すべての成果物\>** します。  
+    ポリシーがグループにインポートされに表示されます、**ポリシー**フォルダーの **\<すべての成果物\>** します。  
   
 #### <a name="using-the-command-line"></a>コマンドラインを使用  
   
@@ -75,7 +75,7 @@ ms.locfileid: "65337063"
   
 2. 次の表に示すように、適切な値を置き換えて、次のコマンドを入力します。  
   
-    **BTSTask ImportApp /Package:** *value* [**/ApplicationName:**<em>value</em>] **[/Overwrite]** [**/Server:**<em>value</em>] [**/Database:**<em>value</em>]  
+    **BTSTask ImportApp /Package:** *value* [ **/ApplicationName:** <em>value</em>] **[/Overwrite]** [ **/Server:** <em>value</em>] [ **/Database:** <em>value</em>]  
   
     例:  
   

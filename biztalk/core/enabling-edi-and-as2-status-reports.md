@@ -37,7 +37,7 @@ ms.locfileid: "65349909"
   
 ### <a name="to-enable-edi-status-reports-for-an-agreement"></a>アグリーメントの EDI 状態レポート機能を有効にするには  
   
-1.  **[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理**コンソールで、をクリックして、**パーティ**ノードの下、[!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]と**BizTalk グループ**ノード。  
+1. **[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理**コンソールで、をクリックして、**パーティ**ノードの下、[!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]と**BizTalk グループ**ノード。  
   
 2. **パーティとビジネス プロファイル**ウィンドウで、状態レポートを有効にする X12 または EDIFACT アグリーメントのパーティをクリックします。  
   

@@ -33,7 +33,7 @@ ms.locfileid: "65393399"
   
 -   Microsoft.BizTalk.BAM.EventObservation.dll をコンピューターにインストールする必要があります。 2 つの方法で DLL を入手できます。  
   
-    -   BAM ツールをインストールするのにには、BizTalk Server 構成マネージャーを使用します。 レジストリのアップグレードに適切なエントリに配置するために、Configuration Manager を使用することをお勧めします。 BAM を構成する方法の詳細については、次を参照してください。[を構成する BAM ツールを使用して、Configuration Manager](http://go.microsoft.com/fwlink/?LinkId=70561) (http://go.microsoft.com/fwlink/?LinkId=70561)します。  
+    -   BAM ツールをインストールするのにには、BizTalk Server 構成マネージャーを使用します。 レジストリのアップグレードに適切なエントリに配置するために、Configuration Manager を使用することをお勧めします。 BAM を構成する方法の詳細については、次を参照してください。[を構成する BAM ツールを使用して、Configuration Manager](http://go.microsoft.com/fwlink/?LinkId=70561) (http://go.microsoft.com/fwlink/?LinkId=70561) します。  
   
     -   既にインストールされているコンピューターから DLL をコピーします。 Microsoft BizTalk Server で、DLL が存在する\<バージョン\>\Tracking フォルダー。  
   

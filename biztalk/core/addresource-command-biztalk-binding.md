@@ -41,7 +41,7 @@ ms.locfileid: "65360652"
    詳細については、次を参照してください。 [BizTalk アプリケーションをインポートする方法](../core/how-to-import-a-biztalk-application.md)します。 バインド ファイルの使用に関する背景情報は、次を参照してください。[バインド ファイルとアプリケーションの展開](../core/binding-files-and-application-deployment.md)します。  
   
 ## <a name="usage"></a>使用方法  
- **BTSTask AddResource** [**/applicationname は:"**<em>値</em>**"**] **/Type:System.BizTalk:BizTalkBinding/Property:TargetEnvironment="**<em>値</em>**"** **[/overwrite]** **/source:**<em>値</em>[**/Server:**<em>値</em>] [**/database:**<em>値</em>]  
+ **BTSTask AddResource** [**/applicationname は:"**<em>値</em>**"**] **/Type:System.BizTalk:BizTalkBinding/Property:TargetEnvironment="**<em>値</em>**"** [**/overwrite**] **/source:**<em>値</em>[**/Server:**<em>値</em>] [**/database:**<em>値</em>]  
   
 ## <a name="parameters"></a>パラメーター  
   

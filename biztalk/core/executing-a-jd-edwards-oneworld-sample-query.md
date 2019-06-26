@@ -314,13 +314,13 @@ JD Edwards OneWorld (JDEOW) システムがからアクセスできる、 [!INCL
   
 7. プロパティに次の値を入力または選択します。  
   
-    **[名前]**:JDE_`FileInLoc`  
+    **[名前]** :JDE_`FileInLoc`  
   
-    **[種類]**:**[最近使ったファイル]**  
+    **[種類]** : **[最近使ったファイル]**  
   
-    **受信ハンドラー**:**[Biztalkserverapplication]**  
+    **受信ハンドラー**: **[Biztalkserverapplication]**  
   
-    **受信パイプライン**:**[Xmlreceive]**  
+    **受信パイプライン**: **[Xmlreceive]**  
   
     ![](../core/media/jdeow-filein-loc-receivelocationproperties.gif "JDEOW_FileIn_Loc_ReceiveLocationProperties")  
   
@@ -328,15 +328,15 @@ JD Edwards OneWorld (JDEOW) システムがからアクセスできる、 [!INCL
   
     ![](../core/media/jdeow-file-transport-properties-filein.gif "JDEOW_File_Transport_Properties_FileIn")  
   
-9. クリックして**\<None\>** の**JDE_OW_Port**ドロップダウン リストでします。  
+9. クリックして **\<None\>** の**JDE_OW_Port**ドロップダウン リストでします。  
   
 10. 選択**新しい送信ポートを**選択するか、次のプロパティの値を入力します。  
   
      **名前**: `JDE_OW_Port`  
   
-     **[種類]**:**JDE_OneWorld**  
+     **[種類]** :**JDE_OneWorld**  
   
-     **送信ハンドラー**:**[Biztalkserverapplication]**  
+     **送信ハンドラー**: **[Biztalkserverapplication]**  
   
      **パイプライン**:**XMLTransmit**と**XMLReceive**  
   
@@ -362,17 +362,17 @@ JD Edwards OneWorld (JDEOW) システムがからアクセスできる、 [!INCL
   
 12. **[OK]** を 2 回クリックしてダイアログ ボックスを閉じます。  
   
-13. 構成 Applicationwindow で、クリックして**\<None\>** の**JDE_FileOut**ドロップダウン リストでします。  
+13. 構成 Applicationwindow で、クリックして **\<None\>** の**JDE_FileOut**ドロップダウン リストでします。  
   
 14. **[新しい送信ポート]** を選択し、プロパティの値を次のとおりに入力または選択します。  
   
      **名前**: `FileOutPort`  
   
-     **[種類]**:**[最近使ったファイル]**  
+     **[種類]** : **[最近使ったファイル]**  
   
-     **送信ハンドラー**:**[Biztalkserverapplication]**  
+     **送信ハンドラー**: **[Biztalkserverapplication]**  
   
-     **送信パイプライン**:**[Xmltransmit]**  
+     **送信パイプライン**: **[Xmltransmit]**  
   
 15. **[構成]** をクリックし、`C:\Labs\JDE_OW_Test\FileOut` に「 **C:\Labs\PS_Test\FileOut** 」と入力します。 **[ファイル名]** に「 **%MessageID%.xml** because this results in a unique file に「 each message.  
   

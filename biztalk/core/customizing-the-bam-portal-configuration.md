@@ -163,7 +163,7 @@ BAM ポータルで構成可能なオプションを数多くあります。 次
 
 1. コマンド プロンプトを開きます。  
 
-2. 実行**C:\Program files \microsoft SQL Server\90\Notification Services\9.0.242\Bin\nscontrol register bamalerts という名前のサーバー**<em>\<サーバー名\></em> を置き換えます*\<サーバー名\>* サーバーの名前に置き換えます。  
+2. 実行**C:\Program files \microsoft SQL Server\90\Notification Services\9.0.242\Bin\nscontrol register bamalerts という名前のサーバー**<em>\<サーバー名\></em> を置き換えます *\<サーバー名\>* サーバーの名前に置き換えます。  
 
 3. F5 キーを押して、ブラウザーを更新します。  
 

@@ -30,7 +30,7 @@ ms.locfileid: "65398345"
 BizTalk Web サービス公開ウィザードを実行すると、Web サービスに SOAP ヘッダーが追加されます。 SOAP ヘッダーをサポートする Web サービスを公開すると、追加されたヘッダーは、SOAP ヘッダーの文字列表記を含むコンテキスト プロパティとして、オーケストレーションおよびパイプライン コンポーネントに対して使用可能となります。  
   
 ## <a name="defined-soap-headers"></a>定義済みの SOAP ヘッダー  
- ウィザードを使用して、定義済みの SOAP ヘッダーを追加すると、ウィザードによってコンテキスト プロパティが作成されます。このプロパティには、SOAP ヘッダーのルート要素に対応する名前が付けられます。 定義済みのすべての SOAP ヘッダー コンテキスト プロパティは、名前空間を持つ **http://schemas.microsoft.com/BizTalk/2003/SOAPHeader**します。 SOAP ヘッダーのコンテキスト プロパティは、SOAP アダプタによって SOAP 要求が BizTalk メッセージに変換されるときに作成されます。  
+ ウィザードを使用して、定義済みの SOAP ヘッダーを追加すると、ウィザードによってコンテキスト プロパティが作成されます。このプロパティには、SOAP ヘッダーのルート要素に対応する名前が付けられます。 定義済みのすべての SOAP ヘッダー コンテキスト プロパティは、名前空間を持つ **http://schemas.microsoft.com/BizTalk/2003/SOAPHeader** します。 SOAP ヘッダーのコンテキスト プロパティは、SOAP アダプタによって SOAP 要求が BizTalk メッセージに変換されるときに作成されます。  
   
  簡単な SOAP 要求の例を次に示します。  
   
@@ -58,7 +58,7 @@ BizTalk Web サービス公開ウィザードを実行すると、Web サービ�
 ```  
   
 ## <a name="unknown-soap-headers"></a>不明な SOAP ヘッダー  
- ウィザードで不明な SOAP ヘッダーをサポートするために選択した場合、コンテキスト プロパティは、名前と作成されます**UnknownHeaders**と名前空間 **http://schemas.microsoft.com/BizTalk/2003/soap-properties**します。 **UnknownHeaders**コンテキスト プロパティには、すべての受信の不明な SOAP ヘッダーが含まれています。  
+ ウィザードで不明な SOAP ヘッダーをサポートするために選択した場合、コンテキスト プロパティは、名前と作成されます**UnknownHeaders**と名前空間 **http://schemas.microsoft.com/BizTalk/2003/soap-properties** します。 **UnknownHeaders**コンテキスト プロパティには、すべての受信の不明な SOAP ヘッダーが含まれています。  
   
  たとえば、ルート要素名を持つの不明な SOAP ヘッダーを受信する**CustomerGroup**、 **UnknownHeaders**コンテキスト プロパティには、文字列が含まれています。  
   

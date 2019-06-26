@@ -56,7 +56,7 @@ ms.locfileid: "65400299"
     position="0" serviceInstanceId="" />  
 ```  
   
- このオーケストレーション サービス**\<サービス\>** 要素を図 2 に示すようにフィルターのプロパティを持つ直接バインドされたオーケストレーションを指定します。 オーケストレーションが値を持つメッセージのみにサブスクライブしていることに注意してください**Microsoft.Practices.ESB.Services.Transform**の、 **ServiceName**コンテキスト プロパティ、値 **。保留中**の**ServiceState**コンテキスト プロパティ、およびオーケストレーションの値を**ServiceType**コンテキスト プロパティ。  
+ このオーケストレーション サービス **\<サービス\>** 要素を図 2 に示すようにフィルターのプロパティを持つ直接バインドされたオーケストレーションを指定します。 オーケストレーションが値を持つメッセージのみにサブスクライブしていることに注意してください**Microsoft.Practices.ESB.Services.Transform**の、 **ServiceName**コンテキスト プロパティ、値 **。保留中**の**ServiceState**コンテキスト プロパティ、およびオーケストレーションの値を**ServiceType**コンテキスト プロパティ。  
   
  ![フィルター式](../esb-toolkit/media/ch6-filterexpression.gif "Ch6 FilterExpression")  
   

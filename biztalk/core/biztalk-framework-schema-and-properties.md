@@ -20,7 +20,7 @@ ms.lasthandoff: 05/07/2019
 ms.locfileid: "65358044"
 ---
 # <a name="biztalk-framework-schema-and-properties"></a>BizTalk Framework スキーマおよびプロパティ
-**http://schemas.microsoft.com/BizTalk/2003/btf2-properties**名前空間には、BizTalk Framework 逆アセンブラー パイプライン コンポーネントのメッセージおよび部分コンテキスト プロパティを設定するために使用できるプロパティが含まれています。 BizTalk Framework 逆アセンブラー パイプライン コンポーネントでは、これらのプロパティを使用して作成されるメッセージの適切なヘッダーを生成します。 次の表では、BizTalk Framework のプロパティについて説明します。  
+** http://schemas.microsoft.com/BizTalk/2003/btf2-properties **名前空間には、BizTalk Framework 逆アセンブラー パイプライン コンポーネントのメッセージおよび部分コンテキスト プロパティを設定するために使用できるプロパティが含まれています。 BizTalk Framework 逆アセンブラー パイプライン コンポーネントでは、これらのプロパティを使用して作成されるメッセージの適切なヘッダーを生成します。 次の表では、BizTalk Framework のプロパティについて説明します。  
 
 ## <a name="properties-list"></a>[プロパティ]  
 

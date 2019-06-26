@@ -36,7 +36,7 @@ ms.locfileid: "65345570"
  サンプル ファイル アダプターは、他のカスタム アダプターを作成するテンプレートとして使用できます。  
 
 ## <a name="where-to-find-this-sample"></a>このサンプルの場所  
- \<*パスのサンプル*\>**\AdaptersDevelopment\File アダプター**  
+ \<*パスのサンプル*\> **\AdaptersDevelopment\File アダプター**  
 
 > [!NOTE]
 >  既定の場所\<*サンプル パス*\>は *%programfiles%* \Microsoft BizTalk Server\SDK\Samples 32 ビットを実行するコンピューターで BizTalk Server がインストールされている場合Windows のバージョンです。 既定の場所\<*サンプル パス*\>は *%programfiles (x86) %* \Microsoft BizTalk Server\SDK\Samples 64 を実行するコンピューターに BizTalk Server がインストールされている場合Windows のビットのバージョンです。 関連付けられている値を決定する、 *%programfiles%* または *%programfiles (x86) %* 環境変数の型**echo %programfiles%** または**echo %%Programfiles (x86) %** コマンド プロンプトで ENTER キーを押します。 このサンプルを 64 ビットのオペレーティング システムを実行から .reg ファイルのいずれかのすべての参照を変更する必要があります **%programfiles%** に **%programfiles (x86) %** .reg ファイルを実行する前にします。  
@@ -93,7 +93,7 @@ ms.locfileid: "65345570"
     > [!NOTE]
     >  コマンド プロンプトを管理者として実行します。  
 
-2.  現在のディレクトリを変更、 \<*サンプル パス*\>**\AdaptersDevelopment\BaseAdapter\v1.0.2**ディレクトリ。  
+2.  現在のディレクトリを変更、 \<*サンプル パス*\> **\AdaptersDevelopment\BaseAdapter\v1.0.2**ディレクトリ。  
 
 3.  コマンド プロンプトで「 **sn – k BaseAdapter.snk**し、ENTER キーを押します。 以前に実行されているその他のサンプルの結果としてこの .snk ファイルが既にあります。 そうである場合、手順 4 と、この手順をスキップする権利を移動できます。  
 
@@ -107,7 +107,7 @@ ms.locfileid: "65345570"
 
 1.  をクリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**アクセサリ**、順にクリックします**Windows エクスプ ローラー**します。  
 
-2.  移動し、 \<*サンプル パス*\>**"\AdaptersDevelopment\File Adapter\Runtime"** ディレクトリ、およびダブルクリック**DotNetFile.sln**.  
+2.  移動し、 \<*サンプル パス*\> **"\AdaptersDevelopment\File Adapter\Runtime"** ディレクトリ、およびダブルクリック**DotNetFile.sln**.  
 
 3.  ソリューション エクスプ ローラーで、アダプタのレシーバ ランタイム プロジェクトを再構築するを右クリックして**DotNetFile**、 をクリックし、**リビルド**。  
 
@@ -115,7 +115,7 @@ ms.locfileid: "65345570"
 
 #### <a name="to-build-the-adapter-design-time-project"></a>アダプター デザイン時のプロジェクトをビルドするには  
 
-1.  Windows エクスプ ローラーに移動、 \<*サンプル パス*\>**"\AdaptersDevelopment\File Adapter\Design \adapter Management"** ディレクトリ、およびダブルクリックします**AdapterManagement.sln**します。  
+1.  Windows エクスプ ローラーに移動、 \<*サンプル パス*\> **"\AdaptersDevelopment\File Adapter\Design \adapter Management"** ディレクトリ、およびダブルクリックします**AdapterManagement.sln**します。  
 
 2.  ソリューション エクスプ ローラーで右クリック**AdapterManagement**、 をクリックし、**リビルド**します。  
 
@@ -123,7 +123,7 @@ ms.locfileid: "65345570"
 
 #### <a name="to-register-the-sample-static-adapter"></a>サンプルの静的アダプターを登録するには  
 
-1. Windows エクスプ ローラーに移動、 \<*サンプル パス*\>**"\AdaptersDevelopment\File アダプター"** ディレクトリ。  
+1. Windows エクスプ ローラーに移動、 \<*サンプル パス*\> **"\AdaptersDevelopment\File アダプター"** ディレクトリ。  
 
 2. サンプル アダプターをレジストリに追加するには、ダブルクリック**StaticAdapterManagement.reg**します。  
 
@@ -133,7 +133,7 @@ ms.locfileid: "65345570"
    > [!IMPORTANT]
    >  BizTalk を 64 ビット コンピューターにインストールすると、hkey_classes_root \clsid\ レジストリ エントリのすべてのインスタンスを hkey_classes_root \wow6432node\clsid\ に変更、 **StaticAdapterManagement.reg**レジストリ ファイル。  
 
-3. **レジストリ エディター**ダイアログ ボックスで、をクリックして**はい**サンプル アダプターをレジストリに追加し、クリックする **[ok]**。  
+3. **レジストリ エディター**ダイアログ ボックスで、をクリックして**はい**サンプル アダプターをレジストリに追加し、クリックする **[ok]** 。  
 
 4. Windows エクスプ ローラーを閉じる、**ファイル** メニューのをクリックして**閉じます**します。  
 
@@ -175,11 +175,11 @@ ms.locfileid: "65345570"
 
 2. BizTalk Server のインストール ドライブには、次のフォルダーを作成します。  
 
-   -   *\<drive\>*:**\Temp**  
+   -   *\<drive\>* : **\Temp**  
 
-   -   *\<drive\>*:**\Temp\Send**  
+   -   *\<drive\>* : **\Temp\Send**  
 
-   -   *\<drive\>*:**\Temp\Receive**  
+   -   *\<drive\>* : **\Temp\Receive**  
 
 3. Windows エクスプ ローラーを閉じる、**ファイル** メニューのをクリックして**閉じます**します。  
 
@@ -210,8 +210,8 @@ ms.locfileid: "65345570"
     |      プロパティ      |                                                                                                                                                                                   目的                                                                                                                                                                                   |
     |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     |      **名前**      |                                                                                                                                                                             型**AdapterSend**します。                                                                                                                                                                              |
-    | **トランスポートの種類** | 選択**静的** をクリックして、ドロップダウン リストから**構成**します。<br /><br /> -、**ディレクトリ**ボックスに「***\<ドライブ\>*:\Temp\Send**します。<br />-、**ファイル モード**ボックスで、 **CreateNew**します。<br />-、**ファイル名**ボックスに「 **%MessageID%.xml**します。<br />- **OK**します。<br />- **URI**フィールドを表示する必要があります ***\<ドライブ\>*:\Temp\Send\\%MessageID%.xml**します。 |
-    | **送信パイプライン**  |                                                                                                                                   選択**PassThruTransmit (Microsoft.BizTalk.DefaultPipelines.PassThruTransmit)**、 をクリックし、 **OK**。                                                                                                                                    |
+    | **トランスポートの種類** | 選択**静的** をクリックして、ドロップダウン リストから**構成**します。<br /><br /> -、**ディレクトリ**ボックスに「* **\<ドライブ\>*:\Temp\Send**します。<br />-、**ファイル モード**ボックスで、 **CreateNew**します。<br />-、**ファイル名**ボックスに「 **%MessageID%.xml**します。<br />- **OK**します。<br />- **URI**フィールドを表示する必要があります * **\<ドライブ\>*:\Temp\Send\\%MessageID%.xml**します。 |
+    | **送信パイプライン**  |                                                                                                                                   選択**PassThruTransmit (Microsoft.BizTalk.DefaultPipelines.PassThruTransmit)** 、 をクリックし、 **OK**。                                                                                                                                    |
 
 
 11. 下、 **BizTalk アプリケーション 1**  ノードをクリック**受信ポート**、選択および**新規/一方向の受信ポート**します。  
@@ -231,7 +231,7 @@ ms.locfileid: "65345570"
     |----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     |       **名前**       |                                                                                                                                                                                     型**AdapterReceiveLocation**                                                                                                                                                                                     |
     |  **トランスポートの種類**  |                                                                                                                                                  選択**静的**ヒットし、ドロップダウン リストから**構成**にこれらの残りのプロパティにアクセスします。                                                                                                                                                  |
-    |       **URI**        | 省略記号ボタンをクリックします (**.**).<br />-、**数 Of Files In Batch**ボックスに「 **20**します。<br />-、**ディレクトリ**ボックスに「***\<ドライブ\>*:\Temp\Receive**します。<br />-、**ファイル マスク**プロパティに設定されて **\*.xml**します。<br />-、**のポーリング間隔**ボックスに「 **5**、 をクリック**OK**します。<br />-、 **URI**ラベルが含まれます ***\<ドライブ\>*:\Temp\Receive\\\*.xml**します。 |
+    |       **URI**        | 省略記号ボタンをクリックします ( **.** ).<br />-、**数 Of Files In Batch**ボックスに「 **20**します。<br />-、**ディレクトリ**ボックスに「* **\<ドライブ\>*:\Temp\Receive**します。<br />-、**ファイル マスク**プロパティに設定されて **\*.xml**します。<br />-、**のポーリング間隔**ボックスに「 **5**、 をクリック**OK**します。<br />-、 **URI**ラベルが含まれます * **\<ドライブ\>*:\Temp\Receive\\\*.xml**します。 |
     | **受信ハンドラー**  |                                                                                                                                                                      選択**BizTalkServerApplication**ドロップダウン リストから。                                                                                                                                                                       |
     | **受信パイプライン** |                                                                                                                                                                             選択**XMLReceive**ドロップダウン リストから。                                                                                                                                                                              |
 
@@ -247,7 +247,7 @@ ms.locfileid: "65345570"
 
 1.  開始**Visual Studio コマンド プロンプト**します。  
 
-2.  コマンド プロンプトで、現在のディレクトリを変更する、 \<*サンプル パス*\>**\AdaptersDevelopment\File Adapter\BizTalk Project\Adapter ハーネス**ディレクトリ。  
+2.  コマンド プロンプトで、現在のディレクトリを変更する、 \<*サンプル パス*\> **\AdaptersDevelopment\File Adapter\BizTalk Project\Adapter ハーネス**ディレクトリ。  
 
 3.  コマンド プロンプトで「 **sn – k AdapterHarness.snk**と入力し、します。  
 
@@ -320,15 +320,15 @@ ms.locfileid: "65345570"
 
 ##### <a name="to-test-the-sample-static-adapter-runtime"></a>サンプルの静的アダプターのランタイムをテストするには  
 
-1.  Windows エクスプ ローラーに移動、 \<*サンプル パス*\>**\AdaptersDevelopment\File アダプター**ディレクトリ、および InstanceXML.xml ファイルをクリップボードにコピーします。  
+1.  Windows エクスプ ローラーに移動、 \<*サンプル パス*\> **\AdaptersDevelopment\File アダプター**ディレクトリ、および InstanceXML.xml ファイルをクリップボードにコピーします。  
 
-2.  移動します*\<ドライブ\>*:**\Temp\Receive** Instance.xml ファイルをフォルダーに貼り付けます。  
+2.  移動します *\<ドライブ\>* : **\Temp\Receive** Instance.xml ファイルをフォルダーに貼り付けます。  
 
-     場合、送信と受信アダプターが作業しているから、ファイルを移動する必要があります、 *\<ドライブ\>*:**\Temp\Receive**フォルダーを*\<ドライブ\>* :**\Temp\Send**フォルダー。  
+     場合、送信と受信アダプターが作業しているから、ファイルを移動する必要があります、 *\<ドライブ\>* : **\Temp\Receive**フォルダーを *\<ドライブ\>* : **\Temp\Send**フォルダー。  
 
 ##### <a name="to-test-the-sample-add-adapter-wizard-functionality-for-the-sample-static-adapter"></a>サンプルの静的アダプターのサンプル アダプターの追加ウィザードの機能をテストするには  
 
-1. [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]、ソリューション エクスプ ローラーで右クリック **[adapterharnessproject]**、をポイント**追加**、クリックして**生成した項目の追加**です。  
+1. [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]、ソリューション エクスプ ローラーで右クリック **[adapterharnessproject]** 、をポイント**追加**、クリックして**生成した項目の追加**です。  
 
 2. **生成項目の追加 - [adapterharnessproject]** ダイアログ ボックスで、をクリックして**アダプター メタデータの追加**、順にクリックします**オープン**します。  
 

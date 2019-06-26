@@ -24,7 +24,7 @@ ms.lasthandoff: 05/07/2019
 ms.locfileid: "65361921"
 ---
 # <a name="accessing-soap-headers-in-pipeline-components"></a>パイプライン コンポーネントでの SOAP ヘッダーへのアクセス
-パイプライン コンポーネントでは、SOAP ヘッダーのコンテキスト プロパティにアクセスできます。 コンテキスト プロパティ名とターゲットの名前空間の組み合わせを使用する **http://schemas.microsoft.com/BizTalk/2003/SOAPHeader**します。  
+パイプライン コンポーネントでは、SOAP ヘッダーのコンテキスト プロパティにアクセスできます。 コンテキスト プロパティ名とターゲットの名前空間の組み合わせを使用する **http://schemas.microsoft.com/BizTalk/2003/SOAPHeader** します。  
   
  次のコード例は、要求 SOAP ヘッダーを受信パイプライン コンポーネントのプロパティの取得**OrigDest**:  
   

@@ -78,7 +78,7 @@ DTA Archive and Purge SQL Server エージェント ジョブには、格納さ�
   
 12. **Microsoft SQL Server Management Studio**、ダブルクリック**データベース**、ダブルクリック、 **BizTalkDTADb**データベースをダブルクリックします**プログラミング**、 をクリックし、 **Stored Procedures**します。  
   
-13. **オブジェクト エクスプ ローラーの詳細**ウィンドウで、右クリックして **[dtasp_purgeallcompletedtrackingdata]**、順にクリックします**ストアド プロシージャの実行**します。  
+13. **オブジェクト エクスプ ローラーの詳細**ウィンドウで、右クリックして **[dtasp_purgeallcompletedtrackingdata]** 、順にクリックします**ストアド プロシージャの実行**します。  
   
 14. **プロシージャの実行**ダイアログ ボックスで、をクリックして**OK**します。  
   
@@ -106,7 +106,7 @@ DTA Archive and Purge SQL Server エージェント ジョブには、格納さ�
   
      **net start**  *\<IISserviceName\>*  
   
-     場所*\<IISserviceName\>* 再起動する IIS サービスの名前を指定します。 各 IIS サービスは、このコマンドを繰り返す必要があります。  
+     場所 *\<IISserviceName\>* 再起動する IIS サービスの名前を指定します。 各 IIS サービスは、このコマンドを繰り返す必要があります。  
   
 ## <a name="see-also"></a>参照  
  [アーカイブおよび BizTalk 追跡データベースの削除](../core/archiving-and-purging-the-biztalk-tracking-database.md)   

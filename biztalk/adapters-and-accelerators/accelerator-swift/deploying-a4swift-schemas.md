@@ -78,7 +78,7 @@ ms.locfileid: "65378354"
   
 4.  プロジェクトを右クリックし、[**追加**、] をクリックし、**既存項目の追加**します。  
   
-5.  **既存項目の追加** ダイアログ ボックスで、**検索**ドロップダウン ボックスに移動**\<ドライブ\>: \Program Files\Microsoft BizTalk Accelerator for SWIFT \<バージョン\>メッセージ Pack\SWIFT Messages\A4SWIFT-SRG\<バージョン\>\Category n\MTxxx**します。 インスタンス メッセージの種類のスキーマを選択**MT103.xsd**、 をクリックし、**追加**します。  
+5.  **既存項目の追加** ダイアログ ボックスで、**検索**ドロップダウン ボックスに移動 **\<ドライブ\>: \Program Files\Microsoft BizTalk Accelerator for SWIFT \<バージョン\>メッセージ Pack\SWIFT Messages\A4SWIFT-SRG\<バージョン\>\Category n\MTxxx**します。 インスタンス メッセージの種類のスキーマを選択**MT103.xsd**、 をクリックし、**追加**します。  
   
     > [!NOTE]
     >  A4SWIFT は、ソリューション エクスプ ローラーで示すように、プロジェクトのスキーマを追加します。  

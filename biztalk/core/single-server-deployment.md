@@ -52,7 +52,7 @@ ms.locfileid: "65392969"
   
 1.  BizTalk Server をインストールします。 詳細については、次を参照してください。 [BizTalk Server 2013 および 2013 R2 のインストールの概要](http://msdn.microsoft.com/library/8041926c-cfc9-4eaf-9c28-a2c6e8015bc5)します。  
   
-2.  **コンポーネントのインストール**画面で、**使用可能なコンポーネント****追加ソフトウェア**を選択します**Windows SharePoint Services アダプターWeb サービス**します。  
+2.  **コンポーネントのインストール**画面で、**使用可能なコンポーネント** **追加ソフトウェア**を選択します**Windows SharePoint Services アダプターWeb サービス**します。  
   
 ## <a name="configuring-the-windows-sharepoint-services-adapter-web-service-in-a-single-server-deployment"></a>シングルサーバー展開の Windows SharePoint Services アダプター Web サービスの構成  
  Windows SharePoint Services アダプターは、基本構成またはユーザー構成のいずれかを使用して構成できます。 これらのツールの詳細については、次を参照してください。 [BizTalk Server 2013 および 2013 R2 の構成の概要](http://msdn.microsoft.com/library/aa58c43f-8f0e-4a5c-89b9-db7b8a852a72)します。  

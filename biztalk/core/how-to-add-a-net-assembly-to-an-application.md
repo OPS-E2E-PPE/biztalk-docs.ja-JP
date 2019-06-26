@@ -77,7 +77,7 @@ ms.locfileid: "65387249"
   
 2. 次の表に示すように、適切な値を置き換えて、次のコマンドを入力します。  
   
-    **BTSTask AddResource** [**/applicationname は:**<em>値</em>] **/Type:System.BizTalk:Assembly** **[/overwrite]****/Source:**<em>値</em>[**/Destination:**<em>値</em>] [**/Options:GacOnAdd**<em>&#124;</em> **GacOnInstall**<em>&#124;</em>**GacOnImport**&#124;**RegasmOnInstall** &#124; **RegsvcsOnInstall**] [**/Server:**<em>値</em>] [**/database:** <em>値</em>]  
+    **BTSTask AddResource** [ **/applicationname は:** <em>値</em>] **/Type:System.BizTalk:Assembly** **[/overwrite]** **/Source:** <em>値</em>[ **/Destination:** <em>値</em>] [ **/Options:GacOnAdd**<em>&#124;</em> **GacOnInstall**<em>&#124;</em>**GacOnImport**&#124;**RegasmOnInstall** &#124; **RegsvcsOnInstall**] [ **/Server:** <em>値</em>] [ **/database:** <em>値</em>]  
   
     例:  
   

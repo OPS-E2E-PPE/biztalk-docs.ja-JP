@@ -43,7 +43,7 @@ Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernover
   
 1.  ソリューション エクスプローラーで、マップの保存先を選択します。  
   
-2.  **ファイル** メニューのをクリックして**保存*\<名のマップの\>* として**します。  
+2.  **ファイル** メニューのをクリックして**保存 *\<名のマップの\>* として**します。  
   
 3.  **ファイルに名前を付けて** ダイアログ ボックスで、マップを保存するフォルダーの場所を参照します。  
   
@@ -68,7 +68,7 @@ Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernover
 2. **[ファイル]** メニューの **[閉じる]** をクリックします。  
   
    > [!NOTE]
-   >  ある閉じるアイコンをクリックすることもできます (**[x]**)、Microsoft の右上隅にある[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]ウィンドウを編集します。  
+   >  ある閉じるアイコンをクリックすることもできます ( **[x]** )、Microsoft の右上隅にある[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]ウィンドウを編集します。  
   
 ## <a name="see-also"></a>参照  
  [プロジェクト内のマップの管理](../core/managing-maps-within-projects.md)

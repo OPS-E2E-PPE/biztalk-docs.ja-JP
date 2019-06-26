@@ -23,7 +23,7 @@ ms.locfileid: "65345929"
 BizTalk アセンブリ、アプリケーション、またはグループのバインドをエクスポートします。 グローバル パーティのバインドと共にアセンブリ、アプリケーション、またはグループのバインドをエクスポートすることもできます。 (パーティとは、オーケストレーションと連携する、組織のパートナーなど、すべてのエンティティです)。  
   
 ## <a name="usage"></a>使用方法  
- **BTSTask ExportBindings/Destination:** *値***[/grouplevel は]** [**/applicationname は:**<em>値</em>] [**/AssemblyName:**<em>値</em>] &#124; **[/GlobalParties]** [**/Server:**<em>値</em>] [**/Database:**<em>値</em>]  
+ **BTSTask ExportBindings/Destination:** *値* **[/grouplevel は]** [ **/applicationname は:** <em>値</em>] [ **/AssemblyName:** <em>値</em>] &#124; **[/GlobalParties]** [ **/Server:** <em>値</em>] [ **/Database:** <em>値</em>]  
   
 ## <a name="parameters"></a>パラメーター  
   

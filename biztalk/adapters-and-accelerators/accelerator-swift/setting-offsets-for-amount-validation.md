@@ -42,7 +42,7 @@ ms.locfileid: "65377044"
   
 1.  メモ帳などのテキスト エディターを開きます。  
   
-2.  エディターでは、オフセットの比率を設定するメッセージの検証ポリシーの場所を参照します。 たとえば、見つかりますメッセージの検証ポリシー MT103_Validation_Policy.xml、MT103 メッセージの種類で*\<ドライブ\>*: Microsoft BizTalk Accelerator for SWIFT \Program Files\ \<バージョン\>メッセージ Pack\SWIFT Messages\A4SWIFT-SRG\<バージョン\>\Category 1\MT103 します。 検証ポリシーを開きます。  
+2.  エディターでは、オフセットの比率を設定するメッセージの検証ポリシーの場所を参照します。 たとえば、見つかりますメッセージの検証ポリシー MT103_Validation_Policy.xml、MT103 メッセージの種類で *\<ドライブ\>* : Microsoft BizTalk Accelerator for SWIFT \Program Files\ \<バージョン\>メッセージ Pack\SWIFT Messages\A4SWIFT-SRG\<バージョン\>\Category 1\MT103 します。 検証ポリシーを開きます。  
   
 3.  ポリシーでは、検索 IsValidSettlementAmount MT102 および MT102PLUS メッセージまたは IsValidInterbankSettledAmount MT103 メッセージ。  
   

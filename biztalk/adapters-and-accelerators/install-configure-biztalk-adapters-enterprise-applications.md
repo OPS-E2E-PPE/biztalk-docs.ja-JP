@@ -403,7 +403,7 @@ BizTalk Adapter for JD Edwards OneWorld の使用に BTSREL カスタム パッ�
 ### <a name="understand-jdeinteropini"></a>Jdeinterop.ini を理解します。  
  Connector.jar および Kernel.jar で JD Edwards EnterpriseOne コネクタ クラスでは、jdeinterop.ini という名前の構成ファイルを使用することが必要です。 このファイルは、JD Edwards EnterpriseOne ソフトウェアで定義され、その用語を使用します。 目的と用語のこのファイルの詳細については、JD Edwards の相互運用性ガイドを参照してください。 サンプルの jdeinterop.ini ファイルがあります。プログラムの files \ Microsoft BizTalk Adapters for Enterprise applications \ j. d. Edwards EnterpriseOne(r) \config します。  
   
- やり取りするために手動でこのファイルを編集することはお勧めできません、**トランスポートのプロパティ** ダイアログ ボックスの送信ポート - としてマークされているフィールドなどの **< BizTalk によって構成された\>**.  
+ やり取りするために手動でこのファイルを編集することはお勧めできません、**トランスポートのプロパティ** ダイアログ ボックスの送信ポート - としてマークされているフィールドなどの **< BizTalk によって構成された\>** .  
   
 ## <a name="peoplesoft-enterprise"></a>PeopleSoft Enterprise  
 このセクションには、BizTalk Server と PeopleSoft Enterprise の Microsoft BizTalk Adapter の使用に関する重要な情報が含まれます。
@@ -447,7 +447,7 @@ set JAVA_HOME=C:\j2sdk1.4.2_06
   
 使用するには、コンポーネント インターフェイス (PeopleSoft 8 のみ)、クラスパスに含める、PeopleSoft コンポーネント インターフェイスを更新する必要があります jar ファイルを使用します。
   
-1. **コントロール パネルの **オープン**システム**します。  
+1. **コントロール パネルの** オープン**システム**します。  
   
 2. **詳細設定**  タブで **環境変数**、し、**クラスパス**します。  
   
@@ -636,20 +636,20 @@ BizTalk Server にアダプターを追加するには、このトピックの�
     -   Microsoft.BizTalk.Adapters.CoreTransmitter.dll  
 
   
-* btsTask.exe がインストールされ、展開、`Microsoft.BizTalk.Adapters.JDEProperties.dll`ファイルを GAC にします。 BizTalk Server の展開ログの結果は*\Program Files\Microsoft BizTalk Adapters for Enterprise applications \jdedeploy.html*と**jdeDeploy.xml**します。
+* btsTask.exe がインストールされ、展開、`Microsoft.BizTalk.Adapters.JDEProperties.dll`ファイルを GAC にします。 BizTalk Server の展開ログの結果は *\Program Files\Microsoft BizTalk Adapters for Enterprise applications \jdedeploy.html*と**jdeDeploy.xml**します。
   
 * アダプターに固有のファイルがインストールされている*Program Files*と*Program files \common Files*します。  
   
 * `sdk\`にインストールされている*Program の files \microsoft BizTalk Adapters for Enterprise applications \ j. d.Edwards OneWorld(r)* します。
   
-* * プログラム Enterprise Applications\JD Edwards OneWorld(r) を \microsoft BizTalk Adapters\*次のファイルが含まれています。  
+* \* プログラム Enterprise Applications\JD Edwards OneWorld(r) を \microsoft BizTalk Adapters\*次のファイルが含まれています。  
   
     -   classes\JDEJAccess.jar    
     -   Config\ J.D. Edwards OneWorld(r) \BTSREL.exe    
     -   Config\ J.D. Edwards OneWorld(r) \jdearglist.txt    
     -   Config\ J.D. Edwards OneWorld(r) \jdeinterop.ini  
   
-* * プログラムの files \common files \microsoft BizTalk Adapters for Enterprise applications \bin\*次のファイルが含まれています。  
+* \* プログラムの files \common files \microsoft BizTalk Adapters for Enterprise applications \bin\*次のファイルが含まれています。  
   
     -   Microsoft.BizTalk.Adapters.JDEProperties.dll    
     -   jdecba.dll  
@@ -673,7 +673,7 @@ BizTalk Server にアダプターを追加するには、このトピックの�
     -   Jdecba.dll    
     -   Microsoft.BizTalk.Adapters.JDEProperties.dll  
   
-* 次のファイルがインストールされている*Enterprise applications \j.d. の Program files \microsoft BizTalk Adapters します。Edwards enterpriseone (r)*:  
+* 次のファイルがインストールされている*Enterprise applications \j.d. の Program files \microsoft BizTalk Adapters します。Edwards enterpriseone (r)* :  
   
     -   Bin\BTAJDEEnterpriseOneTrace.cmd    
     -   Classes\JDEDynAccess.jar    

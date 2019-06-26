@@ -44,7 +44,7 @@ ms.locfileid: "65379102"
    bm remove-all  -DefinitionFile:"%ProgramFiles%\Microsoft BizTalk 2013 Accelerator for RosettaNet\BAMTracking\<filename\>.xml"  
    ```  
   
-2. [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]エクスプ ローラーに移動*\<ドライブ\>*: \Program Files\Microsoft BizTalk 2013 Accelerator for RosettaNet \BAM 追跡します。 Tracking.xls をダブルクリックします。  
+2. [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]エクスプ ローラーに移動 *\<ドライブ\>* : \Program Files\Microsoft BizTalk 2013 Accelerator for RosettaNet \BAM 追跡します。 Tracking.xls をダブルクリックします。  
   
 3. ビジネス アクティビティ監視に新しいビューを作成します。 これを行う方法については、BizTalk Server ヘルプの「ビジネス アクティビティ監視の管理」を参照してください。  
   

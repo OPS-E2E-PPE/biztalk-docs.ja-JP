@@ -20,11 +20,11 @@ ms.lasthandoff: 05/07/2019
 ms.locfileid: "65376912"
 ---
 # <a name="unconfigure-or-remove-biztalk-accelerator-for-swift"></a>構成を解除または for SWIFT の BizTalk アクセラレータの削除
-変更したり、Microsoft の削除[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]を実行して、コンピューターから、**セットアップ ウィザード**またはを使用して、**コントロール パネルの **します。  
+変更したり、Microsoft の削除[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]を実行して、コンピューターから、**セットアップ ウィザード**またはを使用して、**コントロール パネルの** します。  
 
 ## <a name="change-or-update-your-a4swift-installation"></a>変更や、A4SWIFT インストール環境を更新  
 
-1.  開く、**コントロール パネルの **、し、ダブルクリック**プログラムのアンインストール**します。  
+1.  開く、**コントロール パネルの** 、し、ダブルクリック**プログラムのアンインストール**します。  
 
 2.  Microsoft を右クリックし、プログラムの一覧で**BizTalk Accelerator for SWIFT**、し、**変更**します。  
 
@@ -35,7 +35,7 @@ ms.locfileid: "65376912"
 
 ## <a name="remove-a4swift-from-your-computer"></a>A4SWIFT をコンピューターから削除します。  
 
-1. 開く、**コントロール パネルの **、し、ダブルクリック**プログラムのアンインストール**します。  
+1. 開く、**コントロール パネルの** 、し、ダブルクリック**プログラムのアンインストール**します。  
 
 2. Microsoft を右クリックし、プログラムの一覧で**BizTalk Accelerator for SWIFT**、し、**アンインストール**します。  
 

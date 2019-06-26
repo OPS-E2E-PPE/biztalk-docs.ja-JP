@@ -23,10 +23,10 @@ ms.locfileid: "65345912"
 すべてのパーティーと契約を XML バインド ファイルにエクスポートします。
 
 > [!IMPORTANT]
-> このコマンドは、以降では新しい**[!INCLUDE[bts2016_md](../includes/bts2016-md.md)]**、およびそれ以降のバージョン。
+> このコマンドは、以降では新しい **[!INCLUDE[bts2016_md](../includes/bts2016-md.md)]** 、およびそれ以降のバージョン。
 
 ## <a name="usage"></a>使用方法
-  **BTSTask ExportParties -Destination**:*value* [**-Server**:*value*] [**-Database**:*value*]
+  **BTSTask ExportParties -Destination**:*value* [ **-Server**:*value*] [ **-Database**:*value*]
   
 ## <a name="parameters"></a>パラメーター
 

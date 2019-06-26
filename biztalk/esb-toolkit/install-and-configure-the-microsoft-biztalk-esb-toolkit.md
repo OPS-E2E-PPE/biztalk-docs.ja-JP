@@ -80,15 +80,15 @@ ms.locfileid: "65400315"
   
    -   **SSO サーバー**:SSO サーバーの名前を入力します。
   
-   -   **構成ファイル**:省略記号を選択 **([...])**、し esb.config ファイル (\Program Files (x86) \Microsoft BizTalk ESB Toolkit) を参照
+   -   **構成ファイル**:省略記号を選択 **([...])** 、し esb.config ファイル (\Program Files (x86) \Microsoft BizTalk ESB Toolkit) を参照
   
    -   **アプリケーション名**:SSO アプリケーションの名前を入力します。 たとえば、入力`ESB Toolkit`します。  
   
    -   **連絡先情報**:次の形式で有効な電子メール アドレス、適切な連絡先情報を入力します:`someone@example.com`します。  
   
-   -   **管理者グループ名**:省略記号を選択 **([...])**、適切な管理グループを参照  
+   -   **管理者グループ名**:省略記号を選択 **([...])** 、適切な管理グループを参照  
   
-   -   **ユーザー グループ名**:省略記号を選択 **([...])**、適切なグループを参照  
+   -   **ユーザー グループ名**:省略記号を選択 **([...])** 、適切なグループを参照  
 
 8. 選択**構成の適用**します。 IIS を開き、アプリケーションに必要なことに注意してください。[!INCLUDE[esbToolkit_short](../includes/esbtoolkit-short-md.md)]を構成するときに指定した web サイトの下に作成されます。[!INCLUDE[esbToolkit_short](../includes/esbtoolkit-short-md.md)]します。  
   

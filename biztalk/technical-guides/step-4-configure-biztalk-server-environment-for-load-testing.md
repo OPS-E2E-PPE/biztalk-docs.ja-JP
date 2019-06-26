@@ -33,7 +33,7 @@ ms.locfileid: "65400671"
  この例のために、2 つの BizTalk Server コンピューターが使用されていたし、BizTalk Server メッセージ ボックス データベースがリモートの SQL Server コンピューター。  
 
 ### <a name="create-biztalk-server-send-and-receive-hosts"></a>BizTalk Server 送信を作成し、受信ホスト  
- BizTalk Server のドキュメントのトピックの手順に従います[新しいホストを作成する方法](http://go.microsoft.com/fwlink/?LinkId=208595)(http://go.microsoft.com/fwlink/?LinkId=208595)送信ポートと送信アダプター ハンドラーの BizTalk Server の「送信」ホストを作成します。 次のプロパティで、ホストを構成します。  
+ BizTalk Server のドキュメントのトピックの手順に従います[新しいホストを作成する方法](http://go.microsoft.com/fwlink/?LinkId=208595)(http://go.microsoft.com/fwlink/?LinkId=208595) 送信ポートと送信アダプター ハンドラーの BizTalk Server の「送信」ホストを作成します。 次のプロパティで、ホストを構成します。  
 
 |プロパティ|値|  
 |--------------|-----------|  
@@ -43,7 +43,7 @@ ms.locfileid: "65400671"
 |信頼された認証|このボックスがオフであることを確認します。|  
 |32 ビットのみ|このボックスがオフであることを確認します。|  
 |既定のホスト グループにします。|このボックスがオフであることを確認します。|  
-|Windows グループ|このホストと関連付けられているホスト インスタンスへのアクセスを制御するために使用する Windows グループ。 用に作成された既定のインプロセス ホストがいずれかのウィンドウ グループ*\<コンピューター名\>* \BizTalk Application Users (用、1 台のサーバーの BizTalk Server インストールの場合) または *\<ドメイン名\>* \BizTalk Application Users (複数のサーバー、ドメイン グループの使用を必要とする BizTalk Server のインストールの場合) 用です。 **注:***\<コンピューター名\>* と*\<ドメイン名\>* 実際のコンピューター名またはグループの作成時に使用されるドメイン名のプレース ホルダーです。 <br /><br /> このホストの新しいグループを作成し、トピックで説明されている特権が必要かどうか[ホスト グループ](http://go.microsoft.com/fwlink/?LinkId=208803)(http://go.microsoft.com/fwlink/?LinkId=208803) BizTalk Server のドキュメントで。|  
+|Windows グループ|このホストと関連付けられているホスト インスタンスへのアクセスを制御するために使用する Windows グループ。 用に作成された既定のインプロセス ホストがいずれかのウィンドウ グループ *\<コンピューター名\>* \BizTalk Application Users (用、1 台のサーバーの BizTalk Server インストールの場合) または *\<ドメイン名\>* \BizTalk Application Users (複数のサーバー、ドメイン グループの使用を必要とする BizTalk Server のインストールの場合) 用です。 **注:** *\<コンピューター名\>* と *\<ドメイン名\>* 実際のコンピューター名またはグループの作成時に使用されるドメイン名のプレース ホルダーです。 <br /><br /> このホストの新しいグループを作成し、トピックで説明されている特権が必要かどうか[ホスト グループ](http://go.microsoft.com/fwlink/?LinkId=208803)(http://go.microsoft.com/fwlink/?LinkId=208803) BizTalk Server のドキュメントで。|  
 
  「受信」ホストを作成する「送信」ホストを作成するときに実行した手順を繰り返します。 次のプロパティ値を持つ、「受信」ホストを構成します。  
 
@@ -55,10 +55,10 @@ ms.locfileid: "65400671"
 |信頼された認証|このボックスがオフであることを確認します。|  
 |32 ビットのみ|このボックスがオフであることを確認します。|  
 |既定のホスト グループにします。|このボックスがオフであることを確認します。|  
-|Windows グループ|このホストと関連付けられているホスト インスタンスへのアクセスを制御するために使用する Windows グループ。 用に作成された既定のインプロセス ホストがいずれかのウィンドウ グループ*\<コンピューター名\>* \BizTalk Application Users (用、1 台のサーバーの BizTalk Server インストールの場合) または *\<ドメイン名\>* \BizTalk Application Users (複数のサーバー、ドメイン グループの使用を必要とする BizTalk Server のインストールの場合) 用です。 **注:***\<コンピューター名\>* と*\<ドメイン名\>* 実際のコンピューター名またはグループの作成時に使用されるドメイン名のプレース ホルダーです。 <br /><br /> このホストの新しいグループを作成し、トピックで説明されている特権が必要かどうか[ホスト グループ](http://go.microsoft.com/fwlink/?LinkId=208803)(http://go.microsoft.com/fwlink/?LinkId=208803) BizTalk Server のドキュメントで。|  
+|Windows グループ|このホストと関連付けられているホスト インスタンスへのアクセスを制御するために使用する Windows グループ。 用に作成された既定のインプロセス ホストがいずれかのウィンドウ グループ *\<コンピューター名\>* \BizTalk Application Users (用、1 台のサーバーの BizTalk Server インストールの場合) または *\<ドメイン名\>* \BizTalk Application Users (複数のサーバー、ドメイン グループの使用を必要とする BizTalk Server のインストールの場合) 用です。 **注:** *\<コンピューター名\>* と *\<ドメイン名\>* 実際のコンピューター名またはグループの作成時に使用されるドメイン名のプレース ホルダーです。 <br /><br /> このホストの新しいグループを作成し、トピックで説明されている特権が必要かどうか[ホスト グループ](http://go.microsoft.com/fwlink/?LinkId=208803)(http://go.microsoft.com/fwlink/?LinkId=208803) BizTalk Server のドキュメントで。|  
 
 ### <a name="create-instances-of-the-biztalk-server-send-and-receive-hosts"></a>BizTalk Server 送信のインスタンスを作成し、受信ホスト  
- BizTalk Server のドキュメントのトピックの手順に従います[ホスト インスタンスを追加する方法](http://go.microsoft.com/fwlink/?LinkId=208596)(http://go.microsoft.com/fwlink/?LinkId=208596)を作成して、BizTalk Server の「送信」ホストのインスタンスを開始します。 BizTalk Server グループ内の各 BizTalk サーバー上で実行し、次のプロパティ値で各ホスト インスタンスを構成する「送信」ホストのインスタンスを構成します。  
+ BizTalk Server のドキュメントのトピックの手順に従います[ホスト インスタンスを追加する方法](http://go.microsoft.com/fwlink/?LinkId=208596)(http://go.microsoft.com/fwlink/?LinkId=208596) を作成して、BizTalk Server の「送信」ホストのインスタンスを開始します。 BizTalk Server グループ内の各 BizTalk サーバー上で実行し、次のプロパティ値で各ホスト インスタンスを構成する「送信」ホストのインスタンスを構成します。  
 
 |プロパティ|値|  
 |--------------|-----------|  
@@ -81,7 +81,7 @@ ms.locfileid: "65400671"
  ホスト インスタンスを作成した後、ホスト インスタンスを右クリックし、選択**開始**コンテキスト メニュー。  
 
 ### <a name="create-a-biztalk-server-receive-port"></a>BizTalk Server を作成する受信ポート  
- トピックの手順に従って[受信ポートを作成する方法](http://go.microsoft.com/fwlink/?LinkID=154843)(http://go.microsoft.com/fwlink/?LinkID=154843)一方向受信ポートを作成する BizTalk Server のドキュメント。 受信ポートを作成するときのままにしてすべてのプロパティを除いて既定値以下の表で説明したように。  
+ トピックの手順に従って[受信ポートを作成する方法](http://go.microsoft.com/fwlink/?LinkID=154843)(http://go.microsoft.com/fwlink/?LinkID=154843) 一方向受信ポートを作成する BizTalk Server のドキュメント。 受信ポートを作成するときのままにしてすべてのプロパティを除いて既定値以下の表で説明したように。  
 
 |プロパティ|値|  
 |--------------|-----------|  
@@ -121,7 +121,7 @@ ms.locfileid: "65400671"
  をクリックして**ok** Wcf-custom トランスポートのプロパティ ダイアログ ボックスを閉じて をクリックする**OK** 受信場所のプロパティ ダイアログ ボックスを閉じます。  
 
 ### <a name="create-a-biztalk-server-send-port"></a>BizTalk Server 送信ポートを作成します。  
- トピックの手順に従って[送信ポートを作成する方法](http://go.microsoft.com/fwlink/?LinkID=154845)(http://go.microsoft.com/fwlink/?LinkID=154845)を作成する BizTalk Server のドキュメントを**静的な一方向**送信ポート。 送信ポートを作成するときのままにしてすべてのプロパティを除いて既定値以下の表で説明したように。  
+ トピックの手順に従って[送信ポートを作成する方法](http://go.microsoft.com/fwlink/?LinkID=154845)(http://go.microsoft.com/fwlink/?LinkID=154845) を作成する BizTalk Server のドキュメントを**静的な一方向**送信ポート。 送信ポートを作成するときのままにしてすべてのプロパティを除いて既定値以下の表で説明したように。  
 
 |プロパティ|値|  
 |--------------|-----------|  
@@ -140,7 +140,7 @@ ms.locfileid: "65400671"
 
 |プロパティ|値|  
 |--------------|-----------|  
-|General\Address (URI)|net.tcp://*\<コンピューター名\>*: 2001/TCP1**重要です。***\<コンピューター名\>* IndigoService.exe、WCF 経由で送信されるメッセージを使用するように設計がホストするために使用する実際のコンピューター名のプレース ホルダーです。 IndigoService.exe には、ごくわずかなリソースが必要であるため IndigoService.exe を BizTalk Server グループのデータベース用の SQL Server コンピューターで実行する完全に受け入れ可能です。 利用可能な BizTalk ベンチマーク ウィザードの一部である IndigoService.exe [BizTalk ベンチマーク ウィザード](http://go.microsoft.com/fwlink/?LinkID=186347)(http://go.microsoft.com/fwlink/?LinkID=186347)します。|  
+|General\Address (URI)|net.tcp:// *\<コンピューター名\>* : 2001/TCP1**重要です。** *\<コンピューター名\>* IndigoService.exe、WCF 経由で送信されるメッセージを使用するように設計がホストするために使用する実際のコンピューター名のプレース ホルダーです。 IndigoService.exe には、ごくわずかなリソースが必要であるため IndigoService.exe を BizTalk Server グループのデータベース用の SQL Server コンピューターで実行する完全に受け入れ可能です。 利用可能な BizTalk ベンチマーク ウィザードの一部である IndigoService.exe [BizTalk ベンチマーク ウィザード](http://go.microsoft.com/fwlink/?LinkID=186347)(http://go.microsoft.com/fwlink/?LinkID=186347) します。|  
 |Binding\Binding 型|**customBinding**|  
 
  WCF カスタム バインドの種類のほとんどと同様に、 **customBinding**バインドの種類は、次の値に設定する必要があります、いくつかのプロパティを公開します。  
@@ -170,7 +170,7 @@ ms.locfileid: "65400671"
 7.  をクリックして**OK** Wcf-custom トランスポートのプロパティ ダイアログ ボックスを閉じる をクリックし、 **OK** BTSLoadTest.Messaging.Send.WCF Custom – 送信ポートのプロパティ ダイアログ ボックスを閉じます。  
 
 ### <a name="configure-a-computer-to-consume-messages-sent-by-the-biztalk-server-send-port"></a>BizTalk Server 送信ポートによって送信されたメッセージを使用するコンピューターを構成します。  
- 前述のように、WCF 経由で送信されるメッセージを処理する、IndigoService.exe は設計されています。 利用可能な BizTalk ベンチマーク ウィザードの一部である IndigoService.exe [BizTalk ベンチマーク ウィザード](http://go.microsoft.com/fwlink/?LinkID=186347)(http://go.microsoft.com/fwlink/?LinkID=186347)します。 設定して、この例の目的の IndigoService.exe を実行するには、最も簡単な方法がから BizTalk ベンチマーク ウィザードの zip ファイルをダウンロードするには、 [BizTalk ベンチマーク ウィザード ダウンロード ページ](http://go.microsoft.com/fwlink/?LinkID=209100)(http://go.microsoft.com/fwlink/?LinkID=209100)し、次の 4 つの抽出IndigoService.exe を実行するコンピューターにファイル:  
+ 前述のように、WCF 経由で送信されるメッセージを処理する、IndigoService.exe は設計されています。 利用可能な BizTalk ベンチマーク ウィザードの一部である IndigoService.exe [BizTalk ベンチマーク ウィザード](http://go.microsoft.com/fwlink/?LinkID=186347)(http://go.microsoft.com/fwlink/?LinkID=186347) します。 設定して、この例の目的の IndigoService.exe を実行するには、最も簡単な方法がから BizTalk ベンチマーク ウィザードの zip ファイルをダウンロードするには、 [BizTalk ベンチマーク ウィザード ダウンロード ページ](http://go.microsoft.com/fwlink/?LinkID=209100)(http://go.microsoft.com/fwlink/?LinkID=209100) し、次の 4 つの抽出IndigoService.exe を実行するコンピューターにファイル:  
 
 1. \IndigoService\bin\Release\IndigoService.exe  
 
@@ -184,7 +184,7 @@ ms.locfileid: "65400671"
 
    \<エンドポイント アドレス ="net.tcp://localhost: 2001/TCP1"バインド"netTcpBinding"bindingConfiguration の = ="Binding1"名前 ="endpoint1"contract="IndigoService.IServiceTwoWaysVoidNonTransactional"/\>  
 
-   これは、送信ポートのアドレスには、アドレス (URI) で始まる net.tcp:// が構成されている理由*\<コンピューター名\>*: 2001/TCP1  
+   これは、送信ポートのアドレスには、アドレス (URI) で始まる net.tcp:// が構成されている理由 *\<コンピューター名\>* : 2001/TCP1  
 
    IndigoService.exe には、ごくわずかなリソースが必要であるため IndigoService.exe を BizTalk Server データベース用の SQL Server コンピューターで実行する完全に受け入れ可能です。  
 

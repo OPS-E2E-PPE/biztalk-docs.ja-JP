@@ -53,7 +53,7 @@ ms.locfileid: "65323751"
   
 1. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]をインストールする。 詳細については、次を参照してください。 [BizTalk Server 2013 および 2013 R2 のインストールの概要](http://msdn.microsoft.com/library/8041926c-cfc9-4eaf-9c28-a2c6e8015bc5)します。  
   
-2. **コンポーネントのインストール**画面で、**使用可能なコンポーネント****追加ソフトウェア**を選択します**Windows SharePoint Services アダプターWeb サービス**します。  
+2. **コンポーネントのインストール**画面で、**使用可能なコンポーネント** **追加ソフトウェア**を選択します**Windows SharePoint Services アダプターWeb サービス**します。  
   
 > [!NOTE]
 >  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ランタイムをホストするコンピューター、および Windows SharePoint Services を実行するコンピューターでセットアップと構成を実行する必要があります。  
