@@ -77,7 +77,7 @@ ms.locfileid: "65530246"
   
 1.  クリックして**開始**、 をポイント**すべてのプログラム**、 をポイント**管理ツール**、順にクリックします**インターネット インフォメーション サービス (IIS) マネージャー**.  
   
-2.  IIS マネージャーで、展開、 ***\<サーバー名\>* (ローカル コンピューター)** ノード、**アプリケーション プール**ノードと**Webサイト**ノード。 [Web サイト] ノードで、展開、**既定の Web サイト**ノード。  
+2.  IIS マネージャーで、展開、 ** *\<サーバー名\>* (ローカル コンピューター)** ノード、**アプリケーション プール**ノードと**Webサイト**ノード。 [Web サイト] ノードで、展開、**既定の Web サイト**ノード。  
   
 3.  [既定の Web サイト] ノードを右クリックして**A4SWIFT_MRSR**、 をクリックし、**プロパティ**します。  
   
@@ -85,7 +85,7 @@ ms.locfileid: "65530246"
   
 5.  IIS マネージャー ダイアログ ボックスの アプリケーション プール ノードで、A4SWIFT_MRSR のアプリケーション プールを右クリックし、**プロパティ**します。  
   
-6.  \<アプリケーション プール名\>プロパティ ダイアログ ボックスで、をクリックして、 **Identity**に注意してください。 場合**定義済み**がクリックされたと**ネットワーク サービス**が選択されていること、**構成可能**、ローカルまたはドメイン アカウントを入力し、パスワードを入力します。 [**OK**] をクリックします。  
+6.  \<アプリケーション プール名\>プロパティ ダイアログ ボックスで、をクリックして、 **Identity**に注意してください。 場合**定義済み**がクリックされたと**ネットワーク サービス**が選択されていること、**構成可能**、ローカルまたはドメイン アカウントを入力し、パスワードを入力します。 **[OK]** をクリックします。  
   
 ## <a name="a-message-created-in-mrsr-site-on-a-localized-computer-is-not-processed"></a>ローカライズされたコンピューター上の MRSR サイトで作成されたメッセージは処理されません。  
   
@@ -129,7 +129,7 @@ ms.locfileid: "65530246"
  "、BicMasterPolicy の実行中にエラーが発生しました。 有効な値について、ポリシーを確認します。"  
   
 ### <a name="possible-cause"></a>考えられる原因  
- SQL Server 名、BIC データベース名、および BIC_Master_Policy.xml ファイル内の統合セキュリティ値*\<ドライブ\>*: Microsoft BizTalk Accelerator for SWIFT \Program Files\\<バージョン\>メッセージ Pack\SWIFT Messages\A4SWIFT-SRG\<バージョン\>二重引用符で囲まれた \Base ポリシーが含まれています。 BIC 検証を有効にするこれらの文字列に入力既定 BIC_Master_Policy.xml ファイル」の説明に従って[を有効にする検証の銀行識別コード](../../adapters-and-accelerators/accelerator-swift/enabling-validation-of-bank-identifier-codes.md)します。  
+ SQL Server 名、BIC データベース名、および BIC_Master_Policy.xml ファイル内の統合セキュリティ値 *\<ドライブ\>* : Microsoft BizTalk Accelerator for SWIFT \Program Files\\<バージョン\>メッセージ Pack\SWIFT Messages\A4SWIFT-SRG\<バージョン\>二重引用符で囲まれた \Base ポリシーが含まれています。 BIC 検証を有効にするこれらの文字列に入力既定 BIC_Master_Policy.xml ファイル」の説明に従って[を有効にする検証の銀行識別コード](../../adapters-and-accelerators/accelerator-swift/enabling-validation-of-bank-identifier-codes.md)します。  
   
 ### <a name="solution"></a>解決方法  
  BIC マスター ポリシーを修復するには、ように進めます。  
@@ -139,7 +139,7 @@ ms.locfileid: "65530246"
   
 1.  ビジネス ルール作成ツール、BIC_Master_Policy のバージョン 1.0 の展開を解除し、BIC_Master_Policy を削除します。  
   
-2.  メモ帳などのテキスト エディターで開くで BIC_Master_Policy.xml *\<ドライブ\>*: Microsoft BizTalk Accelerator for SWIFT \Program Files\\<バージョン\>メッセージ Pack\SWIFTMessages\A4SWIFT SRG\<バージョン\>\Base ポリシー。 SQL Server 名を囲む二重引用符を削除、BIC データベース名、およびセキュリティの値を統合します。  
+2.  メモ帳などのテキスト エディターで開くで BIC_Master_Policy.xml *\<ドライブ\>* : Microsoft BizTalk Accelerator for SWIFT \Program Files\\<バージョン\>メッセージ Pack\SWIFTMessages\A4SWIFT SRG\<バージョン\>\Base ポリシー。 SQL Server 名を囲む二重引用符を削除、BIC データベース名、およびセキュリティの値を統合します。  
   
 3.  ビジネス ルール エンジン展開ウィザードで、BIC_Master_Policy.xml をインポートし、BIC_Master_Policy.xml を展開します。  
   
