@@ -32,7 +32,7 @@ ms.locfileid: "65401462"
   
 ##  <a name="BKMK_Unconfigure"></a> BizTalk Server の構成を解除  
   
-1. 右クリック**[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]構成**、選び**管理者として実行**します。  
+1. 右クリック **[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]構成**、選び**管理者として実行**します。  
   
 2. 構成では、次のように選択します。**機能の構成解除**します。  
   

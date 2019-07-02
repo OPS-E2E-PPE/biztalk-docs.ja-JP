@@ -25,7 +25,7 @@ ms.locfileid: "65400657"
 ## <a name="summary-of-network-key-performance-indicators"></a>ネットワークの主要業績評価指標の概要  
  **比較のネットワー キング主要業績評価指標 –** HYPER-V 仮想マシンで実行されている BizTalk Server のネットワーク スループットが範囲から約 70% に 96% のネットワーク スループット、物理的な BizTalk Server で行うことに監視、、特定のテスト環境によって異なります。 HYPER-V 仮想マシンで実行されている SQL Server のネットワーク スループットがから約 68% から 81% のネットワーク スループットを特定のテスト環境に応じてもう一度、物理 SQL Server で行うことの範囲に確認されました。 観察されたネットワークのスループット単位のデルタは、HYPER-V ハイパーバイザーのリソース要件に起因ことができます。  
   
- 次の手順では、[ネットワーク最適化](../technical-guides/network-optimizations.md)によって測定される、HYPER-V 仮想マシン上のネットワーク スループットを最大化する**\Network Interface (\*) \Bytes total/sec**  
+ 次の手順では、[ネットワーク最適化](../technical-guides/network-optimizations.md)によって測定される、HYPER-V 仮想マシン上のネットワーク スループットを最大化する **\Network Interface (\*) \Bytes total/sec**  
   
  次の図は、さまざまなテスト プラットフォームのネットワーク パフォーマンスを示しています。  
   

@@ -24,7 +24,7 @@ ms.locfileid: "65377354"
   
 1.  SWIFT スキーマの新しいフォルダーを作成 (\<DocumentSchemaLocation\>ユーティリティの構文で)。 InfoPath フォームの作成/変更する予定のすべてのスキーマは、ユーティリティを実行するときに、このフォルダーに配置する必要があります。  
   
-2.  MT メッセージの InfoPath フォームを生成している場合、コピー **SWIFT ベース Types.xsd**と**SWIFT 共通データ Types.xsd**から **\<ドライブ:\> \Program Files\Microsoft BizTalk Accelerator for SWIFT\<メッセージ パック バージョン\>メッセージ Pack\SWIFT Messages\A4SWIFT-SRG\<メッセージ パック バージョン\>\Base スキーマ**フォルダーにします。SWIFT スキーマ用に作成します。  
+2.  MT メッセージの InfoPath フォームを生成している場合、コピー **SWIFT ベース Types.xsd**と **SWIFT 共通データ Types.xsd**から **\<ドライブ:\> \Program Files\Microsoft BizTalk Accelerator for SWIFT\<メッセージ パック バージョン\>メッセージ Pack\SWIFT Messages\A4SWIFT-SRG\<メッセージ パック バージョン\>\Base スキーマ**フォルダーにします。SWIFT スキーマ用に作成します。  
   
 3.  手順 1. で SWIFT スキーマ用に作成したフォルダーに InfoPath フォームを作成する予定のすべてのスキーマをコピーします。  
   
