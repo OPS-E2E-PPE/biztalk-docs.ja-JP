@@ -13,10 +13,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: b6fb92d0b8a20e9ca4e1a71aead55af21b1daeea
-ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
+ms.sourcegitcommit: bab8f4abca27edc45f9f4601ada6f3fc6a2b87cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
+ms.lasthandoff: 07/04/2019
 ms.locfileid: "65394782"
 ---
 # <a name="x12-edi-character-set"></a>X12 EDI 文字セット
@@ -26,8 +26,8 @@ ms.locfileid: "65394782"
 |                                                                   |                                  文字セット                                   |
 |-------------------------------------------------------------------|----------------------------------------------------------------------------------|
 |             EDI ドキュメント内の &#xd1; という文字のみ              |                            拡張文字セットを使用します。                            |
-|           のみの抑音アクセント (\`)、EDI ドキュメントの |                             UTF8 文字セットを使用します。                              |
-| & #Xd1; という文字**と**アクサン グラーブ (\`)、同じドキュメント内 |-UTF8 エンコード受信ドキュメントである必要があります。<br />-UTF8 文字セットを使用します。 |
+|           のみの抑音アクセント (\`) で、EDI ドキュメント            |                              UTF8 文字セットを使用します。                              |
+| &#Xd1; という文字**と**アクサン グラーブ (\`)、同じドキュメント内。 | -UTF8 エンコード受信ドキュメントである必要があります。<br />-UTF8 文字セットを使用します。 |
 
  次のリンク プロバイダー EDI 文字セットの詳細について。  
 
