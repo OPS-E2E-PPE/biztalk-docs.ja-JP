@@ -52,7 +52,8 @@
   "notification_subscribers": [],
   "sync_notification_subscribers": [],
   "branches_to_filter": [
-    "live"
+    "live",
+    "docs-build-v3"
   ],
   "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/biztalk-docs.ja-JP",
   "git_repository_branch_open_to_public_contributors": "live",
@@ -60,7 +61,8 @@
   "skip_source_output_uploading": false,
   "need_preview_pull_request": true,
   "contribution_branch_mappings": {
-    "live-sxs": "live"
+    "live-sxs": "live",
+    "docs-build-v3-sxs":"docs-build-v3"
   },
   "dependent_repositories": [
     {
